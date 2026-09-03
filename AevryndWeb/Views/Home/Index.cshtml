@@ -1,0 +1,2 @@
+@{ ViewData["Title"] = "Assistant Portal"; }
+<div class="text-center"><h1 class="display-4">AEVRYND</h1><h2>登入助理入口</h2><form id="loginForm"><label>電子信箱 <input id="email" type="email" required autocomplete="email"></label><button id="sendButton" type="button">寄送驗證碼</button><div id="verifyBox" hidden><label>8 位英數驗證碼 <input id="code" minlength="8" maxlength="8" required autocomplete="one-time-code"></label><button type="submit">安全登入</button></div><p id="status" aria-live="polite"></p><small>驗證碼 10 分鐘內有效，且只能使用一次。</small></form></div>
