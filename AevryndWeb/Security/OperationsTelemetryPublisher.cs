@@ -34,24 +34,36 @@ public sealed class OperationsTelemetryPublisher(
         var cpu = ReadCpuPercent();
         var memory = new MemoryStatus();
         GlobalMemoryStatusEx(ref memory);
+        var previous = ReadPrevious();
+        var nodes = previous?.Nodes?.Where(node => !string.Equals(node.Id, "local", StringComparison.Ordinal)).ToList()
+            ?? [];
+        nodes.Insert(0, new OperationsNodeState
+        {
+            Id = "local", CpuPercent = cpu, RamPercent = memory.Total > 0 ? 100d * (memory.Total - memory.Available) / memory.Total : null,
+            GpuPercent = ReadGpuPercent(), SampledAt = now
+        });
         var document = new OperationsStateDocument
         {
             Version = 1,
             SnapshotAt = now,
-            Nodes =
-            [
-                new OperationsNodeState
-                {
-                    Id = "local", CpuPercent = cpu, RamPercent = memory.Total > 0 ? 100d * (memory.Total - memory.Available) / memory.Total : null,
-                    GpuPercent = ReadGpuPercent(), SampledAt = now
-                }
-            ],
-            ActiveWork = [],
-            History = []
+            Nodes = nodes,
+            ActiveWork = previous?.ActiveWork ?? [],
+            History = previous?.History ?? []
         };
         var temporary = _statePath + ".tmp";
         File.WriteAllText(temporary, JsonSerializer.Serialize(document, new JsonSerializerOptions { WriteIndented = true }));
         File.Move(temporary, _statePath, true);
+    }
+
+    private OperationsStateDocument? ReadPrevious()
+    {
+        try
+        {
+            if (!File.Exists(_statePath)) return null;
+            return JsonSerializer.Deserialize<OperationsStateDocument>(File.ReadAllText(_statePath));
+        }
+        catch (Exception exception) when (exception is IOException or UnauthorizedAccessException or JsonException)
+        { return null; }
     }
 
     private double? ReadCpuPercent()
