@@ -20,7 +20,7 @@ public sealed class AuthenticationContractTests
         var response = await client.GetAsync("/Showcase"); var html = await response.Content.ReadAsStringAsync();
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         Assert.Contains("34 / 100", html); Assert.Contains("v1.4 未發布", html);
-        Assert.Contains("DLSS 未實作", html); Assert.Contains("Bloom 待提交", html);
+        Assert.Contains("DLSS 未實作", html); Assert.Contains("Bloom slice 已提交", html); Assert.Contains("1186b60", html);
         Assert.Contains("ENGINE ARCHITECTURE", html); Assert.Contains("TRACEABLE RELEASES", html);
         Assert.Contains("data-release-filter", html); Assert.Contains("data-stage-filter", html);
         Assert.Contains("data-map-zoom", html); Assert.Contains("/js/showcase.js", html);

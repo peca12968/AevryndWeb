@@ -36,7 +36,7 @@
             <article data-stage="wip"><time>TEMPORAL</time><h3>TAA previous-depth closure</h3><p>Atmosphere／TAA 同一 sequence token 重用，previous-depth、Color／OID／Depth SHA closure 與 GBV ghost gate 通過；屬核心正確性，不直接提高視覺分數。</p></article>
             <article data-stage="wip"><time>WORLD DETAIL</time><h3>Water、foliage、Linear HDR</h3><p>逐水體 HDR 合成、透明交錯、葉片 alpha/mip/UV 與 sealed HDR sidecar 已驗證；仍是未發布 WIP。</p></article>
             <article data-stage="wip"><time>HLOD</time><h3>HLOD Slice 1／2／4</h3><p>Frozen selection、proxy lease、transition raster、HZB identity 與 shadow parity 核心通過。完整 GPU selection、真實 workload 與 gameplay transition pixels 尚缺。</p></article>
-            <article data-stage="wip"><time>POST FX</time><h3>Depth-semantic Bloom</h3><p>最新來源已完成 fresh Normal／GBV 修復驗證；目前仍等待主代理精準提交，不能標示為 production complete。</p></article>
+            <article data-stage="released" tabindex="0" data-detail-title="Bloom Slice · Verified" data-detail="Bloom slice 已通過 fresh ON hostile 7/7、OFF smoke 2/2；formal GPU p95 為 -1.081%，CPU raw／steady 為 0.841%／0.990%。idle1–3 與負載情境全數通過。證據使用 DLSS replay；這不代表 DLSS 已實作。"><time>POST FX · VERIFIED</time><h3>Depth-semantic Bloom</h3><p>Fresh ON hostile 7/7、OFF smoke 2/2；formal GPU p95 -1.081%，CPU raw／steady 0.841%／0.990%。idle1–3 與負載全通過。</p><code>DLSS replay · Normal／GBV · formal performance gate</code></article>
         </div>
     </section>
 
@@ -70,8 +70,10 @@
         <div class="section-heading"><p class="micro-label">CURRENT REALITY</p><h2 id="limits-title">清楚標示尚未完成</h2></div>
         <article><strong>34 / 100</strong><p>r6 11-shot 權威視覺分數。Demo 門檻是 70 且 hard issue 為 0。</p></article>
         <article><strong>v1.4 未發布</strong><p>r7 構圖、光照、材質、植被、水面與角色可讀性仍待獨立 gate。</p></article>
-        <article><strong>DLSS 未實作</strong><p>現有水體路徑遇 DLSS request 會 fail closed；不得把 fallback 描述成 DLSS 支援。</p></article>
-        <article><strong>Bloom 待提交</strong><p>fresh GBV 修復已完成，但在主代理精準提交前仍是工作樹來源，不是已發布 production 功能。</p></article>
+        <article><strong>DLSS 未實作</strong><p>Bloom 驗證明確標示使用 DLSS replay；現有水體路徑遇 DLSS request 仍會 fail closed，不得描述成 DLSS 支援。</p></article>
+        <article><strong>Bloom slice 已提交</strong><p>commit 1186b60；fresh ON hostile 7/7、OFF smoke 2/2、formal GPU p95 -1.081%、CPU raw／steady 0.841%／0.990%；idle1–3 與負載全通過。仍不是完整 production 功能。</p></article>
+        <article><strong>Production HLOD 未完成</strong><p>HLOD 核心 slice 已通過，但完整 production HLOD（GPU selection、真實 workload、gameplay transition pixels）仍未完成。</p></article>
+        <article><strong>r7 視覺未完成</strong><p>r7 構圖、光照、材質、植被、水面與角色可讀性仍待獨立 gate。</p></article>
     </section>
     <p class="showcase-source">資料基準：TASK_STATE、EngineFeatureCatalog、EngineChangeLog 與目前可追溯 release 目錄。頁面不從 build／test artifact 推導目前通過狀態。</p>
     <aside id="showcaseDetail" class="showcase-detail" aria-live="polite" aria-hidden="true"><button type="button" aria-label="關閉詳情">×</button><p class="micro-label">TRACEABLE DETAIL</p><h2>選取項目</h2><p>點擊版本或架構節點查看證據邊界。</p></aside>
