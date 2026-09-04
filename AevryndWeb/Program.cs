@@ -8,7 +8,8 @@ using Microsoft.AspNetCore.DataProtection;
 var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 {
     Args = args,
-    ContentRootPath = AppContext.BaseDirectory
+    ContentRootPath = AppContext.BaseDirectory,
+    WebRootPath = Path.Combine(AppContext.BaseDirectory, "wwwroot")
 });
 builder.WebHost.UseUrls(builder.Configuration["Hosting:Url"] ?? "http://127.0.0.1:8792");
 builder.Services.AddControllersWithViews(options => options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()));

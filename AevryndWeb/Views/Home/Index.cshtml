@@ -1,2 +1,72 @@
-@{ ViewData["Title"] = "Assistant Portal"; }
-<div class="text-center"><h1 class="display-4">AEVRYND</h1><h2>登入助理入口</h2><form id="loginForm"><label>電子信箱 <input id="email" type="email" required autocomplete="email"></label><button id="sendButton" type="button">寄送驗證碼</button><div id="verifyBox" hidden><label>8 位英數驗證碼 <input id="code" minlength="8" maxlength="8" required autocomplete="one-time-code"></label><button type="submit">安全登入</button></div><p id="status" aria-live="polite"></p><small>驗證碼 10 分鐘內有效，且只能使用一次。</small></form></div>
+@{ ViewData["Title"] = "AI 控制中心"; }
+
+<section class="login-shell">
+    <div class="hero-panel">
+        <div class="eyebrow"><span></span> DISTRIBUTED INTELLIGENCE</div>
+        <h1>讓每一台電腦，<br /><em>成為同一個智慧核心。</em></h1>
+        <p class="hero-copy">集中調度 Aevrynd 開發進度、AI 工作與運算資源。無論節點位於何處，所有狀態都在一個安全介面中清楚呈現。</p>
+
+        <div class="network-card" aria-label="三台運算節點概況">
+            <div class="network-head">
+                <div><span class="micro-label">PRIVATE NETWORK</span><strong>分散式節點網路</strong></div>
+                <span class="network-live"><i></i> ONLINE</span>
+            </div>
+            <div class="node-flow" aria-hidden="true"><span></span><span></span></div>
+            <div class="node-grid">
+                <article class="node-card node-primary">
+                    <div class="node-icon"><span></span></div>
+                    <div><small>CORE / CODEX</small><strong>主電腦</strong></div>
+                    <i class="node-status"></i>
+                </article>
+                <article class="node-card">
+                    <div class="node-icon node-icon-secondary"><span></span></div>
+                    <div><small>QWEN WORKER</small><strong>台中</strong></div>
+                    <i class="node-status"></i>
+                </article>
+                <article class="node-card">
+                    <div class="node-icon node-icon-tertiary"><span></span></div>
+                    <div><small>QWEN WORKER</small><strong>桃園</strong></div>
+                    <i class="node-status"></i>
+                </article>
+            </div>
+            <div class="network-foot"><span>端對端安全調度</span><span>3 COMPUTE NODES</span></div>
+        </div>
+    </div>
+
+    <aside class="auth-panel" aria-labelledby="login-title">
+        <div class="auth-accent" aria-hidden="true"></div>
+        <div class="auth-heading">
+            <span class="auth-symbol" aria-hidden="true"><span></span></span>
+            <div><p>SECURE ACCESS</p><h2 id="login-title">登入控制中心</h2></div>
+        </div>
+        <p class="auth-intro">使用已授權信箱取得一次性驗證碼，安全進入您的私有 AI 工作空間。</p>
+
+        <form id="loginForm" class="auth-form">
+            <div class="field-group">
+                <label for="email">電子信箱</label>
+                <div class="input-wrap">
+                    <span class="input-icon" aria-hidden="true">@@</span>
+                    <input id="email" type="email" required autocomplete="email" inputmode="email" placeholder="name@example.com" />
+                </div>
+            </div>
+            <button id="sendButton" class="button button-primary" type="button">
+                <span>傳送驗證碼</span><i aria-hidden="true">→</i>
+            </button>
+
+            <div id="verifyBox" class="verify-box" hidden>
+                <div class="divider"><span>輸入郵件中的代碼</span></div>
+                <div class="field-group">
+                    <label for="code">8 位英數驗證碼</label>
+                    <div class="input-wrap">
+                        <span class="input-icon input-icon-key" aria-hidden="true">◆</span>
+                        <input id="code" class="code-input" minlength="8" maxlength="8" pattern="[A-Za-z0-9]{8}" required autocomplete="one-time-code" autocapitalize="characters" placeholder="••••••••" />
+                    </div>
+                </div>
+                <button class="button button-secondary" type="submit"><span>驗證並登入</span><i aria-hidden="true">↗</i></button>
+            </div>
+
+            <p id="status" class="form-status" role="status" aria-live="polite"></p>
+            <div class="security-note"><span aria-hidden="true">◇</span><p><strong>一次性安全驗證</strong><small>驗證碼 10 分鐘內有效，使用後立即失效。</small></p></div>
+        </form>
+    </aside>
+</section>
