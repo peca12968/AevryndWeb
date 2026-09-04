@@ -52,6 +52,9 @@ builder.Services.AddSingleton<IEmailSender, GmailEmailSender>();
 builder.Services.AddSingleton<IPortalSessionStore, PortalSessionStore>();
 builder.Services.AddSingleton<IRemoteTelemetryStore, FileRemoteTelemetryStore>();
 builder.Services.AddSingleton<IRemoteOperationsTelemetry, RemoteOperationsTelemetry>();
+builder.Services.AddSingleton<ICodexEventRelayStore, FileCodexEventRelayStore>();
+builder.Services.AddSingleton<ICodexEventRelayReplayStore, FileCodexEventRelayReplayStore>();
+builder.Services.AddSingleton<ICodexEventRelay, CodexEventRelay>();
 builder.Services.AddSingleton<IOperationsSnapshotProvider, FileOperationsSnapshotProvider>();
 if (!builder.Environment.IsEnvironment("Testing") && OperatingSystem.IsWindows()) builder.Services.AddHostedService<OperationsTelemetryPublisher>();
 builder.Services.AddSingleton<IRemoteControlGrantService, RemoteControlGrantService>();
@@ -91,6 +94,7 @@ app.Use(async (context, next) =>
 });
 app.UseHttpsRedirection();
 app.UseStaticFiles(new StaticFileOptions { OnPrepareResponse = ctx => { ctx.Context.Response.Headers["X-Content-Type-Options"] = "nosniff"; ctx.Context.Response.Headers["Cache-Control"] = "public,max-age=3600"; } });
+app.UseWebSockets(new WebSocketOptions { KeepAliveInterval = TimeSpan.FromSeconds(30) });
 app.UseRouting(); app.UseAuthentication(); app.UseAuthorization();
 app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
 app.Run();
