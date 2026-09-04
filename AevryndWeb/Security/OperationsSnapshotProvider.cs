@@ -13,7 +13,7 @@ public interface IOperationsSnapshotProvider
     OperationsViewModel Read(DateTimeOffset now);
 }
 
-public sealed class FileOperationsSnapshotProvider(IConfiguration configuration) : IOperationsSnapshotProvider
+public sealed class FileOperationsSnapshotProvider(IConfiguration configuration, IRemoteTelemetryStore remoteTelemetry) : IOperationsSnapshotProvider
 {
     private static readonly (string Id, string Name)[] KnownNodes = [("local", "本機"), ("taichung", "台中"), ("taoyuan", "桃園")];
     private string StatePath => configuration["Operations:StatePath"] ?? @"C:\ProgramData\AevryndWeb\operations-state.json";
@@ -31,9 +31,17 @@ public sealed class FileOperationsSnapshotProvider(IConfiguration configuration)
                 PropertyNameCaseInsensitive = false,
                 UnmappedMemberHandling = JsonUnmappedMemberHandling.Disallow
             });
-            return document is not null && OperationsSnapshotSchema.TryNormalize(document, now, out var model)
-                ? model
-                : Empty("invalid：操作摘要 schema 或時間無效。");
+            if (document is null || !OperationsSnapshotSchema.TryNormalize(document, now, out var model))
+                return Empty("invalid：操作摘要 schema 或時間無效。");
+            var nodes = model.Nodes.ToArray();
+            for (var index = 0; index < nodes.Length; index++)
+            {
+                if (nodes[index].Id == "local") continue;
+                nodes[index] = remoteTelemetry.TryReadFresh(nodes[index].Id, now, out var remote)
+                    ? new OperationsNodeView(nodes[index].Id, nodes[index].Name, Math.Round(remote.CpuPercent!.Value, 1), Math.Round(remote.RamPercent!.Value, 1), Math.Round(remote.GpuPercent!.Value, 1), remote.SampledAt, false)
+                    : new OperationsNodeView(nodes[index].Id, nodes[index].Name, null, null, null, null, true);
+            }
+            return model with { Nodes = nodes };
         }
         catch (Exception exception) when (exception is IOException or UnauthorizedAccessException or JsonException or ArgumentException)
         { return Empty("invalid：操作摘要無法安全讀取。"); }
@@ -42,7 +50,13 @@ public sealed class FileOperationsSnapshotProvider(IConfiguration configuration)
     private OperationsViewModel Empty(string status) => new(KnownNodes.Select(node => new OperationsNodeView(node.Id, node.Name, null, null, null, null, true)).ToArray(), [], [], null, false, status);
 
     [SupportedOSPlatform("windows")]
-    private static bool HasSafeAcl(string path)
+    private static bool HasSafeAcl(string path) => OperationsFileSecurity.HasSafeAcl(path);
+}
+
+internal static class OperationsFileSecurity
+{
+    [SupportedOSPlatform("windows")]
+    internal static bool HasSafeAcl(string path)
     {
         if ((File.GetAttributes(path) & FileAttributes.ReparsePoint) != 0) return false;
         var current = WindowsIdentity.GetCurrent().User; if (current is null) return false;

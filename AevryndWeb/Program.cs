@@ -50,6 +50,8 @@ builder.Services.AddDataProtection().PersistKeysToFileSystem(new DirectoryInfo(b
 builder.Services.AddSingleton<IOtpService, OtpService>();
 builder.Services.AddSingleton<IEmailSender, GmailEmailSender>();
 builder.Services.AddSingleton<IPortalSessionStore, PortalSessionStore>();
+builder.Services.AddSingleton<IRemoteTelemetryStore, FileRemoteTelemetryStore>();
+builder.Services.AddSingleton<IRemoteOperationsTelemetry, RemoteOperationsTelemetry>();
 builder.Services.AddSingleton<IOperationsSnapshotProvider, FileOperationsSnapshotProvider>();
 if (!builder.Environment.IsEnvironment("Testing") && OperatingSystem.IsWindows()) builder.Services.AddHostedService<OperationsTelemetryPublisher>();
 builder.Services.AddSingleton<IRemoteControlGrantService, RemoteControlGrantService>();

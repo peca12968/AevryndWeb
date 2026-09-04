@@ -6,6 +6,7 @@ $script:PublicSitePort = 8792
 $script:PublicSiteRoot = Join-Path ([Environment]::GetFolderPath([Environment+SpecialFolder]::CommonApplicationData)) 'AevryndWeb'
 $script:PublicSitePublish = Join-Path $script:PublicSiteRoot 'publish'
 $script:PublicSiteState = Join-Path $script:PublicSiteRoot 'runtime.json'
+$script:RemoteTelemetryDirectory = Join-Path $script:PublicSiteRoot 'remote-telemetry'
 $script:GmailCredentialTarget = 'Aevrynd/AssistantPortal/GmailAppPassword'
 $script:NgrokCredentialTarget = 'Aevrynd/LineGateway/NgrokAuthtoken'
 
@@ -120,6 +121,22 @@ function Get-PublicSitePaths {
         }
     }
     return [pscustomobject]@{ Dotnet = $dotnet; Ngrok = $ngrok; Assembly = $assembly }
+}
+
+function Initialize-RemoteTelemetryDirectory {
+    New-Item -ItemType Directory -Path $script:RemoteTelemetryDirectory -Force | Out-Null
+    $security = New-Object System.Security.AccessControl.DirectorySecurity
+    $security.SetAccessRuleProtection($true, $false)
+    $inheritance = [System.Security.AccessControl.InheritanceFlags]::ContainerInherit -bor [System.Security.AccessControl.InheritanceFlags]::ObjectInherit
+    $propagation = [System.Security.AccessControl.PropagationFlags]::None
+    $identities = @([System.Security.Principal.WindowsIdentity]::GetCurrent().User,
+        (New-Object System.Security.Principal.SecurityIdentifier([System.Security.Principal.WellKnownSidType]::BuiltinAdministratorsSid, $null)),
+        (New-Object System.Security.Principal.SecurityIdentifier([System.Security.Principal.WellKnownSidType]::LocalSystemSid, $null)))
+    foreach ($identity in $identities) {
+        $rule = New-Object System.Security.AccessControl.FileSystemAccessRule($identity, [System.Security.AccessControl.FileSystemRights]::FullControl, $inheritance, $propagation, [System.Security.AccessControl.AccessControlType]::Allow)
+        $security.AddAccessRule($rule)
+    }
+    Set-Acl -LiteralPath $script:RemoteTelemetryDirectory -AclObject $security
 }
 
 function Test-PublicSiteLocal {

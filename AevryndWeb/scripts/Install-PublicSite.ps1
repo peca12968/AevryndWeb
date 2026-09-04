@@ -19,6 +19,7 @@ $hadPreviousPublish = Test-Path -LiteralPath $script:PublicSitePublish -PathType
 
 New-Item -ItemType Directory -Path $script:PublicSiteRoot -Force | Out-Null
 New-Item -ItemType Directory -Path $managedScripts -Force | Out-Null
+Initialize-RemoteTelemetryDirectory
 
 if (Test-Path -LiteralPath $fixedPwsh -PathType Leaf) {
     $pwsh = $fixedPwsh
