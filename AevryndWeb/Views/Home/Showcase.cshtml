@@ -14,52 +14,55 @@
 
     <section class="showcase-section" aria-labelledby="release-title">
         <div class="section-heading"><p class="micro-label">TRACEABLE RELEASES</p><h2 id="release-title">可追溯 Demo 與發布切片</h2><p>只有狀態帳與功能目錄明確附帶版本、來源或驗證契約者列為發布證據。磁碟中的其他舊目錄僅是歷史產物。</p></div>
+        <div class="showcase-filters" role="group" aria-label="Demo 狀態篩選"><button type="button" data-release-filter="all" aria-pressed="true">全部</button><button type="button" data-release-filter="released" aria-pressed="false">已發布</button><button type="button" data-release-filter="historical" aria-pressed="false">歷史／不合格</button></div>
         <div class="release-grid">
-            <article class="release-card release-current"><span>ENGINE LAB</span><h3>v2.55 · 四級陰影</h3><p>4×2048 CSM、contact shadow、113/113 suite；immutable tree 134 files。</p><code>v2.55.0-engine-v2.86.0-c033de38</code></article>
-            <article class="release-card"><span>ENGINE LAB</span><h3>v2.53 · Dirty Delta</h3><p>大型世界增量持久化、95/95 tests、GPU validation 8、6 captures。</p><code>v2.53.0-engine-v2.86.0-73f10a96</code></article>
-            <article class="release-card"><span>ENGINE LAB</span><h3>v2.52 · Origin Rebase</h3><p>int64 global position 與跨系統 frame-boundary transaction；89/89 tests。</p><code>v2.52.0-engine-v2.86.0-e1584944</code></article>
-            <article class="release-card"><span>ENGINE LAB</span><h3>v2.51 · World Partition</h3><p>分區載入驗收切片；81/81 tests、GPU validation 與 5 captures。</p><code>v2.51.0-engine-v2.86.0-4568daa1</code></article>
-            <article class="release-card"><span>CHARACTER LAB</span><h3>v2.10 · Character</h3><p>Immutable Character release；latest 與 pinned launcher 完成 12/12 擷取。</p><code>v2.10.0-engine-v2.86.0-27ea58cd</code></article>
-            <article class="release-card release-warning"><span>GAMEPLAY LAB</span><h3>v1.3 · 歷史發布</h3><p>目前最新已發布 Gameplay Demo，但已被判定不合格，不可作為目前品質代表。</p><code>v1.3.0-engine-v2.86.0-2260f01e</code></article>
+            <article class="release-card release-current" tabindex="0" data-release-state="released" data-detail-title="Engine Lab v2.55" data-detail="已發布的四級級聯與接觸陰影驗收切片；效能、記憶體與 immutable release 有獨立 receipt，但不代表完整全域光照或 UE5 等價。"><span>ENGINE LAB</span><h3>v2.55 · 四級陰影</h3><p>4×2048 CSM、contact shadow、113/113 suite；immutable tree 134 files。</p><code>v2.55.0-engine-v2.86.0-c033de38</code></article>
+            <article class="release-card" tabindex="0" data-release-state="released" data-detail-title="Engine Lab v2.53" data-detail="Dirty Delta V2 以 snapshot 與 journal mirror 保存 building、vegetation 與 terrain edits；這仍不是 server-authoritative MMO persistence。"><span>ENGINE LAB</span><h3>v2.53 · Dirty Delta</h3><p>大型世界增量持久化、95/95 tests、GPU validation 8、6 captures。</p><code>v2.53.0-engine-v2.86.0-73f10a96</code></article>
+            <article class="release-card" tabindex="0" data-release-state="released" data-detail-title="Engine Lab v2.52" data-detail="以 int64 chunk 與 local offset 建立大型世界座標，並用兩階段交易同步 ECS、physics、navigation、camera 與 renderer。"><span>ENGINE LAB</span><h3>v2.52 · Origin Rebase</h3><p>int64 global position 與跨系統 frame-boundary transaction；89/89 tests。</p><code>v2.52.0-engine-v2.86.0-e1584944</code></article>
+            <article class="release-card" tabindex="0" data-release-state="released" data-detail-title="Engine Lab v2.51" data-detail="World Partition 驗收版本展示分區 prepare、activate、retire 與資源 lease；完整 world streaming 仍持續演進。"><span>ENGINE LAB</span><h3>v2.51 · World Partition</h3><p>分區載入驗收切片；81/81 tests、GPU validation 與 5 captures。</p><code>v2.51.0-engine-v2.86.0-4568daa1</code></article>
+            <article class="release-card" tabindex="0" data-release-state="released" data-detail-title="Character Lab v2.10" data-detail="Character immutable release 具 latest 與 pinned launcher 擷取證據；它是角色管線驗收，不代表 Gameplay Lab 的整體視覺品質。"><span>CHARACTER LAB</span><h3>v2.10 · Character</h3><p>Immutable Character release；latest 與 pinned launcher 完成 12/12 擷取。</p><code>v2.10.0-engine-v2.86.0-27ea58cd</code></article>
+            <article class="release-card release-warning" tabindex="0" data-release-state="historical" data-detail-title="Gameplay Lab v1.3" data-detail="此版本可追溯且已發布，但使用者已判定不合格。它不得作為現況畫質或 v1.4 發布資格的證據。"><span>GAMEPLAY LAB</span><h3>v1.3 · 歷史發布</h3><p>目前最新已發布 Gameplay Demo，但已被判定不合格，不可作為目前品質代表。</p><code>v1.3.0-engine-v2.86.0-2260f01e</code></article>
         </div>
         <p class="evidence-note">磁碟另留存 Engine Lab v2.46–2.50／2.54、Gameplay v1.0–1.2 與 Character v2.9.1／其他 v2.10 generations；它們在此僅列為歷史可追溯目錄，不作目前來源通過證據。</p>
     </section>
 
     <section class="showcase-section" aria-labelledby="timeline-title">
         <div class="section-heading"><p class="micro-label">DEVELOPMENT TIMELINE</p><h2 id="timeline-title">目前已驗證切片</h2></div>
+        <div class="showcase-filters" role="group" aria-label="開發切片篩選"><button type="button" data-stage-filter="all" aria-pressed="true">全部</button><button type="button" data-stage-filter="released" aria-pressed="false">含發布成果</button><button type="button" data-stage-filter="wip" aria-pressed="false">驗證中 WIP</button></div>
         <div class="timeline">
-            <article><time>WORLD</time><h3>World Partition Phase 1／2</h3><p>非同步 prepare／activate／retire、terrain／vegetation payload、origin rebasing 與 Dirty Delta。部分驗收 Demo 已發布，完整大型世界仍持續演進。</p></article>
-            <article><time>GPU</time><h3>GPU-driven 1A／1B + HZB</h3><p>compute culling、ExecuteIndirect、homogeneous buckets、current-frame HZB 與 paired benchmark。Temporal hybrid occlusion、bindless indexing仍待完成。</p></article>
-            <article><time>LIGHT</time><h3>Forward+ 與四級陰影</h3><p>Forward+ 已提交並驗證；Engine Lab 2.55 已發布 4-cascade CSM 與 contact shadow。這不是 Lumen／Nanite 等價聲明。</p></article>
-            <article><time>TEMPORAL</time><h3>TAA previous-depth closure</h3><p>Atmosphere／TAA 同一 sequence token 重用，previous-depth、Color／OID／Depth SHA closure 與 GBV ghost gate 通過；屬核心正確性，不直接提高視覺分數。</p></article>
-            <article><time>WORLD DETAIL</time><h3>Water、foliage、Linear HDR</h3><p>逐水體 HDR 合成、透明交錯、葉片 alpha/mip/UV 與 sealed HDR sidecar 已驗證；仍是未發布 WIP。</p></article>
-            <article><time>HLOD</time><h3>HLOD Slice 1／2／4</h3><p>Frozen selection、proxy lease、transition raster、HZB identity 與 shadow parity 核心通過。完整 GPU selection、真實 workload 與 gameplay transition pixels 尚缺。</p></article>
-            <article><time>POST FX</time><h3>Depth-semantic Bloom</h3><p>最新來源已完成 fresh Normal／GBV 修復驗證；目前仍等待主代理精準提交，不能標示為 production complete。</p></article>
+            <article data-stage="released"><time>WORLD</time><h3>World Partition Phase 1／2</h3><p>非同步 prepare／activate／retire、terrain／vegetation payload、origin rebasing 與 Dirty Delta。部分驗收 Demo 已發布，完整大型世界仍持續演進。</p></article>
+            <article data-stage="wip"><time>GPU</time><h3>GPU-driven 1A／1B + HZB</h3><p>compute culling、ExecuteIndirect、homogeneous buckets、current-frame HZB 與 paired benchmark。Temporal hybrid occlusion、bindless indexing仍待完成。</p></article>
+            <article data-stage="released"><time>LIGHT</time><h3>Forward+ 與四級陰影</h3><p>Forward+ 已提交並驗證；Engine Lab 2.55 已發布 4-cascade CSM 與 contact shadow。這不是 Lumen／Nanite 等價聲明。</p></article>
+            <article data-stage="wip"><time>TEMPORAL</time><h3>TAA previous-depth closure</h3><p>Atmosphere／TAA 同一 sequence token 重用，previous-depth、Color／OID／Depth SHA closure 與 GBV ghost gate 通過；屬核心正確性，不直接提高視覺分數。</p></article>
+            <article data-stage="wip"><time>WORLD DETAIL</time><h3>Water、foliage、Linear HDR</h3><p>逐水體 HDR 合成、透明交錯、葉片 alpha/mip/UV 與 sealed HDR sidecar 已驗證；仍是未發布 WIP。</p></article>
+            <article data-stage="wip"><time>HLOD</time><h3>HLOD Slice 1／2／4</h3><p>Frozen selection、proxy lease、transition raster、HZB identity 與 shadow parity 核心通過。完整 GPU selection、真實 workload 與 gameplay transition pixels 尚缺。</p></article>
+            <article data-stage="wip"><time>POST FX</time><h3>Depth-semantic Bloom</h3><p>最新來源已完成 fresh Normal／GBV 修復驗證；目前仍等待主代理精準提交，不能標示為 production complete。</p></article>
         </div>
     </section>
 
     <section class="showcase-section diagram-section" aria-labelledby="system-title">
         <div class="section-heading"><p class="micro-label">SYSTEM TOPOLOGY</p><h2 id="system-title">目前系統結構</h2></div>
-        <svg class="architecture-map" viewBox="0 0 1100 360" role="img" aria-labelledby="system-svg-title system-svg-desc">
+        <div class="map-toolbar"><span>點擊節點查看責任邊界</span><button type="button" data-map-zoom="out" aria-label="縮小架構圖">−</button><button type="button" data-map-zoom="reset">100%</button><button type="button" data-map-zoom="in" aria-label="放大架構圖">＋</button></div>
+        <div class="map-viewport"><svg id="systemArchitectureMap" class="architecture-map" viewBox="0 0 1100 360" role="img" aria-labelledby="system-svg-title system-svg-desc">
             <title id="system-svg-title">Aevrynd 系統結構圖</title><desc id="system-svg-desc">網站與主代理協調本機引擎、驗證管線及受限 Qwen 節點。</desc>
             <g class="map-lines"><path d="M190 180H420"/><path d="M680 180H910"/><path d="M550 115V55"/><path d="M550 245V310"/></g>
-            <g class="map-node"><rect x="20" y="125" width="170" height="110" rx="14"/><text x="105" y="168">PUBLIC SITE</text><text class="map-sub" x="105" y="195">Showcase · Secure Portal</text></g>
-            <g class="map-node map-node-main"><rect x="420" y="115" width="260" height="130" rx="18"/><text x="550" y="165">CODEX ORCHESTRATOR</text><text class="map-sub" x="550" y="195">拆分 · 整合 · 驗收 · 發布 gate</text></g>
-            <g class="map-node"><rect x="910" y="125" width="170" height="110" rx="14"/><text x="995" y="168">AEVRYND ENGINE</text><text class="map-sub" x="995" y="195">Source · Demo · Evidence</text></g>
-            <g class="map-node"><rect x="455" y="5" width="190" height="70" rx="13"/><text x="550" y="35">QWEN ADVISORY</text><text class="map-sub" x="550" y="57">受限唯讀簡單工作</text></g>
-            <g class="map-node"><rect x="440" y="290" width="220" height="65" rx="13"/><text x="550" y="318">FRESH VALIDATION</text><text class="map-sub" x="550" y="340">Normal · GBV · Visual gates</text></g>
-        </svg>
+            <g class="map-node" tabindex="0" role="button" data-detail-title="Public Site" data-detail="公開 Showcase 只呈現可追溯狀態；Secure Portal 與 Remote Console 維持獨立登入、step-up 與本機 kill switch。"><rect x="20" y="125" width="170" height="110" rx="14"/><text x="105" y="168">PUBLIC SITE</text><text class="map-sub" x="105" y="195">Showcase · Secure Portal</text></g>
+            <g class="map-node map-node-main" tabindex="0" role="button" data-detail-title="Codex Orchestrator" data-detail="主代理負責拆分、整合、fresh 驗證、敵意審查與發布決策；只有通過 gate 的狀態能升級為已發布。"><rect x="420" y="115" width="260" height="130" rx="18"/><text x="550" y="165">CODEX ORCHESTRATOR</text><text class="map-sub" x="550" y="195">拆分 · 整合 · 驗收 · 發布 gate</text></g>
+            <g class="map-node" tabindex="0" role="button" data-detail-title="Aevrynd Engine" data-detail="引擎 repo 保存 D3D12 renderer、ECS、World Partition、HLOD、工具、Demo source 與 typed evidence contracts。"><rect x="910" y="125" width="170" height="110" rx="14"/><text x="995" y="168">AEVRYND ENGINE</text><text class="map-sub" x="995" y="195">Source · Demo · Evidence</text></g>
+            <g class="map-node" tabindex="0" role="button" data-detail-title="Qwen Advisory" data-detail="離線模型只承接 summary、classification、test-template、inventory 等受限唯讀工作；輸出仍須由主代理驗證。"><rect x="455" y="5" width="190" height="70" rx="13"/><text x="550" y="35">QWEN ADVISORY</text><text class="map-sub" x="550" y="57">受限唯讀簡單工作</text></g>
+            <g class="map-node" tabindex="0" role="button" data-detail-title="Fresh Validation" data-detail="目前來源必須重新建置並通過 Normal、GBV、GPU debug 與視覺 gate；舊 artifact 或單一 exit code不能替代證據。"><rect x="440" y="290" width="220" height="65" rx="13"/><text x="550" y="318">FRESH VALIDATION</text><text class="map-sub" x="550" y="340">Normal · GBV · Visual gates</text></g>
+        </svg></div>
     </section>
 
     <section class="showcase-section diagram-section" aria-labelledby="engine-title">
         <div class="section-heading"><p class="micro-label">ENGINE ARCHITECTURE</p><h2 id="engine-title">引擎架構</h2></div>
         <div class="engine-stack" role="img" aria-label="從遊戲與工具層到底層平台的 Aevrynd 引擎架構">
-            <div><strong>Games & Tools</strong><span>Gameplay Lab · Character Lab · Engine Lab · World Builder · Capture Validators</span></div>
-            <div><strong>Gameplay Systems</strong><span>ECS · Animation · Physics · Navigation · Camera · Combat · Serialization</span></div>
-            <div><strong>World Runtime</strong><span>World Partition · HLOD · Terrain · Vegetation · Origin Rebase · Dirty Delta</span></div>
-            <div><strong>Rendering</strong><span>D3D12 · Forward+ · GPU-driven · HZB · CSM · TAA · HDR · Water · Bloom</span></div>
-            <div><strong>Evidence & Safety</strong><span>Typed receipts · Object ID · Depth · SHA-256 · GBV · Rollback · Immutable release</span></div>
-            <div><strong>Platform</strong><span>Windows · D3D12 · Asset cooker · Filesystem · Offline Qwen advisory</span></div>
+            <div tabindex="0" data-detail-title="Games & Tools" data-detail="三個 Lab、World Builder 與 capture validators 是功能展示與驗收入口，不等同單一完整遊戲。"><strong>Games & Tools</strong><span>Gameplay Lab · Character Lab · Engine Lab · World Builder · Capture Validators</span></div>
+            <div tabindex="0" data-detail-title="Gameplay Systems" data-detail="以 ECS 串接動畫、物理、導航、相機、戰鬥與序列化；系統變更需維持決定性與 rollback。"><strong>Gameplay Systems</strong><span>ECS · Animation · Physics · Navigation · Camera · Combat · Serialization</span></div>
+            <div tabindex="0" data-detail-title="World Runtime" data-detail="大型世界使用 World Partition、HLOD、origin rebase 與 Dirty Delta；完整 GPU HLOD selection 仍未完成。"><strong>World Runtime</strong><span>World Partition · HLOD · Terrain · Vegetation · Origin Rebase · Dirty Delta</span></div>
+            <div tabindex="0" data-detail-title="Rendering" data-detail="Production backend 目前以 D3D12 為主。DLSS 未實作；Bloom、部分 HDR 與 temporal 能力仍依各切片狀態標示。"><strong>Rendering</strong><span>D3D12 · Forward+ · GPU-driven · HZB · CSM · TAA · HDR · Water · Bloom</span></div>
+            <div tabindex="0" data-detail-title="Evidence & Safety" data-detail="Typed receipt、OID、depth、hash、GBV 與 immutable release 將測試結果綁回實際來源和產物。"><strong>Evidence & Safety</strong><span>Typed receipts · Object ID · Depth · SHA-256 · GBV · Rollback · Immutable release</span></div>
+            <div tabindex="0" data-detail-title="Platform" data-detail="Windows/D3D12 與資產 cooker 構成目前主要平台；離線 Qwen 只提供受限 advisory。"><strong>Platform</strong><span>Windows · D3D12 · Asset cooker · Filesystem · Offline Qwen advisory</span></div>
         </div>
     </section>
 
@@ -71,4 +74,6 @@
         <article><strong>Bloom 待提交</strong><p>fresh GBV 修復已完成，但在主代理精準提交前仍是工作樹來源，不是已發布 production 功能。</p></article>
     </section>
     <p class="showcase-source">資料基準：TASK_STATE、EngineFeatureCatalog、EngineChangeLog 與目前可追溯 release 目錄。頁面不從 build／test artifact 推導目前通過狀態。</p>
+    <aside id="showcaseDetail" class="showcase-detail" aria-live="polite" aria-hidden="true"><button type="button" aria-label="關閉詳情">×</button><p class="micro-label">TRACEABLE DETAIL</p><h2>選取項目</h2><p>點擊版本或架構節點查看證據邊界。</p></aside>
 </section>
+@section Scripts { <script src="~/js/showcase.js" asp-append-version="true"></script> }

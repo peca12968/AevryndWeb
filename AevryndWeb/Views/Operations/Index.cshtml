@@ -1,0 +1,76 @@
+@model AevryndWeb.Models.OperationsViewModel
+@{
+    ViewData["Title"] = "主機與工作歷程";
+}
+@functions {
+    private static string Metric(double? value) => value.HasValue ? $"{value.Value:0.0}%" : "unavailable";
+    private static string Timestamp(DateTimeOffset? value) => value.HasValue ? value.Value.UtcDateTime.ToString("yyyy-MM-dd HH:mm:ss 'UTC'") : "unavailable";
+}
+
+<section class="operations-shell">
+    <header class="operations-head">
+        <div>
+            <p class="eyebrow"><span></span> OWNER OPERATIONS</p>
+            <h1>主機與工作歷程</h1>
+            <p>只呈現經過固定 schema 與本機 ACL 驗證的摘要；不載入命令、憑證、IP、畫面或原始日誌。</p>
+        </div>
+        <a class="button button-quiet" asp-controller="Home" asp-action="Portal">返回控制台</a>
+    </header>
+
+    <div class="operations-source @(Model.SourceAvailable ? "is-available" : "is-unavailable")">
+        <div><span class="operations-signal" aria-hidden="true"></span><strong>@Model.SourceStatus</strong></div>
+        <span>摘要時間：<time datetime="@(Model.SnapshotAt?.ToString("O"))">@Timestamp(Model.SnapshotAt)</time></span>
+    </div>
+
+    <section class="operations-section" aria-labelledby="nodesTitle">
+        <div class="operations-title"><div><span class="micro-label">NODE TELEMETRY</span><h2 id="nodesTitle">運算節點</h2></div><p>超過兩分鐘的採樣標示 stale；缺少可信資料時不推估數值。</p></div>
+        <div class="operations-node-grid">
+            @foreach (var node in Model.Nodes)
+            {
+                <article class="operations-node-card">
+                    <header><div><small>@node.Id.ToUpperInvariant()</small><h3>@node.Name</h3></div><span class="operations-badge @(node.Stale ? "is-stale" : "is-current")">@(node.Stale ? "stale" : "current")</span></header>
+                    <dl>
+                        <div><dt>CPU</dt><dd>@Metric(node.CpuPercent)</dd></div>
+                        <div><dt>RAM</dt><dd>@Metric(node.RamPercent)</dd></div>
+                        <div><dt>GPU</dt><dd>@Metric(node.GpuPercent)</dd></div>
+                    </dl>
+                    <p>採樣：<time datetime="@(node.SampledAt?.ToString("O"))">@Timestamp(node.SampledAt)</time></p>
+                </article>
+            }
+        </div>
+    </section>
+
+    <section class="operations-section" aria-labelledby="activeTitle">
+        <div class="operations-title"><div><span class="micro-label">ACTIVE WORK</span><h2 id="activeTitle">正在工作</h2></div><p>超過十五分鐘沒有更新的項目標示 stale。</p></div>
+        @if (Model.ActiveWork.Count == 0)
+        {
+            <p class="operations-empty">目前沒有可驗證的工作摘要。</p>
+        }
+        else
+        {
+            <div class="operations-table-wrap"><table class="operations-table"><thead><tr><th>安全名稱</th><th>類型</th><th>主機</th><th>開始</th><th>最近更新</th><th>狀態</th></tr></thead><tbody>
+            @foreach (var item in Model.ActiveWork)
+            {
+                <tr><td data-label="安全名稱">@item.Name</td><td data-label="類型">@item.Type</td><td data-label="主機">@item.Host</td><td data-label="開始"><time datetime="@item.StartedAt.ToString("O")">@Timestamp(item.StartedAt)</time></td><td data-label="最近更新"><time datetime="@(item.UpdatedAt?.ToString("O"))">@Timestamp(item.UpdatedAt)</time></td><td data-label="狀態"><span class="operations-badge @(item.Stale ? "is-stale" : "is-current")">@(item.Stale ? $"{item.Status} · stale" : item.Status)</span></td></tr>
+            }
+            </tbody></table></div>
+        }
+    </section>
+
+    <section class="operations-section" aria-labelledby="historyTitle">
+        <div class="operations-title"><div><span class="micro-label">AUDITED HISTORY</span><h2 id="historyTitle">完整歷程</h2></div><p>證據只顯示安全摘要，不提供原始輸出或可執行內容。</p></div>
+        @if (Model.History.Count == 0)
+        {
+            <p class="operations-empty">目前沒有可驗證的歷史摘要。</p>
+        }
+        else
+        {
+            <div class="operations-table-wrap"><table class="operations-table operations-history"><thead><tr><th>安全名稱</th><th>類型／主機</th><th>開始／結束</th><th>結果</th><th>證據摘要</th></tr></thead><tbody>
+            @foreach (var item in Model.History)
+            {
+                <tr><td data-label="安全名稱">@item.Name</td><td data-label="類型／主機">@item.Type · @item.Host</td><td data-label="開始／結束"><time datetime="@item.StartedAt.ToString("O")">@Timestamp(item.StartedAt)</time><br /><time datetime="@(item.EndedAt?.ToString("O"))">@Timestamp(item.EndedAt)</time></td><td data-label="結果"><span class="operations-badge">@item.Status</span></td><td data-label="證據摘要">@(item.EvidenceSummary ?? "unavailable")</td></tr>
+            }
+            </tbody></table></div>
+        }
+    </section>
+</section>

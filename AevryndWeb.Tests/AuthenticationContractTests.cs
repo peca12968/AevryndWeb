@@ -22,6 +22,8 @@ public sealed class AuthenticationContractTests
         Assert.Contains("34 / 100", html); Assert.Contains("v1.4 未發布", html);
         Assert.Contains("DLSS 未實作", html); Assert.Contains("Bloom 待提交", html);
         Assert.Contains("ENGINE ARCHITECTURE", html); Assert.Contains("TRACEABLE RELEASES", html);
+        Assert.Contains("data-release-filter", html); Assert.Contains("data-stage-filter", html);
+        Assert.Contains("data-map-zoom", html); Assert.Contains("/js/showcase.js", html);
     }
 
     [Fact]

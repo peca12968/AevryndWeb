@@ -46,6 +46,7 @@ builder.Services.AddDataProtection().PersistKeysToFileSystem(new DirectoryInfo(b
 builder.Services.AddSingleton<IOtpService, OtpService>();
 builder.Services.AddSingleton<IEmailSender, GmailEmailSender>();
 builder.Services.AddSingleton<IPortalSessionStore, PortalSessionStore>();
+builder.Services.AddSingleton<IOperationsSnapshotProvider, FileOperationsSnapshotProvider>();
 builder.Services.AddSingleton<IRemoteControlGrantService, RemoteControlGrantService>();
 builder.Services.AddSingleton<IRemoteConsoleGuard, RemoteConsoleGuard>();
 builder.Services.AddSingleton<IAuthorizationHandler, PortalOwnerAuthorizationHandler>();

@@ -49,6 +49,29 @@ public sealed class RemoteConsoleContractTests : IDisposable
         Assert.Equal("42", frame.Headers.GetValues("X-Aevrynd-Frame-Generation").Single());
     }
 
+    [Theory]
+    [InlineData(null, HttpStatusCode.Unauthorized)]
+    [InlineData("wrong", HttpStatusCode.Forbidden)]
+    public async Task OperationsRejectsVisitorAndDifferentAccount(string? identity, HttpStatusCode expected)
+    {
+        using var client = CreateClient();
+        using var request = new HttpRequestMessage(HttpMethod.Get, "/Operations");
+        if (identity is not null) request.Headers.Add("X-Test-Identity", identity);
+        Assert.Equal(expected, (await client.SendAsync(request)).StatusCode);
+    }
+
+    [Fact]
+    public async Task OperationsAllowsValidatedOwnerAndNeverCachesSummary()
+    {
+        using var client = CreateClient();
+        var response = await SendAsync(client, HttpMethod.Get, "/Operations", "owner-none");
+        var html = await response.Content.ReadAsStringAsync();
+        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+        Assert.True(response.Headers.CacheControl?.NoStore);
+        Assert.Contains("unavailable", html);
+        Assert.DoesNotContain("operations-state.json", html, StringComparison.Ordinal);
+    }
+
     [Fact]
     public async Task FrameRateLimitRejectsImmediateSecondCapture()
     {

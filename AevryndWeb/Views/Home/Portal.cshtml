@@ -2,7 +2,7 @@
 <section class="dashboard-shell">
     <header class="dashboard-head"><div><p class="eyebrow"><span></span> COMMAND CENTER</p><h1>歡迎回來，指揮官</h1><p>三台運算節點已納入 Aevrynd 私有網路。</p></div><button id="logoutButton" class="button button-quiet">安全登出</button></header>
     <div class="dashboard-grid">
-        <article class="metric-card metric-wide"><span class="micro-label">SYSTEM OVERVIEW</span><strong>運算網路正常</strong><p>節點狀態、工作佇列與引擎進度將集中顯示於此。</p><div class="progress-track"><span></span></div></article>
+        <article class="metric-card metric-wide"><span class="micro-label">SYSTEM OVERVIEW</span><strong>私有運算網路</strong><p>節點遙測與工作紀錄只在通過 owner session 驗證後提供。</p><a class="console-link" asp-controller="Operations" asp-action="Index">開啟主機與工作歷程</a><div class="progress-track"><span></span></div></article>
         <article class="metric-card"><span class="node-status"></span><small>CORE / CODEX</small><h2>主電腦</h2><p>主要開發與任務整合</p><a class="console-link" asp-controller="RemoteConsole" asp-action="Index">開啟安全遠端工作階段</a></article>
         <article class="metric-card"><span class="node-status"></span><small>QWEN WORKER</small><h2>台中</h2><p>推論與驗證節點</p></article>
         <article class="metric-card"><span class="node-status"></span><small>QWEN WORKER</small><h2>桃園</h2><p>推論與測試節點</p></article>
