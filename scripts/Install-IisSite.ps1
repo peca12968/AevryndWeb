@@ -45,8 +45,10 @@ function Stop-IisRuntime {
 }
 
 function Start-IisRuntime {
-    Start-WebAppPool -Name $AppPoolName
-    Start-Website -Name $SiteName
+    $pool = Get-WebAppPoolState -Name $AppPoolName -ErrorAction SilentlyContinue
+    if ($null -eq $pool -or $pool.Value -ne 'Started') { Start-WebAppPool -Name $AppPoolName }
+    $site = Get-Website -Name $SiteName -ErrorAction SilentlyContinue
+    if ($null -eq $site -or $site.State -ne 'Started') { Start-Website -Name $SiteName }
 }
 
 function Test-IisHealth {
