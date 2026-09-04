@@ -3,8 +3,9 @@
   let cooldownTimer = 0;
   const notify = (icon, title, message) => window.Swal?.fire({ icon, title, text: message, confirmButtonText: "知道了", buttonsStyling: false, customClass: { popup: "aevrynd-alert", confirmButton: "aevrynd-alert-button" } });
   const loading = message => window.Swal?.fire({ title: message, text: "請稍候，系統正在透過加密通道處理。", allowEscapeKey: false, allowOutsideClick: false, showConfirmButton: false, didOpen: () => window.Swal.showLoading(), customClass: { popup: "aevrynd-alert" } });
-  async function token() { if (!csrf) csrf = (await (await fetch("/api/auth/csrf", { credentials: "same-origin" })).json()).token; return csrf; }
-  async function post(url, body) { const response = await fetch(url, { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json", "X-CSRF-TOKEN": await token() }, body: JSON.stringify(body) }); return { response, data: await response.json().catch(() => ({})) }; }
+  const tunnelHeaders = { "ngrok-skip-browser-warning": "true" };
+  async function token() { if (!csrf) csrf = (await (await fetch("/api/auth/csrf", { credentials: "same-origin", headers: tunnelHeaders })).json()).token; return csrf; }
+  async function post(url, body) { const response = await fetch(url, { method: "POST", credentials: "same-origin", headers: { ...tunnelHeaders, "Content-Type": "application/json", "X-CSRF-TOKEN": await token() }, body: JSON.stringify(body) }); return { response, data: await response.json().catch(() => ({})) }; }
   const send = document.querySelector("#sendButton"), status = document.querySelector("#status");
   function startCooldown() { let remaining = 60; const label = send.querySelector("span"); window.clearInterval(cooldownTimer); cooldownTimer = window.setInterval(() => { remaining -= 1; label.textContent = remaining > 0 ? `${remaining} 秒後可重新傳送` : "重新傳送驗證碼"; if (remaining <= 0) { window.clearInterval(cooldownTimer); send.disabled = false; } }, 1000); }
   send?.addEventListener("click", async () => { const email = document.querySelector("#email"); if (!email.checkValidity()) { email.reportValidity(); notify("warning", "請檢查電子信箱", "請輸入有效且已授權的電子信箱地址。"); return; } const label = send.querySelector("span"); send.disabled = true; send.classList.add("is-loading"); label.textContent = "正在建立安全郵件…"; status.textContent = ""; loading("正在傳送驗證碼"); try { const result = await post("/api/auth/request-code", { email: email.value }); const message = result.data.message || "驗證碼已傳送，請查看信箱。"; status.textContent = message; status.dataset.kind = result.response.ok ? "success" : "error"; window.Swal?.close(); if (!result.response.ok) { send.disabled = false; label.textContent = "重新傳送驗證碼"; notify("error", "無法傳送", message); return; } document.querySelector("#verifyBox").hidden = false; document.querySelector("#code").focus(); startCooldown(); notify("success", "驗證碼已寄出", `${message} 60 秒後可重新傳送。`); } catch { const message = "暫時無法連線，請稍後再試。"; window.Swal?.close(); status.textContent = message; status.dataset.kind = "error"; send.disabled = false; label.textContent = "重新傳送驗證碼"; notify("error", "連線失敗", message); } finally { send.classList.remove("is-loading"); } });
@@ -15,6 +16,7 @@
 (() => {
   const root = document.querySelector("[data-operations-root]");
   if (!root) return;
+  const tunnelHeaders = { "ngrok-skip-browser-warning": "true" };
   const source = root.querySelector("[data-operations-source]");
   const sourceStatus = root.querySelector("[data-source-status]");
   const snapshotTime = root.querySelector("[data-snapshot-time]");
@@ -88,7 +90,7 @@
   };
   const poll = async () => {
     try {
-      const response = await fetch(endpoint, { credentials: "same-origin", headers: { Accept: "application/json" }, cache: "no-store" });
+      const response = await fetch(endpoint, { credentials: "same-origin", headers: { ...tunnelHeaders, Accept: "application/json" }, cache: "no-store" });
       if (!response.ok) throw new Error(String(response.status));
       render(await response.json()); pollStatus.textContent = `畫面更新：${formatTime(new Date().toISOString())}`;
     } catch {
