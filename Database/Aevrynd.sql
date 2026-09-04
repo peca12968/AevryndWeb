@@ -18,6 +18,23 @@ BEGIN
 END;
 GO
 
+IF COL_LENGTH(N'dbo.PortalUsers', N'Role') IS NULL
+    ALTER TABLE dbo.PortalUsers ADD Role varchar(16) NOT NULL CONSTRAINT DF_PortalUsers_Role DEFAULT ('User');
+GO
+
+/* 僅允許這五個已核准信箱登入；角色不包含任何密碼或 OTP 秘密。 */
+MERGE dbo.PortalUsers AS target
+USING (VALUES
+    (CONVERT(uniqueidentifier, '8d4b51f5-9bf2-4d5a-9d9c-6b8b5f6e0001'), N'slime12968@gmail.com', 'Admin'),
+    (CONVERT(uniqueidentifier, '8d4b51f5-9bf2-4d5a-9d9c-6b8b5f6e0002'), N'peca12968@gmail.com', 'Admin'),
+    (CONVERT(uniqueidentifier, '8d4b51f5-9bf2-4d5a-9d9c-6b8b5f6e0003'), N'en531@livemail.tw', 'User'),
+    (CONVERT(uniqueidentifier, '8d4b51f5-9bf2-4d5a-9d9c-6b8b5f6e0004'), N'tokkinjoey@gmail.com', 'User'),
+    (CONVERT(uniqueidentifier, '8d4b51f5-9bf2-4d5a-9d9c-6b8b5f6e0005'), N'geminjjj@gmail.com', 'User')
+) AS source(UserId, Email, Role) ON target.Email = source.Email
+WHEN MATCHED THEN UPDATE SET target.Role = source.Role, target.IsEnabled = 1
+WHEN NOT MATCHED THEN INSERT (UserId, Email, Role, IsEnabled) VALUES (source.UserId, source.Email, source.Role, 1);
+GO
+
 IF OBJECT_ID(N'dbo.OtpChallenges', N'U') IS NULL
 BEGIN
     CREATE TABLE dbo.OtpChallenges

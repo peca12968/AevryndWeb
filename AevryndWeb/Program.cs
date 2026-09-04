@@ -33,12 +33,16 @@ builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy(PortalIdentity.PortalOwnerPolicy, policy => policy
         .RequireAuthenticatedUser()
-        .RequireClaim(System.Security.Claims.ClaimTypes.Email, PortalIdentity.AllowedEmail)
+        .RequireAssertion(context => PortalIdentity.IsAllowed(context.User.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value ?? string.Empty))
+        .AddRequirements(new PortalOwnerRequirement()));
+    options.AddPolicy(PortalIdentity.AdminPolicy, policy => policy
+        .RequireAuthenticatedUser()
+        .RequireAssertion(context => PortalIdentity.IsAdmin(context.User.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value ?? string.Empty))
         .AddRequirements(new PortalOwnerRequirement()));
     foreach (var capability in Enum.GetValues<RemoteCapability>())
         options.AddPolicy(PortalIdentity.CapabilityPolicy(capability), policy => policy
             .RequireAuthenticatedUser()
-            .RequireClaim(System.Security.Claims.ClaimTypes.Email, PortalIdentity.AllowedEmail)
+            .RequireAssertion(context => PortalIdentity.IsAdmin(context.User.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value ?? string.Empty))
             .AddRequirements(new RemoteControlRequirement(capability)));
 });
 builder.Services.AddMemoryCache();

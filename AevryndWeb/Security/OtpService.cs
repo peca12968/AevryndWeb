@@ -8,9 +8,26 @@ namespace AevryndWeb.Security;
 
 public static class PortalIdentity
 {
+    // 登入白名單與角色；資料庫也以相同的 email/role 種子資料維護。
     public const string AllowedEmail = "slime12968@gmail.com";
+    public const string AdminRole = "Admin";
+    public const string UserRole = "User";
+    private static readonly IReadOnlyDictionary<string, string> Accounts = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+    {
+        ["slime12968@gmail.com"] = AdminRole,
+        ["peca12968@gmail.com"] = AdminRole,
+        ["en531@livemail.tw"] = UserRole,
+        ["tokkinjoey@gmail.com"] = UserRole,
+        ["geminjjj@gmail.com"] = UserRole
+    };
+    public static IReadOnlyCollection<string> AllowedEmails => Accounts.Keys.ToArray();
+    public static bool IsAllowed(string email) => Accounts.ContainsKey(Normalize(email));
+    public static bool IsAdmin(string email) => Accounts.TryGetValue(Normalize(email), out var role) && role == AdminRole;
+    public static string? RoleFor(string email) => Accounts.TryGetValue(Normalize(email), out var role) ? role : null;
     public const string PortalOwnerPolicy = "PortalOwner";
+    public const string AdminPolicy = "PortalAdmin";
     public static string CapabilityPolicy(RemoteCapability capability) => $"RemoteConsole:{capability}";
+    private static string Normalize(string value) => (value ?? string.Empty).Trim().ToLowerInvariant();
 }
 
 public interface IOtpService
@@ -39,7 +56,7 @@ public sealed class OtpService(IEmailSender sender) : IOtpService
     public async Task RequestAsync(string email, string clientKey, CancellationToken cancellationToken)
     {
         var normalized = Normalize(email);
-        if (!FixedEmail(normalized)) return;
+        if (!PortalIdentity.IsAllowed(normalized)) return;
         PruneAndBound(requestLimits, DateTimeOffset.UtcNow);
         EnforceGlobalLimit(ref globalRequestLimit, 100, TimeSpan.FromMinutes(10));
         EnforceLimit(requestLimits, "ip:" + clientKey, 10, TimeSpan.FromMinutes(10));
@@ -51,27 +68,26 @@ public sealed class OtpService(IEmailSender sender) : IOtpService
         var code = string.Create(8, 0, (span, _) => { for (var i = 0; i < span.Length; i++) span[i] = Alphabet[RandomNumberGenerator.GetInt32(Alphabet.Length)]; });
         var salt = RandomNumberGenerator.GetBytes(16);
         var hash = Rfc2898DeriveBytes.Pbkdf2(code, salt, 120_000, HashAlgorithmName.SHA256, 32);
-        await sender.SendAsync(PortalIdentity.AllowedEmail, code, cancellationToken);
-        records[PortalIdentity.AllowedEmail] = new Record(salt, hash, now.AddMinutes(10), 0);
+        await sender.SendAsync(normalized, code, cancellationToken);
+        records[normalized] = new Record(salt, hash, now.AddMinutes(10), 0);
     }
 
     public bool Verify(string email, string code, string clientKey)
     {
         var normalized = Normalize(email);
-        if (!FixedEmail(normalized)) return false;
+        if (!PortalIdentity.IsAllowed(normalized)) return false;
         PruneAndBound(verifyLimits, DateTimeOffset.UtcNow);
         EnforceGlobalLimit(ref globalVerifyLimit, 200, TimeSpan.FromMinutes(10));
         EnforceLimit(verifyLimits, "ip:" + clientKey, 20, TimeSpan.FromMinutes(10));
         EnforceLimit(verifyLimits, "account:" + HashKey(normalized), 10, TimeSpan.FromMinutes(10));
-        if (code.Length != 8 || !records.TryGetValue(PortalIdentity.AllowedEmail, out var record)) return false;
-        if (record.Expires <= DateTimeOffset.UtcNow || record.Attempts >= 5) { records.TryRemove(PortalIdentity.AllowedEmail, out _); return false; }
+        if (code.Length != 8 || !records.TryGetValue(normalized, out var record)) return false;
+        if (record.Expires <= DateTimeOffset.UtcNow || record.Attempts >= 5) { records.TryRemove(normalized, out _); return false; }
         var actual = Rfc2898DeriveBytes.Pbkdf2(code.ToUpperInvariant(), record.Salt, 120_000, HashAlgorithmName.SHA256, 32);
-        if (!CryptographicOperations.FixedTimeEquals(actual, record.Hash)) { var updated = record with { Attempts = record.Attempts + 1 }; if (updated.Attempts >= 5) records.TryRemove(PortalIdentity.AllowedEmail, out _); else records[PortalIdentity.AllowedEmail] = updated; return false; }
-        return records.TryRemove(PortalIdentity.AllowedEmail, out _);
+        if (!CryptographicOperations.FixedTimeEquals(actual, record.Hash)) { var updated = record with { Attempts = record.Attempts + 1 }; if (updated.Attempts >= 5) records.TryRemove(normalized, out _); else records[normalized] = updated; return false; }
+        return records.TryRemove(normalized, out _);
     }
 
     private static string Normalize(string value) => (value ?? string.Empty).Trim().ToLowerInvariant();
-    private static bool FixedEmail(string value) => CryptographicOperations.FixedTimeEquals(Encoding.UTF8.GetBytes(value), Encoding.UTF8.GetBytes(PortalIdentity.AllowedEmail));
     private static string HashKey(string value) => Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(value)));
     private static void EnforceLimit(ConcurrentDictionary<string, Window> limits, string key, int maximum, TimeSpan duration)
     {

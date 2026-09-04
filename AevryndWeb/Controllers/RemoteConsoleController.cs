@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AevryndWeb.Controllers;
 
-[Authorize(Policy = PortalIdentity.PortalOwnerPolicy)]
+[Authorize(Policy = PortalIdentity.AdminPolicy)]
 [Route("RemoteConsole")]
 public sealed class RemoteConsoleController(
     IRemoteDesktopService desktop,

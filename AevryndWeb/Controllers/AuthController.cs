@@ -26,11 +26,15 @@ public sealed class AuthController(IOtpService otp, IEmailSender emailSender, IA
     {
         if (!otp.Verify(request.Email ?? string.Empty, request.Code ?? string.Empty, ClientKey())) return Unauthorized(new { message = "驗證資訊不正確或已失效。" });
         var now = DateTimeOffset.UtcNow;
-        var session = sessions.Create(PortalIdentity.AllowedEmail, now);
+        var email = request.Email?.Trim().ToLowerInvariant() ?? string.Empty;
+        var role = PortalIdentity.RoleFor(email);
+        if (role is null) return Unauthorized(new { message = "驗證資訊不正確或已失效。" });
+        var session = sessions.Create(email, now);
         var identity = new ClaimsIdentity(
         [
-            new Claim(ClaimTypes.NameIdentifier, "portal-owner"),
-            new Claim(ClaimTypes.Email, PortalIdentity.AllowedEmail),
+            new Claim(ClaimTypes.NameIdentifier, email),
+            new Claim(ClaimTypes.Email, email),
+            new Claim(ClaimTypes.Role, role),
             new Claim(PortalClaimTypes.SessionId, session.Id),
             new Claim(PortalClaimTypes.SecurityStamp, session.SecurityStamp),
             new Claim(PortalClaimTypes.AuthenticationTime, now.ToUnixTimeSeconds().ToString(System.Globalization.CultureInfo.InvariantCulture))
