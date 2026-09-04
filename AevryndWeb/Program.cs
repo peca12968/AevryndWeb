@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.Authorization;
 
 var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 {
@@ -24,11 +25,33 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     options.SlidingExpiration = false;
     options.LoginPath = "/";
 });
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy(PortalIdentity.PortalOwnerPolicy, policy => policy
+        .RequireAuthenticatedUser()
+        .RequireClaim(System.Security.Claims.ClaimTypes.Email, PortalIdentity.AllowedEmail)
+        .AddRequirements(new PortalOwnerRequirement()));
+    foreach (var capability in Enum.GetValues<RemoteCapability>())
+        options.AddPolicy(PortalIdentity.CapabilityPolicy(capability), policy => policy
+            .RequireAuthenticatedUser()
+            .RequireClaim(System.Security.Claims.ClaimTypes.Email, PortalIdentity.AllowedEmail)
+            .AddRequirements(new RemoteControlRequirement(capability)));
+});
 builder.Services.AddMemoryCache();
 builder.Services.AddDataProtection().PersistKeysToFileSystem(new DirectoryInfo(builder.Configuration["DataProtection:KeyPath"] ?? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "AevryndWeb", "keys")));
 builder.Services.AddSingleton<IOtpService, OtpService>();
 builder.Services.AddSingleton<IEmailSender, GmailEmailSender>();
+builder.Services.AddSingleton<IPortalSessionStore, PortalSessionStore>();
+builder.Services.AddSingleton<IRemoteControlGrantService, RemoteControlGrantService>();
+builder.Services.AddSingleton<IRemoteConsoleGuard, RemoteConsoleGuard>();
+builder.Services.AddSingleton<IAuthorizationHandler, PortalOwnerAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationHandler, RemoteControlAuthorizationHandler>();
+builder.Services.AddSingleton<IRemoteDesktopService, WindowsRemoteDesktopService>();
+builder.Services.AddSingleton<IRemoteShellBroker, UnavailableRemoteShellBroker>();
+builder.Services.AddSingleton<IRemoteConsoleRateLimiter, RemoteConsoleRateLimiter>();
+builder.Services.AddSingleton<IRemoteControlLeaseRegistry, RemoteControlLeaseRegistry>();
+builder.Services.AddHostedService<RemoteControlStartupReset>();
+builder.Services.AddHostedService<RemoteControlRevocationMonitor>();
 builder.Services.Configure<ForwardedHeadersOptions>(options => { options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto; options.KnownProxies.Add(IPAddress.Loopback); options.KnownProxies.Add(IPAddress.IPv6Loopback); });
 
 var app = builder.Build();
@@ -39,12 +62,15 @@ app.Use(async (context, next) =>
     context.Response.Headers["X-Content-Type-Options"] = "nosniff";
     context.Response.Headers["X-Frame-Options"] = "DENY";
     context.Response.Headers["Referrer-Policy"] = "no-referrer";
-    context.Response.Headers["Content-Security-Policy"] = "default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'";
+    context.Response.Headers["Content-Security-Policy"] = "default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data: blob:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'";
     context.Response.Headers["Cache-Control"] = "no-store";
     if (HttpMethods.IsPost(context.Request.Method) && context.Request.Headers.Origin.Count > 0)
     {
-        var expected = $"{context.Request.Scheme}://{context.Request.Host}";
-        if (!StringComparer.OrdinalIgnoreCase.Equals(context.Request.Headers.Origin.ToString(), expected)) { context.Response.StatusCode = StatusCodes.Status403Forbidden; return; }
+        // 公開來源固定由本機設定決定，不信任可由請求者提供的 Host 標頭。
+        var configuredOrigin = builder.Configuration["RemoteConsole:PublicOrigin"]?.TrimEnd('/');
+        if (!Uri.TryCreate(configuredOrigin, UriKind.Absolute, out var expected) || expected.Scheme != Uri.UriSchemeHttps ||
+            !StringComparer.Ordinal.Equals(context.Request.Headers.Origin.ToString().TrimEnd('/'), expected.GetLeftPart(UriPartial.Authority)))
+        { context.Response.StatusCode = StatusCodes.Status403Forbidden; return; }
     }
     await next();
 });
@@ -53,3 +79,5 @@ app.UseStaticFiles(new StaticFileOptions { OnPrepareResponse = ctx => { ctx.Cont
 app.UseRouting(); app.UseAuthentication(); app.UseAuthorization();
 app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
 app.Run();
+
+public partial class Program;

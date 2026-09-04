@@ -18,7 +18,7 @@ namespace AevryndWeb.Controllers
             return View();
         }
 
-        [Microsoft.AspNetCore.Authorization.Authorize]
+        [Microsoft.AspNetCore.Authorization.Authorize(Policy = AevryndWeb.Security.PortalIdentity.PortalOwnerPolicy)]
         public IActionResult Portal() => View();
 
         public IActionResult Privacy()

@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AevryndWeb.Controllers;
 
 [ApiController]
-public sealed class AuthController(IOtpService otp, IEmailSender emailSender, IAntiforgery antiforgery) : ControllerBase
+public sealed class AuthController(IOtpService otp, IEmailSender emailSender, IAntiforgery antiforgery, IPortalSessionStore sessions, IRemoteControlGrantService remoteGrants, IRemoteControlLeaseRegistry leases) : ControllerBase
 {
     [HttpGet("/api/auth/csrf"), AllowAnonymous, IgnoreAntiforgeryToken]
     public object Csrf() => new { token = antiforgery.GetAndStoreTokens(HttpContext).RequestToken };
@@ -25,13 +25,30 @@ public sealed class AuthController(IOtpService otp, IEmailSender emailSender, IA
     public async Task<IActionResult> Verify([FromBody] VerifyRequest request)
     {
         if (!otp.Verify(request.Email ?? string.Empty, request.Code ?? string.Empty, ClientKey())) return Unauthorized(new { message = "驗證資訊不正確或已失效。" });
-        var identity = new ClaimsIdentity([new Claim(ClaimTypes.NameIdentifier, "portal-owner")], CookieAuthenticationDefaults.AuthenticationScheme);
-        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity), new AuthenticationProperties { ExpiresUtc = DateTimeOffset.UtcNow.AddHours(8), AllowRefresh = false });
+        var now = DateTimeOffset.UtcNow;
+        var session = sessions.Create(PortalIdentity.AllowedEmail, now);
+        var identity = new ClaimsIdentity(
+        [
+            new Claim(ClaimTypes.NameIdentifier, "portal-owner"),
+            new Claim(ClaimTypes.Email, PortalIdentity.AllowedEmail),
+            new Claim(PortalClaimTypes.SessionId, session.Id),
+            new Claim(PortalClaimTypes.SecurityStamp, session.SecurityStamp),
+            new Claim(PortalClaimTypes.AuthenticationTime, now.ToUnixTimeSeconds().ToString(System.Globalization.CultureInfo.InvariantCulture))
+        ], CookieAuthenticationDefaults.AuthenticationScheme);
+        await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity), new AuthenticationProperties { ExpiresUtc = session.ExpiresAt, AllowRefresh = false, IsPersistent = false });
         return Ok(new { redirect = "/Home/Portal" });
     }
 
     [HttpPost("/api/auth/logout"), Authorize]
-    public async Task<IActionResult> Logout() { await HttpContext.SignOutAsync(); return Ok(); }
+    public async Task<IActionResult> Logout()
+    {
+        var sessionId = User.FindFirstValue(PortalClaimTypes.SessionId);
+        if (sessionId is not null) leases.Release(sessionId);
+        remoteGrants.Revoke(sessionId);
+        sessions.Revoke(sessionId);
+        await HttpContext.SignOutAsync();
+        return Ok();
+    }
     [HttpGet("/health/ready"), AllowAnonymous, IgnoreAntiforgeryToken]
     public IActionResult Ready() => Ok(new { status = "ok", emailReady = emailSender.IsReady });
     private string ClientKey() => HttpContext.Connection.RemoteIpAddress?.ToString() ?? "unknown";
