@@ -47,17 +47,45 @@ public sealed class OperationsTelemetryPublisher(
         var activeWork = previous?.ActiveWork?.Where(item => !string.Equals(item.Type, "codex", StringComparison.Ordinal)).ToList() ?? [];
         var codexWork = ReadCodexWork(now);
         if (codexWork is not null) activeWork.Insert(0, codexWork);
+        var history = previous?.History?.ToList() ?? [];
+        AppendEndedCodexWork(previous?.ActiveWork, codexWork, now, history);
         var document = new OperationsStateDocument
         {
             Version = 1,
             SnapshotAt = now,
             Nodes = nodes,
             ActiveWork = activeWork,
-            History = previous?.History ?? []
+            History = history.TakeLast(500).ToList()
         };
         var temporary = _statePath + ".tmp";
         File.WriteAllText(temporary, JsonSerializer.Serialize(document, new JsonSerializerOptions { WriteIndented = true }));
         File.Move(temporary, _statePath, true);
+    }
+
+    private static void AppendEndedCodexWork(
+        IReadOnlyCollection<OperationsWorkState>? previousActive,
+        OperationsWorkState? current,
+        DateTimeOffset now,
+        List<OperationsWorkState> history)
+    {
+        var previousCodex = previousActive?.FirstOrDefault(item => string.Equals(item.Type, "codex", StringComparison.Ordinal));
+        if (previousCodex is null || current is not null || history.Any(item =>
+                string.Equals(item.Type, "codex", StringComparison.Ordinal) &&
+                string.Equals(item.Name, previousCodex.Name, StringComparison.Ordinal) &&
+                item.StartedAt == previousCodex.StartedAt)) return;
+
+        // TTL 過期只證明摘要已停止更新，不推測成功或失敗；以 cancelled 記錄可追溯的停止事件。
+        history.Add(new OperationsWorkState
+        {
+            Name = previousCodex.Name,
+            Type = previousCodex.Type,
+            Host = previousCodex.Host,
+            StartedAt = previousCodex.StartedAt,
+            UpdatedAt = now,
+            EndedAt = now,
+            Status = "cancelled",
+            EvidenceSummary = "工作摘要停止更新；來源未提供結束原因。"
+        });
     }
 
     private OperationsWorkState? ReadCodexWork(DateTimeOffset now)
