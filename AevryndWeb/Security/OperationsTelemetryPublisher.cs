@@ -1,0 +1,73 @@
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Runtime.Versioning;
+using System.Text.Json;
+
+namespace AevryndWeb.Security;
+
+/// <summary>以低頻率發布本機可驗證的基本遙測；遠端節點與 GPU 不猜測。</summary>
+[SupportedOSPlatform("windows")]
+public sealed class OperationsTelemetryPublisher(
+    IConfiguration configuration,
+    ILogger<OperationsTelemetryPublisher> logger) : BackgroundService
+{
+    private readonly string _statePath = configuration["Operations:StatePath"] ?? @"C:\ProgramData\AevryndWeb\operations-state.json";
+    private ulong _previousIdle;
+    private ulong _previousKernel;
+    private ulong _previousUser;
+
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+    {
+        if (!OperatingSystem.IsWindows()) return;
+        Directory.CreateDirectory(Path.GetDirectoryName(_statePath)!);
+        while (!stoppingToken.IsCancellationRequested)
+        {
+            try { Publish(DateTimeOffset.UtcNow); }
+            catch (Exception exception) when (exception is IOException or UnauthorizedAccessException or ExternalException)
+            { logger.LogWarning(exception, "Operations telemetry publish skipped."); }
+            await Task.Delay(TimeSpan.FromSeconds(15), stoppingToken);
+        }
+    }
+
+    private void Publish(DateTimeOffset now)
+    {
+        var cpu = ReadCpuPercent();
+        var memory = new MemoryStatus();
+        GlobalMemoryStatusEx(ref memory);
+        var document = new OperationsStateDocument
+        {
+            Version = 1,
+            SnapshotAt = now,
+            Nodes =
+            [
+                new OperationsNodeState
+                {
+                    Id = "local", CpuPercent = cpu, RamPercent = memory.Total > 0 ? 100d * (memory.Total - memory.Available) / memory.Total : null,
+                    GpuPercent = null, SampledAt = now
+                }
+            ],
+            ActiveWork = [],
+            History = []
+        };
+        var temporary = _statePath + ".tmp";
+        File.WriteAllText(temporary, JsonSerializer.Serialize(document, new JsonSerializerOptions { WriteIndented = true }));
+        File.Move(temporary, _statePath, true);
+    }
+
+    private double? ReadCpuPercent()
+    {
+        if (!GetSystemTimes(out var idle, out var kernel, out var user)) return null;
+        var idleTicks = ToUInt64(idle); var kernelTicks = ToUInt64(kernel); var userTicks = ToUInt64(user);
+        if (_previousKernel == 0) { _previousIdle = idleTicks; _previousKernel = kernelTicks; _previousUser = userTicks; return null; }
+        var total = (kernelTicks - _previousKernel) + (userTicks - _previousUser);
+        var busy = total > 0 ? total - (idleTicks - _previousIdle) : 0;
+        _previousIdle = idleTicks; _previousKernel = kernelTicks; _previousUser = userTicks;
+        return total > 0 ? Math.Round(100d * busy / total, 1) : null;
+    }
+
+    private static ulong ToUInt64(System.Runtime.InteropServices.ComTypes.FILETIME value) => ((ulong)(uint)value.dwHighDateTime << 32) | (uint)value.dwLowDateTime;
+
+    [DllImport("kernel32.dll", SetLastError = true)] private static extern bool GetSystemTimes(out System.Runtime.InteropServices.ComTypes.FILETIME idle, out System.Runtime.InteropServices.ComTypes.FILETIME kernel, out System.Runtime.InteropServices.ComTypes.FILETIME user);
+    [DllImport("kernel32.dll", SetLastError = true)] private static extern bool GlobalMemoryStatusEx(ref MemoryStatus status);
+    [StructLayout(LayoutKind.Sequential)] private struct MemoryStatus { public uint Length; public uint MemoryLoad; public ulong Total; public ulong Available; public ulong PageFile; public ulong AvailablePageFile; public ulong Virtual; public ulong AvailableVirtual; public ulong AvailableExtended; public MemoryStatus() { Length = (uint)Marshal.SizeOf<MemoryStatus>(); } }
+}
