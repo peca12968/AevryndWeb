@@ -25,7 +25,7 @@ public sealed class OperationsTelemetryPublisher(
             try { Publish(DateTimeOffset.UtcNow); }
             catch (Exception exception) when (exception is IOException or UnauthorizedAccessException or ExternalException)
             { logger.LogWarning(exception, "Operations telemetry publish skipped."); }
-            await Task.Delay(TimeSpan.FromSeconds(15), stoppingToken);
+            await Task.Delay(TimeSpan.FromSeconds(10), stoppingToken);
         }
     }
 
@@ -43,7 +43,7 @@ public sealed class OperationsTelemetryPublisher(
                 new OperationsNodeState
                 {
                     Id = "local", CpuPercent = cpu, RamPercent = memory.Total > 0 ? 100d * (memory.Total - memory.Available) / memory.Total : null,
-                    GpuPercent = null, SampledAt = now
+                    GpuPercent = ReadGpuPercent(), SampledAt = now
                 }
             ],
             ActiveWork = [],
@@ -63,6 +63,32 @@ public sealed class OperationsTelemetryPublisher(
         var busy = total > 0 ? total - (idleTicks - _previousIdle) : 0;
         _previousIdle = idleTicks; _previousKernel = kernelTicks; _previousUser = userTicks;
         return total > 0 ? Math.Round(100d * busy / total, 1) : null;
+    }
+
+    private static double? ReadGpuPercent()
+    {
+        try
+        {
+            using var process = Process.Start(new ProcessStartInfo
+            {
+                FileName = "nvidia-smi",
+                Arguments = "--query-gpu=utilization.gpu --format=csv,noheader,nounits",
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            });
+            if (process is null) return null;
+            var output = process.StandardOutput.ReadToEnd();
+            if (!process.WaitForExit(1500)) { try { process.Kill(); } catch { } return null; }
+            var values = output.Split(['\r', '\n'], StringSplitOptions.RemoveEmptyEntries)
+                .Select(value => double.TryParse(value.Trim(), System.Globalization.NumberStyles.Float,
+                    System.Globalization.CultureInfo.InvariantCulture, out var parsed) ? parsed : (double?)null)
+                .Where(value => value.HasValue).Select(value => value!.Value).ToArray();
+            return values.Length == 0 ? null : Math.Round(values.Average(), 1);
+        }
+        catch (Exception exception) when (exception is InvalidOperationException or System.ComponentModel.Win32Exception)
+        { return null; }
     }
 
     private static ulong ToUInt64(System.Runtime.InteropServices.ComTypes.FILETIME value) => ((ulong)(uint)value.dwHighDateTime << 32) | (uint)value.dwLowDateTime;

@@ -19,7 +19,7 @@
 
     <div class="operations-source @(Model.SourceAvailable ? "is-available" : "is-unavailable")">
         <div><span class="operations-signal" aria-hidden="true"></span><strong>@Model.SourceStatus</strong></div>
-        <span>摘要時間：<time datetime="@(Model.SnapshotAt?.ToString("O"))">@Timestamp(Model.SnapshotAt)</time></span>
+        <span>摘要時間：<time datetime="@(Model.SnapshotAt?.ToString("O"))">@Timestamp(Model.SnapshotAt)</time> · 每 10 秒更新</span>
     </div>
 
     <section class="operations-section" aria-labelledby="nodesTitle">
@@ -74,3 +74,6 @@
         }
     </section>
 </section>
+<script>
+    window.setTimeout(() => window.location.reload(), 10000);
+</script>
