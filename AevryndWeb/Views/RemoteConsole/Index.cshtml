@@ -9,7 +9,9 @@
         <strong>@(Model.LocallyEnabled ? "本機短效開關已啟用" : "本機開關為關閉狀態")</strong>
         <span>@(Model.EnabledUntilUtc is null ? "請在主電腦執行 scripts/Enable-RemoteConsole.ps1。重啟或部署後仍預設關閉。" : $"本機期限：{Model.EnabledUntilUtc.Value.ToLocalTime():yyyy-MM-dd HH:mm:ss}")</span>
         <span>允許能力：@(Model.Capabilities.Count == 0 ? "無" : string.Join("、", Model.Capabilities))</span>
-        <span id="grantLifetime">@(Model.GrantExpiresAt is null ? "尚未取得短效網站授權" : $"網站授權到期：{Model.GrantExpiresAt.Value.ToLocalTime():HH:mm:ss}（閒置2分鐘會提早撤銷）")</span>
+        <span id="grantLifetime">@(Model.GrantExpiresAt is null ? "尚未取得網站控制授權" : $"網站授權到期：{Model.GrantExpiresAt.Value.ToLocalTime():yyyy-MM-dd HH:mm:ss}（閒置30分鐘會提早撤銷）")</span>
+        <span>桌面狀態：@(Model.DesktopAvailability.Available ? "互動式桌面已就緒" : Model.DesktopAvailability.Reason)</span>
+        @if (Model.Capabilities.Contains("browser.input")) { <span>敏感警告：已額外允許 Chrome／Edge 輸入；網站無法可靠辨識瀏覽器內的密碼欄位，操作前必須自行確認目前焦點。</span> }
         <span>緊急停止：在主電腦執行 scripts/Disable-RemoteConsole.ps1。</span>
     </aside>
     <article id="stepUpPanel" class="remote-step" hidden="@(Model.GrantActive ? "hidden" : null)">
@@ -23,7 +25,7 @@
         <article id="screenPanel" class="remote-screen-card">
             <div class="remote-screen-head"><span>INTERACTIVE DESKTOP</span><span id="frameStatus">等待畫面</span></div>
             <div class="remote-screen-wrap"><img id="remoteFrame" alt="主電腦目前互動式桌面的低頻快照" draggable="false" hidden /><p id="framePlaceholder">正在建立安全畫面通道…</p></div>
-            <p class="remote-hint">若已啟用 mouse.write，可直接點擊畫面；每次操作都必須對應三秒內的相同畫面版本。</p>
+            <p class="remote-hint">若已啟用 mouse.write，可直接點擊畫面；每次操作都必須對應兩秒內的相同畫面版本。</p>
         </article>
         <article id="textPanel" class="remote-input-card">
             <span class="micro-label">INPUT.TEXT</span><h2>傳送文字</h2>
@@ -32,7 +34,7 @@
             <p id="remoteTextStatus" class="form-status" aria-live="polite"></p>
         </article>
         <article id="keyboardPanel" class="remote-input-card" hidden>
-            <span class="micro-label">KEYBOARD.WRITE</span><h2>鍵盤輸入</h2><p>點選下方區域後使用鍵盤。按下與放開會成對追蹤；授權撤銷時釋放本工作階段注入的修飾鍵。</p>
+            <span class="micro-label">KEYBOARD.WRITE</span><h2>鍵盤輸入</h2><p>點選下方區域後使用鍵盤。按下與放開會成對追蹤；授權撤銷時釋放本工作階段注入的按鍵。Chrome／Edge 另需本機明確啟用 browser.input。</p>
             <div id="keyboardCapture" class="keyboard-capture" tabindex="0">點此接收鍵盤事件</div><p id="keyboardStatus" class="form-status" aria-live="polite"></p>
         </article>
         <article class="remote-input-card">

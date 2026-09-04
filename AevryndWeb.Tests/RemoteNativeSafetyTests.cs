@@ -110,6 +110,34 @@ public sealed class RemoteNativeSafetyTests
         Assert.Throws<RemoteDesktopUnavailableException>(() => RemoteDesktopCoordinates.MapNormalized(double.NaN, .5));
     }
 
+    [Theory]
+    [InlineData(true, true, 0, true)]
+    [InlineData(false, true, 5, false)]
+    [InlineData(true, false, 0, false)]
+    public void ProcessDpiBootstrapFailsClosed(bool setSucceeded, bool queryMatches, int error, bool expected)
+    {
+        var result = RemoteDpiBootstrap.Initialize(new FakeDpiNative(setSucceeded, queryMatches, error));
+        Assert.Equal(expected, result.Ready);
+        if (!expected) Assert.False(string.IsNullOrWhiteSpace(result.Reason));
+    }
+
+    [Fact]
+    public void DesktopAvailabilityReturnsExplicitDpiDiagnosticWithoutCallingNativeDesktop()
+    {
+        var service = new WindowsRemoteDesktopService(new FakeGuard(), new RemoteDpiBootstrap(false, "bootstrap failed"));
+        var availability = service.GetAvailability();
+        Assert.False(availability.Available);
+        Assert.StartsWith("DPI_BOOTSTRAP_UNAVAILABLE", availability.Reason);
+    }
+
+    [Theory]
+    [InlineData("chrome", "Chrome_WidgetWin_1", true)]
+    [InlineData("msedge", "Chrome_RenderWidgetHostHWND", true)]
+    [InlineData("terminal", "Chrome_WidgetWin_1", false)]
+    [InlineData("chrome", "UnknownWindow", false)]
+    public void BrowserTargetAllowlistRequiresKnownProcessAndClass(string process, string className, bool expected) =>
+        Assert.Equal(expected, RemoteBrowserTargetSafety.IsKnownBrowser(process, className));
+
     [Fact]
     public void DisplayTopologyHashChangesForDpiRotationOrBounds()
     {
@@ -136,5 +164,12 @@ public sealed class RemoteNativeSafetyTests
     {
         Assert.True(WindowsRemoteDesktopService.TryResolveKey(code, out var key));
         Assert.True(key.Extended);
+    }
+
+    private sealed class FakeDpiNative(bool setSucceeded, bool queryMatches, int error) : IRemoteDpiNative
+    {
+        public int LastError => error;
+        public bool SetPerMonitorV2() => setSucceeded;
+        public bool IsCurrentPerMonitorV2() => queryMatches;
     }
 }

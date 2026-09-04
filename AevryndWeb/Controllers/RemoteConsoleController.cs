@@ -219,6 +219,7 @@ public sealed class RemoteConsoleController(
     {
         RemoteCapability.Screen => "screen.read", RemoteCapability.Text => "input.text",
         RemoteCapability.Keyboard => "keyboard.write", RemoteCapability.Mouse => "mouse.write",
+        RemoteCapability.BrowserInput => "browser.input",
         RemoteCapability.Shell => "shell.execute", _ => "unknown"
     };
     private string ClientKey() => User.FindFirstValue(PortalClaimTypes.SessionId) ?? "unknown";

@@ -171,7 +171,7 @@ public sealed class RemoteConsoleFactory : WebApplicationFactory<Program>
     public FakeGuard Guard { get; } = new();
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
-        builder.UseEnvironment("Development");
+        builder.UseEnvironment("Testing");
         builder.ConfigureAppConfiguration((_, configuration) => configuration.AddInMemoryCollection(new Dictionary<string, string?> { ["RemoteConsole:PublicOrigin"] = "https://console.test", ["AllowedHosts"] = "console.test" }));
         builder.ConfigureTestServices(services =>
         {

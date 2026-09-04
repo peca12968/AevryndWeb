@@ -52,7 +52,7 @@ public sealed class LoginFactory : WebApplicationFactory<Program>
 {
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
-        builder.UseEnvironment("Development");
+        builder.UseEnvironment("Testing");
         builder.ConfigureAppConfiguration((_, configuration) => configuration.AddInMemoryCollection(new Dictionary<string, string?> { ["AllowedHosts"] = "console.test", ["RemoteConsole:PublicOrigin"] = "https://console.test" }));
         builder.ConfigureTestServices(services =>
         {

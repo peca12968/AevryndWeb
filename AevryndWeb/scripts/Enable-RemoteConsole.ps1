@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
-    [ValidateRange(5, 30)][int]$Minutes = 15,
-    [ValidateSet('screen.read', 'input.text', 'keyboard.write', 'mouse.write')]
+    [ValidateRange(5, 480)][int]$Minutes = 15,
+    [ValidateSet('screen.read', 'input.text', 'keyboard.write', 'mouse.write', 'browser.input')]
     [string[]]$Capabilities = @('screen.read', 'input.text'),
     [string]$ValidationRoot = ''
 )

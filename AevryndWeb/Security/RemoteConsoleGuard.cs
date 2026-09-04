@@ -12,6 +12,7 @@ public enum RemoteCapability
     Text,
     Keyboard,
     Mouse,
+    BrowserInput,
     Shell
 }
 
@@ -139,7 +140,7 @@ public sealed class RemoteConsoleGuard(IConfiguration configuration) : IRemoteCo
         return true;
     }
 
-    private int MaximumEnableMinutes() => Math.Clamp(configuration.GetValue("RemoteConsole:MaximumEnableMinutes", 30), 5, 60);
+    private int MaximumEnableMinutes() => Math.Clamp(configuration.GetValue("RemoteConsole:MaximumEnableMinutes", 480), 5, 480);
     private static bool TryParseCapability(string value, out RemoteCapability capability)
     {
         capability = value switch
@@ -148,6 +149,7 @@ public sealed class RemoteConsoleGuard(IConfiguration configuration) : IRemoteCo
             "input.text" => RemoteCapability.Text,
             "keyboard.write" => RemoteCapability.Keyboard,
             "mouse.write" => RemoteCapability.Mouse,
+            "browser.input" => RemoteCapability.BrowserInput,
             "shell.execute" => RemoteCapability.Shell,
             _ => (RemoteCapability)(-1)
         };

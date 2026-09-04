@@ -26,11 +26,13 @@ public sealed class SecurityStateTests
         await service.RequestAsync("session", "pair-once", CancellationToken.None);
         var grant = service.VerifyAndActivate("session", sender.Code!, now);
         Assert.NotNull(grant); Assert.True(guard.Consumed); Assert.Contains(RemoteCapability.Screen, grant!.Capabilities);
+        Assert.Equal(now.AddHours(8), grant.ExpiresAt);
         var principal = RemotePrincipal(grant);
         Assert.True(service.Validate(principal, RemoteCapability.Screen, now.AddMinutes(1)));
         Assert.False(service.Validate(principal, RemoteCapability.Keyboard, now.AddMinutes(1)));
         Assert.True(service.TouchSuccessfulAction(principal, now.AddMinutes(1)));
-        Assert.False(service.Validate(principal, RemoteCapability.Screen, now.AddMinutes(3).AddSeconds(1)));
+        Assert.True(service.Validate(principal, RemoteCapability.Screen, now.AddMinutes(30)));
+        Assert.False(service.Validate(principal, RemoteCapability.Screen, now.AddMinutes(31).AddSeconds(1)));
         Assert.Contains("session", desktop.ReleasedSessions);
         await Assert.ThrowsAsync<OtpRejectedException>(() => service.RequestAsync("another", "pair-once", CancellationToken.None));
     }
@@ -44,9 +46,9 @@ public sealed class SecurityStateTests
         var grant = service.VerifyAndActivate("session", sender.Code!, now)!;
         var principal = RemotePrincipal(grant);
 
-        Assert.True(service.ValidateLease(principal, now.AddMinutes(1).AddSeconds(59)));
-        Assert.True(service.Validate(principal, RemoteCapability.Screen, now.AddMinutes(1).AddSeconds(59)));
-        Assert.False(service.ValidateLease(principal, now.AddMinutes(2).AddSeconds(1)));
+        Assert.True(service.ValidateLease(principal, now.AddMinutes(29).AddSeconds(59)));
+        Assert.True(service.Validate(principal, RemoteCapability.Screen, now.AddMinutes(29).AddSeconds(59)));
+        Assert.False(service.ValidateLease(principal, now.AddMinutes(30).AddSeconds(1)));
     }
 
     [Fact]
@@ -82,7 +84,7 @@ public sealed class SecurityStateTests
     private sealed class GrantGuard : IRemoteConsoleGuard
     {
         public bool Consumed { get; private set; }
-        private readonly RemoteConsoleEnablement state = new(new string('B', 64), DateTimeOffset.UtcNow.AddMinutes(30), new HashSet<RemoteCapability> { RemoteCapability.Screen, RemoteCapability.Text }, new string('0', 64), false);
+        private readonly RemoteConsoleEnablement state = new(new string('B', 64), DateTimeOffset.UtcNow.AddHours(9), new HashSet<RemoteCapability> { RemoteCapability.Screen, RemoteCapability.Text }, new string('0', 64), false);
         public bool TryRead(DateTimeOffset now, out RemoteConsoleEnablement enablement) { enablement = state; return true; }
         public bool VerifyPairingNonce(string nonce, DateTimeOffset now, out RemoteConsoleEnablement enablement) { enablement = state; return !Consumed && nonce == "pair-once"; }
         public bool ConsumePairingNonce(string nonce, DateTimeOffset now, out RemoteConsoleEnablement enablement) { enablement = state; if (Consumed || nonce != "pair-once") return false; Consumed = true; return true; }

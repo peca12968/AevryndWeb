@@ -26,8 +26,8 @@ public sealed record RemoteControlGrantStatus(DateTimeOffset ExpiresAt, DateTime
 public sealed class RemoteControlGrantService(IEmailSender sender, IRemoteConsoleGuard guard, IRemoteDesktopService desktop, IRemoteControlLeaseRegistry leases) : IRemoteControlGrantService
 {
     private static readonly TimeSpan ChallengeLifetime = TimeSpan.FromMinutes(5);
-    private static readonly TimeSpan GrantLifetime = TimeSpan.FromMinutes(10);
-    private static readonly TimeSpan IdleLifetime = TimeSpan.FromMinutes(2);
+    private static readonly TimeSpan GrantLifetime = TimeSpan.FromHours(8);
+    private static readonly TimeSpan IdleLifetime = TimeSpan.FromMinutes(30);
     private const string Alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
     private readonly ConcurrentDictionary<string, Challenge> challenges = new();
     private readonly ConcurrentDictionary<string, ActiveGrant> grants = new();

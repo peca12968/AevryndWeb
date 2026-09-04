@@ -167,7 +167,57 @@ public static class RemoteDpiSafety
     public static bool IsPerMonitorV2(bool querySucceeded, bool matchesPerMonitorV2) => querySucceeded && matchesPerMonitorV2;
 }
 
-public sealed class WindowsRemoteDesktopService(IRemoteConsoleGuard guard) : IRemoteDesktopService
+public static class RemoteBrowserTargetSafety
+{
+    private static readonly HashSet<string> Processes = new(StringComparer.OrdinalIgnoreCase) { "chrome", "msedge" };
+    private static readonly HashSet<string> Classes = new(StringComparer.Ordinal) { "Chrome_WidgetWin_1", "Chrome_RenderWidgetHostHWND" };
+    public static bool IsKnownBrowser(string processName, string className) => Processes.Contains(processName) && Classes.Contains(className);
+}
+
+public interface IRemoteDpiNative
+{
+    bool SetPerMonitorV2();
+    bool IsCurrentPerMonitorV2();
+    int LastError { get; }
+}
+
+public interface IRemoteDpiBootstrap
+{
+    bool Ready { get; }
+    string Reason { get; }
+}
+
+public sealed record RemoteDpiBootstrap(bool Ready, string Reason) : IRemoteDpiBootstrap
+{
+    public static RemoteDpiBootstrap Initialize(IRemoteDpiNative native)
+    {
+        try
+        {
+            if (!native.SetPerMonitorV2()) return new(false, $"SetProcessDpiAwarenessContext failed ({native.LastError}).");
+            if (!native.IsCurrentPerMonitorV2()) return new(false, "Process DPI awareness verification failed.");
+            return new(true, string.Empty);
+        }
+        catch (Exception exception) when (exception is DllNotFoundException or EntryPointNotFoundException)
+        { return new(false, "Per-Monitor-V2 API is unavailable."); }
+    }
+}
+
+public sealed class WindowsRemoteDpiNative : IRemoteDpiNative
+{
+    private static readonly IntPtr PerMonitorV2 = new(-4);
+    public int LastError => Marshal.GetLastWin32Error();
+    public bool SetPerMonitorV2() => SetProcessDpiAwarenessContext(PerMonitorV2);
+    public bool IsCurrentPerMonitorV2()
+    {
+        var context = GetThreadDpiAwarenessContext();
+        return context != IntPtr.Zero && AreDpiAwarenessContextsEqual(context, PerMonitorV2);
+    }
+    [DllImport("user32.dll", SetLastError = true)] private static extern bool SetProcessDpiAwarenessContext(IntPtr context);
+    [DllImport("user32.dll")] private static extern IntPtr GetThreadDpiAwarenessContext();
+    [DllImport("user32.dll")] private static extern bool AreDpiAwarenessContextsEqual(IntPtr left, IntPtr right);
+}
+
+public sealed class WindowsRemoteDesktopService(IRemoteConsoleGuard guard, IRemoteDpiBootstrap dpiBootstrap) : IRemoteDesktopService
 {
     private const uint InputMouse = 0, InputKeyboard = 1;
     private const uint KeyEventExtended = 0x0001, KeyEventKeyUp = 0x0002, KeyEventUnicode = 0x0004;
@@ -192,7 +242,16 @@ public sealed class WindowsRemoteDesktopService(IRemoteConsoleGuard guard) : IRe
 
     public RemoteDesktopAvailability GetAvailability()
     {
-        try { EnsureInteractiveSession(false); return new(true, string.Empty); }
+        try
+        {
+            var requireInputTarget = guard.TryRead(DateTimeOffset.UtcNow, out var enablement) &&
+                enablement.Capabilities.Any(capability => capability is RemoteCapability.Text or RemoteCapability.Keyboard or RemoteCapability.Mouse);
+            EnsureInteractiveSession(requireInputTarget);
+            var width = GetSystemMetrics(SmCxVirtualScreen); var height = GetSystemMetrics(SmCyVirtualScreen);
+            if (width <= 0 || height <= 0 || (long)width * height > 40_000_000) throw new RemoteDesktopUnavailableException("DESKTOP_GEOMETRY_INVALID：互動式桌面範圍不符合安全限制。");
+            _ = GetTopologyHash();
+            return new(true, string.Empty);
+        }
         catch (RemoteDesktopUnavailableException exception) { return new(false, exception.Message); }
     }
 
@@ -297,22 +356,28 @@ public sealed class WindowsRemoteDesktopService(IRemoteConsoleGuard guard) : IRe
     public void ReleaseAllInjectedModifiers() { lock (inputLock) { inputLedger.ReleaseAll(); mouseLedger.ReleaseAll(); } }
     public void RetryPendingReleases() { lock (inputLock) { inputLedger.RetryPending(); mouseLedger.RetryPending(); } }
 
-    private static IntPtr EnsureInteractiveSession(bool requireInputTarget)
+    private IntPtr EnsureInteractiveSession(bool requireInputTarget)
     {
-        if (!OperatingSystem.IsWindows() || !Environment.UserInteractive || Process.GetCurrentProcess().SessionId == 0 || WTSGetActiveConsoleSessionId() != Process.GetCurrentProcess().SessionId || IsProcessElevated()) throw new RemoteDesktopUnavailableException("互動式主控台工作階段不可用。");
+        if (!dpiBootstrap.Ready) throw new RemoteDesktopUnavailableException($"DPI_BOOTSTRAP_UNAVAILABLE：{dpiBootstrap.Reason}");
+        if (!OperatingSystem.IsWindows()) throw new RemoteDesktopUnavailableException("WINDOWS_REQUIRED：遠端桌面僅支援 Windows。");
+        if (!Environment.UserInteractive) throw new RemoteDesktopUnavailableException("PROCESS_NOT_INTERACTIVE：網站程序不是互動式程序。");
+        var processSession = Process.GetCurrentProcess().SessionId;
+        if (processSession == 0) throw new RemoteDesktopUnavailableException("SESSION_ZERO：網站程序位於非互動 Session 0。");
+        if (WTSGetActiveConsoleSessionId() != processSession) throw new RemoteDesktopUnavailableException("CONSOLE_SESSION_MISMATCH：網站程序不在目前登入的主控台工作階段。");
+        if (IsProcessElevated()) throw new RemoteDesktopUnavailableException("PROCESS_TOKEN_UNSAFE：網站程序為 elevated、UIAccess 或無法驗證的權杖。");
         try
         {
             var context = GetThreadDpiAwarenessContext();
             if (!RemoteDpiSafety.IsPerMonitorV2(context != IntPtr.Zero, context != IntPtr.Zero && AreDpiAwarenessContextsEqual(context, new IntPtr(-4))))
-                throw new RemoteDesktopUnavailableException("程序未使用 Per-Monitor-V2 實體座標模式。");
+                throw new RemoteDesktopUnavailableException("DPI_THREAD_MISMATCH：程序未使用 Per-Monitor-V2 實體座標模式。");
         }
         catch (Exception exception) when (exception is DllNotFoundException or EntryPointNotFoundException)
-        { throw new RemoteDesktopUnavailableException("無法驗證 Per-Monitor-V2 DPI 模式。"); }
-        var desktop = OpenInputDesktop(0, false, DesktopReadObjects | DesktopSwitchDesktop); if (desktop == IntPtr.Zero) throw new RemoteDesktopUnavailableException("輸入桌面不可用。");
-        try { if (!GetDesktopName(desktop).Equals("Default", StringComparison.Ordinal)) throw new RemoteDesktopUnavailableException("安全桌面目前作用中。"); } finally { CloseDesktop(desktop); }
-        var foreground = GetForegroundWindow(); if (foreground == IntPtr.Zero) throw new RemoteDesktopUnavailableException("沒有前景視窗。");
+        { throw new RemoteDesktopUnavailableException("DPI_API_UNAVAILABLE：無法驗證 Per-Monitor-V2 DPI 模式。"); }
+        var desktop = OpenInputDesktop(0, false, DesktopReadObjects | DesktopSwitchDesktop); if (desktop == IntPtr.Zero) throw new RemoteDesktopUnavailableException("INPUT_DESKTOP_UNAVAILABLE：輸入桌面不可用。");
+        try { if (!GetDesktopName(desktop).Equals("Default", StringComparison.Ordinal)) throw new RemoteDesktopUnavailableException("SECURE_DESKTOP_ACTIVE：目前不是 Default 輸入桌面。"); } finally { CloseDesktop(desktop); }
+        var foreground = GetForegroundWindow(); if (foreground == IntPtr.Zero) throw new RemoteDesktopUnavailableException("FOREGROUND_UNAVAILABLE：沒有可驗證的前景視窗。");
         _ = GetWindowThreadProcessId(foreground, out var processId);
-        try { if (processId == 0 || Process.GetProcessById((int)processId).SessionId != Process.GetCurrentProcess().SessionId || IsProcessElevated(processId)) throw new RemoteDesktopUnavailableException("前景視窗工作階段或權限不安全。"); } catch (ArgumentException) { throw new RemoteDesktopUnavailableException("前景視窗已關閉。"); }
+        try { if (processId == 0 || Process.GetProcessById((int)processId).SessionId != processSession || IsProcessElevated(processId)) throw new RemoteDesktopUnavailableException("FOREGROUND_TOKEN_UNSAFE：前景視窗工作階段或權限不安全。"); } catch (ArgumentException) { throw new RemoteDesktopUnavailableException("FOREGROUND_CLOSED：前景視窗已關閉。"); }
         if (requireInputTarget) EnsureAllowedFocusTarget(foreground);
         return foreground;
     }
@@ -322,12 +387,21 @@ public sealed class WindowsRemoteDesktopService(IRemoteConsoleGuard guard) : IRe
             throw new RemoteDesktopUnavailableException("本機遠端控制能力目前為關閉狀態。");
     }
 
-    private static void EnsureAllowedFocusTarget(IntPtr foreground)
+    private void EnsureAllowedFocusTarget(IntPtr foreground)
     {
-        var thread = GetWindowThreadProcessId(foreground, out _); var info = new GUITHREADINFO { cbSize = Marshal.SizeOf<GUITHREADINFO>() };
-        if (!GetGUIThreadInfo(thread, ref info) || info.hwndFocus == IntPtr.Zero) throw new RemoteDesktopUnavailableException("無法確認文字輸入目標。");
-        var className = new StringBuilder(256); if (GetClassName(info.hwndFocus, className, className.Capacity) <= 0 || !AllowedFocusClasses.Contains(className.ToString())) throw new RemoteDesktopUnavailableException("目前前景控制項不允許遠端輸入。");
-        var style = GetWindowLongPtr(info.hwndFocus, -16).ToInt64(); if ((style & 0x20) != 0) throw new RemoteDesktopUnavailableException("密碼欄位不允許遠端輸入。");
+        var thread = GetWindowThreadProcessId(foreground, out var processId); var info = new GUITHREADINFO { cbSize = Marshal.SizeOf<GUITHREADINFO>() };
+        if (!GetGUIThreadInfo(thread, ref info) || info.hwndFocus == IntPtr.Zero) throw new RemoteDesktopUnavailableException("FOREGROUND_FOCUS_UNAVAILABLE：無法確認輸入目標。");
+        var className = new StringBuilder(256); if (GetClassName(info.hwndFocus, className, className.Capacity) <= 0) throw new RemoteDesktopUnavailableException("FOREGROUND_TARGET_UNSUPPORTED：無法辨識目前前景控制項。");
+        if (!AllowedFocusClasses.Contains(className.ToString()))
+        {
+            string processName;
+            try { processName = Process.GetProcessById((int)processId).ProcessName; }
+            catch (ArgumentException) { throw new RemoteDesktopUnavailableException("FOREGROUND_CLOSED：前景視窗已關閉。"); }
+            if (!RemoteBrowserTargetSafety.IsKnownBrowser(processName, className.ToString())) throw new RemoteDesktopUnavailableException("FOREGROUND_TARGET_UNSUPPORTED：目前前景控制項不在安全允許清單。");
+            if (!guard.TryRead(DateTimeOffset.UtcNow, out var enablement) || !enablement.Capabilities.Contains(RemoteCapability.BrowserInput))
+                throw new RemoteDesktopUnavailableException("BROWSER_INPUT_CONFIRMATION_REQUIRED：Chrome 或 Edge 輸入需要額外 browser.input 本機能力。");
+        }
+        var style = GetWindowLongPtr(info.hwndFocus, -16).ToInt64(); if ((style & 0x20) != 0) throw new RemoteDesktopUnavailableException("PASSWORD_TARGET_BLOCKED：密碼欄位不允許遠端輸入。");
     }
     private static void EnsureNoPhysicalModifiers(IReadOnlySet<ushort>? injected = null) { foreach (var key in ModifierKeys) if ((injected is null || !injected.Contains(key)) && (GetAsyncKeyState(key) & 0x8000) != 0) throw new RemoteDesktopUnavailableException("實體修飾鍵目前按下。"); }
     private static bool SendKeyEvent(RemoteInjectedKeyEvent item)

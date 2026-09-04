@@ -12,6 +12,10 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions
     ContentRootPath = AppContext.BaseDirectory,
     WebRootPath = Path.Combine(AppContext.BaseDirectory, "wwwroot")
 });
+// 必須在任何畫面或視窗 API 前固定程序 DPI 模式；測試環境只使用可注入 seam，不變更測試執行器程序。
+IRemoteDpiBootstrap remoteDpiBootstrap = builder.Environment.IsEnvironment("Testing")
+    ? new RemoteDpiBootstrap(false, "Native DPI bootstrap is disabled in the test host.")
+    : RemoteDpiBootstrap.Initialize(new WindowsRemoteDpiNative());
 builder.WebHost.UseUrls(builder.Configuration["Hosting:Url"] ?? "http://127.0.0.1:8792");
 builder.Services.AddControllersWithViews(options => options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()));
 builder.Services.AddAntiforgery(options => { options.HeaderName = "X-CSRF-TOKEN"; options.Cookie.Name = "__Host-AevryndCsrf"; options.Cookie.SecurePolicy = CookieSecurePolicy.Always; options.Cookie.SameSite = SameSiteMode.Strict; });
@@ -47,6 +51,7 @@ builder.Services.AddSingleton<IRemoteConsoleGuard, RemoteConsoleGuard>();
 builder.Services.AddSingleton<IAuthorizationHandler, PortalOwnerAuthorizationHandler>();
 builder.Services.AddSingleton<IAuthorizationHandler, RemoteControlAuthorizationHandler>();
 builder.Services.AddSingleton<IRemoteDesktopService, WindowsRemoteDesktopService>();
+builder.Services.AddSingleton(remoteDpiBootstrap);
 builder.Services.AddSingleton<IRemoteShellBroker, UnavailableRemoteShellBroker>();
 builder.Services.AddSingleton<IRemoteConsoleRateLimiter, RemoteConsoleRateLimiter>();
 builder.Services.AddSingleton<IRemoteControlLeaseRegistry, RemoteControlLeaseRegistry>();
@@ -55,6 +60,8 @@ builder.Services.AddHostedService<RemoteControlRevocationMonitor>();
 builder.Services.Configure<ForwardedHeadersOptions>(options => { options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto; options.KnownProxies.Add(IPAddress.Loopback); options.KnownProxies.Add(IPAddress.IPv6Loopback); });
 
 var app = builder.Build();
+if (!remoteDpiBootstrap.Ready) app.Logger.LogWarning("Remote Console DPI bootstrap unavailable. Reason={Reason}", remoteDpiBootstrap.Reason);
+else app.Logger.LogInformation("Remote Console DPI bootstrap verified as Per-Monitor-V2.");
 app.UseForwardedHeaders();
 if (!app.Environment.IsDevelopment()) { app.UseExceptionHandler("/Home/Error"); app.UseHsts(); }
 app.Use(async (context, next) =>
