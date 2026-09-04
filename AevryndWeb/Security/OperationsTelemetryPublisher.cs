@@ -3,6 +3,7 @@ using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Text.RegularExpressions;
 
 namespace AevryndWeb.Security;
 
@@ -12,8 +13,10 @@ public sealed class OperationsTelemetryPublisher(
     IConfiguration configuration,
     ILogger<OperationsTelemetryPublisher> logger) : BackgroundService
 {
-    private readonly string _statePath = configuration["Operations:StatePath"] ?? @"C:\ProgramData\AevryndWeb\operations-state.json";
+    private readonly string _statePath = configuration["Operations:StatePath"] ?? @"C:\ProgramData\AevryndWeb\operations\operations-state.json";
     private readonly string _codexStatusPath = configuration["Operations:CodexStatusPath"] ?? @"C:\ProgramData\Aevrynd\Codex\status.json";
+    private readonly string _codexHistoryPath = configuration["Operations:CodexHistoryPath"] ??
+        Path.Combine(Path.GetDirectoryName(configuration["Operations:CodexStatusPath"] ?? @"C:\ProgramData\Aevrynd\Codex\status.json")!, "operations-history.json");
     private ulong _previousIdle;
     private ulong _previousKernel;
     private ulong _previousUser;
@@ -44,10 +47,12 @@ public sealed class OperationsTelemetryPublisher(
             Id = "local", CpuPercent = cpu, RamPercent = memory.Total > 0 ? 100d * (memory.Total - memory.Available) / memory.Total : null,
             GpuPercent = ReadGpuPercent(), SampledAt = now
         });
+        var codexWork = ReadCodexWork(now, previous?.ActiveWork);
+        var history = MergeHistory(previous?.History, ReadCodexHistory(now));
+        // relay 會先寫 terminal history 再移除 active；跨檔案競態時以明確 terminal 事件為準。
+        if (codexWork is not null && history.Any(item => SameIdentity(item, codexWork))) codexWork = null;
         var activeWork = previous?.ActiveWork?.Where(item => !string.Equals(item.Type, "codex", StringComparison.Ordinal)).ToList() ?? [];
-        var codexWork = ReadCodexWork(now);
         if (codexWork is not null) activeWork.Insert(0, codexWork);
-        var history = previous?.History?.ToList() ?? [];
         AppendEndedCodexWork(previous?.ActiveWork, codexWork, now, history);
         var document = new OperationsStateDocument
         {
@@ -55,7 +60,7 @@ public sealed class OperationsTelemetryPublisher(
             SnapshotAt = now,
             Nodes = nodes,
             ActiveWork = activeWork,
-            History = history.TakeLast(500).ToList()
+            History = MergeHistory([], history)
         };
         var temporary = _statePath + ".tmp";
         File.WriteAllText(temporary, JsonSerializer.Serialize(document, new JsonSerializerOptions { WriteIndented = true }));
@@ -88,30 +93,77 @@ public sealed class OperationsTelemetryPublisher(
         });
     }
 
-    private OperationsWorkState? ReadCodexWork(DateTimeOffset now)
+    private OperationsWorkState? ReadCodexWork(DateTimeOffset now, IReadOnlyCollection<OperationsWorkState>? previousActive)
     {
         try
         {
-            if (!File.Exists(_codexStatusPath)) return null;
+            if (!SafeSourceFile(_codexStatusPath, 8192)) return null;
             var raw = File.ReadAllBytes(_codexStatusPath);
-            if (raw.Length is < 2 or > 8192) return null;
-            var status = JsonSerializer.Deserialize<CodexStatusDocument>(raw);
+            var status = JsonSerializer.Deserialize<CodexStatusDocument>(raw, StrictJson);
             if (status is null || status.SchemaVersion != 1 || status.Status is not ("working" or "blocked") ||
-                status.Progress is < 0 or > 100 || status.Ttl is < 1 or > 3600 ||
-                string.IsNullOrWhiteSpace(status.Task) || string.IsNullOrWhiteSpace(status.Phase) ||
-                status.Task.Length > 160 || status.Phase.Length > 120 ||
-                status.Task.Any(char.IsControl) || status.Phase.Any(char.IsControl) ||
+                status.Progress is < 0 or > 100 || status.Ttl is < 1 or > 3600 || !SafeText(status.Task, 80) ||
+                (status.Phase is not null && !SafeText(status.Phase, 120)) ||
                 status.UpdatedUtc == default || status.UpdatedUtc > now.AddMinutes(1) ||
                 now - status.UpdatedUtc > TimeSpan.FromSeconds(status.Ttl)) return null;
+            if (status.StartedUtc.HasValue && (status.StartedUtc.Value == default || status.StartedUtc > status.UpdatedUtc ||
+                status.StartedUtc < now.AddYears(-1))) return null;
+            var previous = previousActive?.FirstOrDefault(item => item.Type == "codex" && item.Name == status.Task.Trim());
+            var startedAt = status.StartedUtc ?? previous?.StartedAt ?? status.UpdatedUtc;
             return new OperationsWorkState
             {
-                Name = status.Task.Trim(), Type = "codex", Host = "local", StartedAt = status.UpdatedUtc,
+                Name = status.Task.Trim(), Type = "codex", Host = "local", StartedAt = startedAt,
                 UpdatedAt = status.UpdatedUtc, Status = status.Status
             };
         }
         catch (Exception exception) when (exception is IOException or UnauthorizedAccessException or JsonException)
         { return null; }
     }
+
+    private List<OperationsWorkState> ReadCodexHistory(DateTimeOffset now)
+    {
+        try
+        {
+            if (!File.Exists(_codexHistoryPath)) return [];
+            if (!SafeSourceFile(_codexHistoryPath, 524_288)) return [];
+            var document = JsonSerializer.Deserialize<CodexHistoryDocument>(File.ReadAllBytes(_codexHistoryPath), StrictJson);
+            if (document is null || document.SchemaVersion != 1 || document.Events is null || document.Events.Count > 500) return [];
+            var result = new List<OperationsWorkState>(document.Events.Count);
+            foreach (var item in document.Events)
+            {
+                if (item is null || !SafeText(item.Name, 80) || !SafeText(item.Type, 40) || item.Status is not ("completed" or "failed" or "cancelled") ||
+                    item.StartedAt == default || item.UpdatedAt == default || item.EndedAt == default ||
+                    item.StartedAt > item.UpdatedAt || item.UpdatedAt > item.EndedAt || item.EndedAt > now.AddMinutes(1) ||
+                    (item.EvidenceSummary is not null && !SafeText(item.EvidenceSummary, 240))) return [];
+                result.Add(new OperationsWorkState { Name = item.Name, Type = item.Type, Host = "local", StartedAt = item.StartedAt,
+                    UpdatedAt = item.UpdatedAt, EndedAt = item.EndedAt, Status = item.Status, EvidenceSummary = item.EvidenceSummary });
+            }
+            return MergeHistory([], result);
+        }
+        catch (Exception exception) when (exception is IOException or UnauthorizedAccessException or JsonException)
+        { return []; }
+    }
+
+    private static List<OperationsWorkState> MergeHistory(IEnumerable<OperationsWorkState>? existing, IEnumerable<OperationsWorkState> incoming) =>
+        (existing ?? []).Concat(incoming).Where(item => item is not null)
+            .GroupBy(item => (item.Name, item.StartedAt))
+            .Select(group => group.OrderByDescending(item => item.UpdatedAt).First())
+            .OrderBy(item => item.StartedAt).TakeLast(500).ToList();
+
+    private static bool SameIdentity(OperationsWorkState left, OperationsWorkState right) =>
+        StringComparer.Ordinal.Equals(left.Name, right.Name) && left.StartedAt == right.StartedAt;
+
+    private static bool SafeSourceFile(string path, int maximum)
+    {
+        var item = new FileInfo(path);
+        return item.Exists && item.Length is >= 2 && item.Length <= maximum && (item.Attributes & FileAttributes.ReparsePoint) == 0;
+    }
+
+    private static bool SafeText(string? value, int maximum) => !string.IsNullOrWhiteSpace(value) && value.Length <= maximum &&
+        !value.Any(char.IsControl) && !value.Contains("://", StringComparison.Ordinal) && !value.Contains('@') &&
+        !value.Contains(":\\", StringComparison.Ordinal) && !IpAddressShape.IsMatch(value);
+
+    private static readonly JsonSerializerOptions StrictJson = new() { PropertyNameCaseInsensitive = false, UnmappedMemberHandling = JsonUnmappedMemberHandling.Disallow };
+    private static readonly Regex IpAddressShape = new(@"(?<!\d)(?:\d{1,3}\.){3}\d{1,3}(?!\d)", RegexOptions.CultureInvariant);
 
     private OperationsStateDocument? ReadPrevious()
     {
@@ -169,12 +221,30 @@ public sealed class OperationsTelemetryPublisher(
 
     private sealed class CodexStatusDocument
     {
-        [JsonPropertyName("schemaVersion")] public int SchemaVersion { get; set; }
-        [JsonPropertyName("status")] public string Status { get; set; } = string.Empty;
-        [JsonPropertyName("task")] public string Task { get; set; } = string.Empty;
-        [JsonPropertyName("phase")] public string Phase { get; set; } = string.Empty;
-        [JsonPropertyName("progress")] public int Progress { get; set; }
-        [JsonPropertyName("updatedUtc")] public DateTimeOffset UpdatedUtc { get; set; }
-        [JsonPropertyName("ttl")] public int Ttl { get; set; }
+        [JsonRequired, JsonPropertyName("schemaVersion")] public int SchemaVersion { get; set; }
+        [JsonRequired, JsonPropertyName("status")] public string Status { get; set; } = string.Empty;
+        [JsonRequired, JsonPropertyName("task")] public string Task { get; set; } = string.Empty;
+        [JsonPropertyName("phase")] public string? Phase { get; set; }
+        [JsonPropertyName("progress")] public int? Progress { get; set; }
+        [JsonPropertyName("startedUtc")] public DateTimeOffset? StartedUtc { get; set; }
+        [JsonRequired, JsonPropertyName("updatedUtc")] public DateTimeOffset UpdatedUtc { get; set; }
+        [JsonRequired, JsonPropertyName("ttl")] public int Ttl { get; set; }
+    }
+
+    private sealed class CodexHistoryDocument
+    {
+        [JsonRequired, JsonPropertyName("schemaVersion")] public int SchemaVersion { get; set; }
+        [JsonRequired, JsonPropertyName("events")] public List<CodexHistoryEvent?> Events { get; set; } = [];
+    }
+
+    private sealed class CodexHistoryEvent
+    {
+        [JsonRequired, JsonPropertyName("name")] public string Name { get; set; } = string.Empty;
+        [JsonRequired, JsonPropertyName("type")] public string Type { get; set; } = string.Empty;
+        [JsonRequired, JsonPropertyName("startedAt")] public DateTimeOffset StartedAt { get; set; }
+        [JsonRequired, JsonPropertyName("updatedAt")] public DateTimeOffset UpdatedAt { get; set; }
+        [JsonRequired, JsonPropertyName("endedAt")] public DateTimeOffset EndedAt { get; set; }
+        [JsonRequired, JsonPropertyName("status")] public string Status { get; set; } = string.Empty;
+        [JsonRequired, JsonPropertyName("evidenceSummary")] public string? EvidenceSummary { get; set; }
     }
 }

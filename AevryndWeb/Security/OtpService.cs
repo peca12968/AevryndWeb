@@ -26,6 +26,7 @@ public static class PortalIdentity
     public static string? RoleFor(string email) => Accounts.TryGetValue(Normalize(email), out var role) ? role : null;
     public const string PortalOwnerPolicy = "PortalOwner";
     public const string AdminPolicy = "PortalAdmin";
+    public const string OperationsPolicy = "PortalOperations";
     public static string CapabilityPolicy(RemoteCapability capability) => $"RemoteConsole:{capability}";
     private static string Normalize(string value) => (value ?? string.Empty).Trim().ToLowerInvariant();
 }

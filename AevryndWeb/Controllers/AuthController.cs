@@ -40,7 +40,7 @@ public sealed class AuthController(IOtpService otp, IEmailSender emailSender, IA
             new Claim(PortalClaimTypes.AuthenticationTime, now.ToUnixTimeSeconds().ToString(System.Globalization.CultureInfo.InvariantCulture))
         ], CookieAuthenticationDefaults.AuthenticationScheme);
         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity), new AuthenticationProperties { ExpiresUtc = session.ExpiresAt, AllowRefresh = false, IsPersistent = false });
-        return Ok(new { redirect = "/Home/Portal" });
+        return Ok(new { redirect = role == PortalIdentity.AdminRole ? "/Home/Portal" : "/Operations" });
     }
 
     [HttpPost("/api/auth/logout"), Authorize]

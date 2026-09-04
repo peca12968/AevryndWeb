@@ -16,7 +16,7 @@ public interface IOperationsSnapshotProvider
 public sealed class FileOperationsSnapshotProvider(IConfiguration configuration, IRemoteTelemetryStore remoteTelemetry) : IOperationsSnapshotProvider
 {
     private static readonly (string Id, string Name)[] KnownNodes = [("local", "本機"), ("taichung", "台中"), ("taoyuan", "桃園")];
-    private string StatePath => configuration["Operations:StatePath"] ?? @"C:\ProgramData\AevryndWeb\operations-state.json";
+    private string StatePath => configuration["Operations:StatePath"] ?? @"C:\ProgramData\AevryndWeb\operations\operations-state.json";
 
     public OperationsViewModel Read(DateTimeOffset now)
     {
@@ -34,20 +34,31 @@ public sealed class FileOperationsSnapshotProvider(IConfiguration configuration,
             if (document is null || !OperationsSnapshotSchema.TryNormalize(document, now, out var model))
                 return Empty("invalid：操作摘要 schema 或時間無效。");
             var nodes = model.Nodes.ToArray();
+            var activeWork = model.ActiveWork.ToList();
+            var history = model.History.ToList();
             for (var index = 0; index < nodes.Length; index++)
             {
                 if (nodes[index].Id == "local") continue;
-                nodes[index] = remoteTelemetry.TryReadFresh(nodes[index].Id, now, out var remote)
-                    ? new OperationsNodeView(nodes[index].Id, nodes[index].Name, Math.Round(remote.CpuPercent!.Value, 1), Math.Round(remote.RamPercent!.Value, 1), Math.Round(remote.GpuPercent!.Value, 1), remote.SampledAt, false)
-                    : new OperationsNodeView(nodes[index].Id, nodes[index].Name, null, null, null, null, true);
+                if (remoteTelemetry.TryReadFreshSnapshot(nodes[index].Id, now, out var remote))
+                {
+                    nodes[index] = new OperationsNodeView(nodes[index].Id, nodes[index].Name, Math.Round(remote.Node.CpuPercent!.Value, 1), Math.Round(remote.Node.RamPercent!.Value, 1), remote.Node.GpuPercent.HasValue ? Math.Round(remote.Node.GpuPercent.Value, 1) : null, remote.Node.SampledAt, false, "current", remote.Node.GpuPercent.HasValue ? "已收到通過簽章驗證的即時採樣。" : "CPU 與 RAM 已驗證；節點未提供可驗證的 GPU 計數器。");
+                    if (OperationsSnapshotSchema.TryNormalizeRemoteWork(remote.ActiveWork, remote.History, nodes[index].Id, now, out var remoteActive, out var remoteHistory))
+                    { activeWork.AddRange(remoteActive); history.AddRange(remoteHistory); }
+                }
+                else nodes[index] = new OperationsNodeView(nodes[index].Id, nodes[index].Name, null, null, null, null, true, "unavailable", "最近兩分鐘內沒有通過簽章與 freshness 驗證的遠端採樣。");
             }
-            return model with { Nodes = nodes };
+            return model with
+            {
+                Nodes = nodes,
+                ActiveWork = activeWork.OrderByDescending(item => item.UpdatedAt ?? item.StartedAt).ToArray(),
+                History = history.GroupBy(item => (item.Host, item.Name, item.StartedAt)).Select(group => group.OrderByDescending(item => item.UpdatedAt).First()).OrderByDescending(item => item.StartedAt).Take(500).ToArray()
+            };
         }
         catch (Exception exception) when (exception is IOException or UnauthorizedAccessException or JsonException or ArgumentException)
         { return Empty("invalid：操作摘要無法安全讀取。"); }
     }
 
-    private OperationsViewModel Empty(string status) => new(KnownNodes.Select(node => new OperationsNodeView(node.Id, node.Name, null, null, null, null, true)).ToArray(), [], [], null, false, status);
+    private OperationsViewModel Empty(string status) => new(KnownNodes.Select(node => new OperationsNodeView(node.Id, node.Name, null, null, null, null, true, "unavailable", "操作摘要來源不可用，無法驗證此節點。" )).ToArray(), [], [], null, false, status);
 
     [SupportedOSPlatform("windows")]
     private static bool HasSafeAcl(string path) => OperationsFileSecurity.HasSafeAcl(path);
@@ -102,10 +113,35 @@ public static class OperationsSnapshotSchema
         return true;
     }
 
+    public static bool TryValidateRemoteWork(IReadOnlyList<OperationsWorkState> active, IReadOnlyList<OperationsWorkState> history, string nodeId, DateTimeOffset now) =>
+        TryNormalizeRemoteWork(active, history, nodeId, now, out _, out _);
+
+    public static bool TryNormalizeRemoteWork(IReadOnlyList<OperationsWorkState> active, IReadOnlyList<OperationsWorkState> history, string nodeId, DateTimeOffset now,
+        out OperationsWorkView[] normalizedActive, out OperationsWorkView[] normalizedHistory)
+    {
+        normalizedActive = []; normalizedHistory = [];
+        var activeKeys = active.Select(item => (item.Name, item.StartedAt)).ToHashSet();
+        if (!KnownNodes.Any(node => node.Id == nodeId) || active.Any(item => item.Host != nodeId) || history.Any(item => item.Host != nodeId) ||
+            active.GroupBy(item => (item.Name, item.StartedAt)).Any(group => group.Count() > 1) || history.GroupBy(item => (item.Name, item.StartedAt)).Any(group => group.Count() > 1)) return false;
+        if (history.Any(item => activeKeys.Contains((item.Name, item.StartedAt)))) return false;
+        return TryNormalizeWork(active.ToList(), now, false, 10, out normalizedActive) && TryNormalizeWork(history.ToList(), now, true, 100, out normalizedHistory);
+    }
+
     private static OperationsNodeView NormalizeNode(string id, string name, OperationsNodeState? node, DateTimeOffset now)
     {
-        if (node is null || node.SampledAt == default || node.SampledAt > now.AddMinutes(1)) return new(id, name, null, null, null, null, true);
-        return new(id, name, Metric(node.CpuPercent), Metric(node.RamPercent), Metric(node.GpuPercent), node.SampledAt, now - node.SampledAt > TimeSpan.FromMinutes(2));
+        if (node is null || node.SampledAt == default || node.SampledAt > now.AddMinutes(1))
+            return new(id, name, null, null, null, null, true, "unavailable", "摘要中沒有可驗證的採樣時間與量測值。");
+        var cpu = Metric(node.CpuPercent); var ram = Metric(node.RamPercent); var gpu = Metric(node.GpuPercent);
+        var stale = now - node.SampledAt > TimeSpan.FromSeconds(35);
+        var availability = cpu is null && ram is null && gpu is null ? "unavailable" : stale ? "stale" : "current";
+        var diagnostic = availability switch
+        {
+            "unavailable" => "採樣存在，但沒有任何通過範圍驗證的量測值。",
+            "stale" => "採樣超過 35 秒未更新；保留最後實測值，不進行推估。",
+            _ when gpu is null => "CPU 與 RAM 為即時實測；GPU 計數器不可用。",
+            _ => "本機即時實測資料。"
+        };
+        return new(id, name, cpu, ram, gpu, node.SampledAt, stale || availability == "unavailable", availability, diagnostic);
     }
 
     private static bool TryNormalizeWork(List<OperationsWorkState>? source, DateTimeOffset now, bool completed, int maximum, out OperationsWorkView[] result)
@@ -118,6 +154,7 @@ public static class OperationsSnapshotSchema
             if (!SafeText(item.Name, 80) || !SafeText(item.Type, 40) || !KnownNodes.Any(node => node.Id == item.Host) || !WorkStatuses.Contains(item.Status) ||
                 item.StartedAt == default || item.StartedAt > now.AddMinutes(1) || item.UpdatedAt > now.AddMinutes(1) || completed != item.EndedAt.HasValue ||
                 item.EndedAt < item.StartedAt || item.UpdatedAt < item.StartedAt || item.UpdatedAt > item.EndedAt ||
+                (!completed && item.Status is not ("working" or "blocked")) || (completed && item.Status is "working" or "blocked") ||
                 (item.EvidenceSummary is not null && !SafeText(item.EvidenceSummary, 240))) return false;
             var label = KnownNodes.Single(node => node.Id == item.Host).Name;
             var referenceTime = item.UpdatedAt ?? item.StartedAt;

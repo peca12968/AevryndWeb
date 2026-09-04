@@ -16,7 +16,7 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 IRemoteDpiBootstrap remoteDpiBootstrap = builder.Environment.IsEnvironment("Testing")
     ? new RemoteDpiBootstrap(false, "Native DPI bootstrap is disabled in the test host.")
     : RemoteDpiBootstrap.Initialize(new WindowsRemoteDpiNative());
-builder.WebHost.UseUrls(builder.Configuration["Hosting:Url"] ?? "http://127.0.0.1:8792");
+builder.WebHost.UseUrls(builder.Configuration["Hosting:Url"] ?? "http://127.0.0.1:8081");
 builder.Services.AddControllersWithViews(options => options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()));
 builder.Services.AddAntiforgery(options => { options.HeaderName = "X-CSRF-TOKEN"; options.Cookie.Name = "__Host-AevryndCsrf"; options.Cookie.SecurePolicy = CookieSecurePolicy.Always; options.Cookie.SameSite = SameSiteMode.Strict; });
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
@@ -28,6 +28,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     options.ExpireTimeSpan = TimeSpan.FromHours(8);
     options.SlidingExpiration = false;
     options.LoginPath = "/";
+    options.Events.OnRedirectToAccessDenied = context => { context.Response.StatusCode = StatusCodes.Status403Forbidden; return Task.CompletedTask; };
 });
 builder.Services.AddAuthorization(options =>
 {
@@ -38,6 +39,10 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy(PortalIdentity.AdminPolicy, policy => policy
         .RequireAuthenticatedUser()
         .RequireAssertion(context => PortalIdentity.IsAdmin(context.User.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value ?? string.Empty))
+        .AddRequirements(new PortalOwnerRequirement()));
+    options.AddPolicy(PortalIdentity.OperationsPolicy, policy => policy
+        .RequireAuthenticatedUser()
+        .RequireAssertion(context => PortalIdentity.IsAllowed(context.User.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value ?? string.Empty))
         .AddRequirements(new PortalOwnerRequirement()));
     foreach (var capability in Enum.GetValues<RemoteCapability>())
         options.AddPolicy(PortalIdentity.CapabilityPolicy(capability), policy => policy
@@ -51,6 +56,7 @@ builder.Services.AddSingleton<IOtpService, OtpService>();
 builder.Services.AddSingleton<IEmailSender, GmailEmailSender>();
 builder.Services.AddSingleton<IPortalSessionStore, PortalSessionStore>();
 builder.Services.AddSingleton<IRemoteTelemetryStore, FileRemoteTelemetryStore>();
+builder.Services.AddSingleton<IOperationsTelemetryReplayStore, FileOperationsTelemetryReplayStore>();
 builder.Services.AddSingleton<IRemoteOperationsTelemetry, RemoteOperationsTelemetry>();
 builder.Services.AddSingleton<ICodexEventRelayStore, FileCodexEventRelayStore>();
 builder.Services.AddSingleton<ICodexEventRelayReplayStore, FileCodexEventRelayReplayStore>();

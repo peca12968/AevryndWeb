@@ -9,10 +9,10 @@ public sealed class OperationsTelemetryController(IRemoteOperationsTelemetry tel
 {
     [HttpPost]
     [IgnoreAntiforgeryToken]
-    [RequestSizeLimit(4096)]
+    [RequestSizeLimit(131072)]
     public async Task<IActionResult> Post(CancellationToken cancellationToken)
     {
-        if (Request.ContentLength is > 4096 || Request.ContentType is null ||
+        if (Request.ContentLength is > 131072 || Request.ContentType is null ||
             !Request.ContentType.StartsWith("application/json", StringComparison.OrdinalIgnoreCase)) return BadRequest();
         var body = await ReadBody(cancellationToken);
         if (body is null) return BadRequest();
@@ -20,6 +20,7 @@ public sealed class OperationsTelemetryController(IRemoteOperationsTelemetry tel
             Request.Headers["X-Aevrynd-Node"].ToString(),
             Request.Headers["X-Aevrynd-Timestamp"].ToString(),
             Request.Headers["X-Aevrynd-Nonce"].ToString(),
+            Request.Headers["X-Aevrynd-Key-Id"].ToString(),
             Request.Headers["X-Aevrynd-Signature"].ToString(),
             HttpContext.Connection.RemoteIpAddress,
             body,
@@ -42,7 +43,7 @@ public sealed class OperationsTelemetryController(IRemoteOperationsTelemetry tel
         {
             var read = await Request.Body.ReadAsync(chunk, cancellationToken);
             if (read == 0) return buffer.Length == 0 ? null : buffer.ToArray();
-            if (buffer.Length + read > 4096) return null;
+            if (buffer.Length + read > 131072) return null;
             await buffer.WriteAsync(chunk.AsMemory(0, read), cancellationToken);
         }
     }

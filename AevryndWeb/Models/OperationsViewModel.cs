@@ -8,5 +8,14 @@ public sealed record OperationsViewModel(
     bool SourceAvailable,
     string SourceStatus);
 
-public sealed record OperationsNodeView(string Id, string Name, double? CpuPercent, double? RamPercent, double? GpuPercent, DateTimeOffset? SampledAt, bool Stale);
+public sealed record OperationsNodeView(
+    string Id,
+    string Name,
+    double? CpuPercent,
+    double? RamPercent,
+    double? GpuPercent,
+    DateTimeOffset? SampledAt,
+    bool Stale,
+    string Availability,
+    string Diagnostic);
 public sealed record OperationsWorkView(string Name, string Type, string Host, DateTimeOffset StartedAt, DateTimeOffset? UpdatedAt, DateTimeOffset? EndedAt, string Status, string? EvidenceSummary, bool Stale);

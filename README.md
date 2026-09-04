@@ -32,3 +32,7 @@ pwsh -File .\AevryndWeb\scripts\Disable-RemoteConsole.ps1
 `shell.execute` 尚未開放。本機腳本不接受此 capability，正式後端也只會回報不可用；必須先完成獨立低權限 Windows 帳號 broker、固定 `pwsh` 雜湊、Job Object、輸出／逾時限制及秘密隔離驗證，不能由網站程序直接啟動 Shell。
 
 機密資料不在版本庫內。Gmail 應用程式密碼必須透過 User Secrets、環境變數或部署主機的安全憑證儲存提供。
+
+## Remote operations telemetry
+
+副機 telemetry 使用不可匯出的 Windows CNG ECDSA P-256 私鑰簽章；安裝只產生可公開傳遞的 enrollment JSON，網站公鑰則由外部設定依 `nodeId` 與 `keyId` 嚴格綁定。私鑰不會進入檔案、命令列、記錄或版本庫。輪替、撤銷、legacy HMAC 相容模式及完整操作方式見 [scripts/Operations-Telemetry.md](AevryndWeb/scripts/Operations-Telemetry.md)。
