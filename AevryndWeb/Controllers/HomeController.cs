@@ -18,6 +18,9 @@ namespace AevryndWeb.Controllers
             return View();
         }
 
+        [HttpGet("/Showcase")]
+        public IActionResult Showcase() => View();
+
         [Microsoft.AspNetCore.Authorization.Authorize(Policy = AevryndWeb.Security.PortalIdentity.PortalOwnerPolicy)]
         public IActionResult Portal() => View();
 

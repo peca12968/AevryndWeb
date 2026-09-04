@@ -14,6 +14,17 @@ namespace AevryndWeb.Tests;
 public sealed class AuthenticationContractTests
 {
     [Fact]
+    public async Task ShowcaseIsPublicAndPreservesReleaseTruth()
+    {
+        using var factory = new LoginFactory(); using var client = factory.CreateClient(Options());
+        var response = await client.GetAsync("/Showcase"); var html = await response.Content.ReadAsStringAsync();
+        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+        Assert.Contains("34 / 100", html); Assert.Contains("v1.4 未發布", html);
+        Assert.Contains("DLSS 未實作", html); Assert.Contains("Bloom 待提交", html);
+        Assert.Contains("ENGINE ARCHITECTURE", html); Assert.Contains("TRACEABLE RELEASES", html);
+    }
+
+    [Fact]
     public async Task ExactNormalizedOwnerLoginCreatesServerValidatedPortalSession()
     {
         using var factory = new LoginFactory(); using var client = factory.CreateClient(Options());

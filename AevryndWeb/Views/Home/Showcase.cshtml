@@ -1,0 +1,74 @@
+@{ ViewData["Title"] = "開發展示"; }
+<section class="showcase-shell">
+    <header class="showcase-hero">
+        <p class="eyebrow"><span></span> DEVELOPMENT LEDGER · ENGINE 2.86.0</p>
+        <h1>讓每一步引擎演進，<em>都有證據可循。</em></h1>
+        <p>Aevrynd 是持續演進的 2D／2.5D／3D 遊戲引擎。此頁區分已發布版本、已驗證但未發布切片與歷史產物；技術 gate 通過不等於遊戲畫面達標。</p>
+        <div class="truth-strip" aria-label="目前發布狀態">
+            <div><small>VISUAL SCORE</small><strong>34 / 100</strong><span class="status-no">NO-GO</span></div>
+            <div><small>GAMEPLAY DEMO</small><strong>v1.3.0</strong><span>目前已發布；品質不代表現況目標</span></div>
+            <div><small>NEXT RELEASE</small><strong>v1.4</strong><span class="status-no">尚未發布</span></div>
+            <div><small>RENDER PATH</small><strong>D3D12</strong><span>跨 Vulkan／Metal 等價尚未證明</span></div>
+        </div>
+    </header>
+
+    <section class="showcase-section" aria-labelledby="release-title">
+        <div class="section-heading"><p class="micro-label">TRACEABLE RELEASES</p><h2 id="release-title">可追溯 Demo 與發布切片</h2><p>只有狀態帳與功能目錄明確附帶版本、來源或驗證契約者列為發布證據。磁碟中的其他舊目錄僅是歷史產物。</p></div>
+        <div class="release-grid">
+            <article class="release-card release-current"><span>ENGINE LAB</span><h3>v2.55 · 四級陰影</h3><p>4×2048 CSM、contact shadow、113/113 suite；immutable tree 134 files。</p><code>v2.55.0-engine-v2.86.0-c033de38</code></article>
+            <article class="release-card"><span>ENGINE LAB</span><h3>v2.53 · Dirty Delta</h3><p>大型世界增量持久化、95/95 tests、GPU validation 8、6 captures。</p><code>v2.53.0-engine-v2.86.0-73f10a96</code></article>
+            <article class="release-card"><span>ENGINE LAB</span><h3>v2.52 · Origin Rebase</h3><p>int64 global position 與跨系統 frame-boundary transaction；89/89 tests。</p><code>v2.52.0-engine-v2.86.0-e1584944</code></article>
+            <article class="release-card"><span>ENGINE LAB</span><h3>v2.51 · World Partition</h3><p>分區載入驗收切片；81/81 tests、GPU validation 與 5 captures。</p><code>v2.51.0-engine-v2.86.0-4568daa1</code></article>
+            <article class="release-card"><span>CHARACTER LAB</span><h3>v2.10 · Character</h3><p>Immutable Character release；latest 與 pinned launcher 完成 12/12 擷取。</p><code>v2.10.0-engine-v2.86.0-27ea58cd</code></article>
+            <article class="release-card release-warning"><span>GAMEPLAY LAB</span><h3>v1.3 · 歷史發布</h3><p>目前最新已發布 Gameplay Demo，但已被判定不合格，不可作為目前品質代表。</p><code>v1.3.0-engine-v2.86.0-2260f01e</code></article>
+        </div>
+        <p class="evidence-note">磁碟另留存 Engine Lab v2.46–2.50／2.54、Gameplay v1.0–1.2 與 Character v2.9.1／其他 v2.10 generations；它們在此僅列為歷史可追溯目錄，不作目前來源通過證據。</p>
+    </section>
+
+    <section class="showcase-section" aria-labelledby="timeline-title">
+        <div class="section-heading"><p class="micro-label">DEVELOPMENT TIMELINE</p><h2 id="timeline-title">目前已驗證切片</h2></div>
+        <div class="timeline">
+            <article><time>WORLD</time><h3>World Partition Phase 1／2</h3><p>非同步 prepare／activate／retire、terrain／vegetation payload、origin rebasing 與 Dirty Delta。部分驗收 Demo 已發布，完整大型世界仍持續演進。</p></article>
+            <article><time>GPU</time><h3>GPU-driven 1A／1B + HZB</h3><p>compute culling、ExecuteIndirect、homogeneous buckets、current-frame HZB 與 paired benchmark。Temporal hybrid occlusion、bindless indexing仍待完成。</p></article>
+            <article><time>LIGHT</time><h3>Forward+ 與四級陰影</h3><p>Forward+ 已提交並驗證；Engine Lab 2.55 已發布 4-cascade CSM 與 contact shadow。這不是 Lumen／Nanite 等價聲明。</p></article>
+            <article><time>TEMPORAL</time><h3>TAA previous-depth closure</h3><p>Atmosphere／TAA 同一 sequence token 重用，previous-depth、Color／OID／Depth SHA closure 與 GBV ghost gate 通過；屬核心正確性，不直接提高視覺分數。</p></article>
+            <article><time>WORLD DETAIL</time><h3>Water、foliage、Linear HDR</h3><p>逐水體 HDR 合成、透明交錯、葉片 alpha/mip/UV 與 sealed HDR sidecar 已驗證；仍是未發布 WIP。</p></article>
+            <article><time>HLOD</time><h3>HLOD Slice 1／2／4</h3><p>Frozen selection、proxy lease、transition raster、HZB identity 與 shadow parity 核心通過。完整 GPU selection、真實 workload 與 gameplay transition pixels 尚缺。</p></article>
+            <article><time>POST FX</time><h3>Depth-semantic Bloom</h3><p>最新來源已完成 fresh Normal／GBV 修復驗證；目前仍等待主代理精準提交，不能標示為 production complete。</p></article>
+        </div>
+    </section>
+
+    <section class="showcase-section diagram-section" aria-labelledby="system-title">
+        <div class="section-heading"><p class="micro-label">SYSTEM TOPOLOGY</p><h2 id="system-title">目前系統結構</h2></div>
+        <svg class="architecture-map" viewBox="0 0 1100 360" role="img" aria-labelledby="system-svg-title system-svg-desc">
+            <title id="system-svg-title">Aevrynd 系統結構圖</title><desc id="system-svg-desc">網站與主代理協調本機引擎、驗證管線及受限 Qwen 節點。</desc>
+            <g class="map-lines"><path d="M190 180H420"/><path d="M680 180H910"/><path d="M550 115V55"/><path d="M550 245V310"/></g>
+            <g class="map-node"><rect x="20" y="125" width="170" height="110" rx="14"/><text x="105" y="168">PUBLIC SITE</text><text class="map-sub" x="105" y="195">Showcase · Secure Portal</text></g>
+            <g class="map-node map-node-main"><rect x="420" y="115" width="260" height="130" rx="18"/><text x="550" y="165">CODEX ORCHESTRATOR</text><text class="map-sub" x="550" y="195">拆分 · 整合 · 驗收 · 發布 gate</text></g>
+            <g class="map-node"><rect x="910" y="125" width="170" height="110" rx="14"/><text x="995" y="168">AEVRYND ENGINE</text><text class="map-sub" x="995" y="195">Source · Demo · Evidence</text></g>
+            <g class="map-node"><rect x="455" y="5" width="190" height="70" rx="13"/><text x="550" y="35">QWEN ADVISORY</text><text class="map-sub" x="550" y="57">受限唯讀簡單工作</text></g>
+            <g class="map-node"><rect x="440" y="290" width="220" height="65" rx="13"/><text x="550" y="318">FRESH VALIDATION</text><text class="map-sub" x="550" y="340">Normal · GBV · Visual gates</text></g>
+        </svg>
+    </section>
+
+    <section class="showcase-section diagram-section" aria-labelledby="engine-title">
+        <div class="section-heading"><p class="micro-label">ENGINE ARCHITECTURE</p><h2 id="engine-title">引擎架構</h2></div>
+        <div class="engine-stack" role="img" aria-label="從遊戲與工具層到底層平台的 Aevrynd 引擎架構">
+            <div><strong>Games & Tools</strong><span>Gameplay Lab · Character Lab · Engine Lab · World Builder · Capture Validators</span></div>
+            <div><strong>Gameplay Systems</strong><span>ECS · Animation · Physics · Navigation · Camera · Combat · Serialization</span></div>
+            <div><strong>World Runtime</strong><span>World Partition · HLOD · Terrain · Vegetation · Origin Rebase · Dirty Delta</span></div>
+            <div><strong>Rendering</strong><span>D3D12 · Forward+ · GPU-driven · HZB · CSM · TAA · HDR · Water · Bloom</span></div>
+            <div><strong>Evidence & Safety</strong><span>Typed receipts · Object ID · Depth · SHA-256 · GBV · Rollback · Immutable release</span></div>
+            <div><strong>Platform</strong><span>Windows · D3D12 · Asset cooker · Filesystem · Offline Qwen advisory</span></div>
+        </div>
+    </section>
+
+    <section class="showcase-section reality-grid" aria-labelledby="limits-title">
+        <div class="section-heading"><p class="micro-label">CURRENT REALITY</p><h2 id="limits-title">清楚標示尚未完成</h2></div>
+        <article><strong>34 / 100</strong><p>r6 11-shot 權威視覺分數。Demo 門檻是 70 且 hard issue 為 0。</p></article>
+        <article><strong>v1.4 未發布</strong><p>r7 構圖、光照、材質、植被、水面與角色可讀性仍待獨立 gate。</p></article>
+        <article><strong>DLSS 未實作</strong><p>現有水體路徑遇 DLSS request 會 fail closed；不得把 fallback 描述成 DLSS 支援。</p></article>
+        <article><strong>Bloom 待提交</strong><p>fresh GBV 修復已完成，但在主代理精準提交前仍是工作樹來源，不是已發布 production 功能。</p></article>
+    </section>
+    <p class="showcase-source">資料基準：TASK_STATE、EngineFeatureCatalog、EngineChangeLog 與目前可追溯 release 目錄。頁面不從 build／test artifact 推導目前通過狀態。</p>
+</section>
