@@ -2,6 +2,7 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace AevryndWeb.Security;
 
@@ -12,6 +13,7 @@ public sealed class OperationsTelemetryPublisher(
     ILogger<OperationsTelemetryPublisher> logger) : BackgroundService
 {
     private readonly string _statePath = configuration["Operations:StatePath"] ?? @"C:\ProgramData\AevryndWeb\operations-state.json";
+    private readonly string _codexStatusPath = configuration["Operations:CodexStatusPath"] ?? @"C:\ProgramData\Aevrynd\Codex\status.json";
     private ulong _previousIdle;
     private ulong _previousKernel;
     private ulong _previousUser;
@@ -42,17 +44,45 @@ public sealed class OperationsTelemetryPublisher(
             Id = "local", CpuPercent = cpu, RamPercent = memory.Total > 0 ? 100d * (memory.Total - memory.Available) / memory.Total : null,
             GpuPercent = ReadGpuPercent(), SampledAt = now
         });
+        var activeWork = previous?.ActiveWork?.Where(item => !string.Equals(item.Type, "codex", StringComparison.Ordinal)).ToList() ?? [];
+        var codexWork = ReadCodexWork(now);
+        if (codexWork is not null) activeWork.Insert(0, codexWork);
         var document = new OperationsStateDocument
         {
             Version = 1,
             SnapshotAt = now,
             Nodes = nodes,
-            ActiveWork = previous?.ActiveWork ?? [],
+            ActiveWork = activeWork,
             History = previous?.History ?? []
         };
         var temporary = _statePath + ".tmp";
         File.WriteAllText(temporary, JsonSerializer.Serialize(document, new JsonSerializerOptions { WriteIndented = true }));
         File.Move(temporary, _statePath, true);
+    }
+
+    private OperationsWorkState? ReadCodexWork(DateTimeOffset now)
+    {
+        try
+        {
+            if (!File.Exists(_codexStatusPath)) return null;
+            var raw = File.ReadAllBytes(_codexStatusPath);
+            if (raw.Length is < 2 or > 8192) return null;
+            var status = JsonSerializer.Deserialize<CodexStatusDocument>(raw);
+            if (status is null || status.SchemaVersion != 1 || status.Status is not ("working" or "blocked") ||
+                status.Progress is < 0 or > 100 || status.Ttl is < 1 or > 3600 ||
+                string.IsNullOrWhiteSpace(status.Task) || string.IsNullOrWhiteSpace(status.Phase) ||
+                status.Task.Length > 160 || status.Phase.Length > 120 ||
+                status.Task.Any(char.IsControl) || status.Phase.Any(char.IsControl) ||
+                status.UpdatedUtc == default || status.UpdatedUtc > now.AddMinutes(1) ||
+                now - status.UpdatedUtc > TimeSpan.FromSeconds(status.Ttl)) return null;
+            return new OperationsWorkState
+            {
+                Name = status.Task.Trim(), Type = "codex", Host = "local", StartedAt = status.UpdatedUtc,
+                UpdatedAt = status.UpdatedUtc, Status = status.Status
+            };
+        }
+        catch (Exception exception) when (exception is IOException or UnauthorizedAccessException or JsonException)
+        { return null; }
     }
 
     private OperationsStateDocument? ReadPrevious()
@@ -108,4 +138,15 @@ public sealed class OperationsTelemetryPublisher(
     [DllImport("kernel32.dll", SetLastError = true)] private static extern bool GetSystemTimes(out System.Runtime.InteropServices.ComTypes.FILETIME idle, out System.Runtime.InteropServices.ComTypes.FILETIME kernel, out System.Runtime.InteropServices.ComTypes.FILETIME user);
     [DllImport("kernel32.dll", SetLastError = true)] private static extern bool GlobalMemoryStatusEx(ref MemoryStatus status);
     [StructLayout(LayoutKind.Sequential)] private struct MemoryStatus { public uint Length; public uint MemoryLoad; public ulong Total; public ulong Available; public ulong PageFile; public ulong AvailablePageFile; public ulong Virtual; public ulong AvailableVirtual; public ulong AvailableExtended; public MemoryStatus() { Length = (uint)Marshal.SizeOf<MemoryStatus>(); } }
+
+    private sealed class CodexStatusDocument
+    {
+        [JsonPropertyName("schemaVersion")] public int SchemaVersion { get; set; }
+        [JsonPropertyName("status")] public string Status { get; set; } = string.Empty;
+        [JsonPropertyName("task")] public string Task { get; set; } = string.Empty;
+        [JsonPropertyName("phase")] public string Phase { get; set; } = string.Empty;
+        [JsonPropertyName("progress")] public int Progress { get; set; }
+        [JsonPropertyName("updatedUtc")] public DateTimeOffset UpdatedUtc { get; set; }
+        [JsonPropertyName("ttl")] public int Ttl { get; set; }
+    }
 }
