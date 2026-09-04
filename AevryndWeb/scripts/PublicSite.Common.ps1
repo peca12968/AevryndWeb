@@ -125,18 +125,11 @@ function Get-PublicSitePaths {
 
 function Initialize-RemoteTelemetryDirectory {
     New-Item -ItemType Directory -Path $script:RemoteTelemetryDirectory -Force | Out-Null
-    $security = New-Object System.Security.AccessControl.DirectorySecurity
-    $security.SetAccessRuleProtection($true, $false)
-    $inheritance = [System.Security.AccessControl.InheritanceFlags]::ContainerInherit -bor [System.Security.AccessControl.InheritanceFlags]::ObjectInherit
-    $propagation = [System.Security.AccessControl.PropagationFlags]::None
-    $identities = @([System.Security.Principal.WindowsIdentity]::GetCurrent().User,
-        (New-Object System.Security.Principal.SecurityIdentifier([System.Security.Principal.WellKnownSidType]::BuiltinAdministratorsSid, $null)),
-        (New-Object System.Security.Principal.SecurityIdentifier([System.Security.Principal.WellKnownSidType]::LocalSystemSid, $null)))
-    foreach ($identity in $identities) {
-        $rule = New-Object System.Security.AccessControl.FileSystemAccessRule($identity, [System.Security.AccessControl.FileSystemRights]::FullControl, $inheritance, $propagation, [System.Security.AccessControl.AccessControlType]::Allow)
-        $security.AddAccessRule($rule)
-    }
-    Set-Acl -LiteralPath $script:RemoteTelemetryDirectory -AclObject $security
+    $icacls = Join-Path $env:SystemRoot 'System32\icacls.exe'
+    if (-not (Test-Path -LiteralPath $icacls -PathType Leaf)) { throw 'icacls.exe is required for telemetry directory ACL provisioning.' }
+    $currentUser = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+    & $icacls $script:RemoteTelemetryDirectory '/inheritance:r' '/grant:r' "$currentUser`:(OI)(CI)(M)" 'SYSTEM:(OI)(CI)(F)' 'Administrators:(OI)(CI)(F)' | Out-Null
+    if ($LASTEXITCODE -ne 0) { throw 'Telemetry directory ACL provisioning failed.' }
 }
 
 function Test-PublicSiteLocal {
