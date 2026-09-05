@@ -23,6 +23,7 @@ public interface IRemoteOperationsTelemetry
 
 public interface IRemoteTelemetryStore
 {
+    string ReadDiagnostic(string nodeId, DateTimeOffset now) => "REMOTE_SOURCE_UNAVAILABLE：遠端來源未提供可驗證的詳細狀態。";
     bool TryReadFresh(string nodeId, DateTimeOffset now, out OperationsNodeState node);
     bool TryWrite(OperationsNodeState node);
     bool TryReadHistory(string nodeId, DateTimeOffset now, out IReadOnlyList<OperationsWorkState> history)
@@ -45,7 +46,7 @@ public sealed record RemoteTelemetrySnapshot(OperationsNodeState Node, IReadOnly
 /// POST\n/api/operations/telemetry\n{node}\n{unix-seconds}\n{nonce}\n{raw-json-body}.
 /// 每個節點只允許一種外部設定的驗證模式；ECDSA 不會失敗後降級至 HMAC。
 /// </summary>
-public sealed class RemoteOperationsTelemetry(IConfiguration configuration, IRemoteTelemetryStore store, IOperationsTelemetryReplayStore replayStore) : IRemoteOperationsTelemetry
+public sealed class RemoteOperationsTelemetry(IConfiguration configuration, IRemoteTelemetryStore store, IOperationsTelemetryReplayStore replayStore, RemoteTelemetryDiagnostics? diagnostics = null) : IRemoteOperationsTelemetry
 {
     private const string EndpointPath = "/api/operations/telemetry";
     private static readonly HashSet<string> AllowedNodeIds = new(StringComparer.Ordinal) { "taichung", "taoyuan" };
@@ -63,14 +64,14 @@ public sealed class RemoteOperationsTelemetry(IConfiguration configuration, IRem
         DateTimeOffset signedAt;
         try { signedAt = DateTimeOffset.FromUnixTimeSeconds(timestampSeconds); }
         catch (ArgumentOutOfRangeException) { return new(RemoteTelemetryStatus.Invalid); }
-        if (!WithinFreshWindow(signedAt, now)) return new(RemoteTelemetryStatus.Unauthorized);
+        if (!WithinFreshWindow(signedAt, now)) return Reject(nodeHeader, now, RemoteTelemetryStatus.Unauthorized, "SIGNED_TIME_OUTSIDE_WINDOW");
 
         var nodeSection = configuration.GetSection($"Operations:RemoteTelemetry:Nodes:{nodeHeader}");
         var requireSourceAddress = configuration.GetValue<bool>("Operations:RemoteTelemetry:RequireSourceAddress");
         if ((requireSourceAddress && (!IPAddress.TryParse(nodeSection["Address"], out var expectedAddress) ||
                 remoteAddress is null || !AddressEquals(expectedAddress, remoteAddress))) ||
             !TryAuthenticate(nodeSection, nodeHeader, timestampHeader, nonceHeader, keyIdHeader, signatureHeader, body))
-            return new(RemoteTelemetryStatus.Unauthorized);
+            return Reject(nodeHeader, now, RemoteTelemetryStatus.Unauthorized, "SIGNATURE_OR_SOURCE_REJECTED");
 
         RemoteTelemetryHeartbeat? heartbeat;
         try
@@ -81,24 +82,24 @@ public sealed class RemoteOperationsTelemetry(IConfiguration configuration, IRem
                 UnmappedMemberHandling = JsonUnmappedMemberHandling.Disallow
             });
         }
-        catch (JsonException) { return new(RemoteTelemetryStatus.Invalid); }
+        catch (JsonException) { return Reject(nodeHeader, now, RemoteTelemetryStatus.Invalid, "HEARTBEAT_JSON_REJECTED"); }
 
         if (heartbeat is null || heartbeat.Version != 1 || heartbeat.NodeId != nodeHeader ||
             heartbeat.Measurement != "measured" || !Metric(heartbeat.CpuPercent) || !Metric(heartbeat.RamPercent) ||
             !OptionalMetric(heartbeat.GpuPercent) || heartbeat.SampledUtc == default ||
             !WithinFreshWindow(heartbeat.SampledUtc, now) ||
             Math.Abs((heartbeat.SampledUtc - signedAt).TotalSeconds) > 15)
-            return new(RemoteTelemetryStatus.Invalid);
+            return Reject(nodeHeader, now, RemoteTelemetryStatus.Invalid, "MEASUREMENT_OR_SAMPLE_TIME_REJECTED");
 
         var activeWork = heartbeat.ActiveWork ?? [];
         var history = heartbeat.History ?? [];
         if (activeWork.Count > 10 || history.Count > 100 ||
             !OperationsSnapshotSchema.TryValidateRemoteWork(activeWork, history, nodeHeader, now))
-            return new(RemoteTelemetryStatus.Invalid);
+            return Reject(nodeHeader, now, RemoteTelemetryStatus.Invalid, "WORK_TIMELINE_SCHEMA_REJECTED");
 
         var replayStatus = replayStore.TryConsume(nodeHeader, nonceHeader, now);
-        if (replayStatus == ReplayConsumeStatus.Replay) return new(RemoteTelemetryStatus.Replay);
-        if (replayStatus == ReplayConsumeStatus.Unavailable) return new(RemoteTelemetryStatus.Unavailable);
+        if (replayStatus == ReplayConsumeStatus.Replay) return Reject(nodeHeader, now, RemoteTelemetryStatus.Replay, "NONCE_REPLAY_REJECTED");
+        if (replayStatus == ReplayConsumeStatus.Unavailable) return Reject(nodeHeader, now, RemoteTelemetryStatus.Unavailable, "REPLAY_STORE_UNAVAILABLE");
 
         var node = new OperationsNodeState
         {
@@ -108,8 +109,13 @@ public sealed class RemoteOperationsTelemetry(IConfiguration configuration, IRem
             GpuPercent = heartbeat.GpuPercent,
             SampledAt = heartbeat.SampledUtc
         };
-        return store.TryWriteSnapshot(new(node, activeWork, history)) ? RemoteTelemetryResult.Accepted : new(RemoteTelemetryStatus.Unavailable);
+        return store.TryWriteSnapshot(new(node, activeWork, history))
+            ? Reject(nodeHeader, now, RemoteTelemetryStatus.Accepted, "SIGNED_SAMPLE_ACCEPTED")
+            : Reject(nodeHeader, now, RemoteTelemetryStatus.Unavailable, "STORE_WRITE_OR_HISTORY_CONFLICT");
     }
+
+    private RemoteTelemetryResult Reject(string node, DateTimeOffset now, RemoteTelemetryStatus status, string code)
+    { diagnostics?.Record(node, now, code); return new(status); }
 
     private static bool WithinFreshWindow(DateTimeOffset value, DateTimeOffset now) =>
         value <= now.AddSeconds(30) && now - value <= TimeSpan.FromMinutes(2);
@@ -262,6 +268,27 @@ public sealed class FileRemoteTelemetryStore(IConfiguration configuration) : IRe
         snapshot = default!;
         if (!TryReadEnvelope(nodeId, out var envelope) || envelope.Node.SampledAt > now.AddSeconds(30) || now - envelope.Node.SampledAt > TimeSpan.FromMinutes(2)) return false;
         snapshot = new(envelope.Node, envelope.ActiveWork, envelope.History); return true;
+    }
+
+    public string ReadDiagnostic(string nodeId, DateTimeOffset now)
+    {
+        try
+        {
+            if (!AllowedNodeIds.Contains(nodeId)) return "REMOTE_NODE_INVALID：節點不在允許清單。";
+            if (!OperatingSystem.IsWindows()) return "REMOTE_PLATFORM_UNSUPPORTED：目前平台不支援受保護的遠端儲存。";
+            if (!Directory.Exists(DirectoryPath)) return "REMOTE_DIRECTORY_MISSING：遠端儲存目錄不存在。";
+            if (!OperationsFileSecurity.HasSafeAcl(DirectoryPath)) return "REMOTE_DIRECTORY_SECURITY：遠端儲存目錄權限或連結檢查未通過。";
+            var path = PathFor(nodeId);
+            if (!File.Exists(path)) return "REMOTE_FILE_MISSING：尚未保存此節點的可信採樣；請核對註冊與發布端。";
+            if (!OperationsFileSecurity.HasSafeAcl(path)) return "REMOTE_FILE_SECURITY：採樣檔權限或連結檢查未通過。";
+            if (new FileInfo(path).Length is <= 0 or > 131072) return "REMOTE_FILE_SIZE：採樣檔大小不符安全上限。";
+            if (!TryReadEnvelope(nodeId, out var envelope)) return "REMOTE_ENVELOPE_INVALID：採樣檔格式、節點或量測範圍驗證失敗。";
+            if (envelope.Node.SampledAt > now.AddSeconds(30)) return "REMOTE_SAMPLE_IN_FUTURE：採樣時間超過伺服器允許範圍。";
+            if (now - envelope.Node.SampledAt > TimeSpan.FromMinutes(2)) return $"REMOTE_SAMPLE_EXPIRED：最後可信採樣 {PortalTime.Format(envelope.Node.SampledAt)}，已超過兩分鐘。";
+            return "REMOTE_SNAPSHOT_REJECTED：已有採樣，工作來源仍需核對。";
+        }
+        catch (UnauthorizedAccessException) { return "REMOTE_ACCESS_DENIED：目前網站程序無法讀取遠端儲存。"; }
+        catch (IOException) { return "REMOTE_IO_FAILURE：遠端儲存讀取失敗。"; }
     }
 
     public bool TryReadHistory(string nodeId, DateTimeOffset now, out IReadOnlyList<OperationsWorkState> history)

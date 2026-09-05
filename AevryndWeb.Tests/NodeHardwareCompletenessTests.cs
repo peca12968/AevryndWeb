@@ -6,6 +6,19 @@ namespace AevryndWeb.Tests;
 public sealed class NodeHardwareCompletenessTests
 {
     [Fact]
+    public void ShippedRemoteInventoryIncludesMeasuredBoardAndOsWithoutRefreshingOriginalSample()
+    {
+        using var json = System.Text.Json.JsonDocument.Parse(File.ReadAllText(Path.Combine(FindRepositoryRoot(), "AevryndWeb", "Data", "node-hardware.json")));
+        foreach (var node in json.RootElement.GetProperty("nodes").EnumerateArray().Where(node => node.GetProperty("id").GetString() != "local"))
+        {
+            Assert.Contains("26200", node.GetProperty("os").GetString());
+            Assert.False(string.IsNullOrWhiteSpace(node.GetProperty("motherboard").GetString()));
+            Assert.Contains("主代理於 2026-09-05 核對副機實測補充", node.GetProperty("source").GetString());
+            Assert.Contains("原採樣時間保留", node.GetProperty("source").GetString());
+            if (node.GetProperty("id").GetString() == "taichung") Assert.Contains("34359738368", node.GetProperty("ram").GetString());
+        }
+    }
+    [Fact]
     public void CompleteTrustedLocalHardwareRemainsVerified()
     {
         Assert.Equal("verified", NodeHardwareCatalog.ResolveHardwareStatus("verified", "CPU", "RAM", "GPU", "Board", "Windows", ["SSD"]));

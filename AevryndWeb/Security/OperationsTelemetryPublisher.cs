@@ -108,7 +108,7 @@ public sealed class OperationsTelemetryPublisher(
             return new OperationsWorkState
             {
                 Name = status.Task.Trim(), Type = "codex", Host = "local", StartedAt = startedAt,
-                UpdatedAt = status.UpdatedUtc, Status = status.Status
+                UpdatedAt = status.UpdatedUtc, Status = status.Status, EvidenceSummary = status.Phase
             };
         }
         catch (Exception exception) when (exception is IOException or UnauthorizedAccessException or JsonException)

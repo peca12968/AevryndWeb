@@ -36,7 +36,7 @@ class FakeElement {
   get className() { return this._className; }
   set className(value) { this._className = String(value); this.classList.replaceFrom(value); }
   append(...children) { this.children.push(...children); }
-  replaceChildren(...children) { this.children = [...children]; }
+  replaceChildren(...children) { this.children = [...children]; if (this.scrollTop !== undefined) this.scrollTop = 0; }
   querySelector() { return null; }
   querySelectorAll() { return []; }
 }
@@ -135,7 +135,7 @@ const snapshot = ({
   };
 };
 
-const boot = plans => {
+const boot = (plans, options = {}) => {
   const clock = createClock();
   const source = new FakeElement();
   const elements = {
@@ -169,6 +169,23 @@ const boot = plans => {
     ["[data-history-empty]", elements.historyEmpty]
   ]);
   const root = new FakeElement();
+  const scheduleCards = {};
+  if (options.unified) {
+    selectorMap.delete("[data-active-body]");
+    const grid = new FakeElement();
+    elements.scheduleStatus = new FakeElement();
+    for (const id of ["local", "taichung", "taoyuan"]) {
+      const card = new FakeElement(); card.dataset.scheduleNode = id;
+      card.list = new FakeElement(); card.empty = new FakeElement(); card.count = new FakeElement(); card.hint = new FakeElement();
+      card.querySelector = selector => ({ "[data-schedule-list]": card.list, "[data-schedule-empty]": card.empty, "[data-schedule-count]": card.count, "[data-schedule-scroll-hint]": card.hint })[selector] || null;
+      card.querySelectorAll = selector => selector.includes("[open]") ? card.list.children.filter(item => item.open) : [];
+      scheduleCards[id] = card;
+    }
+    grid.querySelectorAll = () => Object.values(scheduleCards);
+    selectorMap.set("[data-schedule-grid]", grid); selectorMap.set("[data-schedule-status]", elements.scheduleStatus);
+  }
+  let table;
+  if (options.dataTable) selectorMap.set("[data-history-table]", new FakeElement());
   root.dataset.snapshotUrl = "/api/operations/snapshot";
   root.querySelector = selector => {
     if (selectorMap.has(selector)) return selectorMap.get(selector);
@@ -206,7 +223,16 @@ const boot = plans => {
     clearTimeout: clock.clearTimeout,
     setInterval: () => 0,
     clearInterval: () => {},
-    DataTable: null
+    DataTable: options.dataTable ? class {
+      constructor(_element, settings) {
+        table = this; this.settings = settings; this.rows = []; this.searchTerm = "保留搜尋"; this.pageIndex = 1;
+        this.page = value => { if (value === undefined) return this.pageIndex; this.pageIndex = value; return this; };
+        this.page.info = () => ({ pages: 3 }); this.row = { add: row => this.rows.push(row) };
+      }
+      search(value) { if (value === undefined) return this.searchTerm; this.searchTerm = value; return this; }
+      clear() { this.rows = []; return this; }
+      draw() { return this; }
+    } : null
   };
   vm.runInNewContext(siteSource, {
     window, document, fetch, AbortController, performance: { now: clock.now },
@@ -214,7 +240,7 @@ const boot = plans => {
     console, location: { assign: () => {} }
   }, { filename: sitePath });
   return {
-    clock, elements, cards,
+    clock, elements, cards, scheduleCards, table,
     fetchCount: () => fetchCount,
     maximumActiveFetches: () => maximumActiveFetches
   };
@@ -448,6 +474,49 @@ test("malformed title catalog cannot replace trusted view", async () => {
   const app = boot([{ kind: "response", response: jsonResponse(model) }]);
   await app.clock.advanceTo(10000);
   assert.match(app.elements.pollStatus.textContent, /格式/);
+});
+
+test("unified task area refreshes progress and preserves generation details without duplicate active table", async () => {
+  const model = snapshot();
+  const task = { id: "WORK-01", instanceId: "555001", nodeId: "taichung", title: "<script>中文任務</script>", description: "工作", reason: "第一階段", state: "acknowledged", dependsOn: [], assignedAt: model.snapshotAt, updatedAt: model.snapshotAt, evidence: "OWNER 555001" };
+  model.schedule = { sourceAvailable: true, stale: false, observedAt: model.snapshotAt, diagnostic: "來源核對", tasks: [task], catalog: [task] };
+  const later = structuredClone(model); later.schedule.tasks[0].reason = "第二階段"; later.schedule.tasks[0].state = "running";
+  const app = boot([{ kind: "response", response: jsonResponse(model) }, { kind: "response", response: jsonResponse(later) }], { unified: true });
+  await app.clock.advanceTo(10000);
+  const card = app.scheduleCards.taichung;
+  assert.equal(card.list.children.length, 1); assert.equal(card.list.children[0].children[0].children[0].textContent, task.title);
+  card.list.children[0].open = true;
+  await app.clock.advanceTo(20000);
+  assert.equal(card.list.children.length, 1); assert.equal(card.list.children[0].open, true);
+  assert.equal(card.list.children[0].children[0].children[1].textContent, "執行中");
+  assert.match(card.list.children[0].children[1].children[1].textContent, /第二階段/);
+  assert.match(app.elements.scheduleStatus.textContent, /來源核對/);
+});
+
+test("past task DataTable preserves search page and five-column epoch timeline on refresh", async () => {
+  const model = snapshot(); model.history = [{ name: "完成任務", type: "dispatch", host: "台中", startedAt: model.snapshotAt, updatedAt: model.snapshotAt, endedAt: model.snapshotAt, status: "completed", evidenceSummary: "原始報告" }];
+  const app = boot([{ kind: "response", response: jsonResponse(model) }], { dataTable: true, unified: true });
+  await app.clock.advanceTo(20000);
+  assert.equal(app.table.search(), "保留搜尋"); assert.equal(app.table.page(), 1);
+  assert.equal(app.table.rows.length, 1); assert.equal(app.table.rows[0].children.length, 5);
+  assert.equal(app.table.rows[0].children[2].dataset.order, String(Date.parse(model.snapshotAt)));
+  assert.equal(app.table.settings.order[0][0], 2);
+});
+
+test("large independent task lists preserve every task and scroll offset across ten-second refresh", async () => {
+  const model = snapshot();
+  const tasks = ["taichung", "taoyuan"].flatMap((nodeId, index) => Array.from({ length: index ? 19 : 44 }, (_, id) => ({ id: nodeId + id, instanceId: nodeId + id, nodeId, title: "未終止任務 " + id, description: "保留全部", reason: "等待確認", state: "unconfirmed", dependsOn: [], assignedAt: model.snapshotAt, updatedAt: model.snapshotAt, evidence: "來源" })));
+  model.schedule = { sourceAvailable: true, stale: false, observedAt: model.snapshotAt, tasks, catalog: tasks };
+  const app = boot([{ kind: "response", response: jsonResponse(model) }], { unified: true });
+  await app.clock.advanceTo(10000);
+  app.scheduleCards.taichung.list.scrollTop = 440; app.scheduleCards.taoyuan.list.scrollTop = 190;
+  await app.clock.advanceTo(20000);
+  for (const [node, count, offset] of [["taichung", 44, 440], ["taoyuan", 19, 190]]) {
+    const card = app.scheduleCards[node]; assert.equal(card.list.children.length, count); assert.equal(card.count.textContent, String(count));
+    assert.equal(card.list.scrollTop, offset); assert.match(card.hint.textContent, new RegExp("全部 " + count + " 筆"));
+    assert.equal(card.list.children[count - 1].children[0].children[1].textContent, "狀態待確認");
+  }
+  assert.equal(app.maximumActiveFetches(), 1);
 });
 
 const results = [];

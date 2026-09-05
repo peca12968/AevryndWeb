@@ -13,26 +13,26 @@ public interface IOperationsSnapshotProvider
     OperationsViewModel Read(DateTimeOffset now);
 }
 
-public sealed class FileOperationsSnapshotProvider(IConfiguration configuration, IRemoteTelemetryStore remoteTelemetry) : IOperationsSnapshotProvider
+public sealed class FileOperationsSnapshotProvider(IConfiguration configuration, IRemoteTelemetryStore remoteTelemetry, RemoteTelemetryDiagnostics? diagnostics = null) : IOperationsSnapshotProvider
 {
     private static readonly (string Id, string Name)[] KnownNodes = [("local", "本機"), ("taichung", "台中"), ("taoyuan", "桃園")];
     private string StatePath => configuration["Operations:StatePath"] ?? @"C:\ProgramData\AevryndWeb\operations\operations-state.json";
 
     public OperationsViewModel Read(DateTimeOffset now)
     {
-        var unavailable = Empty("unavailable：找不到通過 ACL 與 schema 驗證的操作摘要。");
         try
         {
             var directory = Path.GetDirectoryName(StatePath);
-            if (!OperatingSystem.IsWindows() || directory is null || !Directory.Exists(directory) || !File.Exists(StatePath) || !HasSafeAcl(directory) || !HasSafeAcl(StatePath)) return unavailable;
-            var info = new FileInfo(StatePath); if (info.Length is <= 0 or > 524_288) return Empty("invalid：操作摘要大小不符合限制。");
+            if (!OperatingSystem.IsWindows() || directory is null || !Directory.Exists(directory) || !File.Exists(StatePath) || !HasSafeAcl(directory) || !HasSafeAcl(StatePath))
+                return Empty("unavailable：找不到通過 ACL 與 schema 驗證的操作摘要。", now);
+            var info = new FileInfo(StatePath); if (info.Length is <= 0 or > 524_288) return Empty("invalid：操作摘要大小不符合限制。", now);
             var document = JsonSerializer.Deserialize<OperationsStateDocument>(File.ReadAllText(StatePath), new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = false,
                 UnmappedMemberHandling = JsonUnmappedMemberHandling.Disallow
             });
             if (document is null || !OperationsSnapshotSchema.TryNormalize(document, now, out var model))
-                return Empty("invalid：操作摘要 schema 或時間無效。");
+                return Empty("invalid：操作摘要 schema 或時間無效。", now);
             var nodes = model.Nodes.ToArray();
             var activeWork = model.ActiveWork.ToList();
             var history = model.History.ToList();
@@ -50,7 +50,8 @@ public sealed class FileOperationsSnapshotProvider(IConfiguration configuration,
                 else
                 {
                     // 過期時先無條件清除 remote metrics；歷程保存與即時 metrics TTL 分離。
-                    nodes[index] = new OperationsNodeView(nodes[index].Id, nodes[index].Name, null, null, null, null, true, "unavailable", "超過兩分鐘沒有通過簽章與 freshness 驗證的遠端採樣。");
+                    nodes[index] = new OperationsNodeView(nodes[index].Id, nodes[index].Name, null, null, null, null, true, "unavailable",
+                        remoteTelemetry.ReadDiagnostic(nodes[index].Id, now) + (diagnostics?.Describe(nodes[index].Id, now) ?? ""));
                     if (remoteTelemetry.TryReadHistory(nodes[index].Id, now, out var persistedHistory) &&
                         OperationsSnapshotSchema.TryNormalizeRemoteWork([], persistedHistory, nodes[index].Id, now, out _, out var normalizedPersistedHistory))
                         history.AddRange(normalizedPersistedHistory);
@@ -64,10 +65,28 @@ public sealed class FileOperationsSnapshotProvider(IConfiguration configuration,
             };
         }
         catch (Exception exception) when (exception is IOException or UnauthorizedAccessException or JsonException or ArgumentException)
-        { return Empty("invalid：操作摘要無法安全讀取。"); }
+        { return Empty("invalid：操作摘要無法安全讀取。", now); }
     }
 
-    private OperationsViewModel Empty(string status) => new(KnownNodes.Select(node => new OperationsNodeView(node.Id, node.Name, null, null, null, null, true, "unavailable", "操作摘要來源不可用，無法驗證此節點。" )).ToArray(), [], [], null, false, status, []);
+    private OperationsViewModel Empty(string status, DateTimeOffset now)
+    {
+        var nodes = KnownNodes.Select(node => new OperationsNodeView(node.Id, node.Name, null, null, null, null, true, "unavailable",
+            node.Id == "local" ? "LOCAL_STATE_UNAVAILABLE：本機操作摘要無法驗證。" : remoteTelemetry.ReadDiagnostic(node.Id, now) + (diagnostics?.Describe(node.Id, now) ?? ""))).ToArray();
+        var active = new List<OperationsWorkView>(); var history = new List<OperationsWorkView>();
+        // 本機摘要失效不能遮蔽另外通過簽章、schema 與時效驗證的副機資料。
+        for (var index = 1; index < nodes.Length; index++)
+        {
+            if (remoteTelemetry.TryReadFreshSnapshot(nodes[index].Id, now, out var snapshot))
+            {
+                nodes[index] = OperationsSnapshotSchema.NormalizeNode(nodes[index].Id, nodes[index].Name, snapshot.Node, now);
+                if (OperationsSnapshotSchema.TryNormalizeRemoteWork(snapshot.ActiveWork, snapshot.History, nodes[index].Id, now, out var work, out var past))
+                { active.AddRange(work); history.AddRange(past); }
+            }
+            else if (remoteTelemetry.TryReadHistory(nodes[index].Id, now, out var past) &&
+                OperationsSnapshotSchema.TryNormalizeRemoteWork([], past, nodes[index].Id, now, out _, out var normalized)) history.AddRange(normalized);
+        }
+        return new(nodes, active, history.OrderByDescending(work => work.StartedAt).Take(500).ToArray(), null, false, status, []);
+    }
 
     [SupportedOSPlatform("windows")]
     private static bool HasSafeAcl(string path) => OperationsFileSecurity.HasSafeAcl(path);

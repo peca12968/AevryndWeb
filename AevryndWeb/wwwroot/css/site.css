@@ -21,3 +21,15 @@ button,input{font:inherit}button{color:inherit}a{color:inherit}.skip-link{positi
 @media(max-width:980px){.operations-hardware-grid{grid-template-columns:1fr 1fr}}@media(max-width:760px){.operations-hardware-grid{grid-template-columns:1fr}}
 .operations-schedule-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.operations-schedule-card{padding:20px;border:1px solid var(--line);border-radius:15px;background:var(--surface)}.operations-schedule-card header{display:flex;align-items:start;justify-content:space-between;gap:15px}.operations-schedule-card small{color:var(--subtle);font-size:.54rem;letter-spacing:.16em}.operations-schedule-card h3{margin:7px 0 0;font:400 1.2rem Georgia,"Noto Serif TC",serif}.operations-schedule-count{min-width:30px;height:30px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--mint-bright);font-size:.7rem}.operations-schedule-summary{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin:18px 0 15px}.operations-schedule-summary>div{padding:8px 3px;border:1px solid var(--line);border-radius:7px;text-align:center}.operations-schedule-summary dt{color:var(--subtle);font-size:.5rem}.operations-schedule-summary dd{margin:5px 0 0;color:var(--muted);font-size:.75rem}.operations-schedule-list{display:grid;gap:7px}.operations-schedule-task{border:1px solid var(--line);border-radius:9px;background:rgba(4,12,10,.45)}.operations-schedule-task summary{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 11px;cursor:pointer;color:#c6d5ce;font-size:.68rem;list-style-position:inside}.operations-schedule-task summary span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.operations-schedule-detail{padding:0 11px 10px;color:var(--muted);font-size:.62rem;line-height:1.55}.operations-schedule-detail p{margin:5px 0}.operations-schedule-detail small{color:var(--subtle);overflow-wrap:anywhere}
 @media(max-width:980px){.operations-schedule-grid{grid-template-columns:1fr 1fr}}@media(max-width:760px){.operations-schedule-grid{grid-template-columns:1fr}}
+/* 各主機獨立捲動完整清單；標頭、數量與狀態摘要留在捲動區外。 */
+.operations-schedule-grid{align-items:start}
+.operations-schedule-card{min-width:0}
+.operations-schedule-list{min-width:0;max-height:min(34rem,65vh);overflow-y:auto;overflow-x:hidden;scrollbar-gutter:stable;align-content:start;padding-right:5px}
+.operations-schedule-list:focus-visible{outline:2px solid var(--mint);outline-offset:4px}
+.operations-scroll-hint{margin:0 0 12px;color:var(--muted);font-size:.65rem;line-height:1.6}
+.operations-schedule-task{min-width:0}
+.operations-schedule-task summary{align-items:start}
+.operations-schedule-task summary span:first-child{min-width:0;white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere}
+.operations-schedule-task summary .operations-badge{flex-shrink:0}
+.operations-schedule-detail{overflow-wrap:anywhere}
+@media(max-width:760px){.operations-schedule-card{padding:16px}.operations-schedule-list{max-height:min(28rem,55vh);max-height:min(28rem,55dvh)}.operations-schedule-task summary{gap:6px;padding:10px 8px}}

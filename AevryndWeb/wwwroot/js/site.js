@@ -70,6 +70,7 @@
     span.textContent = stale ? `${value} · stale` : value; return span;
   };
   const renderWork = (items, body, wrap, empty, sourceAvailable, sourceMessage, history, catalog = []) => {
+    if (!body || !wrap || !empty) return;
     const preservedSearch = historyDataTable?.search() || "";
     const preservedPage = historyDataTable?.page() || 0;
     if (history && historyDataTable) historyDataTable.clear(); else body.replaceChildren();
@@ -83,7 +84,7 @@
     }
     items.forEach(item => {
       const row = document.createElement("tr");
-      const title = catalog.find(task => task.id === item.name && ({ local: "本機", taichung: "台中", taoyuan: "桃園" })[task.nodeId] === item.host && Date.parse(item.startedAt) >= Date.parse(task.assignedAt))?.title;
+      const title = [...catalog].sort((a, b) => Date.parse(b.assignedAt) - Date.parse(a.assignedAt)).find(task => task.id === item.name && ({ local: "本機", taichung: "台中", taoyuan: "桃園" })[task.nodeId] === item.host && Date.parse(item.startedAt) >= Date.parse(task.assignedAt))?.title;
       const nameCell = appendCell(row, "任務", title || item.name);
       if (title && title !== item.name) {
         const detail = document.createElement("details"); const label = document.createElement("summary"); label.textContent = "任務識別";
@@ -113,6 +114,7 @@
         ? (schedule.stale ? "排程資料已過期（" + observed + "）；不推測任務已停止。" : "排程來源已驗證，觀測於 " + observed + "。")
         : "目前沒有可驗證的排程來源。";
       if (schedule?.sourceAvailable && schedule.verifiedAt) scheduleStatus.textContent += " 來源核對：" + formatTime(schedule.verifiedAt) + "；工作時間依實際事件保留。";
+      if (schedule?.diagnostic) scheduleStatus.textContent += " " + schedule.diagnostic;
     }
     const byNode = new Map(["local", "taichung", "taoyuan"].map(id => [id, tasks.filter(task => task.nodeId === id)]));
     scheduleGrid.querySelectorAll("[data-schedule-node]").forEach(card => {
@@ -122,23 +124,28 @@
       card.querySelectorAll("[data-schedule-count-state]").forEach(element => { element.textContent = String(nodeTasks.filter(task => task.state === element.dataset.scheduleCountState).length); });
       const list = card.querySelector("[data-schedule-list]"); const empty = card.querySelector("[data-schedule-empty]");
       if (!list || !empty) return;
+      const scrollTop = list.scrollTop;
+      const hint = card.querySelector("[data-schedule-scroll-hint]");
+      if (hint) hint.textContent = "全部 " + nodeTasks.length + " 筆 · 清單可上下捲動，展開任務查看詳細內容。";
       list.replaceChildren(); empty.hidden = nodeTasks.length !== 0;
-      nodeTasks.sort((a, b) => new Date(b.assignedAt || 0).valueOf() - new Date(a.assignedAt || 0).valueOf()).forEach(task => {
+      nodeTasks.sort((a, b) => new Date(b.updatedAt || 0).valueOf() - new Date(a.updatedAt || 0).valueOf()).forEach(task => {
         const details = document.createElement("details"); details.className = "operations-schedule-task";
         const summary = document.createElement("summary"); const title = document.createElement("span"); title.textContent = task.title || "未命名工作";
+        const updated = document.createElement("small"); updated.textContent = "最近更新：" + formatTime(task.updatedAt); title.append(document.createElement("br"), updated);
         const state = document.createElement("span"); state.className = "operations-badge is-" + (task.state || "unconfirmed"); state.textContent = stateLabel[task.state] || "狀態待確認";
         summary.append(title, state);
         const detail = document.createElement("div"); detail.className = "operations-schedule-detail";
         const add = (label, value) => { const paragraph = document.createElement("p"); paragraph.textContent = label + (value || "未提供"); detail.append(paragraph); };
         const dependencyText = Array.isArray(task.dependsOn) && task.dependsOn.length
-          ? task.dependsOn.map(id => { const dependency = tasks.find(candidate => candidate.id === id); return dependency?.title || "先前任務（" + id + "）"; }).join("、")
+          ? task.dependsOn.map(id => { const dependency = (schedule.catalog || tasks).find(candidate => candidate.id === id); return dependency?.title || "先前任務（" + id + "）"; }).join("、")
           : "無";
         add("", task.description); add("原因：", task.reason); add("依賴：", dependencyText);
         add("指派：", formatTime(task.assignedAt) + " · 更新：" + formatTime(task.updatedAt));
         const evidence = document.createElement("small"); evidence.textContent = "任務識別：" + (task.id || "未提供") + " · 證據：" + (task.evidence || "未提供"); detail.append(evidence);
-        details.dataset.scheduleTaskId = task.id || ""; if (openIds.has(details.dataset.scheduleTaskId)) details.open = true;
+        details.dataset.scheduleTaskId = task.instanceId || task.id || ""; if (openIds.has(details.dataset.scheduleTaskId)) details.open = true;
         details.append(summary, detail); list.append(details);
       });
+      list.scrollTop = scrollTop;
     });
   };
   const renderNode = node => {
@@ -164,7 +171,7 @@
     });
     renderSchedule(model.schedule);
     renderWork(model.activeWork, activeBody, activeWrap, activeEmpty, model.sourceAvailable, model.sourceStatus, false, model.schedule?.catalog || model.schedule?.tasks || []);
-    renderWork(model.history, historyBody, historyWrap, historyEmpty, model.sourceAvailable, model.sourceStatus, true, model.schedule?.catalog || model.schedule?.tasks || []);
+    renderWork(model.history.filter(item => ["completed", "failed"].includes(item.status) && item.endedAt), historyBody, historyWrap, historyEmpty, model.sourceAvailable, model.sourceStatus, true, model.schedule?.catalog || model.schedule?.tasks || []);
   };
   const validDate = value => value == null || Number.isFinite(Date.parse(value));
   const validMetric = value => value == null || (Number.isFinite(value) && value >= 0 && value <= 100);

@@ -40,7 +40,12 @@ public sealed class OperationsScheduleIntegrationTests
         var page=await client.GetAsync("/Operations");
         var html=WebUtility.HtmlDecode(await page.Content.ReadAsStringAsync());
         Assert.Equal(HttpStatusCode.OK,page.StatusCode);
-        Assert.Contains("三台主機任務排程",html);
+        Assert.Contains("三台主機即時任務",html);
+        Assert.Contains("過往任務",html);
+        Assert.DoesNotContain("id=\"activeTitle\"",html);
+        Assert.Equal(3, System.Text.RegularExpressions.Regex.Matches(html, "data-schedule-list tabindex=\"0\" role=\"region\"").Count);
+        Assert.Equal(3, System.Text.RegularExpressions.Regex.Matches(html, "data-schedule-scroll-hint").Count);
+        Assert.Contains("清單可上下捲動", html);
         foreach(var task in tasks) Assert.Contains(task.title,html);
         Assert.Contains(PortalTime.Format(tasks[0].assignedAt), html);
         Assert.Contains("台北時間 (UTC+8)", html);
@@ -49,7 +54,11 @@ public sealed class OperationsScheduleIntegrationTests
         var json=await response.Content.ReadFromJsonAsync<JsonElement>();
         var schedule=json.GetProperty("schedule");
         Assert.True(schedule.GetProperty("sourceAvailable").GetBoolean());
-        Assert.Equal(3,schedule.GetProperty("tasks").GetArrayLength());
+        var visibleTasks = schedule.GetProperty("tasks").EnumerateArray().ToArray();
+        foreach (var task in tasks)
+            Assert.Single(visibleTasks.Where(item => item.GetProperty("id").GetString() == task.id));
+        foreach (var work in json.GetProperty("activeWork").EnumerateArray())
+            Assert.Contains(visibleTasks, item => item.GetProperty("id").GetString() == work.GetProperty("name").GetString());
         Assert.Contains("no-store",response.Headers.CacheControl!.ToString());
     }
 }

@@ -56,6 +56,8 @@ builder.Services.AddSingleton<IOtpService, OtpService>();
 builder.Services.AddSingleton<IEmailSender, GmailEmailSender>();
 builder.Services.AddSingleton<IPortalSessionStore, PortalSessionStore>();
 builder.Services.AddSingleton<IRemoteTelemetryStore, FileRemoteTelemetryStore>();
+builder.Services.AddSingleton<RemoteTelemetryDiagnostics>();
+builder.Services.AddSingleton<OperationsDispatchProvider>();
 builder.Services.AddSingleton<IOperationsTelemetryReplayStore, FileOperationsTelemetryReplayStore>();
 builder.Services.AddSingleton<IRemoteOperationsTelemetry, RemoteOperationsTelemetry>();
 builder.Services.AddSingleton<ICodexEventRelayStore, FileCodexEventRelayStore>();

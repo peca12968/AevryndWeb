@@ -65,18 +65,19 @@
     </section>
 
     <section class="operations-section" aria-labelledby="scheduleTitle">
-        <div class="operations-title"><div><span class="micro-label">SCHEDULED WORK</span><h2 id="scheduleTitle">三台主機任務排程</h2></div><p data-schedule-status>@(Model.Schedule.SourceAvailable ? (Model.Schedule.Stale ? $"排程資料已過期（{Timestamp(Model.Schedule.ObservedAt)}）；不推測任務已停止。" : $"排程來源已驗證，觀測於 {Timestamp(Model.Schedule.ObservedAt)}。") : "目前沒有可驗證的排程來源。")@if (Model.Schedule.SourceAvailable && Model.Schedule.VerifiedAt.HasValue) { <span> 來源核對：@Timestamp(Model.Schedule.VerifiedAt)；工作時間依實際事件保留。</span> }</p></div>
+        <div class="operations-title"><div><span class="micro-label">LIVE TASKS</span><h2 id="scheduleTitle">三台主機即時任務</h2></div><p data-schedule-status>@(Model.Schedule.SourceAvailable ? (Model.Schedule.Stale ? $"排程資料已過期（{Timestamp(Model.Schedule.ObservedAt)}）；不推測任務已停止。" : $"排程來源已驗證，觀測於 {Timestamp(Model.Schedule.ObservedAt)}。") : "目前沒有可驗證的排程來源。")@if (Model.Schedule.SourceAvailable && Model.Schedule.VerifiedAt.HasValue) { <span> 來源核對：@Timestamp(Model.Schedule.VerifiedAt)；工作時間依實際事件保留。</span> } <span>@Model.Schedule.Diagnostic</span></p></div>
         <div class="operations-schedule-grid" data-schedule-grid>
             @foreach (var node in new[] { (Id: "local", Name: "本機"), (Id: "taichung", Name: "台中"), (Id: "taoyuan", Name: "桃園") })
             {
-                var tasks = Model.Schedule.Tasks.Where(task => string.Equals(task.NodeId, node.Id, StringComparison.OrdinalIgnoreCase)).OrderByDescending(task => task.AssignedAt).ToArray();
+                var tasks = Model.Schedule.Tasks.Where(task => string.Equals(task.NodeId, node.Id, StringComparison.OrdinalIgnoreCase)).OrderByDescending(task => task.UpdatedAt).ToArray();
                 <article class="operations-schedule-card" data-schedule-node="@node.Id">
                     <header><div><small>@node.Id.ToUpperInvariant()</small><h3>@node.Name</h3></div><span class="operations-schedule-count" data-schedule-count>@tasks.Length</span></header>
                     <dl class="operations-schedule-summary"><div><dt>等待</dt><dd data-schedule-count-state="queued">@tasks.Count(task => task.State == "queued")</dd></div><div><dt>已接單</dt><dd data-schedule-count-state="acknowledged">@tasks.Count(task => task.State == "acknowledged")</dd></div><div><dt>執行</dt><dd data-schedule-count-state="running">@tasks.Count(task => task.State == "running")</dd></div><div><dt>受阻</dt><dd data-schedule-count-state="blocked">@tasks.Count(task => task.State == "blocked")</dd></div><div><dt>待確認</dt><dd data-schedule-count-state="unconfirmed">@tasks.Count(task => task.State == "unconfirmed")</dd></div></dl>
-                    <div class="operations-schedule-list" data-schedule-list>
+                    <p class="operations-scroll-hint" id="task-scroll-@node.Id" data-schedule-scroll-hint>全部 @tasks.Length 筆 · 清單可上下捲動，展開任務查看詳細內容。</p>
+                    <div class="operations-schedule-list" data-schedule-list tabindex="0" role="region" aria-label="@node.Name 全部即時任務" aria-describedby="task-scroll-@node.Id">
                         @foreach (var task in tasks)
                         {
-                            <details class="operations-schedule-task" data-schedule-task-id="@task.Id"><summary><span>@task.Title</span><span class="operations-badge is-@task.State">@((new Dictionary<string, string> { ["queued"] = "等待中", ["acknowledged"] = "已接單", ["running"] = "執行中", ["blocked"] = "受阻", ["unconfirmed"] = "狀態待確認" }).TryGetValue(task.State, out var stateLabel) ? stateLabel : "狀態待確認")</span></summary><div class="operations-schedule-detail"><p>@task.Description</p><p>原因：@task.Reason</p><p>依賴：@(task.DependsOn.Count == 0 ? "無" : string.Join("、", task.DependsOn.Select(dependency => Model.Schedule.Tasks.FirstOrDefault(candidate => candidate.Id == dependency)?.Title ?? $"先前任務（{dependency}）")))</p><p>指派：@Timestamp(task.AssignedAt) · 更新：@Timestamp(task.UpdatedAt)</p><small>任務識別：@task.Id · 證據：@task.Evidence</small></div></details>
+                            <details class="operations-schedule-task" data-schedule-task-id="@(task.InstanceId ?? task.Id)"><summary><span>@task.Title<br /><small>最近更新：@Timestamp(task.UpdatedAt)</small></span><span class="operations-badge is-@task.State">@((new Dictionary<string, string> { ["queued"] = "等待中", ["acknowledged"] = "已接單", ["running"] = "執行中", ["blocked"] = "受阻", ["unconfirmed"] = "狀態待確認" }).TryGetValue(task.State, out var stateLabel) ? stateLabel : "狀態待確認")</span></summary><div class="operations-schedule-detail"><p>@task.Description</p><p>原因：@task.Reason</p><p>依賴：@(task.DependsOn.Count == 0 ? "無" : string.Join("、", task.DependsOn.Select(dependency => Model.Schedule.Catalog.FirstOrDefault(candidate => candidate.Id == dependency)?.Title ?? $"先前任務（{dependency}）")))</p><p>指派：@Timestamp(task.AssignedAt) · 更新：@Timestamp(task.UpdatedAt)</p><small>任務識別：@task.Id · 證據：@task.Evidence</small></div></details>
                         }
                     </div>
                     <p class="operations-empty" data-schedule-empty @(tasks.Length > 0 ? "hidden" : null)>尚無可驗證排程。</p>
@@ -85,19 +86,8 @@
         </div>
     </section>
 
-    <section class="operations-section" aria-labelledby="activeTitle">
-        <div class="operations-title"><div><span class="micro-label">ACTIVE WORK</span><h2 id="activeTitle">目前工作</h2></div><p>保留來源提供的開始與更新時間；十五分鐘未更新即標示 stale。</p></div>
-        <p class="operations-empty" data-active-empty @(Model.ActiveWork.Count == 0 ? null : "hidden")>@(Model.SourceAvailable ? "目前沒有來源宣告中的工作；請確認各節點 Codex status publisher 正在更新。" : $"無法讀取工作：{Model.SourceStatus}")</p>
-        <div class="operations-table-wrap" data-active-wrap @(Model.ActiveWork.Count == 0 ? "hidden" : null)><table class="operations-table"><thead><tr><th>任務</th><th>類型</th><th>主機</th><th>開始</th><th>最近更新</th><th>狀態</th></tr></thead><tbody data-active-body>
-        @foreach (var item in Model.ActiveWork)
-        {
-            <tr><td data-label="任務"><span>@Model.Schedule.WorkTitle(item)</span>@if (Model.Schedule.WorkTitle(item) != item.Name) { <details><summary>任務識別</summary><small>@item.Name</small></details> }</td><td data-label="類型">@item.Type</td><td data-label="主機">@item.Host</td><td data-label="開始"><time datetime="@item.StartedAt.ToString("O")">@Timestamp(item.StartedAt)</time></td><td data-label="最近更新"><time datetime="@(item.UpdatedAt?.ToString("O"))">@Timestamp(item.UpdatedAt)</time></td><td data-label="狀態"><span class="operations-badge @StatusClass(item.Status, item.Stale)">@(item.Stale ? $"{item.Status} · stale" : item.Status)</span></td></tr>
-        }
-        </tbody></table></div>
-    </section>
-
     <section class="operations-section" aria-labelledby="historyTitle">
-        <div class="operations-title"><div><span class="micro-label">AUDITED HISTORY</span><h2 id="historyTitle">稽核歷程</h2></div><p>依開始時間倒序顯示所有仍在安全上限內的紀錄（最多 500 筆）。</p></div>
+        <div class="operations-title"><div><span class="micro-label">PAST TASKS</span><h2 id="historyTitle">過往任務</h2></div><p>只列明確完成或失敗且含結束時間的任務；依開始時間倒序（最多 500 筆）。</p></div>
         <p class="operations-empty" data-history-empty @(Model.History.Count == 0 ? null : "hidden")>@(Model.SourceAvailable ? "尚未累積歷程；工作來源必須提供明確結束狀態才會列入。" : $"無法讀取歷程：{Model.SourceStatus}")</p>
         <div class="operations-table-wrap" data-history-wrap @(Model.History.Count == 0 ? "hidden" : null)><table class="operations-table operations-history" data-history-table><thead><tr><th>任務</th><th>類型／主機</th><th>時間軸</th><th>結果</th><th>證據摘要</th></tr></thead><tbody data-history-body>
         @foreach (var item in Model.History)
