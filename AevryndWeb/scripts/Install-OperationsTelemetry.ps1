@@ -3,10 +3,35 @@
 param(
     [Parameter(Mandatory)][ValidateSet('taichung','taoyuan')][string]$NodeId,
     [ValidatePattern('^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$')][string]$KeyName = "Aevrynd-OperationsTelemetry-$NodeId-v1",
+    [string]$PowerShellPath = 'C:\Program Files\PowerShell\7\pwsh.exe',
+    [ValidatePattern('^[A-Fa-f0-9]{64}$')][string]$ExpectedPublisherSha256,
     [switch]$EnrollOnly
 )
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+
+function Resolve-TrustedPowerShellPath([string]$Path) {
+    if ([string]::IsNullOrWhiteSpace($Path)) { throw 'PowerShell path is required.' }
+    try {
+        $providerPath = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($Path)
+        $canonicalPath = [IO.Path]::GetFullPath($providerPath)
+    } catch { throw 'PowerShell path cannot be resolved to a canonical filesystem path.' }
+    if (-not (Test-Path -LiteralPath $canonicalPath -PathType Leaf)) { throw 'PowerShell 7 executable is missing.' }
+    $item = Get-Item -LiteralPath $canonicalPath -Force
+    if (-not [string]::Equals($item.Name,'pwsh.exe',[StringComparison]::OrdinalIgnoreCase)) { throw 'PowerShell executable must be named pwsh.exe.' }
+    if ($item.Attributes -band [IO.FileAttributes]::ReparsePoint) { throw 'PowerShell executable cannot be a reparse point.' }
+    $directory = $item.Directory
+    while ($null -ne $directory) {
+        if ($directory.Attributes -band [IO.FileAttributes]::ReparsePoint) { throw 'PowerShell executable cannot be reached through a reparse-point directory.' }
+        $directory = $directory.Parent
+    }
+    $version = [Diagnostics.FileVersionInfo]::GetVersionInfo($canonicalPath)
+    if (-not [string]::Equals($version.ProductName,'PowerShell',[StringComparison]::Ordinal) -or
+        $version.ProductMajorPart -lt 7 -or $version.FileMajorPart -lt 7) {
+        throw 'PowerShell executable must be PowerShell 7 or newer.'
+    }
+    return $canonicalPath
+}
 
 $source = Join-Path $PSScriptRoot 'Publish-OperationsTelemetry.ps1'
 $root = Join-Path ([Environment]::GetFolderPath([Environment+SpecialFolder]::CommonApplicationData)) 'Aevrynd\OperationsTelemetry'
@@ -14,10 +39,15 @@ $publisher = Join-Path $root 'Publish-OperationsTelemetry.ps1'
 $settingsPath = Join-Path $root "$NodeId-settings.json"
 $enrollmentPath = Join-Path $root "$NodeId-enrollment.json"
 $taskName = "Aevrynd Operations Telemetry ($NodeId)"
-$pwsh = 'C:\Program Files\PowerShell\7\pwsh.exe'
 
 if (-not (Test-Path -LiteralPath $source -PathType Leaf)) { throw 'Telemetry publisher source is missing.' }
-if (-not (Test-Path -LiteralPath $pwsh -PathType Leaf)) { throw "PowerShell 7 is required at the fixed path: $pwsh" }
+$pwsh = Resolve-TrustedPowerShellPath $PowerShellPath
+if ($ExpectedPublisherSha256) {
+    $publisherHash = (Get-FileHash -LiteralPath $source -Algorithm SHA256).Hash
+    if (-not [string]::Equals($publisherHash,$ExpectedPublisherSha256,[StringComparison]::OrdinalIgnoreCase)) {
+        throw 'Telemetry publisher source hash does not match the pinned value.'
+    }
+}
 if ($WhatIfPreference) {
     Write-Output "What if: create or reuse a non-exportable ECDSA P-256 key for $NodeId and write a public enrollment document$(if (-not $EnrollOnly) { ', then stage the publisher and task' })."
     return
