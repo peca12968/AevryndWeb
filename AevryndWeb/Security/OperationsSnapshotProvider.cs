@@ -47,7 +47,14 @@ public sealed class FileOperationsSnapshotProvider(IConfiguration configuration,
                     if (OperationsSnapshotSchema.TryNormalizeRemoteWork(remote.ActiveWork, remote.History, nodes[index].Id, now, out var remoteActive, out var remoteHistory))
                     { activeWork.AddRange(remoteActive); history.AddRange(remoteHistory); }
                 }
-                else nodes[index] = new OperationsNodeView(nodes[index].Id, nodes[index].Name, null, null, null, null, true, "unavailable", "超過兩分鐘沒有通過簽章與 freshness 驗證的遠端採樣。");
+                else
+                {
+                    // 過期時先無條件清除 remote metrics；歷程保存與即時 metrics TTL 分離。
+                    nodes[index] = new OperationsNodeView(nodes[index].Id, nodes[index].Name, null, null, null, null, true, "unavailable", "超過兩分鐘沒有通過簽章與 freshness 驗證的遠端採樣。");
+                    if (remoteTelemetry.TryReadHistory(nodes[index].Id, now, out var persistedHistory) &&
+                        OperationsSnapshotSchema.TryNormalizeRemoteWork([], persistedHistory, nodes[index].Id, now, out _, out var normalizedPersistedHistory))
+                        history.AddRange(normalizedPersistedHistory);
+                }
             }
             return model with
             {

@@ -63,6 +63,7 @@ builder.Services.AddSingleton<ICodexEventRelayReplayStore, FileCodexEventRelayRe
 builder.Services.AddSingleton<ICodexEventRelay, CodexEventRelay>();
 builder.Services.AddSingleton<IOperationsSnapshotProvider, FileOperationsSnapshotProvider>();
 builder.Services.AddSingleton<NodeHardwareCatalog>();
+builder.Services.AddSingleton<OperationsScheduleProvider>();
 if (!builder.Environment.IsEnvironment("Testing") && OperatingSystem.IsWindows()) builder.Services.AddHostedService<OperationsTelemetryPublisher>();
 builder.Services.AddSingleton<IRemoteControlGrantService, RemoteControlGrantService>();
 builder.Services.AddSingleton<IRemoteConsoleGuard, RemoteConsoleGuard>();

@@ -25,6 +25,11 @@ public interface IRemoteTelemetryStore
 {
     bool TryReadFresh(string nodeId, DateTimeOffset now, out OperationsNodeState node);
     bool TryWrite(OperationsNodeState node);
+    bool TryReadHistory(string nodeId, DateTimeOffset now, out IReadOnlyList<OperationsWorkState> history)
+    {
+        history = [];
+        return false;
+    }
     bool TryReadFreshSnapshot(string nodeId, DateTimeOffset now, out RemoteTelemetrySnapshot snapshot)
     {
         if (TryReadFresh(nodeId, now, out var node)) { snapshot = new(node, [], []); return true; }
@@ -257,6 +262,16 @@ public sealed class FileRemoteTelemetryStore(IConfiguration configuration) : IRe
         snapshot = default!;
         if (!TryReadEnvelope(nodeId, out var envelope) || envelope.Node.SampledAt > now.AddSeconds(30) || now - envelope.Node.SampledAt > TimeSpan.FromMinutes(2)) return false;
         snapshot = new(envelope.Node, envelope.ActiveWork, envelope.History); return true;
+    }
+
+    public bool TryReadHistory(string nodeId, DateTimeOffset now, out IReadOnlyList<OperationsWorkState> history)
+    {
+        history = [];
+        // 歷程讀取不要求最新 heartbeat，但仍要求既有 ACL、strict envelope 與終態 schema 驗證。
+        if (!TryReadEnvelope(nodeId, out var envelope) || envelope.History.Any(item => item.Status is "working" or "blocked") ||
+            !OperationsSnapshotSchema.TryValidateRemoteWork([], envelope.History, nodeId, now)) return false;
+        history = envelope.History;
+        return true;
     }
 
     public bool TryWriteSnapshot(RemoteTelemetrySnapshot snapshot)

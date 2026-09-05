@@ -63,6 +63,27 @@
         </div>
     </section>
 
+    <section class="operations-section" aria-labelledby="scheduleTitle">
+        <div class="operations-title"><div><span class="micro-label">SCHEDULED WORK</span><h2 id="scheduleTitle">三台主機任務排程</h2></div><p data-schedule-status>@(Model.Schedule.SourceAvailable ? (Model.Schedule.Stale ? $"排程資料已過期（{Timestamp(Model.Schedule.ObservedAt)}）；不推測任務已停止。" : $"排程來源已驗證，觀測於 {Timestamp(Model.Schedule.ObservedAt)}。") : "目前沒有可驗證的排程來源。")</p></div>
+        <div class="operations-schedule-grid" data-schedule-grid>
+            @foreach (var node in new[] { (Id: "local", Name: "本機"), (Id: "taichung", Name: "台中"), (Id: "taoyuan", Name: "桃園") })
+            {
+                var tasks = Model.Schedule.Tasks.Where(task => string.Equals(task.NodeId, node.Id, StringComparison.OrdinalIgnoreCase)).OrderByDescending(task => task.AssignedAt).ToArray();
+                <article class="operations-schedule-card" data-schedule-node="@node.Id">
+                    <header><div><small>@node.Id.ToUpperInvariant()</small><h3>@node.Name</h3></div><span class="operations-schedule-count" data-schedule-count>@tasks.Length</span></header>
+                    <dl class="operations-schedule-summary"><div><dt>等待</dt><dd data-schedule-count-state="queued">@tasks.Count(task => task.State == "queued")</dd></div><div><dt>已接單</dt><dd data-schedule-count-state="acknowledged">@tasks.Count(task => task.State == "acknowledged")</dd></div><div><dt>執行</dt><dd data-schedule-count-state="running">@tasks.Count(task => task.State == "running")</dd></div><div><dt>受阻</dt><dd data-schedule-count-state="blocked">@tasks.Count(task => task.State == "blocked")</dd></div><div><dt>待確認</dt><dd data-schedule-count-state="unconfirmed">@tasks.Count(task => task.State == "unconfirmed")</dd></div></dl>
+                    <div class="operations-schedule-list" data-schedule-list>
+                        @foreach (var task in tasks)
+                        {
+                            <details class="operations-schedule-task" data-schedule-task-id="@task.Id"><summary><span>@task.Title</span><span class="operations-badge is-@task.State">@((new Dictionary<string, string> { ["queued"] = "等待中", ["acknowledged"] = "已接單", ["running"] = "執行中", ["blocked"] = "受阻", ["unconfirmed"] = "狀態待確認" }).TryGetValue(task.State, out var stateLabel) ? stateLabel : "狀態待確認")</span></summary><div class="operations-schedule-detail"><p>@task.Description</p><p>原因：@task.Reason</p><p>依賴：@(task.DependsOn.Count == 0 ? "無" : string.Join("、", task.DependsOn.Select(dependency => Model.Schedule.Tasks.FirstOrDefault(candidate => candidate.Id == dependency)?.Title ?? $"先前任務（{dependency}）")))</p><p>指派：@Timestamp(task.AssignedAt) · 更新：@Timestamp(task.UpdatedAt)</p><small>任務識別：@task.Id · 證據：@task.Evidence</small></div></details>
+                        }
+                    </div>
+                    <p class="operations-empty" data-schedule-empty @(tasks.Length > 0 ? "hidden" : null)>尚無可驗證排程。</p>
+                </article>
+            }
+        </div>
+    </section>
+
     <section class="operations-section" aria-labelledby="activeTitle">
         <div class="operations-title"><div><span class="micro-label">ACTIVE WORK</span><h2 id="activeTitle">目前工作</h2></div><p>保留來源提供的開始與更新時間；十五分鐘未更新即標示 stale。</p></div>
         <p class="operations-empty" data-active-empty @(Model.ActiveWork.Count == 0 ? null : "hidden")>@(Model.SourceAvailable ? "目前沒有來源宣告中的工作；請確認各節點 Codex status publisher 正在更新。" : $"無法讀取工作：{Model.SourceStatus}")</p>

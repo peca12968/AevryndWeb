@@ -7,7 +7,10 @@ public sealed record OperationsViewModel(
     DateTimeOffset? SnapshotAt,
     bool SourceAvailable,
     string SourceStatus,
-    IReadOnlyList<NodeHardwareView> Hardware);
+    IReadOnlyList<NodeHardwareView> Hardware)
+{
+    public OperationsScheduleView Schedule { get; init; } = new(false, false, null, []);
+}
 
 public sealed record OperationsNodeView(
     string Id,

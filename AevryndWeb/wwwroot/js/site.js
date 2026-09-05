@@ -29,6 +29,8 @@
   const historyEmpty = root.querySelector("[data-history-empty]");
   const historyElement = root.querySelector("[data-history-table]");
   const hardwareGrid = root.querySelector("[data-hardware-grid]");
+  const scheduleGrid = root.querySelector("[data-schedule-grid]");
+  const scheduleStatus = root.querySelector("[data-schedule-status]");
   let historyDataTable = null;
   const endpoint = root.dataset.snapshotUrl;
   const formatMetric = value => Number.isFinite(value) ? `${value.toFixed(1)}%` : "unavailable";
@@ -75,6 +77,43 @@
       historyDataTable.page(Math.min(preservedPage, lastPage)).draw("page");
     }
   };
+  const stateLabel = { queued: "等待中", acknowledged: "已接單", running: "執行中", blocked: "受阻", unconfirmed: "狀態待確認" };
+  const renderSchedule = schedule => {
+    if (!scheduleGrid) return;
+    const tasks = Array.isArray(schedule?.tasks) ? schedule.tasks : [];
+    if (scheduleStatus) {
+      const observed = formatTime(schedule?.observedAt);
+      scheduleStatus.textContent = schedule?.sourceAvailable
+        ? (schedule.stale ? "排程資料已過期（" + observed + "）；不推測任務已停止。" : "排程來源已驗證，觀測於 " + observed + "。")
+        : "目前沒有可驗證的排程來源。";
+    }
+    const byNode = new Map(["local", "taichung", "taoyuan"].map(id => [id, tasks.filter(task => task.nodeId === id)]));
+    scheduleGrid.querySelectorAll("[data-schedule-node]").forEach(card => {
+      const nodeTasks = byNode.get(card.dataset.scheduleNode) || [];
+      const openIds = new Set(Array.from(card.querySelectorAll("[data-schedule-task-id][open]")).map(item => item.dataset.scheduleTaskId));
+      const count = card.querySelector("[data-schedule-count]"); if (count) count.textContent = String(nodeTasks.length);
+      card.querySelectorAll("[data-schedule-count-state]").forEach(element => { element.textContent = String(nodeTasks.filter(task => task.state === element.dataset.scheduleCountState).length); });
+      const list = card.querySelector("[data-schedule-list]"); const empty = card.querySelector("[data-schedule-empty]");
+      if (!list || !empty) return;
+      list.replaceChildren(); empty.hidden = nodeTasks.length !== 0;
+      nodeTasks.sort((a, b) => new Date(b.assignedAt || 0).valueOf() - new Date(a.assignedAt || 0).valueOf()).forEach(task => {
+        const details = document.createElement("details"); details.className = "operations-schedule-task";
+        const summary = document.createElement("summary"); const title = document.createElement("span"); title.textContent = task.title || "未命名工作";
+        const state = document.createElement("span"); state.className = "operations-badge is-" + (task.state || "unconfirmed"); state.textContent = stateLabel[task.state] || "狀態待確認";
+        summary.append(title, state);
+        const detail = document.createElement("div"); detail.className = "operations-schedule-detail";
+        const add = (label, value) => { const paragraph = document.createElement("p"); paragraph.textContent = label + (value || "未提供"); detail.append(paragraph); };
+        const dependencyText = Array.isArray(task.dependsOn) && task.dependsOn.length
+          ? task.dependsOn.map(id => { const dependency = tasks.find(candidate => candidate.id === id); return dependency?.title || "先前任務（" + id + "）"; }).join("、")
+          : "無";
+        add("", task.description); add("原因：", task.reason); add("依賴：", dependencyText);
+        add("指派：", formatTime(task.assignedAt) + " · 更新：" + formatTime(task.updatedAt));
+        const evidence = document.createElement("small"); evidence.textContent = "任務識別：" + (task.id || "未提供") + " · 證據：" + (task.evidence || "未提供"); detail.append(evidence);
+        details.dataset.scheduleTaskId = task.id || ""; if (openIds.has(details.dataset.scheduleTaskId)) details.open = true;
+        details.append(summary, detail); list.append(details);
+      });
+    });
+  };
   const render = model => {
     source.classList.toggle("is-available", model.sourceAvailable); source.classList.toggle("is-unavailable", !model.sourceAvailable);
     sourceStatus.textContent = model.sourceStatus; snapshotTime.textContent = formatTime(model.snapshotAt); snapshotTime.dateTime = model.snapshotAt || "";
@@ -95,6 +134,7 @@
       const storage = card.querySelector('[data-hardware-field="storage"]'); if (storage) storage.textContent = item.storage?.length ? item.storage.join("；") : "等待實測";
       const sampled = card.querySelector('[data-hardware-field="sampledAt"]'); if (sampled) { sampled.textContent = formatTime(item.sampledAt); sampled.dateTime = item.sampledAt || ""; }
     });
+    renderSchedule(model.schedule);
     renderWork(model.activeWork, activeBody, activeWrap, activeEmpty, model.sourceAvailable, model.sourceStatus, false);
     renderWork(model.history, historyBody, historyWrap, historyEmpty, model.sourceAvailable, model.sourceStatus, true);
   };
