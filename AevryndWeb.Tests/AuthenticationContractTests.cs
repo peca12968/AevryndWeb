@@ -89,7 +89,11 @@ public sealed class AuthenticationContractTests
         Assert.Equal(HttpStatusCode.Forbidden, (await client.GetAsync("/RemoteConsole")).StatusCode);
         Assert.Equal(HttpStatusCode.OK, (await client.GetAsync("/Showcase")).StatusCode);
         var script = SourceFile("wwwroot", "js", "site.js");
-        Assert.Contains("保留最後一次已驗證資料", script); Assert.Contains("render(await response.json())", script);
+        Assert.Contains("保留最後一次已驗證資料", script);
+        var parsePosition = script.IndexOf("model = await response.json()", StringComparison.Ordinal);
+        var validatePosition = script.IndexOf("if (!validModel(model))", StringComparison.Ordinal);
+        var renderPosition = script.IndexOf("render(model);", StringComparison.Ordinal);
+        Assert.True(parsePosition >= 0 && validatePosition > parsePosition && renderPosition > validatePosition);
         Assert.Contains("historyDataTable?.search()", script); Assert.Contains("historyDataTable?.page()", script);
         Assert.Contains("historyDataTable.row.add(row)", script); Assert.Equal(1, script.Split("new window.DataTable", StringSplitOptions.None).Length - 1);
     }

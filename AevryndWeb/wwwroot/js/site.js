@@ -33,11 +33,25 @@
   const scheduleStatus = root.querySelector("[data-schedule-status]");
   let historyDataTable = null;
   const endpoint = root.dataset.snapshotUrl;
+  const refreshIntervalMs = 10000;
+  const requestTimeoutMs = 8000;
+  const staleAfterMs = 35000;
+  const remoteUnavailableAfterMs = 120000;
+  let pollInFlight = false;
+  let lastTrustedModel = null;
+  let lastTrustedServerEpoch = null;
+  let lastTrustedMonotonic = 0;
   const formatMetric = value => Number.isFinite(value) ? `${value.toFixed(1)}%` : "unavailable";
+  const taipeiTime = new Intl.DateTimeFormat("zh-TW", {
+    timeZone: "Asia/Taipei", year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23"
+  });
   const formatTime = value => {
     if (!value) return "unavailable";
     const parsed = new Date(value);
-    return Number.isNaN(parsed.valueOf()) ? "unavailable" : `${parsed.toISOString().slice(0, 19).replace("T", " ")} UTC`;
+    if (Number.isNaN(parsed.valueOf())) return "unavailable";
+    const parts = Object.fromEntries(taipeiTime.formatToParts(parsed).map(part => [part.type, part.value]));
+    return `${parts.year}-${parts.month}-${parts.day} ${parts.hour}:${parts.minute}:${parts.second} 台北時間 (UTC+8)`;
   };
   const appendCell = (row, label, value) => {
     const cell = document.createElement("td"); cell.dataset.label = label; cell.textContent = value; row.append(cell); return cell;
@@ -55,7 +69,7 @@
     const span = document.createElement("span"); span.className = `operations-badge ${terminal}`;
     span.textContent = stale ? `${value} · stale` : value; return span;
   };
-  const renderWork = (items, body, wrap, empty, sourceAvailable, sourceMessage, history) => {
+  const renderWork = (items, body, wrap, empty, sourceAvailable, sourceMessage, history, catalog = []) => {
     const preservedSearch = historyDataTable?.search() || "";
     const preservedPage = historyDataTable?.page() || 0;
     if (history && historyDataTable) historyDataTable.clear(); else body.replaceChildren();
@@ -69,7 +83,12 @@
     }
     items.forEach(item => {
       const row = document.createElement("tr");
-      appendCell(row, "安全名稱", item.name);
+      const title = catalog.find(task => task.id === item.name && ({ local: "本機", taichung: "台中", taoyuan: "桃園" })[task.nodeId] === item.host && Date.parse(item.startedAt) >= Date.parse(task.assignedAt))?.title;
+      const nameCell = appendCell(row, "任務", title || item.name);
+      if (title && title !== item.name) {
+        const detail = document.createElement("details"); const label = document.createElement("summary"); label.textContent = "任務識別";
+        const identity = document.createElement("small"); identity.textContent = item.name; detail.append(label, identity); nameCell.append(detail);
+      }
       appendCell(row, history ? "類型／主機" : "類型", history ? `${item.type} · ${item.host}` : item.type);
       if (!history) appendCell(row, "主機", item.host);
       if (history) { const timeline = appendCell(row, "時間軸", `開始 ${formatTime(item.startedAt)}\n更新 ${formatTime(item.updatedAt)}\n結束 ${formatTime(item.endedAt)}`); timeline.className = "operations-timeline"; timeline.dataset.order = String(new Date(item.startedAt).valueOf()); }
@@ -93,6 +112,7 @@
       scheduleStatus.textContent = schedule?.sourceAvailable
         ? (schedule.stale ? "排程資料已過期（" + observed + "）；不推測任務已停止。" : "排程來源已驗證，觀測於 " + observed + "。")
         : "目前沒有可驗證的排程來源。";
+      if (schedule?.sourceAvailable && schedule.verifiedAt) scheduleStatus.textContent += " 來源核對：" + formatTime(schedule.verifiedAt) + "；工作時間依實際事件保留。";
     }
     const byNode = new Map(["local", "taichung", "taoyuan"].map(id => [id, tasks.filter(task => task.nodeId === id)]));
     scheduleGrid.querySelectorAll("[data-schedule-node]").forEach(card => {
@@ -121,19 +141,20 @@
       });
     });
   };
+  const renderNode = node => {
+    const card = root.querySelector(`[data-node-id="${node.id}"]`); if (!card) return;
+    card.querySelector('[data-node-metric="cpu"]').textContent = formatMetric(node.cpuPercent);
+    card.querySelector('[data-node-metric="ram"]').textContent = formatMetric(node.ramPercent);
+    card.querySelector('[data-node-metric="gpu"]').textContent = formatMetric(node.gpuPercent);
+    const availability = card.querySelector("[data-node-availability]"); availability.textContent = node.availability;
+    availability.className = `operations-badge is-${node.availability}`;
+    const sampled = card.querySelector("[data-node-sampled]"); sampled.textContent = formatTime(node.sampledAt); sampled.dateTime = node.sampledAt || "";
+    card.querySelector("[data-node-diagnostic]").textContent = node.diagnostic;
+  };
   const render = model => {
     source.classList.toggle("is-available", model.sourceAvailable); source.classList.toggle("is-unavailable", !model.sourceAvailable);
     sourceStatus.textContent = model.sourceStatus; snapshotTime.textContent = formatTime(model.snapshotAt); snapshotTime.dateTime = model.snapshotAt || "";
-    model.nodes.forEach(node => {
-      const card = root.querySelector(`[data-node-id="${node.id}"]`); if (!card) return;
-      card.querySelector('[data-node-metric="cpu"]').textContent = formatMetric(node.cpuPercent);
-      card.querySelector('[data-node-metric="ram"]').textContent = formatMetric(node.ramPercent);
-      card.querySelector('[data-node-metric="gpu"]').textContent = formatMetric(node.gpuPercent);
-      const availability = card.querySelector("[data-node-availability]"); availability.textContent = node.availability;
-      availability.className = `operations-badge is-${node.availability}`;
-      const sampled = card.querySelector("[data-node-sampled]"); sampled.textContent = formatTime(node.sampledAt); sampled.dateTime = node.sampledAt || "";
-      card.querySelector("[data-node-diagnostic]").textContent = node.diagnostic;
-    });
+    model.nodes.forEach(renderNode);
     model.hardware?.forEach(item => {
       const card = hardwareGrid?.querySelector(`[data-hardware-id="${item.id}"]`); if (!card) return;
       const resolvedStatus = hardwareStatus(item); const status = card.querySelector("[data-hardware-status]"); status.textContent = resolvedStatus.label; status.dataset.hardwareDeclaredStatus = resolvedStatus.value; status.className = `operations-badge ${resolvedStatus.css}`;
@@ -142,18 +163,134 @@
       const sampled = card.querySelector('[data-hardware-field="sampledAt"]'); if (sampled) { sampled.textContent = formatTime(item.sampledAt); sampled.dateTime = item.sampledAt || ""; }
     });
     renderSchedule(model.schedule);
-    renderWork(model.activeWork, activeBody, activeWrap, activeEmpty, model.sourceAvailable, model.sourceStatus, false);
-    renderWork(model.history, historyBody, historyWrap, historyEmpty, model.sourceAvailable, model.sourceStatus, true);
+    renderWork(model.activeWork, activeBody, activeWrap, activeEmpty, model.sourceAvailable, model.sourceStatus, false, model.schedule?.catalog || model.schedule?.tasks || []);
+    renderWork(model.history, historyBody, historyWrap, historyEmpty, model.sourceAvailable, model.sourceStatus, true, model.schedule?.catalog || model.schedule?.tasks || []);
   };
+  const validDate = value => value == null || Number.isFinite(Date.parse(value));
+  const validMetric = value => value == null || (Number.isFinite(value) && value >= 0 && value <= 100);
+  const validWork = item => item && typeof item === "object" && typeof item.name === "string" && typeof item.type === "string" &&
+    typeof item.host === "string" && typeof item.status === "string" && Number.isFinite(Date.parse(item.startedAt)) &&
+    validDate(item.updatedAt) && validDate(item.endedAt);
+  const knownNodeIds = ["local", "taichung", "taoyuan"];
+  const validHardware = item => item && typeof item === "object" && knownNodeIds.includes(item.id) && typeof item.name === "string" &&
+    typeof item.model === "string" && typeof item.reasoning === "string" && typeof item.role === "string" &&
+    typeof item.hardwareStatus === "string" && validDate(item.sampledAt) && Array.isArray(item.storage);
+  const validScheduleTask = item => item && typeof item === "object" && typeof item.id === "string" && knownNodeIds.includes(item.nodeId) &&
+    typeof item.title === "string" && typeof item.description === "string" && typeof item.state === "string" &&
+    typeof item.reason === "string" && Array.isArray(item.dependsOn) && Number.isFinite(Date.parse(item.assignedAt)) &&
+    Number.isFinite(Date.parse(item.updatedAt)) && typeof item.evidence === "string";
+  const validModel = model => {
+    if (!model || typeof model !== "object" || typeof model.sourceAvailable !== "boolean" || typeof model.sourceStatus !== "string" ||
+        (model.sourceAvailable ? !Number.isFinite(Date.parse(model.snapshotAt)) : !validDate(model.snapshotAt)) ||
+        !Array.isArray(model.nodes) || !Array.isArray(model.activeWork) || !Array.isArray(model.history) ||
+        !model.activeWork.every(validWork) || !model.history.every(validWork) ||
+        (model.hardware != null && (!Array.isArray(model.hardware) || !model.hardware.every(validHardware))) ||
+        (model.schedule != null && (typeof model.schedule !== "object" || typeof model.schedule.sourceAvailable !== "boolean" ||
+          typeof model.schedule.stale !== "boolean" || !validDate(model.schedule.observedAt) || !validDate(model.schedule.verifiedAt) || !Array.isArray(model.schedule.tasks) ||
+          !model.schedule.tasks.every(validScheduleTask) ||
+          (model.schedule.catalog != null && (!Array.isArray(model.schedule.catalog) || !model.schedule.catalog.every(validScheduleTask)))))) return false;
+    const ids = model.nodes.map(node => node?.id);
+    return ids.length === knownNodeIds.length && new Set(ids).size === knownNodeIds.length && knownNodeIds.every(id => ids.includes(id)) &&
+      model.nodes.every(node => {
+        if (!node || typeof node !== "object" || typeof node.name !== "string" || typeof node.stale !== "boolean" ||
+            !validMetric(node.cpuPercent) || !validMetric(node.ramPercent) || !validMetric(node.gpuPercent) ||
+            !validDate(node.sampledAt) || typeof node.diagnostic !== "string" || !["current", "stale", "unavailable"].includes(node.availability)) return false;
+        const hasMetric = [node.cpuPercent, node.ramPercent, node.gpuPercent].some(value => value != null);
+        return node.availability === "unavailable"
+          ? !hasMetric && node.stale
+          : Number.isFinite(Date.parse(node.sampledAt)) && hasMetric && node.stale === (node.availability === "stale");
+      });
+  };
+  const trustedResponseEpoch = (response, model) => {
+    const value = response.headers?.get?.("date");
+    const epoch = Date.parse(value || "");
+    if (!Number.isFinite(epoch)) return null;
+    const payloadTimes = [model.snapshotAt, ...model.nodes.map(node => node.sampledAt)].map(value => Date.parse(value || "")).filter(Number.isFinite);
+    const latestPayloadTime = payloadTimes.length ? Math.max(...payloadTimes) : Number.NEGATIVE_INFINITY;
+    return latestPayloadTime <= epoch + 60000 ? epoch : null;
+  };
+  const unavailableNode = (node, diagnostic) => ({ ...node, cpuPercent: null, ramPercent: null, gpuPercent: null, availability: "unavailable", diagnostic });
+  const disconnectedNode = (node, effectiveServerEpoch) => {
+    if (node.availability === "unavailable") return node;
+    if (!Number.isFinite(effectiveServerEpoch)) {
+      return node.availability === "current"
+        ? unavailableNode(node, "連線中斷且伺服器時間來源無法驗證；已隱藏最後量測值，避免誤認為目前狀態。")
+        : node;
+    }
+    const sampledEpoch = Date.parse(node.sampledAt || "");
+    if (!Number.isFinite(sampledEpoch)) return unavailableNode(node, "連線中斷且採樣時間無效；已隱藏最後量測值，避免誤認為可用。");
+    const age = effectiveServerEpoch - sampledEpoch;
+    if (node.id !== "local" && age > remoteUnavailableAfterMs)
+      return unavailableNode(node, "連線中斷；遠端採樣已超過兩分鐘，已隱藏最後量測值且不視為可用。");
+    if (age > staleAfterMs && node.availability === "current")
+      return { ...node, availability: "stale", diagnostic: "連線中斷；採樣已超過 35 秒，保留最後實測值且不進行推估。" };
+    return node;
+  };
+  const markServerRenderedCurrentUnavailable = () => {
+    root.querySelectorAll("[data-node-id]").forEach(card => {
+      const availability = card.querySelector("[data-node-availability]");
+      if (!availability || availability.textContent !== "current") return;
+      availability.textContent = "unavailable";
+      availability.className = "operations-badge is-unavailable";
+      for (const metric of ["cpu", "ram", "gpu"]) {
+        const element = card.querySelector(`[data-node-metric="${metric}"]`);
+        if (element) element.textContent = "unavailable";
+      }
+      const diagnostic = card.querySelector("[data-node-diagnostic]");
+      if (diagnostic) diagnostic.textContent = "尚未取得可驗證的更新；已隱藏伺服器首次量測值，避免誤認為目前狀態。";
+    });
+  };
+  const markDisconnected = message => {
+    source.classList.remove("is-available"); source.classList.add("is-unavailable");
+    sourceStatus.textContent = message;
+    if (!lastTrustedModel) { markServerRenderedCurrentUnavailable(); return; }
+    const effectiveServerEpoch = Number.isFinite(lastTrustedServerEpoch)
+      ? lastTrustedServerEpoch + Math.max(0, performance.now() - lastTrustedMonotonic)
+      : null;
+    lastTrustedModel.nodes.map(node => disconnectedNode(node, effectiveServerEpoch)).forEach(renderNode);
+  };
+  const pollingError = (kind, message) => Object.assign(new Error(message), { kind });
   const poll = async () => {
+    if (pollInFlight) return;
+    pollInFlight = true;
+    const roundStarted = performance.now();
+    const controller = new AbortController();
+    let timeoutTriggered = false;
+    const timeout = window.setTimeout(() => { timeoutTriggered = true; controller.abort(); }, requestTimeoutMs);
     try {
-      const response = await fetch(endpoint, { credentials: "same-origin", headers: { ...tunnelHeaders, Accept: "application/json" }, cache: "no-store" });
-      if (!response.ok) throw new Error(String(response.status));
-      render(await response.json()); pollStatus.textContent = `畫面更新：${formatTime(new Date().toISOString())}`;
-    } catch {
-      pollStatus.textContent = "更新失敗；保留最後一次已驗證資料，10 秒後重試";
-      source.classList.remove("is-available"); source.classList.add("is-unavailable");
-    } finally { window.setTimeout(poll, 10000); }
+      const response = await fetch(endpoint, { credentials: "same-origin", headers: { ...tunnelHeaders, Accept: "application/json" }, cache: "no-store", signal: controller.signal });
+      if (response.status === 401 || response.status === 403) throw pollingError("auth", "登入已失效，請重新登入。");
+      if (!response.ok) throw pollingError("http", `更新服務回應 ${response.status}。`);
+      if (response.redirected || !response.headers?.get?.("content-type")?.toLowerCase().includes("application/json"))
+        throw pollingError("format", "更新回應格式錯誤，可能已被重新導向。");
+      let model;
+      try { model = await response.json(); }
+      catch { throw pollingError("format", "更新回應不是有效的 JSON。"); }
+      if (!validModel(model)) throw pollingError("format", "更新回應格式錯誤，未通過快照契約驗證。");
+      const serverEpoch = trustedResponseEpoch(response, model);
+      render(model);
+      lastTrustedServerEpoch = serverEpoch;
+      lastTrustedMonotonic = performance.now();
+      lastTrustedModel = model;
+      pollStatus.textContent = Number.isFinite(lastTrustedServerEpoch)
+        ? `畫面更新：${formatTime(new Date(lastTrustedServerEpoch).toISOString())}`
+        : "畫面已更新；伺服器時間來源未提供，斷線時不推算 freshness。";
+    } catch (error) {
+      const kind = timeoutTriggered || error?.name === "AbortError" ? "timeout" : error?.kind || (error instanceof TypeError ? "network" : "http");
+      const message = kind === "auth" ? "登入已失效，請重新登入。"
+        : kind === "timeout" ? "更新逾時；保留最後一次已驗證資料，10 秒後重試。"
+          : kind === "format" ? "更新回應格式錯誤；保留最後一次已驗證資料，10 秒後重試。"
+            : kind === "network" ? "網路連線失敗；保留最後一次已驗證資料，10 秒後重試。"
+              : "更新服務暫時無法使用；保留最後一次已驗證資料，10 秒後重試。";
+      const timeWarning = lastTrustedModel && !Number.isFinite(lastTrustedServerEpoch) ? " 伺服器時間來源無法驗證。" : "";
+      pollStatus.textContent = message + timeWarning;
+      markDisconnected(message + timeWarning);
+    } finally {
+      window.clearTimeout(timeout);
+      pollInFlight = false;
+      const elapsed = Math.max(0, performance.now() - roundStarted);
+      window.setTimeout(poll, Math.max(0, refreshIntervalMs - elapsed));
+    }
   };
   if (window.DataTable && historyElement) {
     historyDataTable = new window.DataTable(historyElement, {
@@ -161,5 +298,5 @@
       language: { search: "搜尋歷程：", lengthMenu: "每頁 _MENU_ 筆", info: "第 _START_–_END_ 筆，共 _TOTAL_ 筆", infoEmpty: "沒有可顯示的歷程", zeroRecords: "找不到符合的歷程", emptyTable: "尚無歷程", paginate: { first: "第一頁", last: "最後一頁", next: "下一頁", previous: "上一頁" } }
     });
   }
-  window.setTimeout(poll, 10000);
+  window.setTimeout(poll, refreshIntervalMs);
 })();

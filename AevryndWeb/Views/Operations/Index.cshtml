@@ -5,7 +5,7 @@
 }
 @functions {
     private static string Metric(double? value) => value.HasValue ? $"{value.Value:0.0}%" : "unavailable";
-    private static string Timestamp(DateTimeOffset? value) => value.HasValue ? value.Value.UtcDateTime.ToString("yyyy-MM-dd HH:mm:ss 'UTC'") : "unavailable";
+    private static string Timestamp(DateTimeOffset? value) => AevryndWeb.Security.PortalTime.Format(value);
     private static string StatusClass(string status, bool stale = false) => stale ? "is-stale" : status switch { "failed" => "is-failed", "blocked" => "is-blocked", "cancelled" => "is-cancelled", _ => "is-current" };
     private static string HardwareStatusLabel(string status) => status switch { "verified" => "已驗證", "partial" => "部分已驗證", _ => "待採樣" };
 }
@@ -65,7 +65,7 @@
     </section>
 
     <section class="operations-section" aria-labelledby="scheduleTitle">
-        <div class="operations-title"><div><span class="micro-label">SCHEDULED WORK</span><h2 id="scheduleTitle">三台主機任務排程</h2></div><p data-schedule-status>@(Model.Schedule.SourceAvailable ? (Model.Schedule.Stale ? $"排程資料已過期（{Timestamp(Model.Schedule.ObservedAt)}）；不推測任務已停止。" : $"排程來源已驗證，觀測於 {Timestamp(Model.Schedule.ObservedAt)}。") : "目前沒有可驗證的排程來源。")</p></div>
+        <div class="operations-title"><div><span class="micro-label">SCHEDULED WORK</span><h2 id="scheduleTitle">三台主機任務排程</h2></div><p data-schedule-status>@(Model.Schedule.SourceAvailable ? (Model.Schedule.Stale ? $"排程資料已過期（{Timestamp(Model.Schedule.ObservedAt)}）；不推測任務已停止。" : $"排程來源已驗證，觀測於 {Timestamp(Model.Schedule.ObservedAt)}。") : "目前沒有可驗證的排程來源。")@if (Model.Schedule.SourceAvailable && Model.Schedule.VerifiedAt.HasValue) { <span> 來源核對：@Timestamp(Model.Schedule.VerifiedAt)；工作時間依實際事件保留。</span> }</p></div>
         <div class="operations-schedule-grid" data-schedule-grid>
             @foreach (var node in new[] { (Id: "local", Name: "本機"), (Id: "taichung", Name: "台中"), (Id: "taoyuan", Name: "桃園") })
             {
@@ -88,10 +88,10 @@
     <section class="operations-section" aria-labelledby="activeTitle">
         <div class="operations-title"><div><span class="micro-label">ACTIVE WORK</span><h2 id="activeTitle">目前工作</h2></div><p>保留來源提供的開始與更新時間；十五分鐘未更新即標示 stale。</p></div>
         <p class="operations-empty" data-active-empty @(Model.ActiveWork.Count == 0 ? null : "hidden")>@(Model.SourceAvailable ? "目前沒有來源宣告中的工作；請確認各節點 Codex status publisher 正在更新。" : $"無法讀取工作：{Model.SourceStatus}")</p>
-        <div class="operations-table-wrap" data-active-wrap @(Model.ActiveWork.Count == 0 ? "hidden" : null)><table class="operations-table"><thead><tr><th>安全名稱</th><th>類型</th><th>主機</th><th>開始</th><th>最近更新</th><th>狀態</th></tr></thead><tbody data-active-body>
+        <div class="operations-table-wrap" data-active-wrap @(Model.ActiveWork.Count == 0 ? "hidden" : null)><table class="operations-table"><thead><tr><th>任務</th><th>類型</th><th>主機</th><th>開始</th><th>最近更新</th><th>狀態</th></tr></thead><tbody data-active-body>
         @foreach (var item in Model.ActiveWork)
         {
-            <tr><td data-label="安全名稱">@item.Name</td><td data-label="類型">@item.Type</td><td data-label="主機">@item.Host</td><td data-label="開始"><time datetime="@item.StartedAt.ToString("O")">@Timestamp(item.StartedAt)</time></td><td data-label="最近更新"><time datetime="@(item.UpdatedAt?.ToString("O"))">@Timestamp(item.UpdatedAt)</time></td><td data-label="狀態"><span class="operations-badge @StatusClass(item.Status, item.Stale)">@(item.Stale ? $"{item.Status} · stale" : item.Status)</span></td></tr>
+            <tr><td data-label="任務"><span>@Model.Schedule.WorkTitle(item)</span>@if (Model.Schedule.WorkTitle(item) != item.Name) { <details><summary>任務識別</summary><small>@item.Name</small></details> }</td><td data-label="類型">@item.Type</td><td data-label="主機">@item.Host</td><td data-label="開始"><time datetime="@item.StartedAt.ToString("O")">@Timestamp(item.StartedAt)</time></td><td data-label="最近更新"><time datetime="@(item.UpdatedAt?.ToString("O"))">@Timestamp(item.UpdatedAt)</time></td><td data-label="狀態"><span class="operations-badge @StatusClass(item.Status, item.Stale)">@(item.Stale ? $"{item.Status} · stale" : item.Status)</span></td></tr>
         }
         </tbody></table></div>
     </section>
@@ -99,10 +99,10 @@
     <section class="operations-section" aria-labelledby="historyTitle">
         <div class="operations-title"><div><span class="micro-label">AUDITED HISTORY</span><h2 id="historyTitle">稽核歷程</h2></div><p>依開始時間倒序顯示所有仍在安全上限內的紀錄（最多 500 筆）。</p></div>
         <p class="operations-empty" data-history-empty @(Model.History.Count == 0 ? null : "hidden")>@(Model.SourceAvailable ? "尚未累積歷程；工作來源必須提供明確結束狀態才會列入。" : $"無法讀取歷程：{Model.SourceStatus}")</p>
-        <div class="operations-table-wrap" data-history-wrap @(Model.History.Count == 0 ? "hidden" : null)><table class="operations-table operations-history" data-history-table><thead><tr><th>安全名稱</th><th>類型／主機</th><th>時間軸</th><th>結果</th><th>證據摘要</th></tr></thead><tbody data-history-body>
+        <div class="operations-table-wrap" data-history-wrap @(Model.History.Count == 0 ? "hidden" : null)><table class="operations-table operations-history" data-history-table><thead><tr><th>任務</th><th>類型／主機</th><th>時間軸</th><th>結果</th><th>證據摘要</th></tr></thead><tbody data-history-body>
         @foreach (var item in Model.History)
         {
-            <tr><td data-label="安全名稱">@item.Name</td><td data-label="類型／主機">@item.Type · @item.Host</td><td data-label="時間軸" data-order="@item.StartedAt.ToUnixTimeMilliseconds()">開始 <time datetime="@item.StartedAt.ToString("O")">@Timestamp(item.StartedAt)</time><br />更新 <time datetime="@(item.UpdatedAt?.ToString("O"))">@Timestamp(item.UpdatedAt)</time><br />結束 <time datetime="@(item.EndedAt?.ToString("O"))">@Timestamp(item.EndedAt)</time></td><td data-label="結果"><span class="operations-badge @StatusClass(item.Status)">@item.Status</span></td><td data-label="證據摘要">@(item.EvidenceSummary ?? "來源未提供證據摘要。")</td></tr>
+            <tr><td data-label="任務"><span>@Model.Schedule.WorkTitle(item)</span>@if (Model.Schedule.WorkTitle(item) != item.Name) { <details><summary>任務識別</summary><small>@item.Name</small></details> }</td><td data-label="類型／主機">@item.Type · @item.Host</td><td data-label="時間軸" data-order="@item.StartedAt.ToUnixTimeMilliseconds()">開始 <time datetime="@item.StartedAt.ToString("O")">@Timestamp(item.StartedAt)</time><br />更新 <time datetime="@(item.UpdatedAt?.ToString("O"))">@Timestamp(item.UpdatedAt)</time><br />結束 <time datetime="@(item.EndedAt?.ToString("O"))">@Timestamp(item.EndedAt)</time></td><td data-label="結果"><span class="operations-badge @StatusClass(item.Status)">@item.Status</span></td><td data-label="證據摘要">@(item.EvidenceSummary ?? "來源未提供證據摘要。")</td></tr>
         }
         </tbody></table></div>
     </section>

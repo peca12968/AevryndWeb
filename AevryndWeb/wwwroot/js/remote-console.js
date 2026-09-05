@@ -29,7 +29,7 @@
       if (response.status === 401 || response.status === 403) { active = false; location.reload(); return; }
       if (response.status === 429) return;
       if (!response.ok) throw new Error();
-      const blob = await response.blob(), previous = frame.src; frameGeneration = Number(response.headers.get("X-Aevrynd-Frame-Generation") || 0); frame.src = URL.createObjectURL(blob); frame.hidden = false; placeholder.hidden = true; frameStatus.textContent = `已更新 ${new Date().toLocaleTimeString()}`; if (previous.startsWith("blob:")) URL.revokeObjectURL(previous);
+      const blob = await response.blob(), previous = frame.src; frameGeneration = Number(response.headers.get("X-Aevrynd-Frame-Generation") || 0); frame.src = URL.createObjectURL(blob); frame.hidden = false; placeholder.hidden = true; frameStatus.textContent = `已更新 ${new Intl.DateTimeFormat("zh-TW", { timeZone: "Asia/Taipei", hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23" }).format(new Date())} 台北時間 (UTC+8)`; if (previous.startsWith("blob:")) URL.revokeObjectURL(previous);
     } catch { frameStatus.textContent = "畫面暫時無法取得"; placeholder.textContent = "互動式桌面未就緒，系統將安全地重試。"; placeholder.hidden = false; }
   }
   document.querySelector("#remoteTextForm")?.addEventListener("submit", async event => {

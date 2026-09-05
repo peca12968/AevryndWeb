@@ -42,6 +42,8 @@ public sealed class OperationsScheduleIntegrationTests
         Assert.Equal(HttpStatusCode.OK,page.StatusCode);
         Assert.Contains("三台主機任務排程",html);
         foreach(var task in tasks) Assert.Contains(task.title,html);
+        Assert.Contains(PortalTime.Format(tasks[0].assignedAt), html);
+        Assert.Contains("台北時間 (UTC+8)", html);
         Assert.Contains("已接單",html);Assert.Contains("等待中",html);Assert.Contains("執行中",html);
         var response=await client.GetAsync("/Operations/snapshot");
         var json=await response.Content.ReadFromJsonAsync<JsonElement>();

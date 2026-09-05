@@ -11,7 +11,7 @@ public sealed class OperationsController(IOperationsSnapshotProvider snapshots, 
     private AevryndWeb.Models.OperationsViewModel Read()
     {
         var now = DateTimeOffset.UtcNow;
-        var model = snapshots.Read(now);
+        var model = OperationsScheduleProvider.ReconcileWork(snapshots.Read(now));
         return model with { Hardware = hardware.Read(), Schedule = schedule.Read(now, model) };
     }
     [HttpGet("")]
