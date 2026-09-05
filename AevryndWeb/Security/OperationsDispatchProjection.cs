@@ -34,6 +34,8 @@ public static class OperationsDispatchProjection
     private static readonly HashSet<string> Terminal = new(StringComparer.Ordinal) { "completed", "failed", "cancelled", "superseded" };
     private sealed record Event(long Id, DateTimeOffset CreatedAt, string Kind, Dictionary<string, string> Fields);
     private sealed record ArchiveDirective(long CommentId, string NodeId, long Cutoff, DateTimeOffset CreatedAt);
+    private sealed record ArchivedCommand(long CommentId, string NodeId, string CommandId);
+    private sealed record RejectedEvent(long CommentId, bool MayArchive);
 
     public static string BuildJson(string commentsJson, string? previousJson, DateTimeOffset now)
     {
@@ -43,8 +45,10 @@ public static class OperationsDispatchProjection
         var comments = Flatten(document.RootElement, 0).ToArray();
         if (comments.Length > 5000) throw new JsonException("DISPATCH_COMMENT_LIMIT");
         var events = new List<Event>();
+        var archivedCommands = new List<ArchivedCommand>();
         var seen = new Dictionary<long, string>();
-        var rejected = 0;
+        var rejectedEvents = new List<RejectedEvent>();
+        void Reject(long commentId, bool mayArchive = true) => rejectedEvents.Add(new(commentId, mayArchive));
         foreach (var comment in comments)
         {
             if (!Trusted(comment)) continue;
@@ -52,10 +56,20 @@ public static class OperationsDispatchProjection
             var raw = comment.GetRawText();
             if (seen.TryGetValue(id, out var prior)) { if (prior != raw) throw new JsonException("DISPATCH_CONFLICTING_COMMENT"); continue; }
             seen.Add(id, raw);
-            if (!comment.TryGetProperty("body", out var bodyElement) || bodyElement.ValueKind != JsonValueKind.String) { rejected++; continue; }
+            if (!comment.TryGetProperty("body", out var bodyElement) || bodyElement.ValueKind != JsonValueKind.String) { Reject(id); continue; }
             var body = bodyElement.GetString()!;
-            if (!TryEnvelope(body, out var kind, out var fields)) { if (body.Contains("COMMAND_ID:", StringComparison.Ordinal)) rejected++; continue; }
-            if (!TryTime(Text(comment, "created_at"), out var created) || created > now.AddMinutes(1)) { rejected++; continue; }
+            var declaresArchive = body.Contains("ARCHIVE_THROUGH_COMMENT_ID:", StringComparison.OrdinalIgnoreCase);
+            var trimmedBody = body.TrimStart();
+            var declaresArchivedBridge = trimmedBody.StartsWith("[AEVRYND-ARCHIVED-BRIDGE]", StringComparison.Ordinal) ||
+                trimmedBody.StartsWith("封存說明：此命令在狀態校正 cutoff 前沒有任何節點回覆，全文保留但不得再執行。", StringComparison.Ordinal);
+            if (!TryTime(Text(comment, "created_at"), out var created) || created > now.AddMinutes(1)) { Reject(id, !declaresArchive && !declaresArchivedBridge); continue; }
+            if (TryArchivedCommandEnvelope(body, out var archivedNode, out var archivedCommand))
+            {
+                archivedCommands.Add(new(id, archivedNode, archivedCommand));
+                continue;
+            }
+            if (declaresArchivedBridge) { Reject(id, false); continue; }
+            if (!TryEnvelope(body, out var kind, out var fields)) { if (body.Contains("COMMAND_ID:", StringComparison.Ordinal)) Reject(id, !declaresArchive); continue; }
             events.Add(new(id, created, kind, fields));
         }
         var ordered = events.OrderBy(item => item.CreatedAt).ThenBy(item => item.Id).ToArray();
@@ -69,14 +83,14 @@ public static class OperationsDispatchProjection
                 !Number(fields, "GENERATION", 1, 1, 10000, out var generation) ||
                 !Number(fields, "ACK_DEADLINE_SECONDS", 0, 0, 86400, out var ackSeconds) ||
                 !Number(fields, "LEASE_SECONDS", 0, 0, 604800, out var leaseSeconds) ||
-                !OptionalPositiveLongBefore(fields, "ARCHIVE_THROUGH_COMMENT_ID", item.Id, out var archiveThrough)) { rejected++; continue; }
+                !OptionalPositiveLongBefore(fields, "ARCHIVE_THROUGH_COMMENT_ID", item.Id, out var archiveThrough)) { Reject(item.Id, !fields.ContainsKey("ARCHIVE_THROUGH_COMMENT_ID")); continue; }
             var id = fields["COMMAND_ID"];
             var workKey = fields.GetValueOrDefault("WORK_KEY") ?? id;
             var supersedes = fields.GetValueOrDefault("SUPERSEDES_COMMAND_ID");
             var dependencies = (fields.GetValueOrDefault("DEPENDS_ON_COMMAND_ID") ?? fields.GetValueOrDefault("DEPENDS_ON") ?? "")
                 .Split([',', ';', ' '], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
             if (!Id(workKey) || (supersedes is not null && (!Id(supersedes) || supersedes == id)) ||
-                dependencies.Length > 10 || dependencies.Any(value => !Id(value) || value == id) || dependencies.Distinct(StringComparer.Ordinal).Count() != dependencies.Length) { rejected++; continue; }
+                dependencies.Length > 10 || dependencies.Any(value => !Id(value) || value == id) || dependencies.Distinct(StringComparer.Ordinal).Count() != dependencies.Length) { Reject(item.Id, !fields.ContainsKey("ARCHIVE_THROUGH_COMMENT_ID")); continue; }
             var sourceTitle = fields.GetValueOrDefault("TITLE") ?? fields.GetValueOrDefault("TASK") ?? "";
             var title = SafeTitle(sourceTitle, node);
             var description = Safe(sourceTitle, 600) ? sourceTitle : "詳細工作範圍請依原始派工；此處僅顯示已驗證的任務狀態。";
@@ -90,18 +104,22 @@ public static class OperationsDispatchProjection
         foreach (var item in ordered.Where(item => item.Kind != "MAIN_COMMAND"))
         {
             var fields = item.Fields;
-            if (fields.ContainsKey("ARCHIVE_THROUGH_COMMENT_ID")) { rejected++; continue; }
-            if (!Id(fields.GetValueOrDefault("COMMAND_ID")) || !Node(fields.GetValueOrDefault("NODE"), out var node)) { rejected++; continue; }
+            if (fields.ContainsKey("ARCHIVE_THROUGH_COMMENT_ID")) { Reject(item.Id, false); continue; }
+            if (!Id(fields.GetValueOrDefault("COMMAND_ID")) || !Node(fields.GetValueOrDefault("NODE"), out var node)) { Reject(item.Id); continue; }
             var candidates = tasks.Values.Where(task => task.Id == fields["COMMAND_ID"] && task.NodeId == node && task.AssignedAt <= item.CreatedAt).ToArray();
             if (fields.TryGetValue("COMMENT_ID", out var reference)) candidates = candidates.Where(task => reference == task.CommandCommentId.ToString(CultureInfo.InvariantCulture)).ToArray();
             if (fields.TryGetValue("GENERATION", out var generation)) candidates = candidates.Where(task => generation == task.Generation.ToString(CultureInfo.InvariantCulture)).ToArray();
             if (fields.TryGetValue("WORK_KEY", out var key)) candidates = candidates.Where(task => key == task.WorkKey).ToArray();
-            if (candidates.Length != 1) { rejected++; continue; }
+            if (candidates.Length != 1)
+            {
+                if (candidates.Length == 0 && IsArchivedLateEvent(item, fields, archivedCommands, archiveDirectives)) continue;
+                Reject(item.Id); continue;
+            }
             var task = candidates[0];
             var status = fields.GetValueOrDefault("STATUS");
             var ack = item.Kind == "NODE_ACK" || item.Kind == "BRIDGE" && status is "ACK" or "ACCEPTED";
-            if (ack && status is not (null or "ACK" or "ACCEPTED" or "QUEUED_DEPENDENCY")) { rejected++; continue; }
-            if (!ack && status is null) { rejected++; continue; }
+            if (ack && status is not (null or "ACK" or "ACCEPTED" or "QUEUED_DEPENDENCY")) { Reject(item.Id); continue; }
+            if (!ack && status is null) { Reject(item.Id); continue; }
             if (Terminal.Contains(task.State)) continue;
             var state = ack ? "acknowledged" : status switch
             {
@@ -134,7 +152,7 @@ public static class OperationsDispatchProjection
         {
             var previous = tasks.Values.Where(task => task.Id == replacement.Supersedes && task.WorkKey == replacement.WorkKey &&
                 task.Generation < replacement.Generation && task.AssignedAt < replacement.AssignedAt).ToArray();
-            if (previous.Length != 1) { rejected++; continue; }
+            if (previous.Length != 1) { Reject(replacement.CommandCommentId); continue; }
             var old = previous[0];
             if (Terminal.Contains(old.State) && old.EndedAt <= replacement.AssignedAt) continue;
             tasks[old.CommandCommentId] = old with { State = "superseded", UpdatedAt = replacement.AssignedAt, EndedAt = replacement.AssignedAt,
@@ -169,6 +187,13 @@ public static class OperationsDispatchProjection
             }
         }
         if (tasks.Count > 500) throw new JsonException("DISPATCH_TASK_LIMIT");
+        // 只有兩個遠端節點都以有效 OWNER MAIN_COMMAND 提供封存範圍，才可忽略共同涵蓋的歷史拒絕事件。
+        // cutoff 不一致時採較小值；archive 指令本身的錯誤永遠不能被 horizon 隱藏。
+        long? rejectionHorizon = null;
+        var latestTaichung = archiveDirectives.Where(item => item.NodeId == "taichung").OrderBy(item => item.CreatedAt).ThenBy(item => item.CommentId).LastOrDefault();
+        var latestTaoyuan = archiveDirectives.Where(item => item.NodeId == "taoyuan").OrderBy(item => item.CreatedAt).ThenBy(item => item.CommentId).LastOrDefault();
+        if (latestTaichung is not null && latestTaoyuan is not null) rejectionHorizon = Math.Min(latestTaichung.Cutoff, latestTaoyuan.Cutoff);
+        var rejected = rejectedEvents.Count(item => !rejectionHorizon.HasValue || !item.MayArchive || item.CommentId > rejectionHorizon.Value);
         var result = new OperationsDispatchDocument(1, tasks.Count > 0 ? tasks.Values.Max(task => task.UpdatedAt) : null,
             tasks.Values.OrderBy(task => task.AssignedAt).ThenBy(task => task.CommandCommentId).ToArray(), rejected);
         return JsonSerializer.Serialize(result, JsonOptions);
@@ -239,6 +264,60 @@ public static class OperationsDispatchProjection
             if (key != key.ToUpperInvariant() || !fields.TryAdd(key, match.Groups[2].Value.Trim())) return false;
         }
         return fields.ContainsKey("COMMAND_ID");
+    }
+    private static bool TryArchivedCommandEnvelope(string body, out string node, out string commandId)
+    {
+        node = ""; commandId = "";
+        var content = body.Trim();
+        const string outerOpen = "[AEVRYND-ARCHIVED-BRIDGE]";
+        const string outerClose = "[/AEVRYND-ARCHIVED-BRIDGE]";
+        const string innerOpen = "[ARCHIVED_COMMAND]";
+        const string innerClose = "[/ARCHIVED_COMMAND]";
+        const string legacyPrefix = "封存說明：此命令在狀態校正 cutoff 前沒有任何節點回覆，全文保留但不得再執行。";
+        if (content.StartsWith(outerOpen, StringComparison.Ordinal) && content.EndsWith(outerClose, StringComparison.Ordinal))
+            content = content[outerOpen.Length..^outerClose.Length].Trim();
+        else if (content.StartsWith(legacyPrefix, StringComparison.Ordinal))
+            content = content[legacyPrefix.Length..].Trim();
+        else return false;
+        if (!content.StartsWith(innerOpen, StringComparison.Ordinal) || !content.EndsWith(innerClose, StringComparison.Ordinal)) return false;
+        content = content[innerOpen.Length..^innerClose.Length].Trim();
+        if (Regex.IsMatch(content, @"(?m)^\[/?(?:AEVRYND-ARCHIVED-BRIDGE|ARCHIVED_COMMAND)\]")) return false;
+        var fields = new Dictionary<string, string>(StringComparer.Ordinal);
+        var protectedFields = new HashSet<string>(new[] { "COMMAND_ID", "TARGET" }, StringComparer.OrdinalIgnoreCase);
+        foreach (var line in content.Split('\n'))
+        {
+            var match = Regex.Match(line.TrimEnd('\r'), @"^([A-Za-z_]+):\s*(.*)$");
+            if (!match.Success || !protectedFields.Contains(match.Groups[1].Value)) continue;
+            var key = match.Groups[1].Value;
+            if (key != key.ToUpperInvariant() || !fields.TryAdd(key, match.Groups[2].Value.Trim())) return false;
+        }
+        if (!Id(fields.GetValueOrDefault("COMMAND_ID")) || !Node(fields.GetValueOrDefault("TARGET"), out node)) return false;
+        commandId = fields["COMMAND_ID"];
+        return true;
+    }
+    private static bool IsArchivedLateEvent(Event item, Dictionary<string, string> fields, IReadOnlyList<ArchivedCommand> archivedCommands,
+        IReadOnlyList<ArchiveDirective> archiveDirectives)
+    {
+        if (!Id(fields.GetValueOrDefault("COMMAND_ID")) || !Node(fields.GetValueOrDefault("NODE"), out var node)) return false;
+        var status = fields.GetValueOrDefault("STATUS");
+        var validReplyShape = item.Kind switch
+        {
+            "NODE_ACK" => status is null or "ACK" or "ACCEPTED" or "QUEUED_DEPENDENCY",
+            "NODE_REPORT" => status is not null,
+            "BRIDGE" => status is not null,
+            _ => false
+        };
+        if (!validReplyShape) return false;
+        var latestTaichung = archiveDirectives.Where(candidate => candidate.NodeId == "taichung")
+            .OrderBy(candidate => candidate.CreatedAt).ThenBy(candidate => candidate.CommentId).LastOrDefault();
+        var latestTaoyuan = archiveDirectives.Where(candidate => candidate.NodeId == "taoyuan")
+            .OrderBy(candidate => candidate.CreatedAt).ThenBy(candidate => candidate.CommentId).LastOrDefault();
+        if (latestTaichung is null || latestTaoyuan is null) return false;
+        var directive = archiveDirectives.Where(candidate => candidate.NodeId == node)
+            .OrderBy(candidate => candidate.CreatedAt).ThenBy(candidate => candidate.CommentId).LastOrDefault();
+        if (directive is null || item.Id <= directive.Cutoff) return false;
+        var matchingCommands = archivedCommands.Count(command => command.CommentId <= directive.Cutoff && command.NodeId == node && command.CommandId == fields["COMMAND_ID"]);
+        return matchingCommands == 1;
     }
     private static bool Number(Dictionary<string, string> fields, string key, int fallback, int minimum, int maximum, out int value)
     {

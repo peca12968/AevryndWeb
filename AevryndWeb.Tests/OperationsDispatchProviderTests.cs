@@ -25,6 +25,8 @@ public sealed class OperationsDispatchProviderTests
         $"[AEVRYND-BRIDGE]\n[MAIN_COMMAND]\nCOMMAND_ID: {id}\nTARGET: {node}\nTASK: 驗證派工快照校正\n{extra}\n[/MAIN_COMMAND]\n[/AEVRYND-BRIDGE]";
     private static string Report(string id, string status, string node = "TAICHUNG") =>
         $"[AEVRYND-BRIDGE]\nNODE: {node}\nCOMMAND_ID: {id}\nSTATUS: {status}\n[/AEVRYND-BRIDGE]";
+    private static string ArchivedCommand(string id, string node = "TAICHUNG", string extra = "") =>
+        $"[AEVRYND-ARCHIVED-BRIDGE]\n[ARCHIVED_COMMAND]\nCOMMAND_ID: {id}\nTARGET: {node}\n{extra}\n[/ARCHIVED_COMMAND]\n[/AEVRYND-ARCHIVED-BRIDGE]";
     private static string ProjectComments(string? previous, params object[] comments) =>
         OperationsDispatchProjection.BuildJson(JsonSerializer.Serialize(comments), previous, Now);
 
@@ -181,5 +183,150 @@ public sealed class OperationsDispatchProviderTests
         Assert.Equal(20, archived.EventCommentId);
         Assert.NotNull(archived.EndedAt);
         Assert.Equal("failed", document.Tasks.Single(task => task.Id == "PRIOR-TERMINAL").State);
+    }
+
+    [Fact]
+    public void RejectionHorizonRequiresBothNodesAndKeepsEventsAfterMinimumCutoff()
+    {
+        const string malformed = "[MAIN_COMMAND]\nCOMMAND_ID: MALFORMED";
+        var both = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(5, malformed),
+            Comment(9, malformed),
+            Comment(11, malformed),
+            Comment(20, Command("TC-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z"),
+            Comment(21, Command("TY-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 8", "TAOYUAN"), "2026-09-05T07:02:00Z")));
+
+        // 全球 horizon 採兩節點最新 cutoff 的較小值 8：5 被封存，9 與 11 仍屬當前拒絕事件。
+        Assert.Equal(2, both.RejectedEvents);
+
+        var oneNode = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(5, malformed),
+            Comment(20, Command("TC-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z")));
+        Assert.Equal(1, oneNode.RejectedEvents);
+    }
+
+    [Fact]
+    public void CompleteDualNodeHorizonCanClearOnlyHistoricalRejections()
+    {
+        const string malformed = "[MAIN_COMMAND]\nCOMMAND_ID: MALFORMED";
+        var state = ProjectComments(null,
+            Comment(5, malformed),
+            Comment(20, Command("TC-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z"),
+            Comment(21, Command("TY-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10", "TAOYUAN"), "2026-09-05T07:02:00Z"));
+        var document = OperationsDispatchProjection.ReadDocument(state);
+
+        Assert.Equal(0, document.RejectedEvents);
+        var model = OperationsDispatchProvider.Project(state, Health(state, verified: Now), Now, Empty);
+        Assert.False(model.Schedule.Stale);
+        Assert.Contains("DISPATCH_SOURCE_CURRENT", model.Schedule.Diagnostic);
+    }
+
+    [Fact]
+    public void InvalidArchiveCommandCannotHideItselfBehindDualNodeHorizon()
+    {
+        var document = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(9, Command("INVALID-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 9")),
+            Comment(20, Command("TC-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z"),
+            Comment(21, Command("TY-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10", "TAOYUAN"), "2026-09-05T07:02:00Z")));
+
+        Assert.Equal(1, document.RejectedEvents);
+        Assert.DoesNotContain(document.Tasks, task => task.Id == "INVALID-CORRECTION");
+    }
+
+    [Fact]
+    public void LateReportForExactTrustedArchivedCommandIsIgnored()
+    {
+        var document = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(10, ArchivedCommand("HISTORICAL-WORK")),
+            Comment(20, Command("TC-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z"),
+            Comment(21, Command("TY-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10", "TAOYUAN"), "2026-09-05T07:02:00Z"),
+            Comment(22, Report("HISTORICAL-WORK", "NEEDS_MAIN_DECISION"), "2026-09-05T07:03:00Z")));
+
+        Assert.Equal(0, document.RejectedEvents);
+        Assert.DoesNotContain(document.Tasks, task => task.Id == "HISTORICAL-WORK");
+    }
+
+    [Theory]
+    [InlineData("UNKNOWN", "TAICHUNG")]
+    [InlineData("HISTORICAL-WORK", "TAOYUAN")]
+    public void UnknownOrWrongNodeLateReportRemainsRejected(string commandId, string node)
+    {
+        var document = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(10, ArchivedCommand("HISTORICAL-WORK")),
+            Comment(20, Command("TC-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z"),
+            Comment(21, Command("TY-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10", "TAOYUAN"), "2026-09-05T07:02:00Z"),
+            Comment(22, Report(commandId, "NEEDS_MAIN_DECISION", node), "2026-09-05T07:03:00Z")));
+
+        Assert.Equal(1, document.RejectedEvents);
+    }
+
+    [Fact]
+    public void UntrustedArchiveOrMalformedLateReplyRemainsRejected()
+    {
+        var untrusted = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(10, ArchivedCommand("HISTORICAL-WORK"), login: "other"),
+            Comment(20, Command("TC-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z"),
+            Comment(21, Command("TY-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10", "TAOYUAN"), "2026-09-05T07:02:00Z"),
+            Comment(22, Report("HISTORICAL-WORK", "NEEDS_MAIN_DECISION"), "2026-09-05T07:03:00Z")));
+        Assert.Equal(1, untrusted.RejectedEvents);
+
+        var missingStatus = "[AEVRYND-BRIDGE]\nNODE: TAICHUNG\nCOMMAND_ID: HISTORICAL-WORK\n[/AEVRYND-BRIDGE]";
+        var malformed = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(10, ArchivedCommand("HISTORICAL-WORK")),
+            Comment(20, Command("TC-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z"),
+            Comment(21, Command("TY-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10", "TAOYUAN"), "2026-09-05T07:02:00Z"),
+            Comment(22, missingStatus, "2026-09-05T07:03:00Z")));
+        Assert.Equal(1, malformed.RejectedEvents);
+    }
+
+    [Fact]
+    public void FakeOrDuplicateArchivedWrapperCannotAuthorizeLateReport()
+    {
+        var duplicate = ArchivedCommand("HISTORICAL-WORK", extra: "COMMAND_ID: HISTORICAL-WORK");
+        var document = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(10, duplicate),
+            Comment(20, Command("TC-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z"),
+            Comment(21, Command("TY-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10", "TAOYUAN"), "2026-09-05T07:02:00Z"),
+            Comment(22, Report("HISTORICAL-WORK", "NEEDS_MAIN_DECISION"), "2026-09-05T07:03:00Z")));
+
+        Assert.Equal(2, document.RejectedEvents);
+
+        var fake = ArchivedCommand("HISTORICAL-WORK").Replace("[/AEVRYND-ARCHIVED-BRIDGE]", "[/FAKE]");
+        document = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(10, fake),
+            Comment(20, Command("TC-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z"),
+            Comment(21, Command("TY-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10", "TAOYUAN"), "2026-09-05T07:02:00Z"),
+            Comment(22, Report("HISTORICAL-WORK", "NEEDS_MAIN_DECISION"), "2026-09-05T07:03:00Z")));
+        Assert.Equal(2, document.RejectedEvents);
+    }
+
+    [Fact]
+    public void DuplicateArchivedCommandIdentityCannotAuthorizeLateReport()
+    {
+        var document = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(9, ArchivedCommand("HISTORICAL-WORK")),
+            Comment(10, ArchivedCommand("HISTORICAL-WORK")),
+            Comment(20, Command("TC-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z"),
+            Comment(21, Command("TY-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10", "TAOYUAN"), "2026-09-05T07:02:00Z"),
+            Comment(22, Report("HISTORICAL-WORK", "NEEDS_MAIN_DECISION"), "2026-09-05T07:03:00Z")));
+
+        Assert.Equal(1, document.RejectedEvents);
+    }
+
+    [Fact]
+    public void ArchivedCommandAfterCutoffOrMissingNodeDirectiveFailsClosed()
+    {
+        var afterCutoff = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(11, ArchivedCommand("HISTORICAL-WORK")),
+            Comment(20, Command("TC-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z"),
+            Comment(21, Command("TY-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10", "TAOYUAN"), "2026-09-05T07:02:00Z"),
+            Comment(22, Report("HISTORICAL-WORK", "NEEDS_MAIN_DECISION"), "2026-09-05T07:03:00Z")));
+        Assert.Equal(1, afterCutoff.RejectedEvents);
+
+        var missingNode = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(10, ArchivedCommand("HISTORICAL-WORK")),
+            Comment(20, Command("TC-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z"),
+            Comment(22, Report("HISTORICAL-WORK", "NEEDS_MAIN_DECISION"), "2026-09-05T07:03:00Z")));
+        Assert.Equal(1, missingNode.RejectedEvents);
     }
 }
