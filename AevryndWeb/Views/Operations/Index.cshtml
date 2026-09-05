@@ -7,6 +7,7 @@
     private static string Metric(double? value) => value.HasValue ? $"{value.Value:0.0}%" : "unavailable";
     private static string Timestamp(DateTimeOffset? value) => value.HasValue ? value.Value.UtcDateTime.ToString("yyyy-MM-dd HH:mm:ss 'UTC'") : "unavailable";
     private static string StatusClass(string status, bool stale = false) => stale ? "is-stale" : status switch { "failed" => "is-failed", "blocked" => "is-blocked", "cancelled" => "is-cancelled", _ => "is-current" };
+    private static string HardwareStatusLabel(string status) => status switch { "verified" => "已驗證", "partial" => "部分已驗證", _ => "待採樣" };
 }
 
 <section class="operations-shell" data-operations-root data-snapshot-url="@Url.Action("Snapshot", "Operations")">
@@ -41,12 +42,12 @@
     </section>
 
     <section class="operations-section" aria-labelledby="hardwareTitle">
-        <div class="operations-title"><div><span class="micro-label">NODE HARDWARE &amp; MODEL</span><h2 id="hardwareTitle">節點硬體與模型</h2></div><p>硬體 metadata 與即時效能採樣分開；缺少副機實測時顯示 pending，不以 0 或估算值填補。</p></div>
+        <div class="operations-title"><div><span class="micro-label">NODE HARDWARE &amp; MODEL</span><h2 id="hardwareTitle">節點硬體與模型</h2></div><p>硬體 metadata 與即時效能採樣分開；缺少副機實測時顯示待採樣，不以 0 或估算值填補。</p></div>
         <div class="operations-hardware-grid" data-hardware-grid>
             @foreach (var hardware in Model.Hardware)
             {
                 <article class="operations-hardware-card" data-hardware-id="@hardware.Id">
-                    <header><div><small>@hardware.Id.ToUpperInvariant()</small><h3>@hardware.Name</h3></div><span class="operations-badge @(hardware.HardwareStatus == "verified" ? "is-current" : "is-stale")" data-hardware-status>@hardware.HardwareStatus</span></header>
+                    <header><div><small>@hardware.Id.ToUpperInvariant()</small><h3>@hardware.Name</h3></div><span class="operations-badge @(hardware.HardwareStatus == "verified" ? "is-current" : hardware.HardwareStatus == "partial" ? "is-stale" : "is-unavailable")" data-hardware-status data-hardware-declared-status="@hardware.HardwareStatus">@HardwareStatusLabel(hardware.HardwareStatus)</span></header>
                     <p class="hardware-model"><strong data-hardware-field="model">@hardware.Model</strong> · <span data-hardware-field="reasoning">@hardware.Reasoning</span></p>
                     <p class="hardware-role" data-hardware-field="role">@hardware.Role</p>
                     <dl class="hardware-details">

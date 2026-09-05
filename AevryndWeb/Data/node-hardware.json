@@ -34,9 +34,13 @@
       "id": "taoyuan", "name": "桃園", "model": "GPT-5.6 sol", "reasoning": "中",
       "modelSource": "使用者設定，2026-09-05；非執行階段探測",
       "role": "獨立審查、回歸測試與負向驗證；依收到的任務執行",
-      "hardwareStatus": "pending", "sampledAt": null,
-      "cpu": null, "ram": null, "gpu": null, "motherboard": null, "os": null, "storage": [],
-      "source": "等待副機實測回報；目前未觀察到任務 ACK"
+      "hardwareStatus": "verified", "sampledAt": "2026-09-05T04:29:41.3241946Z",
+      "cpu": "AMD Ryzen 5 5500X3D · 6 核心 / 12 執行緒",
+      "ram": "DIMM 安裝 32 GiB；OS 可見 31.892 GiB",
+      "gpu": "NVIDIA GeForce RTX 4070 Ti · 11.994 GiB VRAM",
+      "motherboard": null, "os": null,
+      "storage": ["Predator SSD GM7 1TB · SSD · 953.869 GiB"],
+      "source": "桃園實測回報 5549352714：Win32_Processor、Win32_PhysicalMemory、Win32_ComputerSystem、nvidia-smi、Get-PhysicalDisk；回報自述 JSON 與第二次採樣核對通過，主機未直接取得遠端原始 JSON 驗證其雜湊；主機板與 OS 版本未採樣"
     }
   ]
 }

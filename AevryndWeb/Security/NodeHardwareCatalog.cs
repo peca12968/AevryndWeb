@@ -24,11 +24,21 @@ public sealed class NodeHardwareCatalog(IWebHostEnvironment environment)
                 document.Nodes.Any(node => !KnownIds.Contains(node.Id)) || document.Nodes.Select(node => node.Id).Distinct(StringComparer.Ordinal).Count() != document.Nodes.Count)
                 return [];
             return document.Nodes.Select(node => new NodeHardwareView(node.Id, node.Name, node.Model, node.Reasoning, node.ModelSource,
-                node.Role, node.HardwareStatus, node.SampledAt, node.Cpu, node.Ram, node.Gpu, node.Motherboard, node.Os,
+                node.Role, ResolveHardwareStatus(node.HardwareStatus, node.Cpu, node.Ram, node.Gpu, node.Motherboard, node.Os, node.Storage), node.SampledAt, node.Cpu, node.Ram, node.Gpu, node.Motherboard, node.Os,
                 node.Storage?.Take(16).ToArray() ?? [], node.Source)).ToArray();
         }
         catch (Exception exception) when (exception is IOException or JsonException or UnauthorizedAccessException)
         { return []; }
+    }
+
+    public static string ResolveHardwareStatus(string declaredStatus, string? cpu, string? ram, string? gpu, string? motherboard, string? os, IReadOnlyCollection<string>? storage)
+    {
+        var fields = new[] { cpu, ram, gpu, motherboard, os };
+        var hasAny = fields.Any(value => !string.IsNullOrWhiteSpace(value)) || storage?.Any(value => !string.IsNullOrWhiteSpace(value)) == true;
+        var complete = fields.All(value => !string.IsNullOrWhiteSpace(value)) && storage?.Any(value => !string.IsNullOrWhiteSpace(value)) == true;
+        if (declaredStatus is not ("verified" or "partial")) return "pending";
+        if (declaredStatus == "verified" && complete) return "verified";
+        return hasAny ? "partial" : "pending";
     }
 
     private sealed class NodeHardwareDocument

@@ -43,6 +43,13 @@
     const cell = document.createElement("td"); cell.dataset.label = label; cell.textContent = value; row.append(cell); return cell;
   };
   const hardwareValue = value => value || "等待實測";
+  const hardwareStatus = item => {
+    const fields = [item.cpu, item.ram, item.gpu, item.motherboard, item.os];
+    const hasAny = fields.some(value => typeof value === "string" && value.trim()) || (Array.isArray(item.storage) && item.storage.some(value => typeof value === "string" && value.trim()));
+    const complete = fields.every(value => typeof value === "string" && value.trim()) && Array.isArray(item.storage) && item.storage.some(value => typeof value === "string" && value.trim());
+    if (item.hardwareStatus !== "verified" && item.hardwareStatus !== "partial") return { value: "pending", label: "待採樣", css: "is-unavailable" };
+    return item.hardwareStatus === "verified" && complete ? { value: "verified", label: "已驗證", css: "is-current" } : hasAny ? { value: "partial", label: "部分已驗證", css: "is-stale" } : { value: "pending", label: "待採樣", css: "is-unavailable" };
+  };
   const badge = (value, stale = false) => {
     const terminal = value === "failed" ? "is-failed" : value === "blocked" ? "is-blocked" : value === "cancelled" ? "is-cancelled" : stale ? "is-stale" : "is-current";
     const span = document.createElement("span"); span.className = `operations-badge ${terminal}`;
@@ -129,7 +136,7 @@
     });
     model.hardware?.forEach(item => {
       const card = hardwareGrid?.querySelector(`[data-hardware-id="${item.id}"]`); if (!card) return;
-      const status = card.querySelector("[data-hardware-status]"); status.textContent = item.hardwareStatus || "pending"; status.className = `operations-badge ${item.hardwareStatus === "verified" ? "is-current" : "is-stale"}`;
+      const resolvedStatus = hardwareStatus(item); const status = card.querySelector("[data-hardware-status]"); status.textContent = resolvedStatus.label; status.dataset.hardwareDeclaredStatus = resolvedStatus.value; status.className = `operations-badge ${resolvedStatus.css}`;
       for (const field of ["model", "reasoning", "role", "cpu", "ram", "gpu", "motherboard", "os", "modelSource", "source"]) { const element = card.querySelector(`[data-hardware-field="${field}"]`); if (element) element.textContent = hardwareValue(item[field]); }
       const storage = card.querySelector('[data-hardware-field="storage"]'); if (storage) storage.textContent = item.storage?.length ? item.storage.join("；") : "等待實測";
       const sampled = card.querySelector('[data-hardware-field="sampledAt"]'); if (sampled) { sampled.textContent = formatTime(item.sampledAt); sampled.dateTime = item.sampledAt || ""; }
