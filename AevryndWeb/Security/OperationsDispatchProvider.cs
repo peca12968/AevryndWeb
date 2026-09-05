@@ -19,7 +19,7 @@ public sealed class OperationsDispatchProvider(IConfiguration configuration)
         catch (Exception error) when (error is IOException or UnauthorizedAccessException or JsonException or ArgumentException or KeyNotFoundException or InvalidOperationException or FormatException)
         {
             return Unify(model with { Schedule = model.Schedule with { Stale = true,
-                Diagnostic = "DISPATCH_SOURCE_UNAVAILABLE：動態派遣來源未提供可驗證快照；保留既有資料，不推測工作停止。" } });
+                Diagnostic = "遠端派工來源目前無法核對；保留既有資料，不推測工作狀態。" } });
         }
     }
 
@@ -79,9 +79,9 @@ public sealed class OperationsDispatchProvider(IConfiguration configuration)
         }
         return Unify(model with { History = history, Schedule = new(true, stale, document.ObservedAt, tasks)
         {
-            Catalog = catalog, VerifiedAt = verified,
-            Diagnostic = stale ? "DISPATCH_SOURCE_STALE：來源未在兩分鐘內完成線上核對；離線快照不代表已連線。" :
-                status == "partial" ? "DISPATCH_EVENTS_REJECTED：部分留言格式或識別未通過驗證，僅顯示已驗證事件。" : "DISPATCH_SOURCE_CURRENT：完整來源已核對。"
+            Catalog = catalog, VerifiedAt = verified, LocalScheduleStale = model.Schedule.LocalScheduleStale,
+            Diagnostic = stale ? "遠端派工來源尚未完成近期核對；保留已驗證資料，不推測工作狀態。" :
+                status == "partial" ? "遠端派工來源有部分事件待核對；目前僅顯示已驗證資料。" : "遠端派工來源已完成核對。"
         } });
     }
 
@@ -93,6 +93,7 @@ public sealed class OperationsDispatchProvider(IConfiguration configuration)
         {
             var node = work.Host switch { "本機" => "local", "台中" => "taichung", "桃園" => "taoyuan", _ => "" };
             if (node.Length == 0) continue;
+            if (node == "local" && model.Schedule.LocalScheduleStale) continue;
             var matched = tasks.Where(task => task.Id == work.Name && task.NodeId == node && work.StartedAt >= task.AssignedAt)
                 .OrderByDescending(task => task.AssignedAt).FirstOrDefault();
             if (model.Schedule.Catalog.Any(task => task.Id == work.Name && task.NodeId == node && work.StartedAt >= task.AssignedAt &&

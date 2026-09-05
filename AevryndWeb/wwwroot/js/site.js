@@ -112,16 +112,25 @@
     }
   };
   const stateLabel = { queued: "等待中", acknowledged: "已接單", running: "執行中", blocked: "等待條件", unconfirmed: "狀態待確認" };
+  const scheduleDiagnostics = new Set([
+    "遠端派工來源已完成核對。",
+    "遠端派工來源有部分事件待核對；目前僅顯示已驗證資料。",
+    "遠端派工來源尚未完成近期核對；保留已驗證資料，不推測工作狀態。",
+    "遠端派工來源目前無法核對；保留既有資料，不推測工作狀態。",
+    "來源狀態待核對；目前僅顯示可驗證資料。"
+  ]);
   const renderSchedule = schedule => {
     if (!scheduleGrid) return;
     const tasks = Array.isArray(schedule?.tasks) ? schedule.tasks : [];
     if (scheduleStatus) {
       const observed = formatTime(schedule?.observedAt);
-      scheduleStatus.textContent = schedule?.sourceAvailable
-        ? (schedule.stale ? "排程資料已過期（" + observed + "）；不推測任務已停止。" : "排程來源已驗證，觀測於 " + observed + "。")
+      scheduleStatus.textContent = schedule?.localScheduleStale ? "本機排程資料待更新；舊的非終態工作不列入即時計數。 " : "";
+      scheduleStatus.textContent += schedule?.sourceAvailable
+        ? (schedule.stale ? "派工來源尚未完成近期核對（" + observed + "）；不推測任務狀態。" : "派工來源已驗證，觀測於 " + observed + "。")
         : "目前沒有可驗證的排程來源。";
       if (schedule?.sourceAvailable && schedule.verifiedAt) scheduleStatus.textContent += " 來源核對：" + formatTime(schedule.verifiedAt) + "；工作時間依實際事件保留。";
-      if (schedule?.diagnostic) scheduleStatus.textContent += " " + schedule.diagnostic;
+      if (scheduleDiagnostics.has(schedule?.displayDiagnostic)) scheduleStatus.textContent += " " + schedule.displayDiagnostic;
+      else if (schedule?.diagnostic || schedule?.displayDiagnostic) scheduleStatus.textContent += " 來源狀態待核對；目前僅顯示可驗證資料。";
     }
     const byNode = new Map(["local", "taichung", "taoyuan"].map(id => [id, tasks.filter(task => task.nodeId === id)]));
     scheduleGrid.querySelectorAll("[data-schedule-node]").forEach(card => {
@@ -200,7 +209,10 @@
         !model.activeWork.every(validWork) || !model.history.every(validWork) ||
         (model.hardware != null && (!Array.isArray(model.hardware) || !model.hardware.every(validHardware))) ||
         (model.schedule != null && (typeof model.schedule !== "object" || typeof model.schedule.sourceAvailable !== "boolean" ||
-          typeof model.schedule.stale !== "boolean" || !validDate(model.schedule.observedAt) || !validDate(model.schedule.verifiedAt) || !Array.isArray(model.schedule.tasks) ||
+          typeof model.schedule.stale !== "boolean" || (model.schedule.localScheduleStale != null && typeof model.schedule.localScheduleStale !== "boolean") ||
+          (model.schedule.diagnostic != null && typeof model.schedule.diagnostic !== "string") ||
+          (model.schedule.displayDiagnostic != null && typeof model.schedule.displayDiagnostic !== "string") ||
+          !validDate(model.schedule.observedAt) || !validDate(model.schedule.verifiedAt) || !Array.isArray(model.schedule.tasks) ||
           !model.schedule.tasks.every(validScheduleTask) ||
           (model.schedule.catalog != null && (!Array.isArray(model.schedule.catalog) || !model.schedule.catalog.every(validScheduleTask)))))) return false;
     const ids = model.nodes.map(node => node?.id);

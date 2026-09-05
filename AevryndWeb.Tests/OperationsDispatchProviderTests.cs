@@ -218,7 +218,7 @@ public sealed class OperationsDispatchProviderTests
         Assert.Equal(0, document.RejectedEvents);
         var model = OperationsDispatchProvider.Project(state, Health(state, verified: Now), Now, Empty);
         Assert.False(model.Schedule.Stale);
-        Assert.Contains("DISPATCH_SOURCE_CURRENT", model.Schedule.Diagnostic);
+        Assert.Equal("遠端派工來源已完成核對。", model.Schedule.DisplayDiagnostic);
     }
 
     [Fact]
@@ -328,5 +328,37 @@ public sealed class OperationsDispatchProviderTests
             Comment(20, Command("TC-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z"),
             Comment(22, Report("HISTORICAL-WORK", "NEEDS_MAIN_DECISION"), "2026-09-05T07:03:00Z")));
         Assert.Equal(1, missingNode.RejectedEvents);
+    }
+
+    [Fact]
+    public void StaleLocalScheduleCannotMixWithFreshRemoteDispatch()
+    {
+        var localScheduleJson = JsonSerializer.Serialize(new
+        {
+            schemaVersion = 2, observedAt = Now.AddMinutes(-10), verifiedAt = Now.AddMinutes(-8),
+            tasks = new[] { new
+            {
+                id = "OLD-LOCAL", nodeId = "local", title = "本機舊工作", description = "等待排程來源更新。",
+                state = "running", reason = "舊快照仍標為執行。", dependsOn = Array.Empty<string>(),
+                assignedAt = Now.AddMinutes(-20), updatedAt = Now.AddMinutes(-10), evidence = "舊排程快照。"
+            } }
+        });
+        var oldLocal = new OperationsWorkView("OLD-LOCAL", "codex", "本機", Now.AddMinutes(-20), Now.AddMinutes(-9), null, "working", "舊遙測", true);
+        var baseModel = Empty with { ActiveWork = [oldLocal] };
+        var localSchedule = OperationsScheduleProvider.Parse(localScheduleJson, Now, baseModel);
+        Assert.True(localSchedule.LocalScheduleStale); Assert.Empty(localSchedule.Tasks);
+
+        var remoteState = State(Task("FRESH-REMOTE", "queued") with
+        {
+            CommandCommentId = 30, AssignedAt = Now.AddMinutes(-1), UpdatedAt = Now.AddMinutes(-1),
+            AcknowledgedAt = null, EndedAt = null, AckDeadline = Now.AddMinutes(5), LeaseExpiresAt = null
+        });
+        var mixed = OperationsDispatchProvider.Project(remoteState, Health(remoteState, verified: Now), Now, baseModel with { Schedule = localSchedule });
+
+        Assert.True(mixed.Schedule.LocalScheduleStale);
+        Assert.DoesNotContain(mixed.Schedule.Tasks, task => task.NodeId == "local");
+        Assert.Contains(mixed.Schedule.Tasks, task => task.Id == "FRESH-REMOTE" && task.NodeId == "taichung");
+        Assert.Contains(mixed.Schedule.Catalog, task => task.Id == "OLD-LOCAL");
+        Assert.DoesNotContain(mixed.ActiveWork, work => work.Name == "OLD-LOCAL" && !work.Stale);
     }
 }

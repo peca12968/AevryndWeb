@@ -17,7 +17,9 @@ public sealed class OperationsSchedulePageTests
         Assert.Contains("taichung", view);
         Assert.Contains("taoyuan", view);
         Assert.Contains("Model.Schedule.Tasks", view);
-        Assert.Contains("排程資料已過期", view);
+        Assert.Contains("本機排程資料待更新", view);
+        Assert.Contains("DisplayDiagnostic", view);
+        Assert.DoesNotContain("DISPATCH_SOURCE_CURRENT", view);
         Assert.Contains("等待中", view);
         Assert.Contains("先前任務", view);
         Assert.Contains("renderSchedule", script);

@@ -46,6 +46,7 @@ public sealed class OperationsScheduleProvider(IConfiguration configuration)
                 document.Tasks.Any(task => !Valid(task, document.SchemaVersion, document.ObservedAt, now)) ||
                 document.Tasks.Select(task => (task.NodeId, task.Id)).Distinct().Count() != document.Tasks.Count)
                 return new(false, false, null, []);
+            var stale = now - (document.VerifiedAt ?? document.ObservedAt) > TimeSpan.FromMinutes(2);
             var tasks = new List<OperationsScheduledTaskView>();
             var catalog = new List<OperationsScheduledTaskView>();
             foreach (var task in document.Tasks)
@@ -79,11 +80,12 @@ public sealed class OperationsScheduleProvider(IConfiguration configuration)
                     state = current.Status == "blocked" ? "blocked" : task.NodeId == "local" && task.State == "running" ? "running" : "acknowledged";
                     reason = current.Status == "blocked" ? "工作來源正在等待必要條件；等待後續處理。" : "工作來源有更新；接單回報不等於已確認程序正在執行。";
                 }
-                tasks.Add(new(task.Id, task.NodeId, task.Title, task.Description, state, reason,
+                if (!stale) tasks.Add(new(task.Id, task.NodeId, task.Title, task.Description, state, reason,
                     task.DependsOn, task.AssignedAt, updated, task.Evidence));
             }
-            return new(true, now - (document.VerifiedAt ?? document.ObservedAt) > TimeSpan.FromMinutes(2), document.ObservedAt,
-                tasks.OrderBy(task => task.NodeId, StringComparer.Ordinal).ThenBy(task => task.AssignedAt).ThenBy(task => task.Id, StringComparer.Ordinal).ToArray()) { Catalog = catalog, VerifiedAt = document.VerifiedAt };
+            return new(true, stale, document.ObservedAt,
+                tasks.OrderBy(task => task.NodeId, StringComparer.Ordinal).ThenBy(task => task.AssignedAt).ThenBy(task => task.Id, StringComparer.Ordinal).ToArray())
+            { Catalog = catalog, VerifiedAt = document.VerifiedAt, LocalScheduleStale = stale };
         }
         catch (JsonException) { return new(false, false, null, []); }
     }

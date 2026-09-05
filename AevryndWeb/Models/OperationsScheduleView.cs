@@ -6,6 +6,15 @@ public sealed record OperationsScheduleView(bool SourceAvailable, bool Stale, Da
     public IReadOnlyList<OperationsScheduledTaskView> Catalog { get; init; } = [];
     public DateTimeOffset? VerifiedAt { get; init; }
     public string Diagnostic { get; init; } = "";
+    public bool LocalScheduleStale { get; init; }
+    public string DisplayDiagnostic => Diagnostic switch
+    {
+        "" => "",
+        "遠端派工來源已完成核對。" or "遠端派工來源有部分事件待核對；目前僅顯示已驗證資料。" or
+        "遠端派工來源尚未完成近期核對；保留已驗證資料，不推測工作狀態。" or
+        "遠端派工來源目前無法核對；保留既有資料，不推測工作狀態。" => Diagnostic,
+        _ => "來源狀態待核對；目前僅顯示可驗證資料。"
+    };
 
     public string WorkTitle(OperationsWorkView work) => Catalog.OrderByDescending(task => task.AssignedAt).FirstOrDefault(task =>
         task.Id == work.Name && NodeHost(task.NodeId) == work.Host && work.StartedAt >= task.AssignedAt)?.Title ?? work.Name;

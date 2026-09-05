@@ -31,8 +31,25 @@ public sealed class OperationsScheduleProviderTests
     public void StaleCatalogRetainsTaskAndOriginalTime()
     {
         var model = OperationsScheduleProvider.Parse(Document().ToJsonString(), Now.AddMinutes(3), Snapshot);
-        Assert.True(model.Stale); Assert.Equal("queued", Assert.Single(model.Tasks).State);
-        Assert.Equal(Now.AddHours(-1), model.Tasks[0].UpdatedAt);
+        Assert.True(model.Stale); Assert.True(model.LocalScheduleStale); Assert.Empty(model.Tasks);
+        Assert.Equal(Now.AddHours(-1), Assert.Single(model.Catalog).UpdatedAt);
+    }
+
+    [Fact]
+    public void FreshLocalScheduleRemainsVisible()
+    {
+        var document = Document(); document["tasks"]![0]!["nodeId"] = "local";
+        var model = OperationsScheduleProvider.Parse(document.ToJsonString(), Now, Snapshot);
+        Assert.False(model.LocalScheduleStale);
+        Assert.Equal("local", Assert.Single(model.Tasks).NodeId);
+    }
+
+    [Fact]
+    public void UnknownScheduleDiagnosticHasNeutralFailClosedDisplayText()
+    {
+        var schedule = new OperationsScheduleView(true, false, Now, []) { Diagnostic = "INTERNAL_UNKNOWN_DETAIL secret=value" };
+        Assert.Equal("來源狀態待核對；目前僅顯示可驗證資料。", schedule.DisplayDiagnostic);
+        Assert.DoesNotContain("INTERNAL", schedule.DisplayDiagnostic);
     }
 
     [Theory]

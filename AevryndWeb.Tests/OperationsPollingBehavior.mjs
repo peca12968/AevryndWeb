@@ -479,7 +479,7 @@ test("malformed title catalog cannot replace trusted view", async () => {
 test("unified task area refreshes progress and preserves generation details without duplicate active table", async () => {
   const model = snapshot();
   const task = { id: "WORK-01", instanceId: "555001", nodeId: "taichung", title: "<script>中文任務</script>", description: "工作", reason: "第一階段", state: "acknowledged", dependsOn: [], assignedAt: model.snapshotAt, updatedAt: model.snapshotAt, evidence: "OWNER 555001" };
-  model.schedule = { sourceAvailable: true, stale: false, observedAt: model.snapshotAt, diagnostic: "來源核對", tasks: [task], catalog: [task] };
+  model.schedule = { sourceAvailable: true, stale: false, observedAt: model.snapshotAt, diagnostic: "遠端派工來源已完成核對。", displayDiagnostic: "遠端派工來源已完成核對。", tasks: [task], catalog: [task] };
   const later = structuredClone(model); later.schedule.tasks[0].reason = "第二階段"; later.schedule.tasks[0].state = "running";
   const app = boot([{ kind: "response", response: jsonResponse(model) }, { kind: "response", response: jsonResponse(later) }], { unified: true });
   await app.clock.advanceTo(10000);
@@ -490,7 +490,24 @@ test("unified task area refreshes progress and preserves generation details with
   assert.equal(card.list.children.length, 1); assert.equal(card.list.children[0].open, true);
   assert.equal(card.list.children[0].children[0].children[1].textContent, "執行中");
   assert.match(card.list.children[0].children[1].children[1].textContent, /第二階段/);
-  assert.match(app.elements.scheduleStatus.textContent, /來源核對/);
+  assert.match(app.elements.scheduleStatus.textContent, /遠端派工來源已完成核對/);
+});
+
+test("stale local schedule warning and unknown diagnostic fail closed without exposing raw code", async () => {
+  const model = snapshot();
+  const remote = { id: "REMOTE-01", nodeId: "taichung", title: "遠端新工作", description: "工作", reason: "已驗證", state: "queued", dependsOn: [], assignedAt: model.snapshotAt, updatedAt: model.snapshotAt, evidence: "來源" };
+  model.schedule = {
+    sourceAvailable: true, stale: false, localScheduleStale: true, observedAt: model.snapshotAt,
+    diagnostic: "INTERNAL_UNKNOWN_DIAGNOSTIC", displayDiagnostic: "來源狀態待核對；目前僅顯示可驗證資料。",
+    tasks: [remote], catalog: [remote]
+  };
+  const app = boot([{ kind: "response", response: jsonResponse(model) }], { unified: true });
+  await app.clock.advanceTo(10000);
+  assert.equal(app.scheduleCards.local.count.textContent, "0");
+  assert.equal(app.scheduleCards.taichung.count.textContent, "1");
+  assert.match(app.elements.scheduleStatus.textContent, /本機排程資料待更新/);
+  assert.match(app.elements.scheduleStatus.textContent, /來源狀態待核對/);
+  assert.doesNotMatch(app.elements.scheduleStatus.textContent, /INTERNAL_UNKNOWN_DIAGNOSTIC/);
 });
 
 test("past task DataTable preserves search page and five-column epoch timeline on refresh", async () => {

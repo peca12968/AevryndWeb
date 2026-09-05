@@ -66,7 +66,7 @@
     </section>
 
     <section class="operations-section" aria-labelledby="scheduleTitle">
-        <div class="operations-title"><div><span class="micro-label">LIVE TASKS</span><h2 id="scheduleTitle">三台主機即時任務</h2></div><p data-schedule-status>@(Model.Schedule.SourceAvailable ? (Model.Schedule.Stale ? $"排程資料已過期（{Timestamp(Model.Schedule.ObservedAt)}）；不推測任務已停止。" : $"排程來源已驗證，觀測於 {Timestamp(Model.Schedule.ObservedAt)}。") : "目前沒有可驗證的排程來源。")@if (Model.Schedule.SourceAvailable && Model.Schedule.VerifiedAt.HasValue) { <span> 來源核對：@Timestamp(Model.Schedule.VerifiedAt)；工作時間依實際事件保留。</span> } <span>@Model.Schedule.Diagnostic</span></p></div>
+        <div class="operations-title"><div><span class="micro-label">LIVE TASKS</span><h2 id="scheduleTitle">三台主機即時任務</h2></div><p data-schedule-status>@if (Model.Schedule.LocalScheduleStale) { <span>本機排程資料待更新；舊的非終態工作不列入即時計數。 </span> }<span>@(Model.Schedule.SourceAvailable ? (Model.Schedule.Stale ? $"派工來源尚未完成近期核對（{Timestamp(Model.Schedule.ObservedAt)}）；不推測任務狀態。" : $"派工來源已驗證，觀測於 {Timestamp(Model.Schedule.ObservedAt)}。") : "目前沒有可驗證的排程來源。")</span>@if (Model.Schedule.SourceAvailable && Model.Schedule.VerifiedAt.HasValue) { <span> 來源核對：@Timestamp(Model.Schedule.VerifiedAt)；工作時間依實際事件保留。</span> }@if (!string.IsNullOrEmpty(Model.Schedule.DisplayDiagnostic)) { <span> @Model.Schedule.DisplayDiagnostic</span> }</p></div>
         <div class="operations-schedule-grid" data-schedule-grid>
             @foreach (var node in new[] { (Id: "local", Name: "本機"), (Id: "taichung", Name: "台中"), (Id: "taoyuan", Name: "桃園") })
             {
