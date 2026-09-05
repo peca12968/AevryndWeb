@@ -91,6 +91,7 @@
         <div class="operations-title"><div><span class="micro-label">VERIFIED ENGINE MILESTONE</span><h2 id="engineMilestoneTitle">已推送引擎完成歷程</h2></div><p>此區只記錄已推送且具明確測試邊界的里程碑，不併入即時節點狀態。</p></div>
         <div class="operations-table-wrap"><table class="operations-table operations-history"><thead><tr><th>里程碑</th><th>來源</th><th>狀態</th><th>驗證</th><th>證據邊界</th></tr></thead><tbody>
             <tr><td data-label="里程碑">Development Ultra GPU truth</td><td data-label="來源">engine commit fff5638</td><td data-label="狀態"><span class="operations-badge is-current">已完成</span></td><td data-label="驗證">fresh 6/6 + hostile 8/8</td><td data-label="證據邊界">實際 D3D12 adapter LUID 綁定 DXGI telemetry；commit 後持續保存 current-epoch observation，rollback 與 epoch reset 不沿用舊證據。第一個 false 是首筆 frame budget（submitted=1、completed=0、timing=0、lastGpuNs=0）。這不是視覺提高證據；Demo 仍為 34 / 100，v1.4 未發布。</td></tr>
+            <tr><td data-label="里程碑">Character asset manifest trust</td><td data-label="來源">engine commit f0129d1</td><td data-label="狀態"><span class="operations-badge is-current">已完成</span></td><td data-label="驗證">fresh 2/2 + hostile GO · package blend=0</td><td data-label="證據邊界">固定 manifest trust anchor、handle-relative／reparse 防護與 GLTF／AESKIN／manifest cross-check 已驗證；runtime 只消費 immutable 資產。這不代表角色美術改善；Demo 仍為 34 / 100，v1.4 未發布。</td></tr>
         </tbody></table></div>
     </section>
 
