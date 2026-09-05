@@ -77,7 +77,7 @@ public sealed class OperationsScheduleProvider(IConfiguration configuration)
                 {
                     updated = current.UpdatedAt!.Value;
                     state = current.Status == "blocked" ? "blocked" : task.NodeId == "local" && task.State == "running" ? "running" : "acknowledged";
-                    reason = current.Status == "blocked" ? "工作來源回報受阻；等待後續處理。" : "工作來源有更新；接單回報不等於已確認程序正在執行。";
+                    reason = current.Status == "blocked" ? "工作來源正在等待必要條件；等待後續處理。" : "工作來源有更新；接單回報不等於已確認程序正在執行。";
                 }
                 tasks.Add(new(task.Id, task.NodeId, task.Title, task.Description, state, reason,
                     task.DependsOn, task.AssignedAt, updated, task.Evidence));

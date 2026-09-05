@@ -111,7 +111,7 @@ public static class OperationsDispatchProjection
                 "completed" => "節點明確回報完成；不代表其他驗收項目已通過。",
                 "failed" => "節點明確回報失敗，等待主機處理。",
                 "cancelled" => "節點明確回報取消。",
-                "blocked" => "節點已回報受阻或等待主機驗證。",
+                "blocked" => "節點正在等待必要條件或主機驗證。",
                 _ => "節點已提供報告，結果等待主機確認；未推定成功、失敗或程序狀態。"
             };
             if (!ack && Safe(status, 80)) reason += " 回報狀態：" + status + "。";

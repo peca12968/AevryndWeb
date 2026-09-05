@@ -26,8 +26,7 @@ public sealed class OperationsDispatchProviderTests
         var state = State(Task("WORK-01", "acknowledged"));
         var model = OperationsDispatchProvider.Project(state, Health(state, verified: Now), Now, Empty);
         Assert.False(model.Schedule.Stale); Assert.Equal(Now, model.Schedule.VerifiedAt);
-        var task = Assert.Single(model.Schedule.Tasks); Assert.Equal("unconfirmed", task.State);
-        Assert.Equal(Now.AddMinutes(-5), task.UpdatedAt); Assert.Empty(model.History);
+        Assert.Empty(model.Schedule.Tasks); Assert.Empty(model.History);
     }
 
     [Fact]
@@ -41,7 +40,7 @@ public sealed class OperationsDispatchProviderTests
     [Fact]
     public void ExplicitTerminalOnlyInPastTasksAndDependencyNeedsVerifiedEnd()
     {
-        var state = State(Task("WORK-01", "unconfirmed"), Task("WORK-02", "acknowledged", ["WORK-01"]) with { CommandCommentId = 3 });
+        var state = State(Task("WORK-01", "unconfirmed"), Task("WORK-02", "acknowledged", ["WORK-01"]) with { CommandCommentId = 3, LeaseExpiresAt = Now.AddMinutes(5) });
         var model = OperationsDispatchProvider.Project(state, Health(state, verified: Now), Now, Empty);
         Assert.Equal("blocked", model.Schedule.Tasks.Single(task => task.Id == "WORK-02").State); Assert.Empty(model.History);
         state = State(Task("WORK-01", "failed"));
@@ -68,5 +67,23 @@ public sealed class OperationsDispatchProviderTests
         var model = OperationsDispatchProvider.Project(state, Health(state, verified: Now), Now, Empty with
         { ActiveWork = [new("WORK-01", "codex", "台中", Now.AddMinutes(-1), Now, null, "running", null, false)] });
         Assert.Equal("running", Assert.Single(model.Schedule.Tasks).State); Assert.Single(model.History);
+    }
+
+    [Fact]
+    public void LiveScheduleExcludesReviewReportsAndKeepsOnlyLatestGeneration()
+    {
+        var state = State(
+            Task("OLD-REPORT", "unconfirmed"),
+            Task("WAITING-REVIEW", "blocked") with { CommandCommentId = 2 },
+            Task("WORK-G1", "queued") with { CommandCommentId = 3, WorkKey = "SAME-WORK", AckDeadline = Now.AddMinutes(5) },
+            Task("WORK-G2", "queued") with { CommandCommentId = 4, WorkKey = "SAME-WORK", Generation = 2, AssignedAt = Now.AddMinutes(-1), UpdatedAt = Now.AddMinutes(-1), AckDeadline = Now.AddMinutes(5), AcknowledgedAt = null, LeaseExpiresAt = null });
+
+        var model = OperationsDispatchProvider.Project(state, Health(state, verified: Now), Now, Empty);
+
+        var task = Assert.Single(model.Schedule.Tasks);
+        Assert.Equal("WORK-G2", task.Id);
+        Assert.Equal("queued", task.State);
+        Assert.Contains(model.Schedule.Catalog, item => item.Id == "OLD-REPORT");
+        Assert.Contains(model.Schedule.Catalog, item => item.Id == "WAITING-REVIEW");
     }
 }

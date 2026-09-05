@@ -63,12 +63,18 @@ public sealed class OperationsDispatchProvider(IConfiguration configuration)
                 continue;
             }
             if (task.State is "cancelled" or "superseded") continue;
+            // 即時任務只顯示同一節點／工作鍵的最新世代；舊世代仍保留在 catalog 與過往證據中。
+            if (document.Tasks.Any(candidate => candidate.NodeId == task.NodeId && candidate.WorkKey == task.WorkKey &&
+                (candidate.Generation > task.Generation || candidate.Generation == task.Generation && candidate.AssignedAt > task.AssignedAt)))
+                continue;
             if (task.State == "queued" && task.AckDeadline < now)
                 entry = entry with { State = "unconfirmed", Reason = "接單期限已過，尚未驗證接單；未推測取消或完成。 " + entry.Reason };
             if (task.LeaseExpiresAt < now && task.State == "acknowledged")
                 entry = entry with { State = "unconfirmed", Reason = "派遣租約已過，程序狀態待確認；未推測已停止。 " + entry.Reason };
             if (task.DependsOn.Any(id => !document.Tasks.Any(dependency => dependency.Id == id && dependency.State is "completed" or "failed" or "cancelled")))
                 entry = entry with { State = "blocked", Reason = "相依任務尚無可驗證終態；" + entry.Reason };
+            // NODE_REPORT 的待主機審核與已過期租約不是副機可執行佇列，避免把它們誤算成正在等待的工作。
+            if (task.State is "unconfirmed" or "blocked" || entry.State == "unconfirmed") continue;
             tasks.Add(entry);
         }
         return Unify(model with { History = history, Schedule = new(true, stale, document.ObservedAt, tasks)
@@ -96,7 +102,7 @@ public sealed class OperationsDispatchProvider(IConfiguration configuration)
             var reason = (work.Stale ? "工作來源已過期；未推測已停止。" : "工作狀態由節點遙測提供。") + " " + (work.EvidenceSummary ?? "");
             if (matched is not null)
             {
-                // 明確派遣受阻／待確認不能被較舊的程序快照覆蓋。
+                // 明確派遣等待條件／待確認不能被較舊的程序快照覆蓋。
                 if ((work.UpdatedAt ?? work.StartedAt) >= matched.UpdatedAt)
                     tasks[tasks.IndexOf(matched)] = matched with { State = state, Reason = reason, UpdatedAt = work.UpdatedAt ?? work.StartedAt };
             }

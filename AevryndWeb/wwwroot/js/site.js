@@ -31,6 +31,11 @@
   const hardwareGrid = root.querySelector("[data-hardware-grid]");
   const scheduleGrid = root.querySelector("[data-schedule-grid]");
   const scheduleStatus = root.querySelector("[data-schedule-status]");
+  // 首次畫面可能仍來自瀏覽器保存的舊 HTML；立即統一狀態用語，再由即時快照接管。
+  root.querySelectorAll('[data-schedule-count-state="blocked"]').forEach(value => {
+    if (value.previousElementSibling) value.previousElementSibling.textContent = "等待條件";
+  });
+  root.querySelectorAll(".operations-badge.is-blocked").forEach(value => { value.textContent = "等待條件"; });
   let historyDataTable = null;
   const endpoint = root.dataset.snapshotUrl;
   const refreshIntervalMs = 10000;
@@ -67,7 +72,9 @@
   const badge = (value, stale = false) => {
     const terminal = value === "failed" ? "is-failed" : value === "blocked" ? "is-blocked" : value === "cancelled" ? "is-cancelled" : stale ? "is-stale" : "is-current";
     const span = document.createElement("span"); span.className = `operations-badge ${terminal}`;
-    span.textContent = stale ? `${value} · stale` : value; return span;
+    const labels = { working: "進行中", completed: "已完成", failed: "未通過", blocked: "等待條件", cancelled: "已停止" };
+    const label = labels[value] || "狀態待確認";
+    span.textContent = stale ? `${label} · 資料待更新` : label; return span;
   };
   const renderWork = (items, body, wrap, empty, sourceAvailable, sourceMessage, history, catalog = []) => {
     if (!body || !wrap || !empty) return;
@@ -104,7 +111,7 @@
       historyDataTable.page(Math.min(preservedPage, lastPage)).draw("page");
     }
   };
-  const stateLabel = { queued: "等待中", acknowledged: "已接單", running: "執行中", blocked: "受阻", unconfirmed: "狀態待確認" };
+  const stateLabel = { queued: "等待中", acknowledged: "已接單", running: "執行中", blocked: "等待條件", unconfirmed: "狀態待確認" };
   const renderSchedule = schedule => {
     if (!scheduleGrid) return;
     const tasks = Array.isArray(schedule?.tasks) ? schedule.tasks : [];
@@ -139,7 +146,7 @@
         const dependencyText = Array.isArray(task.dependsOn) && task.dependsOn.length
           ? task.dependsOn.map(id => { const dependency = (schedule.catalog || tasks).find(candidate => candidate.id === id); return dependency?.title || "先前任務（" + id + "）"; }).join("、")
           : "無";
-        add("", task.description); add("原因：", task.reason); add("依賴：", dependencyText);
+        add("", task.description); add("原因：", (task.reason || "").replaceAll("受阻", "正在等待必要條件")); add("依賴：", dependencyText);
         add("指派：", formatTime(task.assignedAt) + " · 更新：" + formatTime(task.updatedAt));
         const evidence = document.createElement("small"); evidence.textContent = "任務識別：" + (task.id || "未提供") + " · 證據：" + (task.evidence || "未提供"); detail.append(evidence);
         details.dataset.scheduleTaskId = task.instanceId || task.id || ""; if (openIds.has(details.dataset.scheduleTaskId)) details.open = true;
