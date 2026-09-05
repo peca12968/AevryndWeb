@@ -19,6 +19,14 @@ public sealed class OperationsDispatchProviderTests
     {
         schemaVersion = 1, stateSha256 = Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(state))), status, lastSuccessAt = verified
     });
+    private static object Comment(long id, string body, string at = "2026-09-05T07:00:00Z", string login = OperationsDispatchProjection.OwnerLogin) =>
+        new { id, body, created_at = at, issue_url = OperationsDispatchProjection.IssueUrl, author_association = "OWNER", user = new { login, id = OperationsDispatchProjection.OwnerId } };
+    private static string Command(string id, string extra = "", string node = "TAICHUNG") =>
+        $"[AEVRYND-BRIDGE]\n[MAIN_COMMAND]\nCOMMAND_ID: {id}\nTARGET: {node}\nTASK: 驗證派工快照校正\n{extra}\n[/MAIN_COMMAND]\n[/AEVRYND-BRIDGE]";
+    private static string Report(string id, string status, string node = "TAICHUNG") =>
+        $"[AEVRYND-BRIDGE]\nNODE: {node}\nCOMMAND_ID: {id}\nSTATUS: {status}\n[/AEVRYND-BRIDGE]";
+    private static string ProjectComments(string? previous, params object[] comments) =>
+        OperationsDispatchProjection.BuildJson(JsonSerializer.Serialize(comments), previous, Now);
 
     [Fact]
     public void SourceVerificationDoesNotRefreshEventOrPromoteAcknowledgement()
@@ -85,5 +93,93 @@ public sealed class OperationsDispatchProviderTests
         Assert.Equal("queued", task.State);
         Assert.Contains(model.Schedule.Catalog, item => item.Id == "OLD-REPORT");
         Assert.Contains(model.Schedule.Catalog, item => item.Id == "WAITING-REVIEW");
+    }
+
+    [Fact]
+    public void ArchiveCutoffSupersedesOnlyOldNonTerminalTasksOnSameNode()
+    {
+        var state = ProjectComments(null,
+            Comment(8, Command("ALREADY-DONE")),
+            Comment(9, Report("ALREADY-DONE", "COMPLETED"), "2026-09-05T07:01:00Z"),
+            Comment(10, Command("OLDER"), "2026-09-05T07:02:00Z"),
+            Comment(11, Command("AT-CUTOFF"), "2026-09-05T07:03:00Z"),
+            Comment(12, Command("OTHER-NODE", node: "TAOYUAN"), "2026-09-05T07:04:00Z"),
+            Comment(13, Command("NEWER"), "2026-09-05T07:05:00Z"),
+            Comment(20, Command("SNAPSHOT-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 11"), "2026-09-05T07:06:00Z"));
+        var document = OperationsDispatchProjection.ReadDocument(state);
+
+        Assert.Equal("completed", document.Tasks.Single(task => task.Id == "ALREADY-DONE").State);
+        foreach (var id in new[] { "OLDER", "AT-CUTOFF" })
+        {
+            var archived = document.Tasks.Single(task => task.Id == id);
+            Assert.Equal("superseded", archived.State);
+            Assert.NotNull(archived.EndedAt);
+            Assert.Contains("MAIN_COMMAND 20", archived.Evidence);
+        }
+        Assert.Equal("queued", document.Tasks.Single(task => task.Id == "OTHER-NODE").State);
+        Assert.Equal("queued", document.Tasks.Single(task => task.Id == "NEWER").State);
+
+        var model = OperationsDispatchProvider.Project(state, Health(state, verified: Now), Now, Empty);
+        Assert.DoesNotContain(model.Schedule.Tasks, task => task.Id is "OLDER" or "AT-CUTOFF");
+        Assert.Contains(model.Schedule.Catalog, task => task.Id == "OLDER" && task.State == "superseded" && task.Evidence.Contains("MAIN_COMMAND 20", StringComparison.Ordinal));
+        Assert.Contains(model.History, task => task.Name == "ALREADY-DONE" && task.Status == "completed");
+    }
+
+    [Theory]
+    [InlineData("0")]
+    [InlineData("-1")]
+    [InlineData("20")]
+    [InlineData("21")]
+    [InlineData("not-a-number")]
+    public void InvalidArchiveCutoffRejectsWholeTrustedCommand(string cutoff)
+    {
+        var document = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(10, Command("OLDER")),
+            Comment(20, Command("INVALID-CORRECTION", $"ARCHIVE_THROUGH_COMMENT_ID: {cutoff}"), "2026-09-05T07:01:00Z")));
+
+        Assert.Equal("queued", Assert.Single(document.Tasks).State);
+        Assert.Equal(1, document.RejectedEvents);
+    }
+
+    [Fact]
+    public void UntrustedArchiveEnvelopeCannotChangeExistingTask()
+    {
+        var document = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(10, Command("OLDER")),
+            Comment(20, Command("UNTRUSTED-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 10"), "2026-09-05T07:01:00Z", "other")));
+
+        Assert.Equal("queued", Assert.Single(document.Tasks).State);
+    }
+
+    [Fact]
+    public void ArchiveFieldOutsideMainCommandIsRejected()
+    {
+        var hostileReport = "[AEVRYND-BRIDGE]\nNODE: TAICHUNG\nCOMMAND_ID: OLDER\nSTATUS: ACK\nARCHIVE_THROUGH_COMMENT_ID: 10\n[/AEVRYND-BRIDGE]";
+        var document = OperationsDispatchProjection.ReadDocument(ProjectComments(null,
+            Comment(10, Command("OLDER")), Comment(20, hostileReport, "2026-09-05T07:01:00Z")));
+
+        Assert.Equal("queued", Assert.Single(document.Tasks).State);
+        Assert.Equal(1, document.RejectedEvents);
+    }
+
+    [Fact]
+    public void ArchiveCutoffIsReappliedAfterPreviousSnapshotMerge()
+    {
+        var old = Task("OLD-SNAPSHOT", "queued") with
+        {
+            CommandCommentId = 10, AssignedAt = Now.AddMinutes(-10), UpdatedAt = Now.AddMinutes(-5),
+            AcknowledgedAt = null, EndedAt = null
+        };
+        var priorTerminal = Task("PRIOR-TERMINAL", "failed") with { CommandCommentId = 11 };
+        var previous = State(old, priorTerminal);
+        var state = ProjectComments(previous,
+            Comment(20, Command("SNAPSHOT-CORRECTION", "ARCHIVE_THROUGH_COMMENT_ID: 11"), "2026-09-05T08:06:00Z"));
+        var document = OperationsDispatchProjection.ReadDocument(state);
+
+        var archived = document.Tasks.Single(task => task.Id == "OLD-SNAPSHOT");
+        Assert.Equal("superseded", archived.State);
+        Assert.Equal(20, archived.EventCommentId);
+        Assert.NotNull(archived.EndedAt);
+        Assert.Equal("failed", document.Tasks.Single(task => task.Id == "PRIOR-TERMINAL").State);
     }
 }

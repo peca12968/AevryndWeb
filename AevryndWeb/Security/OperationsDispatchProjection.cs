@@ -33,6 +33,7 @@ public static class OperationsDispatchProjection
     private static readonly Regex PrivateText = new(@"[\x00-\x1f\x7f]|://|@|[A-Za-z]:[\\/]|(?:\d{1,3}\.){3}\d{1,3}|-----BEGIN", RegexOptions.CultureInvariant);
     private static readonly HashSet<string> Terminal = new(StringComparer.Ordinal) { "completed", "failed", "cancelled", "superseded" };
     private sealed record Event(long Id, DateTimeOffset CreatedAt, string Kind, Dictionary<string, string> Fields);
+    private sealed record ArchiveDirective(long CommentId, string NodeId, long Cutoff, DateTimeOffset CreatedAt);
 
     public static string BuildJson(string commentsJson, string? previousJson, DateTimeOffset now)
     {
@@ -60,13 +61,15 @@ public static class OperationsDispatchProjection
         var ordered = events.OrderBy(item => item.CreatedAt).ThenBy(item => item.Id).ToArray();
         var tasks = new Dictionary<long, OperationsDispatchTask>();
         var leases = new Dictionary<long, int>();
+        var archiveDirectives = new List<ArchiveDirective>();
         foreach (var item in ordered.Where(item => item.Kind == "MAIN_COMMAND"))
         {
             var fields = item.Fields;
             if (!Id(fields.GetValueOrDefault("COMMAND_ID")) || !Node(fields.GetValueOrDefault("TARGET"), out var node) ||
                 !Number(fields, "GENERATION", 1, 1, 10000, out var generation) ||
                 !Number(fields, "ACK_DEADLINE_SECONDS", 0, 0, 86400, out var ackSeconds) ||
-                !Number(fields, "LEASE_SECONDS", 0, 0, 604800, out var leaseSeconds)) { rejected++; continue; }
+                !Number(fields, "LEASE_SECONDS", 0, 0, 604800, out var leaseSeconds) ||
+                !OptionalPositiveLongBefore(fields, "ARCHIVE_THROUGH_COMMENT_ID", item.Id, out var archiveThrough)) { rejected++; continue; }
             var id = fields["COMMAND_ID"];
             var workKey = fields.GetValueOrDefault("WORK_KEY") ?? id;
             var supersedes = fields.GetValueOrDefault("SUPERSEDES_COMMAND_ID");
@@ -81,11 +84,13 @@ public static class OperationsDispatchProjection
                 dependencies, supersedes, item.CreatedAt, item.CreatedAt, null, null,
                 ackSeconds > 0 ? item.CreatedAt.AddSeconds(ackSeconds) : null, null, item.Id, "OWNER MAIN_COMMAND " + item.Id));
             leases[item.Id] = leaseSeconds;
+            if (archiveThrough.HasValue) archiveDirectives.Add(new(item.Id, node, archiveThrough.Value, item.CreatedAt));
         }
         if (tasks.Count > 500) throw new JsonException("DISPATCH_TASK_LIMIT");
         foreach (var item in ordered.Where(item => item.Kind != "MAIN_COMMAND"))
         {
             var fields = item.Fields;
+            if (fields.ContainsKey("ARCHIVE_THROUGH_COMMENT_ID")) { rejected++; continue; }
             if (!Id(fields.GetValueOrDefault("COMMAND_ID")) || !Node(fields.GetValueOrDefault("NODE"), out var node)) { rejected++; continue; }
             var candidates = tasks.Values.Where(task => task.Id == fields["COMMAND_ID"] && task.NodeId == node && task.AssignedAt <= item.CreatedAt).ToArray();
             if (fields.TryGetValue("COMMENT_ID", out var reference)) candidates = candidates.Where(task => reference == task.CommandCommentId.ToString(CultureInfo.InvariantCulture)).ToArray();
@@ -145,6 +150,22 @@ public static class OperationsDispatchProjection
                 if (!tasks.TryGetValue(old.CommandCommentId, out var current)) tasks[old.CommandCommentId] = old;
                 else if (Terminal.Contains(old.State)) tasks[old.CommandCommentId] = old;
                 else if (current.UpdatedAt < old.UpdatedAt) tasks[old.CommandCommentId] = old;
+            }
+        }
+        // 快照校正只終止同節點、截止留言（含）以前仍非終態的派遣。放在 previous snapshot 合併後，
+        // 可防止較舊快照把已封存的等待工作復活；既有終態與較新／其他節點工作均不受影響。
+        foreach (var directive in archiveDirectives.OrderBy(item => item.CreatedAt).ThenBy(item => item.CommentId))
+        {
+            foreach (var old in tasks.Values.Where(task => task.NodeId == directive.NodeId &&
+                task.CommandCommentId <= directive.Cutoff && task.AssignedAt <= directive.CreatedAt && !Terminal.Contains(task.State)).ToArray())
+            {
+                tasks[old.CommandCommentId] = old with
+                {
+                    State = "superseded", UpdatedAt = old.UpdatedAt > directive.CreatedAt ? old.UpdatedAt : directive.CreatedAt,
+                    EndedAt = directive.CreatedAt, EventCommentId = directive.CommentId,
+                    Reason = "OWNER 快照校正已封存此節點的較舊非終態派遣；不代表程序執行結果。",
+                    Evidence = $"OWNER MAIN_COMMAND {directive.CommentId} 封存截至留言 {directive.Cutoff} 的派遣 {old.CommandCommentId}。"
+                };
             }
         }
         if (tasks.Count > 500) throw new JsonException("DISPATCH_TASK_LIMIT");
@@ -209,7 +230,7 @@ public static class OperationsDispatchProjection
                 content = content[(wrapper.Length + 2)..^closing.Length].Trim(); kind = wrapper; break;
             }
         if (kind.Length == 0 || Regex.IsMatch(content, @"(?m)^\[/?(?:MAIN_COMMAND|NODE_ACK|NODE_REPORT|AEVRYND-BRIDGE)\]")) return false;
-        var protectedFields = new HashSet<string>(new[] { "COMMAND_ID", "NODE", "TARGET", "STATUS", "COMMENT_ID", "WORK_KEY", "GENERATION", "SUPERSEDES_COMMAND_ID", "DEPENDS_ON_COMMAND_ID", "DEPENDS_ON", "TITLE", "TASK", "ACK_DEADLINE_SECONDS", "LEASE_SECONDS" }, StringComparer.OrdinalIgnoreCase);
+        var protectedFields = new HashSet<string>(new[] { "COMMAND_ID", "NODE", "TARGET", "STATUS", "COMMENT_ID", "WORK_KEY", "GENERATION", "SUPERSEDES_COMMAND_ID", "DEPENDS_ON_COMMAND_ID", "DEPENDS_ON", "TITLE", "TASK", "ACK_DEADLINE_SECONDS", "LEASE_SECONDS", "ARCHIVE_THROUGH_COMMENT_ID" }, StringComparer.OrdinalIgnoreCase);
         foreach (var line in content.Split('\n'))
         {
             var match = Regex.Match(line.TrimEnd('\r'), @"^([A-Za-z_]+):\s*(.*)$");
@@ -222,6 +243,14 @@ public static class OperationsDispatchProjection
     private static bool Number(Dictionary<string, string> fields, string key, int fallback, int minimum, int maximum, out int value)
     {
         value = fallback; return !fields.TryGetValue(key, out var raw) || int.TryParse(raw, NumberStyles.None, CultureInfo.InvariantCulture, out value) && value >= minimum && value <= maximum;
+    }
+    private static bool OptionalPositiveLongBefore(Dictionary<string, string> fields, string key, long upperExclusive, out long? value)
+    {
+        value = null;
+        if (!fields.TryGetValue(key, out var raw)) return true;
+        if (!long.TryParse(raw, NumberStyles.None, CultureInfo.InvariantCulture, out var parsed) || parsed <= 0 || parsed >= upperExclusive) return false;
+        value = parsed;
+        return true;
     }
     private static bool Node(string? value, out string node) { node = value switch { "LOCAL" => "local", "TAICHUNG" => "taichung", "TAOYUAN" => "taoyuan", _ => "" }; return node.Length > 0; }
     private static bool Id(string? value) => value is not null && Identifier.IsMatch(value);
