@@ -41,11 +41,13 @@ public sealed class FileOperationsSnapshotProvider(IConfiguration configuration,
                 if (nodes[index].Id == "local") continue;
                 if (remoteTelemetry.TryReadFreshSnapshot(nodes[index].Id, now, out var remote))
                 {
-                    nodes[index] = new OperationsNodeView(nodes[index].Id, nodes[index].Name, Math.Round(remote.Node.CpuPercent!.Value, 1), Math.Round(remote.Node.RamPercent!.Value, 1), remote.Node.GpuPercent.HasValue ? Math.Round(remote.Node.GpuPercent.Value, 1) : null, remote.Node.SampledAt, false, "current", remote.Node.GpuPercent.HasValue ? "已收到通過簽章驗證的即時採樣。" : "CPU 與 RAM 已驗證；節點未提供可驗證的 GPU 計數器。");
+                    // 遠端 store 的 freshness window 是兩分鐘；頁面節點契約仍以 35 秒區分 current/stale。
+                    // 因此 35–120 秒的最後實測值必須保留並標示 stale，不得硬設 current。
+                    nodes[index] = OperationsSnapshotSchema.NormalizeNode(nodes[index].Id, nodes[index].Name, remote.Node, now);
                     if (OperationsSnapshotSchema.TryNormalizeRemoteWork(remote.ActiveWork, remote.History, nodes[index].Id, now, out var remoteActive, out var remoteHistory))
                     { activeWork.AddRange(remoteActive); history.AddRange(remoteHistory); }
                 }
-                else nodes[index] = new OperationsNodeView(nodes[index].Id, nodes[index].Name, null, null, null, null, true, "unavailable", "最近兩分鐘內沒有通過簽章與 freshness 驗證的遠端採樣。");
+                else nodes[index] = new OperationsNodeView(nodes[index].Id, nodes[index].Name, null, null, null, null, true, "unavailable", "超過兩分鐘沒有通過簽章與 freshness 驗證的遠端採樣。");
             }
             return model with
             {
@@ -58,7 +60,7 @@ public sealed class FileOperationsSnapshotProvider(IConfiguration configuration,
         { return Empty("invalid：操作摘要無法安全讀取。"); }
     }
 
-    private OperationsViewModel Empty(string status) => new(KnownNodes.Select(node => new OperationsNodeView(node.Id, node.Name, null, null, null, null, true, "unavailable", "操作摘要來源不可用，無法驗證此節點。" )).ToArray(), [], [], null, false, status);
+    private OperationsViewModel Empty(string status) => new(KnownNodes.Select(node => new OperationsNodeView(node.Id, node.Name, null, null, null, null, true, "unavailable", "操作摘要來源不可用，無法驗證此節點。" )).ToArray(), [], [], null, false, status, []);
 
     [SupportedOSPlatform("windows")]
     private static bool HasSafeAcl(string path) => OperationsFileSecurity.HasSafeAcl(path);
@@ -109,7 +111,7 @@ public static class OperationsSnapshotSchema
         var sourceNodes = document.Nodes.ToDictionary(item => item.Id, StringComparer.Ordinal);
         var nodes = KnownNodes.Select(known => NormalizeNode(known.Id, known.Name, sourceNodes.GetValueOrDefault(known.Id), now)).ToArray();
         model = new(nodes, active, history.OrderByDescending(item => item.StartedAt).ToArray(), document.SnapshotAt, true,
-            now - document.SnapshotAt > TimeSpan.FromMinutes(2) ? "stale：摘要超過兩分鐘未更新。" : "current");
+            now - document.SnapshotAt > TimeSpan.FromMinutes(2) ? "stale：摘要超過兩分鐘未更新。" : "current", []);
         return true;
     }
 
@@ -127,7 +129,7 @@ public static class OperationsSnapshotSchema
         return TryNormalizeWork(active.ToList(), now, false, 10, out normalizedActive) && TryNormalizeWork(history.ToList(), now, true, 100, out normalizedHistory);
     }
 
-    private static OperationsNodeView NormalizeNode(string id, string name, OperationsNodeState? node, DateTimeOffset now)
+    internal static OperationsNodeView NormalizeNode(string id, string name, OperationsNodeState? node, DateTimeOffset now)
     {
         if (node is null || node.SampledAt == default || node.SampledAt > now.AddMinutes(1))
             return new(id, name, null, null, null, null, true, "unavailable", "摘要中沒有可驗證的採樣時間與量測值。");

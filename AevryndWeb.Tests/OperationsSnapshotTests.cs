@@ -41,6 +41,27 @@ public sealed class OperationsSnapshotTests
     }
 
     [Theory]
+    [InlineData(34, "current", false)]
+    [InlineData(36, "stale", true)]
+    [InlineData(119, "stale", true)]
+    public void RemoteNodeUsesThirtyFiveSecondPresentationStalenessBeforeTwoMinuteStoreExpiry(int ageSeconds, string availability, bool stale)
+    {
+        var document = ValidDocument();
+        document.Nodes![1] = new OperationsNodeState
+        {
+            Id = "taichung", CpuPercent = 41.2, RamPercent = 58.7, GpuPercent = 12.5,
+            SampledAt = Now.AddSeconds(-ageSeconds)
+        };
+
+        Assert.True(OperationsSnapshotSchema.TryNormalize(document, Now, out var model));
+        var node = model.Nodes.Single(item => item.Id == "taichung");
+        Assert.Equal(availability, node.Availability);
+        Assert.Equal(stale, node.Stale);
+        Assert.Equal(41.2, node.CpuPercent);
+        Assert.Equal(12.5, node.GpuPercent);
+    }
+
+    [Theory]
     [InlineData("https://example.test/evidence")]
     [InlineData("operator@example.test")]
     [InlineData("connected to 192.168.1.2")]
@@ -120,14 +141,47 @@ public sealed class OperationsSnapshotTests
     }
 
     [Fact]
-    public void PublisherMarksDisappearedActiveAsCancelledWithoutGuessingSuccess()
+    public void PublisherPreservesDisappearedActiveWithoutInventingTerminal()
     {
         var previous = new OperationsWorkState { Name = "Expired relay", Type = "codex", Host = "local", StartedAt = Now.AddMinutes(-20), UpdatedAt = Now.AddMinutes(-16), Status = "working" };
-        var history = new List<OperationsWorkState>();
-        var method = typeof(OperationsTelemetryPublisher).GetMethod("AppendEndedCodexWork", BindingFlags.Static | BindingFlags.NonPublic)!;
-        method.Invoke(null, new object?[] { new[] { previous }, null, Now, history });
-        var ended = Assert.Single(history);
-        Assert.Equal("cancelled", ended.Status); Assert.NotEqual("completed", ended.Status); Assert.NotEqual("failed", ended.Status);
+        var method = typeof(OperationsTelemetryPublisher).GetMethod("ResolveCodexWork", BindingFlags.Static | BindingFlags.NonPublic)!;
+        var retained = (OperationsWorkState?)method.Invoke(null, new object?[] { new[] { previous }, null, Array.Empty<OperationsWorkState>() });
+        Assert.Same(previous, retained);
+        var terminal = new OperationsWorkState { Name = previous.Name, Type = previous.Type, Host = previous.Host, StartedAt = previous.StartedAt, UpdatedAt = Now, EndedAt = Now, Status = "completed" };
+        var suppressed = (OperationsWorkState?)method.Invoke(null, new object?[] { new[] { previous }, null, new[] { terminal } });
+        Assert.Null(suppressed);
+    }
+
+    [Fact]
+    public void PublisherReconcilesOnlyCachedSyntheticCancelledHistory()
+    {
+        var started = Now.AddMinutes(-20);
+        var synthetic = new OperationsWorkState
+        {
+            Name = "Expired relay", Type = "codex", Host = "local", StartedAt = started,
+            UpdatedAt = Now.AddMinutes(-16), EndedAt = Now.AddMinutes(-16), Status = "cancelled",
+            EvidenceSummary = "工作摘要停止更新；來源未提供結束原因。"
+        };
+        var method = typeof(OperationsTelemetryPublisher).GetMethod("ReconcileCachedHistory", BindingFlags.Static | BindingFlags.NonPublic)!;
+        var removed = (List<OperationsWorkState>)method.Invoke(null, new object?[] { new[] { synthetic }, Array.Empty<OperationsWorkState>() })!;
+        Assert.Empty(removed);
+
+        var authoritative = new OperationsWorkState
+        {
+            Name = synthetic.Name, Type = synthetic.Type, Host = synthetic.Host, StartedAt = synthetic.StartedAt,
+            UpdatedAt = Now, EndedAt = Now, Status = "cancelled", EvidenceSummary = synthetic.EvidenceSummary
+        };
+        var retained = (List<OperationsWorkState>)method.Invoke(null, new object?[] { new[] { synthetic }, new[] { authoritative } })!;
+        Assert.Single(retained);
+
+        var genuineCached = new OperationsWorkState
+        {
+            Name = synthetic.Name, Type = synthetic.Type, Host = synthetic.Host, StartedAt = synthetic.StartedAt,
+            UpdatedAt = synthetic.UpdatedAt, EndedAt = synthetic.EndedAt, Status = synthetic.Status,
+            EvidenceSummary = "明確 terminal 回報"
+        };
+        var genuine = (List<OperationsWorkState>)method.Invoke(null, new object?[] { new[] { genuineCached }, Array.Empty<OperationsWorkState>() })!;
+        Assert.Single(genuine);
     }
 
     [Fact]

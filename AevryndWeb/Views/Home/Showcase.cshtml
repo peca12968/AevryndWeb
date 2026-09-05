@@ -1,8 +1,9 @@
 @{ ViewData["Title"] = "開發展示"; }
+<link rel="stylesheet" href="~/css/showcase.css" asp-append-version="true" />
 <section class="showcase-shell">
     <header class="showcase-hero">
-        <p class="eyebrow"><span></span> DEVELOPMENT LEDGER · ENGINE 2.86.0</p>
-        <h1>讓每一步引擎演進，<em>都有證據可循。</em></h1>
+        <p class="eyebrow"><span></span> AEVRYND / DEVELOPMENT ATLAS · 2026.09</p>
+        <h1>從第一個世界，<em>走向完整遊戲引擎。</em></h1>
         <p>Aevrynd 是持續演進的 2D／2.5D／3D 遊戲引擎。此頁區分已發布版本、已驗證但未發布切片與歷史產物；技術 gate 通過不等於遊戲畫面達標。</p>
         <div class="truth-strip" aria-label="目前發布狀態">
             <div><small>VISUAL SCORE</small><strong>34 / 100</strong><span class="status-no">NO-GO</span></div>
@@ -11,6 +12,25 @@
             <div><small>RENDER PATH</small><strong>D3D12</strong><span>跨 Vulkan／Metal 等價尚未證明</span></div>
         </div>
     </header>
+
+
+    <nav class="atlas-nav" aria-label="展示章節">
+        <a href="#demo-motion">01 動態展示</a><a href="#release-title">02 版本演進</a><a href="#system-title">03 三機協作</a><a href="#engine-title">04 引擎架構</a>
+    </nav>
+    <section id="demo-motion" class="showcase-section motion-section" aria-labelledby="motion-title">
+        <div class="section-heading"><p class="micro-label">ENGINE IN MOTION</p><h2 id="motion-title">看見開發演進</h2><p>以各版本留下的實機截圖製作動畫導覽；這是歷史畫面比較，非連續遊玩錄影。影片版本與原始圖片雜湊可由來源清單核對。</p></div>
+        <div class="motion-grid">
+            <article class="motion-card">
+                <video controls playsinline preload="metadata" poster="/media/development/gameplay-evolution.jpg" aria-label="Gameplay Lab v1.1 至 v1.3 歷史實機截圖動畫導覽"><source src="/media/development/gameplay-evolution.mp4" type="video/mp4" />你的瀏覽器不支援此影片。</video>
+                <div><span class="micro-label">GAMEPLAY LAB / 01</span><h3>走進遊戲世界</h3><p>v1.1 → v1.2 → v1.3。比較第三人稱日間場景；保留原版本的呈現與限制。</p><span class="motion-label">歷史實機截圖動畫導覽 · 非連續遊玩錄影</span></div>
+            </article>
+            <article class="motion-card">
+                <video controls playsinline preload="metadata" poster="/media/development/engine-evolution.jpg" aria-label="Engine Lab v2.51 至 v2.55 歷史實機截圖動畫導覽"><source src="/media/development/engine-evolution.mp4" type="video/mp4" />你的瀏覽器不支援此影片。</video>
+                <div><span class="micro-label">ENGINE LAB / 02</span><h3>讓世界持續運行</h3><p>分區載入 → 世界原點重定位 → 增量保存 → 網路複寫 → 級聯陰影。</p><span class="motion-label">歷史實機截圖動畫導覽 · 非連續遊玩錄影</span></div>
+            </article>
+        </div>
+        <p class="evidence-note">播放器提供播放、暫停、進度與全螢幕控制，不自動播放。<a href="/media/development/media-manifest.json">檢視媒體來源清單</a>。目前完整遊戲視覺仍為 34 / 100，v1.4 未發布。</p>
+    </section>
 
     <section class="showcase-section" aria-labelledby="release-title">
         <div class="section-heading"><p class="micro-label">TRACEABLE RELEASES</p><h2 id="release-title">可追溯 Demo 與發布切片</h2><p>只有狀態帳與功能目錄明確附帶版本、來源或驗證契約者列為發布證據。磁碟中的其他舊目錄僅是歷史產物。</p></div>
@@ -30,6 +50,7 @@
         <div class="section-heading"><p class="micro-label">DEVELOPMENT TIMELINE</p><h2 id="timeline-title">目前已驗證切片</h2></div>
         <div class="showcase-filters" role="group" aria-label="開發切片篩選"><button type="button" data-stage-filter="all" aria-pressed="true">全部</button><button type="button" data-stage-filter="released" aria-pressed="false">含發布成果</button><button type="button" data-stage-filter="wip" aria-pressed="false">驗證中 WIP</button></div>
         <div class="timeline">
+            <article data-stage="wip"><time>2026-09-05 / CAMERA</time><h3>HLOD 等角相機轉場</h3><p>471a1da 加入正交等角端點，source／transition／proxy 像素驗證已提交。這是相機端點測試，完整 production HLOD 與效能仍未完成。</p></article>
             <article data-stage="released"><time>WORLD</time><h3>World Partition Phase 1／2</h3><p>非同步 prepare／activate／retire、terrain／vegetation payload、origin rebasing 與 Dirty Delta。部分驗收 Demo 已發布，完整大型世界仍持續演進。</p></article>
             <article data-stage="wip"><time>GPU</time><h3>GPU-driven 1A／1B + HZB</h3><p>compute culling、ExecuteIndirect、homogeneous buckets、current-frame HZB 與 paired benchmark。Temporal hybrid occlusion、bindless indexing仍待完成。</p></article>
             <article data-stage="released"><time>LIGHT</time><h3>Forward+ 與四級陰影</h3><p>Forward+ 已提交並驗證；Engine Lab 2.55 已發布 4-cascade CSM 與 contact shadow。這不是 Lumen／Nanite 等價聲明。</p></article>
@@ -45,29 +66,64 @@
         </div>
     </section>
 
-    <section class="showcase-section diagram-section" aria-labelledby="system-title">
-        <div class="section-heading"><p class="micro-label">SYSTEM TOPOLOGY</p><h2 id="system-title">目前系統結構</h2></div>
-        <div class="map-toolbar"><span>點擊節點查看責任邊界</span><button type="button" data-map-zoom="out" aria-label="縮小架構圖">−</button><button type="button" data-map-zoom="reset">100%</button><button type="button" data-map-zoom="in" aria-label="放大架構圖">＋</button></div>
-        <div class="map-viewport"><svg id="systemArchitectureMap" class="architecture-map" viewBox="0 0 1100 360" role="img" aria-labelledby="system-svg-title system-svg-desc">
-            <title id="system-svg-title">Aevrynd 系統結構圖</title><desc id="system-svg-desc">網站與主代理協調本機引擎、驗證管線及受限 Qwen 節點。</desc>
-            <g class="map-lines"><path d="M190 180H420"/><path d="M680 180H910"/><path d="M550 115V55"/><path d="M550 245V310"/></g>
-            <g class="map-node" tabindex="0" role="button" data-detail-title="Public Site" data-detail="公開 Showcase 只呈現可追溯狀態；Secure Portal 與 Remote Console 維持獨立登入、step-up 與本機 kill switch。"><rect x="20" y="125" width="170" height="110" rx="14"/><text x="105" y="168">PUBLIC SITE</text><text class="map-sub" x="105" y="195">Showcase · Secure Portal</text></g>
-            <g class="map-node map-node-main" tabindex="0" role="button" data-detail-title="Codex Orchestrator" data-detail="主代理負責拆分、整合、fresh 驗證、敵意審查與發布決策；只有通過 gate 的狀態能升級為已發布。"><rect x="420" y="115" width="260" height="130" rx="18"/><text x="550" y="165">CODEX ORCHESTRATOR</text><text class="map-sub" x="550" y="195">拆分 · 整合 · 驗收 · 發布 gate</text></g>
-            <g class="map-node" tabindex="0" role="button" data-detail-title="Aevrynd Engine" data-detail="引擎 repo 保存 D3D12 renderer、ECS、World Partition、HLOD、工具、Demo source 與 typed evidence contracts。"><rect x="910" y="125" width="170" height="110" rx="14"/><text x="995" y="168">AEVRYND ENGINE</text><text class="map-sub" x="995" y="195">Source · Demo · Evidence</text></g>
-            <g class="map-node" tabindex="0" role="button" data-detail-title="Qwen Advisory" data-detail="離線模型只承接 summary、classification、test-template、inventory 等受限唯讀工作；輸出仍須由主代理驗證。"><rect x="455" y="5" width="190" height="70" rx="13"/><text x="550" y="35">QWEN ADVISORY</text><text class="map-sub" x="550" y="57">受限唯讀簡單工作</text></g>
-            <g class="map-node" tabindex="0" role="button" data-detail-title="Fresh Validation" data-detail="目前來源必須重新建置並通過 Normal、GBV、GPU debug 與視覺 gate；舊 artifact 或單一 exit code不能替代證據。"><rect x="440" y="290" width="220" height="65" rx="13"/><text x="550" y="318">FRESH VALIDATION</text><text class="map-sub" x="550" y="340">Normal · GBV · Visual gates</text></g>
-        </svg></div>
+
+    <section class="showcase-section atlas-system" aria-labelledby="system-title">
+        <div class="section-heading"><p class="micro-label">SYSTEM TOPOLOGY</p><h2 id="system-title">三台電腦，一條開發流程</h2><p>主機做決策與整合；副機依獨立檔案範圍處理實作與驗證。模型為使用者於 2026-09-05 指定的配置，不代表節點目前在線。</p></div>
+        <div class="map-toolbar"><span>可縮放、點擊節點查看工作責任</span><button type="button" data-map-zoom="out" aria-label="縮小架構圖">−</button><button type="button" data-map-zoom="reset">100%</button><button type="button" data-map-zoom="in" aria-label="放大架構圖">＋</button></div>
+        <div class="map-viewport atlas-viewport">
+            <svg id="systemArchitectureMap" class="architecture-map atlas-map" viewBox="0 0 1100 540" role="img" aria-labelledby="system-svg-title system-svg-desc">
+                <title id="system-svg-title">主機 Astra 與台中、桃園 sol 的 GitHub 任務協作</title>
+                <desc id="system-svg-desc">主機 GPT-6 Astra 中負責派工、整合與唯一 Git 提交。台中與桃園 GPT-5.6 sol 中透過 GitHub Issue 1 輪詢任務並回傳 ACK 和 REPORT。驗收後由主機更新引擎與 IIS 網站。Qwen 是按需啟用的離線唯讀助手。</desc>
+                <defs><marker id="atlas-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8Z" fill="#91e4b8" /></marker></defs>
+                <g class="atlas-edges"><path d="M550 127V191" /><path d="M380 242H198V320" /><path d="M720 242H902V320" /><path d="M550 293V428" /><path d="M198 397V474H420" /><path d="M902 397V474H680" /></g>
+                <g class="map-node map-node-main" tabindex="0" role="button" aria-label="主機 GPT-6 Astra 中的責任" data-detail-title="主機 · GPT-6 Astra · 中" data-detail="將需求拆成具有 ownership 的工作包，檢查來源與差異，整合副機結果，執行 fresh build／敵意驗收。只有主機可以使用繁體中文 Git commit 並推送 origin/main。">
+                    <rect x="375" y="20" width="350" height="107" rx="18" /><text x="550" y="55">LOCAL / 主機</text><text x="550" y="86">GPT-6 Astra · 中</text><text class="map-sub" x="550" y="110">架構 · 派工 · 整合 · 最終驗收</text>
+                </g>
+                <g class="map-node" tabindex="0" role="button" aria-label="GitHub Issue 1 任務協定" data-detail-title="GitHub 任務通道" data-detail="副機 Codex 輪詢 Issue #1，依 TARGET、COMMAND_ID 與 ownership 接收任務。收到後 ACK，終態 REPORT；命令去重。發出命令不等於副機已開始工作，必須確認回報。">
+                    <rect x="380" y="191" width="340" height="102" rx="18" /><text x="550" y="226">GITHUB / ISSUE #1</text><text class="map-sub" x="550" y="253">MAIN_COMMAND → ACK → REPORT</text><text class="map-sub" x="550" y="275">檔案 ownership · 命令去重 · 證據回傳</text>
+                </g>
+                <g class="map-node" tabindex="0" role="button" aria-label="台中 GPT-5.6 sol 中的責任" data-detail-title="台中 · GPT-5.6 sol · 中" data-detail="依收到的 ownership 執行實作、效能驗證工具與重複性測試；回報命令、退出碼、來源與證據。硬體與工作歷程同步也交由該節點修復。">
+                    <rect x="38" y="320" width="320" height="77" rx="16" /><text x="198" y="348">TAICHUNG / 台中</text><text class="map-sub" x="198" y="377">GPT-5.6 sol · 中 / 實作與工具</text>
+                </g>
+                <g class="map-node" tabindex="0" role="button" aria-label="桃園 GPT-5.6 sol 中的責任" data-detail-title="桃園 · GPT-5.6 sol · 中" data-detail="安排獨立審查、回歸與負向驗證。實際是否運行以該節點 ACK／REPORT 為準；目前未觀察到既有遙測命令回覆，不能宣稱已完成。">
+                    <rect x="742" y="320" width="320" height="77" rx="16" /><text x="902" y="348">TAOYUAN / 桃園</text><text class="map-sub" x="902" y="377">GPT-5.6 sol · 中 / 獨立審查</text>
+                </g>
+                <g class="map-node map-node-main" tabindex="0" role="button" aria-label="主機整合與發布流程" data-detail-title="整合與發布" data-detail="副機 REPORT 經主機重新檢查與測試後，才可精確 stage、中文提交與推送。IIS／ngrok 提供網站，Operations 顯示實測資料；Showcase 在重大進展時更新。">
+                    <rect x="420" y="428" width="260" height="88" rx="16" /><text x="550" y="461">VERIFY → INTEGRATE</text><text class="map-sub" x="550" y="490">引擎提交 · IIS / ngrok · Showcase</text>
+                </g>
+            </svg>
+        </div>
+        <div class="atlas-notes"><p><strong>Qwen · 按需助手</strong>在資源允許時執行離線唯讀摘要、分類與盤點，由 Codex 控管；不宣稱目前已啟動。</p><p><strong>每台電腦的即時狀態</strong>配備、使用率與實際工作請至 <a href="/Operations">Operations（需登入）</a> 查看。副機遙測未回報時保留未知狀態。</p></div>
     </section>
 
-    <section class="showcase-section diagram-section" aria-labelledby="engine-title">
-        <div class="section-heading"><p class="micro-label">ENGINE ARCHITECTURE</p><h2 id="engine-title">引擎架構</h2></div>
-        <div class="engine-stack" role="img" aria-label="從遊戲與工具層到底層平台的 Aevrynd 引擎架構">
-            <div tabindex="0" data-detail-title="Games & Tools" data-detail="三個 Lab、World Builder 與 capture validators 是功能展示與驗收入口，不等同單一完整遊戲。"><strong>Games & Tools</strong><span>Gameplay Lab · Character Lab · Engine Lab · World Builder · Capture Validators</span></div>
-            <div tabindex="0" data-detail-title="Gameplay Systems" data-detail="以 ECS 串接動畫、物理、導航、相機、戰鬥與序列化；系統變更需維持決定性與 rollback。"><strong>Gameplay Systems</strong><span>ECS · Animation · Physics · Navigation · Camera · Combat · Serialization</span></div>
-            <div tabindex="0" data-detail-title="World Runtime" data-detail="大型世界使用 World Partition、HLOD、origin rebase 與 Dirty Delta；完整 GPU HLOD selection 仍未完成。"><strong>World Runtime</strong><span>World Partition · HLOD · Terrain · Vegetation · Origin Rebase · Dirty Delta</span></div>
-            <div tabindex="0" data-detail-title="Rendering" data-detail="Production backend 目前以 D3D12 為主。DLSS 未實作；Bloom、部分 HDR 與 temporal 能力仍依各切片狀態標示。"><strong>Rendering</strong><span>D3D12 · Forward+ · GPU-driven · HZB · CSM · TAA · HDR · Water · Bloom</span></div>
-            <div tabindex="0" data-detail-title="Evidence & Safety" data-detail="Typed receipt、OID、depth、hash、GBV 與 immutable release 將測試結果綁回實際來源和產物。"><strong>Evidence & Safety</strong><span>Typed receipts · Object ID · Depth · SHA-256 · GBV · Rollback · Immutable release</span></div>
-            <div tabindex="0" data-detail-title="Platform" data-detail="Windows/D3D12 與資產 cooker 構成目前主要平台；離線 Qwen 只提供受限 advisory。"><strong>Platform</strong><span>Windows · D3D12 · Asset cooker · Filesystem · Offline Qwen advisory</span></div>
+    <section class="showcase-section atlas-engine" aria-labelledby="engine-title">
+        <div class="section-heading"><p class="micro-label">ENGINE ARCHITECTURE</p><h2 id="engine-title">從遊戲系統到每一幀</h2><p>點開模組查看責任與目前限制。共用能力留在原生 C++20 引擎，三個 Lab 負責組合與驗證。</p></div>
+        <div class="engine-flow">
+            <div class="flow-tier"><span class="flow-index">01 / EXPERIENCE</span><h3>遊戲與工具入口</h3><div class="flow-modules">
+                <details><summary>Gameplay Lab</summary><p>第一／第三人稱、等角視角、戰鬥、相機與世界構圖。完整 Demo 視覺 gate 尚未通過。</p></details>
+                <details><summary>Character Lab</summary><p>角色、骨架動畫、材質與視角呈現的獨立驗證入口。</p></details>
+                <details><summary>Engine Lab / World Builder</summary><p>渲染、分區、持久化、網路與工具的功能展示。</p></details>
+            </div></div>
+            <div class="flow-connector" aria-hidden="true">↓ 場景與遊戲狀態</div>
+            <div class="flow-tier"><span class="flow-index">02 / SIMULATION</span><h3>Scene / ECS 與世界運行</h3><div class="flow-modules">
+                <details><summary>Animation / Physics / Navigation</summary><p>動畫、碰撞、導航與固定步進更新，與相機、角色控制及戰鬥共同組成 Gameplay。</p></details>
+                <details><summary>World Partition / Terrain</summary><p>分區 prepare、activate、retire；地形與植被配合全域座標與 origin rebase。</p></details>
+                <details><summary>Persistence / Networking</summary><p>Dirty Delta 與序列化保留變更；網路複寫是獨立驗證能力，尚不等於完整大型多人遊戲。</p></details>
+            </div></div>
+            <div class="flow-connector" aria-hidden="true">↓ 選擇、凍結、收集</div>
+            <div class="flow-tier"><span class="flow-index">03 / SUBMISSION</span><h3>HLOD → SceneECS → DrawList</h3><div class="flow-modules">
+                <details><summary>HLOD source / transition / proxy</summary><p>依相機與預算選擇表示，凍結同幀選擇。device／resize epoch 保護仍在未提交驗證中。</p></details>
+                <details><summary>Visibility / HZB / GPU-driven</summary><p>可見性、遮擋與間接繪製縮減提交量；完整 GPU-side HLOD selection 與真實世界效能尚需驗收。</p></details>
+                <details><summary>Asset leases / Material semantics</summary><p>以 generation、resource identity 與材質語意約束資源存活與提交一致性。</p></details>
+            </div></div>
+            <div class="flow-connector" aria-hidden="true">↓ D3D12 命令與資源</div>
+            <div class="flow-tier flow-tier-render"><span class="flow-index">04 / RENDERING</span><h3>光照、材質與時間重建</h3><div class="flow-modules">
+                <details><summary>Forward+ / CSM / Atmosphere</summary><p>局部光源、級聯陰影、接觸陰影與大氣，搭配 HDR 世界渲染。</p></details>
+                <details><summary>Water / Foliage / HDR</summary><p>水面透明合成、植被遮罩與 HDR 語意 readback；狀態依各切片驗證。</p></details>
+                <details><summary>TAA / DLSS / Bloom</summary><p>DLSS 深度語意切片已驗證；b09040e 涵蓋 Streamline 生命週期與 Bloom 效能。跨場景完整 production 支援仍待完成。</p></details>
+            </div></div>
+            <div class="flow-connector" aria-hidden="true">↓ 畫面與可重現證據</div>
+            <div class="flow-tier"><span class="flow-index">05 / VALIDATION</span><h3>畫面、效能與生命週期驗收</h3><p>Color / Object ID / Depth / HDR → typed receipts 與 SHA-256 → Normal / GBV → raw CPU / GPU → 11-shot 視覺 gate。Windows、D3D12、資產 cooker 與檔案系統提供平台基礎。</p></div>
         </div>
     </section>
 

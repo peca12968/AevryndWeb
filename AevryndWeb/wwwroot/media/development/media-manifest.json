@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "publishedDate": "2026-09-05",
+  "title": "Aevrynd Demo evolution",
+  "disclosure": "歷史實機截圖動畫導覽（非連續遊玩錄影）",
+  "continuousGameplayRecording": false,
+  "sourcePolicy": "Only immutable in-engine release capture PNG files were encoded; no generated or synthetic gameplay imagery was used.",
+  "media": [
+    {
+      "id": "gameplay-evolution",
+      "file": "gameplay-evolution.mp4",
+      "poster": "gameplay-evolution.jpg",
+      "mimeType": "video/mp4",
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "durationSeconds": 15,
+      "frameCount": 450,
+      "audio": false,
+      "fastStart": true,
+      "sha256": "e0989592e84021f9220640d4d417db23958dc1a387515225c57b033a8422f924",
+      "posterSha256": "8ba9544f497d2083a219dca624594753a37c1b36bfe9047eb8c3a56e96a77294",
+      "sources": [
+        {
+          "release": "gameplay-lab-v1.1.0-engine-v2.86.0-5d8abb23",
+          "path": "Demo/releases/gameplay-lab/v1.1.0-engine-v2.86.0-5d8abb23/gameplay-captures-normal/third-day.png",
+          "sha256": "70140a08eb325325164f1099f8dd867b05db7a82ce8ce373230dad3201bcb19c"
+        },
+        {
+          "release": "gameplay-lab-v1.2.0-engine-v2.86.0-b74e92ae",
+          "path": "Demo/releases/gameplay-lab/v1.2.0-engine-v2.86.0-b74e92ae/gameplay-captures-normal/third-day.png",
+          "sha256": "d1e83fffdbfdfb7554d8029c38bb5a6539d67274368fe38d47f5e5199a03016b"
+        },
+        {
+          "release": "gameplay-lab-v1.3.0-engine-v2.86.0-2260f01e",
+          "path": "Demo/releases/gameplay-lab/v1.3.0-engine-v2.86.0-2260f01e/gameplay-captures-normal/third-day.png",
+          "sha256": "86c2fa35a2e4203a137331571d5028dac1908ab21345abee8ef65e659f3a4053"
+        }
+      ]
+    },
+    {
+      "id": "engine-evolution",
+      "file": "engine-evolution.mp4",
+      "poster": "engine-evolution.jpg",
+      "mimeType": "video/mp4",
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "durationSeconds": 15,
+      "frameCount": 450,
+      "audio": false,
+      "fastStart": true,
+      "sha256": "5d493930e59704637836e8aa1f511f83789c19457613fa05111b83d77e17ef1e",
+      "posterSha256": "08bca2b16ac1270d6653067eb1b059f6450bec90c25e9a8dbb4c3b319a2fd000",
+      "sources": [
+        {
+          "release": "engine-lab-v2.51.0-engine-v2.86.0-4568daa1",
+          "path": "Demo/releases/engine-lab/v2.51.0-engine-v2.86.0-4568daa1/captures/world-partition-overview.png",
+          "sha256": "2b5346400067302af10fbc1cda14e1f6c69e5c2f919666c3ab249b428cfb7ac9"
+        },
+        {
+          "release": "engine-lab-v2.52.0-engine-v2.86.0-e1584944",
+          "path": "Demo/releases/engine-lab/v2.52.0-engine-v2.86.0-e1584944/captures/far-global-negative-rebase-overview.png",
+          "sha256": "416998e8e453e205a7808c4e4335b8b8c141a5bd982395b2f21c34bcac567797"
+        },
+        {
+          "release": "engine-lab-v2.53.0-engine-v2.86.0-73f10a96",
+          "path": "Demo/releases/engine-lab/v2.53.0-engine-v2.86.0-73f10a96/captures/world-partition-delta-d3d12.png",
+          "sha256": "681554b52fb1ccbee50f0b04621d932c2a1ecfad1fed9011db06434be391f730"
+        },
+        {
+          "release": "engine-lab-v2.54.0-engine-v2.86.0-b141122b",
+          "path": "Demo/releases/engine-lab/v2.54.0-engine-v2.86.0-b141122b/captures/network-replication-overview.png",
+          "sha256": "b7976a5c7d59a913a6556c7604e1f722319477ad1b30af8ce42c78419f0d0a8a"
+        },
+        {
+          "release": "engine-lab-v2.55.0-engine-v2.86.0-c033de38",
+          "path": "Demo/releases/engine-lab/v2.55.0-engine-v2.86.0-c033de38/captures/normal/day-shadow.png",
+          "sha256": "243f03aad9a7a1f32a5997663a3af7e781762f190eb6d6995c295440ad760131"
+        }
+      ]
+    }
+  ]
+}

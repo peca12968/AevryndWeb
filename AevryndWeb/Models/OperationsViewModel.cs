@@ -6,7 +6,8 @@ public sealed record OperationsViewModel(
     IReadOnlyList<OperationsWorkView> History,
     DateTimeOffset? SnapshotAt,
     bool SourceAvailable,
-    string SourceStatus);
+    string SourceStatus,
+    IReadOnlyList<NodeHardwareView> Hardware);
 
 public sealed record OperationsNodeView(
     string Id,

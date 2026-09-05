@@ -6,6 +6,7 @@
 @functions {
     private static string Metric(double? value) => value.HasValue ? $"{value.Value:0.0}%" : "unavailable";
     private static string Timestamp(DateTimeOffset? value) => value.HasValue ? value.Value.UtcDateTime.ToString("yyyy-MM-dd HH:mm:ss 'UTC'") : "unavailable";
+    private static string StatusClass(string status, bool stale = false) => stale ? "is-stale" : status switch { "failed" => "is-failed", "blocked" => "is-blocked", "cancelled" => "is-cancelled", _ => "is-current" };
 }
 
 <section class="operations-shell" data-operations-root data-snapshot-url="@Url.Action("Snapshot", "Operations")">
@@ -39,13 +40,36 @@
         </div>
     </section>
 
+    <section class="operations-section" aria-labelledby="hardwareTitle">
+        <div class="operations-title"><div><span class="micro-label">NODE HARDWARE &amp; MODEL</span><h2 id="hardwareTitle">節點硬體與模型</h2></div><p>硬體 metadata 與即時效能採樣分開；缺少副機實測時顯示 pending，不以 0 或估算值填補。</p></div>
+        <div class="operations-hardware-grid" data-hardware-grid>
+            @foreach (var hardware in Model.Hardware)
+            {
+                <article class="operations-hardware-card" data-hardware-id="@hardware.Id">
+                    <header><div><small>@hardware.Id.ToUpperInvariant()</small><h3>@hardware.Name</h3></div><span class="operations-badge @(hardware.HardwareStatus == "verified" ? "is-current" : "is-stale")" data-hardware-status>@hardware.HardwareStatus</span></header>
+                    <p class="hardware-model"><strong data-hardware-field="model">@hardware.Model</strong> · <span data-hardware-field="reasoning">@hardware.Reasoning</span></p>
+                    <p class="hardware-role" data-hardware-field="role">@hardware.Role</p>
+                    <dl class="hardware-details">
+                        <div><dt>CPU</dt><dd data-hardware-field="cpu">@(hardware.Cpu ?? "等待實測")</dd></div>
+                        <div><dt>RAM</dt><dd data-hardware-field="ram">@(hardware.Ram ?? "等待實測")</dd></div>
+                        <div><dt>GPU</dt><dd data-hardware-field="gpu">@(hardware.Gpu ?? "等待實測")</dd></div>
+                        <div><dt>主機板</dt><dd data-hardware-field="motherboard">@(hardware.Motherboard ?? "等待實測")</dd></div>
+                        <div><dt>作業系統</dt><dd data-hardware-field="os">@(hardware.Os ?? "等待實測")</dd></div>
+                        <div><dt>儲存</dt><dd data-hardware-field="storage">@(hardware.Storage.Count > 0 ? string.Join("；", hardware.Storage) : "等待實測")</dd></div>
+                    </dl>
+                    <p class="hardware-provenance">模型來源：<span data-hardware-field="modelSource">@hardware.ModelSource</span><br />硬體來源：<span data-hardware-field="source">@hardware.Source</span><br />硬體採樣：<time data-hardware-field="sampledAt" datetime="@(hardware.SampledAt?.ToString("O"))">@Timestamp(hardware.SampledAt)</time></p>
+                </article>
+            }
+        </div>
+    </section>
+
     <section class="operations-section" aria-labelledby="activeTitle">
         <div class="operations-title"><div><span class="micro-label">ACTIVE WORK</span><h2 id="activeTitle">目前工作</h2></div><p>保留來源提供的開始與更新時間；十五分鐘未更新即標示 stale。</p></div>
         <p class="operations-empty" data-active-empty @(Model.ActiveWork.Count == 0 ? null : "hidden")>@(Model.SourceAvailable ? "目前沒有來源宣告中的工作；請確認各節點 Codex status publisher 正在更新。" : $"無法讀取工作：{Model.SourceStatus}")</p>
         <div class="operations-table-wrap" data-active-wrap @(Model.ActiveWork.Count == 0 ? "hidden" : null)><table class="operations-table"><thead><tr><th>安全名稱</th><th>類型</th><th>主機</th><th>開始</th><th>最近更新</th><th>狀態</th></tr></thead><tbody data-active-body>
         @foreach (var item in Model.ActiveWork)
         {
-            <tr><td data-label="安全名稱">@item.Name</td><td data-label="類型">@item.Type</td><td data-label="主機">@item.Host</td><td data-label="開始"><time datetime="@item.StartedAt.ToString("O")">@Timestamp(item.StartedAt)</time></td><td data-label="最近更新"><time datetime="@(item.UpdatedAt?.ToString("O"))">@Timestamp(item.UpdatedAt)</time></td><td data-label="狀態"><span class="operations-badge @(item.Stale ? "is-stale" : "is-current")">@(item.Stale ? $"{item.Status} · stale" : item.Status)</span></td></tr>
+            <tr><td data-label="安全名稱">@item.Name</td><td data-label="類型">@item.Type</td><td data-label="主機">@item.Host</td><td data-label="開始"><time datetime="@item.StartedAt.ToString("O")">@Timestamp(item.StartedAt)</time></td><td data-label="最近更新"><time datetime="@(item.UpdatedAt?.ToString("O"))">@Timestamp(item.UpdatedAt)</time></td><td data-label="狀態"><span class="operations-badge @StatusClass(item.Status, item.Stale)">@(item.Stale ? $"{item.Status} · stale" : item.Status)</span></td></tr>
         }
         </tbody></table></div>
     </section>
@@ -56,7 +80,7 @@
         <div class="operations-table-wrap" data-history-wrap @(Model.History.Count == 0 ? "hidden" : null)><table class="operations-table operations-history" data-history-table><thead><tr><th>安全名稱</th><th>類型／主機</th><th>時間軸</th><th>結果</th><th>證據摘要</th></tr></thead><tbody data-history-body>
         @foreach (var item in Model.History)
         {
-            <tr><td data-label="安全名稱">@item.Name</td><td data-label="類型／主機">@item.Type · @item.Host</td><td data-label="時間軸" data-order="@item.StartedAt.UtcTicks">開始 <time datetime="@item.StartedAt.ToString("O")">@Timestamp(item.StartedAt)</time><br />更新 <time datetime="@(item.UpdatedAt?.ToString("O"))">@Timestamp(item.UpdatedAt)</time><br />結束 <time datetime="@(item.EndedAt?.ToString("O"))">@Timestamp(item.EndedAt)</time></td><td data-label="結果"><span class="operations-badge">@item.Status</span></td><td data-label="證據摘要">@(item.EvidenceSummary ?? "來源未提供證據摘要。")</td></tr>
+            <tr><td data-label="安全名稱">@item.Name</td><td data-label="類型／主機">@item.Type · @item.Host</td><td data-label="時間軸" data-order="@item.StartedAt.ToUnixTimeMilliseconds()">開始 <time datetime="@item.StartedAt.ToString("O")">@Timestamp(item.StartedAt)</time><br />更新 <time datetime="@(item.UpdatedAt?.ToString("O"))">@Timestamp(item.UpdatedAt)</time><br />結束 <time datetime="@(item.EndedAt?.ToString("O"))">@Timestamp(item.EndedAt)</time></td><td data-label="結果"><span class="operations-badge @StatusClass(item.Status)">@item.Status</span></td><td data-label="證據摘要">@(item.EvidenceSummary ?? "來源未提供證據摘要。")</td></tr>
         }
         </tbody></table></div>
     </section>

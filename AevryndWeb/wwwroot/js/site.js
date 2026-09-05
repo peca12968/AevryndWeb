@@ -28,6 +28,7 @@
   const activeEmpty = root.querySelector("[data-active-empty]");
   const historyEmpty = root.querySelector("[data-history-empty]");
   const historyElement = root.querySelector("[data-history-table]");
+  const hardwareGrid = root.querySelector("[data-hardware-grid]");
   let historyDataTable = null;
   const endpoint = root.dataset.snapshotUrl;
   const formatMetric = value => Number.isFinite(value) ? `${value.toFixed(1)}%` : "unavailable";
@@ -39,8 +40,10 @@
   const appendCell = (row, label, value) => {
     const cell = document.createElement("td"); cell.dataset.label = label; cell.textContent = value; row.append(cell); return cell;
   };
+  const hardwareValue = value => value || "等待實測";
   const badge = (value, stale = false) => {
-    const span = document.createElement("span"); span.className = `operations-badge ${stale ? "is-stale" : "is-current"}`;
+    const terminal = value === "failed" ? "is-failed" : value === "blocked" ? "is-blocked" : value === "cancelled" ? "is-cancelled" : stale ? "is-stale" : "is-current";
+    const span = document.createElement("span"); span.className = `operations-badge ${terminal}`;
     span.textContent = stale ? `${value} · stale` : value; return span;
   };
   const renderWork = (items, body, wrap, empty, sourceAvailable, sourceMessage, history) => {
@@ -84,6 +87,13 @@
       availability.className = `operations-badge is-${node.availability}`;
       const sampled = card.querySelector("[data-node-sampled]"); sampled.textContent = formatTime(node.sampledAt); sampled.dateTime = node.sampledAt || "";
       card.querySelector("[data-node-diagnostic]").textContent = node.diagnostic;
+    });
+    model.hardware?.forEach(item => {
+      const card = hardwareGrid?.querySelector(`[data-hardware-id="${item.id}"]`); if (!card) return;
+      const status = card.querySelector("[data-hardware-status]"); status.textContent = item.hardwareStatus || "pending"; status.className = `operations-badge ${item.hardwareStatus === "verified" ? "is-current" : "is-stale"}`;
+      for (const field of ["model", "reasoning", "role", "cpu", "ram", "gpu", "motherboard", "os", "modelSource", "source"]) { const element = card.querySelector(`[data-hardware-field="${field}"]`); if (element) element.textContent = hardwareValue(item[field]); }
+      const storage = card.querySelector('[data-hardware-field="storage"]'); if (storage) storage.textContent = item.storage?.length ? item.storage.join("；") : "等待實測";
+      const sampled = card.querySelector('[data-hardware-field="sampledAt"]'); if (sampled) { sampled.textContent = formatTime(item.sampledAt); sampled.dateTime = item.sampledAt || ""; }
     });
     renderWork(model.activeWork, activeBody, activeWrap, activeEmpty, model.sourceAvailable, model.sourceStatus, false);
     renderWork(model.history, historyBody, historyWrap, historyEmpty, model.sourceAvailable, model.sourceStatus, true);

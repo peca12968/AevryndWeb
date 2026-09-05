@@ -47,13 +47,12 @@ public sealed class OperationsTelemetryPublisher(
             Id = "local", CpuPercent = cpu, RamPercent = memory.Total > 0 ? 100d * (memory.Total - memory.Available) / memory.Total : null,
             GpuPercent = ReadGpuPercent(), SampledAt = now
         });
-        var codexWork = ReadCodexWork(now, previous?.ActiveWork);
-        var history = MergeHistory(previous?.History, ReadCodexHistory(now));
-        // relay 會先寫 terminal history 再移除 active；跨檔案競態時以明確 terminal 事件為準。
-        if (codexWork is not null && history.Any(item => SameIdentity(item, codexWork))) codexWork = null;
+        var authoritativeHistory = ReadCodexHistory(now);
+        var cachedHistory = ReconcileCachedHistory(previous?.History, authoritativeHistory);
+        var history = MergeHistory(cachedHistory, authoritativeHistory);
+        var codexWork = ResolveCodexWork(previous?.ActiveWork, ReadCodexWork(now, previous?.ActiveWork), history);
         var activeWork = previous?.ActiveWork?.Where(item => !string.Equals(item.Type, "codex", StringComparison.Ordinal)).ToList() ?? [];
         if (codexWork is not null) activeWork.Insert(0, codexWork);
-        AppendEndedCodexWork(previous?.ActiveWork, codexWork, now, history);
         var document = new OperationsStateDocument
         {
             Version = 1,
@@ -67,31 +66,28 @@ public sealed class OperationsTelemetryPublisher(
         File.Move(temporary, _statePath, true);
     }
 
-    private static void AppendEndedCodexWork(
+    private static OperationsWorkState? ResolveCodexWork(
         IReadOnlyCollection<OperationsWorkState>? previousActive,
         OperationsWorkState? current,
-        DateTimeOffset now,
-        List<OperationsWorkState> history)
+        IReadOnlyCollection<OperationsWorkState> history)
     {
-        var previousCodex = previousActive?.FirstOrDefault(item => string.Equals(item.Type, "codex", StringComparison.Ordinal));
-        if (previousCodex is null || current is not null || history.Any(item =>
-                string.Equals(item.Type, "codex", StringComparison.Ordinal) &&
-                string.Equals(item.Name, previousCodex.Name, StringComparison.Ordinal) &&
-                item.StartedAt == previousCodex.StartedAt)) return;
-
-        // TTL 過期只證明摘要已停止更新，不推測成功或失敗；以 cancelled 記錄可追溯的停止事件。
-        history.Add(new OperationsWorkState
-        {
-            Name = previousCodex.Name,
-            Type = previousCodex.Type,
-            Host = previousCodex.Host,
-            StartedAt = previousCodex.StartedAt,
-            UpdatedAt = now,
-            EndedAt = now,
-            Status = "cancelled",
-            EvidenceSummary = "工作摘要停止更新；來源未提供結束原因。"
-        });
+        // status 缺失或 TTL 過期只代表 publisher 暫時沒有新證據；保留原始時間讓頁面標示 stale，不能臆造 terminal。
+        var candidate = current ?? previousActive?.FirstOrDefault(item => string.Equals(item.Type, "codex", StringComparison.Ordinal));
+        return candidate is not null && !history.Any(item => SameIdentity(item, candidate)) ? candidate : null;
     }
+
+    private static List<OperationsWorkState> ReconcileCachedHistory(
+        IReadOnlyCollection<OperationsWorkState>? cached,
+        IReadOnlyCollection<OperationsWorkState> authoritative)
+    {
+        return (cached ?? [])
+            .Where(item => !IsLegacySyntheticCancelled(item) || authoritative.Any(entry => SameIdentity(entry, item)))
+            .ToList();
+    }
+
+    private static bool IsLegacySyntheticCancelled(OperationsWorkState item) =>
+        item.Type == "codex" && item.Host == "local" && item.Status == "cancelled" &&
+        item.EvidenceSummary == "工作摘要停止更新；來源未提供結束原因。";
 
     private OperationsWorkState? ReadCodexWork(DateTimeOffset now, IReadOnlyCollection<OperationsWorkState>? previousActive)
     {
