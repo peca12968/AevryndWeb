@@ -36,7 +36,7 @@ public sealed class OperationsDispatchProviderTests
         var state = State(Task("WORK-01", "acknowledged"));
         var model = OperationsDispatchProvider.Project(state, Health(state, verified: Now), Now, Empty);
         Assert.False(model.Schedule.Stale); Assert.Equal(Now, model.Schedule.VerifiedAt);
-        Assert.Empty(model.Schedule.Tasks); Assert.Empty(model.History);
+        Assert.Equal("unconfirmed", Assert.Single(model.Schedule.Tasks).State); Assert.Empty(model.History);
     }
 
     [Fact]
@@ -52,7 +52,8 @@ public sealed class OperationsDispatchProviderTests
     {
         var state = State(Task("WORK-01", "unconfirmed"), Task("WORK-02", "acknowledged", ["WORK-01"]) with { CommandCommentId = 3, LeaseExpiresAt = Now.AddMinutes(5) });
         var model = OperationsDispatchProvider.Project(state, Health(state, verified: Now), Now, Empty);
-        Assert.Equal("blocked", model.Schedule.Tasks.Single(task => task.Id == "WORK-02").State); Assert.Empty(model.History);
+        Assert.Equal("blocked", model.Schedule.Tasks.Single(task => task.Id == "WORK-02").State);
+        Assert.Contains(model.Schedule.Tasks, task => task.Id == "WORK-01" && task.State == "unconfirmed"); Assert.Empty(model.History);
         state = State(Task("WORK-01", "failed"));
         model = OperationsDispatchProvider.Project(state, Health(state, verified: Now), Now, Empty);
         Assert.Empty(model.Schedule.Tasks); Assert.Equal("failed", Assert.Single(model.History).Status);
@@ -80,7 +81,7 @@ public sealed class OperationsDispatchProviderTests
     }
 
     [Fact]
-    public void LiveScheduleExcludesReviewReportsAndKeepsOnlyLatestGeneration()
+    public void LiveScheduleKeepsNonTerminalReviewStatesAndOnlyLatestGeneration()
     {
         var state = State(
             Task("OLD-REPORT", "unconfirmed"),
@@ -90,9 +91,10 @@ public sealed class OperationsDispatchProviderTests
 
         var model = OperationsDispatchProvider.Project(state, Health(state, verified: Now), Now, Empty);
 
-        var task = Assert.Single(model.Schedule.Tasks);
-        Assert.Equal("WORK-G2", task.Id);
-        Assert.Equal("queued", task.State);
+        Assert.Equal(3, model.Schedule.Tasks.Count);
+        Assert.Contains(model.Schedule.Tasks, task => task.Id == "WORK-G2" && task.State == "queued");
+        Assert.Contains(model.Schedule.Tasks, task => task.Id == "OLD-REPORT" && task.State == "unconfirmed");
+        Assert.Contains(model.Schedule.Tasks, task => task.Id == "WAITING-REVIEW" && task.State == "blocked");
         Assert.Contains(model.Schedule.Catalog, item => item.Id == "OLD-REPORT");
         Assert.Contains(model.Schedule.Catalog, item => item.Id == "WAITING-REVIEW");
     }
@@ -356,9 +358,25 @@ public sealed class OperationsDispatchProviderTests
         var mixed = OperationsDispatchProvider.Project(remoteState, Health(remoteState, verified: Now), Now, baseModel with { Schedule = localSchedule });
 
         Assert.True(mixed.Schedule.LocalScheduleStale);
-        Assert.DoesNotContain(mixed.Schedule.Tasks, task => task.NodeId == "local");
+        Assert.Contains(mixed.Schedule.Tasks, task => task.NodeId == "local" && task.Id == "OLD-LOCAL" && task.State == "unconfirmed");
         Assert.Contains(mixed.Schedule.Tasks, task => task.Id == "FRESH-REMOTE" && task.NodeId == "taichung");
         Assert.Contains(mixed.Schedule.Catalog, task => task.Id == "OLD-LOCAL");
         Assert.DoesNotContain(mixed.ActiveWork, work => work.Name == "OLD-LOCAL" && !work.Stale);
+    }
+
+    [Theory]
+    [InlineData("WORKING")]
+    [InlineData("RUNNING")]
+    public void ExplicitProgressReportRemainsRunningUntilTerminalReport(string status)
+    {
+        var state = ProjectComments(null,
+            Comment(10, Command("ACTIVE-WORK", "ACK_DEADLINE_SECONDS: 300\nLEASE_SECONDS: 3600"), "2026-09-05T08:00:00Z"),
+            Comment(11, Report("ACTIVE-WORK", "ACK"), "2026-09-05T08:01:00Z"),
+            Comment(12, Report("ACTIVE-WORK", status), "2026-09-05T08:02:00Z"));
+
+        var document = OperationsDispatchProjection.ReadDocument(state);
+        Assert.Equal("running", Assert.Single(document.Tasks).State);
+        var model = OperationsDispatchProvider.Project(state, Health(state, verified: Now), Now, Empty);
+        Assert.Equal("running", Assert.Single(model.Schedule.Tasks).State);
     }
 }

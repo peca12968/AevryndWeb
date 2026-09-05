@@ -69,12 +69,11 @@ public sealed class OperationsDispatchProvider(IConfiguration configuration)
                 continue;
             if (task.State == "queued" && task.AckDeadline < now)
                 entry = entry with { State = "unconfirmed", Reason = "接單期限已過，尚未驗證接單；未推測取消或完成。 " + entry.Reason };
-            if (task.LeaseExpiresAt < now && task.State == "acknowledged")
+            if (task.LeaseExpiresAt < now && task.State is "acknowledged" or "running")
                 entry = entry with { State = "unconfirmed", Reason = "派遣租約已過，程序狀態待確認；未推測已停止。 " + entry.Reason };
             if (task.DependsOn.Any(id => !document.Tasks.Any(dependency => dependency.Id == id && dependency.State is "completed" or "failed" or "cancelled")))
                 entry = entry with { State = "blocked", Reason = "相依任務尚無可驗證終態；" + entry.Reason };
-            // NODE_REPORT 的待主機審核與已過期租約不是副機可執行佇列，避免把它們誤算成正在等待的工作。
-            if (task.State is "unconfirmed" or "blocked" || entry.State == "unconfirmed") continue;
+            // 待主機確認與等待條件仍是未結束的派遣生命週期，但不能冒充執行中。
             tasks.Add(entry);
         }
         return Unify(model with { History = history, Schedule = new(true, stale, document.ObservedAt, tasks)
@@ -93,7 +92,7 @@ public sealed class OperationsDispatchProvider(IConfiguration configuration)
         {
             var node = work.Host switch { "本機" => "local", "台中" => "taichung", "桃園" => "taoyuan", _ => "" };
             if (node.Length == 0) continue;
-            if (node == "local" && model.Schedule.LocalScheduleStale) continue;
+            // 過期的本機排程檔不能復活舊排程；獨立工作摘要仍保留並誠實標成待確認。
             var matched = tasks.Where(task => task.Id == work.Name && task.NodeId == node && work.StartedAt >= task.AssignedAt)
                 .OrderByDescending(task => task.AssignedAt).FirstOrDefault();
             if (model.Schedule.Catalog.Any(task => task.Id == work.Name && task.NodeId == node && work.StartedAt >= task.AssignedAt &&

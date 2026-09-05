@@ -123,6 +123,7 @@ public static class OperationsDispatchProjection
             if (Terminal.Contains(task.State)) continue;
             var state = ack ? "acknowledged" : status switch
             {
+                "WORKING" or "RUNNING" => "running",
                 "COMPLETED" or "COMPLETE" => "completed",
                 "FAILED" => "failed", "CANCELLED" => "cancelled",
                 "BLOCKED" or "NEEDS_MAIN_VALIDATION" or "NEEDS_REMOTE_VALIDATION" => "blocked",
@@ -131,6 +132,7 @@ public static class OperationsDispatchProjection
             };
             var reason = ack ? "已接單；接單不代表程序正在執行。" : state switch
             {
+                "running" => "節點明確回報正在執行；此狀態以最後事件時間為準。",
                 "completed" => "節點明確回報完成；不代表其他驗收項目已通過。",
                 "failed" => "節點明確回報失敗，等待主機處理。",
                 "cancelled" => "節點明確回報取消。",
@@ -208,7 +210,7 @@ public static class OperationsDispatchProjection
             result.Tasks.Any(task => task is null) || result.Tasks.Select(task => task.CommandCommentId).Distinct().Count() != result.Tasks.Count ||
             result.Tasks.Any(task => !Id(task.Id) || !Id(task.WorkKey) || !Node(task.NodeId?.ToUpperInvariant(), out _) || task.CommandCommentId <= 0 ||
                 task.Generation < 1 || !Safe(task.Title, 80) || !Safe(task.Description, 600) || !Safe(task.Reason, 400) || !Safe(task.Evidence, 240) ||
-                task.State is not ("queued" or "acknowledged" or "blocked" or "unconfirmed" or "completed" or "failed" or "cancelled" or "superseded") ||
+                task.State is not ("queued" or "acknowledged" or "running" or "blocked" or "unconfirmed" or "completed" or "failed" or "cancelled" or "superseded") ||
                 task.AssignedAt == default || task.UpdatedAt < task.AssignedAt || task.AcknowledgedAt < task.AssignedAt ||
                 task.EndedAt < task.AssignedAt || (Terminal.Contains(task.State) && !task.EndedAt.HasValue) ||
                 task.DependsOn is null || task.DependsOn.Length > 10 || task.DependsOn.Any(value => !Id(value))))
