@@ -87,6 +87,13 @@
         </div>
     </section>
 
+    <section class="operations-section" aria-labelledby="engineMilestoneTitle">
+        <div class="operations-title"><div><span class="micro-label">VERIFIED ENGINE MILESTONE</span><h2 id="engineMilestoneTitle">已推送引擎完成歷程</h2></div><p>此區只記錄已推送且具明確測試邊界的里程碑，不併入即時節點狀態。</p></div>
+        <div class="operations-table-wrap"><table class="operations-table operations-history"><thead><tr><th>里程碑</th><th>來源</th><th>狀態</th><th>驗證</th><th>證據邊界</th></tr></thead><tbody>
+            <tr><td data-label="里程碑">Development Ultra GPU truth</td><td data-label="來源">engine commit fff5638</td><td data-label="狀態"><span class="operations-badge is-current">已完成</span></td><td data-label="驗證">fresh 6/6 + hostile 8/8</td><td data-label="證據邊界">實際 D3D12 adapter LUID 綁定 DXGI telemetry；commit 後持續保存 current-epoch observation，rollback 與 epoch reset 不沿用舊證據。第一個 false 是首筆 frame budget（submitted=1、completed=0、timing=0、lastGpuNs=0）。這不是視覺提高證據；Demo 仍為 34 / 100，v1.4 未發布。</td></tr>
+        </tbody></table></div>
+    </section>
+
     <section class="operations-section" aria-labelledby="historyTitle">
         <div class="operations-title"><div><span class="micro-label">PAST TASKS</span><h2 id="historyTitle">過往任務</h2></div><p>只列明確完成或失敗且含結束時間的任務；依開始時間倒序（最多 500 筆）。</p></div>
         <p class="operations-empty" data-history-empty @(Model.History.Count == 0 ? null : "hidden")>@(Model.SourceAvailable ? "尚未累積歷程；工作來源必須提供明確結束狀態才會列入。" : $"無法讀取歷程：{Model.SourceStatus}")</p>
