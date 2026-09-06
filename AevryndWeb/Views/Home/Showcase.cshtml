@@ -15,7 +15,7 @@
 
 
     <nav class="atlas-nav" aria-label="展示章節">
-        <a href="#demo-motion">01 動態展示</a><a href="#release-title">02 版本演進</a><a href="#system-title">03 三機協作</a><a href="#engine-title">04 引擎架構</a>
+        <a href="#demo-motion">01 動態展示</a><a href="#release-title">02 版本演進</a><a href="#heroine-title">03 原創女主角 WIP</a><a href="#system-title">04 三機協作</a><a href="#engine-title">05 引擎架構</a>
     </nav>
     <section id="demo-motion" class="showcase-section motion-section" aria-labelledby="motion-title">
         <div class="section-heading"><p class="micro-label">ENGINE IN MOTION</p><h2 id="motion-title">看見開發演進</h2><p>以各版本留下的實機截圖製作動畫導覽；這是歷史畫面比較，非連續遊玩錄影。影片版本與原始圖片雜湊可由來源清單核對。</p></div>
@@ -67,7 +67,47 @@
             <article data-stage="wip" tabindex="0" data-detail-title="Character Asset Manifest Trust Anchor" data-detail="已推送引擎 commit f0129d1；以固定 manifest trust anchor 驗證角色來源，handle-relative 開啟與 reparse 防護避免路徑在驗證後被替換。GLTF、AESKIN 與 manifest 進行 cross-check，runtime 只消費已封印的 immutable 資產；fresh 2/2 + hostile GO，package blend=0。這是資產信任與消費完整性里程碑，不代表角色美術改善。Demo 仍為 34 / 100，v1.4 未發布。"><time>CHARACTER TRUST · HOSTILE GO</time><h3>固定 manifest trust anchor</h3><p>Handle-relative／reparse 防護、GLTF／AESKIN／manifest cross-check 與 immutable runtime consume 已驗證；package blend=0。</p><code>commit f0129d1 · fresh 2/2 + hostile GO · 未發布 WIP</code></article>
             <article data-stage="wip" tabindex="0" data-detail-title="HLOD Aggregate Proxy and Safe Runtime Cache" data-detail="已推送引擎 commit ab976d21c9505a9295be292211a18d8c42db9edc；30 個 rock sources 組成 6 clusters，涵蓋六種 descriptor。安全 runtime cache 以 pinned handle 保持來源 identity，拒絕 reparse 與 hardlink，使用 unique temp、atomic rename、SHA-256 與 checked overflow；主機與獨立 hostile fresh 4/4。這是 aggregate proxy 與 cache 完整性里程碑；OnRender、GPU-side selection、transition pixels 與 real workload 仍未完成。Demo 仍為 34 / 100，v1.4 未發布。"><time datetime="2026-09-06T04:44:00+08:00">2026-09-06 04:44 台北時間 · HLOD FRESH GO</time><h3>Aggregate proxy 與安全 runtime cache</h3><p>30 rock sources／6 clusters、六 descriptor coverage；pinned handle、reparse／hardlink 拒絕、unique temp、atomic rename、SHA-256 與 checked overflow 已驗證。</p><code>commit ab976d2 · 主機＋獨立 hostile fresh 4/4 · 未發布 WIP</code></article>
             <article data-stage="wip" tabindex="0" data-detail-title="Character Locomotion Cycle Phase Validation" data-detail="已推送引擎 commit 4b73f0fa77d6f4e117a4b54b225bea697fe65397；角色 locomotion 的左右腳週期相位不再取不穩定的單一最低點，而是以完整接觸深度週期的第一諧波計算。baseline GAP 0.18333334 未通過，修正後 fresh GAP 0.50、DRIFT 0.013、STEP 0.019；fresh Release 三個 targets、Automation 360/360、provenance、12/12 capture，以及 manifest／BIN／AESKIN tamper fail-closed 全數通過。這提升角色動作驗收的可靠性，不代表角色外觀或美術已完成。Demo 仍為 34 / 100，v1.4 未發布。"><time datetime="2026-09-06">2026-09-06 · CHARACTER FRESH GO</time><h3>完整週期角色步態驗收</h3><p>以第一諧波取代單一最低點相位；fresh GAP 0.50、DRIFT 0.013、STEP 0.019，Automation 360/360 與 12/12 capture 通過。</p><code>commit 4b73f0f · tamper fail-closed · 外觀仍未完成</code></article>
+            <article data-stage="wip" tabindex="0" data-detail-title="Temporal Provenance Closure" data-detail="commit 3c5c684 建立 temporal provenance 的來源閉環，讓跨幀資料可追溯到同一份有效證據；這是資料正確性里程碑，不是畫質分數提升。"><time datetime="2026-09-06">2026-09-06 · TEMPORAL PROVENANCE</time><h3>時間資料來源閉環</h3><p>跨幀證據以可追溯 provenance 約束，避免把不同 frame／epoch 的資料誤認為同一筆驗證結果。</p><code>commit 3c5c684 · 未發布引擎切片</code></article>
+            <article data-stage="wip" tabindex="0" data-detail-title="Archive Collection" data-detail="commit dc8dab3 完成 archive collection 切片，保存可追溯的收集結果與邊界；其驗證範圍不延伸為完整 Demo 或 production HLOD 聲明。"><time datetime="2026-09-06">2026-09-06 · ARCHIVE COLLECTION</time><h3>可追溯封存收集</h3><p>將收集結果納入可核對的 archive 邊界，降低舊產物與目前來源混用的風險。</p><code>commit dc8dab3 · scope-limited WIP</code></article>
+            <article data-stage="wip" tabindex="0" data-detail-title="Compiler Object-ID Probe" data-detail="commit 28fd2d0 加入 compiler Object-ID probe；目前 fresh focused 4/4 通過，但完整 11-shot 視覺驗收仍等待遠端執行，不能據此宣稱 Demo 達標。"><time datetime="2026-09-06">2026-09-06 · OBJECT-ID PROBE</time><h3>Compiler Object-ID 探針</h3><p>fresh focused 4/4 已通過；完整 11-shot 仍待遠端驗證，因此 Demo 維持 34 / 100、v1.4 未發布。</p><code>commit 28fd2d0 · focused 4/4 · 11-shot pending</code></article>
         </div>
+    </section>
+
+    <section class="showcase-section heroine-section" aria-labelledby="heroine-title">
+        <div class="section-heading">
+            <p class="micro-label">ORIGINAL HEROINE / ISOLATED WIP</p>
+            <h2 id="heroine-title">原創女主角 WIP</h2>
+            <p>以 MPFB／MakeHuman CC0 基礎資產建立的隔離 v11 預覽。技術 gate 已通過，但敵意視覺審查仍為 NO-GO；未整合進正式 generated 資產，也不是 v1.4 Demo 成品。</p>
+        </div>
+        <div class="heroine-status" aria-label="角色目前狀態">
+            <div><small>TECHNICAL GATE</small><strong>PASS</strong><span>Blender 5.2.1 · 10 張預覽雜湊皆不同</span></div>
+            <div><small>VISUAL GATE</small><strong class="status-no">NO-GO</strong><span>通用臉部與服裝拓撲仍未達 production hero</span></div>
+            <div><small>INTEGRATION</small><strong>未整合</strong><span>隔離輸出，不覆寫正式角色資產</span></div>
+        </div>
+        <div class="heroine-gallery" aria-label="Aevrynd 女主角 v11 預覽">
+            <button type="button" class="heroine-shot heroine-shot-tall" data-lightbox-src="/media/development/aevrynd-heroine-v11-front.png" data-lightbox-alt="Aevrynd 原創女主角 v11 正面全身預覽">
+                <img src="/media/development/aevrynd-heroine-v11-front.png" alt="Aevrynd 原創女主角 v11 正面全身預覽" loading="lazy" />
+                <span><strong>Front</strong>1.72 m 人體比例與完整服裝輪廓</span>
+            </button>
+            <button type="button" class="heroine-shot" data-lightbox-src="/media/development/aevrynd-heroine-v11-headshot.png" data-lightbox-alt="Aevrynd 原創女主角 v11 臉部近照">
+                <img src="/media/development/aevrynd-heroine-v11-headshot.png" alt="Aevrynd 原創女主角 v11 臉部近照" loading="lazy" />
+                <span><strong>Headshot</strong>深栗黑髮、自然膚色與閉合唇形</span>
+            </button>
+            <button type="button" class="heroine-shot" data-lightbox-src="/media/development/aevrynd-heroine-v11-action.png" data-lightbox-alt="Aevrynd 原創女主角 v11 準備姿勢預覽">
+                <img src="/media/development/aevrynd-heroine-v11-action.png" alt="Aevrynd 原創女主角 v11 準備姿勢預覽" loading="lazy" />
+                <span><strong>Ready pose</strong>半握拳、掌心相對與足底接地</span>
+            </button>
+        </div>
+        <div class="heroine-metrics">
+            <p><strong>Rig / scale</strong><span>1.72 m · 53 bones</span></p>
+            <p><strong>Ready stance</strong><span>肘 56.809°／57.409° · 膝 14.298°／9.325°</span></p>
+            <p><strong>Hands / wrists</strong><span>手指平均彎曲 47.467° · 腕偏差 3.162°／3.162°</span></p>
+            <p><strong>Grounding</strong><span>前後腳差 10.42 mm · 足底／地面差 0 m</span></p>
+        </div>
+        <details class="heroine-provenance">
+            <summary>檢視 CC0 來源與證據邊界</summary>
+            <p>角色基礎使用 MPFB／MakeHuman 官方 CC0 系統與資產：Suits05 <code>culturalibre_heroine_suit_1</code>、Hair01 <code>toigo_blunt_bob_with_bangs</code>、Shoes01 <code>culturalibre_heroine_boots_1</code>、Suits02 <code>thegreatengineer_galactic_warrior_uniform</code>、Skins01 <code>toigo_light_skin_with_natural_makeup</code>。圖像 SHA-256 與隔離來源記錄收錄於 <a href="/media/development/media-manifest.json">媒體來源清單</a>。</p>
+        </details>
     </section>
 
 
@@ -141,7 +181,13 @@
         <article><strong>最新渲染切片已驗證</strong><p>commit c0b3197 修正 MSAA HDR／contact-shadow RTV slot 衝突；fresh Normal／GBV、CTest 4/4、third-day effective ROI coverage=1、GPU debug 0/0。這不等於完整 Demo 或視覺 gate 通過。</p></article>
         <article><strong>r7 視覺 NO-GO</strong><p>完整 production HLOD 與 r7 構圖、光照、材質、植被、水面、角色可讀性仍未通過；34 / 100 與 v1.4 未發布狀態不變。</p></article>
     </section>
-    <p class="showcase-source">資料基準：TASK_STATE、EngineFeatureCatalog、EngineChangeLog、已推送引擎 commit fff5638／f0129d1／ab976d21c9505a9295be292211a18d8c42db9edc／4b73f0fa77d6f4e117a4b54b225bea697fe65397 與目前可追溯 release 目錄。fff5638 的範圍只涵蓋 Ultra GPU truth：實際 D3D12 adapter LUID／DXGI telemetry identity、commit 後 current-epoch observation、rollback，以及 fresh 6/6 + hostile 8/8；f0129d1 的範圍只涵蓋固定 manifest trust anchor、handle-relative／reparse 防護、GLTF／AESKIN／manifest cross-check、immutable runtime consume、fresh 2/2 + hostile GO 與 package blend=0；ab976d2 的範圍只涵蓋 HLOD aggregate proxy 與安全 runtime cache，主機與獨立 hostile fresh 4/4；4b73f0f 的範圍只涵蓋角色 locomotion 完整週期相位與動作驗收可靠性，fresh GAP 0.50／DRIFT 0.013／STEP 0.019、Automation 360/360、12/12 capture 與 tamper fail-closed。這些切片不代表視覺或角色美術提高；HLOD 仍缺 OnRender、GPU-side selection、transition pixels 與 real workload。Demo 仍為 34 / 100，v1.4 未發布。頁面不從未封印的 build／test artifact 推導目前通過狀態。</p>
+    <p class="showcase-source">資料基準：TASK_STATE、EngineFeatureCatalog、EngineChangeLog、已推送引擎 commit fff5638／f0129d1／ab976d21c9505a9295be292211a18d8c42db9edc／4b73f0fa77d6f4e117a4b54b225bea697fe65397／3c5c684／dc8dab3／28fd2d0 與目前可追溯 release 目錄。最新三個里程碑分別涵蓋 temporal provenance、archive collection 與 compiler Object-ID probe；其中 fresh focused 4/4 已通過，完整 11-shot 仍待遠端驗證。角色 v11 僅為隔離技術 PASS／視覺 NO-GO 預覽，不是正式資產。這些切片不代表視覺或角色美術已達標；Demo 仍為 34 / 100，v1.4 未發布。頁面不從未封印的 build／test artifact 推導目前通過狀態。</p>
     <aside id="showcaseDetail" class="showcase-detail" aria-live="polite" aria-hidden="true"><button type="button" aria-label="關閉詳情">×</button><p class="micro-label">TRACEABLE DETAIL</p><h2>選取項目</h2><p>點擊版本或架構節點查看證據邊界。</p></aside>
+    <div id="showcaseLightbox" class="showcase-lightbox" role="dialog" aria-modal="true" aria-label="角色預覽大圖" aria-hidden="true">
+        <button type="button" class="lightbox-close" aria-label="關閉角色預覽">×</button>
+        <button type="button" class="lightbox-step lightbox-prev" data-lightbox-step="-1" aria-label="上一張角色預覽">‹</button>
+        <figure><img src="" alt="" /><figcaption></figcaption></figure>
+        <button type="button" class="lightbox-step lightbox-next" data-lightbox-step="1" aria-label="下一張角色預覽">›</button>
+    </div>
 </section>
 @section Scripts { <script src="~/js/showcase.js" asp-append-version="true"></script> }
