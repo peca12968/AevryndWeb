@@ -1,4 +1,24 @@
 (() => {
+  const ageGate = document.querySelector("[data-age-gate]");
+  const restrictedContent = document.querySelector("[data-age-restricted-content]");
+  const ageConfirmationKey = "aevrynd-showcase-age-confirmed-v1";
+  const revealRestrictedContent = () => {
+    ageGate?.setAttribute("hidden", "");
+    restrictedContent?.removeAttribute("inert");
+    restrictedContent?.removeAttribute("aria-hidden");
+    document.documentElement.classList.remove("age-gate-active");
+  };
+  let ageConfirmed = false;
+  try { ageConfirmed = window.sessionStorage.getItem(ageConfirmationKey) === "yes"; } catch { ageConfirmed = false; }
+  if (ageConfirmed) revealRestrictedContent();
+  else {
+    document.documentElement.classList.add("age-gate-active");
+    ageGate?.querySelector("[data-age-confirm]")?.addEventListener("click", () => {
+      try { window.sessionStorage.setItem(ageConfirmationKey, "yes"); } catch { /* 瀏覽器拒絕儲存時仍允許本次檢視。 */ }
+      revealRestrictedContent();
+    });
+  }
+
   // 靜態展示更新也能提供歷代入口；新版頁面已有連結時不重複新增。
   const archiveNav = document.querySelector('.atlas-nav');
   if (archiveNav && !archiveNav.querySelector('a[href="/history/index.html"]')) {

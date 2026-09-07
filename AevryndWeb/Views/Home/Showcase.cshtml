@@ -1,6 +1,15 @@
 @{ ViewData["Title"] = "開發展示"; }
 <link rel="stylesheet" href="~/css/showcase.css" asp-append-version="true" />
-<section class="showcase-shell">
+<div class="showcase-age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title" aria-describedby="age-gate-description" data-age-gate>
+    <div class="showcase-age-card">
+        <p class="micro-label">DEVELOPMENT CONTENT NOTICE</p>
+        <h1 id="age-gate-title">進入開發展示前，請先確認已成年</h1>
+        <p id="age-gate-description">Aevrynd 的角色建模與引擎開發過程，可能出現未完成服裝、人體模型、局部裸露或其他不適合未成年者觀看的測試素材。這些內容只用於開發、技術驗證與版本紀錄。</p>
+        <p class="age-gate-privacy">本站不要求輸入生日，也不保存身分資料；成年確認只在目前瀏覽器工作階段內有效。</p>
+        <div class="age-gate-actions"><button type="button" data-age-confirm>我已滿 18 歲，繼續</button><a href="/">我未滿 18 歲或不想觀看</a></div>
+    </div>
+</div>
+<section class="showcase-shell" aria-hidden="true" inert data-age-restricted-content>
     <header class="showcase-hero">
         <p class="eyebrow"><span></span> AEVRYND / DEVELOPMENT ATLAS · 2026.09</p>
         <h1>從第一個世界，<em>走向完整遊戲引擎。</em></h1>

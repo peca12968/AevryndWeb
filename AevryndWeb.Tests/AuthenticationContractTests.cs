@@ -36,6 +36,9 @@ public sealed class AuthenticationContractTests
         Assert.Contains("Qwen3.8-27B：有條件降低重複工作成本", html);
         Assert.Contains("網站可操作的捏臉／身材技術預覽", html);
         Assert.Contains("data-gpu-shape-frame=\"10\"", html);
+        Assert.Contains("進入開發展示前，請先確認已成年", html);
+        Assert.Contains("可能出現未完成服裝、人體模型、局部裸露", html);
+        Assert.Contains("data-age-confirm", html);
         Assert.Contains("MASK", html);
         Assert.Contains("ENGINE ARCHITECTURE", html); Assert.Contains("TRACEABLE RELEASES", html);
         Assert.Contains("data-release-filter", html); Assert.Contains("data-stage-filter", html);
