@@ -1,4 +1,12 @@
 (() => {
+  // 靜態展示更新也能提供歷代入口；新版頁面已有連結時不重複新增。
+  const archiveNav = document.querySelector('.atlas-nav');
+  if (archiveNav && !archiveNav.querySelector('a[href="/history/index.html"]')) {
+    const archiveLink = document.createElement('a');
+    archiveLink.href = '/history/index.html';
+    archiveLink.textContent = '0.x～1.3 歷代版本圖文（44 張截圖）';
+    archiveNav.prepend(archiveLink);
+  }
   const detail = document.querySelector("#showcaseDetail");
   const detailTitle = detail?.querySelector("h2"), detailCopy = detail?.querySelector("h2 + p");
   const openDetail = target => {
