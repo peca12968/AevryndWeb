@@ -1,6 +1,7 @@
 @{ ViewData["Title"] = "開發展示"; }
 <link rel="stylesheet" href="~/css/showcase.css" asp-append-version="true" />
 <link rel="stylesheet" href="~/css/character-editor.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/showcase-runtime.css" asp-append-version="true" />
 <div class="showcase-age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title" aria-describedby="age-gate-description" data-age-gate>
     <div class="showcase-age-card">
         <p class="micro-label">DEVELOPMENT CONTENT NOTICE</p>
@@ -68,22 +69,22 @@
         <div class="visual-pair-grid">
             <article class="visual-pair">
                 <header><span>GOD / DAY</span><h3>上帝視角：聚落密度與建築可讀性</h3></header>
-                <div class="comparison-wipe" data-comparison style="--reveal:50%">
+                <div class="comparison-wipe" data-comparison data-reveal="50">
                     <img class="comparison-before" src="/media/development/visual-score-34-god-day.png" alt="34 分基準的上帝視角日間實機擷取" loading="lazy" />
                     <div class="comparison-after"><img src="/media/development/visual-score-40-god-day.png" alt="未重新評分 WIP 候選的上帝視角日間實機擷取" loading="lazy" /></div>
                     <span class="comparison-label comparison-label-before">權威基準 · 34</span><span class="comparison-label comparison-label-after">候選 · 未評分</span><span class="comparison-divider" aria-hidden="true"></span>
                 </div>
-                <label class="comparison-control">拖曳比較上帝視角：<output data-comparison-output>50% 顯示新版</output><input type="range" min="0" max="100" value="50" data-comparison-range aria-label="調整上帝視角新版畫面的顯示比例" /></label>
+                <label class="comparison-control">拖曳比較上帝視角：<output data-comparison-output>50% 顯示新版</output><input type="range" min="0" max="100" step="5" value="50" data-comparison-range aria-label="調整上帝視角新版畫面的顯示比例" /></label>
                 <p class="comparison-copy">候選加入近景地被、門窗、屋簷、踏階與煙囪；尚未完成新一輪權威評分。</p>
             </article>
             <article class="visual-pair">
                 <header><span>THIRD PERSON / DAY</span><h3>第三人稱：地表層次與材質</h3></header>
-                <div class="comparison-wipe" data-comparison style="--reveal:50%">
+                <div class="comparison-wipe" data-comparison data-reveal="50">
                     <img class="comparison-before" src="/media/development/visual-score-34-third-day.png" alt="34 分基準的第三人稱日間實機擷取" loading="lazy" />
                     <div class="comparison-after"><img src="/media/development/visual-score-40-third-day.png" alt="未重新評分 WIP 候選的第三人稱日間實機擷取" loading="lazy" /></div>
                     <span class="comparison-label comparison-label-before">權威基準 · 34</span><span class="comparison-label comparison-label-after">候選 · 未評分</span><span class="comparison-divider" aria-hidden="true"></span>
                 </div>
-                <label class="comparison-control">拖曳比較第三人稱：<output data-comparison-output>50% 顯示新版</output><input type="range" min="0" max="100" value="50" data-comparison-range aria-label="調整第三人稱新版畫面的顯示比例" /></label>
+                <label class="comparison-control">拖曳比較第三人稱：<output data-comparison-output>50% 顯示新版</output><input type="range" min="0" max="100" step="5" value="50" data-comparison-range aria-label="調整第三人稱新版畫面的顯示比例" /></label>
                 <p class="comparison-copy">候選提高近景草地密度並補強建築材質細節；仍不可視為分數提升。</p>
             </article>
         </div>

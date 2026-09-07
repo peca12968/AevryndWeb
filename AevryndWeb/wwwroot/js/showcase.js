@@ -53,7 +53,7 @@
   bindFilter("[data-stage-filter]", "[data-stage]", "stageFilter", "stage");
 
   const map = document.querySelector("#systemArchitectureMap"); let zoom = 1;
-  const applyZoom = () => { if (map) { map.style.width = `${zoom * 100}%`; map.style.maxWidth = "none"; } const reset = document.querySelector('[data-map-zoom="reset"]'); if (reset) reset.textContent = `${Math.round(zoom * 100)}%`; };
+  const applyZoom = () => { if (map) map.dataset.zoom = String(Math.round(zoom * 100)); const reset = document.querySelector('[data-map-zoom="reset"]'); if (reset) reset.textContent = `${Math.round(zoom * 100)}%`; };
   document.querySelectorAll("[data-map-zoom]").forEach(button => button.addEventListener("click", () => {
     const action = button.dataset.mapZoom;
     zoom = action === "in" ? Math.min(1.8, zoom + .2) : action === "out" ? Math.max(.8, zoom - .2) : 1;
@@ -68,9 +68,9 @@
     const output = card?.querySelector("[data-comparison-output]");
     if (!range) return;
     const updateComparison = value => {
-      const percentage = Math.max(0, Math.min(100, Number(value)));
+      const percentage = Math.round(Math.max(0, Math.min(100, Number(value))) / 5) * 5;
       range.value = String(percentage);
-      comparison.style.setProperty("--reveal", `${percentage}%`);
+      comparison.dataset.reveal = String(percentage);
       if (output) output.textContent = `${percentage}% 顯示新版`;
     };
     const updateFromPointer = event => {
@@ -163,14 +163,14 @@
     showLightboxImage(index);
     lightbox.setAttribute("aria-hidden", "false");
     lightbox.classList.add("is-open");
-    document.body.style.overflow = "hidden";
+    document.documentElement.classList.add("showcase-lightbox-active");
     lightbox.querySelector(".lightbox-close")?.focus();
   };
   const closeLightbox = () => {
     if (!lightbox || lightbox.getAttribute("aria-hidden") === "true") return;
     lightbox.setAttribute("aria-hidden", "true");
     lightbox.classList.remove("is-open");
-    document.body.style.overflow = "";
+    document.documentElement.classList.remove("showcase-lightbox-active");
     lightboxReturnFocus?.focus();
   };
   lightboxTriggers.forEach((trigger, index) => trigger.addEventListener("click", () => openLightbox(trigger, index)));

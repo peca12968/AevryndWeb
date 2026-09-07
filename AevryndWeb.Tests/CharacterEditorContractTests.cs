@@ -34,6 +34,25 @@ public sealed class CharacterEditorContractTests
     }
 
     [Fact]
+    public void CharacterEditorModuleGraphAndShowcaseInteractionsRespectStrictCsp()
+    {
+        var root = Root();
+        var view = File.ReadAllText(Path.Combine(root, "Views/Home/Showcase.cshtml"));
+        var showcaseScript = File.ReadAllText(Path.Combine(root, "wwwroot/js/showcase.js"));
+        var controls = File.ReadAllText(Path.Combine(root, "wwwroot/lib/three/OrbitControls.js"));
+        var loader = File.ReadAllText(Path.Combine(root, "wwwroot/lib/three/GLTFLoader.js"));
+        var skeleton = File.ReadAllText(Path.Combine(root, "wwwroot/lib/utils/SkeletonUtils.js"));
+        Assert.DoesNotContain("style=", view, StringComparison.OrdinalIgnoreCase);
+        Assert.DoesNotContain(".style.", showcaseScript, StringComparison.Ordinal);
+        Assert.DoesNotContain(".style.", controls, StringComparison.Ordinal);
+        Assert.Contains("data-reveal=\"50\"", view, StringComparison.Ordinal);
+        Assert.Contains("step=\"5\"", view, StringComparison.Ordinal);
+        Assert.Contains("from '../utils/SkeletonUtils.js'", loader, StringComparison.Ordinal);
+        Assert.Contains("from '../three/three.module.js'", skeleton, StringComparison.Ordinal);
+        Assert.True(File.Exists(Path.Combine(root, "wwwroot/css/showcase-runtime.css")));
+    }
+
+    [Fact]
     public void ApprovedThirdCharacterContainsUpperSkeletonAndFaceMorphsWithoutExternalUris()
     {
         var data = File.ReadAllBytes(Path.Combine(Root(), "wwwroot/media/character-editor/character.glb"));

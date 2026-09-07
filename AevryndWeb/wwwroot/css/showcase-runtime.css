@@ -1,0 +1,45 @@
+.showcase-lightbox-active {
+  overflow: hidden;
+}
+
+.comparison-wipe {
+  --reveal: 50%;
+}
+
+.comparison-wipe[data-reveal="0"] { --reveal: 0%; }
+.comparison-wipe[data-reveal="5"] { --reveal: 5%; }
+.comparison-wipe[data-reveal="10"] { --reveal: 10%; }
+.comparison-wipe[data-reveal="15"] { --reveal: 15%; }
+.comparison-wipe[data-reveal="20"] { --reveal: 20%; }
+.comparison-wipe[data-reveal="25"] { --reveal: 25%; }
+.comparison-wipe[data-reveal="30"] { --reveal: 30%; }
+.comparison-wipe[data-reveal="35"] { --reveal: 35%; }
+.comparison-wipe[data-reveal="40"] { --reveal: 40%; }
+.comparison-wipe[data-reveal="45"] { --reveal: 45%; }
+.comparison-wipe[data-reveal="50"] { --reveal: 50%; }
+.comparison-wipe[data-reveal="55"] { --reveal: 55%; }
+.comparison-wipe[data-reveal="60"] { --reveal: 60%; }
+.comparison-wipe[data-reveal="65"] { --reveal: 65%; }
+.comparison-wipe[data-reveal="70"] { --reveal: 70%; }
+.comparison-wipe[data-reveal="75"] { --reveal: 75%; }
+.comparison-wipe[data-reveal="80"] { --reveal: 80%; }
+.comparison-wipe[data-reveal="85"] { --reveal: 85%; }
+.comparison-wipe[data-reveal="90"] { --reveal: 90%; }
+.comparison-wipe[data-reveal="95"] { --reveal: 95%; }
+.comparison-wipe[data-reveal="100"] { --reveal: 100%; }
+
+.architecture-map {
+  max-width: none;
+}
+
+.architecture-map[data-zoom="80"] { width: 80%; }
+.architecture-map[data-zoom="100"] { width: 100%; }
+.architecture-map[data-zoom="120"] { width: 120%; }
+.architecture-map[data-zoom="140"] { width: 140%; }
+.architecture-map[data-zoom="160"] { width: 160%; }
+.architecture-map[data-zoom="180"] { width: 180%; }
+
+.character-editor-viewport canvas.orbit-cursor-auto { cursor: auto; }
+.character-editor-viewport canvas.orbit-cursor-grab { cursor: grab; }
+.character-editor-viewport canvas.orbit-cursor-grabbing { cursor: grabbing; }
+.character-editor-viewport canvas.orbit-touch-disabled { touch-action: none; }

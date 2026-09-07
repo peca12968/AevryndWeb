@@ -76,6 +76,10 @@ function Test-PublishPayload([string]$Path) {
         $item = Get-Item -LiteralPath (Join-Path $Path $relative) -ErrorAction SilentlyContinue
         if ($null -eq $item -or $item.Length -le 0) { throw "Published payload is incomplete: $relative" }
     }
+    foreach ($relative in @('wwwroot\css\showcase-runtime.css','wwwroot\lib\utils\SkeletonUtils.js')) {
+        $item = Get-Item -LiteralPath (Join-Path $Path $relative) -ErrorAction SilentlyContinue
+        if ($null -eq $item -or $item.Length -le 0) { throw "Published Showcase runtime dependency is incomplete: $relative" }
+    }
 }
 
 function Install-ProductionSecrets([string]$Destination) {
