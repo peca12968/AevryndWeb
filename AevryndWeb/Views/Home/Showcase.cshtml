@@ -4,9 +4,9 @@
     <header class="showcase-hero">
         <p class="eyebrow"><span></span> AEVRYND / DEVELOPMENT ATLAS · 2026.09</p>
         <h1>從第一個世界，<em>走向完整遊戲引擎。</em></h1>
-        <p>Aevrynd 是持續演進的原生 2D／2.5D／3D 遊戲引擎。最新同鏡位驗收已讓完整 Demo（可執行遊戲展示）由 34／100 提升至 40／100；近期仍優先改善人物、動作、場景與光影，目標至少 70／100。此頁區分歷史發布、已驗證切片與開發中（WIP）；技術驗收門檻（gate）通過不等於畫面達標。</p>
+        <p>Aevrynd 是持續演進的原生 2D／2.5D／3D 遊戲引擎。目前完整 Demo（可執行遊戲展示）的權威同鏡位視覺分數仍是 34／100；人物、動作、場景與光影持續改善，只有完成新的同鏡頭評分才會調整，目標至少 70／100。此頁區分已驗證切片、開發中（WIP）與淘汰候選；技術驗收門檻（gate）通過不等於畫面達標。</p>
         <div class="truth-strip" aria-label="目前發布狀態">
-            <div><small>VISUAL SCORE</small><strong>40 / 100</strong><span class="status-no">基準 34，增加 6；尚未達 70</span></div>
+            <div><small>AUTHORITATIVE VISUAL</small><strong>34 / 100</strong><span class="status-no">尚無新的同鏡頭評分；目標至少 70</span></div>
             <div><small>GAMEPLAY DEMO</small><strong>v1.3.0</strong><span>目前已發布；品質不代表現況目標</span></div>
             <div><small>NEXT RELEASE</small><strong>v1.4</strong><span class="status-no">尚未發布</span></div>
             <div><small>RENDER PATH</small><strong>D3D12</strong><span>跨 Vulkan／Metal 等價尚未證明</span></div>
@@ -16,10 +16,10 @@
 
     <nav class="atlas-nav" aria-label="展示章節">
         <a href="/history/index.html">0.x～1.3 歷代版本圖文（44 張截圖）</a>
-        <a href="#demo-motion">01 歷史影片</a><a href="#visual-progress-title">02 拖曳比較</a><a href="#interactive-demo-title">03 互動實機</a><a href="#release-title">04 版本演進</a><a href="#heroine-title">05 原創女主角 WIP</a><a href="#system-title">06 三機協作</a><a href="#engine-title">07 引擎架構</a><a href="#glossary-title">08 名詞中文對照</a>
+        <a href="#demo-motion">01 歷史影片</a><a href="#visual-progress-title">02 候選畫面</a><a href="#interactive-demo-title">03 互動實機</a><a href="#release-title">04 版本演進</a><a href="#character-progress-title">05 角色 WIP</a><a href="#heroine-title">06 美術方向</a><a href="#system-title">07 三機與 Qwen</a><a href="#engine-title">08 引擎架構</a><a href="#glossary-title">09 名詞中文對照</a>
     </nav>
     <section id="demo-motion" class="showcase-section motion-section" aria-labelledby="motion-title">
-        <div class="section-heading"><p class="micro-label">ENGINE IN MOTION</p><h2 id="motion-title">四段影片看見開發演進</h2><p>四支影片皆由可追溯的實機擷取影格製作：兩支回顧歷史版本，兩支呈現目前 40 分的九鏡頭與角色步行測試。它們是測試影格導覽，不是連續遊玩錄影；來源與雜湊可由媒體清單核對。</p></div>
+        <div class="section-heading"><p class="micro-label">ENGINE IN MOTION</p><h2 id="motion-title">四段影片看見開發演進</h2><p>四支影片皆由可追溯的實機擷取影格製作：兩支回顧歷史版本，兩支保存未重新評分的九鏡頭候選與角色步行測試。它們是測試影格導覽，不是連續遊玩錄影；來源與雜湊可由媒體清單核對，也不會改寫 34／100 權威分數。</p></div>
         <div class="motion-grid">
             <article class="motion-card">
                 <video controls playsinline preload="metadata" poster="/media/development/gameplay-evolution.jpg" aria-label="Gameplay Lab v1.1 至 v1.3 歷史實機截圖動畫導覽"><source src="/media/development/gameplay-evolution.mp4" type="video/mp4" />你的瀏覽器不支援此影片。</video>
@@ -30,77 +30,77 @@
                 <div><span class="micro-label">ENGINE LAB / 02</span><h3>讓世界持續運行</h3><p>分區載入 → 世界原點重定位 → 增量保存 → 網路複寫 → 級聯陰影。</p><span class="motion-label">歷史實機截圖動畫導覽 · 非連續遊玩錄影</span></div>
             </article>
             <article class="motion-card">
-                <video controls playsinline preload="metadata" poster="/media/development/visual-score-40-first-day.png" aria-label="40 分第一人稱、第三人稱與上帝視角日暮夜九鏡頭測試影片"><source src="/media/development/visual-score-40-nine-shot-tour.mp4" type="video/mp4" />你的瀏覽器不支援此影片。</video>
-                <div><span class="micro-label">VISUAL 40 / 03</span><h3>九個固定鏡頭巡覽</h3><p>第一人稱、第三人稱與上帝視角各自切換日間、黃昏與夜間，完整呈現 40 分驗收矩陣。</p><span class="motion-label">九鏡頭測試影格影片 · 非連續遊玩錄影</span></div>
+                <video controls playsinline preload="metadata" poster="/media/development/visual-score-40-first-day.png" aria-label="未重新評分候選的第一人稱、第三人稱與上帝視角日暮夜九鏡頭測試影片"><source src="/media/development/visual-score-40-nine-shot-tour.mp4" type="video/mp4" />你的瀏覽器不支援此影片。</video>
+                <div><span class="micro-label">UNSCORED WIP / 03</span><h3>九個固定鏡頭巡覽</h3><p>第一人稱、第三人稱與上帝視角各自切換日間、黃昏與夜間；這組候選尚未取得新的權威評分。</p><span class="motion-label">九鏡頭測試影格影片 · 非連續遊玩錄影</span></div>
             </article>
             <article class="motion-card">
                 <video controls playsinline preload="metadata" poster="/media/development/character-f2-walk-0.png" aria-label="F2 角色八幀同鏡位步行測試影片"><source src="/media/development/character-f2-walk-cycle.mp4" type="video/mp4" />你的瀏覽器不支援此影片。</video>
                 <div><span class="micro-label">CHARACTER / 04</span><h3>逐幀檢查步行週期</h3><p>將八張同鏡位角色測試影格循環播放，方便觀察腳步相位、身體重心與姿勢連續性。</p><span class="motion-label">八幀步行測試影片 · 非即時角色動畫</span></div>
             </article>
         </div>
-        <p class="evidence-note">四支播放器都提供播放、暫停、進度與全螢幕控制，且不自動播放。<a href="/media/development/media-manifest.json">檢視媒體來源清單</a>。最新完整遊戲視覺為 40 / 100，v1.4 仍未發布。</p>
+        <p class="evidence-note">四支播放器都提供播放、暫停、進度與全螢幕控制，且不自動播放。<a href="/media/development/media-manifest.json">檢視媒體來源清單</a>。最新權威完整遊戲視覺仍為 34 / 100，v1.4 仍未發布。</p>
     </section>
 
     <section class="showcase-section visual-progress" aria-labelledby="visual-progress-title">
         <div class="section-heading">
             <p class="micro-label">SAME-CAMERA VISUAL EVIDENCE</p>
-            <h2 id="visual-progress-title">權威視覺分數：34 → 40</h2>
-            <p>使用同一組 1280×720 Normal 模式鏡位比較；拖曳分隔線可在 34 分基準與引擎提交 <code>d6e0976</code> 的 40 分結果間擦拭。這四張圖是目前來源的實機擷取，不是生成概念圖，也不是 v1.4 發布畫面。</p>
+            <h2 id="visual-progress-title">權威視覺分數維持 34 / 100</h2>
+            <p>拖曳分隔線可在 34 分權威基準與後續 WIP 候選間擦拭。候選影像雖有測試擷取與提交來源，但尚未完成新的同鏡頭權威評分，因此不得標成 40 分，也不是 v1.4 發布畫面。</p>
         </div>
-        <div class="score-breakdown" aria-label="40 分視覺評分明細">
-            <div><span>構圖</span><strong>9 / 20</strong></div>
-            <div><span>人物</span><strong>4 / 20</strong></div>
-            <div><span>材質</span><strong>8 / 15</strong></div>
-            <div><span>燈光</span><strong>7 / 15</strong></div>
-            <div><span>場景完整度</span><strong>8 / 20</strong></div>
-            <div><span>技術缺陷</span><strong>4 / 10</strong></div>
+        <div class="score-breakdown" aria-label="目前視覺驗收狀態">
+            <div><span>權威總分</span><strong>34 / 100</strong></div>
+            <div><span>新同鏡頭評分</span><strong>尚未執行</strong></div>
+            <div><span>臉部第四版</span><strong>NO-GO</strong></div>
+            <div><span>髮型第五版</span><strong>NO-GO</strong></div>
+            <div><span>Idle 選片</span><strong>已驗證</strong></div>
+            <div><span>v1.4</span><strong>未發布</strong></div>
         </div>
         <div class="visual-pair-grid">
             <article class="visual-pair">
                 <header><span>GOD / DAY</span><h3>上帝視角：聚落密度與建築可讀性</h3></header>
                 <div class="comparison-wipe" data-comparison style="--reveal:50%">
                     <img class="comparison-before" src="/media/development/visual-score-34-god-day.png" alt="34 分基準的上帝視角日間實機擷取" loading="lazy" />
-                    <div class="comparison-after"><img src="/media/development/visual-score-40-god-day.png" alt="40 分結果的上帝視角日間實機擷取" loading="lazy" /></div>
-                    <span class="comparison-label comparison-label-before">之前 · 34</span><span class="comparison-label comparison-label-after">現在 · 40</span><span class="comparison-divider" aria-hidden="true"></span>
+                    <div class="comparison-after"><img src="/media/development/visual-score-40-god-day.png" alt="未重新評分 WIP 候選的上帝視角日間實機擷取" loading="lazy" /></div>
+                    <span class="comparison-label comparison-label-before">權威基準 · 34</span><span class="comparison-label comparison-label-after">候選 · 未評分</span><span class="comparison-divider" aria-hidden="true"></span>
                 </div>
                 <label class="comparison-control">拖曳比較上帝視角：<output data-comparison-output>50% 顯示新版</output><input type="range" min="0" max="100" value="50" data-comparison-range aria-label="調整上帝視角新版畫面的顯示比例" /></label>
-                <p class="comparison-copy">新版加入 35 株四象限近景地被，以及門窗、屋簷、踏階與煙囪。</p>
+                <p class="comparison-copy">候選加入近景地被、門窗、屋簷、踏階與煙囪；尚未完成新一輪權威評分。</p>
             </article>
             <article class="visual-pair">
                 <header><span>THIRD PERSON / DAY</span><h3>第三人稱：地表層次與材質</h3></header>
                 <div class="comparison-wipe" data-comparison style="--reveal:50%">
                     <img class="comparison-before" src="/media/development/visual-score-34-third-day.png" alt="34 分基準的第三人稱日間實機擷取" loading="lazy" />
-                    <div class="comparison-after"><img src="/media/development/visual-score-40-third-day.png" alt="40 分結果的第三人稱日間實機擷取" loading="lazy" /></div>
-                    <span class="comparison-label comparison-label-before">之前 · 34</span><span class="comparison-label comparison-label-after">現在 · 40</span><span class="comparison-divider" aria-hidden="true"></span>
+                    <div class="comparison-after"><img src="/media/development/visual-score-40-third-day.png" alt="未重新評分 WIP 候選的第三人稱日間實機擷取" loading="lazy" /></div>
+                    <span class="comparison-label comparison-label-before">權威基準 · 34</span><span class="comparison-label comparison-label-after">候選 · 未評分</span><span class="comparison-divider" aria-hidden="true"></span>
                 </div>
                 <label class="comparison-control">拖曳比較第三人稱：<output data-comparison-output>50% 顯示新版</output><input type="range" min="0" max="100" value="50" data-comparison-range aria-label="調整第三人稱新版畫面的顯示比例" /></label>
-                <p class="comparison-copy">新版提高近景草地密度，並補強建築材質細節。</p>
+                <p class="comparison-copy">候選提高近景草地密度並補強建築材質細節；仍不可視為分數提升。</p>
             </article>
         </div>
-        <div class="visual-matrix-heading"><span class="micro-label">CURRENT 40 / 9-SHOT MATRIX</span><h3>再比較三種視角與日、暮、夜</h3><p>下列九張皆來自同一個已驗證來源與同一輪 Normal 擷取。這裡比較的是 40 分候選在不同視角與時段的穩定性；只有上方 God／day 與 Third／day 具備 34 分同鏡位基準。</p></div>
-        <div class="visual-matrix" aria-label="40 分三視角與日暮夜九鏡頭比較">
+        <div class="visual-matrix-heading"><span class="micro-label">UNSCORED WIP / 9-SHOT MATRIX</span><h3>再比較三種視角與日、暮、夜</h3><p>下列九張來自同一輪 Normal 擷取，只能呈現候選在不同視角與時段的狀態；只有上方 God／day 與 Third／day 具備 34 分同鏡位基準，整組尚未取得新分數。</p></div>
+        <div class="visual-matrix" aria-label="未重新評分候選的三視角與日暮夜九鏡頭比較">
             @foreach (var shot in new[] {
                 new { View = "first", Time = "day", Label = "第一人稱 · 日間" }, new { View = "first", Time = "dusk", Label = "第一人稱 · 黃昏" }, new { View = "first", Time = "night", Label = "第一人稱 · 夜間" },
                 new { View = "third", Time = "day", Label = "第三人稱 · 日間" }, new { View = "third", Time = "dusk", Label = "第三人稱 · 黃昏" }, new { View = "third", Time = "night", Label = "第三人稱 · 夜間" },
                 new { View = "god", Time = "day", Label = "上帝視角 · 日間" }, new { View = "god", Time = "dusk", Label = "上帝視角 · 黃昏" }, new { View = "god", Time = "night", Label = "上帝視角 · 夜間" }
             }) {
                 var source = $"/media/development/visual-score-40-{shot.View}-{shot.Time}.png";
-                <button type="button" data-lightbox-src="@source" data-lightbox-alt="40 分 @shot.Label 固定鏡頭實機擷取"><img src="@source" alt="40 分 @shot.Label 固定鏡頭實機擷取" loading="lazy" /><span>@shot.Label</span></button>
+                <button type="button" data-lightbox-src="@source" data-lightbox-alt="未重新評分 WIP 候選 · @shot.Label 固定鏡頭實機擷取"><img src="@source" alt="未重新評分 WIP 候選 · @shot.Label 固定鏡頭實機擷取" loading="lazy" /><span>@shot.Label · 未評分候選</span></button>
             }
         </div>
         <div class="visual-truth-grid">
-            <article><strong>已改善</strong><p>聚落近景草地、建築門窗框、深色玻璃、窗台、踏階、屋簷與煙囪；場景完整度與材質分項上升。</p></article>
+            <article><strong>候選改動</strong><p>聚落近景草地、建築門窗框、深色玻璃、窗台、踏階、屋簷與煙囪已有可見差異；尚未據此調整分數。</p></article>
             <article><strong>仍需修正</strong><p>M2 男性角色頭髮仍有尖刺；God 鏡位仍有巨型遮擋物、世界邊緣空洞與左上除錯文字，因此人物分項沒有增加。</p></article>
             <article><strong>驗收證據</strong><p>Fresh Release <code>ALL_BUILD</code>、focused 5／5、Normal 250.03 秒、GBV 109.98 秒；GPU debug errors／warnings 0／0，完整 11-shot 通過。</p></article>
         </div>
-        <p class="evidence-note">獨立同鏡位評分為 40／100，較基準增加 6 分。這是已驗證的重大進展，但仍是 WIP；未達 70／100，v1.4 未發布。</p>
+        <p class="evidence-note">目前權威同鏡位評分仍為 34／100。候選畫面保存供比較，但在新的相同鏡頭評分完成前一律標為 WIP；未達 70／100，v1.4 未發布。</p>
     </section>
 
     <section class="showcase-section interactive-demo" aria-labelledby="interactive-demo-title">
-        <div class="section-heading"><p class="micro-label">INTERACTIVE CAPTURE EXPLORER</p><h2 id="interactive-demo-title">切換視角、時段與角色步行幀</h2><p>全部內容皆來自提交 <code>d6e0976</code> 的固定測試擷取。場景輪播是 9 張固定鏡頭序列；角色播放是 8 張同鏡位步行測試幀。它們不是連續遊玩錄影。</p></div>
+        <div class="section-heading"><p class="micro-label">INTERACTIVE CAPTURE EXPLORER</p><h2 id="interactive-demo-title">切換視角、時段與角色步行幀</h2><p>場景輪播是 9 張未重新評分的固定鏡頭候選；角色播放是 8 張同鏡位步行測試幀。它們不是連續遊玩錄影，也不構成高於 34／100 的權威評分。</p></div>
         <div class="interactive-grid">
             <article class="capture-explorer" data-scene-explorer>
-                <header><span class="micro-label">SCENE / 9 VERIFIED SHOTS</span><h3>場景視角與三時段</h3></header>
+                <header><span class="micro-label">SCENE / 9 UNSCORED WIP SHOTS</span><h3>場景視角與三時段</h3></header>
                 <div class="capture-toolbar" role="group" aria-label="選擇場景視角">
                     <span>視角</span><button type="button" data-scene-view="first" aria-pressed="true">第一人稱</button><button type="button" data-scene-view="third" aria-pressed="false">第三人稱</button><button type="button" data-scene-view="god" aria-pressed="false">上帝視角</button>
                 </div>
@@ -138,7 +138,10 @@
         <div class="section-heading"><p class="micro-label">DEVELOPMENT TIMELINE</p><h2 id="timeline-title">已驗證切片與目前待驗收工作</h2><p>測試收據（receipt）記錄來源、退出碼與證據。CPU 測試不能代替 GPU（顯示卡）渲染、11 個固定鏡頭（11-shot）影像與人體動作驗收。下方歷史切片的通過範圍不自動延伸到目前候選。</p></div>
         <div class="showcase-filters" role="group" aria-label="開發切片篩選"><button type="button" data-stage-filter="all" aria-pressed="true">全部</button><button type="button" data-stage-filter="released" aria-pressed="false">含發布成果</button><button type="button" data-stage-filter="wip" aria-pressed="false">驗證中 WIP</button></div>
         <div class="timeline">
-            <article data-stage="wip" tabindex="0" data-detail-title="聚落地被、建築細節與髮片驗收" data-detail="commit d6e097677c1cedab868d7239aae7d461379fd31c；fresh Release ALL_BUILD、focused 5/5、Normal、GBV 與完整 11-shot 通過，GPU debug errors/warnings 0/0。同鏡位評分 40/100。人物頭髮輪廓與 God 鏡位缺陷仍待下一輪修正。"><time datetime="2026-09-07">2026-09-07 · VISUAL 40 / 100</time><h3>聚落密度與建築細節提升</h3><p>主角聚落加入 35 株四象限近景地被，並增加門窗、深色玻璃、窗台、踏階、屋簷與煙囪；視覺由 34 提升至 40。</p><code>commit d6e0976 · Normal／GBV · 11-shot · v1.4 未發布</code></article>
+            <article data-stage="wip" tabindex="0" data-detail-title="聚落地被與建築細節候選" data-detail="commit d6e097677c1cedab868d7239aae7d461379fd31c 的影像與測試結果保留為可追溯候選，但目前沒有完成可調整權威分數的新同鏡頭評分。人物與 God 鏡位缺陷仍待修正，因此分數維持 34/100。"><time datetime="2026-09-07">2026-09-07 · UNSCORED VISUAL WIP</time><h3>聚落密度與建築細節候選</h3><p>近景地被與建築細節已有可見變化，但沒有新的權威同鏡頭評分，不能宣稱由 34 分提升。</p><code>commit d6e0976 · 候選影像保留 · 權威 34／100</code></article>
+            <article data-stage="wip" tabindex="0" data-detail-title="Idle clip selection 已驗證" data-detail="commit 5bcc1e3 修正角色待機選片；fresh Release 的 AevryndCharacterIdleSelection3DTest 通過。這只證明選片邏輯修正，不等於動作品質、角色外觀、完整 Character Visual Quality 或 Demo 視覺達標。"><time datetime="2026-09-07">2026-09-07 · IDLE SELECTION VERIFIED</time><h3>待機選片修正</h3><p>女性與男性 rig 的 Idle clip selection 已由 fresh Release 測試驗證；視覺與人體工學仍須在真實動畫中另行驗收。</p><code>commit 5bcc1e3 · scoped logic GO · 不調整視覺分數</code></article>
+            <article data-stage="wip" tabindex="0" data-detail-title="臉部第四版 skinned studio 證據" data-detail="static preview 缺少 Skin／Eye／Hair shadingModel 的第一分歧已由真正 skinned-character submission 取代。物理點光在雙眼產生真實 catchlight，skin normalScale 由 1 降至 0.15 後消除橘皮；幾何相似度仍未達標，因此第四版維持 WIP／NO-GO。"><time datetime="2026-09-07">2026-09-07 · FACE V4 NO-GO</time><h3>真正 skinned studio 提交已可比較</h3><p>雙眼已有物理點光 catchlight，skin normalScale 由 1 降至 0.15 消除橘皮；幾何相似度仍是第一個視覺 NO-GO。</p><code>true skinned submission · material improvement · geometry NO-GO</code></article>
+            <article data-stage="wip" tabindex="0" data-detail-title="髮型第五、六版淘汰" data-detail="第五版與第六版均為視覺 NO-GO。第六版原生 front／quarter／profile 各兩張 capture 的 GPU errors/warnings 為 0/0，但仍有頭盔式髮際、顳側平卡、側面稀疏與過暗問題；第七版已啟動完全重建髮流。"><time datetime="2026-09-07">2026-09-07 · HAIR V5/V6 NO-GO</time><h3>髮卡透明原生路徑驗證中</h3><p>材質 sidecar 的 MASK 透明髮卡已進入原生路徑驗證；零 GPU 計數不代表美術通過，第七版正完全重建髮流。</p><code>v6 native three-view debug 0／0 · visual NO-GO</code></article>
             <article data-stage="wip"><time datetime="2026-09-07">2026-09-07 · 按需遠端測試</time><h3>共享測試服務已具簽章影像能力</h3><p>台中與桃園 Remote Test Worker 已回報 async jobs、signed status／evidence／visual evidence，以及 Release／Visual 測試組合；台中另有 Gameplay Visual 組合。這只證明服務能力可用，個別測試仍須有同一來源的 signed receipt 才能列為完成。</p></article>
             <article data-stage="wip"><time>2026-09-05 / CAMERA</time><h3>HLOD 等角相機轉場</h3><p>471a1da 加入正交等角端點，source／transition／proxy 像素驗證已提交。這是相機端點測試，完整 production HLOD 與效能仍未完成。</p></article>
             <article data-stage="released"><time>WORLD</time><h3>World Partition Phase 1／2</h3><p>非同步 prepare／activate／retire、terrain／vegetation payload、origin rebasing 與 Dirty Delta。部分驗收 Demo 已發布，完整大型世界仍持續演進。</p></article>
@@ -163,6 +166,43 @@
         </div>
     </section>
 
+    <section class="showcase-section character-progress" aria-labelledby="character-progress-title">
+        <div class="section-heading">
+            <p class="micro-label">CHARACTER WIP / REJECTED CANDIDATES</p>
+            <h2 id="character-progress-title">角色進度：把失敗也留在比較裡</h2>
+            <p>下列影像皆是本地工具或原生 D3D12 實際輸出，用來定位下一個改動；臉部第四版、髮型第五與第六版全部維持 WIP／NO-GO，不計入 34／100，也不是發布素材。</p>
+        </div>
+        <div class="character-progress-grid">
+            <article class="character-wip-card">
+                <header><span class="status-no">FACE V4 · NO-GO</span><h3>真正 skinned studio 同鏡位前後</h3></header>
+                <div class="character-wip-pair">
+                    <button type="button" data-lightbox-src="/media/development/character-face-v4-before-front.png" data-lightbox-alt="臉部第四版修改前的真正 skinned studio 正面擷取"><img src="/media/development/character-face-v4-before-front.png" alt="臉部第四版修改前的真正 skinned studio 正面擷取" loading="lazy" /><span><strong>Before · normalScale 1</strong>橘皮明顯；物理點光可見</span></button>
+                    <button type="button" data-lightbox-src="/media/development/character-face-v4-after-front.png" data-lightbox-alt="臉部第四版修改後但幾何仍 NO-GO 的真正 skinned studio 正面擷取"><img src="/media/development/character-face-v4-after-front.png" alt="臉部第四版修改後但幾何仍 NO-GO 的真正 skinned studio 正面擷取" loading="lazy" /><span><strong>After · normalScale 0.15</strong>消除橘皮；幾何仍淘汰</span></button>
+                </div>
+                <p>現在使用真正的 skinned-character submission：物理點光已在雙眼產生 catchlight，skin <code>normalScale</code> 從 1 降為 0.15 後移除過強橘皮。材質呈現改善不代表角色完成，臉型與參考的幾何相似度仍是 NO-GO。</p>
+            </article>
+            <article class="character-wip-card">
+                <header><span class="status-no">HAIR V5 → V6 · BOTH NO-GO</span><h3>第五、六版原生正面比較</h3></header>
+                <div class="character-wip-pair">
+                    <button type="button" data-lightbox-src="/media/development/character-hair-v5-native-front.png" data-lightbox-alt="髮型第五版原生正面 NO-GO 擷取"><img src="/media/development/character-hair-v5-native-front.png" alt="髮型第五版原生正面 NO-GO 擷取" loading="lazy" /><span><strong>V5 · rejected</strong>交錯根卡、平行薄片與分離</span></button>
+                    <button type="button" data-lightbox-src="/media/development/character-hair-v6-native-front.png" data-lightbox-alt="髮型第六版原生正面 NO-GO 擷取"><img src="/media/development/character-hair-v6-native-front.png" alt="髮型第六版原生正面 NO-GO 擷取" loading="lazy" /><span><strong>V6 · rejected</strong>髮際仍像頭盔、側面覆蓋稀疏</span></button>
+                </div>
+                <p>第六版原生三視圖每個視角各兩張擷取，GPU errors／warnings 為 0／0；視覺仍因頭盔式髮際、顳側平卡、稀疏與過暗淘汰。第七版已啟動完全重建髮流。</p>
+            </article>
+        </div>
+        <div class="character-reject-gallery" aria-label="臉部第四版與髮型第六版淘汰候選三視圖">
+            <button type="button" data-lightbox-src="/media/development/character-face-v4-after-quarter.png" data-lightbox-alt="臉部第四版真正 skinned studio 四分之三視角，幾何仍 NO-GO"><img src="/media/development/character-face-v4-after-quarter.png" alt="臉部第四版真正 skinned studio 四分之三視角，幾何仍 NO-GO" loading="lazy" /><span>Face v4 · skinned quarter · geometry NO-GO</span></button>
+            <button type="button" data-lightbox-src="/media/development/character-hair-v6-native-front.png" data-lightbox-alt="髮型第六版 NO-GO 原生正面"><img src="/media/development/character-hair-v6-native-front.png" alt="髮型第六版 NO-GO 原生正面" loading="lazy" /><span>Hair v6 · front · NO-GO</span></button>
+            <button type="button" data-lightbox-src="/media/development/character-hair-v6-native-quarter.png" data-lightbox-alt="髮型第六版 NO-GO 原生四分之三視角"><img src="/media/development/character-hair-v6-native-quarter.png" alt="髮型第六版 NO-GO 原生四分之三視角" loading="lazy" /><span>Hair v6 · quarter · NO-GO</span></button>
+            <button type="button" data-lightbox-src="/media/development/character-hair-v6-native-profile.png" data-lightbox-alt="髮型第六版 NO-GO 原生側面"><img src="/media/development/character-hair-v6-native-profile.png" alt="髮型第六版 NO-GO 原生側面" loading="lazy" /><span>Hair v6 · profile · NO-GO</span></button>
+        </div>
+        <div class="character-boundary-grid">
+            <p><strong>已驗證</strong><span>Idle 選片修正 commit <code>5bcc1e3</code> 已通過 fresh Release scope 測試；這只證明選片邏輯。</span></p>
+            <p><strong>正在驗證</strong><span>附件材質 sidecar 的 <code>MASK</code> 透明髮卡原生路徑；尚不可宣稱 native material fidelity 完成。</span></p>
+            <p><strong>下一輪</strong><span>Face 針對幾何相似度繼續重建；Hair v7 從髮流、髮際與側面覆蓋完全重建。</span></p>
+        </div>
+    </section>
+
     <section class="showcase-section heroine-section" aria-labelledby="heroine-title">
         <div class="section-heading">
             <p class="micro-label">ORIGINAL HEROINE / ART DIRECTION + ENGINE WIP</p>
@@ -171,7 +211,7 @@
         </div>
         <article class="heroine-direction">
             <button type="button" data-lightbox-src="/media/development/aevrynd-heroine-art-direction-v14.png" data-lightbox-alt="使用者指定的 Aevrynd 女男雙主角美術方向參考圖，非引擎實機擷取"><img src="/media/development/aevrynd-heroine-art-direction-v14.png" alt="使用者指定的 Aevrynd 女男雙主角美術方向參考圖，非引擎實機擷取" loading="lazy" /></button>
-            <div><span class="micro-label">USER-DIRECTED ART TARGET / REFERENCE</span><h3>從通用原型走向可辨識的雙主角</h3><p>女主角以自然長黑髮、俐落黑色皮革外套與合身戰術輪廓為主要方向；男主角則採短黑髮、黑色層次服裝與穩定站姿。正式角色會重新製作成 Aevrynd 原創資產，不直接把參考圖當成模型或材質。</p><strong>使用者指定參考 · 尚未整合 · 不計入 40 分</strong></div>
+            <div><span class="micro-label">USER-DIRECTED ART TARGET / REFERENCE</span><h3>從通用原型走向可辨識的雙主角</h3><p>女主角以自然長黑髮、俐落黑色皮革外套與合身戰術輪廓為主要方向；男主角則採短黑髮、黑色層次服裝與穩定站姿。正式角色會重新製作成 Aevrynd 原創資產，不直接把參考圖當成模型或材質。</p><strong>使用者指定參考 · 尚未整合 · 不計入 34 分</strong></div>
         </article>
         <div class="heroine-status" aria-label="角色目前狀態">
             <div><small>TECHNICAL GATE</small><strong>PASS</strong><span>Blender 5.2.1 · 10 張預覽雜湊皆不同</span></div>
@@ -207,7 +247,7 @@
 
 
     <section class="showcase-section atlas-system" aria-labelledby="system-title">
-        <div class="section-heading"><p class="micro-label">SYSTEM TOPOLOGY</p><h2 id="system-title">主機開發，副機按需提供測試資源</h2><p>LOCAL 主機的 Codex 負責拆分、整合與全新驗收；台中與桃園只依指定輸入提供 CPU／GPU 運算，不常駐 Codex／Qwen、不輪詢 GitHub，也不自行 Git。Tailscale HTTPS Remote Test Worker 是加密私有網路上的按需測試服務。</p></div>
+        <div class="section-heading"><p class="micro-label">SYSTEM TOPOLOGY</p><h2 id="system-title">主機開發，副機按需提供測試資源</h2><p>LOCAL 主機的 Codex（目前設定 GPT-6 Astra）負責拆分、整合與全新驗收；台中與桃園只依指定輸入提供 CPU／GPU 運算，不常駐 Codex／Qwen、不輪詢 GitHub，也不自行 Git。Qwen3.8-27B 只在主機需要離線唯讀整理時啟動，GPU 視覺測試與 benchmark 前停止。</p></div>
         <div class="map-toolbar"><span>可縮放、點擊節點查看工作責任</span><button type="button" data-map-zoom="out" aria-label="縮小架構圖">−</button><button type="button" data-map-zoom="reset">100%</button><button type="button" data-map-zoom="in" aria-label="放大架構圖">＋</button></div>
         <div class="map-viewport atlas-viewport">
             <svg id="systemArchitectureMap" class="architecture-map atlas-map" viewBox="0 0 1200 700" role="img" aria-labelledby="system-svg-title system-svg-desc">
@@ -250,7 +290,15 @@
                 </g>
             </svg>
         </div>
-        <div class="atlas-notes"><p><strong>Codex／Qwen</strong>Codex 是主機開發代理；Qwen 只在需要時做離線唯讀整理。兩台副機不常駐任何 AI 模型。</p><p><strong>Tailscale HTTPS／Worker</strong>加密私有網路／無視窗按需測試服務；只有收到指定測試才使用副機資源。</p><p><strong>Signed evidence</strong>簽章證據可驗證回報來源與內容未遭替換；它仍須由主機核對來源 SHA、退出碼與 receipt（測試收據）。</p><p><strong>SQL／Operations／Showcase</strong><a href="/Operations">Operations（需登入）</a>保存真實執行紀錄；Showcase 只展示完成主機驗收的重要成果。</p></div>
+        <div class="atlas-notes"><p><strong>Codex／Qwen</strong>Codex 是主機開發代理；Qwen3.8-27B 只按需做離線唯讀整理。兩台副機不常駐任何 AI 模型。</p><p><strong>Tailscale HTTPS／Worker</strong>加密私有網路／無視窗按需測試服務；只有收到指定測試才使用副機資源。</p><p><strong>Signed evidence</strong>簽章證據可驗證回報來源與內容未遭替換；它仍須由主機核對來源 SHA、退出碼與 receipt（測試收據）。</p><p><strong>SQL／Operations／Showcase</strong><a href="/Operations">Operations（需登入）</a>保存真實執行紀錄；Showcase 只展示完成主機驗收的重要成果。</p></div>
+        <article class="qwen-boundary" aria-label="Qwen3.8-27B 按需離線輔助邊界">
+            <div><span class="micro-label">ON-DEMAND OFFLINE ASSISTANT</span><h3>Qwen3.8-27B：只分擔大量唯讀整理</h3><p>主機需要時才啟動，不等待工作、不常駐占用 GPU 或記憶體；進入 GPU 視覺擷取、GBV 或效能 benchmark 前停止，避免資源競爭與污染量測。</p></div>
+            <div class="qwen-scope">
+                <p><strong>可做</strong><span>摘要、分類、日誌整理、檔案盤點、測試清單。</span></p>
+                <p><strong>不可做</strong><span>核心 Renderer／Shader 修改、架構決策、驗收結論、Git stage／commit／push。</span></p>
+                <p><strong>責任歸屬</strong><span>Codex 與主機保留整合、Fresh build、Normal／GBV、視覺評分與發布判定。</span></p>
+            </div>
+        </article>
         <details class="showcase-import-contract"><summary>自動更新邊界</summary><p>未來的 Webhook（網站事件通知）或 manifest（證據清單）匯入只能唯讀 origin/main，並要求已推送 commit、目前來源的 fresh receipt、不可變 manifest 與 SHA-256。GitHub Issue 文字、commit message、未提交工作樹或沒有封印清單的 artifact（產物）都不能直接更新分數或宣稱完成。驗證失敗時保留上一個已確認版本。</p></details>
     </section>
 
@@ -338,15 +386,15 @@
 
     <section class="showcase-section reality-grid" aria-labelledby="limits-title">
         <div class="section-heading"><p class="micro-label">CURRENT REALITY</p><h2 id="limits-title">清楚標示尚未完成</h2></div>
-        <article><strong>40 / 100</strong><p>最新同鏡位 11-shot 權威視覺分數；基準 34，增加 6。Demo 門檻仍是 70 且 hard issue 為 0。</p></article>
+        <article><strong>34 / 100</strong><p>目前權威同鏡位視覺分數；尚未完成可調整分數的新一輪評分。Demo 門檻仍是至少 70 且 hard issue 為 0。</p></article>
         <article><strong>v1.4 未發布</strong><p>人物頭髮尖刺、God 巨型遮擋物、世界邊緣空洞與左上除錯文字仍待修正。</p></article>
         <article><strong>DLSS production 支援未完成</strong><p>commit b09040e 已驗證 output-resolution depth semantic replay 與 Streamline lifecycle；這是未發布切片，不等於跨場景、跨硬體的完整 DLSS 產品支援。</p></article>
         <article><strong>Bloom slice 已提交</strong><p>commit b09040e（承接 1186b60）；raw paired GPU／CPU hostile gates、Streamline runtime package gate 234.09 秒與 hooks-off Release build 通過。仍不是完整 production 功能或發布證據。</p></article>
         <article><strong>Production HLOD 未完成</strong><p>GPU selector seam、gameplay transition pixel oracle、SceneECS ownership 與 aggregate proxy 已驗證；完整 production HLOD 仍缺 OnRender、全 descriptor coverage 與真實 workload。</p></article>
         <article><strong>最新渲染切片已驗證</strong><p>commit c0b3197 修正 MSAA HDR／contact-shadow RTV slot 衝突；fresh Normal／GBV、CTest 4/4、third-day effective ROI coverage=1、GPU debug 0/0。這不等於完整 Demo 或視覺 gate 通過。</p></article>
-        <article><strong>仍未達 Demo 門檻</strong><p>聚落地被與建築細節已讓視覺提升至 40／100，但完整 production HLOD、人物與畫面缺陷仍未完成；v1.4 維持未發布。</p></article>
+        <article><strong>角色候選仍是 NO-GO</strong><p>臉部第四版與髮型第五、六版均未通過；第七版髮流重建與真正 skinned-character submission 正在進行，不能調整 34／100。</p></article>
     </section>
-    <p class="showcase-source">資料基準：TASK_STATE、EngineFeatureCatalog、EngineChangeLog、已推送引擎 commit <code>d6e097677c1cedab868d7239aae7d461379fd31c</code> 與既有可追溯 release 目錄。最新權威視覺為同鏡位 40／100；網站保存 11 張 Gameplay 實機 PNG（2 張 34 分基準及 9 張 40 分視角／時段矩陣）、8 張 F2 同鏡位步行測試幀及 4 支可追溯 MP4，全部在媒體清單記錄 SHA-256，不把整個 build／test 目錄當成網站來源。新版雙主角圖是使用者指定美術方向參考，不是引擎擷取且不計分；角色 v11 仍是歷史隔離技術 PASS／視覺 NO-GO 預覽。v1.4 未發布。</p>
+    <p class="showcase-source">資料基準：TASK_STATE、EngineFeatureCatalog、EngineChangeLog、Idle 選片修正 commit <code>5bcc1e3</code>、可追溯 release 目錄與本頁逐項標示的 WIP 輸出。最新權威視覺仍為同鏡位 34／100；九鏡頭後續畫面只保留為未重新評分候選。網站另保存臉部第四版、髮型第五與第六版的原生淘汰影像、8 張 F2 同鏡位步行測試幀及 4 支可追溯 MP4，全部由媒體清單記錄 SHA-256。雙主角圖是使用者指定美術方向參考，不是引擎擷取且不計分；v1.4 未發布。</p>
     <aside id="showcaseDetail" class="showcase-detail" aria-live="polite" aria-hidden="true"><button type="button" aria-label="關閉詳情">×</button><p class="micro-label">TRACEABLE DETAIL</p><h2>選取項目</h2><p>點擊版本或架構節點查看證據邊界。</p></aside>
     <div id="showcaseLightbox" class="showcase-lightbox" role="dialog" aria-modal="true" aria-label="展示影像大圖" aria-hidden="true">
         <button type="button" class="lightbox-close" aria-label="關閉角色預覽">×</button>

@@ -88,9 +88,9 @@
     const renderScene = () => {
       if (!image || !caption) return;
       image.src = `/media/development/visual-score-40-${currentView}-${currentTime}.png`;
-      image.alt = `${viewLabels[currentView]}${timeLabels[currentTime]}固定鏡頭實機擷取`;
+      image.alt = `未重新評分 WIP 候選 · ${viewLabels[currentView]}${timeLabels[currentTime]}固定鏡頭實機擷取`;
       const position = views.indexOf(currentView) * times.length + times.indexOf(currentTime) + 1;
-      caption.textContent = `${viewLabels[currentView]} · ${timeLabels[currentTime]} · 固定鏡頭 ${position}／9`;
+      caption.textContent = `${viewLabels[currentView]} · ${timeLabels[currentTime]} · 未評分候選 ${position}／9`;
       viewButtons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.sceneView === currentView)));
       timeButtons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.sceneTime === currentTime)));
     };

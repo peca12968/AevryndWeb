@@ -4,31 +4,16 @@
   "title": "Aevrynd Demo evolution",
   "disclosure": "歷史實機截圖動畫導覽（非連續遊玩錄影）",
   "continuousGameplayRecording": false,
-  "sourcePolicy": "Only immutable in-engine release capture PNG files were encoded; no generated or synthetic gameplay imagery was used.",
+  "sourcePolicy": "Media is explicitly classified as historical release evidence, authoritative baseline, unscored WIP or art-direction reference; WIP media never changes the authoritative score.",
   "authoritativeVisualScore": {
     "updatedDate": "2026-09-07",
-    "engineCommit": "d6e097677c1cedab868d7239aae7d461379fd31c",
+    "engineCommit": null,
     "baselineScore": 34,
-    "currentScore": 40,
+    "currentScore": 34,
     "targetScore": 70,
     "releaseStatus": "wip-v1.4-unreleased",
-    "rubric": {
-      "composition": { "score": 9, "maximum": 20 },
-      "character": { "score": 4, "maximum": 20 },
-      "materials": { "score": 8, "maximum": 15 },
-      "lighting": { "score": 7, "maximum": 15 },
-      "sceneCompleteness": { "score": 8, "maximum": 20 },
-      "technicalDefects": { "score": 4, "maximum": 10 }
-    },
-    "validation": {
-      "build": "fresh Release ALL_BUILD",
-      "focusedTests": "5/5",
-      "normalSeconds": 250.03,
-      "gbvSeconds": 109.98,
-      "gpuDebugErrors": 0,
-      "gpuDebugWarnings": 0,
-      "sameCameraShotCount": 11
-    },
+    "rubric": { "status": "no-new-authoritative-breakdown", "total": 34 },
+    "validation": { "newSameCameraRatingCompleted": false, "candidateMediaCountsTowardScore": false },
     "knownIssues": [
       "M2 male character hair spikes",
       "large obstruction in God camera",
@@ -47,7 +32,7 @@
       },
       {
         "view": "god-day",
-        "state": "current-40",
+        "state": "unscored-wip-candidate",
         "file": "visual-score-40-god-day.png",
         "width": 1280,
         "height": 720,
@@ -65,7 +50,7 @@
       },
       {
         "view": "third-day",
-        "state": "current-40",
+        "state": "unscored-wip-candidate",
         "file": "visual-score-40-third-day.png",
         "width": 1280,
         "height": 720,
@@ -109,6 +94,8 @@
     "sceneMatrix": {
       "kind": "fixed-camera-frame-sequence",
       "continuousGameplayRecording": false,
+      "scoreStatus": "unscored-wip-candidate",
+      "countsTowardAuthoritativeScore": false,
       "engineCommit": "d6e097677c1cedab868d7239aae7d461379fd31c",
       "sourceRoot": "D:/Download/Aevrynd/bld/visual-score-40-authority-fresh-20260907/bin/Release/gameplay-captures-normal",
       "items": [
@@ -126,6 +113,7 @@
     "characterWalk": {
       "kind": "same-camera-test-frame-sequence",
       "continuousGameplayRecording": false,
+      "countsTowardAuthoritativeScore": false,
       "character": "F2",
       "engineCommit": "d6e097677c1cedab868d7239aae7d461379fd31c",
       "sourceRoot": "D:/Download/Aevrynd/bld/visual-score-40-authority-fresh-20260907/test-artifacts/character-visual-quality",
@@ -169,6 +157,37 @@
       { "file": "aevrynd-heroine-v11-headshot.png", "sha256": "5b993bb183f52c1d93314d3484422e898ac33886bbc3636e30010682cf3da793", "source": "D:/Download/Aevrynd/b/heroine-mpfb-v11/headshot.png" },
       { "file": "aevrynd-heroine-v11-action.png", "sha256": "234095ea585abab7ec20e66f64d65a4af1397201f391886658da8125c15d9409", "source": "D:/Download/Aevrynd/b/heroine-mpfb-v11/action.png" }
     ]
+  },
+  "characterProgressWip": {
+    "updatedDate": "2026-09-07",
+    "countsTowardAuthoritativeScore": false,
+    "idleSelection": {
+      "engineCommit": "5bcc1e3",
+      "status": "verified-scope-limited",
+      "claim": "female and male idle clip selection logic only"
+    },
+    "faceV4": {
+      "status": "wip-visual-no-go",
+      "statusDetail": "real skinned studio submission now shows physical point-light catchlights in both eyes and skin normalScale 1 to 0.15 removes orange-peel shading; geometry likeness remains NO-GO",
+      "images": [
+        { "file": "character-face-v4-before-front.png", "view": "skinned-studio-front-before-normal-scale-1", "width": 1400, "height": 1400, "sha256": "097874778bfb5434e24c94646baa30948a6bc072ae898d2c6dae437edcc8c98e", "source": "D:/Download/Aevrynd/b/face-detail-54/fourth/studio-final-before-front/capture-1.png" },
+        { "file": "character-face-v4-after-front.png", "view": "skinned-studio-front-after-normal-scale-0.15-geometry-rejected", "width": 1400, "height": 1400, "sha256": "26cb46651d3cce044c21bf99872537d22eb06e5ffd18e75b3aa5693709b29edc", "source": "D:/Download/Aevrynd/b/face-detail-54/fourth/studio-final-after-front/capture-1.png" },
+        { "file": "character-face-v4-after-quarter.png", "view": "skinned-studio-quarter-after-geometry-rejected", "width": 1400, "height": 1400, "sha256": "33199b162f7d6052c6149dfac182ec4fa26789400e14629ec7562ded953d1493", "source": "D:/Download/Aevrynd/b/face-detail-54/fourth/studio-final-after-quarter/capture-1.png" }
+      ]
+    },
+    "hair": {
+      "status": "v5-and-v6-visual-no-go-v7-rebuild-started",
+      "nativeV6GpuErrors": 0,
+      "nativeV6GpuWarnings": 0,
+      "sidecarMaskTransparencyPath": "verification-in-progress",
+      "visualFailures": ["helmet-like hairline", "flat temporal cards", "sparse side coverage", "hair too dark"],
+      "images": [
+        { "file": "character-hair-v5-native-front.png", "version": 5, "view": "front", "width": 900, "height": 1200, "sha256": "b73d2f2fd432e527e08d4379e96cc6cbc25d6b0d2e14ce835f896ac3667f6ec0", "source": "D:/Download/Aevrynd/b/hair-fidelity-55/fifth/native-front/capture-0.png" },
+        { "file": "character-hair-v6-native-front.png", "version": 6, "view": "front", "width": 900, "height": 1200, "sha256": "3aca40eadcdc150fb95f7cc0e15d7f1f77a2f4fbcb96ec619e3d8aa86bb8c386", "source": "D:/Download/Aevrynd/b/hair-fidelity-55/sixth/native-front-sealed/capture-0.png" },
+        { "file": "character-hair-v6-native-quarter.png", "version": 6, "view": "quarter", "width": 900, "height": 1200, "sha256": "18dddc67ca0958f12139e3d39655cd1f0ab471f5ec86e3f803e0a27b8510db8b", "source": "D:/Download/Aevrynd/b/hair-fidelity-55/sixth/native-quarter-sealed/capture-0.png" },
+        { "file": "character-hair-v6-native-profile.png", "version": 6, "view": "profile", "width": 900, "height": 1200, "sha256": "9a33c46e737326992324d747a3bf84ebd453b583eb1e760a4f720384d5c0c5ae", "source": "D:/Download/Aevrynd/b/hair-fidelity-55/sixth/native-profile-sealed/capture-0.png" }
+      ]
+    }
   },
   "media": [
     {
