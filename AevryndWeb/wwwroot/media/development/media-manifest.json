@@ -166,6 +166,39 @@
       "status": "verified-scope-limited",
       "claim": "female and male idle clip selection logic only"
     },
+    "gpuSkinnedShapePreview": {
+      "status": "technical-path-pass-visual-no-go",
+      "engineCommit": null,
+      "sourceState": "uncommitted-current-source-wip",
+      "countsTowardAuthoritativeScore": false,
+      "captureCount": 11,
+      "validation": {
+        "debugLayer": true,
+        "gbvRequested": true,
+        "gbvAvailable": true,
+        "gbvExecuted": true,
+        "gbvPassed": true,
+        "gpuErrors": 0,
+        "gpuWarnings": 0,
+        "skinnedInstancesPerFrame": 17,
+        "skinJoints": 53,
+        "materialCountsPerFrame": { "skin": 6, "hair": 3, "eye": 6, "mask": 2 }
+      },
+      "sourceRoot": "D:/Download/Aevrynd/b/character-shape-gpu-gbv-73",
+      "items": [
+        { "frame": 0, "file": "character-gpu-shape-0.png", "width": 900, "height": 1200, "sha256": "119de11e12dc649da0371bc00bddf5bf3b29d512de3df36236068eda65125c86" },
+        { "frame": 1, "file": "character-gpu-shape-1.png", "width": 900, "height": 1200, "sha256": "156044c21135c7c9a26db73924a03e5495b0ab486a723976675f815e86bb8748" },
+        { "frame": 2, "file": "character-gpu-shape-2.png", "width": 900, "height": 1200, "sha256": "c9409ce94a1bd244a945864b220e29d0a9fc7796a3cc27d93ff875c1524df6d5" },
+        { "frame": 3, "file": "character-gpu-shape-3.png", "width": 900, "height": 1200, "sha256": "7fe86654a6f03107a551e6fc7eb9da483902d5293b025e2f9a63f2f85085a56b" },
+        { "frame": 4, "file": "character-gpu-shape-4.png", "width": 900, "height": 1200, "sha256": "55824937b8efefb6547cd9b5a7c8ef9c8e0f2a9a274c61a8e58ced1bbd258cc4" },
+        { "frame": 5, "file": "character-gpu-shape-5.png", "width": 900, "height": 1200, "sha256": "bb5ce47062785ffacb70297e41897bd4d85dc615ab57e96afaabd5f4a740d607" },
+        { "frame": 6, "file": "character-gpu-shape-6.png", "width": 900, "height": 1200, "sha256": "4930b72e883541b3382cfe9b299d3614b428d24102921453915469fea03f5014" },
+        { "frame": 7, "file": "character-gpu-shape-7.png", "width": 900, "height": 1200, "sha256": "e8e4fad92882b89e1217ba18ba80766877865036656ca6899a3c2c45f6ada7df" },
+        { "frame": 8, "file": "character-gpu-shape-8.png", "width": 900, "height": 1200, "sha256": "ab9dd58326a974c333f7de677983af155129075a79f2a65e3ea4e104a6aa6a98" },
+        { "frame": 9, "file": "character-gpu-shape-9.png", "width": 900, "height": 1200, "sha256": "576a8658bd4e16872244c5f434db1d1f7d7491694c157f4e773dda41a5ab1c6f" },
+        { "frame": 10, "file": "character-gpu-shape-10.png", "width": 900, "height": 1200, "sha256": "525bd46a73dab553c8d38c73daf787f797b2956dd9570d86654c768c9347c835" }
+      ]
+    },
     "faceV4": {
       "status": "wip-visual-no-go",
       "statusDetail": "real skinned studio submission now shows physical point-light catchlights in both eyes and skin normalScale 1 to 0.15 removes orange-peel shading; geometry likeness remains NO-GO",
@@ -175,17 +208,30 @@
         { "file": "character-face-v4-after-quarter.png", "view": "skinned-studio-quarter-after-geometry-rejected", "width": 1400, "height": 1400, "sha256": "33199b162f7d6052c6149dfac182ec4fa26789400e14629ec7562ded953d1493", "source": "D:/Download/Aevrynd/b/face-detail-54/fourth/studio-final-after-quarter/capture-1.png" }
       ]
     },
+    "faceV7": {
+      "status": "wip-visual-no-go",
+      "geometry": { "vertices": 52147, "indices": 299604, "joints": 53, "triangleFlips": 0, "newNonAdjacentSelfIntersections": 0 },
+      "remainingIssues": ["unnatural exposed sclera", "lip seam", "eyelid-to-eye contact not fully certified"],
+      "images": [
+        { "file": "character-face-v7-front.png", "view": "front", "width": 1400, "height": 1400, "sha256": "5bcf7a2f2b1191a5767b781157450bdf30813cd81f79b297e5c5101581dde9c0", "source": "D:/Download/Aevrynd/b/face-detail-59/candidate7/front/capture-0.png" },
+        { "file": "character-face-v7-quarter.png", "view": "quarter", "width": 1400, "height": 1400, "sha256": "a843e8e2988c40b6985f036a5dde56ec364a752fbddfc2ca9c9924fa02d06cbc", "source": "D:/Download/Aevrynd/b/face-detail-59/candidate7/quarter/capture-0.png" },
+        { "file": "character-face-v7-profile.png", "view": "profile", "width": 1400, "height": 1400, "sha256": "ebc84ba2bed202cfbdcc9d9adb3681330d6175841989feaa937a643689d9ed78", "source": "D:/Download/Aevrynd/b/face-detail-59/candidate7/profile/capture-0.png" }
+      ]
+    },
     "hair": {
-      "status": "v5-and-v6-visual-no-go-v7-rebuild-started",
+      "status": "v5-through-v9-visual-no-go",
       "nativeV6GpuErrors": 0,
       "nativeV6GpuWarnings": 0,
-      "sidecarMaskTransparencyPath": "verification-in-progress",
-      "visualFailures": ["helmet-like hairline", "flat temporal cards", "sparse side coverage", "hair too dark"],
+      "sidecarMaskTransparencyPath": "gpu-skinned-gbv-pass",
+      "visualFailures": ["large separated front hair surfaces", "insufficient strand breakup", "hair too dark"],
       "images": [
         { "file": "character-hair-v5-native-front.png", "version": 5, "view": "front", "width": 900, "height": 1200, "sha256": "b73d2f2fd432e527e08d4379e96cc6cbc25d6b0d2e14ce835f896ac3667f6ec0", "source": "D:/Download/Aevrynd/b/hair-fidelity-55/fifth/native-front/capture-0.png" },
         { "file": "character-hair-v6-native-front.png", "version": 6, "view": "front", "width": 900, "height": 1200, "sha256": "3aca40eadcdc150fb95f7cc0e15d7f1f77a2f4fbcb96ec619e3d8aa86bb8c386", "source": "D:/Download/Aevrynd/b/hair-fidelity-55/sixth/native-front-sealed/capture-0.png" },
         { "file": "character-hair-v6-native-quarter.png", "version": 6, "view": "quarter", "width": 900, "height": 1200, "sha256": "18dddc67ca0958f12139e3d39655cd1f0ab471f5ec86e3f803e0a27b8510db8b", "source": "D:/Download/Aevrynd/b/hair-fidelity-55/sixth/native-quarter-sealed/capture-0.png" },
-        { "file": "character-hair-v6-native-profile.png", "version": 6, "view": "profile", "width": 900, "height": 1200, "sha256": "9a33c46e737326992324d747a3bf84ebd453b583eb1e760a4f720384d5c0c5ae", "source": "D:/Download/Aevrynd/b/hair-fidelity-55/sixth/native-profile-sealed/capture-0.png" }
+        { "file": "character-hair-v6-native-profile.png", "version": 6, "view": "profile", "width": 900, "height": 1200, "sha256": "9a33c46e737326992324d747a3bf84ebd453b583eb1e760a4f720384d5c0c5ae", "source": "D:/Download/Aevrynd/b/hair-fidelity-55/sixth/native-profile-sealed/capture-0.png" },
+        { "file": "character-hair-v9-front.png", "version": 9, "view": "front", "width": 900, "height": 1200, "sha256": "ae2d0ad5631aed73764b5dc081d0d52185b210ab4d4815d23ff597a54f2485de", "source": "D:/Download/Aevrynd/b/hair-fidelity-69/contact-fixed/native-front/capture-0.png" },
+        { "file": "character-hair-v9-quarter.png", "version": 9, "view": "quarter", "width": 900, "height": 1200, "sha256": "cb159e659289db7b54b30a201fe72774e85ad91bf481db5254443330155e04a0", "source": "D:/Download/Aevrynd/b/hair-fidelity-69/contact-fixed/native-quarter/capture-0.png" },
+        { "file": "character-hair-v9-profile.png", "version": 9, "view": "profile", "width": 900, "height": 1200, "sha256": "eff5a767a95167bf2f80f47682d7a3722c4204db169e79b4d49bc5adb5eda298", "source": "D:/Download/Aevrynd/b/hair-fidelity-69/contact-fixed/native-profile/capture-0.png" }
       ]
     }
   },

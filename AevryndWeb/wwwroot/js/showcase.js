@@ -163,6 +163,50 @@
     renderCharacterFrame(0);
   }
 
+  const gpuShapeSequence = document.querySelector("[data-gpu-shape-sequence]");
+  if (gpuShapeSequence) {
+    const image = gpuShapeSequence.querySelector("[data-gpu-shape-image]");
+    const caption = gpuShapeSequence.querySelector("[data-gpu-shape-caption]");
+    const output = gpuShapeSequence.querySelector("[data-gpu-shape-output]");
+    const range = gpuShapeSequence.querySelector("[data-gpu-shape-range]");
+    const playButton = gpuShapeSequence.querySelector("[data-gpu-shape-play]");
+    const frameCount = 11;
+    let frame = 0, timer = null;
+    const renderFrame = value => {
+      frame = (Number(value) + frameCount) % frameCount;
+      if (image) {
+        image.src = `/media/development/character-gpu-shape-${frame}.png`;
+        image.alt = `GPU 蒙皮角色塑形測試第 ${frame + 1} 幀，共 ${frameCount} 幀`;
+      }
+      if (caption) caption.textContent = `中立與十個塑形端點 · ${frame + 1}／${frameCount}`;
+      if (output) output.textContent = `${frame + 1} / ${frameCount}`;
+      if (range) range.value = String(frame);
+    };
+    const stop = () => {
+      if (timer) window.clearInterval(timer);
+      timer = null;
+      playButton?.setAttribute("aria-pressed", "false");
+      if (playButton) playButton.textContent = "播放塑形端點";
+    };
+    const start = () => {
+      if (timer) return;
+      for (let index = 0; index < frameCount; index += 1) {
+        const preload = new Image();
+        preload.src = `/media/development/character-gpu-shape-${index}.png`;
+      }
+      playButton?.setAttribute("aria-pressed", "true");
+      if (playButton) playButton.textContent = "暫停塑形端點";
+      timer = window.setInterval(() => renderFrame(frame + 1), reducedMotion ? 1100 : 650);
+    };
+    gpuShapeSequence.querySelector("[data-gpu-shape-prev]")?.addEventListener("click", () => { stop(); renderFrame(frame - 1); });
+    gpuShapeSequence.querySelector("[data-gpu-shape-next]")?.addEventListener("click", () => { stop(); renderFrame(frame + 1); });
+    playButton?.addEventListener("click", () => { if (timer) stop(); else start(); });
+    range?.addEventListener("input", () => { stop(); renderFrame(range.value); });
+    document.addEventListener("visibilitychange", () => { if (document.hidden) stop(); });
+    window.addEventListener("pagehide", stop);
+    renderFrame(0);
+  }
+
   const lightbox = document.querySelector("#showcaseLightbox");
   const lightboxImage = lightbox?.querySelector("figure img");
   const lightboxCaption = lightbox?.querySelector("figcaption");
