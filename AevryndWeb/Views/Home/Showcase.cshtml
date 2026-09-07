@@ -128,16 +128,24 @@
             </article>
             <article class="character-sequence character-gpu-sequence" data-gpu-shape-sequence>
                 <header><span class="micro-label">CHARACTER CREATOR / 11 GPU-SKINNED FRAMES</span><h3>網站可操作的捏臉／身材技術預覽</h3></header>
-                <figure class="capture-stage character-stage"><img src="/media/development/character-gpu-shape-0.png" alt="GPU 蒙皮角色塑形測試第 1 幀，共 11 幀" loading="lazy" data-gpu-shape-image /><figcaption data-gpu-shape-caption aria-live="polite">中立與十個塑形端點 · 1／11</figcaption></figure>
+                <div class="wardrobe-toggle" role="group" aria-label="切換角色服裝顯示"><span>服裝顯示</span><button type="button" data-character-wardrobe="clothed" aria-pressed="true">完整服裝</button><button type="button" data-character-wardrobe="anatomy" aria-pressed="false">人體塑形測試（18+）</button></div>
+                <figure class="capture-stage character-stage"><img src="/media/development/aevrynd-heroine-v11-front.png" alt="穿著完整服裝的 Aevrynd 女主角第十一版 WIP" loading="lazy" data-gpu-shape-image /><figcaption data-gpu-shape-caption aria-live="polite">預設穿著完整服裝 · 角色第十一版 WIP</figcaption></figure>
                 <div class="frame-controls"><button type="button" data-gpu-shape-prev aria-label="上一個塑形測試幀">上一幀</button><button type="button" data-gpu-shape-play aria-pressed="false">播放塑形端點</button><button type="button" data-gpu-shape-next aria-label="下一個塑形測試幀">下一幀</button></div>
                 <label class="frame-scrubber">GPU 蒙皮塑形幀 <output data-gpu-shape-output>1 / 11</output><input type="range" min="0" max="10" value="0" step="1" data-gpu-shape-range aria-label="選擇 GPU 蒙皮塑形測試幀" /></label>
+                <div class="shape-slider-grid" aria-label="臉部細節端點調整">
+                    <label>下顎寬度 <output>中立</output><input type="range" min="-1" max="1" value="0" step="1" data-shape-axis data-min-frame="1" data-max-frame="2" /></label>
+                    <label>下巴長度 <output>中立</output><input type="range" min="-1" max="1" value="0" step="1" data-shape-axis data-min-frame="3" data-max-frame="4" /></label>
+                    <label>鼻翼寬度 <output>中立</output><input type="range" min="-1" max="1" value="0" step="1" data-shape-axis data-min-frame="5" data-max-frame="6" /></label>
+                    <label>嘴部寬度 <output>中立</output><input type="range" min="-1" max="1" value="0" step="1" data-shape-axis data-min-frame="7" data-max-frame="8" /></label>
+                    <label>嘴唇厚度 <output>中立</output><input type="range" min="-1" max="1" value="0" step="1" data-shape-axis data-min-frame="9" data-max-frame="10" /></label>
+                </div>
                 <div class="shape-preset-grid" role="group" aria-label="選擇角色塑形端點">
                     <button type="button" data-gpu-shape-frame="0">中立</button><button type="button" data-gpu-shape-frame="1">窄下顎</button><button type="button" data-gpu-shape-frame="2">寬下顎</button><button type="button" data-gpu-shape-frame="3">短下巴</button><button type="button" data-gpu-shape-frame="4">長下巴</button><button type="button" data-gpu-shape-frame="5">窄鼻翼</button><button type="button" data-gpu-shape-frame="6">寬鼻翼</button><button type="button" data-gpu-shape-frame="7">窄嘴</button><button type="button" data-gpu-shape-frame="8">寬嘴</button><button type="button" data-gpu-shape-frame="9">薄唇</button><button type="button" data-gpu-shape-frame="10">厚唇</button>
                 </div>
                 <div class="character-creator-roadmap" aria-label="角色建立器開發狀態">
-                    <p><strong>現在可操作</strong><span>點選 10 個真實 morph（網格塑形）端點，檢視 body、eyes、hair 共用骨架後的 GPU 蒙皮擷取。</span></p>
+                    <p><strong>現在可操作</strong><span>預設顯示完整服裝；可切換五組三段式臉部滑桿，檢視 10 個真實 morph（網格塑形）端點。</span></p>
                     <p><strong>下一個切片</strong><span>同時混合多個滑桿、加入臉部與身材模板、限制不自然比例，並保存可重現參數。</span></p>
-                    <p><strong>尚未宣稱</strong><span>目前網站切換的是已驗證端點影格，不是瀏覽器內即時 3D 捏臉器；角色相似度、髮絲與人體工學仍未通過。</span></p>
+                    <p><strong>尚未宣稱</strong><span>完整服裝與人體端點來自不同 WIP 擷取，並非同一模型即時穿脫；網站也不是即時 3D 捏臉器。</span></p>
                 </div>
                 <p class="capture-disclosure">這一輪已讓 body、eyes 與 hair 共同走真正的 GPU skinned submission。GBV 11／11 幀皆為 requested／available／executed／passed，GPU errors／warnings 0／0；每幀 17 個 skinned instances、53 joints、Skin 6／Hair 3／Eye 6／Mask 2。這是技術路徑通過，角色美術仍為 WIP／NO-GO。</p>
             </article>

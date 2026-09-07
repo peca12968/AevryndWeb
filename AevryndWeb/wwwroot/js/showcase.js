@@ -191,15 +191,17 @@
     const range = gpuShapeSequence.querySelector("[data-gpu-shape-range]");
     const playButton = gpuShapeSequence.querySelector("[data-gpu-shape-play]");
     const presetButtons = [...gpuShapeSequence.querySelectorAll("[data-gpu-shape-frame]")];
+    const wardrobeButtons = [...gpuShapeSequence.querySelectorAll("[data-character-wardrobe]")];
+    const shapeAxes = [...gpuShapeSequence.querySelectorAll("[data-shape-axis]")];
     const frameCount = 11;
-    let frame = 0, timer = null;
+    let frame = 0, timer = null, wardrobe = "clothed";
     const renderFrame = value => {
       frame = (Number(value) + frameCount) % frameCount;
-      if (image) {
+      if (image && wardrobe === "anatomy") {
         image.src = `/media/development/character-gpu-shape-${frame}.png`;
         image.alt = `GPU 蒙皮角色塑形測試第 ${frame + 1} 幀，共 ${frameCount} 幀`;
       }
-      if (caption) caption.textContent = `中立與十個塑形端點 · ${frame + 1}／${frameCount}`;
+      if (caption && wardrobe === "anatomy") caption.textContent = `人體塑形測試 · 中立與十個端點 · ${frame + 1}／${frameCount}`;
       if (output) output.textContent = `${frame + 1} / ${frameCount}`;
       if (range) range.value = String(frame);
       presetButtons.forEach(button => button.setAttribute("aria-pressed", String(Number(button.dataset.gpuShapeFrame) === frame)));
@@ -220,14 +222,36 @@
       if (playButton) playButton.textContent = "暫停塑形端點";
       timer = window.setInterval(() => renderFrame(frame + 1), reducedMotion ? 1100 : 650);
     };
+    const setWardrobe = value => {
+      wardrobe = value === "anatomy" ? "anatomy" : "clothed";
+      wardrobeButtons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.characterWardrobe === wardrobe)));
+      if (wardrobe === "clothed") {
+        stop();
+        if (image) {
+          image.src = "/media/development/aevrynd-heroine-v11-front.png";
+          image.alt = "穿著完整服裝的 Aevrynd 女主角第十一版 WIP";
+        }
+        if (caption) caption.textContent = "預設穿著完整服裝 · 角色第十一版 WIP";
+      } else renderFrame(frame);
+    };
     gpuShapeSequence.querySelector("[data-gpu-shape-prev]")?.addEventListener("click", () => { stop(); renderFrame(frame - 1); });
     gpuShapeSequence.querySelector("[data-gpu-shape-next]")?.addEventListener("click", () => { stop(); renderFrame(frame + 1); });
     playButton?.addEventListener("click", () => { if (timer) stop(); else start(); });
     range?.addEventListener("input", () => { stop(); renderFrame(range.value); });
     presetButtons.forEach(button => button.addEventListener("click", () => { stop(); renderFrame(button.dataset.gpuShapeFrame); }));
+    wardrobeButtons.forEach(button => button.addEventListener("click", () => setWardrobe(button.dataset.characterWardrobe)));
+    shapeAxes.forEach(axis => axis.addEventListener("input", () => {
+      stop();
+      setWardrobe("anatomy");
+      shapeAxes.filter(other => other !== axis).forEach(other => { other.value = "0"; if (other.previousElementSibling) other.previousElementSibling.textContent = "中立"; });
+      const value = Number(axis.value);
+      if (axis.previousElementSibling) axis.previousElementSibling.textContent = value < 0 ? "較窄／較短" : value > 0 ? "較寬／較長" : "中立";
+      renderFrame(value < 0 ? axis.dataset.minFrame : value > 0 ? axis.dataset.maxFrame : 0);
+    }));
     document.addEventListener("visibilitychange", () => { if (document.hidden) stop(); });
     window.addEventListener("pagehide", stop);
     renderFrame(0);
+    setWardrobe("clothed");
   }
 
   const lightbox = document.querySelector("#showcaseLightbox");
