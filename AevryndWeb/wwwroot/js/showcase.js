@@ -170,6 +170,7 @@
     const output = gpuShapeSequence.querySelector("[data-gpu-shape-output]");
     const range = gpuShapeSequence.querySelector("[data-gpu-shape-range]");
     const playButton = gpuShapeSequence.querySelector("[data-gpu-shape-play]");
+    const presetButtons = [...gpuShapeSequence.querySelectorAll("[data-gpu-shape-frame]")];
     const frameCount = 11;
     let frame = 0, timer = null;
     const renderFrame = value => {
@@ -181,6 +182,7 @@
       if (caption) caption.textContent = `中立與十個塑形端點 · ${frame + 1}／${frameCount}`;
       if (output) output.textContent = `${frame + 1} / ${frameCount}`;
       if (range) range.value = String(frame);
+      presetButtons.forEach(button => button.setAttribute("aria-pressed", String(Number(button.dataset.gpuShapeFrame) === frame)));
     };
     const stop = () => {
       if (timer) window.clearInterval(timer);
@@ -202,6 +204,7 @@
     gpuShapeSequence.querySelector("[data-gpu-shape-next]")?.addEventListener("click", () => { stop(); renderFrame(frame + 1); });
     playButton?.addEventListener("click", () => { if (timer) stop(); else start(); });
     range?.addEventListener("input", () => { stop(); renderFrame(range.value); });
+    presetButtons.forEach(button => button.addEventListener("click", () => { stop(); renderFrame(button.dataset.gpuShapeFrame); }));
     document.addEventListener("visibilitychange", () => { if (document.hidden) stop(); });
     window.addEventListener("pagehide", stop);
     renderFrame(0);

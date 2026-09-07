@@ -118,10 +118,18 @@
                 <p class="capture-disclosure">這是 Character Visual Quality 測試產生的 8 張同鏡位影像，可逐幀檢查姿勢變化；不是即時動畫或遊玩影片。播放器預設暫停，避免造成不必要動態。</p>
             </article>
             <article class="character-sequence character-gpu-sequence" data-gpu-shape-sequence>
-                <header><span class="micro-label">CHARACTER SHAPE / 11 GPU-SKINNED FRAMES</span><h3>真正 GPU 蒙皮塑形預覽</h3></header>
+                <header><span class="micro-label">CHARACTER CREATOR / 11 GPU-SKINNED FRAMES</span><h3>網站可操作的捏臉／身材技術預覽</h3></header>
                 <figure class="capture-stage character-stage"><img src="/media/development/character-gpu-shape-0.png" alt="GPU 蒙皮角色塑形測試第 1 幀，共 11 幀" loading="lazy" data-gpu-shape-image /><figcaption data-gpu-shape-caption aria-live="polite">中立與十個塑形端點 · 1／11</figcaption></figure>
                 <div class="frame-controls"><button type="button" data-gpu-shape-prev aria-label="上一個塑形測試幀">上一幀</button><button type="button" data-gpu-shape-play aria-pressed="false">播放塑形端點</button><button type="button" data-gpu-shape-next aria-label="下一個塑形測試幀">下一幀</button></div>
                 <label class="frame-scrubber">GPU 蒙皮塑形幀 <output data-gpu-shape-output>1 / 11</output><input type="range" min="0" max="10" value="0" step="1" data-gpu-shape-range aria-label="選擇 GPU 蒙皮塑形測試幀" /></label>
+                <div class="shape-preset-grid" role="group" aria-label="選擇角色塑形端點">
+                    <button type="button" data-gpu-shape-frame="0">中立</button><button type="button" data-gpu-shape-frame="1">窄下顎</button><button type="button" data-gpu-shape-frame="2">寬下顎</button><button type="button" data-gpu-shape-frame="3">短下巴</button><button type="button" data-gpu-shape-frame="4">長下巴</button><button type="button" data-gpu-shape-frame="5">窄鼻翼</button><button type="button" data-gpu-shape-frame="6">寬鼻翼</button><button type="button" data-gpu-shape-frame="7">窄嘴</button><button type="button" data-gpu-shape-frame="8">寬嘴</button><button type="button" data-gpu-shape-frame="9">薄唇</button><button type="button" data-gpu-shape-frame="10">厚唇</button>
+                </div>
+                <div class="character-creator-roadmap" aria-label="角色建立器開發狀態">
+                    <p><strong>現在可操作</strong><span>點選 10 個真實 morph（網格塑形）端點，檢視 body、eyes、hair 共用骨架後的 GPU 蒙皮擷取。</span></p>
+                    <p><strong>下一個切片</strong><span>同時混合多個滑桿、加入臉部與身材模板、限制不自然比例，並保存可重現參數。</span></p>
+                    <p><strong>尚未宣稱</strong><span>目前網站切換的是已驗證端點影格，不是瀏覽器內即時 3D 捏臉器；角色相似度、髮絲與人體工學仍未通過。</span></p>
+                </div>
                 <p class="capture-disclosure">這一輪已讓 body、eyes 與 hair 共同走真正的 GPU skinned submission。GBV 11／11 幀皆為 requested／available／executed／passed，GPU errors／warnings 0／0；每幀 17 個 skinned instances、53 joints、Skin 6／Hair 3／Eye 6／Mask 2。這是技術路徑通過，角色美術仍為 WIP／NO-GO。</p>
             </article>
         </div>
@@ -148,7 +156,7 @@
             <article data-stage="wip" tabindex="0" data-detail-title="聚落地被與建築細節候選" data-detail="commit d6e097677c1cedab868d7239aae7d461379fd31c 的影像與測試結果保留為可追溯候選，但目前沒有完成可調整權威分數的新同鏡頭評分。人物與 God 鏡位缺陷仍待修正，因此分數維持 34/100。"><time datetime="2026-09-07">2026-09-07 · UNSCORED VISUAL WIP</time><h3>聚落密度與建築細節候選</h3><p>近景地被與建築細節已有可見變化，但沒有新的權威同鏡頭評分，不能宣稱由 34 分提升。</p><code>commit d6e0976 · 候選影像保留 · 權威 34／100</code></article>
             <article data-stage="wip" tabindex="0" data-detail-title="Idle clip selection 已驗證" data-detail="commit 5bcc1e3 修正角色待機選片；fresh Release 的 AevryndCharacterIdleSelection3DTest 通過。這只證明選片邏輯修正，不等於動作品質、角色外觀、完整 Character Visual Quality 或 Demo 視覺達標。"><time datetime="2026-09-07">2026-09-07 · IDLE SELECTION VERIFIED</time><h3>待機選片修正</h3><p>女性與男性 rig 的 Idle clip selection 已由 fresh Release 測試驗證；視覺與人體工學仍須在真實動畫中另行驗收。</p><code>commit 5bcc1e3 · scoped logic GO · 不調整視覺分數</code></article>
             <article data-stage="wip" tabindex="0" data-detail-title="臉部第四版 skinned studio 證據" data-detail="static preview 缺少 Skin／Eye／Hair shadingModel 的第一分歧已由真正 skinned-character submission 取代。物理點光在雙眼產生真實 catchlight，skin normalScale 由 1 降至 0.15 後消除橘皮；幾何相似度仍未達標，因此第四版維持 WIP／NO-GO。"><time datetime="2026-09-07">2026-09-07 · FACE V4 NO-GO</time><h3>真正 skinned studio 提交已可比較</h3><p>雙眼已有物理點光 catchlight，skin normalScale 由 1 降至 0.15 消除橘皮；幾何相似度仍是第一個視覺 NO-GO。</p><code>true skinned submission · material improvement · geometry NO-GO</code></article>
-            <article data-stage="wip" tabindex="0" data-detail-title="髮型第五、六版淘汰" data-detail="第五版與第六版均為視覺 NO-GO。第六版原生 front／quarter／profile 各兩張 capture 的 GPU errors/warnings 為 0/0，但仍有頭盔式髮際、顳側平卡、側面稀疏與過暗問題；第七版已啟動完全重建髮流。"><time datetime="2026-09-07">2026-09-07 · HAIR V5/V6 NO-GO</time><h3>髮卡透明原生路徑驗證中</h3><p>材質 sidecar 的 MASK 透明髮卡已進入原生路徑驗證；零 GPU 計數不代表美術通過，第七版正完全重建髮流。</p><code>v6 native three-view debug 0／0 · visual NO-GO</code></article>
+            <article data-stage="wip" tabindex="0" data-detail-title="髮型第五、六版淘汰" data-detail="第五版與第六版均為視覺 NO-GO。第六版原生 front／quarter／profile 各兩張 capture 的 GPU errors/warnings 為 0/0，但仍有頭盔式髮際、顳側平卡、側面稀疏與過暗問題；這些結果促成後續第七至第九版重建。"><time datetime="2026-09-07">2026-09-07 · HAIR V5/V6 NO-GO</time><h3>髮卡透明原生路徑驗證中</h3><p>材質 sidecar 的 MASK 透明髮卡已進入原生路徑驗證；零 GPU 計數不代表美術通過，後續已迭代到第九版但仍是視覺 NO-GO。</p><code>v6 native three-view debug 0／0 · visual NO-GO</code></article>
             <article data-stage="wip"><time datetime="2026-09-07">2026-09-07 · 按需遠端測試</time><h3>共享測試服務已具簽章影像能力</h3><p>台中與桃園 Remote Test Worker 已回報 async jobs、signed status／evidence／visual evidence，以及 Release／Visual 測試組合；台中另有 Gameplay Visual 組合。這只證明服務能力可用，個別測試仍須有同一來源的 signed receipt 才能列為完成。</p></article>
             <article data-stage="wip"><time>2026-09-05 / CAMERA</time><h3>HLOD 等角相機轉場</h3><p>471a1da 加入正交等角端點，source／transition／proxy 像素驗證已提交。這是相機端點測試，完整 production HLOD 與效能仍未完成。</p></article>
             <article data-stage="released"><time>WORLD</time><h3>World Partition Phase 1／2</h3><p>非同步 prepare／activate／retire、terrain／vegetation payload、origin rebasing 與 Dirty Delta。部分驗收 Demo 已發布，完整大型世界仍持續演進。</p></article>
@@ -194,7 +202,7 @@
                     <button type="button" data-lightbox-src="/media/development/character-hair-v5-native-front.png" data-lightbox-alt="髮型第五版原生正面 NO-GO 擷取"><img src="/media/development/character-hair-v5-native-front.png" alt="髮型第五版原生正面 NO-GO 擷取" loading="lazy" /><span><strong>V5 · rejected</strong>交錯根卡、平行薄片與分離</span></button>
                     <button type="button" data-lightbox-src="/media/development/character-hair-v6-native-front.png" data-lightbox-alt="髮型第六版原生正面 NO-GO 擷取"><img src="/media/development/character-hair-v6-native-front.png" alt="髮型第六版原生正面 NO-GO 擷取" loading="lazy" /><span><strong>V6 · rejected</strong>髮際仍像頭盔、側面覆蓋稀疏</span></button>
                 </div>
-                <p>第六版原生三視圖每個視角各兩張擷取，GPU errors／warnings 為 0／0；視覺仍因頭盔式髮際、顳側平卡、稀疏與過暗淘汰。第七版已啟動完全重建髮流。</p>
+                <p>第六版原生三視圖每個視角各兩張擷取，GPU errors／warnings 為 0／0；視覺仍因頭盔式髮際、顳側平卡、稀疏與過暗淘汰，後續已重建至第九版。</p>
             </article>
             <article class="character-wip-card">
                 <header><span class="status-no">FACE V7 · WIP／NO-GO</span><h3>連續 landmark 場的臉部重塑</h3></header>
@@ -319,7 +327,7 @@
         </div>
         <div class="atlas-notes"><p><strong>Codex／Qwen</strong>Codex 是主機開發代理；Qwen3.8-27B 只按需做離線唯讀整理。兩台副機不常駐任何 AI 模型。</p><p><strong>Tailscale HTTPS／Worker</strong>加密私有網路／無視窗按需測試服務；只有收到指定測試才使用副機資源。</p><p><strong>Signed evidence</strong>簽章證據可驗證回報來源與內容未遭替換；它仍須由主機核對來源 SHA、退出碼與 receipt（測試收據）。</p><p><strong>SQL／Operations／Showcase</strong><a href="/Operations">Operations（需登入）</a>保存真實執行紀錄；Showcase 只展示完成主機驗收的重要成果。</p></div>
         <article class="qwen-boundary" aria-label="Qwen3.8-27B 按需離線輔助邊界">
-            <div><span class="micro-label">ON-DEMAND OFFLINE ASSISTANT</span><h3>Qwen3.8-27B：只分擔大量唯讀整理</h3><p>主機需要時才啟動，不等待工作、不常駐占用 GPU 或記憶體；進入 GPU 視覺擷取、GBV 或效能 benchmark 前停止，避免資源競爭與污染量測。</p></div>
+            <div><span class="micro-label">ON-DEMAND OFFLINE ASSISTANT</span><h3>Qwen3.8-27B：有條件降低重複工作成本</h3><p>主機需要時才啟動，不等待工作、不常駐占用 GPU 或記憶體。它能加速大量日誌摘要、分類與盤點並減少雲端額度，但產出仍由 Codex 核對；進入 GPU 視覺擷取、GBV 或效能 benchmark 前停止，避免資源競爭與污染量測。</p></div>
             <div class="qwen-scope">
                 <p><strong>可做</strong><span>摘要、分類、日誌整理、檔案盤點、測試清單。</span></p>
                 <p><strong>不可做</strong><span>核心 Renderer／Shader 修改、架構決策、驗收結論、Git stage／commit／push。</span></p>

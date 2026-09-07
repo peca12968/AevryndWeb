@@ -33,7 +33,9 @@ public sealed class AuthenticationContractTests
         Assert.Contains("FACE V4 · NO-GO", html);
         Assert.Contains("HAIR V5 → V6 · BOTH NO-GO", html);
         Assert.Contains("character-hair-v6-native-profile.png", html);
-        Assert.Contains("Qwen3.8-27B：只分擔大量唯讀整理", html);
+        Assert.Contains("Qwen3.8-27B：有條件降低重複工作成本", html);
+        Assert.Contains("網站可操作的捏臉／身材技術預覽", html);
+        Assert.Contains("data-gpu-shape-frame=\"10\"", html);
         Assert.Contains("MASK", html);
         Assert.Contains("ENGINE ARCHITECTURE", html); Assert.Contains("TRACEABLE RELEASES", html);
         Assert.Contains("data-release-filter", html); Assert.Contains("data-stage-filter", html);
