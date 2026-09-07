@@ -192,16 +192,17 @@
     const playButton = gpuShapeSequence.querySelector("[data-gpu-shape-play]");
     const presetButtons = [...gpuShapeSequence.querySelectorAll("[data-gpu-shape-frame]")];
     const wardrobeButtons = [...gpuShapeSequence.querySelectorAll("[data-character-wardrobe]")];
+    const pantsOverlay = gpuShapeSequence.querySelector("[data-character-pants]");
     const shapeAxes = [...gpuShapeSequence.querySelectorAll("[data-shape-axis]")];
     const frameCount = 11;
     let frame = 0, timer = null, wardrobe = "clothed";
     const renderFrame = value => {
       frame = (Number(value) + frameCount) % frameCount;
-      if (image && wardrobe === "anatomy") {
+      if (image) {
         image.src = `/media/development/character-gpu-shape-${frame}.png`;
-        image.alt = `GPU 蒙皮角色塑形測試第 ${frame + 1} 幀，共 ${frameCount} 幀`;
+        image.alt = `${wardrobe === "clothed" ? "穿著網站預覽長褲的" : "人體模式的"} GPU 蒙皮角色塑形測試第 ${frame + 1} 幀，共 ${frameCount} 幀`;
       }
-      if (caption && wardrobe === "anatomy") caption.textContent = `人體塑形測試 · 中立與十個端點 · ${frame + 1}／${frameCount}`;
+      if (caption) caption.textContent = `同一 GPU 人偶 · ${wardrobe === "clothed" ? "網站長褲預覽" : "人體塑形測試"} · ${frame + 1}／${frameCount}`;
       if (output) output.textContent = `${frame + 1} / ${frameCount}`;
       if (range) range.value = String(frame);
       presetButtons.forEach(button => button.setAttribute("aria-pressed", String(Number(button.dataset.gpuShapeFrame) === frame)));
@@ -225,14 +226,8 @@
     const setWardrobe = value => {
       wardrobe = value === "anatomy" ? "anatomy" : "clothed";
       wardrobeButtons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.characterWardrobe === wardrobe)));
-      if (wardrobe === "clothed") {
-        stop();
-        if (image) {
-          image.src = "/media/development/aevrynd-heroine-v11-front.png";
-          image.alt = "穿著完整服裝的 Aevrynd 女主角第十一版 WIP";
-        }
-        if (caption) caption.textContent = "預設穿著完整服裝 · 角色第十一版 WIP";
-      } else renderFrame(frame);
+      if (pantsOverlay) pantsOverlay.hidden = wardrobe !== "clothed";
+      renderFrame(frame);
     };
     gpuShapeSequence.querySelector("[data-gpu-shape-prev]")?.addEventListener("click", () => { stop(); renderFrame(frame - 1); });
     gpuShapeSequence.querySelector("[data-gpu-shape-next]")?.addEventListener("click", () => { stop(); renderFrame(frame + 1); });

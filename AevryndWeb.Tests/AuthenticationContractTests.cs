@@ -40,8 +40,9 @@ public sealed class AuthenticationContractTests
         Assert.Contains("可能出現未完成服裝、人體模型、局部裸露", html);
         Assert.Contains("data-age-confirm", html);
         Assert.Contains("data-character-wardrobe=\"clothed\"", html);
-        Assert.Contains("人體塑形測試（18+）", html);
+        Assert.Contains("移除長褲（18+）", html);
         Assert.Contains("data-shape-axis", html);
+        Assert.Contains("data-character-pants", html);
         Assert.Contains("MASK", html);
         Assert.Contains("ENGINE ARCHITECTURE", html); Assert.Contains("TRACEABLE RELEASES", html);
         Assert.Contains("data-release-filter", html); Assert.Contains("data-stage-filter", html);
