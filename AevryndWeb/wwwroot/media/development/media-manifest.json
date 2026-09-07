@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "publishedDate": "2026-09-05",
+  "schemaVersion": 2,
+  "publishedDate": "2026-09-07",
   "title": "Aevrynd Demo evolution",
   "disclosure": "歷史實機截圖動畫導覽（非連續遊玩錄影）",
   "continuousGameplayRecording": false,
@@ -74,10 +74,86 @@
       }
     ]
   },
+  "verifiedMilestoneImportContract": {
+    "implementationStatus": "schema-only-not-automatic-yet",
+    "sourceRef": "origin/main",
+    "sourceMode": "read-only",
+    "acceptOnly": "pushed commit with current-source fresh receipt and immutable manifest containing SHA-256 evidence",
+    "requiredFields": [
+      "engineCommit",
+      "sourceRef",
+      "receiptPath",
+      "receiptSha256",
+      "evidenceFiles",
+      "evidenceSha256",
+      "validationResult",
+      "validatedAt"
+    ],
+    "rejectSources": [
+      "GitHub Issue text",
+      "commit subject without receipt",
+      "uncommitted working tree",
+      "build or test artifact without a sealed manifest",
+      "failed, stale or source-mismatched receipt"
+    ],
+    "failurePolicy": "fail-closed and keep the last verified Showcase state",
+    "allowedUpdates": [
+      "authoritative visual score and rubric",
+      "verified comparison images",
+      "Normal and GBV validation summary",
+      "known issues",
+      "published release state"
+    ]
+  },
+  "interactiveCaptureSequences": {
+    "sceneMatrix": {
+      "kind": "fixed-camera-frame-sequence",
+      "continuousGameplayRecording": false,
+      "engineCommit": "d6e097677c1cedab868d7239aae7d461379fd31c",
+      "sourceRoot": "D:/Download/Aevrynd/bld/visual-score-40-authority-fresh-20260907/bin/Release/gameplay-captures-normal",
+      "items": [
+        { "view": "first", "time": "day", "file": "visual-score-40-first-day.png", "width": 1280, "height": 720, "sha256": "4eddffb2e0638586203ecb380377f7171bbb6130f7cb8e1cc00652396a276673" },
+        { "view": "first", "time": "dusk", "file": "visual-score-40-first-dusk.png", "width": 1280, "height": 720, "sha256": "a7b3773c75386499dcf756af71b53ad3c90dc804c9c1f7387e08ce3a4a7c880a" },
+        { "view": "first", "time": "night", "file": "visual-score-40-first-night.png", "width": 1280, "height": 720, "sha256": "36bb30427cdf2051b14e5d4d40603846726672a80833590b8558ee89d9d377e5" },
+        { "view": "third", "time": "day", "file": "visual-score-40-third-day.png", "width": 1280, "height": 720, "sha256": "44f011787dec52298112cd3fa4b6b06c3950e8f9b6bafbd712f01eb8ab3b4c8e" },
+        { "view": "third", "time": "dusk", "file": "visual-score-40-third-dusk.png", "width": 1280, "height": 720, "sha256": "b0394e7a2223280e5ceba6135a9cb80bf94cccba3cf2d791898c28f6a3449f90" },
+        { "view": "third", "time": "night", "file": "visual-score-40-third-night.png", "width": 1280, "height": 720, "sha256": "351010de7e1f3fa6c770b46f7248b05a18ebca4c796ef229b3cd7b43dd4ced9b" },
+        { "view": "god", "time": "day", "file": "visual-score-40-god-day.png", "width": 1280, "height": 720, "sha256": "8f8a34f365a831fea599b8cfa308e112e5405c1032ae9781e102175733ba4070" },
+        { "view": "god", "time": "dusk", "file": "visual-score-40-god-dusk.png", "width": 1280, "height": 720, "sha256": "84027f724644cb9ddd38da06aed5e5615ec18b8b7eabb11f2b9226959b494d94" },
+        { "view": "god", "time": "night", "file": "visual-score-40-god-night.png", "width": 1280, "height": 720, "sha256": "b5d192e731dae79ce0cf0ab44173bf6955d198cf9982e34efe5f595170124e94" }
+      ]
+    },
+    "characterWalk": {
+      "kind": "same-camera-test-frame-sequence",
+      "continuousGameplayRecording": false,
+      "character": "F2",
+      "engineCommit": "d6e097677c1cedab868d7239aae7d461379fd31c",
+      "sourceRoot": "D:/Download/Aevrynd/bld/visual-score-40-authority-fresh-20260907/test-artifacts/character-visual-quality",
+      "items": [
+        { "frame": 0, "file": "character-f2-walk-0.png", "width": 512, "height": 512, "sha256": "13d7daa285c75d6c21b00dc11e8b8fe159ff13565d0b2e678738cdf5ca7afdf2" },
+        { "frame": 1, "file": "character-f2-walk-1.png", "width": 512, "height": 512, "sha256": "f2ad7d1a1f3bcc3608cf0fe3d258456a27840404be242467f9214bc7ee3ba55d" },
+        { "frame": 2, "file": "character-f2-walk-2.png", "width": 512, "height": 512, "sha256": "f0e9f95605cd1c99c89c551a772c302498d3ad89526ab901487912b32455cf6b" },
+        { "frame": 3, "file": "character-f2-walk-3.png", "width": 512, "height": 512, "sha256": "cb650809451b356d28527089cfeced20a1d59aa668768c72516f30b1103d6d3d" },
+        { "frame": 4, "file": "character-f2-walk-4.png", "width": 512, "height": 512, "sha256": "991c4df56ef061423959d6696fbe5b0ef10673e061f71ecfd5f61dbdbcee1e49" },
+        { "frame": 5, "file": "character-f2-walk-5.png", "width": 512, "height": 512, "sha256": "955779ec5507e4abe3731c037cf0a01b6fd31251e94139712659401008838998" },
+        { "frame": 6, "file": "character-f2-walk-6.png", "width": 512, "height": 512, "sha256": "675622a611f3ffae18c4f24aa7e6a793456c392321708dcbb2b5c568d6b863d3" },
+        { "frame": 7, "file": "character-f2-walk-7.png", "width": 512, "height": 512, "sha256": "e2d88dbf17181a4f095e6eea91ede881528ba79eaf1d302b8abda0f90cd66013" }
+      ]
+    }
+  },
   "heroineWip": {
     "version": "mpfb-v11",
     "status": "technical-pass-visual-no-go",
     "integrationAllowed": false,
+    "artDirectionReference": {
+      "file": "aevrynd-heroine-art-direction-v14.png",
+      "kind": "user-directed-concept-reference-not-engine-capture",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "c71dbac49265fb43b9cf72bbbb64a1d83b3e6850ee51b2aebdf658e35147ae26",
+      "integrationAllowed": false,
+      "countsTowardVisualScore": false
+    },
     "heightMeters": 1.72,
     "rigBones": 53,
     "license": "CC0 source assets through the official MPFB/MakeHuman asset system",
@@ -172,6 +248,46 @@
           "sha256": "243f03aad9a7a1f32a5997663a3af7e781762f190eb6d6995c295440ad760131"
         }
       ]
+    },
+    {
+      "id": "visual-score-40-nine-shot-tour",
+      "file": "visual-score-40-nine-shot-tour.mp4",
+      "poster": "visual-score-40-first-day.png",
+      "mimeType": "video/mp4",
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "durationSeconds": 13.5,
+      "frameCount": 405,
+      "audio": false,
+      "fastStart": true,
+      "continuousGameplayRecording": false,
+      "sequenceKind": "nine-fixed-camera-test-shots",
+      "sha256": "4f7fb6cf23f520269d29bd4d651236b94d02d097908e8f76834834b42c22389b",
+      "posterSha256": "4eddffb2e0638586203ecb380377f7171bbb6130f7cb8e1cc00652396a276673",
+      "source": "interactiveCaptureSequences.sceneMatrix"
+    },
+    {
+      "id": "character-f2-walk-cycle",
+      "file": "character-f2-walk-cycle.mp4",
+      "poster": "character-f2-walk-0.png",
+      "mimeType": "video/mp4",
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "durationSeconds": 6.26,
+      "frameCount": 188,
+      "audio": false,
+      "fastStart": true,
+      "continuousGameplayRecording": false,
+      "sequenceKind": "eight-same-camera-character-test-frames",
+      "sha256": "067f002c3737155c05c6defd11d0054e9595c79c448f2ae80050b8b55ea65729",
+      "posterSha256": "13d7daa285c75d6c21b00dc11e8b8fe159ff13565d0b2e678738cdf5ca7afdf2",
+      "source": "interactiveCaptureSequences.characterWalk"
     }
   ]
 }

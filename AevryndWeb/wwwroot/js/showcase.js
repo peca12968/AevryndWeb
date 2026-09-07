@@ -32,6 +32,129 @@
     applyZoom();
   }));
 
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  document.querySelectorAll("[data-comparison]").forEach(comparison => {
+    const card = comparison.closest(".visual-pair");
+    const range = card?.querySelector("[data-comparison-range]");
+    const output = card?.querySelector("[data-comparison-output]");
+    if (!range) return;
+    const updateComparison = value => {
+      const percentage = Math.max(0, Math.min(100, Number(value)));
+      range.value = String(percentage);
+      comparison.style.setProperty("--reveal", `${percentage}%`);
+      if (output) output.textContent = `${percentage}% 顯示新版`;
+    };
+    const updateFromPointer = event => {
+      const bounds = comparison.getBoundingClientRect();
+      updateComparison(Math.round(((event.clientX - bounds.left) / bounds.width) * 100));
+    };
+    let dragging = false;
+    comparison.addEventListener("pointerdown", event => {
+      dragging = true;
+      comparison.setPointerCapture?.(event.pointerId);
+      updateFromPointer(event);
+    });
+    comparison.addEventListener("pointermove", event => { if (dragging) updateFromPointer(event); });
+    comparison.addEventListener("pointerup", event => {
+      dragging = false;
+      comparison.releasePointerCapture?.(event.pointerId);
+    });
+    comparison.addEventListener("pointercancel", () => { dragging = false; });
+    range.addEventListener("input", () => updateComparison(range.value));
+    updateComparison(range.value);
+  });
+
+  const sceneExplorer = document.querySelector("[data-scene-explorer]");
+  if (sceneExplorer) {
+    const image = sceneExplorer.querySelector("[data-scene-image]");
+    const caption = sceneExplorer.querySelector("[data-scene-caption]");
+    const viewButtons = [...sceneExplorer.querySelectorAll("[data-scene-view]")];
+    const timeButtons = [...sceneExplorer.querySelectorAll("[data-scene-time]")];
+    const playButton = sceneExplorer.querySelector("[data-scene-play]");
+    const views = ["first", "third", "god"];
+    const times = ["day", "dusk", "night"];
+    const viewLabels = { first: "第一人稱", third: "第三人稱", god: "上帝視角" };
+    const timeLabels = { day: "日間", dusk: "黃昏", night: "夜間" };
+    let currentView = "first", currentTime = "day", sceneTimer = null;
+    const renderScene = () => {
+      if (!image || !caption) return;
+      image.src = `/media/development/visual-score-40-${currentView}-${currentTime}.png`;
+      image.alt = `${viewLabels[currentView]}${timeLabels[currentTime]}固定鏡頭實機擷取`;
+      const position = views.indexOf(currentView) * times.length + times.indexOf(currentTime) + 1;
+      caption.textContent = `${viewLabels[currentView]} · ${timeLabels[currentTime]} · 固定鏡頭 ${position}／9`;
+      viewButtons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.sceneView === currentView)));
+      timeButtons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.sceneTime === currentTime)));
+    };
+    const stopScenePlayback = () => {
+      if (sceneTimer) window.clearInterval(sceneTimer);
+      sceneTimer = null;
+      playButton?.setAttribute("aria-pressed", "false");
+      if (playButton && !reducedMotion) playButton.textContent = "播放三時段";
+    };
+    const startScenePlayback = () => {
+      if (reducedMotion || sceneTimer) return;
+      times.forEach(time => { const preload = new Image(); preload.src = `/media/development/visual-score-40-${currentView}-${time}.png`; });
+      playButton?.setAttribute("aria-pressed", "true");
+      if (playButton) playButton.textContent = "暫停三時段";
+      sceneTimer = window.setInterval(() => {
+        currentTime = times[(times.indexOf(currentTime) + 1) % times.length];
+        renderScene();
+      }, 2200);
+    };
+    viewButtons.forEach(button => button.addEventListener("click", () => { currentView = button.dataset.sceneView; renderScene(); }));
+    timeButtons.forEach(button => button.addEventListener("click", () => { currentTime = button.dataset.sceneTime; renderScene(); }));
+    playButton?.addEventListener("click", () => { if (sceneTimer) stopScenePlayback(); else startScenePlayback(); });
+    if (playButton && reducedMotion) {
+      playButton.disabled = true;
+      playButton.textContent = "減少動態模式";
+      playButton.title = "系統偏好減少動態，請使用日間、黃昏與夜間按鈕手動切換。";
+    }
+    document.addEventListener("visibilitychange", () => { if (document.hidden) stopScenePlayback(); });
+    window.addEventListener("pagehide", stopScenePlayback);
+    renderScene();
+  }
+
+  const characterSequence = document.querySelector("[data-character-sequence]");
+  if (characterSequence) {
+    const image = characterSequence.querySelector("[data-character-image]");
+    const caption = characterSequence.querySelector("[data-character-caption]");
+    const output = characterSequence.querySelector("[data-character-output]");
+    const range = characterSequence.querySelector("[data-character-range]");
+    const playButton = characterSequence.querySelector("[data-character-play]");
+    let frame = 0, characterTimer = null;
+    const renderCharacterFrame = value => {
+      frame = (Number(value) + 8) % 8;
+      if (image) {
+        image.src = `/media/development/character-f2-walk-${frame}.png`;
+        image.alt = `F2 步行測試第 ${frame + 1} 幀，共 8 幀`;
+      }
+      if (caption) caption.textContent = `測試幀 ${frame + 1}／8`;
+      if (output) output.textContent = `${frame + 1} / 8`;
+      if (range) range.value = String(frame);
+    };
+    const stopCharacterPlayback = () => {
+      if (characterTimer) window.clearInterval(characterTimer);
+      characterTimer = null;
+      playButton?.setAttribute("aria-pressed", "false");
+      if (playButton) playButton.textContent = "播放逐幀";
+    };
+    const startCharacterPlayback = () => {
+      if (characterTimer) return;
+      for (let index = 0; index < 8; index += 1) { const preload = new Image(); preload.src = `/media/development/character-f2-walk-${index}.png`; }
+      playButton?.setAttribute("aria-pressed", "true");
+      if (playButton) playButton.textContent = "暫停逐幀";
+      characterTimer = window.setInterval(() => renderCharacterFrame(frame + 1), reducedMotion ? 900 : 420);
+    };
+    characterSequence.querySelector("[data-character-prev]")?.addEventListener("click", () => { stopCharacterPlayback(); renderCharacterFrame(frame - 1); });
+    characterSequence.querySelector("[data-character-next]")?.addEventListener("click", () => { stopCharacterPlayback(); renderCharacterFrame(frame + 1); });
+    playButton?.addEventListener("click", () => { if (characterTimer) stopCharacterPlayback(); else startCharacterPlayback(); });
+    range?.addEventListener("input", () => { stopCharacterPlayback(); renderCharacterFrame(range.value); });
+    document.addEventListener("visibilitychange", () => { if (document.hidden) stopCharacterPlayback(); });
+    window.addEventListener("pagehide", stopCharacterPlayback);
+    renderCharacterFrame(0);
+  }
+
   const lightbox = document.querySelector("#showcaseLightbox");
   const lightboxImage = lightbox?.querySelector("figure img");
   const lightboxCaption = lightbox?.querySelector("figcaption");
@@ -43,8 +166,8 @@
     lightboxIndex = (index + lightboxTriggers.length) % lightboxTriggers.length;
     const trigger = lightboxTriggers[lightboxIndex];
     lightboxImage.src = trigger.dataset.lightboxSrc;
-    lightboxImage.alt = trigger.dataset.lightboxAlt || "角色預覽";
-    lightboxCaption.textContent = trigger.dataset.lightboxAlt || "角色預覽";
+    lightboxImage.alt = trigger.dataset.lightboxAlt || "展示影像";
+    lightboxCaption.textContent = trigger.dataset.lightboxAlt || "展示影像";
   };
   const openLightbox = (trigger, index) => {
     if (!lightbox) return;
@@ -71,5 +194,12 @@
     if (event.key === "Escape") closeLightbox();
     if (event.key === "ArrowLeft") showLightboxImage(lightboxIndex - 1);
     if (event.key === "ArrowRight") showLightboxImage(lightboxIndex + 1);
+    if (event.key === "Tab") {
+      const controls = [...lightbox.querySelectorAll("button:not([disabled])")];
+      if (controls.length === 0) return;
+      const first = controls[0], last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    }
   });
 })();
