@@ -103,7 +103,9 @@ app.Use(async (context, next) =>
     await next();
 });
 app.UseHttpsRedirection();
-app.UseStaticFiles(new StaticFileOptions { OnPrepareResponse = ctx => { ctx.Context.Response.Headers["X-Content-Type-Options"] = "nosniff"; ctx.Context.Response.Headers["Cache-Control"] = "public,max-age=3600"; } });
+var staticContentTypes = new Microsoft.AspNetCore.StaticFiles.FileExtensionContentTypeProvider();
+staticContentTypes.Mappings[".glb"] = "model/gltf-binary";
+app.UseStaticFiles(new StaticFileOptions { ContentTypeProvider = staticContentTypes, OnPrepareResponse = ctx => { ctx.Context.Response.Headers["X-Content-Type-Options"] = "nosniff"; ctx.Context.Response.Headers["Cache-Control"] = "public,max-age=3600"; } });
 app.UseWebSockets(new WebSocketOptions { KeepAliveInterval = TimeSpan.FromSeconds(30) });
 app.UseRouting(); app.UseAuthentication(); app.UseAuthorization();
 app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");

@@ -1,5 +1,8 @@
 using System.Net;
 using System.Net.Http.Json;
+using System.Runtime.Versioning;
+using System.Security.AccessControl;
+using System.Security.Principal;
 using System.Text.Json;
 using AevryndWeb.Security;
 using Microsoft.AspNetCore.Mvc.Testing;
@@ -19,6 +22,7 @@ public sealed class OperationsScheduleIntegrationTests
     {
         var directory=Path.Combine(Path.GetTempPath(),"aevrynd-schedule-integration-"+Guid.NewGuid().ToString("N"));
         Directory.CreateDirectory(directory);
+        if (OperatingSystem.IsWindows()) SecureDirectory(directory);
         var path=Path.Combine(directory,"queue.json");
         var now=DateTimeOffset.UtcNow;
         var tasks=new[]{"local","taichung","taoyuan"}.Select((node,index)=>new {
@@ -40,7 +44,8 @@ public sealed class OperationsScheduleIntegrationTests
         var page=await client.GetAsync("/Operations");
         var html=WebUtility.HtmlDecode(await page.Content.ReadAsStringAsync());
         Assert.Equal(HttpStatusCode.OK,page.StatusCode);
-        Assert.Contains("三台主機即時任務",html);
+        Assert.Contains("來源工作摘要（資料遷移中）",html);
+        Assert.DoesNotContain("三台主機即時任務",html);
         Assert.Contains("過往任務",html);
         Assert.DoesNotContain("id=\"activeTitle\"",html);
         Assert.Equal(3, System.Text.RegularExpressions.Regex.Matches(html, "data-schedule-list tabindex=\"0\" role=\"region\"").Count);
@@ -60,5 +65,16 @@ public sealed class OperationsScheduleIntegrationTests
         foreach (var work in json.GetProperty("activeWork").EnumerateArray())
             Assert.Contains(visibleTasks, item => item.GetProperty("id").GetString() == work.GetProperty("name").GetString());
         Assert.Contains("no-store",response.Headers.CacheControl!.ToString());
+    }
+
+    [SupportedOSPlatform("windows")]
+    private static void SecureDirectory(string path)
+    {
+        var security = new DirectorySecurity();
+        security.SetAccessRuleProtection(true, false);
+        var inheritance = InheritanceFlags.ContainerInherit | InheritanceFlags.ObjectInherit;
+        foreach (var sid in new[] { WindowsIdentity.GetCurrent().User!, new SecurityIdentifier(WellKnownSidType.LocalSystemSid, null), new SecurityIdentifier(WellKnownSidType.BuiltinAdministratorsSid, null) })
+            security.AddAccessRule(new FileSystemAccessRule(sid, FileSystemRights.FullControl, inheritance, PropagationFlags.None, AccessControlType.Allow));
+        new DirectoryInfo(path).SetAccessControl(security);
     }
 }

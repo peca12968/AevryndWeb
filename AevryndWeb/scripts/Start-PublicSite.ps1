@@ -12,29 +12,42 @@ $paths = Get-PublicSitePaths
 if (-not [AevryndWebCredentialProcess]::Available($script:NgrokCredentialTarget, 20, 512)) {
     throw 'Ngrok credential is unavailable for the current Windows user.'
 }
-try { $null = Assert-IisConfiguration -Paths $paths } catch {
-    throw "IIS site '$script:IisSiteName' is not started and healthy on 127.0.0.1:$script:PublicSitePort. The public-site task will not launch a second ASP.NET process."
+$iisError = 'IIS configuration has not been verified yet.'
+for ($attempt = 0; $attempt -lt 60; $attempt++) {
+    try {
+        $null = Assert-IisConfiguration -Paths $paths
+        if (Test-PublicSiteLocal) { $iisError = $null; break }
+        $iisError = 'The IIS readiness payload did not satisfy the production credential contract.'
+    } catch { $iisError = $_.Exception.Message }
+    Start-Sleep -Milliseconds 1000
+}
+if ($iisError) {
+    throw "IIS site '$script:IisSiteName' did not become healthy on exact origin http://127.0.0.1:$script:PublicSitePort within 60 seconds. $iisError"
 }
 
-$ngrokProcess = $null
 $state = Get-PublicSiteRuntimeState
-if ($null -ne $state) { $ngrokProcess = Get-VerifiedPublicSiteProcess -ProcessId ([int]$state.ngrokPid) -Paths $paths -ExpectedHash ([string]$state.ngrokImageSha256) }
-if ($null -eq $ngrokProcess) {
-    $existing = @(Get-CimInstance Win32_Process -Filter "Name='ngrok.exe'" -ErrorAction SilentlyContinue)
-    if ($existing.Count -gt 0) {
-        if ($existing.Count -ne 1) { throw 'An unrelated ngrok process prevents deterministic public routing.' }
-        $ngrokProcess = Get-VerifiedPublicSiteProcess -ProcessId ([int]$existing[0].ProcessId) -Paths $paths -UpstreamPort 8080
-        if ($null -eq $ngrokProcess) { throw 'The existing ngrok executable, domain, or upstream is outside the managed contract.' }
-    } else {
-        $ngrokProcess = [AevryndWebCredentialProcess]::StartNgrok($paths.Ngrok, $script:NgrokCredentialTarget)
-    }
+$resolution = Resolve-PublicSiteStartProcess -RuntimeState $state -DomainProcesses @(Get-PublicSiteDomainProcesses) `
+    -VerifyStateProcess { param($candidate) Get-VerifiedPublicSiteProcess -ProcessId ([int]$candidate.ngrokPid) -Paths $paths -ExpectedHash ([string]$candidate.ngrokImageSha256) } `
+    -VerifyDomainProcess { param($candidate) Get-VerifiedPublicSiteProcess -ProcessId ([int]$candidate.ProcessId) -Paths $paths -UpstreamPort 8080 } `
+    -StartProcess { [AevryndWebCredentialProcess]::StartNgrok($paths.NgrokImage, $script:NgrokCredentialTarget) }
+$ngrokProcess = $resolution.Process
+
+$processId = if ($ngrokProcess.PSObject.Properties.Name -contains 'ProcessId') { [int]$ngrokProcess.ProcessId } else { [int]$ngrokProcess.Id }
+$verifiedNgrok = $null
+for ($attempt = 0; $attempt -lt 20 -and $null -eq $verifiedNgrok; $attempt++) {
+    $verifiedNgrok = Get-VerifiedPublicSiteProcess -ProcessId $processId -Paths $paths -UpstreamPort 8080
+    if ($null -eq $verifiedNgrok) { Start-Sleep -Milliseconds 250 }
+}
+if ($null -eq $verifiedNgrok) {
+    if ($resolution.Launched) { $failed=Get-Process -Id $processId -ErrorAction SilentlyContinue; if ($null -ne $failed) { $failed.Kill($true); $null=$failed.WaitForExit(10000) } }
+    throw 'The launched ngrok process did not match the trusted image and exact IIS origin arguments.'
 }
 
 for ($attempt = 0; $attempt -lt 60 -and -not (Test-PublicSiteExternal); $attempt++) { Start-Sleep -Milliseconds 500 }
-if (-not (Test-PublicSiteExternal)) { throw 'The public ngrok endpoint did not expose the IIS AevryndWeb instance.' }
-$processId = if ($ngrokProcess.PSObject.Properties.Name -contains 'ProcessId') { [int]$ngrokProcess.ProcessId } else { [int]$ngrokProcess.Id }
-$verifiedNgrok = Get-VerifiedPublicSiteProcess -ProcessId $processId -Paths $paths -UpstreamPort 8080
-if ($null -eq $verifiedNgrok) { throw 'The launched ngrok process did not match trusted AppX image, hash, and exact arguments.' }
+if (-not (Test-PublicSiteExternal)) {
+    if ($resolution.Launched) { $failed=Get-Process -Id $processId -ErrorAction SilentlyContinue; if ($null -ne $failed) { $failed.Kill($true); $null=$failed.WaitForExit(10000) } }
+    throw 'The public ngrok endpoint did not expose the IIS AevryndWeb instance.'
+}
 Write-PublicSiteRuntimeState -NgrokPid $processId -NgrokImageSha256 $paths.NgrokHash
 if (Test-Path -LiteralPath $diagnosticPath) { Remove-Item -LiteralPath $diagnosticPath -Force }
 Write-Output "IIS AevryndWeb is healthy at https://$script:PublicSiteDomain/"

@@ -2,7 +2,7 @@
 @{ ViewData["Title"] = "遠端控制台"; }
 <section class="remote-shell" data-enabled="@(Model.LocallyEnabled ? "true" : "false")" data-active="@(Model.GrantActive ? "true" : "false")" data-capabilities="@string.Join(',', Model.Capabilities)" data-grant-expires="@(Model.GrantExpiresAt?.ToString("O"))">
     <header class="dashboard-head">
-        <div><p class="eyebrow"><span></span> REMOTE CONSOLE</p><h1>主電腦遠端工作階段</h1><p>所有能力均由本機短效開關與第二次郵件驗證共同限制。</p></div>
+        <div><p class="eyebrow"><span></span> REMOTE CONSOLE</p><h1>管理者遠端操作主電腦</h1><p>本頁用於管理者操作主電腦桌面，不是台中／桃園的測試派送入口。所有能力仍由既有本機開關及第二次郵件驗證限制；這次文案更新不增加任何操作權限。</p></div>
         <a class="button button-quiet" asp-controller="Home" asp-action="Portal">返回控制台</a>
     </header>
     <aside class="remote-safety">
@@ -29,7 +29,7 @@
         </article>
         <article id="textPanel" class="remote-input-card">
             <span class="micro-label">INPUT.TEXT</span><h2>傳送文字</h2>
-            <p>僅傳送 NFC 正規化的一般 Unicode 文字；控制、隱藏與方向覆寫字元會被拒絕。</p>
+            <p>文字會以 NFC（統一字元組合形式）正規化後傳送；控制、隱藏與方向覆寫字元會被拒絕。請先確認主電腦前景視窗，避免輸入到不預期的位置。</p>
             <form id="remoteTextForm"><label for="remoteText">文字內容</label><textarea id="remoteText" maxlength="512" rows="6" autocomplete="off" spellcheck="false" required></textarea><button class="button button-primary" type="submit">傳送至前景視窗</button></form>
             <p id="remoteTextStatus" class="form-status" aria-live="polite"></p>
         </article>
@@ -38,7 +38,7 @@
             <div id="keyboardCapture" class="keyboard-capture" tabindex="0">點此接收鍵盤事件</div><p id="keyboardStatus" class="form-status" aria-live="polite"></p>
         </article>
         <article class="remote-input-card">
-            <span class="micro-label">SHELL.EXECUTE</span><h2>Shell</h2><p>目前保持安全關閉。必須先完成獨立低權限 Windows 帳號 broker、固定 pwsh 雜湊、Job Object 與秘密隔離驗證，網站程序不會直接啟動命令。</p>
+            <span class="micro-label">SHELL.EXECUTE</span><h2>命令列操作（Shell）</h2><p>目前關閉。需先完成低權限代理程序、PowerShell 程式完整性、子程序限制與機密隔離驗證；網站程序不會直接啟動命令。副機固定測試服務與此功能分開。</p>
         </article>
     </div>
     <button id="revokeRemoteGrant" class="button button-quiet remote-stop" type="button" hidden="@(!Model.GrantActive ? "hidden" : null)">立即撤銷此網站控制授權</button>

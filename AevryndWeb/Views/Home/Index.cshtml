@@ -1,15 +1,15 @@
-@{ ViewData["Title"] = "AI 控制中心"; }
+@{ ViewData["Title"] = "引擎開發與測試入口"; }
 
 <section class="login-shell">
     <div class="hero-panel">
-        <div class="eyebrow"><span></span> DISTRIBUTED INTELLIGENCE</div>
-        <h1>讓每一台電腦，<br /><em>成為同一個智慧核心。</em></h1>
-        <p class="hero-copy">集中調度 Aevrynd 開發進度、AI 工作與運算資源。無論節點位於何處，所有狀態都在一個安全介面中清楚呈現。</p>
+        <div class="eyebrow"><span></span> ENGINE DEVELOPMENT &amp; EVIDENCE</div>
+        <h1>讓每一次改善，<br /><em>都能在遊戲畫面中看見。</em></h1>
+        <p class="hero-copy">Aevrynd 專注原生 2.5D／3D 遊戲引擎。主機統籌開發與驗收，台中、桃園按需提供測試運算資源。近期目標：以相同鏡頭比較，將完整 Demo 視覺由 34／100 提升至至少 70／100；v1.4 尚未發布。</p>
 
         <div class="network-card" aria-label="三台運算節點概況">
             <div class="network-head">
-                <div><span class="micro-label">PRIVATE NETWORK</span><strong>分散式節點網路</strong></div>
-                <span class="network-live"><i></i> ONLINE</span>
+                <div><span class="micro-label">RESOURCE TOPOLOGY</span><strong>三台主機分工示意</strong></div>
+                <span class="network-live"><i></i> 架構示意</span>
             </div>
             <div class="node-flow" aria-hidden="true"><span></span><span></span></div>
             <div class="node-grid">
@@ -20,16 +20,16 @@
                 </article>
                 <article class="node-card">
                     <div class="node-icon node-icon-secondary"><span></span></div>
-                    <div><small>QWEN WORKER</small><strong>台中</strong></div>
+                    <div><small>ON-DEMAND TESTING</small><strong>台中測試資源</strong></div>
                     <i class="node-status"></i>
                 </article>
                 <article class="node-card">
                     <div class="node-icon node-icon-tertiary"><span></span></div>
-                    <div><small>QWEN WORKER</small><strong>桃園</strong></div>
+                    <div><small>ON-DEMAND TESTING</small><strong>桃園測試資源</strong></div>
                     <i class="node-status"></i>
                 </article>
             </div>
-            <div class="network-foot"><span>端對端安全調度</span><span>3 COMPUTE NODES</span></div>
+            <div class="network-foot"><span>非即時在線狀態；不啟動副機 AI 輪詢</span><span>3 COMPUTE NODES</span></div>
         </div>
     </div>
 
@@ -39,7 +39,7 @@
             <span class="auth-symbol" aria-hidden="true"><span></span></span>
             <div><p>SECURE ACCESS</p><h2 id="login-title">登入控制中心</h2></div>
         </div>
-        <p class="auth-intro">使用已授權信箱取得一次性驗證碼，安全進入您的私有 AI 工作空間。</p>
+        <p class="auth-intro">公開開發展示不需登入。已授權信箱可取得一次性驗證碼（OTP），查看主機與工作紀錄；遠端操作僅限管理者及既有額外授權。</p>
 
         <form id="loginForm" class="auth-form">
             <div class="field-group">

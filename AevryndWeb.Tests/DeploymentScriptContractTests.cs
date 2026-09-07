@@ -27,7 +27,9 @@ public sealed class DeploymentScriptContractTests
         Assert.Contains("LocalPort 8792", common, StringComparison.Ordinal);
         Assert.Contains("LocalAddress -cne '127.0.0.1'", common, StringComparison.Ordinal);
         Assert.Contains("process.ExecutablePath", common, StringComparison.Ordinal);
-        Assert.Contains("arguments.Count -ne 2", common, StringComparison.Ordinal);
+        Assert.Contains("arguments.Count -eq 2", common, StringComparison.Ordinal);
+        Assert.Contains("arguments.Count -eq 4", common, StringComparison.Ordinal);
+        Assert.Contains("http://127.0.0.1:8792", common, StringComparison.Ordinal);
         Assert.Contains("Paths.Assembly", common, StringComparison.Ordinal);
     }
 
@@ -69,7 +71,7 @@ public sealed class DeploymentScriptContractTests
         var backup = install.IndexOf("Invoke-AppCmdChecked @('add','backup',$iisBackup); $iisBackupCreated = $true; $rollbackRequired = $true", StringComparison.Ordinal);
         var catchBlock = install.IndexOf("} catch {", backup, StringComparison.Ordinal);
         var preBackupGuard = install.IndexOf("if (-not $rollbackRequired) { throw $deploymentError }", catchBlock, StringComparison.Ordinal);
-        var rollbackStop = install.IndexOf("Stop-ProvenNgrok", preBackupGuard, StringComparison.Ordinal);
+        var rollbackStop = install.IndexOf("Invoke-PublicSiteRollbackTransaction", preBackupGuard, StringComparison.Ordinal);
 
         Assert.True(backup >= 0 && catchBlock > backup && preBackupGuard > catchBlock && rollbackStop > preBackupGuard);
         Assert.Contains("$rollbackRequired = $false", install, StringComparison.Ordinal);
@@ -88,12 +90,11 @@ public sealed class DeploymentScriptContractTests
     [Fact]
     public void NgrokStopRequiresRuntimeOwnershipOrExactIisUpstream()
     {
-        var install = Read("Install-PublicSite.ps1"); var stop = Read("Stop-PublicSite.ps1");
-        Assert.Contains("Get-PublicSiteRuntimeState -AllowLegacy", install, StringComparison.Ordinal);
+        var install = Read("Install-PublicSite.ps1"); var stop = Read("Stop-PublicSite.ps1"); var common = Read("PublicSite.Common.ps1");
+        Assert.Contains("Get-PublicSiteRuntimeState -AllowLegacy", common, StringComparison.Ordinal);
         Assert.Contains("Get-VerifiedPublicSiteProcess", install, StringComparison.Ordinal);
         Assert.Contains("-UpstreamPort 8080", install, StringComparison.Ordinal);
-        Assert.Contains("unexpected upstream or executable", install, StringComparison.Ordinal);
-        Assert.Contains("unexpected executable or upstream; nothing was stopped", stop, StringComparison.Ordinal);
+        Assert.Contains("unexpected executable or upstream; nothing was stopped", common, StringComparison.Ordinal);
         Assert.DoesNotContain("Stop-Process -Name", install, StringComparison.OrdinalIgnoreCase);
         Assert.DoesNotContain("Stop-Process -Name", stop, StringComparison.OrdinalIgnoreCase);
     }
@@ -115,7 +116,7 @@ public sealed class DeploymentScriptContractTests
     {
         if (!OperatingSystem.IsWindows()) return;
         var common = Path.Combine(Project, "scripts", "PublicSite.Common.ps1");
-        var command = $". '{common.Replace("'", "''")}'; Add-PublicSiteCredentialInterop; $paths=Get-PublicSitePaths; $candidate=@(Get-CimInstance Win32_Process -Filter \"Name='ngrok.exe'\" | Where-Object {{$_.CommandLine.Contains('--domain='+$script:PublicSiteDomain,[StringComparison]::Ordinal) -and $_.CommandLine.Contains('http://127.0.0.1:8792',[StringComparison]::Ordinal)}}); if($candidate.Count-eq0){{exit 0}}; if($candidate.Count-ne1){{exit 4}}; if($null-eq(Get-VerifiedPublicSiteProcess -ProcessId $candidate[0].ProcessId -Paths $paths -UpstreamPort 8792)){{exit 5}}";
+        var command = $". '{common.Replace("'", "''")}'; Add-PublicSiteCredentialInterop; $paths=Get-PublicSitePaths; $candidate=@(Get-CimInstance Win32_Process -Filter \"Name='ngrok.exe'\" | Where-Object {{ $_.CommandLine -and $_.CommandLine.Contains('--domain='+$script:PublicSiteDomain,[StringComparison]::Ordinal) -and $_.CommandLine.Contains('http://127.0.0.1:8792',[StringComparison]::Ordinal)}}); if($candidate.Count-eq0){{exit 0}}; if($candidate.Count-ne1){{exit 4}}; if($null-eq(Get-VerifiedPublicSiteProcess -ProcessId $candidate[0].ProcessId -Paths $paths -UpstreamPort 8792)){{exit 5}}";
         var encoded = Convert.ToBase64String(System.Text.Encoding.Unicode.GetBytes(command));
         Assert.Equal(0, Run(@"C:\Program Files\PowerShell\7\pwsh.exe", $"-NoProfile -EncodedCommand {encoded}").ExitCode);
     }

@@ -1,5 +1,6 @@
 @{ ViewData["Title"] = "開發展示"; }
 <link rel="stylesheet" href="~/css/showcase.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/character-editor.css" asp-append-version="true" />
 <div class="showcase-age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title" aria-describedby="age-gate-description" data-age-gate>
     <div class="showcase-age-card">
         <p class="micro-label">DEVELOPMENT CONTENT NOTICE</p>
@@ -43,8 +44,8 @@
                 <div><span class="micro-label">UNSCORED WIP / 03</span><h3>九個固定鏡頭巡覽</h3><p>第一人稱、第三人稱與上帝視角各自切換日間、黃昏與夜間；這組候選尚未取得新的權威評分。</p><span class="motion-label">九鏡頭測試影格影片 · 非連續遊玩錄影</span></div>
             </article>
             <article class="motion-card">
-                <video controls playsinline preload="metadata" poster="/media/development/character-f2-walk-0.png" aria-label="F2 角色八幀同鏡位步行測試影片"><source src="/media/development/character-f2-walk-cycle.mp4" type="video/mp4" />你的瀏覽器不支援此影片。</video>
-                <div><span class="micro-label">CHARACTER / 04</span><h3>逐幀檢查步行週期</h3><p>將八張同鏡位角色測試影格循環播放，方便觀察腳步相位、身體重心與姿勢連續性。</p><span class="motion-label">八幀步行測試影片 · 非即時角色動畫</span></div>
+                <video controls playsinline preload="metadata" poster="/media/development/character-f2-walk-0.png" aria-label="歷史 F2 角色八幀同鏡位步行測試影片"><source src="/media/development/character-f2-walk-cycle.mp4" type="video/mp4" />你的瀏覽器不支援此影片。</video>
+                <div><span class="micro-label">HISTORICAL CHARACTER / 04</span><h3>舊角色步行週期紀錄</h3><p>保存已淘汰 F2 角色的八張同鏡位測試影格，用於回顧腳步相位與姿勢問題；這不是目前角色。</p><span class="motion-label">歷史舊角色 · 八幀測試影片 · 非即時動畫</span></div>
             </article>
         </div>
         <p class="evidence-note">四支播放器都提供播放、暫停、進度與全螢幕控制，且不自動播放。<a href="/media/development/media-manifest.json">檢視媒體來源清單</a>。最新權威完整遊戲視覺仍為 34 / 100，v1.4 仍未發布。</p>
@@ -106,7 +107,7 @@
     </section>
 
     <section class="showcase-section interactive-demo" aria-labelledby="interactive-demo-title">
-        <div class="section-heading"><p class="micro-label">INTERACTIVE CAPTURE EXPLORER</p><h2 id="interactive-demo-title">切換視角、時段與角色步行幀</h2><p>場景輪播是 9 張未重新評分的固定鏡頭候選；角色播放是 8 張同鏡位步行測試幀。它們不是連續遊玩錄影，也不構成高於 34／100 的權威評分。</p></div>
+        <div class="section-heading"><p class="micro-label">INTERACTIVE CAPTURE + CHARACTER STUDIO</p><h2 id="interactive-demo-title">切換場景視角，環繞檢視同一個角色</h2><p>場景區提供 9 張未重新評分的固定鏡頭候選；角色區直接載入使用者指定的第三版三維模型，可切換臉部／全身視角、360° 環繞與實際模型塑形。兩者都不構成高於 34／100 的權威評分。</p></div>
         <div class="interactive-grid">
             <article class="capture-explorer" data-scene-explorer>
                 <header><span class="micro-label">SCENE / 9 UNSCORED WIP SHOTS</span><h3>場景視角與三時段</h3></header>
@@ -119,39 +120,7 @@
                 <figure class="capture-stage"><img src="/media/development/visual-score-40-first-day.png" alt="第一人稱日間固定鏡頭實機擷取" loading="lazy" data-scene-image /><figcaption data-scene-caption aria-live="polite">第一人稱 · 日間 · 固定鏡頭 1／9</figcaption></figure>
                 <p class="capture-disclosure">自動播放只輪替日間、黃昏、夜間三張固定畫面；切換視角可查看同一驗收矩陣的其他鏡位。</p>
             </article>
-            <article class="character-sequence" data-character-sequence>
-                <header><span class="micro-label">CHARACTER / 8 TEST FRAMES</span><h3>F2 同鏡位步行週期</h3></header>
-                <figure class="capture-stage character-stage"><img src="/media/development/character-f2-walk-0.png" alt="F2 步行測試第 1 幀，共 8 幀" loading="lazy" data-character-image /><figcaption data-character-caption aria-live="polite">測試幀 1／8</figcaption></figure>
-                <div class="frame-controls"><button type="button" data-character-prev aria-label="上一個步行測試幀">上一幀</button><button type="button" data-character-play aria-pressed="false">播放逐幀</button><button type="button" data-character-next aria-label="下一個步行測試幀">下一幀</button></div>
-                <label class="frame-scrubber">步行測試幀 <output data-character-output>1 / 8</output><input type="range" min="0" max="7" value="0" step="1" data-character-range aria-label="選擇 F2 步行測試幀" /></label>
-                <p class="capture-disclosure">這是 Character Visual Quality 測試產生的 8 張同鏡位影像，可逐幀檢查姿勢變化；不是即時動畫或遊玩影片。播放器預設暫停，避免造成不必要動態。</p>
-            </article>
-            <article class="character-sequence character-gpu-sequence" data-gpu-shape-sequence>
-                <header><span class="micro-label">CHARACTER CREATOR / 11 GPU-SKINNED FRAMES</span><h3>網站可操作的捏臉／身材技術預覽</h3></header>
-                <div class="wardrobe-toggle" role="group" aria-label="切換同一角色的長褲顯示"><span>服裝顯示</span><button type="button" data-character-wardrobe="clothed" aria-pressed="true">穿著長褲</button><button type="button" data-character-wardrobe="anatomy" aria-pressed="false">移除長褲（18+）</button></div>
-                <figure class="capture-stage character-stage character-wardrobe-stage">
-                    <span class="character-wardrobe-canvas"><img src="/media/development/character-gpu-shape-0.png" alt="穿著網站預覽長褲的 GPU 蒙皮角色塑形測試" loading="lazy" data-gpu-shape-image /><svg class="character-pants-overlay" viewBox="0 0 900 1200" role="img" aria-label="套用於同一人偶的深色長褲網站預覽層" data-character-pants><defs><linearGradient id="pants-fabric" x1="0" x2="1"><stop offset="0" stop-color="#111714"/><stop offset=".48" stop-color="#303a34"/><stop offset="1" stop-color="#0a0f0d"/></linearGradient></defs><path d="M353 515 Q450 493 547 515 L555 584 524 752 514 904 Q483 920 451 899 L445 633 433 633 425 899 Q393 920 361 903 L349 751 341 584Z" fill="url(#pants-fabric)" stroke="#59645e" stroke-width="3"/><path d="M345 522 Q450 545 553 522" fill="none" stroke="#95a09a" stroke-width="6"/><path d="M447 542 L445 634 M379 591 L365 744 M515 591 L529 744" fill="none" stroke="#65716a" stroke-width="3" opacity=".8"/></svg></span>
-                    <figcaption data-gpu-shape-caption aria-live="polite">同一 GPU 人偶 · 網站長褲預覽 · 中立端點 1／11</figcaption>
-                </figure>
-                <div class="frame-controls"><button type="button" data-gpu-shape-prev aria-label="上一個塑形測試幀">上一幀</button><button type="button" data-gpu-shape-play aria-pressed="false">播放塑形端點</button><button type="button" data-gpu-shape-next aria-label="下一個塑形測試幀">下一幀</button></div>
-                <label class="frame-scrubber">GPU 蒙皮塑形幀 <output data-gpu-shape-output>1 / 11</output><input type="range" min="0" max="10" value="0" step="1" data-gpu-shape-range aria-label="選擇 GPU 蒙皮塑形測試幀" /></label>
-                <div class="shape-slider-grid" aria-label="臉部細節端點調整">
-                    <label>下顎寬度 <output>中立</output><input type="range" min="-1" max="1" value="0" step="1" data-shape-axis data-min-frame="1" data-max-frame="2" /></label>
-                    <label>下巴長度 <output>中立</output><input type="range" min="-1" max="1" value="0" step="1" data-shape-axis data-min-frame="3" data-max-frame="4" /></label>
-                    <label>鼻翼寬度 <output>中立</output><input type="range" min="-1" max="1" value="0" step="1" data-shape-axis data-min-frame="5" data-max-frame="6" /></label>
-                    <label>嘴部寬度 <output>中立</output><input type="range" min="-1" max="1" value="0" step="1" data-shape-axis data-min-frame="7" data-max-frame="8" /></label>
-                    <label>嘴唇厚度 <output>中立</output><input type="range" min="-1" max="1" value="0" step="1" data-shape-axis data-min-frame="9" data-max-frame="10" /></label>
-                </div>
-                <div class="shape-preset-grid" role="group" aria-label="選擇角色塑形端點">
-                    <button type="button" data-gpu-shape-frame="0">中立</button><button type="button" data-gpu-shape-frame="1">窄下顎</button><button type="button" data-gpu-shape-frame="2">寬下顎</button><button type="button" data-gpu-shape-frame="3">短下巴</button><button type="button" data-gpu-shape-frame="4">長下巴</button><button type="button" data-gpu-shape-frame="5">窄鼻翼</button><button type="button" data-gpu-shape-frame="6">寬鼻翼</button><button type="button" data-gpu-shape-frame="7">窄嘴</button><button type="button" data-gpu-shape-frame="8">寬嘴</button><button type="button" data-gpu-shape-frame="9">薄唇</button><button type="button" data-gpu-shape-frame="10">厚唇</button>
-                </div>
-                <div class="character-creator-roadmap" aria-label="角色建立器開發狀態">
-                    <p><strong>現在可操作</strong><span>同一 GPU 人偶可切換網站長褲層，並以五組三段式臉部滑桿檢視 10 個真實 morph（網格塑形）端點。</span></p>
-                    <p><strong>下一個切片</strong><span>同時混合多個滑桿、加入臉部與身材模板、限制不自然比例，並保存可重現參數。</span></p>
-                    <p><strong>尚未宣稱</strong><span>長褲目前是同鏡位網站向量覆蓋層，不是引擎 3D 服裝幾何；網站也不是即時 3D 捏臉器。</span></p>
-                </div>
-                <p class="capture-disclosure">這一輪已讓 body、eyes 與 hair 共同走真正的 GPU skinned submission。GBV 11／11 幀皆為 requested／available／executed／passed，GPU errors／warnings 0／0；每幀 17 個 skinned instances、53 joints、Skin 6／Hair 3／Eye 6／Mask 2。這是技術路徑通過，角色美術仍為 WIP／NO-GO。</p>
-            </article>
+            <partial name="_CharacterEditor" />
         </div>
     </section>
 
@@ -263,18 +232,19 @@
         <div class="section-heading">
             <p class="micro-label">ORIGINAL HEROINE / ART DIRECTION + ENGINE WIP</p>
             <h2 id="heroine-title">使用者指定的雙主角美術方向</h2>
-            <p>以使用者指定參考圖確立女、男主角的臉部、比例、髮型、黑色服裝剪裁與材質目標，再對照目前引擎內歷史 v11 WIP。參考圖不是實機截圖，也沒有取代正式 3D 資產；角色仍須完成原創建模、綁定、動作與引擎驗收。</p>
+            <p>以使用者指定參考圖確立女、男主角的臉部、比例、髮型、黑色服裝剪裁與材質目標。網站角色工作室已改用指定第三版三維來源；引擎 Gameplay 尚未完成正式整合與動作驗收。參考圖不是實機截圖，也不等同三維模型成果。</p>
         </div>
         <article class="heroine-direction">
             <button type="button" data-lightbox-src="/media/development/aevrynd-heroine-art-direction-v14.png" data-lightbox-alt="使用者指定的 Aevrynd 女男雙主角美術方向參考圖，非引擎實機擷取"><img src="/media/development/aevrynd-heroine-art-direction-v14.png" alt="使用者指定的 Aevrynd 女男雙主角美術方向參考圖，非引擎實機擷取" loading="lazy" /></button>
-            <div><span class="micro-label">USER-DIRECTED ART TARGET / REFERENCE</span><h3>從通用原型走向可辨識的雙主角</h3><p>女主角以自然長黑髮、俐落黑色皮革外套與合身戰術輪廓為主要方向；男主角則採短黑髮、黑色層次服裝與穩定站姿。正式角色會重新製作成 Aevrynd 原創資產，不直接把參考圖當成模型或材質。</p><strong>使用者指定參考 · 尚未整合 · 不計入 34 分</strong></div>
+            <div><span class="micro-label">USER-DIRECTED ART TARGET / REFERENCE</span><h3>從通用原型走向可辨識的雙主角</h3><p>女主角以自然長黑髮、俐落黑色皮革外套與合身戰術輪廓為主要方向；男主角則採短黑髮、黑色層次服裝與穩定站姿。網站使用獨立三維資產呈現，不直接把參考圖當成模型或材質。</p><strong>使用者指定參考 · 網站第三版已接入 · 不計入 34 分</strong></div>
         </article>
         <div class="heroine-status" aria-label="角色目前狀態">
             <div><small>TECHNICAL GATE</small><strong>PASS</strong><span>Blender 5.2.1 · 10 張預覽雜湊皆不同</span></div>
             <div><small>VISUAL GATE</small><strong class="status-no">NO-GO</strong><span>通用臉部與服裝拓撲仍未達 production hero</span></div>
-            <div><small>INTEGRATION</small><strong>未整合</strong><span>隔離輸出，不覆寫正式角色資產</span></div>
+            <div><small>WEB INTEGRATION</small><strong>第三版已接入</strong><span>同一 GLB 提供臉部／全身 360° 與塑形控制</span></div>
+            <div><small>ENGINE INTEGRATION</small><strong class="status-no">尚待驗證</strong><span>尚未納入 Gameplay 森林與正式角色動作 gate</span></div>
         </div>
-        <h3 class="heroine-legacy-title">目前引擎內歷史 v11 技術 WIP 對照</h3>
+        <h3 class="heroine-legacy-title">歷史 v11 淘汰原型對照（不是目前角色）</h3>
         <div class="heroine-gallery" aria-label="Aevrynd 女主角 v11 預覽">
             <button type="button" class="heroine-shot heroine-shot-tall" data-lightbox-src="/media/development/aevrynd-heroine-v11-front.png" data-lightbox-alt="Aevrynd 原創女主角 v11 正面全身預覽">
                 <img src="/media/development/aevrynd-heroine-v11-front.png" alt="Aevrynd 原創女主角 v11 正面全身預覽" loading="lazy" />
@@ -459,4 +429,4 @@
         <button type="button" class="lightbox-step lightbox-next" data-lightbox-step="1" aria-label="下一張展示影像">›</button>
     </div>
 </section>
-@section Scripts { <script src="~/js/showcase.js" asp-append-version="true"></script> }
+@section Scripts { <script src="~/js/showcase.js" asp-append-version="true"></script><script type="module" src="~/js/character-editor.js" asp-append-version="true"></script> }
