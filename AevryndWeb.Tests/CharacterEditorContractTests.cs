@@ -28,7 +28,8 @@ public sealed class CharacterEditorContractTests
         Assert.Contains("OrbitControls", script);
         Assert.Contains("morphTargetInfluences[slot]", script);
         Assert.Contains("upper.visible = clothed", script);
-        Assert.Contains("if (pants) pants.visible = clothed", script);
+        Assert.Contains("pants.visible = clothed", script);
+        Assert.Contains("character.glb?v=136", script);
         Assert.Contains("const defaultValues = { chinLength: 1 }", script);
         Assert.Contains("restricted?.hasAttribute('inert')", script);
     }
@@ -53,19 +54,23 @@ public sealed class CharacterEditorContractTests
     }
 
     [Fact]
-    public void ApprovedThirdCharacterContainsUpperSkeletonAndFaceMorphsWithoutExternalUris()
+    public void ApprovedThirdCharacterContainsFittedPantsSkeletonAndFaceMorphsWithoutExternalUris()
     {
         var data = File.ReadAllBytes(Path.Combine(Root(), "wwwroot/media/character-editor/character.glb"));
-        Assert.Equal("9C98378086DE3128119E6BEBA2531D5A37AAA70B594E0FA3859FD93CA63FE838",
+        Assert.Equal("FF0533ED7E4FA7C01239E41E53B01BDC3AFA48B96CCD8DD5DBF658E42A57F73D",
             Convert.ToHexString(SHA256.HashData(data)));
         Assert.Equal(0x46546C67u, BitConverter.ToUInt32(data, 0));
         Assert.Equal((uint)data.Length, BitConverter.ToUInt32(data, 8));
         using var document = JsonDocument.Parse(data.AsMemory(20, BitConverter.ToInt32(data, 12)));
         var json = document.RootElement;
         var nodes = json.GetProperty("nodes").EnumerateArray().ToArray();
-        foreach (var name in new[] { "Body", "Eyes", "Upper", "Hair" })
+        foreach (var name in new[] { "Body", "Eyes", "Upper", "Pants", "Hair" })
             Assert.Single(nodes.Where(node => node.TryGetProperty("name", out var value) && value.GetString() == name));
-        Assert.DoesNotContain(nodes, node => node.TryGetProperty("name", out var value) && value.GetString() == "Pants");
+        var pants = nodes.Single(node => node.TryGetProperty("name", out var value) && value.GetString() == "Pants");
+        Assert.Equal(0, pants.GetProperty("skin").GetInt32());
+        var pantsMesh = json.GetProperty("meshes")[pants.GetProperty("mesh").GetInt32()];
+        var pantsIndexAccessor = pantsMesh.GetProperty("primitives")[0].GetProperty("indices").GetInt32();
+        Assert.Equal(9072, json.GetProperty("accessors")[pantsIndexAccessor].GetProperty("count").GetInt32());
         foreach (var skin in json.GetProperty("skins").EnumerateArray()) Assert.Equal(53, skin.GetProperty("joints").GetArrayLength());
         foreach (var image in json.GetProperty("images").EnumerateArray()) Assert.False(image.TryGetProperty("uri", out _));
         var body = nodes.Single(node => node.TryGetProperty("name", out var value) && value.GetString() == "Body");

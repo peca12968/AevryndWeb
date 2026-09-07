@@ -1,6 +1,6 @@
 import * as THREE from '../lib/three/three.module.js';
 import { OrbitControls } from '../lib/three/OrbitControls.js';
-import { GLTFLoader } from '../lib/three/GLTFLoader.js';
+import { GLTFLoader } from '../lib/three/GLTFLoader.js?v=136';
 
 const root = document.querySelector('[data-character-editor]');
 if (root) {
@@ -19,7 +19,7 @@ if (root) {
       renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
       renderer.outputColorSpace = THREE.SRGBColorSpace;
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      renderer.toneMappingExposure = 1.15;
+      renderer.toneMappingExposure = .82;
       viewport.append(renderer.domElement);
       const scene = new THREE.Scene();
       scene.background = new THREE.Color('#20272d');
@@ -29,12 +29,12 @@ if (root) {
       controls.enableDamping = false;
       controls.minPolarAngle = .15;
       controls.maxPolarAngle = Math.PI - .15;
-      scene.add(new THREE.HemisphereLight(0xe5f1ff, 0x615246, 2));
-      for (const [color, intensity, x, y, z] of [[0xffeee3,3,2,3,4],[0xd3e5ff,2,-3,2,1],[0xffffff,2,0,3,-3]]) {
+      scene.add(new THREE.HemisphereLight(0xe5f1ff, 0x615246, .75));
+      for (const [color, intensity, x, y, z] of [[0xffeee3,2.2,2,3,4],[0xd3e5ff,1,-3,2,1],[0xffffff,.7,0,3,-3]]) {
         const light = new THREE.DirectionalLight(color,intensity);
         light.position.set(x,y,z);scene.add(light);
       }
-      const gltf = await new GLTFLoader().loadAsync('/media/character-editor/character.glb', progress => {
+      const gltf = await new GLTFLoader().loadAsync('/media/character-editor/character.glb?v=136', progress => {
         status.textContent = progress.total ? `載入角色 ${Math.round(progress.loaded / progress.total * 100)}%` : '正在載入三維角色…';
       });
       const character = gltf.scene;
@@ -42,7 +42,7 @@ if (root) {
       const body = character.getObjectByName('Body');
       const upper = character.getObjectByName('Upper');
       const pants = character.getObjectByName('Pants');
-      if (!body || !upper) throw new Error('角色資產缺少必要的身體或上衣網格');
+      if (!body || !upper || !pants) throw new Error('角色資產缺少必要的身體、上衣或長褲網格');
       const morphMeshes = [];
       character.traverse(mesh => { if (mesh.morphTargetDictionary && mesh.morphTargetInfluences) morphMeshes.push(mesh); });
       if (!morphMeshes.length) throw new Error('角色塑形資料尚未就緒');
@@ -67,7 +67,7 @@ if (root) {
       };
       const setClothing = clothed => {
         upper.visible = clothed;
-        if (pants) pants.visible = clothed;
+        pants.visible = clothed;
         root.querySelectorAll('[data-editor-clothing]').forEach(button => button.setAttribute('aria-pressed', String((button.dataset.editorClothing === 'on') === clothed)));
         draw();
       };
