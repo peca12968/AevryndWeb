@@ -4,9 +4,9 @@
     <header class="showcase-hero">
         <p class="eyebrow"><span></span> AEVRYND / DEVELOPMENT ATLAS · 2026.09</p>
         <h1>從第一個世界，<em>走向完整遊戲引擎。</em></h1>
-        <p>Aevrynd 是持續演進的 2D／2.5D／3D 遊戲引擎。此頁區分已發布版本、已驗證但未發布切片與歷史產物；技術 gate 通過不等於遊戲畫面達標。</p>
+        <p>Aevrynd 是持續演進的原生 2D／2.5D／3D 遊戲引擎。最新同鏡位驗收已讓完整 Demo（可執行遊戲展示）由 34／100 提升至 40／100；近期仍優先改善人物、動作、場景與光影，目標至少 70／100。此頁區分歷史發布、已驗證切片與開發中（WIP）；技術驗收門檻（gate）通過不等於畫面達標。</p>
         <div class="truth-strip" aria-label="目前發布狀態">
-            <div><small>VISUAL SCORE</small><strong>34 / 100</strong><span class="status-no">NO-GO</span></div>
+            <div><small>VISUAL SCORE</small><strong>40 / 100</strong><span class="status-no">基準 34，增加 6；尚未達 70</span></div>
             <div><small>GAMEPLAY DEMO</small><strong>v1.3.0</strong><span>目前已發布；品質不代表現況目標</span></div>
             <div><small>NEXT RELEASE</small><strong>v1.4</strong><span class="status-no">尚未發布</span></div>
             <div><small>RENDER PATH</small><strong>D3D12</strong><span>跨 Vulkan／Metal 等價尚未證明</span></div>
@@ -15,7 +15,7 @@
 
 
     <nav class="atlas-nav" aria-label="展示章節">
-        <a href="#demo-motion">01 動態展示</a><a href="#release-title">02 版本演進</a><a href="#heroine-title">03 原創女主角 WIP</a><a href="#system-title">04 三機協作</a><a href="#engine-title">05 引擎架構</a>
+        <a href="#demo-motion">01 動態展示</a><a href="#visual-progress-title">02 同鏡位比較</a><a href="#release-title">03 版本演進</a><a href="#heroine-title">04 原創女主角 WIP</a><a href="#system-title">05 三機協作</a><a href="#engine-title">06 引擎架構</a><a href="#glossary-title">07 名詞中文對照</a>
     </nav>
     <section id="demo-motion" class="showcase-section motion-section" aria-labelledby="motion-title">
         <div class="section-heading"><p class="micro-label">ENGINE IN MOTION</p><h2 id="motion-title">看見開發演進</h2><p>以各版本留下的實機截圖製作動畫導覽；這是歷史畫面比較，非連續遊玩錄影。影片版本與原始圖片雜湊可由來源清單核對。</p></div>
@@ -29,7 +29,57 @@
                 <div><span class="micro-label">ENGINE LAB / 02</span><h3>讓世界持續運行</h3><p>分區載入 → 世界原點重定位 → 增量保存 → 網路複寫 → 級聯陰影。</p><span class="motion-label">歷史實機截圖動畫導覽 · 非連續遊玩錄影</span></div>
             </article>
         </div>
-        <p class="evidence-note">播放器提供播放、暫停、進度與全螢幕控制，不自動播放。<a href="/media/development/media-manifest.json">檢視媒體來源清單</a>。目前完整遊戲視覺仍為 34 / 100，v1.4 未發布。</p>
+        <p class="evidence-note">播放器提供播放、暫停、進度與全螢幕控制，不自動播放。<a href="/media/development/media-manifest.json">檢視媒體來源清單</a>。最新完整遊戲視覺為 40 / 100，v1.4 仍未發布。</p>
+    </section>
+
+    <section class="showcase-section visual-progress" aria-labelledby="visual-progress-title">
+        <div class="section-heading">
+            <p class="micro-label">SAME-CAMERA VISUAL EVIDENCE</p>
+            <h2 id="visual-progress-title">權威視覺分數：34 → 40</h2>
+            <p>使用同一組 1280×720 Normal 模式鏡位比較；左側是 34 分基準，右側是引擎提交 <code>d6e0976</code> 的 40 分結果。這四張圖是目前來源的實機擷取，不是生成概念圖，也不是 v1.4 發布畫面。</p>
+        </div>
+        <div class="score-breakdown" aria-label="40 分視覺評分明細">
+            <div><span>構圖</span><strong>9 / 20</strong></div>
+            <div><span>人物</span><strong>4 / 20</strong></div>
+            <div><span>材質</span><strong>8 / 15</strong></div>
+            <div><span>燈光</span><strong>7 / 15</strong></div>
+            <div><span>場景完整度</span><strong>8 / 20</strong></div>
+            <div><span>技術缺陷</span><strong>4 / 10</strong></div>
+        </div>
+        <div class="visual-pair-grid">
+            <article class="visual-pair">
+                <header><span>GOD / DAY</span><h3>上帝視角：聚落密度與建築可讀性</h3></header>
+                <div class="visual-pair-images">
+                    <button type="button" data-lightbox-src="/media/development/visual-score-34-god-day.png" data-lightbox-alt="34 分基準的上帝視角日間實機擷取">
+                        <img src="/media/development/visual-score-34-god-day.png" alt="34 分基準的上帝視角日間實機擷取" loading="lazy" />
+                        <span><strong>之前 · 34</strong>較疏的聚落近景</span>
+                    </button>
+                    <button type="button" data-lightbox-src="/media/development/visual-score-40-god-day.png" data-lightbox-alt="40 分結果的上帝視角日間實機擷取">
+                        <img src="/media/development/visual-score-40-god-day.png" alt="40 分結果的上帝視角日間實機擷取" loading="lazy" />
+                        <span><strong>現在 · 40</strong>35 株四象限近景地被，增加門窗、屋簷、踏階與煙囪</span>
+                    </button>
+                </div>
+            </article>
+            <article class="visual-pair">
+                <header><span>THIRD PERSON / DAY</span><h3>第三人稱：地表層次與材質</h3></header>
+                <div class="visual-pair-images">
+                    <button type="button" data-lightbox-src="/media/development/visual-score-34-third-day.png" data-lightbox-alt="34 分基準的第三人稱日間實機擷取">
+                        <img src="/media/development/visual-score-34-third-day.png" alt="34 分基準的第三人稱日間實機擷取" loading="lazy" />
+                        <span><strong>之前 · 34</strong>近景地表較空</span>
+                    </button>
+                    <button type="button" data-lightbox-src="/media/development/visual-score-40-third-day.png" data-lightbox-alt="40 分結果的第三人稱日間實機擷取">
+                        <img src="/media/development/visual-score-40-third-day.png" alt="40 分結果的第三人稱日間實機擷取" loading="lazy" />
+                        <span><strong>現在 · 40</strong>草地密度與建築材質細節提升</span>
+                    </button>
+                </div>
+            </article>
+        </div>
+        <div class="visual-truth-grid">
+            <article><strong>已改善</strong><p>聚落近景草地、建築門窗框、深色玻璃、窗台、踏階、屋簷與煙囪；場景完整度與材質分項上升。</p></article>
+            <article><strong>仍需修正</strong><p>M2 男性角色頭髮仍有尖刺；God 鏡位仍有巨型遮擋物、世界邊緣空洞與左上除錯文字，因此人物分項沒有增加。</p></article>
+            <article><strong>驗收證據</strong><p>Fresh Release <code>ALL_BUILD</code>、focused 5／5、Normal 250.03 秒、GBV 109.98 秒；GPU debug errors／warnings 0／0，完整 11-shot 通過。</p></article>
+        </div>
+        <p class="evidence-note">獨立同鏡位評分為 40／100，較基準增加 6 分。這是已驗證的重大進展，但仍是 WIP；未達 70／100，v1.4 未發布。</p>
     </section>
 
     <section class="showcase-section" aria-labelledby="release-title">
@@ -47,9 +97,11 @@
     </section>
 
     <section class="showcase-section" aria-labelledby="timeline-title">
-        <div class="section-heading"><p class="micro-label">DEVELOPMENT TIMELINE</p><h2 id="timeline-title">目前已驗證切片</h2></div>
+        <div class="section-heading"><p class="micro-label">DEVELOPMENT TIMELINE</p><h2 id="timeline-title">已驗證切片與目前待驗收工作</h2><p>測試收據（receipt）記錄來源、退出碼與證據。CPU 測試不能代替 GPU（顯示卡）渲染、11 個固定鏡頭（11-shot）影像與人體動作驗收。下方歷史切片的通過範圍不自動延伸到目前候選。</p></div>
         <div class="showcase-filters" role="group" aria-label="開發切片篩選"><button type="button" data-stage-filter="all" aria-pressed="true">全部</button><button type="button" data-stage-filter="released" aria-pressed="false">含發布成果</button><button type="button" data-stage-filter="wip" aria-pressed="false">驗證中 WIP</button></div>
         <div class="timeline">
+            <article data-stage="wip" tabindex="0" data-detail-title="聚落地被、建築細節與髮片驗收" data-detail="commit d6e097677c1cedab868d7239aae7d461379fd31c；fresh Release ALL_BUILD、focused 5/5、Normal、GBV 與完整 11-shot 通過，GPU debug errors/warnings 0/0。同鏡位評分 40/100。人物頭髮輪廓與 God 鏡位缺陷仍待下一輪修正。"><time datetime="2026-09-07">2026-09-07 · VISUAL 40 / 100</time><h3>聚落密度與建築細節提升</h3><p>主角聚落加入 35 株四象限近景地被，並增加門窗、深色玻璃、窗台、踏階、屋簷與煙囪；視覺由 34 提升至 40。</p><code>commit d6e0976 · Normal／GBV · 11-shot · v1.4 未發布</code></article>
+            <article data-stage="wip"><time datetime="2026-09-06">2026-09-06 · 按需遠端測試</time><h3>先打通可追溯驗收，再交付新畫面</h3><p>台中 CPU 基準測試 13／13、桃園候選 CTest 輸出 17／17；收據摘要解析曾有缺口，本地修正尚未部署。GPU 固定測試組合（preset）與影像回傳仍為本地開發中，尚未完成副機 11-shot 驗收。人物、地表、大氣與動作候選不得因此宣稱視覺加分。</p></article>
             <article data-stage="wip"><time>2026-09-05 / CAMERA</time><h3>HLOD 等角相機轉場</h3><p>471a1da 加入正交等角端點，source／transition／proxy 像素驗證已提交。這是相機端點測試，完整 production HLOD 與效能仍未完成。</p></article>
             <article data-stage="released"><time>WORLD</time><h3>World Partition Phase 1／2</h3><p>非同步 prepare／activate／retire、terrain／vegetation payload、origin rebasing 與 Dirty Delta。部分驗收 Demo 已發布，完整大型世界仍持續演進。</p></article>
             <article data-stage="wip"><time>GPU</time><h3>GPU-driven 1A／1B + HZB</h3><p>compute culling、ExecuteIndirect、homogeneous buckets、current-frame HZB 與 paired benchmark。Temporal hybrid occlusion、bindless indexing仍待完成。</p></article>
@@ -63,13 +115,13 @@
             <article data-stage="wip" tabindex="0" data-detail-title="Gameplay HLOD SceneECS Ownership" data-detail="commit 466b8d5；HLOD runtime 使用獨立 SceneECS registry，submission ownership receipt 保證每個 frame 僅能提交一次；相同或倒退 frame 在輸出 mutation 前拒絕。fresh CTest 3/3、GBV 1/1/1/1、debug 0/0。OnRender、aggregate proxy、全 descriptor coverage 與效能 gate 仍未完成。"><time>HLOD · OWNERSHIP</time><h3>獨立 SceneECS 提交權</h3><p>Host palette 與 HLOD collection 不再重複；accepted 3、duplicate rejected 1、identity collisions 0。</p><code>commit 466b8d5 · CTest 3/3 · readiness NO-GO</code></article>
             <article data-stage="wip" tabindex="0" data-detail-title="MSAA HDR Contact Shadow RTV Separation" data-detail="commit c0b3197；修正 MSAA HDR 與 contact-shadow RTV slot 衝突。fresh Normal／GBV 驗證通過、CTest 4/4，Gameplay third-day effective ROI coverage=1，GPU debug errors／warnings=0／0。這是引擎渲染切片修正，不代表完整 production HLOD、v1.4 Demo 或整體視覺分數達標。"><time>RENDER · FRESH GO</time><h3>MSAA HDR／Contact Shadow RTV 修正</h3><p>解除 MSAA HDR 與接觸陰影的 RTV slot 衝突；Gameplay third-day 有效 ROI coverage=1。</p><code>commit c0b3197 · Normal／GBV · CTest 4/4 · debug 0/0</code></article>
             <article data-stage="wip" tabindex="0" data-detail-title="DLSS Output-resolution Depth Semantic Replay" data-detail="commit b09040e；Bloom 會在 DLSS evaluate 後，以正規化座標於 output resolution 重播同幀 render-resolution depth semantic。Streamline 的資源配置、resize、semantic replay、free-resources 與 shutdown lifecycle 已納入驗證；raw paired GPU／CPU hostile gates、234.09 秒 runtime package gate 與 hooks-off Release build 通過。這是已驗證但未發布的引擎切片，不代表完整 DLSS 產品支援、v1.4 或視覺 gate 達標。"><time>POST FX · FRESH GO</time><h3>DLSS 深度語意重播與 Bloom 效能</h3><p>Output-resolution depth semantic replay、Streamline lifecycle、Bloom raw paired GPU／CPU hostile gates 與 runtime package 234.09s 已通過。</p><code>commit b09040e · hooks-off Release build · 未發布 WIP</code></article>
-            <article data-stage="wip" tabindex="0" data-detail-title="Development Ultra GPU Truth" data-detail="已推送引擎 commit fff5638；GPU truth 將 renderer 實際 D3D12 adapter LUID 綁定同一張 DXGI telemetry adapter，並持續保存 commit 後 current-epoch observation。rollback、重複要求與新 epoch 會清除舊證據；fresh 6/6 + hostile 8/8 通過。第一個 false 仍是首筆 observation 的 frame budget（submitted=1、completed=0、timing=0、lastGpuNs=0），不是畫質改善證據。Demo 仍為 34 / 100，v1.4 未發布。"><time>ULTRA GPU TRUTH · FRESH GO</time><h3>正式 adapter identity 與 epoch truth</h3><p>實際 D3D12 adapter LUID 對應 DXGI telemetry；commit 後持續觀測、rollback fail-closed，fresh 6/6 + hostile 8/8 通過。</p><code>commit fff5638 · 已推送引擎切片 · 未發布 WIP</code></article>
-            <article data-stage="wip" tabindex="0" data-detail-title="Character Asset Manifest Trust Anchor" data-detail="已推送引擎 commit f0129d1；以固定 manifest trust anchor 驗證角色來源，handle-relative 開啟與 reparse 防護避免路徑在驗證後被替換。GLTF、AESKIN 與 manifest 進行 cross-check，runtime 只消費已封印的 immutable 資產；fresh 2/2 + hostile GO，package blend=0。這是資產信任與消費完整性里程碑，不代表角色美術改善。Demo 仍為 34 / 100，v1.4 未發布。"><time>CHARACTER TRUST · HOSTILE GO</time><h3>固定 manifest trust anchor</h3><p>Handle-relative／reparse 防護、GLTF／AESKIN／manifest cross-check 與 immutable runtime consume 已驗證；package blend=0。</p><code>commit f0129d1 · fresh 2/2 + hostile GO · 未發布 WIP</code></article>
-            <article data-stage="wip" tabindex="0" data-detail-title="HLOD Aggregate Proxy and Safe Runtime Cache" data-detail="已推送引擎 commit ab976d21c9505a9295be292211a18d8c42db9edc；30 個 rock sources 組成 6 clusters，涵蓋六種 descriptor。安全 runtime cache 以 pinned handle 保持來源 identity，拒絕 reparse 與 hardlink，使用 unique temp、atomic rename、SHA-256 與 checked overflow；主機與獨立 hostile fresh 4/4。這是 aggregate proxy 與 cache 完整性里程碑；OnRender、GPU-side selection、transition pixels 與 real workload 仍未完成。Demo 仍為 34 / 100，v1.4 未發布。"><time datetime="2026-09-06T04:44:00+08:00">2026-09-06 04:44 台北時間 · HLOD FRESH GO</time><h3>Aggregate proxy 與安全 runtime cache</h3><p>30 rock sources／6 clusters、六 descriptor coverage；pinned handle、reparse／hardlink 拒絕、unique temp、atomic rename、SHA-256 與 checked overflow 已驗證。</p><code>commit ab976d2 · 主機＋獨立 hostile fresh 4/4 · 未發布 WIP</code></article>
-            <article data-stage="wip" tabindex="0" data-detail-title="Character Locomotion Cycle Phase Validation" data-detail="已推送引擎 commit 4b73f0fa77d6f4e117a4b54b225bea697fe65397；角色 locomotion 的左右腳週期相位不再取不穩定的單一最低點，而是以完整接觸深度週期的第一諧波計算。baseline GAP 0.18333334 未通過，修正後 fresh GAP 0.50、DRIFT 0.013、STEP 0.019；fresh Release 三個 targets、Automation 360/360、provenance、12/12 capture，以及 manifest／BIN／AESKIN tamper fail-closed 全數通過。這提升角色動作驗收的可靠性，不代表角色外觀或美術已完成。Demo 仍為 34 / 100，v1.4 未發布。"><time datetime="2026-09-06">2026-09-06 · CHARACTER FRESH GO</time><h3>完整週期角色步態驗收</h3><p>以第一諧波取代單一最低點相位；fresh GAP 0.50、DRIFT 0.013、STEP 0.019，Automation 360/360 與 12/12 capture 通過。</p><code>commit 4b73f0f · tamper fail-closed · 外觀仍未完成</code></article>
+            <article data-stage="wip" tabindex="0" data-detail-title="Development Ultra GPU Truth" data-detail="已推送引擎 commit fff5638；GPU truth 將 renderer 實際 D3D12 adapter LUID 綁定同一張 DXGI telemetry adapter，並持續保存 commit 後 current-epoch observation。rollback、重複要求與新 epoch 會清除舊證據；fresh 6/6 + hostile 8/8 通過。第一個 false 仍是首筆 observation 的 frame budget（submitted=1、completed=0、timing=0、lastGpuNs=0），不是畫質改善證據。該切片完成時 Demo 為 34 / 100；目前分數見頁首。"><time>ULTRA GPU TRUTH · FRESH GO</time><h3>正式 adapter identity 與 epoch truth</h3><p>實際 D3D12 adapter LUID 對應 DXGI telemetry；commit 後持續觀測、rollback fail-closed，fresh 6/6 + hostile 8/8 通過。</p><code>commit fff5638 · 已推送引擎切片 · 未發布 WIP</code></article>
+            <article data-stage="wip" tabindex="0" data-detail-title="Character Asset Manifest Trust Anchor" data-detail="已推送引擎 commit f0129d1；以固定 manifest trust anchor 驗證角色來源，handle-relative 開啟與 reparse 防護避免路徑在驗證後被替換。GLTF、AESKIN 與 manifest 進行 cross-check，runtime 只消費已封印的 immutable 資產；fresh 2/2 + hostile GO，package blend=0。這是資產信任與消費完整性里程碑，不代表角色美術改善。該切片完成時 Demo 為 34 / 100；目前分數見頁首。"><time>CHARACTER TRUST · HOSTILE GO</time><h3>固定 manifest trust anchor</h3><p>Handle-relative／reparse 防護、GLTF／AESKIN／manifest cross-check 與 immutable runtime consume 已驗證；package blend=0。</p><code>commit f0129d1 · fresh 2/2 + hostile GO · 未發布 WIP</code></article>
+            <article data-stage="wip" tabindex="0" data-detail-title="HLOD Aggregate Proxy and Safe Runtime Cache" data-detail="已推送引擎 commit ab976d21c9505a9295be292211a18d8c42db9edc；30 個 rock sources 組成 6 clusters，涵蓋六種 descriptor。安全 runtime cache 以 pinned handle 保持來源 identity，拒絕 reparse 與 hardlink，使用 unique temp、atomic rename、SHA-256 與 checked overflow；主機與獨立 hostile fresh 4/4。這是 aggregate proxy 與 cache 完整性里程碑；OnRender、GPU-side selection、transition pixels 與 real workload 仍未完成。該切片完成時 Demo 為 34 / 100；目前分數見頁首。"><time datetime="2026-09-06T04:44:00+08:00">2026-09-06 04:44 台北時間 · HLOD FRESH GO</time><h3>Aggregate proxy 與安全 runtime cache</h3><p>30 rock sources／6 clusters、六 descriptor coverage；pinned handle、reparse／hardlink 拒絕、unique temp、atomic rename、SHA-256 與 checked overflow 已驗證。</p><code>commit ab976d2 · 主機＋獨立 hostile fresh 4/4 · 未發布 WIP</code></article>
+            <article data-stage="wip" tabindex="0" data-detail-title="Character Locomotion Cycle Phase Validation" data-detail="已推送引擎 commit 4b73f0fa77d6f4e117a4b54b225bea697fe65397；角色 locomotion 的左右腳週期相位不再取不穩定的單一最低點，而是以完整接觸深度週期的第一諧波計算。baseline GAP 0.18333334 未通過，修正後 fresh GAP 0.50、DRIFT 0.013、STEP 0.019；fresh Release 三個 targets、Automation 360/360、provenance、12/12 capture，以及 manifest／BIN／AESKIN tamper fail-closed 全數通過。這提升角色動作驗收的可靠性，不代表角色外觀或美術已完成。該切片完成時 Demo 為 34 / 100；目前分數見頁首。"><time datetime="2026-09-06">2026-09-06 · CHARACTER FRESH GO</time><h3>完整週期角色步態驗收</h3><p>以第一諧波取代單一最低點相位；fresh GAP 0.50、DRIFT 0.013、STEP 0.019，Automation 360/360 與 12/12 capture 通過。</p><code>commit 4b73f0f · tamper fail-closed · 外觀仍未完成</code></article>
             <article data-stage="wip" tabindex="0" data-detail-title="Temporal Provenance Closure" data-detail="commit 3c5c684 建立 temporal provenance 的來源閉環，讓跨幀資料可追溯到同一份有效證據；這是資料正確性里程碑，不是畫質分數提升。"><time datetime="2026-09-06">2026-09-06 · TEMPORAL PROVENANCE</time><h3>時間資料來源閉環</h3><p>跨幀證據以可追溯 provenance 約束，避免把不同 frame／epoch 的資料誤認為同一筆驗證結果。</p><code>commit 3c5c684 · 未發布引擎切片</code></article>
             <article data-stage="wip" tabindex="0" data-detail-title="Archive Collection" data-detail="commit dc8dab3 完成 archive collection 切片，保存可追溯的收集結果與邊界；其驗證範圍不延伸為完整 Demo 或 production HLOD 聲明。"><time datetime="2026-09-06">2026-09-06 · ARCHIVE COLLECTION</time><h3>可追溯封存收集</h3><p>將收集結果納入可核對的 archive 邊界，降低舊產物與目前來源混用的風險。</p><code>commit dc8dab3 · scope-limited WIP</code></article>
-            <article data-stage="wip" tabindex="0" data-detail-title="Compiler Object-ID Probe" data-detail="commit 28fd2d0 加入 compiler Object-ID probe；目前 fresh focused 4/4 通過，但完整 11-shot 視覺驗收仍等待遠端執行，不能據此宣稱 Demo 達標。"><time datetime="2026-09-06">2026-09-06 · OBJECT-ID PROBE</time><h3>Compiler Object-ID 探針</h3><p>fresh focused 4/4 已通過；完整 11-shot 仍待遠端驗證，因此 Demo 維持 34 / 100、v1.4 未發布。</p><code>commit 28fd2d0 · focused 4/4 · 11-shot pending</code></article>
+            <article data-stage="wip" tabindex="0" data-detail-title="Compiler Object-ID Probe" data-detail="commit 28fd2d0 加入 compiler Object-ID probe；該切片當時只有 fresh focused 4/4，未完成 11-shot，因此不能單獨宣稱 Demo 達標。"><time datetime="2026-09-06">2026-09-06 · OBJECT-ID PROBE</time><h3>Compiler Object-ID 探針</h3><p>該切片的 fresh focused 4/4 通過；當時 11-shot 尚未完成，歷史判定維持 34 / 100。目前權威分數見頁首。</p><code>commit 28fd2d0 · focused 4/4 · 歷史切片</code></article>
         </div>
     </section>
 
@@ -112,32 +164,32 @@
 
 
     <section class="showcase-section atlas-system" aria-labelledby="system-title">
-        <div class="section-heading"><p class="micro-label">SYSTEM TOPOLOGY</p><h2 id="system-title">三台電腦，一條開發流程</h2><p>主機做決策與整合；副機依獨立檔案範圍處理實作與驗證。模型為使用者於 2026-09-05 指定的配置，不代表節點目前在線。</p></div>
+        <div class="section-heading"><p class="micro-label">SYSTEM TOPOLOGY</p><h2 id="system-title">主機開發，副機按需提供測試資源</h2><p>主機統籌實作、整合及驗收；台中與桃園只依指定來源與固定測試組合執行，不再運行副機 Codex／Qwen 或 GitHub 任務輪詢。以下是架構與規劃，不是即時服務狀態。</p></div>
         <div class="map-toolbar"><span>可縮放、點擊節點查看工作責任</span><button type="button" data-map-zoom="out" aria-label="縮小架構圖">−</button><button type="button" data-map-zoom="reset">100%</button><button type="button" data-map-zoom="in" aria-label="放大架構圖">＋</button></div>
         <div class="map-viewport atlas-viewport">
             <svg id="systemArchitectureMap" class="architecture-map atlas-map" viewBox="0 0 1100 540" role="img" aria-labelledby="system-svg-title system-svg-desc">
-                <title id="system-svg-title">主機 Astra 與台中、桃園 sol 的 GitHub 任務協作</title>
-                <desc id="system-svg-desc">主機 GPT-6 Astra 中負責派工、整合與唯一 Git 提交。台中與桃園 GPT-5.6 sol 中透過 GitHub Issue 1 輪詢任務並回傳 ACK 和 REPORT。驗收後由主機更新引擎與 IIS 網站。Qwen 是按需啟用的離線唯讀助手。</desc>
+                <title id="system-svg-title">主機開發與台中、桃園按需測試架構</title>
+                <desc id="system-svg-desc">主機負責開發、驗收與唯一 Git 提交。透過私有網路交付固定測試，副機執行後回傳證據。CPU 已有實測；GPU preset、影像回傳及網站資料庫串接尚未完成。主機 GPT-6 Astra 中是使用者設定，不是執行階段偵測。</desc>
                 <defs><marker id="atlas-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8Z" fill="#91e4b8" /></marker></defs>
                 <g class="atlas-edges"><path d="M550 127V191" /><path d="M380 242H198V320" /><path d="M720 242H902V320" /><path d="M550 293V428" /><path d="M198 397V474H420" /><path d="M902 397V474H680" /></g>
-                <g class="map-node map-node-main" tabindex="0" role="button" aria-label="主機 GPT-6 Astra 中的責任" data-detail-title="主機 · GPT-6 Astra · 中" data-detail="將需求拆成具有 ownership 的工作包，檢查來源與差異，整合副機結果，執行 fresh build／敵意驗收。只有主機可以使用繁體中文 Git commit 並推送 origin/main。">
+                <g class="map-node map-node-main" tabindex="0" role="button" aria-label="主機開發與驗收責任" data-detail-title="主機 · 使用者設定 GPT-6 Astra · 中" data-detail="模型為使用者設定，非執行偵測。主機分配檔案責任、整合修改、檢查全新建置與獨立反向測試；只有主機可精準 stage、繁體中文提交並推送。副機只提供測試運算，不修改主來源。">
                     <rect x="375" y="20" width="350" height="107" rx="18" /><text x="550" y="55">LOCAL / 主機</text><text x="550" y="86">GPT-6 Astra · 中</text><text class="map-sub" x="550" y="110">架構 · 派工 · 整合 · 最終驗收</text>
                 </g>
-                <g class="map-node" tabindex="0" role="button" aria-label="GitHub Issue 1 任務協定" data-detail-title="GitHub 任務通道" data-detail="副機 Codex 輪詢 Issue #1，依 TARGET、COMMAND_ID 與 ownership 接收任務。收到後 ACK，終態 REPORT；命令去重。發出命令不等於副機已開始工作，必須確認回報。">
-                    <rect x="380" y="191" width="340" height="102" rx="18" /><text x="550" y="226">GITHUB / ISSUE #1</text><text class="map-sub" x="550" y="253">MAIN_COMMAND → ACK → REPORT</text><text class="map-sub" x="550" y="275">檔案 ownership · 命令去重 · 證據回傳</text>
+                <g class="map-node" tabindex="0" role="button" aria-label="私有網路按需測試通道" data-detail-title="固定輸入 → 測試 → 證據" data-detail="以 Tailscale 私有網路傳送已簽章的固定來源與測試組合；不允許副機自行選任務。接單、進度與結果須分開確認；立即回覆及影像傳輸依部署狀態驗證，不因架構圖存在就宣稱完成。">
+                    <rect x="380" y="191" width="340" height="102" rx="18" /><text x="550" y="226">按需測試 / 私有網路</text><text class="map-sub" x="550" y="253">固定來源 → 指定測試 → 收據</text><text class="map-sub" x="550" y="275">不執行副機 AI · 不輪詢 GitHub 任務</text>
                 </g>
-                <g class="map-node" tabindex="0" role="button" aria-label="台中 GPT-5.6 sol 中的責任" data-detail-title="台中 · GPT-5.6 sol · 中" data-detail="依收到的 ownership 執行實作、效能驗證工具與重複性測試；回報命令、退出碼、來源與證據。硬體與工作歷程同步也交由該節點修復。">
-                    <rect x="38" y="320" width="320" height="77" rx="16" /><text x="198" y="348">TAICHUNG / 台中</text><text class="map-sub" x="198" y="377">GPT-5.6 sol · 中 / 實作與工具</text>
+                <g class="map-node" tabindex="0" role="button" aria-label="台中按需測試資源" data-detail-title="台中 · 測試運算" data-detail="執行主機指定的建置與批次測試；CPU 基準已有 13／13 紀錄。GPU 驗收入口尚未部署，不宣稱已完成畫面測試。副機不修改來源、不提交。">
+                    <rect x="38" y="320" width="320" height="77" rx="16" /><text x="198" y="348">TAICHUNG / 台中</text><text class="map-sub" x="198" y="377">CPU 已實測 / GPU 驗收待部署</text>
                 </g>
-                <g class="map-node" tabindex="0" role="button" aria-label="桃園 GPT-5.6 sol 中的責任" data-detail-title="桃園 · GPT-5.6 sol · 中" data-detail="安排獨立審查、回歸與負向驗證。實際是否運行以該節點 ACK／REPORT 為準；目前未觀察到既有遙測命令回覆，不能宣稱已完成。">
-                    <rect x="742" y="320" width="320" height="77" rx="16" /><text x="902" y="348">TAOYUAN / 桃園</text><text class="map-sub" x="902" y="377">GPT-5.6 sol · 中 / 獨立審查</text>
+                <g class="map-node" tabindex="0" role="button" aria-label="桃園按需測試資源" data-detail-title="桃園 · 測試運算" data-detail="依指定候選執行測試；CPU CTest 輸出 17／17，但收據摘要解析缺口的本地修正尚未部署。這不是 GPU 畫面或完整 Demo 通過。">
+                    <rect x="742" y="320" width="320" height="77" rx="16" /><text x="902" y="348">TAOYUAN / 桃園</text><text class="map-sub" x="902" y="377">CPU 候選實測 / 畫面驗收待完成</text>
                 </g>
-                <g class="map-node map-node-main" tabindex="0" role="button" aria-label="主機整合與發布流程" data-detail-title="整合與發布" data-detail="副機 REPORT 經主機重新檢查與測試後，才可精確 stage、中文提交與推送。IIS／ngrok 提供網站，Operations 顯示實測資料；Showcase 在重大進展時更新。">
+                <g class="map-node map-node-main" tabindex="0" role="button" aria-label="主機整合與發布流程" data-detail-title="驗收後才更新成果" data-detail="主機核對來源、退出碼、收據與真實影像，通過後才提交。網站展示重大進展；資料庫已有 RemoteTestRuns 收據，Operations 舊 JSON 畫面尚待完整串接，不能當作全部測試的即時清單。">
                     <rect x="420" y="428" width="260" height="88" rx="16" /><text x="550" y="461">VERIFY → INTEGRATE</text><text class="map-sub" x="550" y="490">引擎提交 · IIS / ngrok · Showcase</text>
                 </g>
             </svg>
         </div>
-        <div class="atlas-notes"><p><strong>Qwen · 按需助手</strong>在資源允許時執行離線唯讀摘要、分類與盤點，由 Codex 控管；不宣稱目前已啟動。</p><p><strong>每台電腦的即時狀態</strong>配備、使用率與實際工作請至 <a href="/Operations">Operations（需登入）</a> 查看。副機遙測未回報時保留未知狀態。</p></div>
+        <div class="atlas-notes"><p><strong>Qwen · 非常駐助手</strong>僅在有需要且資源允許時做離線唯讀摘要；不要求副機運行 Qwen，不承擔核心開發或驗收結論。</p><p><strong>主機與測試紀錄</strong><a href="/Operations">Operations（需登入）</a> 顯示來源摘要。資料庫與頁面串接尚未完成；缺值不代表機器故障，排程也不代表已執行。</p></div>
     </section>
 
     <section class="showcase-section atlas-engine" aria-labelledby="engine-title">
@@ -171,19 +223,70 @@
         </div>
     </section>
 
+    <section class="showcase-section" aria-labelledby="glossary-title">
+        <div class="section-heading"><p class="micro-label">TECHNICAL GLOSSARY</p><h2 id="glossary-title">名詞中文對照</h2><p>歷史紀錄保留原始英文名稱，方便對照程式與測試；以下解釋其中文用途。名詞說明不是功能完成或通過驗收的聲明。</p></div>
+        <details><summary>硬體、平台與遊戲系統</summary><dl>
+            <dt>CPU／GPU</dt><dd>中央處理器／圖形處理器（顯示卡）；分別執行一般運算與大量平行圖形工作。</dd>
+            <dt>D3D12／DXGI／Vulkan／Metal</dt><dd>Direct3D 12 是 Windows 圖形介面；DXGI 管理顯示卡與呈現資源。Vulkan、Metal 是其他圖形介面，不代表目前已完成跨平台支援。</dd>
+            <dt>Renderer／Gameplay／Lab／Demo</dt><dd>渲染器／遊戲玩法與互動系統／獨立實驗驗證程式／可執行展示。</dd>
+            <dt>Scene／ECS／SceneECS</dt><dd>場景／實體元件系統；以實體、元件與處理系統管理世界資料。SceneECS 是引擎內相關場景資料系統名稱。</dd>
+            <dt>Animation／Physics／Navigation／Rig</dt><dd>動畫／物理與碰撞／導航／角色骨架與綁定結構。</dd>
+            <dt>Locomotion／Pose／Headshot／Grounding</dt><dd>角色移動動作／姿勢／臉部近照／角色足部與地面接觸配置。</dd>
+            <dt>Asset／Material／Manifest／Cooker</dt><dd>資產／材質／檔案與來源清單／將原始資產轉為執行時格式的處理工具。</dd>
+            <dt>GLTF／GLB／AESKIN／BIN／CC0</dt><dd>GLTF／GLB 是三維資產格式；AESKIN 是本引擎角色資產格式；BIN 表示二進位資料；CC0 是放棄著作權或提供最大限度自由使用的授權工具，仍需核對個別來源。</dd>
+        </dl></details>
+        <details><summary>大型世界、可見性與 GPU 提交</summary><dl>
+            <dt>World Partition／Streaming</dt><dd>世界分區／按需載入與卸載；避免一次把整個世界全部放入記憶體。</dd>
+            <dt>Prepare／Activate／Retire／Lifecycle</dt><dd>準備／啟用／退場／生命週期，描述資源從建立到釋放的階段。</dd>
+            <dt>Origin Rebase／Dirty Delta／Persistence／Networking</dt><dd>世界原點重定位／僅保存已變更資料／持久化保存／網路通訊與狀態複寫。</dd>
+            <dt>HLOD／LOD／Proxy／Aggregate Proxy</dt><dd>階層式細節層級／細節層級／替代表示／多物件合併替代表示；目的是依距離與預算調整顯示細節。</dd>
+            <dt>Source／Transition／Seam／Workload</dt><dd>原始表示或來源／過渡階段／系統銜接處／實際工作負載。</dd>
+            <dt>HZB／Culling／Visibility／GPU-driven</dt><dd>階層式深度緩衝／剔除不必繪製的項目／可見性／由 GPU 驅動部分選擇與提交工作。</dd>
+            <dt>Compute／ExecuteIndirect／DrawList／Bucket／Bindless</dt><dd>GPU 通用計算／依 GPU 或緩衝資料間接執行命令／繪製清單／同類工作分組／不逐次綁定固定資源槽的存取方式。</dd>
+            <dt>Fence／Lease／Ownership／Descriptor</dt><dd>GPU 完成同步標記／資源使用權憑證／責任或所有權範圍／資源描述項；用來避免重複提交或過早釋放。</dd>
+            <dt>Frame／Epoch／Identity／Generation／LUID</dt><dd>影格／一輪有效狀態世代／識別／版本世代／本機唯一識別碼；用於防止不同時間或資源的證據混用。</dd>
+            <dt>OnRender／Selector／Freeze／Collect</dt><dd>渲染回呼入口／選擇器／凍結同幀結果／收集提交資料。</dd>
+        </dl></details>
+        <details><summary>光照、材質與影像重建</summary><dl>
+            <dt>Forward+／CSM／Contact Shadow</dt><dd>分區光源的前向渲染／級聯陰影貼圖／接觸陰影。</dd>
+            <dt>TAA／MSAA／DLSS／Streamline</dt><dd>時間抗鋸齒／多重採樣抗鋸齒／NVIDIA 深度學習影像重建技術／整合相關圖形功能的框架。</dd>
+            <dt>HDR／Linear HDR／Bloom／Atmosphere</dt><dd>高動態範圍影像／線性色彩空間的高動態影像／亮部泛光／大氣效果。</dd>
+            <dt>Alpha／Mip／UV／Foliage／Water</dt><dd>透明或遮罩通道／多解析度貼圖層級／貼圖座標／植被／水體。</dd>
+            <dt>ROI／Object-ID（OID）／Depth／Color</dt><dd>關注影像區域／物件識別圖／深度／色彩；用於檢查同一畫面中的物件與遮擋關係。</dd>
+            <dt>Readback／Sidecar／RTV／Slot</dt><dd>從 GPU 讀回資料／伴隨主檔案的證據檔／渲染目標檢視／資源槽位。</dd>
+            <dt>Temporal／Ghost／Semantic／Sequence Token</dt><dd>跨時間影格／殘影／資料語意／影格序列識別標記。</dd>
+            <dt>Coverage／SSIM／Pixel Oracle</dt><dd>覆蓋率／影像結構相似度／可判定正確與錯誤的像素檢查依據；數值通過仍不等於美術品質達標。</dd>
+            <dt>Lumen／Nanite</dt><dd>UE5 的全域光照與虛擬化幾何技術名稱；此頁提到它們時是在界定尚未證明的能力，不是等價聲明。</dd>
+        </dl></details>
+        <details><summary>測試、證據與發布狀態</summary><dl>
+            <dt>Receipt／Preset／Gate／11-shot</dt><dd>測試收據／固定測試組合／驗收門檻／11 個固定鏡頭的影像驗收。</dd>
+            <dt>Hash／SHA-256／Fingerprint／Provenance</dt><dd>內容雜湊／一種雜湊演算法／來源指紋／來源追溯資訊；用於核對內容是否一致。</dd>
+            <dt>Normal／GBV／Debug</dt><dd>一般模式／GPU 驗證模式／除錯診斷；必須各自提供實際執行證據。</dd>
+            <dt>Fresh Build／CTest／Suite／Target</dt><dd>目前來源的全新建置／CMake 測試執行工具／測試集合／指定建置目標。</dd>
+            <dt>WIP／GO／NO-GO／Scope-limited／Production</dt><dd>開發中／指定範圍可通過／指定範圍未通過／僅限所列範圍／正式執行路徑或可實用完整能力，須依上下文判斷，不能僅由名稱推斷完成度。</dd>
+            <dt>Hostile／Tamper／Fail-closed／Mutation</dt><dd>刻意找錯的獨立審查／竄改測試／無法證明有效時拒絕繼續／人工改壞資料的測試。</dd>
+            <dt>Raw／Paired／Benchmark／Parity／Replay</dt><dd>未平滑的原始數據／成對比較／基準測試／結果一致性／重播。</dd>
+            <dt>Commit／Stage／Immutable Release／Latest／Pinned</dt><dd>版本提交／挑選待提交檔案／封存後不變的發布版本／最新版本入口／固定版本入口。</dd>
+            <dt>Trust Anchor／Handle-relative／Reparse／Hardlink</dt><dd>可信核對基準／以已開啟的檔案控制代碼定位／檔案系統重新解析點／硬連結。</dd>
+            <dt>Atomic Rename／Checked Overflow／Rollback／Cache</dt><dd>不可分割的重新命名操作／經檢查的數值溢位／回復前一有效狀態／快取。</dd>
+            <dt>Snapshot／Journal／Canonical／Payload</dt><dd>狀態快照／變更日誌／一致的標準化表示／實際資料內容。</dd>
+            <dt>GAP／DRIFT／STEP</dt><dd>本頁角色測試中的左右腳週期相位差／漂移量／步幅量測指標；定義與單位應對照該測試收據，不推廣為通用美術評分。</dd>
+        </dl></details>
+    </section>
+
     <section class="showcase-section reality-grid" aria-labelledby="limits-title">
         <div class="section-heading"><p class="micro-label">CURRENT REALITY</p><h2 id="limits-title">清楚標示尚未完成</h2></div>
-        <article><strong>34 / 100</strong><p>r6 11-shot 權威視覺分數。Demo 門檻是 70 且 hard issue 為 0。</p></article>
-        <article><strong>v1.4 未發布</strong><p>r7 構圖、光照、材質、植被、水面與角色可讀性仍待獨立 gate。</p></article>
+        <article><strong>40 / 100</strong><p>最新同鏡位 11-shot 權威視覺分數；基準 34，增加 6。Demo 門檻仍是 70 且 hard issue 為 0。</p></article>
+        <article><strong>v1.4 未發布</strong><p>人物頭髮尖刺、God 巨型遮擋物、世界邊緣空洞與左上除錯文字仍待修正。</p></article>
         <article><strong>DLSS production 支援未完成</strong><p>commit b09040e 已驗證 output-resolution depth semantic replay 與 Streamline lifecycle；這是未發布切片，不等於跨場景、跨硬體的完整 DLSS 產品支援。</p></article>
         <article><strong>Bloom slice 已提交</strong><p>commit b09040e（承接 1186b60）；raw paired GPU／CPU hostile gates、Streamline runtime package gate 234.09 秒與 hooks-off Release build 通過。仍不是完整 production 功能或發布證據。</p></article>
         <article><strong>Production HLOD 未完成</strong><p>GPU selector seam、gameplay transition pixel oracle 與 SceneECS ownership 已驗證（commit 29cfd7e／1adeacd／466b8d5）；完整 production HLOD（OnRender、aggregate proxy、全 descriptor coverage、真實 workload）仍未完成。</p></article>
         <article><strong>最新渲染切片已驗證</strong><p>commit c0b3197 修正 MSAA HDR／contact-shadow RTV slot 衝突；fresh Normal／GBV、CTest 4/4、third-day effective ROI coverage=1、GPU debug 0/0。這不等於完整 Demo 或視覺 gate 通過。</p></article>
-        <article><strong>r7 視覺 NO-GO</strong><p>完整 production HLOD 與 r7 構圖、光照、材質、植被、水面、角色可讀性仍未通過；34 / 100 與 v1.4 未發布狀態不變。</p></article>
+        <article><strong>仍未達 Demo 門檻</strong><p>聚落地被與建築細節已讓視覺提升至 40／100，但完整 production HLOD、人物與畫面缺陷仍未完成；v1.4 維持未發布。</p></article>
     </section>
-    <p class="showcase-source">資料基準：TASK_STATE、EngineFeatureCatalog、EngineChangeLog、已推送引擎 commit fff5638／f0129d1／ab976d21c9505a9295be292211a18d8c42db9edc／4b73f0fa77d6f4e117a4b54b225bea697fe65397／3c5c684／dc8dab3／28fd2d0 與目前可追溯 release 目錄。最新三個里程碑分別涵蓋 temporal provenance、archive collection 與 compiler Object-ID probe；其中 fresh focused 4/4 已通過，完整 11-shot 仍待遠端驗證。角色 v11 僅為隔離技術 PASS／視覺 NO-GO 預覽，不是正式資產。這些切片不代表視覺或角色美術已達標；Demo 仍為 34 / 100，v1.4 未發布。頁面不從未封印的 build／test artifact 推導目前通過狀態。</p>
+    <p class="showcase-source">資料基準：TASK_STATE、EngineFeatureCatalog、EngineChangeLog、已推送引擎 commit <code>d6e097677c1cedab868d7239aae7d461379fd31c</code> 與既有可追溯 release 目錄。最新權威視覺為同鏡位 40／100；網站只複製四張已驗證 Normal 擷取圖並記錄 SHA-256，不把 build／test 目錄當成網站來源。角色 v11 僅為隔離技術 PASS／視覺 NO-GO 預覽，不是正式資產；M2 頭髮尖刺等缺陷仍存在。v1.4 未發布。</p>
     <aside id="showcaseDetail" class="showcase-detail" aria-live="polite" aria-hidden="true"><button type="button" aria-label="關閉詳情">×</button><p class="micro-label">TRACEABLE DETAIL</p><h2>選取項目</h2><p>點擊版本或架構節點查看證據邊界。</p></aside>
-    <div id="showcaseLightbox" class="showcase-lightbox" role="dialog" aria-modal="true" aria-label="角色預覽大圖" aria-hidden="true">
+    <div id="showcaseLightbox" class="showcase-lightbox" role="dialog" aria-modal="true" aria-label="展示影像大圖" aria-hidden="true">
         <button type="button" class="lightbox-close" aria-label="關閉角色預覽">×</button>
         <button type="button" class="lightbox-step lightbox-prev" data-lightbox-step="-1" aria-label="上一張角色預覽">‹</button>
         <figure><img src="" alt="" /><figcaption></figcaption></figure>

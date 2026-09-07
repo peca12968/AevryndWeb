@@ -5,6 +5,75 @@
   "disclosure": "歷史實機截圖動畫導覽（非連續遊玩錄影）",
   "continuousGameplayRecording": false,
   "sourcePolicy": "Only immutable in-engine release capture PNG files were encoded; no generated or synthetic gameplay imagery was used.",
+  "authoritativeVisualScore": {
+    "updatedDate": "2026-09-07",
+    "engineCommit": "d6e097677c1cedab868d7239aae7d461379fd31c",
+    "baselineScore": 34,
+    "currentScore": 40,
+    "targetScore": 70,
+    "releaseStatus": "wip-v1.4-unreleased",
+    "rubric": {
+      "composition": { "score": 9, "maximum": 20 },
+      "character": { "score": 4, "maximum": 20 },
+      "materials": { "score": 8, "maximum": 15 },
+      "lighting": { "score": 7, "maximum": 15 },
+      "sceneCompleteness": { "score": 8, "maximum": 20 },
+      "technicalDefects": { "score": 4, "maximum": 10 }
+    },
+    "validation": {
+      "build": "fresh Release ALL_BUILD",
+      "focusedTests": "5/5",
+      "normalSeconds": 250.03,
+      "gbvSeconds": 109.98,
+      "gpuDebugErrors": 0,
+      "gpuDebugWarnings": 0,
+      "sameCameraShotCount": 11
+    },
+    "knownIssues": [
+      "M2 male character hair spikes",
+      "large obstruction in God camera",
+      "world-edge void",
+      "top-left debug text"
+    ],
+    "comparisonImages": [
+      {
+        "view": "god-day",
+        "state": "baseline-34",
+        "file": "visual-score-34-god-day.png",
+        "width": 1280,
+        "height": 720,
+        "sha256": "f794994de974ac11201dc412aa587a2f6f29d8ee9df72689856bc15d898eadfb",
+        "source": "D:/Download/Aevrynd/bld/visual-score-origin-clean-fresh-20260907/bin/Release/gameplay-captures-normal/god-day.png"
+      },
+      {
+        "view": "god-day",
+        "state": "current-40",
+        "file": "visual-score-40-god-day.png",
+        "width": 1280,
+        "height": 720,
+        "sha256": "8f8a34f365a831fea599b8cfa308e112e5405c1032ae9781e102175733ba4070",
+        "source": "D:/Download/Aevrynd/bld/visual-score-40-authority-fresh-20260907/bin/Release/gameplay-captures-normal/god-day.png"
+      },
+      {
+        "view": "third-day",
+        "state": "baseline-34",
+        "file": "visual-score-34-third-day.png",
+        "width": 1280,
+        "height": 720,
+        "sha256": "a3bc614d55cafd9ff16a05f4a2ff4e272e47cdc8722a62aeb9ec3e3e527f3f3e",
+        "source": "D:/Download/Aevrynd/bld/visual-score-origin-clean-fresh-20260907/bin/Release/gameplay-captures-normal/third-day.png"
+      },
+      {
+        "view": "third-day",
+        "state": "current-40",
+        "file": "visual-score-40-third-day.png",
+        "width": 1280,
+        "height": 720,
+        "sha256": "44f011787dec52298112cd3fa4b6b06c3950e8f9b6bafbd712f01eb8ab3b4c8e",
+        "source": "D:/Download/Aevrynd/bld/visual-score-40-authority-fresh-20260907/bin/Release/gameplay-captures-normal/third-day.png"
+      }
+    ]
+  },
   "heroineWip": {
     "version": "mpfb-v11",
     "status": "technical-pass-visual-no-go",
