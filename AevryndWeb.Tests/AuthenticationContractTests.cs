@@ -48,7 +48,7 @@ public sealed class AuthenticationContractTests
         Assert.Contains("ENGINE ARCHITECTURE", html); Assert.Contains("TRACEABLE RELEASES", html);
         Assert.Contains("data-release-filter", html); Assert.Contains("data-stage-filter", html);
         Assert.Contains("data-map-zoom", html); Assert.Contains("/js/showcase.js", html);
-        Assert.Equal("default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data: blob:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'", response.Headers.GetValues("Content-Security-Policy").Single());
+        Assert.Equal("default-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self' blob:; img-src 'self' data: blob:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'", response.Headers.GetValues("Content-Security-Policy").Single());
         var dataTables = SourceFile("wwwroot", "lib", "datatables", "datatables.min.js");
         var metadata = SourceFile("wwwroot", "lib", "datatables", "package.core.json");
         var styleMetadata = SourceFile("wwwroot", "lib", "datatables", "package.style.json");
