@@ -282,6 +282,15 @@ bundle can be reproduced from the recorded URL and digest when required.
   6.89 MiB and 5.45 MiB, with LOD1 20.8% smaller. Its strict score is 63/100:
   side and rear grooming earn one point, while crown breakup, card rhythm and
   engine hair shading remain below review quality.
+- `aevrynd-female-authoring-v45.blend`: conforms 133 large and 161 medium hair
+  cards to separate 1.10 mm and 2.65 mm scalp shells, narrows every card by a
+  deterministic per-clump factor, and replaces the mostly solid card texture
+  with an Aevrynd-owned 23-fiber low-background-alpha map. The raised crown
+  loops and broad plastic strips disappear without changing 46 other v44 mesh
+  objects. Neutral and posed checks report zero card/body, card/scalp and
+  inter-card intersections. Full and LOD1 GLBs are 6.90 MiB and 5.46 MiB,
+  with LOD1 20.8% smaller. Its strict score is 64/100; the crown direction
+  field, part width, scalp-mask seams and engine dual-lobe shading remain open.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

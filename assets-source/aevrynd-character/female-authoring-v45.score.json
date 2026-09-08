@@ -1,0 +1,55 @@
+{
+  "asset": "aevrynd-female-authoring-v45.blend",
+  "state": "AUTHORING",
+  "score": 64,
+  "eligibleForReview": false,
+  "scoringCalibration": "One hair point is earned because both card hierarchies now conform to nested scalp shells, broad floating loops are removed, widths vary per clump and the alpha texture resolves separated fibers instead of a mostly solid ribbon. The crown part, fiber direction field and scalp-mask boundaries still fail review quality.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 10, "max": 16 },
+    "skinEyesMouthNails": { "score": 11, "max": 12 },
+    "hairAndHairline": { "score": 11, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "unchangedBaselineMeshObjects": 46,
+    "largeCardComponents": 133,
+    "mediumCardComponents": 161,
+    "largeCardScalpShellMm": 1.1,
+    "mediumCardScalpShellMm": 2.65,
+    "largeCardWidthFactorRange": [0.5247, 0.7996],
+    "mediumCardWidthFactorRange": [0.5840, 0.8798],
+    "neutralAuditedCardTriangleOverlaps": 0,
+    "posedAuditedCardTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7229904,
+    "lod1GlbBytes": 5724444,
+    "lod1ReductionPercent": 20.8,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The raised grey card loops visible from the crown are removed by projecting each row onto a controlled scalp shell.",
+    "Large and medium cards no longer read as uniformly wide opaque strips; per-card width variation and a 23-fiber low-background-alpha texture expose finer breakup.",
+    "Front, three-quarter, side and rear views retain the v44 silhouette while showing narrower, lower-specular clump response."
+  ],
+  "rejectedExperiments": [
+    "The first v45 build treated isolated vertices left by an older crossing-face cleanup as card components and was rejected before rendering because an odd vertex count cannot form paired ribbon rows.",
+    "Awarding more than one point was rejected because the overhead part remains too broad, fine fibers cross the intended flow and the right undercut-density mask has a visible rectangular edge."
+  ],
+  "blockingFailures": [
+    "The crown needs a coherent authored direction field with a narrower irregular part and fewer cross-flow fibers.",
+    "The undercut and scalp density masks need seamless boundaries around both ears and the rear transition.",
+    "Hair shading still needs an engine-side dual-lobe anisotropic model and strand-scale roughness variation.",
+    "The body needs expression-compatible lip loops and a deformable mouth opening before teeth and tongue can be exposed during speech.",
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}
