@@ -1,0 +1,50 @@
+{
+  "asset": "aevrynd-female-authoring-v15.blend",
+  "state": "AUTHORING",
+  "score": 71,
+  "eligibleForReview": false,
+  "categories": {
+    "anatomyAndSilhouette": { "score": 14, "max": 16 },
+    "faceIdentityAndForms": { "score": 14, "max": 16 },
+    "skinEyesMouthNails": { "score": 11, "max": 12 },
+    "hairAndHairline": { "score": 9, "max": 14 },
+    "topologyUvAndLods": { "score": 8, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "mouthFoundationVertices": 350,
+    "maximumMouthFoundationDeltaM": 0.0011637806999240732,
+    "upperLipVertices": 245,
+    "lowerLipVertices": 245,
+    "wetLineVertices": 130,
+    "mouthSkinnedLayers": 3,
+    "maximumMouthLayerBoneInfluences": 2,
+    "unweightedMouthVertices": 0,
+    "neutralMouthBodyTriangleOverlaps": 0,
+    "posedMouthBodyTriangleOverlaps": 0,
+    "neutralUpperLowerLipTriangleOverlaps": 0,
+    "posedUpperLowerLipTriangleOverlaps": 0,
+    "neutralHairBodyTriangleOverlaps": 0,
+    "posedHairBodyTriangleOverlaps": 0,
+    "neutralClothingBodyTriangleOverlaps": 0,
+    "posedClothingBodyTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeHasColor0": true,
+    "runtimeGlbBytes": 8188204,
+    "lod1GlbBytes": 6217720
+  },
+  "blockingFailures": [
+    "The lips now have volume, a cupid's bow and a separate wet line, but the mouth cannot open and has no oral cavity, teeth, gums or tongue.",
+    "The procedural lip topology needs manual corner loops and expression-shape validation before facial animation.",
+    "The side and rear scalp-cap boundaries still terminate too abruptly and remain visible at close range.",
+    "Temple and ear transitions need a manually shaped silhouette around the helix.",
+    "The face still lacks mature asymmetry, fine expression anatomy and pore-scale surface response.",
+    "Skin normal and roughness maps remain disconnected until UV tangents are seam-safe.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the pose suite remains incomplete.",
+    "LOD transition popping has not yet been tested in the website renderer."
+  ]
+}

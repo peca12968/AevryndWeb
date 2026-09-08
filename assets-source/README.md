@@ -84,6 +84,13 @@ bundle can be reproduced from the recorded URL and digest when required.
   test verifies a 24.1% byte reduction without losing skin color or deformation.
   `scripts/audit-female-groom-v14.py` checks all seven full groom layers against
   the body in both validation poses.
+- `aevrynd-female-authoring-v15.blend`: rebuilt upper and lower lips with five
+  surface rows, explicit cupid's bow and lower-lip volume, a sculpted mouth
+  foundation, and an independently skinned wet-line layer. The former flat
+  mouth-crease strip is removed. `scripts/audit-female-mouth-v15.py` verifies
+  skin weights and zero body or upper/lower-lip triangle intersections in both
+  validation poses. A true opening oral cavity and expression shapes remain
+  required before this mouth can pass review.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
