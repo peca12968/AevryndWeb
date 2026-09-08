@@ -1,0 +1,35 @@
+{
+  "asset": "aevrynd-female-authoring-v3.blend",
+  "state": "AUTHORING",
+  "score": 46,
+  "eligibleForReview": false,
+  "categories": {
+    "anatomyAndSilhouette": { "score": 14, "max": 16 },
+    "faceIdentityAndForms": { "score": 11, "max": 16 },
+    "skinEyesMouthNails": { "score": 5, "max": 12 },
+    "hairAndHairline": { "score": 2, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 0, "max": 10 },
+    "rigAndDeformation": { "score": 0, "max": 8 },
+    "collisionIntegrity": { "score": 2, "max": 10 },
+    "runtimePerformance": { "score": 5, "max": 6 }
+  },
+  "verified": {
+    "identityChangedVertices": 2704,
+    "identityMaximumDisplacementMeters": 0.0025463104406606377,
+    "surfaceAnchoredHairLayers": 6,
+    "missedSurfaceRoots": 0,
+    "eyeLayers": 10,
+    "runtimeObjectCount": 17
+  },
+  "blockingFailures": [
+    "Facial identity remains a broad-form pass and has no expression validation.",
+    "Eyelid thickness and tear meniscus are not authored.",
+    "Cornea transparency still requires Cycles and runtime validation.",
+    "Skin microstructure is procedural authoring data and has not been baked.",
+    "No mouth interior, teeth or tongue layer exists.",
+    "No scalp hair or hairline exists.",
+    "No Aevrynd skeleton, skin weights or deformation pose suite exists.",
+    "No clothing layers or posed collision results exist."
+  ]
+}
