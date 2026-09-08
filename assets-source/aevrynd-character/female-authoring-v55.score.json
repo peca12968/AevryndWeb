@@ -1,0 +1,92 @@
+{
+  "asset": "aevrynd-female-authoring-v55.blend",
+  "state": "AUTHORING",
+  "score": 54,
+  "eligibleForReview": false,
+  "scoringCalibration": "The score is rebased against fixed front, three-quarter, left, right, back and extreme-top renders. The new layered fibers improve the ordinary front and profile silhouette, but the exposed forehead band, repetitive curtain rhythm, rear split and extreme-top ribbon fan are production-blocking defects. Hair and face receive no near-finished credit while those defects remain visible.",
+  "categories": {
+    "anatomyAndSilhouette": {
+      "score": 10,
+      "max": 16
+    },
+    "faceIdentityAndForms": {
+      "score": 7,
+      "max": 16
+    },
+    "skinEyesMouthNails": {
+      "score": 8,
+      "max": 12
+    },
+    "hairAndHairline": {
+      "score": 7,
+      "max": 14
+    },
+    "topologyUvAndLods": {
+      "score": 7,
+      "max": 8
+    },
+    "clothingAndLayers": {
+      "score": 2,
+      "max": 10
+    },
+    "rigAndDeformation": {
+      "score": 2,
+      "max": 8
+    },
+    "collisionIntegrity": {
+      "score": 7,
+      "max": 10
+    },
+    "runtimePerformance": {
+      "score": 4,
+      "max": 6
+    }
+  },
+  "verified": {
+    "unchangedBaselineMeshes": 43,
+    "removedLegacyGroomMeshes": 5,
+    "fullBaseStrands": 1850,
+    "fullDetailStrands": 725,
+    "lod1Strands": 588,
+    "fullHairVertices": 51500,
+    "lod1HairVertices": 11760,
+    "minimumFullHairBodyClearanceM": 0.004729128,
+    "neutralAuditedHairBodyTriangleOverlaps": 0,
+    "posedAuditedHairBodyTriangleOverlaps": 0,
+    "neutralAuditedHairUndercutTriangleOverlaps": 0,
+    "posedAuditedHairUndercutTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 8287724,
+    "lod1GlbBytes": 6381356,
+    "lod1ReductionPercent": 23.0,
+    "prohibitedRuntimeDependenciesFound": false,
+    "neutralAuditedHairScalpTriangleOverlaps": 0,
+    "posedAuditedHairScalpTriangleOverlaps": 0
+  },
+  "visualFindings": [
+    "The front and three-quarter silhouette now reads as continuous straight hair instead of sparse comb teeth and detached crown strips.",
+    "Staggered scalp-leave points and tangent-preserving cubic paths remove the hard horizontal helmet rim found by the new profile cameras.",
+    "The scalp density layer retains its feathered alpha edge while using a darker root tone, so the hairline no longer appears as a bright gray cap.",
+    "The dedicated 588-strand LOD preserves the front silhouette in a fixed-camera render while reducing the complete asset by 23 percent."
+  ],
+  "rejectedExperiments": [
+    "v53 was rejected because pruning 32 cross-flow guides and shifting old strand roots did not materially improve the front view or crown coverage.",
+    "v54 was rejected because a small number of wide overlapping cards produced a helmet-like crown and striped rear gaps.",
+    "An opaque seven-card rear underlay was rejected because it created visible black strips with hard tips instead of closing the rear flow naturally."
+  ],
+  "blockingFailures": [
+    "The extreme top view exposes a radial fan of ribbon tips and fails the production silhouette gate.",
+    "The forehead density band is too broad and geometric, while the front hairline lacks believable irregular recession and transition fibers.",
+    "The side lengths still read as a repetitive vertical curtain and need larger clump hierarchy, flyaways and ear-aware grouping.",
+    "The rear center still has a visible vertical separation and needs a more irregular overlapping root field.",
+    "Hair shading still needs an engine-side dual-lobe anisotropic model and strand-scale roughness variation.",
+    "The face still needs expression-oriented perioral loops, asymmetric commissure sculpting and a phoneme pose suite.",
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ],
+  "scoringPolicyRevision": "strict-fixed-six-view-v2"
+}

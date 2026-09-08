@@ -340,6 +340,17 @@ bundle can be reproduced from the recorded URL and digest when required.
   66/100; eyelid topology, commissure form, crown flow, clothing and corrective
   deformation remain below review quality.
 
+- `aevrynd-female-authoring-v55.blend`: replaces five legacy groom meshes with
+  1,850 base and 725 detail fiber clumps plus a separate 588-clump LOD1. The
+  strand paths use staggered scalp-leave points and tangent-preserving cubic
+  falls, removing the hard profile helmet rim while retaining a feathered dark
+  scalp-density layer. Neutral and posed BVH audits report zero intersections
+  with the body, undercut and physical scalp. Full and LOD1 GLBs are 7.90 MiB
+  and 6.09 MiB, with LOD1 23.0% smaller. Under the stricter fixed six-view
+  rubric its score is 54/100: the extreme-top ribbon fan, geometric forehead
+  density band, repetitive side curtain and rear split remain production
+  blockers, so this stage cannot replace the accepted site preview.
+
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
 satisfied.
