@@ -123,6 +123,15 @@ bundle can be reproduced from the recorded URL and digest when required.
   The score is recalibrated to a strict visual-first 47/100: the visible face
   improvement does not compensate for the doll-like eyes, layered mouth,
   plastic skin, sparse groom, construction clothing and limited deformation.
+- `aevrynd-female-authoring-v20.blend`: narrows the round eye apertures with a
+  guarded orbital sculpt, enables the existing transparent corneas in review
+  renders, shrinks the artificial catchlights and adds 52 bounded radial iris
+  fibers per eye. Eyelashes and tear menisci are reprojected to a measured
+  0.32 mm facial clearance; the dedicated eye audit verifies zero exact body
+  intersections for folds, lashes, tear layers and iris fibers in both poses.
+  Full and LOD1 previews remain under the size gates at 7.75 MiB and 6.14 MiB.
+  The strict visual-first score rises only to 48/100 because the integrated lid
+  anatomy, lash rhythm, skin, mouth, groom, clothing and deformation still fail.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

@@ -1,0 +1,63 @@
+{
+  "asset": "aevrynd-female-authoring-v20.blend",
+  "state": "AUTHORING",
+  "score": 48,
+  "eligibleForReview": false,
+  "scoringCalibration": "Visual realism is scored independently; passing topology, collision and runtime checks cannot compensate for weak face, skin, hair, clothing or deformation quality.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 6, "max": 16 },
+    "skinEyesMouthNails": { "score": 6, "max": 12 },
+    "hairAndHairline": { "score": 4, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "orbitVerticesChanged": 961,
+    "maximumOrbitDeltaM": 0.0010862783557025457,
+    "maximumUpperLidDeltaM": 0.001022956270275506,
+    "maximumLowerLidDeltaM": 0.0004469334590836863,
+    "irisFiberRaysPerEye": 52,
+    "irisFiberVerticesPerEye": 208,
+    "irisFiberFacesPerEye": 52,
+    "corneasEnabledInReviewRender": true,
+    "catchlightMaximumDimensionBelow1mm": true,
+    "neutralEyeLayerBodyTriangleOverlaps": 0,
+    "posedEyeLayerBodyTriangleOverlaps": 0,
+    "neutralHairBodyTriangleOverlaps": 0,
+    "posedHairBodyTriangleOverlaps": 0,
+    "neutralMouthBodyTriangleOverlaps": 0,
+    "posedMouthBodyTriangleOverlaps": 0,
+    "neutralClothingBodyTriangleOverlaps": 0,
+    "posedClothingBodyTriangleOverlaps": 0,
+    "nonFiniteIrisFiberVertices": 0,
+    "runtimeBones": 21,
+    "runtimeHasColor0": true,
+    "runtimeGlbBytes": 8123092,
+    "lod1GlbBytes": 6437972,
+    "lod1ReductionPercent": 20.7,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The reduced upper aperture and raised lower lid remove part of the round doll stare.",
+    "Transparent corneas add wet reflections and visible depth over both irises.",
+    "Bounded radial iris fibers add internal color breakup without crossing the eyelids.",
+    "The procedural eyebrow and eyelash spacing remains too regular.",
+    "The upper eyelid folds still read as drawn curves rather than integrated skin anatomy."
+  ],
+  "blockingFailures": [
+    "The eyelid folds, medial canthi, lacrimal caruncles and orbital fat pads still need integrated sculpted topology.",
+    "Eyelash roots and brow hairs need hand-authored density, direction, length and clumping variation.",
+    "The mouth base needs a true mouth slit, oral cavity and animation-ready corner loops.",
+    "Face planes still require high-resolution manual sculpting around the zygomatic, nasolabial, temporal and jaw regions.",
+    "The hair needs a continuous hand-shaped scalp foundation, coherent part, layered clump cards and clean ear/nape transitions.",
+    "Skin requires region-specific albedo, pore direction, roughness, oiliness, redness and subsurface response.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the two audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}
