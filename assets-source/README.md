@@ -291,6 +291,14 @@ bundle can be reproduced from the recorded URL and digest when required.
   inter-card intersections. Full and LOD1 GLBs are 6.90 MiB and 5.46 MiB,
   with LOD1 20.8% smaller. Its strict score is 64/100; the crown direction
   field, part width, scalp-mask seams and engine dual-lobe shading remain open.
+- `aevrynd-female-authoring-v46.blend`: replaces the coarse 72 by 15 undercut
+  density shell with a 96 by 28 body-projected layer and a wide smooth fade on
+  all four edges. The visible rectangular patch behind the right ear is removed
+  while COLOR_0 alpha, skin weights and the separate runtime layer remain
+  intact. Neutral and posed checks report zero intersections with the body,
+  scalp or ten other hair layers; 47 other v45 meshes preserve exact geometry.
+  Full and LOD1 GLBs are 6.99 MiB and 5.46 MiB, with LOD1 21.9% smaller. Its
+  strict score is 65/100; crown flow and engine dual-lobe shading remain open.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

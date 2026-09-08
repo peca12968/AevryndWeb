@@ -1,0 +1,55 @@
+{
+  "asset": "aevrynd-female-authoring-v46.blend",
+  "state": "AUTHORING",
+  "score": 65,
+  "eligibleForReview": false,
+  "scoringCalibration": "One hair point is earned because the undercut density layer now blends gradually on all four edges and the rectangular ear-side seam is no longer visible in the composite side and rear views. The crown direction field and engine dual-lobe shading still prevent full hair credit.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 10, "max": 16 },
+    "skinEyesMouthNails": { "score": 11, "max": 12 },
+    "hairAndHairline": { "score": 12, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "unchangedBaselineMeshObjects": 47,
+    "undercutVertices": 2688,
+    "undercutFaces": 2565,
+    "undercutAlphaRange": [0.0, 0.4588],
+    "edgeVerticesBelowAlpha0_05": 691,
+    "unweightedVertices": 0,
+    "projectionMisses": 0,
+    "neutralAuditedUndercutTriangleOverlaps": 0,
+    "posedAuditedUndercutTriangleOverlaps": 0,
+    "runtimeColorAttributePresent": true,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7332552,
+    "lod1GlbBytes": 5724512,
+    "lod1ReductionPercent": 21.9,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The isolated undercut shell now fades across multiple columns and rows instead of jumping from zero to a visible density block.",
+    "The rectangular patch behind the right ear is removed in the full groom composite.",
+    "The rear density band blends more gradually into skin while preserving the short-hair silhouette established in v44."
+  ],
+  "rejectedExperiments": [
+    "Keeping the original 72 by 15 grid was rejected because its first interior column reached roughly 0.13 alpha and exposed the rectangular mesh boundary.",
+    "Awarding more than one point was rejected because the overhead part remains too broad and cross-flow fibers still weaken the authored hairstyle direction."
+  ],
+  "blockingFailures": [
+    "The crown needs a coherent authored direction field with a narrower irregular part and fewer cross-flow fibers.",
+    "Hair shading still needs an engine-side dual-lobe anisotropic model and strand-scale roughness variation.",
+    "The body needs expression-compatible lip loops and a deformable mouth opening before teeth and tongue can be exposed during speech.",
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}
