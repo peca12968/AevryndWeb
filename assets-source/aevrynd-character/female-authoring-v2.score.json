@@ -1,0 +1,33 @@
+{
+  "asset": "aevrynd-female-authoring-v2.blend",
+  "state": "AUTHORING",
+  "score": 39,
+  "eligibleForReview": false,
+  "categories": {
+    "anatomyAndSilhouette": { "score": 13, "max": 16 },
+    "faceIdentityAndForms": { "score": 9, "max": 16 },
+    "skinEyesMouthNails": { "score": 4, "max": 12 },
+    "hairAndHairline": { "score": 0, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 0, "max": 10 },
+    "rigAndDeformation": { "score": 0, "max": 8 },
+    "collisionIntegrity": { "score": 1, "max": 10 },
+    "runtimePerformance": { "score": 5, "max": 6 }
+  },
+  "verified": {
+    "eyeLayerCount": 10,
+    "eyeRoles": ["sclera", "iris", "pupil", "cornea", "limbalring"],
+    "irisTexture": "textures/aevrynd-iris-hazel-v1.png",
+    "runtimeGlbBytes": 2112892
+  },
+  "blockingFailures": [
+    "Generic source face has no approved Aevrynd identity or expression shapes.",
+    "Cornea transparency still requires Cycles and runtime validation.",
+    "Eyelid thickness, tear meniscus, eyelashes and brows are missing.",
+    "No skin texture or baked micro-detail set exists.",
+    "No mouth interior, teeth or tongue layer exists.",
+    "No hair or hairline exists.",
+    "No Aevrynd skeleton, skin weights or deformation pose suite exists.",
+    "No clothing layers or posed collision results exist."
+  ]
+}
