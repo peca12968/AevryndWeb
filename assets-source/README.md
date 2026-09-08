@@ -221,6 +221,16 @@ bundle can be reproduced from the recorded URL and digest when required.
   reduction, and preserve all four lash meshes, 21 bones and one animation. Its
   strict score is 58/100. The first evenly spaced v38 pass was rejected because
   it still read as comb teeth.
+- `aevrynd-female-authoring-v39.blend`: replaces both legacy eyebrow meshes,
+  whose bounds implied roughly 35 mm comb-like strands, with 120 tapered
+  3.0-9.7 mm fibers per side. Inner fibers rise, middle fibers follow the arch
+  and tail fibers flatten outward. Each brow also has a separate 175-vertex
+  root-density layer with an exportable 0.025-0.425 alpha fade. Neutral and
+  posed checks report zero intersections between fibers, density surfaces and
+  the body; 40 other baseline meshes keep identical geometry. Full and LOD1
+  GLBs are 7.06 MiB and 5.45 MiB, a 22.8% reduction, and preserve both fiber
+  groups and both density layers. Its strict score is 59/100. The fiber-only
+  first pass was rejected as too sparse.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

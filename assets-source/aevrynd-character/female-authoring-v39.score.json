@@ -1,0 +1,60 @@
+{
+  "asset": "aevrynd-female-authoring-v39.blend",
+  "state": "AUTHORING",
+  "score": 59,
+  "eligibleForReview": false,
+  "scoringCalibration": "One face-identity point is earned because both eyebrows now combine a low-opacity root-density layer with 120 directional tapered fibers instead of 35 mm comb-like strands. The remaining head groom and integrated eyelid topology still prevent a review-quality face.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 10, "max": 16 },
+    "skinEyesMouthNails": { "score": 10, "max": 12 },
+    "hairAndHairline": { "score": 7, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "unchangedBaselineMeshObjects": 40,
+    "rebuiltBrowFiberLayers": 2,
+    "newBrowDensityLayers": 2,
+    "fibersPerBrow": 120,
+    "fiberVerticesPerBrow": 1800,
+    "fiberFacesPerBrow": 1440,
+    "browLengthRangeM": [0.002958, 0.009703],
+    "densityVerticesPerBrow": 175,
+    "densityFacesPerBrow": 136,
+    "authoredDensityAlphaRange": [0.025, 0.425],
+    "neutralBrowBodyTriangleOverlaps": 0,
+    "posedBrowBodyTriangleOverlaps": 0,
+    "neutralBrowDensityTriangleOverlaps": 0,
+    "posedBrowDensityTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7398420,
+    "lod1GlbBytes": 5713300,
+    "lod1ReductionPercent": 22.8,
+    "runtimeBrowFiberLayers": 2,
+    "runtimeBrowDensityLayers": 2,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "Each eyebrow now has a continuous soft root shadow instead of visible gaps between isolated fibers.",
+    "Inner hairs grow more upright, middle hairs follow the arch and tail hairs flatten outward.",
+    "Two close brown values break up the former uniform line without producing colored noise.",
+    "The eyebrow arch remains asymmetric at fiber level while both overall silhouettes stay controlled."
+  ],
+  "rejectedExperiments": [
+    "The first v39 pass used only the 120-fiber layers and was rejected because it looked sparse and lacked root density."
+  ],
+  "blockingFailures": [
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "A true mouth slit, oral cavity, teeth, tongue and expression-compatible lip topology are still missing.",
+    "The primary groom still needs hand-shaped large and medium clumps, a readable part, crown breakup and controlled side volume.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}
