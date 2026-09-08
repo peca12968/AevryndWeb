@@ -1,0 +1,43 @@
+{
+  "asset": "aevrynd-female-authoring-v11.blend",
+  "state": "AUTHORING",
+  "score": 65,
+  "eligibleForReview": false,
+  "categories": {
+    "anatomyAndSilhouette": { "score": 14, "max": 16 },
+    "faceIdentityAndForms": { "score": 13, "max": 16 },
+    "skinEyesMouthNails": { "score": 9, "max": 12 },
+    "hairAndHairline": { "score": 8, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 3, "max": 6 }
+  },
+  "verified": {
+    "primaryHairStrands": 1756,
+    "guideStrands": 136,
+    "hairlineNapeAndSideburnStrands": 825,
+    "flyawayStrands": 52,
+    "hairScalpCoatWeight": 0,
+    "neutralHairBodyTriangleOverlaps": 0,
+    "posedHairBodyTriangleOverlaps": 0,
+    "neutralLipBodyTriangleOverlaps": 0,
+    "posedLipBodyTriangleOverlaps": 0,
+    "neutralClothingBodyTriangleOverlaps": 0,
+    "posedClothingBodyTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeGlbBytes": 7823332
+  },
+  "blockingFailures": [
+    "The frontal hairline is still too straight and needs a deliberately sculpted asymmetrical contour.",
+    "Temple and ear transitions remain visibly procedural despite the added sideburn layer.",
+    "The short style lacks large and medium clump hierarchy; individual fibers dominate at close range.",
+    "The groom has no lower-density runtime LOD and increases the preview to 7.46 MiB.",
+    "The face still lacks mature secondary forms around the eyelids, cheeks, philtrum and mouth corners.",
+    "The lips need true integrated volume, wet line and inner-mouth geometry.",
+    "Skin normal and roughness maps remain disconnected until UV tangents are seam-safe.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the pose suite remains incomplete."
+  ]
+}

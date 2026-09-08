@@ -56,6 +56,12 @@ bundle can be reproduced from the recorded URL and digest when required.
   `scripts/audit-female-head-v10.py` verifies zero body intersections for the
   scalp, primary hair, detail fibers and lips at neutral and turned-head frames.
   The groom silhouette and back-scalp appearance still fail visual review.
+- `aevrynd-female-authoring-v11.blend`: full groom-topology replacement using
+  tapered three-sided fibers following regional scalp flow. Primary hair,
+  authoring guides, frontal/nape/sideburn transition hairs and flyaways are
+  explicit layers. The scalp coat reflection that produced the circular back
+  patch is removed. `scripts/audit-female-groom-v11.py` checks all groom layers
+  against the body at neutral and turned-head frames.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
