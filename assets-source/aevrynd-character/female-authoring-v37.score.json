@@ -1,0 +1,55 @@
+{
+  "asset": "aevrynd-female-authoring-v37.blend",
+  "state": "AUTHORING",
+  "score": 57,
+  "eligibleForReview": false,
+  "scoringCalibration": "One eye-detail point is earned because the lower meniscus was rebuilt without the former white triangular artifacts and explicit lacrimal caruncles now define both medial canthi. Integrated eyelid thickness and deformation-ready canthus topology remain incomplete.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 9, "max": 16 },
+    "skinEyesMouthNails": { "score": 9, "max": 12 },
+    "hairAndHairline": { "score": 7, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "unchangedBaselineMeshObjects": 38,
+    "rebuiltMeniscusLayers": 2,
+    "meniscusVerticesPerEye": 94,
+    "meniscusFacesPerEye": 46,
+    "newCaruncleLayers": 2,
+    "caruncleVerticesPerEye": 15,
+    "caruncleFacesPerEye": 14,
+    "neutralNewEyeBodyTriangleOverlaps": 0,
+    "posedNewEyeBodyTriangleOverlaps": 0,
+    "neutralNewEyeInterlayerTriangleOverlaps": 0,
+    "posedNewEyeInterlayerTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7421992,
+    "lod1GlbBytes": 5736872,
+    "lod1ReductionPercent": 22.7,
+    "runtimeEyeMarginLayers": 4,
+    "runtimeScalpAlphaMode": "BLEND",
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The two bright triangular gaps beneath the irises are gone in the 1000 by 700 eye close-up.",
+    "The rebuilt lower meniscus reads as a continuous thin moist rim with tapered corners.",
+    "Separate teardrop-shaped lacrimal caruncles give both medial canthi an anatomical endpoint.",
+    "The upper fold material now reads as a crease shadow rather than a pale painted line."
+  ],
+  "blockingFailures": [
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "The eyelashes remain too uniformly spaced and the eyebrow groom lacks density hierarchy.",
+    "A true mouth slit, oral cavity, teeth, tongue and expression-compatible lip topology are still missing.",
+    "The primary groom still needs hand-shaped large and medium clumps, a readable part, crown breakup and controlled side volume.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}

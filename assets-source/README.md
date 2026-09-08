@@ -200,6 +200,17 @@ bundle can be reproduced from the recorded URL and digest when required.
   and readable, while eyelid thickness, oral topology and secondary facial
   anatomy still block review. Two earlier sub-millimetre v36 parameter passes
   were rejected as visually negligible.
+- `aevrynd-female-authoring-v37.blend`: rebuilds both lower tear menisci as
+  tapered 94-vertex rims and adds separate 15-vertex lacrimal-caruncle layers
+  at the medial canthi. The former bright triangular gaps beneath both irises
+  are absent in the close render, and the upper eyelid fold is tuned to read as
+  a crease shadow. Exact checks at neutral and posed frames report zero
+  intersections between the rebuilt layers, body, corneas and sclerae. The
+  other 38 baseline mesh objects keep identical geometry. Full and LOD1 GLBs
+  are 7.08 MiB and 5.47 MiB, a 22.7% reduction, and contain all four explicit
+  eye-margin layers, 21 bones and one animation. Its strict score is 57/100;
+  integrated eyelid thickness and expression-compatible canthus topology still
+  block review.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
