@@ -106,6 +106,14 @@ bundle can be reproduced from the recorded URL and digest when required.
   gate at 7.73 MiB; LOD1 is 6.13 MiB and 20.8% smaller. The strict score stays
   at 72 because the subtle material correction does not yet resolve the face's
   broad planar forms or add region-specific pores, oiliness and fine anatomy.
+- `aevrynd-female-authoring-v18.blend`: adds bounded sub-millimeter facial
+  asymmetry across the cheek, tear-trough, nasolabial, nose and chin regions,
+  plus a weighted volume-preserving smoothing pass over 1,123 planar face
+  vertices. Neutral and posed audits remain finite and preserve zero exact
+  hair, mouth and garment/body triangle intersections. The runtime previews
+  remain 7.73 MiB and 6.13 MiB. The strict score stays at 72 because the
+  multi-angle visual change is too subtle and the broad cheek and lower-face
+  planes still need manual high-resolution sculpting and retopology.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
