@@ -75,29 +75,54 @@
     <section class="character-studio" id="character" aria-labelledby="character-title">
       <article class="character-editor" data-character-editor>
         <header>
-          <p class="section-index">CHARACTER STUDIO / 3D WIP</p>
-          <h2 id="character-title">同一角色 · 360° 細節調整</h2>
+          <p class="section-index">CHARACTER STUDIO / FEMALE</p>
+          <h2 id="character-title">女人偶 · 材質與分層工作室</h2>
         </header>
         <div class="character-editor-layout">
           <div class="character-editor-viewport" data-editor-viewport tabindex="0" aria-label="角色三維預覽，拖曳環繞，方向鍵旋轉，滾輪縮放">
             <p data-editor-status role="status">正在準備三維角色…</p>
+            <div class="character-viewport-caption"><span data-editor-version>精修模型</span><span>拖曳旋轉 · 滾輪縮放</span></div>
           </div>
           <aside class="character-editor-panel" aria-label="角色檢視控制">
+            <fieldset>
+              <legend>版本比較</legend>
+              <button type="button" data-editor-comparison="refined" aria-pressed="true" disabled>精修模型</button>
+              <button type="button" data-editor-comparison="original" aria-pressed="false" disabled>原始模型</button>
+            </fieldset>
             <fieldset>
               <legend>鏡頭</legend>
               <button type="button" data-editor-view="face" aria-pressed="true" disabled>臉部特寫</button>
               <button type="button" data-editor-view="body" aria-pressed="false" disabled>全身視角</button>
             </fieldset>
             <label>環繞角度 <output data-orbit-output>0°</output><input type="range" min="-180" max="180" step="1" value="0" data-editor-orbit disabled></label>
+            <div class="character-angle-presets" aria-label="固定方向">
+              <button type="button" data-editor-angle="0" disabled>正面</button>
+              <button type="button" data-editor-angle="90" disabled>側面</button>
+              <button type="button" data-editor-angle="180" disabled>背面</button>
+            </div>
+            <fieldset>
+              <legend>檢視光線</legend>
+              <button type="button" data-editor-light="studio" aria-pressed="true" disabled>柔光棚</button>
+              <button type="button" data-editor-light="daylight" aria-pressed="false" disabled>日光</button>
+              <button type="button" data-editor-light="contour" aria-pressed="false" disabled>側光</button>
+            </fieldset>
             <fieldset>
               <legend>服裝</legend>
-              <button type="button" data-editor-clothing="on" aria-pressed="true" disabled>穿著上衣與長褲</button>
+              <button type="button" data-editor-clothing="on" aria-pressed="true" disabled>完整穿著</button>
               <button type="button" data-editor-clothing="off" aria-pressed="false" disabled>裸體（18+）</button>
             </fieldset>
-            <div data-editor-shapes aria-label="臉部與體態連續塑形滑桿"></div>
+            <details class="character-details" open>
+              <summary>模型分層 <span>15 層</span></summary>
+              <div data-editor-layers></div>
+              <button type="button" data-editor-wireframe aria-pressed="false" disabled>檢視網格線</button>
+            </details>
+            <details class="character-details">
+              <summary>臉部塑形</summary>
+              <div data-editor-shapes aria-label="臉部連續塑形滑桿"></div>
+            </details>
             <button type="button" data-editor-reset disabled>恢復原始設定</button>
-            <p>拖曳可從任何方向查看同一個角色。上衣與長褲都是角色資產中的真正三維網格，不使用圖片覆蓋。</p>
-            <p>目前是尚未上架的開發中預覽；使用指定第三版角色與 fitted pants 來源。滑桿只列出模型實際提供的塑形，材質、體態與動畫仍待完整驗收。</p>
+            <p>逐層開關可檢查皮膚、毛髮與衣物。切換版本時保留鏡頭、燈光與塑形設定；眉毛與睫毛網格僅存在於精修版。</p>
+            <p>本輪為女人偶靜態外觀精修，尚待你的視覺驗收。</p>
             <noscript><p>請啟用 JavaScript 以操作 3D 模型。</p></noscript>
           </aside>
         </div>
@@ -105,7 +130,7 @@
           <div class="nudity-confirm-panel">
             <p class="section-index">CONTENT CONFIRMATION / 18+</p>
             <h3 id="nudity-confirm-title">確定切換為裸體模型嗎？</h3>
-            <p id="nudity-confirm-copy">這會隱藏角色的上衣與長褲網格，顯示開發中的人體藝術模型。</p>
+            <p id="nudity-confirm-copy">這會隱藏所選衣物，顯示成年角色的人體表面。確認後，本次檢視可自由調整服裝分層。</p>
             <div class="nudity-confirm-actions">
               <button type="button" data-nudity-approve>確認切換</button>
               <button type="button" data-nudity-cancel>取消</button>

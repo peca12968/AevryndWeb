@@ -1,0 +1,80 @@
+{
+  "source": "character-third-pants.glb",
+  "output": "character-female-refined.glb",
+  "layers": [
+    {
+      "name": "Body",
+      "vertices": 80484,
+      "faces": 80268
+    },
+    {
+      "name": "Eyes",
+      "vertices": 11368,
+      "faces": 22400
+    },
+    {
+      "name": "Jacket",
+      "vertices": 25282,
+      "faces": 50544
+    },
+    {
+      "name": "Flyaways",
+      "vertices": 2660,
+      "faces": 4000
+    },
+    {
+      "name": "Pants",
+      "vertices": 9155,
+      "faces": 9072
+    },
+    {
+      "name": "Brows",
+      "vertices": 1520,
+      "faces": 570
+    },
+    {
+      "name": "Lashes",
+      "vertices": 544,
+      "faces": 204
+    },
+    {
+      "name": "HairFibers",
+      "vertices": 28994,
+      "faces": 13877
+    },
+    {
+      "name": "InnerTop",
+      "vertices": 8738,
+      "faces": 17472
+    },
+    {
+      "name": "Scalp",
+      "vertices": 3585,
+      "faces": 7040
+    },
+    {
+      "name": "HairStrands",
+      "vertices": 14615,
+      "faces": 23000
+    }
+  ],
+  "morphs": [
+    "jawWidth_minimum",
+    "jawWidth_maximum",
+    "chinLength_minimum",
+    "chinLength_maximum",
+    "noseWidth_minimum",
+    "noseWidth_maximum",
+    "mouthWidth_minimum",
+    "mouthWidth_maximum",
+    "lipThickness_minimum",
+    "lipThickness_maximum"
+  ],
+  "notes": [
+    "Cloth normals and roughness are procedural, not scanned.",
+    "Original body albedo preserved.",
+    "Skin subsurface requires viewer shading; standard glTF does not encode it.",
+    "Counts describe authoring geometry; 16-bit positions/UVs, 12-bit normals; original texture bytes retained."
+  ],
+  "downloadBytes": 21040912
+}
