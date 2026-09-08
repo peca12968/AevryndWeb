@@ -11,7 +11,20 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body class="age-pending">
+  <div class="age-gate" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title" aria-describedby="age-gate-copy">
+    <div class="age-gate-panel">
+      <div class="age-gate-brand" aria-hidden="true">A</div>
+      <p class="section-index">CONTENT NOTICE / 18+</p>
+      <h1 id="age-gate-title">您是否已滿 18 歲？</h1>
+      <p id="age-gate-copy">本網站記錄角色與遊戲引擎的開發過程，內容可能包含裸體模型、人體結構或其他不適合未成年者觀看的開發素材。</p>
+      <div class="age-gate-actions">
+        <button type="button" data-age-confirm>我已滿 18 歲</button>
+        <button type="button" data-age-deny>我未滿 18 歲</button>
+      </div>
+      <noscript><p>此網站需要 JavaScript 才能完成年齡確認。</p></noscript>
+    </div>
+  </div>
   <a class="skip-link" href="#main">跳至主要內容</a>
   <header class="topbar">
     <a class="brand" href="#top" aria-label="Aevrynd 首頁">
@@ -73,13 +86,13 @@
             <label>環繞角度 <output data-orbit-output>0°</output><input type="range" min="-180" max="180" step="1" value="0" data-editor-orbit disabled></label>
             <fieldset>
               <legend>服裝</legend>
-              <button type="button" data-editor-clothing="on" aria-pressed="true" disabled>穿著上衣</button>
+              <button type="button" data-editor-clothing="on" aria-pressed="true" disabled>穿著上衣與長褲</button>
               <button type="button" data-editor-clothing="off" aria-pressed="false" disabled>裸體（18+）</button>
             </fieldset>
             <div data-editor-shapes aria-label="臉部與體態連續塑形滑桿"></div>
             <button type="button" data-editor-reset disabled>恢復原始設定</button>
-            <p>拖曳可從任何方向查看同一個角色。上衣是角色資產中的真正三維網格，不使用圖片覆蓋；目前指定版本沒有獨立褲裝網格。</p>
-            <p>目前是尚未上架的開發中預覽；使用指定第三版角色來源。滑桿只列出模型實際提供的塑形，材質、體態與動畫仍待完整驗收。</p>
+            <p>拖曳可從任何方向查看同一個角色。上衣與長褲都是角色資產中的真正三維網格，不使用圖片覆蓋。</p>
+            <p>目前是尚未上架的開發中預覽；使用指定第三版角色與 fitted pants 來源。滑桿只列出模型實際提供的塑形，材質、體態與動畫仍待完整驗收。</p>
             <noscript><p>請啟用 JavaScript 以操作 3D 模型。</p></noscript>
           </aside>
         </div>
@@ -218,6 +231,7 @@
     <p>BUILD · OBSERVE · ITERATE</p>
     <a href="#top">回到頂端 ↑</a>
   </footer>
+  <script src="./age-gate.js"></script>
   <script src="./script.js"></script>
   <script type="module" src="./character-editor.js"></script>
 </body>

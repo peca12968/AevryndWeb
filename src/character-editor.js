@@ -2,6 +2,8 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
+await (window.aevryndAgeGate ?? Promise.resolve(true));
+
 const editor = document.querySelector('[data-character-editor]');
 
 if (editor) {
@@ -65,6 +67,7 @@ if (editor) {
 
   let model = null;
   let upper = null;
+  let pants = null;
   let currentView = 'face';
   let currentAngle = 0;
   let clothingOn = true;
@@ -117,6 +120,7 @@ if (editor) {
   function setClothing(visible) {
     clothingOn = visible;
     if (upper) upper.visible = visible;
+    if (pants) pants.visible = visible;
     clothingButtons.forEach(button => button.setAttribute('aria-pressed', String((button.dataset.editorClothing === 'on') === visible)));
   }
 
@@ -185,7 +189,7 @@ if (editor) {
   resize();
   setView('face', 0);
 
-  new GLTFLoader().load('./assets/character-third.glb', gltf => {
+  new GLTFLoader().load('./assets/character-third-pants.glb', gltf => {
     clearTimeout(loadingTimer);
     model = gltf.scene;
     model.traverse(node => {
@@ -195,6 +199,7 @@ if (editor) {
       }
     });
     upper = model.getObjectByName('Upper');
+    pants = model.getObjectByName('Pants');
     scene.add(model);
     shapes.forEach(shape => setMorph(shape.key, shape.initial));
     setClothing(true);
