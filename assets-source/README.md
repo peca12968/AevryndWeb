@@ -76,6 +76,14 @@ bundle can be reproduced from the recorded URL and digest when required.
   groom layer, scalp and lip surface against the body in neutral and posed
   frames. The side and rear haircut transitions remain below visual review
   quality and are recorded as blocking failures in the neighboring score file.
+- `aevrynd-female-authoring-v14.blend`: lower-density hairline geometry plus
+  separate temple and nape transition layers. Its build produces a complete
+  7.80 MiB authoring preview and a 5.92 MiB LOD1 preview that omits the primary,
+  hairline and flyaway layers while retaining the scalp, large and medium
+  clumps, transition clumps, face layers, clothing and rig. The paired runtime
+  test verifies a 24.1% byte reduction without losing skin color or deformation.
+  `scripts/audit-female-groom-v14.py` checks all seven full groom layers against
+  the body in both validation poses.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

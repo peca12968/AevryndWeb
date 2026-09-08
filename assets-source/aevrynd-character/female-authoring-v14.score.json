@@ -1,0 +1,50 @@
+{
+  "asset": "aevrynd-female-authoring-v14.blend",
+  "state": "AUTHORING",
+  "score": 70,
+  "eligibleForReview": false,
+  "categories": {
+    "anatomyAndSilhouette": { "score": 14, "max": 16 },
+    "faceIdentityAndForms": { "score": 14, "max": 16 },
+    "skinEyesMouthNails": { "score": 10, "max": 12 },
+    "hairAndHairline": { "score": 9, "max": 14 },
+    "topologyUvAndLods": { "score": 8, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "largeClumps": 57,
+    "mediumClumps": 136,
+    "primaryHairStrands": 1756,
+    "hairlineNapeAndSideburnStrands": 397,
+    "templeTransitionClumps": 60,
+    "napeTransitionClumps": 46,
+    "flyawayStrands": 52,
+    "neutralHairBodyTriangleOverlaps": 0,
+    "posedHairBodyTriangleOverlaps": 0,
+    "neutralFaceLayerBodyTriangleOverlaps": 0,
+    "posedFaceLayerBodyTriangleOverlaps": 0,
+    "neutralClothingBodyTriangleOverlaps": 0,
+    "posedClothingBodyTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeSkinnedLayers": 5,
+    "runtimeHasColor0": true,
+    "runtimeGlbBytes": 8176444,
+    "lod1GlbBytes": 6205964,
+    "lod1ReductionPercent": 24.1,
+    "lod1ExcludedLayers": ["HairMain", "HairlineFine", "HairFlyaways"]
+  },
+  "blockingFailures": [
+    "The side and rear scalp-cap boundaries still terminate too abruptly and remain visible at close range.",
+    "Temple and ear transitions need a manually shaped silhouette around the helix instead of additional straight transition fibers.",
+    "Large, medium and fine groom layers exist, but the large ribbons still contribute too little soft hair mass.",
+    "LOD1 is structurally valid and 24.1% smaller, but visual distance thresholds and transition popping are not yet tested in the website renderer.",
+    "The face still lacks mature asymmetry, fine expression anatomy and pore-scale surface response.",
+    "The lips need integrated volume, wet line and inner-mouth geometry instead of surface overlays.",
+    "Skin normal and roughness maps remain disconnected until UV tangents are seam-safe.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the pose suite remains incomplete."
+  ]
+}
