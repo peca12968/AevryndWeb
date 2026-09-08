@@ -7,6 +7,7 @@ import random
 import subprocess
 import os
 import shutil
+import runpy
 from pathlib import Path
 import numpy as np
 from mathutils import Vector
@@ -279,6 +280,11 @@ for o in bpy.data.objects:
 
 build_dir = ROOT / '.character-build'
 build_dir.mkdir(exist_ok=True)
+bpy.ops.wm.save_as_mainfile(filepath=str(build_dir / 'pre-contact.blend'))
+contact_reports = runpy.run_path(str(ROOT / 'scripts/character-contact.py'))['fit_character']()
+
+build_dir = ROOT / '.character-build'
+build_dir.mkdir(exist_ok=True)
 out = build_dir / 'authoring.glb'
 bpy.ops.object.select_all(action='DESELECT')
 for o in bpy.context.scene.objects:
@@ -287,11 +293,12 @@ bpy.ops.export_scene.gltf(filepath=str(out), export_format='GLB', use_selection=
 packer = ROOT.parent / 'ToolCache/meshoptimizer-1.2-build/Release/gltfpack.exe'
 if os.environ.get('AEVRYND_CHARACTER_UNPACKED'):
     shutil.copyfile(out, os.environ['AEVRYND_CHARACTER_UNPACKED'])
-packed = ROOT / 'public/assets/character-female-refined.glb'
+packed = Path(os.environ.get('AEVRYND_CHARACTER_STAGE', str(ROOT / 'public/assets/character-female-refined.glb')))
 subprocess.run([str(packer), '-i', str(out), '-o', str(packed), '-cc', '-kn', '-km', '-ke', '-kv', '-vp', '16', '-vt', '16', '-vn', '12'], check=True)
 report = {'source': 'character-third-pants.glb', 'output': out.name, 'layers': [{'name': o.name, 'vertices': len(o.data.vertices), 'faces': len(o.data.polygons)} for o in bpy.context.selected_objects if o.type == 'MESH'], 'morphs': [k.name for k in body.data.shape_keys.key_blocks][1:], 'notes': ['Cloth normals and roughness are procedural, not scanned.', 'Original body albedo preserved.', 'Skin subsurface requires viewer shading; standard glTF does not encode it.']}
 report['output'] = packed.name
 report['downloadBytes'] = packed.stat().st_size
+report['contactChecks'] = contact_reports
 report['notes'].append('Counts describe authoring geometry; 16-bit positions/UVs, 12-bit normals; original texture bytes retained.')
-(ROOT / 'public/assets/character-female-refined.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
+packed.with_suffix('.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
 print('REFINEMENT', json.dumps(report))

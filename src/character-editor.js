@@ -4,6 +4,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 import { classifyMaterial, layerDefinitions, refineMaterial } from './character-materials.js';
+import { CharacterContactGuard, applyGuardedMorph } from './character-contact.js';
 
 await (window.aevryndAgeGate ?? Promise.resolve(true));
 
@@ -33,6 +34,8 @@ if (editor) {
   let refinedModel = null;
   let loadingOriginal = false;
   let comparisonRequest = 0;
+  let contactGuard = null;
+  const contactStatus = editor.querySelector('[data-editor-contact]');
 
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x20272d);
@@ -236,11 +239,12 @@ if (editor) {
     model = name === 'original' ? originalModel : refinedModel;
     refinedModel.visible = name === 'refined';
     if (originalModel) originalModel.visible = name === 'original';
-    shapePanel.querySelectorAll('[data-editor-shape]').forEach(input => setMorph(input.dataset.editorShape, input.value));
+    shapePanel.querySelectorAll('[data-editor-shape]').forEach(input => updateShapeInput(input));
     applyLayers();
     status.hidden = true;
     editor.querySelectorAll('[data-editor-comparison]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.editorComparison === name)));
     editor.querySelector('[data-editor-version]').textContent = name === 'refined' ? '精修模型' : '原始模型 · 同一燈光';
+    contactStatus.textContent = name === 'refined' ? '穿模防護已啟用 · 目前姿勢' : '原始模型供比較，未套用接觸修整。';
   }
 
   function closeNudityDialog() {
@@ -261,15 +265,17 @@ if (editor) {
   }
 
   function setMorph(key, rawValue) {
-    const value = Number(rawValue) / 100;
-    if (!model) return;
-    model.traverse(node => {
-      if (!node.morphTargetDictionary || !node.morphTargetInfluences) return;
-      const minimum = node.morphTargetDictionary[`${key}_minimum`];
-      const maximum = node.morphTargetDictionary[`${key}_maximum`];
-      if (minimum !== undefined) node.morphTargetInfluences[minimum] = value < 0 ? -value : 0;
-      if (maximum !== undefined) node.morphTargetInfluences[maximum] = value > 0 ? value : 0;
-    });
+    const result = applyGuardedMorph(model, model === refinedModel ? contactGuard : null, key, Number(rawValue));
+    if (model === refinedModel) contactStatus.textContent = result.limited
+      ? '調整已限制在不與頭髮穿插的範圍。' : '穿模防護已啟用 · 目前姿勢';
+    return result.value;
+  }
+
+  function updateShapeInput(input) {
+    const accepted = setMorph(input.dataset.editorShape, input.value);
+    input.value = String(accepted);
+    const output = input.parentElement.querySelector('output');
+    output.value = input.value; output.textContent = input.value;
   }
 
   function buildShapeControls() {
@@ -292,9 +298,7 @@ if (editor) {
       input.dataset.editorShape = shape.key;
       input.disabled = true;
       input.addEventListener('input', () => {
-        output.value = input.value;
-        output.textContent = input.value;
-        setMorph(shape.key, input.value);
+        updateShapeInput(input);
       });
       label.append(output, input);
       shapePanel.append(label);
@@ -308,6 +312,7 @@ if (editor) {
     setLighting('studio');
     setComparison('refined');
     setClothing(true);
+    refinedModel?.traverse(node => { node.morphTargetInfluences?.fill(0); });
     shapePanel.querySelectorAll('[data-editor-shape]').forEach(input => {
       const shape = shapes.find(item => item.key === input.dataset.editorShape);
       input.value = String(shape.initial);
@@ -347,6 +352,11 @@ if (editor) {
     upper = model.getObjectByName('Upper');
     pants = model.getObjectByName('Pants');
     scene.add(model);
+    status.textContent = '正在建立模型接觸檢查…';
+    try {
+      contactGuard = new CharacterContactGuard(model);
+      if (!contactGuard.isClear()) { fail('角色接觸檢查未通過，請重新整理以載入最新模型。'); model.visible = false; return; }
+    } catch { fail('目前裝置無法建立模型接觸檢查。'); model.visible = false; return; }
     try { await renderer.compileAsync(scene, camera); } catch { fail('目前裝置無法完成角色材質編譯，請更新瀏覽器後再試。'); return; }
     shapes.forEach(shape => setMorph(shape.key, shape.initial));
     setClothing(true);

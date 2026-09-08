@@ -14,13 +14,13 @@
     },
     {
       "name": "Jacket",
-      "vertices": 25282,
-      "faces": 50544
+      "vertices": 22843,
+      "faces": 44399
     },
     {
       "name": "Flyaways",
-      "vertices": 2660,
-      "faces": 4000
+      "vertices": 2549,
+      "faces": 3823
     },
     {
       "name": "Pants",
@@ -39,13 +39,13 @@
     },
     {
       "name": "HairFibers",
-      "vertices": 28994,
-      "faces": 13877
+      "vertices": 25852,
+      "faces": 24346
     },
     {
       "name": "InnerTop",
-      "vertices": 8738,
-      "faces": 17472
+      "vertices": 7723,
+      "faces": 14849
     },
     {
       "name": "Scalp",
@@ -54,8 +54,8 @@
     },
     {
       "name": "HairStrands",
-      "vertices": 14615,
-      "faces": 23000
+      "vertices": 13270,
+      "faces": 20797
     }
   ],
   "morphs": [
@@ -76,5 +76,85 @@
     "Skin subsurface requires viewer shading; standard glTF does not encode it.",
     "Counts describe authoring geometry; 16-bit positions/UVs, 12-bit normals; original texture bytes retained."
   ],
-  "downloadBytes": 21040912
+  "downloadBytes": 20938516,
+  "contactChecks": [
+    {
+      "object": "InnerTop",
+      "correctedVertices": 2585,
+      "maxMovementMeters": 0.04138105298176515,
+      "sampleCount": 22572,
+      "penetratingSamples": 0,
+      "iterations": 6,
+      "relaxedVertices": 1051,
+      "finalContact": {
+        "object": "InnerTop",
+        "correctedVertices": 394,
+        "maxMovementMeters": 0.012615623912675565,
+        "sampleCount": 22572,
+        "penetratingSamples": 0,
+        "iterations": 7
+      }
+    },
+    {
+      "object": "Pants",
+      "correctedVertices": 44,
+      "maxMovementMeters": 0.004777077119064276,
+      "sampleCount": 18227,
+      "penetratingSamples": 0,
+      "iterations": 12
+    },
+    {
+      "object": "Jacket",
+      "correctedVertices": 5460,
+      "maxMovementMeters": 0.07447785868057498,
+      "sampleCount": 67242,
+      "penetratingSamples": 0,
+      "iterations": 21,
+      "relaxedVertices": 5496,
+      "finalContact": {
+        "object": "Jacket",
+        "correctedVertices": 2594,
+        "maxMovementMeters": 0.04540926918161898,
+        "sampleCount": 67242,
+        "penetratingSamples": 0,
+        "iterations": 16
+      }
+    },
+    {
+      "object": "Scalp",
+      "correctedVertices": 1368,
+      "maxMovementMeters": 0.0004809103997984414,
+      "sampleCount": 10625,
+      "penetratingSamples": 0,
+      "iterations": 3,
+      "trimmedHairTriangles": 0
+    },
+    {
+      "object": "HairStrands",
+      "correctedVertices": 795,
+      "maxMovementMeters": 0.03153387589957474,
+      "sampleCount": 34069,
+      "penetratingSamples": 0,
+      "iterations": 40,
+      "trimmedHairTriangles": 1
+    },
+    {
+      "object": "Flyaways",
+      "correctedVertices": 93,
+      "maxMovementMeters": 0.01597798176545958,
+      "sampleCount": 6372,
+      "penetratingSamples": 0,
+      "iterations": 6,
+      "trimmedHairTriangles": 0
+    },
+    {
+      "object": "HairFibers",
+      "correctedVertices": 2016,
+      "maxMovementMeters": 0.031481083172590005,
+      "sampleCount": 38138,
+      "penetratingSamples": 0,
+      "iterations": 19,
+      "trimmedHairTriangles": 102
+    }
+  ]
 }
