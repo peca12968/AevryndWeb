@@ -1,72 +1,256 @@
-@{ ViewData["Title"] = "引擎開發與測試入口"; }
-
-<section class="login-shell">
-    <div class="hero-panel">
-        <div class="eyebrow"><span></span> ENGINE DEVELOPMENT &amp; EVIDENCE</div>
-        <h1>讓每一次改善，<br /><em>都能在遊戲畫面中看見。</em></h1>
-        <p class="hero-copy">Aevrynd 專注原生 2.5D／3D 遊戲引擎。主機統籌開發與驗收，台中、桃園按需提供測試運算資源。近期目標：以相同鏡頭比較，將完整 Demo 視覺由 34／100 提升至至少 70／100；v1.4 尚未發布。</p>
-
-        <div class="network-card" aria-label="三台運算節點概況">
-            <div class="network-head">
-                <div><span class="micro-label">RESOURCE TOPOLOGY</span><strong>三台主機分工示意</strong></div>
-                <span class="network-live"><i></i> 架構示意</span>
-            </div>
-            <div class="node-flow" aria-hidden="true"><span></span><span></span></div>
-            <div class="node-grid">
-                <article class="node-card node-primary">
-                    <div class="node-icon"><span></span></div>
-                    <div><small>CORE / CODEX</small><strong>主電腦</strong></div>
-                    <i class="node-status"></i>
-                </article>
-                <article class="node-card">
-                    <div class="node-icon node-icon-secondary"><span></span></div>
-                    <div><small>ON-DEMAND TESTING</small><strong>台中測試資源</strong></div>
-                    <i class="node-status"></i>
-                </article>
-                <article class="node-card">
-                    <div class="node-icon node-icon-tertiary"><span></span></div>
-                    <div><small>ON-DEMAND TESTING</small><strong>桃園測試資源</strong></div>
-                    <i class="node-status"></i>
-                </article>
-            </div>
-            <div class="network-foot"><span>非即時在線狀態；不啟動副機 AI 輪詢</span><span>3 COMPUTE NODES</span></div>
-        </div>
+@{ Layout = null; }
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a0c">
+  <meta name="description" content="Aevrynd 遊戲引擎從零開始的開發歷程：渲染、世界系統、工具鏈與 AI 協作。">
+  <title>Aevrynd｜遊戲引擎開發歷程</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" asp-append-version="true">
+  <link rel="stylesheet" href="/css/analytics.css" asp-append-version="true">
+</head>
+<body class="age-pending">
+  <div class="age-gate" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title" aria-describedby="age-gate-copy">
+    <div class="age-gate-panel">
+      <div class="age-gate-brand" aria-hidden="true">A</div>
+      <p class="section-index">CONTENT NOTICE / 18+</p>
+      <h1 id="age-gate-title">您是否已滿 18 歲？</h1>
+      <p id="age-gate-copy">本網站記錄角色與遊戲引擎的開發過程，內容可能包含裸體模型、人體結構或其他不適合未成年者觀看的開發素材。</p>
+      <div class="age-gate-actions">
+        <button type="button" data-age-confirm>我已滿 18 歲</button>
+        <button type="button" data-age-deny>我未滿 18 歲</button>
+      </div>
+      <noscript><p>此網站需要 JavaScript 才能完成年齡確認。</p></noscript>
     </div>
+  </div>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Aevrynd 首頁">
+      <span class="brand-mark" aria-hidden="true">A</span>
+      <span>AEVRYND <small>ENGINE LOG</small></span>
+    </a>
+    <div class="live-metrics" aria-label="網站即時統計" aria-live="polite">
+      <span title="最近一分鐘內仍在瀏覽的訪客"><i aria-hidden="true"></i><strong data-online-count>—</strong> 在線</span>
+      <span title="網站累積頁面瀏覽次數"><strong data-view-count>—</strong> 瀏覽</span>
+    </div>
+    <nav aria-label="主要導覽">
+      <a href="#character">3D 角色</a>
+      <a href="#journey">歷程</a>
+      <a href="#systems">系統</a>
+      <a href="#workflow">方法</a>
+      <a class="nav-link" href="https://github.com/peca12968/Aevrynd" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
 
-    <aside class="auth-panel" aria-labelledby="login-title">
-        <div class="auth-accent" aria-hidden="true"></div>
-        <div class="auth-heading">
-            <span class="auth-symbol" aria-hidden="true"><span></span></span>
-            <div><p>SECURE ACCESS</p><h2 id="login-title">登入控制中心</h2></div>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> INDEPENDENT 3D ENGINE · DEVELOPMENT ARCHIVE</p>
+        <h1>不是把輪子重做一次，<br><em>而是理解它為何轉動。</em></h1>
+        <p class="lead">Aevrynd 是以 C++20、Win32 與 DirectX 12 自研的 Windows 原生遊戲引擎。從 2.5D 塔防《裂隙守望者》，一路走到 PBR 開放世界、角色系統與本地 AI；每一步都有可重現的測試與版本化展示。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#journey">查看演進歷程 <span>↓</span></a>
+          <a class="button ghost" href="https://github.com/peca12968/AevryndWeb" target="_blank" rel="noreferrer">展示專案 ↗</a>
         </div>
-        <p class="auth-intro">公開開發展示不需登入。已授權信箱可取得一次性驗證碼（OTP），查看主機與工作紀錄；遠端操作僅限管理者及既有額外授權。</p>
+      </div>
 
-        <form id="loginForm" class="auth-form">
-            <div class="field-group">
-                <label for="email">電子信箱</label>
-                <div class="input-wrap">
-                    <span class="input-icon" aria-hidden="true">@@</span>
-                    <input id="email" type="email" required autocomplete="email" inputmode="email" placeholder="name@example.com" />
-                </div>
+      <div class="engine-window" aria-label="抽象化的引擎運作視窗">
+        <div class="window-bar"><span></span><span></span><span></span><b>AEVRYND / DIRECTX 12</b><i>ULTRA</i></div>
+        <div class="viewport">
+          <div class="world-grid"></div>
+          <div class="core-orbit orbit-one"></div>
+          <div class="core-orbit orbit-two"></div>
+          <div class="core">A</div>
+          <div class="metric metric-a"><small>FIXED LOOP</small><strong>60 Hz</strong></div>
+          <div class="metric metric-b"><small>STRESS SCENE</small><strong>6,561 meshes</strong></div>
+          <div class="viewport-caption">C++20 / WIN32 / DX12 / LOCAL AI</div>
+        </div>
+        <div class="console-line"><span>›</span> engine.tick() <i>CSM · PBR · HDR ready</i><b>v2.47.0</b></div>
+      </div>
+    </section>
+
+    <section class="character-studio" id="character" aria-labelledby="character-title">
+      <article class="character-editor" data-character-editor>
+        <header>
+          <p class="section-index">CHARACTER STUDIO / 3D WIP</p>
+          <h2 id="character-title">同一角色 · 360° 細節調整</h2>
+        </header>
+        <div class="character-editor-layout">
+          <div class="character-editor-viewport" data-editor-viewport tabindex="0" aria-label="角色三維預覽，拖曳環繞，方向鍵旋轉，滾輪縮放">
+            <p data-editor-status role="status">正在準備三維角色…</p>
+          </div>
+          <aside class="character-editor-panel" aria-label="角色檢視控制">
+            <fieldset>
+              <legend>鏡頭</legend>
+              <button type="button" data-editor-view="face" aria-pressed="true" disabled>臉部特寫</button>
+              <button type="button" data-editor-view="body" aria-pressed="false" disabled>全身視角</button>
+            </fieldset>
+            <label>環繞角度 <output data-orbit-output>0°</output><input type="range" min="-180" max="180" step="1" value="0" data-editor-orbit disabled></label>
+            <fieldset>
+              <legend>服裝</legend>
+              <button type="button" data-editor-clothing="on" aria-pressed="true" disabled>穿著上衣與長褲</button>
+              <button type="button" data-editor-clothing="off" aria-pressed="false" disabled>裸體（18+）</button>
+            </fieldset>
+            <div data-editor-shapes aria-label="臉部與體態連續塑形滑桿"></div>
+            <button type="button" data-editor-reset disabled>恢復原始設定</button>
+            <p>拖曳可從任何方向查看同一個角色。上衣與長褲都是角色資產中的真正三維網格，不使用圖片覆蓋。</p>
+            <p>目前是尚未上架的開發中預覽；使用指定第三版角色與 fitted pants 來源。滑桿只列出模型實際提供的塑形，材質、體態與動畫仍待完整驗收。</p>
+            <noscript><p>請啟用 JavaScript 以操作 3D 模型。</p></noscript>
+          </aside>
+        </div>
+        <div class="nudity-confirm" data-nudity-confirm role="dialog" aria-modal="true" aria-labelledby="nudity-confirm-title" aria-describedby="nudity-confirm-copy" hidden>
+          <div class="nudity-confirm-panel">
+            <p class="section-index">CONTENT CONFIRMATION / 18+</p>
+            <h3 id="nudity-confirm-title">確定切換為裸體模型嗎？</h3>
+            <p id="nudity-confirm-copy">這會隱藏角色的上衣與長褲網格，顯示開發中的人體藝術模型。</p>
+            <div class="nudity-confirm-actions">
+              <button type="button" data-nudity-approve>確認切換</button>
+              <button type="button" data-nudity-cancel>取消</button>
             </div>
-            <button id="sendButton" class="button button-primary" type="button">
-                <span>傳送驗證碼</span><i aria-hidden="true">→</i>
-            </button>
+          </div>
+        </div>
+      </article>
+    </section>
 
-            <div id="verifyBox" class="verify-box" hidden>
-                <div class="divider"><span>輸入郵件中的代碼</span></div>
-                <div class="field-group">
-                    <label for="code">8 位英數驗證碼</label>
-                    <div class="input-wrap">
-                        <span class="input-icon input-icon-key" aria-hidden="true">◆</span>
-                        <input id="code" class="code-input" minlength="8" maxlength="8" pattern="[A-Za-z0-9]{8}" required autocomplete="one-time-code" autocapitalize="characters" placeholder="••••••••" />
-                    </div>
-                </div>
-                <button class="button button-secondary" type="submit"><span>驗證並登入</span><i aria-hidden="true">↗</i></button>
-            </div>
+    <section class="manifesto band">
+      <p class="section-index">00 / ORIGIN</p>
+      <div>
+        <h2>從「畫面出現」到「世界開始運作」</h2>
+        <p>專案從 Win32 視窗與固定 60Hz 迴圈起步，逐步加入 DirectX 12、3D Scene、ECS、物理、音訊、PBR 材質與世界串流。現在同一套引擎能力由 Riftwarden、Engine Lab、Character Lab、Gameplay Lab 與 Frontier World 共用。</p>
+      </div>
+      <div class="origin-steps" aria-label="開發重心演進">
+        <span>VISIBLE<br><b>看得見</b></span><i>→</i><span>PLAYABLE<br><b>能互動</b></span><i>→</i><span>EXTENSIBLE<br><b>可擴張</b></span>
+      </div>
+    </section>
 
-            <p id="status" class="form-status" role="status" aria-live="polite"></p>
-            <div class="security-note"><span aria-hidden="true">◇</span><p><strong>一次性安全驗證</strong><small>驗證碼 10 分鐘內有效，使用後立即失效。</small></p></div>
-        </form>
-    </aside>
-</section>
+    <section class="snapshot" aria-label="目前版本摘要">
+      <div><small>ENGINE</small><strong>2.47.0</strong><span>目前展示版本</span></div>
+      <div><small>FRUSTUM CULLING</small><strong>90.9%</strong><span>6,561 mesh 壓力場景上傳減量</span></div>
+      <div><small>GPU INSTANCING</small><strong>87.1%</strong><span>可見 mesh 每幀上傳減量</span></div>
+      <div><small>LOCAL AI</small><strong>Qwen 27B</strong><span>WinHTTP 本機事件生成</span></div>
+    </section>
+
+    <section class="journey" id="journey">
+      <div class="section-heading">
+        <div><p class="section-index">01 / EVOLUTION</p><h2>引擎演進主線</h2></div>
+        <p>選擇一條主線，快速理解各階段解決了什麼問題。</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="歷程篩選">
+        <button class="active" data-filter="all" aria-pressed="true">全部</button>
+        <button data-filter="render" aria-pressed="false">視覺呈現</button>
+        <button data-filter="world" aria-pressed="false">世界系統</button>
+        <button data-filter="tool" aria-pressed="false">開發工具</button>
+        <button data-filter="ai" aria-pressed="false">AI 與角色</button>
+      </div>
+
+      <div class="timeline">
+        <article class="milestone" data-category="render">
+          <div class="phase"><span>PHASE 01</span><b>建立基線</b></div>
+          <div class="milestone-body">
+            <p class="tag">C++20 · WIN32 · DX12</p><h3>原生渲染核心</h3>
+            <p>以 Win32 建立原生視窗與輸入，完成 DirectX 12 device、swap chain、command queue、HLSL pipeline 與固定 60Hz 遊戲迴圈。2D UI 與 3D 世界採獨立批次，同一幀先繪製深度世界，再疊加清晰 HUD。</p>
+            <div class="change"><span>起點：CPU DrawList 與 2.5D 原語</span><b>→</b><span>成果：完整硬體 3D pipeline</span></div>
+          </div>
+        </article>
+
+        <article class="milestone" data-category="world">
+          <div class="phase"><span>PHASE 02</span><b>組成世界</b></div>
+          <div class="milestone-body">
+            <p class="tag">RIFTWARDEN · DEMO 2.19.0</p><h3>第一款完整遊戲：裂隙守望者</h3>
+            <p>2.5D 塔防整合四類敵軍、三種防禦塔、技能、連擊、永久強化、繁中／英文介面、鍵鼠與 XInput 手把。進度會自動保存，本地 Qwen 每三波依戰況生成事件，失敗時由 C++ 備援。</p>
+            <div class="change"><span>引擎：能畫出場景</span><b>→</b><span>遊戲：具備完整循環與存檔</span></div>
+          </div>
+        </article>
+
+        <article class="milestone" data-category="render">
+          <div class="phase"><span>PHASE 03</span><b>提升質感</b></div>
+          <div class="milestone-body">
+            <p class="tag">ENGINE LAB · PBR · DLSS</p><h3>從 3D 場景到可量測的渲染系統</h3>
+            <p>Scene3D 支援透視／正交相機、視錐裁切、GPU instancing、OBJ、Mesh LOD、射線查詢與 Frame Capture。畫面加入 HDR、ACES、Cook-Torrance PBR、級聯陰影與 DLSS Super Resolution，並保留 CPU fallback 做精確比對。</p>
+            <div class="change"><span>6,561 mesh 全量展開</span><b>→</b><span>只提交 593 個可見物件</span></div>
+          </div>
+        </article>
+
+        <article class="milestone" data-category="world tool">
+          <div class="phase"><span>PHASE 04</span><b>縮短回饋</b></div>
+          <div class="milestone-body">
+            <p class="tag">FRONTIER WORLD · DEMO 0.92.0</p><h3>世界系統開始形成</h3>
+            <p>HeightField、Terrain Clipmap、Mesh LOD、程序植被與建築共同組成靜態開放世界。地形支援四邊 skirt 與相鄰 LOD 約束，1,024 chunks 的觀察者更新平均約 6.7 微秒且更新期間零配置。</p>
+            <div class="change"><span>單一驗證場景</span><b>→</b><span>可串流、可裁切的開放世界</span></div>
+          </div>
+        </article>
+
+        <article class="milestone" data-category="ai render">
+          <div class="phase"><span>PHASE 05</span><b>持續演進</b></div>
+          <div class="milestone-body">
+            <p class="tag">CHARACTER LAB · 2026.09</p><h3>從世界走向角色</h3>
+            <p>近期里程碑聚焦角色臉部塑形、服裝材質、髮片、手部骨架、第一人稱持劍構圖、待機與步態動畫，並透過 GPU 預覽與視覺回歸保存可驗證證據。</p>
+            <div class="change"><span>靜態環境資產</span><b>→</b><span>可塑形、可動畫的角色管線</span></div>
+          </div>
+        </article>
+
+        <article class="milestone" data-category="tool ai">
+          <div class="phase"><span>PHASE 06</span><b>歷程網站</b></div>
+          <div class="milestone-body">
+            <p class="tag">AEVRYNDWEB · .NET 8</p><h3>可互動的引擎開發紀錄</h3>
+            <p>ASP.NET Core MVC 網站整理各階段成果，加入可朝角色方向 360° 旋轉的三維預覽、角色細節調整、服裝切換確認、成年確認，以及由 SQL Server 保存的在線人數與瀏覽人次。</p>
+            <div class="change"><span>分散的開發成果</span><b>→</b><span>可操作、可追蹤的歷程展示</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="systems" id="systems">
+      <div class="section-heading inverse">
+        <div><p class="section-index">02 / SYSTEM MAP</p><h2>一個世界，由多個系統共同成立</h2></div>
+        <p>以下能力已存在於目前的 C++ 原生引擎，而不是概念藍圖。</p>
+      </div>
+      <div class="system-grid">
+        <article class="system-card featured"><span>01</span><div class="system-icon">◫</div><h3>Renderer</h3><p>DX12、HDR、PBR、CSM、DLSS、GPU instancing 與需求式資源配置。</p><small>SCENE → FRAME</small></article>
+        <article class="system-card"><span>02</span><div class="system-icon">◎</div><h3>Scene & ECS</h3><p>Generation-safe entity、typed view、延遲銷毀、LOD 與場景同步。</p><small>ENTITY → WORLD</small></article>
+        <article class="system-card"><span>03</span><div class="system-icon">⌁</div><h3>Physics & Audio</h3><p>3D 剛體、CCD、layer mask、sleep/wake 與 XAudio2 64 voices。</p><small>EVENT → RESPONSE</small></article>
+        <article class="system-card"><span>04</span><div class="system-icon">⌘</div><h3>Asset Pipeline</h3><p>CC0 PBR 清單、Material Cooker、OBJ、Mesh processing 與版本化資產。</p><small>ASSET → RUNTIME</small></article>
+        <article class="system-card"><span>05</span><div class="system-icon">◇</div><h3>World Tech</h3><p>HeightField、Clipmap、BVH、程序植被、建築與透明水體。</p><small>CHUNK → LANDSCAPE</small></article>
+        <article class="system-card"><span>06</span><div class="system-icon">△</div><h3>Verification</h3><p>Profiler、telemetry、Frame Capture、黃金參考與視覺回歸。</p><small>CHANGE → EVIDENCE</small></article>
+      </div>
+    </section>
+
+    <section class="workflow" id="workflow">
+      <div class="section-heading">
+        <div><p class="section-index">03 / METHOD</p><h2>開發不是直線，是更短的回饋迴圈</h2></div>
+      </div>
+      <div class="loop">
+        <div class="loop-center"><small>ITERATION</small><strong>可驗證的<br>小步前進</strong></div>
+        <ol>
+          <li><span>01</span><div><b>定義問題</b><small>先說清楚要改善什麼</small></div></li>
+          <li><span>02</span><div><b>建立基準</b><small>保留可以比較的起點</small></div></li>
+          <li><span>03</span><div><b>拆分實作</b><small>讓每次變更都有清楚邊界</small></div></li>
+          <li><span>04</span><div><b>視覺驗證</b><small>用畫面與行為確認結果</small></div></li>
+          <li><span>05</span><div><b>整理紀錄</b><small>把決策留給下一次演進</small></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="repos">
+      <div><p class="section-index">04 / SOURCE</p><h2>兩個專案，一段共同歷程</h2></div>
+      <a class="repo-card" href="https://github.com/peca12968/Aevrynd" target="_blank" rel="noreferrer"><span>C++20 · DIRECTX 12</span><h3>Aevrynd</h3><p>共用原生引擎，以及 Riftwarden、Engine Lab、Character Lab、Gameplay Lab、Frontier World。</p><b>查看私人儲存庫 ↗</b></a>
+      <a class="repo-card" href="https://github.com/peca12968/AevryndWeb" target="_blank" rel="noreferrer"><span>ASP.NET CORE MVC · .NET 8</span><h3>AevryndWeb</h3><p>開發歷程展示、三維角色細節調整、成年內容確認，以及 SQL Server 網站統計。</p><b>查看私人儲存庫 ↗</b></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><span class="brand-mark">A</span><span>AEVRYND</span></div>
+    <p>BUILD · OBSERVE · ITERATE</p>
+    <a href="#top">回到頂端 ↑</a>
+  </footer>
+  <script src="/js/age-gate.js" asp-append-version="true"></script>
+  <script src="/js/analytics.js" asp-append-version="true"></script>
+  <script src="/js/script.js" asp-append-version="true"></script>
+  <script type="module" src="/js/character-editor.js" asp-append-version="true"></script>
+</body>
+</html>

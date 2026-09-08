@@ -1,38 +1,12 @@
-using AevryndWeb.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
-namespace AevryndWeb.Controllers
+namespace AevryndWeb.Controllers;
+
+public sealed class HomeController : Controller
 {
-    public class HomeController : Controller
-    {
-        private readonly ILogger<HomeController> _logger;
+    [HttpGet("/")]
+    public IActionResult Index() => View();
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        [HttpGet("/Showcase")]
-        public IActionResult Showcase() => View();
-
-        [Microsoft.AspNetCore.Authorization.Authorize(Policy = AevryndWeb.Security.PortalIdentity.AdminPolicy)]
-        public IActionResult Portal() => View();
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-    }
+    [HttpGet("/Home/Error")]
+    public IActionResult Error() => Problem("網站暫時無法處理此要求。");
 }
