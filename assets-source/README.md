@@ -50,6 +50,12 @@ bundle can be reproduced from the recorded URL and digest when required.
   and raised-arm frames with exact body/garment triangle-overlap tests. This is
   still a construction layer: garment edge flow and tailoring remain below the
   visual review threshold.
+- `aevrynd-female-authoring-v10.blend`: head-detail experiment with smaller
+  pupils, a second eyelid refinement, separately skinned upper/lower lip layers,
+  an embedded Aevrynd-generated hair-opacity texture, and 1,288 child fibers.
+  `scripts/audit-female-head-v10.py` verifies zero body intersections for the
+  scalp, primary hair, detail fibers and lips at neutral and turned-head frames.
+  The groom silhouette and back-scalp appearance still fail visual review.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

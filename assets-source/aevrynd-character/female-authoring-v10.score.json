@@ -1,0 +1,50 @@
+{
+  "asset": "aevrynd-female-authoring-v10.blend",
+  "state": "AUTHORING",
+  "score": 64,
+  "eligibleForReview": false,
+  "categories": {
+    "anatomyAndSilhouette": { "score": 14, "max": 16 },
+    "faceIdentityAndForms": { "score": 13, "max": 16 },
+    "skinEyesMouthNails": { "score": 9, "max": 12 },
+    "hairAndHairline": { "score": 6, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "runtimeBones": 21,
+    "explicitLipLayers": 2,
+    "additionalEyelidVerticesAdjusted": 190,
+    "maximumAdditionalEyelidAdjustmentMeters": 0.0004578828811645508,
+    "pupilScaleFactor": 0.72,
+    "fineHairStrands": 1288,
+    "embeddedHairOpacityTexture": "aevrynd-hair-strands-v1",
+    "hairScalpBodyTriangleOverlapsNeutral": 0,
+    "hairMainBodyTriangleOverlapsNeutral": 0,
+    "hairFiberBodyTriangleOverlapsNeutral": 0,
+    "upperLipBodyTriangleOverlapsNeutral": 0,
+    "lowerLipBodyTriangleOverlapsNeutral": 0,
+    "hairScalpBodyTriangleOverlapsPosed": 0,
+    "hairMainBodyTriangleOverlapsPosed": 0,
+    "hairFiberBodyTriangleOverlapsPosed": 0,
+    "upperLipBodyTriangleOverlapsPosed": 0,
+    "lowerLipBodyTriangleOverlapsPosed": 0,
+    "maximumFiberMainRootDistanceMeters": 1.37e-7,
+    "clothingTriangleOverlapsNeutralAndPosed": 0,
+    "runtimeGlbBytes": 6586560
+  },
+  "blockingFailures": [
+    "The haircut silhouette still reads as a procedural bowl cut rather than a professionally art-directed groom.",
+    "The back view exposes a circular scalp shading patch and weak nape transition.",
+    "Side hair cards repeat in rows and do not form convincing clumps, breakup or density variation.",
+    "The face still lacks mature secondary forms around the eyelids, cheeks, philtrum and mouth corners.",
+    "The lip layers improve color separation but need true sculpted volume, a wet line and an inner-mouth cavity.",
+    "The eyes remain too static and need corneal rendering, tear-film tuning and gaze variation in review renders.",
+    "Skin normal and roughness maps remain disconnected until UV tangents are seam-safe.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the pose suite remains incomplete."
+  ]
+}
