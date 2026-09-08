@@ -1,0 +1,56 @@
+{
+  "asset": "aevrynd-female-authoring-v40.blend",
+  "state": "AUTHORING",
+  "score": 60,
+  "eligibleForReview": false,
+  "scoringCalibration": "One mouth-detail point is earned for replacing the exposed crescent lip sheets with continuous rounded upper and lower surfaces and adding explicit oral-cavity, upper-teeth and tongue layers. The retained Multires body still lacks expression-compatible lip loops and an actual deformable mouth opening.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 10, "max": 16 },
+    "skinEyesMouthNails": { "score": 11, "max": 12 },
+    "hairAndHairline": { "score": 7, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "unchangedBaselineMeshObjects": 41,
+    "rebuiltLipLayers": 2,
+    "newOralLayers": 3,
+    "upperLipVertices": 195,
+    "lowerLipVertices": 195,
+    "oralCavityVertices": 193,
+    "upperTeethVertices": 432,
+    "tongueVertices": 170,
+    "neutralAuditedTriangleOverlaps": 0,
+    "posedAuditedTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7410472,
+    "lod1GlbBytes": 5725348,
+    "lod1ReductionPercent": 22.7,
+    "runtimeMouthLayers": 6,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The upper vermilion now has a controlled cupid bow and the lower lip has a continuous rounded volume.",
+    "The former black crescent caps and ragged wet-line silhouette are absent in frontal and three-quarter close renders.",
+    "The neutral mouth closes cleanly while the cavity, teeth and tongue remain explicit head-bound engine-owned layers for later expression work."
+  ],
+  "rejectedExperiments": [
+    "A vertex-alpha mouth opening was rejected because the retained coarse Multires base exposed large triangular holes.",
+    "The first oral-layer placement was rejected because isolated teeth and cavity side walls became visible and intersected posed skin.",
+    "A closed replacement lip volume was rejected because its rear caps appeared as dark corner crescents."
+  ],
+  "blockingFailures": [
+    "The body needs expression-compatible lip loops and a deformable mouth opening before teeth and tongue can be exposed during speech.",
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "The primary groom still needs hand-shaped large and medium clumps, a readable part, crown breakup and controlled side volume.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}

@@ -231,6 +231,16 @@ bundle can be reproduced from the recorded URL and digest when required.
   GLBs are 7.06 MiB and 5.45 MiB, a 22.8% reduction, and preserve both fiber
   groups and both density layers. Its strict score is 59/100. The fiber-only
   first pass was rejected as too sparse.
+- `aevrynd-female-authoring-v40.blend`: replaces the exposed crescent lip
+  sheets with continuous 195-vertex upper and lower vermilion surfaces, rebuilds
+  the wet margin, and adds separate engine-owned oral-cavity, upper-teeth and
+  tongue layers. Neutral and posed BVH checks report zero intersections for all
+  audited mouth/body and wet-margin/lip pairs; 41 other v39 meshes retain exact
+  geometry. Full and LOD1 GLBs are 7.07 MiB and 5.46 MiB, a 22.7% reduction,
+  and expose all six mouth layers, 21 bones and one animation. Its strict score
+  is 60/100. Vertex-alpha opening, visible tooth spikes and closed rear lip caps
+  were rejected; expression-compatible lip loops and a deformable opening are
+  still required before teeth and tongue can appear during speech.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
