@@ -1,9 +1,34 @@
 const viewer = document.querySelector('#character-model');
 const status = document.querySelector('#viewer-status');
-const controls = [...document.querySelectorAll('.viewer-controls button')];
+const controls = [...document.querySelectorAll('.character-editor-panel button, #orbit-slider')];
 const rotate = document.querySelector('#rotate-model');
+const orbitSlider = document.querySelector('#orbit-slider');
+const orbitOutput = document.querySelector('#orbit-output');
 const motion = matchMedia('(prefers-reduced-motion: reduce)');
+let cameraMode = 'body';
 let timeout;
+
+const camera = {
+  face: { target: '0m 1.53m 0m', radius: '1.2m', field: '25deg' },
+  body: { target: '0m 0.86m 0m', radius: '3.7m', field: '30deg' }
+};
+
+function setPressedCamera(mode) {
+  document.querySelectorAll('[data-camera]').forEach(button => {
+    button.setAttribute('aria-pressed', String(button.dataset.camera === mode));
+  });
+}
+
+function setOrbit(angle, immediate = false) {
+  const view = camera[cameraMode];
+  viewer.cameraTarget = view.target;
+  viewer.fieldOfView = view.field;
+  viewer.cameraOrbit = `${angle}deg 82deg ${view.radius}`;
+  orbitSlider.value = String(angle);
+  orbitOutput.value = `${angle}°`;
+  orbitOutput.textContent = `${angle}°`;
+  if (immediate || motion.matches) viewer.jumpCameraToGoal();
+}
 
 function stopRotation() {
   viewer.autoRotate = false;
@@ -35,9 +60,20 @@ document.querySelectorAll('[data-view]').forEach(button => {
   button.addEventListener('click', () => {
     stopRotation();
     viewer.resetTurntableRotation();
-    viewer.cameraOrbit = `${button.dataset.view}deg 80deg 105%`;
-    if (motion.matches) viewer.jumpCameraToGoal();
+    setOrbit(Number(button.dataset.view));
   });
+});
+document.querySelectorAll('[data-camera]').forEach(button => {
+  button.addEventListener('click', () => {
+    stopRotation();
+    cameraMode = button.dataset.camera;
+    setPressedCamera(cameraMode);
+    setOrbit(Number(orbitSlider.value));
+  });
+});
+orbitSlider.addEventListener('input', () => {
+  stopRotation();
+  setOrbit(Number(orbitSlider.value), true);
 });
 rotate.addEventListener('click', () => {
   viewer.autoRotate = !viewer.autoRotate;
@@ -46,11 +82,18 @@ rotate.addEventListener('click', () => {
 });
 document.querySelector('#reset-model').addEventListener('click', () => {
   stopRotation();
+  cameraMode = 'body';
+  setPressedCamera(cameraMode);
   viewer.resetTurntableRotation();
-  viewer.cameraOrbit = '0deg 80deg 105%';
-  viewer.cameraTarget = 'auto auto auto';
-  viewer.fieldOfView = 'auto';
-  if (motion.matches) viewer.jumpCameraToGoal();
+  setOrbit(0);
+});
+viewer.addEventListener('camera-change', () => {
+  if (viewer.autoRotate) return;
+  const degrees = Math.round(viewer.getCameraOrbit().theta * 180 / Math.PI);
+  const normalized = ((degrees + 180) % 360 + 360) % 360 - 180;
+  orbitSlider.value = String(normalized);
+  orbitOutput.value = `${normalized}°`;
+  orbitOutput.textContent = `${normalized}°`;
 });
 viewer.addEventListener('pointerdown', stopRotation);
 viewer.addEventListener('keydown', stopRotation);

@@ -39,23 +39,54 @@
         </div>
       </div>
 
-      <div class="engine-window" id="character" aria-label="角色 3D 展示">
-        <div class="window-bar"><span></span><span></span><span></span><b>AEVRYND / CHARACTER LAB</b><i>360°</i></div>
-        <div class="viewport character-viewport">
-          <model-viewer id="character-model" src="./assets/character.glb" alt="Aevrynd 開發中角色的立體模型，可拖曳環繞觀看" camera-controls disable-pan touch-action="pan-y" camera-orbit="0deg 80deg 105%" min-camera-orbit="auto 10deg 35%" max-camera-orbit="auto 170deg 200%" shadow-intensity="1" exposure="1" interaction-prompt="none" loading="eager" aria-describedby="viewer-help"></model-viewer>
-          <div class="viewer-status" id="viewer-status" role="status">正在載入角色模型…</div>
+      <div class="engine-window" aria-label="抽象化的引擎運作視窗">
+        <div class="window-bar"><span></span><span></span><span></span><b>AEVRYND / DIRECTX 12</b><i>ULTRA</i></div>
+        <div class="viewport">
+          <div class="world-grid"></div>
+          <div class="core-orbit orbit-one"></div>
+          <div class="core-orbit orbit-two"></div>
+          <div class="core">A</div>
+          <div class="metric metric-a"><small>FIXED LOOP</small><strong>60 Hz</strong></div>
+          <div class="metric metric-b"><small>STRESS SCENE</small><strong>6,561 meshes</strong></div>
+          <div class="viewport-caption">C++20 / WIN32 / DX12 / LOCAL AI</div>
         </div>
-        <div class="viewer-controls" role="group" aria-label="角色視角控制">
-          <button type="button" data-view="0" disabled>正面</button>
-          <button type="button" data-view="90" disabled>側面</button>
-          <button type="button" data-view="180" disabled>背面</button>
-          <button type="button" id="rotate-model" aria-pressed="false" disabled>自動旋轉</button>
-          <button type="button" id="reset-model" disabled>重設視角</button>
-        </div>
-        <p class="viewer-help" id="viewer-help">拖曳環繞 360° · 滾輪或雙指縮放 · 聚焦模型後可用方向鍵旋轉</p>
-        <p class="viewer-note">Character Lab 開發中模型 · 服裝仍在調整，此匯出版本未含頭髮與眉毛。</p>
-        <noscript><p class="viewer-note">請啟用 JavaScript 以操作 3D 模型。</p></noscript>
+        <div class="console-line"><span>›</span> engine.tick() <i>CSM · PBR · HDR ready</i><b>v2.47.0</b></div>
       </div>
+    </section>
+
+    <section class="character-studio" id="character" aria-labelledby="character-title">
+      <header>
+        <p class="section-index">CHARACTER STUDIO / 3D WIP</p>
+        <h2 id="character-title">同一角色 · 360° 細節調整</h2>
+        <p>沿用原網站的寬版工作區：左側專注查看角色，右側集中控制鏡頭與環繞角度。</p>
+      </header>
+      <article class="character-editor">
+        <div class="character-editor-layout">
+          <div class="character-editor-viewport">
+            <model-viewer id="character-model" src="./assets/character-v11-web.glb" poster="./assets/character-front.png" alt="Aevrynd 原創女主角 v11 的立體模型，可拖曳環繞觀看" camera-controls disable-pan touch-action="pan-y" camera-target="0m 0.86m 0m" camera-orbit="0deg 82deg 3.7m" field-of-view="30deg" min-camera-orbit="auto 15deg 0.75m" max-camera-orbit="auto 165deg 6m" shadow-intensity="0.85" exposure="0.95" interaction-prompt="none" loading="eager" aria-describedby="viewer-help"></model-viewer>
+            <div class="viewer-status" id="viewer-status" role="status">正在準備三維角色…</div>
+          </div>
+          <aside class="character-editor-panel" aria-label="角色檢視控制">
+            <fieldset>
+              <legend>鏡頭</legend>
+              <button type="button" data-camera="face" aria-pressed="false" disabled>臉部特寫</button>
+              <button type="button" data-camera="body" aria-pressed="true" disabled>全身視角</button>
+            </fieldset>
+            <label class="orbit-slider">環繞角度 <output id="orbit-output">0°</output><input id="orbit-slider" type="range" min="-180" max="180" step="1" value="0" disabled aria-label="調整角色環繞角度"></label>
+            <fieldset>
+              <legend>快速視角</legend>
+              <button type="button" data-view="0" disabled>正面</button>
+              <button type="button" data-view="90" disabled>側面</button>
+              <button type="button" data-view="180" disabled>背面</button>
+            </fieldset>
+            <button type="button" id="rotate-model" aria-pressed="false" disabled>自動旋轉</button>
+            <button type="button" id="reset-model" disabled>恢復原始設定</button>
+            <p class="viewer-help" id="viewer-help">拖曳可從任何方向查看同一個角色，也可用滑桿精確控制角度；滾輪或雙指可縮放。</p>
+            <p class="viewer-note">原網站女主角 v11 · 1.72 m · 53 bones · 開發中預覽</p>
+            <noscript><p class="viewer-note">請啟用 JavaScript 以操作 3D 模型。</p></noscript>
+          </aside>
+        </div>
+      </article>
     </section>
 
     <section class="manifesto band">
