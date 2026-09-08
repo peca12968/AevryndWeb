@@ -1,0 +1,59 @@
+{
+  "asset": "aevrynd-female-authoring-v52.blend",
+  "state": "AUTHORING",
+  "score": 66,
+  "eligibleForReview": false,
+  "scoringCalibration": "One point is awarded to face identity and forms. The face now has stronger orbital support, zygomatic projection, tear-trough recession, buccal transition, nasolabial structure, mental sulcus and chin separation without changing topology or creating attachment intersections.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 11, "max": 16 },
+    "skinEyesMouthNails": { "score": 11, "max": 12 },
+    "hairAndHairline": { "score": 12, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "bodyVertices": 42342,
+    "bodyFaces": 42296,
+    "changedBodyVertices": 9265,
+    "maximumLocalBodyDeltaM": 0.0010403162,
+    "unchangedNonTargetMeshes": 41,
+    "reprojectedSurfaceAttachments": 6,
+    "attachmentClearanceM": 0.00045,
+    "neutralAuditedFaceAttachmentOverlaps": 0,
+    "posedAuditedFaceAttachmentOverlaps": 0,
+    "neutralAuditedMouthTriangleOverlaps": 0,
+    "posedAuditedMouthTriangleOverlaps": 0,
+    "neutralAuditedGlobalTriangleOverlaps": 0,
+    "posedAuditedGlobalTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7994244,
+    "lod1GlbBytes": 6216784,
+    "lod1ReductionPercent": 22.2,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The zygomatic region reads as a distinct plane instead of one broad smooth cheek.",
+    "The tear trough, infraorbital support and buccal recession create a more legible eye-to-cheek transition.",
+    "The mental sulcus and chin pad separate the lower lip region from the chin.",
+    "The changes remain restrained at a maximum local displacement of 1.04 mm and preserve the established silhouette."
+  ],
+  "rejectedExperiments": [
+    "Keeping the old brow-density, upper-fold and tear-line positions was rejected after the first v52 audit found body intersections.",
+    "Discarding the facial-plane sculpt was rejected because reprojecting the six affected surface layers removed every neutral and posed intersection without weakening the new anatomy."
+  ],
+  "blockingFailures": [
+    "The face still needs expression-oriented perioral loops, asymmetric commissure sculpting and a phoneme pose suite.",
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "The crown needs a coherent authored direction field with a narrower irregular part and fewer cross-flow fibers.",
+    "Hair shading still needs an engine-side dual-lobe anisotropic model and strand-scale roughness variation.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}

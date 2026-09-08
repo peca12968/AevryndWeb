@@ -329,6 +329,16 @@ bundle can be reproduced from the recorded URL and digest when required.
   and 5.93 MiB, with LOD1 22.2% smaller. Its strict score remains 65/100
   because the eyelid margins, canthi and surrounding facial anatomy still fail
   the review-quality gate.
+- `aevrynd-female-authoring-v52.blend`: reshapes 9,265 body vertices with a
+  maximum local displacement of 1.04 mm to strengthen the orbital rim,
+  zygomatic projection, tear trough, buccal transition, nasolabial structure,
+  mental sulcus and chin pad. Six surface attachments are reprojected to a
+  0.45 mm body clearance while 41 other non-target meshes retain exact
+  geometry. Neutral and posed checks report zero intersections across the face
+  attachment stack, v50 mouth, garments and eleven hair layers. Full and LOD1
+  GLBs are 7.62 MiB and 5.93 MiB, with LOD1 22.2% smaller. Its strict score is
+  66/100; eyelid topology, commissure form, crown flow, clothing and corrective
+  deformation remain below review quality.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
