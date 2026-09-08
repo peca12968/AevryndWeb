@@ -19,6 +19,7 @@
       <span>AEVRYND <small>ENGINE LOG</small></span>
     </a>
     <nav aria-label="主要導覽">
+      <a href="#character">3D 角色</a>
       <a href="#journey">歷程</a>
       <a href="#systems">系統</a>
       <a href="#workflow">方法</a>
@@ -38,18 +39,22 @@
         </div>
       </div>
 
-      <div class="engine-window" aria-label="抽象化的引擎運作視窗">
-        <div class="window-bar"><span></span><span></span><span></span><b>AEVRYND / DIRECTX 12</b><i>ULTRA</i></div>
-        <div class="viewport">
-          <div class="world-grid"></div>
-          <div class="core-orbit orbit-one"></div>
-          <div class="core-orbit orbit-two"></div>
-          <div class="core">A</div>
-          <div class="metric metric-a"><small>FIXED LOOP</small><strong>60 Hz</strong></div>
-          <div class="metric metric-b"><small>STRESS SCENE</small><strong>6,561 meshes</strong></div>
-          <div class="viewport-caption">C++20 / WIN32 / DX12 / LOCAL AI</div>
+      <div class="engine-window" id="character" aria-label="角色 3D 展示">
+        <div class="window-bar"><span></span><span></span><span></span><b>AEVRYND / CHARACTER LAB</b><i>360°</i></div>
+        <div class="viewport character-viewport">
+          <model-viewer id="character-model" src="./assets/character.glb" alt="Aevrynd 開發中角色的立體模型，可拖曳環繞觀看" camera-controls disable-pan touch-action="pan-y" camera-orbit="0deg 80deg 105%" min-camera-orbit="auto 10deg 35%" max-camera-orbit="auto 170deg 200%" shadow-intensity="1" exposure="1" interaction-prompt="none" loading="eager" aria-describedby="viewer-help"></model-viewer>
+          <div class="viewer-status" id="viewer-status" role="status">正在載入角色模型…</div>
         </div>
-        <div class="console-line"><span>›</span> engine.tick() <i>CSM · PBR · HDR ready</i><b>v2.47.0</b></div>
+        <div class="viewer-controls" role="group" aria-label="角色視角控制">
+          <button type="button" data-view="0" disabled>正面</button>
+          <button type="button" data-view="90" disabled>側面</button>
+          <button type="button" data-view="180" disabled>背面</button>
+          <button type="button" id="rotate-model" aria-pressed="false" disabled>自動旋轉</button>
+          <button type="button" id="reset-model" disabled>重設視角</button>
+        </div>
+        <p class="viewer-help" id="viewer-help">拖曳環繞 360° · 滾輪或雙指縮放 · 聚焦模型後可用方向鍵旋轉</p>
+        <p class="viewer-note">Character Lab 開發中模型 · 服裝仍在調整，此匯出版本未含頭髮與眉毛。</p>
+        <noscript><p class="viewer-note">請啟用 JavaScript 以操作 3D 模型。</p></noscript>
       </div>
     </section>
 
@@ -186,5 +191,6 @@
     <a href="#top">回到頂端 ↑</a>
   </footer>
   <script src="./script.js"></script>
+  <script type="module" src="./viewer.js"></script>
 </body>
 </html>
