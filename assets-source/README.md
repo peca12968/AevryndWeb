@@ -310,6 +310,15 @@ bundle can be reproduced from the recorded URL and digest when required.
   distance-invisible eye and brow micro layers. Its strict score remains 65/100
   because the lip silhouette is still procedural and continuous expression
   loops, eyelid topology and a phoneme pose suite remain incomplete.
+- `aevrynd-female-authoring-v50.blend`: replaces the five-row lip volumes
+  with seven-row skinned profiles and gives the outer two rows the same skin
+  shader and color attribute as the body. The wet margin now follows the curved
+  inner lip, is recessed behind the silhouette and shares the surrounding
+  four-bone deformation. Neutral and posed audits report zero intersections
+  across the mouth stack, both garments, all eleven hair layers and the
+  undercut hierarchy. Full and LOD1 GLBs are 7.59 MiB and 5.93 MiB, with LOD1
+  21.9% smaller. Its strict score remains 65/100 because the commissures are
+  still too pointed and expression-oriented perioral loops remain incomplete.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

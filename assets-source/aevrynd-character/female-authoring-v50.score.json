@@ -1,0 +1,64 @@
+{
+  "asset": "aevrynd-female-authoring-v50.blend",
+  "state": "AUTHORING",
+  "score": 65,
+  "eligibleForReview": false,
+  "scoringCalibration": "No point is awarded yet. The lips now blend through two skin-shader transition rows, the wet margin follows the curved inner lip and all audited neutral and posed intersections are zero, but the commissures remain too sharp and the surrounding facial anatomy is still below strict review quality.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 10, "max": 16 },
+    "skinEyesMouthNails": { "score": 11, "max": 12 },
+    "hairAndHairline": { "score": 12, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "bakedBodyVertices": 42342,
+    "bakedBodyFaces": 42296,
+    "mouthOpeningFacesRemoved": 44,
+    "mouthBoundaryEdges": 80,
+    "mouthBoundaryComponents": 2,
+    "upperLipVertices": 455,
+    "lowerLipVertices": 455,
+    "lipProfileRows": 7,
+    "skinTransitionRows": 2,
+    "bodyUnweightedVertices": 0,
+    "maximumBodyBoneInfluences": 4,
+    "neutralAuditedMouthTriangleOverlaps": 0,
+    "posedAuditedMouthTriangleOverlaps": 0,
+    "neutralAuditedGlobalTriangleOverlaps": 0,
+    "posedAuditedGlobalTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7955284,
+    "lod1GlbBytes": 6216692,
+    "lod1ReductionPercent": 21.9,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "Two rows use the same skin shader and vertex-color attribute as the body, reducing the dark sticker-like outer lip border.",
+    "Seven profile rows give the vermilion more controlled shoulder, crest and inner-margin volume than v47.",
+    "The wet margin is recessed and curved from the lip geometry, eliminating the long line visible in the rejected side render.",
+    "The front is cleaner than v47, but both commissures remain visibly pointed and the face still reads as procedural."
+  ],
+  "rejectedExperiments": [
+    "The v48 detached eyelid-volume prototype was rejected because it produced square gaps, floating patches and worse eye silhouettes.",
+    "The dense v49 hairline transition was rejected because opaque strands formed a brush-like fringe; the transparent revision became too weak to improve the existing hairline.",
+    "A separate light lip-transition material was rejected because it created a pale outline around the mouth.",
+    "A flat wet-margin revision was rejected after the side render exposed a line projecting beyond the lips.",
+    "Catmull-Clark at runtime level one was rejected because it pulled transition faces through the body."
+  ],
+  "blockingFailures": [
+    "The perioral region still needs continuous expression-oriented edge loops, asymmetric commissure sculpting and a phoneme pose suite.",
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "The crown needs a coherent authored direction field with a narrower irregular part and fewer cross-flow fibers.",
+    "Hair shading still needs an engine-side dual-lobe anisotropic model and strand-scale roughness variation.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}
