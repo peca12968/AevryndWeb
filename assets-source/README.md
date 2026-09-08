@@ -39,6 +39,11 @@ bundle can be reproduced from the recorded URL and digest when required.
   lashes and tear layers moved with their eyelids. Attachment distances are
   measured by `scripts/audit-female-attachments.py` against the evaluated body
   and parent hair surfaces.
+- `aevrynd-female-authoring-v8.blend`: first Aevrynd-owned humanoid skeleton,
+  four-influence body skinning, rigid head-layer parenting, and an embedded
+  neutral/raised-arm deformation action. It uses no Rigify or runtime authoring
+  dependency; `scripts/audit-female-rig.py` verifies attachment stability in
+  both animation frames.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
