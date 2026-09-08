@@ -178,6 +178,17 @@ bundle can be reproduced from the recorded URL and digest when required.
   Its strict score is 54/100 because the cleaner undercut does not yet fix the
   uniformly combed crown or supply convincing large and medium clumps. Opaque
   jagged and hard-edged undercut experiments v31-v32 were rejected.
+- `aevrynd-female-authoring-v35.blend`: replaces the opaque scalp-cap edge with
+  an exportable vertex-density transition over 13.5 mm. All 40 v33 mesh objects
+  retain identical vertex positions and polygon topology, so the prior
+  collision result remains intact; a fresh neutral/posed audit also reports
+  zero body intersections for all ten hair layers. The GLB keeps the scalp
+  alpha in BLEND mode and retains 21 bones and one animation. Full and LOD1
+  previews are 7.09 MiB and 5.48 MiB, a 22.7% reduction. Its strict score is
+  55/100: the forehead, temple and nape transitions are less helmet-like, but
+  the primary groom still needs authored large/medium clumps and crown breakup.
+  v34 was rejected because its wide cards produced saw-toothed ear and rear
+  silhouettes.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

@@ -1,0 +1,52 @@
+{
+  "asset": "aevrynd-female-authoring-v35.blend",
+  "state": "AUTHORING",
+  "score": 55,
+  "eligibleForReview": false,
+  "scoringCalibration": "One hair point is earned because the scalp coverage now fades over 13.5 mm at every open boundary, removing the hard helmet edge without changing collision-approved geometry. The primary groom still lacks convincing large and medium clumps.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 8, "max": 16 },
+    "skinEyesMouthNails": { "score": 8, "max": 12 },
+    "hairAndHairline": { "score": 7, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "unchangedV33MeshObjects": 40,
+    "scalpBoundaryVertices": 96,
+    "scalpFadeWidthM": 0.0135,
+    "exportedScalpAlphaRange": [0.101961, 1.0],
+    "neutralAllHairBodyTriangleOverlaps": 0,
+    "posedAllHairBodyTriangleOverlaps": 0,
+    "nonFiniteVertices": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7433608,
+    "lod1GlbBytes": 5748488,
+    "lod1ReductionPercent": 22.7,
+    "runtimeScalpAlphaMode": "BLEND",
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The opaque forehead boundary now blends into the baby-hair layer instead of reading as a solid cap edge.",
+    "The temple and rear scalp transition is softer while the v33 undercut remains visible underneath.",
+    "All 40 v33 mesh objects retain identical vertex positions and polygon topology; only the scalp density attribute and material changed.",
+    "The crown remains too uniform and the thin guide strands still lack the grouped large-to-medium clump structure used by current game characters."
+  ],
+  "rejectedExperiments": [
+    "v34 was rejected because 251 wide cards added saw-toothed ribbons around the ears and rear silhouette."
+  ],
+  "blockingFailures": [
+    "The primary groom still needs hand-shaped large and medium clumps, a readable part, crown breakup and controlled side volume.",
+    "A true mouth slit, oral cavity, teeth, tongue and expression-compatible lip topology are still missing.",
+    "Integrated eyelid thickness and high-resolution canthus anatomy remain below review quality.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the two audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}
