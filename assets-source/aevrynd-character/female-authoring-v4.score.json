@@ -1,0 +1,36 @@
+{
+  "asset": "aevrynd-female-authoring-v4.blend",
+  "state": "AUTHORING",
+  "score": 52,
+  "eligibleForReview": false,
+  "categories": {
+    "anatomyAndSilhouette": { "score": 14, "max": 16 },
+    "faceIdentityAndForms": { "score": 11, "max": 16 },
+    "skinEyesMouthNails": { "score": 5, "max": 12 },
+    "hairAndHairline": { "score": 6, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 0, "max": 10 },
+    "rigAndDeformation": { "score": 0, "max": 8 },
+    "collisionIntegrity": { "score": 4, "max": 10 },
+    "runtimePerformance": { "score": 5, "max": 6 }
+  },
+  "verified": {
+    "groomLayers": 5,
+    "guideRoots": 161,
+    "mainHairCards": 644,
+    "hairlineAndNapeCards": 480,
+    "flyawayCards": 56,
+    "missedSurfaceRoots": 0,
+    "minimumStaticBodyClearanceMeters": 0.0008,
+    "runtimeObjectCount": 22
+  },
+  "blockingFailures": [
+    "The short groom is a collision-safe structural pass; card breakup, alpha coverage and strand shading remain below candidate quality.",
+    "Hair motion bones and posed collision validation do not exist.",
+    "Facial identity remains a broad-form pass and has no expression validation.",
+    "Eyelid thickness, tear meniscus, mouth interior, teeth and tongue are not authored.",
+    "Skin microstructure is procedural authoring data and has not been baked.",
+    "No Aevrynd skeleton, skin weights or deformation pose suite exists.",
+    "No clothing layers or posed body-clothing collision results exist."
+  ]
+}
