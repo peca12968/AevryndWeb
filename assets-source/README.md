@@ -319,6 +319,16 @@ bundle can be reproduced from the recorded URL and digest when required.
   undercut hierarchy. Full and LOD1 GLBs are 7.59 MiB and 5.93 MiB, with LOD1
   21.9% smaller. Its strict score remains 65/100 because the commissures are
   still too pointed and expression-oriented perioral loops remain incomplete.
+- `aevrynd-female-authoring-v51.blend`: replaces the four sparse lash layers
+  with 46 upper and 22 lower tapered fibers per eye. Six control rows produce a
+  forward-first curl, deterministic three-fiber groups remove the regular
+  radial rhythm, and every point is projected outside the cornea by at least
+  0.09 mm. Neutral and posed checks report zero intersections with the body,
+  sclera, cornea or opposite lash layer; the v50 mouth, garments and eleven
+  hair layers also retain zero intersections. Full and LOD1 GLBs are 7.62 MiB
+  and 5.93 MiB, with LOD1 22.2% smaller. Its strict score remains 65/100
+  because the eyelid margins, canthi and surrounding facial anatomy still fail
+  the review-quality gate.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

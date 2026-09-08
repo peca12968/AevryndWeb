@@ -1,0 +1,61 @@
+{
+  "asset": "aevrynd-female-authoring-v51.blend",
+  "state": "AUTHORING",
+  "score": 65,
+  "eligibleForReview": false,
+  "scoringCalibration": "No point is awarded yet. The eyelashes now use finer, denser, shorter curved fibers with deterministic three-fiber direction groups and explicit cornea clearance, but integrated eyelid margins and canthus topology remain below strict review quality.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 10, "max": 16 },
+    "skinEyesMouthNails": { "score": 11, "max": 12 },
+    "hairAndHairline": { "score": 12, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "unchangedBaselineMeshObjects": 44,
+    "rebuiltLashLayers": 4,
+    "upperLashFibersPerEye": 46,
+    "lowerLashFibersPerEye": 22,
+    "upperLashVerticesPerEye": 828,
+    "lowerLashVerticesPerEye": 396,
+    "upperRootClearanceM": 0.00056,
+    "lowerRootClearanceM": 0.00072,
+    "corneaControlPointClearanceM": 0.00009,
+    "neutralAuditedLashTriangleOverlaps": 0,
+    "posedAuditedLashTriangleOverlaps": 0,
+    "neutralAuditedMouthTriangleOverlaps": 0,
+    "posedAuditedMouthTriangleOverlaps": 0,
+    "neutralAuditedGlobalTriangleOverlaps": 0,
+    "posedAuditedGlobalTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7993448,
+    "lod1GlbBytes": 6216692,
+    "lod1ReductionPercent": 22.2,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The front view no longer shows the long, evenly spaced radial spikes of v50.",
+    "Upper lashes are shorter in screen-space because most length projects forward before curling upward.",
+    "Lower lashes are thinner and lower contrast while remaining visible in the close view.",
+    "Three-fiber direction groups break the picket-fence rhythm without producing large artificial clumps."
+  ],
+  "rejectedExperiments": [
+    "Increasing only the lower-lash body clearance was rejected because one curved segment still intersected the left cornea.",
+    "Deleting or hand-special-casing the offending left lash was rejected in favor of a reusable cornea-distance projection rule."
+  ],
+  "blockingFailures": [
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "The face still needs stronger anatomical plane transitions and less procedural commissure geometry.",
+    "The crown needs a coherent authored direction field with a narrower irregular part and fewer cross-flow fibers.",
+    "Hair shading still needs an engine-side dual-lobe anisotropic model and strand-scale roughness variation.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}
