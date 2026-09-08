@@ -1,0 +1,64 @@
+{
+  "asset": "aevrynd-female-authoring-v21.blend",
+  "state": "AUTHORING",
+  "score": 49,
+  "eligibleForReview": false,
+  "scoringCalibration": "Visual realism is scored independently; passing topology, collision and runtime checks cannot compensate for weak face, skin, hair, clothing or deformation quality.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 6, "max": 16 },
+    "skinEyesMouthNails": { "score": 6, "max": 12 },
+    "hairAndHairline": { "score": 5, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "scalpVertices": 2497,
+    "scalpFaces": 2496,
+    "scalpSurfaceClearanceM": 0.0018,
+    "scalpProjectionMisses": 0,
+    "boundaryClumps": 59,
+    "boundaryVertices": 590,
+    "boundaryFaces": 236,
+    "boundarySurfaceClearanceM": 0.00215,
+    "neutralScalpBodyTriangleOverlaps": 0,
+    "posedScalpBodyTriangleOverlaps": 0,
+    "neutralBoundaryBodyTriangleOverlaps": 0,
+    "posedBoundaryBodyTriangleOverlaps": 0,
+    "neutralOtherHairBodyTriangleOverlaps": 0,
+    "posedOtherHairBodyTriangleOverlaps": 0,
+    "neutralEyeLayerBodyTriangleOverlaps": 0,
+    "posedEyeLayerBodyTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeGlbBytes": 7339440,
+    "lod1GlbBytes": 5654320,
+    "lod1ReductionPercent": 23.0,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "technicalBasis": [
+    "Blender hair curves may be attached to a UV surface for offline grooming.",
+    "Curves are converted to mesh geometry before Aevrynd glTF export."
+  ],
+  "visualFindings": [
+    "The continuous projected scalp removes the large exposed gray scalp regions at the crown and front part.",
+    "The front hairline is continuous and smoother than the disconnected v20 foundation.",
+    "Narrow translucent boundary clumps soften the side and rear edge but remain too subtle to fully hide the cap boundary.",
+    "The primary strands still read as many straight independent fibers rather than hierarchical game hair clumps.",
+    "The side and nape silhouette still resembles a short undercut and lacks intentional styling."
+  ],
+  "blockingFailures": [
+    "The groom needs hand-shaped large and medium clump cards with a coherent part and controlled overlap.",
+    "Ear, temple and nape transitions still need asymmetric silhouette breakup and denser coverage.",
+    "Hair materials need dedicated strand-direction anisotropy and alpha textures validated in the Aevrynd renderer.",
+    "The eyelid folds, medial canthi, lacrimal caruncles and orbital fat pads still need integrated sculpted topology.",
+    "The mouth base needs a true mouth slit, oral cavity and animation-ready corner loops.",
+    "Skin requires region-specific albedo, pore direction, roughness, oiliness, redness and subsurface response.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the two audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}

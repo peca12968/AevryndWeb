@@ -132,6 +132,15 @@ bundle can be reproduced from the recorded URL and digest when required.
   Full and LOD1 previews remain under the size gates at 7.75 MiB and 6.14 MiB.
   The strict visual-first score rises only to 48/100 because the integrated lid
   anatomy, lash rhythm, skin, mouth, groom, clothing and deformation still fail.
+- `aevrynd-female-authoring-v21.blend`: replaces the disconnected high-density
+  scalp with a continuous 2,497-vertex surface projected from the character's
+  own evaluated head at 1.8 mm clearance. Fifty-nine separately layered,
+  translucent boundary clumps add side and nape breakup. Neutral and posed
+  audits report zero exact body intersections for both new layers. The simpler
+  foundation also reduces the full preview to 7.00 MiB and LOD1 to 5.39 MiB,
+  a 23.0% reduction. Its strict score is 49/100: crown and front coverage are
+  better, while the side/rear undercut silhouette and straight-fiber groom still
+  require a full large/medium clump-card pass.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
