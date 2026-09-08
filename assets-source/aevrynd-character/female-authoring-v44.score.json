@@ -1,0 +1,57 @@
+{
+  "asset": "aevrynd-female-authoring-v44.blend",
+  "state": "AUTHORING",
+  "score": 63,
+  "eligibleForReview": false,
+  "scoringCalibration": "One hair point is earned because the ear-side and nape silhouette now remains clean in front, three-quarter, side and back views: long isolated tails and the comb-like boundary layers are gone. Crown breakup, card width rhythm and engine hair shading still fail the production-quality gate.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 10, "max": 16 },
+    "skinEyesMouthNails": { "score": 11, "max": 12 },
+    "hairAndHairline": { "score": 10, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "unchangedBaselineMeshObjects": 40,
+    "removedEarNapeMainFibers": 141,
+    "removedEarNapeGuideFibers": 32,
+    "removedEarNapeFlyaways": 2,
+    "removedLargeEarNapeCards": 30,
+    "removedMediumEarNapeCards": 39,
+    "templeTransitionClumps": 46,
+    "napeTransitionClumps": 38,
+    "boundaryTransitionClumps": 30,
+    "neutralAuditedHairTriangleOverlaps": 0,
+    "posedAuditedHairTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7222596,
+    "lod1GlbBytes": 5717316,
+    "lod1ReductionPercent": 20.8,
+    "lod1FineTransitionLayersRemoved": true,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The nape no longer forms a long vertical comb or extends isolated fibers down the neck.",
+    "The ear-side silhouette no longer contains broad triangular ticks or detached long strands.",
+    "The replacement temple, nape and boundary groups are short, tapered, irregularly spaced and projected outside the animated body surface."
+  ],
+  "rejectedExperiments": [
+    "The first v44 candidate rebuilt only the transition groups and was rejected because legacy main fibers and cards still crossed the new ear and nape silhouette.",
+    "The first two LOD1 exports were rejected at 18.8% and 19.88% reduction; the accepted LOD1 removes millimeter-scale hairline, transition and undercut-density layers while retaining the scalp and large silhouette cards."
+  ],
+  "blockingFailures": [
+    "The groom still needs hand-shaped crown breakup and narrower, less repetitive card groupings.",
+    "Hair shading still needs an engine-side dual-lobe anisotropic model and strand-scale roughness variation.",
+    "The body needs expression-compatible lip loops and a deformable mouth opening before teeth and tongue can be exposed during speech.",
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}

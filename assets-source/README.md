@@ -272,6 +272,16 @@ bundle can be reproduced from the recorded URL and digest when required.
   smaller. Its strict score remains 62/100: the front is materially cleaner,
   but temple grouping, the nape edge, crown breakup and engine hair shading
   still fail the production-quality gate.
+- `aevrynd-female-authoring-v44.blend`: replaces the old wide temple and nape
+  ribbons with 46 temple, 38 nape and 30 boundary transition clumps that are
+  short, tapered, irregularly spaced and projected outside the animated body.
+  It also removes 175 ear/nape fibers and 69 card components whose intermediate
+  points cross the new silhouette. Neutral and posed checks report zero
+  intersections across all modified hair layers, the body, scalp and transition
+  hierarchy; 40 other v43 meshes retain exact geometry. Full and LOD1 GLBs are
+  6.89 MiB and 5.45 MiB, with LOD1 20.8% smaller. Its strict score is 63/100:
+  side and rear grooming earn one point, while crown breakup, card rhythm and
+  engine hair shading remain below review quality.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
