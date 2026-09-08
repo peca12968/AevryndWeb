@@ -211,6 +211,16 @@ bundle can be reproduced from the recorded URL and digest when required.
   eye-margin layers, 21 bones and one animation. Its strict score is 57/100;
   integrated eyelid thickness and expression-compatible canthus topology still
   block review.
+- `aevrynd-female-authoring-v38.blend`: replaces the four legacy eyelash layers,
+  whose bounds implied 28-33 mm spikes, with tapered forward-curled fibers. Each
+  eye uses 26 upper and 12 lower lashes with measured 1.6-8.3 mm lengths,
+  inner-to-outer length variation, irregular roots and paired micro-clumping.
+  The remaining 38 baseline mesh objects keep identical geometry. Neutral and
+  posed audits report zero intersections with the body, sclerae, corneas or
+  opposing lash layer. Full and LOD1 GLBs are 7.08 MiB and 5.47 MiB, a 22.7%
+  reduction, and preserve all four lash meshes, 21 bones and one animation. Its
+  strict score is 58/100. The first evenly spaced v38 pass was rejected because
+  it still read as comb teeth.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

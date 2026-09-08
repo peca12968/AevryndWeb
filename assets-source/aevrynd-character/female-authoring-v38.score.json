@@ -1,0 +1,57 @@
+{
+  "asset": "aevrynd-female-authoring-v38.blend",
+  "state": "AUTHORING",
+  "score": 58,
+  "eligibleForReview": false,
+  "scoringCalibration": "One eye-detail point is earned because all four lash layers were rebuilt from implausible 28-33 mm regular spikes into tapered, forward-curled fibers with 1.6-8.3 mm measured lengths, inner-to-outer variation and paired micro-clumping. Eyelid thickness and the eyebrow groom remain below review quality.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 9, "max": 16 },
+    "skinEyesMouthNails": { "score": 10, "max": 12 },
+    "hairAndHairline": { "score": 7, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "unchangedBaselineMeshObjects": 38,
+    "rebuiltLashLayers": 4,
+    "upperLashesPerEye": 26,
+    "lowerLashesPerEye": 12,
+    "upperLashLengthRangeM": [0.002359, 0.008317],
+    "lowerLashLengthRangeM": [0.001562, 0.004423],
+    "neutralLashBodyTriangleOverlaps": 0,
+    "posedLashBodyTriangleOverlaps": 0,
+    "neutralLashEyeTriangleOverlaps": 0,
+    "posedLashEyeTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7419440,
+    "lod1GlbBytes": 5734320,
+    "lod1ReductionPercent": 22.7,
+    "runtimeLashLayers": 4,
+    "runtimeScalpAlphaMode": "BLEND",
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "Upper lashes now vary in height and lean instead of forming a uniform vertical fence.",
+    "Inner lashes are shorter and outer lashes are longer, with adjacent pairs converging into small clumps.",
+    "Lower lashes are sparse and shorter than the upper set instead of extending rearward into the eye socket.",
+    "The v37 meniscus and caruncle layers remain visible and collision free beneath the rebuilt lashes."
+  ],
+  "rejectedExperiments": [
+    "The first v38 pass used 34 upper and 18 lower lashes with too little variation, so it still read as evenly spaced comb teeth."
+  ],
+  "blockingFailures": [
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "The eyebrow groom remains uniformly combed and lacks dense overlapping growth zones.",
+    "A true mouth slit, oral cavity, teeth, tongue and expression-compatible lip topology are still missing.",
+    "The primary groom still needs hand-shaped large and medium clumps, a readable part, crown breakup and controlled side volume.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}
