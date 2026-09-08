@@ -35,6 +35,10 @@ bundle can be reproduced from the recorded URL and digest when required.
   maps connected to exportable glTF materials. Experimental normal and roughness
   maps are retained as source data but deliberately disconnected until tangent
   and UV-seam validation passes.
+- `aevrynd-female-authoring-v7.blend`: bounded eye-aperture refinement with
+  lashes and tear layers moved with their eyelids. Attachment distances are
+  measured by `scripts/audit-female-attachments.py` against the evaluated body
+  and parent hair surfaces.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

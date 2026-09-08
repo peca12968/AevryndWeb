@@ -1,0 +1,35 @@
+{
+  "asset": "aevrynd-female-authoring-v7.blend",
+  "state": "AUTHORING",
+  "score": 56,
+  "eligibleForReview": false,
+  "categories": {
+    "anatomyAndSilhouette": { "score": 14, "max": 16 },
+    "faceIdentityAndForms": { "score": 12, "max": 16 },
+    "skinEyesMouthNails": { "score": 8, "max": 12 },
+    "hairAndHairline": { "score": 6, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 0, "max": 10 },
+    "rigAndDeformation": { "score": 0, "max": 8 },
+    "collisionIntegrity": { "score": 4, "max": 10 },
+    "runtimePerformance": { "score": 5, "max": 6 }
+  },
+  "verified": {
+    "eyelidChangedVertices": 275,
+    "eyelidMaximumDisplacementMeters": 0.0005151033263547472,
+    "eyelidFollowLayers": 6,
+    "maximumLashRootDistanceMeters": 0.000816671417889417,
+    "maximumMainHairRootDistanceMeters": 0.0016501569319469535,
+    "maximumFlyawayParentDistanceMeters": 0.0,
+    "runtimeGlbBytes": 4852464
+  },
+  "blockingFailures": [
+    "The eye aperture is less round, but eyelid thickness, crease anatomy and expression shapes remain incomplete.",
+    "Skin normal and roughness maps remain disconnected until UV tangents are seam-safe.",
+    "The skin lacks region-specific face, palm, lip and joint variation.",
+    "The mouth has no inner mouth, teeth or tongue layers.",
+    "The short groom still lacks alpha breakup, production strand shading and motion bones.",
+    "No Aevrynd skeleton, skin weights or deformation pose suite exists.",
+    "No clothing layers or posed body-clothing collision results exist."
+  ]
+}

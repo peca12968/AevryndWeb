@@ -279,7 +279,7 @@ def build_groom(body):
                     math.cos(index * 1.1 + t * 3.1),
                     math.sin(index * 0.7 + t * 5.0),
                 )
-            ) * (0.001 + 0.007 * t)
+            ) * (0.007 * t)
             point, clearance = keep_outside(surface_data, source_point + offset, 0.0008)
             minimum_clearance = min(minimum_clearance, clearance)
             points.append(point)
