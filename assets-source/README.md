@@ -91,6 +91,14 @@ bundle can be reproduced from the recorded URL and digest when required.
   skin weights and zero body or upper/lower-lip triangle intersections in both
   validation poses. A true opening oral cavity and expression shapes remain
   required before this mouth can pass review.
+- `aevrynd-female-authoring-v16.blend`: replaces the overlong forehead hairline
+  fibers with 84 body-conforming transition ribbons measuring 3.1–8.1 mm and
+  retunes the dark, warm and scalp hair materials so the groom separates under
+  neutral lighting. `scripts/audit-female-hairline-v16.py` verifies zero exact
+  body intersections for every hair layer at neutral and raised-arm frames.
+  The full runtime preview is 7.56 MiB; LOD1 is 5.95 MiB and 21.3% smaller.
+  A trial jaw/oral layer was rejected because this base lacks a true mouth-slit
+  topology, so it is not included in this stable authoring stage.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
