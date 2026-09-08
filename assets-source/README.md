@@ -362,6 +362,19 @@ bundle can be reproduced from the recorded URL and digest when required.
   repetitive side curtain, rear split and missing production micro-transition
   layer still block review.
 
+- `aevrynd-female-authoring-v61.blend`: replaces the flat eye shading stack
+  with deterministic Aevrynd-owned 512px green-hazel iris and 512x256 sclera
+  textures, body-integrated upper/lower palpebral rolls and a 1.55 mm anterior
+  corneal bulge. Six redundant painted or flat overlay meshes are retained only
+  for authoring traceability and excluded from runtime. Neutral and posed BVH
+  audits report zero intersections between the body, tear film, caruncles,
+  lashes and corneal attachments. Full and LOD1 GLBs are 7.78 MiB and 6.02 MiB;
+  the full asset reduces draw calls from 55 to 47 and its seven-run median Node
+  load falls from 12.33 ms to 11.49 ms. Its strict fixed seven-view score is
+  57/100: the eyes are materially clearer, while legacy aperture topology,
+  facial expression structure, skin microdetail, crown groom, clothing and
+  corrective deformation still block review.
+
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
 satisfied.

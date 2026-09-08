@@ -1,0 +1,73 @@
+{
+  "asset": "aevrynd-female-authoring-v61.blend",
+  "state": "AUTHORING",
+  "score": 57,
+  "eligibleForReview": false,
+  "scoringCalibration": "Two eye-quality points are restored because the previous flat iris, uniform sclera vessels, painted upper-fold strips and duplicate limbal geometry are replaced by a deterministic owned texture set, body-integrated palpebral rolls and a deeper collision-cleared corneal envelope. The strict score remains low because the eyelid aperture topology, facial identity, skin microstructure, crown groom, clothing and deformation system are still below production quality.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 7, "max": 16 },
+    "skinEyesMouthNails": { "score": 10, "max": 12 },
+    "hairAndHairline": { "score": 8, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "unchangedBaselineMeshes": 32,
+    "bodyIntegratedPalpebralVertices": 822,
+    "maximumPalpebralDisplacementM": 0.00063899,
+    "corneaChangedVerticesPerEye": 929,
+    "maximumCorneaApexDisplacementM": 0.00155,
+    "retiredFlatOverlayMeshes": 6,
+    "irisTextureSize": [512, 512],
+    "scleraTextureSize": [512, 256],
+    "neutralAuditedEyeAttachmentBodyTriangleOverlaps": 0,
+    "posedAuditedEyeAttachmentBodyTriangleOverlaps": 0,
+    "neutralAuditedCorneaAttachmentTriangleOverlaps": 0,
+    "posedAuditedCorneaAttachmentTriangleOverlaps": 0,
+    "neutralBodyCorneaContactDeltaMaximum": 10,
+    "posedBodyCorneaContactDeltaMaximum": 8,
+    "neutralCorneaScleraContactTrianglesPerEye": 172,
+    "posedCorneaScleraContactTrianglesPerEye": 172,
+    "fullRuntimeBytes": 8155852,
+    "lod1RuntimeBytes": 6308828,
+    "lod1ReductionPercent": 22.6,
+    "runtimeDrawCalls": 47,
+    "baselineRuntimeDrawCalls": 55,
+    "runtimeVertices": 126645,
+    "baselineRuntimeVertices": 127593,
+    "runtimeTriangles": 181320,
+    "baselineRuntimeTriangles": 182056,
+    "medianNodeLoadMsSevenRounds": 11.49,
+    "baselineMedianNodeLoadMsSevenRounds": 12.33,
+    "productionSiteBuildPassed": true,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The iris now contains layered green-hazel fibers, an irregular collarette, crypt breakup and a texture-integrated limbal fade instead of bright straight overlay spokes.",
+    "Scleral vessels now branch from the corners over a warm nonuniform base instead of repeating as parallel horizontal lines across the whole eye.",
+    "Upper and lower palpebral rolls are sculpted into the body surface with canthus taper and a 0.639 mm maximum displacement; the detached painted upper-fold strips are excluded from render and runtime.",
+    "The corneal anterior envelope gains a 1.55 mm central bulge, with tear film, caruncle and lash roots reprojected against both body and cornea clearances.",
+    "Fixed front, both three-quarter and full-face views no longer show the rejected floating limbal black arc or the previous red upper-fold outline."
+  ],
+  "rejectedExperiments": [
+    "v58 regional vertex-color and skin-shader amplification was rejected because fixed-camera comparisons produced too little visible facial improvement.",
+    "v59 detached eyelid margins were rejected because they repeated the floating-patch architecture of v48 and introduced lower-lid collisions at neutral and posed frames.",
+    "v60 body-only palpebral rolls were retained as architectural evidence but rejected as a release candidate because the close-view improvement was too small without rebuilding the eye shading stack.",
+    "The first v61 limbal placement was rejected after three-quarter renders exposed a detached black arc; the redundant mesh is now runtime-excluded and its darkening is integrated into the iris texture."
+  ],
+  "blockingFailures": [
+    "The face still lacks production expression loops, asymmetric commissure structure and verified phoneme deformation.",
+    "The current body-integrated lid roll improves thickness but the eye aperture remains constrained by legacy topology and cannot yet blink or squint with anatomical fold behavior.",
+    "Skin still lacks production pore, peach-fuzz, oil-zone and regionally calibrated subsurface response under multiple lighting environments.",
+    "The extreme top view still exposes a radial hair-ribbon fan; the side curtain and rear split remain visible.",
+    "Clothing edge flow, seams, folds, fabric materials and outer-layer combinations remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "Actual browser GPU frame time, memory and LOD transition popping for v61 remain unmeasured because the accepted website preview has deliberately not been replaced."
+  ],
+  "scoringPolicyRevision": "strict-fixed-seven-view-v3"
+}
