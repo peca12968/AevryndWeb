@@ -1,0 +1,13 @@
+{
+  "name": "aevrynd-engine-journey",
+  "private": true,
+  "scripts": {
+    "build:character": "esbuild src/character-editor.js --bundle --minify --format=esm --outfile=dist/character-editor.js"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.9"
+  }
+}
