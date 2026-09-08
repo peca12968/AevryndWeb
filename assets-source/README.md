@@ -262,6 +262,16 @@ bundle can be reproduced from the recorded URL and digest when required.
   layer and is 24.1% smaller; the first 19.1% LOD candidate was rejected. Its
   strict score is 62/100 because the rear hem and material response improve,
   while crown breakup, ear-side grouping and dual-lobe hair shading remain open.
+- `aevrynd-female-authoring-v43.blend`: removes 259 main fibers, 31 guides,
+  eight flyaways, 41 large cards and 38 medium cards that enter a 10 mm
+  exclusion band above the curved front hairline. It replaces the uniform
+  transition with 89 shorter, clustered and directionally varied baby hairs.
+  Neutral and posed checks report zero intersections across every modified hair
+  layer, the body, scalp and card hierarchy; 42 other v42 meshes retain exact
+  geometry. Full and LOD1 GLBs are 7.18 MiB and 5.68 MiB, with LOD1 20.9%
+  smaller. Its strict score remains 62/100: the front is materially cleaner,
+  but temple grouping, the nape edge, crown breakup and engine hair shading
+  still fail the production-quality gate.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

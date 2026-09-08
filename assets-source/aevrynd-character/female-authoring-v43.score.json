@@ -1,0 +1,55 @@
+{
+  "asset": "aevrynd-female-authoring-v43.blend",
+  "state": "AUTHORING",
+  "score": 62,
+  "eligibleForReview": false,
+  "scoringCalibration": "The front hairline is materially cleaner: detached forehead fibers and cards are removed and the baby-hair transition is shorter and irregular. No point is awarded because ear-side grouping, the rear nape edge, crown breakup and engine hair shading still fail the same production-quality gate.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 10, "max": 16 },
+    "skinEyesMouthNails": { "score": 11, "max": 12 },
+    "hairAndHairline": { "score": 9, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "unchangedBaselineMeshObjects": 42,
+    "removedForeheadMainFibers": 259,
+    "removedForeheadGuideFibers": 31,
+    "removedForeheadFlyaways": 8,
+    "removedLargeForeheadCards": 41,
+    "removedMediumForeheadCards": 38,
+    "irregularBabyHairStrands": 89,
+    "neutralAuditedHairTriangleOverlaps": 0,
+    "posedAuditedHairTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7527548,
+    "lod1GlbBytes": 5954548,
+    "lod1ReductionPercent": 20.9,
+    "lod1MediumCardLayerRemoved": true,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "Long isolated fibers and broad cards no longer cross the forehead or approach the brows in front and three-quarter views.",
+    "The baby-hair transition uses sparse clustered placement, varied direction and shorter tapered ribbons instead of an evenly spaced comb pattern.",
+    "Side and rear inspection still exposes regular temple strokes and a straight nape curtain, so the groom remains below review quality."
+  ],
+  "rejectedExperiments": [
+    "The first v43 candidate used a 2 mm exclusion below the hairline and 126 nearly stratified baby hairs; it was rejected because several detached forehead cards and a comb rhythm remained.",
+    "Awarding a hair-quality point for the cleaner front was rejected because the side and rear silhouette still fails the existing production gate."
+  ],
+  "blockingFailures": [
+    "The groom still needs hand-shaped crown breakup, deliberate ear-side groups and a natural staggered nape edge.",
+    "Hair shading still needs an engine-side dual-lobe anisotropic model and strand-scale roughness variation.",
+    "The body needs expression-compatible lip loops and a deformable mouth opening before teeth and tongue can be exposed during speech.",
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}
