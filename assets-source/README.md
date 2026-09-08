@@ -31,6 +31,10 @@ bundle can be reproduced from the recorded URL and digest when required.
   asset or runtime dependency.
 - `aevrynd-female-authoring-v5.blend`: calibrated iris scale plus separate tear
   meniscus and mouth-crease layers, generated entirely from Aevrynd geometry.
+- `aevrynd-female-authoring-v6.blend`: Aevrynd-generated skin and sclera color
+  maps connected to exportable glTF materials. Experimental normal and roughness
+  maps are retained as source data but deliberately disconnected until tangent
+  and UV-seam validation passes.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
