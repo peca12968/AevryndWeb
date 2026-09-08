@@ -1,0 +1,20 @@
+# Aevrynd source assets
+
+This directory contains authoring sources that are never loaded by the runtime.
+Every imported source must have an explicit version, origin, license, and digest
+before it may be used to create an engine asset.
+
+## Blender Human Base Meshes 1.4.1
+
+- Origin: https://www.blender.org/download/demo-files/#assets
+- Download: https://download.blender.org/demo/asset-bundles/human-base-meshes/human-base-meshes-bundle-v1.4.1.zip
+- Version date: 2026-01-20
+- Archive SHA-256: `811F43ACCBB31A88266D932F8F5563B2D13586FCA0BA2693AAD1F5FE582B3515`
+- License: CC0 1.0 / public domain dedication
+- Selected source asset: `Body Female - Realistic`
+
+The official bundle describes this asset as a realistic scan-data model with
+multiresolution details. Aevrynd will substantially modify, retopologize, rig,
+texture, and optimize it before runtime use. The selected female source is kept
+as `aevrynd-character/aevrynd-female-cc0-base-v1.blend`; the complete upstream
+bundle can be reproduced from the recorded URL and digest when required.
