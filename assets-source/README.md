@@ -114,6 +114,15 @@ bundle can be reproduced from the recorded URL and digest when required.
   remain 7.73 MiB and 6.13 MiB. The strict score stays at 72 because the
   multi-angle visual change is too subtle and the broad cheek and lower-face
   planes still need manual high-resolution sculpting and retopology.
+- `aevrynd-female-authoring-v19.blend`: replaces the sub-millimeter face pass
+  with a guarded 4.48 mm primary-form sculpt over 3,027 control vertices. It
+  narrows the mandible and separates the zygomatic, buccal, chin and mental-
+  crease forms while protecting the eye and mouth attachment zones. All
+  inherited neutral and posed intersection audits remain at zero exact
+  triangle overlaps, and the runtime previews remain 7.73 MiB and 6.13 MiB.
+  The score is recalibrated to a strict visual-first 47/100: the visible face
+  improvement does not compensate for the doll-like eyes, layered mouth,
+  plastic skin, sparse groom, construction clothing and limited deformation.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
