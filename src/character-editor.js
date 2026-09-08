@@ -15,6 +15,9 @@ if (editor) {
   const resetButton = editor.querySelector('[data-editor-reset]');
   const viewButtons = [...editor.querySelectorAll('[data-editor-view]')];
   const clothingButtons = [...editor.querySelectorAll('[data-editor-clothing]')];
+  const nudityDialog = editor.querySelector('[data-nudity-confirm]');
+  const nudityApprove = editor.querySelector('[data-nudity-approve]');
+  const nudityCancel = editor.querySelector('[data-nudity-cancel]');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 
   const scene = new THREE.Scene();
@@ -72,6 +75,7 @@ if (editor) {
   let currentAngle = 0;
   let clothingOn = true;
   let loadingTimer = 0;
+  let nudityReturnFocus = null;
 
   function setControlsDisabled(disabled) {
     editor.querySelectorAll('button, input').forEach(control => { control.disabled = disabled; });
@@ -122,6 +126,22 @@ if (editor) {
     if (upper) upper.visible = visible;
     if (pants) pants.visible = visible;
     clothingButtons.forEach(button => button.setAttribute('aria-pressed', String((button.dataset.editorClothing === 'on') === visible)));
+  }
+
+  function closeNudityDialog() {
+    if (!nudityDialog || nudityDialog.hidden) return;
+    nudityDialog.hidden = true;
+    document.body.classList.remove('nudity-dialog-open');
+    nudityReturnFocus?.focus();
+    nudityReturnFocus = null;
+  }
+
+  function openNudityDialog(button) {
+    if (!nudityDialog) return;
+    nudityReturnFocus = button;
+    nudityDialog.hidden = false;
+    document.body.classList.add('nudity-dialog-open');
+    nudityApprove?.focus();
   }
 
   function setMorph(key, rawValue) {
@@ -212,7 +232,26 @@ if (editor) {
   loadingTimer = window.setTimeout(() => fail('模型載入逾時，請檢查連線後重新整理。'), 90000);
 
   viewButtons.forEach(button => button.addEventListener('click', () => setView(button.dataset.editorView)));
-  clothingButtons.forEach(button => button.addEventListener('click', () => setClothing(button.dataset.editorClothing === 'on')));
+  clothingButtons.forEach(button => button.addEventListener('click', () => {
+    if (button.dataset.editorClothing === 'on') {
+      closeNudityDialog();
+      setClothing(true);
+      return;
+    }
+    if (!clothingOn) return;
+    openNudityDialog(button);
+  }));
+  nudityApprove?.addEventListener('click', () => {
+    setClothing(false);
+    closeNudityDialog();
+  });
+  nudityCancel?.addEventListener('click', closeNudityDialog);
+  nudityDialog?.addEventListener('click', event => {
+    if (event.target === nudityDialog) closeNudityDialog();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && nudityDialog && !nudityDialog.hidden) closeNudityDialog();
+  });
   orbitInput.addEventListener('input', () => setView(currentView, Number(orbitInput.value)));
   resetButton.addEventListener('click', resetEditor);
   controls.addEventListener('change', () => updateOrbitReadout(normalizedAngle(controls.getAzimuthalAngle())));
