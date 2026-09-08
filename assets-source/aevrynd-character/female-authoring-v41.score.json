@@ -1,0 +1,61 @@
+{
+  "asset": "aevrynd-female-authoring-v41.blend",
+  "state": "AUTHORING",
+  "score": 61,
+  "eligibleForReview": false,
+  "scoringCalibration": "One hair point is earned because the main fiber groom now has separate large and medium textured clump layers that establish a readable side part and continuous crown coverage. Ear-side density, rear hem design, clump breakup and anisotropic response remain below modern hero-character quality.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 10, "max": 16 },
+    "skinEyesMouthNails": { "score": 11, "max": 12 },
+    "hairAndHairline": { "score": 8, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "unchangedBaselineMeshObjects": 46,
+    "largeClumps": 204,
+    "mediumClumps": 215,
+    "largeClumpVertices": 9954,
+    "largeClumpFaces": 4773,
+    "mediumClumpVertices": 10432,
+    "mediumClumpFaces": 4972,
+    "removedCrossingFaces": 29,
+    "neutralHairBodyTriangleOverlaps": 0,
+    "posedHairBodyTriangleOverlaps": 0,
+    "neutralHairScalpTriangleOverlaps": 0,
+    "posedHairScalpTriangleOverlaps": 0,
+    "neutralInterlayerTriangleOverlaps": 0,
+    "posedInterlayerTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 8238064,
+    "lod1GlbBytes": 6424768,
+    "lod1ReductionPercent": 22.0,
+    "runtimeHierarchicalCardLayers": 2,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The side part and crown mass remain readable across front and three-quarter views instead of dissolving into isolated lines.",
+    "Large cards provide silhouette coverage while the offset medium layer breaks up broad sheet-like bands.",
+    "Ear-region cards that crossed the body were removed and the rear cards terminate near a controlled short-hair hem."
+  ],
+  "rejectedExperiments": [
+    "The first v41 pass inherited full fiber tails and was rejected for wet string-like rear and ear silhouettes.",
+    "Centerline-only clearance was rejected after exact BVH checks found 121 large-card and 24 medium-card body intersections.",
+    "Uniform layer offsets were rejected because 29 medium faces still crossed the large layer; those faces are now removed during the build."
+  ],
+  "blockingFailures": [
+    "The primary groom still needs authored crown breakup, cleaner ear-side grouping, a deliberate rear hem and better large-to-medium clump rhythm.",
+    "Hair material response still lacks a calibrated melanin-like color model, dual-lobe anisotropic highlights and strand-scale roughness variation.",
+    "The body needs expression-compatible lip loops and a deformable mouth opening before teeth and tongue can be exposed during speech.",
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}

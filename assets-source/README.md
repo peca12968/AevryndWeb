@@ -241,6 +241,17 @@ bundle can be reproduced from the recorded URL and digest when required.
   is 60/100. Vertex-alpha opening, visible tooth spikes and closed rear lip caps
   were rejected; expression-compatible lip loops and a deformable opening are
   still required before teeth and tongue can appear during speech.
+- `aevrynd-female-authoring-v41.blend`: adds a two-level hierarchy over the
+  existing fiber groom: 204 large textured clumps establish the side part and
+  crown mass, while 215 offset medium clumps break up broad bands. Rear and
+  side cards are clipped to a controlled short-hair hem, ear-crossing sources
+  are omitted, and 29 remaining interlayer crossing faces are removed during
+  the deterministic build. Neutral and posed BVH checks report zero card/body,
+  card/scalp and large/medium intersections; 46 other v40 meshes keep exact
+  geometry. Full and LOD1 GLBs are 7.86 MiB and 6.13 MiB, 22.0% smaller, with
+  both UV-textured layers, 21 bones and one animation. Its strict score is
+  61/100; ear-side grouping, rear hem design, clump rhythm and hair shading
+  remain below review quality.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
