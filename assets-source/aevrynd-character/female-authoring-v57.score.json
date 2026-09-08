@@ -1,0 +1,92 @@
+{
+  "asset": "aevrynd-female-authoring-v57.blend",
+  "state": "AUTHORING",
+  "score": 55,
+  "eligibleForReview": false,
+  "scoringCalibration": "One hair point is restored because the main root population now obeys an asymmetric hairline curve, the scalp density reaches true zero below it, and the visibly artificial legacy baby-hair mesh is removed. The score remains low because the extreme-top ribbon fan, repetitive side curtain, rear split and lack of production micro-transition fibers are still visible.",
+  "categories": {
+    "anatomyAndSilhouette": {
+      "score": 10,
+      "max": 16
+    },
+    "faceIdentityAndForms": {
+      "score": 7,
+      "max": 16
+    },
+    "skinEyesMouthNails": {
+      "score": 8,
+      "max": 12
+    },
+    "hairAndHairline": {
+      "score": 8,
+      "max": 14
+    },
+    "topologyUvAndLods": {
+      "score": 7,
+      "max": 8
+    },
+    "clothingAndLayers": {
+      "score": 2,
+      "max": 10
+    },
+    "rigAndDeformation": {
+      "score": 2,
+      "max": 8
+    },
+    "collisionIntegrity": {
+      "score": 7,
+      "max": 10
+    },
+    "runtimePerformance": {
+      "score": 4,
+      "max": 6
+    }
+  },
+  "verified": {
+    "unchangedBaselineMeshes": 42,
+    "removedLegacyGroomMeshes": 1,
+    "fullBaseStrands": 1848,
+    "fullDetailStrands": 727,
+    "lod1Strands": 588,
+    "fullHairVertices": 51500,
+    "lod1HairVertices": 11760,
+    "minimumFullHairBodyClearanceM": 0.00471987,
+    "neutralAuditedHairBodyTriangleOverlaps": 0,
+    "posedAuditedHairBodyTriangleOverlaps": 0,
+    "neutralAuditedHairUndercutTriangleOverlaps": 0,
+    "posedAuditedHairUndercutTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 8260532,
+    "lod1GlbBytes": 6381356,
+    "lod1ReductionPercent": 22.7,
+    "prohibitedRuntimeDependenciesFound": false,
+    "neutralAuditedHairScalpTriangleOverlaps": 0,
+    "posedAuditedHairScalpTriangleOverlaps": 0
+  },
+  "visualFindings": [
+    "The forehead edge is now driven by the same asymmetric threshold in both scalp density and main-fiber root acceptance, so the previous broad geometric band is materially narrower.",
+    "The scalp density fades to zero below the authored hairline instead of leaving the old 10 percent dark floor over the upper forehead.",
+    "The sparse legacy HairlineBaby mesh and a rejected 168-strand comb-like replacement are absent; fixed front and three-quarter views no longer show detached forehead dashes.",
+    "The v55 tangent-preserving side flow and dedicated LOD1 remain intact while full export size falls to 7.88 MiB."
+  ],
+  "rejectedExperiments": [
+    "v56 continuous mass-shell prototypes were rejected because a projected crown root created a smooth top ring and a boundary-extruded variant created dark side underlay without removing the top fan.",
+    "A 168-transition plus 58-baby-hair layout was rejected because synchronized strands formed an obvious comb across the forehead.",
+    "A reduced 26-baby-hair layout was rejected because the short fibers still read as a detached dotted line instead of integrated vellus hair."
+  ],
+  "blockingFailures": [
+    "The extreme top view still exposes a radial fan of ribbon tips and fails the production silhouette gate.",
+    "The cleaner hairline currently relies on density and root rejection; a future micro-transition layer needs strand-scale geometry that does not form a comb or dotted line.",
+    "The side lengths still read as a repetitive vertical curtain and need larger clump hierarchy, flyaways and ear-aware grouping.",
+    "The rear center still has a visible vertical separation and needs a more irregular overlapping root field.",
+    "Hair shading still needs an engine-side dual-lobe anisotropic model and strand-scale roughness variation.",
+    "The face still needs expression-oriented perioral loops, asymmetric commissure sculpting and a phoneme pose suite.",
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ],
+  "scoringPolicyRevision": "strict-fixed-six-view-v2"
+}

@@ -351,6 +351,17 @@ bundle can be reproduced from the recorded URL and digest when required.
   density band, repetitive side curtain and rear split remain production
   blockers, so this stage cannot replace the accepted site preview.
 
+- `aevrynd-female-authoring-v57.blend`: applies one asymmetric hairline
+  threshold to both main-fiber root acceptance and scalp-density alpha, which
+  now reaches true zero below the authored edge. It removes the detached legacy
+  baby-hair mesh after rejecting both a 226-strand comb-like replacement and a
+  smaller dotted-line variant. Neutral and posed BVH audits retain zero hair
+  intersections with the body, undercut and scalp. Full and LOD1 GLBs are 7.88
+  MiB and 6.09 MiB, with LOD1 22.7% smaller. Its strict fixed six-view score is
+  55/100: the forehead edge is cleaner, while the extreme-top ribbon fan,
+  repetitive side curtain, rear split and missing production micro-transition
+  layer still block review.
+
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
 satisfied.
