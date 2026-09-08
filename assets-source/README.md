@@ -44,6 +44,12 @@ bundle can be reproduced from the recorded URL and digest when required.
   neutral/raised-arm deformation action. It uses no Rigify or runtime authoring
   dependency; `scripts/audit-female-rig.py` verifies attachment stability in
   both animation frames.
+- `aevrynd-female-authoring-v9.blend`: first explicit skinned inner-clothing
+  layers. The top and full-crotch shorts inherit the four-influence skeleton,
+  carry authored thickness and clearance metadata, and are checked at neutral
+  and raised-arm frames with exact body/garment triangle-overlap tests. This is
+  still a construction layer: garment edge flow and tailoring remain below the
+  visual review threshold.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

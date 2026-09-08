@@ -1,0 +1,42 @@
+{
+  "asset": "aevrynd-female-authoring-v9.blend",
+  "state": "AUTHORING",
+  "score": 61,
+  "eligibleForReview": false,
+  "categories": {
+    "anatomyAndSilhouette": { "score": 14, "max": 16 },
+    "faceIdentityAndForms": { "score": 12, "max": 16 },
+    "skinEyesMouthNails": { "score": 8, "max": 12 },
+    "hairAndHairline": { "score": 6, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 6, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "runtimeBones": 21,
+    "skinnedMeshes": 3,
+    "explicitClothingLayers": 2,
+    "unweightedClothingVertices": 0,
+    "maximumClothingBoneInfluences": 4,
+    "topAuthoredClearanceMeters": 0.0064,
+    "shortsAuthoredClearanceMeters": 0.0194,
+    "neutralTopBodyTriangleOverlaps": 0,
+    "neutralShortsBodyTriangleOverlaps": 0,
+    "posedTopBodyTriangleOverlaps": 0,
+    "posedShortsBodyTriangleOverlaps": 0,
+    "runtimeGlbBytes": 6018812
+  },
+  "blockingFailures": [
+    "Top neckline, hem and underarm edge flow visibly follow the coarse source topology.",
+    "Shorts clearance is intentionally excessive around the hips and requires a better crotch pattern and collision solve.",
+    "Cloth weave nodes require baking for runtime materials.",
+    "No seams, elastic trim, folds, outer garments or garment LODs exist.",
+    "Raised-arm shoulder silhouettes still show visible volume loss and require corrective deformation.",
+    "The pose suite does not yet cover elbows, wrists, spine, hips, knees, squat or locomotion.",
+    "Skin normal and roughness maps remain disconnected until UV tangents are seam-safe.",
+    "The mouth has no inner mouth, teeth or tongue layers.",
+    "The short groom lacks alpha breakup and production strand shading."
+  ]
+}
