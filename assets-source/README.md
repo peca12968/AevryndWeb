@@ -252,6 +252,16 @@ bundle can be reproduced from the recorded URL and digest when required.
   both UV-textured layers, 21 bones and one animation. Its strict score is
   61/100; ear-side grouping, rear hem design, clump rhythm and hair shading
   remain below review quality.
+- `aevrynd-female-authoring-v42.blend`: removes 309 main-groom fibers, six
+  guide fibers and three flyaways whose rear or ear-side tips crossed below the
+  authored 1.585 m short-hair hem. The card material uses higher roughness and
+  lower specular strength to suppress broad grey plastic highlights. Neutral
+  and posed checks retain zero intersections across the modified fiber layers,
+  body, scalp and both card layers; 45 other v41 meshes preserve exact geometry.
+  Full and LOD1 GLBs are 7.58 MiB and 5.75 MiB. LOD1 now drops the medium card
+  layer and is 24.1% smaller; the first 19.1% LOD candidate was rejected. Its
+  strict score is 62/100 because the rear hem and material response improve,
+  while crown breakup, ear-side grouping and dual-lobe hair shading remain open.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

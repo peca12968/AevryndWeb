@@ -1,0 +1,53 @@
+{
+  "asset": "aevrynd-female-authoring-v42.blend",
+  "state": "AUTHORING",
+  "score": 62,
+  "eligibleForReview": false,
+  "scoringCalibration": "One hair point is earned because the short-hair silhouette now has a controlled rear and ear-side hem, while broad card highlights are reduced through a rougher low-specular material. The haircut still lacks production-quality crown breakup, deliberate ear-side groups and strand-scale dual-lobe shading.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 10, "max": 16 },
+    "skinEyesMouthNails": { "score": 11, "max": 12 },
+    "hairAndHairline": { "score": 9, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "unchangedBaselineMeshObjects": 45,
+    "removedHairMainTailFibers": 309,
+    "removedGuideTailFibers": 6,
+    "removedFlyawayTailFibers": 3,
+    "retainedHairMainFibers": 1447,
+    "neutralAuditedHairTriangleOverlaps": 0,
+    "posedAuditedHairTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7946412,
+    "lod1GlbBytes": 6030444,
+    "lod1ReductionPercent": 24.1,
+    "lod1MediumCardLayerRemoved": true,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "Rear and ear-side fibers no longer extend far below the authored short-hair hem.",
+    "The back silhouette reads as a deliberate close crop instead of separated wet strands.",
+    "Card roughness is increased and specular strength reduced, limiting broad grey plastic highlights while retaining dark-brown tonal variation."
+  ],
+  "rejectedExperiments": [
+    "Keeping all 318 low tail fibers was rejected because they crossed the new rear hem and made the groom look wet and stringy.",
+    "The first v42 LOD1 retained the medium card layer and was rejected at 19.1% size reduction, below the 20% gate."
+  ],
+  "blockingFailures": [
+    "The groom still needs hand-shaped crown breakup, deliberate ear-side groupings and a less uniform rear edge.",
+    "Hair shading still needs an engine-side dual-lobe anisotropic model and strand-scale roughness variation.",
+    "The body needs expression-compatible lip loops and a deformable mouth opening before teeth and tongue can be exposed during speech.",
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}
