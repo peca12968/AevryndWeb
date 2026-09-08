@@ -1,0 +1,56 @@
+{
+  "asset": "aevrynd-female-authoring-v25.blend",
+  "state": "AUTHORING",
+  "score": 50,
+  "eligibleForReview": false,
+  "scoringCalibration": "Visual realism is scored independently; passing topology, collision and runtime checks cannot compensate for weak face, hair, clothing or deformation quality.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 6, "max": 16 },
+    "skinEyesMouthNails": { "score": 7, "max": 12 },
+    "hairAndHairline": { "score": 5, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "geometryMatchesCollisionApprovedV21": true,
+    "meshObjectsCompared": 39,
+    "changedSkinToneVertices": 10582,
+    "faceRegionVertices": 3293,
+    "uniqueSkinToneRgbValues": 271,
+    "minimumSkinToneRgb": [0.956863, 0.937255, 0.917647],
+    "maximumSkinToneRgb": [0.996078, 0.996078, 0.996078],
+    "skinShaderLinksVerified": 4,
+    "neutralScalpBodyTriangleOverlaps": 0,
+    "posedScalpBodyTriangleOverlaps": 0,
+    "neutralBoundaryBodyTriangleOverlaps": 0,
+    "posedBoundaryBodyTriangleOverlaps": 0,
+    "neutralEyeLayerBodyTriangleOverlaps": 0,
+    "posedEyeLayerBodyTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7339440,
+    "lod1GlbBytes": 5654320,
+    "lod1ReductionPercent": 23.0,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The face now carries restrained warm cheek, nose and chin variation plus a cooler under-eye zone instead of a nearly uniform tint.",
+    "The existing normal texture now feeds through the procedural micro-bump node, so close lighting reveals pore-scale breakup without changing geometry.",
+    "Roughness variation is layered over the exportable runtime map and the reduced coat response avoids the former uniformly waxy highlight.",
+    "The effect remains subtle and does not hide the broad cheek planes, shallow eyelid integration or simplified mouth topology.",
+    "Rejected v22-v24 hair experiments were not merged because regular cards, wide ribbons and a thin fiber veil all scored below the v21 groom from side and rear views."
+  ],
+  "blockingFailures": [
+    "The face still needs high-resolution sculpted eyelid, canthus, philtrum, nasolabial and lip-corner transitions.",
+    "Skin still needs authored face-specific UV masks for pore direction, oiliness, capillaries, freckles and localized subsurface response.",
+    "The groom needs hand-shaped large and medium clumps with a coherent part, dense side/rear coverage and validated alpha cards.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the two audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}

@@ -141,6 +141,18 @@ bundle can be reproduced from the recorded URL and digest when required.
   a 23.0% reduction. Its strict score is 49/100: crown and front coverage are
   better, while the side/rear undercut silhouette and straight-fiber groom still
   require a full large/medium clump-card pass.
+- `aevrynd-female-authoring-v25.blend`: adds 271 restrained regional skin-tone
+  values across the body, with warm cheek/nose/chin zones and cooler under-eye
+  variation, and correctly chains pore-scale bump detail after the existing
+  exportable normal map. Roughness breakup is layered over the runtime map and
+  the coat response is reduced. All 39 mesh objects plus the 21-bone rig and
+  animation match the collision-approved v21 geometry exactly; inherited eye
+  and hair audits remain at zero triangle overlaps in both test poses. Full and
+  LOD1 previews remain 7.00 MiB and 5.39 MiB. Its strict score is 50/100 because
+  the visible material gain is modest and the face forms, groom, clothing and
+  deformation still remain below review quality. Hair-card, broad-ribbon and
+  fiber-veil experiments v22-v24 were visually rejected and are not stable
+  authoring stages.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
