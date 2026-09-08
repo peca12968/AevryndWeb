@@ -299,6 +299,17 @@ bundle can be reproduced from the recorded URL and digest when required.
   scalp or ten other hair layers; 47 other v45 meshes preserve exact geometry.
   Full and LOD1 GLBs are 6.99 MiB and 5.46 MiB, with LOD1 21.9% smaller. Its
   strict score is 65/100; crown flow and engine dual-lobe shading remain open.
+- `aevrynd-female-authoring-v47.blend`: bakes the body at Multires level one,
+  removes 44 mouth-region faces to create a real opening, and replaces the
+  three-row lip sheets with skinned five-row upper and lower lip volumes. Body
+  weights are explicitly limited and normalized to four influences; the lips
+  copy nearby body weights instead of following only the head bone. Neutral and
+  posed audits report zero intersections for the complete mouth stack, both
+  garments, all eleven hair layers and the undercut hierarchy. Full and LOD1
+  GLBs are 7.65 MiB and 5.99 MiB, with LOD1 21.7% smaller; it removes only
+  distance-invisible eye and brow micro layers. Its strict score remains 65/100
+  because the lip silhouette is still procedural and continuous expression
+  loops, eyelid topology and a phoneme pose suite remain incomplete.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

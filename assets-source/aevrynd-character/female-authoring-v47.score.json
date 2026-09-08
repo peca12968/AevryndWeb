@@ -1,0 +1,61 @@
+{
+  "asset": "aevrynd-female-authoring-v47.blend",
+  "state": "AUTHORING",
+  "score": 65,
+  "eligibleForReview": false,
+  "scoringCalibration": "No point is awarded yet. The mouth now has a real opening in a baked subdivision surface, skinned lip volume and collision-safe deformation, but the lip silhouette remains too regular and the face still lacks expression-compatible continuous perioral loops.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 10, "max": 16 },
+    "skinEyesMouthNails": { "score": 11, "max": 12 },
+    "hairAndHairline": { "score": 12, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "bakedBodyVertices": 42342,
+    "bakedBodyFaces": 42296,
+    "mouthOpeningFacesRemoved": 44,
+    "mouthBoundaryEdges": 80,
+    "mouthBoundaryComponents": 2,
+    "bodyUnweightedVertices": 0,
+    "maximumBodyBoneInfluences": 4,
+    "trimmedBodyWeightEntries": 998,
+    "neutralAuditedMouthTriangleOverlaps": 0,
+    "posedAuditedMouthTriangleOverlaps": 0,
+    "neutralAuditedGlobalTriangleOverlaps": 0,
+    "posedAuditedGlobalTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 8024612,
+    "lod1GlbBytes": 6286020,
+    "lod1ReductionPercent": 21.7,
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The mouth is cut through the level-one baked body surface instead of being drawn over an opaque coarse face.",
+    "The outer black outline from the v40 lip sheets is reduced and the oral cavity provides actual depth behind the wet margin.",
+    "The upper and lower lips use five authored profile rows and a render-only second subdivision level; the runtime exports one subdivision level.",
+    "The front view is cleaner, but the side silhouette and repeated highlight rhythm remain visibly procedural."
+  ],
+  "rejectedExperiments": [
+    "A 51-card crown patch was rejected because it produced comb-like floating lines in the overhead view.",
+    "Using the body skin material directly on a detached transition strip was rejected because missing body vertex-color data rendered a black border.",
+    "The first baked-body render was rejected because subdivision faces retained flat shading and exposed concentric facets.",
+    "Head-bone-only lip binding was rejected after frame 20 produced 243 body/upper-lip and 79 body/lower-lip overlaps.",
+    "Runtime lip subdivision level two was rejected because the full GLB exceeded 8 MiB."
+  ],
+  "blockingFailures": [
+    "The perioral region still needs continuous expression-oriented edge loops, asymmetric sculpt refinement and a phoneme pose suite.",
+    "Integrated upper and lower eyelid thickness and expression-compatible canthus topology remain below review quality.",
+    "The crown needs a coherent authored direction field with a narrower irregular part and fewer cross-flow fibers.",
+    "Hair shading still needs an engine-side dual-lobe anisotropic model and strand-scale roughness variation.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}
