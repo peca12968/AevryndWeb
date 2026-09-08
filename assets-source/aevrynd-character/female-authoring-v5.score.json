@@ -1,0 +1,35 @@
+{
+  "asset": "aevrynd-female-authoring-v5.blend",
+  "state": "AUTHORING",
+  "score": 55,
+  "eligibleForReview": false,
+  "categories": {
+    "anatomyAndSilhouette": { "score": 14, "max": 16 },
+    "faceIdentityAndForms": { "score": 12, "max": 16 },
+    "skinEyesMouthNails": { "score": 7, "max": 12 },
+    "hairAndHairline": { "score": 6, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 0, "max": 10 },
+    "rigAndDeformation": { "score": 0, "max": 8 },
+    "collisionIntegrity": { "score": 4, "max": 10 },
+    "runtimePerformance": { "score": 5, "max": 6 }
+  },
+  "verified": {
+    "groomLayers": 5,
+    "newFacialLayers": 3,
+    "tearMeniscusLayers": 2,
+    "missedMouthSurfaceSamples": 0,
+    "calibratedIrisLayers": 2,
+    "minimumStaticHairBodyClearanceMeters": 0.0008,
+    "runtimeObjectCount": 25
+  },
+  "blockingFailures": [
+    "Eyelid thickness and eye-socket deformation still need an anatomy pass and expression validation.",
+    "The tear meniscus has geometry but cornea transparency still needs runtime validation.",
+    "The mouth has a closed crease but no inner mouth, teeth or tongue layers.",
+    "Skin microstructure is procedural authoring data and has not been baked.",
+    "The short groom still lacks alpha breakup, production strand shading and motion bones.",
+    "No Aevrynd skeleton, skin weights or deformation pose suite exists.",
+    "No clothing layers or posed body-clothing collision results exist."
+  ]
+}
