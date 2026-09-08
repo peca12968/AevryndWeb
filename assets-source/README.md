@@ -153,6 +153,20 @@ bundle can be reproduced from the recorded URL and digest when required.
   deformation still remain below review quality. Hair-card, broad-ribbon and
   fiber-veil experiments v22-v24 were visually rejected and are not stable
   authoring stages.
+- `aevrynd-female-authoring-v30.blend`: rebuilds the visible eye and mouth
+  proportions on the collision-approved v25 base. The eye apertures are less
+  round, the dark uniform eyelid-fold strips are replaced by tapered skin-tone
+  folds, and guarded sub-1.6 mm form changes define the brow, lower lid, tear
+  trough, nose base, philtrum, nasolabial transition, mouth corners and chin.
+  The upper and lower lips are regenerated on the evaluated face with tapered
+  depth instead of the former extra 3.0 mm upper-lip offset. Exact audits at
+  neutral and posed frames report zero body intersections for every eye, mouth,
+  hair and clothing layer; 26 of 39 mesh objects and the 21-bone rig remain
+  unchanged. The full and LOD1 previews are 7.00 MiB and 5.40 MiB, a 22.9%
+  reduction. Its strict score is 53/100: the facial proportions improve, while
+  true oral topology, high-resolution lids, hair, clothing and corrective
+  deformation still block review. v27-v29 were rejected for negligible visual
+  change, plastic lip response, or measured face-layer intersections.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

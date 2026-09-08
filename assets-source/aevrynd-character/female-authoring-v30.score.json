@@ -1,0 +1,61 @@
+{
+  "asset": "aevrynd-female-authoring-v30.blend",
+  "state": "AUTHORING",
+  "score": 53,
+  "eligibleForReview": false,
+  "scoringCalibration": "Visual realism is scored independently; passing topology, collision and runtime checks cannot compensate for weak hair, clothing, deformation or remaining facial anatomy.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 8, "max": 16 },
+    "skinEyesMouthNails": { "score": 8, "max": 12 },
+    "hairAndHairline": { "score": 5, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "guardedFaceVerticesChanged": 2189,
+    "maximumFaceDeltaM": 0.001558431,
+    "bodyChangesOutsideGuardedFaceRegion": 0,
+    "meshObjects": 39,
+    "unchangedMeshObjects": 26,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "neutralEyeLayerBodyTriangleOverlaps": 0,
+    "posedEyeLayerBodyTriangleOverlaps": 0,
+    "neutralMouthLayerBodyTriangleOverlaps": 0,
+    "posedMouthLayerBodyTriangleOverlaps": 0,
+    "neutralAllHairLayerBodyTriangleOverlaps": 0,
+    "posedAllHairLayerBodyTriangleOverlaps": 0,
+    "neutralClothingBodyTriangleOverlaps": 0,
+    "posedClothingBodyTriangleOverlaps": 0,
+    "runtimeGlbBytes": 7343588,
+    "lod1GlbBytes": 5658468,
+    "lod1ReductionPercent": 22.9,
+    "skinColorRange": [0.823, 0.991],
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The eye apertures are less round, the lower lids carry more support, and the former dark uniform upper-fold strips are rebuilt as thin skin-toned tapered folds.",
+    "The columella and nose base extend downward by a guarded maximum of 1.35 mm, reducing the former upward-facing nostril read without changing the broad nose silhouette.",
+    "Upper and lower lips are rebuilt on the evaluated facial surface with a shorter 55.4 mm span, tapered corner clearance and restrained roughness instead of the former extra 3.0 mm upper-lip offset.",
+    "The philtrum, alar groove, tear trough, nasolabial transition, oral commissure and mental sulcus now have bounded supporting form rather than being represented only by color or detached strips.",
+    "The face remains visibly synthetic because the base topology cannot yet form a true mouth opening, eyelid thickness or high-resolution canthus and nostril interiors."
+  ],
+  "rejectedExperiments": [
+    "v27 was rejected because its sub-millimeter transition pass was visually negligible.",
+    "v28 was rejected because nearest-surface lip flattening produced broad plastic highlights.",
+    "v29 was rejected because dynamic audits found iris-fiber and upper-lip/body triangle overlaps."
+  ],
+  "blockingFailures": [
+    "A true mouth slit, oral cavity, teeth, tongue and expression-compatible lip topology are still missing.",
+    "Integrated eyelid thickness, inner and outer canthus anatomy, tear-duct form and asymmetric lash rhythm remain below review quality.",
+    "The groom still needs hand-shaped large and medium clumps with a coherent part and dense side/rear coverage.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the two audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}
