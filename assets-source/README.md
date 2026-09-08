@@ -62,6 +62,13 @@ bundle can be reproduced from the recorded URL and digest when required.
   explicit layers. The scalp coat reflection that produced the circular back
   patch is removed. `scripts/audit-female-groom-v11.py` checks all groom layers
   against the body at neutral and turned-head frames.
+- `aevrynd-female-authoring-v12.blend`: bounded facial secondary forms for the
+  cheeks, tear troughs, philtrum, nasolabial region and chin, plus exportable
+  regional skin tone, separate upper-eyelid folds and eye catchlights. The
+  upper-lip clearance is recalibrated after the facial change.
+  `scripts/audit-female-face-v12.py` checks the new layers at neutral and posed
+  frames, while the inherited groom and clothing audits continue to enforce
+  zero exact body/asset triangle intersections.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
