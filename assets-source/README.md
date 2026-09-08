@@ -189,6 +189,17 @@ bundle can be reproduced from the recorded URL and digest when required.
   the primary groom still needs authored large/medium clumps and crown breakup.
   v34 was rejected because its wide cards produced saw-toothed ear and rear
   silhouettes.
+- `aevrynd-female-authoring-v36.blend`: reshapes the female lower-third facial
+  silhouette with a guarded 3.0 mm maximum jaw taper and sub-millimetre chin,
+  malar, buccal, alar and nose-tip transitions. Exactly 1,875 body vertices
+  change inside the recorded lower-face region; the other 39 mesh objects,
+  21-bone rig and animation remain unchanged. Fresh neutral and posed audits
+  report zero body intersections for the eye, mouth, hair and clothing layers.
+  Full and LOD1 previews remain 7.09 MiB and 5.48 MiB, a 22.7% reduction. Its
+  strict score is 56/100 because the jaw-to-cheek silhouette is more feminine
+  and readable, while eyelid thickness, oral topology and secondary facial
+  anatomy still block review. Two earlier sub-millimetre v36 parameter passes
+  were rejected as visually negligible.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

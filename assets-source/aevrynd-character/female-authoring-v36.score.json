@@ -1,0 +1,58 @@
+{
+  "asset": "aevrynd-female-authoring-v36.blend",
+  "state": "AUTHORING",
+  "score": 56,
+  "eligibleForReview": false,
+  "scoringCalibration": "One face point is earned because the lower-third silhouette now has a measured 3 mm jaw taper plus controlled malar, buccal, alar and nose-tip transitions. The face remains below review quality because eyelid thickness, oral topology and high-frequency anatomical forms are incomplete.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 9, "max": 16 },
+    "skinEyesMouthNails": { "score": 8, "max": 12 },
+    "hairAndHairline": { "score": 7, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "changedBodyVertices": 1875,
+    "maximumLowerFaceDeltaM": 0.00300015,
+    "changesOutsideGuardedRegion": 0,
+    "unchangedMeshObjects": 39,
+    "meshObjects": 40,
+    "neutralEyeLayerBodyTriangleOverlaps": 0,
+    "posedEyeLayerBodyTriangleOverlaps": 0,
+    "neutralMouthLayerBodyTriangleOverlaps": 0,
+    "posedMouthLayerBodyTriangleOverlaps": 0,
+    "neutralHairLayerBodyTriangleOverlaps": 0,
+    "posedHairLayerBodyTriangleOverlaps": 0,
+    "neutralClothingBodyTriangleOverlaps": 0,
+    "posedClothingBodyTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7433696,
+    "lod1GlbBytes": 5748576,
+    "lod1ReductionPercent": 22.7,
+    "runtimeScalpAlphaMode": "BLEND",
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The lower face now tapers from the cheek into the jaw instead of retaining the previous broad cylindrical outline.",
+    "Sub-millimetre malar projection and buccal recession separate the cheekbone from the lower cheek in the three-quarter view.",
+    "The nose tip projects slightly farther while the alar region narrows, reducing the former rounded plug-like base.",
+    "The adjustments remain subtle enough to preserve the v30 eye and mouth placement and the v35 scalp transition."
+  ],
+  "rejectedExperiments": [
+    "The first two v36 parameter passes were rejected because the jaw moved only 0.09-0.96 mm and produced no reliably visible silhouette improvement."
+  ],
+  "blockingFailures": [
+    "Integrated eyelid thickness, canthus anatomy and a denser eyebrow groom remain below review quality.",
+    "A true mouth slit, oral cavity, teeth, tongue and expression-compatible lip topology are still missing.",
+    "The primary groom still needs hand-shaped large and medium clumps, a readable part, crown breakup and controlled side volume.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the two audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}
