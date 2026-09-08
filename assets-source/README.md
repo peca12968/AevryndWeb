@@ -69,6 +69,13 @@ bundle can be reproduced from the recorded URL and digest when required.
   `scripts/audit-female-face-v12.py` checks the new layers at neutral and posed
   frames, while the inherited groom and clothing audits continue to enforce
   zero exact body/asset triangle intersections.
+- `aevrynd-female-authoring-v13.blend`: asymmetrical body-conforming scalp
+  hairline plus an explicit 57/136/1,756 large, medium and fine groom hierarchy.
+  Front, nape and sideburn transition fibers are rebuilt around the new contour.
+  `scripts/audit-female-groom-v13.py` uses the v13 layer layouts to verify every
+  groom layer, scalp and lip surface against the body in neutral and posed
+  frames. The side and rear haircut transitions remain below visual review
+  quality and are recorded as blocking failures in the neighboring score file.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is
