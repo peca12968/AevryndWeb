@@ -99,6 +99,13 @@ bundle can be reproduced from the recorded URL and digest when required.
   The full runtime preview is 7.56 MiB; LOD1 is 5.95 MiB and 21.3% smaller.
   A trial jaw/oral layer was rejected because this base lacks a true mouth-slit
   topology, so it is not included in this stable authoring stage.
+- `aevrynd-female-authoring-v17.blend`: replaces the invalid all-black skin
+  normal and roughness placeholders with deterministic 256 x 256 tile-edge
+  continuous microstructure maps and connects both maps to the Blender and GLB
+  skin material. The full runtime preview remains below the established 8 MiB
+  gate at 7.73 MiB; LOD1 is 6.13 MiB and 20.8% smaller. The strict score stays
+  at 72 because the subtle material correction does not yet resolve the face's
+  broad planar forms or add region-specific pores, oiliness and fine anatomy.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

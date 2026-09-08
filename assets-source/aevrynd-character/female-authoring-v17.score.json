@@ -1,0 +1,51 @@
+{
+  "asset": "aevrynd-female-authoring-v17.blend",
+  "state": "AUTHORING",
+  "score": 72,
+  "eligibleForReview": false,
+  "categories": {
+    "anatomyAndSilhouette": { "score": 14, "max": 16 },
+    "faceIdentityAndForms": { "score": 14, "max": 16 },
+    "skinEyesMouthNails": { "score": 11, "max": 12 },
+    "hairAndHairline": { "score": 10, "max": 14 },
+    "topologyUvAndLods": { "score": 8, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "skinNormalTexture": "aevrynd-skin-normal-v2.png",
+    "skinRoughnessTexture": "aevrynd-skin-roughness-v2.png",
+    "skinTextureResolution": [256, 256],
+    "normalTextureRange": [0.3921568989753723, 1.0],
+    "roughnessTextureRange": [0.4705882668495178, 0.6117647290229797],
+    "normalTextureEdgeDelta": 0.0,
+    "roughnessTextureEdgeDelta": 0.0,
+    "nonFiniteTangentComponents": 0,
+    "tangentComponentsChecked": 127020,
+    "glbHasNormalTexture": true,
+    "glbHasMetallicRoughnessTexture": true,
+    "neutralHairBodyTriangleOverlaps": 0,
+    "posedHairBodyTriangleOverlaps": 0,
+    "neutralMouthBodyTriangleOverlaps": 0,
+    "posedMouthBodyTriangleOverlaps": 0,
+    "neutralClothingBodyTriangleOverlaps": 0,
+    "posedClothingBodyTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeHasColor0": true,
+    "runtimeGlbBytes": 8107840,
+    "lod1GlbBytes": 6422720,
+    "lod1ReductionPercent": 20.8
+  },
+  "blockingFailures": [
+    "The face still has broad planar transitions and lacks region-specific pore direction, oiliness, redness and fine expression anatomy.",
+    "The scalp cap and primary strand layer still need a hand-shaped part, breakup clumps and softer side/rear boundary transitions.",
+    "The mouth base has no true mouth-slit topology, so jaw opening, oral cavity, teeth, gums and tongue cannot yet deform acceptably.",
+    "The procedural lip topology needs manual corner loops and expression-shape validation before facial animation.",
+    "Temple and ear transitions need a manually shaped silhouette around the helix.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the pose suite remains incomplete.",
+    "LOD transition popping has not yet been tested in the website renderer."
+  ]
+}
