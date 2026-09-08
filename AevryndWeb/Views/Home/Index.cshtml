@@ -39,6 +39,7 @@
     </div>
     <nav aria-label="主要導覽">
       <a href="#character">3D 角色</a>
+      <a href="#current">目前進度</a>
       <a href="#journey">歷程</a>
       <a href="#systems">系統</a>
       <a href="#workflow">方法</a>
@@ -51,7 +52,7 @@
       <div class="hero-copy">
         <p class="eyebrow"><span></span> INDEPENDENT 3D ENGINE · DEVELOPMENT ARCHIVE</p>
         <h1>不是把輪子重做一次，<br><em>而是理解它為何轉動。</em></h1>
-        <p class="lead">Aevrynd 是以 C++20、Win32 與 DirectX 12 自研的 Windows 原生遊戲引擎。從 2.5D 塔防《裂隙守望者》，一路走到 PBR 開放世界、角色系統與本地 AI；每一步都有可重現的測試與版本化展示。</p>
+        <p class="lead">Aevrynd 是以 C++20、Win32 與 DirectX 12 自研的 Windows 原生遊戲引擎。從 2.5D 塔防《裂隙守望者》，一路走到 PBR 開放世界、環境碰撞、體積大氣、角色系統與本地 AI；每一步都有可重現的測試與版本化展示。</p>
         <div class="hero-actions">
           <a class="button primary" href="#journey">查看演進歷程 <span>↓</span></a>
           <a class="button ghost" href="https://github.com/peca12968/AevryndWeb" target="_blank" rel="noreferrer">展示專案 ↗</a>
@@ -69,7 +70,7 @@
           <div class="metric metric-b"><small>STRESS SCENE</small><strong>6,561 meshes</strong></div>
           <div class="viewport-caption">C++20 / WIN32 / DX12 / LOCAL AI</div>
         </div>
-        <div class="console-line"><span>›</span> engine.tick() <i>CSM · PBR · HDR ready</i><b>v2.47.0</b></div>
+        <div class="console-line"><span>›</span> engine.tick() <i>CSM · PBR · HDR · VOLUMETRICS</i><b>v2.86.0</b></div>
       </div>
     </section>
 
@@ -128,10 +129,43 @@
     </section>
 
     <section class="snapshot" aria-label="目前版本摘要">
-      <div><small>ENGINE</small><strong>2.47.0</strong><span>目前展示版本</span></div>
-      <div><small>FRUSTUM CULLING</small><strong>90.9%</strong><span>6,561 mesh 壓力場景上傳減量</span></div>
-      <div><small>GPU INSTANCING</small><strong>87.1%</strong><span>可見 mesh 每幀上傳減量</span></div>
-      <div><small>LOCAL AI</small><strong>Qwen 27B</strong><span>WinHTTP 本機事件生成</span></div>
+      <div><small>ENGINE</small><strong>2.86.0</strong><span>目前已發布引擎版本</span></div>
+      <div><small>GAMEPLAY LAB</small><strong>1.3.0</strong><span>環境碰撞與體積大氣版本</span></div>
+      <div><small>LATEST REVIEW</small><strong>34 / 100</strong><span>視覺品質仍未達發布門檻</span></div>
+      <div><small>NEXT RELEASE</small><strong>v1.4 HOLD</strong><span>候選持續修正，尚未發布</span></div>
+    </section>
+
+    <section class="current-progress" id="current" aria-labelledby="current-title">
+      <div class="section-heading">
+        <div><p class="section-index">CURRENT CHECKPOINT / 2026.09.08</p><h2 id="current-title">目前做到哪裡</h2></div>
+        <p>以下只列入已由 fresh build、實際擷取與人工檢視支持的結果；開發中候選不會提前標成正式版本。</p>
+      </div>
+      <div class="progress-grid">
+        <article class="progress-card progress-card-wide">
+          <span class="progress-status verified">VERIFIED</span>
+          <p class="tag">GAMEPLAY INTEGRATION</p>
+          <h3>世界、角色與驗證鏈持續收斂</h3>
+          <p>敵人已改為每幀面向玩家，夜景提高物件補光而不抬高天空與水面；矮草保留接收陰影、風動、數量與配置，只停用高成本的動態投影。最新正式候選完成 Normal 與 GBV 各 11 鏡擷取，GPU 錯誤與警告皆為 0。</p>
+        </article>
+        <article class="progress-card">
+          <span class="progress-status verified">CHARACTER</span>
+          <p class="tag">FOUR-PHASE GAIT</p>
+          <h3>步態改為四階段</h3>
+          <p>程序步態由三點極值曲線改為接觸、承重、拖後、擺動；F2／M2 踝部畫面位移由約 30–32px 收斂至 4.8–4.9px，腳尖收斂至 3.6–3.9px。</p>
+        </article>
+        <article class="progress-card">
+          <span class="progress-status verified">WORLD</span>
+          <p class="tag">FOLIAGE & WATER</p>
+          <h3>植被開始形成群落</h3>
+          <p>目前維持 456 個配置：240 棵樹、186 組草與 30 顆岩石。樹木鄰接與草地群落已重分布；水體移除零光環境下殘留的固定青色，並改進解析法線。</p>
+        </article>
+        <article class="progress-card progress-card-alert">
+          <span class="progress-status hold">HOLD</span>
+          <p class="tag">VISUAL REVIEW · 34 / 100</p>
+          <h3>v1.4 尚未發布</h3>
+          <p>戰鬥姿勢、腳形、男性上肢、草束規整度、建築與世界空洞仍未達標。這些問題會繼續迭代，現階段不調高分數，也不把候選包裝成完成版。</p>
+        </article>
+      </div>
     </section>
 
     <section class="journey" id="journey">
@@ -177,11 +211,11 @@
         </article>
 
         <article class="milestone" data-category="world tool">
-          <div class="phase"><span>PHASE 04</span><b>縮短回饋</b></div>
+          <div class="phase"><span>PHASE 04</span><b>世界整合</b></div>
           <div class="milestone-body">
-            <p class="tag">FRONTIER WORLD · DEMO 0.92.0</p><h3>世界系統開始形成</h3>
-            <p>HeightField、Terrain Clipmap、Mesh LOD、程序植被與建築共同組成靜態開放世界。地形支援四邊 skirt 與相鄰 LOD 約束，1,024 chunks 的觀察者更新平均約 6.7 微秒且更新期間零配置。</p>
-            <div class="change"><span>單一驗證場景</span><b>→</b><span>可串流、可裁切的開放世界</span></div>
+            <p class="tag">GAMEPLAY LAB · 1.3.0 · ENGINE 2.86.0</p><h3>開放世界接上正式碰撞與大氣</h3>
+            <p>156 個環境描述物具備穩定 ID、分區距離啟停與批次註冊／卸載。地形、樹幹、岩石與建築接入同一套環境碰撞世界，並加入半解析度體積大氣、雲層、定向光束及深度感知 HDR 合成。</p>
+            <div class="change"><span>可觀看的靜態場景</span><b>→</b><span>可碰撞、可分區、具大氣層次的世界</span></div>
           </div>
         </article>
 
@@ -189,7 +223,7 @@
           <div class="phase"><span>PHASE 05</span><b>持續演進</b></div>
           <div class="milestone-body">
             <p class="tag">CHARACTER LAB · 2026.09</p><h3>從世界走向角色</h3>
-            <p>近期里程碑聚焦角色臉部塑形、服裝材質、髮片、手部骨架、第一人稱持劍構圖、待機與步態動畫，並透過 GPU 預覽與視覺回歸保存可驗證證據。</p>
+            <p>近期里程碑聚焦角色臉部塑形、服裝材質、髮片、手部骨架、第一人稱持劍構圖，以及接觸／承重／拖後／擺動四階段步態；每個候選都透過固定鏡位 GPU 預覽與視覺回歸保存證據。</p>
             <div class="change"><span>靜態環境資產</span><b>→</b><span>可塑形、可動畫的角色管線</span></div>
           </div>
         </article>
@@ -211,11 +245,11 @@
         <p>以下能力已存在於目前的 C++ 原生引擎，而不是概念藍圖。</p>
       </div>
       <div class="system-grid">
-        <article class="system-card featured"><span>01</span><div class="system-icon">◫</div><h3>Renderer</h3><p>DX12、HDR、PBR、CSM、DLSS、GPU instancing 與需求式資源配置。</p><small>SCENE → FRAME</small></article>
+        <article class="system-card featured"><span>01</span><div class="system-icon">◫</div><h3>Renderer</h3><p>DX12、HDR、PBR、CSM、DLSS、GPU instancing、體積大氣與需求式資源配置。</p><small>SCENE → FRAME</small></article>
         <article class="system-card"><span>02</span><div class="system-icon">◎</div><h3>Scene & ECS</h3><p>Generation-safe entity、typed view、延遲銷毀、LOD 與場景同步。</p><small>ENTITY → WORLD</small></article>
         <article class="system-card"><span>03</span><div class="system-icon">⌁</div><h3>Physics & Audio</h3><p>3D 剛體、CCD、layer mask、sleep/wake 與 XAudio2 64 voices。</p><small>EVENT → RESPONSE</small></article>
         <article class="system-card"><span>04</span><div class="system-icon">⌘</div><h3>Asset Pipeline</h3><p>CC0 PBR 清單、Material Cooker、OBJ、Mesh processing 與版本化資產。</p><small>ASSET → RUNTIME</small></article>
-        <article class="system-card"><span>05</span><div class="system-icon">◇</div><h3>World Tech</h3><p>HeightField、Clipmap、BVH、程序植被、建築與透明水體。</p><small>CHUNK → LANDSCAPE</small></article>
+        <article class="system-card"><span>05</span><div class="system-icon">◇</div><h3>World Tech</h3><p>HeightField、Clipmap、BVH、環境碰撞串流、程序植被、建築與透明水體。</p><small>CHUNK → LANDSCAPE</small></article>
         <article class="system-card"><span>06</span><div class="system-icon">△</div><h3>Verification</h3><p>Profiler、telemetry、Frame Capture、黃金參考與視覺回歸。</p><small>CHANGE → EVIDENCE</small></article>
       </div>
     </section>
