@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./analytics.css">
 </head>
 <body class="age-pending">
   <div class="age-gate" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title" aria-describedby="age-gate-copy">
@@ -31,6 +32,10 @@
       <span class="brand-mark" aria-hidden="true">A</span>
       <span>AEVRYND <small>ENGINE LOG</small></span>
     </a>
+    <div class="live-metrics" aria-label="網站即時統計" aria-live="polite">
+      <span title="最近一分鐘內仍在瀏覽的訪客"><i aria-hidden="true"></i><strong data-online-count>—</strong> 在線</span>
+      <span title="網站累積頁面瀏覽次數"><strong data-view-count>—</strong> 瀏覽</span>
+    </div>
     <nav aria-label="主要導覽">
       <a href="#character">3D 角色</a>
       <a href="#journey">歷程</a>
@@ -243,6 +248,7 @@
     <a href="#top">回到頂端 ↑</a>
   </footer>
   <script src="./age-gate.js"></script>
+  <script src="./analytics.js"></script>
   <script src="./script.js"></script>
   <script type="module" src="./character-editor.js"></script>
 </body>
