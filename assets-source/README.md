@@ -167,6 +167,17 @@ bundle can be reproduced from the recorded URL and digest when required.
   true oral topology, high-resolution lids, hair, clothing and corrective
   deformation still block review. v27-v29 were rejected for negligible visual
   change, plastic lip response, or measured face-layer intersections.
+- `aevrynd-female-authoring-v33.blend`: adds an explicit 1,080-vertex skinned
+  undercut-density surface beneath the existing groom. It is projected from
+  the character's own evaluated head at 0.72 mm clearance and carries an
+  exportable vertex-alpha fade from 0 to 0.58, so the side and nape boundaries
+  dissolve into short root density instead of exposing a bald band. Neutral
+  and posed audits report zero intersections with the body and with all nine
+  existing hair layers. Runtime export preserves the alpha gradient in BLEND
+  mode; full and LOD1 previews are 7.07 MiB and 5.46 MiB, a 22.7% reduction.
+  Its strict score is 54/100 because the cleaner undercut does not yet fix the
+  uniformly combed crown or supply convincing large and medium clumps. Opaque
+  jagged and hard-edged undercut experiments v31-v32 were rejected.
 
 Each stage has a neighboring score file. `AUTHORING` stages remain internal and
 must not replace the accepted site preview until the repository quality gate is

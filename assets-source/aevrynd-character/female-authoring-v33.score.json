@@ -1,0 +1,66 @@
+{
+  "asset": "aevrynd-female-authoring-v33.blend",
+  "state": "AUTHORING",
+  "score": 54,
+  "eligibleForReview": false,
+  "scoringCalibration": "The undercut density layer earns one visual point because it removes exposed scalp bands without changing the weak primary groom silhouette.",
+  "categories": {
+    "anatomyAndSilhouette": { "score": 10, "max": 16 },
+    "faceIdentityAndForms": { "score": 8, "max": 16 },
+    "skinEyesMouthNails": { "score": 8, "max": 12 },
+    "hairAndHairline": { "score": 6, "max": 14 },
+    "topologyUvAndLods": { "score": 7, "max": 8 },
+    "clothingAndLayers": { "score": 2, "max": 10 },
+    "rigAndDeformation": { "score": 2, "max": 8 },
+    "collisionIntegrity": { "score": 7, "max": 10 },
+    "runtimePerformance": { "score": 4, "max": 6 }
+  },
+  "verified": {
+    "unchangedBaselineMeshObjects": 39,
+    "undercutVertices": 1080,
+    "undercutFaces": 994,
+    "surfaceProjectionMisses": 0,
+    "bodyClearanceM": 0.00072,
+    "undercutMaximumBoneInfluences": 1,
+    "undercutUnweightedVertices": 0,
+    "exportedUndercutAlphaRange": [0.0, 0.580392],
+    "neutralUndercutBodyTriangleOverlaps": 0,
+    "posedUndercutBodyTriangleOverlaps": 0,
+    "neutralUndercutOtherHairTriangleOverlaps": 0,
+    "posedUndercutOtherHairTriangleOverlaps": 0,
+    "neutralAllExistingHairBodyTriangleOverlaps": 0,
+    "posedAllExistingHairBodyTriangleOverlaps": 0,
+    "neutralEyeLayerBodyTriangleOverlaps": 0,
+    "posedEyeLayerBodyTriangleOverlaps": 0,
+    "neutralMouthLayerBodyTriangleOverlaps": 0,
+    "posedMouthLayerBodyTriangleOverlaps": 0,
+    "neutralClothingBodyTriangleOverlaps": 0,
+    "posedClothingBodyTriangleOverlaps": 0,
+    "runtimeBones": 21,
+    "runtimeAnimations": 1,
+    "runtimeGlbBytes": 7413324,
+    "lod1GlbBytes": 5728204,
+    "lod1ReductionPercent": 22.7,
+    "runtimeUndercutAlphaMode": "BLEND",
+    "prohibitedRuntimeDependenciesFound": false
+  },
+  "visualFindings": [
+    "The side and rear scalp now read as a deliberately faded short undercut instead of exposed skin beneath a disconnected cap.",
+    "Vertex-authored density reaches zero at the side and lower boundaries, removing the rectangular and jagged silhouettes seen in v31 and v32.",
+    "The new layer remains underneath the existing large hair mass and boundary fibers, so the front silhouette and v30 facial work are unchanged.",
+    "The crown still reads as uniformly combed strands over a smooth cap and the haircut still lacks convincing large and medium clump design."
+  ],
+  "rejectedExperiments": [
+    "v31 was rejected because copied body-face selection produced jagged dark patches around the ears and rear scalp.",
+    "v32 was rejected because the continuous projected shell still rendered as an opaque hard-edged block."
+  ],
+  "blockingFailures": [
+    "The primary groom still needs hand-shaped large and medium clumps, a readable part, crown breakup and denser side volume.",
+    "A true mouth slit, oral cavity, teeth, tongue and expression-compatible lip topology are still missing.",
+    "Integrated eyelid thickness and high-resolution canthus anatomy remain below review quality.",
+    "Clothing edge flow, seams, folds, materials and outer layers remain below review quality.",
+    "Raised-arm shoulders still require corrective deformation and the standard pose suite remains incomplete.",
+    "Signed clothing-distance samples remain negative despite zero exact triangle overlaps in the two audited frames.",
+    "LOD transition popping and frame-time impact remain untested in the website renderer."
+  ]
+}
