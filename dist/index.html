@@ -31,7 +31,7 @@
       <div class="hero-copy">
         <p class="eyebrow"><span></span> INDEPENDENT 3D ENGINE · DEVELOPMENT ARCHIVE</p>
         <h1>不是把輪子重做一次，<br><em>而是理解它為何轉動。</em></h1>
-        <p class="lead">Aevrynd 是一段從空白視窗出發，逐步建立渲染、場景、世界系統與開發工具的實作旅程。這裡記錄每一次可見的進化，也留下背後的取捨。</p>
+        <p class="lead">Aevrynd 是以 C++20、Win32 與 DirectX 12 自研的 Windows 原生遊戲引擎。從 2.5D 塔防《裂隙守望者》，一路走到 PBR 開放世界、角色系統與本地 AI；每一步都有可重現的測試與版本化展示。</p>
         <div class="hero-actions">
           <a class="button primary" href="#journey">查看演進歷程 <span>↓</span></a>
           <a class="button ghost" href="https://github.com/peca12968/AevryndWeb" target="_blank" rel="noreferrer">展示專案 ↗</a>
@@ -39,17 +39,17 @@
       </div>
 
       <div class="engine-window" aria-label="抽象化的引擎運作視窗">
-        <div class="window-bar"><span></span><span></span><span></span><b>AEVRYND / WORLD_01</b><i>LIVE</i></div>
+        <div class="window-bar"><span></span><span></span><span></span><b>AEVRYND / DIRECTX 12</b><i>ULTRA</i></div>
         <div class="viewport">
           <div class="world-grid"></div>
           <div class="core-orbit orbit-one"></div>
           <div class="core-orbit orbit-two"></div>
           <div class="core">A</div>
-          <div class="metric metric-a"><small>FRAME</small><strong>16.6 ms</strong></div>
-          <div class="metric metric-b"><small>ENTITIES</small><strong>2,048</strong></div>
-          <div class="viewport-caption">WORLD SYSTEM / RENDER LOOP / TOOLING</div>
+          <div class="metric metric-a"><small>FIXED LOOP</small><strong>60 Hz</strong></div>
+          <div class="metric metric-b"><small>STRESS SCENE</small><strong>6,561 meshes</strong></div>
+          <div class="viewport-caption">C++20 / WIN32 / DX12 / LOCAL AI</div>
         </div>
-        <div class="console-line"><span>›</span> engine.tick() <i>render graph ready</i><b>60 FPS</b></div>
+        <div class="console-line"><span>›</span> engine.tick() <i>CSM · PBR · HDR ready</i><b>v2.47.0</b></div>
       </div>
     </section>
 
@@ -57,11 +57,18 @@
       <p class="section-index">00 / ORIGIN</p>
       <div>
         <h2>從「畫面出現」到「世界開始運作」</h2>
-        <p>早期目標很單純：讓畫面正確出現。隨著功能增加，問題從單點功能轉向整體架構——物件如何存在、資料如何流動、工具如何讓開發更快。引擎因此從展示程式，逐步成為能持續擴張的系統。</p>
+        <p>專案從 Win32 視窗與固定 60Hz 迴圈起步，逐步加入 DirectX 12、3D Scene、ECS、物理、音訊、PBR 材質與世界串流。現在同一套引擎能力由 Riftwarden、Engine Lab、Character Lab、Gameplay Lab 與 Frontier World 共用。</p>
       </div>
       <div class="origin-steps" aria-label="開發重心演進">
         <span>VISIBLE<br><b>看得見</b></span><i>→</i><span>PLAYABLE<br><b>能互動</b></span><i>→</i><span>EXTENSIBLE<br><b>可擴張</b></span>
       </div>
+    </section>
+
+    <section class="snapshot" aria-label="目前版本摘要">
+      <div><small>ENGINE</small><strong>2.47.0</strong><span>目前展示版本</span></div>
+      <div><small>FRUSTUM CULLING</small><strong>90.9%</strong><span>6,561 mesh 壓力場景上傳減量</span></div>
+      <div><small>GPU INSTANCING</small><strong>87.1%</strong><span>可見 mesh 每幀上傳減量</span></div>
+      <div><small>LOCAL AI</small><strong>Qwen 27B</strong><span>WinHTTP 本機事件生成</span></div>
     </section>
 
     <section class="journey" id="journey">
@@ -75,51 +82,61 @@
         <button data-filter="render" aria-pressed="false">視覺呈現</button>
         <button data-filter="world" aria-pressed="false">世界系統</button>
         <button data-filter="tool" aria-pressed="false">開發工具</button>
+        <button data-filter="ai" aria-pressed="false">AI 與角色</button>
       </div>
 
       <div class="timeline">
         <article class="milestone" data-category="render">
           <div class="phase"><span>PHASE 01</span><b>建立基線</b></div>
           <div class="milestone-body">
-            <p class="tag">RENDER</p><h3>第一個可控的畫面</h3>
-            <p>建立穩定的視窗、更新循環與繪製流程，先讓輸入、畫面與時間彼此同步。這個階段的價值，不只是一張畫面，而是所有後續系統共用的節奏。</p>
-            <div class="change"><span>之前：功能各自運作</span><b>→</b><span>之後：統一由主循環調度</span></div>
+            <p class="tag">C++20 · WIN32 · DX12</p><h3>原生渲染核心</h3>
+            <p>以 Win32 建立原生視窗與輸入，完成 DirectX 12 device、swap chain、command queue、HLSL pipeline 與固定 60Hz 遊戲迴圈。2D UI 與 3D 世界採獨立批次，同一幀先繪製深度世界，再疊加清晰 HUD。</p>
+            <div class="change"><span>起點：CPU DrawList 與 2.5D 原語</span><b>→</b><span>成果：完整硬體 3D pipeline</span></div>
           </div>
         </article>
 
         <article class="milestone" data-category="world">
           <div class="phase"><span>PHASE 02</span><b>組成世界</b></div>
           <div class="milestone-body">
-            <p class="tag">WORLD</p><h3>從單一物件到場景系統</h3>
-            <p>將物件、元件與場景關係拆開管理，讓內容不再綁死在程式流程中。新增、移除與更新物件變得一致，複雜世界也能以相同規則運作。</p>
-            <div class="change"><span>之前：每個物件獨立處理</span><b>→</b><span>之後：由世界統一管理生命週期</span></div>
+            <p class="tag">RIFTWARDEN · DEMO 2.19.0</p><h3>第一款完整遊戲：裂隙守望者</h3>
+            <p>2.5D 塔防整合四類敵軍、三種防禦塔、技能、連擊、永久強化、繁中／英文介面、鍵鼠與 XInput 手把。進度會自動保存，本地 Qwen 每三波依戰況生成事件，失敗時由 C++ 備援。</p>
+            <div class="change"><span>引擎：能畫出場景</span><b>→</b><span>遊戲：具備完整循環與存檔</span></div>
           </div>
         </article>
 
         <article class="milestone" data-category="render">
           <div class="phase"><span>PHASE 03</span><b>提升質感</b></div>
           <div class="milestone-body">
-            <p class="tag">VISUAL</p><h3>讓光線、材質與空間說話</h3>
-            <p>渲染不再只追求「有畫面」，而是建立可以比較與調整的視覺基準。每次改動都回到相同場景驗證，讓提升不只是感覺，而是可辨認的前後差異。</p>
-            <div class="change"><span>之前：能顯示模型</span><b>→</b><span>之後：能控制畫面層次與氛圍</span></div>
+            <p class="tag">ENGINE LAB · PBR · DLSS</p><h3>從 3D 場景到可量測的渲染系統</h3>
+            <p>Scene3D 支援透視／正交相機、視錐裁切、GPU instancing、OBJ、Mesh LOD、射線查詢與 Frame Capture。畫面加入 HDR、ACES、Cook-Torrance PBR、級聯陰影與 DLSS Super Resolution，並保留 CPU fallback 做精確比對。</p>
+            <div class="change"><span>6,561 mesh 全量展開</span><b>→</b><span>只提交 593 個可見物件</span></div>
           </div>
         </article>
 
-        <article class="milestone" data-category="tool">
+        <article class="milestone" data-category="world tool">
           <div class="phase"><span>PHASE 04</span><b>縮短回饋</b></div>
           <div class="milestone-body">
-            <p class="tag">TOOLING</p><h3>把開發能力放進工具</h3>
-            <p>加入可觀察、可調整的開發介面，讓問題不必只靠日誌猜測。系統狀態被看見之後，測試、定位與調整都能更直接地完成。</p>
-            <div class="change"><span>之前：修改後重新確認</span><b>→</b><span>之後：在同一個回饋迴圈中調整</span></div>
+            <p class="tag">FRONTIER WORLD · DEMO 0.92.0</p><h3>世界系統開始形成</h3>
+            <p>HeightField、Terrain Clipmap、Mesh LOD、程序植被與建築共同組成靜態開放世界。地形支援四邊 skirt 與相鄰 LOD 約束，1,024 chunks 的觀察者更新平均約 6.7 微秒且更新期間零配置。</p>
+            <div class="change"><span>單一驗證場景</span><b>→</b><span>可串流、可裁切的開放世界</span></div>
           </div>
         </article>
 
-        <article class="milestone" data-category="tool world">
+        <article class="milestone" data-category="ai render">
           <div class="phase"><span>PHASE 05</span><b>持續演進</b></div>
           <div class="milestone-body">
-            <p class="tag">AI × ENGINE</p><h3>AI 成為協作層，而不是捷徑</h3>
-            <p>由 AI 協助拆解任務、檢查實作與整理知識，但架構方向、驗收基準與合併節奏仍由人掌握。目標是增加可完成的實驗數，而不是跳過工程判斷。</p>
-            <div class="change"><span>之前：單線開發</span><b>→</b><span>之後：可控的多任務協作</span></div>
+            <p class="tag">CHARACTER LAB · 2026.09</p><h3>從世界走向角色</h3>
+            <p>近期里程碑聚焦角色臉部塑形、服裝材質、髮片、手部骨架、第一人稱持劍構圖、待機與步態動畫，並透過 GPU 預覽與視覺回歸保存可驗證證據。</p>
+            <div class="change"><span>靜態環境資產</span><b>→</b><span>可塑形、可動畫的角色管線</span></div>
+          </div>
+        </article>
+
+        <article class="milestone" data-category="tool ai">
+          <div class="phase"><span>PHASE 06</span><b>遠端協作</b></div>
+          <div class="milestone-body">
+            <p class="tag">AEVRYNDWEB · .NET 8</p><h3>引擎之外的安全助理入口</h3>
+            <p>ASP.NET Core MVC 網站提供白名單與一次性驗證碼登入、展示頁、操作遙測及受控 Remote Console。遠端控制採短效配對、二次 OTP、8 小時絕對期限與 30 分鐘閒置期限，Shell 執行則維持關閉。</p>
+            <div class="change"><span>本機單點開發</span><b>→</b><span>具安全邊界的遠端觀察與操作</span></div>
           </div>
         </article>
       </div>
@@ -128,13 +145,15 @@
     <section class="systems" id="systems">
       <div class="section-heading inverse">
         <div><p class="section-index">02 / SYSTEM MAP</p><h2>一個世界，由多個系統共同成立</h2></div>
-        <p>看似是一張畫面，背後其實是資料、時間與工具的協調。</p>
+        <p>以下能力已存在於目前的 C++ 原生引擎，而不是概念藍圖。</p>
       </div>
       <div class="system-grid">
-        <article class="system-card featured"><span>01</span><div class="system-icon">◫</div><h3>Rendering</h3><p>把場景資料轉換為畫面，管理繪製順序、材質與視覺結果。</p><small>SCENE → FRAME</small></article>
-        <article class="system-card"><span>02</span><div class="system-icon">◎</div><h3>World</h3><p>統一管理物件的建立、更新、關聯與結束。</p><small>DATA → BEHAVIOR</small></article>
-        <article class="system-card"><span>03</span><div class="system-icon">⌁</div><h3>Runtime</h3><p>控制每一幀的時間、輸入與系統執行節奏。</p><small>TIME → STATE</small></article>
-        <article class="system-card"><span>04</span><div class="system-icon">⌘</div><h3>Tooling</h3><p>讓狀態可以被觀察、修改與快速驗證。</p><small>CHANGE → FEEDBACK</small></article>
+        <article class="system-card featured"><span>01</span><div class="system-icon">◫</div><h3>Renderer</h3><p>DX12、HDR、PBR、CSM、DLSS、GPU instancing 與需求式資源配置。</p><small>SCENE → FRAME</small></article>
+        <article class="system-card"><span>02</span><div class="system-icon">◎</div><h3>Scene & ECS</h3><p>Generation-safe entity、typed view、延遲銷毀、LOD 與場景同步。</p><small>ENTITY → WORLD</small></article>
+        <article class="system-card"><span>03</span><div class="system-icon">⌁</div><h3>Physics & Audio</h3><p>3D 剛體、CCD、layer mask、sleep/wake 與 XAudio2 64 voices。</p><small>EVENT → RESPONSE</small></article>
+        <article class="system-card"><span>04</span><div class="system-icon">⌘</div><h3>Asset Pipeline</h3><p>CC0 PBR 清單、Material Cooker、OBJ、Mesh processing 與版本化資產。</p><small>ASSET → RUNTIME</small></article>
+        <article class="system-card"><span>05</span><div class="system-icon">◇</div><h3>World Tech</h3><p>HeightField、Clipmap、BVH、程序植被、建築與透明水體。</p><small>CHUNK → LANDSCAPE</small></article>
+        <article class="system-card"><span>06</span><div class="system-icon">△</div><h3>Verification</h3><p>Profiler、telemetry、Frame Capture、黃金參考與視覺回歸。</p><small>CHANGE → EVIDENCE</small></article>
       </div>
     </section>
 
@@ -156,8 +175,8 @@
 
     <section class="repos">
       <div><p class="section-index">04 / SOURCE</p><h2>兩個專案，一段共同歷程</h2></div>
-      <a class="repo-card" href="https://github.com/peca12968/Aevrynd" target="_blank" rel="noreferrer"><span>CORE</span><h3>Aevrynd</h3><p>引擎核心與系統實作</p><b>查看原始碼 ↗</b></a>
-      <a class="repo-card" href="https://github.com/peca12968/AevryndWeb" target="_blank" rel="noreferrer"><span>SHOWCASE</span><h3>AevryndWeb</h3><p>展示介面與歷程呈現</p><b>查看原始碼 ↗</b></a>
+      <a class="repo-card" href="https://github.com/peca12968/Aevrynd" target="_blank" rel="noreferrer"><span>C++20 · DIRECTX 12</span><h3>Aevrynd</h3><p>共用原生引擎，以及 Riftwarden、Engine Lab、Character Lab、Gameplay Lab、Frontier World。</p><b>查看私人儲存庫 ↗</b></a>
+      <a class="repo-card" href="https://github.com/peca12968/AevryndWeb" target="_blank" rel="noreferrer"><span>ASP.NET CORE MVC · .NET 8</span><h3>AevryndWeb</h3><p>助理入口、開發歷程展示、安全登入、操作遙測與受控 Remote Console。</p><b>查看私人儲存庫 ↗</b></a>
     </section>
   </main>
 
