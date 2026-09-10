@@ -721,3 +721,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - r127 固定官方材質與原半徑，再測現有 scalp、官方根色 0.42、暖根色 0.32。降低 scalp 密度只稍微減淡紫紅寬補片，無法修正 carrier 幾何範圍，三組都不作候選。
 - r128 複製 CC0 節點群為 `AevryndOwnedLayeredHairMaterial_v249r128`，保留根部加深與隨機色機制，測試 neutral brown、deep brown、chestnut。chestnut 過紅，neutral brown 背面偏亮；deep brown 在正面、四分之三與頂視保持髮絲可讀且較少過曝，選為下一個正式候選方向。
 - r128 尚未建立候選 `.blend`，也未通過完整關卡。下一步把 deep brown 固化成 r129，記錄 CC0 來源與零 runtime 依賴，完成 11 視角、frame 1／20 靜態碰撞、五姿態動態毛髮與效能驗證後，才能決定是否取代 r101 毛髮技術候選。r109、r101、r38 與網站 v83 目前不變。
+
+## v249 主線自有 deep-brown 分層髮材質 r129
+
+- r129 將 r128 選出的 deep-brown 色盤固化到 `AevryndOwnedLayeredHairMaterial_v249r129`。材質保留官方 CC0 節點群的雙色、0.631 根部加深、0.322 根色長度、0.45 隨機色與 18.8 噪聲尺度；主髮仍為 10–45µm、flyaway 為 7–30µm。來源已記錄為 CC0 離線複製與重新配色，引擎 runtime 依賴為 `none`，幾何沒有變更。
+- 完整 11 視角與 frame 20 姿勢確認沒有新增材質破面或閃白。frame 1／20 靜態檢查對人體、上衣、包邊及短褲全部零穿模；r94 balanced runtime 的五個動態狀態每狀態檢查 224,460 個髮點與 3,946 個 rigid scalp 頂點，也全部零違規。
+- 50 幀 CPU profile 為 solver 9.065ms、follow 4.026ms、合計 13.091ms，224,460 點中 208,329 點帶接觸資料。r129 只更換 Blender 材質，網站資產與 runtime groom 均未替換。
+- 深棕雙色使正面、側面與頂視的細髮和束間色差明顯優於 r101 的黑色塊，背光過曝也低於 neutral brown；因此 r129 取代 r101 成為毛髮材質技術候選。
+- 嚴格展示門檻仍未通過。臉部近拍可見前額 scalp carrier 像一片塗色頭皮，分線過寬、髮際偏高、根部流向過度平行；臉部眼瞼、角膜、皮膚與口周仍只有技術基礎品質。r129 不取代 r38 整體視覺基準或網站 v83。下一輪保留材質，直接重建窄分線、前額 carrier 範圍及 primary root flow，再逐項通過相同關卡。
