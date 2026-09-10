@@ -1,0 +1,83 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-collision-safe-mouth-r200.blend",
+  "variants": {
+    "a-control": {
+      "strength": 0.0
+    },
+    "b-subtle": {
+      "strength": 1.25,
+      "verticesMoved": 2382,
+      "maximumMoveMm": 1.0580046106427574,
+      "shapeKey": "Aevrynd_UpperLidOpening_R205_1.25",
+      "consolidatedShapeKeys": [
+        "Aevrynd_Philtrum_Topology_R80",
+        "Aevrynd_EyeAperture_Topology_R83",
+        "Aevrynd_EvaluatedAnatomicalLids_R183",
+        "Aevrynd_MouthPlacement_R198_5mm"
+      ],
+      "upperLashes": {
+        "Eye_L_UpperLashes": {
+          "verticesMoved": 760,
+          "maximumVerticalMoveMm": 1.2151624301243262,
+          "outwardClearanceMm": 0.3
+        },
+        "Eye_R_UpperLashes": {
+          "verticesMoved": 760,
+          "maximumVerticalMoveMm": 1.215247980727939,
+          "outwardClearanceMm": 0.3
+        }
+      }
+    },
+    "c-balanced": {
+      "strength": 1.5,
+      "verticesMoved": 2385,
+      "maximumMoveMm": 1.2696055327713092,
+      "shapeKey": "Aevrynd_UpperLidOpening_R205_1.50",
+      "consolidatedShapeKeys": [
+        "Aevrynd_Philtrum_Topology_R80",
+        "Aevrynd_EyeAperture_Topology_R83",
+        "Aevrynd_EvaluatedAnatomicalLids_R183",
+        "Aevrynd_MouthPlacement_R198_5mm"
+      ],
+      "upperLashes": {
+        "Eye_L_UpperLashes": {
+          "verticesMoved": 760,
+          "maximumVerticalMoveMm": 1.4581949161491916,
+          "outwardClearanceMm": 0.3
+        },
+        "Eye_R_UpperLashes": {
+          "verticesMoved": 760,
+          "maximumVerticalMoveMm": 1.458297576873527,
+          "outwardClearanceMm": 0.3
+        }
+      }
+    },
+    "d-open": {
+      "strength": 1.75,
+      "verticesMoved": 2388,
+      "maximumMoveMm": 1.4812064548998605,
+      "shapeKey": "Aevrynd_UpperLidOpening_R205_1.75",
+      "consolidatedShapeKeys": [
+        "Aevrynd_Philtrum_Topology_R80",
+        "Aevrynd_EyeAperture_Topology_R83",
+        "Aevrynd_EvaluatedAnatomicalLids_R183",
+        "Aevrynd_MouthPlacement_R198_5mm"
+      ],
+      "upperLashes": {
+        "Eye_L_UpperLashes": {
+          "verticesMoved": 760,
+          "maximumVerticalMoveMm": 1.701227402174057,
+          "outwardClearanceMm": 0.3
+        },
+        "Eye_R_UpperLashes": {
+          "verticesMoved": 760,
+          "maximumVerticalMoveMm": 1.7013471730191145,
+          "outwardClearanceMm": 0.3
+        }
+      }
+    }
+  },
+  "status": "SELECTED_FOR_COLLISION_REPAIR",
+  "verdict": "SELECT_D_OPEN",
+  "selectionReason": "1.75 strength gives the clearest normal-distance improvement while retaining upper-lid iris occlusion and leaving lower-lid/tear geometry unchanged."
+}

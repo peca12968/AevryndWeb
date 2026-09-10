@@ -1,0 +1,133 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-collision-safe-mouth-r200.blend",
+  "variants": {
+    "a-control": {
+      "strength": 0.0
+    },
+    "b-natural": {
+      "strength": 1.0,
+      "verticesMoved": 2603,
+      "maximumMoveMm": 0.8435411121830217,
+      "upperMaximumMm": 0.8435411121830217,
+      "lowerMaximumMm": 0.31138740387310193,
+      "nominalApertureIncreaseMm": 1.38,
+      "shapeKey": "Aevrynd_EyeAperture_R202_1.00",
+      "consolidatedShapeKeys": [
+        "Aevrynd_Philtrum_Topology_R80",
+        "Aevrynd_EyeAperture_Topology_R83",
+        "Aevrynd_EvaluatedAnatomicalLids_R183",
+        "Aevrynd_MouthPlacement_R198_5mm"
+      ],
+      "synchronizedLayers": {
+        "Eye_L_UpperLashes": {
+          "verticesMoved": 760,
+          "maximumMoveMm": 0.972129944099461
+        },
+        "Eye_L_TearMeniscus": {
+          "verticesMoved": 222,
+          "maximumMoveMm": 0.23900676357957618
+        },
+        "Eye_L_Caruncle": {
+          "verticesMoved": 15,
+          "maximumMoveMm": 0.07024713319375275
+        },
+        "Eye_R_UpperLashes": {
+          "verticesMoved": 760,
+          "maximumMoveMm": 0.9721983845823512
+        },
+        "Eye_R_TearMeniscus": {
+          "verticesMoved": 222,
+          "maximumMoveMm": 0.2408713473522556
+        },
+        "Eye_R_Caruncle": {
+          "verticesMoved": 15,
+          "maximumMoveMm": 0.07001092659652548
+        }
+      }
+    },
+    "c-open": {
+      "strength": 1.5,
+      "verticesMoved": 2611,
+      "maximumMoveMm": 1.2653116682745327,
+      "upperMaximumMm": 1.2653116682745327,
+      "lowerMaximumMm": 0.4670811058096529,
+      "nominalApertureIncreaseMm": 2.07,
+      "shapeKey": "Aevrynd_EyeAperture_R202_1.50",
+      "consolidatedShapeKeys": [
+        "Aevrynd_Philtrum_Topology_R80",
+        "Aevrynd_EyeAperture_Topology_R83",
+        "Aevrynd_EvaluatedAnatomicalLids_R183",
+        "Aevrynd_MouthPlacement_R198_5mm"
+      ],
+      "synchronizedLayers": {
+        "Eye_L_UpperLashes": {
+          "verticesMoved": 760,
+          "maximumMoveMm": 1.4581949161491916
+        },
+        "Eye_L_TearMeniscus": {
+          "verticesMoved": 222,
+          "maximumMoveMm": 0.3585101453693642
+        },
+        "Eye_L_Caruncle": {
+          "verticesMoved": 15,
+          "maximumMoveMm": 0.10537069979062913
+        },
+        "Eye_R_UpperLashes": {
+          "verticesMoved": 760,
+          "maximumMoveMm": 1.458297576873527
+        },
+        "Eye_R_TearMeniscus": {
+          "verticesMoved": 222,
+          "maximumMoveMm": 0.36130702102838336
+        },
+        "Eye_R_Caruncle": {
+          "verticesMoved": 15,
+          "maximumMoveMm": 0.10501638989478823
+        }
+      }
+    },
+    "d-strong": {
+      "strength": 2.0,
+      "verticesMoved": 2614,
+      "maximumMoveMm": 1.6870822243660435,
+      "upperMaximumMm": 1.6870822243660435,
+      "lowerMaximumMm": 0.6227748077462039,
+      "nominalApertureIncreaseMm": 2.76,
+      "shapeKey": "Aevrynd_EyeAperture_R202_2.00",
+      "consolidatedShapeKeys": [
+        "Aevrynd_Philtrum_Topology_R80",
+        "Aevrynd_EyeAperture_Topology_R83",
+        "Aevrynd_EvaluatedAnatomicalLids_R183",
+        "Aevrynd_MouthPlacement_R198_5mm"
+      ],
+      "synchronizedLayers": {
+        "Eye_L_UpperLashes": {
+          "verticesMoved": 760,
+          "maximumMoveMm": 1.944259888198922
+        },
+        "Eye_L_TearMeniscus": {
+          "verticesMoved": 222,
+          "maximumMoveMm": 0.47801352715915235
+        },
+        "Eye_L_Caruncle": {
+          "verticesMoved": 15,
+          "maximumMoveMm": 0.1404942663875055
+        },
+        "Eye_R_UpperLashes": {
+          "verticesMoved": 760,
+          "maximumMoveMm": 1.9443967691647024
+        },
+        "Eye_R_TearMeniscus": {
+          "verticesMoved": 222,
+          "maximumMoveMm": 0.4817426947045112
+        },
+        "Eye_R_Caruncle": {
+          "verticesMoved": 15,
+          "maximumMoveMm": 0.14002185319305097
+        }
+      }
+    }
+  },
+  "status": "REJECTED_COLLISION_COUPLING",
+  "verdict": "c-open was visually strongest without the round-eye look of d-strong, but the synchronized lower-lid/tear movement produced frame 1/20 accessory collisions in r203."
+}

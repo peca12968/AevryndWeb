@@ -1,0 +1,191 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-collision-safe-mouth-r200.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-converged-upper-lid-r210.blend",
+  "selectedSweepVariant": "r205 d-open",
+  "strength": 1.75,
+  "lashClearanceMm": 0.45,
+  "metrics": {
+    "verticesMovedBeforeGuard": 2388,
+    "maximumMoveMm": 1.4812064548998605,
+    "shapeKey": "Aevrynd_ConvergedUpperLid_R210",
+    "consolidatedShapeKeys": [
+      "Aevrynd_Philtrum_Topology_R80",
+      "Aevrynd_EyeAperture_Topology_R83",
+      "Aevrynd_EvaluatedAnatomicalLids_R183",
+      "Aevrynd_MouthPlacement_R198_5mm"
+    ],
+    "upperLashes": {
+      "Eye_L_UpperLashes": {
+        "verticesMoved": 760,
+        "maximumVerticalMoveMm": 1.701227402174057,
+        "outwardClearanceMm": 0.45
+      },
+      "Eye_R_UpperLashes": {
+        "verticesMoved": 760,
+        "maximumVerticalMoveMm": 1.7013471730191145,
+        "outwardClearanceMm": 0.45
+      }
+    },
+    "tearGuard": {
+      "iterations": [
+        {
+          "iteration": 0,
+          "overlaps": {
+            "1": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 0
+            },
+            "20": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 2
+            }
+          },
+          "bodyFaces": [
+            6917,
+            7971
+          ]
+        },
+        {
+          "iteration": 1,
+          "overlaps": {
+            "1": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 2
+            },
+            "20": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 2
+            }
+          },
+          "bodyFaces": [
+            6915,
+            7965
+          ]
+        },
+        {
+          "iteration": 2,
+          "overlaps": {
+            "1": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 2
+            },
+            "20": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 2
+            }
+          },
+          "bodyFaces": [
+            6870,
+            7966
+          ]
+        },
+        {
+          "iteration": 3,
+          "overlaps": {
+            "1": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 2
+            },
+            "20": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 3
+            }
+          },
+          "bodyFaces": [
+            6871,
+            7711,
+            9562
+          ]
+        },
+        {
+          "iteration": 4,
+          "overlaps": {
+            "1": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 2
+            },
+            "20": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 2
+            }
+          },
+          "bodyFaces": [
+            6542,
+            9560
+          ]
+        },
+        {
+          "iteration": 5,
+          "overlaps": {
+            "1": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 2
+            },
+            "20": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 1
+            }
+          },
+          "bodyFaces": [
+            6545,
+            6908
+          ]
+        },
+        {
+          "iteration": 6,
+          "overlaps": {
+            "1": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 1
+            },
+            "20": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 1
+            }
+          },
+          "bodyFaces": [
+            7427
+          ]
+        },
+        {
+          "iteration": 7,
+          "overlaps": {
+            "1": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 0
+            },
+            "20": {
+              "Eye_L_TearMeniscus": 0,
+              "Eye_R_TearMeniscus": 0
+            }
+          },
+          "bodyFaces": []
+        }
+      ],
+      "guardedFaceCount": 14,
+      "guardedFaces": [
+        6542,
+        6545,
+        6870,
+        6871,
+        6908,
+        6915,
+        6917,
+        7427,
+        7711,
+        7965,
+        7966,
+        7971,
+        9560,
+        9562
+      ],
+      "guardedVertexCount": 33,
+      "status": "PASS"
+    }
+  },
+  "status": "TECHNICAL_CANDIDATE_COLLISION_AND_11SHOT_PASSED",
+  "collisionAudit": "female-v249-mainline-converged-upper-lid-r210.collision-audit.json",
+  "review11Shot": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r210-converged-upper-lid-11shot",
+  "strictFaceScore": 49,
+  "strictEyeScore": 52
+}

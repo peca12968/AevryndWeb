@@ -1,0 +1,94 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-natural-eye-aperture-r203.blend",
+  "offsets": {
+    "0.00mm": {
+      "1": {
+        "Eye_L_UpperLashes": 10,
+        "Eye_R_UpperLashes": 10,
+        "Eye_L_TearMeniscus": 0,
+        "Eye_R_TearMeniscus": 0
+      },
+      "20": {
+        "Eye_L_UpperLashes": 10,
+        "Eye_R_UpperLashes": 10,
+        "Eye_L_TearMeniscus": 0,
+        "Eye_R_TearMeniscus": 16
+      }
+    },
+    "0.15mm": {
+      "1": {
+        "Eye_L_UpperLashes": 5,
+        "Eye_R_UpperLashes": 4,
+        "Eye_L_TearMeniscus": 12,
+        "Eye_R_TearMeniscus": 28
+      },
+      "20": {
+        "Eye_L_UpperLashes": 5,
+        "Eye_R_UpperLashes": 4,
+        "Eye_L_TearMeniscus": 8,
+        "Eye_R_TearMeniscus": 20
+      }
+    },
+    "0.30mm": {
+      "1": {
+        "Eye_L_UpperLashes": 0,
+        "Eye_R_UpperLashes": 0,
+        "Eye_L_TearMeniscus": 46,
+        "Eye_R_TearMeniscus": 28
+      },
+      "20": {
+        "Eye_L_UpperLashes": 0,
+        "Eye_R_UpperLashes": 0,
+        "Eye_L_TearMeniscus": 42,
+        "Eye_R_TearMeniscus": 50
+      }
+    },
+    "0.45mm": {
+      "1": {
+        "Eye_L_UpperLashes": 0,
+        "Eye_R_UpperLashes": 0,
+        "Eye_L_TearMeniscus": 36,
+        "Eye_R_TearMeniscus": 46
+      },
+      "20": {
+        "Eye_L_UpperLashes": 0,
+        "Eye_R_UpperLashes": 0,
+        "Eye_L_TearMeniscus": 40,
+        "Eye_R_TearMeniscus": 48
+      }
+    },
+    "0.60mm": {
+      "1": {
+        "Eye_L_UpperLashes": 0,
+        "Eye_R_UpperLashes": 0,
+        "Eye_L_TearMeniscus": 36,
+        "Eye_R_TearMeniscus": 36
+      },
+      "20": {
+        "Eye_L_UpperLashes": 0,
+        "Eye_R_UpperLashes": 0,
+        "Eye_L_TearMeniscus": 40,
+        "Eye_R_TearMeniscus": 34
+      }
+    },
+    "0.80mm": {
+      "1": {
+        "Eye_L_UpperLashes": 0,
+        "Eye_R_UpperLashes": 0,
+        "Eye_L_TearMeniscus": 18,
+        "Eye_R_TearMeniscus": 15
+      },
+      "20": {
+        "Eye_L_UpperLashes": 0,
+        "Eye_R_UpperLashes": 0,
+        "Eye_L_TearMeniscus": 14,
+        "Eye_R_TearMeniscus": 14
+      }
+    }
+  },
+  "selectionRule": "minimum symmetric offset with zero body overlaps at frames 1 and 20",
+  "selectedOffsetMm": null,
+  "status": "FAIL",
+  "verdict": "REJECT_SHARED_CLEARANCE_DIRECTION",
+  "reason": "0.30mm outward clears both upper lashes, but every tested shared outward offset increases tear-meniscus/body overlaps."
+}
