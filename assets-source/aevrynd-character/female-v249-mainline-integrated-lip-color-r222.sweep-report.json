@@ -1,0 +1,44 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-converged-upper-lid-r210.blend",
+  "variants": {
+    "a-control": {
+      "targetMultiplier": "r210-control",
+      "material": "Aevrynd_Skin_Layered_v249r173"
+    },
+    "b-natural": {
+      "targetMultiplier": [
+        1.025,
+        0.88,
+        0.86,
+        0.9
+      ],
+      "material": "Aevrynd_Skin_IntegratedLip_R222_b-natural",
+      "verticesTinted": 1764,
+      "maximumMask": 1.0
+    },
+    "c-balanced": {
+      "targetMultiplier": [
+        1.04,
+        0.8,
+        0.77,
+        0.82
+      ],
+      "material": "Aevrynd_Skin_IntegratedLip_R222_c-balanced",
+      "verticesTinted": 1764,
+      "maximumMask": 1.0
+    },
+    "d-strong": {
+      "targetMultiplier": [
+        1.055,
+        0.7,
+        0.67,
+        0.74
+      ],
+      "material": "Aevrynd_Skin_IntegratedLip_R222_d-strong",
+      "verticesTinted": 1764,
+      "maximumMask": 1.0
+    }
+  },
+  "status": "REJECTED_MULTIPLY_RESPONSE_TOO_WEAK",
+  "review": "The vertex field reaches full mask strength and produces distinct image hashes, but even the strongest RGB multiplier is nearly indistinguishable from r210 in the close crop and normal face view. The material path needs a controlled color mix rather than another multiplier increase."
+}

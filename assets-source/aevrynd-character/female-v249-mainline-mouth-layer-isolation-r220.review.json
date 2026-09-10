@@ -1,0 +1,104 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-converged-upper-lid-r210.blend",
+  "layers": {
+    "AevryndFemaleBodyBaseV118": {
+      "vertices": 41692,
+      "polygons": 41490,
+      "min": [
+        -0.4420592188835144,
+        -0.15162821114063263,
+        -0.0008312335703521967
+      ],
+      "max": [
+        0.44204387068748474,
+        0.1483447104692459,
+        1.7199828624725342
+      ],
+      "materials": [
+        "Aevrynd_Skin_Layered_v249r173"
+      ],
+      "layer": "ANATOMY_BODY_HEAD_CONTINUOUS",
+      "role": "female_continuous_anatomical_base"
+    },
+    "Lip_Upper": {
+      "vertices": 455,
+      "polygons": 384,
+      "min": [
+        -0.02832624316215515,
+        -0.1384160965681076,
+        1.529624104499817
+      ],
+      "max": [
+        0.028307555243372917,
+        -0.11878818273544312,
+        1.5360976457595825
+      ],
+      "materials": [
+        "Aevrynd_Skin_Clay",
+        "Aevrynd_LipVermilion_v50",
+        "Aevrynd_LipInner_v50"
+      ],
+      "layer": null,
+      "role": "upper_lip_integrated"
+    },
+    "Lip_Lower": {
+      "vertices": 455,
+      "polygons": 384,
+      "min": [
+        -0.028344137594103813,
+        -0.13836853206157684,
+        1.5231412649154663
+      ],
+      "max": [
+        0.02832592837512493,
+        -0.11840532720088959,
+        1.52961003780365
+      ],
+      "materials": [
+        "Aevrynd_Skin_Clay",
+        "Aevrynd_LipVermilion_v50",
+        "Aevrynd_LipInner_v50"
+      ],
+      "layer": null,
+      "role": "lower_lip_integrated"
+    },
+    "Mouth_WetLine": {
+      "vertices": 130,
+      "polygons": 64,
+      "min": [
+        -0.02239999920129776,
+        -0.13760747015476227,
+        1.5295350551605225
+      ],
+      "max": [
+        0.02239999920129776,
+        -0.11917111277580261,
+        1.5298000574111938
+      ],
+      "materials": [
+        "Aevrynd_MouthWetLine_v50"
+      ],
+      "layer": null,
+      "role": "mouth_wet_margin"
+    }
+  },
+  "states": {
+    "authored": {
+      "bodyVisible": true,
+      "mouthAccessoriesVisible": false
+    },
+    "legacy-visible": {
+      "bodyVisible": true,
+      "mouthAccessoriesVisible": true
+    },
+    "accessories-only": {
+      "bodyVisible": false,
+      "mouthAccessoriesVisible": true
+    },
+    "wireframe": {
+      "bodyVisible": true,
+      "mouthAccessoriesVisible": false
+    }
+  },
+  "status": "AUTHORED_STATE_CONFIRMED_LEGACY_LIP_SHELLS_ALREADY_HIDDEN"
+}

@@ -896,3 +896,10 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - r217 在 r210 evaluated surface 上掃描 0.75／1.15／1.55 強度的鼻翼溝、鼻翼緣、鼻尖、鼻柱、鼻唇溝、嘴角、口周、頦唇溝及下巴墊連續形變，最大位移 1.156mm。固定近拍仍幾乎無法辨識，因獨立嘴唇／鼻孔層遮住人體表面且現有皮膚回應壓低淺平面；繼續放大會先增加穿層，全部判退。
 - r218 稽核 r210 皮膚材質：SSS weight 0.038、scale 2.2mm、specular IOR level 0.145、coat 0.008，粗糙度由 atlas 與位置場相乘，法線由 owned tangent normal 加 410-scale 程序毛孔組合。r219 掃描較低粗糙度、較高鏡面／coat／SSS 與稍強毛孔；細節雖更顯眼，卻立刻形成大片油亮塑膠高光，三組都低於 control，判退。
 - r211–r219 沒有任何版本通過「正常視距可見提升」門檻，因此 r210 仍是臉／眼技術候選、r192 仍是毛髮技術候選、網站仍為 v83。這輪把下一階段收斂為完整臉部基底／附件拓撲與貼圖取得流程；禁止再以加密、加亮或局部高斯位移冒充現代主角品質。
+### v249 mainline mouth studies r220-r223
+
+- r220 isolates the authored render state and confirms that the legacy `Lip_Upper`, `Lip_Lower`, and `Mouth_WetLine` shells were already hidden. The visible mouth is part of the continuous 41,692-vertex body.
+- r221 tests integrated body-only upper-vermilion, tubercle, cupid-peak, notch, and commissure fields. Even the 2.349 mm bound remains too weak at normal face distance, so no geometry variant is promoted.
+- r222 verifies that multiplying the existing skin base color cannot produce a useful lip response.
+- r223 replaces multiplication with a controlled target-color mix and establishes a visible range. It remains lower-lip dominant because the current upper vermilion surface is too flat; the strong range reads as paint. No material variant is promoted.
+- The next mouth pass must define the upper vermilion border and volume on the continuous body before adding regional color. Detached legacy shells remain hidden.
