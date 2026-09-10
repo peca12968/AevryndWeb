@@ -1,0 +1,133 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-converged-upper-lid-r210.blend",
+  "body": "AevryndFemaleBodyBaseV118",
+  "material": "Aevrynd_Skin_Layered_v249r173",
+  "shader": "\u539f\u5247\u5316 BSDF",
+  "shaderInputs": {
+    "Base Color": {
+      "default": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "linkedFrom": [
+        "Aevrynd Complexion Multiply v249r173.Color"
+      ]
+    },
+    "Metallic": {
+      "default": 0.0,
+      "linkedFrom": []
+    },
+    "Roughness": {
+      "default": 0.5,
+      "linkedFrom": [
+        "Aevrynd Roughness Multiply v249r173.Color"
+      ]
+    },
+    "IOR": {
+      "default": 1.5,
+      "linkedFrom": []
+    },
+    "Alpha": {
+      "default": 1.0,
+      "linkedFrom": []
+    },
+    "Normal": {
+      "default": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "linkedFrom": [
+        "Aevrynd Dual Scale Skin Bump v249r173.Normal"
+      ]
+    },
+    "Subsurface Weight": {
+      "default": 0.03799999877810478,
+      "linkedFrom": []
+    },
+    "Subsurface Scale": {
+      "default": 0.002199999988079071,
+      "linkedFrom": []
+    },
+    "Subsurface Radius": {
+      "default": [
+        1.0,
+        0.30000001192092896,
+        0.14000000059604645
+      ],
+      "linkedFrom": []
+    },
+    "Specular IOR Level": {
+      "default": 0.14499999582767487,
+      "linkedFrom": []
+    },
+    "Coat Weight": {
+      "default": 0.00800000037997961,
+      "linkedFrom": []
+    },
+    "Coat Roughness": {
+      "default": 0.30000001192092896,
+      "linkedFrom": []
+    }
+  },
+  "interestingNodes": {
+    "Aevrynd Skin Base Atlas v248": {
+      "type": "ShaderNodeTexImage"
+    },
+    "Aevrynd Skin Roughness Atlas v216": {
+      "type": "ShaderNodeTexImage"
+    },
+    "Aevrynd Skin Normal Atlas v219": {
+      "type": "ShaderNodeTexImage"
+    },
+    "Aevrynd Skin Tangent MicroNormal v190": {
+      "type": "ShaderNodeNormalMap",
+      "Strength": 1.0
+    },
+    "Aevrynd Baked Skin Normal v75": {
+      "type": "ShaderNodeTexImage"
+    },
+    "Aevrynd Baked Skin Normal Decode v249R76": {
+      "type": "ShaderNodeNormalMap",
+      "Strength": 1.0
+    },
+    "Aevrynd Complexion Field v249r173": {
+      "type": "ShaderNodeVertexColor"
+    },
+    "Aevrynd Complexion Multiply v249r173": {
+      "type": "ShaderNodeMixRGB",
+      "Factor": 1.0
+    },
+    "Aevrynd Roughness Field v249r173": {
+      "type": "ShaderNodeAttribute"
+    },
+    "Aevrynd Roughness Multiply v249r173": {
+      "type": "ShaderNodeMixRGB",
+      "Factor": 1.0
+    },
+    "Aevrynd Pore Coordinates v249r173": {
+      "type": "ShaderNodeTexCoord"
+    },
+    "Aevrynd Primary Pores v249r173": {
+      "type": "ShaderNodeTexNoise",
+      "Scale": 410.0,
+      "Detail": 2.5999999046325684,
+      "Roughness": 0.5799999833106995
+    },
+    "Aevrynd Dual Scale Skin Bump v249r173": {
+      "type": "ShaderNodeBump",
+      "Strength": 0.11500000208616257,
+      "Distance": 4.5000000682193786e-05
+    }
+  },
+  "materialProperties": {
+    "aevrynd_lip_roughness_revision": 216,
+    "aevrynd_skin_normal_revision": 217,
+    "aevrynd_complexion_revision": 247,
+    "aevrynd_complexion_method": "position_fields_baked_to_owned_atlas",
+    "aevrynd_skin_revision": "v249r173",
+    "aevrynd_skin_method": "owned complexion and roughness vertex fields plus dual-scale procedural pores"
+  }
+}

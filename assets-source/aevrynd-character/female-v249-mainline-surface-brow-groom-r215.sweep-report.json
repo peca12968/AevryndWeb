@@ -1,0 +1,122 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-converged-upper-lid-r210.blend",
+  "variants": {
+    "a-control": {
+      "fibersPerSide": 0,
+      "rootRadiusMm": 0.0,
+      "lengthScale": 0.0,
+      "layers": {}
+    },
+    "b-light": {
+      "fibersPerSide": 320,
+      "rootRadiusMm": 0.036,
+      "lengthScale": 0.88,
+      "layers": {
+        "Brow_L_SurfaceGroom_R215": {
+          "fibers": 320,
+          "vertices": 3840,
+          "polygons": 3520,
+          "sourceSurfaceAreaM2": 0.00037038122532820393,
+          "rootLiftMm": 0.1,
+          "rootRadiusMm": 0.036,
+          "lengthMm": {
+            "min": 2.4,
+            "mean": 3.445770628209563,
+            "max": 4.194766298977514
+          },
+          "binding": "copied head-bone parent from density surface"
+        },
+        "Brow_R_SurfaceGroom_R215": {
+          "fibers": 320,
+          "vertices": 3840,
+          "polygons": 3520,
+          "sourceSurfaceAreaM2": 0.00036656119833084226,
+          "rootLiftMm": 0.1,
+          "rootRadiusMm": 0.036,
+          "lengthMm": {
+            "min": 2.4,
+            "mean": 3.514386864981553,
+            "max": 4.1919506587166495
+          },
+          "binding": "copied head-bone parent from density surface"
+        }
+      }
+    },
+    "c-balanced": {
+      "fibersPerSide": 480,
+      "rootRadiusMm": 0.032,
+      "lengthScale": 1.0,
+      "layers": {
+        "Brow_L_SurfaceGroom_R215": {
+          "fibers": 480,
+          "vertices": 5760,
+          "polygons": 5280,
+          "sourceSurfaceAreaM2": 0.00037038122532820393,
+          "rootLiftMm": 0.1,
+          "rootRadiusMm": 0.032,
+          "lengthMm": {
+            "min": 2.45847619912265,
+            "mean": 3.93257422981817,
+            "max": 4.728738338063037
+          },
+          "binding": "copied head-bone parent from density surface"
+        },
+        "Brow_R_SurfaceGroom_R215": {
+          "fibers": 480,
+          "vertices": 5760,
+          "polygons": 5280,
+          "sourceSurfaceAreaM2": 0.00036656119833084226,
+          "rootLiftMm": 0.1,
+          "rootRadiusMm": 0.032,
+          "lengthMm": {
+            "min": 2.4,
+            "mean": 3.9651455252660783,
+            "max": 4.725538746857509
+          },
+          "binding": "copied head-bone parent from density surface"
+        }
+      }
+    },
+    "d-dense": {
+      "fibersPerSide": 650,
+      "rootRadiusMm": 0.028,
+      "lengthScale": 1.0,
+      "layers": {
+        "Brow_L_SurfaceGroom_R215": {
+          "fibers": 650,
+          "vertices": 7800,
+          "polygons": 7150,
+          "sourceSurfaceAreaM2": 0.00037038122532820393,
+          "rootLiftMm": 0.1,
+          "rootRadiusMm": 0.028,
+          "lengthMm": {
+            "min": 2.45847619912265,
+            "mean": 3.9705283540295833,
+            "max": 4.728738338063037
+          },
+          "binding": "copied head-bone parent from density surface"
+        },
+        "Brow_R_SurfaceGroom_R215": {
+          "fibers": 650,
+          "vertices": 7800,
+          "polygons": 7150,
+          "sourceSurfaceAreaM2": 0.00036656119833084226,
+          "rootLiftMm": 0.1,
+          "rootRadiusMm": 0.028,
+          "lengthMm": {
+            "min": 2.4,
+            "mean": 3.9859612082659233,
+            "max": 4.725538746857509
+          },
+          "binding": "copied head-bone parent from density surface"
+        }
+      }
+    }
+  },
+  "status": "REJECT_ALL_OVER_REGULAR_DIRECTION_FIELD",
+  "visualReview": {
+    "closeRange": "All generated variants show overly parallel fibers and an artificial brush-like medial brow; density increases without human irregularity.",
+    "normalDistance": "The added fibers do not materially improve facial realism or expression readability over the r210 control.",
+    "decision": "Do not promote or build a candidate from r215. Replace surface-normal inference with an authored anatomical growth field and shorter irregular micro-fibers."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-converged-upper-lid-r210.blend",
+  "variants": {
+    "a-control": {
+      "material": "Aevrynd_Skin_Layered_v249r173",
+      "settings": "r210-control"
+    },
+    "b-readable-dry": {
+      "material": "Aevrynd_Skin_Optics_R219_b-readable-dry",
+      "settings": {
+        "roughnessScale": 0.92,
+        "sssWeight": 0.025,
+        "sssScale": 0.0014,
+        "specular": 0.24,
+        "bump": 0.15,
+        "coat": 0.01
+      }
+    },
+    "c-balanced": {
+      "material": "Aevrynd_Skin_Optics_R219_c-balanced",
+      "settings": {
+        "roughnessScale": 0.82,
+        "sssWeight": 0.055,
+        "sssScale": 0.0016,
+        "specular": 0.28,
+        "bump": 0.145,
+        "coat": 0.016
+      }
+    },
+    "d-cinematic": {
+      "material": "Aevrynd_Skin_Optics_R219_d-cinematic",
+      "settings": {
+        "roughnessScale": 0.72,
+        "sssWeight": 0.085,
+        "sssScale": 0.0018,
+        "specular": 0.32,
+        "bump": 0.16,
+        "coat": 0.024
+      }
+    }
+  },
+  "status": "REJECT_ALL_PLASTIC_OILY_RESPONSE",
+  "visualReview": {
+    "control": "The r210 control remains the least artificial under the fixed close camera.",
+    "variants": "Lower roughness reveals pores but creates broad oily highlights; increased specular, coat, and SSS read as plastic rather than skin.",
+    "decision": "Do not promote. A better facial base/topology and texture acquisition pipeline is required before further optical tuning."
+  }
+}

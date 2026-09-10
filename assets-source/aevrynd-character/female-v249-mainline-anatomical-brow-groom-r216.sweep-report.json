@@ -1,0 +1,152 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-converged-upper-lid-r210.blend",
+  "variants": {
+    "a-control": {
+      "fibersPerSide": 0,
+      "rootRadiusMm": 0.0,
+      "lengthScale": 0.0,
+      "materialAlpha": 0.0,
+      "directionJitter": 0.0,
+      "keepsOriginalFibers": true,
+      "layers": {}
+    },
+    "b-soft-microfill": {
+      "fibersPerSide": 160,
+      "rootRadiusMm": 0.018,
+      "lengthScale": 0.46,
+      "materialAlpha": 0.58,
+      "directionJitter": 0.35,
+      "keepsOriginalFibers": true,
+      "layers": {
+        "Brow_L_AnatomicalGroom_R216": {
+          "fibers": 160,
+          "vertices": 1920,
+          "polygons": 1760,
+          "sourceSurfaceAreaM2": 0.00037038122532820393,
+          "rootLiftMm": 0.1,
+          "rootRadiusMm": 0.018,
+          "materialAlpha": 0.58,
+          "directionJitter": 0.35,
+          "keepsOriginalFibers": true,
+          "lengthMm": {
+            "min": 1.2,
+            "mean": 1.8047089767253843,
+            "max": 2.3258641621781826
+          },
+          "binding": "copied head-bone parent from density surface"
+        },
+        "Brow_R_AnatomicalGroom_R216": {
+          "fibers": 160,
+          "vertices": 1920,
+          "polygons": 1760,
+          "sourceSurfaceAreaM2": 0.00036656119833084226,
+          "rootLiftMm": 0.1,
+          "rootRadiusMm": 0.018,
+          "materialAlpha": 0.58,
+          "directionJitter": 0.35,
+          "keepsOriginalFibers": true,
+          "lengthMm": {
+            "min": 1.2,
+            "mean": 1.8439667926638552,
+            "max": 2.3243923502236394
+          },
+          "binding": "copied head-bone parent from density surface"
+        }
+      }
+    },
+    "c-irregular-microfill": {
+      "fibersPerSide": 240,
+      "rootRadiusMm": 0.017,
+      "lengthScale": 0.52,
+      "materialAlpha": 0.52,
+      "directionJitter": 0.55,
+      "keepsOriginalFibers": true,
+      "layers": {
+        "Brow_L_AnatomicalGroom_R216": {
+          "fibers": 240,
+          "vertices": 2880,
+          "polygons": 2640,
+          "sourceSurfaceAreaM2": 0.00037038122532820393,
+          "rootLiftMm": 0.1,
+          "rootRadiusMm": 0.017,
+          "materialAlpha": 0.52,
+          "directionJitter": 0.55,
+          "keepsOriginalFibers": true,
+          "lengthMm": {
+            "min": 1.2,
+            "mean": 2.0307147390777662,
+            "max": 2.592850181720944
+          },
+          "binding": "copied head-bone parent from density surface"
+        },
+        "Brow_R_AnatomicalGroom_R216": {
+          "fibers": 240,
+          "vertices": 2880,
+          "polygons": 2640,
+          "sourceSurfaceAreaM2": 0.00036656119833084226,
+          "rootLiftMm": 0.1,
+          "rootRadiusMm": 0.017,
+          "materialAlpha": 0.52,
+          "directionJitter": 0.55,
+          "keepsOriginalFibers": true,
+          "lengthMm": {
+            "min": 1.2,
+            "mean": 2.0710737290035026,
+            "max": 2.5911863942940694
+          },
+          "binding": "copied head-bone parent from density surface"
+        }
+      }
+    },
+    "d-short-replacement": {
+      "fibersPerSide": 420,
+      "rootRadiusMm": 0.022,
+      "lengthScale": 0.62,
+      "materialAlpha": 0.72,
+      "directionJitter": 0.42,
+      "keepsOriginalFibers": false,
+      "layers": {
+        "Brow_L_AnatomicalGroom_R216": {
+          "fibers": 420,
+          "vertices": 5040,
+          "polygons": 4620,
+          "sourceSurfaceAreaM2": 0.00037038122532820393,
+          "rootLiftMm": 0.1,
+          "rootRadiusMm": 0.022,
+          "materialAlpha": 0.72,
+          "directionJitter": 0.42,
+          "keepsOriginalFibers": false,
+          "lengthMm": {
+            "min": 1.441877711891202,
+            "mean": 2.4321323906707706,
+            "max": 3.03782688095888
+          },
+          "binding": "copied head-bone parent from density surface"
+        },
+        "Brow_R_AnatomicalGroom_R216": {
+          "fibers": 420,
+          "vertices": 5040,
+          "polygons": 4620,
+          "sourceSurfaceAreaM2": 0.00036656119833084226,
+          "rootLiftMm": 0.1,
+          "rootRadiusMm": 0.022,
+          "materialAlpha": 0.72,
+          "directionJitter": 0.42,
+          "keepsOriginalFibers": false,
+          "lengthMm": {
+            "min": 1.3833229615100728,
+            "mean": 2.470087818436681,
+            "max": 3.0358431344114525
+          },
+          "binding": "copied head-bone parent from density surface"
+        }
+      }
+    }
+  },
+  "status": "REJECT_ALL_INSUFFICIENT_VISIBLE_REALISM_GAIN",
+  "visualReview": {
+    "closeRange": "The two micro-fill variants reduce the brush-like failure from r215 but remain visually subordinate to the existing long regular fibers. The replacement variant is still too uniform.",
+    "normalDistance": "No variant produces a material improvement in facial realism or expression readability.",
+    "decision": "Do not create a promoted blend candidate. Preserve r210 brows and move effort to higher-impact orbital, nasal, and perioral form."
+  }
+}
