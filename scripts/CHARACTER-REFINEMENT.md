@@ -625,3 +625,10 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - r83 沿 r67 的實際杏仁眼裂曲線建立上／下眼緣 topology shape key；掃描上移 0.45／0.75／1.05mm 與下移 0.35／0.55／0.75mm 後選擇中組。`Aevrynd_EyeAperture_Topology_R83` 修改 661 個頂點，最大實際位移 0.713mm，使垂直眼裂明顯增加但仍保留虹膜覆蓋和杏仁形。
 - 原 r74 睫毛高度已不再相符；r83 從套用 r80、r83 shape key 後的 evaluated body BVH 重新射線生成左右各 38 根上睫毛，76／76 根全部命中，保留 100% head 權重與 Armature modifier。兩個已隱藏且由身體眼瞼取代的舊 `UpperFold` 網格移除，雙眼光學層再一致後移 0.08mm。
 - `female-v249-mainline-eye-aperture-r83.collision-audit.json` 相對 r80 在 frame 1／20 保持臉部自交 95／91、睫毛 0／0；左虹膜由 26／26 降至 0／0、左鞏膜由 60／59 降至 41／41、左角膜由 174／174 降至 170／170，右角膜由 162／160 降至 154／156，且無衣物、口腔或唇部回歸。五狀態動態毛髮共 1,500,400 點為 0 違規，完整 11 視角無新破面。嚴格整體暫評約 53/100；r83 升為眼部技術候選，仍不取代 r38 視覺整合基準或網站 v83。
+
+## v249 主線毛髮可見層修復 r84
+
+- r84 稽核 r83 場景後發現 18 個毛髮相關物件同時可見：除了 v249 的 14,396 根主髮、608 根後頸補髮、根部陰影與可見分線，完整 v378 groom 及 12 個舊 card／fiber／scalp 世代也被重複疊上。根因是後續臉部診斷腳本為 face-only 暫時隱藏所有毛髮，完成後卻將每個歷史物件一律設回可見。
+- `aevrynd-female-authoring-v249-mainline-hair-cleanup-r84.blend` 保留四個正式分層：`hair.guide_follow.main`、`hair.nape.fiber-underlayer`、`hair.scalp.root_shadow`、`hair.scalp.visible_part`；其餘 14 個歷史／LOD 物件保留在檔案中供追溯，但 render 與 viewport 均隱藏。這次不修改任何幾何，避免把去重與造型改動混在同一版本。
+- r84 相對 r83 的 frame 1／20 臉部靜態稽核沒有新增相交，`female-v249-mainline-hair-cleanup-r84.collision-audit.json` 為 PASS；沿用 r46 動態狀態檢查 5×300,080、共 1,500,400 個髮點，對人體與三層衣物仍為 0 違規。完整 11 視角已輸出到 `review-11shot-v249-mainline-hair-cleanup-r84`。
+- 去重後安全帽式雙層厚度下降，頭皮分線與臉部輪廓較清楚；但嚴格視覺仍不合格：前額髮束呈平行線片、髮尾鋸齒且密度同步、後視輪廓近似整片布幕，缺乏 primary guide、clump、follow 與 flyaway 的自然層級。r84 只升為毛髮技術候選，不取代 r38 整體視覺基準、不進網站；後續 builder 必須保存並還原每個物件原本的可見狀態，不能再把所有歷史毛髮設為可見。

@@ -2,8 +2,8 @@
   "mainline": "v249",
   "parent": "aevrynd-female-authoring-v249.blend",
   "visualIntegrationBaseline": "aevrynd-female-authoring-v249-mainline-face-r38.blend",
-  "latestHairTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-hair-r46.blend",
-  "latestHairCandidateStatus": "collision-safe technique evidence; visually not promoted",
+  "latestHairTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-hair-cleanup-r84.blend",
+  "latestHairCandidateStatus": "restores the intended four-layer v249 groom by hiding 14 historical hair/card/LOD objects that later face-review scripts accidentally re-enabled; static face regression and five-state 1,500,400-point dynamic collision audits pass, but hairline flow, clump hierarchy, tips, and silhouette remain below the strict visual bar, so it is not promoted",
   "latestEyeTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-eye-aperture-r83.blend",
   "latestEyeCandidateStatus": "editable upper/lower aperture shape key opens the vertical eye contour and regenerates 76 upper lashes from the evaluated skin surface; frame 1/20 static, 11-shot, and five-state dynamic audits pass while iris, sclera, and cornea overlaps decrease, but strict overall review remains about 53/100, so it is not promoted",
   "latestFaceTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-philtrum-r80.blend",
@@ -15,6 +15,7 @@
   "publicWebsiteAsset": "v83",
   "publicWebsiteReplacementApproved": false,
   "nextRequiredWork": [
+    "preserve exact per-object hair visibility state in all future review builders",
     "rebuild scalp root regions on v249",
     "author sparse primary guides",
     "generate separate clump, follow, and flyaway layers",
