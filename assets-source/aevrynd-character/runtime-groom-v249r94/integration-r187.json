@@ -1,0 +1,59 @@
+{
+  "candidate": "assets-source/aevrynd-character/aevrynd-female-authoring-v249-mainline-anatomical-hairline-fade-r187.blend",
+  "runtimeManifest": "assets-source/aevrynd-character/runtime-groom-v249r94/manifest.json",
+  "format": "aevrynd-runtime-groom-v1",
+  "runtimeDependency": "none",
+  "mapping": [
+    {
+      "object": "AevryndFemaleCC0LongHairStudyMain_v249r85",
+      "authoredLayer": "hair.follow.long.main",
+      "runtimeLayer": "hair.cc0-baked.main",
+      "curveCount": 11193,
+      "pointCount": 211265,
+      "simulated": true
+    },
+    {
+      "object": "AevryndFemaleCC0LongHairStudyFlyaway_v249r85",
+      "authoredLayer": "hair.flyaway.long.independent",
+      "runtimeLayer": "hair.cc0-baked.flyaway",
+      "curveCount": 30,
+      "pointCount": 360,
+      "simulated": true
+    },
+    {
+      "object": "AevryndFemaleDeformMatchedScalp_v249r163",
+      "authoredLayer": "hair.scalp.foundation",
+      "pointCount": 2626,
+      "simulated": false,
+      "binding": "body-derived weights plus Armature deformation"
+    }
+  ],
+  "solver": {
+    "guideCount": 222,
+    "fixedStepHz": 120,
+    "damping": 0.09,
+    "bendCompliance": 4e-7,
+    "collisionMarginM": 0.0015,
+    "rootBinding": "fixed moving anchors",
+    "forces": [
+      "gravity",
+      "wind",
+      "anchor acceleration"
+    ],
+    "constraints": [
+      "stretch",
+      "bend",
+      "rest-shape recovery",
+      "head/neck/shoulder/chest proxy collision",
+      "mesh-audited follower contact lock"
+    ]
+  },
+  "evidence": {
+    "authoredGeometryParity": "assets-source/aevrynd-character/female-v249-mainline-anatomical-hairline-fade-r187.hair-parity.json",
+    "staticAndPoseCollision": "assets-source/aevrynd-character/female-v249-mainline-anatomical-hairline-fade-r187.collision-audit.json",
+    "fiveStateDynamicMeshCollision": "assets-source/aevrynd-character/runtime-groom-v249r94/dynamic-mesh-collision-audit-r187.json",
+    "motionQuality": "assets-source/aevrynd-character/runtime-groom-v249r94/motion-audit-r187.json",
+    "performance": "assets-source/aevrynd-character/runtime-groom-v249r94/performance-profile-r129.json"
+  },
+  "status": "AUTHORING_TECHNICAL_CANDIDATE_NOT_WEBSITE_ASSET"
+}

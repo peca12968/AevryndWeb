@@ -1,0 +1,53 @@
+{
+  "candidate": "r187",
+  "runtimeGroom": "assets-source/aevrynd-character/runtime-groom-v249r94",
+  "guideCount": 222,
+  "renderedCurveCount": 11223,
+  "fixedStepHz": 120,
+  "states": [
+    {
+      "frame": 12,
+      "yawDeg": 17.119017293312766,
+      "rootMaxErrorM": 0,
+      "meanMidLagM": 0.004162273537847012,
+      "meanTipLagM": 0.013078792217636649
+    },
+    {
+      "frame": 24,
+      "yawDeg": 10.58013454126452,
+      "rootMaxErrorM": 0,
+      "meanMidLagM": 0.0027158286741095806,
+      "meanTipLagM": 0.008424580503013633
+    },
+    {
+      "frame": 36,
+      "yawDeg": -10.580134541264513,
+      "rootMaxErrorM": 0,
+      "meanMidLagM": 0.0042968510128905115,
+      "meanTipLagM": 0.014539443694841087
+    },
+    {
+      "frame": 60,
+      "yawDeg": -2.039594003153273e-14,
+      "rootMaxErrorM": 0,
+      "meanMidLagM": 0.0030706446120262357,
+      "meanTipLagM": 0.009416580737963696
+    }
+  ],
+  "peakRootErrorM": 0,
+  "peakMidLagM": 0.0042968510128905115,
+  "peakTipLagM": 0.014539443694841087,
+  "tipToMidLagRatio": 3.3837439676690897,
+  "settleFrames": 180,
+  "settleTipMeanErrorM": 0.000031428122173493644,
+  "finite": true,
+  "thresholds": {
+    "maximumRootTrackingErrorM": 1e-8,
+    "minimumPeakTipLagM": 0.002,
+    "maximumPeakTipLagM": 0.09,
+    "minimumTipToMidLagRatio": 1.05,
+    "maximumSettleTipMeanErrorM": 0.006
+  },
+  "failures": [],
+  "status": "PASS"
+}
