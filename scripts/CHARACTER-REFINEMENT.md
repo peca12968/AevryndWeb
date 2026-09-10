@@ -903,3 +903,7 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - r222 verifies that multiplying the existing skin base color cannot produce a useful lip response.
 - r223 replaces multiplication with a controlled target-color mix and establishes a visible range. It remains lower-lip dominant because the current upper vermilion surface is too flat; the strong range reads as paint. No material variant is promoted.
 - The next mouth pass must define the upper vermilion border and volume on the continuous body before adding regional color. Detached legacy shells remain hidden.
+- r224 defines separate anatomical upper/lower vermilion bands, but a full-strength mask diagnostic exposes coarse triangle interpolation and the normal variants still emphasize the lower lip.
+- r225 moves the upper band by up to 2.365 mm; strict close-up review rejects the swollen ridge because it does not form a natural vermilion plane.
+- r226 bakes the authoring shape stack, locally subdivides the mouth region from 41,692 to 47,497 vertices, preserves all 21 armature groups with zero unweighted vertices, and sculpts the denser band. It is rejected before collision testing because the rectangular subdivision boundary produces visible mouth-corner and nasolabial shading dents.
+- The next topology pass must follow continuous perioral edge rings and relax the transition boundary before any anatomical sculpt or texture bake.

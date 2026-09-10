@@ -1,0 +1,53 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-converged-upper-lid-r210.blend",
+  "targetColorLinear": [
+    0.42,
+    0.105,
+    0.085,
+    1.0
+  ],
+  "variants": {
+    "a-control": {
+      "mixStrength": 0.0,
+      "material": "Aevrynd_Skin_Layered_v249r173"
+    },
+    "b-natural": {
+      "mixStrength": 0.24,
+      "material": "Aevrynd_Skin_AnatomicalVermilion_R224_b-natural",
+      "verticesTinted": {
+        "upper": 762,
+        "lower": 371
+      },
+      "maximumMixFactor": {
+        "upper": 0.24,
+        "lower": 0.24
+      }
+    },
+    "c-balanced": {
+      "mixStrength": 0.38,
+      "material": "Aevrynd_Skin_AnatomicalVermilion_R224_c-balanced",
+      "verticesTinted": {
+        "upper": 763,
+        "lower": 372
+      },
+      "maximumMixFactor": {
+        "upper": 0.38,
+        "lower": 0.38
+      }
+    },
+    "d-strong": {
+      "mixStrength": 0.58,
+      "material": "Aevrynd_Skin_AnatomicalVermilion_R224_d-strong",
+      "verticesTinted": {
+        "upper": 765,
+        "lower": 372
+      },
+      "maximumMixFactor": {
+        "upper": 0.58,
+        "lower": 0.58
+      }
+    }
+  },
+  "status": "REJECTED_VERTEX_INTERPOLATION_BOUNDARY_TOO_COARSE",
+  "review": "The anatomical bands select both lips, but a direct mask debug exposes triangle-shaped interpolation boundaries on the existing mouth topology. Normal-strength variants still read mainly on the lower lip. No variant is promoted."
+}

@@ -1,0 +1,49 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-converged-upper-lid-r210.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-local-mouth-retopology-r226.blend",
+  "sourceShapeKeysApplied": [
+    "Basis",
+    "Aevrynd_Philtrum_Topology_R80",
+    "Aevrynd_EyeAperture_Topology_R83",
+    "Aevrynd_EvaluatedAnatomicalLids_R183",
+    "Aevrynd_MouthPlacement_R198_5mm",
+    "Aevrynd_ConvergedUpperLid_R210"
+  ],
+  "topology": {
+    "verticesBefore": 41692,
+    "polygonsBefore": 41490,
+    "selectedFaces": 1901,
+    "selectedEdges": 3904,
+    "newVerticesReported": 5805,
+    "verticesAfter": 47497,
+    "polygonsAfter": 47239
+  },
+  "sculpt": {
+    "verticesMoved": 2943,
+    "upperVerticesMoved": 2943,
+    "cornerVerticesMoved": 230,
+    "maximumDeltaMm": 1.279060553894358
+  },
+  "material": {
+    "attribute": "AevryndAnatomicalVermilionR226",
+    "verticesTinted": {
+      "upper": 3038,
+      "lower": 1484
+    },
+    "mixStrength": 0.36,
+    "targetColorLinear": [
+      0.42,
+      0.105,
+      0.085,
+      1.0
+    ]
+  },
+  "weights": {
+    "vertexGroups": 21,
+    "unweightedVertices": 0,
+    "minimumWeightSum": 0.9999998382336344
+  },
+  "legacyMouthAccessoriesVisible": false,
+  "status": "REJECTED_VISUAL_BOUNDARY_ARTIFACTS_BEFORE_COLLISION_AUDIT",
+  "review": "Local subdivision adds 5,805 vertices and preserves complete armature weights, proving the technical path is viable. The rectangular selection boundary creates visible shading dents near the commissure and nasolabial region, while the upper lip still lacks a clean plane. Collision audit is intentionally not run because the candidate already fails visual review."
+}
