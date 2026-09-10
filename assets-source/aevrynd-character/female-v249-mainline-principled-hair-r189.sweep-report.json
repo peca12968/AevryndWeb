@@ -1,0 +1,33 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-anatomical-hairline-fade-r187.blend",
+  "geometryChanged": false,
+  "variants": [
+    {
+      "name": "a-control",
+      "control": true
+    },
+    {
+      "name": "b-hair-balanced",
+      "roughness": 0.38,
+      "radial": 0.48,
+      "coat": 0.08,
+      "random_roughness": 0.08
+    },
+    {
+      "name": "c-hair-soft",
+      "roughness": 0.48,
+      "radial": 0.58,
+      "coat": 0.04,
+      "random_roughness": 0.13
+    },
+    {
+      "name": "d-hair-dry",
+      "roughness": 0.58,
+      "radial": 0.68,
+      "coat": 0.02,
+      "random_roughness": 0.18
+    }
+  ],
+  "verdict": "REJECT_ALL",
+  "reason": "Blender 5.2 EEVEE renders the node but loses useful directional shading and becomes flat brown"
+}

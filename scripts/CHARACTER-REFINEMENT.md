@@ -853,3 +853,12 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - 五個狀態每個都以 224,460 個 runtime 髮點和 2,626 個 deform-matched scalp 點對 r187 的實際人體、上衣、包邊與短褲網格逐點稽核，全部零穿模。這個結果同時覆蓋代理碰撞後的真實網格誤差。
 - 運動品質量測為根部最大追蹤誤差 0m、平均髮尾峰值延遲 0.014539m、髮尾／中段延遲比 3.383744；停止風力並回正 180 幀後，平均髮尾與穩態只差 0.000031m。所有值通過有限值、根固定、最小／最大擺幅、長度方向慣性梯度與回穩門檻。
 - `runtime-groom-v249r94/integration-r187.json` 固化 Blender 物件、authoring layer、runtime layer、solver 參數與五份證據的對應。r187 現已通過離線動態技術關卡；後續重建 primary clumps 時必須重新匯出 follow mapping 並重跑同一組動態、真實網格碰撞與效能稽核。
+
+## v249 主線 runtime family 聚束、Hair BSDF 與 EEVEE satin 分支 r188–r192
+
+- r188 使用現有 runtime `follow-guide.u16`，把 11,193 根主髮依 192 個有效 guide families 分組，測試 0.18／0.32／0.46 的中段聚束；根點最大位移皆為 0。light／balanced 雖使線條略整齊，仍未解除細濕髮感；strong 已形成黏連厚片，三組全數判退，不建立候選 `.blend`。
+- r189 將 EEVEE 輸出直接改接 Blender 5.2 `Principled Hair BSDF`，比較 roughness 0.38／0.48／0.58。節點可正常渲染，但三組都失去現有支路的方向性明暗，整片成為平坦棕色，因此不能直接作為 Aevrynd 即時材質。
+- r190 完整盤點 r129 官方 CC0 衍生節點群。現有 EEVEE 支路以 layered root／random color 驅動一般 Principled surface，原始值為 metallic 0.786、roughness 0.5、SSS 1.0，並疊加 Translucent；這解釋了背光下的濕亮細線。Cycles 支路則仍保留 Principled Hair，只作離線參考。
+- r191 保留雙色、根部加深、隨機色、噪聲與 alpha 流程，只掃描 EEVEE surface lobe。`satin`（metallic 0.62、roughness 0.58、SSS 0.18、specular IOR level 0.28、anisotropic 0.42、coat 0.025／roughness 0.48）在正面維持深棕層次，並在背面減少大片過曝白線；更低反光組開始灰霧化，故選 satin。
+- r192 將 satin 固化為 `AevryndOwnedSatinHairMaterial_v249r192`。主髮與 flyaway 的曲線拓撲、全部點座標和 point-domain float attributes 在修改前後 SHA-256 完全一致；完整 11 視角通過材質穩定檢查。因碰撞幾何、根點、骨架及 runtime mapping 未變，r187 的 frame 1／20 零穿模、五個動態狀態零 mesh collision、0 根部追蹤誤差、14.539mm 峰值平均髮尾延遲與 0.031mm 回穩誤差仍可直接套用。
+- 嚴格毛髮分數由 r187 約 52／100 提升到 r192 約 54／100。這次只解決一部分過曝與濕亮感；過多細且互相交叉的 followers、寬 scalp proxy、缺少可編輯 macro clump hierarchy 仍是主要缺陷。r192 僅升格為毛髮技術候選，網站 v83 不變。

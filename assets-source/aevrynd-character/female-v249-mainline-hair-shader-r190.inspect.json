@@ -1,0 +1,982 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-anatomical-hairline-fade-r187.blend",
+  "material": "AevryndOwnedLayeredHairMaterial_v249r129",
+  "group": "Hair shader EEVEE",
+  "groupInputs": {
+    "Color 1": "bpy.data.materials['AevryndOwnedLayeredHairMaterial_v249r129'].node_tree.nodes[\"Group\"].inputs[0].default_value",
+    "Color 2": "bpy.data.materials['AevryndOwnedLayeredHairMaterial_v249r129'].node_tree.nodes[\"Group\"].inputs[1].default_value",
+    "Darken root": "0.6313559412956238",
+    "Root color length": "0.3220338821411133",
+    "Random color": "0.44999998807907104",
+    "Noise Scale": "18.799999237060547"
+  },
+  "nodes": [
+    {
+      "name": "Frame.001",
+      "type": "NodeFrame",
+      "inputs": {}
+    },
+    {
+      "name": "Frame",
+      "type": "NodeFrame",
+      "inputs": {}
+    },
+    {
+      "name": "Frame.002",
+      "type": "NodeFrame",
+      "inputs": {}
+    },
+    {
+      "name": "Frame.005",
+      "type": "NodeFrame",
+      "inputs": {}
+    },
+    {
+      "name": "Frame.006",
+      "type": "NodeFrame",
+      "inputs": {}
+    },
+    {
+      "name": "Frame.007",
+      "type": "NodeFrame",
+      "inputs": {}
+    },
+    {
+      "name": "Frame.003",
+      "type": "NodeFrame",
+      "inputs": {}
+    },
+    {
+      "name": "Frame.004",
+      "type": "NodeFrame",
+      "inputs": {}
+    },
+    {
+      "name": "Reroute",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Reroute.003",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Mix",
+      "type": "ShaderNodeMix",
+      "inputs": {
+        "Factor": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "B": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Hue Saturation Value",
+      "type": "ShaderNodeHueSaturation",
+      "inputs": {
+        "Hue": 0.5,
+        "Saturation": 1.0,
+        "Value": 2.0,
+        "Factor": 0.8846153616905212
+      }
+    },
+    {
+      "name": "Curves Info",
+      "type": "ShaderNodeHairInfo",
+      "inputs": {}
+    },
+    {
+      "name": "Reroute.004",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Reroute.005",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Reroute.006",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Map Range.003",
+      "type": "ShaderNodeMapRange",
+      "inputs": {
+        "From Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "From Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "To Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "To Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Steps": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Reroute.007",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Map Range.004",
+      "type": "ShaderNodeMapRange",
+      "inputs": {
+        "From Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "From Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "To Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "To Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Steps": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Math.001",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Math.002",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Math.003",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Curves Info.004",
+      "type": "ShaderNodeHairInfo",
+      "inputs": {}
+    },
+    {
+      "name": "Math.004",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Translucent BSDF",
+      "type": "ShaderNodeBsdfTranslucent",
+      "inputs": {
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Weight": 0.0
+      }
+    },
+    {
+      "name": "Hue Saturation Value.001",
+      "type": "ShaderNodeHueSaturation",
+      "inputs": {
+        "Hue": 0.5,
+        "Saturation": 1.0,
+        "Value": 0.25,
+        "Factor": 1.0
+      }
+    },
+    {
+      "name": "Reroute.009",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Reroute.010",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Reroute.011",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Math.007",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Curves Info.002",
+      "type": "ShaderNodeHairInfo",
+      "inputs": {}
+    },
+    {
+      "name": "Math.005",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Math.006",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Principled BSDF",
+      "type": "ShaderNodeBsdfPrincipled",
+      "inputs": {
+        "Metallic": 0.7863636612892151,
+        "Roughness": 0.5,
+        "IOR": 1.4500000476837158,
+        "Thin Wall": false,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Weight": 0.0,
+        "Diffuse Roughness": 0.0,
+        "Subsurface Weight": 1.0,
+        "Subsurface Radius": [
+          1.0,
+          0.8500000238418579,
+          0.699999988079071
+        ],
+        "Subsurface Scale": 0.9818182587623596,
+        "Subsurface IOR": 1.399999976158142,
+        "Subsurface Anisotropy": 0.0,
+        "Specular IOR Level": 0.5,
+        "Specular Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Anisotropic": 0.0,
+        "Anisotropic Rotation": 0.0,
+        "Tangent": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Transmission Weight": 0.0,
+        "Coat IOR": 1.2000000476837158,
+        "Coat Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Coat Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Sheen Weight": 0.0,
+        "Sheen Roughness": 0.5,
+        "Sheen Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "Emission Strength": 1.0,
+        "Thin Film Thickness": 0.0,
+        "Thin Film IOR": 1.3300000429153442
+      }
+    },
+    {
+      "name": "ColorRamp",
+      "type": "ShaderNodeValToRGB",
+      "inputs": {}
+    },
+    {
+      "name": "Math.009",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Reroute.012",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Reroute.013",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Math.008",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Group Input.002",
+      "type": "NodeGroupInput",
+      "inputs": {}
+    },
+    {
+      "name": "Add Shader",
+      "type": "ShaderNodeAddShader",
+      "inputs": {}
+    },
+    {
+      "name": "Group Output",
+      "type": "NodeGroupOutput",
+      "inputs": {}
+    },
+    {
+      "name": "Mix.001",
+      "type": "ShaderNodeMix",
+      "inputs": {
+        "Factor": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "B": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Reroute.015",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Reroute.001",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Hue Saturation Value.002",
+      "type": "ShaderNodeHueSaturation",
+      "inputs": {
+        "Hue": 0.5,
+        "Saturation": 1.25,
+        "Value": 0.75,
+        "Factor": 1.0
+      }
+    },
+    {
+      "name": "Reroute.002",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Principled Hair BSDF.001",
+      "type": "ShaderNodeBsdfHairPrincipled",
+      "inputs": {
+        "Melanin": 0.20454543828964233,
+        "Melanin Redness": 0.0,
+        "Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Absorption Coefficient": [
+          0.24553099274635315,
+          0.5199999809265137,
+          1.3650000095367432
+        ],
+        "Aspect Ratio": 0.8500000238418579,
+        "Roughness": 0.30000001192092896,
+        "Radial Roughness": 0.5,
+        "Coat": 0.4000000059604645,
+        "IOR": 1.5499999523162842,
+        "Offset": 0.03490658476948738,
+        "Random Color": 0.0,
+        "Random Roughness": 0.30000001192092896,
+        "Random": 0.0,
+        "Weight": 0.0,
+        "Reflection": 1.0,
+        "Transmission": 1.0,
+        "Secondary Reflection": 1.0
+      }
+    },
+    {
+      "name": "Noise Texture.001",
+      "type": "ShaderNodeTexNoise",
+      "inputs": {
+        "W": 0.0,
+        "Detail": 1.0,
+        "Roughness": 0.14999999105930328,
+        "Lacunarity": 2.0,
+        "Offset": 0.0,
+        "Gain": 1.0,
+        "Distortion": 0.0
+      }
+    },
+    {
+      "name": "Mix.002",
+      "type": "ShaderNodeMix",
+      "inputs": {
+        "Factor": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "B": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Map Range.002",
+      "type": "ShaderNodeMapRange",
+      "inputs": {
+        "From Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "From Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "To Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "To Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Steps": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "Curves Info.003",
+      "type": "ShaderNodeHairInfo",
+      "inputs": {}
+    },
+    {
+      "name": "Map Range",
+      "type": "ShaderNodeMapRange",
+      "inputs": {
+        "From Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "To Min": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "To Max": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Steps": [
+          4.0,
+          4.0,
+          4.0
+        ],
+        "Vector": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "From Max": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "name": "ColorRamp.002",
+      "type": "ShaderNodeValToRGB",
+      "inputs": {}
+    },
+    {
+      "name": "Group Input.001",
+      "type": "NodeGroupInput",
+      "inputs": {}
+    },
+    {
+      "name": "Reroute.008",
+      "type": "NodeReroute",
+      "inputs": {}
+    },
+    {
+      "name": "Attribute",
+      "type": "ShaderNodeAttribute",
+      "inputs": {}
+    },
+    {
+      "name": "Group Input",
+      "type": "NodeGroupInput",
+      "inputs": {}
+    },
+    {
+      "name": "\u6df7\u5408",
+      "type": "ShaderNodeMix",
+      "inputs": {
+        "Factor": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "B": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "links": [
+    {
+      "fromNode": "Reroute.011",
+      "fromSocket": "Output",
+      "toNode": "Math.007",
+      "toSocket": "Value"
+    },
+    {
+      "fromNode": "Reroute.013",
+      "fromSocket": "Output",
+      "toNode": "Mix.002",
+      "toSocket": "A"
+    },
+    {
+      "fromNode": "Attribute",
+      "fromSocket": "Vector",
+      "toNode": "Noise Texture.001",
+      "toSocket": "Vector"
+    },
+    {
+      "fromNode": "Curves Info.004",
+      "fromSocket": "Random",
+      "toNode": "Math.001",
+      "toSocket": "Value"
+    },
+    {
+      "fromNode": "Math.003",
+      "fromSocket": "Value",
+      "toNode": "Math.004",
+      "toSocket": "Value"
+    },
+    {
+      "fromNode": "Reroute.012",
+      "fromSocket": "Output",
+      "toNode": "Mix.002",
+      "toSocket": "B"
+    },
+    {
+      "fromNode": "Map Range.002",
+      "fromSocket": "Result",
+      "toNode": "Mix.002",
+      "toSocket": "Factor"
+    },
+    {
+      "fromNode": "Math.007",
+      "fromSocket": "Value",
+      "toNode": "Math.008",
+      "toSocket": "Value"
+    },
+    {
+      "fromNode": "Math.004",
+      "fromSocket": "Value",
+      "toNode": "Map Range.004",
+      "toSocket": "Value"
+    },
+    {
+      "fromNode": "Math.006",
+      "fromSocket": "Value",
+      "toNode": "Math.009",
+      "toSocket": "Value"
+    },
+    {
+      "fromNode": "Mix.001",
+      "fromSocket": "Result",
+      "toNode": "Hue Saturation Value.001",
+      "toSocket": "Color"
+    },
+    {
+      "fromNode": "Curves Info.002",
+      "fromSocket": "Intercept",
+      "toNode": "Math.005",
+      "toSocket": "Value"
+    },
+    {
+      "fromNode": "Math.002",
+      "fromSocket": "Value",
+      "toNode": "Map Range.003",
+      "toSocket": "Value"
+    },
+    {
+      "fromNode": "Curves Info",
+      "fromSocket": "Random",
+      "toNode": "Mix",
+      "toSocket": "B"
+    },
+    {
+      "fromNode": "Math.009",
+      "fromSocket": "Value",
+      "toNode": "Math.008",
+      "toSocket": "Value"
+    },
+    {
+      "fromNode": "Map Range",
+      "fromSocket": "Result",
+      "toNode": "ColorRamp.002",
+      "toSocket": "Factor"
+    },
+    {
+      "fromNode": "Curves Info.002",
+      "fromSocket": "Random",
+      "toNode": "Reroute.011",
+      "toSocket": "Input"
+    },
+    {
+      "fromNode": "Hue Saturation Value.001",
+      "fromSocket": "Color",
+      "toNode": "Translucent BSDF",
+      "toSocket": "Color"
+    },
+    {
+      "fromNode": "Map Range.003",
+      "fromSocket": "Result",
+      "toNode": "Reroute.004",
+      "toSocket": "Input"
+    },
+    {
+      "fromNode": "Reroute.010",
+      "fromSocket": "Output",
+      "toNode": "Reroute.006",
+      "toSocket": "Input"
+    },
+    {
+      "fromNode": "Curves Info.004",
+      "fromSocket": "Random",
+      "toNode": "Math.003",
+      "toSocket": "Value"
+    },
+    {
+      "fromNode": "Math.001",
+      "fromSocket": "Value",
+      "toNode": "Math.002",
+      "toSocket": "Value"
+    },
+    {
+      "fromNode": "Reroute.006",
+      "fromSocket": "Output",
+      "toNode": "Reroute.005",
+      "toSocket": "Input"
+    },
+    {
+      "fromNode": "Reroute",
+      "fromSocket": "Output",
+      "toNode": "Hue Saturation Value",
+      "toSocket": "Color"
+    },
+    {
+      "fromNode": "Noise Texture.001",
+      "fromSocket": "Factor",
+      "toNode": "Map Range.002",
+      "toSocket": "Value"
+    },
+    {
+      "fromNode": "Mix.002",
+      "fromSocket": "Result",
+      "toNode": "Mix",
+      "toSocket": "A"
+    },
+    {
+      "fromNode": "Principled BSDF",
+      "fromSocket": "BSDF",
+      "toNode": "Add Shader",
+      "toSocket": "Shader"
+    },
+    {
+      "fromNode": "Reroute.004",
+      "fromSocket": "Output",
+      "toNode": "Principled BSDF",
+      "toSocket": "Coat Roughness"
+    },
+    {
+      "fromNode": "Math.008",
+      "fromSocket": "Value",
+      "toNode": "ColorRamp",
+      "toSocket": "Factor"
+    },
+    {
+      "fromNode": "Mix.001",
+      "fromSocket": "Result",
+      "toNode": "Reroute",
+      "toSocket": "Input"
+    },
+    {
+      "fromNode": "ColorRamp.002",
+      "fromSocket": "Color",
+      "toNode": "Mix.001",
+      "toSocket": "B"
+    },
+    {
+      "fromNode": "Reroute.007",
+      "fromSocket": "Output",
+      "toNode": "Principled BSDF",
+      "toSocket": "Coat Weight"
+    },
+    {
+      "fromNode": "Translucent BSDF",
+      "fromSocket": "BSDF",
+      "toNode": "Add Shader",
+      "toSocket": "Shader"
+    },
+    {
+      "fromNode": "Mix",
+      "fromSocket": "Result",
+      "toNode": "Reroute.003",
+      "toSocket": "Input"
+    },
+    {
+      "fromNode": "Reroute.005",
+      "fromSocket": "Output",
+      "toNode": "Principled BSDF",
+      "toSocket": "Alpha"
+    },
+    {
+      "fromNode": "ColorRamp",
+      "fromSocket": "Color",
+      "toNode": "Reroute.010",
+      "toSocket": "Input"
+    },
+    {
+      "fromNode": "Reroute.003",
+      "fromSocket": "Output",
+      "toNode": "Mix.001",
+      "toSocket": "A"
+    },
+    {
+      "fromNode": "Map Range.004",
+      "fromSocket": "Result",
+      "toNode": "Reroute.007",
+      "toSocket": "Input"
+    },
+    {
+      "fromNode": "Math.005",
+      "fromSocket": "Value",
+      "toNode": "Math.006",
+      "toSocket": "Value"
+    },
+    {
+      "fromNode": "Group Input",
+      "fromSocket": "Color 2",
+      "toNode": "Reroute.012",
+      "toSocket": "Input"
+    },
+    {
+      "fromNode": "Group Input",
+      "fromSocket": "Color 1",
+      "toNode": "Reroute.013",
+      "toSocket": "Input"
+    },
+    {
+      "fromNode": "Add Shader",
+      "fromSocket": "Shader",
+      "toNode": "Group Output",
+      "toSocket": "EEVEE Shader"
+    },
+    {
+      "fromNode": "Group Input.001",
+      "fromSocket": "Darken root",
+      "toNode": "Mix.001",
+      "toSocket": "Factor"
+    },
+    {
+      "fromNode": "Group Input.002",
+      "fromSocket": "Random color",
+      "toNode": "Mix",
+      "toSocket": "Factor"
+    },
+    {
+      "fromNode": "Reroute.015",
+      "fromSocket": "Output",
+      "toNode": "Group Output",
+      "toSocket": "Cycles Shader"
+    },
+    {
+      "fromNode": "Mix.001",
+      "fromSocket": "Result",
+      "toNode": "Reroute.001",
+      "toSocket": "Input"
+    },
+    {
+      "fromNode": "Reroute.001",
+      "fromSocket": "Output",
+      "toNode": "Reroute.002",
+      "toSocket": "Input"
+    },
+    {
+      "fromNode": "Hue Saturation Value.002",
+      "fromSocket": "Color",
+      "toNode": "Principled Hair BSDF.001",
+      "toSocket": "Color"
+    },
+    {
+      "fromNode": "Reroute.002",
+      "fromSocket": "Output",
+      "toNode": "Hue Saturation Value.002",
+      "toSocket": "Color"
+    },
+    {
+      "fromNode": "Principled Hair BSDF.001",
+      "fromSocket": "BSDF",
+      "toNode": "Reroute.015",
+      "toSocket": "Input"
+    },
+    {
+      "fromNode": "Curves Info.003",
+      "fromSocket": "Intercept",
+      "toNode": "Map Range",
+      "toSocket": "Value"
+    },
+    {
+      "fromNode": "Group Input.001",
+      "fromSocket": "Root color length",
+      "toNode": "Map Range",
+      "toSocket": "From Max"
+    },
+    {
+      "fromNode": "Reroute.008",
+      "fromSocket": "Output",
+      "toNode": "Noise Texture.001",
+      "toSocket": "Scale"
+    },
+    {
+      "fromNode": "Group Input",
+      "fromSocket": "Noise Scale",
+      "toNode": "Reroute.008",
+      "toSocket": "Input"
+    },
+    {
+      "fromNode": "Reroute",
+      "fromSocket": "Output",
+      "toNode": "\u6df7\u5408",
+      "toSocket": "A"
+    },
+    {
+      "fromNode": "Hue Saturation Value",
+      "fromSocket": "Color",
+      "toNode": "\u6df7\u5408",
+      "toSocket": "B"
+    },
+    {
+      "fromNode": "\u6df7\u5408",
+      "fromSocket": "Result",
+      "toNode": "Principled BSDF",
+      "toSocket": "Base Color"
+    }
+  ]
+}
