@@ -1,0 +1,39 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-guarded-anatomical-lids-r183.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-long-hair-integration-r185.blend",
+  "visibleHairLayers": {
+    "AevryndFemaleCC0LongHairStudyMain_v249r85": {
+      "layer": "hair.follow.long.main",
+      "type": "CURVES",
+      "points": 211265,
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "materials": [
+        "AevryndOwnedLayeredHairMaterial_v249r129"
+      ]
+    },
+    "AevryndFemaleCC0LongHairStudyFlyaway_v249r85": {
+      "layer": "hair.flyaway.long.independent",
+      "type": "CURVES",
+      "points": 360,
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "materials": [
+        "AevryndOwnedLayeredHairMaterial_v249r129"
+      ]
+    },
+    "AevryndFemaleDeformMatchedScalp_v249r163": {
+      "layer": "hair.scalp.foundation",
+      "type": "MESH",
+      "points": 2626,
+      "parent": "AevryndFemaleRig",
+      "parentType": "OBJECT",
+      "materials": [
+        "AevryndDeformMatchedScalpMaterial_v249r163"
+      ]
+    }
+  },
+  "totalVisibleHairPoints": 214251,
+  "runtimeDependency": "none",
+  "status": "STRICT_VISUAL_AND_COLLISION_REVIEW_PENDING"
+}
