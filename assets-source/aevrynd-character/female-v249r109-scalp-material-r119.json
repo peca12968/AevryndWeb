@@ -1,0 +1,1161 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-tear-meniscus-r109.blend",
+  "objects": [
+    {
+      "object": "AevryndFemaleAnatomicalScalpFoundation_v249r101",
+      "type": "MESH",
+      "hideRender": false,
+      "hideViewport": false,
+      "layer": "hair.scalp.anatomical_density_mask",
+      "materials": [
+        {
+          "name": "AevryndAnatomicalScalpFoundationMaterial_v249r101",
+          "surfaceRenderMethod": "DITHERED",
+          "diffuseColor": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "nodes": [
+            {
+              "name": "\u6750\u8cea\u8f38\u51fa",
+              "type": "ShaderNodeOutputMaterial",
+              "inputs": {
+                "Displacement": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Thickness": 0.0
+              }
+            },
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.012000000104308128,
+                  0.00279999990016222,
+                  0.0012000000569969416,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.8799999952316284,
+                "IOR": 1.5,
+                "Thin Wall": 0.0,
+                "Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Radius": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "Subsurface Scale": 0.004999999888241291,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.18000000715255737,
+                "Specular Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Tangent": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Coat Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Coat Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Sheen Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            },
+            {
+              "name": "\u7279\u6027",
+              "type": "ShaderNodeAttribute",
+              "inputs": {}
+            },
+            {
+              "name": "Aevrynd Density Strength",
+              "type": "ShaderNodeMath",
+              "inputs": {
+                "Value": 0.5
+              }
+            }
+          ],
+          "links": [
+            {
+              "fromNode": "\u7279\u6027",
+              "fromSocket": "Factor",
+              "toNode": "Aevrynd Density Strength",
+              "toSocket": "Value"
+            },
+            {
+              "fromNode": "Aevrynd Density Strength",
+              "fromSocket": "Value",
+              "toNode": "\u539f\u5247\u5316 BSDF",
+              "toSocket": "Alpha"
+            },
+            {
+              "fromNode": "\u539f\u5247\u5316 BSDF",
+              "fromSocket": "BSDF",
+              "toNode": "\u6750\u8cea\u8f38\u51fa",
+              "toSocket": "Surface"
+            }
+          ]
+        }
+      ],
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "count": 3946,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "count": 3946,
+          "minimum": null,
+          "maximum": null
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "count": 15366,
+          "minimum": 0.0,
+          "maximum": 3945.0
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "count": 15366,
+          "minimum": 0.0,
+          "maximum": 7787.0
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "count": 3843,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "count": 3843,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "count": 7788,
+          "minimum": 0.0,
+          "maximum": 3945.0
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "count": 7788,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "aevrynd_root_density",
+          "domain": "POINT",
+          "dataType": "FLOAT",
+          "count": 3946,
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      ]
+    },
+    {
+      "object": "AevryndFemaleScalpCoverage_v378",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": true,
+      "layer": "hair.scalp.root_shadow",
+      "materials": [
+        {
+          "name": "Aevrynd_HairRootShadow_v249r6",
+          "surfaceRenderMethod": "DITHERED",
+          "diffuseColor": [
+            0.006000000052154064,
+            0.002199999988079071,
+            0.00139999995008111,
+            1.0
+          ],
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.006000000052154064,
+                  0.002199999988079071,
+                  0.00139999995008111,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.9399999976158142,
+                "IOR": 1.5,
+                "Alpha": 1.0,
+                "Thin Wall": 0.0,
+                "Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Radius": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "Subsurface Scale": 0.004999999888241291,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.05999999865889549,
+                "Specular Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Tangent": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Coat Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Coat Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Sheen Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            },
+            {
+              "name": "\u6750\u8cea\u8f38\u51fa",
+              "type": "ShaderNodeOutputMaterial",
+              "inputs": {
+                "Displacement": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Thickness": 0.0
+              }
+            }
+          ],
+          "links": [
+            {
+              "fromNode": "\u539f\u5247\u5316 BSDF",
+              "fromSocket": "BSDF",
+              "toNode": "\u6750\u8cea\u8f38\u51fa",
+              "toSocket": "Surface"
+            }
+          ]
+        }
+      ],
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "count": 2457,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "count": 2457,
+          "minimum": null,
+          "maximum": null
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "count": 9324,
+          "minimum": 0.0,
+          "maximum": 2456.0
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "count": 9324,
+          "minimum": 0.0,
+          "maximum": 4786.0
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "count": 2331,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "count": 2331,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "count": 4787,
+          "minimum": 0.0,
+          "maximum": 2456.0
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "count": 4787,
+          "minimum": 1.0,
+          "maximum": 1.0
+        }
+      ]
+    },
+    {
+      "object": "AevryndFemaleScalpPart_v249r25",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": true,
+      "layer": "hair.scalp.visible_part",
+      "materials": [
+        {
+          "name": "Aevrynd_ScalpPartSkin_v249r16",
+          "surfaceRenderMethod": "DITHERED",
+          "diffuseColor": [
+            0.05000000074505806,
+            0.012000000104308128,
+            0.006000000052154064,
+            1.0
+          ],
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.05000000074505806,
+                  0.012000000104308128,
+                  0.006000000052154064,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.8999999761581421,
+                "IOR": 1.5,
+                "Alpha": 1.0,
+                "Thin Wall": 0.0,
+                "Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Radius": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "Subsurface Scale": 0.004999999888241291,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.05999999865889549,
+                "Specular Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Tangent": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Coat Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Coat Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Sheen Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            },
+            {
+              "name": "\u6750\u8cea\u8f38\u51fa",
+              "type": "ShaderNodeOutputMaterial",
+              "inputs": {
+                "Displacement": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Thickness": 0.0
+              }
+            }
+          ],
+          "links": [
+            {
+              "fromNode": "\u539f\u5247\u5316 BSDF",
+              "fromSocket": "BSDF",
+              "toNode": "\u6750\u8cea\u8f38\u51fa",
+              "toSocket": "Surface"
+            }
+          ]
+        },
+        {
+          "name": "Aevrynd_HairRootShadow_v249r6",
+          "surfaceRenderMethod": "DITHERED",
+          "diffuseColor": [
+            0.006000000052154064,
+            0.002199999988079071,
+            0.00139999995008111,
+            1.0
+          ],
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.006000000052154064,
+                  0.002199999988079071,
+                  0.00139999995008111,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.9399999976158142,
+                "IOR": 1.5,
+                "Alpha": 1.0,
+                "Thin Wall": 0.0,
+                "Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Radius": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "Subsurface Scale": 0.004999999888241291,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.05999999865889549,
+                "Specular Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Tangent": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Coat Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Coat Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Sheen Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            },
+            {
+              "name": "\u6750\u8cea\u8f38\u51fa",
+              "type": "ShaderNodeOutputMaterial",
+              "inputs": {
+                "Displacement": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Thickness": 0.0
+              }
+            }
+          ],
+          "links": [
+            {
+              "fromNode": "\u539f\u5247\u5316 BSDF",
+              "fromSocket": "BSDF",
+              "toNode": "\u6750\u8cea\u8f38\u51fa",
+              "toSocket": "Surface"
+            }
+          ]
+        }
+      ],
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "count": 60,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "count": 60,
+          "minimum": null,
+          "maximum": null
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "count": 116,
+          "minimum": 0.0,
+          "maximum": 59.0
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "count": 116,
+          "minimum": 0.0,
+          "maximum": 87.0
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "count": 29,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "count": 29,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "count": 88,
+          "minimum": 0.0,
+          "maximum": 59.0
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "count": 88,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "material_index",
+          "domain": "FACE",
+          "dataType": "INT",
+          "count": 29,
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      ]
+    },
+    {
+      "object": "HairScalp",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": true,
+      "layer": "hair.scalp.topology_hairline",
+      "materials": [
+        {
+          "name": "Aevrynd_Hair_Scalp",
+          "surfaceRenderMethod": "DITHERED",
+          "diffuseColor": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Metallic": 0.0,
+                "Roughness": 0.47999998927116394,
+                "IOR": 1.5499999523162842,
+                "Thin Wall": 0.0,
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Radius": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "Subsurface Scale": 0.004999999888241291,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.18000000715255737,
+                "Specular Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Tangent": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Coat Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Coat Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Sheen Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            },
+            {
+              "name": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "inputs": {
+                "Displacement": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Thickness": 0.0
+              }
+            },
+            {
+              "name": "Noise Texture",
+              "type": "ShaderNodeTexNoise",
+              "inputs": {
+                "Vector": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "W": 0.0,
+                "Scale": 185.0,
+                "Detail": 2.200000047683716,
+                "Roughness": 0.41999998688697815,
+                "Lacunarity": 2.0,
+                "Offset": 0.0,
+                "Gain": 1.0,
+                "Distortion": 0.0
+              }
+            },
+            {
+              "name": "Bump",
+              "type": "ShaderNodeBump",
+              "inputs": {
+                "Strength": 0.10999999940395355,
+                "Distance": 0.0006500000017695129,
+                "Filter Width": 0.10000000149011612,
+                "Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            {
+              "name": "Aevrynd Scalp Density",
+              "type": "ShaderNodeVertexColor",
+              "inputs": {}
+            }
+          ],
+          "links": [
+            {
+              "fromNode": "Principled BSDF",
+              "fromSocket": "BSDF",
+              "toNode": "Material Output",
+              "toSocket": "Surface"
+            },
+            {
+              "fromNode": "Noise Texture",
+              "fromSocket": "Factor",
+              "toNode": "Bump",
+              "toSocket": "Height"
+            },
+            {
+              "fromNode": "Bump",
+              "fromSocket": "Normal",
+              "toNode": "Principled BSDF",
+              "toSocket": "Normal"
+            },
+            {
+              "fromNode": "Aevrynd Scalp Density",
+              "fromSocket": "Color",
+              "toNode": "Principled BSDF",
+              "toSocket": "Base Color"
+            },
+            {
+              "fromNode": "Aevrynd Scalp Density",
+              "fromSocket": "Alpha",
+              "toNode": "Principled BSDF",
+              "toSocket": "Alpha"
+            }
+          ]
+        }
+      ],
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "count": 2497,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "count": 4992,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "count": 2496,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "count": 2496,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "count": 2497,
+          "minimum": null,
+          "maximum": null
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "count": 4992,
+          "minimum": 0.0,
+          "maximum": 2496.0
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "count": 9888,
+          "minimum": 0.0,
+          "maximum": 2496.0
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "count": 9888,
+          "minimum": 0.0,
+          "maximum": 4991.0
+        },
+        {
+          "name": "AevryndScalpDensity",
+          "domain": "POINT",
+          "dataType": "BYTE_COLOR",
+          "count": 2497,
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      ]
+    },
+    {
+      "object": "HairUndercutScalp",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": true,
+      "layer": "",
+      "materials": [
+        {
+          "name": "Aevrynd_Hair_Undercut_v46",
+          "surfaceRenderMethod": "DITHERED",
+          "diffuseColor": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "nodes": [
+            {
+              "name": "\u6750\u8cea\u8f38\u51fa",
+              "type": "ShaderNodeOutputMaterial",
+              "inputs": {
+                "Displacement": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Thickness": 0.0
+              }
+            },
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Metallic": 0.0,
+                "Roughness": 0.7200000286102295,
+                "IOR": 1.5,
+                "Thin Wall": 0.0,
+                "Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Radius": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "Subsurface Scale": 0.004999999888241291,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.07000000029802322,
+                "Specular Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Tangent": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Coat Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Coat Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Sheen Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            },
+            {
+              "name": "\u8272\u5f69\u7279\u6027",
+              "type": "ShaderNodeVertexColor",
+              "inputs": {}
+            }
+          ],
+          "links": [
+            {
+              "fromNode": "\u8272\u5f69\u7279\u6027",
+              "fromSocket": "Color",
+              "toNode": "\u539f\u5247\u5316 BSDF",
+              "toSocket": "Base Color"
+            },
+            {
+              "fromNode": "\u8272\u5f69\u7279\u6027",
+              "fromSocket": "Alpha",
+              "toNode": "\u539f\u5247\u5316 BSDF",
+              "toSocket": "Alpha"
+            },
+            {
+              "fromNode": "\u539f\u5247\u5316 BSDF",
+              "fromSocket": "BSDF",
+              "toNode": "\u6750\u8cea\u8f38\u51fa",
+              "toSocket": "Surface"
+            }
+          ]
+        }
+      ],
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "count": 2688,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "count": 2688,
+          "minimum": null,
+          "maximum": null
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "count": 10260,
+          "minimum": 0.0,
+          "maximum": 2687.0
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "count": 10260,
+          "minimum": 0.0,
+          "maximum": 5251.0
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "count": 2565,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "count": 2565,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "count": 5252,
+          "minimum": 0.0,
+          "maximum": 2687.0
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "count": 5252,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "AevryndUndercutDensity",
+          "domain": "POINT",
+          "dataType": "BYTE_COLOR",
+          "count": 2688,
+          "minimum": 0.0,
+          "maximum": 0.458823561668396
+        }
+      ]
+    }
+  ]
+}
