@@ -907,3 +907,10 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - r225 moves the upper band by up to 2.365 mm; strict close-up review rejects the swollen ridge because it does not form a natural vermilion plane.
 - r226 bakes the authoring shape stack, locally subdivides the mouth region from 41,692 to 47,497 vertices, preserves all 21 armature groups with zero unweighted vertices, and sculpts the denser band. It is rejected before collision testing because the rectangular subdivision boundary produces visible mouth-corner and nasolabial shading dents.
 - The next topology pass must follow continuous perioral edge rings and relax the transition boundary before any anatomical sculpt or texture bake.
+
+### v249 mainline hair isolation and runtime pruning r227-r229
+
+- r227 isolates the visible hair layers. The 30 flyaways are negligible; the 11,193-curve/211,265-point main follow layer causes most thin crossing noise. The deform-matched scalp remains a useful coverage base.
+- r228 tests deterministic 75%, 55%, and 40% curve subsets with restrained radius compensation. The 55% bound keeps the silhouette with 6,254 curves and 117,868 authored points; 40% is visibly sparse.
+- r229 stores each retained source curve index, builds an exact subset of the proven 222-guide runtime mapping and five motion states, and reduces runtime follow data by 44.28%. Full frame 1/20 collision and five-state dynamic mesh collision audits report zero violations.
+- The 11-shot top view still exposes the broad scalp proxy and fine intersecting strands. r229 passes as a runtime/performance technique but fails the hero visual gate, so r192 remains the hair technical candidate and website v83 stays unchanged.

@@ -1,0 +1,123 @@
+{
+  "format": "aevrynd-runtime-groom-v1",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-pruned-long-hair-r229.blend",
+  "license": "Blender official CC0 Long Hair, baked offline and fitted to Aevrynd v249; see assets-source/reference/blender-official-hair",
+  "coordinateSystem": "Blender world metres, Z up",
+  "simulation": {
+    "fixedStepHz": 120,
+    "guideCount": 222,
+    "pointsPerGuide": 20,
+    "constraintIterations": 24,
+    "gravity": [
+      0,
+      0,
+      -2.0
+    ],
+    "shapeStiffnessRoot": 0.13,
+    "shapeStiffnessTip": 0.014
+  },
+  "render": {
+    "curveCount": 6254,
+    "pointsPerCurve": 20,
+    "offsetComponents": [
+      "normal",
+      "binormal",
+      "tangent"
+    ]
+  },
+  "files": {
+    "guides": "simulation-guides.f32",
+    "followGuide": "follow-guide.u16",
+    "followOffsets": "follow-offsets.f32",
+    "followCollisionNormals": "follow-collision-normal.i8",
+    "followContactHeadWeights": "follow-contact-head-weight.u8"
+  },
+  "layers": [
+    {
+      "id": "hair.cc0-baked.main",
+      "simulated": true,
+      "curveCount": 6254,
+      "simulationGuides": 192
+    }
+  ],
+  "collision": [
+    {
+      "id": "head",
+      "shape": "sphere",
+      "center": [
+        0,
+        -0.01,
+        1.62
+      ],
+      "radius": 0.15
+    },
+    {
+      "id": "neck",
+      "shape": "capsule",
+      "a": [
+        0,
+        0.025,
+        1.43
+      ],
+      "b": [
+        0,
+        0.025,
+        1.56
+      ],
+      "radius": 0.059
+    },
+    {
+      "id": "shoulders",
+      "shape": "capsule",
+      "a": [
+        -0.205,
+        0.025,
+        1.405
+      ],
+      "b": [
+        0.205,
+        0.025,
+        1.405
+      ],
+      "radius": 0.065
+    },
+    {
+      "id": "upperChest",
+      "shape": "capsule",
+      "a": [
+        -0.12,
+        0.02,
+        1.35
+      ],
+      "b": [
+        0.12,
+        0.02,
+        1.35
+      ],
+      "radius": 0.085
+    }
+  ],
+  "maximumRestReconstructionErrorM": 1.228781230931777e-07,
+  "resamplingProjection": {
+    "clearanceM": 0.0015,
+    "correctedPointCount": 2249,
+    "minimumSignedBeforeM": -0.012157786861621389,
+    "minimumSignedAfterM": 0.0015
+  },
+  "followSurfaceConstraint": "65mm head-turn sweep lock using nearest v249 head-bone skin weight",
+  "contactPose": {
+    "pivot": [
+      0,
+      0,
+      1.47
+    ]
+  },
+  "releaseState": "R229_TECHNICAL_CANDIDATE_NOT_WEBSITE_ASSET",
+  "pruning": {
+    "sourceRuntime": "runtime-groom-v249r94",
+    "sourceCurveCount": 11193,
+    "retainedCurveCount": 6254,
+    "sourceIndexAttribute": "aevrynd_source_curve_index",
+    "exactDynamicTrajectorySubset": true
+  }
+}

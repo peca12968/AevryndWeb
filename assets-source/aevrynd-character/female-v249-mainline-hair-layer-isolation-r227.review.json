@@ -1,0 +1,171 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-converged-upper-lid-r210.blend",
+  "layers": {
+    "AevryndFemaleCC0LongHairStudyMain_v249r85": {
+      "type": "CURVES",
+      "curves": 11193,
+      "points": 211265,
+      "materials": [
+        "AevryndOwnedSatinHairMaterial_v249r192"
+      ],
+      "attributes": {
+        "position": {
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR",
+          "count": 211265,
+          "minimum": null,
+          "maximum": null,
+          "mean": null
+        },
+        "radius": {
+          "domain": "POINT",
+          "type": "FLOAT",
+          "count": 211265,
+          "minimum": 9.999999747378752e-06,
+          "maximum": 4.5000000682193786e-05,
+          "mean": 2.750000039387835e-05
+        }
+      },
+      "layer": "hair.follow.long.main"
+    },
+    "AevryndFemaleCC0LongHairStudyFlyaway_v249r85": {
+      "type": "CURVES",
+      "curves": 30,
+      "points": 360,
+      "materials": [
+        "AevryndOwnedSatinHairMaterial_v249r192"
+      ],
+      "attributes": {
+        "position": {
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR",
+          "count": 360,
+          "minimum": null,
+          "maximum": null,
+          "mean": null
+        },
+        "radius": {
+          "domain": "POINT",
+          "type": "FLOAT",
+          "count": 360,
+          "minimum": 7.000000096013537e-06,
+          "maximum": 2.9999999242136255e-05,
+          "mean": 1.8499999934344185e-05
+        }
+      },
+      "layer": "hair.flyaway.long.independent"
+    },
+    "AevryndFemaleDeformMatchedScalp_v249r163": {
+      "type": "MESH",
+      "curves": null,
+      "points": 2626,
+      "materials": [
+        "AevryndDeformMatchedScalpMaterial_v249r163"
+      ],
+      "attributes": {
+        ".select_vert": {
+          "domain": "POINT",
+          "type": "BOOLEAN",
+          "count": 2626,
+          "minimum": null,
+          "maximum": null,
+          "mean": null
+        },
+        "position": {
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR",
+          "count": 2626,
+          "minimum": null,
+          "maximum": null,
+          "mean": null
+        },
+        ".corner_vert": {
+          "domain": "CORNER",
+          "type": "INT",
+          "count": 9752,
+          "minimum": null,
+          "maximum": null,
+          "mean": null
+        },
+        ".corner_edge": {
+          "domain": "CORNER",
+          "type": "INT",
+          "count": 9752,
+          "minimum": null,
+          "maximum": null,
+          "mean": null
+        },
+        ".select_poly": {
+          "domain": "FACE",
+          "type": "BOOLEAN",
+          "count": 2438,
+          "minimum": null,
+          "maximum": null,
+          "mean": null
+        },
+        "sharp_face": {
+          "domain": "FACE",
+          "type": "BOOLEAN",
+          "count": 2438,
+          "minimum": null,
+          "maximum": null,
+          "mean": null
+        },
+        ".edge_verts": {
+          "domain": "EDGE",
+          "type": "INT32_2D",
+          "count": 5061,
+          "minimum": null,
+          "maximum": null,
+          "mean": null
+        },
+        ".select_edge": {
+          "domain": "EDGE",
+          "type": "BOOLEAN",
+          "count": 5061,
+          "minimum": null,
+          "maximum": null,
+          "mean": null
+        },
+        "aevrynd_root_density": {
+          "domain": "POINT",
+          "type": "FLOAT",
+          "count": 2626,
+          "minimum": 0.014999999664723873,
+          "maximum": 0.9200000166893005,
+          "mean": 0.5371300976514896
+        }
+      },
+      "layer": "hair.scalp.foundation"
+    }
+  },
+  "states": {
+    "a-current": {
+      "AevryndFemaleCC0LongHairStudyMain_v249r85": true,
+      "AevryndFemaleCC0LongHairStudyFlyaway_v249r85": true,
+      "AevryndFemaleDeformMatchedScalp_v249r163": true
+    },
+    "b-main-scalp": {
+      "AevryndFemaleCC0LongHairStudyMain_v249r85": true,
+      "AevryndFemaleCC0LongHairStudyFlyaway_v249r85": false,
+      "AevryndFemaleDeformMatchedScalp_v249r163": true
+    },
+    "c-main-only": {
+      "AevryndFemaleCC0LongHairStudyMain_v249r85": true,
+      "AevryndFemaleCC0LongHairStudyFlyaway_v249r85": false,
+      "AevryndFemaleDeformMatchedScalp_v249r163": false
+    },
+    "d-scalp-only": {
+      "AevryndFemaleCC0LongHairStudyMain_v249r85": false,
+      "AevryndFemaleCC0LongHairStudyFlyaway_v249r85": false,
+      "AevryndFemaleDeformMatchedScalp_v249r163": true
+    },
+    "e-flyaway-only": {
+      "AevryndFemaleCC0LongHairStudyMain_v249r85": false,
+      "AevryndFemaleCC0LongHairStudyFlyaway_v249r85": true,
+      "AevryndFemaleDeformMatchedScalp_v249r163": false
+    }
+  },
+  "status": "DIAGNOSTIC_COMPLETE_MAIN_FOLLOW_LAYER_IS_PRIMARY_DEFECT",
+  "review": "The 30-curve flyaway layer is visually negligible. The visible 11,193-curve main layer creates the thin intersecting wet-strand appearance, while the deform-matched scalp provides useful coverage and hairline support."
+}
