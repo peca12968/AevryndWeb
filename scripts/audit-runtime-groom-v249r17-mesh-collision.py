@@ -28,6 +28,9 @@ SOLIDS = (
     "Clothing_BandeauBinding_v162",
     "Clothing_BodyFitShorts_v135",
 )
+RIGID_LAYERS = tuple(filter(None, os.environ.get(
+    "AEVRYND_RIGID_COLLISION_LAYERS", "",
+).split(";")))
 PENETRATION_LIMIT = -0.0005
 NEAR_SURFACE_LIMITS = {
     "AevryndFemaleBodyBaseV118": 0.025,
@@ -44,6 +47,14 @@ def evaluated_tree(obj, depsgraph):
     polygons = [tuple(poly.vertices) for poly in mesh.polygons]
     evaluated.to_mesh_clear()
     return BVHTree.FromPolygons(vertices, polygons, all_triangles=False)
+
+
+def evaluated_points(obj, depsgraph):
+    evaluated = obj.evaluated_get(depsgraph)
+    mesh = evaluated.to_mesh()
+    points = [evaluated.matrix_world @ vertex.co for vertex in mesh.vertices]
+    evaluated.to_mesh_clear()
+    return points
 
 
 def sample(points, tree, near_surface_limit):
@@ -108,6 +119,10 @@ for state in metadata["saved"]:
         layer_end = layer_start + layer["curveCount"] * points_per_curve
         layers[layer["id"]] = points[layer_start:layer_end]
         layer_start = layer_end
+    for name in RIGID_LAYERS:
+        obj = bpy.data.objects[name]
+        layer = str(obj.get("aevrynd_layer", name))
+        layers[layer] = evaluated_points(obj, depsgraph)
     state_report = {}
     for layer, layer_points in layers.items():
         state_report[layer] = {}
@@ -129,6 +144,7 @@ report = {
     "states": states,
     "penetrationLimitM": PENETRATION_LIMIT,
     "nearSurfaceLimitsM": NEAR_SURFACE_LIMITS,
+    "rigidLayers": list(RIGID_LAYERS),
     "violations": violations,
     "status": "PASS" if not violations else "FAIL",
 }
@@ -136,7 +152,8 @@ OUTPUT.write_text(json.dumps(report, indent=2), encoding="utf-8")
 print("AEVRYND_V249R17_DYNAMIC_MESH_COLLISION=" + json.dumps({
     "output": str(OUTPUT),
     "states": len(states),
-    "pointsPerState": total_points,
+    "runtimePointsPerState": total_points,
+    "rigidLayers": list(RIGID_LAYERS),
     "violations": violations,
     "status": report["status"],
 }, sort_keys=True))

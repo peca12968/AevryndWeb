@@ -47,7 +47,11 @@ def evaluated_tree(obj, depsgraph):
 
 
 def world_points(obj):
-    return [obj.matrix_world @ point.position for point in obj.data.points]
+    if obj.type == "CURVES":
+        return [obj.matrix_world @ point.position for point in obj.data.points]
+    if obj.type == "MESH":
+        return [obj.matrix_world @ vertex.co for vertex in obj.data.vertices]
+    raise TypeError(f"Unsupported collision layer type: {obj.type}")
 
 
 def sample(points, tree, near):
