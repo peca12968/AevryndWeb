@@ -1,0 +1,791 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-satin-hair-r192.blend",
+  "objects": {
+    "Brow_L": {
+      "type": "MESH",
+      "vertices": 3000,
+      "polygons": 2400,
+      "boundsWorld": {
+        "minimum": [
+          0.012351835146546364,
+          -0.12311913818120956,
+          1.6305445432662964
+        ],
+        "maximum": [
+          0.06311175972223282,
+          -0.0876309871673584,
+          1.645340919494629
+        ]
+      },
+      "layer": null,
+      "materials": [
+        {
+          "name": "Aevrynd_Brow_Hair_v39_Dark",
+          "blendMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.00812000036239624,
+                  0.0027840002439916134,
+                  0.0011600001016631722,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.5299999713897705,
+                "IOR": 1.5,
+                "Alpha": 0.550000011920929,
+                "Thin Wall": false,
+                "Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Radius": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "Subsurface Scale": 0.004999999888241291,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.12999999523162842,
+                "Specular Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Tangent": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Coat Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Coat Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Sheen Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            }
+          ]
+        },
+        {
+          "name": "Aevrynd_Brow_Hair_v39_Warm",
+          "blendMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.0203000009059906,
+                  0.006089999806135893,
+                  0.0022040000185370445,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.5299999713897705,
+                "IOR": 1.5,
+                "Alpha": 0.550000011920929,
+                "Thin Wall": false,
+                "Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Radius": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "Subsurface Scale": 0.004999999888241291,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.12999999523162842,
+                "Specular Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Tangent": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Coat Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Coat Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Sheen Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Brow_L_Density": {
+      "type": "MESH",
+      "vertices": 175,
+      "polygons": 136,
+      "boundsWorld": {
+        "minimum": [
+          0.0120368842035532,
+          -0.12340357154607773,
+          1.630497694015503
+        ],
+        "maximum": [
+          0.06145698204636574,
+          -0.09065656363964081,
+          1.6437995433807373
+        ]
+      },
+      "layer": null,
+      "materials": [
+        {
+          "name": "Aevrynd_Brow_Density_v39",
+          "blendMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Metallic": 0.0,
+                "Roughness": 0.6700000166893005,
+                "IOR": 1.5,
+                "Thin Wall": false,
+                "Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Radius": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "Subsurface Scale": 0.004999999888241291,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.10000000149011612,
+                "Specular Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Tangent": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Coat Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Coat Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Sheen Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Brow_R": {
+      "type": "MESH",
+      "vertices": 3000,
+      "polygons": 2400,
+      "boundsWorld": {
+        "minimum": [
+          -0.06306073069572449,
+          -0.122857004404068,
+          1.6305184364318848
+        ],
+        "maximum": [
+          -0.012145262211561203,
+          -0.0877879336476326,
+          1.6460295915603638
+        ]
+      },
+      "layer": null,
+      "materials": [
+        {
+          "name": "Aevrynd_Brow_Hair_v39_Dark",
+          "blendMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.00812000036239624,
+                  0.0027840002439916134,
+                  0.0011600001016631722,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.5299999713897705,
+                "IOR": 1.5,
+                "Alpha": 0.550000011920929,
+                "Thin Wall": false,
+                "Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Radius": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "Subsurface Scale": 0.004999999888241291,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.12999999523162842,
+                "Specular Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Tangent": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Coat Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Coat Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Sheen Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            }
+          ]
+        },
+        {
+          "name": "Aevrynd_Brow_Hair_v39_Warm",
+          "blendMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.0203000009059906,
+                  0.006089999806135893,
+                  0.0022040000185370445,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.5299999713897705,
+                "IOR": 1.5,
+                "Alpha": 0.550000011920929,
+                "Thin Wall": false,
+                "Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Radius": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "Subsurface Scale": 0.004999999888241291,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.12999999523162842,
+                "Specular Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Tangent": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Coat Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Coat Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Sheen Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Brow_R_Density": {
+      "type": "MESH",
+      "vertices": 175,
+      "polygons": 136,
+      "boundsWorld": {
+        "minimum": [
+          -0.06143369898200035,
+          -0.12316204607486725,
+          1.6304965019226074
+        ],
+        "maximum": [
+          -0.012054524384438992,
+          -0.090621717274189,
+          1.6437923908233643
+        ]
+      },
+      "layer": null,
+      "materials": [
+        {
+          "name": "Aevrynd_Brow_Density_v39",
+          "blendMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Metallic": 0.0,
+                "Roughness": 0.6700000166893005,
+                "IOR": 1.5,
+                "Thin Wall": false,
+                "Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Radius": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "Subsurface Scale": 0.004999999888241291,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.10000000149011612,
+                "Specular Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Tangent": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Coat Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Coat Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Sheen Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Eye_L_UpperLashes": {
+      "type": "MESH",
+      "vertices": 760,
+      "polygons": 646,
+      "boundsWorld": {
+        "minimum": [
+          0.02228442393243313,
+          -0.11931873857975006,
+          1.608109474182129
+        ],
+        "maximum": [
+          0.04625789821147919,
+          -0.10957227647304535,
+          1.6136195659637451
+        ]
+      },
+      "layer": "face.eyelash.upper",
+      "materials": [
+        {
+          "name": "Aevrynd_Lash_Hair_v51",
+          "blendMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.0034000000450760126,
+                  0.0011500000255182385,
+                  0.0006200000061653554,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.5199999809265137,
+                "IOR": 1.5,
+                "Alpha": 1.0,
+                "Thin Wall": false,
+                "Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Radius": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "Subsurface Scale": 0.004999999888241291,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.10999999940395355,
+                "Specular Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Tangent": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Coat Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Coat Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Sheen Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Eye_R_UpperLashes": {
+      "type": "MESH",
+      "vertices": 760,
+      "polygons": 646,
+      "boundsWorld": {
+        "minimum": [
+          -0.04668523371219635,
+          -0.11883685737848282,
+          1.6081089973449707
+        ],
+        "maximum": [
+          -0.022654736414551735,
+          -0.10979577898979187,
+          1.6134637594223022
+        ]
+      },
+      "layer": "face.eyelash.upper",
+      "materials": [
+        {
+          "name": "Aevrynd_Lash_Hair_v51",
+          "blendMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.0034000000450760126,
+                  0.0011500000255182385,
+                  0.0006200000061653554,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.5199999809265137,
+                "IOR": 1.5,
+                "Alpha": 1.0,
+                "Thin Wall": false,
+                "Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Radius": [
+                  1.0,
+                  0.20000000298023224,
+                  0.10000000149011612
+                ],
+                "Subsurface Scale": 0.004999999888241291,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.10999999940395355,
+                "Specular Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Tangent": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Coat Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Coat Normal": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Sheen Tint": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

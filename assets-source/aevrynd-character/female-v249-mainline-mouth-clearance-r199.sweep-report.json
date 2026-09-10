@@ -1,0 +1,79 @@
+{
+  "baseline": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-satin-hair-r192.blend",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-mouth-placement-r198.blend",
+  "baselineOverlaps": {
+    "1": {
+      "Lip_Upper": 143,
+      "Mouth_WetLine": 2
+    },
+    "20": {
+      "Lip_Upper": 150,
+      "Mouth_WetLine": 2
+    }
+  },
+  "variants": {
+    "a-control": {
+      "1": {
+        "Lip_Upper": 133,
+        "Mouth_WetLine": 3
+      },
+      "20": {
+        "Lip_Upper": 178,
+        "Mouth_WetLine": 3
+      },
+      "passesBaseline": false,
+      "offsetMm": 0.0
+    },
+    "b-015mm": {
+      "1": {
+        "Lip_Upper": 134,
+        "Mouth_WetLine": 2
+      },
+      "20": {
+        "Lip_Upper": 162,
+        "Mouth_WetLine": 3
+      },
+      "passesBaseline": false,
+      "offsetMm": 0.15
+    },
+    "c-030mm": {
+      "1": {
+        "Lip_Upper": 108,
+        "Mouth_WetLine": 2
+      },
+      "20": {
+        "Lip_Upper": 138,
+        "Mouth_WetLine": 2
+      },
+      "passesBaseline": true,
+      "offsetMm": 0.3
+    },
+    "d-050mm": {
+      "1": {
+        "Lip_Upper": 79,
+        "Mouth_WetLine": 2
+      },
+      "20": {
+        "Lip_Upper": 125,
+        "Mouth_WetLine": 2
+      },
+      "passesBaseline": true,
+      "offsetMm": 0.5
+    },
+    "e-080mm": {
+      "1": {
+        "Lip_Upper": 42,
+        "Mouth_WetLine": 2
+      },
+      "20": {
+        "Lip_Upper": 83,
+        "Mouth_WetLine": 4
+      },
+      "passesBaseline": false,
+      "offsetMm": 0.8
+    }
+  },
+  "verdict": "SELECT_C_030MM",
+  "selected": "c-030mm",
+  "reason": "minimum tested offset restoring frame 1/20 upper-lip and wet-line overlap counts to or below r192 baseline"
+}
