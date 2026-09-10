@@ -632,3 +632,14 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - `aevrynd-female-authoring-v249-mainline-hair-cleanup-r84.blend` 保留四個正式分層：`hair.guide_follow.main`、`hair.nape.fiber-underlayer`、`hair.scalp.root_shadow`、`hair.scalp.visible_part`；其餘 14 個歷史／LOD 物件保留在檔案中供追溯，但 render 與 viewport 均隱藏。這次不修改任何幾何，避免把去重與造型改動混在同一版本。
 - r84 相對 r83 的 frame 1／20 臉部靜態稽核沒有新增相交，`female-v249-mainline-hair-cleanup-r84.collision-audit.json` 為 PASS；沿用 r46 動態狀態檢查 5×300,080、共 1,500,400 個髮點，對人體與三層衣物仍為 0 違規。完整 11 視角已輸出到 `review-11shot-v249-mainline-hair-cleanup-r84`。
 - 去重後安全帽式雙層厚度下降，頭皮分線與臉部輪廓較清楚；但嚴格視覺仍不合格：前額髮束呈平行線片、髮尾鋸齒且密度同步、後視輪廓近似整片布幕，缺乏 primary guide、clump、follow 與 flyaway 的自然層級。r84 只升為毛髮技術候選，不取代 r38 整體視覺基準、不進網站；後續 builder 必須保存並還原每個物件原本的可見狀態，不能再把所有歷史毛髮設為可見。
+
+## v249 主線 CC0 長髮研究 r85–r95
+
+- r85 將 Blender 官方 CC0 Long Hair 離線烘焙後適配至 v249，r86–r89 依序測試貼合、人體碰撞、head 骨綁定與 frame 1／20 多姿態修正。這條來源可成為 Aevrynd 自有 runtime 資產，不要求引擎執行 Blender；但逐點修正會破壞原本平滑曲線，因此未直接升格。
+- r90 把 222 條 simulation guides 展開為 11,223 條、每條 20 點的 runtime groom。二進位共 3.67 MiB，24 次距離／彎曲約束在將碰撞投影移到最後一次迭代後降至約 13 ms／幀；靜態與五姿態 mesh collision 皆可通過。短髮根密度版本在正面呈厚重鋸齒狀，嚴格視覺判退，只保留為 runtime 技術證據。
+- r91 延長髮束後，逐點 55.7mm 碰撞位移造成尖刺；r92 的徑向垂墜造型在 frame 1／20 分別出現 1,151／1,596 個主髮穿入；r93 的全曲線平滑修正仍殘留 548／816 個違規採樣並拉出孤立長線。三版皆判退。
+- 既有 v394／v395 程序導引髮也經重新檢查：v394 暴露大面積頭皮且像硬直布幕，v395 前額形成矩形髮塊，均未達候選門檻。
+- r85 的黑色前額帶實際來自誤顯示的 `AevryndFemaleScalpCoverage_v378`，而非 CC0 主髮。r94 隱藏該物件及舊 `ScalpPart`，保留原始長髮流向，將主髮與 flyaway 綁定 head 骨，再交替投影 frame 1／20 至人體外 1.5mm。`female-v249-mainline-cc0-natural-long-hair-r94.collision-audit.json` 對人體及三層服裝全部 PASS。
+- r94 runtime 使用 balanced shape stiffness（root 0.13、tip 0.014）、222 guides、11,223 render curves。30 幀 CPU 平均 16.54ms，二進位 3,667,086 bytes，髮尾最大位移 6.999mm；五個轉頭狀態每狀態 224,460 點，共 1,122,300 個髮點，對人體、上衣、包邊及短褲全部 0 穿入。較鬆的 root 0.11／tip 0.007 雖有更大擺幅，強轉向後會在後頸拉出兩束異常長線，依視覺門檻判退。
+- r94 完整 11 視角確認肩長輪廓、後側重量及不規則髮尾明顯優於 r84；近拍仍暴露額角露白、前額根部稀疏、頭頂分線像平行刷痕，髮束尺度也過於一致。r95 嘗試用距根點 9mm 內的 508 面 root-shadow 補片遮蔽，卻在左額角形成硬邊深色塊，立即判退。
+- r94 因此只升為長髮碰撞與動態技術候選，不取代 r38 整體視覺基準、不輸出網站資產，公開網站維持 v83。下一輪從 r94 重建額角根部密度與少量 primary guide 大束流，再生成 clump、follow、flyaway 分層；所有版本持續沿用多角度、frame 1／20 靜態、五姿態動態及 runtime 效能關卡。

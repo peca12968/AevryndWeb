@@ -48,6 +48,7 @@ def evaluated_tree(obj, depsgraph):
 
 def sample(points, tree, near_surface_limit):
     penetrating = []
+    penetrating_details = []
     minimum = math.inf
     for index, world in enumerate(points):
         nearest = tree.find_nearest(world)
@@ -60,11 +61,20 @@ def sample(points, tree, near_surface_limit):
         minimum = min(minimum, signed)
         if signed < PENETRATION_LIMIT:
             penetrating.append(index)
+            if len(penetrating_details) < 20:
+                penetrating_details.append({
+                    "index": index,
+                    "point": list(world),
+                    "nearest": list(location),
+                    "normal": list(normal),
+                    "signed_m": signed,
+                })
     return {
         "sample_count": len(points),
         "minimum_signed_m": minimum if math.isfinite(minimum) else None,
         "penetrating_count": len(penetrating),
         "penetrating_indices_sample": penetrating[:20],
+        "penetrating_details_sample": penetrating_details,
     }
 
 
@@ -77,6 +87,10 @@ metadata = json.loads((DATA_DIR / "frames.json").read_text(encoding="utf-8"))
 points_per_curve = metadata["pointsPerCurve"]
 main_points = metadata["mainCurveCount"] * points_per_curve
 total_points = metadata["curveCount"] * points_per_curve
+simulated_layers = metadata.get("simulatedLayers", [
+    {"id": "hair.guide_follow.main", "curveCount": metadata["mainCurveCount"]},
+    {"id": "hair.nape.fiber-underlayer", "curveCount": metadata["fillCurveCount"]},
+])
 
 states = {}
 violations = []
@@ -88,10 +102,12 @@ for state in metadata["saved"]:
     payload = (DATA_DIR / state["filename"]).read_bytes()
     values = struct.unpack(f"<{total_points * 3}f", payload)
     points = [Vector(values[index:index + 3]) for index in range(0, len(values), 3)]
-    layers = {
-        "hair.guide_follow.main": points[:main_points],
-        "hair.nape.fiber-underlayer": points[main_points:],
-    }
+    layers = {}
+    layer_start = 0
+    for layer in simulated_layers:
+        layer_end = layer_start + layer["curveCount"] * points_per_curve
+        layers[layer["id"]] = points[layer_start:layer_end]
+        layer_start = layer_end
     state_report = {}
     for layer, layer_points in layers.items():
         state_report[layer] = {}

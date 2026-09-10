@@ -62,8 +62,11 @@ fs.writeFileSync(path.join(outputDirectory, 'frames.json'), JSON.stringify({
   source: directory,
   curveCount: manifest.render.curveCount,
   pointsPerCurve: manifest.render.pointsPerCurve,
-  mainCurveCount: 14396,
-  fillCurveCount: 608,
+  mainCurveCount: manifest.layers[0].curveCount,
+  fillCurveCount: manifest.layers.slice(1).filter(layer => layer.simulated)
+    .reduce((sum, layer) => sum + layer.curveCount, 0),
+  simulatedLayers: manifest.layers.filter(layer => layer.simulated)
+    .map(layer => ({ id: layer.id, curveCount: layer.curveCount })),
   saved,
 }, null, 2));
 console.log(JSON.stringify({ outputDirectory, saved }));

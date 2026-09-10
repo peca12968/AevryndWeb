@@ -1,0 +1,106 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-cc0-long-hair-fit-r86.blend",
+  "frame": 1,
+  "penetration_limit_m": -0.0005,
+  "layers": {
+    "AevryndFemaleCC0LongHairFitMain_v249r86": {
+      "AevryndFemaleBodyBaseV118": {
+        "sample_count": 211265,
+        "minimum_signed_m": -0.024497194914147258,
+        "penetrating_count": 6913,
+        "penetrating_indices_sample": [
+          79,
+          599,
+          700,
+          701,
+          720,
+          721,
+          722,
+          723,
+          1480,
+          1481,
+          1482,
+          1500,
+          1501,
+          1502,
+          1503,
+          1595,
+          1615,
+          1616,
+          1635,
+          1636
+        ]
+      },
+      "Clothing_Bandeau_v160": {
+        "sample_count": 211265,
+        "minimum_signed_m": null,
+        "penetrating_count": 0,
+        "penetrating_indices_sample": []
+      },
+      "Clothing_BandeauBinding_v162": {
+        "sample_count": 211265,
+        "minimum_signed_m": null,
+        "penetrating_count": 0,
+        "penetrating_indices_sample": []
+      },
+      "Clothing_BodyFitShorts_v135": {
+        "sample_count": 211265,
+        "minimum_signed_m": null,
+        "penetrating_count": 0,
+        "penetrating_indices_sample": []
+      }
+    },
+    "AevryndFemaleCC0LongHairFitFlyaway_v249r86": {
+      "AevryndFemaleBodyBaseV118": {
+        "sample_count": 360,
+        "minimum_signed_m": -0.022999613545835018,
+        "penetrating_count": 12,
+        "penetrating_indices_sample": [
+          142,
+          143,
+          154,
+          155,
+          165,
+          166,
+          167,
+          332,
+          333,
+          334,
+          335,
+          347
+        ]
+      },
+      "Clothing_Bandeau_v160": {
+        "sample_count": 360,
+        "minimum_signed_m": null,
+        "penetrating_count": 0,
+        "penetrating_indices_sample": []
+      },
+      "Clothing_BandeauBinding_v162": {
+        "sample_count": 360,
+        "minimum_signed_m": null,
+        "penetrating_count": 0,
+        "penetrating_indices_sample": []
+      },
+      "Clothing_BodyFitShorts_v135": {
+        "sample_count": 360,
+        "minimum_signed_m": null,
+        "penetrating_count": 0,
+        "penetrating_indices_sample": []
+      }
+    }
+  },
+  "violations": [
+    {
+      "hair": "AevryndFemaleCC0LongHairFitMain_v249r86",
+      "solid": "AevryndFemaleBodyBaseV118",
+      "count": 6913
+    },
+    {
+      "hair": "AevryndFemaleCC0LongHairFitFlyaway_v249r86",
+      "solid": "AevryndFemaleBodyBaseV118",
+      "count": 12
+    }
+  ],
+  "status": "FAIL"
+}
