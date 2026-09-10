@@ -1,0 +1,161 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-curly-head-binding-r160.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-curly-rigid-clearance-r161.blend",
+  "hair": "AevryndFemaleOwnedCurlyHairMain_v249r161",
+  "frames": [
+    1,
+    20
+  ],
+  "targetClearanceM": 0.0015,
+  "before": {
+    "1": {
+      "penetratingCount": 3574,
+      "minimumSignedM": -0.02447638106480099
+    },
+    "20": {
+      "penetratingCount": 3545,
+      "minimumSignedM": -0.024647821381222457
+    }
+  },
+  "after": {
+    "1": {
+      "penetratingCount": 0,
+      "minimumSignedM": 0.0014999451350377058
+    },
+    "20": {
+      "penetratingCount": 0,
+      "minimumSignedM": 0.0014999451472927916
+    }
+  },
+  "maxRigidTranslationMm": 25.976380033430228,
+  "maxPointProjectionMm": 19.751065063042518,
+  "passes": [
+    {
+      "kind": "rigid-curve",
+      "pass": 1,
+      "frames": {
+        "1": {
+          "curvesTranslated": 2320,
+          "maxTranslationMm": 25.976380033430228
+        },
+        "20": {
+          "curvesTranslated": 1625,
+          "maxTranslationMm": 25.087147748599104
+        }
+      }
+    },
+    {
+      "kind": "rigid-curve",
+      "pass": 2,
+      "frames": {
+        "1": {
+          "curvesTranslated": 1216,
+          "maxTranslationMm": 21.94189639195653
+        },
+        "20": {
+          "curvesTranslated": 939,
+          "maxTranslationMm": 18.852227301501888
+        }
+      }
+    },
+    {
+      "kind": "rigid-curve",
+      "pass": 3,
+      "frames": {
+        "1": {
+          "curvesTranslated": 904,
+          "maxTranslationMm": 21.290988098776307
+        },
+        "20": {
+          "curvesTranslated": 787,
+          "maxTranslationMm": 19.020161282352415
+        }
+      }
+    },
+    {
+      "kind": "point-finalize",
+      "pass": 1,
+      "frames": {
+        "1": {
+          "pointsProjected": 912,
+          "maxProjectionMm": 19.751065063042518
+        },
+        "20": {
+          "pointsProjected": 810,
+          "maxProjectionMm": 2.250528261171249
+        }
+      }
+    },
+    {
+      "kind": "point-finalize",
+      "pass": 2,
+      "frames": {
+        "1": {
+          "pointsProjected": 738,
+          "maxProjectionMm": 0.0954186861747247
+        },
+        "20": {
+          "pointsProjected": 683,
+          "maxProjectionMm": 0.19327828586166415
+        }
+      }
+    },
+    {
+      "kind": "point-finalize",
+      "pass": 3,
+      "frames": {
+        "1": {
+          "pointsProjected": 640,
+          "maxProjectionMm": 0.00014956609681745633
+        },
+        "20": {
+          "pointsProjected": 601,
+          "maxProjectionMm": 5.485140477143768e-05
+        }
+      }
+    },
+    {
+      "kind": "point-finalize",
+      "pass": 4,
+      "frames": {
+        "1": {
+          "pointsProjected": 585,
+          "maxProjectionMm": 0.00011592662976917591
+        },
+        "20": {
+          "pointsProjected": 555,
+          "maxProjectionMm": 5.485270569121234e-05
+        }
+      }
+    },
+    {
+      "kind": "point-finalize",
+      "pass": 5,
+      "frames": {
+        "1": {
+          "pointsProjected": 560,
+          "maxProjectionMm": 5.487741545719989e-05
+        },
+        "20": {
+          "pointsProjected": 529,
+          "maxProjectionMm": 5.485270569121234e-05
+        }
+      }
+    },
+    {
+      "kind": "point-finalize",
+      "pass": 6,
+      "frames": {
+        "1": {
+          "pointsProjected": 535,
+          "maxProjectionMm": 5.486632944823306e-05
+        },
+        "20": {
+          "pointsProjected": 512,
+          "maxProjectionMm": 5.485140477143768e-05
+        }
+      }
+    }
+  ],
+  "status": "PASS"
+}

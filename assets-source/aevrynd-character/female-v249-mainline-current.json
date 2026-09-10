@@ -11,14 +11,14 @@
   "latestFaceCandidateStatus": "editable topology-based philtrum smoothing shape key reduces face self-intersections from 102/99 to 95/91 at frames 1/20 and reduces lip/wet-line overlaps; 11-shot and five-state dynamic audits pass, but the visible gain remains local and strict overall review remains about 52/100, so it is not promoted",
   "latestSkinTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-skin-baked-r76.blend",
   "latestSkinCandidateStatus": "r75 calibrated skin response and fine-pore microrelief baked into an owned packed 4096x2048 tangent normal atlas; visual A/B, 11-shot, frame 1/20 static, and five-state 1,500,400-point dynamic audits pass, but strict overall visual review remains about 52/100 and is not promoted",
-  "latestRejectedExperiment": "r152–r159 crown-flow, CC0 curly fit/density, multi-frame projection, root coverage and scalp-foundation studies",
-  "latestRejectedReason": "r152/r153 的 crown-flow 與 0–4.5mm 抬根未修復 braided source 的冠部空洞。r154 的完整 CC0 curly hair 具有較自然短捲髮際但需 515,614 點；r155 的 40% 原始曲線以 9,070 根/208,610 點保留外輪廓，是有效研究方向。r156 初測 frame 1/20 有 3,574/4,357 個人體穿入；r157 經多幀投影對人體與三層衣物零穿模，但最大單次修正 25.976mm，11-shot 仍顯示髮際細線、凌亂旋渦與大片露頭皮。r158 的 3,606 根自有短捲覆蓋層仍有 751/4,529 點穿入；r159 投影舊 scalp foundation 時因拓撲不相容在額頭與鼻側形成黑色多邊形。全部不升格。",
+  "latestRejectedExperiment": "r160–r164 head-bone binding, rigid collision correction, whole-curve pruning, deform-matched scalp and shadow-proxy studies",
+  "latestRejectedReason": "r160 fixes the incorrect OBJECT parent to BONE/head and reduces frame-20 penetration to the frame-1 level, but source curls still intersect. r161 reaches zero numeric penetration with up to 25.976mm rigid and 19.751mm point corrections but creates stray face/chin lines. r162 removes 1,359 unsafe complete curves, retains 85.02% (7,711 curves/177,353 points), and passes frame 1/20 body/clothing audits without deformation; crown gaps remain. r163 builds a 2,626-vertex/2,438-face body-matched scalp with 21 copied weight groups and passes all collision checks, becoming a scalp technical candidate. r164 disables per-strand shadows and uses the scalp as a proxy; face shadow artifacts drop but hair becomes too transparent and crown linework remains sparse, so the overall groom is rejected.",
   "publicWebsiteAsset": "v83",
   "publicWebsiteReplacementApproved": false,
   "nextRequiredWork": [
-    "從 evaluated body 的乾淨頭部三角形重建 Aevrynd 自有 scalp shell，建立專用 UV、head 綁定與 frame 1/20 安全間距，不再修改舊 r101 scalp 網格",
-    "以 r155 的 40% CC0 curly 原始曲率作外層研究基礎，從新 scalp shell 生成 root coverage，避免長直初段、髮際細線與頂視露白",
-    "為Aevrynd runtime建立可控制透明度與深度的柔髮影或陰影代理，避免 EEVEE 逐根不透明陰影累加",
+    "從 r163 零穿模 deform-matched scalp shell 面積取樣 Aevrynd 自有 root、clump 與 coverage 曲線，完整複製混合骨權重，不再使用 rigid head-only scalp",
+    "保留 r162 的 7,711 束零穿模原始 CC0 curly 外層，重新建立頂部 root coverage 與可讀 clump 層，消除線網感與後緣灰帶",
+    "建立少量可調 clump shadow proxy，取代數萬根 EEVEE 硬陰影或完全關閉外層陰影的極端方式",
     "沿實際眼裂曲線重建局部上瞼摺、瞼板、下瞼緣與眶下溝拓撲形變",
     "rebuild independently raycast lower-lash short fibers and refine upper-lash clustering",
     "sculpt the nasal root, perioral volume, and chin profile",
@@ -27,5 +27,7 @@
     "pass multi-angle visual review",
     "pass static and dynamic collision audits",
     "pass runtime performance gate"
-  ]
+  ],
+  "latestHairScalpTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-deform-matched-scalp-r163.blend",
+  "latestHairScalpCandidateStatus": "r163 derives a clean scalp shell from the same shaped body surface, copies all 21 skin-weight groups and Armature deformation, excludes the concave temple crease, and keeps 1.2mm authored clearance. Its 2,626 vertices/2,438 faces and r162 177,353-point pruned curly layer pass frame 1/20 collision checks against body and all three clothing solids. It reduces crown exposure but still fails strict overall hair appearance, so it is a scalp deformation/collision technical candidate only."
 }
