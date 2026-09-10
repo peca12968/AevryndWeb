@@ -1,0 +1,129 @@
+{
+  "baseline": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-cornea-response-r175.blend",
+  "candidate": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-clearance-matched-lids-r181.blend",
+  "baselineResults": {
+    "frames": {
+      "1": {
+        "Eye_L_Caruncle": 0,
+        "Eye_L_Catchlight": 0,
+        "Eye_L_Cornea": 170,
+        "Eye_L_Iris": 0,
+        "Eye_L_Pupil": 0,
+        "Eye_L_Sclera": 41,
+        "Eye_L_TearMeniscus": 0,
+        "Eye_L_UpperLashes": 0,
+        "Eye_R_Caruncle": 0,
+        "Eye_R_Catchlight": 0,
+        "Eye_R_Cornea": 154,
+        "Eye_R_Iris": 6,
+        "Eye_R_Pupil": 0,
+        "Eye_R_Sclera": 32,
+        "Eye_R_TearMeniscus": 0,
+        "Eye_R_UpperLashes": 0,
+        "bodyFaceSelfIntersections": 95
+      },
+      "20": {
+        "Eye_L_Caruncle": 0,
+        "Eye_L_Catchlight": 0,
+        "Eye_L_Cornea": 170,
+        "Eye_L_Iris": 0,
+        "Eye_L_Pupil": 0,
+        "Eye_L_Sclera": 41,
+        "Eye_L_TearMeniscus": 0,
+        "Eye_L_UpperLashes": 0,
+        "Eye_R_Caruncle": 0,
+        "Eye_R_Catchlight": 0,
+        "Eye_R_Cornea": 156,
+        "Eye_R_Iris": 6,
+        "Eye_R_Pupil": 0,
+        "Eye_R_Sclera": 32,
+        "Eye_R_TearMeniscus": 0,
+        "Eye_R_UpperLashes": 0,
+        "bodyFaceSelfIntersections": 91
+      }
+    },
+    "nonfiniteShapeKeyPoints": 0
+  },
+  "candidateResults": {
+    "frames": {
+      "1": {
+        "Eye_L_Caruncle": 0,
+        "Eye_L_Catchlight": 0,
+        "Eye_L_Cornea": 140,
+        "Eye_L_Iris": 3,
+        "Eye_L_Pupil": 0,
+        "Eye_L_Sclera": 33,
+        "Eye_L_TearMeniscus": 0,
+        "Eye_L_UpperLashes": 0,
+        "Eye_R_Caruncle": 0,
+        "Eye_R_Catchlight": 0,
+        "Eye_R_Cornea": 124,
+        "Eye_R_Iris": 11,
+        "Eye_R_Pupil": 0,
+        "Eye_R_Sclera": 26,
+        "Eye_R_TearMeniscus": 0,
+        "Eye_R_UpperLashes": 0,
+        "bodyFaceSelfIntersections": 98
+      },
+      "20": {
+        "Eye_L_Caruncle": 0,
+        "Eye_L_Catchlight": 0,
+        "Eye_L_Cornea": 146,
+        "Eye_L_Iris": 3,
+        "Eye_L_Pupil": 0,
+        "Eye_L_Sclera": 33,
+        "Eye_L_TearMeniscus": 0,
+        "Eye_L_UpperLashes": 0,
+        "Eye_R_Caruncle": 0,
+        "Eye_R_Catchlight": 0,
+        "Eye_R_Cornea": 136,
+        "Eye_R_Iris": 11,
+        "Eye_R_Pupil": 0,
+        "Eye_R_Sclera": 26,
+        "Eye_R_TearMeniscus": 0,
+        "Eye_R_UpperLashes": 0,
+        "bodyFaceSelfIntersections": 94
+      }
+    },
+    "nonfiniteShapeKeyPoints": 0
+  },
+  "regressions": [
+    {
+      "frame": "1",
+      "layer": "Eye_L_Iris",
+      "baseline": 0,
+      "candidate": 3
+    },
+    {
+      "frame": "1",
+      "layer": "Eye_R_Iris",
+      "baseline": 6,
+      "candidate": 11
+    },
+    {
+      "frame": "1",
+      "layer": "bodyFaceSelfIntersections",
+      "baseline": 95,
+      "candidate": 98
+    },
+    {
+      "frame": "20",
+      "layer": "Eye_L_Iris",
+      "baseline": 0,
+      "candidate": 3
+    },
+    {
+      "frame": "20",
+      "layer": "Eye_R_Iris",
+      "baseline": 6,
+      "candidate": 11
+    },
+    {
+      "frame": "20",
+      "layer": "bodyFaceSelfIntersections",
+      "baseline": 91,
+      "candidate": 94
+    }
+  ],
+  "status": "FAIL"
+}
