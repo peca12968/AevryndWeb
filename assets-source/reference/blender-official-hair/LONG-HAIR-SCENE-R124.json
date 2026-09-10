@@ -1,0 +1,1070 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\reference\\blender-official-hair\\hair_nodes-female_hair_styles.blend",
+  "scene": "hairstyles main",
+  "camera": null,
+  "objects": [
+    {
+      "name": "back",
+      "type": "LIGHT",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          -3.4290871620178223,
+          2.3677597045898438,
+          17.957271575927734
+        ],
+        "maximum": [
+          -3.4290871620178223,
+          2.3677597045898438,
+          17.957271575927734
+        ]
+      },
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "Braids growth mesh",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          14.203450202941895,
+          -1.4688681364059448,
+          14.67590045928955
+        ],
+        "maximum": [
+          15.797399520874023,
+          0.31291434168815613,
+          16.413631439208984
+        ]
+      },
+      "materials": [
+        "hair scalp"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Braids hair head",
+      "type": "EMPTY",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          15.0,
+          0.0,
+          0.0
+        ],
+        "maximum": [
+          15.0,
+          0.0,
+          0.0
+        ]
+      },
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "curly growth mesh",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          9.21322250366211,
+          -1.4540126323699951,
+          14.674525260925293
+        ],
+        "maximum": [
+          10.78677749633789,
+          0.28169548511505127,
+          16.400089263916016
+        ]
+      },
+      "materials": [
+        "hair scalp"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "curly hair",
+      "type": "CURVES",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          8.500499725341797,
+          -1.96172034740448,
+          14.110206604003906
+        ],
+        "maximum": [
+          11.388688087463379,
+          1.0487173795700073,
+          16.778127670288086
+        ]
+      },
+      "materials": [
+        "Blond hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform"
+        },
+        {
+          "name": "Curly hair",
+          "type": "NODES",
+          "nodeGroup": "curly hair"
+        }
+      ]
+    },
+    {
+      "name": "braided hair",
+      "type": "CURVES",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          13.875720024108887,
+          -1.5404726266860962,
+          13.455469131469727
+        ],
+        "maximum": [
+          16.09574317932129,
+          0.9428767561912537,
+          16.460010528564453
+        ]
+      },
+      "materials": [
+        "Black hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.003"
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "Braided hair"
+        }
+      ]
+    },
+    {
+      "name": "Curly hair head",
+      "type": "EMPTY",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          10.0,
+          0.0,
+          0.0
+        ],
+        "maximum": [
+          10.0,
+          0.0,
+          0.0
+        ]
+      },
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "cyber punk growth mesh",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          -0.790187656879425,
+          -1.4658281803131104,
+          14.674525260925293
+        ],
+        "maximum": [
+          0.786777913570404,
+          0.28169548511505127,
+          16.400089263916016
+        ]
+      },
+      "materials": [
+        "hair scalp"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "cyberpunk hair",
+      "type": "CURVES",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          -0.9014450907707214,
+          -1.5468004941940308,
+          14.646296501159668
+        ],
+        "maximum": [
+          0.9631175994873047,
+          0.4394257366657257,
+          16.71459197998047
+        ]
+      },
+      "materials": [
+        "Punk hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Set Hair Curve Profile",
+          "type": "NODES",
+          "nodeGroup": "Set Hair Curve Profile"
+        },
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform"
+        },
+        {
+          "name": "Interpolate Hair Curves",
+          "type": "NODES",
+          "nodeGroup": "Interpolate Hair Curves"
+        },
+        {
+          "name": "Clump Hair Curves",
+          "type": "NODES",
+          "nodeGroup": "Clump Hair Curves"
+        },
+        {
+          "name": "Trim Hair Curves",
+          "type": "NODES",
+          "nodeGroup": "Trim Hair Curves"
+        }
+      ]
+    },
+    {
+      "name": "Cyberpunk hair head",
+      "type": "EMPTY",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "Eyebrows growth mesh",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          4.445478916168213,
+          -1.579016089439392,
+          15.36524486541748
+        ],
+        "maximum": [
+          5.554521083831787,
+          -1.2846715450286865,
+          15.558691024780273
+        ]
+      },
+      "materials": [
+        "hair scalp"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Eyebrows growth mesh.001",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          9.445478439331055,
+          -1.579016089439392,
+          15.36524486541748
+        ],
+        "maximum": [
+          10.554521560668945,
+          -1.2846715450286865,
+          15.558691024780273
+        ]
+      },
+      "materials": [
+        "hair scalp"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Eyebrows growth mesh.002",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          -0.5545210838317871,
+          -1.579016089439392,
+          15.36524486541748
+        ],
+        "maximum": [
+          0.5545210838317871,
+          -1.2846715450286865,
+          15.558691024780273
+        ]
+      },
+      "materials": [
+        "hair scalp"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Eyebrows growth mesh.003",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          14.445478439331055,
+          -1.579016089439392,
+          15.36524486541748
+        ],
+        "maximum": [
+          15.554521560668945,
+          -1.2846715450286865,
+          15.558691024780273
+        ]
+      },
+      "materials": [
+        "hair scalp"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "eyebrows.001",
+      "type": "CURVES",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          4.507674694061279,
+          -1.5833605527877808,
+          15.419288635253906
+        ],
+        "maximum": [
+          5.495455741882324,
+          -1.4310485124588013,
+          15.516268730163574
+        ]
+      },
+      "materials": [
+        "Eyebrows"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001"
+        },
+        {
+          "name": "Eeybrows",
+          "type": "NODES",
+          "nodeGroup": "Eeybrows"
+        }
+      ]
+    },
+    {
+      "name": "eyebrows.002",
+      "type": "CURVES",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          9.507675170898438,
+          -1.5833607912063599,
+          15.419288635253906
+        ],
+        "maximum": [
+          10.495455741882324,
+          -1.4310479164123535,
+          15.51626968383789
+        ]
+      },
+      "materials": [
+        "Eyebrows"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001"
+        },
+        {
+          "name": "Eeybrows",
+          "type": "NODES",
+          "nodeGroup": "Eeybrows"
+        }
+      ]
+    },
+    {
+      "name": "eyebrows.003",
+      "type": "CURVES",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          -0.492325097322464,
+          -1.5833605527877808,
+          15.419288635253906
+        ],
+        "maximum": [
+          0.49545523524284363,
+          -1.4310492277145386,
+          15.51626968383789
+        ]
+      },
+      "materials": [
+        "Eyebrows"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001"
+        },
+        {
+          "name": "Eeybrows",
+          "type": "NODES",
+          "nodeGroup": "Eeybrows"
+        }
+      ]
+    },
+    {
+      "name": "eyebrows.004",
+      "type": "CURVES",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          14.507674217224121,
+          -1.583361268043518,
+          15.419288635253906
+        ],
+        "maximum": [
+          15.49545669555664,
+          -1.431046962738037,
+          15.516268730163574
+        ]
+      },
+      "materials": [
+        "Eyebrows"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001"
+        },
+        {
+          "name": "Eeybrows",
+          "type": "NODES",
+          "nodeGroup": "Eeybrows"
+        }
+      ]
+    },
+    {
+      "name": "eyelashes",
+      "type": "CURVES",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          4.525933265686035,
+          -1.5350028276443481,
+          15.18798828125
+        ],
+        "maximum": [
+          5.476312160491943,
+          -1.3856498003005981,
+          15.385536193847656
+        ]
+      },
+      "materials": [
+        "Eyebrows"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001"
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "eyelashes"
+        }
+      ]
+    },
+    {
+      "name": "Eyelashes growth mesh",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          4.55342435836792,
+          -1.4797396659851074,
+          15.220852851867676
+        ],
+        "maximum": [
+          5.44657564163208,
+          -1.384899616241455,
+          15.36280345916748
+        ]
+      },
+      "materials": [
+        "hair scalp"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Eyelashes growth mesh.001",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          9.553424835205078,
+          -1.4797396659851074,
+          15.220852851867676
+        ],
+        "maximum": [
+          10.446575164794922,
+          -1.384899616241455,
+          15.36280345916748
+        ]
+      },
+      "materials": [
+        "hair scalp"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Eyelashes growth mesh.002",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          -0.44657543301582336,
+          -1.4797396659851074,
+          15.220852851867676
+        ],
+        "maximum": [
+          0.44657543301582336,
+          -1.384899616241455,
+          15.36280345916748
+        ]
+      },
+      "materials": [
+        "hair scalp"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Eyelashes growth mesh.003",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          14.553424835205078,
+          -1.4797396659851074,
+          15.220852851867676
+        ],
+        "maximum": [
+          15.446575164794922,
+          -1.384899616241455,
+          15.36280345916748
+        ]
+      },
+      "materials": [
+        "hair scalp"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "eyelashes.001",
+      "type": "CURVES",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          9.525933265686035,
+          -1.5350030660629272,
+          15.187990188598633
+        ],
+        "maximum": [
+          10.476311683654785,
+          -1.3856498003005981,
+          15.385534286499023
+        ]
+      },
+      "materials": [
+        "Eyebrows"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001"
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "eyelashes"
+        }
+      ]
+    },
+    {
+      "name": "eyelashes.002",
+      "type": "CURVES",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          -0.47406673431396484,
+          -1.5350022315979004,
+          15.18798828125
+        ],
+        "maximum": [
+          0.4763121008872986,
+          -1.3856498003005981,
+          15.385536193847656
+        ]
+      },
+      "materials": [
+        "Eyebrows"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001"
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "eyelashes"
+        }
+      ]
+    },
+    {
+      "name": "eyelashes.003",
+      "type": "CURVES",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          14.525912284851074,
+          -1.5350030660629272,
+          15.187989234924316
+        ],
+        "maximum": [
+          15.476311683654785,
+          -1.3856498003005981,
+          15.385533332824707
+        ]
+      },
+      "materials": [
+        "Eyebrows"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001"
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "eyelashes"
+        }
+      ]
+    },
+    {
+      "name": "eyes",
+      "type": "MESH",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          -0.437995970249176,
+          -1.4682000875473022,
+          15.169005393981934
+        ],
+        "maximum": [
+          0.43799591064453125,
+          -1.2039637565612793,
+          15.433241844177246
+        ]
+      },
+      "materials": [
+        "Head"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "hairband",
+      "type": "CURVE",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          14.845454216003418,
+          -0.9845460057258606,
+          12.941086769104004
+        ],
+        "maximum": [
+          15.219212532043457,
+          -0.6068609356880188,
+          13.065010070800781
+        ]
+      },
+      "materials": [
+        "Material"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "head",
+      "type": "MESH",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          -0.8784418106079102,
+          -1.756827473640442,
+          13.19823169708252
+        ],
+        "maximum": [
+          0.8793157935142517,
+          0.4950631260871887,
+          16.410877227783203
+        ]
+      },
+      "materials": [
+        "Head"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Info text.001",
+      "type": "FONT",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          4.02366304397583,
+          -0.7584819793701172,
+          11.875962257385254
+        ],
+        "maximum": [
+          6.217022895812988,
+          -0.7584819793701172,
+          12.761210441589355
+        ]
+      },
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "Info text.002",
+      "type": "FONT",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          13.87900161743164,
+          -0.758482038974762,
+          11.875962257385254
+        ],
+        "maximum": [
+          16.07236099243164,
+          -0.7584819793701172,
+          12.761210441589355
+        ]
+      },
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "Info text.003",
+      "type": "FONT",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          8.922096252441406,
+          -0.7584819793701172,
+          11.875962257385254
+        ],
+        "maximum": [
+          11.115456581115723,
+          -0.7584819793701172,
+          12.763946533203125
+        ]
+      },
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "key",
+      "type": "LIGHT",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          -3.819237232208252,
+          -4.5838518142700195,
+          17.953998565673828
+        ],
+        "maximum": [
+          -3.819237232208252,
+          -4.5838518142700195,
+          17.953998565673828
+        ]
+      },
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "long hair growth mesh",
+      "type": "MESH",
+      "hideRender": true,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          4.213222026824951,
+          -1.4540126323699951,
+          14.674525260925293
+        ],
+        "maximum": [
+          5.786777973175049,
+          0.28169548511505127,
+          16.400089263916016
+        ]
+      },
+      "materials": [
+        "hair scalp"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Long hair head",
+      "type": "EMPTY",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          5.0,
+          0.0,
+          0.0
+        ],
+        "maximum": [
+          5.0,
+          0.0,
+          0.0
+        ]
+      },
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "long hair main",
+      "type": "CURVES",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          3.6788532733917236,
+          -1.6212602853775024,
+          13.511229515075684
+        ],
+        "maximum": [
+          6.458469867706299,
+          1.1416999101638794,
+          16.549144744873047
+        ]
+      },
+      "materials": [
+        "Brown hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.002"
+        },
+        {
+          "name": "Long hair",
+          "type": "NODES",
+          "nodeGroup": "hair"
+        }
+      ]
+    },
+    {
+      "name": "long hair strands",
+      "type": "CURVES",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          4.003303527832031,
+          -1.5806218385696411,
+          14.866643905639648
+        ],
+        "maximum": [
+          5.808414459228516,
+          0.35974037647247314,
+          16.52088737487793
+        ]
+      },
+      "materials": [
+        "Brown hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.004"
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "Set Hair Curve Profile"
+        }
+      ]
+    },
+    {
+      "name": "new hair",
+      "type": "CURVES",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          -0.8890429139137268,
+          -1.4546337127685547,
+          13.508852005004883
+        ],
+        "maximum": [
+          1.1609541177749634,
+          0.7257354259490967,
+          16.502225875854492
+        ]
+      },
+      "materials": [
+        "Red hair"
+      ],
+      "modifiers": [
+        {
+          "name": "GeometryNodes.001",
+          "type": "NODES",
+          "nodeGroup": "curves to hair DABY"
+        },
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform"
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "hair"
+        },
+        {
+          "name": "Redistribute Curve Points",
+          "type": "NODES",
+          "nodeGroup": "Redistribute Curve Points"
+        }
+      ]
+    },
+    {
+      "name": "Plane",
+      "type": "MESH",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          -0.8777990341186523,
+          -1.443070411682129,
+          13.518852233886719
+        ],
+        "maximum": [
+          1.150944471359253,
+          0.7157354354858398,
+          16.491565704345703
+        ]
+      },
+      "materials": [],
+      "modifiers": [
+        {
+          "name": "\u81ea\u52d5\u5e73\u6ed1",
+          "type": "NODES",
+          "nodeGroup": "\u81ea\u52d5\u5e73\u6ed1"
+        }
+      ]
+    },
+    {
+      "name": "rim",
+      "type": "LIGHT",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          -8.153346061706543,
+          1.0843546390533447,
+          17.508739471435547
+        ],
+        "maximum": [
+          -8.153346061706543,
+          1.0843546390533447,
+          17.508739471435547
+        ]
+      },
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "Info text",
+      "type": "FONT",
+      "hideRender": false,
+      "hideViewport": false,
+      "bounds": {
+        "minimum": [
+          -0.975244402885437,
+          -0.7584819793701172,
+          11.875962257385254
+        ],
+        "maximum": [
+          0.9317474365234375,
+          -0.7584819793701172,
+          12.763946533203125
+        ]
+      },
+      "materials": [],
+      "modifiers": []
+    }
+  ]
+}

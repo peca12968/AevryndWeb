@@ -1,0 +1,340 @@
+{
+  "officialMain": {
+    "path": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\reference\\blender-official-hair\\hair_nodes-female_hair_styles.blend",
+    "object": "long hair main",
+    "rawCurves": 346,
+    "rawPoints": 6770,
+    "evaluatedCurves": 11193,
+    "evaluatedPoints": 211265,
+    "rawRadiusDomain": null,
+    "rawRadiusMinimumM": null,
+    "rawRadiusMaximumM": null,
+    "evaluatedRadiusDomain": "POINT",
+    "evaluatedRadiusMinimumM": 0.0010999999940395355,
+    "evaluatedRadiusMaximumM": 0.0010999999940395355,
+    "materials": [
+      {
+        "name": "Brown hair",
+        "nodes": [
+          {
+            "name": "Material Output",
+            "type": "ShaderNodeOutputMaterial",
+            "inputs": {
+              "Displacement": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Thickness": 0.0
+            },
+            "nodeTree": null
+          },
+          {
+            "name": "Reroute.001",
+            "type": "NodeReroute",
+            "inputs": {},
+            "nodeTree": null
+          },
+          {
+            "name": "Group",
+            "type": "ShaderNodeGroup",
+            "inputs": {
+              "Color 1": [
+                0.11692436784505844,
+                0.09404333680868149,
+                0.04665105789899826,
+                1.0
+              ],
+              "Color 2": [
+                0.031247558072209358,
+                0.016391107812523842,
+                0.004286494106054306,
+                1.0
+              ],
+              "Darken root": 0.6313559412956238,
+              "Root color length": 0.3220338821411133,
+              "Random color": 1.0,
+              "Noise Scale": 18.799999237060547
+            },
+            "nodeTree": "Hair shader EEVEE"
+          }
+        ],
+        "links": [
+          {
+            "fromNode": "Group",
+            "fromSocket": "EEVEE Shader",
+            "toNode": "Reroute.001",
+            "toSocket": "Input"
+          },
+          {
+            "fromNode": "Reroute.001",
+            "fromSocket": "Output",
+            "toNode": "Material Output",
+            "toSocket": "Surface"
+          }
+        ]
+      }
+    ]
+  },
+  "officialFlyaway": {
+    "path": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\reference\\blender-official-hair\\hair_nodes-female_hair_styles.blend",
+    "object": "long hair strands",
+    "rawCurves": 30,
+    "rawPoints": 360,
+    "evaluatedCurves": 30,
+    "evaluatedPoints": 360,
+    "rawRadiusDomain": null,
+    "rawRadiusMinimumM": null,
+    "rawRadiusMaximumM": null,
+    "evaluatedRadiusDomain": "POINT",
+    "evaluatedRadiusMinimumM": 0.0,
+    "evaluatedRadiusMaximumM": 1.0000000656873453e-05,
+    "materials": [
+      {
+        "name": "Brown hair",
+        "nodes": [
+          {
+            "name": "Material Output",
+            "type": "ShaderNodeOutputMaterial",
+            "inputs": {
+              "Displacement": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Thickness": 0.0
+            },
+            "nodeTree": null
+          },
+          {
+            "name": "Reroute.001",
+            "type": "NodeReroute",
+            "inputs": {},
+            "nodeTree": null
+          },
+          {
+            "name": "Group",
+            "type": "ShaderNodeGroup",
+            "inputs": {
+              "Color 1": [
+                0.11692436784505844,
+                0.09404333680868149,
+                0.04665105789899826,
+                1.0
+              ],
+              "Color 2": [
+                0.031247558072209358,
+                0.016391107812523842,
+                0.004286494106054306,
+                1.0
+              ],
+              "Darken root": 0.6313559412956238,
+              "Root color length": 0.3220338821411133,
+              "Random color": 1.0,
+              "Noise Scale": 18.799999237060547
+            },
+            "nodeTree": "Hair shader EEVEE"
+          }
+        ],
+        "links": [
+          {
+            "fromNode": "Group",
+            "fromSocket": "EEVEE Shader",
+            "toNode": "Reroute.001",
+            "toSocket": "Input"
+          },
+          {
+            "fromNode": "Reroute.001",
+            "fromSocket": "Output",
+            "toNode": "Material Output",
+            "toSocket": "Surface"
+          }
+        ]
+      }
+    ]
+  },
+  "aevryndMain": {
+    "path": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-tear-meniscus-r109.blend",
+    "object": "AevryndFemaleCC0LongHairStudyMain_v249r85",
+    "rawCurves": 11193,
+    "rawPoints": 211265,
+    "evaluatedCurves": 11193,
+    "evaluatedPoints": 211265,
+    "rawRadiusDomain": "POINT",
+    "rawRadiusMinimumM": 9.999999747378752e-06,
+    "rawRadiusMaximumM": 4.5000000682193786e-05,
+    "evaluatedRadiusDomain": "POINT",
+    "evaluatedRadiusMinimumM": 9.999999747378752e-06,
+    "evaluatedRadiusMaximumM": 4.5000000682193786e-05,
+    "materials": [
+      {
+        "name": "AevryndFemaleHairMaterial_v249r27",
+        "nodes": [
+          {
+            "name": "\u6750\u8cea\u8f38\u51fa",
+            "type": "ShaderNodeOutputMaterial",
+            "inputs": {
+              "Displacement": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Thickness": 0.0
+            },
+            "nodeTree": null
+          },
+          {
+            "name": "Principled Hair BSDF",
+            "type": "ShaderNodeBsdfHairPrincipled",
+            "inputs": {
+              "Color": [
+                0.01751299947500229,
+                0.005762999877333641,
+                0.002059000078588724,
+                1.0
+              ],
+              "Melanin": 0.7200000286102295,
+              "Melanin Redness": 0.3400000035762787,
+              "Tint": [
+                0.11500000208616257,
+                0.02800000086426735,
+                0.012000000104308128,
+                1.0
+              ],
+              "Absorption Coefficient": [
+                0.24553099274635315,
+                0.5199999809265137,
+                1.3650000095367432
+              ],
+              "Aspect Ratio": 0.8500000238418579,
+              "Roughness": 0.3100000023841858,
+              "Radial Roughness": 0.4300000071525574,
+              "Coat": 0.11999999731779099,
+              "IOR": 1.5499999523162842,
+              "Offset": 0.03490658476948738,
+              "Random Color": 0.18000000715255737,
+              "Random Roughness": 0.11999999731779099,
+              "Weight": 0.0,
+              "Reflection": 1.0,
+              "Transmission": 1.0,
+              "Secondary Reflection": 1.0
+            },
+            "nodeTree": null
+          },
+          {
+            "name": "\u66f2\u7dda\u8cc7\u8a0a",
+            "type": "ShaderNodeHairInfo",
+            "inputs": {},
+            "nodeTree": null
+          }
+        ],
+        "links": [
+          {
+            "fromNode": "\u66f2\u7dda\u8cc7\u8a0a",
+            "fromSocket": "Random",
+            "toNode": "Principled Hair BSDF",
+            "toSocket": "Random"
+          },
+          {
+            "fromNode": "Principled Hair BSDF",
+            "fromSocket": "BSDF",
+            "toNode": "\u6750\u8cea\u8f38\u51fa",
+            "toSocket": "Surface"
+          }
+        ]
+      }
+    ]
+  },
+  "aevryndFlyaway": {
+    "path": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-tear-meniscus-r109.blend",
+    "object": "AevryndFemaleCC0LongHairStudyFlyaway_v249r85",
+    "rawCurves": 30,
+    "rawPoints": 360,
+    "evaluatedCurves": 30,
+    "evaluatedPoints": 360,
+    "rawRadiusDomain": "POINT",
+    "rawRadiusMinimumM": 7.000000096013537e-06,
+    "rawRadiusMaximumM": 2.9999999242136255e-05,
+    "evaluatedRadiusDomain": "POINT",
+    "evaluatedRadiusMinimumM": 7.000000096013537e-06,
+    "evaluatedRadiusMaximumM": 2.9999999242136255e-05,
+    "materials": [
+      {
+        "name": "AevryndFemaleHairMaterial_v249r27",
+        "nodes": [
+          {
+            "name": "\u6750\u8cea\u8f38\u51fa",
+            "type": "ShaderNodeOutputMaterial",
+            "inputs": {
+              "Displacement": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Thickness": 0.0
+            },
+            "nodeTree": null
+          },
+          {
+            "name": "Principled Hair BSDF",
+            "type": "ShaderNodeBsdfHairPrincipled",
+            "inputs": {
+              "Color": [
+                0.01751299947500229,
+                0.005762999877333641,
+                0.002059000078588724,
+                1.0
+              ],
+              "Melanin": 0.7200000286102295,
+              "Melanin Redness": 0.3400000035762787,
+              "Tint": [
+                0.11500000208616257,
+                0.02800000086426735,
+                0.012000000104308128,
+                1.0
+              ],
+              "Absorption Coefficient": [
+                0.24553099274635315,
+                0.5199999809265137,
+                1.3650000095367432
+              ],
+              "Aspect Ratio": 0.8500000238418579,
+              "Roughness": 0.3100000023841858,
+              "Radial Roughness": 0.4300000071525574,
+              "Coat": 0.11999999731779099,
+              "IOR": 1.5499999523162842,
+              "Offset": 0.03490658476948738,
+              "Random Color": 0.18000000715255737,
+              "Random Roughness": 0.11999999731779099,
+              "Weight": 0.0,
+              "Reflection": 1.0,
+              "Transmission": 1.0,
+              "Secondary Reflection": 1.0
+            },
+            "nodeTree": null
+          },
+          {
+            "name": "\u66f2\u7dda\u8cc7\u8a0a",
+            "type": "ShaderNodeHairInfo",
+            "inputs": {},
+            "nodeTree": null
+          }
+        ],
+        "links": [
+          {
+            "fromNode": "\u66f2\u7dda\u8cc7\u8a0a",
+            "fromSocket": "Random",
+            "toNode": "Principled Hair BSDF",
+            "toSocket": "Random"
+          },
+          {
+            "fromNode": "Principled Hair BSDF",
+            "fromSocket": "BSDF",
+            "toNode": "\u6750\u8cea\u8f38\u51fa",
+            "toSocket": "Surface"
+          }
+        ]
+      }
+    ]
+  }
+}
