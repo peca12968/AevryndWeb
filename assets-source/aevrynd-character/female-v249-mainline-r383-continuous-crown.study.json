@@ -1,0 +1,75 @@
+{
+  "mainline": "v249",
+  "revision": "r383",
+  "date": "2026-09-11",
+  "model": "aevrynd-female-authoring-v249-mainline-continuous-crown-field-r383.blend",
+  "purpose": "Remove the final visible parent/follower scalp grid and replace the crown transition with an independent continuous dynamic surface-flow field.",
+  "architecture": {
+    "visiblePoints": 628440,
+    "reductionFromR382Percent": 13.2101549506708,
+    "removedLegacyPrimaryCurves": 296,
+    "removedLegacyFillCurves": 12136,
+    "frontSurfaceCurves": 8498,
+    "crownSurfaceCurves": 8446,
+    "rearSurfaceCurves": 9119,
+    "hairlineCurves": 122,
+    "layers": [
+      "hair.scalp_density_foundation.head_bound",
+      "hair.hairline_microclumps.head_bound",
+      "hair.front_surface_flow.dynamic",
+      "hair.crown_surface_flow.dynamic",
+      "hair.rear_surface_flow.dynamic"
+    ]
+  },
+  "verification": {
+    "collision": {
+      "file": "female-v249-mainline-r383.hair-collision-audit.json",
+      "frames": [1, 20],
+      "penetratingPoints": 0,
+      "minimumSignedM": 0.0019620779348770157,
+      "status": "PASS"
+    },
+    "motion": {
+      "file": "female-v249-mainline-r383.hair-motion-audit.json",
+      "frames": [1, 33, 61],
+      "peakMeanM": 0.0011179175019925547,
+      "peakP95M": 0.003970354009700712,
+      "peakMaximumM": 0.004998954818191849,
+      "rootMaximumM": 0.0,
+      "settleMaximumM": 0.0,
+      "penetratingPoints": 0,
+      "status": "PASS"
+    },
+    "contrast": {
+      "file": "female-v249-mainline-r383.perceptual-contrast-audit.json",
+      "centralSkinDeltaFromR371Percent": 0.0007648869694509841,
+      "hairlineContextDeltaFromR371Percent": 1.5409219295868803,
+      "status": "PASS"
+    }
+  },
+  "ownership": {
+    "geometry": "Aevrynd deterministic procedural authoring",
+    "materials": "Aevrynd-owned Blender nodes",
+    "externalRuntimeDependencies": [],
+    "metahumanOrUnrealContent": false
+  },
+  "strictVisualAssessment": {
+    "hairScoreOutOf100": 60,
+    "status": "TECHNICAL_PASS_VISUAL_FAIL",
+    "gains": [
+      "No visible parent/follower region remains in the final offline groom.",
+      "The crown overlaps the accepted continuous front and rear fields.",
+      "Front bands, rear seam gap and vertical temple spikes remain corrected.",
+      "Point count decreases while collision-safe motion is preserved."
+    ],
+    "failures": [
+      "The continuous fields still need sparse macro-lock control to avoid a uniformly combed surface.",
+      "The part highlight remains too bright in top views.",
+      "The back and side end profile still reads as a simple procedural bob cut.",
+      "No runtime card bake, card-level collision, memory or FPS gate exists yet."
+    ],
+    "websitePromotionApproved": false
+  },
+  "decision": "Promote r383 only as the current offline technical authoring node. Keep website v83.",
+  "nextRequiredWork": "Bake front, crown and rear surface fields into independently addressable Aevrynd-owned alpha hair-card layers; preserve the offline groom as source of truth, then compare card silhouette, alpha coverage, collision, memory and FPS before any website promotion."
+}
