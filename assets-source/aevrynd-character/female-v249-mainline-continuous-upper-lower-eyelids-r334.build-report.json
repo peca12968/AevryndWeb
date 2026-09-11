@@ -1,0 +1,72 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-integrated-eye-shader-r328.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-continuous-upper-lower-eyelids-r334.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r334-continuous-upper-lower-eyelids",
+  "lowerApertureM": 0.0041,
+  "additionalScleraRecessM": 0.0002,
+  "bodyEdit": {
+    "movedVertices": {
+      "L": 688,
+      "R": 687
+    },
+    "maximumDisplacementM": 0.0014809369992914287
+  },
+  "attachedCurves": [
+    {
+      "object": "AevryndEye_L_LowerLidMargin_R258",
+      "points": 41
+    },
+    {
+      "object": "AevryndEye_L_TearMeniscus_R258",
+      "points": 31
+    },
+    {
+      "object": "AevryndFemaleLowerLashes_L_R256",
+      "points": 33
+    },
+    {
+      "object": "AevryndEye_R_LowerLidMargin_R258",
+      "points": 41
+    },
+    {
+      "object": "AevryndEye_R_TearMeniscus_R258",
+      "points": 31
+    },
+    {
+      "object": "AevryndFemaleLowerLashes_R_R256",
+      "points": 33
+    }
+  ],
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-continuous-upper-lower-eyelids-r334.collision-audit.json",
+  "collisionStatus": "PASS",
+  "ownedAssetOnly": true,
+  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "strictBenchmark": "current-generation hero character, normal gameplay and face-close views",
+  "strictScores": {
+    "face": 42,
+    "hair": 34,
+    "overallCharacter": 38
+  },
+  "technicalGains": [
+    "The continuous 169,362-vertex body now forms both upper and lower eyelids.",
+    "The selected 4.1mm lower aperture moves 688 left and 687 right body vertices with a maximum 1.481mm displacement.",
+    "A minimal 0.2mm posterior eye correction clears both integrated spherical eyes at frames 1 and 20.",
+    "All 16 face layers remain head-bound, all body vertices remain weighted, and all 262,368 authored hair points remain penetration-free at frames 1, 33 and 61."
+  ],
+  "visualGains": [
+    "The lower lid has more visible thickness and slightly reduces the fully exposed, round eye opening."
+  ],
+  "visualFailures": [
+    "The eye opening remains too wide and the sclera too bright, preserving a staring mannequin expression.",
+    "Caruncle, tear trough, canthal transitions and lower-orbit planes remain shallow.",
+    "The retained r328 iris is cleaner than r331, but still lacks natural crypt and radial depth.",
+    "Skin remains waxy with weak pore, vascular, oil and pigmentation breakup.",
+    "Hairline gaps, uniform curtain flow, isolated guide-like strands and needle ends remain severe."
+  ],
+  "faceLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-continuous-upper-lower-eyelids-r334.face-layer-audit.json",
+  "bodyRigAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-continuous-upper-lower-eyelids-r334.body-rig-audit.json",
+  "hairLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-continuous-upper-lower-eyelids-r334.hair-layer-audit.json",
+  "hairMotionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-continuous-upper-lower-eyelids-r334.hair-motion-audit.json",
+  "reviewDirectory": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r334-continuous-upper-lower-eyelids",
+  "websitePromotionApproved": false
+}

@@ -1,0 +1,18 @@
+{
+  "range": "r331-r334",
+  "sourceCandidate": "aevrynd-female-authoring-v249-mainline-integrated-eye-shader-r328.blend",
+  "resultCandidate": "aevrynd-female-authoring-v249-mainline-continuous-upper-lower-eyelids-r334.blend",
+  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "findings": [
+    "r331's stronger collarette and veins read as graphic at review distance; retain the calmer r328 iris.",
+    "r332 selects the restrained 4.1mm lower aperture, but direct placement intersects the left sclera.",
+    "r333 establishes 0.2mm as the minimum tested posterior correction with zero body-eye overlap.",
+    "r334 integrates both changes and passes collision, face binding, body rig and hair motion audits."
+  ],
+  "strictScores": {
+    "face": 42,
+    "hair": 34,
+    "overallCharacter": 38
+  },
+  "websitePromotionApproved": false
+}
