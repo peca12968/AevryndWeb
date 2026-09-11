@@ -1,0 +1,406 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-delayed-clump-groom-r264.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-clearance-envelope-hair-r270.blend",
+  "authoringPrimaryGuides": 776,
+  "runtimeCards": {
+    "vertices": 37248,
+    "faces": 17848,
+    "chainVertexCounts": {
+      "hair_dyn.L.front": 12528,
+      "hair_dyn.R.front": 12768,
+      "hair_dyn.L.back": 3552,
+      "hair_dyn.C.back": 4944,
+      "hair_dyn.R.back": 3456
+    }
+  },
+  "dynamicChains": 5,
+  "dynamicSegments": 15,
+  "fixedStepHz": 120,
+  "frames": [
+    1,
+    17,
+    25,
+    33,
+    41,
+    61
+  ],
+  "colliders": [
+    {
+      "id": "head",
+      "shape": "sphere",
+      "bone": "head",
+      "center": [
+        0,
+        -0.002,
+        1.64
+      ],
+      "radius": 0.108
+    },
+    {
+      "id": "neck",
+      "shape": "capsule",
+      "bone": "neck",
+      "a": [
+        0,
+        0.02,
+        1.43
+      ],
+      "b": [
+        0,
+        0.02,
+        1.56
+      ],
+      "radius": 0.054
+    },
+    {
+      "id": "shoulders",
+      "shape": "capsule",
+      "bone": "chest",
+      "a": [
+        -0.21,
+        0.02,
+        1.4
+      ],
+      "b": [
+        0.21,
+        0.02,
+        1.4
+      ],
+      "radius": 0.07
+    },
+    {
+      "id": "upper_chest",
+      "shape": "capsule",
+      "bone": "chest",
+      "a": [
+        -0.13,
+        0.02,
+        1.34
+      ],
+      "b": [
+        0.13,
+        0.02,
+        1.34
+      ],
+      "radius": 0.088
+    }
+  ],
+  "collisionClamp": {
+    "1": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.000536463823664235
+    },
+    "2": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364552971514058
+    },
+    "3": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364655980883981
+    },
+    "4": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364448579712189
+    },
+    "5": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364620292311884
+    },
+    "6": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364477492548758
+    },
+    "7": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364439339246019
+    },
+    "8": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364623857531114
+    },
+    "9": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364508169805049
+    },
+    "10": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364652515709167
+    },
+    "11": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364611279219389
+    },
+    "12": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364422886486864
+    },
+    "13": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364609796743025
+    },
+    "14": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364618482417427
+    },
+    "15": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364596945582889
+    },
+    "16": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364632861528662
+    },
+    "17": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364586886571487
+    },
+    "18": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364660746636218
+    },
+    "19": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364606104194536
+    },
+    "20": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364583639675402
+    },
+    "21": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364613698475296
+    },
+    "22": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364621192711638
+    },
+    "23": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364617827581242
+    },
+    "24": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364486560210935
+    },
+    "25": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364620292311884
+    },
+    "26": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364610715332674
+    },
+    "27": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364487888073199
+    },
+    "28": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364629669202259
+    },
+    "29": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364626931623206
+    },
+    "30": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364476473914692
+    },
+    "31": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364470052882098
+    },
+    "32": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364646485759295
+    },
+    "33": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364637227103231
+    },
+    "34": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364596045183134
+    },
+    "35": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364594071579631
+    },
+    "36": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364592525438638
+    },
+    "37": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364601065593888
+    },
+    "38": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364492926673847
+    },
+    "39": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364643548091408
+    },
+    "40": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364583148548263
+    },
+    "41": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364454427763121
+    },
+    "42": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364615990401944
+    },
+    "43": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364403923522332
+    },
+    "44": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364600119719398
+    },
+    "45": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364483567973366
+    },
+    "46": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.000536444067620323
+    },
+    "47": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364694388845237
+    },
+    "48": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364543103496544
+    },
+    "49": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364596709114267
+    },
+    "50": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364592598198215
+    },
+    "51": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364650123738102
+    },
+    "52": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.000536463670869125
+    },
+    "53": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364626558730379
+    },
+    "54": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364452872527181
+    },
+    "55": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364602166082477
+    },
+    "56": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364640255720587
+    },
+    "57": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364616545193712
+    },
+    "58": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364521148294443
+    },
+    "59": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364612552511971
+    },
+    "60": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.0005364486924008816
+    },
+    "61": {
+      "angleScale": 0.0,
+      "penetratingVertices": 12,
+      "minimumSignedM": -0.000536463823664235
+    }
+  },
+  "layers": [
+    "hair.primary_clumps.authoring",
+    "hair.secondary_fill",
+    "hair.flyaways",
+    "hair.runtime_cards.dynamic"
+  ],
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r270-clearance-envelope-hair",
+  "status": "REJECTED_BASE_COLLISION",
+  "strictReviewReasons": [
+    "The outward clearance envelope creates 12 penetrating vertices at rest with minimum signed distance about -0.536mm."
+  ]
+}

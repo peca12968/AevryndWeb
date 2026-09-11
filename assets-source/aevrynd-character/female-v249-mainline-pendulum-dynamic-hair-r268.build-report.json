@@ -1,0 +1,408 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-delayed-clump-groom-r264.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-pendulum-dynamic-hair-r268.blend",
+  "authoringPrimaryGuides": 776,
+  "runtimeCards": {
+    "vertices": 37248,
+    "faces": 17848,
+    "chainVertexCounts": {
+      "hair_dyn.L.front": 12528,
+      "hair_dyn.R.front": 12768,
+      "hair_dyn.L.back": 3552,
+      "hair_dyn.C.back": 4944,
+      "hair_dyn.R.back": 3456
+    }
+  },
+  "dynamicChains": 5,
+  "dynamicSegments": 15,
+  "fixedStepHz": 120,
+  "frames": [
+    1,
+    17,
+    25,
+    33,
+    41,
+    61
+  ],
+  "colliders": [
+    {
+      "id": "head",
+      "shape": "sphere",
+      "bone": "head",
+      "center": [
+        0,
+        -0.002,
+        1.64
+      ],
+      "radius": 0.108
+    },
+    {
+      "id": "neck",
+      "shape": "capsule",
+      "bone": "neck",
+      "a": [
+        0,
+        0.02,
+        1.43
+      ],
+      "b": [
+        0,
+        0.02,
+        1.56
+      ],
+      "radius": 0.054
+    },
+    {
+      "id": "shoulders",
+      "shape": "capsule",
+      "bone": "chest",
+      "a": [
+        -0.21,
+        0.02,
+        1.4
+      ],
+      "b": [
+        0.21,
+        0.02,
+        1.4
+      ],
+      "radius": 0.07
+    },
+    {
+      "id": "upper_chest",
+      "shape": "capsule",
+      "bone": "chest",
+      "a": [
+        -0.13,
+        0.02,
+        1.34
+      ],
+      "b": [
+        0.13,
+        0.02,
+        1.34
+      ],
+      "radius": 0.088
+    }
+  ],
+  "collisionClamp": {
+    "1": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.001138845022978785
+    },
+    "2": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.001138712999818381
+    },
+    "3": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0008981171413324773
+    },
+    "4": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0005586337138083763
+    },
+    "5": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0005880283424630761
+    },
+    "6": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0009352008200949058
+    },
+    "7": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011388480947687185
+    },
+    "8": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011392155742839805
+    },
+    "9": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0005832181996083818
+    },
+    "10": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0007063630437187385
+    },
+    "11": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011387158203888248
+    },
+    "12": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.001138589177344329
+    },
+    "13": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011137488290842157
+    },
+    "14": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011387187259970233
+    },
+    "15": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.001138848303071427
+    },
+    "16": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011392158339731395
+    },
+    "17": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0005953831012845967
+    },
+    "18": {
+      "angleScale": 0.66,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00028217002974884053
+    },
+    "19": {
+      "angleScale": 0.5,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00024112285376531872
+    },
+    "20": {
+      "angleScale": 0.5,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00013956044074348029
+    },
+    "21": {
+      "angleScale": 0.5,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00035081572877970757
+    },
+    "22": {
+      "angleScale": 0.82,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00011382554112060461
+    },
+    "23": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0009466482624702621
+    },
+    "24": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011384716883782176
+    },
+    "25": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0003095211723120883
+    },
+    "26": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0007006880332482979
+    },
+    "27": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.001139463924573647
+    },
+    "28": {
+      "angleScale": 0.82,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0003283745845692465
+    },
+    "29": {
+      "angleScale": 0.66,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00029090817042742856
+    },
+    "30": {
+      "angleScale": 0.82,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00024715729159652255
+    },
+    "31": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0010307625780114904
+    },
+    "32": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.001138222185545601
+    },
+    "33": {
+      "angleScale": 0.82,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00011681690921250265
+    },
+    "34": {
+      "angleScale": 0.5,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0003106123949692119
+    },
+    "35": {
+      "angleScale": 0.5,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0002453564666211605
+    },
+    "36": {
+      "angleScale": 0.5,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00044318555046629626
+    },
+    "37": {
+      "angleScale": 0.82,
+      "penetratingVertices": 0,
+      "minimumSignedM": 3.778531686293718e-05
+    },
+    "38": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00043038619332946837
+    },
+    "39": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011388471102691256
+    },
+    "40": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011390906365704723
+    },
+    "41": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.000650607435090933
+    },
+    "42": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0007253864750964567
+    },
+    "43": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011386022956685338
+    },
+    "44": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011385912725927483
+    },
+    "45": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.001138594510848634
+    },
+    "46": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.001138719424034207
+    },
+    "47": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011388478275193847
+    },
+    "48": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011390907808390693
+    },
+    "49": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0006869395547255408
+    },
+    "50": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0002803184797812719
+    },
+    "51": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0004104693744011456
+    },
+    "52": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0007145431045501027
+    },
+    "53": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0010347734569222666
+    },
+    "54": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011389638332275354
+    },
+    "55": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011388480237428666
+    },
+    "56": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.001138845962373125
+    },
+    "57": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011388446266664687
+    },
+    "58": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011388433604224701
+    },
+    "59": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011388418954538793
+    },
+    "60": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011387259962702956
+    },
+    "61": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0011387245567675564
+    }
+  },
+  "layers": [
+    "hair.primary_clumps.authoring",
+    "hair.secondary_fill",
+    "hair.flyaways",
+    "hair.runtime_cards.dynamic"
+  ],
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r268-pendulum-dynamic-hair",
+  "status": "DYNAMIC_COLLISION_TECHNICAL_CANDIDATE",
+  "strictReviewReasons": [
+    "Horizontal pendulum axis, rig parenting and per-frame clamp produce zero negative signed-distance samples at six audit frames.",
+    "Root drift is below 1.7e-8m and settle error is 0.139mm.",
+    "Peak mean motion is 1.002mm and P95 is 2.729mm, below the 5mm readability gate."
+  ]
+}

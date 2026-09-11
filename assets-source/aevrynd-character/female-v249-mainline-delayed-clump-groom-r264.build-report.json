@@ -1,0 +1,59 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-subtle-lid-wetline-r258.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-delayed-clump-groom-r264.blend",
+  "guideCount": 776,
+  "followPerGuide": 14,
+  "strandCount": 10935,
+  "pointsPerStrand": 24,
+  "totalHairPoints": 262440,
+  "layerCurveCounts": {
+    "primary_clumps": 776,
+    "secondary_fill": 10088,
+    "flyaways": 71
+  },
+  "scalp": {
+    "vertices": 0,
+    "faces": 0,
+    "mode": "native skin parting; no opaque shell"
+  },
+  "hairClearanceM": 0.002,
+  "collisionProjection": {
+    "primary_clumps": {
+      "iteration_1_frame_1": 5708,
+      "iteration_1_frame_20": 4118,
+      "iteration_2_frame_1": 3600,
+      "iteration_2_frame_20": 3123,
+      "iteration_3_frame_1": 3002,
+      "iteration_3_frame_20": 2747
+    },
+    "secondary_fill": {
+      "iteration_1_frame_1": 68177,
+      "iteration_1_frame_20": 48715,
+      "iteration_2_frame_1": 42560,
+      "iteration_2_frame_20": 37433,
+      "iteration_3_frame_1": 36213,
+      "iteration_3_frame_20": 33550
+    },
+    "flyaways": {
+      "iteration_1_frame_1": 427,
+      "iteration_1_frame_20": 295,
+      "iteration_2_frame_1": 256,
+      "iteration_2_frame_20": 215,
+      "iteration_3_frame_1": 219,
+      "iteration_3_frame_20": 195
+    }
+  },
+  "layers": [
+    "hair.primary_clumps",
+    "hair.secondary_fill",
+    "hair.flyaways"
+  ],
+  "secondaryMotion": false,
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r264-delayed-clump-groom",
+  "status": "AUTHORING_LAYER_TECHNICAL_CANDIDATE",
+  "strictReviewReasons": [
+    "Best current three-layer authoring groom; delayed clumping restores continuous root coverage.",
+    "Hairline and cylindrical silhouette remain below hero quality.",
+    "Static multi-pose collision projection does not converge; runtime motion requires a separate deformable proxy."
+  ]
+}

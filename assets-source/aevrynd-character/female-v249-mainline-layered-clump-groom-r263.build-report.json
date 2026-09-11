@@ -1,0 +1,59 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-subtle-lid-wetline-r258.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-layered-clump-groom-r263.blend",
+  "guideCount": 776,
+  "followPerGuide": 14,
+  "strandCount": 10935,
+  "pointsPerStrand": 24,
+  "totalHairPoints": 262440,
+  "layerCurveCounts": {
+    "primary_clumps": 776,
+    "secondary_fill": 10088,
+    "flyaways": 71
+  },
+  "scalp": {
+    "vertices": 0,
+    "faces": 0,
+    "mode": "native skin parting; no opaque shell"
+  },
+  "hairClearanceM": 0.002,
+  "collisionProjection": {
+    "primary_clumps": {
+      "iteration_1_frame_1": 5664,
+      "iteration_1_frame_20": 4079,
+      "iteration_2_frame_1": 3558,
+      "iteration_2_frame_20": 3072,
+      "iteration_3_frame_1": 2986,
+      "iteration_3_frame_20": 2749
+    },
+    "secondary_fill": {
+      "iteration_1_frame_1": 70288,
+      "iteration_1_frame_20": 49902,
+      "iteration_2_frame_1": 43407,
+      "iteration_2_frame_20": 38050,
+      "iteration_3_frame_1": 36653,
+      "iteration_3_frame_20": 34006
+    },
+    "flyaways": {
+      "iteration_1_frame_1": 427,
+      "iteration_1_frame_20": 298,
+      "iteration_2_frame_1": 267,
+      "iteration_2_frame_20": 233,
+      "iteration_3_frame_1": 222,
+      "iteration_3_frame_20": 198
+    }
+  },
+  "layers": [
+    "hair.primary_clumps",
+    "hair.secondary_fill",
+    "hair.flyaways"
+  ],
+  "secondaryMotion": false,
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r263-layered-clump-groom",
+  "status": "REJECTED_VISUAL",
+  "strictReviewReasons": [
+    "Root followers clump too early and expose rib-like scalp rows.",
+    "Parting remains too broad and procedural.",
+    "Static frame 1/20 projection does not converge."
+  ]
+}

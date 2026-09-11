@@ -1,0 +1,99 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-delayed-clump-groom-r264.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-runtime-hair-rig-r265.blend",
+  "authoringPrimaryGuides": 776,
+  "runtimeCards": {
+    "vertices": 37248,
+    "faces": 17848,
+    "chainVertexCounts": {
+      "hair_dyn.L.front": 12528,
+      "hair_dyn.R.front": 12768,
+      "hair_dyn.L.back": 3552,
+      "hair_dyn.C.back": 4944,
+      "hair_dyn.R.back": 3456
+    }
+  },
+  "dynamicChains": 5,
+  "dynamicSegments": 15,
+  "fixedStepHz": 120,
+  "frames": [
+    1,
+    17,
+    25,
+    33,
+    41,
+    61
+  ],
+  "colliders": [
+    {
+      "id": "head",
+      "shape": "sphere",
+      "bone": "head",
+      "center": [
+        0,
+        -0.002,
+        1.64
+      ],
+      "radius": 0.108
+    },
+    {
+      "id": "neck",
+      "shape": "capsule",
+      "bone": "neck",
+      "a": [
+        0,
+        0.02,
+        1.43
+      ],
+      "b": [
+        0,
+        0.02,
+        1.56
+      ],
+      "radius": 0.054
+    },
+    {
+      "id": "shoulders",
+      "shape": "capsule",
+      "bone": "chest",
+      "a": [
+        -0.21,
+        0.02,
+        1.4
+      ],
+      "b": [
+        0.21,
+        0.02,
+        1.4
+      ],
+      "radius": 0.07
+    },
+    {
+      "id": "upper_chest",
+      "shape": "capsule",
+      "bone": "chest",
+      "a": [
+        -0.13,
+        0.02,
+        1.34
+      ],
+      "b": [
+        0.13,
+        0.02,
+        1.34
+      ],
+      "radius": 0.088
+    }
+  ],
+  "layers": [
+    "hair.primary_clumps.authoring",
+    "hair.secondary_fill",
+    "hair.flyaways",
+    "hair.runtime_cards.dynamic"
+  ],
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r265-runtime-hair-rig",
+  "status": "REJECTED_DYNAMIC_COLLISION",
+  "strictReviewReasons": [
+    "Runtime cards were not parented to the rig object, causing up to 64mm root drift and 10391 penetrating vertices."
+  ]
+}
