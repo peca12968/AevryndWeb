@@ -1,0 +1,49 @@
+{
+  "mainline": "v249",
+  "range": "r372-r376",
+  "date": "2026-09-11",
+  "baselineRetained": "aevrynd-female-authoring-v249-mainline-perceptual-contrast-groom-r371.blend",
+  "purpose": "Determine whether authored nonparallel locks, increased child density, explicit front-layer separation, staggered scalp roots or front-grid pruning can remove the procedural forehead bands.",
+  "experiments": {
+    "r372": {
+      "change": "Replaced 22 evenly spaced micro-clumps with 14 manually parameterized locks controlling width, sweep, lift, length and end fan.",
+      "points": 249888,
+      "verdict": "REJECT_VISUAL",
+      "finding": "Lock direction is less uniform, but low final-fiber density exposes more individual strokes."
+    },
+    "r373": {
+      "change": "Raised followers per guide from 18 to 42, raised front-lock fibers from 840 to 1,540 and reduced individual secondary radii.",
+      "points": 569088,
+      "verdict": "REJECT_VISUAL",
+      "finding": "The outer mass becomes more continuous, but several wide dark bands remain across the forehead."
+    },
+    "r374": {
+      "change": "Separated scalp, primary, secondary, hairline and authored-front-lock geometry into five independently addressable layers.",
+      "points": 569088,
+      "diagnostic": "v249r374-hairline-layer-isolation",
+      "verdict": "TECHNICAL_LAYER_GAIN_VISUAL_REJECT",
+      "finding": "Hiding the authored front locks does not remove the bands. Layer isolation proves the artifact originates in the primary/secondary scalp guide grid."
+    },
+    "r375": {
+      "change": "Replaced 22 regular scalp rows with 46 staggered rows, deterministic two-axis jitter and fewer columns per row.",
+      "guides": 613,
+      "points": 657792,
+      "verdict": "REJECT_VISUAL",
+      "finding": "Root rows are less regular but still converge into a few visible front trajectories; the approach treats guides as final hair and preserves the underlying artifact."
+    },
+    "r376": {
+      "change": "Removed all 185 primary/secondary guides classified as front while retaining the dedicated hairline and authored-lock layers.",
+      "points": 471312,
+      "verdict": "REJECT_VISUAL_SEVERE",
+      "finding": "The bands disappear only because the forehead coverage disappears. The density foundation and short locks are exposed as a cap and sparse fringe."
+    }
+  },
+  "rootCause": "The front-region scalp guides are arranged and curved as a small number of converging trajectory families, and their followers are rendered directly. Density and root jitter cannot hide the resulting bands; removing the families removes necessary coverage.",
+  "strictDecision": {
+    "promoteAnyExperiment": false,
+    "websiteReplacementApproved": false,
+    "authoritativeNodeRemains": "r371",
+    "reason": "No r372-r376 experiment exceeds the r371 overall visual result."
+  },
+  "nextRequiredWork": "Create a separate front-region surface-streamline field with continuous root distribution and controlled overlapping macro locks, then bake that high-density field to layered Aevrynd-owned hair cards for runtime. Preserve r371 skin/contrast and collision baselines."
+}
