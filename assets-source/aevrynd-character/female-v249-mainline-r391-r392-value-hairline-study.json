@@ -1,0 +1,73 @@
+{
+  "mainline": "v249",
+  "revisions": [
+    "r391",
+    "r392"
+  ],
+  "date": "2026-09-11",
+  "sourceOfTruth": "aevrynd-female-authoring-v249-mainline-continuous-crown-field-r383.blend",
+  "purpose": "Answer the progressive-darkening concern with a stricter fixed-camera luminance gate while testing irregular, surface-conforming runtime hairline cards and clustered end lengths.",
+  "iterationResults": [
+    {
+      "revision": "r391",
+      "result": "TECHNICAL_PROTOTYPE_VISUAL_REJECT",
+      "finding": "A lighter owned deep-brown atlas and clustered long-card lengths stopped the darkening trend, but 154 wide hairline cards produced coarse saw-tooth clumps."
+    },
+    {
+      "revision": "r392",
+      "result": "TECHNICAL_PASS_VISUAL_FAIL",
+      "finding": "220 narrower hairline cards reduced root clearance repairs from 218 to 16 vertices and passed all collision/motion frames. The finer strip remains too combed and isolated front lines still cross the forehead."
+    }
+  ],
+  "runtimeArchitecture": {
+    "model": "aevrynd-female-authoring-v249-mainline-runtime-fine-hairline-r392.blend",
+    "runtimeGlb": "runtime-groom-r392/aevrynd-female-hair-runtime-r392.glb",
+    "runtimeGlbBytes": 6685664,
+    "atlas": "textures/aevrynd-owned-hair-card-atlas-r392.png",
+    "cards": 1060,
+    "cardVertices": 50880,
+    "cardFaces": 24380,
+    "scalpCapVertices": 5812,
+    "scalpCapFaces": 5536
+  },
+  "verification": {
+    "collisionAndMotion": {
+      "file": "female-v249-mainline-r392.runtime-card-audit.json",
+      "frames": [
+        1,
+        20,
+        33,
+        61
+      ],
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0005892438427679281,
+      "peakP95M": 0.002906465724895589,
+      "peakMaximumM": 0.007342619280664327,
+      "rootMaximumM": 3.0719530773294423e-08,
+      "settleMaximumM": 0.0,
+      "status": "PASS"
+    },
+    "contrast": {
+      "file": "female-v249-mainline-r392.perceptual-contrast-audit.json",
+      "centralSkinDeltaFromR371Percent": 0.001833099374715097,
+      "hairlineContextDeltaFromR371Percent": 5.014592300142273,
+      "wholeFrameDeltaFromR371Percent": 1.3670101883019425,
+      "gate": "whole frame must not be darker than r371",
+      "status": "PASS"
+    }
+  },
+  "strictVisualAssessment": {
+    "hairScoreOutOf100": 50,
+    "status": "TECHNICAL_PASS_VISUAL_FAIL",
+    "failures": [
+      "The hairline remains a visible combed strip instead of clustered human growth.",
+      "Several isolated straight cards cross the right forehead.",
+      "The crown remains broad and procedural.",
+      "Side and rear silhouettes remain too curtain-like.",
+      "Browser alpha sorting, memory and FPS are not yet audited."
+    ],
+    "websitePromotionApproved": false
+  },
+  "decision": "Retain r383 as the offline authoring source. Use r392 only as the current runtime technical prototype and brightness reference; keep website v83 unchanged.",
+  "nextRequiredWork": "Rebuild the hairline from anatomical growth zones with tapered clumps, remove forehead-crossing cards, break the long-card curtain silhouette, then run browser performance and alpha-sorting gates."
+}
