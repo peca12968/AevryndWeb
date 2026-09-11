@@ -1,0 +1,85 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-scalp-parent-clearance-r282.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-scalp-boundary-cleanup-r283.blend",
+  "scalpObject": "AevryndFemaleScalpUnderlayer_R280",
+  "parent": "AevryndFemaleRig",
+  "parentType": "OBJECT",
+  "boundaryCleanup": {
+    "removedVertex": 533,
+    "linkedFaces": 4,
+    "before": [
+      759,
+      712
+    ],
+    "after": [
+      758,
+      708
+    ]
+  },
+  "restClearanceRepair": {
+    "targetM": 0.001,
+    "beforeMinimumSignedM": 0.0009135382861131802,
+    "repairedVertices": 668,
+    "sample": [
+      0,
+      2,
+      3,
+      4,
+      7,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      25,
+      27,
+      28,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      43
+    ]
+  },
+  "clearanceAudit": {
+    "1": {
+      "samples": 758,
+      "minimumSignedM": 0.0009373560196763719,
+      "maximumSignedM": 0.0010000714814850653,
+      "penetratingVertices": 0,
+      "penetratingSample": []
+    },
+    "33": {
+      "samples": 758,
+      "minimumSignedM": 0.0008941349988162983,
+      "maximumSignedM": 0.0010000714282796253,
+      "penetratingVertices": 0,
+      "penetratingSample": []
+    },
+    "61": {
+      "samples": 758,
+      "minimumSignedM": 0.0009373560196763719,
+      "maximumSignedM": 0.0010000714814850653,
+      "penetratingVertices": 0,
+      "penetratingSample": []
+    }
+  },
+  "failures": [],
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r283-scalp-boundary-cleanup",
+  "status": "SCALP_LAYER_PASS_MAIN_HAIR_COLLISION_FAIL",
+  "strictHairVisualScore": 54
+}

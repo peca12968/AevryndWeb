@@ -1,0 +1,51 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-scalp-underlayer-grouped-tips-r280.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-scalp-weight-transfer-r281.blend",
+  "scalpObject": "AevryndFemaleScalpUnderlayer_R280",
+  "weightTransfer": {
+    "sourceVertices": 759,
+    "targetVertices": 759,
+    "vertexGroupCount": 21,
+    "weightAssignments": 1112,
+    "minimumWeightSum": 0.9999999701976776,
+    "maximumWeightSum": 1.0000000296740836,
+    "unweightedVertices": 0
+  },
+  "clearanceAudit": {
+    "1": {
+      "samples": 759,
+      "minimumSignedM": -0.0007469289848813787,
+      "maximumSignedM": 0.0008273980929516256,
+      "penetratingVertices": 1
+    },
+    "33": {
+      "samples": 759,
+      "minimumSignedM": -0.026521182924625464,
+      "maximumSignedM": 0.03191198385820826,
+      "penetratingVertices": 378
+    },
+    "61": {
+      "samples": 759,
+      "minimumSignedM": -0.0007469289848813787,
+      "maximumSignedM": 0.0008273980929516256,
+      "penetratingVertices": 1
+    }
+  },
+  "failures": [
+    {
+      "frame": "1",
+      "penetratingVertices": 1
+    },
+    {
+      "frame": "33",
+      "penetratingVertices": 378
+    },
+    {
+      "frame": "61",
+      "penetratingVertices": 1
+    }
+  ],
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r281-scalp-weight-transfer",
+  "status": "REJECTED_MISSING_PARENT_TRANSFORM",
+  "strictHairVisualScore": 54
+}

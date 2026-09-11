@@ -1,0 +1,57 @@
+{
+  "baseline": "v249r279",
+  "goal": "Add separate collision-safe scalp, grouped-tip and soft hairline layers without changing the validated dynamic card topology.",
+  "iterations": [
+    {
+      "revision": "r280",
+      "result": "REJECT",
+      "score": 54,
+      "evidence": "Rigid head weighting without the body parent transform displaced the scalp shell during yaw."
+    },
+    {
+      "revision": "r281",
+      "result": "REJECT",
+      "score": 54,
+      "evidence": "All 759 scalp vertices received normalized source weights, but the missing rig parent still caused 31.9mm dynamic mismatch."
+    },
+    {
+      "revision": "r282",
+      "result": "REJECT_LAYER_GATE",
+      "score": 54,
+      "evidence": "Matching the body parent fixed dynamic drift; one ambiguous open-boundary vertex remained negative."
+    },
+    {
+      "revision": "r283",
+      "result": "REJECT_MAIN_COLLISION",
+      "score": 54,
+      "evidence": "Removing the four boundary faces gave 758/758 scalp points positive clearance, while premature tip shortening moved card point 16 into the body."
+    },
+    {
+      "revision": "r284",
+      "result": "TECHNICAL_PASS_VISUAL_FAIL",
+      "score": 54,
+      "evidence": "Restoring card points 15-17 recovered zero penetration and 5.058mm P95 motion; grouped shortening begins at the true tip region."
+    },
+    {
+      "revision": "r285",
+      "result": "REJECT_VISUAL",
+      "score": 51,
+      "evidence": "32 projected hairline cards kept 1.389mm clearance but dense alpha read as forehead spikes."
+    },
+    {
+      "revision": "r286",
+      "result": "VISUAL_IMPROVEMENT",
+      "score": 55,
+      "evidence": "Low-opacity owned alpha softened the transition layer without geometry or collision changes."
+    },
+    {
+      "revision": "r287",
+      "result": "TECHNICAL_PASS_VISUAL_FAIL",
+      "score": 55,
+      "evidence": "Matte zero-specular scalp material recedes behind cards; dynamic, material and three-layer clearance audits pass."
+    }
+  ],
+  "promotedTechnicalNode": "aevrynd-female-authoring-v249-mainline-matte-root-underlayer-r287.blend",
+  "websitePromotion": false,
+  "next": "Replace tiled crown rows with offset overlapping undercards and sculpt asymmetric outer locks while preserving the r287 layer and motion gates."
+}

@@ -1,0 +1,144 @@
+{
+  "model": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-matte-root-underlayer-r287.blend",
+  "objects": {
+    "AevryndFemaleRuntimeHairCards_R276": {
+      "vertices": 18432,
+      "polygons": 8832,
+      "materials": [
+        "Aevrynd_RuntimeHairCards_DenseAlpha_R276"
+      ],
+      "layer": "hair.runtime_cards.dynamic.alpha.wide_clumps",
+      "parent": "AevryndFemaleRig",
+      "armatureModifiers": [
+        "AevryndFemaleRig"
+      ],
+      "vertexGroups": [
+        "head",
+        "hair_dyn.L.front.01",
+        "hair_dyn.L.front.02",
+        "hair_dyn.L.front.03",
+        "hair_dyn.R.front.01",
+        "hair_dyn.R.front.02",
+        "hair_dyn.R.front.03",
+        "hair_dyn.L.back.01",
+        "hair_dyn.L.back.02",
+        "hair_dyn.L.back.03",
+        "hair_dyn.C.back.01",
+        "hair_dyn.C.back.02",
+        "hair_dyn.C.back.03",
+        "hair_dyn.R.back.01",
+        "hair_dyn.R.back.02",
+        "hair_dyn.R.back.03"
+      ]
+    },
+    "AevryndFemaleScalpUnderlayer_R280": {
+      "vertices": 758,
+      "polygons": 708,
+      "materials": [
+        "Aevrynd_ScalpUnderlayer_R280"
+      ],
+      "layer": "hair.scalp_underlayer.head_bound",
+      "parent": "AevryndFemaleRig",
+      "armatureModifiers": [
+        "AevryndFemaleRig"
+      ],
+      "vertexGroups": [
+        "pelvis",
+        "spine_01",
+        "spine_02",
+        "chest",
+        "neck",
+        "head",
+        "clavicle.L",
+        "upper_arm.L",
+        "forearm.L",
+        "hand.L",
+        "clavicle.R",
+        "upper_arm.R",
+        "forearm.R",
+        "hand.R",
+        "thigh.L",
+        "shin.L",
+        "foot.L",
+        "thigh.R",
+        "shin.R",
+        "foot.R",
+        "AevryndFacePrimarySmooth"
+      ]
+    },
+    "AevryndFemaleHairlineTransitionCards_R285": {
+      "vertices": 768,
+      "polygons": 352,
+      "materials": [
+        "Aevrynd_RuntimeHairCards_Alpha_R272"
+      ],
+      "layer": "hair.hairline_transition.head_bound",
+      "parent": "AevryndFemaleRig",
+      "armatureModifiers": [
+        "AevryndFemaleRig"
+      ],
+      "vertexGroups": [
+        "head"
+      ]
+    }
+  },
+  "clearance": {
+    "AevryndFemaleScalpUnderlayer_R280": {
+      "1": {
+        "samples": 758,
+        "minimumSignedM": 0.0009373560196763719,
+        "maximumSignedM": 0.0010000714814850653,
+        "penetratingVertices": 0
+      },
+      "33": {
+        "samples": 758,
+        "minimumSignedM": 0.0008941349988162983,
+        "maximumSignedM": 0.0010000714282796253,
+        "penetratingVertices": 0
+      },
+      "61": {
+        "samples": 758,
+        "minimumSignedM": 0.0009373560196763719,
+        "maximumSignedM": 0.0010000714814850653,
+        "penetratingVertices": 0
+      }
+    },
+    "AevryndFemaleHairlineTransitionCards_R285": {
+      "1": {
+        "samples": 768,
+        "minimumSignedM": 0.001389359764289111,
+        "maximumSignedM": 0.0015379454853245988,
+        "penetratingVertices": 0
+      },
+      "33": {
+        "samples": 768,
+        "minimumSignedM": 0.0013893552386434749,
+        "maximumSignedM": 0.0015379445248981938,
+        "penetratingVertices": 0
+      },
+      "61": {
+        "samples": 768,
+        "minimumSignedM": 0.001389359764289111,
+        "maximumSignedM": 0.0015379454853245988,
+        "penetratingVertices": 0
+      }
+    }
+  },
+  "scalpMaterial": {
+    "baseColor": [
+      0.0012000000569969416,
+      0.0002500000118743628,
+      0.00011999999696854502,
+      1.0
+    ],
+    "roughness": 1.0,
+    "specularIorLevel": 0.0
+  },
+  "frames": [
+    1,
+    33,
+    61
+  ],
+  "failures": [],
+  "status": "PASS"
+}
