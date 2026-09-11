@@ -1,0 +1,77 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-integrated-caruncle-r340.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r341-caruncle-wedge-sweep",
+  "variants": {
+    "a-r340-ellipsoid": {
+      "lateralTaper": 0.0,
+      "maximumLocalDisplacementM": {
+        "L": 0.0,
+        "R": 0.0
+      },
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        }
+      }
+    },
+    "b-soft-wedge": {
+      "lateralTaper": 0.25,
+      "maximumLocalDisplacementM": {
+        "L": 6.929742096728422e-05,
+        "R": 6.929742096728448e-05
+      },
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        }
+      }
+    },
+    "c-medium-wedge": {
+      "lateralTaper": 0.4,
+      "maximumLocalDisplacementM": {
+        "L": 0.00011087587216583224,
+        "R": 0.00011087586190229533
+      },
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        }
+      }
+    },
+    "d-strong-wedge": {
+      "lateralTaper": 0.55,
+      "maximumLocalDisplacementM": {
+        "L": 0.00015245432398337848,
+        "R": 0.00015245430650578088
+      },
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        }
+      }
+    }
+  },
+  "method": "Deform the 482-vertex owned ellipsoid into a nasal-base/globe-tip wedge by progressively tapering its lateral cross-section and shifting internal mass toward the nasal base.",
+  "status": "SELECT_B_SOFT_WEDGE",
+  "finding": "b-soft-wedge makes a restrained nasal-base/globe-tip asymmetry with zero body and eye overlap."
+}

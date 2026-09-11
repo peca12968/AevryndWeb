@@ -1,0 +1,41 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-integrated-caruncle-r340.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r345-canthus-fitted-wedge",
+  "lateralTaper": 0.25,
+  "maximumLocalDisplacementM": {
+    "L": 6.929742096728422e-05,
+    "R": 6.929742096728448e-05
+  },
+  "additionalMedialShiftM": 0.0025,
+  "totalMedialShiftFromR337M": 0.00285,
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-canthus-fitted-wedge-r345.collision-audit.json",
+  "collisionStatus": "PASS",
+  "ownedAssetOnly": true,
+  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "strictBenchmark": "current-generation hero character, normal gameplay and face-close views",
+  "strictScores": {
+    "face": 45,
+    "hair": 34,
+    "overallCharacter": 41
+  },
+  "technicalGains": [
+    "Both 482-vertex owned caruncles now use a true asymmetric cross-section with a broad nasal base and a tapered globe-facing tip.",
+    "The selected placement moves each layer 2.50mm farther toward the nasal canthus than r340, 2.85mm total from r337.",
+    "Body-eye, body-caruncle and eye-caruncle overlap are zero on both sides at frames 1 and 20.",
+    "Face binding, body rig and 262,368-point hair motion audits pass."
+  ],
+  "visualGains": [
+    "The muted tissue layer now sits at the inner-canthus fold and no longer reads as a lateral sclera dot."
+  ],
+  "visualFailures": [
+    "The surrounding skin still lacks a sculpted upper/lower canthal junction, so the separate layer remains detectable at extreme close range.",
+    "The aperture remains too wide and orbital volume, tear trough, asymmetry, skin and hair remain below target."
+  ],
+  "faceLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-canthus-fitted-wedge-r345.face-layer-audit.json",
+  "bodyRigAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-canthus-fitted-wedge-r345.body-rig-audit.json",
+  "hairLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-canthus-fitted-wedge-r345.hair-layer-audit.json",
+  "hairMotionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-canthus-fitted-wedge-r345.hair-motion-audit.json",
+  "reviewDirectory": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r345-canthus-fitted-wedge",
+  "websitePromotionApproved": false
+}
