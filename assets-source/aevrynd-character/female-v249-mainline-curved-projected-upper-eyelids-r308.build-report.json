@@ -1,0 +1,53 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-recessed-natural-eyes-r301.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-curved-projected-upper-eyelids-r308.blend",
+  "apertureHeightM": 0.0027,
+  "outerClearanceM": 0.0001,
+  "cornerRecedeM": 0.0035,
+  "projectionPower": 0.65,
+  "createdLayers": {
+    "L": {
+      "object": "AevryndEye_L_UpperLidSurface_R308",
+      "vertices": 205,
+      "faces": 160,
+      "projectedVertices": 205,
+      "maximumProjectionDistanceM": 0.003767110174521804
+    },
+    "R": {
+      "object": "AevryndEye_R_UpperLidSurface_R308",
+      "vertices": 205,
+      "faces": 160,
+      "projectedVertices": 205,
+      "maximumProjectionDistanceM": 0.003818195778876543
+    }
+  },
+  "movedCurves": {
+    "AevryndEye_L_UpperLidMargin_R258": 41,
+    "AevryndFemaleUpperLashes_L_R256": 114,
+    "AevryndEye_R_UpperLidMargin_R258": 41,
+    "AevryndFemaleUpperLashes_R_R256": 114
+  },
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-curved-projected-upper-eyelids-r308.collision-audit.json",
+  "collisionStatus": "PASS",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r308-curved-projected-upper-eyelids",
+  "ownedAssetOnly": true,
+  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "strictScores": {
+    "face": 60,
+    "hair": 63,
+    "overallCharacter": 59
+  },
+  "visualGains": [
+    "Upper lids now occlude the upper iris and reduce the round staring expression.",
+    "Corner depth follows the globe and no longer forms the severe flat visor seen in r305.",
+    "Upper lid margins and lashes follow the new aperture and remain head-bound."
+  ],
+  "visualFailures": [
+    "The separate lid surface still reads as a transitional overlay at close range; final work requires unified local eyelid retopology.",
+    "Orbital, lower-lid and tear-trough anatomy remain too smooth and generic.",
+    "Skin lacks regional oil, dry, vascular and pigmentation response and still reads waxy.",
+    "Hairline remains sparse with a bright scalp band; the bob silhouette and needle-like ends remain synthetic."
+  ],
+  "reviewDirectory": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r308-hair-eye-technical-pass",
+  "websitePromotionApproved": false
+}

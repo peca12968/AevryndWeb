@@ -1,0 +1,66 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-macro-lock-hierarchy-r297.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-pruned-dynamic-outliers-r298.blend",
+  "restEnvelopeM": 0.002,
+  "pruning": {
+    "AevryndFemalePrimaryClumps_R264": {
+      "invalidPoints": [],
+      "removedCurveIndices": [],
+      "curvesBefore": 776,
+      "curvesAfter": 776
+    },
+    "AevryndFemaleSecondaryFill_R264": {
+      "invalidPoints": [
+        {
+          "frame": 1,
+          "point": 65656,
+          "curve": 2735,
+          "signedM": -0.0019699178883456625
+        },
+        {
+          "frame": 61,
+          "point": 65656,
+          "curve": 2735,
+          "signedM": -0.0019699178883456625
+        }
+      ],
+      "removedCurveIndices": [
+        2735
+      ],
+      "curvesBefore": 10087,
+      "curvesAfter": 10086
+    },
+    "AevryndFemaleFlyaways_R264": {
+      "invalidPoints": [
+        {
+          "frame": 33,
+          "point": 543,
+          "curve": 22,
+          "signedM": -0.002096241179970093
+        }
+      ],
+      "removedCurveIndices": [
+        22
+      ],
+      "curvesBefore": 71,
+      "curvesAfter": 70
+    }
+  },
+  "audit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-pruned-dynamic-outliers-r298.audit.json",
+  "auditStatus": "PASS",
+  "motionSummary": {
+    "peakMeanM": 0.0009721441695611937,
+    "peakP95M": 0.0034924972303594357,
+    "peakMaximumM": 0.006398646040258354,
+    "rootMaximumM": 0.0,
+    "settleMaximumM": 0.0
+  },
+  "failures": [],
+  "topologyChanged": false,
+  "runtimeCardProxyPreserved": "AevryndFemaleRuntimeHairCards_R276",
+  "ownedAssetOnly": true,
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r298-pruned-dynamic-outliers",
+  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "strictHairVisualScore": 63,
+  "visualFinding": "Outliers are removed and motion passes; the silhouette, hairline and needle-like ends remain below hero quality."
+}

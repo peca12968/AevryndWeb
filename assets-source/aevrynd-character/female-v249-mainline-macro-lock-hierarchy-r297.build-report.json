@@ -1,0 +1,136 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-pruned-curve-outlier-r296.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-macro-lock-hierarchy-r297.blend",
+  "macroLockCount": 40,
+  "clusterSizes": [
+    25,
+    15,
+    8,
+    12,
+    6,
+    27,
+    10,
+    31,
+    13,
+    22,
+    22,
+    13,
+    20,
+    22,
+    15,
+    23,
+    30,
+    22,
+    21,
+    11,
+    26,
+    14,
+    28,
+    15,
+    27,
+    21,
+    22,
+    17,
+    34,
+    14,
+    20,
+    4,
+    21,
+    13,
+    16,
+    27,
+    25,
+    18,
+    24,
+    22
+  ],
+  "layerReports": {
+    "AevryndFemalePrimaryClumps_R264": {
+      "curves": 776,
+      "maximumShiftM": 0.014770484352388745
+    },
+    "AevryndFemaleSecondaryFill_R264": {
+      "curves": 10087,
+      "maximumShiftM": 0.022537321215297765
+    },
+    "AevryndFemaleFlyaways_R264": {
+      "curves": 71,
+      "maximumShiftM": 0.009690820164656526
+    }
+  },
+  "taperReports": {
+    "AevryndFemalePrimaryClumps_R264": {
+      "startFactor": 0.72,
+      "changedPoints": 5432,
+      "tipBeforeRange": [
+        1.0880000445467886e-05,
+        1.0880000445467886e-05
+      ],
+      "tipAfter": 0.0
+    },
+    "AevryndFemaleSecondaryFill_R264": {
+      "startFactor": 0.6,
+      "changedPoints": 100870,
+      "tipBeforeRange": [
+        3.5000000480067683e-06,
+        3.5000000480067683e-06
+      ],
+      "tipAfter": 0.0
+    },
+    "AevryndFemaleFlyaways_R264": {
+      "startFactor": 0.66,
+      "changedPoints": 568,
+      "tipBeforeRange": [
+        1.9999999949504854e-06,
+        1.9999999949504854e-06
+      ],
+      "tipAfter": 0.0
+    }
+  },
+  "repair": {
+    "AevryndFemalePrimaryClumps_R264": {
+      "movedPoints": 585,
+      "maximumCorrectionM": 0.00604750030071763
+    },
+    "AevryndFemaleSecondaryFill_R264": {
+      "movedPoints": 6014,
+      "maximumCorrectionM": 0.00883716607573301
+    },
+    "AevryndFemaleFlyaways_R264": {
+      "movedPoints": 30,
+      "maximumCorrectionM": 0.0027625709321602095
+    }
+  },
+  "audit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-macro-lock-hierarchy-r297.audit.json",
+  "auditStatus": "FAIL",
+  "motionSummary": {
+    "peakMeanM": 0.0009720282371347635,
+    "peakP95M": 0.0034925251148764922,
+    "peakMaximumM": 0.006398646040258354,
+    "rootMaximumM": 0.0,
+    "settleMaximumM": 0.0
+  },
+  "failures": [
+    {
+      "frame": 1,
+      "object": "AevryndFemaleSecondaryFill_R264",
+      "penetratingPoints": 1
+    },
+    {
+      "frame": 33,
+      "object": "AevryndFemaleFlyaways_R264",
+      "penetratingPoints": 1
+    },
+    {
+      "frame": 61,
+      "object": "AevryndFemaleSecondaryFill_R264",
+      "penetratingPoints": 1
+    }
+  ],
+  "runtimeProxyPreserved": "AevryndFemaleRuntimeHairCards_R276",
+  "ownedAssetOnly": true,
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r297-macro-lock-hierarchy",
+  "status": "TECHNICAL_FAIL_VISUAL_FAIL",
+  "strictHairVisualScore": 63,
+  "visualFinding": "Macro families and tapered ends improve grouping, but one secondary rest outlier and one moving flyaway penetrate."
+}
