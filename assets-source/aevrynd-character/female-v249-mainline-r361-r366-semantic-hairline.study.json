@@ -1,0 +1,67 @@
+{
+  "range": "v249r361-v249r366",
+  "date": "2026-09-11",
+  "source": "aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "purpose": "Replace the r360 helmet-like scalp and open rear seam with an owned semantic hairline, native visible scalp, and collision-safe rear closure.",
+  "iterations": [
+    {
+      "revision": "r361",
+      "change": "Natural asymmetric scalp contour, skin-adjacent scalp shader, short transition roots, reduced rear divergence.",
+      "verdict": "REJECTED",
+      "evidence": "Long roots below the designed hairline became sparse bangs; transition roots inherited excessive long-hair motion."
+    },
+    {
+      "revision": "r362",
+      "change": "Filtered long roots below the hairline, detached transition roots from secondary motion, densified scalp boundary, added 44 rear bridge guides.",
+      "verdict": "PARTIAL",
+      "evidence": "Rear triangular opening became a narrow seam, but the frontal scalp patch remained exposed."
+    },
+    {
+      "revision": "r363",
+      "change": "Matched scalp shell to the owned body skin range, narrowed the part root gap, strongly routed front lengths toward the temples.",
+      "verdict": "PARTIAL",
+      "evidence": "Removed the painted-cap colour difference but exposed too much frontal scalp."
+    },
+    {
+      "revision": "r364",
+      "change": "Added 81 frontal guides with generated followers.",
+      "verdict": "REJECTED",
+      "evidence": "Followers collapsed into two brush-like frontal clumps."
+    },
+    {
+      "revision": "r365",
+      "change": "Replaced frontal follower clumps with 324 independent head-bound overlay fibres.",
+      "verdict": "PARTIAL",
+      "evidence": "Flow became continuous, but individual roots remained sparse and the redundant scalp shell seam was visible."
+    },
+    {
+      "revision": "r366",
+      "change": "Disabled the redundant scalp shell and increased distributed frontal overlay to 968 independently varied fibres.",
+      "verdict": "TECHNICAL_NODE",
+      "evidence": "No shell seam, closed rear crown, stable exposure, and zero measured penetration. Hairline density and fibre grouping remain visibly procedural."
+    }
+  ],
+  "r366": {
+    "curvePointsPerFrame": 252960,
+    "frontOverlayCurves": 968,
+    "rearBridgeGuides": 44,
+    "skinMeanLinear": 0.5208,
+    "acceptedReferenceSkinMeanLinear": 0.5255,
+    "brightnessDeltaPercent": -0.9,
+    "collision": {
+      "frames": [1, 20],
+      "penetratingPoints": 0,
+      "minimumDynamicClearanceM": 0.000691767389071174,
+      "status": "PASS"
+    },
+    "strictScores": {
+      "hairline": 38,
+      "crownAndPart": 36,
+      "rearClosure": 48,
+      "motionAndCollision": 64,
+      "hairOverall": 39
+    },
+    "websitePromotionApproved": false,
+    "nextRequiredChange": "Replace uniformly distributed frontal fibres with authored low-frequency clumps and controlled density breakup while preserving the r366 native-scalp and rear-bridge architecture."
+  }
+}
