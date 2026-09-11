@@ -1,0 +1,36 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-subtle-lid-wetline-r258.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-cc0-guide-hair-r259.blend",
+  "guideCount": 514,
+  "followPerGuide": 12,
+  "strandCount": 6168,
+  "pointsPerStrand": 24,
+  "totalHairPoints": 148032,
+  "scalp": {
+    "vertices": 7362,
+    "faces": 7110,
+    "clearanceM": 0.00085
+  },
+  "hairClearanceM": 0.002,
+  "collisionProjection": {
+    "iteration_1_frame_1": 34838,
+    "iteration_1_frame_20": 25295,
+    "iteration_2_frame_1": 22555,
+    "iteration_2_frame_20": 19181,
+    "iteration_3_frame_1": 19089,
+    "iteration_3_frame_20": 17138
+  },
+  "layers": [
+    "hair.scalp.shadow",
+    "hair.guide_follow.mass"
+  ],
+  "secondaryMotion": false,
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r259-cc0-guide-hair",
+  "strictVisualStatus": "FAIL",
+  "strictVisualReasons": [
+    "The scalp-shadow shell creates a hard, nearly horizontal forehead boundary.",
+    "The central part is too wide and continues too visibly toward the rear.",
+    "Guide families still read as straight fibers with blunt, uniform ends."
+  ],
+  "status": "REJECTED_VISUAL_TECHNICAL_FOUNDATION"
+}

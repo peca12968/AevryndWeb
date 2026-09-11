@@ -1,0 +1,58 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-brow-microclusters-r256.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-lid-wetline-tear-r257.blend",
+  "createdLayers": [
+    "AevryndEye_L_UpperLidMargin_R257",
+    "AevryndEye_L_LowerLidMargin_R257",
+    "AevryndEye_L_TearMeniscus_R257",
+    "AevryndEye_L_Caruncle_R257",
+    "AevryndEye_R_UpperLidMargin_R257",
+    "AevryndEye_R_LowerLidMargin_R257",
+    "AevryndEye_R_TearMeniscus_R257",
+    "AevryndEye_R_Caruncle_R257"
+  ],
+  "metrics": {
+    "L": {
+      "center": [
+        0.03448484092950821,
+        -0.12779271602630615,
+        1.607891321182251
+      ],
+      "scleraFrontY": -0.1399417668581009,
+      "upperMarginPoints": 41,
+      "lowerMarginPoints": 41,
+      "tearMeniscusPoints": 31,
+      "frontLayerOrder": {
+        "lidMarginOffsetM": 0.0003,
+        "tearOffsetM": 0.00052
+      }
+    },
+    "R": {
+      "center": [
+        -0.034508116543293,
+        -0.12758800387382507,
+        1.6078909635543823
+      ],
+      "scleraFrontY": -0.13975679874420166,
+      "upperMarginPoints": 41,
+      "lowerMarginPoints": 41,
+      "tearMeniscusPoints": 31,
+      "frontLayerOrder": {
+        "lidMarginOffsetM": 0.0003,
+        "tearOffsetM": 0.00052
+      }
+    }
+  },
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r257-lid-wetline-tear",
+  "limitations": [
+    "identity sculpt pending",
+    "eyelid aperture corrective pending",
+    "hair pending"
+  ],
+  "strictVisualStatus": "FAIL",
+  "strictVisualReasons": [
+    "Lid-margin curves are too thick and saturated, reading as red outlines.",
+    "Caruncle geometry is oversized and appears as a red bead."
+  ],
+  "status": "REJECTED_VISUAL_INTERMEDIATE"
+}

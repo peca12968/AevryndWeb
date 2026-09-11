@@ -1,0 +1,35 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-subtle-lid-wetline-r258.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-natural-root-groom-r260.blend",
+  "guideCount": 776,
+  "followPerGuide": 14,
+  "strandCount": 10864,
+  "pointsPerStrand": 24,
+  "totalHairPoints": 260736,
+  "scalp": {
+    "vertices": 0,
+    "faces": 0,
+    "mode": "native skin parting; no opaque shell"
+  },
+  "hairClearanceM": 0.002,
+  "collisionProjection": {
+    "iteration_1_frame_1": 85319,
+    "iteration_1_frame_20": 59835,
+    "iteration_2_frame_1": 54068,
+    "iteration_2_frame_20": 46041,
+    "iteration_3_frame_1": 46263,
+    "iteration_3_frame_20": 41430
+  },
+  "layers": [
+    "hair.guide_follow.mass"
+  ],
+  "secondaryMotion": false,
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r260-natural-root-groom",
+  "status": "REJECTED_VISUAL",
+  "strictVisualStatus": "FAIL",
+  "strictVisualReasons": [
+    "Opaque scalp boundary removed, but posterior part opens into a large bald wedge.",
+    "Frontal roots read as sparse combed bangs instead of a continuous hairline.",
+    "Collision projection does not converge and cannot count as a collision pass."
+  ]
+}

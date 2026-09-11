@@ -1,5 +1,6 @@
 import json
 import math
+import os
 from pathlib import Path
 
 import bpy
@@ -7,8 +8,8 @@ from mathutils.bvhtree import BVHTree
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "assets-source/aevrynd-character/aevrynd-female-authoring-v249-mainline-brow-microclusters-r256.blend"
-REPORT = ROOT / "assets-source/aevrynd-character/female-v249-mainline-brow-microclusters-r256.face-layer-audit.json"
+SOURCE = Path(os.environ.get("AEVRYND_FACE_LAYER_SOURCE", ROOT / "assets-source/aevrynd-character/aevrynd-female-authoring-v249-mainline-brow-microclusters-r256.blend"))
+REPORT = Path(os.environ.get("AEVRYND_FACE_LAYER_REPORT", ROOT / "assets-source/aevrynd-character/female-v249-mainline-brow-microclusters-r256.face-layer-audit.json"))
 BODY = "AevryndFemaleBody_CC0_R249"
 RIG = "AevryndFemaleRig"
 HEAD_BONE = "head"
@@ -31,6 +32,14 @@ def curve_points_world(obj):
             world = obj.matrix_world @ point.co.xyz
             points.append(world)
     return points
+
+
+def object_points_world(obj):
+    if obj.type == "CURVE":
+        return curve_points_world(obj)
+    if obj.type == "MESH":
+        return [obj.matrix_world @ vertex.co for vertex in obj.data.vertices]
+    return [obj.matrix_world.translation.copy()]
 
 
 def curve_roots_world(obj):
@@ -77,8 +86,8 @@ for frame in FRAMES:
             violations.append({"frame": frame, "object": obj.name, "type": "brow_root_body_penetration", "count": penetrating})
     inverse_bone = bone_matrix_world(rig).inverted()
     current_bone_space = {
-        obj.name: [tuple(inverse_bone @ point) for point in curve_points_world(obj)]
-        for obj in curve_objects
+        obj.name: [tuple(inverse_bone @ point) for point in object_points_world(obj)]
+        for obj in face_objects
     }
     if reference_bone_space is None:
         reference_bone_space = current_bone_space
@@ -106,6 +115,7 @@ report = {
     "frames": frames,
     "faceLayerCount": len(face_objects),
     "curveLayerCount": len(curve_objects),
+    "trackedHeadBoundLayerCount": len(face_objects),
     "bindingViolations": binding_violations,
     "violations": violations,
     "status": "PASS" if not violations else "FAIL",

@@ -1,0 +1,35 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-subtle-lid-wetline-r258.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-regional-flow-groom-r261.blend",
+  "guideCount": 776,
+  "followPerGuide": 14,
+  "strandCount": 10864,
+  "pointsPerStrand": 24,
+  "totalHairPoints": 260736,
+  "scalp": {
+    "vertices": 0,
+    "faces": 0,
+    "mode": "native skin parting; no opaque shell"
+  },
+  "hairClearanceM": 0.002,
+  "collisionProjection": {
+    "iteration_1_frame_1": 76990,
+    "iteration_1_frame_20": 54795,
+    "iteration_2_frame_1": 48601,
+    "iteration_2_frame_20": 41895,
+    "iteration_3_frame_1": 41364,
+    "iteration_3_frame_20": 37644
+  },
+  "layers": [
+    "hair.guide_follow.mass"
+  ],
+  "secondaryMotion": false,
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r261-regional-flow-groom",
+  "status": "REJECTED_VISUAL",
+  "strictVisualStatus": "FAIL",
+  "strictVisualReasons": [
+    "Posterior wedge is narrower than r260 but remains visibly open from crown to nape.",
+    "Frontal Bezier flow bends downward too early and reads as sparse bangs.",
+    "Collision projection does not converge and cannot count as a collision pass."
+  ]
+}
