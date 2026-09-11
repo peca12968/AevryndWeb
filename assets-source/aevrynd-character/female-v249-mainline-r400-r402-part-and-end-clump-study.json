@@ -1,0 +1,88 @@
+{
+  "mainline": "v249",
+  "revisions": [
+    "r400",
+    "r401",
+    "r402"
+  ],
+  "date": "2026-09-11",
+  "baseline": "r399",
+  "purpose": "Narrow the procedural center part and replace index-randomized curtain ends with spatially coherent macro length groups.",
+  "iterationResults": [
+    {
+      "revision": "r400",
+      "result": "REJECTED_VISUAL",
+      "finding": "A new 60-card part layer closed some frontal scalp but rendered as ladder-like transverse sheets in the top view and produced stray top spikes."
+    },
+    {
+      "revision": "r401",
+      "result": "REJECTED_VISUAL",
+      "finding": "Root-space rear length clustering at 0.69-0.99 created visible macro variation but opened an unnatural right postauricular gap."
+    },
+    {
+      "revision": "r402",
+      "result": "TECHNICAL_PASS_VISUAL_FAIL_SCORE_59",
+      "finding": "Bounding the rear spatial scale to 0.80-0.99 retained layered end variation without the large ear gap. The remaining rear flow is still too straight and the center part remains wide."
+    }
+  ],
+  "runtimeArchitecture": {
+    "model": "aevrynd-female-authoring-v249-mainline-runtime-balanced-end-clumps-r402.blend",
+    "runtimeGlb": "runtime-groom-r402/aevrynd-female-hair-runtime-r402.glb",
+    "runtimeGlbBytes": 5774936,
+    "cards": 820,
+    "cardVertices": 39360,
+    "cardFaces": 18860,
+    "hairlineDensityVertices": 648,
+    "layers": [
+      "scalp density",
+      "hairline density",
+      "front cards",
+      "crown cards",
+      "rear cards",
+      "baby-hair cards"
+    ]
+  },
+  "verification": {
+    "collisionAndMotion": {
+      "file": "female-v249-mainline-r402.runtime-card-audit.json",
+      "frames": [
+        1,
+        20,
+        33,
+        61
+      ],
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0001101304687836091,
+      "peakP95M": 0.0031345355885369383,
+      "peakMaximumM": 0.007615645455847,
+      "rootMaximumM": 1.666000468656264e-08,
+      "settleMaximumM": 0.0,
+      "status": "PASS"
+    },
+    "contrast": {
+      "file": "female-v249-mainline-r402.perceptual-contrast-audit.json",
+      "centralSkinDeltaFromR371Percent": 0.0017795681954035913,
+      "hairlineContextDeltaFromR371Percent": 5.524240274042325,
+      "wholeFrameDeltaFromR371Percent": 1.5796268772983346,
+      "status": "PASS"
+    }
+  },
+  "strictVisualAssessment": {
+    "hairScoreOutOf100": 59,
+    "status": "TECHNICAL_PASS_VISUAL_FAIL",
+    "gains": [
+      "Hairline keeps the r399 soft density transition.",
+      "Cross-forehead guides remain removed.",
+      "Rear ends have bounded spatial length groups instead of a perfectly even curtain."
+    ],
+    "failures": [
+      "Center part remains too wide.",
+      "Top surface still reads as overlapping flat sheets.",
+      "Rear cards need curved macro locks and depth layers.",
+      "Browser alpha sorting, memory and FPS remain unverified."
+    ],
+    "websitePromotionApproved": false
+  },
+  "decision": "Promote r402 only as the latest runtime technical prototype. Keep r383 as offline authoring truth and website v83 unchanged.",
+  "nextRequiredWork": "Author a narrow offset part and interleaved top macro locks in the guide source, then add curved rear inner/outer groups before browser gates."
+}
