@@ -1,0 +1,132 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-continuous-upper-lower-eyelids-r334.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r336-deep-sclera-response-sweep",
+  "variants": {
+    "a-r334-baseline": {
+      "scleraRamp": {
+        "low": [
+          0.58,
+          0.46,
+          0.42,
+          1.0
+        ],
+        "high": [
+          0.94,
+          0.86,
+          0.76,
+          1.0
+        ]
+      },
+      "coatWeight": 0.18,
+      "coatRoughness": 0.12,
+      "fixedExposureEV": 0.0,
+      "eyeBandMetrics": {
+        "brightEyeBandMeanLinear": 0.7672086100829095,
+        "brightEyeBandSamples": 27054,
+        "nearClipPercentOfBrightSamples": 40.68529607451763,
+        "cropSamples": 246400
+      },
+      "renders": {
+        "eyes": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r336-deep-sclera-response-sweep\\a-r334-baseline-eyes.png",
+        "face": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r336-deep-sclera-response-sweep\\a-r334-baseline-face.png",
+        "three-quarter": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r336-deep-sclera-response-sweep\\a-r334-baseline-three-quarter.png"
+      }
+    },
+    "b-deep-warm": {
+      "scleraRamp": {
+        "low": [
+          0.18,
+          0.14,
+          0.13,
+          1.0
+        ],
+        "high": [
+          0.42,
+          0.36,
+          0.32,
+          1.0
+        ]
+      },
+      "coatWeight": 0.1,
+      "coatRoughness": 0.2,
+      "fixedExposureEV": 0.0,
+      "eyeBandMetrics": {
+        "brightEyeBandMeanLinear": 0.6846755918045645,
+        "brightEyeBandSamples": 25096,
+        "nearClipPercentOfBrightSamples": 10.798533630857508,
+        "cropSamples": 246400
+      },
+      "renders": {
+        "eyes": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r336-deep-sclera-response-sweep\\b-deep-warm-eyes.png",
+        "face": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r336-deep-sclera-response-sweep\\b-deep-warm-face.png",
+        "three-quarter": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r336-deep-sclera-response-sweep\\b-deep-warm-three-quarter.png"
+      }
+    },
+    "c-deep-muted": {
+      "scleraRamp": {
+        "low": [
+          0.1,
+          0.08,
+          0.075,
+          1.0
+        ],
+        "high": [
+          0.28,
+          0.24,
+          0.22,
+          1.0
+        ]
+      },
+      "coatWeight": 0.08,
+      "coatRoughness": 0.22,
+      "fixedExposureEV": 0.0,
+      "eyeBandMetrics": {
+        "brightEyeBandMeanLinear": 0.6351718313720089,
+        "brightEyeBandSamples": 23221,
+        "nearClipPercentOfBrightSamples": 4.711252745359803,
+        "cropSamples": 246400
+      },
+      "renders": {
+        "eyes": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r336-deep-sclera-response-sweep\\c-deep-muted-eyes.png",
+        "face": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r336-deep-sclera-response-sweep\\c-deep-muted-face.png",
+        "three-quarter": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r336-deep-sclera-response-sweep\\c-deep-muted-three-quarter.png"
+      }
+    },
+    "d-mid-warm": {
+      "scleraRamp": {
+        "low": [
+          0.25,
+          0.21,
+          0.19,
+          1.0
+        ],
+        "high": [
+          0.52,
+          0.45,
+          0.4,
+          1.0
+        ]
+      },
+      "coatWeight": 0.1,
+      "coatRoughness": 0.19,
+      "fixedExposureEV": 0.0,
+      "eyeBandMetrics": {
+        "brightEyeBandMeanLinear": 0.7195239873074287,
+        "brightEyeBandSamples": 25896,
+        "nearClipPercentOfBrightSamples": 27.614303367315415,
+        "cropSamples": 246400
+      },
+      "renders": {
+        "eyes": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r336-deep-sclera-response-sweep\\d-mid-warm-eyes.png",
+        "face": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r336-deep-sclera-response-sweep\\d-mid-warm-face.png",
+        "three-quarter": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r336-deep-sclera-response-sweep\\d-mid-warm-three-quarter.png"
+      }
+    }
+  },
+  "method": "Fixed-camera, fixed-0EV sweep of only the integrated sclera ramp and corneal coat response; body, lights, skin and geometry remain unchanged.",
+  "status": "SELECT_B_DEEP_WARM",
+  "selection": {
+    "variant": "b-deep-warm",
+    "reason": "It reduces near-clipped bright-band samples from 40.69% to 10.80% while retaining a wet corneal highlight and avoiding the gray cast of c-deep-muted."
+  }
+}

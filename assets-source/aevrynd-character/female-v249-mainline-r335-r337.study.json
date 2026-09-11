@@ -1,0 +1,17 @@
+{
+  "range": "r335-r337",
+  "sourceCandidate": "aevrynd-female-authoring-v249-mainline-continuous-upper-lower-eyelids-r334.blend",
+  "resultCandidate": "aevrynd-female-authoring-v249-mainline-natural-sclera-r337.blend",
+  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "findings": [
+    "r335 proves modest sclera color changes do not sufficiently control highlight clipping.",
+    "r336 expands the search and selects the deep-warm response over the overly gray muted alternative.",
+    "r337 freezes the selected response at 0 EV and passes collision, binding, rig and hair-motion audits."
+  ],
+  "strictScores": {
+    "face": 43,
+    "hair": 34,
+    "overallCharacter": 39
+  },
+  "websitePromotionApproved": false
+}

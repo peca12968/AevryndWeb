@@ -1,0 +1,55 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-continuous-upper-lower-eyelids-r334.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-natural-sclera-r337.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r337-natural-sclera",
+  "scleraRamp": {
+    "low": [
+      0.18,
+      0.14,
+      0.13,
+      1.0
+    ],
+    "high": [
+      0.42,
+      0.36,
+      0.32,
+      1.0
+    ]
+  },
+  "coatWeight": 0.1,
+  "coatRoughness": 0.2,
+  "fixedExposureEV": 0.0,
+  "r334NearClipPercentOfBrightEyeBand": 40.68529607451763,
+  "r337NearClipPercentOfBrightEyeBand": 10.798533630857508,
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-natural-sclera-r337.collision-audit.json",
+  "collisionStatus": "PASS",
+  "ownedAssetOnly": true,
+  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "strictBenchmark": "current-generation hero character, normal gameplay and face-close views",
+  "strictScores": {
+    "face": 43,
+    "hair": 34,
+    "overallCharacter": 39
+  },
+  "technicalGains": [
+    "Only the owned procedural eye material changes; body, eye and hair geometry remain identical to collision-safe r334.",
+    "Near-clipped samples in the fixed bright eye band fall from 40.69% to 10.80% at 0 EV.",
+    "Body-eye overlap remains zero at frames 1 and 20; face binding, body rig and hair motion audits pass."
+  ],
+  "visualGains": [
+    "The sclera reads as warm living tissue instead of a flat white cutout.",
+    "Lower eye-to-skin contrast reduces the false impression that the skin was progressively darkened."
+  ],
+  "visualFailures": [
+    "The eye aperture remains too wide and the neutral gaze remains mannequin-like.",
+    "Caruncles still read as small red dots instead of integrated tissue wedges.",
+    "Tear trough, canthal transitions, orbital planes and natural asymmetry remain underdeveloped.",
+    "Skin and hair remain below the hero-character gate."
+  ],
+  "faceLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-natural-sclera-r337.face-layer-audit.json",
+  "bodyRigAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-natural-sclera-r337.body-rig-audit.json",
+  "hairLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-natural-sclera-r337.hair-layer-audit.json",
+  "hairMotionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-natural-sclera-r337.hair-motion-audit.json",
+  "reviewDirectory": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r337-natural-sclera",
+  "websitePromotionApproved": false
+}
