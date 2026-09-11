@@ -2,11 +2,11 @@
   "mainline": "v249",
   "parent": "aevrynd-female-authoring-v249.blend",
   "visualIntegrationBaseline": "aevrynd-female-authoring-v249-mainline-face-r38.blend",
-  "latestHairTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-pendulum-dynamic-hair-r268.blend",
-  "latestHairCandidateStatus": "r264 is the best current three-layer authoring groom with separate primary clumps, secondary fill and flyaways. r265 proves the runtime-card bridge but fails because the proxy was not parented to the rig. r266 fixes root binding and collision; r267-r269 test readable motion; r270 outward clearance is rejected for 12 rest-pose penetrations. r268 is the current dynamic technical candidate: independent audit finds zero negative signed-distance penetration at six frames, negligible root drift and 0.139mm settle error, but P95 tip motion is only 2.729mm versus the 5mm readability gate. Website promotion remains forbidden.",
+  "latestHairTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-rest-clearance-repair-r271.blend",
+  "latestHairCandidateStatus": "r271 is the first new-CC0 runtime hair proxy to pass the independent dynamic gate: six audited frames have zero negative signed-distance samples, root drift below 1.7e-8m, peak mean/P95 tip motion of 2.215mm/6.248mm, and 0.252mm settle error. It derives from the r264 three-layer authoring groom and repairs 17 rest-pose vertices to 0.2mm clearance before a 61-frame collision clamp. Rear card strips, procedural hairline/crown flow and the cylindrical silhouette still fail hero visual review, so website promotion remains forbidden.",
   "latestHairMaterialStudy": "r192 Aevrynd-owned satin EEVEE branch derived from the offline CC0 r129 node group; geometry parity and 11-shot visual review passed; strict hero-hair gate remains open",
-  "latestHairPerformanceResearch": "r227-r229 legacy density research; r259-r264 CC0-head layered authoring groom; r265-r270 runtime-card dynamics and collision constraints",
-  "latestHairPerformanceResearchStatus": "r264 separates 776 primary clumps, 10088 secondary fill curves and 71 flyaways (10935 curves, 262440 points). r268 derives 37248-vertex/17848-face runtime cards, skins them to five 3-segment spring chains at 120Hz, parents them correctly to the rig, and clamps every frame to zero negative signed-distance penetration. Independent six-frame audit passes collision/root/settle checks but rejects motion readability at P95 2.729mm.",
+  "latestHairPerformanceResearch": "r227-r229 legacy density research; r259-r264 CC0-head layered authoring groom; r265-r271 runtime-card dynamics, binding and zero-penetration constraints",
+  "latestHairPerformanceResearchStatus": "r271 retains 776 primary authoring guides and a 37248-vertex/17848-face skinned runtime proxy. Five 3-segment chains run a 120Hz angular spring bake. A localized 17-vertex rest repair plus per-frame signed-distance clamp yields independent PASS across root, collision, readable motion and settle gates. Visual hair-card blending and hero groom quality remain open.",
   "latestEyeTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-subtle-lid-wetline-r258.blend",
   "latestEyeCandidateStatus": "r257 is rejected because saturated wetlines and oversized caruncles read as red eyeliner and beads. r258 rebuilds these layers at subtle scale and passes the frame 1/20 24-layer head-binding audit with zero brow-root penetration and negligible head-space drift. It remains a technical candidate because the eyelid aperture and facial anatomy are still below hero quality.",
   "latestFaceTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-subtle-lid-wetline-r258.blend",
@@ -41,7 +41,7 @@
   "latestFoundationLicense": "CC0-1.0; Blender Studio and community contributors; source manifest blender-human-base-meshes-v141.source.json; no runtime Blender, MetaHuman, Unreal Engine, subscription or platform dependency.",
   "latestFaceResearch": "r248 legacy displacement rejection; r249-r251 CC0 foundation; r252-r258 eye, skin, brow, lash and subtle tear-layer rebuild",
   "latestFaceResearchStatus": "r258 is the current CC0 face technical node. It passes the r251 body deformation audit and the expanded 24-layer frame 1/20 face attachment audit. Visual review rejects r257 saturation and retains r258 for restrained wet layers, while overall face quality remains below the release gate.",
-  "latestHairDynamicTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-pendulum-dynamic-hair-r268.blend",
-  "latestHairDynamicAudit": "female-v249-mainline-pendulum-dynamic-hair-r268.audit.json",
-  "latestHairDynamicStatus": "TECHNICAL_COLLISION_PASS_VISUAL_MOTION_FAIL"
+  "latestHairDynamicTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-rest-clearance-repair-r271.blend",
+  "latestHairDynamicAudit": "female-v249-mainline-rest-clearance-repair-r271.audit.json",
+  "latestHairDynamicStatus": "TECHNICAL_PASS_VISUAL_FAIL"
 }

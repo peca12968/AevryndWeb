@@ -1,0 +1,434 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-delayed-clump-groom-r264.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-rest-clearance-repair-r271.blend",
+  "authoringPrimaryGuides": 776,
+  "runtimeCards": {
+    "vertices": 37248,
+    "faces": 17848,
+    "chainVertexCounts": {
+      "hair_dyn.L.front": 12528,
+      "hair_dyn.R.front": 12768,
+      "hair_dyn.L.back": 3552,
+      "hair_dyn.C.back": 4944,
+      "hair_dyn.R.back": 3456
+    }
+  },
+  "dynamicChains": 5,
+  "dynamicSegments": 15,
+  "fixedStepHz": 120,
+  "frames": [
+    1,
+    17,
+    25,
+    33,
+    41,
+    61
+  ],
+  "colliders": [
+    {
+      "id": "head",
+      "shape": "sphere",
+      "bone": "head",
+      "center": [
+        0,
+        -0.002,
+        1.64
+      ],
+      "radius": 0.108
+    },
+    {
+      "id": "neck",
+      "shape": "capsule",
+      "bone": "neck",
+      "a": [
+        0,
+        0.02,
+        1.43
+      ],
+      "b": [
+        0,
+        0.02,
+        1.56
+      ],
+      "radius": 0.054
+    },
+    {
+      "id": "shoulders",
+      "shape": "capsule",
+      "bone": "chest",
+      "a": [
+        -0.21,
+        0.02,
+        1.4
+      ],
+      "b": [
+        0.21,
+        0.02,
+        1.4
+      ],
+      "radius": 0.07
+    },
+    {
+      "id": "upper_chest",
+      "shape": "capsule",
+      "bone": "chest",
+      "a": [
+        -0.13,
+        0.02,
+        1.34
+      ],
+      "b": [
+        0.13,
+        0.02,
+        1.34
+      ],
+      "radius": 0.088
+    }
+  ],
+  "restClearanceRepair": {
+    "targetClearanceM": 0.0002,
+    "repairedVertices": 17,
+    "repairedSample": [
+      8433,
+      8527,
+      9968,
+      9969,
+      12746,
+      12844,
+      12940,
+      13517,
+      14286,
+      14380,
+      14382,
+      14383,
+      14959,
+      14961,
+      15006,
+      15007,
+      15147
+    ],
+    "beforeMinimumSignedM": -0.000536463823664235
+  },
+  "collisionClamp": {
+    "1": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00019940673701057676
+    },
+    "2": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00018087844136971398
+    },
+    "3": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00014878215824865038
+    },
+    "4": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00012655304180952953
+    },
+    "5": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00012264886254342855
+    },
+    "6": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0001368767266285431
+    },
+    "7": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0001673351753197494
+    },
+    "8": {
+      "angleScale": 0.5,
+      "penetratingVertices": 0,
+      "minimumSignedM": 6.637634214712307e-06
+    },
+    "9": {
+      "angleScale": 0.14,
+      "penetratingVertices": 0,
+      "minimumSignedM": 1.2331039670243626e-05
+    },
+    "10": {
+      "angleScale": 0.14,
+      "penetratingVertices": 0,
+      "minimumSignedM": 3.972189688283834e-05
+    },
+    "11": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00011811532294814242
+    },
+    "12": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00018069079578708624
+    },
+    "13": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0001589008525115787
+    },
+    "14": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00015818916017451556
+    },
+    "15": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00017829797161539318
+    },
+    "16": {
+      "angleScale": 0.36,
+      "penetratingVertices": 0,
+      "minimumSignedM": 4.212589692542679e-05
+    },
+    "17": {
+      "angleScale": 0.14,
+      "penetratingVertices": 0,
+      "minimumSignedM": 1.229436895755498e-05
+    },
+    "18": {
+      "angleScale": 0.06,
+      "penetratingVertices": 0,
+      "minimumSignedM": 5.133201375429053e-05
+    },
+    "19": {
+      "angleScale": 0.06,
+      "penetratingVertices": 0,
+      "minimumSignedM": 1.3829892111516529e-06
+    },
+    "20": {
+      "angleScale": 0.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0001994017329707276
+    },
+    "21": {
+      "angleScale": 0.06,
+      "penetratingVertices": 0,
+      "minimumSignedM": 1.9651570937639917e-05
+    },
+    "22": {
+      "angleScale": 0.06,
+      "penetratingVertices": 0,
+      "minimumSignedM": 7.495446880056988e-05
+    },
+    "23": {
+      "angleScale": 0.14,
+      "penetratingVertices": 0,
+      "minimumSignedM": 7.973009724082658e-05
+    },
+    "24": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00019453572713246103
+    },
+    "25": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00012638553607757785
+    },
+    "26": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00012614234492502874
+    },
+    "27": {
+      "angleScale": 0.24,
+      "penetratingVertices": 0,
+      "minimumSignedM": 6.132759926913423e-05
+    },
+    "28": {
+      "angleScale": 0.06,
+      "penetratingVertices": 0,
+      "minimumSignedM": 7.90149970271159e-05
+    },
+    "29": {
+      "angleScale": 0.06,
+      "penetratingVertices": 0,
+      "minimumSignedM": 5.3534719427261734e-05
+    },
+    "30": {
+      "angleScale": 0.06,
+      "penetratingVertices": 0,
+      "minimumSignedM": 8.364998620891129e-05
+    },
+    "31": {
+      "angleScale": 0.24,
+      "penetratingVertices": 0,
+      "minimumSignedM": 2.0658595758504816e-05
+    },
+    "32": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0001843988738983171
+    },
+    "33": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 9.465227776672691e-05
+    },
+    "34": {
+      "angleScale": 0.66,
+      "penetratingVertices": 0,
+      "minimumSignedM": 8.61523969888367e-05
+    },
+    "35": {
+      "angleScale": 0.66,
+      "penetratingVertices": 0,
+      "minimumSignedM": 7.230605660879519e-05
+    },
+    "36": {
+      "angleScale": 0.82,
+      "penetratingVertices": 0,
+      "minimumSignedM": 3.55182583007263e-05
+    },
+    "37": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 5.302782483340707e-05
+    },
+    "38": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 9.852058292381116e-05
+    },
+    "39": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00014768512755836127
+    },
+    "40": {
+      "angleScale": 0.66,
+      "penetratingVertices": 0,
+      "minimumSignedM": 2.662756128302135e-05
+    },
+    "41": {
+      "angleScale": 0.14,
+      "penetratingVertices": 0,
+      "minimumSignedM": 2.566789271440939e-05
+    },
+    "42": {
+      "angleScale": 0.14,
+      "penetratingVertices": 0,
+      "minimumSignedM": 4.510947678681987e-05
+    },
+    "43": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 7.196869319159305e-05
+    },
+    "44": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00018533555248723133
+    },
+    "45": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0001642359920879244
+    },
+    "46": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00016276016958727269
+    },
+    "47": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00018072742568620015
+    },
+    "48": {
+      "angleScale": 0.36,
+      "penetratingVertices": 0,
+      "minimumSignedM": 5.156693941898993e-05
+    },
+    "49": {
+      "angleScale": 0.14,
+      "penetratingVertices": 0,
+      "minimumSignedM": 2.5503134338578093e-05
+    },
+    "50": {
+      "angleScale": 0.06,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00010300096528226277
+    },
+    "51": {
+      "angleScale": 0.06,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00011329172775731422
+    },
+    "52": {
+      "angleScale": 0.14,
+      "penetratingVertices": 0,
+      "minimumSignedM": 4.2457398649276e-05
+    },
+    "53": {
+      "angleScale": 0.24,
+      "penetratingVertices": 0,
+      "minimumSignedM": 5.770667655724537e-06
+    },
+    "54": {
+      "angleScale": 0.36,
+      "penetratingVertices": 0,
+      "minimumSignedM": 3.491745928840828e-06
+    },
+    "55": {
+      "angleScale": 0.5,
+      "penetratingVertices": 0,
+      "minimumSignedM": 3.0209073884179816e-05
+    },
+    "56": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 1.9352007711859187e-05
+    },
+    "57": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00014432022089749807
+    },
+    "58": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00019833489659504266
+    },
+    "59": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00019382707887416473
+    },
+    "60": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.00018979861397383502
+    },
+    "61": {
+      "angleScale": 1.0,
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0001859959656940191
+    }
+  },
+  "layers": [
+    "hair.primary_clumps.authoring",
+    "hair.secondary_fill",
+    "hair.flyaways",
+    "hair.runtime_cards.dynamic"
+  ],
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r271-rest-clearance-repair",
+  "status": "DYNAMIC_RUNTIME_TECHNICAL_PASS_VISUAL_FAIL",
+  "independentAudit": "female-v249-mainline-rest-clearance-repair-r271.audit.json",
+  "independentAuditStatus": "PASS",
+  "strictReviewReasons": [
+    "Independent audit passes zero signed-distance penetration, root locking, motion readability and settle thresholds.",
+    "Runtime cards remain visibly strip-like from rear and under specular light.",
+    "Authoring hairline, crown distribution and overall silhouette remain below hero quality; website promotion is forbidden."
+  ]
+}
