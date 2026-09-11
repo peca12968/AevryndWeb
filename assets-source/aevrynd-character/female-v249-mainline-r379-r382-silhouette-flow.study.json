@@ -1,0 +1,84 @@
+{
+  "mainline": "v249",
+  "range": "r379-r382",
+  "date": "2026-09-11",
+  "purpose": "Correct the crown part, vertical temple spikes, straight rear curtain and split rear ends while preserving the accepted r378 front field.",
+  "iterations": {
+    "r379": {
+      "change": "Added grouped guide-length waves, lateral silhouette breakup and a denser narrow scalp part.",
+      "verdict": "REJECT_VISUAL",
+      "finding": "Macro variation appears, but the rear center forms two exaggerated long tails."
+    },
+    "r380": {
+      "change": "Rebuilt the explicit hairline transition as 6-12 mm fine hairs, directed temple hairs downward and halved grouped end variation.",
+      "verdict": "VISUAL_GAIN_TECHNICAL_AUDIT_DEFERRED",
+      "finding": "Vertical temple spikes disappear and the rear tails shrink, but cloned rear follower rows still form a flat curtain."
+    },
+    "r381": {
+      "change": "Pruned 132 rear grid guides and replaced them with 9,119 continuously sampled rear surface-flow curves.",
+      "verdict": "VISUAL_GAIN_TECHNICAL_AUDIT_DEFERRED",
+      "finding": "Rear surface density and outer contour become smoother, while the rear part widens into a center gap at the ends."
+    },
+    "r382": {
+      "change": "Blended near-seam rear flows across the part and introduced a subtle center-weighted U end profile.",
+      "model": "aevrynd-female-authoring-v249-mainline-closed-rear-seam-bob-r382.blend",
+      "visiblePoints": 724104,
+      "explicitLayers": [
+        "hair.scalp_density_foundation.head_bound",
+        "hair.primary_semantic_guides.dynamic",
+        "hair.secondary_semantic_followers.dynamic",
+        "hair.hairline_microclumps.head_bound",
+        "hair.front_surface_flow.dynamic",
+        "hair.rear_surface_flow.dynamic"
+      ],
+      "verdict": "TECHNICAL_PASS_VISUAL_FAIL"
+    }
+  },
+  "r382Evidence": {
+    "collision": {
+      "file": "female-v249-mainline-r382.hair-collision-audit.json",
+      "frames": [1, 20],
+      "penetratingPoints": 0,
+      "minimumSignedM": 0.0006020715063641546,
+      "status": "PASS"
+    },
+    "motion": {
+      "file": "female-v249-mainline-r382.hair-motion-audit.json",
+      "frames": [1, 33, 61],
+      "peakMeanM": 0.0011520313615401723,
+      "peakP95M": 0.004036378156053122,
+      "peakMaximumM": 0.004998954818191849,
+      "rootMaximumM": 0.0,
+      "settleMaximumM": 0.0,
+      "penetratingPoints": 0,
+      "status": "PASS"
+    },
+    "contrast": {
+      "file": "female-v249-mainline-r382.perceptual-contrast-audit.json",
+      "centralSkinDeltaFromR371Percent": 0.0007684198114255025,
+      "hairlineContextDeltaFromR371Percent": 1.540921457927391,
+      "status": "PASS"
+    }
+  },
+  "strictVisualAssessment": {
+    "hairScoreOutOf100": 58,
+    "status": "TECHNICAL_PASS_VISUAL_FAIL",
+    "improvements": [
+      "Front forehead bands remain removed.",
+      "Temple transition hairs no longer form vertical spikes.",
+      "Rear center coverage is closed from root to ends.",
+      "Rear ends form one coherent, lightly center-weighted profile.",
+      "Front and rear dynamic flows remain independent layers."
+    ],
+    "remainingFailures": [
+      "The hair surface still reads as many uniformly straight fibers instead of broad natural locks.",
+      "The crown transition between retained guide families and continuous fields remains visible in top view.",
+      "End breakup is improved but still lacks layered salon-cut structure.",
+      "The 724,104-point offline groom is not suitable for direct website use.",
+      "No owned runtime card bake, memory test or FPS gate has passed."
+    ],
+    "websitePromotionApproved": false
+  },
+  "decision": "Promote r382 as the current offline technical authoring node only. Keep the public website at v83.",
+  "nextRequiredWork": "Build a sparse macro-lock control layer over the continuous fields, use it to create layered end groups and crown overlap, then bake the approved appearance into owned alpha hair cards and run runtime collision, memory and FPS gates."
+}
