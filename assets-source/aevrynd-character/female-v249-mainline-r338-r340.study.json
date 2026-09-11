@@ -1,0 +1,17 @@
+{
+  "range": "r338-r340",
+  "sourceCandidate": "aevrynd-female-authoring-v249-mainline-natural-sclera-r337.blend",
+  "resultCandidate": "aevrynd-female-authoring-v249-mainline-integrated-caruncle-r340.blend",
+  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "findings": [
+    "r338 corrects bone-parent matrix scaling and selects the smallest medial shape with visible anatomical presence.",
+    "r339 proves the original high-saturation red material causes the capsule appearance and selects muted tissue response.",
+    "r340 combines both selections and adds explicit caruncle collision pairs at static and animated frames."
+  ],
+  "strictScores": {
+    "face": 44,
+    "hair": 34,
+    "overallCharacter": 40
+  },
+  "websitePromotionApproved": false
+}

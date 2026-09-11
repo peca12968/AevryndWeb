@@ -1,0 +1,61 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-natural-sclera-r337.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r339-caruncle-tissue-sweep",
+  "variants": {
+    "a-r337-red": {
+      "baseColor": [
+        0.16,
+        0.029,
+        0.021,
+        1.0
+      ],
+      "roughness": 0.34,
+      "subsurfaceWeight": 0.0
+    },
+    "b-muted-tissue": {
+      "baseColor": [
+        0.18,
+        0.07,
+        0.055,
+        1.0
+      ],
+      "roughness": 0.42,
+      "subsurfaceWeight": 0.025
+    },
+    "c-soft-tissue": {
+      "baseColor": [
+        0.13,
+        0.055,
+        0.045,
+        1.0
+      ],
+      "roughness": 0.46,
+      "subsurfaceWeight": 0.035
+    },
+    "d-pale-tissue": {
+      "baseColor": [
+        0.25,
+        0.1,
+        0.08,
+        1.0
+      ],
+      "roughness": 0.44,
+      "subsurfaceWeight": 0.03
+    }
+  },
+  "fixedGeometry": {
+    "scaleXYZ": [
+      1.6,
+      1.15,
+      1.2
+    ],
+    "medialShiftM": 0.00035,
+    "worldWidthM": 0.001855999
+  },
+  "method": "Hold the collision-safe r338 small medial caruncle shape and sweep tissue saturation, roughness and low subsurface response at fixed 0 EV.",
+  "status": "SELECT_B_MUTED_TISSUE",
+  "selection": {
+    "variant": "b-muted-tissue",
+    "reason": "Lower saturation removes the bright-red capsule response while retaining a distinct moist tissue layer."
+  }
+}

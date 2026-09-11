@@ -1,0 +1,132 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-natural-sclera-r337.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r338-caruncle-shape-sweep",
+  "variants": {
+    "a-r337-baseline": {
+      "scaleXYZ": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "medialShiftM": 0.0,
+      "worldDimensionsM": {
+        "L": [
+          0.0011599992867559195,
+          0.000439999857917428,
+          0.0008399999933317304
+        ],
+        "R": [
+          0.0011599992867559195,
+          0.000439999857917428,
+          0.0008399999933317304
+        ]
+      },
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        }
+      }
+    },
+    "b-medial-small": {
+      "scaleXYZ": [
+        1.6,
+        1.15,
+        1.2
+      ],
+      "medialShiftM": 0.00035,
+      "worldDimensionsM": {
+        "L": [
+          0.0018559988820925355,
+          0.0005059998366050422,
+          0.0010079999919980764
+        ],
+        "R": [
+          0.0018559988820925355,
+          0.0005059998366050422,
+          0.0010079999919980764
+        ]
+      },
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        }
+      }
+    },
+    "c-medial-medium": {
+      "scaleXYZ": [
+        2.0,
+        1.2,
+        1.35
+      ],
+      "medialShiftM": 0.00055,
+      "worldDimensionsM": {
+        "L": [
+          0.002319998573511839,
+          0.0005279998295009136,
+          0.0011340000201016665
+        ],
+        "R": [
+          0.002319998573511839,
+          0.0005279998295009136,
+          0.0011340000201016665
+        ]
+      },
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        }
+      }
+    },
+    "d-medial-large": {
+      "scaleXYZ": [
+        2.4,
+        1.2,
+        1.5
+      ],
+      "medialShiftM": 0.0007,
+      "worldDimensionsM": {
+        "L": [
+          0.002783998381346464,
+          0.0005279998295009136,
+          0.0012600000482052565
+        ],
+        "R": [
+          0.002783998381346464,
+          0.0005279998295009136,
+          0.0012600000482052565
+        ]
+      },
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsCaruncle": 0,
+          "eyeVsCaruncle": 0
+        }
+      }
+    }
+  },
+  "method": "Scale the existing owned head-bound caruncle mesh into progressively wider tissue while shifting its center toward the nasal canthus; audit body and integrated-eye triangle overlap.",
+  "status": "SELECT_B_MEDIAL_SMALL",
+  "selection": {
+    "variant": "b-medial-small",
+    "reason": "The 1.86mm width is the least enlarged option that reads beyond a single dot; all tested body and eye overlap counts are zero."
+  }
+}

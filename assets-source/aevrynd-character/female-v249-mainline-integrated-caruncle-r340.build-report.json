@@ -1,0 +1,50 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-natural-sclera-r337.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-integrated-caruncle-r340.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r340-integrated-caruncle",
+  "caruncleScaleXYZ": [
+    1.6,
+    1.15,
+    1.2
+  ],
+  "caruncleMedialShiftM": 0.00035,
+  "caruncleWorldWidthM": 0.001855999,
+  "tissueBaseColor": [
+    0.18,
+    0.07,
+    0.055,
+    1.0
+  ],
+  "roughness": 0.42,
+  "subsurfaceWeight": 0.025,
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-integrated-caruncle-r340.collision-audit.json",
+  "collisionStatus": "PASS",
+  "ownedAssetOnly": true,
+  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "strictBenchmark": "current-generation hero character, normal gameplay and face-close views",
+  "strictScores": {
+    "face": 44,
+    "hair": 34,
+    "overallCharacter": 40
+  },
+  "technicalGains": [
+    "Each owned caruncle is widened from 1.16mm to 1.86mm and shifted 0.35mm toward the nasal canthus.",
+    "The material changes from saturated red without subsurface response to muted tissue with 0.025 subsurface weight.",
+    "Body-eye, body-caruncle and eye-caruncle triangle overlaps are zero on both sides at frames 1 and 20.",
+    "Face binding, full-body rig and 262,368-point hair-motion audits pass."
+  ],
+  "visualGains": [
+    "The caruncle reads as a restrained tissue feature rather than a bright isolated red dot."
+  ],
+  "visualFailures": [
+    "The caruncle is still an ellipsoid layer and lacks a true wedge-shaped junction with the eyelid skin.",
+    "Inner and outer canthal folds, tear trough and orbital planes remain shallow.",
+    "Eye aperture, skin response, facial asymmetry and hair silhouette remain below target."
+  ],
+  "faceLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-integrated-caruncle-r340.face-layer-audit.json",
+  "bodyRigAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-integrated-caruncle-r340.body-rig-audit.json",
+  "hairLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-integrated-caruncle-r340.hair-layer-audit.json",
+  "hairMotionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-integrated-caruncle-r340.hair-motion-audit.json",
+  "reviewDirectory": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r340-integrated-caruncle",
+  "websitePromotionApproved": false
+}
