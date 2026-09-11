@@ -1,0 +1,65 @@
+{
+  "mainline": "v249",
+  "range": "r367-r371",
+  "date": "2026-09-11",
+  "purpose": "Replace the uniform frontal comb with explicit micro-clumps, a graded scalp density foundation and physically based melanin fibers, then remove the progressive-darkening impression without changing the accepted skin response.",
+  "ownership": {
+    "geometry": "Aevrynd-authored procedural curves derived from the owned v249 body and r345 technical node",
+    "materials": "Aevrynd-authored Blender node materials",
+    "runtimeDependencies": [],
+    "metahumanOrUnrealContent": false
+  },
+  "iterations": {
+    "r367": {
+      "change": "Reorganized 968 frontal overlay fibers into 22 overlapping micro-clumps.",
+      "verdict": "REJECT_VISUAL",
+      "finding": "The grouping is explicit, but the result still reads as parallel drawn lines at review distance."
+    },
+    "r368": {
+      "change": "Added a head-bound density attribute with a 22 mm hairline gradient and reduced density at the center part.",
+      "verdict": "REJECT_VISUAL",
+      "finding": "A 0.42 maximum alpha leaves the crown foundation too weak; 0.84 creates a dark cap."
+    },
+    "r369": {
+      "change": "Selected a 0.63 density maximum and converted the fibers to Principled Hair BSDF melanin response.",
+      "verdict": "REJECT_VISUAL",
+      "finding": "Brown value variation improves, but the dense root layer increases perceived facial darkness."
+    },
+    "r370": {
+      "change": "Separated primary, secondary and hairline radii while retaining 525 guides, 8,925 fill curves and 1,090 transition curves.",
+      "verdict": "TECHNICAL_PASS_VISUAL_FAIL",
+      "finding": "Fiber hierarchy is clearer and the rear opening remains closed, but the frontal flow and bob perimeter remain too uniform."
+    },
+    "r371": {
+      "change": "Reduced scalp density maximum from 0.63 to 0.50 and melanin from 0.76 to 0.68 while holding the review rig at 8 W.",
+      "brightnessAudit": "female-v249-mainline-r371.perceptual-contrast-audit.json",
+      "collisionAudit": "female-v249-mainline-r371.hair-collision-audit.json",
+      "verdict": "TECHNICAL_PASS_VISUAL_FAIL",
+      "finding": "Central skin luminance is unchanged within 0.001%; the matched-camera forehead/hairline region is 0.497% brighter. Perceived darkening is corrected without changing skin material or exposure."
+    }
+  },
+  "r371TechnicalEvidence": {
+    "pointsAuditedPerFrame": 252960,
+    "frames": [1, 20],
+    "penetratingPoints": 0,
+    "minimumDynamicClearanceM": 0.000691767389071174,
+    "explicitLayers": [
+      "hair.scalp_density_foundation.head_bound",
+      "hair.primary_semantic_guides.dynamic",
+      "hair.secondary_semantic_followers.dynamic",
+      "hair.hairline_microclumps.head_bound"
+    ],
+    "websitePromotionApproved": false
+  },
+  "strictVisualAssessment": {
+    "hairScoreOutOf100": 42,
+    "status": "FAIL_HERO_CHARACTER_GATE",
+    "failures": [
+      "Hairline micro-clumps still resolve as regularly spaced strokes.",
+      "Side and rear lengths form an overly straight procedural curtain.",
+      "Large-scale locks and local density transitions are not authored strongly enough.",
+      "The result lacks natural breakup at the temples, crown and ends."
+    ]
+  },
+  "nextRequiredWork": "Author nonparallel surface-following frontal locks and irregular macro silhouettes before adding more fiber density. Preserve the r371 contrast and collision baselines."
+}
