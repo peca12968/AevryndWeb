@@ -1,0 +1,94 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-integrated-eye-shader-r328.blend",
+  "colorManagement": {
+    "displayDevice": "sRGB",
+    "viewTransform": "Standard",
+    "look": "None",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "world": {
+    "color": [
+      0.009999999776482582,
+      0.014000000432133675,
+      0.019999999552965164,
+      1.0
+    ],
+    "strength": 0.10000000149011612
+  },
+  "lights": [
+    {
+      "name": "Aevrynd R249 Key",
+      "type": "AREA",
+      "energy": 39.0,
+      "color": [
+        1.0,
+        0.7400000095367432,
+        0.6299999952316284
+      ],
+      "location": [
+        -0.6200000047683716,
+        -1.0,
+        1.8799999952316284
+      ],
+      "size": "DISK"
+    },
+    {
+      "name": "Aevrynd R249 Fill",
+      "type": "AREA",
+      "energy": 21.84000015258789,
+      "color": [
+        0.6200000047683716,
+        0.7400000095367432,
+        1.0
+      ],
+      "location": [
+        0.7200000286102295,
+        -0.6000000238418579,
+        1.6799999475479126
+      ],
+      "size": "DISK"
+    },
+    {
+      "name": "Aevrynd R249 Rim",
+      "type": "AREA",
+      "energy": 44.20000076293945,
+      "color": [
+        1.0,
+        0.8299999833106995,
+        0.699999988079071
+      ],
+      "location": [
+        0.0,
+        0.699999988079071,
+        1.8200000524520874
+      ],
+      "size": "DISK"
+    }
+  ],
+  "bodyMaterials": [
+    {
+      "name": "Aevrynd_Skin_Physical_R252",
+      "owned": null,
+      "revision": null,
+      "principled": {
+        "baseColorLinked": true,
+        "baseColor": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ],
+        "roughness": 0.5199999809265137,
+        "subsurfaceWeight": 0.054999999701976776
+      }
+    }
+  ],
+  "measuredFaceCloseLuminance": {
+    "r318": 117.765,
+    "r328": 117.779,
+    "scale": "8-bit Rec.709 weighted fixed facial patches"
+  },
+  "conclusion": "r318 and r328 skin luminance are unchanged within rounding; increased eye contrast creates a darker perceptual impression.",
+  "status": "PASS_NO_PROGRESSIVE_SKIN_DARKENING"
+}

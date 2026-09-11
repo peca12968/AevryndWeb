@@ -1,0 +1,48 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-integrated-eye-shader-r328.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r330-exposure-calibration",
+  "variants": {
+    "a-current-0ev": {
+      "exposureEV": 0.0,
+      "path": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r330-exposure-calibration\\a-current-0ev.png",
+      "patchLuminance": {
+        "forehead": 130.28762752287582,
+        "leftCheek": 127.19504517499999,
+        "rightCheek": 132.6275310125,
+        "nose": 99.7088866883117,
+        "chin": 98.20931762987013
+      },
+      "combinedPatchLuminance": 117.77851813828424,
+      "nearClipPixelPercent": 0.0
+    },
+    "b-plus-0p25ev": {
+      "exposureEV": 0.25,
+      "path": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r330-exposure-calibration\\b-plus-0p25ev.png",
+      "patchLuminance": {
+        "forehead": 141.07929507189542,
+        "leftCheek": 137.75728033125,
+        "rightCheek": 143.59095218125,
+        "nose": 108.2144255974026,
+        "chin": 106.60051074025974
+      },
+      "combinedPatchLuminance": 127.63425037644045,
+      "nearClipPixelPercent": 0.0
+    },
+    "c-plus-0p50ev": {
+      "exposureEV": 0.5,
+      "path": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r330-exposure-calibration\\c-plus-0p50ev.png",
+      "patchLuminance": {
+        "forehead": 152.64873011111112,
+        "leftCheek": 149.08313531874998,
+        "rightCheek": 155.34674788125,
+        "nose": 117.32021177272726,
+        "chin": 115.59519826623377
+      },
+      "combinedPatchLuminance": 138.1984765236876,
+      "nearClipPixelPercent": 0.8124199743918054
+    }
+  },
+  "purpose": "Separate actual skin-tone drift from display exposure and local eye-contrast effects using one fixed camera and unchanged materials/lights.",
+  "status": "PASS_NO_SKIN_DRIFT_RETAIN_0EV",
+  "decision": "Retain 0 EV as the authored candidate. Use the measured fixed-patch luminance as a regression baseline; do not lighten skin pigment to compensate for darker iris contrast."
+}

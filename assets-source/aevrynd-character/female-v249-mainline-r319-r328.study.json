@@ -1,0 +1,22 @@
+{
+  "range": "r319-r328",
+  "sourceCandidate": "aevrynd-female-authoring-v249-mainline-collision-safe-optical-stack-r318.blend",
+  "resultCandidate": "aevrynd-female-authoring-v249-mainline-integrated-eye-shader-r328.blend",
+  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "findings": [
+    "r319 proves the native opening is too large when the r308 overlay is hidden.",
+    "r320 applies the dense evaluated body and establishes 2.2mm as the strongest stable aperture, but the lowered lid intersects planar optical layers.",
+    "r321 proves posterior eye movement worsens planar-layer intersections.",
+    "r322-r323 reach zero overlap by splitting sclera and front-layer depth, but profile review exposes the planar optical stack as protruding.",
+    "r324 camera-axis wrapping folds the connected lid transition and creates hundreds of sclera overlaps; it is rejected.",
+    "r325-r326 measure the 546-vertex sclera and the optical layer bounds needed to replace the planar stack.",
+    "r327 integrates sclera, iris, limbal ring, pupil and corneal coat in an owned procedural shader on one spherical mesh.",
+    "r328 removes eight planar optical objects and passes collision, head-binding, body-rig and hair-motion audits."
+  ],
+  "strictScores": {
+    "face": 63,
+    "hair": 63,
+    "overallCharacter": 61
+  },
+  "websitePromotionApproved": false
+}

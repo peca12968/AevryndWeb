@@ -1,0 +1,59 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-unified-dense-upper-eyelids-r323.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-integrated-eye-shader-r328.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r328-integrated-eye-shader",
+  "removedGeometryLayers": [
+    "AevryndEye_L_Cornea_R252",
+    "AevryndEye_L_Limbal_R253",
+    "AevryndEye_L_Iris_R253",
+    "AevryndEye_L_Pupil_R253",
+    "AevryndEye_R_Cornea_R252",
+    "AevryndEye_R_Limbal_R253",
+    "AevryndEye_R_Iris_R253",
+    "AevryndEye_R_Pupil_R253"
+  ],
+  "integratedLayers": [
+    "sclera",
+    "iris",
+    "limbal ring",
+    "pupil",
+    "corneal coat"
+  ],
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-integrated-eye-shader-r328.collision-audit.json",
+  "collisionStatus": "PASS",
+  "ownedAssetOnly": true,
+  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "strictScores": {
+    "face": 63,
+    "hair": 63,
+    "overallCharacter": 61
+  },
+  "technicalGains": [
+    "The separate r308 upper-lid overlays are absent; the 169,362-vertex body now forms the upper lids continuously.",
+    "Eight planar cornea, limbal, iris and pupil objects are removed, eliminating their body and internal intersection classes.",
+    "Each eye uses one owned 546-vertex spherical mesh with procedural sclera, limbal ring, iris, pupil and corneal-coat material layers.",
+    "Body-versus-integrated-eye overlap is zero at frames 1 and 20.",
+    "All 16 remaining face layers stay head-bound; all 169,362 body vertices retain weights in 21 groups and deform at frame 20.",
+    "The 262,368-point authored groom retains zero body penetration at frames 1, 33 and 61."
+  ],
+  "visualGains": [
+    "The upper eyelid no longer shows the separate r308 overlay seam.",
+    "The eye profile no longer exposes protruding planar optical discs.",
+    "The 2.2mm upper aperture reduces the round staring expression while keeping the iris readable."
+  ],
+  "visualFailures": [
+    "The procedural iris is still too graphic and lacks the layered crypt, collarette and vascular detail expected of hero eyes.",
+    "The lower lid, tear trough and caruncle remain shallow and generic.",
+    "The neutral expression remains symmetrical and mannequin-like.",
+    "Skin response remains waxy and lacks regional oil, dry, vascular and pigmentation variation.",
+    "Hairline gaps, uniform curtain flow and needle-like ends remain the largest silhouette defects."
+  ],
+  "faceLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-integrated-eye-shader-r328.face-layer-audit.json",
+  "bodyRigAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-integrated-eye-shader-r328.body-rig-audit.json",
+  "hairLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-integrated-eye-shader-r328.hair-layer-audit.json",
+  "hairMotionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-integrated-eye-shader-r328.hair-motion-audit.json",
+  "skinToneAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-lighting-skin-tone-r329.study.json",
+  "exposureCalibration": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-exposure-calibration-r330.study.json",
+  "reviewDirectory": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r328-unified-lid-integrated-eye",
+  "websitePromotionApproved": false
+}

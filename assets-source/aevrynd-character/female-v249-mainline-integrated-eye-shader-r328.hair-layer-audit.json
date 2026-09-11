@@ -1,0 +1,117 @@
+{
+  "model": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-integrated-eye-shader-r328.blend",
+  "layers": {
+    "AevryndFemaleScalpUnderlayer_R280": {
+      "type": "MESH",
+      "layer": "hair.scalp_underlayer.head_bound",
+      "renderVisible": true,
+      "viewportVisible": true,
+      "modifiers": [
+        {
+          "name": "Aevrynd Scalp Head Binding",
+          "type": "ARMATURE"
+        }
+      ],
+      "materials": [
+        "Aevrynd_ScalpUnderlayer_R280"
+      ],
+      "vertices": 758,
+      "polygons": 708
+    },
+    "AevryndFemalePrimaryClumps_R264": {
+      "type": "CURVES",
+      "layer": "hair.primary_clumps",
+      "renderVisible": true,
+      "viewportVisible": true,
+      "modifiers": [
+        {
+          "name": "Aevrynd Collision Safe Secondary Motion R294",
+          "type": "NODES"
+        }
+      ],
+      "materials": [
+        "Aevrynd_PrincipledHair_CC0_R264"
+      ],
+      "curves": 776,
+      "points": 18624
+    },
+    "AevryndFemaleSecondaryFill_R264": {
+      "type": "CURVES",
+      "layer": "hair.secondary_fill",
+      "renderVisible": true,
+      "viewportVisible": true,
+      "modifiers": [
+        {
+          "name": "Aevrynd Collision Safe Secondary Motion R294",
+          "type": "NODES"
+        }
+      ],
+      "materials": [
+        "Aevrynd_PrincipledHair_CC0_R264"
+      ],
+      "curves": 10086,
+      "points": 242064
+    },
+    "AevryndFemaleFlyaways_R264": {
+      "type": "CURVES",
+      "layer": "hair.flyaways",
+      "renderVisible": true,
+      "viewportVisible": true,
+      "modifiers": [
+        {
+          "name": "Aevrynd Collision Safe Secondary Motion R294",
+          "type": "NODES"
+        }
+      ],
+      "materials": [
+        "Aevrynd_PrincipledHair_CC0_R264"
+      ],
+      "curves": 70,
+      "points": 1680
+    },
+    "AevryndFemaleHairlineTransitionCards_R285": {
+      "type": "MESH",
+      "layer": "hair.hairline_transition.head_bound",
+      "renderVisible": true,
+      "viewportVisible": true,
+      "modifiers": [
+        {
+          "name": "Aevrynd Hairline Head Binding",
+          "type": "ARMATURE"
+        }
+      ],
+      "materials": [
+        "Aevrynd_RuntimeHairCards_Alpha_R272"
+      ],
+      "vertices": 768,
+      "polygons": 352
+    },
+    "AevryndFemaleRuntimeHairCards_R276": {
+      "type": "MESH",
+      "layer": "hair.runtime_cards.dynamic.alpha.wide_clumps",
+      "renderVisible": false,
+      "viewportVisible": true,
+      "modifiers": [
+        {
+          "name": "Aevrynd Hair Secondary Motion",
+          "type": "ARMATURE"
+        }
+      ],
+      "materials": [
+        "Aevrynd_RuntimeHairCards_DenseAlpha_R276"
+      ],
+      "vertices": 18432,
+      "polygons": 8832
+    }
+  },
+  "material": {
+    "name": "Aevrynd_PrincipledHair_CC0_R264",
+    "owned": true,
+    "principledHair": true,
+    "revision": "v249r291"
+  },
+  "visibleAuthoredPointCount": 262368,
+  "runtimeProxySeparate": true,
+  "failures": [],
+  "status": "PASS"
+}

@@ -1,0 +1,65 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-collision-safe-optical-stack-r318.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-unified-dense-upper-eyelids-r323.blend",
+  "removedTransitionalOverlays": [
+    "AevryndEye_L_UpperLidSurface_R308",
+    "AevryndEye_R_UpperLidSurface_R308"
+  ],
+  "apertureM": 0.0022,
+  "scleraRecessM": 0.0003,
+  "frontOpticalAdvanceM": 0.0009,
+  "multires": {
+    "beforeVertices": 10582,
+    "afterVertices": 169362,
+    "appliedModifier": "Multires"
+  },
+  "sculpt": {
+    "movedVertices": {
+      "L": 1513,
+      "R": 1512
+    },
+    "maximumDisplacementM": 0.002233104224173564
+  },
+  "curveMoves": {
+    "AevryndEye_L_UpperLidMargin_R258": 41,
+    "AevryndFemaleUpperLashes_L_R256": 114,
+    "AevryndEye_R_UpperLidMargin_R258": 41,
+    "AevryndFemaleUpperLashes_R_R256": 114
+  },
+  "eyeOffsets": {
+    "L": {
+      "Sclera_R249": 0.0003,
+      "Cornea_R252": -0.0009,
+      "Limbal_R253": -0.0009,
+      "Iris_R253": -0.0009,
+      "Pupil_R253": -0.0009
+    },
+    "R": {
+      "Sclera_R249": 0.0003,
+      "Cornea_R252": -0.0009,
+      "Limbal_R253": -0.0009,
+      "Iris_R253": -0.0009,
+      "Pupil_R253": -0.0009
+    }
+  },
+  "bodyVertexGroups": 21,
+  "unweightedBodyVertices": 0,
+  "remainingBodyModifiers": [
+    {
+      "name": "Aevrynd R250 Armature",
+      "type": "ARMATURE"
+    }
+  ],
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-unified-dense-upper-eyelids-r323.collision-audit.json",
+  "collisionStatus": "PASS",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r323-unified-dense-upper-eyelids",
+  "ownedAssetOnly": true,
+  "status": "TECHNICAL_PASS_VISUAL_FAIL_EYE_PROTRUSION",
+  "strictScores": {
+    "face": 62,
+    "hair": 63,
+    "overallCharacter": 60
+  },
+  "visualFailure": "The 0.9mm anterior front-optical offset required for zero overlap is visibly proud of the eyelid in profile; r328 removes these flat optical layers.",
+  "websitePromotionApproved": false
+}

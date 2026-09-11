@@ -1,0 +1,104 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-collision-safe-optical-stack-r318.blend",
+  "method": "Use the selected 2.2mm dense native upper lid from r320, recess the sclera by 0.3mm, and test small anterior offsets for the already intersection-free front optical stack.",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r322-dense-eyelid-split-depth-sweep",
+  "variants": {
+    "a-optical-forward-0p3mm": {
+      "apertureM": 0.0022,
+      "scleraRecessM": 0.0003,
+      "frontOpticalAdvanceM": 0.0003,
+      "movedVertices": {
+        "L": 1513,
+        "R": 1512
+      },
+      "maximumDisplacementM": 0.002233104224173564,
+      "diagnostic": {
+        "sideWindow": 21026,
+        "verticalWindow": 3638,
+        "nearestHit": 3609,
+        "within6mm": 3554
+      },
+      "bodyEyeTriangleOverlaps": {
+        "L": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 12,
+          "Limbal_R253": 24,
+          "Iris_R253": 11,
+          "Pupil_R253": 0
+        },
+        "R": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 8,
+          "Limbal_R253": 23,
+          "Iris_R253": 7,
+          "Pupil_R253": 0
+        }
+      }
+    },
+    "b-optical-forward-0p6mm": {
+      "apertureM": 0.0022,
+      "scleraRecessM": 0.0003,
+      "frontOpticalAdvanceM": 0.0006,
+      "movedVertices": {
+        "L": 1513,
+        "R": 1512
+      },
+      "maximumDisplacementM": 0.002233104224173564,
+      "diagnostic": {
+        "sideWindow": 21026,
+        "verticalWindow": 3638,
+        "nearestHit": 3609,
+        "within6mm": 3554
+      },
+      "bodyEyeTriangleOverlaps": {
+        "L": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 0,
+          "Limbal_R253": 16,
+          "Iris_R253": 0,
+          "Pupil_R253": 0
+        },
+        "R": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 0,
+          "Limbal_R253": 15,
+          "Iris_R253": 0,
+          "Pupil_R253": 0
+        }
+      }
+    },
+    "c-optical-forward-0p9mm": {
+      "apertureM": 0.0022,
+      "scleraRecessM": 0.0003,
+      "frontOpticalAdvanceM": 0.0009,
+      "movedVertices": {
+        "L": 1513,
+        "R": 1512
+      },
+      "maximumDisplacementM": 0.002233104224173564,
+      "diagnostic": {
+        "sideWindow": 21026,
+        "verticalWindow": 3638,
+        "nearestHit": 3609,
+        "within6mm": 3554
+      },
+      "bodyEyeTriangleOverlaps": {
+        "L": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 0,
+          "Limbal_R253": 0,
+          "Iris_R253": 0,
+          "Pupil_R253": 0
+        },
+        "R": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 0,
+          "Limbal_R253": 0,
+          "Iris_R253": 0,
+          "Pupil_R253": 0
+        }
+      }
+    }
+  },
+  "status": "TECHNICAL_PASS_PROFILE_VISUAL_FAIL"
+}

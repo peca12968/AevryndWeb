@@ -1,0 +1,101 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-collision-safe-optical-stack-r318.blend",
+  "method": "Use the selected 2.2mm dense native upper lid from r320, remove the separate r308 overlay, and test small posterior eye-stack offsets to clear local lid intersections without further shrinking the iris.",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r321-dense-eyelid-eye-recess-sweep",
+  "variants": {
+    "a-recess-0p3mm": {
+      "apertureM": 0.0022,
+      "eyeRecessM": 0.0003,
+      "movedVertices": {
+        "L": 1513,
+        "R": 1512
+      },
+      "maximumDisplacementM": 0.002233104224173564,
+      "diagnostic": {
+        "sideWindow": 21026,
+        "verticalWindow": 3638,
+        "nearestHit": 3609,
+        "within6mm": 3554
+      },
+      "bodyEyeTriangleOverlaps": {
+        "L": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 27,
+          "Limbal_R253": 34,
+          "Iris_R253": 26,
+          "Pupil_R253": 0
+        },
+        "R": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 22,
+          "Limbal_R253": 35,
+          "Iris_R253": 26,
+          "Pupil_R253": 0
+        }
+      }
+    },
+    "b-recess-0p6mm": {
+      "apertureM": 0.0022,
+      "eyeRecessM": 0.0006,
+      "movedVertices": {
+        "L": 1513,
+        "R": 1512
+      },
+      "maximumDisplacementM": 0.002233104224173564,
+      "diagnostic": {
+        "sideWindow": 21026,
+        "verticalWindow": 3638,
+        "nearestHit": 3609,
+        "within6mm": 3554
+      },
+      "bodyEyeTriangleOverlaps": {
+        "L": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 31,
+          "Limbal_R253": 37,
+          "Iris_R253": 32,
+          "Pupil_R253": 0
+        },
+        "R": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 27,
+          "Limbal_R253": 37,
+          "Iris_R253": 31,
+          "Pupil_R253": 0
+        }
+      }
+    },
+    "c-recess-0p9mm": {
+      "apertureM": 0.0022,
+      "eyeRecessM": 0.0009,
+      "movedVertices": {
+        "L": 1513,
+        "R": 1512
+      },
+      "maximumDisplacementM": 0.002233104224173564,
+      "diagnostic": {
+        "sideWindow": 21026,
+        "verticalWindow": 3638,
+        "nearestHit": 3609,
+        "within6mm": 3554
+      },
+      "bodyEyeTriangleOverlaps": {
+        "L": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 36,
+          "Limbal_R253": 40,
+          "Iris_R253": 35,
+          "Pupil_R253": 0
+        },
+        "R": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 32,
+          "Limbal_R253": 41,
+          "Iris_R253": 31,
+          "Pupil_R253": 0
+        }
+      }
+    }
+  },
+  "status": "REJECT_RECESS_INCREASES_FRONT_OPTICAL_COLLISIONS"
+}

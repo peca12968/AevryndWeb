@@ -1,0 +1,98 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-collision-safe-optical-stack-r318.blend",
+  "method": "Apply the evaluated dense body surface to a static study mesh, remove the separate r308 overlay, and wrap native upper-eye vertices toward a parametric aperture while projecting them outside the sclera.",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r320-unified-dense-eyelid-sweep",
+  "variants": {
+    "a-1p4mm": {
+      "apertureM": 0.0014,
+      "movedVertices": {
+        "L": 1627,
+        "R": 1625
+      },
+      "maximumDisplacementM": 0.003427803459383723,
+      "diagnostic": {
+        "sideWindow": 21026,
+        "verticalWindow": 3867,
+        "nearestHit": 3836,
+        "within6mm": 3781
+      },
+      "bodyEyeTriangleOverlaps": {
+        "L": {
+          "Sclera_R249": 16,
+          "Cornea_R252": 44,
+          "Limbal_R253": 61,
+          "Iris_R253": 13,
+          "Pupil_R253": 0
+        },
+        "R": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 41,
+          "Limbal_R253": 61,
+          "Iris_R253": 10,
+          "Pupil_R253": 0
+        }
+      }
+    },
+    "b-1p8mm": {
+      "apertureM": 0.0018,
+      "movedVertices": {
+        "L": 1573,
+        "R": 1570
+      },
+      "maximumDisplacementM": 0.0034575808913331054,
+      "diagnostic": {
+        "sideWindow": 21026,
+        "verticalWindow": 3758,
+        "nearestHit": 3727,
+        "within6mm": 3672
+      },
+      "bodyEyeTriangleOverlaps": {
+        "L": {
+          "Sclera_R249": 16,
+          "Cornea_R252": 38,
+          "Limbal_R253": 61,
+          "Iris_R253": 10,
+          "Pupil_R253": 0
+        },
+        "R": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 36,
+          "Limbal_R253": 58,
+          "Iris_R253": 8,
+          "Pupil_R253": 0
+        }
+      }
+    },
+    "c-2p2mm": {
+      "apertureM": 0.0022,
+      "movedVertices": {
+        "L": 1513,
+        "R": 1512
+      },
+      "maximumDisplacementM": 0.0034505346284436004,
+      "diagnostic": {
+        "sideWindow": 21026,
+        "verticalWindow": 3638,
+        "nearestHit": 3609,
+        "within6mm": 3554
+      },
+      "bodyEyeTriangleOverlaps": {
+        "L": {
+          "Sclera_R249": 16,
+          "Cornea_R252": 37,
+          "Limbal_R253": 59,
+          "Iris_R253": 0,
+          "Pupil_R253": 0
+        },
+        "R": {
+          "Sclera_R249": 0,
+          "Cornea_R252": 36,
+          "Limbal_R253": 56,
+          "Iris_R253": 8,
+          "Pupil_R253": 0
+        }
+      }
+    }
+  },
+  "status": "VISUAL_GAIN_COLLISION_FAIL"
+}

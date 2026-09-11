@@ -1,0 +1,101 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-collision-safe-optical-stack-r318.blend",
+  "method": "Use the selected 2.2mm dense native upper lid from r320 and cast camera-axis rays through every eye layer so the continuous skin surface wraps in front of the globe without moving the eye stack.",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r324-dense-eyelid-ray-wrap-sweep",
+  "variants": {
+    "a-clearance-0p15mm": {
+      "apertureM": 0.0022,
+      "rayWrapClearanceM": 0.00015,
+      "movedVertices": {
+        "L": 1513,
+        "R": 1512
+      },
+      "maximumDisplacementM": 0.013221301174624582,
+      "diagnostic": {
+        "sideWindow": 21026,
+        "verticalWindow": 3638,
+        "nearestHit": 3609,
+        "within6mm": 3554
+      },
+      "bodyEyeTriangleOverlaps": {
+        "L": {
+          "Sclera_R249": 296,
+          "Cornea_R252": 20,
+          "Limbal_R253": 38,
+          "Iris_R253": 26,
+          "Pupil_R253": 0
+        },
+        "R": {
+          "Sclera_R249": 266,
+          "Cornea_R252": 21,
+          "Limbal_R253": 37,
+          "Iris_R253": 22,
+          "Pupil_R253": 0
+        }
+      }
+    },
+    "b-clearance-0p30mm": {
+      "apertureM": 0.0022,
+      "rayWrapClearanceM": 0.0003,
+      "movedVertices": {
+        "L": 1513,
+        "R": 1512
+      },
+      "maximumDisplacementM": 0.013293041726753335,
+      "diagnostic": {
+        "sideWindow": 21026,
+        "verticalWindow": 3638,
+        "nearestHit": 3609,
+        "within6mm": 3554
+      },
+      "bodyEyeTriangleOverlaps": {
+        "L": {
+          "Sclera_R249": 288,
+          "Cornea_R252": 24,
+          "Limbal_R253": 38,
+          "Iris_R253": 27,
+          "Pupil_R253": 0
+        },
+        "R": {
+          "Sclera_R249": 259,
+          "Cornea_R252": 24,
+          "Limbal_R253": 37,
+          "Iris_R253": 23,
+          "Pupil_R253": 0
+        }
+      }
+    },
+    "c-clearance-0p50mm": {
+      "apertureM": 0.0022,
+      "rayWrapClearanceM": 0.0005,
+      "movedVertices": {
+        "L": 1513,
+        "R": 1512
+      },
+      "maximumDisplacementM": 0.013388690361129822,
+      "diagnostic": {
+        "sideWindow": 21026,
+        "verticalWindow": 3638,
+        "nearestHit": 3609,
+        "within6mm": 3554
+      },
+      "bodyEyeTriangleOverlaps": {
+        "L": {
+          "Sclera_R249": 276,
+          "Cornea_R252": 28,
+          "Limbal_R253": 42,
+          "Iris_R253": 30,
+          "Pupil_R253": 0
+        },
+        "R": {
+          "Sclera_R249": 248,
+          "Cornea_R252": 24,
+          "Limbal_R253": 40,
+          "Iris_R253": 25,
+          "Pupil_R253": 0
+        }
+      }
+    }
+  },
+  "status": "REJECT_FOLDING_AND_COLLISION"
+}
