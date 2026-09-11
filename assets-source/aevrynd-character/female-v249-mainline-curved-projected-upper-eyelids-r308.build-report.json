@@ -28,10 +28,10 @@
     "AevryndFemaleUpperLashes_R_R256": 114
   },
   "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-curved-projected-upper-eyelids-r308.collision-audit.json",
-  "collisionStatus": "PASS",
+  "collisionStatus": "PASS_UPPER_LID_ONLY_GLOBAL_EYE_STACK_FAIL",
   "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r308-curved-projected-upper-eyelids",
   "ownedAssetOnly": true,
-  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "status": "PARTIAL_TECHNICAL_PASS_GLOBAL_EYE_COLLISION_FAIL",
   "strictScores": {
     "face": 60,
     "hair": 63,
@@ -49,5 +49,7 @@
     "Hairline remains sparse with a bright scalp band; the bob silhouette and needle-like ends remain synthetic."
   ],
   "reviewDirectory": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r308-hair-eye-technical-pass",
-  "websitePromotionApproved": false
+  "websitePromotionApproved": false,
+  "supersededBy": "aevrynd-female-authoring-v249-mainline-collision-safe-optical-stack-r318.blend",
+  "correction": "The original r308 audit covered the added upper-lid surfaces. The broader r312 audit found 786 body-versus-optical-layer triangle overlaps across frames 1 and 20 in the inherited cornea, limbal and iris geometry. r318 closes those overlaps."
 }

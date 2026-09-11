@@ -1,0 +1,39 @@
+{
+  "range": "r309-r318",
+  "sourceCandidate": "aevrynd-female-authoring-v249-mainline-curved-projected-upper-eyelids-r308.blend",
+  "resultCandidate": "aevrynd-female-authoring-v249-mainline-collision-safe-optical-stack-r318.blend",
+  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "findings": [
+    "r309-r310 confirm that the native 10,582-vertex body has a regular eyelid control ring and evaluates to 169,362 vertices; raw topology density is not the main blocker.",
+    "r311 native upper-lid motion is visually suppressed by the intersecting front optical stack.",
+    "r312 exposes 786 body-versus-cornea/limbal/iris triangle overlaps across frames 1 and 20 in r301 and therefore in inherited r308 geometry.",
+    "r313 moving the socket forward increases intersections and is rejected.",
+    "r314 fully conformal optical geometry removes collisions but hides the iris behind opaque sclera and is visually rejected.",
+    "r315 finds 0.76 as the largest tested uniform XZ optical scale with zero body overlap.",
+    "r316 shows that scaling alone leaves cornea-to-iris and cornea-to-limbal intersections.",
+    "r317 finds that clamping the cornea 0.08mm in front of the iris removes all tested internal optical overlaps.",
+    "r318 combines the 0.76 optical scale and 0.08mm cornea clearance; full body, upper-lid, optical, face-binding and hair-motion audits pass."
+  ],
+  "strictScores": {
+    "face": 61,
+    "hair": 63,
+    "overallCharacter": 60
+  },
+  "websitePromotionApproved": false,
+  "reports": [
+    "female-v249-mainline-eye-topology-wire-r309.study.json",
+    "female-v249-mainline-eyelid-control-ring-r310.study.json",
+    "female-v249-mainline-native-eyelid-sculpt-r311.study.json",
+    "female-v249-mainline-body-eye-intersection-r312.audit.json",
+    "female-v249-mainline-native-socket-clearance-r313.study.json",
+    "female-v249-mainline-conformal-eye-stack-r314.study.json",
+    "female-v249-mainline-collision-safe-optical-scale-r315.study.json",
+    "female-v249-mainline-separated-optical-stack-r316.study.json",
+    "female-v249-mainline-cornea-clearance-r317.study.json",
+    "female-v249-mainline-collision-safe-optical-stack-r318.build-report.json",
+    "female-v249-mainline-collision-safe-optical-stack-r318.collision-audit.json",
+    "female-v249-mainline-collision-safe-optical-stack-r318.face-layer-audit.json",
+    "female-v249-mainline-collision-safe-optical-stack-r318.hair-layer-audit.json",
+    "female-v249-mainline-collision-safe-optical-stack-r318.hair-motion-audit.json"
+  ]
+}

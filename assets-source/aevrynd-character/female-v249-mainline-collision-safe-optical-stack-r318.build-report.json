@@ -1,0 +1,51 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-curved-projected-upper-eyelids-r308.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-collision-safe-optical-stack-r318.blend",
+  "opticalScaleXZ": 0.76,
+  "corneaIrisClearanceM": 8e-05,
+  "modified": {
+    "L": {
+      "irisPlaneY": -0.13893188536167145,
+      "maximumCorneaY": -0.13901188536167144,
+      "clampedVertices": 480
+    },
+    "R": {
+      "irisPlaneY": -0.13874691724777222,
+      "maximumCorneaY": -0.1388269172477722,
+      "clampedVertices": 480
+    }
+  },
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-collision-safe-optical-stack-r318.collision-audit.json",
+  "collisionStatus": "PASS",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r318-collision-safe-optical-stack",
+  "ownedAssetOnly": true,
+  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "strictScores": {
+    "face": 61,
+    "hair": 63,
+    "overallCharacter": 60
+  },
+  "technicalGains": [
+    "The complete body-versus-eye audit is zero-overlap at frames 1 and 20 for sclera, cornea, limbal ring, iris and pupil on both eyes.",
+    "The upper-lid overlay is zero-overlap against the body and every optical layer at frames 1 and 20.",
+    "The cornea is separated from the limbal ring, iris and pupil; the iris and pupil are also intersection-free.",
+    "All 26 tracked face layers remain head-bound, and the 262,368-point authored groom retains zero body penetration at frames 1, 33 and 61."
+  ],
+  "visualGains": [
+    "The 0.76 optical-stack scale fits within the aperture without the face intersections discovered in r312.",
+    "The iris-to-sclera proportion is less dominant than r308 while retaining the intended green eye material.",
+    "The 0.08mm cornea-to-iris clearance removes hidden internal intersections without a visible step in the review renders."
+  ],
+  "visualFailures": [
+    "The eye aperture remains too round and open for a natural neutral expression.",
+    "The separate upper-lid surface reads as an overlay seam and is not acceptable final facial topology.",
+    "Lower-lid thickness, tear troughs, caruncles and orbital planes remain underdeveloped.",
+    "Skin response remains waxy and lacks regional variation.",
+    "The hairline has sparse bright gaps, uniform curtain flow and needle-like ends."
+  ],
+  "faceLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-collision-safe-optical-stack-r318.face-layer-audit.json",
+  "hairLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-collision-safe-optical-stack-r318.hair-layer-audit.json",
+  "hairMotionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-collision-safe-optical-stack-r318.hair-motion-audit.json",
+  "reviewDirectory": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r318-optical-collision-pass",
+  "websitePromotionApproved": false
+}
