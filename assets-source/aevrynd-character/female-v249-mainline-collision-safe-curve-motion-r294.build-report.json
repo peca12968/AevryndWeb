@@ -1,0 +1,44 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-curve-clearance-r292.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-collision-safe-curve-motion-r294.blend",
+  "layers": [
+    "AevryndFemalePrimaryClumps_R264",
+    "AevryndFemaleSecondaryFill_R264",
+    "AevryndFemaleFlyaways_R264"
+  ],
+  "nodeGroups": [
+    "AevryndCollisionSafeCurveMotion_AevryndFemalePrimaryClumps_R264_R294",
+    "AevryndCollisionSafeCurveMotion_AevryndFemaleSecondaryFill_R264_R294",
+    "AevryndCollisionSafeCurveMotion_AevryndFemaleFlyaways_R264_R294"
+  ],
+  "audit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-collision-safe-curve-motion-r294.audit.json",
+  "auditStatus": "FAIL",
+  "motionSummary": {
+    "peakMeanM": 0.0009635754439440861,
+    "peakP95M": 0.003470188340378914,
+    "peakMaximumM": 0.0063967446537470515,
+    "rootMaximumM": 0.0,
+    "settleMaximumM": 0.0
+  },
+  "failures": [
+    {
+      "frame": 33,
+      "object": "AevryndFemalePrimaryClumps_R264",
+      "penetratingVertices": 7
+    },
+    {
+      "frame": 33,
+      "object": "AevryndFemaleSecondaryFill_R264",
+      "penetratingVertices": 173
+    },
+    {
+      "frame": 33,
+      "object": "AevryndFemaleFlyaways_R264",
+      "penetratingVertices": 8
+    }
+  ],
+  "runtimeCardProxyPreserved": "AevryndFemaleRuntimeHairCards_R276",
+  "ownedAssetOnly": true,
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r294-collision-safe-curve-motion",
+  "status": "FAIL"
+}

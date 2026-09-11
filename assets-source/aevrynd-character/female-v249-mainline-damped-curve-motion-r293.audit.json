@@ -1,0 +1,113 @@
+{
+  "model": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-damped-curve-motion-r293.blend",
+  "frames": [
+    1,
+    33,
+    61
+  ],
+  "collision": {
+    "1": {
+      "AevryndFemalePrimaryClumps_R264": {
+        "samples": 18624,
+        "minimumSignedM": 0.00029476066366740383,
+        "penetratingVertices": 0
+      },
+      "AevryndFemaleSecondaryFill_R264": {
+        "samples": 242112,
+        "minimumSignedM": 0.00029005389296798967,
+        "penetratingVertices": 0
+      },
+      "AevryndFemaleFlyaways_R264": {
+        "samples": 1704,
+        "minimumSignedM": 0.00029922656176495366,
+        "penetratingVertices": 0
+      }
+    },
+    "33": {
+      "AevryndFemalePrimaryClumps_R264": {
+        "samples": 18624,
+        "minimumSignedM": -0.0005796021468995605,
+        "penetratingVertices": 9
+      },
+      "AevryndFemaleSecondaryFill_R264": {
+        "samples": 242112,
+        "minimumSignedM": -0.0008455239767499734,
+        "penetratingVertices": 105
+      },
+      "AevryndFemaleFlyaways_R264": {
+        "samples": 1704,
+        "minimumSignedM": -0.0011837672263936838,
+        "penetratingVertices": 1
+      }
+    },
+    "61": {
+      "AevryndFemalePrimaryClumps_R264": {
+        "samples": 18624,
+        "minimumSignedM": 0.00029476066366740383,
+        "penetratingVertices": 0
+      },
+      "AevryndFemaleSecondaryFill_R264": {
+        "samples": 242112,
+        "minimumSignedM": 0.00029005389296798967,
+        "penetratingVertices": 0
+      },
+      "AevryndFemaleFlyaways_R264": {
+        "samples": 1704,
+        "minimumSignedM": 0.00029922656176495366,
+        "penetratingVertices": 0
+      }
+    }
+  },
+  "motion": {
+    "AevryndFemalePrimaryClumps_R264": {
+      "peakMeanM": 0.03393771711695175,
+      "peakP95M": 0.05574675741756905,
+      "peakMaximumM": 0.06978567099735042,
+      "rootMaximumM": 0.05020266157419667,
+      "settleMaximumM": 0.0
+    },
+    "AevryndFemaleSecondaryFill_R264": {
+      "peakMeanM": 0.033715948853084245,
+      "peakP95M": 0.0554908642877613,
+      "peakMaximumM": 0.07006153545313337,
+      "rootMaximumM": 0.05077784525708868,
+      "settleMaximumM": 0.0
+    },
+    "AevryndFemaleFlyaways_R264": {
+      "peakMeanM": 0.03470196378859799,
+      "peakP95M": 0.05671113686373497,
+      "peakMaximumM": 0.07041399967745673,
+      "rootMaximumM": 0.049759081337505194,
+      "settleMaximumM": 0.0
+    }
+  },
+  "motionSummary": {
+    "peakMeanM": 0.03373808870065467,
+    "peakP95M": 0.05551885762329706,
+    "peakMaximumM": 0.07041399967745673,
+    "rootMaximumM": 0.05077784525708868,
+    "settleMaximumM": 0.0
+  },
+  "failures": [
+    {
+      "frame": 33,
+      "object": "AevryndFemalePrimaryClumps_R264",
+      "penetratingVertices": 9
+    },
+    {
+      "frame": 33,
+      "object": "AevryndFemaleSecondaryFill_R264",
+      "penetratingVertices": 105
+    },
+    {
+      "frame": 33,
+      "object": "AevryndFemaleFlyaways_R264",
+      "penetratingVertices": 1
+    },
+    {
+      "motion": "root drift above 0.02mm",
+      "valueM": 0.05077784525708868
+    }
+  ],
+  "status": "FAIL"
+}

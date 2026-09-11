@@ -1,0 +1,134 @@
+{
+  "model": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-matte-root-underlayer-r287.blend",
+  "objects": [
+    {
+      "name": "AevryndFemaleFlyaways_R264",
+      "type": "CURVES",
+      "layer": "hair.flyaways",
+      "revision": "v249r264",
+      "hideRender": false,
+      "hideViewport": false,
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "materials": [
+        "Aevrynd_PrincipledHair_CC0_R264"
+      ],
+      "curves": 71,
+      "points": 1704
+    },
+    {
+      "name": "AevryndFemaleHairlineTransitionCards_R285",
+      "type": "MESH",
+      "layer": "hair.hairline_transition.head_bound",
+      "revision": "v249r286",
+      "hideRender": false,
+      "hideViewport": false,
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Hairline Head Binding",
+          "type": "ARMATURE"
+        }
+      ],
+      "materials": [
+        "Aevrynd_RuntimeHairCards_Alpha_R272"
+      ],
+      "vertices": 768,
+      "edges": 1088,
+      "polygons": 352
+    },
+    {
+      "name": "AevryndFemalePrimaryClumps_R264",
+      "type": "CURVES",
+      "layer": "hair.primary_clumps",
+      "revision": "v249r264",
+      "hideRender": true,
+      "hideViewport": false,
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "materials": [
+        "Aevrynd_PrincipledHair_CC0_R264"
+      ],
+      "curves": 776,
+      "points": 18624
+    },
+    {
+      "name": "AevryndFemaleRuntimeHairCards_R271",
+      "type": "MESH",
+      "layer": "hair.runtime_cards.dynamic.alpha",
+      "revision": "v249r272",
+      "hideRender": true,
+      "hideViewport": true,
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Hair Secondary Motion",
+          "type": "ARMATURE"
+        }
+      ],
+      "materials": [
+        "Aevrynd_RuntimeHairCards_Alpha_R272"
+      ],
+      "vertices": 37248,
+      "edges": 54320,
+      "polygons": 17848
+    },
+    {
+      "name": "AevryndFemaleRuntimeHairCards_R276",
+      "type": "MESH",
+      "layer": "hair.runtime_cards.dynamic.alpha.wide_clumps",
+      "revision": "v249r284",
+      "hideRender": false,
+      "hideViewport": false,
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Hair Secondary Motion",
+          "type": "ARMATURE"
+        }
+      ],
+      "materials": [
+        "Aevrynd_RuntimeHairCards_DenseAlpha_R276"
+      ],
+      "vertices": 18432,
+      "edges": 26880,
+      "polygons": 8832
+    },
+    {
+      "name": "AevryndFemaleScalpUnderlayer_R280",
+      "type": "MESH",
+      "layer": "hair.scalp_underlayer.head_bound",
+      "revision": "v249r283",
+      "hideRender": false,
+      "hideViewport": false,
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Scalp Head Binding",
+          "type": "ARMATURE"
+        }
+      ],
+      "materials": [
+        "Aevrynd_ScalpUnderlayer_R280"
+      ],
+      "vertices": 758,
+      "edges": 1466,
+      "polygons": 708
+    },
+    {
+      "name": "AevryndFemaleSecondaryFill_R264",
+      "type": "CURVES",
+      "layer": "hair.secondary_fill",
+      "revision": "v249r264",
+      "hideRender": true,
+      "hideViewport": true,
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "materials": [
+        "Aevrynd_PrincipledHair_CC0_R264"
+      ],
+      "curves": 10088,
+      "points": 242112
+    }
+  ]
+}

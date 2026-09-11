@@ -1,0 +1,64 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-dynamic-curve-envelope-r295.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-pruned-curve-outlier-r296.blend",
+  "restEnvelopeM": 0.002,
+  "pruning": {
+    "AevryndFemalePrimaryClumps_R264": {
+      "invalidPoints": [],
+      "removedCurveIndices": [],
+      "curvesBefore": 776,
+      "curvesAfter": 776
+    },
+    "AevryndFemaleSecondaryFill_R264": {
+      "invalidPoints": [
+        {
+          "point": 76694,
+          "curve": 3195,
+          "signedM": -0.001992804582187091
+        }
+      ],
+      "removedCurveIndices": [
+        3195
+      ],
+      "curvesBefore": 10088,
+      "curvesAfter": 10087
+    },
+    "AevryndFemaleFlyaways_R264": {
+      "invalidPoints": [],
+      "removedCurveIndices": [],
+      "curvesBefore": 71,
+      "curvesAfter": 71
+    }
+  },
+  "audit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-pruned-curve-outlier-r296.audit.json",
+  "auditStatus": "PASS",
+  "layerAudit": "female-v249-mainline-pruned-curve-outlier-r296.layer-audit.json",
+  "layerAuditStatus": "PASS",
+  "motionSummary": {
+    "peakMeanM": 0.0009637468903869439,
+    "peakP95M": 0.0034702076058405755,
+    "peakMaximumM": 0.0063967446537470515,
+    "rootMaximumM": 0.0,
+    "settleMaximumM": 0.0
+  },
+  "failures": [],
+  "topologyChanged": false,
+  "runtimeCardProxyPreserved": "AevryndFemaleRuntimeHairCards_R276",
+  "ownedAssetOnly": true,
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r296-pruned-curve-outlier",
+  "reviewDirectory": "assets-source/aevrynd-character/reviews/v249r296-authored-dynamic-groom-pass",
+  "strictHairVisualScore": 61,
+  "visualReviewStatus": "FAIL_HERO_GATE",
+  "visualStrengths": [
+    "individual fibers remain readable from front and back instead of merging into a broad card curtain",
+    "left and right silhouettes differ and the ends no longer form a perfectly straight horizontal line",
+    "dark longitudinal scattering is more hair-like than the r287 card material"
+  ],
+  "visualFailures": [
+    "overall bob mass is still too uniform and lacks large authored lock hierarchy",
+    "lower silhouette remains brush-like with too many independent sharp tips",
+    "frontal transition fibers are sparse and expose an artificial part boundary",
+    "current high-density authoring layers are not yet an acceptable website runtime representation"
+  ],
+  "status": "TECHNICAL_PASS_VISUAL_FAIL"
+}

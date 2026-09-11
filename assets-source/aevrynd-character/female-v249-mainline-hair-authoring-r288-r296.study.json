@@ -1,0 +1,75 @@
+{
+  "mainline": "v249",
+  "parentTechnicalNode": "aevrynd-female-authoring-v249-mainline-matte-root-underlayer-r287.blend",
+  "purpose": "Replace repeated averaged-card repair with an explicit high-density authored groom target, while preserving a separate runtime proxy.",
+  "experiments": [
+    {
+      "revision": "r288",
+      "change": "Eight procedurally owned fine-fiber atlas slots with staggered UV assignment.",
+      "result": "REJECT",
+      "reason": "Fine alpha detail collapses below review resolution and per-slot color reads as checkerboard facets."
+    },
+    {
+      "revision": "r289",
+      "change": "Three-to-five macro locks per atlas card, constant hue and smooth polygons.",
+      "result": "REJECT",
+      "reason": "Overlapping 384 wide cards still fill every negative channel and remain a solid curtain."
+    },
+    {
+      "revision": "r290",
+      "change": "Narrowed posterior cards, outward volume, asymmetric side arcs and uneven tips.",
+      "result": "REJECT",
+      "reason": "Back curtain becomes bald gaps and a hard horizontal shelf."
+    },
+    {
+      "revision": "r291",
+      "change": "Restored 776 owned guides, 10,088 child fibers and 71 flyaways as visible authoring layers; retained r287 runtime cards as a hidden render proxy.",
+      "result": "REJECT_TECHNICAL",
+      "reason": "Visual direction improves, but 2,443 curve points penetrate the body."
+    },
+    {
+      "revision": "r292",
+      "change": "Projected authored curve points to 0.3mm static clearance.",
+      "result": "STATIC_PASS",
+      "reason": "Frames 1, 33 and 61 reach zero static penetration; visible curve motion is not yet present."
+    },
+    {
+      "revision": "r293-r294",
+      "change": "Root-pinned damped Geometry Nodes response with corrected head-local motion measurement and outward bias.",
+      "result": "REJECT_TECHNICAL",
+      "reason": "Motion is readable and roots remain fixed, but peak-frame collision persists."
+    },
+    {
+      "revision": "r295",
+      "change": "Two-millimeter rest envelope around the animated curve groom.",
+      "result": "NEAR_PASS",
+      "reason": "Peak motion becomes collision free; one ambiguous secondary strand remains below the rest surface."
+    },
+    {
+      "revision": "r296",
+      "change": "Removed the single invalid 24-point secondary strand and retained the full motion setup.",
+      "result": "TECHNICAL_PASS_VISUAL_FAIL",
+      "evidence": {
+        "visibleCurvePoints": 262416,
+        "collisionFrames": [1, 33, 61],
+        "penetratingPoints": 0,
+        "rootMaximumM": 0.0,
+        "peakMeanM": 0.0009637468903869439,
+        "peakP95M": 0.0034702076058405755,
+        "peakMaximumM": 0.0063967446537470515,
+        "settleMaximumM": 0.0,
+        "strictHairVisualScore": 61
+      },
+      "remainingVisualFailures": [
+        "uniform bob mass without clear large-lock hierarchy",
+        "brush-like lower silhouette",
+        "sparse frontal transition and artificial part boundary",
+        "high-density authoring groom still requires semantic card baking for the website"
+      ]
+    }
+  ],
+  "promotedAuthoringTechnicalNode": "aevrynd-female-authoring-v249-mainline-pruned-curve-outlier-r296.blend",
+  "runtimeTechnicalNodeUnchanged": "aevrynd-female-authoring-v249-mainline-matte-root-underlayer-r287.blend",
+  "websiteAssetUnchanged": "v83",
+  "next": "Author large-lock hierarchy and bake primary, fill, hairline and flyaway card families from the r296 guide identity instead of averaging unrelated strands."
+}

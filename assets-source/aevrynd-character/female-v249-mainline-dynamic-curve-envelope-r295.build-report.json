@@ -1,0 +1,45 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-collision-safe-curve-motion-r294.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-dynamic-curve-envelope-r295.blend",
+  "restEnvelopeM": 0.002,
+  "repair": {
+    "AevryndFemalePrimaryClumps_R264": {
+      "moved": 642,
+      "maximumCorrectionM": 0.0017056918449910464
+    },
+    "AevryndFemaleSecondaryFill_R264": {
+      "moved": 6331,
+      "maximumCorrectionM": 0.001710195737711834
+    },
+    "AevryndFemaleFlyaways_R264": {
+      "moved": 42,
+      "maximumCorrectionM": 0.0017008324783877574
+    }
+  },
+  "audit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-dynamic-curve-envelope-r295.audit.json",
+  "auditStatus": "FAIL",
+  "motionSummary": {
+    "peakMeanM": 0.0009636244041559695,
+    "peakP95M": 0.003470188340378914,
+    "peakMaximumM": 0.0063967446537470515,
+    "rootMaximumM": 0.0,
+    "settleMaximumM": 0.0
+  },
+  "failures": [
+    {
+      "frame": 1,
+      "object": "AevryndFemaleSecondaryFill_R264",
+      "penetratingVertices": 1
+    },
+    {
+      "frame": 61,
+      "object": "AevryndFemaleSecondaryFill_R264",
+      "penetratingVertices": 1
+    }
+  ],
+  "topologyChanged": false,
+  "runtimeCardProxyPreserved": "AevryndFemaleRuntimeHairCards_R276",
+  "ownedAssetOnly": true,
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r295-dynamic-curve-envelope",
+  "status": "FAIL"
+}
