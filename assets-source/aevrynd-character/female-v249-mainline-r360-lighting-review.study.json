@@ -1,0 +1,43 @@
+{
+  "revision": "v249r360-semantic-guide-groom",
+  "date": "2026-09-11",
+  "purpose": "Determine whether the semantic groom made the character darker and correct the review exposure without changing the skin asset.",
+  "measurement": {
+    "space": "linear luminance",
+    "referenceImage": "D:/Download/Aevrynd/Temp/female-realism/v249r358-corrected-forehead-roi-prune-sweep/a-current-face.png",
+    "candidateImage": "D:/Download/Aevrynd/Temp/female-realism/v249r360-semantic-guide-groom/01-front-f01.png",
+    "skinMeanBefore": {
+      "r358Reference": 0.5255,
+      "r360Uncorrected": 0.4929,
+      "relativeChangePercent": -6.2
+    },
+    "faceRegionMeanBefore": {
+      "r358Reference": 0.5065,
+      "r360Uncorrected": 0.4865,
+      "relativeChangePercent": -3.9
+    }
+  },
+  "rootCauseIsolation": {
+    "normalSkinMean": 0.4903,
+    "withoutScalpShadowShell": 0.5037,
+    "withoutSemanticCurves": 0.4993,
+    "withoutAllHairLayers": 0.5308,
+    "finding": "The skin material and accepted r351 key/fill/rim calibration were unchanged. The denser semantic curves and scalp shell jointly introduced excessive face occlusion."
+  },
+  "correction": {
+    "method": "Add a broad low-energy frontal bounce to the Blender review rig.",
+    "object": "Aevrynd R360 Face Bounce",
+    "energy": 6.0,
+    "sizeM": 0.45,
+    "runtimeAsset": false,
+    "skinMeanAfter": 0.5243,
+    "referenceDeltaPercent": -0.2,
+    "contactShadowsRetained": true
+  },
+  "strictVerdict": {
+    "lightingRegression": "FIXED",
+    "hairlineAndScalpVisualQuality": "REJECTED",
+    "websitePromotionApproved": false,
+    "reason": "Exposure is restored, but the frontal scalp shell and abrupt hairline remain visibly synthetic."
+  }
+}
