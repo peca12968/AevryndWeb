@@ -1,0 +1,33 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r349-secondary-forehead-filter-sweep",
+  "variants": {
+    "a-current": {
+      "foreheadLowerZThresholdM": null,
+      "suppressedCurves": 0,
+      "retainedCurves": 10086,
+      "suppressedPoints": 0
+    },
+    "b-filter-below-1p70m": {
+      "foreheadLowerZThresholdM": 1.7,
+      "suppressedCurves": 19,
+      "retainedCurves": 10067,
+      "suppressedPoints": 456
+    },
+    "c-filter-below-1p68m": {
+      "foreheadLowerZThresholdM": 1.68,
+      "suppressedCurves": 19,
+      "retainedCurves": 10067,
+      "suppressedPoints": 456
+    },
+    "d-filter-below-1p66m": {
+      "foreheadLowerZThresholdM": 1.66,
+      "suppressedCurves": 11,
+      "retainedCurves": 10075,
+      "suppressedPoints": 264
+    }
+  },
+  "method": "Set radius to zero only for SecondaryFill curves whose non-root points enter the central forehead volume; retain curve topology, all other fill curves and all other hair layers.",
+  "status": "REJECT_INSUFFICIENT_FILTER_VOLUME",
+  "finding": "The world-space filter reaches too few offending curves and leaves the visible forehead lines unchanged."
+}

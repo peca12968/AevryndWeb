@@ -1,0 +1,29 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r347-hairline-layer-isolation",
+  "variants": {
+    "a-current": {
+      "flyawaysVisible": true,
+      "transitionCardsVisible": true,
+      "scalpUnderlayerVisible": true
+    },
+    "b-no-flyaways": {
+      "flyawaysVisible": false,
+      "transitionCardsVisible": true,
+      "scalpUnderlayerVisible": true
+    },
+    "c-no-transition-cards": {
+      "flyawaysVisible": true,
+      "transitionCardsVisible": false,
+      "scalpUnderlayerVisible": true
+    },
+    "d-no-flyaways-or-cards": {
+      "flyawaysVisible": false,
+      "transitionCardsVisible": false,
+      "scalpUnderlayerVisible": true
+    }
+  },
+  "method": "Render-isolate the three hairline support layers under fixed camera and lighting to identify forehead guide lines and the pale part seam.",
+  "status": "DIAGNOSTIC_TRANSITION_CARDS_NEEDED_FLYAWAYS_NOT_CAUSE",
+  "finding": "Flyaway removal barely changes the defect. Removing transition cards exposes larger gaps, so the remaining fault is in the groom families and their support coverage."
+}

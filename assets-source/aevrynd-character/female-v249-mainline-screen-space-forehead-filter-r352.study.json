@@ -1,0 +1,53 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r352-screen-space-forehead-filter-sweep",
+  "method": "Project SecondaryFill points through the fixed front review camera and suppress whole curves that cross a forehead screen-space region.",
+  "reviewLightCalibration": "r351 selected 1.35x r345 energies",
+  "variants": {
+    "a-current": {
+      "cameraSpaceRoi": null,
+      "minimumPointsInRoi": null,
+      "suppressedCurves": 0,
+      "retainedCurves": 10086,
+      "suppressedPoints": 0
+    },
+    "b-low-forehead": {
+      "cameraSpaceRoi": [
+        0.26,
+        0.79,
+        0.36,
+        0.53
+      ],
+      "minimumPointsInRoi": 2,
+      "suppressedCurves": 3434,
+      "retainedCurves": 6652,
+      "suppressedPoints": 82416
+    },
+    "c-mid-forehead": {
+      "cameraSpaceRoi": [
+        0.26,
+        0.79,
+        0.36,
+        0.6
+      ],
+      "minimumPointsInRoi": 2,
+      "suppressedCurves": 3560,
+      "retainedCurves": 6526,
+      "suppressedPoints": 85440
+    },
+    "d-broad-forehead": {
+      "cameraSpaceRoi": [
+        0.24,
+        0.81,
+        0.34,
+        0.66
+      ],
+      "minimumPointsInRoi": 2,
+      "suppressedCurves": 4348,
+      "retainedCurves": 5738,
+      "suppressedPoints": 104352
+    }
+  },
+  "status": "REJECT_RADIUS_SUPPRESSION_OVERRIDDEN_BY_MOTION_GRAPH",
+  "finding": "Zeroing input radius does not remove the evaluated rendered strands after the existing Geometry Nodes motion graph."
+}

@@ -1,0 +1,65 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r354-dual-family-geometry-prune-sweep",
+  "method": "Rebuild both rendered hair-curve geometries without curves crossing the forehead ROI; this validates actual removal after the motion modifier ignored input radius suppression.",
+  "reviewLightCalibration": "r351 selected 1.35x r345 energies",
+  "variants": {
+    "a-current": {
+      "cameraSpaceRoi": null,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 776,
+          "removedCurves": 0,
+          "retainedPoints": 18624
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 10086,
+          "removedCurves": 0,
+          "retainedPoints": 242064
+        }
+      }
+    },
+    "b-low-forehead": {
+      "cameraSpaceRoi": [
+        0.26,
+        0.79,
+        0.36,
+        0.53
+      ],
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 516,
+          "removedCurves": 260,
+          "retainedPoints": 12384
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 6652,
+          "removedCurves": 3434,
+          "retainedPoints": 159648
+        }
+      }
+    },
+    "c-mid-forehead": {
+      "cameraSpaceRoi": [
+        0.26,
+        0.79,
+        0.36,
+        0.6
+      ],
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 505,
+          "removedCurves": 271,
+          "retainedPoints": 12120
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 6526,
+          "removedCurves": 3560,
+          "retainedPoints": 156624
+        }
+      }
+    }
+  },
+  "status": "REJECT_OCCLUDED_REAR_CURVES_REMOVED",
+  "finding": "True geometry pruning clears the front view but also selects curves hidden behind the head, producing unacceptable rear coverage loss."
+}

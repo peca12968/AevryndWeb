@@ -1,0 +1,85 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r353-dual-family-forehead-filter-sweep",
+  "method": "Apply the same camera-space forehead rejection to PrimaryClumps and SecondaryFill so redundant guide families cannot preserve the artifact.",
+  "reviewLightCalibration": "r351 selected 1.35x r345 energies",
+  "variants": {
+    "a-current": {
+      "cameraSpaceRoi": null,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "suppressedCurves": 0,
+          "retainedCurves": 776,
+          "suppressedPoints": 0
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "suppressedCurves": 0,
+          "retainedCurves": 10086,
+          "suppressedPoints": 0
+        }
+      }
+    },
+    "b-low-forehead": {
+      "cameraSpaceRoi": [
+        0.26,
+        0.79,
+        0.36,
+        0.53
+      ],
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "suppressedCurves": 260,
+          "retainedCurves": 516,
+          "suppressedPoints": 6240
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "suppressedCurves": 3434,
+          "retainedCurves": 6652,
+          "suppressedPoints": 82416
+        }
+      }
+    },
+    "c-mid-forehead": {
+      "cameraSpaceRoi": [
+        0.26,
+        0.79,
+        0.36,
+        0.6
+      ],
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "suppressedCurves": 271,
+          "retainedCurves": 505,
+          "suppressedPoints": 6504
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "suppressedCurves": 3560,
+          "retainedCurves": 6526,
+          "suppressedPoints": 85440
+        }
+      }
+    },
+    "d-broad-forehead": {
+      "cameraSpaceRoi": [
+        0.24,
+        0.81,
+        0.34,
+        0.66
+      ],
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "suppressedCurves": 331,
+          "retainedCurves": 445,
+          "suppressedPoints": 7944
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "suppressedCurves": 4348,
+          "retainedCurves": 5738,
+          "suppressedPoints": 104352
+        }
+      }
+    }
+  },
+  "status": "REJECT_RADIUS_SUPPRESSION_INEFFECTIVE_IN_BOTH_FAMILIES",
+  "finding": "Applying radius suppression to both curve families still leaves the evaluated forehead strands visible."
+}

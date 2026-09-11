@@ -25,7 +25,7 @@
   "publicWebsiteReplacementApproved": false,
   "nextRequiredWork": [
     "以 r345 為基底雕刻上下眼瞼在內眼角的連續皮膚折線、外眼角收束、淚溝與眶周平面，並降低整體眼裂水平寬度；重跑眼球、淚阜、眼瞼附屬層與動作幀碰撞。",
-    "以 r296 的高密度製作層為造型真值，手工分出 20 至 40 組大型髮束、額前過渡束與不齊髮尾，消除均勻毛刷輪廓",
+    "以 r345 為角色基底，重建具語意的分線、頭頂、太陽穴、側面與後腦導引束；各區獨立控制覆蓋、髮束粗細與不齊髮尾，禁止再以相機投影批量刪除或平移密集髮絲。",
     "從 r296 導引髮束重新烘焙分層髮卡，不再對全部 776 根導引做無語意平均；保留 scalp、primary cards、fill cards、hairline、flyaways 五層",
     "把 r296 的阻尼曲線轉成 Aevrynd 可自行運行的分段骨鏈或 Verlet/PBD 次級運動，驗證重力、慣性、阻尼、身體碰撞與網站效能",
     "以中性三視圖為比例參考，在新 CC0 拓撲上雕刻成年女性辨識度、顴骨、鼻翼、唇峰、下顎與細微左右差異，重跑變形與眼層距離檢查",
@@ -55,5 +55,7 @@
   "latestHairLayerAudit": "female-v249-mainline-matte-root-underlayer-r287.layer-audit.json",
   "latestHairLayerStatus": "PASS_SCALP_DYNAMIC_CARDS_HAIRLINE_EXPLICIT",
   "latestSkinToneAudit": "female-v249-mainline-r329-r330-skin-tone.study.json",
-  "latestSkinToneStatus": "PASS_NO_PROGRESSIVE_DARKENING; fixed-patch face luminance is 117.765 at r318 and 117.779 at r328. The darker impression is caused by stronger local eye contrast. Keep 0 EV as the authored baseline; +0.25 EV is retained only as a brighter review-lighting option."
+  "latestSkinToneStatus": "PASS_NO_PROGRESSIVE_DARKENING; fixed-patch face luminance is 117.765 at r318 and 117.779 at r328. The darker impression is caused by stronger local eye contrast. Keep 0 EV as the authored baseline; +0.25 EV is retained only as a brighter review-lighting option.",
+  "latestHairResearch": "r346-r359 layer isolation, evaluated-geometry pruning, occlusion/depth guards and flow redirection",
+  "latestHairResearchStatus": "All local patch variants were rejected. r345 remains the hair technical node; r355 passes motion/collision but fails rear coverage, while r358-r359 expose scalp or create temple hooks."
 }

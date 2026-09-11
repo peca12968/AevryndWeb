@@ -1,0 +1,89 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r356-depth-guarded-forehead-prune-sweep",
+  "method": "Rebuild both groom families using the forehead screen ROI plus a front-world-Y guard so occluded rear curves are retained.",
+  "reviewLightCalibration": "r351 selected 1.35x r345 energies",
+  "variants": {
+    "a-current": {
+      "cameraSpaceRoi": null,
+      "frontWorldYLimitM": null,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 776,
+          "removedCurves": 0,
+          "retainedPoints": 18624
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 10086,
+          "removedCurves": 0,
+          "retainedPoints": 242064
+        }
+      }
+    },
+    "b-front-y-minus-0p10": {
+      "cameraSpaceRoi": [
+        0.26,
+        0.79,
+        0.36,
+        0.6
+      ],
+      "frontWorldYLimitM": -0.1,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 774,
+          "removedCurves": 2,
+          "retainedPoints": 18576
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 10065,
+          "removedCurves": 21,
+          "retainedPoints": 241560
+        }
+      }
+    },
+    "c-front-y-minus-0p08": {
+      "cameraSpaceRoi": [
+        0.26,
+        0.79,
+        0.36,
+        0.6
+      ],
+      "frontWorldYLimitM": -0.08,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 774,
+          "removedCurves": 2,
+          "retainedPoints": 18576
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 10065,
+          "removedCurves": 21,
+          "retainedPoints": 241560
+        }
+      }
+    },
+    "d-front-y-minus-0p06": {
+      "cameraSpaceRoi": [
+        0.26,
+        0.79,
+        0.36,
+        0.6
+      ],
+      "frontWorldYLimitM": -0.06,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 774,
+          "removedCurves": 2,
+          "retainedPoints": 18576
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 10065,
+          "removedCurves": 21,
+          "retainedPoints": 241560
+        }
+      }
+    }
+  },
+  "status": "REJECT_INSUFFICIENT_DEPTH_RANGE",
+  "finding": "The conservative front-depth guard preserves the back but removes only 23 curves and leaves the forehead artifact."
+}

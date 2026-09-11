@@ -1,0 +1,76 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r359-forehead-flow-redirect-sweep",
+  "method": "Select front-right curves through the corrected forehead ROI and ease their non-root points laterally toward the right temple without deleting geometry.",
+  "cameraSpaceRoi": [
+    0.45,
+    0.78,
+    0.66,
+    0.86
+  ],
+  "reviewLightCalibration": "r351 selected 1.35x r345 energies",
+  "variants": {
+    "a-current": {
+      "redirectM": 0.0,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "selectedCurves": 114,
+          "maximumLateralRedirectM": 0.0,
+          "curveCountUnchanged": 776
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "selectedCurves": 1547,
+          "maximumLateralRedirectM": 0.0,
+          "curveCountUnchanged": 10086
+        }
+      }
+    },
+    "b-redirect-10mm": {
+      "redirectM": 0.01,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "selectedCurves": 114,
+          "maximumLateralRedirectM": 0.01,
+          "curveCountUnchanged": 776
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "selectedCurves": 1547,
+          "maximumLateralRedirectM": 0.01,
+          "curveCountUnchanged": 10086
+        }
+      }
+    },
+    "c-redirect-20mm": {
+      "redirectM": 0.02,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "selectedCurves": 114,
+          "maximumLateralRedirectM": 0.02,
+          "curveCountUnchanged": 776
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "selectedCurves": 1547,
+          "maximumLateralRedirectM": 0.02,
+          "curveCountUnchanged": 10086
+        }
+      }
+    },
+    "d-redirect-30mm": {
+      "redirectM": 0.03,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "selectedCurves": 114,
+          "maximumLateralRedirectM": 0.03,
+          "curveCountUnchanged": 776
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "selectedCurves": 1547,
+          "maximumLateralRedirectM": 0.03,
+          "curveCountUnchanged": 10086
+        }
+      }
+    }
+  },
+  "status": "REJECT_TEMPLE_KINKS_AND_FAN_OUT",
+  "finding": "Ten millimetres leaves the artifact; twenty to thirty millimetres bends the dense family into visible hooks and lateral fan-out at the temple."
+}

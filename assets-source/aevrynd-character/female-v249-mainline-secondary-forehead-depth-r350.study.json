@@ -1,0 +1,33 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r350-secondary-forehead-depth-sweep",
+  "variants": {
+    "a-current": {
+      "frontYLessThanM": null,
+      "suppressedCurves": 0,
+      "retainedCurves": 10086,
+      "suppressedPoints": 0
+    },
+    "b-front-y-minus-0p13": {
+      "frontYLessThanM": -0.13,
+      "suppressedCurves": 92,
+      "retainedCurves": 9994,
+      "suppressedPoints": 2208
+    },
+    "c-front-y-minus-0p12": {
+      "frontYLessThanM": -0.12,
+      "suppressedCurves": 388,
+      "retainedCurves": 9698,
+      "suppressedPoints": 9312
+    },
+    "d-front-y-minus-0p11": {
+      "frontYLessThanM": -0.11,
+      "suppressedCurves": 550,
+      "retainedCurves": 9536,
+      "suppressedPoints": 13200
+    }
+  },
+  "method": "Expand the central-forehead SecondaryFill rejection volume in depth while holding x/z bounds fixed; suppress curves through point radius only.",
+  "status": "REJECT_DENSITY_LOSS_WITHOUT_FOREHEAD_LINE_REMOVAL",
+  "finding": "Expanded depth filtering darkens and thins local fill while redundant PrimaryClumps preserve the long forehead lines."
+}

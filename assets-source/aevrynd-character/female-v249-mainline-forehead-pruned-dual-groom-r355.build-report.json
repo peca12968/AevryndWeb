@@ -1,0 +1,57 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-forehead-pruned-dual-groom-r355.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r355-forehead-pruned-dual-groom",
+  "selectedFrom": "r354 c-mid-forehead",
+  "cameraSpaceRoi": [
+    0.26,
+    0.79,
+    0.36,
+    0.6
+  ],
+  "minimumNonRootPointsInRoiForRemoval": 2,
+  "hairGeometry": {
+    "AevryndFemalePrimaryClumps_R264": {
+      "originalCurves": 776,
+      "retainedCurves": 505,
+      "removedCurves": 271,
+      "originalPoints": 18624,
+      "retainedPoints": 12120,
+      "removedPoints": 6504
+    },
+    "AevryndFemaleSecondaryFill_R264": {
+      "originalCurves": 10086,
+      "retainedCurves": 6526,
+      "removedCurves": 3560,
+      "originalPoints": 242064,
+      "retainedPoints": 156624,
+      "removedPoints": 85440
+    }
+  },
+  "reviewLightEnergyW": {
+    "Aevrynd R249 Key": 52.650001525878906,
+    "Aevrynd R249 Fill": 29.48400115966797,
+    "Aevrynd R249 Rim": 59.67000198364258
+  },
+  "ownedAssetOnly": true,
+  "websitePromotionApproved": false,
+  "status": "TECHNICAL_PASS_VISUAL_REJECT_BACK_COVERAGE_LOSS",
+  "strictScores": {
+    "face": 45,
+    "hair": 28,
+    "overallCharacter": 38
+  },
+  "technicalResults": [
+    "Body rig and all 16 head-bound face layers pass.",
+    "Hair motion passes at frames 1, 33 and 61 with zero penetrating samples.",
+    "Visible authored hair points fall from 262,368 to 170,424."
+  ],
+  "visualFailures": [
+    "Front camera-space pruning incorrectly removes occluded rear curves and exposes a large bald cap from the back.",
+    "Side flow remains uniformly parallel and the cut ends remain needle-like."
+  ],
+  "bodyRigAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-forehead-pruned-dual-groom-r355.body-rig-audit.json",
+  "faceLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-forehead-pruned-dual-groom-r355.face-layer-audit.json",
+  "hairLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-forehead-pruned-dual-groom-r355.hair-layer-audit.json",
+  "hairMotionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-forehead-pruned-dual-groom-r355.hair-motion-audit.json"
+}

@@ -1,0 +1,110 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r357-extended-depth-forehead-prune-sweep",
+  "method": "Rebuild both groom families using the forehead screen ROI plus a front-world-Y guard so occluded rear curves are retained.",
+  "reviewLightCalibration": "r351 selected 1.35x r345 energies",
+  "variants": {
+    "a-current": {
+      "cameraSpaceRoi": null,
+      "frontWorldYLimitM": null,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 776,
+          "removedCurves": 0,
+          "retainedPoints": 18624
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 10086,
+          "removedCurves": 0,
+          "retainedPoints": 242064
+        }
+      }
+    },
+    "b-front-y-minus-0p04": {
+      "cameraSpaceRoi": [
+        0.26,
+        0.79,
+        0.36,
+        0.6
+      ],
+      "frontWorldYLimitM": -0.04,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 771,
+          "removedCurves": 5,
+          "retainedPoints": 18504
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 10032,
+          "removedCurves": 54,
+          "retainedPoints": 240768
+        }
+      }
+    },
+    "c-front-y-minus-0p02": {
+      "cameraSpaceRoi": [
+        0.26,
+        0.79,
+        0.36,
+        0.6
+      ],
+      "frontWorldYLimitM": -0.02,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 771,
+          "removedCurves": 5,
+          "retainedPoints": 18504
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 10025,
+          "removedCurves": 61,
+          "retainedPoints": 240600
+        }
+      }
+    },
+    "d-front-y-zero": {
+      "cameraSpaceRoi": [
+        0.26,
+        0.79,
+        0.36,
+        0.6
+      ],
+      "frontWorldYLimitM": 0.0,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 762,
+          "removedCurves": 14,
+          "retainedPoints": 18288
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 9923,
+          "removedCurves": 163,
+          "retainedPoints": 238152
+        }
+      }
+    },
+    "e-front-y-plus-0p02": {
+      "cameraSpaceRoi": [
+        0.26,
+        0.79,
+        0.36,
+        0.6
+      ],
+      "frontWorldYLimitM": 0.02,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 742,
+          "removedCurves": 34,
+          "retainedPoints": 17808
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 9632,
+          "removedCurves": 454,
+          "retainedPoints": 231168
+        }
+      }
+    }
+  },
+  "status": "REJECT_INCORRECT_VERTICAL_ROI_AND_MINIMAL_GAIN",
+  "finding": "Extending world depth remains ineffective because the camera-space vertical band is below the actual upper-forehead artifact."
+}

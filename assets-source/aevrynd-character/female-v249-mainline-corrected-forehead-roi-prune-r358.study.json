@@ -1,0 +1,89 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r358-corrected-forehead-roi-prune-sweep",
+  "method": "Use corrected Blender bottom-up camera Y coordinates for the upper-forehead ROI and retain the front-world-depth guard.",
+  "reviewLightCalibration": "r351 selected 1.35x r345 energies",
+  "variants": {
+    "a-current": {
+      "cameraSpaceRoi": null,
+      "frontWorldYLimitM": null,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 776,
+          "removedCurves": 0,
+          "retainedPoints": 18624
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 10086,
+          "removedCurves": 0,
+          "retainedPoints": 242064
+        }
+      }
+    },
+    "b-right-lower": {
+      "cameraSpaceRoi": [
+        0.45,
+        0.78,
+        0.66,
+        0.86
+      ],
+      "frontWorldYLimitM": 0.02,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 662,
+          "removedCurves": 114,
+          "retainedPoints": 15888
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 8539,
+          "removedCurves": 1547,
+          "retainedPoints": 204936
+        }
+      }
+    },
+    "c-central-right": {
+      "cameraSpaceRoi": [
+        0.36,
+        0.78,
+        0.66,
+        0.9
+      ],
+      "frontWorldYLimitM": 0.02,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 525,
+          "removedCurves": 251,
+          "retainedPoints": 12600
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 6810,
+          "removedCurves": 3276,
+          "retainedPoints": 163440
+        }
+      }
+    },
+    "d-broad-front": {
+      "cameraSpaceRoi": [
+        0.2,
+        0.82,
+        0.64,
+        0.92
+      ],
+      "frontWorldYLimitM": 0.02,
+      "families": {
+        "AevryndFemalePrimaryClumps_R264": {
+          "retainedCurves": 292,
+          "removedCurves": 484,
+          "retainedPoints": 7008
+        },
+        "AevryndFemaleSecondaryFill_R264": {
+          "retainedCurves": 3751,
+          "removedCurves": 6335,
+          "retainedPoints": 90024
+        }
+      }
+    }
+  },
+  "status": "REJECT_HAIRLINE_MASS_LOSS_AND_EXPOSED_SCALP_RING",
+  "finding": "Corrected camera coordinates remove the intended strands, but deletion opens a bright scalp ring and destroys the front hair mass."
+}
