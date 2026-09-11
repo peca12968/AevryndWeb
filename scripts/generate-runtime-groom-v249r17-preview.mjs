@@ -24,7 +24,11 @@ const decoded = decodeRuntimeGroom(manifest, {
   followCollisionNormals: readArrayBuffer(manifest.files.followCollisionNormals),
   followContactHeadWeights: readArrayBuffer(manifest.files.followContactHeadWeights),
 });
-const runtime = createRuntimeGroom(decoded, { damping: 0.09, bendCompliance: 4e-7, collisionMargin: 0.0015 });
+const runtime = createRuntimeGroom(decoded, {
+  damping: Number(process.env.AEVRYND_RUNTIME_GROOM_DAMPING ?? 0.09),
+  bendCompliance: Number(process.env.AEVRYND_RUNTIME_GROOM_BEND_COMPLIANCE ?? 4e-7),
+  collisionMargin: Number(process.env.AEVRYND_RUNTIME_GROOM_COLLISION_MARGIN ?? 0.0015),
+});
 const anchors = Float64Array.from(decoded.guides.flatMap(guide => guide[0]));
 const baseAnchors = Float64Array.from(anchors);
 const pivot = manifest.contactPose.pivot;

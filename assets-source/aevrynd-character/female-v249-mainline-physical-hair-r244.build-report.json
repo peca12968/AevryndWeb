@@ -1,0 +1,47 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-baked-root-veil-r241.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-physical-hair-r244.blend",
+  "materials": {
+    "base": {
+      "name": "AevryndFemaleHairBase_v249r244",
+      "melanin": 0.82,
+      "redness": 0.28,
+      "roughness": 0.46,
+      "radialRoughness": 0.34
+    },
+    "overlay": {
+      "name": "AevryndFemaleHairOverlay_v249r244",
+      "melanin": 0.74,
+      "redness": 0.34,
+      "roughness": 0.42,
+      "radialRoughness": 0.3
+    }
+  },
+  "assignments": {
+    "AevryndFemaleHair_ShapedOverlay_v319_R": "AevryndFemaleHairOverlay_v249r244",
+    "AevryndFemaleHair_ShapedOverlay_v319_L": "AevryndFemaleHairOverlay_v249r244",
+    "AevryndFemaleHair_CrownRootVeil_v338_R": "AevryndFemaleHairBase_v249r244",
+    "AevryndFemaleHair_CrownRootVeil_v338_L": "AevryndFemaleHairBase_v249r244",
+    "AevryndFemaleHair_ContinuousFlow_v317_R": "AevryndFemaleHairBase_v249r244",
+    "AevryndFemaleHair_ContinuousFlow_v317_L": "AevryndFemaleHairBase_v249r244"
+  },
+  "geometryParity": true,
+  "before": {
+    "AevryndFemaleHair_ShapedOverlay_v319_R": "cad7dbbad267813a8e0e48022bdc6d3414f66fd1f20594646381ff3bffe84c4f",
+    "AevryndFemaleHair_ShapedOverlay_v319_L": "8b5f2404c4524c5af823c8169b5ef987b3806b3f44f6ae8fcd48a5139ff1bf67",
+    "AevryndFemaleHair_CrownRootVeil_v338_R": "7759355061464730be0ca60455d06ca249c3a0c253427bbc96b6f7399a7b4efd",
+    "AevryndFemaleHair_CrownRootVeil_v338_L": "27e5848247f949bed917889b36595dadce85be465212d52c8668cd6b06535616",
+    "AevryndFemaleHair_ContinuousFlow_v317_R": "bf86068194e4d39b6b5a1cd0079faa35f28034c8d0f725014c8b00afbf8f557e",
+    "AevryndFemaleHair_ContinuousFlow_v317_L": "0d5bb4be739437f1f95a25ed033d99997193d22c487db6f92a570592b47b6cd1"
+  },
+  "after": {
+    "AevryndFemaleHair_ShapedOverlay_v319_R": "cad7dbbad267813a8e0e48022bdc6d3414f66fd1f20594646381ff3bffe84c4f",
+    "AevryndFemaleHair_ShapedOverlay_v319_L": "8b5f2404c4524c5af823c8169b5ef987b3806b3f44f6ae8fcd48a5139ff1bf67",
+    "AevryndFemaleHair_CrownRootVeil_v338_R": "7759355061464730be0ca60455d06ca249c3a0c253427bbc96b6f7399a7b4efd",
+    "AevryndFemaleHair_CrownRootVeil_v338_L": "27e5848247f949bed917889b36595dadce85be465212d52c8668cd6b06535616",
+    "AevryndFemaleHair_ContinuousFlow_v317_R": "bf86068194e4d39b6b5a1cd0079faa35f28034c8d0f725014c8b00afbf8f557e",
+    "AevryndFemaleHair_ContinuousFlow_v317_L": "0d5bb4be739437f1f95a25ed033d99997193d22c487db6f92a570592b47b6cd1"
+  },
+  "runtimeDependency": "none",
+  "status": "COLLISION_PARITY_AND_11SHOT_PENDING"
+}
