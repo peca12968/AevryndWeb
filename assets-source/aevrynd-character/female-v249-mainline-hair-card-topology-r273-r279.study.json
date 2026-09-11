@@ -1,0 +1,50 @@
+{
+  "baseline": "v249r272",
+  "goal": "Replace 776 thin strand-like cards plus 242112-point authoring fill with an owned runtime card hierarchy.",
+  "iterations": [
+    {
+      "revision": "r273",
+      "result": "REJECT",
+      "score": 48,
+      "evidence": "64-cluster centerline attraction changed silhouette too little and created up to 34 penetrating vertices."
+    },
+    {
+      "revision": "r274",
+      "result": "DIAGNOSTIC",
+      "evidence": "192 wide cards were visually masked by the still-visible 242112-point secondary authoring fill."
+    },
+    {
+      "revision": "r275",
+      "result": "REJECT",
+      "score": 35,
+      "evidence": "Layer isolation proved 192 cards lacked scalp coverage."
+    },
+    {
+      "revision": "r276",
+      "result": "REJECT_DYNAMIC",
+      "score": 52,
+      "evidence": "384 dense alpha cards improved coverage and halved proxy geometry but penetrated at dynamic frames."
+    },
+    {
+      "revision": "r277",
+      "result": "REJECT_DYNAMIC",
+      "score": 52,
+      "evidence": "Global collision clamp reached zero penetration but reduced peak P95 motion to 0.543mm."
+    },
+    {
+      "revision": "r278",
+      "result": "REJECT_DYNAMIC",
+      "score": 52,
+      "evidence": "Per-chain clamp preserved 1.227mm mean motion but P95 remained 3.428mm."
+    },
+    {
+      "revision": "r279",
+      "result": "TECHNICAL_PASS_VISUAL_FAIL",
+      "score": 52,
+      "evidence": "Balanced safe back-chain motion passed zero penetration, 1.513mm mean, 5.327mm P95, 0.237mm settle and material ownership gates."
+    }
+  ],
+  "promotedTechnicalNode": "aevrynd-female-authoring-v249-mainline-balanced-back-chain-motion-r279.blend",
+  "websitePromotion": false,
+  "next": "Build staggered crown undercards, irregular part transition cards and grouped tip silhouettes while retaining the r279 collision and dynamics contract."
+}
