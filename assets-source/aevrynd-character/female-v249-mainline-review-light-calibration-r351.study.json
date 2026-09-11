@@ -1,0 +1,65 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r351-review-light-calibration",
+  "purpose": "Restore review illumination lost after r249 while holding skin, camera, world, and color management fixed.",
+  "r249ReferenceEnergyW": {
+    "key": 75.0,
+    "fill": 42.0,
+    "rim": 85.0
+  },
+  "variants": {
+    "a-current-052pct": {
+      "multiplierFromR345": 1.0,
+      "lightEnergyW": {
+        "Aevrynd R249 Key": 39.0,
+        "Aevrynd R249 Fill": 21.84000015258789,
+        "Aevrynd R249 Rim": 44.20000076293945
+      }
+    },
+    "b-restored-062pct": {
+      "multiplierFromR345": 1.2,
+      "lightEnergyW": {
+        "Aevrynd R249 Key": 46.8,
+        "Aevrynd R249 Fill": 26.20800018310547,
+        "Aevrynd R249 Rim": 53.040000915527344
+      }
+    },
+    "c-restored-070pct": {
+      "multiplierFromR345": 1.35,
+      "lightEnergyW": {
+        "Aevrynd R249 Key": 52.650000000000006,
+        "Aevrynd R249 Fill": 29.484000205993656,
+        "Aevrynd R249 Rim": 59.67000102996827
+      }
+    },
+    "d-restored-078pct": {
+      "multiplierFromR345": 1.5,
+      "lightEnergyW": {
+        "Aevrynd R249 Key": 58.5,
+        "Aevrynd R249 Fill": 32.760000228881836,
+        "Aevrynd R249 Rim": 66.30000114440918
+      }
+    }
+  },
+  "measuredFaceCrop": {
+    "a-current-052pct": {
+      "meanLuma": 116.54,
+      "pixelsAnyChannelAtLeast250Pct": 0.112
+    },
+    "b-restored-062pct": {
+      "meanLuma": 126.85,
+      "pixelsAnyChannelAtLeast250Pct": 0.256
+    },
+    "c-restored-070pct": {
+      "meanLuma": 133.93,
+      "pixelsAnyChannelAtLeast250Pct": 0.875
+    },
+    "d-restored-078pct": {
+      "meanLuma": 140.54,
+      "pixelsAnyChannelAtLeast250Pct": 3.682
+    }
+  },
+  "selectedVariant": "c-restored-070pct",
+  "decision": "Use 1.35 times the r345 light energy for future review renders. It restores facial readability without the broader channel clipping visible at 1.50 times.",
+  "status": "SELECT_C_REVIEW_LIGHT_ONLY_MODEL_MATERIAL_UNCHANGED"
+}
