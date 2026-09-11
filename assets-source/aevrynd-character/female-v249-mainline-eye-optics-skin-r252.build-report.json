@@ -1,0 +1,58 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-cc0-normalized-rig-r251.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-eye-optics-skin-r252.blend",
+  "ownedIrisTexture": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\textures\\aevrynd-iris-hazel-v5.png",
+  "bodySmoothPolygons": 10590,
+  "bodyPolygonCount": 10590,
+  "createdLayers": [
+    "AevryndEye_L_Limbal_R252",
+    "AevryndEye_L_Iris_R252",
+    "AevryndEye_L_Pupil_R252",
+    "AevryndEye_L_Cornea_R252",
+    "AevryndEye_R_Limbal_R252",
+    "AevryndEye_R_Iris_R252",
+    "AevryndEye_R_Pupil_R252",
+    "AevryndEye_R_Cornea_R252"
+  ],
+  "eyeMetrics": {
+    "L": {
+      "center": [
+        0.03448484092950821,
+        -0.12779271602630615,
+        1.607891321182251
+      ],
+      "eyeRadiusM": 0.012586236000061035,
+      "scleraFrontY": -0.1399417668581009,
+      "irisFrontY": -0.14020177721977234,
+      "corneaFrontY": -0.14093895256519318,
+      "corneaAheadOfIrisM": 0.0007371753454208374,
+      "irisDiameterM": 0.01144,
+      "pupilDiameterM": 0.0043
+    },
+    "R": {
+      "center": [
+        -0.034508116543293,
+        -0.12758800387382507,
+        1.6078909635543823
+      ],
+      "eyeRadiusM": 0.012586236000061035,
+      "scleraFrontY": -0.13975679874420166,
+      "irisFrontY": -0.1400168091058731,
+      "corneaFrontY": -0.1407342404127121,
+      "corneaAheadOfIrisM": 0.0007174313068389893,
+      "irisDiameterM": 0.01144,
+      "pupilDiameterM": 0.0043
+    }
+  },
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r252-eye-optics-skin",
+  "limitations": [
+    "brows, eyelashes, lid wetline and tear meniscus pending",
+    "identity sculpt pending"
+  ],
+  "strictVisualStatus": "FAIL",
+  "strictVisualReasons": [
+    "Cylinder-cap UV mapping distorts the owned radial iris texture.",
+    "Large area-light reflections dominate the cornea and obscure iris detail."
+  ],
+  "status": "REJECTED_VISUAL_INTERMEDIATE"
+}
