@@ -1,0 +1,108 @@
+{
+  "mainline": "v249",
+  "revisions": ["r384", "r385", "r386", "r387", "r388", "r389", "r390"],
+  "date": "2026-09-11",
+  "sourceOfTruth": "aevrynd-female-authoring-v249-mainline-continuous-crown-field-r383.blend",
+  "purpose": "Convert the dense offline curve groom into owned, layered, skinned alpha cards while preserving brightness and enforcing body collision.",
+  "iterationResults": [
+    {
+      "revision": "r384",
+      "result": "REJECTED_VISUAL_PROTOTYPE",
+      "finding": "The first 628-card bake proved the GLB path and 3.47 MB payload, but sparse coverage exposed the bright head surface and shared normals produced a silver plastic response."
+    },
+    {
+      "revision": "r385",
+      "result": "REJECTED_VISUAL_PROTOTYPE",
+      "finding": "Crossed duplicate cards and a generated scalp cap removed the silver response, but the first cap selection crossed the thin skull and the corrected cap still exposed block-shaped hairline gaps."
+    },
+    {
+      "revision": "r386",
+      "result": "REJECTED_VISUAL_PROTOTYPE",
+      "finding": "Using 960 distinct source paths improved back coverage and reduced repeated normals, but the inherited center hairline source remained absent."
+    },
+    {
+      "revision": "r387",
+      "result": "DIAGNOSTIC_ONLY",
+      "finding": "Removing the rectangular root veil proved that texture-root opacity was not the main cause of the center gap. Layer isolation showed the inherited hairline microcards only covered the temples."
+    },
+    {
+      "revision": "r388",
+      "result": "TECHNICAL_FAIL",
+      "finding": "A ray-cast surface hairline created continuous center coverage, but frame 33 produced 83 penetrating crown vertices and up to 8.659 mm signed penetration."
+    },
+    {
+      "revision": "r389",
+      "result": "TECHNICAL_PASS_VISUAL_FAIL",
+      "finding": "Crown motion was reduced near the scalp and all dynamic bones were keyed to settle at frame 61. Collision and motion passed, while the hairline remained too uniformly short and the top surface remained combed."
+    },
+    {
+      "revision": "r390",
+      "result": "TECHNICAL_PASS_VISUAL_FAIL",
+      "finding": "The owned atlas and scalp value were raised without changing skin or review lights, returning whole-frame brightness to within one percent of the r371 baseline."
+    }
+  ],
+  "runtimeArchitecture": {
+    "model": "aevrynd-female-authoring-v249-mainline-runtime-balanced-hair-value-r390.blend",
+    "runtimeGlb": "runtime-groom-r390/aevrynd-female-hair-runtime-r390.glb",
+    "runtimeGlbBytes": 6484348,
+    "atlas": "textures/aevrynd-owned-hair-card-atlas-r390.png",
+    "atlasSize": [512, 1024],
+    "cards": 1020,
+    "cardVertices": 48960,
+    "cardFaces": 23460,
+    "scalpCapVertices": 5812,
+    "scalpCapFaces": 5536,
+    "layers": [
+      "hair.runtime_scalp_density.head_bound",
+      "hair.runtime_cards.front.dynamic.alpha",
+      "hair.runtime_cards.crown.dynamic.alpha",
+      "hair.runtime_cards.rear.dynamic.alpha",
+      "hair.runtime_cards.hairline.dynamic.alpha"
+    ]
+  },
+  "verification": {
+    "collisionAndMotion": {
+      "file": "female-v249-mainline-r390.runtime-card-audit.json",
+      "frames": [1, 20, 33, 61],
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0005045340922151809,
+      "peakP95M": 0.0029892894445478005,
+      "peakMaximumM": 0.0068362116359554186,
+      "rootMaximumM": 1.666000468656264e-08,
+      "settleMaximumM": 0.0,
+      "status": "PASS"
+    },
+    "contrast": {
+      "file": "female-v249-mainline-r390.perceptual-contrast-audit.json",
+      "centralSkinDeltaFromR371Percent": 0.0014037003044808927,
+      "hairlineContextDeltaFromR371Percent": 1.517333204006177,
+      "wholeFrameDeltaFromR371Percent": -0.4333785015219971,
+      "status": "PASS"
+    }
+  },
+  "ownership": {
+    "geometry": "Aevrynd deterministic procedural authoring",
+    "atlas": "Aevrynd procedurally generated RGBA fibers",
+    "externalRuntimeDependencies": [],
+    "metahumanOrUnrealContent": false
+  },
+  "strictVisualAssessment": {
+    "hairScoreOutOf100": 48,
+    "status": "TECHNICAL_PASS_VISUAL_FAIL",
+    "gains": [
+      "The runtime payload is 1020 skinned alpha cards plus an explicit scalp-density cap instead of 628440 visible offline curve points.",
+      "The center hairline is now generated on the evaluated skin surface instead of remaining buried inside the head.",
+      "Hair motion settles exactly and all audited frames remain outside the body.",
+      "Skin and review lighting remain unchanged while the whole-frame darkness regression is held to 0.433 percent."
+    ],
+    "failures": [
+      "The center hairline reads as a uniform row of short fibers rather than irregular human miniaturization and clumping.",
+      "The crown and top view still expose a broad procedural comb pattern and a simple center part.",
+      "Long side and rear cards remain too straight and form a curtain silhouette.",
+      "No browser memory, frame-time or alpha sorting gate has passed yet."
+    ],
+    "websitePromotionApproved": false
+  },
+  "decision": "Keep r383 as the offline authoring source. Retain r390 only as the current runtime technical prototype; keep website v83 unchanged.",
+  "nextRequiredWork": "Replace the uniform synthetic hairline with irregular density clusters and directional miniaturization, break the long card curtain into macro clumps, optimize the scalp cap, then run browser alpha-sorting, memory and FPS gates before any website promotion."
+}
