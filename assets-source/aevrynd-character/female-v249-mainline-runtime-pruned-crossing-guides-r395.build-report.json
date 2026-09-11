@@ -1,0 +1,87 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-continuous-crown-field-r383.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-runtime-pruned-crossing-guides-r395.blend",
+  "runtimeGlb": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\runtime-groom-r395\\aevrynd-female-hair-runtime-r395.glb",
+  "texture": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\textures\\aevrynd-owned-hair-card-atlas-r395.png",
+  "textureSize": [
+    512,
+    1024
+  ],
+  "atlasSlots": [
+    {
+      "slot": 0,
+      "fibers": 7,
+      "meanAlpha": 0.17020081425641645,
+      "coverageAbove008": 0.3559722900390625
+    },
+    {
+      "slot": 1,
+      "fibers": 11,
+      "meanAlpha": 0.20467121073019107,
+      "coverageAbove008": 0.4360504150390625
+    },
+    {
+      "slot": 2,
+      "fibers": 15,
+      "meanAlpha": 0.34952704407587926,
+      "coverageAbove008": 0.7230148315429688
+    },
+    {
+      "slot": 3,
+      "fibers": 19,
+      "meanAlpha": 0.3641446437287783,
+      "coverageAbove008": 0.7169265747070312
+    }
+  ],
+  "layers": [
+    "hair.runtime_scalp_density.head_bound",
+    "hair.runtime_cards.front.dynamic.alpha",
+    "hair.runtime_cards.crown.dynamic.alpha",
+    "hair.runtime_cards.rear.dynamic.alpha",
+    "hair.runtime_cards.hairline.dynamic.alpha"
+  ],
+  "scalpCap": {
+    "object": "AevryndFemaleRuntimeScalpCap_R395",
+    "vertices": 5812,
+    "faces": 5536
+  },
+  "cards": {
+    "AevryndFemaleRuntimeCards_front_R395": 224,
+    "AevryndFemaleRuntimeCards_crown_R395": 260,
+    "AevryndFemaleRuntimeCards_rear_R395": 320,
+    "AevryndFemaleRuntimeCards_hairline_R395": 72
+  },
+  "totals": {
+    "cards": 876,
+    "vertices": 42048,
+    "faces": 20148
+  },
+  "clearanceRepair": {
+    "AevryndFemaleRuntimeCards_front_R395": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": -0.0021019267755946203,
+      "repairedVertices": 16
+    },
+    "AevryndFemaleRuntimeCards_crown_R395": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": 0.00034289477301996385,
+      "repairedVertices": 11
+    },
+    "AevryndFemaleRuntimeCards_rear_R395": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": 0.0020011415472254157,
+      "repairedVertices": 0
+    },
+    "AevryndFemaleRuntimeCards_hairline_R395": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": 0.0010002614230870677,
+      "repairedVertices": 0
+    }
+  },
+  "blendBytes": 28790570,
+  "glbBytes": 6020692,
+  "ownedAssetOnly": true,
+  "websitePromotionApproved": false,
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r395-runtime-pruned-crossing-guides",
+  "status": "VISUAL_COLLISION_MOTION_AND_PERFORMANCE_AUDITS_REQUIRED"
+}

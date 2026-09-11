@@ -1,0 +1,122 @@
+{
+  "mainline": "v249",
+  "revisions": [
+    "r393",
+    "r394",
+    "r395",
+    "r396",
+    "r397",
+    "r398",
+    "r399"
+  ],
+  "date": "2026-09-11",
+  "sourceOfTruth": "aevrynd-female-authoring-v249-mainline-continuous-crown-field-r383.blend",
+  "purpose": "Replace the comb-like runtime hairline with explicit scalp-density transition geometry while preserving owned assets, brightness, animation and collision safety.",
+  "diagnosticEvidence": {
+    "layerIsolation": "v249r392-card-layer-isolation",
+    "finding": "front cards caused cross-forehead parallel lines, hairline cards caused the comb fringe, and the opaque scalp-cap polygon boundary caused block-shaped density."
+  },
+  "iterationResults": [
+    {
+      "revision": "r393",
+      "result": "REJECTED_VISUAL",
+      "finding": "Removing 97 central front paths exposed a bald crown; the first 14mm scalp fade proved the need for transition density but was too broad."
+    },
+    {
+      "revision": "r394",
+      "result": "REJECTED_VISUAL",
+      "finding": "Restoring all front paths with dense atlas slots recovered coverage but amplified diagonal part-crossing bands."
+    },
+    {
+      "revision": "r395",
+      "result": "VISUAL_GAIN_TECHNICAL_UNAUDITED",
+      "finding": "Pruning only 36 sign-crossing source guides removed the diagonal forehead bands while retaining 224 front cards."
+    },
+    {
+      "revision": "r396",
+      "result": "VISUAL_GAIN_TECHNICAL_UNAUDITED",
+      "finding": "A 4mm scalp-cap alpha fade reduced the block boundary but could not fill the missing root-density zone."
+    },
+    {
+      "revision": "r397",
+      "result": "VISUAL_GAIN_TECHNICAL_UNAUDITED",
+      "finding": "Added an owned, body-projected 648-vertex hairline-density ribbon with vertex-color alpha; 72 baby-hair cards still read as a lash-like ring."
+    },
+    {
+      "revision": "r398",
+      "result": "TECHNICAL_PASS_VISUAL_FAIL",
+      "finding": "Reducing the visible edge population to 24 fine cards removed the comb ring. All six runtime layers passed four-frame collision and motion; the transition remained too high and bright."
+    },
+    {
+      "revision": "r399",
+      "result": "TECHNICAL_PASS_VISUAL_FAIL_SCORE_57",
+      "finding": "Lowering the density edge 7mm and extending it to 35mm produced a softer, fuller hairline without restoring parallel bands. Center part, top-card layering and rear silhouette remain below target."
+    }
+  ],
+  "runtimeArchitecture": {
+    "model": "aevrynd-female-authoring-v249-mainline-runtime-lowered-density-edge-r399.blend",
+    "runtimeGlb": "runtime-groom-r399/aevrynd-female-hair-runtime-r399.glb",
+    "runtimeGlbBytes": 5774936,
+    "atlas": "textures/aevrynd-owned-hair-card-atlas-r399.png",
+    "cards": 820,
+    "cardVertices": 39360,
+    "cardFaces": 18860,
+    "scalpCapVertices": 5812,
+    "scalpCapFaces": 5536,
+    "hairlineDensityVertices": 648,
+    "hairlineDensityFaces": 568,
+    "layers": [
+      "hair.runtime_scalp_density.head_bound",
+      "hair.runtime_scalp_hairline_density.head_bound.alpha",
+      "hair.runtime_cards.front.dynamic.alpha",
+      "hair.runtime_cards.crown.dynamic.alpha",
+      "hair.runtime_cards.rear.dynamic.alpha",
+      "hair.runtime_cards.hairline.dynamic.alpha"
+    ]
+  },
+  "verification": {
+    "collisionAndMotion": {
+      "file": "female-v249-mainline-r399.runtime-card-audit.json",
+      "frames": [
+        1,
+        20,
+        33,
+        61
+      ],
+      "penetratingVertices": 0,
+      "minimumSignedM": 0.0005892438427679281,
+      "peakP95M": 0.0031988813943914667,
+      "peakMaximumM": 0.007342619280664327,
+      "rootMaximumM": 1.666000468656264e-08,
+      "settleMaximumM": 0.0,
+      "status": "PASS"
+    },
+    "contrast": {
+      "file": "female-v249-mainline-r399.perceptual-contrast-audit.json",
+      "centralSkinDeltaFromR371Percent": 0.0017705477334040154,
+      "hairlineContextDeltaFromR371Percent": 5.51232163542128,
+      "wholeFrameDeltaFromR371Percent": 1.7278527450848014,
+      "gate": "whole frame must not be darker than r371",
+      "status": "PASS"
+    }
+  },
+  "strictVisualAssessment": {
+    "hairScoreOutOf100": 57,
+    "status": "TECHNICAL_PASS_VISUAL_FAIL",
+    "gains": [
+      "No cross-forehead parallel bands.",
+      "No continuous comb or lash-like fringe.",
+      "Explicit projected density ribbon softens the front edge.",
+      "Runtime GLB is 5.77 MB and all audited layers stay outside the body."
+    ],
+    "failures": [
+      "The center part is too wide and exposes a flat scalp strip.",
+      "Top cards read as broad layered sheets rather than macro clumps.",
+      "Side and rear lengths still form a curtain.",
+      "Browser alpha sorting, memory and FPS are not audited."
+    ],
+    "websitePromotionApproved": false
+  },
+  "decision": "Retain r383 as offline authoring truth. Use r399 as the current runtime technical prototype; keep website v83 unchanged.",
+  "nextRequiredWork": "Narrow the center part, rebuild top cards into interleaved macro clumps, break the rear curtain silhouette, then run browser alpha-sorting, memory and FPS gates."
+}
