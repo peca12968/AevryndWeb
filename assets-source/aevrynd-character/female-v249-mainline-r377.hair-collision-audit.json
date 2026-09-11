@@ -1,0 +1,72 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-continuous-front-surface-flow-r377.blend",
+  "penetration_limit_m": -0.0005,
+  "frames": {
+    "1": {
+      "AevryndFemaleSemanticPrimary_R377": {
+        "sample_count": 10272,
+        "minimum_signed_m": 0.001991071550946799,
+        "penetrating_count": 0
+      },
+      "AevryndFemaleSemanticFill_R377": {
+        "sample_count": 421152,
+        "minimum_signed_m": 0.0016329677528119646,
+        "penetrating_count": 0
+      },
+      "AevryndFemaleHairlineTransition_R377": {
+        "sample_count": 2928,
+        "minimum_signed_m": 0.001965920615475625,
+        "penetrating_count": 0
+      },
+      "AevryndFemaleFrontSurfaceFlow_R377": {
+        "sample_count": 201696,
+        "minimum_signed_m": 0.0014207060012267902,
+        "penetrating_count": 0
+      }
+    },
+    "20": {
+      "AevryndFemaleSemanticPrimary_R377": {
+        "sample_count": 10272,
+        "minimum_signed_m": 0.0007939667339087464,
+        "penetrating_count": 0,
+        "new_penetrating_count": 0,
+        "resolved_penetrating_count": 0
+      },
+      "AevryndFemaleSemanticFill_R377": {
+        "sample_count": 421152,
+        "minimum_signed_m": 0.0006272964656091062,
+        "penetrating_count": 0,
+        "new_penetrating_count": 0,
+        "resolved_penetrating_count": 0
+      },
+      "AevryndFemaleHairlineTransition_R377": {
+        "sample_count": 2928,
+        "minimum_signed_m": 0.0019659217687149066,
+        "penetrating_count": 0,
+        "new_penetrating_count": 0,
+        "resolved_penetrating_count": 0
+      },
+      "AevryndFemaleFrontSurfaceFlow_R377": {
+        "sample_count": 201696,
+        "minimum_signed_m": -0.0015114375855773687,
+        "penetrating_count": 2,
+        "new_penetrating_count": 2,
+        "resolved_penetrating_count": 0
+      }
+    }
+  },
+  "regressions": [
+    {
+      "object": "AevryndFemaleFrontSurfaceFlow_R377",
+      "new_penetrating_count": 2
+    }
+  ],
+  "penetration_violations": [
+    {
+      "frame": "20",
+      "object": "AevryndFemaleFrontSurfaceFlow_R377",
+      "penetrating_count": 2
+    }
+  ],
+  "status": "FAIL"
+}

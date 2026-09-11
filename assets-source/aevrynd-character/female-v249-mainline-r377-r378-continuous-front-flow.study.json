@@ -1,0 +1,74 @@
+{
+  "mainline": "v249",
+  "range": "r377-r378",
+  "date": "2026-09-11",
+  "purpose": "Replace the band-forming front guide grid with a continuous surface-flow field while preserving skin contrast and collision-safe secondary motion.",
+  "ownership": {
+    "geometry": "Aevrynd-authored deterministic surface-flow curves derived from the owned v249 body",
+    "material": "Aevrynd-owned melanin hair and density-foundation nodes",
+    "externalRuntimeDependencies": [],
+    "platformBoundAssets": false
+  },
+  "r377": {
+    "frontSurfaceFlowAttempts": 9200,
+    "acceptedFrontCurves": 8404,
+    "totalVisiblePoints": 636048,
+    "visualFinding": "Continuous root sampling removes the discrete horizontal forehead bands and produces a coherent side part.",
+    "collisionFinding": "FAIL: two evaluated front-flow points penetrate at frame 20; minimum signed distance is -0.001511 m.",
+    "decision": "SUPERSEDED_BY_R378"
+  },
+  "r378": {
+    "model": "aevrynd-female-authoring-v249-mainline-collision-safe-front-flow-r378.blend",
+    "frontFlowClearanceM": 0.0038,
+    "explicitLayers": [
+      "hair.scalp_density_foundation.head_bound",
+      "hair.primary_semantic_guides.dynamic",
+      "hair.secondary_semantic_followers.dynamic",
+      "hair.hairline_microclumps.head_bound",
+      "hair.front_surface_flow.dynamic"
+    ],
+    "collisionAudit": {
+      "file": "female-v249-mainline-r378.hair-collision-audit.json",
+      "frames": [1, 20],
+      "penetratingPoints": 0,
+      "minimumSignedM": 0.0006272964656091062,
+      "status": "PASS"
+    },
+    "motionAudit": {
+      "file": "female-v249-mainline-r378.hair-motion-audit.json",
+      "frames": [1, 33, 61],
+      "peakMeanM": 0.0011340526478702732,
+      "peakP95M": 0.00395040210169326,
+      "peakMaximumM": 0.004998954727223363,
+      "rootMaximumM": 0.0,
+      "settleMaximumM": 0.0,
+      "penetratingPoints": 0,
+      "status": "PASS"
+    },
+    "contrastAudit": {
+      "file": "female-v249-mainline-r378.perceptual-contrast-audit.json",
+      "centralSkinDeltaFromR371Percent": 0.0007789433830618364,
+      "hairlineContextDeltaFromR371Percent": 1.998581557786383,
+      "status": "PASS"
+    }
+  },
+  "strictVisualAssessment": {
+    "hairScoreOutOf100": 50,
+    "status": "TECHNICAL_PASS_VISUAL_FAIL",
+    "improvements": [
+      "The front hair no longer forms several isolated dark horizontal bands.",
+      "The side part and forehead coverage are continuous across normal and close views.",
+      "The dynamic front field is independently addressable and collision safe."
+    ],
+    "remainingFailures": [
+      "The crown part becomes too bright and wide in the top view.",
+      "The rear silhouette remains a uniformly straight curtain.",
+      "The perimeter and ends need macro-level breakup instead of pointwise random length.",
+      "Temple flyaways still appear as sparse vertical spikes.",
+      "No runtime card bake or website performance gate has passed."
+    ],
+    "websitePromotionApproved": false
+  },
+  "decision": "Promote r378 only as the next offline technical authoring node. Keep the public website at v83.",
+  "nextRequiredWork": "Narrow and soften the crown part, rebuild the side and rear silhouettes as overlapping macro locks with deliberately uneven end groups, remove vertical temple spikes, then bake the accepted high-density field into layered Aevrynd-owned runtime cards and run website memory/FPS gates."
+}
