@@ -1,0 +1,114 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-continuous-crown-field-r383.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-runtime-anchored-part-root-density-r409.blend",
+  "runtimeGlb": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\runtime-groom-r409\\aevrynd-female-hair-runtime-r409.glb",
+  "texture": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\textures\\aevrynd-owned-hair-card-atlas-r409.png",
+  "textureSize": [
+    512,
+    1024
+  ],
+  "partRootTexture": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\textures\\aevrynd-owned-part-root-density-r409.png",
+  "partRootTextureSize": [
+    256,
+    512
+  ],
+  "atlasSlots": [
+    {
+      "slot": 0,
+      "fibers": 7,
+      "meanAlpha": 0.17020081425641645,
+      "coverageAbove008": 0.3559722900390625
+    },
+    {
+      "slot": 1,
+      "fibers": 11,
+      "meanAlpha": 0.20467121073019107,
+      "coverageAbove008": 0.4360504150390625
+    },
+    {
+      "slot": 2,
+      "fibers": 15,
+      "meanAlpha": 0.34952704407587926,
+      "coverageAbove008": 0.7230148315429688
+    },
+    {
+      "slot": 3,
+      "fibers": 19,
+      "meanAlpha": 0.3641446437287783,
+      "coverageAbove008": 0.7169265747070312
+    }
+  ],
+  "layers": [
+    "hair.runtime_scalp_density.head_bound",
+    "hair.runtime_scalp_hairline_density.head_bound.alpha",
+    "hair.runtime_part_root_density.head_bound.alpha",
+    "hair.runtime_cards.front.dynamic.alpha",
+    "hair.runtime_cards.crown.dynamic.alpha",
+    "hair.runtime_cards.rear.dynamic.alpha",
+    "hair.runtime_cards.hairline.dynamic.alpha"
+  ],
+  "scalpCap": {
+    "object": "AevryndFemaleRuntimeScalpCap_R409",
+    "vertices": 5812,
+    "faces": 5536
+  },
+  "hairlineDensity": {
+    "object": "AevryndFemaleRuntimeHairlineDensity_R409",
+    "vertices": 648,
+    "faces": 568
+  },
+  "partRootDensity": {
+    "object": "AevryndFemaleRuntimePartRootDensity_R409",
+    "vertices": 1715,
+    "faces": 1187
+  },
+  "cards": {
+    "AevryndFemaleRuntimeCards_front_R409": 300,
+    "AevryndFemaleRuntimeCards_crown_R409": 300,
+    "AevryndFemaleRuntimeCards_rear_R409": 320,
+    "AevryndFemaleRuntimeCards_hairline_R409": 16
+  },
+  "totals": {
+    "cards": 936,
+    "vertices": 44928,
+    "faces": 21528
+  },
+  "clearanceRepair": {
+    "AevryndFemaleRuntimeCards_front_R409": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": -0.0020707438670797274,
+      "repairedVertices": 37
+    },
+    "AevryndFemaleRuntimeCards_crown_R409": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": 0.0003576547278498765,
+      "repairedVertices": 10
+    },
+    "AevryndFemaleRuntimeCards_rear_R409": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": 0.0020381896174512804,
+      "repairedVertices": 0
+    },
+    "AevryndFemaleRuntimeCards_hairline_R409": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": 0.0011903815502591897,
+      "repairedVertices": 0
+    },
+    "AevryndFemaleRuntimeHairlineDensity_R409": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": 0.001348151890852023,
+      "repairedVertices": 0
+    },
+    "AevryndFemaleRuntimePartRootDensity_R409": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": -0.003079343950957991,
+      "repairedVertices": 33
+    }
+  },
+  "blendBytes": 29207301,
+  "glbBytes": 6824188,
+  "ownedAssetOnly": true,
+  "websitePromotionApproved": false,
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r409-runtime-anchored-part-root-density",
+  "status": "VISUAL_COLLISION_MOTION_AND_PERFORMANCE_AUDITS_REQUIRED"
+}

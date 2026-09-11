@@ -1,0 +1,76 @@
+{
+  "study": "v249 runtime center-part sampling and scalp-projected root-density study",
+  "sourceAuthoring": "aevrynd-female-authoring-v249-mainline-continuous-crown-field-r383.blend",
+  "revisions": ["r403", "r404", "r405", "r406", "r407", "r408", "r409"],
+  "rejected": [
+    {
+      "revision": "r403",
+      "reason": "Stratified near-part sampling increased root count but retained the broad center gap and made parallel comb endpoints more obvious."
+    },
+    {
+      "revision": "r404",
+      "reason": "Closest-root sampling and reduced crossing angle improved seating but still read as two broad procedural sheets beside a wide scalp channel."
+    },
+    {
+      "revision": "r405",
+      "reason": "The first projected part-root layer included faces whose projection missed the head, producing a detached rectangle, and its 92 fibers read as thick crossed laces."
+    },
+    {
+      "revision": "r406",
+      "reason": "Invalid faces were removed and fibers were refined, but the layer sat only 0.2 mm above the scalp cap and was largely hidden by depth competition."
+    },
+    {
+      "revision": "r407",
+      "reason": "The part narrowed, but regular comb spacing and a hard front transition remained visible."
+    },
+    {
+      "revision": "r408",
+      "reason": "Visual structure improved, but the four-frame audit found one front-card vertex penetrating 1.577 mm at frame 33."
+    }
+  ],
+  "acceptedTechnicalCandidate": {
+    "revision": "r409",
+    "model": "aevrynd-female-authoring-v249-mainline-runtime-anchored-part-root-density-r409.blend",
+    "runtimeGlb": "runtime-groom-r409/aevrynd-female-hair-runtime-r409.glb",
+    "strictHairScore": 60,
+    "status": "TECHNICAL_PASS_VISUAL_FAIL",
+    "cards": 936,
+    "cardVertices": 44928,
+    "cardFaces": 21528,
+    "runtimeGlbBytes": 6824188,
+    "explicitLayers": [
+      "hair.runtime_scalp_density.head_bound",
+      "hair.runtime_scalp_hairline_density.head_bound.alpha",
+      "hair.runtime_part_root_density.head_bound.alpha",
+      "hair.runtime_cards.front.dynamic.alpha",
+      "hair.runtime_cards.crown.dynamic.alpha",
+      "hair.runtime_cards.rear.dynamic.alpha",
+      "hair.runtime_cards.hairline.dynamic.alpha"
+    ],
+    "collisionMotionAudit": {
+      "file": "female-v249-mainline-r409.runtime-card-audit.json",
+      "frames": [1, 20, 33, 61],
+      "penetratingVertices": 0,
+      "minimumSignedClearanceM": 0.0001101304687836091,
+      "peakP95MotionM": 0.002978470176493304,
+      "peakMaximumMotionM": 0.007615645455847,
+      "rootMaximumDriftM": 1.561181118175407e-08,
+      "settleMaximumM": 0.0,
+      "status": "PASS"
+    },
+    "brightnessAudit": {
+      "file": "female-v249-mainline-r409.perceptual-contrast-audit.json",
+      "centralSkinDeltaFromR371Percent": 0.001382132280447479,
+      "hairlineContextDeltaFromR371Percent": 4.319397175652617,
+      "wholeFrameDeltaFromR371Percent": 0.34640585099796617,
+      "status": "PASS"
+    },
+    "remainingVisualFailures": [
+      "Left part-root density transition is still locally visible from the top camera.",
+      "Top silhouette still reads as broad procedural sheets instead of interleaved macro locks.",
+      "Rear flow lacks layered curved macro-lock breakup.",
+      "Browser alpha sorting, memory and frame-rate gates have not run."
+    ]
+  },
+  "decision": "Keep r409 as the latest runtime technical prototype. Keep r383 as offline authoring truth and website v83 unchanged."
+}
