@@ -1,0 +1,30 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-open-topology-physical-skin-r446.blend",
+  "motionSource": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-runtime-anchored-part-root-density-r409.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-native-scalp-macro-locks-r450-study.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r450-native-scalp-macro-locks",
+  "baseSkeletonRestHash": "7cab55c72d6349144eea37e3ea09fc372ee7b11fe02c270d5ed5a1a9ed309f9c",
+  "baseSkeletonRestIdentical": true,
+  "cardCounts": {
+    "front": 128,
+    "crown": 184,
+    "rear": 144,
+    "hairline": 54
+  },
+  "totalCards": 510,
+  "pointsPerCard": 20,
+  "partX": -0.016,
+  "layers": [
+    "hair.native_scalp_shadow.head_bound",
+    "hair.native_macro_locks.front.dynamic.alpha",
+    "hair.native_macro_locks.crown.dynamic.alpha",
+    "hair.native_macro_locks.rear.dynamic.alpha",
+    "hair.native_macro_locks.hairline.dynamic.alpha"
+  ],
+  "geometrySource": "New deterministic macro-lock paths rooted by BVH projection on the r446 evaluated scalp; no r409 hair geometry is reused.",
+  "ownedAssetOnly": true,
+  "websitePromotionApproved": false,
+  "strictHairScore100": 28,
+  "strictVisualFinding": "Rejected before collision promotion: the low-polygon scalp cap creates a sawtooth helmet edge, root coverage is sparse, the top exposes the proxy scalp, and outer cards read as radial wires rather than groomed locks.",
+  "status": "REJECTED_VISUAL_FAIL_GUIDE_CURVES_REQUIRED"
+}

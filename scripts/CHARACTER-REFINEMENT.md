@@ -919,6 +919,12 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - r449 不逐點扭曲髮片，而是刪除四幀任一頂點深入超過 0.5mm 的完整髮卡：936 張保留 836 張，前層 297／300、冠部 214／300、後層 309／320、髮際 16／16。frame 1／20／33／61 對人體、上衣、包邊與短褲均零穿模；動態 P95 2.094mm、最大 6.082mm、根部最大漂移 0.0000167mm、回穩誤差 0.0000307mm，技術關卡 PASS。
 - r449 嚴格毛髮外觀只有約 47／100：中分仍是寬平色帶，頂部為平行片而非交錯大束，刪除 86 張冠部卡後密度不均，後方仍像深色布簾。它只保留為開放頭模的座標、骨架、碰撞適配證據；不取代 r409 的 60／100 毛髮技術候選，也不進網站。
 - 下一輪保留 r409 的七層架構與 15 根次級骨鏈，直接在 r446 頭皮表面重新取樣 front／crown／rear macro-lock 路徑；不再移植或裁剪以封閉頭模為基準的既有卡片。
+
+## v249 開放頭模原生髮根與 macro-lock 排除 r450
+
+- r450 從 r446 evaluated 人體表面建立 BVH，全部髮根直接投射到開放頭模的實際頭皮；新建 front 128、crown 184、rear 144、hairline 54，共 510 張卡，不沿用 r409 髮片幾何。材質仍使用 Aevrynd 自有程序 atlas，骨架沿用已驗證相容的 15 根次級髮骨，分層為獨立 scalp、front、crown、rear、hairline。
+- 多角度嚴格審查在碰撞升格前判退：低多邊形 scalp cap 產生鋸齒狀硬帽沿；卡片根部覆蓋不足，頂視大面積顯示代理頭皮；外圍控制路徑讀成放射狀細線，沒有真人頭髮的髮旋、交錯大束與重力聚合。嚴格外觀約 28／100，低於 r449 與 r409。
+- r450 的有效結論只限於 r446 原生頭皮投射與骨架相容。下一輪先建立少量可手工梳理的連續 guide curves，明確定義分線、前框、冠部髮旋、顳側、後腦和髮尾，再由 guides 生成非均勻 clump／follow；scalp coverage 必須使用連續柔化邊界，不再把低模人體面邊界直接當可見髮際。
 ### v249 mainline mouth studies r220-r223
 
 - r220 isolates the authored render state and confirms that the legacy `Lip_Upper`, `Lip_Lower`, and `Mouth_WetLine` shells were already hidden. The visible mouth is part of the continuous 41,692-vertex body.
