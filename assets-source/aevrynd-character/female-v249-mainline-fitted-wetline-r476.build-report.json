@@ -1,0 +1,51 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-fitted-upper-lip-r475.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-fitted-wetline-r476.blend",
+  "wetline": {
+    "vertices": 130,
+    "polygons": 64,
+    "clearanceMm": 0.55
+  },
+  "repairs": [
+    {
+      "frame": 1,
+      "verticesMoved": 45,
+      "minimumSignedBeforeMm": -1.975565915927291,
+      "maximumTranslationMm": 2.5855658941090844
+    },
+    {
+      "frame": 20,
+      "verticesMoved": 53,
+      "minimumSignedBeforeMm": -0.6142314184671704,
+      "maximumTranslationMm": 1.224231386491591
+    },
+    {
+      "frame": 1,
+      "verticesMoved": 4,
+      "minimumSignedBeforeMm": 0.4758029790536966,
+      "maximumTranslationMm": 0.1341970250383292
+    },
+    {
+      "frame": 20,
+      "verticesMoved": 2,
+      "minimumSignedBeforeMm": 0.5096769964438863,
+      "maximumTranslationMm": 0.10032300922316424
+    }
+  ],
+  "layerOverlapAudit": {
+    "1": {
+      "bodyWetlineFaces": 8,
+      "upperLipWetlineFaces": 0,
+      "bodyUpperLipFaces": 0
+    },
+    "20": {
+      "bodyWetlineFaces": 8,
+      "upperLipWetlineFaces": 0,
+      "bodyUpperLipFaces": 0
+    }
+  },
+  "reviewDirectory": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r476-fitted-wetline",
+  "status": "REJECTED_BODY_WETLINE_8_OVERLAPPING_FACES_AT_FRAMES_1_AND_20_AND_NO_NORMAL_DISTANCE_GAIN",
+  "strictVisualScore": 49,
+  "decision": "Keep r475 as mouth technical candidate; do not promote the visible wetline."
+}

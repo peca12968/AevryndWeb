@@ -1,0 +1,183 @@
+{
+  "baseline": {
+    "file": "aevrynd-female-authoring-v249-mainline-fitted-upper-lip-r475.blend",
+    "bodyVisible": true,
+    "bodyMaterial": "Aevrynd_Skin_LowerVermilion_R475",
+    "shaderInputs": {
+      "Base Color": {
+        "value": [
+          0.80000001,
+          0.80000001,
+          0.80000001,
+          1.0
+        ],
+        "linkedFrom": [
+          "Aevrynd Lower Vermilion Color R475.Color"
+        ]
+      },
+      "Roughness": {
+        "value": 0.51999998,
+        "linkedFrom": []
+      },
+      "Subsurface Weight": {
+        "value": 0.055,
+        "linkedFrom": []
+      },
+      "Subsurface Scale": {
+        "value": 0.0065,
+        "linkedFrom": []
+      },
+      "Specular IOR Level": {
+        "value": 0.23,
+        "linkedFrom": []
+      }
+    },
+    "viewTransform": "Standard",
+    "look": "None",
+    "exposure": 0.0,
+    "gamma": 1.0,
+    "worldStrength": 0.15000000596046448,
+    "lights": {
+      "Aevrynd Review Face Fill": {
+        "energy": 4.5,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "Aevrynd Review Fill": {
+        "energy": 10.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "Aevrynd Review Hair Rim": {
+        "energy": 12.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "Aevrynd Review Key": {
+        "energy": 15.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "Aevrynd Review Top": {
+        "energy": 9.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "candidate": {
+    "file": "aevrynd-female-authoring-v249-mainline-runtime-brows-r480.blend",
+    "bodyVisible": true,
+    "bodyMaterial": "Aevrynd_Skin_LowerVermilion_R475",
+    "shaderInputs": {
+      "Base Color": {
+        "value": [
+          0.80000001,
+          0.80000001,
+          0.80000001,
+          1.0
+        ],
+        "linkedFrom": [
+          "Aevrynd Lower Vermilion Color R475.Color"
+        ]
+      },
+      "Roughness": {
+        "value": 0.51999998,
+        "linkedFrom": []
+      },
+      "Subsurface Weight": {
+        "value": 0.055,
+        "linkedFrom": []
+      },
+      "Subsurface Scale": {
+        "value": 0.0065,
+        "linkedFrom": []
+      },
+      "Specular IOR Level": {
+        "value": 0.23,
+        "linkedFrom": []
+      }
+    },
+    "viewTransform": "Standard",
+    "look": "None",
+    "exposure": 0.0,
+    "gamma": 1.0,
+    "worldStrength": 0.15000000596046448,
+    "lights": {
+      "Aevrynd Review Face Fill": {
+        "energy": 4.5,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "Aevrynd Review Fill": {
+        "energy": 10.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "Aevrynd Review Hair Rim": {
+        "energy": 12.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "Aevrynd Review Key": {
+        "energy": 15.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "Aevrynd Review Top": {
+        "energy": 9.0,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "linearLuminanceRegions": {
+    "leftCheek": {
+      "baseline": 0.4746035671409255,
+      "candidate": 0.4745225235190238,
+      "deltaPercent": -0.017076066745540314
+    },
+    "rightCheek": {
+      "baseline": 0.48774955726049396,
+      "candidate": 0.48766708679199766,
+      "deltaPercent": -0.016908363578944922
+    },
+    "centralLowerFace": {
+      "baseline": 0.45606866462741985,
+      "candidate": 0.456069625522198,
+      "deltaPercent": 0.0002106908131738805
+    }
+  },
+  "violations": [],
+  "status": "PASS"
+}
