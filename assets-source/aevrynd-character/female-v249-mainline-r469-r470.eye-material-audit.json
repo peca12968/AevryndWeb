@@ -1,0 +1,50 @@
+{
+  "before": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r469-natural-iris\\01-eye-close-f01.png",
+  "after": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r470-clean-cornea\\01-eye-close-f01.png",
+  "measurement": "mean absolute five-sample local luminance residual in the lower iris stroma, excluding the embedded pupil",
+  "irisCentersPxBottomOrigin": [
+    [
+      282,
+      327
+    ],
+    [
+      918,
+      327
+    ]
+  ],
+  "irisRadiusPx": 58,
+  "beforePerEye": [
+    {
+      "meanLuminance": 0.5432271957397461,
+      "meanHighpass": 0.022720839828252792,
+      "lowerStromaMeanHighpass": 0.03230337053537369,
+      "lowerStromaP95Highpass": 0.12282619625329971
+    },
+    {
+      "meanLuminance": 0.5413522720336914,
+      "meanHighpass": 0.02155362442135811,
+      "lowerStromaMeanHighpass": 0.029284276068210602,
+      "lowerStromaP95Highpass": 0.11905869841575623
+    }
+  ],
+  "afterPerEye": [
+    {
+      "meanLuminance": 0.48274609446525574,
+      "meanHighpass": 0.007963007315993309,
+      "lowerStromaMeanHighpass": 0.008948869071900845,
+      "lowerStromaP95Highpass": 0.039654187858104706
+    },
+    {
+      "meanLuminance": 0.4845135509967804,
+      "meanHighpass": 0.007011632435023785,
+      "lowerStromaMeanHighpass": 0.007074194028973579,
+      "lowerStromaP95Highpass": 0.030311988666653633
+    }
+  ],
+  "lowerStromaHighFrequencyReductionPercent": 73.98331648551431,
+  "geometryParityAudit": "female-v249-mainline-clean-cornea-r470.collision-audit.json",
+  "gate": {
+    "atLeastSeventyPercentArtifactReduction": true
+  },
+  "status": "PASS"
+}
