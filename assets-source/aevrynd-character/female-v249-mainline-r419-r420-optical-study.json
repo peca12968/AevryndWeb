@@ -1,0 +1,19 @@
+{
+  "range": "r419-r420",
+  "sourceCandidate": "aevrynd-female-authoring-v249-mainline-broad-medial-aperture-r418.blend",
+  "resultCandidate": "aevrynd-female-authoring-v249-mainline-layered-optical-stack-r420.blend",
+  "status": "TECHNICAL_PASS_VISUAL_FAIL_SCORE_51",
+  "findings": [
+    "r419 proves that separate curved optical surfaces improve depth more than another integrated shader change.",
+    "The first r420 build collided at the cornea and reconstructed sclera and was rejected.",
+    "The corrected build preserves the collision-safe r418 sclera envelope, opens only its visible limbus, and recesses the four anterior optical layers by 1.00 mm local.",
+    "All audited triangle-overlap counts are zero at frames 1 and 20.",
+    "Neutral review confirms that perceived progressive darkening comes from scene contrast and the old dark sclera range rather than a cumulative skin-material change."
+  ],
+  "strictScores": {
+    "face": 51,
+    "hair": 34,
+    "overallCharacter": 44
+  },
+  "websitePromotionApproved": false
+}

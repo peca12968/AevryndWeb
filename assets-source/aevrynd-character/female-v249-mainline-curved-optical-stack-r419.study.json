@@ -1,0 +1,75 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-broad-medial-aperture-r418.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r419-curved-optical-stack-sweep",
+  "ownedIrisTexture": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\textures\\aevrynd-iris-hazel-v61.png",
+  "geometry": {
+    "L": {
+      "centerLocalM": [
+        -2.564862370491028e-05,
+        0.0012070555239915848,
+        -1.2695789337158203e-05
+      ],
+      "radiusLocalM": [
+        0.013925660401582718,
+        0.01386638730764389,
+        0.01393979787826538
+      ],
+      "openingRadiusLocalM": 0.0063,
+      "irisRadiusLocalM": 0.00578,
+      "pupilRadiusLocalM": 0.00186,
+      "layers": [
+        "AevryndEye_L_ScleraOpen_R419",
+        "AevryndEye_L_LimbalAnnulus_R419",
+        "AevryndEye_L_IrisConcave_R419",
+        "AevryndEye_L_PupilRecessed_R419",
+        "AevryndEye_L_CorneaConvex_R419"
+      ]
+    },
+    "R": {
+      "centerLocalM": [
+        -6.530899554491043e-05,
+        -0.0002108560875058174,
+        -1.0183081030845642e-05
+      ],
+      "radiusLocalM": [
+        0.013929384760558605,
+        0.01387881115078926,
+        0.01393979787826538
+      ],
+      "openingRadiusLocalM": 0.0063,
+      "irisRadiusLocalM": 0.00578,
+      "pupilRadiusLocalM": 0.00186,
+      "layers": [
+        "AevryndEye_R_ScleraOpen_R419",
+        "AevryndEye_R_LimbalAnnulus_R419",
+        "AevryndEye_R_IrisConcave_R419",
+        "AevryndEye_R_PupilRecessed_R419",
+        "AevryndEye_R_CorneaConvex_R419"
+      ]
+    }
+  },
+  "variants": {
+    "a-low": {
+      "corneaBulgeLocalM": 0.00035
+    },
+    "b-balanced": {
+      "corneaBulgeLocalM": 0.00055
+    },
+    "c-deep": {
+      "corneaBulgeLocalM": 0.00075
+    }
+  },
+  "fixedConditions": {
+    "neutralWhiteLights": true,
+    "AgX": "Base Contrast",
+    "exposureEV": 0.0,
+    "largeHairHidden": true
+  },
+  "status": "SELECT_B_BALANCED_FOR_R420",
+  "promoted": false,
+  "visualReview": {
+    "selectedVariant": "b-balanced",
+    "finding": "All three convex-cornea samples remove the flat integrated-eye response. The 0.55 mm local bulge preserves a readable corneal volume without the stronger profile projection of variant c.",
+    "decision": "BUILD_R420_WITH_SEPARATE_SCLERA_LIMBUS_IRIS_PUPIL_CORNEA"
+  }
+}

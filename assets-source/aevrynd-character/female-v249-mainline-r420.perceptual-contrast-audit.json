@@ -1,0 +1,65 @@
+{
+  "baseline": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r418-broad-medial-aperture\\r418-face-close-f01.png",
+  "candidate": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r420-layered-optical-stack\\face-close-f01.png",
+  "matchedCameraAndLighting": true,
+  "regions": {
+    "forehead": {
+      "boxPixels": [
+        350,
+        150,
+        650,
+        340
+      ],
+      "r418LinearLuminance": 0.46570980069100837,
+      "r420LinearLuminance": 0.46570989791807005,
+      "relativeChangePercent": 2.0877177497879984e-05
+    },
+    "leftCheek": {
+      "boxPixels": [
+        220,
+        570,
+        420,
+        780
+      ],
+      "r418LinearLuminance": 0.4774630202000392,
+      "r420LinearLuminance": 0.4774617644759839,
+      "relativeChangePercent": -0.0002629992276292903
+    },
+    "rightCheek": {
+      "boxPixels": [
+        580,
+        570,
+        780,
+        780
+      ],
+      "r418LinearLuminance": 0.502275734213326,
+      "r420LinearLuminance": 0.5022752671361068,
+      "relativeChangePercent": -9.29921928127797e-05
+    },
+    "centralSkin": {
+      "boxPixels": [
+        380,
+        620,
+        620,
+        820
+      ],
+      "r418LinearLuminance": 0.4410388080316231,
+      "r420LinearLuminance": 0.4410339570512979,
+      "relativeChangePercent": -0.0010998987474253319
+    },
+    "eyeRegion": {
+      "boxPixels": [
+        180,
+        410,
+        820,
+        590
+      ],
+      "r418LinearLuminance": 0.4163600371785229,
+      "r420LinearLuminance": 0.41405294804824766,
+      "relativeChangePercent": -0.554109166170047
+    }
+  },
+  "maximumAbsoluteSkinChangePercent": 0.0010998987474253319,
+  "skinStatus": "PASS_NO_PROGRESSIVE_DARKENING",
+  "interpretation": "Skin response is unchanged within render noise. Eye-region luminance changes because r420 adds darker iris and pupil area while separating the warm sclera."
+}
