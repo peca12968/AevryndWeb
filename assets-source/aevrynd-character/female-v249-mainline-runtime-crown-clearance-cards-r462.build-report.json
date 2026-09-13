@@ -1,0 +1,122 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-tail-collision-envelope-r452-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-runtime-crown-clearance-cards-r462.blend",
+  "runtimeGlb": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\runtime-groom-r462\\aevrynd-female-hair-runtime-r462.glb",
+  "texture": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\textures\\aevrynd-owned-hair-card-atlas-r462.png",
+  "textureSize": [
+    512,
+    1024
+  ],
+  "partRootTexture": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\textures\\aevrynd-owned-part-root-density-r462.png",
+  "partRootTextureSize": [
+    256,
+    512
+  ],
+  "atlasSlots": [
+    {
+      "slot": 0,
+      "fibers": 5,
+      "meanAlpha": 0.12964582484682227,
+      "coverageAbove008": 0.2743988037109375
+    },
+    {
+      "slot": 1,
+      "fibers": 7,
+      "meanAlpha": 0.15204293844887118,
+      "coverageAbove008": 0.32018280029296875
+    },
+    {
+      "slot": 2,
+      "fibers": 9,
+      "meanAlpha": 0.2087483861545678,
+      "coverageAbove008": 0.4400787353515625
+    },
+    {
+      "slot": 3,
+      "fibers": 12,
+      "meanAlpha": 0.23894951124359287,
+      "coverageAbove008": 0.5063629150390625
+    }
+  ],
+  "layers": [
+    "hair.runtime_scalp_density.head_bound",
+    "hair.runtime_scalp_hairline_density.head_bound.alpha",
+    "hair.runtime_part_root_density.head_bound.alpha",
+    "hair.runtime_cards.front.dynamic.alpha",
+    "hair.runtime_cards.crown.dynamic.alpha",
+    "hair.runtime_cards.rear.dynamic.alpha",
+    "hair.runtime_cards.hairline.dynamic.alpha"
+  ],
+  "scalpCap": {
+    "object": "AevryndFemaleRuntimeScalpCap_R462",
+    "vertices": 1682,
+    "faces": 1535
+  },
+  "hairlineDensity": {
+    "object": "AevryndFemaleRuntimeHairlineDensity_R462",
+    "vertices": 648,
+    "faces": 568
+  },
+  "partRootDensity": {
+    "object": "AevryndFemaleRuntimePartRootDensity_R462",
+    "vertices": 1715,
+    "faces": 1373
+  },
+  "cards": {
+    "AevryndFemaleRuntimeCards_front_R462": 420,
+    "AevryndFemaleRuntimeCards_crown_R462": 420,
+    "AevryndFemaleRuntimeCards_rear_R462": 480,
+    "AevryndFemaleRuntimeCards_hairline_R462": 72
+  },
+  "totals": {
+    "cards": 1392,
+    "vertices": 66816,
+    "faces": 32016
+  },
+  "clearanceRepair": {
+    "AevryndFemaleRuntimeCards_crown_R462": {
+      "targetM": 0.0025,
+      "beforeMinimumSignedM": -0.0008226804911828367,
+      "repairedVertices": 106
+    },
+    "AevryndFemaleRuntimeCards_front_R462": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": -0.003941872686482384,
+      "repairedVertices": 132
+    },
+    "AevryndFemaleRuntimeCards_rear_R462": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": 0.0028204317968629766,
+      "repairedVertices": 0
+    },
+    "AevryndFemaleRuntimeCards_hairline_R462": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": 0.0011881049636031094,
+      "repairedVertices": 0
+    },
+    "AevryndFemaleRuntimeHairlineDensity_R462": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": 0.0013456926790240686,
+      "repairedVertices": 0
+    },
+    "AevryndFemaleRuntimePartRootDensity_R462": {
+      "targetM": 0.001,
+      "beforeMinimumSignedM": -0.003221403826501046,
+      "repairedVertices": 46
+    }
+  },
+  "blendBytes": 42300462,
+  "glbBytes": 8266732,
+  "ownedAssetOnly": true,
+  "websitePromotionApproved": false,
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r462-runtime-crown-clearance-cards",
+  "status": "REJECTED_FIVE_CROWN_PENETRATIONS",
+  "strictHairScore100": 61,
+  "visualFindings": [
+    "narrow crossed cards remove the rope-bundle failure",
+    "part and hair value remain readable under locked neutral lighting",
+    "rear central layer remains planar and veil-like",
+    "hairline rhythm remains too regular",
+    "macro-lock silhouette separation remains below hero quality"
+  ]
+}
