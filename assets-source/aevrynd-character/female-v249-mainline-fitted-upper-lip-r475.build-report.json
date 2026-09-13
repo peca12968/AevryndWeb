@@ -1,0 +1,123 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-nasal-midface-planes-r473.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-fitted-upper-lip-r475.blend",
+  "upperLipFit": {
+    "vertices": 455,
+    "polygons": 384,
+    "boundaryVertices": 140,
+    "topologicalRings": 4,
+    "verticesMoved": 405,
+    "maximumFitDeltaMm": 1.6313386123916966,
+    "minimumAuthoredClearanceMm": 0.45
+  },
+  "transparentTransitionRemoval": {
+    "facesRemoved": 128,
+    "remainingVertices": 325,
+    "remainingPolygons": 256
+  },
+  "dynamicClearanceRepair": [
+    {
+      "pass": 1,
+      "frame": 20,
+      "verticesMoved": 157,
+      "maximumTranslationMm": 0.7825576506815599
+    },
+    {
+      "pass": 2,
+      "frame": 1,
+      "verticesMoved": 31,
+      "maximumTranslationMm": 1.1242917727125359
+    },
+    {
+      "pass": 3,
+      "frame": 20,
+      "verticesMoved": 36,
+      "maximumTranslationMm": 0.8169251806320031
+    },
+    {
+      "pass": 4,
+      "frame": 1,
+      "verticesMoved": 12,
+      "maximumTranslationMm": 1.0641628259819775
+    }
+  ],
+  "intersectionFaceRepair": [
+    {
+      "pass": 1,
+      "frame": 1,
+      "overlapFaces": 4,
+      "verticesMoved": 9,
+      "maximumTranslationMm": 0.443648950693964
+    },
+    {
+      "pass": 2,
+      "frame": 20,
+      "overlapFaces": 4,
+      "verticesMoved": 9,
+      "maximumTranslationMm": 0.6699072915000102
+    },
+    {
+      "pass": 3,
+      "frame": 1,
+      "overlapFaces": 4,
+      "verticesMoved": 9,
+      "maximumTranslationMm": 1.754394147476368
+    },
+    {
+      "pass": 4,
+      "frame": 20,
+      "overlapFaces": 4,
+      "verticesMoved": 9,
+      "maximumTranslationMm": 0.8405879426758168
+    },
+    {
+      "pass": 5,
+      "frame": 1,
+      "overlapFaces": 0,
+      "verticesMoved": 0,
+      "maximumTranslationMm": 0.0
+    },
+    {
+      "pass": 6,
+      "frame": 20,
+      "overlapFaces": 0,
+      "verticesMoved": 0,
+      "maximumTranslationMm": 0.0
+    },
+    {
+      "pass": 7,
+      "frame": 1,
+      "overlapFaces": 0,
+      "verticesMoved": 0,
+      "maximumTranslationMm": 0.0
+    },
+    {
+      "pass": 8,
+      "frame": 20,
+      "overlapFaces": 0,
+      "verticesMoved": 0,
+      "maximumTranslationMm": 0.0
+    }
+  ],
+  "lowerLipResponse": {
+    "attribute": "AevryndLowerVermilionR475",
+    "verticesTinted": 380,
+    "maximumMix": 0.1,
+    "material": "Aevrynd_Skin_LowerVermilion_R475"
+  },
+  "upperLipVisible": true,
+  "lowerLipShellVisible": false,
+  "wetLineShellVisible": false,
+  "reviewDirectory": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r475-fitted-upper-lip",
+  "reviewColorManagement": {
+    "viewTransform": "Standard",
+    "look": "None",
+    "exposure": 0.0
+  },
+  "status": "TECHNICAL_CANDIDATE_VISUAL_FAIL_SCORE_57",
+  "collisionAudit": "female-v249-mainline-fitted-upper-lip-r475.collision-audit.json",
+  "collisionAuditStatus": "PASS_ZERO_UPPER_LIP_BODY_OVERLAP_FRAMES_1_20",
+  "strictFaceScore": 57,
+  "strictMouthScore": 50,
+  "review": "Normal-distance upper-lip silhouette, cupid peaks and center notch are readable without the old pale transition ring. Close review still shows a simple lip slit, weak commissure anatomy and insufficient vermilion microrelief, so it remains below the hero gate."
+}
