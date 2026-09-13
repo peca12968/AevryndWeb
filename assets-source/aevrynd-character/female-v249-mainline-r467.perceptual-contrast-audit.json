@@ -1,0 +1,53 @@
+{
+  "reference": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r358-corrected-forehead-roi-prune-sweep\\a-current-face.png",
+  "previous": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r452-tail-collision-envelope\\01-front-f01.png",
+  "candidate": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r467-runtime-soft-rear-fan-cards\\01-front-f01.png",
+  "space": "scene-linear Rec.709 luminance",
+  "normalizedRegions": {
+    "central_skin": [
+      0.38,
+      0.32,
+      0.62,
+      0.62
+    ],
+    "forehead_hairline_context": [
+      0.25,
+      0.61,
+      0.75,
+      0.86
+    ],
+    "whole_character_frame": [
+      0.08,
+      0.05,
+      0.92,
+      0.95
+    ]
+  },
+  "measurements": {
+    "r358_reference": {
+      "central_skin": 0.495147711580347,
+      "forehead_hairline_context": 0.46354827249780384,
+      "whole_character_frame": 0.3032603399680118
+    },
+    "r452_baseline": {
+      "central_skin": 0.46647190334459054,
+      "forehead_hairline_context": 0.35979182192233994,
+      "whole_character_frame": 0.24262334953700618
+    },
+    "r467_candidate": {
+      "central_skin": 0.46694140965302966,
+      "forehead_hairline_context": 0.3920385356601196,
+      "whole_character_frame": 0.2543220723263562
+    }
+  },
+  "historicalReferenceCaveat": "r358 uses a different camera crop; its normalized fixed region is recorded for context only and is not a pass/fail comparator.",
+  "centralSkinDeltaFromR452Percent": 0.10065050114975715,
+  "hairlineContextDeltaFromR452Percent": 8.962603309182505,
+  "wholeFrameDeltaFromR452Percent": 4.821762955492304,
+  "gate": {
+    "centralSkinStableWithinOnePercentOfR452": true,
+    "hairlineContextNoMoreThanTwoPercentDarkerThanR452": true,
+    "wholeFrameNotDarkerThanR452": true
+  },
+  "status": "PASS"
+}
