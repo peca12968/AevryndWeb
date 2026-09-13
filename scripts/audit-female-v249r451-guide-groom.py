@@ -65,7 +65,12 @@ def percentile(values, fraction):
 
 bpy.ops.wm.open_mainfile(filepath=str(MODEL))
 scene = bpy.context.scene
-curves = [bpy.data.objects[name] for name in CURVE_LAYERS]
+curve_names = list(CURVE_LAYERS)
+curve_names.extend(sorted(
+    obj.name for obj in bpy.data.objects
+    if obj.type == "CURVES" and obj.get("aevrynd_collision_audit", False) and obj.name not in curve_names
+))
+curves = [bpy.data.objects[name] for name in curve_names]
 collision_objects = curves + [bpy.data.objects[SCALP]]
 for obj in curves:
     if len(obj.data.points) % POINTS_PER_CURVE:

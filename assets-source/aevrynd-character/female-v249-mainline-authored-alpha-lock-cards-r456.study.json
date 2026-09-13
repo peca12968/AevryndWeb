@@ -1,0 +1,30 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-tail-collision-envelope-r452-study.blend",
+  "materialSource": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-runtime-anchored-part-root-density-r409.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-authored-alpha-lock-cards-r456-study.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r456-authored-alpha-lock-cards",
+  "baseCurveRadiusScale": 0.58,
+  "layers": [
+    "hair.authored_alpha_locks.front.dynamic",
+    "hair.authored_alpha_locks.crown.dynamic",
+    "hair.authored_alpha_locks.rear.dynamic"
+  ],
+  "cards": {
+    "AevryndFemaleAuthoredAlphaCards_Front_R456": 16,
+    "AevryndFemaleAuthoredAlphaCards_Crown_R456": 24,
+    "AevryndFemaleAuthoredAlphaCards_Rear_R456": 24
+  },
+  "totalCards": 64,
+  "widthHalfM": {
+    "front": 0.006,
+    "crown": 0.007,
+    "rear": 0.008
+  },
+  "ownedPackedAlphaAtlas": "textures/aevrynd-owned-hair-card-atlas-r409.png",
+  "ownedAssetOnly": true,
+  "websitePromotionApproved": false,
+  "status": "REJECTED_VISUAL_FAIL_SCORE_42_DETACHED_CARD_PATCHES",
+  "strictVisualFinding": "The 64 authored alpha cards become visible at normal distance, but appear as detached glossy rectangular patches across crown and back. Card boundaries and incorrect highlight blocks reduce realism sharply.",
+  "strictHairScore100": 42,
+  "collisionAudit": "SKIPPED_VISUAL_GATE_FAILED"
+}
