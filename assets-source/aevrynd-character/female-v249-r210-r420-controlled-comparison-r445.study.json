@@ -1,0 +1,49 @@
+{
+  "purpose": "Controlled comparison of the collision-proven r210 continuous open-eyelid mainline against the r420 closed high-density body and layered optical stack.",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r445-r210-r420-controlled-comparison",
+  "sources": {
+    "r210": {
+      "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-converged-upper-lid-r210.blend",
+      "visibleBodies": [
+        {
+          "name": "AevryndFemaleBodyBaseV118",
+          "vertices": 41692,
+          "faces": 41490,
+          "materials": [
+            "Aevrynd_Skin_Layered_v249r173"
+          ]
+        }
+      ],
+      "hairObjects": 24
+    },
+    "r420": {
+      "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-layered-optical-stack-r420.blend",
+      "visibleBodies": [
+        {
+          "name": "AevryndFemaleBody_CC0_R249",
+          "vertices": 169362,
+          "faces": 169360,
+          "materials": [
+            "Aevrynd_Skin_Physical_R252"
+          ]
+        }
+      ],
+      "hairObjects": 7
+    }
+  },
+  "fixedConditions": {
+    "viewTransform": "Standard",
+    "look": "None",
+    "exposureEV": 0.0,
+    "neutralWhiteLightEnergyW": {
+      "key": 13.5,
+      "fill": 8.4,
+      "top": 7.7
+    },
+    "worldStrength": 0.12,
+    "identicalCamera": true
+  },
+  "strictVisualFinding": "r210 preserves a continuous open eyelid, natural almond aperture and better globe coverage. r420 has richer depth and skin response but uses a closed face with optical layers presented in front of it.",
+  "selectedGeometryBaseline": "r210",
+  "status": "R210_OPEN_TOPOLOGY_SELECTED_R420_CLOSED_EYE_SURFACE_REJECTED"
+}

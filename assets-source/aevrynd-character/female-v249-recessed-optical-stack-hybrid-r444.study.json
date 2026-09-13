@@ -1,0 +1,56 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-layered-optical-stack-r420.blend",
+  "topologyDonor": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-eyelid-r78.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-recessed-optical-stack-hybrid-r444-study.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r444-recessed-optical-stack-hybrid",
+  "method": "Use the earlier owned open-eyelid continuous body topology, then align each r420 five-layer optical stack to the center of the corresponding r78 sclera while preserving the r420 skin material, rig and current hair.",
+  "bodyTopology": {
+    "vertices": 41692,
+    "edges": 83182,
+    "faces": 41490,
+    "quads": 41289,
+    "triangles": 65,
+    "boundaryEdges": 104
+  },
+  "frame1BodyOpticalTriangleOverlaps": {
+    "L": {
+      "ScleraOpen": 87,
+      "LimbalAnnulus": 5,
+      "IrisConcave": 0,
+      "PupilRecessed": 0,
+      "CorneaConvex": 65
+    },
+    "R": {
+      "ScleraOpen": 51,
+      "LimbalAnnulus": 16,
+      "IrisConcave": 0,
+      "PupilRecessed": 0,
+      "CorneaConvex": 52
+    }
+  },
+  "gates": {
+    "frame1BodyOpticalCollisionPass": false
+  },
+  "sameRigName": "AevryndFemaleRig",
+  "opticalAlignmentDeltaM": {
+    "L": [
+      0.0014278218150138855,
+      0.025520987808704376,
+      -0.00012022256851196289
+    ],
+    "R": [
+      -0.0013199727982282639,
+      0.025521233677864075,
+      -0.00012010335922241211
+    ]
+  },
+  "derivedOnlyFromOwnedCC0Mainline": true,
+  "websitePromotionApproved": false,
+  "colorManagement": {
+    "viewTransform": "Standard",
+    "look": "None",
+    "exposureEV": 0.0,
+    "inheritedR420Lights": true
+  },
+  "status": "REJECTED_RECESSED_OPTICAL_STACK_HYBRID_COLLISION_FAIL"
+}

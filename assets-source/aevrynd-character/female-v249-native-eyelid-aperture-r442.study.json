@@ -1,0 +1,115 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-layered-optical-stack-r420.blend",
+  "pathSource": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-native-eyelid-loop-r441.study.json",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-native-eyelid-aperture-r442-study.blend",
+  "outputContainsVariant": "c-open",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r442-native-eyelid-aperture-sweep",
+  "method": "Reshape the discovered native continuous eyelid paths in Z, with four topology-ring falloff steps and no detached patch geometry.",
+  "variants": {
+    "a-redistributed": {
+      "upperRiseM": 0.0038,
+      "lowerDropM": 0.0026,
+      "targetCentralApertureM": 0.0063999999999999994,
+      "movedVertices": {
+        "L": 537,
+        "R": 550
+      },
+      "maximumDisplacementM": 0.006757974624633789,
+      "exactPathVertices": {
+        "L": 98,
+        "R": 98
+      },
+      "frame1BodyOpticalTriangleOverlaps": {
+        "L": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        },
+        "R": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        }
+      }
+    },
+    "b-balanced": {
+      "upperRiseM": 0.0045,
+      "lowerDropM": 0.0028,
+      "targetCentralApertureM": 0.007299999999999999,
+      "movedVertices": {
+        "L": 537,
+        "R": 550
+      },
+      "maximumDisplacementM": 0.006757974624633789,
+      "exactPathVertices": {
+        "L": 98,
+        "R": 98
+      },
+      "frame1BodyOpticalTriangleOverlaps": {
+        "L": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        },
+        "R": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        }
+      }
+    },
+    "c-open": {
+      "upperRiseM": 0.005,
+      "lowerDropM": 0.003,
+      "targetCentralApertureM": 0.008,
+      "movedVertices": {
+        "L": 537,
+        "R": 550
+      },
+      "maximumDisplacementM": 0.006757974624633789,
+      "exactPathVertices": {
+        "L": 98,
+        "R": 98
+      },
+      "frame1BodyOpticalTriangleOverlaps": {
+        "L": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        },
+        "R": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        }
+      }
+    }
+  },
+  "gates": {
+    "frame1BodyOpticalCollisionPass": true
+  },
+  "strictVisualFinding": "The lower discovered path lies on the internal lid surface; propagation lifts a rigid lower-lid plate despite zero optical triangle overlap.",
+  "derivedOnlyFromOwnedCC0Mainline": true,
+  "integratedIntoContinuousBodyMesh": true,
+  "rigTransferred": true,
+  "websitePromotionApproved": false,
+  "colorManagement": {
+    "viewTransform": "Standard",
+    "look": "None",
+    "exposureEV": 0.0,
+    "neutralWhiteLights": true
+  },
+  "status": "REJECTED_INNER_LOWER_LID_PATH_DEFORMATION"
+}

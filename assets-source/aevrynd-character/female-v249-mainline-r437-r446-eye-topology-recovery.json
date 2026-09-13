@@ -1,0 +1,30 @@
+{
+  "range": "r437-r446",
+  "previousFaceCandidate": "aevrynd-female-authoring-v249-mainline-layered-optical-stack-r420.blend",
+  "retainedOpenTopologyBaseline": "aevrynd-female-authoring-v249-mainline-open-topology-physical-skin-r446.blend",
+  "reviewDirectory": "assets-source/aevrynd-character/reviews/v249r437-r446-eye-topology-recovery",
+  "rootCause": "The r420 high-density body is a closed facial surface with optical layers presented in front of it; it has no true eyelid aperture boundary. Coordinate edits and detached overlays therefore cannot create continuous blinking eyelid loops.",
+  "decisions": {
+    "r437": "Reference only. Local QuadriFlow patches are all-quad but their boundaries do not follow eyelid feature flow.",
+    "r438": "Technical topology pass and visual fail. Explicit rectangular loops require anatomical canthus taper.",
+    "r439": "Rejected. The detached eyelid surface reads as a rectangular frame with an outer seam.",
+    "r440": "Rejected. Canthus taper retains a thick detached frame, so the detached-overlay approach stops here.",
+    "r441": "Partial pass. Native upper-lid paths are usable, but lower paths detour through the internal closed surface.",
+    "r442": "Rejected. Deforming the invalid lower path creates rigid lower-lid plates.",
+    "r443": "Rejected. Combining the r78 open body with r420 optics produces eye-layer collisions.",
+    "r444": "Rejected as a candidate. World-space optical alignment restores a natural almond aperture but does not clear all eye collisions.",
+    "r445": "Controlled comparison selects the r210 open-eye body topology over the r420 closed-eye body.",
+    "r446": "Retained research baseline. It preserves the r210 geometry byte-for-byte at the evaluated mesh hash level and transfers only the r420 physical skin material. Full collision revalidation remains required."
+  },
+  "colorManagement": {
+    "viewTransform": "Standard",
+    "look": "None",
+    "exposureEV": 0.0,
+    "reason": "Keeps neutral review renders directly comparable and removes the darker AgX presentation change introduced in intermediate studies."
+  },
+  "strictFaceScore100": 50,
+  "websiteAsset": "v83",
+  "websitePromotionApproved": false,
+  "nextRequiredWork": "Use r446 as the open-topology base, improve broad nose and midface planes without editing the eye aperture, then revalidate frame 1/20 eye, face, hair and clothing collisions before any promotion.",
+  "status": "OPEN_TOPOLOGY_BASELINE_RECOVERED_NOT_RELEASE_READY"
+}
