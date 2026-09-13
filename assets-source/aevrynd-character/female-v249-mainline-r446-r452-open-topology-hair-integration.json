@@ -1,0 +1,40 @@
+{
+  "range": "r446-r452",
+  "openTopologyBase": "aevrynd-female-authoring-v249-mainline-open-topology-physical-skin-r446.blend",
+  "alignedContinuousGroom": "aevrynd-female-authoring-v249-mainline-aligned-continuous-guide-groom-r451-study.blend",
+  "collisionSafeContinuousGroom": "aevrynd-female-authoring-v249-mainline-tail-collision-envelope-r452-study.blend",
+  "r451Audit": "female-v249-mainline-r451.guide-groom-audit.json",
+  "r452Audit": "female-v249-mainline-r452.guide-groom-audit.json",
+  "layers": [
+    "hair.front_surface_flow.dynamic",
+    "hair.crown_surface_flow.dynamic",
+    "hair.rear_surface_flow.dynamic",
+    "hair.hairline_microclumps.head_bound",
+    "hair.scalp_density_foundation.head_bound"
+  ],
+  "curvePoints": 628440,
+  "r452Collision": {
+    "frames": [
+      1,
+      20,
+      33,
+      61
+    ],
+    "solids": [
+      "body",
+      "bandeau",
+      "binding",
+      "shorts"
+    ],
+    "penetratingPoints": 0
+  },
+  "r452Motion": {
+    "peakP95M": 0.00397179517032395,
+    "peakMaximumM": 0.0049989517252623725,
+    "rootMaximumM": 1.666000468656264e-08,
+    "settleMaximumM": 3.332000937312528e-08
+  },
+  "strictHairScore100": 58,
+  "status": "TECHNICAL_COLLISION_MOTION_PASS_VISUAL_FAIL",
+  "websitePromotionApproved": false
+}

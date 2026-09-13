@@ -1,0 +1,44 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-open-topology-physical-skin-r446.blend",
+  "hairSource": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-continuous-crown-field-r383.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-aligned-continuous-guide-groom-r451-study.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r451-aligned-continuous-guide-groom",
+  "baseSkeletonRestHashR446": "7cab55c72d6349144eea37e3ea09fc372ee7b11fe02c270d5ed5a1a9ed309f9c",
+  "baseSkeletonRestHashR383": "7cab55c72d6349144eea37e3ea09fc372ee7b11fe02c270d5ed5a1a9ed309f9c",
+  "baseSkeletonRestIdentical": true,
+  "baseBoneCount": 21,
+  "addedHairBoneCount": 15,
+  "hairLayers": [
+    "hair.front_surface_flow.dynamic",
+    "hair.crown_surface_flow.dynamic",
+    "hair.rear_surface_flow.dynamic",
+    "hair.hairline_microclumps.head_bound",
+    "hair.scalp_density_foundation.head_bound"
+  ],
+  "objectPointCounts": {
+    "AevryndFemaleFrontSurfaceFlow_R383": 203952,
+    "AevryndFemaleCrownSurfaceFlow_R383": 202704,
+    "AevryndFemaleRearSurfaceFlow_R383": 218856,
+    "AevryndFemaleHairlineTransition_R383": 2928,
+    "AevryndFemaleSemanticScalp_R383": 129985
+  },
+  "totalCurvePoints": 628440,
+  "alignmentWorldM": [
+    0.0,
+    0.02552100084722042,
+    0.0
+  ],
+  "ownedAssetOnly": true,
+  "websitePromotionApproved": false,
+  "colorManagement": {
+    "viewTransform": "Standard",
+    "look": "None",
+    "exposureEV": 0.0,
+    "lockedNeutralReviewLighting": true
+  },
+  "status": "COLLISION_FAIL_VISUAL_FAIL_SCORE_58",
+  "strictVisualFinding": "The continuous r383 groom reads as a complete long bob and is substantially more human than r449/r450, but the broad highlighted part, parallel combed surface, uniform curtain mass and jagged ends remain below hero quality.",
+  "strictHairScore100": 58,
+  "collisionAudit": "female-v249-mainline-r451.guide-groom-audit.json",
+  "collisionFinding": "FAIL: dynamic lower segments of front, crown and rear guides penetrate the r446 body at frames 20/33/61; roots, settle and motion amplitude pass."
+}

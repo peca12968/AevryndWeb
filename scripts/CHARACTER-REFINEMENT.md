@@ -925,6 +925,15 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - r450 從 r446 evaluated 人體表面建立 BVH，全部髮根直接投射到開放頭模的實際頭皮；新建 front 128、crown 184、rear 144、hairline 54，共 510 張卡，不沿用 r409 髮片幾何。材質仍使用 Aevrynd 自有程序 atlas，骨架沿用已驗證相容的 15 根次級髮骨，分層為獨立 scalp、front、crown、rear、hairline。
 - 多角度嚴格審查在碰撞升格前判退：低多邊形 scalp cap 產生鋸齒狀硬帽沿；卡片根部覆蓋不足，頂視大面積顯示代理頭皮；外圍控制路徑讀成放射狀細線，沒有真人頭髮的髮旋、交錯大束與重力聚合。嚴格外觀約 28／100，低於 r449 與 r409。
 - r450 的有效結論只限於 r446 原生頭皮投射與骨架相容。下一輪先建立少量可手工梳理的連續 guide curves，明確定義分線、前框、冠部髮旋、顳側、後腦和髮尾，再由 guides 生成非均勻 clump／follow；scalp coverage 必須使用連續柔化邊界，不再把低模人體面邊界直接當可見髮際。
+
+## v249 開放頭模連續導引髮與尾段碰撞包絡 r451–r452
+
+- r451 將 r383 的 front／crown／rear 連續動態曲線、短髮際與頭皮密度五層完整移植到 r446 開放眼眶基底。r383 與 r446 的 21 根基礎骨 rest hash 都是 `7cab55c72d6349144eea37e3ea09fc372ee7b11fe02c270d5ed5a1a9ed309f9c`，並沿用已驗證的 +25.521mm 世界 Y 對齊；628,440 個曲線點和全部 15 根次級髮骨均保留。
+- 固定 `Standard`／`Look None`／Exposure 0 的中性白光後確認，皮膚材質沒有逐版變黑；密髮遮光曾使雙頰與頸部在研究圖中偏暗。r451 起明確建立 key、fill、face fill、top 與 hair rim 五盞評圖燈，後續版本不得沿用來源檔中不透明的舊燈光狀態。
+- r451 的髮根漂移、回穩與動態幅度合格，但四幀 BVH 稽核發現所有穿模都集中在每條 24 點導引的第 12–23 點。frame 20／33／61 的 front、crown、rear 尾段最深進入人體約 24.99mm；服裝三層為零。r451 因此保留為對齊證據，不升格。
+- r452 不刪除整條導引，也不移動第 0–7 點髮根。它把四幀最深人體接觸的法線修正轉到 head-local 空間，從第 8 點開始以 smoothstep 漸增至髮尾；兩輪修正後第三輪預檢歸零。完整稽核在 frame 1／20／33／61 對人體、胸衣、包邊與短褲全部為 0 穿模。
+- r452 動態 P95 為 3.9718mm、最大 4.9990mm，髮根最大漂移 0.0000167mm、frame 61 回穩誤差 0.0000333mm，技術門檻 PASS。多角度審查仍只有 58／100：寬分線亮帶、整齊梳平表面、缺少可讀 macro clumps 與鋸齒狀單一髮尾層級仍不符合現代主角品質，因此網站維持 v83。
+- 下一輪以 r452 為離線 authoring 基底，增加少量可讀的束群覆層、縮窄分線、建立長短交錯髮尾和受控 flyaway；任何視覺修改都必須重新通過同一組四幀人體／服裝碰撞、動態與固定燈光多角度審查。
 ### v249 mainline mouth studies r220-r223
 
 - r220 isolates the authored render state and confirms that the legacy `Lip_Upper`, `Lip_Lower`, and `Mouth_WetLine` shells were already hidden. The visible mouth is part of the continuous 41,692-vertex body.
