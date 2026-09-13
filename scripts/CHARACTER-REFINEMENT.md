@@ -934,6 +934,12 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - r452 不刪除整條導引，也不移動第 0–7 點髮根。它把四幀最深人體接觸的法線修正轉到 head-local 空間，從第 8 點開始以 smoothstep 漸增至髮尾；兩輪修正後第三輪預檢歸零。完整稽核在 frame 1／20／33／61 對人體、胸衣、包邊與短褲全部為 0 穿模。
 - r452 動態 P95 為 3.9718mm、最大 4.9990mm，髮根最大漂移 0.0000167mm、frame 61 回穩誤差 0.0000333mm，技術門檻 PASS。多角度審查仍只有 58／100：寬分線亮帶、整齊梳平表面、缺少可讀 macro clumps 與鋸齒狀單一髮尾層級仍不符合現代主角品質，因此網站維持 v83。
 - 下一輪以 r452 為離線 authoring 基底，增加少量可讀的束群覆層、縮窄分線、建立長短交錯髮尾和受控 flyaway；任何視覺修改都必須重新通過同一組四幀人體／服裝碰撞、動態與固定燈光多角度審查。
+
+## v249 空間分箱 macro-clump 排除 r453
+
+- r453 將 r452 的 front／crown／rear 髮根依 18 個環向區段和 3 個高度帶分群；實際非空分群為 front 35、crown 23、rear 21。每群使用一致的低幅流向、半徑差與 3–17mm 髮尾縮短，髮根保持不動，再重建四幀尾段碰撞包絡。
+- 完整稽核在 frame 1／20／33／61 對人體、胸衣、包邊與短褲全部為 0 穿模；動態 P95 4.003mm、最大 4.999mm，髮根漂移與回穩誤差仍在門檻內。
+- 嚴格 A/B 審查判退：後腦下緣形成更大的塊狀尖角，右前側出現過長束群，寬分線與頭頂平滑帽狀感幾乎沒有改善。分數由 r452 的 58 降為 56／100；空間分箱不能取代手工定義的主束輪廓與束內 child 分布，r452 保持為離線技術基底。
 ### v249 mainline mouth studies r220-r223
 
 - r220 isolates the authored render state and confirms that the legacy `Lip_Upper`, `Lip_Lower`, and `Mouth_WetLine` shells were already hidden. The visible mouth is part of the continuous 41,692-vertex body.
