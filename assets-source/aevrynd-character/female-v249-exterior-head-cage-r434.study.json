@@ -1,0 +1,122 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-layered-optical-stack-r420.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-short-edge-safe-head-cage-r434-study.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r434-short-edge-safe-head-cage-study",
+  "neckCutWorldZ": 1.405,
+  "targetFaces": 18000,
+  "voxelSizeMeters": 0.0015,
+  "topologyBeforeCleanup": {
+    "componentCount": 1,
+    "componentVertexCounts": [
+      62427
+    ],
+    "boundaryEdges": 314,
+    "wireEdges": 0,
+    "overConnectedEdges": 0
+  },
+  "topologyAfterCleanup": {
+    "componentCount": 1,
+    "componentVertexCounts": [
+      62427
+    ],
+    "boundaryEdges": 314,
+    "wireEdges": 0,
+    "overConnectedEdges": 0
+  },
+  "topologyAfterNeckCap": {
+    "componentCount": 1,
+    "componentVertexCounts": [
+      62427
+    ],
+    "boundaryEdges": 0,
+    "wireEdges": 0,
+    "overConnectedEdges": 0
+  },
+  "beforeQuadriflow": {
+    "vertices": 62427,
+    "edges": 125006,
+    "polygons": 62581,
+    "triangles": 124850,
+    "quads": 62269,
+    "quadRatio": 0.9950144612582094,
+    "ngons": 0
+  },
+  "afterVoxelRemesh": {
+    "vertices": 155816,
+    "edges": 311544,
+    "polygons": 155772,
+    "triangles": 311544,
+    "quads": 155772,
+    "quadRatio": 1.0,
+    "ngons": 0
+  },
+  "topologyAfterVoxelCleanup": {
+    "componentCount": 1,
+    "componentVertexCounts": [
+      155632
+    ],
+    "boundaryEdges": 0,
+    "wireEdges": 0,
+    "overConnectedEdges": 0
+  },
+  "afterVoxelCleanup": {
+    "vertices": 155534,
+    "edges": 311139,
+    "polygons": 155604,
+    "triangles": 311056,
+    "quads": 155301,
+    "quadRatio": 0.9980527492866508,
+    "ngons": 75
+  },
+  "geometryOnlyRebuildBeforeQuadriflow": {
+    "vertices": 155632,
+    "faces": 155632,
+    "attributeNames": [
+      ".select_vert",
+      "position",
+      ".corner_vert",
+      ".corner_edge",
+      ".select_poly",
+      "sharp_face",
+      ".edge_verts",
+      ".select_edge"
+    ]
+  },
+  "shortEdgeCleanup": {
+    "thresholdMeters": 0.000101,
+    "shortEdgesBefore": 87,
+    "shortEdgesAfter": 1,
+    "minimumEdgeBeforeMeters": 6.187752205732977e-06,
+    "minimumEdgeAfterMeters": 9.210404095938429e-05,
+    "topology": {
+      "componentCount": 1,
+      "componentVertexCounts": [
+        155534
+      ],
+      "boundaryEdges": 10,
+      "wireEdges": 4,
+      "overConnectedEdges": 2
+    }
+  },
+  "afterQuadriflow": {
+    "vertices": 155534,
+    "edges": 311139,
+    "polygons": 155604,
+    "triangles": 311056,
+    "quads": 155301,
+    "quadRatio": 0.9980527492866508,
+    "ngons": 75
+  },
+  "gates": {
+    "quadriflowChanged": false,
+    "targetRangePass": false,
+    "quadRatioPass": true,
+    "topologyGatePass": false
+  },
+  "derivedOnlyFromOwnedCC0Mainline": true,
+  "rigTransferred": false,
+  "shapeKeysCreated": false,
+  "websitePromotionApproved": false,
+  "status": "REJECTED_SHORT_EDGE_DISSOLVE_BREAKS_MANIFOLD",
+  "strictVisualFinding": "Dissolving 87 sub-0.1 mm edges creates boundary, wire and over-connected edges; this repair is unsafe."
+}

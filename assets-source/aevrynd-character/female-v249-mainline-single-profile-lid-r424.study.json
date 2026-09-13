@@ -1,0 +1,91 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-layered-optical-stack-r420.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r424-single-profile-lid-sweep",
+  "variants": {
+    "a-quarter": {
+      "strength": 0.25,
+      "movedVertices": {
+        "L": 763,
+        "R": 753
+      },
+      "maximumDisplacementM": 0.001007345204991357,
+      "clampedVertices": 0,
+      "frame1BodyOpticalTriangleOverlaps": {
+        "L": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        },
+        "R": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        }
+      }
+    },
+    "b-half": {
+      "strength": 0.5,
+      "movedVertices": {
+        "L": 760,
+        "R": 752
+      },
+      "maximumDisplacementM": 0.002,
+      "clampedVertices": 1,
+      "frame1BodyOpticalTriangleOverlaps": {
+        "L": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        },
+        "R": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        }
+      }
+    },
+    "c-three-quarter": {
+      "strength": 0.75,
+      "movedVertices": {
+        "L": 754,
+        "R": 749
+      },
+      "maximumDisplacementM": 0.002,
+      "clampedVertices": 34,
+      "frame1BodyOpticalTriangleOverlaps": {
+        "L": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        },
+        "R": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        }
+      }
+    }
+  },
+  "method": "Replace the overlapping inherited external-lid relief with one target front-depth profile anchored to the authored upper and lower lid margins; inner eyelid surfaces are excluded by normal and depth.",
+  "fixedConditions": {
+    "neutralWhiteLights": true,
+    "AgX": "Base Contrast",
+    "exposureEV": 0.0,
+    "largeHairHidden": true
+  },
+  "status": "REJECTED_SAGGING_RECTANGULAR_PATCHES",
+  "strictVisualFinding": "Direct profile fitting produces a hard upper ledge and rectangular lower-eye sag instead of a continuous tarsal surface.",
+  "websitePromotionApproved": false
+}

@@ -1,0 +1,74 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-layered-optical-stack-r420.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-voxel-exterior-head-cage-r430-study.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r430-voxel-exterior-head-cage-study",
+  "neckCutWorldZ": 1.405,
+  "targetFaces": 18000,
+  "voxelSizeMeters": 0.0015,
+  "topologyBeforeCleanup": {
+    "componentCount": 1,
+    "componentVertexCounts": [
+      62427
+    ],
+    "boundaryEdges": 314,
+    "wireEdges": 0,
+    "overConnectedEdges": 0
+  },
+  "topologyAfterCleanup": {
+    "componentCount": 1,
+    "componentVertexCounts": [
+      62427
+    ],
+    "boundaryEdges": 314,
+    "wireEdges": 0,
+    "overConnectedEdges": 0
+  },
+  "topologyAfterNeckCap": {
+    "componentCount": 1,
+    "componentVertexCounts": [
+      62427
+    ],
+    "boundaryEdges": 0,
+    "wireEdges": 0,
+    "overConnectedEdges": 0
+  },
+  "beforeQuadriflow": {
+    "vertices": 62427,
+    "edges": 125006,
+    "polygons": 62581,
+    "triangles": 124850,
+    "quads": 62269,
+    "quadRatio": 0.9950144612582094,
+    "ngons": 0
+  },
+  "afterVoxelRemesh": {
+    "vertices": 155816,
+    "edges": 311544,
+    "polygons": 155772,
+    "triangles": 311544,
+    "quads": 155772,
+    "quadRatio": 1.0,
+    "ngons": 0
+  },
+  "afterQuadriflow": {
+    "vertices": 155816,
+    "edges": 311544,
+    "polygons": 155772,
+    "triangles": 311544,
+    "quads": 155772,
+    "quadRatio": 1.0,
+    "ngons": 0
+  },
+  "gates": {
+    "quadriflowChanged": false,
+    "targetRangePass": false,
+    "quadRatioPass": true,
+    "topologyGatePass": false
+  },
+  "derivedOnlyFromOwnedCC0Mainline": true,
+  "rigTransferred": false,
+  "shapeKeysCreated": false,
+  "websitePromotionApproved": false,
+  "status": "REJECTED_QUADRIFLOW_TOPOLOGY_GATE_FAIL",
+  "strictVisualFinding": "A 1.5 mm voxel remesh creates a watertight exterior but also many tiny neck-cut islands; QuadriFlow does not run."
+}

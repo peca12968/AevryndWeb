@@ -1,0 +1,91 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-layered-optical-stack-r420.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r425-external-lid-smoothing-sweep",
+  "variants": {
+    "a-four": {
+      "strength": 4,
+      "movedVertices": {
+        "L": 630,
+        "R": 630
+      },
+      "maximumDisplacementM": 0.00039822227021227286,
+      "iterations": 4,
+      "frame1BodyOpticalTriangleOverlaps": {
+        "L": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        },
+        "R": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        }
+      }
+    },
+    "b-eight": {
+      "strength": 8,
+      "movedVertices": {
+        "L": 630,
+        "R": 630
+      },
+      "maximumDisplacementM": 0.0005947441097762518,
+      "iterations": 8,
+      "frame1BodyOpticalTriangleOverlaps": {
+        "L": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        },
+        "R": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        }
+      }
+    },
+    "c-fourteen": {
+      "strength": 14,
+      "movedVertices": {
+        "L": 636,
+        "R": 630
+      },
+      "maximumDisplacementM": 0.0007771281612592995,
+      "iterations": 14,
+      "frame1BodyOpticalTriangleOverlaps": {
+        "L": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        },
+        "R": {
+          "ScleraOpen": 0,
+          "LimbalAnnulus": 0,
+          "IrisConcave": 0,
+          "PupilRecessed": 0,
+          "CorneaConvex": 0
+        }
+      }
+    }
+  },
+  "method": "Normal-gated Laplacian smoothing of only the external upper/lower eyelid relief, preserving aperture edges, inner eyelid surfaces and the optical stack.",
+  "fixedConditions": {
+    "neutralWhiteLights": true,
+    "AgX": "Base Contrast",
+    "exposureEV": 0.0,
+    "largeHairHidden": true
+  },
+  "status": "REJECTED_NO_MEANINGFUL_VISUAL_GAIN",
+  "strictVisualFinding": "Four to fourteen smoothing iterations preserve the inherited edge-flow defect and do not create anatomical eyelid volume.",
+  "websitePromotionApproved": false
+}

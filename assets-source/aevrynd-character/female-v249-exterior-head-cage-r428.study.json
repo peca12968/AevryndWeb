@@ -1,0 +1,55 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-layered-optical-stack-r420.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-exterior-head-cage-r428-study.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r428-exterior-head-cage-study",
+  "neckCutWorldZ": 1.405,
+  "targetFaces": 18000,
+  "topologyBeforeCleanup": {
+    "componentCount": 1,
+    "componentVertexCounts": [
+      62427
+    ],
+    "boundaryEdges": 314,
+    "wireEdges": 0,
+    "overConnectedEdges": 0
+  },
+  "topologyAfterCleanup": {
+    "componentCount": 1,
+    "componentVertexCounts": [
+      62427
+    ],
+    "boundaryEdges": 314,
+    "wireEdges": 0,
+    "overConnectedEdges": 0
+  },
+  "beforeQuadriflow": {
+    "vertices": 62427,
+    "edges": 124695,
+    "polygons": 62269,
+    "triangles": 124538,
+    "quads": 62269,
+    "quadRatio": 1.0,
+    "ngons": 0
+  },
+  "afterQuadriflow": {
+    "vertices": 62427,
+    "edges": 124695,
+    "polygons": 62269,
+    "triangles": 124538,
+    "quads": 62269,
+    "quadRatio": 1.0,
+    "ngons": 0
+  },
+  "gates": {
+    "quadriflowChanged": false,
+    "targetRangePass": false,
+    "quadRatioPass": true,
+    "topologyGatePass": false
+  },
+  "derivedOnlyFromOwnedCC0Mainline": true,
+  "rigTransferred": false,
+  "shapeKeysCreated": false,
+  "websitePromotionApproved": false,
+  "status": "REJECTED_QUADRIFLOW_TOPOLOGY_GATE_FAIL",
+  "strictVisualFinding": "Largest-component cleanup proves the cut head is one connected shell with 314 boundary edges, but QuadriFlow still leaves topology unchanged."
+}

@@ -1,0 +1,13 @@
+{
+  "mainlineBase": "aevrynd-female-authoring-v249-mainline-layered-optical-stack-r420.blend",
+  "range": "r421-r436",
+  "reviewDirectory": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r421-r436-lid-retopology-research",
+  "authoritativeFaceCandidateUnchanged": "r420",
+  "skinDecision": "r426 rejected: no normal-distance gain",
+  "eyelidDecision": "r421-r425 rejected: applied 169k body topology cannot be converted into anatomical eyelid loops by coordinate displacement or smoothing",
+  "retopologyDecision": "r435 is retained as a 13,088-face all-quad topology scaffold; r427-r434 document the Blender input constraints and r436 proves unconstrained nearest-surface reprojection is unsafe",
+  "blenderSourceFinding": "Blender 5.2.1 mesh_is_manifold_consistent rejects edges whose endpoints compare within 1e-4 m; temporary geometry scaling avoids altering the source shape.",
+  "nextRequiredWork": "On the r435 scaffold, replace the eye, nostril, mouth and ear boundary regions with explicit anatomical loops, then shrinkwrap only stable surrounding zones and transfer weights after visual topology passes.",
+  "websitePromotionApproved": false,
+  "status": "RESEARCH_PACKAGED_MAINLINE_UNCHANGED"
+}

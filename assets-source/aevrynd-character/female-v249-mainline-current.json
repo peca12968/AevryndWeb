@@ -24,7 +24,7 @@
   "publicWebsiteAsset": "v83",
   "publicWebsiteReplacementApproved": false,
   "nextRequiredWork": [
-    "以 r420 為基底重建有厚度的上下眼瞼邊緣、上眼瞼覆蓋與不對稱眶周平面；針對角膜粗糙度與燈形重跑中性／電影燈光審查，再提高虹膜非對稱細節，並保持第 1／20 幀零穿模。",
+    "以 r435 的 13,088 面全四邊形頭部籠為拓撲腳手架，手動重建上下眼瞼、鼻孔、嘴角與耳輪的環狀拓撲；僅回貼穩定的額頭、臉頰、顱頂與頸部區域，保留 r420 十層眼球並重跑第 1／20 幀零穿模與中性亮度審查。",
     "以 r409 runtime 技術原型為基底，柔化左側分線根部密度邊界並重建交錯頂部 macro locks；為後側束群加入曲率與內外層，而不只改長度。保留獨立 part-root-density、零穿模和無變黑門檻，再完成瀏覽器 alpha 排序、記憶體與 FPS gate。",
     "從 r296 導引髮束重新烘焙分層髮卡，不再對全部 776 根導引做無語意平均；保留 scalp、primary cards、fill cards、hairline、flyaways 五層",
     "把 r296 的阻尼曲線轉成 Aevrynd 可自行運行的分段骨鏈或 Verlet/PBD 次級運動，驗證重力、慣性、阻尼、身體碰撞與網站效能",
@@ -40,8 +40,8 @@
   "latestFoundationTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-subtle-lid-wetline-r258.blend",
   "latestFoundationCandidateStatus": "r249-r251 establish the rigged CC0 body foundation. r252 replaces stretched Generated-coordinate skin noise with isotropic object-space tone and pore fields and adds separate cornea layers. r253 corrects distorted cylinder-cap iris UVs with explicit radial UVs and reduces oversized catchlights. r254 and r255 are strict visual rejects for comb-like and parallel-line brows. r256 rebuilds 406 short stochastic eyebrow fibers per side plus clustered upper/lower lashes. The r256 body deformation audit passes across 169,362 evaluated vertices and 338,720 edges; the face-layer audit passes at frames 1 and 20 with zero penetrating brow roots, valid head-bone binding and no material head-space drift. Strict overall face quality is about 55/100, so it remains a technical candidate.",
   "latestFoundationLicense": "CC0-1.0; Blender Studio and community contributors; source manifest blender-human-base-meshes-v141.source.json; no runtime Blender, MetaHuman, Unreal Engine, subscription or platform dependency.",
-  "latestFaceResearch": "r248 legacy displacement rejection; r249-r258 CC0 foundation; r300-r345 eye geometry and caruncle integration; r410-r420 orbital, lighting, aperture and layered-optics studies",
-  "latestFaceResearchStatus": "r420 is the current technical face node. Its ten new eye meshes have explicit layers, valid head binding and zero audited overlap. Strict visual score is 51/100 and the website gate remains closed.",
+  "latestFaceResearch": "r248 legacy displacement rejection; r249-r258 CC0 foundation; r300-r345 eye geometry and caruncle integration; r410-r420 orbital, lighting, aperture and layered optics; r421-r436 eyelid displacement and head retopology research",
+  "latestFaceResearchStatus": "r420 remains the current technical face node. r421-r425 prove the applied 169k body cannot gain anatomical eyelid loops through displacement or smoothing. r435 produces a 13,088-face all-quad owned head scaffold after clearing Blender's absolute short-edge check, but strict visual review fails at eye, nose, mouth and ear boundaries. r436 unconstrained reprojection is rejected. Website gate remains closed.",
   "latestHairDynamicTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-runtime-anchored-part-root-density-r409.blend",
   "latestHairDynamicAudit": "female-v249-mainline-r409.runtime-card-audit.json",
   "latestHairDynamicStatus": "TECHNICAL_PASS_VISUAL_FAIL_SCORE_60",
@@ -60,7 +60,11 @@
   "latestHairResearchStatus": "r383 remains the offline authoring node at strict score 60/100. r409 is the runtime technical prototype at score 60/100, 936 cards plus explicit density layers and 6.82 MB. Collision, motion and no-darkening contrast pass. Root-density transition, top macro-lock structure, rear curvature and browser gates remain unresolved.",
   "latestFaceDiagnostic": "female-v249-mainline-neutral-diagnostic-r415.study.json",
   "latestFaceDiagnosticStatus": "ACCEPTED_NEUTRAL_WHITE_THREE_AREA_LIGHT_RIG_AGX_BASE_CONTRAST",
-  "latestFaceRejectedExperiment": "r410 wrong socket surface; r411-r413 insufficient visual gain; r414 graphic integrated iris; r416 narrow-transition canthus seam; initial r420 unrecessed cornea/sclera collision",
-  "latestFaceRejectedReason": "The initial layered-optics build improved depth but failed collision. The corrected r420 retains the r418 sclera envelope and recesses the anterior optical group until all frame 1/20 checks reach zero.",
-  "latestFaceLightingStatus": "NO_PROGRESSIVE_SKIN_DARKENING_CONFIRMED; neutral white-light review isolates the perceived darkening to black-background, dark-hair and old sclera contrast. r420 raises sclera readability without changing the inherited skin material."
+  "latestFaceRejectedExperiment": "r410-r416 orbital and aperture rejects; r421-r425 applied-body eyelid displacement/smoothing rejects; r427-r434 failed QuadriFlow input repair; r436 unsafe unconstrained reprojection",
+  "latestFaceRejectedReason": "Applied high-density topology interleaves external and internal eyelid surfaces, so local coordinate edits create bands, ledges or no visible gain. R435 clears Blender's 0.1 mm absolute edge check and proves an owned all-quad scaffold is feasible, but automatic topology destroys anatomical facial boundaries; r436 nearest projection moves vertices to wrong surfaces.",
+  "latestFaceLightingStatus": "NO_PROGRESSIVE_SKIN_DARKENING_CONFIRMED; neutral white-light review isolates the perceived darkening to black-background, dark-hair and old sclera contrast. r420 raises sclera readability without changing the inherited skin material.",
+  "latestFaceRetopologyResearch": "female-v249-mainline-r421-r436-lid-retopology-research.json",
+  "latestFaceRetopologyResearchStatus": "R435_TOPOLOGY_PASS_VISUAL_FAIL_SCAFFOLD_ONLY_R436_REJECTED",
+  "latestSkinMaterialResearch": "female-v249-mainline-multiscale-skin-r426.study.json",
+  "latestSkinMaterialResearchStatus": "REJECTED_NO_NORMAL_DISTANCE_GAIN"
 }

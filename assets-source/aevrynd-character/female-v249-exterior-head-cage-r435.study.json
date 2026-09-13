@@ -1,0 +1,111 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-layered-optical-stack-r420.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-head-cage-scaffold-r435.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r435-scaled-quadriflow-head-cage-study",
+  "neckCutWorldZ": 1.405,
+  "targetFaces": 18000,
+  "voxelSizeMeters": 0.0015,
+  "topologyBeforeCleanup": {
+    "componentCount": 1,
+    "componentVertexCounts": [
+      62427
+    ],
+    "boundaryEdges": 314,
+    "wireEdges": 0,
+    "overConnectedEdges": 0
+  },
+  "topologyAfterCleanup": {
+    "componentCount": 1,
+    "componentVertexCounts": [
+      62427
+    ],
+    "boundaryEdges": 314,
+    "wireEdges": 0,
+    "overConnectedEdges": 0
+  },
+  "topologyAfterNeckCap": {
+    "componentCount": 1,
+    "componentVertexCounts": [
+      62427
+    ],
+    "boundaryEdges": 0,
+    "wireEdges": 0,
+    "overConnectedEdges": 0
+  },
+  "beforeQuadriflow": {
+    "vertices": 62427,
+    "edges": 125006,
+    "polygons": 62581,
+    "triangles": 124850,
+    "quads": 62269,
+    "quadRatio": 0.9950144612582094,
+    "ngons": 0
+  },
+  "afterVoxelRemesh": {
+    "vertices": 155816,
+    "edges": 311544,
+    "polygons": 155772,
+    "triangles": 311544,
+    "quads": 155772,
+    "quadRatio": 1.0,
+    "ngons": 0
+  },
+  "topologyAfterVoxelCleanup": {
+    "componentCount": 1,
+    "componentVertexCounts": [
+      155632
+    ],
+    "boundaryEdges": 0,
+    "wireEdges": 0,
+    "overConnectedEdges": 0
+  },
+  "afterVoxelCleanup": {
+    "vertices": 155632,
+    "edges": 311264,
+    "polygons": 155632,
+    "triangles": 311264,
+    "quads": 155632,
+    "quadRatio": 1.0,
+    "ngons": 0
+  },
+  "geometryOnlyRebuildBeforeQuadriflow": {
+    "vertices": 155632,
+    "faces": 155632,
+    "attributeNames": [
+      ".select_vert",
+      "position",
+      ".corner_vert",
+      ".corner_edge",
+      ".select_poly",
+      "sharp_face",
+      ".edge_verts",
+      ".select_edge"
+    ]
+  },
+  "quadriflowTemporaryGeometryScale": {
+    "factor": 100.0,
+    "minimumEdgeBeforeMeters": 6.187752041576616e-06,
+    "minimumEdgeAfterScaledUnits": 0.0006187518412694973
+  },
+  "afterQuadriflow": {
+    "vertices": 13090,
+    "edges": 26176,
+    "polygons": 13088,
+    "triangles": 26176,
+    "quads": 13088,
+    "quadRatio": 1.0,
+    "ngons": 0
+  },
+  "gates": {
+    "quadriflowChanged": true,
+    "targetRangePass": true,
+    "quadRatioPass": true,
+    "topologyGatePass": true
+  },
+  "derivedOnlyFromOwnedCC0Mainline": true,
+  "rigTransferred": false,
+  "shapeKeysCreated": false,
+  "websitePromotionApproved": false,
+  "status": "TOPOLOGY_GATE_PASS_VISUAL_FAIL_SCAFFOLD_ONLY",
+  "strictVisualFinding": "Temporary 100x geometry scaling clears Blender's absolute 0.1 mm edge check and produces 13,088 all-quad faces. Eye corners, nostrils, mouth corners and ear rims remain torn or collapsed, so this is a topology scaffold only."
+}
