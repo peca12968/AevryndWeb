@@ -1,0 +1,52 @@
+{
+  "range": "r446-r449",
+  "faceBaseline": "aevrynd-female-authoring-v249-mainline-open-topology-physical-skin-r446.blend",
+  "hairSource": "aevrynd-female-authoring-v249-mainline-runtime-anchored-part-root-density-r409.blend",
+  "reviewDirectory": "assets-source/aevrynd-character/reviews/v249r446-r449-open-topology-hair-integration",
+  "r446CollisionAudit": {
+    "file": "female-v249-mainline-open-topology-physical-skin-r446.collision-audit.json",
+    "frames": [1, 20],
+    "regressions": 0,
+    "status": "PASS"
+  },
+  "r447": {
+    "decision": "REJECTED_UNALIGNED_TRANSPLANT",
+    "reason": "The r409 hair system was authored around a head-space origin approximately 25.521 mm behind the r446 open-topology head. Crown and rear cards penetrated the body by up to 24.586 mm."
+  },
+  "r448": {
+    "alignmentWorldM": [0.0, 0.025521, 0.0],
+    "decision": "PARTIAL_TECHNICAL_PASS_DYNAMIC_COLLISION_FAIL",
+    "reason": "The world-space alignment clears every runtime hair layer at frame 1, but 100 complete cards contact the body across frames 20, 33 and 61."
+  },
+  "r449": {
+    "model": "aevrynd-female-authoring-v249-mainline-pruned-aligned-runtime-hair-r449-study.blend",
+    "audit": "female-v249-mainline-r449.runtime-card-audit.json",
+    "sourceCards": 936,
+    "removedWholeCards": 100,
+    "retainedCards": 836,
+    "frames": [1, 20, 33, 61],
+    "penetratingVertices": 0,
+    "collisionTargets": [
+      "AevryndFemaleBodyBaseV118",
+      "Clothing_Bandeau_v160",
+      "Clothing_BandeauBinding_v162",
+      "Clothing_BodyFitShorts_v135"
+    ],
+    "motionP95M": 0.0020938581420053832,
+    "motionMaximumM": 0.006082475110338706,
+    "rootMaximumDriftM": 1.666000468656264e-8,
+    "settleMaximumM": 3.0719530773294423e-8,
+    "strictHairScore100": 47,
+    "decision": "TECHNICAL_PASS_VISUAL_FAIL_REFERENCE_ONLY",
+    "visualFailures": [
+      "The center part remains a wide flat density strip.",
+      "The top silhouette reads as parallel sheets instead of interleaved macro locks.",
+      "Pruning 86 of 300 crown cards creates uneven crown density.",
+      "The rear remains a dark curtain with weak clump separation and end structure."
+    ]
+  },
+  "finding": "The historical r409 runtime system is structurally portable because the 21 base-bone rest skeleton is byte-equivalent to r446. Its head-space assets require a +25.521 mm world-Y alignment. Geometry can pass collision by whole-card pruning, but this loses too much crown structure to meet the visual gate.",
+  "nextRequiredWork": "Rebuild front, crown and rear macro-lock cards directly from the r446 scalp surface and open-topology head space. Preserve the seven explicit runtime layers and 15 secondary-motion bones, but resample roots and card paths instead of transplanting r409 geometry.",
+  "websitePromotionApproved": false,
+  "status": "R446_FACE_BASELINE_COLLISION_PASS_R449_HAIR_VISUAL_FAIL"
+}

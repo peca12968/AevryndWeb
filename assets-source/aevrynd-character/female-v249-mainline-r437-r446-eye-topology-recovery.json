@@ -14,7 +14,7 @@
     "r443": "Rejected. Combining the r78 open body with r420 optics produces eye-layer collisions.",
     "r444": "Rejected as a candidate. World-space optical alignment restores a natural almond aperture but does not clear all eye collisions.",
     "r445": "Controlled comparison selects the r210 open-eye body topology over the r420 closed-eye body.",
-    "r446": "Retained research baseline. It preserves the r210 geometry byte-for-byte at the evaluated mesh hash level and transfers only the r420 physical skin material. Full collision revalidation remains required."
+    "r446": "Retained research baseline. It preserves the r210 geometry byte-for-byte at the evaluated mesh hash level and transfers only the r420 physical skin material. The subsequent frame 1/20 full-layer audit reports zero regressions."
   },
   "colorManagement": {
     "viewTransform": "Standard",
@@ -25,6 +25,7 @@
   "strictFaceScore100": 50,
   "websiteAsset": "v83",
   "websitePromotionApproved": false,
+  "collisionAudit": "female-v249-mainline-open-topology-physical-skin-r446.collision-audit.json",
   "nextRequiredWork": "Use r446 as the open-topology base, improve broad nose and midface planes without editing the eye aperture, then revalidate frame 1/20 eye, face, hair and clothing collisions before any promotion.",
-  "status": "OPEN_TOPOLOGY_BASELINE_RECOVERED_NOT_RELEASE_READY"
+  "status": "OPEN_TOPOLOGY_BASELINE_COLLISION_PASS_VISUAL_FAIL"
 }

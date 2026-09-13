@@ -909,6 +909,16 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - r446 只把 r420 的 `Aevrynd_Skin_Physical_R252` 材質移植至 r210 人體；移植前後 evaluated geometry SHA-256 都是 `a35445b64140f1feae65f6cf500d94e8031263cb3d64edd4f33726155658bf7c`。自然眼裂保留且避免 r210 在中性白光下過亮，但鼻部／中臉體積、眉毛、髮際與 groom 仍未達標，嚴格臉部分數 50／100。
 - r438–r446 研究圖統一回 `Standard`、`Look None`、Exposure 0。先前部分研究稿使用 AgX 導致膚色看起來更暗、更紅；這是顯示轉換差異，並非逐版把皮膚材質染黑。
 - r446 只升為下一輪開放眼眶研究基底，尚未完成 frame 1／20 全碰撞重驗，也不替換網站 v83。下一輪先改善鼻與中臉的大平面，保護眼眶開口，再重跑眼層、臉部、毛髮和服裝碰撞。
+
+## v249 開放眼眶基底碰撞重驗與 runtime 髮卡移植 r446–r449
+
+- r446 使用 r210 幾何、骨架、眼部與口腔層，只移植 r420 實體膚質。獨立 frame 1／20 全層稽核與 r210 比較，眼球／淚膜／睫毛、嘴部互撞、臉部自交、舊長髮對人體和三件服裝均零 regression，正式解除「碰撞待驗」狀態；嚴格臉部分數仍為 50／100。
+- r446 與 r409 的 21 根基礎骨骼 rest head／tail／matrix 雜湊同為 `7cab55c72d6349144eea37e3ea09fc372ee7b11fe02c270d5ed5a1a9ed309f9c`，證明 15 根 `hair_dyn.*` 次級骨鏈與七個 runtime 毛髮分層可移植，不需要重綁人體。
+- r447 直接移植 r409 的 936 張髮卡時，冠部與後側分別有 3,614／10,178 個頂點進入 r446 人體，最深 24.586mm，判退。這不是骨架差異，而是兩條主線的頭部世界 Y 基準不同。
+- r448 套用先前眼球對齊所得的 +25.521mm 世界 Y 位移後，frame 1 的四組髮卡、scalp、hairline density 與 part-root density 全部零穿入；frame 20／33／61 仍有 100 張完整髮卡接觸人體，故不升格。
+- r449 不逐點扭曲髮片，而是刪除四幀任一頂點深入超過 0.5mm 的完整髮卡：936 張保留 836 張，前層 297／300、冠部 214／300、後層 309／320、髮際 16／16。frame 1／20／33／61 對人體、上衣、包邊與短褲均零穿模；動態 P95 2.094mm、最大 6.082mm、根部最大漂移 0.0000167mm、回穩誤差 0.0000307mm，技術關卡 PASS。
+- r449 嚴格毛髮外觀只有約 47／100：中分仍是寬平色帶，頂部為平行片而非交錯大束，刪除 86 張冠部卡後密度不均，後方仍像深色布簾。它只保留為開放頭模的座標、骨架、碰撞適配證據；不取代 r409 的 60／100 毛髮技術候選，也不進網站。
+- 下一輪保留 r409 的七層架構與 15 根次級骨鏈，直接在 r446 頭皮表面重新取樣 front／crown／rear macro-lock 路徑；不再移植或裁剪以封閉頭模為基準的既有卡片。
 ### v249 mainline mouth studies r220-r223
 
 - r220 isolates the authored render state and confirms that the legacy `Lip_Upper`, `Lip_Lower`, and `Mouth_WetLine` shells were already hidden. The visible mouth is part of the continuous 41,692-vertex body.

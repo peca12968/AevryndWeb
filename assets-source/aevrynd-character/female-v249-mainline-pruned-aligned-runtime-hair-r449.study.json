@@ -1,0 +1,127 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-open-topology-runtime-hair-r448-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-pruned-aligned-runtime-hair-r449-study.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r449-pruned-aligned-runtime-hair",
+  "frames": [
+    1,
+    20,
+    33,
+    61
+  ],
+  "penetrationLimitM": -0.0005,
+  "prePruneCollision": {
+    "1": {
+      "AevryndFemaleRuntimeCards_front_R409": {
+        "penetratingVertices": 0,
+        "affectedCards": 0
+      },
+      "AevryndFemaleRuntimeCards_crown_R409": {
+        "penetratingVertices": 0,
+        "affectedCards": 0
+      },
+      "AevryndFemaleRuntimeCards_rear_R409": {
+        "penetratingVertices": 0,
+        "affectedCards": 0
+      },
+      "AevryndFemaleRuntimeCards_hairline_R409": {
+        "penetratingVertices": 0,
+        "affectedCards": 0
+      }
+    },
+    "20": {
+      "AevryndFemaleRuntimeCards_front_R409": {
+        "penetratingVertices": 6,
+        "affectedCards": 3
+      },
+      "AevryndFemaleRuntimeCards_crown_R409": {
+        "penetratingVertices": 324,
+        "affectedCards": 85
+      },
+      "AevryndFemaleRuntimeCards_rear_R409": {
+        "penetratingVertices": 14,
+        "affectedCards": 8
+      },
+      "AevryndFemaleRuntimeCards_hairline_R409": {
+        "penetratingVertices": 0,
+        "affectedCards": 0
+      }
+    },
+    "33": {
+      "AevryndFemaleRuntimeCards_front_R409": {
+        "penetratingVertices": 6,
+        "affectedCards": 3
+      },
+      "AevryndFemaleRuntimeCards_crown_R409": {
+        "penetratingVertices": 318,
+        "affectedCards": 82
+      },
+      "AevryndFemaleRuntimeCards_rear_R409": {
+        "penetratingVertices": 11,
+        "affectedCards": 7
+      },
+      "AevryndFemaleRuntimeCards_hairline_R409": {
+        "penetratingVertices": 0,
+        "affectedCards": 0
+      }
+    },
+    "61": {
+      "AevryndFemaleRuntimeCards_front_R409": {
+        "penetratingVertices": 6,
+        "affectedCards": 3
+      },
+      "AevryndFemaleRuntimeCards_crown_R409": {
+        "penetratingVertices": 324,
+        "affectedCards": 85
+      },
+      "AevryndFemaleRuntimeCards_rear_R409": {
+        "penetratingVertices": 14,
+        "affectedCards": 8
+      },
+      "AevryndFemaleRuntimeCards_hairline_R409": {
+        "penetratingVertices": 0,
+        "affectedCards": 0
+      }
+    }
+  },
+  "pruning": {
+    "AevryndFemaleRuntimeCards_front_R409": {
+      "sourceCards": 300,
+      "removedCards": 3,
+      "retainedCards": 297,
+      "retainedPercent": 99.0,
+      "vertices": 14256,
+      "faces": 6831
+    },
+    "AevryndFemaleRuntimeCards_crown_R409": {
+      "sourceCards": 300,
+      "removedCards": 86,
+      "retainedCards": 214,
+      "retainedPercent": 71.33333333333333,
+      "vertices": 10272,
+      "faces": 4922
+    },
+    "AevryndFemaleRuntimeCards_rear_R409": {
+      "sourceCards": 320,
+      "removedCards": 11,
+      "retainedCards": 309,
+      "retainedPercent": 96.5625,
+      "vertices": 14832,
+      "faces": 7107
+    },
+    "AevryndFemaleRuntimeCards_hairline_R409": {
+      "sourceCards": 16,
+      "removedCards": 0,
+      "retainedCards": 16,
+      "retainedPercent": 100.0,
+      "vertices": 768,
+      "faces": 368
+    }
+  },
+  "totalSourceCards": 936,
+  "totalRemovedCards": 100,
+  "totalRetainedCards": 836,
+  "method": "Remove each complete 48-vertex card if any evaluated vertex penetrates the r446 body at frame 1, 20, 33 or 61; do not distort surviving card surfaces.",
+  "ownedAssetOnly": true,
+  "websitePromotionApproved": false,
+  "status": "COLLISION_REVALIDATION_AND_VISUAL_REVIEW_REQUIRED"
+}
