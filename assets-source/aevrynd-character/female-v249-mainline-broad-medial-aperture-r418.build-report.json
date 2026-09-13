@@ -1,0 +1,119 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-broad-medial-aperture-r418.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r418-broad-medial-aperture",
+  "anchoredOuterScale": 1.13,
+  "eyeCenterMedialShiftM": 0.001332499999999999,
+  "nominalInnerCanthusExtensionM": 0.002664999999999998,
+  "eyeLayerRecessM": 0.0008,
+  "bodyEdit": {
+    "movedVertices": {
+      "L": 6678,
+      "R": 6677
+    },
+    "maximumDisplacementM": 0.002675354442897081
+  },
+  "layerEdit": {
+    "AevryndEye_L_Sclera_R249": {
+      "centerShiftM": 0.001332499999999999,
+      "recessM": 0.0008
+    },
+    "AevryndEye_L_Caruncle_R258": {
+      "elementsMoved": 482,
+      "maximumDisplacementM": 0.003173249228360305,
+      "recessM": 0.0008
+    },
+    "AevryndEye_L_UpperLidMargin_R258": {
+      "elementsMoved": 41,
+      "maximumDisplacementM": 0.002673199558649588,
+      "recessM": 0.0008
+    },
+    "AevryndEye_L_LowerLidMargin_R258": {
+      "elementsMoved": 41,
+      "maximumDisplacementM": 0.002673199558649588,
+      "recessM": 0.0008
+    },
+    "AevryndEye_L_TearMeniscus_R258": {
+      "elementsMoved": 31,
+      "maximumDisplacementM": 0.00243280823905615,
+      "recessM": 0.0008
+    },
+    "AevryndFemaleUpperLashes_L_R256": {
+      "elementsMoved": 114,
+      "maximumDisplacementM": 0.00269578386067938,
+      "recessM": 0.0008
+    },
+    "AevryndFemaleLowerLashes_L_R256": {
+      "elementsMoved": 33,
+      "maximumDisplacementM": 0.00269578386067938,
+      "recessM": 0.0008
+    },
+    "AevryndEye_R_Sclera_R249": {
+      "centerShiftM": 0.001332499999999999,
+      "recessM": 0.0008
+    },
+    "AevryndEye_R_Caruncle_R258": {
+      "elementsMoved": 482,
+      "maximumDisplacementM": 0.0031596299567719544,
+      "recessM": 0.0008
+    },
+    "AevryndEye_R_UpperLidMargin_R258": {
+      "elementsMoved": 41,
+      "maximumDisplacementM": 0.0026597719479346834,
+      "recessM": 0.0008
+    },
+    "AevryndEye_R_LowerLidMargin_R258": {
+      "elementsMoved": 41,
+      "maximumDisplacementM": 0.0026597719479346834,
+      "recessM": 0.0008
+    },
+    "AevryndEye_R_TearMeniscus_R258": {
+      "elementsMoved": 31,
+      "maximumDisplacementM": 0.0024195194921002787,
+      "recessM": 0.0008
+    },
+    "AevryndFemaleUpperLashes_R_R256": {
+      "elementsMoved": 114,
+      "maximumDisplacementM": 0.0026659421061498443,
+      "recessM": 0.0008
+    },
+    "AevryndFemaleLowerLashes_R_R256": {
+      "elementsMoved": 33,
+      "maximumDisplacementM": 0.0026432761653144825,
+      "recessM": 0.0008
+    }
+  },
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-broad-medial-aperture-r418.collision-audit.json",
+  "collisionStatus": "PASS",
+  "ownedAssetOnly": true,
+  "status": "TECHNICAL_PASS_VISUAL_FAIL",
+  "websitePromotionApproved": false,
+  "strictBenchmark": "current-generation hero character at normal gameplay distance and face-close framing",
+  "strictScores": {
+    "face": 47,
+    "hair": 34,
+    "overallCharacter": 42
+  },
+  "technicalGains": [
+    "The outer canthus remains fixed while the visible aperture extends 2.665mm toward the nose.",
+    "Each complete eye stack shifts 1.333mm toward the facial midline and 0.800mm deeper.",
+    "The body deformation blends across the medial orbital wall and nasal bridge instead of leaving the r416 vertical seam.",
+    "Body-eye, body-caruncle and eye-caruncle triangle overlaps are zero on both sides at frames 1 and 20.",
+    "All 16 face layers retain valid head-bone binding; the 169,362-vertex body rig and inherited dynamic groom audits pass."
+  ],
+  "visualGains": [
+    "Eye width and intercanthal spacing read closer to adult facial proportions in front and three-quarter views.",
+    "The widened medial aperture removes some of the small, widely separated doll-eye appearance without creating cross-eyed gaze."
+  ],
+  "visualFailures": [
+    "Upper and lower lids remain shallow and the upper crease still reads as a smooth inflated arc.",
+    "The iris shader and catchlights remain graphic, and the eye lacks a separately modeled corneal bulge and iris depth.",
+    "Nasal alar planes, philtrum, vermilion volume, cheek asymmetry and regional skin detail remain below the hero-character gate.",
+    "The inherited offline groom remains far below the hair target and is not the r409 runtime hair prototype."
+  ],
+  "faceLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-broad-medial-aperture-r418.face-layer-audit.json",
+  "bodyRigAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-broad-medial-aperture-r418.body-rig-audit.json",
+  "hairLayerAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-broad-medial-aperture-r418.hair-layer-audit.json",
+  "hairMotionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-broad-medial-aperture-r418.hair-motion-audit.json",
+  "reviewDirectory": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r418-broad-medial-aperture"
+}

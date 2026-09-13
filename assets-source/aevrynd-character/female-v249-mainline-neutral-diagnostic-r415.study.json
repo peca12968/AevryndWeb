@@ -1,0 +1,66 @@
+{
+  "purpose": "Separate facial-form review from the warm/cool cinematic rig and black-background hair contrast.",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r415-neutral-diagnostic",
+  "sources": {
+    "r345": {
+      "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+      "bodyMaterialSlots": [
+        "Aevrynd_Skin_Physical_R252"
+      ],
+      "hiddenHairObjects": [
+        "AevryndFemaleFlyaways_R264",
+        "AevryndFemaleHairlineTransitionCards_R285",
+        "AevryndFemalePrimaryClumps_R264",
+        "AevryndFemaleRuntimeHairCards_R271",
+        "AevryndFemaleRuntimeHairCards_R276",
+        "AevryndFemaleScalpUnderlayer_R280",
+        "AevryndFemaleSecondaryFill_R264"
+      ],
+      "geometryChanged": false,
+      "materialsChangedInSource": false
+    },
+    "r413": {
+      "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-recessed-orbital-folds-r413.blend",
+      "bodyMaterialSlots": [
+        "Aevrynd_Skin_Physical_R252"
+      ],
+      "hiddenHairObjects": [
+        "AevryndFemaleFlyaways_R264",
+        "AevryndFemaleHairlineTransitionCards_R285",
+        "AevryndFemalePrimaryClumps_R264",
+        "AevryndFemaleRuntimeHairCards_R271",
+        "AevryndFemaleRuntimeHairCards_R276",
+        "AevryndFemaleScalpUnderlayer_R280",
+        "AevryndFemaleSecondaryFill_R264"
+      ],
+      "geometryChanged": false,
+      "materialsChangedInSource": false
+    }
+  },
+  "fixedConditions": {
+    "lightColor": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "lightEnergyW": {
+      "key": 39.0,
+      "fill": 24.0,
+      "top": 22.0
+    },
+    "worldColorLinear": [
+      0.018,
+      0.018,
+      0.018
+    ],
+    "worldStrength": 0.35,
+    "viewTransform": "AgX",
+    "look": "AgX - Base Contrast",
+    "exposureEV": 0.0,
+    "largeHairHidden": true,
+    "clayBodyOnly": true
+  },
+  "status": "ACCEPTED_DIAGNOSTIC_RIG",
+  "finding": "Neutral white area lights, AgX Base Contrast, and hidden large-hair layers expose facial form without the warm/cool split-light bias. The baseline confirms excessive intercanthal spacing, weak lid volume, flat orbital planes, and shallow mouth/nasal landmarks.",
+  "modelPromotionApproved": false
+}
