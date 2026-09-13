@@ -1,0 +1,31 @@
+{
+  "candidate": "aevrynd-female-authoring-v249-mainline-smoothed-lip-margin-r481.blend",
+  "baseline": "aevrynd-female-authoring-v249-mainline-runtime-brows-r480.blend",
+  "reviewDirectory": "reviews/v249r481-smoothed-lip-margin",
+  "selectedSweepStrength": 1.0,
+  "selectionRationale": "The 1.0 sweep removes most of the irregular central inner-margin scallops while preserving the cupid peaks. Strength 0.65 leaves visible noise; 1.35 adds displacement without a meaningful visual gain.",
+  "scores": {
+    "frontInnerMarginContinuity": 62,
+    "commissureAnatomy": 38,
+    "obliqueSurfaceIntegration": 31,
+    "vermilionMaterialRead": 39,
+    "overallMouth": 43
+  },
+  "technicalGates": {
+    "frame1And20FaceCollisionRegression": "PASS",
+    "frame1_20_33_61RuntimeHairBodyCollision": "PASS",
+    "toneContract": "PASS",
+    "changedGeometry": "Lip_Upper rows 3 and 4 only",
+    "materialsChanged": false
+  },
+  "criticalFailures": [
+    "The detached upper-vermilion shell still reads as a raised shelf in the oblique close-up.",
+    "Both commissures remain visibly needle-shaped and fail to blend into the orbicularis region.",
+    "The upper-vermilion response is too pale and uniform to read as living lip tissue.",
+    "A surface-conforming bridge prototype still exposed a separate transition layer and was rejected."
+  ],
+  "promotionDecision": "REJECTED_NOT_MAINLINE",
+  "retainedMainline": "v249r480-runtime-brows",
+  "nextRequiredMethod": "Replace the detached upper-lip boundary with continuous perioral edge-ring topology and preserved rig weights; validate the untextured silhouette before regional material work.",
+  "status": "FAIL"
+}
