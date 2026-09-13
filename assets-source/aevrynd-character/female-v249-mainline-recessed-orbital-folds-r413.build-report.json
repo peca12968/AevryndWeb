@@ -1,0 +1,39 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-recessed-orbital-folds-r413.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r413-recessed-orbital-folds",
+  "outerHalfWidthM": 0.0098,
+  "nominalFullWidthM": 0.0196,
+  "eyeLayerRecessM": 0.001,
+  "orbitalFoldStrength": 1.1,
+  "outerCanthusEdit": {
+    "movedVertices": {
+      "L": 326,
+      "R": 326
+    },
+    "maximumDisplacementM": 0.0005030781169687096
+  },
+  "orbitalFoldEdit": {
+    "movedVertices": {
+      "L": 1424,
+      "R": 1430
+    },
+    "maximumDisplacementM": 0.0007010176847127866,
+    "maximumComponentM": {
+      "upperRoll": 0.0006379997133683321,
+      "upperCrease": 0.0005279921606220036,
+      "lowerRoll": 0.0005059943861786196,
+      "tearTrough": 0.00039360626546070676
+    }
+  },
+  "movedAttachedCurvePoints": 219,
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-recessed-orbital-folds-r413.collision-audit.json",
+  "collisionStatus": "PASS",
+  "ownedAssetOnly": true,
+  "visualReview": {
+    "finding": "The combined canthus and orbital edits preserve zero-overlap geometry but remain nearly indistinguishable from r345 in the fixed review renders.",
+    "decision": "REJECT_NO_MEANINGFUL_VISUAL_GAIN"
+  },
+  "status": "TECHNICAL_PASS_VISUAL_REJECT",
+  "websitePromotionApproved": false
+}

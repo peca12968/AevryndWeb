@@ -1,0 +1,65 @@
+{
+  "purpose": "Determine whether the female character has become progressively darker under fixed review conditions.",
+  "method": {
+    "metric": "Rec.709 luminance measured from Blender linear image pixels",
+    "normalizedRegions": {
+      "whole": [0, 0, 1000, 1000],
+      "forehead": [300, 160, 700, 360],
+      "leftCheek": [180, 500, 390, 760],
+      "rightCheek": [610, 500, 820, 760],
+      "midface": [300, 360, 700, 760]
+    }
+  },
+  "fixedFaceReview": {
+    "r345": {
+      "whole": 0.210809,
+      "forehead": 0.455,
+      "leftCheek": 0.447248,
+      "rightCheek": 0.437616,
+      "midface": 0.46679
+    },
+    "r413": {
+      "whole": 0.210677,
+      "forehead": 0.455,
+      "leftCheek": 0.447283,
+      "rightCheek": 0.437495,
+      "midface": 0.466162
+    },
+    "percentChangeR345ToR413": {
+      "whole": -0.062616,
+      "forehead": 0.0,
+      "leftCheek": 0.007825,
+      "rightCheek": -0.02765,
+      "midface": -0.134535
+    }
+  },
+  "groomReview": {
+    "r371": {
+      "whole": 0.257472,
+      "forehead": 0.512043,
+      "leftCheek": 0.440283,
+      "rightCheek": 0.442902,
+      "midface": 0.58425
+    },
+    "r409": {
+      "whole": 0.259668,
+      "forehead": 0.544299,
+      "leftCheek": 0.443064,
+      "rightCheek": 0.450167,
+      "midface": 0.584263
+    },
+    "percentChangeR371ToR409": {
+      "whole": 0.852904,
+      "forehead": 6.299471,
+      "leftCheek": 0.63164,
+      "rightCheek": 1.640845,
+      "midface": 0.002225
+    }
+  },
+  "conclusion": {
+    "progressiveDarkeningDetected": false,
+    "perceptualCause": "The darker impression comes from increased dark-hair coverage, the black review background, and a cool high-contrast shadow on the character's right side.",
+    "action": "Keep skin material unchanged. Evaluate future face work under an additional neutral low-contrast diagnostic light rig while preserving the cinematic review rig as a separate check."
+  },
+  "status": "PASS_NO_PROGRESSIVE_DARKENING"
+}

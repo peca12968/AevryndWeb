@@ -1,0 +1,75 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r412-recessed-canthus-sweep",
+  "variants": {
+    "a-20p0mm": {
+      "outerHalfWidthM": 0.01,
+      "nominalFullWidthM": 0.02,
+      "layerRecessM": 0.0008,
+      "movedVertices": {
+        "L": 326,
+        "R": 326
+      },
+      "maximumDisplacementM": 0.00027948991017852446,
+      "movedAttachedCurvePoints": 219,
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        }
+      }
+    },
+    "b-19p6mm": {
+      "outerHalfWidthM": 0.0098,
+      "nominalFullWidthM": 0.0196,
+      "layerRecessM": 0.001,
+      "movedVertices": {
+        "L": 326,
+        "R": 326
+      },
+      "maximumDisplacementM": 0.0005030781169687096,
+      "movedAttachedCurvePoints": 219,
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        }
+      }
+    },
+    "c-19p2mm": {
+      "outerHalfWidthM": 0.0096,
+      "nominalFullWidthM": 0.0192,
+      "layerRecessM": 0.0012,
+      "movedVertices": {
+        "L": 326,
+        "R": 326
+      },
+      "maximumDisplacementM": 0.0007266700261680457,
+      "movedAttachedCurvePoints": 219,
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsIntegratedEye": 20,
+          "bodyVsCaruncle": 0
+        }
+      }
+    }
+  },
+  "method": "Recess the complete head-bound eye layer stack, then continuously move both X and Z for outer-canthus skin and attached curves toward a narrower lateral ellipse.",
+  "visualReview": {
+    "finding": "The 19.6 mm variant is the strongest collision-safe canthus adjustment. The 19.2 mm variant introduces 20 right-eye body overlaps. The safe change remains too subtle for standalone promotion.",
+    "decision": "SELECT_B_AS_TECHNICAL_INPUT_ONLY"
+  },
+  "status": "TECHNICAL_INPUT_SELECTED_NO_MAINLINE_PROMOTION"
+}

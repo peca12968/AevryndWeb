@@ -1,0 +1,96 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r410-orbital-fold-sweep",
+  "variants": {
+    "a-subtle": {
+      "strength": 0.68,
+      "movedVertices": {
+        "L": 970,
+        "R": 966
+      },
+      "maximumDisplacement": {
+        "outwardM": 0.00039430728531953367,
+        "inwardM": 0.0,
+        "totalM": 0.00039430708418124817
+      },
+      "maximumComponentM": {
+        "upperRoll": 0.00039439987602707545,
+        "upperCrease": 1.6110225551601688e-05,
+        "lowerRoll": 0.00030931006919693776,
+        "tearTrough": 1.788962928011027e-06
+      },
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        }
+      }
+    },
+    "b-balanced": {
+      "strength": 1.0,
+      "movedVertices": {
+        "L": 970,
+        "R": 966
+      },
+      "maximumDisplacement": {
+        "outwardM": 0.0005798636548816671,
+        "inwardM": 0.0,
+        "totalM": 0.0005798637859315368
+      },
+      "maximumComponentM": {
+        "upperRoll": 0.0005799998176868757,
+        "upperCrease": 2.3691508164120125e-05,
+        "lowerRoll": 0.00045486774881902607,
+        "tearTrough": 2.6308278353103335e-06
+      },
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        }
+      }
+    },
+    "c-strong": {
+      "strength": 1.32,
+      "movedVertices": {
+        "L": 970,
+        "R": 966
+      },
+      "maximumDisplacement": {
+        "outwardM": 0.0007654200244438006,
+        "inwardM": 0.0,
+        "totalM": 0.0007654204856940013
+      },
+      "maximumComponentM": {
+        "upperRoll": 0.0007655997593466759,
+        "upperCrease": 3.127279077663857e-05,
+        "lowerRoll": 0.0006004254284411144,
+        "tearTrough": 3.4726927426096405e-06
+      },
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        }
+      }
+    }
+  },
+  "method": "Continuous body-surface upper-lid roll, upper crease, lower-lid roll and medial tear-trough displacement fields; no separate eyelid overlay geometry.",
+  "visualReview": {
+    "finding": "The initial surface filter primarily selected the inner eye-socket surface. Visible crease and tear-trough motion stayed too small to improve the rendered anatomy.",
+    "decision": "REJECT_ALL"
+  },
+  "status": "REJECTED_WRONG_VISIBLE_SURFACE"
+}

@@ -1,0 +1,96 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-canthus-fitted-wedge-r345.blend",
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r411-orbital-fold-sweep",
+  "variants": {
+    "a-subtle": {
+      "strength": 0.5,
+      "movedVertices": {
+        "L": 1406,
+        "R": 1415
+      },
+      "maximumDisplacement": {
+        "outwardM": 0.0003186315980298862,
+        "inwardM": 0.00023612505941583025,
+        "totalM": 0.00031863153503456585
+      },
+      "maximumComponentM": {
+        "upperRoll": 0.0002899998697128782,
+        "upperCrease": 0.00023999643664636522,
+        "lowerRoll": 0.00022999744826300892,
+        "tearTrough": 0.00017891193884577578
+      },
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        }
+      }
+    },
+    "b-balanced": {
+      "strength": 0.8,
+      "movedVertices": {
+        "L": 1416,
+        "R": 1428
+      },
+      "maximumDisplacement": {
+        "outwardM": 0.0005098105568478179,
+        "inwardM": 0.00037780009506532846,
+        "totalM": 0.0005098134364181576
+      },
+      "maximumComponentM": {
+        "upperRoll": 0.00046399979154060513,
+        "upperCrease": 0.00038399429863418435,
+        "lowerRoll": 0.0003679959172208143,
+        "tearTrough": 0.00028625910215324124
+      },
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        }
+      }
+    },
+    "c-strong": {
+      "strength": 1.1,
+      "movedVertices": {
+        "L": 1424,
+        "R": 1430
+      },
+      "maximumDisplacement": {
+        "outwardM": 0.0007009895156657497,
+        "inwardM": 0.0005194751307148267,
+        "totalM": 0.0007009878846080104
+      },
+      "maximumComponentM": {
+        "upperRoll": 0.0006379997133683321,
+        "upperCrease": 0.0005279921606220036,
+        "lowerRoll": 0.0005059943861786196,
+        "tearTrough": 0.00039360626546070676
+      },
+      "triangleOverlaps": {
+        "L": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        },
+        "R": {
+          "bodyVsIntegratedEye": 0,
+          "bodyVsCaruncle": 0
+        }
+      }
+    }
+  },
+  "method": "Continuous body-surface upper-lid roll, upper crease, lower-lid roll and medial tear-trough displacement fields; no separate eyelid overlay geometry.",
+  "visualReview": {
+    "finding": "The corrected visible-surface filter moves the intended orbital tissue and passes collision checks, but the rendered anatomical improvement is too subtle for standalone promotion.",
+    "decision": "REJECT_STANDALONE_USE_STRONG_AS_TECHNICAL_INPUT"
+  },
+  "status": "REJECTED_NO_MEANINGFUL_STANDALONE_GAIN"
+}
