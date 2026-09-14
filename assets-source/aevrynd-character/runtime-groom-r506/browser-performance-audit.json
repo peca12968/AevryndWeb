@@ -1,0 +1,43 @@
+{
+  "environment": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+  "method": "One shared WebGL renderer; r499 and r506 are alternated for five runs; every run renders 300 frames at 900 by 900 pixels and blocks on gl.finish().",
+  "viewport": [900, 900],
+  "framesPerRun": 300,
+  "alternatingRunCount": 5,
+  "baseline": {
+    "revision": "r499",
+    "bytes": 8266748,
+    "parseMsMedian": 8.599999994039536,
+    "renderMsMedian": 0.1073333332935969,
+    "parseSamplesMs": [11.300000011920929, 9.0, 7.800000011920929, 8.5, 8.599999994039536],
+    "renderSamplesMs": [0.1126666667064031, 0.12266666660706202, 0.10333333333333333, 0.1073333332935969, 0.10199999998013179],
+    "drawCalls": 14,
+    "triangles": 141968
+  },
+  "candidate": {
+    "revision": "r506",
+    "bytes": 7254764,
+    "parseMsMedian": 8.599999994039536,
+    "renderMsMedian": 0.10466666668653488,
+    "parseSamplesMs": [9.0, 8.599999994039536, 12.0, 7.800000011920929, 7.9000000059604645],
+    "renderSamplesMs": [0.10699999998013178, 0.1076666667064031, 0.10433333337306977, 0.10466666668653488, 0.10266666670640309],
+    "drawCalls": 14,
+    "triangles": 123568
+  },
+  "delta": {
+    "bytes": -1011984,
+    "triangles": -18400,
+    "drawCalls": 0,
+    "renderMsMedian": -0.0026666666070620237,
+    "parseMsMedian": 0.0
+  },
+  "gates": {
+    "smallerDownload": true,
+    "noDrawCallRegression": true,
+    "noTriangleRegression": true,
+    "renderWithinFifteenPercent": true,
+    "parseWithinFifteenPercent": true
+  },
+  "invalidPreliminaryRunsExcluded": "Earlier runs used r467 instead of r499 and then separate renderers; both were rejected before this report because they mixed material revisions or renderer-order effects.",
+  "status": "PASS"
+}

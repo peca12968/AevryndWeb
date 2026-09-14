@@ -1,0 +1,53 @@
+{
+  "candidate": "aevrynd-female-authoring-v249-mainline-layered-rear-locks-r506.blend",
+  "baseline": "aevrynd-female-authoring-v249-mainline-sorted-tear-film-r499.blend",
+  "reviewSet": "reviews/v249r506-layered-rear-locks-11shot/contact-sheet-11shot.jpg",
+  "views": [
+    "full front",
+    "full left three-quarter",
+    "full left profile",
+    "full back",
+    "full right profile",
+    "frame-20 front",
+    "frame-20 three-quarter",
+    "face front",
+    "face three-quarter",
+    "face profile",
+    "hair top"
+  ],
+  "strictScores100": {
+    "hair": 45,
+    "eyes": 68,
+    "face": 56,
+    "mouth": 53,
+    "bodyAndClothing": 49,
+    "overallCharacter": 53
+  },
+  "improvements": [
+    "The rear center no longer ends as one long rectangular translucent veil.",
+    "The new 280-card rear layer forms a shorter rounded bob with grouped, uneven end lengths.",
+    "The rear hair region is 15.125 percent brighter than r499 under the locked review setup, addressing the progressive-darkening concern.",
+    "The full front, face, eye, clothing and body surfaces remain visually unchanged.",
+    "Frame-20 views retain the expected secondary hair motion without detached roots."
+  ],
+  "remainingFailures": [
+    "The crown part is still too broad, straight and symmetric.",
+    "Front and side layers still read as parallel planar sheets at profile distance.",
+    "The rounded rear mass lacks clearly interleaved large, medium and fine lock families.",
+    "Hair highlight breakup and edge flyaways remain too uniform for hero quality.",
+    "Facial secondary planes, skin breakup and garment construction remain below the hero gate."
+  ],
+  "technicalGates": {
+    "staticGeometryParity": "PASS",
+    "dynamicBodyAndGarmentCollision": "PASS",
+    "rootAndSettleStability": "PASS",
+    "toneContract": "PASS",
+    "nodeRuntimeStructureAndLoad": "PASS",
+    "browserWebGL": "PASS",
+    "multiviewArtifactCheck": "PASS"
+  },
+  "decision": "RETAIN_AS_OFFLINE_TECHNICAL_MAINLINE_VISUAL_HERO_GATE_FAILED",
+  "status": "TECHNICAL_GATES_PASS_VISUAL_HERO_GATE_FAIL",
+  "websitePromotionApproved": false,
+  "nextRequiredWork": "Rebuild the crown and side flow as independently authored overlapping lock families, then add restrained flyaway silhouettes while preserving the r506 rear topology, collision, tone and browser-performance contracts."
+}

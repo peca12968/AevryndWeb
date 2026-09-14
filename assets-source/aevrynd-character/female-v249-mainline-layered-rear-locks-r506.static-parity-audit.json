@@ -1,0 +1,53 @@
+{
+  "baseline": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-sorted-tear-film-r499.blend",
+  "candidate": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-layered-rear-locks-r506.blend",
+  "addedMeshes": [
+    "AevryndFemaleRuntimeLayeredLocks_rear_R506"
+  ],
+  "removedMeshes": [],
+  "changedExistingGeometry": [],
+  "topology": {
+    "oldRear": {
+      "vertices": 23040,
+      "polygons": 11040,
+      "cards": 480,
+      "hideRender": true,
+      "hideViewport": true,
+      "replacedBy": "AevryndFemaleRuntimeLayeredLocks_rear_R506"
+    },
+    "newRear": {
+      "vertices": 13440,
+      "polygons": 6440,
+      "cards": 280,
+      "parent": "AevryndFemaleRig",
+      "armatureModifiers": [
+        "AevryndFemaleRig"
+      ],
+      "vertexGroups": [
+        "head",
+        "hair_dyn.L.front.01",
+        "hair_dyn.L.front.02",
+        "hair_dyn.L.front.03",
+        "hair_dyn.R.front.01",
+        "hair_dyn.R.front.02",
+        "hair_dyn.R.front.03",
+        "hair_dyn.L.back.01",
+        "hair_dyn.L.back.02",
+        "hair_dyn.L.back.03",
+        "hair_dyn.C.back.01",
+        "hair_dyn.C.back.02",
+        "hair_dyn.C.back.03",
+        "hair_dyn.R.back.01",
+        "hair_dyn.R.back.02",
+        "hair_dyn.R.back.03"
+      ],
+      "layer": "hair.runtime_layered_locks.rear.dynamic.alpha",
+      "ownership": "Aevrynd derived from owned runtime cards and owned atlas"
+    }
+  },
+  "visibleRearCardDelta": -200,
+  "visibleRearVertexDelta": -9600,
+  "visibleRearPolygonDelta": -4600,
+  "failures": [],
+  "status": "PASS"
+}
