@@ -1,0 +1,109 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-layered-front-locks-r517.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-natural-eye-ratio-r520.blend",
+  "strength": 0.5,
+  "affectedVertices": 2235,
+  "shapeKeysMovedTogether": [
+    "Basis",
+    "Aevrynd_Philtrum_Topology_R80",
+    "Aevrynd_EyeAperture_Topology_R83",
+    "Aevrynd_EvaluatedAnatomicalLids_R183",
+    "Aevrynd_MouthPlacement_R198_5mm",
+    "Aevrynd_ConvergedUpperLid_R210"
+  ],
+  "topologyChanged": false,
+  "opticalFacesRemoved": {
+    "Eye_L_Cornea": {
+      "beforeFaces": 1949,
+      "removedFaces": 214,
+      "afterFaces": 1735
+    },
+    "Eye_L_Sclera": {
+      "beforeFaces": 2043,
+      "removedFaces": 147,
+      "afterFaces": 1896
+    },
+    "Eye_R_Cornea": {
+      "beforeFaces": 1957,
+      "removedFaces": 197,
+      "afterFaces": 1760
+    },
+    "Eye_R_Sclera": {
+      "beforeFaces": 2033,
+      "removedFaces": 129,
+      "afterFaces": 1904
+    }
+  },
+  "upperLashMoves": {
+    "Eye_L_UpperLashes": {
+      "verticesMoved": 760,
+      "maximumMoveMm": 2.150310964018773
+    },
+    "Eye_R_UpperLashes": {
+      "verticesMoved": 760,
+      "maximumMoveMm": 2.1108500589743198
+    }
+  },
+  "scalpEyeShellMove": {
+    "verticesMoved": 177,
+    "maximumMoveMm": 1.949722767562812
+  },
+  "intactIrisFit": {
+    "Eye_L_Iris": {
+      "localAxisScale": [
+        0.85,
+        0.65,
+        0.6
+      ],
+      "facesPreserved": 96
+    },
+    "Eye_R_Iris": {
+      "localAxisScale": [
+        0.85,
+        0.65,
+        0.6
+      ],
+      "facesPreserved": 96
+    }
+  },
+  "overlapFacesBeforeClip": {
+    "1": {
+      "Eye_L_Cornea": 202,
+      "Eye_L_Sclera": 136,
+      "Eye_R_Cornea": 186,
+      "Eye_R_Sclera": 114
+    },
+    "20": {
+      "Eye_L_Cornea": 199,
+      "Eye_L_Sclera": 133,
+      "Eye_R_Cornea": 185,
+      "Eye_R_Sclera": 112
+    },
+    "33": {
+      "Eye_L_Cornea": 199,
+      "Eye_L_Sclera": 133,
+      "Eye_R_Cornea": 185,
+      "Eye_R_Sclera": 112
+    },
+    "61": {
+      "Eye_L_Cornea": 199,
+      "Eye_L_Sclera": 133,
+      "Eye_R_Cornea": 185,
+      "Eye_R_Sclera": 112
+    }
+  },
+  "frames": [
+    1,
+    20,
+    33,
+    61
+  ],
+  "status": "PASS_OFFLINE_TECHNICAL_MAINLINE_VISUAL_HERO_FAIL",
+  "audits": {
+    "faceAndStatic": "female-v249-mainline-natural-eye-ratio-r520.audit.json",
+    "runtimeHair": "female-v249-mainline-natural-eye-ratio-r520.runtime-card-audit.json",
+    "tone": "female-v249-mainline-natural-eye-ratio-r520.tone-contract-audit.json",
+    "performance": "female-v249-mainline-natural-eye-ratio-r520.performance-audit.json",
+    "views": "reviews/v249r520-natural-eye-ratio-11shot/contact-sheet-11shot.jpg"
+  }
+}
