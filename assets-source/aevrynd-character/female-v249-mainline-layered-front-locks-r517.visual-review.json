@@ -1,0 +1,38 @@
+{
+  "candidate": "aevrynd-female-authoring-v249-mainline-layered-front-locks-r517.blend",
+  "baseline": "aevrynd-female-authoring-v249-mainline-lighter-neutral-skin-r510.blend",
+  "reviewSet": "reviews/v249r517-layered-front-locks-11shot/contact-sheet-11shot.jpg",
+  "strictScores100": {
+    "hair": 47,
+    "eyes": 68,
+    "faceGeometry": 56,
+    "skinSurface": 57,
+    "mouth": 53,
+    "bodyAndClothing": 49,
+    "overallCharacter": 55
+  },
+  "improvements": [
+    "The dominant 420-card front curtain is replaced by 320 broader, length-staggered locks.",
+    "Three-quarter and profile views gain more uneven side grouping and less uniform lower density.",
+    "The selected repair converges to zero body and clothing penetration over frames 1/20/33/61.",
+    "Left/right hair context becomes 3.59%/17.35% brighter while fixed skin regions stay within 0.35% of r510.",
+    "Runtime export removes 9,200 rendered triangles and 505,988 bytes with unchanged draw calls."
+  ],
+  "remainingFailures": [
+    "The front mass still reads too straight and sheet-like at macro distance.",
+    "The central part remains broad and symmetric because the occluded crown and foundation topology are unchanged.",
+    "Large/medium/fine lock hierarchy and controlled flyaways remain weak.",
+    "Facial secondary anatomy, skin regional maps and garment construction remain below hero quality."
+  ],
+  "technicalGates": {
+    "staticParityAndExpectedFrontReplacement": "PASS",
+    "fourFrameBodyAndClothingCollision": "PASS",
+    "dynamicMotionAndSettle": "PASS",
+    "toneContract": "PASS",
+    "elevenViewReview": "PASS_NO_NEW_ARTIFACT",
+    "nodeRuntimeBenchmark": "PASS",
+    "browserWebGLBenchmark": "PASS"
+  },
+  "status": "TECHNICAL_GATES_PASS_VISUAL_HERO_GATE_FAIL",
+  "websitePromotionApproved": false
+}

@@ -1,0 +1,57 @@
+{
+  "environment": "Node.js Three.js GLTFLoader structural/load benchmark; browser GPU benchmark remains required before website replacement",
+  "baseline": {
+    "file": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\runtime-groom-r506\\aevrynd-female-hair-runtime-r506.glb",
+    "bytes": 7254764,
+    "downloadMB": 7.254764,
+    "medianParseMs": 8.62660000000001,
+    "parseSamplesMs": [
+      13.026499999999999,
+      7.205300000000001,
+      10.155000000000001,
+      6.7069000000000045,
+      8.62660000000001
+    ],
+    "vertices": 123568,
+    "triangles": 61784,
+    "drawCalls": 7,
+    "meshes": 7,
+    "materials": 4,
+    "animations": 1
+  },
+  "candidate": {
+    "file": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\runtime-groom-r517\\aevrynd-female-hair-runtime-r517.glb",
+    "bytes": 6748776,
+    "downloadMB": 6.748776,
+    "medianParseMs": 6.352000000000004,
+    "parseSamplesMs": [
+      6.21759999999999,
+      8.004999999999995,
+      5.82889999999999,
+      6.352000000000004,
+      7.77709999999999
+    ],
+    "vertices": 114368,
+    "triangles": 57184,
+    "drawCalls": 7,
+    "meshes": 7,
+    "materials": 4,
+    "animations": 1
+  },
+  "delta": {
+    "bytes": -505988,
+    "vertices": -9200,
+    "triangles": -4600,
+    "drawCalls": 0,
+    "medianParseMs": -2.2746000000000066
+  },
+  "gates": {
+    "smallerDownload": true,
+    "noVertexRegression": true,
+    "noTriangleRegression": true,
+    "noDrawCallRegression": true,
+    "parseWithinFifteenPercent": true,
+    "animationPresent": true
+  },
+  "status": "PASS"
+}

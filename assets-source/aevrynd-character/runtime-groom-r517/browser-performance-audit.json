@@ -1,0 +1,42 @@
+{
+  "environment": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/152.0.0.0 Safari/537.36",
+  "viewport": [900, 900],
+  "batches": 5,
+  "framesPerBatch": 300,
+  "alternatingRunCount": 5,
+  "baseline": {
+    "asset": "runtime-groom-r506/aevrynd-female-hair-runtime-r506.glb",
+    "bytes": 7254764,
+    "parseMs": 9.599999994039536,
+    "renderMsMedian": 0.10166666666666667,
+    "parseSamplesMs": [15.799999982118607, 7.700000017881393, 13.5, 7.9000000059604645, 9.599999994039536],
+    "renderSamplesMs": [0.11200000007947286, 0.10600000003973643, 0.1, 0.10166666666666667, 0.10166666666666667],
+    "calls": 14,
+    "triangles": 123568
+  },
+  "candidate": {
+    "asset": "runtime-groom-r517/aevrynd-female-hair-runtime-r517.glb",
+    "bytes": 6748776,
+    "parseMs": 7.5,
+    "renderMsMedian": 0.09866666664679845,
+    "parseSamplesMs": [8.199999988079071, 7.5999999940395355, 7.0, 7.5, 7.0999999940395355],
+    "renderSamplesMs": [0.105, 0.10233333329359691, 0.09866666664679845, 0.09800000001986821, 0.09866666664679845],
+    "calls": 14,
+    "triangles": 114368
+  },
+  "delta": {
+    "bytes": -505988,
+    "triangles": -9200,
+    "calls": 0,
+    "renderMsMedian": -0.003000000019868221,
+    "parseMs": -2.0999999940395355
+  },
+  "gates": {
+    "smallerDownload": true,
+    "noDrawCallRegression": true,
+    "noTriangleRegression": true,
+    "renderWithinFifteenPercent": true,
+    "parseWithinFifteenPercent": true
+  },
+  "status": "PASS"
+}
