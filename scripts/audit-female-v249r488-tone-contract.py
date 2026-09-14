@@ -1,15 +1,16 @@
 import json
+import os
 from pathlib import Path
 
 import bpy
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets-source/aevrynd-character"
-BASE_BLEND = ASSETS / "aevrynd-female-authoring-v249-mainline-balanced-lower-lip-r485.blend"
-CAND_BLEND = ASSETS / "aevrynd-female-authoring-v249-mainline-owned-lip-normal-r488.blend"
-BASE_IMAGE = ASSETS / "reviews/v249r488-lip-normal-sweep/s0.00-face-f01.png"
-CAND_IMAGE = ASSETS / "reviews/v249r488-lip-normal-sweep/s0.35-face-f01.png"
-REPORT = ASSETS / "female-v249-mainline-owned-lip-normal-r488.tone-contract-audit.json"
+BASE_BLEND = Path(os.environ.get("AEVRYND_TONE_BASE_BLEND", ASSETS / "aevrynd-female-authoring-v249-mainline-balanced-lower-lip-r485.blend"))
+CAND_BLEND = Path(os.environ.get("AEVRYND_TONE_CAND_BLEND", ASSETS / "aevrynd-female-authoring-v249-mainline-owned-lip-normal-r488.blend"))
+BASE_IMAGE = Path(os.environ.get("AEVRYND_TONE_BASE_IMAGE", ASSETS / "reviews/v249r488-lip-normal-sweep/s0.00-face-f01.png"))
+CAND_IMAGE = Path(os.environ.get("AEVRYND_TONE_CAND_IMAGE", ASSETS / "reviews/v249r488-lip-normal-sweep/s0.35-face-f01.png"))
+REPORT = Path(os.environ.get("AEVRYND_TONE_REPORT", ASSETS / "female-v249-mainline-owned-lip-normal-r488.tone-contract-audit.json"))
 BODY = "AevryndFemaleBodyBaseV118"
 
 

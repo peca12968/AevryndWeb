@@ -1,0 +1,61 @@
+{
+  "schema": "aevrynd.character.strict-visual-review.v1",
+  "reviewed_at": "2026-09-14",
+  "candidate": "aevrynd-female-authoring-v249-mainline-balanced-skin-r491.blend",
+  "website_version": "v83",
+  "website_promoted": false,
+  "hero_gate": "FAIL",
+  "retained_offline_mainline": "r491",
+  "revisions": {
+    "r489": {
+      "change": "Continuous-body upper-vermilion form at selected strength 0.90",
+      "visual_result": "Subtle improvement to upper-lip fullness, cupid peaks and central notch",
+      "collision_gate": "PASS",
+      "tone_gate": "PASS",
+      "eleven_view_gate": "PASS",
+      "whole_face_luminance_change_percent": -0.040350
+    },
+    "r490": {
+      "change": "Localized vermilion roughness response at selected roughness 0.46",
+      "visual_result": "Restrained lip response; stronger 0.40 and 0.34 bounds read too glossy or wet",
+      "collision_gate": "PASS",
+      "tone_gate": "PASS",
+      "eleven_view_gate": "PASS",
+      "whole_face_luminance_change_percent": -0.001948,
+      "runtime_status": "Offline authoring material; Aevrynd runtime expression pending"
+    },
+    "r491": {
+      "change": "Skin breakup scale 84 with 40% former endpoint contrast and preserved mean hue",
+      "visual_result": "Major reduction of broad cloud-like facial blotches without overall darkening",
+      "collision_gate": "PASS",
+      "tone_gate": "PASS",
+      "eleven_view_gate": "PASS",
+      "regional_luminance_change_percent": {
+        "forehead": -0.956405,
+        "left_cheek": 0.020760,
+        "right_cheek": 0.929090,
+        "whole_face": 0.322885
+      },
+      "runtime_cost_change": "No geometry or procedural node-count increase for the selected skin scale/contrast adjustment"
+    }
+  },
+  "strict_scores_out_of_100": {
+    "face": 50,
+    "mouth": 53,
+    "lip_microdetail": 60,
+    "hair": 38,
+    "body_and_clothing": 49,
+    "overall": 48
+  },
+  "blocking_visual_defects": [
+    "Eye and eyelid integration remains rigid and exposes too much uniform sclera",
+    "Hair reads as a planar cap or curtain with weak macro-clump depth and implausible top flow",
+    "Orbital, cheek and perioral secondary planes remain underdeveloped",
+    "Garment silhouette, edge thickness and cloth response remain basic"
+  ],
+  "next_focus": [
+    "Eye socket, lid thickness, canthus and globe integration",
+    "Guide-based hair masses with collision-safe secondary motion",
+    "Garment thickness, folds and body clearance"
+  ]
+}
