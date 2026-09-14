@@ -1,0 +1,44 @@
+{
+  "revisionRange": "v249r482-v249r483",
+  "parent": "aevrynd-female-authoring-v249-mainline-runtime-brows-r480.blend",
+  "scope": "upper-lip shell integration and commissure termination",
+  "status": "REJECTED_VISUAL_GATE",
+  "mainlineRetained": "v249r480-runtime-brows",
+  "websiteChanged": false,
+  "runtimeDependencyAdded": false,
+  "experiments": [
+    {
+      "revision": "v249r482",
+      "method": "Join the 325-vertex upper-lip shell to five surface-conforming transition rings; share the inner ring and bind the 650-vertex connected object to the evaluated body with Surface Deform.",
+      "topology": {"vertices": 650, "polygons": 576, "transitionPolygons": 320},
+      "normalFinding": "231 of 256 inherited shell faces pointed toward positive Y while all transition faces pointed outward. Reversing the inherited face winding removes the false dark outline.",
+      "clearanceSweepMm": [0.02, 0.12, 0.25, 0.40, 0.55],
+      "materialSweep": {"upperVermilionMix": [0.30, 0.45, 0.60], "roughness": 0.58, "specularIorLevel": 0.18},
+      "cornerFade": "A point-domain opacity ramp over five columns reduces the front needle but exposes a transparent layer and a vertical attachment edge obliquely.",
+      "strictMouthScore": 45
+    },
+    {
+      "revision": "v249r483",
+      "method": "Collapse all five shell rows toward one commissure position over eight columns and use a 0.20 mm body-transition clearance without alpha fading.",
+      "result": "The needle shortens, but the separate lip shell still reads as a shelf and retains an oblique termination wall.",
+      "strictMouthScore": 49
+    }
+  ],
+  "lockedToneEvidence": {
+    "baseline": "v249r480",
+    "candidate": "v249r482 matched face",
+    "foreheadPercent": -0.0000,
+    "leftCheekPercent": 0.0000,
+    "rightCheekPercent": -0.0000,
+    "wholeFacePercent": 0.033,
+    "conclusion": "No progressive skin darkening in the Blender mainline. Website working-tree GLB uses a different skin texture whose mean encoded luminance is 5.6% below the prior comparison GLB."
+  },
+  "rejectionReasons": [
+    "Upper lip remains visually detached from the orbicularis-oris region.",
+    "Commissures terminate as visible geometric walls in oblique view.",
+    "Surface Deform is an authoring dependency and has not been baked to engine-ready shape keys and skin weights.",
+    "Strict hero visual gate failed before promotion and full release collision/performance gates."
+  ],
+  "nextRequiredMethod": "Replace the detached shell approach with continuous perioral edge rings following orbicularis-oris flow, including shared upper/lower commissure vertices, then transfer rig weights and rebuild expression shape keys before tint or microrelief work.",
+  "reviewDirectory": "assets-source/aevrynd-character/reviews/v249r482-r483-connected-upper-lip-rejected"
+}
