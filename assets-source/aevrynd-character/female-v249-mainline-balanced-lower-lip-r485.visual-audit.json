@@ -1,0 +1,49 @@
+{
+  "revision": "v249r485",
+  "parent": "v249r484-continuous-upper-lip",
+  "status": "PASS_TECHNICAL_CANDIDATE_HERO_GATE_FAIL",
+  "websitePromotion": false,
+  "geometry": {
+    "representation": "continuous body surface",
+    "bodyTopologyChanged": false,
+    "verticesMovedAcrossAllSixShapeKeys": 1334,
+    "maximumMoveMm": 0.941206,
+    "runtimeModifierDependencyAdded": false
+  },
+  "collision": {
+    "visibleEyeAndOralLayersFrames": [1, 20],
+    "bodySelfIntersectionRegression": 0,
+    "runtimeHairFrames": [1, 20, 33, 61],
+    "runtimeHairPenetratingVertices": 0,
+    "nonfiniteShapeKeyPoints": 0,
+    "status": "PASS"
+  },
+  "tone": {
+    "foreheadDeltaPercent": -0.000008,
+    "leftCheekDeltaPercent": -0.000229,
+    "rightCheekDeltaPercent": -0.000033,
+    "wholeFaceDeltaPercent": -0.102479,
+    "status": "PASS"
+  },
+  "multiAngleReview": {
+    "shots": 11,
+    "frames": [1, 20],
+    "newBrokenSurfaces": 0,
+    "strictMouthScore": 55,
+    "strictOverallFaceScore": 60,
+    "heroThreshold": 80,
+    "status": "PASS_TECHNICAL_CONTINUITY_HERO_GATE_FAIL"
+  },
+  "improvements": [
+    "Lower-lip forward bulge is reduced in oblique view.",
+    "The central mouth seam gains a restrained interlocking curve.",
+    "R484 upper-lip continuity and retired-shell state are preserved."
+  ],
+  "remainingDefects": [
+    "Lower lip remains too uniformly wide.",
+    "Commissure compression and modiolus volume are still weak.",
+    "The mouth seam lacks asymmetry and fine wet response.",
+    "Lip surface lacks directional microrelief."
+  ],
+  "nextPass": "Refine commissure compression and add restrained directional lip microrelief without changing global skin value."
+}
