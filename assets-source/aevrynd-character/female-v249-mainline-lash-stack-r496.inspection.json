@@ -1,0 +1,1056 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-natural-sclera-r496.blend",
+  "sceneEyeRevision": 236,
+  "objects": {
+    "Eye_L_UpperLashes": {
+      "exists": true,
+      "type": "MESH",
+      "hideRender": false,
+      "hideViewport": false,
+      "aevryndExport": null,
+      "aevryndRole": null,
+      "parent": "AevryndFemaleRig",
+      "parentType": "OBJECT",
+      "parentBone": "",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Aevrynd Head Follow",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "vertexGroups": [
+        "head"
+      ],
+      "materials": [
+        {
+          "name": "Aevrynd_Lash_Hair_v51",
+          "useNodes": true,
+          "principled": {
+            "baseColor": [
+              0.0034000000450760126,
+              0.0011500000255182385,
+              0.0006200000061653554,
+              1.0
+            ],
+            "roughness": 0.5199999809265137,
+            "specularIorLevel": 0.10999999940395355
+          }
+        }
+      ],
+      "vertices": 760,
+      "edges": 1330,
+      "polygons": 646,
+      "connectedComponentVertexCounts": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "fiberCountProperty": null,
+      "lengthRangeM": [
+        null,
+        null
+      ],
+      "rootClearanceM": null
+    },
+    "Eye_L_LowerLashes": {
+      "exists": false
+    },
+    "Eye_L_TearMeniscus": {
+      "exists": true,
+      "type": "MESH",
+      "hideRender": false,
+      "hideViewport": false,
+      "aevryndExport": null,
+      "aevryndRole": null,
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -7.549790126404332e-08,
+          0.0
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertexGroups": [],
+      "materials": [
+        {
+          "name": "Aevrynd_TearMeniscus_Clear_R109",
+          "useNodes": true,
+          "principled": {
+            "baseColor": [
+              0.8199999928474426,
+              0.9100000262260437,
+              0.949999988079071,
+              1.0
+            ],
+            "roughness": 0.054999999701976776,
+            "specularIorLevel": 0.41999998688697815
+          }
+        }
+      ],
+      "vertices": 222,
+      "edges": 438,
+      "polygons": 218,
+      "connectedComponentVertexCounts": [
+        222
+      ],
+      "fiberCountProperty": null,
+      "lengthRangeM": [
+        null,
+        null
+      ],
+      "rootClearanceM": null
+    },
+    "Eye_L_Caruncle": {
+      "exists": true,
+      "type": "MESH",
+      "hideRender": false,
+      "hideViewport": false,
+      "aevryndExport": null,
+      "aevryndRole": "lacrimal_caruncle",
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -7.549790126404332e-08,
+          0.0
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertexGroups": [],
+      "materials": [
+        {
+          "name": "Aevrynd_Caruncle_v37",
+          "useNodes": true,
+          "principled": {
+            "baseColor": [
+              0.11999999731779099,
+              0.03400000184774399,
+              0.027000000700354576,
+              1.0
+            ],
+            "roughness": 0.5600000023841858,
+            "specularIorLevel": 0.1599999964237213
+          }
+        }
+      ],
+      "vertices": 15,
+      "edges": 28,
+      "polygons": 14,
+      "connectedComponentVertexCounts": [
+        15
+      ],
+      "fiberCountProperty": null,
+      "lengthRangeM": [
+        null,
+        null
+      ],
+      "rootClearanceM": null
+    },
+    "Eye_L_Cornea": {
+      "exists": true,
+      "type": "MESH",
+      "hideRender": false,
+      "hideViewport": false,
+      "aevryndExport": null,
+      "aevryndRole": "cornea",
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.034527357667684555
+        ],
+        [
+          0.0,
+          1.0,
+          -7.549790126404332e-08,
+          -0.10151734948158264
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          1.60776686668396
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertexGroups": [],
+      "materials": [
+        {
+          "name": "Aevrynd_Eye_Cornea_ClearBlend_R470",
+          "useNodes": true,
+          "principled": {
+            "baseColor": [
+              0.9300000071525574,
+              0.9700000286102295,
+              1.0,
+              1.0
+            ],
+            "roughness": 0.024000000208616257,
+            "specularIorLevel": 0.5
+          }
+        }
+      ],
+      "vertices": 1972,
+      "edges": 3919,
+      "polygons": 1949,
+      "connectedComponentVertexCounts": [
+        35,
+        91,
+        1846
+      ],
+      "fiberCountProperty": null,
+      "lengthRangeM": [
+        null,
+        null
+      ],
+      "rootClearanceM": null
+    },
+    "Eye_L_Sclera": {
+      "exists": true,
+      "type": "MESH",
+      "hideRender": false,
+      "hideViewport": false,
+      "aevryndExport": null,
+      "aevryndRole": "sclera",
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.034527357667684555
+        ],
+        [
+          0.0,
+          1.0,
+          -7.549790126404332e-08,
+          -0.10096734762191772
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          1.60776686668396
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertexGroups": [],
+      "materials": [
+        {
+          "name": "Aevrynd_Eye_Sclera",
+          "useNodes": true,
+          "principled": {
+            "baseColor": [
+              0.5600000023841858,
+              0.5,
+              0.4399999976158142,
+              1.0
+            ],
+            "roughness": 0.3799999952316284,
+            "specularIorLevel": 0.2800000011920929
+          }
+        }
+      ],
+      "vertices": 1986,
+      "edges": 4029,
+      "polygons": 2043,
+      "connectedComponentVertexCounts": [
+        1986
+      ],
+      "fiberCountProperty": null,
+      "lengthRangeM": [
+        null,
+        null
+      ],
+      "rootClearanceM": null
+    },
+    "Eye_R_UpperLashes": {
+      "exists": true,
+      "type": "MESH",
+      "hideRender": false,
+      "hideViewport": false,
+      "aevryndExport": null,
+      "aevryndRole": null,
+      "parent": "AevryndFemaleRig",
+      "parentType": "OBJECT",
+      "parentBone": "",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Aevrynd Head Follow",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "vertexGroups": [
+        "head"
+      ],
+      "materials": [
+        {
+          "name": "Aevrynd_Lash_Hair_v51",
+          "useNodes": true,
+          "principled": {
+            "baseColor": [
+              0.0034000000450760126,
+              0.0011500000255182385,
+              0.0006200000061653554,
+              1.0
+            ],
+            "roughness": 0.5199999809265137,
+            "specularIorLevel": 0.10999999940395355
+          }
+        }
+      ],
+      "vertices": 760,
+      "edges": 1330,
+      "polygons": 646,
+      "connectedComponentVertexCounts": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "fiberCountProperty": null,
+      "lengthRangeM": [
+        null,
+        null
+      ],
+      "rootClearanceM": null
+    },
+    "Eye_R_LowerLashes": {
+      "exists": false
+    },
+    "Eye_R_TearMeniscus": {
+      "exists": true,
+      "type": "MESH",
+      "hideRender": false,
+      "hideViewport": false,
+      "aevryndExport": null,
+      "aevryndRole": null,
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -7.549790126404332e-08,
+          0.0
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertexGroups": [],
+      "materials": [
+        {
+          "name": "Aevrynd_TearMeniscus_Clear_R109",
+          "useNodes": true,
+          "principled": {
+            "baseColor": [
+              0.8199999928474426,
+              0.9100000262260437,
+              0.949999988079071,
+              1.0
+            ],
+            "roughness": 0.054999999701976776,
+            "specularIorLevel": 0.41999998688697815
+          }
+        }
+      ],
+      "vertices": 222,
+      "edges": 438,
+      "polygons": 218,
+      "connectedComponentVertexCounts": [
+        222
+      ],
+      "fiberCountProperty": null,
+      "lengthRangeM": [
+        null,
+        null
+      ],
+      "rootClearanceM": null
+    },
+    "Eye_R_Caruncle": {
+      "exists": true,
+      "type": "MESH",
+      "hideRender": false,
+      "hideViewport": false,
+      "aevryndExport": null,
+      "aevryndRole": "lacrimal_caruncle",
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -7.549790126404332e-08,
+          0.0
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertexGroups": [],
+      "materials": [
+        {
+          "name": "Aevrynd_Caruncle_v37",
+          "useNodes": true,
+          "principled": {
+            "baseColor": [
+              0.11999999731779099,
+              0.03400000184774399,
+              0.027000000700354576,
+              1.0
+            ],
+            "roughness": 0.5600000023841858,
+            "specularIorLevel": 0.1599999964237213
+          }
+        }
+      ],
+      "vertices": 15,
+      "edges": 28,
+      "polygons": 14,
+      "connectedComponentVertexCounts": [
+        15
+      ],
+      "fiberCountProperty": null,
+      "lengthRangeM": [
+        null,
+        null
+      ],
+      "rootClearanceM": null
+    },
+    "Eye_R_Cornea": {
+      "exists": true,
+      "type": "MESH",
+      "hideRender": false,
+      "hideViewport": false,
+      "aevryndExport": null,
+      "aevryndRole": "cornea",
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.034443408250808716
+        ],
+        [
+          0.0,
+          1.0,
+          -7.549790126404332e-08,
+          -0.10132092237472534
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          1.6077666282653809
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertexGroups": [],
+      "materials": [
+        {
+          "name": "Aevrynd_Eye_Cornea_ClearBlend_R470",
+          "useNodes": true,
+          "principled": {
+            "baseColor": [
+              0.9300000071525574,
+              0.9700000286102295,
+              1.0,
+              1.0
+            ],
+            "roughness": 0.024000000208616257,
+            "specularIorLevel": 0.5
+          }
+        }
+      ],
+      "vertices": 1972,
+      "edges": 3928,
+      "polygons": 1957,
+      "connectedComponentVertexCounts": [
+        25,
+        73,
+        1874
+      ],
+      "fiberCountProperty": null,
+      "lengthRangeM": [
+        null,
+        null
+      ],
+      "rootClearanceM": null
+    },
+    "Eye_R_Sclera": {
+      "exists": true,
+      "type": "MESH",
+      "hideRender": false,
+      "hideViewport": false,
+      "aevryndExport": null,
+      "aevryndRole": "sclera",
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.034443408250808716
+        ],
+        [
+          0.0,
+          1.0,
+          -7.549790126404332e-08,
+          -0.10077092051506042
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          1.0,
+          1.6077666282653809
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertexGroups": [],
+      "materials": [
+        {
+          "name": "Aevrynd_Eye_Sclera",
+          "useNodes": true,
+          "principled": {
+            "baseColor": [
+              0.5600000023841858,
+              0.5,
+              0.4399999976158142,
+              1.0
+            ],
+            "roughness": 0.3799999952316284,
+            "specularIorLevel": 0.2800000011920929
+          }
+        }
+      ],
+      "vertices": 1983,
+      "edges": 4015,
+      "polygons": 2033,
+      "connectedComponentVertexCounts": [
+        1983
+      ],
+      "fiberCountProperty": null,
+      "lengthRangeM": [
+        null,
+        null
+      ],
+      "rootClearanceM": null
+    }
+  },
+  "frames": {
+    "1": {
+      "Eye_L_UpperLashes": {
+        "exists": true,
+        "bounds": {
+          "minimum": [
+            0.022247740998864174,
+            -0.12032797932624817,
+            1.6096110343933105
+          ],
+          "maximum": [
+            0.04647396132349968,
+            -0.11030678451061249,
+            1.6147297620773315
+          ]
+        },
+        "digest": "aeddb9c0118c795f0a169518cb06e3255a4350bc4e2c3f0c6d4ad7b96365de1b",
+        "nearestVertexDistanceM": {
+          "body": 0.00013881710765417665,
+          "Cornea": 0.0034666555002331734,
+          "Sclera": 0.004477162379771471,
+          "TearMeniscus": 0.005167652852833271
+        },
+        "triangleOverlapPairs": {
+          "body": 0,
+          "Cornea": 0,
+          "Sclera": 0,
+          "TearMeniscus": 0
+        }
+      },
+      "Eye_L_LowerLashes": {
+        "exists": false
+      },
+      "Eye_R_UpperLashes": {
+        "exists": true,
+        "bounds": {
+          "minimum": [
+            -0.04696839302778244,
+            -0.11973333358764648,
+            1.6095975637435913
+          ],
+          "maximum": [
+            -0.022631673142313957,
+            -0.11057547479867935,
+            1.6149020195007324
+          ]
+        },
+        "digest": "a84302e4dfee09a472f50c6673498bbf95dcfeb4113f2c3610eb7fe9142118d9",
+        "nearestVertexDistanceM": {
+          "body": 0.0002165009209420532,
+          "Cornea": 0.0039428588934242725,
+          "Sclera": 0.004971003159880638,
+          "TearMeniscus": 0.005054537206888199
+        },
+        "triangleOverlapPairs": {
+          "body": 0,
+          "Cornea": 0,
+          "Sclera": 0,
+          "TearMeniscus": 0
+        }
+      },
+      "Eye_R_LowerLashes": {
+        "exists": false
+      }
+    },
+    "20": {
+      "Eye_L_UpperLashes": {
+        "exists": true,
+        "bounds": {
+          "minimum": [
+            0.045867420732975006,
+            -0.11102435737848282,
+            1.6096110343933105
+          ],
+          "maximum": [
+            0.0691114217042923,
+            -0.09851294010877609,
+            1.6147297620773315
+          ]
+        },
+        "digest": "0ca1f29964d5401e9dcf30ccef2a9ee333ac38eb79bf855a990475e3d8eb17f8",
+        "nearestVertexDistanceM": {
+          "body": 0.00013621232938021421,
+          "Cornea": 0.003466651774942875,
+          "Sclera": 0.004477156791836023,
+          "TearMeniscus": 0.005167653784155846
+        },
+        "triangleOverlapPairs": {
+          "body": 0,
+          "Cornea": 0,
+          "Sclera": 0,
+          "TearMeniscus": 0
+        }
+      },
+      "Eye_L_LowerLashes": {
+        "exists": false
+      },
+      "Eye_R_UpperLashes": {
+        "exists": true,
+        "bounds": {
+          "minimum": [
+            -0.022269492968916893,
+            -0.12456342577934265,
+            1.6095975637435913
+          ],
+          "maximum": [
+            0.001996295526623726,
+            -0.11504436284303665,
+            1.6149020195007324
+          ]
+        },
+        "digest": "4145800615989e9b1c04364646442b12bd182837d3f42fa7982349e363b639dc",
+        "nearestVertexDistanceM": {
+          "body": 0.00022197689395397902,
+          "Cornea": 0.00394285935908556,
+          "Sclera": 0.004971005953848362,
+          "TearMeniscus": 0.005054537672549486
+        },
+        "triangleOverlapPairs": {
+          "body": 0,
+          "Cornea": 0,
+          "Sclera": 0,
+          "TearMeniscus": 0
+        }
+      },
+      "Eye_R_LowerLashes": {
+        "exists": false
+      }
+    }
+  },
+  "bodyBoundaryComponents": [
+    {
+      "vertexCount": 52,
+      "indices": [
+        1298,
+        27183,
+        1304,
+        16263,
+        32364,
+        24286,
+        32369,
+        14234,
+        32374,
+        13763,
+        32378,
+        19638,
+        32382,
+        19668,
+        1329,
+        13773,
+        1334,
+        26976,
+        32390,
+        30245,
+        32395,
+        11046,
+        32399,
+        16380,
+        32408,
+        29586,
+        1354,
+        29579,
+        32412,
+        13113,
+        1358,
+        10994,
+        1362,
+        29506,
+        1366,
+        12777,
+        1370,
+        26304,
+        1374,
+        26442,
+        1375,
+        23846,
+        32428,
+        26158,
+        1381,
+        20784,
+        32434,
+        19516,
+        32439,
+        29768,
+        32349,
+        13735
+      ],
+      "bounds": {
+        "minimum": [
+          -0.04470469057559967,
+          -0.09182531386613846,
+          1.6015969514846802
+        ],
+        "maximum": [
+          -0.02265015058219433,
+          -0.08727928251028061,
+          1.6145702600479126
+        ]
+      },
+      "centroid": [
+        -0.032695253272182666,
+        -0.08943997251872833,
+        1.6084927595578706
+      ]
+    },
+    {
+      "vertexCount": 52,
+      "indices": [
+        12741,
+        37544,
+        12079,
+        37539,
+        30331,
+        6399,
+        30022,
+        37533,
+        24276,
+        6393,
+        20269,
+        6392,
+        27013,
+        6388,
+        17360,
+        6384,
+        18758,
+        6380,
+        24457,
+        6376,
+        27563,
+        37517,
+        30229,
+        6372,
+        19707,
+        37513,
+        18534,
+        37504,
+        29568,
+        37500,
+        13633,
+        37495,
+        16943,
+        6352,
+        19400,
+        6347,
+        16886,
+        37487,
+        12005,
+        37483,
+        29620,
+        37479,
+        24039,
+        37474,
+        19820,
+        37469,
+        12048,
+        6322,
+        17134,
+        6316,
+        18238,
+        37454
+      ],
+      "bounds": {
+        "minimum": [
+          0.02269231714308262,
+          -0.09185408055782318,
+          1.6015912294387817
+        ],
+        "maximum": [
+          0.04475947469472885,
+          -0.08730261772871017,
+          1.6145687103271484
+        ]
+      },
+      "centroid": [
+        0.03276357570519814,
+        -0.08945962600409985,
+        1.6084921153692098
+      ]
+    }
+  ]
+}

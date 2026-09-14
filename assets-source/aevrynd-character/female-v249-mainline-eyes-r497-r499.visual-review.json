@@ -1,0 +1,69 @@
+{
+  "candidate": "aevrynd-female-authoring-v249-mainline-sorted-tear-film-r499.blend",
+  "parent": "aevrynd-female-authoring-v249-mainline-natural-sclera-r496.blend",
+  "retainedOfflineMainline": "r499",
+  "websiteRuntime": "v83 unchanged",
+  "heroGate": "FAIL",
+  "r496Inspection": {
+    "lowerLashObjectsExist": false,
+    "upperFibersPerEye": 38,
+    "upperCollisionFrames": [1, 20],
+    "upperCollisionStatus": "PASS_ZERO_OVERLAP"
+  },
+  "r497Study": {
+    "fullRebuildDecision": "REJECTED_VISUAL_GATE",
+    "fullRebuildFinding": "The zero-collision 64-upper/26-lower bound forms a regular upward comb under oblique macro review.",
+    "selectedLowerOnlyVariant": "f-lower-natural",
+    "selectedFibersPerEye": 16,
+    "selectedCollisionStatus": "PASS"
+  },
+  "r498LowerLashes": {
+    "addedLayers": ["Eye_L_LowerLashes", "Eye_R_LowerLashes"],
+    "addedVertices": 672,
+    "addedPolygons": 640,
+    "addedMaterials": 1,
+    "changedExistingMeshGeometry": [],
+    "faceCollisionFrames": [1, 20],
+    "hairCollisionFrames": [1, 20, 33, 61],
+    "collisionStatus": "PASS",
+    "matchedViewCount": 11,
+    "matchedViewStatus": "PASS"
+  },
+  "r499TearFilm": {
+    "selectedVariant": "b-sorted-same",
+    "surfaceRenderMethodBefore": "DITHERED",
+    "surfaceRenderMethodAfter": "BLENDED",
+    "physicalSocketValuesChanged": false,
+    "geometryChangedFromR498": false,
+    "materialNodeCountChange": 0,
+    "collisionStatus": "PASS",
+    "toneContract": {
+      "status": "PASS",
+      "foreheadDeltaPercent": 0.0,
+      "leftCheekDeltaPercent": -0.0006824238,
+      "rightCheekDeltaPercent": -0.0001638095,
+      "wholeFaceDeltaPercent": -0.0003786906
+    },
+    "matchedViewCount": 11,
+    "matchedViewStatus": "PASS"
+  },
+  "strictScores": {
+    "eyes": 68,
+    "face": 56,
+    "mouth": 53,
+    "hair": 38,
+    "bodyAndClothing": 49,
+    "overall": 52
+  },
+  "remainingBlockers": [
+    "Upper lashes still lack irregular macro-clumps and natural directional grouping.",
+    "Orbital fat planes and lid thickness remain simplified.",
+    "Hair mass and scalp transition remain far below hero quality.",
+    "Skin secondary breakup and garment shaping/material response remain basic."
+  ],
+  "next": [
+    "Rebuild upper lashes as sparse irregular macro-clumps while preserving collision clearance.",
+    "Return to macro hair-mass construction after the eye stack is stable.",
+    "Keep website v83 until runtime export, visual, collision and benchmark gates all pass."
+  ]
+}
