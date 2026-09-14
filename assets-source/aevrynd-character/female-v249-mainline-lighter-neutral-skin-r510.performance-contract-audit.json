@@ -1,0 +1,15 @@
+{
+  "candidate": "aevrynd-female-authoring-v249-mainline-lighter-neutral-skin-r510.blend",
+  "baseline": "aevrynd-female-authoring-v249-mainline-layered-rear-locks-r506.blend",
+  "basis": "material parameter invariance",
+  "meshInventoryExact": true,
+  "armatureExact": true,
+  "shaderNodeCountExact": true,
+  "shaderLinkCountExact": true,
+  "textureCountDelta": 0,
+  "drawCallDelta": 0,
+  "triangleDelta": 0,
+  "runtimeAllocationDeltaBytes": 0,
+  "explanation": "r510 changes two constant RGBA ramp endpoints in the existing skin shader. It adds no geometry, texture, node, link, material slot, modifier or draw call, so the measured r506 runtime cost remains invariant.",
+  "status": "PASS"
+}

@@ -1,0 +1,35 @@
+{
+  "candidate": "aevrynd-female-authoring-v249-mainline-lighter-neutral-skin-r510.blend",
+  "baseline": "aevrynd-female-authoring-v249-mainline-layered-rear-locks-r506.blend",
+  "reviewSet": "reviews/v249r510-lighter-neutral-skin-11shot/contact-sheet-11shot.jpg",
+  "strictScores100": {
+    "hair": 45,
+    "eyes": 68,
+    "faceGeometry": 56,
+    "skinSurface": 57,
+    "mouth": 53,
+    "bodyAndClothing": 49,
+    "overallCharacter": 54
+  },
+  "improvements": [
+    "The fixed face regions are 24.79-26.72 percent brighter in scene-linear luminance without changing lights or exposure.",
+    "The former brown/dim cast is reduced and the eye sockets, nasal planes, cheeks and lips remain readable.",
+    "All 11 views preserve the accepted r506 geometry, rear hair silhouette and pose behavior."
+  ],
+  "remainingFailures": [
+    "Crown part and front/side hair cards remain broad, straight and planar.",
+    "Facial secondary planes, lid thickness, orbital fat and expression anatomy remain below hero quality.",
+    "Skin still lacks authored regional vascular, oil, dry and pigmentation maps.",
+    "Garment silhouette, seams, thickness and material response remain basic."
+  ],
+  "technicalGates": {
+    "exactMeshParity": "PASS",
+    "exactArmatureParity": "PASS",
+    "fourFrameHairBodyAndClothingCollision": "PASS",
+    "toneIntent": "PASS_INTENTIONAL_BRIGHTENING_24_79_TO_26_72_PERCENT",
+    "performanceStructuralParity": "PASS_ZERO_COST_DELTA",
+    "elevenViewReview": "PASS_NO_NEW_ARTIFACT"
+  },
+  "status": "TECHNICAL_GATES_PASS_VISUAL_HERO_GATE_FAIL",
+  "websitePromotionApproved": false
+}
