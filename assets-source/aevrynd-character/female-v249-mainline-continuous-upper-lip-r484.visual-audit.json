@@ -1,0 +1,52 @@
+{
+  "revision": "v249r484",
+  "parent": "v249r480-runtime-brows",
+  "status": "PASS_TECHNICAL_CANDIDATE_HERO_GATE_FAIL",
+  "websitePromotion": false,
+  "reviewContract": {"viewTransform": "Standard", "look": "None", "exposure": 0, "gamma": 1},
+  "geometry": {
+    "representation": "continuous body surface",
+    "bodyTopologyChanged": false,
+    "verticesMovedAcrossAllSixShapeKeys": 1013,
+    "maximumNominalMoveMm": 2.175994,
+    "retiredDetachedLayers": ["Lip_Upper", "Lip_Lower", "Mouth_WetLine"],
+    "runtimeModifierDependencyAdded": false
+  },
+  "collision": {
+    "visibleEyeAndOralLayersFrames": [1, 20],
+    "bodySelfIntersectionRegression": 0,
+    "runtimeHairFrames": [1, 20, 33, 61],
+    "runtimeHairPenetratingVertices": 0,
+    "nonfiniteShapeKeyPoints": 0,
+    "status": "PASS"
+  },
+  "tone": {
+    "foreheadDeltaPercent": 0.0,
+    "leftCheekDeltaPercent": 0.001245,
+    "rightCheekDeltaPercent": 0.001006,
+    "wholeFaceDeltaPercent": -0.013606,
+    "status": "PASS"
+  },
+  "multiAngleReview": {
+    "shots": 11,
+    "frames": [1, 20],
+    "newBrokenSurfaces": 0,
+    "strictMouthScore": 54,
+    "strictOverallFaceScore": 60,
+    "heroThreshold": 80,
+    "status": "PASS_TECHNICAL_CONTINUITY_HERO_GATE_FAIL"
+  },
+  "improvements": [
+    "Upper vermilion is continuous with the orbicularis-oris region.",
+    "No detached shelf or vertical shell wall remains at the commissures.",
+    "Cupid peaks and central notch read at normal face distance.",
+    "Localized lip tint does not darken forehead or cheeks."
+  ],
+  "remainingDefects": [
+    "Lower lip is too broad and vertically inflated.",
+    "Mouth opening remains too straight and uniform.",
+    "Philtral columns and tubercle transition need more anatomical separation.",
+    "Lip microrelief and wet optical response remain too smooth."
+  ],
+  "nextPass": "Refine continuous lower-lip volume and mouth-opening curvature while preserving the r484 body topology, hidden retired shell state, collision baseline and tone contract."
+}
