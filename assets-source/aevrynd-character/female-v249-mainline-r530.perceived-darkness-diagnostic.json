@@ -1,0 +1,78 @@
+{
+  "source": "r526 fixed-light front render",
+  "method": "mean display-RGB intensity in fixed pixel crops; intended only to diagnose perceived darkening within the matched study",
+  "cropBoxes": {
+    "forehead": [
+      370,
+      210,
+      530,
+      310
+    ],
+    "leftCheek": [
+      315,
+      355,
+      405,
+      475
+    ],
+    "rightCheek": [
+      495,
+      355,
+      585,
+      475
+    ],
+    "chin": [
+      400,
+      520,
+      500,
+      620
+    ]
+  },
+  "meanIntensity": {
+    "a-r526-current": {
+      "forehead": 160.33539583333334,
+      "leftCheek": 135.80166666666665,
+      "rightCheek": 139.30274691358025,
+      "chin": 128.37206666666665
+    },
+    "b-soft-clumps": {
+      "forehead": 160.329625,
+      "leftCheek": 135.6853086419753,
+      "rightCheek": 139.18163580246912,
+      "chin": 128.35923333333332
+    },
+    "c-balanced-clumps": {
+      "forehead": 160.33372916666667,
+      "leftCheek": 135.6966666666667,
+      "rightCheek": 139.1887962962963,
+      "chin": 128.3601666666667
+    },
+    "d-defined-clumps": {
+      "forehead": 160.33641666666668,
+      "leftCheek": 135.70907407407407,
+      "rightCheek": 139.20324074074074,
+      "chin": 128.3606
+    }
+  },
+  "percentChangeVsR526": {
+    "b-soft-clumps": {
+      "forehead": -0.0035992260494666084,
+      "leftCheek": -0.08568232448645796,
+      "rightCheek": -0.08694093533293534,
+      "chin": -0.00999698272884375
+    },
+    "c-balanced-clumps": {
+      "forehead": -0.0010394876677088938,
+      "leftCheek": -0.0773186387010183,
+      "rightCheek": -0.08180069654667443,
+      "chin": -0.009269929439459368
+    },
+    "d-defined-clumps": {
+      "forehead": 0.000636686196475722,
+      "leftCheek": -0.06818222107675131,
+      "rightCheek": -0.07143159416751477,
+      "chin": -0.008932368983682881
+    }
+  },
+  "conclusion": "Skin-region intensity is effectively unchanged (all sampled deviations below 0.1%); perceived darkening is caused by the neighbouring hair shader/value and occluding silhouette, not a skin-material change.",
+  "status": "DIAGNOSTIC_PASS_SKIN_NOT_DARKENED_R530_HAIR_VISUAL_REJECT"
+}
