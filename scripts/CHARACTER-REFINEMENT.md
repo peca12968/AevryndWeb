@@ -1074,3 +1074,9 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - R487 adds directional lip-ridge bump over the continuous vermilion mask. Strengths 0.18 and 0.28 become regular synthetic engraving. Strength 0.10 and a noise-warped 0.105 variant are restrained at macro distance, but the result exists only as a Blender procedural node graph and cannot be treated as an Aevrynd engine asset.
 - R487 therefore fails the runtime-portability gate before promotion. No procedural-only effect is accepted as finished character detail. The next pass must bake an Aevrynd-owned UV tangent-space lip normal, inspect UV seams and mip behavior, connect it through the portable skin material path and rerun visual, tone and performance gates.
 - R485 remains the retained offline technical mouth candidate; website v83 remains unchanged.
+### v249r488 — owned portable lip-normal foundation (offline only)
+
+- Added a deterministic Aevrynd-owned 1024×1024 tangent-space lip normal and a dedicated AevryndLipDetailUV, expanding effective lip width from roughly 129 atlas pixels to roughly 990 pixels.
+- Confined the detail with the existing upper/lower vermilion vertex attributes and selected strength 0.35; 0.60 and 1.00 were rejected as carved/dry cracking.
+- Body and all six shape-key coordinate hashes remain exact against r485. The visible dynamic collision audit and tone contract pass; whole-face luminance drift is +0.000295%.
+- The 11-shot review found no new surface failure, but hero quality remains failed: upper-lip volume, eyes, skin mottling, card-like hair and clothing edges still need major work. Website v83 remains unchanged.

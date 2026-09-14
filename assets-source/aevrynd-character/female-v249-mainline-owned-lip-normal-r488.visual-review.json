@@ -1,0 +1,36 @@
+{
+  "revision": "v249r488",
+  "asset": "aevrynd-female-authoring-v249-mainline-owned-lip-normal-r488.blend",
+  "reviewSets": [
+    "reviews/v249r488-lip-normal-sweep",
+    "reviews/v249r488-owned-lip-normal-11shot"
+  ],
+  "shotsReviewed": 11,
+  "technicalResult": "PASS",
+  "heroQualityResult": "FAIL",
+  "strictScores": {
+    "lipMicrodetail": 58,
+    "mouthOverall": 50,
+    "faceOverall": 43,
+    "hairOverall": 38,
+    "bodyAndClothing": 46,
+    "characterOverall": 43
+  },
+  "acceptedEvidence": [
+    "0.35 lip-normal strength produces readable vertical grooves in macro and oblique views without dominating the normal face view",
+    "0.60 and 1.00 strengths were rejected because the grooves read as carved or dry cracking",
+    "dedicated 1024-square UV raises usable lip width from about 129 atlas pixels to about 990 pixels",
+    "body and shape-key coordinate SHA-256 is exact against r485",
+    "dynamic visible collision audit passes with no regression",
+    "tone contract passes; whole-face linear luminance changes by only +0.000295 percent"
+  ],
+  "blockingFindings": [
+    "upper vermilion volume remains too flat and blends into the philtrum",
+    "eyelid margins and exposed sclera still read as rigid",
+    "large-scale skin mottling is too strong and suppresses facial form",
+    "hair reads as flat card curtains with a visible top-part seam and weak clumping",
+    "clothing silhouettes and underarm edges remain visibly rough"
+  ],
+  "decision": "Retain as an offline technical foundation for owned lip-normal authoring. Do not promote to the website or call it hero-ready.",
+  "nextPriority": "Correct continuous upper-lip volume and facial planes before further normal-map refinement; hair needs a separate groom reconstruction."
+}
