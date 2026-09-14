@@ -1,0 +1,29 @@
+{
+  "revisionRange": "v249r486-v249r487",
+  "parent": "v249r485-balanced-lower-lip",
+  "status": "REJECTED_VISUAL_AND_RUNTIME_PORTABILITY_GATES",
+  "mainlineRetained": "v249r485-balanced-lower-lip",
+  "websiteChanged": false,
+  "experiments": [
+    {
+      "revision": "v249r486",
+      "scope": "commissure compression and modiolus volume",
+      "strengths": [0.7, 1.0, 1.35],
+      "verticesMoved": 570,
+      "maximumMoveMm": 1.195998,
+      "result": "Normal-distance gain is negligible; oblique views deepen the lateral notch and reduce natural continuity.",
+      "status": "REJECTED_VISUAL_GATE"
+    },
+    {
+      "revision": "v249r487",
+      "scope": "directional lip microrelief",
+      "periodicStrengths": [0.10, 0.18, 0.28],
+      "irregularStrength": 0.105,
+      "heightDistanceMm": 0.20,
+      "result": "0.18 and 0.28 read as synthetic regular engraving. The irregular 0.105 variant is restrained but remains a Blender procedural node graph that does not become an owned portable tangent normal in the engine export.",
+      "status": "REJECTED_RUNTIME_PORTABILITY_GATE"
+    }
+  ],
+  "nextRequiredMethod": "Bake an Aevrynd-owned UV tangent-space lip normal texture, verify UV seams and mip behavior, then connect it through the portable engine skin-material path and repeat matched visual, tone and runtime performance gates.",
+  "reviewDirectory": "assets-source/aevrynd-character/reviews/v249r486-r487-mouth-detail-rejected"
+}

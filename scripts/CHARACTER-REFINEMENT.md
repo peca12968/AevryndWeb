@@ -1067,3 +1067,10 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - The locked tone audit passes. Forehead changes by -0.000008%, left/right cheeks by -0.000229%/-0.000033%, and the whole face by -0.102479%. The character is not progressively darkened.
 - Eleven matched views show no new broken surface or pose artifact. Strict mouth score increases only from 54 to 55/100; the lower lip is less bulbous obliquely and the center seam reads slightly better, but width is still uniform, modiolus/commissure compression is weak and directional lip microrelief is absent.
 - R485 becomes the retained offline technical mouth candidate. It remains below the 80-point hero gate and does not replace website v83. The next pass targets commissure compression and restrained lip microrelief while preserving the current topology, collision and tone contracts.
+
+### V249R486–R487 commissure and lip-microrelief studies (rejected)
+
+- R486 scans 0.7/1.0/1.35 strengths for commissure compression and lateral modiolus volume on R485. The largest variant moves 570 vertices across all six shape keys by at most 1.196 mm. Normal-distance change is negligible, while oblique views deepen the lateral notch; all variants fail the visual gate and R485 geometry remains unchanged.
+- R487 adds directional lip-ridge bump over the continuous vermilion mask. Strengths 0.18 and 0.28 become regular synthetic engraving. Strength 0.10 and a noise-warped 0.105 variant are restrained at macro distance, but the result exists only as a Blender procedural node graph and cannot be treated as an Aevrynd engine asset.
+- R487 therefore fails the runtime-portability gate before promotion. No procedural-only effect is accepted as finished character detail. The next pass must bake an Aevrynd-owned UV tangent-space lip normal, inspect UV seams and mip behavior, connect it through the portable skin material path and rerun visual, tone and performance gates.
+- R485 remains the retained offline technical mouth candidate; website v83 remains unchanged.
