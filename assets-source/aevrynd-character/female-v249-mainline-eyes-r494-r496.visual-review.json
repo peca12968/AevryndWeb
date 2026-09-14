@@ -1,0 +1,62 @@
+{
+  "candidate": "aevrynd-female-authoring-v249-mainline-natural-sclera-r496.blend",
+  "parent": "aevrynd-female-authoring-v249-mainline-clipped-optical-fronts-r493.blend",
+  "retainedOfflineMainline": "r496",
+  "websiteRuntime": "v83 unchanged",
+  "heroGate": "FAIL",
+  "r494CaruncleGeometry": {
+    "selectedVariant": "c-anatomical-wedge",
+    "towardEyeScale": 3.5,
+    "medialScale": 0.65,
+    "verticalScale": 0.72,
+    "frame1StudyCollision": "PASS_ZERO_OVERLAP",
+    "finding": "Broader flattened medial tissue plane replaces the bead-like caruncle silhouette."
+  },
+  "r495CaruncleMaterial": {
+    "selectedVariant": "b-warm-mucosa",
+    "baseColorLinear": [0.12, 0.034, 0.027, 1.0],
+    "roughness": 0.56,
+    "specularIorLevel": 0.16,
+    "subsurfaceWeight": 0.025,
+    "coatWeight": 0.02,
+    "localCollisionFrames": [1, 20],
+    "localCollision": "PASS_ZERO_OVERLAP"
+  },
+  "r496Sclera": {
+    "selectedVariant": "c-natural-warm",
+    "ownedTexture": "textures/aevrynd-sclera-basecolor-v496-c-natural-warm.png",
+    "meanEncodedRgbApprox": [179, 168, 155],
+    "geometryChangedFromR495": false,
+    "newMaterialNodeCount": 0,
+    "formalCollision": "PASS",
+    "toneContract": {
+      "status": "PASS",
+      "foreheadDeltaPercent": 0.0,
+      "leftCheekDeltaPercent": -0.0000050825,
+      "rightCheekDeltaPercent": -0.0000363724,
+      "wholeFaceDeltaPercent": -0.0713162506
+    },
+    "matchedViewCount": 11,
+    "matchedViewReview": "PASS"
+  },
+  "strictScores": {
+    "eyes": 66,
+    "face": 55,
+    "mouth": 53,
+    "hair": 38,
+    "bodyAndClothing": 49,
+    "overall": 51
+  },
+  "remainingBlockers": [
+    "Tear meniscus reads as a uniform bright line.",
+    "Upper lashes are sparse and mechanical.",
+    "Lower lashes are absent.",
+    "Orbital fat planes and lid thickness remain simplified.",
+    "Hair mass and garments remain far below hero quality."
+  ],
+  "next": [
+    "Rebuild collision-fitted upper lashes and add restrained lower lashes.",
+    "Refine tear-film response without creating a bright outline.",
+    "Resume macro hair-mass construction after the eye stack is stable."
+  ]
+}
