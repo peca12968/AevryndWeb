@@ -1,0 +1,69 @@
+{
+  "revision": "v249r523-r524",
+  "source": "aevrynd-female-authoring-v249-mainline-natural-commissures-r522.blend",
+  "rejectedModel": "aevrynd-female-authoring-v249-mainline-orbital-volume-r524-rejected.blend",
+  "method": "aperture-preserving orbital sweep followed by outward-only eyelid-roll collision clamp",
+  "affectedVertices": 2060,
+  "shapeKeysMovedTogether": [
+    "Basis",
+    "Aevrynd_Philtrum_Topology_R80",
+    "Aevrynd_EyeAperture_Topology_R83",
+    "Aevrynd_EvaluatedAnatomicalLids_R183",
+    "Aevrynd_MouthPlacement_R198_5mm",
+    "Aevrynd_ConvergedUpperLid_R210"
+  ],
+  "testedStrengths": {
+    "0.05": {
+      "frame1": 2,
+      "frame20": 2,
+      "frame33": 2,
+      "frame61": 2
+    },
+    "0.10": {
+      "frame1": 7,
+      "frame20": 5,
+      "frame33": 5,
+      "frame61": 5
+    },
+    "0.20": {
+      "frame1": 13,
+      "frame20": 13,
+      "frame33": 13,
+      "frame61": 13
+    },
+    "0.40": {
+      "frame1": 35,
+      "frame20": 40,
+      "frame33": 40,
+      "frame61": 40
+    },
+    "0.80": {
+      "frame1": 99,
+      "frame20": 108,
+      "frame33": 108,
+      "frame61": 108
+    },
+    "1.20": {
+      "frame1": 183,
+      "frame20": 182,
+      "frame33": 182,
+      "frame61": 182
+    }
+  },
+  "minimumTestedMaximumMoveMm": 0.016977776492212934,
+  "visibleStudyStrengths": [
+    1.8,
+    2.3,
+    2.8
+  ],
+  "visibleStudy": "reviews/v249r523-orbital-volume-sweep/contact-sheet-orbital-volume-strong.jpg",
+  "findings": [
+    "The signed crease/tear-trough version intersected both cornea and sclera at every tested dynamic frame.",
+    "Removing all inward crease and tear-trough motion increased overlap because the baseline eye envelope is already tightly tangent to the lid surface.",
+    "Translating the complete optical stack in either world Y direction increased overlap and introduced iris, tear-meniscus or lash collisions.",
+    "Even strength 0.05 produced two overlap pairs in every frame, so no nonzero collision-safe interval was found."
+  ],
+  "status": "REJECTED_ZERO_COLLISION_NO_SAFE_VISIBLE_STRENGTH",
+  "retainedMainline": "aevrynd-female-authoring-v249-mainline-natural-commissures-r522.blend",
+  "websiteAsset": "v83 unchanged"
+}
