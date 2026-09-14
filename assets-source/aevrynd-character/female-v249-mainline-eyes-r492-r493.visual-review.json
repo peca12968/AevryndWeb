@@ -1,0 +1,62 @@
+{
+  "schema": "aevrynd.character.strict-visual-review.v1",
+  "reviewed_at": "2026-09-14",
+  "candidate": "aevrynd-female-authoring-v249-mainline-clipped-optical-fronts-r493.blend",
+  "parent": "aevrynd-female-authoring-v249-mainline-balanced-skin-r491.blend",
+  "retained_offline_mainline": "r493",
+  "website_version": "v83",
+  "website_promoted": false,
+  "hero_gate": "FAIL",
+  "r492": {
+    "baseline_aperture_mm": {"width": 22.06, "height": 15.58, "aspect": 1.42},
+    "selected_aperture_mm": {"width": 22.06, "height": 12.98, "aspect": 1.70},
+    "selected_strength": 0.35,
+    "affected_body_vertices": 2006,
+    "shape_keys_moved_together": 6,
+    "topology_changed": false,
+    "visual_result": "The neutral gaze is less round and exposes less vertical sclera without reading as a squint",
+    "body_self_intersection_regression": 0,
+    "optical_collision_gate": "FAIL_REQUIRES_R493"
+  },
+  "r493": {
+    "method": "Remove only cornea and sclera faces crossing the continuous lids at frame 1 or 20",
+    "removed_faces": {
+      "Eye_L_Cornea": 99,
+      "Eye_L_Sclera": 5,
+      "Eye_R_Cornea": 91,
+      "Eye_R_Sclera": 15
+    },
+    "collision_gate": "PASS",
+    "eleven_view_gate": "PASS",
+    "tone_gate": "PASS",
+    "regional_luminance_change_percent": {
+      "forehead": 0.000034,
+      "left_cheek": -0.003830,
+      "right_cheek": -0.004308,
+      "whole_face": -0.027892
+    },
+    "performance_effect": "210 fewer optical shell polygons; no shader node, texture, object or modifier added",
+    "website_performance_gate": "NOT_RUN_OFFLINE_CANDIDATE_NOT_INTEGRATED"
+  },
+  "strict_scores_out_of_100": {
+    "eyes": 64,
+    "face": 54,
+    "mouth": 53,
+    "hair": 38,
+    "body_and_clothing": 49,
+    "overall": 50
+  },
+  "blocking_visual_defects": [
+    "Caruncles read as detached pink beads",
+    "Sclera is too white and materially uniform",
+    "Upper lashes are sparse and mechanically spaced while lower lashes are absent",
+    "Orbital fat pads, lid thickness and canthus transitions remain simplified",
+    "Hair and garment quality remain below the hero gate"
+  ],
+  "next_focus": [
+    "Integrate caruncle and tear-line shape into the inner canthus",
+    "Add restrained owned scleral vascular/value variation",
+    "Rebuild collision-fitted upper and lower lash hierarchy",
+    "Continue guide-based hair mass reconstruction"
+  ]
+}
