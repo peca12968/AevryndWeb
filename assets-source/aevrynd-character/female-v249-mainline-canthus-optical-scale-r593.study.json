@@ -1,0 +1,66 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-lower-face-clearance-r569.blend",
+  "method": "apply the visually selected three-iteration bounded outer-canthus fairing, then uniformly scale the complete cornea/sclera/iris/pupil/catchlight stack around the shared eye center",
+  "canthusMovedVertices": 922,
+  "maximumCanthusMoveM": 0.00111412000573821,
+  "shapeKeysMovedTogether": [
+    "Basis",
+    "Aevrynd_Philtrum_Topology_R80",
+    "Aevrynd_EyeAperture_Topology_R83",
+    "Aevrynd_EvaluatedAnatomicalLids_R183",
+    "Aevrynd_MouthPlacement_R198_5mm",
+    "Aevrynd_ConvergedUpperLid_R210"
+  ],
+  "variants": {
+    "a-r569-current": {
+      "canthusFairing": false,
+      "opticalUniformScale": 1.0,
+      "frame1BodyOverlapPairs": {
+        "Eye_L_Cornea": 0,
+        "Eye_L_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Sclera": 0
+      },
+      "frame1CollisionPass": true
+    },
+    "b-canthus-fair-optics-scale-0p98": {
+      "canthusFairing": true,
+      "opticalUniformScale": 0.98,
+      "frame1BodyOverlapPairs": {
+        "Eye_L_Cornea": 90,
+        "Eye_L_Sclera": 80,
+        "Eye_R_Cornea": 99,
+        "Eye_R_Sclera": 50
+      },
+      "frame1CollisionPass": false
+    },
+    "c-canthus-fair-optics-scale-0p96": {
+      "canthusFairing": true,
+      "opticalUniformScale": 0.96,
+      "frame1BodyOverlapPairs": {
+        "Eye_L_Cornea": 96,
+        "Eye_L_Sclera": 83,
+        "Eye_R_Cornea": 86,
+        "Eye_R_Sclera": 62
+      },
+      "frame1CollisionPass": false
+    },
+    "d-canthus-fair-optics-scale-0p94": {
+      "canthusFairing": true,
+      "opticalUniformScale": 0.94,
+      "frame1BodyOverlapPairs": {
+        "Eye_L_Cornea": 57,
+        "Eye_L_Sclera": 20,
+        "Eye_R_Cornea": 59,
+        "Eye_R_Sclera": 30
+      },
+      "frame1CollisionPass": false
+    }
+  },
+  "status": "REJECTED_COLLISION",
+  "strictReview": {
+    "result": "REJECT",
+    "finding": "Uniform optical scale 0.98-0.94 reduces some overlaps but none reaches zero.",
+    "scoreChange": 0
+  }
+}

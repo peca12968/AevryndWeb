@@ -1,0 +1,47 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-damped-outer-card-motion-r587.blend",
+  "method": "stagger dense-coverage tail radius by 12-child guide family, then widen and vertically layer the independent paired outer cards while preserving their roots",
+  "variants": {
+    "a-r587-current": {
+      "coverageTailRadiusFloor": 1.0,
+      "outerCardWidthScale": 1.0,
+      "outerTailHierarchyScale": 0.0,
+      "maximumOuterTailLiftM": 0.0,
+      "rootsFixedThroughFraction": 0.34
+    },
+    "b-soft-tail-open-locks": {
+      "coverageTailRadiusFloor": 0.5,
+      "outerCardWidthScale": 1.5,
+      "outerTailHierarchyScale": 0.5,
+      "maximumOuterTailLiftM": 0.027,
+      "rootsFixedThroughFraction": 0.34
+    },
+    "c-layered-tail-balanced": {
+      "coverageTailRadiusFloor": 0.25,
+      "outerCardWidthScale": 1.9,
+      "outerTailHierarchyScale": 1.0,
+      "maximumOuterTailLiftM": 0.054,
+      "rootsFixedThroughFraction": 0.34
+    },
+    "d-layered-tail-strong": {
+      "coverageTailRadiusFloor": 0.1,
+      "outerCardWidthScale": 2.3,
+      "outerTailHierarchyScale": 1.25,
+      "maximumOuterTailLiftM": 0.0675,
+      "rootsFixedThroughFraction": 0.34
+    }
+  },
+  "fixed": [
+    "r587 hair colour",
+    "r586 1.5x outer alpha",
+    "camera",
+    "lights",
+    "Standard/None exposure 0"
+  ],
+  "status": "REJECTED_ROOT_CARD_STRIPS",
+  "strictReview": {
+    "result": "REJECT",
+    "finding": "Whole-card widening exposes horizontal card edges at the temples and crown; stronger tail layering does not establish natural locks.",
+    "scoreChange": 0
+  }
+}

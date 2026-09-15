@@ -1,0 +1,69 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-lower-face-clearance-r569.blend",
+  "method": "find the lowest bounded X/Z outer-canthus Laplacian iteration count that improves the triangular boundary without moving eye optics or creating frame-1 cornea/sclera overlap",
+  "selectedVertices": 927,
+  "shapeKeysMovedTogether": [
+    "Basis",
+    "Aevrynd_Philtrum_Topology_R80",
+    "Aevrynd_EyeAperture_Topology_R83",
+    "Aevrynd_EvaluatedAnatomicalLids_R183",
+    "Aevrynd_MouthPlacement_R198_5mm",
+    "Aevrynd_ConvergedUpperLid_R210"
+  ],
+  "variants": {
+    "a-r569-current": {
+      "iterations": 0,
+      "movedVertices": 0,
+      "maximumMoveM": 0.0,
+      "frame1BodyOverlapPairs": {
+        "Eye_L_Cornea": 0,
+        "Eye_L_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Sclera": 0
+      },
+      "frame1CollisionPass": true
+    },
+    "b-one-iteration": {
+      "iterations": 1,
+      "movedVertices": 912,
+      "maximumMoveM": 0.0005538572403453527,
+      "frame1BodyOverlapPairs": {
+        "Eye_L_Cornea": 1,
+        "Eye_L_Sclera": 2,
+        "Eye_R_Cornea": 3,
+        "Eye_R_Sclera": 1
+      },
+      "frame1CollisionPass": false
+    },
+    "c-two-iterations": {
+      "iterations": 2,
+      "movedVertices": 916,
+      "maximumMoveM": 0.0008850483935936627,
+      "frame1BodyOverlapPairs": {
+        "Eye_L_Cornea": 2,
+        "Eye_L_Sclera": 4,
+        "Eye_R_Cornea": 6,
+        "Eye_R_Sclera": 2
+      },
+      "frame1CollisionPass": false
+    },
+    "d-three-iterations": {
+      "iterations": 3,
+      "movedVertices": 922,
+      "maximumMoveM": 0.00111412000573821,
+      "frame1BodyOverlapPairs": {
+        "Eye_L_Cornea": 5,
+        "Eye_L_Sclera": 7,
+        "Eye_R_Cornea": 8,
+        "Eye_R_Sclera": 2
+      },
+      "frame1CollisionPass": false
+    }
+  },
+  "status": "REJECTED_COLLISION_BOUND",
+  "strictReview": {
+    "result": "REJECT",
+    "finding": "Even one Laplacian iteration produces cornea/sclera overlap; two and three iterations worsen it.",
+    "scoreChange": 0
+  }
+}

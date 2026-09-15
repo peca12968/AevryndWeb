@@ -1,0 +1,52 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-damped-outer-card-motion-r587.blend",
+  "method": "move only near-part coverage curves from one root side through a projected scalp-following lateral envelope; keep every root and tail endpoint fixed",
+  "variants": {
+    "a-r587-current": {
+      "direction": 0,
+      "strengthM": 0.0,
+      "movedCurves": 0,
+      "maximumProjectedDisplacementM": 0.0,
+      "rootDriftM": 0.0,
+      "affectedControlPoints": "1-15 with a zero-ended sine envelope"
+    },
+    "b-left-roots-sweep-right-8mm": {
+      "direction": 1,
+      "strengthM": 0.008,
+      "movedCurves": 645,
+      "maximumProjectedDisplacementM": 0.00797184056028591,
+      "rootDriftM": 0.0,
+      "affectedControlPoints": "1-15 with a zero-ended sine envelope"
+    },
+    "c-right-roots-sweep-left-8mm": {
+      "direction": -1,
+      "strengthM": 0.008,
+      "movedCurves": 628,
+      "maximumProjectedDisplacementM": 0.007966394303277939,
+      "rootDriftM": 0.0,
+      "affectedControlPoints": "1-15 with a zero-ended sine envelope"
+    },
+    "d-right-roots-sweep-left-14mm": {
+      "direction": -1,
+      "strengthM": 0.014,
+      "movedCurves": 628,
+      "maximumProjectedDisplacementM": 0.013992635271455705,
+      "rootDriftM": 0.0,
+      "affectedControlPoints": "1-15 with a zero-ended sine envelope"
+    }
+  },
+  "fixed": [
+    "r587 outer cards and motion",
+    "r587 colour",
+    "r586 1.5x outer alpha",
+    "camera",
+    "lights",
+    "Standard/None exposure 0"
+  ],
+  "status": "REJECTED_VISUAL_GAIN",
+  "strictReview": {
+    "result": "REJECT",
+    "finding": "Moving 628-645 near-part curves by 8-14 mm remains visually negligible inside the dense coverage mass.",
+    "scoreChange": 0
+  }
+}

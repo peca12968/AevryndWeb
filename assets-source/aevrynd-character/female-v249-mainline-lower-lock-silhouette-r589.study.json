@@ -1,0 +1,52 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-damped-outer-card-motion-r587.blend",
+  "method": "retain the original card width through 54% length; widen and layer only the lower silhouette while guide-family tail radii stagger the dense coverage",
+  "variants": {
+    "a-r587-current": {
+      "coverageTailRadiusFloor": 1.0,
+      "lowerOuterCardWidthScale": 1.0,
+      "outerTailHierarchyScale": 0.0,
+      "maximumOuterTailLiftM": 0.0,
+      "cardUpperWidthInvariantThroughFraction": 0.54,
+      "rootsFixed": true
+    },
+    "b-lower-locks-soft": {
+      "coverageTailRadiusFloor": 0.55,
+      "lowerOuterCardWidthScale": 1.8,
+      "outerTailHierarchyScale": 0.5,
+      "maximumOuterTailLiftM": 0.021,
+      "cardUpperWidthInvariantThroughFraction": 0.54,
+      "rootsFixed": true
+    },
+    "c-lower-locks-balanced": {
+      "coverageTailRadiusFloor": 0.38,
+      "lowerOuterCardWidthScale": 2.3,
+      "outerTailHierarchyScale": 0.8,
+      "maximumOuterTailLiftM": 0.033600000000000005,
+      "cardUpperWidthInvariantThroughFraction": 0.54,
+      "rootsFixed": true
+    },
+    "d-lower-locks-strong": {
+      "coverageTailRadiusFloor": 0.25,
+      "lowerOuterCardWidthScale": 2.8,
+      "outerTailHierarchyScale": 1.0,
+      "maximumOuterTailLiftM": 0.042,
+      "cardUpperWidthInvariantThroughFraction": 0.54,
+      "rootsFixed": true
+    }
+  },
+  "fixed": [
+    "r587 root and upper-card geometry",
+    "r587 hair colour",
+    "r586 1.5x outer alpha",
+    "camera",
+    "lights",
+    "Standard/None exposure 0"
+  ],
+  "status": "REJECTED_VISUAL_GAIN",
+  "strictReview": {
+    "result": "REJECT",
+    "finding": "Restricting width changes below 54% avoids root strips but the 5,940-curve coverage averages the lower-card silhouette away.",
+    "scoreChange": 0
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-lower-face-clearance-r569.blend",
+  "method": "apply the visually selected three-iteration bounded outer-canthus fairing, then translate the complete cornea/sclera/iris/pupil/catchlight stack posterior as one optical unit",
+  "canthusMovedVertices": 922,
+  "maximumCanthusMoveM": 0.00111412000573821,
+  "shapeKeysMovedTogether": [
+    "Basis",
+    "Aevrynd_Philtrum_Topology_R80",
+    "Aevrynd_EyeAperture_Topology_R83",
+    "Aevrynd_EvaluatedAnatomicalLids_R183",
+    "Aevrynd_MouthPlacement_R198_5mm",
+    "Aevrynd_ConvergedUpperLid_R210"
+  ],
+  "variants": {
+    "a-r569-current": {
+      "canthusFairing": false,
+      "opticalPosteriorShiftM": 0.0,
+      "frame1BodyOverlapPairs": {
+        "Eye_L_Cornea": 0,
+        "Eye_L_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Sclera": 0
+      },
+      "frame1CollisionPass": true
+    },
+    "b-canthus-fair-optics-0p5mm": {
+      "canthusFairing": true,
+      "opticalPosteriorShiftM": 0.0005,
+      "frame1BodyOverlapPairs": {
+        "Eye_L_Cornea": 135,
+        "Eye_L_Sclera": 111,
+        "Eye_R_Cornea": 135,
+        "Eye_R_Sclera": 88
+      },
+      "frame1CollisionPass": false
+    },
+    "c-canthus-fair-optics-1p0mm": {
+      "canthusFairing": true,
+      "opticalPosteriorShiftM": 0.001,
+      "frame1BodyOverlapPairs": {
+        "Eye_L_Cornea": 173,
+        "Eye_L_Sclera": 109,
+        "Eye_R_Cornea": 173,
+        "Eye_R_Sclera": 109
+      },
+      "frame1CollisionPass": false
+    },
+    "d-canthus-fair-optics-1p5mm": {
+      "canthusFairing": true,
+      "opticalPosteriorShiftM": 0.0015,
+      "frame1BodyOverlapPairs": {
+        "Eye_L_Cornea": 164,
+        "Eye_L_Sclera": 123,
+        "Eye_R_Cornea": 174,
+        "Eye_R_Sclera": 123
+      },
+      "frame1CollisionPass": false
+    }
+  },
+  "status": "REJECTED_COLLISION",
+  "strictReview": {
+    "result": "REJECT",
+    "finding": "Posterior optical-stack shifts increase body overlap; no variant passes.",
+    "scoreChange": 0
+  }
+}

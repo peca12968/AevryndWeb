@@ -1,0 +1,106 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-eye-composite-v260.blend",
+  "method": "Aevrynd-owned object-space tone and pore fields plus the MPFB CC0 lips vertex group; no topology-specific UV dependency",
+  "variants": {
+    "a-v260-flat-control": {
+      "colorsLinearRGBA": null,
+      "roughness": null,
+      "subsurfaceWeight": null,
+      "poreScale": null,
+      "poreStrength": null,
+      "usesUv": null,
+      "usesOwnedOrCC0DataOnly": true
+    },
+    "b-neutral-owned-skin": {
+      "colorsLinearRGBA": [
+        [
+          0.18,
+          0.06,
+          0.04,
+          1.0
+        ],
+        [
+          0.245,
+          0.1,
+          0.065,
+          1.0
+        ],
+        [
+          0.25,
+          0.05,
+          0.045,
+          1.0
+        ]
+      ],
+      "roughness": 0.5,
+      "subsurfaceWeight": 0.045,
+      "poreScale": 720.0,
+      "poreStrength": 0.045,
+      "usesUv": false,
+      "usesOwnedOrCC0DataOnly": true
+    },
+    "c-balanced-owned-skin": {
+      "colorsLinearRGBA": [
+        [
+          0.195,
+          0.067,
+          0.045,
+          1.0
+        ],
+        [
+          0.27,
+          0.11,
+          0.072,
+          1.0
+        ],
+        [
+          0.27,
+          0.055,
+          0.048,
+          1.0
+        ]
+      ],
+      "roughness": 0.5,
+      "subsurfaceWeight": 0.045,
+      "poreScale": 720.0,
+      "poreStrength": 0.045,
+      "usesUv": false,
+      "usesOwnedOrCC0DataOnly": true
+    },
+    "d-warm-owned-skin": {
+      "colorsLinearRGBA": [
+        [
+          0.21,
+          0.073,
+          0.048,
+          1.0
+        ],
+        [
+          0.29,
+          0.12,
+          0.078,
+          1.0
+        ],
+        [
+          0.285,
+          0.06,
+          0.052,
+          1.0
+        ]
+      ],
+      "roughness": 0.5,
+      "subsurfaceWeight": 0.045,
+      "poreScale": 720.0,
+      "poreStrength": 0.045,
+      "usesUv": false,
+      "usesOwnedOrCC0DataOnly": true
+    }
+  },
+  "status": "SELECTED_FOR_R602_FOUNDATION",
+  "selectedVariant": "b-neutral-owned-skin",
+  "strictReview": {
+    "result": "SELECT_TECHNICAL_BOUND",
+    "finding": "Neutral is the only usable bound: it restores face-plane and lip readability without old UVs; brighter bounds overexpose, while lips and tone breakup remain too uniform.",
+    "scoreChange": 0
+  }
+}

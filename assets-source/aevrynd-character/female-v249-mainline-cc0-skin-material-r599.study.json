@@ -1,0 +1,25 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-eye-composite-v260.blend",
+  "materialSource": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-lower-face-clearance-r569.blend",
+  "material": "Aevrynd_Skin_Breakup_R510_lighter-neutral",
+  "bodyUvLayers": [
+    "UVMap"
+  ],
+  "materialExpectedUvLayers": [
+    "UVMap",
+    "AevryndAtlasUV",
+    "AevryndLipDetailUV"
+  ],
+  "missingUvLayers": [
+    "AevryndAtlasUV",
+    "AevryndLipDetailUV"
+  ],
+  "geometryChanged": false,
+  "lightingChanged": false,
+  "status": "REJECTED_DIRECT_TRANSFER",
+  "strictReview": {
+    "result": "REJECT",
+    "finding": "The r510 material references missing topology-specific lip UV and attribute masks and creates unreliable blotchy response on v260.",
+    "scoreChange": 0
+  }
+}

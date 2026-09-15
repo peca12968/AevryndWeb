@@ -1,0 +1,25 @@
+{
+  "model": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-fitted-eye-skin-foundation-r602.blend",
+  "source": "v260 MPFB CC0 alternative foundation",
+  "passes": [
+    "90% eye scale plus +2 mm inset gives zero static body overlap for sclera/cornea/iris on both eyes",
+    "Aevrynd-owned object-space skin and pore nodes use no topology-specific UV",
+    "MPFB lips vertex group is CC0",
+    "23 foundation shape keys retained"
+  ],
+  "fails": [
+    "unrigged",
+    "no dynamic collision proof",
+    "generic face identity",
+    "overuniform pink lips and mottled skin tone",
+    "no brows, lashes, tear film, teeth, tongue, hair or clothing"
+  ],
+  "strictScores": {
+    "foundationFace": 48,
+    "eyeTopologyAppearance": 62,
+    "skin": 46,
+    "overallFoundation": 49
+  },
+  "status": "STATIC_FOUNDATION_TECHNICAL_PASS_VISUAL_HERO_FAIL",
+  "promotion": "Long-term reconstruction basis only; do not replace r569, r587, or website v83."
+}

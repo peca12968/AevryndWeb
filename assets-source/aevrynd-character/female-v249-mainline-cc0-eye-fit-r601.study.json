@@ -1,0 +1,140 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-eye-composite-v260.blend",
+  "v260ImportedEyeScale": 1.08,
+  "method": "uniformly scale each complete sclera/cornea/iris stack around its shared center, then translate it along world Y; audit evaluated body overlap before visual selection",
+  "variants": {
+    "scaleminus0p90minusdepthminusminus2mm": {
+      "relativeScaleFromV260": 0.9,
+      "worldDepthShiftM": -0.002,
+      "overlapPairs": {
+        "Eye_L_Sclera": 184,
+        "Eye_L_Cornea": 222,
+        "Eye_L_Iris": 57,
+        "Eye_R_Sclera": 172,
+        "Eye_R_Cornea": 218,
+        "Eye_R_Iris": 57
+      },
+      "totalOverlapPairs": 910,
+      "collisionPass": false
+    },
+    "scaleminus0p90minusdepthminusplus0mm": {
+      "relativeScaleFromV260": 0.9,
+      "worldDepthShiftM": 0.0,
+      "overlapPairs": {
+        "Eye_L_Sclera": 0,
+        "Eye_L_Cornea": 98,
+        "Eye_L_Iris": 0,
+        "Eye_R_Sclera": 0,
+        "Eye_R_Cornea": 98,
+        "Eye_R_Iris": 0
+      },
+      "totalOverlapPairs": 196,
+      "collisionPass": false
+    },
+    "scaleminus0p90minusdepthminusplus2mm": {
+      "relativeScaleFromV260": 0.9,
+      "worldDepthShiftM": 0.002,
+      "overlapPairs": {
+        "Eye_L_Sclera": 0,
+        "Eye_L_Cornea": 0,
+        "Eye_L_Iris": 0,
+        "Eye_R_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Iris": 0
+      },
+      "totalOverlapPairs": 0,
+      "collisionPass": true
+    },
+    "scaleminus0p80minusdepthminusminus2mm": {
+      "relativeScaleFromV260": 0.8,
+      "worldDepthShiftM": -0.002,
+      "overlapPairs": {
+        "Eye_L_Sclera": 24,
+        "Eye_L_Cornea": 114,
+        "Eye_L_Iris": 18,
+        "Eye_R_Sclera": 22,
+        "Eye_R_Cornea": 114,
+        "Eye_R_Iris": 18
+      },
+      "totalOverlapPairs": 310,
+      "collisionPass": false
+    },
+    "scaleminus0p80minusdepthminusplus0mm": {
+      "relativeScaleFromV260": 0.8,
+      "worldDepthShiftM": 0.0,
+      "overlapPairs": {
+        "Eye_L_Sclera": 0,
+        "Eye_L_Cornea": 0,
+        "Eye_L_Iris": 0,
+        "Eye_R_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Iris": 0
+      },
+      "totalOverlapPairs": 0,
+      "collisionPass": true
+    },
+    "scaleminus0p80minusdepthminusplus2mm": {
+      "relativeScaleFromV260": 0.8,
+      "worldDepthShiftM": 0.002,
+      "overlapPairs": {
+        "Eye_L_Sclera": 0,
+        "Eye_L_Cornea": 0,
+        "Eye_L_Iris": 0,
+        "Eye_R_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Iris": 0
+      },
+      "totalOverlapPairs": 0,
+      "collisionPass": true
+    },
+    "scaleminus0p70minusdepthminusminus2mm": {
+      "relativeScaleFromV260": 0.7,
+      "worldDepthShiftM": -0.002,
+      "overlapPairs": {
+        "Eye_L_Sclera": 0,
+        "Eye_L_Cornea": 0,
+        "Eye_L_Iris": 0,
+        "Eye_R_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Iris": 0
+      },
+      "totalOverlapPairs": 0,
+      "collisionPass": true
+    },
+    "scaleminus0p70minusdepthminusplus0mm": {
+      "relativeScaleFromV260": 0.7,
+      "worldDepthShiftM": 0.0,
+      "overlapPairs": {
+        "Eye_L_Sclera": 0,
+        "Eye_L_Cornea": 0,
+        "Eye_L_Iris": 0,
+        "Eye_R_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Iris": 0
+      },
+      "totalOverlapPairs": 0,
+      "collisionPass": true
+    },
+    "scaleminus0p70minusdepthminusplus2mm": {
+      "relativeScaleFromV260": 0.7,
+      "worldDepthShiftM": 0.002,
+      "overlapPairs": {
+        "Eye_L_Sclera": 0,
+        "Eye_L_Cornea": 0,
+        "Eye_L_Iris": 0,
+        "Eye_R_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Iris": 0
+      },
+      "totalOverlapPairs": 0,
+      "collisionPass": true
+    }
+  },
+  "status": "SELECTED_FOR_R602_FOUNDATION",
+  "selectedVariant": "scaleminus0p90minusdepthminusplus2mm",
+  "strictReview": {
+    "result": "SELECT_TECHNICAL_BOUND",
+    "finding": "90% of the v260 imported eye size with a +2 mm world-Y inset is the largest tested zero-overlap fit without the visibly undersized 80%/70% result.",
+    "scoreChange": 0
+  }
+}
