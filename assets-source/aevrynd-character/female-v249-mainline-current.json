@@ -26,8 +26,8 @@
   "publicWebsiteAsset": "v83",
   "publicWebsiteReplacementApproved": false,
   "nextRequiredWork": [
-    "Build explicit owned inner-mouth layers: oral cavity, gums, teeth and tongue, with clear material and collision ownership.",
-    "Replace the shallow expression probes with jaw-coupled mouth-open, smile, lip compression and phoneme shapes; validate combined expressions and frames 1/20/33/61 with zero self-intersection.",
+    "Cut one contiguous mouth aperture through the main face component, remove only the proven hidden broken oral components, and attach a weighted continuous inner rim while preserving all 35 shape keys and deform weights.",
+    "Rebuild explicit owned cavity, gums, upper/lower teeth and tongue behind the new rim, with zero body-layer and inter-layer surface intersection.",
     "Remove the remaining bright lower-lip rim through continuous interior topology and normal continuity rather than stronger dark material.",
     "Continue cranial silhouette, alar-perioral transition and regional skin-detail work under the fixed-light tone contract.",
     "Rebuild hair as coherent guide clumps with root coverage, secondary motion and body/clothing collision; pass front/side/rear and 11-shot gates.",
@@ -138,5 +138,9 @@
   "latestOpenEyelidTechnicalStudy": "aevrynd-female-cc0-balanced-open-aperture-r1015-study.blend",
   "latestEyeTopologyResearch": "r1011-r1028 open-aperture, continuous canthus, orbital volume and interpolated collision-pruned lash density",
   "latestEyeTopologyResearchStatus": "R1028B_91_UPPER_43_42_LOWER_SELF_AND_FOUR_FRAME_COLLISION_PASS_4_DRAW_PAIRS; face 48/lashes 61; no website promotion",
-  "latestMouthReview": "reviews/v249r1030-r1033-mouth/contact-sheet-r1030-r1033.jpg"
+  "latestMouthReview": "reviews/v249r1030-r1033-mouth/contact-sheet-r1030-r1033.jpg",
+  "latestMouthRejectedExperiment": "r1034 direct owned oral cavity, gum, teeth and tongue insertion",
+  "latestMouthRejectedReason": "All three depth variants are occluded by the 13,583-vertex main face component and fail collision: cavity, both gums and tongue intersect the body, while five oral-layer pairs intersect. The two visible 38-edge mouth loops are detached 68-vertex lip shells rather than a true aperture; a hidden 226-vertex internal component and fragmented patches sit behind them.",
+  "latestMouthTopologyResearch": "female-v249-mainline-r1034-owned-oral-layers-sweep.study.json; reviews/v249r1034-oral-layer-rejection/contact-sheet-r1034-rejection.jpg",
+  "latestMouthTopologyStatus": "R1034_REJECTED_ROOT_CAUSE_PROVEN; no output candidate and no website promotion. r1033 remains retained."
 }
