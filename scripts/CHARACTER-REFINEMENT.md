@@ -1492,3 +1492,12 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - The selected balanced bound changes 720 existing vertices while preserving all 35 shape keys. It slightly reduces tangential serration and the planar lower-lip read, raising strict mouth quality from 34 to 36/100.
 - The inherited cut rhythm, hard lower highlight, weak commissures and flat dental forms remain obvious. r1040 is retained as a technical study only; r1033 remains the visual/technical face candidate and website promotion stays forbidden.
 - Fixed-crop drift from r1039 is -0.000306% left cheek, +0.000310% right cheek and 0.0% forehead. No global darkening occurs; website v83 remains unchanged at the documented 5.56% skin-base-colour deficit.
+
+
+### v249r1041 — monotonic six-ring parameterization, technical pass and visual rejection
+
+- The first parameterization inferred angles from the irregular outer-ring coordinates. Local angular reversals created 12-66 non-adjacent self-collision pairs even at low strengths, so those diagnostics were discarded. r1041 instead assigns 120 monotonic, equally spaced angles from the closed topological order and locks the complete outer seam.
+- Strength 0.35 passes body self-collision and all six oral-layer overlap checks at frames 1/20/33/61 plus mouth-open and smile. Strength 0.50 fails all six states and is rejected. The final deterministic Blender rerun includes only the passing bound after a redundant second-scene render exposed a Blender 5.2.1 background crash.
+- The valid topology result is visually rejected at 31/100. It retains a hard upper strip, white lower highlight, pointed commissures and planar cavity/dental layers, regressing from r1040 36/100 and retained r1033 39/100.
+- Fixed-crop drift from r1039 is -0.000024% left cheek, +0.000552% right cheek and 0.0% forehead. No material, light, exposure, colour-management or website asset changed.
+- r1033 remains the face technical mainline. The next mouth route must replace the full perioral patch with closed commissure poles and anatomically continuous philtrum, vermilion and wetline flow; further six-ring smoothing is closed.
