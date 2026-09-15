@@ -1,0 +1,41 @@
+{
+  "revisionRange": "v249r1002-r1007",
+  "sourceCandidate": "aevrynd-female-cc0-mixed-space-eyelid-relief-r1001.blend",
+  "selectedLocalTechnicalCandidate": "aevrynd-female-cc0-projected-caruncle-r1007.blend",
+  "strictFaceScoreBefore": 48,
+  "strictFaceScoreAfter": 48,
+  "status": "R1007_CARUNCLE_LAYER_TECHNICAL_PASS_NO_VISUAL_SCORE_GAIN",
+  "websitePromotion": "FORBIDDEN",
+  "r1002": {
+    "study": "female-v249-mainline-cc0-canthus-closure-r1002.study.json",
+    "verdict": "REJECT_COLLISION_AND_LOW_VISUAL_GAIN",
+    "finding": "Continuous-body corner closure moves 826 vertices by up to 2.085 mm. Half/full/strong create 21/39/65 lower-lash triangle overlaps while barely reducing the corner void."
+  },
+  "r1003": {
+    "study": "female-v249-mainline-cc0-target-native-caruncle-r1003.study.json",
+    "verdict": "REJECT_PARENT_SPACE_TRANSFORM_ERROR",
+    "finding": "The procedural ellipsoids were bone-parented correctly, then variant location was written in parent space as though it were world space. They do not appear at the intended canthi."
+  },
+  "r1004": {
+    "study": "female-v249-mainline-cc0-world-matrix-caruncle-r1004.study.json",
+    "verdict": "REJECT_OCCLUDED_OR_COLLIDING",
+    "finding": "Explicit world matrices fix placement. The small bound is fully occluded; medium and large bounds affect only a few pixels and produce 44/96 body overlaps."
+  },
+  "r1005": {
+    "study": "female-v249-mainline-cc0-forward-caruncle-r1005.study.json",
+    "verdict": "REJECT_BODY_COLLISION",
+    "finding": "Thin forward ellipsoids remain closed volumes and intersect the irregular canthus wall with 56/104/112 body overlaps."
+  },
+  "r1006": {
+    "study": "female-v249-mainline-cc0-projected-caruncle-patch-r1006.study.json",
+    "selectedVariant": "b-small",
+    "finding": "A 97-vertex patch per side is ray-projected to the visible sclera and offset toward the camera. The small 1.0 x 0.6 mm radius bound has zero projection misses and zero body, sclera, cornea or lash overlap."
+  },
+  "r1007": {
+    "collisionAudit": "female-v249-mainline-cc0-projected-caruncle-r1007.collision-audit.json",
+    "review": "reviews/v249r1002-r1007-canthus-caruncle/contact-sheet-r1007.jpg",
+    "technicalResult": "Frames 1, 20, 33 and 61 have zero overlap against body, sclera, cornea and both lash layers. The layer is explicitly named, procedurally owned and head-bone bound.",
+    "visualResult": "The caruncle reads only as a tiny pink medial tissue point in oblique views. It does not repair the outer canthus void and adds no strict score. Minimum patch-to-cornea vertex distance is about 0.041 mm, so this remains an offline local layer candidate."
+  },
+  "nextAction": "Reconstruct the outer canthus and palpebral margin from the active mixed body surface with an explicit collision-constrained boundary field; retain r1001 and treat r1007 as an optional anatomical layer."
+}

@@ -1,0 +1,157 @@
+"""Sweep thin caruncles forward into the visible medial aperture on r1001."""
+
+import json
+from pathlib import Path
+
+import bpy
+from mathutils import Matrix, Vector
+from mathutils.bvhtree import BVHTree
+
+
+ROOT = Path(__file__).resolve().parents[1]
+ASSETS = ROOT / "assets-source/aevrynd-character"
+SOURCE = ASSETS / "aevrynd-female-cc0-mixed-space-eyelid-relief-r1001.blend"
+OUTPUT = ASSETS / "aevrynd-female-cc0-forward-caruncle-r1005-study.blend"
+REPORT = ASSETS / "female-v249-mainline-cc0-forward-caruncle-r1005.study.json"
+RENDER_DIR = ROOT.parent / "Temp/female-realism/v249r1005-forward-caruncle"
+BODY = "AevryndFemaleCC0Baseline_v259"
+VARIANTS = (
+    ("a-none", 0.0, 0.0, 0.0, 0.01725, -0.12115),
+    ("b-thin-forward-1", 0.00130, 0.00025, 0.00070, 0.01780, -0.12150),
+    ("c-thin-forward-2", 0.00150, 0.00025, 0.00075, 0.01800, -0.12250),
+    ("d-thin-forward-3", 0.00170, 0.00025, 0.00080, 0.01820, -0.12350),
+)
+VIEWS = (
+    ("front", (0.0, -0.48, 1.485), (0.0, -0.060, 1.485)),
+    ("three-quarter-left", (0.155, -0.445, 1.485), (0.0, -0.060, 1.480)),
+    ("three-quarter-right", (-0.155, -0.445, 1.485), (0.0, -0.060, 1.480)),
+)
+
+
+def world_tree(obj):
+    depsgraph = bpy.context.evaluated_depsgraph_get()
+    depsgraph.update()
+    evaluated = obj.evaluated_get(depsgraph)
+    mesh = evaluated.to_mesh()
+    vertices = [evaluated.matrix_world @ vertex.co for vertex in mesh.vertices]
+    polygons = [tuple(poly.vertices) for poly in mesh.polygons]
+    tree = BVHTree.FromPolygons(vertices, polygons, all_triangles=False)
+    evaluated.to_mesh_clear()
+    return tree
+
+
+def look_at(camera, target):
+    camera.rotation_euler = (Vector(target) - camera.location).to_track_quat("-Z", "Y").to_euler()
+
+
+def create_caruncle(side, material, rig):
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=24, ring_count=12, radius=1.0)
+    obj = bpy.context.object
+    obj.name = f"Eye_{side}_Caruncle_R1005"
+    obj.data.name = f"Aevrynd_TargetNativeCaruncle_{side}_R1005"
+    obj.data.materials.append(material)
+    obj.parent = rig
+    obj.parent_type = "BONE"
+    obj.parent_bone = "head"
+    obj.matrix_world = Matrix.Translation(
+        Vector((0.01755 if side == "L" else -0.01755, -0.12115, 1.4490))
+    ) @ Matrix.Diagonal((0.00145, 0.00034, 0.00075, 1.0))
+    obj["aevrynd_revision"] = "v249r1005-forward-caruncle-study"
+    obj["aevrynd_layer"] = "caruncle"
+    obj["aevrynd_ownership"] = "procedural-in-project"
+    return obj
+
+
+bpy.ops.wm.open_mainfile(filepath=str(SOURCE))
+scene = bpy.context.scene
+scene.frame_set(1)
+bpy.context.view_layer.update()
+rig = bpy.data.objects["AevryndFemaleRig"]
+
+material = bpy.data.materials.get("Aevrynd_TargetNativeCaruncle_R1005") or bpy.data.materials.new(
+    "Aevrynd_TargetNativeCaruncle_R1005"
+)
+material.use_nodes = True
+shader = next(node for node in material.node_tree.nodes if node.bl_idname == "ShaderNodeBsdfPrincipled")
+shader.inputs["Base Color"].default_value = (0.22, 0.055, 0.045, 1.0)
+shader.inputs["Roughness"].default_value = 0.52
+shader.inputs["Specular IOR Level"].default_value = 0.18
+shader.inputs["Subsurface Weight"].default_value = 0.035
+material["aevrynd_ownership"] = "procedural-in-project"
+
+objects = {side: create_caruncle(side, material, rig) for side in ("L", "R")}
+RENDER_DIR.mkdir(parents=True, exist_ok=True)
+scene.render.resolution_x = scene.render.resolution_y = 800
+camera = scene.camera
+camera.data.lens = 105
+
+hidden = []
+for obj in scene.objects:
+    if obj.name.startswith(("Groom_", "AevryndFemaleTargetScalp")) or obj.type in {"CURVES", "CURVE"}:
+        if not obj.hide_render:
+            obj.hide_render = True
+            hidden.append(obj.name)
+
+results = []
+for label, rx, ry, rz, center_abs_x, center_y in VARIANTS:
+    for side, obj in objects.items():
+        obj.hide_render = rx == 0.0
+        obj.matrix_world = Matrix.Translation(
+            Vector((center_abs_x if side == "L" else -center_abs_x, center_y, 1.4490))
+        ) @ Matrix.Diagonal((max(rx, 1e-7), max(ry, 1e-7), max(rz, 1e-7), 1.0))
+    bpy.context.view_layer.update()
+    collisions = {}
+    if rx:
+        body_tree = world_tree(bpy.data.objects[BODY])
+        for side, obj in objects.items():
+            caruncle_tree = world_tree(obj)
+            collisions[side] = {
+                "body": len(body_tree.overlap(caruncle_tree)),
+                "sclera": len(world_tree(bpy.data.objects[f"Eye_{side}_Sclera"]).overlap(caruncle_tree)),
+                "cornea": len(world_tree(bpy.data.objects[f"Eye_{side}_Cornea"]).overlap(caruncle_tree)),
+                "upperLashes": len(world_tree(bpy.data.objects[f"Eye_{side}_UpperLashes"]).overlap(caruncle_tree)),
+                "lowerLashes": len(world_tree(bpy.data.objects[f"Eye_{side}_LowerLashes"]).overlap(caruncle_tree)),
+            }
+    rendered = []
+    for view_name, location, target in VIEWS:
+        camera.location = location
+        look_at(camera, target)
+        path = RENDER_DIR / f"{label}-{view_name}.png"
+        scene.render.filepath = str(path)
+        bpy.ops.render.render(write_still=True)
+        rendered.append(str(path))
+    total = sum(value for side in collisions.values() for value in side.values())
+    results.append(
+        {
+            "label": label,
+            "radiiM": [rx, ry, rz],
+            "centerAbsXM": center_abs_x,
+            "centerYM": center_y,
+            "triangleOverlaps": collisions,
+            "totalTriangleOverlaps": total,
+            "rendered": rendered,
+            "status": "PASS" if total == 0 else "FAIL",
+        }
+    )
+
+for name in hidden:
+    bpy.data.objects[name].hide_render = False
+for obj in objects.values():
+    obj.hide_render = False
+scene["aevrynd_mainline_revision"] = "v249r1005-forward-caruncle-study"
+scene["aevrynd_mainline_parent"] = SOURCE.name
+scene["aevrynd_release_state"] = "STUDY_ONLY_VISUAL_REVIEW_REQUIRED"
+scene["aevrynd_website_promotion"] = "forbidden"
+report = {
+    "source": str(SOURCE),
+    "output": str(OUTPUT),
+    "objects": [obj.name for obj in objects.values()],
+    "material": material.name,
+    "variants": results,
+    "selected": None,
+    "status": "VISUAL_REVIEW_REQUIRED",
+}
+REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")
+bpy.context.preferences.filepaths.save_version = 0
+bpy.ops.wm.save_as_mainfile(filepath=str(OUTPUT))
+print("AEVRYND_R1005_FORWARD_CARUNCLE=" + json.dumps(report, sort_keys=True))
