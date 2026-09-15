@@ -1,0 +1,34 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-orbital-brow-refit-r526.blend",
+  "primaryGuides": 124,
+  "collisionClearanceM": 0.002,
+  "method": "jitter the 13 scalp-root rows, vary each lock's 23-50mm surface-follow distance and add independent tangential Y/height flow before gravity release; hold density and cross-section spread fixed",
+  "variants": {
+    "a-r526-current": {
+      "childrenPerGuide": null,
+      "crossSectionSpread": null,
+      "rootFlowIrregularity": null,
+      "curves": 0
+    },
+    "b-root-flow-0p35": {
+      "childrenPerGuide": 40,
+      "crossSectionSpread": 1.5,
+      "rootFlowIrregularity": 0.35,
+      "curves": 4960
+    },
+    "c-root-flow-0p65": {
+      "childrenPerGuide": 40,
+      "crossSectionSpread": 1.5,
+      "rootFlowIrregularity": 0.65,
+      "curves": 4960
+    },
+    "d-root-flow-1p00": {
+      "childrenPerGuide": 40,
+      "crossSectionSpread": 1.5,
+      "rootFlowIrregularity": 1.0,
+      "curves": 4960
+    }
+  },
+  "ownership": "Aevrynd procedural groom on owned CC0-derived body; no external runtime or asset dependency",
+  "status": "VISUAL_AND_ROOT_FIELD_SWEEP_ONLY"
+}

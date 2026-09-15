@@ -1,0 +1,30 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-orbital-brow-refit-r526.blend",
+  "primaryGuides": 122,
+  "collisionClearanceM": 0.002,
+  "method": "sample roots directly from owned scalp; keep the first eight controls projected along 30-40mm of scalp surface before gravity release; retain 55% root spread through the lock; sweep child cross-section spread",
+  "variants": {
+    "a-r526-current": {
+      "childrenPerGuide": null,
+      "crossSectionSpread": null,
+      "curves": 0
+    },
+    "b-surface-spread-1p0": {
+      "childrenPerGuide": 40,
+      "crossSectionSpread": 1.0,
+      "curves": 4880
+    },
+    "c-surface-spread-1p5": {
+      "childrenPerGuide": 40,
+      "crossSectionSpread": 1.5,
+      "curves": 4880
+    },
+    "d-surface-spread-2p0": {
+      "childrenPerGuide": 40,
+      "crossSectionSpread": 2.0,
+      "curves": 4880
+    }
+  },
+  "ownership": "Aevrynd procedural groom on owned CC0-derived body; no external runtime or asset dependency",
+  "status": "VISUAL_AND_ROOT_FIELD_SWEEP_ONLY"
+}
