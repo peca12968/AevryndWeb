@@ -9,8 +9,8 @@
   "latestHairMaterialStudy": "aevrynd-female-authoring-v249-mainline-runtime-balanced-brunette-r468-study.blend",
   "latestHairPerformanceResearch": "r227-r272 density and thin cards; r273-r287 runtime wide-card layers; r288-r298 authored curves, macro locks and collision-safe motion; r299 rejected baby-hair study",
   "latestHairPerformanceResearchStatus": "r298 retains 776 primary, 10,086 secondary and 70 flyaway curves at 262,368 visible points. Frames 1/33/61 have zero penetration, zero root drift and zero settle error with 3.492mm peak P95 motion. r299 surface baby hairs are rejected as sparse spikes.",
-  "latestEyeTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-orbital-brow-refit-r526.blend",
-  "latestEyeCandidateStatus": "R526_PASS; complete irises retained, visible cornea/sclera intact, zero body/eye overlap frames 1/20/33/61, strict eye score 70/100.",
+  "latestEyeTechnicalCandidate": "aevrynd-female-cc0-wetline-optics-r1022-study.blend",
+  "latestEyeCandidateStatus": "R1022A_LOCAL_ONLY; inherited r1020a geometry has 48 margin edges per eye, two attached support rings, 30 compatible shape keys, weighted new vertices and zero body/eye/lash overlap at frames 1/20/33/61. Strict integrated face remains 48/100.",
   "latestFaceTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-lower-face-clearance-r569.blend",
   "latestFaceCandidateStatus": "R569_OFFLINE_TECHNICAL_PASS_VISUAL_HERO_FAIL_SCORE_60; 6,891 lower-face vertices move by at most 1.796mm across all six shape keys, with zero face-layer or runtime-hair penetration and a passing fixed-tone contract.",
   "latestSkinTechnicalCandidate": "aevrynd-female-authoring-v249-mainline-lighter-neutral-skin-r510.blend",
@@ -26,7 +26,7 @@
   "publicWebsiteAsset": "v83",
   "publicWebsiteReplacementApproved": false,
   "nextRequiredWork": [
-    "以 r1017 每眼單一 24 邊眼裂作定位參考，建立獨立高密度上／下眼瞼 patch 與至少兩圈支撐 edge loops，再將其無縫接回目前頭部；轉移 30 個 shape keys 與頭骨權重，重建睫毛後驗證 1/20/33/61 幀零碰撞。",
+    "以 r1020a 的每眼 48 邊眼裂與兩圈支撐環為拓撲底座，重新建立內外眼角閉合楔、上瞼提肌體積與眶脂肪過渡；保留 r1022a 低鏡面深玫瑰濕線，重建睫毛後驗證 1/20/33/61 幀零碰撞。",
     "以 r630/r631 通過的五個肩部 pose-space correctives 為骨架基底，擴充肘彎、前臂旋前旋後、手腕屈伸、手指、髖屈伸、深蹲與步態動作；每個動作維持 edge ratio 0.30–2.50、體積 0.85–1.15、眼層零碰撞與身體非鄰接面零自穿插，並雕刻腋下與肩胛肌肉滑動以提高目前 60/100 的骨架視覺分。",
     "以 r584 的固定深暖棕色、零穿模多幀包絡與 32 片切線髮卡為技術底座，重新雕刻可見的 front/side/rear macro-lock 層級，打破直簾輪廓與規則中分；外層卡片必須保持柔化髮根與遮擋排序，且不能重新引入 r577 頂部亮條。",
     "以 r569 零穿模下臉比例為基底，局部重建每眼 52 點開放邊界與外眼角 edge loops，重新配合 cornea/sclera/tear/lash clearance；同時重建眼瞼厚度、唇縫內緣與眶脂肪，維持固定色調契約。",
@@ -68,9 +68,9 @@
   "latestHairResearchStatus": "r584 is the current offline hair tone/collision technical candidate at 50/100: direct warm-brown coverage fixes perceived darkening, 11-shot appearance is stable, and all four body/clothing frames have zero penetration. It does not replace r517 as runtime hair candidate because macro hierarchy remains subtle and natural secondary motion is absent. Website v83 remains unchanged.",
   "latestFaceDiagnostic": "female-v249-mainline-neutral-diagnostic-r415.study.json",
   "latestFaceDiagnosticStatus": "ACCEPTED_NEUTRAL_WHITE_THREE_AREA_LIGHT_RIG_AGX_BASE_CONTRAST",
-  "latestFaceRejectedExperiment": "r410-r416 orbital and aperture rejects; r421-r425 applied-body eyelid displacement/smoothing rejects; r427-r434 failed QuadriFlow input repair; r436 unsafe unconstrained reprojection; r437-r440 detached eye-patch rejects; r442 invalid lower-path deformation; r443-r444 colliding hybrid optics; r518 material/curve-only facial contrast; r520 clipped radial iris and deep-recess iris trials; r522 1.75-strength commissure bound; r523-r524 orbital displacement with no nonzero collision-safe interval; r561 eyelid aperture fairing; r563 outer-canthus contraction; r566-r567 canthus Laplacian fairing with optical collision; r568 unclamped lower-face field with optical collision; r1015 fragmented true-aperture cut; r1016 fragmented inner-wall sweep; r1017 coarse but contiguous 24-edge cut; r1018 collision-limited inner-wall sweep; r1019 zero-collision guide projection without hero gain",
-  "latestFaceRejectedReason": "r1017 proves a single connected aperture can preserve all 30 shape keys and stay clear of every eye/lash layer, but 24 boundary edges are insufficient for a smooth hero eyelid. r1018 depth cannot hide the coarse globe transition without collision, and r1019 guide projection does not add the missing supporting edge rings. The next valid route is local eyelid patch retopology with denser upper/lower loops, transferred weights and shape-key deltas.",
-  "latestFaceLightingStatus": "PASS_FIXED_REVIEW_TONE_CONTRACT; r475 to r480 keeps the visible body material, Standard/None, exposure 0, gamma 1, world strength 0.15 and the five neutral review-light energies unchanged. Linear luminance drift is -0.0171% left cheek, -0.0169% right cheek and +0.0002% central lower face, all far below the 1% gate.",
+  "latestFaceRejectedExperiment": "r410-r416 orbital and aperture rejects; r421-r425 applied-body eyelid displacement/smoothing rejects; r427-r434 failed QuadriFlow input repair; r436 unsafe unconstrained reprojection; r437-r440 detached eye-patch rejects; r442 invalid lower-path deformation; r443-r444 colliding hybrid optics; r518 material/curve-only facial contrast; r520 clipped radial iris and deep-recess iris trials; r522 1.75-strength commissure bound; r523-r524 orbital displacement with no nonzero collision-safe interval; r561 eyelid aperture fairing; r563 outer-canthus contraction; r566-r567 canthus Laplacian fairing with optical collision; r568 unclamped lower-face field with optical collision; r1015 fragmented true-aperture cut; r1016 fragmented inner-wall sweep; r1017 coarse but contiguous 24-edge cut; r1018 collision-limited inner-wall sweep; r1019 zero-collision guide projection without hero gain; r1020b/c cornea-intersecting support-ring depths; r1021 bright pink coated wetline; r1022 local optics without canthus or identity repair",
+  "latestFaceRejectedReason": "r1020a proves denser attached eyelid topology can preserve 30 shape keys, weights and four-frame collision clearance. Greater depth intersects cornea. r1021 proves bright coated wetline optics are plastic; r1022a fixes the local optical response but integrated review remains 48/100. Next work must rebuild canthus closure and broader orbital/lid volume rather than tune the narrow margin again.",
+  "latestFaceLightingStatus": "PASS_FIXED_REVIEW_TONE_CONTRACT; r1020a to r1022a drift is -0.000005% forehead, -0.000496% left cheek and -0.000390% right cheek, far inside the plus-or-minus 1% gate.",
   "latestFaceRetopologyResearch": "female-v249-mainline-r437-r446-eye-topology-recovery.json",
   "latestFaceRetopologyResearchStatus": "OPEN_TOPOLOGY_BASELINE_RECOVERED_R446_COLLISION_PASS_VISUAL_FAIL",
   "latestOpenTopologyHairIntegrationResearch": "female-v249-mainline-r446-r452-open-topology-hair-integration.json",
@@ -143,6 +143,6 @@
   "nextFaceTopologyWork": "Extrude a continuous inward eyelid wall from the r1015 balanced open boundary, preserve all 30 shape keys and vertex weights, fit outside the eye envelope, rebuild lashes, and pass frames 1/20/33/61 plus self-collision and fixed-tone review.",
   "latestOpenEyelidTopologyResearch": "r1011-r1015 rear-boundary extraction, authored-margin transfer, closed anatomical guide and true-aperture cut",
   "latestOpenEyelidTechnicalStudy": "aevrynd-female-cc0-balanced-open-aperture-r1015-study.blend",
-  "latestEyeTopologyResearch": "r1011-r1019 open-aperture retarget, contiguous-cut, inner-wall and guide-regularization studies",
-  "latestEyeTopologyResearchStatus": "R1017_CONTIGUOUS_24_EDGE_BOUNDARY_FOUR_FRAME_COLLISION_PASS; R1016/R1018/R1019_VISUAL_REJECT; no website promotion"
+  "latestEyeTopologyResearch": "r1011-r1022 open-aperture retarget, 48-edge attached patch, support-ring, canthus and wetline optics studies",
+  "latestEyeTopologyResearchStatus": "R1020A_48_EDGE_TWO_SUPPORT_RING_FOUR_FRAME_ZERO_COLLISION_TECHNICAL_PASS; R1022A_DRY_ROSE_LOCAL_OPTICAL_PASS; INTEGRATED_FACE_HERO_FAIL_48; no website promotion"
 }

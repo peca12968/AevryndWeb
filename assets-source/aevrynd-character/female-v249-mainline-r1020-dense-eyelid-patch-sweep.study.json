@@ -1,0 +1,814 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-contiguous-open-aperture-r1017-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-dense-eyelid-patch-r1020-study.blend",
+  "method": "subdivide each 24-edge visible aperture to 48 edges, regularize against the owned guide, then add two attached inward support rings",
+  "variants": [
+    {
+      "label": "a-shallow",
+      "depthM": {
+        "first": 0.00014,
+        "total": 0.00025
+      },
+      "radialShrink": {
+        "first": 0.004,
+        "total": 0.008
+      },
+      "sourceBoundaryComponents": {
+        "L": [
+          28,
+          27,
+          24,
+          1,
+          1
+        ],
+        "R": [
+          28,
+          27,
+          24,
+          1,
+          1
+        ]
+      },
+      "denseBoundaryComponents": {
+        "L": [
+          48,
+          28,
+          27,
+          1,
+          1
+        ],
+        "R": [
+          48,
+          28,
+          27,
+          1,
+          1
+        ]
+      },
+      "subdivision": {
+        "beforeVertices": 19158,
+        "afterVertices": 19206,
+        "addedVertices": 48
+      },
+      "regularization": {
+        "ringVerticesBySide": {
+          "L": 48,
+          "R": 48
+        },
+        "maximumDeltaMm": 0.7440924681711778,
+        "meanDeltaMm": 0.1924437133182664
+      },
+      "patch": {
+        "beforeVertices": 19206,
+        "afterVertices": 19398,
+        "addedVertices": 192,
+        "firstRingVertices": 96,
+        "secondRingVertices": 96,
+        "beforeShapeKeys": [
+          "Basis",
+          "$md-$as-$fe-$ch",
+          "$md-$as-$fe-$yn",
+          "$md-$as-$ma-$yn",
+          "$md-$ca-$fe-$ch",
+          "$md-$ca-$fe-$yn",
+          "$md-$ca-$ma-$yn",
+          "$md-$af-$fe-$ch",
+          "$md-$af-$fe-$yn",
+          "$md-$af-$ma-$yn",
+          "$md-universal-$fe-$ch-min$mu-$av$wg",
+          "$md-universal-$fe-$ch-$av$mu-$av$wg",
+          "$md-universal-$fe-$yn-min$mu-$av$wg",
+          "$md-universal-$fe-$yn-$av$mu-min$wg",
+          "$md-universal-$fe-$yn-$av$mu-$av$wg",
+          "$md-universal-$ma-$yn-$av$mu-$av$wg",
+          "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+          "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
+          "ElbowCreaseVolume70.L",
+          "ElbowCreaseVolume70.R",
+          "KneeEdgeConstraint75.L",
+          "KneeEdgeConstraint75.R",
+          "KneeCreaseVolume75.L",
+          "KneeCreaseVolume75.R",
+          "Aevrynd_MixedSpaceEyelidRelief_R1000"
+        ],
+        "afterShapeKeys": [
+          "Basis",
+          "$md-$as-$fe-$ch",
+          "$md-$as-$fe-$yn",
+          "$md-$as-$ma-$yn",
+          "$md-$ca-$fe-$ch",
+          "$md-$ca-$fe-$yn",
+          "$md-$ca-$ma-$yn",
+          "$md-$af-$fe-$ch",
+          "$md-$af-$fe-$yn",
+          "$md-$af-$ma-$yn",
+          "$md-universal-$fe-$ch-min$mu-$av$wg",
+          "$md-universal-$fe-$ch-$av$mu-$av$wg",
+          "$md-universal-$fe-$yn-min$mu-$av$wg",
+          "$md-universal-$fe-$yn-$av$mu-min$wg",
+          "$md-universal-$fe-$yn-$av$mu-$av$wg",
+          "$md-universal-$ma-$yn-$av$mu-$av$wg",
+          "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+          "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
+          "ElbowCreaseVolume70.L",
+          "ElbowCreaseVolume70.R",
+          "KneeEdgeConstraint75.L",
+          "KneeEdgeConstraint75.R",
+          "KneeCreaseVolume75.L",
+          "KneeCreaseVolume75.R",
+          "Aevrynd_MixedSpaceEyelidRelief_R1000"
+        ],
+        "shapeKeyLengths": {
+          "Basis": 19398,
+          "$md-$as-$fe-$ch": 19398,
+          "$md-$as-$fe-$yn": 19398,
+          "$md-$as-$ma-$yn": 19398,
+          "$md-$ca-$fe-$ch": 19398,
+          "$md-$ca-$fe-$yn": 19398,
+          "$md-$ca-$ma-$yn": 19398,
+          "$md-$af-$fe-$ch": 19398,
+          "$md-$af-$fe-$yn": 19398,
+          "$md-$af-$ma-$yn": 19398,
+          "$md-universal-$fe-$ch-min$mu-$av$wg": 19398,
+          "$md-universal-$fe-$ch-$av$mu-$av$wg": 19398,
+          "$md-universal-$fe-$yn-min$mu-$av$wg": 19398,
+          "$md-universal-$fe-$yn-$av$mu-min$wg": 19398,
+          "$md-universal-$fe-$yn-$av$mu-$av$wg": 19398,
+          "$md-universal-$ma-$yn-$av$mu-$av$wg": 19398,
+          "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi": 19398,
+          "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi": 19398,
+          "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi": 19398,
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi": 19398,
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi": 19398,
+          "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi": 19398,
+          "$md-$fe-$yn-$av$mu-$av$wg-$id$pr": 19398,
+          "ElbowCreaseVolume70.L": 19398,
+          "ElbowCreaseVolume70.R": 19398,
+          "KneeEdgeConstraint75.L": 19398,
+          "KneeEdgeConstraint75.R": 19398,
+          "KneeCreaseVolume75.L": 19398,
+          "KneeCreaseVolume75.R": 19398,
+          "Aevrynd_MixedSpaceEyelidRelief_R1000": 19398
+        },
+        "shapeKeyCompatibility": true,
+        "newVerticesWithWeights": 192,
+        "newVertexMinimumWeightGroupCount": 3
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1020-dense-eyelid-patch-sweep\\a-shallow-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1020-dense-eyelid-patch-sweep\\a-shallow-three-quarter-left.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1020-dense-eyelid-patch-sweep\\a-shallow-three-quarter-right.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "b-balanced",
+      "depthM": {
+        "first": 0.0002,
+        "total": 0.00035
+      },
+      "radialShrink": {
+        "first": 0.006,
+        "total": 0.012
+      },
+      "sourceBoundaryComponents": {
+        "L": [
+          28,
+          27,
+          24,
+          1,
+          1
+        ],
+        "R": [
+          28,
+          27,
+          24,
+          1,
+          1
+        ]
+      },
+      "denseBoundaryComponents": {
+        "L": [
+          48,
+          28,
+          27,
+          1,
+          1
+        ],
+        "R": [
+          48,
+          28,
+          27,
+          1,
+          1
+        ]
+      },
+      "subdivision": {
+        "beforeVertices": 19158,
+        "afterVertices": 19206,
+        "addedVertices": 48
+      },
+      "regularization": {
+        "ringVerticesBySide": {
+          "L": 48,
+          "R": 48
+        },
+        "maximumDeltaMm": 0.7440924681711778,
+        "meanDeltaMm": 0.1924437133182664
+      },
+      "patch": {
+        "beforeVertices": 19206,
+        "afterVertices": 19398,
+        "addedVertices": 192,
+        "firstRingVertices": 96,
+        "secondRingVertices": 96,
+        "beforeShapeKeys": [
+          "Basis",
+          "$md-$as-$fe-$ch",
+          "$md-$as-$fe-$yn",
+          "$md-$as-$ma-$yn",
+          "$md-$ca-$fe-$ch",
+          "$md-$ca-$fe-$yn",
+          "$md-$ca-$ma-$yn",
+          "$md-$af-$fe-$ch",
+          "$md-$af-$fe-$yn",
+          "$md-$af-$ma-$yn",
+          "$md-universal-$fe-$ch-min$mu-$av$wg",
+          "$md-universal-$fe-$ch-$av$mu-$av$wg",
+          "$md-universal-$fe-$yn-min$mu-$av$wg",
+          "$md-universal-$fe-$yn-$av$mu-min$wg",
+          "$md-universal-$fe-$yn-$av$mu-$av$wg",
+          "$md-universal-$ma-$yn-$av$mu-$av$wg",
+          "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+          "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
+          "ElbowCreaseVolume70.L",
+          "ElbowCreaseVolume70.R",
+          "KneeEdgeConstraint75.L",
+          "KneeEdgeConstraint75.R",
+          "KneeCreaseVolume75.L",
+          "KneeCreaseVolume75.R",
+          "Aevrynd_MixedSpaceEyelidRelief_R1000"
+        ],
+        "afterShapeKeys": [
+          "Basis",
+          "$md-$as-$fe-$ch",
+          "$md-$as-$fe-$yn",
+          "$md-$as-$ma-$yn",
+          "$md-$ca-$fe-$ch",
+          "$md-$ca-$fe-$yn",
+          "$md-$ca-$ma-$yn",
+          "$md-$af-$fe-$ch",
+          "$md-$af-$fe-$yn",
+          "$md-$af-$ma-$yn",
+          "$md-universal-$fe-$ch-min$mu-$av$wg",
+          "$md-universal-$fe-$ch-$av$mu-$av$wg",
+          "$md-universal-$fe-$yn-min$mu-$av$wg",
+          "$md-universal-$fe-$yn-$av$mu-min$wg",
+          "$md-universal-$fe-$yn-$av$mu-$av$wg",
+          "$md-universal-$ma-$yn-$av$mu-$av$wg",
+          "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+          "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
+          "ElbowCreaseVolume70.L",
+          "ElbowCreaseVolume70.R",
+          "KneeEdgeConstraint75.L",
+          "KneeEdgeConstraint75.R",
+          "KneeCreaseVolume75.L",
+          "KneeCreaseVolume75.R",
+          "Aevrynd_MixedSpaceEyelidRelief_R1000"
+        ],
+        "shapeKeyLengths": {
+          "Basis": 19398,
+          "$md-$as-$fe-$ch": 19398,
+          "$md-$as-$fe-$yn": 19398,
+          "$md-$as-$ma-$yn": 19398,
+          "$md-$ca-$fe-$ch": 19398,
+          "$md-$ca-$fe-$yn": 19398,
+          "$md-$ca-$ma-$yn": 19398,
+          "$md-$af-$fe-$ch": 19398,
+          "$md-$af-$fe-$yn": 19398,
+          "$md-$af-$ma-$yn": 19398,
+          "$md-universal-$fe-$ch-min$mu-$av$wg": 19398,
+          "$md-universal-$fe-$ch-$av$mu-$av$wg": 19398,
+          "$md-universal-$fe-$yn-min$mu-$av$wg": 19398,
+          "$md-universal-$fe-$yn-$av$mu-min$wg": 19398,
+          "$md-universal-$fe-$yn-$av$mu-$av$wg": 19398,
+          "$md-universal-$ma-$yn-$av$mu-$av$wg": 19398,
+          "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi": 19398,
+          "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi": 19398,
+          "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi": 19398,
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi": 19398,
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi": 19398,
+          "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi": 19398,
+          "$md-$fe-$yn-$av$mu-$av$wg-$id$pr": 19398,
+          "ElbowCreaseVolume70.L": 19398,
+          "ElbowCreaseVolume70.R": 19398,
+          "KneeEdgeConstraint75.L": 19398,
+          "KneeEdgeConstraint75.R": 19398,
+          "KneeCreaseVolume75.L": 19398,
+          "KneeCreaseVolume75.R": 19398,
+          "Aevrynd_MixedSpaceEyelidRelief_R1000": 19398
+        },
+        "shapeKeyCompatibility": true,
+        "newVerticesWithWeights": 192,
+        "newVertexMinimumWeightGroupCount": 3
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 22,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 22,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 22,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 22,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 22,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 22,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 22,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 22,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [
+        {
+          "frame": 1,
+          "side": "L",
+          "layer": "Cornea",
+          "triangleOverlapCount": 22
+        },
+        {
+          "frame": 1,
+          "side": "R",
+          "layer": "Cornea",
+          "triangleOverlapCount": 22
+        },
+        {
+          "frame": 20,
+          "side": "L",
+          "layer": "Cornea",
+          "triangleOverlapCount": 22
+        },
+        {
+          "frame": 20,
+          "side": "R",
+          "layer": "Cornea",
+          "triangleOverlapCount": 22
+        },
+        {
+          "frame": 33,
+          "side": "L",
+          "layer": "Cornea",
+          "triangleOverlapCount": 22
+        },
+        {
+          "frame": 33,
+          "side": "R",
+          "layer": "Cornea",
+          "triangleOverlapCount": 22
+        },
+        {
+          "frame": 61,
+          "side": "L",
+          "layer": "Cornea",
+          "triangleOverlapCount": 22
+        },
+        {
+          "frame": 61,
+          "side": "R",
+          "layer": "Cornea",
+          "triangleOverlapCount": 22
+        }
+      ],
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1020-dense-eyelid-patch-sweep\\b-balanced-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1020-dense-eyelid-patch-sweep\\b-balanced-three-quarter-left.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1020-dense-eyelid-patch-sweep\\b-balanced-three-quarter-right.png"
+      ],
+      "status": "TECHNICAL_FAIL"
+    },
+    {
+      "label": "c-deep",
+      "depthM": {
+        "first": 0.00026,
+        "total": 0.00045
+      },
+      "radialShrink": {
+        "first": 0.008,
+        "total": 0.016
+      },
+      "sourceBoundaryComponents": {
+        "L": [
+          28,
+          27,
+          24,
+          1,
+          1
+        ],
+        "R": [
+          28,
+          27,
+          24,
+          1,
+          1
+        ]
+      },
+      "denseBoundaryComponents": {
+        "L": [
+          48,
+          28,
+          27,
+          1,
+          1
+        ],
+        "R": [
+          48,
+          28,
+          27,
+          1,
+          1
+        ]
+      },
+      "subdivision": {
+        "beforeVertices": 19158,
+        "afterVertices": 19206,
+        "addedVertices": 48
+      },
+      "regularization": {
+        "ringVerticesBySide": {
+          "L": 48,
+          "R": 48
+        },
+        "maximumDeltaMm": 0.7440924681711778,
+        "meanDeltaMm": 0.1924437133182664
+      },
+      "patch": {
+        "beforeVertices": 19206,
+        "afterVertices": 19398,
+        "addedVertices": 192,
+        "firstRingVertices": 96,
+        "secondRingVertices": 96,
+        "beforeShapeKeys": [
+          "Basis",
+          "$md-$as-$fe-$ch",
+          "$md-$as-$fe-$yn",
+          "$md-$as-$ma-$yn",
+          "$md-$ca-$fe-$ch",
+          "$md-$ca-$fe-$yn",
+          "$md-$ca-$ma-$yn",
+          "$md-$af-$fe-$ch",
+          "$md-$af-$fe-$yn",
+          "$md-$af-$ma-$yn",
+          "$md-universal-$fe-$ch-min$mu-$av$wg",
+          "$md-universal-$fe-$ch-$av$mu-$av$wg",
+          "$md-universal-$fe-$yn-min$mu-$av$wg",
+          "$md-universal-$fe-$yn-$av$mu-min$wg",
+          "$md-universal-$fe-$yn-$av$mu-$av$wg",
+          "$md-universal-$ma-$yn-$av$mu-$av$wg",
+          "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+          "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
+          "ElbowCreaseVolume70.L",
+          "ElbowCreaseVolume70.R",
+          "KneeEdgeConstraint75.L",
+          "KneeEdgeConstraint75.R",
+          "KneeCreaseVolume75.L",
+          "KneeCreaseVolume75.R",
+          "Aevrynd_MixedSpaceEyelidRelief_R1000"
+        ],
+        "afterShapeKeys": [
+          "Basis",
+          "$md-$as-$fe-$ch",
+          "$md-$as-$fe-$yn",
+          "$md-$as-$ma-$yn",
+          "$md-$ca-$fe-$ch",
+          "$md-$ca-$fe-$yn",
+          "$md-$ca-$ma-$yn",
+          "$md-$af-$fe-$ch",
+          "$md-$af-$fe-$yn",
+          "$md-$af-$ma-$yn",
+          "$md-universal-$fe-$ch-min$mu-$av$wg",
+          "$md-universal-$fe-$ch-$av$mu-$av$wg",
+          "$md-universal-$fe-$yn-min$mu-$av$wg",
+          "$md-universal-$fe-$yn-$av$mu-min$wg",
+          "$md-universal-$fe-$yn-$av$mu-$av$wg",
+          "$md-universal-$ma-$yn-$av$mu-$av$wg",
+          "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+          "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+          "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
+          "ElbowCreaseVolume70.L",
+          "ElbowCreaseVolume70.R",
+          "KneeEdgeConstraint75.L",
+          "KneeEdgeConstraint75.R",
+          "KneeCreaseVolume75.L",
+          "KneeCreaseVolume75.R",
+          "Aevrynd_MixedSpaceEyelidRelief_R1000"
+        ],
+        "shapeKeyLengths": {
+          "Basis": 19398,
+          "$md-$as-$fe-$ch": 19398,
+          "$md-$as-$fe-$yn": 19398,
+          "$md-$as-$ma-$yn": 19398,
+          "$md-$ca-$fe-$ch": 19398,
+          "$md-$ca-$fe-$yn": 19398,
+          "$md-$ca-$ma-$yn": 19398,
+          "$md-$af-$fe-$ch": 19398,
+          "$md-$af-$fe-$yn": 19398,
+          "$md-$af-$ma-$yn": 19398,
+          "$md-universal-$fe-$ch-min$mu-$av$wg": 19398,
+          "$md-universal-$fe-$ch-$av$mu-$av$wg": 19398,
+          "$md-universal-$fe-$yn-min$mu-$av$wg": 19398,
+          "$md-universal-$fe-$yn-$av$mu-min$wg": 19398,
+          "$md-universal-$fe-$yn-$av$mu-$av$wg": 19398,
+          "$md-universal-$ma-$yn-$av$mu-$av$wg": 19398,
+          "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi": 19398,
+          "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi": 19398,
+          "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi": 19398,
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi": 19398,
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi": 19398,
+          "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi": 19398,
+          "$md-$fe-$yn-$av$mu-$av$wg-$id$pr": 19398,
+          "ElbowCreaseVolume70.L": 19398,
+          "ElbowCreaseVolume70.R": 19398,
+          "KneeEdgeConstraint75.L": 19398,
+          "KneeEdgeConstraint75.R": 19398,
+          "KneeCreaseVolume75.L": 19398,
+          "KneeCreaseVolume75.R": 19398,
+          "Aevrynd_MixedSpaceEyelidRelief_R1000": 19398
+        },
+        "shapeKeyCompatibility": true,
+        "newVerticesWithWeights": 192,
+        "newVertexMinimumWeightGroupCount": 3
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 32,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 32,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 32,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 32,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 32,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 32,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 32,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 32,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [
+        {
+          "frame": 1,
+          "side": "L",
+          "layer": "Cornea",
+          "triangleOverlapCount": 32
+        },
+        {
+          "frame": 1,
+          "side": "R",
+          "layer": "Cornea",
+          "triangleOverlapCount": 32
+        },
+        {
+          "frame": 20,
+          "side": "L",
+          "layer": "Cornea",
+          "triangleOverlapCount": 32
+        },
+        {
+          "frame": 20,
+          "side": "R",
+          "layer": "Cornea",
+          "triangleOverlapCount": 32
+        },
+        {
+          "frame": 33,
+          "side": "L",
+          "layer": "Cornea",
+          "triangleOverlapCount": 32
+        },
+        {
+          "frame": 33,
+          "side": "R",
+          "layer": "Cornea",
+          "triangleOverlapCount": 32
+        },
+        {
+          "frame": 61,
+          "side": "L",
+          "layer": "Cornea",
+          "triangleOverlapCount": 32
+        },
+        {
+          "frame": 61,
+          "side": "R",
+          "layer": "Cornea",
+          "triangleOverlapCount": 32
+        }
+      ],
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1020-dense-eyelid-patch-sweep\\c-deep-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1020-dense-eyelid-patch-sweep\\c-deep-three-quarter-left.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1020-dense-eyelid-patch-sweep\\c-deep-three-quarter-right.png"
+      ],
+      "status": "TECHNICAL_FAIL"
+    }
+  ],
+  "selectedVariant": "a-shallow",
+  "status": "R1020A_TECHNICAL_PASS_VISUAL_HERO_FAIL",
+  "websitePromotionApproved": false,
+  "visualDecision": "a-shallow is the only four-frame zero-overlap bound and becomes the topology base. The 48-edge margin and two support rings are cleaner, but dark canthi and weak facial identity keep strict face quality at 48/100. b/c are rejected with 176/256 total cornea triangle overlaps."
+}
