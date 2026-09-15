@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 
 import bpy
-from mathutils import Quaternion
+from mathutils import Quaternion, Vector
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -56,6 +56,8 @@ def key_pose(rig, frame, rotations):
 bpy.ops.wm.open_mainfile(filepath=str(SOURCE))
 scene = bpy.context.scene
 rig = bpy.data.objects[RIG]
+neck_world_matrix = (rig.matrix_world @ rig.data.bones["neck"].matrix_local).to_3x3()
+neck_yaw_axis = (neck_world_matrix.inverted() @ Vector((0.0, 0.0, 1.0))).normalized()
 scene.frame_set(20)
 bpy.context.view_layer.update()
 raised = {name: rig.pose.bones[name].rotation_quaternion.copy() for name in ARM_BONES}
@@ -86,12 +88,12 @@ poses = {
         "spine_02": Quaternion((0.0, 0.0, 1.0), math.radians(-12.0)),
     }),
     100: ("neck_turn", {
-        "neck": Quaternion((0.0, 0.0, 1.0), math.radians(25.0)),
+        "neck": Quaternion(neck_yaw_axis, math.radians(25.0)),
     }),
     110: ("torso_neck_twist_with_raise", {
         **raised,
         "spine_02": Quaternion((0.0, 0.0, 1.0), math.radians(-12.0)),
-        "neck": Quaternion((0.0, 0.0, 1.0), math.radians(25.0)),
+        "neck": Quaternion(neck_yaw_axis, math.radians(25.0)),
     }),
 }
 for frame, (_label, rotations) in poses.items():
@@ -120,6 +122,7 @@ report = {
     "highRaiseFactors": {"clavicle": HIGH_CLAVICLE, "upperArm": HIGH_ARM},
     "poses": {str(frame): label for frame, (label, _rotations) in poses.items()},
     "raisedQuaternions": {name: list(value) for name, value in raised.items()},
+    "neckYawLocalAxis": list(neck_yaw_axis),
     "status": "EXPANDED_DEFORMATION_AND_COLLISION_AUDIT_PENDING",
 }
 REPORT.write_text(json.dumps(report, indent=2), encoding="utf-8")

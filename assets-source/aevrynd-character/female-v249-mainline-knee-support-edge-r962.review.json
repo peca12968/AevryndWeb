@@ -1,0 +1,65 @@
+{
+  "candidate": "aevrynd-female-cc0-knee-crease-volume-r962.blend",
+  "lineage": [
+    "aevrynd-female-cc0-elbow-crease-volume-r732.blend",
+    "aevrynd-female-cc0-knee-support-bones-r849.blend",
+    "aevrynd-female-cc0-knee-edge-constraint-r949.blend",
+    "aevrynd-female-cc0-knee-crease-volume-r962.blend"
+  ],
+  "architecture": {
+    "kneeSupportBones": ["knee_support.L", "knee_support.R"],
+    "supportRotationFraction": 0.5,
+    "supportWeightSigmaM": 0.065,
+    "edgeConstraint": {
+      "targetDegrees": 75.0,
+      "onsetDegrees": 45.0,
+      "iterations": 35,
+      "stiffness": 0.2,
+      "sigmaM": 0.07
+    },
+    "deepFlexMicroCorrection": {
+      "onsetDegrees": 75.0,
+      "fullDegrees": 85.0,
+      "verticalExpansion": 0.2,
+      "centerM": [0.138, 0.001, 0.443],
+      "radiusM": 0.028
+    }
+  },
+  "validation": {
+    "fullJointAction": "aevrynd-female-cc0-full-joint-validation-r965.blend",
+    "fullJointDeformationAudit": "female-v249-mainline-cc0-full-joint-validation-r965.audit.json",
+    "fullJointSelfCollisionAudit": "female-v249-mainline-cc0-full-joint-validation-r965.self-collision.json",
+    "dynamicActionWithCorrectNeckYaw": "aevrynd-female-cc0-dynamic-validation-r973.blend",
+    "dynamicDeformationAudit": "female-v249-mainline-cc0-dynamic-validation-r973.audit.json",
+    "dynamicSelfCollisionAudit": "female-v249-mainline-cc0-dynamic-validation-r973.self-collision.json",
+    "fullJointFrames": 15,
+    "dynamicFrames": 8,
+    "nonAdjacentSelfCollisionPairs": 0,
+    "eyeBodyCollisionPairs": 0,
+    "minimumKneeEdgeRatio75Deg": 0.3761,
+    "minimumKneeEdgeRatio85Deg": 0.3062,
+    "maximumKneeEdgeRatio": 1.5656,
+    "edgeRatioGate": [0.3, 2.5],
+    "volumeRatioGate": [0.85, 1.15],
+    "status": "PASS"
+  },
+  "visualReview": {
+    "fullJoint": "reviews/v249r965-support-edge-micro/contact-sheet-r965.jpg",
+    "neckYawReview": "reviews/v249r973-correct-neck-yaw/contact-sheet-r973.jpg",
+    "kneeGap": "PASS_NO_BLACK_SLIT_OR_DISCONNECTED_SILHOUETTE",
+    "neckYaw": "PASS_WORLD_VERTICAL_YAW_AXIS_NO_FALSE_SIDE_BEND",
+    "lighting": "UNCHANGED_FIXED_CALIBRATED_REVIEW",
+    "status": "PASS_TECHNICAL_RIG_CANDIDATE"
+  },
+  "rejected": {
+    "r789_r812": "Numerical collision pass but visually rejected for a deep black posterior-knee slit.",
+    "r819_r841": "Local DQ, bounded separation and collision-pair displacement studies did not satisfy both edge and collision gates.",
+    "r843_r902": "Single support-bone parameter studies established the collision-free structural direction; nonselected bounds failed edge compression.",
+    "r903_r923": "Dual support bones and runtime Corrective Smooth studies worsened edge compression or had incompatible modifier topology.",
+    "r924_r961": "Edge-constraint convergence and two-stage studies isolated the 35-iteration optimum; over-solving reduced deep-flex quality.",
+    "r968_r970": "Discarded after discovering that the old validation action used the neck bone local Z axis and produced side bend instead of yaw. Correct world-vertical yaw passes without these keys."
+  },
+  "license": "Aevrynd-owned corrective data on the retained CC0 foundation; no MetaHuman, Unreal Engine, paid runtime, subscription or platform dependency.",
+  "websiteReplacement": "NOT_REQUESTED_NOT_APPLIED",
+  "strictCharacterStatus": "Rig and collision subsystem technical pass. Bald foundation, face detail, hair, clothing and runtime website gates remain below the final hero-character target."
+}

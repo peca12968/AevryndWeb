@@ -1,0 +1,25 @@
+{
+  "source": "assets-source\\aevrynd-character\\aevrynd-female-cc0-knee-support-bones-r849.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-knee-edge-constraint-r949.blend",
+  "revision": "r949",
+  "iterations": 35,
+  "stiffness": 0.2,
+  "sigmaM": 0.07,
+  "targetDegrees": 75.0,
+  "onsetDegrees": 45.0,
+  "created": {
+    "KneeEdgeConstraint75.L": {
+      "vertices": 367,
+      "maximumPoseCorrectionM": 0.007712885283117702,
+      "maximumBasisDeltaM": 0.008807554092573727,
+      "driver": "max(0,min(1,(q-0.382683432)/0.226077997))"
+    },
+    "KneeEdgeConstraint75.R": {
+      "vertices": 367,
+      "maximumPoseCorrectionM": 0.007712900612555311,
+      "maximumBasisDeltaM": 0.008807687171795217,
+      "driver": "max(0,min(1,(q-0.382683432)/0.226077997))"
+    }
+  },
+  "status": "FULL_JOINT_DEFORMATION_COLLISION_VISUAL_AUDIT_PENDING"
+}

@@ -22,6 +22,9 @@ DEFORM_BONES = {
     "clavicle.L", "upper_arm.L", "forearm.L", "hand.L",
     "clavicle.R", "upper_arm.R", "forearm.R", "hand.R",
     "thigh.L", "shin.L", "foot.L", "thigh.R", "shin.R", "foot.R",
+    "knee_support.L", "knee_support.R",
+    "knee_upper_support.L", "knee_upper_support.R",
+    "knee_lower_support.L", "knee_lower_support.R",
 }
 BASE_SHAPE_KEYS = {
     "Basis", "$md-$as-$fe-$ch", "$md-$as-$fe-$yn", "$md-$as-$ma-$yn",
@@ -86,6 +89,7 @@ bpy.ops.wm.open_mainfile(filepath=str(SOURCE))
 scene = bpy.context.scene
 body = bpy.data.objects[BODY]
 rig = bpy.data.objects[RIG]
+active_deform_bones = {name for name in DEFORM_BONES if rig.pose.bones.get(name)}
 allowed = visible_indices(body)
 states = {}
 collisions = {}
@@ -109,7 +113,7 @@ for frame in FRAMES:
     }
     bone_motion[str(frame)] = {
         name: list(rig.pose.bones[name].matrix.translation)
-        for name in DEFORM_BONES
+        for name in active_deform_bones
     }
 
 rest = states[1]
@@ -172,7 +176,7 @@ for frame in FRAMES[1:]:
     }
 
 deform_group_indices = {
-    body.vertex_groups[name].index for name in DEFORM_BONES if body.vertex_groups.get(name)
+    body.vertex_groups[name].index for name in active_deform_bones if body.vertex_groups.get(name)
 }
 weight_sums = [
     sum(entry.weight for entry in vertex.groups if entry.group in deform_group_indices)
@@ -180,7 +184,7 @@ weight_sums = [
 ]
 motion = max(
     abs(bone_motion[str(frame)][name][axis] - bone_motion["1"][name][axis])
-    for frame in FRAMES[1:] for name in DEFORM_BONES for axis in range(3)
+    for frame in FRAMES[1:] for name in active_deform_bones for axis in range(3)
 )
 shape_key_names = {
     key.name for key in body.data.shape_keys.key_blocks
