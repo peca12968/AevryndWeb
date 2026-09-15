@@ -1,0 +1,3648 @@
+{
+  "purpose": "bridge the retained open-eye topology to the current owned layer stack",
+  "sources": {
+    "openTopologyR446": {
+      "path": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-open-topology-physical-skin-r446.blend",
+      "sceneRevision": "converged-upper-lid-r210",
+      "releaseState": "RETAINED_OPEN_TOPOLOGY_BASELINE_COLLISION_REVALIDATION_REQUIRED",
+      "objects": [
+        {
+          "name": "AevryndFemaleRig",
+          "type": "ARMATURE",
+          "parent": null,
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.39500001072883606,
+              -0.125,
+              0.019999999552965164
+            ],
+            "maximum": [
+              0.39500001072883606,
+              0.0,
+              1.6799999475479126
+            ]
+          },
+          "customRole": "female_skeleton",
+          "revision": null,
+          "armatureSignatures": {
+            "all": {
+              "boneCount": 21,
+              "sha256": "28d6a15231e5a9d93d3a33a8e4b3a9bb1cbed05925dd8ddd8b94a241e3e28a43"
+            },
+            "baseWithoutHairDynamics": {
+              "boneCount": 21,
+              "sha256": "28d6a15231e5a9d93d3a33a8e4b3a9bb1cbed05925dd8ddd8b94a241e3e28a43"
+            },
+            "coreWithoutHairOrKneeSupport": {
+              "boneCount": 21,
+              "sha256": "28d6a15231e5a9d93d3a33a8e4b3a9bb1cbed05925dd8ddd8b94a241e3e28a43"
+            }
+          },
+          "boneNames": [
+            "chest",
+            "clavicle.L",
+            "clavicle.R",
+            "foot.L",
+            "foot.R",
+            "forearm.L",
+            "forearm.R",
+            "hand.L",
+            "hand.R",
+            "head",
+            "neck",
+            "pelvis",
+            "root",
+            "shin.L",
+            "shin.R",
+            "spine_01",
+            "spine_02",
+            "thigh.L",
+            "thigh.R",
+            "upper_arm.L",
+            "upper_arm.R"
+          ],
+          "boneRecords": {
+            "root": {
+              "head": [
+                0.0,
+                0.0,
+                0.019999999552965164
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.14000000059604645
+              ]
+            },
+            "pelvis": {
+              "head": [
+                0.0,
+                0.0,
+                0.8600000143051147
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                0.9800000190734863
+              ]
+            },
+            "spine_01": {
+              "head": [
+                0.0,
+                0.0,
+                0.9800000190734863
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                1.100000023841858
+              ]
+            },
+            "spine_02": {
+              "head": [
+                0.0,
+                0.0,
+                1.100000023841858
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                1.2300000190734863
+              ]
+            },
+            "chest": {
+              "head": [
+                0.0,
+                0.0,
+                1.2300000190734863
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                1.3600000143051147
+              ]
+            },
+            "neck": {
+              "head": [
+                0.0,
+                0.0,
+                1.3600000143051147
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                1.4700000286102295
+              ]
+            },
+            "head": {
+              "head": [
+                0.0,
+                0.0,
+                1.4700000286102295
+              ],
+              "tail": [
+                0.0,
+                0.0,
+                1.6799999475479126
+              ]
+            },
+            "clavicle.L": {
+              "head": [
+                0.0,
+                0.0,
+                1.3450000286102295
+              ],
+              "tail": [
+                0.1379999965429306,
+                0.0,
+                1.3420000076293945
+              ]
+            },
+            "upper_arm.L": {
+              "head": [
+                0.1379999965429306,
+                0.0,
+                1.3420000076293945
+              ],
+              "tail": [
+                0.23499999940395355,
+                -0.006000000052154064,
+                1.1200000047683716
+              ]
+            },
+            "forearm.L": {
+              "head": [
+                0.23499999940395355,
+                -0.006000000052154064,
+                1.1200000047683716
+              ],
+              "tail": [
+                0.33500000834465027,
+                -0.012000000104308128,
+                0.9100000262260437
+              ]
+            },
+            "hand.L": {
+              "head": [
+                0.33500000834465027,
+                -0.012000000104308128,
+                0.9100000262260437
+              ],
+              "tail": [
+                0.39500001072883606,
+                -0.017999999225139618,
+                0.8199999928474426
+              ]
+            },
+            "clavicle.R": {
+              "head": [
+                0.0,
+                0.0,
+                1.3450000286102295
+              ],
+              "tail": [
+                -0.1379999965429306,
+                0.0,
+                1.3420000076293945
+              ]
+            },
+            "upper_arm.R": {
+              "head": [
+                -0.1379999965429306,
+                0.0,
+                1.3420000076293945
+              ],
+              "tail": [
+                -0.23499999940395355,
+                -0.006000000052154064,
+                1.1200000047683716
+              ]
+            },
+            "forearm.R": {
+              "head": [
+                -0.23499999940395355,
+                -0.006000000052154064,
+                1.1200000047683716
+              ],
+              "tail": [
+                -0.33500000834465027,
+                -0.012000000104308128,
+                0.9100000262260437
+              ]
+            },
+            "hand.R": {
+              "head": [
+                -0.33500000834465027,
+                -0.012000000104308128,
+                0.9100000262260437
+              ],
+              "tail": [
+                -0.39500001072883606,
+                -0.017999999225139618,
+                0.8199999928474426
+              ]
+            },
+            "thigh.L": {
+              "head": [
+                0.08299999684095383,
+                0.0,
+                0.9100000262260437
+              ],
+              "tail": [
+                0.07800000160932541,
+                -0.0020000000949949026,
+                0.5199999809265137
+              ]
+            },
+            "shin.L": {
+              "head": [
+                0.07800000160932541,
+                -0.0020000000949949026,
+                0.5199999809265137
+              ],
+              "tail": [
+                0.07400000095367432,
+                -0.004999999888241291,
+                0.11500000208616257
+              ]
+            },
+            "foot.L": {
+              "head": [
+                0.07400000095367432,
+                -0.004999999888241291,
+                0.11500000208616257
+              ],
+              "tail": [
+                0.07400000095367432,
+                -0.125,
+                0.06499999761581421
+              ]
+            },
+            "thigh.R": {
+              "head": [
+                -0.08299999684095383,
+                0.0,
+                0.9100000262260437
+              ],
+              "tail": [
+                -0.07800000160932541,
+                -0.0020000000949949026,
+                0.5199999809265137
+              ]
+            },
+            "shin.R": {
+              "head": [
+                -0.07800000160932541,
+                -0.0020000000949949026,
+                0.5199999809265137
+              ],
+              "tail": [
+                -0.07400000095367432,
+                -0.004999999888241291,
+                0.11500000208616257
+              ]
+            },
+            "foot.R": {
+              "head": [
+                -0.07400000095367432,
+                -0.004999999888241291,
+                0.11500000208616257
+              ],
+              "tail": [
+                -0.07400000095367432,
+                -0.125,
+                0.06499999761581421
+              ]
+            }
+          }
+        },
+        {
+          "name": "AevryndFemaleCC0LongHairStudyFlyaway_v249r85",
+          "type": "CURVES",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.11439377069473267,
+              -0.1347264051437378,
+              1.5735952854156494
+            ],
+            "maximum": [
+              0.09306858479976654,
+              0.08829784393310547,
+              1.7637348175048828
+            ]
+          },
+          "customRole": null,
+          "revision": "v249r185"
+        },
+        {
+          "name": "AevryndFemaleCC0LongHairStudyMain_v249r85",
+          "type": "CURVES",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.1515571027994156,
+              -0.13926918804645538,
+              1.4179506301879883
+            ],
+            "maximum": [
+              0.16765134036540985,
+              0.17803940176963806,
+              1.7668732404708862
+            ]
+          },
+          "customRole": null,
+          "revision": "v249r185"
+        },
+        {
+          "name": "AevryndFemaleGuideBob_v249r25",
+          "type": "CURVES",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.14834804832935333,
+              -0.13704536855220795,
+              1.3625587224960327
+            ],
+            "maximum": [
+              0.14673973619937897,
+              0.11953792721033096,
+              1.7227293252944946
+            ]
+          },
+          "customRole": null,
+          "revision": null
+        },
+        {
+          "name": "AevryndFemaleGuideBob_v378",
+          "type": "CURVES",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.14834804832935333,
+              -0.13704535365104675,
+              1.3832356929779053
+            ],
+            "maximum": [
+              0.14673973619937897,
+              0.12049981206655502,
+              1.722729206085205
+            ]
+          },
+          "customRole": null,
+          "revision": 378
+        },
+        {
+          "name": "AevryndFemaleNapeFiberFill_v249r17",
+          "type": "CURVES",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.04925942420959473,
+              0.028264928609132767,
+              1.399210810661316
+            ],
+            "maximum": [
+              0.05051242932677269,
+              0.10465442389249802,
+              1.667811632156372
+            ]
+          },
+          "customRole": null,
+          "revision": null
+        },
+        {
+          "name": "AevryndFemaleOwnedCurlyHairMain_v249r160",
+          "type": "CURVES",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.17766232788562775,
+              -0.17648357152938843,
+              1.477960228919983
+            ],
+            "maximum": [
+              0.16469018161296844,
+              0.16153261065483093,
+              1.7605749368667603
+            ]
+          },
+          "customRole": null,
+          "revision": "v249r160"
+        },
+        {
+          "name": "AevryndFemaleOwnedCurlyHairMain_v249r162",
+          "type": "CURVES",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.17766232788562775,
+              -0.17648357152938843,
+              1.477960228919983
+            ],
+            "maximum": [
+              0.16469018161296844,
+              0.16153261065483093,
+              1.7605749368667603
+            ]
+          },
+          "customRole": null,
+          "revision": "v249r162"
+        },
+        {
+          "name": "AevryndFemaleAnatomicalScalpFoundation_v249r101",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.09317973256111145,
+              -0.11953707784414291,
+              1.5376795530319214
+            ],
+            "maximum": [
+              0.09358145296573639,
+              0.07549630850553513,
+              1.7205820083618164
+            ]
+          },
+          "customRole": null,
+          "revision": "v249r101",
+          "vertices": 3946,
+          "polygons": 3843,
+          "materials": [
+            "AevryndAnatomicalScalpFoundationMaterial_v249r129"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "AevryndFemaleBodyBase",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.44181737303733826,
+              -0.1527044177055359,
+              1.5756813809275627e-05
+            ],
+            "maximum": [
+              0.4418254494667053,
+              0.14884959161281586,
+              1.719934105873108
+            ]
+          },
+          "customRole": "authoring-base",
+          "revision": null,
+          "vertices": 42342,
+          "polygons": 42296,
+          "materials": [
+            "Aevrynd_Skin_Clay"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "AevryndFemaleBodyBaseV118",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.442059189081192,
+              -0.15162821114063263,
+              -0.0008312513818964362
+            ],
+            "maximum": [
+              0.44204384088516235,
+              0.1483447104692459,
+              1.7199828624725342
+            ]
+          },
+          "customRole": "female_continuous_anatomical_base",
+          "revision": "v249r446",
+          "vertices": 41692,
+          "polygons": 41490,
+          "materials": [
+            "Aevrynd_Skin_Physical_R252"
+          ],
+          "shapeKeys": [
+            "Basis",
+            "Aevrynd_Philtrum_Topology_R80",
+            "Aevrynd_EyeAperture_Topology_R83",
+            "Aevrynd_EvaluatedAnatomicalLids_R183",
+            "Aevrynd_MouthPlacement_R198_5mm",
+            "Aevrynd_ConvergedUpperLid_R210"
+          ]
+        },
+        {
+          "name": "AevryndFemaleDeformMatchedScalp_v249r163",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.09353186935186386,
+              -0.12169183045625687,
+              1.5287567377090454
+            ],
+            "maximum": [
+              0.09366943687200546,
+              0.07609618455171585,
+              1.7211823463439941
+            ]
+          },
+          "customRole": null,
+          "revision": "v249r185",
+          "vertices": 2626,
+          "polygons": 2438,
+          "materials": [
+            "AevryndDeformMatchedScalpMaterial_v249r163"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "AevryndFemaleScalpCoverage_v378",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.09345870465040207,
+              -0.11662472784519196,
+              1.5804712772369385
+            ],
+            "maximum": [
+              0.09377141296863556,
+              0.0757962316274643,
+              1.7208824157714844
+            ]
+          },
+          "customRole": null,
+          "revision": 378,
+          "vertices": 2457,
+          "polygons": 2331,
+          "materials": [
+            "Aevrynd_HairRootShadow_v249r6"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "AevryndFemaleScalpPart_v249r25",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.03256000578403473,
+              -0.10086499899625778,
+              1.6782889366149902
+            ],
+            "maximum": [
+              -0.010272636078298092,
+              0.016458310186862946,
+              1.7198197841644287
+            ]
+          },
+          "customRole": null,
+          "revision": null,
+          "vertices": 60,
+          "polygons": 29,
+          "materials": [
+            "Aevrynd_ScalpPartSkin_v249r16",
+            "Aevrynd_HairRootShadow_v249r6"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Brow_L",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.012351835146546364,
+              -0.12311913818120956,
+              1.6305445432662964
+            ],
+            "maximum": [
+              0.06311175972223282,
+              -0.0876309871673584,
+              1.645340919494629
+            ]
+          },
+          "customRole": "brow",
+          "revision": null,
+          "vertices": 3000,
+          "polygons": 2400,
+          "materials": [
+            "Aevrynd_Brow_Hair_v39_Dark",
+            "Aevrynd_Brow_Hair_v39_Warm"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Brow_L_Density",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.0120368842035532,
+              -0.12340357154607773,
+              1.630497694015503
+            ],
+            "maximum": [
+              0.06145698204636574,
+              -0.09065656363964081,
+              1.6437995433807373
+            ]
+          },
+          "customRole": "brow_density",
+          "revision": null,
+          "vertices": 175,
+          "polygons": 136,
+          "materials": [
+            "Aevrynd_Brow_Density_v39"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Brow_R",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.06306073069572449,
+              -0.122857004404068,
+              1.6305184364318848
+            ],
+            "maximum": [
+              -0.012145262211561203,
+              -0.0877879336476326,
+              1.6460295915603638
+            ]
+          },
+          "customRole": "brow",
+          "revision": null,
+          "vertices": 3000,
+          "polygons": 2400,
+          "materials": [
+            "Aevrynd_Brow_Hair_v39_Dark",
+            "Aevrynd_Brow_Hair_v39_Warm"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Brow_R_Density",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.06143369898200035,
+              -0.12316204607486725,
+              1.6304965019226074
+            ],
+            "maximum": [
+              -0.012054524384438992,
+              -0.090621717274189,
+              1.6437923908233643
+            ]
+          },
+          "customRole": "brow_density",
+          "revision": null,
+          "vertices": 175,
+          "polygons": 136,
+          "materials": [
+            "Aevrynd_Brow_Density_v39"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Clothing_BodyFitShorts_v135",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.23130515217781067,
+              -0.12528088688850403,
+              0.7587547302246094
+            ],
+            "maximum": [
+              0.23026511073112488,
+              0.15412373840808868,
+              1.0652925968170166
+            ]
+          },
+          "customRole": null,
+          "revision": 135,
+          "vertices": 1432,
+          "polygons": 1340,
+          "materials": [
+            "Aevrynd_Fabric_Charcoal_Woven_v249r35"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Clothing_BodyFitTop_v135",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.20841020345687866,
+              -0.1454828679561615,
+              1.1672674417495728
+            ],
+            "maximum": [
+              0.20814494788646698,
+              0.11429239809513092,
+              1.3506028652191162
+            ]
+          },
+          "customRole": null,
+          "revision": 135,
+          "vertices": 2017,
+          "polygons": 1856,
+          "materials": [
+            "Aevrynd_Fabric_Navy_v135"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_Caruncle",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.018525786697864532,
+              -0.11312413215637207,
+              1.606156826019287
+            ],
+            "maximum": [
+              0.020062409341335297,
+              -0.11245276778936386,
+              1.6070725917816162
+            ]
+          },
+          "customRole": "lacrimal_caruncle",
+          "revision": null,
+          "vertices": 15,
+          "polygons": 14,
+          "materials": [
+            "Aevrynd_Caruncle_v37"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_Catchlight",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              0.033368997275829315,
+              -0.11526499688625336,
+              1.6088942289352417
+            ],
+            "maximum": [
+              0.03400769829750061,
+              -0.11436018347740173,
+              1.6094006299972534
+            ]
+          },
+          "customRole": "eye_catchlight",
+          "revision": null,
+          "vertices": 114,
+          "polygons": 128,
+          "materials": [
+            "Aevrynd_EyeCatchlight"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_Cornea",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.02335086092352867,
+              -0.11288733780384064,
+              1.5958467721939087
+            ],
+            "maximum": [
+              0.04570435732603073,
+              -0.08663735538721085,
+              1.6196821928024292
+            ]
+          },
+          "customRole": "cornea",
+          "revision": "v249r175",
+          "vertices": 1986,
+          "polygons": 2048,
+          "materials": [
+            "Aevrynd_Eye_Cornea_v249r175"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_Iris",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.02919161505997181,
+              -0.11108581721782684,
+              1.602105736732483
+            ],
+            "maximum": [
+              0.03986373916268349,
+              -0.10932992398738861,
+              1.6134235858917236
+            ]
+          },
+          "customRole": "iris",
+          "revision": null,
+          "vertices": 97,
+          "polygons": 96,
+          "materials": [
+            "Aevrynd_Eye_Iris_v249r174"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_Pupil",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              0.0329645499587059,
+              -0.11123540997505188,
+              1.6061122417449951
+            ],
+            "maximum": [
+              0.036090657114982605,
+              -0.11109430342912674,
+              1.6094168424606323
+            ]
+          },
+          "customRole": "pupil",
+          "revision": null,
+          "vertices": 97,
+          "polygons": 96,
+          "materials": [
+            "Aevrynd_Eye_Pupil"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_Sclera",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.023577114567160606,
+              -0.1105373427271843,
+              1.5960880517959595
+            ],
+            "maximum": [
+              0.045478105545043945,
+              -0.08633735775947571,
+              1.619441032409668
+            ]
+          },
+          "customRole": "sclera",
+          "revision": null,
+          "vertices": 1986,
+          "polygons": 2048,
+          "materials": [
+            "Aevrynd_Eye_Sclera"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_TearMeniscus",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.02529814839363098,
+              -0.11427436023950577,
+              1.6033518314361572
+            ],
+            "maximum": [
+              0.04377349466085434,
+              -0.10891290009021759,
+              1.6048129796981812
+            ]
+          },
+          "customRole": null,
+          "revision": "v249-mainline-tear-meniscus-r109",
+          "vertices": 222,
+          "polygons": 218,
+          "materials": [
+            "Aevrynd_TearMeniscus_Clear_R109"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_UpperLashes",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.02228442393243313,
+              -0.11976873874664307,
+              1.6096899509429932
+            ],
+            "maximum": [
+              0.04625789821147919,
+              -0.11002227663993835,
+              1.614726185798645
+            ]
+          },
+          "customRole": null,
+          "revision": "v249-mainline-eye-aperture-r83",
+          "vertices": 760,
+          "polygons": 646,
+          "materials": [
+            "Aevrynd_Lash_Hair_v51"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_Caruncle",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.01989237405359745,
+              -0.11316221952438354,
+              1.6061729192733765
+            ],
+            "maximum": [
+              -0.018425047397613525,
+              -0.11259716749191284,
+              1.6071133613586426
+            ]
+          },
+          "customRole": "lacrimal_caruncle",
+          "revision": null,
+          "vertices": 15,
+          "polygons": 14,
+          "materials": [
+            "Aevrynd_Caruncle_v37"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_Catchlight",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.035615019500255585,
+              -0.11526499688625336,
+              1.6088942289352417
+            ],
+            "maximum": [
+              -0.03498338162899017,
+              -0.11436018347740173,
+              1.6094006299972534
+            ]
+          },
+          "customRole": "eye_catchlight",
+          "revision": null,
+          "vertices": 114,
+          "polygons": 128,
+          "materials": [
+            "Aevrynd_EyeCatchlight"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_Cornea",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.045496296137571335,
+              -0.11269091069698334,
+              1.5958465337753296
+            ],
+            "maximum": [
+              -0.023389801383018494,
+              -0.08644092828035355,
+              1.61968195438385
+            ]
+          },
+          "customRole": "cornea",
+          "revision": "v249r175",
+          "vertices": 1986,
+          "polygons": 2048,
+          "materials": [
+            "Aevrynd_Eye_Cornea_v249r175"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_Iris",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.039725322276353836,
+              -0.11088938266038895,
+              1.6021056175231934
+            ],
+            "maximum": [
+              -0.02916063740849495,
+              -0.10913199186325073,
+              1.613423466682434
+            ]
+          },
+          "customRole": "iris",
+          "revision": null,
+          "vertices": 97,
+          "polygons": 96,
+          "materials": [
+            "Aevrynd_Eye_Iris_v249r174"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_Pupil",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.035991303622722626,
+              -0.11103895306587219,
+              1.606112003326416
+            ],
+            "maximum": [
+              -0.03289477899670601,
+              -0.11089766770601273,
+              1.6094166040420532
+            ]
+          },
+          "customRole": "pupil",
+          "revision": null,
+          "vertices": 97,
+          "polygons": 96,
+          "materials": [
+            "Aevrynd_Eye_Pupil"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_Sclera",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.04527254402637482,
+              -0.110340915620327,
+              1.5960878133773804
+            ],
+            "maximum": [
+              -0.02361355349421501,
+              -0.08614093065261841,
+              1.6194407939910889
+            ]
+          },
+          "customRole": "sclera",
+          "revision": null,
+          "vertices": 1986,
+          "polygons": 2048,
+          "materials": [
+            "Aevrynd_Eye_Sclera"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_TearMeniscus",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.04369135946035385,
+              -0.11443520337343216,
+              1.6033194065093994
+            ],
+            "maximum": [
+              -0.025185948237776756,
+              -0.10901250690221786,
+              1.6048481464385986
+            ]
+          },
+          "customRole": null,
+          "revision": "v249-mainline-tear-meniscus-r109",
+          "vertices": 222,
+          "polygons": 218,
+          "materials": [
+            "Aevrynd_TearMeniscus_Clear_R109"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_UpperLashes",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.04668523371219635,
+              -0.11928685754537582,
+              1.6096891164779663
+            ],
+            "maximum": [
+              -0.022654736414551735,
+              -0.11024577915668488,
+              1.6146095991134644
+            ]
+          },
+          "customRole": null,
+          "revision": "v249-mainline-eye-aperture-r83",
+          "vertices": 760,
+          "polygons": 646,
+          "materials": [
+            "Aevrynd_Lash_Hair_v51"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "HairBoundaryClumps",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.07224277406930923,
+              0.034946903586387634,
+              1.5981260538101196
+            ],
+            "maximum": [
+              0.07002660632133484,
+              0.07447173446416855,
+              1.623180866241455
+            ]
+          },
+          "customRole": "hair_boundary_clumps",
+          "revision": null,
+          "vertices": 360,
+          "polygons": 150,
+          "materials": [
+            "Aevrynd_Hair_v11_Dark",
+            "Aevrynd_Hair_v11_Warm"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "HairCoverageTiles_v246",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.08558952063322067,
+              -0.07889888435602188,
+              1.6276605129241943
+            ],
+            "maximum": [
+              0.08496621251106262,
+              0.05470377579331398,
+              1.7233693599700928
+            ]
+          },
+          "customRole": null,
+          "revision": 246,
+          "vertices": 2434,
+          "polygons": 1085,
+          "materials": [
+            "Aevrynd_HairCards_v166"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "HairCrownCoverage_v212",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.07691400498151779,
+              -0.06764779984951019,
+              1.6474006175994873
+            ],
+            "maximum": [
+              0.07742282003164291,
+              0.06888572126626968,
+              1.7232379913330078
+            ]
+          },
+          "customRole": null,
+          "revision": 212,
+          "vertices": 2240,
+          "polygons": 1040,
+          "materials": [
+            "Aevrynd_HairCards_v166"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "HairDetailFibers_v246",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.13780562579631805,
+              -0.07505980879068375,
+              1.412393569946289
+            ],
+            "maximum": [
+              0.13728617131710052,
+              0.13499097526073456,
+              1.71146559715271
+            ]
+          },
+          "customRole": null,
+          "revision": 246,
+          "vertices": 20424,
+          "polygons": 9392,
+          "materials": [
+            "Aevrynd_HairDetailFibers_v246"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "HairFiberBase",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.1453346610069275,
+              -0.07340756803750992,
+              1.4581090211868286
+            ],
+            "maximum": [
+              0.1595090925693512,
+              0.12201444804668427,
+              1.669697880744934
+            ]
+          },
+          "customRole": "hair_lower_mass_cards",
+          "revision": 83,
+          "vertices": 16740,
+          "polygons": 6696,
+          "materials": [
+            "Aevrynd_Hair_Strands_v57"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "HairFiberDetail",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.1272730827331543,
+              -0.09320952743291855,
+              1.4520207643508911
+            ],
+            "maximum": [
+              0.12822186946868896,
+              0.13122040033340454,
+              1.721440076828003
+            ]
+          },
+          "customRole": "hair_microfiber_detail_and_part_fill",
+          "revision": 83,
+          "vertices": 77472,
+          "polygons": 71016,
+          "materials": [
+            "Aevrynd_Hair_Fibers_v83"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "HairFiberLOD1",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.12707804143428802,
+              -0.09359060227870941,
+              1.4561349153518677
+            ],
+            "maximum": [
+              0.12732306122779846,
+              0.13160529732704163,
+              1.7277460098266602
+            ]
+          },
+          "customRole": "hair_fiber_lod1",
+          "revision": null,
+          "vertices": 11760,
+          "polygons": 5292,
+          "materials": [
+            "Aevrynd_Hair_Strands_v57"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "HairNapeClumps",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.06399833410978317,
+              0.03582325950264931,
+              1.5808144807815552
+            ],
+            "maximum": [
+              0.06797953695058823,
+              0.07019349187612534,
+              1.6075847148895264
+            ]
+          },
+          "customRole": "hair_nape_clumps",
+          "revision": null,
+          "vertices": 532,
+          "polygons": 228,
+          "materials": [
+            "Aevrynd_Hair_v11_Dark",
+            "Aevrynd_Hair_v11_Warm"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "HairScalp",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.08272073417901993,
+              -0.12190178036689758,
+              1.5943288803100586
+            ],
+            "maximum": [
+              0.08262809365987778,
+              0.0753885805606842,
+              1.7205229997634888
+            ]
+          },
+          "customRole": "hair_scalp",
+          "revision": 214,
+          "vertices": 2497,
+          "polygons": 2496,
+          "materials": [
+            "Aevrynd_Hair_Scalp"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "HairSilhouetteCards_v246",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.1354159265756607,
+              -0.07687251269817352,
+              1.4126378297805786
+            ],
+            "maximum": [
+              0.13445885479450226,
+              0.13202235102653503,
+              1.7239183187484741
+            ]
+          },
+          "customRole": null,
+          "revision": 246,
+          "vertices": 3456,
+          "polygons": 1616,
+          "materials": [
+            "Aevrynd_HairCards_v166"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "HairTempleClumps",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.08244422823190689,
+              -0.04745718464255333,
+              1.6097499132156372
+            ],
+            "maximum": [
+              0.08250604569911957,
+              0.05982718989253044,
+              1.6580220460891724
+            ]
+          },
+          "customRole": "hair_temple_clumps",
+          "revision": null,
+          "vertices": 644,
+          "polygons": 276,
+          "materials": [
+            "Aevrynd_Hair_v11_Dark",
+            "Aevrynd_Hair_v11_Warm"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "HairUndercutScalp",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.07357577234506607,
+              -0.006867736577987671,
+              1.5027635097503662
+            ],
+            "maximum": [
+              0.07327539473772049,
+              0.046671509742736816,
+              1.5678759813308716
+            ]
+          },
+          "customRole": "hair_undercut_scalp",
+          "revision": null,
+          "vertices": 2688,
+          "polygons": 2565,
+          "materials": [
+            "Aevrynd_Hair_Undercut_v46"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "HairlineNaturalCards_v214",
+          "type": "MESH",
+          "parent": null,
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.07698380202054977,
+              -0.1099456176161766,
+              1.6528016328811646
+            ],
+            "maximum": [
+              0.07647097855806351,
+              -0.03403787687420845,
+              1.7022360563278198
+            ]
+          },
+          "customRole": null,
+          "revision": 214,
+          "vertices": 570,
+          "polygons": 228,
+          "materials": [
+            "Aevrynd_HairlineRoots_v188"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Mouth_OralCavity",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.026000000536441803,
+              -0.10650012642145157,
+              1.517199993133545
+            ],
+            "maximum": [
+              0.026000000536441803,
+              -0.07700011879205704,
+              1.541200041770935
+            ]
+          },
+          "customRole": "oral_cavity_cup",
+          "revision": null,
+          "vertices": 193,
+          "polygons": 192,
+          "materials": [
+            "Aevrynd_OralCavity_v40"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Mouth_Tongue",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.014999999664723873,
+              -0.090500108897686,
+              1.5210000276565552
+            ],
+            "maximum": [
+              0.014999999664723873,
+              -0.0815001130104065,
+              1.5266000032424927
+            ]
+          },
+          "customRole": "tongue",
+          "revision": null,
+          "vertices": 170,
+          "polygons": 192,
+          "materials": [
+            "Aevrynd_Tongue_v40"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Mouth_UpperTeeth",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.014150000177323818,
+              -0.08712128549814224,
+              1.5297499895095825
+            ],
+            "maximum": [
+              0.014150000177323818,
+              -0.08487895131111145,
+              1.534250020980835
+            ]
+          },
+          "customRole": "upper_teeth",
+          "revision": null,
+          "vertices": 432,
+          "polygons": 504,
+          "materials": [
+            "Aevrynd_Teeth_v40"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Mouth_WetLine",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": true,
+          "bounds": {
+            "minimum": [
+              -0.02239999920129776,
+              -0.13760747015476227,
+              1.5295350551605225
+            ],
+            "maximum": [
+              0.02239999920129776,
+              -0.11917111277580261,
+              1.5298000574111938
+            ]
+          },
+          "customRole": "mouth_wet_margin",
+          "revision": null,
+          "vertices": 130,
+          "polygons": 64,
+          "materials": [
+            "Aevrynd_MouthWetLine_v50"
+          ],
+          "shapeKeys": []
+        }
+      ],
+      "status": "INSPECTED"
+    },
+    "targetNativeHairR981": {
+      "path": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-coherent-clump-waves-r981.blend",
+      "sceneRevision": "v249r981-coherent-clump-waves",
+      "releaseState": "STATIC_COHERENT_CLUMP_VISUAL_AND_COLLISION_AUDIT_REQUIRED",
+      "objects": [
+        {
+          "name": "AevryndFemaleRig",
+          "type": "ARMATURE",
+          "parent": null,
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.42049941420555115,
+              -0.20258253812789917,
+              0.0003076302818953991
+            ],
+            "maximum": [
+              0.42049941420555115,
+              0.0780000239610672,
+              1.6749999523162842
+            ]
+          },
+          "customRole": "female_skeleton",
+          "revision": "v249r647",
+          "armatureSignatures": {
+            "all": {
+              "boneCount": 38,
+              "sha256": "802d781cb47e6f0da6f24fedb529091d2ea7007266866c7388db6bea2b6ad8df"
+            },
+            "baseWithoutHairDynamics": {
+              "boneCount": 23,
+              "sha256": "05c6526f62a30491b6d8df294bc8992a16c8f848bce042155ed56b1056967c7c"
+            },
+            "coreWithoutHairOrKneeSupport": {
+              "boneCount": 21,
+              "sha256": "c62059c6136f77977aa1b2990ecde2f2c07014bd0dda0755f3b012a571be5edb"
+            }
+          },
+          "boneNames": [
+            "chest",
+            "clavicle.L",
+            "clavicle.R",
+            "foot.L",
+            "foot.R",
+            "forearm.L",
+            "forearm.R",
+            "hair_dyn.C.back.01",
+            "hair_dyn.C.back.02",
+            "hair_dyn.C.back.03",
+            "hair_dyn.L.back.01",
+            "hair_dyn.L.back.02",
+            "hair_dyn.L.back.03",
+            "hair_dyn.L.front.01",
+            "hair_dyn.L.front.02",
+            "hair_dyn.L.front.03",
+            "hair_dyn.R.back.01",
+            "hair_dyn.R.back.02",
+            "hair_dyn.R.back.03",
+            "hair_dyn.R.front.01",
+            "hair_dyn.R.front.02",
+            "hair_dyn.R.front.03",
+            "hand.L",
+            "hand.R",
+            "head",
+            "knee_support.L",
+            "knee_support.R",
+            "neck",
+            "pelvis",
+            "root",
+            "shin.L",
+            "shin.R",
+            "spine_01",
+            "spine_02",
+            "thigh.L",
+            "thigh.R",
+            "upper_arm.L",
+            "upper_arm.R"
+          ],
+          "boneRecords": {
+            "root": {
+              "head": [
+                0.0,
+                -7.28401355445385e-05,
+                0.0003076302818953991
+              ],
+              "tail": [
+                0.0,
+                -0.02143995650112629,
+                0.8083802461624146
+              ]
+            },
+            "pelvis": {
+              "head": [
+                0.0,
+                -0.02143995650112629,
+                0.8083802461624146
+              ],
+              "tail": [
+                -5.820766091346741e-11,
+                0.021660640835762024,
+                0.8757376670837402
+              ]
+            },
+            "spine_01": {
+              "head": [
+                -5.820766091346741e-11,
+                0.021660640835762024,
+                0.8757376670837402
+              ],
+              "tail": [
+                0.0,
+                0.0013243970461189747,
+                0.9370903372764587
+              ]
+            },
+            "spine_02": {
+              "head": [
+                0.0,
+                0.0013243970461189747,
+                0.9370903372764587
+              ],
+              "tail": [
+                5.820766091346741e-11,
+                -0.009532758966088295,
+                1.02274489402771
+              ]
+            },
+            "chest": {
+              "head": [
+                5.820766091346741e-11,
+                -0.009532758966088295,
+                1.02274489402771
+              ],
+              "tail": [
+                0.0,
+                -0.006545451935380697,
+                1.1708152294158936
+              ]
+            },
+            "neck": {
+              "head": [
+                0.0,
+                -0.006545451935380697,
+                1.1708152294158936
+              ],
+              "tail": [
+                2.9103830456733704e-11,
+                0.0003882718738168478,
+                1.3115835189819336
+              ]
+            },
+            "head": {
+              "head": [
+                2.9103830456733704e-11,
+                0.0003882718738168478,
+                1.3115835189819336
+              ],
+              "tail": [
+                0.0,
+                -0.03347551077604294,
+                1.5513219833374023
+              ]
+            },
+            "hair_dyn.L.front.01": {
+              "head": [
+                -0.0820000022649765,
+                -0.029999999329447746,
+                1.6749999523162842
+              ],
+              "tail": [
+                -0.0820000022649765,
+                -0.029999999329447746,
+                1.5850000381469727
+              ]
+            },
+            "hair_dyn.L.front.02": {
+              "head": [
+                -0.0820000022649765,
+                -0.029999999329447746,
+                1.5850000381469727
+              ],
+              "tail": [
+                -0.0820000022649765,
+                -0.029999999329447746,
+                1.4950000047683716
+              ]
+            },
+            "hair_dyn.L.front.03": {
+              "head": [
+                -0.0820000022649765,
+                -0.029999999329447746,
+                1.4950000047683716
+              ],
+              "tail": [
+                -0.0820000022649765,
+                -0.029999999329447746,
+                1.3849999904632568
+              ]
+            },
+            "hair_dyn.R.front.01": {
+              "head": [
+                0.0820000022649765,
+                -0.029999999329447746,
+                1.6749999523162842
+              ],
+              "tail": [
+                0.0820000022649765,
+                -0.029999999329447746,
+                1.5850000381469727
+              ]
+            },
+            "hair_dyn.R.front.02": {
+              "head": [
+                0.0820000022649765,
+                -0.029999999329447746,
+                1.5850000381469727
+              ],
+              "tail": [
+                0.0820000022649765,
+                -0.029999999329447746,
+                1.4950000047683716
+              ]
+            },
+            "hair_dyn.R.front.03": {
+              "head": [
+                0.0820000022649765,
+                -0.029999999329447746,
+                1.4950000047683716
+              ],
+              "tail": [
+                0.0820000022649765,
+                -0.029999999329447746,
+                1.3849999904632568
+              ]
+            },
+            "hair_dyn.L.back.01": {
+              "head": [
+                -0.06499999761581421,
+                0.05999999865889549,
+                1.6749999523162842
+              ],
+              "tail": [
+                -0.06499999761581421,
+                0.05999999865889549,
+                1.5850000381469727
+              ]
+            },
+            "hair_dyn.L.back.02": {
+              "head": [
+                -0.06499999761581421,
+                0.05999999865889549,
+                1.5850000381469727
+              ],
+              "tail": [
+                -0.06499999761581421,
+                0.05999999865889549,
+                1.4950000047683716
+              ]
+            },
+            "hair_dyn.L.back.03": {
+              "head": [
+                -0.06499999761581421,
+                0.05999999865889549,
+                1.4950000047683716
+              ],
+              "tail": [
+                -0.06499999761581421,
+                0.05999999865889549,
+                1.3849999904632568
+              ]
+            },
+            "hair_dyn.C.back.01": {
+              "head": [
+                0.0,
+                0.07800000160932541,
+                1.6749999523162842
+              ],
+              "tail": [
+                0.0,
+                0.07800000160932541,
+                1.5850000381469727
+              ]
+            },
+            "hair_dyn.C.back.02": {
+              "head": [
+                0.0,
+                0.07800000160932541,
+                1.5850000381469727
+              ],
+              "tail": [
+                0.0,
+                0.07800000160932541,
+                1.4950000047683716
+              ]
+            },
+            "hair_dyn.C.back.03": {
+              "head": [
+                0.0,
+                0.07800000160932541,
+                1.4950000047683716
+              ],
+              "tail": [
+                0.0,
+                0.07800000160932541,
+                1.3849999904632568
+              ]
+            },
+            "hair_dyn.R.back.01": {
+              "head": [
+                0.06499999761581421,
+                0.05999999865889549,
+                1.6749999523162842
+              ],
+              "tail": [
+                0.06499999761581421,
+                0.05999999865889549,
+                1.5850000381469727
+              ]
+            },
+            "hair_dyn.R.back.02": {
+              "head": [
+                0.06499999761581421,
+                0.05999999865889549,
+                1.5850000381469727
+              ],
+              "tail": [
+                0.06499999761581421,
+                0.05999999865889549,
+                1.4950000047683716
+              ]
+            },
+            "hair_dyn.R.back.03": {
+              "head": [
+                0.06499999761581421,
+                0.05999999865889549,
+                1.4950000047683716
+              ],
+              "tail": [
+                0.06499999761581421,
+                0.05999999865889549,
+                1.3849999904632568
+              ]
+            },
+            "clavicle.L": {
+              "head": [
+                0.02205490879714489,
+                -0.019895240664482117,
+                1.2458484172821045
+              ],
+              "tail": [
+                0.15022456645965576,
+                -0.019619282335042953,
+                1.2297419309616089
+              ]
+            },
+            "upper_arm.L": {
+              "head": [
+                0.15022456645965576,
+                -0.019619282335042953,
+                1.2297419309616089
+              ],
+              "tail": [
+                0.3031369745731354,
+                -0.022052515298128128,
+                1.0621635913848877
+              ]
+            },
+            "forearm.L": {
+              "head": [
+                0.3031369745731354,
+                -0.022052515298128128,
+                1.0621635913848877
+              ],
+              "tail": [
+                0.41099172830581665,
+                -0.15720735490322113,
+                0.9461894631385803
+              ]
+            },
+            "hand.L": {
+              "head": [
+                0.41099172830581665,
+                -0.15720735490322113,
+                0.9461894631385803
+              ],
+              "tail": [
+                0.42049941420555115,
+                -0.17957164347171783,
+                0.931602954864502
+              ]
+            },
+            "clavicle.R": {
+              "head": [
+                -0.02205490879714489,
+                -0.019895240664482117,
+                1.2458484172821045
+              ],
+              "tail": [
+                -0.15022456645965576,
+                -0.019619282335042953,
+                1.2297419309616089
+              ]
+            },
+            "upper_arm.R": {
+              "head": [
+                -0.15022456645965576,
+                -0.019619282335042953,
+                1.2297419309616089
+              ],
+              "tail": [
+                -0.3031369745731354,
+                -0.022052515298128128,
+                1.0621635913848877
+              ]
+            },
+            "forearm.R": {
+              "head": [
+                -0.3031369745731354,
+                -0.022052515298128128,
+                1.0621635913848877
+              ],
+              "tail": [
+                -0.41099172830581665,
+                -0.15720735490322113,
+                0.9461894631385803
+              ]
+            },
+            "hand.R": {
+              "head": [
+                -0.41099172830581665,
+                -0.15720735490322113,
+                0.9461894631385803
+              ],
+              "tail": [
+                -0.42049941420555115,
+                -0.17957164347171783,
+                0.931602954864502
+              ]
+            },
+            "thigh.L": {
+              "head": [
+                0.09410379827022552,
+                -0.016963105648756027,
+                0.795713484287262
+              ],
+              "tail": [
+                0.13108913600444794,
+                -0.04567533731460571,
+                0.4356476664543152
+              ]
+            },
+            "shin.L": {
+              "head": [
+                0.13108913600444794,
+                -0.04567533731460571,
+                0.4356476664543152
+              ],
+              "tail": [
+                0.16104716062545776,
+                -0.027300897985696793,
+                0.06615442037582397
+              ]
+            },
+            "foot.L": {
+              "head": [
+                0.16104716062545776,
+                -0.027300897985696793,
+                0.06615442037582397
+              ],
+              "tail": [
+                0.17194178700447083,
+                -0.20258250832557678,
+                0.020628154277801514
+              ]
+            },
+            "knee_support.L": {
+              "head": [
+                0.13108913600444794,
+                -0.04567533731460571,
+                0.4356476664543152
+              ],
+              "tail": [
+                0.16104716062545776,
+                -0.027300897985696793,
+                0.06615442037582397
+              ]
+            },
+            "thigh.R": {
+              "head": [
+                -0.09410379827022552,
+                -0.016963105648756027,
+                0.795713484287262
+              ],
+              "tail": [
+                -0.13108913600444794,
+                -0.04567533731460571,
+                0.4356476664543152
+              ]
+            },
+            "shin.R": {
+              "head": [
+                -0.13108913600444794,
+                -0.04567533731460571,
+                0.4356476664543152
+              ],
+              "tail": [
+                -0.16104716062545776,
+                -0.027300897985696793,
+                0.06615442037582397
+              ]
+            },
+            "foot.R": {
+              "head": [
+                -0.16104716062545776,
+                -0.027300897985696793,
+                0.06615442037582397
+              ],
+              "tail": [
+                -0.17194178700447083,
+                -0.20258250832557678,
+                0.020628154277801514
+              ]
+            },
+            "knee_support.R": {
+              "head": [
+                -0.13108913600444794,
+                -0.04567533731460571,
+                0.4356476664543152
+              ],
+              "tail": [
+                -0.16104716062545776,
+                -0.027300897985696793,
+                0.06615442037582397
+              ]
+            }
+          }
+        },
+        {
+          "name": "AevryndFemaleCoherentClumpGroom_R981",
+          "type": "CURVES",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.1214287281036377,
+              -0.14360098540782928,
+              1.2038066387176514
+            ],
+            "maximum": [
+              0.11693821102380753,
+              0.06509407609701157,
+              1.552932858467102
+            ]
+          },
+          "customRole": null,
+          "revision": "v249r981"
+        },
+        {
+          "name": "AevryndFemaleCC0Baseline_v259",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.47524309158325195,
+              -0.2883804440498352,
+              0.0010484487283974886
+            ],
+            "maximum": [
+              0.47524312138557434,
+              0.08771052211523056,
+              1.550410509109497
+            ]
+          },
+          "customRole": null,
+          "revision": "v249r962",
+          "vertices": 19158,
+          "polygons": 18486,
+          "materials": [
+            "Aevrynd_CC0_OwnedSkin_R602_Neutral"
+          ],
+          "shapeKeys": [
+            "Basis",
+            "$md-$as-$fe-$ch",
+            "$md-$as-$fe-$yn",
+            "$md-$as-$ma-$yn",
+            "$md-$ca-$fe-$ch",
+            "$md-$ca-$fe-$yn",
+            "$md-$ca-$ma-$yn",
+            "$md-$af-$fe-$ch",
+            "$md-$af-$fe-$yn",
+            "$md-$af-$ma-$yn",
+            "$md-universal-$fe-$ch-min$mu-$av$wg",
+            "$md-universal-$fe-$ch-$av$mu-$av$wg",
+            "$md-universal-$fe-$yn-min$mu-$av$wg",
+            "$md-universal-$fe-$yn-$av$mu-min$wg",
+            "$md-universal-$fe-$yn-$av$mu-$av$wg",
+            "$md-universal-$ma-$yn-$av$mu-$av$wg",
+            "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+            "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+            "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+            "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+            "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+            "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+            "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
+            "ElbowCreaseVolume70.L",
+            "ElbowCreaseVolume70.R",
+            "KneeEdgeConstraint75.L",
+            "KneeEdgeConstraint75.R",
+            "KneeCreaseVolume75.L",
+            "KneeCreaseVolume75.R"
+          ]
+        },
+        {
+          "name": "AevryndFemaleTargetScalp_R976",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.067220039665699,
+              -0.09914952516555786,
+              1.4930616617202759
+            ],
+            "maximum": [
+              0.0672200471162796,
+              0.036815859377384186,
+              1.5516104698181152
+            ]
+          },
+          "customRole": null,
+          "revision": "v249r976",
+          "vertices": 1568,
+          "polygons": 1470,
+          "materials": [
+            "Aevrynd_TargetScalp_WarmBrown_R976"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_Cornea",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.01728895865380764,
+              -0.12000539153814316,
+              1.4373624324798584
+            ],
+            "maximum": [
+              0.03901655972003937,
+              -0.0944904014468193,
+              1.460530400276184
+            ]
+          },
+          "customRole": "cornea",
+          "revision": 602,
+          "vertices": 1986,
+          "polygons": 2048,
+          "materials": [
+            "Aevrynd_Eye_Cornea"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_Iris",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.023327965289354324,
+              -0.11944451928138733,
+              1.4438296556472778
+            ],
+            "maximum": [
+              0.032977551221847534,
+              -0.1177377849817276,
+              1.4540631771087646
+            ]
+          },
+          "customRole": "iris",
+          "revision": 602,
+          "vertices": 97,
+          "polygons": 96,
+          "materials": [
+            "Aevrynd_Eye_Iris"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_Sclera",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.017508873715996742,
+              -0.11847449839115143,
+              1.4375966787338257
+            ],
+            "maximum": [
+              0.03879664093255997,
+              -0.09495210647583008,
+              1.4602957963943481
+            ]
+          },
+          "customRole": "sclera",
+          "revision": 602,
+          "vertices": 1986,
+          "polygons": 2048,
+          "materials": [
+            "Aevrynd_Eye_Sclera"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_Cornea",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.03889651224017143,
+              -0.12000539153814316,
+              1.4373624324798584
+            ],
+            "maximum": [
+              -0.01740899495780468,
+              -0.0944904014468193,
+              1.460530400276184
+            ]
+          },
+          "customRole": "cornea",
+          "revision": 602,
+          "vertices": 1986,
+          "polygons": 2048,
+          "materials": [
+            "Aevrynd_Eye_Cornea"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_Iris",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.03292896971106529,
+              -0.11944524198770523,
+              1.4438296556472778
+            ],
+            "maximum": [
+              -0.023376530036330223,
+              -0.1177370548248291,
+              1.4540631771087646
+            ]
+          },
+          "customRole": "iris",
+          "revision": 602,
+          "vertices": 97,
+          "polygons": 96,
+          "materials": [
+            "Aevrynd_Eye_Iris"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_Sclera",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.03867902606725693,
+              -0.11847449839115143,
+              1.4375966787338257
+            ],
+            "maximum": [
+              -0.017626481130719185,
+              -0.09495210647583008,
+              1.4602957963943481
+            ]
+          },
+          "customRole": "sclera",
+          "revision": 602,
+          "vertices": 1986,
+          "polygons": 2048,
+          "materials": [
+            "Aevrynd_Eye_Sclera"
+          ],
+          "shapeKeys": []
+        }
+      ],
+      "status": "INSPECTED"
+    },
+    "currentFaceR1001": {
+      "path": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-mixed-space-eyelid-relief-r1001.blend",
+      "sceneRevision": "v249r1001-mixed-space-eyelid-relief",
+      "releaseState": "TECHNICAL_CANDIDATE_VISUAL_HERO_FAIL",
+      "objects": [
+        {
+          "name": "AevryndFemaleRig",
+          "type": "ARMATURE",
+          "parent": null,
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.42049941420555115,
+              -0.20258253812789917,
+              0.0003076302818953991
+            ],
+            "maximum": [
+              0.42049941420555115,
+              0.0780000239610672,
+              1.6749999523162842
+            ]
+          },
+          "customRole": "female_skeleton",
+          "revision": "v249r647",
+          "armatureSignatures": {
+            "all": {
+              "boneCount": 38,
+              "sha256": "802d781cb47e6f0da6f24fedb529091d2ea7007266866c7388db6bea2b6ad8df"
+            },
+            "baseWithoutHairDynamics": {
+              "boneCount": 23,
+              "sha256": "05c6526f62a30491b6d8df294bc8992a16c8f848bce042155ed56b1056967c7c"
+            },
+            "coreWithoutHairOrKneeSupport": {
+              "boneCount": 21,
+              "sha256": "c62059c6136f77977aa1b2990ecde2f2c07014bd0dda0755f3b012a571be5edb"
+            }
+          },
+          "boneNames": [
+            "chest",
+            "clavicle.L",
+            "clavicle.R",
+            "foot.L",
+            "foot.R",
+            "forearm.L",
+            "forearm.R",
+            "hair_dyn.C.back.01",
+            "hair_dyn.C.back.02",
+            "hair_dyn.C.back.03",
+            "hair_dyn.L.back.01",
+            "hair_dyn.L.back.02",
+            "hair_dyn.L.back.03",
+            "hair_dyn.L.front.01",
+            "hair_dyn.L.front.02",
+            "hair_dyn.L.front.03",
+            "hair_dyn.R.back.01",
+            "hair_dyn.R.back.02",
+            "hair_dyn.R.back.03",
+            "hair_dyn.R.front.01",
+            "hair_dyn.R.front.02",
+            "hair_dyn.R.front.03",
+            "hand.L",
+            "hand.R",
+            "head",
+            "knee_support.L",
+            "knee_support.R",
+            "neck",
+            "pelvis",
+            "root",
+            "shin.L",
+            "shin.R",
+            "spine_01",
+            "spine_02",
+            "thigh.L",
+            "thigh.R",
+            "upper_arm.L",
+            "upper_arm.R"
+          ],
+          "boneRecords": {
+            "root": {
+              "head": [
+                0.0,
+                -7.28401355445385e-05,
+                0.0003076302818953991
+              ],
+              "tail": [
+                0.0,
+                -0.02143995650112629,
+                0.8083802461624146
+              ]
+            },
+            "pelvis": {
+              "head": [
+                0.0,
+                -0.02143995650112629,
+                0.8083802461624146
+              ],
+              "tail": [
+                -5.820766091346741e-11,
+                0.021660640835762024,
+                0.8757376670837402
+              ]
+            },
+            "spine_01": {
+              "head": [
+                -5.820766091346741e-11,
+                0.021660640835762024,
+                0.8757376670837402
+              ],
+              "tail": [
+                0.0,
+                0.0013243970461189747,
+                0.9370903372764587
+              ]
+            },
+            "spine_02": {
+              "head": [
+                0.0,
+                0.0013243970461189747,
+                0.9370903372764587
+              ],
+              "tail": [
+                5.820766091346741e-11,
+                -0.009532758966088295,
+                1.02274489402771
+              ]
+            },
+            "chest": {
+              "head": [
+                5.820766091346741e-11,
+                -0.009532758966088295,
+                1.02274489402771
+              ],
+              "tail": [
+                0.0,
+                -0.006545451935380697,
+                1.1708152294158936
+              ]
+            },
+            "neck": {
+              "head": [
+                0.0,
+                -0.006545451935380697,
+                1.1708152294158936
+              ],
+              "tail": [
+                2.9103830456733704e-11,
+                0.0003882718738168478,
+                1.3115835189819336
+              ]
+            },
+            "head": {
+              "head": [
+                2.9103830456733704e-11,
+                0.0003882718738168478,
+                1.3115835189819336
+              ],
+              "tail": [
+                0.0,
+                -0.03347551077604294,
+                1.5513219833374023
+              ]
+            },
+            "hair_dyn.L.front.01": {
+              "head": [
+                -0.0820000022649765,
+                -0.029999999329447746,
+                1.6749999523162842
+              ],
+              "tail": [
+                -0.0820000022649765,
+                -0.029999999329447746,
+                1.5850000381469727
+              ]
+            },
+            "hair_dyn.L.front.02": {
+              "head": [
+                -0.0820000022649765,
+                -0.029999999329447746,
+                1.5850000381469727
+              ],
+              "tail": [
+                -0.0820000022649765,
+                -0.029999999329447746,
+                1.4950000047683716
+              ]
+            },
+            "hair_dyn.L.front.03": {
+              "head": [
+                -0.0820000022649765,
+                -0.029999999329447746,
+                1.4950000047683716
+              ],
+              "tail": [
+                -0.0820000022649765,
+                -0.029999999329447746,
+                1.3849999904632568
+              ]
+            },
+            "hair_dyn.R.front.01": {
+              "head": [
+                0.0820000022649765,
+                -0.029999999329447746,
+                1.6749999523162842
+              ],
+              "tail": [
+                0.0820000022649765,
+                -0.029999999329447746,
+                1.5850000381469727
+              ]
+            },
+            "hair_dyn.R.front.02": {
+              "head": [
+                0.0820000022649765,
+                -0.029999999329447746,
+                1.5850000381469727
+              ],
+              "tail": [
+                0.0820000022649765,
+                -0.029999999329447746,
+                1.4950000047683716
+              ]
+            },
+            "hair_dyn.R.front.03": {
+              "head": [
+                0.0820000022649765,
+                -0.029999999329447746,
+                1.4950000047683716
+              ],
+              "tail": [
+                0.0820000022649765,
+                -0.029999999329447746,
+                1.3849999904632568
+              ]
+            },
+            "hair_dyn.L.back.01": {
+              "head": [
+                -0.06499999761581421,
+                0.05999999865889549,
+                1.6749999523162842
+              ],
+              "tail": [
+                -0.06499999761581421,
+                0.05999999865889549,
+                1.5850000381469727
+              ]
+            },
+            "hair_dyn.L.back.02": {
+              "head": [
+                -0.06499999761581421,
+                0.05999999865889549,
+                1.5850000381469727
+              ],
+              "tail": [
+                -0.06499999761581421,
+                0.05999999865889549,
+                1.4950000047683716
+              ]
+            },
+            "hair_dyn.L.back.03": {
+              "head": [
+                -0.06499999761581421,
+                0.05999999865889549,
+                1.4950000047683716
+              ],
+              "tail": [
+                -0.06499999761581421,
+                0.05999999865889549,
+                1.3849999904632568
+              ]
+            },
+            "hair_dyn.C.back.01": {
+              "head": [
+                0.0,
+                0.07800000160932541,
+                1.6749999523162842
+              ],
+              "tail": [
+                0.0,
+                0.07800000160932541,
+                1.5850000381469727
+              ]
+            },
+            "hair_dyn.C.back.02": {
+              "head": [
+                0.0,
+                0.07800000160932541,
+                1.5850000381469727
+              ],
+              "tail": [
+                0.0,
+                0.07800000160932541,
+                1.4950000047683716
+              ]
+            },
+            "hair_dyn.C.back.03": {
+              "head": [
+                0.0,
+                0.07800000160932541,
+                1.4950000047683716
+              ],
+              "tail": [
+                0.0,
+                0.07800000160932541,
+                1.3849999904632568
+              ]
+            },
+            "hair_dyn.R.back.01": {
+              "head": [
+                0.06499999761581421,
+                0.05999999865889549,
+                1.6749999523162842
+              ],
+              "tail": [
+                0.06499999761581421,
+                0.05999999865889549,
+                1.5850000381469727
+              ]
+            },
+            "hair_dyn.R.back.02": {
+              "head": [
+                0.06499999761581421,
+                0.05999999865889549,
+                1.5850000381469727
+              ],
+              "tail": [
+                0.06499999761581421,
+                0.05999999865889549,
+                1.4950000047683716
+              ]
+            },
+            "hair_dyn.R.back.03": {
+              "head": [
+                0.06499999761581421,
+                0.05999999865889549,
+                1.4950000047683716
+              ],
+              "tail": [
+                0.06499999761581421,
+                0.05999999865889549,
+                1.3849999904632568
+              ]
+            },
+            "clavicle.L": {
+              "head": [
+                0.02205490879714489,
+                -0.019895240664482117,
+                1.2458484172821045
+              ],
+              "tail": [
+                0.15022456645965576,
+                -0.019619282335042953,
+                1.2297419309616089
+              ]
+            },
+            "upper_arm.L": {
+              "head": [
+                0.15022456645965576,
+                -0.019619282335042953,
+                1.2297419309616089
+              ],
+              "tail": [
+                0.3031369745731354,
+                -0.022052515298128128,
+                1.0621635913848877
+              ]
+            },
+            "forearm.L": {
+              "head": [
+                0.3031369745731354,
+                -0.022052515298128128,
+                1.0621635913848877
+              ],
+              "tail": [
+                0.41099172830581665,
+                -0.15720735490322113,
+                0.9461894631385803
+              ]
+            },
+            "hand.L": {
+              "head": [
+                0.41099172830581665,
+                -0.15720735490322113,
+                0.9461894631385803
+              ],
+              "tail": [
+                0.42049941420555115,
+                -0.17957164347171783,
+                0.931602954864502
+              ]
+            },
+            "clavicle.R": {
+              "head": [
+                -0.02205490879714489,
+                -0.019895240664482117,
+                1.2458484172821045
+              ],
+              "tail": [
+                -0.15022456645965576,
+                -0.019619282335042953,
+                1.2297419309616089
+              ]
+            },
+            "upper_arm.R": {
+              "head": [
+                -0.15022456645965576,
+                -0.019619282335042953,
+                1.2297419309616089
+              ],
+              "tail": [
+                -0.3031369745731354,
+                -0.022052515298128128,
+                1.0621635913848877
+              ]
+            },
+            "forearm.R": {
+              "head": [
+                -0.3031369745731354,
+                -0.022052515298128128,
+                1.0621635913848877
+              ],
+              "tail": [
+                -0.41099172830581665,
+                -0.15720735490322113,
+                0.9461894631385803
+              ]
+            },
+            "hand.R": {
+              "head": [
+                -0.41099172830581665,
+                -0.15720735490322113,
+                0.9461894631385803
+              ],
+              "tail": [
+                -0.42049941420555115,
+                -0.17957164347171783,
+                0.931602954864502
+              ]
+            },
+            "thigh.L": {
+              "head": [
+                0.09410379827022552,
+                -0.016963105648756027,
+                0.795713484287262
+              ],
+              "tail": [
+                0.13108913600444794,
+                -0.04567533731460571,
+                0.4356476664543152
+              ]
+            },
+            "shin.L": {
+              "head": [
+                0.13108913600444794,
+                -0.04567533731460571,
+                0.4356476664543152
+              ],
+              "tail": [
+                0.16104716062545776,
+                -0.027300897985696793,
+                0.06615442037582397
+              ]
+            },
+            "foot.L": {
+              "head": [
+                0.16104716062545776,
+                -0.027300897985696793,
+                0.06615442037582397
+              ],
+              "tail": [
+                0.17194178700447083,
+                -0.20258250832557678,
+                0.020628154277801514
+              ]
+            },
+            "knee_support.L": {
+              "head": [
+                0.13108913600444794,
+                -0.04567533731460571,
+                0.4356476664543152
+              ],
+              "tail": [
+                0.16104716062545776,
+                -0.027300897985696793,
+                0.06615442037582397
+              ]
+            },
+            "thigh.R": {
+              "head": [
+                -0.09410379827022552,
+                -0.016963105648756027,
+                0.795713484287262
+              ],
+              "tail": [
+                -0.13108913600444794,
+                -0.04567533731460571,
+                0.4356476664543152
+              ]
+            },
+            "shin.R": {
+              "head": [
+                -0.13108913600444794,
+                -0.04567533731460571,
+                0.4356476664543152
+              ],
+              "tail": [
+                -0.16104716062545776,
+                -0.027300897985696793,
+                0.06615442037582397
+              ]
+            },
+            "foot.R": {
+              "head": [
+                -0.16104716062545776,
+                -0.027300897985696793,
+                0.06615442037582397
+              ],
+              "tail": [
+                -0.17194178700447083,
+                -0.20258250832557678,
+                0.020628154277801514
+              ]
+            },
+            "knee_support.R": {
+              "head": [
+                -0.13108913600444794,
+                -0.04567533731460571,
+                0.4356476664543152
+              ],
+              "tail": [
+                -0.16104716062545776,
+                -0.027300897985696793,
+                0.06615442037582397
+              ]
+            }
+          }
+        },
+        {
+          "name": "AevryndFemaleCoherentClumpGroom_R981",
+          "type": "CURVES",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.1214287281036377,
+              -0.14360098540782928,
+              1.2038066387176514
+            ],
+            "maximum": [
+              0.11693821102380753,
+              0.06509407609701157,
+              1.552932858467102
+            ]
+          },
+          "customRole": null,
+          "revision": "v249r981"
+        },
+        {
+          "name": "AevryndFemaleCC0Baseline_v259",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.47524309158325195,
+              -0.2883804440498352,
+              0.0010484487283974886
+            ],
+            "maximum": [
+              0.47524312138557434,
+              0.08771052211523056,
+              1.550410509109497
+            ]
+          },
+          "customRole": null,
+          "revision": "v249r962",
+          "vertices": 19158,
+          "polygons": 18486,
+          "materials": [
+            "Aevrynd_CC0_OwnedSkin_R602_Neutral"
+          ],
+          "shapeKeys": [
+            "Basis",
+            "$md-$as-$fe-$ch",
+            "$md-$as-$fe-$yn",
+            "$md-$as-$ma-$yn",
+            "$md-$ca-$fe-$ch",
+            "$md-$ca-$fe-$yn",
+            "$md-$ca-$ma-$yn",
+            "$md-$af-$fe-$ch",
+            "$md-$af-$fe-$yn",
+            "$md-$af-$ma-$yn",
+            "$md-universal-$fe-$ch-min$mu-$av$wg",
+            "$md-universal-$fe-$ch-$av$mu-$av$wg",
+            "$md-universal-$fe-$yn-min$mu-$av$wg",
+            "$md-universal-$fe-$yn-$av$mu-min$wg",
+            "$md-universal-$fe-$yn-$av$mu-$av$wg",
+            "$md-universal-$ma-$yn-$av$mu-$av$wg",
+            "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+            "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+            "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+            "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+            "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+            "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+            "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
+            "ElbowCreaseVolume70.L",
+            "ElbowCreaseVolume70.R",
+            "KneeEdgeConstraint75.L",
+            "KneeEdgeConstraint75.R",
+            "KneeCreaseVolume75.L",
+            "KneeCreaseVolume75.R",
+            "Aevrynd_MixedSpaceEyelidRelief_R1000"
+          ]
+        },
+        {
+          "name": "AevryndFemaleTargetScalp_R976",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "OBJECT",
+          "parentBone": "",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.067220039665699,
+              -0.09914952516555786,
+              1.4930616617202759
+            ],
+            "maximum": [
+              0.0672200471162796,
+              0.036815859377384186,
+              1.5516104698181152
+            ]
+          },
+          "customRole": null,
+          "revision": "v249r976",
+          "vertices": 1568,
+          "polygons": 1470,
+          "materials": [
+            "Aevrynd_TargetScalp_WarmBrown_R976"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Brow_L",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.010683566331863403,
+              -0.1339600831270218,
+              1.4701124429702759
+            ],
+            "maximum": [
+              0.05620105564594269,
+              -0.09832243621349335,
+              1.4842005968093872
+            ]
+          },
+          "customRole": "brow",
+          "revision": "v249r987",
+          "vertices": 3000,
+          "polygons": 2400,
+          "materials": [
+            "Aevrynd_Brow_Hair_v39_Dark",
+            "Aevrynd_Brow_Hair_v39_Warm"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Brow_L_Density",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.010220682248473167,
+              -0.13387124240398407,
+              1.4701056480407715
+            ],
+            "maximum": [
+              0.054590631276369095,
+              -0.10099966824054718,
+              1.482678771018982
+            ]
+          },
+          "customRole": "brow_density",
+          "revision": "v249r987",
+          "vertices": 175,
+          "polygons": 136,
+          "materials": [
+            "Aevrynd_Brow_Density_v39"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Brow_R",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.0562187023460865,
+              -0.13369649648666382,
+              1.4700720310211182
+            ],
+            "maximum": [
+              -0.010509231127798557,
+              -0.09846144169569016,
+              1.4848161935806274
+            ]
+          },
+          "customRole": "brow",
+          "revision": "v249r987",
+          "vertices": 3000,
+          "polygons": 2400,
+          "materials": [
+            "Aevrynd_Brow_Hair_v39_Dark",
+            "Aevrynd_Brow_Hair_v39_Warm"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Brow_R_Density",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.05459532514214516,
+              -0.13386698067188263,
+              1.470104455947876
+            ],
+            "maximum": [
+              -0.01027202419936657,
+              -0.10097695142030716,
+              1.4827054738998413
+            ]
+          },
+          "customRole": "brow_density",
+          "revision": "v249r987",
+          "vertices": 175,
+          "polygons": 136,
+          "materials": [
+            "Aevrynd_Brow_Density_v39"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_Cornea",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.01728895865380764,
+              -0.12000539153814316,
+              1.4373624324798584
+            ],
+            "maximum": [
+              0.03901655972003937,
+              -0.0944904014468193,
+              1.460530400276184
+            ]
+          },
+          "customRole": "cornea",
+          "revision": 602,
+          "vertices": 1986,
+          "polygons": 2048,
+          "materials": [
+            "Aevrynd_Eye_Cornea"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_Iris",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.023327965289354324,
+              -0.11944451928138733,
+              1.4438296556472778
+            ],
+            "maximum": [
+              0.032977551221847534,
+              -0.1177377849817276,
+              1.4540631771087646
+            ]
+          },
+          "customRole": "iris",
+          "revision": 602,
+          "vertices": 97,
+          "polygons": 96,
+          "materials": [
+            "Aevrynd_Eye_Iris"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_LowerLashes",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.01882157102227211,
+              -0.12509630620479584,
+              1.4465123414993286
+            ],
+            "maximum": [
+              0.03739996999502182,
+              -0.09420707076787949,
+              1.4504854679107666
+            ]
+          },
+          "customRole": "lower_lashes",
+          "revision": "v249r995",
+          "vertices": 462,
+          "polygons": 396,
+          "materials": [
+            "Aevrynd_Lash_Hair_v51"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_Sclera",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.017508873715996742,
+              -0.11847449839115143,
+              1.4375966787338257
+            ],
+            "maximum": [
+              0.03879664093255997,
+              -0.09495210647583008,
+              1.4602957963943481
+            ]
+          },
+          "customRole": "sclera",
+          "revision": 602,
+          "vertices": 1986,
+          "polygons": 2048,
+          "materials": [
+            "Aevrynd_Eye_Sclera"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_L_UpperLashes",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              0.018192382529377937,
+              -0.13342061638832092,
+              1.4529552459716797
+            ],
+            "maximum": [
+              0.03937210142612457,
+              -0.12292388081550598,
+              1.4616543054580688
+            ]
+          },
+          "customRole": "upper_lashes",
+          "revision": "v249r995",
+          "vertices": 966,
+          "polygons": 828,
+          "materials": [
+            "Aevrynd_Lash_Hair_v51"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_Cornea",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.03889651224017143,
+              -0.12000539153814316,
+              1.4373624324798584
+            ],
+            "maximum": [
+              -0.01740899495780468,
+              -0.0944904014468193,
+              1.460530400276184
+            ]
+          },
+          "customRole": "cornea",
+          "revision": 602,
+          "vertices": 1986,
+          "polygons": 2048,
+          "materials": [
+            "Aevrynd_Eye_Cornea"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_Iris",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.03292896971106529,
+              -0.11944524198770523,
+              1.4438296556472778
+            ],
+            "maximum": [
+              -0.023376530036330223,
+              -0.1177370548248291,
+              1.4540631771087646
+            ]
+          },
+          "customRole": "iris",
+          "revision": 602,
+          "vertices": 97,
+          "polygons": 96,
+          "materials": [
+            "Aevrynd_Eye_Iris"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_LowerLashes",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.037613824009895325,
+              -0.12508349120616913,
+              1.4465703964233398
+            ],
+            "maximum": [
+              -0.01899973303079605,
+              -0.09420671314001083,
+              1.4505562782287598
+            ]
+          },
+          "customRole": "lower_lashes",
+          "revision": "v249r995",
+          "vertices": 462,
+          "polygons": 396,
+          "materials": [
+            "Aevrynd_Lash_Hair_v51"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_Sclera",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.03867902606725693,
+              -0.11847449839115143,
+              1.4375966787338257
+            ],
+            "maximum": [
+              -0.017626481130719185,
+              -0.09495210647583008,
+              1.4602957963943481
+            ]
+          },
+          "customRole": "sclera",
+          "revision": 602,
+          "vertices": 1986,
+          "polygons": 2048,
+          "materials": [
+            "Aevrynd_Eye_Sclera"
+          ],
+          "shapeKeys": []
+        },
+        {
+          "name": "Eye_R_UpperLashes",
+          "type": "MESH",
+          "parent": "AevryndFemaleRig",
+          "parentType": "BONE",
+          "parentBone": "head",
+          "hiddenRender": false,
+          "bounds": {
+            "minimum": [
+              -0.03943973779678345,
+              -0.13348674774169922,
+              1.4524931907653809
+            ],
+            "maximum": [
+              -0.018056374043226242,
+              -0.1229330450296402,
+              1.4615718126296997
+            ]
+          },
+          "customRole": "upper_lashes",
+          "revision": "v249r995",
+          "vertices": 966,
+          "polygons": 828,
+          "materials": [
+            "Aevrynd_Lash_Hair_v51"
+          ],
+          "shapeKeys": []
+        }
+      ],
+      "status": "INSPECTED"
+    }
+  },
+  "armatureCompatibilityGroups": {
+    "28d6a15231e5a9d93d3a33a8e4b3a9bb1cbed05925dd8ddd8b94a241e3e28a43": [
+      {
+        "source": "openTopologyR446",
+        "object": "AevryndFemaleRig",
+        "baseBoneCount": 21,
+        "allBoneCount": 21
+      }
+    ],
+    "c62059c6136f77977aa1b2990ecde2f2c07014bd0dda0755f3b012a571be5edb": [
+      {
+        "source": "targetNativeHairR981",
+        "object": "AevryndFemaleRig",
+        "baseBoneCount": 21,
+        "allBoneCount": 38
+      },
+      {
+        "source": "currentFaceR1001",
+        "object": "AevryndFemaleRig",
+        "baseBoneCount": 21,
+        "allBoneCount": 38
+      }
+    ]
+  },
+  "coreRigDirectCompatibility": false,
+  "findings": [
+    "r446 retains a true open eye aperture and remains the topology reference",
+    "r981 and r1001 share the same corrected core rig plus knee-support and hair-dynamic extensions",
+    "r446 core rest-bone coordinates differ from the current target-native rig, so direct parent or weight transfer is invalid",
+    "the open eyelid loops must be retargeted onto the current r1001 head surface before current hair or face layers are integrated"
+  ],
+  "status": "PASS_INSPECTION_RETARGET_REQUIRED"
+}

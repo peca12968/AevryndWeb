@@ -1,0 +1,216 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-mixed-space-eyelid-relief-r1001.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-lateral-canthus-r1008-study.blend",
+  "shapeKey": "Aevrynd_LateralCanthus_R1008",
+  "scope": "lateral canthus only; medial canthus and caruncle unchanged",
+  "activeSourceShapeKeys": [
+    {
+      "name": "$md-$as-$fe-$ch",
+      "value": 0.03830437734723091
+    },
+    {
+      "name": "$md-$as-$fe-$yn",
+      "value": 0.36111560463905334
+    },
+    {
+      "name": "$md-$as-$ma-$yn",
+      "value": 0.01860637776553631
+    },
+    {
+      "name": "$md-$ca-$fe-$ch",
+      "value": 0.03100830689072609
+    },
+    {
+      "name": "$md-$ca-$fe-$yn",
+      "value": 0.2923316955566406
+    },
+    {
+      "name": "$md-$ca-$ma-$yn",
+      "value": 0.015062306076288223
+    },
+    {
+      "name": "$md-$af-$fe-$ch",
+      "value": 0.021888215094804764
+    },
+    {
+      "name": "$md-$af-$fe-$yn",
+      "value": 0.20635177195072174
+    },
+    {
+      "name": "$md-$af-$ma-$yn",
+      "value": 0.01063221599906683
+    },
+    {
+      "name": "$md-universal-$fe-$ch-min$mu-$av$wg",
+      "value": 0.012022263370454311
+    },
+    {
+      "name": "$md-universal-$fe-$ch-$av$mu-$av$wg",
+      "value": 0.07560355961322784
+    },
+    {
+      "name": "$md-universal-$fe-$yn-min$mu-$av$wg",
+      "value": 0.11334022879600525
+    },
+    {
+      "name": "$md-universal-$fe-$yn-$av$mu-min$wg",
+      "value": 0.029079919680953026
+    },
+    {
+      "name": "$md-universal-$fe-$yn-$av$mu-$av$wg",
+      "value": 0.7127547264099121
+    },
+    {
+      "name": "$md-universal-$ma-$yn-$av$mu-$av$wg",
+      "value": 0.036724481731653214
+    },
+    {
+      "name": "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+      "value": 0.01073460839688778
+    },
+    {
+      "name": "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+      "value": 0.013792493380606174
+    },
+    {
+      "name": "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+      "value": 0.01609266735613346
+    },
+    {
+      "name": "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+      "value": 0.01609266735613346
+    },
+    {
+      "name": "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+      "value": 0.08673588186502457
+    },
+    {
+      "name": "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+      "value": 0.10120083391666412
+    },
+    {
+      "name": "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
+      "value": 0.027939986437559128
+    },
+    {
+      "name": "Aevrynd_MixedSpaceEyelidRelief_R1000",
+      "value": 1.0
+    }
+  ],
+  "movedVertexCount": 482,
+  "movedVertexCountBySide": {
+    "L": 241,
+    "R": 241
+  },
+  "maximumFullStrengthDisplacementM": 0.002787552009884475,
+  "renderIsolation": {
+    "hair": "hidden",
+    "lowerLashes": "hidden but collision-audited"
+  },
+  "results": [
+    {
+      "label": "a-baseline",
+      "strength": 0.0,
+      "bodyTriangleOverlaps": {
+        "Eye_L_Sclera": 0,
+        "Eye_L_Cornea": 0,
+        "Eye_L_Iris": 0,
+        "Eye_L_UpperLashes": 0,
+        "Eye_L_LowerLashes": 0,
+        "Eye_R_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Iris": 0,
+        "Eye_R_UpperLashes": 0,
+        "Eye_R_LowerLashes": 0
+      },
+      "structuralOverlapCountExcludingLowerLashes": 0,
+      "lowerLashOverlapCountRequiresRefit": 0,
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\a-baseline-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\a-baseline-three-quarter-left.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\a-baseline-three-quarter-right.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\a-baseline-profile-left.png"
+      ],
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "label": "b-conservative",
+      "strength": 0.55,
+      "bodyTriangleOverlaps": {
+        "Eye_L_Sclera": 0,
+        "Eye_L_Cornea": 0,
+        "Eye_L_Iris": 0,
+        "Eye_L_UpperLashes": 0,
+        "Eye_L_LowerLashes": 13,
+        "Eye_R_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Iris": 0,
+        "Eye_R_UpperLashes": 0,
+        "Eye_R_LowerLashes": 14
+      },
+      "structuralOverlapCountExcludingLowerLashes": 0,
+      "lowerLashOverlapCountRequiresRefit": 27,
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\b-conservative-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\b-conservative-three-quarter-left.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\b-conservative-three-quarter-right.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\b-conservative-profile-left.png"
+      ],
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "label": "c-authored",
+      "strength": 1.0,
+      "bodyTriangleOverlaps": {
+        "Eye_L_Sclera": 0,
+        "Eye_L_Cornea": 0,
+        "Eye_L_Iris": 0,
+        "Eye_L_UpperLashes": 0,
+        "Eye_L_LowerLashes": 11,
+        "Eye_R_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Iris": 0,
+        "Eye_R_UpperLashes": 0,
+        "Eye_R_LowerLashes": 16
+      },
+      "structuralOverlapCountExcludingLowerLashes": 0,
+      "lowerLashOverlapCountRequiresRefit": 27,
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\c-authored-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\c-authored-three-quarter-left.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\c-authored-three-quarter-right.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\c-authored-profile-left.png"
+      ],
+      "status": "STRUCTURAL_PASS"
+    },
+    {
+      "label": "d-strong",
+      "strength": 1.35,
+      "bodyTriangleOverlaps": {
+        "Eye_L_Sclera": 0,
+        "Eye_L_Cornea": 0,
+        "Eye_L_Iris": 0,
+        "Eye_L_UpperLashes": 0,
+        "Eye_L_LowerLashes": 12,
+        "Eye_R_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Iris": 0,
+        "Eye_R_UpperLashes": 0,
+        "Eye_R_LowerLashes": 12
+      },
+      "structuralOverlapCountExcludingLowerLashes": 0,
+      "lowerLashOverlapCountRequiresRefit": 24,
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\d-strong-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\d-strong-three-quarter-left.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\d-strong-three-quarter-right.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1008-lateral-canthus\\d-strong-profile-left.png"
+      ],
+      "status": "STRUCTURAL_PASS"
+    }
+  ],
+  "selectedStrength": null,
+  "status": "REJECTED_NEGLIGIBLE_VISIBLE_APERTURE_CHANGE",
+  "visualDecision": "REJECTED_NEGLIGIBLE_VISIBLE_APERTURE_CHANGE",
+  "visualFinding": "Moving the recessed lateral socket wall by up to 3.763 mm at sweep strength 1.35 does not create a convincing lid junction. Structural eye layers remain clear, while lower-lash contact requires refit."
+}

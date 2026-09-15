@@ -1,0 +1,24 @@
+{
+  "range": "r1008-r1010",
+  "brightnessContract": "No skin material, light, color-management or website asset was changed; rejected geometry studies cannot cause progressive skin darkening.",
+  "r1008": {
+    "decision": "REJECTED",
+    "reason": "Lateral recessed-wall displacement is structurally clear of globe layers but visually negligible; 24-27 lower-lash overlap pairs appear in nonzero bounds."
+  },
+  "r1009": {
+    "decision": "REJECTED",
+    "reason": "Visible-band displacement remains too subtle and causes 16/63/81 upper-lash overlap pairs at conservative/authored/strong bounds."
+  },
+  "topologyRootCause": "The current r1001 MPFB face is a closed manifold surface with socket backing and has no true eyelid aperture boundary. Coordinate deformation cannot provide continuous upper/lower eyelid loops or a blink-ready lateral canthus.",
+  "retainedReference": {
+    "file": "aevrynd-female-authoring-v249-mainline-open-topology-physical-skin-r446.blend",
+    "strictFaceScore100": 50,
+    "freshCollisionAudit": "PASS",
+    "role": "topology reference only; do not replace the current corrected body/rig"
+  },
+  "bridgeInspection": "female-v249-mainline-r1010-open-topology-bridge-inspection.json",
+  "rigFinding": "r981 and r1001 share the corrected 38-bone rig; r446 has a different 21-bone rest skeleton. Direct hair, weight or parent transfer is invalid.",
+  "nextRequiredWork": "Extract the r446 open eyelid loop topology, retarget it onto the current r1001 head surface, reconnect it to the current face without detached seams, rebuild both lash layers on the new margin, then run frames 1/20/33/61 body-eye-lash and body self-collision plus fixed-tone multi-angle review.",
+  "websitePromotionApproved": false,
+  "status": "ROOT_CAUSE_CONFIRMED_RETARGET_REQUIRED"
+}

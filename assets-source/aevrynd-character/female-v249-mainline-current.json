@@ -114,7 +114,7 @@
   "latestTargetNativeHairAudit": "female-v249-mainline-cc0-coherent-clump-waves-r981.collision-audit.json",
   "latestTargetNativeHairReview": "female-v249-mainline-r978-r988-hair-face-studies.review.json; reviews/v249r978-r988-hair-face-studies/contact-sheet-r981.jpg",
   "latestTargetNativeHairStatus": "R981_STATIC_COLLISION_PASS_VISUAL_HERO_FAIL_SCORE_59; 72,800 points retain zero static penetration and +1.459mm minimum signed clearance. r982-r984 establish root-pinned motion and correct head-bone binding, but shoulder/neck contact and frayed bob ends fail. r985-r986 hairline/scalp coverage and r987-r988 face-fibre studies are strict visual rejects. Website v83 remains unchanged.",
-  "latestBrightnessRegressionStatus": "PASS_R1000_ORBITAL_TONE_PLUS_0P133_PERCENT; website v83 embedded base-color mean remains 0.5454 versus committed mainline 0.5775 (5.56% darker). The selected r1000 full-strength eyelid raises the fixed orbital skin crop from 0.605421484 to 0.606226146 (+0.13291%), safely within the plus-or-minus 1% gate.",
+  "latestBrightnessRegressionStatus": "PASS_NO_NEW_DARKENING_R1008_R1010; geometry-only rejected studies leave skin, lighting, exposure and website v83 unchanged. Website v83 embedded base-color remains 0.5454 versus committed mainline 0.5775 (5.56% darker).",
   "latestTargetNativeDynamicHairStudy": "aevrynd-female-cc0-head-bound-hair-motion-r983.blend; aevrynd-female-cc0-layered-bob-motion-r984.blend",
   "latestTargetNativeDynamicHairStatus": "R983_CORRECT_HEAD_BINDING_MOTION_METRICS_PASS_COLLISION_FAIL; R984_REDUCED_TO_MAX_158_PENETRATING_POINTS_BUT_VISUAL_REJECT. No dynamic candidate is promoted.",
   "latestTargetNativeFaceFeatureStudy": "aevrynd-female-cc0-target-native-lashes-r995.blend",
@@ -133,5 +133,11 @@
   "latestTargetNativeCaruncleTechnicalCandidate": "aevrynd-female-cc0-projected-caruncle-r1007.blend",
   "latestTargetNativeCaruncleAudit": "female-v249-mainline-cc0-projected-caruncle-r1007.collision-audit.json",
   "latestTargetNativeCaruncleReview": "female-v249-mainline-r1002-r1007-canthus-caruncle-review.json; reviews/v249r1002-r1007-canthus-caruncle/contact-sheet-r1007.jpg",
-  "latestTargetNativeCaruncleStatus": "R1007_LOCAL_LAYER_TECHNICAL_PASS_NO_VISUAL_SCORE_GAIN; each owned 97-vertex patch is sclera-projected, offset by 0.35mm, explicitly layered and head-bone bound. Frames 1/20/33/61 have zero overlap against body, sclera, cornea and both lash layers. It reads only as a tiny medial tissue point, remains about 0.041mm from cornea at the closest vertex and does not repair the outer canthus void; face score stays 48."
+  "latestTargetNativeCaruncleStatus": "R1007_LOCAL_LAYER_TECHNICAL_PASS_NO_VISUAL_SCORE_GAIN; each owned 97-vertex patch is sclera-projected, offset by 0.35mm, explicitly layered and head-bone bound. Frames 1/20/33/61 have zero overlap against body, sclera, cornea and both lash layers. It reads only as a tiny medial tissue point, remains about 0.041mm from cornea at the closest vertex and does not repair the outer canthus void; face score stays 48.",
+  "latestCanthusResearch": "r1002-r1009 recessed-wall, projected-caruncle and visible-lid-edge studies",
+  "latestCanthusResearchStatus": "R1008_REJECTED_VISUALLY_NEGLIGIBLE_WITH_24_TO_27_LOWER_LASH_CONTACTS; R1009_REJECTED_CLOSED_TOPOLOGY_WITH_16_TO_81_UPPER_LASH_OVERLAPS",
+  "latestOpenEyelidTopologyReference": "aevrynd-female-authoring-v249-mainline-open-topology-physical-skin-r446.blend",
+  "latestOpenEyelidTopologyBridgeInspection": "female-v249-mainline-r1010-open-topology-bridge-inspection.json",
+  "latestOpenEyelidTopologyStatus": "R446_FRESH_COLLISION_PASS_REFERENCE_ONLY; R446_21_BONE_REST_RIG_DIFFERS_FROM_CURRENT_R1001_38_BONE_RIG; RETARGET_OPEN_LOOPS_TO_CURRENT_HEAD_REQUIRED",
+  "nextFaceTopologyWork": "Retarget the r446 true open upper/lower eyelid loops onto the current r1001 head and 38-bone rig; reconnect without detached seams, rebuild upper/lower lashes, then audit frames 1/20/33/61 and fixed-tone multi-angle renders."
 }
