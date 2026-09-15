@@ -1,0 +1,57 @@
+{
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1000-mixed-space-eyelid-relief",
+  "skinCrop": {
+    "left": 100,
+    "top": 570,
+    "right": 800,
+    "bottom": 790
+  },
+  "maximumAllowedLuminanceDriftPercent": 1.0,
+  "baselineSkinLinearLuminance": 0.6054214835166931,
+  "results": [
+    {
+      "file": "a-baseline.png",
+      "skinLinearLuminance": 0.6054214835166931,
+      "skinLuminanceDriftPercent": 0.0,
+      "meanAbsolutePixelDelta": 0.0,
+      "maximumAbsolutePixelDelta": 0.0,
+      "changedPixelFraction": 0.0,
+      "identicalToBaseline": true,
+      "toneStatus": "PASS"
+    },
+    {
+      "file": "b-half.png",
+      "skinLinearLuminance": 0.6058704257011414,
+      "skinLuminanceDriftPercent": 0.07415365933836071,
+      "meanAbsolutePixelDelta": 0.0004882885259576142,
+      "maximumAbsolutePixelDelta": 0.07450979948043823,
+      "changedPixelFraction": 0.06631975308641976,
+      "identicalToBaseline": false,
+      "toneStatus": "PASS"
+    },
+    {
+      "file": "c-full.png",
+      "skinLinearLuminance": 0.6062261462211609,
+      "skinLuminanceDriftPercent": 0.13290950624906817,
+      "meanAbsolutePixelDelta": 0.0009736351203173399,
+      "maximumAbsolutePixelDelta": 0.12156865000724792,
+      "changedPixelFraction": 0.08042222222222223,
+      "identicalToBaseline": false,
+      "toneStatus": "PASS"
+    },
+    {
+      "file": "d-strong.png",
+      "skinLinearLuminance": 0.6064768433570862,
+      "skinLuminanceDriftPercent": 0.17431820130711095,
+      "meanAbsolutePixelDelta": 0.0014629419893026352,
+      "maximumAbsolutePixelDelta": 0.14901962876319885,
+      "changedPixelFraction": 0.08950864197530864,
+      "identicalToBaseline": false,
+      "toneStatus": "PASS"
+    }
+  ],
+  "toneStatus": "PASS",
+  "selectedStrength": 1.0,
+  "visualEffectStatus": "SELECT_FULL_STRENGTH_FOR_R1001",
+  "conclusion": "All eyelid strengths pass the one-percent tone gate. Full strength brightens the fixed orbital skin crop by about 0.133 percent and is selected for r1001; strong is rejected as too puffy."
+}

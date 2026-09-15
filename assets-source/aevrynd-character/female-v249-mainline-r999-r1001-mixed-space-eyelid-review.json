@@ -1,0 +1,34 @@
+{
+  "revisionRange": "v249r999-r1001",
+  "sourceCandidate": "aevrynd-female-cc0-target-native-lashes-r995.blend",
+  "selectedTechnicalCandidate": "aevrynd-female-cc0-mixed-space-eyelid-relief-r1001.blend",
+  "strictFaceScoreBefore": 47,
+  "strictFaceScoreAfter": 48,
+  "status": "R1001_LOCAL_TECHNICAL_PASS_VISUAL_HERO_FAIL_SCORE_48",
+  "websitePromotion": "FORBIDDEN",
+  "coordinateDiagnosis": {
+    "report": "female-v249-mainline-cc0-target-native-lashes-r995.visible-eyelid-surface.json",
+    "finding": "The MPFB Basis is not the rendered face. Twenty-two active relative shape keys place 838 outer-region vertices per eye in the visible mixed surface, versus 146 per eye in the misleading Basis-space query."
+  },
+  "r999": {
+    "asset": "aevrynd-female-cc0-visible-eyelid-relief-r999-study.blend",
+    "study": "female-v249-mainline-cc0-visible-eyelid-relief-r999.study.json",
+    "verdict": "REJECT_BASIS_SPACE_SELECTION",
+    "finding": "Changing the Basis-space outer band moves 138 vertices by up to 0.680 mm but produces no useful visible eyelid change because those source coordinates do not identify the active mixed face."
+  },
+  "r1000": {
+    "asset": "aevrynd-female-cc0-mixed-space-eyelid-relief-r1000-study.blend",
+    "study": "female-v249-mainline-cc0-mixed-space-eyelid-relief-r1000.study.json",
+    "toneAudit": "female-v249-mainline-cc0-mixed-space-eyelid-relief-r1000.tone-audit.json",
+    "selectedStrength": 1.0,
+    "finding": "Mixed-space selection moves 1,258 vertices by up to 0.713 mm. Full strength produces a readable upper-lid ridge without the puffy strong bound and brightens the fixed orbital skin crop by 0.133%, passing the plus-or-minus 1% tone gate."
+  },
+  "r1001": {
+    "collisionAudit": "female-v249-mainline-cc0-mixed-space-eyelid-relief-r1001.collision-audit.json",
+    "selfCollisionAudit": "female-v249-mainline-cc0-mixed-space-eyelid-relief-r1001.self-collision.json",
+    "review": "reviews/v249r999-r1001-mixed-space-eyelid/contact-sheet-r1001.jpg",
+    "technicalResult": "Frames 1, 20, 33 and 61 contain zero body/sclera/cornea/lash triangle overlaps and zero non-adjacent body self-collision pairs.",
+    "visualResult": "Front eyelid volume is clearer, but three-quarter and profile views still expose the inherited canthus holes, sclera wedges, shallow margin thickness and hair occlusion."
+  },
+  "nextAction": "Rebuild a continuous palpebral margin and medial/lateral canthus topology around the r1001 mixed surface, preserving the selected relief, r995 lashes, tone gate and four-frame collision contracts."
+}
