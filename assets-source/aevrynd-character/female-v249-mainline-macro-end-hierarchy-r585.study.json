@@ -1,0 +1,50 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-balanced-collision-safe-hair-r584.blend",
+  "method": "group each 12-child root family into coarse seven-guide macro regions; keep roots and upper 58% fixed, then apply deterministic family-level upward end hierarchy with restrained lateral/depth offsets",
+  "variants": {
+    "a-r584-current": {
+      "strengthM": 0.0,
+      "movedPoints": 59400,
+      "maximumDisplacementM": 0.0,
+      "families": 71
+    },
+    "b-end-hierarchy-10mm": {
+      "strengthM": 0.01,
+      "movedPoints": 59400,
+      "maximumDisplacementM": 0.010110328206547756,
+      "families": 71
+    },
+    "c-end-hierarchy-20mm": {
+      "strengthM": 0.02,
+      "movedPoints": 59400,
+      "maximumDisplacementM": 0.020220775155974757,
+      "families": 71
+    },
+    "d-end-hierarchy-30mm": {
+      "strengthM": 0.03,
+      "movedPoints": 59400,
+      "maximumDisplacementM": 0.030331103964458008,
+      "families": 71
+    },
+    "e-end-hierarchy-40mm": {
+      "strengthM": 0.04,
+      "movedPoints": 59400,
+      "maximumDisplacementM": 0.040441550112358615,
+      "families": 71
+    }
+  },
+  "fixed": [
+    "r584 direct warm tone",
+    "r584 scalp/outer-card geometry",
+    "review lights",
+    "Standard/None exposure 0"
+  ],
+  "status": "REJECTED_VISUAL_GAIN",
+  "selectedVariant": null,
+  "strictReview": {
+    "result": "REJECT",
+    "finding": "10-30 mm changes average away inside the dense coverage layer; 40 mm only creates jagged, frayed rear ends rather than readable macro locks.",
+    "scoreChange": 0,
+    "nextRule": "Do not deform dense coverage to invent hierarchy; author a separate sparse macro-lock layer."
+  }
+}

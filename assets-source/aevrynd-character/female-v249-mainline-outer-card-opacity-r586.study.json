@@ -1,0 +1,30 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-balanced-collision-safe-hair-r584.blend",
+  "method": "hold r584 geometry, direct warm coverage, root fade, lights and collision envelope fixed; multiply only the owned outer-card atlas alpha and clamp to one",
+  "variants": {
+    "a-r584-current": {
+      "alphaMultiplier": 1.0
+    },
+    "b-alpha-1p50": {
+      "alphaMultiplier": 1.5
+    },
+    "c-alpha-2p00": {
+      "alphaMultiplier": 2.0
+    },
+    "d-alpha-2p50": {
+      "alphaMultiplier": 2.5
+    },
+    "e-alpha-3p00": {
+      "alphaMultiplier": 3.0
+    }
+  },
+  "geometryInvariant": "material-only; r584 collision geometry unchanged",
+  "status": "SELECTED_MATERIAL_BOUND_FOR_R587",
+  "selectedVariant": "b-alpha-1p50",
+  "strictReview": {
+    "result": "SELECT_1P50_AS_UPPER_BOUND",
+    "finding": "1.5x makes outer strands begin to read while retaining soft roots; 2.0x starts isolated bright strands and 2.5x/3.0x reveal obvious card strips.",
+    "scoreChange": 0,
+    "constraint": "Geometry and r584 multiframe collision envelope are unchanged."
+  }
+}

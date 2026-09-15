@@ -1,0 +1,42 @@
+{
+  "model": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-damped-outer-card-motion-r587.blend",
+  "basis": "r584 collision-safe offline hair plus r586 1.5x outer-card alpha",
+  "proof": {
+    "frames": [
+      1,
+      20,
+      33,
+      45,
+      61
+    ],
+    "views": [
+      "front",
+      "three-quarter"
+    ],
+    "contactSheet": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r587-damped-outer-card-motion\\contact-sheet-motion-5frame.jpg",
+    "collisionAudit": "female-v249-mainline-damped-outer-card-motion-r587.collision-audit.json",
+    "motionAudit": "female-v249-mainline-damped-outer-card-motion-r587.motion-audit.json"
+  },
+  "strictScores": {
+    "hair": 50,
+    "face": 60,
+    "overall": 58
+  },
+  "passes": [
+    "engine-drivable positive/negative outer-card morph targets",
+    "20% pinned roots",
+    "companion-card coherence",
+    "settles at frame 61",
+    "zero body/clothing penetration at all five authored keyframes"
+  ],
+  "fails": [
+    "motion affects only 32 outer cards and is visually subtle",
+    "straight curtain silhouette",
+    "broad regular part",
+    "uniform blunt/frayed ends",
+    "no browser export, memory or FPS proof",
+    "coverage layer has no secondary response"
+  ],
+  "status": "OFFLINE_DYNAMIC_COLLISION_TECHNICAL_PASS_VISUAL_HERO_FAIL",
+  "promotion": "Do not replace website v83 or r517 runtime candidate."
+}
