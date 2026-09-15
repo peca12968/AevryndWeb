@@ -1,0 +1,179 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-contiguous-open-aperture-r1017-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-regularized-open-aperture-r1019-study.blend",
+  "method": "move the r1017 24-vertex visible aperture ring toward the owned r1014 b-balanced anatomical guide while preserving shape-key deltas",
+  "variants": [
+    {
+      "label": "a-restrained",
+      "strength": 0.35,
+      "boundary": {
+        "L": {
+          "selectedEdges": 24,
+          "selectedVertices": 24,
+          "allComponentEdgeCounts": [
+            28,
+            27,
+            24,
+            1,
+            1
+          ]
+        },
+        "R": {
+          "selectedEdges": 24,
+          "selectedVertices": 24,
+          "allComponentEdgeCounts": [
+            28,
+            27,
+            24,
+            1,
+            1
+          ]
+        }
+      },
+      "edit": {
+        "movedVertices": 48,
+        "maximumDeltaMm": 0.7440924681711778,
+        "meanDeltaMm": 0.19923113023068803
+      },
+      "frame1BodyTriangleOverlaps": {
+        "L": {
+          "Sclera": 0,
+          "Cornea": 0,
+          "Iris": 0,
+          "UpperLashes": 0,
+          "LowerLashes": 0
+        },
+        "R": {
+          "Sclera": 0,
+          "Cornea": 0,
+          "Iris": 0,
+          "UpperLashes": 0,
+          "LowerLashes": 0
+        }
+      },
+      "totalFrame1BodyTriangleOverlaps": 0,
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1019-aperture-ring-regularization-sweep\\a-restrained-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1019-aperture-ring-regularization-sweep\\a-restrained-three-quarter-left.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1019-aperture-ring-regularization-sweep\\a-restrained-three-quarter-right.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "b-balanced",
+      "strength": 0.65,
+      "boundary": {
+        "L": {
+          "selectedEdges": 24,
+          "selectedVertices": 24,
+          "allComponentEdgeCounts": [
+            28,
+            27,
+            24,
+            1,
+            1
+          ]
+        },
+        "R": {
+          "selectedEdges": 24,
+          "selectedVertices": 24,
+          "allComponentEdgeCounts": [
+            28,
+            27,
+            24,
+            1,
+            1
+          ]
+        }
+      },
+      "edit": {
+        "movedVertices": 48,
+        "maximumDeltaMm": 1.381885931307793,
+        "meanDeltaMm": 0.37000065929320275
+      },
+      "frame1BodyTriangleOverlaps": {
+        "L": {
+          "Sclera": 0,
+          "Cornea": 0,
+          "Iris": 0,
+          "UpperLashes": 0,
+          "LowerLashes": 0
+        },
+        "R": {
+          "Sclera": 0,
+          "Cornea": 0,
+          "Iris": 0,
+          "UpperLashes": 0,
+          "LowerLashes": 0
+        }
+      },
+      "totalFrame1BodyTriangleOverlaps": 0,
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1019-aperture-ring-regularization-sweep\\b-balanced-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1019-aperture-ring-regularization-sweep\\b-balanced-three-quarter-left.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1019-aperture-ring-regularization-sweep\\b-balanced-three-quarter-right.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "c-authored",
+      "strength": 1.0,
+      "boundary": {
+        "L": {
+          "selectedEdges": 24,
+          "selectedVertices": 24,
+          "allComponentEdgeCounts": [
+            28,
+            27,
+            24,
+            1,
+            1
+          ]
+        },
+        "R": {
+          "selectedEdges": 24,
+          "selectedVertices": 24,
+          "allComponentEdgeCounts": [
+            28,
+            27,
+            24,
+            1,
+            1
+          ]
+        }
+      },
+      "edit": {
+        "movedVertices": 48,
+        "maximumDeltaMm": 2.1259784564798663,
+        "meanDeltaMm": 0.5692318057823369
+      },
+      "frame1BodyTriangleOverlaps": {
+        "L": {
+          "Sclera": 0,
+          "Cornea": 0,
+          "Iris": 0,
+          "UpperLashes": 0,
+          "LowerLashes": 0
+        },
+        "R": {
+          "Sclera": 0,
+          "Cornea": 0,
+          "Iris": 0,
+          "UpperLashes": 0,
+          "LowerLashes": 0
+        }
+      },
+      "totalFrame1BodyTriangleOverlaps": 0,
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1019-aperture-ring-regularization-sweep\\c-authored-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1019-aperture-ring-regularization-sweep\\c-authored-three-quarter-left.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1019-aperture-ring-regularization-sweep\\c-authored-three-quarter-right.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    }
+  ],
+  "selectedVariant": null,
+  "status": "REJECTED_NO_HERO_GAIN",
+  "websitePromotionApproved": false,
+  "visualDecision": "Guide projection moves 48 ring vertices by 0.744/1.382/2.126 mm maximum with zero frame-1 overlaps, but none removes the coarse eyelid/globe transition or raises strict face quality."
+}
