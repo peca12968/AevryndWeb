@@ -1501,3 +1501,12 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - The valid topology result is visually rejected at 31/100. It retains a hard upper strip, white lower highlight, pointed commissures and planar cavity/dental layers, regressing from r1040 36/100 and retained r1033 39/100.
 - Fixed-crop drift from r1039 is -0.000024% left cheek, +0.000552% right cheek and 0.0% forehead. No material, light, exposure, colour-management or website asset changed.
 - r1033 remains the face technical mainline. The next mouth route must replace the full perioral patch with closed commissure poles and anatomically continuous philtrum, vermilion and wetline flow; further six-ring smoothing is closed.
+
+
+### v249r1042 — full perioral annulus proof and topology rejection
+
+- Boundary diagnostics test broad 74-edge and tighter 56-62-edge closed facial loops. The tight region contains the complete 480-face vermilion and 120-face inner rim while avoiding the nose, cheek and chin spans that caused the broad prototype to pinch.
+- The deterministic final study deletes 832 old faces and builds one welded 62-by-9 quad annulus with 558 new vertices and faces. All 35 shape keys remain compatible, every new vertex has at least four deform groups, and inverse-baking the active morph stack into Basis prevents neutral double deformation.
+- Frames 1/20/33/61 plus mouth-open and smile pass zero non-adjacent body self-collision and zero overlap against the six owned oral layers. Fixed-crop drift is +0.007563% left cheek, +0.015895% right cheek and 0.0% forehead.
+- Visual quality collapses to 18/100: annular flow creates a dark lower overhang, radial convergence creases, a visible outer seam and planar oral/dental presentation. r1033 remains the retained mouth/face candidate and website v83 is unchanged.
+- The annular route is closed. r1043 must construct separate upper and lower horizontal grids, with orbicularis-aligned loops and explicit closed commissure poles, before rebuilding wetline and dental exposure.
