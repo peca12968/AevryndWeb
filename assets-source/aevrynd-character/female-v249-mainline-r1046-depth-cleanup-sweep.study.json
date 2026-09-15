@@ -1,0 +1,532 @@
+{
+  "revision": "v249r1046-depth-cleanup-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-local-inner-lip-r1044-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-depth-cleanup-r1046-study.blend",
+  "method": "delete only the 17 measured original-skin faces hit behind the slit, then test a rear bounded vestibule wall",
+  "variants": [
+    {
+      "label": "a-compact",
+      "wall": {
+        "radiusX": 0.018,
+        "radiusZ": 0.0025,
+        "y": -0.116
+      },
+      "frontCutoffY": -0.123,
+      "deletedMeasuredInternalFaces": 17,
+      "deletedFaceIndices": [
+        458,
+        459,
+        463,
+        468,
+        4915,
+        4917,
+        4918,
+        7039,
+        7040,
+        7044,
+        7049,
+        11598,
+        11600,
+        11601,
+        16651,
+        16675,
+        16677
+      ],
+      "shapeKeyCount": 35,
+      "gates": [
+        {
+          "frame": 1,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 20,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 33,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 61,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 1,
+          "expression": "Aevrynd_MouthOpenTest_R1030",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 1,
+          "expression": "Aevrynd_SmileTest_R1030",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        }
+      ],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1046-depth-cleanup-sweep\\a-compact-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1046-depth-cleanup-sweep\\a-compact-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1046-depth-cleanup-sweep\\a-compact-smile.png"
+      ],
+      "status": "TECHNICAL_PASS_PENDING_VISUAL"
+    },
+    {
+      "label": "b-balanced",
+      "wall": {
+        "radiusX": 0.02,
+        "radiusZ": 0.0032,
+        "y": -0.116
+      },
+      "frontCutoffY": -0.123,
+      "deletedMeasuredInternalFaces": 17,
+      "deletedFaceIndices": [
+        458,
+        459,
+        463,
+        468,
+        4915,
+        4917,
+        4918,
+        7039,
+        7040,
+        7044,
+        7049,
+        11598,
+        11600,
+        11601,
+        16651,
+        16675,
+        16677
+      ],
+      "shapeKeyCount": 35,
+      "gates": [
+        {
+          "frame": 1,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 20,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 33,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 61,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 1,
+          "expression": "Aevrynd_MouthOpenTest_R1030",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 1,
+          "expression": "Aevrynd_SmileTest_R1030",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        }
+      ],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1046-depth-cleanup-sweep\\b-balanced-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1046-depth-cleanup-sweep\\b-balanced-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1046-depth-cleanup-sweep\\b-balanced-smile.png"
+      ],
+      "status": "TECHNICAL_PASS_PENDING_VISUAL"
+    },
+    {
+      "label": "c-wide",
+      "wall": {
+        "radiusX": 0.022,
+        "radiusZ": 0.0038,
+        "y": -0.116
+      },
+      "frontCutoffY": -0.123,
+      "deletedMeasuredInternalFaces": 17,
+      "deletedFaceIndices": [
+        458,
+        459,
+        463,
+        468,
+        4915,
+        4917,
+        4918,
+        7039,
+        7040,
+        7044,
+        7049,
+        11598,
+        11600,
+        11601,
+        16651,
+        16675,
+        16677
+      ],
+      "shapeKeyCount": 35,
+      "gates": [
+        {
+          "frame": 1,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 20,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 33,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 61,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 1,
+          "expression": "Aevrynd_MouthOpenTest_R1030",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 1,
+          "expression": "Aevrynd_SmileTest_R1030",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        }
+      ],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1046-depth-cleanup-sweep\\c-wide-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1046-depth-cleanup-sweep\\c-wide-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1046-depth-cleanup-sweep\\c-wide-smile.png"
+      ],
+      "status": "TECHNICAL_PASS_PENDING_VISUAL"
+    },
+    {
+      "label": "d-full-depth",
+      "wall": {
+        "radiusX": 0.02,
+        "radiusZ": 0.0032,
+        "y": -0.116
+      },
+      "frontCutoffY": -0.125,
+      "deletedMeasuredInternalFaces": 20,
+      "deletedFaceIndices": [
+        349,
+        458,
+        459,
+        463,
+        468,
+        4915,
+        4917,
+        4918,
+        6931,
+        7039,
+        7040,
+        7044,
+        7049,
+        11598,
+        11600,
+        11601,
+        16651,
+        16655,
+        16675,
+        16677
+      ],
+      "shapeKeyCount": 35,
+      "gates": [
+        {
+          "frame": 1,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 20,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 33,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 61,
+          "expression": "neutral",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 1,
+          "expression": "Aevrynd_MouthOpenTest_R1030",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        },
+        {
+          "frame": 1,
+          "expression": "Aevrynd_SmileTest_R1030",
+          "bodySelfNonAdjacentPairs": 0,
+          "bodyLayerOverlap": {
+            "Aevrynd_UpperGum_R1044": 0,
+            "Aevrynd_LowerGum_R1044": 0,
+            "Aevrynd_UpperTeeth_R1044": 0,
+            "Aevrynd_LowerTeeth_R1044": 0,
+            "Aevrynd_Tongue_R1044": 0,
+            "Aevrynd_OralBackWall_R1046": 0
+          },
+          "interLayerOverlap": {},
+          "status": "PASS"
+        }
+      ],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1046-depth-cleanup-sweep\\d-full-depth-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1046-depth-cleanup-sweep\\d-full-depth-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1046-depth-cleanup-sweep\\d-full-depth-smile.png"
+      ],
+      "status": "TECHNICAL_PASS_PENDING_VISUAL"
+    }
+  ],
+  "websitePromotionApproved": false,
+  "status": "TECHNICAL_PASS_VISUAL_REJECT_RETAIN_R1033",
+  "selectedTechnicalStudy": "d-full-depth",
+  "strictMouthScore100": 33,
+  "retainedR1033Score100": 39,
+  "visualFinding": "The corrected rear wall hides the central inherited depth stack and all four bounds pass six collision states. The remaining bilateral pale skin strips are front boundary faces, while the slit, commissures and expression change remain too planar for hero quality.",
+  "materialAndLightingChanged": false,
+  "globalDarkeningClaim": "none; only the intended local oral cavity becomes darker",
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1046-depth-cleanup\\contact-sheet-r1046.jpg"
+}

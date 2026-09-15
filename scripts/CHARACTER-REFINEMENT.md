@@ -1536,3 +1536,12 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - The isolated donor proves why it cannot be transplanted directly: it is a symmetric detached shell with inflated uniform thickness, a straight wetline and pointed commissures. At fitted depth it intersects or disappears behind the retained face; moved forward it floats as an obvious mask.
 - Strict mouth quality is 16/100, below retained r1033 at 39/100. No Blend candidate or website asset is promoted. The historical detached-shell route is closed.
 - The next route is an Aevrynd-native welded upper/lower vestibule patch derived from r1033 landmarks, with even orbicularis flow, explicit commissure poles, all 35 shape keys, transferred deform weights and a dedicated jaw control before collision and visual review.
+
+### v249r1046 — measured mouth-depth cleanup technical proof
+
+- A 259-ray, 3–7-hit depth-stack inspection identifies 61 unique body faces behind the r1044 slit. Seventeen inherited skin faces lie behind `y=-123 mm`; three additional front-depth folds lie at `y=-124.26` to `-124.50 mm`. This replaces repeated destructive ray passes with one reproducible 20-face set.
+- The selected d-full-depth study removes those 20 measured faces without deleting vertices, so all 35 shape keys remain index-compatible. It replaces the undersized r1044 back wall with a correctly head-bound 64-segment, 20-by-3.2 mm rear vestibule wall at `y=-116 mm`.
+- Compact, balanced, wide and full-depth bounds all pass frames 1/20/33/61 plus mouth-open and smile with zero non-adjacent body self-collision, zero body-to-oral-layer overlap and zero inter-layer overlap.
+- Correcting the wall's parent-space matrix hides the central inherited depth stack. Two pale front-boundary strips remain visible laterally, and neutral/open/smile retain a planar slit with weak separation. Strict mouth quality reaches 33/100, above r1044's 30 but below retained r1033's 39.
+- r1046 is saved only as a technical study; website v83 is unchanged. Skin material, review lights and exposure are unchanged, so the darker centre is the intended local oral cavity rather than global skin darkening.
+- r1047 must replace only the bilateral pale front-boundary strips with a welded upper/lower inner-lip patch, add closed commissure poles and jaw-coupled vertical separation, and preserve all 35 shape keys and deform weights before renewed collision and visual gates.
