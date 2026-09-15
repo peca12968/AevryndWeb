@@ -1484,3 +1484,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - The selected r1038 b-natural-slit is a topology and deformation technical pass, but its entire 600-face mouth structure inherits the near-black inner-rim material. The mouth remains visually flat and serrated, so it is not promoted.
 - r1039 changes no vertex, shape key or polygon index. It assigns 480 visible faces to a separate owned vermilion material and leaves only the deepest 120 faces on the oral-rim material. The selected natural vermilion removes the whole-mouth black patch and raises strict mouth quality to 34/100, but the outer serration, planar lower surface, weak commissures and flat dental presentation remain below r1033's retained visual quality.
 - Fixed-crop r1039 skin drift is 0.001586% left cheek, 0.000649% right cheek and 0.0% forehead. No global darkening occurs. Website v83 remains unchanged and still carries the documented 5.56% embedded skin-base-colour deficit.
+
+### v249r1040 — six-ring tangential smoothing and lip curvature
+
+- r1040 traces six one-to-one 120-vertex rings from the inner mouth boundary to the welded facial seam, then performs extent-preserving tangential smoothing. The face attachment width and height remain bounded instead of repeating r1037's unsafe outward expansion.
+- Separate depth weights form a darker upper-lip plane, fuller lower-lip plane and recessed inner margin. Both soft and balanced bounds pass frames 1/20/33/61 plus mouth-open and smile with zero non-adjacent body self-collision and zero overlap against all six oral layers.
+- The selected balanced bound changes 720 existing vertices while preserving all 35 shape keys. It slightly reduces tangential serration and the planar lower-lip read, raising strict mouth quality from 34 to 36/100.
+- The inherited cut rhythm, hard lower highlight, weak commissures and flat dental forms remain obvious. r1040 is retained as a technical study only; r1033 remains the visual/technical face candidate and website promotion stays forbidden.
+- Fixed-crop drift from r1039 is -0.000306% left cheek, +0.000310% right cheek and 0.0% forehead. No global darkening occurs; website v83 remains unchanged at the documented 5.56% skin-base-colour deficit.
