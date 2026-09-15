@@ -13,13 +13,30 @@ SOURCE = Path(os.environ.get("AEVRYND_RIG_AUDIT_SOURCE", ASSETS / "aevrynd-femal
 REPORT = Path(os.environ.get("AEVRYND_RIG_AUDIT_REPORT", ASSETS / "female-v249-mainline-cc0-retargeted-rig-r603.audit.json"))
 BODY = "AevryndFemaleCC0Baseline_v259"
 RIG = "AevryndFemaleRig"
-FRAMES = (1, 20, 33, 61)
+FRAMES = tuple(
+    int(value) for value in os.environ.get("AEVRYND_RIG_AUDIT_FRAMES", "1,20,33,61").split(",")
+)
 EYES = tuple(f"Eye_{side}_{part}" for side in ("L", "R") for part in ("Sclera", "Cornea", "Iris"))
 DEFORM_BONES = {
     "pelvis", "spine_01", "spine_02", "chest", "neck", "head",
     "clavicle.L", "upper_arm.L", "forearm.L", "hand.L",
     "clavicle.R", "upper_arm.R", "forearm.R", "hand.R",
     "thigh.L", "shin.L", "foot.L", "thigh.R", "shin.R", "foot.R",
+}
+BASE_SHAPE_KEYS = {
+    "Basis", "$md-$as-$fe-$ch", "$md-$as-$fe-$yn", "$md-$as-$ma-$yn",
+    "$md-$ca-$fe-$ch", "$md-$ca-$fe-$yn", "$md-$ca-$ma-$yn",
+    "$md-$af-$fe-$ch", "$md-$af-$fe-$yn", "$md-$af-$ma-$yn",
+    "$md-universal-$fe-$ch-min$mu-$av$wg", "$md-universal-$fe-$ch-$av$mu-$av$wg",
+    "$md-universal-$fe-$yn-min$mu-$av$wg", "$md-universal-$fe-$yn-$av$mu-min$wg",
+    "$md-universal-$fe-$yn-$av$mu-$av$wg", "$md-universal-$ma-$yn-$av$mu-$av$wg",
+    "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+    "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+    "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+    "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+    "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+    "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+    "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
 }
 
 
@@ -146,6 +163,8 @@ for frame in FRAMES[1:]:
             (metric for metric in edge_metrics if metric["ratio"] < 0.30 or metric["ratio"] > 2.50),
             key=lambda metric: metric["ratio"], reverse=True,
         )[:40],
+        "minimumEdgeDetail": min(edge_metrics, key=lambda metric: metric["ratio"]),
+        "maximumEdgeDetail": max(edge_metrics, key=lambda metric: metric["ratio"]),
         "maximumVertexDisplacementM": max(displacements),
         "meanVertexDisplacementM": sum(displacements) / len(displacements),
         "nonfiniteCoordinates": nonfinite,
@@ -163,9 +182,12 @@ motion = max(
     abs(bone_motion[str(frame)][name][axis] - bone_motion["1"][name][axis])
     for frame in FRAMES[1:] for name in DEFORM_BONES for axis in range(3)
 )
+shape_key_names = {
+    key.name for key in body.data.shape_keys.key_blocks
+} if body.data.shape_keys else set()
 static_checks = {
     "visibleBodyVertexSetPresent": len(allowed) == 13380,
-    "shapeKeysPreserved": body.data.shape_keys is not None and len(body.data.shape_keys.key_blocks) == 23,
+    "shapeKeysPreserved": BASE_SHAPE_KEYS.issubset(shape_key_names),
     "allVerticesWeighted": min(weight_sums) > 0.9999,
     "weightsNormalized": max(weight_sums) < 1.0001,
     "neutralEyeBodyCollisionFree": not any(collisions["1"].values()),
@@ -180,6 +202,8 @@ report = {
     "evaluatedEdges": len(rest["edges"]),
     "neutralVisibleVolume": rest["volume"],
     "deformGroups": len(deform_group_indices),
+    "shapeKeys": sorted(shape_key_names),
+    "shapeKeyCount": len(shape_key_names),
     "weightSum": {"min": min(weight_sums), "max": max(weight_sums)},
     "maximumBoneTranslationDeltaM": motion,
     "collisions": collisions,
