@@ -1,0 +1,70 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-multiframe-envelope-tangent-cards-r582-study.blend",
+  "method": "hold r582 geometry, collision envelope, lights and color management fixed; sweep only the direct linear-RGBA coverage color around the r579 selected dark-warm bound",
+  "variants": {
+    "a-r569-current": {
+      "linearRGBA": null
+    },
+    "b-r582-direct-base": {
+      "linearRGBA": [
+        0.035,
+        0.012,
+        0.005,
+        1.0
+      ]
+    },
+    "c-direct-plus-10": {
+      "linearRGBA": [
+        0.0385,
+        0.0132,
+        0.0055,
+        1.0
+      ]
+    },
+    "d-direct-plus-20": {
+      "linearRGBA": [
+        0.042,
+        0.0144,
+        0.006,
+        1.0
+      ]
+    },
+    "e-direct-plus-30": {
+      "linearRGBA": [
+        0.0455,
+        0.0156,
+        0.0065,
+        1.0
+      ]
+    }
+  },
+  "collisionBasis": "r582 four-frame body and clothing PASS; material-only sweep cannot change geometry",
+  "status": "TONE_PASS_C_PLUS_10_SELECTED",
+  "selectedVariant": "c-direct-plus-10",
+  "luminanceAudit": {
+    "r569": {
+      "face": 141.299,
+      "head": 103.064,
+      "crown": 96.598
+    },
+    "r582Base": {
+      "face": 141.333,
+      "head": 104.442,
+      "crown": 94.738
+    },
+    "selectedPlus10": {
+      "face": 141.333,
+      "head": 104.897,
+      "crown": 95.516
+    },
+    "plus20Rejected": {
+      "head": 105.331,
+      "crown": 96.257
+    },
+    "plus30Rejected": {
+      "head": 105.744,
+      "crown": 96.968
+    }
+  },
+  "strictReview": "Plus 10 corrects the dark crown without the orange cast and excessive overall head lift of plus 20/30."
+}

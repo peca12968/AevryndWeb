@@ -1,0 +1,138 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-lower-face-clearance-r569.blend",
+  "surfaceRoots": 495,
+  "sparseGuides": 84,
+  "collisionClearanceM": 0.002,
+  "method": "start from r581 static projection, then iterate frames 1/20/33/61 twice and move each shared coverage point in object-local space to satisfy the deformed body's 2mm signed-distance envelope; preserve the already passing 2.5mm-projected outer card vertices",
+  "variants": {
+    "a-r569-current": {
+      "config": null,
+      "rootRadiusScale": null,
+      "coverageColorLinear": null,
+      "tailHierarchyStrength": null,
+      "surfaceRoots": 0,
+      "sparseGuides": 0,
+      "coverageRepairedPoints": 0,
+      "coverageEnvelopeRepairs": {},
+      "outerGuides": 0,
+      "coverageCurves": 0,
+      "outerCards": 0
+    },
+    "b-r572-coverage-control": {
+      "config": {
+        "outer_locks": 0,
+        "lift": 0.0
+      },
+      "rootRadiusScale": 0.15,
+      "coverageColorLinear": [
+        0.035,
+        0.012,
+        0.005,
+        1.0
+      ],
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "coverageRepairedPoints": 43851,
+      "coverageEnvelopeRepairs": {
+        "1": 66958,
+        "20": 59940,
+        "33": 56103,
+        "61": 54156
+      },
+      "outerGuides": 0,
+      "coverageCurves": 5940,
+      "outerCards": 0
+    },
+    "c-tangent-cards-12x1": {
+      "config": {
+        "outer_locks": 12,
+        "lift": 0.0012,
+        "width_mm": 5.0,
+        "layers": 1,
+        "spacing_mm": 0.0
+      },
+      "rootRadiusScale": 0.15,
+      "coverageColorLinear": [
+        0.035,
+        0.012,
+        0.005,
+        1.0
+      ],
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "coverageRepairedPoints": 43851,
+      "coverageEnvelopeRepairs": {
+        "1": 66958,
+        "20": 59940,
+        "33": 56103,
+        "61": 54156
+      },
+      "outerGuides": 12,
+      "coverageCurves": 5940,
+      "outerCards": 12
+    },
+    "d-tangent-cards-16x2": {
+      "config": {
+        "outer_locks": 16,
+        "lift": 0.0015,
+        "width_mm": 4.0,
+        "layers": 2,
+        "spacing_mm": 2.2
+      },
+      "rootRadiusScale": 0.15,
+      "coverageColorLinear": [
+        0.035,
+        0.012,
+        0.005,
+        1.0
+      ],
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "coverageRepairedPoints": 43851,
+      "coverageEnvelopeRepairs": {
+        "1": 66958,
+        "20": 59940,
+        "33": 56103,
+        "61": 54156
+      },
+      "outerGuides": 16,
+      "coverageCurves": 5940,
+      "outerCards": 32
+    },
+    "e-tangent-cards-20x2": {
+      "config": {
+        "outer_locks": 20,
+        "lift": 0.0018,
+        "width_mm": 3.4,
+        "layers": 2,
+        "spacing_mm": 1.8
+      },
+      "rootRadiusScale": 0.15,
+      "coverageColorLinear": [
+        0.035,
+        0.012,
+        0.005,
+        1.0
+      ],
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "coverageRepairedPoints": 43851,
+      "coverageEnvelopeRepairs": {
+        "1": 66958,
+        "20": 59940,
+        "33": 56103,
+        "61": 54156
+      },
+      "outerGuides": 20,
+      "coverageCurves": 5940,
+      "outerCards": 40
+    }
+  },
+  "ownership": "Aevrynd procedural groom on owned CC0-derived body; no external runtime or asset dependency",
+  "status": "PASS_OFFLINE_MULTIFRAME_COLLISION_BASIS",
+  "strictReview": "Two-pass shared-rest envelope projection preserves the five-view appearance and produces zero body/clothing penetration for 142,560 coverage points and 1,536 card vertices at frames 1/20/33/61. Secondary hair motion is absent."
+}

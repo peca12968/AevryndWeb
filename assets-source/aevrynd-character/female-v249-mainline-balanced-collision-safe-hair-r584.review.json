@@ -1,0 +1,48 @@
+{
+  "model": "aevrynd-female-authoring-v249-mainline-balanced-collision-safe-hair-r584.blend",
+  "source": "r582 multiframe envelope + r583 selected +10% direct warm tone",
+  "views": "reviews/v249r584-balanced-collision-safe-hair-11shot/contact-sheet-11shot.jpg",
+  "collisionAudit": "female-v249-mainline-balanced-collision-safe-hair-r584.collision-audit.json",
+  "layering": {
+    "coverage": {
+      "curves": 5940,
+      "points": 142560
+    },
+    "outerMacroCards": {
+      "cards": 32,
+      "vertices": 1536,
+      "polygons": 736
+    },
+    "atlas": "textures/aevrynd-r578-tangent-lock-atlas.png"
+  },
+  "luminance": {
+    "face": 141.333,
+    "head": 104.897,
+    "crown": 95.516,
+    "r569Reference": {
+      "face": 141.299,
+      "head": 103.064,
+      "crown": 96.598
+    }
+  },
+  "strictScores": {
+    "hair": 50,
+    "face": 60,
+    "overall": 58
+  },
+  "passes": [
+    "owned assets only",
+    "five-view tone sweep",
+    "11-shot review",
+    "zero body/clothing penetration frames 1/20/33/61",
+    "fixed face luminance"
+  ],
+  "fails": [
+    "outer macro hierarchy remains too subtle",
+    "straight curtain silhouette",
+    "broad regular part",
+    "no secondary hair motion",
+    "not runtime or website performance tested"
+  ],
+  "status": "OFFLINE_TECHNICAL_PASS_VISUAL_HERO_FAIL"
+}

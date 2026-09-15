@@ -1,0 +1,88 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-lower-face-clearance-r569.blend",
+  "surfaceRoots": 495,
+  "sparseGuides": 84,
+  "collisionClearanceM": 0.002,
+  "method": "combine r579 direct dark-warm coverage with r578 tangent-root alpha cards; compare 12/32/40-card outer layers and save the 32-card balanced bound for explicit collision inspection",
+  "variants": {
+    "a-r569-current": {
+      "config": null,
+      "rootRadiusScale": null,
+      "coverageMelanin": null,
+      "tailHierarchyStrength": null,
+      "surfaceRoots": 0,
+      "sparseGuides": 0,
+      "outerGuides": 0,
+      "coverageCurves": 0,
+      "outerCards": 0
+    },
+    "b-r572-coverage-control": {
+      "config": {
+        "outer_locks": 0,
+        "lift": 0.0
+      },
+      "rootRadiusScale": 0.15,
+      "coverageMelanin": 0.31,
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "outerGuides": 0,
+      "coverageCurves": 5940,
+      "outerCards": 0
+    },
+    "c-tangent-cards-12x1": {
+      "config": {
+        "outer_locks": 12,
+        "lift": 0.0012,
+        "width_mm": 5.0,
+        "layers": 1,
+        "spacing_mm": 0.0
+      },
+      "rootRadiusScale": 0.15,
+      "coverageMelanin": 0.31,
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "outerGuides": 12,
+      "coverageCurves": 5940,
+      "outerCards": 12
+    },
+    "d-tangent-cards-16x2": {
+      "config": {
+        "outer_locks": 16,
+        "lift": 0.0015,
+        "width_mm": 4.0,
+        "layers": 2,
+        "spacing_mm": 2.2
+      },
+      "rootRadiusScale": 0.15,
+      "coverageMelanin": 0.31,
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "outerGuides": 16,
+      "coverageCurves": 5940,
+      "outerCards": 32
+    },
+    "e-tangent-cards-20x2": {
+      "config": {
+        "outer_locks": 20,
+        "lift": 0.0018,
+        "width_mm": 3.4,
+        "layers": 2,
+        "spacing_mm": 1.8
+      },
+      "rootRadiusScale": 0.15,
+      "coverageMelanin": 0.31,
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "outerGuides": 20,
+      "coverageCurves": 5940,
+      "outerCards": 40
+    }
+  },
+  "ownership": "Aevrynd procedural groom on owned CC0-derived body; no external runtime or asset dependency",
+  "status": "REJECTED_COLLISION_FAIL",
+  "strictReview": "Balanced direct color and tangent cards improve value, but four-frame audit finds 15,818 coverage points and 405 outer-card vertices inside the body at rest."
+}

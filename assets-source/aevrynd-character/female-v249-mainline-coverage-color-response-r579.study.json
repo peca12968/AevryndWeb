@@ -1,0 +1,122 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-lower-face-clearance-r569.blend",
+  "surfaceRoots": 495,
+  "sparseGuides": 84,
+  "collisionClearanceM": 0.002,
+  "method": "hold r572 geometry, roots, curve radius, lights and Standard color management fixed; compare the melanin control against three explicit linear-RGBA warm-brown Hair BSDF responses so hair luminance can be calibrated independently of face exposure",
+  "variants": {
+    "a-r569-current": {
+      "config": null,
+      "rootRadiusScale": null,
+      "tailHierarchyStrength": null,
+      "surfaceRoots": 0,
+      "sparseGuides": 0,
+      "outerGuides": 0,
+      "coverageCurves": 0,
+      "outerCards": 0
+    },
+    "b-r572-melanin-control": {
+      "config": {
+        "outer_locks": 0,
+        "lift": 0.0,
+        "mode": "MELANIN",
+        "melanin": 0.44
+      },
+      "rootRadiusScale": 0.15,
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "outerGuides": 0,
+      "coverageCurves": 5940,
+      "outerCards": 0
+    },
+    "c-direct-dark-warm": {
+      "config": {
+        "outer_locks": 0,
+        "lift": 0.0,
+        "mode": "COLOR",
+        "color": [
+          0.035,
+          0.012,
+          0.005,
+          1.0
+        ]
+      },
+      "rootRadiusScale": 0.15,
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "outerGuides": 0,
+      "coverageCurves": 5940,
+      "outerCards": 0
+    },
+    "d-direct-mid-warm": {
+      "config": {
+        "outer_locks": 0,
+        "lift": 0.0,
+        "mode": "COLOR",
+        "color": [
+          0.055,
+          0.02,
+          0.008,
+          1.0
+        ]
+      },
+      "rootRadiusScale": 0.15,
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "outerGuides": 0,
+      "coverageCurves": 5940,
+      "outerCards": 0
+    },
+    "e-direct-light-warm": {
+      "config": {
+        "outer_locks": 0,
+        "lift": 0.0,
+        "mode": "COLOR",
+        "color": [
+          0.085,
+          0.034,
+          0.015,
+          1.0
+        ]
+      },
+      "rootRadiusScale": 0.15,
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "outerGuides": 0,
+      "coverageCurves": 5940,
+      "outerCards": 0
+    }
+  },
+  "ownership": "Aevrynd procedural groom on owned CC0-derived body; no external runtime or asset dependency",
+  "status": "TONE_CALIBRATION_PASS_C_SELECTED",
+  "selectedVariant": "c-direct-dark-warm",
+  "luminanceAudit": {
+    "r569": {
+      "face": 141.299,
+      "head": 103.064,
+      "crown": 96.598
+    },
+    "melaninControl": {
+      "face": 141.331,
+      "head": 101.721,
+      "crown": 90.849
+    },
+    "selectedDirectDarkWarm": {
+      "face": 141.331,
+      "head": 104.553,
+      "crown": 95.251
+    },
+    "midWarmRejected": {
+      "head": 106.93,
+      "crown": 99.02
+    },
+    "lightWarmRejected": {
+      "head": 110.093,
+      "crown": 104.112
+    }
+  }
+}
