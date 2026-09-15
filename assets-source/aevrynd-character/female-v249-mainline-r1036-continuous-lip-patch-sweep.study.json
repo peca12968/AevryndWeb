@@ -1,0 +1,269 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-contiguous-mouth-aperture-r1035-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-continuous-lip-patch-r1036-study.blend",
+  "method": "three-ring 64-segment owned lip annulus sampled above the face, with narrow neutral aperture plus matching open and smile shape keys",
+  "variants": [
+    {
+      "label": "a-closed-soft",
+      "neutralInnerGapM": {
+        "upper": 0.0009,
+        "lower": 0.00045
+      },
+      "forwardOffsetM": 0.00035,
+      "topology": {
+        "vertices": 192,
+        "polygons": 128,
+        "segments": 64,
+        "rings": 3,
+        "shapeKeys": [
+          "Basis",
+          "Aevrynd_MouthOpenTest_R1030",
+          "Aevrynd_SmileTest_R1030"
+        ]
+      },
+      "neutralBodySelfCollision": {
+        "nonAdjacentPairs": 0,
+        "samplePairs": [],
+        "status": "PASS"
+      },
+      "neutralPatchCollision": {
+        "bodyPatchTriangleOverlap": 1185,
+        "patchOralLayerTriangleOverlap": {
+          "Aevrynd_OralBackWall_R1035": 0,
+          "Aevrynd_UpperGum_R1035": 0,
+          "Aevrynd_LowerGum_R1035": 0,
+          "Aevrynd_UpperTeeth_R1035": 0,
+          "Aevrynd_LowerTeeth_R1035": 0,
+          "Aevrynd_Tongue_R1035": 0
+        },
+        "status": "FAIL"
+      },
+      "expressionAudit": {
+        "Aevrynd_MouthOpenTest_R1030": {
+          "bodySelfCollision": {
+            "nonAdjacentPairs": 0,
+            "samplePairs": [],
+            "status": "PASS"
+          },
+          "patchCollision": {
+            "bodyPatchTriangleOverlap": 1190,
+            "patchOralLayerTriangleOverlap": {
+              "Aevrynd_OralBackWall_R1035": 0,
+              "Aevrynd_UpperGum_R1035": 0,
+              "Aevrynd_LowerGum_R1035": 0,
+              "Aevrynd_UpperTeeth_R1035": 0,
+              "Aevrynd_LowerTeeth_R1035": 0,
+              "Aevrynd_Tongue_R1035": 0
+            },
+            "status": "FAIL"
+          },
+          "status": "FAIL"
+        },
+        "Aevrynd_SmileTest_R1030": {
+          "bodySelfCollision": {
+            "nonAdjacentPairs": 0,
+            "samplePairs": [],
+            "status": "PASS"
+          },
+          "patchCollision": {
+            "bodyPatchTriangleOverlap": 1059,
+            "patchOralLayerTriangleOverlap": {
+              "Aevrynd_OralBackWall_R1035": 0,
+              "Aevrynd_UpperGum_R1035": 0,
+              "Aevrynd_LowerGum_R1035": 0,
+              "Aevrynd_UpperTeeth_R1035": 0,
+              "Aevrynd_LowerTeeth_R1035": 0,
+              "Aevrynd_Tongue_R1035": 0
+            },
+            "status": "FAIL"
+          },
+          "status": "FAIL"
+        }
+      },
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\a-closed-soft-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\a-closed-soft-mouth-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\a-closed-soft-mouth-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\a-closed-soft-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\a-closed-soft-smile.png"
+      ],
+      "status": "TECHNICAL_FAIL"
+    },
+    {
+      "label": "b-natural-slit",
+      "neutralInnerGapM": {
+        "upper": 0.00135,
+        "lower": 0.0007
+      },
+      "forwardOffsetM": 0.00055,
+      "topology": {
+        "vertices": 192,
+        "polygons": 128,
+        "segments": 64,
+        "rings": 3,
+        "shapeKeys": [
+          "Basis",
+          "Aevrynd_MouthOpenTest_R1030",
+          "Aevrynd_SmileTest_R1030"
+        ]
+      },
+      "neutralBodySelfCollision": {
+        "nonAdjacentPairs": 0,
+        "samplePairs": [],
+        "status": "PASS"
+      },
+      "neutralPatchCollision": {
+        "bodyPatchTriangleOverlap": 1150,
+        "patchOralLayerTriangleOverlap": {
+          "Aevrynd_OralBackWall_R1035": 0,
+          "Aevrynd_UpperGum_R1035": 0,
+          "Aevrynd_LowerGum_R1035": 0,
+          "Aevrynd_UpperTeeth_R1035": 0,
+          "Aevrynd_LowerTeeth_R1035": 0,
+          "Aevrynd_Tongue_R1035": 0
+        },
+        "status": "FAIL"
+      },
+      "expressionAudit": {
+        "Aevrynd_MouthOpenTest_R1030": {
+          "bodySelfCollision": {
+            "nonAdjacentPairs": 0,
+            "samplePairs": [],
+            "status": "PASS"
+          },
+          "patchCollision": {
+            "bodyPatchTriangleOverlap": 1121,
+            "patchOralLayerTriangleOverlap": {
+              "Aevrynd_OralBackWall_R1035": 0,
+              "Aevrynd_UpperGum_R1035": 0,
+              "Aevrynd_LowerGum_R1035": 0,
+              "Aevrynd_UpperTeeth_R1035": 0,
+              "Aevrynd_LowerTeeth_R1035": 0,
+              "Aevrynd_Tongue_R1035": 0
+            },
+            "status": "FAIL"
+          },
+          "status": "FAIL"
+        },
+        "Aevrynd_SmileTest_R1030": {
+          "bodySelfCollision": {
+            "nonAdjacentPairs": 0,
+            "samplePairs": [],
+            "status": "PASS"
+          },
+          "patchCollision": {
+            "bodyPatchTriangleOverlap": 1021,
+            "patchOralLayerTriangleOverlap": {
+              "Aevrynd_OralBackWall_R1035": 0,
+              "Aevrynd_UpperGum_R1035": 0,
+              "Aevrynd_LowerGum_R1035": 0,
+              "Aevrynd_UpperTeeth_R1035": 0,
+              "Aevrynd_LowerTeeth_R1035": 0,
+              "Aevrynd_Tongue_R1035": 0
+            },
+            "status": "FAIL"
+          },
+          "status": "FAIL"
+        }
+      },
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\b-natural-slit-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\b-natural-slit-mouth-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\b-natural-slit-mouth-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\b-natural-slit-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\b-natural-slit-smile.png"
+      ],
+      "status": "TECHNICAL_FAIL"
+    },
+    {
+      "label": "c-relaxed-open",
+      "neutralInnerGapM": {
+        "upper": 0.0018,
+        "lower": 0.001
+      },
+      "forwardOffsetM": 0.0008,
+      "topology": {
+        "vertices": 192,
+        "polygons": 128,
+        "segments": 64,
+        "rings": 3,
+        "shapeKeys": [
+          "Basis",
+          "Aevrynd_MouthOpenTest_R1030",
+          "Aevrynd_SmileTest_R1030"
+        ]
+      },
+      "neutralBodySelfCollision": {
+        "nonAdjacentPairs": 0,
+        "samplePairs": [],
+        "status": "PASS"
+      },
+      "neutralPatchCollision": {
+        "bodyPatchTriangleOverlap": 1130,
+        "patchOralLayerTriangleOverlap": {
+          "Aevrynd_OralBackWall_R1035": 0,
+          "Aevrynd_UpperGum_R1035": 0,
+          "Aevrynd_LowerGum_R1035": 0,
+          "Aevrynd_UpperTeeth_R1035": 0,
+          "Aevrynd_LowerTeeth_R1035": 0,
+          "Aevrynd_Tongue_R1035": 0
+        },
+        "status": "FAIL"
+      },
+      "expressionAudit": {
+        "Aevrynd_MouthOpenTest_R1030": {
+          "bodySelfCollision": {
+            "nonAdjacentPairs": 0,
+            "samplePairs": [],
+            "status": "PASS"
+          },
+          "patchCollision": {
+            "bodyPatchTriangleOverlap": 1067,
+            "patchOralLayerTriangleOverlap": {
+              "Aevrynd_OralBackWall_R1035": 0,
+              "Aevrynd_UpperGum_R1035": 0,
+              "Aevrynd_LowerGum_R1035": 0,
+              "Aevrynd_UpperTeeth_R1035": 0,
+              "Aevrynd_LowerTeeth_R1035": 0,
+              "Aevrynd_Tongue_R1035": 0
+            },
+            "status": "FAIL"
+          },
+          "status": "FAIL"
+        },
+        "Aevrynd_SmileTest_R1030": {
+          "bodySelfCollision": {
+            "nonAdjacentPairs": 0,
+            "samplePairs": [],
+            "status": "PASS"
+          },
+          "patchCollision": {
+            "bodyPatchTriangleOverlap": 1029,
+            "patchOralLayerTriangleOverlap": {
+              "Aevrynd_OralBackWall_R1035": 0,
+              "Aevrynd_UpperGum_R1035": 0,
+              "Aevrynd_LowerGum_R1035": 0,
+              "Aevrynd_UpperTeeth_R1035": 0,
+              "Aevrynd_LowerTeeth_R1035": 0,
+              "Aevrynd_Tongue_R1035": 0
+            },
+            "status": "FAIL"
+          },
+          "status": "FAIL"
+        }
+      },
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\c-relaxed-open-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\c-relaxed-open-mouth-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\c-relaxed-open-mouth-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\c-relaxed-open-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1036-continuous-lip-patch-sweep\\c-relaxed-open-smile.png"
+      ],
+      "status": "TECHNICAL_FAIL"
+    }
+  ],
+  "provisionalSelection": "b-natural-slit",
+  "selectedVariant": null,
+  "websitePromotionApproved": false,
+  "status": "VISUAL_REVIEW_REQUIRED"
+}

@@ -1469,3 +1469,10 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - A separate dynamic audit passes body self-collision, every eye/brow/lash/caruncle attachment and all oral layers at frames 1/20/33/61. Mouth-open and smile tests also remain at zero body self-collision and zero oral-layer intersection.
 - The complete visual set is rejected. The inherited facial grid produces a jagged oversized cutout, the outer vermilion roll disappears and the neutral pose exposes too much cavity. Strict mouth quality falls to 24/100. r1035 is retained only as a topology and collision proof; r1033 remains the face technical mainline and website v83 is unchanged.
 - r1036 must replace the raw cut edge with an evenly resampled outer-vermilion and inner-margin patch, a continuous Cupid bow and closed commissures. The neutral lips must conceal most oral layers while jaw-coupled opening reveals a restrained upper dental row.
+
+### v249r1036 — detached continuous-lip overlay rejection
+
+- r1036 samples the r1035 face surface into three 64-segment rings and builds an Aevrynd-owned 192-vertex lip annulus with matching neutral, mouth-open and smile shapes. Three slit widths and forward offsets are tested under the inherited fixed review light.
+- Every bound fails the face interface. Neutral body-to-patch overlap remains 1,130–1,185 triangle pairs; mouth-open and smile also fail. The six oral layers stay clear, so the failure is isolated to the detached patch against the face.
+- Fixed renders expose an oval perimeter, floating wetline fragments and a mask-like material discontinuity. The method cannot form believable commissures or a welded vermilion transition, so no Blend candidate is saved and the strict visual verdict is immediate rejection.
+- r1033 remains the facial mainline and r1035 remains only a topology/collision proof. Future mouth work must rebuild and weld the lip annulus inside the body mesh. Website v83 remains unchanged and its embedded skin base colour is still 5.56% darker than the committed Blender mainline.
