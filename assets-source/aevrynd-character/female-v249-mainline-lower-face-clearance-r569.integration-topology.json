@@ -1,0 +1,1948 @@
+{
+  "blend": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-lower-face-clearance-r569.blend",
+  "sceneRevision": {
+    "aevrynd_source_sha256": "811F43ACCBB31A88266D932F8F5563B2D13586FCA0BA2693AAD1F5FE582B3515",
+    "aevrynd_runtime_lod_revision": 14,
+    "aevrynd_lod1_excluded_layers": "HairMain,HairlineFine,HairFlyaways",
+    "aevrynd_mouth_revision": 15,
+    "aevrynd_groom_revision": 16,
+    "aevrynd_hairline_strategy": "irregular_short_transition_with_forehead_exclusion",
+    "aevrynd_rejected_oral_prototype": "requires mouth-slit retopology",
+    "aevrynd_skin_revision": "v249r173",
+    "aevrynd_face_revision": "v249r210",
+    "aevrynd_eye_revision": 236,
+    "aevrynd_hair_revision": 246,
+    "aevrynd_boundary_strategy": "staggered_short_tapered_transition",
+    "aevrynd_card_strategy": "nested_scalp_shells_narrow_fiber_alpha",
+    "aevrynd_undercut_strategy": "high_resolution_wide_four_edge_fade",
+    "aevrynd_release_state": "OFFLINE_TECHNICAL_CANDIDATE_AUDITS_PENDING",
+    "aevrynd_groom_strategy": "owned_guide_child_fibers_with_physical_width_and_deterministic_microvariation",
+    "aevrynd_eye_method": "portable_single_principled_cornea",
+    "aevrynd_face_method": "continuous_jaw_malar_structure_pass",
+    "aevrynd_clothing_revision": 147,
+    "aevrynd_anatomy_revision": 238,
+    "aevrynd_hair_mode": "owned_hybrid_cards_and_geometry_fibers",
+    "aevrynd_eye_collision_repair": "lower_lashes_restored_after_v157",
+    "aevrynd_skin_mode": "portable_baked_base_roughness_owned_tangent_micronormal",
+    "aevrynd_eye_repair": "right_tear_film_body_normal_clearance",
+    "aevrynd_lip_revision": 221,
+    "aevrynd_lip_method": "broad_lower_lip_and_soft_commissure_transition",
+    "aevrynd_brow_revision": 208,
+    "aevrynd_brow_method": "soft_translucent_short_strands",
+    "aevrynd_brow_binding": "single_head_bone_parent",
+    "aevrynd_brow_collision": "zero_static_and_rigid_head_dynamic_overlap",
+    "aevrynd_eye_mode": "owned_broken_stroma_92pct_radius_asymmetric_uv",
+    "aevrynd_hair_front_mode": "bilateral_ear_tuck_50mm",
+    "aevrynd_anatomy_mode": "continuous_natural_breast_weight",
+    "aevrynd_mainline_base": "v249",
+    "aevrynd_hair_candidate": "v249-mainline-hair-r27",
+    "aevrynd_mainline_baseline": "v249",
+    "aevrynd_mainline_parent": "aevrynd-female-authoring-v249-mainline-orbital-brow-refit-r526.blend",
+    "aevrynd_mainline_revision": "v249r569-lower-face-clearance",
+    "aevrynd_clothing_candidate": "v249-mainline-cloth-r35",
+    "aevrynd_runtime_dependency": "none",
+    "aevrynd_revision": "v249r491-balanced-skin",
+    "aevrynd_candidate_status": "COLLISION_AND_11SHOT_REVIEW_PENDING",
+    "aevrynd_hair_layers": "runtime_scalp_density|runtime_scalp_hairline_density|runtime_part_root_density|runtime_cards.front|runtime_cards.crown|runtime_cards.rear|runtime_cards.hairline",
+    "aevrynd_open_topology_physical_skin": "v249r446",
+    "aevrynd_hair_value_multiplier": 2.0,
+    "aevrynd_eye_change": "material-only iris texture/tone; eye geometry and all collision layers inherited from r468/r446",
+    "aevrynd_eye_layers": "sclera|iris_stroma|cornea|tear_meniscus|caruncle|upper_lashes",
+    "aevrynd_character_revision": "v249r526-orbital-brow-refit",
+    "aevrynd_review_exposure": 0.0,
+    "aevrynd_review_view_transform": "Standard",
+    "aevrynd_review_lighting_contract": "Standard/None exposure0 gamma1 world0.15 fixed neutral five-light rig",
+    "aevrynd_parent": "aevrynd-female-authoring-v249-mainline-lip-response-r490.blend",
+    "aevrynd_strict_hair_score": 47,
+    "aevrynd_strict_eye_score": 70,
+    "aevrynd_strict_face_score": 59,
+    "aevrynd_strict_overall_score": 58,
+    "aevrynd_strict_mouth_score": 55,
+    "aevrynd_character_status": "offline technical candidate; audits pending",
+    "aevrynd_strict_skin_score": 57,
+    "aevrynd_strict_body_clothing_score": 49
+  },
+  "counts": {
+    "objects": 86,
+    "meshes": 66,
+    "materials": 54,
+    "armatures": 1
+  },
+  "largestMeshes": [
+    {
+      "name": "AevryndFemaleSemanticScalp_R383",
+      "vertices": 129985,
+      "edges": 258838,
+      "polygons": 128854,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_AnatomicalScalpDensity_R383"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        -0.025521
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.093294,
+          -0.147268,
+          1.584066
+        ],
+        "max": [
+          0.093509,
+          0.04962,
+          1.720855
+        ]
+      }
+    },
+    {
+      "name": "HairFiberDetail",
+      "vertices": 77472,
+      "edges": 148488,
+      "polygons": 71016,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Hair_Fibers_v83"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.127273,
+          -0.09321,
+          1.452021
+        ],
+        "max": [
+          0.128222,
+          0.13122,
+          1.72144
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleBodyBase",
+      "vertices": 42342,
+      "edges": 84680,
+      "polygons": 42296,
+      "shapeKeys": 0,
+      "vertexGroups": 21,
+      "materials": [
+        "Aevrynd_Skin_Clay"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Face Primary Smoothing",
+          "type": "LAPLACIANSMOOTH"
+        },
+        {
+          "name": "Aevrynd Skin Deform",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        5.4e-05,
+        0.026608,
+        -0.002053
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.049132,
+        1.049132,
+        1.049132
+      ],
+      "worldBounds": {
+        "min": [
+          -0.441817,
+          -0.152704,
+          1.6e-05
+        ],
+        "max": [
+          0.441825,
+          0.14885,
+          1.719934
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleBodyBaseV118",
+      "vertices": 41692,
+      "edges": 83182,
+      "polygons": 41490,
+      "shapeKeys": 6,
+      "vertexGroups": 21,
+      "materials": [
+        "Aevrynd_Skin_Breakup_R510_lighter-neutral"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd CC0 Body Deform",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.442059,
+          -0.152532,
+          -0.000831
+        ],
+        "max": [
+          0.442044,
+          0.148345,
+          1.719983
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleRuntimeCards_rear_R467",
+      "vertices": 23040,
+      "edges": 33600,
+      "polygons": 11040,
+      "shapeKeys": 0,
+      "vertexGroups": 16,
+      "materials": [
+        "Aevrynd_RuntimeHairCards_R468_BalancedBrunette"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Runtime Hair Armature",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.085959,
+          0.022788,
+          1.394142
+        ],
+        "max": [
+          0.092517,
+          0.107234,
+          1.716116
+        ]
+      }
+    },
+    {
+      "name": "HairDetailFibers_v246",
+      "vertices": 20424,
+      "edges": 28996,
+      "polygons": 9392,
+      "shapeKeys": 0,
+      "vertexGroups": 1,
+      "materials": [
+        "Aevrynd_HairDetailFibers_v246"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd hair.fibers.detail Deform",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.137806,
+          -0.07506,
+          1.412394
+        ],
+        "max": [
+          0.137286,
+          0.134991,
+          1.711466
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleRuntimeCards_crown_R467",
+      "vertices": 20160,
+      "edges": 29400,
+      "polygons": 9660,
+      "shapeKeys": 0,
+      "vertexGroups": 16,
+      "materials": [
+        "Aevrynd_RuntimeHairCards_R468_BalancedBrunette"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Runtime Hair Armature",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.131961,
+          -0.047683,
+          1.411392
+        ],
+        "max": [
+          0.141738,
+          0.072456,
+          1.724555
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleRuntimeCards_front_R467",
+      "vertices": 20160,
+      "edges": 29400,
+      "polygons": 9660,
+      "shapeKeys": 0,
+      "vertexGroups": 16,
+      "materials": [
+        "Aevrynd_RuntimeHairCards_R468_BalancedBrunette"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Runtime Hair Armature",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.146206,
+          -0.108972,
+          1.420764
+        ],
+        "max": [
+          0.144759,
+          0.006136,
+          1.723937
+        ]
+      }
+    }
+  ],
+  "hairMeshes": [
+    {
+      "name": "AevryndFemaleAnatomicalScalpFoundation_v249r101",
+      "vertices": 3946,
+      "edges": 7788,
+      "polygons": 3843,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "AevryndAnatomicalScalpFoundationMaterial_v249r129"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.09318,
+          -0.119537,
+          1.53768
+        ],
+        "max": [
+          0.093581,
+          0.075496,
+          1.720582
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleDeformMatchedScalp_v249r163",
+      "vertices": 2626,
+      "edges": 5061,
+      "polygons": 2438,
+      "shapeKeys": 0,
+      "vertexGroups": 21,
+      "materials": [
+        "AevryndDeformMatchedScalpMaterial_v249r163"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Scalp Body-Matched Deform",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.093532,
+          -0.121692,
+          1.528757
+        ],
+        "max": [
+          0.093669,
+          0.076096,
+          1.721182
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleRuntimeCards_crown_R467",
+      "vertices": 20160,
+      "edges": 29400,
+      "polygons": 9660,
+      "shapeKeys": 0,
+      "vertexGroups": 16,
+      "materials": [
+        "Aevrynd_RuntimeHairCards_R468_BalancedBrunette"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Runtime Hair Armature",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.131961,
+          -0.047683,
+          1.411392
+        ],
+        "max": [
+          0.141738,
+          0.072456,
+          1.724555
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleRuntimeCards_front_R467",
+      "vertices": 20160,
+      "edges": 29400,
+      "polygons": 9660,
+      "shapeKeys": 0,
+      "vertexGroups": 16,
+      "materials": [
+        "Aevrynd_RuntimeHairCards_R468_BalancedBrunette"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Runtime Hair Armature",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.146206,
+          -0.108972,
+          1.420764
+        ],
+        "max": [
+          0.144759,
+          0.006136,
+          1.723937
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleRuntimeCards_hairline_R467",
+      "vertices": 3456,
+      "edges": 5040,
+      "polygons": 1656,
+      "shapeKeys": 0,
+      "vertexGroups": 16,
+      "materials": [
+        "Aevrynd_RuntimeHairCards_R468_BalancedBrunette"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Runtime Hair Armature",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.080129,
+          -0.115035,
+          1.620118
+        ],
+        "max": [
+          0.082721,
+          -0.019819,
+          1.686335
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleRuntimeCards_rear_R467",
+      "vertices": 23040,
+      "edges": 33600,
+      "polygons": 11040,
+      "shapeKeys": 0,
+      "vertexGroups": 16,
+      "materials": [
+        "Aevrynd_RuntimeHairCards_R468_BalancedBrunette"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Runtime Hair Armature",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.085959,
+          0.022788,
+          1.394142
+        ],
+        "max": [
+          0.092517,
+          0.107234,
+          1.716116
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleRuntimeHairlineDensity_R467",
+      "vertices": 648,
+      "edges": 1215,
+      "polygons": 568,
+      "shapeKeys": 0,
+      "vertexGroups": 1,
+      "materials": [
+        "Aevrynd_RuntimeHairlineDensity_R467"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Runtime Hairline Density Armature",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.080342,
+          -0.11808,
+          1.613424
+        ],
+        "max": [
+          0.080342,
+          -0.02386,
+          1.702591
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleRuntimeLayeredLocks_front_R517",
+      "vertices": 15360,
+      "edges": 22400,
+      "polygons": 7360,
+      "shapeKeys": 0,
+      "vertexGroups": 16,
+      "materials": [
+        "Aevrynd_RuntimeHairCards_R468_BalancedBrunette"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Runtime Hair Layered Lock Armature",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.144735,
+          -0.115062,
+          1.430767
+        ],
+        "max": [
+          0.142736,
+          0.009766,
+          1.723909
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleRuntimeLayeredLocks_rear_R506",
+      "vertices": 13440,
+      "edges": 19600,
+      "polygons": 6440,
+      "shapeKeys": 0,
+      "vertexGroups": 16,
+      "materials": [
+        "Aevrynd_RuntimeHairCards_R468_BalancedBrunette"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Runtime Hair Layered Lock Armature",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.089637,
+          0.022517,
+          1.417976
+        ],
+        "max": [
+          0.089328,
+          0.096816,
+          1.716026
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleRuntimeScalpCap_R467",
+      "vertices": 1682,
+      "edges": 3214,
+      "polygons": 1535,
+      "shapeKeys": 0,
+      "vertexGroups": 1,
+      "materials": [
+        "Aevrynd_RuntimeScalpDensity_R467"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Runtime Scalp Armature",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.082779,
+          -0.11152,
+          1.601844
+        ],
+        "max": [
+          0.08269,
+          0.076396,
+          1.721482
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleScalpCoverage_v378",
+      "vertices": 2457,
+      "edges": 4787,
+      "polygons": 2331,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_HairRootShadow_v249r6"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.093459,
+          -0.116625,
+          1.580471
+        ],
+        "max": [
+          0.093771,
+          0.075796,
+          1.720882
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleScalpPart_v249r25",
+      "vertices": 60,
+      "edges": 88,
+      "polygons": 29,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_ScalpPartSkin_v249r16",
+        "Aevrynd_HairRootShadow_v249r6"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.03256,
+          -0.100865,
+          1.678289
+        ],
+        "max": [
+          -0.010273,
+          0.016458,
+          1.71982
+        ]
+      }
+    },
+    {
+      "name": "AevryndFemaleSemanticScalp_R383",
+      "vertices": 129985,
+      "edges": 258838,
+      "polygons": 128854,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_AnatomicalScalpDensity_R383"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        -0.025521
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.093294,
+          -0.147268,
+          1.584066
+        ],
+        "max": [
+          0.093509,
+          0.04962,
+          1.720855
+        ]
+      }
+    },
+    {
+      "name": "Brow_L",
+      "vertices": 3000,
+      "edges": 5400,
+      "polygons": 2400,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Brow_Hair_v39_Dark",
+        "Aevrynd_Brow_Hair_v39_Warm"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          0.012352,
+          -0.123119,
+          1.630545
+        ],
+        "max": [
+          0.063112,
+          -0.087631,
+          1.645341
+        ]
+      }
+    },
+    {
+      "name": "Brow_L_Density",
+      "vertices": 175,
+      "edges": 310,
+      "polygons": 136,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Brow_Density_v39"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          0.012037,
+          -0.123403,
+          1.630498
+        ],
+        "max": [
+          0.061457,
+          -0.090656,
+          1.6438
+        ]
+      }
+    },
+    {
+      "name": "Brow_R",
+      "vertices": 3000,
+      "edges": 5400,
+      "polygons": 2400,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Brow_Hair_v39_Dark",
+        "Aevrynd_Brow_Hair_v39_Warm"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.063061,
+          -0.122857,
+          1.630518
+        ],
+        "max": [
+          -0.012145,
+          -0.087788,
+          1.64603
+        ]
+      }
+    },
+    {
+      "name": "Brow_R_Density",
+      "vertices": 175,
+      "edges": 310,
+      "polygons": 136,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Brow_Density_v39"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.061434,
+          -0.123162,
+          1.630497
+        ],
+        "max": [
+          -0.012055,
+          -0.090622,
+          1.643792
+        ]
+      }
+    },
+    {
+      "name": "Eye_L_LowerLashes",
+      "vertices": 336,
+      "edges": 624,
+      "polygons": 320,
+      "shapeKeys": 0,
+      "vertexGroups": 1,
+      "materials": [
+        "Aevrynd_Lash_Hair_R498"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Head Follow",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          0.024171,
+          -0.116981,
+          1.600839
+        ],
+        "max": [
+          0.044528,
+          -0.109172,
+          1.606249
+        ]
+      }
+    },
+    {
+      "name": "Eye_L_UpperLashes",
+      "vertices": 760,
+      "edges": 1330,
+      "polygons": 646,
+      "shapeKeys": 0,
+      "vertexGroups": 1,
+      "materials": [
+        "Aevrynd_Lash_Hair_v51"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Head Follow",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          0.022248,
+          -0.120676,
+          1.609299
+        ],
+        "max": [
+          0.046474,
+          -0.110652,
+          1.613599
+        ]
+      }
+    },
+    {
+      "name": "Eye_R_LowerLashes",
+      "vertices": 336,
+      "edges": 624,
+      "polygons": 320,
+      "shapeKeys": 0,
+      "vertexGroups": 1,
+      "materials": [
+        "Aevrynd_Lash_Hair_R498"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Head Follow",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.044328,
+          -0.11681,
+          1.600839
+        ],
+        "max": [
+          -0.024581,
+          -0.108353,
+          1.60637
+        ]
+      }
+    },
+    {
+      "name": "Eye_R_UpperLashes",
+      "vertices": 760,
+      "edges": 1330,
+      "polygons": 646,
+      "shapeKeys": 0,
+      "vertexGroups": 1,
+      "materials": [
+        "Aevrynd_Lash_Hair_v51"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Head Follow",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.046968,
+          -0.120081,
+          1.609353
+        ],
+        "max": [
+          -0.022632,
+          -0.110921,
+          1.613639
+        ]
+      }
+    },
+    {
+      "name": "HairBoundaryClumps",
+      "vertices": 360,
+      "edges": 480,
+      "polygons": 150,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Hair_v11_Dark",
+        "Aevrynd_Hair_v11_Warm"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.072243,
+          0.034947,
+          1.598126
+        ],
+        "max": [
+          0.070027,
+          0.074472,
+          1.623181
+        ]
+      }
+    },
+    {
+      "name": "HairCoverageTiles_v246",
+      "vertices": 2434,
+      "edges": 3387,
+      "polygons": 1085,
+      "shapeKeys": 0,
+      "vertexGroups": 1,
+      "materials": [
+        "Aevrynd_HairCards_v166"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd hair.cards.coverage_tiles Deform",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.08559,
+          -0.078899,
+          1.627661
+        ],
+        "max": [
+          0.084966,
+          0.054704,
+          1.723369
+        ]
+      }
+    },
+    {
+      "name": "HairCrownCoverage_v212",
+      "vertices": 2240,
+      "edges": 3200,
+      "polygons": 1040,
+      "shapeKeys": 0,
+      "vertexGroups": 1,
+      "materials": [
+        "Aevrynd_HairCards_v166"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Crown Coverage Deform",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.076914,
+          -0.067648,
+          1.647401
+        ],
+        "max": [
+          0.077423,
+          0.068886,
+          1.723238
+        ]
+      }
+    },
+    {
+      "name": "HairDetailFibers_v246",
+      "vertices": 20424,
+      "edges": 28996,
+      "polygons": 9392,
+      "shapeKeys": 0,
+      "vertexGroups": 1,
+      "materials": [
+        "Aevrynd_HairDetailFibers_v246"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd hair.fibers.detail Deform",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.137806,
+          -0.07506,
+          1.412394
+        ],
+        "max": [
+          0.137286,
+          0.134991,
+          1.711466
+        ]
+      }
+    },
+    {
+      "name": "HairFiberBase",
+      "vertices": 16740,
+      "edges": 21762,
+      "polygons": 6696,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Hair_Strands_v57"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.145335,
+          -0.073408,
+          1.458109
+        ],
+        "max": [
+          0.159509,
+          0.122014,
+          1.669698
+        ]
+      }
+    },
+    {
+      "name": "HairFiberDetail",
+      "vertices": 77472,
+      "edges": 148488,
+      "polygons": 71016,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Hair_Fibers_v83"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.127273,
+          -0.09321,
+          1.452021
+        ],
+        "max": [
+          0.128222,
+          0.13122,
+          1.72144
+        ]
+      }
+    },
+    {
+      "name": "HairFiberLOD1",
+      "vertices": 11760,
+      "edges": 16464,
+      "polygons": 5292,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Hair_Strands_v57"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.127078,
+          -0.093591,
+          1.456135
+        ],
+        "max": [
+          0.127323,
+          0.131605,
+          1.727746
+        ]
+      }
+    },
+    {
+      "name": "HairlineNaturalCards_v214",
+      "vertices": 570,
+      "edges": 741,
+      "polygons": 228,
+      "shapeKeys": 0,
+      "vertexGroups": 1,
+      "materials": [
+        "Aevrynd_HairlineRoots_v188"
+      ],
+      "parent": null,
+      "modifiers": [
+        {
+          "name": "Aevrynd Natural Hairline Deform",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.076984,
+          -0.109946,
+          1.652802
+        ],
+        "max": [
+          0.076471,
+          -0.034038,
+          1.702236
+        ]
+      }
+    },
+    {
+      "name": "HairNapeClumps",
+      "vertices": 532,
+      "edges": 722,
+      "polygons": 228,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Hair_v11_Dark",
+        "Aevrynd_Hair_v11_Warm"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.063998,
+          0.035823,
+          1.580814
+        ],
+        "max": [
+          0.06798,
+          0.070193,
+          1.607585
+        ]
+      }
+    },
+    {
+      "name": "HairScalp",
+      "vertices": 2497,
+      "edges": 4992,
+      "polygons": 2496,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Hair_Scalp"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.082721,
+          -0.121902,
+          1.594329
+        ],
+        "max": [
+          0.082628,
+          0.075389,
+          1.720523
+        ]
+      }
+    },
+    {
+      "name": "HairSilhouetteCards_v246",
+      "vertices": 3456,
+      "edges": 4960,
+      "polygons": 1616,
+      "shapeKeys": 0,
+      "vertexGroups": 1,
+      "materials": [
+        "Aevrynd_HairCards_v166"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd hair.cards.silhouette Deform",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.135416,
+          -0.076873,
+          1.412638
+        ],
+        "max": [
+          0.134459,
+          0.132022,
+          1.723918
+        ]
+      }
+    },
+    {
+      "name": "HairTempleClumps",
+      "vertices": 644,
+      "edges": 874,
+      "polygons": 276,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Hair_v11_Dark",
+        "Aevrynd_Hair_v11_Warm"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [],
+      "location": [
+        0.0,
+        -1.68,
+        0.0
+      ],
+      "rotationEuler": [
+        -1.570796,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.082444,
+          -0.047457,
+          1.60975
+        ],
+        "max": [
+          0.082506,
+          0.059827,
+          1.658022
+        ]
+      }
+    },
+    {
+      "name": "HairUndercutScalp",
+      "vertices": 2688,
+      "edges": 5252,
+      "polygons": 2565,
+      "shapeKeys": 0,
+      "vertexGroups": 21,
+      "materials": [
+        "Aevrynd_Hair_Undercut_v46"
+      ],
+      "parent": "AevryndFemaleRig",
+      "modifiers": [
+        {
+          "name": "Aevrynd Undercut Deform",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        5.4e-05,
+        0.026608,
+        -0.002053
+      ],
+      "rotationEuler": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.049132,
+        1.049132,
+        1.049132
+      ],
+      "worldBounds": {
+        "min": [
+          -0.073576,
+          -0.006868,
+          1.502764
+        ],
+        "max": [
+          0.073275,
+          0.046672,
+          1.567876
+        ]
+      }
+    }
+  ],
+  "armatures": [
+    {
+      "name": "AevryndFemaleRig",
+      "bones": 36,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.395,
+          -0.125,
+          0.02
+        ],
+        "max": [
+          0.395,
+          0.078,
+          1.68
+        ]
+      }
+    }
+  ]
+}

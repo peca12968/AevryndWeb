@@ -1,0 +1,62 @@
+{
+  "foundation": "aevrynd-female-cc0-knee-crease-volume-r962.blend",
+  "scope": "Target-native scalp and owned groom integration on the selected CC0 rig foundation",
+  "websiteAssetChanged": false,
+  "skinBrightnessEvidence": {
+    "websiteV83EmbeddedBaseColorMeanLuminance": 0.5454,
+    "committedMainlineEmbeddedBaseColorMeanLuminance": 0.5775,
+    "relativeWebsiteReductionPercent": 5.56,
+    "r976FaceRenderMedianSkinLuminance": 0.6708,
+    "r977FaceRenderMedianSkinLuminance": 0.6708,
+    "conclusion": "The r962-r977 branch does not reproduce the website v83 darkening. Global exposure remains unchanged."
+  },
+  "r974": {
+    "asset": "aevrynd-female-cc0-hair-feature-fit-r974.blend",
+    "decision": "REJECT",
+    "reason": "Rigid landmark alignment leaves the smaller r584 scalp and cards inside the larger r962 cranium; visible ribbons appear detached above and beside the head."
+  },
+  "r975": {
+    "asset": "aevrynd-female-cc0-surface-fitted-hair-features-r975.blend",
+    "decision": "REJECT",
+    "maximumSurfaceProjectionM": 0.1234548004,
+    "reason": "Nearest-surface projection requires up to 123.5 mm and destroys the old card hierarchy, leaving sparse radial strips."
+  },
+  "r976": {
+    "asset": "aevrynd-female-cc0-target-scalp-guide-groom-r976.blend",
+    "decision": "REJECT_AS_COLLISION_CANDIDATE",
+    "scalpVertices": 1568,
+    "scalpPolygons": 1470,
+    "guideCount": 260,
+    "strandCount": 3640,
+    "pointCount": 72800,
+    "strictVisualHairScore": 55,
+    "collision": {
+      "penetratingPointCount": 2702,
+      "minimumSignedM": -0.0477159889,
+      "status": "FAIL"
+    },
+    "visualFinding": "Target-native coverage, warm-brown response and center part are coherent, but the silhouette remains a uniform straight curtain with weak macro-locks and identical end lengths."
+  },
+  "r977": {
+    "asset": "aevrynd-female-cc0-hair-collision-repair-r977.blend",
+    "decision": "RETAIN_AS_STATIC_COLLISION_TECHNICAL_CANDIDATE",
+    "collisionAudit": "female-v249-mainline-cc0-hair-collision-repair-r977.collision-audit.json",
+    "collision": {
+      "pointCount": 72800,
+      "nearSurfacePointCount": 72752,
+      "penetratingPointCount": 0,
+      "minimumSignedM": 0.0013133513,
+      "status": "PASS"
+    },
+    "strictVisualHairScore": 55,
+    "remainingVisualFailures": [
+      "uniform straight-curtain side masses",
+      "insufficient front, side and rear macro-lock hierarchy",
+      "weak ear-tuck and temple structure",
+      "overly even lower lengths",
+      "no secondary motion"
+    ],
+    "promotion": "Do not replace website v83 or r962. Use only as the next target-native hair construction base."
+  },
+  "nextRequiredWork": "On r977, build coherent front/side/rear macro-lock families with staggered lengths and ear-tuck structure, then add head-bound dynamic chains with root pinning, damping, gravity and per-frame body collision limits before runtime export."
+}

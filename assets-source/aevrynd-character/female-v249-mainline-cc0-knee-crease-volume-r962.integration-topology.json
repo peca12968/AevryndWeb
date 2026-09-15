@@ -1,0 +1,810 @@
+{
+  "blend": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-knee-crease-volume-r962.blend",
+  "sceneRevision": {
+    "aevrynd_release_state": "FULL_JOINT_DEFORMATION_AND_COLLISION_AUDIT_PENDING",
+    "aevrynd_source_license": "MPFB core graphical assets CC0-1.0; Aevrynd-owned material and fitted optics",
+    "aevrynd_eye_alignment": "MPFB joint eye centers; Aevrynd v249 owned optics",
+    "aevrynd_mainline_revision": "v249r962-cc0-knee-crease-volume",
+    "aevrynd_mainline_parent": "aevrynd-female-cc0-knee-edge-constraint-r949.blend",
+    "aevrynd_rig_source": "aevrynd-female-authoring-v249-mainline-lower-face-clearance-r569.blend"
+  },
+  "counts": {
+    "objects": 12,
+    "meshes": 7,
+    "materials": 4,
+    "armatures": 1
+  },
+  "largestMeshes": [
+    {
+      "name": "AevryndFemaleCC0Baseline_v259",
+      "vertices": 19158,
+      "edges": 37364,
+      "polygons": 18486,
+      "shapeKeys": 29,
+      "vertexGroups": 174,
+      "materials": [
+        "Aevrynd_CC0_OwnedSkin_R602_Neutral"
+      ],
+      "parent": "AevryndFemaleRig",
+      "parentType": "OBJECT",
+      "parentBone": null,
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "modifiers": [
+        {
+          "name": "Hide helpers",
+          "type": "MASK"
+        },
+        {
+          "name": "Aevrynd CC0 Reference Subdivision",
+          "type": "SUBSURF"
+        },
+        {
+          "name": "Aevrynd R647 Retargeted Armature",
+          "type": "ARMATURE",
+          "object": "AevryndFemaleRig"
+        }
+      ],
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.475243,
+          -0.28838,
+          0.001048
+        ],
+        "max": [
+          0.475243,
+          0.087711,
+          1.550411
+        ]
+      },
+      "headRegionBounds": {
+        "cutoff": 1.363007,
+        "min": [
+          -0.21513,
+          -0.16807,
+          1.363046
+        ],
+        "max": [
+          0.21513,
+          0.05776,
+          1.668026
+        ]
+      }
+    },
+    {
+      "name": "Eye_L_Cornea",
+      "vertices": 1986,
+      "edges": 4032,
+      "polygons": 2048,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Eye_Cornea"
+      ],
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "modifiers": [],
+      "location": [
+        0.028152,
+        -0.090878,
+        0.088576
+      ],
+      "rotationEuler": [
+        -1.711121,
+        -0.0,
+        -0.0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "worldBounds": {
+        "min": [
+          0.017289,
+          -0.120005,
+          1.437362
+        ],
+        "max": [
+          0.039017,
+          -0.09449,
+          1.46053
+        ]
+      },
+      "headRegionBounds": {
+        "cutoff": 1.45636,
+        "min": [
+          0.020471,
+          -0.11558,
+          1.457138
+        ],
+        "max": [
+          0.035835,
+          -0.098006,
+          1.46053
+        ]
+      }
+    },
+    {
+      "name": "Eye_L_Sclera",
+      "vertices": 1986,
+      "edges": 4032,
+      "polygons": 2048,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Eye_Sclera"
+      ],
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "modifiers": [],
+      "location": [
+        0.028152,
+        -0.090844,
+        0.088817
+      ],
+      "rotationEuler": [
+        -1.711121,
+        -0.0,
+        -0.0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "worldBounds": {
+        "min": [
+          0.017509,
+          -0.118474,
+          1.437597
+        ],
+        "max": [
+          0.038797,
+          -0.094952,
+          1.460296
+        ]
+      },
+      "headRegionBounds": {
+        "cutoff": 1.45621,
+        "min": [
+          0.020626,
+          -0.11503,
+          1.456972
+        ],
+        "max": [
+          0.035679,
+          -0.098397,
+          1.460296
+        ]
+      }
+    },
+    {
+      "name": "Eye_R_Cornea",
+      "vertices": 1986,
+      "edges": 4032,
+      "polygons": 2048,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Eye_Cornea"
+      ],
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "modifiers": [],
+      "location": [
+        -0.028153,
+        -0.090878,
+        0.088576
+      ],
+      "rotationEuler": [
+        -1.711121,
+        -0.0,
+        -0.0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "worldBounds": {
+        "min": [
+          -0.038897,
+          -0.120005,
+          1.437362
+        ],
+        "max": [
+          -0.017409,
+          -0.09449,
+          1.46053
+        ]
+      },
+      "headRegionBounds": {
+        "cutoff": 1.45636,
+        "min": [
+          -0.03575,
+          -0.11558,
+          1.457138
+        ],
+        "max": [
+          -0.020556,
+          -0.098006,
+          1.46053
+        ]
+      }
+    },
+    {
+      "name": "Eye_R_Sclera",
+      "vertices": 1986,
+      "edges": 4032,
+      "polygons": 2048,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Eye_Sclera"
+      ],
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "modifiers": [],
+      "location": [
+        -0.028153,
+        -0.090844,
+        0.088817
+      ],
+      "rotationEuler": [
+        -1.711121,
+        -0.0,
+        -0.0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "worldBounds": {
+        "min": [
+          -0.038679,
+          -0.118474,
+          1.437597
+        ],
+        "max": [
+          -0.017626,
+          -0.094952,
+          1.460296
+        ]
+      },
+      "headRegionBounds": {
+        "cutoff": 1.45621,
+        "min": [
+          -0.035596,
+          -0.11503,
+          1.456972
+        ],
+        "max": [
+          -0.02071,
+          -0.098397,
+          1.460296
+        ]
+      }
+    },
+    {
+      "name": "Eye_L_Iris",
+      "vertices": 97,
+      "edges": 192,
+      "polygons": 96,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Eye_Iris"
+      ],
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "modifiers": [],
+      "location": [
+        0.028152,
+        -0.08893,
+        0.102365
+      ],
+      "rotationEuler": [
+        -1.711121,
+        -0.0,
+        -0.0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "worldBounds": {
+        "min": [
+          0.023328,
+          -0.119445,
+          1.44383
+        ],
+        "max": [
+          0.032978,
+          -0.117738,
+          1.454063
+        ]
+      },
+      "headRegionBounds": {
+        "cutoff": 1.452221,
+        "min": [
+          0.024516,
+          -0.117775,
+          1.452317
+        ],
+        "max": [
+          0.03179,
+          -0.117742,
+          1.454063
+        ]
+      }
+    },
+    {
+      "name": "Eye_R_Iris",
+      "vertices": 97,
+      "edges": 192,
+      "polygons": 96,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Eye_Iris"
+      ],
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "modifiers": [],
+      "location": [
+        -0.028153,
+        -0.08893,
+        0.102366
+      ],
+      "rotationEuler": [
+        -1.711121,
+        -0.0,
+        -0.0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "worldBounds": {
+        "min": [
+          -0.032929,
+          -0.119445,
+          1.44383
+        ],
+        "max": [
+          -0.023377,
+          -0.117737,
+          1.454063
+        ]
+      },
+      "headRegionBounds": {
+        "cutoff": 1.452221,
+        "min": [
+          -0.031754,
+          -0.117775,
+          1.452317
+        ],
+        "max": [
+          -0.024552,
+          -0.117742,
+          1.454063
+        ]
+      }
+    }
+  ],
+  "hairMeshes": [],
+  "featureMeshes": [
+    {
+      "name": "Eye_L_Cornea",
+      "vertices": 1986,
+      "edges": 4032,
+      "polygons": 2048,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Eye_Cornea"
+      ],
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "modifiers": [],
+      "location": [
+        0.028152,
+        -0.090878,
+        0.088576
+      ],
+      "rotationEuler": [
+        -1.711121,
+        -0.0,
+        -0.0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "worldBounds": {
+        "min": [
+          0.017289,
+          -0.120005,
+          1.437362
+        ],
+        "max": [
+          0.039017,
+          -0.09449,
+          1.46053
+        ]
+      },
+      "headRegionBounds": {
+        "cutoff": 1.45636,
+        "min": [
+          0.020471,
+          -0.11558,
+          1.457138
+        ],
+        "max": [
+          0.035835,
+          -0.098006,
+          1.46053
+        ]
+      }
+    },
+    {
+      "name": "Eye_L_Iris",
+      "vertices": 97,
+      "edges": 192,
+      "polygons": 96,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Eye_Iris"
+      ],
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "modifiers": [],
+      "location": [
+        0.028152,
+        -0.08893,
+        0.102365
+      ],
+      "rotationEuler": [
+        -1.711121,
+        -0.0,
+        -0.0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "worldBounds": {
+        "min": [
+          0.023328,
+          -0.119445,
+          1.44383
+        ],
+        "max": [
+          0.032978,
+          -0.117738,
+          1.454063
+        ]
+      },
+      "headRegionBounds": {
+        "cutoff": 1.452221,
+        "min": [
+          0.024516,
+          -0.117775,
+          1.452317
+        ],
+        "max": [
+          0.03179,
+          -0.117742,
+          1.454063
+        ]
+      }
+    },
+    {
+      "name": "Eye_L_Sclera",
+      "vertices": 1986,
+      "edges": 4032,
+      "polygons": 2048,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Eye_Sclera"
+      ],
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "modifiers": [],
+      "location": [
+        0.028152,
+        -0.090844,
+        0.088817
+      ],
+      "rotationEuler": [
+        -1.711121,
+        -0.0,
+        -0.0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "worldBounds": {
+        "min": [
+          0.017509,
+          -0.118474,
+          1.437597
+        ],
+        "max": [
+          0.038797,
+          -0.094952,
+          1.460296
+        ]
+      },
+      "headRegionBounds": {
+        "cutoff": 1.45621,
+        "min": [
+          0.020626,
+          -0.11503,
+          1.456972
+        ],
+        "max": [
+          0.035679,
+          -0.098397,
+          1.460296
+        ]
+      }
+    },
+    {
+      "name": "Eye_R_Cornea",
+      "vertices": 1986,
+      "edges": 4032,
+      "polygons": 2048,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Eye_Cornea"
+      ],
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "modifiers": [],
+      "location": [
+        -0.028153,
+        -0.090878,
+        0.088576
+      ],
+      "rotationEuler": [
+        -1.711121,
+        -0.0,
+        -0.0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "worldBounds": {
+        "min": [
+          -0.038897,
+          -0.120005,
+          1.437362
+        ],
+        "max": [
+          -0.017409,
+          -0.09449,
+          1.46053
+        ]
+      },
+      "headRegionBounds": {
+        "cutoff": 1.45636,
+        "min": [
+          -0.03575,
+          -0.11558,
+          1.457138
+        ],
+        "max": [
+          -0.020556,
+          -0.098006,
+          1.46053
+        ]
+      }
+    },
+    {
+      "name": "Eye_R_Iris",
+      "vertices": 97,
+      "edges": 192,
+      "polygons": 96,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Eye_Iris"
+      ],
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "modifiers": [],
+      "location": [
+        -0.028153,
+        -0.08893,
+        0.102366
+      ],
+      "rotationEuler": [
+        -1.711121,
+        -0.0,
+        -0.0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "worldBounds": {
+        "min": [
+          -0.032929,
+          -0.119445,
+          1.44383
+        ],
+        "max": [
+          -0.023377,
+          -0.117737,
+          1.454063
+        ]
+      },
+      "headRegionBounds": {
+        "cutoff": 1.452221,
+        "min": [
+          -0.031754,
+          -0.117775,
+          1.452317
+        ],
+        "max": [
+          -0.024552,
+          -0.117742,
+          1.454063
+        ]
+      }
+    },
+    {
+      "name": "Eye_R_Sclera",
+      "vertices": 1986,
+      "edges": 4032,
+      "polygons": 2048,
+      "shapeKeys": 0,
+      "vertexGroups": 0,
+      "materials": [
+        "Aevrynd_Eye_Sclera"
+      ],
+      "parent": "AevryndFemaleRig",
+      "parentType": "BONE",
+      "parentBone": "head",
+      "hiddenViewport": false,
+      "hiddenRender": false,
+      "modifiers": [],
+      "location": [
+        -0.028153,
+        -0.090844,
+        0.088817
+      ],
+      "rotationEuler": [
+        -1.711121,
+        -0.0,
+        -0.0
+      ],
+      "scale": [
+        1.08,
+        1.08,
+        1.08
+      ],
+      "worldBounds": {
+        "min": [
+          -0.038679,
+          -0.118474,
+          1.437597
+        ],
+        "max": [
+          -0.017626,
+          -0.094952,
+          1.460296
+        ]
+      },
+      "headRegionBounds": {
+        "cutoff": 1.45621,
+        "min": [
+          -0.035596,
+          -0.11503,
+          1.456972
+        ],
+        "max": [
+          -0.02071,
+          -0.098397,
+          1.460296
+        ]
+      }
+    }
+  ],
+  "armatures": [
+    {
+      "name": "AevryndFemaleRig",
+      "bones": 38,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotationEuler": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "worldBounds": {
+        "min": [
+          -0.420499,
+          -0.202583,
+          0.000308
+        ],
+        "max": [
+          0.420499,
+          0.078,
+          1.675
+        ]
+      }
+    }
+  ]
+}
