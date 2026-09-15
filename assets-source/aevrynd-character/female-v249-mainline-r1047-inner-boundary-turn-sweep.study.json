@@ -1,0 +1,120 @@
+{
+  "revision": "v249r1047-inner-boundary-turn-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-depth-cleanup-r1046-study.blend",
+  "isolationEvidence": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1047-boundary-face-isolation.inspect.json",
+  "method": "topology-weighted inward turn of only eight measured pale inner-lip faces; outer lower lip and side shell excluded",
+  "variants": [
+    {
+      "label": "source-r1046",
+      "depthM": 0.0,
+      "edit": {
+        "targetFaces": [
+          305,
+          320,
+          322,
+          328,
+          6881,
+          6896,
+          6898,
+          6904
+        ],
+        "movedVertices": 26,
+        "fullWeightVertices": 6,
+        "maximumDeltaMm": 0.3056829422780516,
+        "minimumWeight": 0.5
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1047-inner-boundary-turn-sweep\\source-r1046-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1047-inner-boundary-turn-sweep\\source-r1046-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1047-inner-boundary-turn-sweep\\source-r1046-smile.png"
+      ],
+      "status": "VISUAL_DIAGNOSTIC"
+    },
+    {
+      "label": "a-2p5mm",
+      "depthM": 0.0025,
+      "edit": {
+        "targetFaces": [
+          305,
+          320,
+          322,
+          328,
+          6881,
+          6896,
+          6898,
+          6904
+        ],
+        "movedVertices": 26,
+        "fullWeightVertices": 6,
+        "maximumDeltaMm": 2.5186190468809464,
+        "minimumWeight": 0.5
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1047-inner-boundary-turn-sweep\\a-2p5mm-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1047-inner-boundary-turn-sweep\\a-2p5mm-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1047-inner-boundary-turn-sweep\\a-2p5mm-smile.png"
+      ],
+      "status": "VISUAL_DIAGNOSTIC"
+    },
+    {
+      "label": "b-4mm",
+      "depthM": 0.004,
+      "edit": {
+        "targetFaces": [
+          305,
+          320,
+          322,
+          328,
+          6881,
+          6896,
+          6898,
+          6904
+        ],
+        "movedVertices": 26,
+        "fullWeightVertices": 6,
+        "maximumDeltaMm": 4.011663475391854,
+        "minimumWeight": 0.5
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1047-inner-boundary-turn-sweep\\b-4mm-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1047-inner-boundary-turn-sweep\\b-4mm-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1047-inner-boundary-turn-sweep\\b-4mm-smile.png"
+      ],
+      "status": "VISUAL_DIAGNOSTIC"
+    },
+    {
+      "label": "c-6mm",
+      "depthM": 0.006,
+      "edit": {
+        "targetFaces": [
+          305,
+          320,
+          322,
+          328,
+          6881,
+          6896,
+          6898,
+          6904
+        ],
+        "movedVertices": 26,
+        "fullWeightVertices": 6,
+        "maximumDeltaMm": 6.007781898051107,
+        "minimumWeight": 0.5
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1047-inner-boundary-turn-sweep\\c-6mm-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1047-inner-boundary-turn-sweep\\c-6mm-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1047-inner-boundary-turn-sweep\\c-6mm-smile.png"
+      ],
+      "status": "VISUAL_DIAGNOSTIC"
+    }
+  ],
+  "websitePromotionApproved": false,
+  "status": "VISUAL_REJECT_DELETE_AND_REBUILD_REQUIRED",
+  "strictMouthScore100": 29,
+  "retainedR1033Score100": 39,
+  "visualFinding": "The 2.5mm bound shortens the pale strips but reveals deeper pink fragments. The 4-6mm bounds create a central bump and new creases because the eight faces share vertices with incompatible folded surfaces.",
+  "collisionGate": "NOT_RUN_AFTER_DECISIVE_VISUAL_REJECT",
+  "candidateBlendSaved": false,
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1047-inner-boundary\\contact-sheet-r1047.jpg"
+}

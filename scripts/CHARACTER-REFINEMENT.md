@@ -1545,3 +1545,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - Correcting the wall's parent-space matrix hides the central inherited depth stack. Two pale front-boundary strips remain visible laterally, and neutral/open/smile retain a planar slit with weak separation. Strict mouth quality reaches 33/100, above r1044's 30 but below retained r1033's 39.
 - r1046 is saved only as a technical study; website v83 is unchanged. Skin material, review lights and exposure are unchanged, so the darker centre is the intended local oral cavity rather than global skin darkening.
 - r1047 must replace only the bilateral pale front-boundary strips with a welded upper/lower inner-lip patch, add closed commissure poles and jaw-coupled vertical separation, and preserve all 35 shape keys and deform weights before renewed collision and visual gates.
+
+### v249r1047 — exact boundary-face isolation and inward-turn rejection
+
+- A denser first-hit scan isolates 15 front-visible skin faces around the r1046 slit. Diagnostic colour groups separate four lower-lip front faces, ten mid-depth faces and one rear face. Filtering out two large low side-shell faces leaves exactly eight faces responsible for the bilateral pale strips.
+- A topology-weighted shape-key sweep moves only vertices used by those eight faces, with 2.5, 4 and 6 mm inward bounds. The surrounding lower-lip front faces remain untouched.
+- The 2.5 mm bound shortens the pale strips but exposes deeper pink fragments. The 4 and 6 mm bounds additionally create a central bump and new creases because the target faces share vertices with incompatible folded surfaces.
+- Strict visual quality is 29/100, below r1046's 33 and retained r1033's 39. The visual failure is decisive, so no candidate Blend is saved and full collision promotion is not run.
+- r1048 must delete the eight proven strip faces with only their incompatible interior neighbours, extract the new boundary loops and bridge them with a resampled welded upper/lower inner-lip patch. The four isolated lower-lip front faces must be preserved.
