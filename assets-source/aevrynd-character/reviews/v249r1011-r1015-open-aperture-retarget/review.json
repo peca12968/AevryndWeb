@@ -1,0 +1,12 @@
+{
+  "range": "r1011-r1015",
+  "r1011": "Extracts one 52-edge closed posterior eye-socket boundary per side. The eye-normalized map reaches 52 unique current vertices at 0.410 mm median and 0.746 mm maximum distance, but the loop is the rear opening, not the visible lid margin.",
+  "r1012": "Rejects the occluded rear-loop overlay as a visible-margin source.",
+  "r1013": "Transfers 41-point authored upper/lower r420 margin curves per eye; rejects raw placement because the upper guide crosses the iris and endpoints do not close.",
+  "r1014": "Selects b-balanced: exact endpoint closure, 7.834 mm central aperture, lateral canthus above medial. It is the topology target.",
+  "r1015": "Cuts 39 left and 38 right front faces only. Vertex count stays 19,158, all 30 shape-key blocks remain index-compatible, and frame-1 body/sclera/cornea/iris/upper/lower-lash triangle overlap remains zero. Visual fail: faceted boundary, exposed white globe edge and dark canthus holes without an inward lid wall.",
+  "brightnessContract": "No material, light, view-transform, exposure or website asset change. Geometry studies do not cause progressive darkening.",
+  "nextRequiredWork": "Extrude a continuous inward eyelid wall from the r1015 open boundary, preserve/copy all shape-key and vertex-group data, fit the inner rim outside the sclera/cornea envelope, rebuild lashes, then audit frames 1/20/33/61 and body self-collision.",
+  "websitePromotionApproved": false,
+  "status": "OPEN_APERTURE_TECHNICAL_PROOF_PASS_INNER_RIM_REQUIRED"
+}

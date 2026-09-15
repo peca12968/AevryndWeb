@@ -1,0 +1,112 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-mixed-space-eyelid-relief-r1001.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-balanced-open-aperture-r1015-study.blend",
+  "guide": "r1014 b-balanced",
+  "deletedFaces": 77,
+  "deletedFacesBySide": {
+    "L": 39,
+    "R": 38
+  },
+  "before": {
+    "vertices": 19158,
+    "polygons": 18486,
+    "shapeKeys": [
+      "Basis",
+      "$md-$as-$fe-$ch",
+      "$md-$as-$fe-$yn",
+      "$md-$as-$ma-$yn",
+      "$md-$ca-$fe-$ch",
+      "$md-$ca-$fe-$yn",
+      "$md-$ca-$ma-$yn",
+      "$md-$af-$fe-$ch",
+      "$md-$af-$fe-$yn",
+      "$md-$af-$ma-$yn",
+      "$md-universal-$fe-$ch-min$mu-$av$wg",
+      "$md-universal-$fe-$ch-$av$mu-$av$wg",
+      "$md-universal-$fe-$yn-min$mu-$av$wg",
+      "$md-universal-$fe-$yn-$av$mu-min$wg",
+      "$md-universal-$fe-$yn-$av$mu-$av$wg",
+      "$md-universal-$ma-$yn-$av$mu-$av$wg",
+      "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+      "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
+      "ElbowCreaseVolume70.L",
+      "ElbowCreaseVolume70.R",
+      "KneeEdgeConstraint75.L",
+      "KneeEdgeConstraint75.R",
+      "KneeCreaseVolume75.L",
+      "KneeCreaseVolume75.R",
+      "Aevrynd_MixedSpaceEyelidRelief_R1000"
+    ]
+  },
+  "after": {
+    "vertices": 19158,
+    "polygons": 18409,
+    "shapeKeys": [
+      "Basis",
+      "$md-$as-$fe-$ch",
+      "$md-$as-$fe-$yn",
+      "$md-$as-$ma-$yn",
+      "$md-$ca-$fe-$ch",
+      "$md-$ca-$fe-$yn",
+      "$md-$ca-$ma-$yn",
+      "$md-$af-$fe-$ch",
+      "$md-$af-$fe-$yn",
+      "$md-$af-$ma-$yn",
+      "$md-universal-$fe-$ch-min$mu-$av$wg",
+      "$md-universal-$fe-$ch-$av$mu-$av$wg",
+      "$md-universal-$fe-$yn-min$mu-$av$wg",
+      "$md-universal-$fe-$yn-$av$mu-min$wg",
+      "$md-universal-$fe-$yn-$av$mu-$av$wg",
+      "$md-universal-$ma-$yn-$av$mu-$av$wg",
+      "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+      "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
+      "ElbowCreaseVolume70.L",
+      "ElbowCreaseVolume70.R",
+      "KneeEdgeConstraint75.L",
+      "KneeEdgeConstraint75.R",
+      "KneeCreaseVolume75.L",
+      "KneeCreaseVolume75.R",
+      "Aevrynd_MixedSpaceEyelidRelief_R1000"
+    ]
+  },
+  "gates": {
+    "vertexAndShapeKeyIndexCompatibility": true,
+    "frame1BodyEyeLashCollision": true
+  },
+  "frame1BodyTriangleOverlaps": {
+    "L": {
+      "Sclera": 0,
+      "Cornea": 0,
+      "Iris": 0,
+      "UpperLashes": 0,
+      "LowerLashes": 0
+    },
+    "R": {
+      "Sclera": 0,
+      "Cornea": 0,
+      "Iris": 0,
+      "UpperLashes": 0,
+      "LowerLashes": 0
+    }
+  },
+  "rendered": [
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1015-balanced-open-aperture\\front.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1015-balanced-open-aperture\\three-quarter-left.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1015-balanced-open-aperture\\three-quarter-right.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1015-balanced-open-aperture\\profile-left.png"
+  ],
+  "status": "VISUAL_REVIEW_REQUIRED",
+  "websitePromotionApproved": false,
+  "decision": "TECHNICAL_PASS_VISUAL_FAIL_NO_INNER_RIM",
+  "visualFinding": "Deleting 77 front faces proves a real aperture can be cut while preserving all 19,158 vertices and 30 shape keys with zero frame-1 eye/lash overlap. The unbridged boundary is faceted and exposes white globe edges and dark canthus holes, so it is not a visual candidate."
+}

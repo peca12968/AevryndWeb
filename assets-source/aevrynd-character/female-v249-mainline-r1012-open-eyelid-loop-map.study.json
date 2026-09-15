@@ -1,0 +1,36 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-mixed-space-eyelid-relief-r1001.blend",
+  "mapping": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1011-open-eyelid-loop-transfer.json",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-open-eyelid-loop-map-r1012-study.blend",
+  "layers": [
+    "Diagnostic_OpenEyelidLoop_L_R1012",
+    "Diagnostic_OpenEyelidLoop_R_R1012"
+  ],
+  "loopVerticesPerEye": {
+    "L": 52,
+    "R": 52
+  },
+  "mappingDistanceM": {
+    "L": {
+      "minimum": 0.00013682245883617593,
+      "median": 0.00040971352699833714,
+      "p95": 0.0006553211140398844,
+      "maximum": 0.0007455284451726507
+    },
+    "R": {
+      "minimum": 0.0001307240637175867,
+      "median": 0.000409756421248716,
+      "p95": 0.0005886247724364781,
+      "maximum": 0.0006517331690247471
+    }
+  },
+  "rendered": [
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1012-open-eyelid-loop-map\\front.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1012-open-eyelid-loop-map\\three-quarter-left.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1012-open-eyelid-loop-map\\three-quarter-right.png"
+  ],
+  "status": "VISUAL_ALIGNMENT_REVIEW_REQUIRED",
+  "websitePromotionApproved": false,
+  "decision": "REJECTED_REAR_SOCKET_BOUNDARY_OCCLUDED",
+  "visualFinding": "The mapped r446 naked boundary remains behind the current face and eye stack even after a diagnostic camera-side offset; it is a rear opening, not the visible eyelid edge."
+}
