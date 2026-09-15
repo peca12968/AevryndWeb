@@ -1,0 +1,45 @@
+{
+  "source": "source-r1028-front.png",
+  "candidate": "b-balanced-front.png",
+  "fixedRegionsPixels": {
+    "forehead": [
+      410,
+      120,
+      590,
+      280
+    ],
+    "leftCheek": [
+      270,
+      470,
+      420,
+      640
+    ],
+    "rightCheek": [
+      580,
+      470,
+      730,
+      640
+    ]
+  },
+  "regionalMeanLuminance": {
+    "forehead": {
+      "source": 187.18134259259259,
+      "candidate": 187.18134259259259,
+      "driftPercent": 0.0
+    },
+    "leftCheek": {
+      "source": 143.9227843137255,
+      "candidate": 143.16867973856208,
+      "driftPercent": -0.5239646931229469
+    },
+    "rightCheek": {
+      "source": 165.1857385620915,
+      "candidate": 164.55347712418302,
+      "driftPercent": -0.3827578841927859
+    }
+  },
+  "materialGraphsAndValuesIdentical": true,
+  "interpretation": "Small negative image drift comes from changed facial planes and shadows, not darker skin material.",
+  "thresholdPercent": 1.0,
+  "status": "PASS"
+}

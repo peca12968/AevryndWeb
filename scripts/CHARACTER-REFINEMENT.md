@@ -1435,3 +1435,12 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - The selected mesh adds 2,751 lash vertices and 2,358 polygons across four existing objects. The compressed Blend grows from 4,486,583 to 4,496,879 bytes, a 10,296-byte increase, while draw-call structure stays constant.
 - r1028b visibly improves the eye frame and raises strict lash quality from 56 to 61/100. The complete face remains 48/100 because the generic craniofacial landmarks now dominate. Further eyelash density work is closed; the next pass moves to whole-face identity sculpting.
 - Fixed-review r1027b-to-r1028b regional drift stays below 0.000083%, so there is no progressive darkening. Website v83 remains unchanged.
+
+### v249r1029 — measured whole-face identity field
+
+- The first trial exposed an invalid reuse of r569 landmark heights: the current CC0 eye and brow sit near world Z 1.45/1.48 rather than the older branch's 1.60 range. Every result from that coordinate field was discarded. Fresh evaluated-mesh slices then located the actual forehead, eye, nasal tip, mouth, jaw and chin bands before rebuilding the sculpt.
+- The corrected field changes the forehead taper, temple plane, malar high point, lower-cheek transition, nasal bridge/tip/ala, jaw taper, chin, mental sulcus and a restrained left/right asymmetry. It applies one identical local delta to every body shape key, preserving the complete 31-key relative stack.
+- Strength 0.55 and 0.65 pass body-to-brow, sclera, cornea, caruncle and upper/lower-lash collision at frames 1/20/33/61. Strength 0.75 creates bilateral lower-lash intersections and is rejected. The selected 0.65 bound moves 3,614 base vertices by at most 1.568 mm.
+- A separate evaluated-triangle BVH test reports zero non-adjacent body self-collision pairs at all four frames. Body topology remains 19,398 vertices and 18,626 polygons; shape-key names, material slots, material graphs and node values are identical to r1028.
+- Fixed-render drift is 0.000% on the forehead, -0.524% on the left cheek and -0.383% on the right cheek. The small cheek change comes from the new facial planes and shadows rather than a darker material, and remains inside the plus-or-minus 1% tone gate.
+- r1029b improves adult silhouette and broad plane separation enough to move strict full-face quality from 48 to 50/100. The protruding shelf-like mouth, smooth long cranium, weak perioral transitions and flat skin still fail hero quality. Website v83 remains unchanged; the next pass must rebuild the continuous lip and mouth-corner topology with expression checks.
