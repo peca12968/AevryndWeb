@@ -1,0 +1,44 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-orbital-brow-refit-r526.blend",
+  "method": "bounded X/Z Laplacian fairing on the outer-canthus neighborhood; depth is fixed, edge influence fades smoothly and total movement is clamped to 1.35mm",
+  "perEyeSelectedVertices": {
+    "L": 465,
+    "R": 462
+  },
+  "shapeKeysMovedTogether": [
+    "Basis",
+    "Aevrynd_Philtrum_Topology_R80",
+    "Aevrynd_EyeAperture_Topology_R83",
+    "Aevrynd_EvaluatedAnatomicalLids_R183",
+    "Aevrynd_MouthPlacement_R198_5mm",
+    "Aevrynd_ConvergedUpperLid_R210"
+  ],
+  "variants": {
+    "a-r526-control": {
+      "iterations": 0,
+      "selectedVertices": 927,
+      "movedVertices": 0,
+      "maximumMoveMm": 0.0
+    },
+    "b-one-iteration": {
+      "iterations": 1,
+      "selectedVertices": 927,
+      "movedVertices": 912,
+      "maximumMoveMm": 0.5538572403453527
+    },
+    "c-three-iterations": {
+      "iterations": 3,
+      "selectedVertices": 927,
+      "movedVertices": 922,
+      "maximumMoveMm": 1.11412000573821
+    },
+    "d-five-iterations": {
+      "iterations": 5,
+      "selectedVertices": 927,
+      "movedVertices": 924,
+      "maximumMoveMm": 1.3500132620108454
+    }
+  },
+  "topologyChanged": false,
+  "status": "VISUAL_CANTHUS_FAIRING_SWEEP_ONLY"
+}

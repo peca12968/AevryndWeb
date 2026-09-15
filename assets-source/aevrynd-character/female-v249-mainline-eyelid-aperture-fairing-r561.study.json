@@ -1,0 +1,40 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-orbital-brow-refit-r526.blend",
+  "boundaryVerticesPerEye": {
+    "L": 52,
+    "R": 52
+  },
+  "method": "fair the existing 52-point eye apertures toward a tilted almond curve and diffuse the displacement through a 3.1mm Gaussian neighborhood; move only the continuous body and leave all optical layers unchanged",
+  "shapeKeysMovedTogether": [
+    "Basis",
+    "Aevrynd_Philtrum_Topology_R80",
+    "Aevrynd_EyeAperture_Topology_R83",
+    "Aevrynd_EvaluatedAnatomicalLids_R183",
+    "Aevrynd_MouthPlacement_R198_5mm",
+    "Aevrynd_ConvergedUpperLid_R210"
+  ],
+  "variants": {
+    "a-r526-control": {
+      "blendStrength": 0.0,
+      "affectedVertices": 326,
+      "maximumMoveMm": 0.0
+    },
+    "b-fair-0p25": {
+      "blendStrength": 0.25,
+      "affectedVertices": 326,
+      "maximumMoveMm": 1.1241920163437318
+    },
+    "c-fair-0p50": {
+      "blendStrength": 0.5,
+      "affectedVertices": 326,
+      "maximumMoveMm": 2.2483840326874636
+    },
+    "d-fair-0p75": {
+      "blendStrength": 0.75,
+      "affectedVertices": 326,
+      "maximumMoveMm": 3.372576049031195
+    }
+  },
+  "topologyChanged": false,
+  "status": "VISUAL_EYELID_SWEEP_ONLY"
+}

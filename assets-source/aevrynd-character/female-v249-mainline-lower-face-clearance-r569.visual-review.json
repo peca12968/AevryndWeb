@@ -1,0 +1,32 @@
+{
+  "candidate": "aevrynd-female-authoring-v249-mainline-lower-face-clearance-r569.blend",
+  "baseline": "aevrynd-female-authoring-v249-mainline-orbital-brow-refit-r526.blend",
+  "review": "reviews/v249r569-lower-face-clearance-11shot/comparison-r526-r569.jpg",
+  "elevenShot": "reviews/v249r569-lower-face-clearance-11shot/contact-sheet-11shot.jpg",
+  "faceCollisionAudit": "female-v249-mainline-lower-face-clearance-r569.audit.json",
+  "runtimeHairAudit": "female-v249-mainline-lower-face-clearance-r569.runtime-card-audit.json",
+  "toneAudit": "female-v249-mainline-lower-face-clearance-r569.tone-contract-audit.json",
+  "scores": {
+    "hair": 47,
+    "eyes": 70,
+    "face": 60,
+    "skin": 57,
+    "mouth": 55,
+    "bodyClothing": 49,
+    "overall": 58
+  },
+  "strengths": [
+    "modestly cleaner jaw, malar and lower-third proportion",
+    "zero face-layer overlap at frames 1, 20, 33 and 61",
+    "zero runtime hair/body/clothing penetration at frames 1, 20, 33 and 61",
+    "fixed skin luminance remains inside the one-percent contract"
+  ],
+  "heroGateFailures": [
+    "outer canthus remains a triangular open-boundary topology artifact",
+    "eyelid thickness and orbital fat remain synthetic",
+    "skin lacks regional microdetail",
+    "runtime hair remains a planar curtain with a symmetric part"
+  ],
+  "status": "OFFLINE_TECHNICAL_PASS_VISUAL_HERO_FAIL",
+  "website": "v83 unchanged"
+}
