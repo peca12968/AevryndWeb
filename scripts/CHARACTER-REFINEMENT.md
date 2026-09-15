@@ -1528,3 +1528,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - A 14.5 mm near vestibule wall fails dynamic contact, while a 13 mm bound passes but cannot hide the lateral folded faces. This closes the masking route under the no-penetration contract.
 - Fixed-crop drift from r1033 is below 0.000709%, proving no global darkening. Website v83 remains unchanged and stays 5.56% darker in embedded skin base color.
 - r1033 remains the retained mouth and face candidate. The next build must create a clean contiguous oral vestibule source with explicit upper/lower inner-lip paths and transfer the retained r1033 outer surface onto it. Excavating or recoloring the inherited folded head is closed.
+
+### v249r1045 — historical source scan and detached lip-donor rejection
+
+- r1045 inspects the traceable CC0 r249 foundation, r446 open-eye line, r602 fitted-eye foundation and retained r1033. None contains a complete reusable open mouth boundary; r602 and r1033 expose only a fragmented 10-edge plus two 2-edge local boundary signature.
+- r446 does contain explicit 455-vertex upper and lower lip shells plus a 130-vertex wetline. A seven-bound alignment sweep tests vertical fit, width, height, depth and 4–8 mm forward offsets against the retained r1033 face.
+- The isolated donor proves why it cannot be transplanted directly: it is a symmetric detached shell with inflated uniform thickness, a straight wetline and pointed commissures. At fitted depth it intersects or disappears behind the retained face; moved forward it floats as an obvious mask.
+- Strict mouth quality is 16/100, below retained r1033 at 39/100. No Blend candidate or website asset is promoted. The historical detached-shell route is closed.
+- The next route is an Aevrynd-native welded upper/lower vestibule patch derived from r1033 landmarks, with even orbicularis flow, explicit commissure poles, all 35 shape keys, transferred deform weights and a dedicated jaw control before collision and visual review.
