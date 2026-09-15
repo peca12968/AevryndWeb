@@ -1,0 +1,582 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-lash-path-hierarchy-r1027-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-interpolated-lash-density-r1028-study.blend",
+  "method": "interpolate complete seven-ring triangular fibres between adjacent root-fixed r1027 paths and append them to the existing four lash meshes",
+  "variants": [
+    {
+      "label": "a-half-gaps",
+      "gapMode": "half",
+      "fractions": [
+        0.5
+      ],
+      "edits": {
+        "Eye_L_UpperLashes": {
+          "originalStrands": 46,
+          "candidateStrands": 23,
+          "addedStrands": 23,
+          "rejectedStaticCollisionStrands": [],
+          "finalStrands": 69,
+          "beforeVertices": 966,
+          "afterVertices": 1449,
+          "beforePolygons": 828,
+          "afterPolygons": 1242,
+          "newVertices": 483,
+          "newPolygons": 414
+        },
+        "Eye_L_LowerLashes": {
+          "originalStrands": 22,
+          "candidateStrands": 11,
+          "addedStrands": 11,
+          "rejectedStaticCollisionStrands": [],
+          "finalStrands": 33,
+          "beforeVertices": 462,
+          "afterVertices": 693,
+          "beforePolygons": 396,
+          "afterPolygons": 594,
+          "newVertices": 231,
+          "newPolygons": 198
+        },
+        "Eye_R_UpperLashes": {
+          "originalStrands": 46,
+          "candidateStrands": 23,
+          "addedStrands": 23,
+          "rejectedStaticCollisionStrands": [],
+          "finalStrands": 69,
+          "beforeVertices": 966,
+          "afterVertices": 1449,
+          "beforePolygons": 828,
+          "afterPolygons": 1242,
+          "newVertices": 483,
+          "newPolygons": 414
+        },
+        "Eye_R_LowerLashes": {
+          "originalStrands": 22,
+          "candidateStrands": 11,
+          "addedStrands": 10,
+          "rejectedStaticCollisionStrands": [
+            {
+              "gap": 20,
+              "fraction": 0.5,
+              "triangleOverlaps": {
+                "body": 5,
+                "sclera": 0,
+                "cornea": 0
+              }
+            }
+          ],
+          "finalStrands": 32,
+          "beforeVertices": 462,
+          "afterVertices": 672,
+          "beforePolygons": 396,
+          "afterPolygons": 576,
+          "newVertices": 210,
+          "newPolygons": 180
+        }
+      },
+      "selfCollision": {
+        "Eye_L_UpperLashes": {
+          "newVsOriginal": [],
+          "newVsNew": [],
+          "status": "PASS"
+        },
+        "Eye_L_LowerLashes": {
+          "newVsOriginal": [],
+          "newVsNew": [],
+          "status": "PASS"
+        },
+        "Eye_R_UpperLashes": {
+          "newVsOriginal": [],
+          "newVsNew": [],
+          "status": "PASS"
+        },
+        "Eye_R_LowerLashes": {
+          "newVsOriginal": [],
+          "newVsNew": [],
+          "status": "PASS"
+        }
+      },
+      "fourFrameCollision": {
+        "1": {
+          "L": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          },
+          "R": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          }
+        },
+        "20": {
+          "L": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          },
+          "R": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          }
+        },
+        "33": {
+          "L": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          },
+          "R": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          }
+        },
+        "61": {
+          "L": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          },
+          "R": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "lashObjectMaterialPairsBefore": 4,
+      "lashObjectMaterialPairsAfter": 4,
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1028-interpolated-lash-density-sweep\\a-half-gaps-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1028-interpolated-lash-density-sweep\\a-half-gaps-three-quarter-left.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1028-interpolated-lash-density-sweep\\a-half-gaps-three-quarter-right.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "b-every-gap",
+      "gapMode": "all",
+      "fractions": [
+        0.5
+      ],
+      "edits": {
+        "Eye_L_UpperLashes": {
+          "originalStrands": 46,
+          "candidateStrands": 45,
+          "addedStrands": 45,
+          "rejectedStaticCollisionStrands": [],
+          "finalStrands": 91,
+          "beforeVertices": 966,
+          "afterVertices": 1911,
+          "beforePolygons": 828,
+          "afterPolygons": 1638,
+          "newVertices": 945,
+          "newPolygons": 810
+        },
+        "Eye_L_LowerLashes": {
+          "originalStrands": 22,
+          "candidateStrands": 21,
+          "addedStrands": 21,
+          "rejectedStaticCollisionStrands": [],
+          "finalStrands": 43,
+          "beforeVertices": 462,
+          "afterVertices": 903,
+          "beforePolygons": 396,
+          "afterPolygons": 774,
+          "newVertices": 441,
+          "newPolygons": 378
+        },
+        "Eye_R_UpperLashes": {
+          "originalStrands": 46,
+          "candidateStrands": 45,
+          "addedStrands": 45,
+          "rejectedStaticCollisionStrands": [],
+          "finalStrands": 91,
+          "beforeVertices": 966,
+          "afterVertices": 1911,
+          "beforePolygons": 828,
+          "afterPolygons": 1638,
+          "newVertices": 945,
+          "newPolygons": 810
+        },
+        "Eye_R_LowerLashes": {
+          "originalStrands": 22,
+          "candidateStrands": 21,
+          "addedStrands": 20,
+          "rejectedStaticCollisionStrands": [
+            {
+              "gap": 20,
+              "fraction": 0.5,
+              "triangleOverlaps": {
+                "body": 5,
+                "sclera": 0,
+                "cornea": 0
+              }
+            }
+          ],
+          "finalStrands": 42,
+          "beforeVertices": 462,
+          "afterVertices": 882,
+          "beforePolygons": 396,
+          "afterPolygons": 756,
+          "newVertices": 420,
+          "newPolygons": 360
+        }
+      },
+      "selfCollision": {
+        "Eye_L_UpperLashes": {
+          "newVsOriginal": [],
+          "newVsNew": [],
+          "status": "PASS"
+        },
+        "Eye_L_LowerLashes": {
+          "newVsOriginal": [],
+          "newVsNew": [],
+          "status": "PASS"
+        },
+        "Eye_R_UpperLashes": {
+          "newVsOriginal": [],
+          "newVsNew": [],
+          "status": "PASS"
+        },
+        "Eye_R_LowerLashes": {
+          "newVsOriginal": [],
+          "newVsNew": [],
+          "status": "PASS"
+        }
+      },
+      "fourFrameCollision": {
+        "1": {
+          "L": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          },
+          "R": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          }
+        },
+        "20": {
+          "L": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          },
+          "R": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          }
+        },
+        "33": {
+          "L": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          },
+          "R": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          }
+        },
+        "61": {
+          "L": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          },
+          "R": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "lashObjectMaterialPairsBefore": 4,
+      "lashObjectMaterialPairsAfter": 4,
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1028-interpolated-lash-density-sweep\\b-every-gap-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1028-interpolated-lash-density-sweep\\b-every-gap-three-quarter-left.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1028-interpolated-lash-density-sweep\\b-every-gap-three-quarter-right.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "c-double-fill",
+      "gapMode": "all",
+      "fractions": [
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "edits": {
+        "Eye_L_UpperLashes": {
+          "originalStrands": 46,
+          "candidateStrands": 90,
+          "addedStrands": 90,
+          "rejectedStaticCollisionStrands": [],
+          "finalStrands": 136,
+          "beforeVertices": 966,
+          "afterVertices": 2856,
+          "beforePolygons": 828,
+          "afterPolygons": 2448,
+          "newVertices": 1890,
+          "newPolygons": 1620
+        },
+        "Eye_L_LowerLashes": {
+          "originalStrands": 22,
+          "candidateStrands": 42,
+          "addedStrands": 42,
+          "rejectedStaticCollisionStrands": [],
+          "finalStrands": 64,
+          "beforeVertices": 462,
+          "afterVertices": 1344,
+          "beforePolygons": 396,
+          "afterPolygons": 1152,
+          "newVertices": 882,
+          "newPolygons": 756
+        },
+        "Eye_R_UpperLashes": {
+          "originalStrands": 46,
+          "candidateStrands": 90,
+          "addedStrands": 90,
+          "rejectedStaticCollisionStrands": [],
+          "finalStrands": 136,
+          "beforeVertices": 966,
+          "afterVertices": 2856,
+          "beforePolygons": 828,
+          "afterPolygons": 2448,
+          "newVertices": 1890,
+          "newPolygons": 1620
+        },
+        "Eye_R_LowerLashes": {
+          "originalStrands": 22,
+          "candidateStrands": 42,
+          "addedStrands": 41,
+          "rejectedStaticCollisionStrands": [
+            {
+              "gap": 20,
+              "fraction": 0.6666666666666666,
+              "triangleOverlaps": {
+                "body": 5,
+                "sclera": 0,
+                "cornea": 0
+              }
+            }
+          ],
+          "finalStrands": 63,
+          "beforeVertices": 462,
+          "afterVertices": 1323,
+          "beforePolygons": 396,
+          "afterPolygons": 1134,
+          "newVertices": 861,
+          "newPolygons": 738
+        }
+      },
+      "selfCollision": {
+        "Eye_L_UpperLashes": {
+          "newVsOriginal": [
+            {
+              "fillStrand": 64,
+              "triangleOverlapCount": 6
+            }
+          ],
+          "newVsNew": [],
+          "status": "FAIL"
+        },
+        "Eye_L_LowerLashes": {
+          "newVsOriginal": [],
+          "newVsNew": [],
+          "status": "PASS"
+        },
+        "Eye_R_UpperLashes": {
+          "newVsOriginal": [],
+          "newVsNew": [],
+          "status": "PASS"
+        },
+        "Eye_R_LowerLashes": {
+          "newVsOriginal": [],
+          "newVsNew": [],
+          "status": "PASS"
+        }
+      },
+      "fourFrameCollision": {
+        "1": {
+          "L": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          },
+          "R": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          }
+        },
+        "20": {
+          "L": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          },
+          "R": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          }
+        },
+        "33": {
+          "L": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          },
+          "R": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          }
+        },
+        "61": {
+          "L": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          },
+          "R": {
+            "upperBody": 0,
+            "lowerBody": 0,
+            "upperSclera": 0,
+            "lowerSclera": 0,
+            "upperCornea": 0,
+            "lowerCornea": 0,
+            "upperLower": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "lashObjectMaterialPairsBefore": 4,
+      "lashObjectMaterialPairsAfter": 4,
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1028-interpolated-lash-density-sweep\\c-double-fill-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1028-interpolated-lash-density-sweep\\c-double-fill-three-quarter-left.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1028-interpolated-lash-density-sweep\\c-double-fill-three-quarter-right.png"
+      ],
+      "status": "TECHNICAL_FAIL"
+    }
+  ],
+  "selectedVariant": "b-every-gap",
+  "status": "R1028B_DENSITY_SELF_COLLISION_FOUR_FRAME_PASS",
+  "websitePromotionApproved": false,
+  "visualDecision": "After per-strand static pruning, the selected bound has 91 upper lashes per eye and 43 left/42 right lower lashes. New-vs-original and new-vs-new overlap are zero, four-frame body/sclera/cornea/upper-lower overlap is zero, and object-material pairs remain four. The double-fill bound self-intersects and looks too heavy. Strict lash score rises to 61/100; face remains 48/100.",
+  "performance": {
+    "sourceBlendBytes": 4486583,
+    "selectedBlendBytes": 4496879,
+    "blendByteDelta": 10296,
+    "sourceLashVertices": 2856,
+    "selectedLashVertices": 5607,
+    "lashVertexDelta": 2751,
+    "sourceLashPolygons": 2448,
+    "selectedLashPolygons": 4806,
+    "lashPolygonDelta": 2358,
+    "lashObjectMaterialPairsBefore": 4,
+    "lashObjectMaterialPairsAfter": 4
+  }
+}

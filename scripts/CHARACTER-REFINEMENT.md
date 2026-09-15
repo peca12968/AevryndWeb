@@ -1426,3 +1426,12 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - Restrained, human-fan and bold path bounds all retain exactly zero root movement and zero body, sclera, cornea or upper/lower mutual overlap across four frames. The human-fan bound is retained; the restrained change is visually negligible and the 1.44 mm bold-tip displacement is excessive.
 - Lash hierarchy improves, but density remains only 46 upper and 22 lower fibres per eye. Strict lash quality reaches 56/100 while the full face remains 48/100. The next pass must interpolate collision-safe fill fibres to about 90 upper and 43 lower per eye and keep the same two lash draw calls.
 - Fixed-review drift from r1026b to r1027b is +0.000009% forehead, -0.000614% left cheek and -0.005566% right cheek. No material, exposure or website asset changed.
+
+### v249r1028 — interpolated human-range lash density
+
+- r1028 interpolates complete seven-ring triangular fibres between adjacent r1027 paths and appends them directly to the existing upper/lower lash meshes. No object or material is added, so the four lash object-material pairs remain unchanged.
+- The initial sweep reveals one right-lower interpolated strand with five body triangle overlaps at every validation frame. Per-strand BVH pruning removes only that unsafe path before mesh assembly. The repaired half-gap and every-gap bounds then pass frames 1/20/33/61 with zero body, sclera, cornea or upper/lower mutual overlap.
+- A separate strand-level audit reports zero new-vs-original and zero new-vs-new intersection for the selected every-gap bound. It reaches 91 upper fibres per eye and 43 left/42 right lower fibres. The double-fill 136/64 bound intersects an existing left upper fibre and is visually too heavy, so it is rejected.
+- The selected mesh adds 2,751 lash vertices and 2,358 polygons across four existing objects. The compressed Blend grows from 4,486,583 to 4,496,879 bytes, a 10,296-byte increase, while draw-call structure stays constant.
+- r1028b visibly improves the eye frame and raises strict lash quality from 56 to 61/100. The complete face remains 48/100 because the generic craniofacial landmarks now dominate. Further eyelash density work is closed; the next pass moves to whole-face identity sculpting.
+- Fixed-review r1027b-to-r1028b regional drift stays below 0.000083%, so there is no progressive darkening. Website v83 remains unchanged.
