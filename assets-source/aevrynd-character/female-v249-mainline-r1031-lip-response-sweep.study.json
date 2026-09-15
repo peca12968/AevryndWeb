@@ -1,0 +1,119 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-continuous-perioral-r1030-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-soft-warm-lip-response-r1031-study.blend",
+  "method": "scale the existing named lips attribute before color mixing and drive lip-only roughness without adding a material slot or object",
+  "variants": [
+    {
+      "label": "source-r1030",
+      "edit": {
+        "material": "Aevrynd_CC0_OwnedSkin_R602_Neutral",
+        "lipMaskStrength": 1.0,
+        "targetLinearRgba": [
+          0.25,
+          0.05,
+          0.045,
+          1.0
+        ],
+        "skinRoughness": 0.5,
+        "lipRoughness": 0.5,
+        "addedShaderNodes": 0,
+        "materialSlots": 2
+      },
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1031-lip-response-sweep\\source-r1030-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1031-lip-response-sweep\\source-r1030-mouth-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1031-lip-response-sweep\\source-r1030-mouth-oblique.png"
+      ],
+      "bodyVertices": 19398,
+      "bodyPolygons": 18626,
+      "shapeKeys": 34,
+      "status": "VISUAL_REVIEW_REQUIRED"
+    },
+    {
+      "label": "a-soft-warm",
+      "edit": {
+        "material": "Aevrynd_CC0_OwnedSkin_R1031_a-soft-warm",
+        "lipMaskStrength": 0.78,
+        "targetLinearRgba": [
+          0.245,
+          0.075,
+          0.065,
+          1.0
+        ],
+        "skinRoughness": 0.5,
+        "lipRoughness": 0.64,
+        "addedShaderNodes": 3,
+        "materialSlots": 2
+      },
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1031-lip-response-sweep\\a-soft-warm-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1031-lip-response-sweep\\a-soft-warm-mouth-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1031-lip-response-sweep\\a-soft-warm-mouth-oblique.png"
+      ],
+      "bodyVertices": 19398,
+      "bodyPolygons": 18626,
+      "shapeKeys": 34,
+      "status": "VISUAL_REVIEW_REQUIRED"
+    },
+    {
+      "label": "b-muted-rose",
+      "edit": {
+        "material": "Aevrynd_CC0_OwnedSkin_R1031_b-muted-rose",
+        "lipMaskStrength": 0.66,
+        "targetLinearRgba": [
+          0.245,
+          0.095,
+          0.082,
+          1.0
+        ],
+        "skinRoughness": 0.5,
+        "lipRoughness": 0.62,
+        "addedShaderNodes": 3,
+        "materialSlots": 2
+      },
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1031-lip-response-sweep\\b-muted-rose-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1031-lip-response-sweep\\b-muted-rose-mouth-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1031-lip-response-sweep\\b-muted-rose-mouth-oblique.png"
+      ],
+      "bodyVertices": 19398,
+      "bodyPolygons": 18626,
+      "shapeKeys": 34,
+      "status": "VISUAL_REVIEW_REQUIRED"
+    },
+    {
+      "label": "c-light-neutral",
+      "edit": {
+        "material": "Aevrynd_CC0_OwnedSkin_R1031_c-light-neutral",
+        "lipMaskStrength": 0.55,
+        "targetLinearRgba": [
+          0.26,
+          0.11,
+          0.095,
+          1.0
+        ],
+        "skinRoughness": 0.5,
+        "lipRoughness": 0.65,
+        "addedShaderNodes": 3,
+        "materialSlots": 2
+      },
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1031-lip-response-sweep\\c-light-neutral-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1031-lip-response-sweep\\c-light-neutral-mouth-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1031-lip-response-sweep\\c-light-neutral-mouth-oblique.png"
+      ],
+      "bodyVertices": 19398,
+      "bodyPolygons": 18626,
+      "shapeKeys": 34,
+      "status": "VISUAL_REVIEW_REQUIRED"
+    }
+  ],
+  "provisionalSelection": "a-soft-warm",
+  "selectedVariant": "a-soft-warm",
+  "geometryChanged": false,
+  "materialSlotDelta": 0,
+  "websitePromotionApproved": false,
+  "status": "TECHNICAL_PASS_VISUAL_PARTIAL",
+  "visualAssessment": "The selected lip-only response removes the saturated pink read. Muted-rose and light-neutral variants are rejected as grey or washed out.",
+  "strictMouthScore": 38
+}

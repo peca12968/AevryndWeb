@@ -1,0 +1,95 @@
+{
+  "baseline": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1030-continuous-perioral-sweep\\source-r1029-face-front.png",
+  "sameSessionSource": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1033-lower-lip-rim-turn-sweep\\source-r1032-face-front.png",
+  "candidate": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1033-lower-lip-rim-turn-sweep\\b-safe-turn-face-front.png",
+  "renderContract": "same 1000x1000 front camera, fixed scene exposure and lights",
+  "regions": {
+    "forehead": {
+      "boxPx": [
+        390,
+        120,
+        610,
+        260
+      ],
+      "linearizedDisplayLuminanceProxy": {
+        "r1029Baseline": 0.7286580784568373,
+        "r1033SameSessionSource": 0.7286581688566336,
+        "r1033SelectedSafe065": 0.7286580507257449
+      },
+      "r1033SelectedVsR1029Percent": -3.805775750098661e-06,
+      "r1033SelectedVsSameSessionSourcePercent": -1.621211341840123e-05
+    },
+    "leftUpperCheek": {
+      "boxPx": [
+        270,
+        430,
+        390,
+        540
+      ],
+      "linearizedDisplayLuminanceProxy": {
+        "r1029Baseline": 0.6270829960190137,
+        "r1033SameSessionSource": 0.6336080216874628,
+        "r1033SelectedSafe065": 0.6377777260249554
+      },
+      "r1033SelectedVsR1029Percent": 1.7054728120258877,
+      "r1033SelectedVsSameSessionSourcePercent": 0.6580889437585835
+    },
+    "rightUpperCheek": {
+      "boxPx": [
+        610,
+        430,
+        730,
+        540
+      ],
+      "linearizedDisplayLuminanceProxy": {
+        "r1029Baseline": 0.7039942469399882,
+        "r1033SameSessionSource": 0.7075730557932264,
+        "r1033SelectedSafe065": 0.709716029946524
+      },
+      "r1033SelectedVsR1029Percent": 0.812759909815508,
+      "r1033SelectedVsSameSessionSourcePercent": 0.30286259994669606
+    },
+    "mouthBand": {
+      "boxPx": [
+        390,
+        585,
+        610,
+        705
+      ],
+      "linearizedDisplayLuminanceProxy": {
+        "r1029Baseline": 0.5750610420083184,
+        "r1033SameSessionSource": 0.5912983941176471,
+        "r1033SelectedSafe065": 0.5894758355317885
+      },
+      "r1033SelectedVsR1029Percent": 2.5066545062987444,
+      "r1033SelectedVsSameSessionSourcePercent": -0.3082299231639607
+    },
+    "neck": {
+      "boxPx": [
+        420,
+        810,
+        580,
+        930
+      ],
+      "linearizedDisplayLuminanceProxy": {
+        "r1029Baseline": 0.5965335919526144,
+        "r1033SameSessionSource": 0.5976816349264705,
+        "r1033SelectedSafe065": 0.5984027290849673
+      },
+      "r1033SelectedVsR1029Percent": 0.31333308929590853,
+      "r1033SelectedVsSameSessionSourcePercent": 0.12064853867987946
+    }
+  },
+  "interpretation": {
+    "skinDarkening": "NO",
+    "foreheadSelectedVsR1029Percent": -3.805775750098661e-06,
+    "cheekRangeSelectedVsR1029Percent": [
+      0.812759909815508,
+      1.7054728120258877
+    ],
+    "mouthBandSelectedVsSameSessionSourcePercent": -0.3082299231639607,
+    "cause": "local oral-seam, nostril and lower-lip curvature contrast; lip-only material response; no global skin material or exposure reduction"
+  },
+  "websiteStatus": "Website v83 remains unchanged and is still documented as 5.56% darker in embedded base color than the committed mainline asset.",
+  "status": "PASS_NO_GLOBAL_DARKENING_LOCAL_MOUTH_CONTRAST_INCREASED"
+}

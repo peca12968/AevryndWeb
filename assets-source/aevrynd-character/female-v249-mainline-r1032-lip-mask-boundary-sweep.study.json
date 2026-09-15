@@ -1,0 +1,122 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-soft-warm-lip-response-r1031-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-soft-lip-boundary-r1032-study.blend",
+  "method": "topological rings around the existing named lips vertex group with bounded perioral filtering",
+  "variants": [
+    {
+      "label": "source-r1031",
+      "ringWeights": [],
+      "edit": {
+        "originalVertices": 418,
+        "rings": [],
+        "finalVertices": 418,
+        "minimumWeight": 1.0,
+        "maximumWeight": 1.0
+      },
+      "materialSlotsBefore": 2,
+      "materialSlotsAfter": 2,
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1032-lip-mask-boundary-sweep\\source-r1031-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1032-lip-mask-boundary-sweep\\source-r1031-mouth-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1032-lip-mask-boundary-sweep\\source-r1031-mouth-oblique.png"
+      ],
+      "status": "VISUAL_REVIEW_REQUIRED"
+    },
+    {
+      "label": "a-one-ring-soft",
+      "ringWeights": [
+        0.35
+      ],
+      "edit": {
+        "originalVertices": 418,
+        "rings": [
+          {
+            "ring": 1,
+            "weight": 0.35,
+            "vertices": 76
+          }
+        ],
+        "finalVertices": 494,
+        "minimumWeight": 0.3499999940395355,
+        "maximumWeight": 1.0
+      },
+      "materialSlotsBefore": 2,
+      "materialSlotsAfter": 2,
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1032-lip-mask-boundary-sweep\\a-one-ring-soft-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1032-lip-mask-boundary-sweep\\a-one-ring-soft-mouth-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1032-lip-mask-boundary-sweep\\a-one-ring-soft-mouth-oblique.png"
+      ],
+      "status": "VISUAL_REVIEW_REQUIRED"
+    },
+    {
+      "label": "b-one-ring-medium",
+      "ringWeights": [
+        0.6
+      ],
+      "edit": {
+        "originalVertices": 418,
+        "rings": [
+          {
+            "ring": 1,
+            "weight": 0.6,
+            "vertices": 76
+          }
+        ],
+        "finalVertices": 494,
+        "minimumWeight": 0.6000000238418579,
+        "maximumWeight": 1.0
+      },
+      "materialSlotsBefore": 2,
+      "materialSlotsAfter": 2,
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1032-lip-mask-boundary-sweep\\b-one-ring-medium-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1032-lip-mask-boundary-sweep\\b-one-ring-medium-mouth-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1032-lip-mask-boundary-sweep\\b-one-ring-medium-mouth-oblique.png"
+      ],
+      "status": "VISUAL_REVIEW_REQUIRED"
+    },
+    {
+      "label": "c-two-ring-falloff",
+      "ringWeights": [
+        0.45,
+        0.18
+      ],
+      "edit": {
+        "originalVertices": 418,
+        "rings": [
+          {
+            "ring": 1,
+            "weight": 0.45,
+            "vertices": 76
+          },
+          {
+            "ring": 2,
+            "weight": 0.18,
+            "vertices": 76
+          }
+        ],
+        "finalVertices": 570,
+        "minimumWeight": 0.18000000715255737,
+        "maximumWeight": 1.0
+      },
+      "materialSlotsBefore": 2,
+      "materialSlotsAfter": 2,
+      "rendered": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1032-lip-mask-boundary-sweep\\c-two-ring-falloff-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1032-lip-mask-boundary-sweep\\c-two-ring-falloff-mouth-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1032-lip-mask-boundary-sweep\\c-two-ring-falloff-mouth-oblique.png"
+      ],
+      "status": "VISUAL_REVIEW_REQUIRED"
+    }
+  ],
+  "provisionalSelection": "b-one-ring-medium",
+  "selectedVariant": "b-one-ring-medium",
+  "geometryChanged": false,
+  "materialGraphChanged": false,
+  "materialSlotDelta": 0,
+  "websitePromotionApproved": false,
+  "status": "TECHNICAL_PASS_VISUAL_PARTIAL",
+  "visualAssessment": "One neighbour ring softens the binary lip boundary. The two-ring falloff dyes surrounding skin and is rejected; the bright lower-rim line remains geometric.",
+  "strictMouthScore": 38
+}
