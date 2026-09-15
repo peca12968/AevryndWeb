@@ -1277,3 +1277,9 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - r573 widens the light-side ear tuck to the entire anterior half. It exposes one ear, but top and front views reveal a horizontal wing before the hair turns behind the head. All r573 bounds are rejected.
 - r574 adds 3.5/6.0/9.0 mm loose waves after interpolation, with phase and frequency varying per sparse guide and small within-clump offsets. The waves avoid synchronized rows and keep roots fixed, but dense coverage averages the lower bounds away; 9 mm only frays the outline. No r570-r574 variant exceeds the retained source-groom score of about 50/100.
 - The next source groom must contain a sparse, explicitly visible outer-lock layer over separate medium fill and occipital coverage layers. Outer locks need authored silhouettes and cross-sections before child interpolation; more displacement or noise on the dense coverage layer is closed as an invalid route.
+
+### v249r575 — explicit outer-lock extraction (rejected)
+
+- r575 retains r572 as a dedicated 5,940-curve coverage underlayer and creates a separately named outer-lock object and material. Sparse, balanced and dense bounds use 16/21/31 sampled outer guides, 288/378/558 child curves, 4/6/8 mm radial lift, a 1.32 radius multiplier and melanin 0.36.
+- The sparse and balanced layers remain visually submerged. The dense layer finally reads separately, but top and front views show raised loops and arcs because the outer guides inherit coverage-layer trajectories. No bound creates authored lock silhouettes or a believable cross-section, so the whole sweep is rejected without collision or runtime promotion.
+- The next outer layer must be sculpted from independent control curves and explicit ribbon/ellipse cross-sections. Sampling, lifting or recolouring coverage guides is closed as an invalid macro-lock construction method.

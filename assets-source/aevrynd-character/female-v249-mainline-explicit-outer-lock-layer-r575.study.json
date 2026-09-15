@@ -1,0 +1,83 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-authoring-v249-mainline-orbital-brow-refit-r526.blend",
+  "surfaceRoots": 495,
+  "sparseGuides": 84,
+  "collisionClearanceM": 0.002,
+  "method": "retain r572 coverage as a dedicated underlayer; add a separately addressable outer-lock layer from a subset of sparse guides, stronger internal clumping, restrained radial lift, thicker profile and a slightly lighter independent hair response",
+  "variants": {
+    "a-r526-current": {
+      "config": null,
+      "rootRadiusScale": null,
+      "coverageMelanin": null,
+      "outerMelanin": null,
+      "tailHierarchyStrength": null,
+      "surfaceRoots": 0,
+      "sparseGuides": 0,
+      "outerGuides": 0,
+      "coverageCurves": 0,
+      "outerCurves": 0
+    },
+    "b-r572-layered-control": {
+      "config": {
+        "outer_stride": 0,
+        "lift": 0.0
+      },
+      "rootRadiusScale": 0.15,
+      "coverageMelanin": 0.44,
+      "outerMelanin": null,
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "outerGuides": 0,
+      "coverageCurves": 5940,
+      "outerCurves": 0
+    },
+    "c-outer-locks-sparse": {
+      "config": {
+        "outer_stride": 4,
+        "lift": 0.004
+      },
+      "rootRadiusScale": 0.15,
+      "coverageMelanin": 0.44,
+      "outerMelanin": 0.36,
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "outerGuides": 16,
+      "coverageCurves": 5940,
+      "outerCurves": 288
+    },
+    "d-outer-locks-balanced": {
+      "config": {
+        "outer_stride": 3,
+        "lift": 0.006
+      },
+      "rootRadiusScale": 0.15,
+      "coverageMelanin": 0.44,
+      "outerMelanin": 0.36,
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "outerGuides": 21,
+      "coverageCurves": 5940,
+      "outerCurves": 378
+    },
+    "e-outer-locks-dense": {
+      "config": {
+        "outer_stride": 2,
+        "lift": 0.008
+      },
+      "rootRadiusScale": 0.15,
+      "coverageMelanin": 0.44,
+      "outerMelanin": 0.36,
+      "tailHierarchyStrength": 1.35,
+      "surfaceRoots": 495,
+      "sparseGuides": 84,
+      "outerGuides": 31,
+      "coverageCurves": 5940,
+      "outerCurves": 558
+    }
+  },
+  "ownership": "Aevrynd procedural groom on owned CC0-derived body; no external runtime or asset dependency",
+  "status": "VISUAL_AND_ROOT_FIELD_SWEEP_ONLY"
+}
