@@ -1,0 +1,35 @@
+{
+  "range": "v249r989-r996",
+  "parent": "aevrynd-female-cc0-face-fiber-contrast-r988.blend",
+  "selectedLashTechnicalCandidate": "aevrynd-female-cc0-target-native-lashes-r995.blend",
+  "selectedBrowStudy": "aevrynd-female-cc0-natural-brow-lash-balance-r992.blend",
+  "overallFaceScore": 47,
+  "websiteAssetChanged": false,
+  "promotionApproved": false,
+  "studies": {
+    "r989": "DISCOVERY_AND_PARTIAL_REPAIR; imported brow fibres were buried 4.0-5.5mm and lashes up to 1.7mm. Brow geometry was refit to 0.38-0.87mm positive clearance, but upper lashes retained small penetrations.",
+    "r990": "STATIC_CLEARANCE_PASS; all eight brow/lash objects are visible and have zero signed penetration. It also finds that four brow objects inherited hide_render and hide_viewport from r974.",
+    "r991": "REJECTED_VISUAL; disconnecting the brow density vertex color at 42% alpha creates flat eyebrow blocks.",
+    "r992": "STATIC_CLEARANCE_PASS_VISUAL_47; 18% density underlay and visible 200-fibre brows are retained as the best brow balance in this range. Enlarged inherited lashes remain visually weak.",
+    "r993": "REJECTED_COLLISION; readable scaled lashes avoid body overlap but intersect sclera/cornea at every tested frame.",
+    "r994": "REJECTED_COLLISION; curled inherited upper lashes improve silhouette but cross the eyelid body surface, 167 left and 156 right triangle pairs per frame.",
+    "r995": "DYNAMIC_TRIANGLE_COLLISION_PASS; deterministic target-surface lashes use 46 upper and 22 lower fibres per eye. Frames 1/20/33/61 have zero overlap against body, sclera, cornea, opposite lash layer and zero non-finite geometry. Selected as lash technical candidate; overall eye anatomy remains below hero quality.",
+    "r996": "REJECTED_VISUAL_AND_COLLISION; tubular lower wetlines overlap body, sclera, cornea and lower lashes and add little visible lid thickness."
+  },
+  "r995": {
+    "audit": "female-v249-mainline-cc0-target-native-lashes-r995.triangle-collision-audit.json",
+    "upperFibresPerEye": 46,
+    "lowerFibresPerEye": 22,
+    "upperLengthRangeM": [0.002321, 0.005543],
+    "lowerLengthRangeM": [0.000667, 0.001616],
+    "frames": [1, 20, 33, 61],
+    "totalTriangleOverlapCount": 0
+  },
+  "reviewEvidence": "reviews/v249r989-r996-face-features",
+  "nextRequiredWork": [
+    "Reconstruct the open eyelid boundary loops and actual lid thickness on the body topology; do not add floating wetline tubes.",
+    "Refit cornea, sclera, tear film and r995 lash roots after eyelid topology changes, then repeat four-frame triangle collision gates.",
+    "Replace the uniform brow density patch with a root-density mask while retaining r990 positive clearance and visible fibre geometry.",
+    "Continue the separate r981 hair work with a smooth scalp coverage shell, narrow part and explicit macro-lock guide families."
+  ]
+}
