@@ -1,0 +1,23 @@
+{
+  "blender": "5.2.1 LTS",
+  "source": "D:/SteamLibrary/steamapps/common/Blender/5.2/datafiles/assets/nodes/procedural_hair_node_assets.blend",
+  "inspectionOnly": true,
+  "runtimeDependencyAdded": false,
+  "nodeGroupsCopiedIntoAevrynd": false,
+  "relevantAssets": {
+    "Generate Hair Curves": "surface distribution, density mask, control-point count and optional surface attachment",
+    "Interpolate Hair Curves": "surface-aware interpolation from multiple sparse guides with a guide-index output",
+    "Clump Hair Curves": "guide-index clumping with shape, tip spread, offset, distance falloff and optional length preservation",
+    "Hair Curves Noise": "per-curve noise with along-curve scale, random offset and optional segment-length preservation",
+    "Set Hair Curve Profile": "separate root-to-tip radius profile"
+  },
+  "adoptedArchitecture": [
+    "author a small visible guide set instead of treating every sampled root as an independent guide",
+    "interpolate coverage hairs from nearby compatible guides",
+    "keep guide index and clump behavior separate from fine noise",
+    "preserve roots while applying shape from mid-length",
+    "reopen tips after clumping",
+    "bake final Aevrynd-owned curves/cards so the engine has no Blender runtime dependency"
+  ],
+  "result": "r571 proves global guide clumping opens rear holes; r572 preserves the independent rear-fill layer and confines guide clumping to front/side regions, establishing the retained research architecture."
+}
