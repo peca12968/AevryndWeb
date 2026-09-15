@@ -1,0 +1,105 @@
+{
+  "revision": "v249r1048-strip-removal-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-depth-cleanup-r1046-study.blend",
+  "inspection": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1048-removal-boundaries.inspect.json",
+  "variants": [
+    {
+      "label": "a-strip8",
+      "sourceSet": "strip8",
+      "removedFaces": [
+        305,
+        320,
+        322,
+        328,
+        6881,
+        6896,
+        6898,
+        6904
+      ],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-strip-removal-sweep\\a-strip8-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-strip-removal-sweep\\a-strip8-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-strip-removal-sweep\\a-strip8-smile.png"
+      ],
+      "status": "VISUAL_DIAGNOSTIC"
+    },
+    {
+      "label": "b-strip8-rear",
+      "sourceSet": "strip8_plus_rear",
+      "removedFaces": [
+        305,
+        320,
+        322,
+        328,
+        6881,
+        6896,
+        6898,
+        6904,
+        16636
+      ],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-strip-removal-sweep\\b-strip8-rear-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-strip-removal-sweep\\b-strip8-rear-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-strip-removal-sweep\\b-strip8-rear-smile.png"
+      ],
+      "status": "VISUAL_DIAGNOSTIC"
+    },
+    {
+      "label": "c-strip8-neighbors",
+      "sourceSet": "strip8_plus_interior_neighbors",
+      "removedFaces": [
+        305,
+        319,
+        320,
+        322,
+        326,
+        327,
+        328,
+        6881,
+        6895,
+        6896,
+        6898,
+        6902,
+        6903,
+        6904
+      ],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-strip-removal-sweep\\c-strip8-neighbors-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-strip-removal-sweep\\c-strip8-neighbors-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-strip-removal-sweep\\c-strip8-neighbors-smile.png"
+      ],
+      "status": "VISUAL_DIAGNOSTIC"
+    },
+    {
+      "label": "d-strip8-all",
+      "sourceSet": "strip8_plus_rear_and_interior_neighbors",
+      "removedFaces": [
+        305,
+        319,
+        320,
+        322,
+        326,
+        327,
+        328,
+        6881,
+        6895,
+        6896,
+        6898,
+        6902,
+        6903,
+        6904,
+        16636
+      ],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-strip-removal-sweep\\d-strip8-all-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-strip-removal-sweep\\d-strip8-all-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-strip-removal-sweep\\d-strip8-all-smile.png"
+      ],
+      "status": "VISUAL_DIAGNOSTIC"
+    }
+  ],
+  "websitePromotionApproved": false,
+  "status": "VISUAL_REJECT_NOT_A_REBUILD",
+  "strictMouthScore100": 18,
+  "visualFinding": "Removing the proven strip faces eliminates the white bands but exposes a central pink disk and bilateral hanging fragments; broader removal increases the dark tabs."
+}

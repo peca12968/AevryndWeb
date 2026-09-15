@@ -1553,3 +1553,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - The 2.5 mm bound shortens the pale strips but exposes deeper pink fragments. The 4 and 6 mm bounds additionally create a central bump and new creases because the target faces share vertices with incompatible folded surfaces.
 - Strict visual quality is 29/100, below r1046's 33 and retained r1033's 39. The visual failure is decisive, so no candidate Blend is saved and full collision promotion is not run.
 - r1048 must delete the eight proven strip faces with only their incompatible interior neighbours, extract the new boundary loops and bridge them with a resampled welded upper/lower inner-lip patch. The four isolated lower-lip front faces must be preserved.
+
+### v249r1048 — figure-eight boundary removal and refill rejection
+
+- Simulated removal proves the eight r1047 strip faces produce two 10-edge figure-eight boundaries, each with eight degree-two vertices and one shared degree-four pinch vertex. Including rear or interior neighbours expands the paths to 20 edges and three pinch vertices per side rather than producing clean loops.
+- Four direct-removal renders test 8, 9, 14 and 15 faces. The white strips disappear, but a central pink disk and bilateral hanging fragments become visible; broader deletion enlarges the dark tabs.
+- Filling only the 26 newly exposed one-face edges preserves all 35 shape keys and adds no vertices, but Blender can form only five large faces. Skin fill recreates pointed pale shelves and a central notch; wetline fill produces obvious rectangular hanging tabs.
+- The strict score is 24/100. No candidate Blend is saved, no website asset changes, and r1033 remains retained at 39/100.
+- r1049 must abandon the four small figure-eight holes, return to the clean 36-edge primary aperture and remove the incompatible small components as whole islands. A single welded upper/lower inner-lip strip with dedicated commissure poles must then inherit all shape keys and deform weights before collision review.

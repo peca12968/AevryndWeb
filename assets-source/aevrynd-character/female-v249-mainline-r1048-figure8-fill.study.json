@@ -1,0 +1,56 @@
+{
+  "revision": "v249r1048-figure8-fill",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-depth-cleanup-r1046-study.blend",
+  "removedFaces": [
+    305,
+    320,
+    322,
+    328,
+    6881,
+    6896,
+    6898,
+    6904
+  ],
+  "method": "delete eight proven strip faces and fill only newly exposed one-face boundary edges using existing vertices",
+  "variants": [
+    {
+      "label": "a-skin-fill",
+      "topology": {
+        "newBoundaryEdges": 26,
+        "filledFaces": 5,
+        "materialRole": "skin",
+        "shapeKeyCount": 35,
+        "shapeKeyCompatibility": true
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-figure8-fill\\a-skin-fill-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-figure8-fill\\a-skin-fill-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-figure8-fill\\a-skin-fill-smile.png"
+      ],
+      "status": "VISUAL_DIAGNOSTIC"
+    },
+    {
+      "label": "b-wetline-fill",
+      "topology": {
+        "newBoundaryEdges": 26,
+        "filledFaces": 5,
+        "materialRole": "wetline",
+        "shapeKeyCount": 35,
+        "shapeKeyCompatibility": true
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-figure8-fill\\b-wetline-fill-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-figure8-fill\\b-wetline-fill-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1048-figure8-fill\\b-wetline-fill-smile.png"
+      ],
+      "status": "VISUAL_DIAGNOSTIC"
+    }
+  ],
+  "websitePromotionApproved": false,
+  "status": "TOPOLOGY_AND_VISUAL_REJECT_RETAIN_R1033",
+  "strictMouthScore100": 24,
+  "retainedR1033Score100": 39,
+  "visualFinding": "Blender fills 26 new boundary edges with only five large faces. Skin fill recreates pointed pale shelves and a central notch; wetline fill creates dark hanging rectangles. Shared degree-four pinch vertices prevent anatomical flow.",
+  "candidateBlendSaved": false,
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1048-boundary-rebuild\\contact-sheet-r1048.jpg"
+}
