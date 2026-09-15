@@ -1510,3 +1510,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - Frames 1/20/33/61 plus mouth-open and smile pass zero non-adjacent body self-collision and zero overlap against the six owned oral layers. Fixed-crop drift is +0.007563% left cheek, +0.015895% right cheek and 0.0% forehead.
 - Visual quality collapses to 18/100: annular flow creates a dark lower overhang, radial convergence creases, a visible outer seam and planar oral/dental presentation. r1033 remains the retained mouth/face candidate and website v83 is unchanged.
 - The annular route is closed. r1043 must construct separate upper and lower horizontal grids, with orbicularis-aligned loops and explicit closed commissure poles, before rebuilding wetline and dental exposure.
+
+### v249r1043 — split horizontal lip-grid proof and rejection
+
+- r1043 returns to r1039 and replaces the same complete 832-face skin, vermilion and inner-rim region with separate upper and lower horizontal grids. The grids share two explicit commissure poles, add 574 vertices and 576 faces, retain all 35 shape keys and give every new vertex at least four deform groups.
+- Frames 1/20/33/61 plus mouth-open and smile pass with zero non-adjacent body self-collision and zero overlap against all six owned oral layers. This proves the split topology can preserve deformation data and geometric clearance.
+- Strict visual quality falls to 17/100. The unchanged irregular outer boundary creates repeated pinch spikes across the philtrum, mouth corners and chin transition; the two grids read as inflated slabs; the shallow slit exposes planar oral and dental strips; and the open/smile probes remain almost indistinguishable from neutral.
+- Fixed-crop drift from r1039 stays below 0.017337%, so the Blender research line is not progressively darkening. Website v83 remains unchanged and is still 5.56% darker in embedded skin base color than the committed mainline.
+- r1033 remains the retained mouth and face candidate. Full-perioral replacement is closed. The next build must preserve r1033's stable outer facial surface and rebuild only the inner vermilion, wetline and commissures with local curvature-constrained loops, deeper oral presentation and visibly distinct jaw-coupled expressions.
