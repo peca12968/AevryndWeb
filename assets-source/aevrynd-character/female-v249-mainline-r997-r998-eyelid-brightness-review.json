@@ -1,0 +1,33 @@
+{
+  "revisionRange": "v249r997-r998",
+  "sourceCandidate": "aevrynd-female-cc0-target-native-lashes-r995.blend",
+  "strictFaceScoreBefore": 47,
+  "strictFaceScoreAfter": 47,
+  "status": "REJECT_R997_DEPTH_AND_R998_NEGLIGIBLE_EFFECT",
+  "websitePromotion": "FORBIDDEN",
+  "topologyEvidence": {
+    "report": "female-v249-mainline-cc0-target-native-lashes-r995.eyelid-boundary-inspection.json",
+    "finding": "The evaluated body is fully manifold with no open eyelid boundary. The visible aperture is backed by continuous socket geometry, so an open-loop eyelid construction cannot be inferred from boundary edges."
+  },
+  "r997EyeDepth": {
+    "report": "female-v249-mainline-cc0-eye-depth-sweep-r997.study.json",
+    "verdict": "REJECT",
+    "finding": "A 0.5 mm inward shift remains collision-free but produces no meaningful visual gain. At 1.0 mm the corneas produce 174 body triangle overlaps; at 1.5 mm the sclera and corneas produce 452 overlaps."
+  },
+  "r998EyelidRelief": {
+    "asset": "aevrynd-female-cc0-eyelid-relief-sweep-r998-study.blend",
+    "study": "female-v249-mainline-cc0-eyelid-relief-sweep-r998.study.json",
+    "toneAudit": "female-v249-mainline-cc0-eyelid-relief-r998.tone-audit.json",
+    "verdict": "REJECT",
+    "finding": "All four strengths remain collision-free and preserve skin luminance at 0.665378809, but the strongest bound changes only 0.01963% of pixels and has mean absolute pixel delta 0.000000429. The selected vertices lie mostly on visually occluded socket surfaces, so the relief has no useful visible effect."
+  },
+  "brightnessConclusion": {
+    "latestFixedFrameSkinLuminance": 0.665378809,
+    "latestSweepDriftPercent": 0.0,
+    "websiteEmbeddedBaseColorLuminance": 0.5454,
+    "committedMainlineBaseColorLuminance": 0.5775,
+    "websiteDeficitPercent": 5.56,
+    "finding": "The current target-native branch is not progressively darkening. Dark hair framing, orbital shadow and the older website texture create the darker impression."
+  },
+  "nextAction": "Select camera-visible outer eyelid vertices from evaluated depth and normal evidence, then require visible A/B improvement plus frame 1/20/33/61 eye, lash and body collision checks before promotion."
+}

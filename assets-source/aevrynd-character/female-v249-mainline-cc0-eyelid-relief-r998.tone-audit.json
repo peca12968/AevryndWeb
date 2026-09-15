@@ -1,0 +1,57 @@
+{
+  "renderDirectory": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r998-eyelid-relief-sweep",
+  "skinCrop": {
+    "left": 180,
+    "top": 250,
+    "right": 720,
+    "bottom": 820
+  },
+  "maximumAllowedLuminanceDriftPercent": 1.0,
+  "baselineSkinLinearLuminance": 0.6653788089752197,
+  "results": [
+    {
+      "file": "a-baseline.png",
+      "skinLinearLuminance": 0.6653788089752197,
+      "skinLuminanceDriftPercent": 0.0,
+      "meanAbsolutePixelDelta": 0.0,
+      "maximumAbsolutePixelDelta": 0.0,
+      "changedPixelFraction": 0.0,
+      "identicalToBaseline": true,
+      "toneStatus": "PASS"
+    },
+    {
+      "file": "b-half.png",
+      "skinLinearLuminance": 0.6653788089752197,
+      "skinLuminanceDriftPercent": 0.0,
+      "meanAbsolutePixelDelta": 1.1619464146406244e-07,
+      "maximumAbsolutePixelDelta": 0.011764705181121826,
+      "changedPixelFraction": 4.938271604938271e-05,
+      "identicalToBaseline": false,
+      "toneStatus": "PASS"
+    },
+    {
+      "file": "c-full.png",
+      "skinLinearLuminance": 0.6653788089752197,
+      "skinLuminanceDriftPercent": 0.0,
+      "meanAbsolutePixelDelta": 2.1302349750840222e-07,
+      "maximumAbsolutePixelDelta": 0.011764705181121826,
+      "changedPixelFraction": 0.00010617283950617284,
+      "identicalToBaseline": false,
+      "toneStatus": "PASS"
+    },
+    {
+      "file": "d-strong.png",
+      "skinLinearLuminance": 0.6653788089752197,
+      "skinLuminanceDriftPercent": 0.0,
+      "meanAbsolutePixelDelta": 4.2927462118313997e-07,
+      "maximumAbsolutePixelDelta": 0.011764705181121826,
+      "changedPixelFraction": 0.0001962962962962963,
+      "identicalToBaseline": false,
+      "toneStatus": "PASS"
+    }
+  ],
+  "toneStatus": "PASS",
+  "maximumPerceptualMeanPixelDelta": 1e-06,
+  "visualEffectStatus": "REJECT_NEGLIGIBLE_PIXEL_EFFECT",
+  "conclusion": "All eyelid-strength renders preserve skin luminance and differ only at a negligible pixel level. The darker impression comes from fixed hair and orbital contrast, not r998 material drift."
+}

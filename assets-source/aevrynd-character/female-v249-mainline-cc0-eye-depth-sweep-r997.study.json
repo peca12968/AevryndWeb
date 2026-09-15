@@ -1,0 +1,72 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-target-native-lashes-r995.blend",
+  "studyOnly": true,
+  "eyeObjects": [
+    "Eye_L_Sclera",
+    "Eye_L_Cornea",
+    "Eye_L_Iris",
+    "Eye_R_Sclera",
+    "Eye_R_Cornea",
+    "Eye_R_Iris"
+  ],
+  "results": [
+    {
+      "label": "a-current",
+      "inwardOffsetM": 0.0,
+      "bodyTriangleOverlaps": {
+        "Eye_L_Sclera": 0,
+        "Eye_L_Cornea": 0,
+        "Eye_L_Iris": 0,
+        "Eye_R_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Iris": 0
+      },
+      "totalBodyTriangleOverlaps": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "b-inward-0p5mm",
+      "inwardOffsetM": 0.0005,
+      "bodyTriangleOverlaps": {
+        "Eye_L_Sclera": 0,
+        "Eye_L_Cornea": 0,
+        "Eye_L_Iris": 0,
+        "Eye_R_Sclera": 0,
+        "Eye_R_Cornea": 0,
+        "Eye_R_Iris": 0
+      },
+      "totalBodyTriangleOverlaps": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "c-inward-1p0mm",
+      "inwardOffsetM": 0.001,
+      "bodyTriangleOverlaps": {
+        "Eye_L_Sclera": 0,
+        "Eye_L_Cornea": 86,
+        "Eye_L_Iris": 0,
+        "Eye_R_Sclera": 0,
+        "Eye_R_Cornea": 88,
+        "Eye_R_Iris": 0
+      },
+      "totalBodyTriangleOverlaps": 174,
+      "status": "FAIL"
+    },
+    {
+      "label": "d-inward-1p5mm",
+      "inwardOffsetM": 0.0015,
+      "bodyTriangleOverlaps": {
+        "Eye_L_Sclera": 86,
+        "Eye_L_Cornea": 140,
+        "Eye_L_Iris": 0,
+        "Eye_R_Sclera": 86,
+        "Eye_R_Cornea": 140,
+        "Eye_R_Iris": 0
+      },
+      "totalBodyTriangleOverlaps": 452,
+      "status": "FAIL"
+    }
+  ],
+  "selected": null,
+  "status": "VISUAL_REVIEW_REQUIRED"
+}
