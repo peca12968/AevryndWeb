@@ -110,9 +110,13 @@
   "latestFoundationCalibratedReview": "reviews/v249r965-support-edge-micro/contact-sheet-r965.jpg; reviews/v249r973-correct-neck-yaw/contact-sheet-r973.jpg",
   "latestFoundationRigReview": "female-v249-mainline-knee-support-edge-r962.review.json",
   "latestFoundationNeckAxisStatus": "R973_PASS_CORRECT_WORLD_VERTICAL_YAW; the prior local-Z validation was visually rejected because it produced side bend. The derived local axis [-0.0000000002,0.998789,0.049197] produces natural 25-degree horizontal yaw and passes all eight dynamic deformation and self-collision frames without neck correctives.",
-  "latestTargetNativeHairTechnicalCandidate": "aevrynd-female-cc0-hair-collision-repair-r977.blend",
-  "latestTargetNativeHairAudit": "female-v249-mainline-cc0-hair-collision-repair-r977.collision-audit.json",
-  "latestTargetNativeHairReview": "female-v249-mainline-r974-r977-target-groom.review.json; reviews/v249r974-r977-target-groom/contact-sheet-r977.jpg",
-  "latestTargetNativeHairStatus": "R977_STATIC_COLLISION_TECHNICAL_PASS_VISUAL_HERO_FAIL_SCORE_55; 1,568 target-derived scalp vertices and 3,640 owned guide/follower strands are generated directly from the r962 surface. All 72,800 groom points are audited; 72,752 near-surface points have zero penetration and a +1.313mm minimum signed clearance after smooth collision repair. Warm-brown tone and center-part coverage read correctly, but uniform straight side masses, weak macro-lock hierarchy, even ends and absent secondary motion block promotion.",
-  "latestBrightnessRegressionStatus": "CONFIRMED_WEBSITE_V83_BASECOLOR_DARKER_BY_5P56_PERCENT; embedded base-color mean luminance is 0.5454 versus committed mainline 0.5775. r976 and r977 fixed-light face renders both measure median skin luminance 0.6708, proving the target-native branch did not continue the darkening. Global exposure remains unchanged."
+  "latestTargetNativeHairTechnicalCandidate": "aevrynd-female-cc0-coherent-clump-waves-r981.blend",
+  "latestTargetNativeHairAudit": "female-v249-mainline-cc0-coherent-clump-waves-r981.collision-audit.json",
+  "latestTargetNativeHairReview": "female-v249-mainline-r978-r988-hair-face-studies.review.json; reviews/v249r978-r988-hair-face-studies/contact-sheet-r981.jpg",
+  "latestTargetNativeHairStatus": "R981_STATIC_COLLISION_PASS_VISUAL_HERO_FAIL_SCORE_59; 72,800 points retain zero static penetration and +1.459mm minimum signed clearance. r982-r984 establish root-pinned motion and correct head-bone binding, but shoulder/neck contact and frayed bob ends fail. r985-r986 hairline/scalp coverage and r987-r988 face-fibre studies are strict visual rejects. Website v83 remains unchanged.",
+  "latestBrightnessRegressionStatus": "CONFIRMED_WEBSITE_V83_BASECOLOR_DARKER_BY_5P56_PERCENT; embedded base-color mean luminance is 0.5454 versus committed mainline 0.5775. r976 and r977 fixed-light face renders both measure median skin luminance 0.6708, proving the target-native branch did not continue the darkening. Global exposure remains unchanged.",
+  "latestTargetNativeDynamicHairStudy": "aevrynd-female-cc0-head-bound-hair-motion-r983.blend; aevrynd-female-cc0-layered-bob-motion-r984.blend",
+  "latestTargetNativeDynamicHairStatus": "R983_CORRECT_HEAD_BINDING_MOTION_METRICS_PASS_COLLISION_FAIL; R984_REDUCED_TO_MAX_158_PENETRATING_POINTS_BUT_VISUAL_REJECT. No dynamic candidate is promoted.",
+  "latestTargetNativeFaceFeatureStudy": "aevrynd-female-cc0-face-fiber-contrast-r988.blend",
+  "latestTargetNativeFaceFeatureStatus": "R987_R988_VISUAL_REJECT; fitted brow/lash layers are present but surface attachment depth and eyelid topology prevent readable fibres. Material darkening alone is ineffective."
 }

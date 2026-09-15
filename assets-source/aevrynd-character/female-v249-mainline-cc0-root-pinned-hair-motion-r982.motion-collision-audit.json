@@ -1,0 +1,64 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-coherent-clump-waves-r981.blend",
+  "model": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-root-pinned-hair-motion-r982.blend",
+  "frames": [
+    1,
+    16,
+    31,
+    46,
+    61
+  ],
+  "collision": {
+    "1": {
+      "sampleCount": 72800,
+      "minimumSignedM": 0.0014589631755370647,
+      "penetratingPointCount": 0
+    },
+    "16": {
+      "sampleCount": 72800,
+      "minimumSignedM": -0.012867066674516536,
+      "penetratingPointCount": 4523
+    },
+    "31": {
+      "sampleCount": 72800,
+      "minimumSignedM": -0.013456819608109072,
+      "penetratingPointCount": 5285
+    },
+    "46": {
+      "sampleCount": 72800,
+      "minimumSignedM": -0.013507186144124717,
+      "penetratingPointCount": 5394
+    },
+    "61": {
+      "sampleCount": 72800,
+      "minimumSignedM": -0.013488744269125164,
+      "penetratingPointCount": 6042
+    }
+  },
+  "motion": {
+    "peakMeanM": 0.0012345869775574735,
+    "peakP95M": 0.004459867295910304,
+    "peakMaximumM": 0.005541803504078252,
+    "rootMaximumM": 0.0,
+    "settleMaximumM": 0.0
+  },
+  "failures": [
+    {
+      "frame": 16,
+      "penetratingPointCount": 4523
+    },
+    {
+      "frame": 31,
+      "penetratingPointCount": 5285
+    },
+    {
+      "frame": 46,
+      "penetratingPointCount": 5394
+    },
+    {
+      "frame": 61,
+      "penetratingPointCount": 6042
+    }
+  ],
+  "status": "FAIL"
+}

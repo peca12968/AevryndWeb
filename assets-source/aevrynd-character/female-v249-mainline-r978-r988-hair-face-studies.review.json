@@ -1,0 +1,45 @@
+{
+  "range": "v249r978-r988",
+  "parentTechnicalBase": "aevrynd-female-cc0-hair-collision-repair-r977.blend",
+  "websiteAssetChanged": false,
+  "strictOverallCandidate": "aevrynd-female-cc0-coherent-clump-waves-r981.blend",
+  "strictOverallScore": 59,
+  "promotionApproved": false,
+  "brightnessFinding": {
+    "websiteV83BaseTextureMeanLuminance": 0.5454,
+    "committedMainlineBaseTextureMeanLuminance": 0.5775,
+    "websiteV83RelativeDarkeningPercent": 5.56,
+    "r976AndR977FixedLightMedianSkinLuminance": 0.6708,
+    "conclusion": "The website v83 asset is darker; the r962-r988 research line did not continue that regression. Global exposure remains unchanged."
+  },
+  "studies": {
+    "r978": "STATIC_COLLISION_PASS_VISUAL_58; coherent regional wave and staggered ends improve r977 slightly, but the silhouette is still a straight curtain.",
+    "r979": "REJECTED_VISUAL; added frontal and temple roots form a horizontal forehead band.",
+    "r980": "REJECTED_VISUAL; rerouted roots form crown loops and detached arcs.",
+    "r981": "STATIC_COLLISION_PASS_VISUAL_59; 72,800 points, zero penetration, minimum signed clearance +1.459mm. Retained as the best visual/static study in this range, still below hero quality.",
+    "r982": "REJECTED_DYNAMIC_BINDING; root-pinned motion metrics pass, but object-parented hair fails to follow the head and causes 4,523-6,042 penetrating points on moving frames.",
+    "r983": "HEAD_BINDING_FIXED_DYNAMIC_COLLISION_FAIL; correct head-bone binding reduces moving-frame penetrations to 1,201-1,393, concentrated in long shoulder/neck tips.",
+    "r984": "REJECTED_VISUAL_AND_DYNAMIC; layered bob lowers dynamic penetration to 19-158 points, but produces frayed rear ends and retains an unnatural sparse/high hairline.",
+    "r985": "REJECTED_VISUAL; 888 target-surface hairline fibres create arched fringe bands and hooked temple silhouettes.",
+    "r986": "REJECTED_VISUAL; dense fitted scalp shell demonstrates the needed coverage layer but exposes faceted hairline edges and incomplete central-part coverage.",
+    "r987": "REJECTED_VISUAL; eight fitted brow/lash objects are restored as an explicit face-feature layer but sit too close to the body surface to read beyond faint shadows.",
+    "r988": "REJECTED_VISUAL; darker brow/lash materials do not solve the attachment-depth and eyelid-geometry defects. Geometry must be refitted."
+  },
+  "technicalMetrics": {
+    "r981StaticPenetratingPointCount": 0,
+    "r981MinimumSignedClearanceM": 0.001459,
+    "r983PeakMotionP95M": 0.00446,
+    "r983RootMaximumM": 0.0,
+    "r983SettleMaximumM": 0.0,
+    "r984MaximumMovingFramePenetratingPointCount": 158,
+    "r984WorstMinimumSignedM": -0.002252
+  },
+  "reviewEvidence": "reviews/v249r978-r988-hair-face-studies",
+  "nextRequiredWork": [
+    "Build a continuous smooth scalp coverage shell with a controlled 4-8mm part width and non-faceted hairline boundary.",
+    "Generate front, side and rear macro locks from explicit guide families and preserve collision clearance before adding child fibres.",
+    "Refit brow and lash roots against the evaluated r962 head with visible 0.4-0.7mm clearance, then validate four facial/body motion frames.",
+    "Rebuild eyelid thickness, canthus loops and tear-film clearance before treating material contrast as a realism improvement.",
+    "Only after visual pass, head-bind the groom, solve a five-frame collision envelope, export runtime layers and run browser memory/FPS gates."
+  ]
+}

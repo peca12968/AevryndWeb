@@ -1,0 +1,64 @@
+{
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-coherent-clump-waves-r981.blend",
+  "model": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-layered-bob-motion-r984.blend",
+  "frames": [
+    1,
+    16,
+    31,
+    46,
+    61
+  ],
+  "collision": {
+    "1": {
+      "sampleCount": 72800,
+      "minimumSignedM": 0.0015632130816811696,
+      "penetratingPointCount": 0
+    },
+    "16": {
+      "sampleCount": 72800,
+      "minimumSignedM": -0.0015356077201431617,
+      "penetratingPointCount": 101
+    },
+    "31": {
+      "sampleCount": 72800,
+      "minimumSignedM": -0.0021930518453245895,
+      "penetratingPointCount": 158
+    },
+    "46": {
+      "sampleCount": 72800,
+      "minimumSignedM": -0.002251919075206388,
+      "penetratingPointCount": 153
+    },
+    "61": {
+      "sampleCount": 72800,
+      "minimumSignedM": -0.00018861037506212597,
+      "penetratingPointCount": 19
+    }
+  },
+  "motion": {
+    "peakMeanM": 0.0012362640723649722,
+    "peakP95M": 0.004488544750684921,
+    "peakMaximumM": 0.0055418057606630615,
+    "rootMaximumM": 0.0,
+    "settleMaximumM": 0.0
+  },
+  "failures": [
+    {
+      "frame": 16,
+      "penetratingPointCount": 101
+    },
+    {
+      "frame": 31,
+      "penetratingPointCount": 158
+    },
+    {
+      "frame": 46,
+      "penetratingPointCount": 153
+    },
+    {
+      "frame": 61,
+      "penetratingPointCount": 19
+    }
+  ],
+  "status": "FAIL"
+}
