@@ -1,0 +1,94 @@
+{
+  "revision": "v249r1063-inner-edge-fairing",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-structured-lips-r1061-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-inner-edge-fairing-r1063-study.blend",
+  "method": "measured >=30 degree lower inner-lip edges plus one support ring; depth-only clamped Laplacian fairing across all 35 shape keys",
+  "variants": [
+    {
+      "label": "a-control",
+      "strength": 0.0,
+      "metrics": {
+        "measuredEdges": 76,
+        "selectedVertices": 85,
+        "supportVertices": 90,
+        "movedVertices": 0,
+        "maximumSourceDihedralDegrees": 83.97468282625972,
+        "maximumDepthMoveMm": 0.0
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1063-inner-edge-fairing\\a-control-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1063-inner-edge-fairing\\a-control-neutral-oblique.png"
+      ]
+    },
+    {
+      "label": "b-quarter",
+      "strength": 0.25,
+      "metrics": {
+        "measuredEdges": 76,
+        "selectedVertices": 85,
+        "supportVertices": 90,
+        "movedVertices": 175,
+        "maximumSourceDihedralDegrees": 83.97468282625972,
+        "maximumDepthMoveMm": 0.4213610664010048
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1063-inner-edge-fairing\\b-quarter-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1063-inner-edge-fairing\\b-quarter-neutral-oblique.png"
+      ]
+    },
+    {
+      "label": "c-half",
+      "strength": 0.5,
+      "metrics": {
+        "measuredEdges": 76,
+        "selectedVertices": 85,
+        "supportVertices": 90,
+        "movedVertices": 175,
+        "maximumSourceDihedralDegrees": 83.97468282625972,
+        "maximumDepthMoveMm": 0.7999999797903001
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1063-inner-edge-fairing\\c-half-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1063-inner-edge-fairing\\c-half-neutral-oblique.png"
+      ]
+    },
+    {
+      "label": "d-three-quarter",
+      "strength": 0.75,
+      "metrics": {
+        "measuredEdges": 76,
+        "selectedVertices": 85,
+        "supportVertices": 90,
+        "movedVertices": 175,
+        "maximumSourceDihedralDegrees": 83.97468282625972,
+        "maximumDepthMoveMm": 0.7999999797903001
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1063-inner-edge-fairing\\d-three-quarter-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1063-inner-edge-fairing\\d-three-quarter-neutral-oblique.png"
+      ]
+    },
+    {
+      "label": "e-full",
+      "strength": 1.0,
+      "metrics": {
+        "measuredEdges": 76,
+        "selectedVertices": 85,
+        "supportVertices": 90,
+        "movedVertices": 175,
+        "maximumSourceDihedralDegrees": 83.97468282625972,
+        "maximumDepthMoveMm": 0.7999999797903001
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1063-inner-edge-fairing\\e-full-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1063-inner-edge-fairing\\e-full-neutral-oblique.png"
+      ]
+    }
+  ],
+  "selectedVariant": "c-half",
+  "websitePromotionApproved": false,
+  "candidateStatus": "VISUAL_REJECT_NO_PERCEPTUAL_GAIN",
+  "strictMouthScore100": 38,
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1063-r1064-inner-edge\\contact-sheet-r1063-r1064.jpg",
+  "finding": "Depth-only Laplacian fairing of 85 measured high-dihedral vertices and 90 support vertices changes the surface by up to 0.8 mm but leaves the bright inner edge perceptually unchanged."
+}
