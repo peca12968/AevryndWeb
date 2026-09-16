@@ -1,0 +1,82 @@
+{
+  "revision": "v249r1058-smooth-mouth-boolean",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-lower-lip-rim-turn-r1033-study.blend",
+  "method": "apply an Aevrynd-authored 96-segment closed elliptical cutter only to a shape-key-free diagnostic duplicate, then measure the resulting local boundary before any deformation transfer",
+  "variants": [
+    {
+      "label": "a-compact",
+      "radiusM": [
+        0.034,
+        0.008
+      ],
+      "before": {
+        "vertices": 216947,
+        "edges": 433452,
+        "faces": 216448
+      },
+      "after": {
+        "vertices": 217546,
+        "edges": 434624,
+        "faces": 217078
+      },
+      "mouthBoundaryLoops": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1058-smooth-mouth-boolean\\a-compact-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1058-smooth-mouth-boolean\\a-compact-oblique.png"
+      ],
+      "status": "BOOLEAN_BOUNDARY_REVIEW_PENDING"
+    },
+    {
+      "label": "b-balanced",
+      "radiusM": [
+        0.038,
+        0.01
+      ],
+      "before": {
+        "vertices": 216947,
+        "edges": 433452,
+        "faces": 216448
+      },
+      "after": {
+        "vertices": 217550,
+        "edges": 434624,
+        "faces": 217074
+      },
+      "mouthBoundaryLoops": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1058-smooth-mouth-boolean\\b-balanced-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1058-smooth-mouth-boolean\\b-balanced-oblique.png"
+      ],
+      "status": "BOOLEAN_BOUNDARY_REVIEW_PENDING"
+    },
+    {
+      "label": "c-broad",
+      "radiusM": [
+        0.042,
+        0.012
+      ],
+      "before": {
+        "vertices": 216947,
+        "edges": 433452,
+        "faces": 216448
+      },
+      "after": {
+        "vertices": 217504,
+        "edges": 434570,
+        "faces": 217066
+      },
+      "mouthBoundaryLoops": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1058-smooth-mouth-boolean\\c-broad-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1058-smooth-mouth-boolean\\c-broad-oblique.png"
+      ],
+      "status": "BOOLEAN_BOUNDARY_REVIEW_PENDING"
+    }
+  ],
+  "candidateBlendSaved": false,
+  "websitePromotionApproved": false,
+  "status": "TOPOLOGY_DIRECTION_PASS_HIGH_DENSITY_NO_DEFORMATION_CONTRACT",
+  "strictMouthScore100": 36,
+  "finding": "After correcting evaluation order, all three high-density cuts eliminate the self-overlapped mouth stack and render a continuous cavity edge. The mesh is 217k vertices and has no transferable shape-key contract.",
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1058-r1059-smooth-mouth-cut\\contact-sheet-r1058-r1059.jpg"
+}

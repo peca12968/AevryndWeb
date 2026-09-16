@@ -1,0 +1,86 @@
+{
+  "revision": "v249r1059-lowpoly-mouth-boolean",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-lower-lip-rim-turn-r1033-study.blend",
+  "method": "bake the active 35-key state into a 19k-vertex diagnostic duplicate, remove all modifiers and keys from that duplicate only, then apply the Aevrynd-authored 96-segment elliptical cutter before any deformation transfer",
+  "variants": [
+    {
+      "label": "a-compact",
+      "radiusM": [
+        0.034,
+        0.008
+      ],
+      "before": {
+        "vertices": 13620,
+        "edges": 27195,
+        "faces": 13518
+      },
+      "after": {
+        "vertices": 14005,
+        "edges": 27750,
+        "faces": 13745
+      },
+      "mouthBoundaryLoops": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1059-lowpoly-mouth-boolean\\a-compact-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1059-lowpoly-mouth-boolean\\a-compact-oblique.png"
+      ],
+      "status": "BOOLEAN_BOUNDARY_REVIEW_PENDING"
+    },
+    {
+      "label": "b-balanced",
+      "radiusM": [
+        0.038,
+        0.01
+      ],
+      "before": {
+        "vertices": 13620,
+        "edges": 27195,
+        "faces": 13518
+      },
+      "after": {
+        "vertices": 13987,
+        "edges": 27734,
+        "faces": 13747
+      },
+      "mouthBoundaryLoops": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1059-lowpoly-mouth-boolean\\b-balanced-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1059-lowpoly-mouth-boolean\\b-balanced-oblique.png"
+      ],
+      "status": "BOOLEAN_BOUNDARY_REVIEW_PENDING"
+    },
+    {
+      "label": "c-broad",
+      "radiusM": [
+        0.042,
+        0.012
+      ],
+      "before": {
+        "vertices": 13620,
+        "edges": 27195,
+        "faces": 13518
+      },
+      "after": {
+        "vertices": 13989,
+        "edges": 27734,
+        "faces": 13745
+      },
+      "mouthBoundaryLoops": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1059-lowpoly-mouth-boolean\\c-broad-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1059-lowpoly-mouth-boolean\\c-broad-oblique.png"
+      ],
+      "status": "BOOLEAN_BOUNDARY_REVIEW_PENDING"
+    }
+  ],
+  "candidateBlendSaved": false,
+  "topologyTransferStudyBlend": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-smooth-mouth-cut-r1059-study.blend",
+  "websitePromotionApproved": false,
+  "status": "TOPOLOGY_TRANSFER_STUDY_SELECTED_NOT_A_RUNTIME_CANDIDATE",
+  "strictMouthScore100": 34,
+  "retainedR1033Score100": 39,
+  "selectedTopologyTransferStudy": "aevrynd-female-cc0-smooth-mouth-cut-r1059-study.blend",
+  "selectedVariant": "a-compact",
+  "finding": "With subdivision disabled and the active armature pose baked into the diagnostic duplicate, the compact cut produces a clean continuous mouth region at 14,005 vertices and 13,745 faces. It remains a static transfer study without shape keys or runtime rig.",
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1058-r1059-smooth-mouth-cut\\contact-sheet-r1058-r1059.jpg"
+}

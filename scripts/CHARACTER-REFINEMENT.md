@@ -1610,3 +1610,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - The proxy surface itself is continuous, but the inherited 76-edge attachment remains serrated and the undeleted main-component depth stack protrudes around it. All variants show alternating white shelves and black folds; strict score is 6/100.
 - No Blend candidate or website asset is retained. Changing the surface formula while retaining the existing attachment boundary is closed.
 - The next route must split stable perioral faces along a new smooth curve, delete the complete enclosed self-overlapped field and weld the replacement to that newly cut boundary.
+
+### v249r1058-r1059 — smooth closed cut topology direction pass
+
+- r1058 applies a 96-segment Aevrynd-authored elliptical cutter to a correctly evaluated diagnostic mesh. Compact, balanced and broad cuts all remove the self-overlapped lip stack and produce a continuous mouth cavity without the spikes, tabs or layered fragments seen in r1044-r1057.
+- The evaluated result has about 217k vertices and no transferable deformation contract, so it is evidence only. Its strict mouth score is 36/100.
+- r1059 disables subdivision before evaluation while retaining the current Armature pose. The compact cut produces 14,005 vertices and 13,745 faces from a 13,620-vertex visible-body base. The balanced and broad cuts are similarly stable.
+- The compact low-density result is saved as `aevrynd-female-cc0-smooth-mouth-cut-r1059-study.blend`. It is a topology-transfer study, not a character candidate: it has no shape keys or runtime rig and scores 34/100 versus retained r1033 at 39/100.
+- This is the first post-r1044 route that removes the complete inherited mouth stack without exposing deeper fragments. The next step is full 35-key delta and deform-weight transfer in Basis space, followed by restored Armature/subdivision and dynamic collision review.
