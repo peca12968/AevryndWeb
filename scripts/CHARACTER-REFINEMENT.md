@@ -1646,3 +1646,10 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - r1064 turns the same measured band directly inward by 0.5, 1.0, 1.5 and 2.0 mm. The cavity deepens, but the bright edge remains and widens at stronger bounds. Strict score falls to 36/100.
 - Both studies are visually rejected before collision promotion. r1061 remains the expression/deformation technical candidate, r1033 remains the visual mouth mainline and website v83 remains unchanged.
 - r1065 must test a confined evaluated-normal transfer from a locally relaxed reference while preserving geometry and the complete deformation contract. A normal solution is valid only if it survives export and does not merely move the highlight.
+
+### v249r1065 — confined weighted-normal rejection
+
+- r1065 preserves r1061 geometry and all 35 shape keys, creates one explicit 85-vertex core plus 90-vertex support group, and places a Weighted Normal modifier after subdivision and armature.
+- Face-area weights 10, 30, 50 and 100 are visually identical. Each differs from the control by only 0.001458/255 mean RGB intensity, consistent with render jitter rather than a changed normal field.
+- The chalk-bright lower inner edge remains unchanged, so post-subdivision weighted normals cannot repair this transition. Strict mouth quality stays at 38/100 and the modifier is rejected from the technical mainline.
+- r1066 must add real support geometry around the measured edge, initially as a narrow procedural bevel/support ring, then prove export stability, shape-key compatibility and dynamic collision before promotion.

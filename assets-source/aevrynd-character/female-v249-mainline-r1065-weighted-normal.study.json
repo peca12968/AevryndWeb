@@ -1,0 +1,93 @@
+{
+  "revision": "v249r1065-weighted-normal",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-structured-lips-r1061-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-inner-edge-normals-r1065-study.blend",
+  "method": "Weighted Normal modifier after subdivision and armature, confined by the measured 85-vertex core and 90-vertex support group",
+  "variants": [
+    {
+      "label": "a-control",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "modifierWeight": 0,
+        "modifierAdded": false
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1065-weighted-normal\\a-control-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1065-weighted-normal\\a-control-oblique.png"
+      ]
+    },
+    {
+      "label": "b-weight10",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "modifierWeight": 10,
+        "modifierAdded": true
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1065-weighted-normal\\b-weight10-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1065-weighted-normal\\b-weight10-oblique.png"
+      ]
+    },
+    {
+      "label": "c-weight30",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "modifierWeight": 30,
+        "modifierAdded": true
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1065-weighted-normal\\c-weight30-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1065-weighted-normal\\c-weight30-oblique.png"
+      ]
+    },
+    {
+      "label": "d-weight50",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "modifierWeight": 50,
+        "modifierAdded": true
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1065-weighted-normal\\d-weight50-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1065-weighted-normal\\d-weight50-oblique.png"
+      ]
+    },
+    {
+      "label": "e-weight100",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "modifierWeight": 100,
+        "modifierAdded": true
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1065-weighted-normal\\e-weight100-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1065-weighted-normal\\e-weight100-oblique.png"
+      ]
+    }
+  ],
+  "selectedVariant": "d-weight50",
+  "geometryChanged": false,
+  "shapeKeysChanged": false,
+  "websitePromotionApproved": false,
+  "candidateStatus": "VISUAL_REJECT_WEIGHTED_NORMAL_INEFFECTIVE",
+  "strictMouthScore100": 38,
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1065-weighted-normal\\contact-sheet-r1065.jpg",
+  "meanAbsolutePixelDifferenceFromControl255": {
+    "a-control": 0.0,
+    "b-weight10": 0.0014583333333333334,
+    "c-weight30": 0.0014583333333333334,
+    "d-weight50": 0.0014583333333333334,
+    "e-weight100": 0.0014583333333333334
+  },
+  "finding": "Weights 10, 30, 50 and 100 all produce the same 0.001458/255 mean difference from control, consistent with render jitter. The bright edge is unchanged, so a post-subdivision Weighted Normal modifier does not control this evaluated lip transition."
+}
