@@ -1561,3 +1561,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - Filling only the 26 newly exposed one-face edges preserves all 35 shape keys and adds no vertices, but Blender can form only five large faces. Skin fill recreates pointed pale shelves and a central notch; wetline fill produces obvious rectangular hanging tabs.
 - The strict score is 24/100. No candidate Blend is saved, no website asset changes, and r1033 remains retained at 39/100.
 - r1049 must abandon the four small figure-eight holes, return to the clean 36-edge primary aperture and remove the incompatible small components as whole islands. A single welded upper/lower inner-lip strip with dedicated commissure poles must then inherit all shape keys and deform weights before collision review.
+
+### v249r1049 — face-component classification and island hypothesis rejection
+
+- r1049 classifies the r1046 body into 151 face-connected components. The dominant visible body component contains 13,584 faces; the mouth region also overlaps several independent 4–15-face components with 8–32 vertices.
+- Four controlled deletions remove the eight proven strip faces plus 26, 32, 80 or 230 faces from genuinely disconnected components. The neutral renders remain pixel-identical within the measured image-difference bound.
+- The central pink disk, bilateral hanging tabs and remaining strip fragments therefore all belong to the 13,584-face main component. Removing detached mouth-overlapping islands cannot repair them.
+- Strict quality remains 18/100 after the strip removal. No candidate Blend or website asset is produced. The disconnected-island cleanup route is closed.
+- r1050 must treat the full artifact field as one local main-component retopology problem: select a clean outer attachment boundary around retained r1033 vermilion, delete the enclosed faces once, then construct a welded two-path upper/lower patch with independent commissure poles, rear vestibule and jaw-coupled separation.
