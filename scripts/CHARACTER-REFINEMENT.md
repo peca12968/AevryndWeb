@@ -1577,3 +1577,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - Forty-one fields meet the middle-size gate. The selected 34-by-5 mm field removes 296 connected faces, contains 336 of 494 main-component lip-weighted vertices (68.0162%), and yields a 76-edge outer attachment plus a 60-edge aperture reference.
 - No geometry, material, light, website asset or retained candidate changes in this round. r1033 remains the retained mouth candidate at 39/100.
 - The next build must keep the 76-edge outer loop, discard the inherited interior field in one operation, and author separate upper/lower paths with nonshared commissure poles, rear vestibule depth and jaw-coupled separation while preserving all 35 shape keys and deform weights.
+
+### v249r1051-r1052 — welded two-path proof and topology-dilation rejection
+
+- r1051 deletes the measured 296-face vermilion field and welds three new 76-vertex rows directly to its outer seam. All three depth bounds add 228 vertices/faces, preserve all 35 shape keys and give every new vertex at least five deform groups.
+- The construction proves that independent upper/lower parameterization can open and smile without the r1042 radial convergence. It is still a strict visual failure at 12/100: one steep transition exposes the serrated source seam as white upper spikes, inherited internal faces hang below as black tabs, and the cavity remains planar.
+- No candidate Blend is saved and website v83 remains unchanged. The retained mouth remains r1033 at 39/100.
+- r1052 expands the 296-face field through 0-16 guarded topological rings. The selection reaches 808 faces, but the two-loop structure never collapses; after ten rings it branches into three loops. Uniform dilation therefore cannot produce the required clean single replacement boundary.
+- The next build must use several curvature-limited transition rows and delete only inherited first-hit faces that sit in front of a bounded rear vestibule wall. It must pass body self-collision before any candidate is retained.
