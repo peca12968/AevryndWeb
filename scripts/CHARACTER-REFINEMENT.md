@@ -1618,3 +1618,13 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - r1059 disables subdivision before evaluation while retaining the current Armature pose. The compact cut produces 14,005 vertices and 13,745 faces from a 13,620-vertex visible-body base. The balanced and broad cuts are similarly stable.
 - The compact low-density result is saved as `aevrynd-female-cc0-smooth-mouth-cut-r1059-study.blend`. It is a topology-transfer study, not a character candidate: it has no shape keys or runtime rig and scores 34/100 versus retained r1033 at 39/100.
 - This is the first post-r1044 route that removes the complete inherited mouth stack without exposing deeper fragments. The next step is full 35-key delta and deform-weight transfer in Basis space, followed by restored Armature/subdivision and dynamic collision review.
+
+### v249r1060 — Basis-space shape-key transfer and dynamic collision pass
+
+- r1060 rebuilds the compact smooth cut in source Basis space and maps the retained vertices to source Basis triangles. It transfers absolute deltas for all 35 shape keys plus normalized deform weights, then restores subdivision and Armature deformation.
+- The resulting body has 13,583 vertices and 13,519 faces. Shape-key names match exactly, every vertex has deform weights, and total weight sums stay within 0.9999999553-1.0000000428.
+- Frames 1/20/33/61, mouth-open and smile each pass with zero non-adjacent body self-collision. Brows, density layers, sclerae, corneas, upper/lower lashes and medial caruncles have zero body overlap at all four rig frames.
+- The smooth cut removes the visible spikes, pale shelves and hanging fragments that invalidated r1044-r1057. Neutral, oblique, mouth-open and smile remain visually stable under the fixed review setup.
+- Strict mouth quality is 36/100, below retained r1033 at 39/100. The cavity still reads as a shallow dark slit, upper/lower vermilion curvature is weak, commissures are generic and the two expression probes separate too little.
+- r1060 is retained as a clean topology/deformation technical candidate, not as the visual face mainline and not for website promotion. r1033 remains the visual face candidate; website v83 is unchanged.
+- r1061 must improve Cupid-bow and philtrum continuity, upper/lower vermilion volume, closed commissures and jaw-coupled vertical opening while preserving the r1060 35-key, normalized-weight and zero-collision contract.

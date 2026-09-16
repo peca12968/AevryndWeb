@@ -1,0 +1,34 @@
+{
+  "revision": "v249r1060-shapekey-transfer",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-lower-lip-rim-turn-r1033-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-smooth-mouth-transfer-r1060-study.blend",
+  "method": "compact Basis-space smooth boolean followed by nearest-source-triangle barycentric transfer of absolute deltas for all shape keys and normalized deform weights; restore subdivision and Armature",
+  "transfer": {
+    "sourceShapeKeys": 35,
+    "targetShapeKeys": 35,
+    "shapeKeyNamesMatch": true,
+    "targetVertices": 13583,
+    "targetFaces": 13519,
+    "mappingDistanceMm": {
+      "median": 0.0,
+      "p95": 0.0,
+      "maximum": 0.0
+    },
+    "assignedWeights": 52353,
+    "minimumVertexGroupCount": 3
+  },
+  "renders": [
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1060-shapekey-transfer\\neutral-front.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1060-shapekey-transfer\\neutral-oblique.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1060-shapekey-transfer\\mouth-open.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1060-shapekey-transfer\\smile.png"
+  ],
+  "candidateStatus": "TECHNICAL_TOPOLOGY_AND_DEFORMATION_PASS_VISUAL_BELOW_RETAINED_R1033",
+  "websitePromotionApproved": false,
+  "strictMouthScore100": 36,
+  "retainedR1033MouthScore100": 39,
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1060-shapekey-transfer.collision-audit.json",
+  "collisionStatus": "PASS",
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1060-shapekey-transfer\\contact-sheet-r1060.jpg",
+  "finding": "The compact Basis-space cleanup retains all 35 shape keys, normalized deform weights, subdivision and Armature deformation. It removes the visible inherited mouth fragments and stays stable in neutral, four rig frames, mouth-open and smile. The mouth is still a dark shallow slit with weak expression separation and incomplete lip anatomy."
+}
