@@ -1,0 +1,113 @@
+{
+  "revision": "v249r1061-lip-form-expression",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-smooth-mouth-transfer-r1060-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-structured-lips-r1061-study.blend",
+  "method": "all-shape neutral lip sculpt plus replacement of ineffective mouth-open and smile deltas",
+  "variants": [
+    {
+      "label": "a-control",
+      "strength": 0.0,
+      "neutralMovedVertices": 0,
+      "neutralMaximumMoveMm": 0.0,
+      "expressions": {
+        "Aevrynd_MouthOpenTest_R1030": {
+          "movedVertices": 732,
+          "maximumDeltaMm": 2.3165531052187722,
+          "maximumVerticalMm": 2.309905830770731
+        },
+        "Aevrynd_SmileTest_R1030": {
+          "movedVertices": 732,
+          "maximumDeltaMm": 1.983415069271635,
+          "maximumVerticalMm": 1.309631741605699
+        }
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1061-lip-form-expression\\a-control-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1061-lip-form-expression\\a-control-neutral-oblique.png"
+      ]
+    },
+    {
+      "label": "b-restrained",
+      "strength": 0.7,
+      "neutralMovedVertices": 912,
+      "neutralMaximumMoveMm": 0.5743683716213571,
+      "expressions": {
+        "Aevrynd_MouthOpenTest_R1030": {
+          "movedVertices": 732,
+          "maximumDeltaMm": 2.316763661765035,
+          "maximumVerticalMm": 2.3100257385522127
+        },
+        "Aevrynd_SmileTest_R1030": {
+          "movedVertices": 732,
+          "maximumDeltaMm": 1.947061536255943,
+          "maximumVerticalMm": 1.2851414503529668
+        }
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1061-lip-form-expression\\b-restrained-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1061-lip-form-expression\\b-restrained-neutral-oblique.png"
+      ]
+    },
+    {
+      "label": "c-anatomical",
+      "strength": 1.0,
+      "neutralMovedVertices": 918,
+      "neutralMaximumMoveMm": 0.8205262299307076,
+      "expressions": {
+        "Aevrynd_MouthOpenTest_R1030": {
+          "movedVertices": 732,
+          "maximumDeltaMm": 2.316816262642369,
+          "maximumVerticalMm": 2.310039009898901
+        },
+        "Aevrynd_SmileTest_R1030": {
+          "movedVertices": 732,
+          "maximumDeltaMm": 1.930554454938915,
+          "maximumVerticalMm": 1.2740020174533129
+        }
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1061-lip-form-expression\\c-anatomical-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1061-lip-form-expression\\c-anatomical-neutral-oblique.png"
+      ],
+      "expressionRenders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1061-lip-form-expression\\selected-open-0.65.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1061-lip-form-expression\\selected-open-1.00.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1061-lip-form-expression\\selected-open-1.25.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1061-lip-form-expression\\selected-smile-0.65.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1061-lip-form-expression\\selected-smile-1.00.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1061-lip-form-expression\\selected-smile-1.25.png"
+      ]
+    },
+    {
+      "label": "d-strong",
+      "strength": 1.3,
+      "neutralMovedVertices": 921,
+      "neutralMaximumMoveMm": 1.066684125887898,
+      "expressions": {
+        "Aevrynd_MouthOpenTest_R1030": {
+          "movedVertices": 732,
+          "maximumDeltaMm": 2.3168461738557853,
+          "maximumVerticalMm": 2.3100292310118675
+        },
+        "Aevrynd_SmileTest_R1030": {
+          "movedVertices": 732,
+          "maximumDeltaMm": 1.9135147474821506,
+          "maximumVerticalMm": 1.262493897229433
+        }
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1061-lip-form-expression\\d-strong-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1061-lip-form-expression\\d-strong-neutral-oblique.png"
+      ]
+    }
+  ],
+  "selectedVariant": "c-anatomical",
+  "candidateStatus": "TECHNICAL_EXPRESSION_AND_COLLISION_PASS_VISUAL_BELOW_RETAINED_R1033",
+  "websitePromotionApproved": false,
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1061-lip-form-expression.collision-audit.json",
+  "collisionStatus": "PASS",
+  "strictMouthScore100": 38,
+  "retainedR1033MouthScore100": 39,
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1061-r1062-lips-expression-material\\contact-sheet-r1061-r1062.jpg",
+  "finding": "The replacement expression keys raise maximum vertical motion from 0.051 mm to 2.310 mm for mouth-open and 1.274 mm for smile while retaining all 35 keys and zero collision. Neutral lip form changes remain subtle, smile readability is weak and the lower inner edge stays chalk-bright."
+}

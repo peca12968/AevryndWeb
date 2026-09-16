@@ -1,0 +1,502 @@
+{
+  "revision": "v249r1060-mouth-region-inspection",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-smooth-mouth-transfer-r1060-study.blend",
+  "body": "AevryndFemaleCC0SmoothMouth_R1060",
+  "topology": {
+    "vertices": 13583,
+    "edges": 27102,
+    "faces": 13519
+  },
+  "activeShapeKeys": {
+    "Basis": 1.0,
+    "$md-$as-$fe-$ch": 0.03830437734723091,
+    "$md-$as-$fe-$yn": 0.36111560463905334,
+    "$md-$as-$ma-$yn": 0.01860637776553631,
+    "$md-$ca-$fe-$ch": 0.03100830689072609,
+    "$md-$ca-$fe-$yn": 0.2923316955566406,
+    "$md-$ca-$ma-$yn": 0.015062306076288223,
+    "$md-$af-$fe-$ch": 0.021888215094804764,
+    "$md-$af-$fe-$yn": 0.20635177195072174,
+    "$md-$af-$ma-$yn": 0.01063221599906683,
+    "$md-universal-$fe-$ch-min$mu-$av$wg": 0.012022263370454311,
+    "$md-universal-$fe-$ch-$av$mu-$av$wg": 0.07560355961322784,
+    "$md-universal-$fe-$yn-min$mu-$av$wg": 0.11334022879600525,
+    "$md-universal-$fe-$yn-$av$mu-min$wg": 0.029079919680953026,
+    "$md-universal-$fe-$yn-$av$mu-$av$wg": 0.7127547264099121,
+    "$md-universal-$ma-$yn-$av$mu-$av$wg": 0.036724481731653214,
+    "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi": 0.01073460839688778,
+    "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi": 0.013792493380606174,
+    "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi": 0.01609266735613346,
+    "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi": 0.01609266735613346,
+    "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi": 0.08673588186502457,
+    "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi": 0.10120083391666412,
+    "$md-$fe-$yn-$av$mu-$av$wg-$id$pr": 0.027939986437559128,
+    "Aevrynd_MixedSpaceEyelidRelief_R1000": 1.0,
+    "Aevrynd_UpperLidOrbitalVolume_R1024": 0.6499999761581421,
+    "Aevrynd_PerioralAnatomy_R1030": 1.0,
+    "Aevrynd_LowerLipRimTurn_R1033": 0.6499999761581421
+  },
+  "materialSlots": [
+    "Aevrynd_CC0_OwnedSkin_R1031_a-soft-warm",
+    "Aevrynd_EyelidWetline_R1022",
+    null
+  ],
+  "mouthNamedVertexGroups": [
+    "joint-jaw",
+    "joint-mouth",
+    "lips",
+    "joint-jaw.001",
+    "joint-mouth.001",
+    "lips.001"
+  ],
+  "mouthVertexGroupMetrics": {
+    "joint-mouth": {
+      "weightedVertices": 0,
+      "maximumWeight": 0.0
+    },
+    "lips": {
+      "weightedVertices": 494,
+      "maximumWeight": 0.25
+    },
+    "joint-mouth.001": {
+      "weightedVertices": 0,
+      "maximumWeight": 0.0
+    },
+    "lips.001": {
+      "weightedVertices": 0,
+      "maximumWeight": 0.0
+    }
+  },
+  "mouthNamedColorAttributes": [],
+  "materialPolygonCounts": {
+    "0": 13423,
+    "1": 96,
+    "2": 0
+  },
+  "mouthRegionMaterialPolygonCounts": {
+    "0": 132,
+    "1": 0,
+    "2": 0
+  },
+  "materialNodes": {
+    "Aevrynd_CC0_OwnedSkin_R1031_a-soft-warm": {
+      "\u539f\u5247\u5316 BSDF": {
+        "Base Color": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ],
+        "Metallic": 0.0,
+        "Roughness": 0.5,
+        "IOR": 1.5,
+        "Alpha": 1.0,
+        "Thin Wall": false,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Weight": 0.0,
+        "Diffuse Roughness": 0.0,
+        "Subsurface Weight": 0.04500000178813934,
+        "Subsurface Radius": [
+          1.0,
+          0.20000000298023224,
+          0.10000000149011612
+        ],
+        "Subsurface Scale": 0.0044999998062849045,
+        "Subsurface IOR": 1.399999976158142,
+        "Subsurface Anisotropy": 0.0,
+        "Specular IOR Level": 0.20000000298023224,
+        "Specular Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Anisotropic": 0.0,
+        "Anisotropic Rotation": 0.0,
+        "Tangent": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Transmission Weight": 0.0,
+        "Coat Weight": 0.006000000052154064,
+        "Coat Roughness": 0.029999999329447746,
+        "Coat IOR": 1.5,
+        "Coat Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Coat Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Sheen Weight": 0.0,
+        "Sheen Roughness": 0.5,
+        "Sheen Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0,
+        "Thin Film Thickness": 0.0,
+        "Thin Film IOR": 1.3300000429153442
+      }
+    },
+    "Aevrynd_EyelidWetline_R1022": {
+      "\u539f\u5247\u5316 BSDF": {
+        "Base Color": [
+          0.10999999940395355,
+          0.017999999225139618,
+          0.012000000104308128,
+          1.0
+        ],
+        "Metallic": 0.0,
+        "Roughness": 0.5199999809265137,
+        "IOR": 1.5,
+        "Alpha": 1.0,
+        "Thin Wall": false,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Weight": 0.0,
+        "Diffuse Roughness": 0.0,
+        "Subsurface Weight": 0.0,
+        "Subsurface Radius": [
+          1.0,
+          0.20000000298023224,
+          0.10000000149011612
+        ],
+        "Subsurface Scale": 0.004999999888241291,
+        "Subsurface IOR": 1.399999976158142,
+        "Subsurface Anisotropy": 0.0,
+        "Specular IOR Level": 0.5,
+        "Specular Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Anisotropic": 0.0,
+        "Anisotropic Rotation": 0.0,
+        "Tangent": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Transmission Weight": 0.0,
+        "Coat Weight": 0.0,
+        "Coat Roughness": 0.029999999329447746,
+        "Coat IOR": 1.5,
+        "Coat Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Coat Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Sheen Weight": 0.0,
+        "Sheen Roughness": 0.5,
+        "Sheen Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0,
+        "Thin Film Thickness": 0.0,
+        "Thin Film IOR": 1.3300000429153442
+      }
+    }
+  },
+  "skinMaterialGraph": {
+    "nodes": [
+      {
+        "name": "\u6750\u8cea\u8f38\u51fa",
+        "type": "ShaderNodeOutputMaterial",
+        "label": ""
+      },
+      {
+        "name": "\u539f\u5247\u5316 BSDF",
+        "type": "ShaderNodeBsdfPrincipled",
+        "label": ""
+      },
+      {
+        "name": "\u7d0b\u7406\u5ea7\u6a19",
+        "type": "ShaderNodeTexCoord",
+        "label": ""
+      },
+      {
+        "name": "\u566a\u8a0a\u7d0b\u7406",
+        "type": "ShaderNodeTexNoise",
+        "label": ""
+      },
+      {
+        "name": "\u8272\u5f69\u6f38\u8b8a",
+        "type": "ShaderNodeValToRGB",
+        "label": ""
+      },
+      {
+        "name": "\u7279\u6027",
+        "type": "ShaderNodeAttribute",
+        "label": ""
+      },
+      {
+        "name": "\u6df7\u5408 (\u820a\u7248)",
+        "type": "ShaderNodeMixRGB",
+        "label": ""
+      },
+      {
+        "name": "\u566a\u8a0a\u7d0b\u7406.001",
+        "type": "ShaderNodeTexNoise",
+        "label": ""
+      },
+      {
+        "name": "\u51f9\u51f8",
+        "type": "ShaderNodeBump",
+        "label": ""
+      },
+      {
+        "name": "Aevrynd Lip Mask Strength R1031",
+        "type": "ShaderNodeMath",
+        "label": ""
+      },
+      {
+        "name": "Aevrynd Lip Roughness Delta R1031",
+        "type": "ShaderNodeMath",
+        "label": ""
+      },
+      {
+        "name": "Aevrynd Lip Roughness Base R1031",
+        "type": "ShaderNodeMath",
+        "label": ""
+      }
+    ],
+    "links": [
+      {
+        "from": "\u7d0b\u7406\u5ea7\u6a19.Object",
+        "to": "\u566a\u8a0a\u7d0b\u7406.Vector"
+      },
+      {
+        "from": "\u566a\u8a0a\u7d0b\u7406.Factor",
+        "to": "\u8272\u5f69\u6f38\u8b8a.Factor"
+      },
+      {
+        "from": "\u8272\u5f69\u6f38\u8b8a.Color",
+        "to": "\u6df7\u5408 (\u820a\u7248).Color1"
+      },
+      {
+        "from": "\u6df7\u5408 (\u820a\u7248).Color",
+        "to": "\u539f\u5247\u5316 BSDF.Base Color"
+      },
+      {
+        "from": "\u7d0b\u7406\u5ea7\u6a19.Object",
+        "to": "\u566a\u8a0a\u7d0b\u7406.001.Vector"
+      },
+      {
+        "from": "\u566a\u8a0a\u7d0b\u7406.001.Factor",
+        "to": "\u51f9\u51f8.Height"
+      },
+      {
+        "from": "\u51f9\u51f8.Normal",
+        "to": "\u539f\u5247\u5316 BSDF.Normal"
+      },
+      {
+        "from": "\u539f\u5247\u5316 BSDF.BSDF",
+        "to": "\u6750\u8cea\u8f38\u51fa.Surface"
+      },
+      {
+        "from": "\u7279\u6027.Factor",
+        "to": "Aevrynd Lip Mask Strength R1031.Value"
+      },
+      {
+        "from": "Aevrynd Lip Mask Strength R1031.Value",
+        "to": "\u6df7\u5408 (\u820a\u7248).Factor"
+      },
+      {
+        "from": "\u7279\u6027.Factor",
+        "to": "Aevrynd Lip Roughness Delta R1031.Value"
+      },
+      {
+        "from": "Aevrynd Lip Roughness Delta R1031.Value",
+        "to": "Aevrynd Lip Roughness Base R1031.Value"
+      },
+      {
+        "from": "Aevrynd Lip Roughness Base R1031.Value",
+        "to": "\u539f\u5247\u5316 BSDF.Roughness"
+      }
+    ],
+    "lipControls": {
+      "\u7279\u6027": {
+        "operation": null,
+        "attributeName": "lips",
+        "blendType": null,
+        "inputs": {},
+        "indexedInputs": []
+      },
+      "\u6df7\u5408 (\u820a\u7248)": {
+        "operation": null,
+        "attributeName": null,
+        "blendType": "MIX",
+        "inputs": {
+          "Factor": 0.5,
+          "Color1": [
+            0.5,
+            0.5,
+            0.5,
+            1.0
+          ],
+          "Color2": [
+            0.24500000476837158,
+            0.07500000298023224,
+            0.06499999761581421,
+            1.0
+          ]
+        },
+        "indexedInputs": [
+          {
+            "index": 0,
+            "name": "Factor",
+            "value": 0.5
+          },
+          {
+            "index": 1,
+            "name": "Color1",
+            "value": [
+              0.5,
+              0.5,
+              0.5,
+              1.0
+            ]
+          },
+          {
+            "index": 2,
+            "name": "Color2",
+            "value": [
+              0.24500000476837158,
+              0.07500000298023224,
+              0.06499999761581421,
+              1.0
+            ]
+          }
+        ]
+      },
+      "Aevrynd Lip Mask Strength R1031": {
+        "operation": "MULTIPLY",
+        "attributeName": null,
+        "blendType": null,
+        "inputs": {
+          "Value": 0.5
+        },
+        "indexedInputs": [
+          {
+            "index": 0,
+            "name": "Value",
+            "value": 0.5
+          },
+          {
+            "index": 1,
+            "name": "Value",
+            "value": 0.7799999713897705
+          },
+          {
+            "index": 2,
+            "name": "Value",
+            "value": 0.5
+          }
+        ]
+      },
+      "Aevrynd Lip Roughness Delta R1031": {
+        "operation": "MULTIPLY",
+        "attributeName": null,
+        "blendType": null,
+        "inputs": {
+          "Value": 0.5
+        },
+        "indexedInputs": [
+          {
+            "index": 0,
+            "name": "Value",
+            "value": 0.5
+          },
+          {
+            "index": 1,
+            "name": "Value",
+            "value": 0.14000000059604645
+          },
+          {
+            "index": 2,
+            "name": "Value",
+            "value": 0.5
+          }
+        ]
+      },
+      "Aevrynd Lip Roughness Base R1031": {
+        "operation": "ADD",
+        "attributeName": null,
+        "blendType": null,
+        "inputs": {
+          "Value": 0.5
+        },
+        "indexedInputs": [
+          {
+            "index": 0,
+            "name": "Value",
+            "value": 0.5
+          },
+          {
+            "index": 1,
+            "name": "Value",
+            "value": 0.5
+          },
+          {
+            "index": 2,
+            "name": "Value",
+            "value": 0.5
+          }
+        ]
+      }
+    }
+  },
+  "mouthBoundaryEdges": 0,
+  "mouthBoundary": [],
+  "expressionMetrics": {
+    "Aevrynd_MouthOpenTest_R1030": {
+      "affectedVertices": 99,
+      "maximumDeltaMm": 1.065202773163038,
+      "maximumVerticalMm": 0.05125999450683594,
+      "meanVerticalMm": 0.016417166199346984
+    },
+    "Aevrynd_SmileTest_R1030": {
+      "affectedVertices": 99,
+      "maximumDeltaMm": 1.065202773163038,
+      "maximumVerticalMm": 0.05125999450683594,
+      "meanVerticalMm": 0.016417166199346984
+    }
+  }
+}

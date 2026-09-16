@@ -1,0 +1,119 @@
+{
+  "revision": "v249r1062-lip-material",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-structured-lips-r1061-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-balanced-vermilion-r1062-study.blend",
+  "method": "reuse the owned lips vertex group through the existing skin shader; sweep mask strength, target vermilion color and lip roughness without new texture or draw call",
+  "variants": [
+    {
+      "label": "a-r1061-control",
+      "lipMaskStrength": 0.78,
+      "lipRoughnessDelta": 0.14,
+      "lipTargetColorLinearRGBA": [
+        0.245,
+        0.075,
+        0.065,
+        1.0
+      ],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\a-r1061-control-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\a-r1061-control-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\a-r1061-control-smile.png"
+      ]
+    },
+    {
+      "label": "b-natural",
+      "lipMaskStrength": 1.2,
+      "lipRoughnessDelta": 0.38,
+      "lipTargetColorLinearRGBA": [
+        0.3,
+        0.088,
+        0.072,
+        1.0
+      ],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\b-natural-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\b-natural-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\b-natural-smile.png"
+      ]
+    },
+    {
+      "label": "c-balanced",
+      "lipMaskStrength": 1.55,
+      "lipRoughnessDelta": 0.55,
+      "lipTargetColorLinearRGBA": [
+        0.275,
+        0.074,
+        0.061,
+        1.0
+      ],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\c-balanced-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\c-balanced-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\c-balanced-smile.png"
+      ]
+    },
+    {
+      "label": "d-strong",
+      "lipMaskStrength": 1.9,
+      "lipRoughnessDelta": 0.7,
+      "lipTargetColorLinearRGBA": [
+        0.25,
+        0.062,
+        0.052,
+        1.0
+      ],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\d-strong-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\d-strong-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\d-strong-smile.png"
+      ]
+    },
+    {
+      "label": "e-defined",
+      "lipMaskStrength": 3.0,
+      "lipRoughnessDelta": 0.82,
+      "lipTargetColorLinearRGBA": [
+        0.3,
+        0.088,
+        0.072,
+        1.0
+      ],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\e-defined-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\e-defined-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\e-defined-smile.png"
+      ]
+    },
+    {
+      "label": "f-full-mask",
+      "lipMaskStrength": 4.0,
+      "lipRoughnessDelta": 0.92,
+      "lipTargetColorLinearRGBA": [
+        0.315,
+        0.095,
+        0.078,
+        1.0
+      ],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\f-full-mask-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\f-full-mask-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1062-lip-material\\f-full-mask-smile.png"
+      ]
+    }
+  ],
+  "selectedVariant": "e-defined",
+  "topologyChanged": false,
+  "materialSlotCountChanged": false,
+  "websitePromotionApproved": false,
+  "candidateStatus": "VISUAL_REJECT_MATERIAL_MASK_CANNOT_REPAIR_GEOMETRY_NORMAL_EDGE",
+  "strictMouthScore100": 38,
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1061-r1062-lips-expression-material\\contact-sheet-r1061-r1062.jpg",
+  "fixedCropLumaDriftPercentVersusControl": {
+    "leftCheek": 0.5413589407265891,
+    "rightCheek": 0.47207219558591146,
+    "upperFace": 0.5641340758883259,
+    "mouth": 5.0758147461600265
+  },
+  "collisionContract": "geometry and shape keys are byte-equivalent to collision-passing r1061; only owned skin node constants change",
+  "finding": "Even with mask strength raised from 0.78 to 4.00, the inherited 0.25-maximum lips group produces only a weak diffuse shift and does not remove the white lower inner edge. The geometry-normal discontinuity remains dominant."
+}

@@ -1628,3 +1628,13 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - Strict mouth quality is 36/100, below retained r1033 at 39/100. The cavity still reads as a shallow dark slit, upper/lower vermilion curvature is weak, commissures are generic and the two expression probes separate too little.
 - r1060 is retained as a clean topology/deformation technical candidate, not as the visual face mainline and not for website promotion. r1033 remains the visual face candidate; website v83 is unchanged.
 - r1061 must improve Cupid-bow and philtrum continuity, upper/lower vermilion volume, closed commissures and jaw-coupled vertical opening while preserving the r1060 35-key, normalized-weight and zero-collision contract.
+
+### v249r1061-r1062 — effective expression keys and material-mask rejection
+
+- r1060 inspection proves the inherited mouth-open and smile keys are effectively identical in the mouth region: both affect 99 vertices, peak at 1.065 mm overall but move vertically by only 0.051 mm maximum and 0.016 mm on average. The body retains one 494-vertex `lips` group with only 0.25 maximum weight.
+- r1061 moves the neutral lip form across all 35 keys and replaces the two ineffective expression deltas. Mouth-open now affects 732 vertices with 2.310 mm maximum vertical travel; smile reaches 1.274 mm maximum vertical travel. Neutral, open and smile remain free of non-adjacent self-collision.
+- Frames 1/20/33/61 retain zero body self-collision and zero overlap against brows, eye layers, upper/lower lashes and medial caruncles. Shape-key count remains 35, all vertices remain weighted, and topology stays at 13,583 vertices and 13,519 faces.
+- Strict mouth quality reaches 38/100. Opening is finally visible and stable, but the smile is still too weak, the lip mass remains generic and the lower inner edge is a chalk-bright line. r1061 is retained as an expression/deformation technical candidate below r1033's 39/100 visual score.
+- r1062 tests the existing owned lip shader mask from 0.78 through 4.00 plus higher lip roughness. The stronger bounds tint a broad interpolated region while leaving the bright edge intact; fixed non-mouth crops drift by about 0.47%-0.56% and the mouth crop by 5.08% at the selected diagnostic bound.
+- r1062 is rejected. Material masking cannot repair the underlying tangent/normal discontinuity and must not be used to hide it. Website v83 remains unchanged.
+- r1063 must identify the exact evaluated lower-inner edge loop, rebuild or fair its support ring for tangent continuity, and broaden smile-corner displacement while preserving r1061's 35-key and zero-collision contract.
