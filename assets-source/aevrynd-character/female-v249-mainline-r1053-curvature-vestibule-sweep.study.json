@@ -1,0 +1,130 @@
+{
+  "revision": "v249r1053-curvature-vestibule-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-lower-lip-rim-turn-r1033-study.blend",
+  "method": "delete the measured 296-face r1033 vermilion field; preserve its welded 76-edge seam; damp seam irregularity through three curvature-limited rows; build separate upper/lower crest and aperture paths; ray-delete only inherited faces in front of a bounded rear vestibule wall",
+  "variants": [
+    {
+      "label": "a-soft",
+      "crestY": -0.146,
+      "innerY": -0.1445,
+      "build": {
+        "deletedFaces": 296,
+        "sourceBoundaryLoops": [
+          76,
+          60
+        ],
+        "outerBoundaryVertices": 76,
+        "addedVertices": 380,
+        "addedFaces": 380,
+        "shapeKeys": 35,
+        "shapeKeyCompatible": true,
+        "minimumNewVertexGroupCount": 5,
+        "originalVertexCount": 19398
+      },
+      "occluderCleanup": {
+        "passes": [
+          2,
+          0
+        ],
+        "removedFaces": 2,
+        "wallY": -0.1405
+      },
+      "rearWall": {
+        "object": "Aevrynd_OralBackWall_R1053",
+        "vertices": 65,
+        "faces": 64,
+        "y": -0.1405
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1053-curvature-vestibule-sweep\\a-soft-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1053-curvature-vestibule-sweep\\a-soft-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1053-curvature-vestibule-sweep\\a-soft-smile.png"
+      ],
+      "status": "VISUAL_REVIEW_PENDING"
+    },
+    {
+      "label": "b-balanced",
+      "crestY": -0.1475,
+      "innerY": -0.1455,
+      "build": {
+        "deletedFaces": 296,
+        "sourceBoundaryLoops": [
+          76,
+          60
+        ],
+        "outerBoundaryVertices": 76,
+        "addedVertices": 380,
+        "addedFaces": 380,
+        "shapeKeys": 35,
+        "shapeKeyCompatible": true,
+        "minimumNewVertexGroupCount": 5,
+        "originalVertexCount": 19398
+      },
+      "occluderCleanup": {
+        "passes": [
+          2,
+          0
+        ],
+        "removedFaces": 2,
+        "wallY": -0.1405
+      },
+      "rearWall": {
+        "object": "Aevrynd_OralBackWall_R1053",
+        "vertices": 65,
+        "faces": 64,
+        "y": -0.1405
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1053-curvature-vestibule-sweep\\b-balanced-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1053-curvature-vestibule-sweep\\b-balanced-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1053-curvature-vestibule-sweep\\b-balanced-smile.png"
+      ],
+      "status": "VISUAL_REVIEW_PENDING"
+    },
+    {
+      "label": "c-defined",
+      "crestY": -0.149,
+      "innerY": -0.1465,
+      "build": {
+        "deletedFaces": 296,
+        "sourceBoundaryLoops": [
+          76,
+          60
+        ],
+        "outerBoundaryVertices": 76,
+        "addedVertices": 380,
+        "addedFaces": 380,
+        "shapeKeys": 35,
+        "shapeKeyCompatible": true,
+        "minimumNewVertexGroupCount": 5,
+        "originalVertexCount": 19398
+      },
+      "occluderCleanup": {
+        "passes": [
+          2,
+          0
+        ],
+        "removedFaces": 2,
+        "wallY": -0.1405
+      },
+      "rearWall": {
+        "object": "Aevrynd_OralBackWall_R1053",
+        "vertices": 65,
+        "faces": 64,
+        "y": -0.1405
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1053-curvature-vestibule-sweep\\c-defined-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1053-curvature-vestibule-sweep\\c-defined-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1053-curvature-vestibule-sweep\\c-defined-smile.png"
+      ],
+      "status": "VISUAL_REVIEW_PENDING"
+    }
+  ],
+  "websitePromotionApproved": false,
+  "status": "REJECT_BRIGHT_SEAM_AND_LOWER_INTERNAL_TABS",
+  "strictMouthScore100": 18,
+  "retainedR1033Score100": 39,
+  "candidateBlendSaved": false,
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1053-r1055-mouth\\contact-sheet-r1053-r1055.jpg"
+}

@@ -1585,3 +1585,12 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - No candidate Blend is saved and website v83 remains unchanged. The retained mouth remains r1033 at 39/100.
 - r1052 expands the 296-face field through 0-16 guarded topological rings. The selection reaches 808 faces, but the two-loop structure never collapses; after ten rings it branches into three loops. Uniform dilation therefore cannot produce the required clean single replacement boundary.
 - The next build must use several curvature-limited transition rows and delete only inherited first-hit faces that sit in front of a bounded rear vestibule wall. It must pass body self-collision before any candidate is retained.
+
+### v249r1053-r1055 — curvature damping, vestibule bounds and depth-stack closure
+
+- r1053 replaces the single transition with three curvature-limited rows, adds a 64-segment rear vestibule wall and deletes only two inherited aperture faces proven to lie in front of that wall. All 35 shape keys and at least five deform groups per new vertex remain intact.
+- The wall removes the empty central cavity and the extra rows shorten the worst upper spikes, but a bright shelf and black lower tabs remain. Strict quality reaches only 18/100.
+- r1054 begins exactly at the source seam and spreads its movement over five rows. The white shelf becomes broader rather than smoother, proving the failure comes from the projected lip surface orientation, not insufficient ring count. Score: 10/100.
+- A lower-band ray scan consistently finds 15-17 inherited first-hit faces. Extending the wall to cover them creates a visible mauve mask outside the mouth. r1055 instead removes one exact 15-face pass and exposes a deeper stack of coloured fragments. Score: 8/100.
+- No Blend candidate or website asset is retained. Mask enlargement, additional seam damping and layer-by-layer excavation are closed.
+- The next route must sample the visually retained r1033 outer-lip surface, reconstruct a new continuous interior behind it, and transfer the complete 35-key deformation contract before any collision promotion.

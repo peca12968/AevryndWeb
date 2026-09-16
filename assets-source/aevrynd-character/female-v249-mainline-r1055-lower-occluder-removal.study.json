@@ -1,0 +1,63 @@
+{
+  "revision": "v249r1055-lower-occluder-removal",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-lower-lip-rim-turn-r1033-study.blend",
+  "method": "hold the r1053 soft patch; remove exactly one measured pass of inherited lower first-hit faces; retain the bounded 2.3 mm rear vestibule wall",
+  "variants": [
+    {
+      "label": "a-r1053-soft",
+      "crestY": -0.146,
+      "innerY": -0.1445,
+      "build": {
+        "deletedFaces": 296,
+        "sourceBoundaryLoops": [
+          76,
+          60
+        ],
+        "outerBoundaryVertices": 76,
+        "addedVertices": 380,
+        "addedFaces": 380,
+        "shapeKeys": 35,
+        "shapeKeyCompatible": true,
+        "minimumNewVertexGroupCount": 5,
+        "originalVertexCount": 19398
+      },
+      "occluderCleanup": {
+        "passes": [
+          2,
+          0
+        ],
+        "removedFaces": 2,
+        "wallY": -0.1405
+      },
+      "lowerOccluderCleanup": {
+        "passes": [
+          15
+        ],
+        "removedFaces": 15,
+        "sampleBandZ": [
+          1.38175,
+          1.385
+        ]
+      },
+      "rearWall": {
+        "object": "Aevrynd_OralBackWall_R1055",
+        "vertices": 65,
+        "faces": 64,
+        "y": -0.1405,
+        "verticalRadius": 0.0023
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1055-lower-occluder-removal\\a-r1053-soft-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1055-lower-occluder-removal\\a-r1053-soft-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1055-lower-occluder-removal\\a-r1053-soft-smile.png"
+      ],
+      "status": "VISUAL_REVIEW_PENDING"
+    }
+  ],
+  "websitePromotionApproved": false,
+  "status": "REJECT_DEEPER_FRAGMENT_STACK_EXPOSED",
+  "strictMouthScore100": 8,
+  "retainedR1033Score100": 39,
+  "candidateBlendSaved": false,
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1053-r1055-mouth\\contact-sheet-r1053-r1055.jpg"
+}

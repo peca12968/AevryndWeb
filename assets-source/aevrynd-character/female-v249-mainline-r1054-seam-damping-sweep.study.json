@@ -1,0 +1,910 @@
+{
+  "revision": "v249r1054-seam-damping-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-lower-lip-rim-turn-r1033-study.blend",
+  "method": "delete the measured 296-face r1033 vermilion field; preserve its welded 76-edge seam; begin from the exact source boundary and distribute smoothing over five curvature-limited rows; build separate upper/lower crest and aperture paths; ray-delete only inherited aperture faces in front of a bounded rear vestibule wall; measure lower first-hit faces without deleting them",
+  "variants": [
+    {
+      "label": "a-shallow",
+      "crestY": -0.1455,
+      "innerY": -0.144,
+      "build": {
+        "deletedFaces": 296,
+        "sourceBoundaryLoops": [
+          76,
+          60
+        ],
+        "outerBoundaryVertices": 76,
+        "addedVertices": 532,
+        "addedFaces": 532,
+        "shapeKeys": 35,
+        "shapeKeyCompatible": true,
+        "minimumNewVertexGroupCount": 5,
+        "originalVertexCount": 19398
+      },
+      "occluderCleanup": {
+        "passes": [
+          2,
+          0
+        ],
+        "removedFaces": 2,
+        "wallY": -0.1405
+      },
+      "lowerVisibleOldFaceInspection": {
+        "uniqueOldFirstHitFaces": 17,
+        "faces": [
+          {
+            "face": 221,
+            "center": [
+              -0.017961062490940094,
+              -0.13093705475330353,
+              1.3805500268936157
+            ],
+            "vertices": [
+              405,
+              371,
+              370,
+              406
+            ],
+            "material": 0
+          },
+          {
+            "face": 253,
+            "center": [
+              -0.021611766889691353,
+              -0.1283940225839615,
+              1.380988359451294
+            ],
+            "vertices": [
+              373,
+              399,
+              400,
+              371
+            ],
+            "material": 0
+          },
+          {
+            "face": 310,
+            "center": [
+              -0.008585336618125439,
+              -0.13695141673088074,
+              1.380993366241455
+            ],
+            "vertices": [
+              489,
+              483,
+              484,
+              490
+            ],
+            "material": 0
+          },
+          {
+            "face": 3256,
+            "center": [
+              -0.024834953248500824,
+              -0.12612426280975342,
+              1.380610704421997
+            ],
+            "vertices": [
+              3701,
+              3700,
+              729,
+              399
+            ],
+            "material": 0
+          },
+          {
+            "face": 3257,
+            "center": [
+              -0.02337060309946537,
+              -0.12748181819915771,
+              1.3824107646942139
+            ],
+            "vertices": [
+              5338,
+              3701,
+              399,
+              373
+            ],
+            "material": 0
+          },
+          {
+            "face": 3330,
+            "center": [
+              -0.026093697175383568,
+              -0.12570637464523315,
+              1.382460117340088
+            ],
+            "vertices": [
+              380,
+              725,
+              3700,
+              3701
+            ],
+            "material": 0
+          },
+          {
+            "face": 4596,
+            "center": [
+              -0.028051836416125298,
+              -0.12361712753772736,
+              1.3808565139770508
+            ],
+            "vertices": [
+              3700,
+              725,
+              5142,
+              3699
+            ],
+            "material": 0
+          },
+          {
+            "face": 6818,
+            "center": [
+              0.017961062490940094,
+              -0.13093706965446472,
+              1.3805500268936157
+            ],
+            "vertices": [
+              7165,
+              7166,
+              7130,
+              7131
+            ],
+            "material": 0
+          },
+          {
+            "face": 6850,
+            "center": [
+              0.021611768752336502,
+              -0.1283940225839615,
+              1.380988359451294
+            ],
+            "vertices": [
+              7133,
+              7131,
+              7160,
+              7159
+            ],
+            "material": 0
+          },
+          {
+            "face": 6907,
+            "center": [
+              0.008585336618125439,
+              -0.13695478439331055,
+              1.3809953927993774
+            ],
+            "vertices": [
+              7244,
+              7245,
+              7239,
+              7238
+            ],
+            "material": 0
+          },
+          {
+            "face": 9845,
+            "center": [
+              0.024834955111145973,
+              -0.12612426280975342,
+              1.380610704421997
+            ],
+            "vertices": [
+              10369,
+              7159,
+              7451,
+              10368
+            ],
+            "material": 0
+          },
+          {
+            "face": 9846,
+            "center": [
+              0.02337060123682022,
+              -0.12748181819915771,
+              1.3824107646942139
+            ],
+            "vertices": [
+              11941,
+              7133,
+              7159,
+              10369
+            ],
+            "material": 0
+          },
+          {
+            "face": 9919,
+            "center": [
+              0.026093697175383568,
+              -0.12570637464523315,
+              1.382460117340088
+            ],
+            "vertices": [
+              7140,
+              10369,
+              10368,
+              7447
+            ],
+            "material": 0
+          },
+          {
+            "face": 11295,
+            "center": [
+              0.028051836416125298,
+              -0.12361713498830795,
+              1.3808563947677612
+            ],
+            "vertices": [
+              10368,
+              10367,
+              11756,
+              7447
+            ],
+            "material": 0
+          },
+          {
+            "face": 16679,
+            "center": [
+              0.0,
+              -0.12770427763462067,
+              1.3831384181976318
+            ],
+            "vertices": [
+              14557,
+              14554,
+              14550,
+              14553
+            ],
+            "material": 0
+          },
+          {
+            "face": 17969,
+            "center": [
+              0.0045664613135159016,
+              -0.12496520578861237,
+              1.3848388195037842
+            ],
+            "vertices": [
+              15012,
+              15013,
+              15001,
+              15010
+            ],
+            "material": 0
+          },
+          {
+            "face": 17993,
+            "center": [
+              -0.004566560499370098,
+              -0.12496286630630493,
+              1.3848373889923096
+            ],
+            "vertices": [
+              15012,
+              15010,
+              15036,
+              15046
+            ],
+            "material": 0
+          }
+        ]
+      },
+      "rearWall": {
+        "object": "Aevrynd_OralBackWall_R1054",
+        "vertices": 65,
+        "faces": 64,
+        "y": -0.1405
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1054-seam-damping-sweep\\a-shallow-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1054-seam-damping-sweep\\a-shallow-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1054-seam-damping-sweep\\a-shallow-smile.png"
+      ],
+      "status": "VISUAL_REVIEW_PENDING"
+    },
+    {
+      "label": "b-balanced",
+      "crestY": -0.147,
+      "innerY": -0.145,
+      "build": {
+        "deletedFaces": 296,
+        "sourceBoundaryLoops": [
+          76,
+          60
+        ],
+        "outerBoundaryVertices": 76,
+        "addedVertices": 532,
+        "addedFaces": 532,
+        "shapeKeys": 35,
+        "shapeKeyCompatible": true,
+        "minimumNewVertexGroupCount": 5,
+        "originalVertexCount": 19398
+      },
+      "occluderCleanup": {
+        "passes": [
+          2,
+          0
+        ],
+        "removedFaces": 2,
+        "wallY": -0.1405
+      },
+      "lowerVisibleOldFaceInspection": {
+        "uniqueOldFirstHitFaces": 17,
+        "faces": [
+          {
+            "face": 221,
+            "center": [
+              -0.017961062490940094,
+              -0.13093705475330353,
+              1.3805500268936157
+            ],
+            "vertices": [
+              405,
+              371,
+              370,
+              406
+            ],
+            "material": 0
+          },
+          {
+            "face": 253,
+            "center": [
+              -0.021611766889691353,
+              -0.1283940225839615,
+              1.380988359451294
+            ],
+            "vertices": [
+              373,
+              399,
+              400,
+              371
+            ],
+            "material": 0
+          },
+          {
+            "face": 310,
+            "center": [
+              -0.008585336618125439,
+              -0.13695141673088074,
+              1.380993366241455
+            ],
+            "vertices": [
+              489,
+              483,
+              484,
+              490
+            ],
+            "material": 0
+          },
+          {
+            "face": 3256,
+            "center": [
+              -0.024834953248500824,
+              -0.12612426280975342,
+              1.380610704421997
+            ],
+            "vertices": [
+              3701,
+              3700,
+              729,
+              399
+            ],
+            "material": 0
+          },
+          {
+            "face": 3257,
+            "center": [
+              -0.02337060309946537,
+              -0.12748181819915771,
+              1.3824107646942139
+            ],
+            "vertices": [
+              5338,
+              3701,
+              399,
+              373
+            ],
+            "material": 0
+          },
+          {
+            "face": 3330,
+            "center": [
+              -0.026093697175383568,
+              -0.12570637464523315,
+              1.382460117340088
+            ],
+            "vertices": [
+              380,
+              725,
+              3700,
+              3701
+            ],
+            "material": 0
+          },
+          {
+            "face": 4596,
+            "center": [
+              -0.028051836416125298,
+              -0.12361712753772736,
+              1.3808565139770508
+            ],
+            "vertices": [
+              3700,
+              725,
+              5142,
+              3699
+            ],
+            "material": 0
+          },
+          {
+            "face": 6818,
+            "center": [
+              0.017961062490940094,
+              -0.13093706965446472,
+              1.3805500268936157
+            ],
+            "vertices": [
+              7165,
+              7166,
+              7130,
+              7131
+            ],
+            "material": 0
+          },
+          {
+            "face": 6850,
+            "center": [
+              0.021611768752336502,
+              -0.1283940225839615,
+              1.380988359451294
+            ],
+            "vertices": [
+              7133,
+              7131,
+              7160,
+              7159
+            ],
+            "material": 0
+          },
+          {
+            "face": 6907,
+            "center": [
+              0.008585336618125439,
+              -0.13695478439331055,
+              1.3809953927993774
+            ],
+            "vertices": [
+              7244,
+              7245,
+              7239,
+              7238
+            ],
+            "material": 0
+          },
+          {
+            "face": 9845,
+            "center": [
+              0.024834955111145973,
+              -0.12612426280975342,
+              1.380610704421997
+            ],
+            "vertices": [
+              10369,
+              7159,
+              7451,
+              10368
+            ],
+            "material": 0
+          },
+          {
+            "face": 9846,
+            "center": [
+              0.02337060123682022,
+              -0.12748181819915771,
+              1.3824107646942139
+            ],
+            "vertices": [
+              11941,
+              7133,
+              7159,
+              10369
+            ],
+            "material": 0
+          },
+          {
+            "face": 9919,
+            "center": [
+              0.026093697175383568,
+              -0.12570637464523315,
+              1.382460117340088
+            ],
+            "vertices": [
+              7140,
+              10369,
+              10368,
+              7447
+            ],
+            "material": 0
+          },
+          {
+            "face": 11295,
+            "center": [
+              0.028051836416125298,
+              -0.12361713498830795,
+              1.3808563947677612
+            ],
+            "vertices": [
+              10368,
+              10367,
+              11756,
+              7447
+            ],
+            "material": 0
+          },
+          {
+            "face": 16679,
+            "center": [
+              0.0,
+              -0.12770427763462067,
+              1.3831384181976318
+            ],
+            "vertices": [
+              14557,
+              14554,
+              14550,
+              14553
+            ],
+            "material": 0
+          },
+          {
+            "face": 17969,
+            "center": [
+              0.0045664613135159016,
+              -0.12496520578861237,
+              1.3848388195037842
+            ],
+            "vertices": [
+              15012,
+              15013,
+              15001,
+              15010
+            ],
+            "material": 0
+          },
+          {
+            "face": 17993,
+            "center": [
+              -0.004566560499370098,
+              -0.12496286630630493,
+              1.3848373889923096
+            ],
+            "vertices": [
+              15012,
+              15010,
+              15036,
+              15046
+            ],
+            "material": 0
+          }
+        ]
+      },
+      "rearWall": {
+        "object": "Aevrynd_OralBackWall_R1054",
+        "vertices": 65,
+        "faces": 64,
+        "y": -0.1405
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1054-seam-damping-sweep\\b-balanced-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1054-seam-damping-sweep\\b-balanced-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1054-seam-damping-sweep\\b-balanced-smile.png"
+      ],
+      "status": "VISUAL_REVIEW_PENDING"
+    },
+    {
+      "label": "c-defined",
+      "crestY": -0.1485,
+      "innerY": -0.146,
+      "build": {
+        "deletedFaces": 296,
+        "sourceBoundaryLoops": [
+          76,
+          60
+        ],
+        "outerBoundaryVertices": 76,
+        "addedVertices": 532,
+        "addedFaces": 532,
+        "shapeKeys": 35,
+        "shapeKeyCompatible": true,
+        "minimumNewVertexGroupCount": 5,
+        "originalVertexCount": 19398
+      },
+      "occluderCleanup": {
+        "passes": [
+          2,
+          0
+        ],
+        "removedFaces": 2,
+        "wallY": -0.1405
+      },
+      "lowerVisibleOldFaceInspection": {
+        "uniqueOldFirstHitFaces": 17,
+        "faces": [
+          {
+            "face": 221,
+            "center": [
+              -0.017961062490940094,
+              -0.13093705475330353,
+              1.3805500268936157
+            ],
+            "vertices": [
+              405,
+              371,
+              370,
+              406
+            ],
+            "material": 0
+          },
+          {
+            "face": 253,
+            "center": [
+              -0.021611766889691353,
+              -0.1283940225839615,
+              1.380988359451294
+            ],
+            "vertices": [
+              373,
+              399,
+              400,
+              371
+            ],
+            "material": 0
+          },
+          {
+            "face": 310,
+            "center": [
+              -0.008585336618125439,
+              -0.13695141673088074,
+              1.380993366241455
+            ],
+            "vertices": [
+              489,
+              483,
+              484,
+              490
+            ],
+            "material": 0
+          },
+          {
+            "face": 3256,
+            "center": [
+              -0.024834953248500824,
+              -0.12612426280975342,
+              1.380610704421997
+            ],
+            "vertices": [
+              3701,
+              3700,
+              729,
+              399
+            ],
+            "material": 0
+          },
+          {
+            "face": 3257,
+            "center": [
+              -0.02337060309946537,
+              -0.12748181819915771,
+              1.3824107646942139
+            ],
+            "vertices": [
+              5338,
+              3701,
+              399,
+              373
+            ],
+            "material": 0
+          },
+          {
+            "face": 3330,
+            "center": [
+              -0.026093697175383568,
+              -0.12570637464523315,
+              1.382460117340088
+            ],
+            "vertices": [
+              380,
+              725,
+              3700,
+              3701
+            ],
+            "material": 0
+          },
+          {
+            "face": 4596,
+            "center": [
+              -0.028051836416125298,
+              -0.12361712753772736,
+              1.3808565139770508
+            ],
+            "vertices": [
+              3700,
+              725,
+              5142,
+              3699
+            ],
+            "material": 0
+          },
+          {
+            "face": 6818,
+            "center": [
+              0.017961062490940094,
+              -0.13093706965446472,
+              1.3805500268936157
+            ],
+            "vertices": [
+              7165,
+              7166,
+              7130,
+              7131
+            ],
+            "material": 0
+          },
+          {
+            "face": 6850,
+            "center": [
+              0.021611768752336502,
+              -0.1283940225839615,
+              1.380988359451294
+            ],
+            "vertices": [
+              7133,
+              7131,
+              7160,
+              7159
+            ],
+            "material": 0
+          },
+          {
+            "face": 6907,
+            "center": [
+              0.008585336618125439,
+              -0.13695478439331055,
+              1.3809953927993774
+            ],
+            "vertices": [
+              7244,
+              7245,
+              7239,
+              7238
+            ],
+            "material": 0
+          },
+          {
+            "face": 9845,
+            "center": [
+              0.024834955111145973,
+              -0.12612426280975342,
+              1.380610704421997
+            ],
+            "vertices": [
+              10369,
+              7159,
+              7451,
+              10368
+            ],
+            "material": 0
+          },
+          {
+            "face": 9846,
+            "center": [
+              0.02337060123682022,
+              -0.12748181819915771,
+              1.3824107646942139
+            ],
+            "vertices": [
+              11941,
+              7133,
+              7159,
+              10369
+            ],
+            "material": 0
+          },
+          {
+            "face": 9919,
+            "center": [
+              0.026093697175383568,
+              -0.12570637464523315,
+              1.382460117340088
+            ],
+            "vertices": [
+              7140,
+              10369,
+              10368,
+              7447
+            ],
+            "material": 0
+          },
+          {
+            "face": 11295,
+            "center": [
+              0.028051836416125298,
+              -0.12361713498830795,
+              1.3808563947677612
+            ],
+            "vertices": [
+              10368,
+              10367,
+              11756,
+              7447
+            ],
+            "material": 0
+          },
+          {
+            "face": 16679,
+            "center": [
+              0.0,
+              -0.12770427763462067,
+              1.3831384181976318
+            ],
+            "vertices": [
+              14557,
+              14554,
+              14550,
+              14553
+            ],
+            "material": 0
+          },
+          {
+            "face": 17969,
+            "center": [
+              0.0045664613135159016,
+              -0.12496520578861237,
+              1.3848388195037842
+            ],
+            "vertices": [
+              15012,
+              15013,
+              15001,
+              15010
+            ],
+            "material": 0
+          },
+          {
+            "face": 17993,
+            "center": [
+              -0.004566560499370098,
+              -0.12496286630630493,
+              1.3848373889923096
+            ],
+            "vertices": [
+              15012,
+              15010,
+              15036,
+              15046
+            ],
+            "material": 0
+          }
+        ]
+      },
+      "rearWall": {
+        "object": "Aevrynd_OralBackWall_R1054",
+        "vertices": 65,
+        "faces": 64,
+        "y": -0.1405
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1054-seam-damping-sweep\\c-defined-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1054-seam-damping-sweep\\c-defined-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1054-seam-damping-sweep\\c-defined-smile.png"
+      ],
+      "status": "VISUAL_REVIEW_PENDING"
+    }
+  ],
+  "websitePromotionApproved": false,
+  "status": "REJECT_BROAD_WHITE_SHELF_AND_LOWER_INTERNAL_TABS",
+  "strictMouthScore100": 10,
+  "retainedR1033Score100": 39,
+  "candidateBlendSaved": false,
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1053-r1055-mouth\\contact-sheet-r1053-r1055.jpg"
+}
