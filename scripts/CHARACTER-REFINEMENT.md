@@ -1569,3 +1569,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - The central pink disk, bilateral hanging tabs and remaining strip fragments therefore all belong to the 13,584-face main component. Removing detached mouth-overlapping islands cannot repair them.
 - Strict quality remains 18/100 after the strip removal. No candidate Blend or website asset is produced. The disconnected-island cleanup route is closed.
 - r1050 must treat the full artifact field as one local main-component retopology problem: select a clean outer attachment boundary around retained r1033 vermilion, delete the enclosed faces once, then construct a welded two-path upper/lower patch with independent commissure poles, rear vestibule and jaw-coupled separation.
+
+### v249r1050 — middle attachment boundary measurement
+
+- A measurement-only sweep returns to retained r1033 and scans 56 local elliptical fields between the r1044 slit and r1042 full perioral replacement. Every field is evaluated only on the 13,518-face main body component.
+- The cut topology consistently exposes two independent degree-two loops: an outer facial attachment and the inherited aperture. This explains why forcing the region into one annular parameterization produced pinches and overhangs in r1042-r1043.
+- Forty-one fields meet the middle-size gate. The selected 34-by-5 mm field removes 296 connected faces, contains 336 of 494 main-component lip-weighted vertices (68.0162%), and yields a 76-edge outer attachment plus a 60-edge aperture reference.
+- No geometry, material, light, website asset or retained candidate changes in this round. r1033 remains the retained mouth candidate at 39/100.
+- The next build must keep the 76-edge outer loop, discard the inherited interior field in one operation, and author separate upper/lower paths with nonshared commissure poles, rear vestibule depth and jaw-coupled separation while preserving all 35 shape keys and deform weights.
