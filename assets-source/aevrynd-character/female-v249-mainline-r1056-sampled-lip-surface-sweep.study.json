@@ -1,0 +1,140 @@
+{
+  "revision": "v249r1056-sampled-lip-surface-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-lower-lip-rim-turn-r1033-study.blend",
+  "method": "delete the measured 296-face field; reconstruct eight welded rows whose front-back depth is sampled from the retained r1033 visible lip surface; blend only the last 30 percent into a new aperture and bounded rear vestibule",
+  "variants": [
+    {
+      "label": "a-exact-surface",
+      "surfaceYOffset": 0.0,
+      "innerY": -0.1435,
+      "build": {
+        "deletedFaces": 296,
+        "sourceBoundaryLoops": [
+          76,
+          60
+        ],
+        "outerBoundaryVertices": 76,
+        "addedVertices": 608,
+        "addedFaces": 608,
+        "shapeKeys": 35,
+        "shapeKeyCompatible": true,
+        "minimumNewVertexGroupCount": 5,
+        "originalVertexCount": 19398,
+        "surfaceRayHits": 547,
+        "surfaceRayMisses": 61,
+        "surfaceYOffset": 0.0
+      },
+      "occluderCleanup": {
+        "passes": [
+          2,
+          0
+        ],
+        "removedFaces": 2,
+        "wallY": -0.1405
+      },
+      "rearWall": {
+        "object": "Aevrynd_OralBackWall_R1056",
+        "vertices": 65,
+        "faces": 64,
+        "y": -0.1405
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1056-sampled-lip-surface-sweep\\a-exact-surface-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1056-sampled-lip-surface-sweep\\a-exact-surface-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1056-sampled-lip-surface-sweep\\a-exact-surface-smile.png"
+      ],
+      "status": "VISUAL_REVIEW_PENDING"
+    },
+    {
+      "label": "b-subtle-forward",
+      "surfaceYOffset": -0.0006,
+      "innerY": -0.1445,
+      "build": {
+        "deletedFaces": 296,
+        "sourceBoundaryLoops": [
+          76,
+          60
+        ],
+        "outerBoundaryVertices": 76,
+        "addedVertices": 608,
+        "addedFaces": 608,
+        "shapeKeys": 35,
+        "shapeKeyCompatible": true,
+        "minimumNewVertexGroupCount": 5,
+        "originalVertexCount": 19398,
+        "surfaceRayHits": 547,
+        "surfaceRayMisses": 61,
+        "surfaceYOffset": -0.0006
+      },
+      "occluderCleanup": {
+        "passes": [
+          2,
+          0
+        ],
+        "removedFaces": 2,
+        "wallY": -0.1405
+      },
+      "rearWall": {
+        "object": "Aevrynd_OralBackWall_R1056",
+        "vertices": 65,
+        "faces": 64,
+        "y": -0.1405
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1056-sampled-lip-surface-sweep\\b-subtle-forward-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1056-sampled-lip-surface-sweep\\b-subtle-forward-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1056-sampled-lip-surface-sweep\\b-subtle-forward-smile.png"
+      ],
+      "status": "VISUAL_REVIEW_PENDING"
+    },
+    {
+      "label": "c-defined-forward",
+      "surfaceYOffset": -0.0012,
+      "innerY": -0.1455,
+      "build": {
+        "deletedFaces": 296,
+        "sourceBoundaryLoops": [
+          76,
+          60
+        ],
+        "outerBoundaryVertices": 76,
+        "addedVertices": 608,
+        "addedFaces": 608,
+        "shapeKeys": 35,
+        "shapeKeyCompatible": true,
+        "minimumNewVertexGroupCount": 5,
+        "originalVertexCount": 19398,
+        "surfaceRayHits": 547,
+        "surfaceRayMisses": 61,
+        "surfaceYOffset": -0.0012
+      },
+      "occluderCleanup": {
+        "passes": [
+          2,
+          0
+        ],
+        "removedFaces": 2,
+        "wallY": -0.1405
+      },
+      "rearWall": {
+        "object": "Aevrynd_OralBackWall_R1056",
+        "vertices": 65,
+        "faces": 64,
+        "y": -0.1405
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1056-sampled-lip-surface-sweep\\c-defined-forward-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1056-sampled-lip-surface-sweep\\c-defined-forward-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1056-sampled-lip-surface-sweep\\c-defined-forward-smile.png"
+      ],
+      "status": "VISUAL_REVIEW_PENDING"
+    }
+  ],
+  "websitePromotionApproved": false,
+  "status": "REJECT_SELF_OVERLAPPED_SOURCE_CANNOT_BE_DIRECTLY_DEPTH_SAMPLED",
+  "strictMouthScore100": 3,
+  "retainedR1033Score100": 39,
+  "finding": "Direct camera-ray sampling records 547 hits and 61 misses per variant, but the hit set includes folded rear surfaces. The new rows reproduce those hidden depth discontinuities as visible spikes and holes.",
+  "candidateBlendSaved": false,
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1056-sampled-lip-surface\\contact-sheet-r1056.jpg"
+}

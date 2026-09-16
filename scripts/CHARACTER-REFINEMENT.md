@@ -1594,3 +1594,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - A lower-band ray scan consistently finds 15-17 inherited first-hit faces. Extending the wall to cover them creates a visible mauve mask outside the mouth. r1055 instead removes one exact 15-face pass and exposes a deeper stack of coloured fragments. Score: 8/100.
 - No Blend candidate or website asset is retained. Mask enlargement, additional seam damping and layer-by-layer excavation are closed.
 - The next route must sample the visually retained r1033 outer-lip surface, reconstruct a new continuous interior behind it, and transfer the complete 35-key deformation contract before any collision promotion.
+
+### v249r1056 — direct retained-surface sampling rejection
+
+- r1056 deletes the same 296-face field and creates eight welded 76-vertex rows. Their front-back depth is sampled from the retained r1033 mouth surface for the outer 70% and blends into a new aperture only across the final 30%.
+- Every variant adds 608 vertices/faces, preserves all 35 shape keys and retains at least five deform groups per new vertex. Each records 547 BVH hits and 61 misses.
+- The source BVH is self-overlapped, so first-hit sampling is not a stable outer-surface parameterization. Folded rear faces are mapped into the replacement as severe spikes, holes and floating shelves. Strict quality falls to 3/100.
+- No Blend candidate or website asset is retained. Direct depth sampling from the defective body is closed.
+- The next route must first construct a clean non-self-intersecting proxy surface from sparse stable landmarks, then project new rows onto that proxy before shape-key and collision validation.
