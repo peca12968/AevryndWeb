@@ -1,0 +1,131 @@
+{
+  "revision": "v249r1057-analytic-proxy-lip-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-lower-lip-rim-turn-r1033-study.blend",
+  "method": "delete the measured 296-face field; preserve the welded 76-edge seam; build eight analytic proxy rows with smoothstep inward flow and a sinusoidal convex bulge; connect to a clean aperture and bounded rear vestibule without sampling the defective source surface",
+  "variants": [
+    {
+      "label": "a-subtle-bulge",
+      "bulgeStrength": 0.0005,
+      "innerY": -0.1435,
+      "build": {
+        "deletedFaces": 296,
+        "sourceBoundaryLoops": [
+          76,
+          60
+        ],
+        "outerBoundaryVertices": 76,
+        "addedVertices": 608,
+        "addedFaces": 608,
+        "shapeKeys": 35,
+        "shapeKeyCompatible": true,
+        "minimumNewVertexGroupCount": 5,
+        "originalVertexCount": 19398
+      },
+      "occluderCleanup": {
+        "passes": [
+          2,
+          0
+        ],
+        "removedFaces": 2,
+        "wallY": -0.1405
+      },
+      "rearWall": {
+        "object": "Aevrynd_OralBackWall_R1057",
+        "vertices": 65,
+        "faces": 64,
+        "y": -0.1405
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1057-analytic-proxy-lip-sweep\\a-subtle-bulge-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1057-analytic-proxy-lip-sweep\\a-subtle-bulge-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1057-analytic-proxy-lip-sweep\\a-subtle-bulge-smile.png"
+      ],
+      "status": "VISUAL_REVIEW_PENDING"
+    },
+    {
+      "label": "b-balanced-bulge",
+      "bulgeStrength": 0.001,
+      "innerY": -0.144,
+      "build": {
+        "deletedFaces": 296,
+        "sourceBoundaryLoops": [
+          76,
+          60
+        ],
+        "outerBoundaryVertices": 76,
+        "addedVertices": 608,
+        "addedFaces": 608,
+        "shapeKeys": 35,
+        "shapeKeyCompatible": true,
+        "minimumNewVertexGroupCount": 5,
+        "originalVertexCount": 19398
+      },
+      "occluderCleanup": {
+        "passes": [
+          2,
+          0
+        ],
+        "removedFaces": 2,
+        "wallY": -0.1405
+      },
+      "rearWall": {
+        "object": "Aevrynd_OralBackWall_R1057",
+        "vertices": 65,
+        "faces": 64,
+        "y": -0.1405
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1057-analytic-proxy-lip-sweep\\b-balanced-bulge-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1057-analytic-proxy-lip-sweep\\b-balanced-bulge-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1057-analytic-proxy-lip-sweep\\b-balanced-bulge-smile.png"
+      ],
+      "status": "VISUAL_REVIEW_PENDING"
+    },
+    {
+      "label": "c-defined-bulge",
+      "bulgeStrength": 0.0015,
+      "innerY": -0.1445,
+      "build": {
+        "deletedFaces": 296,
+        "sourceBoundaryLoops": [
+          76,
+          60
+        ],
+        "outerBoundaryVertices": 76,
+        "addedVertices": 608,
+        "addedFaces": 608,
+        "shapeKeys": 35,
+        "shapeKeyCompatible": true,
+        "minimumNewVertexGroupCount": 5,
+        "originalVertexCount": 19398
+      },
+      "occluderCleanup": {
+        "passes": [
+          2,
+          0
+        ],
+        "removedFaces": 2,
+        "wallY": -0.1405
+      },
+      "rearWall": {
+        "object": "Aevrynd_OralBackWall_R1057",
+        "vertices": 65,
+        "faces": 64,
+        "y": -0.1405
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1057-analytic-proxy-lip-sweep\\c-defined-bulge-neutral.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1057-analytic-proxy-lip-sweep\\c-defined-bulge-mouth-open.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1057-analytic-proxy-lip-sweep\\c-defined-bulge-smile.png"
+      ],
+      "status": "VISUAL_REVIEW_PENDING"
+    }
+  ],
+  "websitePromotionApproved": false,
+  "status": "REJECT_INHERITED_ATTACHMENT_BOUNDARY_AND_INTERNAL_STACK",
+  "strictMouthScore100": 6,
+  "retainedR1033Score100": 39,
+  "finding": "The analytic proxy removes source-BVH sampling noise, but the inherited serrated 76-edge seam and deeper undeleted main-component layers remain visible as alternating white shelves and black folds. Bulge strength does not solve the topology boundary.",
+  "candidateBlendSaved": false,
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1057-analytic-proxy-lip\\contact-sheet-r1057.jpg"
+}

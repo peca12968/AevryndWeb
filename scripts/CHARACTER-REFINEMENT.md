@@ -1602,3 +1602,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - The source BVH is self-overlapped, so first-hit sampling is not a stable outer-surface parameterization. Folded rear faces are mapped into the replacement as severe spikes, holes and floating shelves. Strict quality falls to 3/100.
 - No Blend candidate or website asset is retained. Direct depth sampling from the defective body is closed.
 - The next route must first construct a clean non-self-intersecting proxy surface from sparse stable landmarks, then project new rows onto that proxy before shape-key and collision validation.
+
+### v249r1057 — analytic proxy surface and inherited-boundary rejection
+
+- r1057 removes dependence on source-surface rays. Eight analytic proxy rows use smoothstep inward flow plus a 0.5, 1.0 or 1.5 mm sinusoidal convex bulge before meeting the new aperture and rear vestibule.
+- Each variant adds 608 welded vertices/faces, preserves all 35 shape keys and retains at least five deform groups per new vertex.
+- The proxy surface itself is continuous, but the inherited 76-edge attachment remains serrated and the undeleted main-component depth stack protrudes around it. All variants show alternating white shelves and black folds; strict score is 6/100.
+- No Blend candidate or website asset is retained. Changing the surface formula while retaining the existing attachment boundary is closed.
+- The next route must split stable perioral faces along a new smooth curve, delete the complete enclosed self-overlapped field and weld the replacement to that newly cut boundary.
