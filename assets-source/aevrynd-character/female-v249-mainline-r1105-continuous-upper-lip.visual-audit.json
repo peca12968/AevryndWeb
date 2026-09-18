@@ -1,0 +1,45 @@
+{
+  "revision": "v249r1105-continuous-upper-lip",
+  "sourceRevision": "v249r1102-lower-wetline",
+  "selectedVariant": "c-clear",
+  "strictMouthScore": 44,
+  "status": "TECHNICAL_PASS_VISUAL_IMPROVEMENT_MAINLINE_STUDY",
+  "websitePromotionApproved": false,
+  "technicalEvidence": {
+    "clearanceMm": 0.6,
+    "bodyPatchTrianglePairs": {
+      "neutral": 0,
+      "open": 0,
+      "smile": 0,
+      "frame1": 0,
+      "frame20": 0,
+      "frame33": 0,
+      "frame61": 0
+    },
+    "patchSelfCollisionPairs": 0,
+    "patchVertices": 186,
+    "patchFaces": 142,
+    "shapeKeys": 35,
+    "armatureVertexGroups": 7
+  },
+  "improvements": [
+    "The upper lip now has a continuous owned vermilion surface, visible Cupid-bow structure, and readable volume.",
+    "The broad black upper-lip plane is substantially reduced in the full-face view.",
+    "The upper-lip layer follows the same rig and expression-key names as the current body.",
+    "A post-armature surface-clearance constraint prevents static and tested dynamic penetration."
+  ],
+  "remainingIssues": [
+    "The upper boundary still reveals low-density faceting in extreme close-up.",
+    "The upper lip remains slightly too thick relative to the lower lip and philtrum.",
+    "The lower lip is too pale, so upper and lower vermilion do not read as one mouth.",
+    "The current open and smile tests do not yet produce sufficiently distinct lip motion."
+  ],
+  "nextAction": "Smooth the donor-layer boundary without reducing clearance, balance lower-lip material response, and strengthen expression-specific deformation before broader face review.",
+  "renders": [
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1105-continuous-upper-lip-donor-sweep/c-clear-neutral-mouth-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1105-continuous-upper-lip-donor-sweep/c-clear-neutral-mouth-oblique.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1105-continuous-upper-lip-donor-sweep/c-clear-neutral-face-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1105-continuous-upper-lip-donor-sweep/c-clear-open-mouth-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1105-continuous-upper-lip-donor-sweep/c-clear-smile-mouth-front.png"
+  ]
+}
