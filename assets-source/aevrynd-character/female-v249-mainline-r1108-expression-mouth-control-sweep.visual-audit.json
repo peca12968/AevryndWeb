@@ -1,0 +1,22 @@
+{
+  "revision": "v249r1108-expression-aware-mouth-control-sweep",
+  "sourceRevision": "v249r1106-lip-surface-balance",
+  "status": "TECHNICAL_FAIL_VISUAL_REJECT_DIAGNOSTIC_ONLY",
+  "websitePromotionApproved": false,
+  "selectedVariant": null,
+  "strictMouthScore": 47,
+  "findings": [
+    "All three expression-strength variants create 108 upper-lip/body triangle intersections in the open-mouth pose.",
+    "The 0.35 mm neutral closure variant also creates 92 intersections at neutral and 39 intersections on frames 20, 33, and 61.",
+    "The 0.15 mm and 0.25 mm neutral closure variants keep neutral, smile, and timeline checks at the r1106 collision baseline.",
+    "The rendered open pose changes the aperture but does not create a convincing orbicularis-oris deformation; the donor surface reads as a floating cap.",
+    "The smile silhouette remains too close to neutral and the upper-lip boundary remains visibly synthetic."
+  ],
+  "decision": "Reject every r1108 variant, retain r1106 as the active offline study, and do not create or promote an r1108 blend.",
+  "nextAction": "Replace direct world-axis patch offsets with body-surface tangent motion or rebuild the mouth as continuous face topology before further expression work.",
+  "renders": [
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1108-expression-mouth-control-sweep/b-balanced-neutral-face-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1108-expression-mouth-control-sweep/b-balanced-open-mouth-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1108-expression-mouth-control-sweep/b-balanced-smile-mouth-front.png"
+  ]
+}
