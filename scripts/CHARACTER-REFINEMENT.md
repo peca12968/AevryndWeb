@@ -1695,3 +1695,12 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - Geometry and deform-weight SHA-256 values are identical before and after the edit across all 35 shape keys. The candidate therefore inherits r1068's collision pass; topology remains 13,817 vertices and 13,753 faces with three material slots.
 - Strict mouth quality improves from 39 to 40/100. A thin grey-white line remains, so r1072 is retained only as a local material technical candidate and website v83 remains unchanged.
 - r1073 must decouple colour from optical suppression, using near-zero colour tint with stronger roughness/specular control over the measured 1.35-1.80 mm mask to remove the remaining line without creating a pink band.
+
+### v249r1073 — decoupled roughness and specular response
+
+- r1073 reuses the measured continuous mask at 1.60 mm / 0.80 strength and isolates three channels: roughness-only, specular-only, and their combination. Two low colour factors are also tested but are unnecessary.
+- Roughness-only lowers the front rim P99 from 215.0 to 190.0/255; specular-only reaches 206.0/255. Their colour-free combination reaches 189.33/255 P99 and 197.67/255 maximum, reductions of 25.67 and 24.33/255 from control.
+- The selected optical-only response adds +0.36 roughness and blends Specular IOR Level toward zero. It does not touch base colour, adds five shader nodes inside the existing owned skin material, and adds no material slot or draw call.
+- Fixed left-cheek, right-cheek and upper-face crops remain unchanged. All 35 shape keys, geometry and deform-weight hashes remain identical to collision-qualified r1068.
+- Strict mouth quality rises from 40 to 42/100. The central chalk-white line now reads as a subdued grey-brown inner edge, while pale residuals remain at the commissures. r1073 is a local optical technical candidate; website v83 remains unchanged.
+- r1074 must measure the remaining front/oblique/open brightness by horizontal position and reshape only the left/right endpoint falloff while preserving r1073's central colour-free response.
