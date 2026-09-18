@@ -1,0 +1,62 @@
+{
+  "revision": "v249r1089-dense-rear-closure",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-groom-coverage-r1087-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-dense-rear-closure-r1089-study.blend",
+  "method": "append a dense 1,300-curve overlapping, inward-falling center-back family to close the posterior split while retaining r1087 outer coverage and root-pinned motion",
+  "append": {
+    "oldCurves": 4405,
+    "oldPoints": 83420,
+    "newPointStart": 83420,
+    "centralRearCurves": 1300,
+    "totalCurves": 5705,
+    "totalPoints": 109420
+  },
+  "posteriorGuideRoots": 65,
+  "collisionRepair": {
+    "correctedOperations": 1309,
+    "maximumCorrectionM": 0.01083933761638433,
+    "minimumBeforeRepairByFrame": {
+      "1": 0.0010000598231272306,
+      "20": 0.001049928919201193,
+      "21": 0.0010406623869130271,
+      "33": 0.001035795095958747,
+      "61": 0.0010000150105042849
+    }
+  },
+  "collisionAudit": {
+    "1": {
+      "pointsTested": 26000,
+      "minimumSignedClearanceM": 0.0010000598231272306,
+      "penetratingPoints": 0,
+      "belowClearancePoints": 0
+    },
+    "20": {
+      "pointsTested": 26000,
+      "minimumSignedClearanceM": 0.001049928919201193,
+      "penetratingPoints": 0,
+      "belowClearancePoints": 0
+    },
+    "21": {
+      "pointsTested": 26000,
+      "minimumSignedClearanceM": 0.0010406623869130271,
+      "penetratingPoints": 0,
+      "belowClearancePoints": 0
+    },
+    "33": {
+      "pointsTested": 26000,
+      "minimumSignedClearanceM": 0.001035795095958747,
+      "penetratingPoints": 0,
+      "belowClearancePoints": 0
+    },
+    "61": {
+      "pointsTested": 26000,
+      "minimumSignedClearanceM": 0.0010000150105042849,
+      "penetratingPoints": 0,
+      "belowClearancePoints": 0
+    }
+  },
+  "ownership": "Aevrynd-authored procedural curves on Aevrynd-owned/CC0-traceable body and scalp",
+  "externalDependencies": [],
+  "status": "PASS",
+  "websitePromotionApproved": false
+}
