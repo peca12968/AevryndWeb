@@ -1,0 +1,253 @@
+{
+  "revision": "v249r1122-long-bob-contour-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-right-temple-cleanup-r1120-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-long-bob-contour-r1122-study.blend",
+  "method": "physically trim long curves at a smooth long-bob contour with deterministic clump variation, then apply a four-point terminal radius taper",
+  "variants": [
+    {
+      "label": "a-long",
+      "edit": {
+        "trimmedCurves": 492,
+        "trimmedSample": [
+          4,
+          17,
+          18,
+          19,
+          20,
+          23,
+          24,
+          25,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          36,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          67,
+          108,
+          120,
+          121,
+          122,
+          125,
+          126,
+          127
+        ],
+        "beforePoints": 104577,
+        "afterPoints": 103883,
+        "removedPoints": 694,
+        "minimumPointsPerCurve": 8,
+        "maximumPointsPerCurve": 20,
+        "baseContourHeightM": 1.285,
+        "outerLiftM": 0.012,
+        "clumpVariationM": 0.006
+      },
+      "collisionAudit": {
+        "1": {
+          "pointsTested": 103883,
+          "minimumSignedClearanceM": 0.0010000598231272306,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        },
+        "20": {
+          "pointsTested": 103883,
+          "minimumSignedClearanceM": 0.0005604787844504244,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 9
+        },
+        "33": {
+          "pointsTested": 103883,
+          "minimumSignedClearanceM": 0.0010073482956158841,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        },
+        "61": {
+          "pointsTested": 103883,
+          "minimumSignedClearanceM": 0.0010000150105042849,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        }
+      },
+      "technicalStatus": "TECHNICAL_PASS",
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\a-long-front-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\a-long-oblique-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\a-long-profile-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\a-long-back-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\a-long-front-f33.png"
+      ]
+    },
+    {
+      "label": "b-balanced",
+      "edit": {
+        "trimmedCurves": 1348,
+        "trimmedSample": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          10,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "beforePoints": 104577,
+        "afterPoints": 102320,
+        "removedPoints": 2257,
+        "minimumPointsPerCurve": 8,
+        "maximumPointsPerCurve": 20,
+        "baseContourHeightM": 1.305,
+        "outerLiftM": 0.012,
+        "clumpVariationM": 0.006
+      },
+      "collisionAudit": {
+        "1": {
+          "pointsTested": 102320,
+          "minimumSignedClearanceM": 0.0010000598231272306,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        },
+        "20": {
+          "pointsTested": 102320,
+          "minimumSignedClearanceM": 0.0005604787844504244,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 9
+        },
+        "33": {
+          "pointsTested": 102320,
+          "minimumSignedClearanceM": 0.0010073482956158841,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        },
+        "61": {
+          "pointsTested": 102320,
+          "minimumSignedClearanceM": 0.0010000150105042849,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        }
+      },
+      "technicalStatus": "TECHNICAL_PASS",
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\b-balanced-front-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\b-balanced-oblique-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\b-balanced-profile-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\b-balanced-back-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\b-balanced-front-f33.png"
+      ]
+    },
+    {
+      "label": "c-short",
+      "edit": {
+        "trimmedCurves": 2443,
+        "trimmedSample": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "beforePoints": 104577,
+        "afterPoints": 99605,
+        "removedPoints": 4972,
+        "minimumPointsPerCurve": 8,
+        "maximumPointsPerCurve": 20,
+        "baseContourHeightM": 1.325,
+        "outerLiftM": 0.012,
+        "clumpVariationM": 0.006
+      },
+      "collisionAudit": {
+        "1": {
+          "pointsTested": 99605,
+          "minimumSignedClearanceM": 0.0010000598231272306,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        },
+        "20": {
+          "pointsTested": 99605,
+          "minimumSignedClearanceM": 0.0005604787844504244,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 9
+        },
+        "33": {
+          "pointsTested": 99605,
+          "minimumSignedClearanceM": 0.0010073482956158841,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        },
+        "61": {
+          "pointsTested": 99605,
+          "minimumSignedClearanceM": 0.0010000150105042849,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        }
+      },
+      "technicalStatus": "TECHNICAL_PASS",
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\c-short-front-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\c-short-oblique-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\c-short-profile-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\c-short-back-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\c-short-front-f33.png"
+      ]
+    }
+  ],
+  "selectedVariant": "b-balanced",
+  "websitePromotionApproved": false,
+  "candidateStatus": "TECHNICAL_PASS_VISUAL_IMPROVEMENT_MAINLINE_STUDY",
+  "strictHairScore": 44,
+  "visualDecision": "Accept b-balanced. It replaces the worst shoulder-length needle silhouette with a readable long-bob contour without the rigid jaw-length cut of c-short."
+}

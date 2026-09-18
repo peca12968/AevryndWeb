@@ -1,0 +1,46 @@
+{
+  "revision": "v249r1122-long-bob-contour-sweep",
+  "sourceRevision": "v249r1120-right-temple-cleanup-sweep",
+  "strictHairScore": 44,
+  "status": "TECHNICAL_PASS_VISUAL_IMPROVEMENT_MAINLINE_STUDY",
+  "websitePromotionApproved": false,
+  "selectedVariant": "b-balanced",
+  "technicalEvidence": {
+    "trimmedCurves": 1348,
+    "removedControlPoints": 2257,
+    "remainingCurves": 5727,
+    "remainingPoints": 102320,
+    "penetratingPoints": {
+      "1": 0,
+      "20": 0,
+      "33": 0,
+      "61": 0
+    },
+    "minimumSignedClearanceMm": {
+      "1": 1.00006,
+      "20": 0.560479,
+      "33": 1.007348,
+      "61": 1.000015
+    }
+  },
+  "improvements": [
+    "The front and oblique lower silhouette now reads as a controlled long bob instead of thousands of unrelated needle tips.",
+    "The balanced height retains useful shoulder-length mass while avoiding the rigid jaw-level cut of c-short.",
+    "Physical topology trimming removes 2,257 evaluated control points and preserves zero penetrations across four motion frames."
+  ],
+  "remainingIssues": [
+    "The frontal hairline still contains crossed wire-like roots and a broad asymmetric part.",
+    "The rear centre retains a sparse tail below the main contour.",
+    "The material remains flat and the dominant flow is still overly vertical.",
+    "Individual terminal strands remain too legible at close range."
+  ],
+  "decision": "Use r1122 b-balanced as the active offline mainline study; keep website promotion forbidden.",
+  "nextAction": "Clean the rear centre tail with a back-camera contour gate, then rebuild the visible frontal root families along scalp tangents.",
+  "renders": [
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\b-balanced-front-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\b-balanced-oblique-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\b-balanced-profile-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\b-balanced-back-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1122-long-bob-contour-sweep\\b-balanced-front-f33.png"
+  ]
+}
