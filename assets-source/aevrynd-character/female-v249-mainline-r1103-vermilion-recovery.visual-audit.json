@@ -1,0 +1,25 @@
+{
+  "revision": "v249r1103-vermilion-recovery",
+  "sourceRevision": "v249r1102-lower-wetline",
+  "reviewedVariant": {
+    "lipMaskStrength": 4.0,
+    "targetLinearRgba": [0.45, 0.15, 0.12, 1.0],
+    "roughnessDelta": 0.35
+  },
+  "strictMouthScore": 27,
+  "status": "VISUAL_REJECTED_DIAGNOSTIC_ONLY",
+  "websitePromotionApproved": false,
+  "findings": [
+    "The stronger lips-group response brightens the perioral ring instead of producing a readable vermilion transition.",
+    "The upper lip remains a broad dark band in neutral, open, and smile renders.",
+    "The lower lip remains oversized and pale relative to the upper lip.",
+    "The failed material-only test isolates upper-lip surface orientation, thickness, and oral occlusion as the next geometry problem."
+  ],
+  "nextAction": "Rebuild the upper-lip everted surface and vermilion boundary against the existing inner rim, then re-run neutral/open/smile self-collision gates.",
+  "renders": [
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1103-vermilion-recovery/neutral-mouth-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1103-vermilion-recovery/neutral-face-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1103-vermilion-recovery/open-mouth-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1103-vermilion-recovery/smile-mouth-front.png"
+  ]
+}
