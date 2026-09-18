@@ -118,11 +118,11 @@
   "latestTargetNativeBrowStudy": "aevrynd-female-cc0-natural-brow-lash-balance-r992.blend",
   "latestTargetNativeBrowStatus": "R992_STATIC_CLEARANCE_PASS_VISUAL_47; imported brows are refit from 4-5.5mm burial to positive clearance and made visible. The 18% density underlay is less block-like than r991 but still too pale and uniform.",
   "latestTargetNativeRejectedFaceStudies": "r989 partial lash refit; r991 block density; r993 eye-intersecting scaled lashes; r994 eyelid-intersecting curl; r996 colliding tubular wetline; r997 ineffective eye-depth and colliding deeper bounds; r998 visually occluded eyelid relief; r999 basis-space eyelid selection with negligible visual effect; r1000 strong 1.5 eyelid bound too puffy; r1002 low-gain canthus closure colliding with lower lashes; r1003 parent-space caruncle transform error; r1004-r1005 occluded or body-intersecting caruncle volumes; r1006 medium/wide projected caruncles with projection misses or overlap",
-  "latestTargetNativeEyelidStudy": "female-v249-mainline-r1078-eyelid-inner-wall-sweep.study.json",
-  "latestTargetNativeEyelidAudit": "female-v249-mainline-r1078-eyelid-inner-wall.visual-audit.json; female-v249-mainline-r1078-eyelid-inner-wall.invariant-audit.json; female-v249-mainline-r1078-eyelid-inner-wall.collision-audit.json",
-  "latestTargetNativeEyelidReview": "reviews/v249r1078-eyelid-inner-wall/contact-sheet-r1078.jpg",
-  "latestTargetNativeEyelidStatus": "R1078_LOCAL_EYELID_STRUCTURE_PASS_VISUAL_PARTIAL_SCORE_38; selected two-ring 0.22mm inner wall preserves the 45-edge aperture silhouette, reduces the bright sclera proxy 8.24% left and 7.51% right, adds 180 fully weighted vertices/faces, preserves 35 shape keys and passes four-frame, expression, self and 14-attachment collision gates. No object, material slot, modifier or draw-call delta; website v83 remains unchanged.",
-  "latestTargetNativeEyelidTechnicalCandidate": "aevrynd-female-cc0-eyelid-inner-wall-r1078-study.blend",
+  "latestTargetNativeEyelidStudy": "female-v249-mainline-r1079-canthus-contour-sweep.study.json",
+  "latestTargetNativeEyelidAudit": "female-v249-mainline-r1079-canthus-contour.visual-audit.json; female-v249-mainline-r1079-canthus-contour.invariant-audit.json; female-v249-mainline-r1079-canthus-contour.collision-audit.json",
+  "latestTargetNativeEyelidReview": "reviews/v249r1079-canthus-contour/contact-sheet-r1079.jpg",
+  "latestTargetNativeEyelidStatus": "R1079_LOCAL_CANTHUS_CONTOUR_PASS_VISUAL_PARTIAL_SCORE_39; selected 55% lower-corner fairing reduces folded deviation 2.045/1.884mm to 0.920/0.848mm with only 0.36mm horizontal closure and +0.15% total sclera proxy. It moves 174 existing outer/wall vertices <=1.136mm, preserves all 35 relative shape-key deltas exactly, and passes four-frame, expression, self and 14-attachment collision gates. No topology or draw-call delta; website v83 remains unchanged.",
+  "latestTargetNativeEyelidTechnicalCandidate": "aevrynd-female-cc0-canthus-contour-r1079-study.blend",
   "latestTargetNativeCanthusStudy": "aevrynd-female-cc0-canthus-closure-r1002-study.blend; aevrynd-female-cc0-target-native-caruncle-r1003-study.blend; aevrynd-female-cc0-world-matrix-caruncle-r1004-study.blend; aevrynd-female-cc0-forward-caruncle-r1005-study.blend; aevrynd-female-cc0-projected-caruncle-patch-r1006-study.blend",
   "latestTargetNativeCaruncleTechnicalCandidate": "aevrynd-female-cc0-projected-caruncle-r1007.blend",
   "latestTargetNativeCaruncleAudit": "female-v249-mainline-cc0-projected-caruncle-r1007.collision-audit.json",
@@ -133,7 +133,7 @@
   "latestOpenEyelidTopologyReference": "aevrynd-female-authoring-v249-mainline-open-topology-physical-skin-r446.blend",
   "latestOpenEyelidTopologyBridgeInspection": "female-v249-mainline-r1010-open-topology-bridge-inspection.json",
   "latestOpenEyelidTopologyStatus": "R1014_B_BALANCED_GUIDE_SELECTED_7P834MM; R1015_VERTEX_AND_30_SHAPE_KEY_COMPATIBILITY_PASS_FRAME1_ZERO_EYE_LASH_OVERLAP_VISUAL_FAIL_NO_INNER_RIM",
-  "nextFaceTopologyWork": "Use r1078 as the eyelid thickness baseline for r1079. Close the medial/lateral canthus holes and introduce anatomically asymmetric upper/lower lid contour while preserving the 45-edge outer silhouette, 35 shape keys, zero eye/lash overlap, zero body self-collision and the no-new-draw-call gate. Then re-evaluate iris depth and gaze rigidity.",
+  "nextFaceTopologyWork": "Use r1079 as the eye-contour baseline for r1080. Diagnose iris/cornea depth, iris scale, sclera value and gaze convergence in frontal and oblique views; test optical/material variants without adding runtime objects or violating cornea, lid or lash clearance. Preserve r1079 contour, 35 shape keys and all collision gates.",
   "latestOpenEyelidTopologyResearch": "r1011-r1015 rear-boundary extraction, authored-margin transfer, closed anatomical guide and true-aperture cut",
   "latestOpenEyelidTechnicalStudy": "aevrynd-female-cc0-balanced-open-aperture-r1015-study.blend",
   "latestEyeTopologyResearch": "r1011-r1028 open-aperture, continuous canthus, orbital volume and interpolated collision-pruned lash density",
@@ -150,5 +150,5 @@
   "latestMouthTopologyStudy": "aevrynd-female-cc0-commissure-curvature-r1076-study.blend",
   "latestFullHeadScorecard": "female-v249-mainline-r1077-full-head-scorecard.json",
   "latestFullHeadReview": "reviews/v249r1077-full-head-scorecard/contact-sheet-r1077.jpg",
-  "latestFullHeadStatus": "R1078_STRICT_FULL_HEAD_40_OF_100_HERO_FAIL; eyes/lids improve 34 to 38 through physically connected inner walls, moving the weighted full-head score from 39 to 40. Canthus holes, uniform lid contour and rigid iris/gaze remain; hairline 32 and skin 36 are still major blockers. Website v83 is unchanged."
+  "latestFullHeadStatus": "R1079_STRICT_FULL_HEAD_40_OF_100_HERO_FAIL; eyes/lids improve 38 to 39 through lower-corner contour regularity while the rounded full-head score remains 40. Rigid iris/gaze, caruncle shading and uniform lid crease remain; hairline 32 and skin 36 are still major blockers. Website v83 is unchanged."
 }

@@ -1,0 +1,445 @@
+{
+  "revision": "v249r1079-canthus-contour-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-eyelid-inner-wall-r1078-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-canthus-contour-r1079-study.blend",
+  "method": "preserve r1078 wall topology, fair only folded lower-corner contours and apply sub-quarter-millimetre bilateral horizontal closure",
+  "variants": [
+    {
+      "label": "a-control",
+      "fairingStrength": 0.0,
+      "maximumHorizontalClosureMm": 0.0,
+      "diagnostics": {
+        "L": {
+          "medialTip": 13447,
+          "lateralTip": 13445,
+          "upperCount": 14,
+          "lowerCount": 33,
+          "medialFairingVertices": 14,
+          "lateralFairingVertices": 11,
+          "rawMaximumLowerContourCorrectionMm": 2.0450812119703343
+        },
+        "R": {
+          "medialTip": 13423,
+          "lateralTip": 13405,
+          "upperCount": 16,
+          "lowerCount": 31,
+          "medialFairingVertices": 14,
+          "lateralFairingVertices": 9,
+          "rawMaximumLowerContourCorrectionMm": 1.8842495404756132
+        }
+      },
+      "patch": {
+        "editedOuterVertices": 0,
+        "editedVerticesIncludingWalls": 0,
+        "maximumOuterDisplacementMm": 0.0,
+        "ring1UniqueMappings": 90,
+        "ring2UniqueMappings": 90
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\a-control-eye-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\a-control-eye-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\a-control-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\a-control-face-three-quarter.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "b-conservative-0.35",
+      "fairingStrength": 0.35,
+      "maximumHorizontalClosureMm": 0.12000000000000001,
+      "diagnostics": {
+        "L": {
+          "medialTip": 13447,
+          "lateralTip": 13445,
+          "upperCount": 14,
+          "lowerCount": 33,
+          "medialFairingVertices": 14,
+          "lateralFairingVertices": 11,
+          "rawMaximumLowerContourCorrectionMm": 2.0450812119703343
+        },
+        "R": {
+          "medialTip": 13423,
+          "lateralTip": 13405,
+          "upperCount": 16,
+          "lowerCount": 31,
+          "medialFairingVertices": 14,
+          "lateralFairingVertices": 9,
+          "rawMaximumLowerContourCorrectionMm": 1.8842495404756132
+        }
+      },
+      "patch": {
+        "editedOuterVertices": 58,
+        "editedVerticesIncludingWalls": 174,
+        "maximumOuterDisplacementMm": 0.7234720813732749,
+        "ring1UniqueMappings": 90,
+        "ring2UniqueMappings": 90
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\b-conservative-0.35-eye-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\b-conservative-0.35-eye-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\b-conservative-0.35-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\b-conservative-0.35-face-three-quarter.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "c-balanced-0.55",
+      "fairingStrength": 0.55,
+      "maximumHorizontalClosureMm": 0.18000000000000002,
+      "diagnostics": {
+        "L": {
+          "medialTip": 13447,
+          "lateralTip": 13445,
+          "upperCount": 14,
+          "lowerCount": 33,
+          "medialFairingVertices": 14,
+          "lateralFairingVertices": 11,
+          "rawMaximumLowerContourCorrectionMm": 2.0450812119703343
+        },
+        "R": {
+          "medialTip": 13423,
+          "lateralTip": 13405,
+          "upperCount": 16,
+          "lowerCount": 31,
+          "medialFairingVertices": 14,
+          "lateralFairingVertices": 9,
+          "rawMaximumLowerContourCorrectionMm": 1.8842495404756132
+        }
+      },
+      "patch": {
+        "editedOuterVertices": 58,
+        "editedVerticesIncludingWalls": 174,
+        "maximumOuterDisplacementMm": 1.135815833402416,
+        "ring1UniqueMappings": 90,
+        "ring2UniqueMappings": 90
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\c-balanced-0.55-eye-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\c-balanced-0.55-eye-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\c-balanced-0.55-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\c-balanced-0.55-face-three-quarter.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "d-strong-0.75",
+      "fairingStrength": 0.75,
+      "maximumHorizontalClosureMm": 0.25,
+      "diagnostics": {
+        "L": {
+          "medialTip": 13447,
+          "lateralTip": 13445,
+          "upperCount": 14,
+          "lowerCount": 33,
+          "medialFairingVertices": 14,
+          "lateralFairingVertices": 11,
+          "rawMaximumLowerContourCorrectionMm": 2.0450812119703343
+        },
+        "R": {
+          "medialTip": 13423,
+          "lateralTip": 13405,
+          "upperCount": 16,
+          "lowerCount": 31,
+          "medialFairingVertices": 14,
+          "lateralFairingVertices": 9,
+          "rawMaximumLowerContourCorrectionMm": 1.8842495404756132
+        }
+      },
+      "patch": {
+        "editedOuterVertices": 58,
+        "editedVerticesIncludingWalls": 174,
+        "maximumOuterDisplacementMm": 1.549398622592918,
+        "ring1UniqueMappings": 90,
+        "ring2UniqueMappings": 90
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\d-strong-0.75-eye-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\d-strong-0.75-eye-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\d-strong-0.75-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1079-canthus-contour\\d-strong-0.75-face-three-quarter.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    }
+  ],
+  "selectedVariant": "c-balanced-0.55",
+  "websitePromotionApproved": false,
+  "candidateStatus": "LOCAL_CANTHUS_CONTOUR_PASS_VISUAL_PARTIAL",
+  "strictEyesAndEyelidsScore100": 39,
+  "strictFullHeadScore100": 40,
+  "visualAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1079-canthus-contour.visual-audit.json",
+  "invariantAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1079-canthus-contour.invariant-audit.json",
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1079-canthus-contour.collision-audit.json",
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1079-canthus-contour\\contact-sheet-r1079.jpg",
+  "collisionStatus": "PASS",
+  "invariantStatus": "PASS",
+  "performanceStatus": "PASS_NO_TOPOLOGY_WEIGHT_MATERIAL_MODIFIER_OBJECT_OR_DRAW_CALL_DELTA",
+  "finding": "The selected 55% fairing reduces maximum folded lower-corner deviation from 2.045/1.884 mm to 0.920/0.848 mm and closes horizontal aperture width by only 0.36 mm. Total bright-sclera proxy changes just +0.15%, confirming the gain comes from contour regularity rather than wholesale eye closure. It moves 174 existing outer/wall vertices by at most 1.136 mm, preserves every relative delta across 35 shape keys exactly, and passes four-frame, expression, body-self and 14-attachment collision gates. The 75% variant is rejected as overly straight."
+}

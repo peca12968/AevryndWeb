@@ -1,0 +1,68 @@
+{
+  "revision": "v249r1079-canthus-contour-visual-audit",
+  "study": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1079-canthus-contour-sweep.study.json",
+  "control": "a-control",
+  "selected": "c-balanced-0.55",
+  "scleraProxyDefinition": "Same fixed render-space proxy as r1078; used here to verify the contour correction does not hide the defect through wholesale aperture closure.",
+  "variants": {
+    "a-control": {
+      "leftBrightScleraProxyPixels": 19453,
+      "rightBrightScleraProxyPixels": 18755,
+      "totalBrightScleraProxyPixels": 38208,
+      "totalChangeVsControlPercent": 0.0
+    },
+    "b-conservative-0.35": {
+      "leftBrightScleraProxyPixels": 19585,
+      "rightBrightScleraProxyPixels": 18582,
+      "totalBrightScleraProxyPixels": 38167,
+      "totalChangeVsControlPercent": -0.10730737018425461
+    },
+    "c-balanced-0.55": {
+      "leftBrightScleraProxyPixels": 19634,
+      "rightBrightScleraProxyPixels": 18630,
+      "totalBrightScleraProxyPixels": 38264,
+      "totalChangeVsControlPercent": 0.14656616415410384
+    },
+    "d-strong-0.75": {
+      "leftBrightScleraProxyPixels": 19681,
+      "rightBrightScleraProxyPixels": 18674,
+      "totalBrightScleraProxyPixels": 38355,
+      "totalChangeVsControlPercent": 0.3847361809045226
+    }
+  },
+  "renderDifferences": {
+    "eye-front": {
+      "fullFrameMeanAbsoluteRgbDelta255": 0.10001660138368607,
+      "unchangedTopBandMeanAbsoluteRgbDelta255": 0.0001507936540292576
+    },
+    "eye-oblique": {
+      "fullFrameMeanAbsoluteRgbDelta255": 0.12969455122947693,
+      "unchangedTopBandMeanAbsoluteRgbDelta255": 4.960317528457381e-05
+    },
+    "face-front": {
+      "fullFrameMeanAbsoluteRgbDelta255": 0.004485666751861572,
+      "unchangedTopBandMeanAbsoluteRgbDelta255": 0.0
+    },
+    "face-three-quarter": {
+      "fullFrameMeanAbsoluteRgbDelta255": 0.007980999536812305,
+      "unchangedTopBandMeanAbsoluteRgbDelta255": 0.0
+    }
+  },
+  "geometryFairing": {
+    "controlMaximumLowerCornerDeviationMm": {
+      "L": 2.0450812119703343,
+      "R": 1.8842495404756132
+    },
+    "selectedResidualMaximumLowerCornerDeviationMm": {
+      "L": 0.9202865453866503,
+      "R": 0.8479122932140258
+    },
+    "reductionPercent": 55.00000000000001,
+    "horizontalApertureClosureMm": 0.36000000000000004
+  },
+  "visualDecision": {
+    "selected": "c-balanced-0.55",
+    "reason": "55% fairing removes the folded medial/lateral lower-lid run while preserving the upper contour and essentially preserving total bright sclera area; 75% begins to read overly straight."
+  },
+  "status": "PASS_SELECTED_BALANCED_0_55"
+}
