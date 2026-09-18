@@ -1,0 +1,66 @@
+{
+  "revision": "v249r1084-runtime-hair-motion-export",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-layered-hair-motion-r1083-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\runtime-hair-motion-r1084",
+  "publicBenchmarkCopy": "D:\\Download\\Aevrynd\\sites-engine-journey\\public\\assets\\character-r1084-motion",
+  "manifest": {
+    "format": "aevrynd-runtime-hair-motion-v1",
+    "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-layered-hair-motion-r1083-study.blend",
+    "license": "Aevrynd project-authored geometry and motion; no runtime platform dependency",
+    "coordinateSystem": "hair-object local metres, Blender Z up",
+    "geometry": {
+      "curveCount": 3770,
+      "pointCount": 73840,
+      "longCurveCount": 3640,
+      "shortCurveCount": 130
+    },
+    "motion": {
+      "framesPerSecond": 30,
+      "cycleFrames": 60,
+      "restFrames": [
+        1,
+        61
+      ],
+      "envelope": "sin(pi*u)^2",
+      "sway": "envelope*(0.55+0.45*sin((frame-1)*2pi/48+curvePhase))",
+      "rootFalloff": "authored into per-point motion vectors with t^2.15",
+      "maximumAuthoredVectorM": 0.004499999921686038
+    },
+    "files": {
+      "curveOffsets": "curve-offsets.u32",
+      "basePositions": "base-positions.f32",
+      "motionVectors": "motion-vectors.f32",
+      "curvePhases": "curve-phases.f32",
+      "radii": "radii.f32"
+    },
+    "digests": {
+      "curveOffsets": {
+        "bytes": 15084,
+        "sha256": "6e6f463d416bcee4f176473a489aa4518711c3f28f16926f5c5f877112c5e121"
+      },
+      "basePositions": {
+        "bytes": 886080,
+        "sha256": "cf3c2c8fcd1d97f03ecceab42d908b5b86cc8e608a9485009d8cfde4c9e70217"
+      },
+      "motionVectors": {
+        "bytes": 886080,
+        "sha256": "ac55c349b8520aad75812c8ab0d9165bf28ab1c53ac62ed00ddc8e39f1776c66"
+      },
+      "curvePhases": {
+        "bytes": 15080,
+        "sha256": "4d34d5447aaab9056f334685d86a243d8ba562570af59735049eff899c595bb9"
+      },
+      "radii": {
+        "bytes": 295360,
+        "sha256": "540beefb4f6997061ceba03acd698416d616a801ba695e1fc237a1a4a9756106"
+      }
+    },
+    "sourceAudit": "female-v249-mainline-r1083-layered-hair-motion.audit.json",
+    "releaseState": "ISOLATED_RUNTIME_CANDIDATE_NOT_WEBSITE_ASSET"
+  },
+  "totalBinaryBytes": 2097684,
+  "status": "EXPORTED_AND_AUDITED_PASS",
+  "runtimeAudit": "runtime-hair-motion-r1084/runtime-audit.json",
+  "browserAudit": "runtime-hair-motion-r1084/browser-audit.json",
+  "aggregateAudit": "female-v249-mainline-r1084-runtime-hair-motion.audit.json"
+}

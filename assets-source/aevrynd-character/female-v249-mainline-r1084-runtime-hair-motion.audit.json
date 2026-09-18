@@ -1,0 +1,91 @@
+{
+  "revision": "v249r1084-runtime-hair-motion",
+  "format": "aevrynd-runtime-hair-motion-v1",
+  "sourceRevision": "v249r1083",
+  "releaseState": "ISOLATED_RUNTIME_CANDIDATE_NOT_WEBSITE_ASSET",
+  "ownedRuntimeDependency": true,
+  "blenderRuntimeDependency": false,
+  "geometry": {
+    "curveCount": 3770,
+    "pointCount": 73840,
+    "longCurveCount": 3640,
+    "shortCurveCount": 130
+  },
+  "binaryBytes": 2097684,
+  "node": {
+    "measuredFrames": 600,
+    "averageCpuFrameMs": 0.24093866666666666,
+    "exactBlenderMetricParity": true,
+    "rootDriftM": 0,
+    "settleErrorM": 0,
+    "status": "PASS"
+  },
+  "browser": {
+    "measuredFrames": 180,
+    "averageEvaluationMs": 0.23888888988229964,
+    "averageEvaluationAndRenderMs": 0.40166666673289403,
+    "drawCalls": 1,
+    "segments": 70070,
+    "status": "PASS"
+  },
+  "publicCopyIntegrity": {
+    "curve-offsets.u32": {
+      "authoritativeBytes": 15084,
+      "publicBytes": 15084,
+      "authoritativeSha256": "6e6f463d416bcee4f176473a489aa4518711c3f28f16926f5c5f877112c5e121",
+      "publicSha256": "6e6f463d416bcee4f176473a489aa4518711c3f28f16926f5c5f877112c5e121",
+      "matches": true
+    },
+    "base-positions.f32": {
+      "authoritativeBytes": 886080,
+      "publicBytes": 886080,
+      "authoritativeSha256": "cf3c2c8fcd1d97f03ecceab42d908b5b86cc8e608a9485009d8cfde4c9e70217",
+      "publicSha256": "cf3c2c8fcd1d97f03ecceab42d908b5b86cc8e608a9485009d8cfde4c9e70217",
+      "matches": true
+    },
+    "motion-vectors.f32": {
+      "authoritativeBytes": 886080,
+      "publicBytes": 886080,
+      "authoritativeSha256": "ac55c349b8520aad75812c8ab0d9165bf28ab1c53ac62ed00ddc8e39f1776c66",
+      "publicSha256": "ac55c349b8520aad75812c8ab0d9165bf28ab1c53ac62ed00ddc8e39f1776c66",
+      "matches": true
+    },
+    "curve-phases.f32": {
+      "authoritativeBytes": 15080,
+      "publicBytes": 15080,
+      "authoritativeSha256": "4d34d5447aaab9056f334685d86a243d8ba562570af59735049eff899c595bb9",
+      "publicSha256": "4d34d5447aaab9056f334685d86a243d8ba562570af59735049eff899c595bb9",
+      "matches": true
+    },
+    "radii.f32": {
+      "authoritativeBytes": 295360,
+      "publicBytes": 295360,
+      "authoritativeSha256": "540beefb4f6997061ceba03acd698416d616a801ba695e1fc237a1a4a9756106",
+      "publicSha256": "540beefb4f6997061ceba03acd698416d616a801ba695e1fc237a1a4a9756106",
+      "matches": true
+    }
+  },
+  "collisionEvidence": {
+    "sourceAudit": "female-v249-mainline-r1083-layered-hair-motion.audit.json",
+    "testedFrames": [
+      1,
+      11,
+      20,
+      21,
+      31,
+      33,
+      41,
+      51,
+      61
+    ],
+    "testedPointInstances": 664560,
+    "penetrations": 0,
+    "minimumSignedBodyClearanceM": 0.0005166466
+  },
+  "limitations": [
+    "The browser benchmark renders the isolated motion package as line segments, not the complete shaded character.",
+    "The website remains on v83 until the candidate is integrated with the actual strand renderer and passes full visual, collision, and page-performance gates."
+  ],
+  "failures": [],
+  "status": "PASS"
+}

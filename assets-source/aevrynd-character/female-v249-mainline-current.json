@@ -133,7 +133,7 @@
   "latestOpenEyelidTopologyReference": "aevrynd-female-authoring-v249-mainline-open-topology-physical-skin-r446.blend",
   "latestOpenEyelidTopologyBridgeInspection": "female-v249-mainline-r1010-open-topology-bridge-inspection.json",
   "latestOpenEyelidTopologyStatus": "R1014_B_BALANCED_GUIDE_SELECTED_7P834MM; R1015_VERTEX_AND_30_SHAPE_KEY_COMPATIBILITY_PASS_FRAME1_ZERO_EYE_LASH_OVERLAP_VISUAL_FAIL_NO_INNER_RIM",
-  "nextFaceTopologyWork": "Use r1083 only as the offline motion source. Start r1084 by baking the owned motion formula into an engine-readable animation representation in an isolated candidate asset, then benchmark GPU/CPU/frame time and repeat dynamic collision in the browser before any website replacement. Reject the path if it requires Blender at runtime or increases draw calls materially.",
+  "nextFaceTopologyWork": "Use the r1084 owned runtime package as the only dynamic-hair input for r1085. Integrate it with the actual candidate strand renderer and full character, preserve root pinning and the r1083 collision envelope, then repeat multi-angle rest/peak/settle visual review, dynamic body collision, page frame-time, memory, and draw-call gates. Do not replace website v83 from the isolated line benchmark.",
   "latestOpenEyelidTopologyResearch": "r1011-r1015 rear-boundary extraction, authored-margin transfer, closed anatomical guide and true-aperture cut",
   "latestOpenEyelidTechnicalStudy": "aevrynd-female-cc0-balanced-open-aperture-r1015-study.blend",
   "latestEyeTopologyResearch": "r1011-r1028 open-aperture/canthus/lash stack; r1078-r1079 physical lid wall and contour; r1080 iris proportion, convergence, sclera value and cornea wiring",
@@ -154,5 +154,8 @@
   "latestSkinAudit": "female-v249-mainline-r1082-regional-skin.audit.json; female-v249-mainline-r1082-regional-skin.visual-audit.json",
   "latestSkinReview": "reviews/v249r1082-regional-skin/contact-sheet-r1082.jpg",
   "latestTargetNativeDynamicHairAudit": "female-v249-mainline-r1083-layered-hair-motion.audit.json; female-v249-mainline-r1083-layered-hair-motion.visual-audit.json",
-  "latestTargetNativeDynamicHairReview": "reviews/v249r1083-layered-hair-motion/contact-sheet-r1083.jpg"
+  "latestTargetNativeDynamicHairReview": "reviews/v249r1083-layered-hair-motion/contact-sheet-r1083.jpg",
+  "latestTargetNativeDynamicHairRuntimeCandidate": "runtime-hair-motion-r1084/manifest.json",
+  "latestTargetNativeDynamicHairRuntimeAudit": "runtime-hair-motion-r1084/runtime-audit.json; runtime-hair-motion-r1084/browser-audit.json; female-v249-mainline-r1084-runtime-hair-motion.audit.json",
+  "latestTargetNativeDynamicHairRuntimeStatus": "R1084_ISOLATED_ENGINE_RUNTIME_PASS_NOT_WEBSITE_PROMOTION; owned deterministic runtime exactly matches the r1083 Blender motion metrics, evaluates 600 Node frames at 0.2401ms average, and renders 73,840 points / 70,070 segments in a real Chromium WebGL browser at 0.2389ms evaluation and 0.4017ms evaluation+render with one draw call. The 2,097,684-byte public package is digest-identical to the authoritative source. Website v83 remains unchanged pending actual strand-renderer integration and full-character visual/collision/page gates."
 }
