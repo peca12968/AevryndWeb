@@ -1,0 +1,36 @@
+{
+  "revision": "v249r1096-defined-skin-response",
+  "reviewStandard": "strict modern real-time hero-character head review",
+  "scoreOutOf100": 42,
+  "verdict": "FAIL",
+  "websitePromotionApproved": false,
+  "improvements": [
+    "AgX preserves facial highlight rolloff that was clipped by the earlier Standard review transform.",
+    "Reduced subsurface blur keeps the nose, cheek and eyelid plane changes more readable.",
+    "Two-scale procedural normals provide a stronger owned skin-detail baseline without adding external textures."
+  ],
+  "materialChanges": {
+    "primaryNormalStrength": [0.058, 0.125],
+    "primaryNormalDistanceM": [0.00007, 0.00012],
+    "secondaryNormalStrength": [0.026, 0.055],
+    "secondaryNormalDistanceM": [0.000014, 0.000025],
+    "subsurfaceWeight": [0.05, 0.035],
+    "subsurfaceScaleM": [0.0042, 0.0032]
+  },
+  "blockingFindings": [
+    "Skin detail is still too subtle at full-head distance and lacks convincing region-specific pore direction.",
+    "The eyelid apertures, canthus closure and exposed sclera remain synthetic.",
+    "Lip vermilion volume and the inner-mouth transition still read as a flat dark cut.",
+    "Hairline and long-hair mass remain below the required standard; r1091 sheet-like families are unchanged.",
+    "Eyebrows remain too pale and sparse to frame the face."
+  ],
+  "geometryChanged": false,
+  "collisionStatus": "INHERITED_R1091_GEOMETRY_UNCHANGED",
+  "nextRequiredPass": "Improve eyelid aperture and canthus closure under the new AgX review baseline, then return to a card-and-fiber hybrid hair architecture.",
+  "reviewRenders": [
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1096-defined-skin-response/r1096-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1096-defined-skin-response/r1096-three-quarter.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1096-defined-skin-response/r1096-profile.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1096-defined-skin-response/r1096-back.png"
+  ]
+}

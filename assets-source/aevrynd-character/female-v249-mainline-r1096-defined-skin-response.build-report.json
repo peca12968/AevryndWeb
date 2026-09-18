@@ -1,0 +1,36 @@
+{
+  "revision": "v249r1096-defined-skin-response",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-scalp-overlay-r1091-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-defined-skin-response-r1096-study.blend",
+  "method": "increase two-scale owned procedural skin normal response, reduce broad subsurface blur, and use an AgX review transform that preserves highlights",
+  "material": {
+    "before": {
+      "primaryStrength": 0.057999998331069946,
+      "primaryDistanceM": 7.000000186963007e-05,
+      "secondaryStrength": 0.026000000536441803,
+      "secondaryDistanceM": 1.4000000192027073e-05,
+      "subsurfaceWeight": 0.05000000074505806,
+      "subsurfaceScaleM": 0.00419999985024333
+    },
+    "after": {
+      "primaryStrength": 0.125,
+      "primaryDistanceM": 0.00011999999696854502,
+      "secondaryStrength": 0.054999999701976776,
+      "secondaryDistanceM": 2.499999936844688e-05,
+      "subsurfaceWeight": 0.03500000014901161,
+      "subsurfaceScaleM": 0.0031999999191612005
+    }
+  },
+  "colorManagement": {
+    "viewTransform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": -0.5,
+    "gamma": 1.0
+  },
+  "geometryChanged": false,
+  "collisionStatus": "INHERITED_R1091_GEOMETRY_UNCHANGED",
+  "ownership": "Aevrynd-authored procedural material parameters; no external textures or runtime dependencies added",
+  "externalDependencies": [],
+  "status": "PASS",
+  "websitePromotionApproved": false
+}
