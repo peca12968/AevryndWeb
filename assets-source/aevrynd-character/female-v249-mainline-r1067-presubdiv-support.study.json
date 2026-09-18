@@ -1,0 +1,107 @@
+{
+  "revision": "v249r1067-presubdiv-support",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-structured-lips-r1061-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-presubdiv-support-r1067-study.blend",
+  "method": "narrow procedural Bevel modifier before subdivision and armature, limited by the measured 85-vertex core and 90-vertex support group",
+  "variants": [
+    {
+      "label": "a-control",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "bevelWidthMm": 0.0,
+        "segments": 0,
+        "modifierAdded": false,
+        "evaluatedTopology": {
+          "vertices": 216636,
+          "triangles": 432912
+        }
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1067-presubdiv-support\\a-control-front.png"
+      ]
+    },
+    {
+      "label": "b-0.10mm-s1",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "bevelWidthMm": 0.1,
+        "segments": 1,
+        "modifierAdded": true,
+        "evaluatedTopology": {
+          "vertices": 219020,
+          "triangles": 437680
+        }
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1067-presubdiv-support\\b-0.10mm-s1-front.png"
+      ]
+    },
+    {
+      "label": "c-0.20mm-s1",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "bevelWidthMm": 0.2,
+        "segments": 1,
+        "modifierAdded": true,
+        "evaluatedTopology": {
+          "vertices": 219020,
+          "triangles": 437680
+        }
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1067-presubdiv-support\\c-0.20mm-s1-front.png"
+      ]
+    },
+    {
+      "label": "d-0.35mm-s2",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "bevelWidthMm": 0.35,
+        "segments": 2,
+        "modifierAdded": true,
+        "evaluatedTopology": {
+          "vertices": 222492,
+          "triangles": 444624
+        }
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1067-presubdiv-support\\d-0.35mm-s2-front.png"
+      ]
+    },
+    {
+      "label": "e-0.50mm-s2",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "bevelWidthMm": 0.5,
+        "segments": 2,
+        "modifierAdded": true,
+        "evaluatedTopology": {
+          "vertices": 222492,
+          "triangles": 444624
+        }
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1067-presubdiv-support\\e-0.50mm-s2-front.png"
+      ]
+    }
+  ],
+  "selectedVariant": "c-0.20mm-s1",
+  "sourceGeometryChanged": false,
+  "evaluatedGeometryChanged": true,
+  "shapeKeysChanged": false,
+  "websitePromotionApproved": false,
+  "candidateStatus": "VISUAL_AND_STABILITY_REJECT",
+  "strictMouthScore100": 35,
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1066-r1067-support-geometry\\contact-sheet-r1066-r1067.jpg",
+  "finding": "Pre-subdivision support geometry changes the silhouette but creates paired lower-edge humps and retains the bright line. Blender 5.2.2 also terminates with EXCEPTION_ACCESS_VIOLATION on the second render of a beveled variant; one-render-per-load completes only as a diagnostic."
+}

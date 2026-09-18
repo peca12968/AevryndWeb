@@ -1653,3 +1653,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - Face-area weights 10, 30, 50 and 100 are visually identical. Each differs from the control by only 0.001458/255 mean RGB intensity, consistent with render jitter rather than a changed normal field.
 - The chalk-bright lower inner edge remains unchanged, so post-subdivision weighted normals cannot repair this transition. Strict mouth quality stays at 38/100 and the modifier is rejected from the technical mainline.
 - r1066 must add real support geometry around the measured edge, initially as a narrow procedural bevel/support ring, then prove export stability, shape-key compatibility and dynamic collision before promotion.
+
+### v249r1066-r1067 — support-bevel performance and stability rejection
+
+- r1066 adds a vertex-group-limited Bevel after subdivision and armature. Widths 0.10-0.50 mm are visually negligible while evaluated vertices rise from 216,636 to 230,976-243,382 and triangles from 432,912 to 461,592-486,404. The cost is 6.6%-12.4% without visible benefit.
+- r1067 moves the same Bevel before subdivision. It changes the lower edge visibly at only 0.10 mm, proving low-density support geometry controls the final curve, but it creates paired humps and leaves the white rim intact. Wider bounds amplify the artificial contour.
+- Blender 5.2.2 terminates with `EXCEPTION_ACCESS_VIOLATION` on the second render of a pre-subdivision beveled variant. One deterministic front render per fresh file load completes, but the stack fails the stability gate.
+- r1066 scores 38/100 with no perceptual gain; r1067 falls to 35/100 and is unstable. Both are rejected, r1061 remains the technical expression baseline and website v83 remains unchanged.
+- Modifier-based repair is closed. r1068 must explicitly replace the local lower-inner patch with a smooth resampled curve and two authored support rows, transferring all 35 shape-key deltas and normalized weights before visual and collision review.

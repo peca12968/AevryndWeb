@@ -1,0 +1,112 @@
+{
+  "revision": "v249r1066-support-bevel",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-structured-lips-r1061-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-inner-edge-bevel-r1066-study.blend",
+  "method": "narrow procedural Bevel modifier after subdivision and armature, limited by the measured 85-vertex core and 90-vertex support group",
+  "variants": [
+    {
+      "label": "a-control",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "bevelWidthMm": 0.0,
+        "segments": 0,
+        "modifierAdded": false,
+        "evaluatedTopology": {
+          "vertices": 216636,
+          "triangles": 432912
+        }
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1066-support-bevel\\a-control-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1066-support-bevel\\a-control-oblique.png"
+      ]
+    },
+    {
+      "label": "b-0.10mm-s2",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "bevelWidthMm": 0.1,
+        "segments": 2,
+        "modifierAdded": true,
+        "evaluatedTopology": {
+          "vertices": 230976,
+          "triangles": 461592
+        }
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1066-support-bevel\\b-0.10mm-s2-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1066-support-bevel\\b-0.10mm-s2-oblique.png"
+      ]
+    },
+    {
+      "label": "c-0.20mm-s2",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "bevelWidthMm": 0.2,
+        "segments": 2,
+        "modifierAdded": true,
+        "evaluatedTopology": {
+          "vertices": 230976,
+          "triangles": 461592
+        }
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1066-support-bevel\\c-0.20mm-s2-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1066-support-bevel\\c-0.20mm-s2-oblique.png"
+      ]
+    },
+    {
+      "label": "d-0.35mm-s3",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "bevelWidthMm": 0.35,
+        "segments": 3,
+        "modifierAdded": true,
+        "evaluatedTopology": {
+          "vertices": 243382,
+          "triangles": 486404
+        }
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1066-support-bevel\\d-0.35mm-s3-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1066-support-bevel\\d-0.35mm-s3-oblique.png"
+      ]
+    },
+    {
+      "label": "e-0.50mm-s3",
+      "metrics": {
+        "measuredEdges": 76,
+        "coreVertices": 85,
+        "supportVertices": 90,
+        "bevelWidthMm": 0.5,
+        "segments": 3,
+        "modifierAdded": true,
+        "evaluatedTopology": {
+          "vertices": 243382,
+          "triangles": 486404
+        }
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1066-support-bevel\\e-0.50mm-s3-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1066-support-bevel\\e-0.50mm-s3-oblique.png"
+      ]
+    }
+  ],
+  "selectedVariant": "c-0.20mm-s2",
+  "sourceGeometryChanged": false,
+  "evaluatedGeometryChanged": true,
+  "shapeKeysChanged": false,
+  "websitePromotionApproved": false,
+  "candidateStatus": "VISUAL_AND_PERFORMANCE_REJECT",
+  "strictMouthScore100": 38,
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1066-r1067-support-geometry\\contact-sheet-r1066-r1067.jpg",
+  "finding": "Post-subdivision bevel widths 0.10-0.50 mm are visually negligible while increasing evaluated vertices from 216,636 to 230,976-243,382 and triangles from 432,912 to 461,592-486,404."
+}
