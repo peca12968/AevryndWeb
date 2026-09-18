@@ -1,0 +1,46 @@
+{
+  "revision": "v249r1123-rear-contour-sweep",
+  "sourceRevision": "v249r1122-long-bob-contour-sweep",
+  "strictHairScore": 46,
+  "status": "TECHNICAL_PASS_VISUAL_IMPROVEMENT_MAINLINE_STUDY",
+  "websitePromotionApproved": false,
+  "selectedVariant": "c-high",
+  "technicalEvidence": {
+    "trimmedRearCurves": 1067,
+    "removedControlPoints": 1430,
+    "remainingCurves": 5727,
+    "remainingPoints": 100890,
+    "penetratingPoints": {
+      "1": 0,
+      "20": 0,
+      "33": 0,
+      "61": 0
+    },
+    "minimumSignedClearanceMm": {
+      "1": 1.00006,
+      "20": 0.560479,
+      "33": 1.007348,
+      "61": 1.000015
+    }
+  },
+  "improvements": [
+    "The sparse rear-centre tail below the main bob mass is substantially reduced.",
+    "The front and side silhouettes remain visually unchanged because the edit is gated to rear-rooted curves.",
+    "The selected edit removes 1,430 more control points while preserving zero penetrations across four motion frames."
+  ],
+  "remainingIssues": [
+    "The rear lower edge still exposes individual terminal strands at close range.",
+    "The frontal hairline remains crossed and the centre part remains broad.",
+    "The hair material lacks root-to-tip color and roughness variation.",
+    "The main flow is still too uniformly vertical."
+  ],
+  "decision": "Use r1123 c-high as the active offline mainline study; keep website promotion forbidden.",
+  "nextAction": "Rebuild the visible frontal short-root families along scalp tangents and introduce controlled root-to-tip material variation.",
+  "renders": [
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1123-rear-contour-sweep\\c-high-front-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1123-rear-contour-sweep\\c-high-oblique-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1123-rear-contour-sweep\\c-high-profile-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1123-rear-contour-sweep\\c-high-back-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1123-rear-contour-sweep\\c-high-back-f33.png"
+  ]
+}
