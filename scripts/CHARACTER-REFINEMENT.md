@@ -1716,3 +1716,7 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 ### v249r1076 paired commissure curvature relaxation
 - Selected a 15% symmetrized far-neighbor relaxation on four topology-matched vertex pairs. It changes eight vertices by at most 0.0572 mm and lowers maximum commissure normal spread from 88.04 to 38.63 degrees neutral and 88.74 to 37.84 degrees smiling; 30% and 45% over-correct and are rejected.
 - All 35 relative shape-key deltas are preserved within 7.68e-9 m; topology, weights, materials, modifiers and draw calls are unchanged. Four-frame, open-mouth, smile, self-collision and 14 face-attachment gates pass. Website v83 remains unchanged.
+
+### v249r1077 strict full-head scorecard
+- Reframed the current r1076 face and owned r981 static groom in 15 calibrated views: front, bilateral three-quarter/profile, high/low, eye close-ups, hair front/back/top. The complete head scores 39/100 under a modern real-time hero-character rubric; prior local subsystem scores are not treated as overall quality.
+- Eyes/lids are the largest blocker at 34/100: oversized exposed aperture, triangular sclera wedges, weak lid thickness and canthus holes. Hairline 32 and skin response 36 follow. r1078 will address eyelid/eye integration first. No geometry, collision state, performance state or website asset changed.

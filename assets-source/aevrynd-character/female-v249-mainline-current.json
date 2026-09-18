@@ -133,7 +133,7 @@
   "latestOpenEyelidTopologyReference": "aevrynd-female-authoring-v249-mainline-open-topology-physical-skin-r446.blend",
   "latestOpenEyelidTopologyBridgeInspection": "female-v249-mainline-r1010-open-topology-bridge-inspection.json",
   "latestOpenEyelidTopologyStatus": "R1014_B_BALANCED_GUIDE_SELECTED_7P834MM; R1015_VERTEX_AND_30_SHAPE_KEY_COMPATIBILITY_PASS_FRAME1_ZERO_EYE_LASH_OVERLAP_VISUAL_FAIL_NO_INNER_RIM",
-  "nextFaceTopologyWork": "Use r1076 as the mouth-edge baseline for r1077. Re-run the strict full-head multi-angle scorecard and rank remaining face defects rather than continuing microscopic mouth tuning; prioritize the largest visible issue among eyelid form, eye wetness/sclera integration, nose-to-lip anatomy and facial plane definition. Preserve r1076 collision and performance gates.",
+  "nextFaceTopologyWork": "Build r1078 from r1076. Measure the current visible aperture against the existing 7.834 mm balanced anatomical guide; reshape upper/lower margin depth and lid thickness within collision clearances, then refit lash roots only if required. Reject any variant that reintroduces sclera/cornea/lash overlap or dark canthus holes.",
   "latestOpenEyelidTopologyResearch": "r1011-r1015 rear-boundary extraction, authored-margin transfer, closed anatomical guide and true-aperture cut",
   "latestOpenEyelidTechnicalStudy": "aevrynd-female-cc0-balanced-open-aperture-r1015-study.blend",
   "latestEyeTopologyResearch": "r1011-r1028 open-aperture, continuous canthus, orbital volume and interpolated collision-pruned lash density",
@@ -147,5 +147,8 @@
   "latestMouthTopologyCollisionAudit": "female-v249-mainline-r1068-exact-edge-support.collision-audit.json",
   "latestMouthMaterialStudy": "aevrynd-female-cc0-commissure-falloff-r1074-study.blend",
   "latestMouthMaterialToneAudit": "female-v249-mainline-r1074-commissure-falloff.tone-audit.json",
-  "latestMouthTopologyStudy": "aevrynd-female-cc0-commissure-curvature-r1076-study.blend"
+  "latestMouthTopologyStudy": "aevrynd-female-cc0-commissure-curvature-r1076-study.blend",
+  "latestFullHeadScorecard": "female-v249-mainline-r1077-full-head-scorecard.json",
+  "latestFullHeadReview": "reviews/v249r1077-full-head-scorecard/contact-sheet-r1077.jpg",
+  "latestFullHeadStatus": "R1077_STRICT_FULL_HEAD_BASELINE_39_OF_100_HERO_FAIL; eyes/lids 34, hairline 32, skin 36, nose/midface 40, cranial/facial planes 42, hair mass 42, mouth 45, brows/lashes 46. The eye aperture and lid/eye integration are the largest visible blocker. No model or website promotion occurred."
 }

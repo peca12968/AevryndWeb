@@ -1,0 +1,74 @@
+{
+  "revision": "v249r1077-full-head-scorecard",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-commissure-curvature-r1076-study.blend",
+  "renderReport": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1077-full-head-scorecard.render.json",
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1077-full-head-scorecard\\contact-sheet-r1077.jpg",
+  "standard": "strict modern real-time hero-character presentation, scored as a complete head rather than averaging prior local technical scores",
+  "rubric": [
+    {
+      "category": "cranial silhouette and facial planes",
+      "weightPercent": 10,
+      "score100": 42,
+      "evidence": "The cranial vault is long and uniformly smooth; temple, zygomatic and mandibular plane changes remain weak in front, three-quarter and profile views."
+    },
+    {
+      "category": "eyes and eyelids",
+      "weightPercent": 20,
+      "score100": 34,
+      "evidence": "The aperture exposes large triangular sclera wedges, lid margins lack physical thickness, lateral canthi read as holes and the gaze remains rigid under front and oblique inspection."
+    },
+    {
+      "category": "brows and lashes",
+      "weightPercent": 5,
+      "score100": 46,
+      "evidence": "Lash density is technically present but the fan reads uniformly combed; pale sparse brows provide little anatomical framing."
+    },
+    {
+      "category": "nose and midface",
+      "weightPercent": 15,
+      "score100": 40,
+      "evidence": "Bridge-to-tip transition is generic; alar cartilage, nostril sill, nasolabial transition and cheek support remain under-defined across low, high and three-quarter views."
+    },
+    {
+      "category": "mouth and perioral anatomy",
+      "weightPercent": 15,
+      "score100": 45,
+      "evidence": "r1076 fixes the commissure normal spike, but vermilion volume, inner cavity depth, philtral columns and expressive compression remain shallow."
+    },
+    {
+      "category": "skin response and regional detail",
+      "weightPercent": 15,
+      "score100": 36,
+      "evidence": "Broad highlights and near-uniform color make the face read as smooth synthetic material; pores, roughness zones and regional color variation do not survive full-head distance."
+    },
+    {
+      "category": "hairline and scalp transition",
+      "weightPercent": 8,
+      "score100": 32,
+      "evidence": "The center part exposes a wide bright scalp strip, the frontal boundary is hard and wig-like, and temple transitions lack short graded fibers."
+    },
+    {
+      "category": "hair mass, clumps and ends",
+      "weightPercent": 12,
+      "score100": 42,
+      "evidence": "The 72,800-point owned groom forms a straight uniform curtain with weak macro-clump hierarchy, limited silhouette breakup and repetitive lower ends."
+    }
+  ],
+  "weightedScore100": 39.05,
+  "reportedStrictScore100": 39,
+  "rankedBlockers": [
+    "eyes and eyelids: aperture, sclera wedges, lid thickness and canthus closure",
+    "hairline and scalp transition: wide bright part and hard frontal boundary",
+    "skin response: uniform color/roughness and broad synthetic highlight",
+    "nose/midface planes: weak alar, cheek and nasolabial structure",
+    "hair mass: straight curtain, weak clump hierarchy and repetitive ends",
+    "mouth/perioral: shallow vermilion, cavity and expression compression"
+  ],
+  "selectedNextSubsystem": "EYES_AND_EYELIDS",
+  "nextWork": "Build r1078 from r1076. Measure the current visible aperture against the existing 7.834 mm balanced anatomical guide; reshape upper/lower margin depth and lid thickness within collision clearances, then refit lash roots only if required. Reject any variant that reintroduces sclera/cornea/lash overlap or dark canthus holes.",
+  "modelModified": false,
+  "collisionStatus": "INHERITED_R1076_PASS_NO_MODEL_CHANGE",
+  "performanceStatus": "INHERITED_R1076_PASS_NO_MODEL_CHANGE",
+  "websitePromotionApproved": false,
+  "status": "STRICT_BASELINE_ESTABLISHED_VISUAL_HERO_FAIL"
+}
