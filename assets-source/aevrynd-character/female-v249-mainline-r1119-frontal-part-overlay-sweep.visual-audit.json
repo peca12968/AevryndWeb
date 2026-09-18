@@ -1,0 +1,48 @@
+{
+  "revision": "v249r1119-frontal-part-overlay-sweep",
+  "sourceRevision": "v249r1118-destructive-groom-cleanup-sweep",
+  "strictHairScore": 35,
+  "status": "TECHNICAL_PASS_VISUAL_REJECTED",
+  "websitePromotionApproved": false,
+  "selectedVariant": null,
+  "technicalEvidence": {
+    "testedVariants": [
+      "a-light",
+      "b-balanced",
+      "c-dense"
+    ],
+    "addedCurves": [
+      64,
+      120,
+      192
+    ],
+    "penetratingPoints": {
+      "frame1": 0,
+      "frame20": 0,
+      "frame33": 0,
+      "frame61": 0
+    },
+    "minimumSignedClearanceMm": {
+      "frame1": 1.0000598231272306,
+      "frame20": 0.5604787844504244,
+      "frame33": 1.0073482956158841,
+      "frame61": 1.0000150105042849
+    }
+  },
+  "visualFailures": [
+    "All densities are nearly indistinguishable at normal front-view scale and do not materially narrow the centre part.",
+    "Hairline close-up exposes straight scratch-like fibers laid over the scalp instead of coherent root clumps.",
+    "Top view retains the broad asymmetric part and adds a visible rim of short spikes around the crown.",
+    "The underlying vertical flow, flat material response, and needle-like lower ends remain unresolved."
+  ],
+  "decision": "Reject r1119 and keep r1118 a-conservative as the active offline mainline study.",
+  "nextAction": "Re-author the frontal guide topology into a small number of coherent clumps with controlled root direction, curved mass silhouettes, and non-uniform cross-section; do not add another density overlay.",
+  "renders": [
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1119-frontal-part-overlay-sweep\\a-light-front-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1119-frontal-part-overlay-sweep\\b-balanced-front-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1119-frontal-part-overlay-sweep\\c-dense-front-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1119-frontal-part-overlay-sweep\\b-balanced-hairline-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1119-frontal-part-overlay-sweep\\b-balanced-top-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1119-frontal-part-overlay-sweep\\b-balanced-oblique-f01.png"
+  ]
+}
