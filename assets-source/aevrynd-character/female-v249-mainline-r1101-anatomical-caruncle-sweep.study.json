@@ -1,0 +1,124 @@
+{
+  "revision": "v249r1101-anatomical-caruncle-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-recessed-eyelid-wall-r1100-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-anatomical-caruncle-r1101-study.blend",
+  "method": "replace each deep disc patch with a shallow procedural tear-shaped surface projected to the owned sclera, retaining a small central mound and moist soft-tissue response",
+  "variants": [
+    {
+      "label": "b-anatomical",
+      "geometry": {
+        "L": {
+          "halfWidthMm": 0.65,
+          "centralBulgeMm": 0.16,
+          "halfHeightMm": 0.38,
+          "clearanceMm": 0.4,
+          "centerXZWorld": [
+            0.01845,
+            1.44858
+          ],
+          "projectionMisses": 0,
+          "vertices": 97,
+          "faces": 96
+        },
+        "R": {
+          "halfWidthMm": 0.65,
+          "centralBulgeMm": 0.16,
+          "halfHeightMm": 0.38,
+          "clearanceMm": 0.4,
+          "centerXZWorld": [
+            -0.01845,
+            1.44858
+          ],
+          "projectionMisses": 0,
+          "vertices": 97,
+          "faces": 96
+        }
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "body": 0,
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "body": 0,
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "body": 0,
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "body": 0,
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "body": 0,
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "body": 0,
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "body": 0,
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "body": 0,
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1101-anatomical-caruncle\\b-anatomical-eye-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1101-anatomical-caruncle\\b-anatomical-eye-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1101-anatomical-caruncle\\b-anatomical-face-front.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    }
+  ],
+  "selectedVariant": "b-anatomical",
+  "externalDependencies": [],
+  "websitePromotionApproved": false,
+  "candidateStatus": "VISUAL_REVIEW_PENDING"
+}
