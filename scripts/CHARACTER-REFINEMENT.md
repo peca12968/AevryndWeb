@@ -1678,3 +1678,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - Neutral front, oblique and mouth-open renders remain perceptually identical to the control at every bound. Even 0.35 mm fails to hide the grey-white lower-inner strip, so whole-band depth is not the controlling variable.
 - r1069 is rejected at the visual gate before collision promotion. Strict mouth quality remains 39/100, r1068 remains the collision-qualified technical mouth base, and website v83 remains unchanged.
 - r1070 must classify the 299 support faces by evaluated camera-facing normal, material and render contribution, isolate the exact visible row, and rebuild or shade only that row as a continuous inward vestibule transition.
+
+### v249r1070-r1071 — pixel-ray localization and discrete material rejection
+
+- r1070 false-colours all 299 faces touching r1068 support vertices, the 175 fully new faces, the 84 camera-facing faces and the old adjacent face ring. The white rim remains visible beneath or between every diagnostic region.
+- Camera rays through 17 measured bright-line pixels first hit `AevryndFemaleCC0ExactEdgeSupport_R1068` with `Aevrynd_CC0_OwnedSkin_R1031_a-soft-warm`; no tooth, gum or separate oral layer is the first hit. Nearest-base mapping localizes the samples to ten mixed old/new low-density faces.
+- r1071 assigns an owned inner-lip material to the ten exact faces, a 58-face one-ring, a 115-face two-ring and a 389-face support-plus-adjacent union. Exact coverage creates isolated patches; expanded coverage creates large faceted blocks.
+- Even the 389-face union retains the white boundary while tinting both inner lips, so discrete low-density material assignment cannot form a continuous transition. r1071 is rejected before collision promotion and strict mouth quality remains 39/100.
+- r1068 remains the collision-qualified technical base and website v83 remains unchanged. r1072 must derive a continuous sub-millimetre point/corner mask from the measured ray locations and blend colour plus roughness inside the existing owned skin shader without another material slot.
