@@ -1,0 +1,35 @@
+{
+  "revision": "v249r1085-full-character-runtime-visual-audit",
+  "status": "FAIL",
+  "strictScore": 27,
+  "maximumScore": 100,
+  "reviewedViews": [
+    {
+      "angleDegrees": 0,
+      "frame": 21
+    },
+    {
+      "angleDegrees": 45,
+      "frame": 21
+    },
+    {
+      "angleDegrees": -45,
+      "frame": 21
+    },
+    {
+      "angleDegrees": 180,
+      "frame": 21
+    }
+  ],
+  "findings": [
+    "The frontal groom leaves a large bald forehead region and exposes a hard, scalloped hairline mask.",
+    "Oblique views reveal isolated ribbon strands across the temples, ears, face and neck.",
+    "The rear view exposes a large rectangular coverage gap and insufficient rear scalp density.",
+    "The long groom still reads as a straight curtain with weak macro-clump hierarchy.",
+    "The browser skin response is too smooth and uniform because the authored Blender regional shader is not represented faithfully.",
+    "Brows remain thin and noisy, and the eye and facial planes remain below hero-character quality."
+  ],
+  "retainedOfflineFullHeadScore": 42,
+  "websitePromotion": false,
+  "decision": "REJECT_RUNTIME_VISUALS_RETAIN_AS_TECHNICAL_MILESTONE"
+}

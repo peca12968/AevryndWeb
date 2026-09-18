@@ -1,0 +1,109 @@
+{
+  "revision": "v249r1085-full-character-dynamic-hair-browser",
+  "status": "PASS",
+  "environment": "Chrome/153 on Windows; WebKit WebGL",
+  "viewport": [
+    900,
+    900
+  ],
+  "batches": 3,
+  "framesPerBatch": 180,
+  "baseline": {
+    "asset": "public/assets/character-female-refined.glb",
+    "bytes": 7524432,
+    "parseMs": 24.80000001192093,
+    "frameMsMedian": 7.538333333200878,
+    "drawCalls": 94,
+    "triangles": 367740
+  },
+  "candidate": {
+    "characterAsset": "public/assets/character-r1085/character-r1085.glb",
+    "characterSha256": "3bc01829d99a66a5175c22843f272c5f52044422b37922bd179f640c2f03c1e4",
+    "characterBytes": 1472984,
+    "hairBinaryBytes": 2097684,
+    "totalDownloadBytes": 3570668,
+    "parseMs": 8.5,
+    "dynamicCpuBytes": 2073920,
+    "dynamicGeometryGpuBytes": 4644640,
+    "renderedHairCurves": 2860,
+    "sourceHairCurves": 3770,
+    "hairSegments": 52780,
+    "hairRibbonVertices": 211120,
+    "hairRibbonIndices": 316680,
+    "frameMsMedian": 5.658333333333333,
+    "updateMsMedian": 0.6288888904783461,
+    "drawCalls": 42,
+    "triangles": 504456,
+    "dynamicCollision": {
+      "bodyMesh": "mesh_0",
+      "bodyVertices": 74544,
+      "bodyTriangles": 110772,
+      "frames": [
+        {
+          "frame": 1,
+          "penetrations": 0,
+          "minimumSignedClearanceM": 0.0010796904855138467
+        },
+        {
+          "frame": 11,
+          "penetrations": 0,
+          "minimumSignedClearanceM": 0.0009879077739340923
+        },
+        {
+          "frame": 20,
+          "penetrations": 0,
+          "minimumSignedClearanceM": 0.00026364479474318635
+        },
+        {
+          "frame": 21,
+          "penetrations": 0,
+          "minimumSignedClearanceM": 0.0002079594427962398
+        },
+        {
+          "frame": 31,
+          "penetrations": 0,
+          "minimumSignedClearanceM": 0.0006318809592092174
+        },
+        {
+          "frame": 33,
+          "penetrations": 0,
+          "minimumSignedClearanceM": 0.0008414265683877346
+        },
+        {
+          "frame": 41,
+          "penetrations": 0,
+          "minimumSignedClearanceM": 0.0010382312169949527
+        },
+        {
+          "frame": 51,
+          "penetrations": 0,
+          "minimumSignedClearanceM": 0.0010437100434615612
+        },
+        {
+          "frame": 61,
+          "penetrations": 0,
+          "minimumSignedClearanceM": 0.0010796904855138467
+        }
+      ],
+      "pointInstances": 664560,
+      "penetrations": 0,
+      "minimumSignedClearanceM": 0.0002079594427962398,
+      "elapsedMs": 3239.2999999523163,
+      "thresholdM": -5e-05,
+      "status": "PASS"
+    }
+  },
+  "gates": {
+    "anchorPresent": true,
+    "downloadWithinTwelvePercent": true,
+    "updateUnderFiveMs": true,
+    "completeFrameUnderThirtyThreeMs": true,
+    "renderAtSixtyFpsBudget": true,
+    "drawCallsNoHigherThanBaseline": true,
+    "drawCallsAtMostSixtyFour": true,
+    "trianglesAtMostDoubleBaseline": true,
+    "dynamicMemoryUnderEightMiB": true,
+    "dynamicBodyCollisionClear": true
+  },
+  "failures": []
+}

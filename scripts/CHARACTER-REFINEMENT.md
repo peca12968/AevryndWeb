@@ -1760,3 +1760,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - A real Chromium 153 WebGL run measures 180 frames at 0.2389 ms average evaluation and 0.4017 ms average evaluation-plus-render. It draws 70,070 segments with one draw call; all browser thresholds pass.
 - All five public benchmark binaries are byte-for-byte and SHA-256 identical to the authoritative source package. The collision claim remains grounded in r1083's nine-frame, 664,560-point test with zero penetration and 0.517 mm minimum signed body clearance.
 - r1084 is an isolated engine-runtime candidate. Its browser page renders line segments rather than the complete shaded character, so strict full-head quality remains 42/100 and website v83 remains unchanged. r1085 must connect this package to the actual strand renderer and repeat full-character visual, collision, memory, draw-call and page frame-time gates.
+
+### v249r1085 full-character runtime integration
+
+- Integrated the r1084 owned motion package with the complete GLB character through an owned camera-facing GPU ribbon renderer, explicit Blender Z-up to glTF Y-up conversion, procedural owned iris, and a compact runtime material palette. The compressed character is 1,472,984 bytes and the complete character-plus-hair download is 3,570,668 bytes.
+- Real Chromium 153 measures 5.6583 ms median complete frame time, 0.6289 ms median hair update, 42 draw calls and 504,456 triangles. Dynamic CPU plus geometry memory is 6,718,560 bytes. All performance, download, draw-call and memory gates pass.
+- The actual compressed GLB body is audited at frames 1/11/20/21/31/33/41/51/61. All 664,560 hair-point instances have zero penetration and the minimum signed clearance is 0.208 mm at frame 21.
+- Strict front, bilateral oblique and rear review scores the browser result 27/100. The large bald frontal region, hard scalloped hairline, stray temple/ear/neck ribbons, rectangular rear coverage gap, straight-curtain mass, flat browser skin and thin noisy brows fail the visual gate.
+- r1085 is retained as a technical integration milestone only. Its level-one evaluated body is static and still requires weight and shape-key transfer. Website v83 remains unchanged; r1086 must rebuild browser macro hair mass, hairline continuity, strand routing and rear coverage before repeating every gate.
