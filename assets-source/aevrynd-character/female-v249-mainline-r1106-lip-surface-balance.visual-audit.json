@@ -1,0 +1,44 @@
+{
+  "revision": "v249r1106-lip-surface-balance",
+  "sourceRevision": "v249r1105-continuous-upper-lip",
+  "strictMouthScore": 49,
+  "status": "TECHNICAL_PASS_VISUAL_IMPROVEMENT_MAINLINE_STUDY",
+  "websitePromotionApproved": false,
+  "technicalEvidence": {
+    "bodyPatchTrianglePairs": {
+      "neutral": 0,
+      "open": 0,
+      "smile": 0,
+      "frame1": 0,
+      "frame20": 0,
+      "frame33": 0,
+      "frame61": 0
+    },
+    "patchSelfCollisionPairs": 0,
+    "upperLipViewportSubdivision": 2,
+    "upperLipRenderSubdivision": 3,
+    "upperLipViewportTriangles": 4544,
+    "upperLipRenderTriangles": 18176,
+    "lowerLipMaskVertices": 130
+  },
+  "improvements": [
+    "The lower lip now has an isolated authored color mask instead of inheriting the weak whole-lips response.",
+    "Upper and lower vermilion read as one mouth in the full-face view.",
+    "Two smoothing passes reduce the most visible donor-boundary stepping while the final shrinkwrap preserves 0.6 mm clearance.",
+    "Interactive subdivision remains at level two; level three is reserved for offline rendering."
+  ],
+  "remainingIssues": [
+    "The upper-lip top boundary remains slightly faceted at extreme close range.",
+    "The mouth aperture is still too tall and dark for a relaxed neutral expression.",
+    "Open and smile expression silhouettes remain too similar to neutral.",
+    "The lower lip is still oversized relative to the upper lip."
+  ],
+  "nextAction": "Reduce the relaxed aperture without reintroducing self-collision, then build expression-specific upper-lip motion and re-evaluate the full face with hair restored.",
+  "renders": [
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1106-lip-surface-balance/neutral-mouth-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1106-lip-surface-balance/neutral-mouth-oblique.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1106-lip-surface-balance/neutral-face-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1106-lip-surface-balance/open-mouth-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1106-lip-surface-balance/smile-mouth-front.png"
+  ]
+}

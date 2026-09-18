@@ -1,0 +1,114 @@
+{
+  "revision": "v249r1106-lip-surface-balance",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-continuous-upper-lip-r1105-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-lip-surface-balance-r1106-study.blend",
+  "method": "increase the small upper-lip layer to subdivision level three and insert a lower-lip-only chromatic mask after the inherited regional skin color chain",
+  "upperLipSubdivision": {
+    "viewport": 2,
+    "render": 3
+  },
+  "upperLipBoundarySmooth": {
+    "factor": 0.3499999940395355,
+    "iterations": 2,
+    "modifierIndex": 1
+  },
+  "lowerLipMask": {
+    "attribute": "aevrynd_lower_lip_tint_r1106",
+    "vertices": 130,
+    "maximum": 0.9998647112609405
+  },
+  "lowerLipMaterial": {
+    "material": "Aevrynd_CC0_RegionalSkin_R1106_LipBalance",
+    "strength": 1.0,
+    "targetLinearRgba": [
+      0.12,
+      0.015,
+      0.012,
+      1.0
+    ]
+  },
+  "poseCollision": {
+    "neutral": {
+      "bodyPatch": {
+        "trianglePairs": 0,
+        "samplePairs": []
+      },
+      "patchSelf": {
+        "nonAdjacentPairs": 0,
+        "samplePairs": []
+      }
+    },
+    "open": {
+      "bodyPatch": {
+        "trianglePairs": 0,
+        "samplePairs": []
+      },
+      "patchSelf": {
+        "nonAdjacentPairs": 0,
+        "samplePairs": []
+      }
+    },
+    "smile": {
+      "bodyPatch": {
+        "trianglePairs": 0,
+        "samplePairs": []
+      },
+      "patchSelf": {
+        "nonAdjacentPairs": 0,
+        "samplePairs": []
+      }
+    }
+  },
+  "frameCollision": {
+    "1": {
+      "bodyPatch": {
+        "trianglePairs": 0,
+        "samplePairs": []
+      },
+      "patchSelf": {
+        "nonAdjacentPairs": 0,
+        "samplePairs": []
+      }
+    },
+    "20": {
+      "bodyPatch": {
+        "trianglePairs": 0,
+        "samplePairs": []
+      },
+      "patchSelf": {
+        "nonAdjacentPairs": 0,
+        "samplePairs": []
+      }
+    },
+    "33": {
+      "bodyPatch": {
+        "trianglePairs": 0,
+        "samplePairs": []
+      },
+      "patchSelf": {
+        "nonAdjacentPairs": 0,
+        "samplePairs": []
+      }
+    },
+    "61": {
+      "bodyPatch": {
+        "trianglePairs": 0,
+        "samplePairs": []
+      },
+      "patchSelf": {
+        "nonAdjacentPairs": 0,
+        "samplePairs": []
+      }
+    }
+  },
+  "technicalStatus": "TECHNICAL_PASS",
+  "renders": [
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1106-lip-surface-balance\\neutral-mouth-front.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1106-lip-surface-balance\\neutral-mouth-oblique.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1106-lip-surface-balance\\neutral-face-front.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1106-lip-surface-balance\\open-mouth-front.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1106-lip-surface-balance\\smile-mouth-front.png"
+  ],
+  "websitePromotionApproved": false,
+  "candidateStatus": "VISUAL_REVIEW_PENDING"
+}
