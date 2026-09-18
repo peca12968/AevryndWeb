@@ -1,0 +1,82 @@
+{
+  "revision": "v249r1069-support-band-turn",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-exact-edge-support-r1068-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-support-band-turn-r1069-study.blend",
+  "method": "translate only the 234 baked r1068 support-band vertices inward across all 35 shape keys",
+  "variants": [
+    {
+      "label": "a-control",
+      "metrics": {
+        "movedVertices": 0,
+        "depthMm": 0.0,
+        "shapeKeysMovedTogether": 35
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\a-control-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\a-control-neutral-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\a-control-open.png"
+      ]
+    },
+    {
+      "label": "b-0.05mm",
+      "metrics": {
+        "movedVertices": 234,
+        "depthMm": 0.05,
+        "shapeKeysMovedTogether": 35
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\b-0.05mm-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\b-0.05mm-neutral-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\b-0.05mm-open.png"
+      ]
+    },
+    {
+      "label": "c-0.10mm",
+      "metrics": {
+        "movedVertices": 234,
+        "depthMm": 0.1,
+        "shapeKeysMovedTogether": 35
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\c-0.10mm-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\c-0.10mm-neutral-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\c-0.10mm-open.png"
+      ]
+    },
+    {
+      "label": "d-0.20mm",
+      "metrics": {
+        "movedVertices": 234,
+        "depthMm": 0.2,
+        "shapeKeysMovedTogether": 35
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\d-0.20mm-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\d-0.20mm-neutral-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\d-0.20mm-open.png"
+      ]
+    },
+    {
+      "label": "e-0.35mm",
+      "metrics": {
+        "movedVertices": 234,
+        "depthMm": 0.35,
+        "shapeKeysMovedTogether": 35
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\e-0.35mm-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\e-0.35mm-neutral-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1069-support-band-turn\\e-0.35mm-open.png"
+      ]
+    }
+  ],
+  "selectedVariant": null,
+  "topologyChanged": false,
+  "websitePromotionApproved": false,
+  "candidateStatus": "VISUAL_REJECT_NO_GAIN",
+  "strictMouthScore100": 39,
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1069-support-band-turn\\contact-sheet-r1069.jpg",
+  "finding": "Moving all 234 baked support vertices inward by 0.05-0.35 mm across all 35 shape keys leaves the grey-white strip perceptually unchanged in neutral front, oblique and mouth-open views. The strongest bound also fails to hide it, proving the defect is tied to the visible face row and its shading/material transition rather than global support-band depth.",
+  "collisionAuditRequired": false,
+  "collisionAuditReason": "Rejected at the visual gate before promotion; r1068 remains the collision-qualified technical base."
+}

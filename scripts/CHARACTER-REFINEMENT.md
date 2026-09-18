@@ -1670,3 +1670,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - Frames 1/20/33/61 plus mouth-open and smile pass with zero non-adjacent body self-collision. All 14 tested brow, eye, cornea, lash and caruncle attachments retain zero overlap; no vertex lacks deform weights.
 - Strict mouth quality reaches 39/100, matching retained r1033 while adding the clean cavity, effective r1061 expressions and explicit support topology. Oblique and open views still expose a grey-white lower inner strip, so r1068 is a technical topology/collision candidate only and website v83 remains unchanged.
 - r1069 must rebuild only the visible strip between the new support rows as an inward-facing vestibule transition, then repeat oblique/open normal-continuity and collision gates.
+
+### v249r1069 — whole support-band depth rejection
+
+- r1069 verifies that all 234 vertices introduced by r1068 are localized to 299 support-band faces, use the body material and remain available across all 35 shape keys.
+- The sweep translates the complete support band inward by 0.05, 0.10, 0.20 and 0.35 mm, applying the same displacement to every shape key so expression deltas remain unchanged.
+- Neutral front, oblique and mouth-open renders remain perceptually identical to the control at every bound. Even 0.35 mm fails to hide the grey-white lower-inner strip, so whole-band depth is not the controlling variable.
+- r1069 is rejected at the visual gate before collision promotion. Strict mouth quality remains 39/100, r1068 remains the collision-qualified technical mouth base, and website v83 remains unchanged.
+- r1070 must classify the 299 support faces by evaluated camera-facing normal, material and render contribution, isolate the exact visible row, and rebuild or shade only that row as a continuous inward vestibule transition.
