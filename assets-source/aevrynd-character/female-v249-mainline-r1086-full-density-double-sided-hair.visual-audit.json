@@ -1,0 +1,36 @@
+{
+  "revision": "v249r1086-full-density-double-sided-hair-visual-audit",
+  "status": "FAIL",
+  "strictScore": 28,
+  "maximumScore": 100,
+  "reviewedViews": [
+    {
+      "angleDegrees": 0,
+      "frame": 21
+    },
+    {
+      "angleDegrees": 180,
+      "frame": 21
+    }
+  ],
+  "improvementsOverR1085": [
+    "All 3770 authored curves render instead of 2860, restoring 910 previously dropped curves.",
+    "Double-sided ribbons remove view-dependent triangle culling as a possible cause of rear dropout.",
+    "The depth-aware soft mask removes the hard z=1.455 fragment cutoff used by r1085."
+  ],
+  "blockingFindings": [
+    "The frontal hairline remains excessively high, sparse and scalloped, leaving a bald upper forehead.",
+    "The rear view still exposes a very large occipital and nape gap after full-density double-sided rendering.",
+    "Temple, ear and neck strands remain visibly isolated instead of forming coherent locks.",
+    "The long hair mass still reads as a uniform straight curtain without large and medium clump hierarchy.",
+    "Skin and brow presentation remain too flat and noisy for a hero character."
+  ],
+  "rejectedExperiments": [
+    "Unmasked full-density ribbons: exposes too many face and neck crossings.",
+    "r517 card-groom transplant: historical scalp shape does not conform to the current head after scale and landmark alignment.",
+    "Body-derived density overlay: reads as a painted cap rather than hair.",
+    "Body-projected short fibers: reads as a jagged fringe and cannot replace authored guide flow."
+  ],
+  "rootCause": "SOURCE_GROOM_COVERAGE_TOPOLOGY_INSUFFICIENT",
+  "websitePromotion": false
+}

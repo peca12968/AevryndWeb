@@ -1768,3 +1768,11 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - The actual compressed GLB body is audited at frames 1/11/20/21/31/33/41/51/61. All 664,560 hair-point instances have zero penetration and the minimum signed clearance is 0.208 mm at frame 21.
 - Strict front, bilateral oblique and rear review scores the browser result 27/100. The large bald frontal region, hard scalloped hairline, stray temple/ear/neck ribbons, rectangular rear coverage gap, straight-curtain mass, flat browser skin and thin noisy brows fail the visual gate.
 - r1085 is retained as a technical integration milestone only. Its level-one evaluated body is static and still requires weight and shape-key transfer. Website v83 remains unchanged; r1086 must rebuild browser macro hair mass, hairline continuity, strand routing and rear coverage before repeating every gate.
+
+### v249r1086 full-density double-sided hair diagnosis
+
+- Renders all 3,770 authored curves instead of r1085's 2,860 and changes the camera-facing ribbons to double-sided. A depth-aware soft face/neck mask replaces the hard X/Z discard boundary, eliminating culling and shader clipping as explanations for the missing rear mass.
+- Real Chromium 153 measures 7.7178 ms median at the front and 10.1222 ms at the rear, with 0.5956/0.6983 ms hair updates, 42 draw calls and 573,616 triangles. Dynamic CPU plus geometry memory is 8,240,080 bytes, 148,528 bytes under the 8 MiB gate.
+- The unchanged nine-frame audit tests 664,560 hair-point instances with zero body penetration and 0.208 mm minimum signed clearance. Full density adds no collision regression.
+- Strict visual score rises only 27 to 28/100. The frontal hairline remains bald and scalloped, while the rear still exposes a massive occipital/nape gap even with every curve rendered from both sides. This proves the principal defect is missing source-groom coverage topology.
+- An unmasked pass, historical r517 card transplant, body-derived density overlay and body-projected short fibers were reviewed and rejected. They expose face crossings, fail current-head conformance, look painted, or form a jagged fringe. Website v83 remains unchanged; r1087 must rebuild frontal, occipital and nape guide rows in Blender before another runtime export.

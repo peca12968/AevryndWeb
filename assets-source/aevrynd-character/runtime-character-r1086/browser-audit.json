@@ -1,0 +1,62 @@
+{
+  "revision": "v249r1086-full-density-double-sided-hair-browser",
+  "status": "PASS",
+  "environment": "Chrome/153 on Windows; WebKit WebGL",
+  "viewport": [
+    900,
+    900
+  ],
+  "batches": 3,
+  "framesPerBatch": 180,
+  "frontFrame21": {
+    "frameMsMedian": 7.71777777771155,
+    "updateMsMedian": 0.5955555571450127,
+    "drawCalls": 42,
+    "triangles": 573616
+  },
+  "backFrame21": {
+    "frameMsMedian": 10.122222222222222,
+    "updateMsMedian": 0.6983333342605167,
+    "drawCalls": 42,
+    "triangles": 573616
+  },
+  "download": {
+    "characterBytes": 1472984,
+    "hairBinaryBytes": 2097684,
+    "totalBytes": 3570668
+  },
+  "dynamicMemory": {
+    "cpuBytes": 2073920,
+    "geometryGpuBytes": 6166160,
+    "totalBytes": 8240080,
+    "gateBytes": 8388608,
+    "remainingMarginBytes": 148528
+  },
+  "collision": {
+    "frames": [
+      1,
+      11,
+      20,
+      21,
+      31,
+      33,
+      41,
+      51,
+      61
+    ],
+    "pointInstances": 664560,
+    "penetrations": 0,
+    "minimumSignedClearanceM": 0.0002079594427962398,
+    "status": "PASS"
+  },
+  "gates": {
+    "completeFrameUnderThirtyThreeMs": true,
+    "renderAtSixtyFpsBudgetAllReviewedAngles": true,
+    "updateUnderFiveMs": true,
+    "drawCallsNoHigherThanBaseline": true,
+    "drawCallsAtMostSixtyFour": true,
+    "trianglesAtMostDoubleBaseline": true,
+    "dynamicMemoryUnderEightMiB": true,
+    "dynamicBodyCollisionClear": true
+  }
+}
