@@ -1,0 +1,63 @@
+{
+  "revision": "v249r1091-rear-loop-diagnostic",
+  "source": "aevrynd-female-cc0-scalp-overlay-r1091-study.blend",
+  "status": "DIAGNOSED",
+  "websitePromotionApproved": false,
+  "cameraProjectionBand": {
+    "normalizedX": [0.2, 0.8],
+    "normalizedY": [0.52, 0.68],
+    "description": "The top-view band containing the visible rear loop halo."
+  },
+  "familyBandEvidence": {
+    "family0": {
+      "curvesIntersectingBand": 3702,
+      "pointsInBand": 16155,
+      "dominantLocalPoints": [6, 7, 8, 9]
+    },
+    "family1": {
+      "curvesIntersectingBand": 375,
+      "pointsInBand": 2191,
+      "dominantLocalPoints": [7, 8, 9, 10]
+    },
+    "family2": {
+      "curvesIntersectingBand": 143,
+      "pointsInBand": 573,
+      "dominantLocalPoints": [5, 6, 7]
+    },
+    "family3": {
+      "curvesIntersectingBand": 1239,
+      "pointsInBand": 6235,
+      "dominantLocalPoints": [7, 8, 9, 10]
+    },
+    "family4": {
+      "curvesIntersectingBand": 0,
+      "pointsInBand": 0,
+      "dominantLocalPoints": []
+    }
+  },
+  "fullVisibleHairCollisionEvidence": {
+    "frames": [1, 20, 21, 33, 61],
+    "visiblePointSamples": 583840,
+    "penetratingPoints": 0,
+    "minimumSignedClearanceM": 0.0005166465989532298
+  },
+  "rejectedExperiments": [
+    {
+      "revision": "r1092",
+      "method": "Fade family-1 and family-3 tails from normalized curve position 0.62.",
+      "result": "The loop halo remained because the dominant projected points are earlier in the curve."
+    },
+    {
+      "revision": "r1093",
+      "method": "Ray-project the first five or six family-1 and family-3 points onto monotonic scalp routes.",
+      "result": "The halo remained, proving the root attachment segment was not the visible cause."
+    },
+    {
+      "revision": "r1094",
+      "method": "Replace family-1 and family-3 middle points with a smooth outward arc.",
+      "result": "The random halo became a uniform comb-like wall and was visually worse."
+    }
+  ],
+  "conclusion": "The rear halo is a structural projection of the current sheet-like families, concentrated around local points 7-10. Local smoothing cannot produce believable hair. Families 1 and 3 must be replaced by authored primary and secondary clumps with controlled spacing and overlap.",
+  "nextRequiredPass": "Build a new low-count primary guide family, generate clustered children around each guide, and remove families 1 and 3 only after the replacement closes the rear silhouette and passes static and animated collision checks."
+}
