@@ -1712,3 +1712,7 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 ### v249r1075 asymmetric lip-edge lighting diagnostic
 - Removing the 0.045 micro-bump changes the mouth by at most 0.068/255 mean absolute RGB; matte zero-specular isolation still shows a bright edge that flips with the light direction.
 - Commissure adjacent-face normal spread reaches 88.04 degrees neutral and 88.74 degrees smiling, while the central maximum stays below 34.96 degrees. Vertices 13523 and 13558 are the strongest asymmetric outliers. Root cause is geometry/vertex-normal transition; no model or website promotion occurred.
+
+### v249r1076 paired commissure curvature relaxation
+- Selected a 15% symmetrized far-neighbor relaxation on four topology-matched vertex pairs. It changes eight vertices by at most 0.0572 mm and lowers maximum commissure normal spread from 88.04 to 38.63 degrees neutral and 88.74 to 37.84 degrees smiling; 30% and 45% over-correct and are rejected.
+- All 35 relative shape-key deltas are preserved within 7.68e-9 m; topology, weights, materials, modifiers and draw calls are unchanged. Four-frame, open-mouth, smile, self-collision and 14 face-attachment gates pass. Website v83 remains unchanged.

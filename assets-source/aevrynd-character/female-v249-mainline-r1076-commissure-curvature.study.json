@@ -1,0 +1,345 @@
+{
+  "revision": "v249r1076-commissure-curvature",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-commissure-falloff-r1074-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-commissure-curvature-r1076-study.blend",
+  "method": "symmetrized far-neighbor Laplacian relaxation on four topology-matched commissure pairs, with identical deltas added to every shape key",
+  "pairs": [
+    [
+      13523,
+      13686
+    ],
+    [
+      13524,
+      13688
+    ],
+    [
+      13558,
+      13722
+    ],
+    [
+      13559,
+      13723
+    ]
+  ],
+  "deltaEvidence": [
+    {
+      "pair": [
+        13523,
+        13686
+      ],
+      "leftSurfaceNeighbors": [
+        13529,
+        13637,
+        13558
+      ],
+      "rightSurfaceNeighbors": [
+        13722,
+        13693,
+        13791
+      ],
+      "leftRawDeltaMm": [
+        0.10104849934577942,
+        0.013366341590881348,
+        -0.09012222290039062
+      ],
+      "rightRawDeltaMm": [
+        -0.12354925274848938,
+        0.012546777725219727,
+        -0.1112222671508789
+      ],
+      "sharedSymmetricDeltaMm": [
+        0.1122988760471344,
+        0.012956559658050537,
+        -0.10067224502563477
+      ]
+    },
+    {
+      "pair": [
+        13524,
+        13688
+      ],
+      "leftSurfaceNeighbors": [
+        13531,
+        13559
+      ],
+      "rightSurfaceNeighbors": [
+        13723,
+        13695
+      ],
+      "leftRawDeltaMm": [
+        -0.005923211574554443,
+        0.10260939598083496,
+        -0.03170967102050781
+      ],
+      "rightRawDeltaMm": [
+        -0.00852346420288086,
+        0.10578334331512451,
+        -0.03552436828613281
+      ],
+      "sharedSymmetricDeltaMm": [
+        0.001300126314163208,
+        0.10419636964797974,
+        -0.03361701965332031
+      ]
+    },
+    {
+      "pair": [
+        13558,
+        13722
+      ],
+      "leftSurfaceNeighbors": [
+        416,
+        3657,
+        13550,
+        13523
+      ],
+      "rightSurfaceNeighbors": [
+        7114,
+        13716,
+        13686,
+        10266
+      ],
+      "leftRawDeltaMm": [
+        0.11456571519374847,
+        0.013783574104309082,
+        -0.022649765014648438
+      ],
+      "rightRawDeltaMm": [
+        -0.047596171498298645,
+        0.014871358871459961,
+        0.03838539123535156
+      ],
+      "sharedSymmetricDeltaMm": [
+        0.08108094334602356,
+        0.014327466487884521,
+        0.007867813110351562
+      ]
+    },
+    {
+      "pair": [
+        13559,
+        13723
+      ],
+      "leftSurfaceNeighbors": [
+        13553,
+        13524
+      ],
+      "rightSurfaceNeighbors": [
+        13688,
+        13719
+      ],
+      "leftRawDeltaMm": [
+        0.18576718866825104,
+        0.17711520195007324,
+        0.28955936431884766
+      ],
+      "rightRawDeltaMm": [
+        -0.1568961888551712,
+        0.17017126083374023,
+        0.29647350311279297
+      ],
+      "sharedSymmetricDeltaMm": [
+        0.17133168876171112,
+        0.17364323139190674,
+        0.2930164337158203
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "label": "a-control",
+      "factor": 0.0,
+      "renders": {
+        "neutralFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\a-control-neutral-front.png",
+        "neutralOblique": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\a-control-neutral-oblique.png",
+        "openFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\a-control-open-front.png",
+        "smileFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\a-control-smile-front.png",
+        "leftKeyFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\a-control-left-key-front.png",
+        "rightKeyFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\a-control-right-key-front.png"
+      },
+      "curvature": {
+        "neutral": {
+          "central": {
+            "vertices": 75,
+            "meanDeg": 17.621719261891208,
+            "p95Deg": 28.296071835035683,
+            "maximumDeg": 34.952765662393645
+          },
+          "commissure": {
+            "vertices": 173,
+            "meanDeg": 17.401216468600477,
+            "p95Deg": 33.48386859458529,
+            "maximumDeg": 88.04122719392358
+          }
+        },
+        "smile": {
+          "central": {
+            "vertices": 75,
+            "meanDeg": 17.394991485285743,
+            "p95Deg": 28.592351780852496,
+            "maximumDeg": 34.72093879667966
+          },
+          "commissure": {
+            "vertices": 173,
+            "meanDeg": 17.27310771570755,
+            "p95Deg": 32.41317155538867,
+            "maximumDeg": 88.74455909351646
+          }
+        }
+      },
+      "geometryDigest": "b2d00468819d86b1dda7ff166e21af772cfa11d4ff444cc6803a4951a373d5c5",
+      "weightDigest": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c"
+    },
+    {
+      "label": "b-relax-0.15",
+      "factor": 0.15,
+      "renders": {
+        "neutralFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\b-relax-0.15-neutral-front.png",
+        "neutralOblique": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\b-relax-0.15-neutral-oblique.png",
+        "openFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\b-relax-0.15-open-front.png",
+        "smileFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\b-relax-0.15-smile-front.png",
+        "leftKeyFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\b-relax-0.15-left-key-front.png",
+        "rightKeyFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\b-relax-0.15-right-key-front.png"
+      },
+      "curvature": {
+        "neutral": {
+          "central": {
+            "vertices": 75,
+            "meanDeg": 17.621719261891208,
+            "p95Deg": 28.296071835035683,
+            "maximumDeg": 34.952765662393645
+          },
+          "commissure": {
+            "vertices": 173,
+            "meanDeg": 16.752102783367917,
+            "p95Deg": 31.693672598030364,
+            "maximumDeg": 38.62945990770609
+          }
+        },
+        "smile": {
+          "central": {
+            "vertices": 75,
+            "meanDeg": 17.394991485285743,
+            "p95Deg": 28.592351780852496,
+            "maximumDeg": 34.72093879667966
+          },
+          "commissure": {
+            "vertices": 173,
+            "meanDeg": 16.68624017972887,
+            "p95Deg": 32.41317155538867,
+            "maximumDeg": 37.843373436129326
+          }
+        }
+      },
+      "geometryDigest": "05559fbb955c1143758353834f9f78c23477d475c5e64c589d4ffa9adc53844a",
+      "weightDigest": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c"
+    },
+    {
+      "label": "c-relax-0.30",
+      "factor": 0.3,
+      "renders": {
+        "neutralFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\c-relax-0.30-neutral-front.png",
+        "neutralOblique": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\c-relax-0.30-neutral-oblique.png",
+        "openFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\c-relax-0.30-open-front.png",
+        "smileFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\c-relax-0.30-smile-front.png",
+        "leftKeyFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\c-relax-0.30-left-key-front.png",
+        "rightKeyFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\c-relax-0.30-right-key-front.png"
+      },
+      "curvature": {
+        "neutral": {
+          "central": {
+            "vertices": 75,
+            "meanDeg": 17.621719261891208,
+            "p95Deg": 28.296071835035683,
+            "maximumDeg": 34.952765662393645
+          },
+          "commissure": {
+            "vertices": 173,
+            "meanDeg": 17.247969552392416,
+            "p95Deg": 33.573518242536295,
+            "maximumDeg": 46.84904274358826
+          }
+        },
+        "smile": {
+          "central": {
+            "vertices": 75,
+            "meanDeg": 17.394991485285743,
+            "p95Deg": 28.592351780852496,
+            "maximumDeg": 34.72093879667966
+          },
+          "commissure": {
+            "vertices": 173,
+            "meanDeg": 17.308877759380895,
+            "p95Deg": 34.60335367502331,
+            "maximumDeg": 53.64821943967456
+          }
+        }
+      },
+      "geometryDigest": "7ec4cc2a0c1288d13ddfdf246619e0d856b5df69bf5a0a21fbe856f0407c7dbe",
+      "weightDigest": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c"
+    },
+    {
+      "label": "d-relax-0.45",
+      "factor": 0.45,
+      "renders": {
+        "neutralFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\d-relax-0.45-neutral-front.png",
+        "neutralOblique": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\d-relax-0.45-neutral-oblique.png",
+        "openFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\d-relax-0.45-open-front.png",
+        "smileFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\d-relax-0.45-smile-front.png",
+        "leftKeyFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\d-relax-0.45-left-key-front.png",
+        "rightKeyFront": "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1076-commissure-curvature\\d-relax-0.45-right-key-front.png"
+      },
+      "curvature": {
+        "neutral": {
+          "central": {
+            "vertices": 75,
+            "meanDeg": 17.621719261891208,
+            "p95Deg": 28.296071835035683,
+            "maximumDeg": 34.952765662393645
+          },
+          "commissure": {
+            "vertices": 173,
+            "meanDeg": 18.481955635372717,
+            "p95Deg": 38.57008507325118,
+            "maximumDeg": 66.94029348908546
+          }
+        },
+        "smile": {
+          "central": {
+            "vertices": 75,
+            "meanDeg": 17.394991485285743,
+            "p95Deg": 28.592351780852496,
+            "maximumDeg": 34.72093879667966
+          },
+          "commissure": {
+            "vertices": 173,
+            "meanDeg": 18.8148339160801,
+            "p95Deg": 39.77694876374116,
+            "maximumDeg": 78.29282604064453
+          }
+        }
+      },
+      "geometryDigest": "b40a264a324ec43a36fb1172985a2d379b4c0ab61fbfdf4f6cd8f196e73885ae",
+      "weightDigest": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c"
+    }
+  ],
+  "selectedVariant": "b-relax-0.15",
+  "geometryDigestBefore": "b2d00468819d86b1dda7ff166e21af772cfa11d4ff444cc6803a4951a373d5c5",
+  "selectedGeometryDigest": "05559fbb955c1143758353834f9f78c23477d475c5e64c589d4ffa9adc53844a",
+  "weightDigestBefore": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c",
+  "selectedWeightDigest": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c",
+  "topologyChanged": false,
+  "materialChanged": false,
+  "shapeKeysEdited": 35,
+  "websitePromotionApproved": false,
+  "candidateStatus": "LOCAL_GEOMETRY_TECHNICAL_PASS_VISUAL_SUBTLE",
+  "strictMouthScore100": 45,
+  "visualAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1076-commissure-curvature.visual-audit.json",
+  "invariantAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1076-commissure-curvature.invariant-audit.json",
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1076-commissure-curvature.collision-audit.json",
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1076-commissure-curvature\\contact-sheet-r1076.jpg",
+  "collisionStatus": "PASS",
+  "invariantStatus": "PASS",
+  "performanceStatus": "PASS_NO_VERTEX_FACE_MATERIAL_SLOT_MODIFIER_OR_DRAW_CALL_DELTA",
+  "finding": "The selected 15% paired relaxation changes only eight vertices by at most 0.0572 mm. Neutral commissure maximum normal spread falls 88.04 to 38.63 degrees and smile falls 88.74 to 37.84 degrees. Central curvature and fixed crops are unchanged; all pose/expression collision gates pass. Stronger 30% and 45% variants reverse the gain and are rejected."
+}
