@@ -1,0 +1,463 @@
+{
+  "revision": "v249r1120-right-temple-cleanup-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-groom-cleanup-r1118-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-right-temple-cleanup-r1120-study.blend",
+  "method": "physically delete only curves occluding the screen-right temple and cheek, based on body-ray hit coordinates",
+  "variants": [
+    {
+      "label": "a-narrow",
+      "edit": {
+        "removedCurves": 12,
+        "removedSample": [
+          {
+            "curve": 260,
+            "hits": 5
+          },
+          {
+            "curve": 274,
+            "hits": 6
+          },
+          {
+            "curve": 277,
+            "hits": 6
+          },
+          {
+            "curve": 279,
+            "hits": 6
+          },
+          {
+            "curve": 280,
+            "hits": 6
+          },
+          {
+            "curve": 281,
+            "hits": 5
+          },
+          {
+            "curve": 690,
+            "hits": 5
+          },
+          {
+            "curve": 822,
+            "hits": 5
+          },
+          {
+            "curve": 845,
+            "hits": 5
+          },
+          {
+            "curve": 907,
+            "hits": 5
+          },
+          {
+            "curve": 912,
+            "hits": 5
+          },
+          {
+            "curve": 916,
+            "hits": 5
+          }
+        ],
+        "beforeCurves": 5832,
+        "afterCurves": 5820,
+        "beforePoints": 106603,
+        "afterPoints": 106368,
+        "bodyHitXRangeM": [
+          0.028,
+          0.07
+        ],
+        "bodyHitZRangeM": [
+          1.295,
+          1.525
+        ],
+        "minimumVisibleHits": 5
+      },
+      "collisionAudit": {
+        "1": {
+          "pointsTested": 106368,
+          "minimumSignedClearanceM": 0.0010000598231272306,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        },
+        "20": {
+          "pointsTested": 106368,
+          "minimumSignedClearanceM": 0.0005604787844504244,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 9
+        },
+        "33": {
+          "pointsTested": 106368,
+          "minimumSignedClearanceM": 0.0010073482956158841,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        },
+        "61": {
+          "pointsTested": 106368,
+          "minimumSignedClearanceM": 0.0010000150105042849,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        }
+      },
+      "technicalStatus": "TECHNICAL_PASS",
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\a-narrow-front-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\a-narrow-oblique-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\a-narrow-right-temple-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\a-narrow-front-f33.png"
+      ]
+    },
+    {
+      "label": "b-balanced",
+      "edit": {
+        "removedCurves": 105,
+        "removedSample": [
+          {
+            "curve": 1,
+            "hits": 4
+          },
+          {
+            "curve": 6,
+            "hits": 4
+          },
+          {
+            "curve": 9,
+            "hits": 4
+          },
+          {
+            "curve": 19,
+            "hits": 4
+          },
+          {
+            "curve": 67,
+            "hits": 4
+          },
+          {
+            "curve": 70,
+            "hits": 4
+          },
+          {
+            "curve": 71,
+            "hits": 4
+          },
+          {
+            "curve": 72,
+            "hits": 4
+          },
+          {
+            "curve": 76,
+            "hits": 6
+          },
+          {
+            "curve": 78,
+            "hits": 4
+          },
+          {
+            "curve": 81,
+            "hits": 4
+          },
+          {
+            "curve": 107,
+            "hits": 6
+          },
+          {
+            "curve": 124,
+            "hits": 4
+          },
+          {
+            "curve": 218,
+            "hits": 4
+          },
+          {
+            "curve": 256,
+            "hits": 4
+          },
+          {
+            "curve": 257,
+            "hits": 4
+          },
+          {
+            "curve": 258,
+            "hits": 4
+          },
+          {
+            "curve": 259,
+            "hits": 4
+          },
+          {
+            "curve": 260,
+            "hits": 5
+          },
+          {
+            "curve": 261,
+            "hits": 4
+          },
+          {
+            "curve": 263,
+            "hits": 4
+          },
+          {
+            "curve": 266,
+            "hits": 4
+          },
+          {
+            "curve": 274,
+            "hits": 7
+          },
+          {
+            "curve": 275,
+            "hits": 5
+          },
+          {
+            "curve": 276,
+            "hits": 6
+          },
+          {
+            "curve": 277,
+            "hits": 8
+          },
+          {
+            "curve": 278,
+            "hits": 5
+          },
+          {
+            "curve": 279,
+            "hits": 8
+          },
+          {
+            "curve": 280,
+            "hits": 7
+          },
+          {
+            "curve": 281,
+            "hits": 6
+          }
+        ],
+        "beforeCurves": 5832,
+        "afterCurves": 5727,
+        "beforePoints": 106603,
+        "afterPoints": 104577,
+        "bodyHitXRangeM": [
+          0.018,
+          0.082
+        ],
+        "bodyHitZRangeM": [
+          1.295,
+          1.525
+        ],
+        "minimumVisibleHits": 4
+      },
+      "collisionAudit": {
+        "1": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": 0.0010000598231272306,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        },
+        "20": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": 0.0005604787844504244,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 9
+        },
+        "33": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": 0.0010073482956158841,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        },
+        "61": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": 0.0010000150105042849,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        }
+      },
+      "technicalStatus": "TECHNICAL_PASS",
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\b-balanced-front-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\b-balanced-oblique-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\b-balanced-right-temple-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\b-balanced-front-f33.png"
+      ]
+    },
+    {
+      "label": "c-open",
+      "edit": {
+        "removedCurves": 270,
+        "removedSample": [
+          {
+            "curve": 0,
+            "hits": 3
+          },
+          {
+            "curve": 1,
+            "hits": 4
+          },
+          {
+            "curve": 2,
+            "hits": 3
+          },
+          {
+            "curve": 3,
+            "hits": 3
+          },
+          {
+            "curve": 4,
+            "hits": 3
+          },
+          {
+            "curve": 6,
+            "hits": 4
+          },
+          {
+            "curve": 8,
+            "hits": 3
+          },
+          {
+            "curve": 9,
+            "hits": 4
+          },
+          {
+            "curve": 11,
+            "hits": 4
+          },
+          {
+            "curve": 12,
+            "hits": 3
+          },
+          {
+            "curve": 13,
+            "hits": 3
+          },
+          {
+            "curve": 14,
+            "hits": 3
+          },
+          {
+            "curve": 16,
+            "hits": 3
+          },
+          {
+            "curve": 17,
+            "hits": 3
+          },
+          {
+            "curve": 19,
+            "hits": 4
+          },
+          {
+            "curve": 66,
+            "hits": 4
+          },
+          {
+            "curve": 67,
+            "hits": 4
+          },
+          {
+            "curve": 68,
+            "hits": 3
+          },
+          {
+            "curve": 69,
+            "hits": 4
+          },
+          {
+            "curve": 70,
+            "hits": 4
+          },
+          {
+            "curve": 71,
+            "hits": 4
+          },
+          {
+            "curve": 72,
+            "hits": 4
+          },
+          {
+            "curve": 73,
+            "hits": 3
+          },
+          {
+            "curve": 74,
+            "hits": 3
+          },
+          {
+            "curve": 75,
+            "hits": 3
+          },
+          {
+            "curve": 76,
+            "hits": 6
+          },
+          {
+            "curve": 77,
+            "hits": 4
+          },
+          {
+            "curve": 78,
+            "hits": 4
+          },
+          {
+            "curve": 79,
+            "hits": 3
+          },
+          {
+            "curve": 81,
+            "hits": 4
+          }
+        ],
+        "beforeCurves": 5832,
+        "afterCurves": 5562,
+        "beforePoints": 106603,
+        "afterPoints": 101435,
+        "bodyHitXRangeM": [
+          0.01,
+          0.092
+        ],
+        "bodyHitZRangeM": [
+          1.295,
+          1.525
+        ],
+        "minimumVisibleHits": 3
+      },
+      "collisionAudit": {
+        "1": {
+          "pointsTested": 101435,
+          "minimumSignedClearanceM": 0.0010000598231272306,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        },
+        "20": {
+          "pointsTested": 101435,
+          "minimumSignedClearanceM": 0.0005604787844504244,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 9
+        },
+        "33": {
+          "pointsTested": 101435,
+          "minimumSignedClearanceM": 0.0010073482956158841,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        },
+        "61": {
+          "pointsTested": 101435,
+          "minimumSignedClearanceM": 0.0010000150105042849,
+          "penetratingPoints": 0,
+          "belowOneMmPoints": 0
+        }
+      },
+      "technicalStatus": "TECHNICAL_PASS",
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\c-open-front-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\c-open-oblique-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\c-open-right-temple-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\c-open-front-f33.png"
+      ]
+    }
+  ],
+  "selectedVariant": "b-balanced",
+  "websitePromotionApproved": false,
+  "candidateStatus": "TECHNICAL_PASS_VISUAL_IMPROVEMENT_MAINLINE_STUDY",
+  "strictHairScore": 40,
+  "visualDecision": "Accept b-balanced as the active offline study. It clears the residual screen-right cheek curtain without the bald temple created by c-open."
+}

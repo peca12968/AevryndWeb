@@ -1,0 +1,44 @@
+{
+  "revision": "v249r1120-right-temple-cleanup-sweep",
+  "sourceRevision": "v249r1118-destructive-groom-cleanup-sweep",
+  "strictHairScore": 40,
+  "status": "TECHNICAL_PASS_VISUAL_IMPROVEMENT_MAINLINE_STUDY",
+  "websitePromotionApproved": false,
+  "selectedVariant": "b-balanced",
+  "technicalEvidence": {
+    "removedRightTempleCurves": 105,
+    "remainingCurves": 5727,
+    "remainingPoints": 104577,
+    "penetratingPoints": {
+      "1": 0,
+      "20": 0,
+      "33": 0,
+      "61": 0
+    },
+    "minimumSignedClearanceMm": {
+      "1": 1.00006,
+      "20": 0.560479,
+      "33": 1.007348,
+      "61": 1.000015
+    }
+  },
+  "improvements": [
+    "The residual screen-right eye, cheek, and jaw curtain is visibly reduced.",
+    "The balanced mask preserves enough temple coverage to avoid the bald opening visible in c-open.",
+    "The edit physically removes curves and reduces evaluated points while retaining zero penetrations across all four motion frames."
+  ],
+  "remainingIssues": [
+    "The frontal hairline still reads as crossed wires instead of grouped human root clumps.",
+    "The centre part remains too broad and asymmetric.",
+    "The lower silhouette retains many needle-like ends.",
+    "The material remains flat and the main flow is too uniformly vertical."
+  ],
+  "decision": "Use r1120 b-balanced as the active offline study; keep website promotion forbidden.",
+  "nextAction": "Rebuild the visible frontal hairline into coherent rooted clumps, then reshape the lower endpoint silhouette before any material tuning.",
+  "renders": [
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\b-balanced-front-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\b-balanced-oblique-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\b-balanced-right-temple-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1120-right-temple-cleanup-sweep\\b-balanced-front-f33.png"
+  ]
+}
