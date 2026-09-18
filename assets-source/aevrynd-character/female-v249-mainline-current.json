@@ -109,8 +109,8 @@
   "latestTargetNativeHairReview": "reviews/v249r1081-graded-hairline/contact-sheet-r1081.jpg",
   "latestTargetNativeHairStatus": "R1081_LOCAL_HAIRLINE_TRANSITION_PASS_VISUAL_PARTIAL_SCORE_37; selected 0.50 part pin plus 130 short owned fibres removes the blown wide part proxy and fades the frontal scalp edge. The 73,840-point groom is head-bone bound and maintains at least 1.60mm body clearance at frames 1/20/33/61 with zero penetrating points. It adds 3.57% curves and 1.43% points with no object, material-slot or draw-call increase. Long-hair clump hierarchy and secondary motion remain unqualified; website v83 is unchanged.",
   "latestBrightnessRegressionStatus": "PASS_NO_GLOBAL_DARKENING_R1044; retained-r1033-to-r1044 fixed crops drift by at most 0.000709%. Website v83 remains unchanged and confirmed 5.56% darker in embedded skin base color than committed mainline.",
-  "latestTargetNativeDynamicHairStudy": "aevrynd-female-cc0-head-bound-hair-motion-r983.blend; aevrynd-female-cc0-layered-bob-motion-r984.blend",
-  "latestTargetNativeDynamicHairStatus": "R983_CORRECT_HEAD_BINDING_MOTION_METRICS_PASS_COLLISION_FAIL; R984_REDUCED_TO_MAX_158_PENETRATING_POINTS_BUT_VISUAL_REJECT. No dynamic candidate is promoted.",
+  "latestTargetNativeDynamicHairStudy": "aevrynd-female-cc0-layered-hair-motion-r1083-study.blend",
+  "latestTargetNativeDynamicHairStatus": "R1083_OFFLINE_SECONDARY_MOTION_PASS_VISUAL_PARTIAL_RUNTIME_UNVERIFIED; root-pinned per-clump phase motion reaches 2.961mm tip P95 and 3.009mm maximum at frame 21, with zero root drift and exact frame-61 settle. Nine frames test 664,560 hair points with zero penetration; minimum signed body clearance is 0.517mm. Object, curve, point, material-slot and draw-call counts are unchanged; one Blender Geometry Nodes modifier and two point attributes are added. Browser/runtime performance is not yet verified, so website v83 is unchanged.",
   "latestTargetNativeFaceFeatureStudy": "aevrynd-female-cc0-target-native-lashes-r995.blend",
   "latestTargetNativeFaceFeatureStatus": "R995_LASH_TECHNICAL_PASS_OVERALL_FACE_VISUAL_FAIL_SCORE_47; target-surface generation rebuilds 46 upper and 22 lower fibres per eye. Frames 1/20/33/61 have zero triangle overlap against body, sclera, cornea and opposite lash layer. r990 fixes hidden/buried brows; r992 retains the best brow balance. Eyelid thickness, canthus topology, wetline integration and hair remain below hero quality.",
   "latestTargetNativeFaceFeatureAudit": "female-v249-mainline-cc0-target-native-lashes-r995.triangle-collision-audit.json",
@@ -133,7 +133,7 @@
   "latestOpenEyelidTopologyReference": "aevrynd-female-authoring-v249-mainline-open-topology-physical-skin-r446.blend",
   "latestOpenEyelidTopologyBridgeInspection": "female-v249-mainline-r1010-open-topology-bridge-inspection.json",
   "latestOpenEyelidTopologyStatus": "R1014_B_BALANCED_GUIDE_SELECTED_7P834MM; R1015_VERTEX_AND_30_SHAPE_KEY_COMPATIBILITY_PASS_FRAME1_ZERO_EYE_LASH_OVERLAP_VISUAL_FAIL_NO_INNER_RIM",
-  "nextFaceTopologyWork": "Use r1082 as the local head baseline. Start r1083 on collision-qualified secondary hair motion because the explicit hair-motion requirement remains unfulfilled: preserve the r1081 1.60mm four-pose envelope, pin roots, add layered clump sway, prove settle and no penetration, then run a browser performance gate before any website promotion.",
+  "nextFaceTopologyWork": "Use r1083 only as the offline motion source. Start r1084 by baking the owned motion formula into an engine-readable animation representation in an isolated candidate asset, then benchmark GPU/CPU/frame time and repeat dynamic collision in the browser before any website replacement. Reject the path if it requires Blender at runtime or increases draw calls materially.",
   "latestOpenEyelidTopologyResearch": "r1011-r1015 rear-boundary extraction, authored-margin transfer, closed anatomical guide and true-aperture cut",
   "latestOpenEyelidTechnicalStudy": "aevrynd-female-cc0-balanced-open-aperture-r1015-study.blend",
   "latestEyeTopologyResearch": "r1011-r1028 open-aperture/canthus/lash stack; r1078-r1079 physical lid wall and contour; r1080 iris proportion, convergence, sclera value and cornea wiring",
@@ -149,8 +149,10 @@
   "latestMouthMaterialToneAudit": "female-v249-mainline-r1074-commissure-falloff.tone-audit.json",
   "latestMouthTopologyStudy": "aevrynd-female-cc0-commissure-curvature-r1076-study.blend",
   "latestFullHeadScorecard": "female-v249-mainline-r1077-full-head-scorecard.json",
-  "latestFullHeadReview": "reviews/v249r1082-regional-skin/contact-sheet-r1082.jpg",
-  "latestFullHeadStatus": "R1082_STRICT_FULL_HEAD_42_OF_100_HERO_FAIL; skin response improves 36 to 38 through smaller complexion variation, regional colour/roughness and layered pores without darkening. Hairline remains 37 and secondary hair motion is still unqualified; website v83 is unchanged.",
+  "latestFullHeadReview": "reviews/v249r1083-layered-hair-motion/contact-sheet-r1083.jpg",
+  "latestFullHeadStatus": "R1083_STRICT_FULL_HEAD_42_OF_100_HERO_FAIL; hair mass/response improves 42 to 43 through collision-qualified root-pinned motion, but the straight curtain silhouette and weak macro-clump hierarchy remain. Runtime/browser performance is unverified and website v83 is unchanged.",
   "latestSkinAudit": "female-v249-mainline-r1082-regional-skin.audit.json; female-v249-mainline-r1082-regional-skin.visual-audit.json",
-  "latestSkinReview": "reviews/v249r1082-regional-skin/contact-sheet-r1082.jpg"
+  "latestSkinReview": "reviews/v249r1082-regional-skin/contact-sheet-r1082.jpg",
+  "latestTargetNativeDynamicHairAudit": "female-v249-mainline-r1083-layered-hair-motion.audit.json; female-v249-mainline-r1083-layered-hair-motion.visual-audit.json",
+  "latestTargetNativeDynamicHairReview": "reviews/v249r1083-layered-hair-motion/contact-sheet-r1083.jpg"
 }

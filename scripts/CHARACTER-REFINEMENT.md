@@ -1746,3 +1746,10 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - Fixed-region luminance drift is capped at 0.985%: forehead +0.985%, left cheek +0.436%, right cheek -0.443%, nose -0.294% and full face +0.083%. Forehead low-frequency variation falls 13.79%, so the gain is not achieved by globally darkening the model.
 - Body topology, all 35 shape keys, weights, eyes, r1081 groom/scalp geometry and head-bone bindings are bit-identical. Frames 1/20/33/61 test all 73,840 hair points with zero penetration and at least 1.60 mm body clearance. The edit adds nine shader nodes and two attributes with no object, material-slot or draw-call increase.
 - Strict skin quality rises 36 to 38/100 and full-head quality reaches 42/100. Pores remain subtle at head distance and the facial planes are still broad and synthetic, so website v83 is unchanged. r1083 targets root-pinned, collision-qualified secondary hair motion.
+
+### v249r1083 collision-qualified layered hair motion
+- r1083 adds two owned point-domain attributes and one Blender Geometry Nodes modifier to the r1082 groom. Each strand uses a t^2.15 root falloff, per-clump phase and a nonnegative outward-biased 60-frame damping envelope; roots remain fixed and frames 1/61 are rest states.
+- The selected 4.5 mm authored bound reaches 2.961 mm tip P95 and 3.009 mm maximum evaluated motion at frame 21. Root drift is exactly 0 and frame-61 settle error is exactly 0.
+- Frames 1/11/20/21/31/33/41/51/61 test 664,560 point instances with zero penetration. Minimum signed body clearance is 0.517 mm at frame 21; object, curve, point and material-slot counts remain unchanged.
+- Front, three-quarter and back review at rest, measured peak, mid-cycle and settle shows restrained coherent side/lower movement. Hair mass/response rises 42 to 43/100, while full-head quality remains 42/100 because the inherited groom is still a straight curtain with weak clump hierarchy.
+- This is an offline motion source only. Browser animation representation and performance are unverified, so website v83 remains unchanged. r1084 must bake an engine-readable owned motion path and pass runtime timing plus dynamic collision before promotion.

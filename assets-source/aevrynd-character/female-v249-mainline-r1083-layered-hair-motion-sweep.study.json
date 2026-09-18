@@ -1,0 +1,167 @@
+{
+  "revision": "v249r1083-layered-hair-motion-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-regional-skin-r1082-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-layered-hair-motion-r1083-study.blend",
+  "method": "author point-domain root-pinned motion vectors with per-clump phase and evaluate them through a nonnegative outward-biased damped 60-frame Geometry Nodes cycle",
+  "variants": [
+    {
+      "label": "a-static-control",
+      "maximumAmplitudeM": 0.0,
+      "attributes": {
+        "maximumAuthoredAmplitudeM": 0.0,
+        "meanAuthoredAmplitudeM": 0.0,
+        "rootPinned": true,
+        "pointCount": 73840
+      },
+      "nodeGroup": null,
+      "before": {
+        "objects": 27,
+        "curves": 3770,
+        "points": 73840,
+        "modifiers": 0,
+        "materialSlots": 1
+      },
+      "after": {
+        "objects": 27,
+        "curves": 3770,
+        "points": 73840,
+        "modifiers": 0,
+        "materialSlots": 1
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\a-static-control-f01-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\a-static-control-f01-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\a-static-control-f01-back.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\a-static-control-f31-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\a-static-control-f31-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\a-static-control-f31-back.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\a-static-control-f61-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\a-static-control-f61-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\a-static-control-f61-back.png"
+      ],
+      "status": "MOTION_COLLISION_REVIEW_REQUIRED"
+    },
+    {
+      "label": "b-subtle-2.8mm",
+      "maximumAmplitudeM": 0.0028,
+      "attributes": {
+        "maximumAuthoredAmplitudeM": 0.002799999999687593,
+        "meanAuthoredAmplitudeM": 0.0007881285410748058,
+        "rootPinned": true,
+        "pointCount": 73840
+      },
+      "nodeGroup": "AevryndLayeredHairMotion_R1083_b-subtle-2.8mm",
+      "before": {
+        "objects": 27,
+        "curves": 3770,
+        "points": 73840,
+        "modifiers": 0,
+        "materialSlots": 1
+      },
+      "after": {
+        "objects": 27,
+        "curves": 3770,
+        "points": 73840,
+        "modifiers": 1,
+        "materialSlots": 1
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\b-subtle-2.8mm-f01-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\b-subtle-2.8mm-f01-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\b-subtle-2.8mm-f01-back.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\b-subtle-2.8mm-f31-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\b-subtle-2.8mm-f31-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\b-subtle-2.8mm-f31-back.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\b-subtle-2.8mm-f61-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\b-subtle-2.8mm-f61-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\b-subtle-2.8mm-f61-back.png"
+      ],
+      "status": "MOTION_COLLISION_REVIEW_REQUIRED"
+    },
+    {
+      "label": "c-balanced-4.5mm",
+      "maximumAmplitudeM": 0.0045,
+      "attributes": {
+        "maximumAuthoredAmplitudeM": 0.004499999999497917,
+        "meanAuthoredAmplitudeM": 0.001266635155298795,
+        "rootPinned": true,
+        "pointCount": 73840
+      },
+      "nodeGroup": "AevryndLayeredHairMotion_R1083_c-balanced-4.5mm",
+      "before": {
+        "objects": 27,
+        "curves": 3770,
+        "points": 73840,
+        "modifiers": 0,
+        "materialSlots": 1
+      },
+      "after": {
+        "objects": 27,
+        "curves": 3770,
+        "points": 73840,
+        "modifiers": 1,
+        "materialSlots": 1
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\c-balanced-4.5mm-f01-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\c-balanced-4.5mm-f01-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\c-balanced-4.5mm-f01-back.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\c-balanced-4.5mm-f31-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\c-balanced-4.5mm-f31-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\c-balanced-4.5mm-f31-back.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\c-balanced-4.5mm-f61-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\c-balanced-4.5mm-f61-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\c-balanced-4.5mm-f61-back.png"
+      ],
+      "status": "MOTION_COLLISION_REVIEW_REQUIRED"
+    },
+    {
+      "label": "d-strong-6.5mm",
+      "maximumAmplitudeM": 0.0065,
+      "attributes": {
+        "maximumAuthoredAmplitudeM": 0.00649999999927477,
+        "meanAuthoredAmplitudeM": 0.0018295841132093702,
+        "rootPinned": true,
+        "pointCount": 73840
+      },
+      "nodeGroup": "AevryndLayeredHairMotion_R1083_d-strong-6.5mm",
+      "before": {
+        "objects": 27,
+        "curves": 3770,
+        "points": 73840,
+        "modifiers": 0,
+        "materialSlots": 1
+      },
+      "after": {
+        "objects": 27,
+        "curves": 3770,
+        "points": 73840,
+        "modifiers": 1,
+        "materialSlots": 1
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\d-strong-6.5mm-f01-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\d-strong-6.5mm-f01-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\d-strong-6.5mm-f01-back.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\d-strong-6.5mm-f31-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\d-strong-6.5mm-f31-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\d-strong-6.5mm-f31-back.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\d-strong-6.5mm-f61-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\d-strong-6.5mm-f61-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1083-layered-hair-motion\\d-strong-6.5mm-f61-back.png"
+      ],
+      "status": "MOTION_COLLISION_REVIEW_REQUIRED"
+    }
+  ],
+  "selectedVariant": "c-balanced-4.5mm",
+  "newObjects": 0,
+  "materialSlotDelta": 0,
+  "websitePromotionApproved": false,
+  "candidateStatus": "OFFLINE_SECONDARY_MOTION_PASS_VISUAL_PARTIAL_RUNTIME_UNVERIFIED",
+  "audit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1083-layered-hair-motion.audit.json",
+  "renderReview": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1083-layered-hair-motion.render.json",
+  "visualAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1083-layered-hair-motion.visual-audit.json",
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1083-layered-hair-motion\\contact-sheet-r1083.jpg",
+  "hairMassScore100": 43,
+  "strictFullHeadScore100": 42
+}
