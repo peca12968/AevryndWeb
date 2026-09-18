@@ -1,0 +1,46 @@
+{
+  "revision": "v249r1110-integrated-upper-lip-mask-sweep",
+  "sourceRevision": "v249r1106-lip-surface-balance",
+  "strictMouthScore": 52,
+  "status": "TECHNICAL_PASS_VISUAL_IMPROVEMENT_MAINLINE_STUDY",
+  "websitePromotionApproved": false,
+  "selectedVariant": "b-balanced",
+  "technicalEvidence": {
+    "upperLipMappedVertices": 186,
+    "uniqueBodyVertices": 186,
+    "donorFaces": 142,
+    "matchingBodyFaces": 128,
+    "maximumSpatialMappingDistanceMm": 0.5407579592429101,
+    "meanSpatialMappingDistanceMm": 0.27043362053753356,
+    "bodySelfCollisionPairs": {
+      "neutral": 171,
+      "open": 171,
+      "smile": 171,
+      "frame1": 171,
+      "frame20": 171,
+      "frame33": 171,
+      "frame61": 171
+    },
+    "formerFloatingUpperLipLayerRenderExcluded": true
+  },
+  "improvements": [
+    "Upper-lip color now follows the active body mesh through a point-domain attribute instead of a separate floating mesh.",
+    "The former donor patch is excluded from viewport and rendering, removing its cross-layer collision class.",
+    "The upper-lip boundary and cupid bow read more continuously at face distance than r1106.",
+    "All tested expressions and timeline frames preserve the source body self-collision count."
+  ],
+  "remainingIssues": [
+    "The relaxed mouth aperture remains too tall and dark.",
+    "The lower lip remains oversized and too uniform.",
+    "Mouth corners need anatomical commissure folds instead of the current pinched termination.",
+    "Open and smile expressions still lack convincing orbicularis-oris and cheek coupling."
+  ],
+  "decision": "Promote r1110 only as the active offline study; keep website promotion forbidden.",
+  "nextAction": "Rebuild the perioral corrective deformation over a broader continuous vertex region, including both lips and commissures, rather than lifting a narrow lower-rim strip.",
+  "renders": [
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1110-integrated-upper-lip-mask-sweep/b-balanced-neutral-face-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1110-integrated-upper-lip-mask-sweep/b-balanced-neutral-mouth-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1110-integrated-upper-lip-mask-sweep/b-balanced-open-mouth-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1110-integrated-upper-lip-mask-sweep/b-balanced-smile-mouth-front.png"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "revision": "v249r1109-mouth-topology-inspection",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-lip-surface-balance-r1106-study.blend",
+  "body": "AevryndFemaleCC0PalpebralClosure_R1097",
+  "donor": "AevryndFemaleCC0Baseline_v259",
+  "bodyMesh": {
+    "vertices": 13997,
+    "edges": 27930,
+    "polygons": 13933,
+    "topologySha256": "0b56c17095ac84d5a2799646591ede10a9c0b12e3223514acd521432fd47ce3a"
+  },
+  "donorMesh": {
+    "vertices": 19398,
+    "edges": 37803,
+    "polygons": 18626,
+    "topologySha256": "ece9b074a7a92b6e11eed33c7c2d0a6ad817f214a4e4db19f9c27f8979e15bd3"
+  },
+  "topology": {
+    "sameVertexCount": false,
+    "sameEdgeConnectivityAndOrder": false,
+    "sameFaceConnectivityAndOrder": false,
+    "sameObjectMatrix": true
+  },
+  "upperLipSelection": {
+    "vertices": 186,
+    "faces": 142,
+    "minimumIndex": 355,
+    "maximumIndex": 11966
+  },
+  "basisDelta": {
+    "count": 186,
+    "minimumMm": 1.847459455855614,
+    "maximumMm": 160.4002737744514,
+    "meanMm": 45.74255497169913,
+    "rmsMm": 65.19716949862237,
+    "meanComponentMm": [
+      0.039538273407283324,
+      -32.09082221472135,
+      -5.363707901329123
+    ]
+  },
+  "rigCompatibility": {
+    "commonVertexGroups": 174,
+    "bodyOnlyVertexGroupCount": 522,
+    "bodyOnlyVertexGroupSample": [
+      "HelperGeometry.001",
+      "HelperGeometry.002",
+      "HelperGeometry.003",
+      "JointCubes.001",
+      "JointCubes.002",
+      "JointCubes.003",
+      "Left.001",
+      "Left.002",
+      "Left.003",
+      "Mid.001",
+      "Mid.002",
+      "Mid.003",
+      "Right.001",
+      "Right.002",
+      "Right.003",
+      "body.001",
+      "body.002",
+      "body.003",
+      "chest.001",
+      "chest.002"
+    ],
+    "donorOnlyVertexGroupCount": 0,
+    "donorOnlyVertexGroupSample": [],
+    "commonLipVertices": 243,
+    "maximumLipWeightDifference": 0.8333333283662796
+  },
+  "spatialMapping": {
+    "mappedVertices": 186,
+    "uniqueBodyVertices": 186,
+    "minimumDistanceMm": 0.055741176765877753,
+    "maximumDistanceMm": 0.5407579592429101,
+    "meanDistanceMm": 0.27043362053753356,
+    "withinPointZeroOneMm": 14,
+    "withinPointFiveMm": 180,
+    "mappedFaces": 142,
+    "mappedFacesExistingInBody": 128
+  },
+  "shapeKeyCompatibility": {
+    "bodyCount": 35,
+    "donorCount": 35,
+    "common": [
+      "$md-$af-$fe-$ch",
+      "$md-$af-$fe-$yn",
+      "$md-$af-$ma-$yn",
+      "$md-$as-$fe-$ch",
+      "$md-$as-$fe-$yn",
+      "$md-$as-$ma-$yn",
+      "$md-$ca-$fe-$ch",
+      "$md-$ca-$fe-$yn",
+      "$md-$ca-$ma-$yn",
+      "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
+      "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+      "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+      "$md-universal-$fe-$ch-$av$mu-$av$wg",
+      "$md-universal-$fe-$ch-min$mu-$av$wg",
+      "$md-universal-$fe-$yn-$av$mu-$av$wg",
+      "$md-universal-$fe-$yn-$av$mu-min$wg",
+      "$md-universal-$fe-$yn-min$mu-$av$wg",
+      "$md-universal-$ma-$yn-$av$mu-$av$wg",
+      "Aevrynd_LowerLipRimTurn_R1033",
+      "Aevrynd_MixedSpaceEyelidRelief_R1000",
+      "Aevrynd_MouthOpenTest_R1030",
+      "Aevrynd_PerioralAnatomy_R1030",
+      "Aevrynd_SmileTest_R1030",
+      "Aevrynd_UpperLidOrbitalVolume_R1024",
+      "Basis",
+      "ElbowCreaseVolume70.L",
+      "ElbowCreaseVolume70.R",
+      "KneeCreaseVolume75.L",
+      "KneeCreaseVolume75.R",
+      "KneeEdgeConstraint75.L",
+      "KneeEdgeConstraint75.R"
+    ],
+    "bodyOnly": [],
+    "donorOnly": []
+  },
+  "continuousMergeFeasible": false
+}
