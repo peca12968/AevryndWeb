@@ -1,0 +1,61 @@
+{
+  "revision": "v249r1078-eyelid-inner-wall-visual-audit",
+  "study": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1078-eyelid-inner-wall-sweep.study.json",
+  "control": "a-control",
+  "selected": "c-two-ring-forward-0.22",
+  "metricDefinition": "Render-space proxy, not object segmentation: pixels in fixed eye-front ROIs y=220:540, left x=0:600 and right x=800:1400 with G/R>0.90, B/R>0.72 and mean RGB>150.",
+  "variants": {
+    "a-control": {
+      "brightLowSaturationEyeRegionPixels": {
+        "left": 21200,
+        "right": 20278
+      },
+      "reductionVsControlPercent": {
+        "left": 0.0,
+        "right": 0.0
+      }
+    },
+    "b-one-ring-forward-0.12": {
+      "brightLowSaturationEyeRegionPixels": {
+        "left": 20507,
+        "right": 19558
+      },
+      "reductionVsControlPercent": {
+        "left": 3.268867924528302,
+        "right": 3.5506460203175854
+      }
+    },
+    "c-two-ring-forward-0.22": {
+      "brightLowSaturationEyeRegionPixels": {
+        "left": 19453,
+        "right": 18755
+      },
+      "reductionVsControlPercent": {
+        "left": 8.24056603773585,
+        "right": 7.510602623532892
+      }
+    },
+    "d-two-ring-forward-0.32": {
+      "brightLowSaturationEyeRegionPixels": {
+        "left": 18439,
+        "right": 17692
+      },
+      "reductionVsControlPercent": {
+        "left": 13.023584905660377,
+        "right": 12.752736956307329
+      }
+    }
+  },
+  "fixedUpperFrameMeanAbsoluteRgbDelta255": {
+    "face-front": 0.0,
+    "face-three-quarter": 0.0
+  },
+  "visualDecision": {
+    "selected": "c-two-ring-forward-0.22",
+    "reason": "The two-ring 0.22 mm wall gives visible physical lid thickness and reduces the bright sclera proxy without the narrowed, sleepy aperture of the 0.32 mm variant.",
+    "rejected": {
+      "d-two-ring-forward-0.32": "Technically clean but visually over-closed and over-thick."
+    }
+  },
+  "status": "PASS_SELECTED_C_TWO_RING_0_22"
+}
