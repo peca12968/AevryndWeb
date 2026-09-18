@@ -1,0 +1,40 @@
+{
+  "revision": "v249r1114-current-hair-baseline",
+  "sourceRevision": "v249r1110-integrated-upper-lip-mask-sweep",
+  "strictHairScore": 31,
+  "status": "TECHNICAL_PASS_VISUAL_FAIL_BASELINE",
+  "websitePromotionApproved": false,
+  "technicalEvidence": {
+    "hairObject": "AevryndFemaleGradedHairlineGroom_R1081",
+    "curves": 6209,
+    "points": 116768,
+    "penetratingPoints": {
+      "frame1": 0,
+      "frame20": 0,
+      "frame33": 0,
+      "frame61": 0
+    },
+    "minimumSignedClearanceMm": {
+      "frame1": 1.0000598231272306,
+      "frame20": 0.5604787844504244,
+      "frame33": 1.0073482956158841,
+      "frame61": 1.0000150105042849
+    },
+    "motionModifier": "Aevrynd Layered Hair Motion R1083"
+  },
+  "visualFindings": [
+    "The right front curtain crosses the forehead, eye, cheek, and jaw, obscuring facial readability despite remaining outside the collision body.",
+    "The centre part is too wide and triangular, exposing a synthetic-looking scalp wedge.",
+    "Most strands follow nearly parallel vertical paths, so the groom reads as a procedural curtain rather than grouped human locks.",
+    "The bottom silhouette has excessive individual needle tips and lacks controlled clump-level length variation.",
+    "The hair material is uniformly dark and lacks root-to-tip roughness and value variation."
+  ],
+  "decision": "Retain r1110 as the collision-safe baseline but classify the visible groom as a strict visual failure.",
+  "nextAction": "Mask face-crossing curves through point radius, introduce deterministic clump-level tip staggering, preserve the zero-penetration motion envelope, and re-render front, oblique, profile, and motion views.",
+  "renders": [
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1114-hair-baseline/front-frame1.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1114-hair-baseline/oblique-frame1.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1114-hair-baseline/profile-frame1.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1114-hair-baseline/front-frame33.png"
+  ]
+}
