@@ -1708,3 +1708,7 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 ### v249r1074 commissure falloff
 - Selected a 2.50 mm endpoint extension with a 0.40 mm endpoint-local radius gain; it lowers the measured right commissure residual by 11/255 in front and open renders without changing the central rim.
 - Rejected the 0.60 mm sweep because it over-darkens the endpoint below the central response. Geometry, all 35 shape keys, weights, topology, material slots and draw calls are unchanged; collision status inherits the bit-identical r1068 pass. Website v83 remains unchanged.
+
+### v249r1075 asymmetric lip-edge lighting diagnostic
+- Removing the 0.045 micro-bump changes the mouth by at most 0.068/255 mean absolute RGB; matte zero-specular isolation still shows a bright edge that flips with the light direction.
+- Commissure adjacent-face normal spread reaches 88.04 degrees neutral and 88.74 degrees smiling, while the central maximum stays below 34.96 degrees. Vertices 13523 and 13558 are the strongest asymmetric outliers. Root cause is geometry/vertex-normal transition; no model or website promotion occurred.
