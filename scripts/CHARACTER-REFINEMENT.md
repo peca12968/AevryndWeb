@@ -1661,3 +1661,12 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - Blender 5.2.2 terminates with `EXCEPTION_ACCESS_VIOLATION` on the second render of a pre-subdivision beveled variant. One deterministic front render per fresh file load completes, but the stack fails the stability gate.
 - r1066 scores 38/100 with no perceptual gain; r1067 falls to 35/100 and is unstable. Both are rejected, r1061 remains the technical expression baseline and website v83 remains unchanged.
 - Modifier-based repair is closed. r1068 must explicitly replace the local lower-inner patch with a smooth resampled curve and two authored support rows, transferring all 35 shape-key deltas and normalized weights before visual and collision review.
+
+### v249r1068 — exact-edge baked support topology pass
+
+- r1068 replaces broad vertex-group selection with the exact 76 measured lower-inner edges. A two-segment 0.05 mm support bevel is baked into the low-density Basis mesh, then all 35 shape-key deltas and normalized deform weights are transferred by nearest source triangle and barycentric interpolation.
+- The body grows from 13,583 to 13,817 vertices and from 13,519 to 13,753 faces, a 1.723% vertex increase. Mapping distance is 0.0 mm at median and P95, with a 0.0218 mm maximum.
+- The exact selection avoids r1067's paired humps and visibly thins the neutral bright rim. Neutral, oblique, mouth-open and smile render without the modifier-stack crash.
+- Frames 1/20/33/61 plus mouth-open and smile pass with zero non-adjacent body self-collision. All 14 tested brow, eye, cornea, lash and caruncle attachments retain zero overlap; no vertex lacks deform weights.
+- Strict mouth quality reaches 39/100, matching retained r1033 while adding the clean cavity, effective r1061 expressions and explicit support topology. Oblique and open views still expose a grey-white lower inner strip, so r1068 is a technical topology/collision candidate only and website v83 remains unchanged.
+- r1069 must rebuild only the visible strip between the new support rows as an inward-facing vestibule transition, then repeat oblique/open normal-continuity and collision gates.

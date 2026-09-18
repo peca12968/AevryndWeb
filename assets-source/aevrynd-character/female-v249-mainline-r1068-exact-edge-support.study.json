@@ -1,0 +1,38 @@
+{
+  "revision": "v249r1068-exact-edge-support",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-structured-lips-r1061-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-exact-edge-support-r1068-study.blend",
+  "method": "exact 76-edge two-segment low-density support bevel at 0.05 mm followed by nearest-source-triangle barycentric transfer of all 35 shape-key deltas and normalized deform weights; restore subdivision and Armature",
+  "transfer": {
+    "sourceShapeKeys": 35,
+    "targetShapeKeys": 35,
+    "shapeKeyNamesMatch": true,
+    "targetVertices": 13817,
+    "targetFaces": 13753,
+    "mappingDistanceMm": {
+      "median": 0.0,
+      "p95": 0.0,
+      "maximum": 0.021779220332973637
+    },
+    "assignedWeights": 53549,
+    "minimumVertexGroupCount": 3
+  },
+  "renders": [
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1068-exact-edge-support\\neutral-front.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1068-exact-edge-support\\neutral-oblique.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1068-exact-edge-support\\mouth-open.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1068-exact-edge-support\\smile.png"
+  ],
+  "candidateStatus": "TECHNICAL_TOPOLOGY_AND_COLLISION_PASS_VISUAL_PARTIAL",
+  "websitePromotionApproved": false,
+  "strictMouthScore100": 39,
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1068-exact-edge-support.collision-audit.json",
+  "collisionStatus": "PASS",
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1068-exact-edge-support\\contact-sheet-r1068.jpg",
+  "topologyDeltaVersusR1061": {
+    "vertices": 234,
+    "faces": 234,
+    "vertexPercent": 1.7227416623711993
+  },
+  "finding": "Exact-edge baked support avoids the broad group-bevel humps and thins the neutral bright rim. All 35 shape keys and normalized weights transfer with 0.0218 mm maximum mapping distance; four rig frames, mouth-open, smile and 14 face attachments pass zero-overlap gates. Oblique and open views still expose a grey-white inner strip."
+}
