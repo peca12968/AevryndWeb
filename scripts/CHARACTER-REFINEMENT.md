@@ -1686,3 +1686,12 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - r1071 assigns an owned inner-lip material to the ten exact faces, a 58-face one-ring, a 115-face two-ring and a 389-face support-plus-adjacent union. Exact coverage creates isolated patches; expanded coverage creates large faceted blocks.
 - Even the 389-face union retains the white boundary while tinting both inner lips, so discrete low-density material assignment cannot form a continuous transition. r1071 is rejected before collision promotion and strict mouth quality remains 39/100.
 - r1068 remains the collision-qualified technical base and website v83 remains unchanged. r1072 must derive a continuous sub-millimetre point/corner mask from the measured ray locations and blend colour plus roughness inside the existing owned skin shader without another material slot.
+
+### v249r1072 — continuous owned-skin inner-rim mask
+
+- r1072 fits a 17-point world-space polyline through the measured r1070 bright-line hits and writes a smooth point-domain mask on the body. It blends inner-lip colour, roughness and specular response inside the existing owned skin material, adding no material slot or draw call.
+- Widths 1.0-3.0 mm and three softer intermediate bounds are reviewed in neutral front, oblique and mouth-open views. The selected 1.35 mm / 0.55 bound affects 208 of 13,817 vertices and removes the faceted blocks produced by r1071.
+- The selected bound lowers rim P99 luminance by 14.33/255 and maximum luminance by 11.33/255. Fixed left-cheek, right-cheek and upper-face crops remain unchanged; oblique and open changes stay localized to the mouth.
+- Geometry and deform-weight SHA-256 values are identical before and after the edit across all 35 shape keys. The candidate therefore inherits r1068's collision pass; topology remains 13,817 vertices and 13,753 faces with three material slots.
+- Strict mouth quality improves from 39 to 40/100. A thin grey-white line remains, so r1072 is retained only as a local material technical candidate and website v83 remains unchanged.
+- r1073 must decouple colour from optical suppression, using near-zero colour tint with stronger roughness/specular control over the measured 1.35-1.80 mm mask to remove the remaining line without creating a pink band.
