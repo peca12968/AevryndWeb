@@ -1,0 +1,15 @@
+{
+  "revision": "v249r1112-lip-contact-depth-sweep",
+  "sourceRevision": "v249r1110-integrated-upper-lip-mask-sweep",
+  "status": "TECHNICAL_FAIL_VISUAL_NO_GAIN_DIAGNOSTIC_ONLY",
+  "websitePromotionApproved": false,
+  "selectedVariant": null,
+  "findings": [
+    "The measured centre seam has about 2.6 mm of depth separation even though upper and lower lip silhouette vertices overlap vertically.",
+    "A 1.0 mm depth correction raises body self-collision pairs from 171 to 365 at neutral.",
+    "The 1.6 mm and 2.2 mm corrections raise neutral self-collision pairs to 368 and 382 respectively.",
+    "All depth variants leave the visible black band substantially unchanged."
+  ],
+  "decision": "Reject all r1112 variants and retain r1110 as the active offline study.",
+  "nextAction": "Do not compress the existing inner-lip surfaces; isolate the mouth-interior topology and determine whether a controlled retopology is required."
+}

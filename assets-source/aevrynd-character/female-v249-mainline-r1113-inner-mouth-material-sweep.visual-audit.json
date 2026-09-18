@@ -1,0 +1,15 @@
+{
+  "revision": "v249r1113-inner-mouth-material-sweep",
+  "sourceRevision": "v249r1110-integrated-upper-lip-mask-sweep",
+  "status": "TECHNICAL_PASS_VISUAL_NO_GAIN_DIAGNOSTIC_ONLY",
+  "websitePromotionApproved": false,
+  "selectedVariant": null,
+  "findings": [
+    "A separate owned inner-mouth material was assigned to 206 inward-facing polygons.",
+    "Neutral, open, smile, and frames 1, 20, 33, and 61 retain the 171-pair body self-collision baseline.",
+    "Dark-wine base colors with emission strengths 0.08, 0.16, and 0.24 produce no meaningful reduction in the visible black band.",
+    "The black band is dominated by occlusion from the existing folded mouth topology rather than diffuse material color."
+  ],
+  "decision": "Reject all r1113 variants and retain r1110 as the active offline study.",
+  "nextAction": "Inspect the mouth fold as a topological subsystem and rebuild its contact loop instead of changing exterior lip position or interior color."
+}
