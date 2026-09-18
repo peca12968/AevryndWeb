@@ -1,0 +1,14 @@
+{
+  "revision": "v249r1116-camera-visible-face-clearance-sweep",
+  "sourceRevision": "v249r1110-integrated-upper-lip-mask-sweep",
+  "status": "TECHNICAL_PASS_VISUAL_REJECT_DIAGNOSTIC_ONLY",
+  "websitePromotionApproved": false,
+  "selectedVariant": null,
+  "findings": [
+    "Front-camera body-ray tests identify 377 to 1008 curves in front of the facial clear zone.",
+    "All three variants preserve zero penetration over the four motion-gate frames.",
+    "Radius-zero masking still leaves the rejected curves visible and exposes a darker inner curtain.",
+    "The ray classification is useful, but the removal mechanism must delete topology rather than edit radius."
+  ],
+  "decision": "Retain the ray classifier and reject the radius-mask implementation."
+}

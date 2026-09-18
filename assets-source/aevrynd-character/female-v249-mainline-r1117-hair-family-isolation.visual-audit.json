@@ -1,0 +1,22 @@
+{
+  "revision": "v249r1117-hair-family-isolation",
+  "sourceRevision": "v249r1110-integrated-upper-lip-mask-sweep",
+  "status": "DIAGNOSTIC_ONLY",
+  "websitePromotionApproved": false,
+  "selectedVariant": null,
+  "technicalEvidence": {
+    "familyCurveCounts": {
+      "0": 3770,
+      "1": 375,
+      "2": 260,
+      "3": 1300,
+      "4": 504
+    }
+  },
+  "findings": [
+    "Family 0 supplies most of the brown outer silhouette and volume.",
+    "Families 1 through 4 each repeat similar black lower curtains and right-cheek crossings.",
+    "Radius-zero isolation leaves non-target curves visible at minimum width, confirming that topology deletion is required."
+  ],
+  "decision": "Do not remove a whole family; delete only ray-classified offending curves across all families."
+}

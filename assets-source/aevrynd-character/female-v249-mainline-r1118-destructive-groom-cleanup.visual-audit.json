@@ -1,0 +1,46 @@
+{
+  "revision": "v249r1118-destructive-groom-cleanup-sweep",
+  "sourceRevision": "v249r1110-integrated-upper-lip-mask-sweep",
+  "strictHairScore": 37,
+  "status": "TECHNICAL_PASS_VISUAL_IMPROVEMENT_MAINLINE_STUDY",
+  "websitePromotionApproved": false,
+  "selectedVariant": "a-conservative",
+  "technicalEvidence": {
+    "removedFaceCrossingCurves": 377,
+    "remainingCurves": 5832,
+    "remainingPoints": 106603,
+    "penetratingPoints": {
+      "frame1": 0,
+      "frame20": 0,
+      "frame33": 0,
+      "frame61": 0
+    },
+    "minimumSignedClearanceMm": {
+      "frame1": 1.0000598231272306,
+      "frame20": 0.5604787844504244,
+      "frame33": 1.0073482956158841,
+      "frame61": 1.0000150105042849
+    }
+  },
+  "improvements": [
+    "Physical curve deletion clears most strands from the eyes, nose, mouth, and central cheeks.",
+    "Deterministic topology trimming introduces modest clump-level length variation while reducing evaluated point count by about 8.7 percent.",
+    "The rest and frame-33 views preserve the intended outward, root-pinned motion.",
+    "Every tested frame retains zero penetrating hair points."
+  ],
+  "remainingIssues": [
+    "The right temple retains several stray strands and an uneven hairline edge.",
+    "The centre part and forehead exposure remain too broad and asymmetric.",
+    "The lower silhouette still contains too many long needle tips.",
+    "The dominant flow remains overly vertical and the material lacks root-to-tip variation."
+  ],
+  "decision": "Use r1118 a-conservative as the active offline study; keep website promotion forbidden.",
+  "nextAction": "Rebuild the frontal guide family around a narrower authored part and replace the remaining needle ends with 6 to 10 coherent clump silhouettes.",
+  "renders": [
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1118-destructive-groom-cleanup-sweep/a-conservative-front-f01.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1118-destructive-groom-cleanup-sweep/a-conservative-oblique-f01.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1118-destructive-groom-cleanup-sweep/a-conservative-profile-f01.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1118-destructive-groom-cleanup-sweep/a-conservative-back-f01.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1118-destructive-groom-cleanup-sweep/a-conservative-front-f33.png"
+  ]
+}

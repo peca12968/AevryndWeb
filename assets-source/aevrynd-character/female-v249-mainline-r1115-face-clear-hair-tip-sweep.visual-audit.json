@@ -1,0 +1,14 @@
+{
+  "revision": "v249r1115-face-clear-hair-tip-sweep",
+  "sourceRevision": "v249r1110-integrated-upper-lip-mask-sweep",
+  "status": "TECHNICAL_PASS_VISUAL_REJECT_DIAGNOSTIC_ONLY",
+  "websitePromotionApproved": false,
+  "selectedVariant": null,
+  "findings": [
+    "All radius-mask variants preserve zero hair/body penetration at frames 1, 20, 33, and 61.",
+    "Setting point radius to zero does not fully suppress Curves rendering; rejected strands remain visible at a minimum rendered width.",
+    "Crown-radius amplification makes the inner layer read darker and worsens the wig-like appearance.",
+    "The fixed coordinate face zone does not correspond reliably to the rendered facial projection."
+  ],
+  "decision": "Reject all r1115 variants and retain r1110 while replacing radius masking with actual curve deletion."
+}
