@@ -1,0 +1,102 @@
+{
+  "revision": "v249r1080-eye-optics-visual-audit",
+  "study": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1080-eye-optics-sweep.study.json",
+  "isolation": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1080-eye-layer-isolation.render.json",
+  "control": "a-control",
+  "selected": "g-cornea-0.20",
+  "irisSizeMm": {
+    "control": {
+      "x": 9.649587795138359,
+      "y": 1.706734299659729,
+      "z": 10.233521461486816
+    },
+    "selected": {
+      "x": 11.19256392121315,
+      "y": 1.7800256609916687,
+      "z": 11.871099472045898
+    },
+    "radialScale": 1.16
+  },
+  "scleraProxy": {
+    "a-control": {
+      "left": 19634,
+      "right": 18630,
+      "total": 38264
+    },
+    "b-iris-1.10": {
+      "left": 17115,
+      "right": 16076,
+      "total": 33191
+    },
+    "c-iris-1.16": {
+      "left": 15646,
+      "right": 14612,
+      "total": 30258
+    },
+    "d-optical-1.16": {
+      "left": 15696,
+      "right": 14674,
+      "total": 30370
+    },
+    "e-optical-sclera-0.88": {
+      "left": 14241,
+      "right": 12931,
+      "total": 27172
+    },
+    "f-cornea-0.12": {
+      "left": 13871,
+      "right": 12525,
+      "total": 26396
+    },
+    "g-cornea-0.20": {
+      "left": 13830,
+      "right": 12494,
+      "total": 26324
+    },
+    "h-cornea-0.30": {
+      "left": 13783,
+      "right": 12442,
+      "total": 26225
+    },
+    "i-strong-1.20": {
+      "left": 12378,
+      "right": 11409,
+      "total": 23787
+    }
+  },
+  "selectedTotalScleraProxyReductionPercent": 31.20426510558227,
+  "corneaIsolation": {
+    "control": {
+      "fullFrameMeanAbsoluteRgbDelta255": 2.1632080078125,
+      "lowerEyeRoiMeanAbsoluteRgbDelta255": [
+        7.891706466674805,
+        7.690419673919678
+      ],
+      "lowerEyeRoiPixelsAbove20": [
+        9383,
+        8859
+      ]
+    },
+    "selected": {
+      "fullFrameMeanAbsoluteRgbDelta255": 0.1781434863805771,
+      "lowerEyeRoiMeanAbsoluteRgbDelta255": [
+        0.30924442410469055,
+        0.3213604688644409
+      ],
+      "lowerEyeRoiPixelsAbove20": [
+        0,
+        0
+      ]
+    }
+  },
+  "corneaArtifactPixelsAbove20ReductionPercent": 100.0,
+  "fixedUpperFrameMeanAbsoluteRgbDelta255": {
+    "face-front": 0.0,
+    "face-three-quarter": 0.0
+  },
+  "visualDecision": {
+    "selected": "g-cornea-0.20",
+    "reason": "The 1.16 iris reaches 11.19 x 11.87 mm, 0.08 mm recess and 0.75 degree convergence reduce the flat doll stare, 0.88 sclera multiplier tempers white wedges, and a correctly connected 0.20 blended cornea removes the giant six-o'clock area-light disk while retaining a restrained optical layer."
+  },
+  "status": "PASS_SELECTED_G_CORNEA_0_20"
+}

@@ -1,0 +1,1044 @@
+{
+  "revision": "v249r1080-eye-optics-inspection",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-canthus-contour-r1079-study.blend",
+  "objects": {
+    "Eye_L_Cornea": {
+      "vertices": 1986,
+      "faces": 2048,
+      "parent": "AevryndFemaleRig",
+      "location": [
+        0.028152482584118843,
+        -0.09087767452001572,
+        0.08857599645853043
+      ],
+      "rotationEuler": [
+        -1.7111209630966187,
+        -1.3837778145564528e-10,
+        -1.2020523465494648e-10
+      ],
+      "scale": [
+        1.0800000429153442,
+        1.0800001621246338,
+        1.0800002813339233
+      ],
+      "boundsWorld": {
+        "x": [
+          0.01728895865380764,
+          0.03901655972003937
+        ],
+        "y": [
+          -0.12000539153814316,
+          -0.0944904014468193
+        ],
+        "z": [
+          1.4373624324798584,
+          1.460530400276184
+        ]
+      },
+      "sizeMm": {
+        "x": 21.727601066231728,
+        "y": 25.514990091323853,
+        "z": 23.167967796325684
+      },
+      "centerWorld": [
+        0.028152757618775122,
+        -0.10664321236830103,
+        1.448946445189934
+      ],
+      "materials": [
+        {
+          "name": "Aevrynd_Eye_Cornea",
+          "surfaceRenderMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.9300000071525574,
+                  0.9700000286102295,
+                  1.0,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.02199999988079071,
+                "IOR": 1.3760000467300415,
+                "Alpha": 0.03999999910593033,
+                "Specular IOR Level": 0.5,
+                "Transmission Weight": 1.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746
+              }
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "ShaderNodeBsdfTransparent"
+            },
+            {
+              "name": "Mix Shader",
+              "type": "ShaderNodeMixShader"
+            }
+          ],
+          "links": [
+            "Transparent BSDF.BSDF->Mix Shader.Shader",
+            "Principled BSDF.BSDF->Mix Shader.Shader",
+            "Principled BSDF.BSDF->Material Output.Surface"
+          ]
+        }
+      ]
+    },
+    "Eye_L_Iris": {
+      "vertices": 97,
+      "faces": 96,
+      "parent": "AevryndFemaleRig",
+      "location": [
+        0.028152434155344963,
+        -0.0889303982257843,
+        0.10236523300409317
+      ],
+      "rotationEuler": [
+        -1.7111209630966187,
+        -1.3837778145564528e-10,
+        -1.2020523465494648e-10
+      ],
+      "scale": [
+        1.0800000429153442,
+        1.0800001621246338,
+        1.0800002813339233
+      ],
+      "boundsWorld": {
+        "x": [
+          0.023327965289354324,
+          0.032977551221847534
+        ],
+        "y": [
+          -0.11944451928138733,
+          -0.1177377849817276
+        ],
+        "z": [
+          1.4438296556472778,
+          1.4540631771087646
+        ]
+      },
+      "sizeMm": {
+        "x": 9.64958593249321,
+        "y": 1.706734299659729,
+        "z": 10.233521461486816
+      },
+      "centerWorld": [
+        0.028153451236406554,
+        -0.11777142243286998,
+        1.4489471801777476
+      ],
+      "materials": [
+        {
+          "name": "Aevrynd_Eye_Iris",
+          "surfaceRenderMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.5,
+                "IOR": 1.3760000467300415,
+                "Alpha": 1.0,
+                "Specular IOR Level": 0.1599999964237213,
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746
+              }
+            },
+            {
+              "name": "Aevrynd Iris Texture",
+              "type": "ShaderNodeTexImage",
+              "image": "aevrynd-iris-hazel-v5",
+              "imagePath": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\textures\\aevrynd-iris-hazel-v5.png"
+            }
+          ],
+          "links": [
+            "Principled BSDF.BSDF->Material Output.Surface",
+            "Aevrynd Iris Texture.Color->Aevrynd Iris Tone Revision 5.Color",
+            "Aevrynd Iris Tone Revision 5.Color->Principled BSDF.Base Color",
+            "Aevrynd Iris Texture.Alpha->Principled BSDF.Alpha"
+          ]
+        }
+      ]
+    },
+    "Eye_L_LowerLashes": {
+      "vertices": 903,
+      "faces": 774,
+      "parent": "AevryndFemaleRig",
+      "location": [
+        -2.106442797966679e-10,
+        -1.5407558679580688,
+        0.18382857739925385
+      ],
+      "rotationEuler": [
+        -1.7111209630966187,
+        -1.3837778145564528e-10,
+        -1.202052485327343e-10
+      ],
+      "scale": [
+        1.0,
+        1.0000001192092896,
+        1.0000001192092896
+      ],
+      "boundsWorld": {
+        "x": [
+          0.01882157102227211,
+          0.03758039325475693
+        ],
+        "y": [
+          -0.12507368624210358,
+          -0.09420707076787949
+        ],
+        "z": [
+          1.4464030265808105,
+          1.4504854679107666
+        ]
+      },
+      "sizeMm": {
+        "x": 18.758822232484818,
+        "y": 30.86661547422409,
+        "z": 4.082441329956055
+      },
+      "centerWorld": [
+        0.028316360247524607,
+        -0.09673421089006289,
+        1.4481174770251726
+      ],
+      "materials": [
+        {
+          "name": "Aevrynd_Lash_Hair_v51",
+          "surfaceRenderMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.003000000026077032,
+                  0.0005000000237487257,
+                  0.00019999999494757503,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.5799999833106995,
+                "IOR": 1.5,
+                "Alpha": 1.0,
+                "Specular IOR Level": 0.18000000715255737,
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746
+              }
+            }
+          ],
+          "links": [
+            "\u539f\u5247\u5316 BSDF.BSDF->\u6750\u8cea\u8f38\u51fa.Surface"
+          ]
+        }
+      ]
+    },
+    "Eye_L_MedialCaruncle_R1023": {
+      "vertices": 97,
+      "faces": 96,
+      "parent": "AevryndFemaleRig",
+      "location": [
+        -2.106442797966679e-10,
+        -1.5407558679580688,
+        0.18382857739925385
+      ],
+      "rotationEuler": [
+        -1.7111209630966187,
+        -1.3837778145564528e-10,
+        -1.202052485327343e-10
+      ],
+      "scale": [
+        1.0,
+        1.0000001192092896,
+        1.0000001192092896
+      ],
+      "boundsWorld": {
+        "x": [
+          0.017999999225139618,
+          0.019999999552965164
+        ],
+        "y": [
+          -0.11461199074983597,
+          -0.11057056486606598
+        ],
+        "z": [
+          1.4483999013900757,
+          1.4495998620986938
+        ]
+      },
+      "sizeMm": {
+        "x": 2.0000003278255463,
+        "y": 4.041425883769989,
+        "z": 1.199960708618164
+      },
+      "centerWorld": [
+        0.018999999907520628,
+        -0.11292460967892225,
+        1.4489998792864613
+      ],
+      "materials": [
+        {
+          "name": "Aevrynd_MedialCaruncle_R1023",
+          "surfaceRenderMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.1899999976158142,
+                  0.04500000178813934,
+                  0.03799999877810478,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.47999998927116394,
+                "IOR": 1.5,
+                "Alpha": 1.0,
+                "Specular IOR Level": 0.5,
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746
+              }
+            }
+          ],
+          "links": [
+            "\u539f\u5247\u5316 BSDF.BSDF->\u6750\u8cea\u8f38\u51fa.Surface"
+          ]
+        }
+      ]
+    },
+    "Eye_L_Sclera": {
+      "vertices": 1986,
+      "faces": 2048,
+      "parent": "AevryndFemaleRig",
+      "location": [
+        0.028152482584118843,
+        -0.0908438116312027,
+        0.08881662040948868
+      ],
+      "rotationEuler": [
+        -1.7111209630966187,
+        -1.3837778145564528e-10,
+        -1.2020523465494648e-10
+      ],
+      "scale": [
+        1.0800000429153442,
+        1.0800001621246338,
+        1.0800002813339233
+      ],
+      "boundsWorld": {
+        "x": [
+          0.01750887557864189,
+          0.03879664093255997
+        ],
+        "y": [
+          -0.11847449839115143,
+          -0.09495210647583008
+        ],
+        "z": [
+          1.4375966787338257,
+          1.4602957963943481
+        ]
+      },
+      "sizeMm": {
+        "x": 21.287765353918076,
+        "y": 23.52239191532135,
+        "z": 22.69911766052246
+      },
+      "centerWorld": [
+        0.028152757341160337,
+        -0.10671329801041193,
+        1.4489462529304404
+      ],
+      "materials": [
+        {
+          "name": "Aevrynd_Eye_Sclera",
+          "surfaceRenderMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.5600000023841858,
+                  0.5,
+                  0.4399999976158142,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.3799999952316284,
+                "IOR": 1.3760000467300415,
+                "Alpha": 1.0,
+                "Specular IOR Level": 0.2800000011920929,
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.04500000178813934,
+                "Coat Roughness": 0.10999999940395355
+              }
+            },
+            {
+              "name": "Aevrynd Sclera BaseColor",
+              "type": "ShaderNodeTexImage",
+              "image": "aevrynd-sclera-basecolor-v61",
+              "imagePath": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\textures\\aevrynd-sclera-basecolor-v61.png"
+            }
+          ],
+          "links": [
+            "Principled BSDF.BSDF->Material Output.Surface",
+            "Aevrynd Sclera BaseColor.Color->Principled BSDF.Base Color"
+          ]
+        }
+      ]
+    },
+    "Eye_L_UpperLashes": {
+      "vertices": 1911,
+      "faces": 1638,
+      "parent": "AevryndFemaleRig",
+      "location": [
+        -2.106442797966679e-10,
+        -1.5407558679580688,
+        0.18382857739925385
+      ],
+      "rotationEuler": [
+        -1.7111209630966187,
+        -1.3837778145564528e-10,
+        -1.202052485327343e-10
+      ],
+      "scale": [
+        1.0,
+        1.0000001192092896,
+        1.0000001192092896
+      ],
+      "boundsWorld": {
+        "x": [
+          0.018192382529377937,
+          0.0398813933134079
+        ],
+        "y": [
+          -0.1337011307477951,
+          -0.12292388081550598
+        ],
+        "z": [
+          1.4529552459716797,
+          1.4620776176452637
+        ]
+      },
+      "sizeMm": {
+        "x": 21.68901078402996,
+        "y": 10.777249932289124,
+        "z": 9.122371673583984
+      },
+      "centerWorld": [
+        0.028634897246566947,
+        -0.12902616925853388,
+        1.4581753658038168
+      ],
+      "materials": [
+        {
+          "name": "Aevrynd_Lash_Hair_v51",
+          "surfaceRenderMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.003000000026077032,
+                  0.0005000000237487257,
+                  0.00019999999494757503,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.5799999833106995,
+                "IOR": 1.5,
+                "Alpha": 1.0,
+                "Specular IOR Level": 0.18000000715255737,
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746
+              }
+            }
+          ],
+          "links": [
+            "\u539f\u5247\u5316 BSDF.BSDF->\u6750\u8cea\u8f38\u51fa.Surface"
+          ]
+        }
+      ]
+    },
+    "Eye_R_Cornea": {
+      "vertices": 1986,
+      "faces": 2048,
+      "parent": "AevryndFemaleRig",
+      "location": [
+        -0.02815314196050167,
+        -0.09087767452001572,
+        0.08857599645853043
+      ],
+      "rotationEuler": [
+        -1.7111209630966187,
+        -1.3837778145564528e-10,
+        -1.2020523465494648e-10
+      ],
+      "scale": [
+        1.0800000429153442,
+        1.0800001621246338,
+        1.0800002813339233
+      ],
+      "boundsWorld": {
+        "x": [
+          -0.038896508514881134,
+          -0.01740899682044983
+        ],
+        "y": [
+          -0.12000539153814316,
+          -0.0944904014468193
+        ],
+        "z": [
+          1.4373624324798584,
+          1.460530400276184
+        ]
+      },
+      "sizeMm": {
+        "x": 21.487511694431305,
+        "y": 25.514990091323853,
+        "z": 23.167967796325684
+      },
+      "centerWorld": [
+        -0.02815275373779545,
+        -0.10664321236830103,
+        1.4489464605562876
+      ],
+      "materials": [
+        {
+          "name": "Aevrynd_Eye_Cornea",
+          "surfaceRenderMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.9300000071525574,
+                  0.9700000286102295,
+                  1.0,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.02199999988079071,
+                "IOR": 1.3760000467300415,
+                "Alpha": 0.03999999910593033,
+                "Specular IOR Level": 0.5,
+                "Transmission Weight": 1.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746
+              }
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "ShaderNodeBsdfTransparent"
+            },
+            {
+              "name": "Mix Shader",
+              "type": "ShaderNodeMixShader"
+            }
+          ],
+          "links": [
+            "Transparent BSDF.BSDF->Mix Shader.Shader",
+            "Principled BSDF.BSDF->Mix Shader.Shader",
+            "Principled BSDF.BSDF->Material Output.Surface"
+          ]
+        }
+      ]
+    },
+    "Eye_R_Iris": {
+      "vertices": 97,
+      "faces": 96,
+      "parent": "AevryndFemaleRig",
+      "location": [
+        -0.028153184801340103,
+        -0.0889303982257843,
+        0.10236605256795883
+      ],
+      "rotationEuler": [
+        -1.7111209630966187,
+        -1.3837778145564528e-10,
+        -1.2020523465494648e-10
+      ],
+      "scale": [
+        1.0800000429153442,
+        1.0800001621246338,
+        1.0800002813339233
+      ],
+      "boundsWorld": {
+        "x": [
+          -0.03292896971106529,
+          -0.023376530036330223
+        ],
+        "y": [
+          -0.11944524198770523,
+          -0.1177370548248291
+        ],
+        "z": [
+          1.4438296556472778,
+          1.4540631771087646
+        ]
+      },
+      "sizeMm": {
+        "x": 9.55243967473507,
+        "y": 1.7081871628761292,
+        "z": 10.233521461486816
+      },
+      "centerWorld": [
+        -0.028152054271747155,
+        -0.11777140084922928,
+        1.4489471236455072
+      ],
+      "materials": [
+        {
+          "name": "Aevrynd_Eye_Iris",
+          "surfaceRenderMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.5,
+                "IOR": 1.3760000467300415,
+                "Alpha": 1.0,
+                "Specular IOR Level": 0.1599999964237213,
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746
+              }
+            },
+            {
+              "name": "Aevrynd Iris Texture",
+              "type": "ShaderNodeTexImage",
+              "image": "aevrynd-iris-hazel-v5",
+              "imagePath": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\textures\\aevrynd-iris-hazel-v5.png"
+            }
+          ],
+          "links": [
+            "Principled BSDF.BSDF->Material Output.Surface",
+            "Aevrynd Iris Texture.Color->Aevrynd Iris Tone Revision 5.Color",
+            "Aevrynd Iris Tone Revision 5.Color->Principled BSDF.Base Color",
+            "Aevrynd Iris Texture.Alpha->Principled BSDF.Alpha"
+          ]
+        }
+      ]
+    },
+    "Eye_R_LowerLashes": {
+      "vertices": 882,
+      "faces": 756,
+      "parent": "AevryndFemaleRig",
+      "location": [
+        -2.106442797966679e-10,
+        -1.5407558679580688,
+        0.18382857739925385
+      ],
+      "rotationEuler": [
+        -1.7111209630966187,
+        -1.3837778145564528e-10,
+        -1.202052485327343e-10
+      ],
+      "scale": [
+        1.0,
+        1.0000001192092896,
+        1.0000001192092896
+      ],
+      "boundsWorld": {
+        "x": [
+          -0.03779974207282066,
+          -0.01899973303079605
+        ],
+        "y": [
+          -0.125057190656662,
+          -0.09420671314001083
+        ],
+        "z": [
+          1.4464833736419678,
+          1.4505562782287598
+        ]
+      },
+      "sizeMm": {
+        "x": 18.800009042024612,
+        "y": 30.850477516651154,
+        "z": 4.072904586791992
+      },
+      "centerWorld": [
+        -0.028526920141006003,
+        -0.09732577829809687,
+        1.448060522814727
+      ],
+      "materials": [
+        {
+          "name": "Aevrynd_Lash_Hair_v51",
+          "surfaceRenderMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.003000000026077032,
+                  0.0005000000237487257,
+                  0.00019999999494757503,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.5799999833106995,
+                "IOR": 1.5,
+                "Alpha": 1.0,
+                "Specular IOR Level": 0.18000000715255737,
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746
+              }
+            }
+          ],
+          "links": [
+            "\u539f\u5247\u5316 BSDF.BSDF->\u6750\u8cea\u8f38\u51fa.Surface"
+          ]
+        }
+      ]
+    },
+    "Eye_R_MedialCaruncle_R1023": {
+      "vertices": 97,
+      "faces": 96,
+      "parent": "AevryndFemaleRig",
+      "location": [
+        -2.106442797966679e-10,
+        -1.5407558679580688,
+        0.18382857739925385
+      ],
+      "rotationEuler": [
+        -1.7111209630966187,
+        -1.3837778145564528e-10,
+        -1.202052485327343e-10
+      ],
+      "scale": [
+        1.0,
+        1.0000001192092896,
+        1.0000001192092896
+      ],
+      "boundsWorld": {
+        "x": [
+          -0.019999999552965164,
+          -0.017999999225139618
+        ],
+        "y": [
+          -0.11449608951807022,
+          -0.11011045426130295
+        ],
+        "z": [
+          1.4483999013900757,
+          1.4495998620986938
+        ]
+      },
+      "sizeMm": {
+        "x": 2.0000003278255463,
+        "y": 4.385635256767273,
+        "z": 1.199960708618164
+      },
+      "centerWorld": [
+        -0.018999999907520628,
+        -0.11271192240960819,
+        1.4489998792864613
+      ],
+      "materials": [
+        {
+          "name": "Aevrynd_MedialCaruncle_R1023",
+          "surfaceRenderMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.1899999976158142,
+                  0.04500000178813934,
+                  0.03799999877810478,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.47999998927116394,
+                "IOR": 1.5,
+                "Alpha": 1.0,
+                "Specular IOR Level": 0.5,
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746
+              }
+            }
+          ],
+          "links": [
+            "\u539f\u5247\u5316 BSDF.BSDF->\u6750\u8cea\u8f38\u51fa.Surface"
+          ]
+        }
+      ]
+    },
+    "Eye_R_Sclera": {
+      "vertices": 1986,
+      "faces": 2048,
+      "parent": "AevryndFemaleRig",
+      "location": [
+        -0.02815314196050167,
+        -0.0908438116312027,
+        0.08881662040948868
+      ],
+      "rotationEuler": [
+        -1.7111209630966187,
+        -1.3837778145564528e-10,
+        -1.2020523465494648e-10
+      ],
+      "scale": [
+        1.0800000429153442,
+        1.0800001621246338,
+        1.0800002813339233
+      ],
+      "boundsWorld": {
+        "x": [
+          -0.03867902606725693,
+          -0.017626482993364334
+        ],
+        "y": [
+          -0.11847449839115143,
+          -0.09495210647583008
+        ],
+        "z": [
+          1.4375966787338257,
+          1.4602957963943481
+        ]
+      },
+      "sizeMm": {
+        "x": 21.052543073892593,
+        "y": 23.52239191532135,
+        "z": 22.69911766052246
+      },
+      "centerWorld": [
+        -0.02815275396664007,
+        -0.10671329801041193,
+        1.4489462529304404
+      ],
+      "materials": [
+        {
+          "name": "Aevrynd_Eye_Sclera",
+          "surfaceRenderMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.5600000023841858,
+                  0.5,
+                  0.4399999976158142,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.3799999952316284,
+                "IOR": 1.3760000467300415,
+                "Alpha": 1.0,
+                "Specular IOR Level": 0.2800000011920929,
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.04500000178813934,
+                "Coat Roughness": 0.10999999940395355
+              }
+            },
+            {
+              "name": "Aevrynd Sclera BaseColor",
+              "type": "ShaderNodeTexImage",
+              "image": "aevrynd-sclera-basecolor-v61",
+              "imagePath": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\textures\\aevrynd-sclera-basecolor-v61.png"
+            }
+          ],
+          "links": [
+            "Principled BSDF.BSDF->Material Output.Surface",
+            "Aevrynd Sclera BaseColor.Color->Principled BSDF.Base Color"
+          ]
+        }
+      ]
+    },
+    "Eye_R_UpperLashes": {
+      "vertices": 1911,
+      "faces": 1638,
+      "parent": "AevryndFemaleRig",
+      "location": [
+        -2.106442797966679e-10,
+        -1.5407558679580688,
+        0.18382857739925385
+      ],
+      "rotationEuler": [
+        -1.7111209630966187,
+        -1.3837778145564528e-10,
+        -1.202052485327343e-10
+      ],
+      "scale": [
+        1.0,
+        1.0000001192092896,
+        1.0000001192092896
+      ],
+      "boundsWorld": {
+        "x": [
+          -0.03996675834059715,
+          -0.018056374043226242
+        ],
+        "y": [
+          -0.13359883427619934,
+          -0.1229330450296402
+        ],
+        "z": [
+          1.4524931907653809,
+          1.4619948863983154
+        ]
+      },
+      "sizeMm": {
+        "x": 21.91038429737091,
+        "y": 10.665789246559143,
+        "z": 9.50169563293457
+      },
+      "centerWorld": [
+        -0.028630991267017954,
+        -0.12902213705188,
+        1.458203113185118
+      ],
+      "materials": [
+        {
+          "name": "Aevrynd_Lash_Hair_v51",
+          "surfaceRenderMethod": "DITHERED",
+          "nodes": [
+            {
+              "name": "\u539f\u5247\u5316 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Base Color": [
+                  0.003000000026077032,
+                  0.0005000000237487257,
+                  0.00019999999494757503,
+                  1.0
+                ],
+                "Metallic": 0.0,
+                "Roughness": 0.5799999833106995,
+                "IOR": 1.5,
+                "Alpha": 1.0,
+                "Specular IOR Level": 0.18000000715255737,
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746
+              }
+            }
+          ],
+          "links": [
+            "\u539f\u5247\u5316 BSDF.BSDF->\u6750\u8cea\u8f38\u51fa.Surface"
+          ]
+        }
+      ]
+    }
+  },
+  "summary": {
+    "L": {
+      "Sclera": {
+        "sizeMm": {
+          "x": 21.287765353918076,
+          "y": 23.52239191532135,
+          "z": 22.69911766052246
+        },
+        "centerWorld": [
+          0.028152757341160337,
+          -0.10671329801041193,
+          1.4489462529304404
+        ],
+        "frontY": -0.11847449839115143
+      },
+      "Cornea": {
+        "sizeMm": {
+          "x": 21.727601066231728,
+          "y": 25.514990091323853,
+          "z": 23.167967796325684
+        },
+        "centerWorld": [
+          0.028152757618775122,
+          -0.10664321236830103,
+          1.448946445189934
+        ],
+        "frontY": -0.12000539153814316
+      },
+      "Iris": {
+        "sizeMm": {
+          "x": 9.64958593249321,
+          "y": 1.706734299659729,
+          "z": 10.233521461486816
+        },
+        "centerWorld": [
+          0.028153451236406554,
+          -0.11777142243286998,
+          1.4489471801777476
+        ],
+        "frontY": -0.11944451928138733
+      },
+      "irisToCorneaFrontDepthMm": 0.5608722567558289
+    },
+    "R": {
+      "Sclera": {
+        "sizeMm": {
+          "x": 21.052543073892593,
+          "y": 23.52239191532135,
+          "z": 22.69911766052246
+        },
+        "centerWorld": [
+          -0.02815275396664007,
+          -0.10671329801041193,
+          1.4489462529304404
+        ],
+        "frontY": -0.11847449839115143
+      },
+      "Cornea": {
+        "sizeMm": {
+          "x": 21.487511694431305,
+          "y": 25.514990091323853,
+          "z": 23.167967796325684
+        },
+        "centerWorld": [
+          -0.02815275373779545,
+          -0.10664321236830103,
+          1.4489464605562876
+        ],
+        "frontY": -0.12000539153814316
+      },
+      "Iris": {
+        "sizeMm": {
+          "x": 9.55243967473507,
+          "y": 1.7081871628761292,
+          "z": 10.233521461486816
+        },
+        "centerWorld": [
+          -0.028152054271747155,
+          -0.11777140084922928,
+          1.4489471236455072
+        ],
+        "frontY": -0.11944524198770523
+      },
+      "irisToCorneaFrontDepthMm": 0.5601495504379272
+    }
+  }
+}

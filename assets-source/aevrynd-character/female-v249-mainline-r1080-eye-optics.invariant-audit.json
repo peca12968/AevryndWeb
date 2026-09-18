@@ -1,0 +1,541 @@
+{
+  "revision": "v249r1080-eye-optics-invariants",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-canthus-contour-r1079-study.blend",
+  "candidate": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-balanced-eye-optics-r1080-study.blend",
+  "sourceSummary": {
+    "bodyGeometry": "b000f10b6a23b7951d2c5f8bd0bd49888b90c9f4d7f52af182db8789de19dcde",
+    "bodyWeights": "693beff48a0b16e89f5530d5138395d30862b867ad7e87b69a547e89aa58c82f",
+    "bodyShapeKeys": [
+      "Basis",
+      "$md-$as-$fe-$ch",
+      "$md-$as-$fe-$yn",
+      "$md-$as-$ma-$yn",
+      "$md-$ca-$fe-$ch",
+      "$md-$ca-$fe-$yn",
+      "$md-$ca-$ma-$yn",
+      "$md-$af-$fe-$ch",
+      "$md-$af-$fe-$yn",
+      "$md-$af-$ma-$yn",
+      "$md-universal-$fe-$ch-min$mu-$av$wg",
+      "$md-universal-$fe-$ch-$av$mu-$av$wg",
+      "$md-universal-$fe-$yn-min$mu-$av$wg",
+      "$md-universal-$fe-$yn-$av$mu-min$wg",
+      "$md-universal-$fe-$yn-$av$mu-$av$wg",
+      "$md-universal-$ma-$yn-$av$mu-$av$wg",
+      "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+      "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
+      "ElbowCreaseVolume70.L",
+      "ElbowCreaseVolume70.R",
+      "KneeEdgeConstraint75.L",
+      "KneeEdgeConstraint75.R",
+      "KneeCreaseVolume75.L",
+      "KneeCreaseVolume75.R",
+      "Aevrynd_MixedSpaceEyelidRelief_R1000",
+      "Aevrynd_UpperLidOrbitalVolume_R1024",
+      "Aevrynd_PerioralAnatomy_R1030",
+      "Aevrynd_MouthOpenTest_R1030",
+      "Aevrynd_SmileTest_R1030",
+      "Aevrynd_LowerLipRimTurn_R1033"
+    ],
+    "bodyTopology": "528b97c7dfe35a830979eb7fabe9e5cbab4e8e3a111b9796fa9d32781d6587d1",
+    "objects": {
+      "Eye_L_Sclera": {
+        "vertices": 1986,
+        "faces": 2048,
+        "geometry": "d8df37d2e7c3d756b5cc7052235d7da91548ed64299f29849942f63a058dce2d",
+        "topology": "a5b7ee50b067b2ce43b7247576b5f95de85b80d26a6cb09aa0f1cbe341e3f56a",
+        "materials": [
+          "Aevrynd_Eye_Sclera"
+        ],
+        "matrix": [
+          [
+            1.0800000429153442,
+            2.3592239273284576e-16,
+            3.0357660829594124e-16,
+            0.028152482584118843
+          ],
+          [
+            3.191891195797325e-16,
+            1.0800001621246338,
+            -1.4901161193847656e-08,
+            -0.10871328413486481
+          ],
+          [
+            -1.7867651802561113e-16,
+            -4.470348358154297e-08,
+            1.0800001621246338,
+            1.4489487409591675
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "Eye_L_Cornea": {
+        "vertices": 1986,
+        "faces": 2048,
+        "geometry": "df1041f2e64b8069e581fa700b684ca69b72500d160fd8807a915976c489233d",
+        "topology": "7747a2563c8d1ac4ca8afe3688ca27a4cd20cc29e8ee661243ac3467492f48d0",
+        "materials": [
+          "Aevrynd_Eye_Cornea"
+        ],
+        "matrix": [
+          [
+            1.0800000429153442,
+            2.3592239273284576e-16,
+            3.0357660829594124e-16,
+            0.028152482584118843
+          ],
+          [
+            3.191891195797325e-16,
+            1.0800001621246338,
+            -1.4901161193847656e-08,
+            -0.10847027599811554
+          ],
+          [
+            -1.7867651802561113e-16,
+            -4.470348358154297e-08,
+            1.0800001621246338,
+            1.4489489793777466
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "Eye_L_Iris": {
+        "vertices": 97,
+        "faces": 96,
+        "geometry": "6345b4a2c99cea22931d852d61a06b6987cf045b5f5ebc022bb5cd7cd64b001c",
+        "topology": "bbd2d8c24ed75a93bb802d0bb1b436206a1f00a7c08b6e4befe63414e605a383",
+        "materials": [
+          "Aevrynd_Eye_Iris"
+        ],
+        "matrix": [
+          [
+            1.0800000429153442,
+            2.3592239273284576e-16,
+            3.0357660829594124e-16,
+            0.028152434155344963
+          ],
+          [
+            3.191891195797325e-16,
+            1.0800001621246338,
+            -1.4901161193847656e-08,
+            -0.12239634245634079
+          ],
+          [
+            -1.7867651802561113e-16,
+            -4.470348358154297e-08,
+            1.0800001621246338,
+            1.4489485025405884
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "Eye_R_Sclera": {
+        "vertices": 1986,
+        "faces": 2048,
+        "geometry": "fec5e690e8612e3fc5f90d141abe7589d6e3ba9090b62be98b01e198d267baf9",
+        "topology": "f6532837f8c944ba9537bb81ffdfe85433012995096b6a51079ec9f5b123d3fd",
+        "materials": [
+          "Aevrynd_Eye_Sclera"
+        ],
+        "matrix": [
+          [
+            1.0800000429153442,
+            2.3592239273284576e-16,
+            3.0357660829594124e-16,
+            -0.02815314196050167
+          ],
+          [
+            3.191891195797325e-16,
+            1.0800001621246338,
+            -1.4901161193847656e-08,
+            -0.10871328413486481
+          ],
+          [
+            -1.7867651802561113e-16,
+            -4.470348358154297e-08,
+            1.0800001621246338,
+            1.4489487409591675
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "Eye_R_Cornea": {
+        "vertices": 1986,
+        "faces": 2048,
+        "geometry": "92b04d256e0be0cc56406aef0ba4a44b2acce77de7433f921a09570bf052b057",
+        "topology": "69a41402df5dadc0dc674594aea5ff08c075595025fb0a9ad1aaecafd8ea5793",
+        "materials": [
+          "Aevrynd_Eye_Cornea"
+        ],
+        "matrix": [
+          [
+            1.0800000429153442,
+            2.3592239273284576e-16,
+            3.0357660829594124e-16,
+            -0.02815314196050167
+          ],
+          [
+            3.191891195797325e-16,
+            1.0800001621246338,
+            -1.4901161193847656e-08,
+            -0.10847027599811554
+          ],
+          [
+            -1.7867651802561113e-16,
+            -4.470348358154297e-08,
+            1.0800001621246338,
+            1.4489489793777466
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "Eye_R_Iris": {
+        "vertices": 97,
+        "faces": 96,
+        "geometry": "3f1fcdc8aaf666ce0e7eb1660490abb46302504ca7a96c676508136c1b4f699a",
+        "topology": "bbd2d8c24ed75a93bb802d0bb1b436206a1f00a7c08b6e4befe63414e605a383",
+        "materials": [
+          "Aevrynd_Eye_Iris"
+        ],
+        "matrix": [
+          [
+            1.0800000429153442,
+            2.3592239273284576e-16,
+            3.0357660829594124e-16,
+            -0.028153184801340103
+          ],
+          [
+            3.191891195797325e-16,
+            1.0800001621246338,
+            -1.4901161193847656e-08,
+            -0.12239714711904526
+          ],
+          [
+            -1.7867651802561113e-16,
+            -4.470348358154297e-08,
+            1.0800001621246338,
+            1.4489483833312988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "objectCount": 27
+  },
+  "candidateSummary": {
+    "bodyGeometry": "b000f10b6a23b7951d2c5f8bd0bd49888b90c9f4d7f52af182db8789de19dcde",
+    "bodyWeights": "693beff48a0b16e89f5530d5138395d30862b867ad7e87b69a547e89aa58c82f",
+    "bodyShapeKeys": [
+      "Basis",
+      "$md-$as-$fe-$ch",
+      "$md-$as-$fe-$yn",
+      "$md-$as-$ma-$yn",
+      "$md-$ca-$fe-$ch",
+      "$md-$ca-$fe-$yn",
+      "$md-$ca-$ma-$yn",
+      "$md-$af-$fe-$ch",
+      "$md-$af-$fe-$yn",
+      "$md-$af-$ma-$yn",
+      "$md-universal-$fe-$ch-min$mu-$av$wg",
+      "$md-universal-$fe-$ch-$av$mu-$av$wg",
+      "$md-universal-$fe-$yn-min$mu-$av$wg",
+      "$md-universal-$fe-$yn-$av$mu-min$wg",
+      "$md-universal-$fe-$yn-$av$mu-$av$wg",
+      "$md-universal-$ma-$yn-$av$mu-$av$wg",
+      "$md-$fe-$ch-$av$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+      "$md-$fe-$yn-min$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+      "$md-$fe-$yn-$av$mu-$av$wg-$id$pr",
+      "ElbowCreaseVolume70.L",
+      "ElbowCreaseVolume70.R",
+      "KneeEdgeConstraint75.L",
+      "KneeEdgeConstraint75.R",
+      "KneeCreaseVolume75.L",
+      "KneeCreaseVolume75.R",
+      "Aevrynd_MixedSpaceEyelidRelief_R1000",
+      "Aevrynd_UpperLidOrbitalVolume_R1024",
+      "Aevrynd_PerioralAnatomy_R1030",
+      "Aevrynd_MouthOpenTest_R1030",
+      "Aevrynd_SmileTest_R1030",
+      "Aevrynd_LowerLipRimTurn_R1033"
+    ],
+    "bodyTopology": "528b97c7dfe35a830979eb7fabe9e5cbab4e8e3a111b9796fa9d32781d6587d1",
+    "objects": {
+      "Eye_L_Sclera": {
+        "vertices": 1986,
+        "faces": 2048,
+        "geometry": "d8df37d2e7c3d756b5cc7052235d7da91548ed64299f29849942f63a058dce2d",
+        "topology": "a5b7ee50b067b2ce43b7247576b5f95de85b80d26a6cb09aa0f1cbe341e3f56a",
+        "materials": [
+          "Aevrynd_Eye_Sclera_R1080_0.88"
+        ],
+        "matrix": [
+          [
+            1.0800000429153442,
+            2.3592239273284576e-16,
+            3.0357660829594124e-16,
+            0.028152482584118843
+          ],
+          [
+            3.191891195797325e-16,
+            1.0800001621246338,
+            -1.4901161193847656e-08,
+            -0.10871328413486481
+          ],
+          [
+            -1.7867651802561113e-16,
+            -4.470348358154297e-08,
+            1.0800001621246338,
+            1.4489487409591675
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "Eye_L_Cornea": {
+        "vertices": 1986,
+        "faces": 2048,
+        "geometry": "df1041f2e64b8069e581fa700b684ca69b72500d160fd8807a915976c489233d",
+        "topology": "7747a2563c8d1ac4ca8afe3688ca27a4cd20cc29e8ee661243ac3467492f48d0",
+        "materials": [
+          "Aevrynd_Eye_Cornea_R1080_0.20"
+        ],
+        "matrix": [
+          [
+            1.0800000429153442,
+            2.3592239273284576e-16,
+            3.0357660829594124e-16,
+            0.028152482584118843
+          ],
+          [
+            3.191891195797325e-16,
+            1.0800001621246338,
+            -1.4901161193847656e-08,
+            -0.10847027599811554
+          ],
+          [
+            -1.7867651802561113e-16,
+            -4.470348358154297e-08,
+            1.0800001621246338,
+            1.4489489793777466
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "Eye_L_Iris": {
+        "vertices": 97,
+        "faces": 96,
+        "geometry": "2304fd547c002f87c23756b7f991f08f2111fb343fed3b0318fb09e83dd298e2",
+        "topology": "bbd2d8c24ed75a93bb802d0bb1b436206a1f00a7c08b6e4befe63414e605a383",
+        "materials": [
+          "Aevrynd_Eye_Iris"
+        ],
+        "matrix": [
+          [
+            1.0800000429153442,
+            2.3592239273284576e-16,
+            3.0357660829594124e-16,
+            0.028152434155344963
+          ],
+          [
+            3.191891195797325e-16,
+            1.0800001621246338,
+            -1.4901161193847656e-08,
+            -0.12239634245634079
+          ],
+          [
+            -1.7867651802561113e-16,
+            -4.470348358154297e-08,
+            1.0800001621246338,
+            1.4489485025405884
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "Eye_R_Sclera": {
+        "vertices": 1986,
+        "faces": 2048,
+        "geometry": "fec5e690e8612e3fc5f90d141abe7589d6e3ba9090b62be98b01e198d267baf9",
+        "topology": "f6532837f8c944ba9537bb81ffdfe85433012995096b6a51079ec9f5b123d3fd",
+        "materials": [
+          "Aevrynd_Eye_Sclera_R1080_0.88"
+        ],
+        "matrix": [
+          [
+            1.0800000429153442,
+            2.3592239273284576e-16,
+            3.0357660829594124e-16,
+            -0.02815314196050167
+          ],
+          [
+            3.191891195797325e-16,
+            1.0800001621246338,
+            -1.4901161193847656e-08,
+            -0.10871328413486481
+          ],
+          [
+            -1.7867651802561113e-16,
+            -4.470348358154297e-08,
+            1.0800001621246338,
+            1.4489487409591675
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "Eye_R_Cornea": {
+        "vertices": 1986,
+        "faces": 2048,
+        "geometry": "92b04d256e0be0cc56406aef0ba4a44b2acce77de7433f921a09570bf052b057",
+        "topology": "69a41402df5dadc0dc674594aea5ff08c075595025fb0a9ad1aaecafd8ea5793",
+        "materials": [
+          "Aevrynd_Eye_Cornea_R1080_0.20"
+        ],
+        "matrix": [
+          [
+            1.0800000429153442,
+            2.3592239273284576e-16,
+            3.0357660829594124e-16,
+            -0.02815314196050167
+          ],
+          [
+            3.191891195797325e-16,
+            1.0800001621246338,
+            -1.4901161193847656e-08,
+            -0.10847027599811554
+          ],
+          [
+            -1.7867651802561113e-16,
+            -4.470348358154297e-08,
+            1.0800001621246338,
+            1.4489489793777466
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "Eye_R_Iris": {
+        "vertices": 97,
+        "faces": 96,
+        "geometry": "a962164a4002961ba02b5a1fc14e5966ae19ac316b8c890137e42a2c36a972f8",
+        "topology": "bbd2d8c24ed75a93bb802d0bb1b436206a1f00a7c08b6e4befe63414e605a383",
+        "materials": [
+          "Aevrynd_Eye_Iris"
+        ],
+        "matrix": [
+          [
+            1.0800000429153442,
+            2.3592239273284576e-16,
+            3.0357660829594124e-16,
+            -0.028153184801340103
+          ],
+          [
+            3.191891195797325e-16,
+            1.0800001621246338,
+            -1.4901161193847656e-08,
+            -0.12239714711904526
+          ],
+          [
+            -1.7867651802561113e-16,
+            -4.470348358154297e-08,
+            1.0800001621246338,
+            1.4489483833312988
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "objectCount": 27
+  },
+  "materialAudit": {
+    "cornea": "Aevrynd_Eye_Cornea_R1080_0.20",
+    "surfaceRenderMethod": "BLENDED",
+    "mixFactor": 0.20000000298023224,
+    "links": [
+      "Transparent BSDF.BSDF->Mix Shader.Shader",
+      "Principled BSDF.BSDF->Mix Shader.Shader",
+      "Mix Shader.Shader->Material Output.Surface"
+    ],
+    "sclera": "Aevrynd_Eye_Sclera_R1080_0.88"
+  },
+  "checks": {
+    "bodyGeometryIdentical": true,
+    "bodyWeightsIdentical": true,
+    "bodyTopologyIdentical": true,
+    "bodyShapeKeysIdentical": true,
+    "eyeTopologyIdentical": true,
+    "scleraCorneaGeometryIdentical": true,
+    "irisGeometryChangedPaired": true,
+    "objectMatricesIdentical": true,
+    "objectCountIdentical": true,
+    "materialSlotCountsIdentical": true,
+    "corneaUsesBlendedMix": true,
+    "scleraMultiplierPresent": true
+  },
+  "status": "PASS"
+}

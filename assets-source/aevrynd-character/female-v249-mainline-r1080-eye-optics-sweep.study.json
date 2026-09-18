@@ -1,0 +1,1217 @@
+{
+  "revision": "v249r1080-eye-optics-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-canthus-contour-r1079-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-balanced-eye-optics-r1080-study.blend",
+  "method": "scale the existing owned iris meshes about their centres, recess them along view depth, rotate them on the scleral sphere for subtle convergence, and multiply the existing owned sclera texture inside its current shader",
+  "variants": [
+    {
+      "label": "a-control",
+      "metrics": {
+        "optics": {
+          "L": {
+            "scale": 1.0,
+            "depthMm": 0.0,
+            "convergenceDeg": 0.0,
+            "sizeMm": {
+              "x": 9.649587795138359,
+              "y": 1.706734299659729,
+              "z": 10.233521461486816
+            },
+            "centerWorld": [
+              0.028152757324278355,
+              -0.11859114468097687,
+              1.4489464163780212
+            ]
+          },
+          "R": {
+            "scale": 1.0,
+            "depthMm": 0.0,
+            "convergenceDeg": 0.0,
+            "sizeMm": {
+              "x": 9.55243781208992,
+              "y": 1.7081871628761292,
+              "z": 10.233521461486816
+            },
+            "centerWorld": [
+              -0.028152747079730034,
+              -0.11859114095568657,
+              1.4489464163780212
+            ]
+          }
+        },
+        "sclera": {
+          "factor": 1.0,
+          "material": "Aevrynd_Eye_Sclera",
+          "nodeCount": 3
+        },
+        "cornea": {
+          "factor": null,
+          "material": "Aevrynd_Eye_Cornea",
+          "surfaceLink": "Principled BSDF.BSDF->Material Output.Surface",
+          "nodeCount": 4
+        },
+        "bodyGeometryUnchanged": true,
+        "irisGeometryChanged": {
+          "L": true,
+          "R": true
+        },
+        "objectCount": 27,
+        "materialSlotCounts": {
+          "L": 1,
+          "R": 1
+        }
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\a-control-eye-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\a-control-eye-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\a-control-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\a-control-face-three-quarter.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "b-iris-1.10",
+      "metrics": {
+        "optics": {
+          "L": {
+            "scale": 1.1,
+            "depthMm": 0.0,
+            "convergenceDeg": 0.0,
+            "sizeMm": {
+              "x": 10.61454601585865,
+              "y": 1.706734299659729,
+              "z": 11.256933212280273
+            },
+            "centerWorld": [
+              0.028152688406407833,
+              -0.11859114468097687,
+              1.4489463567733765
+            ]
+          },
+          "R": {
+            "scale": 1.1,
+            "depthMm": 0.0,
+            "convergenceDeg": 0.0,
+            "sizeMm": {
+              "x": 10.507682338356972,
+              "y": 1.7081871628761292,
+              "z": 11.256933212280273
+            },
+            "centerWorld": [
+              -0.02815281506627798,
+              -0.11859114095568657,
+              1.4489463567733765
+            ]
+          }
+        },
+        "sclera": {
+          "factor": 1.0,
+          "material": "Aevrynd_Eye_Sclera",
+          "nodeCount": 3
+        },
+        "cornea": {
+          "factor": null,
+          "material": "Aevrynd_Eye_Cornea",
+          "surfaceLink": "Principled BSDF.BSDF->Material Output.Surface",
+          "nodeCount": 4
+        },
+        "bodyGeometryUnchanged": true,
+        "irisGeometryChanged": {
+          "L": true,
+          "R": true
+        },
+        "objectCount": 27,
+        "materialSlotCounts": {
+          "L": 1,
+          "R": 1
+        }
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\b-iris-1.10-eye-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\b-iris-1.10-eye-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\b-iris-1.10-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\b-iris-1.10-face-three-quarter.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "c-iris-1.16",
+      "metrics": {
+        "optics": {
+          "L": {
+            "scale": 1.16,
+            "depthMm": 0.0,
+            "convergenceDeg": 0.0,
+            "sizeMm": {
+              "x": 11.193523183465004,
+              "y": 1.706734299659729,
+              "z": 11.871099472045898
+            },
+            "centerWorld": [
+              0.02815264742821455,
+              -0.11859114468097687,
+              1.448946237564087
+            ]
+          },
+          "R": {
+            "scale": 1.16,
+            "depthMm": 0.0,
+            "convergenceDeg": 0.0,
+            "sizeMm": {
+              "x": 11.080827564001083,
+              "y": 1.7081871628761292,
+              "z": 11.870861053466797
+            },
+            "centerWorld": [
+              -0.028152858838438988,
+              -0.11859114095568657,
+              1.4489463567733765
+            ]
+          }
+        },
+        "sclera": {
+          "factor": 1.0,
+          "material": "Aevrynd_Eye_Sclera",
+          "nodeCount": 3
+        },
+        "cornea": {
+          "factor": null,
+          "material": "Aevrynd_Eye_Cornea",
+          "surfaceLink": "Principled BSDF.BSDF->Material Output.Surface",
+          "nodeCount": 4
+        },
+        "bodyGeometryUnchanged": true,
+        "irisGeometryChanged": {
+          "L": true,
+          "R": true
+        },
+        "objectCount": 27,
+        "materialSlotCounts": {
+          "L": 1,
+          "R": 1
+        }
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\c-iris-1.16-eye-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\c-iris-1.16-eye-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\c-iris-1.16-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\c-iris-1.16-face-three-quarter.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "d-optical-1.16",
+      "metrics": {
+        "optics": {
+          "L": {
+            "scale": 1.16,
+            "depthMm": 0.08,
+            "convergenceDeg": 0.75,
+            "sizeMm": {
+              "x": 11.19256392121315,
+              "y": 1.7800256609916687,
+              "z": 11.871099472045898
+            },
+            "centerWorld": [
+              0.0280092004686594,
+              -0.11847379431128502,
+              1.448946237564087
+            ]
+          },
+          "R": {
+            "scale": 1.16,
+            "depthMm": 0.08,
+            "convergenceDeg": 0.75,
+            "sizeMm": {
+              "x": 11.079879477620125,
+              "y": 1.7800405621528625,
+              "z": 11.870861053466797
+            },
+            "centerWorld": [
+              -0.028009421192109585,
+              -0.11847376450896263,
+              1.4489463567733765
+            ]
+          }
+        },
+        "sclera": {
+          "factor": 1.0,
+          "material": "Aevrynd_Eye_Sclera",
+          "nodeCount": 3
+        },
+        "cornea": {
+          "factor": null,
+          "material": "Aevrynd_Eye_Cornea",
+          "surfaceLink": "Principled BSDF.BSDF->Material Output.Surface",
+          "nodeCount": 4
+        },
+        "bodyGeometryUnchanged": true,
+        "irisGeometryChanged": {
+          "L": true,
+          "R": true
+        },
+        "objectCount": 27,
+        "materialSlotCounts": {
+          "L": 1,
+          "R": 1
+        }
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\d-optical-1.16-eye-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\d-optical-1.16-eye-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\d-optical-1.16-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\d-optical-1.16-face-three-quarter.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "e-optical-sclera-0.88",
+      "metrics": {
+        "optics": {
+          "L": {
+            "scale": 1.16,
+            "depthMm": 0.08,
+            "convergenceDeg": 0.75,
+            "sizeMm": {
+              "x": 11.19256392121315,
+              "y": 1.7800256609916687,
+              "z": 11.871099472045898
+            },
+            "centerWorld": [
+              0.0280092004686594,
+              -0.11847379431128502,
+              1.448946237564087
+            ]
+          },
+          "R": {
+            "scale": 1.16,
+            "depthMm": 0.08,
+            "convergenceDeg": 0.75,
+            "sizeMm": {
+              "x": 11.079879477620125,
+              "y": 1.7800405621528625,
+              "z": 11.870861053466797
+            },
+            "centerWorld": [
+              -0.028009421192109585,
+              -0.11847376450896263,
+              1.4489463567733765
+            ]
+          }
+        },
+        "sclera": {
+          "factor": 0.88,
+          "material": "Aevrynd_Eye_Sclera_R1080_0.88",
+          "nodeCount": 4
+        },
+        "cornea": {
+          "factor": null,
+          "material": "Aevrynd_Eye_Cornea",
+          "surfaceLink": "Principled BSDF.BSDF->Material Output.Surface",
+          "nodeCount": 4
+        },
+        "bodyGeometryUnchanged": true,
+        "irisGeometryChanged": {
+          "L": true,
+          "R": true
+        },
+        "objectCount": 27,
+        "materialSlotCounts": {
+          "L": 1,
+          "R": 1
+        }
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\e-optical-sclera-0.88-eye-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\e-optical-sclera-0.88-eye-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\e-optical-sclera-0.88-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\e-optical-sclera-0.88-face-three-quarter.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "f-cornea-0.12",
+      "metrics": {
+        "optics": {
+          "L": {
+            "scale": 1.16,
+            "depthMm": 0.08,
+            "convergenceDeg": 0.75,
+            "sizeMm": {
+              "x": 11.19256392121315,
+              "y": 1.7800256609916687,
+              "z": 11.871099472045898
+            },
+            "centerWorld": [
+              0.0280092004686594,
+              -0.11847379431128502,
+              1.448946237564087
+            ]
+          },
+          "R": {
+            "scale": 1.16,
+            "depthMm": 0.08,
+            "convergenceDeg": 0.75,
+            "sizeMm": {
+              "x": 11.079879477620125,
+              "y": 1.7800405621528625,
+              "z": 11.870861053466797
+            },
+            "centerWorld": [
+              -0.028009421192109585,
+              -0.11847376450896263,
+              1.4489463567733765
+            ]
+          }
+        },
+        "sclera": {
+          "factor": 0.88,
+          "material": "Aevrynd_Eye_Sclera_R1080_0.88",
+          "nodeCount": 4
+        },
+        "cornea": {
+          "factor": 0.12,
+          "material": "Aevrynd_Eye_Cornea_R1080_0.12",
+          "surfaceRenderMethod": "BLENDED",
+          "surfaceLink": "Mix Shader.Shader->Material Output.Surface",
+          "nodeCount": 4
+        },
+        "bodyGeometryUnchanged": true,
+        "irisGeometryChanged": {
+          "L": true,
+          "R": true
+        },
+        "objectCount": 27,
+        "materialSlotCounts": {
+          "L": 1,
+          "R": 1
+        }
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\f-cornea-0.12-eye-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\f-cornea-0.12-eye-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\f-cornea-0.12-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\f-cornea-0.12-face-three-quarter.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "g-cornea-0.20",
+      "metrics": {
+        "optics": {
+          "L": {
+            "scale": 1.16,
+            "depthMm": 0.08,
+            "convergenceDeg": 0.75,
+            "sizeMm": {
+              "x": 11.19256392121315,
+              "y": 1.7800256609916687,
+              "z": 11.871099472045898
+            },
+            "centerWorld": [
+              0.0280092004686594,
+              -0.11847379431128502,
+              1.448946237564087
+            ]
+          },
+          "R": {
+            "scale": 1.16,
+            "depthMm": 0.08,
+            "convergenceDeg": 0.75,
+            "sizeMm": {
+              "x": 11.079879477620125,
+              "y": 1.7800405621528625,
+              "z": 11.870861053466797
+            },
+            "centerWorld": [
+              -0.028009421192109585,
+              -0.11847376450896263,
+              1.4489463567733765
+            ]
+          }
+        },
+        "sclera": {
+          "factor": 0.88,
+          "material": "Aevrynd_Eye_Sclera_R1080_0.88",
+          "nodeCount": 4
+        },
+        "cornea": {
+          "factor": 0.2,
+          "material": "Aevrynd_Eye_Cornea_R1080_0.20",
+          "surfaceRenderMethod": "BLENDED",
+          "surfaceLink": "Mix Shader.Shader->Material Output.Surface",
+          "nodeCount": 4
+        },
+        "bodyGeometryUnchanged": true,
+        "irisGeometryChanged": {
+          "L": true,
+          "R": true
+        },
+        "objectCount": 27,
+        "materialSlotCounts": {
+          "L": 1,
+          "R": 1
+        }
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\g-cornea-0.20-eye-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\g-cornea-0.20-eye-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\g-cornea-0.20-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\g-cornea-0.20-face-three-quarter.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "h-cornea-0.30",
+      "metrics": {
+        "optics": {
+          "L": {
+            "scale": 1.16,
+            "depthMm": 0.08,
+            "convergenceDeg": 0.75,
+            "sizeMm": {
+              "x": 11.19256392121315,
+              "y": 1.7800256609916687,
+              "z": 11.871099472045898
+            },
+            "centerWorld": [
+              0.0280092004686594,
+              -0.11847379431128502,
+              1.448946237564087
+            ]
+          },
+          "R": {
+            "scale": 1.16,
+            "depthMm": 0.08,
+            "convergenceDeg": 0.75,
+            "sizeMm": {
+              "x": 11.079879477620125,
+              "y": 1.7800405621528625,
+              "z": 11.870861053466797
+            },
+            "centerWorld": [
+              -0.028009421192109585,
+              -0.11847376450896263,
+              1.4489463567733765
+            ]
+          }
+        },
+        "sclera": {
+          "factor": 0.88,
+          "material": "Aevrynd_Eye_Sclera_R1080_0.88",
+          "nodeCount": 4
+        },
+        "cornea": {
+          "factor": 0.3,
+          "material": "Aevrynd_Eye_Cornea_R1080_0.30",
+          "surfaceRenderMethod": "BLENDED",
+          "surfaceLink": "Mix Shader.Shader->Material Output.Surface",
+          "nodeCount": 4
+        },
+        "bodyGeometryUnchanged": true,
+        "irisGeometryChanged": {
+          "L": true,
+          "R": true
+        },
+        "objectCount": 27,
+        "materialSlotCounts": {
+          "L": 1,
+          "R": 1
+        }
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\h-cornea-0.30-eye-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\h-cornea-0.30-eye-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\h-cornea-0.30-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\h-cornea-0.30-face-three-quarter.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "i-strong-1.20",
+      "metrics": {
+        "optics": {
+          "L": {
+            "scale": 1.2,
+            "depthMm": 0.1,
+            "convergenceDeg": 1.0,
+            "sizeMm": {
+              "x": 11.57774031162262,
+              "y": 1.80777907371521,
+              "z": 12.28022575378418
+            },
+            "centerWorld": [
+              0.02796170860528946,
+              -0.1184392124414444,
+              1.448946237564087
+            ]
+          },
+          "R": {
+            "scale": 1.2,
+            "depthMm": 0.1,
+            "convergenceDeg": 1.0,
+            "sizeMm": {
+              "x": 11.461185291409492,
+              "y": 1.8072277307510376,
+              "z": 12.28022575378418
+            },
+            "centerWorld": [
+              -0.027961990796029568,
+              -0.11843917518854141,
+              1.448946237564087
+            ]
+          }
+        },
+        "sclera": {
+          "factor": 0.84,
+          "material": "Aevrynd_Eye_Sclera_R1080_0.84",
+          "nodeCount": 4
+        },
+        "cornea": {
+          "factor": 0.2,
+          "material": "Aevrynd_Eye_Cornea_R1080_0.20",
+          "surfaceRenderMethod": "BLENDED",
+          "surfaceLink": "Mix Shader.Shader->Material Output.Surface",
+          "nodeCount": 4
+        },
+        "bodyGeometryUnchanged": true,
+        "irisGeometryChanged": {
+          "L": true,
+          "R": true
+        },
+        "objectCount": 27,
+        "materialSlotCounts": {
+          "L": 1,
+          "R": 1
+        }
+      },
+      "collisionFrames": {
+        "1": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "20": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "33": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        },
+        "61": {
+          "L": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          },
+          "R": {
+            "Sclera": 0,
+            "Cornea": 0,
+            "Iris": 0,
+            "UpperLashes": 0,
+            "LowerLashes": 0
+          }
+        }
+      },
+      "collisionFailures": [],
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\i-strong-1.20-eye-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\i-strong-1.20-eye-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\i-strong-1.20-face-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1080-eye-optics\\i-strong-1.20-face-three-quarter.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    }
+  ],
+  "selectedVariant": "g-cornea-0.20",
+  "topologyChanged": false,
+  "newObjects": 0,
+  "materialSlotDelta": 0,
+  "websitePromotionApproved": false,
+  "candidateStatus": "LOCAL_EYE_OPTICS_PASS_VISUAL_MATERIAL_GAIN",
+  "strictEyesAndEyelidsScore100": 44,
+  "strictFullHeadScore100": 41,
+  "visualAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1080-eye-optics.visual-audit.json",
+  "invariantAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1080-eye-optics.invariant-audit.json",
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1080-eye-optics.collision-audit.json",
+  "isolationRender": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1080-eye-layer-isolation.render.json",
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1080-eye-optics\\contact-sheet-r1080.jpg",
+  "collisionStatus": "PASS",
+  "invariantStatus": "PASS",
+  "performanceStatus": "PASS_NO_OBJECT_TOPOLOGY_MATERIAL_SLOT_OR_DRAW_CALL_DELTA_ONE_SCLERA_SHADER_NODE_AND_EXISTING_CORNEA_MIX_REWIRED",
+  "finding": "The selected 1.16 iris reaches 11.19 x 11.87 mm, is recessed 0.08 mm and converged 0.75 degrees. The 0.88 warm sclera multiplier plus larger iris reduce the fixed bright-sclera proxy 31.20%. Reconnecting the existing cornea Mix at 0.20 with blended transparency reduces lower-eye cornea artifact pixels above 20 RGB delta from 18,242 to zero. Body, sclera/cornea geometry, eye topology, object count, material slots and draw calls remain unchanged; all collision gates pass."
+}
