@@ -1,0 +1,24 @@
+{
+  "revision": "v249r1102-lower-wetline",
+  "source": "aevrynd-female-cc0-anatomical-caruncle-r1101-study.blend",
+  "selectedVariant": "b-natural",
+  "strictScore": 48,
+  "scoreDelta": 1,
+  "categoryScores": {
+    "eyeAndEyelids": 48,
+    "faceStructure": 39,
+    "skinResponse": 45,
+    "hair": 35,
+    "collisionIntegrity": 100
+  },
+  "findings": [
+    "An independent owned lower tear-meniscus layer now follows the central lower-lid arc instead of baking a highlight into skin or sclera materials.",
+    "The selected ribbon uses 19 path samples and 18 quads per eye at a restrained 0.12 mm width.",
+    "A body-surface ray projection and 0.60 mm forward clearance prevent the ribbon from cutting through the curved lower lid.",
+    "Frames 1, 20, 33 and 61 record zero intersections with body, sclera, cornea, iris, upper lashes and lower lashes.",
+    "The 0.17 mm visible variant was rejected because it intersected upper lashes at both eyes.",
+    "The selected wet line gives a subtle continuous lower-lid reflection without reading as cosmetic eyeliner."
+  ],
+  "status": "INCREMENTAL_PASS",
+  "websitePromotionApproved": false
+}
