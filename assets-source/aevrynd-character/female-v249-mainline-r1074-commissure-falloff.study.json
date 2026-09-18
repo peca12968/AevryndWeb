@@ -1,0 +1,283 @@
+{
+  "revision": "v249r1074-commissure-falloff",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-exact-edge-support-r1068-study.blend",
+  "inspection": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1070-visible-support-faces.inspect.json",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-commissure-falloff-r1074-study.blend",
+  "method": "preserve the r1073 colour-free optical response and sweep only polyline endpoint extension plus a small endpoint-local radius gain",
+  "rayPolylinePoints": [
+    [
+      -0.01980811171233654,
+      -0.12684988975524902,
+      1.3863718509674072
+    ],
+    [
+      -0.018282059580087662,
+      -0.12777552008628845,
+      1.3864593505859375
+    ],
+    [
+      -0.016807494685053825,
+      -0.12793272733688354,
+      1.386827826499939
+    ],
+    [
+      -0.006417515221983194,
+      -0.1342427134513855,
+      1.3872735500335693
+    ],
+    [
+      -0.004980815574526787,
+      -0.1344013512134552,
+      1.387060523033142
+    ],
+    [
+      -0.0035518386866897345,
+      -0.1340407431125641,
+      1.386912226676941
+    ],
+    [
+      -0.0021145553328096867,
+      -0.13435021042823792,
+      1.3867731094360352
+    ],
+    [
+      -0.0006808588514104486,
+      -0.13439461588859558,
+      1.386702060699463
+    ],
+    [
+      0.0007524986285716295,
+      -0.13440623879432678,
+      1.386702299118042
+    ],
+    [
+      0.002185983583331108,
+      -0.13438421487808228,
+      1.3867735862731934
+    ],
+    [
+      0.003621546318754554,
+      -0.1342082917690277,
+      1.386914610862732
+    ],
+    [
+      0.005050112027674913,
+      -0.13453999161720276,
+      1.387062430381775
+    ],
+    [
+      0.006489540915936232,
+      -0.13422784209251404,
+      1.3872734308242798
+    ],
+    [
+      0.015364700928330421,
+      -0.1289348602294922,
+      1.3870607614517212
+    ],
+    [
+      0.016888419166207314,
+      -0.1277950406074524,
+      1.3868260383605957
+    ],
+    [
+      0.01835974119603634,
+      -0.1277029812335968,
+      1.386458158493042
+    ],
+    [
+      0.019857292994856834,
+      -0.12722188234329224,
+      1.3863041400909424
+    ]
+  ],
+  "variants": [
+    {
+      "label": "a-control",
+      "metrics": {
+        "baseRadiusMm": 0.0,
+        "strength": 0.0,
+        "endpointExtensionMm": 0.0,
+        "endpointRadiusGainMm": -1.6,
+        "positiveVertices": 0,
+        "aboveHalfVertices": 0,
+        "maximumWeight": 0.0,
+        "minimumVertexDistanceMm": 1000.0,
+        "material": "Aevrynd_CC0_OwnedSkin_R1031_a-soft-warm",
+        "shaderNodesBefore": 12,
+        "shaderNodesAfter": 12,
+        "shapeKeys": 35,
+        "vertices": 13817,
+        "faces": 13753,
+        "materialSlots": 3,
+        "geometryDigestBefore": "b2d00468819d86b1dda7ff166e21af772cfa11d4ff444cc6803a4951a373d5c5",
+        "geometryDigestAfter": "b2d00468819d86b1dda7ff166e21af772cfa11d4ff444cc6803a4951a373d5c5",
+        "weightDigestBefore": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c",
+        "weightDigestAfter": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c"
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\a-control-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\a-control-neutral-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\a-control-open.png"
+      ]
+    },
+    {
+      "label": "b-r1073-baseline",
+      "metrics": {
+        "baseRadiusMm": 1.6,
+        "strength": 0.8,
+        "endpointExtensionMm": 0.0,
+        "endpointRadiusGainMm": 0.0,
+        "positiveVertices": 242,
+        "aboveHalfVertices": 36,
+        "maximumWeight": 0.7992159729244759,
+        "minimumVertexDistanceMm": 0.029095679154926616,
+        "material": "Aevrynd_CC0_OwnedSkin_R1074_CommissureFalloff",
+        "shaderNodesBefore": 12,
+        "shaderNodesAfter": 17,
+        "shapeKeys": 35,
+        "vertices": 13817,
+        "faces": 13753,
+        "materialSlots": 3,
+        "geometryDigestBefore": "b2d00468819d86b1dda7ff166e21af772cfa11d4ff444cc6803a4951a373d5c5",
+        "geometryDigestAfter": "b2d00468819d86b1dda7ff166e21af772cfa11d4ff444cc6803a4951a373d5c5",
+        "weightDigestBefore": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c",
+        "weightDigestAfter": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c"
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\b-r1073-baseline-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\b-r1073-baseline-neutral-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\b-r1073-baseline-open.png"
+      ]
+    },
+    {
+      "label": "c-extend-2.50",
+      "metrics": {
+        "baseRadiusMm": 1.6,
+        "strength": 0.8,
+        "endpointExtensionMm": 2.5,
+        "endpointRadiusGainMm": 0.0,
+        "positiveVertices": 251,
+        "aboveHalfVertices": 39,
+        "maximumWeight": 0.7992159729244759,
+        "minimumVertexDistanceMm": 0.029095679154926616,
+        "material": "Aevrynd_CC0_OwnedSkin_R1074_CommissureFalloff",
+        "shaderNodesBefore": 12,
+        "shaderNodesAfter": 17,
+        "shapeKeys": 35,
+        "vertices": 13817,
+        "faces": 13753,
+        "materialSlots": 3,
+        "geometryDigestBefore": "b2d00468819d86b1dda7ff166e21af772cfa11d4ff444cc6803a4951a373d5c5",
+        "geometryDigestAfter": "b2d00468819d86b1dda7ff166e21af772cfa11d4ff444cc6803a4951a373d5c5",
+        "weightDigestBefore": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c",
+        "weightDigestAfter": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c"
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\c-extend-2.50-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\c-extend-2.50-neutral-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\c-extend-2.50-open.png"
+      ]
+    },
+    {
+      "label": "d-extend-2.50-radius-0.20",
+      "metrics": {
+        "baseRadiusMm": 1.6,
+        "strength": 0.8,
+        "endpointExtensionMm": 2.5,
+        "endpointRadiusGainMm": 0.2,
+        "positiveVertices": 268,
+        "aboveHalfVertices": 52,
+        "maximumWeight": 0.7993481959644976,
+        "minimumVertexDistanceMm": 0.029095679154926616,
+        "material": "Aevrynd_CC0_OwnedSkin_R1074_CommissureFalloff",
+        "shaderNodesBefore": 12,
+        "shaderNodesAfter": 17,
+        "shapeKeys": 35,
+        "vertices": 13817,
+        "faces": 13753,
+        "materialSlots": 3,
+        "geometryDigestBefore": "b2d00468819d86b1dda7ff166e21af772cfa11d4ff444cc6803a4951a373d5c5",
+        "geometryDigestAfter": "b2d00468819d86b1dda7ff166e21af772cfa11d4ff444cc6803a4951a373d5c5",
+        "weightDigestBefore": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c",
+        "weightDigestAfter": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c"
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\d-extend-2.50-radius-0.20-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\d-extend-2.50-radius-0.20-neutral-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\d-extend-2.50-radius-0.20-open.png"
+      ]
+    },
+    {
+      "label": "e-extend-2.50-radius-0.40",
+      "metrics": {
+        "baseRadiusMm": 1.6,
+        "strength": 0.8,
+        "endpointExtensionMm": 2.5,
+        "endpointRadiusGainMm": 0.4,
+        "positiveVertices": 282,
+        "aboveHalfVertices": 59,
+        "maximumWeight": 0.7994495879209256,
+        "minimumVertexDistanceMm": 0.029095679154926616,
+        "material": "Aevrynd_CC0_OwnedSkin_R1074_CommissureFalloff",
+        "shaderNodesBefore": 12,
+        "shaderNodesAfter": 17,
+        "shapeKeys": 35,
+        "vertices": 13817,
+        "faces": 13753,
+        "materialSlots": 3,
+        "geometryDigestBefore": "b2d00468819d86b1dda7ff166e21af772cfa11d4ff444cc6803a4951a373d5c5",
+        "geometryDigestAfter": "b2d00468819d86b1dda7ff166e21af772cfa11d4ff444cc6803a4951a373d5c5",
+        "weightDigestBefore": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c",
+        "weightDigestAfter": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c"
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\e-extend-2.50-radius-0.40-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\e-extend-2.50-radius-0.40-neutral-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\e-extend-2.50-radius-0.40-open.png"
+      ]
+    },
+    {
+      "label": "f-extend-2.50-radius-0.60",
+      "metrics": {
+        "baseRadiusMm": 1.6,
+        "strength": 0.8,
+        "endpointExtensionMm": 2.5,
+        "endpointRadiusGainMm": 0.6,
+        "positiveVertices": 292,
+        "aboveHalfVertices": 75,
+        "maximumWeight": 0.7995290388915163,
+        "minimumVertexDistanceMm": 0.029095679154926616,
+        "material": "Aevrynd_CC0_OwnedSkin_R1074_CommissureFalloff",
+        "shaderNodesBefore": 12,
+        "shaderNodesAfter": 17,
+        "shapeKeys": 35,
+        "vertices": 13817,
+        "faces": 13753,
+        "materialSlots": 3,
+        "geometryDigestBefore": "b2d00468819d86b1dda7ff166e21af772cfa11d4ff444cc6803a4951a373d5c5",
+        "geometryDigestAfter": "b2d00468819d86b1dda7ff166e21af772cfa11d4ff444cc6803a4951a373d5c5",
+        "weightDigestBefore": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c",
+        "weightDigestAfter": "307fa5e330907304dbdcd2f00153c369cc9a936a2c1ef11c666e67ba39959b8c"
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\f-extend-2.50-radius-0.60-neutral-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\f-extend-2.50-radius-0.60-neutral-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1074-commissure-falloff\\f-extend-2.50-radius-0.60-open.png"
+      ]
+    }
+  ],
+  "selectedVariant": "e-extend-2.50-radius-0.40",
+  "topologyChanged": false,
+  "materialSlotDelta": 0,
+  "websitePromotionApproved": false,
+  "candidateStatus": "LOCAL_COMMISSURE_TECHNICAL_PASS_VISUAL_PARTIAL",
+  "strictMouthScore100": 43,
+  "toneAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1074-commissure-falloff.tone-audit.json",
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1074-commissure-falloff\\contact-sheet-r1074.jpg",
+  "geometryAndWeightsIdentical": true,
+  "collisionStatus": "INHERITED_R1068_PASS_GEOMETRY_AND_WEIGHTS_BIT_IDENTICAL",
+  "collisionAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1068-exact-edge-support.collision-audit.json",
+  "performanceStatus": "NO_TOPOLOGY_OR_MATERIAL_SLOT_DELTA; same single point attribute and five shader nodes as r1073; no extra draw call",
+  "finding": "A 2.50 mm endpoint extension plus 0.40 mm endpoint-local radius gain preserves the r1073 central response and lowers the measured right commissure residual by 11.00/255 front and 11.00/255 open. The 0.60 mm sweep over-darkens the endpoint and is rejected."
+}

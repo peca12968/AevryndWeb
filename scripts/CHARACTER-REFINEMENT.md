@@ -1704,3 +1704,7 @@ Blender 可用於資產多角度渲染檢查；離線渲染與網站的 Three.js
 - Fixed left-cheek, right-cheek and upper-face crops remain unchanged. All 35 shape keys, geometry and deform-weight hashes remain identical to collision-qualified r1068.
 - Strict mouth quality rises from 40 to 42/100. The central chalk-white line now reads as a subdued grey-brown inner edge, while pale residuals remain at the commissures. r1073 is a local optical technical candidate; website v83 remains unchanged.
 - r1074 must measure the remaining front/oblique/open brightness by horizontal position and reshape only the left/right endpoint falloff while preserving r1073's central colour-free response.
+
+### v249r1074 commissure falloff
+- Selected a 2.50 mm endpoint extension with a 0.40 mm endpoint-local radius gain; it lowers the measured right commissure residual by 11/255 in front and open renders without changing the central rim.
+- Rejected the 0.60 mm sweep because it over-darkens the endpoint below the central response. Geometry, all 35 shape keys, weights, topology, material slots and draw calls are unchanged; collision status inherits the bit-identical r1068 pass. Website v83 remains unchanged.

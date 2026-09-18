@@ -1,0 +1,525 @@
+{
+  "revision": "v249r1074-commissure-falloff-tone-audit",
+  "study": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1074-commissure-falloff.study.json",
+  "control": "a-control",
+  "baseline": "b-r1073-baseline",
+  "selected": "e-extend-2.50-radius-0.40",
+  "cropsPixels": {
+    "centralRim": [
+      460,
+      336,
+      640,
+      365
+    ],
+    "mouth": [
+      220,
+      315,
+      881,
+      430
+    ],
+    "leftCheek": [
+      80,
+      200,
+      240,
+      500
+    ],
+    "rightCheek": [
+      860,
+      200,
+      1020,
+      500
+    ],
+    "upperFace": [
+      300,
+      40,
+      800,
+      250
+    ]
+  },
+  "targetPixels": {
+    "neutral-front": [
+      818,
+      356
+    ],
+    "open": [
+      817,
+      367
+    ]
+  },
+  "variantMetrics": {
+    "a-control": {
+      "neutral-front": {
+        "mouth": {
+          "meanLuminance255": 154.57460021972656,
+          "p99Luminance255": 202.0,
+          "maximumLuminance255": 222.0
+        },
+        "centralRim": {
+          "meanLuminance255": 133.5024871826172,
+          "p99Luminance255": 218.0,
+          "maximumLuminance255": 222.0
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.7005810141563416
+      },
+      "neutral-oblique": {
+        "mouth": {
+          "meanLuminance255": 152.87066650390625,
+          "p99Luminance255": 197.3333282470703,
+          "maximumLuminance255": 216.6666717529297
+        },
+        "centralRim": {
+          "meanLuminance255": 142.11488342285156,
+          "p99Luminance255": 195.9366912841797,
+          "maximumLuminance255": 203.0
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.4456138014793396
+      },
+      "open": {
+        "mouth": {
+          "meanLuminance255": 152.07766723632812,
+          "p99Luminance255": 199.3333282470703,
+          "maximumLuminance255": 221.3333282470703
+        },
+        "centralRim": {
+          "meanLuminance255": 102.0466079711914,
+          "p99Luminance255": 217.6666717529297,
+          "maximumLuminance255": 221.3333282470703
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.6407068967819214
+      }
+    },
+    "b-r1073-baseline": {
+      "neutral-front": {
+        "mouth": {
+          "meanLuminance255": 153.9119873046875,
+          "p99Luminance255": 195.6666717529297,
+          "maximumLuminance255": 197.6666717529297
+        },
+        "centralRim": {
+          "meanLuminance255": 129.8202362060547,
+          "p99Luminance255": 187.60336303710938,
+          "maximumLuminance255": 190.3333282470703
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.0
+      },
+      "neutral-oblique": {
+        "mouth": {
+          "meanLuminance255": 152.48678588867188,
+          "p99Luminance255": 196.6666717529297,
+          "maximumLuminance255": 199.0
+        },
+        "centralRim": {
+          "meanLuminance255": 140.9986572265625,
+          "p99Luminance255": 185.3333282470703,
+          "maximumLuminance255": 186.3333282470703
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.0
+      },
+      "open": {
+        "mouth": {
+          "meanLuminance255": 151.484130859375,
+          "p99Luminance255": 195.6666717529297,
+          "maximumLuminance255": 198.6666717529297
+        },
+        "centralRim": {
+          "meanLuminance255": 99.12783813476562,
+          "p99Luminance255": 187.6666717529297,
+          "maximumLuminance255": 192.0
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.0
+      }
+    },
+    "c-extend-2.50": {
+      "neutral-front": {
+        "mouth": {
+          "meanLuminance255": 153.90786743164062,
+          "p99Luminance255": 195.6666717529297,
+          "maximumLuminance255": 197.3333282470703
+        },
+        "centralRim": {
+          "meanLuminance255": 129.8202362060547,
+          "p99Luminance255": 187.60336303710938,
+          "maximumLuminance255": 190.3333282470703
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.005205112975090742
+      },
+      "neutral-oblique": {
+        "mouth": {
+          "meanLuminance255": 152.48297119140625,
+          "p99Luminance255": 196.6666717529297,
+          "maximumLuminance255": 199.0
+        },
+        "centralRim": {
+          "meanLuminance255": 140.9986572265625,
+          "p99Luminance255": 185.3333282470703,
+          "maximumLuminance255": 186.3333282470703
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.004731522407382727
+      },
+      "open": {
+        "mouth": {
+          "meanLuminance255": 151.47891235351562,
+          "p99Luminance255": 195.6666717529297,
+          "maximumLuminance255": 197.3333282470703
+        },
+        "centralRim": {
+          "meanLuminance255": 99.12783813476562,
+          "p99Luminance255": 187.6666717529297,
+          "maximumLuminance255": 192.0
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.00658641941845417
+      }
+    },
+    "d-extend-2.50-radius-0.20": {
+      "neutral-front": {
+        "mouth": {
+          "meanLuminance255": 153.89598083496094,
+          "p99Luminance255": 195.6666717529297,
+          "maximumLuminance255": 197.3333282470703
+        },
+        "centralRim": {
+          "meanLuminance255": 129.8202362060547,
+          "p99Luminance255": 187.60336303710938,
+          "maximumLuminance255": 190.3333282470703
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.01889977790415287
+      },
+      "neutral-oblique": {
+        "mouth": {
+          "meanLuminance255": 152.4742431640625,
+          "p99Luminance255": 196.6666717529297,
+          "maximumLuminance255": 198.6666717529297
+        },
+        "centralRim": {
+          "meanLuminance255": 140.9986572265625,
+          "p99Luminance255": 185.3333282470703,
+          "maximumLuminance255": 186.3333282470703
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.015659190714359283
+      },
+      "open": {
+        "mouth": {
+          "meanLuminance255": 151.46621704101562,
+          "p99Luminance255": 195.6666717529297,
+          "maximumLuminance255": 197.3333282470703
+        },
+        "centralRim": {
+          "meanLuminance255": 99.12783813476562,
+          "p99Luminance255": 187.6666717529297,
+          "maximumLuminance255": 192.0
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.02175009250640869
+      }
+    },
+    "e-extend-2.50-radius-0.40": {
+      "neutral-front": {
+        "mouth": {
+          "meanLuminance255": 153.88388061523438,
+          "p99Luminance255": 195.6666717529297,
+          "maximumLuminance255": 197.3333282470703
+        },
+        "centralRim": {
+          "meanLuminance255": 129.8202362060547,
+          "p99Luminance255": 187.60336303710938,
+          "maximumLuminance255": 190.3333282470703
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.03340568765997887
+      },
+      "neutral-oblique": {
+        "mouth": {
+          "meanLuminance255": 152.46511840820312,
+          "p99Luminance255": 196.6666717529297,
+          "maximumLuminance255": 198.3333282470703
+        },
+        "centralRim": {
+          "meanLuminance255": 140.9986572265625,
+          "p99Luminance255": 185.3333282470703,
+          "maximumLuminance255": 186.3333282470703
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.027086758986115456
+      },
+      "open": {
+        "mouth": {
+          "meanLuminance255": 151.45144653320312,
+          "p99Luminance255": 195.6666717529297,
+          "maximumLuminance255": 197.0
+        },
+        "centralRim": {
+          "meanLuminance255": 99.12783813476562,
+          "p99Luminance255": 187.6666717529297,
+          "maximumLuminance255": 192.0
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.03890898823738098
+      }
+    },
+    "f-extend-2.50-radius-0.60": {
+      "neutral-front": {
+        "mouth": {
+          "meanLuminance255": 153.87020874023438,
+          "p99Luminance255": 195.6197967529297,
+          "maximumLuminance255": 197.3333282470703
+        },
+        "centralRim": {
+          "meanLuminance255": 129.8202362060547,
+          "p99Luminance255": 187.60336303710938,
+          "maximumLuminance255": 190.3333282470703
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.04974456876516342
+      },
+      "neutral-oblique": {
+        "mouth": {
+          "meanLuminance255": 152.4555206298828,
+          "p99Luminance255": 196.6666717529297,
+          "maximumLuminance255": 198.3333282470703
+        },
+        "centralRim": {
+          "meanLuminance255": 140.99859619140625,
+          "p99Luminance255": 185.3333282470703,
+          "maximumLuminance255": 186.3333282470703
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.039413273334503174
+      },
+      "open": {
+        "mouth": {
+          "meanLuminance255": 151.43414306640625,
+          "p99Luminance255": 195.6666717529297,
+          "maximumLuminance255": 197.0
+        },
+        "centralRim": {
+          "meanLuminance255": 99.12783813476562,
+          "p99Luminance255": 187.6666717529297,
+          "maximumLuminance255": 192.0
+        },
+        "mouthMeanAbsoluteRgbDeltaFromR1073": 0.05970313027501106
+      }
+    }
+  },
+  "targetMetrics": {
+    "neutral-front": {
+      "a-control": {
+        "pixelRgb255": [
+          216.0,
+          212.0,
+          216.0
+        ],
+        "pixelMean255": 214.6666717529297,
+        "localPatchP99Luminance255": 216.6133270263672
+      },
+      "b-r1073-baseline": {
+        "pixelRgb255": [
+          206.0,
+          193.0,
+          194.0
+        ],
+        "pixelMean255": 197.6666717529297,
+        "localPatchP99Luminance255": 188.7466583251953
+      },
+      "c-extend-2.50": {
+        "pixelRgb255": [
+          205.0,
+          191.0,
+          193.0
+        ],
+        "pixelMean255": 196.3333282470703,
+        "localPatchP99Luminance255": 188.55999755859375
+      },
+      "d-extend-2.50-radius-0.20": {
+        "pixelRgb255": [
+          203.0,
+          185.0,
+          186.0
+        ],
+        "pixelMean255": 191.3333282470703,
+        "localPatchP99Luminance255": 187.0933380126953
+      },
+      "e-extend-2.50-radius-0.40": {
+        "pixelRgb255": [
+          201.0,
+          180.0,
+          179.0
+        ],
+        "pixelMean255": 186.6666717529297,
+        "localPatchP99Luminance255": 186.42666625976562
+      },
+      "f-extend-2.50-radius-0.60": {
+        "pixelRgb255": [
+          200.0,
+          176.0,
+          174.0
+        ],
+        "pixelMean255": 183.3333282470703,
+        "localPatchP99Luminance255": 186.0
+      }
+    },
+    "open": {
+      "a-control": {
+        "pixelRgb255": [
+          216.0,
+          212.0,
+          215.0
+        ],
+        "pixelMean255": 214.3333282470703,
+        "localPatchP99Luminance255": 217.27999877929688
+      },
+      "b-r1073-baseline": {
+        "pixelRgb255": [
+          206.0,
+          194.0,
+          196.0
+        ],
+        "pixelMean255": 198.6666717529297,
+        "localPatchP99Luminance255": 191.83999633789062
+      },
+      "c-extend-2.50": {
+        "pixelRgb255": [
+          205.0,
+          192.0,
+          194.0
+        ],
+        "pixelMean255": 197.0,
+        "localPatchP99Luminance255": 190.98666381835938
+      },
+      "d-extend-2.50-radius-0.20": {
+        "pixelRgb255": [
+          203.0,
+          187.0,
+          187.0
+        ],
+        "pixelMean255": 192.3333282470703,
+        "localPatchP99Luminance255": 188.42666625976562
+      },
+      "e-extend-2.50-radius-0.40": {
+        "pixelRgb255": [
+          201.0,
+          181.0,
+          181.0
+        ],
+        "pixelMean255": 187.6666717529297,
+        "localPatchP99Luminance255": 187.6666717529297
+      },
+      "f-extend-2.50-radius-0.60": {
+        "pixelRgb255": [
+          200.0,
+          177.0,
+          176.0
+        ],
+        "pixelMean255": 184.3333282470703,
+        "localPatchP99Luminance255": 187.18666076660156
+      }
+    }
+  },
+  "selectedIsolationFromR1073": {
+    "centralRim": 0.0,
+    "leftCheek": 0.0,
+    "rightCheek": 0.002486111130565405,
+    "upperFace": 0.0
+  },
+  "frontHorizontalBins": [
+    {
+      "xPixels": [
+        220,
+        280
+      ],
+      "r1073P99Luminance255": 183.6666717529297,
+      "selectedP99Luminance255": 183.0,
+      "meanAbsoluteLuminanceDelta255": 0.06368055194616318
+    },
+    {
+      "xPixels": [
+        280,
+        340
+      ],
+      "r1073P99Luminance255": 180.3333282470703,
+      "selectedP99Luminance255": 179.6666717529297,
+      "meanAbsoluteLuminanceDelta255": 0.1084027960896492
+    },
+    {
+      "xPixels": [
+        340,
+        400
+      ],
+      "r1073P99Luminance255": 182.6666717529297,
+      "selectedP99Luminance255": 182.6666717529297,
+      "meanAbsoluteLuminanceDelta255": 0.004791645798832178
+    },
+    {
+      "xPixels": [
+        400,
+        460
+      ],
+      "r1073P99Luminance255": 187.6666717529297,
+      "selectedP99Luminance255": 187.6666717529297,
+      "meanAbsoluteLuminanceDelta255": 6.944338383618742e-05
+    },
+    {
+      "xPixels": [
+        460,
+        520
+      ],
+      "r1073P99Luminance255": 188.3333282470703,
+      "selectedP99Luminance255": 188.3333282470703,
+      "meanAbsoluteLuminanceDelta255": 0.0
+    },
+    {
+      "xPixels": [
+        520,
+        580
+      ],
+      "r1073P99Luminance255": 187.6666717529297,
+      "selectedP99Luminance255": 187.6666717529297,
+      "meanAbsoluteLuminanceDelta255": 0.0
+    },
+    {
+      "xPixels": [
+        580,
+        640
+      ],
+      "r1073P99Luminance255": 190.6666717529297,
+      "selectedP99Luminance255": 190.6666717529297,
+      "meanAbsoluteLuminanceDelta255": 0.0
+    },
+    {
+      "xPixels": [
+        640,
+        700
+      ],
+      "r1073P99Luminance255": 195.6666717529297,
+      "selectedP99Luminance255": 195.6666717529297,
+      "meanAbsoluteLuminanceDelta255": 6.944656342966482e-05
+    },
+    {
+      "xPixels": [
+        700,
+        760
+      ],
+      "r1073P99Luminance255": 196.3333282470703,
+      "selectedP99Luminance255": 196.3333282470703,
+      "meanAbsoluteLuminanceDelta255": 0.0038194386288523674
+    },
+    {
+      "xPixels": [
+        760,
+        820
+      ],
+      "r1073P99Luminance255": 196.0,
+      "selectedP99Luminance255": 196.0,
+      "meanAbsoluteLuminanceDelta255": 0.09763892740011215
+    },
+    {
+      "xPixels": [
+        820,
+        881
+      ],
+      "r1073P99Luminance255": 196.3333282470703,
+      "selectedP99Luminance255": 196.0,
+      "meanAbsoluteLuminanceDelta255": 0.23640714585781097
+    }
+  ],
+  "centralResponseUnchanged": true,
+  "fixedCropIsolationThresholdMeanAbsoluteRgb255": 0.005,
+  "fixedCropIsolationPass": true,
+  "selectedTargetChangeFromR1073": {
+    "neutral-front": -11.0,
+    "open": -11.0
+  }
+}
