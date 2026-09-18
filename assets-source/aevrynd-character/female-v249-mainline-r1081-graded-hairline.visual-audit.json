@@ -1,0 +1,56 @@
+{
+  "revision": "v249r1081-graded-hairline-visual-audit",
+  "control": "a-control",
+  "selected": "c-graded-0.50",
+  "fixedRoiMetrics": {
+    "top": {
+      "a-control": {
+        "roiPixels": 237600,
+        "meanLuminance255": 56.94822692871094,
+        "brightScalpProxyPixels": 19666,
+        "veryBrightPixels": 6021
+      },
+      "c-graded-0.50": {
+        "roiPixels": 237600,
+        "meanLuminance255": 34.70778274536133,
+        "brightScalpProxyPixels": 0,
+        "veryBrightPixels": 0
+      }
+    },
+    "hairline-top": {
+      "a-control": {
+        "roiPixels": 404600,
+        "meanLuminance255": 94.05101013183594,
+        "brightScalpProxyPixels": 124417,
+        "veryBrightPixels": 55983
+      },
+      "c-graded-0.50": {
+        "roiPixels": 404600,
+        "meanLuminance255": 44.62940216064453,
+        "brightScalpProxyPixels": 0,
+        "veryBrightPixels": 0
+      }
+    },
+    "hairline-front": {
+      "a-control": {
+        "roiPixels": 413168,
+        "meanLuminance255": 112.28800964355469,
+        "brightScalpProxyPixels": 158138,
+        "veryBrightPixels": 130566
+      },
+      "c-graded-0.50": {
+        "roiPixels": 413168,
+        "meanLuminance255": 99.38492584228516,
+        "brightScalpProxyPixels": 137091,
+        "veryBrightPixels": 110646
+      }
+    }
+  },
+  "hairlineTopBrightScalpProxyReductionPercent": 100.0,
+  "strictHairlineScoreBefore100": 32,
+  "strictHairlineScoreAfter100": 37,
+  "strictFullHeadScoreBefore100": 41,
+  "strictFullHeadScoreAfter100": 41,
+  "visualFinding": "The selected bound removes the blown wide centre-part proxy and softens the frontal cap edge. Close inspection still shows sparse wire-like transition fibres, while the long groom remains a uniform curtain without validated secondary motion.",
+  "status": "LOCAL_VISUAL_GAIN_HERO_FAIL"
+}

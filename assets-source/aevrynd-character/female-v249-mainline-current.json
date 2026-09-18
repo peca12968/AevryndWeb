@@ -104,10 +104,10 @@
   "latestFoundationCalibratedReview": "reviews/v249r965-support-edge-micro/contact-sheet-r965.jpg; reviews/v249r973-correct-neck-yaw/contact-sheet-r973.jpg",
   "latestFoundationRigReview": "female-v249-mainline-knee-support-edge-r962.review.json",
   "latestFoundationNeckAxisStatus": "R973_PASS_CORRECT_WORLD_VERTICAL_YAW; the prior local-Z validation was visually rejected because it produced side bend. The derived local axis [-0.0000000002,0.998789,0.049197] produces natural 25-degree horizontal yaw and passes all eight dynamic deformation and self-collision frames without neck correctives.",
-  "latestTargetNativeHairTechnicalCandidate": "aevrynd-female-cc0-coherent-clump-waves-r981.blend",
-  "latestTargetNativeHairAudit": "female-v249-mainline-cc0-coherent-clump-waves-r981.collision-audit.json",
-  "latestTargetNativeHairReview": "female-v249-mainline-r978-r988-hair-face-studies.review.json; reviews/v249r978-r988-hair-face-studies/contact-sheet-r981.jpg",
-  "latestTargetNativeHairStatus": "R981_STATIC_COLLISION_PASS_VISUAL_HERO_FAIL_SCORE_59; 72,800 points retain zero static penetration and +1.459mm minimum signed clearance. r982-r984 establish root-pinned motion and correct head-bone binding, but shoulder/neck contact and frayed bob ends fail. r985-r986 hairline/scalp coverage and r987-r988 face-fibre studies are strict visual rejects. Website v83 remains unchanged.",
+  "latestTargetNativeHairTechnicalCandidate": "aevrynd-female-cc0-graded-hairline-r1081-study.blend",
+  "latestTargetNativeHairAudit": "female-v249-mainline-r1081-graded-hairline.audit.json; female-v249-mainline-r1081-graded-hairline.visual-audit.json",
+  "latestTargetNativeHairReview": "reviews/v249r1081-graded-hairline/contact-sheet-r1081.jpg",
+  "latestTargetNativeHairStatus": "R1081_LOCAL_HAIRLINE_TRANSITION_PASS_VISUAL_PARTIAL_SCORE_37; selected 0.50 part pin plus 130 short owned fibres removes the blown wide part proxy and fades the frontal scalp edge. The 73,840-point groom is head-bone bound and maintains at least 1.60mm body clearance at frames 1/20/33/61 with zero penetrating points. It adds 3.57% curves and 1.43% points with no object, material-slot or draw-call increase. Long-hair clump hierarchy and secondary motion remain unqualified; website v83 is unchanged.",
   "latestBrightnessRegressionStatus": "PASS_NO_GLOBAL_DARKENING_R1044; retained-r1033-to-r1044 fixed crops drift by at most 0.000709%. Website v83 remains unchanged and confirmed 5.56% darker in embedded skin base color than committed mainline.",
   "latestTargetNativeDynamicHairStudy": "aevrynd-female-cc0-head-bound-hair-motion-r983.blend; aevrynd-female-cc0-layered-bob-motion-r984.blend",
   "latestTargetNativeDynamicHairStatus": "R983_CORRECT_HEAD_BINDING_MOTION_METRICS_PASS_COLLISION_FAIL; R984_REDUCED_TO_MAX_158_PENETRATING_POINTS_BUT_VISUAL_REJECT. No dynamic candidate is promoted.",
@@ -133,7 +133,7 @@
   "latestOpenEyelidTopologyReference": "aevrynd-female-authoring-v249-mainline-open-topology-physical-skin-r446.blend",
   "latestOpenEyelidTopologyBridgeInspection": "female-v249-mainline-r1010-open-topology-bridge-inspection.json",
   "latestOpenEyelidTopologyStatus": "R1014_B_BALANCED_GUIDE_SELECTED_7P834MM; R1015_VERTEX_AND_30_SHAPE_KEY_COMPATIBILITY_PASS_FRAME1_ZERO_EYE_LASH_OVERLAP_VISUAL_FAIL_NO_INNER_RIM",
-  "nextFaceTopologyWork": "Use r1080 as the eye baseline. Start r1081 on the lowest-scoring hairline/scalp transition: reduce the wide bright center part, soften the hard frontal boundary and add short graded owned fibers while preserving r981 groom collision, motion and performance gates. Do not promote the website asset until full-head review passes.",
+  "nextFaceTopologyWork": "Use r1081 as the local head baseline. Start r1082 on skin response, the lowest strict subsystem at 36/100: add owned regional roughness, pore-scale breakup and restrained colour variation without darkening fixed face crops or increasing material slots. Keep hair motion as a separate collision-qualified workstream.",
   "latestOpenEyelidTopologyResearch": "r1011-r1015 rear-boundary extraction, authored-margin transfer, closed anatomical guide and true-aperture cut",
   "latestOpenEyelidTechnicalStudy": "aevrynd-female-cc0-balanced-open-aperture-r1015-study.blend",
   "latestEyeTopologyResearch": "r1011-r1028 open-aperture/canthus/lash stack; r1078-r1079 physical lid wall and contour; r1080 iris proportion, convergence, sclera value and cornea wiring",
@@ -149,6 +149,6 @@
   "latestMouthMaterialToneAudit": "female-v249-mainline-r1074-commissure-falloff.tone-audit.json",
   "latestMouthTopologyStudy": "aevrynd-female-cc0-commissure-curvature-r1076-study.blend",
   "latestFullHeadScorecard": "female-v249-mainline-r1077-full-head-scorecard.json",
-  "latestFullHeadReview": "reviews/v249r1077-full-head-scorecard/contact-sheet-r1077.jpg",
-  "latestFullHeadStatus": "R1080_STRICT_FULL_HEAD_41_OF_100_HERO_FAIL; eyes/lids improve 39 to 44 through iris proportion, depth, convergence, sclera value and corrected cornea response. Hairline 32 and skin 36 are now the largest blockers; website v83 is unchanged."
+  "latestFullHeadReview": "reviews/v249r1081-graded-hairline/contact-sheet-r1081.jpg",
+  "latestFullHeadStatus": "R1081_STRICT_FULL_HEAD_41_OF_100_HERO_FAIL; hairline/scalp transition improves 32 to 37 by removing the bright wide part and hard frontal cap boundary. Skin remains 36 and is the next blocker; long hair mass and secondary motion remain below production quality. Website v83 is unchanged."
 }

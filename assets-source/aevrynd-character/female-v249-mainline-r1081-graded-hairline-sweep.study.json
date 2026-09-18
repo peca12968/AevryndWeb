@@ -1,0 +1,247 @@
+{
+  "revision": "v249r1081-graded-hairline-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-balanced-eye-optics-r1080-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-graded-hairline-r1081-study.blend",
+  "method": "retain the r981 Curves object, pin early centre-part flow, append short tapered fibers inside the same object, project all points to the inherited 1.6 mm body clearance, and lower the existing scalp material contrast",
+  "variants": [
+    {
+      "label": "a-control",
+      "pinStrength": 0.0,
+      "fiberDensity": 0,
+      "scalpFactor": 1.0,
+      "fadeWidthMm": 0.0,
+      "before": {
+        "curves": 3640,
+        "points": 72800,
+        "objects": 27,
+        "materials": 1
+      },
+      "after": {
+        "curves": 3640,
+        "points": 72800,
+        "objects": 27,
+        "materials": 1
+      },
+      "partFlow": {
+        "changedPoints": 0,
+        "maximumDisplacementM": 0.0
+      },
+      "shortFibers": {
+        "addedCurves": 0,
+        "addedPoints": 0,
+        "eligibleGuides": 0,
+        "lengthRangeM": null
+      },
+      "collisionRepair": {
+        "correctedOperations": 0,
+        "maximumCorrectionM": 0.0,
+        "minimumSignedBeforeRepairM": null
+      },
+      "poseEnvelopeRepair": null,
+      "scalp": {
+        "factor": 1.0,
+        "fadeWidthMm": 0.0,
+        "material": "Aevrynd_TargetScalp_WarmBrown_R976",
+        "nodeCount": 2
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\a-control-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\a-control-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\a-control-back.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\a-control-top.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\a-control-hairline-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\a-control-hairline-top.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "b-part-pin-0.35",
+      "pinStrength": 0.35,
+      "fiberDensity": 0,
+      "scalpFactor": 0.55,
+      "fadeWidthMm": 5.0,
+      "before": {
+        "curves": 3640,
+        "points": 72800,
+        "objects": 27,
+        "materials": 1
+      },
+      "after": {
+        "curves": 3640,
+        "points": 72800,
+        "objects": 27,
+        "materials": 1
+      },
+      "partFlow": {
+        "changedPoints": 12717,
+        "maximumDisplacementM": 0.004147350770555696
+      },
+      "shortFibers": {
+        "addedCurves": 0,
+        "addedPoints": 0,
+        "eligibleGuides": 0,
+        "lengthRangeM": null
+      },
+      "collisionRepair": {
+        "correctedOperations": 17844,
+        "maximumCorrectionM": 0.0028462308767892596,
+        "minimumSignedBeforeRepairM": -0.0012462309969123453
+      },
+      "poseEnvelopeRepair": null,
+      "scalp": {
+        "factor": 0.55,
+        "fadeWidthMm": 5.0,
+        "fadeBoundaryVertices": 101,
+        "fadeTransitionVertices": 99,
+        "roughness": 0.95,
+        "specularIorLevel": 0.05,
+        "material": "Aevrynd_TargetScalp_R1081_0.55",
+        "nodeCount": 6
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\b-part-pin-0.35-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\b-part-pin-0.35-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\b-part-pin-0.35-back.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\b-part-pin-0.35-top.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\b-part-pin-0.35-hairline-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\b-part-pin-0.35-hairline-top.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "c-graded-0.50",
+      "pinStrength": 0.5,
+      "fiberDensity": 1,
+      "scalpFactor": 0.3,
+      "fadeWidthMm": 8.0,
+      "before": {
+        "curves": 3640,
+        "points": 72800,
+        "objects": 27,
+        "materials": 1
+      },
+      "after": {
+        "curves": 3770,
+        "points": 73840,
+        "objects": 27,
+        "materials": 1
+      },
+      "partFlow": {
+        "changedPoints": 12717,
+        "maximumDisplacementM": 0.005924787328857198
+      },
+      "shortFibers": {
+        "addedCurves": 130,
+        "addedPoints": 1040,
+        "eligibleGuides": 130,
+        "lengthRangeM": [
+          0.02500452863603588,
+          0.05198152860650825
+        ]
+      },
+      "collisionRepair": {
+        "correctedOperations": 19779,
+        "maximumCorrectionM": 0.0040372274483548385,
+        "minimumSignedBeforeRepairM": -0.0024372275584028102
+      },
+      "poseEnvelopeRepair": {
+        "frames": [
+          1,
+          20,
+          33,
+          61
+        ],
+        "passes": 4,
+        "correctedOperations": 14681,
+        "maximumCorrectionM": 0.02201189983816174,
+        "minimumSignedBeforeRepairM": -0.02036189998034388
+      },
+      "scalp": {
+        "factor": 0.3,
+        "fadeWidthMm": 8.0,
+        "fadeBoundaryVertices": 101,
+        "fadeTransitionVertices": 174,
+        "roughness": 0.95,
+        "specularIorLevel": 0.05,
+        "material": "Aevrynd_TargetScalp_R1081_0.30",
+        "nodeCount": 6
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\c-graded-0.50-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\c-graded-0.50-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\c-graded-0.50-back.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\c-graded-0.50-top.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\c-graded-0.50-hairline-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\c-graded-0.50-hairline-top.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    },
+    {
+      "label": "d-dense-0.65",
+      "pinStrength": 0.65,
+      "fiberDensity": 2,
+      "scalpFactor": 0.2,
+      "fadeWidthMm": 12.0,
+      "before": {
+        "curves": 3640,
+        "points": 72800,
+        "objects": 27,
+        "materials": 1
+      },
+      "after": {
+        "curves": 3900,
+        "points": 74880,
+        "objects": 27,
+        "materials": 1
+      },
+      "partFlow": {
+        "changedPoints": 12717,
+        "maximumDisplacementM": 0.007702224018735864
+      },
+      "shortFibers": {
+        "addedCurves": 260,
+        "addedPoints": 2080,
+        "eligibleGuides": 130,
+        "lengthRangeM": [
+          0.02500452863603588,
+          0.05198152860650825
+        ]
+      },
+      "collisionRepair": {
+        "correctedOperations": 21724,
+        "maximumCorrectionM": 0.005250885273253441,
+        "minimumSignedBeforeRepairM": -0.0036508852572296746
+      },
+      "poseEnvelopeRepair": null,
+      "scalp": {
+        "factor": 0.2,
+        "fadeWidthMm": 12.0,
+        "fadeBoundaryVertices": 101,
+        "fadeTransitionVertices": 263,
+        "roughness": 0.95,
+        "specularIorLevel": 0.05,
+        "material": "Aevrynd_TargetScalp_R1081_0.20",
+        "nodeCount": 6
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\d-dense-0.65-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\d-dense-0.65-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\d-dense-0.65-back.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\d-dense-0.65-top.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\d-dense-0.65-hairline-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1081-graded-hairline\\d-dense-0.65-hairline-top.png"
+      ],
+      "status": "TECHNICAL_PASS"
+    }
+  ],
+  "selectedVariant": "c-graded-0.50",
+  "newObjects": 0,
+  "materialSlotDelta": 0,
+  "websitePromotionApproved": false,
+  "candidateStatus": "LOCAL_HAIRLINE_TRANSITION_PASS_VISUAL_PARTIAL_STATIC_ONLY",
+  "audit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1081-graded-hairline.audit.json",
+  "visualAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1081-graded-hairline.visual-audit.json",
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1081-graded-hairline\\contact-sheet-r1081.jpg",
+  "strictHairlineScore100": 37,
+  "strictFullHeadScore100": 41
+}
