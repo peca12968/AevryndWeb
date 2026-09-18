@@ -1,0 +1,193 @@
+{
+  "revision": "v249r1121-frontal-clump-coherence-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-right-temple-cleanup-r1120-study.blend",
+  "output": null,
+  "method": "cluster frontal family-0 curves into five bands per side and blend their interiors toward a shared mean flow while preserving roots and endpoints",
+  "variants": [
+    {
+      "label": "a-soft",
+      "strength": 0.35,
+      "edit": {
+        "editedCurves": 645,
+        "editedPoints": 10433,
+        "groupSizes": {
+          "-1:0": 57,
+          "-1:1": 57,
+          "-1:2": 80,
+          "-1:3": 103,
+          "-1:4": 75,
+          "1:0": 42,
+          "1:1": 13,
+          "1:2": 59,
+          "1:3": 125,
+          "1:4": 34
+        },
+        "meanDisplacementM": 0.0020491273787762196,
+        "maximumDisplacementM": 0.023979381166947113
+      },
+      "collisionRepair": {
+        "correctedOperations": 1410,
+        "maximumCorrectionM": 0.01667086168495305
+      },
+      "collisionAudit": {
+        "1": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": -0.008678709929881734,
+          "penetratingPoints": 39,
+          "belowOneMmPoints": 39
+        },
+        "20": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": -0.008914568516047439,
+          "penetratingPoints": 39,
+          "belowOneMmPoints": 48
+        },
+        "33": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": -0.009192866287776269,
+          "penetratingPoints": 39,
+          "belowOneMmPoints": 39
+        },
+        "61": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": -0.00930044736014679,
+          "penetratingPoints": 39,
+          "belowOneMmPoints": 39
+        }
+      },
+      "technicalStatus": "TECHNICAL_FAIL",
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\a-soft-front-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\a-soft-oblique-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\a-soft-hairline-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\a-soft-top-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\a-soft-front-f33.png"
+      ]
+    },
+    {
+      "label": "b-balanced",
+      "strength": 0.6,
+      "edit": {
+        "editedCurves": 645,
+        "editedPoints": 10433,
+        "groupSizes": {
+          "-1:0": 57,
+          "-1:1": 57,
+          "-1:2": 80,
+          "-1:3": 103,
+          "-1:4": 75,
+          "1:0": 42,
+          "1:1": 13,
+          "1:2": 59,
+          "1:3": 125,
+          "1:4": 34
+        },
+        "meanDisplacementM": 0.0035127900452771943,
+        "maximumDisplacementM": 0.04110750522674232
+      },
+      "collisionRepair": {
+        "correctedOperations": 1404,
+        "maximumCorrectionM": 0.02495206167789221
+      },
+      "collisionAudit": {
+        "1": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": -0.008595193679866497,
+          "penetratingPoints": 30,
+          "belowOneMmPoints": 30
+        },
+        "20": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": -0.008969214060925879,
+          "penetratingPoints": 30,
+          "belowOneMmPoints": 39
+        },
+        "33": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": -0.009119522961555049,
+          "penetratingPoints": 30,
+          "belowOneMmPoints": 30
+        },
+        "61": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": -0.009174228103802307,
+          "penetratingPoints": 30,
+          "belowOneMmPoints": 30
+        }
+      },
+      "technicalStatus": "TECHNICAL_FAIL",
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\b-balanced-front-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\b-balanced-oblique-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\b-balanced-hairline-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\b-balanced-top-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\b-balanced-front-f33.png"
+      ]
+    },
+    {
+      "label": "c-strong",
+      "strength": 0.82,
+      "edit": {
+        "editedCurves": 645,
+        "editedPoints": 10433,
+        "groupSizes": {
+          "-1:0": 57,
+          "-1:1": 57,
+          "-1:2": 80,
+          "-1:3": 103,
+          "-1:4": 75,
+          "1:0": 42,
+          "1:1": 13,
+          "1:2": 59,
+          "1:3": 125,
+          "1:4": 34
+        },
+        "meanDisplacementM": 0.004800812889906676,
+        "maximumDisplacementM": 0.05618022577619699
+      },
+      "collisionRepair": {
+        "correctedOperations": 1415,
+        "maximumCorrectionM": 0.02805905027362006
+      },
+      "collisionAudit": {
+        "1": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": -0.008625876398582477,
+          "penetratingPoints": 25,
+          "belowOneMmPoints": 25
+        },
+        "20": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": -0.008836709632305428,
+          "penetratingPoints": 25,
+          "belowOneMmPoints": 34
+        },
+        "33": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": -0.008940556228481,
+          "penetratingPoints": 25,
+          "belowOneMmPoints": 25
+        },
+        "61": {
+          "pointsTested": 104577,
+          "minimumSignedClearanceM": -0.009116616449318826,
+          "penetratingPoints": 25,
+          "belowOneMmPoints": 25
+        }
+      },
+      "technicalStatus": "TECHNICAL_FAIL",
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\c-strong-front-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\c-strong-oblique-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\c-strong-hairline-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\c-strong-top-f01.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\c-strong-front-f33.png"
+      ]
+    }
+  ],
+  "selectedVariant": null,
+  "websitePromotionApproved": false,
+  "candidateStatus": "TECHNICAL_FAIL_VISUAL_REJECTED",
+  "mainlineRemains": "v249r1120-right-temple-cleanup-sweep/b-balanced",
+  "visualDecision": "Reject every strength. Averaging incompatible root-to-end paths creates crown loops, flyaway arcs, and isolated forehead strands while retaining 25 to 39 penetrating points."
+}

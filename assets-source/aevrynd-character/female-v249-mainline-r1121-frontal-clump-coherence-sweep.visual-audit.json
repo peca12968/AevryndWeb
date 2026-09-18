@@ -1,0 +1,61 @@
+{
+  "revision": "v249r1121-frontal-clump-coherence-sweep",
+  "sourceRevision": "v249r1120-right-temple-cleanup-sweep",
+  "strictHairScore": 28,
+  "status": "TECHNICAL_FAIL_VISUAL_REJECTED",
+  "websitePromotionApproved": false,
+  "selectedVariant": null,
+  "technicalEvidence": {
+    "editedCurves": 645,
+    "penetratingPoints": {
+      "a-soft": {
+        "1": 39,
+        "20": 39,
+        "33": 39,
+        "61": 39
+      },
+      "b-balanced": {
+        "1": 30,
+        "20": 30,
+        "33": 30,
+        "61": 30
+      },
+      "c-strong": {
+        "1": 25,
+        "20": 25,
+        "33": 25,
+        "61": 25
+      }
+    },
+    "repairOperations": {
+      "a-soft": 1410,
+      "b-balanced": 1404,
+      "c-strong": 1415
+    }
+  },
+  "visualFailures": [
+    "All variants create visible crown loops and detached flyaway arcs.",
+    "Several averaged paths become isolated strands across the forehead.",
+    "Increasing coherence strength makes the silhouette less plausible.",
+    "Collision repair does not converge to zero penetration."
+  ],
+  "decision": "Reject r1121; retain r1120 b-balanced as the active offline study.",
+  "nextAction": "Build a clean long-bob lower contour by physical topology trimming and controlled terminal taper; do not average incompatible frontal paths.",
+  "renders": [
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\a-soft-front-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\a-soft-oblique-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\a-soft-hairline-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\a-soft-top-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\a-soft-front-f33.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\b-balanced-front-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\b-balanced-oblique-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\b-balanced-hairline-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\b-balanced-top-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\b-balanced-front-f33.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\c-strong-front-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\c-strong-oblique-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\c-strong-hairline-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\c-strong-top-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1121-frontal-clump-coherence-sweep\\c-strong-front-f33.png"
+  ]
+}
