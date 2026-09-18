@@ -1,0 +1,21 @@
+{
+  "revision": "v249r1107-upper-lip-inner-boundary-sweep",
+  "sourceRevision": "v249r1106-lip-surface-balance",
+  "status": "TECHNICAL_PASS_VISUAL_NO_GAIN_DIAGNOSTIC_ONLY",
+  "websitePromotionApproved": false,
+  "selectedVariant": null,
+  "findings": [
+    "The source 142-face boundary remains collision-free in all tested poses and frames.",
+    "Lowering the threshold from 1.38850 m to 1.38842 m adds two donor faces and remains collision-free, but produces no meaningful full-face improvement.",
+    "Lowering the threshold to 1.38836 m adds six donor faces and creates a visible bright central strip.",
+    "A full additional ring reduces the dark aperture but introduces 32 neutral and 123 open-expression body intersections.",
+    "A second ring introduces both body penetration and donor-layer self-intersection."
+  ],
+  "decision": "Retain r1106 as the active offline study and stop extending the neutral donor boundary.",
+  "nextAction": "Create expression-specific upper-lip deformation and a restrained neutral aperture control while preserving the r1106 donor topology and 0.6 mm surface clearance.",
+  "renders": [
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1107-upper-lip-inner-boundary-sweep/a-source-neutral-mouth-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1107-upper-lip-inner-boundary-sweep/c-plus-six-neutral-mouth-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1107-upper-lip-inner-boundary-sweep/d-plus-ten-neutral-mouth-front.png"
+  ]
+}
