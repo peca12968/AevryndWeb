@@ -1,0 +1,41 @@
+{
+  "revision": "v249r1091-scalp-overlay",
+  "reviewStandard": "strict modern game-character close-up review",
+  "scoreOutOf100": 40,
+  "verdict": "FAIL",
+  "websitePromotionApproved": false,
+  "improvements": [
+    "The scalp-projected overlay narrows the crown part without creating the side-wing regression observed in rejected r1090.",
+    "The overlay remains attached at animation frame 21 and introduces no body penetration.",
+    "The posterior center closure inherited from r1089 remains intact."
+  ],
+  "collisionEvidence": {
+    "frames": [1, 20, 21, 33, 61],
+    "newPointSamples": 45360,
+    "penetratingPoints": 0,
+    "minimumSignedClearanceM": 0.0017036599456332624
+  },
+  "familyIsolationFinding": {
+    "family0": "Original r1081 groom; broad center part and low-density sheet structure remain visible.",
+    "family1": "r1087 posterior outer coverage; major looped rear-edge silhouettes originate here.",
+    "family2": "r1087 short hairline density; not the main rear-loop source.",
+    "family3": "r1089 center-back closure; contributes additional rear-edge loops despite 61 early-reversal curves being suppressed.",
+    "family4": "r1091 scalp overlay; narrows the part and does not create the rear loops."
+  },
+  "blockingFindings": [
+    "Families 1 and 3 still form looped rear-edge silhouettes in top view.",
+    "The center part remains wider and more uniform than a believable natural part.",
+    "The long side masses still read as evenly spaced curtains rather than primary and secondary clumps.",
+    "Face-crossing strands remain noisy and the hair material lacks clump-scale tonal variation."
+  ],
+  "nextRequiredPass": "Rebuild family-1 and family-3 terminal routing and tapering, then introduce explicit primary and secondary clump hierarchy.",
+  "reviewRenders": [
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1091-scalp-overlay/r1091-f01-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1091-scalp-overlay/r1091-f01-three-quarter.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1091-scalp-overlay/r1091-f01-back.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1091-scalp-overlay/r1091-f01-top.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1091-scalp-overlay/r1091-f21-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1091-scalp-overlay/r1091-f21-back.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1091-scalp-overlay/r1091-f21-top.png"
+  ]
+}
