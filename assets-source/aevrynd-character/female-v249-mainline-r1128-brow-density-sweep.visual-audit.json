@@ -1,0 +1,34 @@
+{
+  "revision": "v249r1128-brow-density-sweep",
+  "sourceRevision": "v249r1123-rear-contour-sweep",
+  "strictFaceScoreBefore": 40,
+  "strictFaceScoreAfter": 42,
+  "status": "TECHNICAL_PASS_VISUAL_ACCEPTED",
+  "websitePromotionApproved": false,
+  "selectedVariant": "b-balanced",
+  "technicalEvidence": {
+    "material": "Aevrynd_Brow_Density_v39",
+    "selectedAlpha": 0.32,
+    "selectedRoughness": 0.72,
+    "selectedSpecularIORLevel": 0.14,
+    "framesTested": [1, 20, 33, 61],
+    "penetratingVertices": 0,
+    "minimumHairClearanceMm": 0.3823621191259008,
+    "minimumDensityClearanceMm": 0.21815093532495666,
+    "scope": "Brow density material only; skin and scalp hair materials are unchanged."
+  },
+  "visualAssessment": [
+    "The balanced variant restores eyebrow readability at normal face distance without becoming a solid painted strip.",
+    "The soft variant remains too faint, while the defined variant flattens the strand structure into makeup-like blocks.",
+    "The change is deliberately scored as a small facial improvement because eye optics, eyelid anatomy, mouth shape and frontal hair topology remain weak."
+  ],
+  "decision": "Accept b-balanced as the new offline facial-study mainline while retaining r1123 hair geometry and all existing skin values.",
+  "nextAction": "Improve eye optical depth and wetline response without changing global exposure or darkening the skin.",
+  "renders": [
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1128-brow-density-sweep\\b-balanced-portrait-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1128-brow-density-sweep\\b-balanced-face-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1128-brow-density-sweep\\b-balanced-oblique-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1128-brow-density-sweep\\b-balanced-brow-f01.png",
+    "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1128-brow-density-sweep\\b-balanced-face-f33.png"
+  ]
+}
