@@ -1,0 +1,47 @@
+{
+  "revision": "v249r1082-regional-skin-visual-audit",
+  "control": "a-control",
+  "selected": "c-balanced",
+  "fixedRegionMetrics": {
+    "forehead": {
+      "controlMeanLuminance255": 211.4891357421875,
+      "selectedMeanLuminance255": 213.57217407226562,
+      "driftPercent": 0.9849429130554199,
+      "meanAbsoluteRgbDelta255": 2.180795431137085
+    },
+    "leftCheek": {
+      "controlMeanLuminance255": 176.45289611816406,
+      "selectedMeanLuminance255": 177.22190856933594,
+      "driftPercent": 0.43581724166870117,
+      "meanAbsoluteRgbDelta255": 1.2381435632705688
+    },
+    "rightCheek": {
+      "controlMeanLuminance255": 208.3271484375,
+      "selectedMeanLuminance255": 207.40411376953125,
+      "driftPercent": -0.4430711269378662,
+      "meanAbsoluteRgbDelta255": 1.7413579225540161
+    },
+    "nose": {
+      "controlMeanLuminance255": 204.2410125732422,
+      "selectedMeanLuminance255": 203.6410369873047,
+      "driftPercent": -0.2937614917755127,
+      "meanAbsoluteRgbDelta255": 1.2588039636611938
+    },
+    "fullFace": {
+      "controlMeanLuminance255": 190.64784240722656,
+      "selectedMeanLuminance255": 190.80606079101562,
+      "driftPercent": 0.0829935073852539,
+      "meanAbsoluteRgbDelta255": 1.3453691005706787
+    }
+  },
+  "maximumAbsoluteLuminanceDriftPercent": 0.9849429130554199,
+  "luminanceGatePercent": 1.0,
+  "luminanceGateStatus": "PASS",
+  "foreheadLowFrequencyVariationReductionPercent": 13.789206504821777,
+  "strictSkinScoreBefore100": 36,
+  "strictSkinScoreAfter100": 38,
+  "strictFullHeadScoreBefore100": 41,
+  "strictFullHeadScoreAfter100": 42,
+  "visualFinding": "The selected bound reduces the large cloud-like complexion patches and introduces restrained warm/cool and roughness zoning without darkening fixed regions. Pore response remains subtle at head distance, and the broad facial planes still read synthetic, so the result is a local material gain rather than hero skin.",
+  "status": "LOCAL_SKIN_RESPONSE_GAIN_HERO_FAIL"
+}

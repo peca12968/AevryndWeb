@@ -1,0 +1,229 @@
+{
+  "revision": "v249r1082-regional-skin-sweep",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-graded-hairline-r1081-study.blend",
+  "output": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-regional-skin-r1082-study.blend",
+  "method": "preserve the r1074 lip/commissure chain, then add explicit point-domain complexion and regional roughness layers plus a chained second micro-pore normal inside the existing skin material",
+  "variants": [
+    {
+      "label": "a-control",
+      "colorStrength": 0.0,
+      "roughnessStrength": 0.0,
+      "attributes": null,
+      "material": {
+        "material": "Aevrynd_CC0_OwnedSkin_R1074_CommissureFalloff",
+        "nodeCount": 17,
+        "macroMottleScale": 34.0,
+        "macroMottleContrast": 1.0,
+        "fineMottleScale": 34.0,
+        "fineMottleContrast": 0.0,
+        "primaryPoreStrength": 0.045,
+        "microPoreStrength": 0.0,
+        "subsurfaceWeight": 0.045,
+        "subsurfaceScaleM": 0.0045
+      },
+      "before": {
+        "objects": 27,
+        "materialSlots": 3,
+        "vertices": 13997,
+        "faces": 13933,
+        "shapeKeys": 35,
+        "nodes": 17
+      },
+      "after": {
+        "objects": 27,
+        "materialSlots": 3,
+        "vertices": 13997,
+        "faces": 13933,
+        "shapeKeys": 35,
+        "nodes": 17
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\a-control-head-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\a-control-head-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\a-control-skin-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\a-control-skin-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\a-control-skin-opposite.png"
+      ],
+      "status": "VISUAL_REVIEW_REQUIRED"
+    },
+    {
+      "label": "b-restrained",
+      "colorStrength": 0.45,
+      "roughnessStrength": 0.55,
+      "attributes": {
+        "colorMin": [
+          0.9991159105093392,
+          0.9966158030905159,
+          0.9958134498771
+        ],
+        "colorMax": [
+          1.0076492270711068,
+          1.0003644892426395,
+          1.0008512276707058
+        ],
+        "roughnessMin": -0.019223346570143813,
+        "roughnessMax": 0.02543372014193028,
+        "affectedVertices": 5026
+      },
+      "material": {
+        "material": "Aevrynd_CC0_RegionalSkin_R1082_b-restrained",
+        "nodeCount": 26,
+        "macroMottleScale": 34.0,
+        "macroMottleContrast": 0.7,
+        "fineMottleScale": 72.0,
+        "fineMottleContrast": 0.006,
+        "primaryPoreStrength": 0.052,
+        "microPoreStrength": 0.018,
+        "subsurfaceWeight": 0.05,
+        "subsurfaceScaleM": 0.0042
+      },
+      "before": {
+        "objects": 27,
+        "materialSlots": 3,
+        "vertices": 13997,
+        "faces": 13933,
+        "shapeKeys": 35,
+        "nodes": 17
+      },
+      "after": {
+        "objects": 27,
+        "materialSlots": 3,
+        "vertices": 13997,
+        "faces": 13933,
+        "shapeKeys": 35,
+        "nodes": 26
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\b-restrained-head-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\b-restrained-head-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\b-restrained-skin-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\b-restrained-skin-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\b-restrained-skin-opposite.png"
+      ],
+      "status": "VISUAL_REVIEW_REQUIRED"
+    },
+    {
+      "label": "c-balanced",
+      "colorStrength": 0.65,
+      "roughnessStrength": 0.75,
+      "attributes": {
+        "colorMin": [
+          0.9987229818468234,
+          0.9951117155751896,
+          0.9939527609335889
+        ],
+        "colorMax": [
+          1.011048883547154,
+          1.0005264844615904,
+          1.0012295510799083
+        ],
+        "roughnessMin": -0.02621365441383247,
+        "roughnessMax": 0.03468234564808674,
+        "affectedVertices": 5026
+      },
+      "material": {
+        "material": "Aevrynd_CC0_RegionalSkin_R1082_c-balanced",
+        "nodeCount": 26,
+        "macroMottleScale": 34.0,
+        "macroMottleContrast": 0.58,
+        "fineMottleScale": 84.0,
+        "fineMottleContrast": 0.009,
+        "primaryPoreStrength": 0.058,
+        "microPoreStrength": 0.026,
+        "subsurfaceWeight": 0.05,
+        "subsurfaceScaleM": 0.0042
+      },
+      "before": {
+        "objects": 27,
+        "materialSlots": 3,
+        "vertices": 13997,
+        "faces": 13933,
+        "shapeKeys": 35,
+        "nodes": 17
+      },
+      "after": {
+        "objects": 27,
+        "materialSlots": 3,
+        "vertices": 13997,
+        "faces": 13933,
+        "shapeKeys": 35,
+        "nodes": 26
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\c-balanced-head-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\c-balanced-head-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\c-balanced-skin-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\c-balanced-skin-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\c-balanced-skin-opposite.png"
+      ],
+      "status": "VISUAL_REVIEW_REQUIRED"
+    },
+    {
+      "label": "d-strong",
+      "colorStrength": 0.9,
+      "roughnessStrength": 1.0,
+      "attributes": {
+        "colorMin": [
+          0.9982318210186785,
+          0.9932316061810318,
+          0.9916268997541999
+        ],
+        "colorMax": [
+          1.0152984541422134,
+          1.0007289784852789,
+          1.0017024553414116
+        ],
+        "roughnessMin": -0.034951539218443295,
+        "roughnessMax": 0.04624312753078232,
+        "affectedVertices": 5026
+      },
+      "material": {
+        "material": "Aevrynd_CC0_RegionalSkin_R1082_d-strong",
+        "nodeCount": 26,
+        "macroMottleScale": 34.0,
+        "macroMottleContrast": 0.42,
+        "fineMottleScale": 96.0,
+        "fineMottleContrast": 0.013,
+        "primaryPoreStrength": 0.07,
+        "microPoreStrength": 0.038,
+        "subsurfaceWeight": 0.05,
+        "subsurfaceScaleM": 0.0042
+      },
+      "before": {
+        "objects": 27,
+        "materialSlots": 3,
+        "vertices": 13997,
+        "faces": 13933,
+        "shapeKeys": 35,
+        "nodes": 17
+      },
+      "after": {
+        "objects": 27,
+        "materialSlots": 3,
+        "vertices": 13997,
+        "faces": 13933,
+        "shapeKeys": 35,
+        "nodes": 26
+      },
+      "renders": [
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\d-strong-head-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\d-strong-head-three-quarter.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\d-strong-skin-front.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\d-strong-skin-oblique.png",
+        "D:\\Download\\Aevrynd\\Temp\\female-realism\\v249r1082-regional-skin\\d-strong-skin-opposite.png"
+      ],
+      "status": "VISUAL_REVIEW_REQUIRED"
+    }
+  ],
+  "selectedVariant": "c-balanced",
+  "geometryChanged": false,
+  "newObjects": 0,
+  "materialSlotDelta": 0,
+  "websitePromotionApproved": false,
+  "candidateStatus": "LOCAL_REGIONAL_SKIN_PASS_VISUAL_PARTIAL_OFFLINE_ONLY",
+  "audit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1082-regional-skin.audit.json",
+  "visualAudit": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-v249-mainline-r1082-regional-skin.visual-audit.json",
+  "review": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\reviews\\v249r1082-regional-skin\\contact-sheet-r1082.jpg",
+  "strictSkinScore100": 38,
+  "strictFullHeadScore100": 42
+}
