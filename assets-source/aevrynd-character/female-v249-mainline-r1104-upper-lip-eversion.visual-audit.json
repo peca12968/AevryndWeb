@@ -1,0 +1,27 @@
+{
+  "revision": "v249r1104-upper-lip-eversion",
+  "sourceRevision": "v249r1102-lower-wetline",
+  "strictMouthScore": 30,
+  "status": "TECHNICAL_PASS_VISUAL_REJECTED_DIAGNOSTIC_ONLY",
+  "websitePromotionApproved": false,
+  "technicalEvidence": {
+    "sourceNonAdjacentSelfCollisionPairs": 171,
+    "candidateNonAdjacentSelfCollisionPairs": 171,
+    "validatedPoses": ["neutral", "open", "smile"],
+    "validatedFrames": [1, 20, 33, 61]
+  },
+  "findings": [
+    "Camera-ray sampling proves the broad dark band is the current body's downward-facing upper-lip surface rather than only the oral back wall.",
+    "The collision-safe 87-vertex projection reduces the dark aperture but exposes a discontinuous, jagged upper-lip boundary.",
+    "The cut mouth topology cannot support a continuous everted upper lip through isolated vertex displacement alone.",
+    "The retained hidden r1030-derived body has the same armature, the same 35 shape-key names, identity world transform, and an intact continuous lips region suitable for donor evaluation."
+  ],
+  "nextAction": "Extract and evaluate the intact owned upper-lip surface as a separately controlled donor layer with explicit body clearance and matching expression keys.",
+  "renders": [
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1104-upper-lip-eversion/neutral-mouth-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1104-upper-lip-eversion/neutral-mouth-oblique.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1104-upper-lip-eversion/neutral-face-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1104-upper-lip-eversion/open-mouth-front.png",
+    "D:/Download/Aevrynd/Temp/female-realism/v249r1104-upper-lip-eversion/smile-mouth-front.png"
+  ]
+}
