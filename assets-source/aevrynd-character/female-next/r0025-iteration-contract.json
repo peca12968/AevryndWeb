@@ -1,0 +1,24 @@
+{
+  "previousGoalTurnClassification": "progress: r24 real oral layers and rigid controls built/rendered; contact failures and inherited original dental intersections established; no adoption.",
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0024-b-oral-study.blend",
+  "sourceSha256": "344794d56c91a5ae7e4022d4c3611658b43593460102215fc172a2daa1b3d0b2",
+  "workingHead": "source/aevrynd-female-next-r0023-b-neutral-review.blend",
+  "primaryDefect": "Adapted CC0 crowns have open root ends and 1466 raw inter-tooth triangle pairs at neutral, including neighbours and opposing arches.",
+  "hypothesis": "Close the existing crown bases and trim only geometric overlap into paired contact cells. This preserves placement, jaw motion, material and most tooth surfaces, unlike global scaling/refitting.",
+  "design": "Euclidean contact-cell bisectors between original crown centres, 20um numerical separation. This is a bounded geometric approximation; rendered shape and topology decide whether it is usable.",
+  "rejectIf": [
+    "Any closed-crown boundary/nonmanifold/self intersection or tooth-to-tooth intersection after repair.",
+    "Original-vertex plane cut depth over 1.5mm or capped volume ratio below 0.70.",
+    "Flattened visible crowns, visible gaps or whole-face regression."
+  ],
+  "budget": {
+    "candidates": 1,
+    "threads": 4,
+    "teeth": 32,
+    "planesPerToothMaximum": 31,
+    "diagnosticMinutes": 10,
+    "roundCheckpointMinutes": 45
+  },
+  "scope": "Dental contact/crown-solid repair only. Existing gingival/tongue/body failures remain unless separately proven; no runtime or full-mouth acceptance."
+}

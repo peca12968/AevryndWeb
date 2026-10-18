@@ -1,0 +1,9 @@
+r0025 dental-contact function study
+
+Derived source: official MakeHuman teeth_base graphical asset, CC0 release September 2020. Original credits Data Collection AB, Joel Palmius, Jonas Hauquier. Raw bytes, license headers, textures and archive hashes retained in oral/makehuman-system-cc0 from r24. No MPFB program copied into the engine.
+
+Own modifications: closure of 12-edge crown base loops, local contact-cell clipping, separate root/contact face provenance and nearest-source enamel UV mapping. No whole-dentition scaling, new placement, material, skin, lighting or jaw animation changes. The closed bases are crown collision solids, not anatomical root sculpts.
+
+Collections AFN25_DENTITION and AFN24_ORAL_CONTROLS expose 32 editable crown meshes and the retained mouth open property (0..0.2). AFN25_CAP face attribute: 0 source crown, 1 root closure, 2 new contact-plane surface; these labels never automatically exempt collisions. Motion review is frames 1..25 at 12fps. Textures packed, no linked library.
+
+Only dental pair contact/solid function is retained. Whole mouth still fails gingival/tongue/lining contacts; do not replace r23 working head or runtime/site. Preserve fixed jaw/geometry contract to reuse the scoped dental sweep report. Rebuild in the existing Aevrynd workspace with build-female-next-r0025-dental-contact.py; prior r24 source/data, own helper scripts and historical evidence are required.

@@ -1,0 +1,57 @@
+{
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "decision": "ADOPT_DENTAL_CONTACT_AND_CROWN_SOLID_FUNCTION_IN_ORAL_RESEARCH_ONLY",
+  "study": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0025-a-dental-contact-study.blend",
+  "studySha256": "f4dca9dcb6b499115acf52a97000d8f8bfa81876696dd4d4f92db13ab9d1a589",
+  "appearance": "Contact boundaries change subtly. Same-condition full-face, mouth closeup and oblique review shows no obvious broad shape regression or new wide gaps, but the teeth remain blocky/chalky and the face remains artificial. No clear realism gain; appearance score unchanged/unassigned.",
+  "appearanceScore": null,
+  "overallCharacterScore": null,
+  "function": "32 individually editable closed crown solids, capped root ends, local contact repair, source enamel UV transfer on new faces, same rigid jaw controls. Crown-root geometry is a collision-solid closure, not complete anatomical roots.",
+  "metrics": {
+    "beforeAdaptedInterToothTrianglePairs": 1466,
+    "afterDentalIntersectingPairsInFiveStates": 0,
+    "dentalPairsPerState": 496,
+    "continuousDentalPairRangeWeight": [
+      0,
+      0.2
+    ],
+    "lowerHingeDegrees": 5.548246238748727,
+    "dentalSupportSeparationLowerBoundM": 1.4688557866937018e-05,
+    "numericalAllowanceM": 5e-06,
+    "maximumSourcePlaneCutDepthM": 0.001220067732575967,
+    "minimumCrownVolumeRatioRetained": 0.9031949800159774,
+    "rootBoundaryEdgesBefore": 384,
+    "rootBoundaryEdgesAfter": 0
+  },
+  "contactScope": "All dental pair sweep under the fixed saved jaw contract; tooth/body tested at five static weights only. Gingival/tongue/body continuous contacts not accepted.",
+  "remainingDentalTissueRawPairs": [
+    {
+      "weight": 0.0,
+      "toothGingiva": 1584,
+      "toothTongue": 379
+    },
+    {
+      "weight": 0.05,
+      "toothGingiva": 1590,
+      "toothTongue": 413
+    },
+    {
+      "weight": 0.1,
+      "toothGingiva": 1592,
+      "toothTongue": 432
+    },
+    {
+      "weight": 0.15,
+      "toothGingiva": 1592,
+      "toothTongue": 411
+    },
+    {
+      "weight": 0.2,
+      "toothGingiva": 1597,
+      "toothTongue": 248
+    }
+  ],
+  "runtime": "NOT_IMPLEMENTED_OR_TESTED",
+  "wholeMouthAccepted": false,
+  "nextAction": "Keep r23 B as the integrated working head and r25 A as the latest oral research source, with scoped dental-function acceptance only. Reuse the 32 closed contact-repaired crowns and rigid jaw controls; do not rerun dental plane/depth/gap sweeps or original proxy refits. Next build a bounded lower gingival/tongue interface repair with the actual repaired dentition held fixed. Identify anatomical tooth emergence/root joins from saved original 12-edge boundaries and AFN25_CAP face tags (0 original crown, 1 root closure, 2 contact cut). Tags alone are not exclusions: retain raw contacts and allow only a geometrically documented root/gingival connection. Existing continuous gingival lining and tongue still cross each other/teeth; native linear soft-tissue motion also creates 14 body/lining pairs at open. Repair neutral geometry and use one coherent lower-jaw binding rather than only changing weights on already intersecting meshes. First test a small real collar/floor/tongue region and actual body/crown surfaces; only expand when that assembly works. No global shrink, covering strip, hidden geometry or arbitrary collision exclusions. Preserve full-head neutral/open images and fixed skin/lights/eyes/hair; the repaired dentition has subtle appearance differences and no realism score increase. Reuse r25 dental sweep only if exact geometry/control fingerprints and motion range remain valid. Blink/canthus closure, scalp hair appearance/self/complete dynamics, expressions/full body/clothes, native runtime/LOD/performance and explicit female acceptance remain incomplete."
+}
