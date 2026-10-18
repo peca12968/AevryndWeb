@@ -1,0 +1,35 @@
+{
+  "previousGoalTurnClassification": "progress: r20 actual brow-support repair, bounded failed rim candidate, root/surface evidence and playable full-head review archived. Complete blink remains unqualified.",
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0018-c-triangulated-brows-study.blend",
+  "sourceSha256": "b6e9ddd3675afd205dee73e09a7e28f2b3c6583c8456425a0dc000037fd17d42",
+  "primaryDefect": "Hard uniform hairline and sawtooth centre-part emission; source crown reads as a cap.",
+  "hypothesis": "Replace the hard front/part root boundary with actual-skin follicle staggering and a gently varied initial lift, while joining the exact existing free lock paths after 28mm. This isolates root transition architecture instead of changing lighting, density, pigment or tip lengths.",
+  "expectedVisibleChange": "Less stamped front edge and part, fine irregular root emergence in the full face and oblique view, unchanged lower locks.",
+  "references": [
+    {
+      "url": "https://www.sidefx.com/tutorials/grooming-and-rendering-realistic-hair/",
+      "use": "Conceptual scalp density mask, guide versus strand variation. Own implementation; no Houdini dependency."
+    },
+    {
+      "url": "https://docs.blender.org/manual/en/5.1/modeling/geometry_nodes/hair/generation/interpolate_hair_curves.html",
+      "use": "Guide/scalp authoring concept; existing native curves edited, not importing external code."
+    }
+  ],
+  "rejectIf": [
+    "Any guide capsule/body failure before child generation.",
+    "Root rebind or head/skin/eyes/brows/lashes/material/light controls fail.",
+    "New lower free-path movement beyond source arc 28mm.",
+    "No discernible full-head hairline/part improvement or new comb/bumpy cap appearance."
+  ],
+  "resourceBudget": {
+    "threads": 4,
+    "candidates": 1,
+    "guides": 424,
+    "fibres": 21086,
+    "rootTransitionM": 0.028,
+    "pilotResolution": 800,
+    "staticPoses": 5
+  },
+  "scope": "Static appearance study; no full hair self-contact, dynamics or engine claim."
+}

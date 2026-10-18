@@ -1,0 +1,81 @@
+{
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "lastGoalTurnClassification": "progress",
+  "classificationReason": "Two bounded real geometry candidates saved/reopened and compared under matched multiangle and alternate lights; both visually rejected, with no quality increase. Official native reference inspected: actual two-island parting domain and separately authored guide layers now support a different full-groom next action.",
+  "previousGoalTurnClassification": "progress: r20 fixed actual brow support with tested static contacts and sampled root errors, kept partial blink separate, archived failures and playable review.",
+  "workingReviewSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0018-c-triangulated-brows-study.blend",
+  "workingReviewSha256": "b6e9ddd3675afd205dee73e09a7e28f2b3c6583c8456425a0dc000037fd17d42",
+  "rejectedResearchSources": [
+    {
+      "path": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0021-a-root-transition-study.blend",
+      "sha256": "05149b43b3982defbbcf2bf8b30ca03e7a3ffc934c7197930c5fffaed3398de4"
+    },
+    {
+      "path": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0021-b-layered-boundary-study.blend",
+      "sha256": "3d3d6698152cf1f2c60472a231f27b1b8471403ca84373d9a5a80f1841462fe1"
+    }
+  ],
+  "latestEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0021-root-transition\\female-next-r0021.visual-audit.json",
+  "reference": {
+    "officialPage": "https://www.blender.org/download/demo-files/",
+    "downloadPage": "https://www.blender.org/download/demo/geometry-nodes/hair_nodes-female_hair_styles.blend/",
+    "downloadMirror": "https://mirror.blender.org/demo/geometry-nodes/hair_nodes-female_hair_styles.blend",
+    "localReference": "D:\\Download\\Aevrynd\\Reference\\character\\blender-hair-styles\\hair_nodes-female_hair_styles.blend",
+    "sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+    "bytes": 28612482,
+    "author": "Daniel Bystedt",
+    "declaredLicense": "CC-BY-SA; exact version unresolved, do not assume CC0",
+    "assetAdoption": "READ_ONLY_LEARNING_ONLY_NOT_IN_ENGINE_OR_OWN_MODEL",
+    "referenceBinaryArchivedInGit": false,
+    "reason": "Retain original locally; reproducible official download plus hash and inventory recorded. No third-party geometry, textures, scripts or node program copied into the engine.",
+    "observations": [
+      {
+        "fact": "Long-hair scalp has two actual mesh islands and a parting vertex group.",
+        "evidence": {
+          "name": "long hair growth mesh",
+          "type": "MESH",
+          "parent": "Long hair head",
+          "hiddenRender": true,
+          "collections": [
+            "Long hair"
+          ],
+          "modifiers": [],
+          "vertices": 876,
+          "polygons": 796,
+          "connectedMeshIslands": 2,
+          "vertexGroups": [
+            "parting"
+          ]
+        }
+      },
+      {
+        "fact": "Main groom and independent strands are separate native Curves objects bound to a growth mesh.",
+        "mainGuides": 346,
+        "mainPoints": 6770,
+        "strandGuides": 30,
+        "strandPoints": 360
+      },
+      {
+        "fact": "The 19-curve new hair datablock has no collection users in this file.",
+        "implication": "Do not count it as a rendered active fine-hair layer."
+      }
+    ],
+    "inferenceForAevrynd": "Rebuild editable scalp domains, part controls and separately authored guide flows for the whole crown/perimeter. Small offsets on the old common field did not overcome the cap appearance. Island splitting alone is not a realism guarantee."
+  },
+  "liveJobHandles": [],
+  "doNotRepeat": [
+    "r21 A submillimetre part/root jitter while preserving the old crown flow.",
+    "r21 B local terminal retreat plus short prefix trimming as a complete cap cure.",
+    "Stopped r16 tip-only trimming, r17 large crown master lobes and unchanged rigid crown as an indefinite constraint.",
+    "Third blink solver diagnostic round before full-head appearance progress.",
+    "Treating guide capsule passes as final child/self/dynamic proof."
+  ],
+  "remainingGates": [
+    "Full hair and facial photorealism not achieved.",
+    "New groom geometry remains unqualified beyond guide checks.",
+    "Hair self/continuous motion, actual canthus closure and full blink remain incomplete.",
+    "Expressions/oral parts, body/clothes, native engine/LOD/performance and explicit user acceptance remain incomplete."
+  ],
+  "nextAction": "Build a new complete-head groom architecture in r22, using r18 C only as the unchanged head/eye/skin/brow/lash source. Author own editable left/right scalp domains with an explicit part boundary and UV/density fields; separate primary crown/perimeter/temporal locks from short boundary hair and independent strands. Replace the old global tangent field and exact-crown preservation: author varied sparse guide control paths for the whole crown, then gate their actual body capsules before child interpolation. Produce a complete-head pilot, not another root-only jitter/retreat or tip-only sweep. Use the locally inspected official Daniel Bystedt demo solely to understand structure; do not copy its geometry/node program into owned runtime assets or assume its CC-BY-SA data is CC0. Exact reference license version remains unresolved. Reuse valid unmodified head evidence, test new final child segments and affected component pairs, and distinguish discrete/static from self/continuous hair contact. If the complete-head pilot still reads as a cap, reject before expensive expansion. r20 partial blink remains a separate branch; closure/continuous gates, body/clothes, expressions/oral parts, native runtime/LOD/performance and final user approval are still incomplete.",
+  "overallCharacterScore": null
+}

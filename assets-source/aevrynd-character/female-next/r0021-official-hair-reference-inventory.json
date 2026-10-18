@@ -1,0 +1,2632 @@
+{
+  "reference": "D:\\Download\\Aevrynd\\Reference\\character\\blender-hair-styles\\hair_nodes-female_hair_styles.blend",
+  "referenceSha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+  "officialPage": "https://www.blender.org/download/demo-files/",
+  "downloadPage": "https://www.blender.org/download/demo/geometry-nodes/hair_nodes-female_hair_styles.blend/",
+  "downloadMirror": "https://mirror.blender.org/demo/geometry-nodes/hair_nodes-female_hair_styles.blend",
+  "author": "Daniel Bystedt",
+  "declaredLicense": "CC-BY-SA, exact version not yet resolved from the official listing/embedded text",
+  "use": "Read-only learning reference. No reference geometry, textures or node program incorporated into Aevrynd production assets or runtime. Do not describe it as self-authored or CC0.",
+  "objects": [
+    {
+      "name": "back",
+      "type": "LIGHT",
+      "parent": null,
+      "hiddenRender": false,
+      "collections": [
+        "Lights"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Braids growth mesh",
+      "type": "MESH",
+      "parent": "Braids hair head",
+      "hiddenRender": true,
+      "collections": [
+        "Braids hair"
+      ],
+      "modifiers": [],
+      "vertices": 818,
+      "polygons": 740,
+      "connectedMeshIslands": 2,
+      "vertexGroups": [
+        "parting",
+        "clumping"
+      ]
+    },
+    {
+      "name": "Braids hair head",
+      "type": "EMPTY",
+      "parent": null,
+      "hiddenRender": false,
+      "collections": [
+        "Braids hair"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "curly growth mesh",
+      "type": "MESH",
+      "parent": "Curly hair head",
+      "hiddenRender": true,
+      "collections": [
+        "Curly hair"
+      ],
+      "modifiers": [],
+      "vertices": 876,
+      "polygons": 796,
+      "connectedMeshIslands": 2,
+      "vertexGroups": [
+        "parting",
+        "clumping"
+      ]
+    },
+    {
+      "name": "curly hair",
+      "type": "CURVES",
+      "parent": "curly growth mesh",
+      "hiddenRender": false,
+      "collections": [
+        "Curly hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform",
+          "showRender": true
+        },
+        {
+          "name": "Curly hair",
+          "type": "NODES",
+          "nodeGroup": "curly hair",
+          "showRender": true
+        }
+      ],
+      "rawGuideCurves": 303,
+      "rawGuidePoints": 3636,
+      "surface": "curly growth mesh",
+      "attributes": [
+        "position",
+        "surface_uv_coordinate"
+      ]
+    },
+    {
+      "name": "braided hair",
+      "type": "CURVES",
+      "parent": "Braids growth mesh",
+      "hiddenRender": false,
+      "collections": [
+        "Braids hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.003",
+          "showRender": true
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "Braided hair",
+          "showRender": true
+        }
+      ],
+      "rawGuideCurves": 137,
+      "rawGuidePoints": 2740,
+      "surface": "Braids growth mesh",
+      "attributes": [
+        "position",
+        ".selection",
+        "surface_uv_coordinate"
+      ]
+    },
+    {
+      "name": "Curly hair head",
+      "type": "EMPTY",
+      "parent": null,
+      "hiddenRender": false,
+      "collections": [
+        "Curly hair"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "cyber punk growth mesh",
+      "type": "MESH",
+      "parent": "Cyberpunk hair head",
+      "hiddenRender": true,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "modifiers": [],
+      "vertices": 876,
+      "polygons": 796,
+      "connectedMeshIslands": 2,
+      "vertexGroups": [
+        "parting",
+        "clump",
+        "density",
+        "trim"
+      ]
+    },
+    {
+      "name": "cyberpunk hair",
+      "type": "CURVES",
+      "parent": "cyber punk growth mesh",
+      "hiddenRender": false,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Set Hair Curve Profile",
+          "type": "NODES",
+          "nodeGroup": "Set Hair Curve Profile",
+          "showRender": true
+        },
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform",
+          "showRender": true
+        },
+        {
+          "name": "Interpolate Hair Curves",
+          "type": "NODES",
+          "nodeGroup": "Interpolate Hair Curves",
+          "showRender": true
+        },
+        {
+          "name": "Clump Hair Curves",
+          "type": "NODES",
+          "nodeGroup": "Clump Hair Curves",
+          "showRender": true
+        },
+        {
+          "name": "Trim Hair Curves",
+          "type": "NODES",
+          "nodeGroup": "Trim Hair Curves",
+          "showRender": true
+        }
+      ],
+      "rawGuideCurves": 1744,
+      "rawGuidePoints": 9656,
+      "surface": "cyber punk growth mesh",
+      "attributes": [
+        "id",
+        "position",
+        "clumping",
+        "density",
+        "parting",
+        ".selection",
+        "resolution",
+        ".sculpt_face_set",
+        "Col",
+        "rest_position",
+        "surface_uv_coordinate",
+        "UVMap",
+        ".select_vert",
+        ".select_poly",
+        ".select_edge"
+      ]
+    },
+    {
+      "name": "Cyberpunk hair head",
+      "type": "EMPTY",
+      "parent": null,
+      "hiddenRender": false,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Eyebrows growth mesh",
+      "type": "MESH",
+      "parent": "Long hair head",
+      "hiddenRender": true,
+      "collections": [
+        "Long hair"
+      ],
+      "modifiers": [],
+      "vertices": 150,
+      "polygons": 112,
+      "connectedMeshIslands": 2,
+      "vertexGroups": []
+    },
+    {
+      "name": "Eyebrows growth mesh.001",
+      "type": "MESH",
+      "parent": "Curly hair head",
+      "hiddenRender": true,
+      "collections": [
+        "Curly hair"
+      ],
+      "modifiers": [],
+      "vertices": 150,
+      "polygons": 112,
+      "connectedMeshIslands": 2,
+      "vertexGroups": []
+    },
+    {
+      "name": "Eyebrows growth mesh.002",
+      "type": "MESH",
+      "parent": "Cyberpunk hair head",
+      "hiddenRender": true,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "modifiers": [],
+      "vertices": 150,
+      "polygons": 112,
+      "connectedMeshIslands": 2,
+      "vertexGroups": []
+    },
+    {
+      "name": "Eyebrows growth mesh.003",
+      "type": "MESH",
+      "parent": "Braids hair head",
+      "hiddenRender": true,
+      "collections": [
+        "Braids hair"
+      ],
+      "modifiers": [],
+      "vertices": 150,
+      "polygons": 112,
+      "connectedMeshIslands": 2,
+      "vertexGroups": []
+    },
+    {
+      "name": "eyebrows.001",
+      "type": "CURVES",
+      "parent": "Eyebrows growth mesh",
+      "hiddenRender": true,
+      "collections": [
+        "Long hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "Eeybrows",
+          "type": "NODES",
+          "nodeGroup": "Eeybrows",
+          "showRender": true
+        }
+      ],
+      "rawGuideCurves": 88,
+      "rawGuidePoints": 386,
+      "surface": "Eyebrows growth mesh",
+      "attributes": [
+        "radius",
+        "position",
+        "surface_uv_coordinate"
+      ]
+    },
+    {
+      "name": "eyebrows.002",
+      "type": "CURVES",
+      "parent": "Eyebrows growth mesh.001",
+      "hiddenRender": true,
+      "collections": [
+        "Curly hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "Eeybrows",
+          "type": "NODES",
+          "nodeGroup": "Eeybrows",
+          "showRender": true
+        }
+      ],
+      "rawGuideCurves": 88,
+      "rawGuidePoints": 386,
+      "surface": "Eyebrows growth mesh",
+      "attributes": [
+        "radius",
+        "position",
+        "surface_uv_coordinate"
+      ]
+    },
+    {
+      "name": "eyebrows.003",
+      "type": "CURVES",
+      "parent": "Eyebrows growth mesh.002",
+      "hiddenRender": true,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "Eeybrows",
+          "type": "NODES",
+          "nodeGroup": "Eeybrows",
+          "showRender": true
+        }
+      ],
+      "rawGuideCurves": 88,
+      "rawGuidePoints": 386,
+      "surface": "Eyebrows growth mesh",
+      "attributes": [
+        "radius",
+        "position",
+        "surface_uv_coordinate"
+      ]
+    },
+    {
+      "name": "eyebrows.004",
+      "type": "CURVES",
+      "parent": "Eyebrows growth mesh.003",
+      "hiddenRender": true,
+      "collections": [
+        "Braids hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "Eeybrows",
+          "type": "NODES",
+          "nodeGroup": "Eeybrows",
+          "showRender": true
+        }
+      ],
+      "rawGuideCurves": 88,
+      "rawGuidePoints": 386,
+      "surface": "Eyebrows growth mesh",
+      "attributes": [
+        "radius",
+        "position",
+        "surface_uv_coordinate"
+      ]
+    },
+    {
+      "name": "eyelashes",
+      "type": "CURVES",
+      "parent": "Eyelashes growth mesh",
+      "hiddenRender": false,
+      "collections": [
+        "Long hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "eyelashes",
+          "showRender": true
+        }
+      ],
+      "rawGuideCurves": 60,
+      "rawGuidePoints": 480,
+      "surface": "Eyelashes growth mesh",
+      "attributes": [
+        "position",
+        "position.001",
+        "position.002",
+        "position.003",
+        "position.004",
+        "position.005",
+        "position.006",
+        "surface_uv_coordinate",
+        "surface_uv_coordinate.001",
+        "surface_uv_coordinate.002"
+      ]
+    },
+    {
+      "name": "Eyelashes growth mesh",
+      "type": "MESH",
+      "parent": "Long hair head",
+      "hiddenRender": true,
+      "collections": [
+        "Long hair"
+      ],
+      "modifiers": [],
+      "vertices": 96,
+      "polygons": 44,
+      "connectedMeshIslands": 4,
+      "vertexGroups": []
+    },
+    {
+      "name": "Eyelashes growth mesh.001",
+      "type": "MESH",
+      "parent": "Curly hair head",
+      "hiddenRender": true,
+      "collections": [
+        "Curly hair"
+      ],
+      "modifiers": [],
+      "vertices": 96,
+      "polygons": 44,
+      "connectedMeshIslands": 4,
+      "vertexGroups": []
+    },
+    {
+      "name": "Eyelashes growth mesh.002",
+      "type": "MESH",
+      "parent": "Cyberpunk hair head",
+      "hiddenRender": true,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "modifiers": [],
+      "vertices": 96,
+      "polygons": 44,
+      "connectedMeshIslands": 4,
+      "vertexGroups": []
+    },
+    {
+      "name": "Eyelashes growth mesh.003",
+      "type": "MESH",
+      "parent": "Braids hair head",
+      "hiddenRender": true,
+      "collections": [
+        "Braids hair"
+      ],
+      "modifiers": [],
+      "vertices": 96,
+      "polygons": 44,
+      "connectedMeshIslands": 4,
+      "vertexGroups": []
+    },
+    {
+      "name": "eyelashes.001",
+      "type": "CURVES",
+      "parent": "Eyelashes growth mesh.001",
+      "hiddenRender": false,
+      "collections": [
+        "Curly hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "eyelashes",
+          "showRender": true
+        }
+      ],
+      "rawGuideCurves": 60,
+      "rawGuidePoints": 480,
+      "surface": "Eyelashes growth mesh",
+      "attributes": [
+        "position",
+        "position.001",
+        "position.002",
+        "position.003",
+        "position.004",
+        "position.005",
+        "position.006",
+        "surface_uv_coordinate",
+        "surface_uv_coordinate.001",
+        "surface_uv_coordinate.002"
+      ]
+    },
+    {
+      "name": "eyelashes.002",
+      "type": "CURVES",
+      "parent": "Eyelashes growth mesh.002",
+      "hiddenRender": false,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "eyelashes",
+          "showRender": true
+        }
+      ],
+      "rawGuideCurves": 60,
+      "rawGuidePoints": 480,
+      "surface": "Eyelashes growth mesh",
+      "attributes": [
+        "position",
+        "position.001",
+        "position.002",
+        "position.003",
+        "position.004",
+        "position.005",
+        "position.006",
+        "surface_uv_coordinate",
+        "surface_uv_coordinate.001",
+        "surface_uv_coordinate.002"
+      ]
+    },
+    {
+      "name": "eyelashes.003",
+      "type": "CURVES",
+      "parent": "Eyelashes growth mesh.003",
+      "hiddenRender": false,
+      "collections": [
+        "Braids hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "eyelashes",
+          "showRender": true
+        }
+      ],
+      "rawGuideCurves": 60,
+      "rawGuidePoints": 480,
+      "surface": "Eyelashes growth mesh",
+      "attributes": [
+        "position",
+        "position.001",
+        "position.002",
+        "position.003",
+        "position.004",
+        "position.005",
+        "position.006",
+        "surface_uv_coordinate",
+        "surface_uv_coordinate.001",
+        "surface_uv_coordinate.002"
+      ]
+    },
+    {
+      "name": "eyes",
+      "type": "MESH",
+      "parent": null,
+      "hiddenRender": false,
+      "collections": [
+        "head"
+      ],
+      "modifiers": [],
+      "vertices": 1028,
+      "polygons": 1088
+    },
+    {
+      "name": "hairband",
+      "type": "CURVE",
+      "parent": null,
+      "hiddenRender": true,
+      "collections": [
+        "Braids hair"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "head",
+      "type": "MESH",
+      "parent": null,
+      "hiddenRender": false,
+      "collections": [
+        "head"
+      ],
+      "modifiers": [],
+      "vertices": 51257,
+      "polygons": 51152
+    },
+    {
+      "name": "Info text.001",
+      "type": "FONT",
+      "parent": "Long hair head",
+      "hiddenRender": false,
+      "collections": [
+        "Long hair"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Info text.002",
+      "type": "FONT",
+      "parent": "Braids hair head",
+      "hiddenRender": false,
+      "collections": [
+        "Curly hair"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Info text.003",
+      "type": "FONT",
+      "parent": "Curly hair head",
+      "hiddenRender": false,
+      "collections": [
+        "Curly hair"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "key",
+      "type": "LIGHT",
+      "parent": null,
+      "hiddenRender": false,
+      "collections": [
+        "Lights"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "long hair growth mesh",
+      "type": "MESH",
+      "parent": "Long hair head",
+      "hiddenRender": true,
+      "collections": [
+        "Long hair"
+      ],
+      "modifiers": [],
+      "vertices": 876,
+      "polygons": 796,
+      "connectedMeshIslands": 2,
+      "vertexGroups": [
+        "parting"
+      ]
+    },
+    {
+      "name": "Long hair head",
+      "type": "EMPTY",
+      "parent": null,
+      "hiddenRender": false,
+      "collections": [
+        "Long hair"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "long hair main",
+      "type": "CURVES",
+      "parent": "long hair growth mesh",
+      "hiddenRender": false,
+      "collections": [
+        "Long hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.002",
+          "showRender": true
+        },
+        {
+          "name": "Long hair",
+          "type": "NODES",
+          "nodeGroup": "hair",
+          "showRender": true
+        }
+      ],
+      "rawGuideCurves": 346,
+      "rawGuidePoints": 6770,
+      "surface": "long hair growth mesh",
+      "attributes": [
+        "position",
+        ".selection",
+        "resolution",
+        "surface_uv_coordinate"
+      ]
+    },
+    {
+      "name": "long hair strands",
+      "type": "CURVES",
+      "parent": "long hair growth mesh",
+      "hiddenRender": false,
+      "collections": [
+        "Long hair"
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.004",
+          "showRender": true
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "Set Hair Curve Profile",
+          "showRender": true
+        }
+      ],
+      "rawGuideCurves": 30,
+      "rawGuidePoints": 360,
+      "surface": "long hair growth mesh",
+      "attributes": [
+        "position",
+        "surface_uv_coordinate"
+      ]
+    },
+    {
+      "name": "new hair",
+      "type": "CURVES",
+      "parent": "long hair growth mesh",
+      "hiddenRender": false,
+      "collections": [],
+      "modifiers": [
+        {
+          "name": "GeometryNodes.001",
+          "type": "NODES",
+          "nodeGroup": "curves to hair DABY",
+          "showRender": true
+        },
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform",
+          "showRender": true
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "hair",
+          "showRender": true
+        },
+        {
+          "name": "Redistribute Curve Points",
+          "type": "NODES",
+          "nodeGroup": "Redistribute Curve Points",
+          "showRender": true
+        }
+      ],
+      "rawGuideCurves": 19,
+      "rawGuidePoints": 285,
+      "surface": "long hair growth mesh",
+      "attributes": [
+        "position",
+        ".selection",
+        "surface_uv_coordinate"
+      ]
+    },
+    {
+      "name": "Plane",
+      "type": "MESH",
+      "parent": null,
+      "hiddenRender": false,
+      "collections": [],
+      "modifiers": [
+        {
+          "name": "Auto Smooth",
+          "type": "NODES",
+          "nodeGroup": "Auto Smooth",
+          "showRender": true
+        }
+      ],
+      "vertices": 485,
+      "polygons": 0
+    },
+    {
+      "name": "rim",
+      "type": "LIGHT",
+      "parent": null,
+      "hiddenRender": false,
+      "collections": [
+        "Lights"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Info text",
+      "type": "FONT",
+      "parent": "Cyberpunk hair head",
+      "hiddenRender": false,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "modifiers": []
+    }
+  ],
+  "nodeGroups": [
+    {
+      "name": "Auto Smooth",
+      "nodes": 10,
+      "nodeTypes": {
+        "NodeGroupOutput": 1,
+        "NodeGroupInput": 2,
+        "GeometryNodeSetShadeSmooth": 2,
+        "GeometryNodeInputMeshEdgeAngle": 1,
+        "GeometryNodeInputEdgeSmooth": 1,
+        "GeometryNodeInputShadeSmooth": 1,
+        "FunctionNodeBooleanMath": 1,
+        "FunctionNodeCompare": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Braid Hair Curves",
+      "nodes": 261,
+      "nodeTypes": {
+        "NodeFrame": 15,
+        "GeometryNodeJoinGeometry": 1,
+        "NodeReroute": 68,
+        "GeometryNodeSeparateComponents": 1,
+        "NodeGroupInput": 22,
+        "GeometryNodeInputSplineResolution": 1,
+        "GeometryNodeCaptureAttribute": 8,
+        "GeometryNodeCurveSplineType": 2,
+        "GeometryNodeSetSplineResolution": 1,
+        "FunctionNodeCompare": 7,
+        "GeometryNodeSwitch": 8,
+        "GeometryNodeInstanceOnPoints": 1,
+        "GeometryNodeSampleCurve": 4,
+        "GeometryNodeSetPosition": 2,
+        "GeometryNodeCurveToPoints": 1,
+        "FunctionNodeAlignEulerToVector": 2,
+        "ShaderNodeVectorMath": 15,
+        "GeometryNodeAttributeDomainSize": 2,
+        "GeometryNodeGeometryToInstance": 1,
+        "GeometryNodeObjectInfo": 1,
+        "ShaderNodeMath": 48,
+        "GeometryNodeGroup": 7,
+        "GeometryNodeInputIndex": 2,
+        "GeometryNodeInputPosition": 1,
+        "ShaderNodeSeparateXYZ": 2,
+        "ShaderNodeMapRange": 3,
+        "GeometryNodeSplineParameter": 6,
+        "GeometryNodeSubdivideCurve": 1,
+        "GeometryNodeFieldOnDomain": 2,
+        "ShaderNodeCombineXYZ": 2,
+        "ShaderNodeVectorRotate": 1,
+        "FunctionNodeRandomValue": 1,
+        "ShaderNodeValue": 2,
+        "NodeGroupOutput": 1,
+        "ShaderNodeFloatCurve": 1,
+        "GeometryNodeStoreNamedAttribute": 1,
+        "GeometryNodeSampleIndex": 2,
+        "GeometryNodeAccumulateField": 3,
+        "FunctionNodeBooleanMath": 2,
+        "GeometryNodeInputNamedAttribute": 1,
+        "GeometryNodeDeleteGeometry": 1,
+        "GeometryNodeFieldAtIndex": 3,
+        "GeometryNodePointsOfCurve": 1,
+        "GeometryNodeInputTangent": 1,
+        "GeometryNodeInputNormal": 1,
+        "FunctionNodeInputInt": 1,
+        "GeometryNodeCurveOfPoint": 1
+      },
+      "nestedGroupNames": [
+        "Create Guide Index Map.003",
+        "Curve Info.003",
+        "Curve Root.004",
+        "Curve Segment.003",
+        "shape_range.004"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Braided hair",
+      "nodes": 43,
+      "nodeTypes": {
+        "NodeFrame": 10,
+        "NodeReroute": 17,
+        "GeometryNodeInputNamedAttribute": 2,
+        "GeometryNodeGroup": 6,
+        "NodeGroupInput": 2,
+        "GeometryNodeViewer": 1,
+        "NodeGroupOutput": 1,
+        "FunctionNodeCompare": 1,
+        "ShaderNodeMapRange": 1,
+        "GeometryNodeSplineParameter": 1,
+        "ShaderNodeMath": 1
+      },
+      "nestedGroupNames": [
+        "Braid Hair Curves",
+        "Displace Hair Curves",
+        "Interpolate Hair Curves",
+        "Set Hair Curve Profile.004",
+        "Smooth Hair Curves",
+        "Snap hair to parting edges - Bystedt"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Clump Hair Curves",
+      "nodes": 135,
+      "nodeTypes": {
+        "NodeFrame": 8,
+        "NodeGroupInput": 14,
+        "NodeReroute": 30,
+        "GeometryNodeSeparateComponents": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeJoinGeometry": 1,
+        "GeometryNodeCaptureAttribute": 2,
+        "GeometryNodeInputPosition": 2,
+        "GeometryNodeInputSplineResolution": 1,
+        "GeometryNodeCurveSplineType": 2,
+        "GeometryNodeSwitch": 5,
+        "FunctionNodeCompare": 5,
+        "GeometryNodeSetSplineResolution": 1,
+        "GeometryNodeSampleIndex": 2,
+        "GeometryNodeAccumulateField": 2,
+        "FunctionNodeBooleanMath": 2,
+        "GeometryNodeStoreNamedAttribute": 1,
+        "GeometryNodeInputNamedAttribute": 1,
+        "GeometryNodeGroup": 6,
+        "ShaderNodeVectorMath": 25,
+        "GeometryNodeSampleCurve": 3,
+        "FunctionNodeRandomValue": 3,
+        "ShaderNodeSeparateXYZ": 3,
+        "GeometryNodeSplineParameter": 2,
+        "GeometryNodeFieldOnDomain": 2,
+        "ShaderNodeCombineXYZ": 1,
+        "GeometryNodeFieldAtIndex": 2,
+        "ShaderNodeMix": 1,
+        "GeometryNodeSetPosition": 1,
+        "ShaderNodeMath": 4,
+        "ShaderNodeMapRange": 1
+      },
+      "nestedGroupNames": [
+        "Create Guide Index Map.003",
+        "Curve Info.003",
+        "Curve Root.004",
+        "Restore Curve Segment Length.003",
+        "shape_range.004"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Clump Hair Curves.003",
+      "nodes": 122,
+      "nodeTypes": {
+        "NodeFrame": 2,
+        "NodeReroute": 24,
+        "ShaderNodeVectorMath": 25,
+        "GeometryNodeFieldAtIndex": 2,
+        "GeometryNodeGroup": 6,
+        "ShaderNodeCombineXYZ": 1,
+        "ShaderNodeSeparateXYZ": 3,
+        "GeometryNodeFieldOnDomain": 2,
+        "NodeGroupInput": 13,
+        "ShaderNodeMath": 4,
+        "GeometryNodeSampleCurve": 3,
+        "GeometryNodeSetPosition": 1,
+        "GeometryNodeSplineParameter": 2,
+        "ShaderNodeMix": 1,
+        "GeometryNodeInputPosition": 2,
+        "GeometryNodeSampleIndex": 2,
+        "GeometryNodeAccumulateField": 2,
+        "GeometryNodeInputNamedAttribute": 1,
+        "GeometryNodeStoreNamedAttribute": 1,
+        "FunctionNodeCompare": 5,
+        "FunctionNodeBooleanMath": 2,
+        "GeometryNodeSwitch": 5,
+        "GeometryNodeSeparateComponents": 1,
+        "FunctionNodeRandomValue": 2,
+        "ShaderNodeMapRange": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeCurveSplineType": 2,
+        "GeometryNodeSetSplineResolution": 1,
+        "GeometryNodeJoinGeometry": 1,
+        "GeometryNodeCaptureAttribute": 2,
+        "GeometryNodeInputSplineResolution": 1,
+        "GeometryNodeViewer": 1
+      },
+      "nestedGroupNames": [
+        "Create Guide Index Map",
+        "Curve Info",
+        "Curve Root",
+        "Restore Curve Segment Length",
+        "shape_range"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Create Guide Index Map",
+      "nodes": 80,
+      "nodeTypes": {
+        "NodeFrame": 3,
+        "GeometryNodeSampleNearest": 3,
+        "GeometryNodeCaptureAttribute": 4,
+        "GeometryNodeSampleIndex": 3,
+        "GeometryNodeInputIndex": 3,
+        "NodeReroute": 21,
+        "GeometryNodeCurveOfPoint": 2,
+        "GeometryNodeFieldOnDomain": 1,
+        "GeometryNodeDeleteGeometry": 3,
+        "GeometryNodeCurveToPoints": 2,
+        "NodeGroupInput": 5,
+        "FunctionNodeCompare": 7,
+        "GeometryNodeSetPointRadius": 1,
+        "FunctionNodeRandomValue": 2,
+        "FunctionNodeBooleanMath": 1,
+        "GeometryNodeMergeByDistance": 1,
+        "GeometryNodeSwitch": 2,
+        "GeometryNodeViewer": 3,
+        "GeometryNodeSeparateGeometry": 1,
+        "GeometryNodeSeparateComponents": 2,
+        "GeometryNodeMeshToPoints": 1,
+        "GeometryNodeJoinGeometry": 2,
+        "GeometryNodeAttributeDomainSize": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeAccumulateField": 1,
+        "GeometryNodeInputPosition": 1,
+        "ShaderNodeVectorMath": 2,
+        "GeometryNodeSetPosition": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Create Guide Index Map.002",
+      "nodes": 80,
+      "nodeTypes": {
+        "NodeFrame": 3,
+        "GeometryNodeSampleNearest": 3,
+        "GeometryNodeCaptureAttribute": 4,
+        "GeometryNodeSampleIndex": 3,
+        "GeometryNodeInputIndex": 3,
+        "NodeReroute": 21,
+        "GeometryNodeCurveOfPoint": 2,
+        "GeometryNodeFieldOnDomain": 1,
+        "GeometryNodeDeleteGeometry": 3,
+        "GeometryNodeCurveToPoints": 2,
+        "NodeGroupInput": 5,
+        "FunctionNodeCompare": 7,
+        "GeometryNodeSetPointRadius": 1,
+        "FunctionNodeRandomValue": 2,
+        "FunctionNodeBooleanMath": 1,
+        "GeometryNodeMergeByDistance": 1,
+        "GeometryNodeSwitch": 2,
+        "GeometryNodeViewer": 3,
+        "GeometryNodeSeparateGeometry": 1,
+        "GeometryNodeSeparateComponents": 2,
+        "GeometryNodeMeshToPoints": 1,
+        "GeometryNodeJoinGeometry": 2,
+        "GeometryNodeAttributeDomainSize": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeAccumulateField": 1,
+        "GeometryNodeInputPosition": 1,
+        "ShaderNodeVectorMath": 2,
+        "GeometryNodeSetPosition": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Create Guide Index Map.003",
+      "nodes": 99,
+      "nodeTypes": {
+        "NodeFrame": 7,
+        "GeometryNodeCaptureAttribute": 7,
+        "FunctionNodeCompare": 5,
+        "GeometryNodeInputIndex": 3,
+        "NodeReroute": 28,
+        "GeometryNodeJoinGeometry": 2,
+        "GeometryNodeSeparateGeometry": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeSetPosition": 3,
+        "GeometryNodeSwitch": 4,
+        "ShaderNodeVectorMath": 4,
+        "GeometryNodeMergeByDistance": 2,
+        "NodeGroupInput": 8,
+        "GeometryNodeSeparateComponents": 2,
+        "GeometryNodeCurveToPoints": 2,
+        "GeometryNodeMeshToPoints": 1,
+        "GeometryNodeAttributeDomainSize": 1,
+        "GeometryNodeSampleNearest": 4,
+        "GeometryNodeSampleIndex": 5,
+        "ShaderNodeMath": 3,
+        "FunctionNodeBooleanMath": 1,
+        "FunctionNodeRandomValue": 1,
+        "GeometryNodeDeleteGeometry": 1,
+        "GeometryNodeInputPosition": 1,
+        "GeometryNodeFieldAtIndex": 1,
+        "GeometryNodeAccumulateField": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Curl Hair Curves",
+      "nodes": 125,
+      "nodeTypes": {
+        "NodeFrame": 12,
+        "NodeReroute": 27,
+        "GeometryNodeSeparateComponents": 1,
+        "NodeGroupInput": 14,
+        "GeometryNodeStoreNamedAttribute": 1,
+        "GeometryNodeInputNamedAttribute": 1,
+        "FunctionNodeBooleanMath": 2,
+        "GeometryNodeSampleIndex": 3,
+        "GeometryNodeAccumulateField": 3,
+        "FunctionNodeCompare": 3,
+        "GeometryNodeGroup": 4,
+        "GeometryNodeSwitch": 3,
+        "GeometryNodeSubdivideCurve": 1,
+        "ShaderNodeMath": 14,
+        "GeometryNodeCaptureAttribute": 4,
+        "GeometryNodeInputRadius": 1,
+        "GeometryNodeInputSplineResolution": 1,
+        "GeometryNodeCurveSplineType": 2,
+        "GeometryNodeJoinGeometry": 1,
+        "GeometryNodeSampleCurve": 1,
+        "GeometryNodeSplineParameter": 3,
+        "GeometryNodeSetSplineResolution": 1,
+        "GeometryNodeInputPosition": 1,
+        "ShaderNodeVectorMath": 9,
+        "ShaderNodeSeparateXYZ": 1,
+        "GeometryNodeSetPosition": 1,
+        "ShaderNodeMapRange": 2,
+        "NodeGroupOutput": 1,
+        "FunctionNodeRandomValue": 3,
+        "GeometryNodeFieldOnDomain": 2,
+        "ShaderNodeCombineXYZ": 1,
+        "GeometryNodeCurveOfPoint": 1
+      },
+      "nestedGroupNames": [
+        "Create Guide Index Map.003",
+        "Curve Info.003",
+        "Curve Segment.003"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "curly hair",
+      "nodes": 36,
+      "nodeTypes": {
+        "NodeFrame": 11,
+        "NodeGroupOutput": 1,
+        "FunctionNodeRandomValue": 1,
+        "GeometryNodeSeparateGeometry": 1,
+        "GeometryNodeGroup": 6,
+        "GeometryNodeInputNamedAttribute": 2,
+        "NodeReroute": 6,
+        "ShaderNodeMath": 1,
+        "GeometryNodeImageTexture": 1,
+        "ShaderNodeMapRange": 1,
+        "GeometryNodeSplineParameter": 1,
+        "ShaderNodeValToRGB": 1,
+        "GeometryNodeJoinGeometry": 1,
+        "NodeGroupInput": 2
+      },
+      "nestedGroupNames": [
+        "Curl Hair Curves",
+        "Hair Curves Noise",
+        "Interpolate Hair Curves",
+        "Roll Hair Curves",
+        "Set Hair Curve Profile",
+        "Snap hair to parting edges - Bystedt"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Curve Info",
+      "nodes": 16,
+      "nodeTypes": {
+        "GeometryNodeFieldAtIndex": 2,
+        "GeometryNodeFieldOnDomain": 3,
+        "GeometryNodeInputIndex": 1,
+        "GeometryNodeSplineLength": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeInputNamedAttribute": 1,
+        "GeometryNodeGroup": 3,
+        "ShaderNodeVectorMath": 2,
+        "GeometryNodeInputID": 1,
+        "FunctionNodeRandomValue": 1
+      },
+      "nestedGroupNames": [
+        "Curve Root",
+        "Curve Tip"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Curve Info.001",
+      "nodes": 16,
+      "nodeTypes": {
+        "GeometryNodeFieldAtIndex": 2,
+        "GeometryNodeFieldOnDomain": 3,
+        "GeometryNodeInputIndex": 1,
+        "GeometryNodeSplineLength": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeInputNamedAttribute": 1,
+        "GeometryNodeGroup": 3,
+        "ShaderNodeVectorMath": 2,
+        "GeometryNodeInputID": 1,
+        "FunctionNodeRandomValue": 1
+      },
+      "nestedGroupNames": [
+        "Curve Root.002",
+        "Curve Tip.001"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Curve Info.003",
+      "nodes": 19,
+      "nodeTypes": {
+        "NodeFrame": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeInputNamedAttribute": 1,
+        "GeometryNodeGroup": 4,
+        "GeometryNodeFieldAtIndex": 2,
+        "GeometryNodeFieldOnDomain": 3,
+        "FunctionNodeRandomValue": 1,
+        "NodeReroute": 1,
+        "ShaderNodeVectorMath": 2,
+        "GeometryNodeInputIndex": 1,
+        "GeometryNodeSplineLength": 1,
+        "GeometryNodeInputID": 1
+      },
+      "nestedGroupNames": [
+        "Curve Root.004",
+        "Curve Tip.003"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Curve Root",
+      "nodes": 10,
+      "nodeTypes": {
+        "GeometryNodeInputPosition": 1,
+        "GeometryNodeFieldOnDomain": 3,
+        "GeometryNodePointsOfCurve": 1,
+        "GeometryNodeFieldAtIndex": 2,
+        "GeometryNodeInputTangent": 1,
+        "GeometryNodeCurveEndpointSelection": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Curve Root.001",
+      "nodes": 10,
+      "nodeTypes": {
+        "GeometryNodeInputPosition": 1,
+        "GeometryNodeFieldOnDomain": 3,
+        "GeometryNodePointsOfCurve": 1,
+        "GeometryNodeFieldAtIndex": 2,
+        "GeometryNodeInputTangent": 1,
+        "GeometryNodeCurveEndpointSelection": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Curve Root.002",
+      "nodes": 10,
+      "nodeTypes": {
+        "GeometryNodeInputPosition": 1,
+        "GeometryNodeFieldOnDomain": 3,
+        "GeometryNodePointsOfCurve": 1,
+        "GeometryNodeFieldAtIndex": 2,
+        "GeometryNodeInputTangent": 1,
+        "GeometryNodeCurveEndpointSelection": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Curve Root.004",
+      "nodes": 10,
+      "nodeTypes": {
+        "GeometryNodeInputPosition": 1,
+        "GeometryNodeFieldOnDomain": 3,
+        "GeometryNodeFieldAtIndex": 2,
+        "GeometryNodeInputTangent": 1,
+        "GeometryNodeCurveEndpointSelection": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodePointsOfCurve": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Curve Segment",
+      "nodes": 20,
+      "nodeTypes": {
+        "ShaderNodeVectorMath": 3,
+        "NodeReroute": 4,
+        "GeometryNodeFieldAtIndex": 1,
+        "GeometryNodeFieldOnDomain": 3,
+        "NodeGroupOutput": 1,
+        "GeometryNodeInputPosition": 1,
+        "GeometryNodeSwitch": 4,
+        "FunctionNodeInputBool": 1,
+        "GeometryNodeInputIndex": 1,
+        "GeometryNodeOffsetPointInCurve": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Curve Segment.002",
+      "nodes": 20,
+      "nodeTypes": {
+        "ShaderNodeVectorMath": 3,
+        "NodeReroute": 4,
+        "GeometryNodeFieldAtIndex": 1,
+        "GeometryNodeFieldOnDomain": 3,
+        "NodeGroupOutput": 1,
+        "GeometryNodeInputPosition": 1,
+        "GeometryNodeSwitch": 4,
+        "FunctionNodeInputBool": 1,
+        "GeometryNodeInputIndex": 1,
+        "GeometryNodeOffsetPointInCurve": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Curve Segment.003",
+      "nodes": 20,
+      "nodeTypes": {
+        "ShaderNodeVectorMath": 3,
+        "NodeReroute": 4,
+        "GeometryNodeFieldAtIndex": 1,
+        "GeometryNodeFieldOnDomain": 3,
+        "NodeGroupOutput": 1,
+        "GeometryNodeSwitch": 4,
+        "FunctionNodeInputBool": 1,
+        "GeometryNodeInputIndex": 1,
+        "GeometryNodeOffsetPointInCurve": 1,
+        "GeometryNodeInputPosition": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Curve Tip",
+      "nodes": 10,
+      "nodeTypes": {
+        "GeometryNodeInputPosition": 1,
+        "GeometryNodePointsOfCurve": 1,
+        "GeometryNodeFieldOnDomain": 3,
+        "GeometryNodeFieldAtIndex": 2,
+        "GeometryNodeInputTangent": 1,
+        "GeometryNodeCurveEndpointSelection": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Curve Tip.001",
+      "nodes": 10,
+      "nodeTypes": {
+        "GeometryNodeInputPosition": 1,
+        "GeometryNodePointsOfCurve": 1,
+        "GeometryNodeFieldOnDomain": 3,
+        "GeometryNodeFieldAtIndex": 2,
+        "GeometryNodeInputTangent": 1,
+        "GeometryNodeCurveEndpointSelection": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Curve Tip.003",
+      "nodes": 10,
+      "nodeTypes": {
+        "GeometryNodeInputPosition": 1,
+        "GeometryNodeFieldOnDomain": 3,
+        "GeometryNodeFieldAtIndex": 2,
+        "GeometryNodeInputTangent": 1,
+        "GeometryNodeCurveEndpointSelection": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodePointsOfCurve": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "curves to hair DABY",
+      "nodes": 56,
+      "nodeTypes": {
+        "NodeFrame": 5,
+        "NodeReroute": 9,
+        "GeometryNodeRemoveAttribute": 10,
+        "NodeGroupOutput": 1,
+        "GeometryNodeGroup": 4,
+        "NodeGroupInput": 7,
+        "GeometryNodeSampleNearestSurface": 2,
+        "GeometryNodeInputNamedAttribute": 1,
+        "GeometryNodeObjectInfo": 3,
+        "GeometryNodeSetPosition": 3,
+        "GeometryNodeInputPosition": 3,
+        "ShaderNodeVectorMath": 2,
+        "GeometryNodeJoinGeometry": 2,
+        "GeometryNodeSwitch": 2,
+        "GeometryNodeStoreNamedAttribute": 1,
+        "GeometryNodeMeshToCurve": 1
+      },
+      "nestedGroupNames": [
+        "Curve Root.001",
+        "Set Hair Curve Profile.001"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Displace Hair Curves",
+      "nodes": 53,
+      "nodeTypes": {
+        "NodeFrame": 5,
+        "GeometryNodeJoinGeometry": 1,
+        "NodeReroute": 10,
+        "NodeGroupOutput": 1,
+        "GeometryNodeSeparateComponents": 1,
+        "NodeGroupInput": 9,
+        "FunctionNodeCompare": 3,
+        "GeometryNodeAttributeDomainSize": 2,
+        "GeometryNodeSwitch": 3,
+        "GeometryNodeObjectInfo": 2,
+        "GeometryNodeSplineParameter": 1,
+        "GeometryNodeGroup": 2,
+        "ShaderNodeVectorMath": 6,
+        "ShaderNodeVectorRotate": 1,
+        "GeometryNodeCaptureAttribute": 1,
+        "GeometryNodeInputSplineResolution": 1,
+        "GeometryNodeCurveSplineType": 2,
+        "GeometryNodeSetSplineResolution": 1,
+        "GeometryNodeSetPosition": 1
+      },
+      "nestedGroupNames": [
+        "Hair Attachment Info.003",
+        "shape_range.004"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Duplicate Hair Curves",
+      "nodes": 85,
+      "nodeTypes": {
+        "NodeFrame": 5,
+        "NodeReroute": 13,
+        "NodeGroupInput": 8,
+        "NodeGroupOutput": 1,
+        "GeometryNodeSeparateComponents": 1,
+        "ShaderNodeMath": 9,
+        "ShaderNodeSeparateXYZ": 3,
+        "ShaderNodeCombineXYZ": 2,
+        "ShaderNodeVectorRotate": 1,
+        "ShaderNodeVectorMath": 15,
+        "GeometryNodeSetPosition": 2,
+        "GeometryNodeInputNormal": 2,
+        "GeometryNodeInputTangent": 2,
+        "GeometryNodeGroup": 2,
+        "GeometryNodeFieldOnDomain": 2,
+        "GeometryNodeFieldAtIndex": 1,
+        "GeometryNodeIsViewport": 1,
+        "GeometryNodeSwitch": 2,
+        "GeometryNodeInputID": 1,
+        "GeometryNodeJoinGeometry": 2,
+        "GeometryNodeSetID": 1,
+        "GeometryNodeStoreNamedAttribute": 1,
+        "GeometryNodeCaptureAttribute": 3,
+        "FunctionNodeRandomValue": 3,
+        "GeometryNodeDuplicateElements": 1,
+        "GeometryNodeInputIndex": 1
+      },
+      "nestedGroupNames": [
+        "Curve Info.003",
+        "Curve Root.004"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Eeybrows",
+      "nodes": 10,
+      "nodeTypes": {
+        "NodeGroupInput": 1,
+        "GeometryNodeGroup": 4,
+        "NodeGroupOutput": 1,
+        "GeometryNodeObjectInfo": 1,
+        "NodeReroute": 1,
+        "GeometryNodeInputNamedAttribute": 2
+      },
+      "nestedGroupNames": [
+        "Hair Attachment Info.001",
+        "Interpolate Hair Curves.001",
+        "Rotate Hair Curves",
+        "Set Hair Curve Profile.003"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "eyelashes",
+      "nodes": 8,
+      "nodeTypes": {
+        "GeometryNodeGroup": 4,
+        "ShaderNodeMath": 1,
+        "NodeGroupOutput": 1,
+        "NodeGroupInput": 1,
+        "ShaderNodeMapRange": 1
+      },
+      "nestedGroupNames": [
+        "Clump Hair Curves.003",
+        "Curve Info",
+        "Interpolate Hair Curves.003",
+        "Set Hair Curve Profile"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "hair",
+      "nodes": 72,
+      "nodeTypes": {
+        "NodeFrame": 21,
+        "NodeReroute": 21,
+        "GeometryNodeGroup": 14,
+        "NodeGroupInput": 2,
+        "NodeGroupOutput": 1,
+        "ShaderNodeValue": 1,
+        "GeometryNodeJoinGeometry": 2,
+        "ShaderNodeMapRange": 3,
+        "GeometryNodeInputNamedAttribute": 2,
+        "GeometryNodeSplineParameter": 1,
+        "FunctionNodeRandomValue": 1,
+        "GeometryNodeSeparateGeometry": 1,
+        "GeometryNodeImageTexture": 1,
+        "GeometryNodeObjectInfo": 1
+      },
+      "nestedGroupNames": [
+        "Clump Hair Curves",
+        "Curve Info.003",
+        "Duplicate Hair Curves",
+        "Hair Curves Noise",
+        "Interpolate Hair Curves",
+        "Roll Hair Curves",
+        "Set Hair Curve Profile.004",
+        "Shrinkwrap Hair Curves",
+        "Snap hair to parting edges - Bystedt",
+        "Trim Hair Curves"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Hair Attachment Info",
+      "nodes": 12,
+      "nodeTypes": {
+        "NodeFrame": 1,
+        "NodeGroupInput": 2,
+        "GeometryNodeInputNamedAttribute": 3,
+        "GeometryNodeFieldOnDomain": 1,
+        "GeometryNodeSwitch": 1,
+        "GeometryNodeInputNormal": 1,
+        "GeometryNodeCaptureAttribute": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeSampleUVSurface": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Hair Attachment Info.001",
+      "nodes": 12,
+      "nodeTypes": {
+        "NodeFrame": 1,
+        "NodeGroupInput": 2,
+        "GeometryNodeInputNamedAttribute": 3,
+        "GeometryNodeFieldOnDomain": 1,
+        "GeometryNodeSwitch": 1,
+        "GeometryNodeInputNormal": 1,
+        "GeometryNodeCaptureAttribute": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeSampleUVSurface": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Hair Attachment Info.003",
+      "nodes": 12,
+      "nodeTypes": {
+        "NodeFrame": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeInputNamedAttribute": 3,
+        "GeometryNodeFieldOnDomain": 1,
+        "NodeGroupInput": 2,
+        "GeometryNodeInputNormal": 1,
+        "GeometryNodeCaptureAttribute": 1,
+        "GeometryNodeSwitch": 1,
+        "GeometryNodeSampleUVSurface": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Hair Curves Noise",
+      "nodes": 97,
+      "nodeTypes": {
+        "NodeFrame": 8,
+        "NodeReroute": 14,
+        "GeometryNodeSeparateComponents": 1,
+        "NodeGroupInput": 11,
+        "GeometryNodeJoinGeometry": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeSwitch": 3,
+        "FunctionNodeBooleanMath": 1,
+        "GeometryNodeGroup": 5,
+        "GeometryNodeSampleIndex": 1,
+        "FunctionNodeCompare": 3,
+        "GeometryNodeAccumulateField": 2,
+        "GeometryNodeSetSplineResolution": 1,
+        "GeometryNodeCurveSplineType": 2,
+        "GeometryNodeCaptureAttribute": 3,
+        "GeometryNodeInputPosition": 2,
+        "ShaderNodeVectorMath": 20,
+        "GeometryNodeInputSplineResolution": 1,
+        "GeometryNodeFieldOnDomain": 1,
+        "GeometryNodeSplineParameter": 2,
+        "ShaderNodeMath": 4,
+        "ShaderNodeTexNoise": 1,
+        "GeometryNodeInputTangent": 1,
+        "GeometryNodeInputNormal": 1,
+        "ShaderNodeSeparateXYZ": 1,
+        "GeometryNodeCurveOfPoint": 1,
+        "GeometryNodeSetPosition": 1,
+        "GeometryNodeFieldAtIndex": 1,
+        "FunctionNodeRandomValue": 3
+      },
+      "nestedGroupNames": [
+        "Curve Info.003",
+        "Curve Root.004",
+        "Restore Curve Segment Length.003",
+        "shape_range.004"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Hair shader EEVEE",
+      "nodes": 59,
+      "nodeTypes": {
+        "NodeFrame": 8,
+        "NodeReroute": 15,
+        "ShaderNodeMix": 4,
+        "ShaderNodeHueSaturation": 3,
+        "ShaderNodeHairInfo": 4,
+        "ShaderNodeMapRange": 4,
+        "ShaderNodeMath": 9,
+        "ShaderNodeBsdfTranslucent": 1,
+        "ShaderNodeBsdfPrincipled": 1,
+        "ShaderNodeValToRGB": 2,
+        "NodeGroupInput": 3,
+        "ShaderNodeAddShader": 1,
+        "NodeGroupOutput": 1,
+        "ShaderNodeBsdfHairPrincipled": 1,
+        "ShaderNodeTexNoise": 1,
+        "ShaderNodeAttribute": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "hair to mesh DABY",
+      "nodes": 6,
+      "nodeTypes": {
+        "GeometryNodeObjectInfo": 1,
+        "NodeGroupInput": 2,
+        "NodeGroupOutput": 1,
+        "GeometryNodeResampleCurve": 1,
+        "GeometryNodeCurveToMesh": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Image to ID",
+      "nodes": 18,
+      "nodeTypes": {
+        "NodeGroupInput": 1,
+        "GeometryNodeInputNamedAttribute": 2,
+        "GeometryNodeImageTexture": 2,
+        "ShaderNodeSeparateXYZ": 2,
+        "ShaderNodeMath": 5,
+        "ShaderNodeMapRange": 3,
+        "FunctionNodeFloatToInt": 1,
+        "NodeReroute": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Interpolate Hair Curves.001",
+      "nodes": 172,
+      "nodeTypes": {
+        "NodeFrame": 10,
+        "NodeReroute": 42,
+        "NodeGroupInput": 16,
+        "GeometryNodeSeparateComponents": 1,
+        "GeometryNodeJoinGeometry": 2,
+        "NodeGroupOutput": 1,
+        "GeometryNodeSetPosition": 3,
+        "GeometryNodeInputNamedAttribute": 2,
+        "GeometryNodeSwitch": 14,
+        "FunctionNodeCompare": 9,
+        "GeometryNodeCaptureAttribute": 9,
+        "FunctionNodeBooleanMath": 3,
+        "GeometryNodeSeparateGeometry": 1,
+        "GeometryNodeInputID": 1,
+        "FunctionNodeRandomValue": 3,
+        "GeometryNodeSetID": 1,
+        "GeometryNodeInputIndex": 3,
+        "GeometryNodeCurveOfPoint": 2,
+        "GeometryNodeInterpolateCurves": 2,
+        "GeometryNodeIsViewport": 1,
+        "GeometryNodeInputMeshIsland": 1,
+        "ShaderNodeMath": 7,
+        "ShaderNodeClamp": 1,
+        "GeometryNodeDistributePointsOnFaces": 2,
+        "GeometryNodeInputNormal": 1,
+        "GeometryNodeSampleUVSurface": 2,
+        "GeometryNodeDeleteGeometry": 4,
+        "GeometryNodeSampleNearest": 6,
+        "GeometryNodeStoreNamedAttribute": 1,
+        "GeometryNodeAttributeDomainSize": 2,
+        "GeometryNodeObjectInfo": 1,
+        "GeometryNodeImageTexture": 1,
+        "GeometryNodeImageInfo": 1,
+        "GeometryNodeSampleIndex": 6,
+        "GeometryNodeInputPosition": 2,
+        "ShaderNodeVectorMath": 2,
+        "GeometryNodeGroup": 2,
+        "GeometryNodeProximity": 1,
+        "GeometryNodeCurveToPoints": 2,
+        "GeometryNodeAccumulateField": 1
+      },
+      "nestedGroupNames": [
+        "Curve Info.001",
+        "Hair Attachment Info.001"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Interpolate Hair Curves",
+      "nodes": 194,
+      "nodeTypes": {
+        "NodeFrame": 14,
+        "NodeGroupInput": 18,
+        "GeometryNodeSeparateComponents": 1,
+        "GeometryNodeJoinGeometry": 2,
+        "NodeReroute": 62,
+        "GeometryNodeCaptureAttribute": 9,
+        "GeometryNodeInputNamedAttribute": 2,
+        "GeometryNodeSetPosition": 3,
+        "GeometryNodeSwitch": 14,
+        "FunctionNodeBooleanMath": 3,
+        "FunctionNodeCompare": 8,
+        "GeometryNodeAttributeDomainSize": 2,
+        "GeometryNodeObjectInfo": 1,
+        "GeometryNodeInterpolateCurves": 2,
+        "GeometryNodeDeleteGeometry": 3,
+        "GeometryNodeImageTexture": 1,
+        "GeometryNodeImageInfo": 1,
+        "FunctionNodeRandomValue": 3,
+        "GeometryNodeCurveToPoints": 1,
+        "GeometryNodeSeparateGeometry": 1,
+        "GeometryNodeStoreNamedAttribute": 1,
+        "ShaderNodeMath": 7,
+        "GeometryNodeSampleUVSurface": 2,
+        "GeometryNodeGroup": 2,
+        "GeometryNodeSampleNearest": 6,
+        "GeometryNodeSampleIndex": 6,
+        "GeometryNodeInputIndex": 3,
+        "GeometryNodeInputNormal": 1,
+        "GeometryNodeAccumulateField": 1,
+        "GeometryNodeProximity": 1,
+        "GeometryNodeDistributePointsOnFaces": 2,
+        "ShaderNodeClamp": 1,
+        "GeometryNodeIsViewport": 1,
+        "GeometryNodeInputMeshIsland": 1,
+        "GeometryNodeInputPosition": 2,
+        "ShaderNodeVectorMath": 2,
+        "GeometryNodeInputID": 1,
+        "GeometryNodeCurveOfPoint": 1,
+        "GeometryNodeSetID": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [
+        "Curve Info.003",
+        "Hair Attachment Info.003"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Interpolate Hair Curves.003",
+      "nodes": 173,
+      "nodeTypes": {
+        "NodeFrame": 10,
+        "NodeReroute": 42,
+        "NodeGroupInput": 16,
+        "GeometryNodeSeparateComponents": 1,
+        "GeometryNodeJoinGeometry": 2,
+        "NodeGroupOutput": 1,
+        "GeometryNodeSetPosition": 3,
+        "GeometryNodeSwitch": 14,
+        "FunctionNodeCompare": 9,
+        "GeometryNodeCaptureAttribute": 9,
+        "FunctionNodeBooleanMath": 3,
+        "GeometryNodeSeparateGeometry": 1,
+        "GeometryNodeInputID": 1,
+        "GeometryNodeInputIndex": 3,
+        "GeometryNodeCurveOfPoint": 2,
+        "GeometryNodeInterpolateCurves": 2,
+        "GeometryNodeIsViewport": 1,
+        "ShaderNodeMath": 7,
+        "ShaderNodeClamp": 1,
+        "GeometryNodeInputNormal": 1,
+        "GeometryNodeDeleteGeometry": 4,
+        "GeometryNodeSampleNearest": 6,
+        "GeometryNodeStoreNamedAttribute": 1,
+        "GeometryNodeAttributeDomainSize": 2,
+        "GeometryNodeObjectInfo": 1,
+        "GeometryNodeImageTexture": 1,
+        "GeometryNodeImageInfo": 1,
+        "FunctionNodeRandomValue": 3,
+        "GeometryNodeSampleIndex": 6,
+        "GeometryNodeInputPosition": 2,
+        "ShaderNodeVectorMath": 2,
+        "GeometryNodeSampleUVSurface": 2,
+        "GeometryNodeCurveToPoints": 2,
+        "GeometryNodeAccumulateField": 1,
+        "GeometryNodeInputNamedAttribute": 2,
+        "GeometryNodeInputMeshIsland": 1,
+        "GeometryNodeViewer": 1,
+        "GeometryNodeDistributePointsOnFaces": 2,
+        "GeometryNodeProximity": 1,
+        "GeometryNodeGroup": 2,
+        "GeometryNodeSetID": 1
+      },
+      "nestedGroupNames": [
+        "Curve Info",
+        "Hair Attachment Info"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "interpolate hair DABY",
+      "nodes": 29,
+      "nodeTypes": {
+        "NodeFrame": 4,
+        "NodeReroute": 8,
+        "GeometryNodeInputNamedAttribute": 2,
+        "GeometryNodeObjectInfo": 2,
+        "GeometryNodeInputMeshIsland": 2,
+        "NodeGroupInput": 4,
+        "GeometryNodeCaptureAttribute": 1,
+        "ShaderNodeMath": 1,
+        "GeometryNodeRemoveAttribute": 1,
+        "GeometryNodeSampleUVSurface": 1,
+        "GeometryNodeDistributePointsOnFaces": 1,
+        "GeometryNodeInterpolateCurves": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "mark points debug",
+      "nodes": 7,
+      "nodeTypes": {
+        "GeometryNodeInstanceOnPoints": 1,
+        "GeometryNodeMeshIcoSphere": 1,
+        "NodeGroupInput": 1,
+        "NodeReroute": 2,
+        "GeometryNodeJoinGeometry": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Redistribute Curve Points",
+      "nodes": 36,
+      "nodeTypes": {
+        "NodeFrame": 3,
+        "NodeGroupOutput": 1,
+        "GeometryNodeSetPosition": 1,
+        "FunctionNodeBooleanMath": 3,
+        "GeometryNodeCurveEndpointSelection": 2,
+        "FunctionNodeCompare": 1,
+        "NodeGroupInput": 4,
+        "NodeReroute": 1,
+        "GeometryNodeSplineParameter": 3,
+        "GeometryNodeSwitch": 1,
+        "ShaderNodeMix": 1,
+        "ShaderNodeMath": 4,
+        "GeometryNodePointsOfCurve": 1,
+        "GeometryNodeFieldOnDomain": 2,
+        "GeometryNodeInputIndex": 2,
+        "ShaderNodeVectorMath": 1,
+        "GeometryNodeGroup": 1,
+        "GeometryNodeInputTangent": 1,
+        "GeometryNodeBlurAttribute": 1,
+        "ShaderNodeMapRange": 1,
+        "GeometryNodeSampleCurve": 1
+      },
+      "nestedGroupNames": [
+        "Curve Segment.002"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Redistribute Curve Points.001",
+      "nodes": 36,
+      "nodeTypes": {
+        "NodeFrame": 5,
+        "NodeGroupInput": 4,
+        "GeometryNodeBlurAttribute": 1,
+        "GeometryNodeSplineParameter": 3,
+        "GeometryNodeSetPosition": 1,
+        "NodeReroute": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeSampleCurve": 1,
+        "GeometryNodeGroup": 3,
+        "ShaderNodeMix": 1,
+        "GeometryNodeSwitch": 1,
+        "ShaderNodeMath": 4,
+        "GeometryNodePointsOfCurve": 1,
+        "GeometryNodeCurveEndpointSelection": 2,
+        "GeometryNodeInputTangent": 1,
+        "FunctionNodeBooleanMath": 3,
+        "ShaderNodeMapRange": 1,
+        "ShaderNodeVectorMath": 1,
+        "FunctionNodeCompare": 1
+      },
+      "nestedGroupNames": [
+        "Curve Info.003",
+        "Curve Segment.003"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Restore Curve Segment Length",
+      "nodes": 56,
+      "nodeTypes": {
+        "NodeFrame": 3,
+        "NodeReroute": 15,
+        "GeometryNodeInputPosition": 1,
+        "GeometryNodeInputNamedAttribute": 1,
+        "GeometryNodeSwitch": 4,
+        "FunctionNodeCompare": 5,
+        "NodeGroupInput": 6,
+        "GeometryNodeInputIndex": 2,
+        "GeometryNodeSampleCurve": 1,
+        "ShaderNodeVectorMath": 3,
+        "GeometryNodeFieldOnDomain": 1,
+        "FunctionNodeBooleanMath": 2,
+        "GeometryNodeFieldAtIndex": 1,
+        "GeometryNodeAccumulateField": 1,
+        "ShaderNodeMix": 1,
+        "GeometryNodeCurveOfPoint": 2,
+        "ShaderNodeMath": 1,
+        "GeometryNodeGroup": 2,
+        "GeometryNodeSetPosition": 2,
+        "GeometryNodeAttributeStatistic": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [
+        "Curve Root",
+        "Curve Segment"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Restore Curve Segment Length.002",
+      "nodes": 56,
+      "nodeTypes": {
+        "NodeFrame": 3,
+        "NodeReroute": 15,
+        "GeometryNodeInputPosition": 1,
+        "GeometryNodeInputNamedAttribute": 1,
+        "GeometryNodeSwitch": 4,
+        "FunctionNodeCompare": 5,
+        "NodeGroupInput": 6,
+        "GeometryNodeInputIndex": 2,
+        "GeometryNodeSampleCurve": 1,
+        "ShaderNodeVectorMath": 3,
+        "GeometryNodeFieldOnDomain": 1,
+        "FunctionNodeBooleanMath": 2,
+        "GeometryNodeFieldAtIndex": 1,
+        "GeometryNodeAccumulateField": 1,
+        "ShaderNodeMix": 1,
+        "GeometryNodeCurveOfPoint": 2,
+        "ShaderNodeMath": 1,
+        "GeometryNodeGroup": 2,
+        "GeometryNodeSetPosition": 2,
+        "GeometryNodeAttributeStatistic": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [
+        "Curve Root.002",
+        "Curve Segment.002"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Restore Curve Segment Length.003",
+      "nodes": 53,
+      "nodeTypes": {
+        "NodeFrame": 3,
+        "NodeReroute": 12,
+        "NodeGroupInput": 6,
+        "GeometryNodeInputIndex": 2,
+        "GeometryNodeSampleCurve": 1,
+        "ShaderNodeVectorMath": 3,
+        "GeometryNodeFieldOnDomain": 1,
+        "FunctionNodeCompare": 5,
+        "FunctionNodeBooleanMath": 2,
+        "GeometryNodeFieldAtIndex": 1,
+        "GeometryNodeAccumulateField": 1,
+        "GeometryNodeCurveOfPoint": 2,
+        "GeometryNodeSwitch": 4,
+        "ShaderNodeMath": 1,
+        "GeometryNodeSetPosition": 2,
+        "NodeGroupOutput": 1,
+        "GeometryNodeAttributeStatistic": 1,
+        "GeometryNodeGroup": 2,
+        "GeometryNodeInputPosition": 1,
+        "GeometryNodeInputNamedAttribute": 1,
+        "ShaderNodeMix": 1
+      },
+      "nestedGroupNames": [
+        "Curve Root.004",
+        "Curve Segment.003"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Roll Hair Curves",
+      "nodes": 157,
+      "nodeTypes": {
+        "NodeFrame": 13,
+        "NodeReroute": 32,
+        "FunctionNodeCompare": 6,
+        "GeometryNodeSwitch": 3,
+        "GeometryNodeCurveSplineType": 2,
+        "GeometryNodeSetSplineResolution": 1,
+        "GeometryNodeSeparateComponents": 1,
+        "NodeGroupInput": 16,
+        "GeometryNodeGroup": 7,
+        "GeometryNodeCaptureAttribute": 6,
+        "GeometryNodeSampleCurve": 1,
+        "GeometryNodeSetPosition": 2,
+        "GeometryNodeJoinGeometry": 1,
+        "NodeGroupOutput": 1,
+        "ShaderNodeVectorMath": 21,
+        "ShaderNodeCombineXYZ": 1,
+        "GeometryNodeInputTangent": 2,
+        "GeometryNodeInputNormal": 2,
+        "GeometryNodeInputPosition": 4,
+        "ShaderNodeMath": 20,
+        "FunctionNodeRandomValue": 2,
+        "ShaderNodeVectorRotate": 1,
+        "GeometryNodeFieldOnDomain": 3,
+        "ShaderNodeMix": 3,
+        "FunctionNodeBooleanMath": 1,
+        "GeometryNodeInputSplineResolution": 1,
+        "GeometryNodeAccumulateField": 1,
+        "ShaderNodeSeparateXYZ": 1,
+        "GeometryNodeSubdivideCurve": 1,
+        "GeometryNodeSplineParameter": 1
+      },
+      "nestedGroupNames": [
+        "Curve Info.003",
+        "Curve Segment.003",
+        "Restore Curve Segment Length.003",
+        "Smooth Hair Curves"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Rotate Hair Curves",
+      "nodes": 40,
+      "nodeTypes": {
+        "NodeFrame": 2,
+        "GeometryNodeInputPosition": 1,
+        "ShaderNodeMath": 3,
+        "NodeGroupInput": 3,
+        "FunctionNodeRandomValue": 1,
+        "GeometryNodeFieldOnDomain": 3,
+        "ShaderNodeVectorRotate": 1,
+        "GeometryNodeSwitch": 2,
+        "FunctionNodeCompare": 1,
+        "NodeReroute": 10,
+        "GeometryNodeSetPosition": 1,
+        "GeometryNodeSeparateComponents": 1,
+        "GeometryNodeInputSplineResolution": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeJoinGeometry": 1,
+        "GeometryNodeCurveSplineType": 2,
+        "GeometryNodeSetSplineResolution": 1,
+        "GeometryNodeCaptureAttribute": 1,
+        "GeometryNodeGroup": 4
+      },
+      "nestedGroupNames": [
+        "Curve Info.001",
+        "Curve Root.002"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Set Hair Curve Profile",
+      "nodes": 28,
+      "nodeTypes": {
+        "NodeFrame": 1,
+        "GeometryNodeInputRadius": 1,
+        "GeometryNodeSwitch": 1,
+        "NodeGroupInput": 1,
+        "ShaderNodeMath": 6,
+        "GeometryNodeGroup": 3,
+        "GeometryNodeSplineParameter": 3,
+        "ShaderNodeMix": 3,
+        "NodeReroute": 1,
+        "ShaderNodeValue": 6,
+        "NodeGroupOutput": 1,
+        "GeometryNodeSetCurveRadius": 1
+      },
+      "nestedGroupNames": [
+        "shape_range"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Set Hair Curve Profile.001",
+      "nodes": 28,
+      "nodeTypes": {
+        "NodeFrame": 1,
+        "GeometryNodeInputRadius": 1,
+        "GeometryNodeSwitch": 1,
+        "NodeGroupInput": 1,
+        "ShaderNodeMath": 6,
+        "GeometryNodeGroup": 3,
+        "GeometryNodeSplineParameter": 3,
+        "ShaderNodeMix": 3,
+        "NodeReroute": 1,
+        "ShaderNodeValue": 6,
+        "NodeGroupOutput": 1,
+        "GeometryNodeSetCurveRadius": 1
+      },
+      "nestedGroupNames": [
+        "shape_range.001"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Set Hair Curve Profile.003",
+      "nodes": 28,
+      "nodeTypes": {
+        "NodeFrame": 1,
+        "GeometryNodeInputRadius": 1,
+        "GeometryNodeSwitch": 1,
+        "NodeGroupInput": 1,
+        "ShaderNodeMath": 6,
+        "GeometryNodeGroup": 3,
+        "GeometryNodeSplineParameter": 3,
+        "ShaderNodeMix": 3,
+        "NodeReroute": 1,
+        "ShaderNodeValue": 6,
+        "NodeGroupOutput": 1,
+        "GeometryNodeSetCurveRadius": 1
+      },
+      "nestedGroupNames": [
+        "shape_range.003"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Set Hair Curve Profile.004",
+      "nodes": 13,
+      "nodeTypes": {
+        "GeometryNodeSwitch": 1,
+        "GeometryNodeInputRadius": 1,
+        "ShaderNodeMath": 2,
+        "NodeReroute": 2,
+        "GeometryNodeSetCurveRadius": 1,
+        "ShaderNodeMix": 1,
+        "GeometryNodeGroup": 1,
+        "NodeGroupInput": 2,
+        "GeometryNodeSplineParameter": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [
+        "shape_range.004"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "shape_range",
+      "nodes": 30,
+      "nodeTypes": {
+        "GeometryNodeSwitch": 4,
+        "ShaderNodeMath": 16,
+        "NodeReroute": 2,
+        "ShaderNodeMapRange": 2,
+        "FunctionNodeCompare": 3,
+        "FunctionNodeBooleanMath": 1,
+        "NodeGroupInput": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "shape_range.001",
+      "nodes": 30,
+      "nodeTypes": {
+        "GeometryNodeSwitch": 4,
+        "ShaderNodeMath": 16,
+        "NodeReroute": 2,
+        "ShaderNodeMapRange": 2,
+        "FunctionNodeCompare": 3,
+        "FunctionNodeBooleanMath": 1,
+        "NodeGroupInput": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "shape_range.003",
+      "nodes": 30,
+      "nodeTypes": {
+        "GeometryNodeSwitch": 4,
+        "ShaderNodeMath": 16,
+        "NodeReroute": 2,
+        "ShaderNodeMapRange": 2,
+        "FunctionNodeCompare": 3,
+        "FunctionNodeBooleanMath": 1,
+        "NodeGroupInput": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "shape_range.004",
+      "nodes": 30,
+      "nodeTypes": {
+        "GeometryNodeSwitch": 4,
+        "ShaderNodeMath": 16,
+        "NodeReroute": 2,
+        "ShaderNodeMapRange": 2,
+        "FunctionNodeCompare": 3,
+        "FunctionNodeBooleanMath": 1,
+        "NodeGroupInput": 1,
+        "NodeGroupOutput": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Shrinkwrap Hair Curves",
+      "nodes": 95,
+      "nodeTypes": {
+        "NodeFrame": 8,
+        "NodeReroute": 21,
+        "GeometryNodeSeparateComponents": 1,
+        "GeometryNodeJoinGeometry": 1,
+        "GeometryNodeInputPosition": 4,
+        "ShaderNodeVectorMath": 9,
+        "ShaderNodeMix": 1,
+        "NodeGroupInput": 9,
+        "GeometryNodeBlurAttribute": 2,
+        "ShaderNodeMath": 7,
+        "GeometryNodeSetPosition": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeAttributeDomainSize": 2,
+        "FunctionNodeCompare": 6,
+        "GeometryNodeSwitch": 5,
+        "GeometryNodeInputNormal": 1,
+        "GeometryNodeCaptureAttribute": 2,
+        "GeometryNodeProximity": 1,
+        "GeometryNodeSampleNearestSurface": 1,
+        "GeometryNodeGroup": 1,
+        "FunctionNodeBooleanMath": 5,
+        "ShaderNodeMapRange": 1,
+        "GeometryNodeObjectInfo": 1,
+        "GeometryNodeCurveSplineType": 2,
+        "GeometryNodeSetSplineResolution": 1,
+        "GeometryNodeInputSplineResolution": 1
+      },
+      "nestedGroupNames": [
+        "Curve Root.004"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Smooth Hair Curves",
+      "nodes": 88,
+      "nodeTypes": {
+        "NodeFrame": 8,
+        "NodeGroupInput": 12,
+        "GeometryNodeSeparateComponents": 1,
+        "NodeReroute": 22,
+        "GeometryNodeCaptureAttribute": 2,
+        "GeometryNodeInputPosition": 3,
+        "GeometryNodeSetSplineResolution": 1,
+        "GeometryNodeCurveSplineType": 2,
+        "FunctionNodeCompare": 6,
+        "GeometryNodeSwitch": 2,
+        "GeometryNodeGroup": 5,
+        "FunctionNodeBooleanMath": 7,
+        "GeometryNodeSplineParameter": 1,
+        "ShaderNodeMath": 3,
+        "GeometryNodeInputSplineResolution": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeJoinGeometry": 1,
+        "GeometryNodeAccumulateField": 1,
+        "GeometryNodeSampleIndex": 1,
+        "GeometryNodeSetPosition": 1,
+        "ShaderNodeVectorMath": 4,
+        "GeometryNodeBlurAttribute": 1,
+        "GeometryNodeFieldAtIndex": 2
+      },
+      "nestedGroupNames": [
+        "Curve Root.004",
+        "Curve Tip.003",
+        "Restore Curve Segment Length.003",
+        "shape_range.004"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Snap hair to parting edges - Bystedt",
+      "nodes": 31,
+      "nodeTypes": {
+        "NodeFrame": 3,
+        "GeometryNodeInputNamedAttribute": 1,
+        "ShaderNodeMapRange": 1,
+        "GeometryNodeInputPosition": 1,
+        "NodeReroute": 6,
+        "GeometryNodeGroup": 3,
+        "NodeGroupInput": 4,
+        "NodeGroupOutput": 1,
+        "FunctionNodeCompare": 2,
+        "GeometryNodeJoinGeometry": 1,
+        "GeometryNodeViewer": 1,
+        "FunctionNodeBooleanMath": 1,
+        "GeometryNodeSeparateGeometry": 1,
+        "ShaderNodeMix": 1,
+        "GeometryNodeSetPosition": 1,
+        "GeometryNodeProximity": 1,
+        "GeometryNodeObjectInfo": 1,
+        "GeometryNodeDeleteGeometry": 1
+      },
+      "nestedGroupNames": [
+        "Curve Info.001",
+        "Curve Root.002"
+      ],
+      "assetDescription": null
+    },
+    {
+      "name": "Surface Deform",
+      "nodes": 3,
+      "nodeTypes": {
+        "NodeGroupInput": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeDeformCurvesOnSurface": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Surface Deform.001",
+      "nodes": 3,
+      "nodeTypes": {
+        "NodeGroupInput": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeDeformCurvesOnSurface": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Surface Deform.002",
+      "nodes": 3,
+      "nodeTypes": {
+        "NodeGroupInput": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeDeformCurvesOnSurface": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Surface Deform.003",
+      "nodes": 3,
+      "nodeTypes": {
+        "NodeGroupInput": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeDeformCurvesOnSurface": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Surface Deform.004",
+      "nodes": 3,
+      "nodeTypes": {
+        "NodeGroupInput": 1,
+        "NodeGroupOutput": 1,
+        "GeometryNodeDeformCurvesOnSurface": 1
+      },
+      "nestedGroupNames": [],
+      "assetDescription": null
+    },
+    {
+      "name": "Trim Hair Curves",
+      "nodes": 102,
+      "nodeTypes": {
+        "NodeFrame": 5,
+        "GeometryNodeCaptureAttribute": 1,
+        "NodeGroupInput": 10,
+        "GeometryNodeJoinGeometry": 1,
+        "NodeGroupOutput": 1,
+        "NodeReroute": 30,
+        "GeometryNodeSwitch": 2,
+        "GeometryNodeSeparateComponents": 1,
+        "GeometryNodeGroup": 7,
+        "GeometryNodeSetPosition": 2,
+        "GeometryNodeInputPosition": 2,
+        "ShaderNodeVectorMath": 11,
+        "ShaderNodeMath": 17,
+        "GeometryNodeCurveOfPoint": 1,
+        "ShaderNodeMix": 2,
+        "GeometryNodeSplineLength": 1,
+        "GeometryNodeSampleCurve": 2,
+        "FunctionNodeCompare": 2,
+        "FunctionNodeBooleanMath": 2,
+        "FunctionNodeRandomValue": 2
+      },
+      "nestedGroupNames": [
+        "Curve Info.003",
+        "Curve Root.004",
+        "Curve Tip.003",
+        "Redistribute Curve Points.001"
+      ],
+      "assetDescription": null
+    }
+  ],
+  "textBlocks": [
+    {
+      "name": "Braid hair curves",
+      "length": 419,
+      "credit": null
+    },
+    {
+      "name": "Clump hair curves (small clumps)",
+      "length": 429,
+      "credit": null
+    },
+    {
+      "name": "Curl Hair Curves",
+      "length": 628,
+      "credit": null
+    },
+    {
+      "name": "Displace Hair Curves",
+      "length": 368,
+      "credit": null
+    },
+    {
+      "name": "Duplicate Hair Curves",
+      "length": 273,
+      "credit": null
+    },
+    {
+      "name": "Hair Curve Noise",
+      "length": 338,
+      "credit": null
+    },
+    {
+      "name": "Hair demo file info",
+      "length": 2342,
+      "credit": "Daniel Bystedt. CC BY-SA license"
+    },
+    {
+      "name": "Interpolate hair curves",
+      "length": 786,
+      "credit": null
+    },
+    {
+      "name": "Long hair clumping",
+      "length": 544,
+      "credit": null
+    },
+    {
+      "name": "Notes",
+      "length": 383,
+      "credit": null
+    },
+    {
+      "name": "Notes on fly away hair",
+      "length": 309,
+      "credit": null
+    },
+    {
+      "name": "Roll hair curves info",
+      "length": 190,
+      "credit": null
+    },
+    {
+      "name": "Set hair curve profile info",
+      "length": 148,
+      "credit": null
+    },
+    {
+      "name": "set node color",
+      "length": 216,
+      "credit": null
+    },
+    {
+      "name": "Shrinkwrap Hair Curves",
+      "length": 284,
+      "credit": null
+    },
+    {
+      "name": "Smooth Hair Curves",
+      "length": 290,
+      "credit": null
+    },
+    {
+      "name": "Snap hair to parting edges",
+      "length": 439,
+      "credit": null
+    },
+    {
+      "name": "Text",
+      "length": 0,
+      "credit": null
+    },
+    {
+      "name": "Trim Hair Curves",
+      "length": 231,
+      "credit": null
+    }
+  ],
+  "scenes": [
+    {
+      "name": "hairstyles main",
+      "camera": null,
+      "engine": "BLENDER_EEVEE"
+    },
+    {
+      "name": "head",
+      "camera": null,
+      "engine": "BLENDER_EEVEE"
+    }
+  ]
+}

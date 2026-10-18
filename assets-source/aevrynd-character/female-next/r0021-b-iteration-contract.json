@@ -1,0 +1,31 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0018-c-triangulated-brows-study.blend",
+  "sourceSha256": "b6e9ddd3675afd205dee73e09a7e28f2b3c6583c8456425a0dc000037fd17d42",
+  "Adecision": "Visually rejected: 2737 roots shifted but overlying terminal hair still defines essentially the same hard edge. Stop root-jitter-only repair.",
+  "hypothesis": "A spatial terminal-hair retreat field acts on all overlying scalp-region strand segments, while selected existing boundary follicles retain short thinner paths. This changes layer occupancy, not total density, pigment or lighting.",
+  "expectedVisibleChange": "A visible short/fine transition ahead of the terminal-hair mass, avoiding an unbroken cap edge.",
+  "held": [
+    "All head/body/eye/brow/lash meshes, rig, UVs, materials and lights.",
+    "Total fibre count and per-curve CV allocation; no added hair.",
+    "Hair outside the spatial front boundary field for unshortened curves."
+  ],
+  "rejectIf": [
+    "Guide capsule/body failure.",
+    "No visible full-head edge improvement or conspicuous bald/shaved/stair edge.",
+    "Child capsule/body/component failure."
+  ],
+  "resourceBudget": {
+    "threads": 4,
+    "maximumCandidatesThisRound": 3,
+    "candidateB": 2,
+    "guides": 424,
+    "fibres": 21086,
+    "spatialBoundaryWidthM": 0.01,
+    "nominalTerminalRetreatRad": 0.035,
+    "shortHairLengthRangeM": [
+      0.004,
+      0.021
+    ]
+  },
+  "limits": "Guide check concerns primary terminal field, not all short child hairs. Final children need independent checks; no self/motion/runtime proof."
+}

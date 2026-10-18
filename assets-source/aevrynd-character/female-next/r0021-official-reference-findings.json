@@ -1,0 +1,46 @@
+{
+  "officialPage": "https://www.blender.org/download/demo-files/",
+  "downloadPage": "https://www.blender.org/download/demo/geometry-nodes/hair_nodes-female_hair_styles.blend/",
+  "downloadMirror": "https://mirror.blender.org/demo/geometry-nodes/hair_nodes-female_hair_styles.blend",
+  "localReference": "D:\\Download\\Aevrynd\\Reference\\character\\blender-hair-styles\\hair_nodes-female_hair_styles.blend",
+  "sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+  "bytes": 28612482,
+  "author": "Daniel Bystedt",
+  "declaredLicense": "CC-BY-SA; exact version unresolved, do not assume CC0",
+  "assetAdoption": "READ_ONLY_LEARNING_ONLY_NOT_IN_ENGINE_OR_OWN_MODEL",
+  "referenceBinaryArchivedInGit": false,
+  "reason": "Retain original locally; reproducible official download plus hash and inventory recorded. No third-party geometry, textures, scripts or node program copied into the engine.",
+  "observations": [
+    {
+      "fact": "Long-hair scalp has two actual mesh islands and a parting vertex group.",
+      "evidence": {
+        "name": "long hair growth mesh",
+        "type": "MESH",
+        "parent": "Long hair head",
+        "hiddenRender": true,
+        "collections": [
+          "Long hair"
+        ],
+        "modifiers": [],
+        "vertices": 876,
+        "polygons": 796,
+        "connectedMeshIslands": 2,
+        "vertexGroups": [
+          "parting"
+        ]
+      }
+    },
+    {
+      "fact": "Main groom and independent strands are separate native Curves objects bound to a growth mesh.",
+      "mainGuides": 346,
+      "mainPoints": 6770,
+      "strandGuides": 30,
+      "strandPoints": 360
+    },
+    {
+      "fact": "The 19-curve new hair datablock has no collection users in this file.",
+      "implication": "Do not count it as a rendered active fine-hair layer."
+    }
+  ],
+  "inferenceForAevrynd": "Rebuild editable scalp domains, part controls and separately authored guide flows for the whole crown/perimeter. Small offsets on the old common field did not overcome the cap appearance. Island splitting alone is not a realism guarantee."
+}
