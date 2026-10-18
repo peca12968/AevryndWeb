@@ -1,0 +1,29 @@
+{
+  "status": "PASS_LIMITED_MATH_CONTROLS",
+  "cases": [
+    {
+      "case": "single_compliant_mass_equilibrium",
+      "dt": 0.008333333333333333,
+      "extensionM": 0.009409648574239649,
+      "analyticExpectedForDiscreteDragM": 0.009409648574240646,
+      "errorM": 9.97465998686664e-16
+    },
+    {
+      "case": "single_compliant_mass_equilibrium",
+      "dt": 0.004166666666666667,
+      "extensionM": 0.009607739198842502,
+      "analyticExpectedForDiscreteDragM": 0.009607739198859468,
+      "errorM": 1.6965595595053173e-14
+    },
+    {
+      "case": "zero_force_rest",
+      "maximumErrorM": 0.0
+    },
+    {
+      "case": "yaw_protocol",
+      "finalDegrees": 25.0,
+      "monotonic": true
+    }
+  ],
+  "scope": "Basic update/units/rest/protocol controls. Does not calibrate hair elasticity, bending, aero, contacts, dynamics realism or runtime performance."
+}

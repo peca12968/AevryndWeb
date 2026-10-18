@@ -1,0 +1,57 @@
+{
+  "revision": "female-next-r0015",
+  "status": "WIND_ONLY_GUIDE_RESEARCH_RETAINED_TURNING_REJECTED",
+  "currentFullGroomUnchanged": "female-next-r0014-c-review.blend",
+  "guideMotionReviewSource": "aevrynd-female-next-r0015-c-wind-guide-motion-study.blend",
+  "candidateDecisions": {
+    "A": "REJECTED: expanded single convex body proxy swallows valid rest hair and creates 129.7% first-step relative stretch. Failed cache, solver and driver snapshots retained.",
+    "B": "REJECTED: region-guarded proxy improves containment; coupled compliant stretch still reaches 11.24% in the half-second calm pilot. Convergence diagnosis retained.",
+    "C": "WIND/CONTROL_GUIDE_SCOPE_ONLY: zero-compliance coupled length/contact solves keep max relative stretch under 1.5% for wind/control. Turning fails, so no full dynamics or groom promotion."
+  },
+  "verifiedFindings": {
+    "analyticalYawSkinningMatch": "LBS matches actual Blender body vertices at -25,-12,12,25 degrees with maximum error below 0.3 um; only the defined single-bone protocol.",
+    "mathControls": "Dense vs tridiagonal constraint system, compliant-mass equilibrium at two time steps, zero-force rest, yaw continuity.",
+    "windPhysicsHz": 240,
+    "windDurationS": 3,
+    "guideCount": 48,
+    "fullGuideCount": 424,
+    "childFibresAnimated": 0,
+    "maximumRelativeStretchWind": 0.014998006442657363,
+    "rootAnchorMaximumErrorM": 5.8929598847779133e-08,
+    "actualBodySampleCount": 721,
+    "sampledBodyCapsules": 2180304,
+    "continuousSegmentIntervals": 2177280,
+    "continuousBodyFailures": 0,
+    "continuousCertificate": "Shared support planes or midpoint capsules inflated for endpoint motion, with bounded adaptive time subdivision; exact static body and linear guide interpolation.",
+    "windPeakMeanTipDeflectionVsMatchedCalmM": 0.044233132153749466,
+    "windFinalMeanTipDeflectionVsMatchedCalmM": 0.002470526611432433,
+    "turnStoppedAtS": 0.4166666666666667,
+    "turnStoppedNearDegrees": 10.12820512820513,
+    "turnMaximumRelativeStretch": 0.15393062148494296,
+    "fullYawProxyFeasibility": "PROXY_TRANSITION_INFEASIBLE_IN_PLANNED_RANGE",
+    "firstInfeasibleIntegerYawDegrees": 11,
+    "maxRequiredTransitionLengthRatioAt25Degrees": 3.9183971655828147,
+    "savedShapeKeySamples": 721,
+    "savedAllKeyCoordinatesAndLinearWeightsChecked": true,
+    "savedTubeRadiusVerifiedM": 6e-05,
+    "staticFullHairSourceNotReplaced": true
+  },
+  "motionRealismScore": null,
+  "overallCharacterScore": null,
+  "remainingGates": [
+    "Only 48 representative guides out of 424; 0 of 21,086 child fibres animated.",
+    "Head-turn experiment rejected; no accepted turning/inertia protocol.",
+    "Continuous proof covers guide capsules versus the static body in the exact wind cache only; optics/brows/lashes and hair/hair self contact not certified.",
+    "Mass, two-edge bend compliance and linear air drag are research choices, not measured/calibrated hair material or aero. No torsion or friction model.",
+    "No native runtime integration, LOD or engine performance validation. Female face/body/clothes and final user acceptance remain incomplete."
+  ],
+  "nextAction": "Keep r0014 C review as the complete static research groom. r0015 is only a 48/424-guide physics diagnostic. Retain the independent head-yaw LBS fixture, coupled zero-compliance stretch solve, fixed-head wind cache and static-body continuous capsule verifier. Redesign root-transition collision before retrying head turning: the current single global convex proxy requires more than the 2% permitted edge length from 11 degrees onward (up to 3.918 times rest length at 25 degrees). The failed simulation stops at 10.13 degrees with 15.4% stretch; the full-range geometric lower bound independently rules out fixing the intended protocol just by increasing iterations. Use an actual body surface/SDF or a justified decomposition near the skin-bound corridor, with complete capsule and swept checks; do not move roots off skin or arbitrarily exclude contact regions. After the 48-guide turn/stop and wind gates, extend to all 424 guides, then transport to 21,086 children and verify final hair/body/optics and self contact. Calibrate bend/twist, aero, friction and appearance; no male or formal runtime/site promotion.",
+  "runtimePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "enginePerformance": {
+    "status": "NOT_TESTED",
+    "cpuMs": null,
+    "gpuMs": null,
+    "memoryBytes": null
+  }
+}

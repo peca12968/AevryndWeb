@@ -1,0 +1,14 @@
+00:00.359  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0014-c-review.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\prepare-female-next-r0015-driver.py", line 49, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\prepare-female-next-r0015-driver.py", line 31, in main
+    flow.solid.stage.set_pose(rig,'neutral');quads=np.array([p.vertices for p in body.data.polygons],dtype=np.int32);included=np.max(V[quads,:,2],axis=1)>1.295;top=np.unique(quads[included].ravel())
+                                                                                                                                     ~^^^^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\prepare-female-next-r0015-driver.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

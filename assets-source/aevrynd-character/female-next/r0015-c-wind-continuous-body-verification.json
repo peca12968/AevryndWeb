@@ -1,0 +1,27 @@
+{
+  "case": "wind",
+  "cacheSha256": "1710608cab24ae3d8c4cee3016e296c5542cfdf17bef16b633c87b10d59d33ca",
+  "status": "PASS_CONTINUOUS_STATIC_BODY_GUIDE_SCOPE",
+  "intervalsChecked": 720,
+  "totalIntervals": 720,
+  "guideSegmentIntervalPairs": 2177280,
+  "counts": {
+    "proxyCertifiedIntervals": 2137739,
+    "actualInflatedCapsuleCalls": 5769,
+    "constantSegmentCacheHits": 33794,
+    "adaptiveSplits": 11,
+    "maximumDepthUsed": 2
+  },
+  "failures": [],
+  "minimumInflatedCapsuleClearanceLowerBoundM": 8.999999999999971e-06,
+  "radiusM": 6e-05,
+  "numericalAllowanceM": 1e-06,
+  "bodySourceSha256": "f0ce878d809bf86c8c683f3932803d53a9fbae2a5de3ee4364341434650dd2ab",
+  "method": "Shared support plane for the four endpoint positions, or midpoint complete segment capsule inflated by half the maximum endpoint motion; adaptive time subdivision to depth 8. Static actual body; world-linear guide interpolation.",
+  "scopeLimits": [
+    "Only the 48 guide centrelines/radius capsules and the static body in this exact cache.",
+    "No moving-head/root-corridor certificate, hair/hair self collision, optical/brow/lash checks or child interpolation.",
+    "This is not full groom or final character motion acceptance."
+  ],
+  "wallSeconds": 3.912609577178955
+}

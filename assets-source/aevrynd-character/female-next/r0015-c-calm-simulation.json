@@ -1,0 +1,173 @@
+{
+  "case": "calm",
+  "variant": "c",
+  "driverSha256": "bb2e92bad8f47875e54fe3b4e9c3cba0a9c5ee408b48efe9f3b61d356615328e",
+  "solverSha256": "c87d72b6108ad26bb71bea9407a7c4d8f62cf009a999259c220796c88a4b8765",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0015-c-calm-guides.npz",
+  "outputSha256": "85ed6c4a0b34dd5f3dc390f209ec81abc30403c95a44a3a9482f3ab5360669cc",
+  "dtS": 0.004166666666666667,
+  "durationS": 3.0,
+  "completed": true,
+  "physicsSteps": 720,
+  "guides": 48,
+  "guidePoints": 3072,
+  "iterations": 16,
+  "parameters": {
+    "representativeBundleLinearDensityKgPerM": 0.00025,
+    "axialModel": "INEXTENSIBLE_ZERO_COMPLIANCE",
+    "twoEdgeBendComplianceMPerN": 0.1,
+    "airDragPerS": 2.0,
+    "gravityMPerS2": 9.81,
+    "windVelocityMPerS": 1.1,
+    "calibration": "Artist-set research parameters, not measured hair properties; no torsion or friction model."
+  },
+  "maximumRelativeStretchAcrossAllSteps": 0.014707254158969452,
+  "minimumFreeProxyCapsuleGapAcrossStepsM": 3.4999999999734184e-05,
+  "minimumGuideZM": 1.3121311750469182,
+  "excludedBodyZBoundM": 1.3037362195237905,
+  "freeSegmentSweptCertificates": {
+    "tested": 2070720,
+    "unqualified": 2,
+    "scope": "Shared supporting-plane bound for linear world-space guide segments against analytically yawed body over each physics interval, excluding first three root-corridor segments. Unqualified does not by itself prove collision."
+  },
+  "metrics": [
+    {
+      "step": 60,
+      "timeS": 0.25,
+      "maximumRelativeStretch": 0.014246782346650555,
+      "p99RelativeStretch": 0.0028590586860994054,
+      "maximumSpeedMps": 0.01722705698837725,
+      "kineticEnergyJ": 1.0350637989939275e-08,
+      "finite": true,
+      "minimumFreeProxyCapsuleGapM": 3.499999999984521e-05,
+      "minimumZ": 1.3121403468603112
+    },
+    {
+      "step": 120,
+      "timeS": 0.5,
+      "maximumRelativeStretch": 0.01424671070067407,
+      "p99RelativeStretch": 0.002833708757793448,
+      "maximumSpeedMps": 0.015467931870367903,
+      "kineticEnergyJ": 5.431351984883423e-09,
+      "finite": true,
+      "minimumFreeProxyCapsuleGapM": 3.4999999999734184e-05,
+      "minimumZ": 1.312134837119456
+    },
+    {
+      "step": 180,
+      "timeS": 0.75,
+      "maximumRelativeStretch": 0.01424838720547239,
+      "p99RelativeStretch": 0.0028581979711446476,
+      "maximumSpeedMps": 0.015575996913560848,
+      "kineticEnergyJ": 3.725312959114357e-09,
+      "finite": true,
+      "minimumFreeProxyCapsuleGapM": 3.4999999999734184e-05,
+      "minimumZ": 1.3121347544192656
+    },
+    {
+      "step": 240,
+      "timeS": 1.0,
+      "maximumRelativeStretch": 0.014246087863321488,
+      "p99RelativeStretch": 0.002849404936062297,
+      "maximumSpeedMps": 0.015489411002397247,
+      "kineticEnergyJ": 3.2733284787645244e-09,
+      "finite": true,
+      "minimumFreeProxyCapsuleGapM": 3.499999999984521e-05,
+      "minimumZ": 1.3121354000767647
+    },
+    {
+      "step": 300,
+      "timeS": 1.25,
+      "maximumRelativeStretch": 0.014248345533681483,
+      "p99RelativeStretch": 0.002845693465667135,
+      "maximumSpeedMps": 0.016908332339778172,
+      "kineticEnergyJ": 3.288655125595228e-09,
+      "finite": true,
+      "minimumFreeProxyCapsuleGapM": 3.499999999995623e-05,
+      "minimumZ": 1.3121354192689478
+    },
+    {
+      "step": 360,
+      "timeS": 1.5,
+      "maximumRelativeStretch": 0.014246292446502329,
+      "p99RelativeStretch": 0.002854506928867487,
+      "maximumSpeedMps": 0.015723483480483445,
+      "kineticEnergyJ": 2.559640867062976e-09,
+      "finite": true,
+      "minimumFreeProxyCapsuleGapM": 3.499999999995623e-05,
+      "minimumZ": 1.3121352867150022
+    },
+    {
+      "step": 420,
+      "timeS": 1.75,
+      "maximumRelativeStretch": 0.014247922665616919,
+      "p99RelativeStretch": 0.0028474325779524897,
+      "maximumSpeedMps": 0.016337614416033715,
+      "kineticEnergyJ": 2.503578881167072e-09,
+      "finite": true,
+      "minimumFreeProxyCapsuleGapM": 3.4999999999734184e-05,
+      "minimumZ": 1.312134829340877
+    },
+    {
+      "step": 480,
+      "timeS": 2.0,
+      "maximumRelativeStretch": 0.014246661193571653,
+      "p99RelativeStretch": 0.002849216576017182,
+      "maximumSpeedMps": 0.01921781278958165,
+      "kineticEnergyJ": 2.4747564331096857e-09,
+      "finite": true,
+      "minimumFreeProxyCapsuleGapM": 3.4999999999734184e-05,
+      "minimumZ": 1.3121346621038332
+    },
+    {
+      "step": 540,
+      "timeS": 2.25,
+      "maximumRelativeStretch": 0.014247543171445498,
+      "p99RelativeStretch": 0.002851293867922478,
+      "maximumSpeedMps": 0.015693332723580363,
+      "kineticEnergyJ": 2.536017958910004e-09,
+      "finite": true,
+      "minimumFreeProxyCapsuleGapM": 3.4999999999734184e-05,
+      "minimumZ": 1.3121345345707325
+    },
+    {
+      "step": 600,
+      "timeS": 2.5,
+      "maximumRelativeStretch": 0.014246946238823943,
+      "p99RelativeStretch": 0.0028483176576046027,
+      "maximumSpeedMps": 0.017753370187209967,
+      "kineticEnergyJ": 2.60939721081263e-09,
+      "finite": true,
+      "minimumFreeProxyCapsuleGapM": 3.499999999995623e-05,
+      "minimumZ": 1.312134504360844
+    },
+    {
+      "step": 660,
+      "timeS": 2.75,
+      "maximumRelativeStretch": 0.014247307887566896,
+      "p99RelativeStretch": 0.0028502182971326478,
+      "maximumSpeedMps": 0.016798648847244007,
+      "kineticEnergyJ": 2.4127179566432737e-09,
+      "finite": true,
+      "minimumFreeProxyCapsuleGapM": 3.4999999999734184e-05,
+      "minimumZ": 1.3121345141459968
+    },
+    {
+      "step": 720,
+      "timeS": 3.0,
+      "maximumRelativeStretch": 0.014247105726073572,
+      "p99RelativeStretch": 0.002850001771083482,
+      "maximumSpeedMps": 0.016780883280128972,
+      "kineticEnergyJ": 2.5635922700903734e-09,
+      "finite": true,
+      "minimumFreeProxyCapsuleGapM": 3.4999999999734184e-05,
+      "minimumZ": 1.3121345045200752
+    }
+  ],
+  "preliminaryNumericalGate": "PASS",
+  "actualBodyRootCorridorCheck": "PENDING",
+  "motionAcceptance": "NOT_QUALIFIED",
+  "wallSeconds": 92.33604216575623,
+  "initialStateCache": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0015-c-settle-calm-guides.npz",
+  "stopReason": null
+}

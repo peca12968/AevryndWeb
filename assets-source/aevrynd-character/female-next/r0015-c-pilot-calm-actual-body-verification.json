@@ -1,0 +1,44 @@
+{
+  "case": "calm",
+  "variant": "c-pilot",
+  "cacheSha256": "990fe3a2462b8177d9bc46d16887865aefadf59719f1ba4529acd1bfa6416087",
+  "sourceSha256": "f0ce878d809bf86c8c683f3932803d53a9fbae2a5de3ee4364341434650dd2ab",
+  "status": "PASS_RECORDED_BODY_SAMPLES_ONLY",
+  "samplesChecked": 121,
+  "totalSamples": 121,
+  "capsulesTested": 365904,
+  "proxyCertifiedCapsules": 359884,
+  "actualBodySurfaceFallbacks": 6020,
+  "minimumConservativeGapLowerBoundM": 6.79092153408328e-06,
+  "maximumRootAnchorErrorM": 1.1502821485377244e-07,
+  "maximumAnalyticVsBlenderVertexErrorM": 0.0,
+  "bodyFailureSamples": [],
+  "rootFailureSamples": [],
+  "progress": [
+    {
+      "sample": 0,
+      "timeS": 0.0,
+      "bodyCapsulesTested": 3024,
+      "actualSurfaceFallbacks": 47,
+      "badSamplesRecorded": 0,
+      "rootFailures": 0,
+      "maximumRootAnchorErrorM": 1.1502821485377244e-07,
+      "elapsedS": 0.5392262935638428
+    },
+    {
+      "sample": 120,
+      "timeS": 0.5,
+      "bodyCapsulesTested": 365904,
+      "actualSurfaceFallbacks": 6020,
+      "badSamplesRecorded": 0,
+      "rootFailures": 0,
+      "maximumRootAnchorErrorM": 1.1502821485377244e-07,
+      "elapsedS": 6.9251368045806885
+    }
+  ],
+  "scopeLimits": [
+    "Body only, at every recorded 1/240 s sample.",
+    "Root/near-proxy segments checked against actual posed Blender tessellation; other segments use a contained-body proxy and excluded-body Z bound.",
+    "Does not prove continuous root-corridor separation, self collision, optical parts or full child hair; no motion acceptance."
+  ]
+}

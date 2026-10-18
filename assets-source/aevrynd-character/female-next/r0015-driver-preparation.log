@@ -1,0 +1,14 @@
+00:00.390  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0014-c-review.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\prepare-female-next-r0015-driver.py", line 52, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\prepare-female-next-r0015-driver.py", line 40, in main
+    q=rotate(V,axis,pivot,math.radians(degree),W,mode);b=np.max(q[candidate]@A.T,axis=0)+.000002;maximum=max(float(np.max(q[block]@A.T-b)) for block in np.array_split(top,16));support_checks.append({'yawDegrees':degree,'maximumBodyVertexPlaneViolationM':maximum});assert maximum<=0,maximum
+                                                                                                                                                                                                                                                                               ^^^^^^^^^^
+AssertionError: 4.820185403153765e-06
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\prepare-female-next-r0015-driver.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

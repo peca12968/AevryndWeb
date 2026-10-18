@@ -1,0 +1,38 @@
+{
+  "case": "calm",
+  "variant": "a",
+  "driverSha256": "c66ec27843de521f7178a57350f72ddaa741434b41da72ad1cf0c7e5e9e0fab7",
+  "solverSha256": "010ddcaefd038cc8aa7da500b84ef9a9c17c4495fad510c86b74bd7143e1263c",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0015-a-calm-guides.npz",
+  "outputSha256": "1346aac742472acde4b34dff86429e4696b0526d60c6d542abc67dfe81141025",
+  "dtS": 0.004166666666666667,
+  "durationS": 0.5,
+  "completed": false,
+  "physicsSteps": 1,
+  "guides": 48,
+  "guidePoints": 3072,
+  "iterations": 16,
+  "parameters": {
+    "representativeBundleLinearDensityKgPerM": 0.00025,
+    "axialStiffnessN": 5.0,
+    "twoEdgeBendComplianceMPerN": 0.1,
+    "airDragPerS": 2.0,
+    "gravityMPerS2": 9.81,
+    "windVelocityMPerS": 1.1,
+    "calibration": "Artist-set research parameters, not measured hair properties; no torsion or friction model."
+  },
+  "maximumRelativeStretchAcrossAllSteps": 1.2965443012588351,
+  "minimumFreeProxyCapsuleGapAcrossStepsM": 3.499999999999439e-05,
+  "minimumGuideZM": 1.3487888950361286,
+  "excludedBodyZBoundM": 1.2949907459812917,
+  "freeSegmentSweptCertificates": {
+    "tested": 0,
+    "unqualified": 0,
+    "scope": "Shared supporting-plane bound for linear world-space guide segments against analytically yawed body over each physics interval, excluding first three root-corridor segments. Unqualified does not by itself prove collision."
+  },
+  "metrics": [],
+  "preliminaryNumericalGate": "FAIL_OR_UNRESOLVED",
+  "actualBodyRootCorridorCheck": "PENDING",
+  "motionAcceptance": "NOT_QUALIFIED",
+  "wallSeconds": 0.1264944076538086
+}
