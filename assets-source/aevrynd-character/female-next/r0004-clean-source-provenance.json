@@ -1,0 +1,24 @@
+{
+  "checkedOn": "2026-10-19",
+  "status": "SOURCE_IDENTIFIED_NOT_YET_USED_FOR_NEW_CHARACTER",
+  "localTool": "MPFB 2.0.17 already installed in Blender 5.2",
+  "basePath": "C:\\Users\\USER\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions\\user_default\\mpfb\\data\\3dobjs\\base.obj",
+  "baseSha256": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c",
+  "manifestSha256": "bda56b74520f432417be162d97f3279149a056910ed9ddc5b0de8d0d02282fd1",
+  "assetLicense": "CC0-1.0 (core asset; confirmed by local base.obj header and official license page)",
+  "toolCodeLicense": "GPL-3.0-or-later (installed manifest); separate from core graphical assets",
+  "officialSources": [
+    {
+      "title": "MakeHuman and MPFB license",
+      "url": "https://static.makehumancommunity.org/about/license.html",
+      "finding": "Core graphical assets use CC0; MPFB source code uses GPL."
+    },
+    {
+      "title": "Exporting MPFB characters",
+      "url": "https://static.makehumancommunity.org/mpfb/docs/exporting/index.html",
+      "finding": "Prepare a separate export copy, bake intended shape data, remove helpers, and use engine-appropriate material and rig data."
+    }
+  ],
+  "scopeLimit": "This identifies a core-asset source only. It does not certify arbitrary community assets, and no new model or engine integration is claimed.",
+  "integrationPolicy": "Use the existing tool offline to create and prepare graphical assets. Aevrynd runtime and import code remain independent of the MPFB program."
+}

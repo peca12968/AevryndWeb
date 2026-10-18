@@ -1,0 +1,147 @@
+{
+  "revision": "female-next-r0004",
+  "sourceRevision": "female-next-r0001",
+  "status": "TECHNICAL_FAIL_VISUAL_REJECTED",
+  "selectedVariant": null,
+  "strictOverallScoreBefore": 42,
+  "strictOverallScoreAfter": 42,
+  "candidateScore": null,
+  "scoreNote": "The 42 score belongs to the retained baseline; rejected candidates are not promoted or credited with a score increase.",
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "hypothesis": "A surface-conforming transition and monotonically parameterized inner rings will preserve nasolabial volume while rebuilding the lip and mouth bag.",
+  "technicalSummary": [
+    {
+      "label": "baseline",
+      "mouthPairsByFrame": {
+        "1": 0,
+        "20": 0,
+        "33": 0,
+        "61": 0
+      },
+      "mouthPairsByExpression": {
+        "open": 0,
+        "smile": 0
+      },
+      "negativeNearestHairBrowObservationsAcrossPoses": 0,
+      "minimumNearestSignedClearanceM": 0.00020668052934524894
+    },
+    {
+      "label": "a-soft-contact",
+      "mouthPairsByFrame": {
+        "1": 188,
+        "20": 193,
+        "33": 193,
+        "61": 193
+      },
+      "mouthPairsByExpression": {
+        "open": 180,
+        "smile": 197
+      },
+      "negativeNearestHairBrowObservationsAcrossPoses": 2840,
+      "minimumNearestSignedClearanceM": -0.035411265344009735
+    },
+    {
+      "label": "b-relaxed",
+      "mouthPairsByFrame": {
+        "1": 188,
+        "20": 193,
+        "33": 193,
+        "61": 193
+      },
+      "mouthPairsByExpression": {
+        "open": 180,
+        "smile": 197
+      },
+      "negativeNearestHairBrowObservationsAcrossPoses": 2840,
+      "minimumNearestSignedClearanceM": -0.035411265344009735
+    },
+    {
+      "label": "c-parted",
+      "mouthPairsByFrame": {
+        "1": 188,
+        "20": 193,
+        "33": 193,
+        "61": 193
+      },
+      "mouthPairsByExpression": {
+        "open": 180,
+        "smile": 197
+      },
+      "negativeNearestHairBrowObservationsAcrossPoses": 2841,
+      "minimumNearestSignedClearanceM": -0.035411265344009735
+    }
+  ],
+  "fileVerification": {
+    "allThreeReopened": true,
+    "badShapeKeys": 0,
+    "controlCageBodyTriangles": 27076,
+    "evaluatedBodyTriangles": 432352,
+    "images": 3,
+    "bones": 38,
+    "bodyShapeKeys": 35,
+    "hairCurves": 5727,
+    "hairPoints": 100890,
+    "maxRetainedMixedCoordinateErrorM": 3.588868187107545e-07,
+    "engineMeasurements": null
+  },
+  "visualFindings": [
+    "The severe flat nasolabial bridge from r0003 is reduced, but residual nasal/upper-lip creases remain.",
+    "The neutral mouth is a nearly straight slit and lacks an anatomically credible Cupid bow, lip roll and corner transition.",
+    "Open mouth and smile retain a regular ring-like shape and a visibly ribbed mouth bag.",
+    "All three candidates retain localized skin-transition self-intersections and cannot be accepted."
+  ],
+  "localizedFailure": {
+    "neutralPairs": 188,
+    "contactCentroidBoundsM": [
+      [
+        0.009091371670365334,
+        0.015324084088206291
+      ],
+      [
+        -0.13683763146400452,
+        -0.1332717388868332
+      ],
+      [
+        1.405677080154419,
+        1.4158992767333984
+      ]
+    ],
+    "approximateControlBands": {
+      "skin10": 8,
+      "skin25": 246,
+      "skin45": 118,
+      "skin65": 4
+    },
+    "bRelaxedNegativeHairPoints": 472,
+    "horizontalRayDiagnosticVotes": {
+      "inside-majority": 472
+    },
+    "limits": [
+      "Horizontal ray votes on an eye-open body are supporting diagnostics, not a watertight solid certificate.",
+      "An inside-majority point still requires geometric investigation; outside-majority does not establish segment/radius safety.",
+      "Band assignment uses nearest unsmoothed faces and is approximate."
+    ]
+  },
+  "materialRepair": {
+    "facesPerCandidate": 74,
+    "geometryAndAllKeyCoordinateHashesUnchanged": true,
+    "reason": "The added skin rings shifted the intended oral-material boundary. The corrected oral material begins at the margin-to-inner-wall band."
+  },
+  "methodDecision": {
+    "radialAnnulusAttempts": [
+      "female-next-r0003",
+      "female-next-r0004"
+    ],
+    "consecutiveVisualFailures": 2,
+    "stopFurtherParameterTweaks": true,
+    "nextAction": "Build a clean source from the installed CC0 native basemesh and targets, retaining native anatomical facial loops; do not carry over Boolean mouth cuts, inherited corrective-layer accumulation or this radial annulus."
+  },
+  "evidenceFiles": [
+    "female-next-r0004-perioral.report.json",
+    "r0004-reviewed-comparison.png",
+    "residual-collision-diagnosis.json",
+    "saved-files-verification.json",
+    "material-boundary-correction.json"
+  ]
+}
