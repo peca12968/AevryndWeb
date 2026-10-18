@@ -1,0 +1,116 @@
+{
+  "status": "PASS_POLY_PREFIX_AND_TERMINAL_CAPSULE_CONTAINMENT",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0014-c-review.blend",
+  "sourceSha256": "f0ce878d809bf86c8c683f3932803d53a9fbae2a5de3ee4364341434650dd2ab",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0016-b-continuous-tip-study.blend",
+  "outputSha256": "258bf975a782447eef13929c2e4e1fcdb60fcbd8c2c8112059cbc2b676a2b99c",
+  "cache": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0016-b-hair-data.npz",
+  "cacheSha256": "c01d6f4398e54f353ef029c017c677481d5672c859efa43fe759441a63c489f6",
+  "checks": [
+    {
+      "object": "AFN14_PRIMARY_MASS",
+      "allRootsExact": true,
+      "retainedSegmentsExactRadiusNonIncreasing": true,
+      "terminalCapsulesInsideOldConservativeCapsule": true,
+      "maximumWorldRoundoffM": 5.970626602368682e-08,
+      "minimumTerminalContainmentSlackAfterRoundoffM": 1.403450442831072e-05
+    },
+    {
+      "object": "AFN14_SECONDARY_CLUMPS",
+      "allRootsExact": true,
+      "retainedSegmentsExactRadiusNonIncreasing": true,
+      "terminalCapsulesInsideOldConservativeCapsule": true,
+      "maximumWorldRoundoffM": 5.968777165840948e-08,
+      "minimumTerminalContainmentSlackAfterRoundoffM": 1.429191338746856e-05
+    },
+    {
+      "object": "AFN14_HAIRLINE_FINE",
+      "allRootsExact": true,
+      "retainedSegmentsExactRadiusNonIncreasing": true,
+      "terminalCapsulesInsideOldConservativeCapsule": true,
+      "maximumWorldRoundoffM": 0.0,
+      "minimumTerminalContainmentSlackAfterRoundoffM": null
+    },
+    {
+      "object": "AFN14_FLYAWAYS",
+      "allRootsExact": true,
+      "retainedSegmentsExactRadiusNonIncreasing": true,
+      "terminalCapsulesInsideOldConservativeCapsule": true,
+      "maximumWorldRoundoffM": 5.909360924310279e-08,
+      "minimumTerminalContainmentSlackAfterRoundoffM": 1.014025495022472e-05
+    }
+  ],
+  "poses": [
+    {
+      "pose": "neutral",
+      "maxTransformOperatorNorm": 1.0
+    },
+    {
+      "pose": "gaze-left",
+      "maxTransformOperatorNorm": 1.0
+    },
+    {
+      "pose": "gaze-right",
+      "maxTransformOperatorNorm": 1.0
+    },
+    {
+      "pose": "turn-left",
+      "maxTransformOperatorNorm": 1.0
+    },
+    {
+      "pose": "turn-right",
+      "maxTransformOperatorNorm": 1.0
+    }
+  ],
+  "headMaterialsLightsUVWeightsRigUnchanged": true,
+  "layers": [
+    {
+      "object": "AFN14_PRIMARY_MASS",
+      "curves": 13931,
+      "oldPoints": 891584,
+      "points": 831636,
+      "meanRemovedArcM": 0.013098503214103076,
+      "maxRemovedArcM": 0.021978411635893223,
+      "minimumLocalTerminalRadiusSlackM": 1.4080036635277793e-05
+    },
+    {
+      "object": "AFN14_SECONDARY_CLUMPS",
+      "curves": 6975,
+      "oldPoints": 446400,
+      "points": 416299,
+      "meanRemovedArcM": 0.013083066961778467,
+      "maxRemovedArcM": 0.02199682106844765,
+      "minimumLocalTerminalRadiusSlackM": 1.4306541743280832e-05
+    },
+    {
+      "object": "AFN14_HAIRLINE_FINE",
+      "curves": 100,
+      "oldPoints": 4720,
+      "points": 4720,
+      "meanRemovedArcM": 0.0,
+      "maxRemovedArcM": 0.0,
+      "minimumLocalTerminalRadiusSlackM": null
+    },
+    {
+      "object": "AFN14_FLYAWAYS",
+      "curves": 80,
+      "oldPoints": 5120,
+      "points": 4889,
+      "meanRemovedArcM": 0.009473478521019875,
+      "maxRemovedArcM": 0.014075178084549332,
+      "minimumLocalTerminalRadiusSlackM": 1.0183601261815056e-05
+    }
+  ],
+  "inheritedEvidence": {
+    "chain": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0016-feathered-tips\\saved-prefix-verification.json",
+    "sha256": "4332df1ffe1ad545a55a50819855c24d0d2378be3699f1a01933e710f95d9b9c"
+  },
+  "proof": "Saved prefix segments coincide with source segments and have no larger radii. The new terminal endpoint lies within the old edge up to measured float32 roundoff. Candidate terminal capsule maximum radius plus world roundoff is strictly below the old conservative capsule maximum radius. Convexity of a capsule therefore contains the complete new terminal capsule. The unchanged rigid transforms preserve this argument in the five original static poses. Original full body/optical/brow/lash conservative capsule proof applies to the contained candidate.",
+  "limits": [
+    "Five static pose surface cases only, not motion or self contact.",
+    "No calibration, expression or runtime acceptance.",
+    "Guide and root bindings retained; child array lengths changed. Use this new cache."
+  ],
+  "wallSeconds": 6.417815446853638,
+  "fileBytes": 39067608
+}

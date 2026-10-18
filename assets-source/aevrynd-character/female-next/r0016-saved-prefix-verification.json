@@ -1,0 +1,101 @@
+{
+  "status": "PASS_EXACT_POLY_PREFIX_RADIUS_CONTRACTION",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0014-c-review.blend",
+  "sourceSha256": "f0ce878d809bf86c8c683f3932803d53a9fbae2a5de3ee4364341434650dd2ab",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0016-a-feathered-tips-study.blend",
+  "outputSha256": "eb7e75147b486df2ab24979c5882b57538b827cf23931ac5b91c21eadc36ebd6",
+  "checks": [
+    {
+      "object": "AFN14_PRIMARY_MASS",
+      "allCurvesExactOldPrefix": true,
+      "collapsedSuffixAtExactOldCV": true,
+      "allRadiiNonIncreasing": true,
+      "rootPositionsUnchanged": true,
+      "countParentMaterialsSplineTypeUnchanged": true
+    },
+    {
+      "object": "AFN14_SECONDARY_CLUMPS",
+      "allCurvesExactOldPrefix": true,
+      "collapsedSuffixAtExactOldCV": true,
+      "allRadiiNonIncreasing": true,
+      "rootPositionsUnchanged": true,
+      "countParentMaterialsSplineTypeUnchanged": true
+    },
+    {
+      "object": "AFN14_HAIRLINE_FINE",
+      "allCurvesExactOldPrefix": true,
+      "collapsedSuffixAtExactOldCV": true,
+      "allRadiiNonIncreasing": true,
+      "rootPositionsUnchanged": true,
+      "countParentMaterialsSplineTypeUnchanged": true
+    },
+    {
+      "object": "AFN14_FLYAWAYS",
+      "allCurvesExactOldPrefix": true,
+      "collapsedSuffixAtExactOldCV": true,
+      "allRadiiNonIncreasing": true,
+      "rootPositionsUnchanged": true,
+      "countParentMaterialsSplineTypeUnchanged": true
+    }
+  ],
+  "headMaterialsLightsRigUVWeightsUnchanged": true,
+  "referenceEvidence": {
+    "review": {
+      "path": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0014-scalp-flow\\review-delivery-verification.json",
+      "sha256": "8e35cb9d7e3819ef5b5cf83dd8d765f93fd3aeb7c54fd618013b3233f48c66b1"
+    },
+    "collision": {
+      "path": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0014-scalp-flow\\c-saved-scalp-flow-verification.json",
+      "sha256": "d61dc95ce1a0adbd06b598f23916db4a052badb8be20d4c5fe22360235c3bc6a"
+    }
+  },
+  "inheritedStaticPoses": [
+    "neutral",
+    "gaze-left",
+    "gaze-right",
+    "turn-left",
+    "turn-right"
+  ],
+  "proof": "Each retained POLY segment is bitwise the original; shortened suffix consists only of exact original endpoint copies. Every new radius is no larger than the original; suffix caps are no larger than the original retained endpoint cap. Original capsule union therefore contains all candidate capsules under the unchanged rigid bone transform. Existing full original head/surface proof is inherited, not recomputed. No spline smoothing is introduced.",
+  "limits": [
+    "Only the five previously verified static body and optical/brow/lash surface cases.",
+    "No hair/hair self separation, movement, natural-motion calibration or runtime proof.",
+    "Root/guide authoring bindings remain r0014, but child lengths/radii require the r0016 cache; do not load the old child cache for this candidate."
+  ],
+  "layers": [
+    {
+      "object": "AFN14_PRIMARY_MASS",
+      "curves": 13931,
+      "points": 891584,
+      "trimmed": 13931,
+      "meanRemovedArcM": 0.014548403420157842,
+      "maxRemovedArcM": 0.02869259541050148
+    },
+    {
+      "object": "AFN14_SECONDARY_CLUMPS",
+      "curves": 6975,
+      "points": 446400,
+      "trimmed": 6975,
+      "meanRemovedArcM": 0.014546780695810974,
+      "maxRemovedArcM": 0.02859726099697818
+    },
+    {
+      "object": "AFN14_HAIRLINE_FINE",
+      "curves": 100,
+      "points": 4720,
+      "trimmed": 0,
+      "meanRemovedArcM": 0.0,
+      "maxRemovedArcM": 0.0
+    },
+    {
+      "object": "AFN14_FLYAWAYS",
+      "curves": 80,
+      "points": 5120,
+      "trimmed": 80,
+      "meanRemovedArcM": 0.011194722820505487,
+      "maxRemovedArcM": 0.01769839473033749
+    }
+  ],
+  "wallSeconds": 6.3926568031311035,
+  "fileBytes": 39264983
+}

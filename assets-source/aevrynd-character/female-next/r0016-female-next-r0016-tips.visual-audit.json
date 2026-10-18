@@ -1,0 +1,43 @@
+{
+  "revision": "female-next-r0016",
+  "status": "BOTH_TIP_CANDIDATES_VISUALLY_REJECTED",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0014-c-review.blend",
+  "sourceSha256": "f0ce878d809bf86c8c683f3932803d53a9fbae2a5de3ee4364341434650dd2ab",
+  "candidateDecisions": {
+    "A": "REJECTED: snapped-to-CV cuts visibly introduce stepped/patchy ends in the same-camera complete-head pilot.",
+    "B": "REJECTED: continuous subsegment cuts fix the A quantization defect, but the dense sheet-like hair mass and hard grouped edge remain. Not a sufficient realism gain over r0014."
+  },
+  "actualModelImprovement": "None accepted. The retained full groom and its appearance estimate are unchanged.",
+  "technicalFindings": {
+    "A": "Exact old POLY prefixes and reduced radii inherit the five static surface cases.",
+    "B": "Existing native curve arrays resized successfully. Complete retained prefixes plus new terminal capsules are contained in the previously verified conservative capsules, including measured float32 roundoff. This is a reusable authoring operation, not a character-quality gain.",
+    "BMinimumTerminalContainmentSlackM": 1.014025495022472e-05,
+    "radiiAndArrayScope": "All 21,086 curves checked from reopened saved files; packed images and no linked libraries verified."
+  },
+  "visualEvidence": {
+    "comparison": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0016-feathered-tips\\r0016-rejected-tip-comparison.png",
+    "pilotViews": [
+      "oblique"
+    ],
+    "pilotResolution": [
+      700,
+      700
+    ],
+    "inspected": [
+      "baseline-pilot-oblique.png",
+      "candidate-a-pilot-oblique.png",
+      "candidate-b-pilot-oblique.png"
+    ],
+    "fullResolutionExpansion": "NOT_RUN: both candidates rejected at early visual gate; no claimed front/profile acceptance.",
+    "control": "Same camera, lens, resolution, renderer, color management, exposure and gamma; head/material/lighting controls held by the build checks."
+  },
+  "strictHairAppearanceEstimate": null,
+  "overallCharacterScore": null,
+  "scopeLimits": [
+    "No accepted new groom. Original r0014 static surface scope only; no moving hair or self-contact proof.",
+    "No new dynamics, expressions, anatomy, runtime, performance or final acceptance evidence."
+  ],
+  "nextAction": "Keep r0014 C review as the complete static groom. r0016 A and B are visually rejected: local end trimming/taper does not remove the sheet-like main mass. Stop this tip-only method; do not run a third trimming sweep or raise the appearance score. Next build a genuinely volumetric primary/secondary clump layout from r0014 roots, with measurable cross-section/depth variation instead of one common envelope sheet. Establish the intended bob silhouette and lock directions in front/profile/oblique before adding density or fine noise; use one bounded candidate and actual complete-head A/B renders. Keep roots skin-bound and verify whole guide capsules before child expansion; final children need their own checks. If the volume study cannot preserve meaningful contact guarantees, retain it only as rejected diagnostics and change the route architecture. r0015 wind remains 48-guide-only. Before retrying turning, replace the geometrically infeasible single convex root-transition proxy with actual body/SDF contact or justified decomposition; no more iteration-count or stretch-tolerance sweeps. Face detail, expressions, oral components, body/clothes, child/self collision, native runtime and user acceptance remain incomplete. No male or formal runtime/site promotion.",
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false
+}

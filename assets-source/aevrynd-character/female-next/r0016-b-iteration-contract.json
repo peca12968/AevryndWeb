@@ -1,0 +1,23 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0014-c-review.blend",
+  "sourceSha256": "f0ce878d809bf86c8c683f3932803d53a9fbae2a5de3ee4364341434650dd2ab",
+  "candidateA": "REJECTED: CV-quantized trimming creates a stepped silhouette in the same-camera 700px pilot. No final render expansion.",
+  "hypothesis": "Continuous arc-length cuts with a smooth scalp-space graduation and strand-scale variation remove CV-grid stair steps while longer tip feathering reduces the hard cutoff.",
+  "changesFromA": [
+    "No clump-ID phase discontinuities.",
+    "Cut inside an existing segment; retain that segment prefix instead of snapping to a CV.",
+    "Resize only existing native curve point arrays; no new Curves constructor.",
+    "Avoid repeated endpoint suffixes."
+  ],
+  "rejectIf": [
+    "No visible improvement versus the original complete-head view.",
+    "Any failed capsule-subset bound.",
+    "Any head/material/root/parent control change."
+  ],
+  "resources": {
+    "threads": 4,
+    "candidatesTotal": 2,
+    "pilotPixels": 700,
+    "finalViewsIfPilotPasses": 3
+  }
+}

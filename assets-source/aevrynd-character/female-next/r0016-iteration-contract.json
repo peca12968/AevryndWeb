@@ -1,0 +1,26 @@
+{
+  "previousGoalTurnClassification": "progress: v4 execution rules saved and GitHub remote verified; prompt maintenance, no model improvement claimed",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0014-c-review.blend",
+  "sourceSha256": "f0ce878d809bf86c8c683f3932803d53a9fbae2a5de3ee4364341434650dd2ab",
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "primaryDefect": "Hard continuous bob-tip edge and a sawtooth silhouette, visible in complete-head views.",
+  "hypothesis": "Coherent per-lock graduation and longer strand-radius feathering soften the bob silhouette without moving roots, changing shading or adding hair.",
+  "expectedVisibleChange": "Airier, separated, graduated ends rather than one abrupt band; face and crown remain exact controls.",
+  "reference": "https://www.sidefx.com/tutorials/grooming-and-rendering-realistic-hair/",
+  "referenceUse": "Study guide cutting versus individual strand variation only; no copied assets/code and no Houdini dependency.",
+  "rejectIf": [
+    "No discernible whole-head improvement at the same camera/light/exposure.",
+    "Tips become visibly patchy, overly wispy or staircase-like.",
+    "Any changed head, material, light, root or parent state.",
+    "Any new segment outside the exact original POLY prefix."
+  ],
+  "resourceBudget": {
+    "threads": 4,
+    "candidates": 1,
+    "pilotPixels": 700,
+    "finalViews": 3,
+    "curves": 21086,
+    "newDynamics": false
+  },
+  "collisionScope": "Exact prefix/radius contraction inherits ONLY the five static body and component surface proofs; no self or motion acceptance."
+}
