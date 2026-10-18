@@ -1,0 +1,31 @@
+{
+  "previousGoalTurnClassification": "progress: two real tip candidates rendered and rejected; tip-only method stopped.",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0014-c-review.blend",
+  "sourceSha256": "f0ce878d809bf86c8c683f3932803d53a9fbae2a5de3ee4364341434650dd2ab",
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "primaryDefect": "The complete bob is a near-continuous sheet with weak depth separation between locks.",
+  "hypothesis": "Keep original crown guides above z=1.515 m exactly unchanged, then smoothly activate volumetric lock attraction down to z=1.470 m. This should retain the original head-top silhouette and the improved lower side flow.",
+  "reference": "https://www.sidefx.com/tutorials/grooming-and-rendering-realistic-hair/",
+  "referenceUse": "Conceptual primary clumping followed by individual strand structure; local code and geometry, no third-party assets/code imported.",
+  "expectedVisibleChange": "Readable curved locks and gaps/depth in the whole-head oblique/profile views, avoiding a single flat curtain.",
+  "rejectIf": [
+    "Any unresolved guide capsule before child generation.",
+    "Any root/head/material/light control change.",
+    "No discernible full-head volume/flow improvement under identical renders.",
+    "Hair becomes inflated tubes, rigid ropes, or conspicuous comb-like blocks.",
+    "Crown develops new lobes or the free-length benefit disappears."
+  ],
+  "resourceBudget": {
+    "threads": 4,
+    "candidates": 2,
+    "guides": 424,
+    "masterLocks": 24,
+    "fibres": 21086,
+    "pilotPixels": 700,
+    "acceptedCandidateFinalViews": 3,
+    "staticPoses": 5
+  },
+  "limits": "No new dynamics/self-contact/runtime acceptance; r0015 root-transition infeasibility remains unresolved.",
+  "candidateA": "Visually withheld: free-length flow improves, but master attraction makes oversized scalloped crown lobes in profile.",
+  "reasonForSecondCandidate": "Separate preserved crown from free locks, rather than adjusting all master parameters."
+}

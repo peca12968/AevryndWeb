@@ -1,0 +1,143 @@
+{
+  "schema": "aevrynd.groom.authoring.v1",
+  "releaseState": "OFFLINE_STATIC_VOLUME_RESEARCH_ONLY",
+  "units": "metres",
+  "coordinateSpace": "Neutral model world space; explicit inverse head-bind matrix maps into head-local coordinates.",
+  "sourceBlender": "aevrynd-female-next-r0017-b-volume-locks-study.blend",
+  "bodyObject": "AFN_R0008_Body",
+  "bodyGeometrySha256": "66a88d4850a07e2fff831b43ec3041a906314f0400127e89c5bcbf863b418839",
+  "bodyTriangleVertexIdsStableAtBind": true,
+  "bodyWorldMatrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "headBone": "head",
+  "headBindWorldMatrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.045209527015686035,
+      -0.9989774823188782,
+      -0.04426691308617592
+    ],
+    [
+      0.0,
+      0.9989774227142334,
+      0.04520943760871887,
+      1.4245015382766724
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "worldRestToHeadBindLocalMatrix": [
+    [
+      1.0,
+      -0.0,
+      0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      0.04520944133400917,
+      0.9989776015281677,
+      -1.4210437536239624
+    ],
+    [
+      0.0,
+      -0.998977541923523,
+      0.045209530740976334,
+      -0.10862269997596741
+    ],
+    [
+      -0.0,
+      0.0,
+      -0.0,
+      1.0
+    ]
+  ],
+  "guideData": "aevrynd-female-next-r0017-b-volume-guides.npz",
+  "guideBindings": "aevrynd-female-next-r0014-guide-bindings.json",
+  "renderHairData": "aevrynd-female-next-r0017-b-hair-data.npz",
+  "renderHairBindings": "aevrynd-female-next-r0014-root-bindings.json",
+  "guideCount": 424,
+  "guideCVs": 64,
+  "renderFibres": 21086,
+  "renderPoints": 1347824,
+  "collisionEnvelopeScope": "Neutral support planes are authoring route guards only. Final saved complete capsules independently checked against actual body and optical/brow/lash surfaces in five static poses. No continuous or self-contact proof.",
+  "sourceFiles": [
+    {
+      "file": "aevrynd-female-next-r0017-b-volume-locks-study.blend",
+      "sha256": "701a96b54311bce12aee7be3ca42ab5700061e849955d5d65d5b4f62158b7c3a",
+      "bytes": 40308120
+    },
+    {
+      "file": "aevrynd-female-next-r0017-b-volume-guides.npz",
+      "sha256": "79ae2d5c7d9d12316abc5ec4f29c80d3ed6db72702bec2f935130ec2e58b4c0c",
+      "bytes": 595529
+    },
+    {
+      "file": "aevrynd-female-next-r0017-b-hair-data.npz",
+      "sha256": "21921862d0a5390691645a7161d0ee9cba7c1bd6797ec8d065d1dc4496c69df7",
+      "bytes": 19419693
+    },
+    {
+      "file": "aevrynd-female-next-r0014-guide-bindings.json",
+      "sha256": "612e3f5cd4ea24eb0d6b0a3147b6d5ddd5f5785440083b849258f281a4002ba2",
+      "bytes": 96030
+    },
+    {
+      "file": "aevrynd-female-next-r0014-root-bindings.json",
+      "sha256": "4b27dc52eb971f6497b83d500f23092114376a0a86de738df4fcbf230eb2c205",
+      "bytes": 6842126
+    }
+  ],
+  "validation": {
+    "guideRootReconstructionMaximumErrorM": 1.4251077354852405e-07,
+    "childRootReconstructionMaximumErrorM": 1.6067127853159084e-07,
+    "guideIndexWeightChecks": "PASS",
+    "guideRootIdentityToValidatedR0014": true,
+    "allChildRootsIdentityToValidatedR0014": true,
+    "countsRadiiLayersUnchanged": true,
+    "rootErrorScope": "Reconstruction bounds inherited exactly: body geometry, bind matrices, root positions and root binding files are unchanged. Not a motion proof."
+  },
+  "notImplemented": [
+    "Complete-hair dynamics, moving-contact/root-transition solution, self collision, calibrated friction/twist/aerodynamics.",
+    "Native runtime importer/renderer/LOD/performance acceptance."
+  ],
+  "runtimePromotionApproved": false,
+  "inheritedObjectIds": "AFN14 object and collection names remain stable; current arrays and descriptor revision are r0017.",
+  "masterLockCount": 24,
+  "guideMasterAssignmentField": "guideMasterAssignments indexes masterGuideIds in guideData",
+  "childMappingScope": "Root/guide IDs and weights are retained. Exact child geometry is renderHairData; root mappings alone do not reconstruct the authored volume deformation."
+}

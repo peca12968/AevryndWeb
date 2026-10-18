@@ -1,0 +1,6 @@
+{
+  "initialAWrapperExit": 8,
+  "cause": "PowerShell property collection .Count was read without array materialization, incorrectly rejecting a completed five-pose PASS report after Blender exited 0.",
+  "resolution": "Read authoritative JSON, used @(...PSObject.Properties).Count; resumed render/export without rerunning the already passed collision check.",
+  "modelOrCollisionFailure": false
+}

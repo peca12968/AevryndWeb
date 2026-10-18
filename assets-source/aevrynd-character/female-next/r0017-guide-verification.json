@@ -1,0 +1,99 @@
+{
+  "status": "PASS_TESTED_BODY_CAPSULES",
+  "sourceSha256": "f0ce878d809bf86c8c683f3932803d53a9fbae2a5de3ee4364341434650dd2ab",
+  "guideData": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0017-a-volume-guides.npz",
+  "guideDataSha256": "b320237f2e91124f412d9cd9ca8abfce2cbf4241f1c11520b2ecf58d42bc002d",
+  "masterGuideIds": [
+    394,
+    354,
+    360,
+    134,
+    365,
+    265,
+    140,
+    378,
+    272,
+    39,
+    230,
+    169,
+    395,
+    353,
+    375,
+    133,
+    370,
+    258,
+    127,
+    379,
+    283,
+    36,
+    229,
+    162
+  ],
+  "guideCount": 424,
+  "bodyCapsules": {
+    "status": "PASS_TESTED_BODY_CAPSULES",
+    "curves": 424,
+    "segments": 26712,
+    "unqualifiedSegments": 0,
+    "rootContainmentFailures": 0,
+    "rootFailureSamples": [],
+    "float64WindingFallbacks": [],
+    "minimumCapsuleClearanceLowerBoundM": 8.87198773885966e-07,
+    "minimumSampledCVGapM": 0.00013982918456662447,
+    "methods": {
+      "lipschitz": 25939,
+      "edge_distance": 773
+    },
+    "failureSamples": [],
+    "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Static pose being tested only; not self collision, other components or motion."
+  },
+  "childrenAllowed": true,
+  "crossSectionBefore": [
+    {
+      "zM": 1.51,
+      "guideCrossings": 329,
+      "radialMedianM": 0.07929871192432932,
+      "medianSectorRadialP90MinusP10M": 0.009374992063333906,
+      "sectorCount": 10
+    },
+    {
+      "zM": 1.46,
+      "guideCrossings": 406,
+      "radialMedianM": 0.08867641749531434,
+      "medianSectorRadialP90MinusP10M": 0.007465931763041049,
+      "sectorCount": 8
+    },
+    {
+      "zM": 1.4,
+      "guideCrossings": 424,
+      "radialMedianM": 0.10206152954320788,
+      "medianSectorRadialP90MinusP10M": 0.008290248243147856,
+      "sectorCount": 8
+    }
+  ],
+  "crossSectionAfter": [
+    {
+      "zM": 1.51,
+      "guideCrossings": 329,
+      "radialMedianM": 0.08649873944328508,
+      "medianSectorRadialP90MinusP10M": 0.013620205979556294,
+      "sectorCount": 10
+    },
+    {
+      "zM": 1.46,
+      "guideCrossings": 406,
+      "radialMedianM": 0.09459660867551065,
+      "medianSectorRadialP90MinusP10M": 0.008279006996455548,
+      "sectorCount": 8
+    },
+    {
+      "zM": 1.4,
+      "guideCrossings": 424,
+      "radialMedianM": 0.10553121997555398,
+      "medianSectorRadialP90MinusP10M": 0.007682578116911955,
+      "sectorCount": 8
+    }
+  ],
+  "metricScope": "Guide-line crossings of three horizontal planes, radial p90-p10 within fixed angular sectors; geometric spread only, not a realism or self-collision metric.",
+  "wallSeconds": 2.0406365394592285
+}
