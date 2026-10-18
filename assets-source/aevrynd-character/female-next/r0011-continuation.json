@@ -1,0 +1,34 @@
+{
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "nextResearchInput": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0011-b-ridge-skin-brows-study.blend",
+  "liveJobHandles": [],
+  "sourceGeometryAuthority": "r0010 c-spaced-lashes retained exactly; r0011 introduces only new brow geometry and skin shading.",
+  "completed": [
+    "Verified selected official CC0 texture extraction: CRC32, ETag and SHA256",
+    "Native UV pigment mapping and six-site linear albedo calibration",
+    "Skin roughness regions and non-displacing authoring microrelief",
+    "637 bound brow hairs in two named layers",
+    "Fresh saved-file source integrity and five static pose collision checks",
+    "Profile/oblique/alternate-light/tone reviews"
+  ],
+  "rejected": [
+    "a: overly high and sparse brows"
+  ],
+  "nextAction": "Build actual scalp/hairline, primary hair masses, guide clumps and finer strands as separate layers, then collision-aware motion. Keep working toward full head anatomy and native-to-evaluated facial deformation/blink transfer. Do not spend another round on small static brow parameter sweeps. Skin de-lighting/scalp-pigment cleanup and baking remain required before runtime promotion.",
+  "remainingDefects": [
+    "Head hair is not modelled; baked scalp stubble in the diffuse is not 3D hair.",
+    "Face anatomy/identity, caruncle and mouth structures remain unfinished.",
+    "Legacy diffuse contains baked lighting; it is not a measured, fully de-lit PBR albedo.",
+    "Brow stroke regularity and fine/pale appearance remain artificial.",
+    "No blink, facial expressions or continuous motion proof.",
+    "Procedural micro-bump and regional shader inputs need engine baking/export; no runtime LOD/performance gate passed."
+  ],
+  "doNotRepeat": [
+    "Do not call baked scalp colour a hair model.",
+    "Do not treat legacy diffuse as fully de-lit measured albedo.",
+    "Do not retune static lash/brow scalar values indefinitely.",
+    "Do not transfer component estimates to the whole character."
+  ],
+  "browBindingFile": "b-ridge-brow-bindings.json",
+  "wholeCharacterScore": null
+}

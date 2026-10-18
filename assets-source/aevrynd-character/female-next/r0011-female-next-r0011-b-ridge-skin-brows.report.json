@@ -1,0 +1,236 @@
+{
+  "revision": "female-next-r0011",
+  "variant": "b-ridge-skin-brows",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0010-c-spaced-lashes-study.blend",
+  "sourceSha256": "60bf9b8aea3accc303eb25fbfc5acedb621b59ca084420f3296b0ad666a2df9e",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0011-b-ridge-skin-brows-study.blend",
+  "sha256": "cf09382a0fd381481c20f6ae478c67968ecbd1abd4ad869d193ef62276004fd0",
+  "hypothesis": "Mapped anatomical pigmentation and skin-following brow fibres reduce the unfinished clay-mask appearance while preserving average reference albedo and fixed scene lighting.",
+  "skin": {
+    "material": "AFN11_CalibratedMappedSkin",
+    "calibration": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\textures\\makehuman-system-cc0\\young_lightskinned_female_diffuse3.png",
+      "sourceSha256": "1d82f782b7d2da732229633bd2d14754d873fff53cdb1d088977bcf67ae19dde",
+      "textureSize": [
+        2048,
+        2048
+      ],
+      "sampledSkinRGBLinear": [
+        0.8303304334113658,
+        0.5119974637474451,
+        0.35095903657295047
+      ],
+      "targetRGBLinear": [
+        0.32,
+        0.23,
+        0.18
+      ],
+      "perChannelReflectanceGain": [
+        0.385388740582828,
+        0.44922097526923094,
+        0.5128803684830755
+      ],
+      "samples": [
+        {
+          "world": [
+            -0.02800000086426735,
+            -0.12865714728832245,
+            1.434999942779541
+          ],
+          "uv": [
+            0.8669097423553467,
+            0.45064806938171387
+          ],
+          "pixel": [
+            1775,
+            1125
+          ],
+          "linearRGB": [
+            0.799102738014409,
+            0.467783796112159,
+            0.31854677812509186
+          ]
+        },
+        {
+          "world": [
+            0.02800000086426735,
+            -0.12865711748600006,
+            1.434999942779541
+          ],
+          "uv": [
+            0.8669096231460571,
+            0.5156874656677246
+          ],
+          "pixel": [
+            1775,
+            991
+          ],
+          "linearRGB": [
+            0.7454042095403874,
+            0.4232676699860717,
+            0.26635560480286247
+          ]
+        },
+        {
+          "world": [
+            -0.041999999433755875,
+            -0.12430554628372192,
+            1.434999942779541
+          ],
+          "uv": [
+            0.8660749793052673,
+            0.4323479235172272
+          ],
+          "pixel": [
+            1773,
+            1162
+          ],
+          "linearRGB": [
+            0.8549926081242338,
+            0.5332764040105052,
+            0.3762621229909065
+          ]
+        },
+        {
+          "world": [
+            0.041999999433755875,
+            -0.12430554628372192,
+            1.434999942779541
+          ],
+          "uv": [
+            0.8660749197006226,
+            0.5339874625205994
+          ],
+          "pixel": [
+            1773,
+            954
+          ],
+          "linearRGB": [
+            0.8148465722161012,
+            0.4851499400560704,
+            0.3005437944157765
+          ]
+        },
+        {
+          "world": [
+            -0.02500000037252903,
+            -0.12859731912612915,
+            1.5049999952316284
+          ],
+          "uv": [
+            0.7969676852226257,
+            0.45859792828559875
+          ],
+          "pixel": [
+            1632,
+            1108
+          ],
+          "linearRGB": [
+            0.8962693533742664,
+            0.6104955708078648,
+            0.467783796112159
+          ]
+        },
+        {
+          "world": [
+            0.02500000037252903,
+            -0.12859730422496796,
+            1.5049999952316284
+          ],
+          "uv": [
+            0.796967625617981,
+            0.5077371597290039
+          ],
+          "pixel": [
+            1632,
+            1008
+          ],
+          "linearRGB": [
+            0.8713671191987972,
+            0.5520114015120001,
+            0.3762621229909065
+          ]
+        }
+      ],
+      "purpose": "Keep six reference skin sites at the prior average linear albedo while adding mapped anatomical pigment. This is explicit albedo colour calibration, not a lighting/exposure edit or a claim of measured human skin reflectance."
+    },
+    "image": "young_lightskinned_female_diffuse3.png",
+    "skinRoughnessRange": [
+      0.4088007213735353,
+      0.54
+    ],
+    "subsurfaceScaleM": 0.0012,
+    "microRelief": "Procedural authoring-only bump, 12um distance x 0.14 strength; no geometry displacement. Needs baking for engine export.",
+    "wetRimPreserved": true
+  },
+  "brows": [
+    {
+      "object": "AFN11_L_BrowFibres",
+      "hairs": 320,
+      "vertices": 12800,
+      "triangles": 24320,
+      "rejectedPlacementTrials": 347
+    },
+    {
+      "object": "AFN11_R_BrowFibres",
+      "hairs": 317,
+      "vertices": 12680,
+      "triangles": 24092,
+      "rejectedPlacementTrials": 395
+    }
+  ],
+  "skinIsolationRenders": [
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0011-skin-brows\\skin-only-face-neutral.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0011-skin-brows\\skin-only-eyes-neutral.png"
+  ],
+  "renders": [
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0011-skin-brows\\b-ridge-skin-brows-face-neutral.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0011-skin-brows\\b-ridge-skin-brows-eyes-neutral.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0011-skin-brows\\b-ridge-skin-brows-oblique-neutral.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0011-skin-brows\\b-ridge-skin-brows-profile-neutral.png"
+  ],
+  "status": "RETAIN_B_AS_MAPPED_SKIN_BROW_RESEARCH_NOT_PHOTOREAL",
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "overallCharacterScore": null,
+  "enginePerformance": {
+    "status": "NOT_TESTED",
+    "cpuMs": null,
+    "gpuMs": null,
+    "memoryBytes": null
+  },
+  "remainingLimits": [
+    "No scalp hair model. Source texture contains baked scalp pigment.",
+    "Procedural micro-bump is not measured pore geometry and needs engine baking.",
+    "No blink/facial expressions, caruncle sculpt or tear-meniscus volume.",
+    "Source is high resolution, with no qualified runtime LOD."
+  ],
+  "technicalEvidence": "saved-collision-verification.json",
+  "visualAudit": "female-next-r0011-skin-brows.visual-audit.json",
+  "displayToneEvidence": "display-tone-audit.json",
+  "localAppearanceEstimates": [
+    {
+      "component": "Skin appearance",
+      "estimatedScore": 61,
+      "uncertaintyPoints": 10,
+      "reason": "Mapped anatomical colour is a visible improvement. Legacy diffuse still contains baked shadow/scalp pigment; the microrelief is synthetic, and grazing-light realism remains limited."
+    },
+    {
+      "component": "Eyebrow appearance",
+      "estimatedScore": 54,
+      "uncertaintyPoints": 10,
+      "reason": "Placement and density improved, but the short straight fibres still look etched, pale and procedural. A natural multi-scale groom is not complete."
+    }
+  ],
+  "sourceStatistics": {
+    "bodyVertices": 214050,
+    "bodyTriangles": 428096,
+    "opticalTriangles": 30528,
+    "lashTriangles": 28160,
+    "browTriangles": 48412,
+    "rigBones": 55,
+    "fileBytes": 20270702
+  },
+  "externalAssetProvenance": "download-provenance.json",
+  "nextAction": "Build actual scalp/hairline, primary hair masses, guide clumps and finer strands as separate layers, then collision-aware motion. Keep working toward full head anatomy and native-to-evaluated facial deformation/blink transfer. Do not spend another round on small static brow parameter sweeps. Skin de-lighting/scalp-pigment cleanup and baking remain required before runtime promotion."
+}

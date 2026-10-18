@@ -1,0 +1,44 @@
+{
+  "revision": "female-next-r0011",
+  "status": "RETAIN_B_AS_MAPPED_SKIN_BROW_RESEARCH_NOT_PHOTOREAL",
+  "selectedVariant": "b-ridge-skin-brows",
+  "variantDecisions": {
+    "a-skin-brows": "REJECTED_VISUAL: brows too high and sparse. No independent collision acceptance claimed.",
+    "b-ridge-skin-brows": "RETAIN_RESEARCH_ONLY: clearer pigment anatomy, reference albedo preserved, improved brow placement/density, static collision gates passed."
+  },
+  "visibleImprovement": [
+    "UV-mapped lips, nasal pigment and regional facial colour replace uniform clay albedo.",
+    "Brow fibres occupy a narrower, lower anatomical region; 637 independent skin-bound hairs remain visible."
+  ],
+  "strictLocalAssessments": [
+    {
+      "component": "Skin appearance",
+      "estimatedScore": 61,
+      "uncertaintyPoints": 10,
+      "reason": "Mapped anatomical colour is a visible improvement. Legacy diffuse still contains baked shadow/scalp pigment; the microrelief is synthetic, and grazing-light realism remains limited."
+    },
+    {
+      "component": "Eyebrow appearance",
+      "estimatedScore": 54,
+      "uncertaintyPoints": 10,
+      "reason": "Placement and density improved, but the short straight fibres still look etched, pale and procedural. A natural multi-scale groom is not complete."
+    }
+  ],
+  "scoreScope": "Subjective component-only estimates with uncertainty, not measured realism or a full-character score. Both remain below the 80-point component release gate.",
+  "remainingDefects": [
+    "Head hair is not modelled; baked scalp stubble in the diffuse is not 3D hair.",
+    "Face anatomy/identity, caruncle and mouth structures remain unfinished.",
+    "Legacy diffuse contains baked lighting; it is not a measured, fully de-lit PBR albedo.",
+    "Brow stroke regularity and fine/pale appearance remain artificial.",
+    "No blink, facial expressions or continuous motion proof.",
+    "Procedural micro-bump and regional shader inputs need engine baking/export; no runtime LOD/performance gate passed."
+  ],
+  "newBrowHairs": 637,
+  "minimumSampledBrowVertexBodyGapM": 3.5511868190951645e-05,
+  "distanceScope": "Brow vertices to body triangles only; not exact all-triangle minimum clearance.",
+  "displayToneChangePercentAtReferenceSites": 0.1921970294402886,
+  "overallCharacterScore": null,
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "nextAction": "Build actual scalp/hairline, primary hair masses, guide clumps and finer strands as separate layers, then collision-aware motion. Keep working toward full head anatomy and native-to-evaluated facial deformation/blink transfer. Do not spend another round on small static brow parameter sweeps. Skin de-lighting/scalp-pigment cleanup and baking remain required before runtime promotion."
+}

@@ -1,0 +1,16 @@
+00:00.407  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0010-c-spaced-lashes-study.blend"
+00:03.766  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0011-skin-brows\skin-only-face-neutral.png'
+00:04.203  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0011-skin-brows\skin-only-eyes-neutral.png'
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0011-skin-brows.py:34: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  material=bpy.data.materials.new('AFN11_BrowKeratin');material.use_nodes=True;bs=next(n for n in material.node_tree.nodes if n.bl_idname=='ShaderNodeBsdfPrincipled');bs.inputs['Roughness'].default_value=.52;bs.inputs['Specular IOR Level'].default_value=.25
+AFN_R0011_BROW={"object": "AFN11_L_BrowFibres", "hairs": 190, "vertices": 7600, "triangles": 14440, "rejectedPlacementTrials": 76}
+AFN_R0011_BROW={"object": "AFN11_R_BrowFibres", "hairs": 190, "vertices": 7600, "triangles": 14440, "rejectedPlacementTrials": 61}
+00:05.547  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0011-skin-brows\a-skin-brows-face-neutral.png'
+00:05.985  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0011-skin-brows\a-skin-brows-eyes-neutral.png'
+00:06.407  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0011-skin-brows\a-skin-brows-oblique-neutral.png'
+00:06.828  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0011-skin-brows\a-skin-brows-profile-neutral.png'
+Info: Saved as "aevrynd-female-next-r0011-a-skin-brows-study.blend"
+AFN_R0011_BUILD_DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

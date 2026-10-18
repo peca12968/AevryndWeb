@@ -1,0 +1,284 @@
+{
+  "uvLayers": [
+    {
+      "name": "UVMap",
+      "loops": 856192,
+      "min": [
+        0.00920800119638443,
+        0.009607000276446342
+      ],
+      "max": [
+        0.9935150146484375,
+        0.9738560914993286
+      ]
+    }
+  ],
+  "activeUV": "UVMap",
+  "referenceSkinSamples": [
+    {
+      "world": [
+        -0.02800000086426735,
+        -0.12865714728832245,
+        1.434999942779541
+      ],
+      "uv": [
+        0.8669097423553467,
+        0.45064806938171387
+      ]
+    },
+    {
+      "world": [
+        0.02800000086426735,
+        -0.12865711748600006,
+        1.434999942779541
+      ],
+      "uv": [
+        0.8669096231460571,
+        0.5156874656677246
+      ]
+    },
+    {
+      "world": [
+        -0.041999999433755875,
+        -0.12430554628372192,
+        1.434999942779541
+      ],
+      "uv": [
+        0.8660749793052673,
+        0.4323479235172272
+      ]
+    },
+    {
+      "world": [
+        0.041999999433755875,
+        -0.12430554628372192,
+        1.434999942779541
+      ],
+      "uv": [
+        0.8660749197006226,
+        0.5339874625205994
+      ]
+    },
+    {
+      "world": [
+        -0.02500000037252903,
+        -0.12859731912612915,
+        1.5049999952316284
+      ],
+      "uv": [
+        0.7969676852226257,
+        0.45859792828559875
+      ]
+    },
+    {
+      "world": [
+        0.02500000037252903,
+        -0.12859730422496796,
+        1.5049999952316284
+      ],
+      "uv": [
+        0.796967625617981,
+        0.5077371597290039
+      ]
+    }
+  ],
+  "materials": [
+    "AFN10_SkinWithWetRim"
+  ],
+  "shaders": [
+    {
+      "name": "\u539f\u5247\u5316 BSDF",
+      "type": "ShaderNodeBsdfPrincipled",
+      "inputs": {
+        "Base Color": [
+          0.3199999928474426,
+          0.23000000417232513,
+          0.18000000715255737,
+          1.0
+        ],
+        "Metallic": 0.0,
+        "Roughness": 0.550000011920929,
+        "IOR": 1.5,
+        "Alpha": 1.0,
+        "Thin Wall": false,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Weight": 0.0,
+        "Diffuse Roughness": 0.0,
+        "Subsurface Weight": 0.03500000014901161,
+        "Subsurface Radius": [
+          1.0,
+          0.20000000298023224,
+          0.10000000149011612
+        ],
+        "Subsurface Scale": 0.004999999888241291,
+        "Subsurface IOR": 1.399999976158142,
+        "Subsurface Anisotropy": 0.0,
+        "Specular IOR Level": 0.2199999988079071,
+        "Specular Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Anisotropic": 0.0,
+        "Anisotropic Rotation": 0.0,
+        "Tangent": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Transmission Weight": 0.0,
+        "Coat Weight": 0.0,
+        "Coat Roughness": 0.029999999329447746,
+        "Coat IOR": 1.5,
+        "Coat Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Coat Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Sheen Weight": 0.0,
+        "Sheen Roughness": 0.5,
+        "Sheen Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0,
+        "Thin Film Thickness": 0.0,
+        "Thin Film IOR": 1.3300000429153442
+      }
+    },
+    {
+      "name": "AFN10_WetMucosalSurface",
+      "type": "ShaderNodeBsdfPrincipled",
+      "inputs": {
+        "Base Color": [
+          0.4300000071525574,
+          0.2199999988079071,
+          0.18000000715255737,
+          1.0
+        ],
+        "Metallic": 0.0,
+        "Roughness": 0.23000000417232513,
+        "IOR": 1.5,
+        "Alpha": 1.0,
+        "Thin Wall": false,
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Weight": 0.0,
+        "Diffuse Roughness": 0.0,
+        "Subsurface Weight": 0.0,
+        "Subsurface Radius": [
+          1.0,
+          0.20000000298023224,
+          0.10000000149011612
+        ],
+        "Subsurface Scale": 0.004999999888241291,
+        "Subsurface IOR": 1.399999976158142,
+        "Subsurface Anisotropy": 0.0,
+        "Specular IOR Level": 0.5,
+        "Specular Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Anisotropic": 0.0,
+        "Anisotropic Rotation": 0.0,
+        "Tangent": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Transmission Weight": 0.0,
+        "Coat Weight": 0.2800000011920929,
+        "Coat Roughness": 0.10000000149011612,
+        "Coat IOR": 1.5,
+        "Coat Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Coat Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Sheen Weight": 0.0,
+        "Sheen Roughness": 0.5,
+        "Sheen Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0,
+        "Thin Film Thickness": 0.0,
+        "Thin Film IOR": 1.3300000429153442
+      }
+    }
+  ],
+  "lights": [
+    {
+      "name": "Aevrynd Fill",
+      "energy": 780.0,
+      "size": 2.4000000953674316,
+      "position": [
+        2.299999952316284,
+        -1.7000000476837158,
+        2.700000047683716
+      ]
+    },
+    {
+      "name": "Aevrynd Key",
+      "energy": 1150.0,
+      "size": 3.0,
+      "position": [
+        -2.0999999046325684,
+        -3.200000047683716,
+        3.799999952316284
+      ]
+    },
+    {
+      "name": "Aevrynd Rim",
+      "energy": 900.0,
+      "size": 2.0,
+      "position": [
+        0.0,
+        2.4000000953674316,
+        3.0
+      ]
+    }
+  ],
+  "view": {
+    "transform": "AgX",
+    "exposure": -0.5
+  }
+}
