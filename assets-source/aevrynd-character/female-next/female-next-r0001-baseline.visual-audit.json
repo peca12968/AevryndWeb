@@ -1,0 +1,60 @@
+{
+  "revision": "female-next-r0001",
+  "role": "authoritative visual and technical baseline; not a quality promotion",
+  "status": "TECHNICAL_PASS_VISUAL_FAIL_BASELINE_RETAINED",
+  "strictOverallScore": 42,
+  "scoreChangedFromR1128": false,
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "strictSubsystemScores": {
+    "anatomyAndProportion": 43,
+    "faceStructure": 42,
+    "eyes": 38,
+    "skin": 46,
+    "hair": 46,
+    "clothing": 0,
+    "rigAndDeformation": 38,
+    "collision": 55,
+    "enginePerformance": 0
+  },
+  "technicalEvidence": {
+    "objects": 30,
+    "triangles": 131724,
+    "bones": 38,
+    "shapeKeys": 136,
+    "hairCurves": 5727,
+    "hairPoints": 100890,
+    "framesTested": [1, 20, 33, 61],
+    "testedHairAndBrowPenetratingElements": 0,
+    "hairMinimumClearanceMm": 0.560479,
+    "browMinimumClearanceMm": 0.218151,
+    "missingExternalImages": 0,
+    "limits": [
+      "The collision result covers current scalp hair and eyebrow surfaces against the body only.",
+      "No clothing, clothing collision proxy, explicit body collision proxy, oral layer or engine runtime asset exists in r0001.",
+      "No Aevrynd runtime CPU, GPU, memory or multi-character benchmark has been run."
+    ]
+  },
+  "visualFailures": [
+    "The face remains broad and flat through the orbital, malar and perioral regions, with weak skeletal landmarks.",
+    "The mouth opening reads as a dark cut and lacks convincing lip roll, commissure closure, teeth, tongue and oral depth.",
+    "The eyes lack convincing corneal depth, moist occlusion and natural lid contact; the white rim is visually dominant.",
+    "The frontal hairline exposes wire-like roots and the profile is obscured by a flat vertical curtain of strands.",
+    "The full-body silhouette has underdeveloped shoulder, rib-cage, elbow, wrist, hand, knee and ankle structure.",
+    "The skin response is smooth and uniform, without enough regional roughness, colour variation or microstructure.",
+    "Frame 33 preserves the same facial and hair weaknesses and does not yet prove production-quality deformation."
+  ],
+  "decision": "Retain r0001 only as the fixed female-next comparison baseline. Do not export it into runtime and do not replace any website model.",
+  "nextAction": "Build a geometry-first face-structure candidate that changes orbital, malar, jaw and perioral form while holding lighting, hair, skin and camera constant.",
+  "renders": [
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-contact-sheet.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-face-front-f01.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-face-oblique-f01.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-face-profile-f01.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-full-front-f01.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-full-side-f01.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-full-back-f01.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-face-front-f33.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-full-front-f33.png"
+  ]
+}

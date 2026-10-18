@@ -1,0 +1,187 @@
+{
+  "revision": "female-next-r0001",
+  "purpose": "authoritative baseline for a new controlled Aevrynd female character mainline",
+  "source": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\aevrynd-female-cc0-brow-density-r1128-study.blend",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0001-baseline.blend",
+  "runtimeOutput": null,
+  "sourceOwnership": "Aevrynd-owned tracked v249/r1128 study; no MetaHuman, Unreal Engine, subscription or platform runtime dependency",
+  "geometryChanged": false,
+  "materialChanged": false,
+  "layerCollectionsAdded": true,
+  "layerObjectCounts": {
+    "BODY": 4,
+    "EYES": 10,
+    "ORAL": 0,
+    "HAIR": 10,
+    "CLOTHING": 0,
+    "RIG": 1,
+    "COLLISION": 0,
+    "PRESENTATION": 5
+  },
+  "statistics": {
+    "objects": 30,
+    "meshes": 23,
+    "vertices": 69097,
+    "polygons": 66180,
+    "triangles": 131724,
+    "curvesObjects": 1,
+    "hairCurves": 5727,
+    "hairPoints": 100890,
+    "armatures": 1,
+    "bones": 38,
+    "shapeKeys": 136,
+    "materials": 15,
+    "images": 3
+  },
+  "dependencies": {
+    "images": [
+      {
+        "name": "aevrynd-iris-hazel-v5",
+        "packed": true,
+        "source": "FILE",
+        "path": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\textures\\aevrynd-iris-hazel-v5.png",
+        "exists": true
+      },
+      {
+        "name": "aevrynd-sclera-basecolor-v61",
+        "packed": true,
+        "source": "FILE",
+        "path": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\textures\\aevrynd-sclera-basecolor-v61.png",
+        "exists": true
+      }
+    ],
+    "missingExternalImages": []
+  },
+  "collisionAudit": {
+    "1": {
+      "AevryndFemaleGradedHairlineGroom_R1081": {
+        "elementsTested": 100890,
+        "minimumSignedClearanceM": 0.0010000598231272306,
+        "penetratingElements": 0,
+        "belowOneMmElements": 0
+      },
+      "Brow_L": {
+        "elementsTested": 3000,
+        "minimumSignedClearanceM": 0.0003846185027214233,
+        "penetratingElements": 0
+      },
+      "Brow_R": {
+        "elementsTested": 3000,
+        "minimumSignedClearanceM": 0.0003824194791377522,
+        "penetratingElements": 0
+      },
+      "Brow_L_Density": {
+        "elementsTested": 175,
+        "minimumSignedClearanceM": 0.00021816581920575118,
+        "penetratingElements": 0
+      },
+      "Brow_R_Density": {
+        "elementsTested": 175,
+        "minimumSignedClearanceM": 0.00021815093532495666,
+        "penetratingElements": 0
+      }
+    },
+    "20": {
+      "AevryndFemaleGradedHairlineGroom_R1081": {
+        "elementsTested": 100890,
+        "minimumSignedClearanceM": 0.0005604787844504244,
+        "penetratingElements": 0,
+        "belowOneMmElements": 9
+      },
+      "Brow_L": {
+        "elementsTested": 3000,
+        "minimumSignedClearanceM": 0.0003846628260362195,
+        "penetratingElements": 0
+      },
+      "Brow_R": {
+        "elementsTested": 3000,
+        "minimumSignedClearanceM": 0.0003823621191259008,
+        "penetratingElements": 0
+      },
+      "Brow_L_Density": {
+        "elementsTested": 175,
+        "minimumSignedClearanceM": 0.00021818834102305118,
+        "penetratingElements": 0
+      },
+      "Brow_R_Density": {
+        "elementsTested": 175,
+        "minimumSignedClearanceM": 0.00021817280588720678,
+        "penetratingElements": 0
+      }
+    },
+    "33": {
+      "AevryndFemaleGradedHairlineGroom_R1081": {
+        "elementsTested": 100890,
+        "minimumSignedClearanceM": 0.0010073482956158841,
+        "penetratingElements": 0,
+        "belowOneMmElements": 0
+      },
+      "Brow_L": {
+        "elementsTested": 3000,
+        "minimumSignedClearanceM": 0.0003846628260362195,
+        "penetratingElements": 0
+      },
+      "Brow_R": {
+        "elementsTested": 3000,
+        "minimumSignedClearanceM": 0.0003823621191259008,
+        "penetratingElements": 0
+      },
+      "Brow_L_Density": {
+        "elementsTested": 175,
+        "minimumSignedClearanceM": 0.00021818834102305118,
+        "penetratingElements": 0
+      },
+      "Brow_R_Density": {
+        "elementsTested": 175,
+        "minimumSignedClearanceM": 0.00021817280588720678,
+        "penetratingElements": 0
+      }
+    },
+    "61": {
+      "AevryndFemaleGradedHairlineGroom_R1081": {
+        "elementsTested": 100890,
+        "minimumSignedClearanceM": 0.0010000150105042849,
+        "penetratingElements": 0,
+        "belowOneMmElements": 0
+      },
+      "Brow_L": {
+        "elementsTested": 3000,
+        "minimumSignedClearanceM": 0.0003846628260362195,
+        "penetratingElements": 0
+      },
+      "Brow_R": {
+        "elementsTested": 3000,
+        "minimumSignedClearanceM": 0.0003823621191259008,
+        "penetratingElements": 0
+      },
+      "Brow_L_Density": {
+        "elementsTested": 175,
+        "minimumSignedClearanceM": 0.00021818834102305118,
+        "penetratingElements": 0
+      },
+      "Brow_R_Density": {
+        "elementsTested": 175,
+        "minimumSignedClearanceM": 0.00021817280588720678,
+        "penetratingElements": 0
+      }
+    }
+  },
+  "totalPenetratingElements": 0,
+  "technicalStatus": "TECHNICAL_PASS",
+  "visualStatus": "BASELINE_RETAINED_VISUAL_FAIL",
+  "strictOverallScore": 42,
+  "websitePromotionApproved": false,
+  "enginePromotionApproved": false,
+  "visualAudit": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-baseline.visual-audit.json",
+  "renders": [
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-face-front-f01.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-face-oblique-f01.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-face-profile-f01.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-full-front-f01.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-full-side-f01.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-full-back-f01.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-face-front-f33.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0001-baseline\\female-next-r0001-full-front-f33.png"
+  ],
+  "sourceSha256": "4586285ca2b4c235f7838ab6f4e16b2b1b3f469addd435c095eb987ba82e4347"
+}
