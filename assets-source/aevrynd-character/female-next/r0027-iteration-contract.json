@@ -1,0 +1,33 @@
+{
+  "previousGoalTurnClassification": "progress: r26 bounded actual soft-tissue studies rejected, new evidence stops oral CSG work and changes priority back to complete-head appearance.",
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0023-b-neutral-review.blend",
+  "sourceSha256": "5b9eecfb5d9bcd83790c17de2dfe2919b8c454d003852f117d7dc5abc7fbdf1f",
+  "visibleDefectsRanked": [
+    "Continuous centre-part cap and exposed artificial frontal hairline, stiff side-only flow.",
+    "Very pale sparse brows and low facial surface definition.",
+    "Stiff neutral mouth/empty oral anatomy in retained head, separate failed oral branches."
+  ],
+  "primaryDefect": "Frontal hair has no natural overlapping sweep; it reads as a parted cap.",
+  "hypothesis": "An authored diagonal fringe flow across the forehead, with layered end placement, changes the complete hairstyle and breaks the rigid frontal cap. Use existing scalp roots and materials; do not add fibres or alter skin/exposure.",
+  "design": "64 existing front guides selected by root domain. Preserve four original root CVs exactly, cubic sweep to actual forehead/temple landmarks, conservative outer routing of free lengths. Child authoring binds only selected frontal fibres to those guides.",
+  "reference": "Official Daniel Bystedt Hair Styles: scalp part domains and separately controlled flows as learning only. Exact CC-BY-SA version unresolved; no third-party geometry, node code, textures or author prose copied into our asset.",
+  "rejectIf": [
+    "Any complete guide/body capsule failure before child expansion.",
+    "Any moved root, changed unrelated head/skin/material/light state.",
+    "A new solid fringe slab, harsh shelf or obvious whole-head silhouette regression.",
+    "Any changed child/body/eye/brow/lash segment cannot be qualified in the saved static scope."
+  ],
+  "budget": {
+    "candidatesMaximum": 3,
+    "candidate": "a",
+    "threads": 4,
+    "selectedGuides": 64,
+    "guideCVs": 64,
+    "sourceFibres": 21086,
+    "noAddedFibres": true,
+    "diagnosticMinutes": 10,
+    "roundCheckpointMinutes": 45
+  },
+  "scope": "Static hairstyle appearance study; no self/dynamics or engine acceptance."
+}

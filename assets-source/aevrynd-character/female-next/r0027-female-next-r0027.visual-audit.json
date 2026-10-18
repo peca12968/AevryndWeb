@@ -1,0 +1,64 @@
+{
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "decisionA": "VISUALLY_REJECTED_FLAT_BRIGHT_ENVELOPE_PLATE",
+  "decisionB": "VISUALLY_REJECTED_COMBED_SHEET_AND_ABRUPT_FOREHEAD_EDGE",
+  "appearance": "A changes the hairstyle but creates a bright slab/roof. B softens that roof using actual skin loft and length layers, but still reads as a pasted combed sheet, with poor edge and whole-groom hierarchy. Neither improves the retained complete-head realism sufficiently. No appearance score gain.",
+  "appearanceScore": null,
+  "overallCharacterScore": null,
+  "function": "Own frontal flow and reauthored guide mapping, 64 selected guides and 2959 existing fibres, exact four-CV root prefixes. Counts, radii, all source meshes/UV/weights/rig/material/light controls held. Both models reopen independently.",
+  "contact": "Changed guides and child/body/eye/brow/lash capsules pass the neutral static pose only. Five-pose expansion stopped after visual rejection. No hair/hair self, dynamics/continuous motion or runtime acceptance.",
+  "models": {
+    "a": {
+      "path": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0027-a-swept-fringe-study.blend",
+      "sha256": "5d80db875703b97507d07b9b8dc553887d60c2b6b1f9acc4433d9664341d6a49"
+    },
+    "b": {
+      "path": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0027-b-swept-fringe-study.blend",
+      "sha256": "375a9dbd30ee92ec046953a30dccff5b32c87aa2279f69190239f69ffe95ad1d"
+    }
+  },
+  "nextVerifiedCC0Base": [
+    {
+      "name": "Body Female - Realistic",
+      "author": "Dan Ulrich",
+      "license": "CC0",
+      "copyright": "",
+      "description": "Realistic scan data model with multiresolution details",
+      "objects": [
+        "GEO-body_female_realistic",
+        "GEO-body_female_realistic.eye.L",
+        "GEO-body_female_realistic.eye.R"
+      ]
+    },
+    {
+      "name": "Head (Animation) - Realistic",
+      "author": "Dan Ulrich",
+      "license": "CC0",
+      "copyright": "",
+      "description": "Realistic scan data model with multiresolution details. Topology optimized for rigging and animation",
+      "objects": [
+        "GEO-head_animation_realistic",
+        "GEO-head_animation_realistic.iris.L",
+        "GEO-head_animation_realistic.iris.R",
+        "GEO-head_animation_realistic.sclera.L",
+        "GEO-head_animation_realistic.sclera.R"
+      ]
+    },
+    {
+      "name": "Head (Sculpting) - Realistic",
+      "author": "Dan Ulrich",
+      "license": "CC0",
+      "copyright": "",
+      "description": "Realistic scan data model with multiresolution details. Topology is optimized for multiresolution sculpting",
+      "objects": [
+        "GEO-head_sculpting_realistic",
+        "GEO-head_sculpting_realistic.iris.R",
+        "GEO-head_sculpting_realistic.sclera.L",
+        "GEO-head_sculpting_realistic.sclera.R",
+        "GEO-head_sculpting_realistic.iris.L"
+      ]
+    }
+  ],
+  "runtime": "NOT_IMPLEMENTED_OR_TESTED",
+  "nextAction": "Keep r23 B as current integrated head and r25 A dental research. Reject r27 A and B for whole-head appearance; no third fringe path/loft/projection/tip/density/material sweep on this cached groom. Actual 64-guide/2959-fibre static tests pass neutral, but the art remains a combed sheet. Change the asset/foundation route now: use the already-downloaded official Human Base Meshes v1.4.1 selected collection Body Female - Realistic (Dan Ulrich, explicitly CC0, 10582 base vertices, multires scan details), and evaluate its head/eye anatomy against r23 in a matched neutral clay setup. The same library has Head (Animation) - Realistic and Head (Sculpting) - Realistic by Dan Ulrich, individually CC0. Load only the chosen female/realistic collection into an isolated source study, preserve multires/UV data, inspect actual evaluated levels/units/origin and separate eye components. Do not import unknown Rain Rig programs or old invalid stylized drivers; male assets are not development targets. Produce a real complete-head candidate and comparison, not another inventory-only turn. Do not claim the new CC0 baseline is automatically better: examine multi-angle anatomy, eye/skin compatibility and actual contacts before choosing any adoption scope. Retain authorship/provenance and existing full-head fallback. Hair demo remains read-only learning because its exact CC-BY-SA version is unrecorded; do not describe it as CC0. Oral CSG, old perioral annulus, unbounded ear/root corrections remain stopped. Full appearance, blink, expressions, complete hair dynamics/self, body/clothes, runtime/LOD/performance and explicit female acceptance are still required."
+}
