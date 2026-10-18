@@ -1,0 +1,149 @@
+{
+  "schema": "aevrynd.groom.authoring.v1",
+  "releaseState": "OFFLINE_PARTIAL_HEAD_NEUTRAL_REST_REVIEW_ONLY",
+  "units": "metres",
+  "coordinateSpace": "Neutral model world space; explicit inverse head-bind matrix maps into head-local coordinates.",
+  "sourceBlender": "aevrynd-female-next-r0023-b-neutral-review.blend",
+  "bodyObject": "AFN_R0008_Body",
+  "bodyGeometrySha256": "78b358c6812413680cd2deccff21adbeea82c150818a9fe6d8d4326fd99559d1",
+  "bodyTriangleVertexIdsStableAtBind": true,
+  "bodyWorldMatrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "headBone": "head",
+  "headBindWorldMatrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.045209527015686035,
+      -0.9989774823188782,
+      -0.04426691308617592
+    ],
+    [
+      0.0,
+      0.9989774227142334,
+      0.04520943760871887,
+      1.4245015382766724
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "worldRestToHeadBindLocalMatrix": [
+    [
+      1.0,
+      -0.0,
+      0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      0.04520944133400917,
+      0.9989776015281677,
+      -1.4210437536239624
+    ],
+    [
+      0.0,
+      -0.998977541923523,
+      0.045209530740976334,
+      -0.10862269997596741
+    ],
+    [
+      -0.0,
+      0.0,
+      -0.0,
+      1.0
+    ]
+  ],
+  "guideData": "aevrynd-female-next-r0017-c-volume-guides.npz",
+  "guideBindings": "aevrynd-female-next-r0014-guide-bindings.json",
+  "renderHairData": "aevrynd-female-next-r0017-c-hair-data.npz",
+  "renderHairBindings": "aevrynd-female-next-r0014-root-bindings.json",
+  "guideCount": 424,
+  "guideCVs": 64,
+  "renderFibres": 21086,
+  "renderPoints": 1347824,
+  "collisionEnvelopeScope": "Original r17 static groom evidence plus r18 changed-brow checks inherited only where unchanged. r23 changed lip geometry tested in five static poses; all hair capsules separated from the union old/new lip box, and guide/child root support triangles held. No self/dynamics/runtime proof.",
+  "sourceFiles": [
+    {
+      "file": "aevrynd-female-next-r0017-c-volume-locks-study.blend",
+      "sha256": "c1ddff0c8f7fa3e211f68e501d8a42c9dbd7e28d356e7c881e18302464801c19",
+      "bytes": 40308241
+    },
+    {
+      "file": "aevrynd-female-next-r0017-c-volume-guides.npz",
+      "sha256": "90b702387e7f747f0f230d1df579cb12c6265dd1fabffca7d2aa0ada8ffb43f7",
+      "bytes": 595527
+    },
+    {
+      "file": "aevrynd-female-next-r0017-c-hair-data.npz",
+      "sha256": "46f8104de0dda4dc6dc28d57595b869326175b77ebfa39c2a3263cad9757b803",
+      "bytes": 19420332
+    },
+    {
+      "file": "aevrynd-female-next-r0014-guide-bindings.json",
+      "sha256": "612e3f5cd4ea24eb0d6b0a3147b6d5ddd5f5785440083b849258f281a4002ba2",
+      "bytes": 96030
+    },
+    {
+      "file": "aevrynd-female-next-r0014-root-bindings.json",
+      "sha256": "4b27dc52eb971f6497b83d500f23092114376a0a86de738df4fcbf230eb2c205",
+      "bytes": 6842126
+    },
+    {
+      "file": "aevrynd-female-next-r0023-b-neutral-review.blend",
+      "sha256": "5b9eecfb5d9bcd83790c17de2dfe2919b8c454d003852f117d7dc5abc7fbdf1f",
+      "bytes": 41324448
+    }
+  ],
+  "validation": {
+    "guideRootReconstructionMaximumErrorM": 1.4251077354852405e-07,
+    "childRootReconstructionMaximumErrorM": 1.6067127853159084e-07,
+    "guideIndexWeightChecks": "PASS",
+    "guideRootIdentityToValidatedR0014": true,
+    "allChildRootsIdentityToValidatedR0014": true,
+    "countsRadiiLayersUnchanged": true,
+    "rootErrorScope": "Global rest body changes only at the lips; all 424 guide and 21086 child support triangles, root positions, bind matrices and binding files held exactly. Original reconstruction bounds apply at those unchanged triangles, not a motion proof."
+  },
+  "notImplemented": [
+    "Complete-hair dynamics, moving-contact/root-transition solution, self collision, calibrated friction/twist/aerodynamics.",
+    "Native runtime importer/renderer/LOD/performance acceptance."
+  ],
+  "runtimePromotionApproved": false,
+  "inheritedObjectIds": "AFN14 groom names and exact arrays remain r17 C; complete integrated head and baked neutral lip rest are r23 B.",
+  "masterLockCount": 24,
+  "guideMasterAssignmentField": "guideMasterAssignments indexes masterGuideIds in guideData",
+  "childMappingScope": "Root/guide IDs and weights are retained. Exact child geometry is renderHairData; root mappings alone do not reconstruct the authored volume deformation.",
+  "currentHeadRevision": "female-next-r0023-b"
+}

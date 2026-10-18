@@ -1,0 +1,67 @@
+{
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0018-c-triangulated-brows-study.blend",
+  "sourceSha256": "b6e9ddd3675afd205dee73e09a7e28f2b3c6583c8456425a0dc000037fd17d42",
+  "decisionA": "REJECT_NEUTRAL_APPEARANCE_UNINTENDED_SMILE_DESPITE_STATIC_CONTACT_PASS",
+  "decisionB": "ADOPT_SCOPED_NEUTRAL_REST_CORRECTION_IN_OFFLINE_INTEGRATED_HEAD_ONLY",
+  "appearance": "B reduces central empty slit and excessive projected lip volume while removing A common seam lift; source neutral mouth width and expression are largely retained. Lips/skin and full face still look artificial; this is a partial rest-form improvement.",
+  "localAppearanceEstimate": {
+    "scope": "Neutral mouth appearance only in the matched r18-versus-r23 images; not a full face, whole character or animation grade.",
+    "before": 45,
+    "afterB": 52,
+    "uncertaintyPlusMinus": 10,
+    "basis": "Actual paired full-head, lip closeup and multiview/alternate-light inspection; subjective strict review estimate, not objective human realism measurement.",
+    "remainingDeductions": [
+      "Pillow-like lower-lip form and overly smooth vermilion remain.",
+      "Some outer mouth aperture and a visible painted inner-rim line remain.",
+      "No separate teeth, tongue or complete oral lining, no natural animated expression acceptance."
+    ]
+  },
+  "overallScore": null,
+  "metrics": {
+    "centralAperture": {
+      "xM": 0.0,
+      "beforeGapM": 0.0007810592651367188,
+      "afterGapM": 0.00023663043975830078,
+      "scope": "One frontal sampled central section; not whole-mouth minimum gap or complete closure."
+    },
+    "maximumSampledSeamDriftM": 2.187490463256836e-05,
+    "maximumRemainingSampledApertureM": 0.0009062290191650391,
+    "sections": 27
+  },
+  "function": "Native target import and a reusable neutral-rest sculpt; no jaw/tongue or expression motion acceptance.",
+  "contacts": "Changed lip/body self and existing eye/brow/lash surfaces pass five static poses. Existing finite-radius hair segments are separated from union old/new lip bounds; unchanged source hair proof only inherited in its own scope. Baked rest rechecked for mesh self/components and pose-equivalence.",
+  "meshQuality": {
+    "asset": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0023-b-neutral-review.blend",
+    "assetSha256": "5b9eecfb5d9bcd83790c17de2dfe2919b8c454d003852f117d7dc5abc7fbdf1f",
+    "sourceSha256": "b6e9ddd3675afd205dee73e09a7e28f2b3c6583c8456425a0dc000037fd17d42",
+    "bodyGeometrySha256": "78b358c6812413680cd2deccff21adbeea82c150818a9fe6d8d4326fd99559d1",
+    "vertices": 214050,
+    "triangles": 428096,
+    "changedVertices": 16767,
+    "changedTriangles": 33984,
+    "allFinite": true,
+    "changedDegenerateTrianglesBelow1eMinus14M2": 0,
+    "changedNormalsOver90DegreesFromSource": 0,
+    "minimumChangedTriangleAreaM2": 5.02361241985161e-09,
+    "minimumChangedAreaRatio": 0.6809054849702137,
+    "maximumChangedNormalAngleDegrees": 25.042483468732634,
+    "status": "PASS_TESTED_CHANGED_TRIANGLE_QUALITY",
+    "scope": "Changed triangle geometry only, independent of rendered appearance. Normal comparison is source-relative, not an anatomical quality or dynamics certificate.",
+    "guideRootBindings": 424,
+    "maximumGuideSupportingSkinVertexMoveM": 0.0
+  },
+  "runtime": "NOT_IMPLEMENTED_OR_TESTED",
+  "reviewModel": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0023-b-neutral-review.blend",
+  "reviewSha256": "5b9eecfb5d9bcd83790c17de2dfe2919b8c454d003852f117d7dc5abc7fbdf1f",
+  "editableStudy": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0023-b-rest-lip-field-study.blend",
+  "staticEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0023-neutral-mouth\\b-saved-static-verification.json",
+  "restEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0023-neutral-mouth\\b-neutral-review-verification.json",
+  "mouthNotFullyClosed": true,
+  "missingOralComponents": [
+    "Separate teeth",
+    "Separate tongue",
+    "Complete oral cavity lining"
+  ],
+  "nextAction": "Use r23 B neutral-review as the integrated current head source, not old r18 or the failed r22 groom. Its accepted lip rest is baked into body basis, and the editable native/rest morph study remains separate. Next complete real oral layering: selectively fetch teeth_base OBJ/MHCLO/material and tongue01 OBJ/MHCLO/material from the official CC0 system archive indexed in r23, validate per-file license/author and checksums, implement our own sparse proxy-binding/axis-unit mapping against the retained native source, then fit to the current lip/oral geometry. Create separately named upper teeth, lower teeth, gums/tongue and required inner lining with actual depth rather than a covering strip. First verify neutral containment/separation and a small justified mouth-open pose before expanding animation; keep head/eyes/hair/skin/light controls and the r23 rest correction. Existing rig has no verified jaw/tongue controls, so inspect and add only what the oral motion needs, without pretending head-parented static parts follow a jaw. Preserve complete-head neutral/open images and test lip/teeth/tongue/lining contacts, distinguishing static samples from continuous motion. Do not run another compression-strength sweep or revive radial-annulus, darkening or cover geometry to fake a natural mouth. r20 blink, hairline/complete hair dynamics/self contact, expressions/full body/clothes, native runtime/LOD/performance and explicit female acceptance remain incomplete."
+}

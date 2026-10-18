@@ -1,0 +1,39 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0018-c-triangulated-brows-study.blend",
+  "sourceSha256": "b6e9ddd3675afd205dee73e09a7e28f2b3c6583c8456425a0dc000037fd17d42",
+  "Adecision": "Technical static scope passes, neutral visual candidate rejected: native compression lifts corners about 2.4mm while central seam moves only about 0.3mm, producing an unintended smile.",
+  "hypothesis": "Keep relative upper/lower lip approach and depth reduction; remove measured common vertical seam motion with a smooth perioral support field and hold lateral coordinates. This is an authored neutral-rest correction rather than changing the native expression strength.",
+  "held": [
+    "Same measured compression weight as A; no weight sweep.",
+    "Source head/eye/hair/brow/lash/skin/rig/material/light state.",
+    "No extra oral covering geometry or radial annulus."
+  ],
+  "fieldDefinition": {
+    "x": "Zero lateral displacement.",
+    "y": "Native positive lip-compression displacement.",
+    "z": "Native compression minus interpolated mean upper/lower rim displacement, spatially feathered to surrounding face.",
+    "spatialMaskM": {
+      "xFullHalfWidth": 0.02,
+      "xZeroHalfWidth": 0.04,
+      "zRange": [
+        1.37,
+        1.435
+      ],
+      "zFeather": 0.02,
+      "yFullFront": -0.133,
+      "yZeroBack": -0.108
+    }
+  },
+  "rejectIf": [
+    "Any affected body self/component or hair overlap.",
+    "Visible pinched, distorted or still smiling rest mouth; no matching whole-face benefit.",
+    "Measured seam/width drift remains large despite the rest correction."
+  ],
+  "budget": {
+    "threads": 4,
+    "candidateNumber": 2,
+    "maximumCandidates": 3,
+    "poses": 5
+  },
+  "scope": "Static rest lip sculpt only, not complete oral anatomy or facial motion."
+}
