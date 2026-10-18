@@ -1,0 +1,58 @@
+{
+  "revision": "female-next-r0009",
+  "status": "RETAIN_OPTICAL_RESEARCH_ONLY_PARTIAL_VISIBLE_IMPROVEMENT",
+  "reviewedRenders": [
+    "baseline-eyes-neutral.png",
+    "no-cornea-eyes-neutral.png",
+    "unit-ior-eyes-neutral.png",
+    "no-screen-refraction-eyes-neutral.png",
+    "cycles-reference-eyes-neutral.png",
+    "trace-scale-eyes-neutral.png",
+    "reflection-isolation-eyes-neutral.png",
+    "a-slab-thickness-eyes-neutral.png",
+    "a-slab-thickness-face-neutral.png",
+    "a-slab-thickness-oblique-neutral.png",
+    "baseline-alternate-light-eyes-neutral.png",
+    "a-slab-thickness-alternate-light-eyes-neutral.png",
+    "a-slab-thickness-eyes-gaze-right.png"
+  ],
+  "visibleGain": "The bright lower-iris crescent is strongly reduced at the locked frontal view and a second lighting setup; entire face remains plainly an unfinished mannequin.",
+  "remainingDefects": [
+    "Iris still has an artificial smooth/radial appearance and a lower horizontal optical band.",
+    "Two large studio-light highlights remain; physically consistent light reflection is not sufficient proof of a realistic eye.",
+    "The single open corneal surface is an approximation, not a closed anatomically validated optical volume.",
+    "Lid wetline, caruncle, lashes, eyebrows, skin maps and hair are missing.",
+    "Blinking and facial expressions are not implemented or qualified."
+  ],
+  "localArtifactMetric": {
+    "scope": "Fixed lower-crescent image ROIs only, not a realism score. Threshold: all RGB >180 and channel range <40. Pixel counts depend on this exact image framing.",
+    "rectanglesXYXY": {
+      "left": [
+        313,
+        374,
+        360,
+        381
+      ],
+      "right": [
+        1033,
+        374,
+        1080,
+        381
+      ]
+    },
+    "brightNeutralPixels": {
+      "before": {
+        "left": 294,
+        "right": 251
+      },
+      "after": {
+        "left": 0,
+        "right": 0
+      }
+    }
+  },
+  "wholeCharacterScore": null,
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "nextAction": "Build anatomically grounded eyelid rim, wetline/canthus and brow/lash structure; qualify blink; continue the complete-head milestone. Do not keep sweeping cornea scalar parameters."
+}

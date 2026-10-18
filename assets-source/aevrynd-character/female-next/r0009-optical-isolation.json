@@ -1,0 +1,239 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0008-a-tight-study.blend",
+  "sourceSha256": "fba9cbaa9e549de3018e6b473d753b2a9d5f050f4e5ef3e35343b845d02ac8a2",
+  "purpose": "Diagnostics only. Unit IOR and hidden cornea are not adoption candidates.",
+  "records": [
+    {
+      "label": "baseline",
+      "image": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0009-optics\\baseline-eyes-neutral.png",
+      "ior": 1.3760000467300415,
+      "corneaHidden": false,
+      "useRaytraceRefraction": true,
+      "engine": "BLENDER_EEVEE",
+      "exposure": -0.5,
+      "viewTransform": "AgX",
+      "look": "AgX - Medium High Contrast",
+      "lights": [
+        {
+          "name": "Aevrynd Fill",
+          "position": [
+            2.299999952316284,
+            -1.7000000476837158,
+            2.700000047683716
+          ],
+          "energy": 780.0,
+          "size": 2.4000000953674316,
+          "colour": [
+            0.5600000023841858,
+            0.699999988079071,
+            1.0
+          ]
+        },
+        {
+          "name": "Aevrynd Key",
+          "position": [
+            -2.0999999046325684,
+            -3.200000047683716,
+            3.799999952316284
+          ],
+          "energy": 1150.0,
+          "size": 3.0,
+          "colour": [
+            1.0,
+            0.7300000190734863,
+            0.5799999833106995
+          ]
+        },
+        {
+          "name": "Aevrynd Rim",
+          "position": [
+            0.0,
+            2.4000000953674316,
+            3.0
+          ],
+          "energy": 900.0,
+          "size": 2.0,
+          "colour": [
+            0.699999988079071,
+            0.8199999928474426,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "no-cornea",
+      "image": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0009-optics\\no-cornea-eyes-neutral.png",
+      "ior": 1.3760000467300415,
+      "corneaHidden": true,
+      "useRaytraceRefraction": true,
+      "engine": "BLENDER_EEVEE",
+      "exposure": -0.5,
+      "viewTransform": "AgX",
+      "look": "AgX - Medium High Contrast",
+      "lights": [
+        {
+          "name": "Aevrynd Fill",
+          "position": [
+            2.299999952316284,
+            -1.7000000476837158,
+            2.700000047683716
+          ],
+          "energy": 780.0,
+          "size": 2.4000000953674316,
+          "colour": [
+            0.5600000023841858,
+            0.699999988079071,
+            1.0
+          ]
+        },
+        {
+          "name": "Aevrynd Key",
+          "position": [
+            -2.0999999046325684,
+            -3.200000047683716,
+            3.799999952316284
+          ],
+          "energy": 1150.0,
+          "size": 3.0,
+          "colour": [
+            1.0,
+            0.7300000190734863,
+            0.5799999833106995
+          ]
+        },
+        {
+          "name": "Aevrynd Rim",
+          "position": [
+            0.0,
+            2.4000000953674316,
+            3.0
+          ],
+          "energy": 900.0,
+          "size": 2.0,
+          "colour": [
+            0.699999988079071,
+            0.8199999928474426,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "unit-ior",
+      "image": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0009-optics\\unit-ior-eyes-neutral.png",
+      "ior": 1.0,
+      "corneaHidden": false,
+      "useRaytraceRefraction": true,
+      "engine": "BLENDER_EEVEE",
+      "exposure": -0.5,
+      "viewTransform": "AgX",
+      "look": "AgX - Medium High Contrast",
+      "lights": [
+        {
+          "name": "Aevrynd Fill",
+          "position": [
+            2.299999952316284,
+            -1.7000000476837158,
+            2.700000047683716
+          ],
+          "energy": 780.0,
+          "size": 2.4000000953674316,
+          "colour": [
+            0.5600000023841858,
+            0.699999988079071,
+            1.0
+          ]
+        },
+        {
+          "name": "Aevrynd Key",
+          "position": [
+            -2.0999999046325684,
+            -3.200000047683716,
+            3.799999952316284
+          ],
+          "energy": 1150.0,
+          "size": 3.0,
+          "colour": [
+            1.0,
+            0.7300000190734863,
+            0.5799999833106995
+          ]
+        },
+        {
+          "name": "Aevrynd Rim",
+          "position": [
+            0.0,
+            2.4000000953674316,
+            3.0
+          ],
+          "energy": 900.0,
+          "size": 2.0,
+          "colour": [
+            0.699999988079071,
+            0.8199999928474426,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "no-screen-refraction",
+      "image": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0009-optics\\no-screen-refraction-eyes-neutral.png",
+      "ior": 1.3760000467300415,
+      "corneaHidden": false,
+      "useRaytraceRefraction": false,
+      "engine": "BLENDER_EEVEE",
+      "exposure": -0.5,
+      "viewTransform": "AgX",
+      "look": "AgX - Medium High Contrast",
+      "lights": [
+        {
+          "name": "Aevrynd Fill",
+          "position": [
+            2.299999952316284,
+            -1.7000000476837158,
+            2.700000047683716
+          ],
+          "energy": 780.0,
+          "size": 2.4000000953674316,
+          "colour": [
+            0.5600000023841858,
+            0.699999988079071,
+            1.0
+          ]
+        },
+        {
+          "name": "Aevrynd Key",
+          "position": [
+            -2.0999999046325684,
+            -3.200000047683716,
+            3.799999952316284
+          ],
+          "energy": 1150.0,
+          "size": 3.0,
+          "colour": [
+            1.0,
+            0.7300000190734863,
+            0.5799999833106995
+          ]
+        },
+        {
+          "name": "Aevrynd Rim",
+          "position": [
+            0.0,
+            2.4000000953674316,
+            3.0
+          ],
+          "energy": 900.0,
+          "size": 2.0,
+          "colour": [
+            0.699999988079071,
+            0.8199999928474426,
+            1.0
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+00:00.328  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0008-a-tight-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0009-optics.py:13: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  return {p.identifier:getattr(obj,p.identifier) for p in obj.bl_rna.properties
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0009-optics.py:45: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  result[m.name]={'properties':props,'nodes':[(n.name,n.bl_idname,[(i.name,value(i)) for i in n.inputs if not(m.name=='AFN6_Cornea' and n.bl_idname=='ShaderNodeOutputMaterial' and i.name=='Thickness')]) for n in m.node_tree.nodes] if m.use_nodes else [],
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0009-optics.py:46: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  'links':[(l.from_node.name,l.from_socket.identifier,l.to_node.name,l.to_socket.identifier) for l in m.node_tree.links] if m.use_nodes else []}
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0009-optics.py:13: DeprecationWarning: 'AreaLight.use_nodes' is expected to be removed in Blender 6.0
+  return {p.identifier:getattr(obj,p.identifier) for p in obj.bl_rna.properties
+00:01.532  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0009-a-slab-thickness-study.blend"
+AFN_R0009_VERIFIED={"meshes": true, "materialsExceptDeclaredThickness": true, "rig": true, "lights": true, "colourManagement": true, "world": true, "eevee": true, "raytracing": true, "images": true, "bodyMaterial": true}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

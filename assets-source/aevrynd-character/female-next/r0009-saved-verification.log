@@ -1,0 +1,20 @@
+00:00.313  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0008-a-tight-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0009-optics.py", line 49, in <module>
+    bpy.ops.wm.open_mainfile(filepath=str(BASE)); old=state()
+                                                      ~~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0009-optics.py", line 39, in state
+    return {'meshes':meshes(),'rig':{
+                     ~~~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0009-optics.py", line 32, in meshes
+    'keys':keys,'parent':o.parent.name if o.parent else None,'modifiers':[(x.type,scalars(x),getattr(x,'object',None).name if getattr(x,'object',None) else None) for x in o.modifiers],
+                                                                                  ~~~~~~~^^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0009-optics.py", line 14, in scalars
+    if p.type in {'BOOLEAN','INT','FLOAT','ENUM','STRING'} and not p.is_array and p.identifier not in {'name','name_full'}}
+                                                                   ^^^^^^^^^^
+AttributeError: 'StringProperty' object has no attribute 'is_array'
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0009-optics.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

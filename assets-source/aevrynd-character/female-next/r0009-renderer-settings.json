@@ -1,0 +1,29 @@
+{
+  "outputInputs": {
+    "Surface": "None",
+    "Volume": "None",
+    "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+    "Thickness": "0.0"
+  },
+  "materialProperties": {
+    "surface_render_method": "DITHERED",
+    "use_raytrace_refraction": "True",
+    "use_screen_refraction": "True",
+    "refraction_depth": "0.0",
+    "thickness_mode": "SPHERE",
+    "use_thickness_from_shadow": "False"
+  },
+  "raytraceOptions": {
+    "rna_type": "<bpy_struct, Struct(\"RaytraceEEVEE\") at 0x000002703828F200>",
+    "resolution_scale": "2",
+    "use_backface_hit": "True",
+    "backface_radiance_scale": "0.25",
+    "use_denoise": "True",
+    "denoise_spatial": "True",
+    "denoise_temporal": "True",
+    "denoise_bilateral": "True",
+    "screen_trace_thickness": "0.10000000149011612",
+    "trace_max_roughness": "0.5",
+    "screen_trace_quality": "0.25"
+  }
+}

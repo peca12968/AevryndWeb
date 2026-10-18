@@ -1,0 +1,14 @@
+00:00.328  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0008-a-tight-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0009-optics.py:13: DeprecationWarning: 'AreaLight.use_nodes' is expected to be removed in Blender 6.0
+  return {p.identifier:getattr(obj,p.identifier) for p in obj.bl_rna.properties
+00:01.532  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0009-a-slab-thickness-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0009-optics.py", line 51, in <module>
+    matches={k:old[k]==new[k] for k in old}; assert all(matches.values()),matches
+                                                    ~~~^^^^^^^^^^^^^^^^^^
+AssertionError: {'meshes': True, 'rig': True, 'lights': False, 'colourManagement': True, 'world': True, 'eevee': True, 'raytracing': True, 'images': True, 'bodyMaterial': True}
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0009-optics.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
