@@ -1,0 +1,422 @@
+{
+  "revision": "female-next-r0002-face-structure-sweep",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0001-baseline.blend",
+  "output": null,
+  "intendedOutput": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0002-face-structure-study.blend",
+  "hypothesis": "A geometry-first increase in malar projection plus a narrower lower cheek and jaw with modest chin projection will make the face less flat without changing lighting, skin, eyes or hair.",
+  "topologyChanged": false,
+  "materialsChanged": false,
+  "shapeKeyPropagation": "identical per-vertex basis delta applied to all 35 keys",
+  "variants": [
+    {
+      "label": "a-subtle",
+      "strength": 0.7,
+      "edit": {
+        "verticesChangedPerShape": 4644,
+        "shapeKeysChanged": 35,
+        "maximumDeltaMm": 4.4272173791529505,
+        "meanChangedDeltaMm": 0.5847482549251123,
+        "regions": [
+          "malar projection and width",
+          "lower-cheek plane",
+          "jaw taper",
+          "chin projection"
+        ]
+      },
+      "collisionAudit": {
+        "1": {
+          "AevryndFemaleGradedHairlineGroom_R1081": {
+            "elementsTested": 100890,
+            "minimumSignedClearanceM": -0.001727805836708285,
+            "penetratingElements": 130
+          },
+          "Brow_L": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00025214006564056035,
+            "penetratingElements": 0
+          },
+          "Brow_R": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00025558987908880226,
+            "penetratingElements": 0
+          },
+          "Brow_L_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.120714917618898e-05,
+            "penetratingElements": 0
+          },
+          "Brow_R_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.116755853076029e-05,
+            "penetratingElements": 0
+          }
+        },
+        "20": {
+          "AevryndFemaleGradedHairlineGroom_R1081": {
+            "elementsTested": 100890,
+            "minimumSignedClearanceM": -0.0014316466986201704,
+            "penetratingElements": 98
+          },
+          "Brow_L": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00025215411642420804,
+            "penetratingElements": 0
+          },
+          "Brow_R": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00025558625884514186,
+            "penetratingElements": 0
+          },
+          "Brow_L_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.11822910943738e-05,
+            "penetratingElements": 0
+          },
+          "Brow_R_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.117238953924243e-05,
+            "penetratingElements": 0
+          }
+        },
+        "33": {
+          "AevryndFemaleGradedHairlineGroom_R1081": {
+            "elementsTested": 100890,
+            "minimumSignedClearanceM": -0.0015758251502120402,
+            "penetratingElements": 115
+          },
+          "Brow_L": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00025215411642420804,
+            "penetratingElements": 0
+          },
+          "Brow_R": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00025558625884514186,
+            "penetratingElements": 0
+          },
+          "Brow_L_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.11822910943738e-05,
+            "penetratingElements": 0
+          },
+          "Brow_R_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.117238953924243e-05,
+            "penetratingElements": 0
+          }
+        },
+        "61": {
+          "AevryndFemaleGradedHairlineGroom_R1081": {
+            "elementsTested": 100890,
+            "minimumSignedClearanceM": -0.0016128761053550988,
+            "penetratingElements": 131
+          },
+          "Brow_L": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00025215411642420804,
+            "penetratingElements": 0
+          },
+          "Brow_R": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00025558625884514186,
+            "penetratingElements": 0
+          },
+          "Brow_L_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.11822910943738e-05,
+            "penetratingElements": 0
+          },
+          "Brow_R_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.117238953924243e-05,
+            "penetratingElements": 0
+          }
+        }
+      },
+      "totalPenetratingElements": 474,
+      "technicalStatus": "TECHNICAL_FAIL",
+      "renders": [
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\a-subtle-front-f01.png",
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\a-subtle-oblique-f01.png",
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\a-subtle-profile-f01.png",
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\a-subtle-oblique-structure-f01.png",
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\a-subtle-front-f33.png"
+      ]
+    },
+    {
+      "label": "b-balanced",
+      "strength": 1.0,
+      "edit": {
+        "verticesChangedPerShape": 4644,
+        "shapeKeysChanged": 35,
+        "maximumDeltaMm": 6.324595685123654,
+        "meanChangedDeltaMm": 0.8353546499951683,
+        "regions": [
+          "malar projection and width",
+          "lower-cheek plane",
+          "jaw taper",
+          "chin projection"
+        ]
+      },
+      "collisionAudit": {
+        "1": {
+          "AevryndFemaleGradedHairlineGroom_R1081": {
+            "elementsTested": 100890,
+            "minimumSignedClearanceM": -0.003151667828205973,
+            "penetratingElements": 193
+          },
+          "Brow_L": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00019095845982519677,
+            "penetratingElements": 0
+          },
+          "Brow_R": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00019450581180535664,
+            "penetratingElements": 0
+          },
+          "Brow_L_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.4596120214209805e-06,
+            "penetratingElements": 0
+          },
+          "Brow_R_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.393754358986371e-06,
+            "penetratingElements": 0
+          }
+        },
+        "20": {
+          "AevryndFemaleGradedHairlineGroom_R1081": {
+            "elementsTested": 100890,
+            "minimumSignedClearanceM": -0.0028719756301143207,
+            "penetratingElements": 156
+          },
+          "Brow_L": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00019095407424174482,
+            "penetratingElements": 0
+          },
+          "Brow_R": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00019451605157883023,
+            "penetratingElements": 0
+          },
+          "Brow_L_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.422872300821837e-06,
+            "penetratingElements": 0
+          },
+          "Brow_R_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.3874923742778265e-06,
+            "penetratingElements": 0
+          }
+        },
+        "33": {
+          "AevryndFemaleGradedHairlineGroom_R1081": {
+            "elementsTested": 100890,
+            "minimumSignedClearanceM": -0.0029991119808983058,
+            "penetratingElements": 178
+          },
+          "Brow_L": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00019095407424174482,
+            "penetratingElements": 0
+          },
+          "Brow_R": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00019451605157883023,
+            "penetratingElements": 0
+          },
+          "Brow_L_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.422872300821837e-06,
+            "penetratingElements": 0
+          },
+          "Brow_R_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.3874923742778265e-06,
+            "penetratingElements": 0
+          }
+        },
+        "61": {
+          "AevryndFemaleGradedHairlineGroom_R1081": {
+            "elementsTested": 100890,
+            "minimumSignedClearanceM": -0.0030327270724228583,
+            "penetratingElements": 193
+          },
+          "Brow_L": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00019095407424174482,
+            "penetratingElements": 0
+          },
+          "Brow_R": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00019451605157883023,
+            "penetratingElements": 0
+          },
+          "Brow_L_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.422872300821837e-06,
+            "penetratingElements": 0
+          },
+          "Brow_R_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": 7.3874923742778265e-06,
+            "penetratingElements": 0
+          }
+        }
+      },
+      "totalPenetratingElements": 720,
+      "technicalStatus": "TECHNICAL_FAIL",
+      "renders": [
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\b-balanced-front-f01.png",
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\b-balanced-oblique-f01.png",
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\b-balanced-profile-f01.png",
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\b-balanced-oblique-structure-f01.png",
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\b-balanced-front-f33.png"
+      ]
+    },
+    {
+      "label": "c-strong",
+      "strength": 1.3,
+      "edit": {
+        "verticesChangedPerShape": 4644,
+        "shapeKeysChanged": 35,
+        "maximumDeltaMm": 8.221974927985507,
+        "meanChangedDeltaMm": 1.0859610449711175,
+        "regions": [
+          "malar projection and width",
+          "lower-cheek plane",
+          "jaw taper",
+          "chin projection"
+        ]
+      },
+      "collisionAudit": {
+        "1": {
+          "AevryndFemaleGradedHairlineGroom_R1081": {
+            "elementsTested": 100890,
+            "minimumSignedClearanceM": -0.004571382072754204,
+            "penetratingElements": 254
+          },
+          "Brow_L": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.0001298032118484116,
+            "penetratingElements": 0
+          },
+          "Brow_R": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.00013343749924388248,
+            "penetratingElements": 0
+          },
+          "Brow_L_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": -5.633493503864884e-05,
+            "penetratingElements": 1
+          },
+          "Brow_R_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": -5.644345822020114e-05,
+            "penetratingElements": 1
+          }
+        },
+        "20": {
+          "AevryndFemaleGradedHairlineGroom_R1081": {
+            "elementsTested": 100890,
+            "minimumSignedClearanceM": -0.004290911529096775,
+            "penetratingElements": 220
+          },
+          "Brow_L": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.0001298032248087111,
+            "penetratingElements": 0
+          },
+          "Brow_R": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.0001334193442517062,
+            "penetratingElements": 0
+          },
+          "Brow_L_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": -5.633383602798858e-05,
+            "penetratingElements": 1
+          },
+          "Brow_R_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": -5.643737540594884e-05,
+            "penetratingElements": 1
+          }
+        },
+        "33": {
+          "AevryndFemaleGradedHairlineGroom_R1081": {
+            "elementsTested": 100890,
+            "minimumSignedClearanceM": -0.00441906247579027,
+            "penetratingElements": 238
+          },
+          "Brow_L": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.0001298032248087111,
+            "penetratingElements": 0
+          },
+          "Brow_R": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.0001334193442517062,
+            "penetratingElements": 0
+          },
+          "Brow_L_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": -5.633383602798858e-05,
+            "penetratingElements": 1
+          },
+          "Brow_R_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": -5.643737540594884e-05,
+            "penetratingElements": 1
+          }
+        },
+        "61": {
+          "AevryndFemaleGradedHairlineGroom_R1081": {
+            "elementsTested": 100890,
+            "minimumSignedClearanceM": -0.004447776744200382,
+            "penetratingElements": 252
+          },
+          "Brow_L": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.0001298032248087111,
+            "penetratingElements": 0
+          },
+          "Brow_R": {
+            "elementsTested": 3000,
+            "minimumSignedClearanceM": 0.0001334193442517062,
+            "penetratingElements": 0
+          },
+          "Brow_L_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": -5.633383602798858e-05,
+            "penetratingElements": 1
+          },
+          "Brow_R_Density": {
+            "elementsTested": 175,
+            "minimumSignedClearanceM": -5.643737540594884e-05,
+            "penetratingElements": 1
+          }
+        }
+      },
+      "totalPenetratingElements": 972,
+      "technicalStatus": "TECHNICAL_FAIL",
+      "renders": [
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\c-strong-front-f01.png",
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\c-strong-oblique-f01.png",
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\c-strong-profile-f01.png",
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\c-strong-oblique-structure-f01.png",
+        "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\c-strong-front-f33.png"
+      ]
+    }
+  ],
+  "provisionalSelection": "b-balanced",
+  "selectedVariant": null,
+  "visualStatus": "TECHNICAL_FAIL_VISUAL_REJECTED",
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false
+}

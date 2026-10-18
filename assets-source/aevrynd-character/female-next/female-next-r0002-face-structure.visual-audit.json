@@ -1,0 +1,38 @@
+{
+  "revision": "female-next-r0002-face-structure-sweep",
+  "sourceRevision": "female-next-r0001",
+  "status": "TECHNICAL_FAIL_VISUAL_REJECTED",
+  "strictOverallScoreBefore": 42,
+  "strictOverallScoreAfter": 42,
+  "scoreChanged": false,
+  "selectedVariant": null,
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "technicalFailures": {
+    "a-subtle": {
+      "totalPenetratingElementsAcrossFourFrames": 474,
+      "minimumSignedClearanceMm": -1.73
+    },
+    "b-balanced": {
+      "totalPenetratingElementsAcrossFourFrames": 720,
+      "minimumSignedClearanceMm": -3.15
+    },
+    "c-strong": {
+      "totalPenetratingElementsAcrossFourFrames": 972,
+      "minimumSignedClearanceMm": -4.57
+    }
+  },
+  "visualFailures": [
+    "The strongest variant produces only a small jaw and malar silhouette change at the fixed front and oblique cameras.",
+    "The broad flat orbital region, weak eyelid contact, cut-like mouth opening and mask-like face remain dominant.",
+    "The hair curtain still hides the profile, while the hair-hidden diagnostic confirms that the deformation does not create enough skeletal structure.",
+    "Frame 33 shows no meaningful improvement in facial expression quality.",
+    "Increasing strength makes collision failure substantially worse without a proportional visual gain."
+  ],
+  "decision": "Reject all r0002 candidates. Keep female-next-r0001 as the authoritative baseline and do not create a runtime asset.",
+  "nextAction": "Replace the limiting facial surface locally, beginning with a contiguous orbital and perioral topology plan; do not continue scaling the same smooth displacement field.",
+  "evidence": [
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\female-next-r0002-contact-sheet.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0002-face-structure\\female-next-r0002-face-structure.report.json"
+  ]
+}
