@@ -1,0 +1,26 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0018-c-triangulated-brows-study.blend",
+  "sourceSha256": "b6e9ddd3675afd205dee73e09a7e28f2b3c6583c8456425a0dc000037fd17d42",
+  "previousGoalTurnClassification": "progress: two real hairline candidates rejected under matched images, official native two-island scalp and independent-guide structure inspected; next architecture changes rather than parameter sweeps.",
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "hypothesis": "Own separate scalp UV domains plus authored frontal/crown/temporal/occipital control paths and actual-body radial-section routing produce a new complete bob, replacing the common global tangent and convex-envelope crown.",
+  "expectedVisibleChange": "Whole crown flow, temple sweep and hanging locks read as separate curved regions rather than a flat cap and uniform sheet.",
+  "held": "Source head/eyes/skin/brows/lashes/rig/materials/light/exposure, total existing render fibre/CV allocation/radii.",
+  "referenceUse": "Only general authoring structure learned from the local Daniel Bystedt CC-BY-SA demo; no reference geometry, textures, nodes or code copied.",
+  "rejectIf": [
+    "Any actual guide/body capsule fails before child generation.",
+    "New render geometry fails complete child/body/component checks.",
+    "Whole-head matched views retain cap/sheet appearance or introduce lobes, bald gaps or noisy strands.",
+    "Unrelated source state changes."
+  ],
+  "budget": {
+    "threads": 4,
+    "candidatesMaximum": 3,
+    "guideCount": 424,
+    "renderFibres": 21086,
+    "renderPoints": 1347824,
+    "pilotResolution": 800,
+    "newDynamics": false
+  },
+  "guardScope": "Exact actual-body rays at each CV are only an authoring guard. Final complete capsule checks, not CV/ray sampling, determine separation."
+}

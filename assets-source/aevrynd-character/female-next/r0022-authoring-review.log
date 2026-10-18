@@ -1,0 +1,13 @@
+00:00.594  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0022-c-guides.blend"
+D:\Download\Aevrynd\scripts\character-next\render-female-next-r0022-authoring.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN22_DIAGNOSTIC_'+name);mat.diffuse_color=color;mat.use_nodes=True;bsdf=mat.node_tree.nodes.get('Principled BSDF');bsdf.inputs['Base Color'].default_value=color;bsdf.inputs['Roughness'].default_value=.65;indices[name]=len(o.data.materials);o.data.materials.append(mat)
+00:02.094  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0022-c-authoring-review.blend"
+00:03.531  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0022-patch-groom\c-guide-review-saved-face.png'
+00:03.891  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0022-patch-groom\c-guide-review-saved-oblique.png'
+00:04.250  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0022-patch-groom\c-guide-review-saved-profile.png'
+00:04.609  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0022-patch-groom\c-guide-review-alternate-oblique.png'
+Info: Saved as "aevrynd-female-next-r0022-c-authoring-review.blend"
+R0022_AUTHORING_REVIEW_READY
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

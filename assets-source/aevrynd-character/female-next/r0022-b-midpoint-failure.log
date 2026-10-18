@@ -1,0 +1,20 @@
+00:00.609  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0018-c-triangulated-brows-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0022-patch-groom.py", line 157, in <module>
+    else:guides()
+         ~~~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0022-patch-groom.py", line 125, in guides
+    root,n=domain_point(tree,side,*uv);p,desc=guide(root,side,uv,tree);i=len(G);G.append(p);descs.append(desc);bindings.append(bind(p[0],tree,V,T,{'guide':i,'side':side,'uv':list(uv)}))
+                                              ~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0022-patch-groom.py", line 111, in guide
+    if PREFIX=='b':P=adaptive_segments(P,tree,root)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0022-patch-groom.py", line 87, in adaptive_segments
+    if len(q)+len(bad)>budget:raise RuntimeError(f'Adaptive geometry budget exceeded: {len(q)} CVs, {len(bad)} unresolved segments')
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Adaptive geometry budget exceeded: 64 CVs, 5 unresolved segments
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\build-female-next-r0022-patch-groom.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

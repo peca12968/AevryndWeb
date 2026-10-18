@@ -1,0 +1,54 @@
+{
+  "twoScalpDomains": [
+    "AFN22_SCALP_RIGHT",
+    "AFN22_SCALP_LEFT"
+  ],
+  "scalpAttributes": [
+    "ScalpUV",
+    "density",
+    "parting"
+  ],
+  "guideFamilies": [
+    "CROWN",
+    "FRONTAL_SWEEP",
+    "TEMPORAL",
+    "OCCIPITAL"
+  ],
+  "guideCount": 424,
+  "CVsPerGuide": 64,
+  "status": "AUTHORING_ARCHITECTURE_IMPLEMENTED_GUIDE_CONTACT_NOT_PASSED",
+  "held": "Source head/eyes/skin/brows/lashes, rig, UVs, materials and saved lighting held in guide construction; new scalp/proxy objects are hidden authoring layers.",
+  "A": {
+    "decision": "REJECT_GUIDE_GATE",
+    "failureSegments": 56,
+    "rootContainmentFailures": 0,
+    "scope": "All 26712 complete 60um guide capsules vs actual neutral body; CVs outside did not prove complete segments outside."
+  },
+  "B": {
+    "decision": "REJECT_BOUNDED_CONSTRUCTION",
+    "firstImplementation": "Midpoint refinement exhausted 64-CV allocation without qualifying; actual surface-event correction retained as same-style implementation repair and also exhausted allocation.",
+    "allocatedCVs": 64,
+    "unresolvedSegmentsAtStoppedGuide": 1,
+    "failureRoot": [
+      -0.021664565429091454,
+      -0.024594558402895927,
+      1.555590033531189
+    ],
+    "failureSnapshot": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0022-patch-groom\\b-adaptive-segments\\bounded-refinement-failure.json",
+    "scope": "One terminal construction snapshot; full guide set not completed. No larger allocation or tolerance relaxation."
+  },
+  "C": {
+    "decision": "REJECT_GUIDE_GATE",
+    "failureSegments": 50,
+    "rootContainmentFailures": 0,
+    "scope": "Same full guide/body capsule test after adding two local ear hulls. Hulls cover only the recorded body-vertex selection and did not qualify the actual full body."
+  },
+  "childHair": "NOT_GENERATED_GATE_FAILED",
+  "hairSelfCollision": "NOT_TESTED",
+  "continuousMotion": "NOT_TESTED",
+  "engineRuntime": "NOT_IMPLEMENTED_OR_TESTED",
+  "realismScoreChange": 0,
+  "overallScore": null,
+  "previewScope": "Actual .blend head plus 424 guides only; diagnostic color and 120um display width. Red identifies complete curves with failed segments, not a final groom. Collision check radius was 60um.",
+  "appearanceFindings": "New crown/perimeter and hanging guide paths exist, but the layout has visibly abrupt ear-side turns and sparse wire appearance. It is not a photorealistic improvement or an accepted complete hairstyle."
+}
