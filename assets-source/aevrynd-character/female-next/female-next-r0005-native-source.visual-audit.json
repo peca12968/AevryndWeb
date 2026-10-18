@@ -1,0 +1,48 @@
+{
+  "revision": "female-next-r0005",
+  "role": "New working foundation with native CC0 topology, not an accepted finished character",
+  "status": "FOUNDATION_RETAINED_NEUTRAL_STRUCTURE_VERIFIED",
+  "formalCharacterPromotionApproved": false,
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "formalCharacterScore": null,
+  "legacyBaselineScore": {
+    "revision": "female-next-r0001",
+    "score": 42
+  },
+  "structuralEvidence": {
+    "controlBodyVertices": 13380,
+    "allQuadFaces": 13378,
+    "bodyTriangles": 26756,
+    "rigBones": 53,
+    "neutralEvaluatedTriangles": 428096,
+    "neutralBodyNonAdjacentSelfIntersectionPairs": 0,
+    "missingDeformWeights": 0,
+    "maxWeightSumError": 4.842877388000488e-08,
+    "nonFiniteEvaluatedVertices": 0,
+    "factoryStartupAndNoMPFBImport": true,
+    "externalLibraries": 0,
+    "externalImageFiles": 0
+  },
+  "visualObservations": [
+    "The untreated native face preserves a continuous philtrum, malar surface, jaw, and lip boundary without the r0003/r0004 radial fan creases.",
+    "The model is a clay body with vacant eye sockets and no separate cornea, iris, pupil, brows, lashes or hair.",
+    "The lips retain a native seam but convincing mouth opening and oral anatomy remain unproven.",
+    "The side and back silhouette and neutral body can serve as a source reference; joint deformation and anatomical detailing still require work."
+  ],
+  "remainingRequiredWork": [
+    "eyes and corneas",
+    "teeth, tongue and oral assets",
+    "hair, brows and lashes",
+    "skin textures and PBR baking",
+    "facial animation keys",
+    "clothing and layering",
+    "physics and colliders",
+    "runtime LODs and importer verification",
+    "neutral and dynamic collision with fitted components",
+    "walking, running, crouching, turn and expressions",
+    "Aevrynd runtime import, LOD, memory and CPU/GPU profiling"
+  ],
+  "decision": "Retain this native foundation for subsequent character construction. Keep the r0001 legacy baseline for comparison, and generate no runtime actor until quality and integration gates pass.",
+  "nextAction": "Use the native facial topology to identify actual lid and lip margins, then add fitted eye and oral components with pose and clearance checks. Do not return to radial annulus patches."
+}

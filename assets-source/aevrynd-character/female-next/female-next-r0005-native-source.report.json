@@ -1,0 +1,106 @@
+{
+  "revision": "female-next-r0005",
+  "status": "FOUNDATION_RETAINED_NEUTRAL_STRUCTURE_VERIFIED",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0005-native-source.blend",
+  "sourceSha256": "92a5f3c969dbbcfac96156a5a96e984da002be2443695522e719149c5c6fa1c4",
+  "usesInheritedCharacterGeometry": false,
+  "reviewStageFrom": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0001-baseline.blend",
+  "origin": "Installed MPFB 2.0.17 core CC0 graphical assets via offline API",
+  "sourceAssets": [
+    {
+      "path": "C:\\Users\\USER\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions\\user_default\\mpfb\\data\\3dobjs\\base.obj",
+      "sha256": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c"
+    },
+    {
+      "path": "C:\\Users\\USER\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions\\user_default\\mpfb\\data\\rigs\\standard\\rig.game_engine.json",
+      "sha256": "b324ddb4b707721c19630bfadb87c3e3b38eed3b6e4590bb3cead43ea918f799"
+    },
+    {
+      "path": "C:\\Users\\USER\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions\\user_default\\mpfb\\data\\rigs\\standard\\weights.game_engine.json",
+      "sha256": "9f4a773e74ce5ba08415b4f30070338e9f75bae5971b5075b10cd6b9caa58473"
+    }
+  ],
+  "macroParameters": {
+    "gender": 0.0,
+    "age": 0.55,
+    "muscle": 0.45,
+    "weight": 0.45,
+    "proportions": 0.5,
+    "height": 0.5,
+    "cupsize": 0.4,
+    "firmness": 0.45,
+    "race": {
+      "asian": 0.5,
+      "caucasian": 0.3,
+      "african": 0.2
+    }
+  },
+  "nativeEditableShapeKeys": 17,
+  "bakedBodyShapeKeys": 0,
+  "controlBodyVertices": 13380,
+  "controlBodyTriangles": 26756,
+  "controlBodyQuads": 13378,
+  "controlBodyPolygons": 13378,
+  "heightM": 1.5624730926266572,
+  "bones": 53,
+  "deformWeightGroups": 52,
+  "normalisedWeightVertices": 1,
+  "missingDeformWeights": 0,
+  "nonFiniteControlVertices": 0,
+  "edgesWithMoreThanTwoFaces": 0,
+  "boundaryLoops": [],
+  "layerObjectCounts": {
+    "BODY": 1,
+    "EYES": 0,
+    "ORAL": 0,
+    "HAIR": 0,
+    "CLOTHING": 0,
+    "RIG": 1,
+    "COLLISION": 0,
+    "EDITABLE_SOURCE": 1
+  },
+  "missingCharacterSystems": [
+    "eyes and corneas",
+    "teeth, tongue and oral assets",
+    "hair, brows and lashes",
+    "skin textures and PBR baking",
+    "facial animation keys",
+    "clothing and layering",
+    "physics and colliders",
+    "runtime LODs and importer verification"
+  ],
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "characterScore": null,
+  "scoreNote": "Foundation generation is not a realism quality gain. The previous r0001 visual baseline score remains 42.",
+  "collisionStatus": "NOT_YET_QUALIFIED",
+  "enginePerformance": {
+    "status": "NOT_RUN_FOUNDATION_ONLY",
+    "cpuMs": null,
+    "gpuMs": null,
+    "memoryBytes": null
+  },
+  "renders": [
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0005-native-source\\r0005-face-front.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0005-native-source\\r0005-face-oblique.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0005-native-source\\r0005-face-profile.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0005-native-source\\r0005-full-front.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0005-native-source\\r0005-full-side.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0005-native-source\\r0005-full-back.png"
+  ],
+  "neutralEvaluatedBody": {
+    "vertices": 214050,
+    "triangles": 428096,
+    "nonAdjacentSelfIntersectionPairs": 0,
+    "samplePairs": [],
+    "nonFiniteVertices": 0
+  },
+  "independentReopenVerified": true,
+  "independentVerifier": "factory-verification.json",
+  "qualityPromotionApproved": false,
+  "notes": [
+    "All-quads is a topology property, not a realism grade.",
+    "Neutral body self-intersection checks do not qualify motion or inter-layer collisions.",
+    "Eyes, oral components, hair, clothes and facial morphs are missing. No whole-character promotion is approved."
+  ]
+}
