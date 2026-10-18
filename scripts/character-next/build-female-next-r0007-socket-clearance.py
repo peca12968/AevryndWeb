@@ -63,16 +63,21 @@ def repair(body,fits,margin):
         if front is not None and abs(front.y-p.y)<.00005 and (ey is None or p.y<ey-.0001):visible_limit.append((after[i]-p).length)
     return {'marginM':margin,'topologyChanged':False,'eyeGeometryChanged':False,'selections':selections,'movedVertices':len(movements),'maximumMoveM':max((m['lengthM'] for m in movements),default=0.),'movementRecords':movements,'lockedControlVertices':len(locked),'maximumLockedControlErrorM':max(((mesh.vertices[i].co-original[i]).length for i in locked),default=0.),'visibleLimitVerticesTested':len(visible_limit),'maximumFrontVisibleLimitMoveM':max(visible_limit,default=0.)}
 
-variants=[]
-for label,margin in VARIANTS:
-    bpy.ops.wm.open_mainfile(filepath=str(SRC));scene=bpy.context.scene;scene.frame_set(1);body=bpy.data.objects['AFN_R0005_Body'];rig=bpy.data.objects['AFN_R0005_Rig'];parts=[o for o in bpy.data.objects if o.type=='MESH' and o.name.startswith('AFN6_')];fits=eyes.helper_centres();set_pose(rig,'neutral');edit=repair(body,fits,margin)
-    audits={};selfs={};renders=[]
-    for pose in ('neutral','gaze-left','gaze-right','turn-left','turn-right'):
-        set_pose(rig,pose);audits[pose]=eyes.audit(body,parts);V,T,tree=evaluated(body);pairs=[(a,b) for a,b in tree.overlap(tree) if a<b and set(T[a]).isdisjoint(T[b])];selfs[pose]={'nonAdjacentTrianglePairs':len(pairs),'samplePairs':pairs[:8]}
-        for view in (('face','oblique','profile','eyes') if pose=='neutral' else ('face','eyes')):renders.append(eyes.render(label,view,fits,pose))
-    set_pose(rig,'neutral');scene['aevrynd_revision']='female-next-r0007-'+label;scene['aevrynd_release_state']='SOCKET_REPAIR_STUDY_NOT_PROMOTED';scene['aevrynd_website_promotion']='forbidden'
-    output=SRC.parent/f'aevrynd-female-next-r0007-{label}-study.blend';bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(output))
-    neg=sum(p['negativeVertices'] for a in audits.values() for p in a.values());cross=sum(p['bodyTriangleIntersectionPairs'] for a in audits.values() for p in a.values());self_total=sum(x['nonAdjacentTrianglePairs'] for x in selfs.values())
-    item={'label':label,'edit':edit,'poseAudit':audits,'bodySelfIntersectionAudit':selfs,'negativeObservations':neg,'bodyEyeCrossPairs':cross,'bodySelfPairs':self_total,'renders':renders,'output':str(output),'bytes':output.stat().st_size,'sha256':hashlib.sha256(output.read_bytes()).hexdigest(),'technicalStatus':'PASS' if neg==0 and cross==0 and self_total==0 and edit['maximumFrontVisibleLimitMoveM']<=.00005 and edit['maximumLockedControlErrorM']==0 else 'FAIL'};variants.append(item)
-    (E/'female-next-r0007-socket-clearance.report.json').write_text(json.dumps({'revision':'female-next-r0007','source':str(SRC),'variants':variants,'status':'VISUAL_REVIEW_PENDING','selectedVariant':None,'enginePromotionApproved':False,'websitePromotionApproved':False,'enginePerformance':{'status':'NOT_TESTED','cpuMs':None,'gpuMs':None,'memoryBytes':None},'scope':'Neutral, +/-10 degree gaze, +/-20 degree head turn. No blink or whole-character qualification.'},indent=2)+'\n')
-    print('AFN_R0007='+json.dumps({'label':label,'editVertices':edit['movedVertices'],'maxMoveMm':edit['maximumMoveM']*1000,'visibleLimitMoveMm':edit['maximumFrontVisibleLimitMoveM']*1000,'negative':neg,'bodyEyePairs':cross,'bodySelfPairs':self_total,'status':item['technicalStatus']}),flush=True)
+def main():
+    variants=[]
+    for label,margin in VARIANTS:
+        bpy.ops.wm.open_mainfile(filepath=str(SRC));scene=bpy.context.scene;scene.frame_set(1);body=bpy.data.objects['AFN_R0005_Body'];rig=bpy.data.objects['AFN_R0005_Rig'];parts=[o for o in bpy.data.objects if o.type=='MESH' and o.name.startswith('AFN6_')];fits=eyes.helper_centres();set_pose(rig,'neutral');edit=repair(body,fits,margin)
+        audits={};selfs={};renders=[]
+        for pose in ('neutral','gaze-left','gaze-right','turn-left','turn-right'):
+            set_pose(rig,pose);audits[pose]=eyes.audit(body,parts);V,T,tree=evaluated(body);pairs=[(a,b) for a,b in tree.overlap(tree) if a<b and set(T[a]).isdisjoint(T[b])];selfs[pose]={'nonAdjacentTrianglePairs':len(pairs),'samplePairs':pairs[:8]}
+            for view in (('face','oblique','profile','eyes') if pose=='neutral' else ('face','eyes')):renders.append(eyes.render(label,view,fits,pose))
+        set_pose(rig,'neutral');scene['aevrynd_revision']='female-next-r0007-'+label;scene['aevrynd_release_state']='SOCKET_REPAIR_STUDY_NOT_PROMOTED';scene['aevrynd_website_promotion']='forbidden'
+        output=SRC.parent/f'aevrynd-female-next-r0007-{label}-study.blend';bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(output))
+        neg=sum(p['negativeVertices'] for a in audits.values() for p in a.values());cross=sum(p['bodyTriangleIntersectionPairs'] for a in audits.values() for p in a.values());self_total=sum(x['nonAdjacentTrianglePairs'] for x in selfs.values())
+        item={'label':label,'edit':edit,'poseAudit':audits,'bodySelfIntersectionAudit':selfs,'negativeObservations':neg,'bodyEyeCrossPairs':cross,'bodySelfPairs':self_total,'renders':renders,'output':str(output),'bytes':output.stat().st_size,'sha256':hashlib.sha256(output.read_bytes()).hexdigest(),'technicalStatus':'PASS' if neg==0 and cross==0 and self_total==0 and edit['maximumFrontVisibleLimitMoveM']<=.00005 and edit['maximumLockedControlErrorM']==0 else 'FAIL'};variants.append(item)
+        (E/'female-next-r0007-socket-clearance.report.json').write_text(json.dumps({'revision':'female-next-r0007','source':str(SRC),'variants':variants,'status':'VISUAL_REVIEW_PENDING','selectedVariant':None,'enginePromotionApproved':False,'websitePromotionApproved':False,'enginePerformance':{'status':'NOT_TESTED','cpuMs':None,'gpuMs':None,'memoryBytes':None},'scope':'Neutral, +/-10 degree gaze, +/-20 degree head turn. No blink or whole-character qualification.'},indent=2)+'\n')
+        print('AFN_R0007='+json.dumps({'label':label,'editVertices':edit['movedVertices'],'maxMoveMm':edit['maximumMoveM']*1000,'visibleLimitMoveMm':edit['maximumFrontVisibleLimitMoveM']*1000,'negative':neg,'bodyEyePairs':cross,'bodySelfPairs':self_total,'status':item['technicalStatus']}),flush=True)
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,97 @@
+{
+  "revision": "female-next-r0008",
+  "sourceRevision": "female-next-r0006-b-balanced",
+  "status": "TECHNICAL_PASS_VISUAL_REJECTED_NO_REALISM_GAIN",
+  "selectedVariant": null,
+  "score": null,
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "summary": [
+    {
+      "label": "a-tight",
+      "bakedBodyVertices": 214050,
+      "bodyQuads": 214048,
+      "insideEyeVertices": 0,
+      "eyeBodyTriangleCrossPairs": 0,
+      "bodySelfPairs": 0,
+      "protectedFrontSurfaceErrorMm": 0.00011920928955078125,
+      "windingFallbacks": 0,
+      "unresolvedContainmentQueries": 0,
+      "rawNearestNormalFlagsRetained": 33,
+      "minimumSampledEyeVertexClearanceMm": 0.5199507577344775
+    },
+    {
+      "label": "b-balanced",
+      "bakedBodyVertices": 214050,
+      "bodyQuads": 214048,
+      "insideEyeVertices": 0,
+      "eyeBodyTriangleCrossPairs": 0,
+      "bodySelfPairs": 0,
+      "protectedFrontSurfaceErrorMm": 0.00011920928955078125,
+      "windingFallbacks": 4,
+      "unresolvedContainmentQueries": 0,
+      "rawNearestNormalFlagsRetained": 3980,
+      "minimumSampledEyeVertexClearanceMm": 0.7218308164738119
+    },
+    {
+      "label": "c-reserved",
+      "bakedBodyVertices": 214050,
+      "bodyQuads": 214048,
+      "insideEyeVertices": 0,
+      "eyeBodyTriangleCrossPairs": 0,
+      "bodySelfPairs": 0,
+      "protectedFrontSurfaceErrorMm": 0.00011920928955078125,
+      "windingFallbacks": 14,
+      "unresolvedContainmentQueries": 0,
+      "rawNearestNormalFlagsRetained": 7223,
+      "minimumSampledEyeVertexClearanceMm": 0.7218308164738119
+    }
+  ],
+  "technicalFinding": "All three studies pass the tested closed-solid body/eye separation and the 50-micrometre experimental contour bound.",
+  "visualFindings": [
+    "The original r0006 lid contour is restored relative to the r0007 subdivided-control edit.",
+    "At the original r0006 comparison cameras there is no convincing increase in eye realism.",
+    "The large dual area-light highlights and bright lower-iris crescent remain.",
+    "The iris, wetline, caruncle, lash and skin transitions remain too simple for a high-quality character."
+  ],
+  "decision": "Retain the proven fitting procedure as technical research only. Reject a mainline promotion because visual realism has not improved. Stop varying socket clearances; prioritize eye optics and lid/wetline appearance.",
+  "technicalResearchInputForNextStudy": "a-tight",
+  "workingFoundationRemains": "female-next-r0005",
+  "futureScope": "Improve optical/lid appearance without disturbing the demonstrated separation, then add and qualify blinking. No finished-character or runtime readiness claim.",
+  "scopeLimits": [
+    "Five static poses only; no continuous swept collision or blink.",
+    "No eye/eye optical-interface separation certificate.",
+    "No full-character skin, oral, hair, clothes or motion acceptance.",
+    "The offline evaluated body has 428096 triangles; runtime LOD/import and performance remain unverified."
+  ],
+  "comparisonMetric": [
+    {
+      "label": "a-tight",
+      "eyeRoiMeanAbsoluteRgbByteDifference": [
+        0.05491868131868132,
+        0.06377582417582417,
+        0.07163956043956043
+      ],
+      "metricScope": "Image difference only; not a realism score."
+    },
+    {
+      "label": "b-balanced",
+      "eyeRoiMeanAbsoluteRgbByteDifference": [
+        0.060168131868131865,
+        0.06895384615384616,
+        0.0769021978021978
+      ],
+      "metricScope": "Image difference only; not a realism score."
+    },
+    {
+      "label": "c-reserved",
+      "eyeRoiMeanAbsoluteRgbByteDifference": [
+        0.06444285714285715,
+        0.07338571428571429,
+        0.08131868131868132
+      ],
+      "metricScope": "Image difference only; not a realism score."
+    }
+  ],
+  "distanceScope": "Minimum clearance values refer to sampled optical vertices against body triangles; not the exact all-surface minimum or a continuous swept bound."
+}
