@@ -1,0 +1,43 @@
+{
+  "status": "PASS_FORMAT_AFFINE_CONTROLS_CHARACTER_PLACEMENT_PENDING",
+  "controls": [
+    {
+      "asset": "teeth_base",
+      "vertices": 3868,
+      "mappingRows": 3868,
+      "referenceScaleFactors": [
+        1.1879248300679728,
+        1.1883780332056204,
+        1.1881298992161253
+      ],
+      "translationCovarianceErrorM": 2.2480302876233914e-16,
+      "axisScaleCovarianceErrorM": 2.7014317954137053e-16,
+      "axisUnitRoundTripErrorMH": 1.8444410139024814e-15,
+      "directReferenceOBJErrorM": 0.0454221018660539,
+      "countsMatch": true,
+      "licenseEmbeddedCC0": true
+    },
+    {
+      "asset": "tongue01",
+      "vertices": 226,
+      "mappingRows": 226,
+      "referenceScaleFactors": [
+        1.0,
+        1.0000000000000002,
+        1.0
+      ],
+      "translationCovarianceErrorM": 3.5217877337871743e-17,
+      "axisScaleCovarianceErrorM": 0.0,
+      "axisUnitRoundTripErrorMH": 1.8444410139024814e-15,
+      "directReferenceOBJErrorM": 0.0,
+      "countsMatch": true,
+      "licenseEmbeddedCC0": true
+    }
+  ],
+  "previousAssumption": "Expecting every asset OBJ to recreate exactly on current unmorphed base was unsupported: MakeClothes permits different authored reference humans. Teeth header scale factors on this base are about 1.188. Preserve failed identity experiment; do not treat it as a successful OBJ reconstruction or apply the fitted diagnostic affine transform to the character.",
+  "formatReferences": [
+    "https://static.makehumancommunity.org/assets/creatingassets/makeclothes/clothes.html",
+    "https://static.makehumancommunity.org/oldsite/documentation/file_formats_and_extensions.html"
+  ],
+  "scope": "Own parser translation, independent-axis scale and coordinate roundtrip controls. Tongue direct references reconstruct its OBJ exactly. Teeth character placement still requires actual geometry/contact/visual evidence."
+}

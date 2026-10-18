@@ -1,0 +1,22 @@
+{
+  "weight": 0.2,
+  "masterValue": 0.2,
+  "keyValue": 0.0,
+  "autoexecFail": false,
+  "drivers": [
+    {
+      "path": "key_blocks[\"AFN24_MouthOpen\"].value",
+      "valid": true,
+      "driverValid": false,
+      "expression": "w",
+      "simple": true,
+      "variables": [
+        {
+          "name": "w",
+          "id": "AFN24_MouthControl",
+          "path": "[\"open\"]"
+        }
+      ]
+    }
+  ]
+}

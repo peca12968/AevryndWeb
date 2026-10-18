@@ -1,0 +1,29 @@
+{
+  "previousGoalTurnClassification": "progress: v6 prompt and execution entry points saved and verified on GitHub; no model gain claimed.",
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0023-b-neutral-review.blend",
+  "sourceSha256": "5b9eecfb5d9bcd83790c17de2dfe2919b8c454d003852f117d7dc5abc7fbdf1f",
+  "primaryDefect": "Working head has no separate teeth, gums or tongue and cannot demonstrate a structurally complete open mouth.",
+  "hypothesis": "Official CC0 proxy bindings against the retained full native helpers place real oral layers without arbitrary visual scale/translation; rigid dental rows plus a small native open field expose fit problems before expanding motion.",
+  "alternativeReason": "A exact native-helper rigid transfer failed lower-row 0.5mm calibration gate. B uses a separate fixed-axis hinge approximation derived from those landmarks, validated against actual oral/body surfaces instead of claiming exact target reconstruction.",
+  "expectedVisibleChange": "Actual teeth/tongue/gingival depth in a small mouth opening, preserving the retained neutral lip rest and unrelated head/hair/skin/light.",
+  "rejectIf": [
+    "Oral/body or oral/other geometry intersects outside documented anatomical joins.",
+    "Dental fit or jaw transform is implausible or depends on ad hoc shrinking.",
+    "The native open field breaks the corrected lip rest or unrelated attachments.",
+    "Whole-head appearance regresses."
+  ],
+  "budget": {
+    "candidatesMaximum": 3,
+    "candidate": "b",
+    "threads": 4,
+    "initialOpenWeights": [
+      0,
+      0.2
+    ],
+    "diagnosticMinutes": 10,
+    "roundCheckpointMinutes": 45,
+    "noChildHairGeneration": true
+  },
+  "scope": "Oral-layer candidate. No continuous motion, complete expressions, realistic hair or engine acceptance."
+}

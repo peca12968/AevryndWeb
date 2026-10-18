@@ -1,0 +1,288 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0023-b-neutral-review.blend",
+  "sourceSha256": "5b9eecfb5d9bcd83790c17de2dfe2919b8c454d003852f117d7dc5abc7fbdf1f",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0024-b-oral-study.blend",
+  "outputSha256": "344794d56c91a5ae7e4022d4c3611658b43593460102215fc172a2daa1b3d0b2",
+  "status": "BUILT_REQUIRES_REOPEN_CONTACT_VISUAL_REVIEW",
+  "objects": {
+    "teeth": {
+      "vertices": 3868,
+      "faces": 3560,
+      "components": [
+        1852,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63,
+        63
+      ],
+      "neutralScaleFactors": [
+        1.2093048985125494,
+        0.9792860440367483,
+        0.9817285473643065
+      ],
+      "openScaleFactors": [
+        1.2093048985125494,
+        0.9792860440367483,
+        0.9817285473643065
+      ],
+      "rejectedDynamicScaleFactors": [
+        1.2093048985125494,
+        1.1319059065018577,
+        0.9817285473643065
+      ],
+      "poseScalePolicy": "Body adaptation scales frozen at neutral; motion from anatomical helper references, dental rows strictly rigid.",
+      "neutralBoundsM": [
+        [
+          -0.028968690964356072,
+          -0.13265282062743142,
+          1.3694768461689457
+        ],
+        [
+          0.02896867820398299,
+          -0.0654402029221052,
+          1.4156688280554843
+        ]
+      ],
+      "maxFittedOpenMoveM": 0.006361641547522691,
+      "proxySha256": "9edc3deff3bb97a95c791878064dd069a74a38f95ea6d9707a9ba68d888b3b5c",
+      "objSha256": "f55198069e55d360c4b4cc7ecb1cc292b2c7665753ab8b65eabf46a8783f2875",
+      "rowClassification": {
+        "method": "Original asset tooth-centroid height residual from depth/lateral regression; no fixed horizontal slicing.",
+        "regression": [
+          6.426107888103207,
+          -0.16965686420824436,
+          0.2082017243858301
+        ],
+        "residualsMH": [
+          -0.024049710960471593,
+          -0.03614787523729923,
+          -0.030284239967809157,
+          -0.0206425807350179,
+          -0.03088327314840633,
+          -0.02487070650269274,
+          -0.026343859107985423,
+          -0.02868856546474685,
+          -0.024049710960471593,
+          -0.03614787523729923,
+          -0.030284239967809157,
+          -0.0206425807350179,
+          -0.03088327314840633,
+          -0.02487070650269274,
+          -0.026343859107985423,
+          -0.02868856546474685,
+          0.035718764055904906,
+          0.0310693239575075,
+          0.028077248569474023,
+          0.02362884156305256,
+          0.01840475071375014,
+          0.017880469982324954,
+          0.027480270768099224,
+          0.039651141514207566,
+          0.035718764055904906,
+          0.0310693239575075,
+          0.028077248569474023,
+          0.02362884156305256,
+          0.01840475071375014,
+          0.017880469982324954,
+          0.027480270768099224,
+          0.039651141514207566
+        ],
+        "upperTeeth": 16,
+        "lowerTeeth": 16
+      },
+      "AFN24_UpperTeeth": {
+        "nativeHelperRigidApproximationError": {
+          "maxM": 0.0,
+          "rmsM": 0.0
+        },
+        "rotation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.9999999999999998,
+            0.0
+          ],
+          [
+            0.0,
+            1.3877787807814457e-17,
+            0.9999999999999998
+          ]
+        ],
+        "translationM": [
+          0.0,
+          -2.7755575615628914e-17,
+          2.220446049250313e-16
+        ],
+        "angleDegrees": 0.0,
+        "axisXApproximationError": 2.220446049250313e-16,
+        "derivedPivotM": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "hingeEquationResidualM": 6.972611193684198e-32,
+        "control": "AFN24_UpperRigidControl",
+        "note": "Independent fixed-axis hinge approximation. A failed exact helper reconstruction is not a pass; actual contact and visual gates govern B."
+      },
+      "AFN24_UpperTeeth_topology": {
+        "vertices": 1008,
+        "faces": 896
+      },
+      "AFN24_LowerTeeth": {
+        "nativeHelperRigidApproximationError": {
+          "maxM": 0.0007110226510348538,
+          "rmsM": 0.0005027689381239749
+        },
+        "rotation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.9953151380160594,
+            -0.09668389750146208
+          ],
+          [
+            0.0,
+            0.09668389750146208,
+            0.9953151380160594
+          ]
+        ],
+        "translationM": [
+          0.0,
+          0.13715030819663424,
+          0.013447770879769116
+        ],
+        "angleDegrees": 5.548246238748727,
+        "axisXApproximationError": 3.3306690738754696e-16,
+        "derivedPivotM": [
+          0.0,
+          -0.07018911535291202,
+          1.4219444816315814
+        ],
+        "hingeEquationResidualM": 5.815852873680767e-17,
+        "control": "AFN24_LowerRigidControl",
+        "note": "Independent fixed-axis hinge approximation. A failed exact helper reconstruction is not a pass; actual contact and visual gates govern B."
+      },
+      "AFN24_LowerTeeth_topology": {
+        "vertices": 1008,
+        "faces": 896
+      },
+      "AFN24_ContinuousGingivalLining_topology": {
+        "vertices": 1852,
+        "faces": 1768
+      }
+    },
+    "tongue": {
+      "vertices": 226,
+      "faces": 224,
+      "components": [
+        226
+      ],
+      "neutralScaleFactors": [
+        0.9188519136325733,
+        0.9339120175380217,
+        0.9183184410951294
+      ],
+      "openScaleFactors": [
+        0.9188519136325733,
+        0.9339120175380217,
+        0.9183184410951294
+      ],
+      "rejectedDynamicScaleFactors": [
+        0.9188519136325733,
+        0.9417237104883684,
+        0.9183184410951294
+      ],
+      "poseScalePolicy": "Body adaptation scales frozen at neutral; motion from anatomical helper references, dental rows strictly rigid.",
+      "neutralBoundsM": [
+        [
+          -0.020998220890760422,
+          -0.12414988875389099,
+          1.383735179901123
+        ],
+        [
+          0.020998220890760422,
+          -0.05798710137605667,
+          1.4087374210357666
+        ]
+      ],
+      "maxFittedOpenMoveM": 0.0010309412766279207,
+      "proxySha256": "61d825899cd78ff3146fa1324118060cb44b095fae1427d408c199ade74e3c9e",
+      "objSha256": "12f4a6a9f85abae2ce3b4aa42d8119e1f679a437e0e89cb928ec68b29a7a1587",
+      "AFN24_Tongue_topology": {
+        "vertices": 226,
+        "faces": 224
+      }
+    }
+  },
+  "sourceMeshGeometryUnchanged": true,
+  "targetData": [
+    {
+      "path": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\oral\\cc0-mouth-open-targets\\african-mouth-open.target.gz",
+      "sha256": "d710d4ae1693e7278a5bbe620276970fb6e89de139b50aaaea2830c31146459a",
+      "weight": 0.2,
+      "license": "CC0 graphical target data"
+    },
+    {
+      "path": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\oral\\cc0-mouth-open-targets\\asian-mouth-open.target.gz",
+      "sha256": "b52bbe631152844bb7b835c0f98d12ab0a1c0689e02e067b239d8349ccf9aab2",
+      "weight": 0.5,
+      "license": "CC0 graphical target data"
+    },
+    {
+      "path": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\oral\\cc0-mouth-open-targets\\caucasian-mouth-open.target.gz",
+      "sha256": "dc1260a8728d93a9c52d6b35b5f55ad39ab8096090acd5ccad7f973c26e28818",
+      "weight": 0.3,
+      "license": "CC0 graphical target data"
+    }
+  ],
+  "bodyOpenWeight": 0.2,
+  "bodyOpenMaximumMoveM": 0.007738862933665514,
+  "attachmentBoundSkinMaximumMoveM": {
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0010-eye-rim\\c-spaced-lashes-lash-bindings.json": 0.0,
+    "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0018-c-brow-bindings.json": 0.0,
+    "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0014-root-bindings.json": 0.0
+  },
+  "sourceBodyGeometrySha256": "78b358c6812413680cd2deccff21adbeea82c150818a9fe6d8d4326fd99559d1",
+  "wallSeconds": 3.12981915473938,
+  "limitations": [
+    "Complete lining integrity/contact not yet verified.",
+    "Rigid dental transform is fitted pose data, not a calibrated jaw hinge.",
+    "Continuous motion, canthus closure, hair dynamics/self, full body/clothes and engine remain unqualified."
+  ]
+}

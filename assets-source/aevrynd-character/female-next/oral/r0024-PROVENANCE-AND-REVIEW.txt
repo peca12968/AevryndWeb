@@ -1,0 +1,10 @@
+Aevrynd r0024 oral graphical-data provenance
+
+Source: https://files.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip
+OBJ/MHCLO/MHMAT original files explicitly declare release under CC0 in September 2020. Original credits: Data Collection AB, Joel Palmius, Jonas Hauquier. Archive/member hashes and HTTP-range/CRC evidence are in r0024-download-provenance.json. Original headers and raw textures retained unchanged. No MPFB program or external shader code copied into the engine.
+
+The three mouth-open sparse graphical targets were archived in r23 from installed MakeHuman core data, already documented as CC0. Their bytes are preserved here for reproducibility without importing an addon. License declaration: https://static.makehumancommunity.org/mpfb/faq/build_other_chargen.html
+
+Own additions: parser, coordinate mapping, partitioning, independent jaw control, Blender PBR approximation, verification and rendering scripts. CC0 source geometry is not claimed as original or exclusive Aevrynd authorship.
+
+B is a failed-contact research model. It does not replace r23, runtime or the website. Open AFN24_ORAL_GEOMETRY and AFN24_ORAL_CONTROLS collections; AFN24_MouthControl custom property open has range 0..0.2. The motion-review file has frames 1..25 at 12fps. Playback is diagnostic, not accepted natural motion. All image files are packed and no external library is linked. Rebuild in the current Aevrynd workspace using Blender and build-female-next-r0024-oral-layers.py -- --hinge; associated historical source/evidence and own helper scripts are required.

@@ -1,0 +1,1214 @@
+{
+  "asset": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0024-b-oral-study.blend",
+  "assetSha256": "344794d56c91a5ae7e4022d4c3611658b43593460102215fc172a2daa1b3d0b2",
+  "results": [
+    {
+      "weight": 0.0,
+      "evaluatorMaximumErrorM": 1.341104507446289e-07,
+      "parts": {
+        "AFN24_UpperTeeth": {
+          "vertices": 1008,
+          "triangles": 1792,
+          "bodyTrianglePairs": 0,
+          "bodyPairSamples": [],
+          "bodyVertexSampleMinimumDistanceM": 0.0024941135197877884,
+          "nonAdjacentSelfPairs": 440,
+          "selfPairSamples": [
+            [
+              970,
+              1092
+            ],
+            [
+              970,
+              1008
+            ],
+            [
+              971,
+              1092
+            ],
+            [
+              971,
+              1093
+            ],
+            [
+              971,
+              1032
+            ],
+            [
+              971,
+              1008
+            ],
+            [
+              906,
+              1074
+            ],
+            [
+              906,
+              1075
+            ],
+            [
+              959,
+              1007
+            ],
+            [
+              958,
+              1093
+            ],
+            [
+              958,
+              1007
+            ],
+            [
+              982,
+              1074
+            ]
+          ],
+          "boundsM": [
+            [
+              -0.02609211578965187,
+              -0.13037100434303284,
+              1.399465560913086
+            ],
+            [
+              0.02609211578965187,
+              -0.08935489505529404,
+              1.4133591651916504
+            ]
+          ],
+          "rigidPairwiseDistanceMaximumErrorM": 1.1446627181093544e-07,
+          "toothCentroidBodyClassification": {
+            "outside": 16
+          }
+        },
+        "AFN24_LowerTeeth": {
+          "vertices": 1008,
+          "triangles": 1792,
+          "bodyTrianglePairs": 0,
+          "bodyPairSamples": [],
+          "bodyVertexSampleMinimumDistanceM": 0.004727568011730909,
+          "nonAdjacentSelfPairs": 344,
+          "selfPairSamples": [
+            [
+              899,
+              1734
+            ],
+            [
+              899,
+              1729
+            ],
+            [
+              899,
+              1728
+            ],
+            [
+              947,
+              1787
+            ],
+            [
+              947,
+              1722
+            ],
+            [
+              947,
+              1723
+            ],
+            [
+              947,
+              1728
+            ],
+            [
+              898,
+              1738
+            ],
+            [
+              898,
+              1735
+            ],
+            [
+              898,
+              1734
+            ],
+            [
+              997,
+              1786
+            ],
+            [
+              997,
+              1787
+            ]
+          ],
+          "boundsM": [
+            [
+              -0.026738855987787247,
+              -0.1284397542476654,
+              1.3920819759368896
+            ],
+            [
+              0.026738855987787247,
+              -0.08837631344795227,
+              1.4057327508926392
+            ]
+          ],
+          "rigidPairwiseDistanceMaximumErrorM": 1.1271284067193577e-07,
+          "toothCentroidBodyClassification": {
+            "outside": 16
+          }
+        },
+        "AFN24_ContinuousGingivalLining": {
+          "vertices": 1852,
+          "triangles": 3536,
+          "bodyTrianglePairs": 0,
+          "bodyPairSamples": [],
+          "bodyVertexSampleMinimumDistanceM": 0.0006309120799414814,
+          "nonAdjacentSelfPairs": 0,
+          "selfPairSamples": [],
+          "boundsM": [
+            [
+              -0.0289686918258667,
+              -0.13265281915664673,
+              1.3694766759872437
+            ],
+            [
+              0.028968678787350655,
+              -0.06544020771980286,
+              1.4156687259674072
+            ]
+          ]
+        },
+        "AFN24_Tongue": {
+          "vertices": 226,
+          "triangles": 448,
+          "bodyTrianglePairs": 0,
+          "bodyPairSamples": [],
+          "bodyVertexSampleMinimumDistanceM": 0.005586638115346432,
+          "nonAdjacentSelfPairs": 0,
+          "selfPairSamples": [],
+          "boundsM": [
+            [
+              -0.020998220890760422,
+              -0.12414989620447159,
+              1.3837350606918335
+            ],
+            [
+              0.020998220890760422,
+              -0.05798710882663727,
+              1.408737301826477
+            ]
+          ]
+        }
+      },
+      "oralComponentRawIntersections": [
+        {
+          "pair": [
+            "AFN24_UpperTeeth",
+            "AFN24_LowerTeeth"
+          ],
+          "trianglePairs": 682,
+          "samples": [
+            [
+              891,
+              896
+            ],
+            [
+              891,
+              999
+            ],
+            [
+              891,
+              957
+            ],
+            [
+              891,
+              998
+            ],
+            [
+              891,
+              952
+            ],
+            [
+              890,
+              999
+            ],
+            [
+              890,
+              998
+            ],
+            [
+              890,
+              952
+            ],
+            [
+              893,
+              999
+            ],
+            [
+              892,
+              999
+            ],
+            [
+              889,
+              942
+            ],
+            [
+              937,
+              943
+            ]
+          ],
+          "anatomicalJoin": null
+        },
+        {
+          "pair": [
+            "AFN24_UpperTeeth",
+            "AFN24_ContinuousGingivalLining"
+          ],
+          "trianglePairs": 776,
+          "samples": [
+            [
+              914,
+              3186
+            ],
+            [
+              914,
+              3206
+            ],
+            [
+              914,
+              3207
+            ],
+            [
+              915,
+              3091
+            ],
+            [
+              915,
+              3090
+            ],
+            [
+              915,
+              3206
+            ],
+            [
+              922,
+              3090
+            ],
+            [
+              922,
+              3025
+            ],
+            [
+              922,
+              3024
+            ],
+            [
+              976,
+              3215
+            ],
+            [
+              976,
+              3194
+            ],
+            [
+              977,
+              3147
+            ]
+          ],
+          "anatomicalJoin": "Tooth root/gingival embedding needs provenance comparison; raw intersections remain reported."
+        },
+        {
+          "pair": [
+            "AFN24_UpperTeeth",
+            "AFN24_Tongue"
+          ],
+          "trianglePairs": 36,
+          "samples": [
+            [
+              952,
+              158
+            ],
+            [
+              949,
+              158
+            ],
+            [
+              948,
+              158
+            ],
+            [
+              947,
+              158
+            ],
+            [
+              886,
+              158
+            ],
+            [
+              887,
+              158
+            ],
+            [
+              1010,
+              8
+            ],
+            [
+              1003,
+              8
+            ],
+            [
+              1065,
+              8
+            ],
+            [
+              1065,
+              9
+            ],
+            [
+              1064,
+              9
+            ],
+            [
+              1061,
+              9
+            ]
+          ],
+          "anatomicalJoin": null
+        },
+        {
+          "pair": [
+            "AFN24_LowerTeeth",
+            "AFN24_ContinuousGingivalLining"
+          ],
+          "trianglePairs": 722,
+          "samples": [
+            [
+              955,
+              2395
+            ],
+            [
+              954,
+              2395
+            ],
+            [
+              969,
+              2395
+            ],
+            [
+              969,
+              2337
+            ],
+            [
+              968,
+              2395
+            ],
+            [
+              984,
+              2394
+            ],
+            [
+              984,
+              2469
+            ],
+            [
+              985,
+              2468
+            ],
+            [
+              985,
+              2469
+            ],
+            [
+              986,
+              2468
+            ],
+            [
+              982,
+              2394
+            ],
+            [
+              982,
+              2395
+            ]
+          ],
+          "anatomicalJoin": "Tooth root/gingival embedding needs provenance comparison; raw intersections remain reported."
+        },
+        {
+          "pair": [
+            "AFN24_LowerTeeth",
+            "AFN24_Tongue"
+          ],
+          "trianglePairs": 294,
+          "samples": [
+            [
+              896,
+              159
+            ],
+            [
+              897,
+              159
+            ],
+            [
+              958,
+              159
+            ],
+            [
+              958,
+              160
+            ],
+            [
+              959,
+              160
+            ],
+            [
+              957,
+              158
+            ],
+            [
+              957,
+              159
+            ],
+            [
+              984,
+              160
+            ],
+            [
+              985,
+              161
+            ],
+            [
+              985,
+              160
+            ],
+            [
+              986,
+              161
+            ],
+            [
+              987,
+              161
+            ]
+          ],
+          "anatomicalJoin": null
+        },
+        {
+          "pair": [
+            "AFN24_ContinuousGingivalLining",
+            "AFN24_Tongue"
+          ],
+          "trianglePairs": 470,
+          "samples": [
+            [
+              573,
+              284
+            ],
+            [
+              599,
+              334
+            ],
+            [
+              629,
+              334
+            ],
+            [
+              598,
+              334
+            ],
+            [
+              617,
+              284
+            ],
+            [
+              617,
+              287
+            ],
+            [
+              572,
+              334
+            ],
+            [
+              572,
+              335
+            ],
+            [
+              572,
+              284
+            ],
+            [
+              616,
+              284
+            ],
+            [
+              587,
+              287
+            ],
+            [
+              586,
+              287
+            ]
+          ],
+          "anatomicalJoin": null
+        }
+      ],
+      "changedBodyNonAdjacentSelfPairs": 0,
+      "bodySelfSamples": [],
+      "changedBodyVsExistingOpticalBrowLash": {
+        "AFN10_L_lower_Lashes": 0,
+        "AFN10_L_upper_Lashes": 0,
+        "AFN10_R_lower_Lashes": 0,
+        "AFN10_R_upper_Lashes": 0,
+        "AFN11_L_BrowFibres": 0,
+        "AFN11_R_BrowFibres": 0,
+        "AFN6_L_Cornea": 0,
+        "AFN6_L_Iris": 0,
+        "AFN6_L_Pupil": 0,
+        "AFN6_L_Sclera": 0,
+        "AFN6_R_Cornea": 0,
+        "AFN6_R_Iris": 0,
+        "AFN6_R_Pupil": 0,
+        "AFN6_R_Sclera": 0
+      },
+      "wallSeconds": 0.8019649982452393
+    },
+    {
+      "weight": 0.2,
+      "evaluatorMaximumErrorM": 1.7052717257790527e-07,
+      "parts": {
+        "AFN24_UpperTeeth": {
+          "vertices": 1008,
+          "triangles": 1792,
+          "bodyTrianglePairs": 0,
+          "bodyPairSamples": [],
+          "bodyVertexSampleMinimumDistanceM": 0.0024901689030230045,
+          "nonAdjacentSelfPairs": 440,
+          "selfPairSamples": [
+            [
+              970,
+              1092
+            ],
+            [
+              970,
+              1008
+            ],
+            [
+              971,
+              1092
+            ],
+            [
+              971,
+              1093
+            ],
+            [
+              971,
+              1032
+            ],
+            [
+              971,
+              1008
+            ],
+            [
+              906,
+              1074
+            ],
+            [
+              906,
+              1075
+            ],
+            [
+              959,
+              1007
+            ],
+            [
+              958,
+              1093
+            ],
+            [
+              958,
+              1007
+            ],
+            [
+              982,
+              1074
+            ]
+          ],
+          "boundsM": [
+            [
+              -0.02609211578965187,
+              -0.13037100434303284,
+              1.399465560913086
+            ],
+            [
+              0.02609211578965187,
+              -0.08935489505529404,
+              1.4133591651916504
+            ]
+          ],
+          "rigidPairwiseDistanceMaximumErrorM": 1.1446627181093544e-07,
+          "toothCentroidBodyClassification": {
+            "outside": 16
+          }
+        },
+        "AFN24_LowerTeeth": {
+          "vertices": 1008,
+          "triangles": 1792,
+          "bodyTrianglePairs": 0,
+          "bodyPairSamples": [],
+          "bodyVertexSampleMinimumDistanceM": 0.004232820589095354,
+          "nonAdjacentSelfPairs": 344,
+          "selfPairSamples": [
+            [
+              947,
+              1722
+            ],
+            [
+              947,
+              1723
+            ],
+            [
+              947,
+              1787
+            ],
+            [
+              947,
+              1728
+            ],
+            [
+              996,
+              1787
+            ],
+            [
+              997,
+              1753
+            ],
+            [
+              997,
+              1787
+            ],
+            [
+              997,
+              1786
+            ],
+            [
+              997,
+              1758
+            ],
+            [
+              997,
+              1759
+            ],
+            [
+              994,
+              1738
+            ],
+            [
+              994,
+              1752
+            ]
+          ],
+          "boundsM": [
+            [
+              -0.026738855987787247,
+              -0.12575583159923553,
+              1.3866944313049316
+            ],
+            [
+              0.026738855987787247,
+              -0.086223304271698,
+              1.4038554430007935
+            ]
+          ],
+          "rigidPairwiseDistanceMaximumErrorM": 1.1395158752529333e-07,
+          "toothCentroidBodyClassification": {
+            "outside": 16
+          }
+        },
+        "AFN24_ContinuousGingivalLining": {
+          "vertices": 1852,
+          "triangles": 3536,
+          "bodyTrianglePairs": 14,
+          "bodyPairSamples": [
+            {
+              "bodyTriangle": 224537,
+              "oralTriangle": 1599,
+              "bodyCentreM": [
+                0.0006261318533991774,
+                -0.07589483757813771,
+                1.3707542816797893
+              ],
+              "oralCentreM": [
+                0.002354048037280639,
+                -0.07228546092907588,
+                1.3709228038787842
+              ]
+            },
+            {
+              "bodyTriangle": 224537,
+              "oralTriangle": 702,
+              "bodyCentreM": [
+                0.0006261318533991774,
+                -0.07589483757813771,
+                1.3707542816797893
+              ],
+              "oralCentreM": [
+                0.004860319352398316,
+                -0.07486090809106827,
+                1.3725193738937378
+              ]
+            },
+            {
+              "bodyTriangle": 224537,
+              "oralTriangle": 703,
+              "bodyCentreM": [
+                0.0006261318533991774,
+                -0.07589483757813771,
+                1.3707542816797893
+              ],
+              "oralCentreM": [
+                0.002506271315117677,
+                -0.07594613482554753,
+                1.3722924788792927
+              ]
+            },
+            {
+              "bodyTriangle": 12496,
+              "oralTriangle": 3366,
+              "bodyCentreM": [
+                -0.0006261318533991774,
+                -0.07589483509461085,
+                1.3707542816797893
+              ],
+              "oralCentreM": [
+                -0.002354048037280639,
+                -0.07228546092907588,
+                1.3709228038787842
+              ]
+            },
+            {
+              "bodyTriangle": 12496,
+              "oralTriangle": 2470,
+              "bodyCentreM": [
+                -0.0006261318533991774,
+                -0.07589483509461085,
+                1.3707542816797893
+              ],
+              "oralCentreM": [
+                -0.002506271315117677,
+                -0.07594613482554753,
+                1.3722924788792927
+              ]
+            },
+            {
+              "bodyTriangle": 12496,
+              "oralTriangle": 2471,
+              "bodyCentreM": [
+                -0.0006261318533991774,
+                -0.07589483509461085,
+                1.3707542816797893
+              ],
+              "oralCentreM": [
+                -0.004860319352398316,
+                -0.07486090809106827,
+                1.3725193738937378
+              ]
+            },
+            {
+              "bodyTriangle": 224943,
+              "oralTriangle": 1188,
+              "bodyCentreM": [
+                0.00023377154138870537,
+                -0.13174431025981903,
+                1.415426770846049
+              ],
+              "oralCentreM": [
+                0.000282284008183827,
+                -0.13207261761029562,
+                1.4133776823679607
+              ]
+            },
+            {
+              "bodyTriangle": 224940,
+              "oralTriangle": 1188,
+              "bodyCentreM": [
+                0.00047554086389330524,
+                -0.13218577206134796,
+                1.4147660732269287
+              ],
+              "oralCentreM": [
+                0.000282284008183827,
+                -0.13207261761029562,
+                1.4133776823679607
+              ]
+            },
+            {
+              "bodyTriangle": 224942,
+              "oralTriangle": 1189,
+              "bodyCentreM": [
+                0.00011913675340717116,
+                -0.13215564688046774,
+                1.4147022167841594
+              ],
+              "oralCentreM": [
+                0.0001458803405209134,
+                -0.13181559244791666,
+                1.4122467438379924
+              ]
+            },
+            {
+              "bodyTriangle": 224942,
+              "oralTriangle": 1188,
+              "bodyCentreM": [
+                0.00011913675340717116,
+                -0.13215564688046774,
+                1.4147022167841594
+              ],
+              "oralCentreM": [
+                0.000282284008183827,
+                -0.13207261761029562,
+                1.4133776823679607
+              ]
+            },
+            {
+              "bodyTriangle": 12922,
+              "oralTriangle": 2957,
+              "bodyCentreM": [
+                -0.00023377154138870537,
+                -0.13174431025981903,
+                1.4154268105824788
+              ],
+              "oralCentreM": [
+                -0.000282284008183827,
+                -0.13207261761029562,
+                1.4133776823679607
+              ]
+            },
+            {
+              "bodyTriangle": 12925,
+              "oralTriangle": 2957,
+              "bodyCentreM": [
+                -0.00047554086389330524,
+                -0.1321857770284017,
+                1.4147660732269287
+              ],
+              "oralCentreM": [
+                -0.000282284008183827,
+                -0.13207261761029562,
+                1.4133776823679607
+              ]
+            }
+          ],
+          "bodyVertexSampleMinimumDistanceM": 3.591622953535989e-05,
+          "nonAdjacentSelfPairs": 0,
+          "selfPairSamples": [],
+          "boundsM": [
+            [
+              -0.0289686918258667,
+              -0.13265281915664673,
+              1.3689407110214233
+            ],
+            [
+              0.028968678787350655,
+              -0.06500015407800674,
+              1.4156687259674072
+            ]
+          ]
+        },
+        "AFN24_Tongue": {
+          "vertices": 226,
+          "triangles": 448,
+          "bodyTrianglePairs": 0,
+          "bodyPairSamples": [],
+          "bodyVertexSampleMinimumDistanceM": 0.005607402417808771,
+          "nonAdjacentSelfPairs": 0,
+          "selfPairSamples": [],
+          "boundsM": [
+            [
+              -0.020998220890760422,
+              -0.12414989620447159,
+              1.3837751150131226
+            ],
+            [
+              0.020998220890760422,
+              -0.05798710882663727,
+              1.408737301826477
+            ]
+          ]
+        }
+      },
+      "oralComponentRawIntersections": [
+        {
+          "pair": [
+            "AFN24_UpperTeeth",
+            "AFN24_LowerTeeth"
+          ],
+          "trianglePairs": 0,
+          "samples": [],
+          "anatomicalJoin": null
+        },
+        {
+          "pair": [
+            "AFN24_UpperTeeth",
+            "AFN24_ContinuousGingivalLining"
+          ],
+          "trianglePairs": 776,
+          "samples": [
+            [
+              914,
+              3207
+            ],
+            [
+              914,
+              3206
+            ],
+            [
+              914,
+              3186
+            ],
+            [
+              915,
+              3206
+            ],
+            [
+              915,
+              3091
+            ],
+            [
+              915,
+              3090
+            ],
+            [
+              922,
+              3090
+            ],
+            [
+              922,
+              3024
+            ],
+            [
+              922,
+              3025
+            ],
+            [
+              976,
+              3194
+            ],
+            [
+              976,
+              3215
+            ],
+            [
+              977,
+              3215
+            ]
+          ],
+          "anatomicalJoin": "Tooth root/gingival embedding needs provenance comparison; raw intersections remain reported."
+        },
+        {
+          "pair": [
+            "AFN24_UpperTeeth",
+            "AFN24_Tongue"
+          ],
+          "trianglePairs": 0,
+          "samples": [],
+          "anatomicalJoin": null
+        },
+        {
+          "pair": [
+            "AFN24_LowerTeeth",
+            "AFN24_ContinuousGingivalLining"
+          ],
+          "trianglePairs": 730,
+          "samples": [
+            [
+              955,
+              2480
+            ],
+            [
+              954,
+              2480
+            ],
+            [
+              968,
+              2480
+            ],
+            [
+              968,
+              2481
+            ],
+            [
+              969,
+              2481
+            ],
+            [
+              969,
+              2490
+            ],
+            [
+              985,
+              2394
+            ],
+            [
+              985,
+              2469
+            ],
+            [
+              984,
+              2394
+            ],
+            [
+              986,
+              2468
+            ],
+            [
+              986,
+              2469
+            ],
+            [
+              983,
+              2394
+            ]
+          ],
+          "anatomicalJoin": "Tooth root/gingival embedding needs provenance comparison; raw intersections remain reported."
+        },
+        {
+          "pair": [
+            "AFN24_LowerTeeth",
+            "AFN24_Tongue"
+          ],
+          "trianglePairs": 228,
+          "samples": [
+            [
+              896,
+              160
+            ],
+            [
+              959,
+              161
+            ],
+            [
+              897,
+              160
+            ],
+            [
+              957,
+              160
+            ],
+            [
+              958,
+              161
+            ],
+            [
+              958,
+              160
+            ],
+            [
+              985,
+              161
+            ],
+            [
+              984,
+              161
+            ],
+            [
+              986,
+              161
+            ],
+            [
+              986,
+              156
+            ],
+            [
+              987,
+              156
+            ],
+            [
+              956,
+              160
+            ]
+          ],
+          "anatomicalJoin": null
+        },
+        {
+          "pair": [
+            "AFN24_ContinuousGingivalLining",
+            "AFN24_Tongue"
+          ],
+          "trianglePairs": 224,
+          "samples": [
+            [
+              110,
+              216
+            ],
+            [
+              110,
+              217
+            ],
+            [
+              1879,
+              1
+            ],
+            [
+              1879,
+              0
+            ],
+            [
+              700,
+              374
+            ],
+            [
+              678,
+              374
+            ],
+            [
+              701,
+              374
+            ],
+            [
+              679,
+              374
+            ],
+            [
+              679,
+              375
+            ],
+            [
+              670,
+              375
+            ],
+            [
+              671,
+              375
+            ],
+            [
+              600,
+              222
+            ]
+          ],
+          "anatomicalJoin": null
+        }
+      ],
+      "changedBodyNonAdjacentSelfPairs": 0,
+      "bodySelfSamples": [],
+      "changedBodyVsExistingOpticalBrowLash": {
+        "AFN10_L_lower_Lashes": 0,
+        "AFN10_L_upper_Lashes": 0,
+        "AFN10_R_lower_Lashes": 0,
+        "AFN10_R_upper_Lashes": 0,
+        "AFN11_L_BrowFibres": 0,
+        "AFN11_R_BrowFibres": 0,
+        "AFN6_L_Cornea": 0,
+        "AFN6_L_Iris": 0,
+        "AFN6_L_Pupil": 0,
+        "AFN6_L_Sclera": 0,
+        "AFN6_R_Cornea": 0,
+        "AFN6_R_Iris": 0,
+        "AFN6_R_Pupil": 0,
+        "AFN6_R_Sclera": 0
+      },
+      "wallSeconds": 0.7929046154022217
+    }
+  ],
+  "status": "REVIEW_RAW_CONTACT_RESULTS",
+  "method": "Reopened file, exact full triangle intersection tests; nonadjacent self tests; per-tooth centroid closed-body classification; vertex-sampled distance explicitly not full surface minimum.",
+  "limits": [
+    "Two static endpoints only; no continuous proof.",
+    "Anatomical joins not automatically excluded.",
+    "No complete scalp hair/self-motion or engine qualification."
+  ]
+}
