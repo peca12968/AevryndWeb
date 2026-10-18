@@ -1,0 +1,135 @@
+{
+  "schema": "aevrynd.groom.authoring.v1",
+  "releaseState": "OFFLINE_RESEARCH_SOURCE_ONLY",
+  "units": "metres",
+  "coordinateSpace": "Neutral model world space; explicit inverse head-bind matrix maps into head-local coordinates.",
+  "sourceBlender": "aevrynd-female-next-r0014-c-clump-volume-study.blend",
+  "bodyObject": "AFN_R0008_Body",
+  "bodyGeometrySha256": "66a88d4850a07e2fff831b43ec3041a906314f0400127e89c5bcbf863b418839",
+  "bodyTriangleVertexIdsStableAtBind": true,
+  "bodyWorldMatrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "headBone": "head",
+  "headBindWorldMatrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.045209527015686035,
+      -0.9989774823188782,
+      -0.04426691308617592
+    ],
+    [
+      0.0,
+      0.9989774227142334,
+      0.04520943760871887,
+      1.4245015382766724
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "worldRestToHeadBindLocalMatrix": [
+    [
+      1.0,
+      -0.0,
+      0.0,
+      -0.0
+    ],
+    [
+      -0.0,
+      0.04520944133400917,
+      0.9989776015281677,
+      -1.4210437536239624
+    ],
+    [
+      0.0,
+      -0.998977541923523,
+      0.045209530740976334,
+      -0.10862269997596741
+    ],
+    [
+      -0.0,
+      0.0,
+      -0.0,
+      1.0
+    ]
+  ],
+  "guideData": "aevrynd-female-next-r0014-c-clump-guides.npz",
+  "guideBindings": "aevrynd-female-next-r0014-guide-bindings.json",
+  "renderHairData": "aevrynd-female-next-r0014-c-hair-data.npz",
+  "renderHairBindings": "aevrynd-female-next-r0014-root-bindings.json",
+  "guideCount": 424,
+  "guideCVs": 64,
+  "renderFibres": 21086,
+  "renderPoints": 1347824,
+  "collisionEnvelopeScope": "Support planes in guide cache use n dot (worldPosition - [0,-0.036,1.475]) <= offset, fitted to neutral body vertices above z 1.30 m; static proxy only. Final acceptance used actual-body capsule tests.",
+  "sourceFiles": [
+    {
+      "file": "aevrynd-female-next-r0014-c-clump-volume-study.blend",
+      "sha256": "1c9ec043f7a7b57a366476836a4159ce693153e8221d136cdb3578f0b2c535c4",
+      "bytes": 40306753
+    },
+    {
+      "file": "aevrynd-female-next-r0014-c-hair-data.npz",
+      "sha256": "a9dfe53257de9bbad8655be45edb7f654923543f4d262e106db64afec0f07795",
+      "bytes": 19423658
+    },
+    {
+      "file": "aevrynd-female-next-r0014-c-clump-guides.npz",
+      "sha256": "34884277292d621027ace13086c69db33fcb4890b23e90a05e941218a91bafbf",
+      "bytes": 300949
+    },
+    {
+      "file": "aevrynd-female-next-r0014-guide-bindings.json",
+      "sha256": "612e3f5cd4ea24eb0d6b0a3147b6d5ddd5f5785440083b849258f281a4002ba2",
+      "bytes": 96030
+    },
+    {
+      "file": "aevrynd-female-next-r0014-root-bindings.json",
+      "sha256": "4b27dc52eb971f6497b83d500f23092114376a0a86de738df4fcbf230eb2c205",
+      "bytes": 6842126
+    }
+  ],
+  "validation": {
+    "guideRootReconstructionMaximumErrorM": 1.4251077354852405e-07,
+    "childRootReconstructionMaximumErrorM": 1.6067127853159084e-07,
+    "guideIndexWeightChecks": "PASS"
+  },
+  "notImplemented": [
+    "Runtime importer/renderer/LOD/performance qualification.",
+    "Guide dynamics, deformation-aware root update, continuous collision, self collision and friction."
+  ],
+  "runtimePromotionApproved": false
+}

@@ -1,0 +1,9 @@
+00:00.375  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0014-a-scalp-guides.blend"
+D:\Download\Aevrynd\scripts\character-next\diagnose-female-next-r0014-guide-flow.py:7: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;bs=next(n for n in m.node_tree.nodes if n.bl_idname=='ShaderNodeBsdfPrincipled');bs.inputs['Base Color'].default_value=(*color,1);bs.inputs['Roughness'].default_value=.8;return m
+00:02.500  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0014-scalp-flow\a-scalp-guide-diagnostic-face-neutral.png'
+00:02.938  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0014-scalp-flow\a-scalp-guide-diagnostic-profile-neutral.png'
+AFN14_GUIDE_VIZ_DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

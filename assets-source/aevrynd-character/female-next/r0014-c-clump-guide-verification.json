@@ -1,0 +1,22 @@
+{
+  "sourceSha256": "8768b87ddf0e66e57523c05181fbbafef13172002ee258a033d902cec3901d87",
+  "guideBodyCheck": {
+    "status": "PASS_TESTED_BODY_CAPSULES",
+    "curves": 424,
+    "segments": 26712,
+    "unqualifiedSegments": 0,
+    "rootContainmentFailures": 0,
+    "rootFailureSamples": [],
+    "float64WindingFallbacks": [],
+    "minimumCapsuleClearanceLowerBoundM": 8.870586798085682e-07,
+    "minimumSampledCVGapM": 0.00013982918456662447,
+    "methods": {
+      "lipschitz": 25939,
+      "edge_distance": 773
+    },
+    "failureSamples": [],
+    "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Static pose being tested only; not self collision, other components or motion."
+  },
+  "childGenerationAllowed": true,
+  "reason": "A fixes root-domain gaps but remains a uniform sheet. C changes macro-lock volume and S-curvature, retaining A roots, counts, radii, materials and light."
+}

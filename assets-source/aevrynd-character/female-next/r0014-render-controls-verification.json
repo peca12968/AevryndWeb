@@ -1,0 +1,62 @@
+{
+  "status": "PASS_SAVED_MATERIAL_LIGHT_WORLD_EXPOSURE_EQUALITY",
+  "assets": [
+    {
+      "asset": "aevrynd-female-next-r0014-a-scalp-flow-study.blend",
+      "sha256": "8768b87ddf0e66e57523c05181fbbafef13172002ee258a033d902cec3901d87",
+      "matchedBaseline": "aevrynd-female-next-r0013-b-safe-io-native-envelope-hair-study.blend",
+      "checks": {
+        "hairMaterials": true,
+        "lights": true,
+        "world": true,
+        "view": true
+      }
+    },
+    {
+      "asset": "aevrynd-female-next-r0014-c-clump-volume-study.blend",
+      "sha256": "1c9ec043f7a7b57a366476836a4159ce693153e8221d136cdb3578f0b2c535c4",
+      "matchedBaseline": "aevrynd-female-next-r0013-b-safe-io-native-envelope-hair-study.blend",
+      "checks": {
+        "hairMaterials": true,
+        "lights": true,
+        "world": true,
+        "view": true
+      }
+    },
+    {
+      "asset": "aevrynd-female-next-r0014-c-review.blend",
+      "sha256": "f0ce878d809bf86c8c683f3932803d53a9fbae2a5de3ee4364341434650dd2ab",
+      "matchedBaseline": "aevrynd-female-next-r0013-b-safe-io-native-envelope-hair-study.blend",
+      "checks": {
+        "hairMaterials": true,
+        "lights": true,
+        "world": true,
+        "view": true
+      }
+    },
+    {
+      "asset": "aevrynd-female-next-r0014-b-huang-scalp-flow-reference.blend",
+      "sha256": "26815ea11c3cfec487e7af4f22dbc5b248f25de4965ad975a1e72c174623bddf",
+      "matchedBaseline": "aevrynd-female-next-r0013-c-huang-reference-front-view.blend",
+      "checks": {
+        "hairMaterials": true,
+        "lights": true,
+        "world": true,
+        "view": true
+      }
+    },
+    {
+      "asset": "aevrynd-female-next-r0014-c-huang-clump-reference.blend",
+      "sha256": "dce976f50eaf23e1bdddfcadea7273e56d0a0748820e30ee213e8607c8f9e562",
+      "matchedBaseline": "aevrynd-female-next-r0013-c-huang-reference-front-view.blend",
+      "checks": {
+        "hairMaterials": true,
+        "lights": true,
+        "world": true,
+        "view": true
+      }
+    }
+  ],
+  "cameraScope": "Paired images use the exact same shared r0006 stage render helper, which resets camera/lens/resolution for each named view; saved default cameras are not used as the paired-image proof.",
+  "limits": "Renderer changes between Eevee and Cycles are separate comparisons and do not prove anatomy improvements."
+}

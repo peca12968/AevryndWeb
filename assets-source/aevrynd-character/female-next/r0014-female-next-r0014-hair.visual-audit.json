@@ -1,0 +1,69 @@
+{
+  "revision": "female-next-r0014",
+  "status": "ROOT_DOMAIN_AND_MACRO_FLOW_RESEARCH_RETAINED_NOT_PHOTOREAL",
+  "selectedGeometryVariant": "C",
+  "workingReviewSource": "aevrynd-female-next-r0014-c-review.blend",
+  "retainedFacialAnatomy": "female-next-r0011",
+  "candidateDecisions": {
+    "A": "RESEARCH_RETAINED: continuous actual-skin scalp emitter, narrow part and new tangent/gravity guide field visibly remove much of the previous crown gap. Five static poses pass; uniform-sheet look remains.",
+    "B": "OFFLINE_REFERENCE_ONLY: same A geometry with the exact previous Huang parameters. Confirms crown coverage change in Cycles, not a runtime shader or anatomy gain.",
+    "C": "RESEARCH_RETAINED: unchanged roots/counts/radii/materials; macro lock loft and S-curvature improve side/oblique flow. Five static poses pass. Whole hair/character remains unqualified."
+  },
+  "strictHairAppearanceEstimate": {
+    "score": 50,
+    "uncertaintyPoints": 10,
+    "scope": "Subjective static hair-appearance estimate from front, oblique, profile and same-parameter physical reference; not the complete hair/dynamics category or an objective realism measurement.",
+    "deductions": [
+      "Hairline and temporal cutoffs remain too hard; part still has zipper-like stubs.",
+      "Macro locks improve side flow but remain too regular and sheet-like; tips and flyaways need better structure.",
+      "Huang reference still has pale/golden highlight and transmission response, uncalibrated for a photorealistic target."
+    ]
+  },
+  "overallCharacterScore": null,
+  "verifiedChanges": {
+    "scalpEmitterVertices": 769,
+    "scalpEmitterTriangles": 1472,
+    "guides": 424,
+    "guideSegmentsNeutral": 26712,
+    "renderFibres": 21086,
+    "renderPoints": 1347824,
+    "bodyCapsuleSegmentsPerPose": 1326738,
+    "bodySegmentObservationsAcrossFivePoses": 6633690,
+    "unqualifiedBodySegments": 0,
+    "rootContainmentFailures": 0,
+    "rootRowMedianSeparationBeforeM": 0.009409141610376537,
+    "rootRowMedianSeparationAfterM": 0.0017405350808985531,
+    "rootMetricScope": "Exact authoring-cache roots for primary/clump layers, above z 1.52 m, fixed 20 mm y bins. This is root-domain separation, not rendered part width, coverage opacity or an objective realism score. All bins are retained including missing-side results.",
+    "countsRadiiAndHairMaterialParametersHeld": true,
+    "originalHeadMeshesUVWeightsSkinMaterialsRigLightsExposureHeld": true,
+    "minimumConservativeCapsuleClearanceLowerBoundM": 3.286347575204042e-08,
+    "minimumSampledCVSurfaceGapM": 0.00012001776485703886,
+    "distanceScope": "Complete piecewise-linear radius capsules; conservative lower bound after 1 um numerical allowance, not exact global minimum. Body and optical/brow/lash surfaces in five static poses; no hair/hair or motion proof.",
+    "nativeAuthoringStability": "All r0014 generation, save/reopen, control comparisons and binding export jobs completed with exit 0; existing valid native arrays were edited in place."
+  },
+  "engineAuthoringData": {
+    "descriptor": "aevrynd-female-next-r0014-c-groom.authoring.json",
+    "guideRootsBound": 424,
+    "childRootsBound": 21086,
+    "guideRootReconstructionMaximumErrorM": 1.4251077354852405e-07,
+    "childRootReconstructionMaximumErrorM": 1.6067127853159084e-07,
+    "scope": "Neutral bind-pose consistency only; not an engine runtime integration or simulation."
+  },
+  "remainingGates": [
+    "Hairline and temporal cutoffs remain too hard; part still has zipper-like stubs.",
+    "Macro locks improve side flow but remain too regular and sheet-like; tips and flyaways need better structure.",
+    "Huang reference still has pale/golden highlight and transmission response, uncalibrated for a photorealistic target.",
+    "All hair remains rigidly parented to head; no simulated wind, turn-stop inertia, damping or continuous collision.",
+    "Hair/hair self collision and friction are not qualified.",
+    "No runtime importer/renderer/LOD/performance qualification; full face expressions, oral components, body/clothes and final female acceptance remain incomplete."
+  ],
+  "nextAction": "Continue from r0014 C review and its groom authoring descriptor. Root coverage and macro flow are retained research foundations, not a photorealistic character acceptance. Build a bounded guide-only turn/stop and wind dynamics prototype before child expansion: roots must follow evaluated body-vertex barycentric anchors, guide stretch/bending must be constrained, gravity/inertia/damping must use explicit units and time steps, and the moving body envelope plus full guide segments must be checked. Then transport guide deltas to child fibres using the exported mappings and recheck final strands; do not call static samples a motion proof. Keep the visible hairline/temple transition, zipper-like part, hard clipped ends, regular bands and uncalibrated highlights on the visual defect list. Establish those visible targets from a suitable photographic groom reference before another styling sweep. Do not repeat broad root-density or blind shader sweeps. Do not start male or promote runtime/site assets.",
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "enginePerformance": {
+    "status": "NOT_TESTED",
+    "cpuMs": null,
+    "gpuMs": null,
+    "memoryBytes": null
+  }
+}
