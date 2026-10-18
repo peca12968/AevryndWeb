@@ -1,0 +1,70 @@
+{
+  "revision": "female-next-r0012",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0011-b-ridge-skin-brows-study.blend",
+  "sourceSha256": "cf09382a0fd381481c20f6ae478c67968ecbd1abd4ad869d193ef62276004fd0",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0012-a-layered-hair-study.blend",
+  "sha256": "228be3f1762cb1859def277acd985bcb5877dbefe0041ab3cdcd72f904fcc75d",
+  "hairData": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0012-a-hair-data.npz",
+  "hairDataSha256": "e27efd81e2759f52e42fa7488d7ade4d328e14d5e15caf60e49cb88d605eef8b",
+  "hypothesis": "Retarget hand-authored coherent guide flow to the native head, then interpolate separated mass/detail/hairline layers to avoid a solid cap or unrelated wire strands.",
+  "guideSource": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\reference\\cc0\\makehuman-haireditor\\unpacked\\hair\\haireditor\\hair.blend",
+  "guideLicense": "CC0-1.0",
+  "upstreamNodeGraphsRetained": false,
+  "layers": [
+    {
+      "object": "AFN12_PRIMARY_MASS",
+      "curves": 6048,
+      "points": 193536,
+      "rootJitterSigmaM": 0.0019250000000000003,
+      "baseRadiusM": 3.2e-05
+    },
+    {
+      "object": "AFN12_SECONDARY_CLUMPS",
+      "curves": 6048,
+      "points": 193536,
+      "rootJitterSigmaM": 0.0033000000000000004,
+      "baseRadiusM": 3.2e-05
+    },
+    {
+      "object": "AFN12_HAIRLINE_FINE",
+      "curves": 156,
+      "points": 4992,
+      "rootJitterSigmaM": 0.0008250000000000001,
+      "baseRadiusM": 3.2e-05
+    },
+    {
+      "object": "AFN12_FLYAWAYS",
+      "curves": 63,
+      "points": 2016,
+      "rootJitterSigmaM": 0.0011,
+      "baseRadiusM": 3.2e-05
+    }
+  ],
+  "hairCurves": 12315,
+  "hairControlPoints": 394080,
+  "renders": [
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0012-layered-hair\\a-layered-hair-face-neutral.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0012-layered-hair\\a-layered-hair-oblique-neutral.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0012-layered-hair\\a-layered-hair-profile-neutral.png"
+  ],
+  "status": "REJECTED_VISUAL_NOT_COLLISION_QUALIFIED",
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "overallCharacterScore": null,
+  "remainingLimits": [
+    "Static head-bound groom, no physical simulation yet.",
+    "Body clearance and guide interpolation need independent saved-file segment verification.",
+    "Inter-strand continuous/self collision is not qualified.",
+    "Native scalp helper retained in editable source; no separate opaque cap is added.",
+    "No runtime LOD, shader baking or performance qualification."
+  ],
+  "visualAudit": "female-next-r0012-hair.visual-audit.json",
+  "fullStaticClearancePassed": false,
+  "motionClearancePassed": false,
+  "enginePerformance": {
+    "status": "NOT_TESTED",
+    "cpuMs": null,
+    "gpuMs": null,
+    "memoryBytes": null
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "revision": "female-next-r0012",
+  "status": "ALL_HAIR_CANDIDATES_REJECTED",
+  "selectedVariant": null,
+  "retainedWorkingHead": "female-next-r0011 b-ridge-skin-brows",
+  "candidateDecisions": {
+    "a-layered-hair": "REJECTED_VISUAL: sparse sheet/wire appearance, exposed scalp, excessive white reflection and uneven roots. No collision acceptance.",
+    "b-volume-hair": "REJECTED_COLLISION_AND_VISUAL: denser root-connectivity interpolation and lifted guides improve mass, but full segment tests still fail; cap/curtain appearance remains.",
+    "c-corrected-hair": "REJECTED_UNRESOLVED_COLLISION_AND_VISUAL: local midpoint push routing cannot safely traverse all concave body regions; no full static or motion clearance claim."
+  },
+  "strictHairAppearanceEstimate": {
+    "score": 30,
+    "uncertaintyPoints": 10,
+    "scope": "Subjective hair-only estimate from rejected multiview renders, not an objective metric or a whole-character score.",
+    "reason": "Recognizable bob silhouette is insufficient: upper hair is pale and veillike, clumps are too regular, ends are mechanically cut, and apparent scalp/ear exposure remains implausible. Collision failures independently reject every candidate."
+  },
+  "verifiedFindings": {
+    "bStaticBodySegmentsUnqualified": 4108,
+    "bActualCentrelineBodyHits": 3981,
+    "bOtherRadiusMarginFailures": 127,
+    "cBuilderUnresolvedSegmentsIncludingHiddenGuides": 1285,
+    "cBuilderUnresolvedVisibleSegments": 1274,
+    "sourceHeadGeometryMaterialsLightsUnchanged": true,
+    "containmentDiagnostic": "First 20 unresolved curves were checked per point; all sampled CVs were outside. This refutes simple CV containment as sufficient, without proving every CV of the groom is outside."
+  },
+  "technicalProgress": [
+    "Native source/reference topology correspondence verified before transfer of 252 authored guides.",
+    "Independent layer objects, scalp root connectivity, guide indices, weights, radii and exported authoring curve arrays created.",
+    "Full segment/capsule body checker detects crossings missed by control-point-only inspection.",
+    "A bounded local rerouting implementation was tested and rejected with explicit unresolved counts.",
+    "Original r0011 head integrity verified from a fresh factory-opened Blender process."
+  ],
+  "stoppedMethods": [
+    "Repeated local nearest-surface point pushing as a complete collision solution.",
+    "Density-only changes as a realism solution."
+  ],
+  "nextAction": "Start a new controlled hair iteration from the retained r0011 head. Build collision-free guide paths around a conservative outer head/ear/neck envelope or a geodesic outer surface; preserve actual skin-bound roots. Certify complete guide capsules before child interpolation. Interpolate only within compatible part/clump regions, resolve child crossings toward safe guide flow, and recheck every final segment. Investigate native strand rendering and a proper anisotropic fibre material separately using fixed-camera diagnostic references. Do not run another density or nearest-point push sweep.",
+  "remainingGates": [
+    "Static body separation failed/unresolved.",
+    "Hair against eyes/brows/lashes and inter-strand/self collision unqualified.",
+    "No wind, turn-stop or damping simulation.",
+    "No engine hair representation/LOD/material performance gate.",
+    "Female head/body/face animation and user acceptance remain incomplete."
+  ],
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "overallCharacterScore": null
+}

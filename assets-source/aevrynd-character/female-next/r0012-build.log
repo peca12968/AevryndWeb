@@ -1,0 +1,15 @@
+00:01.437  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0011-b-ridge-skin-brows-study.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0012-layered-hair.py:72: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('AFN12_ChestnutKeratin_'+str(i));m.use_nodes=True;bs=next(n for n in m.node_tree.nodes if n.bl_idname=='ShaderNodeBsdfPrincipled');factor=.72+i*.12
+AFN_R0012_LAYER={"object": "AFN12_PRIMARY_MASS", "curves": 6048, "points": 193536, "rootJitterSigmaM": 0.0019250000000000003, "baseRadiusM": 3.2e-05}
+AFN_R0012_LAYER={"object": "AFN12_SECONDARY_CLUMPS", "curves": 6048, "points": 193536, "rootJitterSigmaM": 0.0033000000000000004, "baseRadiusM": 3.2e-05}
+AFN_R0012_LAYER={"object": "AFN12_HAIRLINE_FINE", "curves": 156, "points": 4992, "rootJitterSigmaM": 0.0008250000000000001, "baseRadiusM": 3.2e-05}
+AFN_R0012_LAYER={"object": "AFN12_FLYAWAYS", "curves": 63, "points": 2016, "rootJitterSigmaM": 0.0011, "baseRadiusM": 3.2e-05}
+00:09.390  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0012-layered-hair\a-layered-hair-face-neutral.png'
+00:10.109  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0012-layered-hair\a-layered-hair-oblique-neutral.png'
+00:10.765  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0012-layered-hair\a-layered-hair-profile-neutral.png'
+Info: Saved as "aevrynd-female-next-r0012-a-layered-hair-study.blend"
+AFN_R0012_BUILD_DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

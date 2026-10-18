@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0012-template.py", line 10, in <module>
+    'modifiers':[{'name':m.name,'type':m.type,'nodeGroup':m.node_group.name if m.type=='NODES' and m.node_group else None,'inputs':{k:str(m[k]) for k in m.keys()} if m.type=='NODES' else {}} for m in o.modifiers]}
+                                                                                                                                                         ~~~~~~^^
+TypeError: bpy_struct.keys(): this type doesn't support IDProperties
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0012-template.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

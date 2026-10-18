@@ -12,10 +12,10 @@
   "websitePromotionApproved": false,
   "externalPlatformDependencies": [],
   "evidence": "D:/Download/Aevrynd/Evidence/character-female-next/r0001-baseline/female-next-r0001-baseline.report.json",
-  "nextRequiredWork": "Build actual scalp/hairline, primary hair masses, guide clumps and finer strands as separate layers, then collision-aware motion. Keep working toward full head anatomy and native-to-evaluated facial deformation/blink transfer. Do not spend another round on small static brow parameter sweeps. Skin de-lighting/scalp-pigment cleanup and baking remain required before runtime promotion.",
+  "nextRequiredWork": "Start a new controlled hair iteration from the retained r0011 head. Build collision-free guide paths around a conservative outer head/ear/neck envelope or a geodesic outer surface; preserve actual skin-bound roots. Certify complete guide capsules before child interpolation. Interpolate only within compatible part/clump regions, resolve child crossings toward safe guide flow, and recheck every final segment. Investigate native strand rendering and a proper anisotropic fibre material separately using fixed-camera diagnostic references. Do not run another density or nearest-point push sweep.",
   "sourceSha256": "4586285ca2b4c235f7838ab6f4e16b2b1b3f469addd435c095eb987ba82e4347",
-  "latestStudyRevision": "female-next-r0011",
-  "latestStudyStatus": "RETAIN_B_AS_MAPPED_SKIN_BROW_RESEARCH_NOT_PHOTOREAL",
+  "latestStudyRevision": "female-next-r0012",
+  "latestStudyStatus": "ALL_HAIR_CANDIDATES_REJECTED",
   "stoppedMethod": "radial perioral annulus, after r0003 and r0004",
   "strictScoreAppliesTo": "female-next-r0001",
   "workingFoundationRevision": "female-next-r0005",
@@ -25,8 +25,11 @@
   "technicalResearchScope": "Closed-solid separation in five sampled poses; contour retention. No character/visual/runtime promotion.",
   "opticalResearchSource": "source/aevrynd-female-next-r0009-a-slab-thickness-study.blend",
   "opticalResearchScope": "Material-only lower-iris artifact reduction. Geometry unchanged from r0008 a-tight; no whole-character, blink, continuous collision or runtime promotion.",
-  "latestStudyEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0011-skin-brows\\female-next-r0011-b-ridge-skin-brows.report.json",
+  "latestStudyEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0012-layered-hair\\female-next-r0012-hair.visual-audit.json",
   "headDetailResearchSource": "source/aevrynd-female-next-r0011-b-ridge-skin-brows-study.blend",
   "headDetailResearchScope": "Mapped CC0 skin pigment and new bound brow fibres; static five-pose checks only. No complete character or runtime promotion.",
-  "skinResearchSource": "source/aevrynd-female-next-r0011-b-ridge-skin-brows-study.blend"
+  "skinResearchSource": "source/aevrynd-female-next-r0011-b-ridge-skin-brows-study.blend",
+  "hairResearchSource": "source/aevrynd-female-next-r0012-c-corrected-hair-study.blend",
+  "hairResearchStatus": "REJECTED_DEBUG_SOURCE_ONLY",
+  "hairResearchScope": "Failed static prototypes and diagnostic curve data; not an accepted groom or physical simulation. Working head remains r0011."
 }

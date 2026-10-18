@@ -1,0 +1,21 @@
+{
+  "graphicalGuideSource": {
+    "author": "Tom\u00e1\u0161 Klecer",
+    "file": "assets-source/reference/cc0/makehuman-haireditor/unpacked/hair/haireditor/hair.blend",
+    "object": "straight_hair_to_shoulder",
+    "license": "CC0-1.0",
+    "licenseEvidence": "https://static.makehumancommunity.org/assets/assetpacks/index.html#functional-asset-packs",
+    "packDescription": "https://static.makehumancommunity.org/assets/assetpacks/haireditor.html"
+  },
+  "conceptualResearch": [
+    {
+      "url": "https://research.dreamworks.com/wp-content/uploads/2018/07/a36-somasundaram-Edited.pdf",
+      "usedFor": "Guide connectivity, clump-local interpolation and the requirement to test render-hair collisions separately from guide collisions. No source code copied."
+    },
+    {
+      "url": "https://docs.blender.org/api/5.2/bpy.types.Curves.html",
+      "usedFor": "Native curve API discovery; full page fetch failed, no new native-curves implementation claimed in this iteration."
+    }
+  ],
+  "ownership": "CC0 guide graphics retargeted; new interpolation, capsule checker, root graph and routing scripts authored for Aevrynd. Imported upstream Geometry Nodes were discarded, and saved-source verification confirms no new upstream node groups remain."
+}

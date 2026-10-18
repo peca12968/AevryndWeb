@@ -1,0 +1,381 @@
+[
+  {
+    "name": "Human",
+    "type": "MESH",
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "dataProperties": [
+      "rna_type",
+      "name",
+      "name_full",
+      "id_type",
+      "session_uid",
+      "is_evaluated",
+      "original",
+      "users",
+      "use_fake_user",
+      "use_extra_user",
+      "is_embedded_data",
+      "is_linked_packed",
+      "is_missing",
+      "is_runtime_data",
+      "is_editable",
+      "tag",
+      "is_library_indirect",
+      "library",
+      "library_weak_reference",
+      "asset_data",
+      "override_library",
+      "preview",
+      "vertices",
+      "edges",
+      "loops",
+      "polygons",
+      "normals_domain",
+      "vertex_normals",
+      "polygon_normals",
+      "corner_normals",
+      "loop_triangles",
+      "loop_triangle_polygons",
+      "texture_mesh",
+      "uv_layers",
+      "uv_layer_clone",
+      "uv_layer_clone_index",
+      "uv_layer_stencil",
+      "uv_layer_stencil_index",
+      "vertex_colors",
+      "skin_vertices",
+      "attributes",
+      "color_attributes",
+      "remesh_voxel_size",
+      "remesh_voxel_adaptivity",
+      "use_remesh_fix_poles",
+      "use_remesh_preserve_volume",
+      "use_remesh_preserve_attributes",
+      "remesh_mode",
+      "use_mirror_x",
+      "use_mirror_y",
+      "use_mirror_z",
+      "use_mirror_vertex_groups",
+      "radial_symmetry",
+      "has_custom_normals",
+      "texco_mesh",
+      "shape_keys",
+      "use_auto_texspace",
+      "use_mirror_topology",
+      "use_paint_bone_selection",
+      "use_paint_mask",
+      "use_paint_mask_vertex",
+      "total_vert_sel",
+      "total_edge_sel",
+      "total_face_sel",
+      "is_editmode",
+      "animation_data",
+      "auto_texspace",
+      "texspace_location",
+      "texspace_size",
+      "materials",
+      "cycles"
+    ],
+    "attributes": [
+      {
+        "name": "position",
+        "domain": "POINT",
+        "type": "FLOAT_VECTOR",
+        "length": 19158
+      },
+      {
+        "name": ".select_vert",
+        "domain": "POINT",
+        "type": "BOOLEAN",
+        "length": 19158
+      },
+      {
+        "name": ".edge_verts",
+        "domain": "EDGE",
+        "type": "INT32_2D",
+        "length": 37364
+      },
+      {
+        "name": ".select_edge",
+        "domain": "EDGE",
+        "type": "BOOLEAN",
+        "length": 37364
+      },
+      {
+        "name": ".select_poly",
+        "domain": "FACE",
+        "type": "BOOLEAN",
+        "length": 18486
+      },
+      {
+        "name": ".corner_vert",
+        "domain": "CORNER",
+        "type": "INT",
+        "length": 73944
+      },
+      {
+        "name": ".corner_edge",
+        "domain": "CORNER",
+        "type": "INT",
+        "length": 73944
+      },
+      {
+        "name": "UVMap",
+        "domain": "CORNER",
+        "type": "FLOAT2",
+        "length": 73944
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Hide helpers",
+        "type": "MASK",
+        "nodeGroup": null
+      },
+      {
+        "name": "Roll Hair Curves",
+        "type": "NODES",
+        "nodeGroup": "Roll Hair Curves"
+      }
+    ],
+    "vertices": 19158,
+    "bounds": [
+      [
+        -0.49732011556625366,
+        0.49732011556625366
+      ],
+      [
+        -0.3256400525569916,
+        0.11034002900123596
+      ],
+      [
+        -0.02713751792907715,
+        1.6674129962921143
+      ]
+    ]
+  },
+  {
+    "name": "straight_hair_to_shoulder",
+    "type": "CURVES",
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "dataProperties": [
+      "rna_type",
+      "name",
+      "name_full",
+      "id_type",
+      "session_uid",
+      "is_evaluated",
+      "original",
+      "users",
+      "use_fake_user",
+      "use_extra_user",
+      "is_embedded_data",
+      "is_linked_packed",
+      "is_missing",
+      "is_runtime_data",
+      "is_editable",
+      "tag",
+      "is_library_indirect",
+      "library",
+      "library_weak_reference",
+      "asset_data",
+      "override_library",
+      "preview",
+      "curves",
+      "points",
+      "position_data",
+      "curve_offset_data",
+      "normals",
+      "materials",
+      "surface",
+      "surface_uv_map",
+      "use_mirror_x",
+      "use_mirror_y",
+      "use_mirror_z",
+      "selection_domain",
+      "use_sculpt_collision",
+      "surface_collision_distance",
+      "attributes",
+      "color_attributes",
+      "animation_data"
+    ],
+    "attributes": [
+      {
+        "name": "position",
+        "domain": "POINT",
+        "type": "FLOAT_VECTOR",
+        "length": 4032
+      },
+      {
+        "name": "surface_uv_coordinate",
+        "domain": "CURVE",
+        "type": "FLOAT2",
+        "length": 252
+      }
+    ],
+    "modifiers": [
+      {
+        "name": "Surface Deform",
+        "type": "NODES",
+        "nodeGroup": "Surface Deform"
+      },
+      {
+        "name": "GeometryNodes",
+        "type": "NODES",
+        "nodeGroup": "Geometry Nodes.003"
+      },
+      {
+        "name": "Set Hair Curve Profile",
+        "type": "NODES",
+        "nodeGroup": "Set Hair Curve Profile"
+      },
+      {
+        "name": "Curl Hair Curves",
+        "type": "NODES",
+        "nodeGroup": "Curl Hair Curves"
+      },
+      {
+        "name": "Hair Curves Noise",
+        "type": "NODES",
+        "nodeGroup": "Hair Curves Noise"
+      },
+      {
+        "name": "Frizz Hair Curves",
+        "type": "NODES",
+        "nodeGroup": "Frizz Hair Curves"
+      },
+      {
+        "name": "Roll Hair Curves",
+        "type": "NODES",
+        "nodeGroup": "Roll Hair Curves"
+      },
+      {
+        "name": "Clump Hair Curves",
+        "type": "NODES",
+        "nodeGroup": "Clump Hair Curves"
+      }
+    ],
+    "curves": 252,
+    "points": 4032,
+    "curveProperties": [
+      "__doc__",
+      "__module__",
+      "__slots__",
+      "bl_rna",
+      "first_point_index",
+      "index",
+      "points",
+      "points_length",
+      "rna_type"
+    ],
+    "pointProperties": [
+      "__doc__",
+      "__module__",
+      "__slots__",
+      "bl_rna",
+      "index",
+      "position",
+      "radius",
+      "rna_type"
+    ],
+    "firstCurvePoints": [
+      [
+        0.05763298273086548,
+        -0.11084400117397308,
+        1.6042578220367432
+      ],
+      [
+        0.0621877945959568,
+        -0.11063878983259201,
+        1.5917284488677979
+      ],
+      [
+        0.06571595370769501,
+        -0.1102440357208252,
+        1.5788768529891968
+      ],
+      [
+        0.0682961493730545,
+        -0.10992065817117691,
+        1.565799355506897
+      ],
+      [
+        0.0693371444940567,
+        -0.10947885364294052,
+        1.5525137186050415
+      ],
+      [
+        0.06911774724721909,
+        -0.10887116193771362,
+        1.5391958951950073
+      ]
+    ],
+    "bounds": [
+      [
+        -0.09305836260318756,
+        0.09739413112401962
+      ],
+      [
+        -0.1432473510503769,
+        0.07040474563837051
+      ],
+      [
+        1.2927889823913574,
+        1.6749826669692993
+      ]
+    ]
+  }
+]
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
