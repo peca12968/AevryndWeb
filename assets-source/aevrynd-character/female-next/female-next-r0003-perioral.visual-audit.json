@@ -1,0 +1,127 @@
+{
+  "revision": "female-next-r0003",
+  "sourceRevision": "female-next-r0001",
+  "status": "TECHNICAL_FAIL_VISUAL_REJECTED",
+  "selectedVariant": null,
+  "strictOverallScoreBefore": 42,
+  "strictOverallScoreAfter": 42,
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "hypothesis": "Replacing the old Boolean mouth bag with a welded quad annulus will improve the neutral seam and deformation.",
+  "evidence": [
+    {
+      "label": "baseline",
+      "mouthIntersectionPairsByFrame": {
+        "1": 0,
+        "20": 0,
+        "33": 0,
+        "61": 0
+      },
+      "mouthIntersectionPairsByExpression": {
+        "open": 0,
+        "smile": 0
+      },
+      "hairAndBrowNegativeObservations": 0,
+      "minimumSignedHairBrowClearanceM": 0.00020668052934524894
+    },
+    {
+      "label": "a-contact",
+      "mouthIntersectionPairsByFrame": {
+        "1": 1016,
+        "20": 1000,
+        "33": 1000,
+        "61": 1000
+      },
+      "mouthIntersectionPairsByExpression": {
+        "open": 968,
+        "smile": 1277
+      },
+      "hairAndBrowNegativeObservations": 2856,
+      "minimumSignedHairBrowClearanceM": -0.035411265344009735
+    },
+    {
+      "label": "b-relaxed",
+      "mouthIntersectionPairsByFrame": {
+        "1": 994,
+        "20": 1012,
+        "33": 1012,
+        "61": 1012
+      },
+      "mouthIntersectionPairsByExpression": {
+        "open": 974,
+        "smile": 1309
+      },
+      "hairAndBrowNegativeObservations": 2856,
+      "minimumSignedHairBrowClearanceM": -0.035411265344009735
+    },
+    {
+      "label": "c-parted",
+      "mouthIntersectionPairsByFrame": {
+        "1": 980,
+        "20": 1008,
+        "33": 1008,
+        "61": 1008
+      },
+      "mouthIntersectionPairsByExpression": {
+        "open": 965,
+        "smile": 1275
+      },
+      "hairAndBrowNegativeObservations": 2856,
+      "minimumSignedHairBrowClearanceM": -0.035411265344009735
+    }
+  ],
+  "constructionEvidence": {
+    "boundaryVertices": 74,
+    "removedFaces": 1338,
+    "removedUnusedVertices": 1302,
+    "newVertices": 740,
+    "newQuadFaces": 740,
+    "oldVertexCount": 13997,
+    "newVertexCount": 13435,
+    "oldPolygonCount": 13933,
+    "newPolygonCount": 13336,
+    "sourceShapeKeys": 35,
+    "resultShapeKeys": 35,
+    "neutralGapM": 0.0003,
+    "maximumRetainedMixedErrorM": 3.588868187107545e-07,
+    "maximumAuthoredMixedErrorM": 3.588868187107545e-07
+  },
+  "visualFailures": [
+    "The neutral lip seam becomes a uniform horizontal slit with weak Cupid bow and unnatural corners.",
+    "The linear skin-to-lip bridge flattens the nasolabial area and produces visible fan-like creases.",
+    "The projected boundary has 14 angular backtracks and cannot be connected by the current radial correspondence without folded surfaces.",
+    "Open and smile preserve the folded bridge; all variants have perioral triangle self-intersections.",
+    "Hair-to-body negative distances are introduced, despite retained original control-point coordinates matching within 0.000359 mm."
+  ],
+  "fileIntegrity": {
+    "allThreeReopen": true,
+    "nonFiniteShapeKeys": 0,
+    "looseVertices": 0,
+    "edgesWithMoreThanTwoFaces": 0,
+    "boundaryEdges": 90,
+    "note": "The 90 existing boundary edges belong to the two eye apertures. These integrity checks do not make the candidates collision-safe.",
+    "deformWeightSumRange": [
+      0.1999999948,
+      0.3333333647
+    ],
+    "normalizationStatus": "Not normalized for direct engine export; all source group weights are retained and engine export remains blocked."
+  },
+  "decision": "Reject all three candidates. Preserve the r0001 baseline and retain r0003 only as research evidence.",
+  "nextAction": "Use a surface-conforming transition and a monotone boundary correspondence; preserve the nasal and cheek volume instead of linearly flattening the cut boundary toward an analytic lip ring.",
+  "runtimePerformance": {
+    "status": "NOT_TESTED_QUALITY_GATE_FAILED",
+    "cpuMs": null,
+    "gpuMs": null,
+    "memoryBytes": null
+  },
+  "evaluatedBodyTriangles": 427616,
+  "controlCageBodyTriangles": 26780,
+  "performanceStatus": "No Aevrynd runtime benchmark was run because the visual and collision gates fail.",
+  "gateNote": "A structurally readable Blend and manifold local join do not establish collision safety or visual realism.",
+  "retainedSurfaceVerification": {
+    "method": "Reopen b-relaxed, disable subdivision on old and new bodies, compare mapped retained vertices after the armature modifier.",
+    "maximumErrorM": 4.770699320310986e-07,
+    "verticesOverOneMicrometre": 0,
+    "scope": "Retained source vertices only; does not validate the reconstructed patch."
+  }
+}

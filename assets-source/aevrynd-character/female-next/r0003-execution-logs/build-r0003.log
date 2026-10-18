@@ -1,0 +1,22 @@
+00:00.328  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0001-baseline.blend"
+00:08.672  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0003-perioral-retopology\baseline-face-neutral.png'
+00:09.719  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0003-perioral-retopology\baseline-oblique-neutral.png'
+00:10.656  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0003-perioral-retopology\baseline-mouth-neutral.png'
+00:11.578  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0003-perioral-retopology\baseline-mouth-oblique-neutral.png'
+00:12.516  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0003-perioral-retopology\baseline-mouth-open.png'
+00:13.406  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0003-perioral-retopology\baseline-mouth-smile.png'
+AFN_R0003_VARIANT={"label": "baseline", "edit": null, "frameMouthPairs": {"1": 0, "20": 0, "33": 0, "61": 0}, "expressionMouthPairs": {"open": 0, "smile": 0}, "negativeHairAndBrows": 0}
+00:13.485  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0001-baseline.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0003-perioral-retopology.py:142: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  oral=bpy.data.materials.new('AFN_R0003_OralTissue');oral.use_nodes=True
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0003-perioral-retopology.py", line 225, in <module>
+    if gap is not None:body,edit=construct(body,gap)
+                                 ~~~~~~~~~^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0003-perioral-retopology.py", line 143, in construct
+    shader=oral.node_tree.nodes.get('Principled BSDF');shader.inputs['Base Color'].default_value=(.07,.008,.009,1.);shader.inputs['Roughness'].default_value=.42
+                                                       ^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'inputs'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
