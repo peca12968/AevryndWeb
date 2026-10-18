@@ -7,5 +7,5 @@
 
 ## Character development goal
 
-- For character work, including automatic goal continuations, first read `docs/character-continuous-goal.md`, the asset manifest, and the latest iteration evidence. The user redesigned this goal on 2026-10-19; follow its v2 workflow and acceptance rules instead of the older goal text's workflow.
+- For character work, including automatic goal continuations, first read `docs/character-continuous-goal.md`, the asset manifest, and the latest iteration evidence. The user redesigned this goal on 2026-10-19; follow its current v3 workflow and acceptance rules instead of the older goal text's workflow.
 - Offline character studies and goal-document edits are not website changes. Keep studies separate from formal runtime and public preview assets; follow the goal document's promotion and user-acceptance requirements.
