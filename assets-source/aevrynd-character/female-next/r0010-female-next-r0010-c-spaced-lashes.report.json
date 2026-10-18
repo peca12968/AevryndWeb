@@ -1,0 +1,76 @@
+{
+  "revision": "female-next-r0010",
+  "variant": "c-spaced-lashes",
+  "organicClumps": true,
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0009-a-slab-thickness-study.blend",
+  "sourceSha256": "a7f01c90ba33956704773648655195c9269d784a76b4138ce8456b00cc32c7c9",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0010-c-spaced-lashes-study.blend",
+  "sha256": "60bf9b8aea3accc303eb25fbfc5acedb621b59ca084420f3296b0ad666a2df9e",
+  "hypothesis": "Skin-bound tapered lashes and a narrow wet mucosal region reduce the bare plastic-eye appearance without changing skin or globe geometry.",
+  "wetline": {
+    "affectedVertices": 1281,
+    "supportRadiusM": 0.00065,
+    "method": "Smooth point-domain material mask on original skin; no duplicate/floating surface or new rim volume.",
+    "semanticGroup": "AFN10_EyelidWetlineRegion"
+  },
+  "lashes": {
+    "objects": [
+      "AFN10_L_upper_Lashes",
+      "AFN10_L_lower_Lashes",
+      "AFN10_R_upper_Lashes",
+      "AFN10_R_lower_Lashes"
+    ],
+    "hairs": 220,
+    "vertices": 14520,
+    "triangles": 28160
+  },
+  "renders": [
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0010-eye-rim\\c-spaced-lashes-eyes-neutral.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0010-eye-rim\\c-spaced-lashes-face-neutral.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0010-eye-rim\\c-spaced-lashes-oblique-neutral.png"
+  ],
+  "status": "RETAIN_C_AS_PARTIAL_HEAD_COMPONENT_STUDY_NOT_PHOTOREAL",
+  "remainingLimits": [
+    "Caruncle volume not sculpted; do not count rim colour as a caruncle.",
+    "No blink or facial keys; lash binding must be regenerated or deformed with the skin when added.",
+    "Brow fibres, skin maps and head hair still absent.",
+    "Runtime and continuous animation collisions not tested."
+  ],
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "overallCharacterScore": null,
+  "repairInput": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0010-b-organic-lashes-study.blend",
+  "repairInputSha256": "1d1fbca6b09fed01ec050f617eafaa94198288fd9934b920c28bab9f59b561fb",
+  "spacingEdits": 43,
+  "removedHairs": 0,
+  "technicalVerification": "saved-collision-verification.json",
+  "visualAudit": "female-next-r0010-eye-rim.visual-audit.json",
+  "minimumSampledLashVertexBodyGapM": 2.6455965780769475e-05,
+  "localAppearanceEstimate": {
+    "component": "Eyelash appearance only",
+    "estimatedScore": 58,
+    "uncertaintyPoints": 10,
+    "measurement": false,
+    "reason": "Visible fibre variation is an improvement, but the result remains sparse, excessively fine and pale in side light; clump pattern and similar curls are still procedural. It is below the 80-point release threshold. This is a subjective evidence-based estimate, not an objective realism metric."
+  },
+  "collisionEvidenceScope": "Five sampled static poses, not blinking or continuous motion. Body and original optical geometry/deform weights match r0009; closed-solid body/eye proof inherited through r0009 saved verification.",
+  "inheritedSourceEvidence": {
+    "path": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0009-optics\\saved-optics-verification.json",
+    "sha256": "5e7c12a5e5a7a4f8b7762764dc8a4251f0870dbab2ea67fc93a89715ddf56d29"
+  },
+  "semanticRegionExportNote": "AFN10_EyelidWetlineRegion is a non-deforming semantic vertex group. Exporters must map only actual rig-bone groups as skin weights; the wetline also exists as a point-domain shader attribute.",
+  "sourceStatistics": {
+    "bodyVertices": 214050,
+    "bodyTriangles": 428096,
+    "opticalTriangles": 30528,
+    "lashTriangles": 28160,
+    "rigBones": 55,
+    "fileBytes": 15461364
+  },
+  "enginePerformance": {
+    "status": "NOT_TESTED",
+    "cpuMs": null,
+    "gpuMs": null,
+    "memoryBytes": null
+  }
+}

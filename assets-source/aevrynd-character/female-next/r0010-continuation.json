@@ -1,0 +1,34 @@
+{
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "nextResearchInput": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0010-c-spaced-lashes-study.blend",
+  "latestFormalSourceUnchanged": "female-next-r0001",
+  "workingFoundationUnchanged": "female-next-r0005",
+  "collisionAuthority": "r0008 closed-solid source + r0009/r0010 unchanged-body proof + r0010 new-lash verification",
+  "liveJobHandles": [],
+  "completed": [
+    "Surface-derived skin rim and wetness region",
+    "220 tapered lashes in four named mesh layers",
+    "Natural-spacing repair: 43 root relocations, no removed hairs",
+    "Five static poses verified including lash self/cross collisions",
+    "Whole-face/profile/turn/alternate-light visual review"
+  ],
+  "rejected": [
+    "a: equal-spacing comb appearance",
+    "b: inter-strand intersection"
+  ],
+  "nextAction": "Continue the complete-head milestone with eyebrow fibres, skin material/maps and anatomical inner-eye sculpting. Prepare a native-to-evaluated facial deformation transfer and regenerate skin-bound lashes before qualifying blinking. Do not keep tweaking this static lash style.",
+  "remainingLimits": [
+    "No sculpted caruncle volume.",
+    "No blink keys, eyelid deformation or swept motion qualification.",
+    "Wetline is a skin material region, not a separate tear-meniscus volume.",
+    "Eyebrows, skin maps and scalp hair are missing.",
+    "Head still looks like a clay mannequin and cannot receive a full-character score.",
+    "Source is high-resolution; engine LOD and performance are untested."
+  ],
+  "doNotRepeat": [
+    "No further static lash parameter sweeps.",
+    "Do not claim static separation proves blinking.",
+    "Do not apply the 58-point lash-only estimate to the whole character."
+  ],
+  "rootBindingFile": "c-spaced-lashes-lash-bindings.json"
+}

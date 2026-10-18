@@ -1,0 +1,42 @@
+{
+  "revision": "female-next-r0010",
+  "status": "RETAIN_C_AS_PARTIAL_HEAD_COMPONENT_STUDY_NOT_PHOTOREAL",
+  "selectedVariant": "c-spaced-lashes",
+  "variantDecisions": {
+    "a-rim-lashes": "REJECTED_VISUAL: technically separated but repetitive equal-spacing comb appearance.",
+    "b-organic-lashes": "REJECTED_COLLISION: 1772 inter-strand triangle pairs at neutral; no body or eye crossings.",
+    "c-spaced-lashes": "RETAIN_RESEARCH_ONLY: organic variation with 43 skin-projected root relocations, 220 hairs preserved, zero tested triangle intersections."
+  },
+  "reviewedImages": [
+    "a-rim-lashes-eyes-neutral.png",
+    "b-organic-lashes-eyes-neutral.png",
+    "c-spaced-lashes-eyes-neutral.png",
+    "c-spaced-lashes-oblique-neutral.png",
+    "c-spaced-lashes-profile-neutral.png",
+    "c-spaced-lashes-face-turn-right.png",
+    "c-spaced-lashes-alternate-light-eyes-neutral.png"
+  ],
+  "visibleImprovement": "Distinct tapered lash fibres and their varying lengths/directions remove the completely bare eye rim. Narrow wetness region follows the original skin surface. No lighting or exposure change in standard comparisons.",
+  "strictLocalAssessment": {
+    "component": "Eyelash appearance only",
+    "estimatedScore": 58,
+    "uncertaintyPoints": 10,
+    "measurement": false,
+    "reason": "Visible fibre variation is an improvement, but the result remains sparse, excessively fine and pale in side light; clump pattern and similar curls are still procedural. It is below the 80-point release threshold. This is a subjective evidence-based estimate, not an objective realism metric."
+  },
+  "hardLimits": [
+    "No sculpted caruncle volume.",
+    "No blink keys, eyelid deformation or swept motion qualification.",
+    "Wetline is a skin material region, not a separate tear-meniscus volume.",
+    "Eyebrows, skin maps and scalp hair are missing.",
+    "Head still looks like a clay mannequin and cannot receive a full-character score.",
+    "Source is high-resolution; engine LOD and performance are untested."
+  ],
+  "minimumSampledLashVertexBodyGapM": 2.6455965780769475e-05,
+  "distanceScope": "Vertices to body triangles only. Exact triangle-crossing tests are separate; no exact all-surface gap or continuous-motion bound.",
+  "overallCharacterScore": null,
+  "formalPromotion": false,
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "nextAction": "Continue the complete-head milestone with eyebrow fibres, skin material/maps and anatomical inner-eye sculpting. Prepare a native-to-evaluated facial deformation transfer and regenerate skin-bound lashes before qualifying blinking. Do not keep tweaking this static lash style."
+}
