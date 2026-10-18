@@ -130,20 +130,25 @@ def render(label,view,fits,pose):
     V={'face':((0.,-.90,head[2]+.015),head,100,(1100,1100)),'oblique':((.36,-.84,head[2]+.02),head,100,(1100,1100)),'profile':((.9,-.03,head[2]+.015),head,100,(1100,1100)),'eyes':((0.,-.43,eyeZ+.005),(0.,-.115,eyeZ),100,(1400,650))}
     c.location,t,c.data.lens,size=V[view];c.rotation_euler=(Vector(t)-c.location).to_track_quat('-Z','Y').to_euler();scene.render.resolution_x,scene.render.resolution_y=size;scene.render.resolution_percentage=100;path=E/f'{label}-{view}-{pose}.png';scene.render.filepath=str(path);bpy.ops.render.render(write_still=True);return str(path)
 
-variants=[]
-for label,scale in VARIANTS:
-    bpy.ops.wm.open_mainfile(filepath=str(SRC));scene=bpy.context.scene;scene.frame_set(1);body=bpy.data.objects['AFN_R0005_Body'];rig=bpy.data.objects['AFN_R0005_Rig'];fits=helper_centres();add_bones(rig,fits);image=iris_image();mats=eye_materials(image)
-    scene.eevee.use_raytracing=True
-    parts=[];geometry={}
-    for side in ('L','R'):
-        p,g=make_eye(side,fits[side],scale,rig,mats);parts+=p;geometry[side]=g
-    audits={};renders=[]
-    for pose in ('neutral','gaze','turn'):
-        set_pose(rig,pose);audits[pose]=audit(body,parts)
-        for view in (('face','oblique','profile','eyes') if pose=='neutral' else ('eyes',)):renders.append(render(label,view,fits,pose))
-    set_pose(rig,'neutral');scene['aevrynd_revision']='female-next-r0006-'+label;scene['aevrynd_release_state']='OPTICAL_FIT_STUDY_NOT_PROMOTED';scene['aevrynd_website_promotion']='forbidden'
-    output=SRC.parent/f'aevrynd-female-next-r0006-{label}-study.blend';bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(output))
-    total_neg=sum(v['negativeVertices'] for a in audits.values() for v in a.values());total_cross=sum(v['bodyTriangleIntersectionPairs'] for a in audits.values() for v in a.values())
-    item={'label':label,'radiusScale':scale,'geometry':geometry,'poseAudit':audits,'renders':renders,'output':str(output),'fileBytes':output.stat().st_size,'sha256':hashlib.sha256(output.read_bytes()).hexdigest(),'bodyFitStatus':'PASS' if total_neg==0 and total_cross==0 else 'FAIL','negativeObservations':total_neg,'bodyCrossPairsAcrossPoses':total_cross,'renderSettings':{'engine':scene.render.engine,'eeveeRaytracing':scene.eevee.use_raytracing,'corneaTransmission':1.,'corneaIor':1.376},'remainingLimits':['No blink key or eye-lid motion is present.','No whole-character or runtime performance qualification.','Sclera/cornea share a designed limbus boundary; iris and pupil are distinct recessed surfaces.']};variants.append(item)
-    (E/'female-next-r0006-native-eyes.report.json').write_text(json.dumps({'revision':'female-next-r0006','source':str(SRC),'hypothesis':'Native helper positions and a bounded globe radius can fit separate optical layers to unchanged eyelids.','variants':variants,'status':'VISUAL_REVIEW_PENDING','selectedVariant':None,'enginePromotionApproved':False,'websitePromotionApproved':False,'enginePerformance':{'status':'NOT_TESTED','cpuMs':None,'gpuMs':None,'memoryBytes':None}},indent=2)+'\n')
-    print('AFN_R0006='+json.dumps({'label':label,'negativeObservations':total_neg,'bodyCrossPairs':total_cross,'fit':item['bodyFitStatus']}),flush=True)
+def main():
+    variants=[]
+    for label,scale in VARIANTS:
+        bpy.ops.wm.open_mainfile(filepath=str(SRC));scene=bpy.context.scene;scene.frame_set(1);body=bpy.data.objects['AFN_R0005_Body'];rig=bpy.data.objects['AFN_R0005_Rig'];fits=helper_centres();add_bones(rig,fits);image=iris_image();mats=eye_materials(image)
+        scene.eevee.use_raytracing=True
+        parts=[];geometry={}
+        for side in ('L','R'):
+            p,g=make_eye(side,fits[side],scale,rig,mats);parts+=p;geometry[side]=g
+        audits={};renders=[]
+        for pose in ('neutral','gaze','turn'):
+            set_pose(rig,pose);audits[pose]=audit(body,parts)
+            for view in (('face','oblique','profile','eyes') if pose=='neutral' else ('eyes',)):renders.append(render(label,view,fits,pose))
+        set_pose(rig,'neutral');scene['aevrynd_revision']='female-next-r0006-'+label;scene['aevrynd_release_state']='OPTICAL_FIT_STUDY_NOT_PROMOTED';scene['aevrynd_website_promotion']='forbidden'
+        output=SRC.parent/f'aevrynd-female-next-r0006-{label}-study.blend';bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(output))
+        total_neg=sum(v['negativeVertices'] for a in audits.values() for v in a.values());total_cross=sum(v['bodyTriangleIntersectionPairs'] for a in audits.values() for v in a.values())
+        item={'label':label,'radiusScale':scale,'geometry':geometry,'poseAudit':audits,'renders':renders,'output':str(output),'fileBytes':output.stat().st_size,'sha256':hashlib.sha256(output.read_bytes()).hexdigest(),'bodyFitStatus':'PASS' if total_neg==0 and total_cross==0 else 'FAIL','negativeObservations':total_neg,'bodyCrossPairsAcrossPoses':total_cross,'renderSettings':{'engine':scene.render.engine,'eeveeRaytracing':scene.eevee.use_raytracing,'corneaTransmission':1.,'corneaIor':1.376},'remainingLimits':['No blink key or eye-lid motion is present.','No whole-character or runtime performance qualification.','Sclera/cornea share a designed limbus boundary; iris and pupil are distinct recessed surfaces.']};variants.append(item)
+        (E/'female-next-r0006-native-eyes.report.json').write_text(json.dumps({'revision':'female-next-r0006','source':str(SRC),'hypothesis':'Native helper positions and a bounded globe radius can fit separate optical layers to unchanged eyelids.','variants':variants,'status':'VISUAL_REVIEW_PENDING','selectedVariant':None,'enginePromotionApproved':False,'websitePromotionApproved':False,'enginePerformance':{'status':'NOT_TESTED','cpuMs':None,'gpuMs':None,'memoryBytes':None}},indent=2)+'\n')
+        print('AFN_R0006='+json.dumps({'label':label,'negativeObservations':total_neg,'bodyCrossPairs':total_cross,'fit':item['bodyFitStatus']}),flush=True)
+
+
+if __name__ == "__main__":
+    main()

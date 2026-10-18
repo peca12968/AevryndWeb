@@ -1,0 +1,68 @@
+{
+  "revision": "female-next-r0007",
+  "sourceRevision": "female-next-r0006-b-balanced",
+  "status": "COLLISION_PASS_EXPERIMENTAL_CONTOUR_CONSTRAINT_FAIL",
+  "selectedVariant": null,
+  "score": null,
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "summary": [
+    {
+      "label": "a-tight",
+      "movedControlVertices": 110,
+      "maximumSocketControlMoveMm": 3.5274601090826847,
+      "lockedControlErrorMm": 0.0,
+      "frontVisibleLimitMoveMm": 0.5827873518434977,
+      "negativeObservationsAcrossFivePoses": 0,
+      "bodyEyeCrossPairsAcrossFivePoses": 0,
+      "bodySelfPairsAcrossFivePoses": 0,
+      "collisionGate": "PASS_FOR_TESTED_SCOPE",
+      "contourConstraint": "FAIL"
+    },
+    {
+      "label": "b-balanced",
+      "movedControlVertices": 164,
+      "maximumSocketControlMoveMm": 3.927464745106237,
+      "lockedControlErrorMm": 0.0,
+      "frontVisibleLimitMoveMm": 0.7078591100307196,
+      "negativeObservationsAcrossFivePoses": 0,
+      "bodyEyeCrossPairsAcrossFivePoses": 0,
+      "bodySelfPairsAcrossFivePoses": 0,
+      "collisionGate": "PASS_FOR_TESTED_SCOPE",
+      "contourConstraint": "FAIL"
+    },
+    {
+      "label": "c-reserved",
+      "movedControlVertices": 202,
+      "maximumSocketControlMoveMm": 4.427480004081274,
+      "lockedControlErrorMm": 0.0,
+      "frontVisibleLimitMoveMm": 0.8653910582956461,
+      "negativeObservationsAcrossFivePoses": 0,
+      "bodyEyeCrossPairsAcrossFivePoses": 0,
+      "bodySelfPairsAcrossFivePoses": 0,
+      "collisionGate": "PASS_FOR_TESTED_SCOPE",
+      "contourConstraint": "FAIL"
+    }
+  ],
+  "verification": {
+    "allThreeFilesReopened": true,
+    "eyeGeometryUnchanged": true,
+    "topologyUnchanged": true,
+    "declaredBodyEditsOnly": true,
+    "lockedSourceControlsUnchanged": true,
+    "rigBones": 55,
+    "bodyControlVertices": 13380,
+    "bodyControlQuads": 13378,
+    "evaluatedBodyTriangles": 428096,
+    "eyeTriangles": 30528
+  },
+  "visualAssessment": [
+    "The native lid opening and surrounding skin are slightly displaced by subdivision despite unchanged protected controls.",
+    "The fit repair does not resolve the lower-iris bright crescent or the large area-light highlights.",
+    "The main visual change is slight opening/contour movement rather than a convincing improvement in eye anatomy.",
+    "All candidates meet the tested collision scope but fail this experiment's contour-preservation constraint and are not promoted."
+  ],
+  "decision": "Retain the collision result as research evidence. Keep r0005 as the working foundation and do not adopt an r0007 source as a finished character.",
+  "nextAction": "Work at the evaluated source-surface level or introduce appropriate native support topology so inner-socket changes do not leak to the visible lid surface. Preserve the original lower-resolution editable source for later LOD/export work.",
+  "requiredLater": "Construct and qualify blinking and eyelid motion; improve optical appearance; complete all remaining character and runtime gates."
+}
