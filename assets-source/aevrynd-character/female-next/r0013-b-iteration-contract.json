@@ -1,0 +1,20 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0011-b-ridge-skin-brows-study.blend",
+  "sourceSha256": "cf09382a0fd381481c20f6ae478c67968ecbd1abd4ad869d193ef62276004fd0",
+  "previousGoalTurn": "progress: requested v3 prompt redesign saved and pushed; no model improvement claimed",
+  "primaryDefect": "Ear and side-head crossings persist between otherwise outside guide/CV samples; sparse artificial groom silhouette.",
+  "hypothesis": "Exclude the ear/side-head root band and replace perpendicular root poles with a smooth envelope offset ramp along the guide flow.",
+  "expectedVisibleChange": "Continuous outward fall around ears and neck without local kinks; preserve part and bob silhouette. Material change is a separate diagnostic.",
+  "smallestExperiment": "252 complete guide capsule paths before any child hair is generated.",
+  "rejectIf": "Any unresolved guide/body capsule, root containment, extreme silhouette inflation or lost scalp attachment.",
+  "costLimit": {
+    "threads": 8,
+    "guideCount": 252,
+    "initialPointsPerGuide": 66,
+    "childMaximum": 24000,
+    "renderSamples": 32,
+    "renderViewsMaximum": 4
+  },
+  "reference": "CC0 MakeHuman Hair Editor raw guide data already archived in r0012; geometry routing and all code here authored for Aevrynd.",
+  "reasonForSecondCandidate": "Saved A has one ear attachment crossing and visible brush-like root poles. B changes root domain and attachment path, not density."
+}

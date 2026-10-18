@@ -1,0 +1,19 @@
+00:00.515  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0013-a-envelope-guides.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0013-native-groom.py:39: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('AFN13_ChestnutKeratin_'+str(i));m.use_nodes=True
+AFN13_CHILD_LAYER={"name": "AFN13_PRIMARY_MASS", "curves": 14000, "points": 924000}
+AFN13_CHILD_LAYER={"name": "AFN13_SECONDARY_CLUMPS", "curves": 7000, "points": 462000}
+AFN13_CHILD_LAYER={"name": "AFN13_HAIRLINE_FINE", "curves": 91, "points": 4606}
+AFN13_CHILD_LAYER={"name": "AFN13_FLYAWAYS", "curves": 80, "points": 5280}
+Info: Saved as "aevrynd-female-next-r0013-a-native-envelope-hair-study.blend"
+AFN13_CHILDREN_DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+Error   : EXCEPTION_ACCESS_VIOLATION
+Writing: C:\Users\USER\AppData\Local\Temp\aevrynd-female-next-r0013-a-native-envelope-hair-study.crash.txt
+Address : 0x00007FFA8F8127A4
+Module  : tbbmalloc.dll
+Thread  : 00026b00
+Error loading symbols D:\SteamLibrary\steamapps\common\Blender\blender.pdb
+	error:0xc0000005
+	size = 88985600
+	base=0x00007FF6EC670000

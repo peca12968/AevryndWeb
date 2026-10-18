@@ -1,0 +1,75 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0013-b-native-envelope-hair-study.blend",
+  "sourceSha256": "7d37bca1f9d361c5f1a79eedd045210cf54f53c0ce630454554cc780cac75491",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0013-c-huang-reference.blend",
+  "outputSha256": "9c8cedfe82028a5e2472d07dde5f6f2c130a990055f85349697c3552cc67f82a",
+  "sameNativeHairGeometrySha256": "64c6f83a052fb04a4f9abd5d32aae256d6c9c60fe282129e8be1fcfb1c9ddbee",
+  "originalStateUnchanged": true,
+  "renderEngine": "CYCLES",
+  "samples": 32,
+  "threads": 8,
+  "baselineSameRenderer": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0013-envelope-hair\\b-cycles-standard-bsdf-face-neutral.png",
+  "candidateRenders": [
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0013-envelope-hair\\c-huang-reference-face-neutral.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0013-envelope-hair\\c-huang-reference-oblique-neutral.png",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0013-envelope-hair\\c-huang-reference-profile-neutral.png"
+  ],
+  "hairMaterialChanges": [
+    {
+      "material": "AFN13_ChestnutKeratin_0",
+      "model": "HUANG",
+      "melanin": 0.68,
+      "melaninRedness": 0.25,
+      "roughness": 0.36
+    },
+    {
+      "material": "AFN13_ChestnutKeratin_1",
+      "model": "HUANG",
+      "melanin": 0.6920000000000001,
+      "melaninRedness": 0.25,
+      "roughness": 0.36
+    },
+    {
+      "material": "AFN13_ChestnutKeratin_2",
+      "model": "HUANG",
+      "melanin": 0.7040000000000001,
+      "melaninRedness": 0.25,
+      "roughness": 0.36
+    },
+    {
+      "material": "AFN13_ChestnutKeratin_3",
+      "model": "HUANG",
+      "melanin": 0.7160000000000001,
+      "melaninRedness": 0.25,
+      "roughness": 0.36
+    },
+    {
+      "material": "AFN13_ChestnutKeratin_4",
+      "model": "HUANG",
+      "melanin": 0.7280000000000001,
+      "melaninRedness": 0.25,
+      "roughness": 0.36
+    },
+    {
+      "material": "AFN13_ChestnutKeratin_5",
+      "model": "HUANG",
+      "melanin": 0.74,
+      "melaninRedness": 0.25,
+      "roughness": 0.36
+    }
+  ],
+  "lightingExposureCameraUnchangedForPairedFace": true,
+  "wallSeconds": 108.68974161148071,
+  "status": "REJECTED_VISUAL_RETAIN_MATERIAL_REFERENCE_ONLY",
+  "references": [
+    "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/hair_principled.html",
+    "https://docs.blender.org/api/5.2/bpy.types.Curves.html"
+  ],
+  "limits": [
+    "Huang material is a Cycles-only offline reference, not an Aevrynd shader or runtime result.",
+    "Hair geometry and sampled-static collision scope inherited from exact B source; no dynamic or hair/hair proof.",
+    "Material appearance is not evidence of anatomical or geometry improvement."
+  ],
+  "visualAudit": "female-next-r0013-hair.visual-audit.json",
+  "frontViewSource": "aevrynd-female-next-r0013-c-huang-reference-front-view.blend"
+}

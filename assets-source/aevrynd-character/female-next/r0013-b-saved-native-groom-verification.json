@@ -1,0 +1,866 @@
+{
+  "sourceSha256": "cf09382a0fd381481c20f6ae478c67968ecbd1abd4ad869d193ef62276004fd0",
+  "candidate": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0013-b-native-envelope-hair-study.blend",
+  "candidateSha256": "7d37bca1f9d361c5f1a79eedd045210cf54f53c0ce630454554cc780cac75491",
+  "sourceStateEquality": {
+    "meshes": true,
+    "materials": true,
+    "bones": true,
+    "lights": true,
+    "view": true,
+    "nodeGroups": true
+  },
+  "externalLibraries": [],
+  "packedImages": [
+    {
+      "name": "AFN_R0006_OwnedIris",
+      "packed": true
+    },
+    {
+      "name": "young_lightskinned_female_diffuse3.png",
+      "packed": true
+    }
+  ],
+  "polyEnumProof": {
+    "installedSetSplineTypeNode": "POLY",
+    "evaluatedCurveTypeInteger": 1
+  },
+  "poses": {
+    "neutral": {
+      "body": {
+        "AFN13_FLYAWAYS": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 80,
+          "segments": 5040,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 1.5784992231034365e-06,
+          "minimumSampledCVGapM": 0.00017453322107030544,
+          "methods": {
+            "edge_distance": 90,
+            "lipschitz": 4950
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_HAIRLINE_FINE": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 100,
+          "segments": 4620,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 4.274993246379015e-06,
+          "minimumSampledCVGapM": 0.00017441278941987548,
+          "methods": {
+            "edge_distance": 129,
+            "lipschitz": 4491
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_PRIMARY_MASS": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 13931,
+          "segments": 877653,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 1.3498149418764763e-07,
+          "minimumSampledCVGapM": 0.00016178586520254612,
+          "methods": {
+            "edge_distance": 16948,
+            "lipschitz": 860705
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_SECONDARY_CLUMPS": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 6975,
+          "segments": 439425,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 4.0495520008601117e-08,
+          "minimumSampledCVGapM": 0.00016176432109205052,
+          "methods": {
+            "edge_distance": 8571,
+            "lipschitz": 430854
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        }
+      },
+      "otherSurfaces": {
+        "AFN10_L_lower_Lashes": {
+          "bboxSeparatedCurves": 21081,
+          "checkedSegments": 315,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_L_upper_Lashes": {
+          "bboxSeparatedCurves": 21085,
+          "checkedSegments": 63,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_R_lower_Lashes": {
+          "bboxSeparatedCurves": 21042,
+          "checkedSegments": 2772,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_R_upper_Lashes": {
+          "bboxSeparatedCurves": 21053,
+          "checkedSegments": 2079,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN11_L_BrowFibres": {
+          "bboxSeparatedCurves": 20887,
+          "checkedSegments": 12497,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN11_R_BrowFibres": {
+          "bboxSeparatedCurves": 20800,
+          "checkedSegments": 18018,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Cornea": {
+          "bboxSeparatedCurves": 21081,
+          "checkedSegments": 315,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Iris": {
+          "bboxSeparatedCurves": 21077,
+          "checkedSegments": 567,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Pupil": {
+          "bboxSeparatedCurves": 21077,
+          "checkedSegments": 567,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Sclera": {
+          "bboxSeparatedCurves": 20724,
+          "checkedSegments": 22766,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Cornea": {
+          "bboxSeparatedCurves": 21043,
+          "checkedSegments": 2709,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Iris": {
+          "bboxSeparatedCurves": 21040,
+          "checkedSegments": 2898,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Pupil": {
+          "bboxSeparatedCurves": 21039,
+          "checkedSegments": 2961,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Sclera": {
+          "bboxSeparatedCurves": 20706,
+          "checkedSegments": 23940,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        }
+      },
+      "wallSeconds": 24.47202491760254
+    },
+    "gaze-left": {
+      "body": {
+        "AFN13_FLYAWAYS": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 80,
+          "segments": 5040,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 1.5784992231034365e-06,
+          "minimumSampledCVGapM": 0.00017453322107030544,
+          "methods": {
+            "edge_distance": 90,
+            "lipschitz": 4950
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_HAIRLINE_FINE": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 100,
+          "segments": 4620,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 4.274993246379015e-06,
+          "minimumSampledCVGapM": 0.00017441278941987548,
+          "methods": {
+            "edge_distance": 129,
+            "lipschitz": 4491
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_PRIMARY_MASS": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 13931,
+          "segments": 877653,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 1.3498149418764763e-07,
+          "minimumSampledCVGapM": 0.00016178586520254612,
+          "methods": {
+            "edge_distance": 16948,
+            "lipschitz": 860705
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_SECONDARY_CLUMPS": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 6975,
+          "segments": 439425,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 4.0495520008601117e-08,
+          "minimumSampledCVGapM": 0.00016176432109205052,
+          "methods": {
+            "edge_distance": 8571,
+            "lipschitz": 430854
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        }
+      },
+      "otherSurfaces": {
+        "AFN10_L_lower_Lashes": {
+          "bboxSeparatedCurves": 21081,
+          "checkedSegments": 315,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_L_upper_Lashes": {
+          "bboxSeparatedCurves": 21085,
+          "checkedSegments": 63,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_R_lower_Lashes": {
+          "bboxSeparatedCurves": 21042,
+          "checkedSegments": 2772,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_R_upper_Lashes": {
+          "bboxSeparatedCurves": 21053,
+          "checkedSegments": 2079,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN11_L_BrowFibres": {
+          "bboxSeparatedCurves": 20887,
+          "checkedSegments": 12497,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN11_R_BrowFibres": {
+          "bboxSeparatedCurves": 20800,
+          "checkedSegments": 18018,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Cornea": {
+          "bboxSeparatedCurves": 21077,
+          "checkedSegments": 567,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Iris": {
+          "bboxSeparatedCurves": 21076,
+          "checkedSegments": 630,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Pupil": {
+          "bboxSeparatedCurves": 21076,
+          "checkedSegments": 630,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Sclera": {
+          "bboxSeparatedCurves": 20724,
+          "checkedSegments": 22766,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Cornea": {
+          "bboxSeparatedCurves": 21038,
+          "checkedSegments": 3024,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Iris": {
+          "bboxSeparatedCurves": 21038,
+          "checkedSegments": 3024,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Pupil": {
+          "bboxSeparatedCurves": 21039,
+          "checkedSegments": 2961,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Sclera": {
+          "bboxSeparatedCurves": 20706,
+          "checkedSegments": 23940,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        }
+      },
+      "wallSeconds": 25.235419034957886
+    },
+    "gaze-right": {
+      "body": {
+        "AFN13_FLYAWAYS": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 80,
+          "segments": 5040,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 1.5784992231034365e-06,
+          "minimumSampledCVGapM": 0.00017453322107030544,
+          "methods": {
+            "edge_distance": 90,
+            "lipschitz": 4950
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_HAIRLINE_FINE": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 100,
+          "segments": 4620,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 4.274993246379015e-06,
+          "minimumSampledCVGapM": 0.00017441278941987548,
+          "methods": {
+            "edge_distance": 129,
+            "lipschitz": 4491
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_PRIMARY_MASS": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 13931,
+          "segments": 877653,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 1.3498149418764763e-07,
+          "minimumSampledCVGapM": 0.00016178586520254612,
+          "methods": {
+            "edge_distance": 16948,
+            "lipschitz": 860705
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_SECONDARY_CLUMPS": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 6975,
+          "segments": 439425,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 4.0495520008601117e-08,
+          "minimumSampledCVGapM": 0.00016176432109205052,
+          "methods": {
+            "edge_distance": 8571,
+            "lipschitz": 430854
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        }
+      },
+      "otherSurfaces": {
+        "AFN10_L_lower_Lashes": {
+          "bboxSeparatedCurves": 21081,
+          "checkedSegments": 315,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_L_upper_Lashes": {
+          "bboxSeparatedCurves": 21085,
+          "checkedSegments": 63,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_R_lower_Lashes": {
+          "bboxSeparatedCurves": 21042,
+          "checkedSegments": 2772,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_R_upper_Lashes": {
+          "bboxSeparatedCurves": 21053,
+          "checkedSegments": 2079,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN11_L_BrowFibres": {
+          "bboxSeparatedCurves": 20887,
+          "checkedSegments": 12497,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN11_R_BrowFibres": {
+          "bboxSeparatedCurves": 20800,
+          "checkedSegments": 18018,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Cornea": {
+          "bboxSeparatedCurves": 21077,
+          "checkedSegments": 567,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Iris": {
+          "bboxSeparatedCurves": 21076,
+          "checkedSegments": 630,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Pupil": {
+          "bboxSeparatedCurves": 21076,
+          "checkedSegments": 630,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Sclera": {
+          "bboxSeparatedCurves": 20724,
+          "checkedSegments": 22766,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Cornea": {
+          "bboxSeparatedCurves": 21038,
+          "checkedSegments": 3024,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Iris": {
+          "bboxSeparatedCurves": 21038,
+          "checkedSegments": 3024,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Pupil": {
+          "bboxSeparatedCurves": 21038,
+          "checkedSegments": 3024,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Sclera": {
+          "bboxSeparatedCurves": 20706,
+          "checkedSegments": 23940,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        }
+      },
+      "wallSeconds": 23.456480264663696
+    },
+    "turn-left": {
+      "body": {
+        "AFN13_FLYAWAYS": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 80,
+          "segments": 5040,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 1.5466424851488222e-06,
+          "minimumSampledCVGapM": 0.00014423539505514782,
+          "methods": {
+            "edge_distance": 89,
+            "lipschitz": 4951
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_HAIRLINE_FINE": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 100,
+          "segments": 4620,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 4.273381441317201e-06,
+          "minimumSampledCVGapM": 0.00017446082529204432,
+          "methods": {
+            "edge_distance": 129,
+            "lipschitz": 4491
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_PRIMARY_MASS": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 13931,
+          "segments": 877653,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 1.347091982707135e-07,
+          "minimumSampledCVGapM": 2.5573868697392754e-05,
+          "methods": {
+            "edge_distance": 16594,
+            "lipschitz": 861006,
+            "range_empty": 53
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_SECONDARY_CLUMPS": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 6975,
+          "segments": 439425,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 1.0596471038682154e-07,
+          "minimumSampledCVGapM": 1.3110056897858158e-05,
+          "methods": {
+            "edge_distance": 8381,
+            "lipschitz": 431024,
+            "range_empty": 20
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        }
+      },
+      "otherSurfaces": {
+        "AFN10_L_lower_Lashes": {
+          "bboxSeparatedCurves": 21085,
+          "checkedSegments": 63,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_L_upper_Lashes": {
+          "bboxSeparatedCurves": 21085,
+          "checkedSegments": 63,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_R_lower_Lashes": {
+          "bboxSeparatedCurves": 20955,
+          "checkedSegments": 8253,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_R_upper_Lashes": {
+          "bboxSeparatedCurves": 20961,
+          "checkedSegments": 7875,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN11_L_BrowFibres": {
+          "bboxSeparatedCurves": 20784,
+          "checkedSegments": 18946,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN11_R_BrowFibres": {
+          "bboxSeparatedCurves": 20774,
+          "checkedSegments": 19656,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Cornea": {
+          "bboxSeparatedCurves": 21086,
+          "checkedSegments": 0,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Iris": {
+          "bboxSeparatedCurves": 21085,
+          "checkedSegments": 63,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Pupil": {
+          "bboxSeparatedCurves": 21086,
+          "checkedSegments": 0,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Sclera": {
+          "bboxSeparatedCurves": 20823,
+          "checkedSegments": 16569,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Cornea": {
+          "bboxSeparatedCurves": 20967,
+          "checkedSegments": 7497,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Iris": {
+          "bboxSeparatedCurves": 20963,
+          "checkedSegments": 7749,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Pupil": {
+          "bboxSeparatedCurves": 20979,
+          "checkedSegments": 6741,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Sclera": {
+          "bboxSeparatedCurves": 20457,
+          "checkedSegments": 39627,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        }
+      },
+      "wallSeconds": 25.094290494918823
+    },
+    "turn-right": {
+      "body": {
+        "AFN13_FLYAWAYS": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 80,
+          "segments": 5040,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 1.5654863121352557e-06,
+          "minimumSampledCVGapM": 0.00012333768245298415,
+          "methods": {
+            "edge_distance": 89,
+            "lipschitz": 4951
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_HAIRLINE_FINE": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 100,
+          "segments": 4620,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 4.276704215990665e-06,
+          "minimumSampledCVGapM": 0.00017452620704716537,
+          "methods": {
+            "edge_distance": 129,
+            "lipschitz": 4491
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_PRIMARY_MASS": {
+          "status": "PASS_TESTED_BODY_CAPSULES",
+          "curves": 13931,
+          "segments": 877653,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 0,
+          "minimumCapsuleClearanceLowerBoundM": 1.3482984162452745e-07,
+          "minimumSampledCVGapM": 7.012335117906332e-06,
+          "methods": {
+            "edge_distance": 16657,
+            "lipschitz": 860954,
+            "range_empty": 42
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        },
+        "AFN13_SECONDARY_CLUMPS": {
+          "status": "FAIL_OR_UNRESOLVED",
+          "curves": 6975,
+          "segments": 439425,
+          "unqualifiedSegments": 0,
+          "rootContainmentFailures": 1,
+          "minimumCapsuleClearanceLowerBoundM": 9.948037147204925e-08,
+          "minimumSampledCVGapM": 1.6679692635079846e-05,
+          "methods": {
+            "edge_distance": 8407,
+            "lipschitz": 430994,
+            "range_empty": 24
+          },
+          "failureSamples": [],
+          "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+        }
+      },
+      "otherSurfaces": {
+        "AFN10_L_lower_Lashes": {
+          "bboxSeparatedCurves": 20958,
+          "checkedSegments": 8064,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_L_upper_Lashes": {
+          "bboxSeparatedCurves": 20975,
+          "checkedSegments": 6993,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_R_lower_Lashes": {
+          "bboxSeparatedCurves": 21066,
+          "checkedSegments": 1260,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN10_R_upper_Lashes": {
+          "bboxSeparatedCurves": 21070,
+          "checkedSegments": 1008,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN11_L_BrowFibres": {
+          "bboxSeparatedCurves": 20763,
+          "checkedSegments": 20149,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN11_R_BrowFibres": {
+          "bboxSeparatedCurves": 20737,
+          "checkedSegments": 21987,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Cornea": {
+          "bboxSeparatedCurves": 20962,
+          "checkedSegments": 7812,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Iris": {
+          "bboxSeparatedCurves": 20957,
+          "checkedSegments": 8127,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Pupil": {
+          "bboxSeparatedCurves": 20973,
+          "checkedSegments": 7119,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_L_Sclera": {
+          "bboxSeparatedCurves": 20513,
+          "checkedSegments": 36099,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Cornea": {
+          "bboxSeparatedCurves": 21075,
+          "checkedSegments": 693,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Iris": {
+          "bboxSeparatedCurves": 21071,
+          "checkedSegments": 945,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Pupil": {
+          "bboxSeparatedCurves": 21076,
+          "checkedSegments": 630,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN6_R_Sclera": {
+          "bboxSeparatedCurves": 20801,
+          "checkedSegments": 17955,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        }
+      },
+      "wallSeconds": 22.29358220100403
+    }
+  },
+  "status": "FAIL_OR_UNRESOLVED",
+  "scopeLimits": [
+    "Hair/hair self separation not qualified.",
+    "Rigid head-parented static samples, no simulated motion or continuous collision.",
+    "Body gap is a conservative capsule clearance lower bound, not the exact minimum.",
+    "No runtime or character acceptance."
+  ]
+}

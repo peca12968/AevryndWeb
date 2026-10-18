@@ -1,0 +1,14 @@
+{
+  "graphicalGuideInput": {
+    "file": "aevrynd-female-next-r0012-b-hair-data.npz",
+    "sha256": "669a74dddade4af0b6bd636e05742ac17be3c24f12bbec5cc517c45cea0541fb",
+    "derivedFrom": "CC0 MakeHuman Hair Editor, Tomas Klecer, straight_hair_to_shoulder; r0012 provenance retained",
+    "licenseEvidence": "https://static.makehumancommunity.org/assets/assetpacks/index.html#functional-asset-packs"
+  },
+  "officialTechnicalDocuments": [
+    "https://docs.blender.org/api/5.2/bpy.types.Curves.html",
+    "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/hair_principled.html"
+  ],
+  "scope": "Official search confirms native curve APIs and Cycles-only hair BSDF; direct full-page fetches failed. Installed RNA/evaluator was used to verify actual APIs. Mathematical support envelope, all collision/interpolation/cache code and data schema were authored locally; no upstream node graphs retained.",
+  "rendererBoundary": "Huang shader is an offline reference only; no Blender shader implementation or runtime dependency is copied into Aevrynd."
+}

@@ -1,0 +1,17 @@
+00:00.734  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0011-b-ridge-skin-brows-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0013-envelope-hair.py", line 96, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0013-envelope-hair.py", line 77, in main
+    V,T,tree=solid.data(body);V=np.array(V,dtype=np.float64);tri=V[np.array(T,dtype=np.int32)];A,b,info=envelope(V)
+                                                                                                        ~~~~~~~~^^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0013-envelope-hair.py", line 38, in envelope
+    assert violation<2e-6,violation
+           ^^^^^^^^^^^^^^
+AssertionError: 0.08208330624743154
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\build-female-next-r0013-envelope-hair.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

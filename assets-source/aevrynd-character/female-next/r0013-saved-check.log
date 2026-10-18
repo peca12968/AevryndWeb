@@ -1,0 +1,15 @@
+00:00.625  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0011-b-ridge-skin-brows-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0013-native-groom.py:20: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  materials={m.name:{'nodes':[(n.name,n.bl_idname,[(i.name,value(i)) for i in n.inputs]) for n in m.node_tree.nodes],'links':[(l.from_node.name,l.from_socket.identifier,l.to_node.name,l.to_socket.identifier) for l in m.node_tree.links]} for m in bpy.data.materials if m.use_nodes and not m.name.startswith('AFN13_')}
+00:01.875  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0013-a-native-envelope-hair-study.blend"
+AFN13_SAVED_CHECK={"pose": "neutral", "layer": "AFN13_FLYAWAYS", "badSegments": 0, "insideRoots": 0}
+AFN13_SAVED_CHECK={"pose": "neutral", "layer": "AFN13_HAIRLINE_FINE", "badSegments": 0, "insideRoots": 0}
+AFN13_SAVED_CHECK={"pose": "neutral", "layer": "AFN13_PRIMARY_MASS", "badSegments": 1, "insideRoots": 0}
+AFN13_SAVED_CHECK={"pose": "neutral", "layer": "AFN13_SECONDARY_CLUMPS", "badSegments": 0, "insideRoots": 0}
+00:26.172  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0013-envelope-hair\a-native-envelope-hair-face-neutral.png'
+00:26.735  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0013-envelope-hair\a-native-envelope-hair-oblique-neutral.png'
+00:27.203  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0013-envelope-hair\a-native-envelope-hair-profile-neutral.png'
+AFN13_SAVED_VERIFICATION_DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

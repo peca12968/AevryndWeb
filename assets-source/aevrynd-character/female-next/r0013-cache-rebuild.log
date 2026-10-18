@@ -1,0 +1,12 @@
+00:00.579  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0013-b-native-envelope-hair-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\rebuild-female-next-r0013-native-cache.py", line 35, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\rebuild-female-next-r0013-native-cache.py", line 31, in main
+    assert before==verify.original_state();new=fibres();assert new==old,(old,new)
+                                                               ^^^^^^^^
+AssertionError: ('448e77587b864614de636aa631bdcef0b2c6295a1d627f2fa97b52b4e64652d0', '7736f5c51489150f19b71b00c7a238e1c019f79aa8cbd9deea70d0b1272eacae')
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\rebuild-female-next-r0013-native-cache.py', exiting.
+Attempt to use C-style MEM_delete_void on a pointer created with CPP-style MEM_new or new

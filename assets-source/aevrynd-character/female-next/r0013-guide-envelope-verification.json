@@ -1,0 +1,41 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0011-b-ridge-skin-brows-study.blend",
+  "sourceSha256": "cf09382a0fd381481c20f6ae478c67968ecbd1abd4ad869d193ef62276004fd0",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0013-a-envelope-guides.blend",
+  "outputSha256": "3f8463c79e6bb269a8685246711b465a05f859de9ea866eaab8f80a7166a08e4",
+  "styleInputSha256": "669a74dddade4af0b6bd636e05742ac17be3c24f12bbec5cc517c45cea0541fb",
+  "envelope": {
+    "bodyVerticesIncluded": 70427,
+    "hullVertices": 3941,
+    "hullFaces": 7878,
+    "rawFacePlaneViolationM": 0.08208330624743154,
+    "bodyVertexMaximumPlaneViolationM": 0.0,
+    "supportOffsetsRecomputedFloat64": true,
+    "includedAboveZ": 1.3,
+    "pathMinimumAllowedZ": 1.34,
+    "offsetPlaneMarginM": 0.002,
+    "extraRadialM": 0.001,
+    "proof": "Support halfspaces contain all selected body vertices and their fully selected triangles. Expanded halfspaces contain their Minkowski sum with a 2 mm ball. Final complete capsules are separately checked against actual body."
+  },
+  "guideBodyCheck": {
+    "status": "PASS_TESTED_BODY_CAPSULES",
+    "curves": 252,
+    "segments": 16380,
+    "unqualifiedSegments": 0,
+    "rootContainmentFailures": 0,
+    "minimumCapsuleClearanceLowerBoundM": 9e-06,
+    "minimumSampledCVGapM": 0.0001399418018385768,
+    "methods": {
+      "lipschitz": 16349,
+      "range_empty": 5,
+      "edge_distance": 26
+    },
+    "failureSamples": [],
+    "scope": "Actual body against complete piecewise-linear capsules with maximum endpoint radius and 1 um numerical allowance. Neutral only; not self collision, other components or motion."
+  },
+  "rootBindingsSource": "r0012/b-volume-guide-transfer.json, exact unchanged r0011 body",
+  "wallSeconds": 5.750622987747192,
+  "nextStageAllowed": true,
+  "overallScore": null,
+  "runtimePromotion": false
+}
