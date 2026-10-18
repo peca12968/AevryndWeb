@@ -1,0 +1,73 @@
+{
+  "revision": "female-next-r0006",
+  "sourceRevision": "female-next-r0005",
+  "status": "TECHNICAL_FAIL_VISUAL_NOT_ACCEPTED",
+  "selectedVariant": null,
+  "score": null,
+  "enginePromotionApproved": false,
+  "websitePromotionApproved": false,
+  "hypothesis": "Native helper positions and a bounded globe radius can fit separate optical layers to unchanged eyelids.",
+  "summary": [
+    {
+      "label": "a-recessed",
+      "bodyFitStatus": "FAIL",
+      "negativeObservationsAcrossPoses": 2195,
+      "bodyEyeTriangleCrossPairsAcrossPoses": 3169,
+      "minimumSignedBodyClearanceM": -0.0008903633643058129,
+      "neutralNegativeVertices": 734,
+      "neutralIntersectionPairs": 1056,
+      "eyeTriangles": 30528
+    },
+    {
+      "label": "b-balanced",
+      "bodyFitStatus": "FAIL",
+      "negativeObservationsAcrossPoses": 4311,
+      "bodyEyeTriangleCrossPairsAcrossPoses": 4984,
+      "minimumSignedBodyClearanceM": -0.0014100679804869287,
+      "neutralNegativeVertices": 1434,
+      "neutralIntersectionPairs": 1662,
+      "eyeTriangles": 30528
+    },
+    {
+      "label": "c-full",
+      "bodyFitStatus": "FAIL",
+      "negativeObservationsAcrossPoses": 6990,
+      "bodyEyeTriangleCrossPairsAcrossPoses": 5781,
+      "minimumSignedBodyClearanceM": -0.0019472623805540934,
+      "neutralNegativeVertices": 2320,
+      "neutralIntersectionPairs": 1928,
+      "eyeTriangles": 30528
+    }
+  ],
+  "implementedComponents": [
+    "left and right sclera",
+    "left and right iris",
+    "left and right pupil",
+    "left and right cornea",
+    "two independent eye bones parented to head",
+    "packed analytic 1024-square iris image"
+  ],
+  "verification": {
+    "nativeBodyControlGeometryUnchanged": true,
+    "originalRigRestMatricesUnchanged": true,
+    "allThreeFilesIndependentlyReopened": true,
+    "eyeObjectsPerCandidate": 8,
+    "rigBones": 55,
+    "incorrectNormalDirections": 0,
+    "nonFiniteEyeVertices": 0,
+    "factoryStartupNoMPFBImport": true
+  },
+  "fitDiagnosis": {
+    "bBalancedNeutralFrontProjectedLidNegativeVertices": 0,
+    "bBalancedNeutralRecessedSocketNegativeVertices": 1434,
+    "classificationLimit": "Nearest body contacts are classified using frontal ray visibility only; this does not prove all viewing angles are clear.",
+    "faceIndexEvidence": "saved-eye-verification.json / b-balanced / neutralContactLocalization"
+  },
+  "visualAssessment": [
+    "The eyes establish a visible gaze and are separated into optical components, but the collision gate fails for all sizes.",
+    "A bright crescent at the lower iris and large stage-light reflections keep the eyes from reading as realistic.",
+    "Eye sockets and lid contact need their own surface-fit step; shrinking the globe is not accepted as a finished solution."
+  ],
+  "decision": "Retain all three candidates as rejected fit studies. Continue building from r0005, using r0006 component construction only as research input.",
+  "nextAction": "Repair the native recessed socket faces from the localized contact sets while constraining visible lid/face vertices. Keep an anatomically consistent globe size, then verify both gaze directions, head motion, and body self-intersection before any adoption."
+}
