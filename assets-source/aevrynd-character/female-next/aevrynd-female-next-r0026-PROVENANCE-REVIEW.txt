@@ -1,0 +1,9 @@
+r0026 rejected oral soft-tissue studies
+
+Derived CC0 graphical teeth/tongue data from MakeHuman Community, released September 2020. Original credits Data Collection AB, Joel Palmius, Jonas Hauquier. Raw data/license headers/texture provenance already archived in r24. Own local cutter construction, UV transfer and rig binding code; no external program code/runtime imported into Aevrynd.
+
+A global supporting-plane cage failed a 5mm limit (required 22.5mm). B sequential solid differences collapsed at cutter 18. C one collection difference preserved 99.27% tongue volume and correctly shared jaw rotation with an independent two-bone gingival rig, but still failed actual self/contact tests. C and its motion review are rejected diagnostic files, not replacement head or runtime assets.
+
+Collections AFN26_ORAL_SOFT_TISSUE and AFN26_CONTACT_TOOLS are editable. Hidden tools are offline Boolean operands, not accepted engine collision proxies. Original crown/control geometry remains the accepted r25 dental-only state. Textures packed; no linked library. Motion review frames 1..25 at 12fps is diagnostic.
+
+Rebuild in the current workspace using build-female-next-r0026-oral-interface.py -- --collection-solids (or --local-solids to reproduce B rejection; no flag reproduces A rejection). Prior r25 source, r24 graphical data and own helper scripts/evidence required. Do not sweep another solver/clearance configuration; move to visible complete-head work, and later use direct conforming tongue/floor retopology.

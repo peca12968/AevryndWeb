@@ -1,0 +1,16 @@
+{
+  "status": "REJECT_SEQUENTIAL_BOOLEAN_ARCHITECTURE",
+  "firstCollapsedTool": {
+    "tooth": "AFN25_Upper_18",
+    "scaleOfToolHullOnly": 1.0894423156114454,
+    "correctedInwardFaces": 0,
+    "rawHullMaximumSupportViolationM": 6.318734217431593e-06,
+    "scaleConstruction": "max over faces of (actual source support + clearance) / positive generated face offset; no assumption that the approximate hull already contains all source vertices.",
+    "minimumActualCrownSupportGapM": 0.0002499903009797067,
+    "proof": "Every actual tooth vertex and its triangle convex combinations lies inside this closed convex cutter with at least the recorded face support margin. This is a local tool, not a changed tooth or a global tongue plane.",
+    "tongueVolumeRatioAfterThisDifference": 5.952264350406147e-18,
+    "resultSignedVolumeM3": -1.4124108959342948e-22,
+    "resultVertices": 6
+  },
+  "reason": "Sequential repeated modification loses almost all source volume at the 18th cutter. Collection C was the one bounded alternative, not an accepted B result."
+}

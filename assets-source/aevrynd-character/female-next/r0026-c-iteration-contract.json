@@ -1,0 +1,31 @@
+{
+  "previousGoalTurnClassification": "progress: r25 dental solids/contact repair retained, all 496 dental pair sweep qualified in stated range; complete mouth and appearance not accepted.",
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0025-a-dental-contact-study.blend",
+  "sourceSha256": "f4dca9dcb6b499115acf52a97000d8f8bfa81876696dd4d4f92db13ab9d1a589",
+  "primaryDefect": "Closed source tongue penetrates anterior/lateral crowns and oral lining; lower gingiva and tongue use independent native linear fields instead of the retained rigid jaw.",
+  "hypothesis": "Subtract only local conservative tooth solids from the existing tongue, then drive tongue and mapped lower gingiva from one jaw control.",
+  "alternativeReason": "A global support cage rejected before asset creation: a posterior crown plane would remove 22.5mm at the tongue tip. B uses local bounded convex cutter volumes instead of global halfspaces.",
+  "design": "250um design clearance. B exact local solid subtraction and source UV projection; no global tongue scale or tooth change. A plane method and smoothing remain rejected. Gingival split uses original anatomical helper triplets.",
+  "rejectIf": [
+    "Source sampled tongue surface removal over 5mm or final solid volume retention below 80%.",
+    "New nonmanifold/self/body/dental intersections or distorted tongue shape.",
+    "Shared-jaw gingiva introduces worse body contact or unnatural bridge deformation.",
+    "Unrelated source geometry or dental control changes."
+  ],
+  "budget": {
+    "candidatesMaximum": 3,
+    "candidate": "c",
+    "threads": 4,
+    "sourceTongueVertices": 226,
+    "teeth": 32,
+    "maximumTongueVertices": 10000,
+    "initialContactWeights": [
+      0,
+      0.2
+    ],
+    "diagnosticMinutes": 10,
+    "roundCheckpointMinutes": 45
+  },
+  "scope": "Soft-tissue interface candidate. Root/floor attachments remain raw contacts until geometrically accepted; no full-mouth or runtime claim."
+}
