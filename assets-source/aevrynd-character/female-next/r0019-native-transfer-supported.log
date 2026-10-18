@@ -1,0 +1,14 @@
+00:00.843  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0018-c-triangulated-brows-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\prepare-female-next-r0019-native-blink.py", line 57, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\prepare-female-next-r0019-native-blink.py", line 47, in main
+    outsideNoise=float(np.linalg.norm(delta[~support[side]],axis=1).max());assert outsideNoise<5.e-7
+                                                                                  ^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\prepare-female-next-r0019-native-blink.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

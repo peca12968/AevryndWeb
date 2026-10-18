@@ -1,0 +1,16 @@
+{
+  "reasonForThirdCandidate": "A native displacement overcloses the lower margin. B pointwise lower-height correction creates additional folds; stop that approach.",
+  "hypothesis": "Use a strictly increasing angular map around each eye X axis, with radius/x dependent fade and preserved cylindrical radius. This changes the deformation architecture rather than strength parameters; four angular phases reduce straight-line interpolation distortion.",
+  "spatialSettings": {
+    "innerFullWeightSphereRadiusM": 0.0165,
+    "outerZeroWeightSphereRadiusM": 0.026,
+    "upperAngularIdentityLimitRad": 1.15,
+    "compressedAngleGapRad": 0.004
+  },
+  "rejectIf": [
+    "Any actual body self/eye/attachment contact remains in sample checks.",
+    "Visible unclosed iris slit, collapsed lid or unnatural deformed face.",
+    "Neutral state or eye/light/material change."
+  ],
+  "maximumCandidates": 3
+}

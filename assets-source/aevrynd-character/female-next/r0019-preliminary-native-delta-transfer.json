@@ -1,0 +1,97 @@
+{
+  "status": "PASS_EXACT_NATIVE_SUBDIVISION_CORRESPONDENCE",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0018-c-triangulated-brows-study.blend",
+  "sourceSha256": "b6e9ddd3675afd205dee73e09a7e28f2b3c6583c8456425a0dc000037fd17d42",
+  "cache": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0019-preliminary-native-blink-data.npz",
+  "cacheSha256": "f31caa30f97e59960be20a534bb8e8fa292e071e746f023d5d6c3e4b6a5ca002",
+  "topology": {
+    "nativeEvaluatedVertices": 214050,
+    "currentBodyVertices": 214050,
+    "nativePolygons": 214048,
+    "currentPolygons": 214048,
+    "exactPolygonIndices": true
+  },
+  "bodyDifferenceVsNativeNeutralMaxM": 0.002476024068813471,
+  "closureFields": [
+    {
+      "side": "L",
+      "affectedAbove0p1um": 3090,
+      "maximumMoveM": 0.009656066481787967,
+      "affectedBoundsM": [
+        [
+          0.009198058396577835,
+          0.047619760036468506
+        ],
+        [
+          -0.13485707342624664,
+          -0.11811675876379013
+        ],
+        [
+          1.4555126428604126,
+          1.4752017259597778
+        ]
+      ],
+      "nativeTargetCoordinateProof": {
+        "axisMap": "(x,-z,y)",
+        "scale": 0.1,
+        "rawSparseDeltaVertexBounds": [
+          [
+            0.016030004248023033,
+            0.05048001557588577
+          ],
+          [
+            -0.14412997663021088,
+            -0.13263997435569763
+          ],
+          [
+            1.542590618133545,
+            1.557180643081665
+          ]
+        ]
+      }
+    },
+    {
+      "side": "R",
+      "affectedAbove0p1um": 3087,
+      "maximumMoveM": 0.009656185633745802,
+      "affectedBoundsM": [
+        [
+          -0.047619760036468506,
+          -0.009198058396577835
+        ],
+        [
+          -0.13485705852508545,
+          -0.11811676621437073
+        ],
+        [
+          1.4555127620697021,
+          1.4752016067504883
+        ]
+      ],
+      "nativeTargetCoordinateProof": {
+        "axisMap": "(x,-z,y)",
+        "scale": 0.1,
+        "rawSparseDeltaVertexBounds": [
+          [
+            -0.05048001557588577,
+            -0.016030004248023033
+          ],
+          [
+            -0.14412997663021088,
+            -0.13263997435569763
+          ],
+          [
+            1.542590618133545,
+            1.557180643081665
+          ]
+        ]
+      }
+    }
+  ],
+  "originalBodyNotModified": true,
+  "sourceFileNotSaved": true,
+  "wallSeconds": 2.070406913757324,
+  "scope": "Authored closure displacement transferred by exact indexed subdivision lineage. No collision, anatomical closure, lash binding, visual or runtime acceptance yet.",
+  "originalCachePath": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0019-native-blink-data.npz",
+  "archivalNote": "Preliminary interpolation support was later disproven. Exact topology correspondence passed, but the preliminary support attribute missed displacement outside its mask; see support-mask-diagnosis.json. Retained cache was renamed, not modified."
+}

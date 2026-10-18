@@ -1,0 +1,375 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0018-c-triangulated-brows-study.blend",
+  "sourceSha256": "b6e9ddd3675afd205dee73e09a7e28f2b3c6583c8456425a0dc000037fd17d42",
+  "objects": [
+    {
+      "name": "AFN_R0008_Body",
+      "type": "MESH",
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "vertices": 214050,
+      "polygons": 214048,
+      "modifiers": [
+        {
+          "name": "AFN_EvaluatedSurfaceSkinning",
+          "type": "ARMATURE",
+          "viewport": true,
+          "render": true,
+          "levels": null,
+          "vertexGroup": ""
+        }
+      ],
+      "shapeKeys": [],
+      "eyeRelatedGroups": [
+        "AFN10_EyelidWetlineRegion"
+      ]
+    },
+    {
+      "name": "AFN_R0005_EditableNativeCC0",
+      "type": "MESH",
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "vertices": 19158,
+      "polygons": 18486,
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "viewport": true,
+          "render": true,
+          "levels": null,
+          "vertexGroup": ""
+        },
+        {
+          "name": "Hide helpers",
+          "type": "MASK",
+          "viewport": true,
+          "render": true,
+          "levels": null,
+          "vertexGroup": "body"
+        }
+      ],
+      "shapeKeys": [
+        [
+          "Basis",
+          1.0
+        ],
+        [
+          "$md-$as-$fe-$yn",
+          0.44653069972991943
+        ],
+        [
+          "$md-$as-$fe-old",
+          0.04856931045651436
+        ],
+        [
+          "$md-$ca-$fe-$yn",
+          0.2679184377193451
+        ],
+        [
+          "$md-$ca-$fe-old",
+          0.029141586273908615
+        ],
+        [
+          "$md-$af-$fe-$yn",
+          0.17861227691173553
+        ],
+        [
+          "$md-$af-$fe-old",
+          0.019427724182605743
+        ],
+        [
+          "$md-universal-$fe-$yn-min$mu-$av$wg",
+          0.07894305139780045
+        ],
+        [
+          "$md-universal-$fe-$yn-$av$mu-min$wg",
+          0.07894305139780045
+        ],
+        [
+          "$md-universal-$fe-$yn-$av$mu-$av$wg",
+          0.72659832239151
+        ],
+        [
+          "$md-universal-$fe-old-$av$mu-$av$wg",
+          0.07903236895799637
+        ],
+        [
+          "$md-$fe-$yn-min$mu-$av$wg-mincup-$av$fi",
+          0.014099315740168095
+        ],
+        [
+          "$md-$fe-$yn-$av$mu-min$wg-mincup-$av$fi",
+          0.014099315740168095
+        ],
+        [
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-min$fi",
+          0.014051481150090694
+        ],
+        [
+          "$md-$fe-$yn-$av$mu-$av$wg-mincup-$av$fi",
+          0.12977124750614166
+        ],
+        [
+          "$md-$fe-$yn-$av$mu-$av$wg-$avcup-min$fi",
+          0.057639747858047485
+        ],
+        [
+          "$md-$fe-old-$av$mu-$av$wg-mincup-$av$fi",
+          0.014115267433226109
+        ]
+      ],
+      "eyeRelatedGroups": [
+        "helper-l-eye",
+        "helper-l-eyelashes-1",
+        "helper-l-eyelashes-2",
+        "helper-r-eye",
+        "helper-r-eyelashes-1",
+        "helper-r-eyelashes-2",
+        "joint-l-eye",
+        "joint-l-eye-target",
+        "joint-l-lowerlid",
+        "joint-l-upperlid",
+        "joint-r-eye",
+        "joint-r-eye-target",
+        "joint-r-lowerlid",
+        "joint-r-upperlid"
+      ]
+    },
+    {
+      "name": "AFN_R0005_Rig",
+      "type": "ARMATURE",
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bones": [
+        "Root",
+        "pelvis",
+        "spine_01",
+        "spine_02",
+        "spine_03",
+        "clavicle_l",
+        "upperarm_l",
+        "lowerarm_l",
+        "hand_l",
+        "index_01_l",
+        "index_02_l",
+        "index_03_l",
+        "middle_01_l",
+        "middle_02_l",
+        "middle_03_l",
+        "pinky_01_l",
+        "pinky_02_l",
+        "pinky_03_l",
+        "ring_01_l",
+        "ring_02_l",
+        "ring_03_l",
+        "thumb_01_l",
+        "thumb_02_l",
+        "thumb_03_l",
+        "clavicle_r",
+        "upperarm_r",
+        "lowerarm_r",
+        "hand_r",
+        "index_01_r",
+        "index_02_r",
+        "index_03_r",
+        "middle_01_r",
+        "middle_02_r",
+        "middle_03_r",
+        "pinky_01_r",
+        "pinky_02_r",
+        "pinky_03_r",
+        "ring_01_r",
+        "ring_02_r",
+        "ring_03_r",
+        "thumb_01_r",
+        "thumb_02_r",
+        "thumb_03_r",
+        "neck_01",
+        "head",
+        "eye.L",
+        "eye.R",
+        "thigh_l",
+        "calf_l",
+        "foot_l",
+        "ball_l",
+        "thigh_r",
+        "calf_r",
+        "foot_r",
+        "ball_r"
+      ]
+    }
+  ],
+  "localClosureTargetData": [
+    {
+      "path": "C:\\Users\\USER\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions\\user_default\\mpfb\\data\\targets\\expression\\units\\african\\eye-left-closure.target.gz",
+      "sha256": "2d358745e955ead9d73f85ed224568a8d347f3f3b897c26cbd412faf2bfa9f3a",
+      "headers": [],
+      "vertices": 181,
+      "minimumVertexId": 6784,
+      "maximumVertexId": 14854,
+      "rawDeltaBounds": [
+        [
+          -0.003,
+          -0.159,
+          -0.025
+        ],
+        [
+          0.001,
+          0.0,
+          0.024
+        ]
+      ]
+    },
+    {
+      "path": "C:\\Users\\USER\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions\\user_default\\mpfb\\data\\targets\\expression\\units\\african\\eye-right-closure.target.gz",
+      "sha256": "c1b0c3609d9fb59a97dabe8ace10622da58969f4566125b38f47285afef320d5",
+      "headers": [],
+      "vertices": 181,
+      "minimumVertexId": 0,
+      "maximumVertexId": 14979,
+      "rawDeltaBounds": [
+        [
+          -0.001,
+          -0.159,
+          -0.025
+        ],
+        [
+          0.003,
+          0.0,
+          0.024
+        ]
+      ]
+    },
+    {
+      "path": "C:\\Users\\USER\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions\\user_default\\mpfb\\data\\targets\\expression\\units\\asian\\eye-left-closure.target.gz",
+      "sha256": "0d52fee2d66b933ece83f3c7aa48e85bfe85e8adbed0931dbd37025866a1a67d",
+      "headers": [],
+      "vertices": 186,
+      "minimumVertexId": 6784,
+      "maximumVertexId": 14864,
+      "rawDeltaBounds": [
+        [
+          -0.003,
+          -0.159,
+          -0.022
+        ],
+        [
+          0.007,
+          0.006,
+          0.038
+        ]
+      ]
+    },
+    {
+      "path": "C:\\Users\\USER\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions\\user_default\\mpfb\\data\\targets\\expression\\units\\asian\\eye-right-closure.target.gz",
+      "sha256": "0c99a5f559a1d67f630a329b9724fe3742a2c35709b8baa8a6d37903f35b9b77",
+      "headers": [],
+      "vertices": 186,
+      "minimumVertexId": 0,
+      "maximumVertexId": 14989,
+      "rawDeltaBounds": [
+        [
+          -0.007,
+          -0.159,
+          -0.022
+        ],
+        [
+          0.003,
+          0.006,
+          0.038
+        ]
+      ]
+    },
+    {
+      "path": "C:\\Users\\USER\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions\\user_default\\mpfb\\data\\targets\\expression\\units\\caucasian\\eye-left-closure.target.gz",
+      "sha256": "ff0d21ceb6da55fe51e03b48a7562a650924fea9bef0c686fcd7aa44d16422ed",
+      "headers": [],
+      "vertices": 186,
+      "minimumVertexId": 6784,
+      "maximumVertexId": 14864,
+      "rawDeltaBounds": [
+        [
+          -0.003,
+          -0.159,
+          -0.025
+        ],
+        [
+          0.007,
+          0.006,
+          0.024
+        ]
+      ]
+    },
+    {
+      "path": "C:\\Users\\USER\\AppData\\Roaming\\Blender Foundation\\Blender\\5.2\\extensions\\user_default\\mpfb\\data\\targets\\expression\\units\\caucasian\\eye-right-closure.target.gz",
+      "sha256": "2b7be6bc65845d77e5f83b7bf852090854747e448644997795fa59b6cf76122d",
+      "headers": [],
+      "vertices": 186,
+      "minimumVertexId": 0,
+      "maximumVertexId": 14989,
+      "rawDeltaBounds": [
+        [
+          -0.007,
+          -0.159,
+          -0.025
+        ],
+        [
+          0.003,
+          0.006,
+          0.024
+        ]
+      ]
+    }
+  ],
+  "engineProgramImported": false,
+  "nextCheck": "Evaluate retained native macro source with/without sparse authored closure targets and subdivision 2; prove exact vertex/polygon correspondence to current baked body before transferring deltas. Do not modify the working source."
+}

@@ -1,0 +1,22 @@
+00:00.688  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0020-b-visible-rim-blink-study.blend"
+00:02.297  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0020-pinned-blink\b-face-0.00.png'
+00:02.766  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0020-pinned-blink\b-face-0.50.png'
+00:03.266  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0020-pinned-blink\b-face-1.00.png'
+00:03.672  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0020-pinned-blink\b-oblique-0.00.png'
+00:04.063  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0020-pinned-blink\b-oblique-1.00.png'
+00:04.438  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0020-pinned-blink\b-side-0.00.png'
+00:04.829  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0020-pinned-blink\b-side-1.00.png'
+00:05.219  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0020-pinned-blink\b-alternate-face-0.00.png'
+00:05.625  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0020-pinned-blink\b-alternate-face-1.00.png'
+00:05.969  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0020-b-visible-rim-blink-study.blend"
+D:\Download\Aevrynd\scripts\character-next\render-female-next-r0020-blink.py:25: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;n=m.node_tree.nodes;n.clear();out=n.new('ShaderNodeOutputMaterial');e=n.new('ShaderNodeEmission');e.inputs['Color'].default_value=(*color,1.);m.node_tree.links.new(e.outputs[0],out.inputs['Surface']);return m
+D:\Download\Aevrynd\scripts\character-next\render-female-next-r0020-blink.py:32: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  s.world.use_nodes=True
+00:06.750  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0020-pinned-blink\b-eye-id-eyes-0.00.png'
+00:06.954  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0020-pinned-blink\b-eye-id-eyes-1.00.png'
+00:07.157  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0020-pinned-blink\b-eye-id-oblique-1.00.png'
+00:07.375  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0020-pinned-blink\b-eye-id-side-1.00.png'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

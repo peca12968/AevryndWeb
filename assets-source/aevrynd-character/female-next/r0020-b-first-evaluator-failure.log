@@ -1,0 +1,17 @@
+00:00.359  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0018-c-triangulated-brows-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0020-visible-rim-blink.py", line 46, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0020-visible-rim-blink.py", line 45, in main
+    b.save=save;b.main()
+                ~~~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0020-pinned-blink.py", line 71, in main
+    err=float(np.linalg.norm(np.array(solid.data(body)[0])-expected,axis=1).max());assert err<5.e-7;tests.append({'left':left,'right':right,'maximumEvaluatorErrorM':err})
+                                                                                          ^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\build-female-next-r0020-visible-rim-blink.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,0 +1,21 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0018-c-triangulated-brows-study.blend",
+  "sourceSha256": "b6e9ddd3675afd205dee73e09a7e28f2b3c6583c8456425a0dc000037fd17d42",
+  "stage": "B_COMPLETE_HEAD",
+  "previousGoalTurn": "Prompt maintenance updated execution rules; no model improvement claimed. r19 interrupted production has completed artifacts, no Blender process remains live.",
+  "hypothesis": "Keep candidate A exact brow support pinning, replace fixed-depth rim detection with actual body-versus-optical-union visible boundary. Cover small canthus gaps omitted by the earlier depth threshold.",
+  "expectedVisibleChange": "Preserve neutral full head and brow appearance throughout blink; retain functional lid/lash movement.",
+  "smallestTest": "Build one candidate, verify exact fixed support, then actual affected surfaces before additional rendering.",
+  "rejectIf": [
+    "Any affected body self, body/eye, attachment/body, attachment self or cross attachment intersection at required samples.",
+    "Neutral appearance or scalp roots change.",
+    "Visible lid folding or unacceptable lid shape."
+  ],
+  "resources": {
+    "threads": 4,
+    "candidates": 1,
+    "samples": "five synchronized plus asymmetric/midpoint states if initial samples pass",
+    "noFullHairResimulation": true
+  },
+  "knownSeparateIssue": "Closure is pending actual mask and multiangle renders; this is not proof of complete closure."
+}

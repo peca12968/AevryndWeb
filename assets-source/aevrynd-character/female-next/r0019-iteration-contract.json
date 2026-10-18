@@ -1,0 +1,28 @@
+{
+  "previousGoalTurnClassification": "progress: r0018 C integrated brow geometry retained after controlled whole-face/closeup views and scoped five-pose checks; no full character acceptance.",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0018-c-triangulated-brows-study.blend",
+  "sourceSha256": "b6e9ddd3675afd205dee73e09a7e28f2b3c6583c8456425a0dc000037fd17d42",
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "primaryDefect": "No eyelid or lash blink deformation exists; head is a rigid stare.",
+  "hypothesis": "The retained native base has exact subdivision correspondence to the current high-resolution body. Transfer authored core CC0 eye-closure data through that correspondence, then bind lash/brow fibre motion to the actual deformed skin.",
+  "minimalExperiment": "Prove vertex/polygon correspondence and export separate L/R high-resolution closure deltas before creating a candidate.",
+  "rejectIf": [
+    "Native and current body polygon/vertex IDs do not correspond exactly.",
+    "Closure changes unsupported far regions or closes through the actual eye geometry.",
+    "Lashes/brows remain frozen or lose their skin anchors.",
+    "Neutral appearance, eye position, skin/material/exposure change."
+  ],
+  "resources": {
+    "threads": 4,
+    "nativeVertices": 19158,
+    "bodyVertices": 214050,
+    "initialTargets": 6,
+    "candidatesMaximum": 3,
+    "initialClosureSamples": [
+      0,
+      0.5,
+      1
+    ]
+  },
+  "licensing": "Installed core target graphical data is CC0 per official MPFB FAQ; no MPFB program source imported/copied into engine."
+}
