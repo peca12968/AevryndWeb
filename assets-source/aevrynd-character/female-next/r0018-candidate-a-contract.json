@@ -1,0 +1,28 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0017-c-volume-locks-study.blend",
+  "sourceSha256": "c1ddff0c8f7fa3e211f68e501d8a42c9dbd7e28d356e7c881e18302464801c19",
+  "diagnosis": "Saved dark-pigment graph is connected and visible. Constant dark diffuse material remains sparse in the full face; changing pigment alone does not solve the low image coverage. Emission diagnostic confirms the same fine-stroke footprint.",
+  "hypothesis": "A central-density follicle field with short under-fibres, longer directional fibres and feathered inner/outer boundaries improves brow readability without turning it into a flat stripe.",
+  "changes": [
+    "650 placement attempts per brow, bounded and collision-rejected, rather than unbounded density.",
+    "Smoothly denser central root distribution with tapered tails.",
+    "Two length/lift levels and coherent upright-to-outward growth."
+  ],
+  "held": [
+    "Original brow material and pigment palette",
+    "Skin/head/eyes/lashes/hair geometry and shading",
+    "Camera/light/exposure"
+  ],
+  "rejectIf": [
+    "Any body/component/self crossing in tested poses.",
+    "Brows become a solid strip or coarse comb.",
+    "No visible full-face improvement at matching views."
+  ],
+  "resources": {
+    "threads": 4,
+    "maximumFibres": 1300,
+    "attemptsPerFibre": 20,
+    "minimumAcceptedPerBrow": 500,
+    "staticPoses": 5
+  }
+}

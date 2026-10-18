@@ -1,0 +1,27 @@
+{
+  "previousGoalTurnClassification": "progress: bounded r0017 free-lock geometry retained after five static pose and controlled multi-view evidence; crown and hair remain research quality.",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0017-c-volume-locks-study.blend",
+  "sourceSha256": "c1ddff0c8f7fa3e211f68e501d8a42c9dbd7e28d356e7c881e18302464801c19",
+  "stage": "B_COMPLETE_HEAD_IN_PROGRESS",
+  "primaryDefect": "Brows are barely readable and look pale despite the intended dark-brown fibre pigment; face still reads as a mannequin.",
+  "hypothesis": "Inspect actual saved material output, attribute values and raster footprint before choosing a correction. A matte-constant diagnostic distinguishes pigment/shading from geometry coverage without changing skin or exposure.",
+  "minimalDiagnostic": [
+    "Saved material graph, mesh slots, visibility and projected fibre footprint.",
+    "Original versus constant dark-brown diffuse material on exact same brow mesh, plus a separate labelled emission mask."
+  ],
+  "rejectIf": [
+    "Any skin/hair/eye/light/exposure change.",
+    "Only eyebrow close-up improves while the complete face regresses.",
+    "A flat painted strip or uniform black block replaces fibre detail."
+  ],
+  "resources": {
+    "threads": 4,
+    "diagnosticConditions": 3,
+    "meshGrowth": 0,
+    "renderViews": [
+      "face",
+      "brows"
+    ]
+  },
+  "collisionPolicy": "Material-only diagnostic has no geometric collision change. Exact saved-state checks are required before inheriting static evidence; no redundant complete-hair collision rerun."
+}

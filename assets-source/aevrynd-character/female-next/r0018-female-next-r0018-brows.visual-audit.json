@@ -1,0 +1,88 @@
+{
+  "revision": "female-next-r0018",
+  "status": "BROW_READABILITY_RESEARCH_RETAINED_CHANGED_GEOMETRY_STATIC_GATES_ONLY",
+  "selectedCandidate": "C",
+  "workingReviewSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0018-c-triangulated-brows-study.blend",
+  "candidateDecisions": {
+    "A": "REJECTED: readable layered field, but four neutral nonadjacent triangle pairs intersect between two right-brow strands.",
+    "B": "REJECTED: one offending strand removed, passes neutral and gaze cases, but turn-left exposes left-brow contacts. No partial-pose acceptance.",
+    "C": "RESEARCH_RETAINED: stored explicit triangles, all-pose localized culling of two additional strands, 1080 final fibres; independent five-pose checks and controlled face/closeup/oblique/side-light images pass."
+  },
+  "actualVisibleGain": "Brows read more clearly in the full face and retain individual fibre structure. Original skin albedo, brow pigment, scalp hair, eyes and exposure are unchanged. This is a local appearance gain, not a photorealistic-face acceptance.",
+  "strictBrowAppearanceEstimate": {
+    "score": 55,
+    "uncertaintyPoints": 10,
+    "scope": "Subjective static brow appearance only, assessed at whole-face and closeup views with two lighting setups. Not the face/eye category or overall score.",
+    "deductions": [
+      "Fibres remain too uniformly stroke-like, particularly at the inner ends.",
+      "Brow heads and tails need more natural edge variation.",
+      "Fine detail loses readability at distance; runtime filtering/LOD is unqualified."
+    ]
+  },
+  "overallCharacterScore": null,
+  "verified": {
+    "sourceFibres": 637,
+    "candidateAFibres": 1083,
+    "candidateBFibres": 1082,
+    "finalFibres": 1080,
+    "allFinalBrowFacesTriangles": true,
+    "headSkinEyesLashesHairRigLightAndMaterialStateUnchanged": true,
+    "staticPoses": [
+      "neutral",
+      "gaze-left",
+      "gaze-right",
+      "turn-left",
+      "turn-right"
+    ],
+    "minimumSampledBrowVertexBodyGapM": 4.04520433221478e-05,
+    "distanceScope": "Sampled vertices to actual body triangles, not global surface minimum. Complete triangle overlap/outside connected-anchor checks plus finite-radius scalp-hair vs new-brow surface checks have their own reported scopes.",
+    "displayROIMetrics": [
+      {
+        "object": "AFN11_L_BrowFibres",
+        "pixelROI": [
+          605,
+          319,
+          766,
+          359
+        ],
+        "roiPixels": 6440,
+        "emissionDetectablyChangedPixels": 847,
+        "emissionThresholdedFootprintFraction": 0.13152173913043477,
+        "meanAbsRGBChangeConstantMaterial": 0.0029125563268785778,
+        "baselineMeanLinearizedDisplayLuma": 0.5685017763580462,
+        "constantMeanLinearizedDisplayLuma": 0.5641678754453701,
+        "candidateCMeanLinearizedDisplayLuma": 0.5443583032680133,
+        "candidateCRelativeLumaChange": -0.04246859745048048
+      },
+      {
+        "object": "AFN11_R_BrowFibres",
+        "pixelROI": [
+          333,
+          320,
+          495,
+          358
+        ],
+        "roiPixels": 6156,
+        "emissionDetectablyChangedPixels": 909,
+        "emissionThresholdedFootprintFraction": 0.1476608187134503,
+        "meanAbsRGBChangeConstantMaterial": 0.005638369707857152,
+        "baselineMeanLinearizedDisplayLuma": 0.5043343170708263,
+        "constantMeanLinearizedDisplayLuma": 0.4972023514361013,
+        "candidateCMeanLinearizedDisplayLuma": 0.4786790872393042,
+        "candidateCRelativeLumaChange": -0.05086949065954449
+      }
+    ],
+    "quadTriangleIndicesWereAlreadyStable": {
+      "AFN11_L_BrowFibres": true,
+      "AFN11_R_BrowFibres": true
+    }
+  },
+  "remainingGates": [
+    "Not photorealistic; face/eye anatomy, skin and hair visual defects remain.",
+    "No blink, brow expressions or continuous motion certificate; no complete scalp-hair dynamics/self collision.",
+    "No native runtime/LOD/performance, full body/clothes or final user acceptance."
+  ],
+  "nextAction": "Use workingReviewSource r0018 C as the integrated full-head research source; it includes r0017 C scalp hair plus the new 1080-fibre brows. Keep r0017 hair geometry and the new brows fixed instead of running another brow-density or pigment sweep. Next advance the complete-head milestone by inspecting actual lid topology, eye optics, rig and existing shape-key support for a blink. Establish open, half-closed and closed lid contours and thickness against the actual cornea before authoring independent left/right blink controls. Lash roots must follow evaluated eyelid skin rather than remain frozen to the head. Test closure/reopening and transition contact with the eye surfaces and complete finite-radius lash geometry, using swept/continuous evidence or justified bounded substeps; static samples alone do not qualify a blink. Do not move the eyeballs, change exposure or add a covering strip to hide closure defects. Preserve the full-face neutral appearance and correct topology if a local deformation cannot produce a valid closure; do not revive the rejected radial annulus method. The r0018 brow/contact proof is five static poses only; the original head/eye/lash/hair state is inherited only where unchanged. For future strand repairs, collect all required-pose offenders in one bounded diagnosis rather than fixing only the first failed pose. Triangulation changes did not explain this case, so do not keep searching that cause. Hairline/part/ends, scalp-hair dynamics/self contact, expressions/oral components, full body/clothes and native runtime/LOD/performance remain incomplete. No male or formal runtime/site promotion before full female gates and user acceptance.",
+  "runtimePromotionApproved": false,
+  "websitePromotionApproved": false
+}

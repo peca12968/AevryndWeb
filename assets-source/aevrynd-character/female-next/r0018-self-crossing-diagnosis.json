@@ -1,0 +1,108 @@
+{
+  "sourceSha256": "30549cd7fcb33443413fa4a0ba03ec9d66a8b2438538b21b0fd7d5800a42aea5",
+  "diagnosis": [
+    {
+      "object": "AFN11_L_BrowFibres",
+      "trianglePairs": [],
+      "fibrePairs": [],
+      "removedFibreIds": [],
+      "failurePositionsM": [],
+      "classification": "none"
+    },
+    {
+      "object": "AFN11_R_BrowFibres",
+      "trianglePairs": [
+        [
+          9660,
+          20295
+        ],
+        [
+          9722,
+          20295
+        ],
+        [
+          9661,
+          20295
+        ],
+        [
+          9658,
+          20295
+        ]
+      ],
+      "fibrePairs": [
+        [
+          127,
+          267
+        ],
+        [
+          127,
+          267
+        ],
+        [
+          127,
+          267
+        ],
+        [
+          127,
+          267
+        ]
+      ],
+      "removedFibreIds": [
+        127
+      ],
+      "failurePositionsM": [
+        [
+          [
+            -0.02505883201956749,
+            -0.13539312779903412,
+            1.476332664489746
+          ],
+          [
+            -0.024854637682437897,
+            -0.13537536561489105,
+            1.476110816001892
+          ]
+        ],
+        [
+          [
+            -0.025038182735443115,
+            -0.13537101447582245,
+            1.4763492345809937
+          ],
+          [
+            -0.024854637682437897,
+            -0.13537536561489105,
+            1.476110816001892
+          ]
+        ],
+        [
+          [
+            -0.02505883201956749,
+            -0.13539312779903412,
+            1.476332664489746
+          ],
+          [
+            -0.024854637682437897,
+            -0.13537536561489105,
+            1.476110816001892
+          ]
+        ],
+        [
+          [
+            -0.02508178912103176,
+            -0.13537484407424927,
+            1.476314663887024
+          ],
+          [
+            -0.024854637682437897,
+            -0.13537536561489105,
+            1.476110816001892
+          ]
+        ]
+      ],
+      "classification": "between-strand or mixed"
+    }
+  ],
+  "repair": "Greedy minimal incident-fibre removal; all retained fibre vertices, pigments and weights are bitwise/equal unchanged. No collision exclusions or moved roots. Full saved checks follow.",
+  "removedFibres": 1
+}

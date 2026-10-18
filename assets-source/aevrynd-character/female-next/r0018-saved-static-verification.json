@@ -1,0 +1,108 @@
+{
+  "candidate": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0018-a-layered-brows-study.blend",
+  "candidateSha256": "30549cd7fcb33443413fa4a0ba03ec9d66a8b2438538b21b0fd7d5800a42aea5",
+  "sourceSha256": "c1ddff0c8f7fa3e211f68e501d8a42c9dbd7e28d356e7c881e18302464801c19",
+  "status": "FAIL_OR_UNRESOLVED",
+  "originalHeadSkinEyesLashesHairRigLightMaterialStateExact": true,
+  "structures": {
+    "AFN11_L_BrowFibres": {
+      "fibres": 537,
+      "componentVertexCounts": [
+        40
+      ],
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "nonFiniteVertices": 0,
+      "maximumWeightSumError": 0.0
+    },
+    "AFN11_R_BrowFibres": {
+      "fibres": 546,
+      "componentVertexCounts": [
+        40
+      ],
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "nonFiniteVertices": 0,
+      "maximumWeightSumError": 0.0
+    }
+  },
+  "poses": {
+    "neutral": {
+      "brows": {
+        "AFN11_L_BrowFibres": {
+          "bodyTriangleIntersectionPairs": 0,
+          "targetTriangleIntersectionPairs": {
+            "AFN10_L_lower_Lashes": 0,
+            "AFN10_L_upper_Lashes": 0,
+            "AFN10_R_lower_Lashes": 0,
+            "AFN10_R_upper_Lashes": 0,
+            "AFN6_L_Cornea": 0,
+            "AFN6_L_Iris": 0,
+            "AFN6_L_Pupil": 0,
+            "AFN6_L_Sclera": 0,
+            "AFN6_R_Cornea": 0,
+            "AFN6_R_Iris": 0,
+            "AFN6_R_Pupil": 0,
+            "AFN6_R_Sclera": 0
+          },
+          "nonAdjacentSelfTriangleIntersectionPairs": 0,
+          "outsideConnectedStrandAnchors": 537,
+          "anchorFailures": [],
+          "float64WindingFallbacks": 0,
+          "minimumSampledVertexBodyGapM": 4.0453716792399064e-05
+        },
+        "AFN11_R_BrowFibres": {
+          "bodyTriangleIntersectionPairs": 0,
+          "targetTriangleIntersectionPairs": {
+            "AFN10_L_lower_Lashes": 0,
+            "AFN10_L_upper_Lashes": 0,
+            "AFN10_R_lower_Lashes": 0,
+            "AFN10_R_upper_Lashes": 0,
+            "AFN6_L_Cornea": 0,
+            "AFN6_L_Iris": 0,
+            "AFN6_L_Pupil": 0,
+            "AFN6_L_Sclera": 0,
+            "AFN6_R_Cornea": 0,
+            "AFN6_R_Iris": 0,
+            "AFN6_R_Pupil": 0,
+            "AFN6_R_Sclera": 0
+          },
+          "nonAdjacentSelfTriangleIntersectionPairs": 4,
+          "outsideConnectedStrandAnchors": 546,
+          "anchorFailures": [],
+          "float64WindingFallbacks": 0,
+          "minimumSampledVertexBodyGapM": 4.047211041324772e-05
+        }
+      },
+      "betweenBrowTrianglePairs": 0,
+      "hairVsNewBrows": {
+        "AFN11_L_BrowFibres": {
+          "bboxSeparatedCurves": 20804,
+          "checkedSegments": 17766,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        },
+        "AFN11_R_BrowFibres": {
+          "bboxSeparatedCurves": 20763,
+          "checkedSegments": 20349,
+          "failureSamples": [],
+          "status": "PASS_SURFACE_SEPARATION",
+          "scope": "Surface separation; no closed-volume classification for open components."
+        }
+      },
+      "wallSeconds": 1.3320972919464111
+    }
+  },
+  "inheritedEvidence": {
+    "path": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0017-volume-locks\\c-exact-crown-transition\\saved-surface-verification.json",
+    "sha256": "040cd899c3ee7b0d0a2590ed3cf2dcf0c3313fb2d84ce37b8a71057562065a83",
+    "scope": "Unchanged r0017 hair/body and hair/optics/lash surfaces in the same five poses. Old hair/brow checks replaced by this new proof."
+  },
+  "distanceScope": "Minimum sampled brow-vertex to body-triangle distances only; not the global triangle-to-triangle minimum. BVH triangle intersections plus outside anchors test connected strand containment. Native float BVHs with epsilon=0; shared-vertex adjacency omitted only in within-brow self tests.",
+  "limits": [
+    "Five static samples only; no facial expression, brow morph, blink or continuous motion proof.",
+    "Brow nonadjacent self-triangle checks do not qualify full scalp-hair self collision.",
+    "No native runtime or performance acceptance."
+  ]
+}

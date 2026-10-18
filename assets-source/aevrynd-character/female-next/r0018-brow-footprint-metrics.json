@@ -1,0 +1,42 @@
+{
+  "status": "DISPLAY_ROI_MEASUREMENTS_ONLY",
+  "rows": [
+    {
+      "object": "AFN11_L_BrowFibres",
+      "pixelROI": [
+        605,
+        319,
+        766,
+        359
+      ],
+      "roiPixels": 6440,
+      "emissionDetectablyChangedPixels": 847,
+      "emissionThresholdedFootprintFraction": 0.13152173913043477,
+      "meanAbsRGBChangeConstantMaterial": 0.0029125563268785778,
+      "baselineMeanLinearizedDisplayLuma": 0.5685017763580462,
+      "constantMeanLinearizedDisplayLuma": 0.5641678754453701,
+      "candidateCMeanLinearizedDisplayLuma": 0.5443583032680133,
+      "candidateCRelativeLumaChange": -0.04246859745048048
+    },
+    {
+      "object": "AFN11_R_BrowFibres",
+      "pixelROI": [
+        333,
+        320,
+        495,
+        358
+      ],
+      "roiPixels": 6156,
+      "emissionDetectablyChangedPixels": 909,
+      "emissionThresholdedFootprintFraction": 0.1476608187134503,
+      "meanAbsRGBChangeConstantMaterial": 0.005638369707857152,
+      "baselineMeanLinearizedDisplayLuma": 0.5043343170708263,
+      "constantMeanLinearizedDisplayLuma": 0.4972023514361013,
+      "candidateCMeanLinearizedDisplayLuma": 0.4786790872393042,
+      "candidateCRelativeLumaChange": -0.05086949065954449
+    }
+  ],
+  "threshold": 0.03137254901960784,
+  "scope": "Fixed rectangular face-view ROIs from the original projected brow bounds, padded by 5 pixels. Fraction is thresholded change from a separately labelled red emission diagnostic, not physical fibre coverage/density or objective realism. RGB/luma values include anti-aliasing, shading and tone mapping; no albedo change is inferred.",
+  "diagnosis": "Original brown material vs constant diffuse produces little full-face change while fine-stroke footprint remains sparse; do not treat pigment-only darkening as the complete correction."
+}

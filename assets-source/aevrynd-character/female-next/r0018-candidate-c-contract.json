@@ -1,0 +1,11 @@
+{
+  "reason": "B passes three static cases but its left brow has four nonadjacent intersections in turn-left. Diagnose actual tessellation and test all five poses before final culling.",
+  "hypothesis": "Define the authoring/render surface with explicit neutral triangles and remove the union of localized offending strands across all sampled poses; preserve all retained vertices, pigment and weights.",
+  "maximumCandidatesThisRound": 3,
+  "rejectIf": [
+    "Any independent final pose crossing or unresolved containment.",
+    "Any non-brow state change.",
+    "Loss of the full-face readability gain."
+  ],
+  "limits": "No fourth style candidate and no relaxed collision exclusion."
+}

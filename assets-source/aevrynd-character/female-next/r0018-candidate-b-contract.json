@@ -1,0 +1,13 @@
+{
+  "sourceCandidateA": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0018-a-layered-brows-study.blend",
+  "sourceCandidateASha256": "30549cd7fcb33443413fa4a0ba03ec9d66a8b2438538b21b0fd7d5800a42aea5",
+  "originalControlSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0017-c-volume-locks-study.blend",
+  "reason": "Candidate A improves full-face brow readability but fails four nonadjacent self-triangle pair checks.",
+  "hypothesis": "Remove only individually localized offending fibres, preserving every retained vertex/weight/pigment, then independently recheck all five poses.",
+  "rejectIf": [
+    "Any remaining crossing or containment ambiguity.",
+    "Any non-brow state change.",
+    "Brow appearance loses the A improvement."
+  ],
+  "maximumCandidatesThisRound": 2
+}

@@ -1,0 +1,379 @@
+{
+  "sourceSha256": "c1ddff0c8f7fa3e211f68e501d8a42c9dbd7e28d356e7c881e18302464801c19",
+  "material": "AFN11_BrowKeratin",
+  "nodes": [
+    {
+      "name": "Principled BSDF",
+      "type": "ShaderNodeBsdfPrincipled",
+      "inputs": [
+        [
+          "Base Color",
+          [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          true
+        ],
+        [
+          "Metallic",
+          0.0,
+          false
+        ],
+        [
+          "Roughness",
+          0.5199999809265137,
+          false
+        ],
+        [
+          "IOR",
+          1.5,
+          false
+        ],
+        [
+          "Alpha",
+          1.0,
+          false
+        ],
+        [
+          "Thin Wall",
+          false,
+          false
+        ],
+        [
+          "Normal",
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          false
+        ],
+        [
+          "Weight",
+          0.0,
+          false
+        ],
+        [
+          "Diffuse Roughness",
+          0.0,
+          false
+        ],
+        [
+          "Subsurface Weight",
+          0.0,
+          false
+        ],
+        [
+          "Subsurface Radius",
+          [
+            1.0,
+            0.20000000298023224,
+            0.10000000149011612
+          ],
+          false
+        ],
+        [
+          "Subsurface Scale",
+          0.004999999888241291,
+          false
+        ],
+        [
+          "Subsurface IOR",
+          1.399999976158142,
+          false
+        ],
+        [
+          "Subsurface Anisotropy",
+          0.0,
+          false
+        ],
+        [
+          "Specular IOR Level",
+          0.25,
+          false
+        ],
+        [
+          "Specular Tint",
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          false
+        ],
+        [
+          "Anisotropic",
+          0.0,
+          false
+        ],
+        [
+          "Anisotropic Rotation",
+          0.0,
+          false
+        ],
+        [
+          "Tangent",
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          false
+        ],
+        [
+          "Transmission Weight",
+          0.0,
+          false
+        ],
+        [
+          "Coat Weight",
+          0.0,
+          false
+        ],
+        [
+          "Coat Roughness",
+          0.029999999329447746,
+          false
+        ],
+        [
+          "Coat IOR",
+          1.5,
+          false
+        ],
+        [
+          "Coat Tint",
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          false
+        ],
+        [
+          "Coat Normal",
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          false
+        ],
+        [
+          "Sheen Weight",
+          0.0,
+          false
+        ],
+        [
+          "Sheen Roughness",
+          0.5,
+          false
+        ],
+        [
+          "Sheen Tint",
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          false
+        ],
+        [
+          "Emission Color",
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          false
+        ],
+        [
+          "Emission Strength",
+          0.0,
+          false
+        ],
+        [
+          "Thin Film Thickness",
+          0.0,
+          false
+        ],
+        [
+          "Thin Film IOR",
+          1.3300000429153442,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "Material Output",
+      "type": "ShaderNodeOutputMaterial",
+      "inputs": [
+        [
+          "Surface",
+          null,
+          true
+        ],
+        [
+          "Volume",
+          null,
+          false
+        ],
+        [
+          "Displacement",
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          false
+        ],
+        [
+          "Thickness",
+          0.0,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "Attribute",
+      "type": "ShaderNodeAttribute",
+      "inputs": [],
+      "attributeName": "AFN11_BrowPigment",
+      "attributeType": "GEOMETRY"
+    },
+    {
+      "name": "Color Ramp",
+      "type": "ShaderNodeValToRGB",
+      "inputs": [
+        [
+          "Factor",
+          0.5,
+          true
+        ]
+      ],
+      "rampElements": [
+        {
+          "position": 0.0,
+          "color": [
+            0.014000000432133675,
+            0.007000000216066837,
+            0.003000000026077032,
+            1.0
+          ]
+        },
+        {
+          "position": 1.0,
+          "color": [
+            0.04699999839067459,
+            0.02500000037252903,
+            0.009999999776482582,
+            1.0
+          ]
+        }
+      ]
+    }
+  ],
+  "links": [
+    [
+      "Principled BSDF",
+      "BSDF",
+      "Material Output",
+      "Surface"
+    ],
+    [
+      "Attribute",
+      "Fac",
+      "Color Ramp",
+      "Fac"
+    ],
+    [
+      "Color Ramp",
+      "Color",
+      "Principled BSDF",
+      "Base Color"
+    ]
+  ],
+  "brows": [
+    {
+      "object": "AFN11_L_BrowFibres",
+      "vertices": 12800,
+      "faces": 11840,
+      "materialSlots": [
+        "AFN11_BrowKeratin"
+      ],
+      "materialIndices": [
+        0
+      ],
+      "hideRender": false,
+      "collections": [
+        [
+          "AFN11_BROWS",
+          false
+        ]
+      ],
+      "bounds": [
+        [
+          0.01497647911310196,
+          0.05448539927601814
+        ],
+        [
+          -0.13744816184043884,
+          -0.10763918608427048
+        ],
+        [
+          1.473880648612976,
+          1.4803054332733154
+        ]
+      ],
+      "pigmentMinMax": [
+        0.0023072860203683376,
+        0.9978343844413757
+      ],
+      "pigmentDomain": "POINT",
+      "pigmentType": "FLOAT"
+    },
+    {
+      "object": "AFN11_R_BrowFibres",
+      "vertices": 12680,
+      "faces": 11729,
+      "materialSlots": [
+        "AFN11_BrowKeratin"
+      ],
+      "materialIndices": [
+        0
+      ],
+      "hideRender": false,
+      "collections": [
+        [
+          "AFN11_BROWS",
+          false
+        ]
+      ],
+      "bounds": [
+        [
+          -0.054895803332328796,
+          -0.014982380904257298
+        ],
+        [
+          -0.13739469647407532,
+          -0.10666511952877045
+        ],
+        [
+          1.4740591049194336,
+          1.480026364326477
+        ]
+      ],
+      "pigmentMinMax": [
+        0.001275976188480854,
+        0.9958628416061401
+      ],
+      "pigmentDomain": "POINT",
+      "pigmentType": "FLOAT"
+    }
+  ]
+}
