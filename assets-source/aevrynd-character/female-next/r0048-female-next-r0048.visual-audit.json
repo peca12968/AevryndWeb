@@ -1,0 +1,1564 @@
+{
+  "revision": "female-next-r0048",
+  "decision": "RETAIN_ANATOMICAL_AUTHORING_ONLY_REJECT_ALL_CHILD_CONSTRUCTIONS",
+  "appearance": {
+    "status": "NO_WHOLE_CHARACTER_GAIN",
+    "workingSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0042-b-shadow-quality-review.blend",
+    "workingSourceSha256": "d62c180a5af61f6f8d800926b101738c89a8fbe7785fe1054fd655fd018824da",
+    "retainedAuthoringAppearanceExact": true,
+    "fullNewHairstyleCandidateProduced": false,
+    "pilotComparisonNotDenseHairAB": true,
+    "overallScore": null
+  },
+  "function": {
+    "status": "RETAIN_SCOPED_STATIC_AUTHORING",
+    "retainedSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0048-anatomical-authoring-retained.blend",
+    "sourceSha256": "49f76186981a7244444e37b950eab6acd24e34be15a65d855cee527422405c67",
+    "scalpCoverageWarning": "Initial artist-designated region only. Actual diagnostic views show sideburn/temple and low nape coverage still incomplete; do not claim the anatomical hairline is finished or use this mask as an accepted follicle distribution.",
+    "retainedSourceFinalReadback": {
+      "status": "PASS_REOPENED_RETAINED_SOURCE_APPEARANCE_EXACT",
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0048-anatomical-authoring-retained.blend",
+      "sha256": "49f76186981a7244444e37b950eab6acd24e34be15a65d855cee527422405c67",
+      "originalVisibleDataAndStageExact": true,
+      "originalHairVisible": true,
+      "rejectedFollowersRemoved": true,
+      "nativeBezierControlsExact": 29,
+      "actualBodyDomainFaces": 30142,
+      "coverageWarning": "Initial artist-designated region only. Actual diagnostic views show sideburn/temple and low nape coverage still incomplete; do not claim the anatomical hairline is finished or use this mask as an accepted follicle distribution."
+    },
+    "scalpActualBodyTriangles": {
+      "triangles": 30142,
+      "actualBodyTriMapping": true,
+      "notCollisionProxy": true
+    },
+    "roots": {
+      "states": {
+        "outside": 24000
+      },
+      "outsideCurrentWholeBody": true,
+      "representativeRootReadbackMaxErrorM": 5.9082073233795995e-08,
+      "scope": "Static root points only, not any24kchild path or hair-self/continuous contact certificate"
+    },
+    "primaryGuides": 29,
+    "controls": "Actual native editable Bezier knots and free handles exported from saved source; sampled POLY paths are the contact-tested representation. No live child rig or accepted regeneration solver.",
+    "integration": "Complete source includes unchanged original visible body/hair and hidden separate anatomical domain plus29native controls; rejected followers removed from retained source. Not working/main/runtime promotion."
+  },
+  "contact": {
+    "A": {
+      "status": "FAIL_OR_UNRESOLVED",
+      "curves": 211,
+      "segments": 33549,
+      "unqualifiedSegments": 38,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": -2.5899371446556907e-05,
+      "minimumSampledCVSurfaceGapM": 2.8999207347404476e-05,
+      "methods": {
+        "lipschitz": 33446,
+        "edge_distance": 64,
+        "centreline_cross": 38,
+        "range_empty": 1
+      },
+      "failureSamples": [
+        {
+          "curve": 38,
+          "segment": 68,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.3748428221627947e-05,
+          "a": [
+            0.05479893088522658,
+            -0.06882004416547716,
+            1.527915954531636
+          ],
+          "b": [
+            0.05477409437480674,
+            -0.06832761294208467,
+            1.5257692336454056
+          ]
+        },
+        {
+          "curve": 41,
+          "segment": 59,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.5899371446556907e-05,
+          "a": [
+            0.026468994097740506,
+            -0.08259005076251924,
+            1.5462064742459916
+          ],
+          "b": [
+            0.02655688300910697,
+            -0.08272302872501314,
+            1.5443974732770585
+          ]
+        },
+        {
+          "curve": 47,
+          "segment": 65,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.4465407707147113e-05,
+          "a": [
+            0.016437383370430325,
+            0.0043939456809312105,
+            1.551982402743306
+          ],
+          "b": [
+            0.016990570353300427,
+            0.0048786678817123175,
+            1.5500777959241532
+          ]
+        },
+        {
+          "curve": 47,
+          "segment": 116,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.2276729035185386e-05,
+          "a": [
+            0.03595771640721068,
+            0.027227053651586175,
+            1.441628456057515
+          ],
+          "b": [
+            0.036066092552573537,
+            0.02792812162078917,
+            1.4395481347455643
+          ]
+        },
+        {
+          "curve": 64,
+          "segment": 62,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.518238957685201e-05,
+          "a": [
+            0.04178541526380286,
+            -0.06899150437675416,
+            1.541999697627034
+          ],
+          "b": [
+            0.04172898084107146,
+            -0.06869773543439806,
+            1.5399297475232743
+          ]
+        },
+        {
+          "curve": 67,
+          "segment": 60,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.5660375900531454e-05,
+          "a": [
+            0.009706380778879975,
+            -0.09848454571329057,
+            1.5433874129666947
+          ],
+          "b": [
+            0.010002527387769078,
+            -0.09876196808181703,
+            1.5414968728437088
+          ]
+        },
+        {
+          "curve": 67,
+          "segment": 115,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.2515723389117973e-05,
+          "a": [
+            0.017946237700016354,
+            -0.07338999188505113,
+            1.4237487315549515
+          ],
+          "b": [
+            0.01807858422580466,
+            -0.07264557457529008,
+            1.4217218160047196
+          ]
+        },
+        {
+          "curve": 67,
+          "segment": 133,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -8.213836343213621e-06,
+          "a": [
+            0.01842481643143401,
+            -0.06063531688414514,
+            1.3876832723035477
+          ],
+          "b": [
+            0.01824631169620261,
+            -0.060056075220927596,
+            1.3855481147184037
+          ]
+        },
+        {
+          "curve": 88,
+          "segment": 71,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.303144635192305e-05,
+          "a": [
+            -0.03250136226233735,
+            -0.10914422548376024,
+            1.5233156680478714
+          ],
+          "b": [
+            -0.032534804193346645,
+            -0.10870227194391191,
+            1.521308779658284
+          ]
+        },
+        {
+          "curve": 88,
+          "segment": 118,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.1798741519413077e-05,
+          "a": [
+            -0.02441401779469743,
+            -0.08611179864965379,
+            1.4267652034177445
+          ],
+          "b": [
+            -0.024054115636317874,
+            -0.08561663306318223,
+            1.4248455762281083
+          ]
+        },
+        {
+          "curve": 88,
+          "segment": 143,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -5.823899360398507e-06,
+          "a": [
+            -0.022627482188909198,
+            -0.0769974288996309,
+            1.3772633075132035
+          ],
+          "b": [
+            -0.0226747114193131,
+            -0.07703440613113344,
+            1.3751441239728592
+          ]
+        },
+        {
+          "curve": 88,
+          "segment": 155,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.9559748618110827e-06,
+          "a": [
+            -0.022657118735878612,
+            -0.07834711647592485,
+            1.3523453473462723
+          ],
+          "b": [
+            -0.022640474138825084,
+            -0.07850445038639009,
+            1.3502998351468705
+          ]
+        },
+        {
+          "curve": 89,
+          "segment": 62,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.518238957685201e-05,
+          "a": [
+            0.03963317722264037,
+            -0.07562191016040742,
+            1.541752099932637
+          ],
+          "b": [
+            0.039715636523396824,
+            -0.07547492510639131,
+            1.539840102137532
+          ]
+        },
+        {
+          "curve": 100,
+          "segment": 68,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.3748428221627947e-05,
+          "a": [
+            -0.055167824028103496,
+            -0.07508907443843782,
+            1.5244419574155472
+          ],
+          "b": [
+            -0.054916396735279704,
+            -0.07489211834035814,
+            1.522292256297078
+          ]
+        },
+        {
+          "curve": 100,
+          "segment": 135,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -7.735848827441312e-06,
+          "a": [
+            -0.05041145905670419,
+            -0.0457513069268316,
+            1.3797798156156205
+          ],
+          "b": [
+            -0.05060102790412202,
+            -0.04564925632439554,
+            1.3774626254453324
+          ]
+        },
+        {
+          "curve": 101,
+          "segment": 62,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.518238957685201e-05,
+          "a": [
+            -0.01907789707001939,
+            -0.09655837691389024,
+            1.54089152807137
+          ],
+          "b": [
+            -0.019126176832287456,
+            -0.0967425552662462,
+            1.5389319657697342
+          ]
+        },
+        {
+          "curve": 101,
+          "segment": 116,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.2276729035185386e-05,
+          "a": [
+            -0.015811506656973506,
+            -0.07332573807798326,
+            1.4232773780240677
+          ],
+          "b": [
+            -0.01590520515856042,
+            -0.07269709534011781,
+            1.4212232827558182
+          ]
+        },
+        {
+          "curve": 101,
+          "segment": 135,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -7.735848827441312e-06,
+          "a": [
+            -0.02073611318883195,
+            -0.06199668697081506,
+            1.3854624032392167
+          ],
+          "b": [
+            -0.021125858647792484,
+            -0.06152147403918207,
+            1.3833718299283646
+          ]
+        },
+        {
+          "curve": 103,
+          "segment": 73,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.2553457644057875e-05,
+          "a": [
+            -0.037289272991984035,
+            -0.10832826024852693,
+            1.5196119546308182
+          ],
+          "b": [
+            -0.037325821815102245,
+            -0.10787134594283998,
+            1.5176008939160965
+          ]
+        },
+        {
+          "curve": 103,
+          "segment": 119,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.1559748357573355e-05,
+          "a": [
+            -0.02965853363093629,
+            -0.08627289510332048,
+            1.4254404305829667
+          ],
+          "b": [
+            -0.029349524525969173,
+            -0.08578318334184587,
+            1.423522233904805
+          ]
+        },
+        {
+          "curve": 103,
+          "segment": 141,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -6.301886876170816e-06,
+          "a": [
+            -0.02867855317708745,
+            -0.07786530978046358,
+            1.3821887969388627
+          ],
+          "b": [
+            -0.028834495691626216,
+            -0.07781475759111345,
+            1.380066275538411
+          ]
+        },
+        {
+          "curve": 103,
+          "segment": 153,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.4339620795601758e-06,
+          "a": [
+            -0.02927556074973836,
+            -0.07872691727243364,
+            1.3572465180768631
+          ],
+          "b": [
+            -0.029284488407938625,
+            -0.07886887318454683,
+            1.3552082776441239
+          ]
+        },
+        {
+          "curve": 115,
+          "segment": 64,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.4704400868986835e-05,
+          "a": [
+            -0.008386353960304405,
+            -0.0026975073851644993,
+            1.5560158490552567
+          ],
+          "b": [
+            -0.007925680836706306,
+            -0.0023044657427817583,
+            1.5542601346387528
+          ]
+        },
+        {
+          "curve": 115,
+          "segment": 130,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -8.930817616872085e-06,
+          "a": [
+            0.009651515634686803,
+            0.025192573899403214,
+            1.421389222086873
+          ],
+          "b": [
+            0.009562025779814576,
+            0.025803990894928575,
+            1.4194300174131058
+          ]
+        },
+        {
+          "curve": 119,
+          "segment": 61,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.5421382738691732e-05,
+          "a": [
+            0.015859756620557164,
+            -0.09650901681743562,
+            1.5427385568036698
+          ],
+          "b": [
+            0.015783414246470784,
+            -0.09664481854997575,
+            1.54077208036324
+          ]
+        },
+        {
+          "curve": 119,
+          "segment": 115,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.2515723389117973e-05,
+          "a": [
+            0.009490979837210034,
+            -0.07643381482921541,
+            1.4249298571958207
+          ],
+          "b": [
+            0.009554536083669518,
+            -0.07583121187053621,
+            1.422885060252156
+          ]
+        },
+        {
+          "curve": 119,
+          "segment": 137,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -7.257861311669002e-06,
+          "a": [
+            0.006979224273891305,
+            -0.0651488674338907,
+            1.3811266421689652
+          ],
+          "b": [
+            0.006499620621980284,
+            -0.06499564624391496,
+            1.3789640664472245
+          ]
+        },
+        {
+          "curve": 178,
+          "segment": 69,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.3509432675602494e-05,
+          "a": [
+            -0.054503343997566844,
+            -0.07059774524532259,
+            1.5282745360746048
+          ],
+          "b": [
+            -0.05429387464937463,
+            -0.07040358311496675,
+            1.5262123345746659
+          ]
+        },
+        {
+          "curve": 178,
+          "segment": 139,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -6.779873795896693e-06,
+          "a": [
+            -0.05212376266536012,
+            -0.03939886367879808,
+            1.382889270724263
+          ],
+          "b": [
+            -0.052322402594654704,
+            -0.03928132704459131,
+            1.3806550502195023
+          ]
+        },
+        {
+          "curve": 202,
+          "segment": 99,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.6339622323203584e-05,
+          "a": [
+            0.07092205435219512,
+            -0.04980932152830064,
+            1.4652613400830887
+          ],
+          "b": [
+            0.07047106325808272,
+            -0.049077573930844665,
+            1.4631973504438065
+          ]
+        },
+        {
+          "curve": 202,
+          "segment": 112,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.3232704066730005e-05,
+          "a": [
+            0.06654818356219039,
+            -0.04016384086571634,
+            1.4382675885572098
+          ],
+          "b": [
+            0.06663037091675506,
+            -0.0393942107912153,
+            1.4361838101758622
+          ]
+        },
+        {
+          "curve": 202,
+          "segment": 118,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.1798741519413077e-05,
+          "a": [
+            0.06843856722298369,
+            -0.03521262831054628,
+            1.4262434243573807
+          ],
+          "b": [
+            0.06887818128052459,
+            -0.0343561505433172,
+            1.4243474006070755
+          ]
+        },
+        {
+          "curve": 202,
+          "segment": 120,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.1320754003640767e-05,
+          "a": [
+            0.069324754180343,
+            -0.03350005275569856,
+            1.4224735497846268
+          ],
+          "b": [
+            0.0697759836930345,
+            -0.03264575800858438,
+            1.4206192492856644
+          ]
+        },
+        {
+          "curve": 205,
+          "segment": 70,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.3270439513762772e-05,
+          "a": [
+            -0.03609013929781213,
+            -0.1074452770408243,
+            1.5217485427274369
+          ],
+          "b": [
+            -0.03607802465376153,
+            -0.1070267257746309,
+            1.5196857451810502
+          ]
+        },
+        {
+          "curve": 205,
+          "segment": 116,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.2276729035185386e-05,
+          "a": [
+            -0.026589863000481273,
+            -0.08537367708049715,
+            1.424971699656453
+          ],
+          "b": [
+            -0.026293180881111766,
+            -0.08484417176805437,
+            1.4230024814023636
+          ]
+        },
+        {
+          "curve": 205,
+          "segment": 139,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -6.779873795896693e-06,
+          "a": [
+            -0.025458753107159282,
+            -0.0763083768542856,
+            1.3785915374173783
+          ],
+          "b": [
+            -0.025527745483486797,
+            -0.07627902901731431,
+            1.3764066695584916
+          ]
+        },
+        {
+          "curve": 205,
+          "segment": 151,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.911949595332485e-06,
+          "a": [
+            -0.02484458312210336,
+            -0.07754770643077791,
+            1.352998495043721
+          ],
+          "b": [
+            -0.024739325044720317,
+            -0.0777274516876787,
+            1.3509109019651078
+          ]
+        },
+        {
+          "curve": 207,
+          "segment": 68,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.3748428221627947e-05,
+          "a": [
+            -0.04919464513477578,
+            -0.07084908313117921,
+            1.533831596316304
+          ],
+          "b": [
+            -0.04899178072628274,
+            -0.07075275457464159,
+            1.5318213700666092
+          ]
+        }
+      ],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "C": {
+      "status": "FAIL_OR_UNRESOLVED",
+      "curves": 211,
+      "segments": 33549,
+      "unqualifiedSegments": 34,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": -3.354716931472813e-05,
+      "minimumSampledCVSurfaceGapM": 4.119714239553501e-05,
+      "methods": {
+        "lipschitz": 33434,
+        "edge_distance": 79,
+        "centreline_cross": 34,
+        "range_empty": 2
+      },
+      "failureSamples": [
+        {
+          "curve": 38,
+          "segment": 49,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.828930783332559e-05,
+          "a": [
+            0.05381269008103118,
+            -0.07071351981721818,
+            1.5286332368268631
+          ],
+          "b": [
+            0.05401473492565856,
+            -0.07043112046085298,
+            1.5266964434995316
+          ]
+        },
+        {
+          "curve": 38,
+          "segment": 121,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.1081760841801045e-05,
+          "a": [
+            0.05298687517824874,
+            -0.039326842641457915,
+            1.3914250134839676
+          ],
+          "b": [
+            0.05333629995766387,
+            -0.038766216253861785,
+            1.389563322009053
+          ]
+        },
+        {
+          "curve": 41,
+          "segment": 42,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.9962262350389374e-05,
+          "a": [
+            0.026296494530470227,
+            -0.0827974600251764,
+            1.5468022822751664
+          ],
+          "b": [
+            0.02655789256277785,
+            -0.08323866850696504,
+            1.5449109076871537
+          ]
+        },
+        {
+          "curve": 47,
+          "segment": 34,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.187421241347861e-05,
+          "a": [
+            0.013451379725665902,
+            -0.0025767087936401367,
+            1.5544922351255082
+          ],
+          "b": [
+            0.014015845024914597,
+            -0.0022138655185699463,
+            1.5528140067472123
+          ]
+        },
+        {
+          "curve": 47,
+          "segment": 106,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.4666666614046933e-05,
+          "a": [
+            0.030072426425249432,
+            0.02347221621312201,
+            1.4286450147046708
+          ],
+          "b": [
+            0.030055060984523152,
+            0.023969598347321153,
+            1.4269143342389725
+          ]
+        },
+        {
+          "curve": 64,
+          "segment": 39,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.067924422009427e-05,
+          "a": [
+            0.03886588290515647,
+            -0.06843958771787584,
+            1.5441665648831986
+          ],
+          "b": [
+            0.03916609659972892,
+            -0.06884130067192018,
+            1.5423063039197586
+          ]
+        },
+        {
+          "curve": 67,
+          "segment": 52,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.7572325963620692e-05,
+          "a": [
+            0.010007450358898495,
+            -0.09912094450555742,
+            1.541742324770894
+          ],
+          "b": [
+            0.010370132515163277,
+            -0.09941247082315385,
+            1.5398254393949173
+          ]
+        },
+        {
+          "curve": 67,
+          "segment": 113,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.2993710904890283e-05,
+          "a": [
+            0.02051517367544875,
+            -0.0786080805119127,
+            1.4251058101071976
+          ],
+          "b": [
+            0.020579587669999455,
+            -0.07800318277440965,
+            1.4232314824475907
+          ]
+        },
+        {
+          "curve": 67,
+          "segment": 136,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -7.496855069555157e-06,
+          "a": [
+            0.022159602494866704,
+            -0.06513765431009233,
+            1.3818727731122635
+          ],
+          "b": [
+            0.022195754574568127,
+            -0.06470302469097078,
+            1.3799501656903885
+          ]
+        },
+        {
+          "curve": 88,
+          "segment": 54,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.7094339639941248e-05,
+          "a": [
+            -0.033493857828943874,
+            -0.10902194655500352,
+            1.5232771634473465
+          ],
+          "b": [
+            -0.03367147594508424,
+            -0.10879338509403169,
+            1.5214203595533036
+          ]
+        },
+        {
+          "curve": 88,
+          "segment": 141,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -6.301886876170816e-06,
+          "a": [
+            -0.037703104315369274,
+            -0.07606289512477815,
+            1.3632961511029862
+          ],
+          "b": [
+            -0.03784510865625634,
+            -0.07608704245649278,
+            1.361420035304036
+          ]
+        },
+        {
+          "curve": 89,
+          "segment": 44,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.948427602670993e-05,
+          "a": [
+            0.039882004262835835,
+            -0.07705989456735551,
+            1.5398910045041703
+          ],
+          "b": [
+            0.0402415245789598,
+            -0.07712368643842638,
+            1.5379402636899613
+          ]
+        },
+        {
+          "curve": 100,
+          "segment": 57,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.637735777023635e-05,
+          "a": [
+            -0.05592407285985246,
+            -0.07606359547935426,
+            1.5220888852491044
+          ],
+          "b": [
+            -0.05584796890434518,
+            -0.07587370998226106,
+            1.5200916528119706
+          ]
+        },
+        {
+          "curve": 100,
+          "segment": 125,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.0125785810256426e-05,
+          "a": [
+            -0.05281807482060685,
+            -0.046755693620070815,
+            1.389790773333516
+          ],
+          "b": [
+            -0.053203102199404384,
+            -0.046186081832274795,
+            1.3879022597684525
+          ]
+        },
+        {
+          "curve": 101,
+          "segment": 49,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.828930783332559e-05,
+          "a": [
+            -0.018543103707997943,
+            -0.09579900628887117,
+            1.5416517257108353
+          ],
+          "b": [
+            -0.01869099773284688,
+            -0.0962210965808481,
+            1.5396724938764237
+          ]
+        },
+        {
+          "curve": 101,
+          "segment": 108,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.4188679098274624e-05,
+          "a": [
+            -0.01119787059542432,
+            -0.07673259056173265,
+            1.4244073628797196
+          ],
+          "b": [
+            -0.011268298139839317,
+            -0.0762037334498018,
+            1.422449588717427
+          ]
+        },
+        {
+          "curve": 101,
+          "segment": 130,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -8.930817616872085e-06,
+          "a": [
+            -0.01464995462265506,
+            -0.06479351944290102,
+            1.3815166949643753
+          ],
+          "b": [
+            -0.014809940939812805,
+            -0.06433907872997224,
+            1.37954378122231
+          ]
+        },
+        {
+          "curve": 103,
+          "segment": 56,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.6616350932076073e-05,
+          "a": [
+            -0.03801775350984826,
+            -0.10862614191137254,
+            1.5192854403867386
+          ],
+          "b": [
+            -0.038217563180296565,
+            -0.10832482553087175,
+            1.517412900866475
+          ]
+        },
+        {
+          "curve": 103,
+          "segment": 137,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -7.257861311669002e-06,
+          "a": [
+            -0.04194584861215844,
+            -0.07618716335855424,
+            1.3684946298017167
+          ],
+          "b": [
+            -0.04206509142932191,
+            -0.07613298273645341,
+            1.3665925263776444
+          ]
+        },
+        {
+          "curve": 115,
+          "segment": 27,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.354716931472813e-05,
+          "a": [
+            -0.006685830185233499,
+            -0.008157186908647418,
+            1.557250261248555
+          ],
+          "b": [
+            -0.006388139909176971,
+            -0.007937724469229579,
+            1.5554814338102005
+          ]
+        },
+        {
+          "curve": 115,
+          "segment": 109,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.3949684744342036e-05,
+          "a": [
+            0.007201889997304534,
+            0.021174378925934434,
+            1.4132034778012894
+          ],
+          "b": [
+            0.0070662372763763415,
+            0.02178500429727137,
+            1.4115035533322953
+          ]
+        },
+        {
+          "curve": 115,
+          "segment": 151,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.911949595332485e-06,
+          "a": [
+            0.0055216723139892565,
+            0.02798879356123507,
+            1.3398209809674881
+          ],
+          "b": [
+            0.0056780143659125315,
+            0.0275655968580395,
+            1.3380724191083573
+          ]
+        },
+        {
+          "curve": 119,
+          "segment": 44,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.948427602670993e-05,
+          "a": [
+            0.01523353625270829,
+            -0.09382177866064012,
+            1.5442626475705765
+          ],
+          "b": [
+            0.015357338825197075,
+            -0.09438965446315706,
+            1.542484283389058
+          ]
+        },
+        {
+          "curve": 119,
+          "segment": 109,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.3949684744342036e-05,
+          "a": [
+            0.01592669077399478,
+            -0.07731220847927034,
+            1.4246507882489823
+          ],
+          "b": [
+            0.015923401342661236,
+            -0.07687616324983537,
+            1.422830700816121
+          ]
+        },
+        {
+          "curve": 119,
+          "segment": 133,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -8.213836343213621e-06,
+          "a": [
+            0.017004724593789433,
+            -0.06520617729984224,
+            1.3814247846021317
+          ],
+          "b": [
+            0.01705741323712573,
+            -0.0647647303994745,
+            1.3796055316342972
+          ]
+        },
+        {
+          "curve": 178,
+          "segment": 52,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.7572325963620692e-05,
+          "a": [
+            -0.05393096431907907,
+            -0.07210574275813997,
+            1.5274747609510086
+          ],
+          "b": [
+            -0.05386025830921426,
+            -0.07193835056386888,
+            1.5254369973554276
+          ]
+        },
+        {
+          "curve": 178,
+          "segment": 126,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -9.886792052370271e-06,
+          "a": [
+            -0.051796823738186504,
+            -0.03961821994744241,
+            1.381170749606099
+          ],
+          "b": [
+            -0.05213402584013238,
+            -0.03907978511415422,
+            1.3792281150235794
+          ]
+        },
+        {
+          "curve": 202,
+          "segment": 101,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.5861634807431274e-05,
+          "a": [
+            0.07111398875895247,
+            -0.04849871969781816,
+            1.4354168176068924
+          ],
+          "b": [
+            0.07101911306563125,
+            -0.04795081517659128,
+            1.4334037303342484
+          ]
+        },
+        {
+          "curve": 202,
+          "segment": 102,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.5622641645591552e-05,
+          "a": [
+            0.07101911306563125,
+            -0.04795081517659128,
+            1.4334037303342484
+          ],
+          "b": [
+            0.07100993395033584,
+            -0.04740196815691888,
+            1.431389927805867
+          ]
+        },
+        {
+          "curve": 202,
+          "segment": 106,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.4666666614046933e-05,
+          "a": [
+            0.07160399854365096,
+            -0.04563803947530687,
+            1.4254195689572953
+          ],
+          "b": [
+            0.0719463601726602,
+            -0.04501067451201379,
+            1.4234603642835282
+          ]
+        },
+        {
+          "curve": 202,
+          "segment": 113,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.2993710904890283e-05,
+          "a": [
+            0.07467295974674926,
+            -0.041088189696893096,
+            1.4118911027326249
+          ],
+          "b": [
+            0.07518968731346831,
+            -0.04042251757346094,
+            1.4099797009839676
+          ]
+        },
+        {
+          "curve": 205,
+          "segment": 56,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.6616350932076073e-05,
+          "a": [
+            -0.03813105821427598,
+            -0.10750842071138322,
+            1.5194085835828446
+          ],
+          "b": [
+            -0.03830904885944619,
+            -0.10722337639890611,
+            1.517533898295369
+          ]
+        },
+        {
+          "curve": 205,
+          "segment": 137,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -7.257861311669002e-06,
+          "a": [
+            -0.042081061748831416,
+            -0.0755413246806711,
+            1.3685954808606766
+          ],
+          "b": [
+            -0.042168352751104976,
+            -0.0754580122884363,
+            1.3666932582273148
+          ]
+        },
+        {
+          "curve": 207,
+          "segment": 50,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.8050314671485867e-05,
+          "a": [
+            -0.048461973665325786,
+            -0.07212927169166505,
+            1.5352746247663163
+          ],
+          "b": [
+            -0.0484696887415339,
+            -0.07213843590579927,
+            1.5333384274854325
+          ]
+        }
+      ],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "B": {
+      "status": "STOP_INVALID_RADIAL_CHART_DOMAIN_NO_FULL_CANDIDATE",
+      "firstFailure": {
+        "initialWholeBodyChartFailure": {
+          "sourceGuidePointM": [
+            -0.1296936377669269,
+            -0.004038768347564259,
+            1.339479649838997
+          ],
+          "radialExteriorOffsetM": -0.0896446490864928
+        },
+        "reason": "A fully exterior authored guide was behind the outer whole-body radial envelope because a distant shoulder/arm lies on the same ray. All29source guides separately passed actual whole-body finite capsules. Whole-body radial visibility is an invalid coordinate assumption, not a proven guide penetration.",
+        "coordinateDomain": "Actual existing head/upper-neck triangles with all three vertices worldZ>=1.38m; open patch, no invented cap/hull. Every query must hit; every original guide must have nonnegative exterior offset and roundtrip.",
+        "chartTriangles": 398546,
+        "independentContactDomain": "All1,354,880actual evaluated body triangles, unchanged. No arm/shoulder contact exclusions, no root movement, no offset clamping or tolerance relaxation."
+      },
+      "finalFailure": {
+        "message": "Radial chart misses actual body",
+        "azimuthRadians": 0.6351525329500516,
+        "elevationRadians": -0.9047996137911378,
+        "cause": "Interpolated free-length directions leave the open head/upper-neck chart. Do not extend the chart with fabricated caps, clamp clearances, omit failed roots or claim whole-path validity."
+      },
+      "nativeCandidateProduced": false,
+      "sourceGuidesAndRootsUnchanged": true
+    },
+    "primary29Body": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 29,
+      "segments": 4611,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 2.499716344263545e-06,
+      "minimumSampledCVSurfaceGapM": 0.00013993788161315024,
+      "methods": {
+        "lipschitz": 4605,
+        "edge_distance": 6
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "primary29OtherMeshes": {
+      "AFN30_L_Sclera": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.05206532205209957,
+        "minimumSampledCVSurfaceGapM": 0.05281046382948953,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN30_L_Cornea": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.05856825869357149,
+        "minimumSampledCVSurfaceGapM": 0.05930189708397592,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN30_L_Iris": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.05872692812060873,
+        "minimumSampledCVSurfaceGapM": 0.05946251297519411,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN30_L_Pupil": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.061491372918839854,
+        "minimumSampledCVSurfaceGapM": 0.06222450280711855,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN30_R_Sclera": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.051600618151622195,
+        "minimumSampledCVSurfaceGapM": 0.052412260647341516,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN30_R_Cornea": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.05560341384492974,
+        "minimumSampledCVSurfaceGapM": 0.05642032598190604,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN30_R_Iris": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.055896910841094063,
+        "minimumSampledCVSurfaceGapM": 0.05671475802593528,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN30_R_Pupil": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.05881278310202222,
+        "minimumSampledCVSurfaceGapM": 0.05962967474990188,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN37_L_upper_WetMargin": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.05353792371914612,
+        "minimumSampledCVSurfaceGapM": 0.05426817307398523,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN37_L_lower_WetMargin": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.055156860719200174,
+        "minimumSampledCVSurfaceGapM": 0.05590685864612053,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN37_L_Caruncle": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.0740592208859877,
+        "minimumSampledCVSurfaceGapM": 0.07480167145059313,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN37_R_upper_WetMargin": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.05126289930425744,
+        "minimumSampledCVSurfaceGapM": 0.05207281907134353,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN37_R_lower_WetMargin": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.05271612514457471,
+        "minimumSampledCVSurfaceGapM": 0.053530669026878155,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN37_R_Caruncle": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.07142657115939881,
+        "minimumSampledCVSurfaceGapM": 0.07224176311546876,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN37_L_upper_Lashes": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.05211493085896532,
+        "minimumSampledCVSurfaceGapM": 0.05285185810492846,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN37_L_lower_Lashes": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.05540321975457291,
+        "minimumSampledCVSurfaceGapM": 0.056151058875765304,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN37_R_upper_Lashes": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.04961495734635616,
+        "minimumSampledCVSurfaceGapM": 0.050428973973336955,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "AFN37_R_lower_Lashes": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 29,
+        "segments": 4611,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.052024070811225676,
+        "minimumSampledCVSurfaceGapM": 0.05283662136724261,
+        "methods": {
+          "lipschitz": 4611
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      }
+    },
+    "limits": "Static source roots and29sampled full POLY primary paths only. Not all24kchild paths,not between-sample continuous Bezier paths,not hair-self or dynamic contacts.",
+    "distanceDefinitions": "Sampled unsigned CV surface gaps and certified capsule lower bounds are recorded separately; positive unsigned CV gaps do not rule out inside CVs or intervening crossings."
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "cpuGpuMemory": null
+  },
+  "historyAccountability": "A was not a new solution to root-frame copying: same stopped mechanism recurred on own same-head guides and is rejected. Do not relabel it as a successful new method. B geometric-domain failure is distinct from its earlier invalid full-body radial visibility assumption.",
+  "stoppedThisRound": [
+    "Root-normal rigid complete-guide interpolation as safe dense hair",
+    "Whole free-length exterior radial chart reconstruction on open head patch",
+    "Per-root world-space free-knot interpolation as safe dense hair"
+  ],
+  "nextAction": "Keep r42B as one complete working character and r48 anatomical-authoring-retained only as integrated research with exact unchanged appearance. R48A root-frame complete-path interpolation repeats the already-stopped failure mechanism and is rejected (38actual saved body crossings); R48C per-root world-control spline interpolation also fails (34crossings); B radial chart fails domain coverage, no complete hairstyle expanded. Stop these sparse whole-path/root-frame/radial/control-interpolation routes as production grooms; do not densify or move roots to hide them. Retain an INITIAL current-skin scalp region (sideburn/temple and low nape coverage remain incomplete),24000static body triangle/barycentric root anchors and29own editable primary controls; they do NOT form an accepted dense hairstyle or dynamics rig. NEXT actual production should reassess complete r42B face and switch from failed hair interpolation to its flat/waxy skin response: inspect current Principled material scattering scale/roughness and existing packed CC0 pigment, choose one physically grounded material change, then render complete fixed-exposure head/body A/B plus other light/angles. Preserve albedo/exposure while testing scattering response; no artificial skin-darkening or vendor-search/tool-only round. Existing hairline/guide authoring is available for later direct sculpt/comb work but no general sparse-child solver is qualified. Expressive eyes,credible hair,oral/body/clothes rig,hair dynamics,all-layer continuous/self contacts,actual engine LOD/CPU/GPU/memory,weighted85each80 and female acceptance remain incomplete."
+}

@@ -1,0 +1,14 @@
+{
+  "initialWholeBodyChartFailure": {
+    "sourceGuidePointM": [
+      -0.1296936377669269,
+      -0.004038768347564259,
+      1.339479649838997
+    ],
+    "radialExteriorOffsetM": -0.0896446490864928
+  },
+  "reason": "A fully exterior authored guide was behind the outer whole-body radial envelope because a distant shoulder/arm lies on the same ray. All29source guides separately passed actual whole-body finite capsules. Whole-body radial visibility is an invalid coordinate assumption, not a proven guide penetration.",
+  "coordinateDomain": "Actual existing head/upper-neck triangles with all three vertices worldZ>=1.38m; open patch, no invented cap/hull. Every query must hit; every original guide must have nonnegative exterior offset and roundtrip.",
+  "chartTriangles": 398546,
+  "independentContactDomain": "All1,354,880actual evaluated body triangles, unchanged. No arm/shoulder contact exclusions, no root movement, no offset clamping or tolerance relaxation."
+}

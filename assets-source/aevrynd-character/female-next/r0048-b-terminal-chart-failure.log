@@ -1,0 +1,21 @@
+00:00.641  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0042-b-shadow-quality-review.blend"
+R48_RADIAL 0 182 4800 0.14601373672485352
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0048-radial-chart-groom.py", line 50, in <module>
+    if __name__=='__main__':a.main()
+                            ~~~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0048-anatomical-groom.py", line 104, in main
+    pilotids=np.array(sorted(set(pilotids)),dtype='i4');which=np.arange(COUNT)if full else pilotids;P,lineage=followers(roots,normals,G,GN,which);rad=np.broadcast_to(np.linspace(.00004,.000002,N),(len(P),N)).copy()
+                                                                                                              ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0048-radial-chart-groom.py", line 44, in followers
+    r,d=exterior(float(ph),float(th));P.append(a.C+d*(r+h))
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0048-radial-chart-groom.py", line 26, in exterior
+    if hit is None:raise ValueError(('Radial chart misses actual body',az,el))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: ('Radial chart misses actual body', 0.6351525329500516, -0.9047996137911378)
+
+Error: script failed, file: 'scripts/character-next/build-female-next-r0048-radial-chart-groom.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
