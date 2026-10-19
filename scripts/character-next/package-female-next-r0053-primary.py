@@ -143,6 +143,7 @@ def main():
     for src in sorted((R/'scripts/character-next').glob('*female-next-r0053*.py')):cp(src,REPO/'scripts/character-next'/src.name)
     for src in sorted((R/'Evidence').glob('character-female-next-r0053-*.log')):cp(src,M/src.name)
     for src in sorted((R/'Evidence').glob('character-female-next-r0053-*.err')):cp(src,M/src.name)
+    files.extend([M/'.gitattributes',REPO/'scripts/character-next/.gitattributes'])
     write(E/'history-file-manifest.json',{'revision':'female-next-r0053','files':[{'path':str(p.relative_to(REPO)).replace('\\','/'),'bytes':p.stat().st_size,'sha256':sha(p)} for p in files]})
     cp(E/'history-file-manifest.json',M/'r0053-history-file-manifest.json')
     write(E/'git-paths.json',sorted(str(p.relative_to(REPO)).replace('\\','/') for p in files))

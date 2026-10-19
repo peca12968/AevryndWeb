@@ -1,0 +1,6 @@
+# Preserve exact r53 evidence bytes, including line endings, for SHA-256 audits.
+.gitattributes -text
+r0053-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0053-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+character-female-next-r0053-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+female-next.asset.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
