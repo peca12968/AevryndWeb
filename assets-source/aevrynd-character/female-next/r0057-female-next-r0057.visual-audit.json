@@ -1,0 +1,138 @@
+{
+  "revision": "female-next-r0057",
+  "reviewUTC": "2026-10-19T21:46:03.144953+00:00",
+  "decision": "RETAIN_COHERENT_FOUNDATION_DATA_ONLY_REJECT_CURRENT_HEAD_GROOM",
+  "productionScope": "New coherent full-body foundation study; existing working r51 not replaced. A/B/C/D are integration/bug-repair snapshots of one data-source hypothesis, not four independent aesthetic methods.",
+  "appearance": {
+    "status": "PARTIAL_FACE_AND_MATERIAL_BENEFIT_WHOLE_CHARACTER_NOT_ACCEPTED",
+    "appearanceImprovement": false,
+    "wholeCharacterScore": null,
+    "regionalObservations": [
+      "Canonical head/female morph/UV/skin remain coherent; face/nose/lip contours and surface variation are more useful as a realistic foundation than repeated incompatible fitting.",
+      "D source-alpha eye mask improves A appearance, native brows/lashes are independently editable. Eyes remain dark/approximate; not optically accepted.",
+      "Full head and back expose sparse fibres and an unfinished hairline; no convincing complete hairstyle.",
+      "Compared with working r51, the body source and arm rest pose differ. No controlled same-pose whole-body superiority claim.",
+      "Skin and geometry changed together; no isolated skin-only benefit or skin brightness score claimed."
+    ],
+    "sameConditionAtoD": true,
+    "headBodyMultiangleSecondLight": true,
+    "completeCharacterGaps": [
+      "Hair",
+      "component separation",
+      "rig and facial control",
+      "clothing",
+      "static and continuous contacts",
+      "engine/LOD/performance"
+    ]
+  },
+  "function": {
+    "status": "REOPENED_PORTABLE_DATA_FOUNDATION_ONLY",
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0057-d-portable-native-foundation.blend",
+    "sourceSha256": "318f0e2f18584be23ba1dc11c59e924c1719bb6768e40c3c3a65e66f1c81e34f",
+    "sourceTopologyVertices": 37436,
+    "sourceTopologyPolygons": 37422,
+    "nativeHairObjects": [
+      {
+        "object": "AFN57_NATIVE_LASHES",
+        "curves": 412,
+        "points": 6998,
+        "pointDataExact": true,
+        "radiiExact": true,
+        "worldMatrixExact": true
+      },
+      {
+        "object": "AFN57_NATIVE_BROWS",
+        "curves": 2140,
+        "points": 76204,
+        "pointDataExact": true,
+        "radiiExact": true,
+        "worldMatrixExact": true
+      }
+    ],
+    "images": {
+      "count": 15,
+      "relativePathsVerified": true,
+      "bytes": 56567150
+    },
+    "legacyParticleSystems": 0,
+    "surfaceDeformModifiers": 0,
+    "externalLibraries": [],
+    "originalEmbeddedCodeImported": false,
+    "reopenVerification": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0057-coherent-foundation\\d-reopened-verification.json",
+    "renderTerminal": "D build/render and separate verifier normal exit0. A/B/C unsafe snapshots are archival only.",
+    "limits": "Body, eye and oral roles remain in one mesh. No accepted rig, motion, cloth, full layer structure or export."
+  },
+  "contact": {
+    "status": "FAIL_OR_UNRESOLVED",
+    "bodyScope": "All3720 head-guide POLY capsules against actual render-level body (1197504triangles), neutral source A-pose, full finite segments and radii.",
+    "unqualifiedSegments": 133,
+    "rootFailures": 11,
+    "reportedFailureSampleMethods": {
+      "centreline_cross": 110,
+      "edge_distance": 10
+    },
+    "numericalAllowanceM": 1e-06,
+    "minimumCertifiedClearanceLowerBoundM": -4.922617295089046e-05,
+    "minimumSampledCVSurfaceGapM": -4.029620099610517e-05,
+    "distanceWarning": "Conservative lower bounds/sample minima are not exact global signed penetration depths. Centreline-cross reports establish actual intersections.",
+    "unaccepted": "Guide self, native facial-hair/tissue, body self, other poses, all continuous dynamics. No zero-collision claim."
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "actualRenderBodyVertices": 598778,
+    "actualRenderBodyTriangles": 1197504,
+    "instrumentedEngineCPU_GPU_Memory": null
+  },
+  "research": {
+    "purpose": "Coherent canonical female geometry/UV/skin and editable native facial-hair foundation for a full character; same-index native morphs can support future genuine articulation.",
+    "scope": "Data-only source + relative local textures; static canonical female1. No platform/addon dependency.",
+    "blocker": "Existing Bob guide roots/paths fail actual source-body contacts. Layers, controls, clothing, dynamics and runtime remain incomplete.",
+    "minimumIntegrationStep": "First independently identify original hair-library emitter/pose and authored guide storage. Check actual source follicles and paths against that emitter before transferring anything; reject if incompatible rather than repeat nearest-root/source-target fits. Preserve D coherent body/UV/facial data. One bounded authoring pilot must deliver a readable full-head hairstyle before children/contact expansion."
+  },
+  "nativeFaultEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0057-coherent-foundation\\native-fault-correction.json",
+  "sourceLicense": "CC0 data per pinned upstream config, credits retained. No exclusive ownership claim; addon code is separate and not installed/copied.",
+  "sources": [
+    {
+      "file": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0056-a-target-native-comb.blend",
+      "sha256": "9e10660337c801b69ecc2c177c70ea809d758724f4b85c29128435a15f43dbde",
+      "bytes": 46742929,
+      "summary": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0056-target-native-comb\\a-build-summary.json"
+    },
+    {
+      "file": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0056-b-pilot-target-native-comb.blend",
+      "sha256": "814b7f2d265bdabaedd5e0f59629b4dd08003189a2c550ea30ca3c5c437ad129",
+      "bytes": 46677121,
+      "summary": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0056-target-native-comb\\b-pilot-build-summary.json"
+    },
+    {
+      "file": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0057-a-coherent-female-foundation.blend",
+      "sha256": "7cc6038af7013527c9b89a6e0c310f63a086ad68e009901b7cae3551afa70e36",
+      "bytes": 8228949,
+      "summary": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0057-coherent-foundation\\a-build-summary.json"
+    },
+    {
+      "file": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0057-b-native-facial-hair-foundation.blend",
+      "sha256": "47534e3ab6e57e6d120d93bf7b3c7043383270b42ebd4e32e842070567f970bd",
+      "bytes": 32291640,
+      "summary": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0057-coherent-foundation\\b-build-summary.json"
+    },
+    {
+      "file": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0057-c-clean-native-foundation.blend",
+      "sha256": "58a804e8606bf99d2ef04bbb8f7d8c8bd8356afe33ee758162bb2bcf36bbbdc8",
+      "bytes": 5168885,
+      "summary": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0057-coherent-foundation\\c-build-summary.json"
+    },
+    {
+      "file": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0057-d-portable-native-foundation.blend",
+      "sha256": "318f0e2f18584be23ba1dc11c59e924c1719bb6768e40c3c3a65e66f1c81e34f",
+      "bytes": 3843157,
+      "summary": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0057-coherent-foundation\\d-build-summary.json"
+    },
+    {
+      "file": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0056-a-recovered-native-comb.blend",
+      "sha256": "e010583ec128c32970e82d13fcc8f19d6b69d0212d82f41ea0d03cae69a11be7",
+      "bytes": 46743210,
+      "scope": "Immutable recovered terminal snapshot; original job failed 63/64 changed assumption."
+    }
+  ]
+}

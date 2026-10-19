@@ -1,0 +1,88 @@
+{
+  "revision": "female-next-r0056",
+  "reviewUTC": "2026-10-19T21:46:03.144953+00:00",
+  "decision": "REJECT_NORMAL_SEED_AUTOMATIC_COMB_GROOM",
+  "appearance": {
+    "status": "REJECTED",
+    "appearanceImprovement": false,
+    "wholeCharacterScore": null,
+    "observations": [
+      "A remains radially spiked with local zigzags after 256 strokes.",
+      "B whole-curve physical brush coverage removes the local-only explanation but seven guides still form crown hooks and outward arches.",
+      "Actual fine curves and 0.7mm diagnostic paths are distinct; neither is a completed hairstyle."
+    ],
+    "headBodyMultiangleSecondLight": true
+  },
+  "function": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0056-a-target-native-comb.blend",
+      "sourceSha256": "9e10660337c801b69ecc2c177c70ea809d758724f4b85c29128435a15f43dbde",
+      "reopened": true,
+      "originalBodyOtherMeshesSkinMaterialsStageAndOriginalHairDataExact": true,
+      "nativeStoredVsEvaluatedPositionsAndRadiiExact": true,
+      "rootPositionsAndRadiiExact": true,
+      "actualBodyBarycentricRootMaximumErrorM": 5.759977901300823e-08,
+      "actualBodyUVFloat32BitExact": true,
+      "curveCount": 64,
+      "pointsPerCurve": 128,
+      "segmentLengthRangeM": [
+        0.0007556355867486728,
+        0.001977612563595577
+      ],
+      "arclengthRatioRange": [
+        0.9999956952133976,
+        1.0000054839548715
+      ],
+      "bodyCapsules": {
+        "status": "NOT_RUN_AFTER_VISUAL_REJECTION"
+      },
+      "masterSelfCapsules": {
+        "status": "NOT_RUN_AFTER_VISUAL_REJECTION"
+      },
+      "otherMeshesDynamicsRuntime": "NOT_ACCEPTED",
+      "seconds": 5.592291831970215
+    },
+    "bPilot": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0056-b-pilot-target-native-comb.blend",
+      "sourceSha256": "814b7f2d265bdabaedd5e0f59629b4dd08003189a2c550ea30ca3c5c437ad129",
+      "reopened": true,
+      "originalBodyOtherMeshesSkinMaterialsStageAndOriginalHairDataExact": true,
+      "nativeStoredVsEvaluatedPositionsAndRadiiExact": true,
+      "rootPositionsAndRadiiExact": true,
+      "actualBodyBarycentricRootMaximumErrorM": 5.10740991619429e-08,
+      "actualBodyUVFloat32BitExact": true,
+      "curveCount": 7,
+      "pointsPerCurve": 128,
+      "segmentLengthRangeM": [
+        0.0005484439689552053,
+        0.00204330536691881
+      ],
+      "arclengthRatioRange": [
+        0.9940054058022735,
+        1.0000060536807214
+      ],
+      "bodyCapsules": {
+        "status": "NOT_RUN_AFTER_VISUAL_REJECTION"
+      },
+      "masterSelfCapsules": {
+        "status": "NOT_RUN_AFTER_VISUAL_REJECTION"
+      },
+      "otherMeshesDynamicsRuntime": "NOT_ACCEPTED",
+      "seconds": 5.146129846572876
+    },
+    "terminalCorrection": "A final changed-count invariant required64 but63 changed. Recovery proves original body/meshes/materials/stage unchanged. This is not evidence of a body-state failure."
+  },
+  "contact": {
+    "status": "NOT_RUN_AFTER_VISUAL_REJECTION"
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED"
+  },
+  "research": {
+    "purpose": "Reusable native grooming automation and actual follicle/UV readback tools only.",
+    "scope": "Exact retained64 source roots; no accepted paths or children.",
+    "blocker": "No believable complete head silhouette from either Comb construction.",
+    "minimumIntegrationStep": "None for rejected paths. API/root tools may support a different authoring method."
+  },
+  "stoppedMethod": "Normal seeds shaped by automatic local or broad Comb strokes. Do not sweep brush size/strength/direction/stroke count or generate children to conceal the structural failure."
+}

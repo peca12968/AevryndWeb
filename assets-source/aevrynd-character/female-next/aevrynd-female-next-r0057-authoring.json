@@ -1,0 +1,15 @@
+{
+  "revision": "female-next-r0057",
+  "adopted": false,
+  "decision": "RETAIN_COHERENT_FOUNDATION_DATA_ONLY_REJECT_CURRENT_HEAD_GROOM",
+  "completeWorkingSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0051-b-integrated-eye-wall.blend",
+  "completeWorkingSha256": "b86f7eeedf6fd6a4d9a7f13ff42dc4051907516bc90be8261f02e7678242a3ff",
+  "evidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0057-coherent-foundation\\female-next-r0057.visual-audit.json",
+  "research": {
+    "purpose": "Coherent canonical female geometry/UV/skin and editable native facial-hair foundation for a full character; same-index native morphs can support future genuine articulation.",
+    "scope": "Data-only source + relative local textures; static canonical female1. No platform/addon dependency.",
+    "blocker": "Existing Bob guide roots/paths fail actual source-body contacts. Layers, controls, clothing, dynamics and runtime remain incomplete.",
+    "minimumIntegrationStep": "First independently identify original hair-library emitter/pose and authored guide storage. Check actual source follicles and paths against that emitter before transferring anything; reject if incompatible rather than repeat nearest-root/source-target fits. Preserve D coherent body/UV/facial data. One bounded authoring pilot must deliver a readable full-head hairstyle before children/contact expansion."
+  },
+  "nextAction": "First independently identify original hair-library emitter/pose and authored guide storage. Check actual source follicles and paths against that emitter before transferring anything; reject if incompatible rather than repeat nearest-root/source-target fits. Preserve D coherent body/UV/facial data. One bounded authoring pilot must deliver a readable full-head hairstyle before children/contact expansion. Do not reuse r56normal-seed Comb, rejected r55fits, or r57unqualified paths as accepted masters. Same-source FACS/rig data may support subsequent actual blink/oral articulation, but is not implemented. Keep r51 fallback; no runtime/website replacement or male work."
+}

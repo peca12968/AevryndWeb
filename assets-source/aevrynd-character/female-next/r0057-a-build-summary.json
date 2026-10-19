@@ -1,0 +1,99 @@
+{
+  "revision": "female-next-r0057",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0057-a-coherent-female-foundation.blend",
+  "outputSha256": "7cc6038af7013527c9b89a6e0c310f63a086ad68e009901b7cae3551afa70e36",
+  "sourceCanonical": {
+    "output": "D:\\Download\\Aevrynd\\Reference\\character\\charmorph-vitruvian-cc0\\canonical-female-data.blend",
+    "sha256": "fcccc34c05b46276aac32504a428b7a3c0faca2164ebb36180714ae5bc265c38",
+    "vertices": 37436,
+    "femaleHeadMaximumDisplacementM": 0.006396719152144184,
+    "particleSystems": [
+      {
+        "name": "Eyelashes",
+        "type": "HAIR",
+        "count": 0,
+        "children": "SIMPLE",
+        "renderedChildren": 4,
+        "hairLength": 0.0,
+        "hairStep": 5,
+        "material": 6,
+        "rootRadius": 0.0012000000569969416,
+        "tipRadius": 0.0012000000569969416,
+        "radiusScale": 0.010999999940395355,
+        "particlesInFile": 412
+      },
+      {
+        "name": "mind_eyebrows_11_Default",
+        "type": "HAIR",
+        "count": 0,
+        "children": "NONE",
+        "renderedChildren": 100,
+        "hairLength": 4.0,
+        "hairStep": 5,
+        "material": 6,
+        "rootRadius": 0.001500000013038516,
+        "tipRadius": 0.001500000013038516,
+        "radiusScale": 0.009999999776482582,
+        "particlesInFile": 2140
+      }
+    ],
+    "basisSHA256": "88f288ccd5dddbfbde440993eeb120967e0b5702579c300548cd35ca985a42c4",
+    "femaleMorphSHA256": "883839f31ebd0a8454bbae1e5a15ec767ba86741a0b51194f0527bb1b74e34a7",
+    "activeUV": "VitruvianUV.UDIM",
+    "removedEmbeddedTexts": true,
+    "newFemaleControl": "AFN57_Supplied_Female_Morph"
+  },
+  "previousGoalTurnClassification": "progress: r56target-native local/full-curve Comb pilots rejected; root/body integrity preserved but no natural full hair form.",
+  "mainHypothesis": "A character whose head, female morph, eye/oral geometry, UV/skin data and hair share one canonical source is a more useful complete foundation than repeated incompatible fitting.",
+  "sourceBodyVertices": 37436,
+  "sourceBodyPolygons": 37422,
+  "uniformSceneScale": 0.8950213095266025,
+  "sceneTranslationM": [
+    0.0,
+    -0.06730997562408447,
+    0.0
+  ],
+  "suppliedFemaleMorphValue": 1,
+  "nativeBrowAndLashSystems": [
+    {
+      "name": "Eyelashes",
+      "type": "HAIR",
+      "count": 0,
+      "children": "SIMPLE",
+      "renderedChildren": 4,
+      "hairLength": 0.0,
+      "hairStep": 5,
+      "material": 6,
+      "rootRadius": 0.0012000000569969416,
+      "tipRadius": 0.0012000000569969416,
+      "radiusScale": 0.010999999940395355,
+      "particlesInFile": 412
+    },
+    {
+      "name": "mind_eyebrows_11_Default",
+      "type": "HAIR",
+      "count": 0,
+      "children": "NONE",
+      "renderedChildren": 100,
+      "hairLength": 4.0,
+      "hairStep": 5,
+      "material": 6,
+      "rootRadius": 0.001500000013038516,
+      "tipRadius": 0.001500000013038516,
+      "radiusScale": 0.009999999776482582,
+      "particlesInFile": 2140
+    }
+  ],
+  "hairGuides": 248,
+  "hairPointsPerGuide": 16,
+  "hairFemaleMorphMaximumPointShiftM": 0.004965642001479864,
+  "bodyUV": "VitruvianUV.UDIM",
+  "shaderScope": "Own PBR/SSS nodes from source linear colour/roughness/height data. Existing owned one-interface cornea reused on a normal-defined cap of original combined eye geometry; approximate look-dev, not complete eye optical acceptance.",
+  "stageUnchanged": true,
+  "textureDerivatives": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0057-coherent-foundation\\texture-derivatives.json",
+  "textureExternalRelativePaths": true,
+  "contact": "NOT_TESTED_PENDING_COMPLETE_APPEARANCE_REVIEW",
+  "rigClothesDynamicsRuntime": "NOT_QUALIFIED",
+  "status": "COHERENT_COMPLETE_BODY_FOUNDATION_PENDING_VISUAL_REVIEW",
+  "seconds": 1.3576140403747559
+}

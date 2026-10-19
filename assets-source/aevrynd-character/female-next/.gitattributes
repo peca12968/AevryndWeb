@@ -10,3 +10,12 @@ aevrynd-female-next-r005[45]-* -text whitespace=blank-at-eol,blank-at-eof,space-
 character-female-next-r005[45]-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # Unmodified upstream provenance text retains its original whitespace.
 r0055-reference-* -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+
+# Preserve exact r56/r57 study, evidence and resource bytes.
+r005[67]-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r005[67]-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+character-female-next-r005[67]-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0057-reference-* -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+study-vitruvian-textures/*.exr -text
+# Raw terminal logs retain diagnostic whitespace byte for byte.
+character-female-next-r005[67]-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol

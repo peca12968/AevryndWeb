@@ -1,0 +1,12 @@
+{
+  "reviewUTC": "2026-10-19T21:46:03.144953+00:00",
+  "supersedesInferenceOnly": "resource-checkpoint.json knownFailures[1] and earlier commentary",
+  "facts": [
+    "B saved its .blend and b-build-summary before a native TBB access violation on first render.",
+    "C also saved its .blend/summary then faulted on first render. C had no legacy particles.",
+    "A produced seven images then faulted during native shutdown.",
+    "D completed seven images and normal exit0; independent reopen/verification also exited0."
+  ],
+  "cause": "A unique crash cause has not been isolated. Removing legacy particles alone is not established as the cause or cure. D jointly changes curve construction, image-ID representation and data import.",
+  "terminalCProcess": "PID75176 was stopped only after command-line identity and explicit native access-violation log were checked; not restarted because of observation timeout."
+}

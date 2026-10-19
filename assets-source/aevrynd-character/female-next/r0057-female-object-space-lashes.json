@@ -1,0 +1,69 @@
+{
+  "curves": 412,
+  "points": 6998,
+  "countRange": [
+    14,
+    17
+  ],
+  "boundsM": [
+    [
+      -0.052125394344329834,
+      -0.06992306560277939,
+      1.622445821762085
+    ],
+    [
+      0.05228672921657562,
+      -0.05166583135724068,
+      1.642640471458435
+    ]
+  ],
+  "source": "Canonical source facial hair, female morph disabled; evaluated ParticleHairKey.co_object API, no addon code.",
+  "schema": {
+    "co_object": [
+      {
+        "name": "object",
+        "type": "POINTER",
+        "output": false
+      },
+      {
+        "name": "modifier",
+        "type": "POINTER",
+        "output": false
+      },
+      {
+        "name": "particle",
+        "type": "POINTER",
+        "output": false
+      },
+      {
+        "name": "co",
+        "type": "FLOAT",
+        "output": true
+      }
+    ],
+    "co_object_set": [
+      {
+        "name": "object",
+        "type": "POINTER",
+        "output": false
+      },
+      {
+        "name": "modifier",
+        "type": "POINTER",
+        "output": false
+      },
+      {
+        "name": "particle",
+        "type": "POINTER",
+        "output": false
+      },
+      {
+        "name": "co",
+        "type": "FLOAT",
+        "output": false
+      }
+    ]
+  },
+  "sourceRadiusM": 1.320000055544078e-05,
+  "suppliedFemaleMorphValue": 1.0
+}

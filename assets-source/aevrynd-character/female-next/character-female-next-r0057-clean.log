@@ -1,0 +1,9 @@
+00:00.766  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0053-authoring-retained.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0057-coherent-preview.py:34: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=(*color,1);p.inputs['Roughness'].default_value=rough
+Error   : EXCEPTION_ACCESS_VIOLATION
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+Address : 0x00007FFA1F431255
+Module  : tbbmalloc.dll
+Thread  : 0000cfd8
+Writing: C:\Users\USER\AppData\Local\Temp\aevrynd-female-next-r0057-c-clean-native-foundation.crash.txt
