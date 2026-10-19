@@ -1,0 +1,114 @@
+{
+  "revision": "female-next-r0051",
+  "decision": "RETAIN_INTEGRATED_B_STATIC_OCULAR_FUNCTION_REPAIR_NO_APPEARANCE_PROMOTION",
+  "workingSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0051-b-integrated-eye-wall.blend",
+  "workingSourceSha256": "b86f7eeedf6fd6a4d9a7f13ff42dc4051907516bc90be8261f02e7678242a3ff",
+  "previousWorking": {
+    "workingReviewRevision": "female-next-r0042-b",
+    "workingReviewSource": "source/aevrynd-female-next-r0042-b-shadow-quality-review.blend",
+    "workingReviewSha256": "d62c180a5af61f6f8d800926b101738c89a8fbe7785fe1054fd655fd018824da",
+    "workingReviewStatus": "RETAIN_OWNED_COMPLETE_WORKING_SOURCE_SHADOW_INTEGRATION_FIX_ONLY"
+  },
+  "appearance": {
+    "status": "NO_CLAIMED_COMPLETE_CHARACTER_APPEARANCE_GAIN",
+    "wholeCharacterImproved": false,
+    "observation": "Complete face/body appearance essentially unchanged. Staring expression, cap/sheet hair and flat skin remain major defects.",
+    "matchedFullHeadBodyAB": true,
+    "otherAnglesAndSecondLight": true,
+    "wholeCharacterScore": null
+  },
+  "function": {
+    "status": "POSTERIOR_EYE_WALL_REPAIR_AND_WET_SOURCE_REBIND_INTEGRATED",
+    "nativeChangedVertices": 289,
+    "editableNativeTopologyAndUVPreserved": true,
+    "nativeMultiresRebuilt": true,
+    "noPermanentCorrectiveModifierOrService": true,
+    "reboundTissues": [
+      {
+        "object": "AFN37_L_upper_WetMargin",
+        "baseNodes": 1891,
+        "maximumLocalRebindDisplacementM": 1.201514409696321e-07,
+        "sourceLineage": "Same native body vertex indices and barycentric weights; update foot and corresponding raised points together.",
+        "originalInterfaceToleranceM": 1e-06
+      },
+      {
+        "object": "AFN37_L_lower_WetMargin",
+        "baseNodes": 1891,
+        "maximumLocalRebindDisplacementM": 1.7897878004776914e-07,
+        "sourceLineage": "Same native body vertex indices and barycentric weights; update foot and corresponding raised points together.",
+        "originalInterfaceToleranceM": 1e-06
+      },
+      {
+        "object": "AFN37_L_Caruncle",
+        "baseNodes": 310,
+        "maximumLocalRebindDisplacementM": 2.3889104820542146e-07,
+        "sourceLineage": "Same native body vertex indices and barycentric weights; update foot and corresponding raised points together.",
+        "originalInterfaceToleranceM": 1e-06
+      },
+      {
+        "object": "AFN37_R_upper_WetMargin",
+        "baseNodes": 1855,
+        "maximumLocalRebindDisplacementM": 2.384185791015625e-07,
+        "sourceLineage": "Same native body vertex indices and barycentric weights; update foot and corresponding raised points together.",
+        "originalInterfaceToleranceM": 1e-06
+      },
+      {
+        "object": "AFN37_R_lower_WetMargin",
+        "baseNodes": 1912,
+        "maximumLocalRebindDisplacementM": 1.201947465904182e-07,
+        "sourceLineage": "Same native body vertex indices and barycentric weights; update foot and corresponding raised points together.",
+        "originalInterfaceToleranceM": 1e-06
+      },
+      {
+        "object": "AFN37_R_Caruncle",
+        "baseNodes": 268,
+        "maximumLocalRebindDisplacementM": 1.2014061212539673e-07,
+        "sourceLineage": "Same native body vertex indices and barycentric weights; update foot and corresponding raised points together.",
+        "originalInterfaceToleranceM": 1e-06
+      }
+    ],
+    "limits": "Static neutral repair, not an expression/skeletal rig, blink or bone-following motion."
+  },
+  "contact": {
+    "status": "PASS_OCULAR_AND_REBOUND_INTERFACE_SCOPE_OTHER_BODY_FAILURES_REMAIN",
+    "sourceCompleteOcularSelfPairs": 715,
+    "repairedCompleteOcularSelfPairs": 0,
+    "sourceCountScopeNote": "r50 reported438in a narrower moved-eye region; r51 tests both complete ocular regions against full body, hence source715. Do not compare mismatched scopes.",
+    "fixedOpticalPairs": 0,
+    "wetUnqualifiedAttachmentPairs": 0,
+    "sourceOtherBodyFailures": {
+      "sourceTrianglePairs": 1554,
+      "candidateTrianglePairs": 839,
+      "sourceQuadPairs": 914,
+      "candidateQuadPairs": 496,
+      "newIntersectingQuadPairs": 0,
+      "newQuadPairExamples": [],
+      "removedIntersectingQuadPairs": 418,
+      "scope": "Full ordered evaluated quad topology is stable; triangle diagonals may differ. Existing nonocular source failures remain failures, not a new full-body contact pass. Only absence of newly intersecting quad features can be stated."
+    },
+    "remainingOtherBodySurfacePairsInTestedChangedScope": 839,
+    "hairCurves": 12900,
+    "hairBodyFiniteSegments": 1544700,
+    "hairBodyUnqualifiedSegments": 0,
+    "evidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0051-eye-wall\\b-integrated-static-verification.json",
+    "limit": "No full-character static/dynamic collision acceptance; counts are surface pairs, not exact global signed minimum distances."
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "cpuGpuMemory": null
+  },
+  "candidateDecisions": {
+    "A": "Reject retained-sculpt native fairing: coarse self/optics0 but actual high-sculpt4684self pairs.",
+    "B_raw": "Useful native Multires posterior rebase; eye scope0 but original wet interfaces fail after measured float rounding. Not adopted alone.",
+    "B_integrated": "Rebind six wet base/raised surfaces to actual rebuilt body; exact shared-source/barycentric interfaces pass original1um allowance. Retain as same complete working character with explicit remaining failures."
+  },
+  "retainedStudies": {
+    "r48": "Initial source scalp domain and29same-head authoring guides remain hidden research. Body rounding changes source domain triangles by measured submicrometre amounts; source lineage exact but this is not an accepted new root/path groom.",
+    "maximumScalpDomainSourceDeviationM": 2.2735051078926925e-07
+  },
+  "stoppedMethods": [
+    "Vertex-only posterior optical clearance",
+    "Native posterior fairing while blindly retaining damaged sculpt displacement"
+  ],
+  "nextAction": "Use r51 B integrated as the single complete working character: actual ocular posterior self715->0, eight fixed optics and six rebound wet-tissue joins qualified in neutral scope; original12,900scalp/brow curves1,544,700finite body capsules rechecked. Do not revive A unchanged-sculpt fairing, vertex-only optical clearance, r50 neutral-angle sweeps or old closed-lid solvers. Existing839nonocular surface pairs in changed/rounding scope remain unresolved; do not call global body contact passed. Next visible production theme: complete hairstyle large forms and scalp transition. Reassess actual full head/body views and the already retained r48 same-head guides/domain, select one complete style, and use an actually demonstrated Blender-native guide/sculpt/interpolation workflow rather than repeating stopped root-frame, radial-chart, world-knot or global wave constructions. First prove an anatomical scalp attachment and a small set of actual finite full paths plus a complete-head silhouette before dense followers; reject visibly cap/sheet/wire shapes immediately. Bound method validation to ten minutes and obtain a visible preview or falsification by the45-minute checkpoint. Explicitly report incomplete r48sideburn/temple/nape coverage; retained studies are not a finished groom. Keep skin brightness/material/stage fixed, independently check changed self/body/optical/attachment contacts before retaining; no dynamics claims without actual clip and continuous evidence. Face/skin realism, whole-body/clothes/oral rig, natural hair physics, remaining body/self/continuous contacts, Aevrynd runtime/LOD/performance, weighted85each80 and explicit female acceptance remain incomplete."
+}

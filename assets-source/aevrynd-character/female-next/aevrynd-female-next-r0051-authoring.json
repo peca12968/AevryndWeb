@@ -1,0 +1,34 @@
+{
+  "revision": "female-next-r0051",
+  "status": "RETAIN_INTEGRATED_B_STATIC_OCULAR_FUNCTION_REPAIR_NO_APPEARANCE_PROMOTION",
+  "workingSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0051-b-integrated-eye-wall.blend",
+  "workingSourceSha256": "b86f7eeedf6fd6a4d9a7f13ff42dc4051907516bc90be8261f02e7678242a3ff",
+  "baseSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0048-anatomical-authoring-retained.blend",
+  "baseSourceSha256": "49f76186981a7244444e37b950eab6acd24e34be15a65d855cee527422405c67",
+  "variants": [
+    {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0051-a-posterior-eye-wall.blend",
+      "sha256": "16d12e75074b7b1104d4f84807a23a100dfacc16143431b504560929cd82d6a7",
+      "decision": "REJECT_HIGH_SCULPT_SELF"
+    },
+    {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0051-b-rebased-eye-wall.blend",
+      "sha256": "74be8112f3608eaded8a3faad9bb3073f696b34d843d8e67995fe54712335fa3",
+      "decision": "UNINTEGRATED_B_REBASE_WET_JOINS_FAIL"
+    },
+    {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0051-b-integrated-eye-wall.blend",
+      "sha256": "b86f7eeedf6fd6a4d9a7f13ff42dc4051907516bc90be8261f02e7678242a3ff",
+      "decision": "RETAIN_INTEGRATED_B_STATIC_OCULAR_FUNCTION_REPAIR_NO_APPEARANCE_PROMOTION"
+    }
+  ],
+  "rebuild": "Installed Blender5.2.2 --disable-autoexec --threads4: inspect51source; build51wall; verify51wall(A expectedfail); probe51rebase; build51rebased; verify51wall --variant-b (expectedraw wetfailure); integrate51; verify51integrated. Bundled Python/Pillow package51. Temporary decoded NPZ is reproducible from pinned sources; not a runtime dependency.",
+  "provenance": "Existing CC0 body/texture and own code/groom; original provenance remains. No new external model, code library, service or software installed.",
+  "limits": [
+    "Neutral ocular and rebuilt-interface scope only; existing nonocular self contacts still fail",
+    "Surface pairs/anchors/capsule lower bounds are not exact global signed minimum distances",
+    "No blink/gaze/rig, natural hair/self/continuous motion, clothing or complete oral function acceptance",
+    "No Aevrynd runtime, LOD, CPU/GPU/memory acceptance or appearance-score promotion"
+  ],
+  "embeddedSceneStatus": "Saved scene label reflects pre-verification creation; current scoped adoption is in manifest and visual audit."
+}

@@ -1,0 +1,1407 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0051-b-integrated-eye-wall.blend",
+  "sourceSha256": "b86f7eeedf6fd6a4d9a7f13ff42dc4051907516bc90be8261f02e7678242a3ff",
+  "status": "PASS_STATED_OCULAR_REPAIR_AND_REBOUND_INTERFACES_NOT_FULL_CHARACTER",
+  "bodyGeometryExactFromProvedB": true,
+  "bodyProofSource": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0051-eye-wall\\b-saved-static-verification.json",
+  "bodyProofSha256": "5503ded35bee0f45d005c64eeb8d64a2c9935022347a8f298031e46ec031ca31",
+  "ocularSelfPairs": 0,
+  "fixedOpticalSurfacePairs": 0,
+  "newOtherBodyIntersectingQuadPairs": 0,
+  "existingOtherBodySurfaceSelfPairs": 839,
+  "sourceOtherBodyFailuresRemainUnaccepted": true,
+  "originalHairBodyCapsules": {
+    "AFN33_C_BODY_BOUND_FIBRES": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 12000,
+      "segments": 1524000,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 7.653577586066541e-09,
+      "minimumSampledCVSurfaceGapM": 0.0001338403053523507,
+      "methods": {
+        "edge_distance": 3652,
+        "lipschitz": 1520348
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "AFN36_L_BrowFibres": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 450,
+      "segments": 10350,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 2.570077399133959e-09,
+      "minimumSampledCVSurfaceGapM": 2.4917426344472915e-05,
+      "methods": {
+        "edge_distance": 2424,
+        "lipschitz": 7926
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "AFN36_R_BrowFibres": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 450,
+      "segments": 10350,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 1.516538053946625e-08,
+      "minimumSampledCVSurfaceGapM": 2.4950479200924747e-05,
+      "methods": {
+        "edge_distance": 2393,
+        "lipschitz": 7957
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    }
+  },
+  "materialsSkinFieldsHairStageExact": true,
+  "rebuiltWetTissues": {
+    "AFN37_L_upper_WetMargin": {
+      "baseBarycentricErrorM": 5.7194141925361205e-08,
+      "originalInterfaceToleranceM": 1e-06,
+      "actualBodyAttachment": {
+        "bodyBVHBroadphasePairs": 743,
+        "provedSharedSourceBaseFacetPairs": 696,
+        "provedSourceEdgeOrWeldSeamPairs": 47,
+        "floatBroadphaseNoFloat64Intersection": 0,
+        "unqualifiedNonAttachmentPairs": 0,
+        "failureSamples": [],
+        "scope": "Shared source base facets and exact welded source-skin boundary are anatomical joins. Every other candidate is refined by actual float64 triangle intersection and must be disjoint; no blanket eye-region exclusion.",
+        "interfaceToleranceM": 1e-06
+      },
+      "actualClosedMeshSelf": {
+        "bvhPairs": 0,
+        "actualSurfaceIntersectionPairs": 0,
+        "witnesses": []
+      },
+      "optics": {
+        "AFN30_L_Sclera": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Cornea": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Iris": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Pupil": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Sclera": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Cornea": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Iris": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Pupil": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        }
+      }
+    },
+    "AFN37_L_lower_WetMargin": {
+      "baseBarycentricErrorM": 5.7194141925361205e-08,
+      "originalInterfaceToleranceM": 1e-06,
+      "actualBodyAttachment": {
+        "bodyBVHBroadphasePairs": 745,
+        "provedSharedSourceBaseFacetPairs": 694,
+        "provedSourceEdgeOrWeldSeamPairs": 51,
+        "floatBroadphaseNoFloat64Intersection": 0,
+        "unqualifiedNonAttachmentPairs": 0,
+        "failureSamples": [],
+        "scope": "Shared source base facets and exact welded source-skin boundary are anatomical joins. Every other candidate is refined by actual float64 triangle intersection and must be disjoint; no blanket eye-region exclusion.",
+        "interfaceToleranceM": 1e-06
+      },
+      "actualClosedMeshSelf": {
+        "bvhPairs": 0,
+        "actualSurfaceIntersectionPairs": 0,
+        "witnesses": []
+      },
+      "optics": {
+        "AFN30_L_Sclera": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Cornea": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Iris": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Pupil": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Sclera": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Cornea": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Iris": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Pupil": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        }
+      }
+    },
+    "AFN37_L_Caruncle": {
+      "baseBarycentricErrorM": 5.717353513603249e-08,
+      "originalInterfaceToleranceM": 1e-06,
+      "actualBodyAttachment": {
+        "bodyBVHBroadphasePairs": 83,
+        "provedSharedSourceBaseFacetPairs": 78,
+        "provedSourceEdgeOrWeldSeamPairs": 5,
+        "floatBroadphaseNoFloat64Intersection": 0,
+        "unqualifiedNonAttachmentPairs": 0,
+        "failureSamples": [],
+        "scope": "Shared source base facets and exact welded source-skin boundary are anatomical joins. Every other candidate is refined by actual float64 triangle intersection and must be disjoint; no blanket eye-region exclusion.",
+        "interfaceToleranceM": 1e-06
+      },
+      "actualClosedMeshSelf": {
+        "bvhPairs": 0,
+        "actualSurfaceIntersectionPairs": 0,
+        "witnesses": []
+      },
+      "optics": {
+        "AFN30_L_Sclera": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Cornea": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Iris": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Pupil": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Sclera": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Cornea": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Iris": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Pupil": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        }
+      }
+    },
+    "AFN37_R_upper_WetMargin": {
+      "baseBarycentricErrorM": 5.7194141925361205e-08,
+      "originalInterfaceToleranceM": 1e-06,
+      "actualBodyAttachment": {
+        "bodyBVHBroadphasePairs": 762,
+        "provedSharedSourceBaseFacetPairs": 718,
+        "provedSourceEdgeOrWeldSeamPairs": 44,
+        "floatBroadphaseNoFloat64Intersection": 0,
+        "unqualifiedNonAttachmentPairs": 0,
+        "failureSamples": [],
+        "scope": "Shared source base facets and exact welded source-skin boundary are anatomical joins. Every other candidate is refined by actual float64 triangle intersection and must be disjoint; no blanket eye-region exclusion.",
+        "interfaceToleranceM": 1e-06
+      },
+      "actualClosedMeshSelf": {
+        "bvhPairs": 0,
+        "actualSurfaceIntersectionPairs": 0,
+        "witnesses": []
+      },
+      "optics": {
+        "AFN30_L_Sclera": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Cornea": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Iris": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Pupil": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Sclera": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Cornea": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Iris": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Pupil": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        }
+      }
+    },
+    "AFN37_R_lower_WetMargin": {
+      "baseBarycentricErrorM": 5.7194141925361205e-08,
+      "originalInterfaceToleranceM": 1e-06,
+      "actualBodyAttachment": {
+        "bodyBVHBroadphasePairs": 752,
+        "provedSharedSourceBaseFacetPairs": 702,
+        "provedSourceEdgeOrWeldSeamPairs": 50,
+        "floatBroadphaseNoFloat64Intersection": 0,
+        "unqualifiedNonAttachmentPairs": 0,
+        "failureSamples": [],
+        "scope": "Shared source base facets and exact welded source-skin boundary are anatomical joins. Every other candidate is refined by actual float64 triangle intersection and must be disjoint; no blanket eye-region exclusion.",
+        "interfaceToleranceM": 1e-06
+      },
+      "actualClosedMeshSelf": {
+        "bvhPairs": 0,
+        "actualSurfaceIntersectionPairs": 0,
+        "witnesses": []
+      },
+      "optics": {
+        "AFN30_L_Sclera": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Cornea": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Iris": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Pupil": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Sclera": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Cornea": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Iris": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Pupil": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        }
+      }
+    },
+    "AFN37_R_Caruncle": {
+      "baseBarycentricErrorM": 5.717353513603249e-08,
+      "originalInterfaceToleranceM": 1e-06,
+      "actualBodyAttachment": {
+        "bodyBVHBroadphasePairs": 97,
+        "provedSharedSourceBaseFacetPairs": 90,
+        "provedSourceEdgeOrWeldSeamPairs": 7,
+        "floatBroadphaseNoFloat64Intersection": 0,
+        "unqualifiedNonAttachmentPairs": 0,
+        "failureSamples": [],
+        "scope": "Shared source base facets and exact welded source-skin boundary are anatomical joins. Every other candidate is refined by actual float64 triangle intersection and must be disjoint; no blanket eye-region exclusion.",
+        "interfaceToleranceM": 1e-06
+      },
+      "actualClosedMeshSelf": {
+        "bvhPairs": 0,
+        "actualSurfaceIntersectionPairs": 0,
+        "witnesses": []
+      },
+      "optics": {
+        "AFN30_L_Sclera": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Cornea": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Iris": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_L_Pupil": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Sclera": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Cornea": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Iris": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        },
+        "AFN30_R_Pupil": {
+          "bvhPairs": 0,
+          "actualSurfaceIntersectionPairs": 0,
+          "witnesses": []
+        }
+      }
+    }
+  },
+  "actualWetWetAndWetLashPairs": {
+    "AFN37_L_upper_WetMargin / AFN37_L_lower_WetMargin": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_L_upper_WetMargin / AFN37_L_Caruncle": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_L_upper_WetMargin / AFN37_R_upper_WetMargin": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_L_upper_WetMargin / AFN37_R_lower_WetMargin": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_L_upper_WetMargin / AFN37_R_Caruncle": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_L_upper_WetMargin / AFN37_L_upper_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 72
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_L_upper_WetMargin / AFN37_L_lower_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 38
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_L_upper_WetMargin / AFN37_R_upper_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 72
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_L_upper_WetMargin / AFN37_R_lower_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 38
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_L_lower_WetMargin / AFN37_L_Caruncle": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_L_lower_WetMargin / AFN37_R_upper_WetMargin": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_L_lower_WetMargin / AFN37_R_lower_WetMargin": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_L_lower_WetMargin / AFN37_R_Caruncle": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_L_lower_WetMargin / AFN37_L_upper_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 72
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_L_lower_WetMargin / AFN37_L_lower_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 38
+      },
+      "solidAngleFallbacks": [
+        {
+          "component": 14,
+          "result": {
+            "classification": "outside",
+            "fiveRayResult": {
+              "classification": "unresolved",
+              "fiveRayParities": [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "rayAdvanceM": 1e-07
+            },
+            "float64SolidAngleFallback": {
+              "classification": "outside",
+              "signedWinding": -2.8601179386533088e-18,
+              "method": "Complete body triangle solid-angle winding in float64,65536-triangle chunks. Used when five rays disagree; no majority vote or exclusion."
+            }
+          }
+        }
+      ]
+    },
+    "AFN37_L_lower_WetMargin / AFN37_R_upper_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 72
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_L_lower_WetMargin / AFN37_R_lower_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 38
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_L_Caruncle / AFN37_R_upper_WetMargin": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_L_Caruncle / AFN37_R_lower_WetMargin": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_L_Caruncle / AFN37_R_Caruncle": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_L_Caruncle / AFN37_L_upper_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 72
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_L_Caruncle / AFN37_L_lower_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 38
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_L_Caruncle / AFN37_R_upper_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 72
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_L_Caruncle / AFN37_R_lower_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 38
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_R_upper_WetMargin / AFN37_R_lower_WetMargin": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_R_upper_WetMargin / AFN37_R_Caruncle": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_R_upper_WetMargin / AFN37_L_upper_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 72
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_R_upper_WetMargin / AFN37_L_lower_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 38
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_R_upper_WetMargin / AFN37_R_upper_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 72
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_R_upper_WetMargin / AFN37_R_lower_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 38
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_R_lower_WetMargin / AFN37_R_Caruncle": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_R_lower_WetMargin / AFN37_L_upper_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 72
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_R_lower_WetMargin / AFN37_L_lower_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 38
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_R_lower_WetMargin / AFN37_R_upper_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 72
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_R_lower_WetMargin / AFN37_R_lower_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 38
+      },
+      "solidAngleFallbacks": [
+        {
+          "component": 1,
+          "result": {
+            "classification": "outside",
+            "fiveRayResult": {
+              "classification": "unresolved",
+              "fiveRayParities": [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "rayAdvanceM": 1e-07
+            },
+            "float64SolidAngleFallback": {
+              "classification": "outside",
+              "signedWinding": 7.661492396754564e-18,
+              "method": "Complete body triangle solid-angle winding in float64,65536-triangle chunks. Used when five rays disagree; no majority vote or exclusion."
+            }
+          }
+        },
+        {
+          "component": 17,
+          "result": {
+            "classification": "outside",
+            "fiveRayResult": {
+              "classification": "unresolved",
+              "fiveRayParities": [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "rayAdvanceM": 1e-07
+            },
+            "float64SolidAngleFallback": {
+              "classification": "outside",
+              "signedWinding": 2.5400263081132252e-17,
+              "method": "Complete body triangle solid-angle winding in float64,65536-triangle chunks. Used when five rays disagree; no majority vote or exclusion."
+            }
+          }
+        },
+        {
+          "component": 21,
+          "result": {
+            "classification": "outside",
+            "fiveRayResult": {
+              "classification": "unresolved",
+              "fiveRayParities": [
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "rayAdvanceM": 1e-07
+            },
+            "float64SolidAngleFallback": {
+              "classification": "outside",
+              "signedWinding": -1.463276025326097e-17,
+              "method": "Complete body triangle solid-angle winding in float64,65536-triangle chunks. Used when five rays disagree; no majority vote or exclusion."
+            }
+          }
+        },
+        {
+          "component": 36,
+          "result": {
+            "classification": "outside",
+            "fiveRayResult": {
+              "classification": "unresolved",
+              "fiveRayParities": [
+                1,
+                0,
+                0,
+                0,
+                0
+              ],
+              "rayAdvanceM": 1e-07
+            },
+            "float64SolidAngleFallback": {
+              "classification": "outside",
+              "signedWinding": -4.469203898106829e-18,
+              "method": "Complete body triangle solid-angle winding in float64,65536-triangle chunks. Used when five rays disagree; no majority vote or exclusion."
+            }
+          }
+        }
+      ]
+    },
+    "AFN37_R_Caruncle / AFN37_L_upper_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 72
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_R_Caruncle / AFN37_L_lower_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 38
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_R_Caruncle / AFN37_R_upper_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 72
+      },
+      "solidAngleFallbacks": []
+    },
+    "AFN37_R_Caruncle / AFN37_R_lower_Lashes": {
+      "bvhPairs": 0,
+      "actualSurfaceIntersectionPairs": 0,
+      "witnesses": [],
+      "tissueAnchorAgainstOther": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "allLashComponentAnchorStates": {
+        "outside": 38
+      },
+      "solidAngleFallbacks": []
+    }
+  },
+  "originalHairAgainstAllRebuiltWetMeshes": {
+    "AFN33_C_BODY_BOUND_FIBRES": {
+      "AFN37_L_upper_WetMargin": {
+        "completeFiniteSegments": 1524000,
+        "aabbExcluded": 1524000,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_L_lower_WetMargin": {
+        "completeFiniteSegments": 1524000,
+        "aabbExcluded": 1524000,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_L_Caruncle": {
+        "completeFiniteSegments": 1524000,
+        "aabbExcluded": 1524000,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_R_upper_WetMargin": {
+        "completeFiniteSegments": 1524000,
+        "aabbExcluded": 1524000,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_R_lower_WetMargin": {
+        "completeFiniteSegments": 1524000,
+        "aabbExcluded": 1524000,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_R_Caruncle": {
+        "completeFiniteSegments": 1524000,
+        "aabbExcluded": 1524000,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      }
+    },
+    "AFN36_L_BrowFibres": {
+      "AFN37_L_upper_WetMargin": {
+        "completeFiniteSegments": 10350,
+        "aabbExcluded": 10350,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_L_lower_WetMargin": {
+        "completeFiniteSegments": 10350,
+        "aabbExcluded": 10350,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_L_Caruncle": {
+        "completeFiniteSegments": 10350,
+        "aabbExcluded": 10350,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_R_upper_WetMargin": {
+        "completeFiniteSegments": 10350,
+        "aabbExcluded": 10350,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_R_lower_WetMargin": {
+        "completeFiniteSegments": 10350,
+        "aabbExcluded": 10350,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_R_Caruncle": {
+        "completeFiniteSegments": 10350,
+        "aabbExcluded": 10350,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      }
+    },
+    "AFN36_R_BrowFibres": {
+      "AFN37_L_upper_WetMargin": {
+        "completeFiniteSegments": 10350,
+        "aabbExcluded": 10350,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_L_lower_WetMargin": {
+        "completeFiniteSegments": 10350,
+        "aabbExcluded": 10350,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_L_Caruncle": {
+        "completeFiniteSegments": 10350,
+        "aabbExcluded": 10350,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_R_upper_WetMargin": {
+        "completeFiniteSegments": 10350,
+        "aabbExcluded": 10350,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_R_lower_WetMargin": {
+        "completeFiniteSegments": 10350,
+        "aabbExcluded": 10350,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      },
+      "AFN37_R_Caruncle": {
+        "completeFiniteSegments": 10350,
+        "aabbExcluded": 10350,
+        "directSegments": 0,
+        "unqualifiedSegments": 0,
+        "failureSamples": []
+      }
+    }
+  },
+  "seconds": 11.212653636932373,
+  "limits": [
+    "Neutral ocular and rebuilt-interface scope only; existing nonocular self contacts still fail",
+    "Surface pairs/anchors/capsule lower bounds are not exact global signed minimum distances",
+    "No blink/gaze/rig, natural hair/self/continuous motion, clothing or complete oral function acceptance",
+    "No Aevrynd runtime, LOD, CPU/GPU/memory acceptance or appearance-score promotion"
+  ]
+}
