@@ -1,0 +1,53 @@
+{
+  "revision": "female-next-r0031",
+  "decisionA": "REJECT_COMPLETE_HEAD_APPEARANCE_TOO_PALE_AND_UNIFORMLY_COMBED",
+  "decisionB": "REJECT_COMPLETE_HEAD_APPEARANCE_AND_FIXED_FOLLICLE_RETENTION_BOUND",
+  "appearance": "A adds visible individual fibres but remains too faint at complete-head scale and uniformly swept upward. B creates a more readable arch using convergent longer hairs but still reads as thin stylized strokes; fixed-root greedy capsule placement loses172/501 follicles(34.33%), violating its <=10% experimental control. No complete-head realism adoption and no score gain.",
+  "appearanceScore": null,
+  "wholeCharacterScore": null,
+  "function": "Own bounded skin-ray follicles with exact source triangles,barycentrics,UVs,closed explicit triangle tubes and conservative interstrand capsule rejection. Static authoring data is useful, but no facial rig/deforming attachment/runtime implementation.",
+  "contact": {
+    "a": {
+      "status": "PASS_CHANGED_BROW_NEUTRAL_SURFACE_AND_BINDINGS",
+      "fibres": 501,
+      "bodyTrianglePairs": 0,
+      "opticalTrianglePairs": 0,
+      "nonAdjacentSelfPairs": 0,
+      "anchorFailures": 0,
+      "rootBindingMaximumErrorM": 5.9586276650248715e-08
+    },
+    "b": {
+      "status": "PASS_CHANGED_BROW_NEUTRAL_SURFACE_AND_BINDINGS",
+      "fibres": 329,
+      "bodyTrianglePairs": 0,
+      "opticalTrianglePairs": 0,
+      "nonAdjacentSelfPairs": 0,
+      "anchorFailures": 0,
+      "rootBindingMaximumErrorM": 5.9586276650248715e-08
+    }
+  },
+  "candidateBRetention": {
+    "originalFollicles": 501,
+    "lostFollicles": 172,
+    "fraction": 0.34331337325349304,
+    "allowedMaximum": 0.1,
+    "gate": "FAILED_NOT_WAIVED"
+  },
+  "sources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0031-a-native-brows.blend",
+      "sha256": "ab4ff23e47d7c3547619d5accbe5769ef8802a39f662e324810fff861b6b912e"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0031-b-convergent-brows.blend",
+      "sha256": "a125207e949fa928be4118225b18910ada49ce0eb0d5d8d7bd3514730f079c6e"
+    }
+  },
+  "adoptedSource": "female-next-r0030-b",
+  "runtime": "NOT_TESTED_OR_PROMOTED",
+  "limits": [
+    "Neutral static only, full actual finite tube surfaces tested.",
+    "Binding data is not a working deforming/root-follow or physics solver.",
+    "No new skin/head/eye/scalp-hair/clothes/rig/runtime validation or score."
+  ]
+}

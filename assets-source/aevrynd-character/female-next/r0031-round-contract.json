@@ -1,0 +1,23 @@
+{
+  "previousGoalTurn": "progress: separated static optics and correct iris texture encoding retained; eye region remains doll-like.",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0030-b-linear-iris-optics.blend",
+  "sourceSha256": "7e0137afbac302c3233e2558fcf450453723b0e2d7ed11bb75abf87543678bf6",
+  "defect": "New head has no brows and lacks natural fibre-based facial framing.",
+  "hypothesis": "Restrained actual brown fibres, feathered borders and upright-to-outward flow on the new supraorbital skin add credible facial framing without a painted stripe or solid underlay.",
+  "candidateCount": 1,
+  "limits": {
+    "maximumAttemptsPerSide": 600,
+    "maximumFibresPerSide": 300,
+    "curveStations": 10,
+    "tubeSides": 6,
+    "threads": 4,
+    "checkpointMinutes": 45
+  },
+  "reject": [
+    "No discernible complete-head improvement or coarse/combed/solid brows.",
+    "Full actual fibre/body/eye/self crossing or unresolved connected-strand containment.",
+    "Invalid source triangle/UV bindings or changed original body/eye/skin/stage."
+  ],
+  "scope": "Neutral static brow structure/appearance. Root metadata authored on actual evaluated skin; deformation/runtime evaluation not implemented.",
+  "reference": "Own earlier r18 triangle-fibre lessons only; no old head coordinates or third-party groom/code imported."
+}

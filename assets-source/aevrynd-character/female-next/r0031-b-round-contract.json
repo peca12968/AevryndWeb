@@ -1,0 +1,39 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0031-a-native-brows.blend",
+  "sourceSha256": "ab4ff23e47d7c3547619d5accbe5769ef8802a39f662e324810fff861b6b912e",
+  "candidate": "B,second and final in this round",
+  "diagnosis": "A uses short uniformly upward strokes; full head too pale and overly combed. Root count and calibrated fine shaft diameters are already plausible, so no pigment/density increase.",
+  "hypothesis": "Anatomically directed herringbone convergence and longer shafts restore natural brow body while retaining actual follicles, calibres, pigment and original head state.",
+  "held": [
+    "All candidate follicle/root surface metadata",
+    "Hair calibres and source material/color values",
+    "Body/eyes/skin/light/exposure/camera"
+  ],
+  "references": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5561712/",
+      "use": "Anatomy section: medial upright growth and central upper/downward lower/upward convergence."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6385518/",
+      "use": "Measured eyebrow shaft diameters around47-54micrometres in that studied population; not a universal prescribed size."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2884705/",
+      "use": "Eyebrow hair growth length context; B uses an engineered4.2-6.5mm groom range, not subject measurement."
+    }
+  ],
+  "limits": {
+    "maximumCandidatesThisRound": 2,
+    "maximumAdditionalFreeLiftM": 0.00036,
+    "liftChoices": 10,
+    "maximumDroppedFollicleFraction": 0.1,
+    "threads": 4
+  },
+  "reject": [
+    "No full-head improvement, strong comb/stripe or unsupported thickening.",
+    "New body/eye/strand contacts.",
+    "More than10% fixed follicle paths cannot be placed within the lift bound."
+  ],
+  "clinicalScope": "References used only for visible anatomical modeling, no clinical recommendation or patient-specific claim."
+}

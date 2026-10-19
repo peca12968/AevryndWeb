@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "revision": "female-next-r0031",
+  "status": "REJECTED_STYLE_RESEARCH_ONLY_KEEP_R30_HEAD",
+  "sources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0031-a-native-brows.blend",
+      "sha256": "ab4ff23e47d7c3547619d5accbe5769ef8802a39f662e324810fff861b6b912e"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0031-b-convergent-brows.blend",
+      "sha256": "a125207e949fa928be4118225b18910ada49ce0eb0d5d8d7bd3514730f079c6e"
+    }
+  },
+  "bindings": {
+    "a": {
+      "path": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0031-brow-bindings.json",
+      "sha256": "87d380f838e124a78d15fc7b16ab8ab04e8840520319fed317ec1be6efed0e6e",
+      "scope": "Exact neutral evaluated level3 skin triangle,barycentric,UV and normal-offset data. Not a native base-cage or live rig binding."
+    },
+    "b": {
+      "path": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0031-b-brow-bindings.json",
+      "sha256": "c60474acddc47c1ac20a19a2a1a682de570bdf43f9a7dac1fee194c0bbe8138b",
+      "scope": "Exact neutral evaluated level3 skin triangle,barycentric,UV and normal-offset data. Not a native base-cage or live rig binding."
+    }
+  },
+  "curveCaches": {
+    "a": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0031-brow-curves.npz",
+    "b": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0031-b-brow-curves.npz"
+  },
+  "actualStaticSurfaceEvidence": {
+    "a": {
+      "status": "PASS_CHANGED_BROW_NEUTRAL_SURFACE_AND_BINDINGS",
+      "fibres": 501,
+      "bodyTrianglePairs": 0,
+      "opticalTrianglePairs": 0,
+      "nonAdjacentSelfPairs": 0,
+      "anchorFailures": 0,
+      "rootBindingMaximumErrorM": 5.9586276650248715e-08
+    },
+    "b": {
+      "status": "PASS_CHANGED_BROW_NEUTRAL_SURFACE_AND_BINDINGS",
+      "fibres": 329,
+      "bodyTrianglePairs": 0,
+      "opticalTrianglePairs": 0,
+      "nonAdjacentSelfPairs": 0,
+      "anchorFailures": 0,
+      "rootBindingMaximumErrorM": 5.9586276650248715e-08
+    }
+  },
+  "BFailedRetention": {
+    "originalFollicles": 501,
+    "lostFollicles": 172,
+    "fraction": 0.34331337325349304,
+    "allowedMaximum": 0.1,
+    "gate": "FAILED_NOT_WAIVED"
+  },
+  "originalSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0030-b-linear-iris-optics.blend",
+  "originalSourceSha256": "7e0137afbac302c3233e2558fcf450453723b0e2d7ed11bb75abf87543678bf6",
+  "rebuild": "Run build-female-next-r0031-native-brows.py with pinned r30B file, then build-female-next-r0031-convergent-brows.py. Verify A with verify-female-next-r0031-native-brows.py; B adds -- --variant-b. Blender5.2.2,--disable-autoexec,four threads. No add-on/external asset library needed. B saves a rejected diagnostic, never an adopted source.",
+  "runtime": null,
+  "newScores": null
+}
