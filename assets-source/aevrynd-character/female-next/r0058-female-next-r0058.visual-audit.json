@@ -1,0 +1,72 @@
+{
+  "revision": "female-next-r0058",
+  "reviewUTC": "2026-10-19T21:57:20.856559+00:00",
+  "decision": "REJECT_NATIVE_BOB_PATHS_RETAIN_CORRECT_SOURCE_DATA_READER",
+  "appearance": {
+    "status": "REJECTED_NO_FULL_HAIRSTYLE_IMPROVEMENT",
+    "appearanceImprovement": false,
+    "wholeCharacterScore": null,
+    "observations": [
+      "Actual face/body/profile/back/second light still show an incomplete sparse groom and no convincing complete hairstyle.",
+      "The native17key source corrects data lineage but does not make the full character more believable.",
+      "No dense children were generated after static path failure."
+    ],
+    "sameConditionAB": true,
+    "actualHeadBodyMultiangleSecondLight": true
+  },
+  "function": {
+    "status": "SOURCE_READER_CORRECTED_REOPENED_ONLY",
+    "reopenedEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0058-source-emitter\\a-reopened-verification.json",
+    "canonicalEmitterVertexAndTopologyExact": true,
+    "sourceNPZExcludesActualFollicleKey": true,
+    "evidence": "Canonical evaluated native Bob has17keys, NPZ16non-root coordinates match keys1..16 within0.365micrometre. The root must not be inferred from NPZpoint0.",
+    "sourceDefaultRootUnsignedMaximumM": 2.634853899508016e-07,
+    "femaleCageRootUnsignedMaximumM": 4.2584350012475625e-05,
+    "renderSurfaceRootFailures": 11,
+    "disabledModifierObservationCorrection": "Initial native-source-inspection.json had source Bob viewport modifier disabled and returned uncomputed local coordinates near the origin. b-enabled source reads actual evaluated root-space data. No native-source incompatibility claim is based on the disabled observation.",
+    "reusable": "Native evaluated API extraction, exact original emitter/topology/morph lineage, complete17key layout. Not the rejected path geometry."
+  },
+  "contact": {
+    "status": "FAIL_OR_UNRESOLVED",
+    "actualRenderBodyTriangles": 1197504,
+    "curves": 248,
+    "segments": 3968,
+    "unqualifiedSegments": 190,
+    "rootFailures": 11,
+    "numericAllowanceM": 1e-06,
+    "algorithmsAndFailurePositions": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0058-source-emitter\\a-build-summary.json",
+    "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference.",
+    "distanceDefinition": "Conservative certified clearance lower bound and sampled CV gap, not exact signed global penetration depth. Native cage root distance does not certify actual subdivided body contacts.",
+    "minimumCertifiedClearanceLowerBoundM": -4.922617295089046e-05,
+    "minimumSampledCVSurfaceGapM": -4.577428062513397e-05,
+    "notAccepted": "Guide self, body self, facial-hair/tissue, other poses, continuous sweeps."
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED"
+  },
+  "research": {
+    "purpose": "Correct source-emitter/native parent-key reader only; explain and prevent wrong follicle assumptions.",
+    "scope": "Pinned CC0 original canonical Bob parent17keys; direct native female1 evaluation; no imported addon or embedded code.",
+    "blocker": "Actual source hair paths remain invalid on the actual rendered female body. Root-key correction alone is not a groom fix.",
+    "minimumIntegrationStep": "Use reader/schema only when independently qualified future native data are required. No integration for this rejected Bob geometry."
+  },
+  "stoppedMethod": "Treating either NPZnon-root paths or native17key Bob on the current canonical/subdivided female as an accepted groom. No nearest-point/affine/SurfaceDeform/root-clamp repairs, child expansion or contact margin sweeps.",
+  "nextAction": "Switch production theme to an actual authored blink on the retained coherent r57D complete-body candidate, using the pinned same37436-index Eyes_Closed_Left/Right source morph data, not the failed procedural r44/r45 lid models. Preserve body/UV/materials and neutral head/body appearance; integrate editable left/right controls and native lash following, then show actual neutral/closed head/body plus a playable blink. First bound a single native-source morph/lash pilot and reject if closure, contact or neutral appearance fails; no unbounded shader/angle sweeps. Separate static pose evidence from continuous motion qualification. Keep r51 fallback and all promotion approvals unchanged. Stop Bob hair-path fitting/automatic Comb diagnosis; do not reuse rejected r55/r56/r57/r58 routes, generate children or loosen collision gates. Hair remains a full unresolved requirement; changing theme does not complete it.",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0058-a-native-root-groom-study.blend",
+  "sourceSha256": "a77d822271fd023e1cbff1dd07aedba786794ccfd8a27dd068dd412f0efd545f",
+  "rebuildInputs": [
+    "c-female-native-emitter-and-bob-data.npz",
+    "a-native-guide-data.npz",
+    "r57D source and its15relative textures"
+  ],
+  "resource": {
+    "heavyJobsAtOnce": 1,
+    "blenderThreads": 4,
+    "newNodeServers": 0,
+    "newAppsAddons": 0,
+    "rawHairLibraryBytes": 65601648,
+    "previewBuildAndSevenRendersSeconds": 18.39754009246826,
+    "independentReadbackSeconds": 0.8938901424407959,
+    "allOwnBlenderJobsTerminal": true
+  }
+}

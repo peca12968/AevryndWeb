@@ -19,3 +19,8 @@ r0057-reference-* -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
 study-vitruvian-textures/*.exr -text
 # Raw terminal logs retain diagnostic whitespace byte for byte.
 character-female-next-r005[67]-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+# Exact r58 candidate, evidence and raw terminal bytes.
+r0058-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0058-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+character-female-next-r0058-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+character-female-next-r0058-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
