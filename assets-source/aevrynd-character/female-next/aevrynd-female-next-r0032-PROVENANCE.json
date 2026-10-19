@@ -1,0 +1,266 @@
+{
+  "title": "Aevrynd r0032 registered skin material baseline",
+  "parentSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0030-b-linear-iris-optics.blend",
+  "parentSourceSha256": "7e0137afbac302c3233e2558fcf450453723b0e2d7ed11bb75abf87543678bf6",
+  "bodyAndGlobeContourAuthor": "Dan Ulrich",
+  "bodyAndGlobeContourLicense": "CC0",
+  "existingOwnEyeLayerProvenance": {
+    "title": "Aevrynd r0030 contour-preserving separated eye optics",
+    "originalAuthor": "Dan Ulrich",
+    "originalLicense": "CC0",
+    "originalCollection": "Body Female - Realistic",
+    "originalDescription": "Realistic scan data model with multiresolution details",
+    "officialListing": "https://www.blender.org/download/demo-files/",
+    "officialDownloadPage": "https://www.blender.org/download/demo/asset-bundles/human-base-meshes/human-base-meshes-bundle-v1.4.1.zip",
+    "originalArchiveSha256": "811f43accbb31a88266d932f8f5563b2d13586fca0ba2693aad1f5fe582b3515",
+    "originalLibrarySha256": "3c121505651140ceb4d69fd1d8923f7788ffadd81672f5be14845a5f2c75c137",
+    "originalLibraryPath": "D:\\Download\\Aevrynd\\Reference\\character\\blender-human-base-meshes-v1.4.1\\human-base-meshes-bundle-v1.4.1\\human_base_meshes_bundle.blend",
+    "licenseEvidence": "r0027 CC0 selected-collection metadata inspection and global Human Base Meshes README; not a license inferred from other demo assets.",
+    "modifiedBy": "Aevrynd contact-authoring script",
+    "modifications": [
+      "Append only the selected female body and two eyes; no other asset collection, programs, rig or materials.",
+      "Preserve raw mesh vertices/topology, UVs and all Multires sculpt details.",
+      "Apply one shared uniform height/unit scale and translation to the parent hierarchy; no shape morph or individual eye transform.",
+      "Assign own neutral clay and existing own review camera/light/world for geometry comparison.",
+      "Remove unused append library identifiers after proving no linked data. Saved model has no external libraries/texts/images/rigs/actions.",
+      "Own native inward-wall region extraction seeded by actual crossing faces; fixed actual eyeball support halfspaces.",
+      "83 native body vertices moved by minimum halfspace correction, max1.369797mm. Original eye geometry/neutral transforms, base topology/UV and Multires levels remain.",
+      "No eye size/position change, remesh, new cover surface or material/lighting alteration.",
+      "Split each original CC0 globe into front cornea and posterior sclera along an actual shared source edge loop at the chosen limbus plane. Union envelope retained within recorded numeric residual; no globe shrink or head geometry change.",
+      "Add one closed iris annulus with depth/pupil aperture and one recessed open dark backing per eye.",
+      "Own iris texture explicitly sRGB-encoded for byte PNG; image and all component meshes saved/packed.",
+      "A dark incorrect-encoding study retained as rejected; B color-corrected partial optical layout retained."
+    ],
+    "dataPreservation": {
+      "GEO-body_female_realistic": {
+        "freshReferenceEvaluatedVertices": 677442,
+        "topologyExact": true,
+        "maximumWorldPositionErrorM": 5.2524335214521045e-08,
+        "toleranceM": 3e-07,
+        "comparison": "Saved independent source vs fresh official selected CC0 collection under the same shared float32 transform. All evaluated vertices, not samples."
+      },
+      "GEO-body_female_realistic.eye.L": {
+        "freshReferenceEvaluatedVertices": 546,
+        "topologyExact": true,
+        "maximumWorldPositionErrorM": 5.914945718145829e-08,
+        "toleranceM": 3e-07,
+        "comparison": "Saved independent source vs fresh official selected CC0 collection under the same shared float32 transform. All evaluated vertices, not samples."
+      },
+      "GEO-body_female_realistic.eye.R": {
+        "freshReferenceEvaluatedVertices": 546,
+        "topologyExact": true,
+        "maximumWorldPositionErrorM": 4.2042931150657974e-08,
+        "toleranceM": 3e-07,
+        "comparison": "Saved independent source vs fresh official selected CC0 collection under the same shared float32 transform. All evaluated vertices, not samples."
+      }
+    },
+    "notAuthoredByAevrynd": "Original female scan topology/sculpt and eyeball mesh are Dan Ulrich CC0 asset data. This is an adapted source study, not an original character sculpt claim.",
+    "limitations": [
+      "Neutral static only; gaze/blink/continuous motion not tested.",
+      "Source cornea contour and single-interface EEVEE refraction are approximate, not calibrated ocular optics.",
+      "Wetline/lacrimal tissue and full skin/hair/rig/oral/clothes/runtime still missing.",
+      "Pupil backing is a dark interior proxy behind a real iris aperture, not a retinal/lens simulation.",
+      "No body self-contact expansion; body geometry is exactly r29 and its existing scoped static evidence remains applicable.",
+      "Sampled unsigned gaps/residuals are not exact full-surface signed minima."
+    ],
+    "parentSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0029-a-native-eye-interface.blend",
+    "parentSourceSha256": "21c543b06ea5e92515294f48d3cb277ccaf1996b18e437dfa0fc1e86d4e8754f",
+    "verification": {
+      "sourceSha256": "21c543b06ea5e92515294f48d3cb277ccaf1996b18e437dfa0fc1e86d4e8754f",
+      "neutralStaticContactStatus": "PASS_NEUTRAL_FULL_SURFACE_AND_CHANGED_REGION_SELF_SCOPE",
+      "actualBodyTriangles": 1354880,
+      "affectedBodyTriangles": 29589
+    },
+    "newOwnData": "Triangle partitioning author code, annular iris/thickness geometry, dark pupil backing, radial iris texture and optical materials are authored locally. No downloaded iris image, eye program or other-engine runtime.",
+    "originalCC0Data": "Female body, original eye exterior contour and source smooth normals derive from Dan Ulrich CC0 data.",
+    "opticalApproximation": {
+      "corneaTransmission": 1,
+      "corneaIor": 1.376,
+      "thicknessMode": "SLAB",
+      "outputThicknessM": 0,
+      "approximation": "One refracting interface. No aqueous/lens/retinal simulation or physical calibration."
+    },
+    "colorWorkflow": {
+      "status": "BYTE_COLOR_ENCODING_CONFIRMED",
+      "maximumDecodedDifferenceFromRawLinearReference": 0.003495256478724562,
+      "meanDifference": 0.001033874436961293,
+      "scope": "Actual saved PNG round-trip, allowing8-bit quantization of both inputs. Not a proof of biological iris color or human similarity.",
+      "officialColorReference": "https://docs.blender.org/manual/en/5.0/render/color_management/color_spaces.html"
+    }
+  },
+  "pigmentAuthor": "MakeHuman Community system graphical assets",
+  "pigmentLicense": "CC0-1.0",
+  "pigmentTexture": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\textures\\makehuman-system-cc0\\young_lightskinned_female_diffuse3.png",
+  "pigmentTextureSha256": "1d82f782b7d2da732229633bd2d14754d873fff53cdb1d088977bcf67ae19dde",
+  "pigmentOfficialURL": "https://files.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip",
+  "pigmentOfficialLicenseEvidence": [
+    "https://static.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.html",
+    "https://static.makehumancommunity.org/about/license.html"
+  ],
+  "newOwnWork": "Profile-based correspondence, source-UV chart extraction, named coordinate-field mapping, photographic hair masks, regional roughness, calibrated shader and micron-scale procedural bump; no imported tool program.",
+  "coordinateRepresentation": "B uses AFN32_RegisteredCC0UVW point-vector attribute, preserving native UV and all evaluated geometry. A used an incomplete extra UV field and is rejected.",
+  "calibration": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\textures\\makehuman-system-cc0\\young_lightskinned_female_diffuse3.png",
+    "sourceSha256": "1d82f782b7d2da732229633bd2d14754d873fff53cdb1d088977bcf67ae19dde",
+    "textureSize": [
+      2048,
+      2048
+    ],
+    "sampledSkinRGBLinear": [
+      0.8303304334113658,
+      0.5119974637474451,
+      0.35095903657295047
+    ],
+    "targetRGBLinear": [
+      0.32,
+      0.23,
+      0.18
+    ],
+    "perChannelReflectanceGain": [
+      0.385388740582828,
+      0.44922097526923094,
+      0.5128803684830755
+    ],
+    "samples": [
+      {
+        "world": [
+          -0.02800000086426735,
+          -0.12865714728832245,
+          1.434999942779541
+        ],
+        "uv": [
+          0.8669097423553467,
+          0.45064806938171387
+        ],
+        "pixel": [
+          1775,
+          1125
+        ],
+        "linearRGB": [
+          0.799102738014409,
+          0.467783796112159,
+          0.31854677812509186
+        ]
+      },
+      {
+        "world": [
+          0.02800000086426735,
+          -0.12865711748600006,
+          1.434999942779541
+        ],
+        "uv": [
+          0.8669096231460571,
+          0.5156874656677246
+        ],
+        "pixel": [
+          1775,
+          991
+        ],
+        "linearRGB": [
+          0.7454042095403874,
+          0.4232676699860717,
+          0.26635560480286247
+        ]
+      },
+      {
+        "world": [
+          -0.041999999433755875,
+          -0.12430554628372192,
+          1.434999942779541
+        ],
+        "uv": [
+          0.8660749793052673,
+          0.4323479235172272
+        ],
+        "pixel": [
+          1773,
+          1162
+        ],
+        "linearRGB": [
+          0.8549926081242338,
+          0.5332764040105052,
+          0.3762621229909065
+        ]
+      },
+      {
+        "world": [
+          0.041999999433755875,
+          -0.12430554628372192,
+          1.434999942779541
+        ],
+        "uv": [
+          0.8660749197006226,
+          0.5339874625205994
+        ],
+        "pixel": [
+          1773,
+          954
+        ],
+        "linearRGB": [
+          0.8148465722161012,
+          0.4851499400560704,
+          0.3005437944157765
+        ]
+      },
+      {
+        "world": [
+          -0.02500000037252903,
+          -0.12859731912612915,
+          1.5049999952316284
+        ],
+        "uv": [
+          0.7969676852226257,
+          0.45859792828559875
+        ],
+        "pixel": [
+          1632,
+          1108
+        ],
+        "linearRGB": [
+          0.8962693533742664,
+          0.6104955708078648,
+          0.467783796112159
+        ]
+      },
+      {
+        "world": [
+          0.02500000037252903,
+          -0.12859730422496796,
+          1.5049999952316284
+        ],
+        "uv": [
+          0.796967625617981,
+          0.5077371597290039
+        ],
+        "pixel": [
+          1632,
+          1008
+        ],
+        "linearRGB": [
+          0.8713671191987972,
+          0.5520114015120001,
+          0.3762621229909065
+        ]
+      }
+    ],
+    "purpose": "Keep six reference skin sites at the prior average linear albedo while adding mapped anatomical pigment. This is explicit albedo colour calibration, not a lighting/exposure edit or a claim of measured human skin reflectance."
+  },
+  "calibrationLimit": "Six reference-site reflectance targets inherited from r11; not measured reflectance of this new subject, and not a claim of albedo capture. Source image contains photographic shading.",
+  "geometryProof": {
+    "path": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0032-registered-skin\\b\\saved-material-verification.json",
+    "all9VisibleMeshesMatchSource": true
+  },
+  "modifications": [
+    "Body/eye native geometry,skin nativeUV,poses,lights/camera/exposure held.",
+    "Continuous one-chart source coordinates extend through zero-weight vertices, preventing interpolation into undefined UV.",
+    "Scalp,brow and temple photo-hair regions masked to reference skin; no hair strands created or claimed.",
+    "UV-layer assignment in a diagnostic changed Multires evaluation by up to14.84um; retained B avoids that path using a generic point-vector field and verifies zero evaluated geometry changes."
+  ],
+  "limits": [
+    "Approximate facial registration from a different subject/base, no exact skin capture.",
+    "Body outside registered head uses reference base reflectance only; no full body pigment detail claim.",
+    "Photographic source may contain baked shading, not a measured albedo scan.",
+    "Procedural microbump and coordinate-field sampling need engine-compatible baking.",
+    "No geometry/motion/contact/runtime changes or full-character acceptance."
+  ]
+}

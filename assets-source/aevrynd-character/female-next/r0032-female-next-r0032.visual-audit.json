@@ -1,0 +1,36 @@
+{
+  "revision": "female-next-r0032-b",
+  "decisionA": "REJECT_UV_INTERPOLATION_BANDS_AND_UNQUALIFIED_EVALUATION",
+  "decisionB": "RETAIN_PARTIAL_REGISTERED_SKIN_MATERIAL_BASELINE",
+  "appearance": {
+    "score": 55,
+    "confidenceRange": [
+      45,
+      60
+    ],
+    "scope": "Static head skin appearance only, not anatomy,eyes,hair,dynamics or a complete-character total.",
+    "improvement": "Pigment/lip/nose color variation and controlled roughness/subsurface response replace the uniform gray clay, with the corrected UV-band defects removed.",
+    "deductions": [
+      "Different-source pigment correspondence and fallback regions remain visible around eyes/ears/neck.",
+      "Photographic baked shading is not a measured albedo map.",
+      "Procedural microbump is not measured pore shape.",
+      "Skin remains soft/waxy in closeup; no qualified skin movement or engine bake/performance."
+    ]
+  },
+  "wholeCharacterScore": null,
+  "visibleComparison": "Matched complete head front/oblique/profile and alternate light; A severe eye/neck bands rejected, B removes those and adds readable pigmentation without changing actual visible geometry. Closeup differences and palette targets are not anatomical reconstruction or measured skin capture.",
+  "function": "Standalone packed CC0 pigment and own coordinate/roughness fields/shader, nativeUV and all9displayed evaluated meshes exact to r30. Reopened B render agrees within one8-bit channel at rare pixels.",
+  "contact": "Exact original body/optical evaluated geometry,poses and optical materials retain only the prior neutral scope; no new animation/hair/clothing/runtime validation.",
+  "models": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0032-a-registered-skin.blend",
+      "sha256": "dabe83c61b12578c19faca34f5c71390dddc3c8838bf51c87ed88f0522dbd602"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0032-b-chart-registered-skin.blend",
+      "sha256": "7b8b110dd50db95a722797113d8abe2a1682d347e8e1874412999c70c21c1a20"
+    }
+  },
+  "runtime": "NOT_IMPLEMENTED_TESTED_OR_PROMOTED",
+  "nextAction": "Use the same retained r32 B female head as the new source, with r30 optics/gray-body,r29 structure,r28 native scan and r23 older full-head fallbacks. Skin is a55/100 static baseline; no full-character score/promotion. Return to complete-head priorities: missing scalp hair now dominates the bald mannequin silhouette, followed by staring/glassy eyes and absent brows/lashes. Start one complete hairstyle architecture on the actual new scalp with first-party artist/workflow references and an actual full-head preview, not another skin parameter sweep. Prefer already-local or explicitly compatible no-fee assets/reference data; verify exact license/author before any geometry/code adoption, and keep the uncertain-version Daniel Bystedt CC-BY-SA demo reference-only. Do not import paid/other-platform runtimes or male assets. For own grooming, use actual scalp/parting data and consciously authored 3D guide groups with free-length volume; do not recycle r17 global-hull/r27 fringe sheet projection, old-head coordinates or r31 greedy fixed-follicle lift sweeps. Begin with a bounded coarse whole-hairstyle guide/contact pilot before child strands; if that fails, stop expansion and change the structural route. Preserve editable roots/guide lineage and distinguish static hair/body proof from child/self/dynamic motion. Produce actual whole-head multi-angle images and required source data; do not describe guides or a hair cap as a natural qualified groom. Body/optical geometry and skin/stage should stay fixed so this is a visible hairstyle comparison. Natural scalp hair/dynamics/self, eye rest/blink/gaze/wetline, brows/lashes, oral system, body/clothes rig, engine/LOD/performance and explicit female acceptance remain required."
+}

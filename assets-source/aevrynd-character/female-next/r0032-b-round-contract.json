@@ -1,0 +1,23 @@
+{
+  "previousGoalTurn": "progress: r31 two brow styles rejected with real static surface/root evidence; same local brow schemes stopped.",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0030-b-linear-iris-optics.blend",
+  "sourceSha256": "7e0137afbac302c3233e2558fcf450453723b0e2d7ed11bb75abf87543678bf6",
+  "defect": "Retained new head is uniformly gray clay; no calibrated anatomical pigment, roughness or skin response.",
+  "hypothesis": "An explicitly registered existing CC0 pigment map, regional roughness, micron-scale bump and controlled subsurface response improve skin readability on the same unchanged head without old-UV mismatch.",
+  "candidateCount": 1,
+  "held": [
+    "All body/optical geometry and transforms",
+    "Native UV",
+    "Lighting,camera,exposure,color management and pose",
+    "No brows/lashes/hair added"
+  ],
+  "registration": "Profile extrema measured in actual old/new heads; eye horizontal scale from existing verified centers. Nearest old head surface UV samples after landmark warp; no direct old material/UV assignment.",
+  "reject": [
+    "Visible lip/nose/eye pigment misregistration or UV seam artifacts.",
+    "Photo scalp/brow hair presented as actual new groom.",
+    "No visible whole-head skin benefit or excessive orange/waxy/noisy result.",
+    "Any original geometry/nativeUV/eye/stage state changes."
+  ],
+  "resources": "One Blender,four threads,45-minute checkpoint; additional native UV/point fields,no topology changes or new geometry.",
+  "limits": "Reflectance targets inherited from r11 reference-site calibration, not measured skin of this subject. Material-only reference baseline, not a completed photoreal skin or character."
+}

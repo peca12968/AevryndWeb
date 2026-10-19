@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "revision": "female-next-r0032-b",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0032-b-chart-registered-skin.blend",
+  "sourceSha256": "7b8b110dd50db95a722797113d8abe2a1682d347e8e1874412999c70c21c1a20",
+  "status": "RETAIN_PARTIAL_SKIN_MATERIAL_BASELINE_NOT_COMPLETE_CHARACTER",
+  "parentSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0030-b-linear-iris-optics.blend",
+  "parentSourceSha256": "7e0137afbac302c3233e2558fcf450453723b0e2d7ed11bb75abf87543678bf6",
+  "body": "GEO-body_female_realistic",
+  "material": "AFN32_RegisteredCalibratedSkin",
+  "coordinateField": "AFN32_RegisteredCC0UVW",
+  "nativeUV": "Original UVMap unchanged; no added UV layer in retained B.",
+  "materialFields": [
+    "AFN32_RegisteredCC0UVW",
+    "AFN32_PigmentWeight",
+    "AFN32_Roughness"
+  ],
+  "photographicSource": {
+    "path": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\textures\\makehuman-system-cc0\\young_lightskinned_female_diffuse3.png",
+    "sha256": "1d82f782b7d2da732229633bd2d14754d873fff53cdb1d088977bcf67ae19dde",
+    "license": "CC0-1.0",
+    "packed": true,
+    "author": "MakeHuman Community"
+  },
+  "sourceUVChart": {
+    "sourceTriangles": 137918,
+    "UVCharts": 5,
+    "largestChartSizes": [
+      99712,
+      12736,
+      9376,
+      9376,
+      6718
+    ],
+    "selectedSeedWorldM": [
+      0.025,
+      -0.135,
+      1.435
+    ],
+    "selectedChartFaces": 99712,
+    "method": "Connected geometry edges only if their two source-UV endpoints also match. Source cheek seed selects one continuous external head photo chart; separate mouth/body/lining islands are excluded."
+  },
+  "correspondence": {
+    "mappedNativeVerticesIncludingMasked": 3760,
+    "photoActiveNativeVertices": 2116,
+    "initiallyWeightedNativeVerticesFallingBackAfterGuards": 816,
+    "maximumNearestOldSurfaceDistanceInActiveVerticesM": 0.019988736137747765,
+    "definition": "Native cage vertex counts, not area coverage or an accuracy percentage. Guarded regions use the explicit reference base reflectance; chart matching is approximate across different source geometry."
+  },
+  "shaderInputs": {
+    "baseFallbackLinearRGB": [
+      0.32,
+      0.23,
+      0.18
+    ],
+    "roughnessRange": [
+      0.44007135193897345,
+      0.54
+    ],
+    "subsurfaceWeight": 0.09,
+    "subsurfaceScale": 0.0012,
+    "subsurfaceRadius": [
+      1,
+      0.48,
+      0.25
+    ],
+    "bumpDistance": 1.2e-05,
+    "bumpStrength": 0.12,
+    "geometryDisplacement": false
+  },
+  "staticSkinAppearance": {
+    "score": 55,
+    "confidenceRange": [
+      45,
+      60
+    ],
+    "scope": "Static head skin appearance only, not anatomy,eyes,hair,dynamics or a complete-character total.",
+    "improvement": "Pigment/lip/nose color variation and controlled roughness/subsurface response replace the uniform gray clay, with the corrected UV-band defects removed.",
+    "deductions": [
+      "Different-source pigment correspondence and fallback regions remain visible around eyes/ears/neck.",
+      "Photographic baked shading is not a measured albedo map.",
+      "Procedural microbump is not measured pore shape.",
+      "Skin remains soft/waxy in closeup; no qualified skin movement or engine bake/performance."
+    ]
+  },
+  "contactEvidence": {
+    "path": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0030-eye-optics\\b\\saved-optical-verification.json",
+    "sourceSha256": "7e0137afbac302c3233e2558fcf450453723b0e2d7ed11bb75abf87543678bf6",
+    "basis": "All actual displayed body/optical evaluated vertex+triangle SHA signatures match exact source. No new geometry or displacement, so the existing neutral scope remains valid.",
+    "scope": "No new gaze/blink/continuous/hair/cloth/runtime proof."
+  },
+  "engineStatus": "Not baked/exported/integrated or benchmarked. Named coordinate/roughness fields and procedural bump require an engine-compatible bake or shader implementation.",
+  "rebuild": "Blender5.2.2,--disable-autoexec,--threads4. Run inspect-female-next-r0032-skin-registration.py with pinned r23 and r30 sources, then build-female-next-r0032-registered-skin.py -- --chart-uv, then verify-female-next-r0032-registered-skin.py -- --chart-uv. Existing local CC0 pigment and calibration are inputs; no download/add-on required.",
+  "limitations": [
+    "Approximate facial registration from a different subject/base, no exact skin capture.",
+    "Body outside registered head uses reference base reflectance only; no full body pigment detail claim.",
+    "Photographic source may contain baked shading, not a measured albedo scan.",
+    "Procedural microbump and coordinate-field sampling need engine-compatible baking.",
+    "No geometry/motion/contact/runtime changes or full-character acceptance."
+  ]
+}

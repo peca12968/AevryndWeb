@@ -1,0 +1,116 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0032-b-chart-registered-skin.blend",
+  "sourceSha256": "7b8b110dd50db95a722797113d8abe2a1682d347e8e1874412999c70c21c1a20",
+  "savedFileOpened": true,
+  "nativeSourceUVPreserved": true,
+  "originalMeshControlsExact": {
+    "AFN30_L_Cornea": true,
+    "AFN30_L_Iris": true,
+    "AFN30_L_Pupil": true,
+    "AFN30_L_Sclera": true,
+    "AFN30_R_Cornea": true,
+    "AFN30_R_Iris": true,
+    "AFN30_R_Pupil": true,
+    "AFN30_R_Sclera": true,
+    "GEO-body_female_realistic": true,
+    "GEO-body_female_realistic.eye.L": true,
+    "GEO-body_female_realistic.eye.R": true
+  },
+  "allDisplayedEvaluatedGeometryExact": {
+    "GEO-body_female_realistic": {
+      "vertices": 677442,
+      "triangles": 1354880,
+      "worldGeometrySha256": "da4a191e1fc707613f52a283dfcd95115db0dcc3be950c97b8cc995e88e9d009"
+    },
+    "AFN30_L_Sclera": {
+      "vertices": 516,
+      "triangles": 964,
+      "worldGeometrySha256": "91817052efde9183ef59fabc5d5c25c583df5af45c31ac6dddd39a4dfc78e448"
+    },
+    "AFN30_L_Cornea": {
+      "vertices": 162,
+      "triangles": 256,
+      "worldGeometrySha256": "c0e5cbb21981261c23659c0a6a25c45ffc864e779e8213bd944dcf5e5afdaaa4"
+    },
+    "AFN30_L_Iris": {
+      "vertices": 5376,
+      "triangles": 10752,
+      "worldGeometrySha256": "cf515e3dcdd58892555e46cfa172bb509f28093a90da5d11f93c29a48e5c16c4"
+    },
+    "AFN30_L_Pupil": {
+      "vertices": 129,
+      "triangles": 128,
+      "worldGeometrySha256": "03ee86f56d536b4a0a103e5ec6e0ca58ac26d232575b07f6c3f0859b853b18bf"
+    },
+    "AFN30_R_Sclera": {
+      "vertices": 516,
+      "triangles": 964,
+      "worldGeometrySha256": "39049d9fb437ea90a37057294098ad1dbabba2ac713702af96631c8f31456d16"
+    },
+    "AFN30_R_Cornea": {
+      "vertices": 162,
+      "triangles": 256,
+      "worldGeometrySha256": "35679c265fb49bb1c6989ddcb7c40141d532198b11b556df5107fcca4aff46e6"
+    },
+    "AFN30_R_Iris": {
+      "vertices": 5376,
+      "triangles": 10752,
+      "worldGeometrySha256": "f82d9b4181844bf73f16fed6d0a39e5bcf8180d4e7b7d2ab054e4d864bfdbac4"
+    },
+    "AFN30_R_Pupil": {
+      "vertices": 129,
+      "triangles": 128,
+      "worldGeometrySha256": "acd6f8f2eec54426d35465f8ee36200a3bc83a2c2f78436d1f27a52ca0e6645a"
+    }
+  },
+  "originalEightOpticalMaterialsExact": true,
+  "stageAndLightingExact": true,
+  "externalLibraries": 0,
+  "activeSkinImages": [
+    {
+      "name": "young_lightskinned_female_diffuse3.png",
+      "packed": true,
+      "packedSha256": "1d82f782b7d2da732229633bd2d14754d873fff53cdb1d088977bcf67ae19dde",
+      "colorSpace": "sRGB"
+    }
+  ],
+  "nativeFields": {
+    "AFN32_PigmentWeight": {
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "sha256": "0808b764f2db4f1db5bc3ae5057b79ee493594bf40f2d8e2e12b7a8c7a659949"
+    },
+    "AFN32_Roughness": {
+      "minimum": 0.44007134437561035,
+      "maximum": 0.5400000214576721,
+      "sha256": "9cef8860868120caf94f8cda0ede8a2e283a2db8c0f1e97e459755aec870ac1c"
+    }
+  },
+  "shader": {
+    "subsurfaceWeight": 0.09000000357627869,
+    "subsurfaceScale": 0.0012000000569969416,
+    "Ior": 1.399999976158142,
+    "noDisplacementInput": true
+  },
+  "additionalUVMappedActiveLoops": 8474,
+  "undefinedAdditionalUVAtActiveLoops": 0,
+  "reopenedRender": {
+    "path": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0032-registered-skin\\b\\reopened-face.png",
+    "scope": "Actual reopened standalone source rendered with its packed image and saved shader fields."
+  },
+  "inheritedContact": {
+    "path": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0030-eye-optics\\b\\saved-optical-verification.json",
+    "sourceSha256": "7e0137afbac302c3233e2558fcf450453723b0e2d7ed11bb75abf87543678bf6",
+    "basis": "All actual displayed body/optical evaluated vertex+triangle SHA signatures match exact source. No new geometry or displacement, so the existing neutral scope remains valid.",
+    "scope": "No new gaze/blink/continuous/hair/cloth/runtime proof."
+  },
+  "status": "PASS_REOPENED_MATERIAL_DATA_AND_EXACT_SOURCE_GEOMETRY",
+  "seconds": 4.150055646896362,
+  "limits": [
+    "Approximate facial registration from a different subject/base, no exact skin capture.",
+    "Body outside registered head uses reference base reflectance only; no full body pigment detail claim.",
+    "Photographic source may contain baked shading, not a measured albedo scan.",
+    "Procedural microbump and coordinate-field sampling need engine-compatible baking.",
+    "No geometry/motion/contact/runtime changes or full-character acceptance."
+  ]
+}

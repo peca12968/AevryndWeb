@@ -1,0 +1,22 @@
+00:00.860  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0030-b-linear-iris-optics.blend"
+00:03.000  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0032-registered-skin\before-saved-face.png'
+00:03.782  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0032-registered-skin\before-saved-oblique.png'
+00:04.516  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0032-registered-skin\before-saved-profile.png'
+00:05.235  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0032-registered-skin\before-saved-body-face.png'
+00:05.938  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0032-registered-skin\before-saved-body-profile.png'
+00:06.657  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0032-registered-skin\before-alternate-oblique.png'
+00:07.516  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0032-registered-skin\before-eyes.png'
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0032-registered-skin.py:41: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN32_RegisteredCalibratedSkin');mat.use_nodes=True;nt=mat.node_tree;shader=nt.nodes.get('Principled BSDF');image=bpy.data.images.load(str(i.TEXTURE),check_existing=True);image.colorspace_settings.name='sRGB';image.pack();uvnode=nt.nodes.new('ShaderNodeUVMap');uvnode.uv_map=newuv.name;tex=nt.nodes.new('ShaderNodeTexImage');tex.image=image;tex.interpolation='Linear';nt.links.new(uvnode.outputs['UV'],tex.inputs['Vector']);gain=nt.nodes.new('ShaderNodeMixRGB');gain.blend_type='MULTIPLY';gain.inputs[0].default_value=1;gain.inputs[2].default_value=(*inspection['calibration']['perChannelReflectanceGain'],1);nt.links.new(tex.outputs['Color'],gain.inputs[1]);weight=nt.nodes.new('ShaderNodeAttribute');weight.attribute_name='AFN32_PigmentWeight';mix=nt.nodes.new('ShaderNodeMixRGB');mix.blend_type='MIX';mix.inputs[1].default_value=(.32,.23,.18,1);nt.links.new(weight.outputs['Fac'],mix.inputs[0]);nt.links.new(gain.outputs[0],mix.inputs[2]);nt.links.new(mix.outputs[0],shader.inputs['Base Color']);rough=nt.nodes.new('ShaderNodeAttribute');rough.attribute_name='AFN32_Roughness';nt.links.new(rough.outputs['Fac'],shader.inputs['Roughness'])
+00:11.157  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0032-registered-skin\after-saved-face.png'
+00:12.329  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0032-registered-skin\after-saved-oblique.png'
+00:13.500  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0032-registered-skin\after-saved-profile.png'
+00:14.594  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0032-registered-skin\after-saved-body-face.png'
+00:15.657  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0032-registered-skin\after-saved-body-profile.png'
+00:16.750  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0032-registered-skin\after-alternate-oblique.png'
+00:17.938  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0032-registered-skin\after-eyes.png'
+Info: Saved as "aevrynd-female-next-r0032-a-registered-skin.blend"
+R0032_BUILD_DONE {"samples": 2954, "failures": 445, "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0032-a-registered-skin.blend"}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
