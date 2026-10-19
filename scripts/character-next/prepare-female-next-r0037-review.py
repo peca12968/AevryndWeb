@@ -1,0 +1,18 @@
+"""Remove unused boundary sampling nodes without changing any displayed face."""
+import bpy,importlib.util,json,copy,hashlib,sys
+import numpy as np
+from pathlib import Path
+spec=importlib.util.spec_from_file_location('g37',Path(__file__).with_name('build-female-next-r0037-eye-margin.py'));g=importlib.util.module_from_spec(spec);spec.loader.exec_module(g);b=g.b;E=g.E;S=g.S
+def main():
+    final_mode='--exact-display' in sys.argv;build=g.read('c-exact-build.json' if final_mode else 'c-build.json');source=Path(build['output']);assert b.sha(source)==build['outputSha256'];bpy.ops.wm.open_mainfile(filepath=str(source));original=g.state();bindings=g.read('c-tissue-bindings.json');rows=[]
+    for rec in bindings['patches']:
+        o=bpy.data.objects[rec['object']];old=o.data;oldV,oldT=b.evaluated(o,True);oldCorners=oldV[oldT];used=np.array(sorted({j for p in old.polygons for j in p.vertices}),dtype='i4');mapping={int(j):k for k,j in enumerate(used)};oldbase=rec['baseNodeCount'];base_used=used[used<oldbase];base_map={int(j):k for k,j in enumerate(base_used)};vertices=np.array([list(old.vertices[int(j)].co) for j in used],dtype='f4');faces=[tuple(mapping[int(j)] for j in p.vertices) for p in old.polygons];me=bpy.data.meshes.new(o.name+'_Clean');me.from_pydata(vertices,[],faces);me.update()
+        for mat in old.materials:me.materials.append(mat)
+        for attr in old.attributes:
+            if attr.domain!='POINT' or attr.name in ('position','.select_vert','.hide_vert'):continue
+            if attr.data_type not in ('FLOAT','FLOAT_VECTOR'):continue
+            n=3 if attr.data_type=='FLOAT_VECTOR' else 1;values=np.empty(len(attr.data)*n,dtype='f4');attr.data.foreach_get('vector' if n==3 else 'value',values);values=values.reshape(-1,n)[used];target=me.attributes.new(attr.name,attr.data_type,'POINT');target.data.foreach_set('vector' if n==3 else 'value',values.ravel())
+        for oldp,newp in zip(old.polygons,me.polygons):newp.use_smooth=oldp.use_smooth;newp.material_index=oldp.material_index
+        o.data=me;bpy.context.view_layer.update();V,T=b.evaluated(o,True);assert np.array_equal(V[T],oldCorners);rec['nodes']=[rec['nodes'][int(j)] for j in base_used];rec['vertexBaseNode']=[base_map[rec['vertexBaseNode'][int(j)]] for j in used];rec['vertexRole']=[rec['vertexRole'][int(j)] for j in used];rec['boundaryBaseNodes']=[base_map[j] for j in rec['boundaryBaseNodes'] if j in base_map];rec['topVertices']=[mapping[rec['topVertices'][int(j)]] for j in base_used];rec['baseNodeCount']=len(base_used);rows.append({'object':o.name,'removedUnusedVertices':len(oldV)-len(V),'allWorldTriangleCornersExact':True,'triangleCornerHash':hashlib.sha256(V[T].tobytes()).hexdigest()})
+    assert g.state()==original;g.save('c-review-tissue-bindings.json',bindings);out=S/('aevrynd-female-next-r0037-c-final-eye-margin-review.blend' if final_mode else 'aevrynd-female-next-r0037-c-eye-margin-review.blend');s=bpy.context.scene;g.c.camera('face');s.render.filepath=str(E/'user-preview');bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(out),compress=True);final=copy.deepcopy(build);final.update({'rawSource':str(source),'rawSourceSha256':b.sha(source),'output':str(out),'outputSha256':b.sha(out),'reviewCleanup':rows});g.save('c-final-build.json',final);g.save('c-review-cleanup.json',{'source':str(source),'sourceSha256':b.sha(source),'output':str(out),'outputSha256':b.sha(out),'displayedGeometryExactlyPreserved':rows,'originalBodyEyesBrowScalpSkinAndStageExact':True});print('R37_REVIEW_CLEANUP_DONE',flush=True)
+if __name__=='__main__':main()

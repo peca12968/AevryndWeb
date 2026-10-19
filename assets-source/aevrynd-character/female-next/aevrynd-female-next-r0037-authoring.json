@@ -1,0 +1,196 @@
+{
+  "revision": "female-next-r0037-c",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0037-c-anatomical-eye-review.blend",
+  "sourceSha256": "4d14d272a7ad71b4b5f0fff1d60e793001e7e1620e69636feac8c6c5837db0b9",
+  "status": "RETAIN_PARTIAL_INTEGRATED_OCULAR_INTERFACE_STATIC",
+  "baseline": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0036-b-contact-refined-brows.blend",
+  "baselineSha256": "d563918d780e6d86f52e8bd50562bc5beec427ccfc5ebb60ac88e3aa53185210",
+  "layers": {
+    "wetMarginAndCaruncle": [
+      "AFN37_L_upper_WetMargin",
+      "AFN37_L_lower_WetMargin",
+      "AFN37_L_Caruncle",
+      "AFN37_R_upper_WetMargin",
+      "AFN37_R_lower_WetMargin",
+      "AFN37_R_Caruncle"
+    ],
+    "displayedClosedLashes": [
+      "AFN37_L_upper_Lashes",
+      "AFN37_L_lower_Lashes",
+      "AFN37_R_upper_Lashes",
+      "AFN37_R_lower_Lashes"
+    ],
+    "editableHiddenLashControls": [
+      "AFN37_L_upper_LashControls",
+      "AFN37_L_lower_LashControls",
+      "AFN37_R_upper_LashControls",
+      "AFN37_R_lower_LashControls"
+    ],
+    "existingBrowScalpBodyAndEightOptics": "Preserved; only iris/sclera surface data/materials intentionally changed"
+  },
+  "rootBindings": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0037-eye-margin\\c-final-lash-bindings.json",
+  "tissueSharedSkinBindings": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0037-eye-margin\\c-review-tissue-bindings.json",
+  "contactEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0037-eye-margin\\c-saved-verification.json",
+  "authoring": "Closed native mesh eyelashes,32rings/eight radial sides plus capped ends, with editable native Curves controls hidden. Closed wet-mucosal patches share certified actual-skin base facets and exact original source-vertex boundary. Face/mouth rig and surface-deform not implemented.",
+  "rootCorrection": {
+    "history": [
+      {
+        "iteration": 0,
+        "closeRootPairs": 5
+      },
+      {
+        "iteration": 1,
+        "closeRootPairs": 2
+      },
+      {
+        "iteration": 2,
+        "closeRootPairs": 2
+      },
+      {
+        "iteration": 3,
+        "closeRootPairs": 2
+      },
+      {
+        "iteration": 4,
+        "closeRootPairs": 2
+      },
+      {
+        "iteration": 5,
+        "closeRootPairs": 2
+      }
+    ],
+    "movedFollicles": 9,
+    "maximumRootDisplacementM": 1.0066638165532888e-05,
+    "maximumAllowedRootDisplacementM": 5e-05,
+    "all220ShapesAndRadiiRetained": true,
+    "newBindingsOnActualSameSkin": true,
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0037-c-final-contact-review.blend",
+    "sourceSha256": "5fe2643802156623b289fd0e84a8fd19e7df577112c731f35661f95056b5ff5b",
+    "seconds": 3.4686672687530518
+  },
+  "opticalSurfaces": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\eyes\\makehuman-system-cc0\\brown_eye.png",
+    "sourceSha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+    "license": "CC0-1.0",
+    "iris": [
+      {
+        "side": "L",
+        "sourceCentrePixel": [
+          721,
+          301
+        ],
+        "radiusPixels": 121,
+        "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\textures\\aevrynd-r0037-L-iris-detail.png",
+        "sha256": "413c5930499c9707b6fb23230976da5eeaa8e157264cc686a57df8ba3bd130bf"
+      },
+      {
+        "side": "R",
+        "sourceCentrePixel": [
+          303,
+          730
+        ],
+        "radiusPixels": 123,
+        "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\textures\\aevrynd-r0037-R-iris-detail.png",
+        "sha256": "aa57f2c3c687824f1e8e41097bdf33d423a3b75186d05336fe3116d6a9876f93"
+      }
+    ],
+    "irisMethod": "Donor nonperiodic local luminance structure normalized by donor annular median, multiplied by exact previous iris texture annular median RGB. Same overall radial brown reflectance; no donor pupil or broad atlas shading. Not measured photometric albedo.",
+    "irisDetailClamp": [
+      0.45,
+      1.85
+    ],
+    "scleraVeinImage": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\textures\\aevrynd-r0037-sclera-vein-only.png",
+    "scleraVeinSha256": "3cbb732bf94df0c7fc7f7487bc20ede2cf0a15838fc1531f08d46c5c5aead567",
+    "scleraMethod": "Positive local red-excess residual after6pixel Gaussian low-frequency removal, iris/pupil/marker regions explicitly excluded. No baked gray lighting transferred.",
+    "sourceGeometryImported": false
+  },
+  "rebuild": [
+    "inspect-female-next-r0037-eye-margin.py",
+    "build-female-next-r0037-eye-margin.py",
+    "prepare-female-next-r0037-eye-textures.py",
+    "build-female-next-r0037-retained-lashes.py",
+    "verify-female-next-r0037-eye-margin.py (recordsB failure)",
+    "build-female-next-r0037-explicit-lashes.py --exact-display",
+    "prepare-female-next-r0037-review.py --exact-display",
+    "refine-female-next-r0037-displayed-contacts.py",
+    "refine-female-next-r0037-follicle-layout.py",
+    "verify-female-next-r0037-eye-margin.py --variant-c",
+    "render-female-next-r0037-review.py"
+  ],
+  "references": {
+    "primaryEyeRegionPaper": {
+      "url": "https://arxiv.org/html/1505.05916",
+      "title": "Rendering of Eyes for Eye-Shape Registration and Gaze Estimation",
+      "use": "Read model preparation and eye material/lash sections as conceptual reference; no paper code/model imported."
+    },
+    "primaryEyeCapturePaper": {
+      "url": "https://la.disneyresearch.com/wp-content/uploads/High-Quality-Capture-of-Eyes-Pub-Paper.pdf",
+      "title": "High-Quality Capture of Eyes",
+      "use": "Read source paper introduction on separate cornea/sclera/iris and capture limitations; current model is NOT a captured individual eye."
+    },
+    "artistData": {
+      "sourceURL": "https://files.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip",
+      "etag": "\"10bbb7ea-6160e7c0d7996\"",
+      "archiveBytes": 280737770,
+      "license": "CC0-1.0",
+      "explicitLicenseEvidence": "Downloaded .mhmat and .obj headers explicitly release these graphical assets as CC0 in September2020.",
+      "copyrightAtRelease": [
+        "Data Collection AB",
+        "Joel Palmius",
+        "Jonas Hauquier"
+      ],
+      "codeImported": false,
+      "files": [
+        {
+          "archiveEntry": "eyes/materials/brown_eye.png",
+          "localPath": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\eyes\\makehuman-system-cc0\\brown_eye.png",
+          "bytes": 610817,
+          "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+          "crc32": "633ddf33"
+        },
+        {
+          "archiveEntry": "eyes/materials/brown.mhmat",
+          "localPath": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\eyes\\makehuman-system-cc0\\brown.mhmat",
+          "bytes": 1247,
+          "sha256": "4abad93ce50541c08127721e77bce035640c9f16bed16cd0f5524b1cd5908465",
+          "crc32": "81e28c32"
+        },
+        {
+          "archiveEntry": "eyes/high-poly/high-poly.obj",
+          "localPath": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\eyes\\makehuman-system-cc0\\high-poly.obj",
+          "bytes": 100882,
+          "sha256": "da2493215b708a344c33dc72f2a9a5b8fa985dcc5a70ad3b208995cf871da8e1",
+          "crc32": "ed195a06"
+        },
+        {
+          "archiveEntry": "eyelashes/eyelashes01/eyelashes01.png",
+          "localPath": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\eyes\\makehuman-system-cc0\\eyelashes01.png",
+          "bytes": 91600,
+          "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+          "crc32": "c9506eef"
+        },
+        {
+          "archiveEntry": "eyelashes/eyelashes01/eyelashes01.mhmat",
+          "localPath": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\eyes\\makehuman-system-cc0\\eyelashes01.mhmat",
+          "bytes": 1074,
+          "sha256": "8029c99d94f3d87a1e81825fad6b90eec773ae6955a5b2592222ef237377e190",
+          "crc32": "8e1cee4a"
+        }
+      ],
+      "transferredBytes": 1138285,
+      "scope": "Data references until validated; donor eyeball geometry and shader program will not be imported."
+    },
+    "retainedOwnStudy": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0010-c-spaced-lashes-study.blend",
+      "sha256": "60bf9b8aea3accc303eb25fbfc5acedb621b59ca084420f3296b0ad666a2df9e",
+      "use": "All220evaluated old lash shape/radius templates retargeted; no old head/rig/global attachments imported."
+    }
+  },
+  "limitations": [
+    "Neutral static only, no blink/gaze/face rig/deforming attachment or continuous motion contact",
+    "Shared source-skin base/welded boundary is an intentional anatomical interface, separately counted from non-attachment crossings",
+    "Wet mucosal geometry is not a fluid meniscus bridging the original globe/body gap",
+    "Eye surface atlas is CC0 artistic detail, not measured subject albedo or captured3D optics",
+    "No scalp hairstyle/self/dynamics, body/clothing rig, engine/export/LOD/performance or female acceptance"
+  ]
+}

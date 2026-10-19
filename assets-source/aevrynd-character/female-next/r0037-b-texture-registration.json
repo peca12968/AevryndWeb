@@ -1,0 +1,36 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\eyes\\makehuman-system-cc0\\brown_eye.png",
+  "sourceSha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+  "license": "CC0-1.0",
+  "iris": [
+    {
+      "side": "L",
+      "sourceCentrePixel": [
+        721,
+        301
+      ],
+      "radiusPixels": 121,
+      "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\textures\\aevrynd-r0037-L-iris-detail.png",
+      "sha256": "413c5930499c9707b6fb23230976da5eeaa8e157264cc686a57df8ba3bd130bf"
+    },
+    {
+      "side": "R",
+      "sourceCentrePixel": [
+        303,
+        730
+      ],
+      "radiusPixels": 123,
+      "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\textures\\aevrynd-r0037-R-iris-detail.png",
+      "sha256": "aa57f2c3c687824f1e8e41097bdf33d423a3b75186d05336fe3116d6a9876f93"
+    }
+  ],
+  "irisMethod": "Donor nonperiodic local luminance structure normalized by donor annular median, multiplied by exact previous iris texture annular median RGB. Same overall radial brown reflectance; no donor pupil or broad atlas shading. Not measured photometric albedo.",
+  "irisDetailClamp": [
+    0.45,
+    1.85
+  ],
+  "scleraVeinImage": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\textures\\aevrynd-r0037-sclera-vein-only.png",
+  "scleraVeinSha256": "3cbb732bf94df0c7fc7f7487bc20ede2cf0a15838fc1531f08d46c5c5aead567",
+  "scleraMethod": "Positive local red-excess residual after6pixel Gaussian low-frequency removal, iris/pupil/marker regions explicitly excluded. No baked gray lighting transferred.",
+  "sourceGeometryImported": false
+}

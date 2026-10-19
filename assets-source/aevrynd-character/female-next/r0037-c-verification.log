@@ -1,0 +1,32 @@
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0037-eye-margin.py:25: DeprecationWarning: Arrays of 2-dimensional vectors are deprecated. Use arrays of 3-dimensional vectors instead. (deprecated in NumPy 2.0)
+  axes=np.delete(np.arange(3),np.argmax(abs(na)));p=[x[axes].copy() for x in A];clip=B[:,axes];area=np.cross(clip[1]-clip[0],clip[2]-clip[0]);clip=clip if area>=0 else clip[::-1]
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0037-eye-margin.py:29: DeprecationWarning: Arrays of 2-dimensional vectors are deprecated. Use arrays of 3-dimensional vectors instead. (deprecated in NumPy 2.0)
+  def side(x):return float(np.cross(d-c,x-c))
+00:00.641  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0036-b-contact-refined-brows.blend"
+00:01.766  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0037-c-anatomical-eye-review.blend"
+R33_CONTACT 0 220 0
+R33_CONTACT 0 220 0
+R33_CONTACT 0 220 0
+R33_CONTACT 0 220 0
+R33_CONTACT 0 220 0
+R33_CONTACT 0 220 0
+R33_CONTACT 0 220 0
+R33_CONTACT 0 220 0
+R33_CONTACT 0 220 0
+R33_CONTACT 0 220 0
+R37_TISSUE AFN37_L_upper_WetMargin badBody 0 self 0 badLash 0
+R33_CONTACT 0 220 0
+R37_TISSUE AFN37_L_lower_WetMargin badBody 0 self 0 badLash 0
+R33_CONTACT 0 220 0
+R37_TISSUE AFN37_L_Caruncle badBody 0 self 0 badLash 0
+R33_CONTACT 0 220 0
+R37_TISSUE AFN37_R_upper_WetMargin badBody 0 self 0 badLash 0
+R33_CONTACT 0 220 0
+R37_TISSUE AFN37_R_lower_WetMargin badBody 0 self 0 badLash 0
+R33_CONTACT 0 220 0
+R37_TISSUE AFN37_R_Caruncle badBody 0 self 0 badLash 0
+00:09.641  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0037-eye-margin\c-reopened-face.png'
+R37_REOPENED_DONE PASS_REOPENED_ATTACHED_EYE_MARGIN_NEUTRAL_SCOPE 9.742227554321289
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

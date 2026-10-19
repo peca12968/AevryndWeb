@@ -1,0 +1,58 @@
+{
+  "candidatePairs": 1251,
+  "unqualifiedCapsulePairs": 4,
+  "minimumTestedPairGapM": -3.2660747773246104e-07,
+  "failures": [
+    {
+      "segments": [
+        4154,
+        4278
+      ],
+      "gapM": 1.8888921199202883e-07
+    },
+    {
+      "segments": [
+        4154,
+        4279
+      ],
+      "gapM": 9.718273631219033e-07
+    },
+    {
+      "segments": [
+        4155,
+        4278
+      ],
+      "gapM": -3.2660747773246104e-07
+    },
+    {
+      "segments": [
+        4155,
+        4279
+      ],
+      "gapM": 4.4089784964051744e-07
+    }
+  ],
+  "scope": "All different-strand capsules plus complete actual displayed mesh self surfaces",
+  "exactDisplayedClosedMeshRefinement": [
+    {
+      "fibres": [
+        134,
+        138
+      ],
+      "actualSurfacePairs": 0,
+      "anchorAAgainstB": {
+        "classification": "outside",
+        "signedWinding": 8.42073939102754e-18,
+        "method": "Complete body triangle solid-angle winding in float64,65536-triangle chunks. Used when five rays disagree; no majority vote or exclusion."
+      },
+      "anchorBAgainstA": {
+        "classification": "outside",
+        "signedWinding": 1.371389883405561e-17,
+        "method": "Complete body triangle solid-angle winding in float64,65536-triangle chunks. Used when five rays disagree; no majority vote or exclusion."
+      },
+      "qualified": true
+    }
+  ],
+  "unqualifiedDisplayedInterstrandPairs": 0,
+  "meaning": "Positive broadphase capsule overlap is not declared zero. Actual displayed closed surface intersections plus complete float64 winding of one interior anchor each resolve remaining overlap/containment. Same-shaft displayed mesh self surfaces are also checked."
+}

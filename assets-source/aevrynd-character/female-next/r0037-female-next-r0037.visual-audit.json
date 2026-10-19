@@ -1,0 +1,81 @@
+{
+  "revision": "female-next-r0037-c",
+  "decision": "RETAIN_PARTIAL_INTEGRATED_OCULAR_INTERFACE_STATIC",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0037-c-anatomical-eye-review.blend",
+  "sourceSha256": "4d14d272a7ad71b4b5f0fff1d60e793001e7e1620e69636feac8c6c5837db0b9",
+  "fallback": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0036-b-contact-refined-brows.blend",
+  "fallbackSha256": "d563918d780e6d86f52e8bd50562bc5beec427ccfc5ebb60ac88e3aa53185210",
+  "appearance": {
+    "scope": "Neutral ocular-interface framing and surface detail only, not whole face/character or animated eyes",
+    "estimate": 58,
+    "confidenceRange": [
+      50,
+      66
+    ],
+    "visibleEvidence": "Matched complete head and closeup show irregular tapered lashes, attached inner-corner/rim response and less uniform iris detail; alternate/opposite views included. Skin and source globe size/pose unchanged.",
+    "deductions": [
+      "Large simple catchlights and corneal presentation remain visibly synthetic",
+      "Retained lash style is still sparse/procedural and caruncle detail subtle",
+      "Mucosal coating is not a fluid meniscus bridging the original body/globe gap",
+      "No facial deformation, blink/gaze, tear dynamics or complete-head realism acceptance"
+    ],
+    "noAutomaticOverallIncrease": true
+  },
+  "candidateDecisions": {
+    "A": "Rejected visual:340uniform lashes retain fine comb morphology; not adopted",
+    "B": "Unqualified contacts after220legacy shape transfer: virtual-boundary rounding, tissue/lash roots and conservative self overlaps",
+    "C": "Explicit displayed solids, exact original skin-vertex weld, complete actual mesh refinement and bounded nine-follicle anatomical rebind; retained only after final saved verification"
+  },
+  "rootLayout": {
+    "history": [
+      {
+        "iteration": 0,
+        "closeRootPairs": 5
+      },
+      {
+        "iteration": 1,
+        "closeRootPairs": 2
+      },
+      {
+        "iteration": 2,
+        "closeRootPairs": 2
+      },
+      {
+        "iteration": 3,
+        "closeRootPairs": 2
+      },
+      {
+        "iteration": 4,
+        "closeRootPairs": 2
+      },
+      {
+        "iteration": 5,
+        "closeRootPairs": 2
+      }
+    ],
+    "movedFollicles": 9,
+    "maximumRootDisplacementM": 1.0066638165532888e-05,
+    "maximumAllowedRootDisplacementM": 5e-05,
+    "all220ShapesAndRadiiRetained": true,
+    "newBindingsOnActualSameSkin": true,
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0037-c-final-contact-review.blend",
+    "sourceSha256": "5fe2643802156623b289fd0e84a8fd19e7df577112c731f35661f95056b5ff5b",
+    "seconds": 3.4686672687530518
+  },
+  "contactSummary": {
+    "pose": "neutral only",
+    "displayedLashFibres": 220,
+    "displayedLashTriangles": 112640,
+    "lashBodyUnqualifiedSegments": 0,
+    "actualDisplayedLashSelfPairs": 0,
+    "conservativeCapsulePairsStillOverlapping": 4,
+    "exactDisplayedInterstrandUnqualified": 0,
+    "tissueNonAttachmentBodyPairs": 0,
+    "legalSharedBodyFacetAndSeamPairs": 3141,
+    "qualification": "Actual source-bound base facets/welded boundary are explicitly proved anatomical joins, not claimed absent contacts. Conservative capsule overlaps refined against displayed closed solids and containment; no threshold relaxed."
+  },
+  "wholeCharacterScore": null,
+  "runtimePromotion": false,
+  "femaleAccepted": false,
+  "nextAction": "Use r37 C anatomical-eye-review as the ONE integrated female working source, with r36 B immediate fallback and all v249/r1128/r23/r32/r35 history retained. This is a partial neutral static ocular-interface improvement only:220displayed closed solid eyelashes with editable hidden controls, four closed source-skin attached wet-mucosal margin patches and two small caruncle tissues; iris/sclera data detail on unchanged optical geometry. Nine inferred follicles moved on the same actual lid by at most10.1um with new barycentric bindings, no hair dropped/thickened. Four conservative interstrand capsule overlaps were NOT called zero: all actual displayed surface pairs and full float64 closed-component containment anchors resolve them. Whole face still mannequin-like and large catchlights remain. Next full-head reassessment must address the major rejected scalp hairstyle, not more tiny brow/lash/iris tweaks. Inspect already-local explicitly licensed artist hair data (MakeHuman selected bob libraries and source provenance) and prove a non-synthetic complete silhouette plus continuous actual scalp-to-free-volume attachment in a small pilot before density/dynamics. Do not repeat stopped fixed-exit loft/funnel/analytic sheets, circular-shell/projection/hardtip rows, random noise/density/shader-only changes, or inaccessible same groom searches. If usable local artist data cannot map without sheets/intersections, stop that route and author independent root-bound guide cages with a nonsingular volume basis. Keep neutral body/eye geometry and calibrated skin/exposure, working brow and eye layers; full tear-fluid meniscus/individual eye optics, deforming face/oral/body/clothes rig, natural hair/self/dynamics, continuous contacts, rebuildable engine/LOD/performance and explicit female acceptance remain required. No runtime/website promotion or male work."
+}

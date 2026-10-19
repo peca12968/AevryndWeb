@@ -1,0 +1,930 @@
+{
+  "status": "PASS_REOPENED_ATTACHED_EYE_MARGIN_NEUTRAL_SCOPE",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0037-c-anatomical-eye-review.blend",
+  "sourceSha256": "4d14d272a7ad71b4b5f0fff1d60e793001e7e1620e69636feac8c6c5837db0b9",
+  "baseline": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0036-b-contact-refined-brows.blend",
+  "baselineSha256": "d563918d780e6d86f52e8bd50562bc5beec427ccfc5ebb60ac88e3aa53185210",
+  "originalAllBodyEyeGeometryUVSkinBrowScalpAndStageExact": true,
+  "changedOriginalMaterials": [
+    "AFN30_L_Iris",
+    "AFN30_L_Sclera",
+    "AFN30_R_Iris",
+    "AFN30_R_Sclera"
+  ],
+  "allLashNativeArraysExact": null,
+  "displayedClosedLashMeshProof": {
+    "AFN37_L_upper_Lashes": {
+      "vertices": 18576,
+      "triangles": 36864,
+      "components": 72,
+      "expectedFibres": 72,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "nonAdjacentTriangleSelfPairs": 0,
+      "examples": []
+    },
+    "AFN37_L_lower_Lashes": {
+      "vertices": 9804,
+      "triangles": 19456,
+      "components": 38,
+      "expectedFibres": 38,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "nonAdjacentTriangleSelfPairs": 0,
+      "examples": []
+    },
+    "AFN37_R_upper_Lashes": {
+      "vertices": 18576,
+      "triangles": 36864,
+      "components": 72,
+      "expectedFibres": 72,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "nonAdjacentTriangleSelfPairs": 0,
+      "examples": []
+    },
+    "AFN37_R_lower_Lashes": {
+      "vertices": 9804,
+      "triangles": 19456,
+      "components": 38,
+      "expectedFibres": 38,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "nonAdjacentTriangleSelfPairs": 0,
+      "examples": []
+    }
+  },
+  "actualLashWorldMatrices": {
+    "AFN37_L_upper_Lashes": [
+      [
+        0.951691210269928,
+        0.0,
+        0.0,
+        1.0609626770019531e-05
+      ],
+      [
+        0.0,
+        0.951691210269928,
+        0.0,
+        0.002941681304946542
+      ],
+      [
+        0.0,
+        0.0,
+        0.951691210269928,
+        -0.0008119391859509051
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "AFN37_L_lower_Lashes": [
+      [
+        0.951691210269928,
+        0.0,
+        0.0,
+        1.0609626770019531e-05
+      ],
+      [
+        0.0,
+        0.951691210269928,
+        0.0,
+        0.002941681304946542
+      ],
+      [
+        0.0,
+        0.0,
+        0.951691210269928,
+        -0.0008119391859509051
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "AFN37_R_upper_Lashes": [
+      [
+        0.951691210269928,
+        0.0,
+        0.0,
+        1.0609626770019531e-05
+      ],
+      [
+        0.0,
+        0.951691210269928,
+        0.0,
+        0.002941681304946542
+      ],
+      [
+        0.0,
+        0.0,
+        0.951691210269928,
+        -0.0008119391859509051
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "AFN37_R_lower_Lashes": [
+      [
+        0.951691210269928,
+        0.0,
+        0.0,
+        1.0609626770019531e-05
+      ],
+      [
+        0.0,
+        0.951691210269928,
+        0.0,
+        0.002941681304946542
+      ],
+      [
+        0.0,
+        0.0,
+        0.951691210269928,
+        -0.0008119391859509051
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "maxRootBindingErrorM": 4.380067117668843e-08,
+  "lashCount": 220,
+  "lashSegments": 6820,
+  "bodyCapsules": {
+    "status": "PASS_TESTED_STATIC_CAPSULES",
+    "curves": 220,
+    "segments": 6820,
+    "unqualifiedSegments": 0,
+    "rootFailures": [],
+    "minimumCertifiedClearanceLowerBoundM": 1.1449564308221693e-07,
+    "minimumSampledCVSurfaceGapM": 2.4853096714291402e-05,
+    "methods": {
+      "edge_distance": 138,
+      "lipschitz": 6682
+    },
+    "failureSamples": [],
+    "numericalAllowanceM": 1e-06,
+    "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+  },
+  "lashSelf": {
+    "candidatePairs": 1251,
+    "unqualifiedCapsulePairs": 4,
+    "minimumTestedPairGapM": -3.2660747773246104e-07,
+    "failures": [
+      {
+        "segments": [
+          4154,
+          4278
+        ],
+        "gapM": 1.8888921199202883e-07
+      },
+      {
+        "segments": [
+          4154,
+          4279
+        ],
+        "gapM": 9.718273631219033e-07
+      },
+      {
+        "segments": [
+          4155,
+          4278
+        ],
+        "gapM": -3.2660747773246104e-07
+      },
+      {
+        "segments": [
+          4155,
+          4279
+        ],
+        "gapM": 4.4089784964051744e-07
+      }
+    ],
+    "scope": "All different-strand capsules plus complete actual displayed mesh self surfaces",
+    "exactDisplayedClosedMeshRefinement": [
+      {
+        "fibres": [
+          134,
+          138
+        ],
+        "actualSurfacePairs": 0,
+        "anchorAAgainstB": {
+          "classification": "outside",
+          "signedWinding": 8.42073939102754e-18,
+          "method": "Complete body triangle solid-angle winding in float64,65536-triangle chunks. Used when five rays disagree; no majority vote or exclusion."
+        },
+        "anchorBAgainstA": {
+          "classification": "outside",
+          "signedWinding": 1.371389883405561e-17,
+          "method": "Complete body triangle solid-angle winding in float64,65536-triangle chunks. Used when five rays disagree; no majority vote or exclusion."
+        },
+        "qualified": true
+      }
+    ],
+    "unqualifiedDisplayedInterstrandPairs": 0,
+    "meaning": "Positive broadphase capsule overlap is not declared zero. Actual displayed closed surface intersections plus complete float64 winding of one interior anchor each resolve remaining overlap/containment. Same-shaft displayed mesh self surfaces are also checked."
+  },
+  "optics": {
+    "AFN30_L_Sclera": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 220,
+      "segments": 6820,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 0.0014748315615805004,
+      "minimumSampledCVSurfaceGapM": 0.0014816360773699613,
+      "methods": {
+        "lipschitz": 6820
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "AFN30_L_Cornea": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 220,
+      "segments": 6820,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 0.0013256683322853283,
+      "minimumSampledCVSurfaceGapM": 0.0013306190032595618,
+      "methods": {
+        "lipschitz": 6820
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "AFN30_L_Iris": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 220,
+      "segments": 6820,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 0.0018978530015090619,
+      "minimumSampledCVSurfaceGapM": 0.001902078277635786,
+      "methods": {
+        "lipschitz": 6820
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "AFN30_L_Pupil": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 220,
+      "segments": 6820,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 0.004032697271887238,
+      "minimumSampledCVSurfaceGapM": 0.00405004706632328,
+      "methods": {
+        "lipschitz": 6820
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "AFN30_R_Sclera": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 220,
+      "segments": 6820,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 0.001578930914751035,
+      "minimumSampledCVSurfaceGapM": 0.0015819176659918703,
+      "methods": {
+        "lipschitz": 6820
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "AFN30_R_Cornea": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 220,
+      "segments": 6820,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 0.0014948810443703242,
+      "minimumSampledCVSurfaceGapM": 0.001499140273129921,
+      "methods": {
+        "lipschitz": 6820
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "AFN30_R_Iris": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 220,
+      "segments": 6820,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 0.0020161770264383073,
+      "minimumSampledCVSurfaceGapM": 0.0020187705849296724,
+      "methods": {
+        "lipschitz": 6820
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "AFN30_R_Pupil": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 220,
+      "segments": 6820,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 0.004176008593669647,
+      "minimumSampledCVSurfaceGapM": 0.0041860890632069705,
+      "methods": {
+        "lipschitz": 6820
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    }
+  },
+  "tissues": {
+    "AFN37_L_upper_WetMargin": {
+      "vertices": 3682,
+      "triangles": 7360,
+      "connectedComponents": 1,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "nonAdjacentSelfPairs": 0,
+      "selfExamples": [],
+      "minimumTriangleAreaM2": 4.6176876269009145e-09,
+      "baseSourceReconstructionMaxM": 6.00973732952091e-08,
+      "bodyAttachment": {
+        "bodyBVHBroadphasePairs": 737,
+        "provedSharedSourceBaseFacetPairs": 688,
+        "provedSourceEdgeOrWeldSeamPairs": 49,
+        "floatBroadphaseNoFloat64Intersection": 0,
+        "unqualifiedNonAttachmentPairs": 0,
+        "failureSamples": [],
+        "scope": "Shared source base facets and exact welded source-skin boundary are anatomical joins. Every other candidate is refined by actual float64 triangle intersection and must be disjoint; no blanket eye-region exclusion.",
+        "interfaceToleranceM": 1e-06
+      },
+      "opticalTrianglePairs": {
+        "AFN30_L_Sclera": 0,
+        "AFN30_L_Cornea": 0,
+        "AFN30_L_Iris": 0,
+        "AFN30_L_Pupil": 0,
+        "AFN30_R_Sclera": 0,
+        "AFN30_R_Cornea": 0,
+        "AFN30_R_Iris": 0,
+        "AFN30_R_Pupil": 0
+      },
+      "lashCapsules": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 220,
+        "segments": 6820,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 1.2927755420337212e-06,
+        "minimumSampledCVSurfaceGapM": 2.418818118032791e-05,
+        "methods": {
+          "lipschitz": 6820
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "interiorAnchorBodyState": {
+        "classification": "outside",
+        "signedWinding": -1.3252311172764654e-16,
+        "method": "Complete body triangle solid-angle winding in float64,65536-triangle chunks. Used when five rays disagree; no majority vote or exclusion."
+      }
+    },
+    "AFN37_L_lower_WetMargin": {
+      "vertices": 3662,
+      "triangles": 7320,
+      "connectedComponents": 1,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "nonAdjacentSelfPairs": 0,
+      "selfExamples": [],
+      "minimumTriangleAreaM2": 4.056964548536008e-09,
+      "baseSourceReconstructionMaxM": 6.00973732952091e-08,
+      "bodyAttachment": {
+        "bodyBVHBroadphasePairs": 721,
+        "provedSharedSourceBaseFacetPairs": 672,
+        "provedSourceEdgeOrWeldSeamPairs": 49,
+        "floatBroadphaseNoFloat64Intersection": 0,
+        "unqualifiedNonAttachmentPairs": 0,
+        "failureSamples": [],
+        "scope": "Shared source base facets and exact welded source-skin boundary are anatomical joins. Every other candidate is refined by actual float64 triangle intersection and must be disjoint; no blanket eye-region exclusion.",
+        "interfaceToleranceM": 1e-06
+      },
+      "opticalTrianglePairs": {
+        "AFN30_L_Sclera": 0,
+        "AFN30_L_Cornea": 0,
+        "AFN30_L_Iris": 0,
+        "AFN30_L_Pupil": 0,
+        "AFN30_R_Sclera": 0,
+        "AFN30_R_Cornea": 0,
+        "AFN30_R_Iris": 0,
+        "AFN30_R_Pupil": 0
+      },
+      "lashCapsules": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 220,
+        "segments": 6820,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 1.516498062849408e-05,
+        "minimumSampledCVSurfaceGapM": 2.3049990885840335e-05,
+        "methods": {
+          "lipschitz": 6820
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "interiorAnchorBodyState": {
+        "classification": "outside",
+        "signedWinding": 2.473764752249402e-16,
+        "method": "Complete body triangle solid-angle winding in float64,65536-triangle chunks. Used when five rays disagree; no majority vote or exclusion."
+      }
+    },
+    "AFN37_L_Caruncle": {
+      "vertices": 589,
+      "triangles": 1174,
+      "connectedComponents": 1,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "nonAdjacentSelfPairs": 0,
+      "selfExamples": [],
+      "minimumTriangleAreaM2": 1.983726502945275e-09,
+      "baseSourceReconstructionMaxM": 6.007572048481605e-08,
+      "bodyAttachment": {
+        "bodyBVHBroadphasePairs": 94,
+        "provedSharedSourceBaseFacetPairs": 88,
+        "provedSourceEdgeOrWeldSeamPairs": 6,
+        "floatBroadphaseNoFloat64Intersection": 0,
+        "unqualifiedNonAttachmentPairs": 0,
+        "failureSamples": [],
+        "scope": "Shared source base facets and exact welded source-skin boundary are anatomical joins. Every other candidate is refined by actual float64 triangle intersection and must be disjoint; no blanket eye-region exclusion.",
+        "interfaceToleranceM": 1e-06
+      },
+      "opticalTrianglePairs": {
+        "AFN30_L_Sclera": 0,
+        "AFN30_L_Cornea": 0,
+        "AFN30_L_Iris": 0,
+        "AFN30_L_Pupil": 0,
+        "AFN30_R_Sclera": 0,
+        "AFN30_R_Cornea": 0,
+        "AFN30_R_Iris": 0,
+        "AFN30_R_Pupil": 0
+      },
+      "lashCapsules": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 220,
+        "segments": 6820,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.0032352880109023877,
+        "minimumSampledCVSurfaceGapM": 0.003242104663444287,
+        "methods": {
+          "lipschitz": 6820
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "interiorAnchorBodyState": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_R_upper_WetMargin": {
+      "vertices": 3608,
+      "triangles": 7212,
+      "connectedComponents": 1,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "nonAdjacentSelfPairs": 0,
+      "selfExamples": [],
+      "minimumTriangleAreaM2": 4.606851869422194e-09,
+      "baseSourceReconstructionMaxM": 6.00973732952091e-08,
+      "bodyAttachment": {
+        "bodyBVHBroadphasePairs": 754,
+        "provedSharedSourceBaseFacetPairs": 710,
+        "provedSourceEdgeOrWeldSeamPairs": 44,
+        "floatBroadphaseNoFloat64Intersection": 0,
+        "unqualifiedNonAttachmentPairs": 0,
+        "failureSamples": [],
+        "scope": "Shared source base facets and exact welded source-skin boundary are anatomical joins. Every other candidate is refined by actual float64 triangle intersection and must be disjoint; no blanket eye-region exclusion.",
+        "interfaceToleranceM": 1e-06
+      },
+      "opticalTrianglePairs": {
+        "AFN30_L_Sclera": 0,
+        "AFN30_L_Cornea": 0,
+        "AFN30_L_Iris": 0,
+        "AFN30_L_Pupil": 0,
+        "AFN30_R_Sclera": 0,
+        "AFN30_R_Cornea": 0,
+        "AFN30_R_Iris": 0,
+        "AFN30_R_Pupil": 0
+      },
+      "lashCapsules": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 220,
+        "segments": 6820,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 5.243081376650652e-06,
+        "minimumSampledCVSurfaceGapM": 2.326690262055902e-05,
+        "methods": {
+          "lipschitz": 6818,
+          "edge_distance": 2
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "interiorAnchorBodyState": {
+        "classification": "outside",
+        "signedWinding": -7.332945515596442e-16,
+        "method": "Complete body triangle solid-angle winding in float64,65536-triangle chunks. Used when five rays disagree; no majority vote or exclusion."
+      }
+    },
+    "AFN37_R_lower_WetMargin": {
+      "vertices": 3701,
+      "triangles": 7398,
+      "connectedComponents": 1,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "nonAdjacentSelfPairs": 0,
+      "selfExamples": [],
+      "minimumTriangleAreaM2": 3.905928747858292e-09,
+      "baseSourceReconstructionMaxM": 6.00973732952091e-08,
+      "bodyAttachment": {
+        "bodyBVHBroadphasePairs": 746,
+        "provedSharedSourceBaseFacetPairs": 703,
+        "provedSourceEdgeOrWeldSeamPairs": 43,
+        "floatBroadphaseNoFloat64Intersection": 0,
+        "unqualifiedNonAttachmentPairs": 0,
+        "failureSamples": [],
+        "scope": "Shared source base facets and exact welded source-skin boundary are anatomical joins. Every other candidate is refined by actual float64 triangle intersection and must be disjoint; no blanket eye-region exclusion.",
+        "interfaceToleranceM": 1e-06
+      },
+      "opticalTrianglePairs": {
+        "AFN30_L_Sclera": 0,
+        "AFN30_L_Cornea": 0,
+        "AFN30_L_Iris": 0,
+        "AFN30_L_Pupil": 0,
+        "AFN30_R_Sclera": 0,
+        "AFN30_R_Cornea": 0,
+        "AFN30_R_Iris": 0,
+        "AFN30_R_Pupil": 0
+      },
+      "lashCapsules": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 220,
+        "segments": 6820,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 4.993162539929821e-06,
+        "minimumSampledCVSurfaceGapM": 2.3513851747922474e-05,
+        "methods": {
+          "lipschitz": 6820
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "interiorAnchorBodyState": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      }
+    },
+    "AFN37_R_Caruncle": {
+      "vertices": 507,
+      "triangles": 1010,
+      "connectedComponents": 1,
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "nonAdjacentSelfPairs": 0,
+      "selfExamples": [],
+      "minimumTriangleAreaM2": 2.199285355912812e-09,
+      "baseSourceReconstructionMaxM": 6.007572048481605e-08,
+      "bodyAttachment": {
+        "bodyBVHBroadphasePairs": 89,
+        "provedSharedSourceBaseFacetPairs": 82,
+        "provedSourceEdgeOrWeldSeamPairs": 7,
+        "floatBroadphaseNoFloat64Intersection": 0,
+        "unqualifiedNonAttachmentPairs": 0,
+        "failureSamples": [],
+        "scope": "Shared source base facets and exact welded source-skin boundary are anatomical joins. Every other candidate is refined by actual float64 triangle intersection and must be disjoint; no blanket eye-region exclusion.",
+        "interfaceToleranceM": 1e-06
+      },
+      "opticalTrianglePairs": {
+        "AFN30_L_Sclera": 0,
+        "AFN30_L_Cornea": 0,
+        "AFN30_L_Iris": 0,
+        "AFN30_L_Pupil": 0,
+        "AFN30_R_Sclera": 0,
+        "AFN30_R_Cornea": 0,
+        "AFN30_R_Iris": 0,
+        "AFN30_R_Pupil": 0
+      },
+      "lashCapsules": {
+        "status": "PASS_TESTED_STATIC_CAPSULES",
+        "curves": 220,
+        "segments": 6820,
+        "unqualifiedSegments": 0,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": 0.0030667813483466,
+        "minimumSampledCVSurfaceGapM": 0.0030915590817759873,
+        "methods": {
+          "lipschitz": 6820
+        },
+        "failureSamples": [],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "interiorAnchorBodyState": {
+        "classification": "outside",
+        "signedWinding": 1.4135798584282297e-16,
+        "method": "Complete body triangle solid-angle winding in float64,65536-triangle chunks. Used when five rays disagree; no majority vote or exclusion."
+      }
+    }
+  },
+  "betweenTissues": {
+    "AFN37_L_upper_WetMargin / AFN37_L_lower_WetMargin": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    },
+    "AFN37_L_upper_WetMargin / AFN37_L_Caruncle": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    },
+    "AFN37_L_upper_WetMargin / AFN37_R_upper_WetMargin": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    },
+    "AFN37_L_upper_WetMargin / AFN37_R_lower_WetMargin": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    },
+    "AFN37_L_upper_WetMargin / AFN37_R_Caruncle": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    },
+    "AFN37_L_lower_WetMargin / AFN37_L_Caruncle": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    },
+    "AFN37_L_lower_WetMargin / AFN37_R_upper_WetMargin": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    },
+    "AFN37_L_lower_WetMargin / AFN37_R_lower_WetMargin": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    },
+    "AFN37_L_lower_WetMargin / AFN37_R_Caruncle": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    },
+    "AFN37_L_Caruncle / AFN37_R_upper_WetMargin": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    },
+    "AFN37_L_Caruncle / AFN37_R_lower_WetMargin": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    },
+    "AFN37_L_Caruncle / AFN37_R_Caruncle": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    },
+    "AFN37_R_upper_WetMargin / AFN37_R_lower_WetMargin": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    },
+    "AFN37_R_upper_WetMargin / AFN37_R_Caruncle": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    },
+    "AFN37_R_lower_WetMargin / AFN37_R_Caruncle": {
+      "actualTrianglePairs": 0,
+      "examples": []
+    }
+  },
+  "existingHair": {
+    "AFN33_C_BODY_BOUND_FIBRES": {
+      "lashCapsules": {
+        "status": "PASS_NEUTRAL_SCALP_BROW_CAPSULE_SEPARATION",
+        "totalScalpSegments": 1524000,
+        "totalBrowSegments": 6820,
+        "scalpSegmentsExcludedByCompleteBrowAABB": 1524000,
+        "remainingScalpSegments": 0,
+        "directFiniteCapsulePairs": 0,
+        "unqualifiedPairs": 0,
+        "minimumCertifiedGapLowerBoundM": 0.032802847351772746,
+        "failureSamples": [],
+        "scope": "All complete actual POLY segments, max endpoint radii, exact preserved world matrices; broadphase exclusions or finite segment-pair distances. Not scalp self/dynamics."
+      },
+      "tissues": {
+        "AFN37_L_upper_WetMargin": {
+          "totalSegments": 1524000,
+          "completeSegmentAABBExcluded": 1524000,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_L_lower_WetMargin": {
+          "totalSegments": 1524000,
+          "completeSegmentAABBExcluded": 1524000,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_L_Caruncle": {
+          "totalSegments": 1524000,
+          "completeSegmentAABBExcluded": 1524000,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_R_upper_WetMargin": {
+          "totalSegments": 1524000,
+          "completeSegmentAABBExcluded": 1524000,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_R_lower_WetMargin": {
+          "totalSegments": 1524000,
+          "completeSegmentAABBExcluded": 1524000,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_R_Caruncle": {
+          "totalSegments": 1524000,
+          "completeSegmentAABBExcluded": 1524000,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        }
+      }
+    },
+    "AFN36_L_BrowFibres": {
+      "lashCapsules": {
+        "status": "PASS_NEUTRAL_SCALP_BROW_CAPSULE_SEPARATION",
+        "totalScalpSegments": 10350,
+        "totalBrowSegments": 6820,
+        "scalpSegmentsExcludedByCompleteBrowAABB": 10350,
+        "remainingScalpSegments": 0,
+        "directFiniteCapsulePairs": 0,
+        "unqualifiedPairs": 0,
+        "minimumCertifiedGapLowerBoundM": 0.008300092470476805,
+        "failureSamples": [],
+        "scope": "All complete actual POLY segments, max endpoint radii, exact preserved world matrices; broadphase exclusions or finite segment-pair distances. Not scalp self/dynamics."
+      },
+      "tissues": {
+        "AFN37_L_upper_WetMargin": {
+          "totalSegments": 10350,
+          "completeSegmentAABBExcluded": 10350,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_L_lower_WetMargin": {
+          "totalSegments": 10350,
+          "completeSegmentAABBExcluded": 10350,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_L_Caruncle": {
+          "totalSegments": 10350,
+          "completeSegmentAABBExcluded": 10350,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_R_upper_WetMargin": {
+          "totalSegments": 10350,
+          "completeSegmentAABBExcluded": 10350,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_R_lower_WetMargin": {
+          "totalSegments": 10350,
+          "completeSegmentAABBExcluded": 10350,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_R_Caruncle": {
+          "totalSegments": 10350,
+          "completeSegmentAABBExcluded": 10350,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        }
+      }
+    },
+    "AFN36_R_BrowFibres": {
+      "lashCapsules": {
+        "status": "PASS_NEUTRAL_SCALP_BROW_CAPSULE_SEPARATION",
+        "totalScalpSegments": 10350,
+        "totalBrowSegments": 6820,
+        "scalpSegmentsExcludedByCompleteBrowAABB": 10350,
+        "remainingScalpSegments": 0,
+        "directFiniteCapsulePairs": 0,
+        "unqualifiedPairs": 0,
+        "minimumCertifiedGapLowerBoundM": 0.007902171861956298,
+        "failureSamples": [],
+        "scope": "All complete actual POLY segments, max endpoint radii, exact preserved world matrices; broadphase exclusions or finite segment-pair distances. Not scalp self/dynamics."
+      },
+      "tissues": {
+        "AFN37_L_upper_WetMargin": {
+          "totalSegments": 10350,
+          "completeSegmentAABBExcluded": 10350,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_L_lower_WetMargin": {
+          "totalSegments": 10350,
+          "completeSegmentAABBExcluded": 10350,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_L_Caruncle": {
+          "totalSegments": 10350,
+          "completeSegmentAABBExcluded": 10350,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_R_upper_WetMargin": {
+          "totalSegments": 10350,
+          "completeSegmentAABBExcluded": 10350,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_R_lower_WetMargin": {
+          "totalSegments": 10350,
+          "completeSegmentAABBExcluded": 10350,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        },
+        "AFN37_R_Caruncle": {
+          "totalSegments": 10350,
+          "completeSegmentAABBExcluded": 10350,
+          "directSegments": 0,
+          "unqualifiedSegments": 0,
+          "failureSamples": []
+        }
+      }
+    }
+  },
+  "matchedThreeFullHeadViews": true,
+  "seconds": 9.74166989326477,
+  "limits": [
+    "Neutral static only, no blink/gaze/face rig/deforming attachment or continuous motion contact",
+    "Shared source-skin base/welded boundary is an intentional anatomical interface, separately counted from non-attachment crossings",
+    "Wet mucosal geometry is not a fluid meniscus bridging the original globe/body gap",
+    "Eye surface atlas is CC0 artistic detail, not measured subject albedo or captured3D optics",
+    "No scalp hairstyle/self/dynamics, body/clothing rig, engine/export/LOD/performance or female acceptance"
+  ]
+}
