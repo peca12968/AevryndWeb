@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "revision": "female-next-r0043-b",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0043-b-consistent-ocular-junction.blend",
+  "sourceSha256": "9e7217c93337a1059fd30bf3fdfe5e1c0d67f4d7cde04991d86b45a423639f93",
+  "status": "RETAIN_INTEGRATED_NEUTRAL_JUNCTION_STUDY_VISUAL_GAIN_INSUFFICIENT_FOR_WORKING_PROMOTION",
+  "parentSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0042-b-shadow-quality-review.blend",
+  "parentSourceSha256": "d62c180a5af61f6f8d800926b101738c89a8fbe7785fe1054fd655fd018824da",
+  "nativeControlSourceRetained": true,
+  "restLayer": "AFN43_NeutralLidRest / AFN43_NEUTRAL_LID_REST_DATA; exact source triangles/cornerUV and relative deformation normals; point-count mismatch bypasses to original input",
+  "layerData": "Embedded self-contained. Existing packed CC0 textures and own layers inherited; no third-party groom imported.",
+  "bindings": {
+    "lashes": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0043-ocular-junction\\b-lash-bindings.json",
+    "tissues": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0043-ocular-junction\\b-tissue-bindings.json",
+    "meshCache": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0043-b-lashes.npz"
+  },
+  "contact": {
+    "savedNeutralStatus": "PASS_TESTED_NEUTRAL_JUNCTION_SCOPE",
+    "additionalStatus": "PASS_TESTED_NEUTRAL_ADDITIONAL_SCOPE",
+    "bodyChangedRegionSelfPairs": 0,
+    "bodyOpticalTrianglePairs": 0,
+    "lashBodyUnqualifiedSegments": 0,
+    "actualDisplayedLashPairFailures": 0,
+    "tissueNonAttachmentPairs": 0,
+    "tissueSelfPairs": 0,
+    "tissueOpticalPairs": 0,
+    "betweenTissuePairs": 0,
+    "rootReconstructionMaxM": 6.678051546541695e-08,
+    "skinBaseReconstructionMaxM": 6.803424308284641e-08,
+    "allSixTissuesClosedAndInteriorAnchorsOutside": true,
+    "scope": "Actual saved neutral geometry only. Shared exact source-skin base/weld seams are separately certified. No blink,continuous,full scalp self,body/clothing or engine acceptance. Distances are sampled unsigned surface distances, not global minima."
+  },
+  "function": {
+    "reopened": true,
+    "nativeCageMultiresUVPreserved": true,
+    "exactSourceTriangleOrderAndEvaluatedPigmentUV": true,
+    "ownRestLayer": "Explicit full-resolution index delta/topology/normal-transport layer after original Multires, native-level mismatch bypass verified",
+    "layerDisabledReturnsExactSource": true,
+    "lowLevelBypassAndRoundTrip": true,
+    "limitations": [
+      "Static current-rest data, not a facial rig or calibrated optical/tear-fluid model",
+      "Rebuild companion template/UV/skin fields when source topology/order/material fields change",
+      "Wet tissue and lash outputs are rebuilt offline, not yet live attachments",
+      "95MBsource includes full triangle/UV template; runtime requires independent export/LOD/performance work"
+    ]
+  },
+  "rebuild": "Blender5.2.2, --disable-autoexec --threads4. Inspect r43 ocular junction on pinnedr42B, build r43 -- --consistent-attachments, verify/review with same flag. Local pinnedr37 binding sidecars andr42source required, no download/add-on/new server.",
+  "newOverallScore": null,
+  "workingMainPromoted": false
+}

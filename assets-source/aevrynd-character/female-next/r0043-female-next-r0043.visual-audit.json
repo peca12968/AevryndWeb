@@ -1,0 +1,99 @@
+{
+  "revision": "female-next-r0043-b",
+  "decision": "RETAIN_INTEGRATED_NEUTRAL_JUNCTION_STUDY_VISUAL_GAIN_INSUFFICIENT_FOR_WORKING_PROMOTION",
+  "workingSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0042-b-shadow-quality-review.blend",
+  "workingSourceSha256": "d62c180a5af61f6f8d800926b101738c89a8fbe7785fe1054fd655fd018824da",
+  "studySource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0043-b-consistent-ocular-junction.blend",
+  "studySha256": "9e7217c93337a1059fd30bf3fdfe5e1c0d67f4d7cde04991d86b45a423639f93",
+  "appearance": {
+    "completeHeadBodyMatchedViews": true,
+    "benefit": "Local lid/globe apposition reduced, with attached margin/lash structures retained.",
+    "decision": "Overall staring/artificial eye presentation still insufficiently improved; study only, no source replacement or score increase.",
+    "overallScore": null,
+    "centralApertureMaxChangeM": 0.0,
+    "sampledAfter": {
+      "L": {
+        "upper": {
+          "minimumSampledGapM": 0.0001992748148040846,
+          "medianSampledGapM": 0.00028229254530742764,
+          "maximumSampledGapM": 0.0007857196033000946,
+          "samples": 99
+        },
+        "lower": {
+          "minimumSampledGapM": 0.00022611275198869407,
+          "medianSampledGapM": 0.0003102824848610908,
+          "maximumSampledGapM": 0.0008594623650424182,
+          "samples": 99
+        }
+      },
+      "R": {
+        "upper": {
+          "minimumSampledGapM": 0.0002296590682817623,
+          "medianSampledGapM": 0.00030925736064091325,
+          "maximumSampledGapM": 0.0007717196131125093,
+          "samples": 99
+        },
+        "lower": {
+          "minimumSampledGapM": 0.0002313371660420671,
+          "medianSampledGapM": 0.0003277178620919585,
+          "maximumSampledGapM": 0.000851245888043195,
+          "samples": 99
+        }
+      }
+    }
+  },
+  "function": {
+    "reopened": true,
+    "nativeCageMultiresUVPreserved": true,
+    "exactSourceTriangleOrderAndEvaluatedPigmentUV": true,
+    "ownRestLayer": "Explicit full-resolution index delta/topology/normal-transport layer after original Multires, native-level mismatch bypass verified",
+    "layerDisabledReturnsExactSource": true,
+    "lowLevelBypassAndRoundTrip": true,
+    "limitations": [
+      "Static current-rest data, not a facial rig or calibrated optical/tear-fluid model",
+      "Rebuild companion template/UV/skin fields when source topology/order/material fields change",
+      "Wet tissue and lash outputs are rebuilt offline, not yet live attachments",
+      "95MBsource includes full triangle/UV template; runtime requires independent export/LOD/performance work"
+    ]
+  },
+  "contact": {
+    "savedNeutralStatus": "PASS_TESTED_NEUTRAL_JUNCTION_SCOPE",
+    "additionalStatus": "PASS_TESTED_NEUTRAL_ADDITIONAL_SCOPE",
+    "bodyChangedRegionSelfPairs": 0,
+    "bodyOpticalTrianglePairs": 0,
+    "lashBodyUnqualifiedSegments": 0,
+    "actualDisplayedLashPairFailures": 0,
+    "tissueNonAttachmentPairs": 0,
+    "tissueSelfPairs": 0,
+    "tissueOpticalPairs": 0,
+    "betweenTissuePairs": 0,
+    "rootReconstructionMaxM": 6.678051546541695e-08,
+    "skinBaseReconstructionMaxM": 6.803424308284641e-08,
+    "allSixTissuesClosedAndInteriorAnchorsOutside": true,
+    "scope": "Actual saved neutral geometry only. Shared exact source-skin base/weld seams are separately certified. No blink,continuous,full scalp self,body/clothing or engine acceptance. Distances are sampled unsigned surface distances, not global minima."
+  },
+  "runtime": {
+    "asset": null,
+    "status": "NOT_PROMOTED",
+    "exportLODPerformance": "NOT_QUALIFIED"
+  },
+  "A": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0043-a-lid-apposition.blend",
+    "sha256": "c42a811dae74869fbf32d861425749526308c79da44c262277f171150f6bb2ba",
+    "decision": "REJECT_ACTUAL_LASH_INTERSECTION_NORMAL_CONVENTION_MISMATCH",
+    "actualIntersectingFibrePairs": 1
+  },
+  "femaleAccepted": false,
+  "maleStarted": false,
+  "references": [
+    {
+      "url": "https://www.uclahealth.org/sites/default/files/documents/1_11_12_tajudeen_bleph_ch176.pdf",
+      "use": "Anatomical modeling reference; existing1.19..1.30mm superioriris coverage does not justify indiscriminate lowering. Not a universal aesthetic/medical prescription."
+    },
+    {
+      "url": "https://studios.disneyresearch.com/2014/11/19/high-quality-capture-of-eyes/",
+      "use": "Respect dependent ocular structures. Own geometry/math/scripts, no Disney asset/code imported."
+    }
+  ],
+  "nextAction": "Keep r42B as the ONE owned complete working character. r43B is a complete integrated neutral ocular-interface study with9539changed fine body vertices, exact original native cage/UV/skin fields/optical meshes/lighting/scalp rest and locked actual triangle topology. A is rejected for one actual intersecting lash pair; B uses source-normal-preserving relative face/tissue transport and passes tested neutral body/8optics/sixattachedtissues/220closedlashes/self and affected scalp/brow scope. Actual frontal aperture remains unchanged; sampled lid/globe gaps reduce from0.46..1.61mm to0.20..0.86mm, but whole-face staring appearance has not materially improved, so DO NOT promote B or raise face/overall scores. Do not repeat neutral apposition amplitude/offset tweaks. Next production is ONE integrated expressive-eye candidate: author actual open/half/closed lid shapes including canthi and skin fold on this same complete character, carry wet tissues and lash follicles through actual body triangle/barycentric attachment updates, then render a playable complete-head blink/gaze clip and independently test actual affected geometry over declared poses and continuous motion. r43B can be the isolated candidate foundation with its verified current neutral contact scope; r42B remains fallback and comparison. No old global angular-blink field or isolated wetline/highlight-only method. Cap/sheet hair still unacceptable; stopped r40/r41 transfer family stays stopped. Oral/body/clothesrig,natural hair motion,self/continuous contacts,engine/export/LOD/real performance,weighted85each80 and explicit female acceptance remain required. No male or formal runtime/site promotion."
+}
