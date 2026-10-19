@@ -1,0 +1,15 @@
+00:01.031  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0051-b-integrated-eye-wall.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\run-female-next-r0052-native-session.py", line 13, in run
+    k.main()
+    ~~~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0052-combed-bob.py", line 65, in main
+    logs=native(o,STROKES)
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0052-combed-bob.py", line 45, in native
+    result=bpy.ops.sculpt_curves.brush_stroke(stroke=stroke,mode='NORMAL')
+TypeError: Converting py args to operator properties: SCULPT_CURVES_OT_brush_stroke.stroke error converting a member of a collection from a dicts into an RNA collection, failed with: TypeError: Converting a Python list to an RNA collection: keyword "pen_flip" unrecognized
+
+
+00:06.031  blend            | Saved session recovery to "C:\Users\USER\AppData\Local\Temp\quit.blend"
+
+Blender quit

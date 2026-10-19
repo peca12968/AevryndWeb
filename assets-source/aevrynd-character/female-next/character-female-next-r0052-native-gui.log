@@ -1,0 +1,15 @@
+00:04.531  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0051-b-integrated-eye-wall.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\run-female-next-r0052-native-session.py", line 13, in run
+    k.main()
+    ~~~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0052-combed-bob.py", line 63, in main
+    logs=native(o,STROKES)
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0052-combed-bob.py", line 25, in native
+    bpy.ops.object.mode_set(mode='SCULPT_CURVES')
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Operator bpy.ops.object.mode_set.poll() Context missing active object
+
+00:06.281  blend            | Saved session recovery to "C:\Users\USER\AppData\Local\Temp\quit.blend"
+
+Blender quit

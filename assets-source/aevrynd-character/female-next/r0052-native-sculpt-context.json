@@ -1,0 +1,1425 @@
+{
+  "brushNames": [
+    "Smooth",
+    "Slide",
+    "Select",
+    "Pull Tips",
+    "Puff",
+    "Pinch",
+    "Grow/Shrink",
+    "Density",
+    "Delete",
+    "Comb",
+    "Add"
+  ],
+  "activatedBrush": "Comb",
+  "activation": [
+    "FINISHED"
+  ],
+  "brushProps": {
+    "rna_type": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "name": {
+      "type": "STRING",
+      "readonly": false
+    },
+    "name_full": {
+      "type": "STRING",
+      "readonly": true
+    },
+    "id_type": {
+      "type": "ENUM",
+      "readonly": true,
+      "items": [
+        "ACTION",
+        "ARMATURE",
+        "BRUSH",
+        "CACHEFILE",
+        "CAMERA",
+        "COLLECTION",
+        "CURVE",
+        "CURVES",
+        "FONT",
+        "GREASEPENCIL",
+        "GREASEPENCIL_V3",
+        "IMAGE",
+        "KEY",
+        "LATTICE",
+        "LIBRARY",
+        "LIGHT",
+        "LIGHT_PROBE",
+        "LINESTYLE",
+        "MASK",
+        "MATERIAL",
+        "MESH",
+        "META",
+        "MOVIECLIP",
+        "NODETREE",
+        "OBJECT",
+        "PAINTCURVE",
+        "PALETTE",
+        "PARTICLE",
+        "POINTCLOUD",
+        "SCENE",
+        "SCREEN",
+        "SOUND",
+        "SPEAKER",
+        "TEXT",
+        "TEXTURE",
+        "VOLUME",
+        "WINDOWMANAGER",
+        "WORKSPACE",
+        "WORLD"
+      ]
+    },
+    "session_uid": {
+      "type": "INT",
+      "readonly": true
+    },
+    "is_evaluated": {
+      "type": "BOOLEAN",
+      "readonly": true
+    },
+    "original": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "users": {
+      "type": "INT",
+      "readonly": true
+    },
+    "use_fake_user": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_extra_user": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "is_embedded_data": {
+      "type": "BOOLEAN",
+      "readonly": true
+    },
+    "is_linked_packed": {
+      "type": "BOOLEAN",
+      "readonly": true
+    },
+    "is_missing": {
+      "type": "BOOLEAN",
+      "readonly": true
+    },
+    "is_runtime_data": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "is_editable": {
+      "type": "BOOLEAN",
+      "readonly": true
+    },
+    "tag": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "is_library_indirect": {
+      "type": "BOOLEAN",
+      "readonly": true
+    },
+    "library": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "library_weak_reference": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "asset_data": {
+      "type": "POINTER",
+      "readonly": false
+    },
+    "override_library": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "preview": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "has_unsaved_changes": {
+      "type": "BOOLEAN",
+      "readonly": true
+    },
+    "blend": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "MIX",
+        "DARKEN",
+        "MUL",
+        "COLORBURN",
+        "LINEARBURN",
+        "LIGHTEN",
+        "SCREEN",
+        "COLORDODGE",
+        "ADD",
+        "OVERLAY",
+        "SOFTLIGHT",
+        "HARDLIGHT",
+        "VIVIDLIGHT",
+        "LINEARLIGHT",
+        "PINLIGHT",
+        "DIFFERENCE",
+        "EXCLUSION",
+        "SUB",
+        "HUE",
+        "SATURATION",
+        "COLOR",
+        "LUMINOSITY",
+        "ERASE_ALPHA",
+        "ADD_ALPHA"
+      ]
+    },
+    "sculpt_brush_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "DRAW",
+        "DRAW_SHARP",
+        "CLAY",
+        "CLAY_STRIPS",
+        "CLAY_THUMB",
+        "LAYER",
+        "INFLATE",
+        "BLOB",
+        "CREASE",
+        "SMOOTH",
+        "PLANE",
+        "MULTIPLANE_SCRAPE",
+        "PINCH",
+        "GRAB",
+        "ELASTIC_DEFORM",
+        "SNAKE_HOOK",
+        "THUMB",
+        "POSE",
+        "NUDGE",
+        "ROTATE",
+        "TOPOLOGY",
+        "BOUNDARY",
+        "SCENE_PROJECT",
+        "CLOTH",
+        "SIMPLIFY",
+        "MASK",
+        "DRAW_FACE_SETS",
+        "DISPLACEMENT_ERASER",
+        "DISPLACEMENT_SMEAR",
+        "PAINT",
+        "SMEAR",
+        "BLUR"
+      ]
+    },
+    "vertex_brush_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "DRAW",
+        "BLUR",
+        "AVERAGE",
+        "SMEAR"
+      ]
+    },
+    "weight_brush_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "DRAW",
+        "BLUR",
+        "AVERAGE",
+        "SMEAR"
+      ]
+    },
+    "image_brush_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "DRAW",
+        "SOFTEN",
+        "SMEAR",
+        "CLONE",
+        "FILL",
+        "MASK"
+      ]
+    },
+    "gpencil_brush_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "DRAW",
+        "FILL",
+        "ERASE",
+        "TINT"
+      ]
+    },
+    "gpencil_vertex_brush_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "DRAW",
+        "BLUR",
+        "AVERAGE",
+        "SMEAR",
+        "REPLACE"
+      ]
+    },
+    "gpencil_sculpt_brush_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "SMOOTH",
+        "THICKNESS",
+        "STRENGTH",
+        "RANDOMIZE",
+        "GRAB",
+        "PUSH",
+        "TWIST",
+        "PINCH",
+        "CLONE"
+      ]
+    },
+    "gpencil_weight_brush_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "WEIGHT",
+        "BLUR",
+        "AVERAGE",
+        "SMEAR"
+      ]
+    },
+    "curves_sculpt_brush_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "SELECTION_PAINT",
+        "ADD",
+        "DELETE",
+        "DENSITY",
+        "COMB",
+        "SNAKE_HOOK",
+        "GROW_SHRINK",
+        "PINCH",
+        "PUFF",
+        "SMOOTH",
+        "SLIDE"
+      ]
+    },
+    "direction": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "ADD",
+        "SUBTRACT"
+      ]
+    },
+    "stroke_method": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "DOTS",
+        "DRAG_DOT",
+        "SPACE",
+        "AIRBRUSH",
+        "ANCHORED",
+        "LINE",
+        "CURVE"
+      ]
+    },
+    "sculpt_plane": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "AREA",
+        "VIEW",
+        "X",
+        "Y",
+        "Z"
+      ]
+    },
+    "mask_tool": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "DRAW",
+        "SMOOTH"
+      ]
+    },
+    "curve_distance_falloff_preset": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "CUSTOM",
+        "SMOOTH",
+        "SMOOTHER",
+        "SPHERE",
+        "ROOT",
+        "SHARP",
+        "LIN",
+        "POW4",
+        "INVSQUARE",
+        "CONSTANT"
+      ]
+    },
+    "deform_target": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "GEOMETRY",
+        "CLOTH_SIM"
+      ]
+    },
+    "elastic_deform_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "GRAB",
+        "GRAB_BISCALE",
+        "GRAB_TRISCALE",
+        "SCALE",
+        "TWIST"
+      ]
+    },
+    "snake_hook_deform_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "FALLOFF",
+        "ELASTIC"
+      ]
+    },
+    "plane_inversion_mode": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "INVERT_DISPLACEMENT",
+        "SWAP_DEPTH_AND_HEIGHT"
+      ]
+    },
+    "project_ray_direction_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "VIEW_NORMAL",
+        "PLANE_NORMAL"
+      ]
+    },
+    "minimum_distance": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "cloth_deform_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "DRAG",
+        "PUSH",
+        "PINCH_POINT",
+        "PINCH_PERPENDICULAR",
+        "INFLATE",
+        "GRAB",
+        "EXPAND",
+        "SNAKE_HOOK"
+      ]
+    },
+    "cloth_force_falloff_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "RADIAL",
+        "PLANE"
+      ]
+    },
+    "cloth_simulation_area_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "LOCAL",
+        "GLOBAL",
+        "DYNAMIC"
+      ]
+    },
+    "boundary_falloff_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "CONSTANT",
+        "RADIUS",
+        "LOOP",
+        "LOOP_INVERT"
+      ]
+    },
+    "smooth_deform_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "LAPLACIAN",
+        "SURFACE"
+      ]
+    },
+    "smear_deform_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "DRAG",
+        "PINCH",
+        "EXPAND"
+      ]
+    },
+    "slide_deform_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "DRAG",
+        "PINCH",
+        "EXPAND"
+      ]
+    },
+    "boundary_deform_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "BEND",
+        "EXPAND",
+        "INFLATE",
+        "GRAB",
+        "TWIST",
+        "SMOOTH"
+      ]
+    },
+    "pose_deform_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "ROTATE_TWIST",
+        "SCALE_TRANSLATE",
+        "SQUASH_STRETCH"
+      ]
+    },
+    "pose_origin_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "TOPOLOGY",
+        "FACE_SETS",
+        "FACE_SETS_FK"
+      ]
+    },
+    "jitter_unit": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "VIEW",
+        "BRUSH"
+      ]
+    },
+    "falloff_shape": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "SPHERE",
+        "PROJECTED"
+      ]
+    },
+    "size": {
+      "type": "INT",
+      "readonly": false
+    },
+    "unprojected_size": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "input_samples": {
+      "type": "INT",
+      "readonly": false
+    },
+    "jitter": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "jitter_absolute": {
+      "type": "INT",
+      "readonly": false
+    },
+    "spacing": {
+      "type": "INT",
+      "readonly": false
+    },
+    "grad_spacing": {
+      "type": "INT",
+      "readonly": false
+    },
+    "use_color_jitter": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "hue_jitter": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "saturation_jitter": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "value_jitter": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "use_stroke_random_hue": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_stroke_random_sat": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_stroke_random_val": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_random_press_hue": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_random_press_sat": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_random_press_val": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "curve_random_hue": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "curve_random_saturation": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "curve_random_value": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "curve_size": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "curve_strength": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "curve_jitter": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "smooth_stroke_radius": {
+      "type": "INT",
+      "readonly": false
+    },
+    "smooth_stroke_factor": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "rate": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "color": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "secondary_color": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "weight": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "strength": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "flow": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "wet_mix": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "wet_persistence": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "density": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "tip_scale_x": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "use_hardness_pressure": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "invert_hardness_pressure": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_flow_pressure": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "invert_flow_pressure": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_wet_mix_pressure": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "invert_wet_mix_pressure": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_wet_persistence_pressure": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "invert_wet_persistence_pressure": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_density_pressure": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "invert_density_pressure": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "dash_ratio": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "dash_samples": {
+      "type": "INT",
+      "readonly": false
+    },
+    "plane_offset": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "plane_trim": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "height": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "plane_depth": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "plane_height": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "stabilize_normal": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "stabilize_plane": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "texture_sample_bias": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "use_color_as_displacement": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "normal_weight": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "elastic_deform_volume_preservation": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "rake_factor": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "crease_pinch_factor": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "pose_offset": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "disconnected_distance_max": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "boundary_offset": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "surface_smooth_shape_preservation": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "surface_smooth_current_vertex": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "surface_smooth_iterations": {
+      "type": "INT",
+      "readonly": false
+    },
+    "multiplane_scrape_angle": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "pose_smooth_iterations": {
+      "type": "INT",
+      "readonly": false
+    },
+    "pose_ik_segments": {
+      "type": "INT",
+      "readonly": false
+    },
+    "tip_roundness": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "cloth_mass": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "cloth_damping": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "cloth_sim_limit": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "cloth_sim_falloff": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "cloth_constraint_softbody_strength": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "hardness": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "auto_smooth_factor": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "topology_rake_factor": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "tilt_strength_factor": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "normal_radius_factor": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "area_radius_factor": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "wet_paint_radius_factor": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "stencil_pos": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "stencil_dimension": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "mask_stencil_pos": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "mask_stencil_dimension": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "sharp_threshold": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "fill_threshold": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "blur_kernel_radius": {
+      "type": "INT",
+      "readonly": false
+    },
+    "blur_mode": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "BOX",
+        "GAUSSIAN"
+      ]
+    },
+    "falloff_angle": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "use_original_normal": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_original_plane": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_scene_spacing": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "VIEW",
+        "SCENE"
+      ]
+    },
+    "use_grab_active_vertex": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_grab_silhouette": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_paint_antialiasing": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_multiplane_scrape_dynamic": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "show_multiplane_scrape_planes_preview": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_pose_ik_anchored": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_pose_lock_rotation": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_connected_only": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_cloth_pin_simulation_boundary": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_cloth_collision": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "invert_to_scrape_fill": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_pressure_strength": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_offset_pressure": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_pressure_area_radius": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_pressure_size": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_pressure_jitter": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_pressure_spacing": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_pressure_masking": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "NONE",
+        "RAMP",
+        "CUTOFF"
+      ]
+    },
+    "use_inverse_smooth_pressure": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_plane_trim": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_frontface": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_frontface_falloff": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_smooth_stroke": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_persistent": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_bidirectional": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_accumulate": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_space_attenuation": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_adaptive_space": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_locked_size": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "VIEW",
+        "SCENE"
+      ]
+    },
+    "color_type": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "COLOR",
+        "GRADIENT"
+      ]
+    },
+    "use_edge_to_edge": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_alpha": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "curve_distance_falloff": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "paint_curve": {
+      "type": "POINTER",
+      "readonly": false
+    },
+    "gradient": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "gradient_stroke_mode": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "PRESSURE",
+        "SPACING_REPEAT",
+        "SPACING_CLAMP"
+      ]
+    },
+    "gradient_fill_mode": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "LINEAR",
+        "RADIAL"
+      ]
+    },
+    "use_primary_overlay": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_secondary_overlay": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_cursor_overlay": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_cursor_overlay_override": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_primary_overlay_override": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_secondary_overlay_override": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_paint_sculpt": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_paint_uv_sculpt": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_paint_vertex": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_paint_weight": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_paint_image": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_paint_grease_pencil": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_vertex_grease_pencil": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_paint_sculpt_curves": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "texture_slot": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "texture": {
+      "type": "POINTER",
+      "readonly": false
+    },
+    "mask_texture_slot": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "mask_texture": {
+      "type": "POINTER",
+      "readonly": false
+    },
+    "texture_overlay_alpha": {
+      "type": "INT",
+      "readonly": false
+    },
+    "mask_overlay_alpha": {
+      "type": "INT",
+      "readonly": false
+    },
+    "cursor_overlay_alpha": {
+      "type": "INT",
+      "readonly": false
+    },
+    "cursor_color_add": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "cursor_color_subtract": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "brush_capabilities": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "sculpt_capabilities": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "image_paint_capabilities": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "vertex_paint_capabilities": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "weight_paint_capabilities": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "gpencil_settings": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "curves_sculpt_settings": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "mesh_automasking_settings": {
+      "type": "POINTER",
+      "readonly": true
+    }
+  },
+  "curvesBrushProps": {
+    "rna_type": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "add_amount": {
+      "type": "INT",
+      "readonly": false
+    },
+    "points_per_curve": {
+      "type": "INT",
+      "readonly": false
+    },
+    "use_uniform_scale": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "minimum_length": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "use_length_interpolate": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_radius_interpolate": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_point_count_interpolate": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "use_shape_interpolate": {
+      "type": "BOOLEAN",
+      "readonly": false
+    },
+    "curve_length": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "minimum_distance": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "curve_radius": {
+      "type": "FLOAT",
+      "readonly": false
+    },
+    "density_add_attempts": {
+      "type": "INT",
+      "readonly": false
+    },
+    "density_mode": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "AUTO",
+        "ADD",
+        "REMOVE"
+      ]
+    },
+    "curve_parameter_falloff": {
+      "type": "POINTER",
+      "readonly": true
+    }
+  },
+  "strokeOperator": {
+    "rna_type": {
+      "type": "POINTER",
+      "readonly": true
+    },
+    "stroke": {
+      "type": "COLLECTION",
+      "readonly": true
+    },
+    "mode": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "NORMAL",
+        "INVERT"
+      ]
+    },
+    "brush_toggle": {
+      "type": "ENUM",
+      "readonly": false,
+      "items": [
+        "None",
+        "SMOOTH",
+        "ERASE",
+        "MASK"
+      ]
+    },
+    "pen_flip": {
+      "type": "BOOLEAN",
+      "readonly": false
+    }
+  },
+  "screen": "Layout",
+  "areas": [
+    [
+      "PROPERTIES",
+      [
+        [
+          "HEADER",
+          339,
+          26
+        ],
+        [
+          "NAVIGATION_BAR",
+          29,
+          813
+        ],
+        [
+          "WINDOW",
+          310,
+          813
+        ]
+      ]
+    ],
+    [
+      "OUTLINER",
+      [
+        [
+          "HEADER",
+          339,
+          26
+        ],
+        [
+          "WINDOW",
+          339,
+          163
+        ]
+      ]
+    ],
+    [
+      "DOPESHEET_EDITOR",
+      [
+        [
+          "HEADER",
+          1574,
+          26
+        ],
+        [
+          "FOOTER",
+          1,
+          1
+        ],
+        [
+          "CHANNELS",
+          1,
+          1
+        ],
+        [
+          "UI",
+          1,
+          1
+        ],
+        [
+          "WINDOW",
+          1574,
+          48
+        ]
+      ]
+    ],
+    [
+      "VIEW_3D",
+      [
+        [
+          "HEADER",
+          1574,
+          26
+        ],
+        [
+          "TOOL_HEADER",
+          1574,
+          26
+        ],
+        [
+          "ASSET_SHELF",
+          1,
+          1
+        ],
+        [
+          "ASSET_SHELF_HEADER",
+          1,
+          1
+        ],
+        [
+          "TOOLS",
+          56,
+          902
+        ],
+        [
+          "UI",
+          1,
+          1
+        ],
+        [
+          "HUD",
+          1,
+          1
+        ],
+        [
+          "WINDOW",
+          1574,
+          954
+        ]
+      ]
+    ]
+  ],
+  "window": "<bpy_struct, Window at 0x000001BCC61D3EE0>",
+  "mode": "SCULPT_CURVES"
+}

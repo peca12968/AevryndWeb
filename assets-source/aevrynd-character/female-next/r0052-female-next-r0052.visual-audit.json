@@ -1,0 +1,207 @@
+{
+  "revision": "female-next-r0052",
+  "decision": "REJECT_EXISTING_BOB_NATIVE_SCULPT_RETAIN_AUTHORING_WORKFLOW_ONLY",
+  "appearance": {
+    "status": "NO_ADOPTABLE_COMPLETE_CHARACTER_GAIN",
+    "appearanceImprovement": false,
+    "matchedCompleteHeadBodyAB": true,
+    "multiangleSecondLight": true,
+    "A": "Only isolated edge perturbations; cap/sheet structure unchanged.",
+    "B_raw": "Broader source-guide-directed edits add local puckers/ridges to the same cap/curtain structure, insufficient complete-head gain.",
+    "B_fixed": "Effective radius confirmed145px with override off; still a cap and disconnected curtains, visible lower-side bumps. Reject rather than increasing strength/count.",
+    "wholeCharacterScore": null
+  },
+  "function": {
+    "status": "NATIVE_AUTHORING_TOOL_PROVED_NOT_COMPLETED_CHARACTER_FEATURE",
+    "savedReadbacks": [
+      {
+        "tag": "a",
+        "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0052-a-native-combed-bob.blend",
+        "sourceSha256": "bc3e59ae1a8e4630e4a6a761233c45f4fcad9329ce0233ce899b26581b25a852",
+        "reopened": true,
+        "bodyAllOtherMeshesMaterialsFieldsAndStageExact": true,
+        "browCurvesExact": true,
+        "nativeRootsRadiiPointCountsCurveTypesExact": true,
+        "curves": 12000,
+        "pointsPerCurve": 128,
+        "changedCurves": 1061,
+        "maximumLocalDisplacementM": 0.004911772906780243,
+        "nativeVsEvaluatedMaximumM": 0.0,
+        "nativeVsEvaluatedRadiiExact": true,
+        "sourceUnifiedPaintSettings": null,
+        "savedUnifiedPaintSettings": {
+          "use_unified_size": true,
+          "use_unified_strength": false,
+          "use_unified_weight": false,
+          "use_unified_color": true,
+          "use_unified_input_samples": false,
+          "size": 100,
+          "unprojected_size": 0.5799999833106995,
+          "strength": 0.5,
+          "weight": 0.5,
+          "use_color_jitter": false,
+          "hue_jitter": 0.0,
+          "saturation_jitter": 0.0,
+          "value_jitter": 0.0,
+          "use_stroke_random_hue": false,
+          "use_stroke_random_sat": false,
+          "use_stroke_random_val": false,
+          "use_random_press_hue": false,
+          "use_random_press_sat": false,
+          "use_random_press_val": false,
+          "input_samples": 1,
+          "use_locked_size": "VIEW"
+        },
+        "savedBrush": null,
+        "libraries": [],
+        "modifiers": [
+          {
+            "name": "AFN38_LiveEditableGuideDelta",
+            "type": "NODES"
+          }
+        ],
+        "contactLimit": "Pilot contacts only so far; saved geometry readback does not certify full candidate body/self/other-mesh contacts or dynamics."
+      },
+      {
+        "tag": "b",
+        "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0052-b-native-sectional-bob.blend",
+        "sourceSha256": "4667f186d97400661f55bb0d33027a140fb7ff68e29df674fc2cee887f8c564a",
+        "reopened": true,
+        "bodyAllOtherMeshesMaterialsFieldsAndStageExact": true,
+        "browCurvesExact": true,
+        "nativeRootsRadiiPointCountsCurveTypesExact": true,
+        "curves": 12000,
+        "pointsPerCurve": 128,
+        "changedCurves": 8093,
+        "maximumLocalDisplacementM": 0.00982302613556385,
+        "nativeVsEvaluatedMaximumM": 0.0,
+        "nativeVsEvaluatedRadiiExact": true,
+        "sourceUnifiedPaintSettings": null,
+        "savedUnifiedPaintSettings": {
+          "use_unified_size": true,
+          "use_unified_strength": false,
+          "use_unified_weight": false,
+          "use_unified_color": true,
+          "use_unified_input_samples": false,
+          "size": 100,
+          "unprojected_size": 0.5799999833106995,
+          "strength": 0.5,
+          "weight": 0.5,
+          "use_color_jitter": false,
+          "hue_jitter": 0.0,
+          "saturation_jitter": 0.0,
+          "value_jitter": 0.0,
+          "use_stroke_random_hue": false,
+          "use_stroke_random_sat": false,
+          "use_stroke_random_val": false,
+          "use_random_press_hue": false,
+          "use_random_press_sat": false,
+          "use_random_press_val": false,
+          "input_samples": 1,
+          "use_locked_size": "VIEW"
+        },
+        "savedBrush": null,
+        "libraries": [],
+        "modifiers": [
+          {
+            "name": "AFN38_LiveEditableGuideDelta",
+            "type": "NODES"
+          }
+        ],
+        "contactLimit": "Pilot contacts only so far; saved geometry readback does not certify full candidate body/self/other-mesh contacts or dynamics."
+      },
+      {
+        "tag": "b-fixed",
+        "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0052-b-effective-sectional-bob.blend",
+        "sourceSha256": "5b1e3adc38dec63906df97cd76560dbcf1da597dafe82e4c4abf2504c01bd70b",
+        "reopened": true,
+        "bodyAllOtherMeshesMaterialsFieldsAndStageExact": true,
+        "browCurvesExact": true,
+        "nativeRootsRadiiPointCountsCurveTypesExact": true,
+        "curves": 12000,
+        "pointsPerCurve": 128,
+        "changedCurves": 9767,
+        "maximumLocalDisplacementM": 0.01197538897395134,
+        "nativeVsEvaluatedMaximumM": 0.0,
+        "nativeVsEvaluatedRadiiExact": true,
+        "sourceUnifiedPaintSettings": null,
+        "savedUnifiedPaintSettings": {
+          "use_unified_size": false,
+          "use_unified_strength": false,
+          "use_unified_weight": false,
+          "use_unified_color": true,
+          "use_unified_input_samples": false,
+          "size": 100,
+          "unprojected_size": 0.5799999833106995,
+          "strength": 0.5,
+          "weight": 0.5,
+          "use_color_jitter": false,
+          "hue_jitter": 0.0,
+          "saturation_jitter": 0.0,
+          "value_jitter": 0.0,
+          "use_stroke_random_hue": false,
+          "use_stroke_random_sat": false,
+          "use_stroke_random_val": false,
+          "use_random_press_hue": false,
+          "use_random_press_sat": false,
+          "use_random_press_val": false,
+          "input_samples": 1,
+          "use_locked_size": "VIEW"
+        },
+        "savedBrush": null,
+        "libraries": [],
+        "modifiers": [
+          {
+            "name": "AFN38_LiveEditableGuideDelta",
+            "type": "NODES"
+          }
+        ],
+        "contactLimit": "Pilot contacts only so far; saved geometry readback does not certify full candidate body/self/other-mesh contacts or dynamics."
+      }
+    ],
+    "sourceGuideUsage": "29own existing guide objects supply sectional artist stroke targets; no child path copying/interpolation.",
+    "effectiveControlBug": "RawA/B use unified100px even though script sets Brush.size. B-fixed disables override and records actual145px settings. This is one implementation correction, not evidence of realism."
+  },
+  "contact": {
+    "status": "PILOTS_ONLY_FULL_NEW_GROOM_NOT_ACCEPTED",
+    "pilots": {
+      "a": {
+        "curves": 160,
+        "changedCurves": 30,
+        "maximumLocalDisplacementM": 0.005320309661328793,
+        "finiteSegments": 20320,
+        "unqualifiedSegments": 0,
+        "rootFailures": []
+      },
+      "b": {
+        "curves": 160,
+        "changedCurves": 123,
+        "maximumLocalDisplacementM": 0.006525512784719467,
+        "finiteSegments": 20320,
+        "unqualifiedSegments": 0,
+        "rootFailures": []
+      },
+      "b-fixed": {
+        "curves": 160,
+        "changedCurves": 140,
+        "maximumLocalDisplacementM": 0.00933985784649849,
+        "finiteSegments": 20320,
+        "unqualifiedSegments": 0,
+        "rootFailures": []
+      }
+    },
+    "fullCandidateContactVerification": "Stopped at visual rejection; do not infer12kcurve or self/continuous pass from160curve pilots.",
+    "unchangedBody": "Existing r51 ocular repair/body evidence inherited only for identical nonhair geometry; original nonocular failures remain."
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "cpuGpuMemory": null
+  },
+  "stoppedMethod": "Local and sectional native Comb deformation of current scalp-cover/free-fall bob as a route to natural complete hair, including effective-size-corrected version.",
+  "usefulResearch": {
+    "purpose": "Native modal artist sculpt, per-curve soft sectional selection, actual brush-control readback, reproducible saved native/evaluated curve data.",
+    "scope": "Authoring workflow on complete character, no appearance or dynamics acceptance.",
+    "minimumIntegrationStep": "Use the driver on newly rooted normal-grown master curves from a corrected anatomical scalp, inspect full-head form, and independently test full paths before followers; do not apply more strokes to the failed bob."
+  },
+  "nextAction": "Keep r51 B integrated as the single complete working character; r52 local Comb and retained-guide-directed sectional Comb of the existing r33 body-hugging bob fail complete-head realism even after fixing actual unified brush size. Stop this existing-bob sculpt route as a complete-hairstyle solution; no further strength/radius/stroke-count/density sweeps and no revived root-frame/radial/world-knot/global-wave methods. The native modal authoring driver is useful only as a tool for a new foundation, not an accepted groom. NEXT one production theme: replace the scalp-cover/free-fall bob foundation with an anatomically segmented new primary groom. First establish actual-skin forehead/temple/ear/nape boundary coverage (r48 initial mask is incomplete), then author a small full-head set of newly rooted normal-grown native master curves with explicit length/section controls and sculpt whole root-to-tip flow. Use actual surface/UV bindings and physical root spacing; root redesign must have anatomical purpose, not hide failed roots. Use r48 own full-path guides as visual design references, not copied/rotated follower paths. Prove whole-head silhouette and actual finite guide/body/optical contact before dense children. Validate all generated paths independently; native point collision is not a full capsule/self/dynamic guarantee. Prefer one bounded prototype with visible complete-head/body evidence by45minutes; if its large form is wrong, reject before density and shader detail. Do not import private donor derivatives or call tool completion a character appearance improvement. Keep r51 ocular repair, body/skin/material/stage and historical source intact. Full appearance, layered oral/body/clothes rig, existing839nonocular tested source self pairs, natural hair physics/self/continuous contacts, actual engine/LOD/CPU/GPU/memory, weighted85each80 and explicit female acceptance remain incomplete."
+}

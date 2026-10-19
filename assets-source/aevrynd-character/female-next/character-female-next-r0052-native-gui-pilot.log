@@ -1,0 +1,23 @@
+00:00.984  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0051-b-integrated-eye-wall.blend"
+00:05.781  operator         | ERROR Invalid operator call 'SCULPT_CURVES_OT_brush_stroke'
+R52_NATIVE_COMB left_middle_volume {'PASS_THROUGH'}
+00:05.797  operator         | ERROR Invalid operator call 'SCULPT_CURVES_OT_brush_stroke'
+R52_NATIVE_COMB right_crown_sweep {'PASS_THROUGH'}
+00:05.797  operator         | ERROR Invalid operator call 'SCULPT_CURVES_OT_brush_stroke'
+R52_NATIVE_COMB right_lower_release {'PASS_THROUGH'}
+00:05.797  operator         | ERROR Invalid operator call 'SCULPT_CURVES_OT_brush_stroke'
+R52_NATIVE_COMB right_side_depth {'PASS_THROUGH'}
+00:05.797  operator         | ERROR Invalid operator call 'SCULPT_CURVES_OT_brush_stroke'
+R52_NATIVE_COMB left_tip_return {'PASS_THROUGH'}
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\run-female-next-r0052-native-session.py", line 13, in run
+    k.main()
+    ~~~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0052-combed-bob.py", line 76, in main
+    assert row['changedCurves']>0,'Native stroke made no geometry change'
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Native stroke made no geometry change
+
+00:06.156  blend            | Saved session recovery to "C:\Users\USER\AppData\Local\Temp\quit.blend"
+
+Blender quit

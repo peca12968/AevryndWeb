@@ -1,0 +1,37 @@
+{
+  "revision": "female-next-r0052",
+  "status": "REJECT_EXISTING_BOB_NATIVE_SCULPT_RETAIN_AUTHORING_WORKFLOW_ONLY",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0051-b-integrated-eye-wall.blend",
+  "sourceSha256": "b86f7eeedf6fd6a4d9a7f13ff42dc4051907516bc90be8261f02e7678242a3ff",
+  "snapshots": [
+    {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0052-a-native-combed-bob.blend",
+      "sha256": "bc3e59ae1a8e4630e4a6a761233c45f4fcad9329ce0233ce899b26581b25a852",
+      "decision": "VISUALLY_REJECTED"
+    },
+    {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0052-b-native-sectional-bob.blend",
+      "sha256": "4667f186d97400661f55bb0d33027a140fb7ff68e29df674fc2cee887f8c564a",
+      "decision": "VISUALLY_REJECTED"
+    },
+    {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0052-b-effective-sectional-bob.blend",
+      "sha256": "5b1e3adc38dec63906df97cd76560dbcf1da597dafe82e4c4abf2504c01bd70b",
+      "decision": "VISUALLY_REJECTED"
+    }
+  ],
+  "rebuild": "Installed Blender5.2.2 hidden GUI, --factory-startup --enable-event-simulate --disable-autoexec --threads4, pinnedsource51 as startupfile, --python run52native-events.py. No trailingflags=>A160pilot; --full=>Afull; --sectioned=>Bpilot, add--full=>Bfull; --sectioned --effective-settings=>Bfixedpilot, add--full=>Bfixedfull. Eventloop script quits its own session. Do not use the obsolete direct/background execute entrypoint. Reopen with verify52native-readback; --fixed-only forBfixed. Package with bundled Python/Pillow.",
+  "workflow": {
+    "purpose": "Native modal artist sculpt, per-curve soft sectional selection, actual brush-control readback, reproducible saved native/evaluated curve data.",
+    "scope": "Authoring workflow on complete character, no appearance or dynamics acceptance.",
+    "minimumIntegrationStep": "Use the driver on newly rooted normal-grown master curves from a corrected anatomical scalp, inspect full-head form, and independently test full paths before followers; do not apply more strokes to the failed bob."
+  },
+  "referenceFile": "r0052-native-workflow-reference.json",
+  "provenance": "Existing owned authoring/CC0body-texture provenance unchanged. Only native production-tool APIs used; no donor model, third-party node graph, code module, add-on or service imported into engine.",
+  "limits": [
+    "No adopted appearance/function gain",
+    "Only160curve body-contact pilots",
+    "Full new hair/self/dynamic/continuous contact unqualified",
+    "No runtime/LOD/performance or female acceptance"
+  ]
+}
