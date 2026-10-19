@@ -1,0 +1,26 @@
+{
+  "previousGoalTurnClassification": "progress: user-requested goal v7 rewritten, mirrored and pushed fe393cd; no model improvement claimed",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0032-b-chart-registered-skin.blend",
+  "sourceSha256": "7b8b110dd50db95a722797113d8abe2a1682d347e8e1874412999c70c21c1a20",
+  "type": "COMPLETE_HAIRSTYLE_FEASIBILITY_ON_RETAINED_HEAD",
+  "primaryDefect": "Bald full-head silhouette; no new native-scalp hairstyle yet",
+  "hypothesis": "Actual scalp two-part root charts with surface-following crown paths and separately authored free Bezier fall can produce an editable bob without the old convex-hull cap or fringe sheet routing",
+  "candidateCount": 1,
+  "pilot": {
+    "guides": 72,
+    "pointsPerGuide": 96,
+    "radiusM": 8e-05,
+    "fullBodyCapsules": true
+  },
+  "reject": [
+    "Any unresolved actual guide/body capsule or root containment",
+    "Detached scalp, cap/sheet silhouette, severe part/ear routing artifacts in complete-head views"
+  ],
+  "nextExpansion": "Only after guide feasibility and whole-head preview; children require their own contact test",
+  "timeCheckpointMinutes": 45,
+  "threads": 4,
+  "integrationTarget": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0032-b-chart-registered-skin.blend",
+  "preserve": "All original visible evaluated meshes, skin/optical materials and stage; add separate editable scalp/hair layers only",
+  "reference": "https://docs.blender.org/manual/en/5.1/modeling/geometry_nodes/hair/generation/interpolate_hair_curves.html",
+  "referenceUse": "Guide/surface chart/parting workflow only; own geometry and code, no third-party hairstyle or node implementation imported"
+}

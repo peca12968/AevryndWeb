@@ -1,0 +1,37 @@
+{
+  "revision": "female-next-r0033-c",
+  "status": "REJECT_HAIRSTYLE_APPEARANCE_RETAIN_STATIC_TECHNICAL_DATA_ONLY",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0033-c-parted-bob-fibres.blend",
+  "sourceSha256": "7f959bb5dd6f04c347ae4f78cb9eac7f1cbbf2a7d91dd24e994c05e6817aaae1",
+  "integrationBase": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0032-b-chart-registered-skin.blend",
+  "integrationBaseSha256": "7b8b110dd50db95a722797113d8abe2a1682d347e8e1874412999c70c21c1a20",
+  "nativeLayer": "AFN33_C_BODY_BOUND_FIBRES",
+  "layers": [
+    "Original CC0 female body +8 own optical parts",
+    "AFN33_C_EDITABLE_VOLUME_GUIDES hidden from render",
+    "AFN33_SCALP_DOMAIN_L and R hidden authoring domains",
+    "AFN33_C_BODY_BOUND_FIBRES own12000POLY curves"
+  ],
+  "cache": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0033-c-bob-fibres.npz",
+  "cacheSha256": "47315be472f1639abcde214de7afa173f54f91426643ff46ebce7005b9a85b7a",
+  "rootBinding": "Actual evaluated source body triangle +barycentric +180um surface-normal exit; measured saved reconstruction error below1um",
+  "rootBindingMaximumErrorM": 1.6826092599172488e-07,
+  "guideLineage": "Four same-part param neighbors and weights, own surface-path re-evaluation and free-half group attraction; not built-in GN interpolation",
+  "authoring": "Edit source C native curves/guides or rebuild with the archived scripts; no rig/dynamics/runtime dependency",
+  "rebuildOrder": [
+    "build-female-next-r0033-parted-bob.py",
+    "build-female-next-r0033-landmark-bob.py",
+    "build-female-next-r0033-volume-bob.py",
+    "build-female-next-r0033-bob-fibres.py",
+    "verify-female-next-r0033-bob.py"
+  ],
+  "nativeContainer": "r13 valid own native Curves data used only as a format container, original points/materials/surface references removed; no old hairstyle points retained",
+  "adoption": "Technical root binding/native-format example only; do not use failed formula silhouette as a natural groom",
+  "runtime": "Not exported, integrated, benchmarked or promoted",
+  "limits": [
+    "Neutral static body/optical capsule tests only.",
+    "Hair/hair contact and self collision not tested.",
+    "No rig, continuous head motion, wind, simulation, cloth, export, LOD, engine/performance or whole-character acceptance.",
+    "Groom appearance must be judged separately from these contact/structure results."
+  ]
+}

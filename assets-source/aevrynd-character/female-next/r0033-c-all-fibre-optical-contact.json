@@ -1,0 +1,56 @@
+{
+  "AFN30_L_Sclera": {
+    "status": "PASS_TESTED_STATIC_CAPSULES",
+    "curves": 12000,
+    "segments": 1524000,
+    "unqualifiedSegments": 0,
+    "rootFailures": [],
+    "minimumCertifiedClearanceLowerBoundM": 0.03544846340650417,
+    "minimumSampledCVSurfaceGapM": 0.03652897103711439,
+    "methods": {
+      "lipschitz": 1524000
+    },
+    "failureSamples": [],
+    "numericalAllowanceM": 1e-06,
+    "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+  },
+  "AFN30_L_Cornea": {
+    "status": "PASS_AABB_SEPARATION",
+    "minimumCertifiedAxisGapM": 0.0022144020767882466
+  },
+  "AFN30_L_Iris": {
+    "status": "PASS_AABB_SEPARATION",
+    "minimumCertifiedAxisGapM": 0.0012364463182166219
+  },
+  "AFN30_L_Pupil": {
+    "status": "PASS_AABB_SEPARATION",
+    "minimumCertifiedAxisGapM": 0.001016445574350655
+  },
+  "AFN30_R_Sclera": {
+    "status": "PASS_TESTED_STATIC_CAPSULES",
+    "curves": 12000,
+    "segments": 1524000,
+    "unqualifiedSegments": 0,
+    "rootFailures": [],
+    "minimumCertifiedClearanceLowerBoundM": 0.03496701444057235,
+    "minimumSampledCVSurfaceGapM": 0.03609253378090216,
+    "methods": {
+      "lipschitz": 1524000
+    },
+    "failureSamples": [],
+    "numericalAllowanceM": 1e-06,
+    "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+  },
+  "AFN30_R_Cornea": {
+    "status": "PASS_AABB_SEPARATION",
+    "minimumCertifiedAxisGapM": 0.0020283014746382833
+  },
+  "AFN30_R_Iris": {
+    "status": "PASS_AABB_SEPARATION",
+    "minimumCertifiedAxisGapM": 0.0010503084631636739
+  },
+  "AFN30_R_Pupil": {
+    "status": "PASS_AABB_SEPARATION",
+    "minimumCertifiedAxisGapM": 0.0008303077192977071
+  }
+}

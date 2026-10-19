@@ -1,0 +1,72 @@
+{
+  "AFN30_L_Sclera": {
+    "completeCurveAABBSeparated": 11536,
+    "remainingCurves": 464,
+    "allRootsOutsideOpticalAABB": true,
+    "remainingCapsules": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 464,
+      "segments": 58928,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 0.03544846340650417,
+      "minimumSampledCVSurfaceGapM": 0.03652897103711439,
+      "methods": {
+        "lipschitz": 58928
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    }
+  },
+  "AFN30_L_Cornea": {
+    "completeCurveAABBSeparated": 12000,
+    "remainingCurves": 0,
+    "allRootsOutsideOpticalAABB": true
+  },
+  "AFN30_L_Iris": {
+    "completeCurveAABBSeparated": 12000,
+    "remainingCurves": 0,
+    "allRootsOutsideOpticalAABB": true
+  },
+  "AFN30_L_Pupil": {
+    "completeCurveAABBSeparated": 12000,
+    "remainingCurves": 0,
+    "allRootsOutsideOpticalAABB": true
+  },
+  "AFN30_R_Sclera": {
+    "completeCurveAABBSeparated": 11501,
+    "remainingCurves": 499,
+    "allRootsOutsideOpticalAABB": true,
+    "remainingCapsules": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 499,
+      "segments": 63373,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 0.03496701444057235,
+      "minimumSampledCVSurfaceGapM": 0.03609253378090216,
+      "methods": {
+        "lipschitz": 63373
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    }
+  },
+  "AFN30_R_Cornea": {
+    "completeCurveAABBSeparated": 12000,
+    "remainingCurves": 0,
+    "allRootsOutsideOpticalAABB": true
+  },
+  "AFN30_R_Iris": {
+    "completeCurveAABBSeparated": 12000,
+    "remainingCurves": 0,
+    "allRootsOutsideOpticalAABB": true
+  },
+  "AFN30_R_Pupil": {
+    "completeCurveAABBSeparated": 12000,
+    "remainingCurves": 0,
+    "allRootsOutsideOpticalAABB": true
+  }
+}
