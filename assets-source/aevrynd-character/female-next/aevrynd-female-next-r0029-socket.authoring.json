@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "revision": "female-next-r0029-a",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0029-a-native-eye-interface.blend",
+  "sourceSha256": "21c543b06ea5e92515294f48d3cb277ccaf1996b18e437dfa0fc1e86d4e8754f",
+  "status": "RETAIN_NEUTRAL_SOCKET_FUNCTIONAL_REPAIR_NOT_INTEGRATED_HEAD",
+  "parentSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0028-a-cc0-female-foundation.blend",
+  "parentSourceSha256": "68aa031b5ef4ad3353129eeb9ac881ef7237ed840928e05bd0c4a6b6e32cba6c",
+  "originalAssetAuthor": "Dan Ulrich",
+  "originalAssetLicense": "CC0",
+  "nativeBodyTopologyVertices": 10582,
+  "bodyEvaluatedVertices": 677442,
+  "bodyEvaluatedTriangles": 1354880,
+  "changedNativeVertices": 83,
+  "changedNativeVertexData": "aevrynd-female-next-r0029-native-contact-data.npz",
+  "components": [
+    "GEO-body_female_realistic",
+    "GEO-body_female_realistic.eye.L",
+    "GEO-body_female_realistic.eye.R"
+  ],
+  "staticContact": {
+    "GEO-body_female_realistic.eye.L": {
+      "bodyEyeTrianglePairs": 0,
+      "eyeCenterBodyContainment": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "eyeVertexSampleUnsignedMinimumGapM": 7.986920536495745e-05,
+      "pairExamples": [],
+      "scope": "Complete level3 body surface and full fixed eye mesh. No inner-wall exclusion. Gap is vertex-sampled, not exact full-surface minimum."
+    },
+    "GEO-body_female_realistic.eye.R": {
+      "bodyEyeTrianglePairs": 0,
+      "eyeCenterBodyContainment": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "eyeVertexSampleUnsignedMinimumGapM": 8.80557345226407e-05,
+      "pairExamples": [],
+      "scope": "Complete level3 body surface and full fixed eye mesh. No inner-wall exclusion. Gap is vertex-sampled, not exact full-surface minimum."
+    }
+  },
+  "rig": null,
+  "morphs": null,
+  "runtime": null,
+  "missing": [
+    "Separated cornea/iris/pupil/wetline and fully authored skin",
+    "Blink/gaze rig and expressions",
+    "Hair/brows/lashes and dynamics/self contact",
+    "Oral layers and body/clothes motion",
+    "Engine export/LOD/performance and user acceptance"
+  ],
+  "rebuild": "Use Blender5.2.2 --disable-autoexec --threads4. Run inspect-female-next-r0029-eye-interface.py, build-female-next-r0029-native-eye-interface.py, verify-female-next-r0029-native-eye-interface.py with pinned independent r28 source present. All original topology/sculpt inputs are in r28 source; the official asset library is not needed for this round.",
+  "evidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0029-native-eye-interface\\saved-static-verification.json"
+}

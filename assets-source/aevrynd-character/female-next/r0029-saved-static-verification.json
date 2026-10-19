@@ -1,0 +1,73 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0029-a-native-eye-interface.blend",
+  "sourceSha256": "21c543b06ea5e92515294f48d3cb277ccaf1996b18e437dfa0fc1e86d4e8754f",
+  "savedFileOpened": true,
+  "nativeChangedVertexCount": 83,
+  "fullBodyEvaluatedVertices": 677442,
+  "fullBodyEvaluatedTriangles": 1354880,
+  "eyeGeometryAndTransformsExact": true,
+  "baseTopologyAndUVPreserved": true,
+  "sameRenderingSettings": true,
+  "contact": {
+    "GEO-body_female_realistic.eye.L": {
+      "bodyEyeTrianglePairs": 0,
+      "eyeCenterBodyContainment": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "eyeVertexSampleUnsignedMinimumGapM": 7.986920536495745e-05,
+      "pairExamples": [],
+      "scope": "Complete level3 body surface and full fixed eye mesh. No inner-wall exclusion. Gap is vertex-sampled, not exact full-surface minimum."
+    },
+    "GEO-body_female_realistic.eye.R": {
+      "bodyEyeTrianglePairs": 0,
+      "eyeCenterBodyContainment": {
+        "classification": "outside",
+        "fiveRayParities": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rayAdvanceM": 1e-07
+      },
+      "eyeVertexSampleUnsignedMinimumGapM": 8.80557345226407e-05,
+      "pairExamples": [],
+      "scope": "Complete level3 body surface and full fixed eye mesh. No inner-wall exclusion. Gap is vertex-sampled, not exact full-surface minimum."
+    }
+  },
+  "changedRegionSelfBefore": {
+    "affectedTriangleCount": 29589,
+    "nonAdjacentTrianglePairs": 0,
+    "pairs": []
+  },
+  "changedRegionSelfAfter": {
+    "affectedTriangleCount": 29589,
+    "nonAdjacentTrianglePairs": 0,
+    "pairs": []
+  },
+  "newNonAdjacentSelfPairs": 0,
+  "newSelfPairExamples": [],
+  "exactChangedEvaluatedVertexCount": 14391,
+  "bodyBoundaryEdges": 0,
+  "bodyNonManifoldEdges": 0,
+  "minimumBodyTriangleAreaM2": 1.5369510708518787e-11,
+  "nonFiniteBodyCoordinates": 0,
+  "status": "PASS_NEUTRAL_FULL_SURFACE_AND_CHANGED_REGION_SELF_SCOPE",
+  "seconds": 4.7045958042144775,
+  "limits": [
+    "Neutral static only; no gaze/blink/continuous animation proof.",
+    "Existing iris/cornea/pupil/wetline layers still absent.",
+    "Whole body self-contact outside the exactly changed triangle region was not tested.",
+    "Unsigned vertex-sampled gap is not an exact complete-surface signed minimum.",
+    "No hair/cloth/rig/runtime/LOD/performance acceptance or appearance score."
+  ]
+}

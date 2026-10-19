@@ -1,0 +1,63 @@
+{
+  "title": "Aevrynd r0029 native inward socket contact correction",
+  "originalAuthor": "Dan Ulrich",
+  "originalLicense": "CC0",
+  "originalCollection": "Body Female - Realistic",
+  "originalDescription": "Realistic scan data model with multiresolution details",
+  "officialListing": "https://www.blender.org/download/demo-files/",
+  "officialDownloadPage": "https://www.blender.org/download/demo/asset-bundles/human-base-meshes/human-base-meshes-bundle-v1.4.1.zip",
+  "originalArchiveSha256": "811f43accbb31a88266d932f8f5563b2d13586fca0ba2693aad1f5fe582b3515",
+  "originalLibrarySha256": "3c121505651140ceb4d69fd1d8923f7788ffadd81672f5be14845a5f2c75c137",
+  "originalLibraryPath": "D:\\Download\\Aevrynd\\Reference\\character\\blender-human-base-meshes-v1.4.1\\human-base-meshes-bundle-v1.4.1\\human_base_meshes_bundle.blend",
+  "licenseEvidence": "r0027 CC0 selected-collection metadata inspection and global Human Base Meshes README; not a license inferred from other demo assets.",
+  "modifiedBy": "Aevrynd contact-authoring script",
+  "modifications": [
+    "Append only the selected female body and two eyes; no other asset collection, programs, rig or materials.",
+    "Preserve raw mesh vertices/topology, UVs and all Multires sculpt details.",
+    "Apply one shared uniform height/unit scale and translation to the parent hierarchy; no shape morph or individual eye transform.",
+    "Assign own neutral clay and existing own review camera/light/world for geometry comparison.",
+    "Remove unused append library identifiers after proving no linked data. Saved model has no external libraries/texts/images/rigs/actions.",
+    "Own native inward-wall region extraction seeded by actual crossing faces; fixed actual eyeball support halfspaces.",
+    "83 native body vertices moved by minimum halfspace correction, max1.369797mm. Original eye geometry/neutral transforms, base topology/UV and Multires levels remain.",
+    "No eye size/position change, remesh, new cover surface or material/lighting alteration."
+  ],
+  "dataPreservation": {
+    "GEO-body_female_realistic": {
+      "freshReferenceEvaluatedVertices": 677442,
+      "topologyExact": true,
+      "maximumWorldPositionErrorM": 5.2524335214521045e-08,
+      "toleranceM": 3e-07,
+      "comparison": "Saved independent source vs fresh official selected CC0 collection under the same shared float32 transform. All evaluated vertices, not samples."
+    },
+    "GEO-body_female_realistic.eye.L": {
+      "freshReferenceEvaluatedVertices": 546,
+      "topologyExact": true,
+      "maximumWorldPositionErrorM": 5.914945718145829e-08,
+      "toleranceM": 3e-07,
+      "comparison": "Saved independent source vs fresh official selected CC0 collection under the same shared float32 transform. All evaluated vertices, not samples."
+    },
+    "GEO-body_female_realistic.eye.R": {
+      "freshReferenceEvaluatedVertices": 546,
+      "topologyExact": true,
+      "maximumWorldPositionErrorM": 4.2042931150657974e-08,
+      "toleranceM": 3e-07,
+      "comparison": "Saved independent source vs fresh official selected CC0 collection under the same shared float32 transform. All evaluated vertices, not samples."
+    }
+  },
+  "notAuthoredByAevrynd": "Original female scan topology/sculpt and eyeball mesh are Dan Ulrich CC0 asset data. This is an adapted source study, not an original character sculpt claim.",
+  "limitations": [
+    "Neutral static only; no gaze/blink/continuous animation proof.",
+    "Existing iris/cornea/pupil/wetline layers still absent.",
+    "Whole body self-contact outside the exactly changed triangle region was not tested.",
+    "Unsigned vertex-sampled gap is not an exact complete-surface signed minimum.",
+    "No hair/cloth/rig/runtime/LOD/performance acceptance or appearance score."
+  ],
+  "parentSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0028-a-cc0-female-foundation.blend",
+  "parentSourceSha256": "68aa031b5ef4ad3353129eeb9ac881ef7237ed840928e05bd0c4a6b6e32cba6c",
+  "verification": {
+    "sourceSha256": "21c543b06ea5e92515294f48d3cb277ccaf1996b18e437dfa0fc1e86d4e8754f",
+    "neutralStaticContactStatus": "PASS_NEUTRAL_FULL_SURFACE_AND_CHANGED_REGION_SELF_SCOPE",
+    "actualBodyTriangles": 1354880,
+    "affectedBodyTriangles": 29589
+  }
+}

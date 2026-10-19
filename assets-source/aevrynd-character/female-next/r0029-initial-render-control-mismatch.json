@@ -1,0 +1,35 @@
+{
+  "reason": "Matrix assignment decomposes/reconstructs light Euler angles with float rounding after alternate render; fix renderer transform restore and regenerate actual matched renders.",
+  "observed": [
+    {
+      "light": "saved",
+      "view": "face",
+      "maximumLightMatrixDifference": 1.1920928955078125e-07
+    },
+    {
+      "light": "saved",
+      "view": "oblique",
+      "maximumLightMatrixDifference": 1.1920928955078125e-07
+    },
+    {
+      "light": "saved",
+      "view": "profile",
+      "maximumLightMatrixDifference": 1.1920928955078125e-07
+    },
+    {
+      "light": "saved",
+      "view": "body-face",
+      "maximumLightMatrixDifference": 1.1920928955078125e-07
+    },
+    {
+      "light": "saved",
+      "view": "body-profile",
+      "maximumLightMatrixDifference": 1.1920928955078125e-07
+    },
+    {
+      "light": "alternate",
+      "view": "oblique",
+      "maximumLightMatrixDifference": 5.960464477539063e-08
+    }
+  ]
+}

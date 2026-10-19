@@ -1,0 +1,17 @@
+{
+  "previousGoalTurn": "progress: independent r28 female geometry source and matched full-head renders saved/verified/pushed, actual eye wall crossings discovered.",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0028-a-cc0-female-foundation.blend",
+  "sourceSha256": "68aa031b5ef4ad3353129eeb9ac881ef7237ed840928e05bd0c4a6b6e32cba6c",
+  "hypothesis": "All measured body-eye crossing faces point toward the globe; the existing inward wall can be made contact-conforming without resizing/repositioning the eyes or changing exterior facial anatomy.",
+  "method": "Native inward-face connectivity seeded by actual coarse crossings, with actual eyeball support planes and minimum per-vertex halfspace correction. Preserve base topology/UV and existing Multires data.",
+  "candidateCount": 1,
+  "clearanceM": 8e-05,
+  "reject": [
+    "Any coarse body-eye crossing after repair.",
+    "More than 2.5mm native vertex movement.",
+    "Full sculpt body-eye crossing, new changed-region self contact or visible rim/shape regression."
+  ],
+  "resourceCheckpointMinutes": 45,
+  "diagnosticBudgetMinutes": 10,
+  "limits": "One Blender/four threads; no shader/lighting changes, no eye shrink/translate, no blink, hair or engine claims."
+}
