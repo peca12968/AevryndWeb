@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-19",
+  "curveWidth": {
+    "url": "https://docs.blender.org/manual/en/latest/render/eevee/render_settings/curves.html",
+    "documented": "STRAND about1pixel wide and ignores diameter; STRIP ribbon with rounded normals",
+    "installedInspection": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0034-master-locks\\actual-curve-display-settings.json"
+  },
+  "nodeSupport": {
+    "url": "https://docs.blender.org/manual/en/4.5/render/eevee/limitations/nodes_support.html",
+    "scope": "Official4.5 reference states hair BSDF and anisotropy unsupported;5.2 specific page fetch failed. Current preview is treated as a simplified material, not claimed calibrated anisotropic scattering."
+  },
+  "hairBSDF": {
+    "url": "https://docs.blender.org/manual/en/4.0/render/shader_nodes/shader/hair_principled.html",
+    "scope": "Official shader reference only; paired diagnostic uses same inherited numerical parameters, not measured subject calibration"
+  },
+  "artist": {
+    "author": "Daniel Bystedt",
+    "reference": "D:\\Download\\Aevrynd\\Reference\\character\\blender-hair-styles\\hair_nodes-female_hair_styles.blend",
+    "sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+    "declaredLicense": "CC-BY-SA exact version unresolved; reference-only",
+    "geometryOrNodeCodeAdopted": false,
+    "rawGuideStatistics": {
+      "long hair main": {
+        "guides": 346,
+        "points": 6770,
+        "pointCountRange": [
+          15,
+          20
+        ],
+        "lengthRangeReferenceUnits": [
+          1.0413389205932617,
+          3.7036643028259277
+        ],
+        "lengthStdReferenceUnits": 0.6142021232627161,
+        "modifiersDisabledForSafeRawGuideStudy": true
+      },
+      "long hair strands": {
+        "guides": 30,
+        "points": 360,
+        "pointCountRange": [
+          12,
+          12
+        ],
+        "lengthRangeReferenceUnits": [
+          0.32540813088417053,
+          2.0311028957366943
+        ],
+        "lengthStdReferenceUnits": 0.34693810708485745,
+        "modifiersDisabledForSafeRawGuideStudy": true
+      }
+    },
+    "privateImagesNotCharacterResultsOrRedistributedAssets": true,
+    "studyScope": "Raw independently shaped artist guides, with interpolation/deform disabled. Diagnostic thickening/clay used to inspect flow; not the original finished render or collision/realism proof."
+  },
+  "geometryOrNodeCodeFromArtistAdopted": false,
+  "authoring": "All new master coordinates, volume-frame generation and control/editor code authored for Aevrynd; native format/root data reuse own prior source",
+  "dataLicenses": "Original Dan Ulrich female CC0 scan and MakeHuman CC0 pigment remain inherited from r28/r32 with exact source/provenance; no new third-party geometry/program installed or adopted."
+}

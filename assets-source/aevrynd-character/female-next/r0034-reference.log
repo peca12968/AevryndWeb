@@ -1,0 +1,11 @@
+00:00.516  blend            | Read blend: "D:\Download\Aevrynd\Reference\character\blender-hair-styles\hair_nodes-female_hair_styles.blend"
+D:\Download\Aevrynd\scripts\character-next\study-female-next-r0034-guide-reference.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=(*color,1);p.inputs['Roughness'].default_value=.58;return m
+D:\Download\Aevrynd\scripts\character-next\study-female-next-r0034-guide-reference.py:30: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world=bpy.data.worlds.new('PRIVATE_REFERENCE_WORLD');world.use_nodes=True;world.node_tree.nodes.get('Background').inputs[0].default_value=(.035,.035,.035,1);world.node_tree.nodes.get('Background').inputs[1].default_value=.5;s.world=world
+00:04.469  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0034-master-locks\private-reference\bystedt-raw-guides-oblique.png'
+00:07.828  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0034-master-locks\private-reference\bystedt-raw-guides-profile.png'
+R34_PRIVATE_REFERENCE_DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

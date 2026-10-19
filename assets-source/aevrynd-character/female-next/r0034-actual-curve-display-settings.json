@@ -1,0 +1,76 @@
+{
+  "render": {
+    "hair_type": {
+      "value": "STRAND",
+      "enum": [
+        "STRAND",
+        "STRIP",
+        "CYLINDER"
+      ]
+    },
+    "hair_subdiv": {
+      "value": 0,
+      "enum": null
+    },
+    "simplify_subdivision": {
+      "value": 6,
+      "enum": null
+    },
+    "simplify_subdivision_render": {
+      "value": 6,
+      "enum": null
+    }
+  },
+  "eevee": {},
+  "cycles": {
+    "max_subdivisions": {
+      "value": 12,
+      "enum": null
+    },
+    "filter_width": {
+      "value": 1.5,
+      "enum": null
+    },
+    "debug_use_hair_bvh": {
+      "value": true,
+      "enum": null
+    }
+  },
+  "native": {
+    "name": "AFN34_C_INDEPENDENT_LOCK_FIBRES",
+    "curves": 1200,
+    "points": 192000,
+    "attributes": [
+      [
+        "position",
+        "FLOAT_VECTOR",
+        "POINT"
+      ],
+      [
+        "curve_type",
+        "INT8",
+        "CURVE"
+      ],
+      [
+        "material_index",
+        "INT",
+        "CURVE"
+      ],
+      [
+        "radius",
+        "FLOAT",
+        "POINT"
+      ]
+    ],
+    "pointRadiusFirst": [
+      3.24507818731945e-05,
+      3.24507818731945e-05,
+      3.24507818731945e-05,
+      3.24507818731945e-05,
+      3.24507818731945e-05,
+      3.24507818731945e-05,
+      3.24507818731945e-05,
+      3.24507818731945e-05
+    ]
+  }
+}

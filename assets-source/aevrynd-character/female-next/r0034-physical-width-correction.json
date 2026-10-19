@@ -1,0 +1,27 @@
+{
+  "status": "CORRECTED_PREVIEW_PHYSICAL_WIDTH_NOT_APPEARANCE_APPROVAL",
+  "originalPreview": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0034-c-preview.blend",
+  "originalPreviewSha256": "ce35efcc1347e94f4f389b68a236a4624d7fe14f7aeba2e331f77b8ef22ecc2d",
+  "correctedPreview": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0034-c-preview-physical-width.blend",
+  "correctedPreviewSha256": "742680faaf6ac48bf0ee556d5a36f80be4569fb35327f5db166efa57b1a13cba",
+  "changedOnly": [
+    "RenderSettings.hair_type STRAND -> STRIP"
+  ],
+  "hairSubdivision": 0,
+  "nativePositionsRadiiAndWorldMatrixExact": true,
+  "originalNineMeshesExact": true,
+  "materialsLightExposureExact": true,
+  "bodyContactInheritance": {
+    "report": "c-preview-body-contact.json",
+    "scope": "Exact unchanged physical POLY data/radii and world matrix. Old STRAND footprint was not bounded by those radii."
+  },
+  "officialSource": "https://docs.blender.org/manual/en/latest/render/eevee/render_settings/curves.html",
+  "observedInstalledSetting": "STRAND",
+  "documentedBehavior": "STRAND ignores diameter and renders about1pixel wide; STRIP uses ribbon width with rounded normals",
+  "notClaimed": [
+    "No hairstyle quality promotion",
+    "No anisotropic hair scattering implementation",
+    "No hair self collision, dynamics or runtime proof"
+  ],
+  "comparison": "New and r33 old are both freshly rendered with85mm full-head cameras, same stage and STRIP/subdivision0. A same-geometry preview STRAND/STRIP comparison is separate from geometry comparison."
+}

@@ -1,0 +1,46 @@
+{
+  "revision": "female-next-r0034",
+  "functionalBaseline": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0034-p-physical-width-baseline.blend",
+    "sha256": "9f2502d4833088cf0dd625201b6e4f2727dfcf632de62f2b5dadb61ce21e6903",
+    "status": "Width correctness only; original r33 hair art remains unaccepted",
+    "originalHairCache": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0033-c-bob-fibres.npz",
+    "evidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0034-master-locks\\physical-baseline-saved-verification.json"
+  },
+  "rejectedNewGroom": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0034-c-fibres.blend",
+    "sha256": "884033edb50900e23cbcedc11edaac493ad602b916ec7130f03c1dfef9531fc5",
+    "cache": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0034-c-fibres-hair.npz",
+    "cacheSha256": "b2b44cbd630c81923a0e13fe08df9a4f9eff0e016b5a8fe164b725c6079cd482",
+    "masterControls": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0034-master-locks\\c-master-controls.json",
+    "editableBlenderControls": "24 independent CTRL34_B_* clamped cubic NURBS cages; explicit rebuild needed",
+    "rootData": "Exact same12000 body-triangle/barycentric follicles from r33",
+    "freeData": "Own independent control cages, volume-frame offsets and physical26mm terminal taper; old free field not copied",
+    "acceptedAsNaturalHair": false
+  },
+  "physicalRenderPolicy": {
+    "radiusUnits": "metres",
+    "primitive": "STRIP",
+    "hairSubdivision": 0,
+    "curveType": "POLY",
+    "forbiddenQualification": "Do not infer displayed physical width from STRAND, which ignores diameter",
+    "contact": "Match native points/radii/world pose and exact tested body/optical geometry; display must respect radius"
+  },
+  "layers": "Original body+8optical parts, scalp/hair, own editable cages/representative guides; body/skin/eyes preserved, rig/dynamics absent",
+  "offlineScatteringReference": "Separate Cycles/Huang paired diagnostic. No implementation copied into the engine or runtime claim.",
+  "rebuild": [
+    "build-female-next-r0034-master-locks.py",
+    "build-female-next-r0034-cage-locks.py",
+    "build-female-next-r0034-descending-locks.py",
+    "build-female-next-r0034-lock-fibres.py --preview",
+    "fix-female-next-r0034-physical-width.py",
+    "After actual preview feasibility review only: set explicit internal expansion flag, run build-female-next-r0034-lock-fibres.py",
+    "verify-female-next-r0034-locks.py",
+    "Optional bounded render-female-next-r0034-scattering-reference.py"
+  ],
+  "limits": [
+    "Neutral body/optic finite capsules only; not hair/hair, self, motion, rig, cloth or runtime.",
+    "EEVEE preview material is not a calibrated anisotropic hair-scattering implementation.",
+    "Shape and appearance require separate multi-angle review; no automatic score or whole-character promotion."
+  ]
+}

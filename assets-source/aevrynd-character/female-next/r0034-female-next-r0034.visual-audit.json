@@ -1,0 +1,45 @@
+{
+  "revision": "female-next-r0034",
+  "decision": "RETAIN_PHYSICAL_WIDTH_FUNCTIONAL_BASELINE_REJECT_NEW_LOCK_GROOM",
+  "functionalDecision": "RETAIN_ACTUAL_RADIUS_DISPLAY_FIDELITY_ONLY",
+  "functionalSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0034-p-physical-width-baseline.blend",
+  "functionalSha256": "9f2502d4833088cf0dd625201b6e4f2727dfcf632de62f2b5dadb61ce21e6903",
+  "functionalChange": "Inherited RenderSettings.hair_type was STRAND, which ignores diameter. Corrected to STRIP/subdivision0, while all original12000fibre points/radii/world matrix and9body/optical meshes/materials/light state stay exact. Same-geometry preview difference is separate from geometry comparison.",
+  "newGroomDecision": "REJECT_INDEPENDENT_LOCK_GROOM_APPEARANCE",
+  "newGroomSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0034-c-fibres.blend",
+  "newGroomSha256": "884033edb50900e23cbcedc11edaac493ad602b916ec7130f03c1dfef9531fc5",
+  "appearance": {
+    "estimate": 35,
+    "confidenceRange": [
+      25,
+      40
+    ],
+    "scope": "Rejected r34 C hairstyle static visual review, not full hair/motion or whole character",
+    "deductions": [
+      "Obvious floating/suspended free masses and over-separated pointed locks",
+      "Broken scalp coverage and fixed-exit convergence patches",
+      "Mechanical layered endpoint groups and coherent ribbon/bundle response",
+      "Same flaws persist with unchanged geometry under paired Huang/Cycles scattering reference"
+    ],
+    "oldR33ScoreNotRevised": "Historical score used the old width policy. Fresh same-primitive comparisons are supplied; no automatic grade improvement claimed for the functional repair."
+  },
+  "candidates": {
+    "A": "Rejected interpolated control shoulders/outriggers before child expansion",
+    "B": "Rejected cubic cages retaining high lateral shoulder controls before child expansion",
+    "C": "120representative guides then1200subset and all12000fibres tested; new art rejected after actual eight-view and offline scattering review"
+  },
+  "staticEvidence": {
+    "newCurves": 12000,
+    "points": 1920000,
+    "bodySegments": 1908000,
+    "unqualifiedBodySegments": 0,
+    "rootBindingMaximumErrorM": 1.6826092599172488e-07,
+    "scope": "Neutral actual physical POLY finite capsules/body+8optical parts; not hair/hair self, motion, cloth or runtime",
+    "oldFunctionalBaseSegmentScope": 1524000
+  },
+  "skinEyesGeometryAndMaterialsUnchanged": true,
+  "wholeCharacterScore": null,
+  "runtimePromotion": false,
+  "femaleAccepted": false,
+  "nextAction": "Retain r34 P physical-width-corrected source as the integrated NEW-head functional review input, with r32 B immutable skin/anatomy foundation and r23 legacy integrated fallback. P is NOT accepted hair art or runtime: its original r33 shape still has a cap/curtain. All future native-hair checks must record actual RenderSettings.hair_type and hair_subdiv, serialize STRIP/subdivision0 (or another proved actual-radius primitive), verify saved points/radii/world transforms, and pair renders under identical primitive/camera. Old STRAND renders ignored diameter and were not covered by physical-radius capsule proof; preserve old reports as geometry-only evidence, never repeat the broad display claim. r34 A/B outrigger guide shapes and C independent24lock groom are visually rejected in full front/profile/back/opposite/alternate and paired Cycles reference. Stop fixed per-lock scalp-exit funnels,13-16mm common scalp loft and arbitrary random free cross-section scatter as the appearance route. Do not make D or a new-number continuation by density, shader, more master counts, tip jitter, relaxed clearance or local pushing. Reuse exact root bindings/native format/width correctness, but changed paths need new full capsule evidence. Hair can resume only with a continuous nonsingular root-to-volume mapping or a verified compatible artist groom and a falsifiable small whole-hairstyle pilot, not another shared exit-field sweep. Next whole-head visible priority is the staring neutral eye pose, followed by absent brows/lashes. On the actual new head, inspect the native upper-lid/rim/canthus anatomy and make one bounded neutral-rest candidate that naturally occludes the top iris while preserving native globe positions/sizes and r30 optical geometry. Use r29 actual-eye interface evidence, not old-head coordinates, arbitrary globe shrink, socket exclusions or a transplanted r20 pinned blink field. First a small native-lid feasibility test, then actual sculpt body/eye and affected-self/contact checks plus matched complete-head/closeup/alternate views. Preserve skin fields/UV, hair roots/radii/materials and corrected width display; do not claim blink/gaze or continuous motion. If the lid topology cannot support it, stop the local approach and change structure. Natural full hair/self/dynamics, brows/lashes, oral/body/clothes rig and motions, engine/export/LOD/performance and explicit female acceptance remain unfinished; no website/runtime/male work."
+}
