@@ -1,0 +1,16 @@
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0050-neutral-rest.py:35: SyntaxWarning: invalid decimal literal
+  matrix=np.array(o.matrix_world);scale=np.diag(matrix[:3,:3]);assert np.max(abs(matrix[:3,:3]-np.diag(scale)))<1e-8and np.all(scale>0);ev=o.evaluated_get(bpy.context.evaluated_depsgraph_get());assert not ev.data.has_custom_normals,'Post-Multires evaluated source requires automatic geometric normals, not stale custom normals'
+00:01.000  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0048-anatomical-authoring-retained.blend"
+00:15.719  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0050-eye-rest\a-after-face.png'
+00:18.172  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0050-eye-rest\a-after-oblique.png'
+00:21.797  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0050-eye-rest\a-after-profile.png'
+00:26.235  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0050-eye-rest\a-after-eyes.png'
+00:29.594  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0050-eye-rest\a-after-opposite-oblique.png'
+00:32.360  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0050-eye-rest\a-after-alternate-oblique.png'
+00:35.000  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0050-eye-rest\a-after-body-face.png'
+00:37.735  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0050-eye-rest\a-after-back.png'
+Info: Saved as "aevrynd-female-next-r0050-a-coupled-neutral-eye-rest.blend"
+R50_NEUTRAL_REST_READY [('GEO-body_female_realistic', 19765), ('AFN37_L_upper_WetMargin', 3588), ('AFN37_L_lower_WetMargin', 0), ('AFN37_L_Caruncle', 0), ('AFN37_R_upper_WetMargin', 3544), ('AFN37_R_lower_WetMargin', 0), ('AFN37_R_Caruncle', 0), ('AFN37_L_upper_Lashes', 18576), ('AFN37_L_lower_Lashes', 0), ('AFN37_R_upper_Lashes', 18576), ('AFN37_R_lower_Lashes', 0)] 37.033042907714844
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

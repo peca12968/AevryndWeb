@@ -1,0 +1,41 @@
+{
+  "revision": "female-next-r0050-a",
+  "previousGoalTurnClassification": "progress: three skin alternatives tested, no adoptable appearance gain, all archived/pushedaa834a3; body color only research",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0048-anatomical-authoring-retained.blend",
+  "sourceSha256": "49f76186981a7244444e37b950eab6acd24e34be15a65d855cee527422405c67",
+  "completeWorkingSource": "r42B; exact visible geometry/material baseline retained throughr48authoring source",
+  "defects": [
+    "Stiff round-eyed neutral impression",
+    "Cap/sheet hairstyle",
+    "Flat skin"
+  ],
+  "chosenDefect": "Neutral eye expression and upper-lid silhouette",
+  "referenceDecisions": {
+    "nativeR44Half": "Rejected as relaxed neutral reference: sleepy slit/faceted native look with frozen attachments; do not scale/reuse key",
+    "corneaToggle": "Iris detail changes but stiff eye shape persists; not an accepted cornea removal or optical fix",
+    "anatomicalReference": "https://eyewiki.org/Upper_Eyelid_Retraction",
+    "sourceUpperIrisCoverageM": [
+      0.0012979911804196888,
+      0.0011889518737793871
+    ],
+    "selectedChange": "Small newly authored upper-lid rest rotation about actual globe-centre Y/Z; estimated additional central coverageabout0.5mm, targetabout1.7..1.9mm, not a universal beauty standard or medical diagnosis"
+  },
+  "hypothesis": "A small coupled full-sculpt neutral rest with retained folds and correctly moving wet/lash meshes can reduce stare without turning the face into a half-blink",
+  "method": "Own compact monotone angular map at fixedworldX/rYZ. Evaluate after original Multires on actual mesh, identical world-space map on all10wet/lash meshes. No old Half amplitude,radial cup,harmonic flattening,RBF,Boolean union or geometry retopology. Native skin and source layers retained.",
+  "candidateCount": 1,
+  "cheapTest": "Independent numpy/actual-node readback and0control recovery, then complete-head actual preview. Full self/optics/interfaces only after appearance review.",
+  "reject": [
+    "Droopy/sleepy/puffy or worse complete neutral face",
+    "No visible whole-head gain",
+    "New source-body self/optics or unsupported wet/lash attachment contacts",
+    "Changed skin/material/lighting/scalp hair or source native topology"
+  ],
+  "resources": {
+    "startUTC": "2026-10-19 16:58:10 UTC",
+    "checkpointUTC": "2026-10-19 17:43:10 UTC",
+    "threads": 4,
+    "heavyJobsAtOnce": 1,
+    "newNodeServers": 0
+  },
+  "scope": "Static neutral sculpt control only. Not accepted blink,gaze,animated rig,continuous contacts,hair physics or runtime."
+}

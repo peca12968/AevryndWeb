@@ -1,0 +1,57 @@
+{
+  "revision": "female-next-r0050",
+  "decision": "REJECT_A_INSUFFICIENT_COMPLETE_APPEARANCE_AND_FAILED_STATIC_BODY_SELF",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0048-anatomical-authoring-retained.blend",
+  "sourceSha256": "49f76186981a7244444e37b950eab6acd24e34be15a65d855cee527422405c67",
+  "candidate": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0050-a-coupled-neutral-eye-rest.blend",
+  "candidateSha256": "83aa71725080b9b678807dc940a6e022397115e8af4c968700f3562015592503",
+  "appearance": {
+    "status": "INSUFFICIENT_COMPLETE_CHARACTER_GAIN",
+    "appearanceImprovement": false,
+    "localObservation": "A slightly more relaxed neutral upper lid; no sleepy native Half adoption. The complete face remains mannequin-like; cap/sheet hair and flat skin remain obvious.",
+    "matchedHeadBodyAB": true,
+    "multiangleAndSecondLighting": true,
+    "newWholeCharacterScore": null,
+    "diagnostics": "Removing cornea changes iris/catchlights but does not fix stare. Rejected r44 native Half looks sleepy and is not a full-sculpt/contact-qualified reference."
+  },
+  "function": {
+    "status": "SCOPED_AUTHORING_MECHANISM_ONLY_NO_COMPLETED_CHARACTER_FUNCTION",
+    "scope": "One hidden static artist control and shared post-Multires world field on body plus ten wet/lash objects; selected value read back after reopening.",
+    "zeroControlRecoversSource": {
+      "GEO-body_female_realistic": true,
+      "AFN37_L_upper_WetMargin": true,
+      "AFN37_L_lower_WetMargin": true,
+      "AFN37_L_Caruncle": true,
+      "AFN37_R_upper_WetMargin": true,
+      "AFN37_R_lower_WetMargin": true,
+      "AFN37_R_Caruncle": true,
+      "AFN37_L_upper_Lashes": true,
+      "AFN37_L_lower_Lashes": true,
+      "AFN37_R_upper_Lashes": true,
+      "AFN37_R_lower_Lashes": true
+    },
+    "materialsSkinFieldsHairStageExact": true,
+    "limitations": "Not a facial rig, blink or animation; angular injectivity of the ideal field is not finite mesh collision proof."
+  },
+  "contact": {
+    "status": "FAIL_ACTUAL_BODY_SELF_IN_AFFECTED_REGION",
+    "actualSelfPairsBefore": 438,
+    "actualSelfPairsAfter": 434,
+    "fixedEightOpticalSurfaceIntersectionPairs": 0,
+    "scope": "One neutral static evaluated full-sculpt pose, 40427 affected body triangles; nonadjacent float32 BVH pairs refined by float64 triangle intersection. Pair counts are surface-pair witnesses, not penetration volumes or exact minimum signed clearance.",
+    "baselineVsNew": "Both baseline and candidate fail. Totals alone do not identify all introduced/removed pair identities. Existing defects are not exempted and no method success is claimed.",
+    "uncompleted": "Wet/lash attachment, between-object and original-curve updates stopped at body gate; no full contact pass, self/dynamic/continuous qualification or global minimum distance claim.",
+    "evidence": "a-contact-progress.json"
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "cpuGpuMemory": null
+  },
+  "methodDecision": "Stop this neutral-rest construction as a route to meaningful complete-face improvement; do not sweep angle/cap/support widths. Ideal continuous map mathematics is retained as method evidence only, not adopted as a character feature.",
+  "researchDisposition": {
+    "retainedCharacterFeature": false,
+    "purpose": "Archived reproducible failure; paired material/cornea/shape observations constrain the next structural eye-rim repair.",
+    "minimumIntegrationStep": "No automatic integration of this rejected candidate. Repair and independently qualify actual source eye structure first."
+  },
+  "nextAction": "Keep r42B as the complete working character and r48 hidden scalp/29 guides as incomplete authoring research. Do not repeat r50 angular neutral-rest amplitude sweeps: complete-face benefit was insufficient and actual changed-region source/candidate self surfaces remain unqualified (438/434 pairs). Next production theme: repair the actual eye-rim source structure before further expression shaping. Within one bounded ten-minute diagnostic locate existing self witnesses in native versus evaluated Multires layers, then make one structural rim/inner-wall repair on the complete character; use independent evidence to distinguish geometry defects from verifier assumptions. Rebuild wet-margin/lash surface bindings when the support changes; do not simply move roots, hide inner walls, flatten all sculpt detail, rescale rejected Half, or relax tolerance. Show matched full head/body views before expensive expansion. If a structural repair is visually unchanged, retain only if it genuinely removes the adoption blocker and actual affected-scope checks pass, with no appearance-score gain. Stop a falsified construction; no more support-only loop. Credible complete skin/hair, oral/body/clothes rig, natural hair dynamics, all-layer static/self/continuous contact, actual engine/LOD/CPU/GPU/memory and female acceptance remain incomplete."
+}
