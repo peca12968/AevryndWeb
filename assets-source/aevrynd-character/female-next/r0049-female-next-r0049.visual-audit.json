@@ -1,0 +1,79 @@
+{
+  "revision": "female-next-r0049",
+  "decision": "REJECT_A_B_RETAIN_C_COLOR_RESEARCH_NO_WORKING_PROMOTION",
+  "appearance": {
+    "status": "NO_ADOPTABLE_COMPLETE_CHARACTER_GAIN",
+    "matchedFullHeadBodyAB": true,
+    "multiangleSecondLight": true,
+    "A": "Clearer red/orange nose/lip bleed with wax-like soft tissue; reject under full-head and profile views",
+    "B": "Microrelief/readable normal changes only slight; complete face still mannequin-like, no meaningful whole-character benefit",
+    "C": "Partial body pigment variation at invariant average fallback; approximate guards/landmark registration and remaining flat response do not qualify a new complete body appearance",
+    "newWholeCharacterScore": null
+  },
+  "function": {
+    "status": "PASS_EXACT_MATERIAL_ONLY_INVARIANTS_NOT_CHARACTER_ACCEPTANCE",
+    "allThreeReopened": true,
+    "originalGeometryUVNativeFieldsAndR48AuthoringExact": true,
+    "A_BAlbedoGraphExact": true,
+    "C": {
+      "attribute": "AFN49C_RegisteredBodyPigment",
+      "domain": "POINT",
+      "type": "FLOAT_COLOR",
+      "points": 10582,
+      "sha256": "b5ef523354acf96311c076ee1f4987a4bbfcc79f44a93778a0ac8972fff69fa6",
+      "areaWeightedLinearRGB": [
+        0.31999999674417745,
+        0.2300000017833338,
+        0.18000000314801495
+      ],
+      "meanReflectanceErrorMax": 3.2558225560030962e-09,
+      "headFallbackExact": true,
+      "notSubjectMeasuredOrAnatomyProof": true
+    },
+    "brightnessTracking": {
+      "scope": "Fixed source foreground mask with imageY>=200 in matched800square complete-body frames. Linearized display PNG luminance, not scene-linear radiance/albedo,not a realism score.",
+      "baselineMean": 0.45199930861970083,
+      "pixels": 63619,
+      "candidates": [
+        {
+          "tag": "A",
+          "linearizedPngBodyLuminanceMean": 0.4535989734925092,
+          "relativeChange": 0.0035390869904057265
+        },
+        {
+          "tag": "B",
+          "linearizedPngBodyLuminanceMean": 0.4544588199235335,
+          "relativeChange": 0.005441405013081546
+        },
+        {
+          "tag": "C",
+          "linearizedPngBodyLuminanceMean": 0.45444731502267804,
+          "relativeChange": 0.005415951653671369
+        }
+      ]
+    },
+    "export": "NOT_QUALIFIED; procedural normals need engine-compatible bake/implementation; vertex-color shader/export not tested"
+  },
+  "contact": {
+    "status": "UNCHANGED_GEOMETRY_ONLY_PRIOR_SCOPE_INHERITED",
+    "basis": "Exact actual displayed geometry,alpha and no-displacement invariance preserves only existing source contact evidence in its prior stated neutral/static scope. No new contact passing claim, no new continuous/self/dynamic certificate.",
+    "newContactPassClaim": false,
+    "selfContinuousDynamic": "NOT_QUALIFIED"
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "cpuGpuMemory": null
+  },
+  "retainedResearch": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0049-c-body-pigment.blend",
+    "sha256": "ce9b49399fe73ceec4855c1b7c1ecd1eefd2cae45d0a23f1b81725b8c8a5814f",
+    "purpose": "Approximate full-body pigment authoring field with explicit area-weighted average reflectance invariant, using already licensed reference atlas",
+    "effectiveScope": "2674nonzero-confidence native vertices; source/target bodies differ and photo contains baked shading; no biometric/anatomical registration proof",
+    "minimumIntegrationStep": "Validate anatomical pigment placement and confidence on actual body, correct reference correspondence/baked-shading artifacts, then deliberately export/bake tested color representation for isolated Aevrynd skin preview. Do not promote this field or postpone eye/anatomy production for repeated nearest-body/gain sweeps."
+  },
+  "stoppedThisRound": [
+    "Raising subsurface weight to1 as a standalone realistic-skin solution on this body/renderer",
+    "This neutralFresnel+procedural pore construction as a complete-face improvement"
+  ],
+  "nextAction": "Keep r42B as the complete working character; carry r48scalp/29control authoring only as incomplete research. R49A fullSSS+neutral reflection is rejected for red/orange lip/nose bleed and wax-like softness; R49B neutral reflection+procedural pores gives insufficient complete-head benefit; neither is a skin solution to iterate by weight,amplitude or density. R49C native mean-normalized body pigment field is retained only as approximate partial color-registration research (2674native vertices with nonzero confidence); no working/main promotion and no anatomy/body-hair claim. NEXT actual production: reassess the complete-face stare and upper-lid/iris relationship. Inspect actual retained native Half rest from r44 only as an unqualified shape reference, not accepted high-resolution deformation or blink; then construct at most one anatomically relaxed NEUTRAL eye-rest candidate on the actual full-sculpt working head with corresponding wet/lash attachments and independently check actual changed self/body-optic/attachment contact before any adoption. Do not resume failed whole closed-lid harmonic/cup/intrinsic/RBF/Boolean methods as an accepted blink or simply scale a rejected key. If the retained half reference is itself visually unsuitable, discard it and explicitly author a different neutral rest structure; no support-only loop. Preserve exact material/source history,skin brightness,scalp roots and physical hair radius. Credible skin/hair,oral/body/clothes rig,natural hair dynamics,all-layer continuous/self contacts,actual engine/LOD/CPU/GPU/memory,weighted85each80 and female acceptance remain incomplete."
+}

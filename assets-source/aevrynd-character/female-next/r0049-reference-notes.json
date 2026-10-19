@@ -1,0 +1,17 @@
+{
+  "sources": [
+    {
+      "url": "https://docs.blender.org/manual/nl/5.2/render/shader_nodes/shader/principled.html",
+      "basis": "Official indexed5.2LTS manual: IOR Level0.5 leaves dielectric IOR reflection unadjusted. The canonical English5.2fetch returned toolHTTP402, so it was not treated as successfully fetched content."
+    },
+    {
+      "url": "https://docs.blender.org/manual/en/5.0/render/shader_nodes/shader/principled.html",
+      "basis": "Official indexed5.0manual describes diffuse/subsurface mixing and nominal zero/one use. This motivated A; does not prove our subject material was physically calibrated or visually improved."
+    },
+    {
+      "url": "https://developer.nvidia.com/gpugems/gpugems3/part-iii-rendering/chapter-14-advanced-techniques-realistic-real-time-skin",
+      "basis": "Primary rendering reference motivates separating surface reflection and subsurface response and neutral dielectricIOR1.4/F0about0.028. Our procedural height,region masks and body color transfer are our approximations; no reference code or capture data imported."
+    }
+  ],
+  "scope": "Render references only. CC0 texture identity/license preserved by existing local texture provenance; no new vendor download or software installed."
+}

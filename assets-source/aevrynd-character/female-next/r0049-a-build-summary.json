@@ -1,0 +1,989 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0048-anatomical-authoring-retained.blend",
+  "sourceSha256": "49f76186981a7244444e37b950eab6acd24e34be15a65d855cee527422405c67",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0049-a-subsurface-skin-response.blend",
+  "outputSha256": "bdd806e0930f90201e970742782370ab664d06465703c9d2fbbb6f9b79412097",
+  "visibleAndHiddenExistingAuthoringPreserved": true,
+  "allDisplayedGeometryAndFieldsStageExact": true,
+  "skinBefore": {
+    "version": "5.2.2 LTS",
+    "bodyMatrix": [
+      0.951691210269928,
+      0.0,
+      0.0,
+      1.0609626770019531e-05,
+      0.0,
+      0.951691210269928,
+      0.0,
+      0.002941681304946542,
+      0.0,
+      0.0,
+      0.951691210269928,
+      -0.0008119391859509051,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "bodyScale": [
+      0.951691210269928,
+      0.951691210269928,
+      0.951691210269928
+    ],
+    "sceneUnitSystem": "METRIC",
+    "sceneUnitScale": 1.0,
+    "renderer": "BLENDER_EEVEE",
+    "shader": {
+      "name": "AFN32_RegisteredCalibratedSkin",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Base Color": [
+              0.800000011920929,
+              0.800000011920929,
+              0.800000011920929,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.5,
+            "IOR": 1.399999976158142,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.09000000357627869,
+            "Subsurface Radius": [
+              1.0,
+              0.47999998927116394,
+              0.25
+            ],
+            "Subsurface Scale": 0.0012000000569969416,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.30000001192092896,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          },
+          "properties": {
+            "subsurface_method": "RANDOM_WALK",
+            "distribution": "MULTI_GGX"
+          },
+          "image": null
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          },
+          "properties": {},
+          "image": null
+        },
+        {
+          "name": "Attribute",
+          "type": "ShaderNodeAttribute",
+          "inputs": {},
+          "properties": {
+            "attribute_name": "AFN32_RegisteredCC0UVW"
+          },
+          "image": null
+        },
+        {
+          "name": "Image Texture",
+          "type": "ShaderNodeTexImage",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "properties": {
+            "interpolation": "Linear"
+          },
+          "image": {
+            "name": "young_lightskinned_female_diffuse3.png",
+            "colorSpace": "sRGB",
+            "packedSha256": "1d82f782b7d2da732229633bd2d14754d873fff53cdb1d088977bcf67ae19dde"
+          }
+        },
+        {
+          "name": "Mix (Legacy)",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {
+            "Fac": 1.0,
+            "Color1": [
+              0.5,
+              0.5,
+              0.5,
+              1.0
+            ],
+            "Color2": [
+              0.38538873195648193,
+              0.4492209851741791,
+              0.5128803849220276,
+              1.0
+            ]
+          },
+          "properties": {
+            "blend_type": "MULTIPLY"
+          },
+          "image": null
+        },
+        {
+          "name": "Attribute.001",
+          "type": "ShaderNodeAttribute",
+          "inputs": {},
+          "properties": {
+            "attribute_name": "AFN32_PigmentWeight"
+          },
+          "image": null
+        },
+        {
+          "name": "Mix (Legacy).001",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {
+            "Fac": 0.5,
+            "Color1": [
+              0.3199999928474426,
+              0.23000000417232513,
+              0.18000000715255737,
+              1.0
+            ],
+            "Color2": [
+              0.5,
+              0.5,
+              0.5,
+              1.0
+            ]
+          },
+          "properties": {
+            "blend_type": "MIX"
+          },
+          "image": null
+        },
+        {
+          "name": "Attribute.002",
+          "type": "ShaderNodeAttribute",
+          "inputs": {},
+          "properties": {
+            "attribute_name": "AFN32_Roughness"
+          },
+          "image": null
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord",
+          "inputs": {},
+          "properties": {},
+          "image": null
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "W": 0.0,
+            "Scale": 3330.919189453125,
+            "Detail": 2.0,
+            "Roughness": 0.5,
+            "Lacunarity": 2.0,
+            "Offset": 0.0,
+            "Gain": 1.0,
+            "Distortion": 0.0
+          },
+          "properties": {
+            "noise_dimensions": "3D",
+            "normalize": true
+          },
+          "image": null
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump",
+          "inputs": {
+            "Strength": 0.11999999731779099,
+            "Distance": 1.2000000424450263e-05,
+            "Filter Width": 0.10000000149011612,
+            "Height": 1.0,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "properties": {},
+          "image": null
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Attribute",
+          "Vector",
+          "Image Texture",
+          "Vector"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Mix (Legacy)",
+          "Color1"
+        ],
+        [
+          "Attribute.001",
+          "Fac",
+          "Mix (Legacy).001",
+          "Fac"
+        ],
+        [
+          "Mix (Legacy)",
+          "Color",
+          "Mix (Legacy).001",
+          "Color2"
+        ],
+        [
+          "Mix (Legacy).001",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Attribute.002",
+          "Fac",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Texture Coordinate",
+          "Object",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Fac",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    "roughnessNativeRange": [
+      0.44007134437561035,
+      0.5400000214576721
+    ],
+    "subsurfacePhysicalInputProductM": [
+      0.0012000000569969416,
+      0.0005760000144839281,
+      0.0003000000142492354
+    ],
+    "stage": {
+      "config": {
+        "engine": "BLENDER_EEVEE",
+        "transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.5,
+        "gamma": 1.0,
+        "transparent": false,
+        "world": "Aevrynd Baseline World",
+        "camera": "Aevrynd R976 Review Camera",
+        "lights": [
+          "Aevrynd Key",
+          "Aevrynd Fill",
+          "Aevrynd Rim"
+        ],
+        "eevee": {
+          "gi_diffuse_bounces": 3,
+          "gi_cubemap_resolution": "512",
+          "gi_visibility_resolution": "32",
+          "gi_glossy_clamp": 0.0,
+          "gi_irradiance_pool_size": "16",
+          "taa_samples": 16,
+          "taa_render_samples": 256,
+          "use_taa_reprojection": true,
+          "ray_tracing_method": "SCREEN",
+          "use_shadow_jitter_viewport": true,
+          "clamp_surface_direct": 0.0,
+          "clamp_surface_indirect": 10.0,
+          "clamp_volume_direct": 0.0,
+          "clamp_volume_indirect": 0.0,
+          "direct_light_intensity": 1.0,
+          "indirect_light_intensity": 1.0,
+          "volumetric_start": 0.10000000149011612,
+          "volumetric_end": 100.0,
+          "volumetric_tile_size": "8",
+          "volumetric_samples": 64,
+          "volumetric_sample_distribution": 0.800000011920929,
+          "volumetric_ray_depth": 16,
+          "volumetric_light_clamp": 0.0,
+          "use_volumetric_shadows": false,
+          "volumetric_shadow_samples": 16,
+          "use_volume_custom_range": false,
+          "use_fast_gi": true,
+          "fast_gi_thickness_near": 0.10000000149011612,
+          "fast_gi_quality": 0.25,
+          "fast_gi_step_count": 8,
+          "fast_gi_ray_count": 2,
+          "fast_gi_method": "GLOBAL_ILLUMINATION",
+          "fast_gi_distance": 0.0,
+          "fast_gi_bias": 0.05000000074505806,
+          "fast_gi_resolution": "2",
+          "bokeh_max_size": 100.0,
+          "bokeh_threshold": 1.0,
+          "bokeh_neighbor_max": 10.0,
+          "use_bokeh_jittered": false,
+          "bokeh_overblur": 5.0,
+          "motion_blur_depth_scale": 100.0,
+          "motion_blur_max": 32,
+          "motion_blur_steps": 1,
+          "use_shadows": true,
+          "shadow_pool_size": "512",
+          "shadow_ray_count": 1,
+          "shadow_step_count": 6,
+          "light_threshold": 0.009999999776482582,
+          "use_overscan": false,
+          "overscan_size": 3.0,
+          "use_raytracing": true,
+          "shadow_resolution_scale": 1.0
+        }
+      },
+      "lights": [
+        [
+          "Aevrynd Key",
+          [
+            -2.0999999046325684,
+            -3.200000047683716,
+            3.799999952316284
+          ],
+          [
+            0.9392134547233582,
+            7.895437903471247e-08,
+            -0.5807563066482544
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ],
+          1150.0,
+          [
+            1.0,
+            0.7300000190734863,
+            0.5799999833106995
+          ]
+        ],
+        [
+          "Aevrynd Fill",
+          [
+            2.299999952316284,
+            -1.7000000476837158,
+            2.700000047683716
+          ],
+          [
+            1.0345115661621094,
+            -4.8274159780703485e-08,
+            0.9342884421348572
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ],
+          780.0,
+          [
+            0.5600000023841858,
+            0.699999988079071,
+            1.0
+          ]
+        ],
+        [
+          "Aevrynd Rim",
+          [
+            0.0,
+            2.4000000953674316,
+            3.0
+          ],
+          [
+            0.8760581016540527,
+            6.716003042583907e-08,
+            3.141592502593994
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ],
+          900.0,
+          [
+            0.699999988079071,
+            0.8199999928474426,
+            1.0
+          ]
+        ]
+      ],
+      "hairPrimitive": "STRIP",
+      "hairSubdivision": 0
+    }
+  },
+  "skinAfter": {
+    "version": "5.2.2 LTS",
+    "bodyMatrix": [
+      0.951691210269928,
+      0.0,
+      0.0,
+      1.0609626770019531e-05,
+      0.0,
+      0.951691210269928,
+      0.0,
+      0.002941681304946542,
+      0.0,
+      0.0,
+      0.951691210269928,
+      -0.0008119391859509051,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "bodyScale": [
+      0.951691210269928,
+      0.951691210269928,
+      0.951691210269928
+    ],
+    "sceneUnitSystem": "METRIC",
+    "sceneUnitScale": 1.0,
+    "renderer": "BLENDER_EEVEE",
+    "shader": {
+      "name": "AFN32_RegisteredCalibratedSkin",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Base Color": [
+              0.800000011920929,
+              0.800000011920929,
+              0.800000011920929,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.5,
+            "IOR": 1.399999976158142,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 1.0,
+            "Subsurface Radius": [
+              1.0,
+              0.47999998927116394,
+              0.25
+            ],
+            "Subsurface Scale": 0.0012000000569969416,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          },
+          "properties": {
+            "subsurface_method": "RANDOM_WALK",
+            "distribution": "MULTI_GGX"
+          },
+          "image": null
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          },
+          "properties": {},
+          "image": null
+        },
+        {
+          "name": "Attribute",
+          "type": "ShaderNodeAttribute",
+          "inputs": {},
+          "properties": {
+            "attribute_name": "AFN32_RegisteredCC0UVW"
+          },
+          "image": null
+        },
+        {
+          "name": "Image Texture",
+          "type": "ShaderNodeTexImage",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "properties": {
+            "interpolation": "Linear"
+          },
+          "image": {
+            "name": "young_lightskinned_female_diffuse3.png",
+            "colorSpace": "sRGB",
+            "packedSha256": "1d82f782b7d2da732229633bd2d14754d873fff53cdb1d088977bcf67ae19dde"
+          }
+        },
+        {
+          "name": "Mix (Legacy)",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {
+            "Fac": 1.0,
+            "Color1": [
+              0.5,
+              0.5,
+              0.5,
+              1.0
+            ],
+            "Color2": [
+              0.38538873195648193,
+              0.4492209851741791,
+              0.5128803849220276,
+              1.0
+            ]
+          },
+          "properties": {
+            "blend_type": "MULTIPLY"
+          },
+          "image": null
+        },
+        {
+          "name": "Attribute.001",
+          "type": "ShaderNodeAttribute",
+          "inputs": {},
+          "properties": {
+            "attribute_name": "AFN32_PigmentWeight"
+          },
+          "image": null
+        },
+        {
+          "name": "Mix (Legacy).001",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {
+            "Fac": 0.5,
+            "Color1": [
+              0.3199999928474426,
+              0.23000000417232513,
+              0.18000000715255737,
+              1.0
+            ],
+            "Color2": [
+              0.5,
+              0.5,
+              0.5,
+              1.0
+            ]
+          },
+          "properties": {
+            "blend_type": "MIX"
+          },
+          "image": null
+        },
+        {
+          "name": "Attribute.002",
+          "type": "ShaderNodeAttribute",
+          "inputs": {},
+          "properties": {
+            "attribute_name": "AFN32_Roughness"
+          },
+          "image": null
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord",
+          "inputs": {},
+          "properties": {},
+          "image": null
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "W": 0.0,
+            "Scale": 3330.919189453125,
+            "Detail": 2.0,
+            "Roughness": 0.5,
+            "Lacunarity": 2.0,
+            "Offset": 0.0,
+            "Gain": 1.0,
+            "Distortion": 0.0
+          },
+          "properties": {
+            "noise_dimensions": "3D",
+            "normalize": true
+          },
+          "image": null
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump",
+          "inputs": {
+            "Strength": 0.11999999731779099,
+            "Distance": 1.2000000424450263e-05,
+            "Filter Width": 0.10000000149011612,
+            "Height": 1.0,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "properties": {},
+          "image": null
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Attribute",
+          "Vector",
+          "Image Texture",
+          "Vector"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Mix (Legacy)",
+          "Color1"
+        ],
+        [
+          "Attribute.001",
+          "Fac",
+          "Mix (Legacy).001",
+          "Fac"
+        ],
+        [
+          "Mix (Legacy)",
+          "Color",
+          "Mix (Legacy).001",
+          "Color2"
+        ],
+        [
+          "Mix (Legacy).001",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Attribute.002",
+          "Fac",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Texture Coordinate",
+          "Object",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Fac",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    "roughnessNativeRange": [
+      0.44007134437561035,
+      0.5400000214576721
+    ],
+    "subsurfacePhysicalInputProductM": [
+      0.0012000000569969416,
+      0.0005760000144839281,
+      0.0003000000142492354
+    ],
+    "stage": {
+      "config": {
+        "engine": "BLENDER_EEVEE",
+        "transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure": -0.5,
+        "gamma": 1.0,
+        "transparent": false,
+        "world": "Aevrynd Baseline World",
+        "camera": "Aevrynd R976 Review Camera",
+        "lights": [
+          "Aevrynd Key",
+          "Aevrynd Fill",
+          "Aevrynd Rim"
+        ],
+        "eevee": {
+          "gi_diffuse_bounces": 3,
+          "gi_cubemap_resolution": "512",
+          "gi_visibility_resolution": "32",
+          "gi_glossy_clamp": 0.0,
+          "gi_irradiance_pool_size": "16",
+          "taa_samples": 16,
+          "taa_render_samples": 256,
+          "use_taa_reprojection": true,
+          "ray_tracing_method": "SCREEN",
+          "use_shadow_jitter_viewport": true,
+          "clamp_surface_direct": 0.0,
+          "clamp_surface_indirect": 10.0,
+          "clamp_volume_direct": 0.0,
+          "clamp_volume_indirect": 0.0,
+          "direct_light_intensity": 1.0,
+          "indirect_light_intensity": 1.0,
+          "volumetric_start": 0.10000000149011612,
+          "volumetric_end": 100.0,
+          "volumetric_tile_size": "8",
+          "volumetric_samples": 64,
+          "volumetric_sample_distribution": 0.800000011920929,
+          "volumetric_ray_depth": 16,
+          "volumetric_light_clamp": 0.0,
+          "use_volumetric_shadows": false,
+          "volumetric_shadow_samples": 16,
+          "use_volume_custom_range": false,
+          "use_fast_gi": true,
+          "fast_gi_thickness_near": 0.10000000149011612,
+          "fast_gi_quality": 0.25,
+          "fast_gi_step_count": 8,
+          "fast_gi_ray_count": 2,
+          "fast_gi_method": "GLOBAL_ILLUMINATION",
+          "fast_gi_distance": 0.0,
+          "fast_gi_bias": 0.05000000074505806,
+          "fast_gi_resolution": "2",
+          "bokeh_max_size": 100.0,
+          "bokeh_threshold": 1.0,
+          "bokeh_neighbor_max": 10.0,
+          "use_bokeh_jittered": false,
+          "bokeh_overblur": 5.0,
+          "motion_blur_depth_scale": 100.0,
+          "motion_blur_max": 32,
+          "motion_blur_steps": 1,
+          "use_shadows": true,
+          "shadow_pool_size": "512",
+          "shadow_ray_count": 1,
+          "shadow_step_count": 6,
+          "light_threshold": 0.009999999776482582,
+          "use_overscan": false,
+          "overscan_size": 3.0,
+          "use_raytracing": true,
+          "shadow_resolution_scale": 1.0
+        }
+      },
+      "lights": [
+        [
+          "Aevrynd Key",
+          [
+            -2.0999999046325684,
+            -3.200000047683716,
+            3.799999952316284
+          ],
+          [
+            0.9392134547233582,
+            7.895437903471247e-08,
+            -0.5807563066482544
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ],
+          1150.0,
+          [
+            1.0,
+            0.7300000190734863,
+            0.5799999833106995
+          ]
+        ],
+        [
+          "Aevrynd Fill",
+          [
+            2.299999952316284,
+            -1.7000000476837158,
+            2.700000047683716
+          ],
+          [
+            1.0345115661621094,
+            -4.8274159780703485e-08,
+            0.9342884421348572
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ],
+          780.0,
+          [
+            0.5600000023841858,
+            0.699999988079071,
+            1.0
+          ]
+        ],
+        [
+          "Aevrynd Rim",
+          [
+            0.0,
+            2.4000000953674316,
+            3.0
+          ],
+          [
+            0.8760581016540527,
+            6.716003042583907e-08,
+            3.141592502593994
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ],
+          900.0,
+          [
+            0.699999988079071,
+            0.8199999928474426,
+            1.0
+          ]
+        ]
+      ],
+      "hairPrimitive": "STRIP",
+      "hairSubdivision": 0
+    }
+  },
+  "seconds": 7.835747003555298
+}

@@ -1,0 +1,36 @@
+{
+  "revision": "female-next-r0049-b",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0048-anatomical-authoring-retained.blend",
+  "sourceSha256": "49f76186981a7244444e37b950eab6acd24e34be15a65d855cee527422405c67",
+  "distinctHypothesis": "Restore neutral dielectric Fresnel at same IOR1.4 and provide concave micron-scale surface relief so specular light reads as epidermal surface rather than uniform smooth paint. Original scattering retained; not a weaker version of failed full-SSS A.",
+  "references": [
+    {
+      "url": "https://developer.nvidia.com/gpugems/gpugems3/part-iii-rendering/chapter-14-advanced-techniques-realistic-real-time-skin",
+      "use": "Skin surface reflection is separate from subsurface response; dielectric IOR1.4 gives normal-incidence reflectance about0.028. Fine surface structure and regional reflectance affect highlights. Our procedural pore construction and parameter choices are artist approximations, not measured data or the chapter algorithm."
+    },
+    {
+      "url": "https://docs.blender.org/manual/nl/5.2/render/shader_nodes/shader/principled.html",
+      "use": "IOR Level0.5 leaves physical IOR specular unchanged."
+    }
+  ],
+  "changes": {
+    "Specular IOR Level": [
+      0.3,
+      0.5
+    ],
+    "Normal": "Own320micrometre cell-scale 3Dconcave pore field and faint0.8mmrelief;18micrometre bump distance,0.65normal strength; lip attenuation, no displacement"
+  },
+  "held": [
+    "Albedo graph,packed texture bytes/color space",
+    "Original roughness/native fields",
+    "Original subsurface weight.09,scale1.2mm,radius(1,.48,.25)",
+    "All geometry,authoring layers,pose,light,camera,exposure,color management"
+  ],
+  "candidateCountTotal": 2,
+  "reject": [
+    "Visible sandpaper/grid/over-sharp pore pattern",
+    "Plastic gloss or worse complete-face skin",
+    "Only microcloseup detail without complete-head/body benefit"
+  ],
+  "scope": "Procedural surface-normal authoring only. No measured pores,skin scan,subject-calibrated optical constants,geometry change or runtime performance acceptance."
+}

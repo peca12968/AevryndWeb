@@ -1,0 +1,26 @@
+{
+  "revision": "female-next-r0049-c",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0048-anatomical-authoring-retained.blend",
+  "sourceSha256": "49f76186981a7244444e37b950eab6acd24e34be15a65d855cee527422405c67",
+  "distinctHypothesis": "The body is flat because the retained material uses a constant fallback below registered face. Actual source-body sampled pigment can add regional skin variation at unchanged area-weighted average albedo, while all face geometry/pigment and light response remain original. Not a reflection/scattering parameter sweep.",
+  "method": "Actual current native body vertices to nearest original licensed reference-body triangle with UV corner barycentrics; distance/normal guards, smooth confidence, source-photo pubic hair mask, native-area-weighted reflectance normalization, explicit FLOAT_COLOR point field",
+  "colorScope": "Approximate graphical photo-pigment registration between different bodies; not a subject-specific skin scan,measured albedo,added breast/genital anatomy,physical body hair or displacement",
+  "sourceTexture": {
+    "path": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\textures\\makehuman-system-cc0\\young_lightskinned_female_diffuse3.png",
+    "sha256": "1d82f782b7d2da732229633bd2d14754d873fff53cdb1d088977bcf67ae19dde",
+    "license": "CC0-1.0; existing local provenance retained"
+  },
+  "held": [
+    "Original entire face above1.34m",
+    "Existing face coordinate/pigment/roughness fields",
+    "Subsurface,specular,bump and roughness shader settings",
+    "All geometry,authoring layers,pose,camera,lighting and exposure"
+  ],
+  "reject": [
+    "Misregistered anatomical pigment,obvious patch/seam or baked-shadow appearance",
+    "Overall darkening or inconsistent body/head transition",
+    "No useful full-body visual benefit"
+  ],
+  "candidateCountTotal": 3,
+  "runtimeWarning": "Vertex-color attribute is stored in source, but current material graph/export and engine ingestion are not qualified."
+}

@@ -1,0 +1,108 @@
+{
+  "revision": "female-next-r0049",
+  "status": "REJECT_A_B_RETAIN_C_COLOR_RESEARCH_NO_WORKING_PROMOTION",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0048-anatomical-authoring-retained.blend",
+  "sourceSha256": "49f76186981a7244444e37b950eab6acd24e34be15a65d855cee527422405c67",
+  "baseWorkingSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0042-b-shadow-quality-review.blend",
+  "baseWorkingSha256": "d62c180a5af61f6f8d800926b101738c89a8fbe7785fe1054fd655fd018824da",
+  "candidates": [
+    {
+      "tag": "A",
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0049-a-subsurface-skin-response.blend",
+      "sha256": "bdd806e0930f90201e970742782370ab664d06465703c9d2fbbb6f9b79412097",
+      "bytes": 45638101,
+      "reopened": true,
+      "allOriginalVisibleGeometryNativeUVFieldsHairDataAndStageExact": true,
+      "r48HiddenScalpAnd29NativeControlsExact": true,
+      "allNonSkinMaterialsExact": true,
+      "originalNodeInputChanges": [
+        [
+          "Principled BSDF",
+          "Subsurface Weight",
+          0.09000000357627869,
+          1.0
+        ],
+        [
+          "Principled BSDF",
+          "Specular IOR Level",
+          0.30000001192092896,
+          0.5
+        ]
+      ],
+      "albedoGraphExact": true,
+      "geometryDisplacement": false,
+      "alphaOpaqueUnchanged": true,
+      "libraries": 0,
+      "qualification": "Material-only static source proof, not appearance/physics/runtime acceptance"
+    },
+    {
+      "tag": "B",
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0049-b-surface-relief.blend",
+      "sha256": "6a8b2ca8f5d4681138ae35a4c747dd2305499739e1c461e2db40af31e533d8d3",
+      "bytes": 45642322,
+      "reopened": true,
+      "allOriginalVisibleGeometryNativeUVFieldsHairDataAndStageExact": true,
+      "r48HiddenScalpAnd29NativeControlsExact": true,
+      "allNonSkinMaterialsExact": true,
+      "originalNodeInputChanges": [
+        [
+          "Principled BSDF",
+          "Specular IOR Level",
+          0.30000001192092896,
+          0.5
+        ]
+      ],
+      "albedoGraphExact": true,
+      "geometryDisplacement": false,
+      "alphaOpaqueUnchanged": true,
+      "libraries": 0,
+      "qualification": "Material-only static source proof, not appearance/physics/runtime acceptance"
+    },
+    {
+      "tag": "C",
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0049-c-body-pigment.blend",
+      "sha256": "ce9b49399fe73ceec4855c1b7c1ecd1eefd2cae45d0a23f1b81725b8c8a5814f",
+      "bytes": 45665625,
+      "reopened": true,
+      "allOriginalVisibleGeometryNativeUVFieldsHairDataAndStageExact": true,
+      "r48HiddenScalpAnd29NativeControlsExact": true,
+      "allNonSkinMaterialsExact": true,
+      "originalNodeInputChanges": [],
+      "albedoGraphExact": false,
+      "geometryDisplacement": false,
+      "alphaOpaqueUnchanged": true,
+      "libraries": 0,
+      "qualification": "Material-only static source proof, not appearance/physics/runtime acceptance",
+      "savedBodyColor": {
+        "attribute": "AFN49C_RegisteredBodyPigment",
+        "domain": "POINT",
+        "type": "FLOAT_COLOR",
+        "points": 10582,
+        "sha256": "b5ef523354acf96311c076ee1f4987a4bbfcc79f44a93778a0ac8972fff69fa6",
+        "areaWeightedLinearRGB": [
+          0.31999999674417745,
+          0.2300000017833338,
+          0.18000000314801495
+        ],
+        "meanReflectanceErrorMax": 3.2558225560030962e-09,
+        "headFallbackExact": true,
+        "notSubjectMeasuredOrAnatomyProof": true
+      }
+    }
+  ],
+  "retainedResearch": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0049-c-body-pigment.blend",
+    "sha256": "ce9b49399fe73ceec4855c1b7c1ecd1eefd2cae45d0a23f1b81725b8c8a5814f",
+    "purpose": "Approximate full-body pigment authoring field with explicit area-weighted average reflectance invariant, using already licensed reference atlas",
+    "effectiveScope": "2674nonzero-confidence native vertices; source/target bodies differ and photo contains baked shading; no biometric/anatomical registration proof",
+    "minimumIntegrationStep": "Validate anatomical pigment placement and confidence on actual body, correct reference correspondence/baked-shading artifacts, then deliberately export/bake tested color representation for isolated Aevrynd skin preview. Do not promote this field or postpone eye/anatomy production for repeated nearest-body/gain sweeps."
+  },
+  "rebuild": "Use installed Blender5.2.2 --disable-autoexec --threads4. Build49skin-response,49surface-relief. Run prepare49body-atlas with bundled Python/Pillow; build49body-pigment (old source cache auto-rebuilt from pinnedr23 via existing own sampler if missing). Verify49skin for unchanged data and actual complete views. No new addon/tool dependency.",
+  "license": "Existing CC0 MakeHuman pigment original bytes/provenance, own registration/normal construction. Not exclusive ownership of original texture.",
+  "limits": [
+    "No measured skin BRDF/transport validation",
+    "No new skin anatomy or actual body-hair geometry",
+    "No completed expression/hair/cloth dynamics or continuous contacts",
+    "No runtime/website or whole-character score promotion"
+  ]
+}

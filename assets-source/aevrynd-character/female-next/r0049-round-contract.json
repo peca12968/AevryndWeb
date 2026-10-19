@@ -1,0 +1,53 @@
+{
+  "revision": "female-next-r0049-a",
+  "previousGoalTurnClassification": "progress: r48 retained scoped anatomical authoring and rejected3bounded interpolation methods, pushedf989033; no appearance gain",
+  "completeWorkingSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0042-b-shadow-quality-review.blend",
+  "workingSha256": "d62c180a5af61f6f8d800926b101738c89a8fbe7785fe1054fd655fd018824da",
+  "input": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0048-anatomical-authoring-retained.blend",
+  "inputSha256": "49f76186981a7244444e37b950eab6acd24e34be15a65d855cee527422405c67",
+  "inputScope": "Complete unchanged r42 visible character plus initial r48scalp/29controls. Retain these in one complete source, still incomplete anatomical coverage and no accepted hair solver.",
+  "mainDefects": [
+    "Flat/clay or wax-like skin response",
+    "Staring eyes",
+    "Sheet-like scalp hair"
+  ],
+  "chosenDefect": "Complete-character skin light response at unchanged albedo",
+  "hypothesis": "Using subsurface skin response rather than91percent opaque diffuse, with unmodified physical IOR reflection, may restore soft tissue light transport and surface highlights without darker pigment or new lighting",
+  "changes": {
+    "Subsurface Weight": [
+      0.09,
+      1.0
+    ],
+    "Specular IOR Level": [
+      0.3,
+      0.5
+    ]
+  },
+  "held": [
+    "All body/eye/hair/brow/lash/tissue/authoring geometry and transforms",
+    "All original roughness/pigment/coordinate native attributes",
+    "Every albedo node,texture byte and color space",
+    "SSS radius/scale,IOR,roughness field,microbump",
+    "Camera,lighting,exposure,pose,color management and render budget"
+  ],
+  "cheapTest": "Actual full-head fixed-stage before/after renders; reject waxy oversmoothing,plastic gloss,color shift or no whole-face benefit before further work",
+  "references": [
+    {
+      "url": "https://docs.blender.org/manual/en/5.2/render/shader_nodes/shader/principled.html",
+      "use": "Subsurface weight blends diffuse/SSS; nominal skin can use1. Specular IOR Level0.5 leaves physical IOR reflection unadjusted. This motivates a test, not a measured subject calibration."
+    },
+    {
+      "url": "https://docs.blender.org/manual/en/5.2/render/eevee/limitations/nodes_support.html",
+      "use": "EEVEE and Cycles scattering differ; do not call EEVEE a measured spectral/volumetric skin proof."
+    }
+  ],
+  "candidateCount": 1,
+  "resources": {
+    "startUTC": "2026-10-19 16:35:07 UTC",
+    "checkpointUTC": "2026-10-19 17:20:07 UTC",
+    "threads": 4,
+    "heavyJobsAtOnce": 1,
+    "newNodeServers": 0
+  },
+  "scope": "Skin material only; no new anatomy,motion,self/continuous contact,runtime or score claims."
+}
