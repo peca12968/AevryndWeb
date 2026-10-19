@@ -1,0 +1,55 @@
+{
+  "revision": "female-next-r0036-b",
+  "decision": "RETAIN_PARTIAL_INTEGRATED_3D_BROW_LAYER_STATIC",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0036-b-contact-refined-brows.blend",
+  "sourceSha256": "d563918d780e6d86f52e8bd50562bc5beec427ccfc5ebb60ac88e3aa53185210",
+  "fallback": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0035-b-neutral-rest-review.blend",
+  "fallbackSha256": "e522f587e7f9d5e5df7564b1ff0c38f75575dda3e6e6b1806ae2eee662b0c168",
+  "appearance": {
+    "scope": "Independent neutral3D eyebrow layer only; not overall face/eyes/hair or character",
+    "estimate": 58,
+    "confidenceRange": [
+      50,
+      64
+    ],
+    "visibleEvidence": "Matched complete-head frontal/oblique/profile and opposite/alternate-light views show readable brows above both eyes, visibly framing the previously bare face. Closeups show separated tapering actual-radius fibres instead of a solid image backing.",
+    "deductions": [
+      "Still sparse/combed and too evenly arched in closeup, with some pencil-like flow",
+      "Same artist source mirrored onto both sides, limited independently authored asymmetry",
+      "No deforming facial attachment or expression response",
+      "Existing eye optics/catchlights, wetline/lacrimal/lashes, skin and scalp groom still synthetic"
+    ],
+    "noAutomaticWholeFaceOrCharacterIncrease": true
+  },
+  "function": "Two native editable POLY brow objects, separate hidden actual-skin attachment patches and900exact triangle/barycentric root records. No live surface-deform/face rig claim.",
+  "contactScope": {
+    "pose": "neutral only",
+    "fibres": 900,
+    "completeSegments": 20700,
+    "bodyUnqualified": 0,
+    "eightOpticCapsuleAABBsPass": true,
+    "selfUnqualified": 0,
+    "testedSelfPairs": 59694,
+    "minimumTestedSelfPairCapsuleGapM": 3.1077818624627965e-06,
+    "scalpBrow": {
+      "status": "PASS_NEUTRAL_SCALP_BROW_CAPSULE_SEPARATION",
+      "totalScalpSegments": 1524000,
+      "totalBrowSegments": 20700,
+      "scalpSegmentsExcludedByCompleteBrowAABB": 1524000,
+      "remainingScalpSegments": 0,
+      "directFiniteCapsulePairs": 0,
+      "unqualifiedPairs": 0,
+      "minimumCertifiedGapLowerBoundM": 0.012745732784191777,
+      "failureSamples": [],
+      "scope": "All complete actual POLY segments, max endpoint radii, exact preserved world matrices; broadphase exclusions or finite segment-pair distances. Not scalp self/dynamics."
+    },
+    "sourceBodyEyesSkinScalpAndStageExact": true,
+    "distanceDefinitions": "Body results are conservative full-segment capsule lower bounds plus outside roots; CV minima are unsigned samples. Self is finite capsule-pair separation plus expanded-AABB exclusions. Not global exact signed distances."
+  },
+  "A": "Rejected for10unresolved conservative capsule contacts; never adopted. B uses same style/roots/radii/material with graph-colored residual-contact projection.",
+  "pilot": "Conforming alpha-card silhouette pilot only, not3D fibres and not adopted. Rebuildable local diagnostic; not necessary as an extra40MB history copy.",
+  "wholeCharacterScore": null,
+  "runtimePromotion": false,
+  "femaleAccepted": false,
+  "nextAction": "Use r36 B contact-refined-brows as the ONE integrated working NEW female head; r35 B is the immediate fallback, r34 P/r32 and legacy r23/v249 history remain preserved. The 900 separate actual-radius3D brow fibres have static body/8optics/self/scalp contact proof and exact root caches, not a deforming attachment or full-face acceptance. Do not restart the blurred MakeHuman skin-pigment brow donor route or r31 random/greedy-lift brow field. The eyebrow001 artist bitmap is an explicitly CC0 silhouette/local-flow reference, not captured 3D follicles; retain this independent editable layer and visible partial framing benefit without density/darkness score inflation. Next reassess the full head with maximum3visible defects; exposed synthetic eyes remain a coherent major defect. Prefer one complete eye-surface presentation improvement using anatomically supported wetline/lacrimal/lash structure and the exact existing lid/globe interface, with a small multi-angle pilot before full fibres. Do not shrink/move eyes or transplant the old r20 blink field, claim selection groups are rigs, or add tiny unrelated eye tweaks endlessly. Natural full scalp hairstyle remains visibly rejected: fixed-exit loft/funnel, analytic sheets, extra-density/shader-only routes stay stopped. Resume scalp hair only with a valid artist groom or nonsingular actual-root-to-free-volume feasibility basis. Keep native rest, body/UV, calibrated skin/exposure and STRIP0 controls. Full oral, expressions/blink/gaze/face/body/clothes rig, natural scalp self/dynamics, rebuildable engine/export/LOD/performance and female approval all remain; do not promote runtime/website or begin male work."
+}

@@ -1,0 +1,13 @@
+00:00.594  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0035-b-neutral-rest-review.blend"
+R36_INITIAL 61974 7831
+R36_RELAXED {"remainingConservativeCapsuleOverlaps": 10, "minimumPairCapsuleGapM": -3.253846024098289e-06, "maximumDisplacementM": 6.418453015854155e-05, "rootPositionsExact": true, "maximumAllowedDisplacementM": 0.00065, "allFolliclesRetained": true, "staticAuthoringOnly": true}
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0036-brows.py:92: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(f'AFN36_ArtistBrown_{k}');m.use_nodes=True;sh=m.node_tree.nodes.get('Principled BSDF');rgb=base*(.78+.088*k);sh.inputs['Base Color'].default_value=(*rgb,1.);sh.inputs['Roughness'].default_value=.46;sh.inputs['Specular IOR Level'].default_value=.30;sh.inputs['IOR'].default_value=1.55;m.diffuse_color=(*rgb,1);mats.append(m)
+02:10.766  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0036-data-informed-brows\a-after-face.png'
+02:11.750  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0036-data-informed-brows\a-after-oblique.png'
+02:12.703  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0036-data-informed-brows\a-after-profile.png'
+Info: Saved as "aevrynd-female-next-r0036-a-artist-informed-brows.blend"
+R36_FIBRES_DONE 132.3365912437439
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

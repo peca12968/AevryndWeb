@@ -1,0 +1,90 @@
+{
+  "revision": "female-next-r0036-b",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0036-b-contact-refined-brows.blend",
+  "sourceSha256": "d563918d780e6d86f52e8bd50562bc5beec427ccfc5ebb60ac88e3aa53185210",
+  "status": "RETAIN_PARTIAL_INTEGRATED_3D_BROW_LAYER_STATIC",
+  "sourceBaseline": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0035-b-neutral-rest-review.blend",
+  "sourceBaselineSha256": "e522f587e7f9d5e5df7564b1ff0c38f75575dda3e6e6b1806ae2eee662b0c168",
+  "layers": {
+    "fibres": [
+      "AFN36_L_BrowFibres",
+      "AFN36_R_BrowFibres"
+    ],
+    "attachmentStudies": [
+      "AFN36_L_ActualSkinAttachment",
+      "AFN36_R_ActualSkinAttachment"
+    ],
+    "sourceHead": [
+      "GEO-body_female_realistic",
+      "AFN30_L_Sclera",
+      "AFN30_L_Cornea",
+      "AFN30_L_Iris",
+      "AFN30_L_Pupil",
+      "AFN30_R_Sclera",
+      "AFN30_R_Cornea",
+      "AFN30_R_Iris",
+      "AFN30_R_Pupil"
+    ],
+    "nativeR35LidSelections": "Preserved AFN35_* authoring groups; not rig weights"
+  },
+  "rootBindings": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0036-b-brow-fibres.npz",
+  "rootBindingSha256": "49aa943996efab123916e212040749c380f2ebfa1a1c77996b220ea5c616e85a",
+  "sourceImageFlow": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0036-image-flow.npz",
+  "authoring": "All900actual fibres are native editable POLY hair Curves,24stations each. Actual source triangle/barycentric roots plus source pixel-path lineage are recorded. Independent hidden skin patches are editable reference geometry, no opaque brow cap. surface-deform and facial rig are NOT implemented.",
+  "generation": "CC0 artist alpha-weighted low-discrepancy follicles, image-structure-tensor local tangent streamlines, exact actual-skin ray bindings, bounded free-height shape. Simultaneous static finite-capsule relaxation then graph-colored residual projection. All900roots/radii retained. Not recovered measured3D follicles.",
+  "primitive": {
+    "type": "STRIP",
+    "subdivision": 0,
+    "radiusUnits": "metres",
+    "radiiM": [
+      2e-06,
+      2.7996584932723173e-05
+    ],
+    "contact": "Actual reopened world matrices applied, conservative spectral-scale bound on radius. Do not assume parented matrix is exactly identity."
+  },
+  "contactEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0036-data-informed-brows\\b-saved-verification.json",
+  "rebuild": [
+    "prepare-female-next-r0036-flow.py",
+    "build-female-next-r0036-brows.py (diagnostic silhouette pilot and paired before views)",
+    "build-female-next-r0036-brows.py --fibres",
+    "verify-female-next-r0036-brows.py (record A unresolved scope)",
+    "refine-female-next-r0036-contacts.py",
+    "verify-female-next-r0036-brows.py --variant-b",
+    "render-female-next-r0036-review.py"
+  ],
+  "references": {
+    "artistAsset": {
+      "sourceURL": "https://files.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip",
+      "asset": "eyebrows/eyebrow001/eyebrow001.png",
+      "license": "CC0-1.0",
+      "use": "Artist silhouette/alpha-derived density and local stroke tensor tangent evidence, source brown palette; source OBJ/shader program NOT imported.",
+      "explicitReleaseEvidence": "Downloaded eyebrow001.obj and eyebrow001.mhmat headers explicitly release these assets as CC0 in September2020.",
+      "copyrightAtRelease": [
+        "Data Collection AB",
+        "Joel Palmius",
+        "Jonas Hauquier"
+      ],
+      "selectedImageSha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b"
+    },
+    "anatomy": {
+      "url": "https://rcst.or.th/ejournal/files/Vol25_No2_47.PDF",
+      "title": "Anatomical Restoration Surgery of the Eyebrow in Asian",
+      "author": "Damkerng Pathomvanich",
+      "access": "Primary publisher PDF text, p49 Results/anatomical consideration and Figure2 captions.",
+      "use": "General medial/body/tail direction and taper context only; no surgery procedures copied, no universal subject dimensions asserted."
+    },
+    "blender": {
+      "url": "https://docs.blender.org/manual/en/5.1/modeling/geometry_nodes/hair/generation/interpolate_hair_curves.html",
+      "access": "Search-visible official summary only; full page unavailable.",
+      "use": "Attachment/guide concept only; no Blender node group or external code imported."
+    },
+    "invalidPhotoDonor": "Existing young_lightskinned_female_diffuse3 has too little distinct brow direction at its native resolution; route stopped after inspection."
+  },
+  "limitations": [
+    "Neutral static 3D eyebrows only; no deforming rig/expressions/blink/gaze/continuous dynamics or runtime",
+    "Existing full scalp hair remains visually rejected; no scalp self/dynamic qualification",
+    "Image-flow reconstruction is an artistic inference, not captured individual follicles",
+    "Sampled CV body gaps and conservative capsule bounds are not exact global signed distances",
+    "No whole-character score, clothing, body motions, engine export/LOD/performance or female acceptance"
+  ]
+}
