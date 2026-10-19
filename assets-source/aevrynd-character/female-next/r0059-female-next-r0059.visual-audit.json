@@ -1,0 +1,78 @@
+{
+  "revision": "female-next-r0059",
+  "reviewUTC": "2026-10-19T22:09:24.307345+00:00",
+  "decision": "RETAIN_EDITABLE_BLINK_DEMONSTRATION_REJECT_CONTACT_QUALIFICATION",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0059-a-authored-blink-study.blend",
+  "sourceSha256": "818d6ba9ebcfc5f430d2da5f1d906f71b5290219ef6350e6c03d1e87642e04d7",
+  "appearance": {
+    "status": "VISIBLE_BLINK_FUNCTION_NEUTRAL_APPEARANCE_NOT_UPGRADED",
+    "appearanceImprovement": false,
+    "wholeCharacterScore": null,
+    "observations": [
+      "Actual full head closes and independently winks with native lash/brow following. Upper/lower closure is visibly readable in face/profile/oblique/second-light views.",
+      "Neutral full-head/body appearance preserved; no new full-character beauty or realism score claimed.",
+      "Sparse rejected source head hair remains visible; no completed hairstyle, clothes or full body rig."
+    ],
+    "sameConditionHeadBodyABAndSecondLight": true,
+    "actualAnimation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0059-authored-blink\\a-actual-blink.gif",
+    "actualPNGFrames": 48
+  },
+  "function": {
+    "status": "REOPENED_EDITABLE_CONTROL_DEMONSTRATION_ONLY",
+    "evidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0059-authored-blink\\a-functional-verification.json",
+    "validSimpleDrivers": 18,
+    "sourceRestTopologyUVFemaleShapeMaterialsCurveDataStageExact": true,
+    "independentLeftRightAndSampledFollowing": true,
+    "nativeFacialHairInterpolation": "Exact quarter-step native poses to stated<1um readback allowance, small bilateral additivity error. Piecewise-linear point paths between samples approximate native root rotations.",
+    "autoRunAddonsFrameHandlersRequired": false,
+    "clip": "Frames1-48 at24fps, 2seconds, actual bilateral blink then left wink. Source opens at neutral frame1.",
+    "fullBodyRigOrCompleteLayerClaim": false
+  },
+  "contact": {
+    "status": "FAIL_ENDPOINT_CONTACT_STOP_OTHER_POSES",
+    "evidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0059-authored-blink\\a-contact-verification.json",
+    "sourceNeutral": {
+      "changedRegionNonAdjacentSelfPairs": 3634,
+      "skinVsOpticsPairs": 1808,
+      "skinVsWetlinePairs": 0
+    },
+    "fullyClosed": {
+      "changedRegionNonAdjacentSelfPairs": 4435,
+      "skinVsOpticsPairs": 1837,
+      "skinVsWetlinePairs": 516
+    },
+    "pairCountWarning": "Counts are triangle pairs within each tested pose, not numbers of bad vertices/people and not penetration depths. Source/target triangulation may differ; subtracting totals is not a count of new contacts.",
+    "surfaceDistanceEvidence": "Actual float64 triangle-intersection witnesses establish zero surface separation at reported locations; no exact global signed penetration-depth minimum is computed.",
+    "globalSignedMinimumM": null,
+    "numericalJoinAllowanceM": 1e-06,
+    "legitimateJoins": "Only exact shared source vertices/edges within stated numerical allowance; no blanket anatomical/eye-region exclusion.",
+    "coverage": "Actual render-level body1197504triangles. Changed-region non-adjacent self surfaces and complete skin-vs-optics/wetline interfaces, neutral and closed only.",
+    "unqualified": "Adjacent folds outside explicitly tested interfaces, tissue thickness, native facial-hair finite/self, whole unchanged body self, intermediate and continuous motion.",
+    "nativeSourceRoleNote": "Original closed-eye morph also deforms optical and wetline material regions; optics were not assumed fixed.",
+    "afterFailure": "No expanded intermediate/continuous/performance tests after endpoint rejection."
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "cpuGpuMemoryBudgetPass": false
+  },
+  "research": {
+    "purpose": "Editable left/right facial motion and native facial-hair following infrastructure plus an actual playable control demonstration on a complete character.",
+    "scope": "Same37436-index authored shape keys, exact native quarter-step facial-hair data, simple persisted drivers and GeometryNodes point-ID sampling. No handler, addon or auto-run dependency.",
+    "blocker": "Neutral source skin/eye intersections already present; closed pose adds unresolved wetline/skin and self intersections. Facial-hair finite/self/continuous and engine not qualified.",
+    "minimumIntegrationStep": "Use this same character/controls when authoring corrected ocular components and eyelid inner walls with original IDs. Revalidate all changed interfaces and native following; do not integrate current failed eye surfaces as accepted anatomy."
+  },
+  "stoppedMethod": "Accepting source Eyes_Closed_Left/Right alone as collision-qualified blink anatomy. Do not parameter-sweep strength or treat unchanged neutral source intersections as allowed anatomy. Native control/data representation remains useful.",
+  "nextAction": "Build an actual corrected ocular assembly on the same coherent full-body candidate, preserving original vertex/face lineage, UVs, neutral face, editable native blink controls and native facial-hair data. FIRST separate/identify the underlying eye, iris/pupil, wetline and eyelid geometry with stable source IDs (splitting material groups must not silently change subdivision borders), then author the missing/incorrect lid inner-wall and ocular interfaces from the actual neutral/closed intersection witnesses. The current source has neutral skin/optics crossings and closure wetline/self crossings; source provenance does not excuse them. Deliver an actual complete-head/body candidate and cross-section proving changed interfaces, then repeat affected endpoint surface/finite-contact checks before intermediate and continuous sweeps. Do not merely rescale/move the entire globe, sweep blink strength/shader angles, hide geometry, exclude failed eye regions or increase tolerance. Use retained r59 native control/pose data as authoring infrastructure only; no full blink or collision acceptance. No further Bob path/automatic Comb fitting, no new unrelated asset downloads, no formal/runtime/site replacement and no male work. Hair/clothes/full rig/engine remain required.",
+  "resources": {
+    "heavyJobsAtOnce": 1,
+    "blenderThreads": 4,
+    "newAppsAddons": 0,
+    "newNodeServers": 0,
+    "sourceNativePoseExtractionSeconds": 2.1832942962646484,
+    "previewBuildSeconds": 37.6486599445343,
+    "clipRenderSeconds": 97.20464253425598,
+    "contactVerificationSeconds": 13.39879059791565,
+    "instrumentedPeakWorkingSetBytes": null,
+    "allOwnBlenderJobsTerminal": true
+  }
+}

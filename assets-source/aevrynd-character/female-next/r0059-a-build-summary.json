@@ -1,0 +1,120 @@
+{
+  "revision": "female-next-r0059",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0057-d-portable-native-foundation.blend",
+  "sourceSha256": "318f0e2f18584be23ba1dc11c59e924c1719bb6768e40c3c3a65e66f1c81e34f",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0059-a-authored-blink-study.blend",
+  "outputSha256": "818d6ba9ebcfc5f430d2da5f1d906f71b5290219ef6350e6c03d1e87642e04d7",
+  "mainHypothesis": "Same-topology authored eyelid morphs with native-source lash/brow following can produce an actual editable blink without procedural lid reconstruction.",
+  "controlObject": "AFN59_FACE_CONTROLS",
+  "properties": [
+    "blink_left",
+    "blink_right"
+  ],
+  "frameRange": [
+    1,
+    48
+  ],
+  "fps": 24,
+  "timeline": [
+    [
+      1,
+      0.0,
+      0.0
+    ],
+    [
+      15,
+      0.0,
+      0.0
+    ],
+    [
+      18,
+      0.5,
+      0.5
+    ],
+    [
+      21,
+      1.0,
+      1.0
+    ],
+    [
+      24,
+      0.5,
+      0.5
+    ],
+    [
+      27,
+      0.0,
+      0.0
+    ],
+    [
+      34,
+      0.0,
+      0.0
+    ],
+    [
+      37,
+      1.0,
+      0.0
+    ],
+    [
+      40,
+      0.0,
+      0.0
+    ],
+    [
+      48,
+      0.0,
+      0.0
+    ]
+  ],
+  "nativeFacialHairSampleReadback": [
+    {
+      "frame": 1,
+      "pose": "neutral",
+      "controls": [
+        0.0,
+        0.0
+      ],
+      "lashesMaximumNativePointErrorM": 0.0,
+      "browsMaximumNativePointErrorM": 0.0
+    },
+    {
+      "frame": 18,
+      "pose": "both_050",
+      "controls": [
+        0.5,
+        0.5
+      ],
+      "lashesMaximumNativePointErrorM": 0.0,
+      "browsMaximumNativePointErrorM": 0.0
+    },
+    {
+      "frame": 21,
+      "pose": "both_100",
+      "controls": [
+        1.0,
+        1.0
+      ],
+      "lashesMaximumNativePointErrorM": 0.0,
+      "browsMaximumNativePointErrorM": 0.0
+    },
+    {
+      "frame": 37,
+      "pose": "left_100",
+      "controls": [
+        1.0,
+        0.0
+      ],
+      "lashesMaximumNativePointErrorM": 0.0,
+      "browsMaximumNativePointErrorM": 0.0
+    }
+  ],
+  "bodyOriginalUVAndMaterialsRetained": true,
+  "nativeCurveTopologyRadiiMaterialsRetained": true,
+  "handlersAutoRunAddonsRequired": false,
+  "skinLightExposureUnchanged": true,
+  "blinkDataApproximation": "Facial hair exact quarter-step native poses, measured small bilateral additivity error; piecewise linear point interpolation between them. Not exact native rotation or continuous collision proof.",
+  "acceptance": "PENDING_ACTUAL_APPEARANCE_AND_CONTACT_REVIEW",
+  "hairRigClothesRuntime": "STILL_UNACCEPTED",
+  "seconds": 0.3147776126861572
+}
