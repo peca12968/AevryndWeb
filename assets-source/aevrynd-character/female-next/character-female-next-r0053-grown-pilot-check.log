@@ -1,0 +1,15 @@
+00:00.656  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0051-b-integrated-eye-wall.blend"
+00:02.000  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0053-b-native-grown-primary-pilot.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0053-primary.py", line 77, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0053-primary.py", line 46, in main
+    uvError=float(np.max(np.abs(storedUV-uvExpected)));assert uvError<1e-7
+                                                              ^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'scripts/character-next/verify-female-next-r0053-primary.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

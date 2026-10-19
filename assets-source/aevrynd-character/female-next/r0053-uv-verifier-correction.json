@@ -1,0 +1,7 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0053-b-native-grown-primary-pilot.blend",
+  "sourceSha256": "e36a921c4cf96325f6db3bad786587a03d1f555cb21504e469da206d324bae55",
+  "priorUVAbsoluteThresholdResult": false,
+  "expectedFloat32UVExact": true,
+  "explanation": "Old absolute1e-7 threshold falsely rejected valid rounded FLOAT2 UDIM coordinates. Corrected test compares expected float32 values exactly. Six body crossings and degenerate spans remain failures; no geometry/contact criterion relaxed."
+}

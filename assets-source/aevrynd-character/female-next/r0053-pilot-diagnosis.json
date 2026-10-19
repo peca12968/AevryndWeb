@@ -1,0 +1,39 @@
+{
+  "rejectedLongSeed": {
+    "source": "aevrynd-female-next-r0053-a-pulled-primary-groom.blend",
+    "observation": "Actual full-head render retains large outward normal spikes. Tip targets were reached but the entire route was not bent into a hairstyle.",
+    "decision": "REJECT_LONG_NORMAL_SEED_TIP_DRAG_NO_DENSE_EXPANSION"
+  },
+  "shortSeedPilot": {
+    "source": "aevrynd-female-next-r0053-b-native-grown-primary-pilot.blend",
+    "authoredCurveIndices": [11,25,26,29,31,33],
+    "actualFiniteBodySegments": 762,
+    "confirmedCentrelineCrossingSegments": 6,
+    "rootFailures": 0,
+    "degenerateSegmentsBelowOneMicronByCurve": [92,77,84,52,90,75],
+    "largestActualSegmentM": 0.23104055225849152,
+    "nonadjacentCapsuleOverlapPairs": 19174,
+    "selfMeaning": "Many repeated zero-length spans overlap; the capsule-pair count is not a count of distinct topological strand crossing events. This is both invalid discretization and an unaccepted contact result.",
+    "decision": "REJECT_UNCORRECTED_NATIVE_EXTENSION_PIPELINE"
+  },
+  "verifiedImplementationCauses": [
+    "Three route stations with very unequal distances were forced through a quadratic at t=.5, producing avoidable root loops/overshoot.",
+    "The guide's short root exit belongs to its own root; the new master requires its own actual-root departure.",
+    "Native tip extension produced repeated old-tip samples and a large final span; actual saved data demonstrates the failure. Official main source's move_last_point_and_resample scales sampling lengths on the old polyline before assigning the new tip, supporting this diagnosis. Installed behavior, not main source alone, is the evidence."
+  ],
+  "correctiveTrial": {
+    "rootPositionAndRadiusPolicy": "Exact fixed roots and radii; no failed-root exclusion or collision tolerance change.",
+    "rootExit": "New root + its actual normal and projected intended tangent, before region-specific free route stations.",
+    "stroke": "Rounded polyline corner contained in the stations' convex hull; no uneven-station quadratic overshoot.",
+    "sampling": "Own uniform arc-length reparameterization of the current actual POLY path between native events. No skin projection or collision-driven CV push.",
+    "limit": "One corrected six-master pilot. No full masters/dense children unless it is structurally useful and full finite contact qualifies."
+  },
+  "collisionFlagLimitation": "Sculpt collision was enabled but did not prevent observed crossings. Never use the flag as contact evidence. Official Snake Hook implementation inspected has no generic collision solver call in its execution path; compiled installed behavior must still be measured independently.",
+  "verificationCorrection": "A fixed1e-7 UV threshold incorrectly rejects float32 UDIM UV coordinates above1. The corrected verifier requires exact equality with correctly rounded float32 barycentric UV; it does not relax geometry/contact criteria.",
+  "primarySourcesRead": [
+    "https://docs.blender.org/manual/en/latest/sculpt_paint/curves_sculpting/brushes/snake_hook_curves.html",
+    "https://raw.githubusercontent.com/blender/blender/main/source/blender/editors/sculpt_paint/curves/sculpt_snake_hook.cc",
+    "https://raw.githubusercontent.com/blender/blender/main/source/blender/editors/sculpt_paint/curves/sculpt_brush.cc"
+  ],
+  "rights": "References read to understand native production tools. No Blender C++ implementation, bundled node graph, private donor or derivative imported into Aevrynd code/assets. The reparameterization uses independently written ordinary NumPy interpolation."
+}

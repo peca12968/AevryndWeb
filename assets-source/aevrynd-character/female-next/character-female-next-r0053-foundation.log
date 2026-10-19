@@ -1,0 +1,14 @@
+00:00.656  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0051-b-integrated-eye-wall.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0053-scalp-foundation.py", line 132, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0053-scalp-foundation.py", line 54, in main
+    assert hit is not None,('Missing anatomical anchor',name)
+           ^^^^^^^^^^^^^^^
+AssertionError: ('Missing anatomical anchor', 'R_behind_ear')
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\build-female-next-r0053-scalp-foundation.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
