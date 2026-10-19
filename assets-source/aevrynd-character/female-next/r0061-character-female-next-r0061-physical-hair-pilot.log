@@ -1,0 +1,10 @@
+00:00.797  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0061-b-fibres-ponytail-study.blend"
+D:\Download\Aevrynd\scripts\character-next\shade-female-next-r0061-physical-hair.py:53: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN61_CHIANG_MELANIN_HAIR');mat.use_nodes=True;t=mat.node_tree;t.nodes.clear();out=t.nodes.new('ShaderNodeOutputMaterial');hair=t.nodes.new('ShaderNodeBsdfHairPrincipled');hair.model='CHIANG';hair.parametrization='MELANIN'
+00:26.094  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0061-surface-flow-groom\c-physical-face.png'
+00:56.640  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0061-surface-flow-groom\c-physical-profile.png'
+Info: Saved as "aevrynd-female-next-r0061-c-physical-ponytail-study.blend"
+R61_PHYSICAL_HAIR_PILOT 56.294392347335815
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

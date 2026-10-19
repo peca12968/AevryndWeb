@@ -1,0 +1,81 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0061-b-fibres-ponytail-study.blend",
+  "sha256": "d06d0cf9ca6741f8b8477ee4c94c6213e62816caea437d03aec3b43c2c96a4bf",
+  "status": "PASS_NEUTRAL_FREE_SHAFT_VS_BODY_OPTICS_SCOPE",
+  "allActualFreeCapsuleSegments": 3743586,
+  "unqualifiedCapsuleSegments": 0,
+  "minimumConservativeSeparationLowerBoundM": 1.1732820188626692e-08,
+  "exactGlobalSignedMinimumM": null,
+  "actualClosedBodyAnchors": 16863,
+  "bodyAnchorFailures": [],
+  "opticalBoundsExclusion": [
+    {
+      "component": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "bounds": [
+        [
+          0.018893490023445425,
+          -0.12219883401443221,
+          1.4519130910810958
+        ],
+        [
+          0.04104534757944167,
+          -0.09882878627731939,
+          1.4740755331001907
+        ]
+      ],
+      "anchorsWithinBounds": 0
+    },
+    {
+      "component": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "bounds": [
+        [
+          -0.04104535424787015,
+          -0.12219883068021797,
+          1.4519129843862402
+        ],
+        [
+          -0.018893488356338306,
+          -0.09882878627731939,
+          1.474075426405335
+        ]
+      ],
+      "anchorsWithinBounds": 0
+    },
+    {
+      "component": "AFN60_L_IRIS_PUPIL_SURFACE",
+      "bounds": [
+        [
+          0.02345318470203117,
+          -0.11910356957397772,
+          1.4564604258275011
+        ],
+        [
+          0.03654963647208387,
+          -0.11764857849635435,
+          1.4695244640338387
+        ]
+      ],
+      "anchorsWithinBounds": 0
+    },
+    {
+      "component": "AFN60_R_IRIS_PUPIL_SURFACE",
+      "bounds": [
+        [
+          -0.03654963647208387,
+          -0.11910356957397772,
+          1.4564614927760573
+        ],
+        [
+          -0.02345318470203117,
+          -0.11764858183056859,
+          1.46952467742355
+        ]
+      ],
+      "anchorsWithinBounds": 0
+    }
+  ],
+  "previousAggregateRootUnresolved": 178,
+  "testCorrection": "Open iris surfaces invalidate aggregate parity/winding as a solid test. Actual closed body volume tested separately; all optical containment excluded by disjoint actual component bounds. Capsule separation still tests all actual body/optical surfaces. No physical or numeric tolerance changed.",
+  "anatomicalRootJoinsAndSelfMotion": "First follicle segment, hair/hair, hair/tie and all dynamics unaccepted. Tie-shaft self failure remains real and unexcused.",
+  "seconds": 62.61608672142029
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "source": "aevrynd-female-next-r0061-c-physical-ponytail-study.blend",
+  "sha256": "7df9ff20a1b34e25682d6443b4c5cfe9d065071bc1cadd1e20f28897f9446064",
+  "units": "metres, curves in world space; source body retains original uniform transform",
+  "authority": "Rejected offline study. Rest lineage data format only is reusable.",
+  "rootAttributes": {
+    "AFN61_RestRenderTriangle": {
+      "domain": "CURVE",
+      "type": "INT",
+      "count": 16863
+    },
+    "AFN61_NativeScalpFace": {
+      "domain": "CURVE",
+      "type": "INT",
+      "count": 16863
+    },
+    "AFN61_RestBarycentric": {
+      "domain": "CURVE",
+      "type": "FLOAT_VECTOR",
+      "count": 16863
+    }
+  },
+  "reference": "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/hair_principled.html",
+  "hairModel": "Principled Hair BSDF / Chiang / Melanin",
+  "shaderValues": {
+    "Melanin": 0.65,
+    "Melanin Redness": 0.2,
+    "Roughness": 0.38,
+    "Radial Roughness": 0.36,
+    "IOR": 1.55,
+    "Random Color": 0.12,
+    "Random Roughness": 0.08
+  },
+  "rootLocationSource": "Actual render-level r60B skin, original native face IDs; rest correspondence only.",
+  "minimumIntegrationStep": "Transfer the validated rest-lineage attribute format and exact body source correspondence into a newly collision-constrained, authored bundle groom. Do not adopt the random root/tie layout or current paths.",
+  "collisionStatus": "FAIL_FULL_GROOM_SELF_SEPARATION",
+  "runtimeOrFemaleAcceptance": false
+}

@@ -1,0 +1,28 @@
+00:01.110  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0060-b-limit-surface-assembly-study.blend"
+00:21.532  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0061-surface-flow-groom\baseline-cycles-face.png'
+00:33.000  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0061-surface-flow-groom\baseline-cycles-body-face.png'
+00:33.125  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0061-b-fibres-ponytail-study.blend"
+00:58.078  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0061-surface-flow-groom\b-material-control-cycles-face.png'
+00:58.188  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0061-c-physical-ponytail-study.blend"
+01:26.438  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0061-surface-flow-groom\c-physical-alternate-oblique.png'
+01:48.375  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0061-surface-flow-groom\c-physical-hair-profile.png'
+02:01.047  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0061-surface-flow-groom\c-physical-body-face.png'
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\shade-female-next-r0061-physical-hair.py", line 61, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\shade-female-next-r0061-physical-hair.py", line 46, in main
+    bpy.ops.wm.open_mainfile(filepath=str(OUT));settings();extra=render('c-physical',('alternate-oblique','hair-profile','body-face','back'))
+                                                                 ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\shade-female-next-r0061-physical-hair.py", line 24, in render
+    g.k.b.camera('profile' if view=='hair-profile' else ('oblique' if view in ('opposite-oblique','alternate-oblique') else view));s.camera.data.lens=85
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0028-cc0-foundation.py", line 60, in camera
+    loc={'face':(0.,-.90,HEAD+.015),'oblique':(.46,-.82,HEAD+.04),'profile':(.86,-.16,HEAD+.02),'body-face':(0.,-4.6,.84),'body-profile':(4.6,-.12,.84)}[view]
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'back'
+
+Error: script failed, file: 'D:/Download/Aevrynd/scripts/character-next/shade-female-next-r0061-physical-hair.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

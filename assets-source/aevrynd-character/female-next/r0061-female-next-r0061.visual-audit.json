@@ -1,0 +1,181 @@
+{
+  "revision": "female-next-r0061",
+  "reviewUTC": "2026-10-19T23:22:27.739191+00:00",
+  "decision": "REJECT_FULL_GROOM_RETAIN_REST_LINEAGE_TOOLS_ONLY",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0061-c-physical-ponytail-study.blend",
+  "sourceSha256": "7df9ff20a1b34e25682d6443b4c5cfe9d065071bc1cadd1e20f28897f9446064",
+  "appearance": {
+    "status": "FAILED_REALISTIC_HAIR_ACCEPTANCE",
+    "completeCharacterImprovement": false,
+    "silhouetteCoverageChange": true,
+    "staticHairAppearanceScore": 40,
+    "scoreScope": "r61C static hairstyle appearance only, strict subjective review; medium confidence. Not whole hair including motion, not complete character score.",
+    "wholeCharacterScore": null,
+    "observations": [
+      "Ponytail and head coverage are now legible on the complete character, but the front still reads as a pale smooth cap.",
+      "Hairline/root flow is too uniform, the gathered transition is funnel-like, and the loose tail lacks natural medium-scale clumps.",
+      "Same-groom/equal-Cycles material control shows that changing only to a dedicated hair shader does not solve the shape.",
+      "Original skin shader/textures and lights/exposure remain exact; renderer changed explicitly and baseline was rerendered with identical Cycles settings."
+    ],
+    "evidence": [
+      "r0061-complete-character-comparison.png",
+      "r0061-hair-multiangle.png",
+      "c-equal-renderer-controls.json"
+    ],
+    "newHairDynamicsAuthored": false
+  },
+  "function": {
+    "status": "PASS_SCOPED_NATIVE_DATA_READBACK_NOT_FULL_CHARACTER",
+    "actualCurves": 16863,
+    "pointsPerCurve": 224,
+    "nativeRootLineageAttributes": {
+      "AFN61_RestRenderTriangle": {
+        "domain": "CURVE",
+        "type": "INT",
+        "count": 16863
+      },
+      "AFN61_NativeScalpFace": {
+        "domain": "CURVE",
+        "type": "INT",
+        "count": 16863
+      },
+      "AFN61_RestBarycentric": {
+        "domain": "CURVE",
+        "type": "FLOAT_VECTOR",
+        "count": 16863
+      }
+    },
+    "anatomicalFiveComponentsPreserved": true,
+    "relativeTextures": 15,
+    "automaticHandlersOrAddonsNeeded": false,
+    "rootScope": "Exact recorded rest attachment only; not an animated physical scalp binding.",
+    "evidence": "c-source-readback.json"
+  },
+  "contact": {
+    "status": "FAIL_FULL_GROOM_SELF_SEPARATION",
+    "neutralBodyOpticsScope": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0061-b-fibres-ponytail-study.blend",
+      "sha256": "d06d0cf9ca6741f8b8477ee4c94c6213e62816caea437d03aec3b43c2c96a4bf",
+      "status": "PASS_NEUTRAL_FREE_SHAFT_VS_BODY_OPTICS_SCOPE",
+      "allActualFreeCapsuleSegments": 3743586,
+      "unqualifiedCapsuleSegments": 0,
+      "minimumConservativeSeparationLowerBoundM": 1.1732820188626692e-08,
+      "exactGlobalSignedMinimumM": null,
+      "actualClosedBodyAnchors": 16863,
+      "bodyAnchorFailures": [],
+      "opticalBoundsExclusion": [
+        {
+          "component": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+          "bounds": [
+            [
+              0.018893490023445425,
+              -0.12219883401443221,
+              1.4519130910810958
+            ],
+            [
+              0.04104534757944167,
+              -0.09882878627731939,
+              1.4740755331001907
+            ]
+          ],
+          "anchorsWithinBounds": 0
+        },
+        {
+          "component": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+          "bounds": [
+            [
+              -0.04104535424787015,
+              -0.12219883068021797,
+              1.4519129843862402
+            ],
+            [
+              -0.018893488356338306,
+              -0.09882878627731939,
+              1.474075426405335
+            ]
+          ],
+          "anchorsWithinBounds": 0
+        },
+        {
+          "component": "AFN60_L_IRIS_PUPIL_SURFACE",
+          "bounds": [
+            [
+              0.02345318470203117,
+              -0.11910356957397772,
+              1.4564604258275011
+            ],
+            [
+              0.03654963647208387,
+              -0.11764857849635435,
+              1.4695244640338387
+            ]
+          ],
+          "anchorsWithinBounds": 0
+        },
+        {
+          "component": "AFN60_R_IRIS_PUPIL_SURFACE",
+          "bounds": [
+            [
+              -0.03654963647208387,
+              -0.11910356957397772,
+              1.4564614927760573
+            ],
+            [
+              -0.02345318470203117,
+              -0.11764858183056859,
+              1.46952467742355
+            ]
+          ],
+          "anchorsWithinBounds": 0
+        }
+      ],
+      "previousAggregateRootUnresolved": 178,
+      "testCorrection": "Open iris surfaces invalidate aggregate parity/winding as a solid test. Actual closed body volume tested separately; all optical containment excluded by disjoint actual component bounds. Capsule separation still tests all actual body/optical surfaces. No physical or numeric tolerance changed.",
+      "anatomicalRootJoinsAndSelfMotion": "First follicle segment, hair/hair, hair/tie and all dynamics unaccepted. Tie-shaft self failure remains real and unexcused.",
+      "seconds": 62.61608672142029
+    },
+    "selfScope": {
+      "method": "Tie-plane spatial hash then exact finite segment interior/interior closest points; distance below sum of actual interpolated radii minus1um. B and C geometry/radii must match before transferring evidence.",
+      "oneCutProvenInteriorShaftPairs": 5635,
+      "exhaustiveWholeHairCount": null,
+      "evidence": "b-tie-self-falsification.json"
+    },
+    "unaccepted": [
+      "First anatomical follicle join thickness",
+      "Full hair self and hair/tie",
+      "Physical animated scalp following",
+      "All head/wind/cloth motion and continuous sweeps"
+    ],
+    "oldTestCorrection": "Aggregate parity had178unresolved anchors because open iris surfaces were mixed into a solid. Closed body and separate optical bounds checks resolve them without geometry/tolerance changes; self-shaft failure remains.",
+    "candidateCTransfer": "B/C actual point and radius arrays exact, so both neutral free-shaft separation AND tie self failure transfer.",
+    "exactGlobalSignedMinimumM": null
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "shaderIsAevryndImplementation": false,
+    "benchmarkPassed": false
+  },
+  "retainedResearch": {
+    "purpose": "Editable native CURVES rest-follicle lineage storage/readback and a bounded complete-character groom falsification.",
+    "scope": "Actual render-triangle/barycentric and native face IDs on each curve; portable complete source and relative textures. Neutral free shafts against body/optics only.",
+    "blocker": "Current hairstyle rejected for appearance and real tie-shaft self collision; follicle joining, tie compression, deformation following and dynamics unaccepted.",
+    "minimumIntegrationStep": "Transfer the validated rest-lineage attribute format and exact body source correspondence into a newly collision-constrained, authored bundle groom. Do not adopt the random root/tie layout or current paths."
+  },
+  "stoppedMethods": [
+    "Spherical whole-scalp routes globally converged to independent random tie points: actual shaft self-overlap5635pairs in one cut; no repeated density/angle/radius/margin sweep.",
+    "Uniformly parameterized loose ponytail bundle and smooth crown are not natural medium-clump structure.",
+    "A dedicated Chiang hair material by itself does not repair this groom geometry; no melanin/roughness sweep to disguise it."
+  ],
+  "nextAction": "Preserve r60B as the complete anatomical candidate; r61C is a rejected hairstyle study, not a promoted working/formal/runtime character. STOP the spherical global comb-to-random-tie-disk construction and uniform loose-tail bundle, plus material-only attempts to rescue that structure. Next author a genuinely collision-constrained strand/bundle construction: explicit minimum finite-shaft spacing and length/bending constraints, fixed real scalp follicles and a packed tie cross-section, with no radius/density/angle/margin sweeps or deletion of colliding fibres to pass. First falsify a small actual shaft bundle for body and self separation and readable clump shape; only then rebuild and integrate the full hairstyle on the SAME r60 female, preserving qualified anatomy and showing complete head/body views. Reuse r61 native rest-lineage attribute FORMAT/readback tooling, not its random pore/tie layout as anatomical truth. No more donor Bob fitting, normal-seed Comb, shell clumps or unbounded reference collection. Continuous hair/head/cloth motion, facial fibres, full body rig/clothes/engine gates remain required; no formal/site replacement or male work.",
+  "completeAnatomicalCandidateUnchanged": "aevrynd-female-next-r0060-b-limit-surface-assembly-study.blend",
+  "resources": {
+    "heavyJobsAtOnce": 1,
+    "blenderThreads": 4,
+    "newAppsAddonsNodeServers": 0,
+    "newSubagents": 0,
+    "actualBodyContactSeconds": 271.72839069366455,
+    "volumeOwnerSeconds": 62.61608672142029,
+    "observedRenderWorkingSetBytesApprox": 2568036352,
+    "instrumentedPeakOrRuntimeBenchmark": false
+  }
+}
