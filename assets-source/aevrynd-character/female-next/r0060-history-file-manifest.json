@@ -1,0 +1,804 @@
+{
+  "revision": "female-next-r0060",
+  "formalAdopted": false,
+  "retainedScope": "PASS_SEVEN_TESTED_STATIC_OCULAR_SURFACE_AND_SPACE_SCOPE_ONLY",
+  "sharedRequiredResources": [
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Iris_Color.1007.exr",
+      "sha256": "62efc0ed85878cb0831db9b492975c384f19052bd7ab52f945777ac3e1d8b002"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Light_Skin_Color.1001.exr",
+      "sha256": "362373cf6afa6c88c44bc480f328afe94de11ca88463a6b40a5fc8032f3f6fa2"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Light_Skin_Color.1002.exr",
+      "sha256": "0c2dfa2f2edf9110c92ff9ad7879eec0b0b78ee7855d01f1d9525f3cd10e5a9b"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Light_Skin_Color.1003.exr",
+      "sha256": "cd540d1415af4dd2e5ce8f3086f921b8c610597b99a3a369a1ee67d869b629f5"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Light_Skin_Color.1004.exr",
+      "sha256": "d702bb83c27d70516aea23ea62a5218ef495b422783c9048bd193f0ca0118905"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Mouth_Color.1008.exr",
+      "sha256": "47c988fd5799f4c54e3a916cda14bbb5245cf5a171d47132e0e0e9e9f2b05c11"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Sclera_Color.1005.exr",
+      "sha256": "e81a1554b08e096ad76bfb2909a2d09747ff90df1fe1b993b768ec41713dd672"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Skin_Height.1001.exr",
+      "sha256": "62d11cdff413599f3cf4c4c16bfd6a467def20b8f21ad7e26a68ea9601475a87"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Skin_Height.1002.exr",
+      "sha256": "5dd6a565ab791074905ae3e650ec89f1c77a274d502749ba68a5dc884a651844"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Skin_Height.1003.exr",
+      "sha256": "e3edd7d2a7be4a2d1b2ec12a1f08534b770d7644c2d0181d7e4c2bda06b6c29a"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Skin_Height.1004.exr",
+      "sha256": "2e3bb73055367c3bb72be9ab95c3278b92967219d895087cd8dd44714011567b"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Skin_Roughness.1001.exr",
+      "sha256": "fa97dd24bdf68be9240982d3921bef6ae096c476589fc58eb07ab4039ff1addf"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Skin_Roughness.1002.exr",
+      "sha256": "906c3e31ad66044370e1c62bda99eb770ead2c934845be393a18823a55cbd3eb"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Skin_Roughness.1003.exr",
+      "sha256": "c5772aee25e4558f7ebb4f2f8d62f51bb8dfce511e89fb4163f85bd6c064f11f"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/study-vitruvian-textures/Skin_Roughness.1004.exr",
+      "sha256": "4d14cb45facbd63f13ee91131dbe5656c3fe0d6eb8fec93aa8f23e7f00cff10d"
+    }
+  ],
+  "files": [
+    {
+      "path": "assets-source/aevrynd-character/female-next/.gitattributes",
+      "bytes": 3119,
+      "sha256": "d3ac05e9759e3445d0bc2d70efabdca5de2e7c295cf1c5e445eb6dd6b7694738"
+    },
+    {
+      "path": "scripts/character-next/.gitattributes",
+      "bytes": 647,
+      "sha256": "01929380c9c55bc0abe58c992af6e7819901a8714da25e64bf723bdb786f15bb"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/aevrynd-female-next-r0060-a-cavity-assembly-study.blend",
+      "bytes": 12608168,
+      "sha256": "db042e958538ebcdf35cda05dee96b4201a46671622347679030b4c5e2f3b591"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/aevrynd-female-next-r0060-b-limit-surface-assembly-study.blend",
+      "bytes": 12607667,
+      "sha256": "3324231ec149a138a9de72c19a38ab7e46165e7ccde872f9e130a5b6abf56d9d"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/aevrynd-female-next-r0060-authoring.json",
+      "bytes": 3449,
+      "sha256": "7b0912388b4ee65997e74bd5920b0ef4576b23165abd7555edaa98799a853f3e"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-build-summary.json",
+      "bytes": 164747,
+      "sha256": "a2f09928aa74718196d68e6cbd88827a2f3e8a2e955c2e4d821aee130125f0ae"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-closed-alternate-oblique.png",
+      "bytes": 587124,
+      "sha256": "943bdf6de9df37079acce0dfe3b2f81e85ca4cd58da4bad733e72c9b4bf42fc5"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-closed-back.png",
+      "bytes": 566012,
+      "sha256": "fab9c705f0e6e5bd1811128d00a8e8e86246fbd45c238c63a703b7f3ae04fcd1"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-closed-body-face.png",
+      "bytes": 429388,
+      "sha256": "7c052733a7c7c1ef2fb3b4a06de440e529f70b577a51ce2591e9ee1b0b72bb91"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-closed-face.png",
+      "bytes": 585076,
+      "sha256": "94b66de488cec6a1437a2cfb3331cd4e8c94a81b2fff39476afbca9f2d84793f"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-closed-oblique.png",
+      "bytes": 578530,
+      "sha256": "58fad985e53247ccedb0f758fe2a509b0cf7e9da8c648733750795c409ff4829"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-closed-opposite-oblique.png",
+      "bytes": 597479,
+      "sha256": "fe8a48c0bfd40ae233829d0ac49dc8cdf6e43da0378322ffe2f76ba376854a32"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-closed-profile.png",
+      "bytes": 555754,
+      "sha256": "af29fa24a9e2d93103609a46e63878124a4dc51118164ed5581c100b0144dd14"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-closed-renders.json",
+      "bytes": 14309,
+      "sha256": "d363d003a0c9e15556fb1e6a723c536d4fd3ddb1798bb7b6d739cc6f798968cc"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-contact-verification.json",
+      "bytes": 127106,
+      "sha256": "a44584bc4e6551ef2ba8dc02f1be355b2ab0da29defc39964eff852e62b36828"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-functional-lineage-verification.json",
+      "bytes": 5320,
+      "sha256": "e374164cf38f317d48f30200b1045ca02c9654c848ff213f8565e40a2415a7ff"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-native-cavity-corrections.npz",
+      "bytes": 42368,
+      "sha256": "bf924b1b75325cfe6b763595a3a3c1f8075b8edb4d1fac13e6a17fd7ea39072e"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-neutral-alternate-oblique.png",
+      "bytes": 590326,
+      "sha256": "8d7f824d00ea88418228321f1d6bd7a06b6d3b6f6afcfd3c04a7b5b48db5f058"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-neutral-back.png",
+      "bytes": 566174,
+      "sha256": "2e3b623bd38a60f32827e851a8681a4720b60b8c985d56e782a31d1a2ffed0f2"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-neutral-body-face.png",
+      "bytes": 429535,
+      "sha256": "75e2b4b42db5c1504e5859fca020fab119198ce066ab9d5566862044615f3ed5"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-neutral-face.png",
+      "bytes": 588625,
+      "sha256": "1527f18a1df3e7ef4994c280bc93b08ebaa82ff341cf25474e4baf24d15a7e72"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-neutral-oblique.png",
+      "bytes": 581929,
+      "sha256": "0995722ad0716e44dbcd829640c040890cbd5ddd4f1334d2ad55b64aa9806a68"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-neutral-opposite-oblique.png",
+      "bytes": 600637,
+      "sha256": "37ba401aa8159848ae97f91dbf66cdac4841e6f98d07ed7e2189b6542f10749f"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-neutral-profile.png",
+      "bytes": 556791,
+      "sha256": "d267c717500e7108d8e869e3dd4cb46f8dd27c3f11205879eca16bad276ac4af"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-neutral-renders.json",
+      "bytes": 14312,
+      "sha256": "ca03e875f87d92ad6c940b61e522f7f4b7955b18b0eb115781c971bb72784359"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-a-recovery-receipt.json",
+      "bytes": 480,
+      "sha256": "a0f55dbfb0d9c4fba328aea4b7ba7a349efb55cf62ae42539645fd22d554bc7a"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-actual-blink.gif",
+      "bytes": 1582847,
+      "sha256": "a941cc9b7397acbc663805e41e3218e8b83819ba99c31f5b06ad446dd03d6f19"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-additional-pose-verification.json",
+      "bytes": 8304,
+      "sha256": "58fcab20f4617eba715a7da2fbaf288c62b9ccd2d38bda25bde61080156ba544"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-blink-clip-renders.json",
+      "bytes": 10146,
+      "sha256": "a382169b8ed7e700542c6f9467e08f4d6a213badb57eb2f9fed20bff1592f400"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-blink-preview.json",
+      "bytes": 376,
+      "sha256": "e799286856afcbc9551c14e364c460cd41a0543dcdbffc8f7463185baed17510"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-build-summary.json",
+      "bytes": 181907,
+      "sha256": "b1b6a1767e39e31ecd626bc0167ddf6a78537d1e213edc681e0b540cabf88b50"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-cavity-volume-verification.json",
+      "bytes": 6979,
+      "sha256": "4ae96ed21800c2f35540777443c147905ce33154fab722ee0938be39258de2b9"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-closed-alternate-oblique.png",
+      "bytes": 587278,
+      "sha256": "da120fa4b3400d4d0019ca57f7b37cc524c50c7f252631da2d4f24787a9b31c1"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-closed-back.png",
+      "bytes": 566304,
+      "sha256": "884e8a3e234a66d667efb42b4b95210b5ec14be0349cc7b61be2605791c71357"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-closed-body-face.png",
+      "bytes": 429384,
+      "sha256": "d4bece79f45f88cb7da28c57526c53cdca3a062eefa26929704abfc24c411d09"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-closed-face.png",
+      "bytes": 585024,
+      "sha256": "9db1722a7e11cf1a2087df79547905ec63fdc469c02cbbbb9b1a460c8d8b1c36"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-closed-oblique.png",
+      "bytes": 578605,
+      "sha256": "cee1839092638a73a0bd77b9353c49d05c2132ebd8d802bb2c5cc95ac77cbff3"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-closed-opposite-oblique.png",
+      "bytes": 597319,
+      "sha256": "f94c5958e9a70dbb91dd45715aa883801455d1849b410bba200d8df73aef923a"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-closed-profile.png",
+      "bytes": 555914,
+      "sha256": "d4896163f87e40c3125f8e65e2eb97abf4f387d15c36876a234b60ab465bb469"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-closed-renders.json",
+      "bytes": 14309,
+      "sha256": "fcaec3f1985ee86378667ca452b0977aff4520fe118c348970a05f7911c1c9d5"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-contact-verification.json",
+      "bytes": 3536,
+      "sha256": "df50eb73e7618cde3b06c9f9fa46ee762d4540c919a770eb44e03f0cb02f4191"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-functional-lineage-verification.json",
+      "bytes": 6048,
+      "sha256": "506924e8391b4898e3d2275404e9339b179137b20f3eec7f3fee9845423d9762"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-limit-surface-correction.npz",
+      "bytes": 818259,
+      "sha256": "471cb8d3098c7eb60b0a96293cea9f117199cafcde3605387c06ff0837858bbe"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-neutral-alternate-oblique.png",
+      "bytes": 590477,
+      "sha256": "8ecd349044608abc2b27621136f1fb856bd2ebee0e369bde73b27183a84a786b"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-neutral-back.png",
+      "bytes": 566195,
+      "sha256": "1019b1e711a4092cb424eaed2383cb1748a8d17a3bc26b2f40241dbfca867390"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-neutral-body-face.png",
+      "bytes": 429537,
+      "sha256": "2718d4214b9c240ebfc077867e559cb6196b36d7500eeeb729e6975728963bc4"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-neutral-face.png",
+      "bytes": 588648,
+      "sha256": "92182d85b6de0c8672942957c6c6cbd2d479b0a0236386b2c0fe20f58a45889b"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-neutral-oblique.png",
+      "bytes": 581866,
+      "sha256": "ce963c5eab2f5fed6f89fe8f6fc8303cc8d5bdc83bd6ece245362700558f7a6e"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-neutral-opposite-oblique.png",
+      "bytes": 600590,
+      "sha256": "17a6458fd9c01b3e5b2509d292f41e1f0dcdb97e7ca84e18be5fe742ea3178c7"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-neutral-profile.png",
+      "bytes": 556803,
+      "sha256": "c6f812f5d7594019edb0776724640bfa89c4a2fc637ec403ce5638c591226e2f"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-neutral-renders.json",
+      "bytes": 14312,
+      "sha256": "0755a1204a0db6f26fbbe7581ce38b9728fec4a4541a8562817ec50e3a602f01"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-rendered-ocular-sections.json",
+      "bytes": 537905,
+      "sha256": "9d8ae9155c8b4594e8298e516260c27e24c3aba71b2d3f334a0a29a0b107829b"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-b-solve-progress.json",
+      "bytes": 14760,
+      "sha256": "fe7e7416ea310ce5808980cbf7ef1579f874402ce4f798eaf74df2afae5a6af9"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-continuation.json",
+      "bytes": 5727,
+      "sha256": "de8fc2aa25d3b5f468babd56ed319865a89e1afc415d394832be6373c29c9bb3"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-female-next-r0060.visual-audit.json",
+      "bytes": 10562,
+      "sha256": "a4cd34766fbbefd2de39ce11271a142043d33caa521cafae152852a1d1495647"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-history-b-readback.json",
+      "bytes": 6430,
+      "sha256": "d803f1fea05eddd807464313404f02f244936f3495351a3bec85fa549d9d39da"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-native-component-lineage.npz",
+      "bytes": 2832639,
+      "sha256": "9272a68438ea1e4a46586988ac8f59bae58b5a1d2e6a56e197d787dfb50126c3"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-native-components.json",
+      "bytes": 2865,
+      "sha256": "e132b9860a458edf4c1155850e45a8d722491c9f8a8616f506ecd66ba23da0ea"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-native-socket-patches.json",
+      "bytes": 1104716,
+      "sha256": "81b2358ab0ee5373bdaa75aef04eeee864d1a25791e3a3139bc315c838ff310b"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-actual-section-comparison.png",
+      "bytes": 61368,
+      "sha256": "976a5f39ce83e8add4645907704ae97ecbff3853401064e08281e5b3e4f221f3"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-closed-multiangle.png",
+      "bytes": 919433,
+      "sha256": "eae615f7d7c3aa57c2964e5dbd437cff82ed70cd4a85810cd3328bf78ad2fae1"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-head-body-comparison.png",
+      "bytes": 578549,
+      "sha256": "5fea2e4dcdcaecd361e1ca2422690638e38829eb386a4619dcfb2bee7c35f3af"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-section-figure.json",
+      "bytes": 355,
+      "sha256": "1341db1de5e48817b8e5cbfb3df066bc5509866cf65f2520a58b76b9a1a3d3bf"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-source-sections.png",
+      "bytes": 30518,
+      "sha256": "d1cbe77989d0ba7cface4d07fb37637c414a8c28eccb294300ce27a2bfc80537"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-reconciliation-receipt.json",
+      "bytes": 1989,
+      "sha256": "49572fe02a4a734d058e0ba941cfa1aaadb0c87ae65531b92f8540b1e060f6ac"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-references.json",
+      "bytes": 1001,
+      "sha256": "325df5b2ab98c9f390d155b14993989f2b8ccc739c6523bf83baa2c64fb8ec01"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-rendered-ocular-sections.json",
+      "bytes": 636006,
+      "sha256": "cb8e98e8e73591a5879b98090e012357b3bdf335dad12eda62ae0250ed49d15c"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-round-contract.json",
+      "bytes": 1327,
+      "sha256": "6e2c33bd06ea1930dc474ee0e3fff6b3b82486bff7cd26a7d2362554f0117ea1"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0001.png",
+      "bytes": 226328,
+      "sha256": "09c274f4d254b7cb3c7dc8ac1d144bba03dc624742a342c4c154e674aef40508"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0002.png",
+      "bytes": 226291,
+      "sha256": "581f5c24a111f57c4a0b97efe3e5a06899a23612ecf132405e85f62abcb85fe1"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0003.png",
+      "bytes": 226291,
+      "sha256": "20d7d9828aeb876c694c5898a12c7c3479f2bf1e737c8b410f6cea08d77287df"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0004.png",
+      "bytes": 226291,
+      "sha256": "86905df1f17779c053406e75f38ecfb2c473ba81535d4f1ddc4603a28291773e"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0005.png",
+      "bytes": 226232,
+      "sha256": "8611f1a47c35c8e89b4aa7a825849b303ddbe3760d812012a567e0e904809d88"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0006.png",
+      "bytes": 226291,
+      "sha256": "edf2ed0fe2c901cd947e59471c66eeb750984054c87d52b2ff259195c1bd2745"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0007.png",
+      "bytes": 226291,
+      "sha256": "6428693d7bde706d0d5e7d34999eb0c397a47491641dac8962e0762eb7dceecd"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0008.png",
+      "bytes": 226291,
+      "sha256": "15e963ea3cbba388e9bc8fe959bc920be986fb9a6231d45e145e24334ad889e9"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0009.png",
+      "bytes": 226291,
+      "sha256": "a8b850ab8917868107fd44cd1696c00cb2b65266053fea93b58fde197b13dd1c"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0010.png",
+      "bytes": 226291,
+      "sha256": "415efb116497b9d7492d166bc7900dffa28389a73cab809fd7b7474a056d1694"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0011.png",
+      "bytes": 226291,
+      "sha256": "955d66dece410597ab5ea8b6958c206b3531390175061c993e35690a5e8727f5"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0012.png",
+      "bytes": 226291,
+      "sha256": "50a959b42dab069c454f74861b249ae4cef790fffa799405e0c3bb4a8ceec270"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0013.png",
+      "bytes": 226291,
+      "sha256": "376ab0982fb21b3ca570ea5e55b6c1112e564bf43c173627053e9cab77e301a4"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0014.png",
+      "bytes": 226291,
+      "sha256": "5d576ab3a4f05a2e9d903e8783fc4c3d7c32fe80ce163d2df68fafb71603f7ec"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0015.png",
+      "bytes": 226291,
+      "sha256": "a91d4bbaaf4430d1e9ce37aa424001f67a677a83047dba8a54e3110020b22395"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0016.png",
+      "bytes": 226248,
+      "sha256": "d1af064cf8d865bf3efb2dd19f9fbdb8277f8fc1cb04d6670b9947207dbc1707"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0017.png",
+      "bytes": 225951,
+      "sha256": "1f6b6ec82e4304b166d48fa7660ff28ac5288f3eeacf4713229a210b0ee1a4d6"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0018.png",
+      "bytes": 225829,
+      "sha256": "117291c8beafe4d9a15e75dee1477a13aa4033438ef18decdb87fb7ed79ade00"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0019.png",
+      "bytes": 225346,
+      "sha256": "3e58020342c1b6464528a429bf100903798cc4c437bd34bfd05163b84d530040"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0020.png",
+      "bytes": 225147,
+      "sha256": "ced1944617a78d644145fa2ec08c4a1265f64e831bc7e78fc5d463391c46d072"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0021.png",
+      "bytes": 224996,
+      "sha256": "56f79cce2b26158418b9e9ceb38f921f49835a739e0f408e60d511f5eb4d10cf"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0022.png",
+      "bytes": 225087,
+      "sha256": "bc8a22fbbb2c325853e4312e35f4992b99c01856c70d4c4468b1453b84493668"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0023.png",
+      "bytes": 225363,
+      "sha256": "cbb2892fd83e0c886ea03935950862f9be78460eecf014df4b7d7d951a39a5ab"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0024.png",
+      "bytes": 225829,
+      "sha256": "6ad164eb9d9fdcbcbe97e065db2b71309d2b163aa74ee60594c0c977699ff8d4"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0025.png",
+      "bytes": 226000,
+      "sha256": "d6ebf26f1847850747a9c54fd8eda631885b14ffb3b29f2e9d4c9941373a9e14"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0026.png",
+      "bytes": 226240,
+      "sha256": "8e86192608cebaab4a61bbc9a48accbeb14329b543d698009c513e4834433ffb"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0027.png",
+      "bytes": 226291,
+      "sha256": "d72e4d4342fb0a60e16b2712de94a83c7f7ce45a7387726b43f90ba8c6853999"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0028.png",
+      "bytes": 226291,
+      "sha256": "0dccbf8b35345cd70b8802acb4ee1ea4fd34d0ebf3ebbbcd3df8554773463014"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0029.png",
+      "bytes": 226291,
+      "sha256": "bd57edd33d2fe5b66ed1680166e378970405d52c006633538340fb91dbf1fa64"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0030.png",
+      "bytes": 226291,
+      "sha256": "c20ffc819c822717505d34f39ea59ddfad34bdef15cb401c1049ae1f0a9125fd"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0031.png",
+      "bytes": 226257,
+      "sha256": "ca8708fb1ddf775f347e84de5dd272d7855485020a000e3f36273cfb235e1554"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0032.png",
+      "bytes": 226291,
+      "sha256": "639bc94f6a95d008bb26e756ab5971e390f6929db9fcf65eaf452432160cad03"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0033.png",
+      "bytes": 226291,
+      "sha256": "d657a9552d24a5e2526e88d735f113dcb02af0c263cead6559e4f04ec6377723"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0034.png",
+      "bytes": 226291,
+      "sha256": "8a0737bb9ab38f357079875b541ed487dfc022825f28bcd16f583e5081b4c189"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0035.png",
+      "bytes": 226222,
+      "sha256": "ed1b5f893590beb261e268199ebc30a49cf84f250e33f3997191f6d4021fb94b"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0036.png",
+      "bytes": 225923,
+      "sha256": "85ad5747cd33262d71f94ca5164e047478991153695dcd921525b3b2b28b5852"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0037.png",
+      "bytes": 225686,
+      "sha256": "556c779048fee2519e845f55eb58d71eaa7163b6e07e42d036f41e36394d75da"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0038.png",
+      "bytes": 225923,
+      "sha256": "51e74bade303ad6d596d707a06d258609cac3aec7a3d631e6c1a4894df9cb772"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0039.png",
+      "bytes": 226222,
+      "sha256": "e66560d20e568059b359d867db6fbcc476111598d186e32a2f6dce736a2362e2"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0040.png",
+      "bytes": 226291,
+      "sha256": "01cc5841b823bbf261ebd8f22bfabf376218ba2ef0c5ea7c45c5e36a4ce93ab2"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0041.png",
+      "bytes": 226291,
+      "sha256": "067a7b1e86a10f3535850ca28199de26a23f6752ea42ed12ea07a94ba661a5ab"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0042.png",
+      "bytes": 226291,
+      "sha256": "c690a449e4855b1a30809a4798a0ae6b55cde14051f001b8352d1f44cdcf1bf5"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0043.png",
+      "bytes": 226291,
+      "sha256": "2c30ec373d05254e9db65f25e5f6805c613086940fe1b44c1ed511c88a3faa52"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0044.png",
+      "bytes": 226291,
+      "sha256": "c4e1cc14ef1b1e143071c85d28ea157871e7ed49fe15fab76d63b9a504c41ec5"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0045.png",
+      "bytes": 226291,
+      "sha256": "39a8bbf10c3e018ba7f33a834635b768d5b2d0ed3c9fea13e47205067528324e"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0046.png",
+      "bytes": 226291,
+      "sha256": "8214cdb4b57a4deb7d5f45dd8046d5d58349759032a1519717249501e67078a1"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0047.png",
+      "bytes": 226291,
+      "sha256": "a99430bbf8ff022f12245aae83602407a88c69d74934ebc1cfec9604cfafb263"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0060-blink-frames/0048.png",
+      "bytes": 226291,
+      "sha256": "502754db449a80a92c077543aa77a95c277c2f757140933c2d498b4d03686fe8"
+    },
+    {
+      "path": "scripts/character-next/assemble-female-next-r0060-evidence.py",
+      "bytes": 4710,
+      "sha256": "1c10458f24687dcceb6af9296ca67ae339ba556398d73eb32905e4a78df21f70"
+    },
+    {
+      "path": "scripts/character-next/build-female-next-r0060-cavity-repair.py",
+      "bytes": 14001,
+      "sha256": "3b252b322b7ff529fefaa2131659c3209a85e627267cdbab0f1e7651a1d8b8a1"
+    },
+    {
+      "path": "scripts/character-next/finalize-female-next-r0060-evidence.py",
+      "bytes": 14139,
+      "sha256": "ed3df32189929527a8ba3ba0798d635d6acf4718cfafd9e455f8c31b50139048"
+    },
+    {
+      "path": "scripts/character-next/inspect-female-next-r0060-ocular-assembly.py",
+      "bytes": 4034,
+      "sha256": "1b338a01781f70215c92a296c5fa233b053fa19027641728ac59cdf9382c112c"
+    },
+    {
+      "path": "scripts/character-next/package-female-next-r0060-history.py",
+      "bytes": 4073,
+      "sha256": "c6275ce0dc5b637f1ba60823009f47b1aa1afd7a54fd5435f25a83174c1e16f1"
+    },
+    {
+      "path": "scripts/character-next/partition-female-next-r0060-socket-patches.py",
+      "bytes": 1796,
+      "sha256": "b3e8cb4bf1a3e4ff281f6c7184477b64a95525c7fcd5e0dbd2c5c81bd7d9f2fc"
+    },
+    {
+      "path": "scripts/character-next/render-female-next-r0060-blink-clip.py",
+      "bytes": 1437,
+      "sha256": "5f0045bd0db202634d5682f665dad98ee03f0b05bcfe2cedc05666f88d0bbd3b"
+    },
+    {
+      "path": "scripts/character-next/section-female-next-r0060-ocular.py",
+      "bytes": 3079,
+      "sha256": "460f86cef2014fa1a549b51e354cced25f3f5296dd575a60c53c213b776fe277"
+    },
+    {
+      "path": "scripts/character-next/section-female-next-r0060-repaired.py",
+      "bytes": 2018,
+      "sha256": "7f1f8dc7851dad2d4f0fda26bab6c3b5184875b6779b5253dbbedca005638503"
+    },
+    {
+      "path": "scripts/character-next/solve-female-next-r0060-limit-surface.py",
+      "bytes": 10635,
+      "sha256": "d6014a2977e3f10b75ec9355a97470f8f261ba4a12eeff467522ca6401d1faab"
+    },
+    {
+      "path": "scripts/character-next/verify-female-next-r0060-assembly.py",
+      "bytes": 12440,
+      "sha256": "1c14cc416a61cb76d8ec88eaec6eb62ac812d195acf6dd1281c18cf2e9f8b755"
+    },
+    {
+      "path": "scripts/character-next/verify-female-next-r0060-cavity-volume.py",
+      "bytes": 3168,
+      "sha256": "05b99b78b180ba510db6258c0d7371e5762bba75b2d2fc1c15508e7785d07ddf"
+    },
+    {
+      "path": "scripts/character-next/verify-female-next-r0060-history-bundle.py",
+      "bytes": 3091,
+      "sha256": "2cf27e4f70864d1b6955fdaf51f7817a4d62702e28333c6df9fb4e5989bef722"
+    },
+    {
+      "path": "scripts/character-next/verify-female-next-r0060-sampled-motion.py",
+      "bytes": 2821,
+      "sha256": "ae892da9c41470b661dcc514d860f591b0f2bbac945cf29ed3acf5c4f184d888"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-build.log",
+      "bytes": 2490,
+      "sha256": "e3e4412f70fd54dca87e3a70953e81a5d683dceb6ff3dcc0cfd52027f3256658"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-clip.log",
+      "bytes": 6873,
+      "sha256": "60781f147267882658c673f36b522b7d8e82705bd976f2a26bc02025767298ca"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-history-float32-property.log",
+      "bytes": 2294,
+      "sha256": "f1868582873aa6ff8829d855c7fa9f28a2f2709133330f43ed42b8156c2ad617"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-history-original-key-read.log",
+      "bytes": 1299,
+      "sha256": "f3c7fb0fe5697fac6631b120a1d9a4773681079c122477af29fac21acf89a8f3"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-history.log",
+      "bytes": 581,
+      "sha256": "66cade79b5e7980c6890115cce56657617c692e860d5bcbe66b0ac983fee033f"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-inspect.log",
+      "bytes": 1728,
+      "sha256": "041bef021f2907304ec1f5fa122c534d32de02c90f8c31a66a7596dadcd712de"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-limit.log",
+      "bytes": 2736,
+      "sha256": "3313b41148657fdec07b89e15c014684270da767bf4aec87c4062955ff53a713"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-map-preflight.log",
+      "bytes": 2106,
+      "sha256": "681d23fc83557a882e89c9e74c3acb64a02a518d6e6a3094e9df717467071aac"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-motion-sample.log",
+      "bytes": 888,
+      "sha256": "afc1ea5c69b1d8122027c0b282a07095dd80f13e33983aa368fef922767d0d47"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-repaired-section.log",
+      "bytes": 295,
+      "sha256": "2207d45579b9430a285934146c8bfa16438bf1c60fc29092786e33936ba9acde"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-section.log",
+      "bytes": 428,
+      "sha256": "9d8035e1391d68402e154c148f229775b78dd18903fd4426641ad1122f3e45a0"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-serialization.log",
+      "bytes": 4741,
+      "sha256": "a3e9dcfd5463024e40c7addf903a989f4dd797aac3c116f8dc20b987d958925d"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-verify-b.log",
+      "bytes": 644,
+      "sha256": "68b3288494cb4216b2d40107c5656b145a1959a3f892d5e0c42e4039f901b9f7"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-verify.log",
+      "bytes": 648,
+      "sha256": "e1247395d087a288f348d4d7d119dfa8b0650c0c7a2dd30da66dc249f57c5351"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/character-female-next-r0060-volume.log",
+      "bytes": 1176,
+      "sha256": "99cf14508ac36339bf9aacb53edbce9f79f3a8679fecc3a8e564641f65410cc1"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/female-next.asset.json",
+      "bytes": 29577,
+      "sha256": "7a2fef22b1b348eeab5b49f2290937dced162f543e3fed8e4a9a5b479cc07fd9"
+    },
+    {
+      "path": "assets-source/aevrynd-character/female-next/r0059-github-receipt.json",
+      "bytes": 460,
+      "sha256": "9557a4524a1afa3ed7e3e432e0face1b17fc008d4cbdb72f7b2a59c03af10ceb"
+    }
+  ]
+}

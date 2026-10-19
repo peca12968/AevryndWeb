@@ -1,0 +1,77 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0060-b-limit-surface-assembly-study.blend",
+  "sourceSha256": "3324231ec149a138a9de72c19a38ab7e46165e7ccde872f9e130a5b6abf56d9d",
+  "status": "PASS_TWO_ENDPOINT_SURFACE_SCOPE_ONLY",
+  "algorithmControls": {
+    "separateParallel": true,
+    "nonCoplanarCrossing": true,
+    "coplanarSharedEdge": true,
+    "coplanarAreaOverlapNotSeam": true,
+    "sharedVertexOnly": true,
+    "millimetreTranslatedCrossing": true
+  },
+  "poses": {
+    "neutral": {
+      "actualVertices": 589544,
+      "actualTriangles": 1178816,
+      "affectedTriangles": 80294,
+      "nonAdjacentSelfBroadPairs": 0,
+      "actualNonAdjacentSelfPairs": 0,
+      "selfPairsByMaterial": {},
+      "selfWitnesses": [],
+      "completeInterfaces": {
+        "allTissueVsOptics": {
+          "broadPairs": 0,
+          "refinedNoIntersection": 0,
+          "exactSharedTopologicalJoinOnly": 0,
+          "unqualifiedPairs": 0,
+          "failures": []
+        },
+        "skinVsLining": {
+          "broadPairs": 85,
+          "refinedNoIntersection": 0,
+          "exactSharedTopologicalJoinOnly": 85,
+          "unqualifiedPairs": 0,
+          "failures": []
+        }
+      },
+      "status": "PASS_TESTED_ENDPOINT_SURFACE_SCOPE",
+      "scope": "All new actual tissues including replacement wet lining against original optical surfaces. Affected blink AND rebuilt cavity non-adjacent self surfaces. Skin/lining topological joins refined geometrically, not blanket-excluded.",
+      "notCertified": "Adjacent foldovers outside explicit skin/lining pairs, tissue thickness, native lash/brow finite/self, whole unchanged body self, intermediate/continuous motion and engine.",
+      "distanceDefinition": "Float64 triangle intersection witnesses establish contact/crossing locations. No exact signed global penetration-depth minimum.",
+      "joinNumericalAllowanceM": 1e-06
+    },
+    "closed": {
+      "actualVertices": 589544,
+      "actualTriangles": 1178816,
+      "affectedTriangles": 80294,
+      "nonAdjacentSelfBroadPairs": 0,
+      "actualNonAdjacentSelfPairs": 0,
+      "selfPairsByMaterial": {},
+      "selfWitnesses": [],
+      "completeInterfaces": {
+        "allTissueVsOptics": {
+          "broadPairs": 0,
+          "refinedNoIntersection": 0,
+          "exactSharedTopologicalJoinOnly": 0,
+          "unqualifiedPairs": 0,
+          "failures": []
+        },
+        "skinVsLining": {
+          "broadPairs": 86,
+          "refinedNoIntersection": 0,
+          "exactSharedTopologicalJoinOnly": 86,
+          "unqualifiedPairs": 0,
+          "failures": []
+        }
+      },
+      "status": "PASS_TESTED_ENDPOINT_SURFACE_SCOPE",
+      "scope": "All new actual tissues including replacement wet lining against original optical surfaces. Affected blink AND rebuilt cavity non-adjacent self surfaces. Skin/lining topological joins refined geometrically, not blanket-excluded.",
+      "notCertified": "Adjacent foldovers outside explicit skin/lining pairs, tissue thickness, native lash/brow finite/self, whole unchanged body self, intermediate/continuous motion and engine.",
+      "distanceDefinition": "Float64 triangle intersection witnesses establish contact/crossing locations. No exact signed global penetration-depth minimum.",
+      "joinNumericalAllowanceM": 1e-06
+    }
+  },
+  "facialHairAndContinuousMotion": "NOT_ACCEPTED",
+  "seconds": 16.887782335281372
+}

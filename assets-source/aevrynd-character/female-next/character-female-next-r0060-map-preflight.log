@@ -1,0 +1,17 @@
+00:00.500  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0059-a-authored-blink-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0060-cavity-repair.py", line 88, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0060-cavity-repair.py", line 78, in main
+    positive=np.mean(F[g['vertices'],0])>0;side='Left' if positive else 'Right';opticIDs=np.flatnonzero(np.isin(raw['components'],(0,2) if positive else (1,3)));optic=F[opticIDs];C=(optic.min(0)+optic.max(0))*.5;patch=patch_info(g,FACES,F,C);firstRing.update(patch['firstRing']);Q,info=repair(F,patch,optic,.00008/scale);neutral[patch['inside']]=Q[patch['inside']]-F[patch['inside']];pose=F+D[side];Q1,info1=repair(pose,patch,pose[opticIDs],.00008/scale);closed[side][patch['inside']]=Q1[patch['inside']]-pose[patch['inside']];reports[side]={'neutral':info,'closed':info1,'originalPatchFaces':patch['faces'],'fixedBoundarySourceVertexIDs':patch['boundary'],'interiorSourceVertexIDs':patch['inside']}
+                                                                                                                                                                                                                                                                                              ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0060-cavity-repair.py", line 45, in repair
+    den=float(directions[v]@n);assert den>.01,('Folded spherical patch mapping',fi,v,den);radius[v]=max(radius[v],support/den)
+                                      ^^^^^^^
+AssertionError: ('Folded spherical patch mapping', 3254, 36449, -0.5061994160091978)
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\build-female-next-r0060-cavity-repair.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

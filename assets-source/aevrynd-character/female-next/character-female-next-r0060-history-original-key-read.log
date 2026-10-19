@@ -1,0 +1,14 @@
+00:00.406  blend            | Read blend: "D:\Download\Aevrynd\sites-engine-journey\assets-source\aevrynd-character\female-next\aevrynd-female-next-r0060-b-limit-surface-assembly-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0060-history-bundle.py", line 16, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0060-history-bundle.py", line 9, in main
+    bpy.context.scene.frame_set(frame);bpy.context.view_layer.update();assert abs(ctrl['blink_left']-value)<1e-8 and abs(body.data.shape_keys.key_blocks['AFN59_Blink_Left'].value-value)<1e-8;rows.append({'frame':frame,'left':ctrl['blink_left'],'right':ctrl['blink_right'],'bodyLeftShape':body.data.shape_keys.key_blocks['AFN59_Blink_Left'].value})
+                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0060-history-bundle.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,0 +1,28 @@
+00:00.485  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0059-a-authored-blink-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0060-cavity-repair.py", line 94, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0060-cavity-repair.py", line 90, in main
+Info: Saved as "aevrynd-female-next-r0060-a-cavity-assembly-study.blend"
+    save('a-build-summary.json',{'revision':'female-next-r0060','source':str(source),'sourceSha256':b.sha(source),'output':str(OUT),'outputSha256':b.sha(OUT),'method':'Exact connected-component partition plus original topological socket disk repair around finite optical supporting planes, fixed native cage rim. Replace nonmanifold duplicate membrane with single continuous conjunctival lining and wet rim material.','visibleComponents':names,'originalBodyCageRetainedHidden':True,'originalOpticsNativeGeometryNotRescaledOrTranslated':True,'physicalStandOffWorldM':.00008,'nativeInteriorCorrections':reports,'replacementLiningNativeFaces':sorted(firstRing),'sourceGhostDiskNativeFaces':584,'geometryRemovalReason':'56source edges had three incident faces4/4/7. Original duplicated disk is replaced by real repaired native skin cavity; first interior lining ring uses wet material. It is not an accepted separate tear-film volume.','subdivisionWarning':'Native rim cage positions fixed; their evaluated positions may change as neighbouring interior faces are rebuilt. Surface contacts/appearance require actual testing.','nativeBlinkControlsRetained':True,'scalpHairNativeFacialHairDataUnchanged':True,'facialHairAttachmentWarning':'Source curves still follow r59native poses. If evaluated skin rim moves, exact follicle coupling must be revalidated/rebuilt before adoption.','stageUnchanged':True,'status':'PENDING_ACTUAL_APPEARANCE_AND_CONTACT','seconds':time.time()-tick})
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0060-cavity-repair.py", line 13, in save
+    def save(n,x):(E/n).write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+                                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\__init__.py", line 242, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\encoder.py", line 202, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\encoder.py", line 263, in iterencode
+    return _iterencode(o, 0)
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\encoder.py", line 182, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type float32 is not JSON serializable
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\build-female-next-r0060-cavity-repair.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

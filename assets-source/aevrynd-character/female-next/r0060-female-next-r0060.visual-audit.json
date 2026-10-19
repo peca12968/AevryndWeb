@@ -1,0 +1,133 @@
+{
+  "revision": "female-next-r0060",
+  "reviewUTC": "2026-10-19T22:52:36.486036+00:00",
+  "decision": "RETAIN_SCOPED_OCULAR_ASSEMBLY_REPAIR_IN_COHERENT_CHARACTER",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0060-b-limit-surface-assembly-study.blend",
+  "sourceSha256": "3324231ec149a138a9de72c19a38ab7e46165e7ccde872f9e130a5b6abf56d9d",
+  "appearance": {
+    "status": "NEUTRAL_OUTER_FACE_RETAINED_LOCAL_STRUCTURE_FIXED",
+    "appearanceImprovement": false,
+    "wholeCharacterScore": null,
+    "observations": [
+      "Actual complete head/body and neutral/closed multiangle/second-light views retained. Eye expression remains readable, no obvious outer-face regression.",
+      "Original external rendered body/face surfaces outside native socket patch are exactly unchanged in neutral and closed states; all four actual optical components match source rendered quad corners exactly.",
+      "This is a real internal geometric/contact repair, not a new overall beauty score. Complete head hair is still sparse/unqualified; cloth/full body rig absent."
+    ],
+    "sameConditionAB": true,
+    "actual48FrameClip": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0060-ocular-assembly\\b-actual-blink.gif",
+    "actualTechnicalSectionComparison": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0060-ocular-assembly\\r0060-actual-section-comparison.png"
+  },
+  "function": {
+    "status": "REOPENED_EDITABLE_COMPONENT_AND_NATIVE_CONTROL_REPAIR_SCOPE",
+    "layers": [
+      "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "AFN60_L_IRIS_PUPIL_SURFACE",
+      "AFN60_R_IRIS_PUPIL_SURFACE",
+      "AFN60_BODY_ORAL_AND_OCULAR_LINING"
+    ],
+    "nativeLineage": "All original native vertices/faces represented exactly once in the five control components, source IDs and UVs retained. Original full source cage preserved hidden for provenance, not rendered.",
+    "renderedAnatomicalReplacement": "584source branch disk faces caused56three-face seams. Replaced by corrected single continuous tissue/cavity with a wet/conjunctival lining ring. No failed final geometry hidden by a shader or a relaxed contact test.",
+    "qualificationEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0060-ocular-assembly\\b-functional-lineage-verification.json",
+    "anatomicalLimits": "Continuous sweeps, adjacent folds outside explicit interface checks, tissue thickness and native facial-hair finite/self/root attachment remain unaccepted. Outer eye shells still combined sclera/cornea approximations; iris/pupil connected, oral/body combined.",
+    "autoRunAddonFrameHandlersRequired": false
+  },
+  "contact": {
+    "status": "PASS_SEVEN_TESTED_STATIC_OCULAR_SURFACE_AND_SPACE_SCOPE_ONLY",
+    "baselineR59": "Neutral3634 affected non-adjacent pairs; closed4435. Counts belong to the old duplicated structure and are not directly subtracted as counts of repaired vertices.",
+    "candidateA": "Real partition/cavity replacement but469optical/tissue pairs remain at both endpoints. Rejected for contact acceptance; archived.",
+    "candidateB": {
+      "poses": [
+        "neutral",
+        "quarter",
+        "half",
+        "threeQuarter",
+        "closed",
+        "leftWink",
+        "rightWink"
+      ],
+      "actualAffectedNonAdjacentSelfPairs": 0,
+      "actualFullTissueVsOpticsPairs": 0,
+      "unqualifiedSkinVsLiningPairs": 0,
+      "actualTriangles": 1178816,
+      "actualBodyBoundaryEdges": 0,
+      "actualBodyNonManifoldEdges": 0,
+      "eyeInteriorAnchorsAgainstBody": "outside in all7poses; each inside its own closed optical shell"
+    },
+    "method": "BVH broad phase refined by float64 triangle/triangle intersections; only exact shared topological joins within1um allowed. Changed blink and rebuilt static cavity included. Five-ray parity with winding fallback for ocular-space anchors.",
+    "numericalJoinAllowanceM": 1e-06,
+    "anatomicalStandOffDesignWorldM": 8e-05,
+    "distanceWarning": "80um is the design support-plane stand-off, not a measured global signed minimum. No exact global penetration-depth minimum was computed; no complete continuous motion proof.",
+    "globalSignedMinimumM": null,
+    "nativeSubdivisionSolve": {
+      "Right": {
+        "nativeVariables": 251,
+        "actualRenderCornerConstraints": 15104,
+        "localHaloMaximumActualSurfaceErrorM": 0.0,
+        "nativeResponsePerturbationMaximumErrorM": 5.638868390964261e-07,
+        "maximumAdditionalNativeDisplacementWorldM": 0.0005124876836971021,
+        "iterations": 5
+      },
+      "Left": {
+        "nativeVariables": 251,
+        "actualRenderCornerConstraints": 15104,
+        "localHaloMaximumActualSurfaceErrorM": 0.0,
+        "nativeResponsePerturbationMaximumErrorM": 5.711834724680015e-07,
+        "maximumAdditionalNativeDisplacementWorldM": 0.000491942881834518,
+        "iterations": 6
+      }
+    },
+    "unaccepted": "Finite lashes/brows/head hair and self/root joins; adjacent-fold/tissue thickness gaps beyond explicit tests; whole unchanged body self; full action set and continuous dynamics.",
+    "evidence": [
+      "b-contact-verification.json",
+      "b-additional-pose-verification.json",
+      "b-cavity-volume-verification.json"
+    ]
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "actualEngineFrameTimeOrMemoryPass": false
+  },
+  "research": {
+    "purpose": "Reusable complete-character ocular assembly and original native blink controls, with corrected socket cavity and real source-indexed component layers.",
+    "scope": "Four actual editable optical components plus body/oral/single-lining component; tested render-level neutral, quarter, half, three-quarter, closed and two independent winks. Source outer optical and external body/face surfaces unchanged.",
+    "qualified": "Zero actual affected non-adjacent self-surface pairs, zero full skin/lining-vs-optics and skin-vs-lining unqualified pairs in seven static poses; closed body topology and ocular-space anchors verified.",
+    "blocker": "Continuous sweeps, adjacent folds outside explicit interface checks, tissue thickness and native facial-hair finite/self/root attachment remain unaccepted. Outer eye shells still combined sclera/cornea approximations; iris/pupil connected, oral/body combined.",
+    "minimumIntegrationStep": "Use r60B complete source and original-ID maps as the next authoring candidate. Revalidate/render actual facial follicles and finite fibres, complete lid sealing and swept motion without discarding the qualified eye core. This is not a promoted runtime or fully approved woman."
+  },
+  "implementationCorrections": [
+    "Initial linear disk-to-sphere pole blend failed a support-plane orientation guard before any model was saved; replaced by a stereographic construction. No angle/strength sweep.",
+    "A model saved then numpy.float32 JSON serialization failed. Recovery reopened the same SHA and rendered it without rewriting source; receipt preserved.",
+    "A coarse-cage supporting-plane construction did not certify the subdivided surface. B uses actual native subdivision response verified on an exact local halo and independent full-scene surface tests, at the same80um design gap.",
+    "An initial one-off partition diagnostic repeatedly decompressed its NPZ array and ran slowly; completed normally. The archived cached-array implementation repeats the same partition in0.32seconds, no job was restarted on timeout.",
+    "Initial portable-readback assertion used1e-8 for a native float32 shape property. Measured half value0.4999999403953552 differs from0.5 by exactly one float32ULP; readback now uses the representable one-ULP bound and additionally verifies three distinct evaluated body geometry hashes. No model, physical stand-off or collision acceptance tolerance changed."
+  ],
+  "nextAction": "Continue from the actual complete coherent r60B character candidate, using b-build-summary visibleComponents and AFN60_NativeVertexID/NativeFaceID; do not revert to old r57/r59 anatomy or assume the old single body object name. NEXT verify and author actual facial-hair attachment/finite thickness on this character: inspect original same-source native follicle/UV lineage and all evaluated lash/brow segments against the repaired body/optics in the required poses, distinguish justified anatomical root joining from free-strand penetration, and repair attachment only where evidence requires it. Use original emitter correspondence and actual rendered surface; no cross-body or nearest-root clamping to hide failure, and do not reuse stopped Bob fitting/normal-seed Comb. Preserve qualified r60 ocular core and original outer-face/optical geometry. Check complete lid closure/remaining aperture, then establish continuous/swept ocular and fibre contact rather than inferring it from seven samples. Deliver actual complete-head/body and motion on this same character. After affected contact/functional acceptance, return to a genuinely authored full hairstyle and remaining realistic character/cloth/body-rig/engine gates; hair remains severely incomplete. No parameter/margin/angle sweeps, no more source-geometry research collection, no formal/runtime/site replacement or male work.",
+  "sources": [
+    {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0060-a-cavity-assembly-study.blend",
+      "sha256": "db042e958538ebcdf35cda05dee96b4201a46671622347679030b4c5e2f3b591",
+      "bytes": 12608168
+    },
+    {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0060-b-limit-surface-assembly-study.blend",
+      "sha256": "3324231ec149a138a9de72c19a38ab7e46165e7ccde872f9e130a5b6abf56d9d",
+      "bytes": 12607667
+    }
+  ],
+  "resources": {
+    "heavyJobsAtOnce": 1,
+    "blenderThreads": 4,
+    "newAppsAddons": 0,
+    "newNodeServers": 0,
+    "observedBRenderWorkingSetBytes": 2651398144,
+    "observedClipWorkingSetBytes": 2334466048,
+    "instrumentedPeakOrEngineBenchmark": false,
+    "bSolveAndPreviewSeconds": 50.62462306022644,
+    "actualClipRenderSeconds": 149.58730554580688,
+    "independentEndpointVerificationSeconds": 16.887782335281372,
+    "additionalPoseVerificationSeconds": 22.881739377975464,
+    "volumeVerificationSeconds": 20.858274221420288,
+    "allOwnBlenderJobsTerminal": true
+  }
+}
