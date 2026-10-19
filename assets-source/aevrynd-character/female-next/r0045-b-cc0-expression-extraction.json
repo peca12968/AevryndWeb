@@ -1,0 +1,134 @@
+{
+  "status": "REFERENCE_MOTION_REQUIRES_GEOMETRIC_FIDELITY_REVIEW",
+  "dataLicense": "CC0",
+  "poseUnitsSource": {
+    "repository": "https://github.com/makehumancommunity/makehuman",
+    "commit": "a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+    "assetPath": "makehuman/data/poseunits",
+    "license": "CC0",
+    "author": "MakeHuman",
+    "copyright": "(c) 2020 Data Collection AB, Joel Palmius, Jonas Hauquier",
+    "files": [
+      {
+        "name": "face-poseunits.bvh",
+        "bytes": 310826,
+        "sha256": "42a8e69692e30010371ee6993a6e5d3b468d35065559ec0953c936e31b8d903f"
+      },
+      {
+        "name": "face-poseunits.json",
+        "bytes": 1590,
+        "sha256": "e7224f76e9610049b79e5f9e8ac2985d1e9a367333395c07537919258cb42cc3"
+      }
+    ],
+    "purpose": "CC0 authored expression data only; no MakeHuman executable or GPL runtime installed/copied into engine"
+  },
+  "units": [
+    "LeftUpperLidClosed",
+    "RightUpperLidClosed",
+    "LeftLowerLidUp",
+    "RightLowerLidUp"
+  ],
+  "unitWeights": [
+    1.0,
+    1.0,
+    0.2,
+    0.2
+  ],
+  "frames": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "rotationDataNoiseFloorDegrees": 0.0001,
+  "movingBones": [
+    {
+      "bone": "orbicularis03.R",
+      "channels": [
+        "Xrotation",
+        "Yrotation",
+        "Zrotation"
+      ],
+      "combinedAnglesDegrees": [
+        33.2272994,
+        0.0,
+        0.0
+      ],
+      "existsInFittedRig": true
+    },
+    {
+      "bone": "orbicularis04.R",
+      "channels": [
+        "Xrotation",
+        "Yrotation",
+        "Zrotation"
+      ],
+      "combinedAnglesDegrees": [
+        -3.2531098000000003,
+        0.0,
+        0.0
+      ],
+      "existsInFittedRig": true
+    },
+    {
+      "bone": "tongue01",
+      "channels": [
+        "Xrotation",
+        "Yrotation",
+        "Zrotation"
+      ],
+      "combinedAnglesDegrees": [
+        -0.00039359999999999997,
+        0.0,
+        0.0
+      ],
+      "existsInFittedRig": true
+    },
+    {
+      "bone": "orbicularis04.L",
+      "channels": [
+        "Xrotation",
+        "Yrotation",
+        "Zrotation"
+      ],
+      "combinedAnglesDegrees": [
+        -3.2530942000000005,
+        0.0,
+        0.0
+      ],
+      "existsInFittedRig": true
+    },
+    {
+      "bone": "orbicularis03.L",
+      "channels": [
+        "Xrotation",
+        "Yrotation",
+        "Zrotation"
+      ],
+      "combinedAnglesDegrees": [
+        33.2273066,
+        0.0,
+        0.0
+      ],
+      "existsInFittedRig": true
+    }
+  ],
+  "nativeVertices": 19158,
+  "visibleSkinNativeIndices": 13380,
+  "eyeCenters": {
+    "eye.L": [
+      0.028121020644903183,
+      -0.10875190794467926,
+      1.4489343166351318
+    ],
+    "eye.R": [
+      -0.028121020644903183,
+      -0.10875190794467926,
+      1.4489343166351318
+    ]
+  },
+  "maximumDisplacementM": 0.02343301137754543,
+  "method": "Own BVH channel parser and global-joint skinning using fitted installed MPFB rig/CC0weights; fitted rest offsets, BVH rotation axes treated as Blender world-axis reference. Closure composition is upper1+lower0.2, an explicit authoring choice, not captured/blink timing data. Tiny file quantization rotations below0.0001degree are treated as zero, not a contact tolerance. Must validate reference geometry before transfer. No external runtime code copied.",
+  "use": "Female motion/topology reference only, not a new working character or own scan-face improvement",
+  "seconds": 1.192091464996338
+}

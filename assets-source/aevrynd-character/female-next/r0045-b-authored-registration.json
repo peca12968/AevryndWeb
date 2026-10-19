@@ -1,0 +1,156 @@
+{
+  "L": {
+    "referenceCenter": [
+      0.028121020644903183,
+      -0.10875190794467926,
+      1.4483593120574951
+    ],
+    "targetCenter": [
+      0.031276087953504374,
+      -0.11236761301332712,
+      1.4591016152764464
+    ],
+    "axisScale": [
+      1.0238095238095242,
+      0.7505927347773736,
+      1.1000596642402036
+    ],
+    "sourceProxyLandmarksOnly": true,
+    "sourceHelperRadiusM": 0.014886013164378122,
+    "sourceApertureCenter": {
+      "dx": 0.0,
+      "x": 0.028121020644903183,
+      "visible": true,
+      "visibleSampleRuns": 1,
+      "lowerZ": 1.4443121585845948,
+      "upperZ": 1.4524064655303954,
+      "upperAboveEyeCenterM": 0.0034721488952635937,
+      "apertureHeightM": 0.0080943069458006,
+      "upperOccludingBodyPoint": [
+        0.028121020644903183,
+        -0.12410189211368561,
+        1.4524084329605103
+      ],
+      "upperBodyTriangle": 14826,
+      "topEyeExteriorPoint": [
+        0.028121020644903183,
+        -0.12300659716129303,
+        1.4524084329605103
+      ]
+    },
+    "targetActualApertureCenter": {
+      "dx": 0.0,
+      "x": 0.031276087953504374,
+      "visible": true,
+      "visibleSampleRuns": 1,
+      "lowerZ": 1.4546495049859192,
+      "upperZ": 1.4635537255669737,
+      "upperAboveEyeCenterM": 0.004062564849853345,
+      "apertureHeightM": 0.008904220581054556,
+      "upperOccludingBodyPoint": [
+        0.03127608820796013,
+        -0.12324094772338867,
+        1.4635556936264038
+      ],
+      "upperBodyTriangle": 14758,
+      "topEyeExteriorPoint": [
+        0.03127608820796013,
+        -0.12281085550785065,
+        1.4635556936264038
+      ]
+    },
+    "sourceSamples": 749,
+    "targetVertices": 482,
+    "interpolation": {
+      "0.5": {
+        "samples": 749,
+        "sourceInterpolationResidualMaxM": 3.7577852736414296e-07,
+        "regularization": 1e-08,
+        "kernel": "r^3 with linear polynomial on 20mm-normalized coordinates"
+      },
+      "1.0": {
+        "samples": 749,
+        "sourceInterpolationResidualMaxM": 7.415440680300483e-07,
+        "regularization": 1e-08,
+        "kernel": "r^3 with linear polynomial on 20mm-normalized coordinates"
+      }
+    }
+  },
+  "R": {
+    "referenceCenter": [
+      -0.028121020644903183,
+      -0.10875190794467926,
+      1.4483593120574951
+    ],
+    "targetCenter": [
+      -0.03127841597261758,
+      -0.11218152860933274,
+      1.459198117809344
+    ],
+    "axisScale": [
+      1.0000000000000002,
+      0.7505915926709943,
+      1.104434099291487
+    ],
+    "sourceProxyLandmarksOnly": true,
+    "sourceHelperRadiusM": 0.014886013164378122,
+    "sourceApertureCenter": {
+      "dx": 0.0,
+      "x": -0.028121020644903183,
+      "visible": true,
+      "visibleSampleRuns": 1,
+      "lowerZ": 1.4443121585845948,
+      "upperZ": 1.4524064655303954,
+      "upperAboveEyeCenterM": 0.0034721488952635937,
+      "apertureHeightM": 0.0080943069458006,
+      "upperOccludingBodyPoint": [
+        -0.028121020644903183,
+        -0.12410189211368561,
+        1.4524084329605103
+      ],
+      "upperBodyTriangle": 1585,
+      "topEyeExteriorPoint": [
+        -0.028121020644903183,
+        -0.12300658226013184,
+        1.4524084329605103
+      ]
+    },
+    "targetActualApertureCenter": {
+      "dx": 0.0,
+      "x": -0.03127841597261758,
+      "visible": true,
+      "visibleSampleRuns": 1,
+      "lowerZ": 1.454728303508807,
+      "upperZ": 1.463667932109881,
+      "upperAboveEyeCenterM": 0.004177097320556378,
+      "apertureHeightM": 0.008939628601074112,
+      "upperOccludingBodyPoint": [
+        -0.03127841651439667,
+        -0.12321032583713531,
+        1.4636698961257935
+      ],
+      "upperBodyTriangle": 4333,
+      "topEyeExteriorPoint": [
+        -0.03127841651439667,
+        -0.12254343926906586,
+        1.4636698961257935
+      ]
+    },
+    "sourceSamples": 749,
+    "targetVertices": 482,
+    "interpolation": {
+      "0.5": {
+        "samples": 749,
+        "sourceInterpolationResidualMaxM": 3.743248533744236e-07,
+        "regularization": 1e-08,
+        "kernel": "r^3 with linear polynomial on 20mm-normalized coordinates"
+      },
+      "1.0": {
+        "samples": 749,
+        "sourceInterpolationResidualMaxM": 7.386525717113453e-07,
+        "regularization": 1e-08,
+        "kernel": "r^3 with linear polynomial on 20mm-normalized coordinates"
+      }
+    }
+  }
+}

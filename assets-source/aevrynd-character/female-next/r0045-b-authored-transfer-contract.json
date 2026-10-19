@@ -1,0 +1,22 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0042-b-shadow-quality-review.blend",
+  "sourceSha256": "d62c180a5af61f6f8d800926b101738c89a8fbe7785fe1054fd655fd018824da",
+  "reference": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0045-closed-lid-topology\\b-cc0-authored-closed-reference.npz",
+  "referenceSha256": "88d3e3ab52eefffed5bb467e08a9ed3a882672917517eea57e59c53bdc066cdc",
+  "basis": "Actual CC0 artist face units, upperClosed1+lowerUp0.2 on fitted female MPFB reference; current identity/geometry remain baseline, not replaced by reference head",
+  "method": "Eye-opening landmark registration from current actual optics and source fitting helpers, then continuous cubic volumetric interpolation of authored closed/half vectors. Source helpers serve registration only. Independent target checks use all actual owned optics and native self. No old angle field, harmonic seam flattening, ARAP/support closure or radial socket cup.",
+  "candidateCountThisRound": 2,
+  "reject": [
+    "Unusable reference landmark",
+    "Ill-defined/nonfinite interpolation",
+    "Current actual body-eye or changed self intersections",
+    "Incomplete closure or wrong folds",
+    "No usable complete-head function"
+  ],
+  "scope": "Native key-pose falsification before full sculpt/attachments or animation",
+  "resources": {
+    "threads": 4,
+    "heavyJobs": 1,
+    "checkpointUTC": "2026-10-19 15:43:35 UTC"
+  }
+}
