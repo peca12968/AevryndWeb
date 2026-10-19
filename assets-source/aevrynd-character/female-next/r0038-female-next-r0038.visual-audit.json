@@ -1,0 +1,128 @@
+{
+  "revision": "female-next-r0038",
+  "workingDecision": "RETAIN_LIVE_GROOM_AUTHORING_NEUTRAL_REST_EXACT",
+  "workingSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0038-b-live-groom-authoring.blend",
+  "workingSourceSha256": "0f8707b92196bc58e158b997a9170f22708d5ddeb2c2e0d95856cbfd00bb4c04",
+  "candidateDecisions": {
+    "A": {
+      "decision": "VISUALLY_REJECTED_GLOBAL_FLOW",
+      "reason": [
+        "Large symmetric lateral bulges",
+        "Synchronized S-wave yields continuous sheets",
+        "No convincing natural full-head hair structure"
+      ],
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0038-a-root-volume-flow.blend"
+    },
+    "B": {
+      "decision": "RETAIN_LIVE_GROOM_AUTHORING_NEUTRAL_REST_EXACT",
+      "reason": "Necessary local-authoring blocker repaired; exact neutral whole-character rest and actual guide responsiveness verified. No appearance improvement claimed."
+    },
+    "C": {
+      "decision": "VISUALLY_REJECTED_REGIONAL_OFFSETS",
+      "reason": [
+        "Round helmet/cap remains",
+        "Free hair remains broad curtains rather than natural independent lock structure",
+        "Local contour change does not establish a convincing whole-head gain"
+      ],
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0038-c-regional-guide-sculpt.blend"
+    }
+  },
+  "appearance": {
+    "result": "NO_ACCEPTED_APPEARANCE_GAIN",
+    "overallCharacterScore": null,
+    "newHairScore": null,
+    "neutralImageEquality": {
+      "face": {
+        "differentPixels": 117,
+        "maxChannelDifference": 1
+      },
+      "oblique": {
+        "differentPixels": 20,
+        "maxChannelDifference": 1
+      },
+      "profile": {
+        "differentPixels": 24,
+        "maxChannelDifference": 1
+      },
+      "opposite-oblique": {
+        "differentPixels": 45,
+        "maxChannelDifference": 1
+      },
+      "alternate-oblique": {
+        "differentPixels": 19,
+        "maxChannelDifference": 1
+      },
+      "body-face": {
+        "differentPixels": 0,
+        "maxChannelDifference": 0
+      },
+      "back": {
+        "differentPixels": 17,
+        "maxChannelDifference": 1
+      }
+    },
+    "remaining": [
+      "Mannequin-like full face and large simple eye catchlights",
+      "Rejected thin scalp hairstyle",
+      "Natural independently structured full hair and dynamics"
+    ]
+  },
+  "function": {
+    "result": "PASS_REOPENED_NEUTRAL_LIVE_AUTHORING",
+    "proof": "b-reopened-verification.json",
+    "modeProof": "b-edit-mode-proof.json",
+    "singleGuideMovedFollowers": 99,
+    "rootsFixed": true,
+    "oppositePartUnchanged": true,
+    "formulaErrorM": 0.0
+  },
+  "contact": {
+    "B": "Exact prior neutral rest only; no new self/dynamic qualification",
+    "A": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 256,
+      "segments": 32512,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 8.999999999999999e-06,
+      "minimumSampledCVSurfaceGapM": 0.00013397644215729088,
+      "methods": {
+        "edge_distance": 254,
+        "lipschitz": 32258
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "C": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 256,
+      "segments": 32512,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 1.3983264446681991e-06,
+      "minimumSampledCVSurfaceGapM": 0.00013406219295575283,
+      "methods": {
+        "lipschitz": 32428,
+        "edge_distance": 84
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "limits": [
+      "A/C pilot256fibres only, not full12000children or self proof",
+      "Rejected styles did not receive unnecessary complete contact expansion",
+      "Authoring demonstration poses are unqualified, not retained grooms",
+      "No natural motion/continuous/contact-safe controller claim"
+    ]
+  },
+  "runtime": {
+    "status": "NOT_IMPLEMENTED_NOT_PROMOTED",
+    "performance": "NOT_MEASURED",
+    "exporter": "NOT_IMPLEMENTED"
+  },
+  "femaleAccepted": false,
+  "maleStarted": false,
+  "nextAction": "Use r38B live-groom-authoring as the ONE complete working female source; r37C is immediate fallback. Appearance is unchanged. The new native256guide/3neighbor delta modifier preserves all12000 evaluated hairs, roots, radii, types, materials and full body/eye/brow/lash/skin/stage exactly at rest. Both A global spatial-flow waves and C regional Gaussian guide-offset strokes are visually REJECTED: coherent sheets, inflated wings or rounded cap; do not tune those methods again. Next production must re-author COMPLETE independent3D guide paths from root to tip on this live basis, with separately planned crown/front/temple/ear/back inner and outer layers and individual free silhouettes; do not just offset the old curtain paths. Start with a small clearly readable set of absolute guide controls and actual full-head12k preview before expansion; use existing reference-only artist previews for flow observations without copying unresolved-license groom data. No further tool-only or vendor-search round: live authoring is now available. Reject any cap/sheet/funnel or detached/symmetric wing silhouette. Retained guide edits require all affected actual displayed full-fibre/body/8optics/eye-tissues/lashes/brows/self checks, not256representatives. Edited controls do not enforce collisions or deforming scalp attachment. Natural hair dynamics, face/oral/body/clothes rig, continuous contacts, rebuildable engine/LOD/performance and explicit female acceptance remain unqualified. No runtime/website promotion or male work."
+}

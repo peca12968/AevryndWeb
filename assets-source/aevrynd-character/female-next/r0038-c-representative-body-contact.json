@@ -1,0 +1,16 @@
+{
+  "status": "PASS_TESTED_STATIC_CAPSULES",
+  "curves": 256,
+  "segments": 32512,
+  "unqualifiedSegments": 0,
+  "rootFailures": [],
+  "minimumCertifiedClearanceLowerBoundM": 1.3983264446681991e-06,
+  "minimumSampledCVSurfaceGapM": 0.00013406219295575283,
+  "methods": {
+    "lipschitz": 32428,
+    "edge_distance": 84
+  },
+  "failureSamples": [],
+  "numericalAllowanceM": 1e-06,
+  "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+}

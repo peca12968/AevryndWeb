@@ -1,0 +1,22 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0037-c-anatomical-eye-review.blend",
+  "sourceSha256": "4d14d272a7ad71b4b5f0fff1d60e793001e7e1620e69636feac8c6c5837db0b9",
+  "type": "FUNCTIONAL_AUTHORING_REPAIR_NO_APPEARANCE_INCREASE",
+  "blocker": "Every full style has required offline field regeneration; independent guide edits do not yet control the complete current hair live in Blender.",
+  "reasonForSecondCandidate": "A autonomous whole-head flow visibly rejected: symmetric lateral bulges and coherent sheets. B repairs the manual authoring basis instead of tuning A.",
+  "method": "Own Blender native node graph samples edited minus rest guide positions; same-part3-neighbor weights distribute deltas to existing rest fibres, CV0 explicitly fixed.",
+  "expectedDifference": "Rest complete head bit-exact; in-edit local guide changes visibly deform bounded followers without a new generator or root movement.",
+  "minimumTest": "Rest eval exact; deliberate guide deformation has affected followers, all roots fixed, opposite part untouched; restore exact; save/reopen and compare.",
+  "reject": [
+    "Any rest geometry/radius/material/stage drift",
+    "Any actual root movement during guide editing",
+    "No live influence or wrong-part influence"
+  ],
+  "candidateCountThisRound": 2,
+  "scope": "Offline editable authoring only. Not a natural hairstyle, surface-deforming scalp rig, simulation, collision-safe edit, engine integration or score increase.",
+  "references": [
+    "https://docs.blender.org/manual/en/5.1/modeling/geometry_nodes/geometry/sample/sample_index.html",
+    "https://docs.blender.org/manual/en/5.1/modeling/geometry_nodes/geometry/write/set_position.html"
+  ],
+  "referenceBoundary": "Manual fetch failed; installed5.2.2RNA and evaluator are authoritative API verification. Own graph/data; no external groom/node code."
+}

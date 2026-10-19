@@ -1,0 +1,33 @@
+{
+  "decision": "AWAIT_COMPLETE_HEAD_VISUAL_REVIEW",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0038-a-root-volume-flow.blend",
+  "outputSha256": "5c84f0c7539ac94e503c4ac2c2832b5282e100973a5b05709b6896f40b0a234b",
+  "cache": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0038-a-flow-fibres.npz",
+  "sourceExactExceptScalpVisibility": true,
+  "radiiRootsMaterialsPrimitiveExact": true,
+  "curves": 12000,
+  "pointsPerCurve": 128,
+  "pilot": {
+    "status": "PASS_TESTED_STATIC_CAPSULES",
+    "curves": 256,
+    "segments": 32512,
+    "unqualifiedSegments": 0,
+    "rootFailures": [],
+    "minimumCertifiedClearanceLowerBoundM": 8.999999999999999e-06,
+    "minimumSampledCVSurfaceGapM": 0.00013397644215729088,
+    "methods": {
+      "edge_distance": 254,
+      "lipschitz": 32258
+    },
+    "failureSamples": [],
+    "numericalAllowanceM": 1e-06,
+    "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+  },
+  "fullChildrenContact": "NOT_YET_TESTED",
+  "self": "NOT_TESTED",
+  "dynamics": "NOT_IMPLEMENTED",
+  "runtime": "NOT_IMPLEMENTED",
+  "sourceHairRootPositionsSha256": "ea30e4e923893fe5e0a20663772358f45cfe2f04618f8d64630587df6696b0bf",
+  "newHairRootPositionsSha256": "ea30e4e923893fe5e0a20663772358f45cfe2f04618f8d64630587df6696b0bf",
+  "seconds": 47.680309772491455
+}
