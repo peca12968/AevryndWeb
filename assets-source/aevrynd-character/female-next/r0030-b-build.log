@@ -1,0 +1,22 @@
+00:00.500  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0029-a-native-eye-interface.blend"
+00:02.532  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0030-eye-optics\b\before-saved-face.png'
+00:03.235  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0030-eye-optics\b\before-saved-oblique.png'
+00:03.922  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0030-eye-optics\b\before-saved-profile.png'
+00:04.563  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0030-eye-optics\b\before-saved-body-face.png'
+00:05.188  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0030-eye-optics\b\before-saved-body-profile.png'
+00:05.844  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0030-eye-optics\b\before-alternate-oblique.png'
+00:06.594  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0030-eye-optics\b\before-eyes.png'
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0030-eye-optics.py:17: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=(*color,1);p.inputs['Roughness'].default_value=rough;return m,p
+00:07.860  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0030-eye-optics\b\after-saved-face.png'
+00:08.610  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0030-eye-optics\b\after-saved-oblique.png'
+00:09.360  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0030-eye-optics\b\after-saved-profile.png'
+00:10.094  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0030-eye-optics\b\after-saved-body-face.png'
+00:10.797  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0030-eye-optics\b\after-saved-body-profile.png'
+00:11.563  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0030-eye-optics\b\after-alternate-oblique.png'
+00:12.391  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0030-eye-optics\b\after-eyes.png'
+Info: Saved as "aevrynd-female-next-r0030-b-linear-iris-optics.blend"
+R0030_BUILD_DONE {"L": {"irisRadiusM": 0.004990285590923626, "limbusRadiusRangeM": [0.0047402855909236255, 0.0052409785884428755]}, "R": {"irisRadiusM": 0.004991958017701679, "limbusRadiusRangeM": [0.004741958017701679, 0.005242984135135714]}}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

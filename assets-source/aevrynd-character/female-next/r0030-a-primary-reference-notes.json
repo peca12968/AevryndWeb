@@ -1,0 +1,21 @@
+{
+  "references": [
+    {
+      "url": "https://arxiv.org/abs/1505.05916",
+      "title": "Rendering of Eyes for Eye-Shape Registration and Gaze Estimation",
+      "use": "First-party paper using controllable eye-region geometry from head scans; motivation only, no paper code/assets imported."
+    },
+    {
+      "url": "https://docs.blender.org/manual/nl/5.2/render/eevee/material_settings.html",
+      "title": "Blender5.2 Materials / Thickness",
+      "use": "Zero output thickness disables assumed interior skip distance; single-interface approximation."
+    },
+    {
+      "url": "https://www.sci.utah.edu/~lefohn/work/eye/irisSynthesis.pdf",
+      "title": "An Ocularist’s Approach to Human Iris Synthesis",
+      "use": "Search-visible cornea IOR1.376 and iris-layer modeling; full PDF access denied, not claimed fully read or copied."
+    }
+  ],
+  "implementationInference": "Own analytic fibres and annular depth on fixed CC0 globe; default1.376 index and dimensions are engineering assumptions, no subject-specific biometric or physical optics calibration.",
+  "noExternalRuntimeDependency": true
+}

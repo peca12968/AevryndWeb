@@ -1,0 +1,45 @@
+{
+  "revision": "female-next-r0030-b",
+  "decision": "RETAIN_PARTIAL_SEPARATED_OPTICS_AND_CORRECT_COLOR_PIPELINE",
+  "candidateA": "REJECT_DARK_LINEAR_NUMBERS_STORED_AS_SRGB_BYTES",
+  "candidateB": "Visible brown iris and actual pupil aperture in fixed complete head, correct storage; retain scoped partial layers.",
+  "appearance": {
+    "score": 50,
+    "confidenceRange": [
+      42,
+      58
+    ],
+    "reason": "Visible iris/pupil/corneal response replaces blank eyes, but large simple catchlights, coarse angular optical contour, absent wetline/veins and stiff lid detail remain doll-like. This is static eye appearance only, not whole eye motion/function or a character total."
+  },
+  "wholeCharacterScore": null,
+  "functionalLayers": "Eight individually editable cornea/sclera/iris/pupil-backing meshes integrated into the same new female source. Original reference globes hidden; not counted as active optics. Body topology/UV/transform and skin/stage unchanged.",
+  "contact": {
+    "status": "PASS_NEUTRAL_OPTICAL_SURFACES_AND_PROVEN_LIMBUS_JOIN",
+    "bodyPairs": {
+      "AFN30_L_Sclera": 0,
+      "AFN30_L_Cornea": 0,
+      "AFN30_L_Iris": 0,
+      "AFN30_L_Pupil": 0,
+      "AFN30_R_Sclera": 0,
+      "AFN30_R_Cornea": 0,
+      "AFN30_R_Iris": 0,
+      "AFN30_R_Pupil": 0
+    },
+    "nonJoinOpticalPairs": 0,
+    "sharedLimbusEdgesEach": 66,
+    "definition": "All actual optical/body triangles and optical self/pairs in neutral. Limbus classified only after exact boundary/opposite-halfspace/source partition proof. No animation acceptance."
+  },
+  "optics": "Single EEVEE refracting interface; no calibrated lens/multiple-medium ocular physics.",
+  "sources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0030-a-layered-eye-optics.blend",
+      "sha256": "b98ba7a61a459a75702970dbbf60fc99d461194e07a51efc26200da90e3f1913"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0030-b-linear-iris-optics.blend",
+      "sha256": "7e0137afbac302c3233e2558fcf450453723b0e2d7ed11bb75abf87543678bf6"
+    }
+  },
+  "runtime": "NOT_IMPLEMENTED_TESTED_OR_PROMOTED",
+  "nextAction": "Continue from the same r30 B female head, retaining r29 structural/r28 scan/r23 old full-head fallbacks. The new eye layout is an incomplete50/100 static appearance study, not a photoreal or engine promotion. Restore natural facial framing next: author a single restrained brow candidate with anatomically directed fibres rooted on the actual new CC0 skin triangles/barycentrics; reuse own r18 mesh-building ideas only, never its old-head coordinates or borrowed hair-demo geometry. Keep body/eye/skin/light/exposure fixed, inspect whole head front/oblique/profile and alternate light, and verify real fibre/body/eye contact. Do not return to invisible neutral socket number polishing or label a larger fibre count improvement. Preserve r30 optical layer separability, packed sRGB iris map, actual limbus join proof and unchanged body evidence. Coarse cornea/large catchlights, wetline/lacrimal tissue, lashes, full skin, expression/blink/gaze motion, oral system, natural scalp hair/dynamics/self, body/clothes rig and engine/LOD/performance remain required; choose later production rounds by full-head evidence, not indefinite eye micro-tuning."
+}

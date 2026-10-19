@@ -1,0 +1,17 @@
+{
+  "previousGoalTurn": "progress: native socket static repair accepted, no appearance gain.",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0029-a-native-eye-interface.blend",
+  "sourceSha256": "21c543b06ea5e92515294f48d3cb277ccaf1996b18e437dfa0fc1e86d4e8754f",
+  "defect": "New scan head has blank clay eyeballs, no independent optics or visible gaze.",
+  "hypothesis": "Separate contour-preserving cornea/sclera plus recessed textured iris and actual pupil aperture create readable living eyes without changing skin, globe envelope, exposure or lights.",
+  "candidateCount": 1,
+  "geometry": "Clip existing exterior by limbus plane; preserve triangle surface union and source shape. Iris has thickness and pupil is a real hole with recessed dark backing.",
+  "reject": [
+    "No visible whole-head improvement.",
+    "Eye/body intrusion or unsupported interior component crossing.",
+    "Oblique/profile optical artifacts, bad limbus join or strong color/material mismatch."
+  ],
+  "resourceCheckpointMinutes": 45,
+  "resources": "One Blender/four threads, body677442 evaluated vertices, eight optical meshes, iris1024 image, standard800 head images and1400x650 eye closeup.",
+  "limits": "EEVEE single refracting interface approximation, not calibrated human ocular optics. No gaze/blink/rig, wetline/lacrimal tissue, skin or hair changes."
+}
