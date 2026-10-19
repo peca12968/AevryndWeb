@@ -1,0 +1,40 @@
+{
+  "revision": "female-next-r0043-a",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0042-b-shadow-quality-review.blend",
+  "sourceSha256": "d62c180a5af61f6f8d800926b101738c89a8fbe7785fe1054fd655fd018824da",
+  "previousGoalTurnClassification": "progress: ownedr42B reduces false shadow bands; exact geometry/materials/liveguide proof and actual full views, pushed0e8871f",
+  "primaryDefect": "Detached body-lid/globe junction; staring/artificial eye presentation",
+  "sourceEvidence": "Actual upperiris occlusion1.19..1.30mm already in reference range, so keep aperture and globe size; nearest visible lid/globe gaps0.46..1.61mm remain.",
+  "hypothesis": "Bring both upper/lower lid tissues toward actual globe while preserving frontal opening; rebuild attached wet margins and220actual lash roots in one complete model.",
+  "method": "Source-rim reference target80percent of actual front-eye excess gap above120um normal clearance, normalized0.7mm Gaussian interpolation, compact4mm XZ and8mm depth support, fixed canthal taper and actual-globe normal mask. PositiveY shift capped at90percent of local allowed gap; measured depth Jacobian lower bound retained. Exact source triangle/cornerUV template with relative normal transport after original native Multires. Neutral rest only.",
+  "reject": [
+    "Body/eye or changed-self/tissue/lash intersections",
+    "Lost exact skin attachment or significant visible distortion",
+    "Unexpected topology/order,field or unrelated source changes",
+    "No multiangle full-head improvement"
+  ],
+  "held": [
+    "Native source control cage,UV andskin attributes",
+    "All8optical meshes/poses/materials",
+    "Brow/scalp geometry,widths,live guide functions",
+    "r42jitter/renderquality and fixed lighting,exposure,color management"
+  ],
+  "references": [
+    {
+      "url": "https://www.uclahealth.org/sites/default/files/documents/1_11_12_tajudeen_bleph_ch176.pdf",
+      "use": "Adult lid/limbus relationship modeling reference only, not universal aesthetic or medical prescription."
+    },
+    {
+      "url": "https://studios.disneyresearch.com/2014/11/19/high-quality-capture-of-eyes/",
+      "use": "Model dependent ocular structures together; own implementation, no paper code/assets."
+    }
+  ],
+  "resources": {
+    "startUTC": "2026-10-19 13:56:24 UTC",
+    "checkpointUTC": "2026-10-19 14:41:24 UTC",
+    "threads": 4,
+    "heavyJobsAtOnce": 1
+  },
+  "scope": "Neutral anatomical rest authoring only. No blink,gaze,continuous dynamics,complete physiology or engine acceptance.",
+  "contractMetadataReconciledToImplementedField": true
+}

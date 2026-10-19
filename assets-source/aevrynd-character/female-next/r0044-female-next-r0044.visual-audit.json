@@ -1,0 +1,61 @@
+{
+  "revision": "female-next-r0044",
+  "decision": "REJECT_THREE_NATIVE_PILOT_METHODS_NO_FULL_PRODUCTION_CANDIDATE",
+  "workingSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0042-b-shadow-quality-review.blend",
+  "workingSourceSha256": "d62c180a5af61f6f8d800926b101738c89a8fbe7785fe1054fd655fd018824da",
+  "inspectableRejectedStudy": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0044-c-rejected-native-lid-shapes.blend",
+  "studySha256": "746df2c37a625af9c97ecede362361e9b828147da2c822103374d6c081939e06",
+  "appearance": {
+    "status": "NO_NEW_WHOLE_CHARACTER_APPEARANCE_GAIN",
+    "newMatchedFullCandidateAB": false,
+    "evidence": "r0044-complete-character-and-rejected-pilot.png",
+    "baselineViews": "Actual retained r42B complete head/body from r43 source-pinned evidence, unchanged; not new work",
+    "pilotViews": "Actual native-level rejected C head/oblique/eye images; not same resolution as production source",
+    "visibleDefects": [
+      "Hair remains cap/sheet-like",
+      "Staring rest eyes remain on working source",
+      "C trial has angular closed fold/canthus gaps and floating neutral lashes/wet attachments"
+    ],
+    "newOverallScore": null
+  },
+  "function": {
+    "status": "PASS_INSPECTABLE_REJECTED_NATIVE_SHAPES_ONLY",
+    "blendReopened": true,
+    "sourceRestExactWhenDetailRestored": true,
+    "keys": "Editable native Half and Closed keys; default neutral, Multires0; not accepted blink rig",
+    "rootLimitation": "Do not apply original high sculpt or infer full-resolution contact from native checks"
+  },
+  "contact": {
+    "A": {
+      "halfChangedSelfPairs": 0,
+      "closedActualChangedSelfPairs": 28,
+      "actualBody8OpticsPairs": 0,
+      "scope": "Native key poses only; no full-sculpt/attachment/continuous acceptance"
+    },
+    "B": {
+      "neutralBodyScleraPairs": {
+        "L": 54,
+        "R": 74
+      },
+      "neutralActualChangedSelfPairs": 374,
+      "scope": "New socket cup topology against original native exterior; rejected at neutral, half/closed not expanded"
+    },
+    "C": {
+      "halfChangedSelfPairs": 0,
+      "closedActualChangedSelfPairs": 45,
+      "actualBody8OpticsPairs": 0,
+      "scope": "Native saved key poses, separately float64 refined; zero optics intersections does not establish no body self intersections"
+    },
+    "originalNativeUnrelatedBodySelfPairs": 131,
+    "originalNativeWarning": "Unrelated baseline native-level body self pairs were found in independent full native enumeration and separated from changed-lid failures. Not a claim about retained high-resolution source or its existing limited neutral checks.",
+    "continuous": "NOT_TESTED",
+    "attachments": "NOT_REBUILT_FOR_REJECTED_PILOTS"
+  },
+  "runtime": {
+    "status": "NOT_PROMOTED",
+    "tests": "NOT_RUN_NO_RUNTIME_CHANGE"
+  },
+  "femaleAccepted": false,
+  "maleStarted": false,
+  "nextAction": "Keep the one complete working r42B and integrated neutral r43B study distinct. Three r44 cheap methods failed before full candidate expansion: open-first native harmonic/support closure, global socket-cup chart replacement, and intrinsic arc/ARAP/support closure. Do not repeat these by changing amplitude,density,solver iterations or contact tolerances. Next actual production must start with an anatomically authored CLOSED eyelid rest structure on a small explicit canthal/lid topology patch with paired upper/lower marginal edge loops, finite lip thickness and distinct fold/tarsal controls; preserve identified surrounding body seam and record actual source skin/UV correspondence, rather than generating an entire radial socket cup or flattening the inherited folded rim. First independently prove actual closed self/eye separation and multiangle closed silhouette, then author half/open corrective shapes with consistent live tissue/lash attachments and test an asymmetric playable full-head blink. No animation expansion until the closed structure is feasible. Reassess the complete character before choosing further work; cap-like hair and flat skin remain major defects, not fixed by eyelid mechanics. Natural hair/body/clothes/oral motion,all-layer continuous contacts,engine/export/LOD/real performance and weighted85each80 remain required. No male before explicit female acceptance, no formal runtime/site promotion."
+}

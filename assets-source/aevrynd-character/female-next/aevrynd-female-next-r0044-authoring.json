@@ -1,0 +1,39 @@
+{
+  "revision": "female-next-r0044-c",
+  "status": "REJECT_THREE_NATIVE_PILOT_METHODS_NO_FULL_PRODUCTION_CANDIDATE",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0044-c-rejected-native-lid-shapes.blend",
+  "sourceSha256": "746df2c37a625af9c97ecede362361e9b828147da2c822103374d6c081939e06",
+  "parentSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0042-b-shadow-quality-review.blend",
+  "parentSourceSha256": "d62c180a5af61f6f8d800926b101738c89a8fbe7785fe1054fd655fd018824da",
+  "instructions": "Open own .blend in installed Blender. Body object Data > Shape Keys: inspect Half and Closed independently. Multires0 matches native evidence; default neutral. Read embedded AFN44_README_REJECTED. Never use this rejected closed key as production.",
+  "contact": {
+    "A": {
+      "halfChangedSelfPairs": 0,
+      "closedActualChangedSelfPairs": 28,
+      "actualBody8OpticsPairs": 0,
+      "scope": "Native key poses only; no full-sculpt/attachment/continuous acceptance"
+    },
+    "B": {
+      "neutralBodyScleraPairs": {
+        "L": 54,
+        "R": 74
+      },
+      "neutralActualChangedSelfPairs": 374,
+      "scope": "New socket cup topology against original native exterior; rejected at neutral, half/closed not expanded"
+    },
+    "C": {
+      "halfChangedSelfPairs": 0,
+      "closedActualChangedSelfPairs": 45,
+      "actualBody8OpticsPairs": 0,
+      "scope": "Native saved key poses, separately float64 refined; zero optics intersections does not establish no body self intersections"
+    },
+    "originalNativeUnrelatedBodySelfPairs": 131,
+    "originalNativeWarning": "Unrelated baseline native-level body self pairs were found in independent full native enumeration and separated from changed-lid failures. Not a claim about retained high-resolution source or its existing limited neutral checks.",
+    "continuous": "NOT_TESTED",
+    "attachments": "NOT_REBUILT_FOR_REJECTED_PILOTS"
+  },
+  "rebuild": "Run three build-female-next-r0044-*.py pilot scripts, then review-female-next-r0044-pilots.py under Blender --disable-autoexec --threads4. Uses local pinned r42B, historic geometry helpers and npz evidence; no network/add-on needed.",
+  "runtime": "NOT_PROMOTED",
+  "overallScore": null,
+  "notes": "Existing body+12k own scalp+900brows+220lashes+sixwet tissues remain in source; frozen neutral attachments are not qualified under rejected trial keys."
+}
