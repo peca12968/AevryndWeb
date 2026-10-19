@@ -1,0 +1,454 @@
+{
+  "revision": "female-next-r0055",
+  "decision": "REJECT_DIRECT_CC0_GUIDE_FITS_RETAIN_REFERENCE_ONLY",
+  "reviewUTC": "2026-10-19T20:32:59.581234+00:00",
+  "appearance": {
+    "status": "NOT_ACCEPTED",
+    "appearanceImprovement": false,
+    "wholeCharacterScore": null,
+    "observations": [
+      "Authored B flow is more readable than prior synthetic mass trials but sparse pilot is not an accepted complete hairstyle.",
+      "C whole-surface deformation introduces sharp ear-region bends.",
+      "D retains ear/back zigzags and redistributes some source roots far from their original design location; no convincing complete character appearance gain.",
+      "Actual55um-to9um fibres and0.5mmthick diagnostic paths are shown separately. The thick paths are never final hair or collision geometry."
+    ],
+    "actualHeadBodyMultiangleAndSecondLight": true,
+    "childrenGenerated": false,
+    "diagnosticRadiusM": 0.0005
+  },
+  "function": {
+    "status": "REJECT_FITTED_GROOM_RETAIN_SOURCE_REFERENCE",
+    "reopenedData": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0055-d-bound-contact-bob-pilot.blend",
+      "sourceSha256": "243bbc4b346657bb1202244388c587984144575ed8aea31d26395e64c76fc49a",
+      "reopened": true,
+      "originalBodyOtherMeshesSkinMaterialsStageAndOriginalHairDataExact": true,
+      "nativeStoredAndEvaluatedPositionsRadiiExact": true,
+      "guides": 248,
+      "pointsPerGuide": 64,
+      "actualBodyBarycentricRootMaximumErrorM": 5.961898012794486e-08,
+      "actualBodySourceUVFloat32ExactlyMatches": true,
+      "segmentLengthRangeM": [
+        0.0008773162844590843,
+        0.006165835540741682
+      ],
+      "bodyCapsules": {
+        "status": "FAIL_OR_UNRESOLVED",
+        "curves": 248,
+        "segments": 15624,
+        "unqualifiedSegments": 21,
+        "rootFailures": [],
+        "minimumCertifiedClearanceLowerBoundM": -4.0396826079813763e-05,
+        "minimumSampledCVSurfaceGapM": 0.00012488950960687362,
+        "methods": {
+          "edge_distance": 1757,
+          "lipschitz": 13845,
+          "centreline_cross": 21,
+          "range_empty": 1
+        },
+        "failureSamples": [
+          {
+            "curve": 60,
+            "segment": 25,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -3.6746030673384666e-05,
+            "a": [
+              -0.07926404476165771,
+              -0.03640131652355194,
+              1.4588056802749634
+            ],
+            "b": [
+              -0.0790422335267067,
+              -0.036031417548656464,
+              1.4552569389343262
+            ]
+          },
+          {
+            "curve": 60,
+            "segment": 38,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -2.7253967346041463e-05,
+            "a": [
+              -0.077506884932518,
+              -0.03611002862453461,
+              1.4192320108413696
+            ],
+            "b": [
+              -0.0761822983622551,
+              -0.034629739820957184,
+              1.414576530456543
+            ]
+          },
+          {
+            "curve": 61,
+            "segment": 25,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -3.6746030673384666e-05,
+            "a": [
+              0.0789308175444603,
+              -0.03622901067137718,
+              1.4586312770843506
+            ],
+            "b": [
+              0.07870281487703323,
+              -0.03579936549067497,
+              1.4549427032470703
+            ]
+          },
+          {
+            "curve": 61,
+            "segment": 38,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -2.7253967346041463e-05,
+            "a": [
+              0.07708690315485,
+              -0.03655318543314934,
+              1.4200356006622314
+            ],
+            "b": [
+              0.07448150962591171,
+              -0.03426116332411766,
+              1.4149389266967773
+            ]
+          },
+          {
+            "curve": 76,
+            "segment": 21,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -3.966666554333642e-05,
+            "a": [
+              -0.07941314578056335,
+              -0.0327436625957489,
+              1.459507703781128
+            ],
+            "b": [
+              -0.0795346200466156,
+              -0.03281140327453613,
+              1.4552009105682373
+            ]
+          },
+          {
+            "curve": 76,
+            "segment": 34,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -3.017460403498262e-05,
+            "a": [
+              -0.08035991340875626,
+              -0.03027718886733055,
+              1.4239637851715088
+            ],
+            "b": [
+              -0.08022233843803406,
+              -0.029972326010465622,
+              1.4212547540664673
+            ]
+          },
+          {
+            "curve": 77,
+            "segment": 20,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -4.0396826079813763e-05,
+            "a": [
+              0.08022134006023407,
+              -0.03351302072405815,
+              1.4589627981185913
+            ],
+            "b": [
+              0.08035095781087875,
+              -0.03341292589902878,
+              1.4551857709884644
+            ]
+          },
+          {
+            "curve": 77,
+            "segment": 34,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -3.017460403498262e-05,
+            "a": [
+              0.08070080727338791,
+              -0.030410893261432648,
+              1.4233120679855347
+            ],
+            "b": [
+              0.08010218292474747,
+              -0.03002507984638214,
+              1.4207100868225098
+            ]
+          },
+          {
+            "curve": 98,
+            "segment": 28,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -3.4555556339910254e-05,
+            "a": [
+              0.07975341379642487,
+              -0.026126638054847717,
+              1.45577871799469
+            ],
+            "b": [
+              0.07996851950883865,
+              -0.02731206640601158,
+              1.4517076015472412
+            ]
+          },
+          {
+            "curve": 98,
+            "segment": 36,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -2.8714286600006744e-05,
+            "a": [
+              0.08205834031105042,
+              -0.02621561847627163,
+              1.4306191205978394
+            ],
+            "b": [
+              0.08161980658769608,
+              -0.025662977248430252,
+              1.4274616241455078
+            ]
+          },
+          {
+            "curve": 99,
+            "segment": 28,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -3.4555556339910254e-05,
+            "a": [
+              -0.08023148030042648,
+              -0.02590816654264927,
+              1.4555877447128296
+            ],
+            "b": [
+              -0.08036644756793976,
+              -0.027109647169709206,
+              1.451501727104187
+            ]
+          },
+          {
+            "curve": 99,
+            "segment": 36,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -2.8714286600006744e-05,
+            "a": [
+              -0.08147817850112915,
+              -0.026004578918218613,
+              1.4304957389831543
+            ],
+            "b": [
+              -0.08132874965667725,
+              -0.025756357237696648,
+              1.427443265914917
+            ]
+          },
+          {
+            "curve": 132,
+            "segment": 35,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -2.9444445317494683e-05,
+            "a": [
+              -0.08078645169734955,
+              -0.031056730076670647,
+              1.4588656425476074
+            ],
+            "b": [
+              -0.0811154916882515,
+              -0.031112829223275185,
+              1.4545820951461792
+            ]
+          },
+          {
+            "curve": 132,
+            "segment": 44,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -2.287301504111383e-05,
+            "a": [
+              -0.08035039901733398,
+              -0.03026113286614418,
+              1.4240357875823975
+            ],
+            "b": [
+              -0.07966750115156174,
+              -0.02995205856859684,
+              1.4200406074523926
+            ]
+          },
+          {
+            "curve": 133,
+            "segment": 35,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -2.9444445317494683e-05,
+            "a": [
+              0.07984758168458939,
+              -0.0310192983597517,
+              1.4588617086410522
+            ],
+            "b": [
+              0.08023557811975479,
+              -0.031097572296857834,
+              1.4544674158096313
+            ]
+          },
+          {
+            "curve": 133,
+            "segment": 44,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -2.287301504111383e-05,
+            "a": [
+              0.08056428283452988,
+              -0.030502809211611748,
+              1.4241138696670532
+            ],
+            "b": [
+              0.0794854685664177,
+              -0.029858270660042763,
+              1.4199438095092773
+            ]
+          },
+          {
+            "curve": 152,
+            "segment": 34,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -3.017460403498262e-05,
+            "a": [
+              0.07924069464206696,
+              -0.037543728947639465,
+              1.4591212272644043
+            ],
+            "b": [
+              0.07929088175296783,
+              -0.037604544311761856,
+              1.4554219245910645
+            ]
+          },
+          {
+            "curve": 152,
+            "segment": 45,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -2.2142856323625892e-05,
+            "a": [
+              0.07733247429132462,
+              -0.03801796957850456,
+              1.417891263961792
+            ],
+            "b": [
+              0.07670053839683533,
+              -0.037810903042554855,
+              1.4136408567428589
+            ]
+          },
+          {
+            "curve": 153,
+            "segment": 45,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -2.2142856323625892e-05,
+            "a": [
+              -0.07722194492816925,
+              -0.03790668398141861,
+              1.4178826808929443
+            ],
+            "b": [
+              -0.0768156424164772,
+              -0.03797532618045807,
+              1.4139586687088013
+            ]
+          },
+          {
+            "curve": 212,
+            "segment": 44,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -2.287301504111383e-05,
+            "a": [
+              -0.07657308131456375,
+              -0.04028351977467537,
+              1.4154211282730103
+            ],
+            "b": [
+              -0.07620025426149368,
+              -0.0404396690428257,
+              1.4120707511901855
+            ]
+          },
+          {
+            "curve": 213,
+            "segment": 44,
+            "method": "centreline_cross",
+            "gapLowerBoundM": -2.287301504111383e-05,
+            "a": [
+              0.07655389606952667,
+              -0.04065070301294327,
+              1.4158508777618408
+            ],
+            "b": [
+              0.07602719217538834,
+              -0.04070798307657242,
+              1.4124476909637451
+            ]
+          }
+        ],
+        "numericalAllowanceM": 1e-06,
+        "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+      },
+      "masterSelfCapsules": {
+        "status": "NOT_RUN_BEFORE_BODY_PASS"
+      },
+      "otherMeshDynamicsContinuousRuntime": "NOT_TESTED",
+      "seconds": 6.4253599643707275
+    },
+    "research": {
+      "purpose": "License-verified authored3Dhair flow reference and exact rejected fitting/solver evidence; serialization/UV tools only.",
+      "scope": "CC0 Bob248source guides; D actual body barycentric/UV readback only, not anatomically accepted follicles or a collision-safe groom.",
+      "blockingEvidence": "Root registration correction reaches52.6mm; ear/back path bends and21unqualified finite capsules. Self/other optics/dynamics not run after rejection.",
+      "minimumIntegrationStep": "None for rejected fitted geometry. Use source as visual reference during genuinely target-native authoring; only independent complete form/contact acceptance could establish a new groom."
+    },
+    "rootRegistrationDistanceRangeM": [
+      9.642471233268531e-05,
+      0.052555059340181384
+    ],
+    "maximumBvhFloat32FootVsConstrainedDoubleFootDifferenceM": 3.696923470482057e-06,
+    "barycentricScope": "Exact body triangle/float32 UV serialization is verified; anatomical follicle placement is NOT accepted. Float32 BVH feet are only triangle locators; constrained double projection defines root data."
+  },
+  "contact": {
+    "status": "FAIL_OR_UNRESOLVED",
+    "unqualifiedSegmentsByCandidate": {
+      "a": 429,
+      "b": 89,
+      "c": 147,
+      "d": 21
+    },
+    "rootFailuresByCandidate": {
+      "a": 119,
+      "b": 34,
+      "c": 18,
+      "d": 0
+    },
+    "dFiniteSegments": 15624,
+    "dSampledCVMinimumUnsignedSurfaceGapM": 0.00012488950960687362,
+    "dMinimumCertifiedClearanceLowerBoundM": -4.0396826079813763e-05,
+    "interpretation": "21segments fail the finite-capsule gate although sampled CVs are outside. Unqualified includes crossing/uncertified states, not21proven penetration depths. Lower bound is not an exact global signed distance.",
+    "masterSelfOtherOpticsClothingContinuousDynamics": "NOT_RUN_AFTER_FORM_AND_BODY_FAILURE",
+    "sourceBody": "Unchanged r51 body; known839other nonocular tested self pairs remain, no whole-body pass."
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "cpuGpuTimeMemory": null
+  },
+  "retainedReference": {
+    "repository": "https://github.com/Upliner/CharMorph-Vitruvian",
+    "commit": "c252d1fc7f00ba59d87b66b3d32fa3471fc6ee44",
+    "licenseDeclaration": "config.yaml: CC0",
+    "authors": "Sean Buckley, Olaf Delgado-Friedrichs; additional contributors in retained config.yaml",
+    "noAddonOrToolCodeImported": true,
+    "originalBlend": "Local reference only; autoexec disabled; embedded rig texts not imported or published as engine code."
+  },
+  "stoppedMethods": [
+    "Uniform affine whole-style registration as an accepted groom, including measured eye/top alignment. Actual source/target scalp regions differ.",
+    "Nearest-body fitted whole-surface Surface Deform: native binding succeeds but ear-region kinks and147unqualified segments reject this construction.",
+    "Closest existing scalp-triangle follicle reassignment plus point-projected smooth displacement as full hair fitting: some roots move52.6mm and21finite capsules remain unqualified. No more iterations, margins, density or smoothing sweeps."
+  ],
+  "usefulResearch": {
+    "purpose": "License-verified authored3Dhair flow reference and exact rejected fitting/solver evidence; serialization/UV tools only.",
+    "scope": "CC0 Bob248source guides; D actual body barycentric/UV readback only, not anatomically accepted follicles or a collision-safe groom.",
+    "blockingEvidence": "Root registration correction reaches52.6mm; ear/back path bends and21unqualified finite capsules. Self/other optics/dynamics not run after rejection.",
+    "minimumIntegrationStep": "None for rejected fitted geometry. Use source as visual reference during genuinely target-native authoring; only independent complete form/contact acceptance could establish a new groom."
+  },
+  "nextAction": "Keep complete working r51B and scoped r53retained data. R54proxies and r55affine/surface/closest-root fitting are rejected. The CC0 Bob248source guides may serve as a visual flow reference only; never use the rejected fitted paths/roots as accepted masters. NEXT establish a target-native guide design directly on the same anatomical scalp with Blender native grooming/sculpting, using actual front/profile/back reference views and the already retained root-binding tools. First a bounded coarse whole-head guide layout with readable crown, side and back flow; do not copy oldr48/r53world routes, deform the oldbob, import donor paths through the stopped fitting methods, or generate children. If actual source/target scalp correspondence is proposed instead, first independently establish anatomical hairline/ear/nape compatibility, not just eye/top alignment or nearest-point clamping. Use complete-head/body views to reject early, then certify all finite paths/body/self and affected optics before children. Contact algorithms must cover full segments, not only projected CVs. Whole appearance, oral/clothes/rig, known source-body self failures, natural full hair/self/continuous dynamics and actual engine performance remain incomplete."
+}

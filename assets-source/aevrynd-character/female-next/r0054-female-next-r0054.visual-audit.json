@@ -1,0 +1,63 @@
+{
+  "revision": "female-next-r0054",
+  "decision": "REJECT_SKIN_CLUMP_AND_CONCEPT_HULL_PROXY_METHODS",
+  "appearance": {
+    "status": "FAIL",
+    "appearanceImprovement": false,
+    "wholeCharacterScore": null,
+    "observations": [
+      "A/B/C quad Skin clumps form tubes and hard plates rather than natural locks; posterior filling does not fix the construction.",
+      "D visual hull has strong horizontal bands; E closed/smoothed masks still show horizontal extrusion bands, crown/side holes and hard helmet/bang edges.",
+      "Actual full head/body, front/profile/back/oblique and second-light views were rendered; E face/profile/back/body were explicitly reviewed on continuation."
+    ],
+    "conceptImageIsReferenceOnly": true,
+    "newFinalHairStrands": 0
+  },
+  "function": {
+    "status": "EDITABLE_PROXIES_SAVED_NOT_ACCEPTED_HAIR",
+    "snapshots": [
+      {
+        "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0054-a-clump-volume-blockout.blend",
+        "sha256": "3ac4e08c407405e0d597b91555d2c503a2d08c883943756cd5ce5d292193229d",
+        "role": "REJECTED_DESIGN_PROXY_NOT_HAIR"
+      },
+      {
+        "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0054-b-edited-clump-volume.blend",
+        "sha256": "7596e1f48460ce88c217ae5ae5a54594e58dd84e6ef598142468b1413c8c19a2",
+        "role": "REJECTED_DESIGN_PROXY_NOT_HAIR"
+      },
+      {
+        "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0054-c-layered-volume-blockout.blend",
+        "sha256": "fc184acf0e99e197aaf9f9be650737a1ae8948f6bbcc021c9713c3841ed1535e",
+        "role": "REJECTED_DESIGN_PROXY_NOT_HAIR"
+      },
+      {
+        "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0054-d-concept-volume-proxy.blend",
+        "sha256": "7731d60e07a5f2efb0bdb452887f77954e248c64a724886c6499a24416bd471b",
+        "role": "REJECTED_DESIGN_PROXY_NOT_HAIR"
+      },
+      {
+        "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0054-e-clean-concept-volume-proxy.blend",
+        "sha256": "c37f6819e4c2d64a03fb5c44fc09002e12f2cd9859b7bec5eef36093bf22e135",
+        "role": "REJECTED_DESIGN_PROXY_NOT_HAIR"
+      }
+    ],
+    "originalCharacterUnchangedAtBuild": true,
+    "scope": "Separate mesh design studies; neither follicle maps nor simulation/collision representations."
+  },
+  "contact": {
+    "status": "NOT_QUALIFIED_DESIGN_PROXIES",
+    "reason": "Not expanded after complete-form rejection. Projected depth intervals are not full geometry or continuous collision proof."
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "cpuGpuTimeMemory": null
+  },
+  "stoppedMethods": [
+    "Native Skin station chains as the complete natural bob mass; no more width/density/coverage edits.",
+    "Three-view concept mask visual hull as hair shape; one mask cleanup already failed. No threshold/voxel/smoothing sweep."
+  ],
+  "retention": "Rejected method evidence and scripts only; no proxy integrated into complete working r51 or formal assets.",
+  "nextAction": "Evaluate a separately authored, license-verified real 3D guide source with a bounded full-head/body and actual finite-contact pilot. Do not derive fibres from these rejected proxies.",
+  "reviewUTC": "2026-10-19T20:22:58.038083+00:00"
+}

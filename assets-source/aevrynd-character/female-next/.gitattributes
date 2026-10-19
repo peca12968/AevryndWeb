@@ -4,3 +4,9 @@ r0053-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 aevrynd-female-next-r0053-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 character-female-next-r0053-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 female-next.asset.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Preserve exact r54/r55 source, evidence and reference bytes.
+r005[45]-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r005[45]-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+character-female-next-r005[45]-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Unmodified upstream provenance text retains its original whitespace.
+r0055-reference-* -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
