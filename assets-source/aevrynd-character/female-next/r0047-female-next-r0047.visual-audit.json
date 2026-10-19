@@ -1,0 +1,2371 @@
+{
+  "revision": "female-next-r0047",
+  "decision": "REJECT_AUTHORED_CARDS_AND_RAIL_PILOT_NO_WORKING_PROMOTION",
+  "workingSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0042-b-shadow-quality-review.blend",
+  "workingSourceSha256": "d62c180a5af61f6f8d800926b101738c89a8fbe7785fe1054fd655fd018824da",
+  "appearance": {
+    "status": "NO_ADOPTABLE_WHOLE_CHARACTER_GAIN",
+    "A": "Side-part/fringe/occipital layout clearer but broad plastic bands,cap-like silhouette,coarse faceting and visible side seam/intersections; reject",
+    "B": "81actual thin guide feasibility only; not a dense hairstyle and no full candidate A/B claim",
+    "completeHeadBodyMatchedA": true,
+    "multiangleSecondLight": true,
+    "overallScore": null
+  },
+  "function": {
+    "status": "PASS_STATED_STATIC_READBACK_ONLY",
+    "reopenedBoth": true,
+    "bodySkinOpticsGroomAndStageExact": true,
+    "originalAssetUVTopologyPreserved": true,
+    "packedTexture": true,
+    "ownFitterVsInstalledTool": {
+      "scope": "Own affine fitter vs installed MPFB ClothesService on identical input coordinates. This proves parser/scale implementation, not target-head fit, collision or appearance. No GPL tool implementation copied into engine.",
+      "rows": [
+        {
+          "input": "Unmodified installed hm08 default mesh",
+          "vertices": 1653,
+          "maxDifferenceM": 2.5858265507973807e-07,
+          "p99DifferenceM": 1.0084458758244958e-07,
+          "toleranceM": 1e-06,
+          "passed": true
+        },
+        {
+          "input": "Previously generated CC0 female reference",
+          "vertices": 1653,
+          "maxDifferenceM": 4.249581414073651e-07,
+          "p99DifferenceM": 1.8870158196713783e-07,
+          "toleranceM": 1e-06,
+          "passed": true
+        }
+      ]
+    },
+    "newRigOrDynamics": false
+  },
+  "contact": {
+    "AactualSavedMesh": {
+      "bvhCandidatePairs": 1764,
+      "confirmedEdgeTriangleCrossings": 1762,
+      "witnesses": [
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1024015,
+          "pointM": [
+            0.06099630892276764,
+            -0.04711150750517845,
+            1.4335486888885498
+          ]
+        },
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1024014,
+          "pointM": [
+            0.06097843125462532,
+            -0.047376468777656555,
+            1.4334598779678345
+          ]
+        },
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1024007,
+          "pointM": [
+            0.060920774936676025,
+            -0.04857078567147255,
+            1.4328001737594604
+          ]
+        },
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1024006,
+          "pointM": [
+            0.06092076376080513,
+            -0.04857147857546806,
+            1.4327995777130127
+          ]
+        },
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1024016,
+          "pointM": [
+            0.06094030290842056,
+            -0.04802620783448219,
+            1.4331774711608887
+          ]
+        },
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1024017,
+          "pointM": [
+            0.06096373125910759,
+            -0.04761120304465294,
+            1.4333683252334595
+          ]
+        },
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1024019,
+          "pointM": [
+            0.0609368197619915,
+            -0.048108067363500595,
+            1.4331269264221191
+          ]
+        },
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1024018,
+          "pointM": [
+            0.06092093512415886,
+            -0.04856586828827858,
+            1.4328038692474365
+          ]
+        },
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1024008,
+          "pointM": [
+            0.060922835022211075,
+            -0.04898069053888321,
+            1.4323269128799438
+          ]
+        },
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1024009,
+          "pointM": [
+            0.060922566801309586,
+            -0.048960212618112564,
+            1.4323524236679077
+          ]
+        },
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1024010,
+          "pointM": [
+            0.060940470546483994,
+            -0.04928332194685936,
+            1.4317952394485474
+          ]
+        },
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1024011,
+          "pointM": [
+            0.06094004213809967,
+            -0.04927688091993332,
+            1.4318071603775024
+          ]
+        },
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1024089,
+          "pointM": [
+            0.06094648689031601,
+            -0.04933056980371475,
+            1.4316753149032593
+          ]
+        },
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1024090,
+          "pointM": [
+            0.060946498066186905,
+            -0.04933059215545654,
+            1.4316751956939697
+          ]
+        },
+        {
+          "hairTriangle": 769,
+          "otherTriangle": 1020285,
+          "pointM": [
+            0.06097004562616348,
+            -0.049495480954647064,
+            1.4312280416488647
+          ]
+        },
+        {
+          "hairTriangle": 888,
+          "otherTriangle": 1020284,
+          "pointM": [
+            0.0609014593064785,
+            -0.04961476847529411,
+            1.4305980205535889
+          ]
+        },
+        {
+          "hairTriangle": 888,
+          "otherTriangle": 1020172,
+          "pointM": [
+            0.06082574650645256,
+            -0.0496966652572155,
+            1.4299523830413818
+          ]
+        },
+        {
+          "hairTriangle": 888,
+          "otherTriangle": 1020173,
+          "pointM": [
+            0.060837361961603165,
+            -0.049684785306453705,
+            1.4300516843795776
+          ]
+        },
+        {
+          "hairTriangle": 888,
+          "otherTriangle": 1020175,
+          "pointM": [
+            0.06081362068653107,
+            -0.04970422014594078,
+            1.4298464059829712
+          ]
+        },
+        {
+          "hairTriangle": 888,
+          "otherTriangle": 1020285,
+          "pointM": [
+            0.06096777319908142,
+            -0.04951387643814087,
+            1.4311498403549194
+          ]
+        },
+        {
+          "hairTriangle": 888,
+          "otherTriangle": 1020186,
+          "pointM": [
+            0.06081361696124077,
+            -0.04970421642065048,
+            1.4298462867736816
+          ]
+        },
+        {
+          "hairTriangle": 888,
+          "otherTriangle": 1020189,
+          "pointM": [
+            0.0607033334672451,
+            -0.049630969762802124,
+            1.4288157224655151
+          ]
+        },
+        {
+          "hairTriangle": 888,
+          "otherTriangle": 1020200,
+          "pointM": [
+            0.0607033297419548,
+            -0.049630969762802124,
+            1.4288157224655151
+          ]
+        },
+        {
+          "hairTriangle": 889,
+          "otherTriangle": 1020200,
+          "pointM": [
+            0.06066642701625824,
+            -0.049541179090738297,
+            1.428459644317627
+          ]
+        },
+        {
+          "hairTriangle": 889,
+          "otherTriangle": 1020203,
+          "pointM": [
+            0.060620106756687164,
+            -0.04941469430923462,
+            1.4280105829238892
+          ]
+        },
+        {
+          "hairTriangle": 889,
+          "otherTriangle": 1020214,
+          "pointM": [
+            0.06062011420726776,
+            -0.04941469803452492,
+            1.4280105829238892
+          ]
+        },
+        {
+          "hairTriangle": 889,
+          "otherTriangle": 1030240,
+          "pointM": [
+            0.06049728766083717,
+            -0.04815231263637543,
+            1.4264533519744873
+          ]
+        },
+        {
+          "hairTriangle": 889,
+          "otherTriangle": 1020264,
+          "pointM": [
+            0.06051657348871231,
+            -0.04867348074913025,
+            1.4268255233764648
+          ]
+        },
+        {
+          "hairTriangle": 889,
+          "otherTriangle": 1020265,
+          "pointM": [
+            0.06050381436944008,
+            -0.04837450757622719,
+            1.4265973567962646
+          ]
+        },
+        {
+          "hairTriangle": 889,
+          "otherTriangle": 1020217,
+          "pointM": [
+            0.060557201504707336,
+            -0.049098413437604904,
+            1.4273436069488525
+          ]
+        }
+      ],
+      "scope": "Independent finite-edge/triangle intersection of actual saved displayed card surfaces, double sided. No triangle alpha exclusions; no thickness/self/dynamic inference."
+    },
+    "Aoptics": {
+      "AFN30_L_Sclera": {
+        "bvhCandidatePairs": 0,
+        "confirmedEdgeTriangleCrossings": 0,
+        "witnesses": [],
+        "scope": "Independent finite-edge/triangle intersection of actual saved displayed card surfaces, double sided. No triangle alpha exclusions; no thickness/self/dynamic inference."
+      },
+      "AFN30_L_Cornea": {
+        "bvhCandidatePairs": 0,
+        "confirmedEdgeTriangleCrossings": 0,
+        "witnesses": [],
+        "scope": "Independent finite-edge/triangle intersection of actual saved displayed card surfaces, double sided. No triangle alpha exclusions; no thickness/self/dynamic inference."
+      },
+      "AFN30_L_Iris": {
+        "bvhCandidatePairs": 0,
+        "confirmedEdgeTriangleCrossings": 0,
+        "witnesses": [],
+        "scope": "Independent finite-edge/triangle intersection of actual saved displayed card surfaces, double sided. No triangle alpha exclusions; no thickness/self/dynamic inference."
+      },
+      "AFN30_L_Pupil": {
+        "bvhCandidatePairs": 0,
+        "confirmedEdgeTriangleCrossings": 0,
+        "witnesses": [],
+        "scope": "Independent finite-edge/triangle intersection of actual saved displayed card surfaces, double sided. No triangle alpha exclusions; no thickness/self/dynamic inference."
+      },
+      "AFN30_R_Sclera": {
+        "bvhCandidatePairs": 93,
+        "confirmedEdgeTriangleCrossings": 93,
+        "witnesses": [
+          {
+            "hairTriangle": 702,
+            "otherTriangle": 357,
+            "pointM": [
+              -0.029033126309514046,
+              -0.10534216463565826,
+              1.4680949449539185
+            ]
+          },
+          {
+            "hairTriangle": 702,
+            "otherTriangle": 360,
+            "pointM": [
+              -0.02695157751441002,
+              -0.1077246442437172,
+              1.4690052270889282
+            ]
+          },
+          {
+            "hairTriangle": 702,
+            "otherTriangle": 346,
+            "pointM": [
+              -0.02695157751441002,
+              -0.1077246442437172,
+              1.4690052270889282
+            ]
+          },
+          {
+            "hairTriangle": 702,
+            "otherTriangle": 326,
+            "pointM": [
+              -0.025797685608267784,
+              -0.10961665958166122,
+              1.4690614938735962
+            ]
+          },
+          {
+            "hairTriangle": 702,
+            "otherTriangle": 325,
+            "pointM": [
+              -0.026494409888982773,
+              -0.10836686939001083,
+              1.4691118001937866
+            ]
+          },
+          {
+            "hairTriangle": 702,
+            "otherTriangle": 320,
+            "pointM": [
+              -0.024880336597561836,
+              -0.11142155528068542,
+              1.4688701629638672
+            ]
+          },
+          {
+            "hairTriangle": 702,
+            "otherTriangle": 327,
+            "pointM": [
+              -0.024880336597561836,
+              -0.11142155528068542,
+              1.4688701629638672
+            ]
+          },
+          {
+            "hairTriangle": 702,
+            "otherTriangle": 321,
+            "pointM": [
+              -0.02422664687037468,
+              -0.11326268315315247,
+              1.4682984352111816
+            ]
+          },
+          {
+            "hairTriangle": 702,
+            "otherTriangle": 389,
+            "pointM": [
+              -0.029033126309514046,
+              -0.10534216463565826,
+              1.4680949449539185
+            ]
+          },
+          {
+            "hairTriangle": 702,
+            "otherTriangle": 386,
+            "pointM": [
+              -0.03048442117869854,
+              -0.10412882268428802,
+              1.467108964920044
+            ]
+          },
+          {
+            "hairTriangle": 1024,
+            "otherTriangle": 467,
+            "pointM": [
+              -0.03291250020265579,
+              -0.10266736149787903,
+              1.464746356010437
+            ]
+          },
+          {
+            "hairTriangle": 1024,
+            "otherTriangle": 468,
+            "pointM": [
+              -0.03321792185306549,
+              -0.10258184373378754,
+              1.4644279479980469
+            ]
+          },
+          {
+            "hairTriangle": 1024,
+            "otherTriangle": 478,
+            "pointM": [
+              -0.03413214907050133,
+              -0.10235182195901871,
+              1.463456392288208
+            ]
+          },
+          {
+            "hairTriangle": 1024,
+            "otherTriangle": 477,
+            "pointM": [
+              -0.033709194511175156,
+              -0.10243450105190277,
+              1.4639228582382202
+            ]
+          },
+          {
+            "hairTriangle": 1024,
+            "otherTriangle": 511,
+            "pointM": [
+              -0.034333501011133194,
+              -0.10231524705886841,
+              1.4632322788238525
+            ]
+          },
+          {
+            "hairTriangle": 1024,
+            "otherTriangle": 512,
+            "pointM": [
+              -0.034649431705474854,
+              -0.10229504108428955,
+              1.462854266166687
+            ]
+          },
+          {
+            "hairTriangle": 1024,
+            "otherTriangle": 524,
+            "pointM": [
+              -0.035255059599876404,
+              -0.10229381918907166,
+              1.4621026515960693
+            ]
+          },
+          {
+            "hairTriangle": 1024,
+            "otherTriangle": 523,
+            "pointM": [
+              -0.034898169338703156,
+              -0.10227705538272858,
+              1.4625580310821533
+            ]
+          },
+          {
+            "hairTriangle": 1024,
+            "otherTriangle": 557,
+            "pointM": [
+              -0.035794615745544434,
+              -0.10235791653394699,
+              1.4613864421844482
+            ]
+          },
+          {
+            "hairTriangle": 705,
+            "otherTriangle": 557,
+            "pointM": [
+              -0.035794615745544434,
+              -0.10235791653394699,
+              1.4613864421844482
+            ]
+          },
+          {
+            "hairTriangle": 705,
+            "otherTriangle": 558,
+            "pointM": [
+              -0.035834308713674545,
+              -0.10235761106014252,
+              1.461289405822754
+            ]
+          },
+          {
+            "hairTriangle": 705,
+            "otherTriangle": 571,
+            "pointM": [
+              -0.03609660640358925,
+              -0.10236406326293945,
+              1.4606389999389648
+            ]
+          },
+          {
+            "hairTriangle": 705,
+            "otherTriangle": 572,
+            "pointM": [
+              -0.03622302785515785,
+              -0.10239968448877335,
+              1.4602903127670288
+            ]
+          },
+          {
+            "hairTriangle": 705,
+            "otherTriangle": 603,
+            "pointM": [
+              -0.03651250898838043,
+              -0.10248753428459167,
+              1.4594846963882446
+            ]
+          },
+          {
+            "hairTriangle": 705,
+            "otherTriangle": 604,
+            "pointM": [
+              -0.03669675812125206,
+              -0.1026073768734932,
+              1.4589024782180786
+            ]
+          },
+          {
+            "hairTriangle": 704,
+            "otherTriangle": 604,
+            "pointM": [
+              -0.03669675812125206,
+              -0.10260738432407379,
+              1.4589024782180786
+            ]
+          },
+          {
+            "hairTriangle": 704,
+            "otherTriangle": 608,
+            "pointM": [
+              -0.0370364785194397,
+              -0.10283425450325012,
+              1.4584097862243652
+            ]
+          },
+          {
+            "hairTriangle": 704,
+            "otherTriangle": 607,
+            "pointM": [
+              -0.036829303950071335,
+              -0.1026783213019371,
+              1.4587188959121704
+            ]
+          },
+          {
+            "hairTriangle": 704,
+            "otherTriangle": 621,
+            "pointM": [
+              -0.037207044661045074,
+              -0.10295993834733963,
+              1.458156704902649
+            ]
+          },
+          {
+            "hairTriangle": 704,
+            "otherTriangle": 622,
+            "pointM": [
+              -0.03760811313986778,
+              -0.1033308357000351,
+              1.4575247764587402
+            ]
+          }
+        ],
+        "scope": "Independent finite-edge/triangle intersection of actual saved displayed card surfaces, double sided. No triangle alpha exclusions; no thickness/self/dynamic inference."
+      },
+      "AFN30_R_Cornea": {
+        "bvhCandidatePairs": 0,
+        "confirmedEdgeTriangleCrossings": 0,
+        "witnesses": [],
+        "scope": "Independent finite-edge/triangle intersection of actual saved displayed card surfaces, double sided. No triangle alpha exclusions; no thickness/self/dynamic inference."
+      },
+      "AFN30_R_Iris": {
+        "bvhCandidatePairs": 0,
+        "confirmedEdgeTriangleCrossings": 0,
+        "witnesses": [],
+        "scope": "Independent finite-edge/triangle intersection of actual saved displayed card surfaces, double sided. No triangle alpha exclusions; no thickness/self/dynamic inference."
+      },
+      "AFN30_R_Pupil": {
+        "bvhCandidatePairs": 0,
+        "confirmedEdgeTriangleCrossings": 0,
+        "witnesses": [],
+        "scope": "Independent finite-edge/triangle intersection of actual saved displayed card surfaces, double sided. No triangle alpha exclusions; no thickness/self/dynamic inference."
+      }
+    },
+    "B81guidePilot": {
+      "status": "FAIL_OR_UNRESOLVED",
+      "curves": 81,
+      "segments": 10287,
+      "unqualifiedSegments": 106,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": -4e-05,
+      "minimumSampledCVSurfaceGapM": -3.81888608633017e-05,
+      "methods": {
+        "centreline_cross": 85,
+        "edge_distance": 403,
+        "lipschitz": 9799
+      },
+      "failureSamples": [
+        {
+          "curve": 0,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.015537118539214134,
+            -0.06441774219274521,
+            1.555964469909668
+          ],
+          "b": [
+            0.013615855041401146,
+            -0.0653256221487378,
+            1.5558588879685689
+          ]
+        },
+        {
+          "curve": 0,
+          "segment": 4,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.883464566929134e-05,
+          "a": [
+            0.0079792268936935,
+            -0.06817184923636814,
+            1.5560648687453966
+          ],
+          "b": [
+            0.006133748378172134,
+            -0.06915278753535622,
+            1.5562708163369279
+          ]
+        },
+        {
+          "curve": 1,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.015537118539214134,
+            -0.06441774219274521,
+            1.555964469909668
+          ],
+          "b": [
+            0.017173384575415795,
+            -0.06365954053823583,
+            1.5554684689022933
+          ]
+        },
+        {
+          "curve": 1,
+          "segment": 3,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.9125984251968504e-05,
+          "a": [
+            0.02051219479514355,
+            -0.06220703078007524,
+            1.5547489166478423
+          ],
+          "b": [
+            0.022209345029752088,
+            -0.06150752279436027,
+            1.5545031924802943
+          ]
+        },
+        {
+          "curve": 2,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            -0.0011461243266239762,
+            -0.05737164244055748,
+            1.5591658353805542
+          ],
+          "b": [
+            -0.00297277572908069,
+            -0.05798206009457689,
+            1.5585999571785378
+          ]
+        },
+        {
+          "curve": 2,
+          "segment": 7,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.7960629921259843e-05,
+          "a": [
+            -0.013950371119521701,
+            -0.06188135067945922,
+            1.5566026365748917
+          ],
+          "b": [
+            -0.01578177200148007,
+            -0.06255535206376936,
+            1.556412149189969
+          ]
+        },
+        {
+          "curve": 5,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            -0.0018850814085453749,
+            -0.017901111394166946,
+            1.559906005859375
+          ],
+          "b": [
+            -0.0037944485884442818,
+            -0.017654278570037193,
+            1.5595206435667548
+          ]
+        },
+        {
+          "curve": 5,
+          "segment": 4,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.883464566929134e-05,
+          "a": [
+            -0.009528963162742205,
+            -0.016810402001099498,
+            1.5588647412044025
+          ],
+          "b": [
+            -0.011442152320844586,
+            -0.016501958900977987,
+            1.5587774740313114
+          ]
+        },
+        {
+          "curve": 6,
+          "segment": 0,
+          "method": "edge_distance",
+          "gapLowerBoundM": -2.821613974339562e-05,
+          "a": [
+            -0.0018850814085453749,
+            -0.017901111394166946,
+            1.559906005859375
+          ],
+          "b": [
+            5.9997290768250354e-05,
+            -0.018378979592647924,
+            1.5598772290084313
+          ]
+        },
+        {
+          "curve": 6,
+          "segment": 1,
+          "method": "edge_distance",
+          "gapLowerBoundM": -3.599824914336257e-05,
+          "a": [
+            5.9997290768250354e-05,
+            -0.018378979592647924,
+            1.5598772290084313
+          ],
+          "b": [
+            0.0020039164753422093,
+            -0.01883815641736272,
+            1.5599388884882344
+          ]
+        },
+        {
+          "curve": 6,
+          "segment": 2,
+          "method": "edge_distance",
+          "gapLowerBoundM": -3.396612730309185e-05,
+          "a": [
+            0.0020039164753422093,
+            -0.01883815641736272,
+            1.5599388884882344
+          ],
+          "b": [
+            0.003946812158635701,
+            -0.019280834404823494,
+            1.5600803759315414
+          ]
+        },
+        {
+          "curve": 8,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.018738815560936928,
+            -0.0062940395437181,
+            1.5547809600830078
+          ],
+          "b": [
+            0.02011596264216395,
+            -0.0074288334193173934,
+            1.5545086335493057
+          ]
+        },
+        {
+          "curve": 8,
+          "segment": 4,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.883464566929134e-05,
+          "a": [
+            0.024361211442820926,
+            -0.010676072110476331,
+            1.5541798430111933
+          ],
+          "b": [
+            0.025806184448778025,
+            -0.011717213462396847,
+            1.5541984626634961
+          ]
+        },
+        {
+          "curve": 12,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.027982819825410843,
+            -0.07662686705589294,
+            1.5476059913635254
+          ],
+          "b": [
+            0.02920300984177576,
+            -0.07581719775735313,
+            1.5467137672460012
+          ]
+        },
+        {
+          "curve": 12,
+          "segment": 5,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.8543307086614174e-05,
+          "a": [
+            0.03475816722555453,
+            -0.07584709191360364,
+            1.5435115403827495
+          ],
+          "b": [
+            0.036429874716226836,
+            -0.07639633320650965,
+            1.5430878849540737
+          ]
+        },
+        {
+          "curve": 13,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.019815443083643913,
+            -0.07825953513383865,
+            1.5503172874450684
+          ],
+          "b": [
+            0.0183341219579191,
+            -0.07957011753671153,
+            1.5496995382904046
+          ]
+        },
+        {
+          "curve": 13,
+          "segment": 7,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.7960629921259843e-05,
+          "a": [
+            0.010043349374928805,
+            -0.08812483775817104,
+            1.5477275450883656
+          ],
+          "b": [
+            0.008771781418109293,
+            -0.08959169723244075,
+            1.5474471315499476
+          ]
+        },
+        {
+          "curve": 14,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.019815443083643913,
+            -0.07825953513383865,
+            1.5503172874450684
+          ],
+          "b": [
+            0.021118790130670664,
+            -0.07699237576704775,
+            1.5501739147870406
+          ]
+        },
+        {
+          "curve": 14,
+          "segment": 1,
+          "method": "edge_distance",
+          "gapLowerBoundM": -1.4898207682147293e-05,
+          "a": [
+            0.021118790130670664,
+            -0.07699237576704775,
+            1.5501739147870406
+          ],
+          "b": [
+            0.02245748339752614,
+            -0.07576613082470397,
+            1.5501332092160716
+          ]
+        },
+        {
+          "curve": 14,
+          "segment": 2,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.941732283464567e-05,
+          "a": [
+            0.02245748339752614,
+            -0.07576613082470397,
+            1.5501332092160716
+          ],
+          "b": [
+            0.023827376700066207,
+            -0.07457600096083108,
+            1.550183127672096
+          ]
+        },
+        {
+          "curve": 15,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.017591776326298714,
+            -0.07325129956007004,
+            1.552895426750183
+          ],
+          "b": [
+            0.01908768443103215,
+            -0.0722376965250441,
+            1.552556537849569
+          ]
+        },
+        {
+          "curve": 15,
+          "segment": 2,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.941732283464567e-05,
+          "a": [
+            0.020612915367750655,
+            -0.0712592340925493,
+            1.5523207314601304
+          ],
+          "b": [
+            0.02216402950806887,
+            -0.07031179019777264,
+            1.5521759157916997
+          ]
+        },
+        {
+          "curve": 15,
+          "segment": 3,
+          "method": "edge_distance",
+          "gapLowerBoundM": -3.9188860863301696e-05,
+          "a": [
+            0.02216402950806887,
+            -0.07031179019777264,
+            1.5521759157916997
+          ],
+          "b": [
+            0.023737587223601465,
+            -0.06939124277590107,
+            1.5521099990541103
+          ]
+        },
+        {
+          "curve": 16,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.017591776326298714,
+            -0.07325129956007004,
+            1.552895426750183
+          ],
+          "b": [
+            0.01588152549258184,
+            -0.07439341989103826,
+            1.552445770400613
+          ]
+        },
+        {
+          "curve": 16,
+          "segment": 6,
+          "method": "edge_distance",
+          "gapLowerBoundM": -2.402366479434574e-05,
+          "a": [
+            0.007701321236066504,
+            -0.08054868928758596,
+            1.5515018905170501
+          ],
+          "b": [
+            0.006115412968479832,
+            -0.08183982226154557,
+            1.5514893523820246
+          ]
+        },
+        {
+          "curve": 16,
+          "segment": 7,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.7960629921259843e-05,
+          "a": [
+            0.006115412968479832,
+            -0.08183982226154557,
+            1.5514893523820246
+          ],
+          "b": [
+            0.00469407900505497,
+            -0.08317129289831662,
+            1.551183324884668
+          ]
+        },
+        {
+          "curve": 17,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.0287634190171957,
+            -0.08056517690420151,
+            1.5455518960952759
+          ],
+          "b": [
+            0.030041308521763514,
+            -0.08024926761170811,
+            1.5444823880023584
+          ]
+        },
+        {
+          "curve": 17,
+          "segment": 5,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.8543307086614174e-05,
+          "a": [
+            0.034919632713137964,
+            -0.08206363625127695,
+            1.5407509114678124
+          ],
+          "b": [
+            0.03639511299754696,
+            -0.08291741923022003,
+            1.5402175336877635
+          ]
+        },
+        {
+          "curve": 19,
+          "segment": 0,
+          "method": "edge_distance",
+          "gapLowerBoundM": -2.2302308378275514e-06,
+          "a": [
+            0.004487153142690659,
+            -0.027067268267273903,
+            1.5611032247543335
+          ],
+          "b": [
+            0.004554034952611177,
+            -0.02936036678400826,
+            1.5611248017692574
+          ]
+        },
+        {
+          "curve": 19,
+          "segment": 1,
+          "method": "edge_distance",
+          "gapLowerBoundM": -3.0385926295886484e-06,
+          "a": [
+            0.004554034952611177,
+            -0.02936036678400826,
+            1.5611248017692574
+          ],
+          "b": [
+            0.004625193302577237,
+            -0.03164732729365875,
+            1.5612251020952537
+          ]
+        },
+        {
+          "curve": 20,
+          "segment": 96,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.2031496062992123e-05,
+          "a": [
+            0.04298276213281811,
+            -0.11078714200355239,
+            1.5102950172367047
+          ],
+          "b": [
+            0.042488092319060866,
+            -0.10904699408948022,
+            1.5096066010331766
+          ]
+        },
+        {
+          "curve": 21,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.002708634128794074,
+            -0.005232902709394693,
+            1.5563410520553589
+          ],
+          "b": [
+            0.00444912680597651,
+            -0.006158694558544181,
+            1.556366400852519
+          ]
+        },
+        {
+          "curve": 21,
+          "segment": 3,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.9125984251968504e-05,
+          "a": [
+            0.007938273269516584,
+            -0.007900723412070768,
+            1.5567274017293984
+          ],
+          "b": [
+            0.009686262876083769,
+            -0.00872587637533067,
+            1.5570378002357657
+          ]
+        },
+        {
+          "curve": 23,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.022145485505461693,
+            -0.0030085165053606033,
+            1.5526946783065796
+          ],
+          "b": [
+            0.023310599314481626,
+            -0.004304833424124407,
+            1.552565695536702
+          ]
+        },
+        {
+          "curve": 23,
+          "segment": 4,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.883464566929134e-05,
+          "a": [
+            0.02693795047695192,
+            -0.008019840691286062,
+            1.552611222559614
+          ],
+          "b": [
+            0.02818173816858129,
+            -0.00921249245534051,
+            1.5527399822466719
+          ]
+        },
+        {
+          "curve": 28,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.030018648132681847,
+            -0.007461042143404484,
+            1.5514352321624756
+          ],
+          "b": [
+            0.03131998110737989,
+            -0.00781846583278499,
+            1.5505338444034056
+          ]
+        },
+        {
+          "curve": 28,
+          "segment": 6,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.825196850393701e-05,
+          "a": [
+            0.03536215997817144,
+            -0.0030329505171988154,
+            1.5469718009927311
+          ],
+          "b": [
+            0.035857735350539426,
+            -0.0015443780692854028,
+            1.5464936695508458
+          ]
+        },
+        {
+          "curve": 30,
+          "segment": 91,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.348818897637795e-05,
+          "a": [
+            0.039097127400096396,
+            -0.11123824549357228,
+            1.5168920714688845
+          ],
+          "b": [
+            0.03828768980205842,
+            -0.11006922253265156,
+            1.5157473302015891
+          ]
+        },
+        {
+          "curve": 31,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.03597734123468399,
+            -0.11012059450149536,
+            1.5188828706741333
+          ],
+          "b": [
+            0.03522653432089242,
+            -0.11114014303287667,
+            1.5177263629605886
+          ]
+        },
+        {
+          "curve": 31,
+          "segment": 31,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.096850393700788e-05,
+          "a": [
+            0.012787268019416192,
+            -0.13103378288718517,
+            1.476846487195104
+          ],
+          "b": [
+            0.01187417174972108,
+            -0.13147401894353497,
+            1.4754644773241345
+          ]
+        },
+        {
+          "curve": 33,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.03763986751437187,
+            -0.10657598078250885,
+            1.5209338665008545
+          ],
+          "b": [
+            0.03655869379424656,
+            -0.10724723996645204,
+            1.5198901258357107
+          ]
+        },
+        {
+          "curve": 33,
+          "segment": 46,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.6598425196850394e-05,
+          "a": [
+            -0.014363042024585056,
+            -0.12365610188701642,
+            1.4634087203694393
+          ],
+          "b": [
+            -0.015520516071306034,
+            -0.12360958604945645,
+            1.462292478222912
+          ]
+        },
+        {
+          "curve": 33,
+          "segment": 53,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.4559055118110237e-05,
+          "a": [
+            -0.02250550319274075,
+            -0.12296938881653366,
+            1.4557426216970244
+          ],
+          "b": [
+            -0.023715960561136278,
+            -0.12244626509840989,
+            1.4548211875124546
+          ]
+        },
+        {
+          "curve": 33,
+          "segment": 98,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.1448818897637793e-05,
+          "a": [
+            -0.053639408320083896,
+            -0.09894347391924402,
+            1.4010649004266935
+          ],
+          "b": [
+            -0.0535653393867703,
+            -0.09860290332573769,
+            1.3994944126408078
+          ]
+        },
+        {
+          "curve": 34,
+          "segment": 8,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.766929133858268e-05,
+          "a": [
+            0.04448115457522581,
+            -0.10532837260168042,
+            1.5134902981351575
+          ],
+          "b": [
+            0.044800558827508476,
+            -0.10516977963621782,
+            1.5120140096282253
+          ]
+        },
+        {
+          "curve": 34,
+          "segment": 31,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.096850393700788e-05,
+          "a": [
+            0.056828300682000434,
+            -0.09914267960636108,
+            1.4842803998860745
+          ],
+          "b": [
+            0.057369747734410725,
+            -0.09894262338591339,
+            1.4830678382220126
+          ]
+        },
+        {
+          "curve": 34,
+          "segment": 32,
+          "method": "edge_distance",
+          "gapLowerBoundM": -2.3213574097162265e-05,
+          "a": [
+            0.057369747734410725,
+            -0.09894262338591339,
+            1.4830678382220126
+          ],
+          "b": [
+            0.05781722682704028,
+            -0.09880666731586248,
+            1.4818056308307515
+          ]
+        },
+        {
+          "curve": 34,
+          "segment": 67,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -2.048031496062992e-05,
+          "a": [
+            0.06346159901542207,
+            -0.09709613361771723,
+            1.4367307061961325
+          ],
+          "b": [
+            0.06333854544866611,
+            -0.09715825166369484,
+            1.435391718422495
+          ]
+        },
+        {
+          "curve": 34,
+          "segment": 68,
+          "method": "edge_distance",
+          "gapLowerBoundM": -8.69689384510825e-06,
+          "a": [
+            0.06333854544866611,
+            -0.09715825166369484,
+            1.435391718422495
+          ],
+          "b": [
+            0.06321549188191015,
+            -0.09722036970967243,
+            1.4340527306488573
+          ]
+        },
+        {
+          "curve": 34,
+          "segment": 71,
+          "method": "edge_distance",
+          "gapLowerBoundM": -4.682854915163333e-06,
+          "a": [
+            0.06296938474839825,
+            -0.09734460580162765,
+            1.4313747551015819
+          ],
+          "b": [
+            0.06284633118164229,
+            -0.09740672384760525,
+            1.4300357673279442
+          ]
+        },
+        {
+          "curve": 34,
+          "segment": 72,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.9023622047244095e-05,
+          "a": [
+            0.06284633118164229,
+            -0.09740672384760525,
+            1.4300357673279442
+          ],
+          "b": [
+            0.06272327761488633,
+            -0.09746884189358286,
+            1.4286967795543064
+          ]
+        },
+        {
+          "curve": 35,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.0413203202188015,
+            -0.09114845842123032,
+            1.5304388999938965
+          ],
+          "b": [
+            0.03985465659724743,
+            -0.09151889491704007,
+            1.5295916588217446
+          ]
+        },
+        {
+          "curve": 35,
+          "segment": 111,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -7.661417322834642e-06,
+          "a": [
+            -0.05423321823758622,
+            -0.07307109318826778,
+            1.3848569035384748
+          ],
+          "b": [
+            -0.05425998233031363,
+            -0.07281819586688976,
+            1.3832760440344547
+          ]
+        },
+        {
+          "curve": 36,
+          "segment": 3,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.9125984251968504e-05,
+          "a": [
+            0.04419473475556561,
+            -0.09048556464977141,
+            1.5281123863730952
+          ],
+          "b": [
+            0.04479310990727664,
+            -0.09001280722142681,
+            1.526976742080472
+          ]
+        },
+        {
+          "curve": 36,
+          "segment": 109,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -8.244094488188972e-06,
+          "a": [
+            0.052611307123418466,
+            -0.08161902483220827,
+            1.382964607341979
+          ],
+          "b": [
+            0.05255124555822004,
+            -0.08167592610516229,
+            1.381621772861414
+          ]
+        },
+        {
+          "curve": 37,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.04221229627728462,
+            -0.06577745079994202,
+            1.5421427488327026
+          ],
+          "b": [
+            0.0406693037686833,
+            -0.06607806997389934,
+            1.5413018964544778
+          ]
+        },
+        {
+          "curve": 37,
+          "segment": 108,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -8.53543307086614e-06,
+          "a": [
+            -0.05486717224679053,
+            -0.053567743599002085,
+            1.3919740100563278
+          ],
+          "b": [
+            -0.05501355205997623,
+            -0.05359782254042041,
+            1.3904004861688104
+          ]
+        },
+        {
+          "curve": 38,
+          "segment": 1,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.9708661417322835e-05,
+          "a": [
+            0.043323675769601236,
+            -0.06564853924543737,
+            1.541441055519353
+          ],
+          "b": [
+            0.04415624482145965,
+            -0.06541352638156486,
+            1.5403969892297127
+          ]
+        },
+        {
+          "curve": 38,
+          "segment": 2,
+          "method": "edge_distance",
+          "gapLowerBoundM": -3.621803663942897e-05,
+          "a": [
+            0.04415624482145965,
+            -0.06541352638156486,
+            1.5403969892297127
+          ],
+          "b": [
+            0.04474270846986373,
+            -0.06508485810971663,
+            1.5390507110167186
+          ]
+        },
+        {
+          "curve": 38,
+          "segment": 109,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -8.244094488188972e-06,
+          "a": [
+            0.05344410432310973,
+            -0.06192797119656507,
+            1.384988156886193
+          ],
+          "b": [
+            0.053651159579249534,
+            -0.06213352015948781,
+            1.3836542581494709
+          ]
+        },
+        {
+          "curve": 39,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            -0.061988748610019684,
+            0.005553004331886768,
+            1.5115784406661987
+          ],
+          "b": [
+            -0.060138632212478775,
+            0.007846004770628787,
+            1.511554012796382
+          ]
+        },
+        {
+          "curve": 39,
+          "segment": 4,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.883464566929134e-05,
+          "a": [
+            -0.05513602829723701,
+            0.015013716596329203,
+            1.5116877153787447
+          ],
+          "b": [
+            -0.05361235182110448,
+            0.01747877992618956,
+            1.511786645133317
+          ]
+        },
+        {
+          "curve": 39,
+          "segment": 110,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -7.95275590551181e-06,
+          "a": [
+            0.06035140407140793,
+            -0.09501092302689781,
+            1.4716038327695313
+          ],
+          "b": [
+            0.060078858737389274,
+            -0.09207038796776496,
+            1.4714197515400074
+          ]
+        },
+        {
+          "curve": 40,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            -0.04539214447140694,
+            0.001099234214052558,
+            1.538405418395996
+          ],
+          "b": [
+            -0.04596567170622784,
+            -0.0011640361659572764,
+            1.5382968001752806
+          ]
+        },
+        {
+          "curve": 40,
+          "segment": 9,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.737795275590551e-05,
+          "a": [
+            -0.051778646068591935,
+            -0.01843457286345673,
+            1.5388586555178874
+          ],
+          "b": [
+            -0.05257594274173777,
+            -0.02054516992448254,
+            1.5390114521699252
+          ]
+        },
+        {
+          "curve": 40,
+          "segment": 91,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.348818897637795e-05,
+          "a": [
+            0.009799458901544817,
+            -0.13128111190689706,
+            1.4732820504141513
+          ],
+          "b": [
+            0.00890208070276334,
+            -0.1292097765606828,
+            1.473933696695303
+          ]
+        },
+        {
+          "curve": 41,
+          "segment": 105,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -9.409448818897633e-06,
+          "a": [
+            0.05558767369604441,
+            -0.10417032242725843,
+            1.488001957975805
+          ],
+          "b": [
+            0.0553147273575343,
+            -0.10152703896645116,
+            1.4877957398346342
+          ]
+        },
+        {
+          "curve": 42,
+          "segment": 0,
+          "method": "edge_distance",
+          "gapLowerBoundM": -3.528460660055862e-05,
+          "a": [
+            -0.014251621440052986,
+            -0.026157589629292488,
+            1.5597870349884033
+          ],
+          "b": [
+            -0.014212242549790326,
+            -0.02777262381839938,
+            1.5597562041318547
+          ]
+        },
+        {
+          "curve": 42,
+          "segment": 1,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.9708661417322835e-05,
+          "a": [
+            -0.014212242549790326,
+            -0.02777262381839938,
+            1.5597562041318547
+          ],
+          "b": [
+            -0.014185625069019901,
+            -0.029382664828473726,
+            1.559790253525852
+          ]
+        },
+        {
+          "curve": 42,
+          "segment": 2,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.941732283464567e-05,
+          "a": [
+            -0.014185625069019901,
+            -0.029382664828473726,
+            1.559790253525852
+          ],
+          "b": [
+            -0.014170272058211834,
+            -0.030988298369665972,
+            1.5598815725838213
+          ]
+        },
+        {
+          "curve": 42,
+          "segment": 3,
+          "method": "edge_distance",
+          "gapLowerBoundM": -3.769922774244699e-05,
+          "a": [
+            -0.014170272058211834,
+            -0.030988298369665972,
+            1.5598815725838213
+          ],
+          "b": [
+            -0.01416468657783624,
+            -0.03259011015212656,
+            1.5600225507191876
+          ]
+        },
+        {
+          "curve": 42,
+          "segment": 83,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.5818897637795274e-05,
+          "a": [
+            0.03238003307606167,
+            -0.11825050740026855,
+            1.5128026765763112
+          ],
+          "b": [
+            0.03164240873999506,
+            -0.11700340619185642,
+            1.5120786897645473
+          ]
+        },
+        {
+          "curve": 43,
+          "segment": 101,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.0574803149606297e-05,
+          "a": [
+            0.04682361813604738,
+            -0.1083992605366843,
+            1.5030789381773266
+          ],
+          "b": [
+            0.04660439600141257,
+            -0.10605948892538829,
+            1.5028273669837164
+          ]
+        },
+        {
+          "curve": 44,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            -0.02822527475655079,
+            -0.0026354866567999125,
+            1.55047607421875
+          ],
+          "b": [
+            -0.028762496302072713,
+            -0.004652419315981083,
+            1.5504723349950638
+          ]
+        },
+        {
+          "curve": 44,
+          "segment": 8,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.766929133858268e-05,
+          "a": [
+            -0.03317969222003373,
+            -0.018116162382932236,
+            1.5520357126624862
+          ],
+          "b": [
+            -0.0338613972521028,
+            -0.019989020718073205,
+            1.5523817271321538
+          ]
+        },
+        {
+          "curve": 44,
+          "segment": 88,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.4362204724409445e-05,
+          "a": [
+            0.023310109630453216,
+            -0.1296128491454332,
+            1.4939109996972488
+          ],
+          "b": [
+            0.02239539263684748,
+            -0.12774016535614943,
+            1.4936577735269962
+          ]
+        },
+        {
+          "curve": 45,
+          "segment": 102,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.0283464566929132e-05,
+          "a": [
+            0.05151458554951124,
+            -0.10762786917335516,
+            1.495863367165757
+          ],
+          "b": [
+            0.051282004196453644,
+            -0.10520355501522587,
+            1.4956113557555832
+          ]
+        },
+        {
+          "curve": 46,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            -0.05626147240400314,
+            0.00397135503590107,
+            1.5243979692459106
+          ],
+          "b": [
+            -0.054475288211670185,
+            0.006160926470236742,
+            1.5243299577835974
+          ]
+        },
+        {
+          "curve": 46,
+          "segment": 3,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.9125984251968504e-05,
+          "a": [
+            -0.05110814990098996,
+            0.010659216827219565,
+            1.5243296334307437
+          ],
+          "b": [
+            -0.0495104934368453,
+            0.012958239107888164,
+            1.5243862769127954
+          ]
+        },
+        {
+          "curve": 46,
+          "segment": 4,
+          "method": "edge_distance",
+          "gapLowerBoundM": -3.202635716818141e-05,
+          "a": [
+            -0.0495104934368453,
+            0.012958239107888164,
+            1.5243862769127954
+          ],
+          "b": [
+            -0.04795897720296599,
+            0.015284048362022516,
+            1.5244734284155612
+          ]
+        },
+        {
+          "curve": 46,
+          "segment": 108,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -8.53543307086614e-06,
+          "a": [
+            0.05859360807000491,
+            -0.09874655258739516,
+            1.4796681942942493
+          ],
+          "b": [
+            0.05833167291523454,
+            -0.09592695930231791,
+            1.4795409740437713
+          ]
+        },
+        {
+          "curve": 47,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            -0.05626147240400314,
+            0.00397135503590107,
+            1.5243979692459106
+          ],
+          "b": [
+            -0.056899145291702445,
+            0.0016043749971742854,
+            1.5242775988185566
+          ]
+        },
+        {
+          "curve": 47,
+          "segment": 7,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.7960629921259843e-05,
+          "a": [
+            -0.06192796029463443,
+            -0.011899225804705812,
+            1.5243506554731348
+          ],
+          "b": [
+            -0.06288861479419121,
+            -0.01407869702917231,
+            1.5244438411907784
+          ]
+        },
+        {
+          "curve": 47,
+          "segment": 92,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -1.3196850393700784e-05,
+          "a": [
+            -0.0013838666853622957,
+            -0.13393327942539032,
+            1.4607386072721262
+          ],
+          "b": [
+            -0.002100158666385888,
+            -0.13173298448009907,
+            1.4615956924829923
+          ]
+        },
+        {
+          "curve": 48,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.016817739233374596,
+            -0.07012563198804855,
+            1.554115653038025
+          ],
+          "b": [
+            0.015015121213249596,
+            -0.07119113095642815,
+            1.5538200091862542
+          ]
+        },
+        {
+          "curve": 48,
+          "segment": 5,
+          "method": "edge_distance",
+          "gapLowerBoundM": -3.69634037201189e-05,
+          "a": [
+            0.008044573751902115,
+            -0.07571597432598073,
+            1.5535055799129156
+          ],
+          "b": [
+            0.006345976206193737,
+            -0.0768954320924748,
+            1.553586324999529
+          ]
+        },
+        {
+          "curve": 48,
+          "segment": 6,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.825196850393701e-05,
+          "a": [
+            0.006345976206193737,
+            -0.0768954320924748,
+            1.553586324999529
+          ],
+          "b": [
+            0.0046586176542729035,
+            -0.07808720264865023,
+            1.5537077373967265
+          ]
+        },
+        {
+          "curve": 49,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.016817739233374596,
+            -0.07012563198804855,
+            1.554115653038025
+          ],
+          "b": [
+            0.018369772271990867,
+            -0.06920638965262682,
+            1.5537069279565952
+          ]
+        },
+        {
+          "curve": 49,
+          "segment": 3,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.9125984251968504e-05,
+          "a": [
+            0.021552192469033022,
+            -0.06745374521055467,
+            1.5531729952852544
+          ],
+          "b": [
+            0.023176202893395045,
+            -0.06661335712394319,
+            1.5530247140439484
+          ]
+        },
+        {
+          "curve": 51,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.01740761287510395,
+            -0.07313157618045807,
+            1.5529886484146118
+          ],
+          "b": [
+            0.015649279463259294,
+            -0.07430250635484549,
+            1.5525457427641303
+          ]
+        },
+        {
+          "curve": 51,
+          "segment": 5,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.8543307086614174e-05,
+          "a": [
+            0.008933574677693422,
+            -0.07936649740706792,
+            1.5518893838060257
+          ],
+          "b": [
+            0.007312950788993498,
+            -0.08070229562559085,
+            1.5519300060808554
+          ]
+        },
+        {
+          "curve": 51,
+          "segment": 6,
+          "method": "edge_distance",
+          "gapLowerBoundM": -1.123491327523522e-05,
+          "a": [
+            0.007312950788993498,
+            -0.08070229562559085,
+            1.5519300060808554
+          ],
+          "b": [
+            0.0057072058602655315,
+            -0.08205590717302037,
+            1.5520228716027875
+          ]
+        },
+        {
+          "curve": 53,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.016606129705905914,
+            -0.06994330137968063,
+            1.554229736328125
+          ],
+          "b": [
+            0.014742740021568395,
+            -0.07102149208646742,
+            1.5539508070414174
+          ]
+        },
+        {
+          "curve": 53,
+          "segment": 4,
+          "method": "edge_distance",
+          "gapLowerBoundM": -2.8192715127918485e-05,
+          "a": [
+            0.009341020140389927,
+            -0.0744594670681862,
+            1.5537884182538073
+          ],
+          "b": [
+            0.007589940566943981,
+            -0.07565887984080907,
+            1.5539114107897423
+          ]
+        },
+        {
+          "curve": 53,
+          "segment": 5,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.8543307086614174e-05,
+          "a": [
+            0.007589940566943981,
+            -0.07565887984080907,
+            1.5539114107897423
+          ],
+          "b": [
+            0.0058569465184725705,
+            -0.07687781324858882,
+            1.554099125612064
+          ]
+        },
+        {
+          "curve": 59,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            -0.001283315708860755,
+            -0.05730673670768738,
+            1.5591751337051392
+          ],
+          "b": [
+            -0.003155361302609993,
+            -0.05793479942597425,
+            1.5586075132201667
+          ]
+        },
+        {
+          "curve": 59,
+          "segment": 5,
+          "method": "edge_distance",
+          "gapLowerBoundM": -2.7678456665352666e-05,
+          "a": [
+            -0.010655597409784424,
+            -0.06060842023842666,
+            1.5572897272441917
+          ],
+          "b": [
+            -0.01253286895718536,
+            -0.06130644567126267,
+            1.5571351526837736
+          ]
+        },
+        {
+          "curve": 59,
+          "segment": 6,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.825196850393701e-05,
+          "a": [
+            -0.01253286895718536,
+            -0.06130644567126267,
+            1.5571351526837736
+          ],
+          "b": [
+            -0.01441070514785441,
+            -0.062012030293946516,
+            1.5570252060738246
+          ]
+        },
+        {
+          "curve": 65,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            -0.0019743714947253466,
+            -0.018013954162597656,
+            1.559928059577942
+          ],
+          "b": [
+            -0.0039473746468876355,
+            -0.01775976000106242,
+            1.559541646464081
+          ]
+        },
+        {
+          "curve": 65,
+          "segment": 3,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.9125984251968504e-05,
+          "a": [
+            -0.007897644398549546,
+            -0.017182644963181982,
+            1.5591013555983544
+          ],
+          "b": [
+            -0.00987456402369821,
+            -0.01686531730879487,
+            1.559020414948259
+          ]
+        },
+        {
+          "curve": 65,
+          "segment": 4,
+          "method": "edge_distance",
+          "gapLowerBoundM": -1.6161635450519237e-05,
+          "a": [
+            -0.00987456402369821,
+            -0.01686531730879487,
+            1.559020414948259
+          ],
+          "b": [
+            -0.011852442165491384,
+            -0.016532538378748542,
+            1.5590142355545227
+          ]
+        },
+        {
+          "curve": 77,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.015423930250108242,
+            -0.06425203382968903,
+            1.5560308694839478
+          ],
+          "b": [
+            0.013437889293607492,
+            -0.06516661433462372,
+            1.5559482916176914
+          ]
+        },
+        {
+          "curve": 77,
+          "segment": 3,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.9125984251968504e-05,
+          "a": [
+            0.009549043082116028,
+            -0.06707601623692654,
+            1.556125292265997
+          ],
+          "b": [
+            0.007639463812760307,
+            -0.06806430734803355,
+            1.5563570248899528
+          ]
+        },
+        {
+          "curve": 77,
+          "segment": 4,
+          "method": "edge_distance",
+          "gapLowerBoundM": -1.1748068665586028e-05,
+          "a": [
+            0.007639463812760307,
+            -0.06806430734803355,
+            1.5563570248899528
+          ],
+          "b": [
+            0.00574859775808792,
+            -0.06907063837493689,
+            1.5566656817867068
+          ]
+        },
+        {
+          "curve": 78,
+          "segment": 0,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -4e-05,
+          "a": [
+            0.019749850034713745,
+            -0.07818455249071121,
+            1.5503699779510498
+          ],
+          "b": [
+            0.01821443425306802,
+            -0.07953702285854085,
+            1.5497466008809364
+          ]
+        },
+        {
+          "curve": 78,
+          "segment": 6,
+          "method": "centreline_cross",
+          "gapLowerBoundM": -3.825196850393701e-05,
+          "a": [
+            0.011055599063001211,
+            -0.08693474158230331,
+            1.5482216208558846
+          ],
+          "b": [
+            0.009693851975784686,
+            -0.08850012979837216,
+            1.5481317073085277
+          ]
+        }
+      ],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "self": "NOT_QUALIFIED",
+    "continuousDynamic": "NOT_QUALIFIED",
+    "alphaScope": "Conservative full card surfaces, no transparent-pixel exclusions; no claim that all raw triangle contacts are visible fibres. Appearance is independently rejected."
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "performance": null
+  },
+  "adoptedCharacterParts": [],
+  "retainedResearch": "Immutable CC0 source geometry/texture/affine fitting data and validated own parser; production use requires independently credible shape, appropriate skin binding and actual contacts. No current character gain.",
+  "stoppedThisRound": [
+    "Directly fitting bob02 cards to this head as production hair",
+    "Automatically extracting opposite-quad rail centers with proximal root connection as a groom; do not densify failed guide paths"
+  ],
+  "nextAction": "Keep r42B as the single complete working character. R47A direct affine-fit CC0 bob02 cards are rejected for plastic helmet/card seams and actual saved triangle crossings; R47B automatic opposite-quad-rail center extraction plus new crown roots failed representative finite capsules (106unqualified segments,85centreline crosses), so do not densify or refine these routes. Retain source CC0 files and independently verified affine parser as general fitting reference only, not a suitable production hairstyle or physical root binding. Stop inheriting the helper-hair envelope as a scalp domain. NEXT integrated production: on actual r42B head explicitly author an anatomical scalp/hairline domain (temple,sideburn,behind-ear,occipital,nape), then a small intentionally composed asymmetric set of individually specified Bezier primary guides with distinct inner/outer routes and lengths, rather than transferring source bob02 paths or global offset/loft/flow generators. Check coarse full-head silhouette and actual finite guide/body/optics contact before any children. This must be a complete-character authoring round, not another vendor search/scalp-tool diagnostic; root redesign requires recorded anatomy/bindings and no failure-hiding relocation. Existing stopped method families remain stopped. Expressive eyes,skin,oral/body/clothes rig,hair dynamics,all-layer continuous/self contacts,engine LOD/CPU/GPU/memory,weighted85each80 and explicit female acceptance remain incomplete."
+}

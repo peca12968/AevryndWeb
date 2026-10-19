@@ -1,0 +1,76 @@
+{
+  "revision": "female-next-r0047-a",
+  "previousGoalTurnClassification": "progress: two complete own grooms rejected and archived6a423e3; no appearance gain",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0042-b-shadow-quality-review.blend",
+  "sourceSha256": "d62c180a5af61f6f8d800926b101738c89a8fbe7785fe1054fd655fd018824da",
+  "mainDefects": [
+    "Hat/sheet hair without credible scalp coverage/layering",
+    "Staring eyes",
+    "Flat skin"
+  ],
+  "chosenDefect": "Complete hairstyle/hairline and anatomical source-body fitting",
+  "planChangeFromContinuation": "CC0 helper-hair boundsZ0.9625..1.5570 on reference: long-hair envelope, not a scalp follicle region; do not treat it as scalp mask. Use explicitly CC0 artist hairstyle and its native body-surface fitting correspondence.",
+  "hypothesis": "Artist-authored asymmetric hairline, fringe and layered bob geometry with existing UV/strand texture can provide a credible complete form on the same owned head, avoiding repeated mathematical shell generators",
+  "method": "Own MHCLO affine fitting-data reader, validate against installed MPFB on identical input shapes within1micrometre, then register source native body support to current actual skin and apply authored offsets/axis scales. Imported model is aggregate textured hair-card mesh, not individual fibres or a new paid tool.",
+  "candidateCount": 1,
+  "cheapTest": "Independent identical-input fitting oracle, complete fixed-stage head/body/multiangle visual integration, raw actual hair/body8optics triangles before costly motion work",
+  "reject": [
+    "Invalid source/license or independent fitter disagreement",
+    "Unusable full-head wig/card/shell appearance",
+    "Body/optics visible penetration or unqualified contact",
+    "Changed body/skin/eyes/lighting"
+  ],
+  "resources": {
+    "startUTC": "2026-10-19 15:47:08 UTC",
+    "checkpointUTC": "2026-10-19 16:32:08 UTC",
+    "threads": 4,
+    "heavyJobsAtOnce": 1,
+    "assetDownloadBytes": 3913706,
+    "entire267MBPackNotDownloaded": true
+  },
+  "sourceAsset": {
+    "sourceURL": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip",
+    "officialManifestURL": "https://static.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.html",
+    "asset": "bob02",
+    "author": "makehuman_system (per official manifest; inspect file headers for original author)",
+    "license": "CC0 per explicit bob02 official table row, subject to exact file-header consistency check",
+    "packBytes": 280737770,
+    "downloadedRangeBytes": 3913706,
+    "rangeRequests": 15,
+    "files": [
+      {
+        "archivePath": "hair/bob02/bob02.mhclo",
+        "file": "bob02.mhclo",
+        "bytes": 112326,
+        "sha256": "a48dcf87c6a618f9c6e90fcb00eed07cd59ab024d8d994606fa1b070da515b96"
+      },
+      {
+        "archivePath": "hair/bob02/bob02_diffuse.png",
+        "file": "bob02_diffuse.png",
+        "bytes": 3373723,
+        "sha256": "38c88e6f71631356591f09b1f17a1bb5a99c3bb095b1a29003f1dc3d3e839b0d"
+      },
+      {
+        "archivePath": "hair/bob02/bob02.thumb",
+        "file": "bob02.thumb",
+        "bytes": 54657,
+        "sha256": "88bb4a58e5dc55ebb6809bcf99968f8967ba2424b119c10df83ce1afb34bf4e3"
+      },
+      {
+        "archivePath": "hair/bob02/bob02.obj",
+        "file": "bob02.obj",
+        "bytes": 109498,
+        "sha256": "30d44038836d786364eb4134a9259cf93ca0c707f883861b0135ebfb149caa08"
+      },
+      {
+        "archivePath": "hair/bob02/bob02.mhmat",
+        "file": "bob02.mhmat",
+        "bytes": 1319,
+        "sha256": "32c1712308159f4f5b3775a633352070245bf1ea8b6f837ab4f4ba82b5e9fccd"
+      }
+    ],
+    "purpose": "Single authored hairstyle geometry/texture/fitting-data for integration on same owned character, not another app installation",
+    "seconds": 362.26924538612366
+  },
+  "scope": "Static full-character hairstyle integration only. No per-fibre physiology,self collision,hair dynamics,engine fidelity/performance or female acceptance."
+}

@@ -12,10 +12,10 @@
   "websitePromotionApproved": false,
   "externalPlatformDependencies": [],
   "evidence": "D:/Download/Aevrynd/Evidence/character-female-next/r0001-baseline/female-next-r0001-baseline.report.json",
-  "nextRequiredWork": "Keep r42B as the one complete working character. R46A absolute skin-track short crop is visually rejected as painted/helmet-like. R46B global root-normal cubic tuft-lobe generator is visually rejected as coherent shell/turban/crossed layers with insufficient side/nape coverage. Both tested under full12000strand head/body/multiangle/alternate-light views; B shell remains under paired offline Cycles32,CYLINDER,Chiang hair BSDF at fixed physical stage. This is noisy diagnostic evidence, not calibrated hair scattering, physical rendered-width proof or engine fidelity. Stop these two generator constructions; no density/amplitude/length-only retries and no expensive all-groom gate after visible rejection. Current12000roots are unchanged, measured worldZ1.476012945..1.561479092 with none below1.47; inspect scalp coverage rather than treating fixed inherited analytic theta mask as an anatomically complete hairline. NEXT production: author one explicit anatomical scalp/hairline region on actual current body, using already-local CC0 MakeHuman helper-hair topology only as a coverage reference (not a collision proxy, not strand-motion/groom transfer), including temple/sideburn/behind-ear/occipital/nape and graded density. Reference field/lineage must be validated on actual head, no arbitrary root relocation to conceal collision failures. In the same integrated production round, author a small explicit asymmetric primary-guide composition with region-specific inner/outer volumes on that scalp, inspect complete head/body silhouette, and only expand actual fibres after the coarse shape is visibly credible. No isolated scalp-tool/vendor-search round; preserve old source and bound one candidate. All roots/fibre widths/body/optics/brow/lash/tissue/hair-self and dynamic claims require their own actual display geometry evidence. Expressive eyes/closed anatomy,skin,oral/body/clothes rig,natural hair dynamics,continuous contact,engine/LOD/CPU/GPU/memory and weighted85each80/female acceptance remain required.",
+  "nextRequiredWork": "Keep r42B as the single complete working character. R47A direct affine-fit CC0 bob02 cards are rejected for plastic helmet/card seams and actual saved triangle crossings; R47B automatic opposite-quad-rail center extraction plus new crown roots failed representative finite capsules (106unqualified segments,85centreline crosses), so do not densify or refine these routes. Retain source CC0 files and independently verified affine parser as general fitting reference only, not a suitable production hairstyle or physical root binding. Stop inheriting the helper-hair envelope as a scalp domain. NEXT integrated production: on actual r42B head explicitly author an anatomical scalp/hairline domain (temple,sideburn,behind-ear,occipital,nape), then a small intentionally composed asymmetric set of individually specified Bezier primary guides with distinct inner/outer routes and lengths, rather than transferring source bob02 paths or global offset/loft/flow generators. Check coarse full-head silhouette and actual finite guide/body/optics contact before any children. This must be a complete-character authoring round, not another vendor search/scalp-tool diagnostic; root redesign requires recorded anatomy/bindings and no failure-hiding relocation. Existing stopped method families remain stopped. Expressive eyes,skin,oral/body/clothes rig,hair dynamics,all-layer continuous/self contacts,engine LOD/CPU/GPU/memory,weighted85each80 and explicit female acceptance remain incomplete.",
   "sourceSha256": "4586285ca2b4c235f7838ab6f4e16b2b1b3f469addd435c095eb987ba82e4347",
-  "latestStudyRevision": "female-next-r0046",
-  "latestStudyStatus": "REJECT_BOTH_COMPLETE_SHORT_GROOMS_NO_WORKING_PROMOTION",
+  "latestStudyRevision": "female-next-r0047",
+  "latestStudyStatus": "REJECT_AUTHORED_CARDS_AND_RAIL_PILOT_NO_WORKING_PROMOTION",
   "stoppedMethod": "radial perioral annulus, after r0003 and r0004",
   "strictScoreAppliesTo": "female-next-r0001",
   "workingFoundationRevision": "female-next-r0005",
@@ -25,7 +25,7 @@
   "technicalResearchScope": "Closed-solid separation in five sampled poses; contour retention. No character/visual/runtime promotion.",
   "opticalResearchSource": "source/aevrynd-female-next-r0009-a-slab-thickness-study.blend",
   "opticalResearchScope": "Material-only lower-iris artifact reduction. Geometry unchanged from r0008 a-tight; no whole-character, blink, continuous collision or runtime promotion.",
-  "latestStudyEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0046-textured-crop\\female-next-r0046.visual-audit.json",
+  "latestStudyEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0047-anatomical-hair\\female-next-r0047.visual-audit.json",
   "headDetailResearchSource": "source/aevrynd-female-next-r0023-b-neutral-review.blend",
   "headDetailResearchScope": "r23 B integrated partial head: baked neutral lip-rest correction, original r18 C brows and r17 C scalp hair. Changed lip surfaces checked in five static poses; no complete oral anatomy, facial motion, hair dynamics/self contact or runtime acceptance.",
   "skinResearchSource": "source/aevrynd-female-next-r0011-b-ridge-skin-brows-study.blend",
@@ -55,7 +55,7 @@
   "workingReviewStatus": "RETAIN_OWNED_COMPLETE_WORKING_SOURCE_SHADOW_INTEGRATION_FIX_ONLY",
   "browResearchSource": "source/aevrynd-female-next-r0018-c-triangulated-brows-study.blend",
   "browAuthoringBindings": "source/aevrynd-female-next-r0018-c-brow-bindings.json",
-  "latestContinuation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0046-textured-crop\\continuation.json",
+  "latestContinuation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0047-anatomical-hair\\continuation.json",
   "blinkResearchSource": "source/aevrynd-female-next-r0020-a-pinned-angular-blink-study.blend",
   "blinkResearchSha256": "f2f363e4925eae728ddac662228045fca721895adfbd98d5905f1ad51a5adcc1",
   "blinkDiagnosticSource": "source/aevrynd-female-next-r0020-a-animated-review.blend",
@@ -226,5 +226,10 @@
   "rejectedShortGroomSources": [
     "source/aevrynd-female-next-r0046-a-textured-short-crop.blend",
     "source/aevrynd-female-next-r0046-b-explicit-tuft-crop.blend"
+  ],
+  "characterAuthoringDescriptorR47": "source/aevrynd-female-next-r0047-authoring.json",
+  "rejectedAuthoredHairR47Sources": [
+    "source/aevrynd-female-next-r0047-a-cc0-authored-bob-fit.blend",
+    "source/aevrynd-female-next-r0047-b-authored-rail-pilot.blend"
   ]
 }

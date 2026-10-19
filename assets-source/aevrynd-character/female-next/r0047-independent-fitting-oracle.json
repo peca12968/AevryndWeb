@@ -1,0 +1,21 @@
+{
+  "scope": "Own affine fitter vs installed MPFB ClothesService on identical input coordinates. This proves parser/scale implementation, not target-head fit, collision or appearance. No GPL tool implementation copied into engine.",
+  "rows": [
+    {
+      "input": "Unmodified installed hm08 default mesh",
+      "vertices": 1653,
+      "maxDifferenceM": 2.5858265507973807e-07,
+      "p99DifferenceM": 1.0084458758244958e-07,
+      "toleranceM": 1e-06,
+      "passed": true
+    },
+    {
+      "input": "Previously generated CC0 female reference",
+      "vertices": 1653,
+      "maxDifferenceM": 4.249581414073651e-07,
+      "p99DifferenceM": 1.8870158196713783e-07,
+      "toleranceM": 1e-06,
+      "passed": true
+    }
+  ]
+}
