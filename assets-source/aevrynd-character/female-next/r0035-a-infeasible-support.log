@@ -1,0 +1,24 @@
+00:00.813  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0034-p-physical-width-baseline.blend"
+00:03.703  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0035-neutral-lid-rest\before-saved-face.png'
+00:04.719  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0035-neutral-lid-rest\before-saved-oblique.png'
+00:05.672  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0035-neutral-lid-rest\before-saved-profile.png'
+00:06.547  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0035-neutral-lid-rest\before-saved-body-face.png'
+00:07.438  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0035-neutral-lid-rest\before-saved-body-profile.png'
+00:08.391  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0035-neutral-lid-rest\before-alternate-oblique.png'
+00:09.453  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0035-neutral-lid-rest\before-eyes.png'
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0035-lid-rest.py", line 114, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0035-lid-rest.py", line 95, in main
+    solved,support=support_constraints(V,desired,polys,inspection,globe_data,patches);save('a-wall-support.json',support)
+                   ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0035-lid-rest.py", line 74, in support_constraints
+    elif n@desired[vi]<h-1e-8:raise RuntimeError(('Fixed wall boundary violates new support plane',side,pi,vi,float(h-n@desired[vi])))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: ('Fixed wall boundary violates new support plane', 'L', 6501, 6632, 5.596288129572358e-06)
+
+Error: script failed, file: 'D:\Download\Aevrynd\scripts\character-next\build-female-next-r0035-lid-rest.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,0 +1,41 @@
+{
+  "status": "PASS_UPDATED_NEUTRAL_BODY_SCOPE",
+  "totalFibres": 12000,
+  "totalSegments": 1524000,
+  "changedBodyTriangles": 33164,
+  "unchangedBodyTriangles": 1321716,
+  "changedPatchBeforeAfterAabbM": {
+    "min": [
+      -0.05415108800273005,
+      -0.1286358619354644,
+      1.4563712895813126
+    ],
+    "max": [
+      0.05413342212034289,
+      -0.1057376646877417,
+      1.4772757798251703
+    ]
+  },
+  "aabbExcludedChangedRegionSegments": 1524000,
+  "newDirectCompleteCapsuleChecks": 0,
+  "unqualifiedNewSegments": 0,
+  "minimumNewChangedRegionClearanceLowerBoundM": 0.022043656287359298,
+  "combinedInheritedAndNewGlobalClearanceLowerBoundM": 1.4527431323329173e-07,
+  "methods": {},
+  "failureSamples": [],
+  "allRootsOutsideChangedPatchAabb": true,
+  "minimumRootAxisSeparationFromChangedPatchAabbM": 0.02730140946555526,
+  "inheritance": {
+    "sourceBodyGeometrySha256": "da4a191e1fc707613f52a283dfcd95115db0dcc3be950c97b8cc995e88e9d009",
+    "sourceBodyMatchesOldProof": true,
+    "sourceHairPositionsRadiiAndWorldMatrixExact": true,
+    "sourcePhysicalProof": "r0033-parted-bob/c-saved-fibre-verification.json",
+    "newInputSourceSha256": "9f2502d4833088cf0dd625201b6e4f2727dfcf632de62f2b5dadb61ce21e6903",
+    "scope": "Old complete capsule proof covers exactly unchanged body triangles. Every changed-region candidate segment is retested, all other complete capsules are excluded by expanded segment AABB. Root winding is unchanged outside the closed difference patch AABB. No CV-only or guide-to-child inference."
+  },
+  "scopeLimits": [
+    "Neutral pose only",
+    "No hair/hair self, dynamics, cloth, rig, runtime or engine performance",
+    "Clearance lower bounds are not exact full-surface shortest distances"
+  ]
+}
