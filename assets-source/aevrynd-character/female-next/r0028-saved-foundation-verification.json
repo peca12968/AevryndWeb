@@ -1,0 +1,301 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0028-a-cc0-female-foundation.blend",
+  "sourceSha256": "68aa031b5ef4ad3353129eeb9ac881ef7237ed840928e05bd0c4a6b6e32cba6c",
+  "savedFileOpened": true,
+  "allBaseMeshUVSignaturesMatch": true,
+  "sculptPreservation": {
+    "GEO-body_female_realistic": {
+      "freshReferenceEvaluatedVertices": 677442,
+      "topologyExact": true,
+      "maximumWorldPositionErrorM": 5.2524335214521045e-08,
+      "toleranceM": 3e-07,
+      "comparison": "Saved independent source vs fresh official selected CC0 collection under the same shared float32 transform. All evaluated vertices, not samples."
+    },
+    "GEO-body_female_realistic.eye.L": {
+      "freshReferenceEvaluatedVertices": 546,
+      "topologyExact": true,
+      "maximumWorldPositionErrorM": 5.914945718145829e-08,
+      "toleranceM": 3e-07,
+      "comparison": "Saved independent source vs fresh official selected CC0 collection under the same shared float32 transform. All evaluated vertices, not samples."
+    },
+    "GEO-body_female_realistic.eye.R": {
+      "freshReferenceEvaluatedVertices": 546,
+      "topologyExact": true,
+      "maximumWorldPositionErrorM": 4.2042931150657974e-08,
+      "toleranceM": 3e-07,
+      "comparison": "Saved independent source vs fresh official selected CC0 collection under the same shared float32 transform. All evaluated vertices, not samples."
+    }
+  },
+  "structure": {
+    "GEO-body_female_realistic": {
+      "baseSignatureMatchesOriginal": true,
+      "base": {
+        "geometrySha256": "7b919704c45fc14693058174748c0f6753ca5aac7dc9683641fc0d3e77a4b94f",
+        "uv": [
+          {
+            "name": "UVMap",
+            "sha256": "bd8798512e511a5ce3bc384050f849cd9c541b56c8883097a3d29a4a002c2dac"
+          }
+        ],
+        "vertices": 10582,
+        "polygons": 10590
+      },
+      "evaluated": {
+        "vertices": 677442,
+        "triangles": 1354880,
+        "nonFiniteCoordinates": 0,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "minimumTriangleAreaM2": 1.5369510708518787e-11,
+        "trianglesBelow1e-14M2": 0,
+        "evaluatedWorldGeometrySha256": "e8289c7f16559618e99a76634231298021c89423480d59e6e2019ce68de090f6"
+      },
+      "parent": null,
+      "modifiers": [
+        {
+          "type": "MULTIRES",
+          "levels": 3,
+          "renderLevels": 3,
+          "totalLevels": 3,
+          "externalMultires": false,
+          "externalFilename": ""
+        }
+      ]
+    },
+    "GEO-body_female_realistic.eye.L": {
+      "baseSignatureMatchesOriginal": true,
+      "base": {
+        "geometrySha256": "effcf9ddfac39e3e8189fe25a602814f898ee4b63f5dcbd7630b81ef2a050f88",
+        "uv": [
+          {
+            "name": "UVMap",
+            "sha256": "07c98bb930be1a04473e371ca2e64d97d7e061c55629cf01bde832ac13d4ac0d"
+          }
+        ],
+        "vertices": 546,
+        "polygons": 544
+      },
+      "evaluated": {
+        "vertices": 546,
+        "triangles": 1088,
+        "nonFiniteCoordinates": 0,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "minimumTriangleAreaM2": 1.094772622327009e-07,
+        "trianglesBelow1e-14M2": 0,
+        "evaluatedWorldGeometrySha256": "643f354f3696aa0532e2e012d24f82e1c3d8a35f7d9d3e16bf08df7f0ee8ee58"
+      },
+      "parent": "GEO-body_female_realistic",
+      "modifiers": []
+    },
+    "GEO-body_female_realistic.eye.R": {
+      "baseSignatureMatchesOriginal": true,
+      "base": {
+        "geometrySha256": "90e08c880ae043782d609d632024c823b3773f3477166fe73a6f6b2f99eb36fe",
+        "uv": [
+          {
+            "name": "UVMap",
+            "sha256": "07c98bb930be1a04473e371ca2e64d97d7e061c55629cf01bde832ac13d4ac0d"
+          }
+        ],
+        "vertices": 546,
+        "polygons": 544
+      },
+      "evaluated": {
+        "vertices": 546,
+        "triangles": 1088,
+        "nonFiniteCoordinates": 0,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "minimumTriangleAreaM2": 1.091994601841906e-07,
+        "trianglesBelow1e-14M2": 0,
+        "evaluatedWorldGeometrySha256": "0cd0274f6b4a7e7fe470f000475352f0648e3de91e617dbe62b2be62958cfa40"
+      },
+      "parent": "GEO-body_female_realistic",
+      "modifiers": []
+    }
+  },
+  "neutralContacts": {
+    "GEO-body_female_realistic.eye.L": {
+      "bodyEyeTrianglePairs": 769,
+      "uniqueBodyTriangles": 612,
+      "crossingBodyTriangleVertexBoundsM": {
+        "min": [
+          0.02129554880720219,
+          -0.12233186099141502,
+          1.4489503833052098
+        ],
+        "max": [
+          0.04258488419191497,
+          -0.11353361682354501,
+          1.4690271391895493
+        ]
+      },
+      "vertexSampleUnsignedMinimumGapM": 1.0309450999557157e-06,
+      "trianglePairExamples": [
+        [
+          1002019,
+          193
+        ],
+        [
+          1002016,
+          193
+        ],
+        [
+          1002003,
+          193
+        ],
+        [
+          1002000,
+          193
+        ],
+        [
+          1002001,
+          193
+        ],
+        [
+          1002071,
+          192
+        ],
+        [
+          1002071,
+          193
+        ],
+        [
+          1002070,
+          193
+        ],
+        [
+          1002334,
+          192
+        ],
+        [
+          1002209,
+          192
+        ],
+        [
+          1002208,
+          192
+        ],
+        [
+          1002335,
+          192
+        ],
+        [
+          1002333,
+          192
+        ],
+        [
+          1002332,
+          192
+        ],
+        [
+          1002211,
+          192
+        ],
+        [
+          1002211,
+          181
+        ]
+      ],
+      "definition": "Complete evaluated body/eye triangle surface intersection; distance is eye-vertex sampling, not full all-surface minimum. No containment exclusion or animation."
+    },
+    "GEO-body_female_realistic.eye.R": {
+      "bodyEyeTrianglePairs": 444,
+      "uniqueBodyTriangles": 342,
+      "crossingBodyTriangleVertexBoundsM": {
+        "min": [
+          -0.04252444299647462,
+          -0.12159461753355671,
+          1.449265548608217
+        ],
+        "max": [
+          -0.02250822355414428,
+          -0.1137359202176258,
+          1.46902158011833
+        ]
+      },
+      "vertexSampleUnsignedMinimumGapM": 3.691347274070722e-06,
+      "trianglePairExamples": [
+        [
+          339239,
+          417
+        ],
+        [
+          339250,
+          417
+        ],
+        [
+          339250,
+          452
+        ],
+        [
+          339566,
+          372
+        ],
+        [
+          339566,
+          341
+        ],
+        [
+          339567,
+          341
+        ],
+        [
+          339468,
+          369
+        ],
+        [
+          339468,
+          372
+        ],
+        [
+          339469,
+          372
+        ],
+        [
+          339426,
+          369
+        ],
+        [
+          339427,
+          369
+        ],
+        [
+          339425,
+          369
+        ],
+        [
+          339424,
+          369
+        ],
+        [
+          339414,
+          369
+        ],
+        [
+          339415,
+          369
+        ],
+        [
+          339402,
+          369
+        ]
+      ],
+      "definition": "Complete evaluated body/eye triangle surface intersection; distance is eye-vertex sampling, not full all-surface minimum. No containment exclusion or animation."
+    }
+  },
+  "eyeEyeTrianglePairs": 0,
+  "externalLibrariesInSavedSource": 0,
+  "textProgramsInSavedSource": 0,
+  "rigs": 0,
+  "morphs": 0,
+  "seconds": 3.55976939201355,
+  "contactStatus": "NEUTRAL_SURFACE_INTERSECTION_FAIL",
+  "limits": [
+    "No body self-intersection sweep performed.",
+    "No containment, continuous motion, expression, hair, cloth or engine test.",
+    "Unrigged scan source, not full character acceptance.",
+    "Separate cornea/iris/pupil and wetline not authored on this foundation."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "revision": "female-next-r0028-a",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0028-a-cc0-female-foundation.blend",
+  "sourceSha256": "68aa031b5ef4ad3353129eeb9ac881ef7237ed840928e05bd0c4a6b6e32cba6c",
+  "status": "RETAIN_GEOMETRY_FOUNDATION_RESEARCH_CONTACT_FAIL_NOT_INTEGRATED_HEAD",
+  "unit": "metres after shared parent transform",
+  "layers": [
+    {
+      "name": "body",
+      "objects": [
+        "GEO-body_female_realistic"
+      ],
+      "state": "Editable 10582-vertex base/UV plus preserved level3 Multires scan; no rig or expressions."
+    },
+    {
+      "name": "eyes",
+      "objects": [
+        "GEO-body_female_realistic.eye.L",
+        "GEO-body_female_realistic.eye.R"
+      ],
+      "state": "Two closed coarse eyeballs only, known body intersections; cornea/iris/pupil/wetline not separately authored."
+    }
+  ],
+  "unbuiltLayers": [
+    "oral",
+    "teeth",
+    "gingiva",
+    "tongue",
+    "brows",
+    "lashes",
+    "scalp",
+    "hair",
+    "inner-clothes",
+    "outer-clothes",
+    "accessories",
+    "rig",
+    "controls",
+    "physics-proxies"
+  ],
+  "contacts": {
+    "state": "NEUTRAL_SURFACE_INTERSECTION_FAIL",
+    "eyes": {
+      "GEO-body_female_realistic.eye.L": 769,
+      "GEO-body_female_realistic.eye.R": 444
+    }
+  },
+  "runtime": null,
+  "reference": {
+    "title": "Aevrynd r0028 selected CC0 female anatomy foundation",
+    "originalAuthor": "Dan Ulrich",
+    "originalLicense": "CC0",
+    "originalCollection": "Body Female - Realistic",
+    "originalDescription": "Realistic scan data model with multiresolution details",
+    "officialListing": "https://www.blender.org/download/demo-files/",
+    "officialDownloadPage": "https://www.blender.org/download/demo/asset-bundles/human-base-meshes/human-base-meshes-bundle-v1.4.1.zip",
+    "originalArchiveSha256": "811f43accbb31a88266d932f8f5563b2d13586fca0ba2693aad1f5fe582b3515",
+    "originalLibrarySha256": "3c121505651140ceb4d69fd1d8923f7788ffadd81672f5be14845a5f2c75c137",
+    "originalLibraryPath": "D:\\Download\\Aevrynd\\Reference\\character\\blender-human-base-meshes-v1.4.1\\human-base-meshes-bundle-v1.4.1\\human_base_meshes_bundle.blend",
+    "licenseEvidence": "r0027 CC0 selected-collection metadata inspection and global Human Base Meshes README; not a license inferred from other demo assets.",
+    "modifiedBy": "Aevrynd asset processing",
+    "modifications": [
+      "Append only the selected female body and two eyes; no other asset collection, programs, rig or materials.",
+      "Preserve raw mesh vertices/topology, UVs and all Multires sculpt details.",
+      "Apply one shared uniform height/unit scale and translation to the parent hierarchy; no shape morph or individual eye transform.",
+      "Assign own neutral clay and existing own review camera/light/world for geometry comparison.",
+      "Remove unused append library identifiers after proving no linked data. Saved model has no external libraries/texts/images/rigs/actions."
+    ],
+    "dataPreservation": {
+      "GEO-body_female_realistic": {
+        "freshReferenceEvaluatedVertices": 677442,
+        "topologyExact": true,
+        "maximumWorldPositionErrorM": 5.2524335214521045e-08,
+        "toleranceM": 3e-07,
+        "comparison": "Saved independent source vs fresh official selected CC0 collection under the same shared float32 transform. All evaluated vertices, not samples."
+      },
+      "GEO-body_female_realistic.eye.L": {
+        "freshReferenceEvaluatedVertices": 546,
+        "topologyExact": true,
+        "maximumWorldPositionErrorM": 5.914945718145829e-08,
+        "toleranceM": 3e-07,
+        "comparison": "Saved independent source vs fresh official selected CC0 collection under the same shared float32 transform. All evaluated vertices, not samples."
+      },
+      "GEO-body_female_realistic.eye.R": {
+        "freshReferenceEvaluatedVertices": 546,
+        "topologyExact": true,
+        "maximumWorldPositionErrorM": 4.2042931150657974e-08,
+        "toleranceM": 3e-07,
+        "comparison": "Saved independent source vs fresh official selected CC0 collection under the same shared float32 transform. All evaluated vertices, not samples."
+      }
+    },
+    "notAuthoredByAevrynd": "Original female scan topology/sculpt and eyeball mesh are Dan Ulrich CC0 asset data. This is an adapted source study, not an original character sculpt claim.",
+    "limitations": [
+      "No body self-intersection sweep performed.",
+      "No containment, continuous motion, expression, hair, cloth or engine test.",
+      "Unrigged scan source, not full character acceptance.",
+      "Separate cornea/iris/pupil and wetline not authored on this foundation."
+    ]
+  },
+  "open": "Open the .blend directly in Blender. It is standalone and opens with the full-head review camera. Original third-party authoring data remains editable.",
+  "rebuild": "Run build-female-next-r0028-cc0-foundation.py with Blender 5.2.2, --disable-autoexec, four threads. Requires the pinned r23 source and locally verified original v1.4.1 library at the recorded path. Then run verify-female-next-r0028-cc0-foundation.py. No add-on or other platform required."
+}

@@ -1,0 +1,112 @@
+{
+  "config": {
+    "engine": "BLENDER_EEVEE",
+    "transform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": -0.5,
+    "gamma": 1.0,
+    "transparent": false,
+    "world": "Aevrynd Baseline World",
+    "camera": "Aevrynd R976 Review Camera",
+    "lights": [
+      "Aevrynd Key",
+      "Aevrynd Fill",
+      "Aevrynd Rim"
+    ],
+    "eevee": {
+      "gi_diffuse_bounces": 3,
+      "gi_cubemap_resolution": "512",
+      "gi_visibility_resolution": "32",
+      "gi_glossy_clamp": 0.0,
+      "gi_irradiance_pool_size": "16",
+      "taa_samples": 16,
+      "taa_render_samples": 64,
+      "use_taa_reprojection": true,
+      "ray_tracing_method": "SCREEN",
+      "use_shadow_jitter_viewport": false,
+      "clamp_surface_direct": 0.0,
+      "clamp_surface_indirect": 10.0,
+      "clamp_volume_direct": 0.0,
+      "clamp_volume_indirect": 0.0,
+      "direct_light_intensity": 1.0,
+      "indirect_light_intensity": 1.0,
+      "volumetric_start": 0.10000000149011612,
+      "volumetric_end": 100.0,
+      "volumetric_tile_size": "8",
+      "volumetric_samples": 64,
+      "volumetric_sample_distribution": 0.800000011920929,
+      "volumetric_ray_depth": 16,
+      "volumetric_light_clamp": 0.0,
+      "use_volumetric_shadows": false,
+      "volumetric_shadow_samples": 16,
+      "use_volume_custom_range": false,
+      "use_fast_gi": true,
+      "fast_gi_thickness_near": 0.10000000149011612,
+      "fast_gi_quality": 0.25,
+      "fast_gi_step_count": 8,
+      "fast_gi_ray_count": 2,
+      "fast_gi_method": "GLOBAL_ILLUMINATION",
+      "fast_gi_distance": 0.0,
+      "fast_gi_bias": 0.05000000074505806,
+      "fast_gi_resolution": "2",
+      "bokeh_max_size": 100.0,
+      "bokeh_threshold": 1.0,
+      "bokeh_neighbor_max": 10.0,
+      "use_bokeh_jittered": false,
+      "bokeh_overblur": 5.0,
+      "motion_blur_depth_scale": 100.0,
+      "motion_blur_max": 32,
+      "motion_blur_steps": 1,
+      "use_shadows": true,
+      "shadow_pool_size": "512",
+      "shadow_ray_count": 1,
+      "shadow_step_count": 6,
+      "light_threshold": 0.009999999776482582,
+      "use_overscan": false,
+      "overscan_size": 3.0,
+      "use_raytracing": true,
+      "shadow_resolution_scale": 1.0
+    }
+  },
+  "bodyBounds": {
+    "min": [
+      -0.47729992866516113,
+      -0.29411646723747253,
+      0.0010506185935810208
+    ],
+    "max": [
+      0.47729992866516113,
+      0.086978018283844,
+      1.5613007545471191
+    ],
+    "vertices": 214050
+  },
+  "eyeCenter": [
+    0.0,
+    -0.11269551888108253,
+    1.4599751234054565
+  ],
+  "sourceSha256": "5b9eecfb5d9bcd83790c17de2dfe2919b8c454d003852f117d7dc5abc7fbdf1f",
+  "visible": [
+    "AFN6_L_Cornea",
+    "AFN6_L_Iris",
+    "AFN6_L_Pupil",
+    "AFN6_L_Sclera",
+    "AFN6_R_Cornea",
+    "AFN6_R_Iris",
+    "AFN6_R_Pupil",
+    "AFN6_R_Sclera",
+    "AFN_R0008_Body"
+  ],
+  "clay": {
+    "linearColor": [
+      0.42,
+      0.42,
+      0.42,
+      1
+    ],
+    "roughness": 0.55,
+    "SSS": 0,
+    "IOR": 1.45
+  }
+}

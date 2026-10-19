@@ -1,0 +1,35 @@
+{
+  "revision": "female-next-r0028-a",
+  "decision": "RETAIN_ISOLATED_CC0_GEOMETRY_FOUNDATION_RESEARCH_ONLY",
+  "visibleResult": "Clearer ear helix/concha, jaw and neck/clavicle forms than r23 neutral-clay geometry across front, oblique and profile. New foundation remains visibly unfinished; perioral forms and upper lid rims are artificial. Different identity is not inherently better; no claim of photorealism or whole-body improvement.",
+  "appearanceScore": null,
+  "wholeCharacterScore": null,
+  "geometry": {
+    "editableBodyBaseVertices": 10582,
+    "bodyEvaluatedVertices": 677442,
+    "bodyEvaluatedTriangles": 1354880,
+    "evaluatedBodyBoundaryEdges": 0,
+    "UVAndAllSculptVerticesPreserved": true
+  },
+  "contact": {
+    "status": "NEUTRAL_SURFACE_INTERSECTION_FAIL",
+    "bodyEyeTrianglePairs": {
+      "GEO-body_female_realistic.eye.L": 769,
+      "GEO-body_female_realistic.eye.R": 444
+    },
+    "interpretation": "Known raw surface intersections. Not a collision-qualified source. No arbitrary anatomical-join exclusions."
+  },
+  "function": "Stand-alone editable body/eyes/UV/Multires source opens without reference library or add-ons. Unrigged and no expression controls.",
+  "runtime": "Not exported, benchmarked or promoted.",
+  "retainedCompleteHead": "female-next-r0023-b",
+  "retainedDentalResearch": "female-next-r0025-a",
+  "newSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0028-a-cc0-female-foundation.blend",
+  "newSourceSha256": "68aa031b5ef4ad3353129eeb9ac881ef7237ed840928e05bd0c4a6b6e32cba6c",
+  "nextAction": "Use the independent r28 female geometry source for a bounded eye-interface repair, while r23 remains the fallback integrated head and r25 remains dental-only research. First localize the measured 769/444 body-eye triangle pairs against the actual native socket topology and separate front lid rim from inner socket; do not assume intersections are legal joins or exclude them. Build one anatomically supported native-topology socket/eyelid correction with a low-cost neutral coarse test before preserving/reapplying authored Multires detail. Require an actual matched complete-head/profile render and complete evaluated neutral body-eye surface test; no unsupported eye shrink, hiding, seam cover or copied r8 coordinates. Retain original scan sculpt as immutable fallback and record all changed vertices. If the base cannot support valid separated eye optics/closure, change the structural head route rather than repeating arbitrary projection. Full r28 skin/optics, rig/blink/oral, hair authoring/dynamics/self, clothing/body motions and isolated engine runtime/LOD/performance are still missing; no whole-character score or female acceptance.",
+  "remaining": [
+    "No accepted textured/haired integrated r28 head.",
+    "Body-eye intersections, independent optics and blink/expression topology unresolved.",
+    "Oral, skin, hair, rig, body/clothes and motion not transferred or qualified.",
+    "Engine/LOD/performance and user female approval not achieved."
+  ]
+}
