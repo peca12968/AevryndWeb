@@ -1,0 +1,13 @@
+{
+  "basis": "Intrinsic triangular surface transport with edge unfolding; preserve full guide path offset vector near the actual body and root-frame rigid path beyond25mm, with10..25mm smooth blend. No original-child residual, arbitrary projection or cross-island guide mixing.",
+  "mathControls": "Known flat and folded two-triangle travel and endpoint cases passed. Actual displayed pilot/body remains independent.",
+  "walkBoundChange": "Initial80face bound stopped after14mm of actual travel,80distinctfaces,max1visit and1mm left. No looping. Set200face guard, numerical and contact tolerances unchanged.",
+  "failurePolicy": "Any root logarithm failure, boundary,200face limit, nonfinite point or representative full capsule failure stops expansion.",
+  "resources": {
+    "checkpointUTC": "2026-10-19 14:10:07 UTC",
+    "heavyJobsAtOnce": 1,
+    "blenderThreads": 4,
+    "maximumFullGenerationSeconds": 720
+  },
+  "scope": "Static private geometric authoring; no natural dynamics,self or engine proof."
+}

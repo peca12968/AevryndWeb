@@ -1,0 +1,66 @@
+{
+  "revision": "female-next-r0041",
+  "decision": "STOP_COMPLETE_GUIDE_TRANSFER_FAMILY_NO_FULL_GROOM_EXPANDED",
+  "ownedWorkingSourceUnchangedDuringStudy": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0038-b-live-groom-authoring.blend",
+  "A": {
+    "status": "STOP_REPRESENTATIVE_CHILD_BODY_FAILURE",
+    "pilot": {
+      "status": "FAIL_OR_UNRESOLVED",
+      "curves": 256,
+      "segments": 33181,
+      "unqualifiedSegments": 117,
+      "minimumCertifiedClearanceLowerBoundM": -4.356618592282757e-05,
+      "minimumSampledCVSurfaceGapM": -3.670051239623717e-05
+    },
+    "fullGroomExpanded": false,
+    "originalNonHairStateExact": true,
+    "seconds": 4.72589635848999
+  },
+  "B": {
+    "status": "STOP_INTRINSIC_MAP_POINT_OR_SEGMENT_FAILURE",
+    "pilot": {
+      "status": "FAIL_OR_UNRESOLVED",
+      "curves": 256,
+      "segments": 33181,
+      "unqualifiedSegments": 10,
+      "minimumCertifiedClearanceLowerBoundM": -4.3935797293670475e-05,
+      "minimumSampledCVSurfaceGapM": 7.092816667864099e-05
+    },
+    "nativePilotOutput": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0041-complete-path-groom\\private\\aevrynd-female-next-r0041-b-intrinsic-pilot-study.blend",
+    "nativePilotSha256": "f3a9426c349e7d004976aea36d3a9a60ee6efc800a6cb86ae447d768a5156da5",
+    "savedNativePilotIsInitialUnrefined10FailureState": true,
+    "mappedInsideFailures": 1,
+    "refinement": [],
+    "fullGroomExpanded": false,
+    "stats": {
+      "walks": 24305,
+      "walkFailures": 0,
+      "maximumEdgeCrossings": 105,
+      "maximumRootLogResidualM": 8.269351818944425e-08
+    },
+    "seconds": 27.52192187309265
+  },
+  "savedPilotVerification": {
+    "source": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0041-complete-path-groom\\private\\aevrynd-female-next-r0041-b-intrinsic-pilot-study.blend",
+    "sha256": "f3a9426c349e7d004976aea36d3a9a60ee6efc800a6cb86ae447d768a5156da5",
+    "curves": 256,
+    "body": {
+      "status": "FAIL_OR_UNRESOLVED",
+      "curves": 256,
+      "segments": 33181,
+      "unqualifiedSegments": 10,
+      "minimumSampledCVSurfaceGapM": 7.092816667864099e-05,
+      "minimumCertifiedClearanceLowerBoundM": -4.3935797293670475e-05
+    },
+    "savedState": "Initial10failure native pilot, further nonlinear-map midpoint provedinside. No full hairstyle expanded.",
+    "privateOnly": true
+  },
+  "appearance": "No new complete candidate or appearance score. Fixed256actual native child pilots disproved the methods before expensive expansion. Existing complete owned model and private r40 views remain baseline evidence, not new improvements.",
+  "rights": "Daniel Bystedt original HairStyles guides; upstream CC BY-SA exact version unresolved. All derived geometry/images/parameters/failure-point data remain private.",
+  "stoppedMethods": [
+    "Rigid real-root-frame copying of complete paths as collision-safe children",
+    "Intrinsic body-surface guide transport as an exterior-preserving child map",
+    "Old generated-child residual plus interpolated guide displacement"
+  ],
+  "next": "Stop this family after r40/r41 without complete appearance improvement; preserve code/math findings only. Return to actual owned complete model and another major defect."
+}

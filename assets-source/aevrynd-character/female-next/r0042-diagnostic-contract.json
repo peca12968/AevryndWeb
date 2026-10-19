@@ -1,0 +1,20 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0038-b-live-groom-authoring.blend",
+  "sha256": "0f8707b92196bc58e158b997a9170f22708d5ddeb2c2e0d95856cbfd00bb4c04",
+  "reason": "After two ineffective hair transfer rounds, stop that method family; inspect visible face/neck streaks on ONE owned complete character",
+  "hypothesis": "Pigment coordinate interpolation causes the large streaks, versus scan geometry/normal detail",
+  "held": [
+    "Actual complete geometry and hair",
+    "Original exposure/light/pose/color management",
+    "All optical/brow/lash materials",
+    "Skin normal,bump,roughness,SSS in uniform-reflectance diagnostic"
+  ],
+  "smallTest": "Original beauty, original pigment emission and constant fallback reflectance beauty. No scoring/adoption from diagnostic.",
+  "resource": {
+    "diagnosticMaxMinutes": 10,
+    "overallCheckpointUTC": "2026-10-19 14:10:07 UTC",
+    "blenderThreads": 4,
+    "heavyJobsAtOnce": 1
+  },
+  "noGeometryOrAppearanceClaim": true
+}

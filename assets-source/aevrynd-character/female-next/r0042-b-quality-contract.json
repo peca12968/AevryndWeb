@@ -1,0 +1,28 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0042-a-jittered-hair-shadows.blend",
+  "sha256": "754ba4236ee8ef043f5dbd5b5b1a480f904d08df9d91577f7568bda90a27817a",
+  "purpose": "Reduce stochastic grain from the same physically sized area-light shadow integration; not a new hairstyle or anatomy",
+  "changes": {
+    "taa_render_samples": [
+      64,
+      256
+    ],
+    "use_shadow_jitter_viewport": [
+      false,
+      true
+    ]
+  },
+  "unchanged": [
+    "Light position,color,energy,size,filter,overblur and shadow enable",
+    "Shadow ray/step count",
+    "All mesh,curve,skin,optical,brow/lash materials",
+    "Camera,exposure,color management and pose"
+  ],
+  "reject": "Residual banding or no useful noise convergence, excessive runtime or appearance regression",
+  "samplesAreBlenderOnly": true,
+  "resources": {
+    "threads": 4,
+    "heavyJobsAtOnce": 1,
+    "checkpointUTC": "2026-10-19 14:10:07 UTC"
+  }
+}

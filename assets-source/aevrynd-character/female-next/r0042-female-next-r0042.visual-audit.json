@@ -1,0 +1,95 @@
+{
+  "revision": "female-next-r0042-b",
+  "decision": "RETAIN_OWNED_COMPLETE_WORKING_SOURCE_SHADOW_INTEGRATION_FIX_ONLY",
+  "workingSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0042-b-shadow-quality-review.blend",
+  "workingSourceSha256": "d62c180a5af61f6f8d800926b101738c89a8fbe7785fe1054fd655fd018824da",
+  "fallback": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0038-b-live-groom-authoring.blend",
+    "sha256": "0f8707b92196bc58e158b997a9170f22708d5ddeb2c2e0d95856cbfd00bb4c04"
+  },
+  "appearance": {
+    "acceptedScope": "Visible reduction of false vertical hair-shadow bands over neck/face-side; lower stochastic grain at256samples; existing character shown at identical angles and alternate lighting.",
+    "notImproved": [
+      "Anatomical/eyelid/groom geometry",
+      "Cap/sheet hairstyle and artificial eyes",
+      "Natural motion or cloth realism"
+    ],
+    "newOverallScore": null,
+    "scoreReason": "Rendering artifact correction does not justify a whole-character or anatomical/hair-shape score increase. Formal42still appliesr1only.",
+    "matchedViews": [
+      "face",
+      "oblique",
+      "profile",
+      "opposite-oblique",
+      "alternate-oblique",
+      "body-face",
+      "back"
+    ]
+  },
+  "function": {
+    "actualSavedModelReopened": true,
+    "exactOwnedOriginalStateWhenOnlyRendererFlagsRestored": true,
+    "allOriginalMeshesUVMaterialsSkinFieldsAndHairRestExact": true,
+    "liveEditableGuideAndRestHelpersExact": true,
+    "noPrivateArtistGroomDataImported": true,
+    "packedFileImages": 4
+  },
+  "rendering": {
+    "method": "Existing physically sized area lights use jittered shadow integration; hair remains visible and casts shadows. Fixed geometry,positions,colors,energy,size,filter,overblur,exposure and materials.",
+    "settings": {
+      "light.use_shadow_jitter": [
+        false,
+        true
+      ],
+      "eevee.taa_render_samples": [
+        64,
+        256
+      ],
+      "eevee.use_shadow_jitter_viewport": [
+        false,
+        true
+      ]
+    },
+    "controlled64sampleA": "before vs A holds64samples; jitter alone removes bands. A64 vs B256 is explicit noise-convergence study.",
+    "diagnosis": "Pigment-only lacks bands; constant reflectance,zero microbump,andzeroSSS retain them; hiding hair removes them. Original pigment/geometry hypotheses rejected.",
+    "frameTimesBlender800SquareOnly": [
+      {
+        "view": "face",
+        "wallSeconds": 3.071505599997181,
+        "resolution": [
+          800,
+          800
+        ]
+      },
+      {
+        "view": "oblique",
+        "wallSeconds": 2.1887608999968506,
+        "resolution": [
+          800,
+          800
+        ]
+      },
+      {
+        "view": "profile",
+        "wallSeconds": 2.1212512999991304,
+        "resolution": [
+          800,
+          800
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "status": "UNCHANGED_GEOMETRY_NO_NEW_CONTACT_QUALIFICATION",
+    "scope": "Exact r38B physical geometry and interpolation retained. Reuse only exact-version valid prior evidence; do not infer all-layer/self/continuous or motion acceptance from this rendering fix."
+  },
+  "runtime": {
+    "asset": null,
+    "status": "NOT_PROMOTED",
+    "engineShaderExportLODPerformance": "NOT_QUALIFIED",
+    "blenderSettingsAreNotEngineImplementation": true
+  },
+  "femaleAccepted": false,
+  "maleStarted": false,
+  "nextAction": "Use r42B as the ONE owned complete working source; r38B is exact pre-shadow-fix fallback. Retain only the Blender shadow integration improvement, not a new hairstyle/anatomy/physics qualification. All actual meshes/UV/materials/skin fields,12kphysical fibres and256editableguide/rest remain exact to r38B. Private r40/r41 artist-groom transfer methods are stopped: old-child delta fails225representative segments; root-frame complete paths fail117; intrinsic map fails10native segments and a newly sampled path point isinside, so do not add iterations or tolerances. Next production starts from complete r42B head/body views, prioritizes neutral eye/lid integration and staring appearance against anatomical reference, with complete upper/lower rest contour, wet margins/lash-root attachments and cornea/iris relationship treated together rather than isolated highlights or wetline tweaks. One bounded candidate and actual full-head/body matched views; independently check affected actual body/optical/tissue/lash geometry, preserve skin/exposure and all retained layers. Hair cap/sheets remain unacceptable and require a genuinely different target-head authoring architecture, not more of the stopped transfer family. Natural hair motion,self/continuous contacts,oral/body/clothingrig,engine/export/LOD/real performance,weighted85each80 and explicit female acceptance remain required. No male work,formal runtime/site promotion or new overall score."
+}
