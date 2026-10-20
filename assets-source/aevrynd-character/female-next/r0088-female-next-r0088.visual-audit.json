@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T13:50:06.722064+00:00",
+  "decision": "RETAIN_R88_B_SCOPED_LID_LASH_AUTHORING_A_CONTACT_FAILED_NO_REALISM_PROMOTION",
+  "productionMethods": 2,
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0088-a-authored-lid-aperture.blend",
+      "sha256": "53c929df17cc097be3ec3336d5c2e70dd7b0651e308a6a6e882245d6ef98c09d",
+      "bytes": 80485003,
+      "role": "REJECTED_NEUTRAL_OPTICAL_CROSSING"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0088-b-supported-lid-aperture.blend",
+      "sha256": "72435890a03cab26ff2f3e238060daf2b2cf797f85543d8fd6182583cc1101a7",
+      "bytes": 56733317,
+      "role": "RETAINED_SCOPED_AUTHORING_REFERENCE_NOT_REALISM_OR_ALL_CONTACT_ACCEPTED"
+    }
+  },
+  "appearanceImprovement": false,
+  "scopedAuthoringOperationVerified": true,
+  "functionalOperationGainOnCompleteWoman": false,
+  "selectedCompleteDefectResolved": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterStagnationReset": false,
+  "gates": {
+    "appearance": {
+      "status": "VISIBLE_RELAXED_EYE_STYLE_CHANGE_NO_PROVEN_COMPLETE_REALISM_GAIN",
+      "appearanceImprovementAdopted": false,
+      "wholeCharacterScore": null,
+      "observations": [
+        "Explicit upper/lower arcs visibly reduce the eye aperture; this is a rest-style/identity change, not proof of increased realism.",
+        "B preserves the A contour direction after reconstructing inner support; front and second-light complete head/body were inspected.",
+        "Complete face/skin remain artificial and hair still has coverage/highlight defects; do not raise appearance scores."
+      ],
+      "evidence": [
+        "r0088-complete-character-comparison.png",
+        "r0088-alternate-light-comparison.png"
+      ],
+      "headBodyAndAlternateControlsMatched": true
+    },
+    "function": {
+      "status": "PASS_SCOPED_NATIVE_REST_LID_LASH_AUTHORING_REVERSAL_AND_SOURCE_CLOSED_ENDPOINT_ONLY",
+      "scopedAuthoringOperationVerified": true,
+      "newFullyQualifiedCompleteCapability": false,
+      "evidence": [
+        "b-minimum-source-readback.json",
+        "b-authoring-operation-frames.json",
+        "r0088-actual-blink-operation.gif"
+      ],
+      "actualDisplayedSkinMaximumMoveM": 0.0016457231042906484,
+      "actualDisplayedLashMaximumPointMoveM": 0.005320355715210159,
+      "offRestoresExactCompleteNeutral": true,
+      "fullClosedRestoresExactOriginalCompleteClosed": true,
+      "actualSequentialRenders": 9,
+      "newSavedTimelineAction": false,
+      "controls": "AFN88_LID_APERTURE_CONTROLS.sculpt_enabled toggles new rest style. Original AFN59_FACE_CONTROLS.blink_left/right perform manual closure; movie exercises those controls in memory.",
+      "originalKeysUVWeightsMaterialTreesLightsPreserved": true
+    },
+    "contact": {
+      "status": "B_NO_STRONG_CROSSING_FOUND_IN_FIVE_TESTED_EYE_POSES_ALL_CONTACT_STILL_UNACCEPTED",
+      "aStatus": "FALSIFIED_NEUTRAL_SKIN_LINING_VS_LEFT_OUTER_EYE",
+      "aEvidence": "candidate-neutral-crossing-screen.json",
+      "bEvidence": [
+        "b-candidate-neutral-crossing-screen.json",
+        "b-sampled-blink-contact-screen.json"
+      ],
+      "bBlinkSamples": [
+        0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "globalSignedMinimumM": null,
+      "bNeutralCoreConstructionStandOffWorldM": 8e-05,
+      "standOffIsNotGlobalClearanceOrFiniteTissueCertificate": true,
+      "finiteLashesFolliclesSelfAdjacentFoldoverContainmentContinuousUnqualified": true,
+      "r81HairBodyRootFrameNaturalDynamicsAndClothRemainUnaccepted": true
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "engineImportAnimationCollisionCpuGpuMemoryLODUnaccepted": true
+    }
+  },
+  "retainedResearch": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0088-b-supported-lid-aperture.blend",
+    "sha256": "72435890a03cab26ff2f3e238060daf2b2cf797f85543d8fd6182583cc1101a7",
+    "role": "SCOPED_COMPLETE_CHARACTER_AUTHORING_REFERENCE_ONLY",
+    "scope": "Editable native lid-margin arcs, paired source-skin lash-root frame placement, exact original-neutral toggle and original full-closed endpoint; B five sampled skin/lining-optic surface screens and actual manual-control movie. No complete appearance, all-contact, physiological dynamics or runtime acceptance.",
+    "integration": "Use B as the next complete research reference when source/role match; do not add A crossing geometry or r87 rejected optical parts. Registered r76 and formal r1 remain unchanged."
+  },
+  "constructionDistinction": "A directly authors native rim arcs and whole local harmonic shape; actual back lining crosses unchanged optics. B reconstructs anatomical inner support using actual native subdivision response at unchanged80um stand-off and refits the same lash frames; no guide deletion, eye shrink, shading concealment or tolerance change.",
+  "whyNoCompleteGain": "A useful scoped authoring operation exists; changing eye identity is not a demonstrated complete-person realism improvement, and full affected contact/motion/runtime gates remain incomplete.",
+  "nextAction": "Keep registered r76 body/oral work unchanged and retain r88B only as a scoped rest-lid/lash authoring reference on the complete unaccepted r81B groom. Stop extending eye crease, inner optics, aperture height, canthal tilt or support parameters as a whole-face realism cure; this round changes eye identity/rest style but does not establish overall realism gain. Next direct visible production back to the complete hairstyle posterior coverage and bundle continuity, using r88B as an optional complete research input so the useful lid/lash editing work is not lost. Within bounded support, compare the actual generated posterior follicle roots/shafts with the native growth-cap attributes and guide-to-shaft construction: if a concrete regional growth-mask/distribution omission is demonstrated, author the missing anatomical regional coverage and rebuild actual source-indexed bindings; do not assume adding guides, increasing global density or shader/radius changes fixes it. If distribution is not the cause, replace the offending regional bundle construction with explicit source-cap-rooted bundle paths rather than returning to registration or parameter scans. One credible reference-backed construction, then actual rear/full-head/full-body previews before broad checks; preserve front/side style, source physical radii, new lid control, mouth/rig and fixed skin/light. No diagnostic-only continuation, no stopped material/pigment/roughness/radius/density scan without changed causal evidence. Existing r81 hair/body/root-frame failures and natural dynamics remain failures. All body/clothing/layers/actions, full eye/lash contact, skin/face realism and actual Aevrynd runtime/LOD still required."
+}

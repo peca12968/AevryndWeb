@@ -1,0 +1,13 @@
+00:02.578  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0088-lid-aperture.py:36: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();ref=json.loads((E/'a-build-summary.json').read_text());src=Path(ref['source']);out=Path(ref['output']);assert sha(src)==ref['sourceSha256'] and sha(out)==ref['outputSha256'];line=np.load(E/'a-native-aperture-lineage.npz');prepare(src);names=m.rig.native_names()+['AFN59_LASHES_NATIVE_POINT_POSES'];sig={n:v.signature(bpy.data.objects[n]) for n in names};neutral=snapshot();mats={a.name:m.rig.k.f.v.v32.material_signature(a) for a in bpy.data.materials if a.use_nodes};lights=m.m.q.lights();baseContact=screen('baseline');controls(1);closed=snapshot();prepare(out);enabled=bpy.data.objects[ref['control']];assert enabled['sculpt_enabled']==1.;current=snapshot();newResponse={n:{'maximumWorldMoveM':float(np.linalg.norm(current[n]-neutral[n],axis=1).max()),'changedPointsOver1Micrometre':int((np.linalg.norm(current[n]-neutral[n],axis=1)>1e-6).sum())} for n in neutral}
+R88_STRONG_CROSSING_SCREEN baseline AFN60_L_EYE_OUTER_SHELL_APPROX 0 False
+R88_STRONG_CROSSING_SCREEN baseline AFN60_R_EYE_OUTER_SHELL_APPROX 0 False
+R88_STRONG_CROSSING_SCREEN baseline AFN60_L_IRIS_PUPIL_SURFACE 0 False
+R88_STRONG_CROSSING_SCREEN baseline AFN60_R_IRIS_PUPIL_SURFACE 0 False
+00:11.969  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0088-a-authored-lid-aperture.blend"
+R88_STRONG_CROSSING_SCREEN candidate AFN60_L_EYE_OUTER_SHELL_APPROX 507 True
+R88_SAVED_OPERATION_READBACK FALSIFIED_STRONG_SURFACE_CROSSING 23.25040626525879
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,0 +1,69 @@
+{
+  "status": "FALSIFIED_STRONG_SURFACE_CROSSING",
+  "pose": "neutral",
+  "pairs": [
+    {
+      "opticalObject": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "broadPhasePairs": 507,
+      "refinedPairsBeforeStop": 1,
+      "firstStrongProperCrossing": {
+        "skinSubsetTriangle": 5733,
+        "opticalTriangle": 16215,
+        "worldPointM": [
+          0.02933697146886194,
+          -0.10218209052694087,
+          1.4709523152005246
+        ],
+        "skinTriangleWorld": [
+          [
+            0.027656285167858785,
+            -0.10181609886338894,
+            1.4703797299964663
+          ],
+          [
+            0.029546102794014484,
+            -0.10185799993371836,
+            1.470695333379382
+          ],
+          [
+            0.028964929247039084,
+            -0.10295336599784122,
+            1.4715823944089834
+          ]
+        ],
+        "opticalTriangleWorld": [
+          [
+            0.02912698539586467,
+            -0.10237935100883488,
+            1.4711271274600648
+          ],
+          [
+            0.02955761250156419,
+            -0.10197482079797648,
+            1.470768632745191
+          ],
+          [
+            0.029144106585976992,
+            -0.10197566768839295,
+            1.4707341703068266
+          ]
+        ]
+      },
+      "skinSubsetAABBM": [
+        [
+          0.016893490023445423,
+          -0.1241988240117895,
+          1.4499130910810958
+        ],
+        [
+          0.04304534757944167,
+          -0.09682878294310515,
+          1.4760755331001907
+        ]
+      ]
+    }
+  ],
+  "scope": "Actual evaluated render-subdivision skin/lining versus original four optical surfaces, conservative2mm optical AABB subset; strict noncoplanar segment/triangle interior witnesses with0.1micrometre edge-interior margin.",
+  "globalSignedMinimumM": null,
+  "coplanarSolidContainmentFiniteLashesThicknessSelfAndContinuousNotCertified": true
+}
