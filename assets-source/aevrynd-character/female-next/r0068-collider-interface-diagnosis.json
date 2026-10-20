@@ -1,0 +1,3017 @@
+{
+  "sourceSha256": "5fd02feb05f14206c9773f1cbb5632f62f01b01aa9c3e52e841f3ff3d72d68ba",
+  "sourceGroupNodes": [
+    {
+      "name": "Frame.001",
+      "type": "NodeFrame",
+      "inputs": []
+    },
+    {
+      "name": "Frame",
+      "type": "NodeFrame",
+      "inputs": []
+    },
+    {
+      "name": "Frame.005",
+      "type": "NodeFrame",
+      "inputs": []
+    },
+    {
+      "name": "Frame.003",
+      "type": "NodeFrame",
+      "inputs": []
+    },
+    {
+      "name": "Frame.004",
+      "type": "NodeFrame",
+      "inputs": []
+    },
+    {
+      "name": "Frame.006",
+      "type": "NodeFrame",
+      "inputs": []
+    },
+    {
+      "name": "Frame.002",
+      "type": "NodeFrame",
+      "inputs": []
+    },
+    {
+      "name": "Frame.007",
+      "type": "NodeFrame",
+      "inputs": []
+    },
+    {
+      "name": "Reroute.009",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Separate Components",
+      "type": "GeometryNodeSeparateComponents",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "identifier": "Geometry",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Reroute.011",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Reroute.012",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Reroute.013",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Reroute.015",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Join Geometry",
+      "type": "GeometryNodeJoinGeometry",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "identifier": "Geometry",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Reroute.004",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Position.001",
+      "type": "GeometryNodeInputPosition",
+      "inputs": []
+    },
+    {
+      "name": "Vector Math.003",
+      "type": "ShaderNodeVectorMath",
+      "inputs": [
+        {
+          "name": "Vector",
+          "identifier": "Vector",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_001",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_002",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "Scale",
+          "identifier": "Scale",
+          "type": "VALUE",
+          "value": 1.0,
+          "linked": false
+        }
+      ],
+      "operation": "ADD"
+    },
+    {
+      "name": "Mix",
+      "type": "ShaderNodeMix",
+      "inputs": [
+        {
+          "name": "Factor",
+          "identifier": "Factor_Float",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": true
+        },
+        {
+          "name": "Factor",
+          "identifier": "Factor_Vector",
+          "type": "VECTOR",
+          "value": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "linked": false
+        },
+        {
+          "name": "A",
+          "identifier": "A_Float",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": false
+        },
+        {
+          "name": "B",
+          "identifier": "B_Float",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": false
+        },
+        {
+          "name": "A",
+          "identifier": "A_Vector",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "B",
+          "identifier": "B_Vector",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "A",
+          "identifier": "A_Color",
+          "type": "RGBA",
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            1.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "B",
+          "identifier": "B_Color",
+          "type": "RGBA",
+          "value": [
+            0.5,
+            0.5,
+            0.5,
+            1.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "A",
+          "identifier": "A_Rotation",
+          "type": "ROTATION",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "B",
+          "identifier": "B_Rotation",
+          "type": "ROTATION",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        }
+      ],
+      "data_type": "VECTOR"
+    },
+    {
+      "name": "Vector Math",
+      "type": "ShaderNodeVectorMath",
+      "inputs": [
+        {
+          "name": "Vector",
+          "identifier": "Vector",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_001",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_002",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "Scale",
+          "identifier": "Scale",
+          "type": "VALUE",
+          "value": 1.0,
+          "linked": true
+        }
+      ],
+      "operation": "SCALE"
+    },
+    {
+      "name": "Group Input.001",
+      "type": "NodeGroupInput",
+      "inputs": []
+    },
+    {
+      "name": "Blur Attribute.002",
+      "type": "GeometryNodeBlurAttribute",
+      "inputs": [
+        {
+          "name": "Value",
+          "identifier": "Value",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": true
+        },
+        {
+          "name": "Iterations",
+          "identifier": "Iterations",
+          "type": "INT",
+          "value": 0,
+          "linked": true
+        },
+        {
+          "name": "Weight",
+          "identifier": "Weight",
+          "type": "VALUE",
+          "value": 1.0,
+          "linked": false
+        }
+      ],
+      "data_type": "FLOAT"
+    },
+    {
+      "name": "Math.001",
+      "type": "ShaderNodeMath",
+      "inputs": [
+        {
+          "name": "Value",
+          "identifier": "Value",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": true
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_001",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": false
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_002",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": false
+        }
+      ],
+      "operation": "ABSOLUTE"
+    },
+    {
+      "name": "Math",
+      "type": "ShaderNodeMath",
+      "inputs": [
+        {
+          "name": "Value",
+          "identifier": "Value",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": true
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_001",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": false
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_002",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": false
+        }
+      ],
+      "operation": "SUBTRACT"
+    },
+    {
+      "name": "Math.002",
+      "type": "ShaderNodeMath",
+      "inputs": [
+        {
+          "name": "Value",
+          "identifier": "Value",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": false
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_001",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": true
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_002",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": false
+        }
+      ],
+      "operation": "SUBTRACT"
+    },
+    {
+      "name": "Math.003",
+      "type": "ShaderNodeMath",
+      "inputs": [
+        {
+          "name": "Value",
+          "identifier": "Value",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": true
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_001",
+          "type": "VALUE",
+          "value": 2.0,
+          "linked": false
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_002",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": false
+        }
+      ],
+      "operation": "MULTIPLY"
+    },
+    {
+      "name": "Vector Math.008",
+      "type": "ShaderNodeVectorMath",
+      "inputs": [
+        {
+          "name": "Vector",
+          "identifier": "Vector",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_001",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_002",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "Scale",
+          "identifier": "Scale",
+          "type": "VALUE",
+          "value": 1.0,
+          "linked": false
+        }
+      ],
+      "operation": "SUBTRACT"
+    },
+    {
+      "name": "Position.002",
+      "type": "GeometryNodeInputPosition",
+      "inputs": []
+    },
+    {
+      "name": "Group Input.002",
+      "type": "NodeGroupInput",
+      "inputs": []
+    },
+    {
+      "name": "Vector Math.009",
+      "type": "ShaderNodeVectorMath",
+      "inputs": [
+        {
+          "name": "Vector",
+          "identifier": "Vector",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_001",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_002",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "Scale",
+          "identifier": "Scale",
+          "type": "VALUE",
+          "value": 1.0,
+          "linked": true
+        }
+      ],
+      "operation": "SCALE"
+    },
+    {
+      "name": "Vector Math.010",
+      "type": "ShaderNodeVectorMath",
+      "inputs": [
+        {
+          "name": "Vector",
+          "identifier": "Vector",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_001",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_002",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "Scale",
+          "identifier": "Scale",
+          "type": "VALUE",
+          "value": 1.0,
+          "linked": false
+        }
+      ],
+      "operation": "ADD"
+    },
+    {
+      "name": "Set Position",
+      "type": "GeometryNodeSetPosition",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "identifier": "Geometry",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        },
+        {
+          "name": "Selection",
+          "identifier": "Selection",
+          "type": "BOOLEAN",
+          "value": true,
+          "linked": true
+        },
+        {
+          "name": "Position",
+          "identifier": "Position",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Offset",
+          "identifier": "Offset",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        }
+      ]
+    },
+    {
+      "name": "Group Output",
+      "type": "NodeGroupOutput",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "identifier": "Output_1",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        },
+        {
+          "name": "",
+          "identifier": "__extend__",
+          "type": "CUSTOM",
+          "value": null,
+          "linked": false
+        }
+      ]
+    },
+    {
+      "name": "Domain Size.002",
+      "type": "GeometryNodeAttributeDomainSize",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "identifier": "Geometry",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Compare.003",
+      "type": "FunctionNodeCompare",
+      "inputs": [
+        {
+          "name": "A",
+          "identifier": "A",
+          "type": "INT",
+          "value": 0,
+          "linked": true
+        },
+        {
+          "name": "B",
+          "identifier": "B",
+          "type": "INT",
+          "value": 0,
+          "linked": false
+        }
+      ],
+      "operation": "EQUAL",
+      "data_type": "INT",
+      "mode": "ELEMENT"
+    },
+    {
+      "name": "Group Input.007",
+      "type": "NodeGroupInput",
+      "inputs": []
+    },
+    {
+      "name": "Switch.008",
+      "type": "GeometryNodeSwitch",
+      "inputs": [
+        {
+          "name": "Switch",
+          "identifier": "Switch",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        },
+        {
+          "name": "False",
+          "identifier": "False",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        },
+        {
+          "name": "True",
+          "identifier": "True",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ],
+      "input_type": "GEOMETRY"
+    },
+    {
+      "name": "Reroute.016",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Reroute.017",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Reroute.018",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Reroute.019",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Reroute.005",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Normal",
+      "type": "GeometryNodeInputNormal",
+      "inputs": []
+    },
+    {
+      "name": "Capture Attribute",
+      "type": "GeometryNodeCaptureAttribute",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "identifier": "Geometry",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        },
+        {
+          "name": "Selection",
+          "identifier": "Selection",
+          "type": "BOOLEAN",
+          "value": true,
+          "linked": false
+        },
+        {
+          "name": "Value",
+          "identifier": "Value",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "",
+          "identifier": "__extend__",
+          "type": "CUSTOM",
+          "value": null,
+          "linked": false
+        }
+      ]
+    },
+    {
+      "name": "Geometry Proximity",
+      "type": "GeometryNodeProximity",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "identifier": "Target",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        },
+        {
+          "name": "Group ID",
+          "identifier": "Group ID",
+          "type": "INT",
+          "value": 0,
+          "linked": false
+        },
+        {
+          "name": "Sample Position",
+          "identifier": "Source Position",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "Sample Group ID",
+          "identifier": "Sample Group ID",
+          "type": "INT",
+          "value": 0,
+          "linked": false
+        }
+      ]
+    },
+    {
+      "name": "Sample Nearest Surface",
+      "type": "GeometryNodeSampleNearestSurface",
+      "inputs": [
+        {
+          "name": "Mesh",
+          "identifier": "Mesh",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        },
+        {
+          "name": "Value",
+          "identifier": "Value",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Group ID",
+          "identifier": "Group ID",
+          "type": "INT",
+          "value": 0,
+          "linked": false
+        },
+        {
+          "name": "Sample Position",
+          "identifier": "Sample Position",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "Sample Group ID",
+          "identifier": "Sample Group ID",
+          "type": "INT",
+          "value": 0,
+          "linked": false
+        }
+      ],
+      "data_type": "FLOAT_VECTOR"
+    },
+    {
+      "name": "Group Input.004",
+      "type": "NodeGroupInput",
+      "inputs": []
+    },
+    {
+      "name": "Group",
+      "type": "GeometryNodeGroup",
+      "inputs": []
+    },
+    {
+      "name": "Boolean Math.001",
+      "type": "FunctionNodeBooleanMath",
+      "inputs": [
+        {
+          "name": "Boolean",
+          "identifier": "Boolean",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        }
+      ],
+      "operation": "NOT"
+    },
+    {
+      "name": "Boolean Math.004",
+      "type": "FunctionNodeBooleanMath",
+      "inputs": [
+        {
+          "name": "Boolean",
+          "identifier": "Boolean",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        }
+      ],
+      "operation": "NOT"
+    },
+    {
+      "name": "Boolean Math.002",
+      "type": "FunctionNodeBooleanMath",
+      "inputs": [
+        {
+          "name": "Boolean",
+          "identifier": "Boolean",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        },
+        {
+          "name": "Boolean",
+          "identifier": "Boolean_001",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        }
+      ],
+      "operation": "OR"
+    },
+    {
+      "name": "Compare",
+      "type": "FunctionNodeCompare",
+      "inputs": [
+        {
+          "name": "A",
+          "identifier": "A",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": true
+        },
+        {
+          "name": "B",
+          "identifier": "B",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": false
+        }
+      ],
+      "operation": "GREATER_THAN",
+      "data_type": "FLOAT",
+      "mode": "ELEMENT"
+    },
+    {
+      "name": "Reroute.007",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Group Input.003",
+      "type": "NodeGroupInput",
+      "inputs": []
+    },
+    {
+      "name": "Reroute.002",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "INT",
+          "value": 0,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Reroute.003",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Reroute.001",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "INT",
+          "value": 0,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Reroute",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Reroute.010",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Blur Attribute.003",
+      "type": "GeometryNodeBlurAttribute",
+      "inputs": [
+        {
+          "name": "Value",
+          "identifier": "Value",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Iterations",
+          "identifier": "Iterations",
+          "type": "INT",
+          "value": 1,
+          "linked": true
+        },
+        {
+          "name": "Weight",
+          "identifier": "Weight",
+          "type": "VALUE",
+          "value": 1.0,
+          "linked": true
+        }
+      ],
+      "data_type": "FLOAT_VECTOR"
+    },
+    {
+      "name": "Reroute.008",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Switch",
+      "type": "GeometryNodeSwitch",
+      "inputs": [
+        {
+          "name": "Switch",
+          "identifier": "Switch",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        },
+        {
+          "name": "False",
+          "identifier": "False",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": true
+        },
+        {
+          "name": "True",
+          "identifier": "True",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": true
+        }
+      ],
+      "input_type": "FLOAT"
+    },
+    {
+      "name": "Boolean Math.003",
+      "type": "FunctionNodeBooleanMath",
+      "inputs": [
+        {
+          "name": "Boolean",
+          "identifier": "Boolean",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        },
+        {
+          "name": "Boolean",
+          "identifier": "Boolean_001",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        }
+      ],
+      "operation": "AND"
+    },
+    {
+      "name": "Math.005",
+      "type": "ShaderNodeMath",
+      "inputs": [
+        {
+          "name": "Value",
+          "identifier": "Value",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": true
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_001",
+          "type": "VALUE",
+          "value": -1.0,
+          "linked": true
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_002",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": false
+        }
+      ],
+      "operation": "MULTIPLY"
+    },
+    {
+      "name": "Compare.001",
+      "type": "FunctionNodeCompare",
+      "inputs": [
+        {
+          "name": "A",
+          "identifier": "A",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": true
+        },
+        {
+          "name": "B",
+          "identifier": "B",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": false
+        },
+        {
+          "name": "Epsilon",
+          "identifier": "Epsilon",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": false
+        }
+      ],
+      "operation": "EQUAL",
+      "data_type": "FLOAT",
+      "mode": "ELEMENT"
+    },
+    {
+      "name": "Compare.005",
+      "type": "FunctionNodeCompare",
+      "inputs": [
+        {
+          "name": "A",
+          "identifier": "A",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": true
+        },
+        {
+          "name": "B",
+          "identifier": "B",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": false
+        },
+        {
+          "name": "Epsilon",
+          "identifier": "Epsilon",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": false
+        }
+      ],
+      "operation": "EQUAL",
+      "data_type": "FLOAT",
+      "mode": "ELEMENT"
+    },
+    {
+      "name": "Map Range",
+      "type": "ShaderNodeMapRange",
+      "inputs": [
+        {
+          "name": "Value",
+          "identifier": "Value",
+          "type": "VALUE",
+          "value": 1.0,
+          "linked": true
+        },
+        {
+          "name": "From Min",
+          "identifier": "From Min",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": false
+        },
+        {
+          "name": "From Max",
+          "identifier": "From Max",
+          "type": "VALUE",
+          "value": 1.0,
+          "linked": true
+        },
+        {
+          "name": "To Min",
+          "identifier": "To Min",
+          "type": "VALUE",
+          "value": 1.0,
+          "linked": false
+        },
+        {
+          "name": "To Max",
+          "identifier": "To Max",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": true
+        },
+        {
+          "name": "Steps",
+          "identifier": "Steps",
+          "type": "VALUE",
+          "value": 4.0,
+          "linked": false
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "From Min",
+          "identifier": "From_Min_FLOAT3",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "From Max",
+          "identifier": "From_Max_FLOAT3",
+          "type": "VECTOR",
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "To Min",
+          "identifier": "To_Min_FLOAT3",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "To Max",
+          "identifier": "To_Max_FLOAT3",
+          "type": "VECTOR",
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "Steps",
+          "identifier": "Steps_FLOAT3",
+          "type": "VECTOR",
+          "value": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "linked": false
+        }
+      ],
+      "data_type": "FLOAT"
+    },
+    {
+      "name": "Group Input.006",
+      "type": "NodeGroupInput",
+      "inputs": []
+    },
+    {
+      "name": "Group Input.005",
+      "type": "NodeGroupInput",
+      "inputs": []
+    },
+    {
+      "name": "Switch.001",
+      "type": "GeometryNodeSwitch",
+      "inputs": [
+        {
+          "name": "Switch",
+          "identifier": "Switch",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        },
+        {
+          "name": "False",
+          "identifier": "False",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": true
+        },
+        {
+          "name": "True",
+          "identifier": "True",
+          "type": "VALUE",
+          "value": 0.0,
+          "linked": true
+        }
+      ],
+      "input_type": "FLOAT"
+    },
+    {
+      "name": "Math.006",
+      "type": "ShaderNodeMath",
+      "inputs": [
+        {
+          "name": "Value",
+          "identifier": "Value",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": true
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_001",
+          "type": "VALUE",
+          "value": 1.000000013351432e-10,
+          "linked": false
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_002",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": false
+        }
+      ],
+      "operation": "MAXIMUM"
+    },
+    {
+      "name": "Boolean Math",
+      "type": "FunctionNodeBooleanMath",
+      "inputs": [
+        {
+          "name": "Boolean",
+          "identifier": "Boolean",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        },
+        {
+          "name": "Boolean",
+          "identifier": "Boolean_001",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        }
+      ],
+      "operation": "AND"
+    },
+    {
+      "name": "Position.003",
+      "type": "GeometryNodeInputPosition",
+      "inputs": []
+    },
+    {
+      "name": "Vector Math.004",
+      "type": "ShaderNodeVectorMath",
+      "inputs": [
+        {
+          "name": "Vector",
+          "identifier": "Vector",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_001",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_002",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "Scale",
+          "identifier": "Scale",
+          "type": "VALUE",
+          "value": 1.0,
+          "linked": false
+        }
+      ],
+      "operation": "ADD"
+    },
+    {
+      "name": "Vector Math.005",
+      "type": "ShaderNodeVectorMath",
+      "inputs": [
+        {
+          "name": "Vector",
+          "identifier": "Vector",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_001",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_002",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "Scale",
+          "identifier": "Scale",
+          "type": "VALUE",
+          "value": 1.0,
+          "linked": false
+        }
+      ],
+      "operation": "PROJECT"
+    },
+    {
+      "name": "Group Input",
+      "type": "NodeGroupInput",
+      "inputs": []
+    },
+    {
+      "name": "Reroute.014",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Object Info.001",
+      "type": "GeometryNodeObjectInfo",
+      "inputs": [
+        {
+          "name": "Object",
+          "identifier": "Object",
+          "type": "OBJECT",
+          "value": null,
+          "linked": true
+        },
+        {
+          "name": "As Instance",
+          "identifier": "As Instance",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": false
+        }
+      ],
+      "transform_space": "RELATIVE"
+    },
+    {
+      "name": "Domain Size.001",
+      "type": "GeometryNodeAttributeDomainSize",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "identifier": "Geometry",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Compare.002",
+      "type": "FunctionNodeCompare",
+      "inputs": [
+        {
+          "name": "A",
+          "identifier": "A",
+          "type": "INT",
+          "value": 0,
+          "linked": true
+        },
+        {
+          "name": "B",
+          "identifier": "B",
+          "type": "INT",
+          "value": 0,
+          "linked": false
+        }
+      ],
+      "operation": "EQUAL",
+      "data_type": "INT",
+      "mode": "ELEMENT"
+    },
+    {
+      "name": "Switch.007",
+      "type": "GeometryNodeSwitch",
+      "inputs": [
+        {
+          "name": "Switch",
+          "identifier": "Switch",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        },
+        {
+          "name": "False",
+          "identifier": "False",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        },
+        {
+          "name": "True",
+          "identifier": "True",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ],
+      "input_type": "GEOMETRY"
+    },
+    {
+      "name": "Group Input.008",
+      "type": "NodeGroupInput",
+      "inputs": []
+    },
+    {
+      "name": "Set Spline Type.001",
+      "type": "GeometryNodeCurveSplineType",
+      "inputs": [
+        {
+          "name": "Curve",
+          "identifier": "Curve",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        },
+        {
+          "name": "Selection",
+          "identifier": "Selection",
+          "type": "BOOLEAN",
+          "value": true,
+          "linked": false
+        }
+      ]
+    },
+    {
+      "name": "Compare.004",
+      "type": "FunctionNodeCompare",
+      "inputs": [
+        {
+          "name": "A",
+          "identifier": "A",
+          "type": "INT",
+          "value": 0,
+          "linked": true
+        },
+        {
+          "name": "B",
+          "identifier": "B",
+          "type": "INT",
+          "value": 0,
+          "linked": false
+        }
+      ],
+      "operation": "EQUAL",
+      "data_type": "INT",
+      "mode": "ELEMENT"
+    },
+    {
+      "name": "Switch.006",
+      "type": "GeometryNodeSwitch",
+      "inputs": [
+        {
+          "name": "Switch",
+          "identifier": "Switch",
+          "type": "BOOLEAN",
+          "value": false,
+          "linked": true
+        },
+        {
+          "name": "False",
+          "identifier": "False",
+          "type": "INT",
+          "value": 0,
+          "linked": true
+        },
+        {
+          "name": "True",
+          "identifier": "True",
+          "type": "INT",
+          "value": 12,
+          "linked": false
+        }
+      ],
+      "input_type": "INT"
+    },
+    {
+      "name": "Reroute.021",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "INT",
+          "value": 0,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Set Spline Resolution.001",
+      "type": "GeometryNodeSetSplineResolution",
+      "inputs": [
+        {
+          "name": "Curve",
+          "identifier": "Geometry",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        },
+        {
+          "name": "Selection",
+          "identifier": "Selection",
+          "type": "BOOLEAN",
+          "value": true,
+          "linked": false
+        },
+        {
+          "name": "Resolution",
+          "identifier": "Resolution",
+          "type": "INT",
+          "value": 1,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Reroute.006",
+      "type": "NodeReroute",
+      "inputs": [
+        {
+          "name": "Input",
+          "identifier": "Input",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        }
+      ]
+    },
+    {
+      "name": "Set Spline Type.002",
+      "type": "GeometryNodeCurveSplineType",
+      "inputs": [
+        {
+          "name": "Curve",
+          "identifier": "Curve",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        },
+        {
+          "name": "Selection",
+          "identifier": "Selection",
+          "type": "BOOLEAN",
+          "value": true,
+          "linked": false
+        }
+      ]
+    },
+    {
+      "name": "Capture Attribute.002",
+      "type": "GeometryNodeCaptureAttribute",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "identifier": "Geometry",
+          "type": "GEOMETRY",
+          "value": null,
+          "linked": true
+        },
+        {
+          "name": "Selection",
+          "identifier": "Selection",
+          "type": "BOOLEAN",
+          "value": true,
+          "linked": false
+        },
+        {
+          "name": "Value",
+          "identifier": "Value",
+          "type": "INT",
+          "value": 0,
+          "linked": true
+        },
+        {
+          "name": "",
+          "identifier": "__extend__",
+          "type": "CUSTOM",
+          "value": null,
+          "linked": false
+        }
+      ]
+    },
+    {
+      "name": "Spline Resolution",
+      "type": "GeometryNodeInputSplineResolution",
+      "inputs": []
+    },
+    {
+      "name": "Vector Math.001",
+      "type": "ShaderNodeVectorMath",
+      "inputs": [
+        {
+          "name": "Vector",
+          "identifier": "Vector",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_001",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_002",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "Scale",
+          "identifier": "Scale",
+          "type": "VALUE",
+          "value": 1.0,
+          "linked": false
+        }
+      ],
+      "operation": "SUBTRACT"
+    },
+    {
+      "name": "Vector Math.002",
+      "type": "ShaderNodeVectorMath",
+      "inputs": [
+        {
+          "name": "Vector",
+          "identifier": "Vector",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_001",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        {
+          "name": "Vector",
+          "identifier": "Vector_002",
+          "type": "VECTOR",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        {
+          "name": "Scale",
+          "identifier": "Scale",
+          "type": "VALUE",
+          "value": 1.0,
+          "linked": false
+        }
+      ],
+      "operation": "DOT_PRODUCT"
+    },
+    {
+      "name": "Position",
+      "type": "GeometryNodeInputPosition",
+      "inputs": []
+    },
+    {
+      "name": "Math.004",
+      "type": "ShaderNodeMath",
+      "inputs": [
+        {
+          "name": "Value",
+          "identifier": "Value",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": true
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_001",
+          "type": "VALUE",
+          "value": -1.0,
+          "linked": false
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_002",
+          "type": "VALUE",
+          "value": 0.5,
+          "linked": false
+        }
+      ],
+      "operation": "MULTIPLY"
+    }
+  ],
+  "sourceGroupLinks": [
+    [
+      "Domain Size.001",
+      "Point Count",
+      "INT",
+      "Compare.002",
+      "A",
+      "INT"
+    ],
+    [
+      "Reroute.014",
+      "Output",
+      "GEOMETRY",
+      "Domain Size.001",
+      "Geometry",
+      "GEOMETRY"
+    ],
+    [
+      "Compare.002",
+      "Result",
+      "BOOLEAN",
+      "Switch.007",
+      "Switch",
+      "BOOLEAN"
+    ],
+    [
+      "Object Info.001",
+      "Geometry",
+      "GEOMETRY",
+      "Switch.007",
+      "True",
+      "GEOMETRY"
+    ],
+    [
+      "Reroute.014",
+      "Output",
+      "GEOMETRY",
+      "Switch.007",
+      "False",
+      "GEOMETRY"
+    ],
+    [
+      "Switch.007",
+      "Output",
+      "GEOMETRY",
+      "Capture Attribute",
+      "Geometry",
+      "GEOMETRY"
+    ],
+    [
+      "Normal",
+      "Normal",
+      "VECTOR",
+      "Capture Attribute",
+      "Value",
+      "VECTOR"
+    ],
+    [
+      "Capture Attribute",
+      "Geometry",
+      "GEOMETRY",
+      "Sample Nearest Surface",
+      "Mesh",
+      "GEOMETRY"
+    ],
+    [
+      "Capture Attribute",
+      "Geometry",
+      "GEOMETRY",
+      "Geometry Proximity",
+      "Geometry",
+      "GEOMETRY"
+    ],
+    [
+      "Reroute.010",
+      "Output",
+      "VECTOR",
+      "Vector Math",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Reroute.005",
+      "Output",
+      "GEOMETRY",
+      "Set Position",
+      "Geometry",
+      "GEOMETRY"
+    ],
+    [
+      "Domain Size.002",
+      "Point Count",
+      "INT",
+      "Compare.003",
+      "A",
+      "INT"
+    ],
+    [
+      "Reroute",
+      "Output",
+      "GEOMETRY",
+      "Domain Size.002",
+      "Geometry",
+      "GEOMETRY"
+    ],
+    [
+      "Geometry Proximity",
+      "Position",
+      "VECTOR",
+      "Vector Math.001",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Position",
+      "Position",
+      "VECTOR",
+      "Vector Math.001",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Vector Math.001",
+      "Vector",
+      "VECTOR",
+      "Vector Math.002",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Sample Nearest Surface",
+      "Value",
+      "VECTOR",
+      "Vector Math.002",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Vector Math.002",
+      "Value",
+      "VALUE",
+      "Compare",
+      "A",
+      "VALUE"
+    ],
+    [
+      "Vector Math",
+      "Vector",
+      "VECTOR",
+      "Vector Math.003",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Reroute.009",
+      "Output",
+      "VECTOR",
+      "Vector Math.003",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Reroute.004",
+      "Output",
+      "BOOLEAN",
+      "Blur Attribute.002",
+      "Value",
+      "VALUE"
+    ],
+    [
+      "Mix",
+      "Result",
+      "VECTOR",
+      "Blur Attribute.003",
+      "Value",
+      "VECTOR"
+    ],
+    [
+      "Math",
+      "Value",
+      "VALUE",
+      "Math.001",
+      "Value",
+      "VALUE"
+    ],
+    [
+      "Math.003",
+      "Value",
+      "VALUE",
+      "Blur Attribute.003",
+      "Weight",
+      "VALUE"
+    ],
+    [
+      "Blur Attribute.002",
+      "Value",
+      "VALUE",
+      "Math",
+      "Value",
+      "VALUE"
+    ],
+    [
+      "Math.001",
+      "Value",
+      "VALUE",
+      "Math.002",
+      "Value",
+      "VALUE"
+    ],
+    [
+      "Math.002",
+      "Value",
+      "VALUE",
+      "Math.003",
+      "Value",
+      "VALUE"
+    ],
+    [
+      "Group Input.003",
+      "Smoothing Steps",
+      "INT",
+      "Blur Attribute.003",
+      "Iterations",
+      "INT"
+    ],
+    [
+      "Position.002",
+      "Position",
+      "VECTOR",
+      "Vector Math.008",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Position.002",
+      "Position",
+      "VECTOR",
+      "Vector Math.010",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Vector Math.008",
+      "Vector",
+      "VECTOR",
+      "Vector Math.009",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Vector Math.009",
+      "Vector",
+      "VECTOR",
+      "Vector Math.010",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Group Input.002",
+      "Factor",
+      "VALUE",
+      "Vector Math.009",
+      "Scale",
+      "VALUE"
+    ],
+    [
+      "Group Input.003",
+      "Smoothing Steps",
+      "INT",
+      "Blur Attribute.002",
+      "Iterations",
+      "INT"
+    ],
+    [
+      "Compare",
+      "Result",
+      "BOOLEAN",
+      "Boolean Math",
+      "Boolean",
+      "BOOLEAN"
+    ],
+    [
+      "Boolean Math.001",
+      "Boolean",
+      "BOOLEAN",
+      "Boolean Math.002",
+      "Boolean",
+      "BOOLEAN"
+    ],
+    [
+      "Group",
+      "Root Selection",
+      "BOOLEAN",
+      "Boolean Math.001",
+      "Boolean",
+      "BOOLEAN"
+    ],
+    [
+      "Boolean Math",
+      "Boolean",
+      "BOOLEAN",
+      "Reroute.004",
+      "Input",
+      "BOOLEAN"
+    ],
+    [
+      "Blur Attribute.003",
+      "Value",
+      "VECTOR",
+      "Vector Math.008",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Boolean Math.002",
+      "Boolean",
+      "BOOLEAN",
+      "Boolean Math",
+      "Boolean",
+      "BOOLEAN"
+    ],
+    [
+      "Group Input.004",
+      "Lock Roots",
+      "BOOLEAN",
+      "Boolean Math.004",
+      "Boolean",
+      "BOOLEAN"
+    ],
+    [
+      "Boolean Math.004",
+      "Boolean",
+      "BOOLEAN",
+      "Boolean Math.002",
+      "Boolean",
+      "BOOLEAN"
+    ],
+    [
+      "Reroute.007",
+      "Output",
+      "BOOLEAN",
+      "Set Position",
+      "Selection",
+      "BOOLEAN"
+    ],
+    [
+      "Reroute.008",
+      "Output",
+      "VALUE",
+      "Switch.001",
+      "False",
+      "VALUE"
+    ],
+    [
+      "Compare",
+      "Result",
+      "BOOLEAN",
+      "Switch.001",
+      "Switch",
+      "BOOLEAN"
+    ],
+    [
+      "Math.004",
+      "Value",
+      "VALUE",
+      "Switch.001",
+      "True",
+      "VALUE"
+    ],
+    [
+      "Geometry Proximity",
+      "Distance",
+      "VALUE",
+      "Reroute.008",
+      "Input",
+      "VALUE"
+    ],
+    [
+      "Reroute.008",
+      "Output",
+      "VALUE",
+      "Math.004",
+      "Value",
+      "VALUE"
+    ],
+    [
+      "Group Input.001",
+      "Offset Distance",
+      "VALUE",
+      "Vector Math",
+      "Scale",
+      "VALUE"
+    ],
+    [
+      "Position.001",
+      "Position",
+      "VECTOR",
+      "Mix",
+      "A",
+      "VECTOR"
+    ],
+    [
+      "Vector Math.003",
+      "Vector",
+      "VECTOR",
+      "Mix",
+      "B",
+      "VECTOR"
+    ],
+    [
+      "Switch.001",
+      "Output",
+      "VALUE",
+      "Map Range",
+      "Value",
+      "VALUE"
+    ],
+    [
+      "Switch",
+      "Output",
+      "VALUE",
+      "Mix",
+      "Factor",
+      "VALUE"
+    ],
+    [
+      "Map Range",
+      "Result",
+      "VALUE",
+      "Math.005",
+      "Value",
+      "VALUE"
+    ],
+    [
+      "Math.005",
+      "Value",
+      "VALUE",
+      "Switch",
+      "False",
+      "VALUE"
+    ],
+    [
+      "Group Input.005",
+      "Offset Distance",
+      "VALUE",
+      "Compare.001",
+      "A",
+      "VALUE"
+    ],
+    [
+      "Reroute.004",
+      "Output",
+      "BOOLEAN",
+      "Switch",
+      "True",
+      "VALUE"
+    ],
+    [
+      "Reroute.007",
+      "Output",
+      "BOOLEAN",
+      "Math.005",
+      "Value",
+      "VALUE"
+    ],
+    [
+      "Vector Math.010",
+      "Vector",
+      "VECTOR",
+      "Set Position",
+      "Position",
+      "VECTOR"
+    ],
+    [
+      "Position.003",
+      "Position",
+      "VECTOR",
+      "Vector Math.004",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Vector Math.001",
+      "Vector",
+      "VECTOR",
+      "Vector Math.005",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Reroute.010",
+      "Output",
+      "VECTOR",
+      "Vector Math.005",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Vector Math.005",
+      "Vector",
+      "VECTOR",
+      "Vector Math.004",
+      "Vector",
+      "VECTOR"
+    ],
+    [
+      "Capture Attribute",
+      "Value",
+      "VECTOR",
+      "Sample Nearest Surface",
+      "Value",
+      "VECTOR"
+    ],
+    [
+      "Vector Math.004",
+      "Vector",
+      "VECTOR",
+      "Reroute.009",
+      "Input",
+      "VECTOR"
+    ],
+    [
+      "Reroute.013",
+      "Output",
+      "GEOMETRY",
+      "Join Geometry",
+      "Geometry",
+      "GEOMETRY"
+    ],
+    [
+      "Reroute.015",
+      "Output",
+      "GEOMETRY",
+      "Join Geometry",
+      "Geometry",
+      "GEOMETRY"
+    ],
+    [
+      "Reroute.011",
+      "Output",
+      "GEOMETRY",
+      "Join Geometry",
+      "Geometry",
+      "GEOMETRY"
+    ],
+    [
+      "Reroute.012",
+      "Output",
+      "GEOMETRY",
+      "Join Geometry",
+      "Geometry",
+      "GEOMETRY"
+    ],
+    [
+      "Reroute.018",
+      "Output",
+      "GEOMETRY",
+      "Reroute.013",
+      "Input",
+      "GEOMETRY"
+    ],
+    [
+      "Reroute.016",
+      "Output",
+      "GEOMETRY",
+      "Reroute.011",
+      "Input",
+      "GEOMETRY"
+    ],
+    [
+      "Reroute.017",
+      "Output",
+      "GEOMETRY",
+      "Reroute.015",
+      "Input",
+      "GEOMETRY"
+    ],
+    [
+      "Reroute.019",
+      "Output",
+      "GEOMETRY",
+      "Reroute.012",
+      "Input",
+      "GEOMETRY"
+    ],
+    [
+      "Separate Components",
+      "Mesh",
+      "GEOMETRY",
+      "Reroute.018",
+      "Input",
+      "GEOMETRY"
+    ],
+    [
+      "Separate Components",
+      "Volume",
+      "GEOMETRY",
+      "Reroute.016",
+      "Input",
+      "GEOMETRY"
+    ],
+    [
+      "Separate Components",
+      "Point Cloud",
+      "GEOMETRY",
+      "Reroute.017",
+      "Input",
+      "GEOMETRY"
+    ],
+    [
+      "Separate Components",
+      "Instances",
+      "GEOMETRY",
+      "Reroute.019",
+      "Input",
+      "GEOMETRY"
+    ],
+    [
+      "Set Spline Resolution.001",
+      "Curve",
+      "GEOMETRY",
+      "Join Geometry",
+      "Geometry",
+      "GEOMETRY"
+    ],
+    [
+      "Group Input",
+      "Geometry",
+      "GEOMETRY",
+      "Separate Components",
+      "Geometry",
+      "GEOMETRY"
+    ],
+    [
+      "Spline Resolution",
+      "Resolution",
+      "INT",
+      "Capture Attribute.002",
+      "Value",
+      "INT"
+    ],
+    [
+      "Set Spline Type.001",
+      "Curve",
+      "GEOMETRY",
+      "Set Spline Resolution.001",
+      "Curve",
+      "GEOMETRY"
+    ],
+    [
+      "Reroute.021",
+      "Output",
+      "INT",
+      "Compare.004",
+      "A",
+      "INT"
+    ],
+    [
+      "Compare.004",
+      "Result",
+      "BOOLEAN",
+      "Switch.006",
+      "Switch",
+      "BOOLEAN"
+    ],
+    [
+      "Reroute.021",
+      "Output",
+      "INT",
+      "Switch.006",
+      "False",
+      "INT"
+    ],
+    [
+      "Reroute.001",
+      "Output",
+      "INT",
+      "Reroute.021",
+      "Input",
+      "INT"
+    ],
+    [
+      "Switch.006",
+      "Output",
+      "INT",
+      "Set Spline Resolution.001",
+      "Resolution",
+      "INT"
+    ],
+    [
+      "Capture Attribute.002",
+      "Geometry",
+      "GEOMETRY",
+      "Set Spline Type.002",
+      "Curve",
+      "GEOMETRY"
+    ],
+    [
+      "Set Position",
+      "Geometry",
+      "GEOMETRY",
+      "Set Spline Type.001",
+      "Curve",
+      "GEOMETRY"
+    ],
+    [
+      "Separate Components",
+      "Curve",
+      "GEOMETRY",
+      "Capture Attribute.002",
+      "Geometry",
+      "GEOMETRY"
+    ],
+    [
+      "Compare.001",
+      "Result",
+      "BOOLEAN",
+      "Boolean Math.003",
+      "Boolean",
+      "BOOLEAN"
+    ],
+    [
+      "Compare.005",
+      "Result",
+      "BOOLEAN",
+      "Boolean Math.003",
+      "Boolean",
+      "BOOLEAN"
+    ],
+    [
+      "Group Input.006",
+      "Above Surface",
+      "VALUE",
+      "Compare.005",
+      "A",
+      "VALUE"
+    ],
+    [
+      "Group Input.006",
+      "Above Surface",
+      "VALUE",
+      "Map Range",
+      "To Max",
+      "VALUE"
+    ],
+    [
+      "Boolean Math.003",
+      "Boolean",
+      "BOOLEAN",
+      "Switch",
+      "Switch",
+      "BOOLEAN"
+    ],
+    [
+      "Group Input.005",
+      "Offset Distance",
+      "VALUE",
+      "Math.006",
+      "Value",
+      "VALUE"
+    ],
+    [
+      "Math.006",
+      "Value",
+      "VALUE",
+      "Map Range",
+      "From Max",
+      "VALUE"
+    ],
+    [
+      "Reroute.002",
+      "Output",
+      "INT",
+      "Reroute.001",
+      "Input",
+      "INT"
+    ],
+    [
+      "Capture Attribute.002",
+      "Value",
+      "INT",
+      "Reroute.002",
+      "Input",
+      "INT"
+    ],
+    [
+      "Join Geometry",
+      "Geometry",
+      "GEOMETRY",
+      "Switch.008",
+      "False",
+      "GEOMETRY"
+    ],
+    [
+      "Compare.003",
+      "Result",
+      "BOOLEAN",
+      "Switch.008",
+      "Switch",
+      "BOOLEAN"
+    ],
+    [
+      "Group Input.007",
+      "Geometry",
+      "GEOMETRY",
+      "Switch.008",
+      "True",
+      "GEOMETRY"
+    ],
+    [
+      "Switch.008",
+      "Output",
+      "GEOMETRY",
+      "Group Output",
+      "Geometry",
+      "GEOMETRY"
+    ],
+    [
+      "Reroute.003",
+      "Output",
+      "GEOMETRY",
+      "Reroute",
+      "Input",
+      "GEOMETRY"
+    ],
+    [
+      "Switch.007",
+      "Output",
+      "GEOMETRY",
+      "Reroute.003",
+      "Input",
+      "GEOMETRY"
+    ],
+    [
+      "Reroute.006",
+      "Output",
+      "GEOMETRY",
+      "Reroute.005",
+      "Input",
+      "GEOMETRY"
+    ],
+    [
+      "Set Spline Type.002",
+      "Curve",
+      "GEOMETRY",
+      "Reroute.006",
+      "Input",
+      "GEOMETRY"
+    ],
+    [
+      "Boolean Math.002",
+      "Boolean",
+      "BOOLEAN",
+      "Reroute.007",
+      "Input",
+      "BOOLEAN"
+    ],
+    [
+      "Sample Nearest Surface",
+      "Value",
+      "VECTOR",
+      "Reroute.010",
+      "Input",
+      "VECTOR"
+    ],
+    [
+      "Group Input.008",
+      "Surface",
+      "GEOMETRY",
+      "Reroute.014",
+      "Input",
+      "GEOMETRY"
+    ],
+    [
+      "Group Input.008",
+      "Surface",
+      "OBJECT",
+      "Object Info.001",
+      "Object",
+      "OBJECT"
+    ]
+  ],
+  "objectInfoCoordinates": [
+    {
+      "space": "ORIGINAL",
+      "targetHideGet": true,
+      "vertices": 560738,
+      "localBounds": [
+        [
+          -5.519903659820557,
+          -2.439340114593506,
+          -1.2717978954315186
+        ],
+        [
+          5.519904613494873,
+          0.8500255346298218,
+          16.410877227783203
+        ]
+      ]
+    },
+    {
+      "space": "ORIGINAL",
+      "targetHideGet": false,
+      "vertices": 560738,
+      "localBounds": [
+        [
+          -5.519903659820557,
+          -2.439340114593506,
+          -1.2717978954315186
+        ],
+        [
+          5.519904613494873,
+          0.8500255346298218,
+          16.410877227783203
+        ]
+      ]
+    },
+    {
+      "space": "RELATIVE",
+      "targetHideGet": true,
+      "vertices": 560738,
+      "localBounds": [
+        [
+          -5.519903659820557,
+          -2.439340114593506,
+          -1.2717978954315186
+        ],
+        [
+          5.519904613494873,
+          0.8500255346298218,
+          16.410877227783203
+        ]
+      ]
+    },
+    {
+      "space": "RELATIVE",
+      "targetHideGet": false,
+      "vertices": 560738,
+      "localBounds": [
+        [
+          -5.519903659820557,
+          -2.439340114593506,
+          -1.2717978954315186
+        ],
+        [
+          5.519904613494873,
+          0.8500255346298218,
+          16.410877227783203
+        ]
+      ]
+    }
+  ],
+  "expectedColliderLocalBounds": [
+    [
+      -5.519903659820557,
+      -2.439340114593506,
+      -1.2717978954315186
+    ],
+    [
+      5.519904613494873,
+      0.8500255346298218,
+      16.410877227783203
+    ]
+  ],
+  "modelNotSavedOrOverwritten": true
+}

@@ -1,0 +1,28 @@
+00:00.906  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0068-guide-surface.py", line 85, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0068-guide-surface.py", line 83, in main
+資訊: 已儲存為「aevrynd-female-next-r0068-a-guide-surface-study.blend」
+    m.save('a-build-summary.json',{'source':str(SRC),'sourceSha256':SOURCE_SHA,'publisherSource':str(m.SRC),'publisherSourceSha256':m.SHA,'sourceCredit':bpy.context.scene['AFN68_source_credit'],'output':str(OUT),'outputSha256':m.sha(OUT),'anatomicalAlignmentMatrix':A.tolist(),'alignmentBasis':'Eye separation/centre and head top; one fit, no parameter sweep.','growthVertices':len(G0),'growthTriangles':len(GT),'maximumGrowthRegistrationWorldM':float(registration.max()),'growthRegistrationMethod':'First exit rays from a three-parity-confirmed head-interior origin onto actual closed render tissue, retaining source growth topology/UV/islands/parting.','growthVertexStandOffWorldM':maxWorldRadius,'guideBindings':bindings,'sourceNodeChanges':sourceChanges,'visibleComponents':visible,'bodyRenderCollisionReferenceMaximumReconstructionErrorM':collisionError,'bodySkinEyesStageUnchanged':True,'sourceSurfaceDeformModifiersDisabledAfterExplicitBind':True,'newHairDynamicsOrEngineAcceptance':False,'sourceRights':'CC BY-SA notice retained; author did not state version. Original body remains separately sourced CC0; engine code licensing is not asserted or changed.','secondsBeforePreview':time.time()-tick})
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0068-guide-structure.py", line 7, in save
+    def save(n,v):(E/n).write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+                                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\__init__.py", line 242, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\encoder.py", line 202, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\encoder.py", line 263, in iterencode
+    return _iterencode(o, 0)
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\encoder.py", line 182, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type float32 is not JSON serializable
+
+Error: script failed, file: 'scripts/character-next/build-female-next-r0068-guide-surface.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

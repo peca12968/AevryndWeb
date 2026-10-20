@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0068-guide-structure.py", line 30, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0068-guide-structure.py", line 24, in main
+    row={'name':o.name,'type':o.type,'matrix':np.array(o.matrix_world).tolist(),'hideRender':o.hide_render,'modifiers':[{'name':md.name,'type':md.type,'enabled':md.show_viewport,'render':md.show_render,'group':md.node_group.name if md.type=='NODES' and md.node_group else None,'inputs':values(md) if md.type=='NODES' else {}} for md in o.modifiers]}
+                                                                                                                                                                                                                                                                                              ~~~~~~^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0068-guide-structure.py", line 10, in values
+    for key in mod.keys():
+               ~~~~~~~~^^
+TypeError: bpy_struct.keys(): this type doesn't support IDProperties
+
+Error: script failed, file: 'scripts/character-next/inspect-female-next-r0068-guide-structure.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

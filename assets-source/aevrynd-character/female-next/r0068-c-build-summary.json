@@ -1,0 +1,55 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0068-b-surface-semantics-study.blend",
+  "sourceSha256": "1bcd70d45e2c3e04d08ed696adecf6fa9ffdea75ba7819622378b01467f89cfd",
+  "baselineSource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend",
+  "baselineSha256": "4d0e3f67735ae68c5c1fa3c933f7cabb03cb547928e778f7067a8e699620b708",
+  "publisherSourceSha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+  "sourceCredit": "Daniel Bystedt, Hair Styles Demo, CC BY-SA as author/publisher declares; version not supplied. Source-derived study, not exclusive Aevrynd groom.",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0068-c-live-body-contact-study.blend",
+  "outputSha256": "ee588d13ef05eb7d54c231bc3438bde2653133dc4a739889da7e5ab5b9bf2dcc",
+  "visibleComponents": [
+    {
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curves": 10959,
+      "points": 206879,
+      "localRadiusRangeM": [
+        0.0010999999940395355,
+        0.0010999999940395355
+      ]
+    },
+    {
+      "object": "AFN68_FLYAWAY_RENDER_CURVES",
+      "curves": 30,
+      "points": 360,
+      "localRadiusRangeM": [
+        0.0,
+        1.0000000656873453e-05
+      ]
+    }
+  ],
+  "reason": "Source wrap stage affected one pre-join branch; B main witnesses stayed identical while its new complete flyaway stage removed strong flyaway witnesses. Apply that same full-output scope to main, not more value tuning.",
+  "changes": [
+    {
+      "bodyViewportLevelBefore": 1,
+      "after": 2,
+      "renderLevelUnchanged": 2
+    },
+    {
+      "group": "AFN68_FLYAWAY_SOURCE_CONTACT_STAGE",
+      "node": "群組",
+      "socket": "Surface",
+      "target": "AFN60_BODY_ORAL_AND_OCULAR_LINING"
+    },
+    {
+      "group": "hair",
+      "node": "Group.007",
+      "socket": "Surface",
+      "target": "AFN60_BODY_ORAL_AND_OCULAR_LINING"
+    }
+  ],
+  "sourceObjectInfoSpace": "RELATIVE for live body object in the active guide space",
+  "duplicateStaticBodyRenderCacheRemoved": true,
+  "newHairPhysicsOrFullContactAccepted": false,
+  "sourceRights": "CC BY-SA notice retained as source declares; exact version not specified. Body has separate CC0 provenance. No engine code licensing change.",
+  "secondsBeforePreview": 9.739237070083618
+}

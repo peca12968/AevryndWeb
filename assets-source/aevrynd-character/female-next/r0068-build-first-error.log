@@ -1,0 +1,14 @@
+00:00.922  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0068-guide-surface.py", line 85, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0068-guide-surface.py", line 77, in main
+    node.inputs['Surface'].default_value=collider;node.inputs['Offset Distance'].default_value=sourceMaxRadius;node.inputs['Above Surface'].default_value=sourceMaxRadius;sourceChanges.append({'object':o.name,'node':node.name,'surface':collider.name,'offsetAndActivationLocal':sourceMaxRadius,'basis':'Actual maximum rendered source radius, not a tuned collision allowance.'})
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NodeSocketGeometry' object has no attribute 'default_value'
+
+Error: script failed, file: 'scripts/character-next/build-female-next-r0068-guide-surface.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

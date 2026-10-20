@@ -1,0 +1,8 @@
+00:01.172  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0068-complete-study.py:23: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  native={n:v.mesh_signature(bpy.data.objects[n]) for n in names};mats={mat.name:k.f.v.v32.material_signature(mat) for mat in bpy.data.materials if mat.use_nodes};curves={o.name:k.v59.native_curves(o) for o in bpy.data.objects if o.type=='CURVES'};visibility={o.name:[o.type,o.hide_render,o.hide_get()] for o in bpy.context.scene.objects if o.type in ('MESH','CURVES')};stage=k.f.v.stage()
+00:01.922  blend            | Read blend: "D:\Download\Aevrynd\sites-engine-journey\assets-source\aevrynd-character\female-next\aevrynd-female-next-r0068-c-live-body-contact-study.blend"
+R68_COMPLETE_STUDY_READBACK [{'object': 'AFN68_MAIN_RENDER_CURVES', 'curves': 10959, 'points': 206879, 'actualGeometryRadiiAndMatrixExact': True}, {'object': 'AFN68_FLYAWAY_RENDER_CURVES', 'curves': 30, 'points': 360, 'actualGeometryRadiiAndMatrixExact': True}] 2.0067603894872984e-07 {'source': 'D:\\Download\\Aevrynd\\Reference\\character\\charmorph-vitruvian-cc0\\char.blend', 'sha256': '7e9581c30b48f1409dfeec4a5ec0736014318fc8825ca6d4728f2b543bb02126', 'rawNotLinkedOrExecuted': True, 'armatures': [], 'meshes': [{'name': 'cm_vitruvian', 'vertices': 37436, 'vertexGroups': 2, 'mode': 'OBJECT', 'armatureTargets': []}], 'doesNotProveRigCanOperate': True} 13.225647449493408
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

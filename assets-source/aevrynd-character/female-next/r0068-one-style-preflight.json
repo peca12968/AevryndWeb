@@ -1,0 +1,3029 @@
+{
+  "source": "D:\\Download\\Aevrynd\\Reference\\character\\blender-bystedt-hair-cc-by-sa\\hair_nodes-female_hair_styles.blend",
+  "sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+  "objects": [
+    {
+      "name": "head",
+      "parent": null,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrixBasis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "instanceCollection": null,
+      "localBounds": [
+        [
+          -0.8784418106079102,
+          -1.756827473640442,
+          13.19823169708252
+        ],
+        [
+          0.8793157935142517,
+          0.4950631260871887,
+          16.410877227783203
+        ]
+      ]
+    },
+    {
+      "name": "eyes",
+      "parent": null,
+      "location": [
+        0.305877685546875,
+        -1.3379756212234497,
+        15.30112361907959
+      ],
+      "scale": [
+        0.12901143729686737,
+        0.12716221809387207,
+        0.12901140749454498
+      ],
+      "matrixBasis": [
+        [
+          0.12901143729686737,
+          0.0,
+          0.0,
+          0.305877685546875
+        ],
+        [
+          0.0,
+          0.12716221809387207,
+          0.0,
+          -1.3379756212234497
+        ],
+        [
+          0.0,
+          0.0,
+          0.12901140749454498,
+          15.30112361907959
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "instanceCollection": null,
+      "localBounds": [
+        [
+          -5.765951156616211,
+          -1.0240812301635742,
+          -1.0240812301635742
+        ],
+        [
+          1.0240814685821533,
+          1.053865909576416,
+          1.0240815877914429
+        ]
+      ]
+    },
+    {
+      "name": "long hair main",
+      "parent": "long hair growth mesh",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrixBasis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "instanceCollection": null,
+      "localBounds": [
+        [
+          -1.0897057056427002,
+          -1.5632410049438477,
+          13.59932804107666
+        ],
+        [
+          1.2892916202545166,
+          0.9575696587562561,
+          16.538578033447266
+        ]
+      ]
+    },
+    {
+      "name": "long hair strands",
+      "parent": "long hair growth mesh",
+      "location": [
+        5.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrixBasis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "instanceCollection": null,
+      "localBounds": [
+        [
+          -0.9966964721679688,
+          -1.580199956893921,
+          14.866643905639648
+        ],
+        [
+          0.8084146976470947,
+          0.35974034667015076,
+          16.520097732543945
+        ]
+      ]
+    },
+    {
+      "name": "long hair growth mesh",
+      "parent": "Long hair head",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrixBasis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "instanceCollection": null,
+      "localBounds": [
+        [
+          -0.786777913570404,
+          -1.4540126323699951,
+          14.674525260925293
+        ],
+        [
+          0.786777913570404,
+          0.28169548511505127,
+          16.400089263916016
+        ]
+      ]
+    }
+  ],
+  "groups": {
+    "Surface Deform.002": {
+      "interface": [
+        {
+          "name": "Geometry",
+          "identifier": "Output_1",
+          "direction": "OUTPUT",
+          "default": null
+        },
+        {
+          "name": "Geometry",
+          "identifier": "Input_0",
+          "direction": "INPUT",
+          "default": null
+        }
+      ],
+      "nodes": [
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Deform Curves on Surface",
+          "type": "GeometryNodeDeformCurvesOnSurface",
+          "mute": false,
+          "inputs": []
+        }
+      ],
+      "links": [
+        [
+          "Group Input",
+          "Geometry",
+          "Deform Curves on Surface",
+          "Curves"
+        ],
+        [
+          "Deform Curves on Surface",
+          "Curves",
+          "Group Output",
+          "Geometry"
+        ]
+      ]
+    },
+    "hair": {
+      "interface": [
+        {
+          "name": "Geometry",
+          "identifier": "Output_1",
+          "direction": "OUTPUT",
+          "default": null
+        },
+        {
+          "name": "Geometry",
+          "identifier": "Input_0",
+          "direction": "INPUT",
+          "default": null
+        },
+        {
+          "name": "Viewport Amount",
+          "identifier": "Input_2",
+          "direction": "INPUT",
+          "default": 1.0
+        }
+      ],
+      "nodes": [
+        {
+          "name": "Frame.005",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.004",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.015",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.018",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.020",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.019",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.014",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.003",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.001",
+          "type": "NodeFrame",
+          "mute": true,
+          "inputs": []
+        },
+        {
+          "name": "Frame.010",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.002",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.012",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.011",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.006",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.008",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.007",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.009",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.013",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.016",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Frame.017",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Reroute.008",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Group.002",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Factor",
+              0.6499999761581421,
+              false
+            ],
+            [
+              "Subdivision",
+              0,
+              false
+            ],
+            [
+              "Variation Level",
+              0,
+              false
+            ],
+            [
+              "Roll Length",
+              0.699999988079071,
+              false
+            ],
+            [
+              "Roll Radius",
+              0.4699999988079071,
+              false
+            ],
+            [
+              "Roll Depth",
+              0.0,
+              false
+            ],
+            [
+              "Roll Taper",
+              0.5,
+              false
+            ],
+            [
+              "Retain Overall Shape",
+              0.0,
+              false
+            ],
+            [
+              "Roll Direction",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "Random Orientation",
+              1.0,
+              false
+            ],
+            [
+              "Seed",
+              15,
+              false
+            ],
+            [
+              "Preserve Length",
+              false,
+              false
+            ]
+          ],
+          "group": "Roll Hair Curves"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Group.001",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Replace Radius",
+              true,
+              false
+            ],
+            [
+              "Radius",
+              0.0009999999310821295,
+              true
+            ],
+            [
+              "Shape",
+              0.0,
+              false
+            ],
+            [
+              "Factor Min",
+              0.0,
+              false
+            ],
+            [
+              "Factor Max",
+              1.0,
+              false
+            ]
+          ],
+          "group": "Set Hair Curve Profile.004"
+        },
+        {
+          "name": "Value",
+          "type": "ShaderNodeValue",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Reroute.016",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": [
+            [
+              "Input",
+              0.0,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "Join Geometry.001",
+          "type": "GeometryNodeJoinGeometry",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Reroute.020",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": [
+            [
+              "Input",
+              0,
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Reroute.019",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": [
+            [
+              "Input",
+              0,
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Group.003",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Replace Radius",
+              true,
+              false
+            ],
+            [
+              "Radius",
+              0.0009999999310821295,
+              true
+            ],
+            [
+              "Shape",
+              0.0,
+              false
+            ],
+            [
+              "Factor Min",
+              0.0,
+              false
+            ],
+            [
+              "Factor Max",
+              1.0,
+              false
+            ]
+          ],
+          "group": "Set Hair Curve Profile.004"
+        },
+        {
+          "name": "Group.010",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Amount",
+              8,
+              false
+            ],
+            [
+              "Viewport Amount",
+              1.0,
+              false
+            ],
+            [
+              "Radius",
+              0.04600000008940697,
+              false
+            ],
+            [
+              "Distribution Shape",
+              0.5999999642372131,
+              false
+            ],
+            [
+              "Tip Roundness",
+              0.6000000238418579,
+              false
+            ],
+            [
+              "Even Thickness",
+              false,
+              false
+            ],
+            [
+              "Seed",
+              0,
+              false
+            ]
+          ],
+          "group": "Duplicate Hair Curves"
+        },
+        {
+          "name": "Reroute.021",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Group.011",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Guide Index",
+              -987654,
+              true
+            ],
+            [
+              "Guide Distance",
+              0.10000000149011612,
+              false
+            ],
+            [
+              "Guide Mask",
+              1.0,
+              false
+            ],
+            [
+              "Existing Guide Map",
+              true,
+              false
+            ],
+            [
+              "Factor",
+              1.0,
+              false
+            ],
+            [
+              "Shape",
+              0.5,
+              false
+            ],
+            [
+              "Tip Spread",
+              0.0,
+              false
+            ],
+            [
+              "Clump Offset",
+              0.0,
+              false
+            ],
+            [
+              "Distance Falloff",
+              0.0,
+              false
+            ],
+            [
+              "Distance Threshold",
+              0.0,
+              false
+            ],
+            [
+              "Seed",
+              0,
+              false
+            ],
+            [
+              "Preserve Length",
+              false,
+              false
+            ]
+          ],
+          "group": "Clump Hair Curves"
+        },
+        {
+          "name": "Group.013",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [],
+          "group": "Curve Info.003"
+        },
+        {
+          "name": "Map Range",
+          "type": "ShaderNodeMapRange",
+          "mute": false,
+          "inputs": [
+            [
+              "Value",
+              1.0,
+              true
+            ],
+            [
+              "From Min",
+              0.4000000059604645,
+              false
+            ],
+            [
+              "From Max",
+              1.0,
+              false
+            ],
+            [
+              "To Min",
+              0.0,
+              false
+            ],
+            [
+              "To Max",
+              1.0,
+              false
+            ],
+            [
+              "Steps",
+              4.0,
+              false
+            ],
+            [
+              "Vector",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "From Min",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "From Max",
+              [
+                1.0,
+                1.0,
+                1.0
+              ],
+              false
+            ],
+            [
+              "To Min",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "To Max",
+              [
+                1.0,
+                1.0,
+                1.0
+              ],
+              false
+            ],
+            [
+              "Steps",
+              [
+                4.0,
+                4.0,
+                4.0
+              ],
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Group.012",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Cumulative Offset",
+              true,
+              false
+            ],
+            [
+              "Factor",
+              1.0,
+              true
+            ],
+            [
+              "Distance",
+              0.10000000149011612,
+              false
+            ],
+            [
+              "Shape",
+              0.0,
+              false
+            ],
+            [
+              "Scale",
+              9.699999809265137,
+              false
+            ],
+            [
+              "Scale along Curve",
+              2.0999999046325684,
+              false
+            ],
+            [
+              "Offset per Curve",
+              41.499996185302734,
+              false
+            ],
+            [
+              "Seed",
+              0,
+              false
+            ],
+            [
+              "Preserve Length",
+              true,
+              false
+            ]
+          ],
+          "group": "Hair Curves Noise"
+        },
+        {
+          "name": "Reroute.001",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Named Attribute",
+          "type": "GeometryNodeInputNamedAttribute",
+          "mute": false,
+          "inputs": [
+            [
+              "Name",
+              "UVMap",
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Reroute",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Named Attribute.002",
+          "type": "GeometryNodeInputNamedAttribute",
+          "mute": false,
+          "inputs": [
+            [
+              "Name",
+              "UVMap",
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Map Range.002",
+          "type": "ShaderNodeMapRange",
+          "mute": false,
+          "inputs": [
+            [
+              "Value",
+              1.0,
+              true
+            ],
+            [
+              "From Min",
+              0.20000000298023224,
+              false
+            ],
+            [
+              "From Max",
+              1.0,
+              false
+            ],
+            [
+              "To Min",
+              0.30000001192092896,
+              false
+            ],
+            [
+              "To Max",
+              5.0,
+              false
+            ],
+            [
+              "Steps",
+              4.0,
+              false
+            ],
+            [
+              "Vector",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "From Min",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "From Max",
+              [
+                1.0,
+                1.0,
+                1.0
+              ],
+              false
+            ],
+            [
+              "To Min",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "To Max",
+              [
+                1.0,
+                1.0,
+                1.0
+              ],
+              false
+            ],
+            [
+              "Steps",
+              [
+                4.0,
+                4.0,
+                4.0
+              ],
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Spline Parameter",
+          "type": "GeometryNodeSplineParameter",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Reroute.006",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": [
+            [
+              "Input",
+              0.0,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "Reroute.007",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": [
+            [
+              "Input",
+              0.0,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "Reroute.011",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": [
+            [
+              "Input",
+              0,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "Map Range.001",
+          "type": "ShaderNodeMapRange",
+          "mute": false,
+          "inputs": [
+            [
+              "Value",
+              1.0,
+              true
+            ],
+            [
+              "From Min",
+              0.17999997735023499,
+              false
+            ],
+            [
+              "From Max",
+              0.3199999928474426,
+              false
+            ],
+            [
+              "To Min",
+              0.0,
+              false
+            ],
+            [
+              "To Max",
+              1.0,
+              false
+            ],
+            [
+              "Steps",
+              4.0,
+              false
+            ],
+            [
+              "Vector",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "From Min",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "From Max",
+              [
+                1.0,
+                1.0,
+                1.0
+              ],
+              false
+            ],
+            [
+              "To Min",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "To Max",
+              [
+                1.0,
+                1.0,
+                1.0
+              ],
+              false
+            ],
+            [
+              "Steps",
+              [
+                4.0,
+                4.0,
+                4.0
+              ],
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Reroute.012",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": [
+            [
+              "Input",
+              0,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "Reroute.010",
+          "type": "NodeReroute",
+          "mute": true,
+          "inputs": [
+            [
+              "Input",
+              0,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "Random Value",
+          "type": "FunctionNodeRandomValue",
+          "mute": false,
+          "inputs": [
+            [
+              "Probability",
+              0.800000011920929,
+              false
+            ],
+            [
+              "ID",
+              0,
+              false
+            ],
+            [
+              "Seed",
+              0,
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Separate Geometry",
+          "type": "GeometryNodeSeparateGeometry",
+          "mute": false,
+          "inputs": [
+            [
+              "Selection",
+              true,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "Reroute.003",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Reroute.002",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Reroute.005",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": [
+            [
+              "Input",
+              0.0,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "Group",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Scale Uniform",
+              false,
+              false
+            ],
+            [
+              "Length Factor",
+              1.0,
+              false
+            ],
+            [
+              "Replace Length",
+              false,
+              false
+            ],
+            [
+              "Length",
+              1.0,
+              false
+            ],
+            [
+              "Mask",
+              1.0,
+              false
+            ],
+            [
+              "Random Offset",
+              0.10000000149011612,
+              false
+            ],
+            [
+              "Pin at Parameter",
+              0.0,
+              false
+            ],
+            [
+              "Seed",
+              0,
+              false
+            ]
+          ],
+          "group": "Trim Hair Curves"
+        },
+        {
+          "name": "Group.008",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Guide Index",
+              -987654,
+              true
+            ],
+            [
+              "Guide Distance",
+              0.20000000298023224,
+              false
+            ],
+            [
+              "Guide Mask",
+              1.0,
+              false
+            ],
+            [
+              "Existing Guide Map",
+              true,
+              false
+            ],
+            [
+              "Factor",
+              1.0,
+              true
+            ],
+            [
+              "Shape",
+              0.11999999731779099,
+              false
+            ],
+            [
+              "Tip Spread",
+              0.014999999664723873,
+              false
+            ],
+            [
+              "Clump Offset",
+              0.0,
+              false
+            ],
+            [
+              "Distance Falloff",
+              0.0,
+              false
+            ],
+            [
+              "Distance Threshold",
+              0.0,
+              false
+            ],
+            [
+              "Seed",
+              4,
+              false
+            ],
+            [
+              "Preserve Length",
+              false,
+              false
+            ]
+          ],
+          "group": "Clump Hair Curves"
+        },
+        {
+          "name": "Group.006",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Guide Index",
+              -987654,
+              true
+            ],
+            [
+              "Guide Distance",
+              0.10000000149011612,
+              false
+            ],
+            [
+              "Guide Mask",
+              1.0,
+              false
+            ],
+            [
+              "Existing Guide Map",
+              false,
+              false
+            ],
+            [
+              "Factor",
+              0.4099999964237213,
+              true
+            ],
+            [
+              "Shape",
+              0.3699999749660492,
+              false
+            ],
+            [
+              "Tip Spread",
+              0.0,
+              false
+            ],
+            [
+              "Clump Offset",
+              0.12999999523162842,
+              false
+            ],
+            [
+              "Distance Falloff",
+              0.0,
+              false
+            ],
+            [
+              "Distance Threshold",
+              0.0,
+              false
+            ],
+            [
+              "Seed",
+              52,
+              false
+            ],
+            [
+              "Preserve Length",
+              false,
+              false
+            ]
+          ],
+          "group": "Clump Hair Curves"
+        },
+        {
+          "name": "Group.004",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Cumulative Offset",
+              true,
+              false
+            ],
+            [
+              "Factor",
+              1.0,
+              false
+            ],
+            [
+              "Distance",
+              0.10999998450279236,
+              false
+            ],
+            [
+              "Shape",
+              -0.5,
+              false
+            ],
+            [
+              "Scale",
+              1.0,
+              false
+            ],
+            [
+              "Scale along Curve",
+              7.199999809265137,
+              false
+            ],
+            [
+              "Offset per Curve",
+              2.299999952316284,
+              false
+            ],
+            [
+              "Seed",
+              0,
+              false
+            ],
+            [
+              "Preserve Length",
+              true,
+              false
+            ]
+          ],
+          "group": "Hair Curves Noise"
+        },
+        {
+          "name": "Group Input.001",
+          "type": "NodeGroupInput",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Group.014",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Object",
+              {
+                "data": "long hair growth mesh",
+                "type": "Object"
+              },
+              false
+            ],
+            [
+              "Parting attribute",
+              "parting",
+              false
+            ],
+            [
+              "Proximity to parting",
+              0.10000000149011612,
+              false
+            ],
+            [
+              "Mix",
+              0.30000001192092896,
+              false
+            ]
+          ],
+          "group": "Snap hair to parting edges - Bystedt"
+        },
+        {
+          "name": "Group.007",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Surface",
+              {
+                "data": "long hair growth mesh",
+                "type": "Object"
+              },
+              false
+            ],
+            [
+              "Factor",
+              1.0,
+              false
+            ],
+            [
+              "Offset Distance",
+              0.0,
+              false
+            ],
+            [
+              "Above Surface",
+              0.0,
+              false
+            ],
+            [
+              "Smoothing Steps",
+              0,
+              false
+            ],
+            [
+              "Lock Roots",
+              true,
+              false
+            ]
+          ],
+          "group": "Shrinkwrap Hair Curves"
+        },
+        {
+          "name": "Reroute.004",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": [
+            [
+              "Input",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              true
+            ]
+          ]
+        },
+        {
+          "name": "Image Texture",
+          "type": "GeometryNodeImageTexture",
+          "mute": false,
+          "inputs": [
+            [
+              "Image",
+              {
+                "data": "hair side parting density",
+                "type": "Image"
+              },
+              false
+            ],
+            [
+              "Vector",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              true
+            ],
+            [
+              "Frame",
+              0,
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Reroute.013",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": [
+            [
+              "Input",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Group.005",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Surface",
+              {
+                "data": "long hair growth mesh",
+                "type": "Object"
+              },
+              false
+            ],
+            [
+              "Surface UV Map",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              true
+            ],
+            [
+              "Surface Rest Position",
+              false,
+              false
+            ],
+            [
+              "Follow Surface Normal",
+              false,
+              false
+            ],
+            [
+              "Part by Mesh Islands",
+              true,
+              false
+            ],
+            [
+              "Interpolation Guides",
+              4,
+              false
+            ],
+            [
+              "Distance to Guides",
+              0.0,
+              false
+            ],
+            [
+              "Poisson Disk Distribution",
+              false,
+              false
+            ],
+            [
+              "Density",
+              4000.0,
+              false
+            ],
+            [
+              "Density Mask",
+              1.0,
+              true
+            ],
+            [
+              "Mask Texture",
+              null,
+              false
+            ],
+            [
+              "Viewport Amount",
+              1.0,
+              true
+            ],
+            [
+              "Seed",
+              0,
+              false
+            ]
+          ],
+          "group": "Interpolate Hair Curves"
+        },
+        {
+          "name": "Join Geometry",
+          "type": "GeometryNodeJoinGeometry",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Reroute.009",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": [
+            [
+              "Input",
+              0,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "Reroute.018",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Reroute.015",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": [
+            [
+              "Input",
+              0.0,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "Reroute.014",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": [
+            [
+              "Input",
+              0.0,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "Object Info",
+          "type": "GeometryNodeObjectInfo",
+          "mute": false,
+          "inputs": [
+            [
+              "Object",
+              {
+                "data": "long hair strands",
+                "type": "Object"
+              },
+              false
+            ],
+            [
+              "As Instance",
+              false,
+              false
+            ]
+          ]
+        }
+      ],
+      "links": [
+        [
+          "Join Geometry.001",
+          "Geometry",
+          "Group Output",
+          "Geometry"
+        ],
+        [
+          "Spline Parameter",
+          "Factor",
+          "Map Range.001",
+          "Value"
+        ],
+        [
+          "Separate Geometry",
+          "Selection",
+          "Join Geometry",
+          "Geometry"
+        ],
+        [
+          "Reroute.002",
+          "Output",
+          "Reroute.001",
+          "Input"
+        ],
+        [
+          "Group.001",
+          "Geometry",
+          "Reroute.002",
+          "Input"
+        ],
+        [
+          "Reroute.005",
+          "Output",
+          "Reroute.006",
+          "Input"
+        ],
+        [
+          "Reroute.006",
+          "Output",
+          "Reroute.007",
+          "Input"
+        ],
+        [
+          "Reroute.007",
+          "Output",
+          "Group.006",
+          "Factor"
+        ],
+        [
+          "Reroute.004",
+          "Output",
+          "Image Texture",
+          "Vector"
+        ],
+        [
+          "Group Input",
+          "Geometry",
+          "Reroute.008",
+          "Input"
+        ],
+        [
+          "Random Value",
+          "Value",
+          "Separate Geometry",
+          "Selection"
+        ],
+        [
+          "Reroute.003",
+          "Output",
+          "Separate Geometry",
+          "Geometry"
+        ],
+        [
+          "Separate Geometry",
+          "Inverted",
+          "Group.004",
+          "Geometry"
+        ],
+        [
+          "Group.004",
+          "Geometry",
+          "Group.007",
+          "Geometry"
+        ],
+        [
+          "Group.007",
+          "Geometry",
+          "Join Geometry",
+          "Geometry"
+        ],
+        [
+          "Reroute.009",
+          "Output",
+          "Reroute.010",
+          "Input"
+        ],
+        [
+          "Reroute.010",
+          "Output",
+          "Reroute.011",
+          "Input"
+        ],
+        [
+          "Reroute.011",
+          "Output",
+          "Reroute.012",
+          "Input"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Map Range.002",
+          "Value"
+        ],
+        [
+          "Reroute",
+          "Output",
+          "Group.014",
+          "Input"
+        ],
+        [
+          "Map Range.001",
+          "Result",
+          "Reroute.005",
+          "Input"
+        ],
+        [
+          "Reroute.012",
+          "Output",
+          "Group.006",
+          "Guide Index"
+        ],
+        [
+          "Group.006",
+          "Geometry",
+          "Reroute.003",
+          "Input"
+        ],
+        [
+          "Reroute.001",
+          "Output",
+          "Group.005",
+          "Geometry"
+        ],
+        [
+          "Named Attribute",
+          "Attribute",
+          "Group.005",
+          "Surface UV Map"
+        ],
+        [
+          "Map Range.002",
+          "Result",
+          "Group.005",
+          "Density Mask"
+        ],
+        [
+          "Group.005",
+          "Guide Index",
+          "Reroute.009",
+          "Input"
+        ],
+        [
+          "Group.005",
+          "Geometry",
+          "Reroute",
+          "Input"
+        ],
+        [
+          "Group.014",
+          "Geometry",
+          "Group",
+          "Geometry"
+        ],
+        [
+          "Group",
+          "Geometry",
+          "Group.008",
+          "Geometry"
+        ],
+        [
+          "Reroute.011",
+          "Output",
+          "Group.008",
+          "Guide Index"
+        ],
+        [
+          "Group.008",
+          "Geometry",
+          "Group.006",
+          "Geometry"
+        ],
+        [
+          "Reroute.005",
+          "Output",
+          "Group.008",
+          "Factor"
+        ],
+        [
+          "Reroute.008",
+          "Output",
+          "Group.002",
+          "Geometry"
+        ],
+        [
+          "Group.002",
+          "Geometry",
+          "Group.001",
+          "Geometry"
+        ],
+        [
+          "Group Input.001",
+          "Viewport Amount",
+          "Group.005",
+          "Viewport Amount"
+        ],
+        [
+          "Named Attribute.002",
+          "Attribute",
+          "Reroute.004",
+          "Input"
+        ],
+        [
+          "Reroute.021",
+          "Output",
+          "Group.003",
+          "Geometry"
+        ],
+        [
+          "Group.003",
+          "Geometry",
+          "Group.010",
+          "Geometry"
+        ],
+        [
+          "Group.011",
+          "Geometry",
+          "Group.012",
+          "Geometry"
+        ],
+        [
+          "Map Range",
+          "Result",
+          "Group.012",
+          "Factor"
+        ],
+        [
+          "Group.013",
+          "Random",
+          "Map Range",
+          "Value"
+        ],
+        [
+          "Join Geometry",
+          "Geometry",
+          "Join Geometry.001",
+          "Geometry"
+        ],
+        [
+          "Group.012",
+          "Geometry",
+          "Join Geometry.001",
+          "Geometry"
+        ],
+        [
+          "Group.010",
+          "Geometry",
+          "Group.011",
+          "Geometry"
+        ],
+        [
+          "Group.010",
+          "Guide Index",
+          "Group.011",
+          "Guide Index"
+        ],
+        [
+          "Value",
+          "Value",
+          "Group.001",
+          "Radius"
+        ],
+        [
+          "Value",
+          "Value",
+          "Reroute.014",
+          "Input"
+        ],
+        [
+          "Reroute.016",
+          "Output",
+          "Reroute.015",
+          "Input"
+        ],
+        [
+          "Reroute.015",
+          "Output",
+          "Group.003",
+          "Radius"
+        ],
+        [
+          "Reroute.014",
+          "Output",
+          "Reroute.016",
+          "Input"
+        ],
+        [
+          "Object Info",
+          "Geometry",
+          "Reroute.021",
+          "Input"
+        ]
+      ]
+    },
+    "Surface Deform.004": {
+      "interface": [
+        {
+          "name": "Geometry",
+          "identifier": "Output_1",
+          "direction": "OUTPUT",
+          "default": null
+        },
+        {
+          "name": "Geometry",
+          "identifier": "Input_0",
+          "direction": "INPUT",
+          "default": null
+        }
+      ],
+      "nodes": [
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Deform Curves on Surface",
+          "type": "GeometryNodeDeformCurvesOnSurface",
+          "mute": false,
+          "inputs": []
+        }
+      ],
+      "links": [
+        [
+          "Group Input",
+          "Geometry",
+          "Deform Curves on Surface",
+          "Curves"
+        ],
+        [
+          "Deform Curves on Surface",
+          "Curves",
+          "Group Output",
+          "Geometry"
+        ]
+      ]
+    },
+    "Set Hair Curve Profile": {
+      "interface": [
+        {
+          "name": "Geometry",
+          "identifier": "Output_1",
+          "direction": "OUTPUT",
+          "default": null
+        },
+        {
+          "name": "Geometry",
+          "identifier": "Input_0",
+          "direction": "INPUT",
+          "default": null
+        },
+        {
+          "name": "Replace Radius",
+          "identifier": "Input_6",
+          "direction": "INPUT",
+          "default": true
+        },
+        {
+          "name": "Radius",
+          "identifier": "Input_3",
+          "direction": "INPUT",
+          "default": 0.009999999776482582
+        },
+        {
+          "name": "Shape",
+          "identifier": "Input_2",
+          "direction": "INPUT",
+          "default": 0.4999999403953552
+        },
+        {
+          "name": "Factor Min",
+          "identifier": "Input_4",
+          "direction": "INPUT",
+          "default": 0.0
+        },
+        {
+          "name": "Factor Max",
+          "identifier": "Input_5",
+          "direction": "INPUT",
+          "default": 1.0
+        }
+      ],
+      "nodes": [
+        {
+          "name": "Frame",
+          "type": "NodeFrame",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Radius",
+          "type": "GeometryNodeInputRadius",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Switch",
+          "type": "GeometryNodeSwitch",
+          "mute": false,
+          "inputs": [
+            [
+              "Switch",
+              false,
+              true
+            ],
+            [
+              "False",
+              0.0,
+              true
+            ],
+            [
+              "True",
+              0.0,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Math.006",
+          "type": "ShaderNodeMath",
+          "mute": false,
+          "inputs": [
+            [
+              "Value",
+              1.0,
+              false
+            ],
+            [
+              "Value",
+              0.5,
+              true
+            ],
+            [
+              "Value",
+              0.5,
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Group.002",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Value",
+              0.0,
+              true
+            ],
+            [
+              "Min",
+              0.0,
+              false
+            ],
+            [
+              "Max",
+              1.0,
+              false
+            ],
+            [
+              "Shape",
+              0.4999999403953552,
+              true
+            ],
+            [
+              "Base",
+              2.0,
+              false
+            ]
+          ],
+          "group": "shape_range"
+        },
+        {
+          "name": "Spline Parameter.004",
+          "type": "GeometryNodeSplineParameter",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix",
+          "mute": false,
+          "inputs": [
+            [
+              "Factor",
+              0.5,
+              true
+            ],
+            [
+              "Factor",
+              [
+                0.5,
+                0.5,
+                0.5
+              ],
+              false
+            ],
+            [
+              "A",
+              0.0,
+              true
+            ],
+            [
+              "B",
+              1.0,
+              true
+            ],
+            [
+              "A",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "B",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "A",
+              [
+                0.5,
+                0.5,
+                0.5,
+                1.0
+              ],
+              false
+            ],
+            [
+              "B",
+              [
+                0.5,
+                0.5,
+                0.5,
+                1.0
+              ],
+              false
+            ],
+            [
+              "A",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "B",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath",
+          "mute": false,
+          "inputs": [
+            [
+              "Value",
+              0.5,
+              true
+            ],
+            [
+              "Value",
+              0.5,
+              true
+            ],
+            [
+              "Value",
+              0.5,
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Reroute",
+          "type": "NodeReroute",
+          "mute": false,
+          "inputs": [
+            [
+              "Input",
+              0.0,
+              true
+            ]
+          ]
+        },
+        {
+          "name": "Value.001",
+          "type": "ShaderNodeValue",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Value.003",
+          "type": "ShaderNodeValue",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Value.005",
+          "type": "ShaderNodeValue",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Mix.001",
+          "type": "ShaderNodeMix",
+          "mute": false,
+          "inputs": [
+            [
+              "Factor",
+              0.5,
+              true
+            ],
+            [
+              "Factor",
+              [
+                0.5,
+                0.5,
+                0.5
+              ],
+              false
+            ],
+            [
+              "A",
+              0.0,
+              true
+            ],
+            [
+              "B",
+              1.0,
+              false
+            ],
+            [
+              "A",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "B",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "A",
+              [
+                0.5,
+                0.5,
+                0.5,
+                1.0
+              ],
+              false
+            ],
+            [
+              "B",
+              [
+                0.5,
+                0.5,
+                0.5,
+                1.0
+              ],
+              false
+            ],
+            [
+              "A",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "B",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Value",
+          "type": "ShaderNodeValue",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Spline Parameter.003",
+          "type": "GeometryNodeSplineParameter",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Group.001",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Value",
+              0.0,
+              true
+            ],
+            [
+              "Min",
+              0.0,
+              false
+            ],
+            [
+              "Max",
+              1.0,
+              false
+            ],
+            [
+              "Shape",
+              0.4999999403953552,
+              true
+            ],
+            [
+              "Base",
+              2.0,
+              false
+            ]
+          ],
+          "group": "shape_range"
+        },
+        {
+          "name": "Math.004",
+          "type": "ShaderNodeMath",
+          "mute": false,
+          "inputs": [
+            [
+              "Value",
+              0.5,
+              true
+            ],
+            [
+              "Value",
+              0.5,
+              true
+            ],
+            [
+              "Value",
+              0.5,
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath",
+          "mute": false,
+          "inputs": [
+            [
+              "Value",
+              0.5,
+              true
+            ],
+            [
+              "Value",
+              0.5,
+              true
+            ],
+            [
+              "Value",
+              0.5,
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Value.002",
+          "type": "ShaderNodeValue",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Value.004",
+          "type": "ShaderNodeValue",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix",
+          "mute": false,
+          "inputs": [
+            [
+              "Factor",
+              0.5,
+              true
+            ],
+            [
+              "Factor",
+              [
+                0.5,
+                0.5,
+                0.5
+              ],
+              false
+            ],
+            [
+              "A",
+              0.0,
+              true
+            ],
+            [
+              "B",
+              1.0,
+              false
+            ],
+            [
+              "A",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "B",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "A",
+              [
+                0.5,
+                0.5,
+                0.5,
+                1.0
+              ],
+              false
+            ],
+            [
+              "B",
+              [
+                0.5,
+                0.5,
+                0.5,
+                1.0
+              ],
+              false
+            ],
+            [
+              "A",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ],
+            [
+              "B",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Group",
+          "type": "GeometryNodeGroup",
+          "mute": false,
+          "inputs": [
+            [
+              "Value",
+              0.0,
+              true
+            ],
+            [
+              "Min",
+              0.0,
+              false
+            ],
+            [
+              "Max",
+              1.0,
+              false
+            ],
+            [
+              "Shape",
+              0.4999999403953552,
+              true
+            ],
+            [
+              "Base",
+              2.0,
+              false
+            ]
+          ],
+          "group": "shape_range"
+        },
+        {
+          "name": "Spline Parameter.002",
+          "type": "GeometryNodeSplineParameter",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath",
+          "mute": false,
+          "inputs": [
+            [
+              "Value",
+              1.0,
+              false
+            ],
+            [
+              "Value",
+              0.5,
+              true
+            ],
+            [
+              "Value",
+              0.5,
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Math.005",
+          "type": "ShaderNodeMath",
+          "mute": false,
+          "inputs": [
+            [
+              "Value",
+              0.5,
+              true
+            ],
+            [
+              "Value",
+              0.5,
+              true
+            ],
+            [
+              "Value",
+              0.5,
+              false
+            ]
+          ]
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput",
+          "mute": false,
+          "inputs": []
+        },
+        {
+          "name": "Set Curve Radius",
+          "type": "GeometryNodeSetCurveRadius",
+          "mute": false,
+          "inputs": [
+            [
+              "Selection",
+              true,
+              false
+            ],
+            [
+              "Radius",
+              0.009999999776482582,
+              true
+            ]
+          ]
+        }
+      ],
+      "links": [
+        [
+          "Set Curve Radius",
+          "Curve",
+          "Group Output",
+          "Geometry"
+        ],
+        [
+          "Group Input",
+          "Geometry",
+          "Set Curve Radius",
+          "Curve"
+        ],
+        [
+          "Group Input",
+          "Replace Radius",
+          "Switch",
+          "Switch"
+        ],
+        [
+          "Switch",
+          "Output",
+          "Reroute",
+          "Input"
+        ],
+        [
+          "Radius",
+          "Radius",
+          "Switch",
+          "False"
+        ],
+        [
+          "Group Input",
+          "Radius",
+          "Switch",
+          "True"
+        ],
+        [
+          "Math.003",
+          "Value",
+          "Math",
+          "Value"
+        ],
+        [
+          "Math",
+          "Value",
+          "Group",
+          "Value"
+        ],
+        [
+          "Value.002",
+          "Value",
+          "Mix",
+          "A"
+        ],
+        [
+          "Value",
+          "Value",
+          "Math",
+          "Value"
+        ],
+        [
+          "Value.004",
+          "Value",
+          "Group",
+          "Shape"
+        ],
+        [
+          "Math.004",
+          "Value",
+          "Group.001",
+          "Value"
+        ],
+        [
+          "Mix",
+          "Result",
+          "Math.005",
+          "Value"
+        ],
+        [
+          "Value.001",
+          "Value",
+          "Math.004",
+          "Value"
+        ],
+        [
+          "Value.003",
+          "Value",
+          "Mix.001",
+          "A"
+        ],
+        [
+          "Value.005",
+          "Value",
+          "Group.001",
+          "Shape"
+        ],
+        [
+          "Mix.001",
+          "Result",
+          "Math.005",
+          "Value"
+        ],
+        [
+          "Math.001",
+          "Value",
+          "Set Curve Radius",
+          "Radius"
+        ],
+        [
+          "Spline Parameter.002",
+          "Factor",
+          "Math.003",
+          "Value"
+        ],
+        [
+          "Spline Parameter.003",
+          "Factor",
+          "Math.004",
+          "Value"
+        ],
+        [
+          "Group",
+          "Value",
+          "Mix",
+          "Factor"
+        ],
+        [
+          "Group.001",
+          "Value",
+          "Mix.001",
+          "Factor"
+        ],
+        [
+          "Reroute",
+          "Output",
+          "Math.001",
+          "Value"
+        ],
+        [
+          "Group.002",
+          "Value",
+          "Mix.002",
+          "Factor"
+        ],
+        [
+          "Group Input",
+          "Factor Min",
+          "Mix.002",
+          "A"
+        ],
+        [
+          "Group Input",
+          "Factor Max",
+          "Mix.002",
+          "B"
+        ],
+        [
+          "Group Input",
+          "Shape",
+          "Group.002",
+          "Shape"
+        ],
+        [
+          "Math.006",
+          "Value",
+          "Group.002",
+          "Value"
+        ],
+        [
+          "Spline Parameter.004",
+          "Factor",
+          "Math.006",
+          "Value"
+        ],
+        [
+          "Mix.002",
+          "Result",
+          "Math.001",
+          "Value"
+        ]
+      ]
+    }
+  },
+  "sourceLicenseNotice": "Hair Demo File\n\n------------------------------\nCredits:\nDaniel Bystedt. CC BY-SA license\n\nwww.twitter.com/3dbystedt\nwww.artstation.com/artist/dbystedt\n------------------------------\n\nContent:\n\nCyberpunk hair\nThis setup is intended to showcase the workflow of creating a hair setup in the modifier tab. It uses some vertex groups to control hair parameters. This can be useful for artist that are not familiar with node graphs, but gives less detailed control compared to to the geometry nodes setups.\n    \nLong hair\nThis hairstyle uses two separate hair objects in order to separate the grooming in different parts. Look at the notes in the geometry nodes tab to get more insight about the hair setup. \n\nCurly hair\nLook at the notes in the geometry nodes tab to get more insight about the hair setup.\n\nBraids hair\nLook at the notes in the geometry nodes tab to get more insight about the hair setup. \n------------------------------\n\nNotes:\n\nWhen grooming, it is best to turn off all other hair collections in order to get a responsive grooming experience. You can do that with the little checkbox to the right of the collection in the outliner.\n    \nIn order to groom a hair object, select it and then choose \"Sculpt Mode\" from the object interaction mode menu in the top left corner.\n\nWhen testing the nodes in the Geometry Nodes workspace (tab at the top of the UI), you can mute nodes witht the hotkey \"M\" to see the influence they have on the hairstyle.\n\nHairstyles like braids and curls requires addition subdivision of the curves. Default is 1, but has been changed to 3 in Properties > Render Properties > Curves.\n\nEach hairstyle is attached to a growth mesh, which is just a single sided haircap. The growth mesh is separated in two mesh island. The hairs will interpolate based on which mesh island the guide hairs belong to. It also has a vertex group called \"parting\". This is used to move hairs closer to the parting line in order to avoid a \"bald look\" at the parting line.\n\nIn Eevee, the best display mode of curves are Strip instead of Strand, which is default. This can be changed in Properties > Render Properties > Curves.\n\nThe human haid normally has 90,000-150,000 hairs. The amount of hair has been kept less than that to keep the viewport and grooming running smoothly since there are multiple hairstyles in this file.\n\n",
+  "evaluated": false,
+  "seconds": 0.4367048740386963
+}

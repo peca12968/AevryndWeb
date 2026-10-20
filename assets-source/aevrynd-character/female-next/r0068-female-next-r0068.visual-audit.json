@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T03:35:44.833009+00:00",
+  "decision": "RETAIN_COMPLETE_APPEARANCE_STUDY_FULL_PHYSICS_UNACCEPTED",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0068-c-live-body-contact-study.blend",
+  "sha256": "ee588d13ef05eb7d54c231bc3438bde2653133dc4a739889da7e5ab5b9bf2dcc",
+  "qualifiedFoundation": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend",
+  "qualifiedFoundationSha256": "4d0e3f67735ae68c5c1fa3c933f7cabb03cb547928e778f7067a8e699620b708",
+  "sourceCredit": "Daniel Bystedt, Hair Styles Demo, CC BY-SA as author/publisher declares; version not supplied. Source-derived study, not exclusive Aevrynd groom.",
+  "sourceLicenseFile": "aevrynd-female-next-r0068.LICENSE-SOURCE.txt",
+  "gates": {
+    "appearance": {
+      "status": "RETAIN_COMPLETE_STATIC_APPEARANCE_GAIN_NOT_FULL_REALISM",
+      "wholeCharacterScore": null,
+      "observedGains": [
+        "Same complete r65 woman now has a continuous side-parted medium hairstyle, visible crown, rear and layered tips instead of sparse scalp hair.",
+        "Six actual complete views and identical-control comparison show a substantial whole-head silhouette gain.",
+        "Original body geometry, skin pigment, eye materials, lighting and exposure are independently unchanged."
+      ],
+      "defects": [
+        "Hair still has harsh bright strands, flyaway/tip stiffness and imperfect crown transition; not a production-realistic groom.",
+        "Face/skin remain uniformly smooth and mannequin-like; no new facial/anatomy improvement is claimed.",
+        "No qualified complete body rig, deforming follicle attachment, natural motion or full hair contacts; no cloth or runtime acceptance."
+      ],
+      "evidence": [
+        "r0068-complete-character-comparison.png",
+        "r0068-hair-multiangle.png",
+        "r0068-second-light-comparison.png",
+        "same-condition-view-proof.json"
+      ]
+    },
+    "function": {
+      "status": "PASS_SAVED_DATA_AND_NEUTRAL_REST_BINDING_ONLY",
+      "evidence": "c-native-readback.json",
+      "details": [
+        "All five original mesh data, keys, UVs, transforms, material signatures and neutral evaluated geometry exact.",
+        "10989 visible native Curves / 207239 points exact against stored evaluated arrays.",
+        "Two growth islands, UV and parting fields retained; body-triangle/barycentric rest reconstruction maximum error below one micrometre.",
+        "15 external relative texture files exist; embedded source images are packed, not missing runtime dependencies.",
+        "Editable main/flyaway guides and growth surface present. No new body rig or deforming follicle qualification."
+      ]
+    },
+    "contact": {
+      "status": "UNACCEPTED",
+      "evidence": "c-tissue-knot-probe.json",
+      "eligibleFreeKnotsTested": 180912,
+      "strongInsideFreeKnotsFound": 0,
+      "strongInsideRootsReportedSeparately": 2551,
+      "numericalAllowanceM": 1e-06,
+      "strongInsideWitnessThresholdM": 0.0001,
+      "freePathLowerBoundM": 0.02,
+      "exactGlobalSignedMinimumM": null,
+      "limits": [
+        "Nearest-normal prefilter and three parity rays only falsify strong inside knots in one neutral pose; no witness does not prove outside.",
+        "First20mm/root joins, between-knot Catmull-Rom paths, finite thickness, self contacts and continuous motion remain unaccepted.",
+        "Minimum sampled unsigned distance minus conservative world radius is negative for both parts, not a certified global clearance.",
+        "Anatomical root containment has no qualified follicle joining model; cannot automatically waive these roots."
+      ]
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "noNewRuntimeAsset": true,
+      "noEnginePerformanceClaim": true
+    }
+  },
+  "threeRoundReview": {
+    "baseline": "r65 complete head/body",
+    "productionRounds": [
+      "r66",
+      "r67",
+      "r68"
+    ],
+    "evidence": "r0068-three-round-complete-review.png",
+    "completeDefectResolved": false,
+    "newCompleteUsableCapability": false,
+    "substantialStaticWholeHeadGain": true,
+    "milestone": "CREDIBLE_COMPLETE_PERSON_NOT_MET",
+    "wholeCharacterStagnationReset": false,
+    "decision": "Retain the integrated complete appearance gain but change the broader dependency to controllable complete body/head and real scalp following. No additional style variants or point-only wrap repair chain.",
+    "nextAction": "Use the saved complete r68C appearance-study woman as the active authoring study, preserving r65 as the last scoped verified ocular/anatomy foundation. Stop new hairstyle, wrap-stage and root-offset variants. Change the next production dependency to usable body/head controls plus actual scalp/guide following on this same complete woman. The original CC0 char.blend was independently inspected and has NO armature, only two vertex groups; do not claim its embedded UI is a rig. The pinned CharMorph-Vitruvian config declares separate rigs.blend, bones.yaml, weights and joints; inspect/fetch those exact pinned CC0 data with bounded preflight before transferring source-indexed weights, without installing an addon or executing embedded code. First usable endpoint is actual controlled head motion with the retained full hairstyle attached, then independent body poses; require a real complete-head/body motion clip, not static groups. This establishes control/attachment only, not natural hair dynamics or contact. Keep finite curved shafts, root joins, hair self/body/cloth and continuous motion unaccepted until proved. No more isolated solver/tool-only mainline. Full face/skin/oral/body/cloth/rig, natural hair motion, real Aevrynd import/material/LOD/performance and explicit female acceptance remain mandatory."
+  },
+  "wholeCharacterScore": null,
+  "formalRuntimePromoted": false,
+  "userFemaleAcceptance": false,
+  "sourceStudies": [
+    {
+      "file": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0068-a-guide-surface-study.blend",
+      "sha256": "5fd02feb05f14206c9773f1cbb5632f62f01b01aa9c3e52e841f3ff3d72d68ba",
+      "decision": "REJECT_FREE_SHAFT_TISSUE_WITNESSES"
+    },
+    {
+      "file": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0068-b-surface-semantics-study.blend",
+      "sha256": "1bcd70d45e2c3e04d08ed696adecf6fa9ffdea75ba7819622378b01467f89cfd",
+      "decision": "REJECT_FREE_SHAFT_TISSUE_WITNESSES"
+    },
+    {
+      "file": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0068-c-live-body-contact-study.blend",
+      "sha256": "ee588d13ef05eb7d54c231bc3438bde2653133dc4a739889da7e5ab5b9bf2dcc",
+      "decision": "RETAIN_COMPLETE_APPEARANCE_STUDY_ONLY"
+    }
+  ],
+  "newMethodsThisContinuation": false,
+  "nextAction": "Use the saved complete r68C appearance-study woman as the active authoring study, preserving r65 as the last scoped verified ocular/anatomy foundation. Stop new hairstyle, wrap-stage and root-offset variants. Change the next production dependency to usable body/head controls plus actual scalp/guide following on this same complete woman. The original CC0 char.blend was independently inspected and has NO armature, only two vertex groups; do not claim its embedded UI is a rig. The pinned CharMorph-Vitruvian config declares separate rigs.blend, bones.yaml, weights and joints; inspect/fetch those exact pinned CC0 data with bounded preflight before transferring source-indexed weights, without installing an addon or executing embedded code. First usable endpoint is actual controlled head motion with the retained full hairstyle attached, then independent body poses; require a real complete-head/body motion clip, not static groups. This establishes control/attachment only, not natural hair dynamics or contact. Keep finite curved shafts, root joins, hair self/body/cloth and continuous motion unaccepted until proved. No more isolated solver/tool-only mainline. Full face/skin/oral/body/cloth/rig, natural hair motion, real Aevrynd import/material/LOD/performance and explicit female acceptance remain mandatory."
+}

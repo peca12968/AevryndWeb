@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0068-collider-interface.py", line 4, in <module>
+    s=importlib.util.spec_from_file_location('guide68interface','build-female-next-r0068-guide-surface.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m)
+                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~^^^
+  File "<frozen importlib._bootstrap_external>", line 1019, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1156, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1214, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Download\\Aevrynd\\build-female-next-r0068-guide-surface.py'
+
+Error: script failed, file: 'scripts/character-next/inspect-female-next-r0068-collider-interface.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

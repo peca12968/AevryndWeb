@@ -1,0 +1,106 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend",
+  "sourceSha256": "4d0e3f67735ae68c5c1fa3c933f7cabb03cb547928e778f7067a8e699620b708",
+  "publisherSource": "D:\\Download\\Aevrynd\\Reference\\character\\blender-bystedt-hair-cc-by-sa\\hair_nodes-female_hair_styles.blend",
+  "publisherSourceSha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+  "sourceCredit": "Daniel Bystedt, Hair Styles Demo, CC BY-SA as author/publisher declares; version not supplied. Source-derived study, not exclusive Aevrynd groom.",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0068-a-guide-surface-study.blend",
+  "outputSha256": "5fd02feb05f14206c9773f1cbb5632f62f01b01aa9c3e52e841f3ff3d72d68ba",
+  "metadataRecoveredWithoutRecreatingOrResavingModel": true,
+  "recoveryReason": "Model/curve data were saved before JSON could serialize a numpyfloat32 scalar. Read saved model and original source; never overwrite the model.",
+  "anatomicalAlignmentMatrix": [
+    [
+      0.09797844290733337,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.09306241571903229,
+      0.0,
+      0.014001435600221157
+    ],
+    [
+      0.0,
+      0.0,
+      0.0881463959813118,
+      0.1142554059624672
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "alignmentBasis": "Eye separation/centre and head top; single fit.",
+  "growthVertices": 876,
+  "growthTriangles": 1592,
+  "maximumGrowthRegistrationWorldM": 0.008914663146437003,
+  "growthRegistrationMethod": "First exits from verified head-interior origin onto actual render tissue, preserving topology/UV/islands/parting.",
+  "growthVertexStandOffWorldM": 0.00010777628631331027,
+  "guideBindings": [
+    {
+      "object": "AFN68_EDITABLE_MAIN_GUIDES",
+      "nativeGuides": 346,
+      "nativePoints": 6770,
+      "maximumOriginalRootGrowthDistanceLocal": 0.007259116074904124,
+      "binding": "Stored source growth triangle/barycentric rest-frame correspondence; recovered from immutable source roots."
+    },
+    {
+      "object": "AFN68_EDITABLE_FLYAWAY_GUIDES",
+      "nativeGuides": 30,
+      "nativePoints": 360,
+      "maximumOriginalRootGrowthDistanceLocal": 1.7684698246246513e-06,
+      "binding": "Stored source growth triangle/barycentric rest-frame correspondence; recovered from immutable source roots."
+    }
+  ],
+  "sourceNodeChanges": [
+    {
+      "object": "AFN68_EDITABLE_MAIN_GUIDES",
+      "node": "Group.007",
+      "surface": "AFN68_RENDER_BODY_CONTACT_REFERENCE",
+      "offsetAndActivationLocal": 0.0010999999940395355,
+      "basis": "Actual source radius; no collision tolerance sweep."
+    }
+  ],
+  "visibleComponents": [
+    {
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curves": 10959,
+      "points": 206879,
+      "curvePointCounts": [
+        12,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "localRadiusRangeM": [
+        0.0010999999940395355,
+        0.0010999999940395355
+      ]
+    },
+    {
+      "object": "AFN68_FLYAWAY_RENDER_CURVES",
+      "curves": 30,
+      "points": 360,
+      "curvePointCounts": [
+        12
+      ],
+      "localRadiusRangeM": [
+        0.0,
+        1.0000000656873453e-05
+      ]
+    }
+  ],
+  "bodyRenderCollisionReferenceMaximumReconstructionErrorM": 1.4548073951850234e-07,
+  "bodySkinEyesStageUnchanged": true,
+  "sourceSurfaceDeformModifiersDisabledAfterExplicitBind": true,
+  "newHairDynamicsOrEngineAcceptance": false,
+  "sourceRights": "CC BY-SA notice retained as source declares; exact version not specified. Body has separate CC0 provenance. No engine code licensing change.",
+  "recoverySecondsBeforePreview": 2.413179636001587
+}

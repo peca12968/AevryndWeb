@@ -1,0 +1,17 @@
+00:01.156  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0068-complete-study.py:23: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  native={n:v.mesh_signature(bpy.data.objects[n]) for n in names};mats={mat.name:k.f.v.v32.material_signature(mat) for mat in bpy.data.materials if mat.use_nodes};curves={o.name:k.v59.native_curves(o) for o in bpy.data.objects if o.type=='CURVES'};visibility={o.name:[o.type,o.hide_render,o.hide_get()] for o in bpy.context.scene.objects if o.type in ('MESH','CURVES')};stage=k.f.v.stage()
+00:01.906  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0068-c-live-body-contact-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0068-complete-study.py", line 47, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0068-complete-study.py", line 39, in main
+    p=Path(bpy.path.abspath(im.filepath));assert im.filepath.startswith('//') and p.exists();im.reload();images.append({'relative':im.filepath,'sha256':m.m.sha(p),'colorSpace':im.colorspace_settings.name})
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'scripts/character-next/verify-female-next-r0068-complete-study.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

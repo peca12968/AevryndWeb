@@ -1,0 +1,564 @@
+{
+  "status": "FAIL_ACTUAL_FREE_SHAFT_IN_TISSUE",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0068-a-guide-surface-study.blend",
+  "sha256": "5fd02feb05f14206c9773f1cbb5632f62f01b01aa9c3e52e841f3ff3d72d68ba",
+  "actualVisibleGeometryMatchesSavedData": true,
+  "parts": [
+    {
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "actualCurves": 10959,
+      "actualPoints": 206879,
+      "curveTypes": [
+        0
+      ],
+      "testedFreeKnots": 530,
+      "testedRoots": 30,
+      "strongInsideFreeKnots": 13,
+      "strongInsideRootsReportedSeparately": 2,
+      "unconfirmedNormalCandidates": 3,
+      "minimumSampledUnsignedDistanceM": 2.5863200789899565e-06,
+      "minimumSampledUnsignedMinusConservativeRadiusM": -0.00010518996653507973,
+      "allEligibleKnotsVisited": false,
+      "normalPrefilterDoesNotCertifyOutside": true
+    },
+    {
+      "object": "AFN68_FLYAWAY_RENDER_CURVES",
+      "actualCurves": 30,
+      "actualPoints": 360,
+      "curveTypes": [
+        0
+      ],
+      "testedFreeKnots": 220,
+      "testedRoots": 26,
+      "strongInsideFreeKnots": 12,
+      "strongInsideRootsReportedSeparately": 1,
+      "unconfirmedNormalCandidates": 4,
+      "minimumSampledUnsignedDistanceM": 4.729723514174111e-06,
+      "minimumSampledUnsignedMinusConservativeRadiusM": 3.7499390207413393e-06,
+      "allEligibleKnotsVisited": false,
+      "normalPrefilterDoesNotCertifyOutside": true
+    }
+  ],
+  "witnesses": [
+    {
+      "kind": "freeShaft",
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curve": 3,
+      "pointWithinCurve": 17,
+      "rootToKnotPolylineArcLowerBoundM": 0.0968638794053244,
+      "worldPoint": [
+        0.042370765609609506,
+        -0.10617292947669199,
+        1.5053086562544138
+      ],
+      "unsignedNearestTissueDistanceM": 0.0011713785352185369,
+      "conservativeRadiusBoundM": 0.00010777628661406968,
+      "nearestBodyTriangle": 139207,
+      "nativeBodyFace": 4350,
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            139221
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            226033
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            139225
+          ],
+          "terminated": true
+        }
+      ]
+    },
+    {
+      "kind": "freeShaft",
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curve": 3,
+      "pointWithinCurve": 18,
+      "rootToKnotPolylineArcLowerBoundM": 0.10376867710291261,
+      "worldPoint": [
+        0.03745954331882828,
+        -0.11037460157082002,
+        1.5028792368858035
+      ],
+      "unsignedNearestTissueDistanceM": 0.002772491192445159,
+      "conservativeRadiusBoundM": 0.00010777628661406968,
+      "nearestBodyTriangle": 185625,
+      "nativeBodyFace": 5800,
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            139200
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            226044
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            185613
+          ],
+          "terminated": true
+        }
+      ]
+    },
+    {
+      "kind": "freeShaft",
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curve": 3,
+      "pointWithinCurve": 19,
+      "rootToKnotPolylineArcLowerBoundM": 0.11079837017346664,
+      "worldPoint": [
+        0.032308753767010145,
+        -0.11484746415951541,
+        1.5011823420977493
+      ],
+      "unsignedNearestTissueDistanceM": 0.0034791009966284037,
+      "conservativeRadiusBoundM": 0.00010777628661406968,
+      "nearestBodyTriangle": 139333,
+      "nativeBodyFace": 4354,
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            139178
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            221291
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            139300
+          ],
+          "terminated": true
+        }
+      ]
+    },
+    {
+      "kind": "freeShaft",
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curve": 6,
+      "pointWithinCurve": 10,
+      "rootToKnotPolylineArcLowerBoundM": 0.1313418665069205,
+      "worldPoint": [
+        0.0709580683920592,
+        -0.03754174313530889,
+        1.4189431339521335
+      ],
+      "unsignedNearestTissueDistanceM": 0.0004180408432148397,
+      "conservativeRadiusBoundM": 0.00010777628661406968,
+      "nearestBodyTriangle": 165726,
+      "nativeBodyFace": 5178,
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            165726
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            114517
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            116764
+          ],
+          "terminated": true
+        }
+      ]
+    },
+    {
+      "kind": "freeShaft",
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curve": 8,
+      "pointWithinCurve": 9,
+      "rootToKnotPolylineArcLowerBoundM": 0.11424978584286702,
+      "worldPoint": [
+        0.07445710410831019,
+        -0.027993275034607024,
+        1.431472212857848
+      ],
+      "unsignedNearestTissueDistanceM": 0.0010681254789233208,
+      "conservativeRadiusBoundM": 0.00010777628661406968,
+      "nearestBodyTriangle": 115645,
+      "nativeBodyFace": 3613,
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            115587
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            113643
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            116335
+          ],
+          "terminated": true
+        }
+      ]
+    },
+    {
+      "kind": "freeShaft",
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curve": 10,
+      "pointWithinCurve": 8,
+      "rootToKnotPolylineArcLowerBoundM": 0.09943617255308079,
+      "worldPoint": [
+        0.07296100300075281,
+        -0.03173674668665605,
+        1.4325915110894414
+      ],
+      "unsignedNearestTissueDistanceM": 0.0016171738971024752,
+      "conservativeRadiusBoundM": 0.00010777628661406968,
+      "nearestBodyTriangle": 191573,
+      "nativeBodyFace": 5986,
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            201274
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            113682
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            183248
+          ],
+          "terminated": true
+        }
+      ]
+    },
+    {
+      "kind": "freeShaft",
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curve": 12,
+      "pointWithinCurve": 6,
+      "rootToKnotPolylineArcLowerBoundM": 0.06561757951845944,
+      "worldPoint": [
+        0.0779443022047932,
+        -0.02501704117427561,
+        1.4486840186122976
+      ],
+      "unsignedNearestTissueDistanceM": 0.0007605794817209244,
+      "conservativeRadiusBoundM": 0.00010777628661406968,
+      "nearestBodyTriangle": 140998,
+      "nativeBodyFace": 4406,
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            202190
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            140851
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            112953
+          ],
+          "terminated": true
+        }
+      ]
+    },
+    {
+      "kind": "freeShaft",
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curve": 17,
+      "pointWithinCurve": 3,
+      "rootToKnotPolylineArcLowerBoundM": 0.026468969478899818,
+      "worldPoint": [
+        0.075247328007503,
+        -0.029647487128897865,
+        1.4581329468230209
+      ],
+      "unsignedNearestTissueDistanceM": 0.0008812352316454053,
+      "conservativeRadiusBoundM": 0.00010777628661406968,
+      "nearestBodyTriangle": 113436,
+      "nativeBodyFace": 3544,
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            180768
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            113438
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            147914
+          ],
+          "terminated": true
+        }
+      ]
+    },
+    {
+      "kind": "freeShaft",
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curve": 17,
+      "pointWithinCurve": 4,
+      "rootToKnotPolylineArcLowerBoundM": 0.03546978994680908,
+      "worldPoint": [
+        0.07572303446701945,
+        -0.02694653186692797,
+        1.449560122718168
+      ],
+      "unsignedNearestTissueDistanceM": 0.0015005454188212752,
+      "conservativeRadiusBoundM": 0.00010777628661406968,
+      "nearestBodyTriangle": 116095,
+      "nativeBodyFace": 3627,
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            116173
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            186539
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            180772
+          ],
+          "terminated": true
+        }
+      ]
+    },
+    {
+      "kind": "freeShaft",
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curve": 17,
+      "pointWithinCurve": 5,
+      "rootToKnotPolylineArcLowerBoundM": 0.04496360831058209,
+      "worldPoint": [
+        0.07771948086872627,
+        -0.024443519595316765,
+        1.440622465393254
+      ],
+      "unsignedNearestTissueDistanceM": 0.0005622226744890213,
+      "conservativeRadiusBoundM": 0.00010777628661406968,
+      "nearestBodyTriangle": 174982,
+      "nativeBodyFace": 5468,
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            174995
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            114683
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            115339
+          ],
+          "terminated": true
+        }
+      ]
+    },
+    {
+      "kind": "freeShaft",
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curve": 24,
+      "pointWithinCurve": 8,
+      "rootToKnotPolylineArcLowerBoundM": 0.08949988948421078,
+      "worldPoint": [
+        0.07480734464622074,
+        -0.02707407571304854,
+        1.4497243817301495
+      ],
+      "unsignedNearestTissueDistanceM": 0.0022999392822384834,
+      "conservativeRadiusBoundM": 0.00010777628661406968,
+      "nearestBodyTriangle": 116077,
+      "nativeBodyFace": 3627,
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            168536
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            186544
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            180781
+          ],
+          "terminated": true
+        }
+      ]
+    },
+    {
+      "kind": "freeShaft",
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curve": 29,
+      "pointWithinCurve": 18,
+      "rootToKnotPolylineArcLowerBoundM": 0.21776778825763943,
+      "worldPoint": [
+        0.04170982697258907,
+        -0.022044937019880084,
+        1.3683901953465565
+      ],
+      "unsignedNearestTissueDistanceM": 0.0017825550166890025,
+      "conservativeRadiusBoundM": 0.00010777628661406968,
+      "nearestBodyTriangle": 790217,
+      "nativeBodyFace": 25350,
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            790184
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            790223
+          ],
+          "terminated": true
+        },
+        {
+          "count": 5,
+          "inside": true,
+          "triangleIDs": [
+            790451,
+            112806,
+            126971,
+            116383,
+            179917
+          ],
+          "terminated": true
+        }
+      ]
+    }
+  ],
+  "bodyRenderVertices": 560738,
+  "bodyRenderTriangles": 1121472,
+  "closedBodyManifoldVerified": true,
+  "numericalAllowanceM": 1e-06,
+  "strongInsideWitnessThresholdM": 0.0001,
+  "freePathLowerBoundM": 0.02,
+  "rootContainmentNotAutomaticallyClassifiedIllegal": true,
+  "sampledMinimumIsNotGlobalMinimum": true,
+  "exactGlobalSignedMinimumM": null,
+  "fullCurvedSegmentsFiniteThicknessRootsSelfOrContinuousAccepted": false,
+  "scope": "Confirmed interpolating knots only, one neutral pose. Nearest-normal prefilter/three parities falsify strong inside knots; their absence cannot prove outside at every point or finite-tube/spline clearance. Anisotropic matrix spectral norm is a conservative radius bound, not an exact circular world radius.",
+  "seconds": 10.887462139129639
+}
