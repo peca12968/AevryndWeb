@@ -1,0 +1,12 @@
+00:01.453  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0082-head-cage.py", line 65, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0082-head-cage.py", line 55, in main
+    source=np.array(src);target=np.array(dst);shift=np.linalg.norm(target-source,axis=1);ratio=np.array([r['targetRadiusM']/r['sourceRadiusM'] for r in rows]);det=ratio[T].prod(1);guard={'maximumCageLandmarkDisplacementM':float(shift.max()),'maximumAllowedM':.035,'minimumExactFanJacobianDeterminant':float(det.min()),'minimumAllowedDeterminant':.2,'maximumExactFanJacobianDeterminant':float(det.max()),'positiveOrientationByPairedRadialRadii':True,'allLandmarks':rows,'originWorld':C.tolist(),'neckClosurePlaneWorldZ':cut,'neckClosureIsComputationalCageBoundaryNotAContactExclusion':True};save('a-cage-construction-guard.json',guard);assert shift.max()<.035 and det.min()>.2,'Whole cage is not a bounded orientation-preserving candidate'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Whole cage is not a bounded orientation-preserving candidate
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

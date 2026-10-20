@@ -1,0 +1,14 @@
+00:01.515  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0082-head-cage.py", line 63, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0082-head-cage.py", line 50, in main
+    head=m.rig.k.mesh(bpy.data.objects['AFN68_ORIGINAL_REFERENCE_HEAD_HIDDEN']);body=m.rig.k.mesh(bpy.data.objects['AFN60_BODY_ORAL_AND_OCULAR_LINING']);sourceTree=BVHTree.FromPolygons(head['V'].tolist(),head['T'].tolist(),all_triangles=True);targetTree=BVHTree.FromPolygons(body['V'].tolist(),body['T'].tolist(),all_triangles=True);C=np.array([0.,0.,15.47])@A[:3,:3].T+A[:3,3];rig=bpy.data.objects['AFN69_BODY_CONTROLS'];neckWorld=np.array(rig.matrix_world@rig.data.bones['Neck'].head_local);cut=float(neckWorld[2]);assert .04<C[2]-cut<.25,(C,cut);dirs,T=sphere();src=[];dst=[];rows=[]
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0060-assembly.py", line 12, in mesh
+    ev=o.evaluated_get(bpy.context.evaluated_depsgraph_get());me=ev.to_mesh();P=np.empty(len(me.vertices)*3,dtype='f4');me.vertices.foreach_get('co',P);mx=np.array(o.matrix_world,dtype='f8');V=P.reshape(-1,3).astype('f8')@mx[:3,:3].T+mx[:3,3];me.calc_loop_triangles();T=np.empty(len(me.loop_triangles)*3,dtype='i4');me.loop_triangles.foreach_get('vertices',T);T=T.reshape(-1,3);mi=np.empty(len(T),dtype='i4');me.loop_triangles.foreach_get('material_index',mi);poly=np.empty(len(T),dtype='i4');me.loop_triangles.foreach_get('polygon_index',poly);fi=np.empty(len(me.polygons),dtype='i4');me.attributes['AFN60_NativeFaceID'].data.foreach_get('value',fi);result={'V':V,'T':T,'mi':mi,'nativeTriangleFace':fi[poly]}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'bpy_prop_collection[key]: key "AFN60_NativeFaceID" not found'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
