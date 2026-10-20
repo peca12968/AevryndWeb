@@ -1,0 +1,11 @@
+{
+  "priorEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0071-hair-scattering\\continuation.json",
+  "priorEvidenceSha256": "447bf22e80ba5f828f62fe3cad859320e0be8258815439ce93e37f6edb881a07",
+  "priorGenerator": "D:\\Download\\Aevrynd\\scripts\\character-next\\build-female-next-r0071-hair-scattering.py",
+  "priorGeneratorSha256": "ce6393606bd08ebc60a813e707b95f610905ceb05bd061271bc57ab6f3036dc8",
+  "correction": "The EEVEE/Cycles routing and scalar-random-as-gray finding already existed in r71. R83/R84 rediscovery is not a new discovery or character-quality gain. The current curly groom differs, but repeating a bounded Brown field does not by itself resolve the old material failure.",
+  "newR84Evidence": "Actual evaluated material slot and final Brown emission field verified; fixed source RGB with32 samples/no denoising still gives a pale fibre-scattering render. Two native scattering models plus tangent dielectric approximation all fail complete appearance. Exact cause of strong pale response not isolated.",
+  "stopRule": "No further native-hair colour/roughness/coat/radius/density/branch/model scans under the same premise.",
+  "carrierContextCorrection": "The skin authoring carrier has no material slots, but actual evaluated visible skin retains canonical skin materials and texture maps. Empty carrier slots do not prove missing actual skin shading. The first context walker deduplicated by repeated node-tree name, then was corrected to actual node-tree identity before any candidate or adoption decision.",
+  "skinActualState": "2K supplied colour textures,1K roughness/height textures,SSS weight.12/scale.001m. These are existing settings, not a new appearance pass."
+}

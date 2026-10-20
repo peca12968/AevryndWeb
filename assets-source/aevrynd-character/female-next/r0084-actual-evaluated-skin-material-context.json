@@ -1,0 +1,1938 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend",
+  "objects": [
+    {
+      "object": "AFN60_BODY_ORAL_AND_OCULAR_LINING",
+      "hideRender": true,
+      "authoringMaterialSlots": [
+        "AFN57_CANONICAL_IRIS",
+        "AFN57_CANONICAL_MOUTH",
+        "AFN57_CANONICAL_PUPIL",
+        "AFN57_COMBINED_SCLERA_CORNEA_APPROXIMATION",
+        "AFN57_CANONICAL_SKIN",
+        "AFN57_CANONICAL_SKIN",
+        "AFN57_CANONICAL_BROW_LASH_AND_HAIR",
+        "AFN57_CANONICAL_WETLINE"
+      ],
+      "evaluatedMaterialSlots": [
+        "AFN57_CANONICAL_IRIS",
+        "AFN57_CANONICAL_MOUTH",
+        "AFN57_CANONICAL_PUPIL",
+        "AFN57_COMBINED_SCLERA_CORNEA_APPROXIMATION",
+        "AFN57_CANONICAL_SKIN",
+        "AFN57_CANONICAL_SKIN",
+        "AFN57_CANONICAL_BROW_LASH_AND_HAIR",
+        "AFN57_CANONICAL_WETLINE"
+      ],
+      "evaluatedFaces": 560736,
+      "materialIndices": [
+        1,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "object": "AFN74_SKIN_AND_EXISTING_OCULAR_LINING",
+      "hideRender": false,
+      "authoringMaterialSlots": [],
+      "evaluatedMaterialSlots": [
+        "AFN57_CANONICAL_IRIS",
+        "AFN57_CANONICAL_MOUTH",
+        "AFN57_CANONICAL_PUPIL",
+        "AFN57_COMBINED_SCLERA_CORNEA_APPROXIMATION",
+        "AFN57_CANONICAL_SKIN",
+        "AFN57_CANONICAL_SKIN",
+        "AFN57_CANONICAL_BROW_LASH_AND_HAIR",
+        "AFN57_CANONICAL_WETLINE"
+      ],
+      "evaluatedFaces": 420352,
+      "materialIndices": [
+        4,
+        5,
+        7
+      ]
+    }
+  ],
+  "trees": [
+    {
+      "tree": "Shader Nodetree",
+      "ownerMaterial": "AFN57_CANONICAL_IRIS",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": [
+            [
+              "Base Color",
+              [
+                0.14000000059604645,
+                0.07000000029802322,
+                0.019999999552965164,
+                1.0
+              ],
+              [
+                [
+                  "SuppliedIrisColour",
+                  "Color"
+                ]
+              ]
+            ],
+            [
+              "Metallic",
+              0.0,
+              []
+            ],
+            [
+              "Roughness",
+              0.30000001192092896,
+              []
+            ],
+            [
+              "IOR",
+              1.5,
+              []
+            ],
+            [
+              "Alpha",
+              1.0,
+              []
+            ],
+            [
+              "Thin Wall",
+              false,
+              []
+            ],
+            [
+              "Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Weight",
+              0.0,
+              []
+            ],
+            [
+              "Diffuse Roughness",
+              0.0,
+              []
+            ],
+            [
+              "Subsurface Weight",
+              0.0,
+              []
+            ],
+            [
+              "Subsurface Radius",
+              [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              []
+            ],
+            [
+              "Subsurface Scale",
+              0.004999999888241291,
+              []
+            ],
+            [
+              "Subsurface IOR",
+              1.399999976158142,
+              []
+            ],
+            [
+              "Subsurface Anisotropy",
+              0.0,
+              []
+            ],
+            [
+              "Specular IOR Level",
+              0.5,
+              []
+            ],
+            [
+              "Specular Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Anisotropic",
+              0.0,
+              []
+            ],
+            [
+              "Anisotropic Rotation",
+              0.0,
+              []
+            ],
+            [
+              "Tangent",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Transmission Weight",
+              0.0,
+              []
+            ],
+            [
+              "Coat Weight",
+              0.0,
+              []
+            ],
+            [
+              "Coat Roughness",
+              0.029999999329447746,
+              []
+            ],
+            [
+              "Coat IOR",
+              1.5,
+              []
+            ],
+            [
+              "Coat Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Coat Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Sheen Weight",
+              0.0,
+              []
+            ],
+            [
+              "Sheen Roughness",
+              0.5,
+              []
+            ],
+            [
+              "Sheen Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Color",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Strength",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film Thickness",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film IOR",
+              1.3300000429153442,
+              []
+            ]
+          ]
+        },
+        {
+          "name": "SuppliedIrisColour",
+          "image": "Iris_Color.1007.exr",
+          "path": "//study-vitruvian-textures\\Iris_Color.1007.exr",
+          "size": [
+            1024,
+            1024
+          ],
+          "colourSpace": "Linear Rec.709"
+        }
+      ]
+    },
+    {
+      "tree": "Shader Nodetree",
+      "ownerMaterial": "AFN57_CANONICAL_MOUTH",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": [
+            [
+              "Base Color",
+              [
+                0.4000000059604645,
+                0.10000000149011612,
+                0.10000000149011612,
+                1.0
+              ],
+              [
+                [
+                  "SuppliedMouthColour",
+                  "Color"
+                ]
+              ]
+            ],
+            [
+              "Metallic",
+              0.0,
+              []
+            ],
+            [
+              "Roughness",
+              0.2800000011920929,
+              []
+            ],
+            [
+              "IOR",
+              1.5,
+              []
+            ],
+            [
+              "Alpha",
+              1.0,
+              []
+            ],
+            [
+              "Thin Wall",
+              false,
+              []
+            ],
+            [
+              "Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Weight",
+              0.0,
+              []
+            ],
+            [
+              "Diffuse Roughness",
+              0.0,
+              []
+            ],
+            [
+              "Subsurface Weight",
+              0.03999999910593033,
+              []
+            ],
+            [
+              "Subsurface Radius",
+              [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              []
+            ],
+            [
+              "Subsurface Scale",
+              0.004999999888241291,
+              []
+            ],
+            [
+              "Subsurface IOR",
+              1.399999976158142,
+              []
+            ],
+            [
+              "Subsurface Anisotropy",
+              0.0,
+              []
+            ],
+            [
+              "Specular IOR Level",
+              0.5,
+              []
+            ],
+            [
+              "Specular Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Anisotropic",
+              0.0,
+              []
+            ],
+            [
+              "Anisotropic Rotation",
+              0.0,
+              []
+            ],
+            [
+              "Tangent",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Transmission Weight",
+              0.0,
+              []
+            ],
+            [
+              "Coat Weight",
+              0.0,
+              []
+            ],
+            [
+              "Coat Roughness",
+              0.029999999329447746,
+              []
+            ],
+            [
+              "Coat IOR",
+              1.5,
+              []
+            ],
+            [
+              "Coat Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Coat Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Sheen Weight",
+              0.0,
+              []
+            ],
+            [
+              "Sheen Roughness",
+              0.5,
+              []
+            ],
+            [
+              "Sheen Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Color",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Strength",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film Thickness",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film IOR",
+              1.3300000429153442,
+              []
+            ]
+          ]
+        },
+        {
+          "name": "SuppliedMouthColour",
+          "image": "Mouth_Color.1008.exr",
+          "path": "//study-vitruvian-textures\\Mouth_Color.1008.exr",
+          "size": [
+            1024,
+            1024
+          ],
+          "colourSpace": "Linear Rec.709"
+        }
+      ]
+    },
+    {
+      "tree": "Shader Nodetree",
+      "ownerMaterial": "AFN57_CANONICAL_PUPIL",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": [
+            [
+              "Base Color",
+              [
+                0.0010000000474974513,
+                0.0010000000474974513,
+                0.0010000000474974513,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Metallic",
+              0.0,
+              []
+            ],
+            [
+              "Roughness",
+              0.30000001192092896,
+              []
+            ],
+            [
+              "IOR",
+              1.5,
+              []
+            ],
+            [
+              "Alpha",
+              1.0,
+              []
+            ],
+            [
+              "Thin Wall",
+              false,
+              []
+            ],
+            [
+              "Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Weight",
+              0.0,
+              []
+            ],
+            [
+              "Diffuse Roughness",
+              0.0,
+              []
+            ],
+            [
+              "Subsurface Weight",
+              0.0,
+              []
+            ],
+            [
+              "Subsurface Radius",
+              [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              []
+            ],
+            [
+              "Subsurface Scale",
+              0.004999999888241291,
+              []
+            ],
+            [
+              "Subsurface IOR",
+              1.399999976158142,
+              []
+            ],
+            [
+              "Subsurface Anisotropy",
+              0.0,
+              []
+            ],
+            [
+              "Specular IOR Level",
+              0.5,
+              []
+            ],
+            [
+              "Specular Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Anisotropic",
+              0.0,
+              []
+            ],
+            [
+              "Anisotropic Rotation",
+              0.0,
+              []
+            ],
+            [
+              "Tangent",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Transmission Weight",
+              0.0,
+              []
+            ],
+            [
+              "Coat Weight",
+              0.0,
+              []
+            ],
+            [
+              "Coat Roughness",
+              0.029999999329447746,
+              []
+            ],
+            [
+              "Coat IOR",
+              1.5,
+              []
+            ],
+            [
+              "Coat Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Coat Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Sheen Weight",
+              0.0,
+              []
+            ],
+            [
+              "Sheen Roughness",
+              0.5,
+              []
+            ],
+            [
+              "Sheen Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Color",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Strength",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film Thickness",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film IOR",
+              1.3300000429153442,
+              []
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "tree": "Shader Nodetree",
+      "ownerMaterial": "AFN57_COMBINED_SCLERA_CORNEA_APPROXIMATION",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": [
+            [
+              "Base Color",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Metallic",
+              0.0,
+              []
+            ],
+            [
+              "Roughness",
+              0.02500000037252903,
+              []
+            ],
+            [
+              "IOR",
+              1.3760000467300415,
+              []
+            ],
+            [
+              "Alpha",
+              1.0,
+              []
+            ],
+            [
+              "Thin Wall",
+              false,
+              []
+            ],
+            [
+              "Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Weight",
+              0.0,
+              []
+            ],
+            [
+              "Diffuse Roughness",
+              0.0,
+              []
+            ],
+            [
+              "Subsurface Weight",
+              0.0,
+              []
+            ],
+            [
+              "Subsurface Radius",
+              [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              []
+            ],
+            [
+              "Subsurface Scale",
+              0.004999999888241291,
+              []
+            ],
+            [
+              "Subsurface IOR",
+              1.399999976158142,
+              []
+            ],
+            [
+              "Subsurface Anisotropy",
+              0.0,
+              []
+            ],
+            [
+              "Specular IOR Level",
+              0.5,
+              []
+            ],
+            [
+              "Specular Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Anisotropic",
+              0.0,
+              []
+            ],
+            [
+              "Anisotropic Rotation",
+              0.0,
+              []
+            ],
+            [
+              "Tangent",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Transmission Weight",
+              1.0,
+              []
+            ],
+            [
+              "Coat Weight",
+              0.0,
+              []
+            ],
+            [
+              "Coat Roughness",
+              0.029999999329447746,
+              []
+            ],
+            [
+              "Coat IOR",
+              1.5,
+              []
+            ],
+            [
+              "Coat Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Coat Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Sheen Weight",
+              0.0,
+              []
+            ],
+            [
+              "Sheen Roughness",
+              0.5,
+              []
+            ],
+            [
+              "Sheen Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Color",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Strength",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film Thickness",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film IOR",
+              1.3300000429153442,
+              []
+            ]
+          ]
+        },
+        {
+          "name": "Principled BSDF.001",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": [
+            [
+              "Base Color",
+              [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              [
+                [
+                  "SuppliedScleraColour",
+                  "Color"
+                ]
+              ]
+            ],
+            [
+              "Metallic",
+              0.0,
+              []
+            ],
+            [
+              "Roughness",
+              0.25,
+              []
+            ],
+            [
+              "IOR",
+              1.5,
+              []
+            ],
+            [
+              "Alpha",
+              1.0,
+              []
+            ],
+            [
+              "Thin Wall",
+              false,
+              []
+            ],
+            [
+              "Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Weight",
+              0.0,
+              []
+            ],
+            [
+              "Diffuse Roughness",
+              0.0,
+              []
+            ],
+            [
+              "Subsurface Weight",
+              0.0,
+              []
+            ],
+            [
+              "Subsurface Radius",
+              [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              []
+            ],
+            [
+              "Subsurface Scale",
+              0.004999999888241291,
+              []
+            ],
+            [
+              "Subsurface IOR",
+              1.399999976158142,
+              []
+            ],
+            [
+              "Subsurface Anisotropy",
+              0.0,
+              []
+            ],
+            [
+              "Specular IOR Level",
+              0.5,
+              []
+            ],
+            [
+              "Specular Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Anisotropic",
+              0.0,
+              []
+            ],
+            [
+              "Anisotropic Rotation",
+              0.0,
+              []
+            ],
+            [
+              "Tangent",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Transmission Weight",
+              0.0,
+              []
+            ],
+            [
+              "Coat Weight",
+              0.0,
+              []
+            ],
+            [
+              "Coat Roughness",
+              0.029999999329447746,
+              []
+            ],
+            [
+              "Coat IOR",
+              1.5,
+              []
+            ],
+            [
+              "Coat Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Coat Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Sheen Weight",
+              0.0,
+              []
+            ],
+            [
+              "Sheen Roughness",
+              0.5,
+              []
+            ],
+            [
+              "Sheen Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Color",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Strength",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film Thickness",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film IOR",
+              1.3300000429153442,
+              []
+            ]
+          ]
+        },
+        {
+          "name": "SuppliedScleraColour",
+          "image": "Sclera_Color.1005.exr",
+          "path": "//study-vitruvian-textures\\Sclera_Color.1005.exr",
+          "size": [
+            1024,
+            1024
+          ],
+          "colourSpace": "Linear Rec.709"
+        }
+      ]
+    },
+    {
+      "tree": "Shader Nodetree",
+      "ownerMaterial": "AFN57_CANONICAL_SKIN",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": [
+            [
+              "Base Color",
+              [
+                0.5,
+                0.30000001192092896,
+                0.23000000417232513,
+                1.0
+              ],
+              [
+                [
+                  "Mix (Legacy).002",
+                  "Color"
+                ]
+              ]
+            ],
+            [
+              "Metallic",
+              0.0,
+              []
+            ],
+            [
+              "Roughness",
+              0.44999998807907104,
+              [
+                [
+                  "Mix (Legacy).005",
+                  "Color"
+                ]
+              ]
+            ],
+            [
+              "IOR",
+              1.399999976158142,
+              []
+            ],
+            [
+              "Alpha",
+              1.0,
+              []
+            ],
+            [
+              "Thin Wall",
+              false,
+              []
+            ],
+            [
+              "Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                [
+                  "Bump",
+                  "Normal"
+                ]
+              ]
+            ],
+            [
+              "Weight",
+              0.0,
+              []
+            ],
+            [
+              "Diffuse Roughness",
+              0.0,
+              []
+            ],
+            [
+              "Subsurface Weight",
+              0.11999999731779099,
+              []
+            ],
+            [
+              "Subsurface Radius",
+              [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              []
+            ],
+            [
+              "Subsurface Scale",
+              0.0010000000474974513,
+              []
+            ],
+            [
+              "Subsurface IOR",
+              1.399999976158142,
+              []
+            ],
+            [
+              "Subsurface Anisotropy",
+              0.0,
+              []
+            ],
+            [
+              "Specular IOR Level",
+              0.5,
+              []
+            ],
+            [
+              "Specular Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Anisotropic",
+              0.0,
+              []
+            ],
+            [
+              "Anisotropic Rotation",
+              0.0,
+              []
+            ],
+            [
+              "Tangent",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Transmission Weight",
+              0.0,
+              []
+            ],
+            [
+              "Coat Weight",
+              0.0,
+              []
+            ],
+            [
+              "Coat Roughness",
+              0.029999999329447746,
+              []
+            ],
+            [
+              "Coat IOR",
+              1.5,
+              []
+            ],
+            [
+              "Coat Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Coat Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Sheen Weight",
+              0.0,
+              []
+            ],
+            [
+              "Sheen Roughness",
+              0.5,
+              []
+            ],
+            [
+              "Sheen Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Color",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Strength",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film Thickness",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film IOR",
+              1.3300000429153442,
+              []
+            ]
+          ]
+        },
+        {
+          "name": "SuppliedSkinColour_1001",
+          "image": "Light_Skin_Color.1001.exr",
+          "path": "//study-vitruvian-textures\\Light_Skin_Color.1001.exr",
+          "size": [
+            2048,
+            2048
+          ],
+          "colourSpace": "Linear Rec.709"
+        },
+        {
+          "name": "SuppliedSkinColour_1002",
+          "image": "Light_Skin_Color.1002.exr",
+          "path": "//study-vitruvian-textures\\Light_Skin_Color.1002.exr",
+          "size": [
+            2048,
+            2048
+          ],
+          "colourSpace": "Linear Rec.709"
+        },
+        {
+          "name": "SuppliedSkinColour_1003",
+          "image": "Light_Skin_Color.1003.exr",
+          "path": "//study-vitruvian-textures\\Light_Skin_Color.1003.exr",
+          "size": [
+            2048,
+            2048
+          ],
+          "colourSpace": "Linear Rec.709"
+        },
+        {
+          "name": "SuppliedSkinColour_1004",
+          "image": "Light_Skin_Color.1004.exr",
+          "path": "//study-vitruvian-textures\\Light_Skin_Color.1004.exr",
+          "size": [
+            2048,
+            2048
+          ],
+          "colourSpace": "Linear Rec.709"
+        },
+        {
+          "name": "SuppliedSkinRoughness_1001",
+          "image": "Skin_Roughness.1001.exr",
+          "path": "//study-vitruvian-textures\\Skin_Roughness.1001.exr",
+          "size": [
+            1024,
+            1024
+          ],
+          "colourSpace": "Non-Color"
+        },
+        {
+          "name": "SuppliedSkinRoughness_1002",
+          "image": "Skin_Roughness.1002.exr",
+          "path": "//study-vitruvian-textures\\Skin_Roughness.1002.exr",
+          "size": [
+            1024,
+            1024
+          ],
+          "colourSpace": "Non-Color"
+        },
+        {
+          "name": "SuppliedSkinRoughness_1003",
+          "image": "Skin_Roughness.1003.exr",
+          "path": "//study-vitruvian-textures\\Skin_Roughness.1003.exr",
+          "size": [
+            1024,
+            1024
+          ],
+          "colourSpace": "Non-Color"
+        },
+        {
+          "name": "SuppliedSkinRoughness_1004",
+          "image": "Skin_Roughness.1004.exr",
+          "path": "//study-vitruvian-textures\\Skin_Roughness.1004.exr",
+          "size": [
+            1024,
+            1024
+          ],
+          "colourSpace": "Non-Color"
+        },
+        {
+          "name": "SuppliedSkinHeight_1001",
+          "image": "Skin_Height.1001.exr",
+          "path": "//study-vitruvian-textures\\Skin_Height.1001.exr",
+          "size": [
+            1024,
+            1024
+          ],
+          "colourSpace": "Non-Color"
+        },
+        {
+          "name": "SuppliedSkinHeight_1002",
+          "image": "Skin_Height.1002.exr",
+          "path": "//study-vitruvian-textures\\Skin_Height.1002.exr",
+          "size": [
+            1024,
+            1024
+          ],
+          "colourSpace": "Non-Color"
+        },
+        {
+          "name": "SuppliedSkinHeight_1003",
+          "image": "Skin_Height.1003.exr",
+          "path": "//study-vitruvian-textures\\Skin_Height.1003.exr",
+          "size": [
+            1024,
+            1024
+          ],
+          "colourSpace": "Non-Color"
+        },
+        {
+          "name": "SuppliedSkinHeight_1004",
+          "image": "Skin_Height.1004.exr",
+          "path": "//study-vitruvian-textures\\Skin_Height.1004.exr",
+          "size": [
+            1024,
+            1024
+          ],
+          "colourSpace": "Non-Color"
+        }
+      ]
+    },
+    {
+      "tree": "Shader Nodetree",
+      "ownerMaterial": "AFN57_CANONICAL_BROW_LASH_AND_HAIR",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": [
+            [
+              "Base Color",
+              [
+                0.054999999701976776,
+                0.023000000044703484,
+                0.009999999776482582,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Metallic",
+              0.0,
+              []
+            ],
+            [
+              "Roughness",
+              0.3799999952316284,
+              []
+            ],
+            [
+              "IOR",
+              1.5,
+              []
+            ],
+            [
+              "Alpha",
+              1.0,
+              []
+            ],
+            [
+              "Thin Wall",
+              false,
+              []
+            ],
+            [
+              "Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Weight",
+              0.0,
+              []
+            ],
+            [
+              "Diffuse Roughness",
+              0.0,
+              []
+            ],
+            [
+              "Subsurface Weight",
+              0.0,
+              []
+            ],
+            [
+              "Subsurface Radius",
+              [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              []
+            ],
+            [
+              "Subsurface Scale",
+              0.004999999888241291,
+              []
+            ],
+            [
+              "Subsurface IOR",
+              1.399999976158142,
+              []
+            ],
+            [
+              "Subsurface Anisotropy",
+              0.0,
+              []
+            ],
+            [
+              "Specular IOR Level",
+              0.5,
+              []
+            ],
+            [
+              "Specular Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Anisotropic",
+              0.0,
+              []
+            ],
+            [
+              "Anisotropic Rotation",
+              0.0,
+              []
+            ],
+            [
+              "Tangent",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Transmission Weight",
+              0.0,
+              []
+            ],
+            [
+              "Coat Weight",
+              0.0,
+              []
+            ],
+            [
+              "Coat Roughness",
+              0.029999999329447746,
+              []
+            ],
+            [
+              "Coat IOR",
+              1.5,
+              []
+            ],
+            [
+              "Coat Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Coat Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Sheen Weight",
+              0.0,
+              []
+            ],
+            [
+              "Sheen Roughness",
+              0.5,
+              []
+            ],
+            [
+              "Sheen Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Color",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Strength",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film Thickness",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film IOR",
+              1.3300000429153442,
+              []
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "tree": "Shader Nodetree",
+      "ownerMaterial": "AFN57_CANONICAL_WETLINE",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": [
+            [
+              "Base Color",
+              [
+                0.4000000059604645,
+                0.15000000596046448,
+                0.11999999731779099,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Metallic",
+              0.0,
+              []
+            ],
+            [
+              "Roughness",
+              0.10999999940395355,
+              []
+            ],
+            [
+              "IOR",
+              1.5,
+              []
+            ],
+            [
+              "Alpha",
+              1.0,
+              []
+            ],
+            [
+              "Thin Wall",
+              false,
+              []
+            ],
+            [
+              "Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Weight",
+              0.0,
+              []
+            ],
+            [
+              "Diffuse Roughness",
+              0.0,
+              []
+            ],
+            [
+              "Subsurface Weight",
+              0.0,
+              []
+            ],
+            [
+              "Subsurface Radius",
+              [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              []
+            ],
+            [
+              "Subsurface Scale",
+              0.004999999888241291,
+              []
+            ],
+            [
+              "Subsurface IOR",
+              1.399999976158142,
+              []
+            ],
+            [
+              "Subsurface Anisotropy",
+              0.0,
+              []
+            ],
+            [
+              "Specular IOR Level",
+              0.5,
+              []
+            ],
+            [
+              "Specular Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Anisotropic",
+              0.0,
+              []
+            ],
+            [
+              "Anisotropic Rotation",
+              0.0,
+              []
+            ],
+            [
+              "Tangent",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Transmission Weight",
+              0.0,
+              []
+            ],
+            [
+              "Coat Weight",
+              1.0,
+              []
+            ],
+            [
+              "Coat Roughness",
+              0.029999999329447746,
+              []
+            ],
+            [
+              "Coat IOR",
+              1.5,
+              []
+            ],
+            [
+              "Coat Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Coat Normal",
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              []
+            ],
+            [
+              "Sheen Weight",
+              0.0,
+              []
+            ],
+            [
+              "Sheen Roughness",
+              0.5,
+              []
+            ],
+            [
+              "Sheen Tint",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Color",
+              [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              []
+            ],
+            [
+              "Emission Strength",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film Thickness",
+              0.0,
+              []
+            ],
+            [
+              "Thin Film IOR",
+              1.3300000429153442,
+              []
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "authoringCarrierSlotsNotEvidenceOfActualRenderedShading": true
+}

@@ -1,0 +1,287 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0084-a-physical-brown-hair-study.blend",
+  "objectMaterialSlots": [
+    "AFN84_BROWN_DIELECTRIC_HAIR"
+  ],
+  "evaluatedMaterials": [
+    "AFN84_BROWN_DIELECTRIC_HAIR"
+  ],
+  "viewLayerMaterialOverride": "None",
+  "hairSettings": {
+    "model": "CHIANG",
+    "parametrization": "COLOR"
+  },
+  "nodes": [
+    {
+      "name": "AFN84_HAIR_SURFACE",
+      "type": "ShaderNodeOutputMaterial",
+      "inputs": [
+        [
+          "Surface",
+          null,
+          [
+            [
+              "AFN84_HAIR_SCATTERING",
+              "BSDF"
+            ]
+          ]
+        ],
+        [
+          "Volume",
+          null,
+          []
+        ],
+        [
+          "Displacement",
+          "<bpy_float[3], NodeSocketVector.default_value>",
+          []
+        ],
+        [
+          "Thickness",
+          "0.0",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "AFN84_HAIR_SCATTERING",
+      "type": "ShaderNodeBsdfHairPrincipled",
+      "inputs": [
+        [
+          "Color",
+          "<bpy_float[4], NodeSocketColor.default_value>",
+          [
+            [
+              "AFN84_BROWN_WITH_ROOT_ATTENUATION",
+              "Color"
+            ]
+          ]
+        ],
+        [
+          "Melanin",
+          "0.800000011920929",
+          []
+        ],
+        [
+          "Melanin Redness",
+          "1.0",
+          []
+        ],
+        [
+          "Tint",
+          "<bpy_float[4], NodeSocketColor.default_value>",
+          []
+        ],
+        [
+          "Absorption Coefficient",
+          "<bpy_float[3], NodeSocketVector.default_value>",
+          []
+        ],
+        [
+          "Aspect Ratio",
+          "0.8500000238418579",
+          []
+        ],
+        [
+          "Roughness",
+          "0.30000001192092896",
+          []
+        ],
+        [
+          "Radial Roughness",
+          "0.5",
+          []
+        ],
+        [
+          "Coat",
+          "0.4000000059604645",
+          []
+        ],
+        [
+          "IOR",
+          "1.5499999523162842",
+          []
+        ],
+        [
+          "Offset",
+          "0.03490658476948738",
+          []
+        ],
+        [
+          "Random Color",
+          "0.0",
+          []
+        ],
+        [
+          "Random Roughness",
+          "0.30000001192092896",
+          []
+        ],
+        [
+          "Random",
+          "0.0",
+          [
+            [
+              "AFN84_ACTUAL_STRAND_COORDINATES",
+              "Random"
+            ]
+          ]
+        ],
+        [
+          "Weight",
+          "0.0",
+          []
+        ],
+        [
+          "Reflection",
+          "1.0",
+          []
+        ],
+        [
+          "Transmission",
+          "1.0",
+          []
+        ],
+        [
+          "Secondary Reflection",
+          "1.0",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "AFN84_ACTUAL_STRAND_COORDINATES",
+      "type": "ShaderNodeHairInfo",
+      "inputs": []
+    },
+    {
+      "name": "AFN84_PALETTE_RANDOM_PER_STRAND",
+      "type": "ShaderNodeMixRGB",
+      "inputs": [
+        [
+          "Factor",
+          "0.5",
+          [
+            [
+              "AFN84_ACTUAL_STRAND_COORDINATES",
+              "Random"
+            ]
+          ]
+        ],
+        [
+          "Color1",
+          "<bpy_float[4], NodeSocketColor.default_value>",
+          []
+        ],
+        [
+          "Color2",
+          "<bpy_float[4], NodeSocketColor.default_value>",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "AFN84_ROOT_ATTENUATION",
+      "type": "ShaderNodeMapRange",
+      "inputs": [
+        [
+          "Value",
+          "1.0",
+          [
+            [
+              "AFN84_ACTUAL_STRAND_COORDINATES",
+              "Intercept"
+            ]
+          ]
+        ],
+        [
+          "From Min",
+          "0.0",
+          []
+        ],
+        [
+          "From Max",
+          "0.3220338821411133",
+          []
+        ],
+        [
+          "To Min",
+          "0.3686440587043762",
+          []
+        ],
+        [
+          "To Max",
+          "1.0",
+          []
+        ],
+        [
+          "Steps",
+          "4.0",
+          []
+        ],
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>",
+          []
+        ],
+        [
+          "From Min",
+          "<bpy_float[3], NodeSocketVector.default_value>",
+          []
+        ],
+        [
+          "From Max",
+          "<bpy_float[3], NodeSocketVector.default_value>",
+          []
+        ],
+        [
+          "To Min",
+          "<bpy_float[3], NodeSocketVector.default_value>",
+          []
+        ],
+        [
+          "To Max",
+          "<bpy_float[3], NodeSocketVector.default_value>",
+          []
+        ],
+        [
+          "Steps",
+          "<bpy_float[3], NodeSocketVector.default_value>",
+          []
+        ]
+      ]
+    },
+    {
+      "name": "AFN84_BROWN_WITH_ROOT_ATTENUATION",
+      "type": "ShaderNodeMixRGB",
+      "inputs": [
+        [
+          "Factor",
+          "1.0",
+          []
+        ],
+        [
+          "Color1",
+          "<bpy_float[4], NodeSocketColor.default_value>",
+          [
+            [
+              "AFN84_PALETTE_RANDOM_PER_STRAND",
+              "Color"
+            ]
+          ]
+        ],
+        [
+          "Color2",
+          "<bpy_float[4], NodeSocketColor.default_value>",
+          [
+            [
+              "AFN84_ROOT_ATTENUATION",
+              "Result"
+            ]
+          ]
+        ]
+      ]
+    }
+  ],
+  "meaning": "Emission=actual final Brown RGB field only, strength1. Diagnostic distinguishes field/routing from scattering; no actual-human appearance or contact claim."
+}

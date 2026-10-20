@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T12:20:03.146187+00:00",
+  "decision": "REJECT_R84_THREE_MATERIALS_CHANGE_VISIBLE_AUTHORING_FOCUS_NO_PROMOTION",
+  "productionMethods": 3,
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0084-a-physical-brown-hair-study.blend",
+      "sha256": "53b50ac9d35e7f60ca72225cfa6d08d1ce4ce966a4fba190572b076adb415a5d",
+      "bytes": 80180414,
+      "role": "REJECTED_COMPLETE_MATERIAL_STUDY_NOT_ADOPTED"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0084-b-microfacet-brown-hair-study.blend",
+      "sha256": "def128617aaceca9e5a4a74a13ab5b912df70cc425fffb3ceda40e1e758d69b9",
+      "bytes": 56237469,
+      "role": "REJECTED_COMPLETE_MATERIAL_STUDY_NOT_ADOPTED"
+    },
+    "c": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0084-c-live-tangent-dielectric-study.blend",
+      "sha256": "9a87471124ead5207821df3f30dc7d8b9b43dc539ba351ff3232d376f3c9b8f3",
+      "bytes": 56238935,
+      "role": "REJECTED_COMPLETE_MATERIAL_STUDY_NOT_ADOPTED"
+    }
+  },
+  "appearanceImprovement": false,
+  "selectedCompleteDefectResolved": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterStagnationReset": false,
+  "gates": {
+    "appearance": {
+      "status": "REJECT_ALL_THREE_MATERIAL_CONSTRUCTIONS_NO_ADOPTABLE_COMPLETE_GAIN",
+      "wholeCharacterScore": null,
+      "visibleGainsAdopted": false,
+      "observations": [
+        "A explicit Brown RGB field reaches actual material, but native fibre scattering is very pale.",
+        "B a structurally different native microfacet fibre model also remains very pale.",
+        "C retains Brown colour but has broad silver/plastic highlights and unresolved rear gap; not better than retained baseline.",
+        "The same face/skin and anatomy remain visibly artificial; no complete-person adoption."
+      ],
+      "evidence": [
+        "r0084-complete-character-comparison.png"
+      ],
+      "extraAnglesSecondLightStoppedAfterRejection": true
+    },
+    "function": {
+      "status": "PASS_MINIMUM_REJECTED_SOURCE_READBACK_ONLY",
+      "evidence": "minimum-source-readback.json",
+      "allThreeNativeGuideAndEvaluatedHairGeometryRadiiBodyDataOriginalMaterialsLightsExact": true,
+      "nativeGuidesEach": 303,
+      "nativeGuidePointsEach": 3636,
+      "evaluatedCurvesEach": 21908,
+      "evaluatedPointsEach": 503884,
+      "cExplicitTangentPointAttribute": 503884,
+      "cTangentOnlyNeutralReadbackNotMotionQualified": true,
+      "newFullyQualifiedCompleteCapability": false
+    },
+    "contact": {
+      "status": "SCOPED_INHERITED_R81_INTERIOR_SAMPLE_FAILURE_GEOMETRY_PREMISES_REVALIDATED_ALL_THREE",
+      "inheritedEvidence": "../r0081-editable-curly-groom/b-neutral-body-falsification.json",
+      "inheritedWitnesses": 8,
+      "notNewSampleOrGlobalCount": true,
+      "globalSignedMinimumM": null,
+      "evaluatedCentrelineNotInstalledRenderGeometryCertificate": true,
+      "selfRootContinuousNaturalDynamicsUnaccepted": true
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "engineShaderImplementationCpuGpuMemoryLODUnaccepted": true
+    }
+  },
+  "sourceHistoryAndContextCorrection": "source-history-and-context-correction.json",
+  "researchReuse": "Explicit Brown RGB field, neutral finite live-tangent attribute and failed-model controls only. No accepted complete character capability or measured hair optics. C is an approximation, not a full fibre model.",
+  "nextAction": "Stop further hair material output/pigment/roughness/coat/model/radius/density scans under the same premise. R71 already recorded source Cycles routing and scalar-random-as-grey; that is not a new discovery. R84's fixed-source-RGB/no-denoise control still gives a pale hair-scattering response, and the tangent dielectric approximation still looks silver/plastic in the complete character. The precise strong-pale-response cause remains unisolated; do not present a guessed cause as solved. Keep exact registered r76 body/oral work and separately unaccepted r81B groom. Next directly author a major visible craniofacial form/identity defect on the SAME complete woman: inspect front/profile/oblique and the earlier r72 cheek/jaw weight-sweep and r73 wrapper failures, then choose one anatomically referenced Blender sculpt or source-native shape construction that actually changes the problematic form, rather than repeat those weights/wrappers or chase pores/material parameters. Inspect existing CC0 source data within the10minute support bound; do not open another indefinite preset/asset search. Preserve native identity correspondence across all five cages, eyes/lids/cavity/oral interfaces, rig/expressions and scalp; check the actually affected anatomy/contact relations. First render complete head/body and the revealing profile before broad tests. Actual evaluated skin retains supplied colour/roughness/height textures and1mm SSS scale; the carrier's empty authoring slots are not missing rendered skin shading and are not grounds for another skin-darkening/SSS sweep. All original hair coverage/body/self/root/continuous contacts and natural dynamics/cloth/layers/actions/engine/LOD/performance remain mandatory and unaccepted. No stagnation reset for this material research or its explicit tangent metadata."
+}

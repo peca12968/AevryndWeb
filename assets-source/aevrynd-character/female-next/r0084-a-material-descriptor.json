@@ -1,0 +1,33 @@
+{
+  "material": "AFN84_BROWN_DIELECTRIC_HAIR",
+  "paletteLinearRGB": [
+    [
+      0.11692436784505844,
+      0.09404333680868149,
+      0.04665105789899826
+    ],
+    [
+      0.031247558072209358,
+      0.016391107812523842,
+      0.004286494106054306
+    ]
+  ],
+  "perStrandMix": "mix(Color1,Color2,HairInfo.Random)",
+  "rootField": "mix(1-DarkenRoot,1,smoothstep(0,RootColorLength,HairInfo.Intercept))",
+  "darkenRoot": 0.6313559412956238,
+  "rootColorLength": 0.3220338821411133,
+  "hairScatteringNode": "ShaderNodeBsdfHairPrincipled",
+  "model": "CHIANG",
+  "parametrization": "COLOR",
+  "scatteringParametersInheritedFromExistingHairNode": {
+    "Roughness": 0.30000001192092896,
+    "Radial Roughness": 0.5,
+    "Coat": 0.4000000059604645,
+    "IOR": 1.5499999523162842,
+    "Offset": 0.03490658476948738,
+    "Random Roughness": 0.30000001192092896
+  },
+  "randomGreyReplacementRemoved": true,
+  "noMetallicAdditiveOrAlphaMask": true,
+  "notAnEngineShaderImplementationOrRuntimeAcceptance": true
+}

@@ -1,0 +1,11 @@
+00:02.125  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0084-physical-brown-hair.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();assert not OUT.exists() and sha(SRC)==SHA;bpy.ops.wm.open_mainfile(filepath=str(SRC));s=bpy.context.scene;s.frame_set(1);m.rig.shade.settings();assert s.render.engine=="CYCLES";bpy.context.view_layer.update();o=bpy.data.objects["AFN81_EDITABLE_CURLY_GUIDES"];before=m.q.hair(o).copy();old=bpy.data.materials["Brown hair"];group=old.node_tree.nodes["Group"];C1=list(group.inputs["Color 1"].default_value);C2=list(group.inputs["Color 2"].default_value);dark=float(group.inputs["Darken root"].default_value);rootLength=float(group.inputs["Root color length"].default_value);native=group.node_tree.nodes["Principled Hair BSDF.001"];mat=bpy.data.materials.new("AFN84_BROWN_DIELECTRIC_HAIR");mat.use_nodes=True;mat.diffuse_color=tuple(C1);ng=mat.node_tree;ng.nodes.clear();n=ng.nodes;l=ng.links;out=n.new("ShaderNodeOutputMaterial");out.name="AFN84_HAIR_SURFACE";hair=n.new("ShaderNodeBsdfHairPrincipled");hair.name="AFN84_HAIR_SCATTERING";hair.model=native.model;hair.parametrization="COLOR";parameters={}
+00:16.703  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0084-physical-brown-hair\a-physical-face.png'
+00:22.031  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0084-physical-brown-hair\a-physical-body-face.png'
+00:31.766  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0084-physical-brown-hair\a-physical-back.png'
+資訊: 已儲存為「aevrynd-female-next-r0084-a-physical-brown-hair-study.blend」
+R84_PHYSICAL_BROWN_PILOT_COMPLETE 31.866031169891357
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

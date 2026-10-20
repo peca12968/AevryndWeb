@@ -1,0 +1,51 @@
+{
+  "material": "AFN84_LIVE_TANGENT_DIELECTRIC_APPROXIMATION",
+  "paletteLinearRGB": [
+    [
+      0.11692436784505844,
+      0.09404333680868149,
+      0.04665105789899826
+    ],
+    [
+      0.031247558072209358,
+      0.016391107812523842,
+      0.004286494106054306
+    ]
+  ],
+  "perStrandMix": "mix(Color1,Color2,HairInfo.Random)",
+  "rootField": "mix(1-DarkenRoot,1,smoothstep(0,RootColorLength,HairInfo.Intercept))",
+  "darkenRoot": 0.6313559412956238,
+  "rootColorLength": 0.3220338821411133,
+  "hairScatteringNode": "ShaderNodeBsdfPrincipled",
+  "model": "ANISOTROPIC_NONMETAL_MICROFACET_APPROXIMATION",
+  "randomGreyReplacementRemoved": true,
+  "noMetallicAdditiveOrAlphaMask": true,
+  "notAnEngineShaderImplementationOrRuntimeAcceptance": true,
+  "metallic": 0,
+  "anisotropy": 0.8,
+  "anisotropyArtistChoiceNotMeasured": true,
+  "roughnessUnchanged": 0.30000001192092896,
+  "iorUnchanged": 1.5499999523162842,
+  "liveTangentAttribute": "AFN84_LocalCurveTangent",
+  "captureAfterRootFrame": true,
+  "tangentShaderTransform": "OBJECT_TO_WORLD_VECTOR",
+  "limitations": "No full fibre scattering/internal transmission/multiple-scattering calibration. Not an engine shader implementation or runtime pass.",
+  "sourceHairParametersBeforeApproximation": {
+    "Roughness": 0.30000001192092896,
+    "Radial Roughness": 0.5,
+    "Coat": 0.4000000059604645,
+    "IOR": 1.5499999523162842,
+    "Offset": 0.03490658476948738,
+    "Random Roughness": 0.30000001192092896
+  },
+  "colourFieldRepresentation": "EXPLICIT_LINEAR_RGB",
+  "activeApproximationParameters": {
+    "Metallic": 0,
+    "Roughness": 0.30000001192092896,
+    "IOR": 1.5499999523162842,
+    "Anisotropic": 0.8,
+    "Subsurface Weight": 0,
+    "Coat Weight": 0,
+    "Transmission Weight": 0
+  }
+}

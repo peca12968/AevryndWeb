@@ -1,0 +1,18 @@
+{
+  "designInputs": [
+    {
+      "title": "A Practical and Controllable Hair and Fur Model for Production Path Tracing",
+      "url": "https://www.disneyanimation.com/publications/a-practical-and-controllable-hair-and-fur-model-for-production-path-tracing/",
+      "paper": "https://media.disneyanimation.com/uploads/production/publication_asset/152/asset/eurographics2016Fur_Smaller.pdf",
+      "use": "Energy-conserving fibre scattering and nonlinear relation between single-fibre controls and assemblies. Built-in Blender node used; no paper figure/code copied into engine."
+    },
+    {
+      "title": "A Microfacet-based Hair Scattering Model",
+      "url": "https://publikationen.bibliothek.kit.edu/1000150034",
+      "doi": "10.1111/cgf.14588",
+      "use": "Microfacet cylinder scattering as a structurally different model. Circular section assumed for B, not measured human-hair calibration."
+    }
+  ],
+  "implementationScope": "Offline material studies only. C is a non-metal microfacet approximation with artist-chosen anisotropy. No Aevrynd runtime shader imported/qualified.",
+  "assetRights": "Original Daniel Bystedt palette/groom derivative CC BY-SA version unspecified; CC0 body/rig/morph separately attributed. No new external implementation/runtime dependency."
+}

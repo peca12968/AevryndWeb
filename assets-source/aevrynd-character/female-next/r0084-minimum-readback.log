@@ -1,0 +1,13 @@
+00:02.125  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0084-materials.py:20: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();refs={t:json.loads((E/(t+"-build-summary.json")).read_text()) for t in "abc"};a=refs["a"];assert sha(Path(a["source"]))==a["sourceSha256"];bpy.ops.wm.open_mainfile(filepath=a["source"]);bpy.context.scene.frame_set(1);bpy.context.view_layer.update();q=m.q;o=bpy.data.objects["AFN81_EDITABLE_CURLY_GUIDES"];P=q.hair(o).copy();nativeP=q.arr(o.data.position_data,"vector",3636,3).copy();d=o.evaluated_get(bpy.context.evaluated_depsgraph_get()).data;counts=np.array([c.points_length for c in d.curves]);radius=q.arr(d.attributes["radius"].data,"value",len(P)).copy();names=m.rig.native_names();sig={n:v.signature(bpy.data.objects[n]) for n in names};mats={mat.name:m.rig.k.f.v.v32.material_signature(mat) for mat in bpy.data.materials if mat.use_nodes};lights=m.m.q.lights();body=m.rig.k.mesh(bpy.data.objects["AFN60_BODY_ORAL_AND_OCULAR_LINING"]);bodyV=body["V"].copy();bodyT=body["T"].copy();context=[];seen=set()
+00:16.734  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0084-physical-brown-hair\baseline-r81-face.png'
+00:21.984  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0084-physical-brown-hair\baseline-r81-body-face.png'
+00:31.562  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0084-physical-brown-hair\baseline-r81-back.png'
+00:33.781  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0084-a-physical-brown-hair-study.blend"
+00:39.453  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0084-b-microfacet-brown-hair-study.blend"
+00:45.000  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0084-c-live-tangent-dielectric-study.blend"
+R84_MINIMUM_REJECTED_MATERIALS_READBACK_DONE 48.57940983772278
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
