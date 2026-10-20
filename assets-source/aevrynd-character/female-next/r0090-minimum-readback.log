@@ -1,0 +1,10 @@
+00:01.422  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0088-b-supported-lid-aperture.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0090-saved-guides.py:18: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();src=S/'aevrynd-female-next-r0088-b-supported-lid-aperture.blend';assert sha(src)=='72435890a03cab26ff2f3e238060daf2b2cf797f85543d8fd6182583cc1101a7';prepare(src);names=m.rig.native_names()+['AFN59_LASHES_NATIVE_POINT_POSES'];sig={n:v.signature(bpy.data.objects[n]) for n in names};oldHair=hair_signature(bpy.data.objects['AFN81_EDITABLE_CURLY_GUIDES']);oldCap=cap_signature(bpy.data.objects['AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE']);teeth={n:cap_signature(bpy.data.objects[n]) for n in ('AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID')};facial={n:q.hair(bpy.data.objects[n]).copy() for n in ('AFN57_NATIVE_BROWS','AFN57_NATIVE_LASHES')};mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes and (x.users or x.use_fake_user)};lights=m.m.q.lights();line=np.load(E/'a-guide-lineage.npz');rows=[]
+00:07.187  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0090-a-intrinsic-guide-pilot.blend"
+R90_SAVED_GUIDE_READBACK a-guide-invisible-build-summary.json 1.373210147286403e-07 1.3927261064988917e-07
+00:13.672  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0090-a-intrinsic-guide-diagnostic.blend"
+R90_SAVED_GUIDE_READBACK a-guide-build-summary.json 1.373210147286403e-07 1.3927261064988917e-07
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

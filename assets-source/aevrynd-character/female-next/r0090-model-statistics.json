@@ -1,0 +1,163 @@
+{
+  "sources": {
+    "a-invisible": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0090-a-intrinsic-guide-pilot.blend",
+      "sha256": "9ff88dca3dff8c3836d418f7626e4c4cd2c876f26b4dee97713f4a1edac5471d",
+      "bytes": 57411607,
+      "role": "IMPLEMENTATION_DIAGNOSTIC_SAME_SHAPE_INVISIBLE_NOT_A_SECOND_CONSTRUCTION"
+    },
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0090-a-intrinsic-guide-diagnostic.blend",
+      "sha256": "20ba076ede9282652b02dad8d0dd2493227eea8d01763ec8b357273009a4106d",
+      "bytes": 57412123,
+      "role": "REJECTED_SPARSE_GROOM_RETAIN_TARGET_SCALP_DATA_ONLY"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0090-b-rain-hair-shape-study.blend",
+      "sha256": "b28711d6b4f747829def389ada85440a2f3d6bd6016c5c0053d3ca38ae7f7d9f",
+      "bytes": 68156596,
+      "role": "STYLIZED_POLYGONAL_HAIR_SHAPE_REFERENCE_ONLY_NOT_REALISTIC_GROOM"
+    },
+    "c-u": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0090-c-uv-flow-pilot.blend",
+      "sha256": "b4b69a2b435aa45babf8195f5fb5391d8c1d11e3153a3c0330bc26b8cc72f798",
+      "bytes": 68430319,
+      "role": "REJECTED_UNVERIFIED_SHADING_U_GROWTH_TRACE"
+    },
+    "c-v": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0090-c-v-flow-pilot.blend",
+      "sha256": "f3bd361c6c67bcc0b106726db0d8e92ac841155261f1323f46748fec409d8c33",
+      "bytes": 68435533,
+      "role": "REJECTED_AUDITED_V_GROWTH_TRACE_85_FAILED_ROOTS"
+    }
+  },
+  "newTargetScalp": {
+    "vertices": 8111,
+    "triangles": 15845
+  },
+  "A": {
+    "guideCages": 96,
+    "pointsEach": 64,
+    "renderMeaning": "0.5mm diagnostic curves only"
+  },
+  "B": {
+    "components": [
+      {
+        "object": "AFN90_RAIN_HAIR_MAIN",
+        "publisherObject": "GEO-rain-hair_main",
+        "nativeVertices": 2204,
+        "nativeFaces": 1965,
+        "UVLayers": [
+          "UVMap",
+          "UVMap.tangent"
+        ],
+        "tailStaticPoseDegrees": null,
+        "worldBounds": [
+          [
+            -0.08054534813666493,
+            -0.15708148243352876,
+            1.405084982273144
+          ],
+          [
+            0.07994936725872523,
+            0.06077436156453342,
+            1.577736109052084
+          ]
+        ],
+        "materials": [
+          "MAT-rain.hair"
+        ]
+      },
+      {
+        "object": "AFN90_RAIN_HAIR_PONYTAIL",
+        "publisherObject": "GEO-rain-hair_ponytail",
+        "nativeVertices": 579,
+        "nativeFaces": 569,
+        "UVLayers": [
+          "UVMap",
+          "UVMap.tangent"
+        ],
+        "tailStaticPoseDegrees": -80,
+        "worldBounds": [
+          [
+            -0.0353153522573017,
+            0.036031843405025105,
+            1.2703241262099145
+          ],
+          [
+            0.02946586187770298,
+            0.12240041280177162,
+            1.5438777244393922
+          ]
+        ],
+        "materials": [
+          "MAT-rain.hair"
+        ]
+      },
+      {
+        "object": "AFN90_RAIN_HAIR_STRAND",
+        "publisherObject": "GEO-rain-hair_strand",
+        "nativeVertices": 400,
+        "nativeFaces": 393,
+        "UVLayers": [
+          "UVMap",
+          "UVMap.tangent"
+        ],
+        "tailStaticPoseDegrees": null,
+        "worldBounds": [
+          [
+            -0.08930722657913655,
+            -0.15401284315019673,
+            1.4523561642514724
+          ],
+          [
+            -0.0024399449514217264,
+            -0.08908772514358816,
+            1.5362576855448795
+          ]
+        ],
+        "materials": [
+          "MAT-rain.hair"
+        ]
+      },
+      {
+        "object": "AFN90_RAIN_HAIRBAND",
+        "publisherObject": "GEO-rain-hairband",
+        "nativeVertices": 480,
+        "nativeFaces": 480,
+        "UVLayers": [
+          "UVMap"
+        ],
+        "tailStaticPoseDegrees": null,
+        "worldBounds": [
+          [
+            -0.01859759864777729,
+            0.0407017737785407,
+            1.5150082041436483
+          ],
+          [
+            0.014819228199506798,
+            0.0678934214081986,
+            1.5469060372964738
+          ]
+        ],
+        "materials": [
+          "MAT-rain.hairband"
+        ]
+      }
+    ],
+    "renderMeaning": "textured polygonal hair volumes, not individual fibres"
+  },
+  "C": {
+    "attemptedRootsEach": 128,
+    "pointsEach": 96,
+    "UFailed": 128,
+    "VFailed": 85,
+    "allAttemptedRootsRetained": true,
+    "denseFibresGenerated": 0
+  },
+  "originalBody52BoneRigPreserved": true,
+  "sharedExternalTextures": 15,
+  "newPackedHairMaps": 3,
+  "newRuntimeCPUTimeGPUTimeMemoryLOD": null
+}

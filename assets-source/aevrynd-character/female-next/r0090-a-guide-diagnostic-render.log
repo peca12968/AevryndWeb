@@ -1,0 +1,11 @@
+00:02.203  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0090-a-intrinsic-guide-pilot.blend"
+D:\Download\Aevrynd\scripts\character-next\render-female-next-r0090-guide-diagnostic.py:10: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  ref=json.loads((E/'a-guide-invisible-build-summary.json').read_text());src=Path(ref['output']);assert sha(src)==ref['outputSha256'] and not OUT.exists();bpy.ops.wm.open_mainfile(filepath=str(src));o=bpy.data.objects[ref['renderObject']];before=np.array([p.co[:] for sp in o.data.splines for p in sp.points]);old={mat.name:m.rig.k.f.v.v32.material_signature(mat) for mat in bpy.data.materials if mat.use_nodes};lights=m.m.q.lights();d=bpy.data.materials.new('AFN90_OPAQUE_GUIDE_DIAGNOSTIC_ONLY');d.use_nodes=True;n=d.node_tree.nodes;n.clear();out=n.new('ShaderNodeOutputMaterial');diff=n.new('ShaderNodeBsdfDiffuse');diff.inputs['Color'].default_value=(.16,.075,.025,1);diff.inputs['Roughness'].default_value=.65;d.node_tree.links.new(diff.outputs['BSDF'],out.inputs['Surface']);o.data=o.data.copy();o.data.materials.clear();o.data.materials.append(d);assert np.array_equal(before,np.array([p.co[:] for sp in o.data.splines for p in sp.points]));assert old=={name:m.rig.k.f.v.v32.material_signature(bpy.data.materials[name]) for name in old};assert lights==m.m.q.lights();o['scope']='Opaque0.5mm sparse-guide shape DIAGNOSTIC, not physical/render fibres or a realistic hairstyle. Actual guide cages are unchanged; original Brown strand material is unchanged and used for any later full fibres.';bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(OUT),compress=True)
+00:13.063  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0090-native-scalp-groom\a-guide-back.png'
+00:22.547  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0090-native-scalp-groom\a-guide-face.png'
+00:28.141  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0090-native-scalp-groom\a-guide-body-face.png'
+Info: Saved as "aevrynd-female-next-r0090-a-intrinsic-guide-diagnostic.blend"
+R90_OPAQUE_GUIDE_DIAGNOSTIC_DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

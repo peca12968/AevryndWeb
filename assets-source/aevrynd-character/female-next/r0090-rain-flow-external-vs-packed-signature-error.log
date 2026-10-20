@@ -1,0 +1,17 @@
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0090-rain-and-flow.py:27: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if mat and mat.use_nodes:upMats[mat.name]=m.rig.k.f.v.v32.material_signature(mat)
+00:02.656  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0088-b-supported-lid-aperture.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0090-rain-and-flow.py:28: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  textInfo=[{'name':t.name,'bytes':len(t.as_string().encode()),'containsGPLNotice':'GNU General Public License' in t.as_string(),'containsBY4URL':'https://creativecommons.org/licenses/by/4.0/' in t.as_string(),'executed':False} for t in dst.texts];save('rain-source-license-and-script-scope.json',{'publisherBlendSha256':sha(RAIN),'publisherZipSha256':sha(REF/'Rain-v3.3.zip'),'characterDataLicense':'CC-BY4.0 per embedded ReadMe and official download page license link','requiredCredit':'Rain Rig (CC) Blender Foundation | studio.blender.org','sourceTexts':textInfo,'sourceToolCodeImportedIntoDerivedRuntimeOrRequired':False,'note':'Unmodified publisher archive retains original source-text notices. Studio tool texts are not present or required in derivative study files; no code from them executed.'});open_file(S/'aevrynd-female-next-r0088-b-supported-lid-aperture.blend');ns=m.rig.native_names()+['AFN59_LASHES_NATIVE_POINT_POSES'];sig={n:native.signature(bpy.data.objects[n]) for n in ns};other={n:helpers.cap_signature(bpy.data.objects[n]) for n in ('AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID','AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE')};oldHair=helpers.hair_signature(bpy.data.objects['AFN81_EDITABLE_CURLY_GUIDES']);facial={n:q.hair(bpy.data.objects[n]).copy() for n in ('AFN57_NATIVE_BROWS','AFN57_NATIVE_LASHES')};rig=rig_signature();texts=set(bpy.data.texts.keys());mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes and (x.users or x.use_fake_user)};lights=m.m.q.lights();base=E/'b-rain-hair-lineage.npz';z=np.load(base);refs=[('b','b-build-summary.json'),('c-guide','c-guide-build-summary.json'),('c-v-guide','c-v-guide-build-summary.json')];results=[]
+00:08.516  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0090-b-rain-hair-shape-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0090-rain-and-flow.py", line 48, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0090-rain-and-flow.py", line 37, in main
+    assert {n:m.rig.k.f.v.v32.material_signature(bpy.data.materials[n]) for n in upMats}==upMats;packed=[];external=[]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

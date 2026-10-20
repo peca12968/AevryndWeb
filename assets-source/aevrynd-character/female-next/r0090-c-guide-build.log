@@ -1,0 +1,12 @@
+00:05.719  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0090-b-rain-hair-shape-study.blend"
+R90_UV_FLOW 0 failed 1
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0090-surface-strands.py:71: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN90_UV_FLOW_OPAQUE_DIAGNOSTIC');mat.use_nodes=True;bs=mat.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(.16,.075,.025,1);bs.inputs['Roughness'].default_value=.65;legacy.materials.append(mat);render=bpy.data.objects.new(legacy.name,legacy);s.collection.objects.link(render);render.matrix_world=A.copy();attachment={'scope':'Static0.5mm sparse diagnostic, not physical strands, skin following or contact.'}
+00:19.250  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0090-native-scalp-groom\c-guide-uv-flow-back.png'
+00:27.375  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0090-native-scalp-groom\c-guide-uv-flow-face.png'
+00:33.062  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0090-native-scalp-groom\c-guide-uv-flow-body-face.png'
+Info: Saved as "aevrynd-female-next-r0090-c-uv-flow-pilot.blend"
+R90_UV_FLOW_DONE c-guide 128 29.80795454978943
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

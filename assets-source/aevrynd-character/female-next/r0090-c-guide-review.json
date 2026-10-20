@@ -1,0 +1,22 @@
+{
+  "reviewUTC": "2026-10-20T17:05:28.308563+00:00",
+  "worthFullFibres": false,
+  "decision": "REJECT_UV_TRACE_CONSTRUCTION_NO_EXPANSION",
+  "originalUFailureCount": 128,
+  "auditedVFailureCount": 85,
+  "attemptedRootsEach": 128,
+  "allAttemptedRootsPreserved": true,
+  "failedReasonsV": {
+    "NONDECREASING_OR_STALLED_UV_TRACE": 78,
+    "STEP_BOUND_REACHED": 7
+  },
+  "evidence": [
+    "c-guide-uv-flow-face.png",
+    "c-guide-uv-flow-back.png",
+    "c-v-guide-uv-flow-face.png",
+    "c-v-guide-uv-flow-back.png",
+    "flow-parameter-audit.json"
+  ],
+  "interpretation": "V has stronger independent local alignment with clump length than U, but neither shading UV derivative is a verified globally integrable root-to-tip growth parameter.85 of128 V traces still fail unchanged criteria. Do not discard failed roots or scan step/stall/termination thresholds.",
+  "nextConstruction": "Use explicit component root/tip cross-sections and longitudinal clump coordinates or verified original author guide data; retain Rain meshes only as attributed art scaffold, not realistic hair."
+}

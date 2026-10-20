@@ -1,0 +1,11 @@
+00:04.812  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0088-b-supported-lid-aperture.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0090-intrinsic-groom.py:97: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  guides=np.array(guides);surfaceMasks=np.array(surfaceMasks);assert np.isfinite(guides).all();bpy.ops.wm.open_mainfile(filepath=str(SRC));s=bpy.context.scene;s.frame_set(1);old=bpy.data.objects['AFN81_EDITABLE_CURLY_GUIDES'];A=old.matrix_world.copy();AA=np.array(A);invA=np.linalg.inv(AA[:3,:3]);old.hide_render=True;old.hide_set(True);mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes};lights=m.m.q.lights();cap=mesh('AFN90_TARGET_NATIVE_CONNECTED_SCALP',(P-AA[:3,3])@invA.T,F,A);live.attribute(cap.data,'AFN90_ActualBodyVertex','INT',data['bodyVertexIDs'][vi].astype('i4'));uv=cap.data.uv_layers.new(name='AFN90_ScalpUV');angle=np.arctan2((P-CENTER)[:,0],-(P-CENTER)[:,1]);elev=np.arctan2((P-CENTER)[:,2],np.linalg.norm((P-CENTER)[:,:2],axis=1));UV=np.column_stack(((angle+np.pi)/(2*np.pi),(elev+np.pi/2)/np.pi));loopUV=UV[np.array([l.vertex_index for l in cap.data.loops])]
+R90_NATIVE_BEGIN AFN90_INTRINSIC_EDITABLE_GUIDES 96
+R90_NATIVE_READY AFN90_INTRINSIC_EDITABLE_GUIDES
+Error   : EXCEPTION_ACCESS_VIOLATION
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+Writing: C:\Users\USER\AppData\Local\Temp\aevrynd-female-next-r0088-b-supported-lid-aperture.crash.txt
+Address : 0x00007FFF810D5C34
+Module  : tbbmalloc.dll
+Thread  : 0000e31c

@@ -1,0 +1,5 @@
+{
+  "reason": "Existing material_signature includes imagePackedSha256. Upstream Rain image resources are external (None packed hash), derivative images are embedded. Compare the same original file bytes with embedded bytes, retaining every node input/link/name and exact UV/topology/position guard.",
+  "change": "Populate only expected imagePackedSha256 from the verified upstream image file, then compare full original signature; separately hash all packed image bytes against the original files.",
+  "modelFilesOrQualityTolerancesChanged": false
+}

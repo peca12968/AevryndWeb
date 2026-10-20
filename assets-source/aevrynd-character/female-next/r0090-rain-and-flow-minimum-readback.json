@@ -1,0 +1,407 @@
+{
+  "status": "PASS_MINIMUM_SAVED_COMPONENT_DATA_ONLY",
+  "sources": [
+    {
+      "status": "PASS_MINIMUM_SAVED_ART_DATA_AND_FAILED_TRACE_READBACK_ONLY",
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0090-b-rain-hair-shape-study.blend",
+      "sha256": "b28711d6b4f747829def389ada85440a2f3d6bd6016c5c0053d3ca38ae7f7d9f",
+      "rainMeshComponents": [
+        {
+          "object": "AFN90_RAIN_HAIR_MAIN",
+          "sourceObject": "GEO-rain-hair_main",
+          "nativeVertices": 2204,
+          "nativeFaces": 1965,
+          "sourceUVAndLoopTopologyExact": true,
+          "savedWorldMaximumErrorM": 5.990341514687846e-08,
+          "noForeignRigLatticeWeightsOrScripts": true
+        },
+        {
+          "object": "AFN90_RAIN_HAIR_PONYTAIL",
+          "sourceObject": "GEO-rain-hair_ponytail",
+          "nativeVertices": 579,
+          "nativeFaces": 569,
+          "sourceUVAndLoopTopologyExact": true,
+          "savedWorldMaximumErrorM": 5.955152219514253e-08,
+          "noForeignRigLatticeWeightsOrScripts": true
+        },
+        {
+          "object": "AFN90_RAIN_HAIR_STRAND",
+          "sourceObject": "GEO-rain-hair_strand",
+          "nativeVertices": 400,
+          "nativeFaces": 393,
+          "sourceUVAndLoopTopologyExact": true,
+          "savedWorldMaximumErrorM": 5.9526565790260324e-08,
+          "noForeignRigLatticeWeightsOrScripts": true
+        },
+        {
+          "object": "AFN90_RAIN_HAIRBAND",
+          "sourceObject": "GEO-rain-hairband",
+          "nativeVertices": 480,
+          "nativeFaces": 480,
+          "sourceUVAndLoopTopologyExact": true,
+          "savedWorldMaximumErrorM": 5.955442456427313e-08,
+          "noForeignRigLatticeWeightsOrScripts": true
+        }
+      ],
+      "allOriginalCagesKeysUVWeightsDriversMaterialTreesLightsTeethCurlyCapAndGuidesPreserved": true,
+      "rigBonesUnchanged": 52,
+      "evaluatedBrowsLashesExactAtNeutral": true,
+      "rainOriginalMaterialTreesUVTopologyAndPackedMapsVerified": true,
+      "packedHairMaps": [
+        {
+          "name": "TEX-rain_hair_diffuse.png",
+          "sha256": "01c35d3fc4b3e961acf3446fdc4a5de83937e09c1b05b074b27c87e511d50ad6",
+          "packed": true
+        },
+        {
+          "name": "TEX-rain_hair_direction.png",
+          "sha256": "3b17c6caeb953c6931aa6ccbaf8a082f236e66f7df2fcc1d54376d928ba7af0f",
+          "packed": true
+        },
+        {
+          "name": "TEX-rain_hair_direction_bw.png",
+          "sha256": "099063769a7e132e93e2d5d93d9af5548f0c1b9e56b6098d47ce8cae8cf7c1bc",
+          "packed": true
+        }
+      ],
+      "externalTextures": [
+        {
+          "relative": "//study-vitruvian-textures\\Iris_Color.1007.exr",
+          "sha256": "62efc0ed85878cb0831db9b492975c384f19052bd7ab52f945777ac3e1d8b002"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Light_Skin_Color.1001.exr",
+          "sha256": "362373cf6afa6c88c44bc480f328afe94de11ca88463a6b40a5fc8032f3f6fa2"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Light_Skin_Color.1002.exr",
+          "sha256": "0c2dfa2f2edf9110c92ff9ad7879eec0b0b78ee7855d01f1d9525f3cd10e5a9b"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Light_Skin_Color.1003.exr",
+          "sha256": "cd540d1415af4dd2e5ce8f3086f921b8c610597b99a3a369a1ee67d869b629f5"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Light_Skin_Color.1004.exr",
+          "sha256": "d702bb83c27d70516aea23ea62a5218ef495b422783c9048bd193f0ca0118905"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Mouth_Color.1008.exr",
+          "sha256": "47c988fd5799f4c54e3a916cda14bbb5245cf5a171d47132e0e0e9e9f2b05c11"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Sclera_Color.1005.exr",
+          "sha256": "e81a1554b08e096ad76bfb2909a2d09747ff90df1fe1b993b768ec41713dd672"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Height.1001.exr",
+          "sha256": "62d11cdff413599f3cf4c4c16bfd6a467def20b8f21ad7e26a68ea9601475a87"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Height.1002.exr",
+          "sha256": "5dd6a565ab791074905ae3e650ec89f1c77a274d502749ba68a5dc884a651844"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Height.1003.exr",
+          "sha256": "e3edd7d2a7be4a2d1b2ec12a1f08534b770d7644c2d0181d7e4c2bda06b6c29a"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Height.1004.exr",
+          "sha256": "2e3bb73055367c3bb72be9ab95c3278b92967219d895087cd8dd44714011567b"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Roughness.1001.exr",
+          "sha256": "fa97dd24bdf68be9240982d3921bef6ae096c476589fc58eb07ab4039ff1addf"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Roughness.1002.exr",
+          "sha256": "906c3e31ad66044370e1c62bda99eb770ead2c934845be393a18823a55cbd3eb"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Roughness.1003.exr",
+          "sha256": "c5772aee25e4558f7ebb4f2f8d62f51bb8dfce511e89fb4163f85bd6c064f11f"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Roughness.1004.exr",
+          "sha256": "4d14cb45facbd63f13ee91131dbe5656c3fe0d6eb8fec93aa8f23e7f00cff10d"
+        }
+      ],
+      "sourceRigToolCodeNotInDerivedBlend": true,
+      "flow": null,
+      "completeAppearanceContactNaturalMotionRuntimeAccepted": false
+    },
+    {
+      "status": "PASS_MINIMUM_SAVED_ART_DATA_AND_FAILED_TRACE_READBACK_ONLY",
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0090-c-uv-flow-pilot.blend",
+      "sha256": "b4b69a2b435aa45babf8195f5fb5391d8c1d11e3153a3c0330bc26b8cc72f798",
+      "rainMeshComponents": [
+        {
+          "object": "AFN90_RAIN_HAIR_MAIN",
+          "sourceObject": "GEO-rain-hair_main",
+          "nativeVertices": 2204,
+          "nativeFaces": 1965,
+          "sourceUVAndLoopTopologyExact": true,
+          "savedWorldMaximumErrorM": 5.990341514687846e-08,
+          "noForeignRigLatticeWeightsOrScripts": true
+        },
+        {
+          "object": "AFN90_RAIN_HAIR_PONYTAIL",
+          "sourceObject": "GEO-rain-hair_ponytail",
+          "nativeVertices": 579,
+          "nativeFaces": 569,
+          "sourceUVAndLoopTopologyExact": true,
+          "savedWorldMaximumErrorM": 5.955152219514253e-08,
+          "noForeignRigLatticeWeightsOrScripts": true
+        },
+        {
+          "object": "AFN90_RAIN_HAIR_STRAND",
+          "sourceObject": "GEO-rain-hair_strand",
+          "nativeVertices": 400,
+          "nativeFaces": 393,
+          "sourceUVAndLoopTopologyExact": true,
+          "savedWorldMaximumErrorM": 5.9526565790260324e-08,
+          "noForeignRigLatticeWeightsOrScripts": true
+        },
+        {
+          "object": "AFN90_RAIN_HAIRBAND",
+          "sourceObject": "GEO-rain-hairband",
+          "nativeVertices": 480,
+          "nativeFaces": 480,
+          "sourceUVAndLoopTopologyExact": true,
+          "savedWorldMaximumErrorM": 5.955442456427313e-08,
+          "noForeignRigLatticeWeightsOrScripts": true
+        }
+      ],
+      "allOriginalCagesKeysUVWeightsDriversMaterialTreesLightsTeethCurlyCapAndGuidesPreserved": true,
+      "rigBonesUnchanged": 52,
+      "evaluatedBrowsLashesExactAtNeutral": true,
+      "rainOriginalMaterialTreesUVTopologyAndPackedMapsVerified": true,
+      "packedHairMaps": [
+        {
+          "name": "TEX-rain_hair_diffuse.png",
+          "sha256": "01c35d3fc4b3e961acf3446fdc4a5de83937e09c1b05b074b27c87e511d50ad6",
+          "packed": true
+        },
+        {
+          "name": "TEX-rain_hair_direction.png",
+          "sha256": "3b17c6caeb953c6931aa6ccbaf8a082f236e66f7df2fcc1d54376d928ba7af0f",
+          "packed": true
+        },
+        {
+          "name": "TEX-rain_hair_direction_bw.png",
+          "sha256": "099063769a7e132e93e2d5d93d9af5548f0c1b9e56b6098d47ce8cae8cf7c1bc",
+          "packed": true
+        }
+      ],
+      "externalTextures": [
+        {
+          "relative": "//study-vitruvian-textures\\Iris_Color.1007.exr",
+          "sha256": "62efc0ed85878cb0831db9b492975c384f19052bd7ab52f945777ac3e1d8b002"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Light_Skin_Color.1001.exr",
+          "sha256": "362373cf6afa6c88c44bc480f328afe94de11ca88463a6b40a5fc8032f3f6fa2"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Light_Skin_Color.1002.exr",
+          "sha256": "0c2dfa2f2edf9110c92ff9ad7879eec0b0b78ee7855d01f1d9525f3cd10e5a9b"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Light_Skin_Color.1003.exr",
+          "sha256": "cd540d1415af4dd2e5ce8f3086f921b8c610597b99a3a369a1ee67d869b629f5"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Light_Skin_Color.1004.exr",
+          "sha256": "d702bb83c27d70516aea23ea62a5218ef495b422783c9048bd193f0ca0118905"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Mouth_Color.1008.exr",
+          "sha256": "47c988fd5799f4c54e3a916cda14bbb5245cf5a171d47132e0e0e9e9f2b05c11"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Sclera_Color.1005.exr",
+          "sha256": "e81a1554b08e096ad76bfb2909a2d09747ff90df1fe1b993b768ec41713dd672"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Height.1001.exr",
+          "sha256": "62d11cdff413599f3cf4c4c16bfd6a467def20b8f21ad7e26a68ea9601475a87"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Height.1002.exr",
+          "sha256": "5dd6a565ab791074905ae3e650ec89f1c77a274d502749ba68a5dc884a651844"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Height.1003.exr",
+          "sha256": "e3edd7d2a7be4a2d1b2ec12a1f08534b770d7644c2d0181d7e4c2bda06b6c29a"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Height.1004.exr",
+          "sha256": "2e3bb73055367c3bb72be9ab95c3278b92967219d895087cd8dd44714011567b"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Roughness.1001.exr",
+          "sha256": "fa97dd24bdf68be9240982d3921bef6ae096c476589fc58eb07ab4039ff1addf"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Roughness.1002.exr",
+          "sha256": "906c3e31ad66044370e1c62bda99eb770ead2c934845be393a18823a55cbd3eb"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Roughness.1003.exr",
+          "sha256": "c5772aee25e4558f7ebb4f2f8d62f51bb8dfce511e89fb4163f85bd6c064f11f"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Roughness.1004.exr",
+          "sha256": "4d14cb45facbd63f13ee91131dbe5656c3fe0d6eb8fec93aa8f23e7f00cff10d"
+        }
+      ],
+      "sourceRigToolCodeNotInDerivedBlend": true,
+      "flow": {
+        "attemptedRoots": 128,
+        "allRetained": true,
+        "failed": 128,
+        "savedGuideMaximumWorldErrorM": 1.3963274419304766e-07,
+        "noDenseExpansionOrGrowthAcceptance": true
+      },
+      "completeAppearanceContactNaturalMotionRuntimeAccepted": false
+    },
+    {
+      "status": "PASS_MINIMUM_SAVED_ART_DATA_AND_FAILED_TRACE_READBACK_ONLY",
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0090-c-v-flow-pilot.blend",
+      "sha256": "f3bd361c6c67bcc0b106726db0d8e92ac841155261f1323f46748fec409d8c33",
+      "rainMeshComponents": [
+        {
+          "object": "AFN90_RAIN_HAIR_MAIN",
+          "sourceObject": "GEO-rain-hair_main",
+          "nativeVertices": 2204,
+          "nativeFaces": 1965,
+          "sourceUVAndLoopTopologyExact": true,
+          "savedWorldMaximumErrorM": 5.990341514687846e-08,
+          "noForeignRigLatticeWeightsOrScripts": true
+        },
+        {
+          "object": "AFN90_RAIN_HAIR_PONYTAIL",
+          "sourceObject": "GEO-rain-hair_ponytail",
+          "nativeVertices": 579,
+          "nativeFaces": 569,
+          "sourceUVAndLoopTopologyExact": true,
+          "savedWorldMaximumErrorM": 5.955152219514253e-08,
+          "noForeignRigLatticeWeightsOrScripts": true
+        },
+        {
+          "object": "AFN90_RAIN_HAIR_STRAND",
+          "sourceObject": "GEO-rain-hair_strand",
+          "nativeVertices": 400,
+          "nativeFaces": 393,
+          "sourceUVAndLoopTopologyExact": true,
+          "savedWorldMaximumErrorM": 5.9526565790260324e-08,
+          "noForeignRigLatticeWeightsOrScripts": true
+        },
+        {
+          "object": "AFN90_RAIN_HAIRBAND",
+          "sourceObject": "GEO-rain-hairband",
+          "nativeVertices": 480,
+          "nativeFaces": 480,
+          "sourceUVAndLoopTopologyExact": true,
+          "savedWorldMaximumErrorM": 5.955442456427313e-08,
+          "noForeignRigLatticeWeightsOrScripts": true
+        }
+      ],
+      "allOriginalCagesKeysUVWeightsDriversMaterialTreesLightsTeethCurlyCapAndGuidesPreserved": true,
+      "rigBonesUnchanged": 52,
+      "evaluatedBrowsLashesExactAtNeutral": true,
+      "rainOriginalMaterialTreesUVTopologyAndPackedMapsVerified": true,
+      "packedHairMaps": [
+        {
+          "name": "TEX-rain_hair_diffuse.png",
+          "sha256": "01c35d3fc4b3e961acf3446fdc4a5de83937e09c1b05b074b27c87e511d50ad6",
+          "packed": true
+        },
+        {
+          "name": "TEX-rain_hair_direction.png",
+          "sha256": "3b17c6caeb953c6931aa6ccbaf8a082f236e66f7df2fcc1d54376d928ba7af0f",
+          "packed": true
+        },
+        {
+          "name": "TEX-rain_hair_direction_bw.png",
+          "sha256": "099063769a7e132e93e2d5d93d9af5548f0c1b9e56b6098d47ce8cae8cf7c1bc",
+          "packed": true
+        }
+      ],
+      "externalTextures": [
+        {
+          "relative": "//study-vitruvian-textures\\Iris_Color.1007.exr",
+          "sha256": "62efc0ed85878cb0831db9b492975c384f19052bd7ab52f945777ac3e1d8b002"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Light_Skin_Color.1001.exr",
+          "sha256": "362373cf6afa6c88c44bc480f328afe94de11ca88463a6b40a5fc8032f3f6fa2"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Light_Skin_Color.1002.exr",
+          "sha256": "0c2dfa2f2edf9110c92ff9ad7879eec0b0b78ee7855d01f1d9525f3cd10e5a9b"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Light_Skin_Color.1003.exr",
+          "sha256": "cd540d1415af4dd2e5ce8f3086f921b8c610597b99a3a369a1ee67d869b629f5"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Light_Skin_Color.1004.exr",
+          "sha256": "d702bb83c27d70516aea23ea62a5218ef495b422783c9048bd193f0ca0118905"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Mouth_Color.1008.exr",
+          "sha256": "47c988fd5799f4c54e3a916cda14bbb5245cf5a171d47132e0e0e9e9f2b05c11"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Sclera_Color.1005.exr",
+          "sha256": "e81a1554b08e096ad76bfb2909a2d09747ff90df1fe1b993b768ec41713dd672"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Height.1001.exr",
+          "sha256": "62d11cdff413599f3cf4c4c16bfd6a467def20b8f21ad7e26a68ea9601475a87"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Height.1002.exr",
+          "sha256": "5dd6a565ab791074905ae3e650ec89f1c77a274d502749ba68a5dc884a651844"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Height.1003.exr",
+          "sha256": "e3edd7d2a7be4a2d1b2ec12a1f08534b770d7644c2d0181d7e4c2bda06b6c29a"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Height.1004.exr",
+          "sha256": "2e3bb73055367c3bb72be9ab95c3278b92967219d895087cd8dd44714011567b"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Roughness.1001.exr",
+          "sha256": "fa97dd24bdf68be9240982d3921bef6ae096c476589fc58eb07ab4039ff1addf"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Roughness.1002.exr",
+          "sha256": "906c3e31ad66044370e1c62bda99eb770ead2c934845be393a18823a55cbd3eb"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Roughness.1003.exr",
+          "sha256": "c5772aee25e4558f7ebb4f2f8d62f51bb8dfce511e89fb4163f85bd6c064f11f"
+        },
+        {
+          "relative": "//study-vitruvian-textures\\Skin_Roughness.1004.exr",
+          "sha256": "4d14cb45facbd63f13ee91131dbe5656c3fe0d6eb8fec93aa8f23e7f00cff10d"
+        }
+      ],
+      "sourceRigToolCodeNotInDerivedBlend": true,
+      "flow": {
+        "attemptedRoots": 128,
+        "allRetained": true,
+        "failed": 85,
+        "savedGuideMaximumWorldErrorM": 1.38989682775162e-07,
+        "noDenseExpansionOrGrowthAcceptance": true
+      },
+      "completeAppearanceContactNaturalMotionRuntimeAccepted": false
+    }
+  ],
+  "sourceRightsAndScripts": "rain-source-license-and-script-scope.json",
+  "seconds": 26.65118932723999,
+  "noBroadTestsAfterVisualRejection": true
+}
