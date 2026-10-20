@@ -1,0 +1,103 @@
+{
+  "kind": "PROMPT_MAINTENANCE_ONLY",
+  "version": "v31",
+  "startedUTC": "2026-10-20T23:30:43.943706+00:00",
+  "baseCommit": "a5cadfebbaf26ae315973913c6ca8899d8a8b689",
+  "priorPromptSha256": "43635d0a82d5411a35c2abc74cb1dab7eabdfb024147ac0f8807b4017e893fc7",
+  "protectedFilesSha256": {
+    "engine/assets/characters/female-next/female-next.asset.json": "ab63580cb6caa70ff6bfdb4a9212a859a7e750b5c78c02740d0d4169f737695b",
+    "Evidence/character-female-next/r0099-continuous-head-neck/continuation.json": "4cc4ef6514582cb0a64cf693bf942f374355302318a94261ae4c3be27b2731ca",
+    "Evidence/character-female-next/r0099-continuous-head-neck/female-next-r0099.visual-audit.json": "91103742a2399c84ef1b97c6a1416d89dea343b4794ee33c4ba2efddb42cdf83",
+    "scripts/character-next/inspect-female-next-r0100-native-eye-topology.py": "1c1cdc3e87e233efabb8143e498ae8e4380169ee3935e7c281e561099cd8ca05",
+    "Evidence/character-female-next/r0100-native-eyelid-assembly/base-eye-connectivity.json": "f5fe6b2b1bdac6c9827033f8f749dab09cb924017858797cdc67d047b431a64d",
+    "Evidence/character-female-next/r0100-native-eyelid-assembly/before.json": "84ab36a1249db0e47e7195751c52050e70bc03122e11df52bafbbce2ea81c9c3",
+    "Evidence/character-female-next/r0100-native-eyelid-assembly/left-native-base-eye-map.png": "a270fdd10c5b7a2d6c068d0f28351a6785c211a43c27ce4c010ec6e6c2c7b428",
+    "Evidence/character-female-next/r0100-native-eyelid-assembly/manifest-before-r0100.json": "ab63580cb6caa70ff6bfdb4a9212a859a7e750b5c78c02740d0d4169f737695b",
+    "Evidence/character-female-next/r0100-native-eyelid-assembly/native-eye-topology.json": "7b193f351c877b980ee9a17ebda761a11ec198c997e5b3caf27aa508a0b72f2c",
+    "Evidence/character-female-next/r0100-native-eyelid-assembly/native-eye-topology.npz": "ad7a8bdf11c9b1075590472f46cd24826e540450cb24553e9cc39c9d195627ad",
+    "Evidence/character-female-next/r0100-native-eyelid-assembly/native-rim-selection.json": "6151ec7aa6d1408dba89acb8434b4c6a6f304ab393dbdebac67d928cac73fca7",
+    "Evidence/character-female-next/r0100-native-eyelid-assembly/topology-inspect.log": "62646fa8d2b7a5934cee50d59681ca72cf1786c870b25273d5e1f900afd31dfb",
+    "sites-engine-journey/package.json": "85f1613c18e4c6c4624c743ea7fd18920292e944c8af69ff82d20f924f7a40de",
+    "sites-engine-journey/public/assets/character-female-refined.glb": "cef44b6a11b59f6820fec8d221316d8acc481b809708b0aab38e7bfd427fbafe",
+    "sites-engine-journey/public/character-editor.js": "33427ba3d93c6c79342282139c08180488d42ac540756b40873ae31957368cf6",
+    "sites-engine-journey/public/index.html": "4916a587f690925862b30b8c14c926173ed6cde1b7a63566a663737e4281ac02",
+    "sites-engine-journey/scripts/character-contact.py": "ccc52e7d8640a67cf7439a7a22d0be414ca7329d1b5d9742554c715e316ecbb0",
+    "sites-engine-journey/scripts/refine-female.py": "25f30c6b300bcda6e1e6cab6ce6d454f59603c31a104505a6ca4ef8a0f7fe441",
+    "sites-engine-journey/src/character-contact.js": "da68c95736cc4a7970b3b93be9bfb23aa67596aa73a7f50c1d06b87f941516fb",
+    "sites-engine-journey/src/character-editor.js": "e2573f9bc95cbff140f8b81250d5a4dfa5fca44e060babe6326e62c33ca828f1",
+    "sites-engine-journey/src/character-materials.js": "2b389e91bbb6e33a33ff31d2d08c9fd28c4feae03ac45d543ccdd44c098bd6e8"
+  },
+  "sourceBlends": 249,
+  "sourceInventoryMetadataDigest": "6387c36aeb685ccfdf98bf338e96a0e9755013d7967b391fc2ac2f5e756b91c2",
+  "pendingIndexBefore": "",
+  "priorTrackedStatus": "M package.json\n M public/assets/character-female-refined.glb\n M public/character-editor.js\n M public/index.html\n M scripts/character-contact.py\n M scripts/refine-female.py\n M src/character-contact.js\n M src/character-editor.js\n M src/character-materials.js",
+  "pendingWorkHandoff": {
+    "latestRegisteredRevision": "female-next-r0099",
+    "latestContinuation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0099-continuous-head-neck\\continuation.json",
+    "latestEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0099-continuous-head-neck\\female-next-r0099.visual-audit.json",
+    "retainedCompleteReference": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0099-c-continuous-artist-body.blend",
+      "sha256": "b3b45ba3ced599babdd722cd6144647c58362edfe0d843d7a033bfed671ad073",
+      "bytes": 507148595,
+      "status": "RETAIN_CONTINUOUS_ARTIST_WOMAN_LOCAL_NECK_GAIN_ONLY_NOT_COMPLETE_ADOPTION",
+      "scope": "Same complete scene with original eyes/oral/52-bone control sources and groom. Original Dan Ulrich fine head/neck/body continuous topology, reference floor registration below neck, actual full-skin root rebinding and explicit canonical material persistence. Displayed body outer shape changes; old body control source and rollbacks remain. Local neutral neck continuity only retained; eyes/hair/skin, complete blink/oral/actions, finite contacts and runtime unaccepted.",
+      "originalArtist": "Dan Ulrich",
+      "selectedSourceAssetLicense": "CC0",
+      "sourceBodyOuterShapeChangedExplicitly": true
+    },
+    "countersCopiedWithoutModification": {
+      "productionRoundsSinceLastWholeCharacterReview": 1,
+      "lastReviewedProductionWindow": [
+        "r96",
+        "r97",
+        "r98"
+      ],
+      "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 19,
+      "nextWholeReviewAfterFurtherProductionRounds": 2
+    },
+    "unregisteredProduction": "r0100",
+    "pendingEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0100-native-eyelid-assembly",
+    "observedPendingFiles": [
+      "base-eye-connectivity.json",
+      "before.json",
+      "left-native-base-eye-map.png",
+      "manifest-before-r0100.json",
+      "native-eye-topology.json",
+      "native-eye-topology.npz",
+      "native-rim-selection.json",
+      "topology-inspect.log"
+    ],
+    "observedState": "Native eye topology inspection, connectivity map and selected rims exist. No r100 .blend, complete preview, audit or adoption exists. No Blender process observed at maintenance entry. This maintenance neither completes nor recounts r100.",
+    "liveBlenderJobsObserved": [],
+    "pendingConstructionAsProposal": "Direct native eyelid/ocular assembly reconstruction on retained r99 C; finite margins/inner walls/wetline and actual delivered closure. Existing topology diagnosis is support only, not implementation. Do not turn this into aperture/globe-scale/IOR/crease scans or automatically build an elaborate new API/solver.",
+    "nextProductionAction": "Resume the same pending r100 after reconciling files/jobs. Use the already available original eye topology, selected rims, source reference and r97 protected contour; directly author a native Blender ocular/lid candidate on the same continuous C woman. Preserve full body/neck/groom/eyes/oral/rig and material bindings. Deliver actual matched complete head/profile/body plus evaluated-input blink preview before broad audits. No repeated topology research or mandatory new framework. Judge shape first; retain scoped gains with unaccepted gaps separately. Existing stopped methods remain in r99 continuation; pending proposal grants no retry permission.",
+    "pendingTimingPolicy": "Preserve r100 before.json timestamps and original deadlines. Record user interruption/prompt maintenance separately; do not silently reset deadlines or report a new round. No r100 outcome, elapsed-production verdict or counter adjustment is made here."
+  },
+  "historyAllowlist": [
+    "AGENTS.md",
+    "docs/character-continuous-goal.md",
+    "docs/character-goal-v31-update.json"
+  ],
+  "designReference": "https://developers.openai.com/cookbook/examples/codex/using_goals_in_codex",
+  "activeGoalObjectiveRewritten": false,
+  "newGoalOrScheduleCreated": false,
+  "modelIterationStarted": false,
+  "modelsManifestScoresAdoptionAcceptanceCountersAndHistoricalFindingsChanged": false,
+  "verifiedUTC": "2026-10-20T23:32:33.622487+00:00",
+  "promptSha256": "5322bbf88ae52ac968b4cadb012fc4c0bd34a179f80d78b9c5b2a85a07d20ac4",
+  "promptBytes": 15902,
+  "promptCopiesByteIdentical": true,
+  "bothAgentEntriesVersion": "v31",
+  "protectedFilesUnchanged": true,
+  "all249SourceMetadataUnchanged": true,
+  "retainedSourceHashVerified": true,
+  "stagedProductionBlobsPreserved": true,
+  "activeGoalStatusObserved": "active",
+  "changes": [
+    "Put the actual complete woman and immediate Blender authoring before support frameworks.",
+    "Resume existing diagnosis/jobs/candidates without resetting rounds or original deadlines; record interruptions separately.",
+    "Require matched complete preview before broad audits, compare protected good features as well as current baseline.",
+    "Keep local retained gains distinct from whole appearance adoption; preserve quality, contact scope, rights, resources and exact GitHub rules.",
+    "Reconcile r99 registered results and pending r100 topology-only work without changing or recounting them."
+  ]
+}
