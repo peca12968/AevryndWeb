@@ -1,0 +1,461 @@
+{
+  "revision": "female-next-r0067",
+  "reviewUTC": "2026-10-20T02:27:14.074488+00:00",
+  "decision": "REJECT_NATIVE_EVE_FREE_SHAFT_CONTACT_FAILURE",
+  "studySource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0067-b-source-radius-eve-study.blend",
+  "studySha256": "c4e9362147888eaff70f442ac95b23ea5b59163c684cbf1059a15bc0ad882dfc",
+  "workingSourceUnchanged": "source/aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend",
+  "appearance": {
+    "status": "FULL_LONG_HAIR_SILHOUETTE_GAIN_BUT_UNNATURAL_UNACCEPTED",
+    "limitedSilhouetteImprovement": true,
+    "completeDefectResolved": false,
+    "appearanceAdoptionPassed": false,
+    "observations": [
+      "Full long-hair silhouette and front/back length are now visible on the same saved woman, unlike the sparse baseline.",
+      "The frontal hairline coverage remains discontinuous/receding; scalp transitions, uniformly flowing strands and broad wet-looking highlights are not a credible finished hairstyle.",
+      "Original source PS and corrected Curves match closely in the tested whole-head view; the poor style/contact result is not explained by the missing-radius conversion defect after repair.",
+      "Neutral source anatomy, skin, eye gain, lighting and exposure remain exact; no new broad face/skin or body improvement."
+    ],
+    "wholeCharacterScore": null,
+    "hairAppearanceScore": null,
+    "evidence": [
+      "r0067-complete-character-comparison.png",
+      "r0067-hair-multiangle.png",
+      "r0067-second-light-comparison.png"
+    ]
+  },
+  "function": {
+    "status": "PASS_NATIVE_FULL_CURVE_READBACK_NOT_CONTACT_ACCEPTANCE",
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0067-b-source-radius-eve-study.blend",
+    "sha256": "c4e9362147888eaff70f442ac95b23ea5b59163c684cbf1059a15bc0ad882dfc",
+    "openedFromHistory": false,
+    "baselineSourceSha256": "4d0e3f67735ae68c5c1fa3c933f7cabb03cb547928e778f7067a8e699620b708",
+    "originalFiveComponentsAllKeysUVMatricesAndMaterialsExact": true,
+    "originalCurvesGeometryExact": true,
+    "intentionalVisibilityChange": "Only original sparse Bob hidden; new Eve visible, native emitter hidden.",
+    "newNativeCurves": 26925,
+    "newNativePoints": 212267,
+    "renderGeometryMatchesBakedData": true,
+    "radiusTransfer": "Unedited author diameter * diameter scale /2, original close-tip0; no collision-driven shrink.",
+    "maximumLocalRadiusM": 5.999999848427251e-05,
+    "zeroRadiusTips": 26925,
+    "originalStageSkinEyeGainExposureExact": true,
+    "actualNeutralBodyOcularGeometryHashesExact": {
+      "AFN60_L_EYE_OUTER_SHELL_APPROX": {
+        "V": "3264546e63b0f7d179ba4218eaf59e77d37bfe57067f6ab6131927f5b259d2df",
+        "T": "55fcf82652a57874b0695ebd6815160948d6cca115debd8e774f2395a0987e56",
+        "mi": "89ac6cf03d54340f0b9c481cfc9996dd4b8accd9b210b7b6224b3b529001f607",
+        "nativeTriangleFace": "624e798f0f4917c646802f29c5190219aa30047928782313341e1f2ec545c633"
+      },
+      "AFN60_R_EYE_OUTER_SHELL_APPROX": {
+        "V": "d14e963d6bb77959e6ef033ae1b96417d66e7717d19efa4771f1cd9c11599276",
+        "T": "93e5ed9280417839fcc7b1bfad5f2ae629c2e3408ec2bfae552a9c89e4e15b33",
+        "mi": "89ac6cf03d54340f0b9c481cfc9996dd4b8accd9b210b7b6224b3b529001f607",
+        "nativeTriangleFace": "e56e8c2885e64455d2a2a3f184e8fd1785216733c85fbce340deff8464836cdf"
+      },
+      "AFN60_L_IRIS_PUPIL_SURFACE": {
+        "V": "af3af71eb6cffa81957e84720a67f2d9457b600200da0f90cfd56ee74dde9130",
+        "T": "d33bc2119a47fe9f0ba858fad175ba7d52afec0d2418e50ae4742427c6d0c172",
+        "mi": "837fcf0e672a258f5c7c6011a989cc1cf5576160349649fb013a127918f08ba8",
+        "nativeTriangleFace": "cfa651736e893c065da74a899f80b6e25c3e89ab083cafd5a7550b9697bfa5c6"
+      },
+      "AFN60_R_IRIS_PUPIL_SURFACE": {
+        "V": "83130d5704025f759a0aa7c9e993baa0bb66dcc6f7714f79f5292205f154143a",
+        "T": "9c59369a65b05f131c64d39b282d2af880790219ad1bd1836a90b3bc460343a2",
+        "mi": "062df0b589159995c19007ac42f8e8f451cbd46afd471ab63a1878b2f95814a3",
+        "nativeTriangleFace": "fb8fac3705b9a6f7c68a90c412b658b5b897a29f2607998221ce1505b60bcad1"
+      },
+      "AFN60_BODY_ORAL_AND_OCULAR_LINING": {
+        "V": "c1208e38d0a52042e3ed50a122e3d6ac0c0d3ec5d4a4192cf434cf3555a4fbbf",
+        "T": "f3e45092ec76eca6b30c43776e37adcbc73bedd59e19864993c24ad6e91b7d45",
+        "mi": "bd6b58a23d447ad6d140c12e4df99d284dea4b8341da30e92ebfcb9397dc1bd9",
+        "nativeTriangleFace": "f57f381914793185919e3cfa89b5fee6dbfd08ba12105c5fb3b6a9e5cdb90b85"
+      }
+    },
+    "relativeTextures": [
+      {
+        "relative": "//study-vitruvian-textures\\Iris_Color.1007.exr",
+        "sha256": "62efc0ed85878cb0831db9b492975c384f19052bd7ab52f945777ac3e1d8b002",
+        "colorSpace": "Linear Rec.709"
+      },
+      {
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1001.exr",
+        "sha256": "362373cf6afa6c88c44bc480f328afe94de11ca88463a6b40a5fc8032f3f6fa2",
+        "colorSpace": "Linear Rec.709"
+      },
+      {
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1002.exr",
+        "sha256": "0c2dfa2f2edf9110c92ff9ad7879eec0b0b78ee7855d01f1d9525f3cd10e5a9b",
+        "colorSpace": "Linear Rec.709"
+      },
+      {
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1003.exr",
+        "sha256": "cd540d1415af4dd2e5ce8f3086f921b8c610597b99a3a369a1ee67d869b629f5",
+        "colorSpace": "Linear Rec.709"
+      },
+      {
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1004.exr",
+        "sha256": "d702bb83c27d70516aea23ea62a5218ef495b422783c9048bd193f0ca0118905",
+        "colorSpace": "Linear Rec.709"
+      },
+      {
+        "relative": "//study-vitruvian-textures\\Mouth_Color.1008.exr",
+        "sha256": "47c988fd5799f4c54e3a916cda14bbb5245cf5a171d47132e0e0e9e9f2b05c11",
+        "colorSpace": "Linear Rec.709"
+      },
+      {
+        "relative": "//study-vitruvian-textures\\Sclera_Color.1005.exr",
+        "sha256": "e81a1554b08e096ad76bfb2909a2d09747ff90df1fe1b993b768ec41713dd672",
+        "colorSpace": "Linear Rec.709"
+      },
+      {
+        "relative": "//study-vitruvian-textures\\Skin_Height.1001.exr",
+        "sha256": "62d11cdff413599f3cf4c4c16bfd6a467def20b8f21ad7e26a68ea9601475a87",
+        "colorSpace": "Non-Color"
+      },
+      {
+        "relative": "//study-vitruvian-textures\\Skin_Height.1002.exr",
+        "sha256": "5dd6a565ab791074905ae3e650ec89f1c77a274d502749ba68a5dc884a651844",
+        "colorSpace": "Non-Color"
+      },
+      {
+        "relative": "//study-vitruvian-textures\\Skin_Height.1003.exr",
+        "sha256": "e3edd7d2a7be4a2d1b2ec12a1f08534b770d7644c2d0181d7e4c2bda06b6c29a",
+        "colorSpace": "Non-Color"
+      },
+      {
+        "relative": "//study-vitruvian-textures\\Skin_Height.1004.exr",
+        "sha256": "2e3bb73055367c3bb72be9ab95c3278b92967219d895087cd8dd44714011567b",
+        "colorSpace": "Non-Color"
+      },
+      {
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1001.exr",
+        "sha256": "fa97dd24bdf68be9240982d3921bef6ae096c476589fc58eb07ab4039ff1addf",
+        "colorSpace": "Non-Color"
+      },
+      {
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1002.exr",
+        "sha256": "906c3e31ad66044370e1c62bda99eb770ead2c934845be393a18823a55cbd3eb",
+        "colorSpace": "Non-Color"
+      },
+      {
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1003.exr",
+        "sha256": "c5772aee25e4558f7ebb4f2f8d62f51bb8dfce511e89fb4163f85bd6c064f11f",
+        "colorSpace": "Non-Color"
+      },
+      {
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1004.exr",
+        "sha256": "4d14cb45facbd63f13ee91131dbe5656c3fe0d6eb8fec93aa8f23e7f00cff10d",
+        "colorSpace": "Non-Color"
+      }
+    ],
+    "nativeConversionGeometryDoesNotProveStyleOrPhysics": true,
+    "newBodyOrFaceRigOrHairDynamics": false,
+    "automaticLibrariesHandlersOrAddons": false,
+    "fullBodyHairRootSelfContinuousOrRuntimeAccepted": false,
+    "seconds": 4.6334381103515625
+  },
+  "contact": {
+    "status": "FAIL_ACTUAL_FREE_SHAFT_IN_TISSUE",
+    "evidence": "b-contact-falsification.json",
+    "confirmedFreeShaftInsideWitnesses": 6,
+    "testedFreeKnotsBeforeStop": 52,
+    "centreInsideDistanceRangeM": [
+      0.0005239989841356874,
+      0.004607636947184801
+    ],
+    "globalFailureCountOrMinimumClaimed": false,
+    "rootContainmentNotAutomaticallyCalledIllegal": true,
+    "fullRootSurfaceSelfContinuousPassed": false
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "nativeStaticCurvesAreNotAevryndHairRuntime": true,
+    "performancePassed": false
+  },
+  "rejectedIntermediateA": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0067-a-native-eve-study.blend",
+    "sha256": "7301f2dca64048558114771ea5131353c7f2554feccb295a26873f3ace7ca0be",
+    "reason": "Native conversion lacks radius attribute; default1cm, not author thickness. B transfers unedited author diameter/close-tip; A is not a style candidate."
+  },
+  "retainedResearch": {
+    "purpose": "Correctly transfer the actual displayed native children and diameter-to-radius data into independently editable static Curves, preventing the demonstrated1cm default error.",
+    "scope": "Blender5.2.2 Eve constant root/tip diameter, shape0, child size1/no variation and close-tip0, at one native source pose. Exact26,925curves/212,267points; not a generic arbitrary taper importer, root binding, physical groom or engine implementation.",
+    "minimumIntegrationStep": "Already exercised in the complete saved r67B study with actual native PS control and relative textures. Reuse only the proven transfer rule on compatible, independently qualified future groom data; do not integrate the rejected Eve paths.",
+    "remainingBlocker": "This Eve path set fails free-shaft/body contact and appearance. Complete arbitrary source/groom semantics, parent/follicle lineage, motion, self-contact and Aevrynd runtime still unaccepted."
+  },
+  "nativeRadiusControl": {
+    "sourceParticleImage": {
+      "file": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0067-native-eve\\native-source-preview-face.png",
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.017042960971593857,
+          -0.9998547434806824,
+          -0.8999999761581421
+        ],
+        [
+          0.0,
+          0.9998547434806824,
+          0.017042960971593857,
+          1.4368505477905273
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "resolution": 640,
+      "samples": 16,
+      "seed": 61061,
+      "exposure": -0.5,
+      "lights": [
+        [
+          "Aevrynd Key",
+          [
+            -2.0999999046325684,
+            -3.200000047683716,
+            3.799999952316284
+          ],
+          [
+            0.9392134547233582,
+            7.895437903471247e-08,
+            -0.5807563066482544
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ],
+          1150.0,
+          [
+            1.0,
+            0.7300000190734863,
+            0.5799999833106995
+          ]
+        ],
+        [
+          "Aevrynd Fill",
+          [
+            2.299999952316284,
+            -1.7000000476837158,
+            2.700000047683716
+          ],
+          [
+            1.0345115661621094,
+            -4.8274159780703485e-08,
+            0.9342884421348572
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ],
+          780.0,
+          [
+            0.5600000023841858,
+            0.699999988079071,
+            1.0
+          ]
+        ],
+        [
+          "Aevrynd Rim",
+          [
+            0.0,
+            2.4000000953674316,
+            3.0
+          ],
+          [
+            0.8760581016540527,
+            6.716003042583907e-08,
+            3.141592502593994
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ],
+          900.0,
+          [
+            0.699999988079071,
+            0.8199999928474426,
+            1.0
+          ]
+        ]
+      ]
+    },
+    "explicitRadiusCurvesImage": {
+      "file": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0067-native-eve\\b-eve-preview-face.png",
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.017042960971593857,
+          -0.9998547434806824,
+          -0.8999999761581421
+        ],
+        [
+          0.0,
+          0.9998547434806824,
+          0.017042960971593857,
+          1.4368505477905273
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "resolution": 640,
+      "samples": 16,
+      "seed": 61061,
+      "exposure": -0.5,
+      "lights": [
+        [
+          "Aevrynd Key",
+          [
+            -2.0999999046325684,
+            -3.200000047683716,
+            3.799999952316284
+          ],
+          [
+            0.9392134547233582,
+            7.895437903471247e-08,
+            -0.5807563066482544
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ],
+          1150.0,
+          [
+            1.0,
+            0.7300000190734863,
+            0.5799999833106995
+          ]
+        ],
+        [
+          "Aevrynd Fill",
+          [
+            2.299999952316284,
+            -1.7000000476837158,
+            2.700000047683716
+          ],
+          [
+            1.0345115661621094,
+            -4.8274159780703485e-08,
+            0.9342884421348572
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ],
+          780.0,
+          [
+            0.5600000023841858,
+            0.699999988079071,
+            1.0
+          ]
+        ],
+        [
+          "Aevrynd Rim",
+          [
+            0.0,
+            2.4000000953674316,
+            3.0
+          ],
+          [
+            0.8760581016540527,
+            6.716003042583907e-08,
+            3.141592502593994
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ],
+          900.0,
+          [
+            0.699999988079071,
+            0.8199999928474426,
+            1.0
+          ]
+        ]
+      ]
+    },
+    "meanAbsoluteRGB8Difference": 0.2119116187095642,
+    "p99AbsoluteRGB8Difference": 5.0,
+    "scope": "Same camera native PS / baked Curves visual control only. Small pixel differences do not prove all-angle geometric or optical equivalence. Original1cm Curves default is not source hair thickness."
+  },
+  "resources": {
+    "heavyJobsAtOnce": 1,
+    "blenderThreads": 4,
+    "observedBlenderWorkingSetMB": 2110,
+    "observationIsNotPeak": true,
+    "firstConvertedPreviewSeconds": 46.91,
+    "nativeAndCorrectedRadiusControlsSeconds": 38.8,
+    "completeSixViewRenderSeconds": 180.14,
+    "contactFalsificationSeconds": 6.444305419921875,
+    "newSoftwareAddonsServersSubagents": 0,
+    "learningFileDownloadBytes": 28612482,
+    "within45MinuteCheckpoint": true
+  },
+  "stats": {
+    "candidateBytes": 16939624,
+    "visibleBodyOcularMeshComponents": 5,
+    "bodyOcularMeshVertexTriangleCountBasis": "Exact unchanged r65/r60 neutral geometry; body-only probe explicitly560738vertices/1121472triangles.",
+    "actualHairCurves": 26925,
+    "actualHairPoints": 212267,
+    "worldShaftRadiusM": 5.3701278429833456e-05,
+    "zeroRadiusTips": 26925,
+    "relativeImages": 15,
+    "newBonesOrActions": 0,
+    "runtimeTimingOrMemory": null
+  },
+  "milestone": {
+    "current": "CREDIBLE_COMPLETE_PERSON_NOT_MET",
+    "selectedDefect": "Missing credible complete hairstyle",
+    "selectedDefectResolved": false,
+    "newCompleteUsableCapability": false,
+    "localGainResetsStagnation": false,
+    "productionRoundsSinceLastWholeCharacterReview": 2,
+    "lastWholeCharacterReview": "../r0065-eye-shading/continuation.json",
+    "nextReviewDueAfterFurtherProductionRounds": 1
+  },
+  "nextLearningReference": {
+    "purpose": "Learning reference for next full-hair authoring basis, not an imported engine asset or a new r67 candidate.",
+    "publisherPage": "https://www.blender.org/download/demo-files/",
+    "fileURL": "https://download.blender.org/demo/geometry-nodes/hair_nodes-female_hair_styles.blend",
+    "author": "Daniel Bystedt",
+    "listedLicense": "CC-BY-SA, version not established by the publisher card; verify embedded/source license before any derivative redistribution. Not CC0 or exclusive Aevrynd ownership.",
+    "file": "D:\\Download\\Aevrynd\\Reference\\character\\blender-bystedt-hair-cc-by-sa\\hair_nodes-female_hair_styles.blend",
+    "bytes": 28612482,
+    "sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+    "softwareOrAddonInstalled": false,
+    "embeddedCodeExecuted": false,
+    "importedIntoEngineOrWorkingCharacter": false,
+    "previousPageFileLinkReturnedHTML": true,
+    "officialDownloadHostRangeProbeBytes": 28612482,
+    "nextStep": "Open original demo read-only with auto-execution disabled, bound evaluated resources and inspect original complete hairstyle/guides/surface attachments and license. Learn generic authoring principles; do not automatically transplant/share-alike assets into own-engine formal assets.",
+    "seconds": 2.7425451278686523
+  },
+  "nextAction": "Keep the verified r65 woman and stop the present Vitruvian Eve-on-female/direct-native-children route. Do not try more density/radius/clump/root-offset variants or sample another same-library style to evade this failure. Change the authoring basis to the already downloaded Blender publisher Hair Styles demo by Daniel Bystedt: Reference/character/blender-bystedt-hair-cc-by-sa/hair_nodes-female_hair_styles.blend, SHA1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48. First inspect original file metadata/license and one complete artist-authored style with auto-execution off and bounded graph evaluation; do not activate all styles or unbounded child generation. The publisher lists CC-BY-SA, not CC0: preserve attribution and verify exact conditions before any derivative asset adoption or redistribution, with software/data rights separate. Learn explicit guide hierarchy, scalp attachment, hairline transitions and complete shape decisions; do not claim the demo is our own finished character or automatically transplant it. Name a minimal integration endpoint on the same complete r65 woman, then produce one source-grounded complete hairstyle or change the dependency if the evidence falsifies it. Next production round reaches the three-round whole-person review after r66/r67; if the complete selected defect or a complete usable capability remains unresolved, change the broader production breakdown rather than reset the counter with small repairs. Full anatomy/skin/layers/rig/cloth/natural hair dynamics/contact and real Aevrynd material/import/LOD/performance plus explicit female acceptance remain required.",
+  "wholeCharacterScore": null,
+  "formalRuntimeWebsiteAndFemaleAcceptanceUnchanged": true
+}

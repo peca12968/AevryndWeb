@@ -1,0 +1,640 @@
+{
+  "status": "FAIL_ACTUAL_FREE_SHAFT_IN_TISSUE",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0067-b-source-radius-eve-study.blend",
+  "sha256": "c4e9362147888eaff70f442ac95b23ea5b59163c684cbf1059a15bc0ad882dfc",
+  "actualCurves": 26925,
+  "actualPoints": 212267,
+  "curveTypes": [
+    0
+  ],
+  "bodyRenderVertices": 560738,
+  "bodyRenderTriangles": 1121472,
+  "bodyClosedManifoldEdgesVerified": true,
+  "bodyBoundaryOrNonmanifoldEdges": 0,
+  "curveDataRadiiMatchActualSavedNativeData": true,
+  "worldMaximumShaftRadiusM": 5.370127780675218e-05,
+  "numericalAllowanceM": 1e-06,
+  "strongInsideWitnessThresholdM": 0.0001,
+  "freePathLowerBoundM": 0.02,
+  "tested": {
+    "freeShaft": {
+      "testedActualKnots": 52,
+      "retainedInsideWitnesses": 6,
+      "globalCountOrPass": false
+    },
+    "root": {
+      "testedActualKnots": 1037,
+      "retainedInsideWitnesses": 6,
+      "globalCountOrPass": false
+    }
+  },
+  "witnesses": [
+    {
+      "kind": "freeShaft",
+      "curve": 32,
+      "pointWithinCurve": 4,
+      "flatPoint": 253,
+      "worldPoint": [
+        -0.04493880957162544,
+        -0.06995478772098007,
+        1.3875692646731608
+      ],
+      "curveKnotType": 0,
+      "rootToKnotPolylineArcLowerBoundM": 0.19634798295267886,
+      "unsignedNearestTissueDistanceM": 0.004546322859823704,
+      "pointRadiusM": 5.370127780675218e-05,
+      "sampleSignedTissueClearanceM": -0.004600024137630456,
+      "nearestBodyTriangle": 183659,
+      "nativeBodyFace": 5739,
+      "nearestBodyPoint": [
+        -0.04867255687713623,
+        -0.06981198489665985,
+        1.3849793672561646
+      ],
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            136482
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            82069
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            214561
+          ],
+          "terminated": true
+        }
+      ],
+      "interpretation": "Actual interpolating free-shaft knot lies inside closed tissue, beyond20mm of path from the root."
+    },
+    {
+      "kind": "freeShaft",
+      "curve": 85,
+      "pointWithinCurve": 3,
+      "flatPoint": 677,
+      "worldPoint": [
+        -0.01354131430344152,
+        0.032377868729602355,
+        1.446702541112174
+      ],
+      "curveKnotType": 0,
+      "rootToKnotPolylineArcLowerBoundM": 0.1402295079650775,
+      "unsignedNearestTissueDistanceM": 0.004447612911462784,
+      "pointRadiusM": 5.370127780675218e-05,
+      "sampleSignedTissueClearanceM": -0.004501314189269536,
+      "nearestBodyTriangle": 225828,
+      "nativeBodyFace": 7057,
+      "nearestBodyPoint": [
+        -0.014588962309062481,
+        0.0363738127052784,
+        1.445054531097412
+      ],
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            215188
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            225827
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            221309
+          ],
+          "terminated": true
+        }
+      ],
+      "interpretation": "Actual interpolating free-shaft knot lies inside closed tissue, beyond20mm of path from the root."
+    },
+    {
+      "kind": "freeShaft",
+      "curve": 138,
+      "pointWithinCurve": 4,
+      "flatPoint": 1099,
+      "worldPoint": [
+        0.07676645515287284,
+        0.038761035172328206,
+        1.3023135666488201
+      ],
+      "curveKnotType": 0,
+      "rootToKnotPolylineArcLowerBoundM": 0.21838367059882882,
+      "unsignedNearestTissueDistanceM": 0.0040200212970376015,
+      "pointRadiusM": 5.370127780675218e-05,
+      "sampleSignedTissueClearanceM": -0.004073722574844354,
+      "nearestBodyTriangle": 552927,
+      "nativeBodyFace": 17278,
+      "nearestBodyPoint": [
+        0.07815798372030258,
+        0.04171726852655411,
+        1.3046555519104004
+      ],
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            550772
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            552924
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            535801
+          ],
+          "terminated": true
+        }
+      ],
+      "interpretation": "Actual interpolating free-shaft knot lies inside closed tissue, beyond20mm of path from the root."
+    },
+    {
+      "kind": "freeShaft",
+      "curve": 144,
+      "pointWithinCurve": 4,
+      "flatPoint": 1144,
+      "worldPoint": [
+        0.06221537073322736,
+        0.05158044874844947,
+        1.2853996579672469
+      ],
+      "curveKnotType": 0,
+      "rootToKnotPolylineArcLowerBoundM": 0.21955838694923757,
+      "unsignedNearestTissueDistanceM": 0.004607636947184801,
+      "pointRadiusM": 5.370127780675218e-05,
+      "sampleSignedTissueClearanceM": -0.004661338224991553,
+      "nearestBodyTriangle": 563468,
+      "nativeBodyFace": 17608,
+      "nearestBodyPoint": [
+        0.06259889900684357,
+        0.05587133392691612,
+        1.2870341539382935
+      ],
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            563479
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            544535
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            535809
+          ],
+          "terminated": true
+        }
+      ],
+      "interpretation": "Actual interpolating free-shaft knot lies inside closed tissue, beyond20mm of path from the root."
+    },
+    {
+      "kind": "freeShaft",
+      "curve": 151,
+      "pointWithinCurve": 4,
+      "flatPoint": 1199,
+      "worldPoint": [
+        0.03783856367536753,
+        0.059928254251939705,
+        1.2603037475878125
+      ],
+      "curveKnotType": 0,
+      "rootToKnotPolylineArcLowerBoundM": 0.22453167362181853,
+      "unsignedNearestTissueDistanceM": 0.0010077172191813588,
+      "pointRadiusM": 5.370127780675218e-05,
+      "sampleSignedTissueClearanceM": -0.001061418496988111,
+      "nearestBodyTriangle": 555631,
+      "nativeBodyFace": 17363,
+      "nearestBodyPoint": [
+        0.03776887431740761,
+        0.060924604535102844,
+        1.2604376077651978
+      ],
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            561295
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            555631
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            563713
+          ],
+          "terminated": true
+        }
+      ],
+      "interpretation": "Actual interpolating free-shaft knot lies inside closed tissue, beyond20mm of path from the root."
+    },
+    {
+      "kind": "freeShaft",
+      "curve": 335,
+      "pointWithinCurve": 3,
+      "flatPoint": 2647,
+      "worldPoint": [
+        -0.06307266389811161,
+        0.04341277083495498,
+        1.3083958135881346
+      ],
+      "curveKnotType": 0,
+      "rootToKnotPolylineArcLowerBoundM": 0.16957083097139808,
+      "unsignedNearestTissueDistanceM": 0.0005239989841356874,
+      "pointRadiusM": 5.370127780675218e-05,
+      "sampleSignedTissueClearanceM": -0.0005777002619424395,
+      "nearestBodyTriangle": 806279,
+      "nativeBodyFace": 25852,
+      "nearestBodyPoint": [
+        -0.0631876140832901,
+        0.043815191835165024,
+        1.3087111711502075
+      ],
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            832268
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            806279
+          ],
+          "terminated": true
+        },
+        {
+          "count": 3,
+          "inside": true,
+          "triangleIDs": [
+            806278,
+            227670,
+            229404
+          ],
+          "terminated": true
+        }
+      ],
+      "interpretation": "Actual interpolating free-shaft knot lies inside closed tissue, beyond20mm of path from the root."
+    },
+    {
+      "kind": "root",
+      "curve": 309,
+      "pointWithinCurve": 0,
+      "flatPoint": 2430,
+      "worldPoint": [
+        -0.045962186616134826,
+        -0.003180965971077754,
+        1.4201540869683669
+      ],
+      "curveKnotType": 0,
+      "rootToKnotPolylineArcLowerBoundM": 0.0,
+      "unsignedNearestTissueDistanceM": 0.00010940739593934268,
+      "pointRadiusM": 5.370127780675218e-05,
+      "sampleSignedTissueClearanceM": -0.00016310867374609486,
+      "nearestBodyTriangle": 88340,
+      "nativeBodyFace": 2760,
+      "nearestBodyPoint": [
+        -0.04604711756110191,
+        -0.0031295884400606155,
+        1.4201080799102783
+      ],
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            220955
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            88340
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            228601
+          ],
+          "terminated": true
+        }
+      ],
+      "interpretation": "Inside tissue at root; not alone classified as illegal anatomy. Follicle attachment/containment still requires a declared anatomical model."
+    },
+    {
+      "kind": "root",
+      "curve": 2327,
+      "pointWithinCurve": 0,
+      "flatPoint": 18336,
+      "worldPoint": [
+        -0.005410842469852517,
+        0.020891640716560467,
+        1.4145751196629988
+      ],
+      "curveKnotType": 0,
+      "rootToKnotPolylineArcLowerBoundM": 0.0,
+      "unsignedNearestTissueDistanceM": 0.00019520155910868198,
+      "pointRadiusM": 5.370127780675218e-05,
+      "sampleSignedTissueClearanceM": -0.00024890283691543415,
+      "nearestBodyTriangle": 224300,
+      "nativeBodyFace": 7009,
+      "nearestBodyPoint": [
+        -0.005423411726951599,
+        0.021066155284643173,
+        1.4144885540008545
+      ],
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            224301
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            224300
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            220617
+          ],
+          "terminated": true
+        }
+      ],
+      "interpretation": "Inside tissue at root; not alone classified as illegal anatomy. Follicle attachment/containment still requires a declared anatomical model."
+    },
+    {
+      "kind": "root",
+      "curve": 3405,
+      "pointWithinCurve": 0,
+      "flatPoint": 26846,
+      "worldPoint": [
+        -0.0019338573865304298,
+        0.022112323222819974,
+        1.4173172841472166
+      ],
+      "curveKnotType": 0,
+      "rootToKnotPolylineArcLowerBoundM": 0.0,
+      "unsignedNearestTissueDistanceM": 0.0005108650657348335,
+      "pointRadiusM": 5.370127780675218e-05,
+      "sampleSignedTissueClearanceM": -0.0005645663435415857,
+      "nearestBodyTriangle": 224318,
+      "nativeBodyFace": 7009,
+      "nearestBodyPoint": [
+        -0.0019400127930566669,
+        0.02256174385547638,
+        1.41707444190979
+      ],
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            214941
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            224289
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            224826
+          ],
+          "terminated": true
+        }
+      ],
+      "interpretation": "Inside tissue at root; not alone classified as illegal anatomy. Follicle attachment/containment still requires a declared anatomical model."
+    },
+    {
+      "kind": "root",
+      "curve": 3550,
+      "pointWithinCurve": 0,
+      "flatPoint": 28012,
+      "worldPoint": [
+        -0.011835658666509596,
+        0.019118165494919737,
+        1.4131353792813002
+      ],
+      "curveKnotType": 0,
+      "rootToKnotPolylineArcLowerBoundM": 0.0,
+      "unsignedNearestTissueDistanceM": 0.00035244686296209693,
+      "pointRadiusM": 5.370127780675218e-05,
+      "sampleSignedTissueClearanceM": -0.0004061481407688491,
+      "nearestBodyTriangle": 227210,
+      "nativeBodyFace": 7100,
+      "nearestBodyPoint": [
+        -0.011907064355909824,
+        0.019431989639997482,
+        1.4129917621612549
+      ],
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            215157
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            227210
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            220610
+          ],
+          "terminated": true
+        }
+      ],
+      "interpretation": "Inside tissue at root; not alone classified as illegal anatomy. Follicle attachment/containment still requires a declared anatomical model."
+    },
+    {
+      "kind": "root",
+      "curve": 3892,
+      "pointWithinCurve": 0,
+      "flatPoint": 30691,
+      "worldPoint": [
+        0.016683997938789386,
+        0.018073169405290912,
+        1.41359256673762
+      ],
+      "curveKnotType": 0,
+      "rootToKnotPolylineArcLowerBoundM": 0.0,
+      "unsignedNearestTissueDistanceM": 0.0002540774585213512,
+      "pointRadiusM": 5.370127780675218e-05,
+      "sampleSignedTissueClearanceM": -0.0003077787363281034,
+      "nearestBodyTriangle": 221775,
+      "nativeBodyFace": 6930,
+      "nearestBodyPoint": [
+        0.01675627939403057,
+        0.018293453380465508,
+        1.4134886264801025
+      ],
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            221776
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            221775
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            219808
+          ],
+          "terminated": true
+        }
+      ],
+      "interpretation": "Inside tissue at root; not alone classified as illegal anatomy. Follicle attachment/containment still requires a declared anatomical model."
+    },
+    {
+      "kind": "root",
+      "curve": 6811,
+      "pointWithinCurve": 0,
+      "flatPoint": 53722,
+      "worldPoint": [
+        -0.02429545223045171,
+        0.013702781408498232,
+        1.4124905155739498
+      ],
+      "curveKnotType": 0,
+      "rootToKnotPolylineArcLowerBoundM": 0.0,
+      "unsignedNearestTissueDistanceM": 0.00041482102824375033,
+      "pointRadiusM": 5.370127780675218e-05,
+      "sampleSignedTissueClearanceM": -0.0004685223060505025,
+      "nearestBodyTriangle": 217926,
+      "nativeBodyFace": 6810,
+      "nearestBodyPoint": [
+        -0.024496790021657944,
+        0.014028276316821575,
+        1.4123305082321167
+      ],
+      "threeIndependentParities": [
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            214916
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            217926
+          ],
+          "terminated": true
+        },
+        {
+          "count": 1,
+          "inside": true,
+          "triangleIDs": [
+            220688
+          ],
+          "terminated": true
+        }
+      ],
+      "interpretation": "Inside tissue at root; not alone classified as illegal anatomy. Follicle attachment/containment still requires a declared anatomical model."
+    }
+  ],
+  "failureCountIsGlobalTotal": false,
+  "exactGlobalSignedMinimumM": null,
+  "scope": "One neutral frame; actual interpolating knots only. Confirmed free-shaft inside points falsify contact. Roots are reported separately without inventing anatomical exemptions. No all-segment/all-body/optics/self/continuous pass.",
+  "selfHairOrDynamicsAccepted": false,
+  "seconds": 6.444305419921875
+}
