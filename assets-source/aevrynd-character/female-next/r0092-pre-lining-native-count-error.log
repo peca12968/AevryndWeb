@@ -1,0 +1,14 @@
+00:02.218  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0088-b-supported-lid-aperture.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0092-native-groom.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();assert not OUT.exists() and sha(SRC)=='72435890a03cab26ff2f3e238060daf2b2cf797f85543d8fd6182583cc1101a7';source=np.load(E/'native-Eve-source.npz');paths=np.load(E/'native-Eve-actual-children.npz');native=source['bodyNative'];assert np.array_equal(native,np.load(R/'Reference/character/charmorph-vitruvian-cc0/Default.npy'));info=json.loads((E/'native-child-extraction.json').read_text(encoding='utf8'));assert info['curves']==28002 and info['noStrandsOrRootsRemoved'];raw=paths['nativeRawAPI'];counts=paths['validCacheCounts'];N=raw.shape[1];assert np.all(counts>=2) and np.all(counts<=N);P=np.concatenate([p[:n] for p,n in zip(raw,counts)]).astype('f8');G=source['guideNative'].astype('f8');bpy.ops.wm.open_mainfile(filepath=str(SRC));s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();body=bpy.data.objects['AFN60_BODY_ORAL_AND_OCULAR_LINING'];A=np.array(body.matrix_world);beforeStage=m.rig.k.f.v.stage();mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes};target=np.empty_like(native);present=np.zeros(len(native),'i4')
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0092-native-groom.py", line 34, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0092-native-groom.py", line 22, in main
+    bpy.context.view_layer.update();_,world=q.geom(ob);assert len(world)==len(ids);target[ids]=(world-A[:3,3])@np.linalg.inv(A[:3,:3]).T;present[ids]+=1
+                                                              ^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

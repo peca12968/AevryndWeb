@@ -1,0 +1,22 @@
+00:02.172  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0088-b-supported-lid-aperture.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0092-native-morph-field.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();assert not OUT.exists() and sha(SRC)=='72435890a03cab26ff2f3e238060daf2b2cf797f85543d8fd6182583cc1101a7';source=np.load(E/'native-Eve-source.npz');paths=np.load(E/'native-Eve-actual-children.npz');native=source['bodyNative'];assert np.array_equal(native,np.load(R/'Reference/character/charmorph-vitruvian-cc0/Default.npy'));info=json.loads((E/'native-child-extraction.json').read_text(encoding='utf8'));assert info['curves']==28002 and info['noStrandsOrRootsRemoved'];raw=paths['nativeRawAPI'];counts=paths['validCacheCounts'];N=raw.shape[1];assert np.all(counts>=2) and np.all(counts<=N);P=np.concatenate([p[:n] for p,n in zip(raw,counts)]).astype('f8');G=source['guideNative'].astype('f8');bpy.ops.wm.open_mainfile(filepath=str(SRC));s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();body=bpy.data.objects['AFN60_BODY_ORAL_AND_OCULAR_LINING'];A=np.array(body.matrix_world);beforeStage=m.rig.k.f.v.stage();mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes};target=np.empty_like(native);present=np.zeros(len(native),'i4')
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0092-native-morph-field.py:27: RuntimeWarning: Mean of empty slice.
+  controls=native[used];changes=target[used]-controls;centre=controls.mean(0);scale=.4;X=(controls-centre)/scale;selected=[int(np.argmax(X[:,2]))];distance=np.sum((X-X[selected[0]])**2,axis=1)
+D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\site-packages\numpy\_core\_methods.py:136: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0092-native-morph-field.py", line 44, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0092-native-morph-field.py", line 27, in main
+    controls=native[used];changes=target[used]-controls;centre=controls.mean(0);scale=.4;X=(controls-centre)/scale;selected=[int(np.argmax(X[:,2]))];distance=np.sum((X-X[selected[0]])**2,axis=1)
+                                                                                                                                 ~~~~~~~~~^^^^^^^^
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\site-packages\numpy\_core\fromnumeric.py", line 1341, in argmax
+    return _wrapfunc(a, 'argmax', axis=axis, out=out, **kwds)
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\site-packages\numpy\_core\fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+ValueError: attempt to get argmax of an empty sequence
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

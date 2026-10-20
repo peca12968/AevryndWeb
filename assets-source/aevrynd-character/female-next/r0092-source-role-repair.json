@@ -1,0 +1,10 @@
+{
+  "cause": "The hair carrier retains identical native vertex/face topology but every face material index is0. Assuming body skin slots4/5 selected no faces. SurfaceDeform first bind therefore had an empty target; the alternative RBF attempt also stopped before constructing any field. This did not falsify either geometric method.",
+  "independentEvidence": "Canonical r57 mesh corners and per-face vertex counts are bytewise array-equal to hair library source; source coordinates exactly Default. Use original canonical material tags through this exact face-index identity.",
+  "repair": "Read canonical materials with strict corner/count equality assertions; assert nonempty native skin cage before binding. Resume original SurfaceDeform construction; no new candidate or tolerance change.",
+  "failedTrialsRetained": [
+    "surface-deform-bind-failure.log",
+    "empty-material-role-rbf-error.log"
+  ],
+  "nativeSourceRolesChangedOnDisk": false
+}

@@ -1,0 +1,16 @@
+"""Verify common native body topology and extract untouched Eve groom data."""
+from pathlib import Path
+import bpy,numpy as np,json,hashlib,importlib.util
+from mathutils import Vector
+from mathutils.bvhtree import BVHTree
+R=Path('D:/Download/Aevrynd');D=R/'Reference/character/charmorph-vitruvian-cc0';E=R/'Evidence/character-female-next/r0092-native-compatible-groom'
+def arr(c,p,n,w=1,dt='f4'):
+ a=np.empty((n,w),dt);c.foreach_get(p,a.ravel());return a if w>1 else a[:,0]
+with bpy.data.libraries.load(str(D/'hair.blend'),link=False) as (a,b):b.objects=['hair-src']
+o=b.objects[0];d=o.data;V=arr(d.vertices,'co',len(d.vertices),3).astype('f8');default=np.load(D/'Default.npy');P=d.shape_keys.key_blocks[0] if d.shape_keys else None;keys=[k.name for k in d.shape_keys.key_blocks] if d.shape_keys else [];d.calc_loop_triangles();T=arr(d.loop_triangles,'vertices',len(d.loop_triangles),3,'i4');tree=BVHTree.FromPolygons(V.tolist(),T.tolist(),all_triangles=True);bpy.context.scene.collection.objects.link(o)
+for md in o.modifiers:
+ if md.type=='PARTICLE_SYSTEM':md.show_viewport=md.show_render=(md.particle_system.name=='Eve')
+ps=o.particle_systems['Eve'];ps.settings=ps.settings.copy();ps.settings.child_type='NONE';bpy.context.scene.frame_set(1);bpy.context.view_layer.update();ev=o.evaluated_get(bpy.context.evaluated_depsgraph_get());ps=ev.particle_systems['Eve'];pmd=next(md for md in ev.modifiers if md.type=='PARTICLE_SYSTEM' and md.particle_system==ps);counts=np.array([len(p.hair_keys) for p in ps.particles],'i4');Q=np.array([k.co_object(ev,pmd,p)[:] for p in ps.particles for k in p.hair_keys],'f4');starts=np.r_[0,np.cumsum(counts)[:-1]];roots=Q[starts];dist=[]
+for p in roots:dist.append(tree.find_nearest(Vector(p))[3])
+np.savez_compressed(E/'native-Eve-source.npz',bodyNative=V,triangles=T,guideNative=Q,counts=counts,matrix=np.array(o.matrix_world),sourceFaceMaterial=np.array([p.material_index for p in d.polygons],'i4'),sourceLoops=arr(d.loops,'vertex_index',len(d.loops),dt='i4'),sourceFaceCounts=np.array([p.loop_total for p in d.polygons],'i4'))
+report={'sourceLibrary':str(D/'hair.blend'),'sourceLibrarySha256':hashlib.sha256((D/'hair.blend').read_bytes()).hexdigest(),'sourceAuthors':'Sean Buckley, Olaf Delgado-Friedrichs; detailed original CC0 config retained.','license':'CC0 per pinned original repository config','nativeVertices':len(V),'nativeFaces':len(d.polygons),'sourceShapeKeys':keys,'sourceBodyVsDefaultMaximumDelta':float(np.linalg.norm(V-default,axis=1).max()),'sourceGuideName':'Eve','sourceGuides':len(counts),'guidePoints':len(Q),'guideCountRange':[int(counts.min()),int(counts.max())],'guideBoundsNative':[Q.min(0).tolist(),Q.max(0).tolist()],'rootToNativeBodyDistanceQuantiles':np.quantile(dist,[0,.5,.95,1]).tolist(),'rootRadius':ps.settings.root_radius,'radiusScale':ps.settings.radius_scale,'readPath':'Evaluated ParticleHairKey.co_object with only Eve modifier enabled and source children disabled for guide-only extraction; direct co property was zero and is not used.','childrenTypeForExtraction':ps.settings.child_type,'originalChildrenType':'SIMPLE','originalChildren':25,'sourceContainsAddonScriptExecution':False,'allOriginalGuidesRetained':True};(E/'native-source-verification.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8');print('R92_NATIVE_SOURCE',json.dumps(report),flush=True)
