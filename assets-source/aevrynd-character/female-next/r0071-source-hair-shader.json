@@ -1,0 +1,2622 @@
+[
+  {
+    "tree": "Shader Nodetree",
+    "nodes": [
+      {
+        "name": "Material Output",
+        "type": "ShaderNodeOutputMaterial",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Surface",
+            null,
+            true
+          ],
+          [
+            "Volume",
+            null,
+            false
+          ],
+          [
+            "Displacement",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "Thickness",
+            0.0,
+            false
+          ]
+        ],
+        "outputs": []
+      },
+      {
+        "name": "Reroute.001",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            null,
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Group",
+        "type": "ShaderNodeGroup",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Color 1",
+            [
+              0.11692436784505844,
+              0.09404333680868149,
+              0.04665105789899826,
+              1.0
+            ],
+            false
+          ],
+          [
+            "Color 2",
+            [
+              0.031247558072209358,
+              0.016391107812523842,
+              0.004286494106054306,
+              1.0
+            ],
+            false
+          ],
+          [
+            "Darken root",
+            0.6313559412956238,
+            false
+          ],
+          [
+            "Root color length",
+            0.3220338821411133,
+            false
+          ],
+          [
+            "Random color",
+            1.0,
+            false
+          ],
+          [
+            "Noise Scale",
+            18.799999237060547,
+            false
+          ]
+        ],
+        "outputs": [
+          "EEVEE Shader",
+          "Cycles Shader"
+        ]
+      }
+    ],
+    "links": [
+      [
+        "Group",
+        "EEVEE Shader",
+        "Reroute.001",
+        "Input"
+      ],
+      [
+        "Reroute.001",
+        "Output",
+        "Material Output",
+        "Surface"
+      ]
+    ]
+  },
+  {
+    "tree": "Hair shader EEVEE",
+    "nodes": [
+      {
+        "name": "Frame.001",
+        "type": "NodeFrame",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": []
+      },
+      {
+        "name": "Frame",
+        "type": "NodeFrame",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": []
+      },
+      {
+        "name": "Frame.002",
+        "type": "NodeFrame",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": []
+      },
+      {
+        "name": "Frame.005",
+        "type": "NodeFrame",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": []
+      },
+      {
+        "name": "Frame.006",
+        "type": "NodeFrame",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": []
+      },
+      {
+        "name": "Frame.007",
+        "type": "NodeFrame",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": []
+      },
+      {
+        "name": "Frame.003",
+        "type": "NodeFrame",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": []
+      },
+      {
+        "name": "Frame.004",
+        "type": "NodeFrame",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": []
+      },
+      {
+        "name": "Reroute",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Reroute.003",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Mix",
+        "type": "ShaderNodeMix",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Factor",
+            1.0,
+            true
+          ],
+          [
+            "Factor",
+            [
+              0.5,
+              0.5,
+              0.5
+            ],
+            false
+          ],
+          [
+            "A",
+            0.0,
+            false
+          ],
+          [
+            "B",
+            0.0,
+            false
+          ],
+          [
+            "A",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "B",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "A",
+            [
+              0.22407275438308716,
+              0.13954219222068787,
+              0.0706004798412323,
+              1.0
+            ],
+            true
+          ],
+          [
+            "B",
+            [
+              0.044060200452804565,
+              0.029129384085536003,
+              0.010331821627914906,
+              1.0
+            ],
+            true
+          ],
+          [
+            "A",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "B",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ]
+        ],
+        "outputs": [
+          "Result",
+          "Result",
+          "Result",
+          "Result"
+        ]
+      },
+      {
+        "name": "Hue Saturation Value",
+        "type": "ShaderNodeHueSaturation",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Hue",
+            0.5,
+            false
+          ],
+          [
+            "Saturation",
+            1.0,
+            false
+          ],
+          [
+            "Value",
+            2.0,
+            false
+          ],
+          [
+            "Factor",
+            0.8846153616905212,
+            false
+          ],
+          [
+            "Color",
+            [
+              0.800000011920929,
+              0.800000011920929,
+              0.800000011920929,
+              1.0
+            ],
+            true
+          ]
+        ],
+        "outputs": [
+          "Color"
+        ]
+      },
+      {
+        "name": "Curves Info",
+        "type": "ShaderNodeHairInfo",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": [
+          "Is Strand",
+          "Intercept",
+          "Length",
+          "Thickness",
+          "Tangent Normal",
+          "Random"
+        ]
+      },
+      {
+        "name": "Reroute.004",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            0.0,
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Reroute.005",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Reroute.006",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Map Range.003",
+        "type": "ShaderNodeMapRange",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Value",
+            1.0,
+            true
+          ],
+          [
+            "From Min",
+            0.0,
+            false
+          ],
+          [
+            "From Max",
+            1.0,
+            false
+          ],
+          [
+            "To Min",
+            0.10000000149011612,
+            false
+          ],
+          [
+            "To Max",
+            0.5,
+            false
+          ],
+          [
+            "Steps",
+            4.0,
+            false
+          ],
+          [
+            "Vector",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "From Min",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "From Max",
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            false
+          ],
+          [
+            "To Min",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "To Max",
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            false
+          ],
+          [
+            "Steps",
+            [
+              4.0,
+              4.0,
+              4.0
+            ],
+            false
+          ]
+        ],
+        "outputs": [
+          "Result",
+          "Vector"
+        ]
+      },
+      {
+        "name": "Reroute.007",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            0.0,
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Map Range.004",
+        "type": "ShaderNodeMapRange",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Value",
+            1.0,
+            true
+          ],
+          [
+            "From Min",
+            0.0,
+            false
+          ],
+          [
+            "From Max",
+            1.0,
+            false
+          ],
+          [
+            "To Min",
+            0.0,
+            false
+          ],
+          [
+            "To Max",
+            0.5,
+            false
+          ],
+          [
+            "Steps",
+            4.0,
+            false
+          ],
+          [
+            "Vector",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "From Min",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "From Max",
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            false
+          ],
+          [
+            "To Min",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "To Max",
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            false
+          ],
+          [
+            "Steps",
+            [
+              4.0,
+              4.0,
+              4.0
+            ],
+            false
+          ]
+        ],
+        "outputs": [
+          "Result",
+          "Vector"
+        ]
+      },
+      {
+        "name": "Math.001",
+        "type": "ShaderNodeMath",
+        "model": null,
+        "parametrization": null,
+        "operation": "ADD",
+        "inputs": [
+          [
+            "Value",
+            0.5,
+            true
+          ],
+          [
+            "Value",
+            0.20000000298023224,
+            false
+          ],
+          [
+            "Value",
+            0.5,
+            false
+          ]
+        ],
+        "outputs": [
+          "Value"
+        ]
+      },
+      {
+        "name": "Math.002",
+        "type": "ShaderNodeMath",
+        "model": null,
+        "parametrization": null,
+        "operation": "MODULO",
+        "inputs": [
+          [
+            "Value",
+            0.5,
+            true
+          ],
+          [
+            "Value",
+            0.5,
+            false
+          ],
+          [
+            "Value",
+            0.5,
+            false
+          ]
+        ],
+        "outputs": [
+          "Value"
+        ]
+      },
+      {
+        "name": "Math.003",
+        "type": "ShaderNodeMath",
+        "model": null,
+        "parametrization": null,
+        "operation": "ADD",
+        "inputs": [
+          [
+            "Value",
+            0.5,
+            true
+          ],
+          [
+            "Value",
+            0.44999998807907104,
+            false
+          ],
+          [
+            "Value",
+            0.5,
+            false
+          ]
+        ],
+        "outputs": [
+          "Value"
+        ]
+      },
+      {
+        "name": "Curves Info.004",
+        "type": "ShaderNodeHairInfo",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": [
+          "Is Strand",
+          "Intercept",
+          "Length",
+          "Thickness",
+          "Tangent Normal",
+          "Random"
+        ]
+      },
+      {
+        "name": "Math.004",
+        "type": "ShaderNodeMath",
+        "model": null,
+        "parametrization": null,
+        "operation": "MODULO",
+        "inputs": [
+          [
+            "Value",
+            0.5,
+            true
+          ],
+          [
+            "Value",
+            0.5,
+            false
+          ],
+          [
+            "Value",
+            0.5,
+            false
+          ]
+        ],
+        "outputs": [
+          "Value"
+        ]
+      },
+      {
+        "name": "Translucent BSDF",
+        "type": "ShaderNodeBsdfTranslucent",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Color",
+            [
+              0.03641824796795845,
+              0.03641824796795845,
+              0.03641824796795845,
+              1.0
+            ],
+            true
+          ],
+          [
+            "Normal",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "Weight",
+            0.0,
+            false
+          ]
+        ],
+        "outputs": [
+          "BSDF"
+        ]
+      },
+      {
+        "name": "Hue Saturation Value.001",
+        "type": "ShaderNodeHueSaturation",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Hue",
+            0.5,
+            false
+          ],
+          [
+            "Saturation",
+            1.0,
+            false
+          ],
+          [
+            "Value",
+            0.25,
+            false
+          ],
+          [
+            "Factor",
+            1.0,
+            false
+          ],
+          [
+            "Color",
+            [
+              0.800000011920929,
+              0.800000011920929,
+              0.800000011920929,
+              1.0
+            ],
+            true
+          ]
+        ],
+        "outputs": [
+          "Color"
+        ]
+      },
+      {
+        "name": "Reroute.009",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            null,
+            false
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Reroute.010",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Reroute.011",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            0.0,
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Math.007",
+        "type": "ShaderNodeMath",
+        "model": null,
+        "parametrization": null,
+        "operation": "MULTIPLY",
+        "inputs": [
+          [
+            "Value",
+            0.5,
+            true
+          ],
+          [
+            "Value",
+            25.369998931884766,
+            false
+          ],
+          [
+            "Value",
+            0.5,
+            false
+          ]
+        ],
+        "outputs": [
+          "Value"
+        ]
+      },
+      {
+        "name": "Curves Info.002",
+        "type": "ShaderNodeHairInfo",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": [
+          "Is Strand",
+          "Intercept",
+          "Length",
+          "Thickness",
+          "Tangent Normal",
+          "Random"
+        ]
+      },
+      {
+        "name": "Math.005",
+        "type": "ShaderNodeMath",
+        "model": null,
+        "parametrization": null,
+        "operation": "MULTIPLY",
+        "inputs": [
+          [
+            "Value",
+            0.5,
+            true
+          ],
+          [
+            "Value",
+            2.0,
+            false
+          ],
+          [
+            "Value",
+            0.5,
+            false
+          ]
+        ],
+        "outputs": [
+          "Value"
+        ]
+      },
+      {
+        "name": "Math.006",
+        "type": "ShaderNodeMath",
+        "model": null,
+        "parametrization": null,
+        "operation": "PINGPONG",
+        "inputs": [
+          [
+            "Value",
+            0.5,
+            true
+          ],
+          [
+            "Value",
+            1.0,
+            false
+          ],
+          [
+            "Value",
+            0.5,
+            false
+          ]
+        ],
+        "outputs": [
+          "Value"
+        ]
+      },
+      {
+        "name": "Principled BSDF",
+        "type": "ShaderNodeBsdfPrincipled",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Base Color",
+            [
+              0.788477897644043,
+              0.787351667881012,
+              0.786427915096283,
+              1.0
+            ],
+            true
+          ],
+          [
+            "Metallic",
+            0.7863636612892151,
+            false
+          ],
+          [
+            "Roughness",
+            0.5,
+            false
+          ],
+          [
+            "IOR",
+            1.4500000476837158,
+            false
+          ],
+          [
+            "Alpha",
+            1.0,
+            true
+          ],
+          [
+            "Thin Wall",
+            false,
+            false
+          ],
+          [
+            "Normal",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "Weight",
+            0.0,
+            false
+          ],
+          [
+            "Diffuse Roughness",
+            0.0,
+            false
+          ],
+          [
+            "Subsurface Weight",
+            1.0,
+            false
+          ],
+          [
+            "Subsurface Radius",
+            [
+              1.0,
+              0.8500000238418579,
+              0.699999988079071
+            ],
+            false
+          ],
+          [
+            "Subsurface Scale",
+            0.9818182587623596,
+            false
+          ],
+          [
+            "Subsurface IOR",
+            1.399999976158142,
+            false
+          ],
+          [
+            "Subsurface Anisotropy",
+            0.0,
+            false
+          ],
+          [
+            "Specular IOR Level",
+            0.5,
+            false
+          ],
+          [
+            "Specular Tint",
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            false
+          ],
+          [
+            "Anisotropic",
+            0.0,
+            false
+          ],
+          [
+            "Anisotropic Rotation",
+            0.0,
+            false
+          ],
+          [
+            "Tangent",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "Transmission Weight",
+            0.0,
+            false
+          ],
+          [
+            "Coat Weight",
+            0.0886363610625267,
+            true
+          ],
+          [
+            "Coat Roughness",
+            0.029999999329447746,
+            true
+          ],
+          [
+            "Coat IOR",
+            1.2000000476837158,
+            false
+          ],
+          [
+            "Coat Tint",
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            false
+          ],
+          [
+            "Coat Normal",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "Sheen Weight",
+            0.0,
+            false
+          ],
+          [
+            "Sheen Roughness",
+            0.5,
+            false
+          ],
+          [
+            "Sheen Tint",
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            false
+          ],
+          [
+            "Emission Color",
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            false
+          ],
+          [
+            "Emission Strength",
+            1.0,
+            false
+          ],
+          [
+            "Thin Film Thickness",
+            0.0,
+            false
+          ],
+          [
+            "Thin Film IOR",
+            1.3300000429153442,
+            false
+          ]
+        ],
+        "outputs": [
+          "BSDF"
+        ]
+      },
+      {
+        "name": "ColorRamp",
+        "type": "ShaderNodeValToRGB",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Factor",
+            0.5,
+            true
+          ]
+        ],
+        "outputs": [
+          "Color",
+          "Alpha"
+        ]
+      },
+      {
+        "name": "Math.009",
+        "type": "ShaderNodeMath",
+        "model": null,
+        "parametrization": null,
+        "operation": "MULTIPLY",
+        "inputs": [
+          [
+            "Value",
+            0.5,
+            true
+          ],
+          [
+            "Value",
+            1.0,
+            false
+          ],
+          [
+            "Value",
+            0.5,
+            false
+          ]
+        ],
+        "outputs": [
+          "Value"
+        ]
+      },
+      {
+        "name": "Reroute.012",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Reroute.013",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Math.008",
+        "type": "ShaderNodeMath",
+        "model": null,
+        "parametrization": null,
+        "operation": "MULTIPLY",
+        "inputs": [
+          [
+            "Value",
+            0.5,
+            true
+          ],
+          [
+            "Value",
+            1.0,
+            true
+          ],
+          [
+            "Value",
+            0.5,
+            false
+          ]
+        ],
+        "outputs": [
+          "Value"
+        ]
+      },
+      {
+        "name": "Group Input.002",
+        "type": "NodeGroupInput",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": [
+          "Color 1",
+          "Color 2",
+          "Darken root",
+          "Root color length",
+          "Random color",
+          "Noise Scale",
+          ""
+        ]
+      },
+      {
+        "name": "Add Shader",
+        "type": "ShaderNodeAddShader",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Shader",
+            null,
+            true
+          ],
+          [
+            "Shader",
+            null,
+            true
+          ]
+        ],
+        "outputs": [
+          "Shader"
+        ]
+      },
+      {
+        "name": "Group Output",
+        "type": "NodeGroupOutput",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "EEVEE Shader",
+            null,
+            true
+          ],
+          [
+            "Cycles Shader",
+            null,
+            true
+          ],
+          [
+            "",
+            null,
+            false
+          ]
+        ],
+        "outputs": []
+      },
+      {
+        "name": "Mix.001",
+        "type": "ShaderNodeMix",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Factor",
+            0.7583333253860474,
+            true
+          ],
+          [
+            "Factor",
+            [
+              0.5,
+              0.5,
+              0.5
+            ],
+            false
+          ],
+          [
+            "A",
+            0.0,
+            false
+          ],
+          [
+            "B",
+            0.0,
+            false
+          ],
+          [
+            "A",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "B",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "A",
+            [
+              0.22407275438308716,
+              0.13954219222068787,
+              0.0706004798412323,
+              1.0
+            ],
+            true
+          ],
+          [
+            "B",
+            [
+              0.044060200452804565,
+              0.029129384085536003,
+              0.010331821627914906,
+              1.0
+            ],
+            true
+          ],
+          [
+            "A",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "B",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ]
+        ],
+        "outputs": [
+          "Result",
+          "Result",
+          "Result",
+          "Result"
+        ]
+      },
+      {
+        "name": "Reroute.015",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            null,
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Reroute.001",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Hue Saturation Value.002",
+        "type": "ShaderNodeHueSaturation",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Hue",
+            0.5,
+            false
+          ],
+          [
+            "Saturation",
+            1.25,
+            false
+          ],
+          [
+            "Value",
+            0.75,
+            false
+          ],
+          [
+            "Factor",
+            1.0,
+            false
+          ],
+          [
+            "Color",
+            [
+              0.800000011920929,
+              0.800000011920929,
+              0.800000011920929,
+              1.0
+            ],
+            true
+          ]
+        ],
+        "outputs": [
+          "Color"
+        ]
+      },
+      {
+        "name": "Reroute.002",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Principled Hair BSDF.001",
+        "type": "ShaderNodeBsdfHairPrincipled",
+        "model": "CHIANG",
+        "parametrization": "COLOR",
+        "operation": null,
+        "inputs": [
+          [
+            "Color",
+            [
+              0.01751299947500229,
+              0.005762999877333641,
+              0.002059000078588724,
+              1.0
+            ],
+            true
+          ],
+          [
+            "Melanin",
+            0.20454543828964233,
+            false
+          ],
+          [
+            "Melanin Redness",
+            0.0,
+            false
+          ],
+          [
+            "Tint",
+            [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            false
+          ],
+          [
+            "Absorption Coefficient",
+            [
+              0.24553099274635315,
+              0.5199999809265137,
+              1.3650000095367432
+            ],
+            false
+          ],
+          [
+            "Aspect Ratio",
+            0.8500000238418579,
+            false
+          ],
+          [
+            "Roughness",
+            0.30000001192092896,
+            false
+          ],
+          [
+            "Radial Roughness",
+            0.5,
+            false
+          ],
+          [
+            "Coat",
+            0.4000000059604645,
+            false
+          ],
+          [
+            "IOR",
+            1.5499999523162842,
+            false
+          ],
+          [
+            "Offset",
+            0.03490658476948738,
+            false
+          ],
+          [
+            "Random Color",
+            0.0,
+            false
+          ],
+          [
+            "Random Roughness",
+            0.30000001192092896,
+            false
+          ],
+          [
+            "Random",
+            0.0,
+            false
+          ],
+          [
+            "Weight",
+            0.0,
+            false
+          ],
+          [
+            "Reflection",
+            1.0,
+            false
+          ],
+          [
+            "Transmission",
+            1.0,
+            false
+          ],
+          [
+            "Secondary Reflection",
+            1.0,
+            false
+          ]
+        ],
+        "outputs": [
+          "BSDF"
+        ]
+      },
+      {
+        "name": "Noise Texture.001",
+        "type": "ShaderNodeTexNoise",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Vector",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            true
+          ],
+          [
+            "W",
+            0.0,
+            false
+          ],
+          [
+            "Scale",
+            21.19999885559082,
+            true
+          ],
+          [
+            "Detail",
+            1.0,
+            false
+          ],
+          [
+            "Roughness",
+            0.14999999105930328,
+            false
+          ],
+          [
+            "Lacunarity",
+            2.0,
+            false
+          ],
+          [
+            "Offset",
+            0.0,
+            false
+          ],
+          [
+            "Gain",
+            1.0,
+            false
+          ],
+          [
+            "Distortion",
+            0.0,
+            false
+          ]
+        ],
+        "outputs": [
+          "Factor",
+          "Color"
+        ]
+      },
+      {
+        "name": "Mix.002",
+        "type": "ShaderNodeMix",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Factor",
+            0.5,
+            true
+          ],
+          [
+            "Factor",
+            [
+              0.5,
+              0.5,
+              0.5
+            ],
+            false
+          ],
+          [
+            "A",
+            0.0,
+            false
+          ],
+          [
+            "B",
+            0.0,
+            false
+          ],
+          [
+            "A",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "B",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "A",
+            [
+              0.2240687906742096,
+              0.1224701851606369,
+              0.044746093451976776,
+              1.0
+            ],
+            true
+          ],
+          [
+            "B",
+            [
+              0.044060200452804565,
+              0.029129384085536003,
+              0.010331821627914906,
+              1.0
+            ],
+            true
+          ],
+          [
+            "A",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "B",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ]
+        ],
+        "outputs": [
+          "Result",
+          "Result",
+          "Result",
+          "Result"
+        ]
+      },
+      {
+        "name": "Map Range.002",
+        "type": "ShaderNodeMapRange",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Value",
+            1.0,
+            true
+          ],
+          [
+            "From Min",
+            0.4000000059604645,
+            false
+          ],
+          [
+            "From Max",
+            0.6000000238418579,
+            false
+          ],
+          [
+            "To Min",
+            0.0,
+            false
+          ],
+          [
+            "To Max",
+            1.0,
+            false
+          ],
+          [
+            "Steps",
+            4.0,
+            false
+          ],
+          [
+            "Vector",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "From Min",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "From Max",
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            false
+          ],
+          [
+            "To Min",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "To Max",
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            false
+          ],
+          [
+            "Steps",
+            [
+              4.0,
+              4.0,
+              4.0
+            ],
+            false
+          ]
+        ],
+        "outputs": [
+          "Result",
+          "Vector"
+        ]
+      },
+      {
+        "name": "Curves Info.003",
+        "type": "ShaderNodeHairInfo",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": [
+          "Is Strand",
+          "Intercept",
+          "Length",
+          "Thickness",
+          "Tangent Normal",
+          "Random"
+        ]
+      },
+      {
+        "name": "Map Range",
+        "type": "ShaderNodeMapRange",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Value",
+            1.0,
+            true
+          ],
+          [
+            "From Min",
+            0.0,
+            false
+          ],
+          [
+            "From Max",
+            0.2799999713897705,
+            true
+          ],
+          [
+            "To Min",
+            0.0,
+            false
+          ],
+          [
+            "To Max",
+            1.0,
+            false
+          ],
+          [
+            "Steps",
+            4.0,
+            false
+          ],
+          [
+            "Vector",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "From Min",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "From Max",
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            false
+          ],
+          [
+            "To Min",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "To Max",
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            false
+          ],
+          [
+            "Steps",
+            [
+              4.0,
+              4.0,
+              4.0
+            ],
+            false
+          ]
+        ],
+        "outputs": [
+          "Result",
+          "Vector"
+        ]
+      },
+      {
+        "name": "ColorRamp.002",
+        "type": "ShaderNodeValToRGB",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Factor",
+            0.5,
+            true
+          ]
+        ],
+        "outputs": [
+          "Color",
+          "Alpha"
+        ]
+      },
+      {
+        "name": "Group Input.001",
+        "type": "NodeGroupInput",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": [
+          "Color 1",
+          "Color 2",
+          "Darken root",
+          "Root color length",
+          "Random color",
+          "Noise Scale",
+          ""
+        ]
+      },
+      {
+        "name": "Reroute.008",
+        "type": "NodeReroute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Input",
+            0.0,
+            true
+          ]
+        ],
+        "outputs": [
+          "Output"
+        ]
+      },
+      {
+        "name": "Attribute",
+        "type": "ShaderNodeAttribute",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": [
+          "Color",
+          "Vector",
+          "Factor",
+          "Alpha"
+        ]
+      },
+      {
+        "name": "Group Input",
+        "type": "NodeGroupInput",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [],
+        "outputs": [
+          "Color 1",
+          "Color 2",
+          "Darken root",
+          "Root color length",
+          "Random color",
+          "Noise Scale",
+          ""
+        ]
+      },
+      {
+        "name": "\u6df7\u5408",
+        "type": "ShaderNodeMix",
+        "model": null,
+        "parametrization": null,
+        "operation": null,
+        "inputs": [
+          [
+            "Factor",
+            0.9818182587623596,
+            false
+          ],
+          [
+            "Factor",
+            [
+              0.5,
+              0.5,
+              0.5
+            ],
+            false
+          ],
+          [
+            "A",
+            0.0,
+            false
+          ],
+          [
+            "B",
+            0.0,
+            false
+          ],
+          [
+            "A",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "B",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "A",
+            [
+              0.1662808060646057,
+              0.10433720797300339,
+              0.05353136733174324,
+              1.0
+            ],
+            true
+          ],
+          [
+            "B",
+            [
+              0.800000011920929,
+              0.800000011920929,
+              0.800000011920929,
+              1.0
+            ],
+            true
+          ],
+          [
+            "A",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ],
+          [
+            "B",
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            false
+          ]
+        ],
+        "outputs": [
+          "Result",
+          "Result",
+          "Result",
+          "Result"
+        ]
+      }
+    ],
+    "links": [
+      [
+        "Reroute.011",
+        "Output",
+        "Math.007",
+        "Value"
+      ],
+      [
+        "Reroute.013",
+        "Output",
+        "Mix.002",
+        "A"
+      ],
+      [
+        "Attribute",
+        "Vector",
+        "Noise Texture.001",
+        "Vector"
+      ],
+      [
+        "Curves Info.004",
+        "Random",
+        "Math.001",
+        "Value"
+      ],
+      [
+        "Math.003",
+        "Value",
+        "Math.004",
+        "Value"
+      ],
+      [
+        "Reroute.012",
+        "Output",
+        "Mix.002",
+        "B"
+      ],
+      [
+        "Map Range.002",
+        "Result",
+        "Mix.002",
+        "Factor"
+      ],
+      [
+        "Math.007",
+        "Value",
+        "Math.008",
+        "Value"
+      ],
+      [
+        "Math.004",
+        "Value",
+        "Map Range.004",
+        "Value"
+      ],
+      [
+        "Math.006",
+        "Value",
+        "Math.009",
+        "Value"
+      ],
+      [
+        "Mix.001",
+        "Result",
+        "Hue Saturation Value.001",
+        "Color"
+      ],
+      [
+        "Curves Info.002",
+        "Intercept",
+        "Math.005",
+        "Value"
+      ],
+      [
+        "Math.002",
+        "Value",
+        "Map Range.003",
+        "Value"
+      ],
+      [
+        "Curves Info",
+        "Random",
+        "Mix",
+        "B"
+      ],
+      [
+        "Math.009",
+        "Value",
+        "Math.008",
+        "Value"
+      ],
+      [
+        "Map Range",
+        "Result",
+        "ColorRamp.002",
+        "Factor"
+      ],
+      [
+        "Curves Info.002",
+        "Random",
+        "Reroute.011",
+        "Input"
+      ],
+      [
+        "Hue Saturation Value.001",
+        "Color",
+        "Translucent BSDF",
+        "Color"
+      ],
+      [
+        "Map Range.003",
+        "Result",
+        "Reroute.004",
+        "Input"
+      ],
+      [
+        "Reroute.010",
+        "Output",
+        "Reroute.006",
+        "Input"
+      ],
+      [
+        "Curves Info.004",
+        "Random",
+        "Math.003",
+        "Value"
+      ],
+      [
+        "Math.001",
+        "Value",
+        "Math.002",
+        "Value"
+      ],
+      [
+        "Reroute.006",
+        "Output",
+        "Reroute.005",
+        "Input"
+      ],
+      [
+        "Reroute",
+        "Output",
+        "Hue Saturation Value",
+        "Color"
+      ],
+      [
+        "Noise Texture.001",
+        "Factor",
+        "Map Range.002",
+        "Value"
+      ],
+      [
+        "Mix.002",
+        "Result",
+        "Mix",
+        "A"
+      ],
+      [
+        "Principled BSDF",
+        "BSDF",
+        "Add Shader",
+        "Shader"
+      ],
+      [
+        "Reroute.004",
+        "Output",
+        "Principled BSDF",
+        "Coat Roughness"
+      ],
+      [
+        "Math.008",
+        "Value",
+        "ColorRamp",
+        "Factor"
+      ],
+      [
+        "Mix.001",
+        "Result",
+        "Reroute",
+        "Input"
+      ],
+      [
+        "ColorRamp.002",
+        "Color",
+        "Mix.001",
+        "B"
+      ],
+      [
+        "Reroute.007",
+        "Output",
+        "Principled BSDF",
+        "Coat Weight"
+      ],
+      [
+        "Translucent BSDF",
+        "BSDF",
+        "Add Shader",
+        "Shader"
+      ],
+      [
+        "Mix",
+        "Result",
+        "Reroute.003",
+        "Input"
+      ],
+      [
+        "Reroute.005",
+        "Output",
+        "Principled BSDF",
+        "Alpha"
+      ],
+      [
+        "ColorRamp",
+        "Color",
+        "Reroute.010",
+        "Input"
+      ],
+      [
+        "Reroute.003",
+        "Output",
+        "Mix.001",
+        "A"
+      ],
+      [
+        "Map Range.004",
+        "Result",
+        "Reroute.007",
+        "Input"
+      ],
+      [
+        "Math.005",
+        "Value",
+        "Math.006",
+        "Value"
+      ],
+      [
+        "Group Input",
+        "Color 2",
+        "Reroute.012",
+        "Input"
+      ],
+      [
+        "Group Input",
+        "Color 1",
+        "Reroute.013",
+        "Input"
+      ],
+      [
+        "Add Shader",
+        "Shader",
+        "Group Output",
+        "EEVEE Shader"
+      ],
+      [
+        "Group Input.001",
+        "Darken root",
+        "Mix.001",
+        "Factor"
+      ],
+      [
+        "Group Input.002",
+        "Random color",
+        "Mix",
+        "Factor"
+      ],
+      [
+        "Reroute.015",
+        "Output",
+        "Group Output",
+        "Cycles Shader"
+      ],
+      [
+        "Mix.001",
+        "Result",
+        "Reroute.001",
+        "Input"
+      ],
+      [
+        "Reroute.001",
+        "Output",
+        "Reroute.002",
+        "Input"
+      ],
+      [
+        "Hue Saturation Value.002",
+        "Color",
+        "Principled Hair BSDF.001",
+        "Color"
+      ],
+      [
+        "Reroute.002",
+        "Output",
+        "Hue Saturation Value.002",
+        "Color"
+      ],
+      [
+        "Principled Hair BSDF.001",
+        "BSDF",
+        "Reroute.015",
+        "Input"
+      ],
+      [
+        "Curves Info.003",
+        "Intercept",
+        "Map Range",
+        "Value"
+      ],
+      [
+        "Group Input.001",
+        "Root color length",
+        "Map Range",
+        "From Max"
+      ],
+      [
+        "Reroute.008",
+        "Output",
+        "Noise Texture.001",
+        "Scale"
+      ],
+      [
+        "Group Input",
+        "Noise Scale",
+        "Reroute.008",
+        "Input"
+      ],
+      [
+        "Reroute",
+        "Output",
+        "\u6df7\u5408",
+        "A"
+      ],
+      [
+        "Hue Saturation Value",
+        "Color",
+        "\u6df7\u5408",
+        "B"
+      ],
+      [
+        "\u6df7\u5408",
+        "Result",
+        "Principled BSDF",
+        "Base Color"
+      ]
+    ]
+  }
+]

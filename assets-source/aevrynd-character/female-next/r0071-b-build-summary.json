@@ -1,0 +1,46 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0069-a-complete-controls-study.blend",
+  "sourceSha256": "f358d3c5a4d00ee6ad94d324612b33bdcf5aa4dde0bb19382d72bc7afabbb667",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0071-b-bounded-pigment-hair-study.blend",
+  "outputSha256": "8f5ffab7b0f06dc10c9d044e6fd654e81368333d61996ba47510e65e1c354199",
+  "outputBytes": 49960081,
+  "change": {
+    "material": "AFN71_BOUNDED_PIGMENT_CYCLES_HAIR",
+    "group": "AFN71_AUTHOR_GROUP_BOUNDED_PIGMENT",
+    "oldOutput": "EEVEE Shader",
+    "newOutput": "Cycles Shader",
+    "allGroupParametersAndNodesUnchanged": false,
+    "paletteCorrection": {
+      "old": "HairInfo Random scalar directly converted to grey RGB",
+      "new": "The same Random interpolates source Color 1 and Color 2; resulting RGB feeds the existing source color/root pipeline",
+      "sourceColor1": [
+        0.11692436784505844,
+        0.09404333680868149,
+        0.04665105789899826,
+        1.0
+      ],
+      "sourceColor2": [
+        0.031247558072209358,
+        0.016391107812523842,
+        0.004286494106054306,
+        1.0
+      ],
+      "noNewChosenPigmentOrRoughnessValues": true
+    }
+  },
+  "assignments": [
+    {
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "slot": 0
+    },
+    {
+      "object": "AFN68_FLYAWAY_RENDER_CURVES",
+      "slot": 0
+    }
+  ],
+  "renderer": "CYCLES",
+  "sourceShader": "Principled Hair BSDF.001 / CHIANG / COLOR",
+  "sourceCredit": "Daniel Bystedt. CC BY-SA license. Version unspecified by author/publisher. Derived groom/material study; body and rig data separately Vitruvian CC0.",
+  "newContactOrNaturalMotionOrRuntimeAcceptance": false,
+  "secondsBeforePilot": 8.177583932876587
+}

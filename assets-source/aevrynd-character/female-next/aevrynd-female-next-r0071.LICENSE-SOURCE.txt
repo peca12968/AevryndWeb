@@ -1,0 +1,50 @@
+R0071 REJECTED SOURCE-DERIVED MATERIAL STUDIES
+
+Source: Hair Styles Demo by Daniel Bystedt.
+Publisher: https://www.blender.org/download/demo-files/
+File: https://download.blender.org/demo/geometry-nodes/hair_nodes-female_hair_styles.blend
+Source SHA256: 1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48
+Author links: https://www.artstation.com/artist/dbystedt and https://www.twitter.com/3dbystedt
+
+Original notice, retained as supplied:
+Daniel Bystedt. CC BY-SA license
+
+The publisher and the embedded notice do not specify a license version.
+No specific version, CC0 status or exclusive Aevrynd ownership is asserted.
+Source-derived hairstyle/growth/guide/material study data and renders retain
+that CC BY-SA notice, attribution and share-alike conditions. The separate
+Vitruvian body/texture inputs keep their existing CC0 provenance and credits.
+
+Aevrynd study changes: anatomical alignment; explicit two-island growth-surface
+registration and guide rest-frame correspondence; body-contact node scope and
+reference-space corrections; static Curves baking and independent evidence.
+The author does not endorse these modifications or their unfinished physics.
+
+Scope: the r0071 hairstyle derivative/material study .blend files, source-derived data and renders.
+This notice does not change the license of the independent Aevrynd engine code.
+No software/addon or paid runtime service was installed or required.
+The study is not a formally accepted female character or engine runtime asset.
+
+R0069 additions: normalized source-indexed linear blend skinning, joint-landmark
+fitted52-bone FK armature, evaluated skin-frame root following, rest point
+reference, and an authored head-turn/arm-raise demonstration. Source rest
+geometry, skin/eye/hair materials, radii and source hair matrix retained.
+
+Additional rig/weight/joint DATA: Upliner/CharMorph-Vitruvian, commit
+c252d1fc7f00ba59d87b66b3d32fa3471fc6ee44, CC0 as config.yaml declares.
+https://github.com/Upliner/CharMorph-Vitruvian/tree/c252d1fc7f00ba59d87b66b3d32fa3471fc6ee44
+Full source credits remain in the archived config.yaml and provenance.
+The source skeleton label Mixamo does not mean an Adobe/Mixamo service,
+software, animation or separately licensed online asset was used.
+No third-party source code/addon, paid runtime or hosted service is required.
+
+Current scope: complete FK/control and static root-frame following study.
+Per-strand rigid root-frame following is not a hair dynamics/collision solver.
+Root joins, finite-width/self/continuous contacts and Aevrynd runtime remain
+unaccepted; the reference hairstyle notice and attribution remain in force.
+
+R0071 changes: A routes the author-provided Cycles hair output; B additionally
+interpolates source Color1/Color2 using the same per-strand random instead of
+converting that random scalar directly to grey RGB. Both appearance trials
+are rejected; no color endpoints, roughness, radii, geometry, skin, light or
+rig data were manually retuned. No motion/contact/runtime asset is accepted.

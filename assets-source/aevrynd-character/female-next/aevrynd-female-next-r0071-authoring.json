@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "decision": "REJECT_BOTH_MATERIAL_TRIALS_KEEP_R69_CHANGE_COMPLETE_AUTHORING_FOCUS",
+  "studies": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0071-a-author-cycles-hair-study.blend",
+      "sha256": "ffee2dba25306fe1bd63014b38f90a1820401c0c635d4538e7ec3209d6dfb050",
+      "bytes": 49870536,
+      "decision": "REJECTED",
+      "change": {
+        "material": "AFN71_AUTHOR_CYCLES_HAIR",
+        "group": "Hair shader EEVEE",
+        "oldOutput": "EEVEE Shader",
+        "newOutput": "Cycles Shader",
+        "allGroupParametersAndNodesUnchanged": true
+      },
+      "reason": "Large pale/white strands and harsher opaque tips regress the full hairstyle."
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0071-b-bounded-pigment-hair-study.blend",
+      "sha256": "8f5ffab7b0f06dc10c9d044e6fd654e81368333d61996ba47510e65e1c354199",
+      "bytes": 49960081,
+      "decision": "REJECTED",
+      "change": {
+        "material": "AFN71_BOUNDED_PIGMENT_CYCLES_HAIR",
+        "group": "AFN71_AUTHOR_GROUP_BOUNDED_PIGMENT",
+        "oldOutput": "EEVEE Shader",
+        "newOutput": "Cycles Shader",
+        "allGroupParametersAndNodesUnchanged": false,
+        "paletteCorrection": {
+          "old": "HairInfo Random scalar directly converted to grey RGB",
+          "new": "The same Random interpolates source Color 1 and Color 2; resulting RGB feeds the existing source color/root pipeline",
+          "sourceColor1": [
+            0.11692436784505844,
+            0.09404333680868149,
+            0.04665105789899826,
+            1.0
+          ],
+          "sourceColor2": [
+            0.031247558072209358,
+            0.016391107812523842,
+            0.004286494106054306,
+            1.0
+          ],
+          "noNewChosenPigmentOrRoughnessValues": true
+        }
+      },
+      "reason": "Brown palette semantics corrected, but broad yellow/white bands and stiff wire-like tips still fail the complete hairstyle defect."
+    }
+  },
+  "sourceNotice": "aevrynd-female-next-r0071.LICENSE-SOURCE.txt",
+  "gates": {
+    "appearance": {
+      "status": "REJECT_BOTH_NO_ADOPTABLE_COMPLETE_GAIN",
+      "evidence": "r0071-complete-rejected-materials.png",
+      "sameConditionHeadAndBody": true,
+      "candidateCount": 2,
+      "wholeCharacterScore": null,
+      "fullViewExpansionStoppedAfterCheapRejection": true
+    },
+    "function": {
+      "status": "SAVED_SOURCES_REOPENED_MATERIAL_CHANGE_ONLY",
+      "evidence": "independent-readback.json",
+      "nativeAnatomySkinEyesRadiiWeightsAndThreePosedGeometriesExact": true,
+      "inheritedScopedFKOnly": true,
+      "newCompleteUsableOperation": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_NO_NEW_CONTACT_CLEARANCE_CLAIM",
+      "knownR69TurnPenetrationUnresolved": true,
+      "shaderOpacityChangeDoesNotInheritVisibleContactAcceptance": true,
+      "globalSignedMinimumM": null,
+      "fullFiniteSplineSelfClothAndContinuousContactNotVerified": true
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "cpuGpuMemoryLODNotAccepted": true
+    }
+  },
+  "wholeCharacterReview": {
+    "baseline": "r68C complete head/body / original neutral24-sample evidence",
+    "productionRounds": [
+      "r69",
+      "r70",
+      "r71"
+    ],
+    "evidence": "r0071-three-round-complete-review.png",
+    "afterWindowActiveSource": "r69A",
+    "appearanceImprovement": false,
+    "completeDefectResolved": false,
+    "newFullyQualifiedCompleteCapability": false,
+    "scopedFunctionGainedAndPreserved": "r69 source-indexed52-bone FK, three sampled posed geometries and rigid render-scalp following; natural dynamics and pose/contact quality remain unaccepted.",
+    "wholeCharacterStagnationReset": false,
+    "milestone": "CREDIBLE_COMPLETE_PERSON_NOT_MET",
+    "largestRemainingCompleteDefects": [
+      "Mannequin-like complete facial/skin planes and identity.",
+      "Harsh bright/rigid hairstyle and unqualified natural dynamic contacts.",
+      "Incomplete oral/cloth layers and unqualified shoulder/body pose quality and engine runtime."
+    ],
+    "decision": "CHANGE_BROADER_AUTHORING_FOCUS_TO_COMPLETE_CRANIOFACIAL_FORM",
+    "nextAction": "Keep exact complete r69A as active work source and r65 as scoped ocular/anatomy fallback. R70A/B/C physics and R71A/B materials are rejected. The r69-r71 whole-character review did not solve the selected full-character defect or gain a fully qualified motion capability; preserve the real scoped FK/root-follow function without resetting stagnation. Change the broader authoring focus to complete craniofacial structure and identity on this same woman, not another material/roughness/pigment/exposure or cached-strand physics sweep. First inspect licensed source-authored facial morphology/presets and their native-index correspondence with the actual supplied-female plus cavity-repair rest geometry; do not assume assets exist or execute embedded code. Use one evidence-grounded head/neck form candidate, with an actual neutral complete-head/body and profile/oblique preview before details. Preserve the current full hairstyle, native eye/cavity layers, blink, rig weights and source roles; any changed anatomy requires explicit optical/lid/root correspondence and affected contact checks, not inherited passes. If the preflight does not provide a defensible production basis, choose an anatomically referenced sculpting basis within the diagnosis bound rather than opening another research chain. Known free-shaft turn penetration, natural hair/cloth dynamics, oral/layer completeness, body/shoulder deformation, all requested actions and real engine import/material/LOD/performance remain required. Do not begin male work or promote formal runtime/site assets before all gates and explicit female acceptance.",
+    "reusedImagesAreNotNewProductionGains": true
+  },
+  "newSoftwareAddonOrVendorRuntimeImported": false
+}
