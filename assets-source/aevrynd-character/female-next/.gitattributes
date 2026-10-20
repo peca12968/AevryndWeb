@@ -67,3 +67,11 @@ r0067-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at
 r0068-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 aevrynd-female-next-r0068* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 r0068-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+# Exact r69 complete FK/scalp-follow study; head-turn contact fails.
+r0069-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0069* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0069-motion-frames/** -text
+r0069-input-data/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0069-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+# Preserve the pinned upstream config bytes, including its two whitespace-only lines.
+r0069-input-data/config.yaml -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol

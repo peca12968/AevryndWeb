@@ -1,0 +1,16 @@
+{
+  "initialGuardFailed": true,
+  "initialHairErrorsM": {
+    "main": 3.51892267644871e-05,
+    "flyaway": 7.731557161605451e-06
+  },
+  "unchangedNeutralGuardM": 1e-06,
+  "cause": "Separately computed float64 world rest frames versus Geometry Nodes relative float32 sample arithmetic.",
+  "correction": "Use a position-only rest-body point reference and identical current/rest field arithmetic; form frame edges before world translation. No faces/collision role, no root/radius/weight offset retuning.",
+  "finalNeutralHairErrorsM": {
+    "AFN68_MAIN_RENDER_CURVES": 1.7523326789614657e-07,
+    "AFN68_FLYAWAY_RENDER_CURVES": 1.699854124126432e-07
+  },
+  "newProductionCandidateCreated": false,
+  "failedAttemptSavedBlend": false
+}

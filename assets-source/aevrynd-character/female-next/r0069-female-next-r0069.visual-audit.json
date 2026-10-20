@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T04:07:15.384381+00:00",
+  "decision": "RETAIN_COMPLETE_FK_AND_SCALP_FOLLOW_STUDY_PHYSICS_UNACCEPTED",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0069-a-complete-controls-study.blend",
+  "sha256": "f358d3c5a4d00ee6ad94d324612b33bdcf5aa4dde0bb19382d72bc7afabbb667",
+  "sourceCredits": "Rig/weights/joints Vitruvian CC0; r68 hairstyle retains Daniel Bystedt CC BY-SA notice, version unspecified; no third-party software code or paid service used.",
+  "gates": {
+    "appearance": {
+      "status": "NEUTRAL_LOOK_RETAINED_NO_NEW_REALISM_SCORE",
+      "neutralSameConditionViews": 6,
+      "noStaticRealismGainClaimed": true,
+      "defects": [
+        "Face/skin still smooth and mannequin-like; no face or skin score increase.",
+        "Hair still has harsh bright strands and stiff tips, and follows each root frame rigidly with no flexible lag.",
+        "Arm-raise shoulder/upper-arm volume and skin deformation remain artificial; this pose quality is not accepted."
+      ],
+      "evidence": [
+        "r0069-complete-neutral-comparison.png",
+        "r0069-complete-pose-views.png",
+        "r0069-head-multiangle.png",
+        "r0069-actual-complete-motion.gif"
+      ]
+    },
+    "function": {
+      "status": "PASS_SAVED_SOURCE_INDEXED_FK_AND_SAMPLED_ROOT_FOLLOW_ONLY",
+      "bones": 52,
+      "actualPoseFrames": [
+        1,
+        13,
+        25,
+        49,
+        61
+      ],
+      "maximumSampledRootCorrespondenceErrorM": 7.257031730061392e-07,
+      "maximumSampledRootTipSpanChangeM": 3.7312350897877877e-07,
+      "sourceNormalizedBodyWeightsExact": true,
+      "actualDisplayedCurves": 10989,
+      "actualDisplayedPoints": 207239,
+      "operation": "Editable FK bone controls, actual head turn/arm raise and displayed strand-root frame following on one complete woman.",
+      "limits": [
+        "Only five sampled poses verified; all requested animations and full pose quality not accepted.",
+        "Each entire hair strand follows its root frame rigidly; no bending/inertia/contact solver.",
+        "Original authoring guides and growth surface remain neutral-only; cached displayed hair follows the actual deformed body.",
+        "Root binding depends on current body topology and render subdivision2; changing topology/LOD requires explicit rebind.",
+        "Original blink action retained detached during this control action; manual blink properties/data remain."
+      ],
+      "evidence": "a-independent-readback.json"
+    },
+    "contact": {
+      "status": "FAIL_MOVED_FREE_KNOT_WITNESSES_PHYSICS_UNACCEPTED",
+      "failedPoseSummaries": [
+        {
+          "frame": 13,
+          "witnessCount": 13
+        },
+        {
+          "frame": 25,
+          "witnessCount": 15
+        }
+      ],
+      "evidence": "a-moved-tissue-probe.json",
+      "exactGlobalSignedMinimumM": null,
+      "numericalAllowanceM": 1e-06,
+      "strongInsideWitnessThresholdM": 0.0001,
+      "scope": "Actual displayed interpolating knots in three moved poses, body only. Strong witnesses are falsifications; no witness never establishes full clearance. Topological body closure inherited unchanged indices, body self contact not certified. Root joining already unaccepted in r68.",
+      "limits": [
+        "No-witness result is not a full clearance proof.",
+        "Root joins/first20mm, full Catmull-Rom segments, finite radii, self/body/cloth and continuous motion remain unaccepted.",
+        "Prior r68 root-containment evidence is not waived by matching the current scalp frame.",
+        "Body/ocular/arm self-contact and full pose deformation not newly certified."
+      ]
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "noEngineCpuGpuMemoryOrLODClaim": true
+    }
+  },
+  "wholeCharacterScore": null,
+  "staticAppearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": true,
+  "newFullyQualifiedCompleteCapability": false,
+  "femaleAccepted": false,
+  "formalRuntimePromoted": false,
+  "nextAction": "Keep this exact complete r69A control/scalp-following study as the active authoring woman, preserving r68 appearance and r65 scoped ocular/anatomy foundation. Do not start another hairstyle, wrap-stage, radius or root-offset sweep, or another FK-only diagnostic chain. The actual full head turn and arm raise now exist; next integrate flexible hair response and contact on this same moving full character, using the retained authored guide hierarchy and the verified actual body-triangle/frame anchors as the boundary condition. Distinguish physiological follicle joining from free shafts and use the recorded moved-pose witnesses when present; no arbitrary root exclusions or hiding geometry. First endpoint is an actual full-head turn/stop clip with retained recognizable hairstyle, inertial settling and tested displayed-hair/body contacts, not an isolated stable guide packet. Begin with a bounded, source-grounded cheap whole-head motion test; if it falsifies the method, stop before dense simulation. Finite curved display thickness, self contact and continuous motion must be qualified in the claimed scope; rigid root-frame transport is only the input attachment. Hidden original authoring guides/growth still need live deformation integration, and current body render-index bindings require subdivision2/topology unchanged or an explicit rebind. Shoulder/arm skin quality remains unaccepted and must not be presented as a qualified animation. Full face/skin/oral/layers/cloth, all requested actions, real Aevrynd materials/import/LOD/performance and explicit female acceptance remain required."
+}

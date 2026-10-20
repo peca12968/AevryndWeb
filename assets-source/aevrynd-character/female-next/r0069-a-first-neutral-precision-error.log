@@ -1,0 +1,16 @@
+00:00.906  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0068-c-live-body-contact-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0069-complete-controls.py", line 134, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0069-complete-controls.py", line 128, in main
+    assert max(hair_error.values())<1e-6,hair_error
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'AFN68_MAIN_RENDER_CURVES': 3.51892267644871e-05, 'AFN68_FLYAWAY_RENDER_CURVES': 7.731557161605451e-06}
+警告: Cannot move modifier beyond the start of the list
+警告: Cannot move modifier beyond the start of the list
+
+Error: script failed, file: 'scripts/character-next/build-female-next-r0069-complete-controls.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

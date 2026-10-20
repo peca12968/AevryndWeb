@@ -1,0 +1,14 @@
+00:00.578  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0068-c-live-body-contact-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0069-rig.py", line 21, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0069-rig.py", line 10, in main
+    o=bpy.data.objects[name];a=o.data.attributes['NativeVertexID'];ids=np.empty(len(o.data.vertices),'i4');a.data.foreach_get('value',ids);P=arr(o.data.vertices,'co');A=np.array(o.matrix_world);P=P@A[:3,:3].T+A[:3,3];assert ids.min()>=0 and ids.max()<37436
+                               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'bpy_prop_collection[key]: key "NativeVertexID" not found'
+
+Error: script failed, file: 'scripts/character-next/inspect-female-next-r0069-rig.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,0 +1,110 @@
+{
+  "revision": "female-next-r0069",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0068-c-live-body-contact-study.blend",
+  "sourceSha256": "ee588d13ef05eb7d54c231bc3438bde2653133dc4a739889da7e5ab5b9bf2dcc",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0069-a-complete-controls-study.blend",
+  "outputSha256": "f358d3c5a4d00ee6ad94d324612b33bdcf5aa4dde0bb19382d72bc7afabbb667",
+  "rig": {
+    "bones": 52,
+    "sourceWeightSumRange": [
+      0.23978543274984077,
+      1.2835223000729457
+    ],
+    "normalizationOnlyNotWeightRetuning": true,
+    "sourceJointRecords": 92
+  },
+  "boneObject": "AFN69_BODY_CONTROLS",
+  "timeline": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      13,
+      -20,
+      0,
+      0
+    ],
+    [
+      25,
+      20,
+      0,
+      0
+    ],
+    [
+      37,
+      0,
+      0,
+      0
+    ],
+    [
+      49,
+      0,
+      -35,
+      25
+    ],
+    [
+      61,
+      0,
+      0,
+      0
+    ]
+  ],
+  "fps": 24,
+  "skinMethod": "Linear blend skinning, normalized source-indexed weights, armature before unchanged subdivision/lining deletion. No auto-weight solve or parameter sweep.",
+  "facialPointHelpers": [
+    {
+      "object": "AFN59_LASHES_NATIVE_POINT_POSES",
+      "points": 6998,
+      "weights": "Nearest corresponding actual native neutral cage point; blink keys precede skinning, display curves sample evaluated point helper. Not exact follicle/root acceptance."
+    },
+    {
+      "object": "AFN59_BROWS_NATIVE_POINT_POSES",
+      "points": 76204,
+      "weights": "Nearest corresponding actual native neutral cage point; blink keys precede skinning, display curves sample evaluated point helper. Not exact follicle/root acceptance."
+    }
+  ],
+  "visibleGroomFollowing": [
+    {
+      "object": "AFN68_MAIN_RENDER_CURVES",
+      "curves": 10959,
+      "points": 206879,
+      "restRootSurfaceDistanceRangeM": [
+        1.343172506551582e-08,
+        0.004750578664243221
+      ],
+      "binding": "Actual render-body triangle vertices + barycentric / world orthonormal frame",
+      "noHairPhysics": true
+    },
+    {
+      "object": "AFN68_FLYAWAY_RENDER_CURVES",
+      "curves": 30,
+      "points": 360,
+      "restRootSurfaceDistanceRangeM": [
+        4.595854989020154e-06,
+        0.00022117044136393815
+      ],
+      "binding": "Actual render-body triangle vertices + barycentric / world orthonormal frame",
+      "noHairPhysics": true
+    }
+  ],
+  "neutralBodyMaximumWorldErrorsM": {
+    "AFN60_L_EYE_OUTER_SHELL_APPROX": 3.203102413851227e-07,
+    "AFN60_R_EYE_OUTER_SHELL_APPROX": 3.2024082000559367e-07,
+    "AFN60_L_IRIS_PUPIL_SURFACE": 3.2024082000559367e-07,
+    "AFN60_R_IRIS_PUPIL_SURFACE": 3.2015402211268465e-07,
+    "AFN60_BODY_ORAL_AND_OCULAR_LINING": 5.341407046770186e-07
+  },
+  "neutralHairMaximumWorldErrorsM": {
+    "AFN68_MAIN_RENDER_CURVES": 1.7523326789614657e-07,
+    "AFN68_FLYAWAY_RENDER_CURVES": 1.699854124126432e-07
+  },
+  "oldBlinkActionRetainedDetachedForControlPilot": "AFN59_FACE_CONTROLSAction",
+  "sourceNativeMeshKeysUVMaterialsAndHairRadiiUnedited": true,
+  "hiddenAuthoringGrowthAndGuidesStillNeutralOnly": true,
+  "newHairPhysicsOrContactsOrRuntimeAccepted": false,
+  "sourceCredits": "Rig/weights/joints Vitruvian CC0; r68 hairstyle retains Daniel Bystedt CC BY-SA notice, version unspecified; no third-party software code or paid service used.",
+  "secondsBeforePreview": 35.883179903030396
+}
