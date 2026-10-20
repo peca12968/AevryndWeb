@@ -1,0 +1,8 @@
+00:02.532  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0086-eye-layers.py:11: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  bpy.ops.wm.open_mainfile(filepath=str(src));bpy.context.scene.frame_set(1);bpy.context.view_layer.update();names=m.rig.native_names();signatures={n:v.signature(bpy.data.objects[n]) for n in names};hn=('AFN81_EDITABLE_CURLY_GUIDES','AFN57_NATIVE_BROWS','AFN57_NATIVE_LASHES');hair={n:q.hair(bpy.data.objects[n]).copy() for n in hn};unchanged=('AFN74_SKIN_AND_EXISTING_OCULAR_LINING','AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID');geometry={n:q.geom(bpy.data.objects[n])[1].copy() for n in unchanged};mats={a.name:m.rig.k.f.v.v32.material_signature(a) for a in bpy.data.materials if a.use_nodes};lights=m.m.q.lights()
+00:07.250  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0086-a-source-corresponding-eye-layers.blend"
+R86_MINIMUM_REJECTED_READBACK_DONE 11.044994592666626
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

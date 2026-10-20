@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T13:14:43.636782+00:00",
+  "decision": "REJECT_R86_SOURCE_FACE_PARTITION_IRIS_APPEARANCE_REGRESSION",
+  "productionMethods": 1,
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0086-a-source-corresponding-eye-layers.blend",
+      "sha256": "d9cd9115047fedb1b17aa3e459c97f0fdb471fcd884b84cf23a444b8752a4340",
+      "bytes": 80167248,
+      "role": "REJECTED_COMPLETE_EYE_PARTITION_STUDY_NOT_ADOPTED"
+    }
+  },
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "selectedCompleteDefectResolved": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterStagnationReset": false,
+  "gates": {
+    "appearance": {
+      "status": "REJECT_IRIS_BROWN_DETAIL_LOSS_AND_BLACK_WHITE_REGRESSION",
+      "appearanceImprovementAdopted": false,
+      "wholeCharacterScore": null,
+      "evidence": "r0086-complete-character-comparison.png",
+      "observations": [
+        "Baseline has a visible brown iris ring; r86 renders a paler/black-white eye with lost iris definition.",
+        "Complete face/skin remain artificial; hair has coarse highlights and unresolved coverage/contact defects.",
+        "No external face/body appearance gain adopted."
+      ],
+      "fullHeadBodyControlsExact": true,
+      "extraLightAndBroadExpansionStopped": true
+    },
+    "function": {
+      "status": "PASS_MINIMUM_REJECTED_NEUTRAL_SOURCE_READBACK_ONLY",
+      "evidence": "minimum-source-readback.json",
+      "originalNativeDataAndOriginalMaterialTreesPreserved": true,
+      "neutralEyeSourceFacesPositionUVNormalAndLoopCorrespondenceVerified": true,
+      "independentToggleRestoreOrPosedMotionQualified": false,
+      "newFullyQualifiedCompleteCapability": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_NO_NEW_EYE_ANATOMY_FINITE_CONTACT_OR_CONTINUOUS_CERTIFICATE",
+      "globalSignedMinimumM": null,
+      "noNewCornealThicknessOrOpticalSolids": true,
+      "knownR81HairBodyRootSelfContinuousAndNaturalDynamicsRemainUnaccepted": true,
+      "noBroadTestsAfterVisualRejection": true
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "engineImportMaterialCpuGpuMemoryLODUnaccepted": true
+    }
+  },
+  "causeNotIsolated": "Geometry/UV and captured normals correspondence alone do not prove material attribute/texture evaluation or renderer shading equivalence. No exact shader-cause claim.",
+  "apiRepairs": "Typed Compare A/B sockets and direct per-tree GeometrySwitch driver repaired before successful save. Same single construction, not three candidates; guard tolerances unchanged.",
+  "retainedResearch": "Failure example and original face/point/corner correspondence only; no eye layer adopted or editing operation qualified.",
+  "nextAction": "Directly author one coherent, genuinely modeled eye assembly on the exact complete r81B study, retaining the registered r76 body/oral source separately. Use the published Berard eye-reconstruction principles of mutually constrained scleral/corneal shape and refracted iris appearance: replace the single-interface outer approximation with explicit native editable corneal/limbal geometry and a finite inner boundary, retaining source-corresponding iris shape/texture coordinates. Do not duplicate the existing approximate shell, merely repartition its faces, add another lid crease/roll field, or patch the rejected GN normal/implicit-texture route. Establish the actual corneal outline/depth from existing geometry and readable source diagrams within the bounded support period, author one complete-eye construction with explicit source UV/material assignment, and immediately render matched full head/body and the defect angle. Any new optical geometry needs its own anatomy/contact and operation evidence only after the visual direction is credible. Preserve the existing lid/cavity support, skin tone/light, mouth/rig and hair. No claim of a scanned/measured individual eye, no use of Disney datasets/code/assets, no material/weight sweep. Natural hair/cloth motion, all-contact and real Aevrynd runtime/LOD remain unaccepted. Eye work does not excuse unresolved whole-face/skin and groom defects."
+}

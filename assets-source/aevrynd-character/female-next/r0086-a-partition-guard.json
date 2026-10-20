@@ -1,0 +1,123 @@
+{
+  "sources": [
+    {
+      "source": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "sourceFaces": 8192,
+      "eachSourceFaceExactlyOnce": true,
+      "layers": [
+        {
+          "object": "AFN86_L_SCLERA_REGION",
+          "source": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+          "role": "SCLERA_REGION",
+          "visibilityProperty": "l_sclera_region_visible",
+          "material": "AFN86_SOURCE_NORMAL_AFN57_COMBINED_SCLERA_CORNEA_APPROXIMATION",
+          "vertices": 6757,
+          "faces": 6688,
+          "maximumSourcePositionErrorM": 0.0,
+          "maximumCapturedSourceCornerNormalError": 0.0
+        },
+        {
+          "object": "AFN86_L_CORNEAL_REGION",
+          "source": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+          "role": "CORNEAL_REGION",
+          "visibilityProperty": "l_corneal_region_visible",
+          "material": "AFN86_SOURCE_NORMAL_AFN57_COMBINED_SCLERA_CORNEA_APPROXIMATION",
+          "vertices": 1573,
+          "faces": 1504,
+          "maximumSourcePositionErrorM": 0.0,
+          "maximumCapturedSourceCornerNormalError": 0.0
+        }
+      ]
+    },
+    {
+      "source": "AFN60_L_IRIS_PUPIL_SURFACE",
+      "sourceFaces": 6144,
+      "eachSourceFaceExactlyOnce": true,
+      "layers": [
+        {
+          "object": "AFN86_L_IRIS",
+          "source": "AFN60_L_IRIS_PUPIL_SURFACE",
+          "role": "IRIS",
+          "visibilityProperty": "l_iris_visible",
+          "material": "AFN86_SOURCE_NORMAL_AFN65_IMMERSED_IRIS_DIFFUSE_APPROX",
+          "vertices": 3200,
+          "faces": 3072,
+          "maximumSourcePositionErrorM": 0.0,
+          "maximumCapturedSourceCornerNormalError": 0.0
+        },
+        {
+          "object": "AFN86_L_PUPIL",
+          "source": "AFN60_L_IRIS_PUPIL_SURFACE",
+          "role": "PUPIL",
+          "visibilityProperty": "l_pupil_visible",
+          "material": "AFN86_SOURCE_NORMAL_AFN65_ABSORBING_PUPIL_APPROX",
+          "vertices": 3137,
+          "faces": 3072,
+          "maximumSourcePositionErrorM": 0.0,
+          "maximumCapturedSourceCornerNormalError": 0.0
+        }
+      ]
+    },
+    {
+      "source": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "sourceFaces": 8192,
+      "eachSourceFaceExactlyOnce": true,
+      "layers": [
+        {
+          "object": "AFN86_R_SCLERA_REGION",
+          "source": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+          "role": "SCLERA_REGION",
+          "visibilityProperty": "r_sclera_region_visible",
+          "material": "AFN86_SOURCE_NORMAL_AFN57_COMBINED_SCLERA_CORNEA_APPROXIMATION",
+          "vertices": 6821,
+          "faces": 6752,
+          "maximumSourcePositionErrorM": 0.0,
+          "maximumCapturedSourceCornerNormalError": 0.0
+        },
+        {
+          "object": "AFN86_R_CORNEAL_REGION",
+          "source": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+          "role": "CORNEAL_REGION",
+          "visibilityProperty": "r_corneal_region_visible",
+          "material": "AFN86_SOURCE_NORMAL_AFN57_COMBINED_SCLERA_CORNEA_APPROXIMATION",
+          "vertices": 1509,
+          "faces": 1440,
+          "maximumSourcePositionErrorM": 0.0,
+          "maximumCapturedSourceCornerNormalError": 0.0
+        }
+      ]
+    },
+    {
+      "source": "AFN60_R_IRIS_PUPIL_SURFACE",
+      "sourceFaces": 6144,
+      "eachSourceFaceExactlyOnce": true,
+      "layers": [
+        {
+          "object": "AFN86_R_IRIS",
+          "source": "AFN60_R_IRIS_PUPIL_SURFACE",
+          "role": "IRIS",
+          "visibilityProperty": "r_iris_visible",
+          "material": "AFN86_SOURCE_NORMAL_AFN65_IMMERSED_IRIS_DIFFUSE_APPROX",
+          "vertices": 3200,
+          "faces": 3072,
+          "maximumSourcePositionErrorM": 0.0,
+          "maximumCapturedSourceCornerNormalError": 0.0
+        },
+        {
+          "object": "AFN86_R_PUPIL",
+          "source": "AFN60_R_IRIS_PUPIL_SURFACE",
+          "role": "PUPIL",
+          "visibilityProperty": "r_pupil_visible",
+          "material": "AFN86_SOURCE_NORMAL_AFN65_ABSORBING_PUPIL_APPROX",
+          "vertices": 3137,
+          "faces": 3072,
+          "maximumSourcePositionErrorM": 0.0,
+          "maximumCapturedSourceCornerNormalError": 0.0
+        }
+      ]
+    }
+  ],
+  "noAddedOrDuplicatedSourceFaces": true,
+  "noNewLayerContactGeometry": true,
+  "notAFiniteThicknessCornealVolumeOrGlobalContactCertificate": true
+}

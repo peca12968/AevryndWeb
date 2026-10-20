@@ -1,0 +1,84 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend",
+  "sourceSha256": "dfcc38df12c6bd93c9659b90f8b665e973b7a90f3828b134297bd6f2365898c0",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0086-a-source-corresponding-eye-layers.blend",
+  "outputSha256": "d9cd9115047fedb1b17aa3e459c97f0fdb471fcd884b84cf23a444b8752a4340",
+  "outputBytes": 80167248,
+  "controls": "AFN86_EYE_LAYER_CONTROLS",
+  "layers": [
+    {
+      "object": "AFN86_L_SCLERA_REGION",
+      "source": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "role": "SCLERA_REGION",
+      "visibilityProperty": "l_sclera_region_visible",
+      "material": "AFN86_SOURCE_NORMAL_AFN57_COMBINED_SCLERA_CORNEA_APPROXIMATION"
+    },
+    {
+      "object": "AFN86_L_CORNEAL_REGION",
+      "source": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "role": "CORNEAL_REGION",
+      "visibilityProperty": "l_corneal_region_visible",
+      "material": "AFN86_SOURCE_NORMAL_AFN57_COMBINED_SCLERA_CORNEA_APPROXIMATION"
+    },
+    {
+      "object": "AFN86_L_IRIS",
+      "source": "AFN60_L_IRIS_PUPIL_SURFACE",
+      "role": "IRIS",
+      "visibilityProperty": "l_iris_visible",
+      "material": "AFN86_SOURCE_NORMAL_AFN65_IMMERSED_IRIS_DIFFUSE_APPROX"
+    },
+    {
+      "object": "AFN86_L_PUPIL",
+      "source": "AFN60_L_IRIS_PUPIL_SURFACE",
+      "role": "PUPIL",
+      "visibilityProperty": "l_pupil_visible",
+      "material": "AFN86_SOURCE_NORMAL_AFN65_ABSORBING_PUPIL_APPROX"
+    },
+    {
+      "object": "AFN86_R_SCLERA_REGION",
+      "source": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "role": "SCLERA_REGION",
+      "visibilityProperty": "r_sclera_region_visible",
+      "material": "AFN86_SOURCE_NORMAL_AFN57_COMBINED_SCLERA_CORNEA_APPROXIMATION"
+    },
+    {
+      "object": "AFN86_R_CORNEAL_REGION",
+      "source": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "role": "CORNEAL_REGION",
+      "visibilityProperty": "r_corneal_region_visible",
+      "material": "AFN86_SOURCE_NORMAL_AFN57_COMBINED_SCLERA_CORNEA_APPROXIMATION"
+    },
+    {
+      "object": "AFN86_R_IRIS",
+      "source": "AFN60_R_IRIS_PUPIL_SURFACE",
+      "role": "IRIS",
+      "visibilityProperty": "r_iris_visible",
+      "material": "AFN86_SOURCE_NORMAL_AFN65_IMMERSED_IRIS_DIFFUSE_APPROX"
+    },
+    {
+      "object": "AFN86_R_PUPIL",
+      "source": "AFN60_R_IRIS_PUPIL_SURFACE",
+      "role": "PUPIL",
+      "visibilityProperty": "r_pupil_visible",
+      "material": "AFN86_SOURCE_NORMAL_AFN65_ABSORBING_PUPIL_APPROX"
+    }
+  ],
+  "sourceRegionDefinitions": [
+    {
+      "source": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "nativeFaces": 512,
+      "cornealRegionNativeFaces": 94,
+      "definition": "Source Sclera_Color alpha<.5 at native-face centroid. Editing partition only, not exact anatomical limbus or opacity replacement; original continuous source alpha shader retained."
+    },
+    {
+      "source": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "nativeFaces": 512,
+      "cornealRegionNativeFaces": 90,
+      "definition": "Source Sclera_Color alpha<.5 at native-face centroid. Editing partition only, not exact anatomical limbus or opacity replacement; original continuous source alpha shader retained."
+    }
+  ],
+  "guard": "a-partition-guard.json",
+  "existingDepthRetainedNotExtraShell": true,
+  "opticalSolidsAnatomicalThicknessNaturalMotionRuntimeAccepted": false,
+  "secondsBeforePreview": 6.013720512390137
+}
