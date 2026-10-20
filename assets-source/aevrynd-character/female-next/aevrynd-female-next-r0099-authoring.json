@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "revision": "female-next-r0099",
+  "decision": "RETAIN_CONTINUOUS_ARTIST_WOMAN_LOCAL_NECK_GAIN_REJECT_STITCHED_NECK_CONSTRUCTIONS",
+  "completeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0099-a-continuous-head-neck.blend",
+      "sha256": "0e9ed5ec15f96117237594d75f98f5948bcf385e9099f9756ee0313d18c32f8a",
+      "bytes": 238667061,
+      "status": "FAILED_WHITE_MATERIAL_FIXTURE_SAME_A_CONSTRUCTION"
+    },
+    "a2": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0099-a2-continuous-head-neck-materials.blend",
+      "sha256": "4ea88a2ea6aa4f3bd3185c04c653ef763fa64d13603c5f920f55dd6db9764488",
+      "bytes": 238663954,
+      "status": "REJECT_WELDED_ORIGINAL_COLLAR_VISIBLE_FOLDS"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0099-b-anatomical-neck-surface.blend",
+      "sha256": "4c579f961e3eb973509d6a8eefe1d5033a930409c688e411d4c931c1cac6f0df",
+      "bytes": 275463156,
+      "status": "REJECT_RECONSTRUCTED_ANNULUS_VISIBLE_CORRUGATION"
+    },
+    "c": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0099-c-continuous-artist-body.blend",
+      "sha256": "b3b45ba3ced599babdd722cd6144647c58362edfe0d843d7a033bfed671ad073",
+      "bytes": 507148595,
+      "status": "RETAIN_CONTINUOUS_ARTIST_WOMAN_LOCAL_NECK_GAIN_ONLY_NOT_COMPLETE_ADOPTION"
+    }
+  },
+  "retainedContinuousArtistWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0099-c-continuous-artist-body.blend",
+    "sha256": "b3b45ba3ced599babdd722cd6144647c58362edfe0d843d7a033bfed671ad073",
+    "bytes": 507148595,
+    "status": "RETAIN_CONTINUOUS_ARTIST_WOMAN_LOCAL_NECK_GAIN_ONLY_NOT_COMPLETE_ADOPTION",
+    "scope": "Same complete scene with original eyes/oral/52-bone control sources and groom. Original Dan Ulrich fine head/neck/body continuous topology, reference floor registration below neck, actual full-skin root rebinding and explicit canonical material persistence. Displayed body outer shape changes; old body control source and rollbacks remain. Local neutral neck continuity only retained; eyes/hair/skin, complete blink/oral/actions, finite contacts and runtime unaccepted.",
+    "originalArtist": "Dan Ulrich",
+    "selectedSourceAssetLicense": "CC0",
+    "sourceBodyOuterShapeChangedExplicitly": true
+  },
+  "rights": "Vitruvian Bob/body source data CC0 per pinned c252d1fc7f00ba59d87b66b3d32fa3471fc6ee44 config. Project credits Sean Buckley, Olaf Delgado-Friedrichs and original contributors; full source config/NOTICE preserved, individual Bob author not inferred from its name. Separate inherited Brown material/hidden research: Daniel Bystedt CC BY-SA version unspecified, not relabelled CC0 or exclusively owned. No source addon/embedded scripts executed and no paid runtime dependency. New r97 anatomy/control curves and own geometry-node/verification code are modifications on those source data, not exclusively owned original source artwork. Upstream Blender GPL source snapshots and COPYING are unmodified read-only build references, separately credited; not compiled, linked, executed as source addons or copied into required engine runtime. R98 selected Body Female - Realistic fine mesh: Dan Ulrich, CC0 per original embedded asset metadata and bundle README. Unrelated orphan Rain Rig CC BY4 license text remains an original source notice, not a license assigned to every bundle asset. Full original bundle and embedded texts preserved; no original embedded scripts executed. New assembly and transfer code does not grant exclusive ownership of original data. R99 keeps the original Dan Ulrich CC0 continuous fine body/head and original UV/base multires object, with explicit lower-body floor and retained-head identity calibration. New weld/annulus/control/material transfer code and derived data do not confer exclusive ownership of source artwork. Existing Brown/material/hidden-source notices remain separately applicable. No new runtime or paid platform dependency.",
+  "bodyShapePolicy": "C changes displayed outer body anatomy/pose shape explicitly; original body controller geometry/keys/weights/rig and eye/oral assets remain intact, not a claim that old outer shape is unchanged.",
+  "materialPersistence": "Canonical original material IDs explicitly assigned; prior evaluated-ID persistence failure preserved and documented.",
+  "textureScope": "Approximate inherited skin chart transfer; original artist UVMap retained. Not new measured/captured skin realism.",
+  "rootScope": "All24800 original children and248 guides retained; actual whole-skin root vertex IDs/barycentric rest frames rebind. Numeric centre following is not finite root/follicle or natural motion acceptance.",
+  "motionScope": "Sampled whole-skin/groom yaw plus independently delivered blink/jaw with evaluated-input proof and restore. Not natural hair physics, complete operation or finite/continuous contact. Initial property-only probe retained as invalid input-delivery evidence.",
+  "evidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0099-continuous-head-neck\\female-next-r0099.visual-audit.json",
+  "continuation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0099-continuous-head-neck\\continuation.json",
+  "adoptedCompleteGainOrRuntime": false
+}

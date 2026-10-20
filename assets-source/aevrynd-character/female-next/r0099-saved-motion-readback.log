@@ -1,0 +1,19 @@
+00:03.562  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0098-b-native-artist-head.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0099-saved-motion.py:28: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();h.open_file(S/'aevrynd-female-next-r0098-b-native-artist-head.blend');names=m.rig.native_names();native={n:h.native.signature(bpy.data.objects[n]) for n in names};rig=h.rig_signature();teeth={n:h.helpers.cap_signature(bpy.data.objects[n]) for n in ['AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID']};helpers={n:h.native.signature(bpy.data.objects[n]) for n in ['AFN59_BROWS_NATIVE_POINT_POSES','AFN59_LASHES_NATIVE_POINT_POSES']};lights=m.m.q.lights();mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes and (x.users or x.use_fake_user)};hairName='AFN97_TUCKED_ARTIST_BOB_CHILDREN';hair=bpy.data.objects[hairName];baseHair=q.hair(hair).reshape(24800,17,3).copy();radius=q.arr(hair.data.attributes['radius'].data,'value',24800*17).copy();sourceHeadSlots=slots(bpy.data.objects['AFN98_ORIGINAL_ARTIST_HEAD_AND_NECK_COLLAR']);save('prior-head-material-persistence-scope.json',{'r98OriginalSavedHeadRawMaterialSlots':sourceHeadSlots,'r98FileUnmodified':True,'sourceHash':sha(S/'aevrynd-female-next-r0098-b-native-artist-head.blend'),'scope':'Prior material-tree signatures did not verify actual head slot bindings. This is a new saved-object finding; prior historical reports are preserved, not silently rewritten.'});results=json.loads((E/'minimum-saved-readback.json').read_text('utf8')) if (E/'minimum-saved-readback.json').exists() else {};second={}
+00:24.828  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0099-a2-continuous-head-neck-materials.blend"
+01:05.140  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0099-continuous-head-neck\matched-a2-second-light-oblique.png'
+R99_MINIMUM_SAVED a2 None None
+01:20.437  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0099-c-continuous-artist-body.blend"
+02:13.875  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0099-continuous-head-neck\matched-c-independent-reopen-face.png'
+02:37.656  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0099-continuous-head-neck\matched-c-second-light-oblique.png'
+R99_MINIMUM_SAVED c 5.484044983127957e-08 0.0
+02:53.812  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0099-continuous-head-neck\affected-motion-00.png'
+03:08.390  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0099-continuous-head-neck\affected-motion-01.png'
+03:23.172  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0099-continuous-head-neck\affected-motion-02.png'
+03:37.219  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0099-continuous-head-neck\affected-motion-03.png'
+03:50.672  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0099-continuous-head-neck\affected-motion-04.png'
+R99_SAVED_AND_AFFECTED_MOTION_DONE 234.92861914634705
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
