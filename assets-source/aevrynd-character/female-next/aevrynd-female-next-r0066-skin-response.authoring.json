@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "source": "aevrynd-female-next-r0066-a-source-skin-response-study.blend",
+  "sha256": "edb9c185f3766a2d15a1c99d7878319724efb205ac651e4fb6806ed9f4e38c7b",
+  "role": "Rejected complete-character skin response study; not the working character",
+  "baselineSource": "aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend",
+  "baselineSha256": "4d0e3f67735ae68c5c1fa3c933f7cabb03cb547928e778f7067a8e699620b708",
+  "changes": [
+    {
+      "node": "Principled BSDF",
+      "input": "Subsurface Weight",
+      "before": 0.11999999731779099,
+      "after": 1.0
+    },
+    {
+      "node": "Principled BSDF",
+      "input": "Subsurface Radius",
+      "before": [
+        1.0,
+        0.20000000298023224,
+        0.10000000149011612
+      ],
+      "after": [
+        0.367000013589859,
+        0.13699999451637268,
+        0.06800000369548798
+      ]
+    },
+    {
+      "node": "Principled BSDF",
+      "input": "Subsurface Scale",
+      "before": 0.0010000000474974513,
+      "after": 0.004475106496920289
+    },
+    {
+      "node": "Principled BSDF",
+      "input": "Subsurface Anisotropy",
+      "before": 0.0,
+      "after": 0.800000011920929
+    },
+    {
+      "node": "Principled BSDF",
+      "property": "subsurface_method",
+      "before": "RANDOM_WALK",
+      "after": "RANDOM_WALK_SKIN"
+    },
+    {
+      "node": "Bump",
+      "input": "Strength",
+      "before": 0.20000000298023224,
+      "after": 1.0
+    },
+    {
+      "node": "Bump",
+      "input": "Distance",
+      "before": 0.0003000000142492354,
+      "after": 0.0026850639815075295
+    }
+  ],
+  "sourceDataReferences": [
+    "r0066-source-material-diagnosis.json",
+    "r0066-native-skin-values.json"
+  ],
+  "sourceDataCC0Provenance": "Existing pinned Vitruvian char.blend/config.yaml and fifteen source texture hashes; no new external assets or addon code imported.",
+  "reconstructionScript": "build-female-next-r0066-skin-response.py",
+  "scope": "Source-based height/transport approximation only; pigment/roughness/geometry/lighting exact. Whole character remains unaccepted.",
+  "adopted": false,
+  "decision": "REJECT_SKIN_RESPONSE_AS_MAINLINE",
+  "stopFurtherValueSweeps": true,
+  "nextAction": "Keep verified r65A as the complete offline woman. Change the main authoring focus to the dominant missing complete hairstyle. First inspect/render a genuinely source-authored complete alternative such as CC0 Vitruvian Eve, including its real emitter, guides and rendered children before any fitting. Establish whether that actual original groom already has a credible full-head silhouette, hairline and ear/back/tip continuity; do not interpret a guide-only extraction as a finished hairstyle. If the original complete style is credible, propose one explicit native scalp correspondence and bounded integration onto the same r65 woman, with actual root/free/self contact and movement gates before adoption. If the original style is unsuitable or required render data are missing, reject cheaply and select another licensed artist-authored foundation. Do not resume r61 global ties, r62 isolated solvers, r63 analytic scalp lift, r64 cap/perimeter cards, old failed Bob fitting or r65 iris tuning; do not run more r66 bump/SSS/roughness/pigment sweeps. This is a new authoring basis, not a renamed procedural comb. Full anatomy, rig, cloth, natural dynamics, engine import/material/LOD/performance and explicit female acceptance remain required."
+}

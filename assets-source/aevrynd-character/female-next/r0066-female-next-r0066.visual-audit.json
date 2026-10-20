@@ -1,0 +1,104 @@
+{
+  "revision": "female-next-r0066",
+  "reviewUTC": "2026-10-20T02:02:38.199874+00:00",
+  "decision": "REJECT_SKIN_RESPONSE_AS_MAINLINE",
+  "studySource": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0066-a-source-skin-response-study.blend",
+  "studySha256": "edb9c185f3766a2d15a1c99d7878319724efb205ac651e4fb6806ed9f4e38c7b",
+  "workingSourceUnchanged": "source/aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend",
+  "appearance": {
+    "status": "MARGINAL_LOCAL_SURFACE_DIFFERENCE_MAIN_DEFECT_UNRESOLVED",
+    "selectedCompleteDefectResolved": false,
+    "appearanceImprovementForAdoption": false,
+    "localDifferences": [
+      "Lip striations and fine chin/cheek surface become more readable.",
+      "Second-light skin response becomes somewhat warmer with the original pigment texture unchanged."
+    ],
+    "defects": [
+      "Complete face remains flat/waxy and mannequin-like at the fixed whole-head framing.",
+      "Whole-body image provides no substantial new human realism or usable capability.",
+      "Sparse complete hairstyle/hairline, absent full rig/actions/cloth and missing runtime remain dominant gaps."
+    ],
+    "decisionReason": "Small local texture/transport differences do not resolve the predeclared complete-skin/face defect. Reject this selected wrapper as a new working source and stop further parameter variants; no score increase.",
+    "wholeCharacterScore": null,
+    "skinAppearanceScore": null,
+    "evidence": [
+      "r0066-complete-character-comparison.png",
+      "r0066-second-light-comparison.png",
+      "r0066-side-comparison.png"
+    ]
+  },
+  "function": {
+    "status": "PASS_EXACT_SKIN_MATERIAL_SCOPE_STATIC_GEOMETRY_PRESERVED",
+    "evidence": "a-native-readback.json",
+    "scope": "Saved complete study opens, original geometry/keys/UV/curves/eye materials and controls preserved; selected skin material only. No new complete rig/action capability."
+  },
+  "contact": {
+    "status": "EXACT_OLD_SEVEN_STATIC_OCULAR_SCOPE_ONLY",
+    "newTestsRun": false,
+    "evidence": {
+      "sourceStatus": "PASS_SEVEN_TESTED_STATIC_POSES_ONLY",
+      "exactSourceSha256": "3324231ec149a138a9de72c19a38ab7e46165e7ccde872f9e130a5b6abf56d9d",
+      "evidence": [
+        "../r0060-ocular-assembly/b-contact-verification.json",
+        "../r0060-ocular-assembly/b-additional-pose-verification.json",
+        "../r0060-ocular-assembly/b-cavity-volume-verification.json"
+      ],
+      "basis": "Exact actual V/T/material-index/native-face hashes in all seven corresponding poses; native keys/UVs/topology/matrices/visibility exact. Only specular lobe inputs change, with no alpha, transmission, displacement or volume changes.",
+      "notCertified": [
+        "Full body or adjacent self contacts outside old scope",
+        "Facial/head hair finite/self/root joins",
+        "Tissue thickness and complete lid sealing",
+        "Continuous time, head motion or cloth",
+        "Calibrated multi-interface eye optics",
+        "Engine runtime/performance"
+      ],
+      "exactGlobalSignedMinimumM": null,
+      "numericalAllowanceM": 1e-06
+    },
+    "actualSevenPoseGeometryExact": true,
+    "noGeometryDisplacementOrAlphaChange": true,
+    "subsurfaceOpticsChangedNotAContactChange": true,
+    "fullBodyHairClothContinuousAccepted": false
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "newEngineMaterialOrBenchmark": false
+  },
+  "resources": {
+    "heavyJobsAtOnce": 1,
+    "blenderThreads": 4,
+    "firstCandidatePreviewSeconds": 30.83,
+    "completeFiveViewRenderSeconds": 161.88,
+    "readbackSeconds": 15.649770736694336,
+    "observedBlenderWorkingSetMB": 1780,
+    "observationIsNotPeak": true,
+    "newSoftwareAddonsServersSubagents": 0,
+    "within45MinuteCheckpoint": true
+  },
+  "stats": {
+    "fileBytes": 12616529,
+    "visibleMeshComponents": 5,
+    "renderLevelMeshVertices": 589544,
+    "renderLevelMeshTriangles": 1178816,
+    "countBasis": "Existing r60 b-contact-verification.json actual counts, transferred by the exact corresponding seven-pose hashes through r65/r66; not a fresh count or engine budget.",
+    "relativeImageFiles": 15,
+    "newMaterials": 1,
+    "newBonesOrActions": 0,
+    "runtimeTimingOrMemory": null
+  },
+  "milestone": {
+    "current": "CREDIBLE_COMPLETE_PERSON_NOT_MET",
+    "selectedDefect": "Broad flat/waxy complete skin/face response",
+    "selectedDefectResolved": false,
+    "newCompleteUsableCapability": false,
+    "localGainResetsStagnation": false,
+    "productionRoundsSinceLastWholeCharacterReview": 1,
+    "lastWholeCharacterReview": "../r0065-eye-shading/continuation.json",
+    "nextReviewDueAfterFurtherProductionRounds": 2
+  },
+  "retainedResearch": [],
+  "rejectedMethod": "Selected original source height/SSS values, scaled to the working body while keeping pigment/roughness fixed; not the original complete shader and not a measured skin calibration. No further local value sweep.",
+  "nextAction": "Keep verified r65A as the complete offline woman. Change the main authoring focus to the dominant missing complete hairstyle. First inspect/render a genuinely source-authored complete alternative such as CC0 Vitruvian Eve, including its real emitter, guides and rendered children before any fitting. Establish whether that actual original groom already has a credible full-head silhouette, hairline and ear/back/tip continuity; do not interpret a guide-only extraction as a finished hairstyle. If the original complete style is credible, propose one explicit native scalp correspondence and bounded integration onto the same r65 woman, with actual root/free/self contact and movement gates before adoption. If the original style is unsuitable or required render data are missing, reject cheaply and select another licensed artist-authored foundation. Do not resume r61 global ties, r62 isolated solvers, r63 analytic scalp lift, r64 cap/perimeter cards, old failed Bob fitting or r65 iris tuning; do not run more r66 bump/SSS/roughness/pigment sweeps. This is a new authoring basis, not a renamed procedural comb. Full anatomy, rig, cloth, natural dynamics, engine import/material/LOD/performance and explicit female acceptance remain required.",
+  "wholeCharacterScore": null,
+  "formalRuntimeWebsiteAndFemaleAcceptanceUnchanged": true
+}

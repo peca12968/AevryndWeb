@@ -1,0 +1,329 @@
+{
+  "VitruvianSkin": [
+    {
+      "name": "Math",
+      "type": "ShaderNodeMath",
+      "operation": "MULTIPLY"
+    },
+    {
+      "name": "Group Input.002",
+      "type": "NodeGroupInput"
+    },
+    {
+      "name": "Math.002",
+      "type": "ShaderNodeMath",
+      "operation": "MULTIPLY"
+    },
+    {
+      "name": "Displacement",
+      "type": "ShaderNodeDisplacement",
+      "space": "OBJECT"
+    },
+    {
+      "name": "Mix",
+      "type": "ShaderNodeMix",
+      "blend_type": "MIX",
+      "data_type": "RGBA"
+    },
+    {
+      "name": "Group.002",
+      "type": "ShaderNodeGroup",
+      "group": "EstrogenCalc"
+    },
+    {
+      "name": "Math.004",
+      "type": "ShaderNodeMath",
+      "operation": "MULTIPLY"
+    },
+    {
+      "name": "Group.007",
+      "type": "ShaderNodeGroup",
+      "group": "FauxCavity"
+    },
+    {
+      "name": "Math.006",
+      "type": "ShaderNodeMath",
+      "operation": "MULTIPLY"
+    },
+    {
+      "name": "Group Input.004",
+      "type": "NodeGroupInput"
+    },
+    {
+      "name": "Principled BSDF",
+      "type": "ShaderNodeBsdfPrincipled",
+      "subsurface_method": "RANDOM_WALK_SKIN",
+      "distribution": "MULTI_GGX"
+    },
+    {
+      "name": "Color Attribute",
+      "type": "ShaderNodeVertexColor"
+    },
+    {
+      "name": "Group Input.001",
+      "type": "NodeGroupInput"
+    },
+    {
+      "name": "Group Input.005",
+      "type": "NodeGroupInput"
+    },
+    {
+      "name": "Group Input.003",
+      "type": "NodeGroupInput"
+    },
+    {
+      "name": "Group Input.006",
+      "type": "NodeGroupInput"
+    },
+    {
+      "name": "Group.008",
+      "type": "ShaderNodeGroup",
+      "group": "HairAO"
+    },
+    {
+      "name": "Group.003",
+      "type": "ShaderNodeGroup",
+      "group": "HeadShadow"
+    },
+    {
+      "name": "East Asian",
+      "type": "ShaderNodeGroup",
+      "group": "EastAsian"
+    },
+    {
+      "name": "Mix.002",
+      "type": "ShaderNodeMix",
+      "blend_type": "MIX",
+      "data_type": "RGBA"
+    },
+    {
+      "name": "Group Output",
+      "type": "NodeGroupOutput"
+    },
+    {
+      "name": "Value.004",
+      "type": "ShaderNodeValue",
+      "output": 1.0
+    },
+    {
+      "name": "Vector Math",
+      "type": "ShaderNodeVectorMath",
+      "operation": "MULTIPLY"
+    },
+    {
+      "name": "Combine XYZ",
+      "type": "ShaderNodeCombineXYZ"
+    },
+    {
+      "name": "Group.001",
+      "type": "ShaderNodeGroup",
+      "group": "Aging"
+    },
+    {
+      "name": "tex_Skin_Height.<UDIM>",
+      "type": "ShaderNodeTexImage"
+    },
+    {
+      "name": "tex_Skin_Roughness.<UDIM>",
+      "type": "ShaderNodeTexImage"
+    },
+    {
+      "name": "tex_Skin_Age_Height.<UDIM>",
+      "type": "ShaderNodeTexImage"
+    },
+    {
+      "name": "tex_Dark_Skin_Color.<UDIM>",
+      "type": "ShaderNodeTexImage"
+    },
+    {
+      "name": "tex_Light_Skin_Color.<UDIM>",
+      "type": "ShaderNodeTexImage"
+    },
+    {
+      "name": "Group",
+      "type": "ShaderNodeGroup",
+      "group": "BaseInput"
+    },
+    {
+      "name": "Group.006",
+      "type": "ShaderNodeGroup",
+      "group": "RoughnessUnreal"
+    },
+    {
+      "name": "Group Input",
+      "type": "NodeGroupInput"
+    },
+    {
+      "name": "Group.010",
+      "type": "ShaderNodeGroup",
+      "group": "NodeGroup"
+    },
+    {
+      "name": "Math.010",
+      "type": "ShaderNodeMath",
+      "operation": "MULTIPLY"
+    },
+    {
+      "name": "Vertex Color.001",
+      "type": "ShaderNodeVertexColor"
+    },
+    {
+      "name": "Math.012",
+      "type": "ShaderNodeMath",
+      "operation": "MULTIPLY"
+    },
+    {
+      "name": "Math.013",
+      "type": "ShaderNodeMath",
+      "operation": "MULTIPLY"
+    },
+    {
+      "name": "Group.011",
+      "type": "ShaderNodeGroup",
+      "group": "MicroSkin"
+    },
+    {
+      "name": "Group Input.007",
+      "type": "NodeGroupInput"
+    },
+    {
+      "name": "Math.003",
+      "type": "ShaderNodeMath",
+      "operation": "MULTIPLY"
+    }
+  ],
+  "RoughnessUnreal": [
+    {
+      "name": "Frame",
+      "type": "NodeFrame"
+    },
+    {
+      "name": "Frame.001",
+      "type": "NodeFrame"
+    },
+    {
+      "name": "Mix",
+      "type": "ShaderNodeMix",
+      "blend_type": "MIX",
+      "data_type": "RGBA"
+    },
+    {
+      "name": "Value",
+      "type": "ShaderNodeValue",
+      "output": 0.20000000298023224
+    },
+    {
+      "name": "Value.001",
+      "type": "ShaderNodeValue",
+      "output": 1.0
+    },
+    {
+      "name": "Math.001",
+      "type": "ShaderNodeMath",
+      "operation": "ADD"
+    },
+    {
+      "name": "Math.002",
+      "type": "ShaderNodeMath",
+      "operation": "MULTIPLY"
+    },
+    {
+      "name": "Fresnel",
+      "type": "ShaderNodeFresnel"
+    },
+    {
+      "name": "Value.002",
+      "type": "ShaderNodeValue",
+      "output": 0.5
+    },
+    {
+      "name": "Math",
+      "type": "ShaderNodeMath",
+      "operation": "MULTIPLY"
+    },
+    {
+      "name": "Value.003",
+      "type": "ShaderNodeValue",
+      "output": 1.0
+    },
+    {
+      "name": "Math.003",
+      "type": "ShaderNodeMath",
+      "operation": "MULTIPLY"
+    },
+    {
+      "name": "Mix.001",
+      "type": "ShaderNodeMix",
+      "blend_type": "MIX",
+      "data_type": "RGBA"
+    },
+    {
+      "name": "Fresnel.001",
+      "type": "ShaderNodeFresnel"
+    },
+    {
+      "name": "Mix.002",
+      "type": "ShaderNodeMix",
+      "blend_type": "ADD",
+      "data_type": "RGBA"
+    },
+    {
+      "name": "Group Input",
+      "type": "NodeGroupInput"
+    },
+    {
+      "name": "Group Output",
+      "type": "NodeGroupOutput"
+    }
+  ],
+  "sourceDisplacementMethod": "BUMP",
+  "sourceSettings": {
+    "Linear Melanin Texture Blend": 0.0,
+    "EastAsian": 0.0,
+    "Estrogen": 0.0,
+    "Lip Bump Strength": 1.0,
+    "Scalp Tan": 0.0,
+    "Hair Ambient Occlusion": 0.0,
+    "Five O' Clock Shadow": 0.0,
+    "Age (Eldery)": 0.0,
+    "Tone": 0.0,
+    "Global Bump Strength": 1.0,
+    "Micro Bump Strength": 1.0,
+    "Roughness Multiplier": 1.0,
+    "Physical Melanin LUT Blend": 0.0,
+    "Hemoglobin Fraction": 1.0,
+    "Melanin Blend": 0.0,
+    "Melanin Fraction": 0.4000000059604645,
+    "Teeth Roughness Multiplier": 0.0,
+    "Saturation": 1.0,
+    "Iris Color Blend": 0.0,
+    "Iris Bump Strength": 1.0,
+    "Sclera Yellowness": 0.0,
+    "Sclera Redness": 0.0,
+    "Hue": 0.5,
+    "Value": 1.0,
+    "Teeth Bump Strength": 0.5,
+    "Teeth Brownness": 0.0,
+    "Teeth Yellowness": 0.0,
+    "Sclera Bump Strength": 1.0,
+    "Age (Baby)": 0.0,
+    "Subsurface Scale Multiplier": 1.0
+  },
+  "meshUnits": {
+    "sceneScale": 1.0,
+    "objects": {
+      "cm_vitruvian": {
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          1.2092725038528442,
+          0.3308970332145691,
+          1.744213581085205
+        ]
+      }
+    }
+  }
+}

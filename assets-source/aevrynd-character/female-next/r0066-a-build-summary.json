@@ -1,0 +1,139 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend",
+  "sourceSha256": "4d0e3f67735ae68c5c1fa3c933f7cabb03cb547928e778f7067a8e699620b708",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0066-a-source-skin-response-study.blend",
+  "outputSha256": "edb9c185f3766a2d15a1c99d7878319724efb205ac651e4fb6806ed9f4e38c7b",
+  "changes": [
+    {
+      "node": "Principled BSDF",
+      "input": "Subsurface Weight",
+      "before": 0.11999999731779099,
+      "after": 1.0
+    },
+    {
+      "node": "Principled BSDF",
+      "input": "Subsurface Radius",
+      "before": [
+        1.0,
+        0.20000000298023224,
+        0.10000000149011612
+      ],
+      "after": [
+        0.367000013589859,
+        0.13699999451637268,
+        0.06800000369548798
+      ]
+    },
+    {
+      "node": "Principled BSDF",
+      "input": "Subsurface Scale",
+      "before": 0.0010000000474974513,
+      "after": 0.004475106496920289
+    },
+    {
+      "node": "Principled BSDF",
+      "input": "Subsurface Anisotropy",
+      "before": 0.0,
+      "after": 0.800000011920929
+    },
+    {
+      "node": "Principled BSDF",
+      "property": "subsurface_method",
+      "before": "RANDOM_WALK",
+      "after": "RANDOM_WALK_SKIN"
+    },
+    {
+      "node": "Bump",
+      "input": "Strength",
+      "before": 0.20000000298023224,
+      "after": 1.0
+    },
+    {
+      "node": "Bump",
+      "input": "Distance",
+      "before": 0.0003000000142492354,
+      "after": 0.0026850639815075295
+    }
+  ],
+  "assignments": [
+    {
+      "object": "AFN60_BODY_ORAL_AND_OCULAR_LINING",
+      "slot": 4
+    },
+    {
+      "object": "AFN60_BODY_ORAL_AND_OCULAR_LINING",
+      "slot": 5
+    },
+    {
+      "object": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "slot": 4
+    },
+    {
+      "object": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "slot": 5
+    },
+    {
+      "object": "AFN60_L_IRIS_PUPIL_SURFACE",
+      "slot": 4
+    },
+    {
+      "object": "AFN60_L_IRIS_PUPIL_SURFACE",
+      "slot": 5
+    },
+    {
+      "object": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "slot": 4
+    },
+    {
+      "object": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "slot": 5
+    },
+    {
+      "object": "AFN60_R_IRIS_PUPIL_SURFACE",
+      "slot": 4
+    },
+    {
+      "object": "AFN60_R_IRIS_PUPIL_SURFACE",
+      "slot": 5
+    }
+  ],
+  "uniformBodyScale": 0.8950213193893433,
+  "sourceHeightMultiplierM": 0.0026850639815075295,
+  "sourceTransportScaleM": 0.004475106496920289,
+  "sourceSettings": {
+    "Linear Melanin Texture Blend": 0.0,
+    "EastAsian": 0.0,
+    "Estrogen": 0.0,
+    "Lip Bump Strength": 1.0,
+    "Scalp Tan": 0.0,
+    "Hair Ambient Occlusion": 0.0,
+    "Five O' Clock Shadow": 0.0,
+    "Age (Eldery)": 0.0,
+    "Tone": 0.0,
+    "Global Bump Strength": 1.0,
+    "Micro Bump Strength": 1.0,
+    "Roughness Multiplier": 1.0,
+    "Physical Melanin LUT Blend": 0.0,
+    "Hemoglobin Fraction": 1.0,
+    "Melanin Blend": 0.0,
+    "Melanin Fraction": 0.4000000059604645,
+    "Teeth Roughness Multiplier": 0.0,
+    "Saturation": 1.0,
+    "Iris Color Blend": 0.0,
+    "Iris Bump Strength": 1.0,
+    "Sclera Yellowness": 0.0,
+    "Sclera Redness": 0.0,
+    "Hue": 0.5,
+    "Value": 1.0,
+    "Teeth Bump Strength": 0.5,
+    "Teeth Brownness": 0.0,
+    "Teeth Yellowness": 0.0,
+    "Sclera Bump Strength": 1.0,
+    "Age (Baby)": 0.0,
+    "Subsurface Scale Multiplier": 1.0
+  },
+  "pigmentRoughnessGeometryExposureFixed": true,
+  "approximation": "Selected source height and skin-transport semantics only; no original microheight/LUT/view-dependent roughness/fauxcavity copied. Surface bump only, no geometry displacement or alpha change.",
+  "reference": "https://docs.blender.org/manual/en/5.0/render/shader_nodes/shader/principled.html",
+  "secondsBeforeCandidatePreview": 11.665455102920532
+}
