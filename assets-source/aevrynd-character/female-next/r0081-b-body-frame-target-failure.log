@@ -1,0 +1,17 @@
+00:01.313  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0076-a-proximal-crown-sculpt-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0081-curly.py:24: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();ref=q.read(E/(TAG+'-build-summary.json'));baselineSource=ref.get('completeBaselineSource',ref['source']);baselineSHA=ref.get('completeBaselineSha256',ref['sourceSha256']);assert sha(Path(baselineSource))==baselineSHA;bpy.ops.wm.open_mainfile(filepath=baselineSource);bpy.context.scene.frame_set(1);names=rig.native_names();native={n:v.signature(bpy.data.objects[n]) for n in names};mats={mat.name:m.rig.k.f.v.v32.material_signature(mat) for mat in bpy.data.materials if mat.use_nodes};lights=m.m.q.lights();dental={n:q.arr(bpy.data.objects[n].data.vertices,'co',len(bpy.data.objects[n].data.vertices),3).copy() for n in ('AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID')};baseline=q.read(E/'baseline-pilot-controls.json') if STABLE else [m.render('baseline-r76','face'),m.render('baseline-r76','body-face')];save('baseline-pilot-controls.json',baseline)
+00:06.203  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend"
+R81_ACTUAL_BODY_FRAME -20 4.2090909998499904e-07
+R81_ACTUAL_BODY_FRAME 20 2.7960812992695803e-06
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0081-curly.py", line 53, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0081-curly.py", line 31, in main
+    if err>=2e-6:save('a-function-failure.json',{'status':'FAIL_INDEPENDENT_ACTUAL_BODY_FRAME','poses':poses,'noMotionAcceptance':True});raise AssertionError(('Actual render frame does not follow body',deg,err))
+                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('Actual render frame does not follow body', 20, 2.7960812992695803e-06)
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
