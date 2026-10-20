@@ -1,0 +1,11 @@
+00:00.735  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0060-b-limit-surface-assembly-study.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0064-guide-ribbons.py:59: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN64_OPAQUE_SHAPE_REVIEW_ONLY');mat.use_nodes=True;t=mat.node_tree;t.nodes.clear();n=t.nodes.new('ShaderNodeBsdfPrincipled');out=t.nodes.new('ShaderNodeOutputMaterial');t.links.new(n.outputs['BSDF'],out.inputs['Surface']);n.inputs['Base Color'].default_value=(.055,.021,.010,1);n.inputs['Roughness'].default_value=.62;return mat
+資訊: 已儲存為「aevrynd-female-next-r0064-a-authored-ribbon-blockout.blend」
+R64_NATIVE_GUIDES_AND_RIBBONS_SAVED 32 1.6380226612091064
+00:24.235  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0064-guide-ribbons\a-shape-face.png'
+00:41.610  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0064-guide-ribbons\a-shape-profile.png'
+00:58.656  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0064-guide-ribbons\a-shape-back.png'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

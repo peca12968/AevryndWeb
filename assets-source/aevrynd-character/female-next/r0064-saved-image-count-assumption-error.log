@@ -1,0 +1,13 @@
+00:00.969  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0060-b-limit-surface-assembly-study.blend"
+00:02.672  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0064-c-textured-card-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0064-cards.py", line 57, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0064-cards.py", line 41, in main
+    assert len(images)==18;assert not bpy.data.libraries and not bpy.app.handlers.frame_change_pre and not bpy.app.handlers.frame_change_post
+           ^^^^^^^^^^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

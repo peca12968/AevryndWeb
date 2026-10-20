@@ -1,0 +1,20 @@
+00:00.750  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0060-b-limit-surface-assembly-study.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0064-guide-ribbons.py:59: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN64_OPAQUE_SHAPE_REVIEW_ONLY');mat.use_nodes=True;n=mat.node_tree.nodes.get('Principled BSDF');n.inputs['Base Color'].default_value=(.055,.021,.010,1);n.inputs['Roughness'].default_value=.62;return mat
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0064-guide-ribbons.py", line 111, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0064-guide-ribbons.py", line 110, in main
+    build();save('a-first-view-controls.json',shade.render('a-shape',('face','profile','back')))
+    ~~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0064-guide-ribbons.py", line 73, in build
+    coll=bpy.data.collections.new('AFN64_AUTHORED_HAIR');bpy.context.scene.collection.children.link(coll);mat=material();descriptor=[]
+                                                                                                              ~~~~~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0064-guide-ribbons.py", line 59, in material
+    mat=bpy.data.materials.new('AFN64_OPAQUE_SHAPE_REVIEW_ONLY');mat.use_nodes=True;n=mat.node_tree.nodes.get('Principled BSDF');n.inputs['Base Color'].default_value=(.055,.021,.010,1);n.inputs['Roughness'].default_value=.62;return mat
+                                                                                                                                 ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'inputs'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
