@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T12:42:29.118173+00:00",
+  "decision": "REJECT_R85_TWO_ORBITAL_FOLD_SCULPTS_KEEP_R76_WORK_R81_RESEARCH",
+  "productionMethods": 2,
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0085-a-native-upper-lid-fold-study.blend",
+      "sha256": "778aaa3f60e871e81575c63ca69d50a9fdfc269b280c83754273f6298e4650e8",
+      "bytes": 80229021,
+      "role": "REJECTED_COMPLETE_ORBITAL_FOLD_STUDY_NOT_ADOPTED"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0085-b-pretarsal-fold-sculpt-study.blend",
+      "sha256": "5498fc63e1efb26f64e8f8719f159a30d9407bcff159c35f1780b4075ddfc809",
+      "bytes": 80231390,
+      "role": "REJECTED_COMPLETE_ORBITAL_FOLD_STUDY_NOT_ADOPTED"
+    }
+  },
+  "appearanceImprovement": false,
+  "selectedCompleteDefectResolved": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterStagnationReset": false,
+  "gates": {
+    "appearance": {
+      "status": "REJECT_TWO_SCULPTS_INSUFFICIENT_COMPLETE_FACE_REALISM_GAIN",
+      "wholeCharacterScore": null,
+      "appearanceImprovementAdopted": false,
+      "observations": [
+        "A adds a small source-authored upper-lid depression, insufficient at full-head scale.",
+        "B adds opposing roll/crease/pretarsal volumes but complete face still looks artificial; not an adopted improvement.",
+        "Hair, skin, whole face and body quality remain unaccepted."
+      ],
+      "evidence": "r0085-complete-character-comparison.png",
+      "secondLightAndBroadExpansionStoppedAfterRejection": true
+    },
+    "function": {
+      "status": "PASS_MINIMUM_SAVED_SCULPT_AND_EXACT_NEUTRAL_REVERSAL_ONLY",
+      "evidence": [
+        "minimum-source-readback.json",
+        "actual-visible-sculpt-response.json"
+      ],
+      "actualEvaluatedSkinMaximumCorrespondingVertexDisplacementM": {
+        "a": 0.0005879451377458639,
+        "b": 0.0010462177607625373
+      },
+      "allOriginalDataKeysUVWeightsDriversMaterialsLightsPreserved": true,
+      "actualOpticalComponentAndHairFacialFibreGeometryNeutralUnchanged": true,
+      "newFullyQualifiedCompleteCapability": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_CHANGED_EYELID_SKIN_NO_NEW_OPTICAL_SELF_OR_CONTINUOUS_CLEARANCE",
+      "globalSignedMinimumM": null,
+      "nativeNonSkinBoundaryHeldInBNotAnEvaluatedMarginCertificate": true,
+      "subdivisionAffectedHaloRecorded": "actual-visible-sculpt-response.json",
+      "oldScopedOcularPassNotInheritedByChangedLidSkin": true,
+      "existingHairBodyContactAndNaturalDynamicsUnaccepted": true
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "engineImportCpuGpuMemoryLODUnaccepted": true
+    }
+  },
+  "bInitialSupportGuard": "Original guide-arch polynomial extended beyond anatomical upper-lid support and failed the1.455m native-Z guard before save. Fixed with explicit anatomical support band, original guard unchanged; not a weight scan or a third construction.",
+  "researchReuse": "CC0 native crease data and explicit native sculpture/neutral reversal evidence only. No adopted eye fold or new complete capability.",
+  "nextAction": "Keep exact registered r76 complete body/oral work and separately unaccepted r81B curly-groom research. R85 source crease endpoint and anatomically layered fold sculpt both change actual displayed skin but do not sufficiently improve complete-face realism; stop further crease-depth/roll/profile/weight variants as a realism cure. Do not blame an unconnected shape key: actual visible movement is0.588mm/1.046mm and disabling each new key exactly restores the complete neutral baseline. Next inspect the existing complete eye construction as one coherent structural task, rather than another local face bump: four visible eye components are left/right outer-shell approximations and left/right combined iris-pupil surfaces. Their source material explicitly remains a one-interface sclera/cornea approximation. Verify actual corneal shape/iris depth/source alpha/margins and current layering before choosing one source-corresponding separate cornea/sclera/iris-pupil assembly or repairing an existing correct layer; do not duplicate coincident surfaces or assume a component name proves missing geometry. Use existing data and a bounded cross-section/reference check within10minutes, then produce one complete head/body eye-assembly preview before broad checks. A crease is an identity choice, not a universal requirement for a human eyelid; do not equate monolids with artificial anatomy. Preserve actual lid/cavity support, UV/native correspondence, eye/head controls, mouth, hair, skin/light and rollback; newly changed optical/lid interfaces require their own finite contact and operation evidence. No more stopped hair/skin material or cheek/jaw/crease parameter scans. All natural hair/cloth dynamics, hair coverage/body/self/root/continuous contacts, anatomy/layers/actions and actual Aevrynd runtime/LOD/performance remain required. No score or stagnation reset for these local sculptures."
+}

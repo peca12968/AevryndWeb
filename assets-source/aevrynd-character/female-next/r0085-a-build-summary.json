@@ -1,0 +1,49 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend",
+  "sourceSha256": "dfcc38df12c6bd93c9659b90f8b665e973b7a90f3828b134297bd6f2365898c0",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0085-a-native-upper-lid-fold-study.blend",
+  "outputSha256": "778aaa3f60e871e81575c63ca69d50a9fdfc269b280c83754273f6298e4650e8",
+  "outputBytes": 80229021,
+  "nativeSculptSource": "D:\\Download\\Aevrynd\\Reference\\character\\charmorph-vitruvian-cc0\\r0085-orbital-fold\\Eyes_EyelidsCrease.npz",
+  "nativeSculptSha256": "4e062e7b37cd4da4c1ca438b21cdeda2480ab0914ea0036011d0af8fa25aacb5",
+  "authorEndpointNotWeightSweep": 1,
+  "preflight": [
+    {
+      "object": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "affectedNativeVertices": 0
+    },
+    {
+      "object": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "affectedNativeVertices": 0
+    },
+    {
+      "object": "AFN60_L_IRIS_PUPIL_SURFACE",
+      "affectedNativeVertices": 0
+    },
+    {
+      "object": "AFN60_R_IRIS_PUPIL_SURFACE",
+      "affectedNativeVertices": 0
+    },
+    {
+      "object": "AFN60_BODY_ORAL_AND_OCULAR_LINING",
+      "affectedNativeVertices": 108
+    }
+  ],
+  "changes": [
+    {
+      "object": "AFN60_BODY_ORAL_AND_OCULAR_LINING",
+      "shapeKey": "AFN85_CC0_UPPER_LID_CREASE",
+      "value": 1,
+      "affectedNativeVertices": 108,
+      "incidentMaterialRoles": [
+        "AFN57_CANONICAL_SKIN"
+      ],
+      "maximumNativeDeltaM": 0.0007112855671864533
+    }
+  ],
+  "neutralHairMaximumWorldChangeM": 0.0,
+  "originalMaterialsLightsRigAndExistingShapeKeysPreserved": true,
+  "noEyeOrMouthComponentAuthoredDelta": true,
+  "secondsBeforePreview": 8.214648962020874,
+  "affectedContactBlinkOrFullCharacterAcceptance": false
+}

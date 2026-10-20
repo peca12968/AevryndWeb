@@ -137,3 +137,9 @@ r0083-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at
 r0084-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 aevrynd-female-next-r0084* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 r0084-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+# Exact r85 rejected source/layered orbital-fold studies.
+r0085-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0085* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0085-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+source-inputs/r0085-orbital-fold/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+source-inputs/r0085-orbital-fold/config.yaml -text whitespace=-blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

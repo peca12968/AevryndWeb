@@ -1,0 +1,25 @@
+"""Second structural sculpt: crease valley with preseptal roll/pretarsal plane.
+Not an amplified source morph. Source crease positions define a guide arch;
+new opposing skin volumes are sculpted in native geometry, with margins held.
+"""
+from pathlib import Path
+import bpy,numpy as np,json,hashlib,importlib.util,time
+R=Path(r"D:/Download/Aevrynd");S=R/"engine/assets/characters/female-next/source";E=R/"Evidence/character-female-next/r0085-orbital-fold";SRC=S/"aevrynd-female-next-r0081-b-stable-frame-curly-study.blend";OUT=S/"aevrynd-female-next-r0085-b-pretarsal-fold-sculpt-study.blend"
+def module(n,f):
+ sp=importlib.util.spec_from_file_location(n,Path(__file__).with_name(f));m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);return m
+m=module("r85Bbasis","build-female-next-r0081-editable-curly.py");m.E=E;m.m.E=E;m.rig.E=E;m.rig.shade.g.E=E;v=module("r85Bview","render-female-next-r0081-retained-study.py");v.E=E
+
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def save(n,d):(E/n).write_text(json.dumps(d,indent=2)+"\n",encoding="utf-8")
+def smooth(a,b,x):
+ t=np.clip((x-a)/(b-a),0,1);return t*t*(3-2*t)
+def main():
+ tick=time.time();assert not OUT.exists() and sha(SRC)=="dfcc38df12c6bd93c9659b90f8b665e973b7a90f3828b134297bd6f2365898c0";bpy.ops.wm.open_mainfile(filepath=str(SRC));s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();q=m.q;body=bpy.data.objects["AFN60_BODY_ORAL_AND_OCULAR_LINING"];ids=q.arr(body.data.attributes["AFN60_NativeVertexID"].data,"value",len(body.data.vertices),dtype="i4");V=np.load(E/"baseline-native-world.npz")["world"];morph=np.load(R/"Reference/character/charmorph-vitruvian-cc0/r0085-orbital-fold/Eyes_EyelidsCrease.npz");path=V[morph["idx"]];weights=np.linalg.norm(morph["delta"],axis=1);coef=np.polyfit(abs(path[:,0]),path[:,2],2,w=weights);x=abs(V[:,0]);zc=np.polyval(coef,x);dz=V[:,2]-zc;mask=smooth(.013,.018,x)*(1-smooth(.041,.048,x))*smooth(-.134,-.126,V[:,1])*(1-smooth(-.111,-.103,V[:,1]))*smooth(-.007,-.0045,dz)*(1-smooth(.006,.010,dz));dy=mask*(.0012*np.exp(-(dz/.0012)**2)-.0013*np.exp(-((dz-.0033)/.0021)**2)-.00055*np.exp(-((dz+.003)/.0018)**2));ddWorld=np.zeros_like(V);ddWorld[:,1]=dy;ddWorld[:,2]=-.0004*mask*np.exp(-((dz-.002)/.0025)**2)
+ # Hold vertices touching any non-skin anatomical role; no wet margin reshaping.
+ eligible=np.zeros(len(V),bool);blocked=np.zeros(len(V),bool)
+ for f in body.data.polygons:
+  target=eligible if body.data.materials[f.material_index].name=="AFN57_CANONICAL_SKIN" else blocked;target[ids[list(f.vertices)]]=True
+ ddWorld*= (smooth(1.456,1.459,V[:,2])*(1-smooth(1.479,1.482,V[:,2])))[:,None];ddWorld[~eligible|blocked]=0;ddWorld[np.linalg.norm(ddWorld,axis=1)<1e-8]=0;active=np.linalg.norm(ddWorld,axis=1)>0;save("b-anatomical-support-guard.json",{"activeVertices":int(active.sum()),"maximumWorldMoveM":float(np.linalg.norm(ddWorld,axis=1).max()),"minimumAffectedZ":float(V[active,2].min()),"guardMinimumZ":1.455,"guideExtrapolationConfinedToAnatomicalLidBand":[1.456,1.482],"originalOutOfRegionAttemptRejectedBeforeSave":True,"originalGuardNotRelaxed":True});assert active.sum()>50 and np.linalg.norm(ddWorld,axis=1).max()<.002;assert V[active,2].min()>1.455;A=np.array(body.matrix_world);delta=ddWorld@np.linalg.inv(A[:3,:3]).T;basis=np.array([p.co[:] for p in body.data.shape_keys.key_blocks[0].data]);key=body.shape_key_add(name="AFN85_PRETARSAL_FOLD_SCULPT",from_mix=False);key.relative_key=body.data.shape_keys.key_blocks[0];key.data.foreach_set("co",(basis+delta[ids]).astype("f4").ravel());key.slider_min=0;key.slider_max=1;key.value=1;bpy.context.view_layer.update();s["AFN85_scope"]="Anatomically layered orbital fold sculpt from source crease guide arch, not a scaled morph. Opposing crease/preseptal/pretarsal volumes, non-skin margin vertices held. Static appearance/contact/blink/runtime unaccepted until checked.";m.rig.shade.settings();s.render.hair_subdiv=3;m.rig.k.b.camera("face");s.camera.data.lens=85;bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(OUT),compress=True);np.savez_compressed(E/"b-native-fold-delta.npz",delta=delta,worldDelta=ddWorld,creaseArchPolynomial=coef);save("b-build-summary.json",{"source":str(SRC),"sourceSha256":sha(SRC),"output":str(OUT),"outputSha256":sha(OUT),"outputBytes":OUT.stat().st_size,"shapeKey":key.name,"sculptValue":1,"affectedNativeVertices":int(active.sum()),"maximumSculptWorldDeltaM":float(np.linalg.norm(ddWorld,axis=1).max()),"affectedWorldBoundsM":[V[active].min(0).tolist(),V[active].max(0).tolist()],"creaseArchPolynomial":coef.tolist(),"nonSkinBoundaryVerticesHeld":True,"opposingRollCreasePlateConstructionNotScaledSourceDelta":True,"secondsBeforePreview":time.time()-tick,"affectedContactBlinkOrFullCharacterAcceptance":False});rows=[]
+ for view in ("face","body-face","profile","oblique"):rows.append(v.image("b-sculpt",view));save("b-pilot-controls.json",rows)
+ print("R85_LAYERED_FOLD_SCULPT_PILOT_DONE",time.time()-tick,flush=True)
+if __name__=="__main__":main()

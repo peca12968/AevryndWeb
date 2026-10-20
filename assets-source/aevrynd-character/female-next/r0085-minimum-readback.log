@@ -1,0 +1,9 @@
+00:01.484  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0085-studies.py:10: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();refs={t:json.loads((E/(t+"-build-summary.json")).read_text()) for t in "ab"};assert sha(Path(refs["a"]["source"]))==refs["a"]["sourceSha256"];bpy.ops.wm.open_mainfile(filepath=refs["a"]["source"]);bpy.context.scene.frame_set(1);bpy.context.view_layer.update();q=m.q;names=m.rig.native_names();sig={n:v.signature(bpy.data.objects[n]) for n in names};base={n:m.rig.k.mesh(bpy.data.objects[n])["V"].copy() for n in names};skinName="AFN74_SKIN_AND_EXISTING_OCULAR_LINING";base[skinName]=m.rig.k.mesh(bpy.data.objects[skinName])["V"].copy();hairNames=("AFN81_EDITABLE_CURLY_GUIDES","AFN57_NATIVE_BROWS","AFN57_NATIVE_LASHES");hair={n:q.hair(bpy.data.objects[n]).copy() for n in hairNames};mats={mat.name:m.rig.k.f.v.v32.material_signature(mat) for mat in bpy.data.materials if mat.use_nodes};lights=m.m.q.lights();out=[]
+00:07.437  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0085-a-native-upper-lid-fold-study.blend"
+00:18.453  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0085-b-pretarsal-fold-sculpt-study.blend"
+R85_MINIMUM_REJECTED_SCULPT_READBACK_DONE 26.138705730438232
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
