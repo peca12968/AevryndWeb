@@ -1,0 +1,25 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0060-b-limit-surface-assembly-study.blend",
+  "sourceSha256": "3324231ec149a138a9de72c19a38ab7e46165e7ccde872f9e130a5b6abf56d9d",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend",
+  "outputSha256": "4d0e3f67735ae68c5c1fa3c933f7cabb03cb547928e778f7067a8e699620b708",
+  "changes": [
+    {
+      "sourceMaterial": "AFN57_CANONICAL_IRIS",
+      "candidateMaterial": "AFN65_IMMERSED_IRIS_DIFFUSE_APPROX",
+      "input": "Specular IOR Level",
+      "before": 0.5,
+      "after": 0.0
+    },
+    {
+      "sourceMaterial": "AFN57_CANONICAL_PUPIL",
+      "candidateMaterial": "AFN65_ABSORBING_PUPIL_APPROX",
+      "input": "Specular IOR Level",
+      "before": 0.5,
+      "after": 0.0
+    }
+  ],
+  "scope": "Only two copied inner-eye materials assigned to two iris/pupil components; original materials and outer corneal layer retained. Geometry, UV, all texture files, skin, lights, exposure unchanged.",
+  "physicalEyeOrRuntimeAccepted": false,
+  "secondsBeforePreview": 0.8999865055084229
+}

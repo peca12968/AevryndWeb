@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "source": "aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend",
+  "sha256": "4d0e3f67735ae68c5c1fa3c933f7cabb03cb547928e778f7067a8e699620b708",
+  "role": "Offline complete candidate: r60 anatomy plus scoped visible r65 material correction, not formal accepted character",
+  "baselineSource": "aevrynd-female-next-r0060-b-limit-surface-assembly-study.blend",
+  "baselineSha256": "3324231ec149a138a9de72c19a38ab7e46165e7ccde872f9e130a5b6abf56d9d",
+  "materialChanges": [
+    {
+      "sourceMaterial": "AFN57_CANONICAL_IRIS",
+      "candidateMaterial": "AFN65_IMMERSED_IRIS_DIFFUSE_APPROX",
+      "input": "Specular IOR Level",
+      "before": 0.5,
+      "after": 0.0
+    },
+    {
+      "sourceMaterial": "AFN57_CANONICAL_PUPIL",
+      "candidateMaterial": "AFN65_ABSORBING_PUPIL_APPROX",
+      "input": "Specular IOR Level",
+      "before": 0.5,
+      "after": 0.0
+    }
+  ],
+  "reconstructionScript": "build-female-next-r0065-inner-eye.py",
+  "referenceLearningOnly": {
+    "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/digital-humans?application_version=4.27",
+    "use": "Eye appearance depends jointly on geometry/UV and separating wet refractive outer surface from iris/pupil. General principle only; no sample assets/material/code or plugin copied. Our zero-inner-specular approximation is a hypothesis, not a validated optical model."
+  },
+  "geometryUVPigmentOuterCorneaUnchanged": true,
+  "oldSevenPoseContactScopeOnly": true,
+  "newNativeAnimationAuthored": false,
+  "fullOpticsOrRuntimeOrFemaleAccepted": false,
+  "nextAction": "Use the verified r65A complete woman as the next offline working source, retaining r60B anatomical baseline and r51fallback. First compare the actual full head/body again. Next choose the broader flat skin/face response as one visible production defect, tracing the source-authored CC0 Vitruvian skin roughness/height/material interpretation before changing values. Prefer restoring correct source data semantics/units to blind bump, roughness or exposure sweeps; preserve pigment and avoid global darkening. Produce one same-light complete-head/body A/B with second lighting and accept only actual visible benefit. Do not keep tweaking iris specular/glints, build another eye diagnostic chain or resume rejected r61–64 hair methods. After the next substantive face result, reassess full hairstyle authoring from the complete character. Full hair/follicle/self/continuous motion, all layers/anatomy/cloth/body rig/actions and actual Aevrynd import/material/LOD/performance gates remain required. No formal/site promotion or male work before female acceptance."
+}
