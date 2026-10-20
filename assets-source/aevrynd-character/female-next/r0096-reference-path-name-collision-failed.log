@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\repair-female-next-r0096-reference-paths.py", line 8, in <module>
+    assert not fixed.exists();rows=json.loads((E/'minimum-saved-readback.json').read_text('utf8'))['a']['externalTextures'];byName={Path(row['relative']).name:row for row in rows};assert len(byName)==15
+                                                                                                                                                                                           ^^^^^^^^^^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

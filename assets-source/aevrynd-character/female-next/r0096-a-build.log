@@ -1,0 +1,11 @@
+00:03.094  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0094-b-source-width-growth-volume.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0096-artist-bob.py:19: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  bpy.ops.wm.open_mainfile(filepath=str(SRC));s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();body=bpy.data.objects['AFN60_BODY_ORAL_AND_OCULAR_LINING'];A=np.array(body.matrix_world);target=np.empty_like(native);present=np.zeros(len(native),'i4');stage=m.rig.k.f.v.stage();mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes}
+00:59.594  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0096-artist-bob-foundation\matched-a-artist-Bob-face.png'
+01:15.391  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0096-artist-bob-foundation\matched-a-artist-Bob-back.png'
+01:26.547  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0096-artist-bob-foundation\matched-a-artist-Bob-body-face.png'
+資訊: 已儲存為「aevrynd-female-next-r0096-a-artist-Bob-foundation.blend」
+R96_COMPLETE_ARTIST_BOB_PREVIEW_DONE 87.44789505004883
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

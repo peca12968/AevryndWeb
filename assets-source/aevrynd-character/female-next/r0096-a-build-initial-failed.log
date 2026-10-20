@@ -1,0 +1,12 @@
+00:02.953  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0094-b-source-width-growth-volume.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0096-artist-bob.py", line 42, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0096-artist-bob.py", line 19, in main
+    bpy.ops.wm.open_mainfile(filepath=str(SRC));s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();body=bpy.data.objects['AFN60_BODY_ORAL_AND_OCULAR_LINING'];A=np.array(body.matrix_world);target=np.empty_like(native);present=np.zeros(len(native),'i4');stage=m.m.rig.k.f.v.stage();mats={x.name:m.m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes}
+                                                                                                                                                                                                                                                                                  ^^^^^^^
+AttributeError: module 'curly81render' has no attribute 'rig'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

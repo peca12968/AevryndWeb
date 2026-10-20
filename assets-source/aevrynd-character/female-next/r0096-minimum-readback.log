@@ -1,0 +1,19 @@
+00:02.484  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0094-b-source-width-growth-volume.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0096-saved.py:15: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();h.open_file(S/'aevrynd-female-next-r0094-b-source-width-growth-volume.blend');names=m.rig.native_names()+['AFN59_LASHES_NATIVE_POINT_POSES'];sig={n:h.native.signature(bpy.data.objects[n]) for n in names};rig=h.rig_signature();lights=m.m.q.lights();mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes and (x.users or x.use_fake_user)};face={n:q.hair(bpy.data.objects[n]).copy() for n in ['AFN57_NATIVE_BROWS','AFN57_NATIVE_LASHES']};caps={n:h.helpers.cap_signature(bpy.data.objects[n]) for n in ['AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID','AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE']};oldHair=h.helpers.hair_signature(bpy.data.objects['AFN94_SOURCE_WIDTH_RENDER_FIBRES']);body=m.rig.k.mesh(bpy.data.objects['AFN60_BODY_ORAL_AND_OCULAR_LINING']);V,T=body['V'],body['T'];edges=np.sort(np.concatenate([T[:,[0,1]],T[:,[1,2]],T[:,[2,0]]]),axis=1);_,inc=np.unique(edges[:,0].astype('u8')*len(V)+edges[:,1],return_counts=True);closed=bool(np.all(inc==2));tree=BVHTree.FromPolygons(V.tolist(),T.tolist(),all_triangles=True);skin=m.rig.k.mesh(bpy.data.objects['AFN74_SKIN_AND_EXISTING_OCULAR_LINING']);st=BVHTree.FromPolygons(skin['V'].tolist(),skin['T'].tolist(),all_triangles=True)
+00:19.828  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0096-a-artist-Bob-foundation.blend"
+R96_INDEPENDENT_SAVED_DONE 0.0 0.0 8 33.346062660217285
+00:35.828  blend            | Read blend: "D:\Download\Aevrynd\Evidence\character-female-next\r0096-artist-bob-foundation\original-canonical-Bob-reference.blend"
+00:46.297  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0096-reference-original-Bob.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0096-saved.py", line 45, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+資訊: 已儲存為「aevrynd-female-next-r0096-reference-original-Bob.blend」
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0096-saved.py", line 43, in main
+    if im.source=='FILE' and not im.packed_file:assert Path(bpy.path.abspath(im.filepath)).is_file()
+                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

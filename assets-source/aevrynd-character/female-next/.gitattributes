@@ -196,3 +196,11 @@ r0095-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at
 aevrynd-female-next-r0095-a-authored-layered-guides.blend filter=lfs diff=lfs merge=lfs -text
 aevrynd-female-next-r0095-b-connected-posterior-guides.blend filter=lfs diff=lfs merge=lfs -text
 aevrynd-female-next-r0095-c-volumetric-director-locks.blend filter=lfs diff=lfs merge=lfs -text
+# Exact r96 complete woman and separately labelled source references.
+r0096-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0096* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0096-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+aevrynd-female-next-r0096-a-artist-Bob-foundation.blend filter=lfs diff=lfs merge=lfs -text
+aevrynd-female-next-r0096-reference-original-Bob.blend filter=lfs diff=lfs merge=lfs -text
+aevrynd-female-next-r0096-reference-original-Bob-portable.blend filter=lfs diff=lfs merge=lfs -text
+r0096-original-canonical-Bob-reference.blend filter=lfs diff=lfs merge=lfs -text

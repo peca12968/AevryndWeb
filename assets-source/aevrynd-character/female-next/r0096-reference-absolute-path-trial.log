@@ -1,0 +1,11 @@
+00:00.328  blend            | Read blend: "D:\Download\Aevrynd\Evidence\character-female-next\r0096-artist-bob-foundation\original-canonical-Bob-reference.blend"
+00:04.078  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0096-reference-original-Bob-portable.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\repair-female-next-r0096-reference-paths.py", line 15, in <module>
+    if im.source=='FILE' and not im.packed_file:assert im.filepath.startswith('//') and sha(Path(bpy.path.abspath(im.filepath)))==byAbsolute[Path(bpy.path.abspath(im.filepath)).resolve()]['sha256']
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+資訊: 已儲存為「aevrynd-female-next-r0096-reference-original-Bob-portable.blend」
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

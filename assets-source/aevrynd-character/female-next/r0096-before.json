@@ -1,0 +1,1225 @@
+{
+  "startedUTC": "2026-10-20T20:23:25Z",
+  "supportDeadlineUTC": "2026-10-20T20:33:25Z",
+  "firstCompletePreviewDeadlineUTC": "2026-10-20T20:53:25Z",
+  "resourceCheckpointUTC": "2026-10-20T21:08:25Z",
+  "previousGoalTurnClassification": "progress: project execution prompt v29 updated and exactly pushed; prompt maintenance only, no model/score/counter/adoption change.",
+  "previousGoalTurnWasNotProduction": true,
+  "baseCommit": "65f1a9b452ab516a8746f5a19a7dbaff6935312c",
+  "manifestSha256": "a715894fe7333e78544e4ee16bafa231ebb4c86e182a5c2ce9034e0170a1dc15",
+  "protectedDirtyFiles": {
+    "package.json": "85f1613c18e4c6c4624c743ea7fd18920292e944c8af69ff82d20f924f7a40de",
+    "public/assets/character-female-refined.glb": "cef44b6a11b59f6820fec8d221316d8acc481b809708b0aab38e7bfd427fbafe",
+    "public/character-editor.js": "33427ba3d93c6c79342282139c08180488d42ac540756b40873ae31957368cf6",
+    "public/index.html": "4916a587f690925862b30b8c14c926173ed6cde1b7a63566a663737e4281ac02",
+    "scripts/character-contact.py": "ccc52e7d8640a67cf7439a7a22d0be414ca7329d1b5d9742554c715e316ecbb0",
+    "scripts/refine-female.py": "25f30c6b300bcda6e1e6cab6ce6d454f59603c31a104505a6ca4ef8a0f7fe441",
+    "src/character-contact.js": "da68c95736cc4a7970b3b93be9bfb23aa67596aa73a7f50c1d06b87f941516fb",
+    "src/character-editor.js": "e2573f9bc95cbff140f8b81250d5a4dfa5fca44e060babe6326e62c33ca828f1",
+    "src/character-materials.js": "2b389e91bbb6e33a33ff31d2d08c9fd28c4feae03ac45d543ccdd44c098bd6e8"
+  },
+  "trackedStatus": " M package.json\n M public/assets/character-female-refined.glb\n M public/character-editor.js\n M public/index.html\n M scripts/character-contact.py\n M scripts/refine-female.py\n M src/character-contact.js\n M src/character-editor.js\n M src/character-materials.js\n",
+  "pendingIndexBefore": "",
+  "sourceInventory": [
+    {
+      "path": "aevrynd-female-next-r0001-baseline.blend",
+      "size": 10208611,
+      "mtimeNs": 1792337515796249000
+    },
+    {
+      "path": "aevrynd-female-next-r0003-a-contact-study.blend",
+      "size": 12219796,
+      "mtimeNs": 1792338591513817400
+    },
+    {
+      "path": "aevrynd-female-next-r0003-b-relaxed-study.blend",
+      "size": 12221694,
+      "mtimeNs": 1792338608965580800
+    },
+    {
+      "path": "aevrynd-female-next-r0003-c-parted-study.blend",
+      "size": 12228537,
+      "mtimeNs": 1792338626001720600
+    },
+    {
+      "path": "aevrynd-female-next-r0004-a-soft-contact-study.blend",
+      "size": 12266435,
+      "mtimeNs": 1792339369272113300
+    },
+    {
+      "path": "aevrynd-female-next-r0004-b-relaxed-study.blend",
+      "size": 12266875,
+      "mtimeNs": 1792339377747681200
+    },
+    {
+      "path": "aevrynd-female-next-r0004-c-parted-study.blend",
+      "size": 12268703,
+      "mtimeNs": 1792339386121148100
+    },
+    {
+      "path": "aevrynd-female-next-r0005-native-source.blend",
+      "size": 2836335,
+      "mtimeNs": 1792339735953952400
+    },
+    {
+      "path": "aevrynd-female-next-r0006-a-recessed-study.blend",
+      "size": 3956960,
+      "mtimeNs": 1792340428685816200
+    },
+    {
+      "path": "aevrynd-female-next-r0006-b-balanced-study.blend",
+      "size": 3955382,
+      "mtimeNs": 1792340433808341800
+    },
+    {
+      "path": "aevrynd-female-next-r0006-c-full-study.blend",
+      "size": 3957285,
+      "mtimeNs": 1792340438919579900
+    },
+    {
+      "path": "aevrynd-female-next-r0007-a-tight-study.blend",
+      "size": 3954338,
+      "mtimeNs": 1792340910351860900
+    },
+    {
+      "path": "aevrynd-female-next-r0007-b-balanced-study.blend",
+      "size": 3955459,
+      "mtimeNs": 1792340922637413800
+    },
+    {
+      "path": "aevrynd-female-next-r0007-c-reserved-study.blend",
+      "size": 3955245,
+      "mtimeNs": 1792340934964077100
+    },
+    {
+      "path": "aevrynd-female-next-r0008-a-tight-study.blend",
+      "size": 15160097,
+      "mtimeNs": 1792341631005299700
+    },
+    {
+      "path": "aevrynd-female-next-r0008-b-balanced-study.blend",
+      "size": 15167393,
+      "mtimeNs": 1792341631634790800
+    },
+    {
+      "path": "aevrynd-female-next-r0008-c-reserved-study.blend",
+      "size": 15162800,
+      "mtimeNs": 1792341632229171700
+    },
+    {
+      "path": "aevrynd-female-next-r0009-a-slab-thickness-study.blend",
+      "size": 15161986,
+      "mtimeNs": 1792342847766533600
+    },
+    {
+      "path": "aevrynd-female-next-r0010-a-rim-lashes-study.blend",
+      "size": 15461702,
+      "mtimeNs": 1792343402648594200
+    },
+    {
+      "path": "aevrynd-female-next-r0010-b-organic-lashes-study.blend",
+      "size": 15461352,
+      "mtimeNs": 1792343480875735800
+    },
+    {
+      "path": "aevrynd-female-next-r0010-c-spaced-lashes-study.blend",
+      "size": 15461364,
+      "mtimeNs": 1792343733495136100
+    },
+    {
+      "path": "aevrynd-female-next-r0011-a-skin-brows-study.blend",
+      "size": 19811273,
+      "mtimeNs": 1792344631847042400
+    },
+    {
+      "path": "aevrynd-female-next-r0011-b-ridge-skin-brows-study.blend",
+      "size": 20270702,
+      "mtimeNs": 1792344723906313400
+    },
+    {
+      "path": "aevrynd-female-next-r0012-a-layered-hair-study.blend",
+      "size": 26030549,
+      "mtimeNs": 1792345891025847900
+    },
+    {
+      "path": "aevrynd-female-next-r0012-b-volume-hair-study.blend",
+      "size": 30986082,
+      "mtimeNs": 1792346212842228900
+    },
+    {
+      "path": "aevrynd-female-next-r0012-c-corrected-hair-study.blend",
+      "size": 31254632,
+      "mtimeNs": 1792346673154300900
+    },
+    {
+      "path": "aevrynd-female-next-r0013-a-envelope-guides.blend",
+      "size": 20602960,
+      "mtimeNs": 1792347683801507600
+    },
+    {
+      "path": "aevrynd-female-next-r0013-a-native-envelope-hair-study.blend",
+      "size": 40789917,
+      "mtimeNs": 1792347838090953400
+    },
+    {
+      "path": "aevrynd-female-next-r0013-b-envelope-guides.blend",
+      "size": 20573552,
+      "mtimeNs": 1792348046502810000
+    },
+    {
+      "path": "aevrynd-female-next-r0013-b-native-envelope-hair-study.blend",
+      "size": 40048212,
+      "mtimeNs": 1792348318058912900
+    },
+    {
+      "path": "aevrynd-female-next-r0013-b-safe-io-native-envelope-hair-study.blend",
+      "size": 40048932,
+      "mtimeNs": 1792348877030509000
+    },
+    {
+      "path": "aevrynd-female-next-r0013-c-huang-reference-front-view.blend",
+      "size": 40052753,
+      "mtimeNs": 1792348968177849000
+    },
+    {
+      "path": "aevrynd-female-next-r0013-c-huang-reference.blend",
+      "size": 40053428,
+      "mtimeNs": 1792348765852782500
+    },
+    {
+      "path": "aevrynd-female-next-r0014-a-scalp-flow-study.blend",
+      "size": 40309301,
+      "mtimeNs": 1792349601167497200
+    },
+    {
+      "path": "aevrynd-female-next-r0014-a-scalp-guides.blend",
+      "size": 40317528,
+      "mtimeNs": 1792349527674558600
+    },
+    {
+      "path": "aevrynd-female-next-r0014-b-huang-scalp-flow-reference.blend",
+      "size": 40314775,
+      "mtimeNs": 1792349911445949600
+    },
+    {
+      "path": "aevrynd-female-next-r0014-c-clump-volume-study.blend",
+      "size": 40306753,
+      "mtimeNs": 1792350092601584400
+    },
+    {
+      "path": "aevrynd-female-next-r0014-c-huang-clump-reference.blend",
+      "size": 40312969,
+      "mtimeNs": 1792350334471875100
+    },
+    {
+      "path": "aevrynd-female-next-r0014-c-review.blend",
+      "size": 40307847,
+      "mtimeNs": 1792350579994997900
+    },
+    {
+      "path": "aevrynd-female-next-r0015-c-wind-guide-motion-study.blend",
+      "size": 61111725,
+      "mtimeNs": 1792353291924582500
+    },
+    {
+      "path": "aevrynd-female-next-r0016-a-feathered-tips-study.blend",
+      "size": 39264983,
+      "mtimeNs": 1792354351987802000
+    },
+    {
+      "path": "aevrynd-female-next-r0016-b-continuous-tip-study.blend",
+      "size": 39067608,
+      "mtimeNs": 1792354463054071700
+    },
+    {
+      "path": "aevrynd-female-next-r0017-a-volume-locks-study.blend",
+      "size": 40303145,
+      "mtimeNs": 1792354854274843800
+    },
+    {
+      "path": "aevrynd-female-next-r0017-b-volume-locks-study.blend",
+      "size": 40308120,
+      "mtimeNs": 1792355152328986000
+    },
+    {
+      "path": "aevrynd-female-next-r0017-c-volume-locks-study.blend",
+      "size": 40308241,
+      "mtimeNs": 1792355350842751300
+    },
+    {
+      "path": "aevrynd-female-next-r0018-a-layered-brows-study.blend",
+      "size": 40821743,
+      "mtimeNs": 1792355942649666600
+    },
+    {
+      "path": "aevrynd-female-next-r0018-b-clean-layered-brows-study.blend",
+      "size": 40821383,
+      "mtimeNs": 1792356234149010200
+    },
+    {
+      "path": "aevrynd-female-next-r0018-c-triangulated-brows-study.blend",
+      "size": 41332519,
+      "mtimeNs": 1792356616954914500
+    },
+    {
+      "path": "aevrynd-female-next-r0019-a-native-blink-study.blend",
+      "size": 48676089,
+      "mtimeNs": 1792357591769556400
+    },
+    {
+      "path": "aevrynd-female-next-r0019-b-seam-blink-study.blend",
+      "size": 53417374,
+      "mtimeNs": 1792358232193925200
+    },
+    {
+      "path": "aevrynd-female-next-r0019-c-angular-blink-study.blend",
+      "size": 62556938,
+      "mtimeNs": 1792358509998319700
+    },
+    {
+      "path": "aevrynd-female-next-r0019-c-animated-diagnostic.blend",
+      "size": 62557504,
+      "mtimeNs": 1792358796540397300
+    },
+    {
+      "path": "aevrynd-female-next-r0020-a-animated-review.blend",
+      "size": 61738190,
+      "mtimeNs": 1792359510764689300
+    },
+    {
+      "path": "aevrynd-female-next-r0020-a-pinned-angular-blink-study.blend",
+      "size": 61736824,
+      "mtimeNs": 1792359209528584600
+    },
+    {
+      "path": "aevrynd-female-next-r0020-b-visible-rim-blink-study.blend",
+      "size": 61736729,
+      "mtimeNs": 1792359393952562400
+    },
+    {
+      "path": "aevrynd-female-next-r0021-a-root-transition-study.blend",
+      "size": 41333203,
+      "mtimeNs": 1792360031657256300
+    },
+    {
+      "path": "aevrynd-female-next-r0021-b-layered-boundary-study.blend",
+      "size": 41083777,
+      "mtimeNs": 1792360233146116000
+    },
+    {
+      "path": "aevrynd-female-next-r0022-a-guides.blend",
+      "size": 41584194,
+      "mtimeNs": 1792360915031799600
+    },
+    {
+      "path": "aevrynd-female-next-r0022-c-authoring-review.blend",
+      "size": 41642552,
+      "mtimeNs": 1792361261523164600
+    },
+    {
+      "path": "aevrynd-female-next-r0022-c-guides.blend",
+      "size": 41635950,
+      "mtimeNs": 1792361100451995400
+    },
+    {
+      "path": "aevrynd-female-next-r0023-a-neutral-mouth-study.blend",
+      "size": 45778866,
+      "mtimeNs": 1792361762086039200
+    },
+    {
+      "path": "aevrynd-female-next-r0023-b-neutral-review.blend",
+      "size": 41324448,
+      "mtimeNs": 1792362320769892100
+    },
+    {
+      "path": "aevrynd-female-next-r0023-b-rest-lip-field-study.blend",
+      "size": 45772810,
+      "mtimeNs": 1792362072786777000
+    },
+    {
+      "path": "aevrynd-female-next-r0024-b-oral-motion-review.blend",
+      "size": 48401743,
+      "mtimeNs": 1792364145506704500
+    },
+    {
+      "path": "aevrynd-female-next-r0024-b-oral-study.blend",
+      "size": 48401651,
+      "mtimeNs": 1792364134608116800
+    },
+    {
+      "path": "aevrynd-female-next-r0025-a-dental-contact-study.blend",
+      "size": 48389256,
+      "mtimeNs": 1792364983815065300
+    },
+    {
+      "path": "aevrynd-female-next-r0025-a-dental-motion-review.blend",
+      "size": 48389810,
+      "mtimeNs": 1792364993664817600
+    },
+    {
+      "path": "aevrynd-female-next-r0026-c-oral-interface-study.blend",
+      "size": 48406296,
+      "mtimeNs": 1792365930647228700
+    },
+    {
+      "path": "aevrynd-female-next-r0026-c-oral-motion-review.blend",
+      "size": 48407015,
+      "mtimeNs": 1792366239270173300
+    },
+    {
+      "path": "aevrynd-female-next-r0027-a-swept-fringe-study.blend",
+      "size": 41384191,
+      "mtimeNs": 1792366792752842000
+    },
+    {
+      "path": "aevrynd-female-next-r0027-b-swept-fringe-study.blend",
+      "size": 41381633,
+      "mtimeNs": 1792367131318009300
+    },
+    {
+      "path": "aevrynd-female-next-r0028-a-cc0-female-foundation.blend",
+      "size": 12624567,
+      "mtimeNs": 1792368434353937400
+    },
+    {
+      "path": "aevrynd-female-next-r0029-a-native-eye-interface.blend",
+      "size": 12623318,
+      "mtimeNs": 1792369165513947900
+    },
+    {
+      "path": "aevrynd-female-next-r0030-a-layered-eye-optics.blend",
+      "size": 13473930,
+      "mtimeNs": 1792369488682011900
+    },
+    {
+      "path": "aevrynd-female-next-r0030-b-linear-iris-optics.blend",
+      "size": 13731467,
+      "mtimeNs": 1792369597822589600
+    },
+    {
+      "path": "aevrynd-female-next-r0031-a-native-brows.blend",
+      "size": 15069197,
+      "mtimeNs": 1792370305115106400
+    },
+    {
+      "path": "aevrynd-female-next-r0031-b-convergent-brows.blend",
+      "size": 14465630,
+      "mtimeNs": 1792370643268698600
+    },
+    {
+      "path": "aevrynd-female-next-r0032-a-registered-skin.blend",
+      "size": 17671149,
+      "mtimeNs": 1792371310828500400
+    },
+    {
+      "path": "aevrynd-female-next-r0032-b-chart-registered-skin.blend",
+      "size": 17675038,
+      "mtimeNs": 1792371871075350400
+    },
+    {
+      "path": "aevrynd-female-next-r0033-a-parted-bob-guides.blend",
+      "size": 17753878,
+      "mtimeNs": 1792373225586633500
+    },
+    {
+      "path": "aevrynd-female-next-r0033-b-landmark-bob-guides.blend",
+      "size": 17753334,
+      "mtimeNs": 1792373303417453000
+    },
+    {
+      "path": "aevrynd-female-next-r0033-c-parted-bob-fibres.blend",
+      "size": 39703236,
+      "mtimeNs": 1792373631188610800
+    },
+    {
+      "path": "aevrynd-female-next-r0033-c-volume-bob-guides.blend",
+      "size": 17870388,
+      "mtimeNs": 1792373394093016300
+    },
+    {
+      "path": "aevrynd-female-next-r0034-a-independent-master-locks.blend",
+      "size": 17989289,
+      "mtimeNs": 1792374380094465600
+    },
+    {
+      "path": "aevrynd-female-next-r0034-b-independent-cage-locks.blend",
+      "size": 17989190,
+      "mtimeNs": 1792374512589297000
+    },
+    {
+      "path": "aevrynd-female-next-r0034-c-descending-cage-locks.blend",
+      "size": 17989123,
+      "mtimeNs": 1792374642975170600
+    },
+    {
+      "path": "aevrynd-female-next-r0034-c-fibres.blend",
+      "size": 39607663,
+      "mtimeNs": 1792375690403471900
+    },
+    {
+      "path": "aevrynd-female-next-r0034-c-preview-physical-width.blend",
+      "size": 20168702,
+      "mtimeNs": 1792375006788639000
+    },
+    {
+      "path": "aevrynd-female-next-r0034-c-preview.blend",
+      "size": 20168779,
+      "mtimeNs": 1792374852761963500
+    },
+    {
+      "path": "aevrynd-female-next-r0034-c-scattering-reference.blend",
+      "size": 39609970,
+      "mtimeNs": 1792375864579478300
+    },
+    {
+      "path": "aevrynd-female-next-r0034-p-physical-width-baseline.blend",
+      "size": 39703303,
+      "mtimeNs": 1792375725861744200
+    },
+    {
+      "path": "aevrynd-female-next-r0034-r33-scattering-reference.blend",
+      "size": 39710550,
+      "mtimeNs": 1792375829995774200
+    },
+    {
+      "path": "aevrynd-female-next-r0035-b-native-lid-rest.blend",
+      "size": 39703317,
+      "mtimeNs": 1792403218720679900
+    },
+    {
+      "path": "aevrynd-female-next-r0035-b-neutral-rest-review.blend",
+      "size": 39704536,
+      "mtimeNs": 1792403753264703800
+    },
+    {
+      "path": "aevrynd-female-next-r0036-a-artist-informed-brows.blend",
+      "size": 40174265,
+      "mtimeNs": 1792405380591423400
+    },
+    {
+      "path": "aevrynd-female-next-r0036-b-contact-refined-brows.blend",
+      "size": 40174430,
+      "mtimeNs": 1792405606580454400
+    },
+    {
+      "path": "aevrynd-female-next-r0036-p-silhouette-pilot.blend",
+      "size": 39924470,
+      "mtimeNs": 1792404987456200800
+    },
+    {
+      "path": "aevrynd-female-next-r0037-a-attached-eye-margin.blend",
+      "size": 41139809,
+      "mtimeNs": 1792406718091559100
+    },
+    {
+      "path": "aevrynd-female-next-r0037-b-retained-lash-eye-surface.blend",
+      "size": 42658368,
+      "mtimeNs": 1792407093243790400
+    },
+    {
+      "path": "aevrynd-female-next-r0037-c-anatomical-eye-review.blend",
+      "size": 44036883,
+      "mtimeNs": 1792408357109900000
+    },
+    {
+      "path": "aevrynd-female-next-r0037-c-exact-display-eye-margin.blend",
+      "size": 44044322,
+      "mtimeNs": 1792407922217299000
+    },
+    {
+      "path": "aevrynd-female-next-r0037-c-explicit-eye-margin.blend",
+      "size": 44044213,
+      "mtimeNs": 1792407578403815300
+    },
+    {
+      "path": "aevrynd-female-next-r0037-c-eye-margin-review.blend",
+      "size": 44037135,
+      "mtimeNs": 1792407713300971900
+    },
+    {
+      "path": "aevrynd-female-next-r0037-c-final-contact-review.blend",
+      "size": 44037202,
+      "mtimeNs": 1792408190346043600
+    },
+    {
+      "path": "aevrynd-female-next-r0037-c-final-eye-margin-review.blend",
+      "size": 44037217,
+      "mtimeNs": 1792408026200114500
+    },
+    {
+      "path": "aevrynd-female-next-r0038-a-root-volume-flow.blend",
+      "size": 66405095,
+      "mtimeNs": 1792409432472875000
+    },
+    {
+      "path": "aevrynd-female-next-r0038-b-live-groom-authoring.blend",
+      "size": 44644223,
+      "mtimeNs": 1792410006371513400
+    },
+    {
+      "path": "aevrynd-female-next-r0038-c-regional-guide-sculpt.blend",
+      "size": 44992534,
+      "mtimeNs": 1792410335196611500
+    },
+    {
+      "path": "aevrynd-female-next-r0039-a-complete-guide-paths.blend",
+      "size": 44997091,
+      "mtimeNs": 1792411153643344100
+    },
+    {
+      "path": "aevrynd-female-next-r0039-b-patch-local-locks.blend",
+      "size": 44997201,
+      "mtimeNs": 1792411549554757100
+    },
+    {
+      "path": "aevrynd-female-next-r0042-a-jittered-hair-shadows.blend",
+      "size": 44644387,
+      "mtimeNs": 1792417365777366900
+    },
+    {
+      "path": "aevrynd-female-next-r0042-b-shadow-quality-review.blend",
+      "size": 44644383,
+      "mtimeNs": 1792417516567118300
+    },
+    {
+      "path": "aevrynd-female-next-r0043-a-lid-apposition.blend",
+      "size": 95382101,
+      "mtimeNs": 1792419258703622900
+    },
+    {
+      "path": "aevrynd-female-next-r0043-b-consistent-ocular-junction.blend",
+      "size": 95387340,
+      "mtimeNs": 1792419934078434300
+    },
+    {
+      "path": "aevrynd-female-next-r0044-c-rejected-native-lid-shapes.blend",
+      "size": 44773183,
+      "mtimeNs": 1792421807995897500
+    },
+    {
+      "path": "aevrynd-female-next-r0045-rejected-closed-structure-studies.blend",
+      "size": 46093439,
+      "mtimeNs": 1792423343786966800
+    },
+    {
+      "path": "aevrynd-female-next-r0046-a-textured-short-crop.blend",
+      "size": 44741922,
+      "mtimeNs": 1792423817107427600
+    },
+    {
+      "path": "aevrynd-female-next-r0046-b-explicit-tuft-crop.blend",
+      "size": 44763948,
+      "mtimeNs": 1792423985253962600
+    },
+    {
+      "path": "aevrynd-female-next-r0047-a-cc0-authored-bob-fit.blend",
+      "size": 48083352,
+      "mtimeNs": 1792426017697099000
+    },
+    {
+      "path": "aevrynd-female-next-r0047-b-authored-rail-pilot.blend",
+      "size": 48187062,
+      "mtimeNs": 1792426168032720700
+    },
+    {
+      "path": "aevrynd-female-next-r0048-a-anatomical-guide-pilot.blend",
+      "size": 46089774,
+      "mtimeNs": 1792426708711666400
+    },
+    {
+      "path": "aevrynd-female-next-r0048-anatomical-authoring-retained.blend",
+      "size": 45637759,
+      "mtimeNs": 1792427477552577300
+    },
+    {
+      "path": "aevrynd-female-next-r0048-c-control-spline-pilot.blend",
+      "size": 46088415,
+      "mtimeNs": 1792427057207643900
+    },
+    {
+      "path": "aevrynd-female-next-r0049-a-subsurface-skin-response.blend",
+      "size": 45638101,
+      "mtimeNs": 1792427833615615500
+    },
+    {
+      "path": "aevrynd-female-next-r0049-b-surface-relief.blend",
+      "size": 45642322,
+      "mtimeNs": 1792428017778662900
+    },
+    {
+      "path": "aevrynd-female-next-r0049-c-body-pigment.blend",
+      "size": 45665625,
+      "mtimeNs": 1792428334253784700
+    },
+    {
+      "path": "aevrynd-female-next-r0050-a-coupled-neutral-eye-rest.blend",
+      "size": 45676165,
+      "mtimeNs": 1792429812665546000
+    },
+    {
+      "path": "aevrynd-female-next-r0051-a-posterior-eye-wall.blend",
+      "size": 45637907,
+      "mtimeNs": 1792431283071291000
+    },
+    {
+      "path": "aevrynd-female-next-r0051-b-integrated-eye-wall.blend",
+      "size": 45381223,
+      "mtimeNs": 1792431921290994800
+    },
+    {
+      "path": "aevrynd-female-next-r0051-b-rebased-eye-wall.blend",
+      "size": 45380661,
+      "mtimeNs": 1792431548988707500
+    },
+    {
+      "path": "aevrynd-female-next-r0052-a-native-combed-bob.blend",
+      "size": 45406232,
+      "mtimeNs": 1792432972461956500
+    },
+    {
+      "path": "aevrynd-female-next-r0052-b-effective-sectional-bob.blend",
+      "size": 45406810,
+      "mtimeNs": 1792434398954318300
+    },
+    {
+      "path": "aevrynd-female-next-r0052-b-native-sectional-bob.blend",
+      "size": 45407091,
+      "mtimeNs": 1792433731108593700
+    },
+    {
+      "path": "aevrynd-female-next-r0053-a-normal-grown-foundation.blend",
+      "size": 46736291,
+      "mtimeNs": 1792435735067950400
+    },
+    {
+      "path": "aevrynd-female-next-r0053-a-pulled-primary-groom.blend",
+      "size": 46674454,
+      "mtimeNs": 1792436232298771300
+    },
+    {
+      "path": "aevrynd-female-next-r0053-a-refined-scalp-normal-grown-foundation.blend",
+      "size": 46645864,
+      "mtimeNs": 1792435859642275800
+    },
+    {
+      "path": "aevrynd-female-next-r0053-authoring-retained.blend",
+      "size": 46673437,
+      "mtimeNs": 1792438340532448700
+    },
+    {
+      "path": "aevrynd-female-next-r0053-b-native-grown-primary-pilot.blend",
+      "size": 46661691,
+      "mtimeNs": 1792436387282124100
+    },
+    {
+      "path": "aevrynd-female-next-r0053-c-reparameterized-primary-groom.blend",
+      "size": 46673501,
+      "mtimeNs": 1792437971414871100
+    },
+    {
+      "path": "aevrynd-female-next-r0053-c-reparameterized-primary-pilot.blend",
+      "size": 46668261,
+      "mtimeNs": 1792436776595498000
+    },
+    {
+      "path": "aevrynd-female-next-r0054-a-clump-volume-blockout.blend",
+      "size": 46688789,
+      "mtimeNs": 1792439338268791800
+    },
+    {
+      "path": "aevrynd-female-next-r0054-b-edited-clump-volume.blend",
+      "size": 46688457,
+      "mtimeNs": 1792439587021601900
+    },
+    {
+      "path": "aevrynd-female-next-r0054-c-layered-volume-blockout.blend",
+      "size": 47353305,
+      "mtimeNs": 1792439842955417600
+    },
+    {
+      "path": "aevrynd-female-next-r0054-d-concept-volume-proxy.blend",
+      "size": 55059801,
+      "mtimeNs": 1792440430187282400
+    },
+    {
+      "path": "aevrynd-female-next-r0054-e-clean-concept-volume-proxy.blend",
+      "size": 53294453,
+      "mtimeNs": 1792440638101997700
+    },
+    {
+      "path": "aevrynd-female-next-r0055-a-authored-bob-registration.blend",
+      "size": 46704253,
+      "mtimeNs": 1792441092902496400
+    },
+    {
+      "path": "aevrynd-female-next-r0055-b-landmark-bob-registration.blend",
+      "size": 46704226,
+      "mtimeNs": 1792441221512376500
+    },
+    {
+      "path": "aevrynd-female-next-r0055-c-surface-deformed-bob-pilot.blend",
+      "size": 48312935,
+      "mtimeNs": 1792441332271926400
+    },
+    {
+      "path": "aevrynd-female-next-r0055-d-bound-contact-bob-pilot.blend",
+      "size": 46928620,
+      "mtimeNs": 1792441805876775800
+    },
+    {
+      "path": "aevrynd-female-next-r0056-a-recovered-native-comb.blend",
+      "size": 46743210,
+      "mtimeNs": 1792443072934630500
+    },
+    {
+      "path": "aevrynd-female-next-r0056-a-target-native-comb.blend",
+      "size": 46742929,
+      "mtimeNs": 1792443168706422700
+    },
+    {
+      "path": "aevrynd-female-next-r0056-b-pilot-target-native-comb.blend",
+      "size": 46677121,
+      "mtimeNs": 1792443287649406000
+    },
+    {
+      "path": "aevrynd-female-next-r0057-a-coherent-female-foundation.blend",
+      "size": 8228949,
+      "mtimeNs": 1792444173343965700
+    },
+    {
+      "path": "aevrynd-female-next-r0057-b-native-facial-hair-foundation.blend",
+      "size": 32291640,
+      "mtimeNs": 1792444594844041100
+    },
+    {
+      "path": "aevrynd-female-next-r0057-c-clean-native-foundation.blend",
+      "size": 5168885,
+      "mtimeNs": 1792444892322038900
+    },
+    {
+      "path": "aevrynd-female-next-r0057-d-portable-native-foundation.blend",
+      "size": 3843157,
+      "mtimeNs": 1792445542543902900
+    },
+    {
+      "path": "aevrynd-female-next-r0058-a-native-root-groom-study.blend",
+      "size": 3845859,
+      "mtimeNs": 1792446703833590300
+    },
+    {
+      "path": "aevrynd-female-next-r0059-a-authored-blink-study.blend",
+      "size": 9711357,
+      "mtimeNs": 1792447344019284000
+    },
+    {
+      "path": "aevrynd-female-next-r0060-a-cavity-assembly-study.blend",
+      "size": 12608168,
+      "mtimeNs": 1792448676718138100
+    },
+    {
+      "path": "aevrynd-female-next-r0060-b-limit-surface-assembly-study.blend",
+      "size": 12607667,
+      "mtimeNs": 1792449276959837300
+    },
+    {
+      "path": "aevrynd-female-next-r0061-a-guides-ponytail-study.blend",
+      "size": 13246002,
+      "mtimeNs": 1792450980533423100
+    },
+    {
+      "path": "aevrynd-female-next-r0061-b-fibres-ponytail-study.blend",
+      "size": 54536150,
+      "mtimeNs": 1792451309823108400
+    },
+    {
+      "path": "aevrynd-female-next-r0061-b-guides-ponytail-study.blend",
+      "size": 13239920,
+      "mtimeNs": 1792451150752723800
+    },
+    {
+      "path": "aevrynd-female-next-r0061-c-physical-ponytail-study.blend",
+      "size": 54797842,
+      "mtimeNs": 1792451765798997600
+    },
+    {
+      "path": "aevrynd-female-next-r0062-a-packed-bundle-study.blend",
+      "size": 12690048,
+      "mtimeNs": 1792452773902470800
+    },
+    {
+      "path": "aevrynd-female-next-r0063-a-side-part-crop-study.blend",
+      "size": 30887242,
+      "mtimeNs": 1792457261324548700
+    },
+    {
+      "path": "aevrynd-female-next-r0064-a-authored-ribbon-blockout.blend",
+      "size": 12735547,
+      "mtimeNs": 1792458055990937000
+    },
+    {
+      "path": "aevrynd-female-next-r0064-b-scalp-free-card-shape.blend",
+      "size": 13334469,
+      "mtimeNs": 1792458249576116000
+    },
+    {
+      "path": "aevrynd-female-next-r0064-c-textured-card-study.blend",
+      "size": 14620573,
+      "mtimeNs": 1792458481582308700
+    },
+    {
+      "path": "aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend",
+      "size": 12609907,
+      "mtimeNs": 1792459582003387300
+    },
+    {
+      "path": "aevrynd-female-next-r0066-a-source-skin-response-study.blend",
+      "size": 12616529,
+      "mtimeNs": 1792461394144328100
+    },
+    {
+      "path": "aevrynd-female-next-r0067-a-native-eve-study.blend",
+      "size": 16908117,
+      "mtimeNs": 1792462159988487300
+    },
+    {
+      "path": "aevrynd-female-next-r0067-b-source-radius-eve-study.blend",
+      "size": 16939624,
+      "mtimeNs": 1792462286439571700
+    },
+    {
+      "path": "aevrynd-female-next-r0068-a-guide-surface-study.blend",
+      "size": 70669848,
+      "mtimeNs": 1792464531441874600
+    },
+    {
+      "path": "aevrynd-female-next-r0068-b-surface-semantics-study.blend",
+      "size": 70667968,
+      "mtimeNs": 1792465640214961700
+    },
+    {
+      "path": "aevrynd-female-next-r0068-c-live-body-contact-study.blend",
+      "size": 42298206,
+      "mtimeNs": 1792466029419653800
+    },
+    {
+      "path": "aevrynd-female-next-r0069-a-complete-controls-study.blend",
+      "size": 49890747,
+      "mtimeNs": 1792468137444112200
+    },
+    {
+      "path": "aevrynd-female-next-r0070-a-native-flexible-trial.blend",
+      "size": 52036011,
+      "mtimeNs": 1792469984366344400
+    },
+    {
+      "path": "aevrynd-female-next-r0070-b-native-flexible-trial.blend",
+      "size": 52074842,
+      "mtimeNs": 1792470325545903300
+    },
+    {
+      "path": "aevrynd-female-next-r0070-c-native-flexible-trial.blend",
+      "size": 52073865,
+      "mtimeNs": 1792470608840558500
+    },
+    {
+      "path": "aevrynd-female-next-r0071-a-author-cycles-hair-study.blend",
+      "size": 49870536,
+      "mtimeNs": 1792472419830542600
+    },
+    {
+      "path": "aevrynd-female-next-r0071-b-bounded-pigment-hair-study.blend",
+      "size": 49960081,
+      "mtimeNs": 1792472531091542300
+    },
+    {
+      "path": "aevrynd-female-next-r0072-a-authored-cheek-jaw-study.blend",
+      "size": 50252008,
+      "mtimeNs": 1792473375659917900
+    },
+    {
+      "path": "aevrynd-female-next-r0073-a-complete-source-skin-study.blend",
+      "size": 50116955,
+      "mtimeNs": 1792474655115389200
+    },
+    {
+      "path": "aevrynd-female-next-r0073-b-original-4k-skin-study.blend",
+      "size": 50117858,
+      "mtimeNs": 1792476520464517400
+    },
+    {
+      "path": "aevrynd-female-next-r0074-a-layered-mouth-controls-study.blend",
+      "size": 49932688,
+      "mtimeNs": 1792478547571031600
+    },
+    {
+      "path": "aevrynd-female-next-r0074-a-native-mouth-controls-study.blend",
+      "size": 49929127,
+      "mtimeNs": 1792478317432155300
+    },
+    {
+      "path": "aevrynd-female-next-r0074-b-rigid-jaw-controls-study.blend",
+      "size": 51522196,
+      "mtimeNs": 1792478871302378500
+    },
+    {
+      "path": "aevrynd-female-next-r0074-c-rigid-dentition-controls-study.blend",
+      "size": 53117270,
+      "mtimeNs": 1792479171867322500
+    },
+    {
+      "path": "aevrynd-female-next-r0075-a-seated-occlusion-study.blend",
+      "size": 53621859,
+      "mtimeNs": 1792480987909534600
+    },
+    {
+      "path": "aevrynd-female-next-r0075-b-coordinated-arch-study.blend",
+      "size": 53553357,
+      "mtimeNs": 1792481396071633900
+    },
+    {
+      "path": "aevrynd-female-next-r0075-c-coordinated-oral-arc-study.blend",
+      "size": 53979373,
+      "mtimeNs": 1792481590323241600
+    },
+    {
+      "path": "aevrynd-female-next-r0076-a-proximal-crown-sculpt-study.blend",
+      "size": 53987121,
+      "mtimeNs": 1792483255655517400
+    },
+    {
+      "path": "aevrynd-female-next-r0077-a-guided-tip-groom-study.blend",
+      "size": 54108712,
+      "mtimeNs": 1792484495932733600
+    },
+    {
+      "path": "aevrynd-female-next-r0077-b-local-tip-comb-study.blend",
+      "size": 54110847,
+      "mtimeNs": 1792484640869160900
+    },
+    {
+      "path": "aevrynd-female-next-r0078-c-scalp-bound-locks-study.blend",
+      "size": 54080005,
+      "mtimeNs": 1792486452631787000
+    },
+    {
+      "path": "aevrynd-female-next-r0079-a-physical-filaments-study.blend",
+      "size": 66649698,
+      "mtimeNs": 1792487554577301000
+    },
+    {
+      "path": "aevrynd-female-next-r0079-b-optical-filaments-study.blend",
+      "size": 57788393,
+      "mtimeNs": 1792487917732179100
+    },
+    {
+      "path": "aevrynd-female-next-r0079-b-original-frame-filaments.blend",
+      "size": 60428900,
+      "mtimeNs": 1792489357299022500
+    },
+    {
+      "path": "aevrynd-female-next-r0079-b-source-material-control.blend",
+      "size": 58645527,
+      "mtimeNs": 1792488710131521000
+    },
+    {
+      "path": "aevrynd-female-next-r0079-c-microfacet-filaments-study.blend",
+      "size": 57788750,
+      "mtimeNs": 1792488413242447100
+    },
+    {
+      "path": "aevrynd-female-next-r0080-a-cone-offset-filaments.blend",
+      "size": 54928495,
+      "mtimeNs": 1792491209178558300
+    },
+    {
+      "path": "aevrynd-female-next-r0081-a-editable-curly-study.blend",
+      "size": 80074675,
+      "mtimeNs": 1792492083750646900
+    },
+    {
+      "path": "aevrynd-female-next-r0081-b-stable-frame-curly-study.blend",
+      "size": 80192833,
+      "mtimeNs": 1792492417686309100
+    },
+    {
+      "path": "aevrynd-female-next-r0082-c-bounded-scalp-displacement.blend",
+      "size": 80272357,
+      "mtimeNs": 1792494309115933800
+    },
+    {
+      "path": "aevrynd-female-next-r0083-a-regional-posterior-guide-sculpt.blend",
+      "size": 80177388,
+      "mtimeNs": 1792496487526930700
+    },
+    {
+      "path": "aevrynd-female-next-r0083-b-posterior-rooted-guide-group.blend",
+      "size": 80181747,
+      "mtimeNs": 1792496635413730400
+    },
+    {
+      "path": "aevrynd-female-next-r0083-c-cycles-hair-shader-route.blend",
+      "size": 80177874,
+      "mtimeNs": 1792496978129718700
+    },
+    {
+      "path": "aevrynd-female-next-r0084-a-physical-brown-hair-study.blend",
+      "size": 80180414,
+      "mtimeNs": 1792497592676876600
+    },
+    {
+      "path": "aevrynd-female-next-r0084-b-microfacet-brown-hair-study.blend",
+      "size": 56237469,
+      "mtimeNs": 1792497992265585400
+    },
+    {
+      "path": "aevrynd-female-next-r0084-c-live-tangent-dielectric-study.blend",
+      "size": 56238935,
+      "mtimeNs": 1792498161526269200
+    },
+    {
+      "path": "aevrynd-female-next-r0085-a-native-upper-lid-fold-study.blend",
+      "size": 80229021,
+      "mtimeNs": 1792499290239808300
+    },
+    {
+      "path": "aevrynd-female-next-r0085-b-pretarsal-fold-sculpt-study.blend",
+      "size": 80231390,
+      "mtimeNs": 1792499512450854100
+    },
+    {
+      "path": "aevrynd-female-next-r0086-a-source-corresponding-eye-layers.blend",
+      "size": 80167248,
+      "mtimeNs": 1792501104771080000
+    },
+    {
+      "path": "aevrynd-female-next-r0087-a-finite-optical-envelope.blend",
+      "size": 81986364,
+      "mtimeNs": 1792502614284592000
+    },
+    {
+      "path": "aevrynd-female-next-r0088-a-authored-lid-aperture.blend",
+      "size": 80485003,
+      "mtimeNs": 1792503293765089600
+    },
+    {
+      "path": "aevrynd-female-next-r0088-b-supported-lid-aperture.blend",
+      "size": 56733317,
+      "mtimeNs": 1792503625265902900
+    },
+    {
+      "path": "aevrynd-female-next-r0089-a-posterior-bundle-cages.blend",
+      "size": 57353205,
+      "mtimeNs": 1792505280219896200
+    },
+    {
+      "path": "aevrynd-female-next-r0089-b-parted-layered-bob.blend",
+      "size": 67870037,
+      "mtimeNs": 1792506623805104300
+    },
+    {
+      "path": "aevrynd-female-next-r0089-c-authored-braid-groom.blend",
+      "size": 82805159,
+      "mtimeNs": 1792506831907813300
+    },
+    {
+      "path": "aevrynd-female-next-r0090-a-intrinsic-guide-diagnostic.blend",
+      "size": 57412123,
+      "mtimeNs": 1792514169024959700
+    },
+    {
+      "path": "aevrynd-female-next-r0090-a-intrinsic-guide-pilot.blend",
+      "size": 57411607,
+      "mtimeNs": 1792514042768566100
+    },
+    {
+      "path": "aevrynd-female-next-r0090-b-rain-hair-shape-study.blend",
+      "size": 68156596,
+      "mtimeNs": 1792515034221953100
+    },
+    {
+      "path": "aevrynd-female-next-r0090-c-uv-flow-pilot.blend",
+      "size": 68430319,
+      "mtimeNs": 1792515478836516000
+    },
+    {
+      "path": "aevrynd-female-next-r0090-c-v-flow-pilot.blend",
+      "size": 68435533,
+      "mtimeNs": 1792515763860524400
+    },
+    {
+      "path": "aevrynd-female-next-r0091-a-section-loft-fibres.blend",
+      "size": 89911247,
+      "mtimeNs": 1792517469185716300
+    },
+    {
+      "path": "aevrynd-female-next-r0091-b-studio-guide-bob.blend",
+      "size": 78148844,
+      "mtimeNs": 1792517840729383200
+    },
+    {
+      "path": "aevrynd-female-next-r0092-a-native-Eve-groom.blend",
+      "size": 71677236,
+      "mtimeNs": 1792519527420148500
+    },
+    {
+      "path": "aevrynd-female-next-r0093-a-surface-bound-chain-pilot.blend",
+      "size": 71677515,
+      "mtimeNs": 1792522289396354700
+    },
+    {
+      "path": "aevrynd-female-next-r0093-b-active-contact-chain-pilot.blend",
+      "size": 71677894,
+      "mtimeNs": 1792522510867903900
+    },
+    {
+      "path": "aevrynd-female-next-r0094-a-semantic-growth-free-volume.blend",
+      "size": 85657232,
+      "mtimeNs": 1792523514921150900
+    },
+    {
+      "path": "aevrynd-female-next-r0094-b-source-width-growth-volume.blend",
+      "size": 85656218,
+      "mtimeNs": 1792523732651859100
+    },
+    {
+      "path": "aevrynd-female-next-r0094-c-native-emitter-guides.blend",
+      "size": 74636193,
+      "mtimeNs": 1792523894032924400
+    },
+    {
+      "path": "aevrynd-female-next-r0094-c-native-emitter-visible.blend",
+      "size": 74636163,
+      "mtimeNs": 1792523957856994700
+    },
+    {
+      "path": "aevrynd-female-next-r0095-a-authored-layered-guides.blend",
+      "size": 110212630,
+      "mtimeNs": 1792525096908429200
+    },
+    {
+      "path": "aevrynd-female-next-r0095-b-connected-posterior-guides.blend",
+      "size": 110189756,
+      "mtimeNs": 1792525391020920200
+    },
+    {
+      "path": "aevrynd-female-next-r0095-c-volumetric-director-locks.blend",
+      "size": 110224916,
+      "mtimeNs": 1792525701100035900
+    }
+  ],
+  "latestRegisteredRevision": "female-next-r0095",
+  "source": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0094-b-source-width-growth-volume.blend",
+    "sha256": "72380d7007379598372d501bdeca7c97e346f87fe59e2408cf4b9f06bf8790dd",
+    "bytes": 85656218,
+    "status": "RETAIN_CORRECT_WIDTH_REFERENCE_ONLY_COMPLETE_GROOM_UNACCEPTED",
+    "scope": "Verified source diameter/radius + close-tip import repair, source-author scalp native face domain and bounded barycentric roots on the same complete woman. Front coarse-strand reduction observed, crown coverage and body interior samples still fail; reference only, no complete-groom adoption."
+  },
+  "hypothesis": "Use the actual artist-authored Bob spatial guide construction, inspect its original complete shape before selecting it, then transfer whole curves via exact same-native body correspondence. No analyticS-curve families, per-root independent fitting, source-emitter vertex morph, density/radius/shader scans, or solver revival.",
+  "expectedArtChange": "Shorter independently authored bob silhouette should have controlled facial framing, a rounded posterior and layered ends instead of long wet sheet/cape. Actual source front/profile/back must support it.",
+  "maxMethods": 3,
+  "defaultCandidates": 1,
+  "liveJobsAtEntry": [],
+  "heavyThreads": 4,
+  "maximumNewNodeServers": 0
+}

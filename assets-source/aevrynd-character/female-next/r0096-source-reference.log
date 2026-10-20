@@ -1,0 +1,12 @@
+00:01.359  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0094-b-source-width-growth-volume.blend"
+D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0096-artist-bob.py:21: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mesh=o.data.copy();body=bpy.data.objects.new('AFN96_ORIGINAL_CANONICAL_BODY_REFERENCE_ONLY',mesh);s.collection.objects.link(body);body.matrix_world=A;mesh.materials.clear();mat=bpy.data.materials.new('AFN96_SOURCE_REFERENCE_CLAY');mat.diffuse_color=(.38,.38,.38,1);mat.use_nodes=True;bs=mat.node_tree.nodes.new('ShaderNodeBsdfPrincipled');out=mat.node_tree.nodes.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(bs.outputs['BSDF'],out.inputs['Surface']);bs.inputs['Base Color'].default_value=(.38,.38,.38,1);bs.inputs['Roughness'].default_value=.65;mesh.materials.append(mat)
+00:24.922  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0096-artist-bob-foundation\matched-source-canonical-Bob-face.png'
+00:41.906  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0096-artist-bob-foundation\matched-source-canonical-Bob-profile.png'
+00:55.703  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0096-artist-bob-foundation\matched-source-canonical-Bob-back.png'
+01:05.953  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0096-artist-bob-foundation\matched-source-canonical-Bob-body-face.png'
+資訊: 已儲存為「original-canonical-Bob-reference.blend」
+R96_ORIGINAL_BOB_REFERENCE_DONE 67.92749118804932
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
