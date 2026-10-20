@@ -1,0 +1,77 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0074-b-rigid-jaw-controls-study.blend",
+  "sourceSha256": "e1ca1343e2a630ced1d9bebb29f3b54a5afcfb1f12eb473035bfe8f454733d03",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0074-c-rigid-dentition-controls-study.blend",
+  "outputSha256": "19d5d5ed6ae55edcd625c5ce8f342029c53efacd4a2a964573e0dc1654778294",
+  "outputBytes": 53117270,
+  "method": "Both dental arches use actual rigid rest meshes. Lower uses source-fitted jaw arc; upper follows Head independently of soft gums.",
+  "rigidFit": {
+    "angleRadians": 0.4842001497745514,
+    "angleDegrees": 27.742625021684134,
+    "axis": [
+      0.9999998807907104,
+      5.464134389399078e-08,
+      2.2433010116174046e-08
+    ],
+    "pivotWorldM": [
+      -2.872161479118374e-08,
+      -0.05460761273146286,
+      1.4133388177082038
+    ],
+    "R": [
+      [
+        0.9999999999999998,
+        -4.161424922450991e-09,
+        2.8014307715871587e-08
+      ],
+      [
+        1.672373402400081e-08,
+        0.8850476055974327,
+        -0.46550052183241486
+      ],
+      [
+        -2.2856850493434473e-08,
+        0.46550052183241497,
+        0.8850476055974323
+      ]
+    ],
+    "translation": [
+      -3.977598875058156e-08,
+      0.6516326813330876,
+      0.1878865534201699
+    ],
+    "axialResidualM": [
+      4.496527605847008e-11,
+      -2.220446049250313e-16,
+      5.551115123125783e-17
+    ],
+    "rmsEndpointM": 1.3836693526982002e-05,
+    "maximumEndpointM": 6.191216992821901e-05
+  },
+  "correctionReason": "Independent B readback found22.008micrometre upper dental movement caused by subdividing connected soft gums, despite zero native upper-tooth offsets. Fixed construction, not relaxed checker.",
+  "neutralUpperMaximumWorldErrorM": 5.962001323175657e-08,
+  "upperDentalChecks": [
+    {
+      "frame": 7,
+      "maximumUpperDentalWorldDeltaM": 5.962001323175657e-08
+    },
+    {
+      "frame": 13,
+      "maximumUpperDentalWorldDeltaM": 5.962001323175657e-08
+    },
+    {
+      "frame": 31,
+      "maximumUpperDentalWorldDeltaM": 5.962001323175657e-08
+    },
+    {
+      "frame": 37,
+      "maximumUpperDentalWorldDeltaM": 5.962001323175657e-08
+    }
+  ],
+  "independentEditableDentalArchMeshes": 2,
+  "toothUVChartsPerArch": 16,
+  "softLayersStillSharedMaster": true,
+  "upperGumCavityCombined": true,
+  "contactNaturalDynamicsAndRuntimeAccepted": false,
+  "secondsBeforePilot": 25.04103684425354
+}

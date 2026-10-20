@@ -1,0 +1,16 @@
+00:00.625  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0069-a-complete-controls-study.blend"
+00:08.641  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0074-b-rigid-jaw-controls-study.blend"
+R74_VERIFY_FRAME 1 0.0
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0074-mouth-operation.py", line 61, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0074-mouth-operation.py", line 44, in main
+    upper_error=float(np.linalg.norm(upper-upper0,axis=1).max());assert upper_error<1e-6,upper_error
+                                                                        ^^^^^^^^^^^^^^^^
+AssertionError: 2.2007673364198298e-05
+
+Error: script failed, file: 'scripts\character-next\verify-female-next-r0074-mouth-operation.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

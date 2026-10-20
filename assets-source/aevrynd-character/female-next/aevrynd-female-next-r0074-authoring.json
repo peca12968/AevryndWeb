@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0074-c-rigid-dentition-controls-study.blend",
+  "sha256": "19d5d5ed6ae55edcd625c5ce8f342029c53efacd4a2a964573e0dc1654778294",
+  "prototypeSources": {
+    "native": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0074-a-native-mouth-controls-study.blend",
+      "sha256": "c5db287fc8e50307f1e25266503b4b23e7b07d11e2585cb63a3ba7479e25e5cc",
+      "bytes": 49929127,
+      "role": "SUPERSEDED_TECHNICAL_SOURCE_NOT_ADOPTED"
+    },
+    "layeredNative": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0074-a-layered-mouth-controls-study.blend",
+      "sha256": "658d82e5b201eaf36bedb533448bf0f035adaa1236ef82b313e66958ad559da6",
+      "bytes": 49932688,
+      "role": "SUPERSEDED_TECHNICAL_SOURCE_NOT_ADOPTED"
+    },
+    "lowerRigidIntermediate": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0074-b-rigid-jaw-controls-study.blend",
+      "sha256": "e1ca1343e2a630ced1d9bebb29f3b54a5afcfb1f12eb473035bfe8f454733d03",
+      "bytes": 51522196,
+      "role": "SUPERSEDED_TECHNICAL_SOURCE_NOT_ADOPTED"
+    },
+    "rigidDentition": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0074-c-rigid-dentition-controls-study.blend",
+      "sha256": "19d5d5ed6ae55edcd625c5ce8f342029c53efacd4a2a964573e0dc1654778294",
+      "bytes": 53117270,
+      "role": "COMPLETE_WORK_AUTHORING_PROTOTYPE_CONTACT_FAILED"
+    }
+  },
+  "decision": "RETAIN_COMPLETE_ORAL_AUTHORING_PROTOTYPE_LOCAL_FUNCTION_VERIFIED_CONTACT_FAILED",
+  "sourceNotice": "aevrynd-female-next-r0074.LICENSE-SOURCE.txt",
+  "controlObject": "AFN74_ORAL_CONTROLS",
+  "property": "jaw_open",
+  "range": [
+    0,
+    1
+  ],
+  "timelineFrames": [
+    1,
+    13,
+    25,
+    37
+  ],
+  "fps": 24,
+  "layering": "Two independently editable dental arches plus generated soft display layers from a shared native cage; upper gum/cavity combined.",
+  "gates": {
+    "appearance": {
+      "status": "NEUTRAL_COMPLETE_CHARACTER_PRESERVED_NO_NEW_REALISM_SCORE",
+      "wholeCharacterScore": null,
+      "evidence": [
+        "r0074-complete-mouth-operation.png",
+        "c-operation-profile.png",
+        "c-operation-alternate-oblique.png",
+        "r0074-actual-mouth-operation.gif"
+      ],
+      "visibleGain": "Actual open/return operation, independently displayed oral regions. No claim to repaired skin, hair or whole-face realism."
+    },
+    "function": {
+      "status": "PASS_SCOPED_RIGID_DENTAL_MOUTH_OPERATION_AND_NEUTRAL_RETURN",
+      "evidence": [
+        "c-independent-readback.json",
+        "c-source-occlusion-and-head-attachment.json"
+      ],
+      "actualFramesChecked": [
+        1,
+        7,
+        13,
+        25,
+        31,
+        37
+      ],
+      "actualDentalHeadFollowTestDegrees": 20,
+      "independentEditableDentalArchMeshes": 2,
+      "toothUVChartsPerArch": 16,
+      "softDisplayLayersShareEditableSource": true,
+      "upperGumAndCavityCombined": true,
+      "newFullyQualifiedCompleteCapability": false
+    },
+    "contact": {
+      "status": "FAILED_NEUTRAL_UPPER_LOWER_DENTAL_SURFACE_CROSSING",
+      "evidence": "c-oral-contact-screen.json",
+      "sourceFailureIndependentlyReproduced": "c-source-occlusion-and-head-attachment.json",
+      "firstFailureFrame": 1,
+      "globalSignedMinimumM": null,
+      "movingFrameContactScreenStoppedAfterFirstFailure": true,
+      "continuousClearanceAccepted": false,
+      "knownHairAndClothContactUnresolved": true
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "cpuGpuMemoryLODNotAccepted": true
+    }
+  },
+  "nextAction": "Use exact complete r74C as the working oral-authoring prototype, with its explicit neutral upper/lower dental crossing and shared-soft-layer limitations; keep r69 complete FK/scalp-follow source and r65 scoped ocular/anatomy foundation as separate rollback references. R72/r73/r74 window did not produce a fully accepted complete visual milestone or collision-qualified capability. Change from source-restoration/local appearance trials to direct rest-anatomy authoring of the complete oral operation: repair the neutral dental occlusion using the actual crossing witnesses, source chart correspondence and primary adult dentition references; establish tooth/gum seating and separate the remaining combined gum/cavity roles where needed. Author one anatomical correction in this same complete source, not a jaw-strength, closed-angle, tooth-size or tolerance sweep, and do not hide the teeth, reduce the prescribed opening, or waive inherited contact. First obtain a valid complete neutral bite, then the same full open/return operation with rigid teeth, lip/tongue/gum relations and Head attachment. Stop bounded diagnosis when it selects the geometry edit. Deliver real whole-head/body A/B and the actual clip, then affected finite-surface/continuous contact evidence before any contact-qualified adoption. Native source data are not proof of sound anatomy. Retain the demonstrated controls and stable original scalp-deformation reference; any topology edit must preserve that reference or explicitly rebind and verify. Skin/hair realism, natural hair/cloth physics, independent soft cages, other facial/body actions and real engine import/material/LOD/performance remain required. No formal runtime/site promotion or male work."
+}

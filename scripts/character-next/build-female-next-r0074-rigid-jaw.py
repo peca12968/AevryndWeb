@@ -1,0 +1,30 @@
+"""Replace tooth blend interpolation with a source-fitted rigid jaw transform."""
+from pathlib import Path
+import bpy,numpy as np,json,time,importlib.util
+from mathutils import Matrix
+sp=importlib.util.spec_from_file_location('oral74',Path(__file__).with_name('build-female-next-r0074-oral-controls.py'));m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m)
+R=m.R;S=m.S;E=m.E;OUT=S/'aevrynd-female-next-r0074-b-rigid-jaw-controls-study.blend'
+def geometry(o):
+    d=o.evaluated_get(bpy.context.evaluated_depsgraph_get()).data;p=np.empty((len(d.vertices),3),'f4');d.vertices.foreach_get('co',p.ravel());a=np.array(o.matrix_world);return p.astype('f8')@a[:3,:3].T+a[:3,3]
+def main():
+    tick=time.time();ref=json.loads((E/'a-layer-build-summary.json').read_text());assert not OUT.exists() and m.sha(Path(ref['output']))==ref['outputSha256'];bpy.ops.wm.open_mainfile(filepath=ref['output']);s=bpy.context.scene;old=bpy.data.objects['AFN74_LOWER_TEETH']
+    s.frame_set(1);bpy.context.view_layer.update();p=geometry(old)
+    s.frame_set(13);bpy.context.view_layer.update();q=geometry(old);assert p.shape==q.shape
+    pc=p.mean(0);qc=q.mean(0);u,_,vt=np.linalg.svd((p-pc).T@(q-qc));rot=vt.T@u.T
+    if np.linalg.det(rot)<0:vt[-1]*=-1;rot=vt.T@u.T
+    t=qc-rot@pc;quat=Matrix(rot).to_quaternion();axis=np.array(quat.axis);angle=quat.angle;pivot=np.linalg.lstsq(np.eye(3)-rot,t,rcond=1e-6)[0];residual=t-(np.eye(3)-rot)@pivot
+    err=np.linalg.norm(p@rot.T+t-q,axis=1);assert err.max()<.0001 and np.linalg.norm(residual)<1e-8,(err.max(),residual)
+    s.frame_set(1);bpy.context.view_layer.update();mesh=bpy.data.meshes.new_from_object(old.evaluated_get(bpy.context.evaluated_depsgraph_get()),preserve_all_data_layers=True,depsgraph=bpy.context.evaluated_depsgraph_get());mesh.name='AFN74_LOWER_TEETH_RIGID_REST';mesh.transform(Matrix.Translation((-pivot).tolist())@old.matrix_world)
+    jaw=bpy.data.objects.new('AFN74_RIGID_JAW',None);s.collection.objects.link(jaw);jaw.empty_display_type='PLAIN_AXES';jaw.empty_display_size=.025;jaw.location=pivot.tolist();jaw.rotation_mode='AXIS_ANGLE';jaw.rotation_axis_angle=(0,*axis.tolist())
+    rig=bpy.data.objects['AFN69_BODY_CONTROLS'];bpy.context.view_layer.update();con=jaw.constraints.new('CHILD_OF');con.name='AFN74_FOLLOW_EXISTING_HEAD';con.target=rig;con.subtarget='Head';con.inverse_matrix=(rig.matrix_world@rig.pose.bones['Head'].matrix).inverted()
+    ctrl=bpy.data.objects['AFN74_ORAL_CONTROLS'];fc=jaw.driver_add('rotation_axis_angle',0);driver=fc.driver;driver.type='SCRIPTED';driver.expression=repr(float(angle))+'*jaw';v=driver.variables.new();v.name='jaw';v.type='SINGLE_PROP';v.targets[0].id=ctrl;v.targets[0].data_path='["jaw_open"]'
+    new=bpy.data.objects.new('AFN74_LOWER_TEETH_RIGID',mesh);bpy.data.collections['AFN74_10_DISPLAY_LAYERS'].objects.link(new);new.parent=jaw;new.matrix_parent_inverse=Matrix.Identity(4);new['editing']='Independent actual rest dental mesh; rigid source-fitted jaw parent, no tooth shape-key interpolation. Other oral/skin layers still share the native soft-tissue master.'
+    old.name='AFN74_LOWER_TEETH_SOFT_SOURCE_REFERENCE';old.hide_render=True;old.hide_set(True)
+    bpy.context.view_layer.update();neutral_error=float(np.linalg.norm(geometry(new)-p,axis=1).max());assert neutral_error<1e-6,neutral_error
+    s.frame_set(13);bpy.context.view_layer.update();endpoint=geometry(new);endpoint_error=float(np.linalg.norm(endpoint-q,axis=1).max());assert endpoint_error<.0001,endpoint_error
+    s.frame_set(1);bpy.context.view_layer.update();h0=rig.matrix_world@rig.pose.bones['Head'].matrix;rest=geometry(new);m.m.axis_pose(rig,'Head',(0,0,1),20);bpy.context.view_layer.update();h1=rig.matrix_world@rig.pose.bones['Head'].matrix;H=np.array(h1@h0.inverted());expected=rest@H[:3,:3].T+H[:3,3];head_error=float(np.linalg.norm(geometry(new)-expected,axis=1).max());assert head_error<1e-6,head_error
+    rig.pose.bones['Head'].rotation_quaternion=(1,0,0,0);bpy.context.view_layer.update();s.frame_set(1);s['AFN74_scope']='Complete layered mouth operation with a rigid lower dental arch following the existing Head bone. Original native soft tissue shapes remain approximations. Upper gum/cavity combined; full contacts, anatomy, natural hair/cloth and engine unaccepted.';ctrl['jaw_model']='Source-fitted27.74-degree rigid jaw arc for lower teeth; native soft-tissue expression. Not a calibrated temporomandibular joint model.'
+    m.m.k.b.camera('face');s.camera.data.lens=85;bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(OUT),compress=True)
+    m.save('b-build-summary.json',{'source':ref['output'],'sourceSha256':ref['outputSha256'],'output':str(OUT),'outputSha256':m.sha(OUT),'outputBytes':OUT.stat().st_size,'method':'Actual rest lower dental arch, one rigid rotation driven by jaw_open; source-fitted endpoint, Head ChildOf attachment. Soft tissue remains native expression.','rigidFit':{'angleRadians':float(angle),'angleDegrees':float(np.degrees(angle)),'axis':axis.tolist(),'pivotWorldM':pivot.tolist(),'R':rot.tolist(),'translation':t.tolist(),'axialResidualM':residual.tolist(),'rmsEndpointM':float(np.sqrt(np.mean(err**2))),'maximumEndpointM':float(err.max())},'neutralMaximumWorldErrorM':neutral_error,'actualEndpointMaximumWorldErrorM':endpoint_error,'actualHead20DegreeFollowMaximumWorldErrorM':head_error,'nativeInterpolationFailure':'Up to3.022% native lower-tooth edge length change at half opening; original source result not accepted for rigid teeth.','editingLimits':'Actual lower dental mesh independently editable. Other display layers share one native cage; upper gum and oral cavity still combined.','fullContactOrNaturalMotionOrEngineAccepted':False,'secondsBeforePilot':time.time()-tick})
+    s.frame_set(13);bpy.context.view_layer.update();m.save('b-open-pilot-controls.json',[m.render('b-open','face'),m.render('b-open','body-face')]);print('R74_RIGID_JAW_COMPLETE_PILOTS_DONE',time.time()-tick,flush=True)
+if __name__=='__main__':main()

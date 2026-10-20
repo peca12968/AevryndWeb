@@ -1,0 +1,122 @@
+{
+  "status": "FALSIFIED_ACTUAL_ORAL_SURFACE_CROSSING",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0074-c-rigid-dentition-controls-study.blend",
+  "sourceSha256": "19d5d5ed6ae55edcd625c5ce8f342029c53efacd4a2a964573e0dc1654778294",
+  "rows": [
+    {
+      "frame": 1,
+      "jawOpen": 0.0,
+      "dentalBoundsWith2mmMarginM": [
+        [
+          -0.02805710691729027,
+          -0.13375198435783464,
+          1.3935811261457538
+        ],
+        [
+          0.028057105968208734,
+          -0.08849624204634624,
+          1.4170041341968458
+        ]
+      ],
+      "pairs": [
+        {
+          "pair": [
+            "upper",
+            "lower"
+          ],
+          "broadCandidatePairs": 1648,
+          "firstStrongProperSurfaceCrossing": {
+            "triangleA": 50860,
+            "triangleB": 10535,
+            "worldPointM": [
+              -0.01918095153036473,
+              -0.10636432037618122,
+              1.4057317922395642
+            ],
+            "triangleWorldA": [
+              [
+                -0.01901535830419499,
+                -0.10640384256838888,
+                1.4057981968011817
+              ],
+              [
+                -0.019191640903763612,
+                -0.10636176913975796,
+                1.405727505692518
+              ],
+              [
+                -0.01928128070156994,
+                -0.10622422769664841,
+                1.4058432579128004
+              ]
+            ],
+            "triangleWorldB": [
+              [
+                -0.019010969281441036,
+                -0.1063352413475427,
+                1.4057567119117413
+              ],
+              [
+                -0.019339567825442557,
+                -0.10617911443113401,
+                1.4057735204217148
+              ],
+              [
+                -0.019269398257380946,
+                -0.10640211775898056,
+                1.405711889218809
+              ]
+            ]
+          },
+          "noWitnessIsNotClearanceProof": true
+        },
+        {
+          "pair": [
+            "upper",
+            "skin"
+          ],
+          "broadCandidatePairs": 0,
+          "firstStrongProperSurfaceCrossing": null,
+          "noWitnessIsNotClearanceProof": true
+        },
+        {
+          "pair": [
+            "lower",
+            "skin"
+          ],
+          "broadCandidatePairs": 0,
+          "firstStrongProperSurfaceCrossing": null,
+          "noWitnessIsNotClearanceProof": true
+        },
+        {
+          "pair": [
+            "upper",
+            "tongue"
+          ],
+          "broadCandidatePairs": 0,
+          "firstStrongProperSurfaceCrossing": null,
+          "noWitnessIsNotClearanceProof": true
+        },
+        {
+          "pair": [
+            "lower",
+            "tongue"
+          ],
+          "broadCandidatePairs": 0,
+          "firstStrongProperSurfaceCrossing": null,
+          "noWitnessIsNotClearanceProof": true
+        }
+      ]
+    }
+  ],
+  "worldWitnessEdgeInteriorMarginM": 1e-07,
+  "method": "Actual evaluated displayed triangles; BVH candidates followed by strict noncoplanar segment-triangle interior crossing.",
+  "limitations": [
+    "A positive witness falsifies the tested surface-pair claim. No witness does not prove clearance.",
+    "Coplanar contacts, closed solid containment, true global signed minimum and continuous time are unverified.",
+    "Teeth/gum anatomical root joining, body self contact, hair and cloth are not certified.",
+    "Skin broad-phase subset conservatively overlaps the complete dental AABB plus2mm."
+  ],
+  "globalSignedMinimumM": null,
+  "seconds": 7.158164024353027
+}
