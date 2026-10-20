@@ -1,0 +1,11 @@
+00:07.422  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0088-b-supported-lid-aperture.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0089-authored-braids.py:21: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();assert not OUT.exists() and sha(SRC)=='72435890a03cab26ff2f3e238060daf2b2cf797f85543d8fd6182583cc1101a7';assert sha(DEMO)=='1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48';bpy.ops.wm.open_mainfile(filepath=str(SRC));s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();old=bpy.data.objects['AFN81_EDITABLE_CURLY_GUIDES'];oldCap=bpy.data.objects['AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE'];A=old.matrix_world.copy();AA=np.array(A);mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes};lights=m.m.q.lights()
+00:36.750  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0089-posterior-growth\c-authored-braids-back.png'
+00:56.375  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0089-posterior-growth\c-authored-braids-face.png'
+01:06.922  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0089-posterior-growth\c-authored-braids-body-face.png'
+Info: Saved as "aevrynd-female-next-r0089-c-authored-braid-groom.blend"
+R89_AUTHORED_BRAID_PILOT_DONE 18059 1390543 63.44207406044006
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

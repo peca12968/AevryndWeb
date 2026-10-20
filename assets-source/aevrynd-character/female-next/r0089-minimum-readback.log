@@ -1,0 +1,12 @@
+00:01.828  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0088-b-supported-lid-aperture.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0089-minimum.py:22: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();src=S/'aevrynd-female-next-r0088-b-supported-lid-aperture.blend';assert sha(src)=='72435890a03cab26ff2f3e238060daf2b2cf797f85543d8fd6182583cc1101a7';prepare(src);names=m.rig.native_names()+['AFN59_LASHES_NATIVE_POINT_POSES'];sig={n:native.signature(bpy.data.objects[n]) for n in names};dent={n:cap(bpy.data.objects[n]) for n in ('AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID')};nativeHair=curveNative(bpy.data.objects['AFN81_EDITABLE_CURLY_GUIDES']);growthSig=cap(bpy.data.objects['AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE']);otherCurves={n:q.hair(bpy.data.objects[n]).copy() for n in ('AFN57_NATIVE_BROWS','AFN57_NATIVE_LASHES')};mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes and (x.users>0 or x.use_fake_user)};purgeable=[x.name for x in bpy.data.materials if x.use_nodes and x.users==0 and not x.use_fake_user];save('readback-material-scope.json',{'comparedReferencedOrFakeUserMaterialNames':list(mats),'sourceZeroUserUnpinnedMaterials':purgeable,'reason':'Blender omits zero-user, no-fake-user datablocks during save. They are not displayed or referenced source materials; no geometry/colour/tolerance criterion changed.'});lights=m.m.q.lights();rows={}
+00:09.594  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0089-a-posterior-bundle-cages.blend"
+R89_MINIMUM_SAVED_READBACK a 21908 0.0
+00:18.750  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0089-b-parted-layered-bob.blend"
+R89_MINIMUM_SAVED_READBACK b 21908 0.0
+00:28.265  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0089-c-authored-braid-groom.blend"
+R89_MINIMUM_SAVED_READBACK c 18059 0.0
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

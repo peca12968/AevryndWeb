@@ -1,0 +1,15 @@
+00:01.704  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0088-b-supported-lid-aperture.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0089-minimum.py:22: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();src=S/'aevrynd-female-next-r0088-b-supported-lid-aperture.blend';assert sha(src)=='72435890a03cab26ff2f3e238060daf2b2cf797f85543d8fd6182583cc1101a7';prepare(src);names=m.rig.native_names()+['AFN59_LASHES_NATIVE_POINT_POSES'];sig={n:native.signature(bpy.data.objects[n]) for n in names};dent={n:cap(bpy.data.objects[n]) for n in ('AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID')};nativeHair=curveNative(bpy.data.objects['AFN81_EDITABLE_CURLY_GUIDES']);growthSig=cap(bpy.data.objects['AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE']);otherCurves={n:q.hair(bpy.data.objects[n]).copy() for n in ('AFN57_NATIVE_BROWS','AFN57_NATIVE_LASHES')};mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes};lights=m.m.q.lights();rows={}
+00:09.766  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0089-a-posterior-bundle-cages.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0089-minimum.py", line 37, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0089-minimum.py", line 26, in main
+    ref=json.loads(p.read_text(encoding='utf-8-sig'));out=Path(ref['output']);assert sha(out)==ref['outputSha256'];prepare(out);assert {n:native.signature(bpy.data.objects[n]) for n in names}==sig;assert {n:cap(bpy.data.objects[n]) for n in dent}==dent;assert curveNative(bpy.data.objects['AFN81_EDITABLE_CURLY_GUIDES'])==nativeHair;assert cap(bpy.data.objects['AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE'])==growthSig;assert {n:m.rig.k.f.v.v32.material_signature(bpy.data.materials[n]) for n in mats}==mats;assert m.m.q.lights()==lights
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ~~~~~~~~~~~~~~~~~~^^^
+KeyError: 'bpy_prop_collection[key]: key "Head.001" not found'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

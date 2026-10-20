@@ -1,0 +1,21 @@
+00:01.985  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0088-b-supported-lid-aperture.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0089-posterior-bundles.py:32: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();assert not OUT.exists() and sha(SRC)=='72435890a03cab26ff2f3e238060daf2b2cf797f85543d8fd6182583cc1101a7';bpy.ops.wm.open_mainfile(filepath=str(SRC));s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();o=bpy.data.objects['AFN81_EDITABLE_CURLY_GUIDES'];baseline=q.hair(o).copy();ed=o.evaluated_get(bpy.context.evaluated_depsgraph_get()).data;counts=np.array([c.points_length for c in ed.curves]);starts=np.r_[0,np.cumsum(counts)[:-1]];radii=q.arr(ed.attributes['radius'].data,'value',len(baseline)).copy();assert np.all(counts==23);A=o.matrix_world.copy();AA=np.array(A);inv=np.linalg.inv(AA[:3,:3]);mats={a.name:m.rig.k.f.v.v32.material_signature(a) for a in bpy.data.materials if a.use_nodes};lights=m.m.q.lights();ctl=[]
+00:14.406  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0089-posterior-growth\baseline-r88-back.png'
+00:25.485  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0089-posterior-growth\baseline-r88-face.png'
+00:30.781  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0089-posterior-growth\baseline-r88-body-face.png'
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0089-posterior-bundles.py:49: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  bpy.context.view_layer.update();actual=q.hair(o);d=o.evaluated_get(bpy.context.evaluated_depsgraph_get()).data;assert np.array_equal(np.array([c.points_length for c in d.curves]),counts) and np.array_equal(q.arr(d.attributes['radius'].data,'value',len(actual)),radii);rootError=float(np.linalg.norm(actual[starts]-baseline[starts],axis=1).max());assert rootError<2e-6;change=np.linalg.norm(actual-baseline,axis=1);assert change.max()>.001;assert {a.name:m.rig.k.f.v.v32.material_signature(a) for a in bpy.data.materials if a.use_nodes}==mats and m.m.q.lights()==lights
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0089-posterior-bundles.py", line 59, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0089-posterior-bundles.py", line 49, in main
+    bpy.context.view_layer.update();actual=q.hair(o);d=o.evaluated_get(bpy.context.evaluated_depsgraph_get()).data;assert np.array_equal(np.array([c.points_length for c in d.curves]),counts) and np.array_equal(q.arr(d.attributes['radius'].data,'value',len(actual)),radii);rootError=float(np.linalg.norm(actual[starts]-baseline[starts],axis=1).max());assert rootError<2e-6;change=np.linalg.norm(actual-baseline,axis=1);assert change.max()>.001;assert {a.name:m.rig.k.f.v.v32.material_signature(a) for a in bpy.data.materials if a.use_nodes}==mats and m.m.q.lights()==lights
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'scripts/character-next/build-female-next-r0089-posterior-bundles.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

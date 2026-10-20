@@ -1,0 +1,13 @@
+00:03.406  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0088-b-supported-lid-aperture.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0089-parted-bob.py:41: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();assert not OUT.exists() and sha(SRC)=='72435890a03cab26ff2f3e238060daf2b2cf797f85543d8fd6182583cc1101a7';bpy.ops.wm.open_mainfile(filepath=str(SRC));s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();old=bpy.data.objects['AFN81_EDITABLE_CURLY_GUIDES'];A=old.matrix_world.copy();AA=np.array(A);inv=np.linalg.inv(AA[:3,:3]);baseline=q.hair(old).copy();ed=old.evaluated_get(bpy.context.evaluated_depsgraph_get()).data;counts=np.array([c.points_length for c in ed.curves]);assert np.all(counts==23);starts=np.r_[0,np.cumsum(counts)[:-1]];radii=q.arr(ed.attributes['radius'].data,'value',len(baseline)).copy();materials={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes};lights=m.m.q.lights()
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0089-parted-bob.py:61: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  old.hide_render=True;old.hide_set(True);bpy.context.view_layer.update();Q=q.hair(child);d=child.evaluated_get(bpy.context.evaluated_depsgraph_get()).data;assert Q.shape==baseline.shape and np.isfinite(Q).all();assert np.array_equal(q.arr(d.attributes['radius'].data,'value',len(Q)),radii);err=float(np.linalg.norm(Q[starts]-baseline[starts],axis=1).max());assert err<2e-6;assert np.array_equal(np.array([c.points_length for c in d.curves]),counts);assert materials=={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes} and lights==m.m.q.lights()
+00:17.281  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0089-posterior-growth\b-parted-bob-back.png'
+00:29.297  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0089-posterior-growth\b-parted-bob-face.png'
+00:36.297  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0089-posterior-growth\b-parted-bob-body-face.png'
+Info: Saved as "aevrynd-female-next-r0089-b-parted-layered-bob.blend"
+R89_WHOLE_PARTED_BOB_DONE 35.48023581504822
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

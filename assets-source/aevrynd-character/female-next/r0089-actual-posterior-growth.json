@@ -1,0 +1,2013 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0088-b-supported-lid-aperture.blend",
+  "cap": "AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE",
+  "nativeGuides": 303,
+  "evaluatedCurves": 21908,
+  "actualWorldRootBounds": [
+    [
+      -0.07065014427883476,
+      -0.12100048748503767,
+      1.409549351039189
+    ],
+    [
+      0.07083474573954796,
+      0.04478103809358336,
+      1.560785666449462
+    ]
+  ],
+  "capWorldBounds": [
+    [
+      -0.0710294172167778,
+      -0.12128371745347977,
+      1.4092204570770264
+    ],
+    [
+      0.07102447748184204,
+      0.04478886350989342,
+      1.5608227252960205
+    ]
+  ],
+  "capScalarAttributes": [
+    {
+      "name": "sharp_edge",
+      "domain": "EDGE",
+      "type": "BOOLEAN",
+      "n": 1670,
+      "range": [
+        0.0,
+        1.0
+      ],
+      "quantiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": ".sculpt_mask",
+      "domain": "POINT",
+      "type": "FLOAT",
+      "n": 876,
+      "range": [
+        0.0,
+        0.0
+      ],
+      "quantiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": ".sculpt_face_set",
+      "domain": "FACE",
+      "type": "INT",
+      "n": 796,
+      "range": [
+        3.0,
+        20.0
+      ],
+      "quantiles": [
+        3.0,
+        4.0,
+        10.0,
+        20.0,
+        20.0
+      ]
+    },
+    {
+      "name": ".corner_vert",
+      "domain": "CORNER",
+      "type": "INT",
+      "n": 3184,
+      "range": [
+        0.0,
+        875.0
+      ],
+      "quantiles": [
+        0.0,
+        94.0,
+        427.0,
+        793.0,
+        875.0
+      ]
+    },
+    {
+      "name": ".corner_edge",
+      "domain": "CORNER",
+      "type": "INT",
+      "n": 3184,
+      "range": [
+        0.0,
+        1669.0
+      ],
+      "quantiles": [
+        0.0,
+        159.0,
+        826.5,
+        1506.7000000000003,
+        1669.0
+      ]
+    },
+    {
+      "name": "AFN68_RestBodyTriangle",
+      "domain": "POINT",
+      "type": "INT",
+      "n": 876,
+      "range": [
+        79052.0,
+        230669.0
+      ],
+      "quantiles": [
+        79052.0,
+        150610.5,
+        220515.0,
+        228648.0,
+        230669.0
+      ]
+    }
+  ],
+  "program": [
+    {
+      "name": "Frame.002",
+      "type": "NodeFrame",
+      "group": null,
+      "inputs": []
+    },
+    {
+      "name": "Frame.004",
+      "type": "NodeFrame",
+      "group": null,
+      "inputs": []
+    },
+    {
+      "name": "Frame.005",
+      "type": "NodeFrame",
+      "group": null,
+      "inputs": []
+    },
+    {
+      "name": "Frame",
+      "type": "NodeFrame",
+      "group": null,
+      "inputs": []
+    },
+    {
+      "name": "Frame.003",
+      "type": "NodeFrame",
+      "group": null,
+      "inputs": []
+    },
+    {
+      "name": "Frame.006",
+      "type": "NodeFrame",
+      "group": null,
+      "inputs": []
+    },
+    {
+      "name": "Frame.007",
+      "type": "NodeFrame",
+      "group": null,
+      "inputs": []
+    },
+    {
+      "name": "Frame.001",
+      "type": "NodeFrame",
+      "group": null,
+      "inputs": []
+    },
+    {
+      "name": "Frame.008",
+      "type": "NodeFrame",
+      "group": null,
+      "inputs": []
+    },
+    {
+      "name": "Frame.012",
+      "type": "NodeFrame",
+      "group": null,
+      "inputs": []
+    },
+    {
+      "name": "Frame.013",
+      "type": "NodeFrame",
+      "group": null,
+      "inputs": []
+    },
+    {
+      "name": "Group Output",
+      "type": "NodeGroupOutput",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Geometry",
+          "value": null,
+          "links": [
+            [
+              "Join Geometry",
+              "Geometry"
+            ]
+          ]
+        },
+        {
+          "name": "",
+          "value": null,
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Random Value",
+      "type": "FunctionNodeRandomValue",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Probability",
+          "value": 0.800000011920929,
+          "links": []
+        },
+        {
+          "name": "ID",
+          "value": 0,
+          "links": []
+        },
+        {
+          "name": "Seed",
+          "value": 0,
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Separate Geometry",
+      "type": "GeometryNodeSeparateGeometry",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Geometry",
+          "value": null,
+          "links": [
+            [
+              "Group.001",
+              "Geometry"
+            ]
+          ]
+        },
+        {
+          "name": "Selection",
+          "value": true,
+          "links": [
+            [
+              "Random Value",
+              "Value"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Group.014",
+      "type": "GeometryNodeGroup",
+      "group": "Snap hair to parting edges - Bystedt.001",
+      "inputs": [
+        {
+          "name": "Input",
+          "value": null,
+          "links": [
+            [
+              "Group",
+              "Geometry"
+            ]
+          ]
+        },
+        {
+          "name": "Object",
+          "value": "AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE",
+          "links": []
+        },
+        {
+          "name": "Parting attribute",
+          "value": [
+            "p",
+            "a",
+            "r",
+            "t",
+            "i",
+            "n",
+            "g"
+          ],
+          "links": []
+        },
+        {
+          "name": "Proximity to parting",
+          "value": 0.18000000715255737,
+          "links": []
+        },
+        {
+          "name": "Mix",
+          "value": 0.0,
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Named Attribute",
+      "type": "GeometryNodeInputNamedAttribute",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Name",
+          "value": [
+            "U",
+            "V",
+            "M",
+            "a",
+            "p"
+          ],
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Reroute.001",
+      "type": "NodeReroute",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Input",
+          "value": null,
+          "links": [
+            [
+              "Reroute.002",
+              "Output"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reroute.002",
+      "type": "NodeReroute",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Input",
+          "value": null,
+          "links": [
+            [
+              "Group.009",
+              "Geometry"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Math.002",
+      "type": "ShaderNodeMath",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Value",
+          "value": 0.5,
+          "links": [
+            [
+              "Map Range.002",
+              "Result"
+            ]
+          ]
+        },
+        {
+          "name": "Value",
+          "value": 3.0,
+          "links": []
+        },
+        {
+          "name": "Value",
+          "value": 0.5,
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Named Attribute.002",
+      "type": "GeometryNodeInputNamedAttribute",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Name",
+          "value": [
+            "U",
+            "V",
+            "M",
+            "a",
+            "p"
+          ],
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Image Texture",
+      "type": "GeometryNodeImageTexture",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Image",
+          "value": "hair side parting density.001",
+          "links": []
+        },
+        {
+          "name": "Vector",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": [
+            [
+              "Named Attribute.002",
+              "Attribute"
+            ]
+          ]
+        },
+        {
+          "name": "Frame",
+          "value": 0,
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Reroute.014",
+      "type": "NodeReroute",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Input",
+          "value": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "links": [
+            [
+              "Image Texture",
+              "Color"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Map Range.002",
+      "type": "ShaderNodeMapRange",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Value",
+          "value": 1.0,
+          "links": [
+            [
+              "Reroute.014",
+              "Output"
+            ]
+          ]
+        },
+        {
+          "name": "From Min",
+          "value": 0.20000000298023224,
+          "links": []
+        },
+        {
+          "name": "From Max",
+          "value": 1.0,
+          "links": []
+        },
+        {
+          "name": "To Min",
+          "value": 0.30000001192092896,
+          "links": []
+        },
+        {
+          "name": "To Max",
+          "value": 1.0,
+          "links": []
+        },
+        {
+          "name": "Steps",
+          "value": 4.0,
+          "links": []
+        },
+        {
+          "name": "Vector",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": []
+        },
+        {
+          "name": "From Min",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": []
+        },
+        {
+          "name": "From Max",
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "links": []
+        },
+        {
+          "name": "To Min",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": []
+        },
+        {
+          "name": "To Max",
+          "value": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "links": []
+        },
+        {
+          "name": "Steps",
+          "value": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Reroute.006",
+      "type": "NodeReroute",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Input",
+          "value": null,
+          "links": [
+            [
+              "Group.014",
+              "Geometry"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Spline Parameter",
+      "type": "GeometryNodeSplineParameter",
+      "group": null,
+      "inputs": []
+    },
+    {
+      "name": "Reroute.008",
+      "type": "NodeReroute",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Input",
+          "value": 0.0,
+          "links": [
+            [
+              "Spline Parameter",
+              "Factor"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ColorRamp",
+      "type": "ShaderNodeValToRGB",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Factor",
+          "value": 0.5,
+          "links": [
+            [
+              "Reroute.008",
+              "Output"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Group.003",
+      "type": "GeometryNodeGroup",
+      "group": "Roll Hair Curves.001",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "value": null,
+          "links": [
+            [
+              "Group Input",
+              "Geometry"
+            ]
+          ]
+        },
+        {
+          "name": "Factor",
+          "value": 0.60999995470047,
+          "links": []
+        },
+        {
+          "name": "Subdivision",
+          "value": 0,
+          "links": []
+        },
+        {
+          "name": "Variation Level",
+          "value": 0,
+          "links": []
+        },
+        {
+          "name": "Roll Length",
+          "value": 0.7599999904632568,
+          "links": []
+        },
+        {
+          "name": "Roll Radius",
+          "value": 0.4699999690055847,
+          "links": []
+        },
+        {
+          "name": "Roll Depth",
+          "value": 0.0,
+          "links": []
+        },
+        {
+          "name": "Roll Taper",
+          "value": 0.5,
+          "links": []
+        },
+        {
+          "name": "Retain Overall Shape",
+          "value": 0.0,
+          "links": []
+        },
+        {
+          "name": "Roll Direction",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": []
+        },
+        {
+          "name": "Random Orientation",
+          "value": 1.0,
+          "links": []
+        },
+        {
+          "name": "Seed",
+          "value": 3,
+          "links": []
+        },
+        {
+          "name": "Preserve Length",
+          "value": false,
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Group",
+      "type": "GeometryNodeGroup",
+      "group": "Interpolate Hair Curves.001",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "value": null,
+          "links": [
+            [
+              "Reroute.001",
+              "Output"
+            ]
+          ]
+        },
+        {
+          "name": "Surface",
+          "value": null,
+          "links": []
+        },
+        {
+          "name": "Surface",
+          "value": "AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE",
+          "links": []
+        },
+        {
+          "name": "Surface UV Map",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": [
+            [
+              "Named Attribute",
+              "Attribute"
+            ]
+          ]
+        },
+        {
+          "name": "Surface Rest Position",
+          "value": false,
+          "links": []
+        },
+        {
+          "name": "Follow Surface Normal",
+          "value": false,
+          "links": []
+        },
+        {
+          "name": "Part by Mesh Islands",
+          "value": true,
+          "links": []
+        },
+        {
+          "name": "Interpolation Guides",
+          "value": 4,
+          "links": []
+        },
+        {
+          "name": "Distance to Guides",
+          "value": 0.0,
+          "links": []
+        },
+        {
+          "name": "Poisson Disk Distribution",
+          "value": true,
+          "links": []
+        },
+        {
+          "name": "Density",
+          "value": 4000.0,
+          "links": []
+        },
+        {
+          "name": "Density Mask",
+          "value": 1.0,
+          "links": [
+            [
+              "Math.002",
+              "Value"
+            ]
+          ]
+        },
+        {
+          "name": "Mask Texture",
+          "value": null,
+          "links": []
+        },
+        {
+          "name": "Viewport Amount",
+          "value": 1.0,
+          "links": [
+            [
+              "Group Input.001",
+              "Viewport Amount"
+            ]
+          ]
+        },
+        {
+          "name": "Seed",
+          "value": 0,
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Join Geometry",
+      "type": "GeometryNodeJoinGeometry",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Geometry",
+          "value": null,
+          "links": [
+            [
+              "Separate Geometry",
+              "Selection"
+            ],
+            [
+              "Group.004",
+              "Geometry"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Group.004",
+      "type": "GeometryNodeGroup",
+      "group": "Hair Curves Noise.001",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "value": null,
+          "links": [
+            [
+              "Separate Geometry",
+              "Inverted"
+            ]
+          ]
+        },
+        {
+          "name": "Cumulative Offset",
+          "value": true,
+          "links": []
+        },
+        {
+          "name": "Factor",
+          "value": 1.0,
+          "links": []
+        },
+        {
+          "name": "Distance",
+          "value": 0.20999997854232788,
+          "links": []
+        },
+        {
+          "name": "Shape",
+          "value": -0.5,
+          "links": []
+        },
+        {
+          "name": "Scale",
+          "value": 1.0,
+          "links": []
+        },
+        {
+          "name": "Scale along Curve",
+          "value": 7.199999809265137,
+          "links": []
+        },
+        {
+          "name": "Offset per Curve",
+          "value": 2.5999999046325684,
+          "links": []
+        },
+        {
+          "name": "Seed",
+          "value": 0,
+          "links": []
+        },
+        {
+          "name": "Preserve Length",
+          "value": true,
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Group.009",
+      "type": "GeometryNodeGroup",
+      "group": "Set Hair Curve Profile.001",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "value": null,
+          "links": [
+            [
+              "Group.003",
+              "Geometry"
+            ]
+          ]
+        },
+        {
+          "name": "Replace Radius",
+          "value": true,
+          "links": []
+        },
+        {
+          "name": "Radius",
+          "value": 0.0010000000474974513,
+          "links": []
+        },
+        {
+          "name": "Shape",
+          "value": 0.0,
+          "links": []
+        },
+        {
+          "name": "Factor Min",
+          "value": 0.0,
+          "links": []
+        },
+        {
+          "name": "Factor Max",
+          "value": 1.0,
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Group Input",
+      "type": "NodeGroupInput",
+      "group": null,
+      "inputs": []
+    },
+    {
+      "name": "Group Input.001",
+      "type": "NodeGroupInput",
+      "group": null,
+      "inputs": []
+    },
+    {
+      "name": "Reroute.013",
+      "type": "NodeReroute",
+      "group": null,
+      "inputs": [
+        {
+          "name": "Input",
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Group.001",
+      "type": "GeometryNodeGroup",
+      "group": "Curl Hair Curves",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "value": null,
+          "links": [
+            [
+              "Reroute.006",
+              "Output"
+            ]
+          ]
+        },
+        {
+          "name": "Guide Index",
+          "value": -987654,
+          "links": []
+        },
+        {
+          "name": "Guide Distance",
+          "value": 0.10000000149011612,
+          "links": []
+        },
+        {
+          "name": "Guide Mask",
+          "value": 1.0,
+          "links": []
+        },
+        {
+          "name": "Existing Guide Map",
+          "value": true,
+          "links": []
+        },
+        {
+          "name": "Factor",
+          "value": 1.0,
+          "links": []
+        },
+        {
+          "name": "Subdivision",
+          "value": 1,
+          "links": []
+        },
+        {
+          "name": "Curl Start",
+          "value": 1.0,
+          "links": []
+        },
+        {
+          "name": "Radius",
+          "value": 0.10000000149011612,
+          "links": []
+        },
+        {
+          "name": "Factor Start",
+          "value": 0.43000003695487976,
+          "links": []
+        },
+        {
+          "name": "Factor End",
+          "value": 1.2200000286102295,
+          "links": []
+        },
+        {
+          "name": "Frequency",
+          "value": 1.0,
+          "links": []
+        },
+        {
+          "name": "Random Offset",
+          "value": 0.25,
+          "links": [
+            [
+              "ColorRamp",
+              "Color"
+            ]
+          ]
+        },
+        {
+          "name": "Seed",
+          "value": 28,
+          "links": []
+        }
+      ]
+    }
+  ],
+  "posteriorGrid10mm": [
+    {
+      "z0": 1.46,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 53,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00013597702491097152
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 46,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00013786113413516432
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 46,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 6.952865078346804e-05
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 40,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00010327521158615127
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 43,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 9.154803410638124e-05
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 47,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 8.106848690658808e-05
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 47,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00015119674208108336
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 53,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00021741027012467384
+        }
+      ]
+    },
+    {
+      "z0": 1.47,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 52,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.0001212976494571194
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 48,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00011107142927357927
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 43,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 7.460554479621351e-05
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 32,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00011006042041117325
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 49,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 9.751149627845734e-05
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 45,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 8.655920100864023e-05
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 51,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00010951673903036863
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 56,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 9.731991303851828e-05
+        }
+      ]
+    },
+    {
+      "z0": 1.48,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 54,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0001279446587432176
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 43,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00011732046550605446
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 49,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 7.939140778034925e-05
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 40,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00011859922233270481
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 38,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00010510973515920341
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 45,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 9.226809197571129e-05
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 50,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00011679949966492131
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 50,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.0001037007023114711
+        }
+      ]
+    },
+    {
+      "z0": 1.49,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 33,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00010921625653281808
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 48,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00012330399476923048
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 46,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 8.244441414717585e-05
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 40,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 6.037659477442503e-05
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 41,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 5.39317297807429e-05
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 44,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 4.687463297159411e-05
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 42,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00012378131214063615
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 52,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00010932207806035876
+        }
+      ]
+    },
+    {
+      "z0": 1.5,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 97,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00011508114403113723
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 35,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00013208782183937728
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 46,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 4.286179682821967e-05
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 39,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00012390202027745545
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 41,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00010908720287261531
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 52,
+          "nativeGuideRoots": 2,
+          "capTriangleCentroidAreaM2": 9.935937123373151e-05
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 44,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00013243542343843728
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 54,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00011463990085758269
+        }
+      ]
+    },
+    {
+      "z0": 1.51,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 82,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00011989173799520358
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 26,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0001416531449649483
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 47,
+          "nativeGuideRoots": 2,
+          "capTriangleCentroidAreaM2": 9.520499588688836e-05
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 45,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00013319251593202353
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 47,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00011967961472691968
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 48,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00010801803728099912
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 49,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.0001419485779479146
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 53,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00011949513282161206
+        }
+      ]
+    },
+    {
+      "z0": 1.52,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 46,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00010803974873851985
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 35,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 7.501189247705042e-05
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 54,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00010650024341885
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 54,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0001556042698211968
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 56,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00013840805331710726
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 52,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00012365440488792956
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 57,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.00015483720926567912
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 46,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.00012264576798770577
+        }
+      ]
+    },
+    {
+      "z0": 1.53,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 18,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 7.950632425490767e-05
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 48,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 5.72180470044259e-05
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 60,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 8.558612171327695e-05
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 63,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 7.546840060967952e-05
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 45,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 6.810607737861574e-05
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 26,
+          "nativeGuideRoots": 1,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 2,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        }
+      ]
+    },
+    {
+      "z0": 1.54,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        }
+      ]
+    },
+    {
+      "z0": 1.55,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        }
+      ]
+    },
+    {
+      "z0": 1.56,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        }
+      ]
+    },
+    {
+      "z0": 1.57,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        }
+      ]
+    },
+    {
+      "z0": 1.58,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        }
+      ]
+    },
+    {
+      "z0": 1.59,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        }
+      ]
+    },
+    {
+      "z0": 1.6,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        }
+      ]
+    },
+    {
+      "z0": 1.61,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        }
+      ]
+    },
+    {
+      "z0": 1.62,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        }
+      ]
+    },
+    {
+      "z0": 1.6300000000000001,
+      "cells": [
+        {
+          "x0": -0.04,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.03,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.019999999999999997,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": -0.009999999999999995,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 6.938893903907228e-18,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.010000000000000009,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.02000000000000001,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        },
+        {
+          "x0": 0.030000000000000006,
+          "generatedRoots": 0,
+          "nativeGuideRoots": 0,
+          "capTriangleCentroidAreaM2": 0.0
+        }
+      ]
+    }
+  ],
+  "sourceVisibleRadiiWorldQuantilesM": [
+    9.79784454102628e-05,
+    9.79784454102628e-05,
+    9.79784454102628e-05,
+    9.79784454102628e-05,
+    9.79784454102628e-05,
+    9.79784454102628e-05
+  ],
+  "meaning": "Root/cap bins and source node links only. Empty projection bins do not by themselves establish a density/mask defect or account for covering free shafts. No contact or exact installed render-depsgraph certificate."
+}
