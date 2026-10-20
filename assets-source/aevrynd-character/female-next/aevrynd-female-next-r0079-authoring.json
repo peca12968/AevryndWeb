@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T10:11:44.379868+00:00",
+  "decision": "REJECT_R79_OPTICAL_MODELS_RETAIN_FINE_FIBRE_RESEARCH_CONTACT_UNACCEPTED_KEEP_R76",
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0079-a-physical-filaments-study.blend",
+      "sha256": "1b6b4f2c4cb6aaeb1a66090c39de6aec9bf4409e0a0395c1d2ac2e5c4e54ff76",
+      "bytes": 66649698,
+      "role": "REJECT_PALE_EXCESS_COVERAGE"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0079-b-optical-filaments-study.blend",
+      "sha256": "c59aebce083038483f00c912daa5912e380d5a421e8d5db14c8677262ad53f09",
+      "bytes": 57788393,
+      "role": "REJECT_PALE_OPTICS_AND_UNFIXED_COORDINATE_SPACE"
+    },
+    "c": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0079-c-microfacet-filaments-study.blend",
+      "sha256": "306e30451417e8ccd9be2651d3ddb15d81236ac3de0bf5fa34b3491d12f5a88a",
+      "bytes": 57788750,
+      "role": "REJECT_PALE_OPTICS_AND_UNFIXED_COORDINATE_SPACE"
+    },
+    "b-control": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0079-b-source-material-control.blend",
+      "sha256": "297c149a7fec248f3e7719c5b2c5a7c0b2cc2a4949816a872c26edd6a01ef43e",
+      "bytes": 58645527,
+      "role": "UNACCEPTED_GEOMETRY_ABLATION_UNFIXED_COORDINATE_SPACE"
+    },
+    "b-fixed": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0079-b-original-frame-filaments.blend",
+      "sha256": "b0e6ea7330745ab9a16c43f3da57532941c95f25b9ac3082b95ef99fb2e760af",
+      "bytes": 60428900,
+      "role": "RETAIN_COMPLETE_FINE_FIBRE_RESEARCH_CONTACT_UNACCEPTED_NOT_ADOPTED"
+    }
+  },
+  "methodsAttempted": 3,
+  "controlAndImplementationRepairNotAdditionalMethods": true,
+  "retainedAsCompleteAuthoringPrototype": false,
+  "adoptedFormalAsset": false,
+  "appearanceImprovement": "LOCAL_FRONT_VIEW_ONLY",
+  "selectedCompleteDefectResolved": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterStagnationReset": false,
+  "gates": {
+    "appearance": {
+      "status": "LOCAL_FRONT_VIEW_FINER_FIBRES_IN_B_CONTROL_NOT_WHOLE_CHARACTER_ACCEPTANCE",
+      "wholeCharacterScore": null,
+      "evidence": [
+        "r0079-complete-character-comparison.png",
+        "r0079-rejected-optical-methods.png"
+      ],
+      "opticalModelsRejectedAsPale": true,
+      "originalBrownHairProxyRetainedForControlOnly": true,
+      "majorSilhouetteAndFacialRealismUnresolved": true
+    },
+    "function": {
+      "status": "PASS_SAVED_GEOMETRY_CONTROL_DATA_AND_GUIDE_MEAN_SCOPE_ONLY",
+      "evidence": "b-original-frame-readback.json",
+      "actualGuideMeanPoses": [
+        {
+          "headYawDegrees": 0,
+          "maximumFamilyMeanDifferenceFromOriginalActualGuideM": 4.488473632784229e-07
+        },
+        {
+          "headYawDegrees": -20,
+          "maximumFamilyMeanDifferenceFromOriginalActualGuideM": 4.484080981820744e-07
+        },
+        {
+          "headYawDegrees": 20,
+          "maximumFamilyMeanDifferenceFromOriginalActualGuideM": 4.483659794507171e-07
+        }
+      ],
+      "allFiveNativeCagesKeysUVWeightsDriversExact": true,
+      "originalMaterialsLightDentalAndNeutralFlyawayExact": true,
+      "unfixedIdentityFrameVariantsNotQualified": true,
+      "newFullyQualifiedCompleteCapability": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_NATIVE_TUBE_MODEL_WITNESSES_NOT_RENDERER_CERTIFICATE",
+      "evidence": "b-actual-micro-contact.json",
+      "nativeTubeWitnesses": 6,
+      "witnessesAreNotGlobalCount": true,
+      "assumedModelScope": "Actual evaluated saved native Catmull-Rom centre curves, circular local-radius cross sections under the saved affine object matrix. Common interior cross-section points, with numerical plane residuals and radial margins, falsify disjoint shaft volumes. No end-taper, whole-hair, body, dynamic or runtime pass.",
+      "cyclesExactRepresentationCorrespondenceUnverified": true,
+      "actualRendererGlobalSignedMinimumM": null,
+      "bodyFollicleSelfContinuousDynamicContactAccepted": false,
+      "knownMovedHairBodyFailuresUnresolved": true
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "engineCpuGpuMemoryLODNotAccepted": true
+    }
+  },
+  "retainedResearch": {
+    "source": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0079-b-original-frame-filaments.blend",
+      "sha256": "b0e6ea7330745ab9a16c43f3da57532941c95f25b9ac3082b95ef99fb2e760af",
+      "bytes": 60428900,
+      "role": "RETAIN_COMPLETE_FINE_FIBRE_RESEARCH_CONTACT_UNACCEPTED_NOT_ADOPTED"
+    },
+    "purpose": "Finer filament front-view reference, actual source-material ablation, preserved-data/guide-mean lineage and native-model contact failure. Not an accepted working hair layer.",
+    "minimumIntegrationStep": "Reconstruct parent-family offsets without the converging transported interpolation, then inspect the same complete woman and affected contact/motion.",
+    "notAccepted": "Full hairstyle realism, anatomical follicles, self/body continuous contact, natural dynamics, physical scattering or engine."
+  },
+  "references": {
+    "primaryPaper": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11733847/",
+      "publicFulltextXML": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11733847/fullTextXML",
+      "fetched": true,
+      "title": "Quantifying whole human hair scalp fibres of varying curl: A micro-computed tomographic study",
+      "table": "Table5 FDAS, medium curl/typeIV major79.3um and minor49.2um.",
+      "interpretation": "Equivalent circular area diameter=sqrt(79.3*49.2)=62.463um. This is a limited sample reference, not a universal or population-calibrated biological model."
+    },
+    "scattering": {
+      "url": "https://www.pbr-book.org/4ed/Reflection_Models/Scattering_from_Hair",
+      "opened": true,
+      "use": "Pigmented absorbing core with dielectric reflection/transmission; typical IOR1.55, cuticle offset2degrees. No PBRT code imported."
+    },
+    "authoringChoices": "Seven circular render fibres per former coarse strand; original guide centerline retained. Six ring offsets chosen from diameter and1.5um shaft gap. Distal native-segment taper is authored, not a measurement from the paper. No follicle anatomy, contact or natural motion inherited."
+  },
+  "nextAction": "Keep complete r76 as registered working source and preserve original guide paths/root program and Brown hair material. R79 fine-fibre research has local front-view benefit but no full contact qualification. Replace the changing transported micro-offset frames, which can converge between native knots, with one geometrically justified constant-offset parent-family construction on the same complete woman. Bound the actual interpolation derivative cone and finite radius; if no packing fits a source envelope, preserve its original guide as one finite fibre rather than move/delete roots. First full-head/body preview determines appearance viability; no further pigment/roughness sweeps, no full contact/natural-motion claim from a within-family bound. Review the actual r78/r79/r80 three-round window after the next production round."
+}

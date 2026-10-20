@@ -1,0 +1,9 @@
+00:01.000  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0079-b-optical-filaments-study.blend"
+D:\Download\Aevrynd\scripts\character-next\diagnose-female-next-r0079-color.py:9: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN79_DIAGNOSTIC_EMISSION_ONLY');mat.use_nodes=True;t=mat.node_tree;t.nodes.clear();em=t.nodes.new('ShaderNodeEmission');em.inputs['Strength'].default_value=1.;att=t.nodes.new('ShaderNodeAttribute');att.attribute_name='AFN79_PigmentReflectance';out=t.nodes.new('ShaderNodeOutputMaterial');t.links.new(em.outputs[0],out.inputs['Surface']);o.data.materials[0]=mat
+00:11.578  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0079-physical-filaments\b-attribute-emission-diagnostic-face.png'
+00:19.344  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0079-physical-filaments\b-constant-emission-diagnostic-face.png'
+R79_COLOR_DIAGNOSTIC_DONE CURVE [[0.031256332993507385, 0.01639905944466591, 0.004290832206606865, 1.0], [0.11692231148481369, 0.09404147416353226, 0.04665004089474678, 1.0]] [{'link': 'DATA', 'material': 'AFN79_ABSORBING_CIRCULAR_FILAMENT'}]
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

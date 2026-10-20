@@ -1,0 +1,20 @@
+{
+  "primaryPaper": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11733847/",
+    "publicFulltextXML": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11733847/fullTextXML",
+    "fetched": true,
+    "title": "Quantifying whole human hair scalp fibres of varying curl: A micro-computed tomographic study",
+    "table": "Table5 FDAS, medium curl/typeIV major79.3um and minor49.2um.",
+    "interpretation": "Equivalent circular area diameter=sqrt(79.3*49.2)=62.463um. This is a limited sample reference, not a universal or population-calibrated biological model."
+  },
+  "scattering": {
+    "url": "https://www.pbr-book.org/4ed/Reflection_Models/Scattering_from_Hair",
+    "opened": true,
+    "use": "Pigmented absorbing core with dielectric reflection/transmission; typical IOR1.55, cuticle offset2degrees. No PBRT code imported."
+  },
+  "authoringChoices": "Preserve original paths and active material; constant perpendicular offsets per whole parent, finite radius from limited-sample diameter reference,2/3 children only when a derivative-cone construction fits original inscribed tube envelope; single original guide otherwise. This is an authoring design, not biological density calibration.",
+  "rendererReference": {
+    "url": "https://raw.githubusercontent.com/blender/blender/v5.0.0/intern/cycles/kernel/geom/curve_intersect.h",
+    "use": "Official Catmull-Rom thick-curve reference, read only. Not exact installed-build certification; no source copied."
+  }
+}

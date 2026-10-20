@@ -1,0 +1,11 @@
+00:01.296  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0076-a-proximal-crown-sculpt-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0079-filaments.py:17: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();ref=q.read(E/('b-original-frame-build-summary.json' if ORIGINAL else 'b-source-material-control-summary.json'));b=q.read(E/'b-build-summary.json');assert sha(Path(b['source']))==b['sourceSha256'];bpy.ops.wm.open_mainfile(filepath=b['source']);s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();names=list(q.read(E.parent/'r0060-ocular-assembly/b-build-summary.json')['visibleComponents'].values());native={n:v.signature(bpy.data.objects[n]) for n in names};mats={n.name:m.m.k.f.v.v32.material_signature(n) for n in bpy.data.materials if n.use_nodes};lights=m.q.lights();oldHair=q.hair(bpy.data.objects['AFN68_MAIN_RENDER_CURVES']).copy();oldFly=q.hair(bpy.data.objects['AFN68_FLYAWAY_RENDER_CURVES']).copy();oldAttrs={}
+00:19.250  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0079-b-original-frame-filaments.blend"
+R79_GUIDE_MEAN_POSE True 0 4.488473632784229e-07
+R79_GUIDE_MEAN_POSE True -20 4.484080981820744e-07
+R79_GUIDE_MEAN_POSE True 20 4.483659794507171e-07
+R79_GEOMETRY_CONTROL_READBACK [{'headYawDegrees': 0, 'maximumFamilyMeanDifferenceFromOriginalActualGuideM': 4.488473632784229e-07}, {'headYawDegrees': -20, 'maximumFamilyMeanDifferenceFromOriginalActualGuideM': 4.484080981820744e-07}, {'headYawDegrees': 20, 'maximumFamilyMeanDifferenceFromOriginalActualGuideM': 4.483659794507171e-07}] UNRESOLVED_EQUIVALENT_CIRCLE_SAMPLES_NOT_ACTUAL_ELLIPSE_PENETRATION 1.3043989108902681e-05 39.31221032142639
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

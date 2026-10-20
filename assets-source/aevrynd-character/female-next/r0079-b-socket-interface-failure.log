@@ -1,0 +1,19 @@
+00:01.297  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0076-a-proximal-crown-sculpt-study.blend"
+D:\Download\Aevrynd\scripts\character-next\author-female-next-r0079-physical-filaments.py:31: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN79_ABSORBING_CIRCULAR_FILAMENT');mat.use_nodes=True;tree=mat.node_tree;tree.nodes.clear();hair=tree.nodes.new('ShaderNodeBsdfHairPrincipled');hair.name='AFN79_DIELECTRIC_PIGMENT_CHIANG';hair.model='CHIANG';hair.parametrization='COLOR' if OPTICAL else 'MELANIN'
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0079-physical-filaments.py", line 75, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0079-physical-filaments.py", line 72, in main
+    tick=time.time();assert not OUT.exists() and sha(SRC)==SHA;bpy.ops.wm.open_mainfile(filepath=str(SRC));bpy.context.scene.frame_set(1);m.m.shade.settings();mat,params=material();rows=[make(bpy.data.objects[n],mat) for n in (('AFN68_MAIN_RENDER_CURVES',) if OPTICAL else ('AFN68_MAIN_RENDER_CURVES','AFN68_FLYAWAY_RENDER_CURVES'))];s=bpy.context.scene;m.m.k.b.camera('face');s.camera.data.lens=85;bpy.context.preferences.filepaths.save_version=0;s['AFN79_scope']='Physical filament appearance study, '+str(K)+' render fibres per source bundle. Source guide layout/root frames retained as family mean/centre; no follicle, natural motion, complete contact or runtime acceptance.';bpy.ops.wm.save_as_mainfile(filepath=str(OUT),compress=True);save(TAG+'-build-summary.json',{'source':str(SRC),'sourceSha256':SHA,'output':str(OUT),'outputSha256':sha(OUT),'outputBytes':OUT.stat().st_size,'representation':rows,'material':mat.name,'hairBSDF':'CHIANG/COLOR_BOUNDED_SOURCE_REFLECTANCE' if OPTICAL else 'CHIANG/MELANIN','sourceFlyawayNativeDataAndMaterialPreserved':OPTICAL,'densityRationale':'Projected-width quotient round(old mean world diameter/new circular diameter)=3, equilateral micro-bundle mean retains guide. Optical authoring approximation, not measured biological density.' if OPTICAL else 'Seven-fibre hexagonal cross-section fill, visually rejected for excessive coverage and pale response.','materialParameters':params,'noDensityRadiusPigmentSweep':True,'bodyFaceOralLightExposureUnedited':True,'secondsBeforePilot':time.time()-tick});controls=[]
+                                                                                                                                                                          ~~~~~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0079-physical-filaments.py", line 36, in material
+    pigment=tree.nodes.new('ShaderNodeAttribute');pigment.attribute_name='AFN79_PigmentReflectance';tree.links.new(pigment.outputs['Color'],hair.inputs['Color']);hair.inputs['Random Color'].default_value=0.
+                                                                                                                                                                  ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'bpy_prop_collection[key]: key "Random Color" not found'
+
+Error: script failed, file: 'scripts\character-next\author-female-next-r0079-physical-filaments.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
