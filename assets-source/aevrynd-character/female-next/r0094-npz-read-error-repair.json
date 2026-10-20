@@ -1,0 +1,8 @@
+{
+  "verifiedAtUTC": "2026-10-20T19:11:41.570333+00:00",
+  "stoppedProcess": 65744,
+  "reason": "Confirmed source bug: two NPZ key lookups per strand decompress entire11MB arrays in each of28002 iterations. This is not an observation timeout or unknown terminal state.",
+  "fix": "Cache oldRaw and roundRaw once, use in-memory indexed rows.",
+  "sameCandidateConstructionAndOriginalDeadlines": true,
+  "modelSavedByAbortedJob": false
+}

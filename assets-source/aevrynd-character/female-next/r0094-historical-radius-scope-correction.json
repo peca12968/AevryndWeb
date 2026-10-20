@@ -1,0 +1,39 @@
+{
+  "kind": "ADDITIVE_HISTORICAL_SOURCE_FIDELITY_SCOPE_CORRECTION",
+  "proof": {
+    "verifiedUTC": "2026-10-20T19:15:25.633108+00:00",
+    "installedBlender": "5.2.2 LTS d13f752e3b9c",
+    "officialExactBuildSource": "https://raw.githubusercontent.com/blender/blender/d13f752e3b9c/intern/cycles/blender/curves.cpp",
+    "officialSourceSha256": "aee7f48e98facf1da0a1cace79776a9bc74467f9aedd7a8409e41d9b89841e2f",
+    "particleConversionLines": [
+      107,
+      109,
+      110
+    ],
+    "nativeCurvesRadiusAttributeLines": [
+      822,
+      826
+    ],
+    "installedUILabelSource": "D:/SteamLibrary/steamapps/common/Blender/5.2/scripts/startup/bl_ui/properties_particle.py:2222",
+    "installedUILabel": "Diameter Root",
+    "sourceRootDiameterNativeM": 0.00011999999836087225,
+    "sourceCyclesRootRadiusNativeM": 5.999999918043612e-05,
+    "sourceTipDiameterNativeM": 0.00011999999836087225,
+    "sourceCloseTip": true,
+    "sourceShape": 0.0,
+    "priorNativeCurvesRadiusWasTwiceSourceCyclesRadius": true,
+    "sourceParentsRenderPolicyAlsoDiffersButAll28002RetainedThisTrial": true,
+    "scope": "Verified radius/diameter conversion error. Do not overwrite historical actual radii, change old failures, infer biological calibration, source interpolation equivalence or contact/naturalness pass. No source implementation copied; formula and provenance only."
+  },
+  "affectedVerifiedRevisions": [
+    "r0092 native Eve conversion",
+    "r0093 A/B inheriting r92 radii",
+    "r0094 A preserving prior native radii"
+  ],
+  "historicalActualNativeRadiusM": 0.00011999999836087225,
+  "correctSourceCyclesRadiusNativeM": 5.999999918043612e-05,
+  "historicalFilesScoresFailuresAndCountersUnchanged": true,
+  "correction": "Historical numerical native curve radii still describe what those files display. The assertion that they preserved the source Cycles fibre width was wrong: source particle diameter was written to native radius. Those actual old failures stand, but must not be treated as source-fidelity comparisons or transferred to corrected-width geometry. Source close-tip was also not previously preserved.",
+  "noBiologicalCalibrationOrContactPassFromConversionRepair": true,
+  "sourceParentsVsRenderChildrenAlsoNotFullSourceRenderEquivalence": true
+}

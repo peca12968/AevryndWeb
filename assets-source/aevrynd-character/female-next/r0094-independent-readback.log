@@ -1,0 +1,15 @@
+00:02.531  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0092-a-native-Eve-groom.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0094-saved.py:13: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();h.open_file(S/'aevrynd-female-next-r0092-a-native-Eve-groom.blend');names=m.rig.native_names()+['AFN59_LASHES_NATIVE_POINT_POSES'];sig={n:h.native.signature(bpy.data.objects[n]) for n in names};rig=h.rig_signature();lights=m.m.q.lights();mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes and (x.users or x.use_fake_user)};faces={n:q.hair(bpy.data.objects[n]).copy() for n in ['AFN57_NATIVE_BROWS','AFN57_NATIVE_LASHES']};caps={n:h.helpers.cap_signature(bpy.data.objects[n]) for n in ['AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID','AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE']};results={};proof=json.loads((E/'radius-semantics-proof.json').read_text('utf8'));sourceSettings=json.loads((E/'original-Eve-emission.json').read_text('utf8'))['settings'];bExpected=np.array(policy.legacy_particle_point_radii(sourceSettings,33),'f4')
+00:07.828  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0094-a-semantic-growth-free-volume.blend"
+R94_INDEPENDENT a 11.410754442214966
+00:14.422  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0094-b-source-width-growth-volume.blend"
+R94_INDEPENDENT b 19.03374743461609
+00:21.984  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0094-c-native-emitter-guides.blend"
+R94_INDEPENDENT c 24.923792600631714
+00:27.859  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0094-c-native-emitter-visible.blend"
+R94_INDEPENDENT c-visible 30.743131160736084
+R94_READBACK_DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
