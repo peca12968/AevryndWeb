@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T05:27:38.102209+00:00",
+  "decision": "REJECT_FORM_RECIPE_KEEP_R69_RETAIN_NATIVE_MORPH_DATA_ONLY",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0072-a-authored-cheek-jaw-study.blend",
+  "sourceSha256": "5974b5266f49ce6f1e243ef07908bff2b83a4f60b4661db6fe3537ce3896ca16",
+  "coefficients": {
+    "Cheeks_BoneDefinition": 0.5,
+    "Jaw_Definition": 0.35
+  },
+  "appearanceImprovement": false,
+  "selectedCompleteDefectResolved": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "adoptedModel": false,
+  "wholeCharacterScore": null,
+  "gates": {
+    "appearance": {
+      "status": "REJECTED_MARGINAL_CONTOUR_CHANGE_COMPLETE_DEFECT_UNRESOLVED",
+      "evidence": [
+        "r0072-complete-form-comparison.png",
+        "r0072-angle-light-comparison.png"
+      ],
+      "sameConditionViews": 6,
+      "visibleGain": "Small cheek/jaw contour differences; no convincing whole-face realism improvement.",
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "PASS_SAVED_NATIVE_SCULPT_AND_REVERSIBLE_CONTROLS_ONLY",
+      "evidence": "independent-readback.json",
+      "oldNativeKeysUVMaterialsWeightsAndBonesPreserved": true,
+      "eyesAndFacialFibresExactAtThreePoses": true,
+      "neutralR69GeometryRecoveredWhenTwoNewKeysDisabled": true,
+      "newFullyQualifiedCompleteCapability": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_NO_NEW_BODY_ORAL_HAIR_CONTACT_CERTIFICATE",
+      "globalSignedMinimumM": null,
+      "newFormTouchesOralAndSkinSurfaces": true,
+      "oldEyeGeometryEqualityNotWholeBodyContactAcceptance": true,
+      "knownR69TurnPenetrationUnresolved": true,
+      "noAdditionalExpensiveContactExpansionForVisuallyRejectedRecipe": true
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "engineCpuGpuMemoryLODNotAccepted": true
+    }
+  },
+  "actualBodyChangesAtThreePoses": [
+    {
+      "verticesOrPoints": 560738,
+      "maximumComparedToR69M": 0.0033670431797963004,
+      "changedAbove1Micrometre": 41013,
+      "currentGeometrySha256": "8735debd32bad4a6841012b512a744db7a21ce5755085e504201c08c635810fa",
+      "evaluatedPolygonTopologyExact": true,
+      "changedTessellationTriangleRows": 2
+    },
+    {
+      "verticesOrPoints": 560738,
+      "maximumComparedToR69M": 0.0033597148321897396,
+      "changedAbove1Micrometre": 41006,
+      "currentGeometrySha256": "27d78bd7e1a8bdf8179af149755dd2bf680d8e43bebffbc2b4a2e72187fc0c7b",
+      "evaluatedPolygonTopologyExact": true,
+      "changedTessellationTriangleRows": 2
+    },
+    {
+      "verticesOrPoints": 560738,
+      "maximumComparedToR69M": 0.0033670431797963004,
+      "changedAbove1Micrometre": 41013,
+      "currentGeometrySha256": "941d6b0eb3a55724acc43903187e8a85bab5b398bf99fa1e0cdccbfd59e899a7",
+      "evaluatedPolygonTopologyExact": true,
+      "changedTessellationTriangleRows": 2
+    }
+  ],
+  "validatorCorrection": "The initial verifier incorrectly required geometry-dependent quad tessellation diagonals to stay identical. The corrected independent check requires actual evaluated polygon connectivity to remain exact and reports changed triangle rows; original failed log retained. This is a verification-assumption correction, not a relaxed contact gate.",
+  "retainedResearch": {
+    "purpose": "Pinned CC0 same-index facial sculpt DATA and a demonstrated reversible shape-key import path on the complete actor; the selected appearance recipe is not accepted.",
+    "scope": "Original native sculpt offsets, original keys/materials/weights and three sampled configurations. No human-realism, optical/contact, full animation or engine acceptance.",
+    "minimumIntegrationStep": "Any future independently justified facial sculpt/expression must import its exact native delta onto the same female+repair basis and revalidate affected facial/ocular/oral/fibre relations; do not reuse this failed recipe as a better face."
+  },
+  "nextAction": "Keep exact complete r69A as active work character and r65 as the separately scoped ocular/anatomy fallback. R72 cheek0.5/jaw0.35 form recipe is rejected for insufficient complete-face realism gain; do not sweep these weights or extend a chain of regional shape variants. Raw pinned CC0 native morph data and verified reversible keys are technical research only, not an adopted face or a new fully usable capability. Change the next production basis to the original complete CC0 Vitruvian skin/material semantics on the same complete woman, rather than the simplified canonical wrapper. Reuse r66 source-material-diagnosis.json and native-skin-values.json: the source contains41-node VitruvianSkin plus MicroSkin, Skin.LUT and related lookup/roughness groups that the selected r66 height/transport wrapper did not reproduce. First establish a bounded full-source material reference and its exact settings, images, UV and unit semantics, then integrate one actual complete-character candidate with fixed geometry, pigment controls and lighting. Do not resume r66 bump/SSS/roughness/pigment/exposure sweeps or silently claim that extra nodes improve realism. If unsafe native tiled images require a compatible leaf lookup, use the verified flat EXRs/native UV correspondence and record semantic differences; no addon/embedded code execution or opaque replacement source. Deliver same-condition full-head/body and second-light evidence before any adoption. Learning from Digital Emily concerns geometry/reflectance/normal separation only; no Emily model, texture, OSL or reference-image data has been downloaded/incorporated or established as usable in this commercial engine asset. Existing hair dynamics and contacts, facial/oral/cloth layers and actions, deformation, actual engine import/material/LOD/performance and explicit female acceptance remain required. Failed r70 physics and r71 material methods stay stopped."
+}

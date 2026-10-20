@@ -1,0 +1,17 @@
+00:01.422  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0069-a-complete-controls-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0072-craniofacial.py:29: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  native={n:v.mesh_signature(bpy.data.objects[n]) for n in q.m.native_names()};hair={n:q.m.k.v59.native_curves(bpy.data.objects[n]) for n in HAIR};mats={x.name:q.m.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes};ctrl=controls();lights=q.q.lights();view=[bpy.context.scene.view_settings.exposure,bpy.context.scene.view_settings.view_transform,bpy.context.scene.view_settings.look];v.raise_subdivision();baseline=pose_rows()
+00:22.875  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0072-a-authored-cheek-jaw-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0072-craniofacial.py", line 66, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0072-craniofacial.py", line 50, in main
+    if 'T' in x:assert np.array_equal(x['T'],b['T'])
+                       ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'scripts/character-next/verify-female-next-r0072-craniofacial.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
