@@ -1,0 +1,27 @@
+00:01.297  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0076-a-proximal-crown-sculpt-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0078-anatomic-locks.py", line 87, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0078-anatomic-locks.py", line 81, in main
+    rig=m.m;rig.E=E;actualBody=bpy.data.objects['AFN60_BODY_ORAL_AND_OCULAR_LINING'];row=rig.k.mesh(actualBody);bodyTree=BVHTree.FromPolygons(row['V'].tolist(),row['T'].tolist(),all_triangles=True);binding=rig.follower(o,actualBody,bpy.data.objects['AFN69_REST_BODY_POINT_REFERENCE'],row,bodyTree);save('c-new-root-binding.json',{'binding':binding,'rebuiltRoots':rebuiltRoots,'noNaturalMotionOrContactAcceptance':True})
+                                                                                                                                                                                                                                                                                                          ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0078-anatomic-locks.py", line 20, in save
+    def save(n,v):(E/n).write_text(json.dumps(v,indent=2)+'\n',encoding='utf-8')
+                                   ~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\__init__.py", line 242, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\encoder.py", line 202, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\encoder.py", line 263, in iterencode
+    return _iterencode(o, 0)
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\encoder.py", line 182, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type float32 is not JSON serializable
+
+Error: script failed, file: 'scripts\character-next\author-female-next-r0078-anatomic-locks.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

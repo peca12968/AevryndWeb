@@ -1,0 +1,17 @@
+{
+  "sources": [
+    {
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/hair-physics-in-unreal-engine---overview",
+      "opened": true,
+      "use": "Qualitative distinction between rendering guides that define clump/flow structure and simulation guides; manual authoring of guide shape matters. No Unreal, MetaHuman data, solver, code or runtime dependency imported."
+    },
+    {
+      "path": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0068-guide-structure\\reference-original-long-hair.png",
+      "use": "Existing attributed Daniel Bystedt hairstyle source reference, inspected privately to distinguish its deliberate outward style from the desired layered lower locks. Not our character result.",
+      "licenseNotice": "CC BY-SA, author did not specify version; original source and all existing notices retained."
+    }
+  ],
+  "design": "Retain existing crown/parting and source roots. Directly construct lower side/back rest corridors against actual displayed ear/neck/shoulder sections, with bundle separation and distinct terminal levels. No shared direction field, no forced rest-edge length solve.",
+  "assetImportThisRound": false,
+  "newExternalSoftwareInstalled": false
+}

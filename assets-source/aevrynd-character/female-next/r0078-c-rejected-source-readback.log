@@ -1,0 +1,8 @@
+00:01.656  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0076-a-proximal-crown-sculpt-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0078-rejected-source.py:17: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();ref=q.read(E/'c-build-summary.json');assert sha(Path(ref['source']))==ref['sourceSha256'];bpy.ops.wm.open_mainfile(filepath=ref['source']);bpy.context.scene.frame_set(1);bpy.context.view_layer.update();names=list(q.read(E.parent/'r0060-ocular-assembly/b-build-summary.json')['visibleComponents'].values());native={n:v.signature(bpy.data.objects[n]) for n in names};materials={mat.name:m.m.k.f.v.v32.material_signature(mat) for mat in bpy.data.materials if mat.use_nodes};lights=m.q.lights();oldfly=q.hair(bpy.data.objects['AFN68_FLYAWAY_RENDER_CURVES']).copy();dental={n:q.arr(bpy.data.objects[n].data.vertices,'co',len(bpy.data.objects[n].data.vertices),3).copy() for n in ('AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID')};z=np.load(E/'c-lower-lock-lineage.npz');o=bpy.data.objects['AFN68_MAIN_RENDER_CURVES'];actualOld=q.hair(o);sourceWorld=z['sourceWorld'];assert np.linalg.norm(actualOld-sourceWorld,axis=1).max()<1e-6
+00:20.281  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0078-c-scalp-bound-locks-study.blend"
+R78_REJECTED_SOURCE_PRESERVATION_ONLY 1.7713637134313673e-07 29.32706618309021
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

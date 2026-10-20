@@ -1,0 +1,14 @@
+00:01.281  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0076-a-proximal-crown-sculpt-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0078-anatomic-locks.py", line 68, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0078-anatomic-locks.py", line 54, in main
+    assert np.isfinite(new).all() and delta.max()<.1;local=new@inv[:3,:3].T+inv[:3,3];local[pins]=P[pins];o.data.position_data.foreach_set('vector',local.astype('f4').ravel());o.data.update_tag();assert changed>1000
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'scripts\character-next\author-female-next-r0078-anatomic-locks.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
