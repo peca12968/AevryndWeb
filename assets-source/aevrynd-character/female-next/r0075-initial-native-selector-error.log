@@ -1,0 +1,14 @@
+00:00.359  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0074-c-rigid-dentition-controls-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\qualify-female-next-r0075-dental-motion.py", line 64, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\qualify-female-next-r0075-dental-motion.py", line 42, in main
+    tick=time.time();old=read(OLD/'c-build-summary.json');bpy.ops.wm.open_mainfile(filepath=old['output']);s=bpy.context.scene;s.frame_set(1);native_names=[o.name for o in bpy.data.objects if o.type=='MESH' and o.data.attributes.get('AFN60_NativeVertexID')];assert len(native_names)==5;native={n:signature(bpy.data.objects[n]) for n in native_names};skin='AFN74_SKIN_AND_EXISTING_OCULAR_LINING';hn=['AFN68_MAIN_RENDER_CURVES','AFN68_FLYAWAY_RENDER_CURVES'];source={}
+                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'scripts\character-next\qualify-female-next-r0075-dental-motion.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

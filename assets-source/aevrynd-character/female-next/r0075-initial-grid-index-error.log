@@ -1,0 +1,17 @@
+00:00.672  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0074-c-rigid-dentition-controls-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0075-occlusion.py", line 64, in <module>
+    if '--inspect' in sys.argv:preflight()
+                               ~~~~~~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0075-occlusion.py", line 24, in preflight
+    assert point_tooth.min()>=0;origin=np.floor(u[:,:2].min(0)/CELL)*CELL-CELL;shape=np.ceil((u[:,:2].max(0)-origin)/CELL).astype('i4')+2;upper=raster_bounds(u,u,ut,origin,shape,'min');deltas=[];rows=[]
+                                                                                                                                                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0075-occlusion.py", line 12, in raster_bounds
+    lo=np.floor((vmin[t].min(1)[:,:2]-origin)/CELL).astype('i4');hi=np.floor((vmax[t].max(1)[:,:2]-origin)/CELL).astype('i4');lo=np.maximum(lo,0);hi=np.minimum(hi,np.array(shape)-1);valid=np.all(lo<=hi,axis=1);lo=lo[valid];hi=hi[valid];z=(vmin[t,:,2].min(1) if mode=='min' else vmax[t,:,2].max(1))[valid]
+                                                                                                                                                                                                                                               ~~~~^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
+
+Error: script failed, file: 'scripts\character-next\author-female-next-r0075-occlusion.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,0 +1,28 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0075-b-coordinated-arch-study.blend",
+  "sourceSha256": "0bc1efdf498c5284f643dc0044426fc1142ac2e3f92a37b32f568fe5b69f66c4",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0075-c-coordinated-oral-arc-study.blend",
+  "outputSha256": "367198d2448a401715f09174c5587e092f5ea9b53c0de2544eb59d6c5cf4cc59",
+  "outputBytes": 53979373,
+  "wholeArchShiftWorldM": [
+    0.0,
+    0.002159633168481898,
+    -0.001079816584240949
+  ],
+  "openingAngleRadiansUnchanged": 0.4842001497745514,
+  "endpointMaximumBodyLocalErrorsM": {
+    "1": 0.0,
+    "13": 0.0
+  },
+  "newKeys": [
+    "RADIAL",
+    "TANGENT"
+  ],
+  "weightRange": [
+    0.0,
+    1.0
+  ],
+  "formula": "w*(rigidJawArc(q)-q*rigidJawArc(1)); zero at both endpoints, corrects linear-blend chord shrink of oral support. Original native endpoint residual remains.",
+  "assumptions": "Source-derived jaw affinity from constrained support field, not calibrated clinical biomechanics. Upper gum/cavity still combined.",
+  "contactNaturalDynamicsAndRuntimeAccepted": false
+}
