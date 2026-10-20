@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T17:44:15.433263+00:00",
+  "decision": "REJECT_TWO_COMPLETE_HAIR_RECONSTRUCTIONS_RETAIN_STUDIO_GUIDE_DATA_ONLY",
+  "productionMethods": 2,
+  "savedCompleteSources": 2,
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterStagnationReset": false,
+  "wholeCharacterScore": null,
+  "completeCharacterResult": "本輪未改善完整人物",
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0091-a-section-loft-fibres.blend",
+      "sha256": "d37414dd8f7ae69fd27e39e60415f18ccfd9fc5d7185b0b80b622f8dd32b1ad5",
+      "bytes": 89911247,
+      "status": "VISUALLY_REJECTED"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0091-b-studio-guide-bob.blend",
+      "sha256": "3f9b9a89d999306a4c500fe6441edf1852f5acea7ac68c7becc0e968ddf030f5",
+      "bytes": 78148844,
+      "status": "VISUALLY_REJECTED"
+    }
+  },
+  "gates": {
+    "appearance": {
+      "status": "REJECT_BOTH_COMPLETE_PREVIEWS_NO_ADOPTED_GAIN",
+      "wholeCharacterScore": null,
+      "adoptedAppearanceGain": false,
+      "aDefects": [
+        "Recognizable individual fibres still inherit solid stylized quiff/shell shape.",
+        "Tail remains too uniform, broad smooth bundles and artificial head silhouette."
+      ],
+      "bDefects": [
+        "Exposed scalp/unnatural crown separation.",
+        "Brush-like side tufts and chopped blocky tips; distorted authored groom after transfer.",
+        "Face/skin still visibly smooth and artificial; unmodified this round."
+      ],
+      "matchedActualViews": "matched-view-controls.json",
+      "actualBoard": "r0091-complete-character-comparison.png",
+      "cameraLightPoseExposureSettingsExactAfterExplicitDepsgraphUpdate": true,
+      "secondLightBroadAnglesStoppedAfterVisualRejection": true
+    },
+    "function": {
+      "status": "PASS_MINIMUM_REOPEN_AND_DATA_ONLY",
+      "evidence": "minimum-saved-readback.json",
+      "bothSourcesIndependentlyReopened": true,
+      "eachActualCurves": 21908,
+      "eachPointsPerCurve": 64,
+      "sourceStudioRigCodeDependency": false,
+      "existingBodyFaceRigMaterialsPreserved": true,
+      "newFullyUsableCompleteOperation": false,
+      "controllersAreStaticNoLiveEditingOrBodyFollowQualification": true
+    },
+    "contact": {
+      "status": "UNACCEPTED_NOT_EXPANDED_AFTER_VISUAL_REJECTION",
+      "allRootsRetained": true,
+      "globalSignedMinimumM": null,
+      "rootDataScope": "Actual scalp triangle/barycentric/normal saved; not finite hair/body/self attachment or continuous clearance.",
+      "staticDynamicContinuousOrNaturalMotionQualified": false
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "actualAevryndImportLODCPU_GPU_MemoryPhysicsUnaccepted": true
+    }
+  },
+  "scopedReferenceOnly": {
+    "source": "D:\\Download\\Aevrynd\\Reference\\character\\blender-studio-ellie-v1-cc-by4\\ellie.blend",
+    "scope": "Original172 native short-hair proxy chain ordering and author shapes; reference/transfer research only, not accepted appearance, anatomical attachment, dynamics or runtime.",
+    "officialPage": "https://studio.blender.org/characters/ellie/v1/",
+    "license": "CC-BY4.0",
+    "credit": "Ellie / Sprite Fright, Blender Studio / Blender Foundation; publisher Demeter Dzadik.",
+    "sourceCharacterBodyFaceRigCodeTransferred": false
+  },
+  "nextAction": "Both r91 complete appearances are rejected; keep formal r1, registered r76 body/oral, r81B unaccepted curly, r88B scoped lids/lashes and r90 scoped references unchanged. Do not extend Rain distributed-patch section lofts as a realism remedy: fibres retain the stylized shell/quiff and overly regular tail. Do not sweep Rain sections/density/radius/shaders. Do not extend the Ellie eye/skull/back affine fit plus independent per-guide root translation and three-geodesic-neighbour shaft interpolation: it produces bald crown and brush-like lateral tufts; original guide-root translations reach74.1mm, so authored groom identity/attachment is not preserved by that mapping. Ellie native proxy chain order is verified, but its source intentionally uses a muppet/stop-motion style and is not a photographic realism standard. No more source shopping merely to repeat detached affine/root translation. Next choose an evidence-backed actual-scalp grooming/sculpting construction with explicit human part/crown/temple/nape flow and independent natural-hair visual references, or first verify exact source scalp/guide attachment and a genuinely continuous anatomical source-to-target deformation before using another original groom. Existing r82 frame-transport failures remain retired; new correspondence evidence must change their premise before any reuse, not just rename transport. Directly author the complete hairstyle on the actual adult head and show head/rear/body fibre previews before broad checks. Do not spend another production round only on registration/API/controller tools. Preserve all roots, failed evidence, source credits and existing body/face/control functionality; all face/skin, body/clothes/layers/actions, finite/self/continuous contacts, natural hair dynamics and Aevrynd runtime/LOD/performance remain mandatory."
+}

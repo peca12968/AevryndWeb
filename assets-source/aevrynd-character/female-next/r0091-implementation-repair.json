@@ -1,0 +1,5 @@
+{
+  "cause": "Installed Blender5.2 exposes Resample Curve mode as a Mode menu socket rather than an RNA mode property. Actual empty-scene RNA/input inspection verified names/default Count.",
+  "repair": "Use res.inputs[Mode].default_value=Count. Geometry, counts, criteria and source unchanged.",
+  "newProductionMethod": false
+}

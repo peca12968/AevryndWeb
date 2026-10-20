@@ -1,0 +1,11 @@
+00:02.922  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0088-b-supported-lid-aperture.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0091-studio-guides.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();assert not OUT.exists() and sha(SRC)=='72435890a03cab26ff2f3e238060daf2b2cf797f85543d8fd6182583cc1101a7';report=json.loads((E/'studio-authoring.json').read_text(encoding='utf8'));assert report['allRequestedRootsConstructed'];bpy.ops.wm.open_mainfile(filepath=str(SRC));s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();data=np.load(E/'authored-studio-fibres.npz');P=data['pathsWorld'].astype('f8');COUNT,N=P.shape[:2];old=bpy.data.objects['AFN81_EDITABLE_CURLY_GUIDES'];A=np.array(old.matrix_world);stage=m.m.rig.k.f.v.stage();mats={x.name:m.m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes}
+00:17.844  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0091-clump-cross-sections\b-studio-guide-bob-back.png'
+00:28.656  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0091-clump-cross-sections\b-studio-guide-bob-face.png'
+00:34.031  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0091-clump-cross-sections\b-studio-guide-bob-body-face.png'
+資訊: 已儲存為「aevrynd-female-next-r0091-b-studio-guide-bob.blend」
+R91_COMPLETE_STUDIO_GUIDE_BOB_PREVIEW_DONE 33.25236773490906
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

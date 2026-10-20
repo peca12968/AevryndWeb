@@ -1,0 +1,41 @@
+"""One complete-woman section-loft fibre candidate, actual native curve output.
+Reuse a copied/resampled evaluated curve allocation instead of retrying the
+previous crashing new/add_curves path. No original object/data is edited.
+"""
+from pathlib import Path
+import bpy, numpy as np, json, hashlib, importlib.util, time
+from mathutils import Vector, Matrix
+from mathutils.bvhtree import BVHTree
+R=Path('D:/Download/Aevrynd');S=R/'engine/assets/characters/female-next/source';E=R/'Evidence/character-female-next/r0091-clump-cross-sections';SRC=S/'aevrynd-female-next-r0090-b-rain-hair-shape-study.blend';OUT=S/'aevrynd-female-next-r0091-a-section-loft-fibres.blend'
+def mod(n,f):
+ sp=importlib.util.spec_from_file_location(n,Path(__file__).with_name(f));m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);return m
+m=mod('r91loftsrc','build-female-next-r0090-rain-hair.py');v=mod('r91loftviews','render-female-next-r0081-retained-study.py');v.E=E;q=m.q
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+def save(n,x):(E/n).write_text(json.dumps(x,indent=2)+'\n',encoding='utf8')
+def main():
+ tick=time.time();assert not OUT.exists() and sha(SRC)=='b28711d6b4f747829def389ada85440a2f3d6bd6016c5c0053d3ca38ae7f7d9f';report=json.loads((E/'section-authoring.json').read_text(encoding='utf8'));assert report['allRequestedRootsConstructed'];bpy.ops.wm.open_mainfile(filepath=str(SRC));s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();data=np.load(E/'authored-fibre-lofts.npz');P=data['pathsWorld'].astype('f8');COUNT,N=P.shape[:2];old=bpy.data.objects['AFN81_EDITABLE_CURLY_GUIDES'];A=np.array(old.matrix_world);stage=m.m.rig.k.f.v.stage();mats={x.name:m.m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes}
+ scalp=np.load(R/'Evidence/character-female-next/r0090-native-scalp-groom/a-guide-lineage.npz');V=scalp['scalpWorld'];T=scalp['scalpTriangles'];tree=BVHTree.FromPolygons(V.tolist(),T.tolist(),all_triangles=True);faces=[];bary=[];anchors=[];normal=[]
+ for root in P[:,0]:
+  co,no,fi,d=tree.find_nearest(Vector(root));bc=m.m.rig.base.bary(np.array(co),V[T[fi]]);faces.append(fi);bary.append(bc);anchors.append(np.array(co));normal.append(np.array(no))
+ anchors=np.array(anchors);normal=np.array(normal);roots=anchors+normal*.00005;delta=roots-P[:,0];arc=np.concatenate((np.zeros((COUNT,1)),np.cumsum(np.linalg.norm(np.diff(P,axis=1),axis=2),axis=1)),axis=1);u=np.clip(arc/.018,0,1);w=1-u*u*(3-2*u);P+=delta[:,None,:]*w[:,:,None];P[:,0]=roots;assert np.isfinite(P).all()
+ # Copy the existing evaluated generator through a temporary resample node.
+ temp=old.copy();temp.name='AFN91_TEMP_RESAMPLE_EXISTING_CURVES';s.collection.objects.link(temp);temp.hide_render=True;temp.hide_set(False);ng=bpy.data.node_groups.new('AFN91_TEMP_RESAMPLE_CURVES','GeometryNodeTree');ng.interface.new_socket(name='Geometry',in_out='INPUT',socket_type='NodeSocketGeometry');ng.interface.new_socket(name='Geometry',in_out='OUTPUT',socket_type='NodeSocketGeometry');i=ng.nodes.new('NodeGroupInput');o=ng.nodes.new('NodeGroupOutput');res=ng.nodes.new('GeometryNodeResampleCurve');res.inputs['Mode'].default_value='Count';res.inputs['Count'].default_value=N;ng.links.new(i.outputs['Geometry'],res.inputs['Curve']);ng.links.new(res.outputs['Curve'],o.inputs['Geometry']);md=temp.modifiers.new('AFN91_TEMP_RESAMPLE','NODES');md.node_group=ng;bpy.context.view_layer.update();evaluated=temp.evaluated_get(bpy.context.evaluated_depsgraph_get()).data;counts=np.array([c.points_length for c in evaluated.curves]);assert len(counts)==COUNT and np.all(counts==N),(len(counts),np.unique(counts));d=evaluated.copy();d.name='AFN91_SECTION_LOFT_FIBRE_DATA';bpy.data.objects.remove(temp,do_unlink=True);bpy.data.node_groups.remove(ng)
+ # Remove stale inherited source bindings; no claim of live skin-following.
+ for at in list(d.attributes):
+  if at.name.startswith(('AFN','surface_uv_coordinate')):d.attributes.remove(at)
+ if hasattr(d,'surface'):d.surface=None
+ L=(P.reshape(-1,3)-A[:3,3])@np.linalg.inv(A[:3,:3]).T;d.position_data.foreach_set('vector',L.astype('f4').ravel());radius=d.attributes.get('radius') or d.attributes.new('radius','FLOAT','POINT');rr=np.broadcast_to(.00005*(1-.85*np.linspace(0,1,N)**5),(COUNT,N))/np.linalg.norm(A[:3,0]);radius.data.foreach_set('value',rr.astype('f4').ravel());d.materials.clear();d.materials.append(bpy.data.materials['Brown hair']);ob=bpy.data.objects.new('AFN91_SECTION_LOFT_RENDER_FIBRES',d);s.collection.objects.link(ob);ob.matrix_world=old.matrix_world.copy();ob.hide_render=False;ob.hide_set(False);ob['scope']='21908 actual native POLY fibres,64 points each. Explicit distributed end patches and shape-preserving transverse lofts from attributed Rain clumps. Actual target scalp root projection and18mm authored lead transition. Static art source only: no new skin-following, natural dynamics, self/body/root/continuous contact or runtime acceptance.';ob['sourceCredit']='Rain Rig (CC) Blender Foundation | studio.blender.org, CC-BY4.0; section-loft fibre reconstruction. Separate inherited Brown material/research Daniel Bystedt CC BY-SA version unspecified.'
+ # Editable sections are saved as actual finite-width ring cages.
+ profiles=np.load(E/'section-profiles.npz');verts=[];edges=[];offset=0
+ for key in profiles.files:
+  if not key.endswith('_centres'):continue
+  label=key[:-len('_centres')];rings=profiles[label+'_rings']+profiles[key][:,None,:];flat=rings.reshape(-1,3);verts.append(flat)
+  for j in range(len(rings)):
+   for k in range(64):edges.append((offset+j*64+k,offset+j*64+(k+1)%64))
+  offset+=len(flat)
+ mesh=bpy.data.meshes.new('AFN91_EDITABLE_SECTION_CAGES');mesh.from_pydata(np.concatenate(verts).tolist(),edges,[]);mesh.update();cage=bpy.data.objects.new(mesh.name,mesh);s.collection.objects.link(cage);cage.hide_render=True;cage.hide_set(True);cage['scope']='Explicit48x64 section rings for every17 surface component. Hidden construction, no opaque render cap and no physical collision claim.'
+ for name in ['AFN90_RAIN_HAIR_MAIN','AFN90_RAIN_HAIR_PONYTAIL','AFN90_RAIN_HAIR_STRAND']:bpy.data.objects[name].hide_render=True;bpy.data.objects[name].hide_set(True)
+ old.hide_render=True;old.hide_set(True);bpy.context.view_layer.update();actual=q.hair(ob);error=float(np.linalg.norm(actual-P.reshape(-1,3),axis=1).max());assert error<2e-6;assert stage==m.m.rig.k.f.v.stage() and mats=={name:m.m.rig.k.f.v.v32.material_signature(bpy.data.materials[name]) for name in mats};m.m.rig.shade.settings();m.m.rig.k.b.camera('face');s.camera.data.lens=85;s.render.hair_subdiv=3;s['AFN91_scope']=ob['scope'];bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(OUT),compress=True);np.savez_compressed(E/'actual-fibre-lineage.npz',world=P.astype('f4'),counts=counts,rootScalpTriangle=np.array(faces,'i4'),rootBarycentric=np.array(bary,'f4'),rootAnchor=anchors.astype('f4'),rootNormal=normal.astype('f4'),originalLoftRoot=data['pathsWorld'][:,0],matrix=A,radiusWorld=(rr*np.linalg.norm(A[:3,0])).astype('f4'),owner=data['owner']);save('a-build-summary.json',{'source':str(SRC),'sourceSha256':sha(SRC),'output':str(OUT),'outputSha256':sha(OUT),'outputBytes':OUT.stat().st_size,'construction':report['construction'],'curves':COUNT,'pointsEach':N,'actualPoints':len(actual),'rootProjectionLeadTransitionM':.018,'rootProjectionDisplacementQuantilesM':np.quantile(np.linalg.norm(delta,axis=1),[0,.5,.95,1]).tolist(),'actualNeutralReadbackMaximumWorldErrorM':error,'curveObject':ob.name,'sectionCage':cage.name,'worldRadiusRangeM':[float(rr.min()*np.linalg.norm(A[:3,0])),float(rr.max()*np.linalg.norm(A[:3,0]))],'material':'Brown hair unchanged; new geometry/radius art hypothesis, no shader/color/exposure sweep.','curveAllocation':'Copied evaluated existing21908curves after a temporary64point resample; previous crashing add_curves API not retried.','allRootsRetained':True,'allSourceSurfaceComponentsRetainedAsHiddenConstruction':True,'naturalDynamicsContactOrRuntimeAccepted':False,'newCompleteOperation':False,'secondsBeforePreview':time.time()-tick});rows=[]
+ for view in ['back','face','body-face']:rows.append(v.image('a-section-loft',view));save('a-view-controls.json',rows)
+ print('R91_COMPLETE_SECTION_LOFT_PREVIEW_DONE',time.time()-tick,flush=True)
+if __name__=='__main__':main()

@@ -1,0 +1,10 @@
+00:01.828  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0088-b-supported-lid-aperture.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0091-saved.py:10: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();h.open_file(S/'aevrynd-female-next-r0088-b-supported-lid-aperture.blend');names=m.rig.native_names()+['AFN59_LASHES_NATIVE_POINT_POSES'];base={n:native.signature(bpy.data.objects[n]) for n in names};caps={n:helpers.cap_signature(bpy.data.objects[n]) for n in ['AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID','AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE']};old=helpers.hair_signature(bpy.data.objects['AFN81_EDITABLE_CURLY_GUIDES']);facial={n:q.hair(bpy.data.objects[n]).copy() for n in ['AFN57_NATIVE_BROWS','AFN57_NATIVE_LASHES']};mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes and (x.users or x.use_fake_user)};lights=m.m.q.lights();rig=h.rig_signature();texts=set(bpy.data.texts.keys());rows=[]
+00:07.188  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0091-a-section-loft-fibres.blend"
+R91_SAVED_ART_READBACK a 1.9611088073427723e-07 5.995996390843492e-08
+00:13.438  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0091-b-studio-guide-bob.blend"
+R91_SAVED_ART_READBACK b 1.9829663996746116e-07 0.0
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

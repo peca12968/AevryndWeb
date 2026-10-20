@@ -1,0 +1,973 @@
+{
+  "source": "D:\\Download\\Aevrynd\\Reference\\character\\blender-studio-ellie-v1-cc-by4\\ellie.blend",
+  "sha256": "3dd235218725a9e68890073bbeacb4820f9b34db65d44f80c31bb88696a3c54c",
+  "embeddedScriptsExecuted": false,
+  "objects": [
+    {
+      "name": "GEO-ellie_head",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 1659,
+      "edges": 3296,
+      "faces": 1636,
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "CorrectiveSmooth",
+          "type": "CORRECTIVE_SMOOTH",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "VertexWeightMix",
+          "type": "VERTEX_WEIGHT_MIX",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Lattice NeckHead",
+          "type": "LATTICE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Mask",
+          "type": "MASK",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Shrinkwrap",
+          "type": "SHRINKWRAP",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Lattice Mask",
+          "type": "LATTICE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Lattice Cheek.L",
+          "type": "LATTICE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Lattice Cheek.R",
+          "type": "LATTICE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Lattice Lips",
+          "type": "LATTICE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Lattice Lips.L",
+          "type": "LATTICE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Lattice Lips.R",
+          "type": "LATTICE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "DataTransfer",
+          "type": "DATA_TRANSFER",
+          "visible": false,
+          "render": true
+        }
+      ],
+      "particleSystems": []
+    },
+    {
+      "name": "GEO-ellie_hair_cut.scalp-loose",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 1990,
+      "edges": 2867,
+      "faces": 936,
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "visible": true,
+          "render": true
+        }
+      ],
+      "particleSystems": []
+    },
+    {
+      "name": "GEO-ellie_hair_cut.scalp-front",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 830,
+      "edges": 1183,
+      "faces": 384,
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "visible": true,
+          "render": true
+        }
+      ],
+      "particleSystems": []
+    },
+    {
+      "name": "GEO-ellie_hair_cut.scalp-back",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 1535,
+      "edges": 1453,
+      "faces": 0,
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "visible": true,
+          "render": true
+        }
+      ],
+      "particleSystems": []
+    },
+    {
+      "name": "GEO-ellie_hair_cut.scalp",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 1659,
+      "edges": 3296,
+      "faces": 1636,
+      "modifiers": [
+        {
+          "name": "ellie_hair_cut.front",
+          "type": "PARTICLE_SYSTEM",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "ellie_hair_cut.back",
+          "type": "PARTICLE_SYSTEM",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "ellie_hair_cut.loose",
+          "type": "PARTICLE_SYSTEM",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Mask",
+          "type": "MASK",
+          "visible": true,
+          "render": true
+        }
+      ],
+      "particleSystems": [
+        {
+          "name": "front",
+          "type": "HAIR",
+          "count": 0,
+          "particles": 31,
+          "children": 0,
+          "hairStep": 15,
+          "childType": "SIMPLE",
+          "childCount": 100,
+          "renderedChildren": 150
+        },
+        {
+          "name": "back",
+          "type": "HAIR",
+          "count": 0,
+          "particles": 82,
+          "children": 0,
+          "hairStep": 15,
+          "childType": "SIMPLE",
+          "childCount": 100,
+          "renderedChildren": 100
+        },
+        {
+          "name": "loose",
+          "type": "HAIR",
+          "count": 0,
+          "particles": 59,
+          "children": 0,
+          "hairStep": 15,
+          "childType": "NONE",
+          "childCount": 1,
+          "renderedChildren": 1
+        }
+      ],
+      "nativeParticleKeys": [
+        {
+          "points": 415,
+          "countRange": [
+            10,
+            20
+          ]
+        },
+        {
+          "points": 1535,
+          "countRange": [
+            15,
+            20
+          ]
+        },
+        {
+          "points": 995,
+          "countRange": [
+            10,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair_cut",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 9969,
+      "edges": 19580,
+      "faces": 9657,
+      "modifiers": [
+        {
+          "name": "Mask",
+          "type": "MASK",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "visible": true,
+          "render": true
+        }
+      ],
+      "particleSystems": []
+    },
+    {
+      "name": "GEO-ellie_hair.scalp-ponytail",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 438,
+      "edges": 419,
+      "faces": 0,
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "visible": true,
+          "render": true
+        }
+      ],
+      "particleSystems": []
+    },
+    {
+      "name": "GEO-ellie_hair.scalp-loose",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 475,
+      "edges": 435,
+      "faces": 0,
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "CorrectiveSmooth",
+          "type": "CORRECTIVE_SMOOTH",
+          "visible": true,
+          "render": true
+        }
+      ],
+      "particleSystems": []
+    },
+    {
+      "name": "GEO-ellie_hair.scalp-front",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 255,
+      "edges": 232,
+      "faces": 0,
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "visible": true,
+          "render": true
+        }
+      ],
+      "particleSystems": []
+    },
+    {
+      "name": "GEO-ellie_hair.scalp-back",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 546,
+      "edges": 512,
+      "faces": 0,
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "visible": true,
+          "render": true
+        }
+      ],
+      "particleSystems": []
+    },
+    {
+      "name": "GEO-ellie_hair.scalp",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 1659,
+      "edges": 3296,
+      "faces": 1636,
+      "modifiers": [
+        {
+          "name": "ellie_hair.front",
+          "type": "PARTICLE_SYSTEM",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "ellie_hair.back",
+          "type": "PARTICLE_SYSTEM",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "ellie_hair.ponytail",
+          "type": "PARTICLE_SYSTEM",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "ellie_hair.loose",
+          "type": "PARTICLE_SYSTEM",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Mask",
+          "type": "MASK",
+          "visible": true,
+          "render": true
+        }
+      ],
+      "particleSystems": [
+        {
+          "name": "front",
+          "type": "HAIR",
+          "count": 0,
+          "particles": 23,
+          "children": 0,
+          "hairStep": 15,
+          "childType": "SIMPLE",
+          "childCount": 100,
+          "renderedChildren": 150
+        },
+        {
+          "name": "back",
+          "type": "HAIR",
+          "count": 0,
+          "particles": 34,
+          "children": 0,
+          "hairStep": 15,
+          "childType": "SIMPLE",
+          "childCount": 100,
+          "renderedChildren": 100
+        },
+        {
+          "name": "ponytail",
+          "type": "HAIR",
+          "count": 0,
+          "particles": 19,
+          "children": 0,
+          "hairStep": 15,
+          "childType": "SIMPLE",
+          "childCount": 150,
+          "renderedChildren": 150
+        },
+        {
+          "name": "loose",
+          "type": "HAIR",
+          "count": 0,
+          "particles": 40,
+          "children": 0,
+          "hairStep": 15,
+          "childType": "NONE",
+          "childCount": 1,
+          "renderedChildren": 1
+        }
+      ],
+      "nativeParticleKeys": [
+        {
+          "points": 255,
+          "countRange": [
+            10,
+            15
+          ]
+        },
+        {
+          "points": 546,
+          "countRange": [
+            12,
+            20
+          ]
+        },
+        {
+          "points": 438,
+          "countRange": [
+            8,
+            32
+          ]
+        },
+        {
+          "points": 475,
+          "countRange": [
+            10,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair.groom_base",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 4719,
+      "edges": 9101,
+      "faces": 4397,
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "visible": true,
+          "render": true
+        }
+      ],
+      "particleSystems": []
+    },
+    {
+      "name": "GEO-ellie_hair",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 7364,
+      "edges": 14275,
+      "faces": 6938,
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "CorrectiveSmooth",
+          "type": "CORRECTIVE_SMOOTH",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "visible": true,
+          "render": true
+        }
+      ],
+      "particleSystems": []
+    },
+    {
+      "name": "GEO-ellie_eye.R",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 610,
+      "edges": 1248,
+      "faces": 640,
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Lattice.R",
+          "type": "LATTICE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Lattice Mask",
+          "type": "LATTICE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "NormalEdit",
+          "type": "NORMAL_EDIT",
+          "visible": true,
+          "render": true
+        }
+      ],
+      "particleSystems": []
+    },
+    {
+      "name": "GEO-ellie_eye.L",
+      "type": "MESH",
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": 610,
+      "edges": 1248,
+      "faces": 640,
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Lattice.L",
+          "type": "LATTICE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Lattice Mask",
+          "type": "LATTICE",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "visible": true,
+          "render": true
+        },
+        {
+          "name": "NormalEdit",
+          "type": "NORMAL_EDIT",
+          "visible": true,
+          "render": true
+        }
+      ],
+      "particleSystems": []
+    }
+  ]
+}

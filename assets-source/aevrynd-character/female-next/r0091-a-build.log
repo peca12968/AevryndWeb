@@ -1,0 +1,11 @@
+00:03.000  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0090-b-rain-hair-shape-study.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0091-loft.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();assert not OUT.exists() and sha(SRC)=='b28711d6b4f747829def389ada85440a2f3d6bd6016c5c0053d3ca38ae7f7d9f';report=json.loads((E/'section-authoring.json').read_text(encoding='utf8'));assert report['allRequestedRootsConstructed'];bpy.ops.wm.open_mainfile(filepath=str(SRC));s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();data=np.load(E/'authored-fibre-lofts.npz');P=data['pathsWorld'].astype('f8');COUNT,N=P.shape[:2];old=bpy.data.objects['AFN81_EDITABLE_CURLY_GUIDES'];A=np.array(old.matrix_world);stage=m.m.rig.k.f.v.stage();mats={x.name:m.m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes}
+00:20.031  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0091-clump-cross-sections\a-section-loft-back.png'
+00:31.203  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0091-clump-cross-sections\a-section-loft-face.png'
+00:37.766  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0091-clump-cross-sections\a-section-loft-body-face.png'
+資訊: 已儲存為「aevrynd-female-next-r0091-a-section-loft-fibres.blend」
+R91_COMPLETE_SECTION_LOFT_PREVIEW_DONE 37.328903675079346
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
