@@ -1,0 +1,12 @@
+00:02.125  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0083-rejected-guides.py:12: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();a=json.loads((E/"a-build-summary.json").read_text());b=json.loads((E/"b-build-summary.json").read_text());assert sha(Path(a["source"]))==a["sourceSha256"];bpy.ops.wm.open_mainfile(filepath=a["source"]);bpy.context.scene.frame_set(1);q=m.q;names=m.rig.native_names();native={n:v.signature(bpy.data.objects[n]) for n in names};materials={mat.name:m.rig.k.f.v.v32.material_signature(mat) for mat in bpy.data.materials if mat.use_nodes};lights=m.m.q.lights();oldNative=q.arr(bpy.data.objects["AFN81_EDITABLE_CURLY_GUIDES"].data.position_data,"vector",3636,3).copy();teeth={n:q.arr(bpy.data.objects[n].data.vertices,"co",len(bpy.data.objects[n].data.vertices),3).copy() for n in ("AFN74_UPPER_TEETH_RIGID","AFN74_LOWER_TEETH_RIGID")};refRows=[]
+00:15.094  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0083-posterior-guide-authoring\baseline-r81-back.png'
+00:26.266  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0083-posterior-guide-authoring\baseline-r81-face.png'
+00:31.703  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0083-posterior-guide-authoring\baseline-r81-body-face.png'
+00:33.922  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0083-a-regional-posterior-guide-sculpt.blend"
+00:39.313  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0083-b-posterior-rooted-guide-group.blend"
+R83_MINIMUM_REJECTED_SOURCE_READBACK_DONE 42.605589389801025
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

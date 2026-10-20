@@ -1,0 +1,87 @@
+{
+  "reviewUTC": "2026-10-20T11:54:11.243079+00:00",
+  "previousGoalTurnClassification": "progress: v24 prompt maintenance completed and synced/pushed09f8c24; no character production or stagnation reset.",
+  "lastGoalTurnClassification": "progress",
+  "progressKind": "THREE_ACTUAL_COMPLETE_STUDIES_FALSIFIED_AND_RENDERER_ROUTE_PREMISE_CHANGED",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "decision": "REJECT_R83_GUIDE_LIFT_ROOT_GROUP_AND_SHADER_ROUTE_KEEP_R76_WORK_R81_RESEARCH",
+  "activeAuthoringStudySource": "source/aevrynd-female-next-r0076-a-proximal-crown-sculpt-study.blend",
+  "activeAuthoringStudySha256": "bd8e5bb124756aa486a6a00b26a2a5cf2ca4438cf122ef3a756b172d1c3ba3f5",
+  "retainedCompleteGroomStudySource": "source/aevrynd-female-next-r0081-b-stable-frame-curly-study.blend",
+  "retainedCompleteGroomStudySha256": "dfcc38df12c6bd93c9659b90f8b665e973b7a90f3828b134297bd6f2365898c0",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "selectedCompleteDefectResolved": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterScore": null,
+  "wholeCharacterStagnationReset": false,
+  "productionRoundsSinceLastWholeCharacterReview": 0,
+  "lastWholeCharacterReview": "three-round-whole-character-review.json",
+  "lastReviewedProductionWindow": [
+    "r81",
+    "r82",
+    "r83"
+  ],
+  "confirmedWindowWithoutAdoptedCompleteGainRounds": 3,
+  "nextWholeReviewAfterFurtherProductionRounds": 3,
+  "fourGates": {
+    "appearance": {
+      "status": "REJECT_ALL_THREE_METHODS_POSTERIOR_COVERAGE_UNRESOLVED",
+      "visibleGainAdopted": false,
+      "wholeCharacterScore": null,
+      "observations": [
+        "A changes posterior curl positions but still exposes scalp.",
+        "B adds15 cap-corresponding editable guides and rebuilds actual output roots, but rear gap remains.",
+        "C changes only the shader output route; produces blond/white regression and leaves scalp gap.",
+        "Face/skin remain artificial, full character not accepted."
+      ],
+      "evidence": [
+        "r0083-complete-character-comparison.png"
+      ],
+      "secondLightExtraAnglesStoppedAfterRejection": true
+    },
+    "function": {
+      "status": "PASS_MINIMUM_REJECTED_SOURCE_READBACK_ONLY",
+      "evidence": [
+        "minimum-source-readback.json",
+        "c-minimum-source-readback.json"
+      ],
+      "aEditedNativeGuides": 28,
+      "bNativeGuides": 318,
+      "bActualRootBindingsRebuilt": true,
+      "bNewRootCapMaximumErrorM": 1.731066240296944e-07,
+      "cActualHairBodyGeometryAndRadiiExactToR81B": true,
+      "allNativeCagesKeysUVWeightsDriversAndUnchangedMaterialsVerified": true,
+      "newFullyQualifiedCompleteCapability": false,
+      "skinFrameOrNaturalDynamicsNotQualified": true
+    },
+    "contact": {
+      "status": "NOT_QUALIFIED_A_B_REJECTED_VISUALLY_C_REUSES_VERIFIED_R81_SCOPED_FAILURE",
+      "aBNoFreshContactPass": true,
+      "cBodyAndCentrelineRadiiPoseExactToR81B": true,
+      "cInheritedEvidence": "../r0081-editable-curly-groom/b-neutral-body-falsification.json",
+      "cInheritedWitnesses": 8,
+      "notNewSamplingOrGlobalCount": true,
+      "globalSignedMinimumM": null,
+      "evaluatedCentrelineNotInstalledRenderDepsgraphCertificate": true,
+      "selfRootContinuousNaturalMotionUnaccepted": true
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "cpuGpuMemoryLODUnaccepted": true
+    }
+  },
+  "stoppedMethods": [
+    "R81/R82 registration alone as a posterior coverage remedy.",
+    "A artificial head/neck closure correspondences:103.328mm guard failure.",
+    "B transported frame offsets:54.458mm output guard failure.",
+    "C bounded displacement passes its map bound but not visual coverage/body contact; no further fitting formula or parameter sweep.",
+    "Old long-hair splitting/thinning/positional fields, r66/r73 skin wrappers and r72 cheek/jaw weight sweeps remain stopped.",
+    "R83 regional posterior guide lifting/convergence as coverage cure.",
+    "R83 simply adding15 rooted guides to inherited generator as coverage cure.",
+    "R83 selecting uncalibrated source Cycles shader output as accepted Brown replacement."
+  ],
+  "liveJobHandles": [],
+  "nextAction": "Keep the registered complete r76 body/oral work and separately marked unaccepted r81B groom research. R83 A28 posterior guide edits and B15 new cap-rooted guides did not fix the visible posterior gap; do not repeat lift/convergence or add-guides-as-a-cure without a changed premise. C proved Brown hair routes an EEVEE surface shader into Cycles, but merely selecting the existing Cycles Hair output makes hair blond/white and still leaves the gap. Do not promote this routing change or assume the existing Cycles colour graph preserves the Brown appearance. Next make one dedicated, renderer-correct native hair material on the SAME complete woman's unchanged r81B geometry: trace the two existing colour paths from recorded shader tree, then connect an explicit reviewed Brown colour/absorption field to a proper hair BSDF and assess scalp visibility and coarse highlights under the matched full-head/body/rear controls before any geometry edit. This is a replacement material construction, not a pigment/roughness/density sweep or an opaque scalp cover. Confirm the apparent gap against actual strand layout after material representation is credible; if it is geometric, inspect the generated proximal paths stage-by-stage and replace the offending guide-to-shaft construction rather than repeat registration or free-control displacement. R81 neutral body interior witnesses and failed skin-frame target remain scoped failures; no natural dynamics/full self-root-continuous contact/engine acceptance. All full-character anatomy, face, skin, clothes/layers/actions/LOD/runtime requirements remain. Whole review r81-r83 records no accepted complete gain; do not reset stagnation for shader diagnosis.",
+  "goal": "ACTIVE_NOT_COMPLETE"
+}

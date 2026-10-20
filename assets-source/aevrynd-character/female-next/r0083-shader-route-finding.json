@@ -1,0 +1,11 @@
+{
+  "finding": "Cycles renderer currently receives source EEVEE Shader output. Existing Cycles Shader route also tested and rejected for blond/white regression and unresolved coverage.",
+  "actualRoutesEvidence": "brown-hair-full-shader-tree.json",
+  "threeCompleteCandidateMethods": 3,
+  "causeOfGapNotIsolated": true,
+  "noFourthCandidateOrParameterSweep": true,
+  "officialReference": "https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/hair_principled.html",
+  "officialSearchSupportsOnly": "Principled Hair BSDF is a Cycles hair-scattering shader; it does not prove current material quality or correct calibration.",
+  "fullOfficialPageFetch": "402 Payment Required; no additional facts inferred.",
+  "implementationBasis": "Actual local saved node graph and controlled complete-character renders, not a guessed shader replacement."
+}
