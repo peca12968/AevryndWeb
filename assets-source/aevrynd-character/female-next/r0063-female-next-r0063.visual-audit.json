@@ -1,0 +1,300 @@
+{
+  "revision": "female-next-r0063",
+  "reviewUTC": "2026-10-20T00:52:34.455211+00:00",
+  "decision": "REJECT_COMPLETE_CROP_RETAIN_LINEAGE_ONLY",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0063-a-side-part-crop-study.blend",
+  "sourceSha256": "2d335669da706c1869ed3bc7591e9aeaa1484af8efbcce0ce49cdd4f501ba7d9",
+  "appearance": {
+    "decision": "REJECT_COMPLETE_CROP_RETAIN_LINEAGE_ONLY",
+    "shortTitle": "仍有雙殼與不自然髮尾，判退",
+    "status": "FAILED_NATURAL_COMPLETE_HAIRSTYLE_ACCEPTANCE",
+    "completeCharacterImprovement": false,
+    "staticHairstyleAppearanceScore": 35,
+    "scoreUncertaintyPoints": 10,
+    "scoreScope": "Strict subjective estimate for r63A static full-head hairstyle only, medium confidence. No whole-character or dynamic/engine score; not inherited from another version.",
+    "observations": [
+      "Actual complete-head coverage is greater than sparse r60B, but front and back silhouettes split into two inflated shell-like lobes.",
+      "The longitudinal part wrongly continues down the entire occiput and nape, leaving an artificial symmetric division.",
+      "Free lengths merge visually into smooth metallic sheets; medium clump structure and naturally broken ends are absent.",
+      "Small ear-side curls and clipped nape termination are not a coherent natural haircut.",
+      "Side coverage alone does not rescue the front/back silhouette; the second lighting confirms the same shell shape.",
+      "Original skin, eye/body geometry, stage and exposure remain unchanged. Same-Cycles baseline and actual full-body image are required to support that comparison."
+    ],
+    "evidence": [
+      "a-crop-face.png",
+      "a-crop-profile.png",
+      "a-crop-back.png",
+      "a-crop-oblique.png",
+      "a-crop-opposite-oblique.png",
+      "a-crop-alternate-oblique.png",
+      "a-crop-body-face.png"
+    ],
+    "newHairDynamicsAuthored": false,
+    "nextAction": "First inspect the complete character again. Stop the analytic scalp-tangent-flow plus root-based sinusoidal lift haircut family; do not alter its density, radius, part angle or shader to rescue the twin shells. Change the authoring representation and decisions: explicitly hand-author a complete hierarchical guide-and-ribbon hairstyle in Blender (front part/fringe, temples/ear-back, crown and occiput/nape), choosing each guide silhouette and layer boundary from actual human hairstyle references instead of projecting every free length onto the scalp. Make one complete low-cost geometry/coverage preview on the same r60B woman before dense child strands, atlas production or physics. If using hair cards as a scalable Aevrynd representation, author the meshes, UV/coverage/tangent/depth textures and guide bindings locally, with actual displayed card/body/self contact evidence and honest transparency/micro-fibre limits. Learn the general cards/guide/LOD principles only; do not install Unreal, use MetaHuman assets/plugins, copy proprietary implementations or add a paid service. Do not simply convert the rejected r63 shells into cards. Reuse the now-integrated native rest-triangle/barycentric/region data format only. Preserve anatomy and every remaining hair, natural motion, cloth, facial and actual engine acceptance gate; no formal/site promotion or male work.",
+    "stoppedMethods": [
+      "Scalp tangent-field paths with common root-relative sinusoidal lift and discontinuous per-root tuft variation: complete appearance forms twin shells and actual finite shafts self-overlap. Stop this shape family now, not after a parameter sweep.",
+      "R61 global spherical scalp comb to random tie disk and uniform tail remains stopped.",
+      "R62 isolated guide/follow packing and discrete-only collision solver are not a complete-hair production mainline; no resume of rejected motion or untested sweep API."
+    ],
+    "minimumIntegrationStep": "The native rest-render-triangle/native-face/barycentric format was integrated into actual complete r63 curves and independently read back. Retain that format plus explicit region labels; do not adopt the rejected paths, root-domain chart as anatomical truth, lift schedule or shader as an accepted hairstyle. New full guide/ribbon authoring must attach to actual source scalp and pass its own exact representation-specific checks.",
+    "threeRoundReview": "R61 attempted a complete ponytail and failed shape/self contact. R62 produced a small valid static unit but failed guide-follow and continuous motion, with no complete appearance or usable hair capability. R63 returned to a complete haircut and actual head/body/second-light delivery, but fails both natural silhouette and finite self contact. Across these three rounds there is no substantive complete-character appearance gain or complete usable hair ability. Stop the procedural comb/lift and isolated-solver production route; next production must change authoring representation/shape design rather than extend diagnostics or reuse rejected paths.",
+    "referenceLearningOnly": {
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-cards-and-meshes-for-grooms-in-unreal-engine",
+      "learnedPrinciple": "Cards are separately authored meshes/textures with deformation guides and LOD mapping. This does not make bad strand silhouettes good and does not prove hair physics.",
+      "implementationOrAssetsImported": false
+    }
+  },
+  "function": {
+    "status": "PASS_SCOPED_NATIVE_READBACK",
+    "actualFibres": 23094,
+    "actualPoints": 1662768,
+    "originalAnatomyKeysUVMaterialsAndStageHeld": true,
+    "nativeSourceEvidence": "a-native-readback.json",
+    "rootScope": "Recorded neutral rendered-triangle/barycentric only; first root joins and deforming scalp binding unaccepted.",
+    "fullCharacterFunctionalAcceptance": false
+  },
+  "contact": {
+    "status": "FAIL_ACTUAL_FINITE_SELF",
+    "selfEvidence": "a-finite-self-falsification.json",
+    "witnesses": [
+      {
+        "segments": [
+          21,
+          8909
+        ],
+        "fibres": [
+          0,
+          125
+        ],
+        "centrelineDistanceM": 6.606711183550706e-05,
+        "physicalGapM": -3.9328900341230105e-06,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          22,
+          8909
+        ],
+        "fibres": [
+          0,
+          125
+        ],
+        "centrelineDistanceM": 3.929622946410136e-05,
+        "physicalGapM": -3.070377240552871e-05,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          48,
+          24822
+        ],
+        "fibres": [
+          0,
+          349
+        ],
+        "centrelineDistanceM": 5.964587664335956e-05,
+        "physicalGapM": -1.0354125226270511e-05,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          48,
+          24823
+        ],
+        "fibres": [
+          0,
+          349
+        ],
+        "centrelineDistanceM": 3.4627800940285516e-05,
+        "physicalGapM": -3.537220092934455e-05,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          51,
+          134291
+        ],
+        "fibres": [
+          0,
+          1891
+        ],
+        "centrelineDistanceM": 4.3819839345191815e-05,
+        "physicalGapM": -2.6180162524438254e-05,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          51,
+          134292
+        ],
+        "fibres": [
+          0,
+          1891
+        ],
+        "centrelineDistanceM": 4.578290286373709e-05,
+        "physicalGapM": -2.4217099005892977e-05,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          55,
+          247672
+        ],
+        "fibres": [
+          0,
+          3488
+        ],
+        "centrelineDistanceM": 4.77635925551287e-05,
+        "physicalGapM": -2.223640931450137e-05,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          55,
+          55503
+        ],
+        "fibres": [
+          0,
+          781
+        ],
+        "centrelineDistanceM": 3.2080394969866855e-05,
+        "physicalGapM": -3.791960689976321e-05,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          56,
+          55504
+        ],
+        "fibres": [
+          0,
+          781
+        ],
+        "centrelineDistanceM": 2.065623616484059e-05,
+        "physicalGapM": -4.934376570478948e-05,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          56,
+          55503
+        ],
+        "fibres": [
+          0,
+          781
+        ],
+        "centrelineDistanceM": 2.0564259965380496e-05,
+        "physicalGapM": -4.943574190424957e-05,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          61,
+          404362
+        ],
+        "fibres": [
+          0,
+          5695
+        ],
+        "centrelineDistanceM": 6.0023206897697384e-05,
+        "physicalGapM": -9.219384806575528e-07,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          68,
+          631126
+        ],
+        "fibres": [
+          0,
+          8889
+        ],
+        "centrelineDistanceM": 4.166288473608966e-05,
+        "physicalGapM": -1.1206600774841632e-06,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          121,
+          61802
+        ],
+        "fibres": [
+          1,
+          870
+        ],
+        "centrelineDistanceM": 3.8383798795766445e-05,
+        "physicalGapM": -3.161620307386362e-05,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          121,
+          61803
+        ],
+        "fibres": [
+          1,
+          870
+        ],
+        "centrelineDistanceM": 6.12626189751725e-05,
+        "physicalGapM": -8.737382894457563e-06,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          122,
+          78343
+        ],
+        "fibres": [
+          1,
+          1103
+        ],
+        "centrelineDistanceM": 6.438532638756533e-05,
+        "physicalGapM": -5.614675482064737e-06,
+        "reason": "physicalOverlap"
+      },
+      {
+        "segments": [
+          123,
+          78343
+        ],
+        "fibres": [
+          1,
+          1103
+        ],
+        "centrelineDistanceM": 5.777953123639932e-05,
+        "physicalGapM": -1.2220470633230746e-05,
+        "reason": "physicalOverlap"
+      }
+    ],
+    "failureCountIsGlobalTotal": false,
+    "bodyEvidence": null,
+    "bodyRootJoinAndDynamicsAccepted": false,
+    "exactGlobalSignedMinimumM": null
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "hairShaderIsAevryndImplementation": false,
+    "enginePerformancePassed": false
+  },
+  "r62Reconciliation": {
+    "evidence": "../r0062-packed-bundle/reconciled-study-audit.json",
+    "decision": "RETAIN_STATIC_UNIT_REJECT_GUIDE_FOLLOW_AND_DISCRETE_MOTION_NO_FULL_HAIRSTYLE",
+    "newSweepAPIVerified": false
+  },
+  "resources": {
+    "heavyJobsAtOnce": 1,
+    "blenderThreads": 4,
+    "newSoftwareAddonsNodeServers": 0,
+    "newSubagents": 0,
+    "modelBuildSecondsBeforeRenders": 670.1730260848999,
+    "observedWorkingSetIsNotInstrumentedPeak": true
+  },
+  "nextAction": "First inspect the complete character again. Stop the analytic scalp-tangent-flow plus root-based sinusoidal lift haircut family; do not alter its density, radius, part angle or shader to rescue the twin shells. Change the authoring representation and decisions: explicitly hand-author a complete hierarchical guide-and-ribbon hairstyle in Blender (front part/fringe, temples/ear-back, crown and occiput/nape), choosing each guide silhouette and layer boundary from actual human hairstyle references instead of projecting every free length onto the scalp. Make one complete low-cost geometry/coverage preview on the same r60B woman before dense child strands, atlas production or physics. If using hair cards as a scalable Aevrynd representation, author the meshes, UV/coverage/tangent/depth textures and guide bindings locally, with actual displayed card/body/self contact evidence and honest transparency/micro-fibre limits. Learn the general cards/guide/LOD principles only; do not install Unreal, use MetaHuman assets/plugins, copy proprietary implementations or add a paid service. Do not simply convert the rejected r63 shells into cards. Reuse the now-integrated native rest-triangle/barycentric/region data format only. Preserve anatomy and every remaining hair, natural motion, cloth, facial and actual engine acceptance gate; no formal/site promotion or male work.",
+  "stoppedMethods": [
+    "Scalp tangent-field paths with common root-relative sinusoidal lift and discontinuous per-root tuft variation: complete appearance forms twin shells and actual finite shafts self-overlap. Stop this shape family now, not after a parameter sweep.",
+    "R61 global spherical scalp comb to random tie disk and uniform tail remains stopped.",
+    "R62 isolated guide/follow packing and discrete-only collision solver are not a complete-hair production mainline; no resume of rejected motion or untested sweep API."
+  ],
+  "wholeCharacterScore": null,
+  "formalRuntimeWebsiteAndFemaleAcceptanceUnchanged": true
+}

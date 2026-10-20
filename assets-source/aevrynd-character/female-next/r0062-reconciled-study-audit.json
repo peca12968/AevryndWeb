@@ -1,0 +1,249 @@
+{
+  "revision": "female-next-r0062",
+  "reviewUTC": "2026-10-20T00:39:05.983998+00:00",
+  "decision": "RETAIN_STATIC_UNIT_REJECT_GUIDE_FOLLOW_AND_DISCRETE_MOTION_NO_FULL_HAIRSTYLE",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0062-a-packed-bundle-study.blend",
+  "sourceSha256": "76da364d04c00dfbdc36592d279ead78f196fc123cefff3b17dbe3b9c634fc00",
+  "actualFibres": 61,
+  "pointsPerFibre": 128,
+  "appearance": {
+    "completeCharacterImprovement": false,
+    "wholeCharacterScore": null,
+    "reason": "61 fibres form an isolated antenna-like bundle on an otherwise near-bald head. This is not a complete hairstyle."
+  },
+  "function": {
+    "staticEditableCurvesCreated": true,
+    "restFollicleAttributeFormatRetained": true,
+    "completeFunctionalHairDelivered": false,
+    "nativeMotionBlendCreated": false
+  },
+  "contact": {
+    "staticSelfEvidence": {
+      "completeExpandedAABBPairs": 81365,
+      "unqualifiedFinitePairs": 0,
+      "minimumRefinedCandidateGapM": 0.00010895600824789152,
+      "exactGlobalSignedMinimumM": null,
+      "examples": [],
+      "status": "PASS_ALL_ACTUAL_STATIC_SHAFT_CAPSULE_PAIRS"
+    },
+    "staticFreeBodyEvidence": {
+      "status": "PASS_TESTED_STATIC_CAPSULES",
+      "curves": 61,
+      "segments": 7686,
+      "unqualifiedSegments": 0,
+      "rootFailures": [],
+      "minimumCertifiedClearanceLowerBoundM": 0.0017440252526032274,
+      "minimumSampledCVSurfaceGapM": 0.0017507423508504871,
+      "methods": {
+        "lipschitz": 7686
+      },
+      "failureSamples": [],
+      "numericalAllowanceM": 1e-06,
+      "scope": "Actual full POLY segment capsules with max endpoint radius against actual evaluated body; static neutral only. No child/self/motion or runtime inference."
+    },
+    "guideFollow": "Actual displayed finite shafts fail self separation despite stable guide; see b-motion-static-self-falsification.json.",
+    "independentDiscrete": "Published initial state passes static self, but first tested interpolation interval fails robust continuous numerical clearance. Do not resume or publish it as qualified motion.",
+    "continuousAudit": {
+      "checkpointNextStep": 211,
+      "testedIntervals": 1,
+      "requiredFullIntervals": 480,
+      "status": "FAIL_OR_UNRESOLVED",
+      "intervals": [
+        {
+          "interval": 0,
+          "sweptAABBPairs": 78150,
+          "relativeBoundTests": 97280,
+          "relativeSupportPlaneCertificates": 8332,
+          "maximumSubdivisionDepth": 8,
+          "minimumCertifiedPairBoundM": 1.079806809532355e-10,
+          "unqualifiedPairsOrIntervals": 20,
+          "examples": [
+            {
+              "segmentPair": [
+                3833,
+                4596
+              ],
+              "physicalMidpointGapM": 8.930834183890242e-07,
+              "reason": "midpoint numerical clearance insufficient"
+            },
+            {
+              "segmentPair": [
+                3834,
+                4596
+              ],
+              "physicalMidpointGapM": 9.663018144937706e-07,
+              "reason": "midpoint numerical clearance insufficient"
+            },
+            {
+              "segmentPair": [
+                2560,
+                3323
+              ],
+              "physicalMidpointGapM": 9.843748874242207e-07,
+              "reason": "midpoint numerical clearance insufficient"
+            },
+            {
+              "segmentPair": [
+                2561,
+                3323
+              ],
+              "physicalMidpointGapM": 9.843748874242207e-07,
+              "reason": "midpoint numerical clearance insufficient"
+            },
+            {
+              "segmentPair": [
+                3833,
+                4595
+              ],
+              "physicalMidpointGapM": 8.517337018108231e-07,
+              "reason": "midpoint numerical clearance insufficient"
+            },
+            {
+              "segmentPair": [
+                4338,
+                4974
+              ],
+              "physicalMidpointGapM": 9.929166616224011e-07,
+              "reason": "midpoint numerical clearance insufficient"
+            },
+            {
+              "segmentPair": [
+                3706,
+                4469
+              ],
+              "physicalMidpointGapM": 9.785408539445467e-07,
+              "reason": "midpoint numerical clearance insufficient"
+            },
+            {
+              "segmentPair": [
+                3707,
+                4469
+              ],
+              "physicalMidpointGapM": 9.785408539445467e-07,
+              "reason": "midpoint numerical clearance insufficient"
+            },
+            {
+              "segmentPair": [
+                4214,
+                5612
+              ],
+              "physicalMidpointGapM": 9.882729952132523e-07,
+              "reason": "midpoint numerical clearance insufficient"
+            },
+            {
+              "segmentPair": [
+                4339,
+                4974
+              ],
+              "reason": "continuous certificate unresolved at bounded subdivision limit"
+            },
+            {
+              "segmentPair": [
+                4214,
+                5612
+              ],
+              "reason": "continuous certificate unresolved at bounded subdivision limit"
+            },
+            {
+              "segmentPair": [
+                4214,
+                5612
+              ],
+              "reason": "continuous certificate unresolved at bounded subdivision limit"
+            },
+            {
+              "segmentPair": [
+                4214,
+                5612
+              ],
+              "reason": "continuous certificate unresolved at bounded subdivision limit"
+            },
+            {
+              "segmentPair": [
+                4214,
+                5612
+              ],
+              "reason": "continuous certificate unresolved at bounded subdivision limit"
+            },
+            {
+              "segmentPair": [
+                4214,
+                5612
+              ],
+              "reason": "continuous certificate unresolved at bounded subdivision limit"
+            },
+            {
+              "segmentPair": [
+                4214,
+                5612
+              ],
+              "reason": "continuous certificate unresolved at bounded subdivision limit"
+            },
+            {
+              "segmentPair": [
+                4214,
+                5612
+              ],
+              "reason": "continuous certificate unresolved at bounded subdivision limit"
+            },
+            {
+              "segmentPair": [
+                4214,
+                5612
+              ],
+              "reason": "continuous certificate unresolved at bounded subdivision limit"
+            },
+            {
+              "segmentPair": [
+                3833,
+                4595
+              ],
+              "reason": "continuous certificate unresolved at bounded subdivision limit"
+            },
+            {
+              "segmentPair": [
+                3833,
+                4595
+              ],
+              "reason": "continuous certificate unresolved at bounded subdivision limit"
+            }
+          ],
+          "status": "FAIL_OR_UNRESOLVED"
+        }
+      ]
+    },
+    "exactGlobalSignedMinimumM": null,
+    "noBlanketPhysicalOverlapClaim": "Positive gaps below1um and unresolved bounds do not by themselves prove negative physical distance. Gate remains failed without changing tolerance."
+  },
+  "runtime": {
+    "status": "NOT_TESTED_NOT_PROMOTED",
+    "completeEngineCapabilityDelivered": false
+  },
+  "nativePrototype": {
+    "location": "D:\\Download\\Aevrynd\\engine\\character\\physics\\shaft_contacts.cpp",
+    "currentCPPSha256": "1da0dec1036118a6441ce94b92de7ab0a2fd49fc2f5200f6095986a5528d54ce",
+    "currentDLLSha256": "6ff1438a40d5eece07a2e486ec2f2de86ce942604395ea408cfa5cd59bd7d314",
+    "oldEquivalenceCPP": "82ae8675ece8f3c4e2fb2ff186d7033e5ab9bba4f7bc69e855a1381d84fb659e",
+    "oldEquivalenceDLL": "aacb2cb906b95430d3b71bcdc0276a332f50dd335e788129c59050994e32cb35",
+    "oldEquivalenceAppliesToCurrentBuild": false,
+    "reason": "An additional speculative swept-contact API was appended after instantaneous API comparison. Current build/sweep path was not independently qualified or integrated with a saved animation. Compilation is not a collision pass.",
+    "oldReceipt": "native-kernel-verification.json",
+    "engineBenchmarkPassed": false
+  },
+  "retainedResearch": {
+    "purpose": "Ordered actual finite-shaft rest geometry and native follicle lineage format; isolated contact-kernel study only.",
+    "scope": "61-shaft static unit and exact old instantaneous-kernel/reference comparison versions; not full natural hair.",
+    "blocker": "Guide display self collisions, discrete motion continuous-clearance failure, untested new sweep API, no complete hairstyle.",
+    "minimumIntegrationStep": "Use validated rest-lineage format and finite-shaft acceptance on an authored complete hairstyle; do not make another isolated bundle the production mainline."
+  },
+  "stoppedMethods": [
+    "Guide-only stable motion followed by rotation-minimizing packed display: actual free shafts cross.",
+    "Discrete-only self-contact projection as evidence for continuous no-penetration: first published interval fails numerical gate.",
+    "Repeated local XPBD/solver optimization without a complete visible hairstyle: no appearance credit."
+  ],
+  "liveJobHandles": [],
+  "sourceOfTruthCompleteCharacter": "aevrynd-female-next-r0060-b-limit-surface-assembly-study.blend",
+  "nextAction": "Return to actual complete-head/body views under v17; author a complete usable hairstyle or choose another major visible defect. Do not automatically resume old local solver nextAction.",
+  "goal": "ACTIVE_NOT_COMPLETE",
+  "manifestAdoptionChangedByThisScript": false
+}

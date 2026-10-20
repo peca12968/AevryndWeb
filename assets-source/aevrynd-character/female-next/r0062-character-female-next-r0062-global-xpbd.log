@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\simulate-female-next-r0062-bundle-xpbd.py", line 85, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\simulate-female-next-r0062-bundle-xpbd.py", line 78, in main
+    assert np.isfinite(x).all() and np.linalg.norm(x-rest,axis=1).max()<.6,'Explosive guide; reject method before display expansion.'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Explosive guide; reject method before display expansion.
+
+Error: script failed, file: 'D:/Download/Aevrynd/scripts/character-next/simulate-female-next-r0062-bundle-xpbd.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,0 +1,62 @@
+{
+  "status": "PASS_NATIVE_REFERENCE_EQUIVALENCE",
+  "sourceCPP": "D:\\Download\\Aevrynd\\engine\\character\\physics\\shaft_contacts.cpp",
+  "sourceCPPSha256": "82ae8675ece8f3c4e2fb2ff186d7033e5ab9bba4f7bc69e855a1381d84fb659e",
+  "dllSha256": "aacb2cb906b95430d3b71bcdc0276a332f50dd335e788129c59050994e32cb35",
+  "pythonReferenceSha256": "579e9cdd11e66f7bdfc1ba6df633f92f57ef2e6cd759a784922f09f8ca4b0940",
+  "checkpointNextStep": 61,
+  "ABIBytes": 40,
+  "compilerFlags": [
+    "MSVC x64",
+    "C++20",
+    "O2",
+    "MT",
+    "fp:strict"
+  ],
+  "caseResults": [
+    {
+      "case": "complete61rest",
+      "positionMaximumErrorM": 0.0,
+      "referenceCorrections": 0,
+      "nativeCorrections": 0,
+      "nativeCandidatePairs": 82867,
+      "nativeConflictFreeColours": 0,
+      "pythonSeconds": 0.043331900000339374,
+      "nativeSeconds": 0.010823799995705485
+    },
+    {
+      "case": "actualWarmCheckpoint",
+      "positionMaximumErrorM": 2.2215299868541707e-16,
+      "referenceCorrections": 199,
+      "nativeCorrections": 199,
+      "nativeCandidatePairs": 56625,
+      "nativeConflictFreeColours": 9,
+      "pythonSeconds": 0.03548780000710394,
+      "nativeSeconds": 0.007874099988839589
+    },
+    {
+      "case": "crossed",
+      "positionMaximumErrorM": 0.0,
+      "referenceCorrections": 1,
+      "nativeCorrections": 1,
+      "nativeCandidatePairs": 1,
+      "nativeConflictFreeColours": 1,
+      "pythonSeconds": 0.00046629999997094274,
+      "nativeSeconds": 1.9899991457350552e-05
+    },
+    {
+      "case": "coincident",
+      "positionMaximumErrorM": 7.576092996970438e-21,
+      "referenceCorrections": 1,
+      "nativeCorrections": 1,
+      "nativeCandidatePairs": 1,
+      "nativeConflictFreeColours": 1,
+      "pythonSeconds": 0.00037769999471493065,
+      "nativeSeconds": 1.3800003216601908e-05
+    }
+  ],
+  "maxErrorGateM": 1e-10,
+  "physicalCollisionAcceptance": "NOT_IMPLIED; actual saved motion/body/self/continuous tests remain required.",
+  "timingIsEngineBenchmark": false,
+  "noNewSoftwareInstalled": true
+}

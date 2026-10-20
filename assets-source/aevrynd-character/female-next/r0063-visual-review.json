@@ -1,0 +1,32 @@
+{
+  "decision": "REJECT_COMPLETE_CROP_RETAIN_LINEAGE_ONLY",
+  "shortTitle": "仍有雙殼與不自然髮尾，判退",
+  "status": "FAILED_NATURAL_COMPLETE_HAIRSTYLE_ACCEPTANCE",
+  "completeCharacterImprovement": false,
+  "staticHairstyleAppearanceScore": 35,
+  "scoreUncertaintyPoints": 10,
+  "scoreScope": "Strict subjective estimate for r63A static full-head hairstyle only, medium confidence. No whole-character or dynamic/engine score; not inherited from another version.",
+  "observations": [
+    "Actual complete-head coverage is greater than sparse r60B, but front and back silhouettes split into two inflated shell-like lobes.",
+    "The longitudinal part wrongly continues down the entire occiput and nape, leaving an artificial symmetric division.",
+    "Free lengths merge visually into smooth metallic sheets; medium clump structure and naturally broken ends are absent.",
+    "Small ear-side curls and clipped nape termination are not a coherent natural haircut.",
+    "Side coverage alone does not rescue the front/back silhouette; the second lighting confirms the same shell shape.",
+    "Original skin, eye/body geometry, stage and exposure remain unchanged. Same-Cycles baseline and actual full-body image are required to support that comparison."
+  ],
+  "evidence": ["a-crop-face.png", "a-crop-profile.png", "a-crop-back.png", "a-crop-oblique.png", "a-crop-opposite-oblique.png", "a-crop-alternate-oblique.png", "a-crop-body-face.png"],
+  "newHairDynamicsAuthored": false,
+  "nextAction": "First inspect the complete character again. Stop the analytic scalp-tangent-flow plus root-based sinusoidal lift haircut family; do not alter its density, radius, part angle or shader to rescue the twin shells. Change the authoring representation and decisions: explicitly hand-author a complete hierarchical guide-and-ribbon hairstyle in Blender (front part/fringe, temples/ear-back, crown and occiput/nape), choosing each guide silhouette and layer boundary from actual human hairstyle references instead of projecting every free length onto the scalp. Make one complete low-cost geometry/coverage preview on the same r60B woman before dense child strands, atlas production or physics. If using hair cards as a scalable Aevrynd representation, author the meshes, UV/coverage/tangent/depth textures and guide bindings locally, with actual displayed card/body/self contact evidence and honest transparency/micro-fibre limits. Learn the general cards/guide/LOD principles only; do not install Unreal, use MetaHuman assets/plugins, copy proprietary implementations or add a paid service. Do not simply convert the rejected r63 shells into cards. Reuse the now-integrated native rest-triangle/barycentric/region data format only. Preserve anatomy and every remaining hair, natural motion, cloth, facial and actual engine acceptance gate; no formal/site promotion or male work.",
+  "stoppedMethods": [
+    "Scalp tangent-field paths with common root-relative sinusoidal lift and discontinuous per-root tuft variation: complete appearance forms twin shells and actual finite shafts self-overlap. Stop this shape family now, not after a parameter sweep.",
+    "R61 global spherical scalp comb to random tie disk and uniform tail remains stopped.",
+    "R62 isolated guide/follow packing and discrete-only collision solver are not a complete-hair production mainline; no resume of rejected motion or untested sweep API."
+  ],
+  "minimumIntegrationStep": "The native rest-render-triangle/native-face/barycentric format was integrated into actual complete r63 curves and independently read back. Retain that format plus explicit region labels; do not adopt the rejected paths, root-domain chart as anatomical truth, lift schedule or shader as an accepted hairstyle. New full guide/ribbon authoring must attach to actual source scalp and pass its own exact representation-specific checks.",
+  "threeRoundReview": "R61 attempted a complete ponytail and failed shape/self contact. R62 produced a small valid static unit but failed guide-follow and continuous motion, with no complete appearance or usable hair capability. R63 returned to a complete haircut and actual head/body/second-light delivery, but fails both natural silhouette and finite self contact. Across these three rounds there is no substantive complete-character appearance gain or complete usable hair ability. Stop the procedural comb/lift and isolated-solver production route; next production must change authoring representation/shape design rather than extend diagnostics or reuse rejected paths.",
+  "referenceLearningOnly": {
+    "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/setting-up-cards-and-meshes-for-grooms-in-unreal-engine",
+    "learnedPrinciple": "Cards are separately authored meshes/textures with deformation guides and LOD mapping. This does not make bad strand silhouettes good and does not prove hair physics.",
+    "implementationOrAssetsImported": false
+  }
+}

@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\bake-female-next-r0062-bundle-motion.py", line 42, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\bake-female-next-r0062-bundle-motion.py", line 22, in main
+    assert all(x['unqualifiedFinitePairs']==0 for x in preflight),'Dynamic packed shafts fail; stop before native cache expansion.'
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Dynamic packed shafts fail; stop before native cache expansion.
+
+Error: script failed, file: 'D:/Download/Aevrynd/scripts/character-next/bake-female-next-r0062-bundle-motion.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
