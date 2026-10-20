@@ -231,3 +231,9 @@ aevrynd-female-next-r0099-a2-continuous-head-neck-materials.blend filter=lfs dif
 aevrynd-female-next-r0099-b-anatomical-neck-surface.blend filter=lfs diff=lfs merge=lfs -text
 aevrynd-female-next-r0099-c-continuous-artist-body.blend filter=lfs diff=lfs merge=lfs -text
 r0099-c-continuous-artist-lineage.npz filter=lfs diff=lfs merge=lfs -text
+# Exact r100 rejected native eyelid history, no runtime promotion.
+r0100-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0100* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0100-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+aevrynd-female-next-r0100-a-native-lid-assembly.blend filter=lfs diff=lfs merge=lfs -text
+aevrynd-female-next-r0100-a2-native-lid-backing.blend filter=lfs diff=lfs merge=lfs -text

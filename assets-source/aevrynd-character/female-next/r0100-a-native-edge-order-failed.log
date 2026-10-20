@@ -1,0 +1,15 @@
+00:01.734  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0099-c-continuous-artist-body.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0100-native-lid-assembly.py", line 127, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0100-native-lid-assembly.py", line 39, in main
+    ids=np.array(selection[side],'i4');paths=arcs(ids,adj,W);rid=refIDs[oldWorld[refIDs,0]*sign>0];rp=arcs(rid,radj,oldWorld);eye=bpy.data.objects['AFN60_'+side+'_EYE_OUTER_SHELL_APPROX'];ed,EV=q.geom(eye);ed.calc_loop_triangles();ET=q.arr(ed.loop_triangles,'vertices',len(ed.loop_triangles),3,dtype='i4');tree=BVHTree.FromPolygons(EV.tolist(),ET.tolist(),all_triangles=True)
+                                             ~~~~^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0100-native-lid-assembly.py", line 32, in arcs
+    choices=(adjacency[cur]&ids)-{prev};assert len(choices)==1,(cur,choices);prev,cur=cur,next(iter(choices))
+                                               ^^^^^^^^^^^^^^^
+AssertionError: (7286, {7283, 6700})
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

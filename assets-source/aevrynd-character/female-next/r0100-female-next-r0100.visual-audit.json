@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "revision": "female-next-r0100",
+  "reviewUTC": "2026-10-20T23:47:31.799791+00:00",
+  "decision": "REJECT_NATIVE_FILLED_SOCKET_TO_LID_PROJECTION_KEEP_R99_CONTINUOUS_WOMAN",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovementAdopted": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterStagnationReset": false,
+  "wholeCharacterScore": null,
+  "actualSavedCompleteSources": 2,
+  "artConstructionFamilies": 1,
+  "a2IsRevisedBackingConstructionWithinTheSameNativeCupFamily": true,
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0100-a-native-lid-assembly.blend",
+      "sha256": "8467101e71775ac6c9f067e5960d368ae1d5eacc03661b918152ffec50396d99",
+      "bytes": 520699666,
+      "status": "REJECTED_NATIVE_LINING_OBSCURES_OCULAR_INTERIOR_NOT_ADOPTED"
+    },
+    "a2": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0100-a2-native-lid-backing.blend",
+      "sha256": "2584e71b30b782b243675621dc3c60ed45fbae0f085c7ac8394a1bf446184bf3",
+      "bytes": 520702863,
+      "status": "REJECTED_NATIVE_LINING_OBSCURES_OCULAR_INTERIOR_NOT_ADOPTED"
+    }
+  },
+  "retainedWorkingSource": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0099-c-continuous-artist-body.blend",
+    "sha256": "b3b45ba3ced599babdd722cd6144647c58362edfe0d843d7a033bfed671ad073",
+    "bytes": 507148595,
+    "status": "RETAIN_CONTINUOUS_ARTIST_WOMAN_LOCAL_NECK_GAIN_ONLY_NOT_COMPLETE_ADOPTION",
+    "scope": "Same complete scene with original eyes/oral/52-bone control sources and groom. Original Dan Ulrich fine head/neck/body continuous topology, reference floor registration below neck, actual full-skin root rebinding and explicit canonical material persistence. Displayed body outer shape changes; old body control source and rollbacks remain. Local neutral neck continuity only retained; eyes/hair/skin, complete blink/oral/actions, finite contacts and runtime unaccepted.",
+    "originalArtist": "Dan Ulrich",
+    "selectedSourceAssetLicense": "CC0",
+    "sourceBodyOuterShapeChangedExplicitly": true
+  },
+  "gates": {
+    "appearance": {
+      "status": "REJECT_BOTH_NATIVE_LINING_TRIALS",
+      "observations": [
+        "A moves the native lining/anterior row to the globe front; the actual neutral view has pale convex eye inserts and hides the readable iris/pupil.",
+        "A2 retains the native backing vector instead of front-projecting the deep row, but the neutral insert and unnatural eye shape persist. Neither trial improves C or protected r97.",
+        "Delivered closed endpoints move, but they do not produce a credible closed eyelid. Numerical agreement with an authored target is not functional or anatomical acceptance.",
+        "The original constant-index mirror in the r100 diagnosis is false on the right side. Actual spatial correspondences plus native-edge cycle traversal replace it; original erroneous diagnosis and both failed build scripts/logs remain preserved.",
+        "Actual neutral skin centre rays move from approximately worldY -0.096m in C to approximately -0.121m in the candidates. Canonical material bindings and UV are equal to baseline. This supports a geometry-placement failure, not a missing-material repair; these rays are not finite contact or global occupancy proof.",
+        "Continuous neck and body remain the retained r99 direction. Hair still looks flattened/sheet-like with exposed ear and uniform ends; skin is smooth/doll-like. No full appearance gain."
+      ],
+      "evidence": [
+        "r0100-head-and-body-ab.png",
+        "r0100-art-trials.png",
+        "r0100-protected-reference-ab.png",
+        "manual-visual-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "PASS_MINIMUM_INDEPENDENT_OPEN_AND_SAVED_REPRESENTATION_ONLY",
+      "sourcesIndependentlyReopened": 2,
+      "actualVertices": 677442,
+      "sourceRigBoneCount": 52,
+      "externalRelativeTextures": 15,
+      "rawContinuousMeshUVAndMaterialBindingsEqualC": true,
+      "editableNativeSculptBaseVertices": 10582,
+      "ownOpenAndClosedSourceShapesPresent": true,
+      "postDeformerCorrectionsPresent": true,
+      "completeBlinkClosureOrOperationAccepted": false,
+      "evidence": [
+        "minimum-saved-readback.json",
+        "a-build-summary.json",
+        "a2-build-summary.json",
+        "r0100-rejected-blink-endpoints-only.gif"
+      ]
+    },
+    "contact": {
+      "status": "UNACCEPTED_OCULAR_PLACEMENT_AND_FINITE_CONTACTS",
+      "actualNeutralSkinVisibilityRaysPerSource": 6,
+      "visibilityRaysAreNotFiniteIntersectionOrGlobalSignedDistance": true,
+      "globalSignedMinimumM": null,
+      "renderedThicknessRootBodySelfContinuousNaturalMotionCertified": false,
+      "priorHeadOrHairProxyCertificateReused": false,
+      "evidence": "minimum-saved-readback.json"
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "actualAevryndImportAnimationPhysicsLODPerformanceAccepted": false
+    }
+  },
+  "actualChangedMotionDelivered": true,
+  "changedMotionScope": "Two actually rendered assigned open/closed endpoints only; not a natural blink sequence, full closure acceptance or finite/continuous contact proof.",
+  "nextAction": "Keep r99 C as the complete unaccepted woman and preserve its continuous neck/body, original eye/oral/rig/groom sources and protected r97 eye comparison. Do not extend r100 native filled-socket-to-globe projection, harmonic cup propagation, depth/weight/radius/crease/IOR/aperture scans or constant-ID mirrors. The control-ring/cup deformation has twice failed actual complete previews; saved target agreement is not a usable eyelid. Next directly construct a true anatomical eyelid component on the actual displayed C eye region: separate the movable upper/lower outer margins and short finite inner-wall fold from the posterior socket cap, keep the cap behind the eyeball, and join the component to the retained orbital skin with an explicit editable topology. Trace the real rendered margin in matched front/oblique/profile views rather than treating a normal-classification or control ring as the visible aperture. Reuse existing references and Blender native authoring tools; no new general solver, validator, source search or collar rebuild. Deliver one complete head/profile/body and actual evaluated-input blink preview before broad audits. This is a construction change proposal, not an implemented result, adoption or permission to retry the retired family. Next whole review after one further actual production round, covering r99/r100/r101. Hair art/natural movement, skin, oral actions, clothing/layers, finite static/dynamic contacts and actual engine LOD/performance remain unaccepted. Female user acceptance is pending."
+}
