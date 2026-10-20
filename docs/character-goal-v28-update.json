@@ -1,0 +1,87 @@
+{
+  "kind": "PROMPT_MAINTENANCE_ONLY",
+  "version": "v28",
+  "startedUTC": "2026-10-20T18:44:16.596350+00:00",
+  "baseCommit": "117c4b1252a129c6e7eb1dd36ee944a7f462f5e7",
+  "priorPromptSha256": "741b20a5d1cf297162c8b4e1e7860ed51af47bec022d3cffbba4895f5c7199a1",
+  "protectedFilesSha256": {
+    "engine\\assets\\characters\\female-next\\female-next.asset.json": "5f8c7351b01c9fddd6ffd7bc89a3ca1f207cfd515567267218cae9c9c47354e1",
+    "Evidence\\character-female-next\\r0092-native-compatible-groom\\continuation.json": "e911dfe9c7d520402f62c7ce89e94a773073b94410c97879a5e73c5329fe6388",
+    "Evidence\\character-female-next\\r0092-native-compatible-groom\\female-next-r0092.visual-audit.json": "18f3fb6f2ca66eed969021139ac97e60f20f8ef8b0fcb8b364c11dada1ec7da0",
+    "engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0092-a-native-Eve-groom.blend": "42cec33c08b4b5f061ad408c3c8f1cf0586d7c4002d3f27c6dfbf6b0f26683f5",
+    "Evidence\\character-female-next\\r0093-surface-bound-direct-rods\\before.json": "8636d63df3a6418864ac19bdd53185744488573e2a90c44652fc3b176a5b1182",
+    "Evidence\\character-female-next\\r0093-surface-bound-direct-rods\\manifest-before-r0093.json": "5f8c7351b01c9fddd6ffd7bc89a3ca1f207cfd515567267218cae9c9c47354e1",
+    "engine\\character\\physics\\groom_native_xpbd_reference.py": "6e043e4720c03e75438dc99402bc90e00fc10d920d1a1d213801a364db28d643",
+    "engine\\character\\physics\\groom_xpbd_reference.py": "c87d72b6108ad26bb71bea9407a7c4d8f62cf009a999259c220796c88a4b8765",
+    "engine\\character\\physics\\shaft_contacts.cpp": "1da0dec1036118a6441ce94b92de7ab0a2fd49fc2f5200f6095986a5528d54ce",
+    "sites-engine-journey\\public\\assets\\character-female-refined.glb": "cef44b6a11b59f6820fec8d221316d8acc481b809708b0aab38e7bfd427fbafe",
+    "sites-engine-journey\\public\\character-editor.js": "33427ba3d93c6c79342282139c08180488d42ac540756b40873ae31957368cf6",
+    "sites-engine-journey\\public\\index.html": "4916a587f690925862b30b8c14c926173ed6cde1b7a63566a663737e4281ac02",
+    "sites-engine-journey\\scripts\\character-contact.py": "ccc52e7d8640a67cf7439a7a22d0be414ca7329d1b5d9742554c715e316ecbb0",
+    "sites-engine-journey\\scripts\\refine-female.py": "25f30c6b300bcda6e1e6cab6ce6d454f59603c31a104505a6ca4ef8a0f7fe441",
+    "sites-engine-journey\\src\\character-contact.js": "da68c95736cc4a7970b3b93be9bfb23aa67596aa73a7f50c1d06b87f941516fb",
+    "sites-engine-journey\\src\\character-editor.js": "e2573f9bc95cbff140f8b81250d5a4dfa5fca44e060babe6326e62c33ca828f1",
+    "sites-engine-journey\\src\\character-materials.js": "2b389e91bbb6e33a33ff31d2d08c9fd28c4feae03ac45d543ccdd44c098bd6e8",
+    "sites-engine-journey/package.json": "85f1613c18e4c6c4624c743ea7fd18920292e944c8af69ff82d20f924f7a40de"
+  },
+  "sourceBlends": 228,
+  "sourceInventoryMetadataDigest": "87ddfadd45cca092d17a2b5fc4f33a2f4ddf59ddffd8cd53bc7b87fa8f03350b",
+  "priorTrackedStatus": "M package.json\n M public/assets/character-female-refined.glb\n M public/character-editor.js\n M public/index.html\n M scripts/character-contact.py\n M scripts/refine-female.py\n M src/character-contact.js\n M src/character-editor.js\n M src/character-materials.js",
+  "pendingIndexBefore": "",
+  "pendingWorkHandoff": {
+    "latestRegisteredRevision": "female-next-r0092",
+    "latestContinuation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0092-native-compatible-groom\\continuation.json",
+    "latestEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0092-native-compatible-groom\\female-next-r0092.visual-audit.json",
+    "retainedCompleteCandidate": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0092-a-native-Eve-groom.blend",
+      "sha256": "42cec33c08b4b5f061ad408c3c8f1cf0586d7c4002d3f27c6dfbf6b0f26683f5",
+      "bytes": 71677236,
+      "status": "COMPLETE_WOMAN_CANDIDATE_CONTACT_MOTION_RUNTIME_UNACCEPTED",
+      "scope": "Original same-body Eve groom, continuous native skin morph, all parent/child cache strands preserved in native POLY output. Promising appearance direction/reference only; no accepted realistic groom, contact, actual motion or runtime."
+    },
+    "completeCharacterImprovement": false,
+    "unregisteredProduction": "r0093",
+    "pendingEvidence": "Evidence/character-female-next/r0093-surface-bound-direct-rods",
+    "observedPendingFiles": [
+      "before.json",
+      "manifest-before-r0093.json"
+    ],
+    "observedState": "r93 has only before.json and manifest-before-r0093.json at maintenance entry; no r93 model/preview/simulation output is present there. No Blender process observed. This maintenance does not finish, reject, register or recount r93.",
+    "countersCopiedWithoutModification": {
+      "productionRoundsSinceLastWholeCharacterReview": 0,
+      "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 12,
+      "nextWholeReviewAfterFurtherProductionRounds": 3
+    },
+    "appearanceStructuralTurnAlreadyTriggered": true,
+    "pendingConstructionAsProposal": "r93 before.json proposes evaluated-scalp root bindings, simultaneous chain stretch/bend and refreshed body response. No implementation outcome is present. Reconcile actual files/jobs before resuming; prove the changed premise versus r70 failed stretch/frozen-plane methods, and tie the construction to an actual complete visible improvement. Do not execute this proposal automatically or restart support/API research.",
+    "nextProductionAction": "Inspect existing r92 full head/body, select a coherent visible defect and reference-backed construction on the same complete woman; preserve useful face/body/lid sources, require actual root/contact authoring where relevant. Produce cheap actual full head/body preview before broad audits or full animation. Preserve all stopped methods/rights/evidence; full operation, contacts and engine remain unaccepted."
+  },
+  "historyAllowlist": [
+    "AGENTS.md",
+    "docs/character-continuous-goal.md",
+    "docs/character-goal-v28-update.json"
+  ],
+  "verifiedUTC": "2026-10-20T18:46:20.713465+00:00",
+  "promptSha256": "69125ca5dc063a916d3160567185bbd747964932f5b10eeba19adbb0b52e811b",
+  "promptCopiesByteIdentical": true,
+  "promptBytes": 17718,
+  "bothAgentEntriesVersion": "v28",
+  "protectedFilesUnchanged": true,
+  "modelSourcesMetadataUnchanged": true,
+  "pendingStagedProductionBlobsChanged": false,
+  "modelIterationStarted": false,
+  "manifestScoresAdoptionAcceptanceCountersChanged": false,
+  "websiteChanges": false,
+  "automationsChanged": false,
+  "activeGoalObjectiveRewritten": false,
+  "activeGoalStatus": "active",
+  "designReference": "https://developers.openai.com/cookbook/examples/codex/using_goals_in_codex",
+  "changes": [
+    "Lock each production round to one complete woman, a coherent visible defect and an actual Blender deliverable.",
+    "Keep a promising complete shape while rebuilding the construction that blocks its attachment/contact/usability; never equate retention with adoption.",
+    "Make cheap actual head/body preview precede broad audits/full animation, with a concrete normally thirty-minute deadline and ten-minute support limit.",
+    "Require evidence changing a retired failed premise, and direct stagnation-triggered reconstruction at the actual blocking defect.",
+    "Preserve the four evidence gates, full quality/completion contract, source rights, resources, exact Git history and existing appearance counters.",
+    "Leave pending r93 snapshots and r92 candidate/status unchanged; no model production or stored-objective rewrite."
+  ]
+}
