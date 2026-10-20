@@ -1,0 +1,9 @@
+00:01.016  blend            | Read blend: "D:\Download\Aevrynd\Evidence\character-female-next\r0096-artist-bob-foundation\original-canonical-Bob-reference.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0097-source-parentage.py", line 6, in <module>
+    bpy.ops.wm.open_mainfile(filepath=str(E96/'original-canonical-Bob-reference.blend'));bpy.context.scene.frame_set(1);bpy.context.view_layer.update();o=bpy.data.objects['hair-src'];ev=o.evaluated_get(bpy.context.evaluated_depsgraph_get());ps=ev.particle_systems['Bob'];assert len(ps.particles)==248 and len(ps.child_particles)==24800;ids=np.array([c.parent for c in ps.child_particles],'i4');assert ids.min()>=0 and ids.max()<248;np.save(E/'original-SIMPLE-child-parent.npy',ids)
+                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^
+AttributeError: 'ChildParticle' object has no attribute 'parent'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

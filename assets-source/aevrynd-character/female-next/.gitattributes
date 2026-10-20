@@ -204,3 +204,12 @@ aevrynd-female-next-r0096-a-artist-Bob-foundation.blend filter=lfs diff=lfs merg
 aevrynd-female-next-r0096-reference-original-Bob.blend filter=lfs diff=lfs merge=lfs -text
 aevrynd-female-next-r0096-reference-original-Bob-portable.blend filter=lfs diff=lfs merge=lfs -text
 r0096-original-canonical-Bob-reference.blend filter=lfs diff=lfs merge=lfs -text
+# Exact r97 two rejected looks and one neutral source-control reference.
+r0097-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0097* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0097-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+aevrynd-female-next-r0097-a-scalp-ear-live-controls.blend filter=lfs diff=lfs merge=lfs -text
+aevrynd-female-next-r0097-b-anatomical-ear-tuck.blend filter=lfs diff=lfs merge=lfs -text
+aevrynd-female-next-r0097-neutral-scalp-control-reference.blend filter=lfs diff=lfs merge=lfs -text
+r0097-BLENDER-UPSTREAM-COPYING.txt -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+r0097-BLENDER-UPSTREAM-GPL-license.txt -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol

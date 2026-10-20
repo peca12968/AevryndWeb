@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T21:09:17.711626+00:00",
+  "decision": "REJECT_OUTWARD_AND_EAR_TUCK_ART_RETAIN_NEUTRAL_SCALP_PARENTAGE_DATA_ONLY",
+  "constructionAttempts": 2,
+  "actualSavedCompleteWomanSources": 3,
+  "neutralSaveIsRetainedReferenceNotThirdArtMethod": true,
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0097-a-scalp-ear-live-controls.blend",
+      "sha256": "d71b5fb27240a07a96114744860e9e203d15475da9c514ac009516153f61a28c",
+      "bytes": 100860305,
+      "status": "REJECTED_COMPLETE_GROOM_APPEARANCE_CONTACT_UNACCEPTED",
+      "scope": "Complete woman with actual-scalp/true-source-parent authoring controls. Art failed; numerical root placement does not grant finite occupancy, whole operation, natural motion or runtime acceptance."
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0097-b-anatomical-ear-tuck.blend",
+      "sha256": "ac9aa007d9d24070fcc23a3f32e6cf5701a4f7ccf67ea820ded367c94a01449a",
+      "bytes": 113738383,
+      "status": "REJECTED_COMPLETE_GROOM_APPEARANCE_CONTACT_UNACCEPTED",
+      "scope": "Complete woman with actual-scalp/true-source-parent authoring controls. Art failed; numerical root placement does not grant finite occupancy, whole operation, natural motion or runtime acceptance."
+    }
+  },
+  "retainedScalpBoundBobAuthoringReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0097-neutral-scalp-control-reference.blend",
+    "sha256": "353a3067e87bd6617cabb709ac5e8fc23f947f6841d2af95e835824369cec69b",
+    "bytes": 113737925,
+    "status": "NEUTRAL_COMPLETE_WOMAN_SCALP_BINDING_AND_TRUE_PARENT_CONTROL_DATA_ONLY",
+    "scope": "Original neutral artist Bob direction, rejected tuck control at0. All24800 source children /248 source parents retained; per-child bounded actual scalp triangles, live evaluated-frame root following and guide tangent-frame child sweep.15 relative textures independently resolve. Recomb preset and rigid/root-follow data verified; no adopted complete appearance, fully usable complete operation, finite contacts, natural motion or runtime.",
+    "recombDefault": 0
+  },
+  "sourceParentageProof": "source-parentage-proof.json",
+  "failedSupportTrials": [
+    "Relative helper import path failed before source extraction; corrected.",
+    "Installed ChildParticle RNA has no public parent member; exact-build SIMPLE distribution/cache ordering verified instead. No guessed nearest-guide binding."
+  ],
+  "appearanceImprovementAdopted": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterStagnationReset": false,
+  "wholeCharacterScore": null,
+  "completeCharacterResult": "本輪未改善完整人物",
+  "gates": {
+    "appearance": {
+      "status": "REJECT_BOTH_ART_CHANGES_RETAIN_NEUTRAL_INPUT_SHAPE_ONLY",
+      "actualMatchedHeadProfileBackBodyInspected": true,
+      "observations": {
+        "a": [
+          "Outward ear/crown sculpt produces broad side bulges and broken front/back silhouette. Covering the ear is not an accepted appearance improvement."
+        ],
+        "b": [
+          "Behind-ear side-lock construction plus swept offsets exposes an unnatural large temple patch and horizontal band; rear side locks flip outward. Both complete looks rejected."
+        ],
+        "neutral": [
+          "Recomb disabled retains the original complete artist Bob contour and all useful body/face/rig work. This is a data reference, not a third art method or a new realism gain.",
+          "Face/skin remain doll-like, hair remains flat with visible ear strip and unqualified contacts; no face/skin editing, exposure/material change or score increase."
+        ]
+      },
+      "evidence": [
+        "r0097-complete-character-comparison.png",
+        "r0097-neutral-binding-reference-comparison.png"
+      ],
+      "secondLightOrBroadAppearanceAuditExpanded": false,
+      "reason": "Major structural failures already visible; no further appearance expansion.",
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "PASS_SAVED_AND_SCALP_TRUE_PARENT_DATA_ONLY_NOT_COMPLETE_OPERATION",
+      "sourcesIndependentlyReopened": 3,
+      "renderChildren": 24800,
+      "sourceParents": 248,
+      "pointsEach": 17,
+      "sourceWidthCloseTipAndAllUnrelatedBodyFaceRig52MaterialsFeaturesPreserved": true,
+      "threeActualPoseRootCentreMaximumWorldErrorM": 2.1913391227710305e-07,
+      "storedRecombAffectedChildren": 5400,
+      "exactNeutralRestore": true,
+      "completeOperationAccepted": false,
+      "naturalHairDynamicsAccepted": false,
+      "evidence": [
+        "minimum-saved-readback.json",
+        "root-follow-and-recomb-scope.json",
+        "r0097-scalp-follow-only.gif"
+      ]
+    },
+    "contact": {
+      "status": "UNACCEPTED_SAMPLED_AUTHORING_CONTROL_BODY_INTERIOR_WITNESSES",
+      "sources": {
+        "a": {
+          "plannedNativeKnots": 2048,
+          "inspected": 851,
+          "strongInteriorWitnesses": 8,
+          "countsAreNotGlobalTotals": true
+        },
+        "b": {
+          "plannedNativeKnots": 2048,
+          "inspected": 434,
+          "strongInteriorWitnesses": 8,
+          "countsAreNotGlobalTotals": true
+        },
+        "neutral": {
+          "plannedNativeKnots": 2048,
+          "inspected": 439,
+          "strongInteriorWitnesses": 8,
+          "countsAreNotGlobalTotals": true
+        }
+      },
+      "globalSignedMinimumM": null,
+      "rootCentreBindingIsNotFiniteRootOrAnatomicalFollicleAcceptance": true,
+      "actualCyclesOccupancyFiniteShaftSelfRootsCCDAndNaturalMovementCertified": false,
+      "evidence": "minimum-saved-readback.json"
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "actualAevryndImportAnimationPhysicsLODPerformanceAccepted": false
+    }
+  },
+  "actualChangedMotionDelivered": true,
+  "changedMotionScope": "Three actual rigid/evaluated-scalp-follow poses only, not natural hair physics, continuous time or contact proof.",
+  "nextAction": "Keep the complete neutral r97 control reference with the same woman, r96 original shape rollback, and body/oral/lid/rig gains. Both local ear art constructions failed: do not reduce brush amplitudes, vary tuck landmarks/selection masks, add guide groups or tune source fit/density/radius/step/shader fields. The exact-source parent ordering and actual evaluated scalp attachment are retained DATA, not artistic or finite-contact acceptance. After17 no-adoption rounds, next production must change a relevant visible foundation instead of another ear deformation family: inspect the retained actual full head/body, select the strongest face/head anatomical limitation and directly reconstruct a coherent whole head/face volume from a visually verified compatible-licensed3D anatomical/head reference or direct reference-backed sculpting. No repeat of stopped crease/aperture/weight fields or source-name-only downloads. Protect body, ocular/oral controls and useful source hair outside the rebuilt component; head topology/coordinates/controls may change, with explicit reattachment/rebinding of affected eyes, mouth and scalp data rather than applying stale triangle IDs. Deliver actual complete head/profile/body before broad tests. Hair natural dynamics, all finite root/body/self/continuous contacts, complete clothes/actions/layers, Aevrynd import/LOD/performance and female approval remain required. Next whole-character review is due after one further actual production round, covering r96/r97/r98 including failed trials."
+}

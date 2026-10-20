@@ -1,0 +1,22 @@
+00:04.656  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0097-b-anatomical-ear-tuck.blend"
+00:31.562  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0097-scalp-ear-authored-controls\matched-neutral-bound-reference-face.png'
+00:49.578  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0097-scalp-ear-authored-controls\matched-neutral-bound-reference-profile.png'
+01:05.000  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0097-scalp-ear-authored-controls\matched-neutral-bound-reference-back.png'
+01:16.765  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0097-scalp-ear-authored-controls\matched-neutral-bound-reference-body-face.png'
+01:20.171  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0096-a-artist-Bob-foundation.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0097-and-retain-neutral.py:33: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  h.open_file(S/'aevrynd-female-next-r0096-a-artist-Bob-foundation.blend');names=m.rig.native_names()+['AFN59_LASHES_NATIVE_POINT_POSES'];sig={n:h.native.signature(bpy.data.objects[n]) for n in names};rig=h.rig_signature();lights=m.m.q.lights();mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes and (x.users or x.use_fake_user)};face={n:q.hair(bpy.data.objects[n]).copy() for n in ['AFN57_NATIVE_BROWS','AFN57_NATIVE_LASHES']};caps={n:h.helpers.cap_signature(bpy.data.objects[n]) for n in ['AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID','AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE']};body=m.rig.k.mesh(bpy.data.objects['AFN60_BODY_ORAL_AND_OCULAR_LINING']);V,T=body['V'],body['T'];edges=np.sort(np.concatenate([T[:,[0,1]],T[:,[1,2]],T[:,[2,0]]]),axis=1);_,inc=np.unique(edges[:,0].astype('u8')*len(V)+edges[:,1],return_counts=True);closed=bool(np.all(inc==2));tree=BVHTree.FromPolygons(V.tolist(),T.tolist(),all_triangles=True);skin=m.rig.k.mesh(bpy.data.objects['AFN74_SKIN_AND_EXISTING_OCULAR_LINING']);skinTree=BVHTree.FromPolygons(skin['V'].tolist(),skin['T'].tolist(),all_triangles=True);sourceRadius=q.arr(bpy.data.objects['AFN96_ARTIST_BOB_RENDER_CHILDREN'].data.attributes['radius'].data,'value',24800*17);zA=np.load(E/'a-scalp-ear-lineage.npz');zB=np.load(E/'b-ear-tuck-lineage.npz');refs=[('a',json.loads((E/'a-build-summary.json').read_text('utf8'))),('b',b),('neutral',json.loads((E/'neutral-reference-summary.json').read_text('utf8')))];out={}
+01:40.609  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0097-a-scalp-ear-live-controls.blend"
+資訊: 已儲存為「aevrynd-female-next-r0097-neutral-scalp-control-reference.blend」
+R97_SAVED a 5.978026807579701e-08 2.171029200692545e-07 8
+01:58.718  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0097-b-anatomical-ear-tuck.blend"
+R97_SAVED b 5.978026807579701e-08 2.171029200692545e-07 8
+02:15.406  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0097-neutral-scalp-control-reference.blend"
+R97_SAVED neutral 3.3533331872940674e-07 2.171029200692545e-07 8
+02:38.718  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0097-scalp-ear-authored-controls\root-follow-00.png'
+02:52.781  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0097-scalp-ear-authored-controls\root-follow-01.png'
+03:06.453  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0097-scalp-ear-authored-controls\root-follow-02.png'
+R97_MINIMUM_DATA_AND_SHORT_ROOT_FOLLOW_DONE 188.2612361907959
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

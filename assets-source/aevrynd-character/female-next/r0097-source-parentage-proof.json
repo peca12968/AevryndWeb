@@ -1,0 +1,42 @@
+{
+  "exactInstalledBuild": "Blender5.2.2 LTS d13f752e3b9c",
+  "rnaParentMemberUnavailable": true,
+  "parentageEvidence": "particle_distribute.cc:60-95 and945-948: SIMPLE loops child-number outer then parent index inner, childIndex modulo parentCount. RNA co_hair delegates BKE_particle_co_hair; particle.cc:5289-5347 maps parent cache first then childcache[particle_no-totpart].",
+  "mapping": "sourceParent = childIndex modulo248; exactly100 children for every original parent. This is reconstructed from the exact-build ordering, not a direct public RNA parent value or nearest-guide guess.",
+  "references": [
+    {
+      "file": "source-particle-distribute.cc",
+      "upstream": "https://raw.githubusercontent.com/blender/blender/d13f752e3b9c/source/blender/blenkernel/intern/particle_distribute.cc",
+      "sha256": "fbce5aa74750ebd0b48b8a1aa7ea34bc4f762afbd72e99fe0ca4da6577971645",
+      "license": "GPL-2.0-or-later per unchanged original SPDX notices",
+      "role": "Read-only upstream build reference, not Aevrynd character artwork or linked/required runtime implementation."
+    },
+    {
+      "file": "source-rna-particle.cc",
+      "upstream": "https://raw.githubusercontent.com/blender/blender/d13f752e3b9c/source/blender/makesrna/intern/rna_particle.cc",
+      "sha256": "41560df3d7b99eb23aff2f39270a03a5e564bfdb901ca9de9c16aa6a4ccbf6e3",
+      "license": "GPL-2.0-or-later per unchanged original SPDX notices",
+      "role": "Read-only upstream build reference, not Aevrynd character artwork or linked/required runtime implementation."
+    },
+    {
+      "file": "source-particle.cc",
+      "upstream": "https://raw.githubusercontent.com/blender/blender/d13f752e3b9c/source/blender/blenkernel/intern/particle.cc",
+      "sha256": "88ba0702257a970af3a62af7b6852b2f9cd420a006885998d4548a427e1e65b3",
+      "license": "GPL-2.0-or-later per unchanged original SPDX notices",
+      "role": "Read-only upstream build reference, not Aevrynd character artwork or linked/required runtime implementation."
+    }
+  ],
+  "upstreamCopying": {
+    "file": "BLENDER-UPSTREAM-COPYING.txt",
+    "sha256": "19e6f4b541772f9d7b98a52bdbca3ebd5ef9e404956a9a6de68bfc3c1a178387",
+    "upstream": "https://raw.githubusercontent.com/blender/blender/d13f752e3b9c/COPYING"
+  },
+  "originalModelDataRightsSeparate": "Vitruvian source CC0; inherited Brown material CC BY-SA version unspecified; no source code or asset relabelling.",
+  "gplReferenceCodeCompiledLinkedCopiedIntoEngineRuntime": false,
+  "imageSearchScope": "Tucked-bob image search returned links but selected publisher image/page fetch failed; no photo pixels downloaded/imported or presented as inspected reference. B authored from original3D Bob and actual target head/ear views, not an asserted unseen photograph.",
+  "upstreamFullLicense": {
+    "file": "BLENDER-UPSTREAM-GPL-license.txt",
+    "sha256": "f2703dec1b0118070caabd3302e21738c00211b0cc3260dbeb1168d6eda726b7",
+    "upstream": "https://raw.githubusercontent.com/blender/blender/d13f752e3b9c/doc/license/GPL-license.txt"
+  }
+}
