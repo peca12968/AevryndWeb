@@ -1,0 +1,16 @@
+{
+  "savedBarycentricMinimum": -5.032892540183725e-05,
+  "savedBarycentricMaximum": 1.0000054306113368,
+  "sumError": 2.220446049250313e-16,
+  "rootReconstructionErrorQuantilesM": [
+    3.655397261014402e-10,
+    3.855922612350056e-08,
+    1.1495978938047594e-07,
+    1.6654069182748613e-07
+  ],
+  "rootsOver2Micrometres": 0,
+  "originalIndependentReadbackFailed": true,
+  "scope": "Diagnostic using saved float32 body vertices, exact saved barycentric/roots/radius; actual double evaluated body readback still required. No acceptance or verifier tolerance change.",
+  "observedGuardFailure": "Original combined assertion rejected a barycentric coefficient below -1e-7, not excessive root reconstruction error. Minimum about -5.03e-5; saved-body root reconstruction stays below0.167micrometres.",
+  "handling": "Preserve failed script/log. Continue independent data/shape readback and record original barycentric-domain failure explicitly; no acceptance guard/tolerance is relaxed, root-domain qualification remains missing. Float32 nearest-point precision is a possible cause, not a proven anatomical explanation."
+}

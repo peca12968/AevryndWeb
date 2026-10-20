@@ -1,0 +1,11 @@
+00:02.500  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0092-a-native-Eve-groom.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0093-pilots.py:15: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();src=S/'aevrynd-female-next-r0092-a-native-Eve-groom.blend';h.open_file(src);names=m.rig.native_names()+['AFN59_LASHES_NATIVE_POINT_POSES'];sig={n:h.native.signature(bpy.data.objects[n]) for n in names};rig=h.rig_signature();mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes and (x.users or x.use_fake_user)};lights=m.m.q.lights();face={n:q.hair(bpy.data.objects[n]).copy() for n in ['AFN57_NATIVE_BROWS','AFN57_NATIVE_LASHES']};old=h.helpers.hair_signature(bpy.data.objects['AFN81_EDITABLE_CURLY_GUIDES']);caps={n:h.helpers.cap_signature(bpy.data.objects[n]) for n in ['AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID','AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE']};rows={}
+00:07.703  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0093-a-surface-bound-chain-pilot.blend"
+R93_INDEPENDENT a 1.3005307035668374e-07 2.658880790020862e-07 8 12.670084953308105
+00:15.562  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0093-b-active-contact-chain-pilot.blend"
+R93_INDEPENDENT b 1.300136926371669e-07 2.658880790020862e-07 8 20.505305528640747
+R93_INDEPENDENT_DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
