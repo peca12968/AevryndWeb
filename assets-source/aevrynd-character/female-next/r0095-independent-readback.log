@@ -1,0 +1,13 @@
+00:12.203  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0094-b-source-width-growth-volume.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0095-saved.py:15: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();h.open_file(S/'aevrynd-female-next-r0094-b-source-width-growth-volume.blend');names=m.rig.native_names()+['AFN59_LASHES_NATIVE_POINT_POSES'];sig={n:h.native.signature(bpy.data.objects[n]) for n in names};rig=h.rig_signature();lights=m.m.q.lights();mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes and (x.users or x.use_fake_user)};face={n:q.hair(bpy.data.objects[n]).copy() for n in ['AFN57_NATIVE_BROWS','AFN57_NATIVE_LASHES']};caps={n:h.helpers.cap_signature(bpy.data.objects[n]) for n in ['AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID','AFN81_NEUTRAL_EDITABLE_GROWTH_SURFACE']};sourceHair=bpy.data.objects['AFN94_SOURCE_WIDTH_RENDER_FIBRES'];sourceP=q.hair(sourceHair).reshape(-1,33,3);sourceRad=q.arr(sourceHair.data.attributes['radius'].data,'value',sourceP.size//3);body=m.rig.k.mesh(bpy.data.objects['AFN60_BODY_ORAL_AND_OCULAR_LINING']);V,T=body['V'],body['T'];edges=np.sort(np.concatenate([T[:,[0,1]],T[:,[1,2]],T[:,[2,0]]]),axis=1);_,inc=np.unique(edges[:,0].astype('u8')*len(V)+edges[:,1],return_counts=True);closed=bool(np.all(inc==2));tree=BVHTree.FromPolygons(V.tolist(),T.tolist(),all_triangles=True);skin=m.rig.k.mesh(bpy.data.objects['AFN74_SKIN_AND_EXISTING_OCULAR_LINING']);st=BVHTree.FromPolygons(skin['V'].tolist(),skin['T'].tolist(),all_triangles=True);out={}
+00:19.156  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0095-a-authored-layered-guides.blend"
+R95_INDEPENDENT a 3.5968163830283235e-07 6.147659270538952e-09 8 13.248476505279541
+00:26.031  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0095-b-connected-posterior-guides.blend"
+R95_INDEPENDENT b 3.645776357197218e-07 1.0169175723717672e-08 8 20.079856395721436
+00:32.891  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0095-c-volumetric-director-locks.blend"
+R95_INDEPENDENT c 3.7612745113829013e-07 1.086503509384329e-08 8 26.879713773727417
+R95_READBACK_DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

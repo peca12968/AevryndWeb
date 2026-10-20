@@ -189,3 +189,10 @@ r0093-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at
 r0094-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 aevrynd-female-next-r0094* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 r0094-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+# Exact r95 rejected complete guide studies and native source LFS.
+r0095-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0095* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0095-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+aevrynd-female-next-r0095-a-authored-layered-guides.blend filter=lfs diff=lfs merge=lfs -text
+aevrynd-female-next-r0095-b-connected-posterior-guides.blend filter=lfs diff=lfs merge=lfs -text
+aevrynd-female-next-r0095-c-volumetric-director-locks.blend filter=lfs diff=lfs merge=lfs -text

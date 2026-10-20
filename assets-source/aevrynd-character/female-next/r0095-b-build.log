@@ -1,0 +1,15 @@
+00:01.516  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0094-b-source-width-growth-volume.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0095-connected-guides.py", line 89, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0095-connected-guides.py", line 48, in main
+    tick=time.time();assert not OUT.exists() and sha(SRC)=='72380d7007379598372d501bdeca7c97e346f87fe59e2408cf4b9f06bf8790dd';bpy.ops.wm.open_mainfile(filepath=str(SRC));s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();old=bpy.data.objects['AFN94_SOURCE_WIDTH_RENDER_FIBRES'];P=q.hair(old).reshape(-1,33,3);roots=P[:,0].copy();A=np.array(old.matrix_world);inv=np.linalg.inv(A[:3,:3]);z=np.load(E94/'b-growth-volume-lineage.npz');normal=z['rootNormals'];body=m.rig.k.mesh(bpy.data.objects['AFN60_BODY_ORAL_AND_OCULAR_LINING']);V,T=body['V'],body['T'];eligible=np.flatnonzero(np.isin(body['nativeTriangleFace'],z['allowedNativeFaces']));scalp=BVHTree.FromPolygons(V.tolist(),T[eligible].tolist(),all_triangles=True);actualBody=BVHTree.FromPolygons(V.tolist(),T.tolist(),all_triangles=True);rad=q.arr(old.data.attributes['radius'].data,'value',P.size//3).reshape(-1,33);radiusWorld=rad[:,0]*np.linalg.norm(A[:3,0]);G=[];controls=[];routeRows=[];cy=-.04
+                                                                                                                                                                                                                                                                                                                                                                                                                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\site-packages\numpy\lib\_npyio_impl.py", line 454, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0094-authored-growth-routing\\b-growth-volume-lineage.npz'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
