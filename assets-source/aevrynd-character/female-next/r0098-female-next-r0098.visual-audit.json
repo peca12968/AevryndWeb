@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T22:02:26.666800+00:00",
+  "decision": "REJECT_PROJECTED_AND_NATIVE_HEAD_ASSEMBLIES_RETAIN_FINE_ARTIST_HEAD_DATA_ONLY",
+  "constructionAttempts": 2,
+  "actualSavedCompleteWomanSources": 2,
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0098-a-whole-scan-head-reconstruction.blend",
+      "sha256": "93737015c3dda1db4d712b572885a895ef67dcd4dbed35c77618e5a57e06f5ae",
+      "bytes": 113898704,
+      "status": "REJECTED_COMPLETE_HEAD_ASSEMBLY_NOT_ADOPTED",
+      "scope": "A projection creates unnatural perioral folds and nonrigid tooth deformation."
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0098-b-native-artist-head.blend",
+      "sha256": "05b138b206e9207268f9601752cf3b50ae11516abce9f34181e70e38777dcefb",
+      "bytes": 202102951,
+      "status": "REJECTED_COMPLETE_HEAD_ASSEMBLY_NOT_ADOPTED",
+      "scope": "Original artist fine head topology and original rigid teeth retained, but eye/lid mismatch and visibly jagged neck assembly rejected. New-head root attachment is numerical data only, not a complete operation or contact certificate."
+    }
+  },
+  "retainedNativeArtistHeadReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0098-b-native-artist-head.blend",
+    "sha256": "05b138b206e9207268f9601752cf3b50ae11516abce9f34181e70e38777dcefb",
+    "bytes": 202102951,
+    "status": "FINE_ARTIST_HEAD_DATA_REFERENCE_ONLY_EYE_NECK_ASSEMBLY_REJECTED",
+    "scope": "Original artist fine head topology and original rigid teeth retained, but eye/lid mismatch and visibly jagged neck assembly rejected. New-head root attachment is numerical data only, not a complete operation or contact certificate.",
+    "originalArtist": "Dan Ulrich",
+    "originalSelectedAssetLicense": "CC0",
+    "notAThirdArtCandidate": true
+  },
+  "appearanceImprovementAdopted": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterStagnationReset": false,
+  "wholeCharacterScore": null,
+  "completeCharacterResult": "本輪未改善完整人物",
+  "gates": {
+    "appearance": {
+      "status": "REJECT_BOTH_COMPLETE_HEAD_ASSEMBLIES_RETAIN_SOURCE_HEAD_DATA_ONLY",
+      "actualMatchedHeadProfileBodyInspected": true,
+      "observations": {
+        "a": [
+          "Projected head on old topology produces artificial philtrum/nasolabial creases.",
+          "Independent raw tooth readback confirms upper19.8675mm/lower16.2788mm movement; shared nonrigid attachment field is rejected for rigid teeth."
+        ],
+        "b": [
+          "Original fine source topology has more coherent nose/lip volume than A; source shape retained as research only.",
+          "Eyes read wide/bulging and do not fit the new eyelid aperture naturally. Neck has visible jagged holes/facets in actual front/oblique views despite exact selected boundary-vertex coincidence.",
+          "Hair remains flat/sheet-like with an exposed ear strip and uniform tips. Body/skin remain doll-like; no complete realism adoption."
+        ]
+      },
+      "evidence": [
+        "r0098-complete-character-comparison.png",
+        "r0098-head-and-body-ab.png"
+      ],
+      "secondLightAndBroadAppearanceAuditExpanded": false,
+      "reason": "Major structural failures in first complete previews. No cosmetic or density sweep.",
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "PASS_INDEPENDENT_REOPEN_AND_SCOPED_BINDING_DATA_ONLY",
+      "sourcesIndependentlyReopened": 2,
+      "bOriginalBodyNativeCagesUVKeysWeightsDriversRig52OpticalAndRigidToothDataUnchanged": true,
+      "inheritedMaterialTreesAndLightsUnchanged": true,
+      "externalRelativeTextures": 15,
+      "bActualNewHeadRootMaximumWorldErrorM": 2.2109066079703623e-07,
+      "bSelectedBoundaryVertexMaximumWorldErrorM": 0.0,
+      "bFreeHairControlsMaximumWorldChangeFromR97M": 4.277161422403347e-07,
+      "completeOperationAccepted": false,
+      "naturalHairDynamicsAccepted": false,
+      "changedMotionDelivered": false,
+      "evidence": [
+        "minimum-saved-readback.json",
+        "verification-scope.json"
+      ]
+    },
+    "contact": {
+      "status": "UNACCEPTED_NEW_HEAD_ACTUAL_FINITE_CONTACTS_NOT_CERTIFIED",
+      "visibleNeckConstructionFailure": true,
+      "selectedBoundaryCoincidenceIsNotWeldOrOccupancyProof": true,
+      "oldClosedHeadProxyCertificateReusedForNewHead": false,
+      "globalSignedMinimumM": null,
+      "finiteRootRenderedSplineBodySelfContinuousAndNaturalMovementCertified": false,
+      "evidence": [
+        "matched-b-native-head-face.png",
+        "matched-b-native-head-oblique.png",
+        "minimum-saved-readback.json"
+      ]
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "actualAevryndImportAnimationPhysicsLODPerformanceAccepted": false
+    }
+  },
+  "actualChangedMotionDelivered": false,
+  "changedMotionScope": "No new motion acceptance. Major static art/assembly failures stopped animation expansion; old r97 scalp-follow film does not qualify this new head.",
+  "nextAction": "Keep the r97 neutral complete-woman rollback and all body/oral/lid/rig gains. Preserve r98 B original fine artist head data and unchanged rigid teeth; reject its current eye/neck assembly. Next visible construction must replace the loose unequal-loop zipper/face-delete interface with a continuous anatomically authored head-neck skin patch with explicit ordered boundary correspondence and welded topology; rebuild the affected ocular/eyelid attachment as a coherent assembly rather than assuming rigid eye-centre alignment is sufficient. Directly inspect/sculpt the actual source head, neckline and eyelid cross-sections on the same woman, produce complete neutral head/profile/body before broader tests, and use actual displayed surfaces for any contact claim. Do not repeat A nearest-envelope projection/common nonrigid teeth transfer, scan zipper phase/weights, retune eye-aperture coefficients, hide the neck, add shader/density/radius scans or revive retired hair solvers. Preserve the useful fine head shape while changing the failed interface construction, with new actual-scalp root bindings whenever topology changes.18 consecutive no-adoption rounds are a lower bound; r96/r97/r98 whole review is complete, but only review cadence resets. Natural hair dynamics, finite root/body/self/continuous contacts, complete layers/clothes/actions, Aevrynd import/LOD/performance and female user acceptance remain required."
+}

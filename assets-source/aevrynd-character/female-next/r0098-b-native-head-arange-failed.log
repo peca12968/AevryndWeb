@@ -1,0 +1,12 @@
+00:02.406  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0097-neutral-scalp-control-reference.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0098-native-head.py", line 103, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0098-native-head.py", line 46, in main
+    bpy.context.view_layer.update();dd,DV=q.geom(donor);dd.calc_loop_triangles();DT=q.arr(dd.loop_triangles,'vertices',len(dd.loop_triangles),3,dtype='i4');M=np.array(ref['stageWorldTransform']);DV=DV@M[:3,:3].T+M[:3,3];DV=(DV-np.array(plan['sourceMean']))@np.array(plan['sourceRotation']).T*plan['sourceScale']+np.array(plan['targetMean']);donorLevel=max(md.total_levels for md in donor.modifiers if md.type=='MULTIRES');bpy.data.objects.remove(donor,do_unlink=True);headFaces=DT[DV[DT,2].min(1)>1.34];used,inverse=np.unique(headFaces,return_inverse=True);HV=DV[used];HT=inverse.reshape(-1,3);donorLoop,donorBoundaryComponents=loop_low(HV,HT);neck=OV[oldLoop];start=len(HV);vertices=np.vstack((HV,neck));bottom=np.arange(start,len(vertices),'i4');upper=donorLoop
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: arange() not supported for inputs with DType <class 'numpy.dtypes.StrDType'>.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

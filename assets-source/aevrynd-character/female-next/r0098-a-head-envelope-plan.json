@@ -1,0 +1,80 @@
+{
+  "sourceCollection": "Body Female - Realistic.001",
+  "sourceMetadata": {
+    "Body Female - Realistic.001": {
+      "author": "Dan Ulrich",
+      "description": "Realistic scan data model with multiresolution details",
+      "copyright": "",
+      "license": "CC0"
+    }
+  },
+  "registration": "Single two-eye geometric centre similarity; full inspected source head envelope, no source/morph-weight variants. Centres are AABB geometric proxies, not biological measurements.",
+  "sourceEyeCentres": [
+    [
+      0.031319093008660426,
+      -0.11654490648291427,
+      1.4582068539897683
+    ],
+    [
+      -0.031235954935372512,
+      -0.1163667596655435,
+      1.4582065299656857
+    ]
+  ],
+  "targetEyeCentres": [
+    [
+      0.029969418801443548,
+      -0.11051380347744733,
+      1.4629943120906432
+    ],
+    [
+      -0.029969421302104227,
+      -0.1105138018103402,
+      1.4629942053957876
+    ]
+  ],
+  "sourceScale": 0.9581736249333087,
+  "sourceRotation": [
+    [
+      0.9999959468841553,
+      -0.002847801661118865,
+      3.3997403079411015e-06
+    ],
+    [
+      0.002847801661118865,
+      0.9999959468841553,
+      9.910082532371689e-09
+    ],
+    [
+      -3.39975485985633e-06,
+      -2.2825626111444564e-10,
+      1.0
+    ]
+  ],
+  "sourceMean": [
+    4.156903664395695e-05,
+    -0.11645583307422888,
+    1.458206691977727
+  ],
+  "targetMean": [
+    -1.2503303392641385e-09,
+    -0.11051380264389377,
+    1.4629942587432154
+  ],
+  "sourceHeadTriangles": 135220,
+  "skinHeadVertices": 5718,
+  "neckTransitionWorldM": [
+    1.32,
+    1.375
+  ],
+  "eyeAnchorProtectedRadiusM": 0.018,
+  "eyeTransitionEndRadiusM": 0.028,
+  "maximumAppliedHeadDeltaM": 0.005285709853798169,
+  "sourceNearestDistanceQuantilesM": [
+    1.6614126252534334e-07,
+    0.0009241217630915344,
+    0.003240863932296633,
+    0.009738198481500149
+  ],
+  "purpose": "Adopt the coherent donor forehead/zygoma/maxilla/nose/mandible/chin/skull envelope on the existing full woman, preserving body/eye anchors and UV. Not an exact scan/digital-double reconstruction or new contact qualification."
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "revision": "female-next-r0098",
+  "decision": "REJECT_PROJECTED_AND_NATIVE_HEAD_ASSEMBLIES_RETAIN_FINE_ARTIST_HEAD_DATA_ONLY",
+  "completeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0098-a-whole-scan-head-reconstruction.blend",
+      "sha256": "93737015c3dda1db4d712b572885a895ef67dcd4dbed35c77618e5a57e06f5ae",
+      "bytes": 113898704,
+      "status": "REJECTED_COMPLETE_HEAD_ASSEMBLY_NOT_ADOPTED",
+      "scope": "A projection creates unnatural perioral folds and nonrigid tooth deformation."
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0098-b-native-artist-head.blend",
+      "sha256": "05b138b206e9207268f9601752cf3b50ae11516abce9f34181e70e38777dcefb",
+      "bytes": 202102951,
+      "status": "REJECTED_COMPLETE_HEAD_ASSEMBLY_NOT_ADOPTED",
+      "scope": "Original artist fine head topology and original rigid teeth retained, but eye/lid mismatch and visibly jagged neck assembly rejected. New-head root attachment is numerical data only, not a complete operation or contact certificate."
+    }
+  },
+  "retainedNativeArtistHeadReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0098-b-native-artist-head.blend",
+    "sha256": "05b138b206e9207268f9601752cf3b50ae11516abce9f34181e70e38777dcefb",
+    "bytes": 202102951,
+    "status": "FINE_ARTIST_HEAD_DATA_REFERENCE_ONLY_EYE_NECK_ASSEMBLY_REJECTED",
+    "scope": "Original artist fine head topology and original rigid teeth retained, but eye/lid mismatch and visibly jagged neck assembly rejected. New-head root attachment is numerical data only, not a complete operation or contact certificate.",
+    "originalArtist": "Dan Ulrich",
+    "originalSelectedAssetLicense": "CC0",
+    "notAThirdArtCandidate": true
+  },
+  "rights": "Vitruvian Bob/body source data CC0 per pinned c252d1fc7f00ba59d87b66b3d32fa3471fc6ee44 config. Project credits Sean Buckley, Olaf Delgado-Friedrichs and original contributors; full source config/NOTICE preserved, individual Bob author not inferred from its name. Separate inherited Brown material/hidden research: Daniel Bystedt CC BY-SA version unspecified, not relabelled CC0 or exclusively owned. No source addon/embedded scripts executed and no paid runtime dependency. New r97 anatomy/control curves and own geometry-node/verification code are modifications on those source data, not exclusively owned original source artwork. Upstream Blender GPL source snapshots and COPYING are unmodified read-only build references, separately credited; not compiled, linked, executed as source addons or copied into required engine runtime. R98 selected Body Female - Realistic fine mesh: Dan Ulrich, CC0 per original embedded asset metadata and bundle README. Unrelated orphan Rain Rig CC BY4 license text remains an original source notice, not a license assigned to every bundle asset. Full original bundle and embedded texts preserved; no original embedded scripts executed. New assembly and transfer code does not grant exclusive ownership of original data.",
+  "originalInput": "D:\\Download\\Aevrynd\\Reference\\character\\blender-human-base-meshes-v1.4.1\\human-base-meshes-bundle-v1.4.1\\human_base_meshes_bundle.blend",
+  "originalInputSha256": "3c121505651140ceb4d69fd1d8923f7788ffadd81672f5be14845a5f2c75c137",
+  "sourceMetadata": {
+    "Body Female - Realistic.001": {
+      "author": "Dan Ulrich",
+      "description": "Realistic scan data model with multiresolution details",
+      "copyright": "",
+      "license": "CC0"
+    }
+  },
+  "rootScope": "B all24800 child roots rebind actual new-head vertices with bounded barycentric coordinates. Spatial scalp region, not proof of source-author follicles or finite occupancy. All free controls and source radii retained within recorded numerical scope.",
+  "neckScope": "Exact selected boundary coordinates across separate surfaces; visibly failed collar, not welded or qualified continuous skin.",
+  "evidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0098-whole-head-foundation\\female-next-r0098.visual-audit.json",
+  "continuation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0098-whole-head-foundation\\continuation.json",
+  "adoptedCompleteGainOrRuntime": false
+}

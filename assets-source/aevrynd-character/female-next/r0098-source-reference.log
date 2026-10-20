@@ -1,0 +1,11 @@
+00:01.031  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0097-neutral-scalp-control-reference.blend"
+D:\Download\Aevrynd\scripts\character-next\view-female-next-r0098-official-reference.py:25: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN98_SOURCE_REFERENCE_CLAY');mat.use_nodes=True;bs=mat.node_tree.nodes.new('ShaderNodeBsdfPrincipled');out=mat.node_tree.nodes.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(bs.outputs['BSDF'],out.inputs['Surface']);bs.inputs['Base Color'].default_value=(.28,.28,.28,1);bs.inputs['Roughness'].default_value=.6
+00:17.875  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0098-whole-head-foundation\matched-official-female-source-face.png'
+00:24.140  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0098-whole-head-foundation\matched-official-female-source-profile.png'
+00:30.765  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0098-whole-head-foundation\matched-official-female-source-oblique.png'
+00:36.187  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0098-whole-head-foundation\matched-official-female-source-body-face.png'
+R98_ACTUAL_OFFICIAL_FEMALE_REFERENCE_DONE 35.15790319442749
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

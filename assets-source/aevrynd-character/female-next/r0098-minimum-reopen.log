@@ -1,0 +1,11 @@
+00:01.734  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0097-neutral-scalp-control-reference.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0098-saved.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  names=m.rig.native_names();sig={n:h.native.signature(bpy.data.objects[n]) for n in names};rig=h.rig_signature();lights=m.m.q.lights();mats={x.name:m.rig.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes and (x.users or x.use_fake_user)}
+00:11.656  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0098-a-whole-scan-head-reconstruction.blend"
+R98_MINIMUM_SAVED a None {'AFN74_UPPER_TEETH_RIGID': 0.01986753972482525, 'AFN74_LOWER_TEETH_RIGID': 0.01627879454441444}
+00:30.156  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0098-b-native-artist-head.blend"
+R98_MINIMUM_SAVED b {'vertices': 230618, 'triangles': 460962, 'finite': True, 'savedHairMaximumWorldErrorM': 5.981641735133861e-08, 'all24800RootsNumericalMaximumWorldErrorM': 2.2109066079703623e-07, 'actualEvaluatedBoundaryMaximumWorldErrorM': 0.0, 'hairFreeControlsMaximumWorldChangeFromR97M': 4.277161422403347e-07, 'actualRootGeometryNodeTargetsNewHead': True, 'scope': 'Numerical attachment on actual new head only. Coincident selected boundary vertices do not establish a welded manifold, nonoverlapping collar, smooth continuity or absence of visible holes. Original old-body head is a control cage, not the rendered new head contact surface.'} {'AFN74_UPPER_TEETH_RIGID': 0.0, 'AFN74_LOWER_TEETH_RIGID': 0.0}
+R98_MINIMUM_REOPEN_DONE 48.244587898254395
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

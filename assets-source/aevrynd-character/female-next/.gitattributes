@@ -213,3 +213,12 @@ aevrynd-female-next-r0097-b-anatomical-ear-tuck.blend filter=lfs diff=lfs merge=
 aevrynd-female-next-r0097-neutral-scalp-control-reference.blend filter=lfs diff=lfs merge=lfs -text
 r0097-BLENDER-UPSTREAM-COPYING.txt -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 r0097-BLENDER-UPSTREAM-GPL-license.txt -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+# Exact r98 complete-head source history; B202MB preserved, no size trimming.
+r0098-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0098-*/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0098* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0098-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+r0098-failed-source-visibility/*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+source-inputs/r0098-official-human-bases/human_base_meshes_bundle.blend -text
+aevrynd-female-next-r0098-a-whole-scan-head-reconstruction.blend filter=lfs diff=lfs merge=lfs -text
+aevrynd-female-next-r0098-b-native-artist-head.blend filter=lfs diff=lfs merge=lfs -text

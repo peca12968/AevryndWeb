@@ -1,0 +1,51 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0097-neutral-scalp-control-reference.blend",
+  "sourceSha256": "353a3067e87bd6617cabb709ac5e8fc23f947f6841d2af95e835824369cec69b",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0098-a-whole-scan-head-reconstruction.blend",
+  "outputSha256": "93737015c3dda1db4d712b572885a895ef67dcd4dbed35c77618e5a57e06f5ae",
+  "outputBytes": 113898704,
+  "bodyObject": "AFN60_BODY_ORAL_AND_OCULAR_LINING",
+  "newHeadShapeKey": "AFN98_Whole_Craniofacial_Scan_Envelope",
+  "referenceSource": "D:\\Download\\Aevrynd\\Reference\\character\\blender-human-base-meshes-v1.4.1\\human-base-meshes-bundle-v1.4.1\\human_base_meshes_bundle.blend",
+  "referenceSourceSha256": "3c121505651140ceb4d69fd1d8923f7788ffadd81672f5be14845a5f2c75c137",
+  "referenceAssetMetadata": {
+    "Body Female - Realistic.001": {
+      "author": "Dan Ulrich",
+      "description": "Realistic scan data model with multiresolution details",
+      "copyright": "",
+      "license": "CC0"
+    }
+  },
+  "construction": "One coherent complete female scan-head envelope, two-eye similarity placement, native craniofacial skin reconstruction, common-cage attachment retarget. No L2 coefficient/crease/aperture/shape parameter sweep.",
+  "changedOuterSkinVertices": 4663,
+  "maximumAppliedSkinWorldDeltaM": 0.005285709853798169,
+  "allBodyBelowWorldZ1_32Unchanged": true,
+  "originalOpticalShellAndIrisGeometryUnedited": true,
+  "originalTopologyUVSourceWeightsBoneRestAndMaterialsUnedited": true,
+  "attachments": {
+    "AFN59_BROWS_NATIVE_POINT_POSES": {
+      "points": 76204,
+      "maximumAppliedWorldDeltaM": 0.002687781320192498,
+      "method": "Common old/new craniofacial skin SurfaceDeform field; identical static offset added to retained expression key positions, or to the rigid tooth mesh. Existing topology, UV, weights/drivers and key differences retained; full new motion/contact still unqualified."
+    },
+    "AFN59_LASHES_NATIVE_POINT_POSES": {
+      "points": 6998,
+      "maximumAppliedWorldDeltaM": 4.56422385628929e-05,
+      "method": "Common old/new craniofacial skin SurfaceDeform field; identical static offset added to retained expression key positions, or to the rigid tooth mesh. Existing topology, UV, weights/drivers and key differences retained; full new motion/contact still unqualified."
+    },
+    "AFN74_UPPER_TEETH_RIGID": {
+      "points": 28688,
+      "maximumAppliedWorldDeltaM": 0.019867540088716728,
+      "method": "Common old/new craniofacial skin SurfaceDeform field; identical static offset added to retained expression key positions, or to the rigid tooth mesh. Existing topology, UV, weights/drivers and key differences retained; full new motion/contact still unqualified."
+    },
+    "AFN74_LOWER_TEETH_RIGID": {
+      "points": 28688,
+      "maximumAppliedWorldDeltaM": 0.01627879694133083,
+      "method": "Common old/new craniofacial skin SurfaceDeform field; identical static offset added to retained expression key positions, or to the rigid tooth mesh. Existing topology, UV, weights/drivers and key differences retained; full new motion/contact still unqualified."
+    }
+  },
+  "sourceEyeProtectionAndGeometryProxiesNotAnatomicalValidation": true,
+  "hairExistingCurrentScalpFramesFollowSameUnchangedTopology": "Root triangle indices stable by topology, live current geometry responds to new head. Rest frames are the retained pre-morph reference; no inherited contact certificate.",
+  "appearanceMotionContactsRuntimeOrCompleteOperationAccepted": false,
+  "secondsBeforePreview": 23.116331577301025
+}

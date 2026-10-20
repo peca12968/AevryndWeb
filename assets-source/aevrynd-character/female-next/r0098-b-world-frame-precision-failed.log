@@ -1,0 +1,12 @@
+00:02.344  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0097-neutral-scalp-control-reference.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0098-native-head.py", line 103, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0098-native-head.py", line 98, in main
+    bpy.context.view_layer.update();P=q.hair(hair).reshape(oldHair.shape);assert np.isfinite(P).all();freeError=float(np.linalg.norm(P[:,1:]-oldHair[:,1:],axis=2).max());assert freeError<6e-6,freeError;neckError=float(np.linalg.norm(actualHead[bottom]-BV[bodyNeck],axis=1).max());head['scope']='Original Dan Ulrich CC0 fine female head topology, transferred existing skin UV/material, triangulated collar to exactly matching old neck boundary, SurfaceDeform driver from unchanged original head control cage plus live boundary vertex pin. Independent geometric seam not yet welded/certified as one manifold or fully qualified facial motion/contact/runtime.';head['sourceCredit']='Dan Ulrich / Blender Human Base Meshes1.4.1, selected asset metadata CC0. Original source geometry, not exclusively owned Aevrynd artwork; inherited skin/Brown notices remain.';m.rig.shade.settings();m.rig.k.b.camera('face');s.camera.data.lens=85;s.render.hair_subdiv=3;bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(OUT),compress=True)
+                                                                                                                                                                                 ^^^^^^^^^^^^^^
+AssertionError: 4.404475251447262e-05
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
