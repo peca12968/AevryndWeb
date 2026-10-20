@@ -1,0 +1,13 @@
+00:01.313  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0076-a-proximal-crown-sculpt-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0077-rejected-grooms.py:15: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();a=q.read(E/'a-build-summary.json');assert sha(Path(a['source']))==a['sourceSha256'];bpy.ops.wm.open_mainfile(filepath=a['source']);s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();names=list(q.read(E.parent/'r0060-ocular-assembly/b-build-summary.json')['visibleComponents'].values());native={n:v.signature(bpy.data.objects[n]) for n in names};materials={o.name:m.m.k.f.v.v32.material_signature(o) for o in bpy.data.materials if o.use_nodes};lights=m.q.lights();oldhair={n:hair(bpy.data.objects[n]) for n in ('AFN68_MAIN_RENDER_CURVES','AFN68_FLYAWAY_RENDER_CURVES')};root=q.hair(bpy.data.objects['AFN68_MAIN_RENDER_CURVES']).copy();dental={n:q.arr(bpy.data.objects[n].data.vertices,'co',len(bpy.data.objects[n].data.vertices),3).copy() for n in ('AFN74_UPPER_TEETH_RIGID','AFN74_LOWER_TEETH_RIGID')};results=[]
+00:09.672  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0077-a-guided-tip-groom-study.blend"
+R77_REJECTED_SAVED_READBACK a 0.0 1.4462647484475566e-07
+00:21.344  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0077-b-local-tip-comb-study.blend"
+R77_REJECTED_SAVED_READBACK b 0.0 1.0007676568002388e-07
+00:35.516  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0076-a-proximal-crown-sculpt-study.blend"
+00:50.250  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0076-proximal-crowns\r76-neutral-dental-only.png'
+R76_DENTAL_DIAGNOSTIC_AND_R77_MINIMAL_READBACK_DONE 52.369465351104736
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

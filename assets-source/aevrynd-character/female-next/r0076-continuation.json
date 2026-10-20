@@ -1,0 +1,64 @@
+{
+  "reviewUTC": "2026-10-20T08:33:13.148823+00:00",
+  "decision": "RETAIN_SCOPED_CROWN_SCULPT_ON_COMPLETE_AUTHORING_SOURCE",
+  "activeAuthoringStudySource": "source/aevrynd-female-next-r0076-a-proximal-crown-sculpt-study.blend",
+  "activeAuthoringStudySha256": "bd8e5bb124756aa486a6a00b26a2a5cf2ca4438cf122ef3a756b172d1c3ba3f5",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": true,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterStagnationReset": false,
+  "productionRoundsSinceLastWholeCharacterReview": 2,
+  "lastWholeCharacterReview": "../r0074-oral-controls/three-round-whole-character-review.json",
+  "nextWholeReviewAfterFurtherProductionRounds": 1,
+  "fourGates": {
+    "appearance": {
+      "status": "COMPLETE_HEAD_BODY_PRESERVED_NO_NEW_REALISM_SCORE",
+      "wholeCharacterScore": null,
+      "evidence": [
+        "r0076-complete-character-comparison.png",
+        "r0076-proximal-crown-comparison.png"
+      ],
+      "externalSkinHairExactAtSixPoses": true
+    },
+    "function": {
+      "status": "PASS_SCOPED_SAVED_CROWN_EDIT_AND_ORIGINAL_OPEN_RETURN",
+      "evidence": "a-independent-readback.json",
+      "actualReadbackFrames": [
+        1,
+        7,
+        13,
+        25,
+        31,
+        37
+      ],
+      "rootAndMajorTipProtectedVertices": {
+        "upper": 4185,
+        "lower": 4242
+      },
+      "newFullyQualifiedCompleteCapability": false,
+      "motionTrajectoryUnchanged": "Original r75 operation retained; prior movie is not a new r76 render. Actual r76 neutral/open full views and six saved-pose checks provided."
+    },
+    "contact": {
+      "status": "PASS_SCOPED_RIGID_DENTAL_PAIRS_ONLY_FULL_MOUTH_UNACCEPTED",
+      "sameArchPairs": 240,
+      "sameArchMinimumConservativeDistanceLowerBoundM": 1.7997681161808277e-05,
+      "opposingArchInheritedLowerBoundM": 4.7080439402133693e-05,
+      "inheritanceBasis": "Each new saved vertex is within1micrometre of an explicit convex combination of its original same-tooth vertex and original tooth centroid. Both centroid and vertex are in the original same-tooth convex hull. Topology, UV, root/tip local coordinates and sampled dental parent matrices retained. Original fixed-Head rigid jaw analytic scope only.",
+      "sameArchScope": "120 pairs per arch, actual finite vertices/surfaces, invariant under the common rigid arch parent. Not a true global minimum or signed distance.",
+      "trueGlobalSignedMinimumM": null,
+      "fullContinuousMouthHairClothBodyAccepted": false,
+      "remaining": [
+        "Full continuous tooth/gum/tongue/skin volumes and contacts.",
+        "Other head/body actions, natural hair/cloth, independent soft cages and engine.",
+        "Whole-character realism and user female approval."
+      ]
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "engineCpuGpuMemoryLODNotAccepted": true
+    }
+  },
+  "liveJobHandles": [],
+  "nextAction": "Return to direct full-head/hair authoring under v22. Pending r77 candidates are separately reviewed; do not restart r76 diagnostics.",
+  "goal": "ACTIVE_NOT_COMPLETE"
+}

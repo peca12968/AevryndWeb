@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T08:33:13.148823+00:00",
+  "decision": "REJECT_ALL_R77_GROOM_METHODS_KEEP_R76_COMPLETE_SOURCE",
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0077-a-guided-tip-groom-study.blend",
+      "sha256": "344d178f01918108cafb6017de5223babe3309b9e816d7ea5d60055863ea58e1",
+      "bytes": 54108712,
+      "role": "VISUALLY_REJECTED_COMPLETE_STATIC_GROOM_NOT_ADOPTED"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0077-b-local-tip-comb-study.blend",
+      "sha256": "76071fcab79b759d37dc384b1eb448863972aded30a230049fbc98bb712bbec1",
+      "bytes": 54110847,
+      "role": "VISUALLY_REJECTED_COMPLETE_STATIC_GROOM_NOT_ADOPTED"
+    }
+  },
+  "unsavedMethodC": {
+    "status": "REJECTED_BEFORE_SOURCE_SAVE",
+    "method": "Rounded terminal guide flow plus planned terminal taper",
+    "finite": true,
+    "maximumPointDisplacementM": 0.11630590108965765,
+    "authoringDisplacementLimitM": 0.1,
+    "limitChanged": false,
+    "curve": 9605,
+    "pointWithinCurve": 19,
+    "sourcePointM": [
+      0.12036325924919566,
+      0.08764438203343339,
+      1.3894424171513506
+    ],
+    "proposedPointM": [
+      0.015063198119434865,
+      0.07079116199796945,
+      1.3430212072491723
+    ],
+    "interpretation": "The common lower-flow and normalized terminal curl displaces the worst native path beyond the preselected100mm authoring bound. No source, taper or complete render was saved. Stop this method; no relaxed validation or fourth candidate.",
+    "reproduction": "Exact same sourceWorld/counts/groups/guideOld arrays from a-groom-lineage.npz; the rounded branch in author-female-next-r0077-guided-tip-groom.py. Numeric-only failure readback, not a new production candidate."
+  },
+  "retainedAsCompleteAuthoringPrototype": false,
+  "adoptedFormalAsset": false,
+  "contactQualified": false,
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "selectedCompleteDefectResolved": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterStagnationReset": false,
+  "gates": {
+    "appearance": {
+      "status": "REJECTED_NO_ADOPTABLE_COMPLETE_GROOM_REALISM_GAIN",
+      "wholeCharacterScore": null,
+      "evidence": [
+        "r0077-complete-groom-comparison.png",
+        "r0077-three-round-complete-review.png"
+      ],
+      "reasons": [
+        "A: positional guide attraction creates new temple/crown loops despite reduced lower flare.",
+        "B: anatomical upper pins preserve the upper paths, but shared downward flow makes a stiff straight curtain.",
+        "C: common inward curl displaces one proposed path116.306mm, exceeding the100mm predeclared authoring bound; no source or taper saved."
+      ],
+      "sameConditionHeadBodyViewsPerSavedCandidate": 2,
+      "extraAnglesAndSecondLightStoppedAfterCheapVisualRejection": true
+    },
+    "function": {
+      "status": "PASS_REJECTED_SAVED_SOURCE_AND_NATIVE_PIN_EDGE_PRESERVATION_ONLY",
+      "evidence": "rejected-source-readback.json",
+      "newFullyQualifiedCompleteCapability": false,
+      "guides": "60 neutral-only editable representative guides per saved study, not a live groom editing system or physics model.",
+      "nativePolygonEdgeLengthsNotSplineArcLength": true
+    },
+    "contact": {
+      "status": "UNACCEPTED_NO_NEW_GROOM_CONTACT_CERTIFICATE",
+      "trueGlobalSignedMinimumM": null,
+      "noBroadExpansionAfterVisualRejection": true,
+      "knownR69MovedHairBodyFailuresUnresolved": true,
+      "r76DentalEvidenceDoesNotQualifyChangedHair": true
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "engineCpuGpuMemoryLODNotAccepted": true
+    }
+  },
+  "methods": [
+    "A: positional guide attraction creates new temple/crown loops despite reduced lower flare.",
+    "B: anatomical upper pins preserve the upper paths, but shared downward flow makes a stiff straight curtain.",
+    "C: common inward curl displaces one proposed path116.306mm, exceeding the100mm predeclared authoring bound; no source or taper saved."
+  ],
+  "reference": {
+    "url": "https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/hair/guides/clump_hair_curves.html",
+    "fetched": true,
+    "use": "Qualitative guide-based clump formation, finite tip spread and length preservation; no source code, images or addon imported.",
+    "implementation": "Existing curve guides selected by scalp/path proximity; authored downward/posterior lower tangent flow, fixed roots, finite spread. Static art production, not a natural-motion solver.",
+    "rawSourceSaved": false
+  },
+  "retainedResearch": {
+    "purpose": "Failure examples and neutral guide/source-correspondence data only.",
+    "minimumIntegrationStep": "Only reuse neutral guide data format when new explicit bundle anatomy is authored. No visually rejected geometry is adopted.",
+    "notAccepted": "Complete appearance, scalp anatomy, finite contact, natural motion and runtime."
+  },
+  "nextAction": "Keep exact complete r76 source and its scoped dental repair. Stop positional group attraction, common downward tip fields and normalized whole-lock inward-curl recipes. Directly author new side/back guide paths and layered terminal shapes against the actual ear/neck/shoulder silhouette, with distinct bundle arcs and physical distal extents, then reconstruct one complete groom from those explicit paths. Use the existing complete source and renderer; no shader, density, radius or curl parameter sweep, no diagnostic-only continuation. First cheap complete-head/body preview must show rounded, separated, anatomically clear bundles before any broad contact/motion expansion. Hair radii profile remains a visible issue, not a reason to claim clipping solved by thinning. Preserve mouth, face, root binding and fixed lighting; no formal promotion or male work."
+}

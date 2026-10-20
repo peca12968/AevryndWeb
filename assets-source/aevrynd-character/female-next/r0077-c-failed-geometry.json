@@ -1,0 +1,22 @@
+{
+  "status": "REJECTED_BEFORE_SOURCE_SAVE",
+  "method": "Rounded terminal guide flow plus planned terminal taper",
+  "finite": true,
+  "maximumPointDisplacementM": 0.11630590108965765,
+  "authoringDisplacementLimitM": 0.1,
+  "limitChanged": false,
+  "curve": 9605,
+  "pointWithinCurve": 19,
+  "sourcePointM": [
+    0.12036325924919566,
+    0.08764438203343339,
+    1.3894424171513506
+  ],
+  "proposedPointM": [
+    0.015063198119434865,
+    0.07079116199796945,
+    1.3430212072491723
+  ],
+  "interpretation": "The common lower-flow and normalized terminal curl displaces the worst native path beyond the preselected100mm authoring bound. No source, taper or complete render was saved. Stop this method; no relaxed validation or fourth candidate.",
+  "reproduction": "Exact same sourceWorld/counts/groups/guideOld arrays from a-groom-lineage.npz; the rounded branch in author-female-next-r0077-guided-tip-groom.py. Numeric-only failure readback, not a new production candidate."
+}
