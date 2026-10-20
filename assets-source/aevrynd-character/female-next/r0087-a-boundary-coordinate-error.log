@@ -1,0 +1,16 @@
+00:02.062  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0087-eye-solids.py:40: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  innerMat=bpy.data.materials.new('AFN87_CORNEA_TO_AQUEOUS_RELATIVE_INTERFACE');innerMat.use_nodes=True;bs=innerMat.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(1,1,1,1);bs.inputs['Transmission Weight'].default_value=1;bs.inputs['IOR'].default_value=CORNEA_IOR/AQUEOUS_IOR;bs.inputs['Roughness'].default_value=.025
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0087-eye-solids.py", line 60, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0087-eye-solids.py", line 47, in main
+    ids,F,uv,loops=selected(ir,ir['MI']==0);front=ir['P'][ids].copy();centre=(ir['P'].min(0)+ir['P'].max(0))*.5;dx=front[:,0]-centre[0];dz=front[:,2]-centre[2];rad=np.hypot(dx,dz);theta=np.arctan2(dz,dx);r0=rad.min();r1=rad.max();t=np.clip((rad-r0)/(r1-r0),0,1);envelope=np.sin(np.pi*t)**2;fold=(.55*np.sin(37*theta+3.5*t)+.30*np.sin(61*theta-5*t)+.15*np.cos(89*theta+t));relief=IRIS_RELIEF*envelope*fold;front[:,1]-=relief;edges=boundary(F);assert len(edges)==256,'Expected two128-vertex native iris boundary rings';assert max(abs(relief[[i for e in edges for i in e]]))<1e-7;back=front.copy();back[:,1]+=IRIS_THICKNESS;N=len(front);solidP=np.r_[front,back];solidF=F+[[i+N for i in reversed(f)] for f in F]+[[b,a,a+N,b+N] for a,b in edges];frontUV=uv.copy();backUV=np.concatenate([uv[sum(map(len,F[:i])):sum(map(len,F[:i+1]))][::-1] for i in range(len(F))]);uvByVertex={}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'scripts/character-next/build-female-next-r0087-eye-solids.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

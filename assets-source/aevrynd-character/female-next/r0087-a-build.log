@@ -1,0 +1,11 @@
+00:02.109  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0087-eye-solids.py:57: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  innerMat=bpy.data.materials.new('AFN87_CORNEA_TO_AQUEOUS_RELATIVE_INTERFACE');innerMat.use_nodes=True;bs=innerMat.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(1,1,1,1);bs.inputs['Transmission Weight'].default_value=1;bs.inputs['IOR'].default_value=CORNEA_IOR/AQUEOUS_IOR;bs.inputs['Roughness'].default_value=.025
+00:18.234  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0087-eye-solids\a-solids-face.png'
+00:23.688  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0087-eye-solids\a-solids-body-face.png'
+00:34.781  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0087-eye-solids\a-solids-oblique.png'
+Info: Saved as "aevrynd-female-next-r0087-a-finite-optical-envelope.blend"
+R87_NATIVE_FINITE_EYE_PILOT_DONE 34.87156367301941
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

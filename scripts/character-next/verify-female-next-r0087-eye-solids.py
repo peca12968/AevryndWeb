@@ -1,0 +1,28 @@
+"""Minimum neutral saved native-mesh proof after insufficient visual gain."""
+from pathlib import Path
+from collections import Counter
+import bpy,numpy as np,json,hashlib,importlib.util,time
+R=Path(r'D:/Download/Aevrynd');E=R/'Evidence/character-female-next/r0087-eye-solids'
+def mod(n,f):
+ sp=importlib.util.spec_from_file_location(n,Path(__file__).with_name(f));m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);return m
+k=mod('r87buildcheck','build-female-next-r0087-eye-solids.py');m=k.m;q=m.q;v=mod('r87sig','verify-female-next-r0076-crowns.py')
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def meshcheck(o):
+ d,P=q.geom(o);F=[list(f.vertices) for f in d.polygons];count=Counter(tuple(sorted(e)) for f in F for e in zip(f,f[1:]+f[:1]));d.calc_loop_triangles();T=np.array([t.vertices[:] for t in d.loop_triangles]);V=P-P.mean(0);volume=float(np.einsum('ij,ij->i',V[T[:,0]],np.cross(V[T[:,1]],V[T[:,2]])).sum()/6);return {'object':o.name,'vertices':len(P),'faces':len(F),'edgesByFaceIncidence':dict(Counter(count.values())),'closedEdgesOnly':set(count.values())=={2},'signedSurfaceVolumeM3':volume,'notSelfIntersectionOrThicknessCertificate':True}
+def main():
+ tick=time.time();ref=json.loads((E/'a-build-summary.json').read_text());src=Path(ref['source']);out=Path(ref['output']);assert sha(src)==ref['sourceSha256'] and sha(out)==ref['outputSha256'];line=np.load(E/'a-native-optical-lineage.npz',allow_pickle=False);bpy.ops.wm.open_mainfile(filepath=str(src));bpy.context.scene.frame_set(1);bpy.context.view_layer.update();names=m.rig.native_names();sig={n:v.signature(bpy.data.objects[n]) for n in names};old={n:k.actual(bpy.data.objects[n]) for n in names[:4]};skin='AFN74_SKIN_AND_EXISTING_OCULAR_LINING';Pskin=q.geom(bpy.data.objects[skin])[1].copy();hairnames=('AFN81_EDITABLE_CURLY_GUIDES','AFN57_NATIVE_BROWS','AFN57_NATIVE_LASHES');hair={n:q.hair(bpy.data.objects[n]).copy() for n in hairnames};mats={a.name:m.rig.k.f.v.v32.material_signature(a) for a in bpy.data.materials if a.use_nodes};lights=m.m.q.lights();bpy.ops.wm.open_mainfile(filepath=str(out));bpy.context.scene.frame_set(1);bpy.context.view_layer.update();assert {n:v.signature(bpy.data.objects[n]) for n in names}==sig;assert np.array_equal(q.geom(bpy.data.objects[skin])[1],Pskin)
+ for n in hairnames:assert np.array_equal(q.hair(bpy.data.objects[n]),hair[n]),n
+ assert {n:m.rig.k.f.v.v32.material_signature(bpy.data.materials[n]) for n in mats}==mats;assert m.m.q.lights()==lights;rows=[]
+ for row in ref['construction']:
+  side=row['side'];outer,inner,iris,well=[bpy.data.objects[n] for n in row['objects']];source=old['AFN60_'+side+'_IRIS_PUPIL_SURFACE'];assert not outer.hide_render and bpy.data.objects['AFN60_'+side+'_IRIS_PUPIL_SURFACE'].hide_render
+  _,A=q.geom(outer);_,B=q.geom(inner);_,I=q.geom(iris);_,W=q.geom(well);ids=line[side+'_irisSourceIds'];pid=line[side+'_pupilSourceIds'];n=len(ids);assert np.array_equal(A,line[side+'_outerSourceWorld']);errInner=float(np.linalg.norm(B-line[side+'_innerWorld'],axis=1).max());errIris=float(np.linalg.norm(I[:n]-line[side+'_irisFrontWorld'],axis=1).max());errWell=float(np.linalg.norm(W-line[side+'_pupilWellWorld'],axis=1).max());assert max(errInner,errIris,errWell)<2e-6
+  _,F,UV,_=k.selected(source,source['MI']==0);uv=q.arr(q.geom(iris)[0].uv_layers['VitruvianUV.UDIM'].data,'uv',len(iris.data.loops),2);assert np.array_equal(uv[:len(UV)],UV);rims=sorted({i for e in k.boundary(F) for i in e});rimIris=float(np.linalg.norm(I[rims]-source['P'][ids[rims]],axis=1).max());assert rimIris<2e-6
+  _,pF,_,_=k.selected(source,source['MI']==2);pRim=sorted({i for e in k.boundary(pF) for i in e});rimWell=float(np.linalg.norm(W[pRim]-source['P'][pid[pRim]],axis=1).max());top=[meshcheck(x) for x in (outer,inner,iris,well)];assert all(x['closedEdgesOnly'] for x in top[:3]);assert top[0]['signedSurfaceVolumeM3']>0 and top[1]['signedSurfaceVolumeM3']<0
+  for o in (inner,iris,well):assert len(o.modifiers)==1 and o.modifiers[0].type=='ARMATURE' and o.modifiers[0].object.name=='AFN69_BODY_CONTROLS'
+  rows.append({'side':side,'nativeReadbackMaximumErrorsM':{'inner':errInner,'iris':errIris,'well':errWell},'originalOuterActualPositionExact':True,'frontIrisUVExact':True,'irisBoundaryMaximumSourceDisplacementM':rimIris,'pupilWellBoundaryMaximumSourceDisplacementM':rimWell,'pupilWellBoundaryNotClaimedExact':True,'pupilRimCaveat':'Global radius normalization can move the irregular source pupil rim posteriorly; native label saying preserved aperture is an authoring intention, not an achieved exact-rim/contact claim. Do not reuse this cavity as qualified anatomy.','topology':top})
+ textures=[]
+ for im in bpy.data.images:
+  if im.source=='FILE' and not im.packed_file:
+   p=Path(bpy.path.abspath(im.filepath));assert im.filepath.startswith('//') and p.is_file();textures.append({'relative':im.filepath,'sha256':sha(p)})
+ assert len(textures)==15 and not bpy.data.libraries;assert sha(out)==ref['outputSha256'];result={'status':'PASS_MINIMUM_REJECTED_NATIVE_NEUTRAL_READBACK_ONLY','source':str(out),'sha256':ref['outputSha256'],'originalNativeKeysGeometryUVWeightsDriverMaterialIndicesExact':True,'originalMaterialTreesLightsAndNeutralSkinHairBrowsLashesExact':True,'nativeSurfaces':rows,'externalTextures':textures,'savedSourceUnmodified':True,'newFullyQualifiedCompleteCapability':False,'independentPosedMotionNaturalDynamicsContactOrRuntimeQualified':False,'appearance':'INSUFFICIENT_FULL_FACE_REALISM_GAIN_DO_NOT_ADOPT','seconds':time.time()-tick};(E/'minimum-source-readback.json').write_text(json.dumps(result,indent=2)+'\n');print('R87_REJECTED_NATIVE_NEUTRAL_READBACK_DONE',time.time()-tick,flush=True)
+if __name__=='__main__':main()

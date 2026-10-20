@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T13:28:44.785342+00:00",
+  "decision": "REJECT_R87_NATIVE_FINITE_OPTICS_INSUFFICIENT_COMPLETE_FACE_REALISM_GAIN",
+  "productionMethods": 1,
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0087-a-finite-optical-envelope.blend",
+      "sha256": "15813424a27739e0a8e04d6a71b536bc1b132ba3d185181bf9f3728f91d32d89",
+      "bytes": 81986364,
+      "role": "REJECTED_COMPLETE_NATIVE_OPTICAL_STUDY_NOT_ADOPTED"
+    }
+  },
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "selectedCompleteDefectResolved": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterStagnationReset": false,
+  "gates": {
+    "appearance": {
+      "status": "INSUFFICIENT_COMPLETE_FACE_REALISM_GAIN_REJECT",
+      "appearanceImprovementAdopted": false,
+      "wholeCharacterScore": null,
+      "observations": [
+        "Brown iris and original external eye appearance are retained, avoiding r86 black/white regression.",
+        "The complete face remains smooth/artificial; native internal optical geometry changes do not provide sufficient visible realism gain at the matched head scale.",
+        "Hair silhouette/highlights and complete body quality remain unaccepted."
+      ],
+      "evidence": [
+        "r0087-complete-character-comparison.png",
+        "r0087-cheap-head-comparison.png"
+      ],
+      "headBodyControlsExact": true,
+      "extraLightAndBroadExpansionStoppedAfterRejection": true
+    },
+    "function": {
+      "status": "PASS_MINIMUM_REJECTED_NATIVE_NEUTRAL_READBACK_ONLY",
+      "evidence": "minimum-source-readback.json",
+      "newNativeInnerAndIrisTopologyClosedAtNeutral": true,
+      "originalDataAndExternalGeometryPreserved": true,
+      "sourceIrisFrontUVExact": true,
+      "newIndependentEyeRotationOrBlinkMotionQualified": false,
+      "newFullyQualifiedCompleteCapability": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_NEW_OPTICAL_INTERFACES_AND_IRREGULAR_PUPIL_RIM_NOT_QUALIFIED",
+      "globalSignedMinimumM": null,
+      "cornealCorrespondingNormalOffsetM": 0.00055,
+      "notTrueMinimumThicknessOrClearance": true,
+      "pupilRimMaximumSourceDisplacementM": {
+        "L": 2.6607029619540867e-06,
+        "R": 2.547339677860805e-06
+      },
+      "closedEdgesAndSignedVolumeNotAnIntersectionCertificate": true,
+      "existingHairBodySelfRootContinuousAndNaturalDynamicsUnaccepted": true,
+      "noBroadTestsAfterVisualRejection": true
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "engineOpticsSkinningImportCpuGpuMemoryLODUnaccepted": true
+    }
+  },
+  "construction": "Original live subdivided corneoscleral exterior plus native reversed inner envelope, closed iris annulus relief/thickness and recessed approximate dark pupil terminator; not captured tissue or a complete eye model.",
+  "preSaveRepairs": [
+    "Initial circular iris radial coordinate did not pin the irregular source boundary; corrected to the two actual angular boundary profiles, original pin guard unchanged.",
+    "Baked native custom-normal roundtrip did not meet the original2e-5 exterior normal guard. Retained original live exterior cage/modifiers/limit normals instead; original guard unchanged and actual exterior residual0. This avoids lossy baking rather than waiving shading preservation."
+  ],
+  "pupilRimCaveat": "Source label says aperture preservation as intention; measured global-radius residual is not exact preservation or qualified anatomy. Candidate already rejected, so do not repair/expand this cavity in this round.",
+  "retainedResearch": "Native source-coordinate/UV/weight construction and finite-mesh topology example only; no new complete operation, optical or contact qualification.",
+  "nextAction": "Keep exact registered r76 complete body/oral work and separately unaccepted r81B groom research. R87 genuinely changes internal eye geometry, preserves actual exterior source/UV and brown iris, but does not visibly solve the complete-face doll appearance; stop optical-inner-thickness/relative-IOR/iris-fold/pupil-depth variants as a full-face realism cure. Next directly author the visible eyelid aperture and eye-surround silhouette as one coherent rest-and-blink unit on the same complete r81B woman: use the actual wetline/skin topological margin and source closed endpoint to define explicit upper/lower rest-margin arcs against the iris projection, preserve canthi and cavity support, and make corresponding lash-root and lid-skin changes together. Do not use another crease/roll scalar field, a partially closed blink coefficient, or a generic universal lid shape; this is an art-directed contour/topology task, not a material or depth sweep. Use readable anatomy/multi-angle reference and bounded source support, then one matched complete head/body/oblique preview before broad checks. If an actual visible contour cannot be authored with the existing dependencies, change the affected eye/lid component construction rather than spending another diagnosis-only turn. Preserve skin tone/light, oral controls, rig and retained hair. All new margins/lashes and closure need their own contact/operation evidence after visible gain. Do not adopt the r87 pupil cavity: its global-radius formula moves the irregular boundary by the measured micrometre residual, and no finite interface/contact or natural-dynamic acceptance exists. Face/skin, whole groom, clothing/actions and real Aevrynd runtime/LOD remain required."
+}

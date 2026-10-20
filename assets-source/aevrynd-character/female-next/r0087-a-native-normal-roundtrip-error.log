@@ -1,0 +1,16 @@
+00:02.078  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0087-eye-solids.py:57: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  innerMat=bpy.data.materials.new('AFN87_CORNEA_TO_AQUEOUS_RELATIVE_INTERFACE');innerMat.use_nodes=True;bs=innerMat.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(1,1,1,1);bs.inputs['Transmission Weight'].default_value=1;bs.inputs['IOR'].default_value=CORNEA_IOR/AQUEOUS_IOR;bs.inputs['Roughness'].default_value=.025
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0087-eye-solids.py", line 77, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0087-eye-solids.py", line 71, in main
+    bpy.context.view_layer.update();_,actualOuter=q.geom(outerObj);error=float(np.linalg.norm(actualOuter-P,axis=1).max());assert error<2e-6;sourceCorner=q.arr(q.geom(outerObj)[0].corner_normals,'vector',len(a['N']),3);cornerError=float(np.linalg.norm(sourceCorner-a['N'],axis=1).max());assert cornerError<2e-5
+                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'scripts/character-next/build-female-next-r0087-eye-solids.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,0 +1,8 @@
+00:02.516  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0081-b-stable-frame-curly-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0087-eye-solids.py:13: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();ref=json.loads((E/'a-build-summary.json').read_text());src=Path(ref['source']);out=Path(ref['output']);assert sha(src)==ref['sourceSha256'] and sha(out)==ref['outputSha256'];line=np.load(E/'a-native-optical-lineage.npz',allow_pickle=False);bpy.ops.wm.open_mainfile(filepath=str(src));bpy.context.scene.frame_set(1);bpy.context.view_layer.update();names=m.rig.native_names();sig={n:v.signature(bpy.data.objects[n]) for n in names};old={n:k.actual(bpy.data.objects[n]) for n in names[:4]};skin='AFN74_SKIN_AND_EXISTING_OCULAR_LINING';Pskin=q.geom(bpy.data.objects[skin])[1].copy();hairnames=('AFN81_EDITABLE_CURLY_GUIDES','AFN57_NATIVE_BROWS','AFN57_NATIVE_LASHES');hair={n:q.hair(bpy.data.objects[n]).copy() for n in hairnames};mats={a.name:m.rig.k.f.v.v32.material_signature(a) for a in bpy.data.materials if a.use_nodes};lights=m.m.q.lights();bpy.ops.wm.open_mainfile(filepath=str(out));bpy.context.scene.frame_set(1);bpy.context.view_layer.update();assert {n:v.signature(bpy.data.objects[n]) for n in names}==sig;assert np.array_equal(q.geom(bpy.data.objects[skin])[1],Pskin)
+00:07.344  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0087-a-finite-optical-envelope.blend"
+R87_REJECTED_NATIVE_NEUTRAL_READBACK_DONE 11.410855531692505
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
