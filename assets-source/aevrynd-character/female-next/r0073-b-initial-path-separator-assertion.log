@@ -1,0 +1,17 @@
+00:01.453  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0069-a-complete-controls-study.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0073-complete-skin.py:81: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();assert q.sha(q.SRC)==q.SOURCE_SHA;bpy.ops.wm.open_mainfile(filepath=str(q.SRC));bpy.context.scene.frame_set(1);names=q.m.native_names();native={n:mesh_native(bpy.data.objects[n]) for n in names};hair={n:q.m.k.v59.native_curves(bpy.data.objects[n]) for n in HAIR};materials={x.name:q.m.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes};rigstate=rig();lights=q.render.lights();view=[bpy.context.scene.view_settings.exposure,bpy.context.scene.view_settings.view_transform,bpy.context.scene.view_settings.look]
+00:27.672  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0073-b-original-4k-skin-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0073-complete-skin.py", line 107, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0073-complete-skin.py", line 96, in main
+    image=node.image;filename=Path(image.filepath.replace('\\','/')).name;assert image.filepath=='//study-vitruvian-textures-source4k/'+filename and list(image.size)==original[filename]['sourceSize']==[4096,4096];p=Path(bpy.path.abspath(image.filepath));assert q.sha(p)==original[filename]['sourceSHA256'];source_map_checks.append({'file':filename,'actualSize':list(image.size),'sha256':q.sha(p),'exactOriginalPublishedSourceBytes':True,'workingDerivativeSize':original[filename]['size']})
+                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'scripts/character-next/verify-female-next-r0073-complete-skin.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

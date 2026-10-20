@@ -1,0 +1,165 @@
+{
+  "reason": "A used historical downsampled working maps: color2048, height/roughness1024, versus original4096. A is not a source-resolution fidelity reference.",
+  "decision": "One additional original-data-resolution trial, same complete material, masks, geometry, shader settings and light; no parameter sweep.",
+  "sourceInputMaps": [
+    {
+      "file": "Light_Skin_Color.1001.exr",
+      "sourceSHA256": "fc24dc691865d28f142bd6d01c50ae7a4c1b084aa62199fd0a313fb553147bc5",
+      "sourceSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        2048,
+        2048
+      ],
+      "precision": "half16"
+    },
+    {
+      "file": "Light_Skin_Color.1002.exr",
+      "sourceSHA256": "1c4f8afda9f11dcd24371236bf9d8bea05df5cfcc497cf11ee3c5f6cfb55f5a3",
+      "sourceSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        2048,
+        2048
+      ],
+      "precision": "half16"
+    },
+    {
+      "file": "Light_Skin_Color.1003.exr",
+      "sourceSHA256": "ea55a824794288a46a4cf10368c8d75707a83565b46a3e1139ead392c8d6a81e",
+      "sourceSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        2048,
+        2048
+      ],
+      "precision": "half16"
+    },
+    {
+      "file": "Light_Skin_Color.1004.exr",
+      "sourceSHA256": "013afd7e6a4d27cfdf0ca2c76bc40cfdeca78da726b396314c6e5035ed1afc65",
+      "sourceSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        2048,
+        2048
+      ],
+      "precision": "half16"
+    },
+    {
+      "file": "Skin_Roughness.1001.exr",
+      "sourceSHA256": "e85a51efca7f420c4343d1c09dd365bc8b3b1a8e0de9f93f40bd1ffc238bbc5c",
+      "sourceSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "precision": "half16"
+    },
+    {
+      "file": "Skin_Roughness.1002.exr",
+      "sourceSHA256": "14c39c758d77db08daa14f157373cab2079440b7a82be1d674dc75992b1349f7",
+      "sourceSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "precision": "half16"
+    },
+    {
+      "file": "Skin_Roughness.1003.exr",
+      "sourceSHA256": "f1cda10ceb0e8b10017e9626c2ef057b1b6db8f67cb81d3d4e6fe8fe79a39bdc",
+      "sourceSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "precision": "half16"
+    },
+    {
+      "file": "Skin_Roughness.1004.exr",
+      "sourceSHA256": "6554f65d0c84c346d38d41dfa1ea4dd1755e26a27d2c3d6d9067c2ad90544a00",
+      "sourceSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "precision": "half16"
+    },
+    {
+      "file": "Skin_Height.1001.exr",
+      "sourceSHA256": "98ce6827bcb036b5a2d7d40957c40760e49745e3d988331e65fd1a46b1195660",
+      "sourceSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "precision": "half16"
+    },
+    {
+      "file": "Skin_Height.1002.exr",
+      "sourceSHA256": "4c1dc8c1520ac94893a176e255c062a9c30111b91f530703e1bbe684ce032748",
+      "sourceSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "precision": "half16"
+    },
+    {
+      "file": "Skin_Height.1003.exr",
+      "sourceSHA256": "c108aeb4cfdb44504905c8072c6b0db39a21fcfa7b280ecf74a903d7964d7a24",
+      "sourceSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "precision": "half16"
+    },
+    {
+      "file": "Skin_Height.1004.exr",
+      "sourceSHA256": "617aaf47dbfb940f7e0f2c2355b0c28d8e8453ce5b5d86612f1153b7be70cf1a",
+      "sourceSize": [
+        4096,
+        4096
+      ],
+      "size": [
+        1024,
+        1024
+      ],
+      "precision": "half16"
+    }
+  ],
+  "maximumMethodsThisRound": 2,
+  "resourceCheckpointUnchangedUTC": "2026-10-20T06:16:49Z",
+  "readbackMustDistinguishUVLookupSemanticsFromTextureSampleDataEquality": true
+}

@@ -1,0 +1,23 @@
+00:01.281  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0069-a-complete-controls-study.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0073-complete-skin.py", line 75, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0073-complete-skin.py", line 62, in main
+    node=skin.nodes[leaf];assert node.image is None and not node.inputs['Vector'].is_linked;new=skin.nodes.new('ShaderNodeGroup');new.name='AFN73_MAP_'+kind;new.node_tree=lookup(kind);links=[l for l in skin.links if l.from_node==node];assert links
+                                                                                                                                                                           ~~~~~~^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0073-complete-skin.py", line 41, in lookup
+    else:shutil.copyfile(origin,target)
+         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\shutil.py", line 280, in copyfile
+    _copyfileobj_readinto(fsrc, fdst, min(file_size, COPY_BUFSIZE))
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\shutil.py", line 194, in _copyfileobj_readinto
+    fdst_write(mv)
+    ~~~~~~~~~~^^^^
+OSError: [Errno 28] No space left on device
+
+Error: script failed, file: 'scripts/character-next/build-female-next-r0073-complete-skin.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

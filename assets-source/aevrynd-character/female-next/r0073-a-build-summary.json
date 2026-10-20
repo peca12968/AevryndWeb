@@ -1,0 +1,83 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0069-a-complete-controls-study.blend",
+  "sourceSha256": "f358d3c5a4d00ee6ad94d324612b33bdcf5aa4dde0bb19382d72bc7afabbb667",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0073-a-complete-source-skin-study.blend",
+  "outputSha256": "ff198d5eab53dc26c3d8b370beb987f478fd8675030e01c9ad02e1d317412b92",
+  "outputBytes": 50116955,
+  "originalMaterialSource": "D:\\Download\\Aevrynd\\Reference\\character\\charmorph-vitruvian-cc0\\char.blend",
+  "originalMaterialSourceSha256": "7e9581c30b48f1409dfeec4a5ec0736014318fc8825ca6d4728f2b543bb02126",
+  "material": "AFN73_COMPLETE_AUTHORED_SKIN",
+  "displacementMethod": "BUMP",
+  "restoredMasks": [
+    "ColLipMask",
+    "MicroNormals",
+    "HairAO",
+    "BeardShadowMask"
+  ],
+  "leafReplacements": [
+    {
+      "sourcePlaceholder": "tex_Skin_Height.<UDIM>",
+      "kind": "Skin_Height",
+      "replacement": "AFN73_VERIFIED_FLAT_UDIM_Skin_Height",
+      "sourceTextureControlsUnchanged": true
+    },
+    {
+      "sourcePlaceholder": "tex_Skin_Roughness.<UDIM>",
+      "kind": "Skin_Roughness",
+      "replacement": "AFN73_VERIFIED_FLAT_UDIM_Skin_Roughness",
+      "sourceTextureControlsUnchanged": true
+    },
+    {
+      "sourcePlaceholder": "tex_Light_Skin_Color.<UDIM>",
+      "kind": "Light_Skin_Color",
+      "replacement": "AFN73_VERIFIED_FLAT_UDIM_Light_Skin_Color",
+      "sourceTextureControlsUnchanged": true
+    }
+  ],
+  "sourceControlOrShaderParameterRetuning": false,
+  "geometryOrHairEyeLightingExposureChanges": false,
+  "assignments": [
+    {
+      "object": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "slot": 4
+    },
+    {
+      "object": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "slot": 5
+    },
+    {
+      "object": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "slot": 4
+    },
+    {
+      "object": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "slot": 5
+    },
+    {
+      "object": "AFN60_L_IRIS_PUPIL_SURFACE",
+      "slot": 4
+    },
+    {
+      "object": "AFN60_L_IRIS_PUPIL_SURFACE",
+      "slot": 5
+    },
+    {
+      "object": "AFN60_R_IRIS_PUPIL_SURFACE",
+      "slot": 4
+    },
+    {
+      "object": "AFN60_R_IRIS_PUPIL_SURFACE",
+      "slot": 5
+    },
+    {
+      "object": "AFN60_BODY_ORAL_AND_OCULAR_LINING",
+      "slot": 4
+    },
+    {
+      "object": "AFN60_BODY_ORAL_AND_OCULAR_LINING",
+      "slot": 5
+    }
+  ],
+  "scope": "Complete source shader semantics at its fixed supplied controls, with original native masks and three effective flat-image leaves. Missing dark/age placeholder branches remain inactive and unqualified; view-dependent source approximations are retained, not asserted as physical ground truth.",
+  "secondsBeforePilot": 13.040411710739136
+}

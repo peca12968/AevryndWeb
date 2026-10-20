@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T06:31:30.066939+00:00",
+  "decision": "REJECT_SOURCE_SKIN_APPLICATIONS_KEEP_R69_RETAIN_NATIVE_MASK_AND_SHADER_REFERENCES",
+  "studies": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0073-a-complete-source-skin-study.blend",
+      "sha256": "ff198d5eab53dc26c3d8b370beb987f478fd8675030e01c9ad02e1d317412b92",
+      "bytes": 50116955,
+      "decision": "REJECTED_AS_MAINLINE_APPEARANCE",
+      "original4kSourceBytesUsed": false,
+      "scope": "Complete source shader and native masks with historical working maps; six angles."
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0073-b-original-4k-skin-study.blend",
+      "sha256": "b37c87a8e55f0f937c4adaab09e7c3d1c5e111bc05e91fc0748dbaa7819b1984",
+      "bytes": 50117858,
+      "decision": "REJECTED_AS_MAINLINE_APPEARANCE",
+      "original4kSourceBytesUsed": true,
+      "scope": "Same shader/masks, exact original source4K maps; full-head/body cheap trial only."
+    }
+  },
+  "gates": {
+    "appearance": {
+      "status": "NO_ADOPTABLE_COMPLETE_SKIN_REALISM_GAIN",
+      "wholeCharacterScore": null,
+      "evidence": [
+        "r0073-complete-skin-data-comparison.png",
+        "r0073-source-shader-angles.png"
+      ],
+      "localDifferences": "Lip/chin detail and skin hue/response differ; broad cheek/forehead response remains flat and the complete face stays mannequin-like.",
+      "sourceResolutionTrialDidNotSolveMainDefect": true,
+      "aSameConditionViews": 6,
+      "bCheapHeadBodyViews": 2
+    },
+    "function": {
+      "status": "PASS_SOURCE_DATA_RECONSTRUCTION_AND_UNCHANGED_GEOMETRY_ONLY",
+      "evidence": [
+        "a-independent-readback.json",
+        "b-independent-readback.json"
+      ],
+      "restoredSourceMasks": 4,
+      "verifiedMaskComponentFields": 20,
+      "sourceShaderParametersAndSettingsPreserved": true,
+      "original4kMapsVerified": 12,
+      "originalGeometryRigWeightsEyesHairAndLightingPreservedAtFrames": [
+        1,
+        13,
+        49
+      ],
+      "newFullyQualifiedCompleteCapability": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_KNOWN_R69_FAILURES_REMAIN",
+      "globalSignedMinimumM": null,
+      "geometryAndHairRadiiUnchanged": true,
+      "materialDisplacementMode": "BUMP",
+      "knownR69HeadTurnFreeHairInsideBodyWitnessesStillApply": true,
+      "noNewFiniteCurveSelfClothContinuousCertificate": true
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "sourceBlenderShaderIsNotEngineImplementation": true,
+      "engineCpuGpuMemoryLODNotAccepted": true
+    }
+  },
+  "appearanceImprovement": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "adoptedModel": false,
+  "wholeCharacterScore": null,
+  "retainedResearch": {
+    "purpose": "Exact native CC0 lip/micro/occlusion masks, complete source material semantics and original source4K files for later genuinely justified authoring/baking.",
+    "scope": "Source reconstruction, UV/filter equivalence and unchanged three-pose geometry only; no accepted complete skin, motion/contact or engine result.",
+    "minimumIntegrationStep": "Use the corresponding native IDs when adding oral/facial controls and layers; any use of these surface fields requires its own visible gain and affected checks. Do not inherit the rejected skin look."
+  },
+  "sourceDataFidelity": "A used historical color2K and height/roughness1K maps. B uses all12 original4K source maps byte-for-byte; original data fidelity is verified separately from visual realism.",
+  "validatorCorrection": "A first checker assessed dependencies after appending its own canonical reference object, which creates a temporary library ID. Fresh saved-asset inspection and final checks are made before that reference append; saved A/B have no linked libraries. Windows saved relative paths also required lexical slash-normalized filename parsing rather than UNC Path.name; final A/B reruns verified map identities. Failed checker logs retained. No model change or weakened dependency requirement.",
+  "diskRecovery": "disk-recovery.json: immutable equal-byte mirrors deduplicated using NTFS hardlinks; original model/version contents preserved.",
+  "nextAction": "Keep exact complete r69A as active authoring character and r65 as the separately scoped ocular/anatomy foundation. R73 reconstructed complete source shader and masks passed data/geometry readback, and B verified original4096 source map bytes; neither complete appearance application is adopted. Do not repeat source-shader, bump/roughness/SSS/pigment/exposure or texture-resolution sweeps. Retain the original masks/material and source4K data as technical inputs, not a qualified skin result. Change the next production endpoint to actual oral layers and editable jaw-opening on the same complete woman: use a bounded inspection of the original native oral geometry/connectivity and the pinned source L3 Jaw_Lower data, without assuming that every tooth/gum/tongue layer already exists or copying addon code. Establish upper/lower teeth, gum, tongue and cavity roles from real geometry and source correspondence, then integrate one neutral/open/return operation on the complete actor with actual head/body views and motion. Preserve skin/eye/hair data, current rig and original repair keys; any actual topology or component change must preserve the stable scalp-deformation reference or explicitly rebind and verify every affected render-hair anchor; source-index equality alone does not certify motion or contacts. Verify affected oral/lip/teeth and nearby hair relations in the claimed motion scope; do not present isolated mouth meshes or a saved morph as the complete usable operation. One further production round reaches the three-round review after r71, with stagnation not reset. Check disk/free memory and real live jobs first; disk was recovered using byte-identical immutable history mirrors as same-volume hardlinks, no historical model contents deleted. New archive binaries/maps should reuse verified immutable files with hardlinks on this volume where appropriate, while mutable manifests/code stay independent. Existing natural hair/cloth dynamics, body deformation, all requested actions and real engine material/import/LOD/performance plus explicit female acceptance remain required. No formal runtime/site promotion or male character work."
+}

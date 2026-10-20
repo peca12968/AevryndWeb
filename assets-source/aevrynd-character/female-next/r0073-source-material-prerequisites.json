@@ -1,0 +1,1610 @@
+{
+  "currentBodyUV": [
+    "VitruvianUV.UDIM"
+  ],
+  "currentBodyAttributes": [
+    [
+      ".select_vert",
+      "BOOLEAN",
+      "POINT"
+    ],
+    [
+      "position",
+      "FLOAT_VECTOR",
+      "POINT"
+    ],
+    [
+      ".corner_vert",
+      "INT",
+      "CORNER"
+    ],
+    [
+      ".corner_edge",
+      "INT",
+      "CORNER"
+    ],
+    [
+      ".select_poly",
+      "BOOLEAN",
+      "FACE"
+    ],
+    [
+      "sharp_face",
+      "BOOLEAN",
+      "FACE"
+    ],
+    [
+      ".edge_verts",
+      "INT32_2D",
+      "EDGE"
+    ],
+    [
+      ".select_edge",
+      "BOOLEAN",
+      "EDGE"
+    ],
+    [
+      "VitruvianUV.UDIM",
+      "FLOAT2",
+      "CORNER"
+    ],
+    [
+      "material_index",
+      "INT",
+      "FACE"
+    ],
+    [
+      "AFN60_NativeVertexID",
+      "INT",
+      "POINT"
+    ],
+    [
+      "AFN60_NativeFaceID",
+      "INT",
+      "FACE"
+    ],
+    [
+      "AFN60_ReplaceOldBranchDisk",
+      "BOOLEAN",
+      "FACE"
+    ]
+  ],
+  "sourceMaterial": {
+    "name": "UDIM.Skin",
+    "displacementMethod": "BUMP",
+    "nodes": [
+      [
+        "Material Output",
+        "ShaderNodeOutputMaterial",
+        null
+      ],
+      [
+        "Group",
+        "ShaderNodeGroup",
+        "VitruvianSkin"
+      ],
+      [
+        "charmorph_settings",
+        "ShaderNodeGroup",
+        "CharMorphSettings"
+      ]
+    ],
+    "links": [
+      [
+        "charmorph_settings",
+        "Linear Melanin Texture Blend",
+        "Group",
+        "Linear Melanin Texture Blend"
+      ],
+      [
+        "charmorph_settings",
+        "Tone",
+        "Group",
+        "Tone"
+      ],
+      [
+        "charmorph_settings",
+        "Age (Eldery)",
+        "Group",
+        "Age (Eldery)"
+      ],
+      [
+        "charmorph_settings",
+        "Estrogen",
+        "Group",
+        "Estrogen"
+      ],
+      [
+        "charmorph_settings",
+        "East Asian",
+        "Group",
+        "East Asian"
+      ],
+      [
+        "charmorph_settings",
+        "Global Bump Strength",
+        "Group",
+        "Global Bump Strength"
+      ],
+      [
+        "charmorph_settings",
+        "Micro Bump Strength",
+        "Group",
+        "Micro Normal Strength"
+      ],
+      [
+        "charmorph_settings",
+        "Roughness Multiplier",
+        "Group",
+        "Roughness Multiplier"
+      ],
+      [
+        "Group",
+        "BSDF",
+        "Material Output",
+        "Surface"
+      ],
+      [
+        "Group",
+        "Displacement",
+        "Material Output",
+        "Displacement"
+      ],
+      [
+        "charmorph_settings",
+        "Five O' Clock Shadow",
+        "Group",
+        "Five O Clock Shadow"
+      ],
+      [
+        "charmorph_settings",
+        "Hair Ambient Occlusion Factor",
+        "Group",
+        "Hair AO Factor"
+      ],
+      [
+        "charmorph_settings",
+        "Scalp Tan",
+        "Group",
+        "ScalpTanLines"
+      ],
+      [
+        "charmorph_settings",
+        "Lip Bump Strength",
+        "Group",
+        "Lip Strength"
+      ],
+      [
+        "charmorph_settings",
+        "Physical Melanin LUT Blend",
+        "Group",
+        "Physical Melanin Blend"
+      ],
+      [
+        "charmorph_settings",
+        "Hemoglobin Fraction",
+        "Group",
+        "Hemoglobin Fraction"
+      ],
+      [
+        "charmorph_settings",
+        "Melanin Blend",
+        "Group",
+        "Melanin Blend"
+      ],
+      [
+        "charmorph_settings",
+        "Melanin Fraction",
+        "Group",
+        "Melanin Fraction"
+      ],
+      [
+        "charmorph_settings",
+        "Hue",
+        "Group",
+        "Hue"
+      ],
+      [
+        "charmorph_settings",
+        "Saturation",
+        "Group",
+        "Saturation"
+      ],
+      [
+        "charmorph_settings",
+        "Value",
+        "Group",
+        "Value"
+      ],
+      [
+        "charmorph_settings",
+        "Age (Baby)",
+        "Group",
+        "Age (Baby)"
+      ],
+      [
+        "charmorph_settings",
+        "Subsurface Scale Multiplier",
+        "Group",
+        "Subsurface Scale Multiplier"
+      ]
+    ]
+  },
+  "groups": [
+    {
+      "name": "EstrogenCalc",
+      "nodes": [
+        {
+          "name": "Value.003",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Mix.001",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Value.002",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group Input.001",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        },
+        {
+          "name": "Group Input.002",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "RGB Curves",
+          "type": "ShaderNodeRGBCurve"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "FauxCavity",
+      "nodes": [
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Geometry",
+          "type": "ShaderNodeNewGeometry"
+        },
+        {
+          "name": "ColorRamp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Invert",
+          "type": "ShaderNodeInvert"
+        },
+        {
+          "name": "Separate Color",
+          "type": "ShaderNodeSeparateColor"
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath"
+        },
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "HairAO",
+      "nodes": [
+        {
+          "name": "Ambient Occlusion",
+          "type": "ShaderNodeAmbientOcclusion"
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Color Attribute.001",
+          "type": "ShaderNodeVertexColor",
+          "layer": "HairAO"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "HeadShadow",
+      "nodes": [
+        {
+          "name": "Mix.001",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "ColorRamp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Mix.005",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Color Attribute",
+          "type": "ShaderNodeVertexColor",
+          "layer": "BeardShadowMask"
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Mix.003",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Separate RGB",
+          "type": "ShaderNodeSeparateColor"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Math.005",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.004",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Mix.004",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Mapping",
+          "type": "ShaderNodeMapping"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Mix.006",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "EastAsian",
+      "nodes": [
+        {
+          "name": "Hue Saturation Value.003",
+          "type": "ShaderNodeHueSaturation"
+        },
+        {
+          "name": "Hue Saturation Value.002",
+          "type": "ShaderNodeHueSaturation"
+        },
+        {
+          "name": "Mix.001",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Hue Saturation Value.004",
+          "type": "ShaderNodeHueSaturation"
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Group Input.001",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "Aging",
+      "nodes": [
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "ColorRamp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Voronoi Texture",
+          "type": "ShaderNodeTexVoronoi"
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "ColorRamp.001",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Hue Saturation Value",
+          "type": "ShaderNodeHueSaturation"
+        },
+        {
+          "name": "Mix.003",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Mix.004",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "ColorRamp.002",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Texture Coordinate.001",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Voronoi Texture.001",
+          "type": "ShaderNodeTexVoronoi"
+        },
+        {
+          "name": "Mix.005",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Mapping",
+          "type": "ShaderNodeMapping"
+        },
+        {
+          "name": "Voronoi Texture.002",
+          "type": "ShaderNodeTexVoronoi"
+        },
+        {
+          "name": "ColorRamp.003",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Group Input.001",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Mix.001",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Invert",
+          "type": "ShaderNodeInvert"
+        },
+        {
+          "name": "Invert.001",
+          "type": "ShaderNodeInvert"
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "RGB Curves.001",
+          "type": "ShaderNodeRGBCurve"
+        },
+        {
+          "name": "Group Input.002",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Mix.006",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Math.004",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "RGB Curves",
+          "type": "ShaderNodeRGBCurve"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "SkinLUT_2",
+      "nodes": [
+        {
+          "name": "ColorRamp.003",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "ColorRamp.006",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "ColorRamp.005",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "ColorRamp.004",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Mix.004",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Mix.005",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Mix.003",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Reroute",
+          "type": "NodeReroute"
+        },
+        {
+          "name": "Map Range",
+          "type": "ShaderNodeMapRange"
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "ColorRamp.002",
+          "type": "ShaderNodeValToRGB"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "SkinLUT_3",
+      "nodes": [
+        {
+          "name": "ColorRamp.003",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "ColorRamp.006",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "ColorRamp.005",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "ColorRamp.004",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Mix.004",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Mix.005",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Mix.003",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Reroute",
+          "type": "NodeReroute"
+        },
+        {
+          "name": "Map Range",
+          "type": "ShaderNodeMapRange"
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "ColorRamp.002",
+          "type": "ShaderNodeValToRGB"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "SkinLUT_1",
+      "nodes": [
+        {
+          "name": "ColorRamp.003",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "ColorRamp.006",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "ColorRamp.005",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "ColorRamp.004",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Mix.004",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Mix.005",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Mix.003",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Reroute",
+          "type": "NodeReroute"
+        },
+        {
+          "name": "Map Range",
+          "type": "ShaderNodeMapRange"
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "ColorRamp.002",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "Skin.LUT",
+      "nodes": [
+        {
+          "name": "Group.005",
+          "type": "ShaderNodeGroup",
+          "group": "SkinLUT_2"
+        },
+        {
+          "name": "Group.006",
+          "type": "ShaderNodeGroup",
+          "group": "SkinLUT_3"
+        },
+        {
+          "name": "Reroute",
+          "type": "NodeReroute"
+        },
+        {
+          "name": "Reroute.001",
+          "type": "NodeReroute"
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Map Range",
+          "type": "ShaderNodeMapRange"
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Mix.001",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Math.006",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group.004",
+          "type": "ShaderNodeGroup",
+          "group": "SkinLUT_1"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "SkinLookUpTable",
+      "nodes": [
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group.001",
+          "type": "ShaderNodeGroup",
+          "group": "Skin.LUT"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        },
+        {
+          "name": "Mix.004",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "ColorRamp",
+          "type": "ShaderNodeValToRGB"
+        },
+        {
+          "name": "Mix.001",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "BaseInput",
+      "nodes": [
+        {
+          "name": "note",
+          "type": "NodeFrame"
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Reroute",
+          "type": "NodeReroute"
+        },
+        {
+          "name": "Reroute.001",
+          "type": "NodeReroute"
+        },
+        {
+          "name": "Reroute.002",
+          "type": "NodeReroute"
+        },
+        {
+          "name": "Reroute.003",
+          "type": "NodeReroute"
+        },
+        {
+          "name": "Mix.001",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Group Input.002",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Hue/Saturation/Value",
+          "type": "ShaderNodeHueSaturation"
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        },
+        {
+          "name": "Group.002",
+          "type": "ShaderNodeGroup",
+          "group": "SkinLookUpTable"
+        },
+        {
+          "name": "Group Input.001",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Mix.003",
+          "type": "ShaderNodeMix"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "RoughnessUnreal",
+      "nodes": [
+        {
+          "name": "Frame",
+          "type": "NodeFrame"
+        },
+        {
+          "name": "Frame.001",
+          "type": "NodeFrame"
+        },
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Value",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Value.001",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Fresnel",
+          "type": "ShaderNodeFresnel"
+        },
+        {
+          "name": "Value.002",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Value.003",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Mix.001",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Fresnel.001",
+          "type": "ShaderNodeFresnel"
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "NodeGroup",
+      "nodes": [
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Math.010",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.011",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.012",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Mix.001",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "box_map",
+      "nodes": [
+        {
+          "name": "Frame.008",
+          "type": "NodeFrame"
+        },
+        {
+          "name": "Frame",
+          "type": "NodeFrame"
+        },
+        {
+          "name": "Frame.006",
+          "type": "NodeFrame"
+        },
+        {
+          "name": "Frame.005",
+          "type": "NodeFrame"
+        },
+        {
+          "name": "Frame.007",
+          "type": "NodeFrame"
+        },
+        {
+          "name": "Mix.006",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Math.005",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.004",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.006",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Vector Math.001",
+          "type": "ShaderNodeVectorMath"
+        },
+        {
+          "name": "Separate XYZ",
+          "type": "ShaderNodeSeparateXYZ"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Combine XYZ.001",
+          "type": "ShaderNodeCombineXYZ"
+        },
+        {
+          "name": "Combine XYZ",
+          "type": "ShaderNodeCombineXYZ"
+        },
+        {
+          "name": "Combine XYZ.002",
+          "type": "ShaderNodeCombineXYZ"
+        },
+        {
+          "name": "Separate XYZ.001",
+          "type": "ShaderNodeSeparateXYZ"
+        },
+        {
+          "name": "Mix.005",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord"
+        },
+        {
+          "name": "Vector Math.002",
+          "type": "ShaderNodeVectorMath"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "MicroSkin",
+      "nodes": [
+        {
+          "name": "Mix.006",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Voronoi Texture.001",
+          "type": "ShaderNodeTexVoronoi"
+        },
+        {
+          "name": "RGB Curves",
+          "type": "ShaderNodeRGBCurve"
+        },
+        {
+          "name": "Mix.005",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Noise Texture.002",
+          "type": "ShaderNodeTexNoise"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Group.002",
+          "type": "ShaderNodeGroup",
+          "group": "box_map"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "VitruvianSkin",
+      "nodes": [
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Group Input.002",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Displacement",
+          "type": "ShaderNodeDisplacement"
+        },
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group.002",
+          "type": "ShaderNodeGroup",
+          "group": "EstrogenCalc"
+        },
+        {
+          "name": "Math.004",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Group.007",
+          "type": "ShaderNodeGroup",
+          "group": "FauxCavity"
+        },
+        {
+          "name": "Math.006",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Group Input.004",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled"
+        },
+        {
+          "name": "Color Attribute",
+          "type": "ShaderNodeVertexColor",
+          "layer": "ColLipMask"
+        },
+        {
+          "name": "Group Input.001",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Group Input.005",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Group Input.003",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Group Input.006",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Group.008",
+          "type": "ShaderNodeGroup",
+          "group": "HairAO"
+        },
+        {
+          "name": "Group.003",
+          "type": "ShaderNodeGroup",
+          "group": "HeadShadow"
+        },
+        {
+          "name": "East Asian",
+          "type": "ShaderNodeGroup",
+          "group": "EastAsian"
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        },
+        {
+          "name": "Value.004",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath"
+        },
+        {
+          "name": "Combine XYZ",
+          "type": "ShaderNodeCombineXYZ"
+        },
+        {
+          "name": "Group.001",
+          "type": "ShaderNodeGroup",
+          "group": "Aging"
+        },
+        {
+          "name": "tex_Skin_Height.<UDIM>",
+          "type": "ShaderNodeTexImage",
+          "image": null,
+          "vectorLinked": false
+        },
+        {
+          "name": "tex_Skin_Roughness.<UDIM>",
+          "type": "ShaderNodeTexImage",
+          "image": null,
+          "vectorLinked": false
+        },
+        {
+          "name": "tex_Skin_Age_Height.<UDIM>",
+          "type": "ShaderNodeTexImage",
+          "image": null,
+          "vectorLinked": false
+        },
+        {
+          "name": "tex_Dark_Skin_Color.<UDIM>",
+          "type": "ShaderNodeTexImage",
+          "image": null,
+          "vectorLinked": false
+        },
+        {
+          "name": "tex_Light_Skin_Color.<UDIM>",
+          "type": "ShaderNodeTexImage",
+          "image": null,
+          "vectorLinked": false
+        },
+        {
+          "name": "Group",
+          "type": "ShaderNodeGroup",
+          "group": "BaseInput"
+        },
+        {
+          "name": "Group.006",
+          "type": "ShaderNodeGroup",
+          "group": "RoughnessUnreal"
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Group.010",
+          "type": "ShaderNodeGroup",
+          "group": "NodeGroup"
+        },
+        {
+          "name": "Math.010",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Vertex Color.001",
+          "type": "ShaderNodeVertexColor",
+          "layer": "MicroNormals"
+        },
+        {
+          "name": "Math.012",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Math.013",
+          "type": "ShaderNodeMath"
+        },
+        {
+          "name": "Group.011",
+          "type": "ShaderNodeGroup",
+          "group": "MicroSkin"
+        },
+        {
+          "name": "Group Input.007",
+          "type": "NodeGroupInput"
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "CharMorphSettings",
+      "nodes": [
+        {
+          "name": "Linear Melanin Texture Blend",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "EastAsian",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Estrogen",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Lip Bump Strength",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Scalp Tan",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Hair Ambient Occlusion",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Five O' Clock Shadow",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Age (Eldery)",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Tone",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Global Bump Strength",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Micro Bump Strength",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Roughness Multiplier",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Physical Melanin LUT Blend",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Hemoglobin Fraction",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Melanin Blend",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Melanin Fraction",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Teeth Roughness Multiplier",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Saturation",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Iris Color Blend",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Iris Bump Strength",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Sclera Yellowness",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Sclera Redness",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Hue",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Value",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Teeth Bump Strength",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Teeth Brownness",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Teeth Yellowness",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Sclera Bump Strength",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput"
+        },
+        {
+          "name": "Age (Baby)",
+          "type": "ShaderNodeValue"
+        },
+        {
+          "name": "Subsurface Scale Multiplier",
+          "type": "ShaderNodeValue"
+        }
+      ],
+      "drivers": []
+    },
+    {
+      "name": "Shader Nodetree",
+      "nodes": [
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial"
+        },
+        {
+          "name": "Group",
+          "type": "ShaderNodeGroup",
+          "group": "VitruvianSkin"
+        },
+        {
+          "name": "charmorph_settings",
+          "type": "ShaderNodeGroup",
+          "group": "CharMorphSettings"
+        }
+      ],
+      "drivers": []
+    }
+  ],
+  "images": []
+}

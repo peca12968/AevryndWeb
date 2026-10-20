@@ -1,0 +1,328 @@
+{
+  "canonicalLibrary": {
+    "output": "D:\\Download\\Aevrynd\\Reference\\character\\charmorph-vitruvian-cc0\\canonical-female-data.blend",
+    "sha256": "fcccc34c05b46276aac32504a428b7a3c0faca2164ebb36180714ae5bc265c38",
+    "vertices": 37436,
+    "femaleHeadMaximumDisplacementM": 0.006396719152144184,
+    "particleSystems": [
+      {
+        "name": "Eyelashes",
+        "type": "HAIR",
+        "count": 0,
+        "children": "SIMPLE",
+        "renderedChildren": 4,
+        "hairLength": 0.0,
+        "hairStep": 5,
+        "material": 6,
+        "rootRadius": 0.0012000000569969416,
+        "tipRadius": 0.0012000000569969416,
+        "radiusScale": 0.010999999940395355,
+        "particlesInFile": 412
+      },
+      {
+        "name": "mind_eyebrows_11_Default",
+        "type": "HAIR",
+        "count": 0,
+        "children": "NONE",
+        "renderedChildren": 100,
+        "hairLength": 4.0,
+        "hairStep": 5,
+        "material": 6,
+        "rootRadius": 0.001500000013038516,
+        "tipRadius": 0.001500000013038516,
+        "radiusScale": 0.009999999776482582,
+        "particlesInFile": 2140
+      }
+    ],
+    "basisSHA256": "88f288ccd5dddbfbde440993eeb120967e0b5702579c300548cd35ca985a42c4",
+    "femaleMorphSHA256": "883839f31ebd0a8454bbae1e5a15ec767ba86741a0b51194f0527bb1b74e34a7",
+    "activeUV": "VitruvianUV.UDIM",
+    "removedEmbeddedTexts": true,
+    "newFemaleControl": "AFN57_Supplied_Female_Morph"
+  },
+  "sourceMasks": {
+    "ColLipMask": {
+      "type": "BYTE_COLOR",
+      "domain": "CORNER",
+      "count": 149688,
+      "sha256": "71e8ac81db26638585dda4bb2f31522cb720419aa53036b2f18d551a54b68b3f",
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    "MicroNormals": {
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 37436,
+      "sha256": "e082c665899d9547c41e76c5d3af7dbf9867a0bed09dd265fb28580358e34006",
+      "range": [
+        0.0,
+        1.0000001192092896
+      ]
+    },
+    "HairAO": {
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 37436,
+      "sha256": "340cebae9f9987dcce3f0decd6f3c85bcdb5be02ba090668de46a489c7c50fba",
+      "range": [
+        0.0,
+        1.0000001192092896
+      ]
+    },
+    "BeardShadowMask": {
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 37436,
+      "sha256": "dd39f37ee0f0e8d2d4092909a353921391348d2d69b18ae498e925c9e1d24727",
+      "range": [
+        0.0,
+        1.0000001192092896
+      ]
+    }
+  },
+  "restored": [
+    {
+      "object": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "mask": "ColLipMask",
+      "type": "BYTE_COLOR",
+      "domain": "CORNER",
+      "count": 2048,
+      "expectedColorSha256": "bd2acb6b4ac88fb525170ec7f479b9474be378c4bb8976e8399dc203b56e0e7c",
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "mask": "MicroNormals",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 514,
+      "expectedColorSha256": "8241ae193fe935cb76edbb969209699ba0898667fc9075756532a49b2a55db1b",
+      "range": [
+        9.939103620126843e-07,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "mask": "HairAO",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 514,
+      "expectedColorSha256": "3d522e87678384b7abb80a2f535922fa0e4f3d3a478f85b5d256c6f103a1a496",
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_L_EYE_OUTER_SHELL_APPROX",
+      "mask": "BeardShadowMask",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 514,
+      "expectedColorSha256": "3d522e87678384b7abb80a2f535922fa0e4f3d3a478f85b5d256c6f103a1a496",
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "mask": "ColLipMask",
+      "type": "BYTE_COLOR",
+      "domain": "CORNER",
+      "count": 2048,
+      "expectedColorSha256": "bd2acb6b4ac88fb525170ec7f479b9474be378c4bb8976e8399dc203b56e0e7c",
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "mask": "MicroNormals",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 514,
+      "expectedColorSha256": "21c372a751abed9e7afc98b85f00578c2e0b12bb08837fbc253bd508645051a1",
+      "range": [
+        5.51040045593254e-07,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "mask": "HairAO",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 514,
+      "expectedColorSha256": "3d522e87678384b7abb80a2f535922fa0e4f3d3a478f85b5d256c6f103a1a496",
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_R_EYE_OUTER_SHELL_APPROX",
+      "mask": "BeardShadowMask",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 514,
+      "expectedColorSha256": "3d522e87678384b7abb80a2f535922fa0e4f3d3a478f85b5d256c6f103a1a496",
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_L_IRIS_PUPIL_SURFACE",
+      "mask": "ColLipMask",
+      "type": "BYTE_COLOR",
+      "domain": "CORNER",
+      "count": 1536,
+      "expectedColorSha256": "48543b85355cccdb2e63612b81cbff4ce5e3642dba4c6e72ff20914d086d5ab3",
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_L_IRIS_PUPIL_SURFACE",
+      "mask": "MicroNormals",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 401,
+      "expectedColorSha256": "fccba71d6b021811112f5d976d04ab9f3be4033719b60d15b5b6783aae57fa04",
+      "range": [
+        0.008930818177759647,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_L_IRIS_PUPIL_SURFACE",
+      "mask": "HairAO",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 401,
+      "expectedColorSha256": "de3308a65003ca930985eadd434db025f8f9b0ea3401e31f59aa9478bf7f0914",
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_L_IRIS_PUPIL_SURFACE",
+      "mask": "BeardShadowMask",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 401,
+      "expectedColorSha256": "de3308a65003ca930985eadd434db025f8f9b0ea3401e31f59aa9478bf7f0914",
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_R_IRIS_PUPIL_SURFACE",
+      "mask": "ColLipMask",
+      "type": "BYTE_COLOR",
+      "domain": "CORNER",
+      "count": 1536,
+      "expectedColorSha256": "48543b85355cccdb2e63612b81cbff4ce5e3642dba4c6e72ff20914d086d5ab3",
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_R_IRIS_PUPIL_SURFACE",
+      "mask": "MicroNormals",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 401,
+      "expectedColorSha256": "564ddddf2a62d0502a007192f7ea3f9e07dc5eba937f809bfec6ff41be0b673e",
+      "range": [
+        0.008930818177759647,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_R_IRIS_PUPIL_SURFACE",
+      "mask": "HairAO",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 401,
+      "expectedColorSha256": "de3308a65003ca930985eadd434db025f8f9b0ea3401e31f59aa9478bf7f0914",
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_R_IRIS_PUPIL_SURFACE",
+      "mask": "BeardShadowMask",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 401,
+      "expectedColorSha256": "de3308a65003ca930985eadd434db025f8f9b0ea3401e31f59aa9478bf7f0914",
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_BODY_ORAL_AND_OCULAR_LINING",
+      "mask": "ColLipMask",
+      "type": "BYTE_COLOR",
+      "domain": "CORNER",
+      "count": 142520,
+      "expectedColorSha256": "a8b7d61b3f9e89c71fc14cfeac3da5a2c5e044c05c2ce0de9295df9c07dbb90a",
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AFN60_BODY_ORAL_AND_OCULAR_LINING",
+      "mask": "MicroNormals",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 35606,
+      "expectedColorSha256": "57a08b78c51e81b3d607495f0c7fbaa23f7f10dd4435d043ef473100b521a368",
+      "range": [
+        0.0,
+        1.0000001192092896
+      ]
+    },
+    {
+      "object": "AFN60_BODY_ORAL_AND_OCULAR_LINING",
+      "mask": "HairAO",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 35606,
+      "expectedColorSha256": "3d6614c2e674b5587dba7c5c70e964debaef58f9290da53ad4ec9974c2952b58",
+      "range": [
+        0.0,
+        1.0000001192092896
+      ]
+    },
+    {
+      "object": "AFN60_BODY_ORAL_AND_OCULAR_LINING",
+      "mask": "BeardShadowMask",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT",
+      "count": 35606,
+      "expectedColorSha256": "5b8b5391abdab76ff91ac5feb9fa91e770acbd86c619408471def1169b159db4",
+      "range": [
+        0.0,
+        1.0000001192092896
+      ]
+    }
+  ],
+  "mapping": "POINT by original native vertex ID; CORNER by original native face ID plus matching native vertex, no nearest-surface approximation."
+}

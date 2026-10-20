@@ -12,10 +12,10 @@
   "websitePromotionApproved": false,
   "externalPlatformDependencies": [],
   "evidence": "D:/Download/Aevrynd/Evidence/character-female-next/r0001-baseline/female-next-r0001-baseline.report.json",
-  "nextRequiredWork": "Keep exact complete r69A as active work character and r65 as the separately scoped ocular/anatomy fallback. R72 cheek0.5/jaw0.35 form recipe is rejected for insufficient complete-face realism gain; do not sweep these weights or extend a chain of regional shape variants. Raw pinned CC0 native morph data and verified reversible keys are technical research only, not an adopted face or a new fully usable capability. Change the next production basis to the original complete CC0 Vitruvian skin/material semantics on the same complete woman, rather than the simplified canonical wrapper. Reuse r66 source-material-diagnosis.json and native-skin-values.json: the source contains41-node VitruvianSkin plus MicroSkin, Skin.LUT and related lookup/roughness groups that the selected r66 height/transport wrapper did not reproduce. First establish a bounded full-source material reference and its exact settings, images, UV and unit semantics, then integrate one actual complete-character candidate with fixed geometry, pigment controls and lighting. Do not resume r66 bump/SSS/roughness/pigment/exposure sweeps or silently claim that extra nodes improve realism. If unsafe native tiled images require a compatible leaf lookup, use the verified flat EXRs/native UV correspondence and record semantic differences; no addon/embedded code execution or opaque replacement source. Deliver same-condition full-head/body and second-light evidence before any adoption. Learning from Digital Emily concerns geometry/reflectance/normal separation only; no Emily model, texture, OSL or reference-image data has been downloaded/incorporated or established as usable in this commercial engine asset. Existing hair dynamics and contacts, facial/oral/cloth layers and actions, deformation, actual engine import/material/LOD/performance and explicit female acceptance remain required. Failed r70 physics and r71 material methods stay stopped.",
+  "nextRequiredWork": "Keep exact complete r69A as active authoring character and r65 as the separately scoped ocular/anatomy foundation. R73 reconstructed complete source shader and masks passed data/geometry readback, and B verified original4096 source map bytes; neither complete appearance application is adopted. Do not repeat source-shader, bump/roughness/SSS/pigment/exposure or texture-resolution sweeps. Retain the original masks/material and source4K data as technical inputs, not a qualified skin result. Change the next production endpoint to actual oral layers and editable jaw-opening on the same complete woman: use a bounded inspection of the original native oral geometry/connectivity and the pinned source L3 Jaw_Lower data, without assuming that every tooth/gum/tongue layer already exists or copying addon code. Establish upper/lower teeth, gum, tongue and cavity roles from real geometry and source correspondence, then integrate one neutral/open/return operation on the complete actor with actual head/body views and motion. Preserve skin/eye/hair data, current rig and original repair keys; any actual topology or component change must preserve the stable scalp-deformation reference or explicitly rebind and verify every affected render-hair anchor; source-index equality alone does not certify motion or contacts. Verify affected oral/lip/teeth and nearby hair relations in the claimed motion scope; do not present isolated mouth meshes or a saved morph as the complete usable operation. One further production round reaches the three-round review after r71, with stagnation not reset. Check disk/free memory and real live jobs first; disk was recovered using byte-identical immutable history mirrors as same-volume hardlinks, no historical model contents deleted. New archive binaries/maps should reuse verified immutable files with hardlinks on this volume where appropriate, while mutable manifests/code stay independent. Existing natural hair/cloth dynamics, body deformation, all requested actions and real engine material/import/LOD/performance plus explicit female acceptance remain required. No formal runtime/site promotion or male character work.",
   "sourceSha256": "4586285ca2b4c235f7838ab6f4e16b2b1b3f469addd435c095eb987ba82e4347",
-  "latestStudyRevision": "female-next-r0072",
-  "latestStudyStatus": "REJECT_FORM_RECIPE_KEEP_R69_RETAIN_NATIVE_MORPH_DATA_ONLY",
+  "latestStudyRevision": "female-next-r0073",
+  "latestStudyStatus": "REJECT_SOURCE_SKIN_APPLICATIONS_KEEP_R69_RETAIN_NATIVE_MASK_AND_SHADER_REFERENCES",
   "stoppedMethod": "radial perioral annulus, after r0003 and r0004",
   "strictScoreAppliesTo": "female-next-r0001",
   "workingFoundationRevision": "female-next-r0005",
@@ -25,7 +25,7 @@
   "technicalResearchScope": "Closed-solid separation in five sampled poses; contour retention. No character/visual/runtime promotion.",
   "opticalResearchSource": "source/aevrynd-female-next-r0009-a-slab-thickness-study.blend",
   "opticalResearchScope": "Material-only lower-iris artifact reduction. Geometry unchanged from r0008 a-tight; no whole-character, blink, continuous collision or runtime promotion.",
-  "latestStudyEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0072-craniofacial-form\\female-next-r0072.visual-audit.json",
+  "latestStudyEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0073-complete-skin\\female-next-r0073.visual-audit.json",
   "headDetailResearchSource": "source/aevrynd-female-next-r0023-b-neutral-review.blend",
   "headDetailResearchScope": "r23 B integrated partial head: baked neutral lip-rest correction, original r18 C brows and r17 C scalp hair. Changed lip surfaces checked in five static poses; no complete oral anatomy, facial motion, hair dynamics/self contact or runtime acceptance.",
   "skinResearchSource": "source/aevrynd-female-next-r0011-b-ridge-skin-brows-study.blend",
@@ -55,7 +55,7 @@
   "workingReviewStatus": "RETAIN_SCOPED_STATIC_OCULAR_REPAIR_OTHER_CONTACTS_UNACCEPTED",
   "browResearchSource": "source/aevrynd-female-next-r0018-c-triangulated-brows-study.blend",
   "browAuthoringBindings": "source/aevrynd-female-next-r0018-c-brow-bindings.json",
-  "latestContinuation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0072-craniofacial-form\\continuation.json",
+  "latestContinuation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0073-complete-skin\\continuation.json",
   "blinkResearchSource": "source/aevrynd-female-next-r0020-a-pinned-angular-blink-study.blend",
   "blinkResearchSha256": "f2f363e4925eae728ddac662228045fca721895adfbd98d5905f1ad51a5adcc1",
   "blinkDiagnosticSource": "source/aevrynd-female-next-r0020-a-animated-review.blend",
@@ -750,6 +750,69 @@
     },
     "runtime": {
       "status": "NOT_TESTED_NOT_PROMOTED",
+      "engineCpuGpuMemoryLODNotAccepted": true
+    }
+  },
+  "characterAuthoringDescriptorR73": "source/aevrynd-female-next-r0073-authoring.json",
+  "r73SourceSkinStudies": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0073-a-complete-source-skin-study.blend",
+      "sha256": "ff198d5eab53dc26c3d8b370beb987f478fd8675030e01c9ad02e1d317412b92",
+      "bytes": 50116955,
+      "decision": "REJECTED_AS_MAINLINE_APPEARANCE",
+      "original4kSourceBytesUsed": false,
+      "scope": "Complete source shader and native masks with historical working maps; six angles."
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0073-b-original-4k-skin-study.blend",
+      "sha256": "b37c87a8e55f0f937c4adaab09e7c3d1c5e111bc05e91fc0748dbaa7819b1984",
+      "bytes": 50117858,
+      "decision": "REJECTED_AS_MAINLINE_APPEARANCE",
+      "original4kSourceBytesUsed": true,
+      "scope": "Same shader/masks, exact original source4K maps; full-head/body cheap trial only."
+    }
+  },
+  "r73Gates": {
+    "appearance": {
+      "status": "NO_ADOPTABLE_COMPLETE_SKIN_REALISM_GAIN",
+      "wholeCharacterScore": null,
+      "evidence": [
+        "r0073-complete-skin-data-comparison.png",
+        "r0073-source-shader-angles.png"
+      ],
+      "localDifferences": "Lip/chin detail and skin hue/response differ; broad cheek/forehead response remains flat and the complete face stays mannequin-like.",
+      "sourceResolutionTrialDidNotSolveMainDefect": true,
+      "aSameConditionViews": 6,
+      "bCheapHeadBodyViews": 2
+    },
+    "function": {
+      "status": "PASS_SOURCE_DATA_RECONSTRUCTION_AND_UNCHANGED_GEOMETRY_ONLY",
+      "evidence": [
+        "a-independent-readback.json",
+        "b-independent-readback.json"
+      ],
+      "restoredSourceMasks": 4,
+      "verifiedMaskComponentFields": 20,
+      "sourceShaderParametersAndSettingsPreserved": true,
+      "original4kMapsVerified": 12,
+      "originalGeometryRigWeightsEyesHairAndLightingPreservedAtFrames": [
+        1,
+        13,
+        49
+      ],
+      "newFullyQualifiedCompleteCapability": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_KNOWN_R69_FAILURES_REMAIN",
+      "globalSignedMinimumM": null,
+      "geometryAndHairRadiiUnchanged": true,
+      "materialDisplacementMode": "BUMP",
+      "knownR69HeadTurnFreeHairInsideBodyWitnessesStillApply": true,
+      "noNewFiniteCurveSelfClothContinuousCertificate": true
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "sourceBlenderShaderIsNotEngineImplementation": true,
       "engineCpuGpuMemoryLODNotAccepted": true
     }
   }
