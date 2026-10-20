@@ -1,0 +1,128 @@
+{
+  "decision": "REJECT_ALL_NATIVE_FLEXIBLE_TRIALS_KEEP_R69",
+  "sourceRolesPreserved": [
+    "currentSourceRevision",
+    "currentSource",
+    "sourceSha256",
+    "runtimeAsset",
+    "runtimeStatus",
+    "strictOverallScore",
+    "strictScoreAppliesTo",
+    "enginePromotionApproved",
+    "websitePromotionApproved",
+    "completeCoherentCandidateSource",
+    "completeCoherentCandidateSha256",
+    "completeCoherentCandidateStatus",
+    "activeAuthoringStudySource",
+    "activeAuthoringStudySha256",
+    "activeAuthoringStudyStatus"
+  ],
+  "allThreeCompleteTrialSourcesRecorded": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0070-a-native-flexible-trial.blend",
+      "sha256": "41e1f369da112326d8015f989a7ed4edd95fa9d5f5bcea7547120741c807eb8f",
+      "actualSavedDisplayMaximumEdgeRelativeStrain": 5.762423875352444,
+      "reportedSolverMaximumEdgeRelativeStrain": 5.761140814598323,
+      "cachedSpherePlaneInfeasibilityOperations": null,
+      "maximumCachedFeasibilityDeficitM": null,
+      "fullOriginalTurnReached": false,
+      "decision": "REJECTED"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0070-b-native-flexible-trial.blend",
+      "sha256": "2e3d626a2f4c9d578c987562407610d8276bf38ab5a20059f9b65edfa52467e6",
+      "actualSavedDisplayMaximumEdgeRelativeStrain": 0.0002480530368451639,
+      "reportedSolverMaximumEdgeRelativeStrain": 1.7985612998927536e-13,
+      "cachedSpherePlaneInfeasibilityOperations": 60,
+      "maximumCachedFeasibilityDeficitM": 0.0009573558709025445,
+      "fullOriginalTurnReached": false,
+      "decision": "REJECTED"
+    },
+    "c": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0070-c-native-flexible-trial.blend",
+      "sha256": "ccf67843e863a6e7a12e1667432f0af3ec812b9c02afdedec094c86215dfdb9d",
+      "actualSavedDisplayMaximumEdgeRelativeStrain": 0.2757671625796564,
+      "reportedSolverMaximumEdgeRelativeStrain": 7.882583474838611e-14,
+      "cachedSpherePlaneInfeasibilityOperations": 232,
+      "maximumCachedFeasibilityDeficitM": 0.01602618655241851,
+      "fullOriginalTurnReached": false,
+      "decision": "REJECTED"
+    }
+  },
+  "allSourcesNativeAppearanceAndRecordedOffsetsChecked": "REJECTED_STUDIES_DATA_REOPENED_NO_PHYSICS_ACCEPTANCE",
+  "baselineSamePoseAndControls": [
+    {
+      "frame": 2,
+      "view": "face",
+      "file": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0070-native-flexible\\baseline-2-face.png",
+      "resolution": 640,
+      "samples": 16,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.017042960971593857,
+          -0.9998547434806824,
+          -0.8999999761581421
+        ],
+        [
+          0.0,
+          0.9998547434806824,
+          0.017042960971593857,
+          1.4368505477905273
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "frame": 2,
+      "view": "body-face",
+      "file": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0070-native-flexible\\baseline-2-body-face.png",
+      "resolution": 640,
+      "samples": 16,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.013042274862527847,
+          -0.9999149441719055,
+          -4.599999904632568
+        ],
+        [
+          0.0,
+          0.9999149441719055,
+          0.013042274862527847,
+          0.8399999737739563
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "allThreeStoppedBeforeSourceFrame13": true,
+  "noValidNewNaturalMotionClip": true,
+  "noPhysicsOrAppearanceScoreIncrease": true,
+  "initialStateDoesNotProveAllPointsOutsideOrLegalRootJoining": true,
+  "noSoftwareAddonPaidServiceOrSourceCodeImported": true,
+  "heavyJobsAtOnce": 1,
+  "threads": 4
+}

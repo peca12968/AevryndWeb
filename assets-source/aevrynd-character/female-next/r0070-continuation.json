@@ -1,0 +1,77 @@
+{
+  "reviewUTC": "2026-10-20T04:41:37.487521+00:00",
+  "previousGoalTurnClassification": "progress: complete r69 FK/scalp-following source and actual head/body motion, independent/history checks and explicit failed head-turn tissue evidence; GitHub4b197ed",
+  "lastGoalTurnClassification": "progress",
+  "progressKind": "ACTUAL_COMPLETE_ACTOR_ALL_FIBRE_FLEXIBLE_TRIALS_FALSIFIED_AND_CONTACT_DEPENDENCY_CHANGED",
+  "decision": "REJECT_ALL_NATIVE_FLEXIBLE_TRIALS_KEEP_R69",
+  "activeAuthoringStudySource": "source/aevrynd-female-next-r0069-a-complete-controls-study.blend",
+  "activeAuthoringStudySha256": "f358d3c5a4d00ee6ad94d324612b33bdcf5aa4dde0bb19382d72bc7afabbb667",
+  "completeCoherentCandidateSource": "source/aevrynd-female-next-r0065-a-inner-eye-diffuse-study.blend",
+  "completeCoherentCandidateSha256": "4d0e3f67735ae68c5c1fa3c933f7cabb03cb547928e778f7067a8e699620b708",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "selectedFullMotionDefectResolved": false,
+  "wholeCharacterScore": null,
+  "wholeCharacterStagnationReset": false,
+  "productionRoundsSinceLastWholeCharacterReview": 2,
+  "nextWholeReviewAfterFurtherProductionRounds": 1,
+  "lastWholeCharacterReview": "../r0068-guide-structure/three-round-whole-character-review.json",
+  "newMethodsPermittedThisRound": false,
+  "fourGates": {
+    "appearance": {
+      "status": "NO_ADOPTABLE_GAIN_ALL_THREE_REJECTED",
+      "wholeCharacterScore": null,
+      "fullOriginalTurnReached": false,
+      "evidence": "r0070-complete-rejected-trials.png",
+      "reason": "Only one original source timestep reached. A stretches, B has cached contact infeasibility, C transfers noticeable actual edge stretch despite inextensible solver segments. No natural/settled motion demonstrated."
+    },
+    "function": {
+      "status": "SAVED_DATA_REOPENS_ONLY_PHYSICS_REJECTED",
+      "evidence": "rejected-study-readback.json",
+      "sameCompleteActorAndAllDisplayedFibres": true,
+      "originalNativeAnatomySkinEyeAndHairRestDataExact": true,
+      "actualDisplayedCurves": 10989,
+      "actualDisplayedPoints": 207239,
+      "rigBones": 52,
+      "noNewAdoptedCharacterOperation": true
+    },
+    "contact": {
+      "status": "UNACCEPTED_RESPONSE_MODEL_FALSIFIED",
+      "noNewActualGlobalPenetrationCountClaim": true,
+      "solverInfeasibilityIsNotActualTissuePenetrationCount": true,
+      "sourceR69KnownTurnPenetrationStillUnresolved": true,
+      "neutralInitialAudit": [
+        {
+          "object": "AFN68_MAIN_RENDER_CURVES",
+          "testedAllKnots": 206879,
+          "confirmedStrongInsideRoots": 2570,
+          "confirmedStrongInsideNonRootKnots": 0,
+          "insideNonRootWithinCurveIndexHistogram": {},
+          "maximumConfirmedNonRootDepthM": 0.0,
+          "rootInteriorNearestDistanceExceedsFirstSegmentLength": 0,
+          "negativeNormalCandidatesNotConfirmedInside": 1172
+        },
+        {
+          "object": "AFN68_FLYAWAY_RENDER_CURVES",
+          "testedAllKnots": 360,
+          "confirmedStrongInsideRoots": 1,
+          "confirmedStrongInsideNonRootKnots": 0,
+          "insideNonRootWithinCurveIndexHistogram": {},
+          "maximumConfirmedNonRootDepthM": 0.0,
+          "rootInteriorNearestDistanceExceedsFirstSegmentLength": 0,
+          "negativeNormalCandidatesNotConfirmedInside": 1
+        }
+      ],
+      "scope": "The three cached contact response models failed their own stretch/feasibility conditions. Actual finite curved-body/self/continuous clearance was not established. Roots inside tissue are not automatically illegal; no blanket root exclusion is added."
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "experimentalModuleStatus": "REJECTED_R0070_TECHNICAL_STUDY_NOT_ENGINE_RUNTIME",
+      "newRuntimePhysicsImplementationAccepted": false
+    }
+  },
+  "liveJobHandles": [],
+  "nextAction": "Keep the exact complete r69A FK/scalp-following woman as the active work source; all r70A/B/C dynamic studies are REJECTED, and the experimental Python module is not runtime code. Stop the current cached-infinite-nearest-plane/native-XPBD/DFTL response family; no iteration, substep, damping, stiffness, radius, root-offset or material-density sweep to extend it. Change the next dependency to a geometry-aware signed contact representation with verified inside/outside and local support on the actual posed closed body; a nearest triangle normal is not a solid classifier. The neutral audit found0 confirmed strong non-root inside knots but1173 negative-normal candidates not confirmed inside, so do not assert that the original groom/root interface is the sole cause or create follicle exclusions. First perform a bounded zero-force/zero-motion full-head check to distinguish contact/initialization error from moving-root dynamics, then integrate the corrected contact/length response on the same complete actor. The production endpoint remains the original20-degree left-turn sourceframes1-13, recognizable whole hairstyle, settling and actual displayed fibre/body checks, not an isolated solver or smaller turn. Keep root joining, finite curved thickness, self/body/cloth and continuous contact unaccepted until qualified. R70C equal-material-coordinate maps are a research format only, not a retained physics solution. One further production round reaches the three-round complete review after r68; use actual head/body comparisons and change the broader breakdown if no complete usable operation or complete visible defect has been resolved. Full face/skin/anatomy/layers/cloth/all actions, real Aevrynd import/material/LOD/performance and female user acceptance remain required.",
+  "goal": "ACTIVE_NOT_COMPLETE"
+}

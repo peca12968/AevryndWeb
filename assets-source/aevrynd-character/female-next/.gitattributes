@@ -75,3 +75,7 @@ r0069-input-data/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,
 r0069-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 # Preserve the pinned upstream config bytes, including its two whitespace-only lines.
 r0069-input-data/config.yaml -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+# Exact r70 rejected complete-actor flexible trials; no physics adopted.
+r0070-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0070* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0070-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol

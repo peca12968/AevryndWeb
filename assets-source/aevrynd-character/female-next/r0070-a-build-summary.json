@@ -1,0 +1,46 @@
+{
+  "revision": "female-next-r0070",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0069-a-complete-controls-study.blend",
+  "sourceSha256": "f358d3c5a4d00ee6ad94d324612b33bdcf5aa4dde0bb19382d72bc7afabbb667",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0070-a-native-flexible-trial.blend",
+  "outputSha256": "41e1f369da112326d8015f989a7ed4edd95fa9d5f5bcea7547120741c807eb8f",
+  "actualCurves": 10989,
+  "actualParticles": 207239,
+  "simulatedSourceFrames": [
+    1,
+    2
+  ],
+  "savedOffsetFrames": [
+    1,
+    2
+  ],
+  "rows": [
+    {
+      "maximumRelativeEdgeStrain": 5.761140814598323,
+      "p99RelativeEdgeStrain": 0.2489526604955476,
+      "maximumSpeedMPerS": 0.5581223274266058,
+      "contactPlaneProjectionOperations": 74643,
+      "rootMaximumCorrespondenceErrorM": 0.0,
+      "maximumDepartureFromRigidTargetM": 0.014821294939801279,
+      "frame": 2,
+      "seconds": 30.28034996986389
+    }
+  ],
+  "sourcePrimaryReference": "https://github.com/GPUOpen-Effects/TressFX/blob/master/src/Shaders/TressFXSimulation.hlsl",
+  "method": "Own all-native-particle co-rotated vector-curvature/stretch XPBD, root-tangent boundary, gravity and drag; per-frame discrete closest-plane contact response. No guide/follow deformation transfer.",
+  "parameters": {
+    "youngPa": 3000000000.0,
+    "densityKgM3": 1300.0,
+    "dragRatePerS": 1.5,
+    "substeps": 4,
+    "iterations": 8,
+    "decorativePhysicalRadiusFloorM": 1e-06,
+    "actualRenderCollisionRadiiUnchanged": true
+  },
+  "newPhysicsAccepted": false,
+  "selfTorsionFrictionCalibrationAndContinuousNotImplemented": true,
+  "firstCheapFalsificationRelativeStrainLimit": 0.1,
+  "sourceNativeRestGeometrySkinMaterialsLightingUnchanged": true,
+  "partialPilotNotFullOriginalAnimation": true,
+  "secondsBeforePreview": 34.912893295288086
+}

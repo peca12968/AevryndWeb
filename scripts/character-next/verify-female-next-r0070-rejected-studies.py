@@ -1,0 +1,23 @@
+"""Read actual saved rejected actors; verify scope, never approve their motion."""
+from pathlib import Path
+import bpy,numpy as np,time,sys,importlib.util
+def module(n,p):
+    s=importlib.util.spec_from_file_location(n,Path(__file__).with_name(p));m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+m=module('verify70trial','trial-female-next-r0070-native-motion.py');v=module('verify70native','verify-female-next-r0061-complete-groom.py');history='--history' in sys.argv
+def light():return {o.name:{'matrix':np.array(o.matrix_world).tolist(),'energy':o.data.energy,'color':list(o.data.color)} for o in bpy.context.scene.objects if o.type=='LIGHT'}
+def main():
+    tick=time.time();bpy.ops.wm.open_mainfile(filepath=str(m.SRC));s=bpy.context.scene;s.frame_set(1);names=m.m.native_names();native={n:v.mesh_signature(bpy.data.objects[n]) for n in names};mats={x.name:m.m.k.f.v.v32.material_signature(x) for x in bpy.data.materials if x.use_nodes};curves={n:m.m.k.v59.native_curves(bpy.data.objects[n]) for n in ('AFN68_MAIN_RENDER_CURVES','AFN68_FLYAWAY_RENDER_CURVES')};lights=light();view=[s.view_settings.exposure,s.view_settings.view_transform,s.view_settings.look];s.frame_set(2);baseline={n:m.world(bpy.data.objects[n]) for n in curves};rows=[]
+    for tag in ('a','b','c'):
+        ref=m.m.read(m.E/(tag+'-build-summary.json'));path=Path(ref['output'])
+        if history:path=m.R/'sites-engine-journey/assets-source/aevrynd-character/female-next'/path.name
+        assert m.m.sha(path)==ref['outputSha256'];bpy.ops.wm.open_mainfile(filepath=str(path));s=bpy.context.scene;s.frame_set(2);bpy.context.view_layer.update();assert native=={n:v.mesh_signature(bpy.data.objects[n]) for n in names};assert mats=={n:m.m.k.f.v.v32.material_signature(bpy.data.materials[n]) for n in mats};assert curves=={n:m.m.k.v59.native_curves(bpy.data.objects[n]) for n in curves};assert lights==light() and view==[s.view_settings.exposure,s.view_settings.view_transform,s.view_settings.look];assert len(bpy.data.objects['AFN69_BODY_CONTROLS'].data.bones)==52 and s.frame_end==2;raw=np.load(m.E/(tag+'-native-motion-raw.npz'));out=[]
+        for part,n in enumerate(curves):
+            o=bpy.data.objects[n];P=m.world(o);begin,end=raw['cuts'][part:part+2];expect=baseline[n]+raw['offsets'][-1,begin:end];error=float(np.linalg.norm(P-expect,axis=1).max());assert error<1e-6;counts=np.array([c.points_length for c in o.data.curves]);starts=np.r_[0,np.cumsum(counts)[:-1]];root_error=float(np.linalg.norm(P[starts]-baseline[n][starts],axis=1).max());assert root_error<1e-6 and np.isfinite(P).all();local=np.concatenate([np.arange(c) for c in counts]);edges=np.flatnonzero(local<np.repeat(counts,counts)-1);rest=raw['rest'][begin:end].astype('f8');ds=np.linalg.norm(rest[edges+1]-rest[edges],axis=1);strain=np.abs(np.linalg.norm(P[edges+1]-P[edges],axis=1)/ds-1);out.append({'object':n,'curves':len(counts),'points':len(P),'savedOutputVsRecordedOffsetMaximumErrorM':error,'rootVsOriginalRigMaximumErrorM':root_error,'maximumActualDisplayEdgeRelativeStrain':float(strain.max()),'p99ActualDisplayEdgeRelativeStrain':float(np.quantile(strain,.99))})
+        relative=[]
+        for im in bpy.data.images:
+            if im.source=='FILE' and not im.packed_file:
+                p=Path(bpy.path.abspath(im.filepath));assert im.filepath.startswith('//') and p.exists();relative.append({'relative':im.filepath,'sha256':m.m.sha(p)})
+        assert len(relative)==15 and not bpy.data.libraries and not bpy.app.handlers.frame_change_pre and not bpy.app.handlers.frame_change_post
+        rows.append({'tag':tag,'source':str(path),'sha256':m.m.sha(path),'bytes':path.stat().st_size,'originalFiveNativeMeshKeysUVTransformsMaterialsExact':True,'originalVisibleCurveNativePositionsRadiiMaterialsExact':True,'skinEyeLightingExposureUnchanged':True,'rigBones':52,'motionScope':[1,2],'fullIntendedLeftTurnReached':False,'curves':out,'relativeTextures':relative,'newMotionAppearanceContactOrRuntimeAccepted':False});print('R70_SAVED_REJECTED_READBACK',tag,out,flush=True)
+    result={'status':'REJECTED_STUDIES_DATA_REOPENED_NO_PHYSICS_ACCEPTANCE','openedFromHistory':history,'studies':rows,'scope':'Saved whole actors, unchanged original native anatomy/materials/radii/lights and actual recorded single-step curve offsets. All three simulation constructions remain rejected; not an inextensibility, contact or natural motion pass.','seconds':time.time()-tick};m.save('history-readback.json' if history else 'rejected-study-readback.json',result);print('R70_REJECTED_READBACK_DONE',time.time()-tick,flush=True)
+if __name__=='__main__':main()

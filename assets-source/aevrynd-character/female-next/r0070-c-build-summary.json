@@ -1,0 +1,53 @@
+{
+  "revision": "female-next-r0070",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0069-a-complete-controls-study.blend",
+  "sourceSha256": "f358d3c5a4d00ee6ad94d324612b33bdcf5aa4dde0bb19382d72bc7afabbb667",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0070-c-native-flexible-trial.blend",
+  "outputSha256": "ccf67843e863a6e7a12e1667432f0af3ec812b9c02afdedec094c86215dfdb9d",
+  "actualCurves": 10989,
+  "actualParticles": 207239,
+  "simulatedSourceFrames": [
+    1,
+    2
+  ],
+  "savedOffsetFrames": [
+    1,
+    2
+  ],
+  "rows": [
+    {
+      "maximumRelativeEdgeStrain": 7.882583474838611e-14,
+      "p99RelativeEdgeStrain": 1.2989609388114332e-14,
+      "maximumSpeedMPerS": 4.219716545632662,
+      "contactPlaneProjectionOperations": 10414,
+      "infeasibleCachedSpherePlaneConstraints": 232,
+      "maximumCachedFeasibilityDeficitM": 0.01602618655241851,
+      "rootMaximumCorrespondenceErrorM": 0.0,
+      "maximumDepartureFromRigidTargetM": 0.0552277679860689,
+      "frame": 2,
+      "seconds": 29.986717700958252,
+      "maximumActualDisplayEdgeRelativeStrain": 0.27576710109226765,
+      "p99ActualDisplayEdgeRelativeStrain": 0.0054297325963904835
+    }
+  ],
+  "sourcePrimaryReference": "https://matthias-research.github.io/pages/publications/FTLHairFur.pdf",
+  "method": "Own equal-material-coordinate DFTL with geometric length/contact-cap solve and explicit original-render-CV deformation transfer; cached body planes and uncalibrated curvature response remain limitations.",
+  "parameters": {
+    "youngPa": 3000000000.0,
+    "densityKgM3": 1300.0,
+    "dragRatePerS": 1.5,
+    "substeps": 4,
+    "iterations": 1,
+    "decorativePhysicalRadiusFloorM": 1e-06,
+    "actualRenderCollisionRadiiUnchanged": true,
+    "unusedXPBDIterationConstant": 8
+  },
+  "newPhysicsAccepted": false,
+  "selfTorsionFrictionCalibrationAndContinuousNotImplemented": true,
+  "firstCheapFalsificationRelativeStrainLimit": 0.1,
+  "sourceNativeRestGeometrySkinMaterialsLightingUnchanged": true,
+  "partialPilotNotFullOriginalAnimation": true,
+  "secondsBeforePreview": 35.189368724823,
+  "uniformMaterialParameterization": "Same number of particles per individual fibre, equal arc-length sampling and equal lumped mass along each constant-radius main strand. Render CVs/material/radius unchanged; simulation offsets transferred by explicit material-coordinate maps. Actual displayed edge strain is separately rejected, never inferred from solver lengths.",
+  "metadataCorrection": "DFTL executes one forward geometric pass per substep. The earlier iterations8 field was an unused XPBD constant, not the DFTL pass count. No model/source data or simulation changed."
+}

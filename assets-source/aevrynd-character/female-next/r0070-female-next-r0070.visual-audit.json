@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "reviewUTC": "2026-10-20T04:41:37.487521+00:00",
+  "decision": "REJECT_ALL_NATIVE_FLEXIBLE_TRIALS_KEEP_R69",
+  "methodsTried": 3,
+  "metrics": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0070-a-native-flexible-trial.blend",
+      "sha256": "41e1f369da112326d8015f989a7ed4edd95fa9d5f5bcea7547120741c807eb8f",
+      "actualSavedDisplayMaximumEdgeRelativeStrain": 5.762423875352444,
+      "reportedSolverMaximumEdgeRelativeStrain": 5.761140814598323,
+      "cachedSpherePlaneInfeasibilityOperations": null,
+      "maximumCachedFeasibilityDeficitM": null,
+      "fullOriginalTurnReached": false,
+      "decision": "REJECTED"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0070-b-native-flexible-trial.blend",
+      "sha256": "2e3d626a2f4c9d578c987562407610d8276bf38ab5a20059f9b65edfa52467e6",
+      "actualSavedDisplayMaximumEdgeRelativeStrain": 0.0002480530368451639,
+      "reportedSolverMaximumEdgeRelativeStrain": 1.7985612998927536e-13,
+      "cachedSpherePlaneInfeasibilityOperations": 60,
+      "maximumCachedFeasibilityDeficitM": 0.0009573558709025445,
+      "fullOriginalTurnReached": false,
+      "decision": "REJECTED"
+    },
+    "c": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0070-c-native-flexible-trial.blend",
+      "sha256": "ccf67843e863a6e7a12e1667432f0af3ec812b9c02afdedec094c86215dfdb9d",
+      "actualSavedDisplayMaximumEdgeRelativeStrain": 0.2757671625796564,
+      "reportedSolverMaximumEdgeRelativeStrain": 7.882583474838611e-14,
+      "cachedSpherePlaneInfeasibilityOperations": 232,
+      "maximumCachedFeasibilityDeficitM": 0.01602618655241851,
+      "fullOriginalTurnReached": false,
+      "decision": "REJECTED"
+    }
+  },
+  "initialStateEvidence": "initial-state-witnesses.json",
+  "primaryReferences": [
+    "https://github.com/GPUOpen-Effects/TressFX/blob/master/src/Shaders/TressFXSimulation.hlsl",
+    "https://matthias-research.github.io/pages/publications/FTLHairFur.pdf"
+  ],
+  "interpretation": "Initial neutral strong-knot witnesses do not establish a non-root penetration explanation. Cached-plane infeasibility is a model failure, not proof of the actual global skin infeasibility. Do not relax tolerances or blame anatomical roots without evidence.",
+  "gates": {
+    "appearance": {
+      "status": "NO_ADOPTABLE_GAIN_ALL_THREE_REJECTED",
+      "wholeCharacterScore": null,
+      "fullOriginalTurnReached": false,
+      "evidence": "r0070-complete-rejected-trials.png",
+      "reason": "Only one original source timestep reached. A stretches, B has cached contact infeasibility, C transfers noticeable actual edge stretch despite inextensible solver segments. No natural/settled motion demonstrated."
+    },
+    "function": {
+      "status": "SAVED_DATA_REOPENS_ONLY_PHYSICS_REJECTED",
+      "evidence": "rejected-study-readback.json",
+      "sameCompleteActorAndAllDisplayedFibres": true,
+      "originalNativeAnatomySkinEyeAndHairRestDataExact": true,
+      "actualDisplayedCurves": 10989,
+      "actualDisplayedPoints": 207239,
+      "rigBones": 52,
+      "noNewAdoptedCharacterOperation": true
+    },
+    "contact": {
+      "status": "UNACCEPTED_RESPONSE_MODEL_FALSIFIED",
+      "noNewActualGlobalPenetrationCountClaim": true,
+      "solverInfeasibilityIsNotActualTissuePenetrationCount": true,
+      "sourceR69KnownTurnPenetrationStillUnresolved": true,
+      "neutralInitialAudit": [
+        {
+          "object": "AFN68_MAIN_RENDER_CURVES",
+          "testedAllKnots": 206879,
+          "confirmedStrongInsideRoots": 2570,
+          "confirmedStrongInsideNonRootKnots": 0,
+          "insideNonRootWithinCurveIndexHistogram": {},
+          "maximumConfirmedNonRootDepthM": 0.0,
+          "rootInteriorNearestDistanceExceedsFirstSegmentLength": 0,
+          "negativeNormalCandidatesNotConfirmedInside": 1172
+        },
+        {
+          "object": "AFN68_FLYAWAY_RENDER_CURVES",
+          "testedAllKnots": 360,
+          "confirmedStrongInsideRoots": 1,
+          "confirmedStrongInsideNonRootKnots": 0,
+          "insideNonRootWithinCurveIndexHistogram": {},
+          "maximumConfirmedNonRootDepthM": 0.0,
+          "rootInteriorNearestDistanceExceedsFirstSegmentLength": 0,
+          "negativeNormalCandidatesNotConfirmedInside": 1
+        }
+      ],
+      "scope": "The three cached contact response models failed their own stretch/feasibility conditions. Actual finite curved-body/self/continuous clearance was not established. Roots inside tissue are not automatically illegal; no blanket root exclusion is added."
+    },
+    "runtime": {
+      "status": "NOT_TESTED_NOT_PROMOTED",
+      "experimentalModuleStatus": "REJECTED_R0070_TECHNICAL_STUDY_NOT_ENGINE_RUNTIME",
+      "newRuntimePhysicsImplementationAccepted": false
+    }
+  },
+  "adoptedModel": false,
+  "appearanceImprovement": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterScore": null,
+  "nextAction": "Keep the exact complete r69A FK/scalp-following woman as the active work source; all r70A/B/C dynamic studies are REJECTED, and the experimental Python module is not runtime code. Stop the current cached-infinite-nearest-plane/native-XPBD/DFTL response family; no iteration, substep, damping, stiffness, radius, root-offset or material-density sweep to extend it. Change the next dependency to a geometry-aware signed contact representation with verified inside/outside and local support on the actual posed closed body; a nearest triangle normal is not a solid classifier. The neutral audit found0 confirmed strong non-root inside knots but1173 negative-normal candidates not confirmed inside, so do not assert that the original groom/root interface is the sole cause or create follicle exclusions. First perform a bounded zero-force/zero-motion full-head check to distinguish contact/initialization error from moving-root dynamics, then integrate the corrected contact/length response on the same complete actor. The production endpoint remains the original20-degree left-turn sourceframes1-13, recognizable whole hairstyle, settling and actual displayed fibre/body checks, not an isolated solver or smaller turn. Keep root joining, finite curved thickness, self/body/cloth and continuous contact unaccepted until qualified. R70C equal-material-coordinate maps are a research format only, not a retained physics solution. One further production round reaches the three-round complete review after r68; use actual head/body comparisons and change the broader breakdown if no complete usable operation or complete visible defect has been resolved. Full face/skin/anatomy/layers/cloth/all actions, real Aevrynd import/material/LOD/performance and female user acceptance remain required."
+}

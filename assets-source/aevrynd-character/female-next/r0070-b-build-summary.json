@@ -1,0 +1,50 @@
+{
+  "revision": "female-next-r0070",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0069-a-complete-controls-study.blend",
+  "sourceSha256": "f358d3c5a4d00ee6ad94d324612b33bdcf5aa4dde0bb19382d72bc7afabbb667",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0070-b-native-flexible-trial.blend",
+  "outputSha256": "2e3d626a2f4c9d578c987562407610d8276bf38ab5a20059f9b65edfa52467e6",
+  "actualCurves": 10989,
+  "actualParticles": 207239,
+  "simulatedSourceFrames": [
+    1,
+    2
+  ],
+  "savedOffsetFrames": [
+    1,
+    2
+  ],
+  "rows": [
+    {
+      "maximumRelativeEdgeStrain": 1.7985612998927536e-13,
+      "p99RelativeEdgeStrain": 1.3877787807814457e-14,
+      "maximumSpeedMPerS": 4.7931744033725066,
+      "contactPlaneProjectionOperations": 10489,
+      "infeasibleCachedSpherePlaneConstraints": 60,
+      "maximumCachedFeasibilityDeficitM": 0.0009573558709025445,
+      "rootMaximumCorrespondenceErrorM": 0.0,
+      "maximumDepartureFromRigidTargetM": 0.07299673182770688,
+      "frame": 2,
+      "seconds": 20.596993446350098
+    }
+  ],
+  "sourcePrimaryReference": "https://matthias-research.github.io/pages/publications/FTLHairFur.pdf",
+  "method": "Own native variable-length dynamicFTL, co-rotated elastic local shape, exact length-sphere/contact-cap intersection, velocity correction1.0, gravity/drag; cached planes not full collision proof.",
+  "parameters": {
+    "youngPa": 3000000000.0,
+    "densityKgM3": 1300.0,
+    "dragRatePerS": 1.5,
+    "substeps": 4,
+    "iterations": 1,
+    "decorativePhysicalRadiusFloorM": 1e-06,
+    "actualRenderCollisionRadiiUnchanged": true,
+    "unusedXPBDIterationConstant": 8
+  },
+  "newPhysicsAccepted": false,
+  "selfTorsionFrictionCalibrationAndContinuousNotImplemented": true,
+  "firstCheapFalsificationRelativeStrainLimit": 0.1,
+  "sourceNativeRestGeometrySkinMaterialsLightingUnchanged": true,
+  "partialPilotNotFullOriginalAnimation": true,
+  "secondsBeforePreview": 25.419928550720215,
+  "metadataCorrection": "DFTL executes one forward geometric pass per substep. The earlier iterations8 field was an unused XPBD constant, not the DFTL pass count. No model/source data or simulation changed."
+}
