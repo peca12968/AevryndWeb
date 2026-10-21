@@ -1,0 +1,12 @@
+00:04.578  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0102-a-facet-aware-lining.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0103-front-lid-bands.py", line 100, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0103-front-lid-bands.py", line 27, in main
+    unique,inverse=np.unique(T[remove],return_inverse=True);summed=np.zeros((len(unique),2));counts=np.zeros(len(unique));np.add.at(summed,inverse,values[remove].reshape(-1,2));np.add.at(counts,inverse,1);patchUV[name]={int(i):uv for i,uv in zip(unique,summed/counts[:,None])}
+                                                                                                                          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: array is not broadcastable to correct shape
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

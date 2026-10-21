@@ -1,0 +1,110 @@
+{
+  "bands": [
+    {
+      "side": "L",
+      "band": "pretarsal",
+      "openFractionFromMargin": 0.14,
+      "closedFractionFromMargin": 0.12,
+      "openAnteriorPosteriorOffsetM": -0.0001,
+      "closedAnteriorPosteriorOffsetM": -5e-05,
+      "upperCornerFade": "sin(central_parameter*pi)^0.6; lower band has no artificial crease",
+      "notMeasuredPersonalAnatomy": true
+    },
+    {
+      "side": "L",
+      "band": "tarsal_edge",
+      "openFractionFromMargin": 0.32,
+      "closedFractionFromMargin": 0.3,
+      "openAnteriorPosteriorOffsetM": -0.0002,
+      "closedAnteriorPosteriorOffsetM": -4e-05,
+      "upperCornerFade": "sin(central_parameter*pi)^0.6; lower band has no artificial crease",
+      "notMeasuredPersonalAnatomy": true
+    },
+    {
+      "side": "L",
+      "band": "crease_attachment",
+      "openFractionFromMargin": 0.45,
+      "closedFractionFromMargin": 0.48,
+      "openAnteriorPosteriorOffsetM": 0.00065,
+      "closedAnteriorPosteriorOffsetM": 0.0,
+      "upperCornerFade": "sin(central_parameter*pi)^0.6; lower band has no artificial crease",
+      "notMeasuredPersonalAnatomy": true
+    },
+    {
+      "side": "L",
+      "band": "fold_lip",
+      "openFractionFromMargin": 0.55,
+      "closedFractionFromMargin": 0.62,
+      "openAnteriorPosteriorOffsetM": -0.0003,
+      "closedAnteriorPosteriorOffsetM": -4e-05,
+      "upperCornerFade": "sin(central_parameter*pi)^0.6; lower band has no artificial crease",
+      "notMeasuredPersonalAnatomy": true
+    },
+    {
+      "side": "L",
+      "band": "orbital_transition",
+      "openFractionFromMargin": 0.78,
+      "closedFractionFromMargin": 0.82,
+      "openAnteriorPosteriorOffsetM": -8e-05,
+      "closedAnteriorPosteriorOffsetM": -2e-05,
+      "upperCornerFade": "sin(central_parameter*pi)^0.6; lower band has no artificial crease",
+      "notMeasuredPersonalAnatomy": true
+    },
+    {
+      "side": "R",
+      "band": "pretarsal",
+      "openFractionFromMargin": 0.14,
+      "closedFractionFromMargin": 0.12,
+      "openAnteriorPosteriorOffsetM": -0.0001,
+      "closedAnteriorPosteriorOffsetM": -5e-05,
+      "upperCornerFade": "sin(central_parameter*pi)^0.6; lower band has no artificial crease",
+      "notMeasuredPersonalAnatomy": true
+    },
+    {
+      "side": "R",
+      "band": "tarsal_edge",
+      "openFractionFromMargin": 0.32,
+      "closedFractionFromMargin": 0.3,
+      "openAnteriorPosteriorOffsetM": -0.0002,
+      "closedAnteriorPosteriorOffsetM": -4e-05,
+      "upperCornerFade": "sin(central_parameter*pi)^0.6; lower band has no artificial crease",
+      "notMeasuredPersonalAnatomy": true
+    },
+    {
+      "side": "R",
+      "band": "crease_attachment",
+      "openFractionFromMargin": 0.45,
+      "closedFractionFromMargin": 0.48,
+      "openAnteriorPosteriorOffsetM": 0.00065,
+      "closedAnteriorPosteriorOffsetM": 0.0,
+      "upperCornerFade": "sin(central_parameter*pi)^0.6; lower band has no artificial crease",
+      "notMeasuredPersonalAnatomy": true
+    },
+    {
+      "side": "R",
+      "band": "fold_lip",
+      "openFractionFromMargin": 0.55,
+      "closedFractionFromMargin": 0.62,
+      "openAnteriorPosteriorOffsetM": -0.0003,
+      "closedAnteriorPosteriorOffsetM": -4e-05,
+      "upperCornerFade": "sin(central_parameter*pi)^0.6; lower band has no artificial crease",
+      "notMeasuredPersonalAnatomy": true
+    },
+    {
+      "side": "R",
+      "band": "orbital_transition",
+      "openFractionFromMargin": 0.78,
+      "closedFractionFromMargin": 0.82,
+      "openAnteriorPosteriorOffsetM": -8e-05,
+      "closedAnteriorPosteriorOffsetM": -2e-05,
+      "upperCornerFade": "sin(central_parameter*pi)^0.6; lower band has no artificial crease",
+      "notMeasuredPersonalAnatomy": true
+    }
+  ],
+  "referenceURLs": [
+    "https://eyewiki.aao.org/Eyelid_Reconstruction",
+    "https://eyewiki.aao.org/Single_Fold/Double_Fold_Lid_Surgery"
+  ],
+  "noReferenceImagesTextModelsOrClinicalDimensionsCopied": true,
+  "construction": "Replaced original front mid-strip topology; separate pretarsal/crease/fold/preseptal stations with corresponding open/closed shapes. Original anatomical margins and adaptive inner lining unchanged. Artistic approximation, not medical or physiological validation."
+}
