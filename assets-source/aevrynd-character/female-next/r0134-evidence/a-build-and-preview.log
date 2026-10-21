@@ -1,0 +1,18 @@
+00:08.844  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0126-source\aevrynd-female-next-r0126-b-source-section-neck.blend"
+R134_ACTUAL_SCALP_CANOPY_POINTS 0 408000
+R134_ACTUAL_SCALP_CANOPY_POINTS 100000 408000
+R134_ACTUAL_SCALP_CANOPY_POINTS 200000 408000
+R134_ACTUAL_SCALP_CANOPY_POINTS 300000 408000
+R134_ACTUAL_SCALP_CANOPY_POINTS 400000 408000
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0134-volumetric-bob.py:64: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  jo=np.zeros((COUNT,N,3),'f4');jo[:,NC:]=junction;attr(curves,'AFN134_AuthoredJunctionOffset','FLOAT_VECTOR',jo);hair=bpy.data.objects.new('AFN134_COMPLETE_NATIVE_VOLUMETRIC_BOB',curves);bpy.context.scene.collection.objects.link(hair);live_controls(hair,canopy,volume);mat=bpy.data.materials.new('AFN134_OWN_BROWN_CYLINDRICAL_FIBRE');mat.use_nodes=True;n=mat.node_tree.nodes;n.clear();shader=n.new('ShaderNodeBsdfHairPrincipled');shader.parametrization='MELANIN';shader.inputs['Melanin'].default_value=.75;shader.inputs['Melanin Redness'].default_value=.12;shader.inputs['Roughness'].default_value=.35;shader.inputs['Radial Roughness'].default_value=.45;out=n.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(shader.outputs[0],out.inputs[0]);curves.materials.append(mat);old=bpy.data.objects['AFN126_ORIGINAL_Hair_Hair_0'];old.hide_render=True;old.hide_set(True);bpy.context.view_layer.update();actual=q.hair(hair).reshape(Q.shape);error=float(np.linalg.norm(actual-Q,axis=2).max());assert error<5e-6,error;assert protected==a.protected();_,WW,TT=b.u.b.geom(skin);assert skinHash==[a.hasharray(WW),a.hasharray(TT)]
+00:29.125  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0134-volumetric-bob\matched-a-volumetric-bob-face.png'
+00:32.047  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0134-volumetric-bob\matched-a-volumetric-bob-body-face.png'
+00:38.500  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0134-volumetric-bob\matched-a-volumetric-bob-profile.png'
+00:44.547  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0134-volumetric-bob\matched-a-volumetric-bob-oblique.png'
+00:50.406  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0134-volumetric-bob\matched-a-volumetric-bob-back.png'
+資訊: 已儲存為「aevrynd-female-next-r0134-a-volumetric-bob.blend」
+R134_COMPLETE_NATIVE_VOLUMETRIC_BOB_PREVIEW_DONE 41.58024597167969
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

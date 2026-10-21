@@ -1,0 +1,4 @@
+def settings():
+    s=bpy.context.scene;s.render.engine='CYCLES';s.cycles.device='CPU';s.cycles.samples=24;s.cycles.use_denoising=True;s.cycles.seed=61061;s.cycles.max_bounces=6;s.cycles.transparent_max_bounces=8
+    s.render.threads_mode='FIXED';s.render.threads=4;s.render.hair_type='CYLINDER';s.render.hair_subdiv=0;s.render.resolution_x=s.render.resolution_y=800;s.render.resolution_percentage=100;s.render.image_settings.file_format='PNG'
+    return {'engine':'CYCLES','device':'CPU','samples':24,'denoise':True,'threads':4,'hairPrimitive':'CYLINDER','hairSubdiv':0,'exposure':s.view_settings.exposure,'look':s.view_settings.look,'viewTransform':s.view_settings.view_transform}
