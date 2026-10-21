@@ -1,0 +1,124 @@
+{
+  "revision": "female-next-r0114",
+  "decision": "REJECT_NECK_LOFT_KEEP_R113_B_WORKING_WOMAN",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0113-b-native-neck-skin.blend",
+    "sha256": "53c56c31e33170131cc21798c5191627f111659d4c58c0297dd0eefb2b8d5f1e",
+    "bytes": 84258144,
+    "status": "RETAIN_ONE_COMPLETE_COHERENT_WORKING_FOUNDATION_PARTIAL_NATIVE_BLINK_ALL_COMPLETE_GATES_UNACCEPTED",
+    "scope": "Same woman body and all original fibres, coherent adult CC0 MakeHuman full head/own blink, native skin UV/texture and real-height972-triangle neck bridge, actual fibre rebinding. Eye shape closes and restores, but straight/broken inner brows, swollen/red eye region, ear-through-hair and posterior neck ledge/crease remain. Actual skin/sclera intersection-or-touch witnesses exist. Source retains current dependency closure and separate complete original source files; no source/history deletion. Not complete appearance, anatomy, function/contact/runtime or user acceptance.",
+    "renderSkin": "AFN113_COMPLETE_WOMAN_COHERENT_HEAD",
+    "rawEditableHead": "AFN113_NATIVE_ADULT_FULL_HEAD_SOURCE",
+    "actualFaceControls": "AFN59_FACE_CONTROLS / blink_left, blink_right",
+    "notAnAdoptedCompleteAppearanceOrOperation": true
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0114-a-native-neck-transition.blend",
+      "sha256": "b39618839ad191b23d3e2063854c0b0c08db724437668510828d6e88aed2fd75",
+      "bytes": 85032317,
+      "status": "REJECT_NATIVE_TANGENT_HERMITE_NECK_FOLDS_AND_PERSISTENT_POSTERIOR_LEDGE",
+      "scope": "One complete same r113 B woman with a new native-tangent multi-ring neck strip. Fixed original endpoint geometry retained; original head/body vertices, all own blink keys and neutral fibres/radii are unchanged. Complete front/side regresses with neck folds; posterior ledge persists. Independently openable rejected source, no adopted complete appearance or new usable operation."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECT_NEW_NECK_FOLDS_POSTERIOR_LEDGE_PERSISTS",
+      "evidence": [
+        "r0114-head-and-body-ab.png",
+        "r0114-neck-profile-back-ab.png",
+        "r0114-sampled-poses-ab.png",
+        "manual-visual-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "MINIMUM_REOPEN_PRESERVED_OLD_POSES_PASS_NEW_COMPLETE_OPERATION_NOT_ADOPTED",
+      "evidence": "minimum-saved-neck-readback.json",
+      "actualPoseStates": [
+        {
+          "state": "neutral",
+          "assignedBlink": 0.0,
+          "oldActualDisplayedVerticesAgainstR113BMaxErrorM": 0.0,
+          "actualSkinMaximumMoveM": 0.0,
+          "newNeckVerticesMaximumMoveM": 0.0,
+          "evaluatedVertices": 511694,
+          "evaluatedTriangles": 1023384
+        },
+        {
+          "state": "half",
+          "assignedBlink": 0.5,
+          "oldActualDisplayedVerticesAgainstR113BMaxErrorM": 0.0,
+          "actualSkinMaximumMoveM": 0.005015363361879737,
+          "newNeckVerticesMaximumMoveM": 0.0,
+          "evaluatedVertices": 511694,
+          "evaluatedTriangles": 1023384
+        },
+        {
+          "state": "closed",
+          "assignedBlink": 1.0,
+          "oldActualDisplayedVerticesAgainstR113BMaxErrorM": 0.0,
+          "actualSkinMaximumMoveM": 0.010030833574096685,
+          "newNeckVerticesMaximumMoveM": 0.0,
+          "evaluatedVertices": 511694,
+          "evaluatedTriangles": 1023384
+        },
+        {
+          "state": "restored",
+          "assignedBlink": 0.0,
+          "oldActualDisplayedVerticesAgainstR113BMaxErrorM": 0.0,
+          "actualSkinMaximumMoveM": 0.0,
+          "newNeckVerticesMaximumMoveM": 0.0,
+          "evaluatedVertices": 511694,
+          "evaluatedTriangles": 1023384
+        }
+      ],
+      "originalFibresAndRadii": {
+        "AFN97_TUCKED_ARTIST_BOB_CHILDREN": {
+          "curves": 24800,
+          "actualNeutralPoints": 421600,
+          "againstR113BMaxWorldErrorM": 0.0,
+          "radiusSha256": "bcc5f3e4a6d931224965620ec684d13c129a3850bb87882cc6e94efaf46895f6",
+          "radiusEqualR113B": true
+        },
+        "AFN57_NATIVE_BROWS": {
+          "curves": 2140,
+          "actualNeutralPoints": 76204,
+          "againstR113BMaxWorldErrorM": 0.0,
+          "radiusSha256": "340ff7385b7f34478a09463be27d7b7260891e1f057e216d930fbcbc2c50d6f3",
+          "radiusEqualR113B": true
+        },
+        "AFN57_NATIVE_LASHES": {
+          "curves": 412,
+          "actualNeutralPoints": 6998,
+          "againstR113BMaxWorldErrorM": 0.0,
+          "radiusSha256": "8464888a54bd5564ae6c75ed0e21ab1a5c19ee66b0985597b923fe711ea4d849",
+          "radiusEqualR113B": true
+        }
+      },
+      "completeOperationAccepted": false,
+      "wholeBodyOralGuideEditingNaturalHairNotProved": true
+    },
+    "contact": {
+      "status": "UNACCEPTED_NOT_RETESTED_AFTER_VISIBLE_FAILURE",
+      "newNeckFiniteSelfBodyHairAndContinuousProved": false,
+      "globalSignedMinimumM": null,
+      "previousR113OpticalWitnessesRemainAnUnacceptedBaselineNotANewR114Test": true,
+      "sourceReference": "../r0113-coherent-head-foundation/minimum-saved-coherent-readback.json"
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 34,
+  "productionRoundsSinceLastWholeCharacterReview": 1,
+  "nextWholeReviewAfterFurtherProductionRounds": 2,
+  "femaleUserAcceptance": false,
+  "reviewUTC": "2026-10-21T08:55:04.679908+00:00",
+  "actualCompleteModelCandidates": 1,
+  "wholeCharacterScore": null
+}
