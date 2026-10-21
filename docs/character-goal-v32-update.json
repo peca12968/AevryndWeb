@@ -1,0 +1,100 @@
+{
+  "kind": "PROMPT_MAINTENANCE_ONLY",
+  "version": "v32",
+  "startedUTC": "2026-10-21T01:17:13.426256+00:00",
+  "baseCommit": "a096d868b0a5be2060d11f4cdd0fb74a53ffc734",
+  "priorPromptSha256": "5322bbf88ae52ac968b4cadb012fc4c0bd34a179f80d78b9c5b2a85a07d20ac4",
+  "protectedFilesSha256": {
+    "engine\\assets\\characters\\female-next\\female-next.asset.json": "14ebff30ed9937037e5d0980396ca281b84b809d714245593dd552e0d6eb8ec2",
+    "Evidence\\character-female-next\\r0101-articulated-eyelid-topology\\continuation.json": "766adc63e18a1a218f8e5d8e5a0ac046a8a6f675c031530de16cf8a6e1792683",
+    "Evidence\\character-female-next\\r0101-articulated-eyelid-topology\\female-next-r0101.visual-audit.json": "10565dc301b477168230a95dc1a6faa9818756763ad8ec8fa5a25362fe918715",
+    "scripts\\character-next\\build-female-next-r0102-facet-lining.py": "8d1d2de5252190664fa041a27e47d8a94c290ef58a8c27c84b6f186995f346b6",
+    "Evidence\\character-female-next\\r0102-facet-aware-lid-surface\\a-build.log": "7914c92ab3bf5d3204a157cfa0616e9be11e5983bcad3bd9329a1c8404ea0883",
+    "Evidence\\character-female-next\\r0102-facet-aware-lid-surface\\before.json": "fb960662bf1295a615c1b74cb7180344b55c4eefc02578e06bf9e3e6e827cdd9",
+    "Evidence\\character-female-next\\r0102-facet-aware-lid-surface\\manifest-before-r0102.json": "14ebff30ed9937037e5d0980396ca281b84b809d714245593dd552e0d6eb8ec2",
+    "sites-engine-journey\\public\\assets\\character-female-refined.glb": "cef44b6a11b59f6820fec8d221316d8acc481b809708b0aab38e7bfd427fbafe",
+    "sites-engine-journey\\public\\character-editor.js": "33427ba3d93c6c79342282139c08180488d42ac540756b40873ae31957368cf6",
+    "sites-engine-journey\\public\\index.html": "4916a587f690925862b30b8c14c926173ed6cde1b7a63566a663737e4281ac02",
+    "sites-engine-journey\\scripts\\character-contact.py": "ccc52e7d8640a67cf7439a7a22d0be414ca7329d1b5d9742554c715e316ecbb0",
+    "sites-engine-journey\\scripts\\refine-female.py": "25f30c6b300bcda6e1e6cab6ce6d454f59603c31a104505a6ca4ef8a0f7fe441",
+    "sites-engine-journey\\src\\character-contact.js": "da68c95736cc4a7970b3b93be9bfb23aa67596aa73a7f50c1d06b87f941516fb",
+    "sites-engine-journey\\src\\character-editor.js": "e2573f9bc95cbff140f8b81250d5a4dfa5fca44e060babe6326e62c33ca828f1",
+    "sites-engine-journey\\src\\character-materials.js": "2b389e91bbb6e33a33ff31d2d08c9fd28c4feae03ac45d543ccdd44c098bd6e8"
+  },
+  "sourceBlends": 255,
+  "sourceInventoryMetadataDigest": "84b579df9a07bc5f66a0e983e19abaea225a5f03f9deebd76ad16fa0b1d7c58f",
+  "pendingIndexBefore": "",
+  "priorTrackedStatus": "M package.json\n M public/assets/character-female-refined.glb\n M public/character-editor.js\n M public/index.html\n M scripts/character-contact.py\n M scripts/refine-female.py\n M src/character-contact.js\n M src/character-editor.js\n M src/character-materials.js",
+  "pendingWorkHandoff": {
+    "latestRegisteredRevision": "female-next-r0101",
+    "latestContinuation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0101-articulated-eyelid-topology\\continuation.json",
+    "latestEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0101-articulated-eyelid-topology\\female-next-r0101.visual-audit.json",
+    "retainedCompleteReference": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0101-b2-lid-uv-and-attachment.blend",
+      "sha256": "be6fbf4658a6e47fc2684d2b94becf8e26d047d4a71b142d6d494ee5cee13a2c",
+      "bytes": 569586982,
+      "status": "RETAIN_COMPLETE_WORKING_WOMAN_LOCAL_LID_DIRECTION_HALF_BLINK_CONTACT_UNACCEPTED",
+      "scope": "Same complete C woman with shared-vertex reconstructed orbital lids, finite short inner wall and posterior cup; own upper/lower closure instead of legacy C blink, coherent local UV, all original412 lashes/6998 controls bound to actual new margin triangles, all24800 groom root indices remapped to compact actual skin. Original retained body/UV/groom positions exactly preserved at neutral. Local shape/editability/binding direction only: half-blink actual triangle-surface intersection/contact witnesses prevent adoption, complete operation, finite/continuous contact or runtime acceptance.",
+      "originalArtist": "Dan Ulrich",
+      "selectedOriginalBodyAssetLicense": "CC0",
+      "formalRuntimeOrUserFemaleAcceptance": false
+    },
+    "countersCopiedWithoutModification": {
+      "productionRoundsSinceLastWholeCharacterReview": 0,
+      "lastReviewedProductionWindow": [
+        "r99",
+        "r100",
+        "r101"
+      ],
+      "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 21,
+      "nextWholeReviewAfterFurtherProductionRounds": 3
+    },
+    "unregisteredProduction": "r0102",
+    "pendingEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0102-facet-aware-lid-surface",
+    "observedPendingFiles": [
+      "before.json",
+      "manifest-before-r0102.json",
+      "a-build.log"
+    ],
+    "pendingBuilder": "D:\\Download\\Aevrynd\\scripts\\character-next\\build-female-next-r0102-facet-lining.py",
+    "observedState": "The original r102 builder stopped before a saved candidate or complete preview. a-build.log ends in AssertionError at line34: Optical mesh changes with blink: sampled reference must be rebuilt per pose. No Blender process is present at maintenance inspection. This prompt edit does not repair, finish, reject, register or recount r102.",
+    "liveBlenderJobsObserved": [],
+    "pendingOriginalTiming": {
+      "startedUTC": "2026-10-21T01:03:00+00:00",
+      "supportDeadlineUTC": "2026-10-21T01:13:00+00:00",
+      "firstCompletePreviewDeadlineUTC": "2026-10-21T01:33:00+00:00",
+      "resourceCheckpointUTC": "2026-10-21T01:48:00+00:00"
+    },
+    "nextProductionAction": "Reconcile the same pending r102 and retain its original timestamps. The builder assumed unchanged optical geometry across blink; that premise failed before authoring completed. Use actual evaluated optical geometry for each affected pose or justify another changed construction with evidence; do not rerun the unchanged assertion, relax tolerance or count this maintenance as a model result. Preserve the same B2 complete woman, retained shape/UV/groom/lash controls and all rollback sources. First produce actual complete head/body and changed-blink preview, then inspect affected triangle surfaces and bindings. Existing stopped families remain in r101 continuation. Adaptive construction remains an unaccepted proposal; no density/offset/iteration sweep or new solver framework is authorized by this handoff.",
+    "pendingTimingPolicy": "Prompt maintenance/interruption is separately timestamped here; preserve original round/deadlines, record actual elapsed time on resumption, do not silently reset or judge an uncompleted round here."
+  },
+  "historyAllowlist": [
+    "AGENTS.md",
+    "docs/character-continuous-goal.md",
+    "docs/character-goal-v32-update.json"
+  ],
+  "designReference": "https://developers.openai.com/cookbook/examples/codex/using_goals_in_codex",
+  "verifiedUTC": "2026-10-21T01:20:18.072522+00:00",
+  "promptSha256": "7c4a746fe7f92d27667a3060583135503cfe4006cbc77219e6dd2312fc32f155",
+  "promptBytes": 15875,
+  "promptCopiesByteIdentical": true,
+  "bothAgentEntriesVersion": "v32",
+  "protectedFilesUnchanged": true,
+  "all255SourceMetadataUnchanged": true,
+  "retainedSourceHashVerified": true,
+  "stagedProductionBlobsPreserved": true,
+  "modelIterationStarted": false,
+  "modelsManifestScoresAdoptionAcceptanceCountersAndHistoricalFindingsChanged": false,
+  "websiteChanges": false,
+  "automationsChanged": false,
+  "newGoalOrScheduleCreated": false,
+  "activeGoalObjectiveRewritten": false,
+  "activeGoalStatusObserved": "active",
+  "changes": [
+    "Reorganize the contract around one complete woman, direct Blender authoring, actual complete previews and evidence-based next action.",
+    "Separate permanent quality/completion rules from live production state; latest actual evidence takes priority over old handoffs.",
+    "Make failed-script versus completed-model status explicit; preserve existing rounds, deadlines and interruption cost.",
+    "Keep preview-before-audit, time limits, stopped-method/stagnation rules, strict four gates, rights/resources and exact GitHub history requirements.",
+    "Reconcile r101 retained B2 and r102 early moving-optical premise failure without changing or recounting production."
+  ]
+}
