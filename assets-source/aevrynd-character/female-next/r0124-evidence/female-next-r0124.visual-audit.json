@@ -1,0 +1,64 @@
+{
+  "revision": "female-next-r0124",
+  "decision": "REJECT_NATIVE_NASAL_SCULPT_APPEARANCE_RETAIN_LIVE_AUTHORING_KEEP_R117",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0117-source\\aevrynd-female-next-r0117-a-native-fibre-brows.blend",
+    "sha256": "09da2122d16f80cbcff6f535dbfc35540df27131dc323450d2a4c41293446db9",
+    "bytes": 109202829,
+    "status": "ADOPT_SCOPED_COMPLETE_STATIC_NATIVE_BROW_APPEARANCE_GAIN",
+    "scope": "Adopt only static complete-character eyebrow shape/flow appearance in documented primary/oblique/second-light views, preserving r115 neck gain. Not a whole-character anatomy/function/finite-contact/runtime/rights/user acceptance.",
+    "renderSkin": "AFN113_COMPLETE_WOMAN_COHERENT_HEAD",
+    "rawEditableSource": "AFN115_EDITABLE_CONNECTED_NATIVE_ADULT_SOURCE",
+    "actualFaceControls": "AFN59_FACE_CONTROLS / blink_left, blink_right",
+    "appearanceAdoptionScope": "R115 static continuous neck/shoulder gain retained plus r117 static brow shape/hair-flow gain; remaining head/body deficits open.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0124-source\\aevrynd-female-next-r0124-a-live-native-nasal-sculpt.blend",
+      "sha256": "92bdb3ee893c638650aca28de49e12a031e6982b09570b9aceb9bc5dae323c26",
+      "bytes": 109888782,
+      "status": "REJECT_COMPLETE_APPEARANCE_RETAIN_LIVE_NATIVE_SCULPT_RESEARCH_ONLY",
+      "scope": "Same complete native r117 woman with own editable nasal tip/alar key and live exact subdivision-index delta. Actual source and display correspond exactly, zero control restores original skin and all raw keys/fibres, own coarse key edit moves actual skin and restores exactly. Maximum displayed move1.668mm is a data observation, not anatomical or aesthetic proof. Actual matched complete face/body/profile show no clear net realism gain. Retain authoring research only; no accepted complete operation/finite contact/runtime."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECT_NO_CLEAR_COMPLETE_APPEARANCE_GAIN",
+      "evidence": [
+        "r0124-head-and-body-comparison.png",
+        "r0124-profile-and-oblique-comparison.png",
+        "manual-visual-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "INDEPENDENT_SAVED_SOURCE_COARSE_EDIT_DISPLAY_RESPONSE_RESTORE_ONLY",
+      "evidence": "minimum-saved-source-readback.json",
+      "temporaryCoarseKeyEditActualDisplayMovementM": 9.943960543523644e-05,
+      "newCompleteOperationAccepted": false,
+      "naturalHairMotionDelivered": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_NO_NEW_FINITE_SELF_INTERIOR_CONTINUOUS_BODY_CLOTH_PROOF",
+      "evidence": "No new contact pass claimed. Original raw skin keys/fibre geometry preserved; affected nasal displayed skin changes invalidate inherited local skin evidence there.",
+      "globalSignedMinimumM": null,
+      "changedNasalShapeNotAnatomicallyOrContactQualified": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 7,
+  "productionRoundsSinceLastWholeCharacterReview": 2,
+  "nextWholeReviewAfterFurtherProductionRounds": 1,
+  "femaleUserAcceptance": false,
+  "reviewUTC": "2026-10-21T13:55:48.568956+00:00",
+  "actualCompleteSourceFiles": 1,
+  "wholeCharacterScore": null
+}

@@ -366,3 +366,8 @@ r0123-evidence/*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-
 r0123-source/native-strand-flow/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 aevrynd-female-next-r0123* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 r0123-source/*.blend filter=lfs diff=lfs merge=lfs -text
+# Exact r124 rejected native nasal sculpt and saved live-source recovery.
+r0124-evidence/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0124-evidence/*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+aevrynd-female-next-r0124* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0124-source/*.blend filter=lfs diff=lfs merge=lfs -text
