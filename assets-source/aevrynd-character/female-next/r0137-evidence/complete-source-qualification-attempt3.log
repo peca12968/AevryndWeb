@@ -1,0 +1,18 @@
+00:00.422  blend            | Read blend: "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend"
+D:\Download\Aevrynd\scripts\character-next\extract-female-next-r0137-complete-studio-groom.py:38: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.node_tree.nodes.clear();p=m.node_tree.nodes.new('ShaderNodeBsdfPrincipled');p.inputs['Base Color'].default_value=color;p.inputs['Roughness'].default_value=.35;out=m.node_tree.nodes.new('ShaderNodeOutputMaterial');m.node_tree.links.new(p.outputs[0],out.inputs['Surface']);return m
+D:\Download\Aevrynd\scripts\character-next\extract-female-next-r0137-complete-studio-groom.py:42: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  cache=np.load(OLD/'original-native-studio-cache.npz');P=cache['world'];counts=cache['counts'];d=bpy.data.hair_curves.new('AFN137_ORIGINAL_COMPLETE_HAIR_NATIVE_FIBRES');d.add_curves(counts.tolist());d.position_data.foreach_set('vector',P.astype('f4').ravel());rad=d.attributes.new('radius','FLOAT','POINT');rad.data.foreach_set('value',np.concatenate([.000045*(1-.95*np.linspace(0,1,int(n))**4) for n in counts]).astype('f4'));h=bpy.data.objects.new(d.name,d);s.collection.objects.link(h);mat=bpy.data.materials.new('AFN137_OWN_NATIVE_HAIR');mat.use_nodes=True;mat.node_tree.nodes.clear();ha=mat.node_tree.nodes.new('ShaderNodeBsdfHairPrincipled');ha.parametrization='MELANIN';ha.inputs['Melanin'].default_value=.7;ha.inputs['Melanin Redness'].default_value=.4;ha.inputs['Roughness'].default_value=.3;ha.inputs['Radial Roughness'].default_value=.3;out=mat.node_tree.nodes.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(ha.outputs[0],out.inputs['Surface']);d.materials.append(mat)
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\extract-female-next-r0137-complete-studio-groom.py", line 48, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\extract-female-next-r0137-complete-studio-groom.py", line 43, in main
+    s.render.engine='CYCLES';s.cycles.samples=16;s.cycles.use_denoising=True;s.render.threads_mode='FIXED';s.render.threads=4;s.render.resolution_x=s.render.resolution_y=640;s.render.resolution_percentage=100;s.render.image_settings.file_format='PNG';s.render.hair_type='CYLINDER';s.render.hair_subdiv=3;s.view_settings.view_transform='AgX';s.view_settings.look='AgX - Medium High Contrast';s.view_settings.exposure=-.5;world=bpy.data.worlds.new('AFN137_SOURCE_BLACK');world.use_nodes=True;world.node_tree.nodes['Background'].inputs['Color'].default_value=(0,0,0,1);s.world=world;center=(H.min(0)+H.max(0))*.5;span=np.ptp(H[:,2]);aim=center+np.array([0,0,.05*span]);distance=span*3.;cd=bpy.data.cameras.new('AFN137_SOURCE_CAMERA');cam=bpy.data.objects.new(cd.name,cd);s.collection.objects.link(cam);s.camera=cam;cd.lens=60
+                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: bpy_struct: item.attr = val: enum "PNG" not found in ('FFMPEG')
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+scripts disabled for "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend", skipping 'cloudrig.py'
+scripts disabled for "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend", skipping 'rigged_particle_hair.py'
+
+Blender quit

@@ -1,0 +1,12 @@
+00:07.219  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0137-source\aevrynd-female-next-r0137-a-complete-articulated-groom.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0137-native-frontal-reconstruction.py", line 26, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0137-native-frontal-reconstruction.py", line 11, in main
+    tick=time.time();assert not OUT.exists();bpy.ops.wm.open_mainfile(filepath=str(SRC));protected=a.a.protected();skin=bpy.data.objects['AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD'];_,W,T=b.u.b.geom(skin);skinHash=[a.a.hasharray(W),a.a.hasharray(T)];source=bpy.data.objects['AFN126_ORIGINAL_Hair_Hair_0'];_,HV,HT=b.u.b.geom(source);old=np.load(E.parent/'r0130-artist-native-groom/current-hair-native-triangle-charts.npz');assert np.array_equal(HV,old['world']) and np.array_equal(HT,old['triangles']);labels=old['componentLabels'];selected=[];rows=[]
+                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

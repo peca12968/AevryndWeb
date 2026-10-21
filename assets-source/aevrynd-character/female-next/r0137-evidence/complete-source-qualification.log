@@ -1,0 +1,14 @@
+00:00.375  blend            | Read blend: "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\extract-female-next-r0137-complete-studio-groom.py", line 38, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\extract-female-next-r0137-complete-studio-groom.py", line 20, in main
+    arm=next(m.object for m in o.modifiers if m.type=='ARMATURE');names=[p.name for p in arm.pose.bones if 'hair' in p.name.lower()];candidate=next(p for p in arm.pose.bones if p.name.startswith('Hair_Front') and not p.name.startswith('ORG-'));old= candidate.matrix_basis.copy();candidate.rotation_mode='XYZ';candidate.rotation_euler.x+=.05;bpy.context.view_layer.update();edit,_=geom(o);delta=float(np.linalg.norm(edit-W,axis=1).max());candidate.matrix_basis=old;bpy.context.view_layer.update();restored,_=geom(o);assert np.max(abs(restored-W))<2e-6 and delta>1e-6
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+scripts disabled for "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend", skipping 'cloudrig.py'
+scripts disabled for "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend", skipping 'rigged_particle_hair.py'
+
+Blender quit

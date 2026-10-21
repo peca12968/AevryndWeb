@@ -1,0 +1,13 @@
+00:07.688  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0126-source\aevrynd-female-next-r0126-b-source-section-neck.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0137-complete-articulated-groom.py:22: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  coreMat=bpy.data.materials.new('AFN137_OWN_PHYSICAL_BROWN_CORE');coreMat.use_nodes=True;nd=coreMat.node_tree.nodes;nd.clear();p=nd.new('ShaderNodeBsdfPrincipled');p.inputs['Base Color'].default_value=(.025,.012,.007,1);p.inputs['Roughness'].default_value=.35;p.inputs['IOR'].default_value=1.55;o=nd.new('ShaderNodeOutputMaterial');coreMat.node_tree.links.new(p.outputs[0],o.inputs['Surface']);hairMat=bpy.data.materials.new('AFN137_OWN_PHYSICAL_NATIVE_HAIR');hairMat.use_nodes=True;nd=hairMat.node_tree.nodes;nd.clear();p=nd.new('ShaderNodeBsdfHairPrincipled');p.parametrization='MELANIN';p.inputs['Melanin'].default_value=.7;p.inputs['Melanin Redness'].default_value=.4;p.inputs['Roughness'].default_value=.3;p.inputs['Radial Roughness'].default_value=.3;o=nd.new('ShaderNodeOutputMaterial');hairMat.node_tree.links.new(p.outputs[0],o.inputs['Surface']);frame=empty('AFN137_COMPLETE_HAIR_FRAME',(0,0,0));hinge=empty('AFN137_ACTUAL_PONY_JOINT',joint);parent(hinge,frame);objects=[];records=[]
+00:25.610  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0137-complete-studio-groom\matched-a-complete-articulated-groom-face.png'
+00:31.360  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0137-complete-studio-groom\matched-a-complete-articulated-groom-body-face.png'
+00:41.297  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0137-complete-studio-groom\matched-a-complete-articulated-groom-profile.png'
+00:50.375  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0137-complete-studio-groom\matched-a-complete-articulated-groom-oblique.png'
+00:59.844  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0137-complete-studio-groom\matched-a-complete-articulated-groom-back.png'
+資訊: 已儲存為「aevrynd-female-next-r0137-a-complete-articulated-groom.blend」
+R137_COMPLETE_CURRENT_WOMAN_ARTICULATED_ORIGINAL_GROOM_PREVIEW_DONE 52.16805148124695
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

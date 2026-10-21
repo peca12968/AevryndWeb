@@ -1,0 +1,18 @@
+00:00.407  blend            | Read blend: "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend"
+D:\Download\Aevrynd\scripts\character-next\extract-female-next-r0137-original-long-groom.py:30: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.node_tree.nodes.clear();n=m.node_tree.nodes.new('ShaderNodeBsdfPrincipled' if color else 'ShaderNodeBsdfHairPrincipled')
+D:\Download\Aevrynd\scripts\character-next\extract-female-next-r0137-original-long-groom.py:38: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  s.render.engine='CYCLES';s.cycles.samples=16;s.cycles.use_denoising=True;s.render.threads_mode='FIXED';s.render.threads=4;s.render.resolution_x=s.render.resolution_y=640;s.render.resolution_percentage=100;s.render.image_settings.media_type='IMAGE';s.render.image_settings.file_format='PNG';s.render.hair_type='CYLINDER';s.render.hair_subdiv=3;s.view_settings.view_transform='AgX';s.view_settings.look='AgX - Medium High Contrast';s.view_settings.exposure=-.5;world=bpy.data.worlds.new('AFN137_SOURCE_WORLD');world.use_nodes=True;world.node_tree.nodes['Background'].inputs['Color'].default_value=(0,0,0,1);s.world=world;center=(H.min(0)+H.max(0))*.5;span=np.ptp(H[:,2]);aim=center+np.array([0,0,.05*span]);distance=span*3.;cd=bpy.data.cameras.new('AFN137_SOURCE_CAMERA');cam=bpy.data.objects.new(cd.name,cd);s.collection.objects.link(cam);s.camera=cam;cd.lens=60
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\extract-female-next-r0137-original-long-groom.py", line 43, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\extract-female-next-r0137-original-long-groom.py", line 38, in main
+    s.render.engine='CYCLES';s.cycles.samples=16;s.cycles.use_denoising=True;s.render.threads_mode='FIXED';s.render.threads=4;s.render.resolution_x=s.render.resolution_y=640;s.render.resolution_percentage=100;s.render.image_settings.media_type='IMAGE';s.render.image_settings.file_format='PNG';s.render.hair_type='CYLINDER';s.render.hair_subdiv=3;s.view_settings.view_transform='AgX';s.view_settings.look='AgX - Medium High Contrast';s.view_settings.exposure=-.5;world=bpy.data.worlds.new('AFN137_SOURCE_WORLD');world.use_nodes=True;world.node_tree.nodes['Background'].inputs['Color'].default_value=(0,0,0,1);s.world=world;center=(H.min(0)+H.max(0))*.5;span=np.ptp(H[:,2]);aim=center+np.array([0,0,.05*span]);distance=span*3.;cd=bpy.data.cameras.new('AFN137_SOURCE_CAMERA');cam=bpy.data.objects.new(cd.name,cd);s.collection.objects.link(cam);s.camera=cam;cd.lens=60
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'bpy_prop_collection[key]: key "Background" not found'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+scripts disabled for "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend", skipping 'cloudrig.py'
+scripts disabled for "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend", skipping 'rigged_particle_hair.py'
+
+Blender quit

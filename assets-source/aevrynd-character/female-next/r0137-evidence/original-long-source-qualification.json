@@ -1,0 +1,212 @@
+{
+  "UTC": "2026-10-21T20:52:55.302233+00:00",
+  "originalSource": "D:\\Download\\Aevrynd\\Reference\\character\\blender-studio-ellie-v1-cc-by4\\ellie.blend",
+  "originalSourceSha256": "3dd235218725a9e68890073bbeacb4820f9b34db65d44f80c31bb88696a3c54c",
+  "originalStyleControls": {
+    "Hairstyle": 0,
+    "Particle Hair": 1,
+    "Quality": 2
+  },
+  "nativeDriverContract": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0137-complete-studio-groom\\original-native-style-contract.json",
+  "intendedCompanions": [
+    "GEO-ellie_hair.groom_base",
+    "GEO-ellie_hair.scalp"
+  ],
+  "coreVertices": 71457,
+  "coreTriangles": 140152,
+  "coreBounds": [
+    [
+      -0.4506264328956604,
+      -0.06046825647354126,
+      1.0301947593688965
+    ],
+    [
+      0.12071536481380463,
+      0.2105717658996582,
+      1.5603269338607788
+    ]
+  ],
+  "headBounds": [
+    [
+      -0.15643897652626038,
+      -0.13110364973545074,
+      0.9195080995559692
+    ],
+    [
+      0.15643897652626038,
+      0.12618501484394073,
+      1.286553144454956
+    ]
+  ],
+  "systems": [
+    {
+      "name": "front",
+      "parents": 23,
+      "children": 2300,
+      "countsRange": [
+        2,
+        65
+      ],
+      "nativeRootRadius": 0.5,
+      "nativeTipRadius": 0.0,
+      "nativeRadiusScale": 0.014999999664723873,
+      "rawNativeSettingsNotPhysicalRadiusCalibration": true
+    },
+    {
+      "name": "back",
+      "parents": 34,
+      "children": 3400,
+      "countsRange": [
+        45,
+        65
+      ],
+      "nativeRootRadius": 0.5,
+      "nativeTipRadius": 0.0,
+      "nativeRadiusScale": 0.014999999664723873,
+      "rawNativeSettingsNotPhysicalRadiusCalibration": true
+    },
+    {
+      "name": "ponytail",
+      "parents": 19,
+      "children": 2850,
+      "countsRange": [
+        21,
+        65
+      ],
+      "nativeRootRadius": 0.5,
+      "nativeTipRadius": 0.0,
+      "nativeRadiusScale": 0.014999999664723873,
+      "rawNativeSettingsNotPhysicalRadiusCalibration": true
+    },
+    {
+      "name": "loose",
+      "parents": 40,
+      "children": 0,
+      "countsRange": [
+        65,
+        65
+      ],
+      "nativeRootRadius": 0.5,
+      "nativeTipRadius": 0.0,
+      "nativeRadiusScale": 0.014999999664723873,
+      "rawNativeSettingsNotPhysicalRadiusCalibration": true
+    }
+  ],
+  "actualSourceKeyRestoreAndReadback": [
+    {
+      "name": "front",
+      "proxy": "GEO-ellie_hair.scalp-front",
+      "parents": 23,
+      "keyPoints": 255,
+      "actualNativeKeyAgainstOriginalProxyMaxSourceUnits": 2.495666477746401e-07,
+      "originalSettings": {
+        "child_type": "SIMPLE",
+        "child_percent": 100,
+        "rendered_child_count": 150,
+        "root_radius": 0.5,
+        "tip_radius": 0.0,
+        "radius_scale": 0.014999999664723873,
+        "display_step": 6,
+        "render_step": 6,
+        "clump_factor": 0.8416290283203125,
+        "clump_shape": 0.25314000248908997,
+        "child_radius": 0.021000001579523087
+      },
+      "fullProxyVertices": 255
+    },
+    {
+      "name": "back",
+      "proxy": "GEO-ellie_hair.scalp-back",
+      "parents": 34,
+      "keyPoints": 546,
+      "actualNativeKeyAgainstOriginalProxyMaxSourceUnits": 3.613063497586843e-07,
+      "originalSettings": {
+        "child_type": "SIMPLE",
+        "child_percent": 100,
+        "rendered_child_count": 100,
+        "root_radius": 0.5,
+        "tip_radius": 0.0,
+        "radius_scale": 0.014999999664723873,
+        "display_step": 6,
+        "render_step": 6,
+        "clump_factor": 0.8416290283203125,
+        "clump_shape": 0.25314000248908997,
+        "child_radius": 0.023000001907348633
+      },
+      "fullProxyVertices": 546
+    },
+    {
+      "name": "ponytail",
+      "proxy": "GEO-ellie_hair.scalp-ponytail",
+      "parents": 19,
+      "keyPoints": 438,
+      "actualNativeKeyAgainstOriginalProxyMaxSourceUnits": 1.7504900879369274e-07,
+      "originalSettings": {
+        "child_type": "SIMPLE",
+        "child_percent": 150,
+        "rendered_child_count": 150,
+        "root_radius": 0.5,
+        "tip_radius": 0.0,
+        "radius_scale": 0.014999999664723873,
+        "display_step": 6,
+        "render_step": 6,
+        "clump_factor": 0.8416290283203125,
+        "clump_shape": 0.25314000248908997,
+        "child_radius": 0.03400000184774399
+      },
+      "fullProxyVertices": 438
+    },
+    {
+      "name": "loose",
+      "proxy": "GEO-ellie_hair.scalp-loose",
+      "parents": 40,
+      "keyPoints": 475,
+      "actualNativeKeyAgainstOriginalProxyMaxSourceUnits": 2.5463115409962923e-07,
+      "originalSettings": {
+        "child_type": "NONE",
+        "child_percent": 1,
+        "rendered_child_count": 1,
+        "root_radius": 0.5,
+        "tip_radius": 0.0,
+        "radius_scale": 0.014999999664723873,
+        "display_step": 6,
+        "render_step": 6,
+        "clump_factor": 0.8416290283203125,
+        "clump_shape": 0.25314000248908997,
+        "child_radius": 0.018000001087784767
+      },
+      "fullProxyVertices": 475
+    }
+  ],
+  "sourceProxyRecords": [
+    {
+      "name": "GEO-ellie_hair.scalp-front",
+      "points": 255
+    },
+    {
+      "name": "GEO-ellie_hair.scalp-back",
+      "points": 546
+    },
+    {
+      "name": "GEO-ellie_hair.scalp-ponytail",
+      "points": 438
+    },
+    {
+      "name": "GEO-ellie_hair.scalp-loose",
+      "points": 475
+    }
+  ],
+  "actualNativeCoreVertexOperation": {
+    "vertex": 3788,
+    "requestedLocalM": 0.001,
+    "actualDisplayedCoreMaxM": 0.0004628598690032959,
+    "restoredMaxM": 0.0
+  },
+  "allSourceNativeSystemsParentsChildrenAndValidKnotsRetained": true,
+  "sourceCurves": 8666,
+  "sourcePoints": 397212,
+  "nativeOriginalRenderWidthsNotReplacedForReference": true,
+  "noEmbeddedSourceScriptExecuted": true,
+  "shortMeshIsAlternativeNotIntendedCompanionCorrection": true,
+  "secondsBeforePreview": 2.114492177963257
+}

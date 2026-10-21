@@ -1,0 +1,642 @@
+{
+  "bone": "Hair_Front3",
+  "boneDelta": 0.0,
+  "nativeDisplayedCoreVertexCount": 9244,
+  "nativeHairCutGroups": [
+    "DEF-Head_Top",
+    "small strands",
+    "DEF-Hair_Cut_Back3",
+    "DEF-Hair_Cut_Back2",
+    "DEF-Hair_Cut_Back1",
+    "DEF-Hair_Cut_Front5",
+    "DEF-Hair_Cut_Front4",
+    "DEF-Hair_Cut_Front3",
+    "DEF-Hair_Cut_Front2",
+    "DEF-Hair_Cut_Front1",
+    "DEF-Hair_Side.R",
+    "DEF-Hair_Side.L",
+    "DEF-Hair_Cut_Top1"
+  ],
+  "shapeKeyBlocks": 2,
+  "rawVertex": 4525,
+  "actualDisplayedCoreVertexDelta": 0.0010000001639127731,
+  "restoreMaxError": 0.0,
+  "originalRows": [
+    {
+      "name": "GEO-ellie_hair_cut",
+      "hideRender": true,
+      "hideViewport": true,
+      "collections": [
+        "ellie.hair.mesh"
+      ],
+      "modifiers": [
+        {
+          "name": "Mask",
+          "type": "MASK",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": "small strands",
+          "invert": true
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        }
+      ],
+      "drivers": [
+        [
+          "modifiers[\"Subdivision\"].levels",
+          [
+            {
+              "name": "Quality",
+              "targets": [
+                {
+                  "id": "RIG-Ellie",
+                  "path": "pose.bones[\"Properties_Character_Ellie\"][\"Quality\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "hide_viewport",
+          [
+            {
+              "name": "Hair",
+              "targets": [
+                {
+                  "id": "RIG-Ellie",
+                  "path": "pose.bones[\"Properties_Character_Ellie\"][\"Hairstyle\"]"
+                }
+              ]
+            },
+            {
+              "name": "Particles",
+              "targets": [
+                {
+                  "id": "RIG-Ellie",
+                  "path": "pose.bones[\"Properties_Character_Ellie\"][\"Particle Hair\"]"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "GEO-ellie_head",
+      "hideRender": false,
+      "hideViewport": false,
+      "collections": [
+        "CH-ellie"
+      ],
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        },
+        {
+          "name": "CorrectiveSmooth",
+          "type": "CORRECTIVE_SMOOTH",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        },
+        {
+          "name": "VertexWeightMix",
+          "type": "VERTEX_WEIGHT_MIX",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        },
+        {
+          "name": "Lattice NeckHead",
+          "type": "LATTICE",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        },
+        {
+          "name": "Mask",
+          "type": "MASK",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": "mask",
+          "invert": true
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        },
+        {
+          "name": "Shrinkwrap",
+          "type": "SHRINKWRAP",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        },
+        {
+          "name": "Lattice Mask",
+          "type": "LATTICE",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        },
+        {
+          "name": "Lattice Cheek.L",
+          "type": "LATTICE",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        },
+        {
+          "name": "Lattice Cheek.R",
+          "type": "LATTICE",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        },
+        {
+          "name": "Lattice Lips",
+          "type": "LATTICE",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        },
+        {
+          "name": "Lattice Lips.L",
+          "type": "LATTICE",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        },
+        {
+          "name": "Lattice Lips.R",
+          "type": "LATTICE",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        },
+        {
+          "name": "DataTransfer",
+          "type": "DATA_TRANSFER",
+          "showViewport": false,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        }
+      ],
+      "drivers": [
+        [
+          "modifiers[\"CorrectiveSmooth\"].show_viewport",
+          [
+            {
+              "name": "Quality",
+              "targets": [
+                {
+                  "id": "RIG-Ellie",
+                  "path": "pose.bones[\"Properties_Character_Ellie\"][\"Quality\"]"
+                }
+              ]
+            },
+            {
+              "name": "CorrectiveSmooth",
+              "targets": [
+                {
+                  "id": "RIG-Ellie",
+                  "path": "pose.bones[\"Properties_Character_Ellie\"][\"Corrective Smooth\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "modifiers[\"Subdivision\"].levels",
+          [
+            {
+              "name": "Quality",
+              "targets": [
+                {
+                  "id": "RIG-Ellie",
+                  "path": "pose.bones[\"Properties_Character_Ellie\"][\"Quality\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "modifiers[\"DataTransfer\"].show_viewport",
+          [
+            {
+              "name": "Quality",
+              "targets": [
+                {
+                  "id": "RIG-Ellie",
+                  "path": "pose.bones[\"Properties_Character_Ellie\"][\"Quality\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "[\"highlight_strength\"]",
+          [
+            {
+              "name": "highlight_strength_001",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"highlight_strength\"]"
+                }
+              ]
+            },
+            {
+              "name": "highlight_strength_002",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"highlight_strength\"]"
+                }
+              ]
+            },
+            {
+              "name": "highlight_strength",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"highlight_strength\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "[\"distressed_MASTER\"]",
+          [
+            {
+              "name": "distressed_MASTER_001",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_MASTER\"]"
+                }
+              ]
+            },
+            {
+              "name": "distressed_MASTER_002",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_MASTER\"]"
+                }
+              ]
+            },
+            {
+              "name": "distressed_MASTER",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_MASTER\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "[\"distressed_ripped\"]",
+          [
+            {
+              "name": "distressed_ripped_001",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_ripped\"]"
+                }
+              ]
+            },
+            {
+              "name": "distressed_ripped_002",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_ripped\"]"
+                }
+              ]
+            },
+            {
+              "name": "distressed_ripped",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_ripped\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "[\"distressed_dirt\"]",
+          [
+            {
+              "name": "distressed_dirt_001",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_dirt\"]"
+                }
+              ]
+            },
+            {
+              "name": "distressed_dirt_002",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_dirt\"]"
+                }
+              ]
+            },
+            {
+              "name": "distressed_dirt",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_dirt\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "[\"distressed_scratches\"]",
+          [
+            {
+              "name": "distressed_scratches_001",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_scratches\"]"
+                }
+              ]
+            },
+            {
+              "name": "distressed_scratches_002",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_scratches\"]"
+                }
+              ]
+            },
+            {
+              "name": "distressed_scratches",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_scratches\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "[\"distressed_bruises\"]",
+          [
+            {
+              "name": "distressed_bruises_001",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_bruises\"]"
+                }
+              ]
+            },
+            {
+              "name": "distressed_bruises_002",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_bruises\"]"
+                }
+              ]
+            },
+            {
+              "name": "distressed_bruises",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_bruises\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "[\"distressed_STAGE\"]",
+          [
+            {
+              "name": "distressed_STAGE_001",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_STAGE\"]"
+                }
+              ]
+            },
+            {
+              "name": "distressed_STAGE",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"distressed_STAGE\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "[\"head_UVmix\"]",
+          [
+            {
+              "name": "head_UVmix_001",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"head_UVmix\"]"
+                }
+              ]
+            },
+            {
+              "name": "head_UVmix",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"head_UVmix\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "[\"switch_hand_scratch\"]",
+          [
+            {
+              "name": "switch_hand_scratch",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"switch_hand_scratch\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "[\"switch_head_bruise\"]",
+          [
+            {
+              "name": "switch_head_bruise",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"switch_head_bruise\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "[\"switch_knee_bruise\"]",
+          [
+            {
+              "name": "switch_knee_bruise",
+              "targets": [
+                {
+                  "id": "HLP-ellie_settings",
+                  "path": "[\"switch_knee_bruise\"]"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair.groom_base",
+      "hideRender": false,
+      "hideViewport": true,
+      "collections": [
+        "ellie.hair.particles"
+      ],
+      "modifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "showViewport": true,
+          "showRender": true,
+          "vertexGroup": null,
+          "invert": null
+        }
+      ],
+      "drivers": [
+        [
+          "modifiers[\"Subdivision\"].levels",
+          [
+            {
+              "name": "Quality",
+              "targets": [
+                {
+                  "id": "RIG-Ellie",
+                  "path": "pose.bones[\"Properties_Character_Ellie\"][\"Quality\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "hide_viewport",
+          [
+            {
+              "name": "Hair",
+              "targets": [
+                {
+                  "id": "RIG-Ellie",
+                  "path": "pose.bones[\"Properties_Character_Ellie\"][\"Hairstyle\"]"
+                }
+              ]
+            },
+            {
+              "name": "Particles",
+              "targets": [
+                {
+                  "id": "RIG-Ellie",
+                  "path": "pose.bones[\"Properties_Character_Ellie\"][\"Particle Hair\"]"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "hide_render",
+          [
+            {
+              "name": "Hair",
+              "targets": [
+                {
+                  "id": "RIG-Ellie",
+                  "path": "pose.bones[\"Properties_Character_Ellie\"][\"Hairstyle\"]"
+                }
+              ]
+            },
+            {
+              "name": "Particles",
+              "targets": [
+                {
+                  "id": "RIG-Ellie",
+                  "path": "pose.bones[\"Properties_Character_Ellie\"][\"Particle Hair\"]"
+                }
+              ]
+            }
+          ]
+        ]
+      ]
+    }
+  ]
+}

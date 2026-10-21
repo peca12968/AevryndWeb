@@ -1,0 +1,6 @@
+from pathlib import Path
+import bpy,json
+R=Path('D:/Download/Aevrynd');E=R/'Evidence/character-female-next/r0137-complete-studio-groom';bpy.ops.wm.open_mainfile(filepath=str(R/'Reference/character/blender-studio-ellie-v1-cc-by4/ellie.blend'));rig=bpy.data.objects['RIG-Ellie'];p=rig.pose.bones['Properties_Character_Ellie'];out={'stylePropertyValues':{n:p[n] for n in ['Hairstyle','Particle Hair','Quality']},'propertyUI':{n:p.id_properties_ui(n).as_dict() for n in ['Hairstyle','Particle Hair','Quality']},'objects':[]}
+for name in ['GEO-ellie_hair','GEO-ellie_hair_cut','GEO-ellie_hair.groom_base','GEO-ellie_hair_cut.scalp','GEO-ellie_hair.scalp']:
+ o=bpy.data.objects[name];out['objects'].append({'name':name,'hide_render':o.hide_render,'drivers':[{'path':f.data_path,'expr':f.driver.expression,'vars':{v.name:[{'id':t.id.name if t.id else None,'path':t.data_path} for t in v.targets] for v in f.driver.variables}} for f in o.animation_data.drivers] if o.animation_data else [],'shapeKeys':[{'name':k.name,'value':k.value} for k in o.data.shape_keys.key_blocks] if o.data.shape_keys else None})
+(E/'original-native-style-contract.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out),flush=True)
