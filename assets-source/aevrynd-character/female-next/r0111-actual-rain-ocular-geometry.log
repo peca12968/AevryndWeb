@@ -1,0 +1,8 @@
+D:\Download\Aevrynd\scripts\character-next\capture-female-next-r0111-rain-lid-source.py:31: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.meshes.new(name);m.from_pydata(V.tolist(),[],T.tolist());m.update();ob=bpy.data.objects.new(name,m);bpy.context.scene.collection.objects.link(ob);mat=bpy.data.materials.new(name);mat.use_nodes=True;mat.node_tree.nodes.clear();bs=mat.node_tree.nodes.new('ShaderNodeBsdfPrincipled');out=mat.node_tree.nodes.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(bs.outputs['BSDF'],out.inputs['Surface']);bs.inputs['Base Color'].default_value=(*color,1);bs.inputs['Roughness'].default_value=.6;m.materials.append(mat)
+00:06.875  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0111-native-mobile-lid-mesh\reference-actual-rain-neutral.png'
+00:11.031  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0111-native-mobile-lid-mesh\reference-actual-rain-closed.png'
+R111_ACTUAL_RAIN_OCULAR_CAPTURED 9.94810438156128
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

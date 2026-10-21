@@ -1,0 +1,153 @@
+{
+  "revision": "female-next-r0111",
+  "decision": "REJECT_ACTUAL_MOBILE_GRAFT_BOUNDARY_AND_FINITE_WALL_KEEP_R107",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0107-b-native-pinned-lids.blend",
+    "sha256": "cc59c3c366148d16958eb35d9a3723e4be80165698712f88103f91c3d91c7c7f",
+    "bytes": 654016884,
+    "status": "RETAIN_COMPLETE_WORKING_WOMAN_PARTIAL_NATIVE_LID_OPERATION_FULL_BLINK_CONTACT_RUNTIME_UNACCEPTED",
+    "scope": "Same complete r105 woman, original neutral head/body/lip UV/shaders/textures/groom retained. Native coarse quad poses and half corrective baked into visible full skin, all412 source lash frames use actual triangle winding. A soft desired margins miss by6.8mm. B imposes exact stored coarse anchors but actual rendered aperture still does not close. Actual B skin moves8.36mm and restores0, frame reversals0. Local construction/partial control only, not a natural complete blink or complete character adoption."
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0111-a-mobile-ocular-graft.blend",
+      "sha256": "3bbbf2b38dc642643baed89d0c10bd2cdeb8af1e47f81b72c1b2a21f2f762133",
+      "bytes": 700415187,
+      "status": "REJECT_NEW_OCULAR_GRAFT_OPEN_BOUNDARY_EXTRA_SURFACE_AND_EXTREME_WALL_OFFSET",
+      "scope": "One complete r107 woman with actually cut native ocular ports, new Rain source-topology mobile lid surfaces and paired eyes/corneas,0.8mm nominal Solidify wall, fixed fitted collar and reattached all412 original lashes. Surviving body positions/corner UV/materials and full neutral groom exact; original full old skin/optics preserved hidden. Own source geometry/keys used, no artist pose field applied to old lids. Neutral/closed whole head has open seams, extra nasal/cheek-like surfaces and long spikes; source-ID paired neutral wall displacement reaches100.578mm under even offset. Rejected construction, not complete appearance/operation/anatomy/contact/runtime."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECT_TEXTURED_COMPLETE_GRAFT_GAPS_EXTRA_SURFACES_SPIKES",
+      "evidence": [
+        "r0111-head-and-body-ab.png",
+        "r0111-closed-ab.png",
+        "r0111-actual-lid-poses.png",
+        "manual-visual-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "REOPENED_NEW_GEOMETRY_RESPONSE_RESTORE_PASS_COMPLETE_GRAFT_OPERATION_FAIL",
+      "evidence": "minimum-saved-graft-readback.json",
+      "states": [
+        {
+          "state": "neutral",
+          "assignedBlink": 0,
+          "actualEvaluatedMobileMaximumMoveM": 0.0,
+          "evaluatedPolygonGraphEqualsNeutral": true,
+          "actualKeys": {
+            "AFN111_L_half": 0.0,
+            "AFN111_L_closed": 0.0,
+            "AFN111_R_half": 0.0,
+            "AFN111_R_closed": 0.0
+          }
+        },
+        {
+          "state": "half",
+          "assignedBlink": 0.5,
+          "actualEvaluatedMobileMaximumMoveM": 0.03495990838572063,
+          "evaluatedPolygonGraphEqualsNeutral": true,
+          "actualKeys": {
+            "AFN111_L_half": 1.0,
+            "AFN111_L_closed": 0.4999999403953552,
+            "AFN111_R_half": 1.0,
+            "AFN111_R_closed": 0.4999999403953552
+          }
+        },
+        {
+          "state": "closed",
+          "assignedBlink": 1,
+          "actualEvaluatedMobileMaximumMoveM": 0.10266284667007022,
+          "evaluatedPolygonGraphEqualsNeutral": true,
+          "actualKeys": {
+            "AFN111_L_half": 0.0,
+            "AFN111_L_closed": 1.0,
+            "AFN111_R_half": 0.0,
+            "AFN111_R_closed": 1.0
+          }
+        },
+        {
+          "state": "restored",
+          "assignedBlink": 0,
+          "actualEvaluatedMobileMaximumMoveM": 0.0,
+          "evaluatedPolygonGraphEqualsNeutral": true,
+          "actualKeys": {
+            "AFN111_L_half": 0.0,
+            "AFN111_L_closed": 0.0,
+            "AFN111_R_half": 0.0,
+            "AFN111_R_closed": 0.0
+          }
+        }
+      ],
+      "bodyInvariants": {
+        "originalBodyAllVertexPositionsExactByPreservedID": true,
+        "allSurvivingBodyCornerUVLayersExact": {
+          "VitruvianUV.UDIM": true,
+          "OriginalArtist.UVMap": true,
+          "AFN105_ORIGINAL_NATIVE_HEAD_CHART": true
+        },
+        "survivingBodyMaterialIndicesExact": true,
+        "originalBodySkinMaterialGraphExact": true,
+        "neutralGroomWorldExact": true
+      },
+      "restoredGroomMaximumWorldErrorM": 0.0,
+      "lashFrames": {
+        "allCurves": 412,
+        "consistentWithActualTriangleWinding": 412,
+        "reversed": 0,
+        "notActualTriangle": 0
+      },
+      "oldCompleteSkinAndOpticsRetainedHidden": true,
+      "completeOperationAccepted": false,
+      "wholeBodyRigAndGuideEditingUnaccepted": true
+    },
+    "contact": {
+      "status": "UNACCEPTED_NEW_GEOMETRY_GRAFT_BOUNDARIES_OVERLAP_AND_FINITE_WALL_REQUIRE_NEW_PROOF",
+      "oldNeutralOpticalWitnessCountsNotTransferredToNewReplacedGeometry": true,
+      "globalSignedMinimumM": null,
+      "finiteSelfHairClothContinuousNaturalMotionCertified": false,
+      "noBroadAuditAfterVisibleGraftFailure": true,
+      "finiteWallCausalDiagnostic": {
+        "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0111-a-mobile-ocular-graft.blend",
+        "sameOriginalEvaluatedGeometryWithOnlyDiagnosticIDAdded": true,
+        "sourceVertexIDPairsPropagatedAndVerified": true,
+        "nominalThicknessM": 0.0007999999797903001,
+        "withEvenOffsetPairedVertexDisplacementQuantilesM": [
+          0.0007999478841906197,
+          0.0008025793021708603,
+          0.000866109052363615,
+          0.10057842708215314
+        ],
+        "withoutEvenOffsetUnsavedDiagnosticQuantilesM": [
+          0.0007999419965676102,
+          0.0007999998073470725,
+          0.0008000289157549826,
+          0.000800058268624941
+        ],
+        "originalEvenOffsetVertexPairsAbove1CM": 13,
+        "interpretation": "Verified paired surface/back vertex displacement, not an exact global material thickness/minimum distance. Same-source unsaved even-offset-off test distinguishes the extreme offset amplification; it does not repair missing graft boundaries, source selection, lash anatomy or prove a usable finite eye. No modifier change saved/adopted.",
+        "sourceOrFullCharacterNotSavedOrChanged": true,
+        "notNewModelCandidateOrRound": true,
+        "seconds": 22.62742829322815
+      },
+      "nominalThicknessIsNotEvaluatedFiniteSafety": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 31,
+  "productionRoundsSinceLastWholeCharacterReview": 1,
+  "nextWholeReviewAfterFurtherProductionRounds": 2,
+  "femaleUserAcceptance": false,
+  "reviewUTC": "2026-10-21T06:17:44.864362+00:00",
+  "actualCompleteModelCandidates": 1,
+  "textureRestoreAndUnsavedWallDiagnosticsNotExtraCandidates": true,
+  "wholeCharacterScore": null
+}
