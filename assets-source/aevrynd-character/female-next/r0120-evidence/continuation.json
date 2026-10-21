@@ -1,0 +1,427 @@
+{
+  "revision": "female-next-r0120",
+  "decision": "RETAIN_PARTIAL_OCULAR_SUPPORT_RESEARCH_NO_COMPLETE_GAIN_KEEP_R117",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0117-source\\aevrynd-female-next-r0117-a-native-fibre-brows.blend",
+    "sha256": "09da2122d16f80cbcff6f535dbfc35540df27131dc323450d2a4c41293446db9",
+    "bytes": 109202829,
+    "status": "ADOPT_SCOPED_COMPLETE_STATIC_NATIVE_BROW_APPEARANCE_GAIN",
+    "scope": "Adopt only static complete-character eyebrow shape/flow appearance in documented primary/oblique/second-light views, preserving r115 neck gain. Not a whole-character anatomy/function/finite-contact/runtime/rights/user acceptance.",
+    "renderSkin": "AFN113_COMPLETE_WOMAN_COHERENT_HEAD",
+    "rawEditableSource": "AFN115_EDITABLE_CONNECTED_NATIVE_ADULT_SOURCE",
+    "actualFaceControls": "AFN59_FACE_CONTROLS / blink_left, blink_right",
+    "appearanceAdoptionScope": "R115 static continuous neck/shoulder gain retained plus r117 static brow shape/hair-flow gain; remaining head/body deficits open.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0120-source\\aevrynd-female-next-r0120-a-coupled-ocular-skin.blend",
+      "sha256": "3cc311cfa1bb8f4b119e7110d8d60310d73153596438095f3f0673022f7b8ed1",
+      "bytes": 116072868,
+      "status": "RETAIN_UNACCEPTED_COUPLED_OCULAR_SUPPORT_RESEARCH_NO_APPEARANCE_ADOPTION",
+      "scope": "Same complete r119 B woman with actual native skin, posterior-source orientation label, all own closure states and real surface-bound lashes authored around fixed eye exterior. Original neutral triangles made stable; source IDs/UV/materials preserved. No clear complete appearance gain, remaining neutral sclera witnesses4/8, lash displacement up to10.944mm unqualified. Partial contact/source research only; r117 remains working."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "NO_CLEAR_COMPLETE_APPEARANCE_GAIN_RESEARCH_ONLY",
+      "evidence": [
+        "r0120-head-and-body-comparison.png",
+        "r0120-oblique-and-blink-comparison.png",
+        "manual-visual-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "INDEPENDENT_AUTHORED_SKIN_KEYS_AND_LASH_SAMPLES_RECOVERED_COMPLETE_OPERATION_UNACCEPTED",
+      "evidence": "minimum-saved-ocular-unit-readback.json",
+      "actualPoseStates": [
+        {
+          "state": "neutral",
+          "assignedBlink": 0.0,
+          "actualChangedSkinAgainstAuthoredKeysMaxM": 5.96189262837544e-08,
+          "actualSkinMaximumMoveM": 0.0,
+          "actualLashesFinite": true
+        },
+        {
+          "state": "half",
+          "assignedBlink": 0.5,
+          "actualChangedSkinAgainstAuthoredKeysMaxM": 1.659078777003526e-07,
+          "actualSkinMaximumMoveM": 0.005044853421365091,
+          "actualLashesFinite": true
+        },
+        {
+          "state": "closed",
+          "assignedBlink": 1.0,
+          "actualChangedSkinAgainstAuthoredKeysMaxM": 5.96189262837544e-08,
+          "actualSkinMaximumMoveM": 0.010089706842730181,
+          "actualLashesFinite": true
+        },
+        {
+          "state": "restored",
+          "assignedBlink": 0.0,
+          "actualChangedSkinAgainstAuthoredKeysMaxM": 5.96189262837544e-08,
+          "actualSkinMaximumMoveM": 0.0,
+          "actualLashesFinite": true
+        }
+      ],
+      "largeLashChangeUnqualified": true,
+      "completeOperationAccepted": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_NEUTRAL_CAPPED_SURFACE_QUERY_ONLY",
+      "actualSurfaceWitnesses": [
+        {
+          "pair": "actual complete skin vs AFN119_L_CILIARY_BACKING_APPROX",
+          "state": "neutral",
+          "BVHCandidatePairs": 0,
+          "candidatePairsTestedUntilCap": 0,
+          "storedIntersectionOrTouchWitnesses": 0,
+          "cap": 8,
+          "witnesses": [],
+          "noRegionExcluded": true,
+          "notGlobalSignedMinimumFiniteContainmentSelfOrContinuousProof": true
+        },
+        {
+          "pair": "actual complete skin vs AFN119_L_FINITE_ASPHERIC_CORNEA",
+          "state": "neutral",
+          "BVHCandidatePairs": 0,
+          "candidatePairsTestedUntilCap": 0,
+          "storedIntersectionOrTouchWitnesses": 0,
+          "cap": 8,
+          "witnesses": [],
+          "noRegionExcluded": true,
+          "notGlobalSignedMinimumFiniteContainmentSelfOrContinuousProof": true
+        },
+        {
+          "pair": "actual complete skin vs AFN119_L_FINITE_IRIS_AND_PUPIL_APERTURE",
+          "state": "neutral",
+          "BVHCandidatePairs": 0,
+          "candidatePairsTestedUntilCap": 0,
+          "storedIntersectionOrTouchWitnesses": 0,
+          "cap": 8,
+          "witnesses": [],
+          "noRegionExcluded": true,
+          "notGlobalSignedMinimumFiniteContainmentSelfOrContinuousProof": true
+        },
+        {
+          "pair": "actual complete skin vs AFN119_L_FINITE_SCLERA",
+          "state": "neutral",
+          "BVHCandidatePairs": 4,
+          "candidatePairsTestedUntilCap": 4,
+          "storedIntersectionOrTouchWitnesses": 4,
+          "cap": 8,
+          "witnesses": [
+            {
+              "skinTriangle": 238545,
+              "eyeTriangle": 2787,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.03790349598523209,
+                  -0.12065981529737817,
+                  1.4559369349170586
+                ],
+                [
+                  0.03789302927316738,
+                  -0.12071834038943052,
+                  1.4559694403994
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 238545,
+              "eyeTriangle": 2530,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.03785358271289159,
+                  -0.12076962426910384,
+                  1.4559684467090201
+                ],
+                [
+                  0.03789302927316738,
+                  -0.12071834038943052,
+                  1.4559694403994
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 238544,
+              "eyeTriangle": 2787,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.03790349598523209,
+                  -0.12065981529737817,
+                  1.4559369349170586
+                ],
+                [
+                  0.03785306096372149,
+                  -0.12071834038943052,
+                  1.4559231059379765
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 238544,
+              "eyeTriangle": 2530,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.03785358271289159,
+                  -0.12076962426910384,
+                  1.4559684467090201
+                ],
+                [
+                  0.03785306096372149,
+                  -0.12071834038943052,
+                  1.4559231059379765
+                ]
+              ]
+            }
+          ],
+          "noRegionExcluded": true,
+          "notGlobalSignedMinimumFiniteContainmentSelfOrContinuousProof": true
+        },
+        {
+          "pair": "actual complete skin vs AFN119_L_POSTERIOR_ABSORBER_APPROX",
+          "state": "neutral",
+          "BVHCandidatePairs": 0,
+          "candidatePairsTestedUntilCap": 0,
+          "storedIntersectionOrTouchWitnesses": 0,
+          "cap": 8,
+          "witnesses": [],
+          "noRegionExcluded": true,
+          "notGlobalSignedMinimumFiniteContainmentSelfOrContinuousProof": true
+        },
+        {
+          "pair": "actual complete skin vs AFN119_R_CILIARY_BACKING_APPROX",
+          "state": "neutral",
+          "BVHCandidatePairs": 0,
+          "candidatePairsTestedUntilCap": 0,
+          "storedIntersectionOrTouchWitnesses": 0,
+          "cap": 8,
+          "witnesses": [],
+          "noRegionExcluded": true,
+          "notGlobalSignedMinimumFiniteContainmentSelfOrContinuousProof": true
+        },
+        {
+          "pair": "actual complete skin vs AFN119_R_FINITE_ASPHERIC_CORNEA",
+          "state": "neutral",
+          "BVHCandidatePairs": 0,
+          "candidatePairsTestedUntilCap": 0,
+          "storedIntersectionOrTouchWitnesses": 0,
+          "cap": 8,
+          "witnesses": [],
+          "noRegionExcluded": true,
+          "notGlobalSignedMinimumFiniteContainmentSelfOrContinuousProof": true
+        },
+        {
+          "pair": "actual complete skin vs AFN119_R_FINITE_IRIS_AND_PUPIL_APERTURE",
+          "state": "neutral",
+          "BVHCandidatePairs": 0,
+          "candidatePairsTestedUntilCap": 0,
+          "storedIntersectionOrTouchWitnesses": 0,
+          "cap": 8,
+          "witnesses": [],
+          "noRegionExcluded": true,
+          "notGlobalSignedMinimumFiniteContainmentSelfOrContinuousProof": true
+        },
+        {
+          "pair": "actual complete skin vs AFN119_R_FINITE_SCLERA",
+          "state": "neutral",
+          "BVHCandidatePairs": 12,
+          "candidatePairsTestedUntilCap": 8,
+          "storedIntersectionOrTouchWitnesses": 8,
+          "cap": 8,
+          "witnesses": [
+            {
+              "skinTriangle": 154427,
+              "eyeTriangle": 2479,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.03426181324255862,
+                  -0.1215731343254447,
+                  1.4536752455135158
+                ],
+                [
+                  -0.034415126319628536,
+                  -0.12132516694649036,
+                  1.4535886603660948
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 154427,
+              "eyeTriangle": 2222,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.03426181324255862,
+                  -0.1215731343254447,
+                  1.4536752455135158
+                ],
+                [
+                  -0.03428094116228041,
+                  -0.12164225169424171,
+                  1.4537325678713766
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 154427,
+              "eyeTriangle": 2476,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.03469265787941106,
+                  -0.12111131000267708,
+                  1.453591941776754
+                ],
+                [
+                  -0.034415126319628536,
+                  -0.12132516694649036,
+                  1.4535886603660948
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 154427,
+              "eyeTriangle": 2220,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.03434586055496928,
+                  -0.12177043796355096,
+                  1.4538546754382076
+                ],
+                [
+                  -0.03430829447721498,
+                  -0.12174108723561797,
+                  1.4538145374889055
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 154427,
+              "eyeTriangle": 2223,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.03428094116228041,
+                  -0.12164225169424171,
+                  1.4537325678713766
+                ],
+                [
+                  -0.03430829447721498,
+                  -0.12174108723561797,
+                  1.4538145374889055
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 154426,
+              "eyeTriangle": 2477,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.0346810956744207,
+                  -0.12126021033546962,
+                  1.453681103336077
+                ],
+                [
+                  -0.034656798900772195,
+                  -0.1215731343254447,
+                  1.4538684831856807
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 154426,
+              "eyeTriangle": 2476,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.03469265787941106,
+                  -0.12111131000267708,
+                  1.453591941776754
+                ],
+                [
+                  -0.0346810956744207,
+                  -0.12126021033546962,
+                  1.453681103336077
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 154426,
+              "eyeTriangle": 2220,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.03434586055496928,
+                  -0.12177043796355096,
+                  1.4538546754382076
+                ],
+                [
+                  -0.034656798900772195,
+                  -0.1215731343254447,
+                  1.4538684831856807
+                ]
+              ]
+            }
+          ],
+          "noRegionExcluded": true,
+          "notGlobalSignedMinimumFiniteContainmentSelfOrContinuousProof": true
+        },
+        {
+          "pair": "actual complete skin vs AFN119_R_POSTERIOR_ABSORBER_APPROX",
+          "state": "neutral",
+          "BVHCandidatePairs": 0,
+          "candidatePairsTestedUntilCap": 0,
+          "storedIntersectionOrTouchWitnesses": 0,
+          "cap": 8,
+          "witnesses": [],
+          "noRegionExcluded": true,
+          "notGlobalSignedMinimumFiniteContainmentSelfOrContinuousProof": true
+        }
+      ],
+      "globalSignedMinimumM": null,
+      "actualFiniteLashSkinSelfContainmentClosedPoseContinuousContactNotProved": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 3,
+  "productionRoundsSinceLastWholeCharacterReview": 1,
+  "nextWholeReviewAfterFurtherProductionRounds": 2,
+  "femaleUserAcceptance": false,
+  "lastGoalTurnClassification": "progress",
+  "progressKind": "ACTUAL_COUPLED_SKIN_CONSTRUCTION_PARTIAL_NEUTRAL_CONTACT_EVIDENCE_NO_ADOPTION_FOUNDATION_CHANGE_TRIGGERED",
+  "previousTurnClassification": "progress: actual r119 exterior eye construction, source-datum correction, new contact witnesses and three-round whole review, no adoption",
+  "wholeCharacterStagnationReset": false,
+  "foundationChangeRequiredNextProduction": true,
+  "priorArtRollbackReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0105-a-native-lip-chart.blend",
+    "sha256": "ce9371558e3e4d26541484adf3448b96c4bef0a7c541f6f932c0d5bee7a3a43e",
+    "bytes": 628115371,
+    "status": "RETAIN_COMPLETE_NATIVE_HEAD_WOMAN_LOCAL_LIP_UV_GAIN_STATIC_SKIN_CONTACT_RUNTIME_UNACCEPTED",
+    "scope": "Same r104 B2 complete woman, with native external mouth-seam UV arcs registered to explicit upper/lower contours of the unchanged source skin atlas. Fragmented dark external lip patches visibly removed in complete head/body, profile, oblique and second-lighting comparisons. Actual geometry, optics, full groom/lashes, skin shader parameters and15 source textures exactly unchanged. Static displayed skin and inherited optical intersections remain; no complete operation, whole-character adoption, finite/continuous contact or runtime acceptance.",
+    "originalArtist": "Dan Ulrich",
+    "selectedHeadAssetMetadataLicense": "CC0",
+    "formalRuntimeOrUserFemaleAcceptance": false
+  },
+  "retainedControlContactReference": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0102-a-facet-aware-lining.blend",
+  "lastReviewedProductionWindow": [
+    "r117",
+    "r118",
+    "r119"
+  ],
+  "lastWholeCharacterReview": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0119-anatomical-eye-rebuild\\three-round-whole-character-review.json",
+  "stoppedMethodsInheritedFrom": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0119-anatomical-eye-rebuild\\continuation.json",
+  "allEarlierRetirementsRemainEffective": true,
+  "stoppedMethods": [
+    "R120 normal-labelled fixed support envelope on native ocular skin/closure coordinates reduces specific neutral candidates but does not establish whole-face gain; residual sclera contacts and10.944mm lash change remain. Do not extend support-gap/normal-label/thickness/projection-direction/smoothing variants as complete realism or motion fixes.",
+    "R120 neutral0 BVH candidates for particular actual surfaces is not global finite/self/continuous/lash/cloth proof; source normals are not measured anatomical lamella segmentation.",
+    "Three no-adoption rounds118/119/120 after actual r117 gain require a relevant visible foundation/construction change next. Research retention or better diagnostics does not reset this count."
+  ],
+  "liveJobHandles": [],
+  "nextAction": "Keep SAME r117 complete working woman D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0117-source\\aevrynd-female-next-r0117-a-native-fibre-brows.blend with adopted static continuous neck/brow gains. R120 coupled native ocular skin support is partial research only: actual neutral cornea/iris/ciliary surface queries have0 BVH candidates, but two sclera pairs still store4/8 capped witnesses, all finite lash/self/continuous/body/cloth/runtime gates open. No whole-face appearance gain or new complete operation; no-adopt lower3 now explicitly triggers a relevant FOUNDATION/CONSTRUCTION CHANGE in the NEXT actual production round. Do not refine r119 isolated optics or r120 normal-labelled support projection via gap/thickness/normal/radius/origin/material/weight/smoothing sweeps. Next inspect and directly author from a visually convincing complete3D adult female face/head/orbital or genuine root-to-tip groom foundation, with compatible rights and actual3D anatomy/artist shape BEFORE adaptation; this must change the failed appearance/anatomical premise, not only asset name, binding/API or more reports. Preserve promising same complete woman and r117 neck/brows, rebuild only the blocking face/orbital/groom construction and reattach affected eyes/mouth/lashes/scalp explicitly. No prior r88 rest-aperture/crease/partial-blink, r97 outward/shared-tuck or r118 quad-strip family. First complete preview normally30min, initial support10min, one candidate default. Current raw native coarse body is reference only; r120 actual high-resolution skin/own keys is the authored research source, not automatically live rebuild from coarse. Last actual whole review117/118/119 remains, cadence1 next after2. Full source C:/Users/USER/AevryndCharacterSources/r0120; separate physical C evidence/archive dirs with D canonical junctions conserve D disk. No source/history deletion or permission to sweep. Normal per-command LFS C:/Users/USER/.cache/aevrynd-character-lfs-r0120, exact complete history required. All quality/rights/full motion/contact/runtime/performance/user gates open; explicit female acceptance before male.",
+  "goal": "ACTIVE_NOT_COMPLETE"
+}
