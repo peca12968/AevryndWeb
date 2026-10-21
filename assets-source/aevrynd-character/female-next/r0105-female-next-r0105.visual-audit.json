@@ -1,0 +1,430 @@
+{
+  "revision": "female-next-r0105",
+  "reviewUTC": "2026-10-21T03:17:41.507384+00:00",
+  "decision": "RETAIN_LOCAL_NATIVE_LIP_CHART_GAIN_REJECT_COMPLETE_CHARACTER_ADOPTION",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "localRetainedAppearanceGain": true,
+  "functionalOperationGainOnCompleteWoman": false,
+  "wholeCharacterScore": null,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0105-a-native-lip-chart.blend",
+    "sha256": "ce9371558e3e4d26541484adf3448b96c4bef0a7c541f6f932c0d5bee7a3a43e",
+    "bytes": 628115371,
+    "status": "RETAIN_COMPLETE_NATIVE_HEAD_WOMAN_LOCAL_LIP_UV_GAIN_STATIC_SKIN_CONTACT_RUNTIME_UNACCEPTED",
+    "scope": "Same r104 B2 complete woman, with native external mouth-seam UV arcs registered to explicit upper/lower contours of the unchanged source skin atlas. Fragmented dark external lip patches visibly removed in complete head/body, profile, oblique and second-lighting comparisons. Actual geometry, optics, full groom/lashes, skin shader parameters and15 source textures exactly unchanged. Static displayed skin and inherited optical intersections remain; no complete operation, whole-character adoption, finite/continuous contact or runtime acceptance.",
+    "originalArtist": "Dan Ulrich",
+    "selectedHeadAssetMetadataLicense": "CC0",
+    "formalRuntimeOrUserFemaleAcceptance": false
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0105-a-native-lip-chart.blend",
+      "sha256": "ce9371558e3e4d26541484adf3448b96c4bef0a7c541f6f932c0d5bee7a3a43e",
+      "bytes": 628115371,
+      "status": "RETAIN_COMPLETE_NATIVE_HEAD_WOMAN_LOCAL_LIP_UV_GAIN_STATIC_SKIN_CONTACT_RUNTIME_UNACCEPTED",
+      "scope": "Same r104 B2 complete woman, with native external mouth-seam UV arcs registered to explicit upper/lower contours of the unchanged source skin atlas. Fragmented dark external lip patches visibly removed in complete head/body, profile, oblique and second-lighting comparisons. Actual geometry, optics, full groom/lashes, skin shader parameters and15 source textures exactly unchanged. Static displayed skin and inherited optical intersections remain; no complete operation, whole-character adoption, finite/continuous contact or runtime acceptance.",
+      "originalArtist": "Dan Ulrich",
+      "selectedHeadAssetMetadataLicense": "CC0",
+      "formalRuntimeOrUserFemaleAcceptance": false
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "LOCAL_VISIBLE_LIP_GAIN_RETAINED_NO_COMPLETE_ADOPTION",
+      "review": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0105-native-head-skin-chart\\manual-visual-review.json",
+      "headBodyAB": "r0105-head-and-body-ab.png",
+      "profileAB": "r0105-profile-ab.png",
+      "obliqueAndSecondLightingAB": "r0105-related-lighting-ab.png",
+      "wholeCharacterScore": null,
+      "remaining": "Artificial face/skin/hair, neck transition and static skin remain."
+    },
+    "function": {
+      "status": "SCOPED_UV_EDIT_REOPENED_NEW_SKIN_STILL_STATIC",
+      "evidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0105-native-head-skin-chart\\independent-saved-chart-readback.json",
+      "actualDisplayedSkinVertices": 457670,
+      "actualDisplayedSkinTriangles": 915336,
+      "completeOperationAccepted": false,
+      "skinAndGuideReconnectionPending": true
+    },
+    "contact": {
+      "status": "INHERITED_NEUTRAL_OPTICAL_FAILURE_UNCHANGED_GEOMETRY",
+      "evidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0105-native-head-skin-chart\\independent-saved-chart-readback.json",
+      "baselineEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0104-native-artist-ocular-foundation\\minimum-saved-readback.json",
+      "neutralCandidatePairs": {
+        "L": 284,
+        "R": 311
+      },
+      "storedIntersectionOrTouchWitnessesPerSide": 16,
+      "countsNotGlobalPenetrationTotals": true,
+      "globalSignedMinimumM": null,
+      "finiteSelfHairClothContinuousAccepted": false
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "performanceAndLOD": null
+    }
+  },
+  "authoring": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0104-b2-native-head-material-repair.blend",
+    "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0105-a-native-lip-chart.blend",
+    "authoringUTC": "2026-10-21T03:11:42.053528+00:00",
+    "construction": "Actual native external lip UV boundary split into its two original arcs; explicit anatomical registration to unchanged texture opening contours; smooth native-chart exterior registration. No nearest-point domain/vertex re-projection.",
+    "nativeBoundaryVertices": 76,
+    "nativeUpperArc": [
+      [
+        0.46494200825691223,
+        0.6453329920768738
+      ],
+      [
+        0.4649585783481598,
+        0.6453965306282043
+      ],
+      [
+        0.4649749994277954,
+        0.6454600095748901
+      ],
+      [
+        0.46533602476119995,
+        0.645473062992096
+      ],
+      [
+        0.4656969904899597,
+        0.6454859972000122
+      ],
+      [
+        0.46645551919937134,
+        0.6454325318336487
+      ],
+      [
+        0.4672139883041382,
+        0.6453790068626404
+      ],
+      [
+        0.46822357177734375,
+        0.6455931067466736
+      ],
+      [
+        0.4692330062389374,
+        0.6458070278167725
+      ],
+      [
+        0.470674067735672,
+        0.6463040709495544
+      ],
+      [
+        0.47211501002311707,
+        0.6468009948730469
+      ],
+      [
+        0.4741430878639221,
+        0.6476825475692749
+      ],
+      [
+        0.47617098689079285,
+        0.6485639810562134
+      ],
+      [
+        0.47857803106307983,
+        0.6494646072387695
+      ],
+      [
+        0.48098498582839966,
+        0.6503649950027466
+      ],
+      [
+        0.4833545684814453,
+        0.6509051322937012
+      ],
+      [
+        0.48572400212287903,
+        0.6514449715614319
+      ],
+      [
+        0.4881335496902466,
+        0.6516306400299072
+      ],
+      [
+        0.490543007850647,
+        0.6518160104751587
+      ],
+      [
+        0.4931620955467224,
+        0.6516600847244263
+      ],
+      [
+        0.4957810044288635,
+        0.6515039801597595
+      ],
+      [
+        0.49691808223724365,
+        0.651166558265686
+      ],
+      [
+        0.49805501103401184,
+        0.650829017162323
+      ],
+      [
+        0.5011370778083801,
+        0.651166558265686
+      ],
+      [
+        0.5042189955711365,
+        0.6515039801597595
+      ],
+      [
+        0.5068380236625671,
+        0.6516600847244263
+      ],
+      [
+        0.509456992149353,
+        0.6518160104751587
+      ],
+      [
+        0.511866569519043,
+        0.6516306400299072
+      ],
+      [
+        0.5142760276794434,
+        0.6514449715614319
+      ],
+      [
+        0.516645610332489,
+        0.6509051322937012
+      ],
+      [
+        0.5190150141716003,
+        0.6503649950027466
+      ],
+      [
+        0.5214220881462097,
+        0.6494646072387695
+      ],
+      [
+        0.5238289833068848,
+        0.6485639810562134
+      ],
+      [
+        0.5258570909500122,
+        0.6476825475692749
+      ],
+      [
+        0.5278850197792053,
+        0.6468009948730469
+      ],
+      [
+        0.5293260812759399,
+        0.6463040709495544
+      ],
+      [
+        0.530767023563385,
+        0.6458070278167725
+      ],
+      [
+        0.5317766070365906,
+        0.6455931067466736
+      ],
+      [
+        0.5327860116958618,
+        0.6453790068626404
+      ],
+      [
+        0.5335446000099182,
+        0.6454325318336487
+      ],
+      [
+        0.5343030095100403,
+        0.6454859972000122
+      ],
+      [
+        0.5346640944480896,
+        0.645473062992096
+      ],
+      [
+        0.5350250005722046,
+        0.6454600095748901
+      ],
+      [
+        0.5350415706634521,
+        0.6453965306282043
+      ],
+      [
+        0.5350580215454102,
+        0.6453329920768738
+      ]
+    ],
+    "nativeLowerArc": [
+      [
+        0.46494200825691223,
+        0.6453329920768738
+      ],
+      [
+        0.46528705954551697,
+        0.645266592502594
+      ],
+      [
+        0.46563199162483215,
+        0.6452000141143799
+      ],
+      [
+        0.46691450476646423,
+        0.6449795365333557
+      ],
+      [
+        0.4681969881057739,
+        0.6447589993476868
+      ],
+      [
+        0.47031405568122864,
+        0.6447781324386597
+      ],
+      [
+        0.4724310040473938,
+        0.6447970271110535
+      ],
+      [
+        0.4749290645122528,
+        0.6449806094169617
+      ],
+      [
+        0.47742700576782227,
+        0.6451640129089355
+      ],
+      [
+        0.47992756962776184,
+        0.6453465819358826
+      ],
+      [
+        0.48242801427841187,
+        0.6455289721488953
+      ],
+      [
+        0.4851865768432617,
+        0.6457920670509338
+      ],
+      [
+        0.48794499039649963,
+        0.6460549831390381
+      ],
+      [
+        0.49080806970596313,
+        0.6461695432662964
+      ],
+      [
+        0.4936710000038147,
+        0.6462839841842651
+      ],
+      [
+        0.49683552980422974,
+        0.6462075114250183
+      ],
+      [
+        0.5,
+        0.6461309790611267
+      ],
+      [
+        0.5031645894050598,
+        0.6462075114250183
+      ],
+      [
+        0.5063289999961853,
+        0.6462839841842651
+      ],
+      [
+        0.5091920495033264,
+        0.6461695432662964
+      ],
+      [
+        0.512054979801178,
+        0.6460549831390381
+      ],
+      [
+        0.5148135423660278,
+        0.6457920670509338
+      ],
+      [
+        0.5175719857215881,
+        0.6455289721488953
+      ],
+      [
+        0.5200725197792053,
+        0.6453465819358826
+      ],
+      [
+        0.5225729942321777,
+        0.6451640129089355
+      ],
+      [
+        0.5250710248947144,
+        0.6449806094169617
+      ],
+      [
+        0.5275689959526062,
+        0.6447970271110535
+      ],
+      [
+        0.5296860337257385,
+        0.6447781324386597
+      ],
+      [
+        0.5318030118942261,
+        0.6447589993476868
+      ],
+      [
+        0.5330855250358582,
+        0.6449795365333557
+      ],
+      [
+        0.5343679785728455,
+        0.6452000141143799
+      ],
+      [
+        0.5347130298614502,
+        0.645266592502594
+      ],
+      [
+        0.5350580215454102,
+        0.6453329920768738
+      ]
+    ],
+    "sourceTextureContourU": [
+      0.385,
+      0.41,
+      0.45,
+      0.5,
+      0.55,
+      0.59,
+      0.615
+    ],
+    "sourceTextureUpperContourV": [
+      0.366,
+      0.38,
+      0.385,
+      0.386,
+      0.385,
+      0.38,
+      0.366
+    ],
+    "sourceTextureLowerContourV": [
+      0.366,
+      0.347,
+      0.34,
+      0.339,
+      0.34,
+      0.347,
+      0.366
+    ],
+    "nativeToTextureChartScale": 3.280277729034424,
+    "changedLoops": 9345,
+    "maximumUVLoopChange": 0.05511448159813881,
+    "worldGeometryTopologyShadersTexturesMaterialsHairLashesLightsExposureUnchanged": true,
+    "newSkinStillStatic": true,
+    "notCapturedAnatomicalTexture": true,
+    "secondsBeforePreview": 35.002177000045776
+  },
+  "scope": "One native-chart UV construction, one full candidate. Earlier diagnostics are not model rounds, material candidates or adoption.",
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 25,
+  "productionRoundsSinceLastWholeCharacterReview": 1,
+  "nextWholeReviewAfterFurtherProductionRounds": 2,
+  "femaleUserAcceptance": false
+}

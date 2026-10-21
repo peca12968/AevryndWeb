@@ -1,0 +1,785 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0104-b2-native-head-material-repair.blend",
+  "sourceNotSaved": true,
+  "graph": [
+    {
+      "name": "Principled BSDF",
+      "type": "ShaderNodeBsdfPrincipled",
+      "inputs": {
+        "Base Color": [
+          {
+            "node": "Mix (Legacy).002",
+            "socket": "Color"
+          }
+        ],
+        "Metallic": 0.0,
+        "Roughness": [
+          {
+            "node": "Mix (Legacy).005",
+            "socket": "Color"
+          }
+        ],
+        "IOR": 1.399999976158142,
+        "Alpha": 1.0,
+        "Thin Wall": false,
+        "Normal": [
+          {
+            "node": "Bump",
+            "socket": "Normal"
+          }
+        ],
+        "Weight": 0.0,
+        "Diffuse Roughness": 0.0,
+        "Subsurface Weight": 0.11999999731779099,
+        "Subsurface Radius": [
+          1.0,
+          0.20000000298023224,
+          0.10000000149011612
+        ],
+        "Subsurface Scale": 0.0010000000474974513,
+        "Subsurface IOR": 1.399999976158142,
+        "Subsurface Anisotropy": 0.0,
+        "Specular IOR Level": 0.5,
+        "Specular Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Anisotropic": 0.0,
+        "Anisotropic Rotation": 0.0,
+        "Tangent": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Transmission Weight": 0.0,
+        "Coat Weight": 0.0,
+        "Coat Roughness": 0.029999999329447746,
+        "Coat IOR": 1.5,
+        "Coat Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Coat Normal": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Sheen Weight": 0.0,
+        "Sheen Roughness": 0.5,
+        "Sheen Tint": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Emission Strength": 0.0,
+        "Thin Film Thickness": 0.0,
+        "Thin Film IOR": 1.3300000429153442
+      }
+    },
+    {
+      "name": "Material Output",
+      "type": "ShaderNodeOutputMaterial",
+      "inputs": {
+        "Surface": [
+          {
+            "node": "Principled BSDF",
+            "socket": "BSDF"
+          }
+        ],
+        "Displacement": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Thickness": 0.0
+      }
+    },
+    {
+      "name": "UV Map",
+      "type": "ShaderNodeUVMap",
+      "inputs": {},
+      "uvMap": "VitruvianUV.UDIM"
+    },
+    {
+      "name": "Separate XYZ",
+      "type": "ShaderNodeSeparateXYZ",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Math",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "SuppliedSkinColour_1001",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      },
+      "image": "Light_Skin_Color.1001.exr",
+      "filepath": "//study-vitruvian-textures\\Light_Skin_Color.1001.exr"
+    },
+    {
+      "name": "SuppliedSkinColour_1002",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      },
+      "image": "Light_Skin_Color.1002.exr",
+      "filepath": "//study-vitruvian-textures\\Light_Skin_Color.1002.exr"
+    },
+    {
+      "name": "Math.001",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Mix (Legacy)",
+      "type": "ShaderNodeMixRGB",
+      "inputs": {
+        "Factor": [
+          {
+            "node": "Math.001",
+            "socket": "Value"
+          }
+        ],
+        "Color1": [
+          {
+            "node": "SuppliedSkinColour_1001",
+            "socket": "Color"
+          }
+        ],
+        "Color2": [
+          {
+            "node": "SuppliedSkinColour_1002",
+            "socket": "Color"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuppliedSkinColour_1003",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      },
+      "image": "Light_Skin_Color.1003.exr",
+      "filepath": "//study-vitruvian-textures\\Light_Skin_Color.1003.exr"
+    },
+    {
+      "name": "Math.002",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Mix (Legacy).001",
+      "type": "ShaderNodeMixRGB",
+      "inputs": {
+        "Factor": [
+          {
+            "node": "Math.002",
+            "socket": "Value"
+          }
+        ],
+        "Color1": [
+          {
+            "node": "Mix (Legacy)",
+            "socket": "Color"
+          }
+        ],
+        "Color2": [
+          {
+            "node": "SuppliedSkinColour_1003",
+            "socket": "Color"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuppliedSkinColour_1004",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      },
+      "image": "Light_Skin_Color.1004.exr",
+      "filepath": "//study-vitruvian-textures\\Light_Skin_Color.1004.exr"
+    },
+    {
+      "name": "Math.003",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Mix (Legacy).002",
+      "type": "ShaderNodeMixRGB",
+      "inputs": {
+        "Factor": [
+          {
+            "node": "Math.003",
+            "socket": "Value"
+          }
+        ],
+        "Color1": [
+          {
+            "node": "Mix (Legacy).001",
+            "socket": "Color"
+          }
+        ],
+        "Color2": [
+          {
+            "node": "SuppliedSkinColour_1004",
+            "socket": "Color"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Separate XYZ.001",
+      "type": "ShaderNodeSeparateXYZ",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Math.004",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "SuppliedSkinRoughness_1001",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      },
+      "image": "Skin_Roughness.1001.exr",
+      "filepath": "//study-vitruvian-textures\\Skin_Roughness.1001.exr"
+    },
+    {
+      "name": "SuppliedSkinRoughness_1002",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      },
+      "image": "Skin_Roughness.1002.exr",
+      "filepath": "//study-vitruvian-textures\\Skin_Roughness.1002.exr"
+    },
+    {
+      "name": "Math.005",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Mix (Legacy).003",
+      "type": "ShaderNodeMixRGB",
+      "inputs": {
+        "Factor": [
+          {
+            "node": "Math.005",
+            "socket": "Value"
+          }
+        ],
+        "Color1": [
+          {
+            "node": "SuppliedSkinRoughness_1001",
+            "socket": "Color"
+          }
+        ],
+        "Color2": [
+          {
+            "node": "SuppliedSkinRoughness_1002",
+            "socket": "Color"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuppliedSkinRoughness_1003",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      },
+      "image": "Skin_Roughness.1003.exr",
+      "filepath": "//study-vitruvian-textures\\Skin_Roughness.1003.exr"
+    },
+    {
+      "name": "Math.006",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Mix (Legacy).004",
+      "type": "ShaderNodeMixRGB",
+      "inputs": {
+        "Factor": [
+          {
+            "node": "Math.006",
+            "socket": "Value"
+          }
+        ],
+        "Color1": [
+          {
+            "node": "Mix (Legacy).003",
+            "socket": "Color"
+          }
+        ],
+        "Color2": [
+          {
+            "node": "SuppliedSkinRoughness_1003",
+            "socket": "Color"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuppliedSkinRoughness_1004",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      },
+      "image": "Skin_Roughness.1004.exr",
+      "filepath": "//study-vitruvian-textures\\Skin_Roughness.1004.exr"
+    },
+    {
+      "name": "Math.007",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Mix (Legacy).005",
+      "type": "ShaderNodeMixRGB",
+      "inputs": {
+        "Factor": [
+          {
+            "node": "Math.007",
+            "socket": "Value"
+          }
+        ],
+        "Color1": [
+          {
+            "node": "Mix (Legacy).004",
+            "socket": "Color"
+          }
+        ],
+        "Color2": [
+          {
+            "node": "SuppliedSkinRoughness_1004",
+            "socket": "Color"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Separate XYZ.002",
+      "type": "ShaderNodeSeparateXYZ",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Math.008",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "SuppliedSkinHeight_1001",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      },
+      "image": "Skin_Height.1001.exr",
+      "filepath": "//study-vitruvian-textures\\Skin_Height.1001.exr"
+    },
+    {
+      "name": "SuppliedSkinHeight_1002",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      },
+      "image": "Skin_Height.1002.exr",
+      "filepath": "//study-vitruvian-textures\\Skin_Height.1002.exr"
+    },
+    {
+      "name": "Math.009",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Mix (Legacy).006",
+      "type": "ShaderNodeMixRGB",
+      "inputs": {
+        "Factor": [
+          {
+            "node": "Math.009",
+            "socket": "Value"
+          }
+        ],
+        "Color1": [
+          {
+            "node": "SuppliedSkinHeight_1001",
+            "socket": "Color"
+          }
+        ],
+        "Color2": [
+          {
+            "node": "SuppliedSkinHeight_1002",
+            "socket": "Color"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuppliedSkinHeight_1003",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      },
+      "image": "Skin_Height.1003.exr",
+      "filepath": "//study-vitruvian-textures\\Skin_Height.1003.exr"
+    },
+    {
+      "name": "Math.010",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Mix (Legacy).007",
+      "type": "ShaderNodeMixRGB",
+      "inputs": {
+        "Factor": [
+          {
+            "node": "Math.010",
+            "socket": "Value"
+          }
+        ],
+        "Color1": [
+          {
+            "node": "Mix (Legacy).006",
+            "socket": "Color"
+          }
+        ],
+        "Color2": [
+          {
+            "node": "SuppliedSkinHeight_1003",
+            "socket": "Color"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SuppliedSkinHeight_1004",
+      "type": "ShaderNodeTexImage",
+      "inputs": {
+        "Vector": [
+          {
+            "node": "UV Map",
+            "socket": "UV"
+          }
+        ]
+      },
+      "image": "Skin_Height.1004.exr",
+      "filepath": "//study-vitruvian-textures\\Skin_Height.1004.exr"
+    },
+    {
+      "name": "Math.011",
+      "type": "ShaderNodeMath",
+      "inputs": {
+        "Value": 0.5
+      }
+    },
+    {
+      "name": "Mix (Legacy).008",
+      "type": "ShaderNodeMixRGB",
+      "inputs": {
+        "Factor": [
+          {
+            "node": "Math.011",
+            "socket": "Value"
+          }
+        ],
+        "Color1": [
+          {
+            "node": "Mix (Legacy).007",
+            "socket": "Color"
+          }
+        ],
+        "Color2": [
+          {
+            "node": "SuppliedSkinHeight_1004",
+            "socket": "Color"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bump",
+      "type": "ShaderNodeBump",
+      "inputs": {
+        "Strength": 0.20000000298023224,
+        "Distance": 0.0003000000142492354,
+        "Filter Width": 0.10000000149011612,
+        "Height": [
+          {
+            "node": "Mix (Legacy).008",
+            "socket": "Color"
+          }
+        ],
+        "Normal": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "diagnosticView": {
+    "file": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0105-native-head-skin-chart\\matched-diagnostic-basecolor-emission-face.png",
+    "view": "face",
+    "camera": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.017042960971593857,
+        -0.9998547434806824,
+        -0.8999999761581421
+      ],
+      [
+        0.0,
+        0.9998547434806824,
+        0.017042960971593857,
+        1.4368505477905273
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lensMM": 85.0,
+    "lights": {
+      "Aevrynd Key": {
+        "matrix": [
+          [
+            0.8360479474067688,
+            0.32393941283226013,
+            -0.44281724095344543,
+            -2.0999999046325684
+          ],
+          [
+            -0.5486564040184021,
+            0.49362191557884216,
+            -0.6747692823410034,
+            -3.200000047683716
+          ],
+          [
+            -7.895437903471247e-08,
+            0.8070939779281616,
+            0.590423047542572,
+            3.799999952316284
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 1150.0,
+        "color": [
+          1.0,
+          0.7300000190734863,
+          0.5799999833106995
+        ]
+      },
+      "Aevrynd Fill": {
+        "matrix": [
+          [
+            0.5943908095359802,
+            -0.4108905792236328,
+            0.6912803649902344,
+            2.299999952316284
+          ],
+          [
+            0.8041763305664062,
+            0.3037014901638031,
+            -0.5109460353851318,
+            -1.7000000476837158
+          ],
+          [
+            4.8274159780703485e-08,
+            0.8596128821372986,
+            0.5109458565711975,
+            2.700000047683716
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 780.0,
+        "color": [
+          0.5600000023841858,
+          0.699999988079071,
+          1.0
+        ]
+      },
+      "Aevrynd Rim": {
+        "matrix": [
+          [
+            -1.0,
+            -1.4825891980763117e-07,
+            7.300339177618298e-08,
+            0.0
+          ],
+          [
+            1.5099580252808664e-07,
+            -0.6401843428611755,
+            0.7682213187217712,
+            2.4000000953674316
+          ],
+          [
+            -6.716003042583907e-08,
+            0.7682213187217712,
+            0.6401843428611755,
+            3.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "energy": 900.0,
+        "color": [
+          0.699999988079071,
+          0.8199999928474426,
+          1.0
+        ]
+      }
+    },
+    "resolution": 640,
+    "samples": 16,
+    "seed": 61061,
+    "exposure": -0.5,
+    "look": "AgX - Medium High Contrast",
+    "hairSubdiv": 3,
+    "frame": 1,
+    "jawOpen": 0.0,
+    "capture": "Explicit view_layer.update before metadata, then same actual render."
+  },
+  "scope": "Actual original Base Color routed unchanged into emission; all other skin shading responses bypassed only for diagnosis. Not appearance adoption.",
+  "seconds": 39.066344261169434
+}

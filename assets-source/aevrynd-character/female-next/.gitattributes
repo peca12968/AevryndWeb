@@ -263,3 +263,8 @@ aevrynd-female-next-r0104-a-native-artist-ocular.blend filter=lfs diff=lfs merge
 aevrynd-female-next-r0104-b-native-head-volume-union.blend filter=lfs diff=lfs merge=lfs -text
 aevrynd-female-next-r0104-b2-native-head-material-repair.blend filter=lfs diff=lfs merge=lfs -text
 aevrynd-female-next-r0104-b3-native-head-skin-domain.blend filter=lfs diff=lfs merge=lfs -text
+# Exact r105 native lip chart and unchanged-geometry failure scope.
+r0105-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0105* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0105-a-native-lip-chart.blend filter=lfs diff=lfs merge=lfs -text
+r0105-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
