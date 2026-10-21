@@ -1,0 +1,12 @@
+00:13.297  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0126-source\aevrynd-female-next-r0126-b-source-section-neck.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0133-chart-rooted-groom.py", line 46, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0133-chart-rooted-groom.py", line 29, in main
+    err=float(np.linalg.norm(np.array(hit)[:2]-uv));assert err<1e-6,('UV outside target chart',uv,err);tb=bary(np.array(hit),uv3[TF[ti]]);srcFace.append(fi);srcBC.append(bc);srcDist.append(dist);rootFace.append(ti);rootBC.append(tb);uvErr.append(err);normalsS.append(bc@SN[SF[fi]]);normalsT.append(tb@TN[TF[ti]]);rootUV.append(uv)
+                                                           ^^^^^^^^
+AssertionError: ('UV outside target chart', array([0.93021218, 0.3660543 ]), 0.000876479779834734)
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

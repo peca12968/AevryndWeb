@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0133-source-root-roles.py", line 11, in <module>
+    ps=o.particle_systems['Eve'];ps.settings=ps.settings.copy();ps.settings.child_percent=ps.settings.rendered_child_count;bpy.context.scene.frame_set(1);bpy.context.view_layer.update();ev=o.evaluated_get(bpy.context.evaluated_depsgraph_get());ps=ev.particle_systems['Eve'];parents=np.array([p.parent for p in ps.child_particles],'i4');assert len(ps.particles)==1077 and len(parents)==26925;source=np.load(OLD/'native-Eve-source.npz');raw=np.load(OLD/'native-Eve-actual-children.npz')['nativeRawAPI'];T=source['triangles'];mi=np.repeat(source['sourceFaceMaterial'],source['sourceFaceCounts']-2);outer=np.flatnonzero(np.isin(mi,[4,5]));tree=BVHTree.FromPolygons(source['bodyNative'].tolist(),T[outer].tolist(),all_triangles=True);rows=[]
+                                                                                                                                                                                                                                                                                                    ^^^^^^^^
+AttributeError: 'ChildParticle' object has no attribute 'parent'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
