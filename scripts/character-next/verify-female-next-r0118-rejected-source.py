@@ -1,0 +1,13 @@
+"""Minimum independent recovery of visibly rejected source; no broad audit or contact pass."""
+from pathlib import Path
+import bpy,numpy as np,json,hashlib,importlib.util,time,os
+R=Path('D:/Download/Aevrynd');E=R/'Evidence/character-female-next/r0118-native-bob-construction';S=R/'engine/assets/characters/female-next/source';OUT=S/'r0118-source/aevrynd-female-next-r0118-a-native-quad-strip-bob.blend'
+sp=importlib.util.spec_from_file_location('r118verify',Path(__file__).with_name('build-female-next-r0118-native-bob-fibres.py'));a=importlib.util.module_from_spec(sp);sp.loader.exec_module(a)
+def main():
+ tick=time.time();digest=a.a.sha(OUT);bpy.ops.wm.open_mainfile(filepath=str(OUT));a.b.deliver(0);build=json.loads((E/'a-build-summary.json').read_text('utf-8'));assert a.protected()==build['beforeProtectedBodyKeysBrowsLashes'];ob=bpy.data.objects['AFN97_TUCKED_ARTIST_BOB_CHILDREN'];P=a.q.hair(ob);z=np.load(E/'native-bob-fibre-lineage.npz');error=float(np.linalg.norm(P-z['actualWorld'],axis=1).max());assert error<3e-6 and np.isfinite(P).all();counts=np.array([c.points_length for c in ob.data.curves],dtype='i4');r=a.q.arr(ob.data.attributes['radius'].data,'value',len(P));assert np.array_equal(counts,z['counts']) and np.array_equal(r,z['originalRadii']);textures=[]
+ for im in bpy.data.images:
+  if im.source=='FILE' and not im.packed_file and im.filepath and im.users>0:
+   p=Path(bpy.path.abspath(im.filepath));assert p.is_file(),str(p);textures.append({'name':im.name,'relative':im.filepath,'absolute':str(p),'sha256':a.a.sha(p),'bytes':p.stat().st_size})
+ physical=Path('C:/Users/USER/AevryndCharacterSources/r0118')/OUT.name;archive=R/'sites-engine-journey/assets-source/aevrynd-character/female-next/r0118-source'/OUT.name;assert os.path.samefile(OUT,physical) and os.path.samefile(OUT,archive);assert a.a.sha(OUT)==digest
+ a.save('minimum-saved-native-bob-readback.json',{'status':'INDEPENDENT_REOPEN_REJECTED_SOURCE_GEOMETRY_RECOVERABLE_ONLY','candidate':{'source':str(OUT),'sha256':digest,'bytes':OUT.stat().st_size,'physicalSource':str(physical),'archivePath':str(archive)},'curves':len(counts),'points':len(P),'savedActualGeometryMaximumWorldErrorM':error,'allOriginalRadiiAndCurvePointCountsExact':True,'allProtectedBodyKeysBrowsLashesExact':True,'allReferencedExternalTextures':textures,'contact':{'status':'UNACCEPTED_NOT_EXPANDED_AFTER_VISIBLE_CONSTRUCTION_FAILURE','globalSignedMinimumM':None,'actualFiniteRenderedSelfContinuousAndNaturalMotionNotProved':True},'noSecondLightingMotionOrBroadAuditAfterVisibleRejection':True,'sourceUnchangedDuringReadback':True,'seconds':time.time()-tick});print('R118_REJECTED_SOURCE_INDEPENDENTLY_RECOVERED',error,len(textures),time.time()-tick,flush=True)
+if __name__=='__main__':main()

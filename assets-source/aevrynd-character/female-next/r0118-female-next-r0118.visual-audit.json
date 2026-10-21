@@ -1,0 +1,63 @@
+{
+  "revision": "female-next-r0118",
+  "decision": "REJECT_NATIVE_QUAD_STRIP_FIBRE_CONVERSION_KEEP_R117",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0117-source\\aevrynd-female-next-r0117-a-native-fibre-brows.blend",
+    "sha256": "09da2122d16f80cbcff6f535dbfc35540df27131dc323450d2a4c41293446db9",
+    "bytes": 109202829,
+    "status": "ADOPT_SCOPED_COMPLETE_STATIC_NATIVE_BROW_APPEARANCE_GAIN",
+    "scope": "Adopt only static complete-character eyebrow shape/flow appearance in documented primary/oblique/second-light views, preserving r115 neck gain. Not a whole-character anatomy/function/finite-contact/runtime/rights/user acceptance.",
+    "renderSkin": "AFN113_COMPLETE_WOMAN_COHERENT_HEAD",
+    "rawEditableSource": "AFN115_EDITABLE_CONNECTED_NATIVE_ADULT_SOURCE",
+    "actualFaceControls": "AFN59_FACE_CONTROLS / blink_left, blink_right",
+    "appearanceAdoptionScope": "R115 static continuous neck/shoulder gain retained plus r117 static brow shape/hair-flow gain; remaining head/body deficits open.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0118-source\\aevrynd-female-next-r0118-a-native-quad-strip-bob.blend",
+      "sha256": "9e8473da13e727131179d451ab37939de2742aa5fe2f3e75680ca257d2f78706",
+      "bytes": 121638838,
+      "status": "REJECT_COMPLETE_NATIVE_QUAD_STRIP_FIBRE_APPEARANCE_NOT_WORKING_PROMOTION",
+      "scope": "One same complete r117 woman with all24800 original-width hair curves reconstructed from592 native bob01 opposite-edge quad strips. Original5203-vertex4237-quad source and29 UV charts mapped with exact native MHCLO adult morphology/world staging. Visible transverse blocks, gaps, hard sheet/helmet silhouette and excessive face occlusion fail complete appearance. Higher source strip endpoints are not biological roots; source-to-skin mounting distances median19.817mm/max43.569mm. No complete operation/contact/natural motion/runtime/user acceptance. Preserve as reproducible failed construction, not a promising adopted direction."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECTED_VISIBLE_COMPLETE_HAIR_REGRESSION",
+      "evidence": [
+        "r0118-head-and-body-ab.png",
+        "r0118-profile-and-back-ab.png",
+        "manual-visual-review.json"
+      ],
+      "secondLightingNotExpandedAfterFailure": true,
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "REJECTED_SOURCE_INDEPENDENTLY_REOPENED_GEOMETRY_RECOVERABLE_ONLY",
+      "evidence": "minimum-saved-native-bob-readback.json",
+      "completeOperationAccepted": false,
+      "naturalHairMotionAccepted": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_NOT_EXPANDED_AFTER_VISIBLE_CONSTRUCTION_FAILURE",
+      "globalSignedMinimumM": null,
+      "actualFiniteRenderedSelfContinuousAndNaturalMotionNotProved": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 1,
+  "productionRoundsSinceLastWholeCharacterReview": 2,
+  "nextWholeReviewAfterFurtherProductionRounds": 1,
+  "femaleUserAcceptance": false,
+  "reviewUTC": "2026-10-21T11:14:49.125487+00:00",
+  "actualCompleteModelCandidates": 1,
+  "wholeCharacterScore": null
+}

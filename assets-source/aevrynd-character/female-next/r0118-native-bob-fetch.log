@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\fetch-female-next-r0118-native-bob.py", line 12, in <module>
+    assert response.status==206;contentRange=response.headers['Content-Range'];assert contentRange==f'bytes {start}-{end}/280737770';data=response.read();assert len(data)==end-start+1;headers=dict(response.headers)
+                                                                                                                                          ^^^^^^^^^^^^^^^
+  File "C:\Users\USER\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\http\client.py", line 510, in read
+    s = self._safe_read(self.length)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\http\client.py", line 667, in _safe_read
+    data = self.fp.read(cursize)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out

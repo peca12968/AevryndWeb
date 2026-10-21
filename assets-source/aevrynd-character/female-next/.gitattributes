@@ -334,3 +334,8 @@ r0117-source/*.blend filter=lfs diff=lfs merge=lfs -text
 r0117-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 source-inputs/r0117-native-brows/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 makehuman-native-brow-textures/* -text
+r0118-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0118* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0118-source/*.blend filter=lfs diff=lfs merge=lfs -text
+r0118-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+source-inputs/r0118-native-bob-geometry/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
