@@ -268,3 +268,8 @@ r0105-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 aevrynd-female-next-r0105* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 aevrynd-female-next-r0105-a-native-lip-chart.blend filter=lfs diff=lfs merge=lfs -text
 r0105-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+# Exact r106 rejected native lid/control construction and full failure scope.
+r0106-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0106* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0106-a-native-lid-operation.blend filter=lfs diff=lfs merge=lfs -text
+r0106-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol

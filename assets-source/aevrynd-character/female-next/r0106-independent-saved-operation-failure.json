@@ -1,0 +1,544 @@
+{
+  "status": "REOPENED_REJECTED_OPERATION_KEY_INPUT_SUPPRESSED_AND_RAW_LID_SHAPE_FAILS",
+  "baseline": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0105-a-native-lip-chart.blend",
+    "sourceBytes": 628115371,
+    "sourceSha256": "ce9371558e3e4d26541484adf3448b96c4bef0a7c541f6f932c0d5bee7a3a43e",
+    "vertices": 457670,
+    "triangles": 915336,
+    "worldVertexSha256": "335aaea8f89f44a0bb56f9d5e2e29983bf792a52489ea4e1a57762ff2c921bde",
+    "triangleSha256": "023d1c2884d33d1ad77f6fdab893f1737c7bc2f5705eadce9a90d453a7bc5887",
+    "materialIndexSha256": "db69e33f0a23caad45a6ec441645d614dcabb9f7e8af702bede9b92481a76630",
+    "canonicalUVSha256": "38f24fb6ae602be274f6cca74734816a73b955db1d6e1dc84e41222e9575d89b",
+    "allUVFinite": true,
+    "skinModifiers": [],
+    "skinMaterialGraphSha256": "669259b4443ff5daf497ebb19ae3332a5e39fee0ac78157d7663a9369cfbfed0",
+    "groomWorldSha256": "117002d41cdb4506c44516a9e328f5271dd937842dde9a71bfaec2834374557a",
+    "lashWorldSha256": "e4dd84596f74e937cd5558fbe4f96689bea999bf5a6e7a8bdce04bc64927cc27",
+    "optics": {
+      "AFN104_NATIVE_L_SCLERA": {
+        "vertices": "4e221b3b30cff3d4f6e31846ea4c552a1dbe3daadbd650dd59a4dcca1d1c9b0b",
+        "triangles": "24ce00ab51256adc2b373149e57d991a819a2700264c99090a237348b157bb14"
+      },
+      "AFN104_NATIVE_R_SCLERA": {
+        "vertices": "b8ec9909d1f0a93f0f0049e862a9a84c813f5b5d24ee85f7f7c939b22f06e376",
+        "triangles": "24ce00ab51256adc2b373149e57d991a819a2700264c99090a237348b157bb14"
+      },
+      "AFN104_NATIVE_L_IRIS": {
+        "vertices": "f5f52abf62d9bf68a978479cd3186f55b797923f616aabe61492654cfae64d4b",
+        "triangles": "4355a1284dc45c7ff96648286fe705538537f24d59278d80e5a19c4da2cb2755"
+      },
+      "AFN104_NATIVE_R_IRIS": {
+        "vertices": "87fff6208c1d730cdf4761755e785a889c5c8f0bd794b51b20315e9975c4b647",
+        "triangles": "4355a1284dc45c7ff96648286fe705538537f24d59278d80e5a19c4da2cb2755"
+      }
+    },
+    "externalTextures": [
+      {
+        "name": "Iris_Color.1007.exr",
+        "relative": "//study-vitruvian-textures\\Iris_Color.1007.exr",
+        "sha256": "62efc0ed85878cb0831db9b492975c384f19052bd7ab52f945777ac3e1d8b002",
+        "bytes": 3300761
+      },
+      {
+        "name": "Light_Skin_Color.1001.exr",
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1001.exr",
+        "sha256": "362373cf6afa6c88c44bc480f328afe94de11ca88463a6b40a5fc8032f3f6fa2",
+        "bytes": 10874477
+      },
+      {
+        "name": "Light_Skin_Color.1002.exr",
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1002.exr",
+        "sha256": "0c2dfa2f2edf9110c92ff9ad7879eec0b0b78ee7855d01f1d9525f3cd10e5a9b",
+        "bytes": 8424344
+      },
+      {
+        "name": "Light_Skin_Color.1003.exr",
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1003.exr",
+        "sha256": "cd540d1415af4dd2e5ce8f3086f921b8c610597b99a3a369a1ee67d869b629f5",
+        "bytes": 9375204
+      },
+      {
+        "name": "Light_Skin_Color.1004.exr",
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1004.exr",
+        "sha256": "d702bb83c27d70516aea23ea62a5218ef495b422783c9048bd193f0ca0118905",
+        "bytes": 10049078
+      },
+      {
+        "name": "Mouth_Color.1008.exr",
+        "relative": "//study-vitruvian-textures\\Mouth_Color.1008.exr",
+        "sha256": "47c988fd5799f4c54e3a916cda14bbb5245cf5a171d47132e0e0e9e9f2b05c11",
+        "bytes": 2825877
+      },
+      {
+        "name": "Sclera_Color.1005.exr",
+        "relative": "//study-vitruvian-textures\\Sclera_Color.1005.exr",
+        "sha256": "e81a1554b08e096ad76bfb2909a2d09747ff90df1fe1b993b768ec41713dd672",
+        "bytes": 2859426
+      },
+      {
+        "name": "Skin_Height.1001.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Height.1001.exr",
+        "sha256": "62d11cdff413599f3cf4c4c16bfd6a467def20b8f21ad7e26a68ea9601475a87",
+        "bytes": 1218091
+      },
+      {
+        "name": "Skin_Height.1002.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Height.1002.exr",
+        "sha256": "5dd6a565ab791074905ae3e650ec89f1c77a274d502749ba68a5dc884a651844",
+        "bytes": 864971
+      },
+      {
+        "name": "Skin_Height.1003.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Height.1003.exr",
+        "sha256": "e3edd7d2a7be4a2d1b2ec12a1f08534b770d7644c2d0181d7e4c2bda06b6c29a",
+        "bytes": 1064998
+      },
+      {
+        "name": "Skin_Height.1004.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Height.1004.exr",
+        "sha256": "2e3bb73055367c3bb72be9ab95c3278b92967219d895087cd8dd44714011567b",
+        "bytes": 981725
+      },
+      {
+        "name": "Skin_Roughness.1001.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1001.exr",
+        "sha256": "fa97dd24bdf68be9240982d3921bef6ae096c476589fc58eb07ab4039ff1addf",
+        "bytes": 1354884
+      },
+      {
+        "name": "Skin_Roughness.1002.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1002.exr",
+        "sha256": "906c3e31ad66044370e1c62bda99eb770ead2c934845be393a18823a55cbd3eb",
+        "bytes": 1066519
+      },
+      {
+        "name": "Skin_Roughness.1003.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1003.exr",
+        "sha256": "c5772aee25e4558f7ebb4f2f8d62f51bb8dfce511e89fb4163f85bd6c064f11f",
+        "bytes": 1137254
+      },
+      {
+        "name": "Skin_Roughness.1004.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1004.exr",
+        "sha256": "4d14cb45facbd63f13ee91131dbe5656c3fe0d6eb8fec93aa8f23e7f00cff10d",
+        "bytes": 1169541
+      }
+    ]
+  },
+  "candidate": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0106-a-native-lid-operation.blend",
+    "sourceBytes": 770986801,
+    "sourceSha256": "9795d14b849b44e3c9a7132bcdf14679de0f475e6314d6a91d6e89f1ed65fe34",
+    "vertices": 457670,
+    "triangles": 915336,
+    "worldVertexSha256": "335aaea8f89f44a0bb56f9d5e2e29983bf792a52489ea4e1a57762ff2c921bde",
+    "triangleSha256": "023d1c2884d33d1ad77f6fdab893f1737c7bc2f5705eadce9a90d453a7bc5887",
+    "materialIndexSha256": "db69e33f0a23caad45a6ec441645d614dcabb9f7e8af702bede9b92481a76630",
+    "canonicalUVSha256": "38f24fb6ae602be274f6cca74734816a73b955db1d6e1dc84e41222e9575d89b",
+    "allUVFinite": true,
+    "skinModifiers": [
+      [
+        "AFN106_COMPLETE_SKIN_ORIGINAL_BODY_CONTROL",
+        "SURFACE_DEFORM"
+      ],
+      [
+        "AFN106_NEUTRAL_BIND_CORRECTION",
+        "NODES"
+      ]
+    ],
+    "skinMaterialGraphSha256": "669259b4443ff5daf497ebb19ae3332a5e39fee0ac78157d7663a9369cfbfed0",
+    "groomWorldSha256": "117002d41cdb4506c44516a9e328f5271dd937842dde9a71bfaec2834374557a",
+    "lashWorldSha256": "941f8b511b36a646b62fe892187027ee2d08b9c417bd888aba5f8d776141a8b2",
+    "optics": {
+      "AFN104_NATIVE_L_SCLERA": {
+        "vertices": "4e221b3b30cff3d4f6e31846ea4c552a1dbe3daadbd650dd59a4dcca1d1c9b0b",
+        "triangles": "24ce00ab51256adc2b373149e57d991a819a2700264c99090a237348b157bb14"
+      },
+      "AFN104_NATIVE_R_SCLERA": {
+        "vertices": "b8ec9909d1f0a93f0f0049e862a9a84c813f5b5d24ee85f7f7c939b22f06e376",
+        "triangles": "24ce00ab51256adc2b373149e57d991a819a2700264c99090a237348b157bb14"
+      },
+      "AFN104_NATIVE_L_IRIS": {
+        "vertices": "f5f52abf62d9bf68a978479cd3186f55b797923f616aabe61492654cfae64d4b",
+        "triangles": "4355a1284dc45c7ff96648286fe705538537f24d59278d80e5a19c4da2cb2755"
+      },
+      "AFN104_NATIVE_R_IRIS": {
+        "vertices": "87fff6208c1d730cdf4761755e785a889c5c8f0bd794b51b20315e9975c4b647",
+        "triangles": "4355a1284dc45c7ff96648286fe705538537f24d59278d80e5a19c4da2cb2755"
+      }
+    },
+    "externalTextures": [
+      {
+        "name": "Iris_Color.1007.exr",
+        "relative": "//study-vitruvian-textures\\Iris_Color.1007.exr",
+        "sha256": "62efc0ed85878cb0831db9b492975c384f19052bd7ab52f945777ac3e1d8b002",
+        "bytes": 3300761
+      },
+      {
+        "name": "Light_Skin_Color.1001.exr",
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1001.exr",
+        "sha256": "362373cf6afa6c88c44bc480f328afe94de11ca88463a6b40a5fc8032f3f6fa2",
+        "bytes": 10874477
+      },
+      {
+        "name": "Light_Skin_Color.1002.exr",
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1002.exr",
+        "sha256": "0c2dfa2f2edf9110c92ff9ad7879eec0b0b78ee7855d01f1d9525f3cd10e5a9b",
+        "bytes": 8424344
+      },
+      {
+        "name": "Light_Skin_Color.1003.exr",
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1003.exr",
+        "sha256": "cd540d1415af4dd2e5ce8f3086f921b8c610597b99a3a369a1ee67d869b629f5",
+        "bytes": 9375204
+      },
+      {
+        "name": "Light_Skin_Color.1004.exr",
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1004.exr",
+        "sha256": "d702bb83c27d70516aea23ea62a5218ef495b422783c9048bd193f0ca0118905",
+        "bytes": 10049078
+      },
+      {
+        "name": "Mouth_Color.1008.exr",
+        "relative": "//study-vitruvian-textures\\Mouth_Color.1008.exr",
+        "sha256": "47c988fd5799f4c54e3a916cda14bbb5245cf5a171d47132e0e0e9e9f2b05c11",
+        "bytes": 2825877
+      },
+      {
+        "name": "Sclera_Color.1005.exr",
+        "relative": "//study-vitruvian-textures\\Sclera_Color.1005.exr",
+        "sha256": "e81a1554b08e096ad76bfb2909a2d09747ff90df1fe1b993b768ec41713dd672",
+        "bytes": 2859426
+      },
+      {
+        "name": "Skin_Height.1001.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Height.1001.exr",
+        "sha256": "62d11cdff413599f3cf4c4c16bfd6a467def20b8f21ad7e26a68ea9601475a87",
+        "bytes": 1218091
+      },
+      {
+        "name": "Skin_Height.1002.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Height.1002.exr",
+        "sha256": "5dd6a565ab791074905ae3e650ec89f1c77a274d502749ba68a5dc884a651844",
+        "bytes": 864971
+      },
+      {
+        "name": "Skin_Height.1003.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Height.1003.exr",
+        "sha256": "e3edd7d2a7be4a2d1b2ec12a1f08534b770d7644c2d0181d7e4c2bda06b6c29a",
+        "bytes": 1064998
+      },
+      {
+        "name": "Skin_Height.1004.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Height.1004.exr",
+        "sha256": "2e3bb73055367c3bb72be9ab95c3278b92967219d895087cd8dd44714011567b",
+        "bytes": 981725
+      },
+      {
+        "name": "Skin_Roughness.1001.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1001.exr",
+        "sha256": "fa97dd24bdf68be9240982d3921bef6ae096c476589fc58eb07ab4039ff1addf",
+        "bytes": 1354884
+      },
+      {
+        "name": "Skin_Roughness.1002.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1002.exr",
+        "sha256": "906c3e31ad66044370e1c62bda99eb770ead2c934845be393a18823a55cbd3eb",
+        "bytes": 1066519
+      },
+      {
+        "name": "Skin_Roughness.1003.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1003.exr",
+        "sha256": "c5772aee25e4558f7ebb4f2f8d62f51bb8dfce511e89fb4163f85bd6c064f11f",
+        "bytes": 1137254
+      },
+      {
+        "name": "Skin_Roughness.1004.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1004.exr",
+        "sha256": "4d14cb45facbd63f13ee91131dbe5656c3fe0d6eb8fec93aa8f23e7f00cff10d",
+        "bytes": 1169541
+      }
+    ]
+  },
+  "exactNeutralUnchangedFields": [
+    "vertices",
+    "triangles",
+    "worldVertexSha256",
+    "triangleSha256",
+    "materialIndexSha256",
+    "canonicalUVSha256",
+    "skinMaterialGraphSha256",
+    "groomWorldSha256",
+    "optics",
+    "externalTextures"
+  ],
+  "sourceNativeKeysActuallyContainDeltas": {
+    "L": {
+      "movedSourceVertices": 474,
+      "maximumLocalDeltaM": 0.010009251534938812
+    },
+    "R": {
+      "movedSourceVertices": 484,
+      "maximumLocalDeltaM": 0.009999333880841732
+    }
+  },
+  "actualBlinkReadback": [
+    {
+      "assignedBlink": 0,
+      "evaluatedKeys": [
+        0.0,
+        0.0
+      ],
+      "actualDisplayedMaximumWorldMoveM": 0.0,
+      "actualTopologyRetained": true
+    },
+    {
+      "assignedBlink": 0.5,
+      "evaluatedKeys": [
+        0.4999999403953552,
+        0.4999999403953552
+      ],
+      "actualDisplayedMaximumWorldMoveM": 0.0,
+      "actualTopologyRetained": true
+    },
+    {
+      "assignedBlink": 1,
+      "evaluatedKeys": [
+        1.0,
+        1.0
+      ],
+      "actualDisplayedMaximumWorldMoveM": 0.0,
+      "actualTopologyRetained": true
+    },
+    {
+      "assignedBlink": 0,
+      "evaluatedKeys": [
+        0.0,
+        0.0
+      ],
+      "actualDisplayedMaximumWorldMoveM": 0.0,
+      "actualTopologyRetained": true
+    }
+  ],
+  "lashActualMarginFrameOrientation": {
+    "allCurves": 412,
+    "consistentWithSkinWinding": 217,
+    "reversedRelativeToSkinWinding": 195,
+    "notActualSkinTriangle": 0
+  },
+  "reversedLashCurveIDs": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    19,
+    20,
+    23,
+    25,
+    26,
+    27,
+    33,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    56,
+    60,
+    61,
+    64,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    86,
+    87,
+    88,
+    89,
+    90,
+    92,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    117,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    156,
+    158,
+    159,
+    161,
+    162,
+    163,
+    164,
+    171,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    184,
+    185,
+    194,
+    195,
+    196,
+    198,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    217,
+    224,
+    226,
+    227,
+    228,
+    230,
+    234,
+    235,
+    236,
+    237,
+    238,
+    240,
+    241,
+    242,
+    247,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    268,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    297,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    309,
+    322,
+    324,
+    325,
+    326,
+    331,
+    332,
+    334,
+    335,
+    336,
+    351,
+    352,
+    353,
+    354,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    363,
+    366,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    378,
+    389,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411
+  ],
+  "frameOrientationNotQualifiedDespiteActualMarginEdges": true,
+  "rawPoseEvidence": "modifier-order-causal-test.json",
+  "rawPoseVisibleOutcome": "Unsaved bound-modifier-off test moves actual skin, but closed lids form severe segmented/folded pale blocks; art rejected. No corrective weight/radius/geodesic sweep.",
+  "contact": {
+    "status": "UNACCEPTED_INHERITED_NEUTRAL_OPTICAL_FAILURE_AND_UNQUALIFIED_LASH_FRAMES",
+    "baselineEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0104-native-artist-ocular-foundation\\minimum-saved-readback.json",
+    "neutralOpticalGeometryByteIdentical": true,
+    "priorCandidatePairsL": 284,
+    "priorCandidatePairsR": 311,
+    "priorStoredIntersectionOrTouchWitnessesPerSide": 16,
+    "countsNotGlobalTotals": true,
+    "globalSignedMinimumM": null,
+    "finiteSelfHairClothContinuousCertified": false
+  },
+  "completeCapabilityOrAppearanceAccepted": false,
+  "runtimeAccepted": false,
+  "seconds": 86.86118698120117
+}

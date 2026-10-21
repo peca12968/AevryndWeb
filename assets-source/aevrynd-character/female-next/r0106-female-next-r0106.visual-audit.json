@@ -1,0 +1,77 @@
+{
+  "revision": "female-next-r0106",
+  "reviewUTC": "2026-10-21T03:39:08.556714+00:00",
+  "decision": "REJECT_NATIVE_LID_OPERATION_AND_RAW_CLOSED_POSE_RETAIN_R105",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "wholeCharacterScore": null,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0105-a-native-lip-chart.blend",
+    "sha256": "ce9371558e3e4d26541484adf3448b96c4bef0a7c541f6f932c0d5bee7a3a43e",
+    "bytes": 628115371,
+    "status": "RETAIN_COMPLETE_NATIVE_HEAD_WOMAN_LOCAL_LIP_UV_GAIN_STATIC_SKIN_CONTACT_RUNTIME_UNACCEPTED",
+    "scope": "Same r104 B2 complete woman, with native external mouth-seam UV arcs registered to explicit upper/lower contours of the unchanged source skin atlas. Fragmented dark external lip patches visibly removed in complete head/body, profile, oblique and second-lighting comparisons. Actual geometry, optics, full groom/lashes, skin shader parameters and15 source textures exactly unchanged. Static displayed skin and inherited optical intersections remain; no complete operation, whole-character adoption, finite/continuous contact or runtime acceptance.",
+    "originalArtist": "Dan Ulrich",
+    "selectedHeadAssetMetadataLicense": "CC0",
+    "formalRuntimeOrUserFemaleAcceptance": false
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0106-a-native-lid-operation.blend",
+      "sha256": "9795d14b849b44e3c9a7132bcdf14679de0f475e6314d6a91d6e89f1ed65fe34",
+      "bytes": 770986801,
+      "status": "REJECT_NATIVE_LID_KEY_PATH_SUPPRESSED_RAW_CLOSED_SHAPE_AND_LASH_FRAME_FAILURE",
+      "scope": "Same complete r105 woman with new original native eye-margin articulation keys, fresh complete body SurfaceDeform binding, explicit neutral rest correction, all412 lashes attached to actual native external margin edges. Neutral head/body/UV/shader/full groom exactly retained. Actual delivered blink keys move the saved displayed skin0m; unsaved modifier-off native closed pose folds severely.195/412 lash frames have reversed winding. No complete operation/appearance/contact/runtime adoption."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "NO_GAIN_NEUTRAL_ART_RETAINED_RAW_CLOSED_ART_REJECTED",
+      "evidence": [
+        "r0106-head-and-body-ab.png",
+        "r0106-actual-blink-failure.png",
+        "r0106-raw-pose-diagnostic-rejected.png",
+        "manual-visual-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "INDEPENDENT_REOPEN_PASS_ACTUAL_BLINK_OPERATION_FAIL",
+      "evidence": "independent-saved-operation-failure.json",
+      "actualDisplayedSkinBlinkMoveM": 0.0,
+      "rawModifierOffNativeSkinMaximumMoveM": 0.008958493667904117,
+      "bodyControlFreshBindingIsNotUsableCompleteOperationProof": true,
+      "completeOperationAccepted": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_INHERITED_NEUTRAL_OPTICAL_FAILURE_AND_UNQUALIFIED_LASH_FRAMES",
+      "baselineEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0104-native-artist-ocular-foundation\\minimum-saved-readback.json",
+      "neutralOpticalGeometryByteIdentical": true,
+      "priorCandidatePairsL": 284,
+      "priorCandidatePairsR": 311,
+      "priorStoredIntersectionOrTouchWitnessesPerSide": 16,
+      "countsNotGlobalTotals": true,
+      "globalSignedMinimumM": null,
+      "finiteSelfHairClothContinuousCertified": false,
+      "lashFrames": {
+        "allCurves": 412,
+        "consistentWithSkinWinding": 217,
+        "reversedRelativeToSkinWinding": 195,
+        "notActualSkinTriangle": 0
+      },
+      "actualMarginEdgeBindingNotFrameOrFiniteContactProof": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "actualArtConstructions": 1,
+  "integrationPathAttempts": 1,
+  "unsavedCausalTestNotCandidateOrAdoption": true,
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 26,
+  "productionRoundsSinceLastWholeCharacterReview": 2,
+  "nextWholeReviewAfterFurtherProductionRounds": 1,
+  "femaleUserAcceptance": false
+}
