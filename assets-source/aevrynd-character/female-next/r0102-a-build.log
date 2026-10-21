@@ -1,0 +1,12 @@
+00:01.844  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0101-b2-lid-uv-and-attachment.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0102-facet-lining.py", line 119, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0102-facet-lining.py", line 34, in main
+    assert max(v for row in eyeMoves.values() for v in row.values())<4e-7,'Optical mesh changes with blink: sampled reference must be rebuilt per pose'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Optical mesh changes with blink: sampled reference must be rebuilt per pose
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

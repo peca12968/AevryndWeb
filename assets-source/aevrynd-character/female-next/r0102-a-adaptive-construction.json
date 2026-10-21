@@ -1,0 +1,92 @@
+{
+  "sourceFieldReadbackMaximumErrorM": 3.2308586600575104e-07,
+  "opticalMeshBlinkWorldChangesM": {
+    "0.0": {
+      "L": 0.0,
+      "R": 0.0
+    },
+    "0.25": {
+      "L": 0.0006172285532904147,
+      "R": 0.0006172578829646045
+    },
+    "0.5": {
+      "L": 0.0012344955774248653,
+      "R": 0.0012344705143949876
+    },
+    "0.75": {
+      "L": 0.0018517055115288093,
+      "R": 0.0018517251695921702
+    },
+    "1.0": {
+      "L": 0.002468913270488129,
+      "R": 0.002468917532723516
+    }
+  },
+  "passes": [
+    {
+      "depth": 0,
+      "examinedLiningFaces": 20800,
+      "maximumSampledInterpolationDefectM": 0.00015881026559627623,
+      "fixedAuthoredInnerWallClearanceM": 0.0001,
+      "defectTargetIsOneQuarterOfActualClearance": true,
+      "markedFaces": 1250,
+      "poseSamples": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "globalCurvatureOrContinuousContactBound": false
+    },
+    {
+      "depth": 1,
+      "examinedLiningFaces": 24954,
+      "maximumSampledInterpolationDefectM": 7.40419116265339e-05,
+      "fixedAuthoredInnerWallClearanceM": 0.0001,
+      "defectTargetIsOneQuarterOfActualClearance": true,
+      "markedFaces": 1109,
+      "poseSamples": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "globalCurvatureOrContinuousContactBound": false
+    },
+    {
+      "depth": 2,
+      "examinedLiningFaces": 28830,
+      "maximumSampledInterpolationDefectM": 4.6699404666151914e-05,
+      "fixedAuthoredInnerWallClearanceM": 0.0001,
+      "defectTargetIsOneQuarterOfActualClearance": true,
+      "markedFaces": 488,
+      "poseSamples": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "globalCurvatureOrContinuousContactBound": false
+    },
+    {
+      "depth": 3,
+      "examinedLiningFaces": 30916,
+      "maximumSampledInterpolationDefectM": 2.818890020995794e-05,
+      "fixedAuthoredInnerWallClearanceM": 0.0001,
+      "defectTargetIsOneQuarterOfActualClearance": true,
+      "markedFaces": 31,
+      "poseSamples": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "globalCurvatureOrContinuousContactBound": false
+    }
+  ],
+  "scope": "Geometry-derived local source-surface reconstruction, not a parameter sweep or continuous/global collision certificate."
+}

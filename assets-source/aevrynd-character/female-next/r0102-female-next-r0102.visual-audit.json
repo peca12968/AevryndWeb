@@ -1,0 +1,182 @@
+{
+  "schema": 1,
+  "revision": "female-next-r0102",
+  "reviewUTC": "2026-10-21T01:32:29.526903+00:00",
+  "decision": "RETAIN_SAME_COMPLETE_WOMAN_SAMPLED_FACET_CONSTRUCTION_ONLY",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovementAdopted": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "newFullyQualifiedCompleteCapability": false,
+  "wholeCharacterStagnationReset": false,
+  "wholeCharacterScore": null,
+  "structurallyDifferentConstructions": 1,
+  "completeSavedSources": 1,
+  "source": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0102-a-facet-aware-lining.blend",
+    "sha256": "e34352dfd075639969de3496cd8f08c097c294f3172b80bdb54b45cf340b666c",
+    "bytes": 574166208,
+    "status": "RETAIN_SAME_COMPLETE_WOMAN_SAMPLED_FACET_CONSTRUCTION_ONLY",
+    "scope": "Same full B2 woman, geometry-derived adaptive inner-lid source controls. Original actual points, UV, neutral groom/lashes, native body/optics/rig and15 textures retained. Sampled interpolation criterion still has31 residual faces; no whole appearance, complete operation, finite/self/continuous contact or runtime acceptance.",
+    "formalRuntimeOrUserFemaleAcceptance": false
+  },
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0102-a-facet-aware-lining.blend",
+    "sha256": "e34352dfd075639969de3496cd8f08c097c294f3172b80bdb54b45cf340b666c",
+    "bytes": 574166208,
+    "status": "RETAIN_SAME_COMPLETE_WOMAN_SAMPLED_FACET_CONSTRUCTION_ONLY",
+    "scope": "Same full B2 woman, geometry-derived adaptive inner-lid source controls. Original actual points, UV, neutral groom/lashes, native body/optics/rig and15 textures retained. Sampled interpolation criterion still has31 residual faces; no whole appearance, complete operation, finite/self/continuous contact or runtime acceptance.",
+    "formalRuntimeOrUserFemaleAcceptance": false
+  },
+  "gates": {
+    "appearance": {
+      "status": "NO_COMPLETE_APPEARANCE_IMPROVEMENT_ADOPTED",
+      "observations": [
+        "Actual neutral full head/body and profile A/B show no discernible whole appearance improvement. Existing shape and skin exposure are preserved, without an intentional darkening or lighting change.",
+        "Half and closed control renders remain doll-like: smooth, heavy lids with rounded closure, insufficient fold/crease anatomy. Hair remains a flat vertical curtain with uniform ends and a conspicuous ear strip. Body and skin remain smooth; clothing/natural dynamics/runtime remain unfinished.",
+        "New control geometry follows actual optical geometry at each sampled pose. Initial static-optical premise failed before a saved model; both original script and failure log remain. Optical world movement reaches approximately2.469mm at full blink; this is measured source behavior, not certified physiological motion.",
+        "One adaptive construction adds source controls in the implicated lining region with conforming shared-edge triangles. It reduces sampled interpolation defect from0.158810mm to0.028189mm, but31 faces still miss the fixed0.025mm criterion. No density/offset/tolerance retuning is adopted.",
+        "Five sampled actual triangle-surface checks are reported separately from interpolation, closed edges, finite volumes, self/hair/cloth contacts and continuous time. A scoped surface pass cannot certify zero clipping globally."
+      ],
+      "wholeCharacterScore": null,
+      "evidence": [
+        "r0102-head-and-body-ab.png",
+        "r0102-profile-ab.png",
+        "manual-visual-review.json"
+      ]
+    },
+    "function": {
+      "status": "PASS_SAVED_COMPONENT_AND_SAMPLED_BINDINGS_ONLY",
+      "independentlyOpenableCompleteSource": {
+        "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0102-a-facet-aware-lining.blend",
+        "sha256": "e34352dfd075639969de3496cd8f08c097c294f3172b80bdb54b45cf340b666c",
+        "bytes": 574166208,
+        "status": "RETAIN_SAME_COMPLETE_WOMAN_SAMPLED_FACET_CONSTRUCTION_ONLY",
+        "scope": "Same full B2 woman, geometry-derived adaptive inner-lid source controls. Original actual points, UV, neutral groom/lashes, native body/optics/rig and15 textures retained. Sampled interpolation criterion still has31 residual faces; no whole appearance, complete operation, finite/self/continuous contact or runtime acceptance.",
+        "formalRuntimeOrUserFemaleAcceptance": false
+      },
+      "actualVertices": 657546,
+      "actualTriangles": 1315088,
+      "originalActualPointsAndRetainedUVAndNeutralGroomExact": true,
+      "originalNativeBodyOpticsKeysWeightsAndRig52Preserved": true,
+      "externalTextures": 15,
+      "all24800RootCentreMaximumWorldErrorM": 2.2109121324231975e-07,
+      "all412LashRootCentreFrameMaximumWorldErrorM": 1.8173280784654616e-07,
+      "neutralSkinAndGroomRestoreWorldErrorM": 0.0,
+      "sampledInterpolationCriterionMet": false,
+      "residualCriterionFaces": 31,
+      "completeOperationAccepted": false,
+      "evidence": [
+        "minimum-saved-readback.json",
+        "evaluated-blink-and-contact.json",
+        "neutral-restore.json"
+      ]
+    },
+    "contact": {
+      "status": "GLOBAL_FINITE_SELF_HAIR_CLOTH_CONTINUOUS_UNACCEPTED",
+      "fiveDiscreteSkinOpticalSurfaceChecksClear": true,
+      "sampledActualSurfaceChecks": [
+        {
+          "blink": 0.0,
+          "sides": {
+            "L": {
+              "bvhCandidatePairs": 0,
+              "narrowPhaseInspectedPairs": 0,
+              "storedIntersectionOrTouchWitnessPairs": 0,
+              "allCandidatesInspected": true
+            },
+            "R": {
+              "bvhCandidatePairs": 0,
+              "narrowPhaseInspectedPairs": 0,
+              "storedIntersectionOrTouchWitnessPairs": 0,
+              "allCandidatesInspected": true
+            }
+          }
+        },
+        {
+          "blink": 0.25,
+          "sides": {
+            "L": {
+              "bvhCandidatePairs": 0,
+              "narrowPhaseInspectedPairs": 0,
+              "storedIntersectionOrTouchWitnessPairs": 0,
+              "allCandidatesInspected": true
+            },
+            "R": {
+              "bvhCandidatePairs": 0,
+              "narrowPhaseInspectedPairs": 0,
+              "storedIntersectionOrTouchWitnessPairs": 0,
+              "allCandidatesInspected": true
+            }
+          }
+        },
+        {
+          "blink": 0.5,
+          "sides": {
+            "L": {
+              "bvhCandidatePairs": 0,
+              "narrowPhaseInspectedPairs": 0,
+              "storedIntersectionOrTouchWitnessPairs": 0,
+              "allCandidatesInspected": true
+            },
+            "R": {
+              "bvhCandidatePairs": 0,
+              "narrowPhaseInspectedPairs": 0,
+              "storedIntersectionOrTouchWitnessPairs": 0,
+              "allCandidatesInspected": true
+            }
+          }
+        },
+        {
+          "blink": 0.75,
+          "sides": {
+            "L": {
+              "bvhCandidatePairs": 0,
+              "narrowPhaseInspectedPairs": 0,
+              "storedIntersectionOrTouchWitnessPairs": 0,
+              "allCandidatesInspected": true
+            },
+            "R": {
+              "bvhCandidatePairs": 0,
+              "narrowPhaseInspectedPairs": 0,
+              "storedIntersectionOrTouchWitnessPairs": 0,
+              "allCandidatesInspected": true
+            }
+          }
+        },
+        {
+          "blink": 1.0,
+          "sides": {
+            "L": {
+              "bvhCandidatePairs": 0,
+              "narrowPhaseInspectedPairs": 0,
+              "storedIntersectionOrTouchWitnessPairs": 0,
+              "allCandidatesInspected": true
+            },
+            "R": {
+              "bvhCandidatePairs": 0,
+              "narrowPhaseInspectedPairs": 0,
+              "storedIntersectionOrTouchWitnessPairs": 0,
+              "allCandidatesInspected": true
+            }
+          }
+        }
+      ],
+      "allPairedGeometryEvaluatedAtEachPose": true,
+      "SATNumericIntervalToleranceM": 1e-10,
+      "globalSignedMinimumM": null,
+      "finiteVolumesSelfRenderedHairRootsClothingContinuousOrNaturalMotionAccepted": false,
+      "priorHairFailuresRemainUnresolved": true,
+      "evidence": [
+        "evaluated-blink-and-contact.json",
+        "contact-sat-calibration.json"
+      ]
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "actualAevryndImportAnimationPhysicsLODPerformanceAccepted": false
+    }
+  },
+  "actualChangedMotionDelivered": true,
+  "scope": "Six actual delivered-input blink samples with neutral restore; not natural continuous blink/contact acceptance.",
+  "nextAction": "Continue on the same complete working woman, preserving the C body/neck, source optics/oral/rig, B2 shape/UV and retained finite-lining controls only within their proved scope. r102 is a function/construction round with no adopted whole appearance or complete operation. The next two production rounds must directly author major visible face/hair defects; do not spend another round only increasing lining density, running contact certificates or building tooling. Use actual source/native topology and anatomical references to reshape the too-smooth, heavy closed upper lid and margin/fold relationship, or reconstruct a genuinely different authored hairstyle foundation after inspecting its actual3D shape. Choose one coherent major visible defect from complete views and deliver a complete matched preview first. The r102 refinement field has31 sampled criterion residual faces and no global/continuous guarantee; do not retry via depth/offset/weight/tolerance sweeps. Preserve stopped families and previous hair failures. Whole-character review next after two actual rounds; no-adoption lower bound22. Hair natural motion, skin realism, oral/body actions, clothing/layers, finite/self/continuous contacts and actual engine budgets/LOD/performance remain unaccepted. Explicit female user approval precedes male work."
+}

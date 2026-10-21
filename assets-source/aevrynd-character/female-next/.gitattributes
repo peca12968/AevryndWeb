@@ -245,3 +245,8 @@ aevrynd-female-next-r0101-a-articulated-eyelids.blend filter=lfs diff=lfs merge=
 aevrynd-female-next-r0101-a2-lash-attachment.blend filter=lfs diff=lfs merge=lfs -text
 aevrynd-female-next-r0101-b-orbital-lid-reconstruction.blend filter=lfs diff=lfs merge=lfs -text
 aevrynd-female-next-r0101-b2-lid-uv-and-attachment.blend filter=lfs diff=lfs merge=lfs -text
+# Exact r102 adaptive finite-lining history; no complete/runtime adoption.
+r0102-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0102* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0102-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+aevrynd-female-next-r0102-a-facet-aware-lining.blend filter=lfs diff=lfs merge=lfs -text
