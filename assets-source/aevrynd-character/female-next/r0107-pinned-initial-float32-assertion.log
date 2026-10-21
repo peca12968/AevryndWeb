@@ -1,0 +1,12 @@
+00:01.656  blend            | Read blend: "D:\Download\Aevrynd\Evidence\character-female-next\r0107-native-coarse-lid-cage\native-coarse-authoring.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0107-pinned-coarse-lids.py", line 28, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0107-pinned-coarse-lids.py", line 23, in main
+    key=keys['AFN107_AUTHORING_'+side+'_'+label];key.value=1;source.data.shape_keys.update_tag();source.update_tag();bpy.context.view_layer.update();sd,soft,st=u.b.geom(source);soft=q.arr(sd.vertices,'co',len(sd.vertices),3).copy();assert len(soft)==len(local);target=data[side+'_'+label+'_coarseLocal'];soft[anchors]=local[anchors];soft[margin]=target[margin];assert np.array_equal(soft[margin],target[margin]);assert np.array_equal(soft[np.setdiff1d(anchors,margin)],local[np.setdiff1d(anchors,margin)]);pin.data.vertices.foreach_set('co',soft.astype('f4').ravel());pin.data.update();pin.update_tag();bpy.context.view_layer.update();dd,V,TT=u.b.geom(pin);assert len(V)==len(V0);arrays[side+'_'+label+'_fineDelta']=V-V0;arrays[side+'_'+label+'_coarseLocal']=soft;report[side+'_'+label]={'actualFineMaximumMoveM':float(np.linalg.norm(V-V0,axis=1).max()),'all20CoarseMarginTargetsDeliveredExactlyInAuthoredData':True,'outsideOrbitalAnchorsExactlyRestoredInAuthoredData':True,'evaluatedFineTriangleArrayEqualsNeutral':bool(np.array_equal(TT,T)),'scope':'Exact source-coarse constraints; fine anatomy/contact and rendered full blink still require actual preview.'};key.value=0;source.data.shape_keys.update_tag();source.update_tag();bpy.context.view_layer.update()
+                                                                                                                                                                                                                                                                                                                                                                                ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,0 +1,9 @@
+00:01.656  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0105-a-native-lip-chart.blend"
+D:\Download\Aevrynd\scripts\character-next\view-female-next-r0107-artist-closed-reference.py:16: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mesh=bpy.data.meshes.new('AFN107_REFERENCE_ONLY_ARTIST_BLINK');mesh.from_pydata(P0.tolist(),[],[list(p.vertices) for p in helper.data.polygons]);mesh.update();clean=bpy.data.objects.new(mesh.name,mesh);bpy.context.scene.collection.objects.link(clean);mat=bpy.data.materials.new('AFN107_REFERENCE_ONLY_CLAY');mat.use_nodes=True;mat.node_tree.nodes.clear();bs=mat.node_tree.nodes.new('ShaderNodeBsdfPrincipled');output=mat.node_tree.nodes.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(bs.outputs['BSDF'],output.inputs['Surface']);bs.inputs['Base Color'].default_value=(.28,.28,.28,1);bs.inputs['Roughness'].default_value=.6;mesh.materials.append(mat)
+00:22.890  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0107-native-coarse-lid-cage\matched-artist-Blink-basis-reference-face.png'
+00:31.109  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0107-native-coarse-lid-cage\matched-artist-Blink-closed-reference-face.png'
+R107_ACTUAL_ARTIST_BLINK_REFERENCE_DONE 32.848098039627075
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

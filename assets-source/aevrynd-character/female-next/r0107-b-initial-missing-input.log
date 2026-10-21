@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0107-pinned-character.py", line 52, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0107-pinned-character.py", line 13, in main
+    tick=time.time();assert not OUT.exists();data=np.load(E/'native-coarse-lid-poses-pinned.npz');P=data['neutralFineWorld'];T=data['fineTriangles'];poseArrays={key:data[key+'_fineDelta'].copy() for key in ['L_half','L_closed','R_half','R_closed']};ref=np.load(E.parent/'r0104-native-artist-ocular-foundation/animation-actual-source-geometry.npz');assert np.array_equal(T,ref['triangles']);bpy.ops.wm.open_mainfile(filepath=str(SRC));face=bpy.data.objects['AFN59_FACE_CONTROLS'];oral=bpy.data.objects['AFN74_ORAL_CONTROLS']
+                                                  ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\site-packages\numpy\lib\_npyio_impl.py", line 454, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0107-native-coarse-lid-cage\\native-coarse-lid-poses-pinned.npz'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

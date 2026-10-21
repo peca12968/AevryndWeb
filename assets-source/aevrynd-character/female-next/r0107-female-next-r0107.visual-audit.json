@@ -1,0 +1,92 @@
+{
+  "revision": "female-next-r0107",
+  "reviewUTC": "2026-10-21T04:21:36.536707+00:00",
+  "decision": "RETAIN_B_PARTIAL_NATIVE_LID_PATH_REJECT_COMPLETE_BLINK_AND_CHARACTER_ADOPTION",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "partialNativeLidOperationRetained": true,
+  "wholeCharacterScore": null,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0107-b-native-pinned-lids.blend",
+    "sha256": "cc59c3c366148d16958eb35d9a3723e4be80165698712f88103f91c3d91c7c7f",
+    "bytes": 654016884,
+    "status": "RETAIN_COMPLETE_WORKING_WOMAN_PARTIAL_NATIVE_LID_OPERATION_FULL_BLINK_CONTACT_RUNTIME_UNACCEPTED",
+    "scope": "Same complete r105 woman, original neutral head/body/lip UV/shaders/textures/groom retained. Native coarse quad poses and half corrective baked into visible full skin, all412 source lash frames use actual triangle winding. A soft desired margins miss by6.8mm. B imposes exact stored coarse anchors but actual rendered aperture still does not close. Actual B skin moves8.36mm and restores0, frame reversals0. Local construction/partial control only, not a natural complete blink or complete character adoption."
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0107-a-native-coarse-lids.blend",
+      "sha256": "3a777404f7e438afc54c781f6420e3d47a9fbde905953608667cb7140e7647dd",
+      "bytes": 654040170,
+      "status": "REJECT_SOFT_MARGIN_DELIVERY_AND_INCOMPLETE_BLINK",
+      "scope": "Same complete r105 woman, original neutral head/body/lip UV/shaders/textures/groom retained. Native coarse quad poses and half corrective baked into visible full skin, all412 source lash frames use actual triangle winding. A soft desired margins miss by6.8mm. B imposes exact stored coarse anchors but actual rendered aperture still does not close. Actual B skin moves8.36mm and restores0, frame reversals0. Local construction/partial control only, not a natural complete blink or complete character adoption."
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0107-b-native-pinned-lids.blend",
+      "sha256": "cc59c3c366148d16958eb35d9a3723e4be80165698712f88103f91c3d91c7c7f",
+      "bytes": 654016884,
+      "status": "RETAIN_COMPLETE_WORKING_WOMAN_PARTIAL_NATIVE_LID_OPERATION_FULL_BLINK_CONTACT_RUNTIME_UNACCEPTED",
+      "scope": "Same complete r105 woman, original neutral head/body/lip UV/shaders/textures/groom retained. Native coarse quad poses and half corrective baked into visible full skin, all412 source lash frames use actual triangle winding. A soft desired margins miss by6.8mm. B imposes exact stored coarse anchors but actual rendered aperture still does not close. Actual B skin moves8.36mm and restores0, frame reversals0. Local construction/partial control only, not a natural complete blink or complete character adoption."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "NEUTRAL_ART_RETAINED_NO_COMPLETE_APPEARANCE_GAIN_CLOSED_STILL_OPEN",
+      "evidence": [
+        "r0107-head-and-body-ab.png",
+        "r0107-actual-lid-poses.png",
+        "r0107-three-round-whole-woman.png",
+        "manual-visual-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "REOPENED_ACTUAL_PARTIAL_LID_RESPONSE_AND_EXACT_RESTORE_COMPLETE_BLINK_FAILS",
+      "evidence": "independent-saved-lid-readback.json",
+      "actualClosedInputMaximumSkinMoveM": 0.008359683841000545,
+      "actualRestoredMaximumSkinMoveM": 0.0,
+      "actualRestoredMaximumGroomMoveM": 0.0,
+      "lashFrames": {
+        "allCurves": 412,
+        "consistentWithActualSkinWinding": 412,
+        "reversed": 0,
+        "notActualSkinTriangle": 0
+      },
+      "actualPolygonLoopGraphUnchangedAcrossSamples": true,
+      "sampledPoseGIF": "r0107-sampled-lid-control.gif",
+      "notNaturalContinuousMotionProof": true,
+      "wholeBodyRigAndLiveCageGuideEditingUnaccepted": true,
+      "completeOperationAccepted": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_INHERITED_NEUTRAL_OPTICAL_WITNESSES",
+      "evidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0104-native-artist-ocular-foundation\\minimum-saved-readback.json",
+      "neutralActualSkinAndOpticsByteEqualToR105": true,
+      "priorCandidatePairsL": 284,
+      "priorCandidatePairsR": 311,
+      "priorStoredIntersectionOrTouchWitnessesPerSide": 16,
+      "countsNotGlobalTotals": true,
+      "globalSignedMinimumM": null,
+      "finiteSelfHairClothContinuousOrNaturalMotionCertified": false,
+      "apertureRayScope": "Sampled actual front optical vertices and geometric skin rays only, not rendered refraction/occupancy or continuous proof.",
+      "fullClosureUnblockedFrontOpticalVertexSamples": {
+        "L": 52,
+        "R": 53
+      },
+      "frameOrientationNotAnatomicalMarginOrFiniteFollicleAcceptance": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "wholeCharacterReview": "three-round-whole-character-review.json",
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 27,
+  "productionRoundsSinceLastWholeCharacterReview": 0,
+  "nextWholeReviewAfterFurtherProductionRounds": 3,
+  "actualConstructions": 2,
+  "completeCharacterSources": 2,
+  "separateCoarseAuthoringInputs": 2,
+  "femaleUserAcceptance": false
+}

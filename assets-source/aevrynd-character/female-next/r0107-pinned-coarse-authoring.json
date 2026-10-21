@@ -1,0 +1,35 @@
+{
+  "construction": "Retain actual native quad hood deformation, then impose exact original20 margin targets and fixed outer orbital coordinates before original Multires evaluation. Deliver sculpted coarse poses with only original Multires, not a soft solver in the final cage. No angle, radius, clearance, weight or iteration change.",
+  "newEvidence": "coarse-anchor-delivery.json: requested11.31mm but delivered4.48mm, margin misses6.83/6.86mm.",
+  "poses": {
+    "L_half": {
+      "actualFineMaximumMoveM": 0.0046779069826715656,
+      "all20CoarseMarginTargetsDeliveredExactlyAsStoredFloat32": true,
+      "outsideOrbitalAnchorsExactlyRestoredAsStoredFloat32": true,
+      "evaluatedFineTriangleArrayEqualsNeutral": true,
+      "scope": "Exact source-coarse constraints; fine anatomy/contact and rendered full blink still require actual preview."
+    },
+    "L_closed": {
+      "actualFineMaximumMoveM": 0.008351905860690907,
+      "all20CoarseMarginTargetsDeliveredExactlyAsStoredFloat32": true,
+      "outsideOrbitalAnchorsExactlyRestoredAsStoredFloat32": true,
+      "evaluatedFineTriangleArrayEqualsNeutral": false,
+      "scope": "Exact source-coarse constraints; fine anatomy/contact and rendered full blink still require actual preview."
+    },
+    "R_half": {
+      "actualFineMaximumMoveM": 0.004656442972040025,
+      "all20CoarseMarginTargetsDeliveredExactlyAsStoredFloat32": true,
+      "outsideOrbitalAnchorsExactlyRestoredAsStoredFloat32": true,
+      "evaluatedFineTriangleArrayEqualsNeutral": true,
+      "scope": "Exact source-coarse constraints; fine anatomy/contact and rendered full blink still require actual preview."
+    },
+    "R_closed": {
+      "actualFineMaximumMoveM": 0.008359956980659661,
+      "all20CoarseMarginTargetsDeliveredExactlyAsStoredFloat32": true,
+      "outsideOrbitalAnchorsExactlyRestoredAsStoredFloat32": true,
+      "evaluatedFineTriangleArrayEqualsNeutral": false,
+      "scope": "Exact source-coarse constraints; fine anatomy/contact and rendered full blink still require actual preview."
+    }
+  },
+  "seconds": 0.6721997261047363
+}
