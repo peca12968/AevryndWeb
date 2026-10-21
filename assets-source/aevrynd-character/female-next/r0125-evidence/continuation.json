@@ -1,0 +1,100 @@
+{
+  "revision": "female-next-r0125",
+  "decision": "REJECT_CRANIOFACIAL_VOLUME_CAGE_REVIEW_123_124_125_KEEP_R117",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0117-source\\aevrynd-female-next-r0117-a-native-fibre-brows.blend",
+    "sha256": "09da2122d16f80cbcff6f535dbfc35540df27131dc323450d2a4c41293446db9",
+    "bytes": 109202829,
+    "status": "ADOPT_SCOPED_COMPLETE_STATIC_NATIVE_BROW_APPEARANCE_GAIN",
+    "scope": "Adopt only static complete-character eyebrow shape/flow appearance in documented primary/oblique/second-light views, preserving r115 neck gain. Not a whole-character anatomy/function/finite-contact/runtime/rights/user acceptance.",
+    "renderSkin": "AFN113_COMPLETE_WOMAN_COHERENT_HEAD",
+    "rawEditableSource": "AFN115_EDITABLE_CONNECTED_NATIVE_ADULT_SOURCE",
+    "actualFaceControls": "AFN59_FACE_CONTROLS / blink_left, blink_right",
+    "appearanceAdoptionScope": "R115 static continuous neck/shoulder gain retained plus r117 static brow shape/hair-flow gain; remaining head/body deficits open.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0125-source\\aevrynd-female-next-r0125-a-craniofacial-volume-cage.blend",
+      "sha256": "f3d65b0f668a26d62139117f1857b76f0430546c1b7f7bdf48016b2a8d07bcb5",
+      "bytes": 109891546,
+      "status": "REJECT_COMPLETE_APPEARANCE_RETAIN_VOLUME_CAGE_AUTHORING_RESEARCH_ONLY",
+      "scope": "Same full r117 woman plus own7x3x9 B-spline rest-volume cage on native coarse face before Subsurf2, live exact-index displayed delta. All raw skin keys and original fibre counts/radii retained; actual fibre positions change through existing bindings. Control0 and actual cage-point edit/restore recovered independently. At most1.015mm displayed rest change and coordinate-domain protection are not anatomical proof or whole-face realism gain. Rejected complete appearance, retained authoring research only."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECT_NO_CLEAR_COMPLETE_APPEARANCE_GAIN",
+      "evidence": [
+        "r0125-head-and-body-comparison.png",
+        "r0125-profile-and-oblique-comparison.png",
+        "manual-visual-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "INDEPENDENT_SAVED_VOLUME_CAGE_EDIT_DISPLAY_RESPONSE_AND_RESTORE_ONLY",
+      "evidence": "minimum-saved-source-readback.json",
+      "temporaryCagePointEditActualDisplayMovementM": 9.975969000208806e-06,
+      "newCompleteOperationAccepted": false,
+      "naturalHairMotionDelivered": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_CHANGED_FACE_AND_ALL_FIBRE_POSITION_BINDINGS_NO_FINITE_SELF_CONTINUOUS_PROOF",
+      "globalSignedMinimumM": null,
+      "coordinateBasedProtectedDomainNotAnatomicalLidOrMouthProof": true,
+      "fibreCountsAndRadiiPreservedNotContactProof": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 8,
+  "productionRoundsSinceLastWholeCharacterReview": 0,
+  "nextWholeReviewAfterFurtherProductionRounds": 3,
+  "femaleUserAcceptance": false,
+  "lastGoalTurnClassification": "progress",
+  "progressKind": "ACTUAL_COMPLETE_VOLUME_CAGE_TRIAL_REJECTED_INDEPENDENT_EDIT_RECOVERY_AND_ACTUAL_WHOLE_REVIEW_123_124_125",
+  "previousTurnClassification": "progress: r124 complete native nasal sculpt rejected with matched appearance and independent edit/restore evidence; full GitHub history retained, no adopted appearance or complete operation.",
+  "wholeCharacterStagnationReset": false,
+  "foundationChangeRequiredNextProduction": true,
+  "priorArtRollbackReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0105-a-native-lip-chart.blend",
+    "sha256": "ce9371558e3e4d26541484adf3448b96c4bef0a7c541f6f932c0d5bee7a3a43e",
+    "bytes": 628115371,
+    "status": "RETAIN_COMPLETE_NATIVE_HEAD_WOMAN_LOCAL_LIP_UV_GAIN_STATIC_SKIN_CONTACT_RUNTIME_UNACCEPTED",
+    "scope": "Same r104 B2 complete woman, with native external mouth-seam UV arcs registered to explicit upper/lower contours of the unchanged source skin atlas. Fragmented dark external lip patches visibly removed in complete head/body, profile, oblique and second-lighting comparisons. Actual geometry, optics, full groom/lashes, skin shader parameters and15 source textures exactly unchanged. Static displayed skin and inherited optical intersections remain; no complete operation, whole-character adoption, finite/continuous contact or runtime acceptance.",
+    "originalArtist": "Dan Ulrich",
+    "selectedHeadAssetMetadataLicense": "CC0",
+    "formalRuntimeOrUserFemaleAcceptance": false
+  },
+  "retainedControlContactReference": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0102-a-facet-aware-lining.blend",
+  "lastReviewedProductionWindow": [
+    "r123",
+    "r124",
+    "r125"
+  ],
+  "lastWholeCharacterReview": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0125-craniofacial-rest-shape\\three-round-whole-character-review.json",
+  "stoppedMethodsInheritedFrom": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0124-native-nasal-sculpt\\continuation.json",
+  "allEarlierRetirementsRemainEffective": true,
+  "stoppedMethods": [
+    "R124/R125 weakly reference-constrained native coarse offsets and broad volume cage do not cure whole-face realism. No magnitude/point-count/ring/cage-resolution/smoothing variants. Actual complete reference anatomy/shape construction must materially change the failed premise.",
+    "R125 coordinate eye/mouth protection and precise native index delta are authoring-data mechanisms, not measured anatomical eyelid/inner-wall/mouth construction.",
+    "R125 original fibre world hashes change through live roots. Preserve those facts; unchanged radii/counts or saved edit recovery is not finite-contact/natural-motion/complete-operation acceptance."
+  ],
+  "liveJobHandles": [],
+  "originalProductionHandles": [
+    74878,
+    73370
+  ],
+  "originalTerminalMarker": "R125_COMPLETE_CRANIOFACIAL_VOLUME_PREVIEW_DONE",
+  "newProtectedGitObjectWriteDirectory": "C:/Users/USER/AevryndCharacterGitObjects",
+  "originalGitReadAlternateDirectory": "D:/Download/Aevrynd/sites-engine-journey/.git/objects",
+  "nextAction": "Keep SAME r117 working woman and static r115 neck/r117 brow gains. Eight no-adoption rounds118..125; actual whole review123/124/125 now complete, cadence0/next after3. Retire the r124/r125 family of weakly reference-constrained native coarse offsets/volume cages as a full-face realism cure; no larger displacements, more handles/rings, cage resolution, smoothing or coefficient variants. New trial needs a demonstrably different anatomical/artistic source construction, not source labels or general-plane prose: first inspect a convincing complete original3D adult female head/rest identity with compatible verified rights and its native construction/operations, then adopt/reconstruct actual coherent orbital/nasal/cheek form while preserving the same complete body/neck and reconnecting eye/mouth/brow/lash/groom components. Do not revive retired nearest-envelope/graft/crease/optical/microshader/root-domain families without evidence changing their specific failed premise. Existing live coarse/display edit connection is retained research only; proposal is not new-source inspection/adoption. Support10min, one candidate default, actual full head/body preview normally30min. Full body/clothes/actions/natural hair/all finite self/continuous contact/runtime/LOD/performance/user acceptance remain open. Use existing protected C full source/evidence/archive/Git/LFS stores; no history deletion/duplicate D copies. Explicit female acceptance before male.",
+  "goal": "ACTIVE_NOT_COMPLETE"
+}

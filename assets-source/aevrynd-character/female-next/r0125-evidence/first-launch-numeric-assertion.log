@@ -1,0 +1,12 @@
+00:06.750  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0117-source\aevrynd-female-next-r0117-a-native-fibre-brows.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0125-craniofacial-rest.py", line 57, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0125-craniofacial-rest.py", line 48, in main
+    set_control(0.);assert a.protected()==protected;set_control(1.);_,W,_=b.u.b.geom(skin);W=W.copy();_,C,_=b.u.b.geom(edit);assert np.array_equal(C,W);move=np.linalg.norm(W-baseline,axis=1);assert np.isfinite(W).all() and move.max()>1e-5 and move.max()<.006;after=a.protected();assert after['rawAllShapeKeys']==protected['rawAllShapeKeys'];ref.hide_set(True);edit.hide_set(True);cage.hide_set(True);set_control(1.);bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(OUT),compress=True,relative_remap=False)
+                                                                                                                                    ~~~~~~~~~~~~~~^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
