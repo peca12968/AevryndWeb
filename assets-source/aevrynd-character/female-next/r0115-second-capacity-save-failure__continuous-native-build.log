@@ -1,0 +1,13 @@
+00:11.813  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0113-b-native-neck-skin.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0115-continuous-native-woman.py", line 104, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0115-continuous-native-woman.py", line 96, in main
+    free=shutil.disk_usage(S).free;assert free>temp.stat().st_size+18000000,('Keep full temporary source; canonical capacity insufficient',free,temp.stat().st_size)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('Keep full temporary source; canonical capacity insufficient', 99250176, 109024719)
+資訊: 已儲存副本為「aevrynd-female-next-r0115-a-continuous-native-woman.blend」
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

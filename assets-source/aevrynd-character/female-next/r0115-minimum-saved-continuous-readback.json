@@ -1,0 +1,227 @@
+{
+  "status": "INDEPENDENT_COMPLETE_SOURCE_REOPENS_OWN_NEUTRAL_HALF_CLOSED_RESTORE_MATCH",
+  "candidate": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\aevrynd-female-next-r0115-b-continuous-native-neutral.blend",
+    "sha256": "507c338f2022f024722507bffa58e5874382b7735b0ff440fdb85f2d55a88457",
+    "bytes": 109047707,
+    "physicalSource": "C:\\Users\\USER\\.cache\\aevrynd-character-source\\r0115\\aevrynd-female-next-r0115-b-continuous-native-neutral.blend",
+    "archivePath": "D:\\Download\\Aevrynd\\sites-engine-journey\\assets-source\\aevrynd-character\\female-next\\r0115-source\\aevrynd-female-next-r0115-b-continuous-native-neutral.blend"
+  },
+  "actualPoseStates": [
+    {
+      "state": "neutral",
+      "assignedBlink": 0.0,
+      "actualSkinAgainstOriginalOwnSourceMaxM": 0.0,
+      "actualSkinMaximumMoveM": 0.0,
+      "actualKeyValues": {
+        "Basis": 1.0,
+        "AFN113_CLOSED_L": 0.0,
+        "AFN113_CLOSED_R": 0.0
+      },
+      "evaluatedVertices": 214050,
+      "evaluatedTriangles": 428096
+    },
+    {
+      "state": "half",
+      "assignedBlink": 0.5,
+      "actualSkinAgainstOriginalOwnSourceMaxM": 4.268315163869289e-07,
+      "actualSkinMaximumMoveM": 0.005015363155085551,
+      "actualKeyValues": {
+        "Basis": 1.0,
+        "AFN113_CLOSED_L": 0.4999999403953552,
+        "AFN113_CLOSED_R": 0.4999999403953552
+      },
+      "evaluatedVertices": 214050,
+      "evaluatedTriangles": 428096
+    },
+    {
+      "state": "closed",
+      "assignedBlink": 1.0,
+      "actualSkinAgainstOriginalOwnSourceMaxM": 0.0,
+      "actualSkinMaximumMoveM": 0.01003083295371408,
+      "actualKeyValues": {
+        "Basis": 1.0,
+        "AFN113_CLOSED_L": 1.0,
+        "AFN113_CLOSED_R": 1.0
+      },
+      "evaluatedVertices": 214050,
+      "evaluatedTriangles": 428096
+    },
+    {
+      "state": "restored",
+      "assignedBlink": 0.0,
+      "actualSkinAgainstOriginalOwnSourceMaxM": 0.0,
+      "actualSkinMaximumMoveM": 0.0,
+      "actualKeyValues": {
+        "Basis": 1.0,
+        "AFN113_CLOSED_L": 0.0,
+        "AFN113_CLOSED_R": 0.0
+      },
+      "evaluatedVertices": 214050,
+      "evaluatedTriangles": 428096
+    }
+  ],
+  "originalSourceHeadIdentity": {
+    "oldRequestedPoints": 4203,
+    "maxSameSourceHeadCoordinateErrorM": 4.777675712830387e-07,
+    "quantilesM": [
+      0.0,
+      1.1944189282075968e-07,
+      2.3889106159913354e-07,
+      4.777675712830387e-07
+    ],
+    "previousCutBoundaryCausalHypothesisWithdrawn": true,
+    "reason": "A baked closed Basis invalidated neutral identity. B restores original actual neutral. The initial1.536mm mismatch is not evidence that an old neck cut changed the requested root vertices."
+  },
+  "actualSkinTopology": {
+    "vertices": 214050,
+    "triangles": 428096,
+    "uniqueEdges": 642144,
+    "edgesWithIncidenceNotTwo": 0,
+    "edgesWithSameOrientationTwice": 0,
+    "eulerCharacteristic": 2,
+    "signedExternalSurfaceVolumeM3": 0.05490873811761068,
+    "notASelfIntersectionOrSkinWallThicknessProof": true
+  },
+  "allFibres": {
+    "AFN97_TUCKED_ARTIST_BOB_CHILDREN": {
+      "curves": 24800,
+      "actualEvaluatedPoints": 421600,
+      "radiusSha256": "bcc5f3e4a6d931224965620ec684d13c129a3850bb87882cc6e94efaf46895f6",
+      "radiusPositive": false,
+      "notRenderedSweptFiniteCurveOccupancyProof": true
+    },
+    "AFN57_NATIVE_BROWS": {
+      "curves": 2140,
+      "actualEvaluatedPoints": 76204,
+      "radiusSha256": "340ff7385b7f34478a09463be27d7b7260891e1f057e216d930fbcbc2c50d6f3",
+      "radiusPositive": true,
+      "notRenderedSweptFiniteCurveOccupancyProof": true
+    },
+    "AFN57_NATIVE_LASHES": {
+      "curves": 412,
+      "actualEvaluatedPoints": 6998,
+      "radiusSha256": "8464888a54bd5564ae6c75ed0e21ab1a5c19ee66b0985597b923fe711ea4d849",
+      "radiusPositive": true,
+      "notRenderedSweptFiniteCurveOccupancyProof": true
+    }
+  },
+  "externalTextures": [
+    {
+      "name": "Iris_Color.1007.exr",
+      "relative": "//..\\study-vitruvian-textures\\Iris_Color.1007.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Iris_Color.1007.exr",
+      "sha256": "62efc0ed85878cb0831db9b492975c384f19052bd7ab52f945777ac3e1d8b002",
+      "bytes": 3300761
+    },
+    {
+      "name": "Light_Skin_Color.1001.exr",
+      "relative": "//..\\study-vitruvian-textures\\Light_Skin_Color.1001.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Light_Skin_Color.1001.exr",
+      "sha256": "362373cf6afa6c88c44bc480f328afe94de11ca88463a6b40a5fc8032f3f6fa2",
+      "bytes": 10874477
+    },
+    {
+      "name": "Light_Skin_Color.1002.exr",
+      "relative": "//..\\study-vitruvian-textures\\Light_Skin_Color.1002.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Light_Skin_Color.1002.exr",
+      "sha256": "0c2dfa2f2edf9110c92ff9ad7879eec0b0b78ee7855d01f1d9525f3cd10e5a9b",
+      "bytes": 8424344
+    },
+    {
+      "name": "Light_Skin_Color.1003.exr",
+      "relative": "//..\\study-vitruvian-textures\\Light_Skin_Color.1003.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Light_Skin_Color.1003.exr",
+      "sha256": "cd540d1415af4dd2e5ce8f3086f921b8c610597b99a3a369a1ee67d869b629f5",
+      "bytes": 9375204
+    },
+    {
+      "name": "Light_Skin_Color.1004.exr",
+      "relative": "//..\\study-vitruvian-textures\\Light_Skin_Color.1004.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Light_Skin_Color.1004.exr",
+      "sha256": "d702bb83c27d70516aea23ea62a5218ef495b422783c9048bd193f0ca0118905",
+      "bytes": 10049078
+    },
+    {
+      "name": "Mouth_Color.1008.exr",
+      "relative": "//..\\study-vitruvian-textures\\Mouth_Color.1008.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Mouth_Color.1008.exr",
+      "sha256": "47c988fd5799f4c54e3a916cda14bbb5245cf5a171d47132e0e0e9e9f2b05c11",
+      "bytes": 2825877
+    },
+    {
+      "name": "Sclera_Color.1005.exr",
+      "relative": "//..\\study-vitruvian-textures\\Sclera_Color.1005.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Sclera_Color.1005.exr",
+      "sha256": "e81a1554b08e096ad76bfb2909a2d09747ff90df1fe1b993b768ec41713dd672",
+      "bytes": 2859426
+    },
+    {
+      "name": "Skin_Height.1001.exr",
+      "relative": "//..\\study-vitruvian-textures\\Skin_Height.1001.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Skin_Height.1001.exr",
+      "sha256": "62d11cdff413599f3cf4c4c16bfd6a467def20b8f21ad7e26a68ea9601475a87",
+      "bytes": 1218091
+    },
+    {
+      "name": "Skin_Height.1002.exr",
+      "relative": "//..\\study-vitruvian-textures\\Skin_Height.1002.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Skin_Height.1002.exr",
+      "sha256": "5dd6a565ab791074905ae3e650ec89f1c77a274d502749ba68a5dc884a651844",
+      "bytes": 864971
+    },
+    {
+      "name": "Skin_Height.1003.exr",
+      "relative": "//..\\study-vitruvian-textures\\Skin_Height.1003.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Skin_Height.1003.exr",
+      "sha256": "e3edd7d2a7be4a2d1b2ec12a1f08534b770d7644c2d0181d7e4c2bda06b6c29a",
+      "bytes": 1064998
+    },
+    {
+      "name": "Skin_Height.1004.exr",
+      "relative": "//..\\study-vitruvian-textures\\Skin_Height.1004.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Skin_Height.1004.exr",
+      "sha256": "2e3bb73055367c3bb72be9ab95c3278b92967219d895087cd8dd44714011567b",
+      "bytes": 981725
+    },
+    {
+      "name": "Skin_Roughness.1001.exr",
+      "relative": "//..\\study-vitruvian-textures\\Skin_Roughness.1001.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Skin_Roughness.1001.exr",
+      "sha256": "fa97dd24bdf68be9240982d3921bef6ae096c476589fc58eb07ab4039ff1addf",
+      "bytes": 1354884
+    },
+    {
+      "name": "Skin_Roughness.1002.exr",
+      "relative": "//..\\study-vitruvian-textures\\Skin_Roughness.1002.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Skin_Roughness.1002.exr",
+      "sha256": "906c3e31ad66044370e1c62bda99eb770ead2c934845be393a18823a55cbd3eb",
+      "bytes": 1066519
+    },
+    {
+      "name": "Skin_Roughness.1003.exr",
+      "relative": "//..\\study-vitruvian-textures\\Skin_Roughness.1003.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Skin_Roughness.1003.exr",
+      "sha256": "c5772aee25e4558f7ebb4f2f8d62f51bb8dfce511e89fb4163f85bd6c064f11f",
+      "bytes": 1137254
+    },
+    {
+      "name": "Skin_Roughness.1004.exr",
+      "relative": "//..\\study-vitruvian-textures\\Skin_Roughness.1004.exr",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\study-vitruvian-textures\\Skin_Roughness.1004.exr",
+      "sha256": "4d14cb45facbd63f13ee91131dbe5656c3fe0d6eb8fec93aa8f23e7f00cff10d",
+      "bytes": 1169541
+    },
+    {
+      "name": "young_lightskinned_female_diffuse.png",
+      "relative": "//..\\makehuman-native-head-textures\\young_lightskinned_female_diffuse.png",
+      "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\..\\makehuman-native-head-textures\\young_lightskinned_female_diffuse.png",
+      "sha256": "b2a6ac8cd4f9febdb447368e29c76cd68410bb66e46d9dcfa2d5f75126eea8fc",
+      "bytes": 4391156
+    }
+  ],
+  "canonicalArchiveAndPhysicalFullSourceSameFile": true,
+  "functionScope": "Own native blink source/delivery/restore and saved geometry only; natural complete blink/body rig/oral/guide/cloth/runtime not proved.",
+  "sourceUnchangedDuringInspection": true,
+  "seconds": 12.745822191238403
+}

@@ -1,0 +1,154 @@
+{
+  "revision": "female-next-r0115",
+  "decision": "ADOPT_STATIC_NECK_APPEARANCE_KEEP_ONE_CONTINUOUS_NATIVE_WORKING_WOMAN",
+  "completeCharacterResult": "採用完整人物的靜態頸肩外觀改善；其他品質門未驗收",
+  "appearanceImprovement": true,
+  "appearanceAdoptionScope": "Static neutral complete-character neck/shoulder appearance in documented primary and second-light views; other gates separate.",
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\aevrynd-female-next-r0115-b-continuous-native-neutral.blend",
+    "sha256": "507c338f2022f024722507bffa58e5874382b7735b0ff440fdb85f2d55a88457",
+    "bytes": 109047707,
+    "status": "ADOPT_SCOPED_COMPLETE_NEUTRAL_NECK_SHOULDER_APPEARANCE_GAIN",
+    "scope": "Same complete woman with original connected adult head-neck-shoulder-body topology, same whole-head staging/native UV/own closure. Actual complete primary front/body/profile/back and matched second light show neck collar/tab/folds removed, retained face/fibres. Body silhouette and rest arm pose change with the coherent native body and remain subject to later body/function review. Static neck/shoulder appearance gain only; full anatomy, body rig, natural hair, finite/full/continuous contact, runtime, scores and female user acceptance remain unaccepted.",
+    "renderSkin": "AFN113_COMPLETE_WOMAN_COHERENT_HEAD",
+    "rawEditableSource": "AFN115_EDITABLE_CONNECTED_NATIVE_ADULT_SOURCE",
+    "actualFaceControls": "AFN59_FACE_CONTROLS / blink_left, blink_right",
+    "appearanceAdoptionScope": "Static neutral complete-character neck/shoulder appearance in documented primary and second-light views; other gates separate.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false
+  },
+  "previousWorkingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0113-b-native-neck-skin.blend",
+    "sha256": "53c56c31e33170131cc21798c5191627f111659d4c58c0297dd0eefb2b8d5f1e",
+    "bytes": 84258144,
+    "status": "RETAIN_ONE_COMPLETE_COHERENT_WORKING_FOUNDATION_PARTIAL_NATIVE_BLINK_ALL_COMPLETE_GATES_UNACCEPTED",
+    "scope": "Same woman body and all original fibres, coherent adult CC0 MakeHuman full head/own blink, native skin UV/texture and real-height972-triangle neck bridge, actual fibre rebinding. Eye shape closes and restores, but straight/broken inner brows, swollen/red eye region, ear-through-hair and posterior neck ledge/crease remain. Actual skin/sclera intersection-or-touch witnesses exist. Source retains current dependency closure and separate complete original source files; no source/history deletion. Not complete appearance, anatomy, function/contact/runtime or user acceptance.",
+    "renderSkin": "AFN113_COMPLETE_WOMAN_COHERENT_HEAD",
+    "rawEditableHead": "AFN113_NATIVE_ADULT_FULL_HEAD_SOURCE",
+    "actualFaceControls": "AFN59_FACE_CONTROLS / blink_left, blink_right",
+    "notAnAdoptedCompleteAppearanceOrOperation": true
+  },
+  "prototypeSources": {
+    "a0": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\aevrynd-female-next-r0115-a0-capacity-save.blend",
+      "sha256": "0ad8315d256f99723b080ed82627118d3e732df519ede314b9a903019938a3a2",
+      "bytes": 109024719,
+      "status": "PRESERVE_FULL_FAILED_CAPACITY_SAVE_CHECKPOINT",
+      "scope": "Full original same A geometry saved on C after canonical D capacity failure. Its original relative image context is invalid at this nested path; resume script and shared full textures recover it. Execution checkpoint, not an additional complete candidate or model round."
+    },
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\aevrynd-female-next-r0115-a-continuous-native-woman.blend",
+      "sha256": "6c9d9bcb441656e0a08ad5d2566f607402af664b6da70feca5759c584d9a1c49",
+      "bytes": 109024706,
+      "status": "REJECT_WRONG_CLOSED_BASIS_AT_NEUTRAL",
+      "scope": "First complete connected native skin candidate. At input0 actual Basis exactly equals its own both-eyes-closed source; natural neck construction is promising but displayed neutral/operation is rejected. Full file and all actual images retained."
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\aevrynd-female-next-r0115-b-continuous-native-neutral.blend",
+      "sha256": "507c338f2022f024722507bffa58e5874382b7735b0ff440fdb85f2d55a88457",
+      "bytes": 109047707,
+      "status": "ADOPT_SCOPED_COMPLETE_NEUTRAL_NECK_SHOULDER_APPEARANCE_GAIN",
+      "scope": "Same complete woman with original connected adult head-neck-shoulder-body topology, same whole-head staging/native UV/own closure. Actual complete primary front/body/profile/back and matched second light show neck collar/tab/folds removed, retained face/fibres. Body silhouette and rest arm pose change with the coherent native body and remain subject to later body/function review. Static neck/shoulder appearance gain only; full anatomy, body rig, natural hair, finite/full/continuous contact, runtime, scores and female user acceptance remain unaccepted."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "ADOPT_SCOPED_COMPLETE_NEUTRAL_NECK_SHOULDER_GAIN",
+      "scope": "Static neutral complete-character neck/shoulder appearance in documented primary and second-light views; other gates separate.",
+      "evidence": [
+        "r0115-head-and-body-ab.png",
+        "r0115-neck-profile-back-ab.png",
+        "r0115-matched-second-light-ab.png",
+        "manual-visual-review.json"
+      ],
+      "wholeCharacterQualityAccepted": false,
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "REOPEN_AND_OWN_SOURCE_SAMPLED_BLINK_RESTORE_VERIFIED_OTHER_OPERATIONS_UNACCEPTED",
+      "evidence": "minimum-saved-continuous-readback.json",
+      "actualPoseStates": [
+        {
+          "state": "neutral",
+          "assignedBlink": 0.0,
+          "actualSkinAgainstOriginalOwnSourceMaxM": 0.0,
+          "actualSkinMaximumMoveM": 0.0,
+          "actualKeyValues": {
+            "Basis": 1.0,
+            "AFN113_CLOSED_L": 0.0,
+            "AFN113_CLOSED_R": 0.0
+          },
+          "evaluatedVertices": 214050,
+          "evaluatedTriangles": 428096
+        },
+        {
+          "state": "half",
+          "assignedBlink": 0.5,
+          "actualSkinAgainstOriginalOwnSourceMaxM": 4.268315163869289e-07,
+          "actualSkinMaximumMoveM": 0.005015363155085551,
+          "actualKeyValues": {
+            "Basis": 1.0,
+            "AFN113_CLOSED_L": 0.4999999403953552,
+            "AFN113_CLOSED_R": 0.4999999403953552
+          },
+          "evaluatedVertices": 214050,
+          "evaluatedTriangles": 428096
+        },
+        {
+          "state": "closed",
+          "assignedBlink": 1.0,
+          "actualSkinAgainstOriginalOwnSourceMaxM": 0.0,
+          "actualSkinMaximumMoveM": 0.01003083295371408,
+          "actualKeyValues": {
+            "Basis": 1.0,
+            "AFN113_CLOSED_L": 1.0,
+            "AFN113_CLOSED_R": 1.0
+          },
+          "evaluatedVertices": 214050,
+          "evaluatedTriangles": 428096
+        },
+        {
+          "state": "restored",
+          "assignedBlink": 0.0,
+          "actualSkinAgainstOriginalOwnSourceMaxM": 0.0,
+          "actualSkinMaximumMoveM": 0.0,
+          "actualKeyValues": {
+            "Basis": 1.0,
+            "AFN113_CLOSED_L": 0.0,
+            "AFN113_CLOSED_R": 0.0
+          },
+          "evaluatedVertices": 214050,
+          "evaluatedTriangles": 428096
+        }
+      ],
+      "completeOperationAccepted": false,
+      "bodyRigOralGuidesRawSourceLivePropagationNaturalMotionUnaccepted": true
+    },
+    "contact": {
+      "status": "UNACCEPTED_SCOPED_BROAD_PHASE_OBSERVATION_ONLY",
+      "evidence": [
+        "scoped-static-neck-contact.json",
+        "scoped-neck-contact-interpretation.json"
+      ],
+      "actualNonNeighbourNarrowPhaseTests": 0,
+      "globalSignedMinimumM": null,
+      "finiteWallHairEyeBodySelfClothContinuousAndGlobalNotAccepted": true,
+      "priorOpticalFailureReference": "../r0113-coherent-head-foundation/minimum-saved-coherent-readback.json",
+      "priorWitnessCountsNotReusedAsNewTests": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 0,
+  "priorConsecutiveNoAdoptRunBeforeActualAppearanceAdoption": 34,
+  "productionRoundsSinceLastWholeCharacterReview": 2,
+  "nextWholeReviewAfterFurtherProductionRounds": 1,
+  "femaleUserAcceptance": false,
+  "reviewUTC": "2026-10-21T09:31:07.773737+00:00",
+  "actualCompleteModelCandidates": 2,
+  "A0ExecutionCheckpointNotAnotherCandidateOrRound": true,
+  "wholeCharacterScore": null
+}

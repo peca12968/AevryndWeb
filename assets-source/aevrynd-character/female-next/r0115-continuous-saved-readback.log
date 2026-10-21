@@ -1,0 +1,14 @@
+00:12.782  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0115-source\aevrynd-female-next-r0115-b-continuous-native-neutral.blend"
+R115_SCOPED_SAVED_NECK_CHECK_DONE 84534 0 0 13.945096254348755
+00:24.797  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0113-b-native-neck-skin.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0115-continuous-saved.py", line 60, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0115-continuous-saved.py", line 57, in main
+    bpy.context.view_layer.update();scene.render.filepath=str(E/('second-light-'+tag+'-face.png'));record={'file':scene.render.filepath,'camera':np.array(scene.camera.matrix_world).tolist(),'lensMM':scene.camera.data.lens,'lights':b.u.m.m.q.lights(),'exposure':scene.view_settings.exposure,'look':scene.view_settings.look,'samples':scene.cycles.samples,'resolution':[640,640],'seed':scene.cycles.seed,'hairSubdiv':3,'neutralInput':0.};bpy.ops.render.render(write_still=True);lightRows.append(record);save('matched-second-light-controls.json',lightRows)
+                                                                                                                                                                                                                                       ^^^^^^^^^^^^^^^^
+AttributeError: module 'curly81data' has no attribute 'lights'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,0 +1,12 @@
+00:14.750  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0113-b-native-neck-skin.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0115-continuous-native-woman.py", line 85, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0115-continuous-native-woman.py", line 63, in main
+    assert max(errors)<5e-6,('Original native head identity failed; do not nearest-fit new roots.',max(errors))
+           ^^^^^^^^^^^^^^^^
+AssertionError: ('Original native head identity failed; do not nearest-fit new roots.', 0.00153639679774642)
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -315,3 +315,8 @@ r0114-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 aevrynd-female-next-r0114* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 aevrynd-female-next-r0114-a-native-neck-transition.blend filter=lfs diff=lfs merge=lfs -text
 r0114-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+# Exact r115 continuous native sources and scoped static appearance evidence.
+r0115-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0115* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0115-source/*.blend filter=lfs diff=lfs merge=lfs -text
+r0115-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
