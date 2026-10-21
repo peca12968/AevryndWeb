@@ -327,3 +327,10 @@ r0116-source/*.blend filter=lfs diff=lfs merge=lfs -text
 r0116-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 source-inputs/r0116-native-eyes/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 makehuman-native-eye-textures/* -text
+# Exact r117 native brow working source, original sources and scoped evidence.
+r0117-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0117* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0117-source/*.blend filter=lfs diff=lfs merge=lfs -text
+r0117-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+source-inputs/r0117-native-brows/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+makehuman-native-brow-textures/* -text

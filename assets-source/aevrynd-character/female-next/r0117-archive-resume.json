@@ -1,0 +1,5 @@
+{
+  "UTC": "2026-10-21T10:54:51.398133+00:00",
+  "failure": "First packaging check compared all old r116 row hashes including the intentionally rolling female-next.asset.json after normal r117 adoption. That single current manifest source/archive row differs; the other61 immutable historical records remain exact.",
+  "repair": "Verify all61 stable records against original hashes; verify the previous rolling manifest via byte-exact r117 manifest-before.json and original committed Git blob. Preserve current r117 adopted manifest. No production rerun, geometry change or round recount."
+}

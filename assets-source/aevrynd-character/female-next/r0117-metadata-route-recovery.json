@@ -1,0 +1,35 @@
+{
+  "UTC": "2026-10-21T10:34:53.043773+00:00",
+  "cause": "R117 delegated save() to imported r116 module whose global E still pointed at r116. Model/source/render paths were correct.",
+  "records": [
+    {
+      "file": "fibre-character-authoring-start.json",
+      "newMisroutedR117FileRelocatedOnly": true,
+      "sha256": "330a4be5153be1f75e860ddb4951101c68a271f238976f360ddaed5c608acf30"
+    },
+    {
+      "file": "native-fibre-authoring-checkpoint.json",
+      "newMisroutedR117FileRelocatedOnly": true,
+      "sha256": "129d4aae99c154ef1da9683a00e9eae0385816e4cbbe77b0ce6240259ca2a6aa"
+    },
+    {
+      "file": "actual-native-brow-bindings.json",
+      "newMisroutedR117FileRelocatedOnly": true,
+      "sha256": "c805081362772192e292ef11991ca2450445f9cc83da756b8afd9e9292f8cf8b"
+    },
+    {
+      "file": "a-build-summary.json",
+      "r117CurrentBytesPreserved": "89e6000cd1ab0e9bb36bb35503768a895ff608f04548be3741b9856f3f14312c",
+      "r116OriginalRestoredFromNormalCommittedBlob": "40e66f9d96dcee963c33c4947a8a581fbc587813bfe6a57a7a10ab26854208d1"
+    },
+    {
+      "file": "a-view-controls.json",
+      "r117CurrentBytesPreserved": "866e84a6b3a8b9aac8755bd658755798fed273ba39edef6f5cbda9eaceb75d8f",
+      "r116OriginalRestoredFromNormalCommittedBlob": "557d123061f042ea2fe6ee7761f776ce590b1b04bc6ec87773c23d72b0b09a49"
+    }
+  ],
+  "allPreviouslyArchivedR116SourceEvidenceAndScriptsNowByteExact": true,
+  "oldModelsNotWrittenOrChanged": true,
+  "r117SavedCandidateNotRebuiltOrRecounted": true,
+  "repair": "Use a local r117 writer; preserve first script and all r117 records, restore originals from exact committed Git blobs."
+}
