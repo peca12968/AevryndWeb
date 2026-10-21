@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0128-lid-domains.py", line 41, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0128-lid-domains.py", line 27, in main
+    assert ring[-1]==ring[0];ring=ring[:-1];assert len(set(ring))==len(ring)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
