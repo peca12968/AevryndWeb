@@ -1,0 +1,88 @@
+{
+  "kind": "PROMPT_MAINTENANCE_ONLY",
+  "version": "v33",
+  "startedUTC": "2026-10-21T02:59:56.017330+00:00",
+  "baseCommit": "4f539b7c7d00454404bd751170f3da5f159b5e2f",
+  "priorPromptSha256": "7c4a746fe7f92d27667a3060583135503cfe4006cbc77219e6dd2312fc32f155",
+  "protectedFilesSha256": {
+    "engine\\assets\\characters\\female-next\\female-next.asset.json": "fd2ebe1347def396ed9a7f11b6f8112e0c54cfbae7d70bc7c236c9b53aa7a29b",
+    "Evidence\\character-female-next\\r0104-native-artist-ocular-foundation\\continuation.json": "4d20810035fb46018e8673dbe20d260c99fc3a8534682743a1375c9e820ab5d1",
+    "Evidence\\character-female-next\\r0104-native-artist-ocular-foundation\\female-next-r0104.visual-audit.json": "ef4beb2a2267f62c890e5bee7cc79fe9ab634136f1d296fdca2f4153b62b313d",
+    "sites-engine-journey\\package.json": "85f1613c18e4c6c4624c743ea7fd18920292e944c8af69ff82d20f924f7a40de",
+    "sites-engine-journey\\public\\assets\\character-female-refined.glb": "cef44b6a11b59f6820fec8d221316d8acc481b809708b0aab38e7bfd427fbafe",
+    "sites-engine-journey\\public\\character-editor.js": "33427ba3d93c6c79342282139c08180488d42ac540756b40873ae31957368cf6",
+    "sites-engine-journey\\public\\index.html": "4916a587f690925862b30b8c14c926173ed6cde1b7a63566a663737e4281ac02",
+    "sites-engine-journey\\scripts\\character-contact.py": "ccc52e7d8640a67cf7439a7a22d0be414ca7329d1b5d9742554c715e316ecbb0",
+    "sites-engine-journey\\scripts\\refine-female.py": "25f30c6b300bcda6e1e6cab6ce6d454f59603c31a104505a6ca4ef8a0f7fe441",
+    "sites-engine-journey\\src\\character-contact.js": "da68c95736cc4a7970b3b93be9bfb23aa67596aa73a7f50c1d06b87f941516fb",
+    "sites-engine-journey\\src\\character-editor.js": "e2573f9bc95cbff140f8b81250d5a4dfa5fca44e060babe6326e62c33ca828f1",
+    "sites-engine-journey\\src\\character-materials.js": "2b389e91bbb6e33a33ff31d2d08c9fd28c4feae03ac45d543ccdd44c098bd6e8"
+  },
+  "sourceBlendCount": 261,
+  "sourceInventoryMetadataDigest": "51fe22d989359b3781a0e9ab6d7a04f36bc5c164e6fee29b20f59e9cfbe0d116",
+  "pendingIndexBefore": "",
+  "priorTrackedStatus": "M package.json\n M public/assets/character-female-refined.glb\n M public/character-editor.js\n M public/index.html\n M scripts/character-contact.py\n M scripts/refine-female.py\n M src/character-contact.js\n M src/character-editor.js\n M src/character-materials.js",
+  "pendingWorkHandoff": {
+    "latestRegisteredRevision": "female-next-r0104",
+    "latestContinuation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0104-native-artist-ocular-foundation\\continuation.json",
+    "latestEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0104-native-artist-ocular-foundation\\female-next-r0104.visual-audit.json",
+    "workingCompleteWomanReference": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0104-b2-native-head-material-repair.blend",
+      "sha256": "fc70f6ee029510b34c53530eece6cfa7367a6cef8b22ec2c2a3f6d2c2e0ee489",
+      "bytes": 627856298,
+      "status": "RETAIN_COMPLETE_NATIVE_HEAD_ART_DIRECTION_STATIC_SKIN_AND_MOUTH_DATA_UNACCEPTED",
+      "scope": "Same complete female body with actual original Dan Ulrich native animation-head surface and paired sclera/iris, true closed-volume neck union, repaired canonical body material indices, all original groom/lash counts and source lineages retained. New displayed skin is static: original control/guide sources remain but are not connected as a complete operation. Visible lip shading artifact, neck transition, approximate scalp/margin semantics and native optical surface intersections remain unaccepted. This is a complete offline art direction only, not whole appearance/operation/runtime adoption.",
+      "originalArtist": "Dan Ulrich",
+      "selectedHeadAndOpticAssetMetadataLicense": "CC0",
+      "formalRuntimeOrUserFemaleAcceptance": false
+    },
+    "controlContactReference": "engine/assets/characters/female-next/source/aevrynd-female-next-r0102-a-facet-aware-lining.blend",
+    "unregisteredProductionObserved": false,
+    "liveHeavyJobsObserved": [],
+    "observation": "No blender or git process at maintenance inspection. r104 completed and pushed; v32 pending r102 snapshot is superseded by actual r104 evidence. Existing Node processes are not attributed to character production.",
+    "countersCopiedWithoutModification": {
+      "productionRoundsSinceLastWholeCharacterReview": 0,
+      "lastReviewedProductionWindow": [
+        "r102",
+        "r103",
+        "r104"
+      ],
+      "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 24,
+      "nextWholeReviewAfterFurtherProductionRounds": 3
+    },
+    "nextProductionAction": "Continue from B2 as the same complete native-head art woman, keeping R102 finite-lining/function data and all original head/body/oral/rig/groom sources as explicit rollbacks/references. Protect the promising native head shape while repairing the construction that blocks its surface appearance and operation. Next choose the coherent visible lip/skin-data defect: isolate the remaining skin-shader channel using the actual native source chart and one unsaved controlled diagnostic, then author a native-head-specific coherent material/texture mapping or bake; do not repeat nearest per-vertex/domain-only UV resampling, normal-off/flat-colour concealment, pigment/IOR/roughness sweeps or analytic aperture/fold bands. Normal input removal did not cure it; untextured clay removed it; no largeUV tile jump was observed, so no single-channel cause is established. Produce complete head/body preview before expanding audits. New displayed skin is explicitly static: reconnect deformation/native blink and parent-guide editing in subsequent concrete construction, proving actual displayed response rather than just source controls. Native neutral optical intersections remain and must be repaired without throwing away the improved head shape or relaxing tolerance. Root cap/margin semantics, finite hair/cloth/self/continuous contacts and actual engine integration/budgets remain unaccepted. Two retained-looking foundations are not two accepted characters: the working art scene is B2; R102 is a labelled control/contact reference. Full source/rights preserved. No-adoption lower bound24 and next whole review after three further actual rounds; latest reviewed window r102/r103/r104. Female user approval remains required before male work.",
+    "nextActionIsProposalNotImplementationOrAdoption": true
+  },
+  "historyAllowlist": [
+    "AGENTS.md",
+    "docs/character-continuous-goal.md",
+    "docs/character-goal-v33-update.json"
+  ],
+  "activeGoalStatusObserved": "active",
+  "activeGoalObjectiveRewritten": false,
+  "newGoalOrScheduleCreated": false,
+  "modelIterationStarted": false,
+  "verifiedUTC": "2026-10-21T03:01:41.236817+00:00",
+  "promptSha256": "06a7aca5cb5cb897e7bd33c61d8e2e899e683e0449a9027a25a104494a9ee205",
+  "promptBytes": 16508,
+  "promptCopiesByteIdentical": true,
+  "bothAgentEntriesVersion": "v33",
+  "protectedFilesUnchanged": true,
+  "all261SourceMetadataUnchanged": true,
+  "retainedSourceHashVerified": true,
+  "stagedProductionBlobsPreserved": true,
+  "qualityAndResourceSectionsPreservedVerbatim": true,
+  "modelsManifestScoresAdoptionAcceptanceCountersAndHistoricalFindingsChanged": false,
+  "websiteChanges": false,
+  "automationsChanged": false,
+  "previousGoalTurnClassification": "progress: r104 authored native ocular/head constructions, retained B2 local complete-scene art direction with explicit static skin/contact failures and verified full history; no adopted complete-character improvement.",
+  "changes": [
+    "Reorganize execution around final character outcome, immediate authoring, explicit decisions and narrow handoff.",
+    "Separate observed symptom, causal hypothesis and discriminating test; do not turn failed causal guesses into historical facts.",
+    "Require actual displayed geometry response and neutral restore, with one clear working woman and explicit reconnect tasks.",
+    "Use unsaved reproducible diagnostics before deciding to save another large complete scene.",
+    "Keep strict quality/contact/runtime/rights/resources/history gates unchanged; no production edits or recounting."
+  ],
+  "designReference": "https://developers.openai.com/cookbook/examples/codex/using_goals_in_codex",
+  "gitTextNormalization": "Explicit LF bytes in both local mirrors and index; no content difference hidden by newline normalization."
+}
