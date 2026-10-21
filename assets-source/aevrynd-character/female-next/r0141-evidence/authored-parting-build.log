@@ -1,0 +1,13 @@
+00:10.671  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0139-source\aevrynd-female-next-r0139-a-native-lid-follow.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0141-authored-parting.py:66: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN141_ORIGINAL_DARK_BROWN_NATIVE_FIBRE');mat.use_nodes=True;nodes=mat.node_tree.nodes;nodes.clear();shader=nodes.new('ShaderNodeBsdfHairPrincipled');shader.parametrization='MELANIN';shader.inputs['Melanin'].default_value=.90;shader.inputs['Melanin Redness'].default_value=.15;shader.inputs['Roughness'].default_value=.35;shader.inputs['Radial Roughness'].default_value=.45;out=nodes.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(shader.outputs[0],out.inputs['Surface']);data.materials.append(mat);old.hide_render=True;old.hide_set(True);bpy.context.view_layer.update()
+00:43.671  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0141-authored-parting-flow\matched-a-authored-parting-face.png'
+00:50.250  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0141-authored-parting-flow\matched-a-authored-parting-body-face.png'
+01:05.171  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0141-authored-parting-flow\matched-a-authored-parting-profile.png'
+01:20.312  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0141-authored-parting-flow\matched-a-authored-parting-oblique.png'
+01:33.281  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0141-authored-parting-flow\matched-a-authored-parting-back.png'
+資訊: 已儲存為「aevrynd-female-next-r0141-a-authored-parting.blend」
+R141_COMPLETE_AUTHORED_PARTING_HEAD_BODY_PREVIEW_DONE 82.69754242897034
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
