@@ -1,0 +1,72 @@
+{
+  "construction": "Connected artist closure-support/lid-group annulus excluding nasal/oral domains, same explicit inner collar contour drives body cutter; true volumetric union planned. Finite outward0.8mm shell without even-offset amplification, fixed finite collar. Own source geometry/core poses, no pose transfer to old skin.",
+  "artist": "Rain Rig (CC) Blender Foundation | studio.blender.org / CC-BY4.0",
+  "parts": {
+    "L": {
+      "sourceCoreFaces": 2068,
+      "cutRegionFaces": 2154,
+      "patchFaces": 2231,
+      "newSurfaceVertices": 2318,
+      "sourceOpeningVertices": 76,
+      "sharedCutContourVertices": 96,
+      "outerAttachmentVertices": 98,
+      "sourceComponentBoundaryLoops": 2,
+      "noseMouthDominantFacesExcluded": true,
+      "fixedCollarVertices": 174,
+      "collarRayFittedVertices": 250
+    },
+    "R": {
+      "sourceCoreFaces": 2068,
+      "cutRegionFaces": 2154,
+      "patchFaces": 2231,
+      "newSurfaceVertices": 2318,
+      "sourceOpeningVertices": 76,
+      "sharedCutContourVertices": 96,
+      "outerAttachmentVertices": 98,
+      "sourceComponentBoundaryLoops": 2,
+      "noseMouthDominantFacesExcluded": true,
+      "fixedCollarVertices": 174,
+      "collarRayFittedVertices": 250
+    }
+  },
+  "finitePoseChecks": {
+    "L_half": {
+      "actualPairedDisplacementQuantilesM": [
+        0.0007999479849325684,
+        0.0007999999892998016,
+        0.0008000210074486121,
+        0.0008000553104722096
+      ],
+      "fixedFiniteCollarMaximumMoveM": 0.0
+    },
+    "L_closed": {
+      "actualPairedDisplacementQuantilesM": [
+        0.0007999431601475111,
+        0.000800000049437242,
+        0.0008000227707988184,
+        0.0008000532085809444
+      ],
+      "fixedFiniteCollarMaximumMoveM": 0.0
+    },
+    "R_half": {
+      "actualPairedDisplacementQuantilesM": [
+        0.0007999451479302636,
+        0.000800000028833065,
+        0.0008000258646117429,
+        0.0008000547856503878
+      ],
+      "fixedFiniteCollarMaximumMoveM": 0.0
+    },
+    "R_closed": {
+      "actualPairedDisplacementQuantilesM": [
+        0.0007999451479302636,
+        0.0008000000316086223,
+        0.0008000271306826735,
+        0.0008000548184777808
+      ],
+      "fixedFiniteCollarMaximumMoveM": 0.0
+    }
+  },
+  "noGlobalThicknessContactOrFullCharacterAcceptance": true,
+  "seconds": 5.865648031234741
+}

@@ -1,0 +1,15 @@
+00:01.781  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0107-b-native-pinned-lids.blend"
+R112_BOOLEAN DIFFERENCE 457824 912894
+R112_BOOLEAN DIFFERENCE 457977 912498
+R112_BOOLEAN UNION 79 57
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0112-topological-character.py", line 132, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0112-topological-character.py", line 87, in main
+    co,bi,dist=tree.find(Vector(W[vi]));assert dist<4e-6,('Missing retained scalp vertex',int(vi),dist);rootMap[int(vi)]=bi;rootErrors.append(dist)
+                                               ^^^^^^^^^
+AssertionError: ('Missing retained scalp vertex', 649, 0.07708615064620972)
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

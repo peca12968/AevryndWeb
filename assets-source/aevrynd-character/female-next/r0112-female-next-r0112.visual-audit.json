@@ -1,0 +1,123 @@
+{
+  "revision": "female-next-r0112",
+  "decision": "REJECT_TOPOLOGICAL_OCULAR_GRAFT_APPEARANCE_RETIRE_LOCAL_DONOR_FAMILY_KEEP_R107",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0107-b-native-pinned-lids.blend",
+    "sha256": "cc59c3c366148d16958eb35d9a3723e4be80165698712f88103f91c3d91c7c7f",
+    "bytes": 654016884,
+    "status": "RETAIN_COMPLETE_WORKING_WOMAN_PARTIAL_NATIVE_LID_OPERATION_FULL_BLINK_CONTACT_RUNTIME_UNACCEPTED",
+    "scope": "Same complete r105 woman, original neutral head/body/lip UV/shaders/textures/groom retained. Native coarse quad poses and half corrective baked into visible full skin, all412 source lash frames use actual triangle winding. A soft desired margins miss by6.8mm. B imposes exact stored coarse anchors but actual rendered aperture still does not close. Actual B skin moves8.36mm and restores0, frame reversals0. Local construction/partial control only, not a natural complete blink or complete character adoption."
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0112-a-sewn-topological-ocular.blend",
+      "sha256": "8d2564f484b0b67ace38da261f212bfb9637a00014884e385cc25ad22daf8eeb",
+      "bytes": 721266386,
+      "status": "REJECT_SEWN_DONOR_OCULAR_RINGS_AND_DISC_LIKE_CLOSED_POSE",
+      "scope": "One complete r107 woman with real source-topology ocular replacement, shared outer-contour cuts and767 explicit bridge triangles,4788 actual new mobile/short-return vertices, own source raw neutral/half/closed key coordinates, original24800 groom and all412 lash fibres. No successful volume union. Large r111 visible gaps/spikes are not present in this front sample, but neutral lower-lid rings and disc-like closed lids visibly regress complete human appearance. Two inner body-cut boundaries and short return boundaries remain unqualified. Original full skin/optics preserved hidden. Not adopted anatomy/complete operation/contact/runtime."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECT_CIRCULAR_LOWER_LID_RIMS_AND_DISC_LIKE_CLOSED_LIDS",
+      "evidence": [
+        "r0112-head-and-body-ab.png",
+        "r0112-closed-ab.png",
+        "r0112-actual-lid-poses.png",
+        "manual-visual-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "REOPEN_ACTUAL_SKIN_RESPONSE_AND_RESTORE_PASS_COMPLETE_NATURAL_BLINK_FAIL",
+      "evidence": "minimum-saved-seam-readback.json",
+      "states": [
+        {
+          "state": "neutral",
+          "assignedBlink": 0,
+          "maximumActualSkinMoveM": 0.0,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "actualKeys": {
+            "AFN112_L_closed": 0.0,
+            "AFN112_L_half": 0.0,
+            "AFN112_R_closed": 0.0,
+            "AFN112_R_half": 0.0
+          }
+        },
+        {
+          "state": "half",
+          "assignedBlink": 0.5,
+          "maximumActualSkinMoveM": 0.006975114719723562,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "actualKeys": {
+            "AFN112_L_closed": 0.4999999403953552,
+            "AFN112_L_half": 1.0,
+            "AFN112_R_closed": 0.4999999403953552,
+            "AFN112_R_half": 1.0
+          }
+        },
+        {
+          "state": "closed",
+          "assignedBlink": 1,
+          "maximumActualSkinMoveM": 0.01158352498162412,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "actualKeys": {
+            "AFN112_L_closed": 1.0,
+            "AFN112_L_half": 0.0,
+            "AFN112_R_closed": 1.0,
+            "AFN112_R_half": 0.0
+          }
+        },
+        {
+          "state": "restored",
+          "assignedBlink": 0,
+          "maximumActualSkinMoveM": 0.0,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "actualKeys": {
+            "AFN112_L_closed": 0.0,
+            "AFN112_L_half": 0.0,
+            "AFN112_R_closed": 0.0,
+            "AFN112_R_half": 0.0
+          }
+        }
+      ],
+      "originalSkinShaderGraphExact": true,
+      "neutralGroomMaxDifferenceM": 0.0,
+      "lashFrames": {
+        "allCurves": 412,
+        "consistentWithActualTriangleWinding": 412,
+        "reversed": 0,
+        "notActualTriangle": 0
+      },
+      "lowerBodyOrderedTriangleUVComparisonExact": false,
+      "completeOperationAccepted": false,
+      "wholeBodyRigAndGuideEditingUnaccepted": true
+    },
+    "contact": {
+      "status": "UNACCEPTED_SHORT_RETURN_ATTACHMENT_INTERNAL_OPEN_BOUNDARIES_SELF_CONTACT_AND_OPTICS_REQUIRE_PROOF",
+      "globalSignedMinimumM": null,
+      "oldContactWitnessCountsNotTransferredToNewGeometry": true,
+      "sampledStaticNotContinuousOrGlobal": true,
+      "fullFiniteSelfHairClothContinuousNaturalMotionCertified": false,
+      "attachmentEvidence": "a-attachment-summary.json",
+      "shortReturnEvidence": "sewn-construction-input.json",
+      "twoOtherBodyCutLoopsUnqualified": true,
+      "nominalOffsetOrBridgesNotFullFiniteVolumeProof": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 32,
+  "productionRoundsSinceLastWholeCharacterReview": 2,
+  "nextWholeReviewAfterFurtherProductionRounds": 1,
+  "femaleUserAcceptance": false,
+  "reviewUTC": "2026-10-21T07:09:17.985663+00:00",
+  "actualCompleteModelCandidates": 1,
+  "failedLaunchAndUnionNotExtraCompletedModelRounds": true,
+  "wholeCharacterScore": null
+}

@@ -1,0 +1,16 @@
+from pathlib import Path
+import bpy,numpy as np,json,importlib.util
+R=Path('D:/Download/Aevrynd');E=R/'Evidence/character-female-next/r0112-topological-ocular-graft';SRC=R/'Reference/character/blender-studio-rain-v3-cc-by4/Rain v3.3/rain_v3.2.blend'
+sp=importlib.util.spec_from_file_location('r112weights',Path(__file__).with_name('build-female-next-r0104-native-head-union.py'));u=importlib.util.module_from_spec(sp);sp.loader.exec_module(u);q=u.q
+with bpy.data.libraries.load(str(SRC),link=False) as (a,b):b.objects=['GEO-rain-head','RIG-rain']
+for ob in list(bpy.data.objects):
+ if ob.name not in bpy.context.scene.objects:bpy.context.scene.collection.objects.link(ob)
+head=bpy.data.objects['GEO-rain-head'];head.driver_remove('modifiers["Subdivision"].levels');head.modifiers['Subdivision'].levels=1;bpy.context.scene.frame_set(1);basis=q.arr(head.data.shape_keys.key_blocks['Basis'].data,'co',len(head.data.vertices),3)
+for side in ['L','R']:
+ key=q.arr(head.data.shape_keys.key_blocks['EyelidsClose.'+side].data,'co',len(head.data.vertices),3);support=(np.linalg.norm(key-basis,axis=1)>1e-8).astype('f4');head.data.attributes.new(name='AFN112_AUTHORED_LID_'+side,type='FLOAT',domain='POINT').data.foreach_set('value',support)
+head.data.update();head.update_tag();bpy.context.view_layer.update();d,V,T=u.b.geom(head);ref=np.load(E.parent/'r0111-native-mobile-lid-mesh/actual-rain-ocular-geometry.npz');counts=q.arr(d.polygons,'loop_total',len(d.polygons),dtype='i4');loops=q.arr(d.loops,'vertex_index',len(d.loops),dtype='i4');assert np.array_equal(counts,ref['head_neutralPolygonCounts']) and np.array_equal(loops,ref['head_neutralLoopVertexIndices']);names=[g.name for g in head.vertex_groups];dominant=np.full(len(d.vertices),-1,'i4');lid={s:np.zeros(len(d.vertices),'f4') for s in ['L','R']};members={s:{g.index for g in head.vertex_groups if g.name.endswith('.'+s) and g.name.startswith(('DEF-Eyelid_','DEF-EyeLid_','DEF-Crease_Lid_'))} for s in lid}
+for i,v in enumerate(d.vertices):
+ gs=list(v.groups)
+ if gs:dominant[i]=max(gs,key=lambda x:x.weight).group
+ for side,ids in members.items():lid[side][i]=sum(g.weight for g in gs if g.group in ids)
+np.savez_compressed(E/'actual-rain-lid-groups.npz',dominantGroup=dominant,lidL=lid['L'],lidR=lid['R'],shapeSupportL=q.arr(d.attributes['AFN112_AUTHORED_LID_L'].data,'value',len(d.vertices)),shapeSupportR=q.arr(d.attributes['AFN112_AUTHORED_LID_R'].data,'value',len(d.vertices)));report={'source':str(SRC),'actualEvaluatedPolygonGraphMatchesCapturedSource':True,'vertices':len(d.vertices),'authoredClosureSupportVertices':{side:int(np.count_nonzero(q.arr(d.attributes['AFN112_AUTHORED_LID_'+side].data,'value',len(d.vertices))>0)) for side in ['L','R']},'verticesWithDeformGroup':int(np.count_nonzero(dominant>=0)),'groupNames':names,'lidGroupIndices':{s:sorted(ids) for s,ids in members.items()},'dominantLidVertices':{s:int(np.count_nonzero(np.isin(dominant,list(ids)))) for s,ids in members.items()}};(E/'actual-rain-lid-groups.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8');print('R112_ACTUAL_SOURCE_LID_GROUPS',report['verticesWithDeformGroup'],report['dominantLidVertices'],report['authoredClosureSupportVertices'],flush=True)
