@@ -1,0 +1,14 @@
+{
+  "observedUTC": "2026-10-21T00:12:08.469737+00:00",
+  "reason": "Repeated per-new-point uv[~remove][fi] scans/copies the complete retained face UV table. Cache the identical retained array once, without changing numerical authoring or model construction. Not a restart due to observation timeout.",
+  "uvRows": 1354880,
+  "newPatchPoints": 11202,
+  "uvLayersAssumed": 2,
+  "measuredSecondsPerFullMaskSelection": 0.014282099999945785,
+  "estimatedSecondsRepeatedSelectionsOnly": 319.9761683987854,
+  "exactOperationOriginal": "weights @ uv[~remove][fi]",
+  "exactOperationReplacement": "weights @ retainedUV[name][fi]",
+  "noCandidateSourceFilePresent": true,
+  "originalDeadlinePreserved": "2026-10-21T00:24:24+00:00",
+  "ownProcessIDToVerifyBeforeStop": 268
+}

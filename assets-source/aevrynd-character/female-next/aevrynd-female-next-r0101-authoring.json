@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "revision": "female-next-r0101",
+  "decision": "RETAIN_B2_COMPLETE_WOMAN_LOCAL_ORBITAL_LID_SHAPE_REJECT_MOVING_FACET_CONTACT",
+  "completeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0101-a-articulated-eyelids.blend",
+      "sha256": "ac4027f703089d2ecad19ad8ced5efbb9c0e920f5ac1245b062e3e6a46594721",
+      "bytes": 569608218,
+      "status": "REJECT_RESTRICTED_SOCKET_BOUNDARY_AND_LEGACY_BLINK_CONFLICT"
+    },
+    "a2": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0101-a2-lash-attachment.blend",
+      "sha256": "47dd6419bd1a99dea930b0e9c6ef73680600a6d57dbde2ad3624cb3112b3e21a",
+      "bytes": 569695279,
+      "status": "REJECT_SAME_ART_WITH_BINDING_REPAIR_DYNAMIC_SURFACE_STILL_FAILS"
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0101-b-orbital-lid-reconstruction.blend",
+      "sha256": "9c2edf7ba9a29d0437abcfa58307bdbf777e03d680d324364bc937185f75f4a4",
+      "bytes": 569503113,
+      "status": "RETAIN_ORBITAL_CONSTRUCTION_ONLY_UV_ATTACHMENT_INCOMPLETE"
+    },
+    "b2": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0101-b2-lid-uv-and-attachment.blend",
+      "sha256": "be6fbf4658a6e47fc2684d2b94becf8e26d047d4a71b142d6d494ee5cee13a2c",
+      "bytes": 569586982,
+      "status": "RETAIN_COMPLETE_WORKING_WOMAN_LOCAL_LID_DIRECTION_HALF_BLINK_CONTACT_UNACCEPTED"
+    }
+  },
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0101-b2-lid-uv-and-attachment.blend",
+    "sha256": "be6fbf4658a6e47fc2684d2b94becf8e26d047d4a71b142d6d494ee5cee13a2c",
+    "bytes": 569586982,
+    "status": "RETAIN_COMPLETE_WORKING_WOMAN_LOCAL_LID_DIRECTION_HALF_BLINK_CONTACT_UNACCEPTED",
+    "scope": "Same complete C woman with shared-vertex reconstructed orbital lids, finite short inner wall and posterior cup; own upper/lower closure instead of legacy C blink, coherent local UV, all original412 lashes/6998 controls bound to actual new margin triangles, all24800 groom root indices remapped to compact actual skin. Original retained body/UV/groom positions exactly preserved at neutral. Local shape/editability/binding direction only: half-blink actual triangle-surface intersection/contact witnesses prevent adoption, complete operation, finite/continuous contact or runtime acceptance.",
+    "originalArtist": "Dan Ulrich",
+    "selectedOriginalBodyAssetLicense": "CC0",
+    "formalRuntimeOrUserFemaleAcceptance": false
+  },
+  "rights": "Vitruvian Bob/body source data CC0 per pinned c252d1fc7f00ba59d87b66b3d32fa3471fc6ee44 config. Project credits Sean Buckley, Olaf Delgado-Friedrichs and original contributors; full source config/NOTICE preserved, individual Bob author not inferred from its name. Separate inherited Brown material/hidden research: Daniel Bystedt CC BY-SA version unspecified, not relabelled CC0 or exclusively owned. No source addon/embedded scripts executed and no paid runtime dependency. New r97 anatomy/control curves and own geometry-node/verification code are modifications on those source data, not exclusively owned original source artwork. Upstream Blender GPL source snapshots and COPYING are unmodified read-only build references, separately credited; not compiled, linked, executed as source addons or copied into required engine runtime. R98 selected Body Female - Realistic fine mesh: Dan Ulrich, CC0 per original embedded asset metadata and bundle README. Unrelated orphan Rain Rig CC BY4 license text remains an original source notice, not a license assigned to every bundle asset. Full original bundle and embedded texts preserved; no original embedded scripts executed. New assembly and transfer code does not grant exclusive ownership of original data. R99 keeps the original Dan Ulrich CC0 continuous fine body/head and original UV/base multires object, with explicit lower-body floor and retained-head identity calibration. New weld/annulus/control/material transfer code and derived data do not confer exclusive ownership of source artwork. Existing Brown/material/hidden-source notices remain separately applicable. No new runtime or paid platform dependency. R101 reconstructs an explicit orbital lid/socket component on the same C woman; actual r97 evaluated skin supplies an authoring contour reference. Original geometry, licenses, source bundle, source groom and materials remain separately attributed. New topology, own blink routing, local UV chart and root-frame code do not confer exclusive ownership of original artwork. Epic Digital Humans documentation is conceptual reference only; no Epic assets, shaders, code or runtime are imported.",
+  "evidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0101-articulated-eyelid-topology\\female-next-r0101.visual-audit.json",
+  "continuation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0101-articulated-eyelid-topology\\continuation.json",
+  "appearanceOrCompleteOperationRuntimeAdopted": false,
+  "scope": "Six evaluated-input sampled blink states including exact neutral restore; not natural temporal calibration or continuous/finite-global contact acceptance."
+}

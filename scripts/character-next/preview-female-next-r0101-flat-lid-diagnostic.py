@@ -1,0 +1,8 @@
+from pathlib import Path
+import bpy,importlib.util,json
+R=Path("D:/Download/Aevrynd");E=R/"Evidence/character-female-next/r0101-articulated-eyelid-topology";S=R/"engine/assets/characters/female-next/source"
+sp=importlib.util.spec_from_file_location("r101diag",R/"scripts/character-next/preview-female-next-r0101-own-blink-routing.py");m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);m.v.E=E
+bpy.ops.wm.open_mainfile(filepath=str(S/"aevrynd-female-next-r0101-b-orbital-lid-reconstruction.blend"));bpy.context.scene.frame_set(1);bpy.context.view_layer.update()
+for ob in [bpy.data.objects["AFN59_FACE_CONTROLS"],bpy.data.objects["AFN74_ORAL_CONTROLS"]]:
+ if ob.animation_data:ob.animation_data.action=None
+m.inputs(1.);skin=bpy.data.objects["AFN101_CONTINUOUS_WOMAN_WITH_ARTICULATED_LIDS"];material=bpy.data.materials.new("AFN101_DIAGNOSTIC_UNTEXTURED_SKIN_ONLY");material.use_nodes=True;material.node_tree.nodes.clear();bs=material.node_tree.nodes.new("ShaderNodeBsdfPrincipled");out=material.node_tree.nodes.new("ShaderNodeOutputMaterial");material.node_tree.links.new(bs.outputs["BSDF"],out.inputs["Surface"]);bs.inputs["Base Color"].default_value=(.4,.25,.19,1);bs.inputs["Roughness"].default_value=.5;skin.data.materials[4]=material;bpy.context.view_layer.update();row=m.v.image("b-closed-flat-diagnostic-only","face");(E/"b-flat-diagnostic-scope.json").write_text(json.dumps({"source":"r0101-b","actualRenderedFace":row,"diagnosticOnly":True,"materialSlot4TemporarilyUntextured":True,"noSourceSaved":True,"notBeautyOrAdoptionEvidence":True},indent=2)+"\n",encoding="utf8");print("R101_FLAT_LID_DIAGNOSTIC_DONE",flush=True)
