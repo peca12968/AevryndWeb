@@ -255,3 +255,11 @@ r0103-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 aevrynd-female-next-r0103* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 r0103-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 aevrynd-female-next-r0103-a-anatomical-front-bands.blend filter=lfs diff=lfs merge=lfs -text
+# Exact r104 native-head sources, diagnostics and scoped failures.
+r0104-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0104* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0104-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+aevrynd-female-next-r0104-a-native-artist-ocular.blend filter=lfs diff=lfs merge=lfs -text
+aevrynd-female-next-r0104-b-native-head-volume-union.blend filter=lfs diff=lfs merge=lfs -text
+aevrynd-female-next-r0104-b2-native-head-material-repair.blend filter=lfs diff=lfs merge=lfs -text
+aevrynd-female-next-r0104-b3-native-head-skin-domain.blend filter=lfs diff=lfs merge=lfs -text

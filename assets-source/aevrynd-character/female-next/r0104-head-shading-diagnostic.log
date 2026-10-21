@@ -1,0 +1,9 @@
+00:01.734  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0104-b2-native-head-material-repair.blend"
+00:33.015  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0104-native-artist-ocular-foundation\matched-diagnostic-normal-off-face.png'
+D:\Download\Aevrynd\scripts\character-next\diagnose-female-next-r0104-head-shading.py:9: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  skin.data.materials[4]=mat;views=[v.image('diagnostic-normal-off','face')];clay=bpy.data.materials.new('AFN104_DIAGNOSTIC_ONLY_CLAY');clay.use_nodes=True;clay.node_tree.nodes.clear();bs=clay.node_tree.nodes.new('ShaderNodeBsdfPrincipled');out=clay.node_tree.nodes.new('ShaderNodeOutputMaterial');clay.node_tree.links.new(bs.outputs['BSDF'],out.inputs['Surface']);bs.inputs['Base Color'].default_value=(.28,.28,.28,1);bs.inputs['Roughness'].default_value=.6;skin.data.materials[4]=clay;views.append(v.image('diagnostic-native-clay','face'));(E/'head-shading-diagnostic.json').write_text(json.dumps({'source':str(P),'sourceNotSaved':True,'originalSkinMaterial':original.name,'normalLinksRemovedTemporarily':removed,'diagnosticViews':views,'notCompleteAppearanceAdoptionOrContactEvidence':True,'scope':'Causal normal-input removal, then independent untextured clay on the exact same actual geometry. Shader/skin changes are temporary, unaccepted diagnostics.','seconds':time.time()-tick},indent=2)+'\n',encoding='utf8',newline='\n');print('R104_UNSAVED_SHADING_DIAGNOSTIC_DONE',time.time()-tick,flush=True)
+00:48.547  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0104-native-artist-ocular-foundation\matched-diagnostic-native-clay-face.png'
+R104_UNSAVED_SHADING_DIAGNOSTIC_DONE 50.23750185966492
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

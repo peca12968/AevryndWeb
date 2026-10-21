@@ -1,0 +1,14 @@
+00:01.047  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0102-a-facet-aware-lining.blend"
+D:\Download\Aevrynd\scripts\character-next\view-female-next-r0104-native-heads.py:26: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  clay=bpy.data.materials.new('AFN104_SOURCE_REFERENCE_CLAY');clay.use_nodes=True;clay.node_tree.nodes.clear();bs=clay.node_tree.nodes.new('ShaderNodeBsdfPrincipled');out=clay.node_tree.nodes.new('ShaderNodeOutputMaterial');clay.node_tree.links.new(bs.outputs['BSDF'],out.inputs['Surface']);bs.inputs['Base Color'].default_value=(.28,.28,.28,1);bs.inputs['Roughness'].default_value=.6
+00:22.281  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0104-native-artist-ocular-foundation\matched-native-animation-reference-face.png'
+00:26.656  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0104-native-artist-ocular-foundation\matched-native-animation-reference-profile.png'
+R104_ACTUAL_SOURCE_HEAD_INSPECT animation
+00:26.656  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\aevrynd-female-next-r0102-a-facet-aware-lining.blend"
+00:52.234  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0104-native-artist-ocular-foundation\matched-native-sculpting-reference-face.png'
+00:56.500  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0104-native-artist-ocular-foundation\matched-native-sculpting-reference-profile.png'
+R104_ACTUAL_SOURCE_HEAD_INSPECT sculpting
+R104_NATIVE_HEAD_REFERENCE_DONE 55.46562433242798
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
