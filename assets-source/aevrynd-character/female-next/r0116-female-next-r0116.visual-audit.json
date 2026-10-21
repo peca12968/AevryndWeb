@@ -1,0 +1,1195 @@
+{
+  "revision": "female-next-r0116",
+  "decision": "RETAIN_NATIVE_EYE_RESEARCH_NO_COMPLETE_GAIN_KEEP_R115_B",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0115-source\\aevrynd-female-next-r0115-b-continuous-native-neutral.blend",
+    "sha256": "507c338f2022f024722507bffa58e5874382b7735b0ff440fdb85f2d55a88457",
+    "bytes": 109047707,
+    "status": "ADOPT_SCOPED_COMPLETE_NEUTRAL_NECK_SHOULDER_APPEARANCE_GAIN",
+    "scope": "Same complete woman with original connected adult head-neck-shoulder-body topology, same whole-head staging/native UV/own closure. Actual complete primary front/body/profile/back and matched second light show neck collar/tab/folds removed, retained face/fibres. Body silhouette and rest arm pose change with the coherent native body and remain subject to later body/function review. Static neck/shoulder appearance gain only; full anatomy, body rig, natural hair, finite/full/continuous contact, runtime, scores and female user acceptance remain unaccepted.",
+    "renderSkin": "AFN113_COMPLETE_WOMAN_COHERENT_HEAD",
+    "rawEditableSource": "AFN115_EDITABLE_CONNECTED_NATIVE_ADULT_SOURCE",
+    "actualFaceControls": "AFN59_FACE_CONTROLS / blink_left, blink_right",
+    "appearanceAdoptionScope": "Static neutral complete-character neck/shoulder appearance in documented primary and second-light views; other gates separate.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0116-source\\aevrynd-female-next-r0116-a-native-paired-eyes.blend",
+      "sha256": "26f23d62a207fd7366da40623a9a7ecf19ae15ebd9a251bf264c32164d66b551",
+      "bytes": 109085382,
+      "status": "RETAIN_UNACCEPTED_SOURCE_NATIVE_EYE_CONSTRUCTION_RESEARCH_NOT_WORKING_PROMOTION",
+      "scope": "One complete same r115 B woman with four inspected actual MakeHuman high-poly native eye surfaces, original MHCLO correspondence on the same adult native morphology/world staging, native brown texture and one fixed initial clear-PBR/opaque-inner representation. Old helper-sized optics preserved hidden. Body/all keys/all hair/brow/lash points/radii are byte-exact. Source eye points match original mapped data within0.050micrometres; inherited own blink restores. Iris glare and whole doll-like eye/face remain, all four actual new skin/optic pairs have capped neutral intersection-or-touch witnesses. Finite corneal wall, separate iris/pupil anatomy, gaze, complete operation/contact/runtime/rights/user acceptance unaccepted."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "UNACCEPTED_COMPLETE_EYE_FACE_NET_GAIN_NOT_ESTABLISHED",
+      "evidence": [
+        "r0116-head-and-body-ab.png",
+        "r0116-oblique-and-second-light-ab.png",
+        "manual-visual-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "INDEPENDENT_SOURCE_GEOMETRY_AND_PRESERVED_OWN_BLINK_VERIFIED_COMPLETE_EYE_OPERATION_UNACCEPTED",
+      "evidence": "minimum-saved-native-eye-readback.json",
+      "actualPoseStates": [
+        {
+          "state": "neutral",
+          "assignedBlink": 0.0,
+          "actualSkinAgainstOwnOriginalNativeSourceMaxM": 0.0,
+          "actualSkinMaximumMoveM": 0.0
+        },
+        {
+          "state": "half",
+          "assignedBlink": 0.5,
+          "actualSkinAgainstOwnOriginalNativeSourceMaxM": 4.268315163869289e-07,
+          "actualSkinMaximumMoveM": 0.005015363155085551
+        },
+        {
+          "state": "closed",
+          "assignedBlink": 1.0,
+          "actualSkinAgainstOwnOriginalNativeSourceMaxM": 0.0,
+          "actualSkinMaximumMoveM": 0.01003083295371408
+        },
+        {
+          "state": "restored",
+          "assignedBlink": 0.0,
+          "actualSkinAgainstOwnOriginalNativeSourceMaxM": 0.0,
+          "actualSkinMaximumMoveM": 0.0
+        }
+      ],
+      "actualEyeSourceIdentity": [
+        {
+          "name": "AFN116_L_CORNEAL_SURFACE",
+          "sourceVertices": 256,
+          "actualTriangles": 490,
+          "actualWorldAgainstOriginalNativeMappedSourceMaxM": 4.972730871573531e-08,
+          "finiteWallThicknessOrIndependentIrisPupilNotProved": true
+        },
+        {
+          "name": "AFN116_L_SCLERA_IRIS_PUPIL_SURFACE",
+          "sourceVertices": 276,
+          "actualTriangles": 530,
+          "actualWorldAgainstOriginalNativeMappedSourceMaxM": 4.938998768371047e-08,
+          "finiteWallThicknessOrIndependentIrisPupilNotProved": true
+        },
+        {
+          "name": "AFN116_R_CORNEAL_SURFACE",
+          "sourceVertices": 256,
+          "actualTriangles": 490,
+          "actualWorldAgainstOriginalNativeMappedSourceMaxM": 3.90627516241585e-08,
+          "finiteWallThicknessOrIndependentIrisPupilNotProved": true
+        },
+        {
+          "name": "AFN116_R_SCLERA_IRIS_PUPIL_SURFACE",
+          "sourceVertices": 276,
+          "actualTriangles": 530,
+          "actualWorldAgainstOriginalNativeMappedSourceMaxM": 3.860948116387436e-08,
+          "finiteWallThicknessOrIndependentIrisPupilNotProved": true
+        }
+      ],
+      "completeOperationAccepted": false,
+      "gazeIrisPupilFiniteWallAndBodyOralGuidesNaturalMotionUnaccepted": true
+    },
+    "contact": {
+      "status": "UNACCEPTED",
+      "actualSurfaceWitnesses": [
+        {
+          "state": "neutral",
+          "pair": "actual complete skin vs AFN116_L_CORNEAL_SURFACE",
+          "BVHCandidatePairs": 624,
+          "candidatePairsTestedUntilWitnessCap": 16,
+          "storedIntersectionOrTouchWitnesses": 16,
+          "witnessCap": 16,
+          "witnesses": [
+            {
+              "actualSkinTriangle": 361892,
+              "actualEyeTriangle": 207,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.0437000943584061,
+                  -0.10420175215169558,
+                  1.4566281512787076
+                ],
+                [
+                  0.04356710361250249,
+                  -0.10396543978917239,
+                  1.4565233806292412
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 361891,
+              "actualEyeTriangle": 206,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04390320477612206,
+                  -0.10466908188263416,
+                  1.4567281887338497
+                ],
+                [
+                  0.04386936085213197,
+                  -0.10458114955725185,
+                  1.4567176244011177
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 361891,
+              "actualEyeTriangle": 207,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.043866095283822945,
+                  -0.10457280840519964,
+                  1.4567164683474754
+                ],
+                [
+                  0.04386936085213198,
+                  -0.10458114955725185,
+                  1.4567176244011177
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 361888,
+              "actualEyeTriangle": 207,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.043866095283822945,
+                  -0.10457280840519964,
+                  1.4567164683474754
+                ],
+                [
+                  0.043742224966467444,
+                  -0.10430139454238843,
+                  1.4566475139195658
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 361889,
+              "actualEyeTriangle": 207,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.043742224966467444,
+                  -0.10430139454238843,
+                  1.4566475139195658
+                ],
+                [
+                  0.0437000943584061,
+                  -0.10420175215169558,
+                  1.4566281512787076
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 361890,
+              "actualEyeTriangle": 206,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04391333707429178,
+                  -0.1046938945992311,
+                  1.4567322015159443
+                ],
+                [
+                  0.04390320477612206,
+                  -0.10466908188263416,
+                  1.4567281887338497
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 361901,
+              "actualEyeTriangle": 206,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04403470649145029,
+                  -0.10511987426290864,
+                  1.4567079179825442
+                ],
+                [
+                  0.04391333707429178,
+                  -0.1046938945992311,
+                  1.4567322015159443
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 361900,
+              "actualEyeTriangle": 206,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04405470565076171,
+                  -0.10518598921870081,
+                  1.4567062077751307
+                ],
+                [
+                  0.04403470649145029,
+                  -0.10511987426290864,
+                  1.4567079179825442
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 241457,
+              "actualEyeTriangle": 206,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04406643646204803,
+                  -0.10525240814786616,
+                  1.4566896748243114
+                ],
+                [
+                  0.04413673016904558,
+                  -0.10568987982527764,
+                  1.4565684251603057
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 241456,
+              "actualEyeTriangle": 206,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04405470565076171,
+                  -0.10518598921870081,
+                  1.4567062077751307
+                ],
+                [
+                  0.04406643646204803,
+                  -0.10525240814786616,
+                  1.4566896748243114
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 241442,
+              "actualEyeTriangle": 206,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04413673016904558,
+                  -0.10568987982527764,
+                  1.4565684251603057
+                ],
+                [
+                  0.04413690868625822,
+                  -0.10569419180649621,
+                  1.4565663186153417
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 241443,
+              "actualEyeTriangle": 206,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04413690868625822,
+                  -0.10569419180649621,
+                  1.4565663186153417
+                ],
+                [
+                  0.044137232207880524,
+                  -0.10570538112913376,
+                  1.4565606046723223
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 241446,
+              "actualEyeTriangle": 206,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.044137232207880524,
+                  -0.10570538112913376,
+                  1.4565606046723223
+                ],
+                [
+                  0.04412059784084249,
+                  -0.10604614024404263,
+                  1.4563396563900644
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 241447,
+              "actualEyeTriangle": 206,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04412059784084249,
+                  -0.10604614024404263,
+                  1.4563396563900644
+                ],
+                [
+                  0.044109366860210386,
+                  -0.10622341970895811,
+                  1.4562201418160394
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 241444,
+              "actualEyeTriangle": 206,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.044109366860210386,
+                  -0.10622341970895811,
+                  1.4562201418160394
+                ],
+                [
+                  0.04407481696069039,
+                  -0.10637438186009221,
+                  1.4560740925113118
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 241445,
+              "actualEyeTriangle": 206,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04407481696069039,
+                  -0.10637438186009221,
+                  1.4560740925113118
+                ],
+                [
+                  0.04404848359057526,
+                  -0.10648437061302561,
+                  1.4559656261281708
+                ]
+              ]
+            }
+          ],
+          "noBodyRegionOrRootExclusions": true,
+          "notGlobalTotalSignedMinimumOrFiniteProof": true
+        },
+        {
+          "state": "neutral",
+          "pair": "actual complete skin vs AFN116_L_SCLERA_IRIS_PUPIL_SURFACE",
+          "BVHCandidatePairs": 666,
+          "candidatePairsTestedUntilWitnessCap": 16,
+          "storedIntersectionOrTouchWitnesses": 16,
+          "witnessCap": 16,
+          "witnesses": [
+            {
+              "actualSkinTriangle": 241366,
+              "actualEyeTriangle": 174,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04513985340250595,
+                  -0.10679342185399411,
+                  1.465300480948874
+                ],
+                [
+                  0.04514069849190163,
+                  -0.1067955249748311,
+                  1.4652976695090105
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 241351,
+              "actualEyeTriangle": 174,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04503998203677831,
+                  -0.10650621539487208,
+                  1.465548995634126
+                ],
+                [
+                  0.04513985340250595,
+                  -0.10679342185399411,
+                  1.465300480948874
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 242725,
+              "actualEyeTriangle": 175,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04464279958278474,
+                  -0.10497634174087041,
+                  1.4657004408457366
+                ],
+                [
+                  0.04459443986335945,
+                  -0.10472808236543686,
+                  1.465587107800469
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 242724,
+              "actualEyeTriangle": 175,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04466292731203661,
+                  -0.10508207212103084,
+                  1.4657527654463698
+                ],
+                [
+                  0.04464279958278474,
+                  -0.10497634174087041,
+                  1.4657004408457366
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 242721,
+              "actualEyeTriangle": 174,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04471640414606554,
+                  -0.10532180768930498,
+                  1.465804323406519
+                ],
+                [
+                  0.044696677791416776,
+                  -0.10523391058853371,
+                  1.4657859033942064
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 242721,
+              "actualEyeTriangle": 175,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04466292731203661,
+                  -0.10508207212103084,
+                  1.4657527654463698
+                ],
+                [
+                  0.044696677791416776,
+                  -0.10523391058853371,
+                  1.4657859033942064
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 242720,
+              "actualEyeTriangle": 174,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04476057145538597,
+                  -0.10552335457958525,
+                  1.4658558432456714
+                ],
+                [
+                  0.04471640414606554,
+                  -0.10532180768930498,
+                  1.465804323406519
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 242747,
+              "actualEyeTriangle": 175,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04454421035770161,
+                  -0.10437711015139683,
+                  1.4652696390564566
+                ],
+                [
+                  0.04450648205759195,
+                  -0.10410806398585534,
+                  1.46501954548729
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 242746,
+              "actualEyeTriangle": 175,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04457554597362783,
+                  -0.10461215766707968,
+                  1.4655022171710221
+                ],
+                [
+                  0.04454421035770161,
+                  -0.10437711015139683,
+                  1.4652696390564566
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 242748,
+              "actualEyeTriangle": 175,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04459443986335945,
+                  -0.10472808236543686,
+                  1.465587107800469
+                ],
+                [
+                  0.04458330178789699,
+                  -0.10465839689428542,
+                  1.4655341743689614
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 242731,
+              "actualEyeTriangle": 174,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04480654599436127,
+                  -0.10570085606452678,
+                  1.4658395318212136
+                ],
+                [
+                  0.04476057145538597,
+                  -0.10552335457958525,
+                  1.4658558432456714
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 242749,
+              "actualEyeTriangle": 175,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04458330178789699,
+                  -0.10465839689428542,
+                  1.4655341743689614
+                ],
+                [
+                  0.04457554597362783,
+                  -0.10461215766707968,
+                  1.4655022171710221
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 242730,
+              "actualEyeTriangle": 174,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04486991543667331,
+                  -0.10595128279318479,
+                  1.4658295366746452
+                ],
+                [
+                  0.04480654599436127,
+                  -0.10570085606452678,
+                  1.4658395318212136
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 241362,
+              "actualEyeTriangle": 174,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.04486991543667331,
+                  -0.10595128279318479,
+                  1.4658295366746452
+                ],
+                [
+                  0.044935948882358995,
+                  -0.106176778984508,
+                  1.465742324947092
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 241363,
+              "actualEyeTriangle": 174,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.044935948882358995,
+                  -0.106176778984508,
+                  1.465742324947092
+                ],
+                [
+                  0.044995364404347135,
+                  -0.10637458914136748,
+                  1.465652836905737
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 241350,
+              "actualEyeTriangle": 174,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  0.044995364404347135,
+                  -0.10637458914136748,
+                  1.465652836905737
+                ],
+                [
+                  0.04503998203677831,
+                  -0.10650621539487208,
+                  1.465548995634126
+                ]
+              ]
+            }
+          ],
+          "noBodyRegionOrRootExclusions": true,
+          "notGlobalTotalSignedMinimumOrFiniteProof": true
+        },
+        {
+          "state": "neutral",
+          "pair": "actual complete skin vs AFN116_R_CORNEAL_SURFACE",
+          "BVHCandidatePairs": 624,
+          "candidatePairsTestedUntilWitnessCap": 16,
+          "storedIntersectionOrTouchWitnesses": 16,
+          "witnessCap": 16,
+          "witnesses": [
+            {
+              "actualSkinTriangle": 31061,
+              "actualEyeTriangle": 42,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.01975620327644484,
+                  -0.10465399151263229,
+                  1.474372454745244
+                ],
+                [
+                  -0.019777347237211695,
+                  -0.10470921846134566,
+                  1.474410272871143
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 31063,
+              "actualEyeTriangle": 42,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.019785712495973187,
+                  -0.10474764101622343,
+                  1.474430287673063
+                ],
+                [
+                  -0.019906944908946022,
+                  -0.1053388983234434,
+                  1.474730844448287
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 31062,
+              "actualEyeTriangle": 42,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.019777347237211695,
+                  -0.10470921846134566,
+                  1.474410272871143
+                ],
+                [
+                  -0.019785712495973187,
+                  -0.10474764101622343,
+                  1.474430287673063
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30420,
+              "actualEyeTriangle": 43,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.01978696381797038,
+                  -0.10655577776306775,
+                  1.474984151638885
+                ],
+                [
+                  -0.019682930195640828,
+                  -0.10678208637964304,
+                  1.474951478161344
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30421,
+              "actualEyeTriangle": 43,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.019682930195640828,
+                  -0.10678208637964304,
+                  1.474951478161344
+                ],
+                [
+                  -0.019513700997216412,
+                  -0.10714079556701306,
+                  1.4748954133833625
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30422,
+              "actualEyeTriangle": 43,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.019513700997216412,
+                  -0.10714079556701306,
+                  1.4748954133833625
+                ],
+                [
+                  -0.01949351866834328,
+                  -0.10716941394925134,
+                  1.4748843449868567
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30422,
+              "actualEyeTriangle": 38,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.019502306997979512,
+                  -0.10729559690420291,
+                  1.4749079655487858
+                ],
+                [
+                  -0.01949351866834328,
+                  -0.10716941394925134,
+                  1.4748843449868567
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30423,
+              "actualEyeTriangle": 38,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.019502306997979512,
+                  -0.10729559690420291,
+                  1.4749079655487858
+                ],
+                [
+                  -0.01953076873837928,
+                  -0.10771855247137395,
+                  1.4749861492954057
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 31064,
+              "actualEyeTriangle": 42,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.019906944908946022,
+                  -0.1053388983234434,
+                  1.474730844448287
+                ],
+                [
+                  -0.019912498517921946,
+                  -0.10559617936244006,
+                  1.4748147939763823
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 31065,
+              "actualEyeTriangle": 42,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.019912498517921946,
+                  -0.10559617936244006,
+                  1.4748147939763823
+                ],
+                [
+                  -0.01991483955205812,
+                  -0.10595491383210108,
+                  1.4749264864304634
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 31066,
+              "actualEyeTriangle": 42,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.01991483955205812,
+                  -0.10595491383210108,
+                  1.4749264864304634
+                ],
+                [
+                  -0.019857513223212518,
+                  -0.10624820242713573,
+                  1.474959019195438
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 31067,
+              "actualEyeTriangle": 42,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.019857513223212518,
+                  -0.10624820242713573,
+                  1.474959019195438
+                ],
+                [
+                  -0.019842600326947592,
+                  -0.10631858275718764,
+                  1.4749656786699197
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 31067,
+              "actualEyeTriangle": 43,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.01978696381797038,
+                  -0.10655577776306775,
+                  1.474984151638885
+                ],
+                [
+                  -0.019842600326947592,
+                  -0.10631858275718764,
+                  1.4749656786699197
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30426,
+              "actualEyeTriangle": 38,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.019442808292835977,
+                  -0.1082914583461419,
+                  1.4749662377982673
+                ],
+                [
+                  -0.019384556562326405,
+                  -0.10845613510385826,
+                  1.474927728297806
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30427,
+              "actualEyeTriangle": 38,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.019384556562326405,
+                  -0.10845613510385826,
+                  1.474927728297806
+                ],
+                [
+                  -0.019237286683104995,
+                  -0.10886289823064607,
+                  1.4748292418072868
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 29748,
+              "actualEyeTriangle": 38,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.019237286683104995,
+                  -0.10886289823064607,
+                  1.4748292418072868
+                ],
+                [
+                  -0.01919407828764103,
+                  -0.10894235585437284,
+                  1.474795642608133
+                ]
+              ]
+            }
+          ],
+          "noBodyRegionOrRootExclusions": true,
+          "notGlobalTotalSignedMinimumOrFiniteProof": true
+        },
+        {
+          "state": "neutral",
+          "pair": "actual complete skin vs AFN116_R_SCLERA_IRIS_PUPIL_SURFACE",
+          "BVHCandidatePairs": 666,
+          "candidatePairsTestedUntilWitnessCap": 16,
+          "storedIntersectionOrTouchWitnesses": 16,
+          "witnessCap": 16,
+          "witnesses": [
+            {
+              "actualSkinTriangle": 30648,
+              "actualEyeTriangle": 62,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.023707343708615596,
+                  -0.10771878274076431,
+                  1.4772998308070129
+                ],
+                [
+                  -0.023689929794690513,
+                  -0.1079501922248661,
+                  1.4773102221991277
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30649,
+              "actualEyeTriangle": 62,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.023689929794690513,
+                  -0.1079501922248661,
+                  1.4773102221991277
+                ],
+                [
+                  -0.023652373137400054,
+                  -0.10831197433367985,
+                  1.477320797072747
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30650,
+              "actualEyeTriangle": 62,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.023652373137400054,
+                  -0.10831197433367985,
+                  1.477320797072747
+                ],
+                [
+                  -0.02359080001797847,
+                  -0.10849205998686734,
+                  1.4773025265310435
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30651,
+              "actualEyeTriangle": 62,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.02359080001797847,
+                  -0.10849205998686734,
+                  1.4773025265310435
+                ],
+                [
+                  -0.02343389256463205,
+                  -0.1089103925591296,
+                  1.4772524690587991
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30011,
+              "actualEyeTriangle": 62,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.02343389256463205,
+                  -0.1089103925591296,
+                  1.4772524690587991
+                ],
+                [
+                  -0.023271763334582075,
+                  -0.10916687371931416,
+                  1.477185592704232
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30011,
+              "actualEyeTriangle": 63,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.02324808946289623,
+                  -0.10920632011232104,
+                  1.4771757878972651
+                ],
+                [
+                  -0.023271763334582075,
+                  -0.10916687371931416,
+                  1.477185592704232
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 31706,
+              "actualEyeTriangle": 66,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.024070544162989607,
+                  -0.10589707926022951,
+                  1.4771237168961815
+                ],
+                [
+                  -0.024048346415464255,
+                  -0.10633089241013033,
+                  1.4772116351752933
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 31707,
+              "actualEyeTriangle": 67,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.02403532916756828,
+                  -0.10651641420355967,
+                  1.4772476357392506
+                ],
+                [
+                  -0.024038851319993938,
+                  -0.10649083835043328,
+                  1.477243319248522
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 31707,
+              "actualEyeTriangle": 66,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.024048346415464255,
+                  -0.10633089241013033,
+                  1.4772116351752933
+                ],
+                [
+                  -0.024038851319993938,
+                  -0.10649083835043328,
+                  1.477243319248522
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30644,
+              "actualEyeTriangle": 67,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.02403532916756828,
+                  -0.10651641420355967,
+                  1.4772476357392506
+                ],
+                [
+                  -0.02389209858892509,
+                  -0.10686072684329265,
+                  1.4772533218727122
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30645,
+              "actualEyeTriangle": 67,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.02389209858892509,
+                  -0.10686072684329265,
+                  1.4772533218727122
+                ],
+                [
+                  -0.0237779097171942,
+                  -0.10712361499065692,
+                  1.4772550205762096
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30647,
+              "actualEyeTriangle": 62,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.02363529037450712,
+                  -0.10732714727636171,
+                  1.4772265212983258
+                ],
+                [
+                  -0.023707343708615596,
+                  -0.10771878274076431,
+                  1.4772998308070129
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30646,
+              "actualEyeTriangle": 62,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.02363529037450712,
+                  -0.10732714727636171,
+                  1.4772265212983258
+                ],
+                [
+                  -0.023635090760908202,
+                  -0.10732618071126362,
+                  1.4772263284121538
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 30646,
+              "actualEyeTriangle": 67,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.0237779097171942,
+                  -0.10712361499065692,
+                  1.4772550205762096
+                ],
+                [
+                  -0.023635090760908202,
+                  -0.10732618071126362,
+                  1.4772263284121538
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 29742,
+              "actualEyeTriangle": 63,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.02324808946289623,
+                  -0.10920632011232104,
+                  1.4771757878972651
+                ],
+                [
+                  -0.023026100420785366,
+                  -0.10939920719409255,
+                  1.4770692371998477
+                ]
+              ]
+            },
+            {
+              "actualSkinTriangle": 29743,
+              "actualEyeTriangle": 63,
+              "worldIntersectionOrTouchPointsM": [
+                [
+                  -0.023026100420785366,
+                  -0.10939920719409255,
+                  1.4770692371998477
+                ],
+                [
+                  -0.022882218167435395,
+                  -0.10951766081582344,
+                  1.4769996342997431
+                ]
+              ]
+            }
+          ],
+          "noBodyRegionOrRootExclusions": true,
+          "notGlobalTotalSignedMinimumOrFiniteProof": true
+        }
+      ],
+      "neutralWitnessStoppedClosedContactExpansion": true,
+      "intersectionOrTouchNotAutomaticallyAnatomicalPenetrationClassification": true,
+      "globalSignedMinimumM": null,
+      "finiteWallContainedVolumeSelfHairClothContinuousAndNaturalDynamicsNotProved": true,
+      "sourceCompatibilityNotContactAcceptance": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 1,
+  "productionRoundsSinceLastWholeCharacterReview": 0,
+  "nextWholeReviewAfterFurtherProductionRounds": 3,
+  "femaleUserAcceptance": false,
+  "reviewUTC": "2026-10-21T10:07:01.596438+00:00",
+  "actualCompleteModelCandidates": 1,
+  "wholeCharacterScore": null
+}

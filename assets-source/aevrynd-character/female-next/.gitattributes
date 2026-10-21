@@ -320,3 +320,10 @@ r0115-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 aevrynd-female-next-r0115* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 r0115-source/*.blend filter=lfs diff=lfs merge=lfs -text
 r0115-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+# Exact r116 native eye trial, original sources and explicit unaccepted evidence.
+r0116-* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0116* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0116-source/*.blend filter=lfs diff=lfs merge=lfs -text
+r0116-*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+source-inputs/r0116-native-eyes/** -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+makehuman-native-eye-textures/* -text
