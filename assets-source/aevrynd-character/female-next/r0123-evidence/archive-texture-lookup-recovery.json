@@ -1,0 +1,6 @@
+{
+  "observedUTC": "2026-10-21T13:31:36.473184+00:00",
+  "finding": "Initial archive reused-input classification used lexical is_relative_to on bpy absolute paths retaining source/r0123-source/../. That classified existing shared textures as local new data and omitted their reused-input rows. Independent readback had verified every full source texture; no texture/model was missing or modified.",
+  "repair": "Classify only explicit //native-strand-flow/ as the new source-local input, verify physical containment for it; all //../ original references are verified against existing exact archive bytes. Repackage exact existing staged allowlist without clearing staged production.",
+  "modelsScoresCountersAdoptionAndOriginalTextureBytesChanged": false
+}
