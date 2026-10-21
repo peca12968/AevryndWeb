@@ -1,0 +1,15 @@
+"""Matched second light for promising fixed-head native gaze construction."""
+from pathlib import Path
+import bpy,numpy as np,json,time,importlib.util
+from mathutils import Matrix,Vector
+sp=importlib.util.spec_from_file_location('r138light',Path(__file__).with_name('build-female-next-r0138-native-current-gaze.py'));a=importlib.util.module_from_spec(sp);sp.loader.exec_module(a);E=a.E
+def main():
+ tick=time.time();contact=json.loads((E/'b-actual-ocular-surface-contact.json').read_text('utf-8'));assert contact['allRequestedDiscretePosesCompleted'] and not contact['relatedSurfaceCrossingContactOrDegeneracyObserved'];s=json.loads((E/'b-build-summary.json').read_text('utf-8'));src=Path(s['output']);bpy.ops.wm.open_mainfile(filepath=str(src));scene=bpy.context.scene;scene.frame_set(1);a.b.u.v.image.__globals__['m'].rig.shade.settings()
+ controls=json.loads((E.parent/'r0116-native-compatible-eyes/a-view-controls.json').read_text('utf-8'))[0];expected=json.loads((E.parent/'r0116-native-compatible-eyes/matched-second-light-controls.json').read_text('utf-8'))[0]
+ scene.camera.matrix_world=Matrix(controls['camera']);scene.camera.data.lens=controls['lensMM'];scene.render.resolution_x=scene.render.resolution_y=640;scene.render.resolution_percentage=100;scene.cycles.samples=16;scene.cycles.seed=controls['seed'];scene.render.hair_subdiv=3;scene.view_settings.exposure=controls['exposure'];scene.view_settings.look=controls['look'];target=Vector((0,-.04,1.43))
+ for name,row in controls['lights'].items():
+  ob=bpy.data.objects[name];ob.matrix_world=Matrix(row['matrix']);ob.location.x=-ob.location.x;ob.rotation_euler=(target-ob.location).to_track_quat('-Z','Y').to_euler();ob.data.energy=row['energy'];ob.data.color=row['color']
+ bpy.context.view_layer.update();actual={'file':str(E/'b-second-light-neutral-face.png'),'camera':np.array(scene.camera.matrix_world).tolist(),'lensMM':scene.camera.data.lens,'lights':{o.name:{'matrix':np.array(o.matrix_world).tolist(),'energy':o.data.energy,'color':list(o.data.color)} for o in scene.objects if o.type=='LIGHT'},'exposure':scene.view_settings.exposure,'look':scene.view_settings.look,'samples':16,'resolution':[640,640],'seed':scene.cycles.seed,'hairSubdiv':3,'neutralInput':0.};mismatch={k:{'expected':expected.get(k),'actual':actual.get(k)} for k in set(expected)|set(actual) if k!='file' and expected.get(k)!=actual.get(k)}
+ assert not mismatch,mismatch
+ scene.render.filepath=actual['file'];bpy.ops.render.render(write_still=True);scene.frame_set(25);bpy.context.view_layer.update();scene.render.filepath=str(E/'b-second-light-yaw20-face.png');bpy.ops.render.render(write_still=True);scene.frame_set(1);bpy.context.view_layer.update();assert a.a.sha(src)==s['sha256'];a.save('matched-second-light-controls.json',{'candidateNeutral':actual,'baseline':expected,'baselineImage':str(E.parent/'r0126-individual-head-foundation/second-light-candidate-face.png'),'controlsExactlyMatchExceptFilename':True,'frame25SameActualStage':True,'sourceSHAUnchanged':True,'seconds':time.time()-tick});print('R138_MATCHED_SECOND_LIGHT_NATIVE_GAZE_DONE',time.time()-tick,flush=True)
+if __name__=='__main__':main()

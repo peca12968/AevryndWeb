@@ -1,0 +1,85 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0138-source\\aevrynd-female-next-r0138-a-native-current-gaze.blend",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0138-source\\aevrynd-female-next-r0138-b-native-socket-walls.blend",
+  "reference": "Existing actual artist Eye/EyeScleraReflect and source socket/eyelid anatomy, full r126 attribution/rights retained. Rebuilt cavity follows original optical globe and unchanged initial gaze range.",
+  "eyesUnmodified": {
+    "AFN126_ORIGINAL_Eye_Eye_0": {
+      "vertices": "52a87646861868c7b68733784914fa1930d7fd635447c928f41726cae8d96911",
+      "triangles": "ae80406811dc733338a143f3fc64a0a3295415ce7ffbaa520ea5c002b68f5e7d",
+      "uv": {
+        "UVMap": "8ca3035a579b9502cad05e8ad6002d7d70de2199e63ded668a75d944b1f0d7aa"
+      }
+    },
+    "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": {
+      "vertices": "1e6d27f12603fdf6bfb3c0588e1e7d13e602e6f375e334e2e26a2add1a408a64",
+      "triangles": "ada2d6ab995c0025464d23bc5e48551d29c259b3f4be8ec12bedbaca54484394",
+      "uv": {
+        "UVMap": "d9281944e7969b448d247fe38232746d5db45f9e7ef240baf0a7d378157a0828"
+      }
+    }
+  },
+  "fixedOtherVisibleLayersUnmodified": true,
+  "eyeCentersUseActualNativeBoneFloat32RestHeads": true,
+  "construction": [
+    {
+      "sourcePointCount": 587,
+      "samplePointCount": 505407,
+      "directionCount": 320,
+      "maxOriginalRadiusM": 0.016111794685343853,
+      "gridStepDeg": 1,
+      "nearestGridYawPitchErrorEachDeg": 0.5,
+      "relativeRotationAngleBoundRad": 0.012341321914689948,
+      "continuousVertexDisplacementBoundM": 0.00019883958295860267,
+      "fixedConstructionClearanceM": 0.00015,
+      "floatGuardM": 2e-06,
+      "planeResidualM": 6.242318734833718e-09,
+      "cutterVertices": 636,
+      "cutterFaces": 320,
+      "closedManifold": true,
+      "signedVolumeM3": 1.785486568169175e-05,
+      "scope": "Halfspace intersection outer construction from actual rigid ocular vertices, with bounded rotations. This is a construction premise; native output and contact require independent verification, no proxy-to-global claim.",
+      "side": "L",
+      "centerWorld": [
+        0.029048608615994453,
+        -0.10332278907299042,
+        1.4632312059402466
+      ]
+    },
+    {
+      "sourcePointCount": 587,
+      "samplePointCount": 505407,
+      "directionCount": 320,
+      "maxOriginalRadiusM": 0.016111764109164723,
+      "gridStepDeg": 1,
+      "nearestGridYawPitchErrorEachDeg": 0.5,
+      "relativeRotationAngleBoundRad": 0.012341321914689948,
+      "continuousVertexDisplacementBoundM": 0.00019883920561052784,
+      "fixedConstructionClearanceM": 0.00015,
+      "floatGuardM": 2e-06,
+      "planeResidualM": 5.399186299437364e-09,
+      "cutterVertices": 636,
+      "cutterFaces": 320,
+      "closedManifold": true,
+      "signedVolumeM3": 1.7853925571028465e-05,
+      "scope": "Halfspace intersection outer construction from actual rigid ocular vertices, with bounded rotations. This is a construction premise; native output and contact require independent verification, no proxy-to-global claim.",
+      "side": "R",
+      "centerWorld": [
+        -0.029048610478639603,
+        -0.10332276672124863,
+        1.463231086730957
+      ]
+    }
+  ],
+  "oldSkinVertices": 169741,
+  "newSkinVertices": 170091,
+  "oldSkinTriangles": 339470,
+  "newSkinTriangles": 340174,
+  "removedSourceSkinCoordinates": 1199,
+  "newSkinCoordinates": 1549,
+  "changesConfinedWithinOcularRegionRadiusM": 0.04,
+  "skinRawTopologyChangedSocketWallReconstruction": true,
+  "originalLidClosurePlateMethodsNotReused": true,
+  "numericContactPredicateUnchangedM": 1e-12,
+  "allContactClaimsMustBeRetested": true,
+  "noFullFiniteOrContinuousContactAcceptance": true
+}

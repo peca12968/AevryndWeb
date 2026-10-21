@@ -1,0 +1,95 @@
+{
+  "revision": "female-next-r0138",
+  "decision": "RETAIN_B_SOCKET_CONTROL_FOUNDATION_REJECT_COMPLETE_GAZE_STATIC_LIDS",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-b-source-section-neck.blend",
+    "sha256": "798c2496aadac717d967362c58afa88d38ceac584248c85f6d86afc618253631",
+    "bytes": 135305654,
+    "status": "ADOPT_SCOPED_STATIC_COMPLETE_FACE_APPEARANCE_GAIN",
+    "scope": "Same complete woman. Adopt only static actual complete-character face/head form and skin-source appearance across recorded matched views/second light; all controls, hair physics, finite contacts/runtime/rights/user gates open.",
+    "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualFaceControls": "No controls connected to new visible head. AFN59_FACE_CONTROLS/blink_left/right retained on hidden r117 rollback only; actual new skin motion0.",
+    "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false,
+    "originalArtist": "DarkNik / original NikZava284",
+    "assetLicense": "CC-BY4.0, attribution and modifications retained"
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0138-source\\aevrynd-female-next-r0138-a-native-current-gaze.blend",
+      "sha256": "9c297dac37fe302ac92598cb0766ac90ce589964e77c67635912ba0656894582",
+      "bytes": 135308737,
+      "status": "RETAIN_PARTIAL_NATIVE_GAZE_RELATED_SOURCE_SOCKET_CROSSINGS",
+      "scope": "Same complete woman. A current eyes genuinely rotate but inherits related source socket crossings. B reconstructs local sockets and supports partial native ocular rotation/restore at declared yaw20/pitch10, but static lids produce unconvincing upward gaze. No adopted appearance or complete usable operation, blink/tracking/hair dynamics/finite all-avatar contact/runtime acceptance."
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0138-source\\aevrynd-female-next-r0138-b-native-socket-walls.blend",
+      "sha256": "2af6850bd2d60c67c246315c7bca3eefe3954159371bdd9c8dfc51b3ac283862",
+      "bytes": 135540899,
+      "status": "RETAIN_PROMISING_SOCKET_CONTROL_FOUNDATION_STATIC_LIDS_BLOCK_NATURAL_GAZE",
+      "scope": "Same complete woman. A current eyes genuinely rotate but inherits related source socket crossings. B reconstructs local sockets and supports partial native ocular rotation/restore at declared yaw20/pitch10, but static lids produce unconvincing upward gaze. No adopted appearance or complete usable operation, blink/tracking/hair dynamics/finite all-avatar contact/runtime acceptance."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "NO_NEW_STATIC_APPEARANCE_GAIN_R126_PROTECTED_LOOK_RETAINED",
+      "evidence": [
+        "r0138-complete-head-body-comparison.png",
+        "r0138-profile-oblique-comparison.png",
+        "r0138-back-comparison.png",
+        "r0138-native-gaze-comparison.png",
+        "manual-visual-review.json",
+        "matched-second-light-controls.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "PARTIAL_ACTUAL_OCULAR_CONTROL_SOCKET_REBUILD_RESTORE_NATURAL_GAZE_STATIC_LID_FAILURE",
+      "evidence": "minimum-saved-native-gaze-readback.json",
+      "acceptedCompleteScopedGazeOperation": false,
+      "allCharacterOperationsComplete": false,
+      "naturalHairMotionAccepted": false,
+      "blinkJawHeadTrackingAndBodyActionsAccepted": false
+    },
+    "contact": {
+      "status": "ACTUAL_OCULAR_SKIN_TRIANGLE_SURFACES_ZERO_CONTACT_AT_49_ACTION_AND_15_MANUAL_POSES_FULL_FINITE_CONTINUOUS_UNACCEPTED",
+      "evidence": "b-actual-ocular-surface-contact.json",
+      "actualSurfacePoseObjectCases": 128,
+      "globalSignedMinimumM": null,
+      "finiteThicknessContainmentSelfOpticalWetLayerAlphaAndContinuousAccepted": false,
+      "constructionEnvelopeIsNotContactAcceptance": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "runtimeAsset": null,
+      "websitePromotion": false,
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 12,
+  "productionRoundsSinceLastWholeCharacterReview": 1,
+  "nextWholeReviewAfterFurtherProductionRounds": 2,
+  "femaleUserAcceptance": false,
+  "lastGoalTurnClassification": "progress: requested v44 prompt/entry/handoff redesign committed and remote verified; maintenance made no production judgment, changed no model/manifest/counter and preserved pending r138. Current continuation independently completes original r138 work, without resetting its timing.",
+  "previousGoalTurnClassification": "progress: actual complete original intended groom/source operation qualification, shared articulated down-pony A and native frontal reconstruction B authored/rejected; independent actual layer/joint/frame edits restore, current-head coupling absent, whole review135/136/137 complete. No complete gain.",
+  "progressKind": "ACTUAL_OCULAR_CONTROL_AND_SOCKET_FOUNDATION_PARTIAL_STATIC_LID_GAZE_FAILURE",
+  "wholeCharacterStagnationReset": false,
+  "foundationChangeRequiredNextProduction": true,
+  "lastReviewedProductionWindow": [
+    "r135",
+    "r136",
+    "r137"
+  ],
+  "lastWholeCharacterReview": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0137-complete-studio-groom\\three-round-whole-character-review.json",
+  "stoppedMethodsInheritedFrom": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0137-complete-studio-groom\\continuation.json",
+  "allEarlierRetirementsRemainEffective": true,
+  "stoppedMethods": [],
+  "liveJobHandles": [],
+  "nextAction": "Continue SAME complete retained r126 working woman D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-b-source-section-neck.blend. R138 A actual current eyes rotate but inherits404 Eye/408 Reflect neutral skin triangle crossing pairs, corroborated by independent finite edge-face witnesses. B D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0138-source\\aevrynd-female-next-r0138-b-native-socket-walls.blend is a promising UNACCEPTED COMPLETE CANDIDATE: actual local socket cavity reconstruction removes observed ocular/skin surface contacts at all49 native frames+15 manual combinations; original eyes/ranges/materials and other visible layers retained, independent edits/restore pass. However actual combined up gaze -20yaw/+10pitch hides iris behind stationary upper lid and overexposes sclera. No complete usable natural gaze, no adopted static appearance or full-character gain. DO NOT evade this by calling lid follow out of scope or reducing eye motion. Next actual round directly AUTHOR ACTUAL CURRENT UPPER/LOWER LID FOLLOW AND LASH/TEAR-FILM COHERENCE on the full B candidate, preserve r126 adopted face/skin/hair/body appearance/rights and full rollback. Design from actual native lid margin/crease/socket inner-wall anatomy; native skin mesh/bones/morph deformation must move the evaluated displayed lids and attached layers, not hidden r117 controls or new analytic blink caps (r127/128 retired). Rebuild blocking local finite inner-wall/attachment construction as needed; unchanged-eye-only rotation or new names/scales/offsets are not a changed lid premise. Default one candidate; matched complete head/body and combined upward gaze/intermediate/return early, independent reopen/actual operation/restore. Moving lids invalidates affected B surface-contact evidence and requires actual new tests; no tolerance change, masking or smaller poses. No-adopt appearance lower12, cadence1/next whole review after2, last review135/136/137 unchanged. All earlier hair/face retirements apply. Hair still unconvincing: current-scalp parting/root-to-tip 3D clump foundation, natural turn-stop-wind-settle remain required, no more imported whole-groom affine/front stitch/UV-contour/global-comb/closed-loft/shader or density/radius sweeps. Full anatomy/face/body/clothes/layers/actions, finite/self/continuous contacts, actual Aevrynd/LOD/performance and explicit female acceptance remain open. Full source/Git/LFS history exact; goal active, no male or formal runtime/website promotion.",
+  "goal": "ACTIVE_NOT_COMPLETE"
+}
