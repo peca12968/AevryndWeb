@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\finish-female-next-r0126-second-light.py", line 6, in <module>
+    sp=importlib.util.spec_from_file_location('r126light',Path(__file__).with_name('build-female-next-r0126-individual-head-foundation.py'));a=importlib.util.module_from_spec(sp);sp.loader.exec_module(a)
+                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~^^^
+  File "<frozen importlib._bootstrap_external>", line 1019, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1156, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1214, in get_data
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Download\\Aevrynd\\scripts\\character-next\\build-female-next-r0126-individual-head-foundation.py'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

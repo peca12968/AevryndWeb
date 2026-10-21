@@ -1,0 +1,12 @@
+00:08.282  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0126-source\aevrynd-female-next-r0126-b-source-section-neck.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0126-surface-retention.py", line 23, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0126-surface-retention.py", line 21, in main
+    out[role]={'sourceObject':name,'verticesCompared':len(ids),'maximumWorldPointDifferenceM':maximum,'originalOrientedTriangles':len(expected),'actualOrientedTriangles':len(actual),'missingOrientedTriangles':len(missing),'addedOrientedTriangles':len(added),'exactOrientedTriangleCorrespondence':not missing and not added};assert not missing and not added,(role,len(missing),len(added))
+                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('nativeLowerBody', 10, 18)
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

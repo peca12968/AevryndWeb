@@ -1,0 +1,12 @@
+00:07.532  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0126-source\aevrynd-female-next-r0126-a2-source-material-neck.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\repair-female-next-r0126-neck-continuity.py", line 29, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\repair-female-next-r0126-neck-continuity.py", line 25, in main
+    bm.to_mesh(ob.data);bm.free();ob.data.update();bpy.context.view_layer.update();_,W,TT=b.u.b.geom(ob);W=W.copy();assert np.array_equal(T,TT);changed=np.linalg.norm(W-original,axis=1);ids=np.flatnonzero(changed>1e-7);assert len(ids)>0 and changed.max()<.025;assert np.all((W[ids,2]>z0)&(W[ids,2]<z1));np.savez_compressed(E/'native-neck-tangent-lineage.npz',originalRuledRings=before,reconstructedRings=after,actualSourceBoundaryNormals=np.array(normals),actualSourceDzTangents=np.array(tangents),skinChangedVertexIDs=ids,skinDeltaWorld=(W-original).astype('f4'));bpy.context.preferences.filepaths.save_version=0;bpy.ops.wm.save_as_mainfile(filepath=str(OUT),compress=True,relative_remap=False);a.save('a3-build-summary.json',build|{'source':str(SRC),'sourceSha256':a.a.sha(SRC),'output':str(OUT),'sha256':a.a.sha(OUT),'bytes':OUT.stat().st_size,'repair':'One neck-only cubic reconstruction from actual native-body and artist-neck source boundary face normals. Fixed endpoint positions and dz-normal tangents, no fitting/sweep. All head/body outside the junction, all triangles/UV/materials/source parts unchanged.','sourceBoundaryNormalTangencyResidual':float(max(np.abs((normals[i]*tangents[i]).sum(1)).max() for i in [0,1])),'maximumNeckInteriorMovementM':float(changed.max()),'neckInteriorVerticesChanged':len(ids),'allOutsideJunctionPositionsAndAllTrianglesExact':True,'finiteSelfAndContinuousContactStillUnaccepted':True,'secondsBeforePreview':time.time()-tick});rows=[]
+                                                                                                                           ~~~~~~~~~~~~~~^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,0 +1,24 @@
+00:06.468  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0117-source\aevrynd-female-next-r0117-a-native-fibre-brows.blend"
+22:34:48 | INFO: Data are loaded, start creating Blender stuff
+22:34:48 | INFO: Blender create Mesh node Mouth_Mouth_0
+22:34:48 | INFO: Blender create Mesh node Hair_Hair_0
+22:34:49 | INFO: Blender create Mesh node Head_Head_0
+22:34:49 | INFO: Blender create Mesh node Eye_Eye_0
+22:34:49 | INFO: Blender create Mesh node EyeScleraReflect_EyeScleraReflect_0
+22:34:49 | INFO: Blender create Mesh node Eyelashes_Eyelashes_0
+22:34:49 | INFO: Blender create Mesh node MeniscusEyeSpec_MeniscusEye_0
+22:34:49 | INFO: glTF import finished in 0.51s
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0126-individual-head.py", line 92, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0126-individual-head.py", line 61, in main
+    z0=1.330;z1=1.355;low=cut(body,z0,False);high=cut(head,z1,True);lv,lt,lc=ring(low,z0);hv,ht,hc=ring(high,z1);angles=np.unique(np.r_[lt,ht]);assert np.diff(np.r_[angles,angles[0]+2*math.pi]).min()>1e-9;lr=split_partition(low,lv,lt,lc,angles);hr=split_partition(high,hv,ht,hc,angles);assert len(lr)==len(hr)==len(angles),(len(lr),len(hr),len(angles));low.to_mesh(body.data);high.to_mesh(head.data);low.free();high.free();bpy.ops.object.select_all(action='DESELECT');body.select_set(True);head.select_set(True);bpy.context.view_layer.objects.active=body;bpy.ops.object.join();bm=bmesh.new();bm.from_mesh(body.data);L,LA,LC=ring(bm,z0);H,HA,HC=ring(bm,z1);assert len(L)==len(H)==len(angles);assert np.max(abs(LA-HA))<3e-5
+                                                                                                   ~~~~^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0126-individual-head.py", line 24, in ring
+    save('neck-contours-z'+str(z)+'.json',{'z':z,'loopCount':len(loops),'loopsWorld':[[v.co[:] for v in loop] for loop in loops],'originalBoundingBoxCenterWasNotAssumedStarKernel':True});assert len(loops)==1,('multiple neck contours, not discarded',z,len(loops));ordered=loops[0];P=np.array([v.co[:2] for v in ordered]);area=np.sum(P[:,0]*np.roll(P[:,1],-1)-np.roll(P[:,0],-1)*P[:,1]);
+                                                                                                                                                                                                  ^^^^^^^^^^^^^
+AssertionError: ('multiple neck contours, not discarded', 1.355, 2)
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

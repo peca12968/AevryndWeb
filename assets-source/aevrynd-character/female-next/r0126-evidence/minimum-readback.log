@@ -1,0 +1,10 @@
+00:12.140  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0126-source\aevrynd-female-next-r0126-a-individual-artist-head.blend"
+00:18.421  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0126-source\aevrynd-female-next-r0126-a2-source-material-neck.blend"
+D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0126-minimum.py:20: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  diag=bpy.data.materials.new('AFN126_DIAGNOSTIC_NEUTRAL_SKIN_ONLY');diag.use_nodes=True;pnode=next(n for n in diag.node_tree.nodes if n.bl_idname=='ShaderNodeBsdfPrincipled');pnode.inputs['Base Color'].default_value=(.42,.42,.42,1.);pnode.inputs['Roughness'].default_value=.55
+00:40.734  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0126-individual-head-foundation\matched-diagnostic-a2-neutral-skin-face.png'
+00:42.875  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0126-source\aevrynd-female-next-r0126-a3-native-neck-tangents.blend"
+R126_THREE_SAVED_SOURCES_RECOVERED_AND_SCOPED_NECK_DIAGNOSIS_DONE 36.86585521697998
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

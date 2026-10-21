@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\fetch-female-next-r0126-individual-source.py", line 35, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\fetch-female-next-r0126-individual-source.py", line 24, in main
+    target=D/'artist-head-'+UID+'.glb';url=base+path;sourceURL=url
+           ~~~~~~~~~~~~~~~~^~~~
+TypeError: unsupported operand type(s) for +: 'WindowsPath' and 'str'

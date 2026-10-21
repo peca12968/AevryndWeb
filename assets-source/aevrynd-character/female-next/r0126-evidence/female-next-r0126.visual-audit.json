@@ -1,0 +1,108 @@
+{
+  "revision": "female-next-r0126",
+  "decision": "ADOPT_SCOPED_STATIC_INDIVIDUAL_FACE_GAIN_KEEP_FULL_FUNCTION_CONTACT_RUNTIME_OPEN",
+  "completeCharacterResult": "本輪採用限定靜態完整人物臉部外觀改善；功能、接觸及引擎未驗收",
+  "appearanceImprovement": true,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-b-source-section-neck.blend",
+    "sha256": "798c2496aadac717d967362c58afa88d38ceac584248c85f6d86afc618253631",
+    "bytes": 135305654,
+    "status": "ADOPT_SCOPED_STATIC_COMPLETE_FACE_APPEARANCE_GAIN",
+    "scope": "Same complete woman. Adopt only static actual complete-character face/head form and skin-source appearance across recorded matched views/second light; all controls, hair physics, finite contacts/runtime/rights/user gates open.",
+    "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualFaceControls": "No controls connected to new visible head. AFN59_FACE_CONTROLS/blink_left/right retained on hidden r117 rollback only; actual new skin motion0.",
+    "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false,
+    "originalArtist": "DarkNik / original NikZava284",
+    "assetLicense": "CC-BY4.0, attribution and modifications retained"
+  },
+  "previousCompleteWorkingWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0117-source\\aevrynd-female-next-r0117-a-native-fibre-brows.blend",
+    "sha256": "09da2122d16f80cbcff6f535dbfc35540df27131dc323450d2a4c41293446db9",
+    "bytes": 109202829,
+    "status": "ADOPT_SCOPED_COMPLETE_STATIC_NATIVE_BROW_APPEARANCE_GAIN",
+    "scope": "Adopt only static complete-character eyebrow shape/flow appearance in documented primary/oblique/second-light views, preserving r115 neck gain. Not a whole-character anatomy/function/finite-contact/runtime/rights/user acceptance.",
+    "renderSkin": "AFN113_COMPLETE_WOMAN_COHERENT_HEAD",
+    "rawEditableSource": "AFN115_EDITABLE_CONNECTED_NATIVE_ADULT_SOURCE",
+    "actualFaceControls": "AFN59_FACE_CONTROLS / blink_left, blink_right",
+    "appearanceAdoptionScope": "R115 static continuous neck/shoulder gain retained plus r117 static brow shape/hair-flow gain; remaining head/body deficits open.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-a-individual-artist-head.blend",
+      "sha256": "0cdbc81770fd9ca9b66bff4189c4b5679edc56294d5b0c55041cf7d315f21813",
+      "bytes": 134628632,
+      "status": "RETAIN_UNACCEPTED_RULED_NECK_SOURCE_WITH_UV_ARTIFACTS",
+      "scope": "Same complete woman. Unaccepted complete source retained as construction/rollback evidence; no standalone adoption or score gain."
+    },
+    "a2": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-a2-source-material-neck.blend",
+      "sha256": "b2c8db260183f04f5babdfd893391df2293a5b5d951809af53844f56a76254cd",
+      "bytes": 134643970,
+      "status": "RETAIN_PROMISING_FACE_SHAPE_SOURCE_NECK_UV_UNACCEPTED",
+      "scope": "Same complete woman. Unaccepted complete source retained as construction/rollback evidence; no standalone adoption or score gain."
+    },
+    "a3": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-a3-native-neck-tangents.blend",
+      "sha256": "796d7bea7374fd68ce30c5286b2e6e86d5aadd6d4ac1b3fc05c8ec71cecaa1bd",
+      "bytes": 134644433,
+      "status": "REJECT_RAW_BOUNDARY_NORMAL_FLUTING_KEEP_COMPLETE_SOURCE",
+      "scope": "Same complete woman. Unaccepted complete source retained as construction/rollback evidence; no standalone adoption or score gain."
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-b-source-section-neck.blend",
+      "sha256": "798c2496aadac717d967362c58afa88d38ceac584248c85f6d86afc618253631",
+      "bytes": 135305654,
+      "status": "ADOPT_SCOPED_STATIC_COMPLETE_FACE_APPEARANCE_GAIN",
+      "scope": "Same complete woman. Adopt only static actual complete-character face/head form and skin-source appearance across recorded matched views/second light; all controls, hair physics, finite contacts/runtime/rights/user gates open."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "ADOPT_SCOPED_STATIC_COMPLETE_FACE_SOURCE_GAIN",
+      "evidence": [
+        "r0126-head-and-body-comparison.png",
+        "r0126-profile-and-oblique-comparison.png",
+        "r0126-second-light-comparison.png",
+        "manual-visual-review.json"
+      ],
+      "scope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope.",
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "SAVED_VISIBLE_MESH_EDIT_RESTORE_PASS_NEW_BLINK_JAW_BODY_ACTIONS_NOT_CONNECTED",
+      "evidence": "minimum-saved-individual-source-readback.json",
+      "actualNewVisibleSkinOldBlinkMovementM": 0.0,
+      "newCompleteOperationAccepted": false,
+      "naturalHairMotionDelivered": false,
+      "oldCompleteR117ControlsAndFibresPreservedAsHiddenRollback": true
+    },
+    "contact": {
+      "status": "UNACCEPTED_FINITE_ALPHA_HAIR_SELF_BODY_CLOTH_AND_CONTINUOUS_GAPS",
+      "evidence": [
+        "source-section-neck-lineage.npz",
+        "actual-surface-retention.json"
+      ],
+      "interfaceEdgeIncidenceNotWholeContactProof": true,
+      "newUVNondegeneracyNotOccupancyProof": true,
+      "globalSignedMinimumM": null
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 0,
+  "previousNoAdoptLowerBound": 8,
+  "productionRoundsSinceLastWholeCharacterReview": 1,
+  "nextWholeReviewAfterFurtherProductionRounds": 2,
+  "femaleUserAcceptance": false,
+  "reviewUTC": "2026-10-21T15:11:07.030288+00:00",
+  "actualCompleteSourceFiles": 4,
+  "wholeCharacterScore": null
+}

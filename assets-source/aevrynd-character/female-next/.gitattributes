@@ -376,3 +376,10 @@ r0125-evidence/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr
 r0125-evidence/*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 aevrynd-female-next-r0125* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 r0125-source/*.blend filter=lfs diff=lfs merge=lfs -text
+# Exact r126 rejected native craniofacial volume cage and saved live-source recovery.
+r0126-evidence/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0126-evidence/*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+aevrynd-female-next-r0126* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0126-source/*.blend filter=lfs diff=lfs merge=lfs -text
+r0126-source/individual-head-input/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0126-source/individual-head-input/*.glb filter=lfs diff=lfs merge=lfs -text

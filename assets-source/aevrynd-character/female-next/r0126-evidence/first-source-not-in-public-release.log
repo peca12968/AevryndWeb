@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\fetch-female-next-r0126-individual-source.py", line 35, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\fetch-female-next-r0126-individual-source.py", line 19, in main
+    paths=json.loads(gzip.decompress(compressed));path=paths[UID];assert path.endswith(UID+'.glb');indexPath=D/'object-paths-original.json.gz';indexPath.write_bytes(compressed)
+                                                       ~~~~~^^^^^
+KeyError: 'b157e28076484a3f9f4f41b5e0f70770'

@@ -1,0 +1,23 @@
+00:06.500  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0117-source\aevrynd-female-next-r0117-a-native-fibre-brows.blend"
+22:36:57 | INFO: Data are loaded, start creating Blender stuff
+22:36:57 | INFO: Blender create Mesh node Mouth_Mouth_0
+22:36:57 | INFO: Blender create Mesh node Hair_Hair_0
+22:36:57 | INFO: Blender create Mesh node Head_Head_0
+22:36:58 | INFO: Blender create Mesh node Eye_Eye_0
+22:36:58 | INFO: Blender create Mesh node EyeScleraReflect_EyeScleraReflect_0
+22:36:58 | INFO: Blender create Mesh node Eyelashes_Eyelashes_0
+22:36:58 | INFO: Blender create Mesh node MeniscusEyeSpec_MeniscusEye_0
+22:36:58 | INFO: glTF import finished in 0.52s
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0126-individual-head.py:71: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  nativeMat=next(m for m in body.data.materials if m and m.name.startswith('AFN113_COHERENT_NATIVE_HEAD_SKIN'));artistMat=next(m for m in body.data.materials if m and m.name.startswith('AFN126_NATIVE_ARTIST_HEAD_MATERIAL'));oldImage=bpy.data.images.get('young_lightskinned_female_diffuse.png') or next(im for im in bpy.data.images if 'young_lightskinned_female_diffuse' in im.name);artistImages=[n.image for n in artistMat.node_tree.nodes if n.bl_idname=='ShaderNodeTexImage' and n.image];assert artistImages;patch=bpy.data.materials.new('AFN126_ACTUAL_NECK_SOURCE_COLOR_TRANSITION');patch.use_nodes=True;N=patch.node_tree.nodes;links=patch.node_tree.links;p=next(n for n in N if n.bl_idname=='ShaderNodeBsdfPrincipled');p.inputs['Roughness'].default_value=.45;p.inputs['Subsurface Weight'].default_value=.12;p.inputs['Subsurface Scale'].default_value=.001;tex=[]
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0126-individual-head.py", line 92, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0126-individual-head.py", line 76, in main
+    for v in row:v[blend]=j/4.
+                 ~^^^^^^^
+ReferenceError: BMesh data of type BMVert has been removed
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

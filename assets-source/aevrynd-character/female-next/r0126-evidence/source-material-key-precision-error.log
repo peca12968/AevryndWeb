@@ -1,0 +1,14 @@
+00:07.703  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0126-source\aevrynd-female-next-r0126-a-individual-artist-head.blend"
+D:\Download\Aevrynd\scripts\character-next\repair-female-next-r0126-neck-source-material.py:36: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  tick=time.time();assert not OUT.exists();build=json.loads((E/'a-build-summary.json').read_text('utf-8'));assert a.a.sha(SRC)==build['sha256'];bpy.ops.wm.open_mainfile(filepath=str(SRC));skin=bpy.data.objects[build['actualSkinObject']];_,W,T=b.u.b.geom(skin);W=W.copy();T=T.copy();oldMat=bpy.data.materials['AFN126_ACTUAL_NECK_SOURCE_COLOR_TRANSITION'];native=next(m for m in skin.data.materials if m and m.name.startswith('AFN113_COHERENT_NATIVE_HEAD_SKIN'));artist=next(m for m in skin.data.materials if m and m.name.startswith('AFN126_NATIVE_ARTIST_HEAD_MATERIAL'));patch=bpy.data.materials.new('AFN126_EXACT_DUAL_SOURCE_NECK_MATERIAL');patch.use_nodes=True;patch.node_tree.nodes.clear();bodyShader=clone_graph(native,patch,'NativeBody/',None);headShader=clone_graph(artist,patch,'ArtistHead/','AngelicaOriginalUV');N=patch.node_tree.nodes;links=patch.node_tree.links;attr=N.new('ShaderNodeAttribute');attr.attribute_name='AFN126_NECK_BLEND';mix=N.new('ShaderNodeMixShader');links.new(attr.outputs['Fac'],mix.inputs[0]);links.new(bodyShader,mix.inputs[1]);links.new(headShader,mix.inputs[2]);out=N.new('ShaderNodeOutputMaterial');links.new(mix.outputs['Shader'],out.inputs['Surface'])
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\repair-female-next-r0126-neck-source-material.py", line 56, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\repair-female-next-r0126-neck-source-material.py", line 44, in main
+    key=tuple(np.round(co,7));assert key in nativeLookup;nativeUV.append(nativeLookup[key])
+                                     ^^^^^^^^^^^^^^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
