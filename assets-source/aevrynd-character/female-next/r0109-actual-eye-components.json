@@ -1,0 +1,497 @@
+{
+  "names": [
+    "WGT-Upper_Eyelid",
+    "WGT-STR-Head_Top",
+    "WGT-MSTR-Head_Bottom",
+    "WGT-Lower_Eyelid",
+    "WGT-Eyelash",
+    "WGT-Ellie_Head_Top",
+    "WGT-Ellie_Head_Bot",
+    "WGT-Arrow_Head",
+    "LTC-ellie_neck_head",
+    "LTC-ellie_eyelash.R",
+    "LTC-ellie_eyelash.L",
+    "LTC-ellie_eye.R",
+    "LTC-ellie_eye.L",
+    "GEO-ellie_head_rig_helper",
+    "GEO-ellie_head",
+    "GEO-ellie_eyelashes",
+    "GEO-ellie_eyelash_helper",
+    "GEO-ellie_eyelash_deform_helper",
+    "GEO-ellie_eye.R",
+    "GEO-ellie_eye.L"
+  ],
+  "objects": {
+    "GEO-ellie_head_rig_helper": {
+      "vertices": 969,
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE",
+          "RIG-Ellie"
+        ],
+        [
+          "Subdivision",
+          "SUBSURF",
+          null
+        ]
+      ],
+      "groups": []
+    },
+    "GEO-ellie_head": {
+      "vertices": 1659,
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE",
+          "RIG-Ellie"
+        ],
+        [
+          "CorrectiveSmooth",
+          "CORRECTIVE_SMOOTH",
+          null
+        ],
+        [
+          "VertexWeightMix",
+          "VERTEX_WEIGHT_MIX",
+          null
+        ],
+        [
+          "Lattice NeckHead",
+          "LATTICE",
+          "LTC-ellie_neck_head"
+        ],
+        [
+          "Mask",
+          "MASK",
+          null
+        ],
+        [
+          "Subdivision",
+          "SUBSURF",
+          null
+        ],
+        [
+          "Shrinkwrap",
+          "SHRINKWRAP",
+          null
+        ],
+        [
+          "Lattice Mask",
+          "LATTICE",
+          "LTC-ellie_face_mask"
+        ],
+        [
+          "Lattice Cheek.L",
+          "LATTICE",
+          "LTC-ellie_cheek1.L"
+        ],
+        [
+          "Lattice Cheek.R",
+          "LATTICE",
+          "LTC-ellie_cheek1.R"
+        ],
+        [
+          "Lattice Lips",
+          "LATTICE",
+          "LTC-ellie_lips"
+        ],
+        [
+          "Lattice Lips.L",
+          "LATTICE",
+          "LTC-ellie_lip_corner.L"
+        ],
+        [
+          "Lattice Lips.R",
+          "LATTICE",
+          "LTC-ellie_lip_corner.R"
+        ],
+        [
+          "DataTransfer",
+          "DATA_TRANSFER",
+          "GEO-ellie_head_rig_helper"
+        ]
+      ],
+      "groups": [
+        "DEF-Eyelid_Lower4.L",
+        "DEF-Eyelid_Lower3.L",
+        "DEF-Eyelid_Lower2.L",
+        "DEF-Eyelid_Lower1.L",
+        "DEF-Eyelid_Upper4.L",
+        "DEF-Eyelid_Upper3.L",
+        "DEF-Eyelid_Upper2.L",
+        "DEF-Eyelid_Upper1.L",
+        "DEF-Eye_Ring_Lower4.L",
+        "DEF-Eye_Ring_Lower3.L",
+        "DEF-Eye_Ring_Lower2.L",
+        "DEF-Eye_Ring_Lower1.L",
+        "DEF-Eye_Ring_Upper4.L",
+        "DEF-Eye_Ring_Upper3.L",
+        "DEF-Eye_Ring_Upper2.L",
+        "DEF-Eye_Ring_Upper1.L",
+        "DEF-Eyelid_Lower4.R",
+        "DEF-Eyelid_Lower3.R",
+        "DEF-Eyelid_Lower2.R",
+        "DEF-Eyelid_Lower1.R",
+        "DEF-Eyelid_Upper4.R",
+        "DEF-Eyelid_Upper3.R",
+        "DEF-Eyelid_Upper2.R",
+        "DEF-Eyelid_Upper1.R",
+        "DEF-Eye_Ring_Lower4.R",
+        "DEF-Eye_Ring_Lower3.R",
+        "DEF-Eye_Ring_Lower2.R",
+        "DEF-Eye_Ring_Lower1.R",
+        "DEF-Eye_Ring_Upper4.R",
+        "DEF-Eye_Ring_Upper3.R",
+        "DEF-Eye_Ring_Upper2.R",
+        "DEF-Eye_Ring_Upper1.R",
+        "DEF-Eyebrow_Mid"
+      ]
+    },
+    "GEO-ellie_eyelashes": {
+      "vertices": 72,
+      "modifiers": [
+        [
+          "Mask",
+          "MASK",
+          null
+        ],
+        [
+          "Mirror",
+          "MIRROR",
+          null
+        ],
+        [
+          "Armature",
+          "ARMATURE",
+          "RIG-Ellie"
+        ],
+        [
+          "Shrinkwrap Clipping Fix",
+          "SHRINKWRAP",
+          null
+        ],
+        [
+          "Shrinkwrap",
+          "SHRINKWRAP",
+          null
+        ],
+        [
+          "Solidify",
+          "SOLIDIFY",
+          null
+        ],
+        [
+          "Subdivision",
+          "SUBSURF",
+          null
+        ],
+        [
+          "Lattice Mask",
+          "LATTICE",
+          "LTC-ellie_face_mask"
+        ],
+        [
+          "Lattice Eyelash.L",
+          "LATTICE",
+          "LTC-ellie_eyelash.L"
+        ],
+        [
+          "Lattice Eyelash.R",
+          "LATTICE",
+          "LTC-ellie_eyelash.R"
+        ]
+      ],
+      "groups": [
+        "DEF-Eyelid_Upper1.L",
+        "DEF-Eyelid_Upper1.R",
+        "DEF-Eyelid_Upper2.L",
+        "DEF-Eyelid_Upper2.R",
+        "DEF-Eyelid_Upper3.L",
+        "DEF-Eyelid_Upper3.R",
+        "DEF-Eyelid_Upper4.L",
+        "DEF-Eyelid_Upper4.R",
+        "DEF-Eyelid_Lower1.L",
+        "DEF-Eyelid_Lower1.R",
+        "DEF-Eyelash1.L",
+        "DEF-Eyelash1.R",
+        "DEF-Eyelash2.L",
+        "DEF-Eyelash2.R",
+        "DEF-Eyelash3.L",
+        "DEF-Eyelash3.R",
+        "DEF-Eyelash4.L",
+        "DEF-Eyelash4.R",
+        "DEF-Eyelid_Lower4.L",
+        "DEF-Eyelid_Lower4.R",
+        "DEF-Eyelash5.L",
+        "DEF-Eyelash5.R"
+      ]
+    },
+    "GEO-ellie_eyelash_helper": {
+      "vertices": 160,
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE",
+          "RIG-Ellie"
+        ],
+        [
+          "Shrinkwrap",
+          "SHRINKWRAP",
+          null
+        ],
+        [
+          "CorrectiveSmooth",
+          "CORRECTIVE_SMOOTH",
+          null
+        ],
+        [
+          "Subdivision",
+          "SUBSURF",
+          null
+        ],
+        [
+          "Lattice Cheek.L",
+          "LATTICE",
+          "LTC-ellie_cheek1.L"
+        ],
+        [
+          "Lattice Cheek.R",
+          "LATTICE",
+          "LTC-ellie_cheek1.R"
+        ],
+        [
+          "Lattice Lips",
+          "LATTICE",
+          "LTC-ellie_lips"
+        ],
+        [
+          "Lattice Lips.L",
+          "LATTICE",
+          "LTC-ellie_lip_corner.L"
+        ],
+        [
+          "Lattice Lips.R",
+          "LATTICE",
+          "LTC-ellie_lip_corner.R"
+        ]
+      ],
+      "groups": [
+        "DEF-Eyelid_Lower4.L",
+        "DEF-Eyelid_Lower3.L",
+        "DEF-Eyelid_Lower2.L",
+        "DEF-Eyelid_Lower1.L",
+        "DEF-Eyelid_Upper4.L",
+        "DEF-Eyelid_Upper3.L",
+        "DEF-Eyelid_Upper2.L",
+        "DEF-Eyelid_Upper1.L",
+        "DEF-Eye_Ring_Lower4.L",
+        "DEF-Eye_Ring_Lower3.L",
+        "DEF-Eye_Ring_Lower2.L",
+        "DEF-Eye_Ring_Lower1.L",
+        "DEF-Eye_Ring_Upper4.L",
+        "DEF-Eye_Ring_Upper3.L",
+        "DEF-Eye_Ring_Upper2.L",
+        "DEF-Eye_Ring_Upper1.L",
+        "DEF-Eyelid_Lower4.R",
+        "DEF-Eyelid_Lower3.R",
+        "DEF-Eyelid_Lower2.R",
+        "DEF-Eyelid_Lower1.R",
+        "DEF-Eyelid_Upper4.R",
+        "DEF-Eyelid_Upper3.R",
+        "DEF-Eyelid_Upper2.R",
+        "DEF-Eyelid_Upper1.R",
+        "DEF-Eye_Ring_Lower4.R",
+        "DEF-Eye_Ring_Lower3.R",
+        "DEF-Eye_Ring_Lower2.R",
+        "DEF-Eye_Ring_Lower1.R",
+        "DEF-Eye_Ring_Upper4.R",
+        "DEF-Eye_Ring_Upper3.R",
+        "DEF-Eye_Ring_Upper2.R",
+        "DEF-Eye_Ring_Upper1.R",
+        "DEF-Eyebrow_Mid"
+      ]
+    },
+    "GEO-ellie_eyelash_deform_helper": {
+      "vertices": 36,
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE",
+          "RIG-Ellie"
+        ],
+        [
+          "Lattice Mask",
+          "LATTICE",
+          "LTC-ellie_face_mask"
+        ]
+      ],
+      "groups": [
+        "DEF-Eyelid_Lower4.L",
+        "DEF-Eyelid_Lower1.L",
+        "DEF-Eyelid_Upper4.L",
+        "DEF-Eyelid_Upper3.L",
+        "DEF-Eyelid_Upper2.L",
+        "DEF-Eyelid_Upper1.L",
+        "DEF-Eye_Ring_Lower1.L",
+        "DEF-Eye_Ring_Upper4.L",
+        "DEF-Eye_Ring_Upper3.L",
+        "DEF-Eye_Ring_Upper2.L",
+        "DEF-Eye_Ring_Upper1.L",
+        "DEF-Eyelid_Lower4.R",
+        "DEF-Eyelid_Lower1.R",
+        "DEF-Eyelid_Upper4.R",
+        "DEF-Eyelid_Upper3.R",
+        "DEF-Eyelid_Upper2.R",
+        "DEF-Eyelid_Upper1.R",
+        "DEF-Eye_Ring_Lower1.R",
+        "DEF-Eye_Ring_Upper4.R",
+        "DEF-Eye_Ring_Upper3.R",
+        "DEF-Eye_Ring_Upper2.R",
+        "DEF-Eye_Ring_Upper1.R"
+      ]
+    },
+    "GEO-ellie_eye.R": {
+      "vertices": 610,
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE",
+          "RIG-Ellie"
+        ],
+        [
+          "Lattice.R",
+          "LATTICE",
+          "LTC-ellie_eye.R"
+        ],
+        [
+          "Lattice Mask",
+          "LATTICE",
+          "LTC-ellie_face_mask"
+        ],
+        [
+          "Subdivision",
+          "SUBSURF",
+          null
+        ],
+        [
+          "NormalEdit",
+          "NORMAL_EDIT",
+          null
+        ]
+      ],
+      "groups": [
+        "DEF-Eye.R"
+      ]
+    },
+    "GEO-ellie_eye.L": {
+      "vertices": 610,
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE",
+          "RIG-Ellie"
+        ],
+        [
+          "Lattice.L",
+          "LATTICE",
+          "LTC-ellie_eye.L"
+        ],
+        [
+          "Lattice Mask",
+          "LATTICE",
+          "LTC-ellie_face_mask"
+        ],
+        [
+          "Subdivision",
+          "SUBSURF",
+          null
+        ],
+        [
+          "NormalEdit",
+          "NORMAL_EDIT",
+          null
+        ]
+      ],
+      "groups": [
+        "DEF-Eye.L"
+      ]
+    }
+  },
+  "controlLimits": {
+    "Upper": [
+      {
+        "name": "Limit Location",
+        "type": "LIMIT_LOCATION",
+        "minY": -0.03999999910593033,
+        "maxY": 0.012500000186264515,
+        "owner_space": "LOCAL"
+      },
+      {
+        "name": "Limit Rotation",
+        "type": "LIMIT_ROTATION",
+        "minY": 0.0,
+        "maxY": 0.0,
+        "owner_space": "LOCAL"
+      }
+    ],
+    "Lower": [
+      {
+        "name": "Limit Location",
+        "type": "LIMIT_LOCATION",
+        "minY": -0.009999999776482582,
+        "maxY": 0.019999999552965164,
+        "owner_space": "LOCAL"
+      },
+      {
+        "name": "Limit Rotation",
+        "type": "LIMIT_ROTATION",
+        "minY": 0.0,
+        "maxY": 0.0,
+        "owner_space": "LOCAL"
+      }
+    ]
+  },
+  "upperActions": [
+    {
+      "bone": "STR-TIP-Eyelid_Lower4.L",
+      "action": "RIG.Ellie_Eyelid_Upper_Close-Open",
+      "frameStart": 0,
+      "frameEnd": 20,
+      "eval_time": 0.5000044703483582,
+      "useEvalTime": true
+    },
+    {
+      "bone": "STR-Eyelid_Lower1.L",
+      "action": "RIG.Ellie_Eyelid_Upper_Close-Open",
+      "frameStart": 0,
+      "frameEnd": 20,
+      "eval_time": 0.5000044703483582,
+      "useEvalTime": true
+    },
+    {
+      "bone": "STR-TIP-Eyelid_Upper4.L",
+      "action": "RIG.Ellie_Eyelid_Upper_Close-Open",
+      "frameStart": 0,
+      "frameEnd": 20,
+      "eval_time": 0.5000044703483582,
+      "useEvalTime": true
+    },
+    {
+      "bone": "STR-Eyelid_Upper4.L",
+      "action": "RIG.Ellie_Eyelid_Upper_Close-Open",
+      "frameStart": 0,
+      "frameEnd": 20,
+      "eval_time": 0.5000044703483582,
+      "useEvalTime": true
+    },
+    {
+      "bone": "STR-Eyelid_Upper3.L",
+      "action": "RIG.Ellie_Eyelid_Upper_Close-Open",
+      "frameStart": 0,
+      "frameEnd": 20,
+      "eval_time": 0.5000044703483582,
+      "useEvalTime": true
+    }
+  ]
+}

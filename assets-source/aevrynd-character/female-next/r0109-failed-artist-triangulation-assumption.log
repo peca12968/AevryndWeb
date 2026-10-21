@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0109-artist-lid-sheet.py", line 38, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0109-artist-lid-sheet.py", line 24, in main
+    tick=time.time();save('sheet-authoring-start.json',{'UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'action':'Direct full ocular native pose reconstruction from actual registered artist external sheet; no analytic aperture target or hood solver.'});native=np.load(PRE/'native-coarse-lid-poses-pinned.npz');P=native['neutralFineWorld'];T=native['fineTriangles'];artist=np.load(E/'actual-artist-external-blink.npz');A=artist['neutralWorld'];AT=artist['neutralTriangles'];assert np.array_equal(AT,artist['closedTriangles']) and np.array_equal(AT,artist['halfTriangles']);fullnative=np.load(E.parent/'r0104-native-artist-ocular-foundation/animation-actual-source-geometry.npz');opt=json.loads((E.parent/'r0100-native-eyelid-assembly/native-eye-topology.json').read_text('utf8'))['eyes'];C=np.mean([r['posteriorSphereFitCentreWorld'] for r in opt.values()],0);scale=np.linalg.norm(np.array(opt['L']['posteriorSphereFitCentreWorld'])-opt['R']['posteriorSphereFitCentreWorld'])/.060;skinN=tree(P,T);skinA=tree(A,AT);arrays={'neutralFineWorld':P,'fineTriangles':T};report={}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

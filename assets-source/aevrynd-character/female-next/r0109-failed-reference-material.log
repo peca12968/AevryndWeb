@@ -1,0 +1,12 @@
+D:\Download\Aevrynd\scripts\character-next\view-female-next-r0109-artist-external-blink.py:23: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mesh=bpy.data.meshes.new(name);mesh.from_pydata(verts.tolist(),[],tris.tolist());mesh.update();ob=bpy.data.objects.new(name,mesh);bpy.context.scene.collection.objects.link(ob);mat=bpy.data.materials.new(name);mat.diffuse_color=(*color,1);mat.use_nodes=True;bs=mat.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(*color,1);bs.inputs['Roughness'].default_value=.65;mesh.materials.append(mat)
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\view-female-next-r0109-artist-external-blink.py", line 26, in <module>
+    shown=clay('REFERENCE_ACTUAL_ELLIE_EXTERNAL_HEAD',arrays['neutralWorld'],arrays['neutralTriangles'],(.32,.28,.25))
+  File "D:\Download\Aevrynd\scripts\character-next\view-female-next-r0109-artist-external-blink.py", line 23, in clay
+    mesh=bpy.data.meshes.new(name);mesh.from_pydata(verts.tolist(),[],tris.tolist());mesh.update();ob=bpy.data.objects.new(name,mesh);bpy.context.scene.collection.objects.link(ob);mat=bpy.data.materials.new(name);mat.diffuse_color=(*color,1);mat.use_nodes=True;bs=mat.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(*color,1);bs.inputs['Roughness'].default_value=.65;mesh.materials.append(mat)
+                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'inputs'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
