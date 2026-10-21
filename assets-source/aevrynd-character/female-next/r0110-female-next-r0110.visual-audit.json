@@ -1,0 +1,129 @@
+{
+  "revision": "female-next-r0110",
+  "decision": "REJECT_ORDERED_POSE_TRANSFER_RETIRE_TRANSFER_FAMILY_KEEP_R107",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0107-b-native-pinned-lids.blend",
+    "sha256": "cc59c3c366148d16958eb35d9a3723e4be80165698712f88103f91c3d91c7c7f",
+    "bytes": 654016884,
+    "status": "RETAIN_COMPLETE_WORKING_WOMAN_PARTIAL_NATIVE_LID_OPERATION_FULL_BLINK_CONTACT_RUNTIME_UNACCEPTED",
+    "scope": "Same complete r105 woman, original neutral head/body/lip UV/shaders/textures/groom retained. Native coarse quad poses and half corrective baked into visible full skin, all412 source lash frames use actual triangle winding. A soft desired margins miss by6.8mm. B imposes exact stored coarse anchors but actual rendered aperture still does not close. Actual B skin moves8.36mm and restores0, frame reversals0. Local construction/partial control only, not a natural complete blink or complete character adoption."
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0110-a-ordered-native-lids.blend",
+      "sha256": "5ccabf06b7c9fdb3f74c5b2cc509760d62692d9c128c829a71031b54f63f9916",
+      "bytes": 654839487,
+      "status": "REJECT_ORDERED_ARTIST_TRANSFER_BULGING_FACETED_CLOSED_LIDS",
+      "scope": "Same complete r107 woman; neutral skin/body/lip UV/shader/textures/optics/groom/lashes and bindings exact. Existing native polygon graph explicitly split into major head and two900-face socket domains;502 mobile chart vertices per side use separate upper/lower ordered quad-strip correspondence, anterior extrema and wall/hood coordinate. Actual artist pose data CC-BY4.0; no spatial nearest field, projection or solver. Complete closed preview has bulbous protruding/faceted lids. This reconstructs pose correspondence on the existing graph, not a new retopologized or qualified finite eyelid base. Complete appearance/operation/contact/runtime rejected."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECT_BULGING_FACETED_COMPLETE_CLOSED_HEAD_NO_GAIN",
+      "evidence": [
+        "r0110-head-and-body-ab.png",
+        "r0110-closed-ab.png",
+        "r0110-actual-lid-poses.png",
+        "manual-visual-review.json",
+        "three-round-whole-character-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "REOPENED_PARTIAL_RESPONSE_RESTORE_PASS_COMPLETE_BLINK_SHAPE_FAIL",
+      "evidence": "minimum-saved-failure-readback.json",
+      "states": [
+        {
+          "state": "neutral",
+          "assignedBlink": 0,
+          "evaluatedKeys": {
+            "AFN107_Closed_L": 0.0,
+            "AFN107_HalfCorrection_L": 0.0,
+            "AFN107_Closed_R": 0.0,
+            "AFN107_HalfCorrection_R": 0.0
+          },
+          "maximumDisplayedSkinMoveM": 0.0,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "evaluatedLoopTriangleArrayEqualsNeutral": true
+        },
+        {
+          "state": "half",
+          "assignedBlink": 0.5,
+          "evaluatedKeys": {
+            "AFN107_Closed_L": 0.4999999403953552,
+            "AFN107_HalfCorrection_L": 1.0,
+            "AFN107_Closed_R": 0.4999999403953552,
+            "AFN107_HalfCorrection_R": 1.0
+          },
+          "maximumDisplayedSkinMoveM": 0.005734484094078109,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "evaluatedLoopTriangleArrayEqualsNeutral": true
+        },
+        {
+          "state": "closed",
+          "assignedBlink": 1,
+          "evaluatedKeys": {
+            "AFN107_Closed_L": 1.0,
+            "AFN107_HalfCorrection_L": 0.0,
+            "AFN107_Closed_R": 1.0,
+            "AFN107_HalfCorrection_R": 0.0
+          },
+          "maximumDisplayedSkinMoveM": 0.011177236869170031,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "evaluatedLoopTriangleArrayEqualsNeutral": true
+        },
+        {
+          "state": "restored",
+          "assignedBlink": 0,
+          "evaluatedKeys": {
+            "AFN107_Closed_L": 0.0,
+            "AFN107_HalfCorrection_L": 0.0,
+            "AFN107_Closed_R": 0.0,
+            "AFN107_HalfCorrection_R": 0.0
+          },
+          "maximumDisplayedSkinMoveM": 0.0,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "evaluatedLoopTriangleArrayEqualsNeutral": true
+        }
+      ],
+      "restoredGroomMaximumWorldErrorM": 0.0,
+      "lashFrames": {
+        "allCurves": 412,
+        "consistentWithActualSkinWinding": 412,
+        "reversed": 0,
+        "notActualSkinTriangle": 0
+      },
+      "neutralLashGeometryExactlyRetained": true,
+      "completeOperationAccepted": false,
+      "sourceAuthoringComponentNotLiveProductionRig": true,
+      "wholeBodyRigAndGuideEditingUnaccepted": true
+    },
+    "contact": {
+      "status": "UNACCEPTED_INHERITED_NEUTRAL_OPTICAL_WITNESSES_AND_NEW_MOVING_SHEET_NOT_AUDITED",
+      "priorEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0104-native-artist-ocular-foundation\\minimum-saved-readback.json",
+      "neutralActualSkinAndOpticsByteEqualToR107": true,
+      "priorCandidatePairsL": 284,
+      "priorCandidatePairsR": 311,
+      "priorStoredIntersectionOrTouchWitnessesPerSide": 16,
+      "countsNotGlobalTotals": true,
+      "globalSignedMinimumM": null,
+      "finiteSelfHairClothContinuousOrNaturalMotionCertified": false,
+      "priorFiniteRootContactRemainsUnaccepted": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 30,
+  "productionRoundsSinceLastWholeCharacterReview": 0,
+  "nextWholeReviewAfterFurtherProductionRounds": 3,
+  "femaleUserAcceptance": false,
+  "reviewUTC": "2026-10-21T05:36:06.818865+00:00",
+  "actualCompleteModelCandidates": 1,
+  "wholeCharacterReview": "three-round-whole-character-review.json",
+  "wholeCharacterScore": null
+}

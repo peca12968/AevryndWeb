@@ -1,0 +1,20 @@
+"""Minimum independent failure readback; no broad collision/animation audit."""
+from pathlib import Path
+import bpy,numpy as np,json,time,importlib.util
+R=Path('D:/Download/Aevrynd');E=R/'Evidence/character-female-next/r0110-ordered-lid-topology';S=R/'engine/assets/characters/female-next/source'
+def mod(name,file):
+ sp=importlib.util.spec_from_file_location(name,Path(__file__).with_name(file));m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);return m
+v=mod('r110verify','verify-female-next-r0105-saved-chart.py');b=mod('r110deliver','build-female-next-r0110-ordered-character.py');q=v.q
+def graph(d):return v.hasharray(np.r_[q.arr(d.polygons,'loop_total',len(d.polygons),dtype='i4'),q.arr(d.loops,'vertex_index',len(d.loops),dtype='i4')])
+def main():
+ tick=time.time();baseline=v.snapshot(S/'aevrynd-female-next-r0107-b-native-pinned-lids.blend');candidate=v.snapshot(S/'aevrynd-female-next-r0110-a-ordered-native-lids.blend');keys=['vertices','triangles','worldVertexSha256','triangleSha256','materialIndexSha256','canonicalUVSha256','skinMaterialGraphSha256','groomWorldSha256','lashWorldSha256','optics','externalTextures'];assert all(baseline[k]==candidate[k] for k in keys);skin=bpy.data.objects['AFN104_COMPLETE_WOMAN_WITH_NATIVE_ANIMATION_HEAD'];d,W,T=v.u.b.geom(skin);W=W.copy();T=T.copy();G=graph(d);originalHair=q.hair(bpy.data.objects['AFN97_TUCKED_ARTIST_BOB_CHILDREN']).copy();states=[]
+ for label,value in [('neutral',0),('half',.5),('closed',1),('restored',0)]:
+  b.deliver(value);d,V,TT=v.u.b.geom(skin);V=V.copy();TT=TT.copy();assert np.isfinite(V).all();states.append({'state':label,'assignedBlink':value,'evaluatedKeys':{k.name:k.value for k in skin.data.shape_keys.key_blocks if k.name!='Basis'},'maximumDisplayedSkinMoveM':float(np.linalg.norm(V-W,axis=1).max()),'evaluatedPolygonLoopGraphEqualsNeutral':graph(d)==G,'evaluatedLoopTriangleArrayEqualsNeutral':bool(np.array_equal(TT,T))})
+ assert states[-1]['maximumDisplayedSkinMoveM']==0 and all(x['evaluatedPolygonLoopGraphEqualsNeutral'] for x in states);restoreHair=float(np.linalg.norm(q.hair(bpy.data.objects['AFN97_TUCKED_ARTIST_BOB_CHILDREN'])-originalHair,axis=1).max());assert restoreHair==0;lookup={tuple(sorted(map(int,tri))):tri for tri in T};bindings=json.loads((E/'a-retained-native-seam-lash-bindings.json').read_text('utf8'));frames={'allCurves':len(bindings),'consistentWithActualSkinWinding':0,'reversed':0,'notActualSkinTriangle':0}
+ for row in bindings:
+  ids=np.array(row['actualSkinTriangle']);original=lookup.get(tuple(sorted(map(int,ids))))
+  if original is None:frames['notActualSkinTriangle']+=1;continue
+  n=np.cross(W[ids[1]]-W[ids[0]],W[ids[2]]-W[ids[0]]);other=np.cross(W[original[1]]-W[original[0]],W[original[2]]-W[original[0]]);frames['reversed' if np.dot(n,other)<0 else 'consistentWithActualSkinWinding']+=1
+ assert frames['allCurves']==412 and frames['reversed']==0 and frames['notActualSkinTriangle']==0
+ result={'status':'REOPENED_DELIVERED_RESPONSE_AND_EXACT_RESTORE_BUT_VISIBLE_CLOSED_SHAPE_REJECTED','baseline':baseline,'candidate':candidate,'exactNeutralUnchangedFields':keys,'states':states,'restoredGroomMaximumWorldErrorM':restoreHair,'lashFrames':frames,'orderedChartDoesNotEstablishFinitePhysicalLidOrContact':True,'actualClosedViewFailsBeforeBroadAudit':True,'contact':{'status':'UNACCEPTED_INHERITED_NEUTRAL_OPTICAL_WITNESSES_AND_NEW_MOVING_SHEET_NOT_AUDITED','priorEvidence':str(E.parent/'r0104-native-artist-ocular-foundation/minimum-saved-readback.json'),'neutralActualSkinAndOpticsByteEqualToR107':True,'priorCandidatePairsL':284,'priorCandidatePairsR':311,'priorStoredIntersectionOrTouchWitnessesPerSide':16,'countsNotGlobalTotals':True,'globalSignedMinimumM':None,'finiteSelfHairClothContinuousOrNaturalMotionCertified':False,'priorFiniteRootContactRemainsUnaccepted':True},'runtimeAccepted':False,'completeCapabilityOrAppearanceAccepted':False,'seconds':time.time()-tick};(E/'minimum-saved-failure-readback.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf8',newline='\n');print('R110_SAVED_FAILURE_READBACK_DONE',frames,time.time()-tick,flush=True)
+if __name__=='__main__':main()

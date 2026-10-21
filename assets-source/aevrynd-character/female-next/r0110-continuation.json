@@ -1,0 +1,223 @@
+{
+  "revision": "female-next-r0110",
+  "decision": "REJECT_ORDERED_POSE_TRANSFER_RETIRE_TRANSFER_FAMILY_KEEP_R107",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0107-b-native-pinned-lids.blend",
+    "sha256": "cc59c3c366148d16958eb35d9a3723e4be80165698712f88103f91c3d91c7c7f",
+    "bytes": 654016884,
+    "status": "RETAIN_COMPLETE_WORKING_WOMAN_PARTIAL_NATIVE_LID_OPERATION_FULL_BLINK_CONTACT_RUNTIME_UNACCEPTED",
+    "scope": "Same complete r105 woman, original neutral head/body/lip UV/shaders/textures/groom retained. Native coarse quad poses and half corrective baked into visible full skin, all412 source lash frames use actual triangle winding. A soft desired margins miss by6.8mm. B imposes exact stored coarse anchors but actual rendered aperture still does not close. Actual B skin moves8.36mm and restores0, frame reversals0. Local construction/partial control only, not a natural complete blink or complete character adoption."
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0110-a-ordered-native-lids.blend",
+      "sha256": "5ccabf06b7c9fdb3f74c5b2cc509760d62692d9c128c829a71031b54f63f9916",
+      "bytes": 654839487,
+      "status": "REJECT_ORDERED_ARTIST_TRANSFER_BULGING_FACETED_CLOSED_LIDS",
+      "scope": "Same complete r107 woman; neutral skin/body/lip UV/shader/textures/optics/groom/lashes and bindings exact. Existing native polygon graph explicitly split into major head and two900-face socket domains;502 mobile chart vertices per side use separate upper/lower ordered quad-strip correspondence, anterior extrema and wall/hood coordinate. Actual artist pose data CC-BY4.0; no spatial nearest field, projection or solver. Complete closed preview has bulbous protruding/faceted lids. This reconstructs pose correspondence on the existing graph, not a new retopologized or qualified finite eyelid base. Complete appearance/operation/contact/runtime rejected."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECT_BULGING_FACETED_COMPLETE_CLOSED_HEAD_NO_GAIN",
+      "evidence": [
+        "r0110-head-and-body-ab.png",
+        "r0110-closed-ab.png",
+        "r0110-actual-lid-poses.png",
+        "manual-visual-review.json",
+        "three-round-whole-character-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "REOPENED_PARTIAL_RESPONSE_RESTORE_PASS_COMPLETE_BLINK_SHAPE_FAIL",
+      "evidence": "minimum-saved-failure-readback.json",
+      "states": [
+        {
+          "state": "neutral",
+          "assignedBlink": 0,
+          "evaluatedKeys": {
+            "AFN107_Closed_L": 0.0,
+            "AFN107_HalfCorrection_L": 0.0,
+            "AFN107_Closed_R": 0.0,
+            "AFN107_HalfCorrection_R": 0.0
+          },
+          "maximumDisplayedSkinMoveM": 0.0,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "evaluatedLoopTriangleArrayEqualsNeutral": true
+        },
+        {
+          "state": "half",
+          "assignedBlink": 0.5,
+          "evaluatedKeys": {
+            "AFN107_Closed_L": 0.4999999403953552,
+            "AFN107_HalfCorrection_L": 1.0,
+            "AFN107_Closed_R": 0.4999999403953552,
+            "AFN107_HalfCorrection_R": 1.0
+          },
+          "maximumDisplayedSkinMoveM": 0.005734484094078109,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "evaluatedLoopTriangleArrayEqualsNeutral": true
+        },
+        {
+          "state": "closed",
+          "assignedBlink": 1,
+          "evaluatedKeys": {
+            "AFN107_Closed_L": 1.0,
+            "AFN107_HalfCorrection_L": 0.0,
+            "AFN107_Closed_R": 1.0,
+            "AFN107_HalfCorrection_R": 0.0
+          },
+          "maximumDisplayedSkinMoveM": 0.011177236869170031,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "evaluatedLoopTriangleArrayEqualsNeutral": true
+        },
+        {
+          "state": "restored",
+          "assignedBlink": 0,
+          "evaluatedKeys": {
+            "AFN107_Closed_L": 0.0,
+            "AFN107_HalfCorrection_L": 0.0,
+            "AFN107_Closed_R": 0.0,
+            "AFN107_HalfCorrection_R": 0.0
+          },
+          "maximumDisplayedSkinMoveM": 0.0,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "evaluatedLoopTriangleArrayEqualsNeutral": true
+        }
+      ],
+      "restoredGroomMaximumWorldErrorM": 0.0,
+      "lashFrames": {
+        "allCurves": 412,
+        "consistentWithActualSkinWinding": 412,
+        "reversed": 0,
+        "notActualSkinTriangle": 0
+      },
+      "neutralLashGeometryExactlyRetained": true,
+      "completeOperationAccepted": false,
+      "sourceAuthoringComponentNotLiveProductionRig": true,
+      "wholeBodyRigAndGuideEditingUnaccepted": true
+    },
+    "contact": {
+      "status": "UNACCEPTED_INHERITED_NEUTRAL_OPTICAL_WITNESSES_AND_NEW_MOVING_SHEET_NOT_AUDITED",
+      "priorEvidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0104-native-artist-ocular-foundation\\minimum-saved-readback.json",
+      "neutralActualSkinAndOpticsByteEqualToR107": true,
+      "priorCandidatePairsL": 284,
+      "priorCandidatePairsR": 311,
+      "priorStoredIntersectionOrTouchWitnessesPerSide": 16,
+      "countsNotGlobalTotals": true,
+      "globalSignedMinimumM": null,
+      "finiteSelfHairClothContinuousOrNaturalMotionCertified": false,
+      "priorFiniteRootContactRemainsUnaccepted": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 30,
+  "productionRoundsSinceLastWholeCharacterReview": 0,
+  "nextWholeReviewAfterFurtherProductionRounds": 3,
+  "femaleUserAcceptance": false,
+  "lastGoalTurnClassification": "progress",
+  "progressKind": "EXPLICIT_ORDERED_TOPOLOGY_TRIAL_VISIBLE_FAILURE_AND_WHOLE_WOMAN_REVIEW_RETIRE_TRANSFER_DIRECTION",
+  "previousTurnClassification": "progress: actual complete r109 artist-sheet transfer, severe visible folding, actual source closure reference, saved response/restore and full verified history; no adopted complete gain.",
+  "wholeCharacterStagnationReset": false,
+  "priorArtRollbackReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0105-a-native-lip-chart.blend",
+    "sha256": "ce9371558e3e4d26541484adf3448b96c4bef0a7c541f6f932c0d5bee7a3a43e",
+    "bytes": 628115371,
+    "status": "RETAIN_COMPLETE_NATIVE_HEAD_WOMAN_LOCAL_LIP_UV_GAIN_STATIC_SKIN_CONTACT_RUNTIME_UNACCEPTED",
+    "scope": "Same r104 B2 complete woman, with native external mouth-seam UV arcs registered to explicit upper/lower contours of the unchanged source skin atlas. Fragmented dark external lip patches visibly removed in complete head/body, profile, oblique and second-lighting comparisons. Actual geometry, optics, full groom/lashes, skin shader parameters and15 source textures exactly unchanged. Static displayed skin and inherited optical intersections remain; no complete operation, whole-character adoption, finite/continuous contact or runtime acceptance.",
+    "originalArtist": "Dan Ulrich",
+    "selectedHeadAssetMetadataLicense": "CC0",
+    "formalRuntimeOrUserFemaleAcceptance": false
+  },
+  "retainedControlContactReference": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0102-a-facet-aware-lining.blend",
+  "lastReviewedProductionWindow": [
+    "r108",
+    "r109",
+    "r110"
+  ],
+  "lastWholeCharacterReview": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0110-ordered-lid-topology\\three-round-whole-character-review.json",
+  "appearanceStructuralTurnStillRequired": true,
+  "stoppedMethods": [
+    "R81/R82 registration alone as a posterior coverage remedy.",
+    "A artificial head/neck closure correspondences:103.328mm guard failure.",
+    "B transported frame offsets:54.458mm output guard failure.",
+    "C bounded displacement passes its map bound but not visual coverage/body contact; no further fitting formula or parameter sweep.",
+    "Old long-hair splitting/thinning/positional fields, r66/r73 skin wrappers and r72 cheek/jaw weight sweeps remain stopped.",
+    "R83 regional posterior guide lifting/convergence as coverage cure.",
+    "R83 simply adding15 rooted guides to inherited generator as coverage cure.",
+    "R83 selecting uncalibrated source Cycles shader output as accepted Brown replacement.",
+    "R71/R83/R84 source Cycles routing and bounded Brown colour correction are not new successful fixes.",
+    "R84 isolated Brown RGB with native Chiang/Huang scattering as a complete appearance fix.",
+    "R84 live-tangent non-metal microfacet approximation as an accepted hair appearance fix.",
+    "No further hair material/pigment/roughness/model/density/radius scans without genuinely changed evidence.",
+    "R85 source crease endpoint or opposing fold-volume fields as a sufficient complete-face realism fix; do not extend crease/roll/weight variants.",
+    "R86 source-face partition with captured normal/material override as an appearance-preserving eye workflow; iris visibly regresses. Do not debug it indefinitely or claim layer-switch usefulness without independent proof.",
+    "R87 internal optical thickness/relative-IOR/iris-fold/pupil-depth variants as a complete-face realism cure. Do not extend parameter scans or repair the rejected pupil well merely to gain a local pass.",
+    "R88 aperture-height/tilt/crease variants as a complete-face realism cure; retain the supported editing reference rather than scanning more rest-eye shapes.",
+    "R89 regional generated-shaft bundle cages as posterior coverage remedy: visible straight streaks/gap.",
+    "R89 complete global contour bob field as credible guide authoring: crown exposure and face curtain; do not tune contour/turn parameters.",
+    "R89 transferred publisher braid cap/parting as a complete scalp coverage solution: broad posterior seam/tip failure; do not sweep snap/parting/guide weights.",
+    "R90 actual-scalp geodesic paths with shared XYZ free-knot families as a complete hairstyle: funnel-like end groups.",
+    "R90 direct stylized Rain polygonal surface meshes as realistic fibre hair; keep only attributed shape data.",
+    "R90 direct U/V shading-UV tangent advection as globally valid growth:128 U and85 audited V roots fail; no endpoint/step/stall-tolerance sweeps.",
+    "R91 Rain distributed-endpoint section lofts as a complete realism remedy: solid stylized quiff/shell persists, uniform tail.",
+    "R91 detached Ellie affine landmark fit plus independently translated guide roots and geodesic-neighbour shaft blend: exposed crown, brush-like tufts and distorted authored groom.",
+    "R92 source-native smooth SurfaceDeform as sufficient proof of finite hair exclusion/natural dynamics. Native identity/anchors do not grant source/body contact acceptance; do not scan fit falloff or RBF formulas.",
+    "R93 A simultaneous full-chain stretch/vector curvature followed by refreshed point supporting-plane response: actual display edge max44.5%,145 edges above10%,8 sampled body-interior witnesses.",
+    "R93 B active supporting-plane inverse mass inside direct stretch solve: max50.2%,16 edges above10%,8 sampled body-interior witnesses. P99 improvement does not qualify the whole groom. No iteration/material/tolerance sweeps.",
+    "Generic nearest head subset as proven anatomical scalp/emission or follicle binding; recorded root spatial reconstruction is not domain/anatomical/live-operation acceptance.",
+    "R94 flat emission -> spherical free cross-section ramp alone as complete realism fix: wet sheet/crown exposure persists. No roundness/ramp parameter sweep.",
+    "R94 exact radius/close-tip conversion repair as sufficient complete appearance/contact cure: front coarseness lower, crown coverage regresses and8 interior knots persist. Keep dimensional repair only.",
+    "R94 direct source emitter native vertex morph + source-indexed skin with unchanged edited guide coordinates as complete retarget: receding hairline/rear/tip gaps; no repeated emitter-fitting or visibility debugging round.",
+    "R95 A semantic-surface parent routes plus body-ray shoulder/chest controls: posterior midline gap and cape/torso-sheet silhouette.",
+    "R95 B connected posterior plus explicit free S-curve controls and retained face-prefix: front fan sheets/tails and smooth rear band.",
+    "R95 C independent director locks over analytic guides with within-lock coupling: stiff overlapping ribbon curls and poor face framing. No new curve-family/clump/partition scan.",
+    "R96 unmodified artist Bob source-cache whole-strand native morph as complete realism/contact cure: coherent shape only, eight authoring-control interior witnesses. Retain original spatial shape but rebuild anatomical attachment/ear/near-head lock control; no source-name/point-count/fit/density/radius/shader sweep.",
+    "R97 outward crown/ear sculpt brush on source parent paths: front/back bulges and poor silhouette. No amplitude/radius/weight variants.",
+    "R97 shared upper-ear/posterior/nape tuck landmarks on selected source locks, even with true-parent tangent-frame child offsets: large temple patch, horizontal band and rear flips. No tuck/selection/anchor parameter family.",
+    "R98 A closest whole-head envelope projection on old topology plus common nonrigid attachment transfer: perioral creases and upper19.8675mm/lower16.2788mm tooth movement; no mask/falloff or projection sweep.",
+    "R98 B fine native source head with unequal-loop zipper collar and independent masked body: visible neck rupture despite selected boundary vertices exactly coincident. Eye-centre alignment alone does not ensure eyelid fit. Do not sweep collar phase/weights or claim a weld from root/neck numerical readback.",
+    "R99 A weld/coherent normals alone over old folded collar: zero open/conflicting edges does not remove visible folds. A2 only repairs saved material identity; no more weld/normal-only realism rounds.",
+    "R99 physical companion-globe equatorial size calibration changes scale only1.2%, not a whole-eye realism cure; original eyes restored, no scale family.",
+    "R99 B quadrant/arc/Hermite annulus reconstruction from retained uneven endpoint loops/normals: visible corrugated/frilled neck. Do not tune ring count, quadrant phase, tangent lengths or chart fields; preserve C original continuous source instead.",
+    "R100 anterior native lining row projected to optical front plus harmonic original-cup propagation: convex pale eye inserts and unreadable iris/pupil. A2 native backing-vector repair still fails. Stop this entire filled-cup deformation family; no row-depth, weight, radius, crease or aperture variants. Rebuild actual movable lid/short inner wall separately from the posterior socket cap.",
+    "R100 constant ID-offset mirror for source-native right eye is false; actual right topology must be verified, not inferred from left indices.",
+    "R101 restricted native pocket boundary with partial vertex projection and inherited full C skin blink: folded/doubled closure; keep legacy original body blink neutral when own new lid component drives blink. Attachment-only A2 does not fix the surface premise.",
+    "R101 independent unbounded nearest-outside-face UV extrapolation on a new eyelid creates visible bands; use a coherent new chart while keeping original retained loops exact.",
+    "R101 B/B2 vertex-only one-sided radial exclusion is insufficient for actual moving facets: blink0.5 has stored SAT surface intersection/contact witnesses. No ring-count, offset, iteration, weight or tolerance sweep; reconstruct the finite face representation while preserving good B2 shape.",
+    "R102 static optical BVH across blink is false: actual source optics move up to2.469mm. Use actual per-pose evaluated geometry.",
+    "R102 geometry-derived adaptive source-control lining with four checked levels leaves31 faces above its fixed25micrometre interpolation criterion. Sampled surface improvement is not whole appearance, natural blink or continuous finite contact. Do not extend depth/density/offset/iteration/tolerance scans.",
+    "R103 five corresponding anatomical front bands between the retained r97-derived margin and orbital boundary, independently authored open/closed profiles: neutral only slight crease, closed smooth shell and whole doll-like face unchanged. No station fraction, depth, corner fade, crease weight or band-count refinement. Source-level native ocular/head shape must change the failed premise.",
+    "R104 native artist optics alone on the unchanged C head: wide-eye impression and inherited blink fails to close iris. No optical scale/IOR/aperture scan.",
+    "R104 clearing/reappending material lists resets polygon IDs; preserve and explicitly restore IDs before rendering, never call wrong brown skin an art result.",
+    "R104 canonical skin-domain-only mouth resampling: all4641 faces already material4, no visible improvement. The mixed-mouth-material hypothesis is not established; front rays hit new head. No domain/nearest-point UV retune without new causal evidence.",
+    "R104 normal-input-off diagnostic does not cure mouth shading, while untextured clay removes it. Do not adopt flat/normal-off concealment or assert a single remaining channel without a causal test.",
+    "R104 availability of original rig/blink sources is not new displayed skin deformation: actual blink1 moves new skin0m. Native source/zero open edges do not exempt actual neutral optical-surface witnesses.",
+    "R105 demonstrates that original Base Color itself reproduces the fragmented lip artifact; native external lip UV seam registration removes it. No further nearest-point/domain-only UV, pigment/roughness/IOR/normal-off variant needed. Keep this local appearance gain while rebuilding actual operation.",
+    "R106 actual native fine-mesh eye-margin globe rotation with geodesic outer/short-inner-wall weights: raw actual closed pose forms folded/segmented pale blocks. Stop this closure family immediately; no angle, geodesic radius, closure fraction, clearance, density or weight scan.",
+    "R106 input shape keys before the new bound whole-body modifier chain deliver values but displayed skin0m. Source keys/is_bound are not a delivered operation. Do not build another layer merely to deliver the rejected raw shape.",
+    "R106 sorted native margin-edge endpoints used as a face frame reverse195 of412 lash frames relative to actual skin winding. Use actual triangle order and corresponding barycentrics; native edge attachment alone is not finite/outward frame acceptance.",
+    "R107 treating Ellie head_rig_helper Blink as a complete closed-eye artist surface is false; it is a closed support volume only. Official pages failed to open, search snippets are not inspected reference evidence.",
+    "R107 original soft Laplacian native margins miss desired positions by6.83/6.86mm. No weight/iteration sweep. Exact source-coarse delivery B repairs that premise but actual rendered closure still fails.",
+    "R107 native coarse UV-seam-to-lower-edge closure, including exact stored margin and outer constraints before original Multires, is insufficient for actual visible aperture closure. Do not add amplitude, radius, density, closure fraction, clearance or smoothing variants. Preserve key delivery and repair actual fine anatomical/pose representation.",
+    "R107 loop-triangle array equality is not equivalent to raw polygon-loop topology. Actual polygon-loop graph is checked separately; use actual evaluated triangles for each affected pose.",
+    "R108 removing original Multires evaluation in one unsaved diagnostic still leaves actual aperture open; do not hide or discard retained artist surface details as a closure cure.",
+    "R108 global/local Laplacian fine-hood scopes report no solution on closed states. Explicit fine band targets and a saved component are not successful hood deformation; no solver weight/iteration/patch-size scan.",
+    "R108 actual anterior source row plus measured posterior-wall offsets, inherited hood and projected optical front targets still produce an open slit and folded/pale strip in the complete character. Stop this lip-only construction as sufficient closure; no row-number, amplitude, clearance, gap or radius scan. Native geometric anterior ordering alone is not verified visible anatomical margin correspondence.",
+    "R109 assuming artist Close-Open name endpoint0 was closed is false: source Upper localY max+.0125/lower min-.01 clamp it and visible eye opens. Actual close uses Upper-.04/lower+.02, evaluated action time1, actual external head closes. Use observed source semantics, not helper volume or control names.",
+    "R109 actual source pose triangle arrays differ through tessellation despite identical evaluated polygon-loop graph. Compare actual graph for correspondence and actual per-pose triangles for geometry queries.",
+    "R109 sampled visible-aperture registration plus nearest original artist external triangles to transfer real neutral/half/closed motion onto the full native ocular sheet produces severe folded/pinched lids in the complete woman. Valid artist closure does not establish native anatomical/topological correspondence. Stop this spatial/nearest field retarget family as a complete closure construction; no query distance, grid density, fade, axis scale, weights or smoothing scan.",
+    "R110 native ordered quad-strip charts separate upper/lower, measured anterior extrema and wall/hood while keeping posterior socket domain fixed; actual closed image still protrudes bulbous/faceted lids. No station count, path length, rim index, weights, axis scale or interpolation variants. Existing source graph is not a newly reconstructed finite eyelid base.",
+    "R109 spatial and R110 semantic/ordered artist-pose transfer are two ineffective complete production rounds. Retire the entire artist-pose transfer direction. Actual artist closed surface remains a reference only; the next construction must author a genuine mobile lid mesh and short finite wall instead of another transferred deformation field."
+  ],
+  "liveJobHandles": [],
+  "nextAction": "Continue from r107 B as the one complete working woman, protect r105 lip/neutral art and full original source groom/body/rig/oral/guide data. R108/r109/r110 whole-woman review confirms no adopted complete gain; no-adoption lower30, cadence0, next whole review after three further actual rounds. Artist closed external source is valid as reference, but both spatial and ordered transfer have failed and are retired. Do not create another correspondence/pose-field/weight/rim-index variant. Next directly rebuild the actual external mobile upper/lower eyelid mesh and short finite inner wall, with explicit fixed socket anatomy/transition and authored neutral/closed shapes on this same head; this must change the blocking finite surface construction, not only name or control delivery. Original graph is allowed to change with source lineage/rebind/rollback. Use the already inspected artist external closure as a shape/topology reference only; show actual complete head/body and affected operation before broad tests. Preserve all failed surfaces, source counts and original control delivery; no deleting failed fibres, masking skin or changing tolerances. Neutral optical witnesses, finite/self/continuous/hair/clothes, natural motion, full rig/guide editing, rights qualification and runtime remain unaccepted. Female approval before male.",
+  "goal": "ACTIVE_NOT_COMPLETE"
+}
