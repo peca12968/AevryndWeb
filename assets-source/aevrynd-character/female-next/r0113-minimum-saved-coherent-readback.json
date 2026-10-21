@@ -1,0 +1,728 @@
+{
+  "status": "REOPENED_ACTUAL_NATIVE_HEAD_MOTION_AND_RESTORE_NOT_COMPLETE_ACCEPTANCE",
+  "candidate": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0113-b-native-neck-skin.blend",
+    "sourceSha256": "53c56c31e33170131cc21798c5191627f111659d4c58c0297dd0eefb2b8d5f1e",
+    "sourceBytes": 84258144,
+    "vertices": 504785,
+    "triangles": 1009566,
+    "externalTextures": [
+      {
+        "name": "Iris_Color.1007.exr",
+        "relative": "//study-vitruvian-textures\\Iris_Color.1007.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Iris_Color.1007.exr",
+        "sha256": "62efc0ed85878cb0831db9b492975c384f19052bd7ab52f945777ac3e1d8b002",
+        "bytes": 3300761
+      },
+      {
+        "name": "Light_Skin_Color.1001.exr",
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1001.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Light_Skin_Color.1001.exr",
+        "sha256": "362373cf6afa6c88c44bc480f328afe94de11ca88463a6b40a5fc8032f3f6fa2",
+        "bytes": 10874477
+      },
+      {
+        "name": "Light_Skin_Color.1002.exr",
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1002.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Light_Skin_Color.1002.exr",
+        "sha256": "0c2dfa2f2edf9110c92ff9ad7879eec0b0b78ee7855d01f1d9525f3cd10e5a9b",
+        "bytes": 8424344
+      },
+      {
+        "name": "Light_Skin_Color.1003.exr",
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1003.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Light_Skin_Color.1003.exr",
+        "sha256": "cd540d1415af4dd2e5ce8f3086f921b8c610597b99a3a369a1ee67d869b629f5",
+        "bytes": 9375204
+      },
+      {
+        "name": "Light_Skin_Color.1004.exr",
+        "relative": "//study-vitruvian-textures\\Light_Skin_Color.1004.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Light_Skin_Color.1004.exr",
+        "sha256": "d702bb83c27d70516aea23ea62a5218ef495b422783c9048bd193f0ca0118905",
+        "bytes": 10049078
+      },
+      {
+        "name": "Mouth_Color.1008.exr",
+        "relative": "//study-vitruvian-textures\\Mouth_Color.1008.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Mouth_Color.1008.exr",
+        "sha256": "47c988fd5799f4c54e3a916cda14bbb5245cf5a171d47132e0e0e9e9f2b05c11",
+        "bytes": 2825877
+      },
+      {
+        "name": "Sclera_Color.1005.exr",
+        "relative": "//study-vitruvian-textures\\Sclera_Color.1005.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Sclera_Color.1005.exr",
+        "sha256": "e81a1554b08e096ad76bfb2909a2d09747ff90df1fe1b993b768ec41713dd672",
+        "bytes": 2859426
+      },
+      {
+        "name": "Skin_Height.1001.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Height.1001.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Skin_Height.1001.exr",
+        "sha256": "62d11cdff413599f3cf4c4c16bfd6a467def20b8f21ad7e26a68ea9601475a87",
+        "bytes": 1218091
+      },
+      {
+        "name": "Skin_Height.1002.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Height.1002.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Skin_Height.1002.exr",
+        "sha256": "5dd6a565ab791074905ae3e650ec89f1c77a274d502749ba68a5dc884a651844",
+        "bytes": 864971
+      },
+      {
+        "name": "Skin_Height.1003.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Height.1003.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Skin_Height.1003.exr",
+        "sha256": "e3edd7d2a7be4a2d1b2ec12a1f08534b770d7644c2d0181d7e4c2bda06b6c29a",
+        "bytes": 1064998
+      },
+      {
+        "name": "Skin_Height.1004.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Height.1004.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Skin_Height.1004.exr",
+        "sha256": "2e3bb73055367c3bb72be9ab95c3278b92967219d895087cd8dd44714011567b",
+        "bytes": 981725
+      },
+      {
+        "name": "Skin_Roughness.1001.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1001.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Skin_Roughness.1001.exr",
+        "sha256": "fa97dd24bdf68be9240982d3921bef6ae096c476589fc58eb07ab4039ff1addf",
+        "bytes": 1354884
+      },
+      {
+        "name": "Skin_Roughness.1002.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1002.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Skin_Roughness.1002.exr",
+        "sha256": "906c3e31ad66044370e1c62bda99eb770ead2c934845be393a18823a55cbd3eb",
+        "bytes": 1066519
+      },
+      {
+        "name": "Skin_Roughness.1003.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1003.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Skin_Roughness.1003.exr",
+        "sha256": "c5772aee25e4558f7ebb4f2f8d62f51bb8dfce511e89fb4163f85bd6c064f11f",
+        "bytes": 1137254
+      },
+      {
+        "name": "Skin_Roughness.1004.exr",
+        "relative": "//study-vitruvian-textures\\Skin_Roughness.1004.exr",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\study-vitruvian-textures\\Skin_Roughness.1004.exr",
+        "sha256": "4d14cb45facbd63f13ee91131dbe5656c3fe0d6eb8fec93aa8f23e7f00cff10d",
+        "bytes": 1169541
+      },
+      {
+        "name": "young_lightskinned_female_diffuse.png",
+        "relative": "//makehuman-native-head-textures\\young_lightskinned_female_diffuse.png",
+        "absolute": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\makehuman-native-head-textures\\young_lightskinned_female_diffuse.png",
+        "sha256": "b2a6ac8cd4f9febdb447368e29c76cd68410bb66e46d9dcfa2d5f75126eea8fc",
+        "bytes": 4391156
+      }
+    ]
+  },
+  "states": [
+    {
+      "state": "neutral",
+      "assignedBlink": 0.0,
+      "actualSkinMaximumMoveM": 0.0,
+      "actualNativeHeadAgainstOwnSourceMaxErrorM": 7.151831169790275e-08,
+      "evaluatedPolygonLoopGraphEqualsNeutral": true,
+      "keys": {
+        "AFN113_CLOSED_L": 0.0,
+        "AFN113_CLOSED_R": 0.0
+      }
+    },
+    {
+      "state": "half",
+      "assignedBlink": 0.5,
+      "actualSkinMaximumMoveM": 0.005015363361879737,
+      "actualNativeHeadAgainstOwnSourceMaxErrorM": 1.1400113755048222e-07,
+      "evaluatedPolygonLoopGraphEqualsNeutral": true,
+      "keys": {
+        "AFN113_CLOSED_L": 0.4999999403953552,
+        "AFN113_CLOSED_R": 0.4999999403953552
+      }
+    },
+    {
+      "state": "closed",
+      "assignedBlink": 1.0,
+      "actualSkinMaximumMoveM": 0.010030833574096685,
+      "actualNativeHeadAgainstOwnSourceMaxErrorM": 1.21256834522179e-07,
+      "evaluatedPolygonLoopGraphEqualsNeutral": true,
+      "keys": {
+        "AFN113_CLOSED_L": 1.0,
+        "AFN113_CLOSED_R": 1.0
+      }
+    },
+    {
+      "state": "restored",
+      "assignedBlink": 0.0,
+      "actualSkinMaximumMoveM": 0.0,
+      "actualNativeHeadAgainstOwnSourceMaxErrorM": 7.151831169790275e-08,
+      "evaluatedPolygonLoopGraphEqualsNeutral": true,
+      "keys": {
+        "AFN113_CLOSED_L": 0.0,
+        "AFN113_CLOSED_R": 0.0
+      }
+    }
+  ],
+  "newGroomAgainstAuthoredRestMaxM": 0.0,
+  "newBrowsAgainstAuthoredRestMaxM": 0.0,
+  "allGroomCurves": 24800,
+  "allBrowCurves": 2140,
+  "allLashFrames": {
+    "curves": 412,
+    "actualWindingConsistent": 412,
+    "reversed": 0,
+    "notActualTriangle": 0
+  },
+  "sourceUnchangedDuringVerification": true,
+  "contact": {
+    "status": "UNACCEPTED",
+    "actualSurfaceWitnesses": [
+      {
+        "state": "neutral",
+        "pair": "actual new complete skin/head vs AFN113_L_SCLERA",
+        "bvhCandidatePairs": 933,
+        "candidatePairsExaminedUntilWitnessCap": 16,
+        "storedIntersectionOrTouchWitnesses": 16,
+        "witnesses": [
+          {
+            "skinTriangle": 980225,
+            "opticTriangle": 152,
+            "worldPointsM": [
+              [
+                0.04002056169154776,
+                -0.09743913019262097,
+                1.4597694805063963
+              ],
+              [
+                0.040021586402669417,
+                -0.09747634302097531,
+                1.4596011883766222
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 972223,
+            "opticTriangle": 152,
+            "worldPointsM": [
+              [
+                0.04001868425488928,
+                -0.09748316489305099,
+                1.4595602768317748
+              ],
+              [
+                0.040021586402669417,
+                -0.09747634302097531,
+                1.4596011883766222
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 972222,
+            "opticTriangle": 152,
+            "worldPointsM": [
+              [
+                0.039969275196248,
+                -0.09753364545405022,
+                1.4591665949014925
+              ],
+              [
+                0.04001868425488928,
+                -0.09748316489305099,
+                1.4595602768317748
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 972199,
+            "opticTriangle": 152,
+            "worldPointsM": [
+              [
+                0.0399403075238334,
+                -0.09753672694544824,
+                1.4590580723155357
+              ],
+              [
+                0.039969275196248,
+                -0.09753364545405022,
+                1.4591665949014925
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 971929,
+            "opticTriangle": 185,
+            "worldPointsM": [
+              [
+                0.03857745789970762,
+                -0.09613413375945691,
+                1.4624469741344879
+              ],
+              [
+                0.03863896863646936,
+                -0.09617335117585171,
+                1.46234077311578
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 971931,
+            "opticTriangle": 185,
+            "worldPointsM": [
+              [
+                0.03865262994490341,
+                -0.09618285942392889,
+                1.4623033205626934
+              ],
+              [
+                0.03880478890338267,
+                -0.0962885948001759,
+                1.4618890770333242
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 971930,
+            "opticTriangle": 185,
+            "worldPointsM": [
+              [
+                0.03863896863646936,
+                -0.09617335117585171,
+                1.46234077311578
+              ],
+              [
+                0.03865262994490341,
+                -0.09618285942392889,
+                1.4623033205626934
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 971932,
+            "opticTriangle": 185,
+            "worldPointsM": [
+              [
+                0.03880478890338267,
+                -0.0962885948001759,
+                1.4618890770333242
+              ],
+              [
+                0.03882390840180779,
+                -0.09630638331538689,
+                1.461758814314722
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 971933,
+            "opticTriangle": 185,
+            "worldPointsM": [
+              [
+                0.03882390840180779,
+                -0.09630638331538689,
+                1.461758814314722
+              ],
+              [
+                0.03886489990645463,
+                -0.09634563093699836,
+                1.4614602591512542
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 971758,
+            "opticTriangle": 185,
+            "worldPointsM": [
+              [
+                0.03857745789970762,
+                -0.09613413375945691,
+                1.4624469741344879
+              ],
+              [
+                0.03791815070968903,
+                -0.09575796447088701,
+                1.462817748070197
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 980198,
+            "opticTriangle": 153,
+            "worldPointsM": [
+              [
+                0.03961686430499535,
+                -0.0969883344107881,
+                1.4605304387155869
+              ],
+              [
+                0.03978936393506816,
+                -0.0971709953719289,
+                1.4602504442177533
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 980201,
+            "opticTriangle": 153,
+            "worldPointsM": [
+              [
+                0.03940366593883588,
+                -0.09677847922324129,
+                1.460804921022737
+              ],
+              [
+                0.03961686430499535,
+                -0.0969883344107881,
+                1.4605304387155869
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 980199,
+            "opticTriangle": 153,
+            "worldPointsM": [
+              [
+                0.03978936393506816,
+                -0.0971709953719289,
+                1.4602504442177533
+              ],
+              [
+                0.039895436342688856,
+                -0.09728763872374924,
+                1.4600588161950703
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 980222,
+            "opticTriangle": 153,
+            "worldPointsM": [
+              [
+                0.039895436342688856,
+                -0.09728763872374924,
+                1.4600588161950703
+              ],
+              [
+                0.039989145655721585,
+                -0.09740057795998422,
+                1.4598450045380296
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 980222,
+            "opticTriangle": 152,
+            "worldPointsM": [
+              [
+                0.04002056169154776,
+                -0.09743913019262097,
+                1.4597694805063963
+              ],
+              [
+                0.039989145655721585,
+                -0.09740057795998422,
+                1.4598450045380296
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 980214,
+            "opticTriangle": 185,
+            "worldPointsM": [
+              [
+                0.03886489990645463,
+                -0.09634563093699836,
+                1.4614602591512542
+              ],
+              [
+                0.038853991250688745,
+                -0.09634735139746935,
+                1.461328390388575
+              ]
+            ]
+          }
+        ],
+        "notGlobalIntersectionTotalOrSignedMinimum": true
+      },
+      {
+        "state": "neutral",
+        "pair": "actual new complete skin/head vs AFN113_R_SCLERA",
+        "bvhCandidatePairs": 928,
+        "candidatePairsExaminedUntilWitnessCap": 16,
+        "storedIntersectionOrTouchWitnesses": 16,
+        "witnesses": [
+          {
+            "skinTriangle": 902378,
+            "opticTriangle": 178,
+            "worldPointsM": [
+              [
+                -0.01325023692090447,
+                -0.1072696421857751,
+                1.4627549982772476
+              ],
+              [
+                -0.013237392269629424,
+                -0.10740096641012892,
+                1.4628180051855888
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 902378,
+            "opticTriangle": 179,
+            "worldPointsM": [
+              [
+                -0.01323326004913061,
+                -0.10744350861932124,
+                1.4628396581682257
+              ],
+              [
+                -0.013237392269629424,
+                -0.10740096641012892,
+                1.4628180051855888
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 902376,
+            "opticTriangle": 177,
+            "worldPointsM": [
+              [
+                -0.013314551954527786,
+                -0.10683633101787765,
+                1.4629538165000782
+              ],
+              [
+                -0.013268803426704303,
+                -0.10710586198096475,
+                1.4626587100411024
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 902377,
+            "opticTriangle": 177,
+            "worldPointsM": [
+              [
+                -0.013268803426704303,
+                -0.10710586198096475,
+                1.4626587100411024
+              ],
+              [
+                -0.013268243510663143,
+                -0.10710943298378005,
+                1.4626543356426318
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 902377,
+            "opticTriangle": 178,
+            "worldPointsM": [
+              [
+                -0.01325023692090447,
+                -0.1072696421857751,
+                1.4627549982772476
+              ],
+              [
+                -0.013268243510663143,
+                -0.10710943298378005,
+                1.4626543356426318
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 900786,
+            "opticTriangle": 180,
+            "worldPointsM": [
+              [
+                -0.013249078484119018,
+                -0.1111213551497237,
+                1.4621735238383917
+              ],
+              [
+                -0.013280786853583137,
+                -0.11135585153610736,
+                1.4622813437643563
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 900786,
+            "opticTriangle": 181,
+            "worldPointsM": [
+              [
+                -0.013282019888725474,
+                -0.11136509351346283,
+                1.4622846802493588
+              ],
+              [
+                -0.013280786853583137,
+                -0.11135585153610736,
+                1.4622813437643563
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 901434,
+            "opticTriangle": 179,
+            "worldPointsM": [
+              [
+                -0.013159527555354152,
+                -0.11020992161283956,
+                1.4622122451293573
+              ],
+              [
+                -0.013152754144361938,
+                -0.11009993845439187,
+                1.462338502123304
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 900795,
+            "opticTriangle": 179,
+            "worldPointsM": [
+              [
+                -0.01318118628942331,
+                -0.11040771000059944,
+                1.4618862472924312
+              ],
+              [
+                -0.013159527555354152,
+                -0.11020992161283956,
+                1.4622122451293573
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 900797,
+            "opticTriangle": 180,
+            "worldPointsM": [
+              [
+                -0.013249078484119018,
+                -0.1111213551497237,
+                1.4621735238383917
+              ],
+              [
+                -0.013208105362216413,
+                -0.11073233361453216,
+                1.46187277585008
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 900794,
+            "opticTriangle": 179,
+            "worldPointsM": [
+              [
+                -0.01318118628942331,
+                -0.11040771000059944,
+                1.4618862472924312
+              ],
+              [
+                -0.013196808628569947,
+                -0.11055098464191594,
+                1.4616507981448794
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 900794,
+            "opticTriangle": 180,
+            "worldPointsM": [
+              [
+                -0.013208105362216413,
+                -0.11073233361453216,
+                1.46187277585008
+              ],
+              [
+                -0.013196808628569947,
+                -0.11055098464191594,
+                1.4616507981448794
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 900789,
+            "opticTriangle": 181,
+            "worldPointsM": [
+              [
+                -0.013311244658668028,
+                -0.11154021533641831,
+                1.4622913956470203
+              ],
+              [
+                -0.013282019888725474,
+                -0.11136509351346283,
+                1.4622846802493588
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 900788,
+            "opticTriangle": 181,
+            "worldPointsM": [
+              [
+                -0.01338794245099019,
+                -0.11200052224690384,
+                1.4623101980855848
+              ],
+              [
+                -0.013311244658668028,
+                -0.11154021533641831,
+                1.4622913956470203
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 900803,
+            "opticTriangle": 181,
+            "worldPointsM": [
+              [
+                -0.013434597692243052,
+                -0.11223066909618752,
+                1.4622395009060611
+              ],
+              [
+                -0.01338794245099019,
+                -0.11200052224690384,
+                1.4623101980855848
+              ]
+            ]
+          },
+          {
+            "skinTriangle": 900802,
+            "opticTriangle": 181,
+            "worldPointsM": [
+              [
+                -0.013521104070370982,
+                -0.11266032823033796,
+                1.4621132430152095
+              ],
+              [
+                -0.013434597692243052,
+                -0.11223066909618752,
+                1.4622395009060611
+              ]
+            ]
+          }
+        ],
+        "notGlobalIntersectionTotalOrSignedMinimum": true
+      }
+    ],
+    "neutralFailureStoppedClosedContactExpansion": true,
+    "intersectionRoutine": "D:\\Download\\Aevrynd\\scripts\\character-next\\verify-female-next-r0037-eye-margin.py",
+    "intersectionRoutineFileSha256": "976d6a72826c0bd11a4985a425d5ac6439f6c9dd88ae6a098e1ce13cefc9f566",
+    "existingInsideAndIntersectionsFunctionsUsedUnchanged": true,
+    "globalSignedMinimumM": null,
+    "finiteWallSelfHairClothContinuousAndNaturalDynamicsProved": false,
+    "proxyHelperWasOnlyInitialEyeSizingNotProof": true
+  },
+  "wholeBodyRigGuidesOralBrowControlsAndRuntimeUnaccepted": true,
+  "completeAppearanceOrOperationAccepted": false,
+  "seconds": 26.427002906799316
+}

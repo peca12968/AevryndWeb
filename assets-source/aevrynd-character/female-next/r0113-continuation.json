@@ -1,0 +1,777 @@
+{
+  "revision": "female-next-r0113",
+  "decision": "RETAIN_COHERENT_NATIVE_HEAD_WORKING_FOUNDATION_NO_COMPLETE_GAIN",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0113-b-native-neck-skin.blend",
+    "sha256": "53c56c31e33170131cc21798c5191627f111659d4c58c0297dd0eefb2b8d5f1e",
+    "bytes": 84258144,
+    "status": "RETAIN_ONE_COMPLETE_COHERENT_WORKING_FOUNDATION_PARTIAL_NATIVE_BLINK_ALL_COMPLETE_GATES_UNACCEPTED",
+    "scope": "Same woman body and all original fibres, coherent adult CC0 MakeHuman full head/own blink, native skin UV/texture and real-height972-triangle neck bridge, actual fibre rebinding. Eye shape closes and restores, but straight/broken inner brows, swollen/red eye region, ear-through-hair and posterior neck ledge/crease remain. Actual skin/sclera intersection-or-touch witnesses exist. Source retains current dependency closure and separate complete original source files; no source/history deletion. Not complete appearance, anatomy, function/contact/runtime or user acceptance.",
+    "renderSkin": "AFN113_COMPLETE_WOMAN_COHERENT_HEAD",
+    "rawEditableHead": "AFN113_NATIVE_ADULT_FULL_HEAD_SOURCE",
+    "actualFaceControls": "AFN59_FACE_CONTROLS / blink_left, blink_right",
+    "notAnAdoptedCompleteAppearanceOrOperation": true
+  },
+  "previousWorkingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0107-b-native-pinned-lids.blend",
+    "sha256": "cc59c3c366148d16958eb35d9a3723e4be80165698712f88103f91c3d91c7c7f",
+    "bytes": 654016884,
+    "status": "RETAIN_COMPLETE_WORKING_WOMAN_PARTIAL_NATIVE_LID_OPERATION_FULL_BLINK_CONTACT_RUNTIME_UNACCEPTED",
+    "scope": "Same complete r105 woman, original neutral head/body/lip UV/shaders/textures/groom retained. Native coarse quad poses and half corrective baked into visible full skin, all412 source lash frames use actual triangle winding. A soft desired margins miss by6.8mm. B imposes exact stored coarse anchors but actual rendered aperture still does not close. Actual B skin moves8.36mm and restores0, frame reversals0. Local construction/partial control only, not a natural complete blink or complete character adoption."
+  },
+  "workingReferenceChangedForConstructionNotCompleteAdoption": true,
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0113-a-coherent-native-head.blend",
+      "sha256": "320bcbdc6cdd161c04b973f0ad970ab817450b1d54157ba63a5cd85d4828e789",
+      "bytes": 728630756,
+      "status": "REJECT_ZERO_HEIGHT_NECK_COLLAR_MISMAPPED_OLD_HEAD_MATERIAL_AND_UNBOUND_BROWS",
+      "scope": "First whole CC0 MakeHuman adult head/own native blink on the r107 body. Entire real head topology and native expression targets, no local donor or old-head pose-field transfer. Zero-height neck bridge creates visible collar; old UV projection stains nose/lips and brows remain behind the new surface. Full rejected source preserved."
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0113-b-native-neck-skin.blend",
+      "sha256": "53c56c31e33170131cc21798c5191627f111659d4c58c0297dd0eefb2b8d5f1e",
+      "bytes": 84258144,
+      "status": "RETAIN_COHERENT_COMPLETE_WORKING_FOUNDATION_NOT_COMPLETE_ADOPTION",
+      "scope": "Same woman body and all original fibres, coherent adult CC0 MakeHuman full head/own blink, native skin UV/texture and real-height972-triangle neck bridge, actual fibre rebinding. Eye shape closes and restores, but straight/broken inner brows, swollen/red eye region, ear-through-hair and posterior neck ledge/crease remain. Actual skin/sclera intersection-or-touch witnesses exist. Source retains current dependency closure and separate complete original source files; no source/history deletion. Not complete appearance, anatomy, function/contact/runtime or user acceptance."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "UNACCEPTED_BROWS_EYE_STYLE_NECK_LEDGE_EAR_THROUGH_HAIR",
+      "evidence": [
+        "r0113-head-and-body-ab.png",
+        "r0113-closed-ab.png",
+        "r0113-directional-limitations.png",
+        "manual-visual-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "PARTIAL_NATIVE_SURFACE_CLOSES_RESTORES_AND_SOURCE_REOPENS_COMPLETE_OPERATION_UNACCEPTED",
+      "evidence": "minimum-saved-coherent-readback.json",
+      "states": [
+        {
+          "state": "neutral",
+          "assignedBlink": 0.0,
+          "actualSkinMaximumMoveM": 0.0,
+          "actualNativeHeadAgainstOwnSourceMaxErrorM": 7.151831169790275e-08,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "keys": {
+            "AFN113_CLOSED_L": 0.0,
+            "AFN113_CLOSED_R": 0.0
+          }
+        },
+        {
+          "state": "half",
+          "assignedBlink": 0.5,
+          "actualSkinMaximumMoveM": 0.005015363361879737,
+          "actualNativeHeadAgainstOwnSourceMaxErrorM": 1.1400113755048222e-07,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "keys": {
+            "AFN113_CLOSED_L": 0.4999999403953552,
+            "AFN113_CLOSED_R": 0.4999999403953552
+          }
+        },
+        {
+          "state": "closed",
+          "assignedBlink": 1.0,
+          "actualSkinMaximumMoveM": 0.010030833574096685,
+          "actualNativeHeadAgainstOwnSourceMaxErrorM": 1.21256834522179e-07,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "keys": {
+            "AFN113_CLOSED_L": 1.0,
+            "AFN113_CLOSED_R": 1.0
+          }
+        },
+        {
+          "state": "restored",
+          "assignedBlink": 0.0,
+          "actualSkinMaximumMoveM": 0.0,
+          "actualNativeHeadAgainstOwnSourceMaxErrorM": 7.151831169790275e-08,
+          "evaluatedPolygonLoopGraphEqualsNeutral": true,
+          "keys": {
+            "AFN113_CLOSED_L": 0.0,
+            "AFN113_CLOSED_R": 0.0
+          }
+        }
+      ],
+      "newGroomRestMaxErrorM": 0.0,
+      "newBrowRestMaxErrorM": 0.0,
+      "lashFrames": {
+        "curves": 412,
+        "actualWindingConsistent": 412,
+        "reversed": 0,
+        "notActualTriangle": 0
+      },
+      "sourceLayoutEvidence": "b-source-layout.json",
+      "completeOperationAccepted": false,
+      "wholeBodyRigGuidesOralAndBrowControlsUnaccepted": true
+    },
+    "contact": {
+      "status": "UNACCEPTED",
+      "actualSurfaceWitnesses": [
+        {
+          "state": "neutral",
+          "pair": "actual new complete skin/head vs AFN113_L_SCLERA",
+          "bvhCandidatePairs": 933,
+          "candidatePairsExaminedUntilWitnessCap": 16,
+          "storedIntersectionOrTouchWitnesses": 16,
+          "witnesses": [
+            {
+              "skinTriangle": 980225,
+              "opticTriangle": 152,
+              "worldPointsM": [
+                [
+                  0.04002056169154776,
+                  -0.09743913019262097,
+                  1.4597694805063963
+                ],
+                [
+                  0.040021586402669417,
+                  -0.09747634302097531,
+                  1.4596011883766222
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 972223,
+              "opticTriangle": 152,
+              "worldPointsM": [
+                [
+                  0.04001868425488928,
+                  -0.09748316489305099,
+                  1.4595602768317748
+                ],
+                [
+                  0.040021586402669417,
+                  -0.09747634302097531,
+                  1.4596011883766222
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 972222,
+              "opticTriangle": 152,
+              "worldPointsM": [
+                [
+                  0.039969275196248,
+                  -0.09753364545405022,
+                  1.4591665949014925
+                ],
+                [
+                  0.04001868425488928,
+                  -0.09748316489305099,
+                  1.4595602768317748
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 972199,
+              "opticTriangle": 152,
+              "worldPointsM": [
+                [
+                  0.0399403075238334,
+                  -0.09753672694544824,
+                  1.4590580723155357
+                ],
+                [
+                  0.039969275196248,
+                  -0.09753364545405022,
+                  1.4591665949014925
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 971929,
+              "opticTriangle": 185,
+              "worldPointsM": [
+                [
+                  0.03857745789970762,
+                  -0.09613413375945691,
+                  1.4624469741344879
+                ],
+                [
+                  0.03863896863646936,
+                  -0.09617335117585171,
+                  1.46234077311578
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 971931,
+              "opticTriangle": 185,
+              "worldPointsM": [
+                [
+                  0.03865262994490341,
+                  -0.09618285942392889,
+                  1.4623033205626934
+                ],
+                [
+                  0.03880478890338267,
+                  -0.0962885948001759,
+                  1.4618890770333242
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 971930,
+              "opticTriangle": 185,
+              "worldPointsM": [
+                [
+                  0.03863896863646936,
+                  -0.09617335117585171,
+                  1.46234077311578
+                ],
+                [
+                  0.03865262994490341,
+                  -0.09618285942392889,
+                  1.4623033205626934
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 971932,
+              "opticTriangle": 185,
+              "worldPointsM": [
+                [
+                  0.03880478890338267,
+                  -0.0962885948001759,
+                  1.4618890770333242
+                ],
+                [
+                  0.03882390840180779,
+                  -0.09630638331538689,
+                  1.461758814314722
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 971933,
+              "opticTriangle": 185,
+              "worldPointsM": [
+                [
+                  0.03882390840180779,
+                  -0.09630638331538689,
+                  1.461758814314722
+                ],
+                [
+                  0.03886489990645463,
+                  -0.09634563093699836,
+                  1.4614602591512542
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 971758,
+              "opticTriangle": 185,
+              "worldPointsM": [
+                [
+                  0.03857745789970762,
+                  -0.09613413375945691,
+                  1.4624469741344879
+                ],
+                [
+                  0.03791815070968903,
+                  -0.09575796447088701,
+                  1.462817748070197
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 980198,
+              "opticTriangle": 153,
+              "worldPointsM": [
+                [
+                  0.03961686430499535,
+                  -0.0969883344107881,
+                  1.4605304387155869
+                ],
+                [
+                  0.03978936393506816,
+                  -0.0971709953719289,
+                  1.4602504442177533
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 980201,
+              "opticTriangle": 153,
+              "worldPointsM": [
+                [
+                  0.03940366593883588,
+                  -0.09677847922324129,
+                  1.460804921022737
+                ],
+                [
+                  0.03961686430499535,
+                  -0.0969883344107881,
+                  1.4605304387155869
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 980199,
+              "opticTriangle": 153,
+              "worldPointsM": [
+                [
+                  0.03978936393506816,
+                  -0.0971709953719289,
+                  1.4602504442177533
+                ],
+                [
+                  0.039895436342688856,
+                  -0.09728763872374924,
+                  1.4600588161950703
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 980222,
+              "opticTriangle": 153,
+              "worldPointsM": [
+                [
+                  0.039895436342688856,
+                  -0.09728763872374924,
+                  1.4600588161950703
+                ],
+                [
+                  0.039989145655721585,
+                  -0.09740057795998422,
+                  1.4598450045380296
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 980222,
+              "opticTriangle": 152,
+              "worldPointsM": [
+                [
+                  0.04002056169154776,
+                  -0.09743913019262097,
+                  1.4597694805063963
+                ],
+                [
+                  0.039989145655721585,
+                  -0.09740057795998422,
+                  1.4598450045380296
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 980214,
+              "opticTriangle": 185,
+              "worldPointsM": [
+                [
+                  0.03886489990645463,
+                  -0.09634563093699836,
+                  1.4614602591512542
+                ],
+                [
+                  0.038853991250688745,
+                  -0.09634735139746935,
+                  1.461328390388575
+                ]
+              ]
+            }
+          ],
+          "notGlobalIntersectionTotalOrSignedMinimum": true
+        },
+        {
+          "state": "neutral",
+          "pair": "actual new complete skin/head vs AFN113_R_SCLERA",
+          "bvhCandidatePairs": 928,
+          "candidatePairsExaminedUntilWitnessCap": 16,
+          "storedIntersectionOrTouchWitnesses": 16,
+          "witnesses": [
+            {
+              "skinTriangle": 902378,
+              "opticTriangle": 178,
+              "worldPointsM": [
+                [
+                  -0.01325023692090447,
+                  -0.1072696421857751,
+                  1.4627549982772476
+                ],
+                [
+                  -0.013237392269629424,
+                  -0.10740096641012892,
+                  1.4628180051855888
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 902378,
+              "opticTriangle": 179,
+              "worldPointsM": [
+                [
+                  -0.01323326004913061,
+                  -0.10744350861932124,
+                  1.4628396581682257
+                ],
+                [
+                  -0.013237392269629424,
+                  -0.10740096641012892,
+                  1.4628180051855888
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 902376,
+              "opticTriangle": 177,
+              "worldPointsM": [
+                [
+                  -0.013314551954527786,
+                  -0.10683633101787765,
+                  1.4629538165000782
+                ],
+                [
+                  -0.013268803426704303,
+                  -0.10710586198096475,
+                  1.4626587100411024
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 902377,
+              "opticTriangle": 177,
+              "worldPointsM": [
+                [
+                  -0.013268803426704303,
+                  -0.10710586198096475,
+                  1.4626587100411024
+                ],
+                [
+                  -0.013268243510663143,
+                  -0.10710943298378005,
+                  1.4626543356426318
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 902377,
+              "opticTriangle": 178,
+              "worldPointsM": [
+                [
+                  -0.01325023692090447,
+                  -0.1072696421857751,
+                  1.4627549982772476
+                ],
+                [
+                  -0.013268243510663143,
+                  -0.10710943298378005,
+                  1.4626543356426318
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 900786,
+              "opticTriangle": 180,
+              "worldPointsM": [
+                [
+                  -0.013249078484119018,
+                  -0.1111213551497237,
+                  1.4621735238383917
+                ],
+                [
+                  -0.013280786853583137,
+                  -0.11135585153610736,
+                  1.4622813437643563
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 900786,
+              "opticTriangle": 181,
+              "worldPointsM": [
+                [
+                  -0.013282019888725474,
+                  -0.11136509351346283,
+                  1.4622846802493588
+                ],
+                [
+                  -0.013280786853583137,
+                  -0.11135585153610736,
+                  1.4622813437643563
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 901434,
+              "opticTriangle": 179,
+              "worldPointsM": [
+                [
+                  -0.013159527555354152,
+                  -0.11020992161283956,
+                  1.4622122451293573
+                ],
+                [
+                  -0.013152754144361938,
+                  -0.11009993845439187,
+                  1.462338502123304
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 900795,
+              "opticTriangle": 179,
+              "worldPointsM": [
+                [
+                  -0.01318118628942331,
+                  -0.11040771000059944,
+                  1.4618862472924312
+                ],
+                [
+                  -0.013159527555354152,
+                  -0.11020992161283956,
+                  1.4622122451293573
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 900797,
+              "opticTriangle": 180,
+              "worldPointsM": [
+                [
+                  -0.013249078484119018,
+                  -0.1111213551497237,
+                  1.4621735238383917
+                ],
+                [
+                  -0.013208105362216413,
+                  -0.11073233361453216,
+                  1.46187277585008
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 900794,
+              "opticTriangle": 179,
+              "worldPointsM": [
+                [
+                  -0.01318118628942331,
+                  -0.11040771000059944,
+                  1.4618862472924312
+                ],
+                [
+                  -0.013196808628569947,
+                  -0.11055098464191594,
+                  1.4616507981448794
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 900794,
+              "opticTriangle": 180,
+              "worldPointsM": [
+                [
+                  -0.013208105362216413,
+                  -0.11073233361453216,
+                  1.46187277585008
+                ],
+                [
+                  -0.013196808628569947,
+                  -0.11055098464191594,
+                  1.4616507981448794
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 900789,
+              "opticTriangle": 181,
+              "worldPointsM": [
+                [
+                  -0.013311244658668028,
+                  -0.11154021533641831,
+                  1.4622913956470203
+                ],
+                [
+                  -0.013282019888725474,
+                  -0.11136509351346283,
+                  1.4622846802493588
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 900788,
+              "opticTriangle": 181,
+              "worldPointsM": [
+                [
+                  -0.01338794245099019,
+                  -0.11200052224690384,
+                  1.4623101980855848
+                ],
+                [
+                  -0.013311244658668028,
+                  -0.11154021533641831,
+                  1.4622913956470203
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 900803,
+              "opticTriangle": 181,
+              "worldPointsM": [
+                [
+                  -0.013434597692243052,
+                  -0.11223066909618752,
+                  1.4622395009060611
+                ],
+                [
+                  -0.01338794245099019,
+                  -0.11200052224690384,
+                  1.4623101980855848
+                ]
+              ]
+            },
+            {
+              "skinTriangle": 900802,
+              "opticTriangle": 181,
+              "worldPointsM": [
+                [
+                  -0.013521104070370982,
+                  -0.11266032823033796,
+                  1.4621132430152095
+                ],
+                [
+                  -0.013434597692243052,
+                  -0.11223066909618752,
+                  1.4622395009060611
+                ]
+              ]
+            }
+          ],
+          "notGlobalIntersectionTotalOrSignedMinimum": true
+        }
+      ],
+      "neutralFailureStoppedClosedContactExpansion": true,
+      "intersectionRoutine": "D:\\Download\\Aevrynd\\scripts\\character-next\\verify-female-next-r0037-eye-margin.py",
+      "intersectionRoutineFileSha256": "976d6a72826c0bd11a4985a425d5ac6439f6c9dd88ae6a098e1ce13cefc9f566",
+      "existingInsideAndIntersectionsFunctionsUsedUnchanged": true,
+      "globalSignedMinimumM": null,
+      "finiteWallSelfHairClothContinuousAndNaturalDynamicsProved": false,
+      "proxyHelperWasOnlyInitialEyeSizingNotProof": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 33,
+  "productionRoundsSinceLastWholeCharacterReview": 0,
+  "nextWholeReviewAfterFurtherProductionRounds": 3,
+  "femaleUserAcceptance": false,
+  "lastGoalTurnClassification": "progress",
+  "progressKind": "ACTUAL_COHERENT_WHOLE_HEAD_NATIVE_BLINK_NECK_UV_BROW_REPAIR_NEW_OPTICAL_FAILURE_AND_LEAN_SOURCE",
+  "previousTurnClassification": "progress: actual r112 complete sewn graft trial, rejection, independent operation readback and normal full-source history; no complete appearance gain.",
+  "wholeCharacterStagnationReset": false,
+  "priorArtRollbackReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0105-a-native-lip-chart.blend",
+    "sha256": "ce9371558e3e4d26541484adf3448b96c4bef0a7c541f6f932c0d5bee7a3a43e",
+    "bytes": 628115371,
+    "status": "RETAIN_COMPLETE_NATIVE_HEAD_WOMAN_LOCAL_LIP_UV_GAIN_STATIC_SKIN_CONTACT_RUNTIME_UNACCEPTED",
+    "scope": "Same r104 B2 complete woman, with native external mouth-seam UV arcs registered to explicit upper/lower contours of the unchanged source skin atlas. Fragmented dark external lip patches visibly removed in complete head/body, profile, oblique and second-lighting comparisons. Actual geometry, optics, full groom/lashes, skin shader parameters and15 source textures exactly unchanged. Static displayed skin and inherited optical intersections remain; no complete operation, whole-character adoption, finite/continuous contact or runtime acceptance.",
+    "originalArtist": "Dan Ulrich",
+    "selectedHeadAssetMetadataLicense": "CC0",
+    "formalRuntimeOrUserFemaleAcceptance": false
+  },
+  "retainedControlContactReference": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0102-a-facet-aware-lining.blend",
+  "lastReviewedProductionWindow": [
+    "r111",
+    "r112",
+    "r113"
+  ],
+  "lastWholeCharacterReview": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0113-coherent-head-foundation\\three-round-whole-character-review.json",
+  "appearanceStructuralTurnStillRequired": true,
+  "stoppedMethods": [
+    "R81/R82 registration alone as a posterior coverage remedy.",
+    "A artificial head/neck closure correspondences:103.328mm guard failure.",
+    "B transported frame offsets:54.458mm output guard failure.",
+    "C bounded displacement passes its map bound but not visual coverage/body contact; no further fitting formula or parameter sweep.",
+    "Old long-hair splitting/thinning/positional fields, r66/r73 skin wrappers and r72 cheek/jaw weight sweeps remain stopped.",
+    "R83 regional posterior guide lifting/convergence as coverage cure.",
+    "R83 simply adding15 rooted guides to inherited generator as coverage cure.",
+    "R83 selecting uncalibrated source Cycles shader output as accepted Brown replacement.",
+    "R71/R83/R84 source Cycles routing and bounded Brown colour correction are not new successful fixes.",
+    "R84 isolated Brown RGB with native Chiang/Huang scattering as a complete appearance fix.",
+    "R84 live-tangent non-metal microfacet approximation as an accepted hair appearance fix.",
+    "No further hair material/pigment/roughness/model/density/radius scans without genuinely changed evidence.",
+    "R85 source crease endpoint or opposing fold-volume fields as a sufficient complete-face realism fix; do not extend crease/roll/weight variants.",
+    "R86 source-face partition with captured normal/material override as an appearance-preserving eye workflow; iris visibly regresses. Do not debug it indefinitely or claim layer-switch usefulness without independent proof.",
+    "R87 internal optical thickness/relative-IOR/iris-fold/pupil-depth variants as a complete-face realism cure. Do not extend parameter scans or repair the rejected pupil well merely to gain a local pass.",
+    "R88 aperture-height/tilt/crease variants as a complete-face realism cure; retain the supported editing reference rather than scanning more rest-eye shapes.",
+    "R89 regional generated-shaft bundle cages as posterior coverage remedy: visible straight streaks/gap.",
+    "R89 complete global contour bob field as credible guide authoring: crown exposure and face curtain; do not tune contour/turn parameters.",
+    "R89 transferred publisher braid cap/parting as a complete scalp coverage solution: broad posterior seam/tip failure; do not sweep snap/parting/guide weights.",
+    "R90 actual-scalp geodesic paths with shared XYZ free-knot families as a complete hairstyle: funnel-like end groups.",
+    "R90 direct stylized Rain polygonal surface meshes as realistic fibre hair; keep only attributed shape data.",
+    "R90 direct U/V shading-UV tangent advection as globally valid growth:128 U and85 audited V roots fail; no endpoint/step/stall-tolerance sweeps.",
+    "R91 Rain distributed-endpoint section lofts as a complete realism remedy: solid stylized quiff/shell persists, uniform tail.",
+    "R91 detached Ellie affine landmark fit plus independently translated guide roots and geodesic-neighbour shaft blend: exposed crown, brush-like tufts and distorted authored groom.",
+    "R92 source-native smooth SurfaceDeform as sufficient proof of finite hair exclusion/natural dynamics. Native identity/anchors do not grant source/body contact acceptance; do not scan fit falloff or RBF formulas.",
+    "R93 A simultaneous full-chain stretch/vector curvature followed by refreshed point supporting-plane response: actual display edge max44.5%,145 edges above10%,8 sampled body-interior witnesses.",
+    "R93 B active supporting-plane inverse mass inside direct stretch solve: max50.2%,16 edges above10%,8 sampled body-interior witnesses. P99 improvement does not qualify the whole groom. No iteration/material/tolerance sweeps.",
+    "Generic nearest head subset as proven anatomical scalp/emission or follicle binding; recorded root spatial reconstruction is not domain/anatomical/live-operation acceptance.",
+    "R94 flat emission -> spherical free cross-section ramp alone as complete realism fix: wet sheet/crown exposure persists. No roundness/ramp parameter sweep.",
+    "R94 exact radius/close-tip conversion repair as sufficient complete appearance/contact cure: front coarseness lower, crown coverage regresses and8 interior knots persist. Keep dimensional repair only.",
+    "R94 direct source emitter native vertex morph + source-indexed skin with unchanged edited guide coordinates as complete retarget: receding hairline/rear/tip gaps; no repeated emitter-fitting or visibility debugging round.",
+    "R95 A semantic-surface parent routes plus body-ray shoulder/chest controls: posterior midline gap and cape/torso-sheet silhouette.",
+    "R95 B connected posterior plus explicit free S-curve controls and retained face-prefix: front fan sheets/tails and smooth rear band.",
+    "R95 C independent director locks over analytic guides with within-lock coupling: stiff overlapping ribbon curls and poor face framing. No new curve-family/clump/partition scan.",
+    "R96 unmodified artist Bob source-cache whole-strand native morph as complete realism/contact cure: coherent shape only, eight authoring-control interior witnesses. Retain original spatial shape but rebuild anatomical attachment/ear/near-head lock control; no source-name/point-count/fit/density/radius/shader sweep.",
+    "R97 outward crown/ear sculpt brush on source parent paths: front/back bulges and poor silhouette. No amplitude/radius/weight variants.",
+    "R97 shared upper-ear/posterior/nape tuck landmarks on selected source locks, even with true-parent tangent-frame child offsets: large temple patch, horizontal band and rear flips. No tuck/selection/anchor parameter family.",
+    "R98 A closest whole-head envelope projection on old topology plus common nonrigid attachment transfer: perioral creases and upper19.8675mm/lower16.2788mm tooth movement; no mask/falloff or projection sweep.",
+    "R98 B fine native source head with unequal-loop zipper collar and independent masked body: visible neck rupture despite selected boundary vertices exactly coincident. Eye-centre alignment alone does not ensure eyelid fit. Do not sweep collar phase/weights or claim a weld from root/neck numerical readback.",
+    "R99 A weld/coherent normals alone over old folded collar: zero open/conflicting edges does not remove visible folds. A2 only repairs saved material identity; no more weld/normal-only realism rounds.",
+    "R99 physical companion-globe equatorial size calibration changes scale only1.2%, not a whole-eye realism cure; original eyes restored, no scale family.",
+    "R99 B quadrant/arc/Hermite annulus reconstruction from retained uneven endpoint loops/normals: visible corrugated/frilled neck. Do not tune ring count, quadrant phase, tangent lengths or chart fields; preserve C original continuous source instead.",
+    "R100 anterior native lining row projected to optical front plus harmonic original-cup propagation: convex pale eye inserts and unreadable iris/pupil. A2 native backing-vector repair still fails. Stop this entire filled-cup deformation family; no row-depth, weight, radius, crease or aperture variants. Rebuild actual movable lid/short inner wall separately from the posterior socket cap.",
+    "R100 constant ID-offset mirror for source-native right eye is false; actual right topology must be verified, not inferred from left indices.",
+    "R101 restricted native pocket boundary with partial vertex projection and inherited full C skin blink: folded/doubled closure; keep legacy original body blink neutral when own new lid component drives blink. Attachment-only A2 does not fix the surface premise.",
+    "R101 independent unbounded nearest-outside-face UV extrapolation on a new eyelid creates visible bands; use a coherent new chart while keeping original retained loops exact.",
+    "R101 B/B2 vertex-only one-sided radial exclusion is insufficient for actual moving facets: blink0.5 has stored SAT surface intersection/contact witnesses. No ring-count, offset, iteration, weight or tolerance sweep; reconstruct the finite face representation while preserving good B2 shape.",
+    "R102 static optical BVH across blink is false: actual source optics move up to2.469mm. Use actual per-pose evaluated geometry.",
+    "R102 geometry-derived adaptive source-control lining with four checked levels leaves31 faces above its fixed25micrometre interpolation criterion. Sampled surface improvement is not whole appearance, natural blink or continuous finite contact. Do not extend depth/density/offset/iteration/tolerance scans.",
+    "R103 five corresponding anatomical front bands between the retained r97-derived margin and orbital boundary, independently authored open/closed profiles: neutral only slight crease, closed smooth shell and whole doll-like face unchanged. No station fraction, depth, corner fade, crease weight or band-count refinement. Source-level native ocular/head shape must change the failed premise.",
+    "R104 native artist optics alone on the unchanged C head: wide-eye impression and inherited blink fails to close iris. No optical scale/IOR/aperture scan.",
+    "R104 clearing/reappending material lists resets polygon IDs; preserve and explicitly restore IDs before rendering, never call wrong brown skin an art result.",
+    "R104 canonical skin-domain-only mouth resampling: all4641 faces already material4, no visible improvement. The mixed-mouth-material hypothesis is not established; front rays hit new head. No domain/nearest-point UV retune without new causal evidence.",
+    "R104 normal-input-off diagnostic does not cure mouth shading, while untextured clay removes it. Do not adopt flat/normal-off concealment or assert a single remaining channel without a causal test.",
+    "R104 availability of original rig/blink sources is not new displayed skin deformation: actual blink1 moves new skin0m. Native source/zero open edges do not exempt actual neutral optical-surface witnesses.",
+    "R105 demonstrates that original Base Color itself reproduces the fragmented lip artifact; native external lip UV seam registration removes it. No further nearest-point/domain-only UV, pigment/roughness/IOR/normal-off variant needed. Keep this local appearance gain while rebuilding actual operation.",
+    "R106 actual native fine-mesh eye-margin globe rotation with geodesic outer/short-inner-wall weights: raw actual closed pose forms folded/segmented pale blocks. Stop this closure family immediately; no angle, geodesic radius, closure fraction, clearance, density or weight scan.",
+    "R106 input shape keys before the new bound whole-body modifier chain deliver values but displayed skin0m. Source keys/is_bound are not a delivered operation. Do not build another layer merely to deliver the rejected raw shape.",
+    "R106 sorted native margin-edge endpoints used as a face frame reverse195 of412 lash frames relative to actual skin winding. Use actual triangle order and corresponding barycentrics; native edge attachment alone is not finite/outward frame acceptance.",
+    "R107 treating Ellie head_rig_helper Blink as a complete closed-eye artist surface is false; it is a closed support volume only. Official pages failed to open, search snippets are not inspected reference evidence.",
+    "R107 original soft Laplacian native margins miss desired positions by6.83/6.86mm. No weight/iteration sweep. Exact source-coarse delivery B repairs that premise but actual rendered closure still fails.",
+    "R107 native coarse UV-seam-to-lower-edge closure, including exact stored margin and outer constraints before original Multires, is insufficient for actual visible aperture closure. Do not add amplitude, radius, density, closure fraction, clearance or smoothing variants. Preserve key delivery and repair actual fine anatomical/pose representation.",
+    "R107 loop-triangle array equality is not equivalent to raw polygon-loop topology. Actual polygon-loop graph is checked separately; use actual evaluated triangles for each affected pose.",
+    "R108 removing original Multires evaluation in one unsaved diagnostic still leaves actual aperture open; do not hide or discard retained artist surface details as a closure cure.",
+    "R108 global/local Laplacian fine-hood scopes report no solution on closed states. Explicit fine band targets and a saved component are not successful hood deformation; no solver weight/iteration/patch-size scan.",
+    "R108 actual anterior source row plus measured posterior-wall offsets, inherited hood and projected optical front targets still produce an open slit and folded/pale strip in the complete character. Stop this lip-only construction as sufficient closure; no row-number, amplitude, clearance, gap or radius scan. Native geometric anterior ordering alone is not verified visible anatomical margin correspondence.",
+    "R109 assuming artist Close-Open name endpoint0 was closed is false: source Upper localY max+.0125/lower min-.01 clamp it and visible eye opens. Actual close uses Upper-.04/lower+.02, evaluated action time1, actual external head closes. Use observed source semantics, not helper volume or control names.",
+    "R109 actual source pose triangle arrays differ through tessellation despite identical evaluated polygon-loop graph. Compare actual graph for correspondence and actual per-pose triangles for geometry queries.",
+    "R109 sampled visible-aperture registration plus nearest original artist external triangles to transfer real neutral/half/closed motion onto the full native ocular sheet produces severe folded/pinched lids in the complete woman. Valid artist closure does not establish native anatomical/topological correspondence. Stop this spatial/nearest field retarget family as a complete closure construction; no query distance, grid density, fade, axis scale, weights or smoothing scan.",
+    "R110 native ordered quad-strip charts separate upper/lower, measured anterior extrema and wall/hood while keeping posterior socket domain fixed; actual closed image still protrudes bulbous/faceted lids. No station count, path length, rim index, weights, axis scale or interpolation variants. Existing source graph is not a newly reconstructed finite eyelid base.",
+    "R109 spatial and R110 semantic/ordered artist-pose transfer are two ineffective complete production rounds. Retire the entire artist-pose transfer direction. Actual artist closed surface remains a reference only; the next construction must author a genuine mobile lid mesh and short finite wall instead of another transferred deformation field.",
+    "R111 broad rectangular/centroid source-head eye crop with independent native rectangular ports and nearest fixed collar fit yields open perimeters and unrelated nasal/cheek-like surfaces on the complete woman. Do not retune crop sizes, collar fades, shifts, source scale or port dimensions. Rebuild a coherent anatomically delimited source component and matched/welded boundary instead.",
+    "R111 nominal0.8mm Solidify even-offset setting does not ensure thickness: propagated source-ID pairs reach100.578mm vertex displacement on the cropped skin; unsaved off test reaches0.80006mm. No modifier toggle alone as full-character cure. Clean/delimit the source surface and boundary before constructing/validating finite walls. Paired displacement is not exact global material thickness.",
+    "R111 original eye texture was in the already archived full Rain zip, not absent from official source. Required-input restoration is not a geometry candidate/appearance gain. Keep failed first images separately and do not adopt missing-material renders.",
+    "R112 exact volume union returned79 vertices and lost original scalp; retain failure and source-array discrepancy, do not declare a proven root cause or try solver/tolerance flags as model rounds.",
+    "R112 explicit shared source outer cut plus767 real bridge triangles removes independent-perimeter construction, but complete face still has raised ocular rings and round disc-like closure. Source geometric opening edges are not validated anatomical margins. No seam density, smoothing, port-size, source-scale or fade variants as a complete realism cure.",
+    "R111/r112 are two ineffective complete local donor-ocular graft rounds. Retire local stylized Rain eye/lid onto native human head as a full-character realism direction. Next requires a coherent full-head anatomical/operative construction, not another local graft wrapper.",
+    "R112 stored finite-neutral coordinates differ from actual raw Basis up to18.470mm, despite paired offset reports. Paired displacement alone did not establish correct neutral-source correspondence. Saved raw Basis/keys used directly in the sewn candidate; original failed component/arrays preserved unaccepted.",
+    "R113 original CC0 animation/sculpting head meshes have Multires but no armatures, shape keys, weights or action. The word animation does not provide a native blink.",
+    "R113 A equal-height body/head neck rims with one zipper strip create a flat shoulder/collar skirt, and projecting old head material onto another head mismaps nasal/lip colour. Do not tune donor fitting or old UV query fields. Native source UV/texture is now available and used in B.",
+    "R113 B a35mm real-height straight neck strip is still insufficient for an anatomically smooth neck; posterior ledge/tab and dark crease persist. Preserve new complete face/body; reconstruct the blocking neck surface/tangents/true attachment rather than retaining or hiding a sharp skirt. No height/phase/density parameter sweep.",
+    "R113 helper-sphere radius staging of old Dan Ulrich optics is not proven compatible native eye geometry: neutral actual skin/sclera witnesses exist. Use the real matching native optical asset/structure before any complete no-penetration blink claim.",
+    "R113 all2140 eyebrow rays miss the restricted mask and fall back to closest triangles; the resulting inner brow gaps/flat lines do not establish anatomical emission. Broad head-cap hair root translation likewise does not prove follicles, ear clearance or natural dynamics. No masks, fibre deletion, density/radius scans or darker skin to hide these defects."
+  ],
+  "liveJobHandles": [],
+  "nextAction": "Continue the SAME complete B working woman at D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\aevrynd-female-next-r0113-b-native-neck-skin.blend (AFN113_COMPLETE_WOMAN_COHERENT_HEAD; AFN113_NATIVE_ADULT_FULL_HEAD_SOURCE; native keys AFN113_CLOSED_L/R driven by AFN59_FACE_CONTROLS). Preserve its coherent whole human head, own actual closed/neutral geometry, native head UV/texture, body/lips, all24800 hair2140 brow412 lash fibres and exact widths, current control/source lineage. R107 remains immutable rollback, not a second simultaneous working woman. No complete adoption/stagnation reset: lower33, cadence0 after actual111/112/113 whole-woman review. Next select the major visible posterior neck ledge/crease from profile/back and directly reconstruct a genuine anatomically continuous multi-ring neck surface/attachment with actual boundary/tangent correspondence; current one-strip bridge is not enough. Change blocking construction, not more neck-height/phase/density or donor/pose-field fitting variants. One complete head/body plus defect profile/back and changed blink/restore preview before broad audit. Actual native MakeHuman body/head source is pinned and in the project, no reinstall. Separately queued: compatible real native eyes (existing system-pack metadata can locate high-poly ocular data), source-native eyebrow asset bindings instead of nearest mask, hair ear/neck clearance; current helper-globe sizing and all-ray-fallback brows are unaccepted. Finite/self/continuous contacts, body/oral/guide operations, natural hair, clothes/runtime/performance/rights remain unaccepted. Keep original timings/failures; female approval before male.",
+  "goal": "ACTIVE_NOT_COMPLETE"
+}
