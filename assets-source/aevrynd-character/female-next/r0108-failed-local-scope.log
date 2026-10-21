@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0108-finite-lid-lip.py", line 38, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0108-finite-lid-lip.py", line 17, in main
+    rows=[np.array(r,dtype=int) for r in rings[side]['nativeRows']];assert len(rows)==3 and all(len(r)==40 for r in rows);rim=rows[-1];points=P0[rim];lo=int(points[:,0].argmin());hi=int(points[:,0].argmax());paths=[]
+                                         ^^^^^
+UnboundLocalError: cannot access local variable 'rings' where it is not associated with a value
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

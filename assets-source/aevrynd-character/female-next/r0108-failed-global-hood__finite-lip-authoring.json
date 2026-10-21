@@ -1,0 +1,89 @@
+{
+  "sourceReference": "Original Dan Ulrich native animation-head actual fine rows, anterior/posterior geometry and r107 per-pose data. Original Multires removal diagnostic leaves aperture open; original sculpt detail retained in production.",
+  "construction": "Sculpt actual anterior native row and transport the two existing back-wall rows by their measured rest vectors. Retain r107 native hood, explicitly preserve fixed outer pose and actual finite band targets. All40 source points in each of3 existing rows retained; no density/radius/step/weight scan.",
+  "poses": {
+    "L_half": {
+      "anteriorLipVertices": 40,
+      "existingFiniteWallRows": 3,
+      "allSourceBandVerticesRetained": 120,
+      "bandTargetsExactAsStoredFloat32": true,
+      "wallRestCrossSectionPreservedAtAuthoredTargets": true,
+      "minimumNeutralWallRow0ToAnteriorDistanceM": 0.0007039352073152055,
+      "softResultBandResidualBeforeExplicitPinM": 0.0017287776964226447,
+      "fineMaximumMoveM": 0.004597896462921418,
+      "rayMissNativeColumnsRetainedNotExcluded": [
+        15,
+        16,
+        18,
+        19,
+        20
+      ],
+      "guideFrontClearanceM": 0.0004,
+      "guideUpperLowerFrontGapM": 0.0002,
+      "finiteFacesSelfOrContinuousContactNotCertified": true
+    },
+    "L_closed": {
+      "anteriorLipVertices": 40,
+      "existingFiniteWallRows": 3,
+      "allSourceBandVerticesRetained": 120,
+      "bandTargetsExactAsStoredFloat32": true,
+      "wallRestCrossSectionPreservedAtAuthoredTargets": true,
+      "minimumNeutralWallRow0ToAnteriorDistanceM": 0.0007039352073152055,
+      "softResultBandResidualBeforeExplicitPinM": 5.940662144875153e-08,
+      "fineMaximumMoveM": 0.008680540194339552,
+      "rayMissNativeColumnsRetainedNotExcluded": [
+        15,
+        16,
+        18,
+        19,
+        20
+      ],
+      "guideFrontClearanceM": 0.0004,
+      "guideUpperLowerFrontGapM": 0.0002,
+      "finiteFacesSelfOrContinuousContactNotCertified": true
+    },
+    "R_half": {
+      "anteriorLipVertices": 40,
+      "existingFiniteWallRows": 3,
+      "allSourceBandVerticesRetained": 120,
+      "bandTargetsExactAsStoredFloat32": true,
+      "wallRestCrossSectionPreservedAtAuthoredTargets": true,
+      "minimumNeutralWallRow0ToAnteriorDistanceM": 0.0006896969233766431,
+      "softResultBandResidualBeforeExplicitPinM": 0.0016126125000700958,
+      "fineMaximumMoveM": 0.0045654332661293675,
+      "rayMissNativeColumnsRetainedNotExcluded": [
+        0,
+        2,
+        3,
+        38,
+        39
+      ],
+      "guideFrontClearanceM": 0.0004,
+      "guideUpperLowerFrontGapM": 0.0002,
+      "finiteFacesSelfOrContinuousContactNotCertified": true
+    },
+    "R_closed": {
+      "anteriorLipVertices": 40,
+      "existingFiniteWallRows": 3,
+      "allSourceBandVerticesRetained": 120,
+      "bandTargetsExactAsStoredFloat32": true,
+      "wallRestCrossSectionPreservedAtAuthoredTargets": true,
+      "minimumNeutralWallRow0ToAnteriorDistanceM": 0.0006896969233766431,
+      "softResultBandResidualBeforeExplicitPinM": 5.906404766595159e-08,
+      "fineMaximumMoveM": 0.008684586171608794,
+      "rayMissNativeColumnsRetainedNotExcluded": [
+        0,
+        2,
+        3,
+        38,
+        39
+      ],
+      "guideFrontClearanceM": 0.0004,
+      "guideUpperLowerFrontGapM": 0.0002,
+      "finiteFacesSelfOrContinuousContactNotCertified": true
+    }
+  },
+  "sourceShapeAndR105LipChartProtectedAtNeutral": true,
+  "notAnatomicalOrFiniteContactProof": true,
+  "seconds": 3.8205182552337646
+}
