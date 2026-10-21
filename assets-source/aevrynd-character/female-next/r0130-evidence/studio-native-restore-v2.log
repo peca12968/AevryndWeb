@@ -1,0 +1,18 @@
+00:00.375  blend            | Read blend: "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend"
+D:\Download\Aevrynd\scripts\character-next\restore-female-next-r0130-native-studio-groom.py:38: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN130_OWN_REFERENCE_DARK_BROWN_NATIVE_HAIR');mat.use_nodes=True;n=mat.node_tree.nodes;n.clear();p=n.new('ShaderNodeBsdfHairPrincipled');p.parametrization='MELANIN';p.inputs['Melanin'].default_value=.8;p.inputs['Melanin Redness'].default_value=.12;p.inputs['Roughness'].default_value=.35;p.inputs['Radial Roughness'].default_value=.45;out=n.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(p.outputs[0],out.inputs['Surface']);scalp.data.materials.clear();scalp.data.materials.append(mat)
+D:\Download\Aevrynd\scripts\character-next\restore-female-next-r0130-native-studio-groom.py:40: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  head=bpy.data.objects['GEO-ellie_head'];head.hide_render=False;head.hide_set(False);clay=bpy.data.materials.new('AFN130_STUDIO_SOURCE_REFERENCE_CLAY');clay.use_nodes=True;clay.node_tree.nodes.clear();cp=clay.node_tree.nodes.new('ShaderNodeBsdfPrincipled');cp.inputs['Base Color'].default_value=(.25,.25,.25,1);co=clay.node_tree.nodes.new('ShaderNodeOutputMaterial');clay.node_tree.links.new(cp.outputs['BSDF'],co.inputs['Surface']);head.data.materials.clear();head.data.materials.append(clay)
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\restore-female-next-r0130-native-studio-groom.py", line 55, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\restore-female-next-r0130-native-studio-groom.py", line 44, in main
+    bpy.context.view_layer.update();s.render.engine='CYCLES';s.cycles.samples=16;s.cycles.use_denoising=True;s.render.threads_mode='FIXED';s.render.threads=4;s.render.resolution_x=s.render.resolution_y=640;s.render.resolution_percentage=100;s.render.image_settings.file_format='PNG';s.render.film_transparent=False;s.render.hair_type='STRIP';s.render.hair_subdiv=3;s.view_settings.view_transform='AgX';s.view_settings.look='AgX - Medium High Contrast';s.view_settings.exposure=-.5
+                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: bpy_struct: item.attr = val: enum "PNG" not found in ('FFMPEG')
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+scripts disabled for "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend", skipping 'cloudrig.py'
+scripts disabled for "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend", skipping 'rigged_particle_hair.py'
+
+Blender quit

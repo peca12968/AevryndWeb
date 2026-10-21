@@ -1,0 +1,985 @@
+{
+  "assetMetadata": [],
+  "objects": [
+    {
+      "name": "back",
+      "parent": null,
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "Braids growth mesh",
+      "parent": "Braids hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -0.7965498566627502,
+          -1.4688681364059448,
+          14.67590045928955
+        ],
+        [
+          -0.7965498566627502,
+          -1.4688681364059448,
+          16.413631439208984
+        ],
+        [
+          -0.7965498566627502,
+          0.31291434168815613,
+          16.413631439208984
+        ],
+        [
+          -0.7965498566627502,
+          0.31291434168815613,
+          14.67590045928955
+        ],
+        [
+          0.79739910364151,
+          -1.4688681364059448,
+          14.67590045928955
+        ],
+        [
+          0.79739910364151,
+          -1.4688681364059448,
+          16.413631439208984
+        ],
+        [
+          0.79739910364151,
+          0.31291434168815613,
+          16.413631439208984
+        ],
+        [
+          0.79739910364151,
+          0.31291434168815613,
+          14.67590045928955
+        ]
+      ],
+      "properties": {
+        "MM": "<bpy id prop: owner=\"OBBraids growth mesh\", name=\"MM\", address=0x00000195D8C1FAE0>",
+        "cycles": "<bpy id prop: owner=\"OBBraids growth mesh\", name=\"cycles\", address=0x00000195D8C1FA20>",
+        "point_cloud_visualizer": "<bpy id prop: owner=\"OBBraids growth mesh\", name=\"point_cloud_visualizer\", address=0x00000195D8C1F960>",
+        "mesh_data_transfer_object": "<bpy id prop: owner=\"OBBraids growth mesh\", name=\"mesh_data_transfer_object\", address=0x00000195D8C1F8A0>",
+        "expanded": "0"
+      }
+    },
+    {
+      "name": "Braids hair head",
+      "parent": null,
+      "instanceCollection": "head",
+      "instanceType": "COLLECTION",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "curly growth mesh",
+      "parent": "Curly hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -0.786777913570404,
+          -1.4540126323699951,
+          14.674525260925293
+        ],
+        [
+          -0.786777913570404,
+          -1.4540126323699951,
+          16.400089263916016
+        ],
+        [
+          -0.786777913570404,
+          0.28169548511505127,
+          16.400089263916016
+        ],
+        [
+          -0.786777913570404,
+          0.28169548511505127,
+          14.674525260925293
+        ],
+        [
+          0.786777913570404,
+          -1.4540126323699951,
+          14.674525260925293
+        ],
+        [
+          0.786777913570404,
+          -1.4540126323699951,
+          16.400089263916016
+        ],
+        [
+          0.786777913570404,
+          0.28169548511505127,
+          16.400089263916016
+        ],
+        [
+          0.786777913570404,
+          0.28169548511505127,
+          14.674525260925293
+        ]
+      ],
+      "properties": {
+        "MM": "<bpy id prop: owner=\"OBcurly growth mesh\", name=\"MM\", address=0x00000195D8C1F420>",
+        "cycles": "<bpy id prop: owner=\"OBcurly growth mesh\", name=\"cycles\", address=0x00000195D8C1F360>",
+        "point_cloud_visualizer": "<bpy id prop: owner=\"OBcurly growth mesh\", name=\"point_cloud_visualizer\", address=0x00000195D8C1F2A0>",
+        "mesh_data_transfer_object": "<bpy id prop: owner=\"OBcurly growth mesh\", name=\"mesh_data_transfer_object\", address=0x00000195D8C1F1E0>",
+        "expanded": "0"
+      }
+    },
+    {
+      "name": "curly hair",
+      "parent": "curly growth mesh",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "braided hair",
+      "parent": "Braids growth mesh",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {
+        "mesh_data_transfer_object": "<bpy id prop: owner=\"OBbraided hair\", name=\"mesh_data_transfer_object\", address=0x00000195D8C1E9A0>",
+        "point_cloud_visualizer": "<bpy id prop: owner=\"OBbraided hair\", name=\"point_cloud_visualizer\", address=0x00000195D8C1E820>"
+      }
+    },
+    {
+      "name": "Curly hair head",
+      "parent": null,
+      "instanceCollection": "head",
+      "instanceType": "COLLECTION",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "cyber punk growth mesh",
+      "parent": "Cyberpunk hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -0.790187656879425,
+          -1.4658281803131104,
+          14.674525260925293
+        ],
+        [
+          -0.790187656879425,
+          -1.4658281803131104,
+          16.400089263916016
+        ],
+        [
+          -0.790187656879425,
+          0.28169548511505127,
+          16.400089263916016
+        ],
+        [
+          -0.790187656879425,
+          0.28169548511505127,
+          14.674525260925293
+        ],
+        [
+          0.786777913570404,
+          -1.4658281803131104,
+          14.674525260925293
+        ],
+        [
+          0.786777913570404,
+          -1.4658281803131104,
+          16.400089263916016
+        ],
+        [
+          0.786777913570404,
+          0.28169548511505127,
+          16.400089263916016
+        ],
+        [
+          0.786777913570404,
+          0.28169548511505127,
+          14.674525260925293
+        ]
+      ],
+      "properties": {
+        "MM": "<bpy id prop: owner=\"OBcyber punk growth mesh\", name=\"MM\", address=0x00000195D8C1E2E0>",
+        "cycles": "<bpy id prop: owner=\"OBcyber punk growth mesh\", name=\"cycles\", address=0x00000195D8C1E220>",
+        "point_cloud_visualizer": "<bpy id prop: owner=\"OBcyber punk growth mesh\", name=\"point_cloud_visualizer\", address=0x00000195D8C1E160>",
+        "mesh_data_transfer_object": "<bpy id prop: owner=\"OBcyber punk growth mesh\", name=\"mesh_data_transfer_object\", address=0x00000195D8C1E0A0>",
+        "expanded": "0"
+      }
+    },
+    {
+      "name": "cyberpunk hair",
+      "parent": "cyber punk growth mesh",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "Cyberpunk hair head",
+      "parent": null,
+      "instanceCollection": "head",
+      "instanceType": "COLLECTION",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "Eyebrows growth mesh",
+      "parent": "Long hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -0.5545210838317871,
+          -1.579016089439392,
+          15.36524486541748
+        ],
+        [
+          -0.5545210838317871,
+          -1.579016089439392,
+          15.558691024780273
+        ],
+        [
+          -0.5545210838317871,
+          -1.2846715450286865,
+          15.558691024780273
+        ],
+        [
+          -0.5545210838317871,
+          -1.2846715450286865,
+          15.36524486541748
+        ],
+        [
+          0.5545210838317871,
+          -1.579016089439392,
+          15.36524486541748
+        ],
+        [
+          0.5545210838317871,
+          -1.579016089439392,
+          15.558691024780273
+        ],
+        [
+          0.5545210838317871,
+          -1.2846715450286865,
+          15.558691024780273
+        ],
+        [
+          0.5545210838317871,
+          -1.2846715450286865,
+          15.36524486541748
+        ]
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Eyebrows growth mesh.001",
+      "parent": "Curly hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -0.5545210838317871,
+          -1.579016089439392,
+          15.36524486541748
+        ],
+        [
+          -0.5545210838317871,
+          -1.579016089439392,
+          15.558691024780273
+        ],
+        [
+          -0.5545210838317871,
+          -1.2846715450286865,
+          15.558691024780273
+        ],
+        [
+          -0.5545210838317871,
+          -1.2846715450286865,
+          15.36524486541748
+        ],
+        [
+          0.5545210838317871,
+          -1.579016089439392,
+          15.36524486541748
+        ],
+        [
+          0.5545210838317871,
+          -1.579016089439392,
+          15.558691024780273
+        ],
+        [
+          0.5545210838317871,
+          -1.2846715450286865,
+          15.558691024780273
+        ],
+        [
+          0.5545210838317871,
+          -1.2846715450286865,
+          15.36524486541748
+        ]
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Eyebrows growth mesh.002",
+      "parent": "Cyberpunk hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -0.5545210838317871,
+          -1.579016089439392,
+          15.36524486541748
+        ],
+        [
+          -0.5545210838317871,
+          -1.579016089439392,
+          15.558691024780273
+        ],
+        [
+          -0.5545210838317871,
+          -1.2846715450286865,
+          15.558691024780273
+        ],
+        [
+          -0.5545210838317871,
+          -1.2846715450286865,
+          15.36524486541748
+        ],
+        [
+          0.5545210838317871,
+          -1.579016089439392,
+          15.36524486541748
+        ],
+        [
+          0.5545210838317871,
+          -1.579016089439392,
+          15.558691024780273
+        ],
+        [
+          0.5545210838317871,
+          -1.2846715450286865,
+          15.558691024780273
+        ],
+        [
+          0.5545210838317871,
+          -1.2846715450286865,
+          15.36524486541748
+        ]
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Eyebrows growth mesh.003",
+      "parent": "Braids hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -0.5545210838317871,
+          -1.579016089439392,
+          15.36524486541748
+        ],
+        [
+          -0.5545210838317871,
+          -1.579016089439392,
+          15.558691024780273
+        ],
+        [
+          -0.5545210838317871,
+          -1.2846715450286865,
+          15.558691024780273
+        ],
+        [
+          -0.5545210838317871,
+          -1.2846715450286865,
+          15.36524486541748
+        ],
+        [
+          0.5545210838317871,
+          -1.579016089439392,
+          15.36524486541748
+        ],
+        [
+          0.5545210838317871,
+          -1.579016089439392,
+          15.558691024780273
+        ],
+        [
+          0.5545210838317871,
+          -1.2846715450286865,
+          15.558691024780273
+        ],
+        [
+          0.5545210838317871,
+          -1.2846715450286865,
+          15.36524486541748
+        ]
+      ],
+      "properties": {}
+    },
+    {
+      "name": "eyebrows.001",
+      "parent": "Eyebrows growth mesh",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "eyebrows.002",
+      "parent": "Eyebrows growth mesh.001",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "eyebrows.003",
+      "parent": "Eyebrows growth mesh.002",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "eyebrows.004",
+      "parent": "Eyebrows growth mesh.003",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "eyelashes",
+      "parent": "Eyelashes growth mesh",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "Eyelashes growth mesh",
+      "parent": "Long hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -0.44657543301582336,
+          -1.4797396659851074,
+          15.220852851867676
+        ],
+        [
+          -0.44657543301582336,
+          -1.4797396659851074,
+          15.36280345916748
+        ],
+        [
+          -0.44657543301582336,
+          -1.384899616241455,
+          15.36280345916748
+        ],
+        [
+          -0.44657543301582336,
+          -1.384899616241455,
+          15.220852851867676
+        ],
+        [
+          0.44657543301582336,
+          -1.4797396659851074,
+          15.220852851867676
+        ],
+        [
+          0.44657543301582336,
+          -1.4797396659851074,
+          15.36280345916748
+        ],
+        [
+          0.44657543301582336,
+          -1.384899616241455,
+          15.36280345916748
+        ],
+        [
+          0.44657543301582336,
+          -1.384899616241455,
+          15.220852851867676
+        ]
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Eyelashes growth mesh.001",
+      "parent": "Curly hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -0.44657543301582336,
+          -1.4797396659851074,
+          15.220852851867676
+        ],
+        [
+          -0.44657543301582336,
+          -1.4797396659851074,
+          15.36280345916748
+        ],
+        [
+          -0.44657543301582336,
+          -1.384899616241455,
+          15.36280345916748
+        ],
+        [
+          -0.44657543301582336,
+          -1.384899616241455,
+          15.220852851867676
+        ],
+        [
+          0.44657543301582336,
+          -1.4797396659851074,
+          15.220852851867676
+        ],
+        [
+          0.44657543301582336,
+          -1.4797396659851074,
+          15.36280345916748
+        ],
+        [
+          0.44657543301582336,
+          -1.384899616241455,
+          15.36280345916748
+        ],
+        [
+          0.44657543301582336,
+          -1.384899616241455,
+          15.220852851867676
+        ]
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Eyelashes growth mesh.002",
+      "parent": "Cyberpunk hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -0.44657543301582336,
+          -1.4797396659851074,
+          15.220852851867676
+        ],
+        [
+          -0.44657543301582336,
+          -1.4797396659851074,
+          15.36280345916748
+        ],
+        [
+          -0.44657543301582336,
+          -1.384899616241455,
+          15.36280345916748
+        ],
+        [
+          -0.44657543301582336,
+          -1.384899616241455,
+          15.220852851867676
+        ],
+        [
+          0.44657543301582336,
+          -1.4797396659851074,
+          15.220852851867676
+        ],
+        [
+          0.44657543301582336,
+          -1.4797396659851074,
+          15.36280345916748
+        ],
+        [
+          0.44657543301582336,
+          -1.384899616241455,
+          15.36280345916748
+        ],
+        [
+          0.44657543301582336,
+          -1.384899616241455,
+          15.220852851867676
+        ]
+      ],
+      "properties": {}
+    },
+    {
+      "name": "Eyelashes growth mesh.003",
+      "parent": "Braids hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -0.44657543301582336,
+          -1.4797396659851074,
+          15.220852851867676
+        ],
+        [
+          -0.44657543301582336,
+          -1.4797396659851074,
+          15.36280345916748
+        ],
+        [
+          -0.44657543301582336,
+          -1.384899616241455,
+          15.36280345916748
+        ],
+        [
+          -0.44657543301582336,
+          -1.384899616241455,
+          15.220852851867676
+        ],
+        [
+          0.44657543301582336,
+          -1.4797396659851074,
+          15.220852851867676
+        ],
+        [
+          0.44657543301582336,
+          -1.4797396659851074,
+          15.36280345916748
+        ],
+        [
+          0.44657543301582336,
+          -1.384899616241455,
+          15.36280345916748
+        ],
+        [
+          0.44657543301582336,
+          -1.384899616241455,
+          15.220852851867676
+        ]
+      ],
+      "properties": {}
+    },
+    {
+      "name": "eyelashes.001",
+      "parent": "Eyelashes growth mesh.001",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "eyelashes.002",
+      "parent": "Eyelashes growth mesh.002",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "eyelashes.003",
+      "parent": "Eyelashes growth mesh.003",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "eyes",
+      "parent": null,
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -5.765951156616211,
+          -1.0240812301635742,
+          -1.0240812301635742
+        ],
+        [
+          -5.765951156616211,
+          -1.0240812301635742,
+          1.0240815877914429
+        ],
+        [
+          -5.765951156616211,
+          1.053865909576416,
+          1.0240815877914429
+        ],
+        [
+          -5.765951156616211,
+          1.053865909576416,
+          -1.0240812301635742
+        ],
+        [
+          1.0240814685821533,
+          -1.0240812301635742,
+          -1.0240812301635742
+        ],
+        [
+          1.0240814685821533,
+          -1.0240812301635742,
+          1.0240815877914429
+        ],
+        [
+          1.0240814685821533,
+          1.053865909576416,
+          1.0240815877914429
+        ],
+        [
+          1.0240814685821533,
+          1.053865909576416,
+          -1.0240812301635742
+        ]
+      ],
+      "properties": {
+        "ant_landscape": "<bpy id prop: owner=\"OBeyes\", name=\"ant_landscape\", address=0x00000195D895B5A0>",
+        "kitops": "<bpy id prop: owner=\"OBeyes\", name=\"kitops\", address=0x00000195D895B4E0>",
+        "MM": "<bpy id prop: owner=\"OBeyes\", name=\"MM\", address=0x00000195D895B420>"
+      }
+    },
+    {
+      "name": "hairband",
+      "parent": null,
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "head",
+      "parent": null,
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -0.8784418106079102,
+          -1.756827473640442,
+          13.19823169708252
+        ],
+        [
+          -0.8784418106079102,
+          -1.756827473640442,
+          16.410877227783203
+        ],
+        [
+          -0.8784418106079102,
+          0.4950631260871887,
+          16.410877227783203
+        ],
+        [
+          -0.8784418106079102,
+          0.4950631260871887,
+          13.19823169708252
+        ],
+        [
+          0.8793157935142517,
+          -1.756827473640442,
+          13.19823169708252
+        ],
+        [
+          0.8793157935142517,
+          -1.756827473640442,
+          16.410877227783203
+        ],
+        [
+          0.8793157935142517,
+          0.4950631260871887,
+          16.410877227783203
+        ],
+        [
+          0.8793157935142517,
+          0.4950631260871887,
+          13.19823169708252
+        ]
+      ],
+      "properties": {
+        "MM": "<bpy id prop: owner=\"OBhead\", name=\"MM\", address=0x00000195D895B2A0>",
+        "cycles": "<bpy id prop: owner=\"OBhead\", name=\"cycles\", address=0x00000195D895B1E0>",
+        "point_cloud_visualizer": "<bpy id prop: owner=\"OBhead\", name=\"point_cloud_visualizer\", address=0x00000195D895B120>",
+        "mesh_data_transfer_object": "<bpy id prop: owner=\"OBhead\", name=\"mesh_data_transfer_object\", address=0x00000195D895B060>",
+        "expanded": "0"
+      }
+    },
+    {
+      "name": "Info text.001",
+      "parent": "Long hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "Info text.002",
+      "parent": "Braids hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "Info text.003",
+      "parent": "Curly hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "key",
+      "parent": null,
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "long hair growth mesh",
+      "parent": "Long hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -0.786777913570404,
+          -1.4540126323699951,
+          14.674525260925293
+        ],
+        [
+          -0.786777913570404,
+          -1.4540126323699951,
+          16.400089263916016
+        ],
+        [
+          -0.786777913570404,
+          0.28169548511505127,
+          16.400089263916016
+        ],
+        [
+          -0.786777913570404,
+          0.28169548511505127,
+          14.674525260925293
+        ],
+        [
+          0.786777913570404,
+          -1.4540126323699951,
+          14.674525260925293
+        ],
+        [
+          0.786777913570404,
+          -1.4540126323699951,
+          16.400089263916016
+        ],
+        [
+          0.786777913570404,
+          0.28169548511505127,
+          16.400089263916016
+        ],
+        [
+          0.786777913570404,
+          0.28169548511505127,
+          14.674525260925293
+        ]
+      ],
+      "properties": {
+        "MM": "<bpy id prop: owner=\"OBlong hair growth mesh\", name=\"MM\", address=0x00000195D895ABE0>",
+        "cycles": "<bpy id prop: owner=\"OBlong hair growth mesh\", name=\"cycles\", address=0x00000195D895AB20>",
+        "point_cloud_visualizer": "<bpy id prop: owner=\"OBlong hair growth mesh\", name=\"point_cloud_visualizer\", address=0x00000195D895AA60>",
+        "mesh_data_transfer_object": "<bpy id prop: owner=\"OBlong hair growth mesh\", name=\"mesh_data_transfer_object\", address=0x00000195D895A9A0>",
+        "expanded": "0"
+      }
+    },
+    {
+      "name": "Long hair head",
+      "parent": null,
+      "instanceCollection": "head",
+      "instanceType": "COLLECTION",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "long hair main",
+      "parent": "long hair growth mesh",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "long hair strands",
+      "parent": "long hair growth mesh",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "new hair",
+      "parent": "long hair growth mesh",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "Plane",
+      "parent": null,
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": [
+        [
+          -0.8777990341186523,
+          -1.443070411682129,
+          13.518852233886719
+        ],
+        [
+          -0.8777990341186523,
+          -1.443070411682129,
+          16.491565704345703
+        ],
+        [
+          -0.8777990341186523,
+          0.7157354354858398,
+          16.491565704345703
+        ],
+        [
+          -0.8777990341186523,
+          0.7157354354858398,
+          13.518852233886719
+        ],
+        [
+          1.150944471359253,
+          -1.443070411682129,
+          13.518852233886719
+        ],
+        [
+          1.150944471359253,
+          -1.443070411682129,
+          16.491565704345703
+        ],
+        [
+          1.150944471359253,
+          0.7157354354858398,
+          16.491565704345703
+        ],
+        [
+          1.150944471359253,
+          0.7157354354858398,
+          13.518852233886719
+        ]
+      ],
+      "properties": {}
+    },
+    {
+      "name": "rim",
+      "parent": null,
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    },
+    {
+      "name": "Info text",
+      "parent": "Cyberpunk hair head",
+      "instanceCollection": null,
+      "instanceType": "NONE",
+      "boundsLocal": null,
+      "properties": {}
+    }
+  ]
+}

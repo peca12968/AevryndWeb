@@ -1,0 +1,12 @@
+00:00.406  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0130-source\artist-original-ellie-restored-native-groom.blend"
+D:\Download\Aevrynd\scripts\character-next\export-female-next-r0130-native-studio-curves.py:21: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  clay=bpy.data.materials.new('AFN130_ISOLATED_REFERENCE_CLAY');clay.use_nodes=True;clay.node_tree.nodes.clear();cp=clay.node_tree.nodes.new('ShaderNodeBsdfPrincipled');cp.inputs['Base Color'].default_value=(.25,.25,.25,1);co=clay.node_tree.nodes.new('ShaderNodeOutputMaterial');clay.node_tree.links.new(cp.outputs[0],co.inputs[0]);mesh.materials.append(clay)
+00:05.937  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0130-artist-native-groom\reference-isolated-native-ellie-face.png'
+00:09.812  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0130-artist-native-groom\reference-isolated-native-ellie-profile.png'
+資訊: 已儲存為「artist-original-ellie-native-curve-reference.blend」
+R130_ORIGINAL_NATIVE_STUDIO_CURVE_REFERENCE_DONE 9.57740068435669
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+scripts disabled for "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0130-source\artist-original-ellie-restored-native-groom.blend", skipping 'cloudrig.py'
+scripts disabled for "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0130-source\artist-original-ellie-restored-native-groom.blend", skipping 'rigged_particle_hair.py'
+
+Blender quit

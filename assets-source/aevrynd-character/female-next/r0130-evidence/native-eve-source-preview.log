@@ -1,0 +1,9 @@
+00:07.734  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0126-source\aevrynd-female-next-r0126-b-source-section-neck.blend"
+D:\Download\Aevrynd\scripts\character-next\preview-female-next-r0130-native-eve.py:8: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN130_INDEPENDENT_BROWN_FIBRE');mat.use_nodes=True;n=mat.node_tree.nodes;n.clear();p=n.new('ShaderNodeBsdfHairPrincipled');p.parametrization='COLOR';p.inputs['Color'].default_value=(.055,.027,.014,1);p.inputs['Roughness'].default_value=.32;p.inputs['Radial Roughness'].default_value=.45;o=n.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(p.outputs[0],o.inputs['Surface']);return mat
+00:32.187  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0130-artist-native-groom\matched-source-original-native-Eve-face.png'
+00:56.719  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0130-artist-native-groom\matched-source-original-native-Eve-profile.png'
+R130_ORIGINAL_NATIVE_EVE_REFERENCE_PREVIEW_DONE 48.98107719421387
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

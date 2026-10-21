@@ -1,0 +1,14 @@
+00:04.688  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0126-source\aevrynd-female-next-r0126-b-source-section-neck.blend"
+00:06.563  object.modifier  | WARNING Object: "AFN130_EDITABLE_COMPLETE_NATIVE_PATHS", Modifier: "AFN130_ORIGINAL_SCALP_WHOLE_PATH_SURFACE_DEFORM", Target has edges with more than two polygons
+00:06.563  object.modifier  | WARNING Object: "AFN130_EDITABLE_COMPLETE_NATIVE_PATHS", Modifier: "AFN130_ORIGINAL_SCALP_WHOLE_PATH_SURFACE_DEFORM", Target has edges with more than two polygons
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0130-native-emitter-field.py", line 49, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0130-native-emitter-field.py", line 39, in main
+    carrier.select_set(True);bpy.context.view_layer.objects.active=carrier;bpy.context.view_layer.update();bpy.ops.object.surfacedeform_bind(modifier=md.name);assert md.is_bound;tree=BVHTree.FromPolygons(W.tolist(),BT[currentCap].tolist(),all_triangles=True);ids=[];weights=[];fitted=[];dist=[]
+                                                                                                                                                                      ^^^^^^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

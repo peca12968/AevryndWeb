@@ -1,0 +1,16 @@
+00:00.375  blend            | Read blend: "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend"
+D:\Download\Aevrynd\scripts\character-next\restore-female-next-r0130-native-studio-groom.py:38: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN130_OWN_REFERENCE_DARK_BROWN_NATIVE_HAIR');mat.use_nodes=True;n=mat.node_tree.nodes;n.clear();p=n.new('ShaderNodeBsdfHairPrincipled');p.parametrization='MELANIN';p.inputs['Melanin'].default_value=.8;p.inputs['Melanin Redness'].default_value=.12;p.inputs['Roughness'].default_value=.35;p.inputs['Radial Roughness'].default_value=.45;out=n.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(p.outputs[0],out.inputs['Surface']);scalp.data.materials.clear();scalp.data.materials.append(mat)
+D:\Download\Aevrynd\scripts\character-next\restore-female-next-r0130-native-studio-groom.py:40: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  head=bpy.data.objects['GEO-ellie_head'];head.hide_render=False;head.hide_set(False);clay=bpy.data.materials.new('AFN130_STUDIO_SOURCE_REFERENCE_CLAY');clay.use_nodes=True;clay.node_tree.nodes.clear();cp=clay.node_tree.nodes.new('ShaderNodeBsdfPrincipled');cp.inputs['Base Color'].default_value=(.25,.25,.25,1);co=clay.node_tree.nodes.new('ShaderNodeOutputMaterial');clay.node_tree.links.new(cp.outputs['BSDF'],co.inputs['Surface']);head.data.materials.clear();head.data.materials.append(clay)
+D:\Download\Aevrynd\scripts\character-next\restore-female-next-r0130-native-studio-groom.py:45: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  s.world=bpy.data.worlds.new('AFN130_SOURCE_REFERENCE_WORLD');s.world.use_nodes=True;s.world.node_tree.nodes.clear();bg=s.world.node_tree.nodes.new('ShaderNodeBackground');bg.inputs[0].default_value=(0,0,0,1);wo=s.world.node_tree.nodes.new('ShaderNodeOutputWorld');s.world.node_tree.links.new(bg.outputs[0],wo.inputs[0])
+00:07.219  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0130-artist-native-groom\reference-restored-ellie-native-face.png'
+00:13.344  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0130-artist-native-groom\reference-restored-ellie-native-profile.png'
+資訊: 已儲存為「artist-original-ellie-restored-native-groom.blend」
+R130_RESTORED_ORIGINAL_STUDIO_NATIVE_GROOM_REFERENCE_DONE 12.979247331619263
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+scripts disabled for "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend", skipping 'cloudrig.py'
+scripts disabled for "D:\Download\Aevrynd\Reference\character\blender-studio-ellie-v1-cc-by4\ellie.blend", skipping 'rigged_particle_hair.py'
+
+Blender quit
