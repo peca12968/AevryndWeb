@@ -1,0 +1,2565 @@
+{
+  "uvLayers": [
+    "MakeHumanOriginalUV",
+    "VitruvianUV.UDIM",
+    "OriginalArtist.UVMap",
+    "AFN105_ORIGINAL_NATIVE_HEAD_CHART"
+  ],
+  "activeUV": "MakeHumanOriginalUV",
+  "matrix": [
+    [
+      0.8950213193893433,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.8950213193893433,
+      0.0,
+      -0.06730997562408447
+    ],
+    [
+      0.0,
+      0.0,
+      0.8950213193893433,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "usedMaterialIndices": [
+    8
+  ],
+  "materials": [
+    {
+      "name": "AFN57_CANONICAL_IRIS",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Metallic": 0.0,
+            "Roughness": 0.30000001192092896,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "UV Map",
+          "type": "ShaderNodeUVMap",
+          "uv_map": "VitruvianUV.UDIM",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedIrisColour",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Iris_Color.1007.exr",
+            "path": "//..\\study-vitruvian-textures\\Iris_Color.1007.exr",
+            "colorspace": "Linear Rec.709"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Scale": 1.0
+          }
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "Vector Math",
+          "Vector"
+        ],
+        [
+          "Vector Math",
+          "Vector",
+          "SuppliedIrisColour",
+          "Vector"
+        ],
+        [
+          "SuppliedIrisColour",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ]
+      ]
+    },
+    {
+      "name": "AFN57_CANONICAL_MOUTH",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Metallic": 0.0,
+            "Roughness": 0.2800000011920929,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.03999999910593033,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "UV Map",
+          "type": "ShaderNodeUVMap",
+          "uv_map": "VitruvianUV.UDIM",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedMouthColour",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Mouth_Color.1008.exr",
+            "path": "//..\\study-vitruvian-textures\\Mouth_Color.1008.exr",
+            "colorspace": "Linear Rec.709"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Scale": 1.0
+          }
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "Vector Math",
+          "Vector"
+        ],
+        [
+          "Vector Math",
+          "Vector",
+          "SuppliedMouthColour",
+          "Vector"
+        ],
+        [
+          "SuppliedMouthColour",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ]
+      ]
+    },
+    {
+      "name": "AFN57_CANONICAL_PUPIL",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Base Color": [
+              0.0010000000474974513,
+              0.0010000000474974513,
+              0.0010000000474974513,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.30000001192092896,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "UV Map",
+          "type": "ShaderNodeUVMap",
+          "uv_map": "VitruvianUV.UDIM",
+          "inputs": {}
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    {
+      "name": "AFN57_COMBINED_SCLERA_CORNEA_APPROXIMATION",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Base Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.02500000037252903,
+            "IOR": 1.3760000467300415,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 1.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "Principled BSDF.001",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Metallic": 0.0,
+            "Roughness": 0.25,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "UV Map",
+          "type": "ShaderNodeUVMap",
+          "uv_map": "VitruvianUV.UDIM",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedScleraColour",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Sclera_Color.1005.exr",
+            "path": "//..\\study-vitruvian-textures\\Sclera_Color.1005.exr",
+            "colorspace": "Linear Rec.709"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath",
+          "inputs": {
+            "Vector": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Scale": 1.0
+          }
+        },
+        {
+          "name": "Geometry",
+          "type": "ShaderNodeNewGeometry",
+          "inputs": {}
+        },
+        {
+          "name": "Vector Transform",
+          "type": "ShaderNodeVectorTransform",
+          "inputs": {}
+        },
+        {
+          "name": "Separate XYZ",
+          "type": "ShaderNodeSeparateXYZ",
+          "inputs": {}
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix Shader",
+          "type": "ShaderNodeMixShader",
+          "inputs": {}
+        },
+        {
+          "name": "AFN57_SOURCE_CORNEA_ALPHA",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        }
+      ],
+      "links": [
+        [
+          "UV Map",
+          "UV",
+          "Vector Math",
+          "Vector"
+        ],
+        [
+          "Vector Math",
+          "Vector",
+          "SuppliedScleraColour",
+          "Vector"
+        ],
+        [
+          "SuppliedScleraColour",
+          "Color",
+          "Principled BSDF.001",
+          "Base Color"
+        ],
+        [
+          "Geometry",
+          "Normal",
+          "Vector Transform",
+          "Vector"
+        ],
+        [
+          "Vector Transform",
+          "Vector",
+          "Separate XYZ",
+          "Vector"
+        ],
+        [
+          "Separate XYZ",
+          "Y",
+          "Math",
+          "Value"
+        ],
+        [
+          "Principled BSDF.001",
+          "BSDF",
+          "Mix Shader",
+          "Shader"
+        ],
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Mix Shader",
+          "Shader"
+        ],
+        [
+          "Mix Shader",
+          "Shader",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "SuppliedScleraColour",
+          "Alpha",
+          "AFN57_SOURCE_CORNEA_ALPHA",
+          "Value"
+        ],
+        [
+          "AFN57_SOURCE_CORNEA_ALPHA",
+          "Value",
+          "Mix Shader",
+          "Factor"
+        ]
+      ]
+    },
+    {
+      "name": "AFN57_CANONICAL_SKIN",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Metallic": 0.0,
+            "IOR": 1.399999976158142,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.11999999731779099,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.0010000000474974513,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "UV Map",
+          "type": "ShaderNodeUVMap",
+          "uv_map": "VitruvianUV.UDIM",
+          "inputs": {}
+        },
+        {
+          "name": "Separate XYZ",
+          "type": "ShaderNodeSeparateXYZ",
+          "inputs": {}
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "SuppliedSkinColour_1001",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Light_Skin_Color.1001.exr",
+            "path": "//..\\study-vitruvian-textures\\Light_Skin_Color.1001.exr",
+            "colorspace": "Linear Rec.709"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinColour_1002",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Light_Skin_Color.1002.exr",
+            "path": "//..\\study-vitruvian-textures\\Light_Skin_Color.1002.exr",
+            "colorspace": "Linear Rec.709"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy)",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinColour_1003",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Light_Skin_Color.1003.exr",
+            "path": "//..\\study-vitruvian-textures\\Light_Skin_Color.1003.exr",
+            "colorspace": "Linear Rec.709"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).001",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinColour_1004",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Light_Skin_Color.1004.exr",
+            "path": "//..\\study-vitruvian-textures\\Light_Skin_Color.1004.exr",
+            "colorspace": "Linear Rec.709"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).002",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "Separate XYZ.001",
+          "type": "ShaderNodeSeparateXYZ",
+          "inputs": {}
+        },
+        {
+          "name": "Math.004",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "SuppliedSkinRoughness_1001",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Roughness.1001.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Roughness.1001.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinRoughness_1002",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Roughness.1002.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Roughness.1002.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.005",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).003",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinRoughness_1003",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Roughness.1003.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Roughness.1003.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.006",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).004",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinRoughness_1004",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Roughness.1004.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Roughness.1004.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.007",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).005",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "Separate XYZ.002",
+          "type": "ShaderNodeSeparateXYZ",
+          "inputs": {}
+        },
+        {
+          "name": "Math.008",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "SuppliedSkinHeight_1001",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Height.1001.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Height.1001.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinHeight_1002",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Height.1002.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Height.1002.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.009",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).006",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinHeight_1003",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Height.1003.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Height.1003.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.010",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).007",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinHeight_1004",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Height.1004.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Height.1004.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.011",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).008",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump",
+          "inputs": {
+            "Strength": 0.20000000298023224,
+            "Distance": 0.0003000000142492354,
+            "Filter Width": 0.10000000149011612,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "Separate XYZ",
+          "Vector"
+        ],
+        [
+          "Separate XYZ",
+          "X",
+          "Math",
+          "Value"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinColour_1001",
+          "Vector"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinColour_1002",
+          "Vector"
+        ],
+        [
+          "Math",
+          "Value",
+          "Math.001",
+          "Value"
+        ],
+        [
+          "Math.001",
+          "Value",
+          "Mix (Legacy)",
+          "Factor"
+        ],
+        [
+          "SuppliedSkinColour_1001",
+          "Color",
+          "Mix (Legacy)",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinColour_1002",
+          "Color",
+          "Mix (Legacy)",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinColour_1003",
+          "Vector"
+        ],
+        [
+          "Math",
+          "Value",
+          "Math.002",
+          "Value"
+        ],
+        [
+          "Math.002",
+          "Value",
+          "Mix (Legacy).001",
+          "Factor"
+        ],
+        [
+          "Mix (Legacy)",
+          "Color",
+          "Mix (Legacy).001",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinColour_1003",
+          "Color",
+          "Mix (Legacy).001",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinColour_1004",
+          "Vector"
+        ],
+        [
+          "Math",
+          "Value",
+          "Math.003",
+          "Value"
+        ],
+        [
+          "Math.003",
+          "Value",
+          "Mix (Legacy).002",
+          "Factor"
+        ],
+        [
+          "Mix (Legacy).001",
+          "Color",
+          "Mix (Legacy).002",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinColour_1004",
+          "Color",
+          "Mix (Legacy).002",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "Separate XYZ.001",
+          "Vector"
+        ],
+        [
+          "Separate XYZ.001",
+          "X",
+          "Math.004",
+          "Value"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinRoughness_1001",
+          "Vector"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinRoughness_1002",
+          "Vector"
+        ],
+        [
+          "Math.004",
+          "Value",
+          "Math.005",
+          "Value"
+        ],
+        [
+          "Math.005",
+          "Value",
+          "Mix (Legacy).003",
+          "Factor"
+        ],
+        [
+          "SuppliedSkinRoughness_1001",
+          "Color",
+          "Mix (Legacy).003",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinRoughness_1002",
+          "Color",
+          "Mix (Legacy).003",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinRoughness_1003",
+          "Vector"
+        ],
+        [
+          "Math.004",
+          "Value",
+          "Math.006",
+          "Value"
+        ],
+        [
+          "Math.006",
+          "Value",
+          "Mix (Legacy).004",
+          "Factor"
+        ],
+        [
+          "Mix (Legacy).003",
+          "Color",
+          "Mix (Legacy).004",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinRoughness_1003",
+          "Color",
+          "Mix (Legacy).004",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinRoughness_1004",
+          "Vector"
+        ],
+        [
+          "Math.004",
+          "Value",
+          "Math.007",
+          "Value"
+        ],
+        [
+          "Math.007",
+          "Value",
+          "Mix (Legacy).005",
+          "Factor"
+        ],
+        [
+          "Mix (Legacy).004",
+          "Color",
+          "Mix (Legacy).005",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinRoughness_1004",
+          "Color",
+          "Mix (Legacy).005",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "Separate XYZ.002",
+          "Vector"
+        ],
+        [
+          "Separate XYZ.002",
+          "X",
+          "Math.008",
+          "Value"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinHeight_1001",
+          "Vector"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinHeight_1002",
+          "Vector"
+        ],
+        [
+          "Math.008",
+          "Value",
+          "Math.009",
+          "Value"
+        ],
+        [
+          "Math.009",
+          "Value",
+          "Mix (Legacy).006",
+          "Factor"
+        ],
+        [
+          "SuppliedSkinHeight_1001",
+          "Color",
+          "Mix (Legacy).006",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinHeight_1002",
+          "Color",
+          "Mix (Legacy).006",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinHeight_1003",
+          "Vector"
+        ],
+        [
+          "Math.008",
+          "Value",
+          "Math.010",
+          "Value"
+        ],
+        [
+          "Math.010",
+          "Value",
+          "Mix (Legacy).007",
+          "Factor"
+        ],
+        [
+          "Mix (Legacy).006",
+          "Color",
+          "Mix (Legacy).007",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinHeight_1003",
+          "Color",
+          "Mix (Legacy).007",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinHeight_1004",
+          "Vector"
+        ],
+        [
+          "Math.008",
+          "Value",
+          "Math.011",
+          "Value"
+        ],
+        [
+          "Math.011",
+          "Value",
+          "Mix (Legacy).008",
+          "Factor"
+        ],
+        [
+          "Mix (Legacy).007",
+          "Color",
+          "Mix (Legacy).008",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinHeight_1004",
+          "Color",
+          "Mix (Legacy).008",
+          "Color2"
+        ],
+        [
+          "Mix (Legacy).002",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Mix (Legacy).005",
+          "Color",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Mix (Legacy).008",
+          "Color",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ]
+      ]
+    },
+    {
+      "name": "AFN57_CANONICAL_BROW_LASH_AND_HAIR",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Base Color": [
+              0.054999999701976776,
+              0.023000000044703484,
+              0.009999999776482582,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.3799999952316284,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "UV Map",
+          "type": "ShaderNodeUVMap",
+          "uv_map": "VitruvianUV.UDIM",
+          "inputs": {}
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    {
+      "name": "AFN57_CANONICAL_WETLINE",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Base Color": [
+              0.4000000059604645,
+              0.15000000596046448,
+              0.11999999731779099,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.10999999940395355,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 1.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "UV Map",
+          "type": "ShaderNodeUVMap",
+          "uv_map": "VitruvianUV.UDIM",
+          "inputs": {}
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    {
+      "name": "AFN57_CANONICAL_WETLINE",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Base Color": [
+              0.4000000059604645,
+              0.15000000596046448,
+              0.11999999731779099,
+              1.0
+            ],
+            "Metallic": 0.0,
+            "Roughness": 0.10999999940395355,
+            "IOR": 1.5,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.0,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.004999999888241291,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 1.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "UV Map",
+          "type": "ShaderNodeUVMap",
+          "uv_map": "VitruvianUV.UDIM",
+          "inputs": {}
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    {
+      "name": "AFN113_COHERENT_NATIVE_HEAD_SKIN",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Metallic": 0.0,
+            "IOR": 1.399999976158142,
+            "Alpha": 1.0,
+            "Thin Wall": false,
+            "Weight": 0.0,
+            "Diffuse Roughness": 0.0,
+            "Subsurface Weight": 0.11999999731779099,
+            "Subsurface Radius": [
+              1.0,
+              0.20000000298023224,
+              0.10000000149011612
+            ],
+            "Subsurface Scale": 0.0010000000474974513,
+            "Subsurface IOR": 1.399999976158142,
+            "Subsurface Anisotropy": 0.0,
+            "Specular IOR Level": 0.5,
+            "Specular Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Anisotropic": 0.0,
+            "Anisotropic Rotation": 0.0,
+            "Tangent": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Transmission Weight": 0.0,
+            "Coat Weight": 0.0,
+            "Coat Roughness": 0.029999999329447746,
+            "Coat IOR": 1.5,
+            "Coat Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Coat Normal": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Sheen Weight": 0.0,
+            "Sheen Roughness": 0.5,
+            "Sheen Tint": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "Emission Strength": 0.0,
+            "Thin Film Thickness": 0.0,
+            "Thin Film IOR": 1.3300000429153442
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Thickness": 0.0
+          }
+        },
+        {
+          "name": "UV Map",
+          "type": "ShaderNodeUVMap",
+          "uv_map": "VitruvianUV.UDIM",
+          "inputs": {}
+        },
+        {
+          "name": "Separate XYZ",
+          "type": "ShaderNodeSeparateXYZ",
+          "inputs": {}
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "SuppliedSkinColour_1001",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Light_Skin_Color.1001.exr",
+            "path": "//..\\study-vitruvian-textures\\Light_Skin_Color.1001.exr",
+            "colorspace": "Linear Rec.709"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinColour_1002",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Light_Skin_Color.1002.exr",
+            "path": "//..\\study-vitruvian-textures\\Light_Skin_Color.1002.exr",
+            "colorspace": "Linear Rec.709"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy)",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinColour_1003",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Light_Skin_Color.1003.exr",
+            "path": "//..\\study-vitruvian-textures\\Light_Skin_Color.1003.exr",
+            "colorspace": "Linear Rec.709"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).001",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinColour_1004",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Light_Skin_Color.1004.exr",
+            "path": "//..\\study-vitruvian-textures\\Light_Skin_Color.1004.exr",
+            "colorspace": "Linear Rec.709"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).002",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "Separate XYZ.001",
+          "type": "ShaderNodeSeparateXYZ",
+          "inputs": {}
+        },
+        {
+          "name": "Math.004",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "SuppliedSkinRoughness_1001",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Roughness.1001.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Roughness.1001.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinRoughness_1002",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Roughness.1002.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Roughness.1002.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.005",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).003",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinRoughness_1003",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Roughness.1003.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Roughness.1003.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.006",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).004",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinRoughness_1004",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Roughness.1004.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Roughness.1004.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.007",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).005",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "Separate XYZ.002",
+          "type": "ShaderNodeSeparateXYZ",
+          "inputs": {}
+        },
+        {
+          "name": "Math.008",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "SuppliedSkinHeight_1001",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Height.1001.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Height.1001.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinHeight_1002",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Height.1002.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Height.1002.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.009",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).006",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinHeight_1003",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Height.1003.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Height.1003.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.010",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).007",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "SuppliedSkinHeight_1004",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "Skin_Height.1004.exr",
+            "path": "//..\\study-vitruvian-textures\\Skin_Height.1004.exr",
+            "colorspace": "Non-Color"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "Math.011",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": 0.5
+          }
+        },
+        {
+          "name": "Mix (Legacy).008",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump",
+          "inputs": {
+            "Strength": 0.20000000298023224,
+            "Distance": 0.0003000000142492354,
+            "Filter Width": 0.10000000149011612,
+            "Normal": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        {
+          "name": "\u5f71\u50cf\u7d0b\u7406",
+          "type": "ShaderNodeTexImage",
+          "image": {
+            "name": "young_lightskinned_female_diffuse.png",
+            "path": "//..\\makehuman-native-head-textures\\young_lightskinned_female_diffuse.png",
+            "colorspace": "sRGB"
+          },
+          "inputs": {}
+        },
+        {
+          "name": "UV \u6620\u5c04",
+          "type": "ShaderNodeUVMap",
+          "uv_map": "MakeHumanOriginalUV",
+          "inputs": {}
+        },
+        {
+          "name": "\u7279\u6027",
+          "type": "ShaderNodeAttribute",
+          "inputs": {}
+        },
+        {
+          "name": "\u6df7\u5408 (\u820a\u7248)",
+          "type": "ShaderNodeMixRGB",
+          "inputs": {}
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "Separate XYZ",
+          "Vector"
+        ],
+        [
+          "Separate XYZ",
+          "X",
+          "Math",
+          "Value"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinColour_1001",
+          "Vector"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinColour_1002",
+          "Vector"
+        ],
+        [
+          "Math",
+          "Value",
+          "Math.001",
+          "Value"
+        ],
+        [
+          "Math.001",
+          "Value",
+          "Mix (Legacy)",
+          "Factor"
+        ],
+        [
+          "SuppliedSkinColour_1001",
+          "Color",
+          "Mix (Legacy)",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinColour_1002",
+          "Color",
+          "Mix (Legacy)",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinColour_1003",
+          "Vector"
+        ],
+        [
+          "Math",
+          "Value",
+          "Math.002",
+          "Value"
+        ],
+        [
+          "Math.002",
+          "Value",
+          "Mix (Legacy).001",
+          "Factor"
+        ],
+        [
+          "Mix (Legacy)",
+          "Color",
+          "Mix (Legacy).001",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinColour_1003",
+          "Color",
+          "Mix (Legacy).001",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinColour_1004",
+          "Vector"
+        ],
+        [
+          "Math",
+          "Value",
+          "Math.003",
+          "Value"
+        ],
+        [
+          "Math.003",
+          "Value",
+          "Mix (Legacy).002",
+          "Factor"
+        ],
+        [
+          "Mix (Legacy).001",
+          "Color",
+          "Mix (Legacy).002",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinColour_1004",
+          "Color",
+          "Mix (Legacy).002",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "Separate XYZ.001",
+          "Vector"
+        ],
+        [
+          "Separate XYZ.001",
+          "X",
+          "Math.004",
+          "Value"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinRoughness_1001",
+          "Vector"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinRoughness_1002",
+          "Vector"
+        ],
+        [
+          "Math.004",
+          "Value",
+          "Math.005",
+          "Value"
+        ],
+        [
+          "Math.005",
+          "Value",
+          "Mix (Legacy).003",
+          "Factor"
+        ],
+        [
+          "SuppliedSkinRoughness_1001",
+          "Color",
+          "Mix (Legacy).003",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinRoughness_1002",
+          "Color",
+          "Mix (Legacy).003",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinRoughness_1003",
+          "Vector"
+        ],
+        [
+          "Math.004",
+          "Value",
+          "Math.006",
+          "Value"
+        ],
+        [
+          "Math.006",
+          "Value",
+          "Mix (Legacy).004",
+          "Factor"
+        ],
+        [
+          "Mix (Legacy).003",
+          "Color",
+          "Mix (Legacy).004",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinRoughness_1003",
+          "Color",
+          "Mix (Legacy).004",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinRoughness_1004",
+          "Vector"
+        ],
+        [
+          "Math.004",
+          "Value",
+          "Math.007",
+          "Value"
+        ],
+        [
+          "Math.007",
+          "Value",
+          "Mix (Legacy).005",
+          "Factor"
+        ],
+        [
+          "Mix (Legacy).004",
+          "Color",
+          "Mix (Legacy).005",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinRoughness_1004",
+          "Color",
+          "Mix (Legacy).005",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "Separate XYZ.002",
+          "Vector"
+        ],
+        [
+          "Separate XYZ.002",
+          "X",
+          "Math.008",
+          "Value"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinHeight_1001",
+          "Vector"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinHeight_1002",
+          "Vector"
+        ],
+        [
+          "Math.008",
+          "Value",
+          "Math.009",
+          "Value"
+        ],
+        [
+          "Math.009",
+          "Value",
+          "Mix (Legacy).006",
+          "Factor"
+        ],
+        [
+          "SuppliedSkinHeight_1001",
+          "Color",
+          "Mix (Legacy).006",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinHeight_1002",
+          "Color",
+          "Mix (Legacy).006",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinHeight_1003",
+          "Vector"
+        ],
+        [
+          "Math.008",
+          "Value",
+          "Math.010",
+          "Value"
+        ],
+        [
+          "Math.010",
+          "Value",
+          "Mix (Legacy).007",
+          "Factor"
+        ],
+        [
+          "Mix (Legacy).006",
+          "Color",
+          "Mix (Legacy).007",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinHeight_1003",
+          "Color",
+          "Mix (Legacy).007",
+          "Color2"
+        ],
+        [
+          "UV Map",
+          "UV",
+          "SuppliedSkinHeight_1004",
+          "Vector"
+        ],
+        [
+          "Math.008",
+          "Value",
+          "Math.011",
+          "Value"
+        ],
+        [
+          "Math.011",
+          "Value",
+          "Mix (Legacy).008",
+          "Factor"
+        ],
+        [
+          "Mix (Legacy).007",
+          "Color",
+          "Mix (Legacy).008",
+          "Color1"
+        ],
+        [
+          "SuppliedSkinHeight_1004",
+          "Color",
+          "Mix (Legacy).008",
+          "Color2"
+        ],
+        [
+          "Mix (Legacy).005",
+          "Color",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Mix (Legacy).008",
+          "Color",
+          "Bump",
+          "Height"
+        ],
+        [
+          "Bump",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "UV \u6620\u5c04",
+          "UV",
+          "\u5f71\u50cf\u7d0b\u7406",
+          "Vector"
+        ],
+        [
+          "\u7279\u6027",
+          "Factor",
+          "\u6df7\u5408 (\u820a\u7248)",
+          "Factor"
+        ],
+        [
+          "Mix (Legacy).002",
+          "Color",
+          "\u6df7\u5408 (\u820a\u7248)",
+          "Color1"
+        ],
+        [
+          "\u5f71\u50cf\u7d0b\u7406",
+          "Color",
+          "\u6df7\u5408 (\u820a\u7248)",
+          "Color2"
+        ],
+        [
+          "\u6df7\u5408 (\u820a\u7248)",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ]
+      ]
+    }
+  ]
+}
