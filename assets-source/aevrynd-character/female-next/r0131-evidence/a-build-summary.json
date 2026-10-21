@@ -1,0 +1,592 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-b-source-section-neck.blend",
+  "sourceSha256": "798c2496aadac717d967362c58afa88d38ceac584248c85f6d86afc618253631",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0131-source\\aevrynd-female-next-r0131-a-native-anisotropic-hair-cards.blend",
+  "sha256": "872c6a6a2efb062b7b5b7f0403d5d42049653fee9e06255563ace2b059fbe214",
+  "bytes": 135307975,
+  "newMaterial": "AFN131_NATIVE_UV_DIELECTRIC_THIN_HAIR_CARDS",
+  "oldMaterialPreserved": "Hair",
+  "oldSourceIOR": 1000.0,
+  "newDielectricIOR": 1.55,
+  "sourceEmissionStrength": 0.623106062412262,
+  "newEmissionStrength": 0.0,
+  "newAnisotropy": 0.75,
+  "sourceRoughnessUnchanged": true,
+  "thinCardDiffuseScatteringMix": 0.15,
+  "sourceAlphaMicroNormalDistanceM": 7.5e-05,
+  "originalColourAndAlpha": {
+    "baseFromNode": "\u6df7\u5408",
+    "baseFromSocket": "Result_Color",
+    "alphaFromNode": "\u6578\u5b78\u516c\u5f0f",
+    "alphaFromSocket": "Value",
+    "originalRoughness": 0.26231059432029724,
+    "sourceDiffuseImage": "Image_0",
+    "diffuseImagePackedSha256": "f7815300e04c69a972e1bb1d75603d75947f9959858d0000d4a540b192282a14",
+    "diffuseImageColourSpace": "sRGB"
+  },
+  "allOriginalMaterialsUnchanged": true,
+  "allOriginalVisibleHeadBodyHairCoordinatesTrianglesAndHairUVExact": true,
+  "actualGeometryHashes": {
+    "skinWorld": "28c6c6c1ecb8316f43d5fb526f67c8516d9cdb6bf90b628caf68743d68d633cf",
+    "skinTriangles": "c5fc04de9ec61644fac7c8d130edcf44d6d3843e9196b80d4cc5ca05faf2563a",
+    "hairWorld": "e42b3a177f11486f97a597902e0272875c00366d03b20a1e9328fc0a23c6faf7",
+    "hairTriangles": "5c5e833f135810a4adee7ac5719f54326001188f95e25544af9aa1456706e67c",
+    "hairUV": "469fe5c99a9a94d96f6458678f5f0b4ad09edef41fb6babd6c421edbc0edd2b6"
+  },
+  "oldHiddenRollbackExact": true,
+  "currentHeadActualControlsStillDisconnected": true,
+  "ownSourceShaderApproximationNotPhysicalCalibration": true,
+  "allContactNaturalMotionAndRuntimeUnaccepted": true,
+  "secondsBeforePreview": 3.75032901763916,
+  "oldMaterialSignature": {
+    "nodes": [
+      {
+        "name": "\u539f\u5247\u5316 BSDF",
+        "type": "ShaderNodeBsdfPrincipled",
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.26231059432029724,
+          "IOR": 1000.0,
+          "Alpha": 1.0,
+          "Thin Wall": false,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Weight": 0.0,
+          "Diffuse Roughness": 0.0,
+          "Subsurface Weight": 0.0,
+          "Subsurface Radius": [
+            1.0,
+            0.20000000298023224,
+            0.10000000149011612
+          ],
+          "Subsurface Scale": 0.004999999888241291,
+          "Subsurface IOR": 1.399999976158142,
+          "Subsurface Anisotropy": 0.0,
+          "Specular IOR Level": 0.5,
+          "Specular Tint": [
+            0.012922662310302258,
+            0.008450028486549854,
+            0.005433922633528709,
+            1.0
+          ],
+          "Anisotropic": 0.0,
+          "Anisotropic Rotation": 0.0,
+          "Tangent": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Transmission Weight": 0.0,
+          "Coat Weight": 0.0,
+          "Coat Roughness": 0.029999999329447746,
+          "Coat IOR": 1.5,
+          "Coat Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Coat Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Sheen Weight": 0.0,
+          "Sheen Roughness": 0.5,
+          "Sheen Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Strength": 0.623106062412262,
+          "Thin Film Thickness": 0.0,
+          "Thin Film IOR": 1.3300000429153442
+        },
+        "image": null
+      },
+      {
+        "name": "\u6750\u8cea\u8f38\u51fa",
+        "type": "ShaderNodeOutputMaterial",
+        "inputs": {
+          "Displacement": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Thickness": 0.0
+        },
+        "image": null
+      },
+      {
+        "name": "\u6df7\u5408",
+        "type": "ShaderNodeMix",
+        "inputs": {
+          "Factor_Float": 1.0,
+          "Factor_Vector": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "A_Float": 0.0,
+          "B_Float": 0.0,
+          "A_Vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B_Vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "A_Color": [
+            0.5,
+            0.5,
+            0.5,
+            1.0
+          ],
+          "B_Color": [
+            0.5107954740524292,
+            0.5107954740524292,
+            0.5107954740524292,
+            1.0
+          ],
+          "A_Rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B_Rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "image": null
+      },
+      {
+        "name": "\u6578\u5b78\u516c\u5f0f",
+        "type": "ShaderNodeMath",
+        "inputs": {
+          "Value": 0.5,
+          "Value_001": 0.7471590638160706,
+          "Value_002": 0.5
+        },
+        "image": null
+      },
+      {
+        "name": "\u5f71\u50cf\u7d0b\u7406",
+        "type": "ShaderNodeTexImage",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "image": "Image_0"
+      },
+      {
+        "name": "\u5f71\u50cf\u7d0b\u7406.001",
+        "type": "ShaderNodeTexImage",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "image": "Image_1"
+      }
+    ],
+    "links": [
+      [
+        "\u539f\u5247\u5316 BSDF",
+        "BSDF",
+        "\u6750\u8cea\u8f38\u51fa",
+        "Surface"
+      ],
+      [
+        "\u6df7\u5408",
+        "Result_Color",
+        "\u539f\u5247\u5316 BSDF",
+        "Base Color"
+      ],
+      [
+        "\u6578\u5b78\u516c\u5f0f",
+        "Value",
+        "\u539f\u5247\u5316 BSDF",
+        "Alpha"
+      ],
+      [
+        "\u5f71\u50cf\u7d0b\u7406",
+        "Color",
+        "\u6df7\u5408",
+        "A_Color"
+      ],
+      [
+        "\u5f71\u50cf\u7d0b\u7406",
+        "Alpha",
+        "\u6578\u5b78\u516c\u5f0f",
+        "Value"
+      ],
+      [
+        "\u5f71\u50cf\u7d0b\u7406.001",
+        "Color",
+        "\u539f\u5247\u5316 BSDF",
+        "Emission Color"
+      ]
+    ]
+  },
+  "newMaterialSignature": {
+    "nodes": [
+      {
+        "name": "\u539f\u5247\u5316 BSDF",
+        "type": "ShaderNodeBsdfPrincipled",
+        "inputs": {
+          "Base Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Metallic": 0.0,
+          "Roughness": 0.26231059432029724,
+          "IOR": 1.5499999523162842,
+          "Alpha": 1.0,
+          "Thin Wall": true,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Weight": 0.0,
+          "Diffuse Roughness": 0.0,
+          "Subsurface Weight": 0.0,
+          "Subsurface Radius": [
+            1.0,
+            0.20000000298023224,
+            0.10000000149011612
+          ],
+          "Subsurface Scale": 0.004999999888241291,
+          "Subsurface IOR": 1.399999976158142,
+          "Subsurface Anisotropy": 0.0,
+          "Specular IOR Level": 0.5,
+          "Specular Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Anisotropic": 0.75,
+          "Anisotropic Rotation": 0.0,
+          "Tangent": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Transmission Weight": 0.0,
+          "Coat Weight": 0.0,
+          "Coat Roughness": 0.029999999329447746,
+          "Coat IOR": 1.5,
+          "Coat Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Coat Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Sheen Weight": 0.0,
+          "Sheen Roughness": 0.5,
+          "Sheen Tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Emission Color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "Emission Strength": 0.0,
+          "Thin Film Thickness": 0.0,
+          "Thin Film IOR": 1.3300000429153442
+        },
+        "image": null
+      },
+      {
+        "name": "\u6750\u8cea\u8f38\u51fa",
+        "type": "ShaderNodeOutputMaterial",
+        "inputs": {
+          "Displacement": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Thickness": 0.0
+        },
+        "image": null
+      },
+      {
+        "name": "\u6df7\u5408",
+        "type": "ShaderNodeMix",
+        "inputs": {
+          "Factor_Float": 1.0,
+          "Factor_Vector": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "A_Float": 0.0,
+          "B_Float": 0.0,
+          "A_Vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B_Vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "A_Color": [
+            0.5,
+            0.5,
+            0.5,
+            1.0
+          ],
+          "B_Color": [
+            0.5107954740524292,
+            0.5107954740524292,
+            0.5107954740524292,
+            1.0
+          ],
+          "A_Rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "B_Rotation": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "image": null
+      },
+      {
+        "name": "\u6578\u5b78\u516c\u5f0f",
+        "type": "ShaderNodeMath",
+        "inputs": {
+          "Value": 0.5,
+          "Value_001": 0.7471590638160706,
+          "Value_002": 0.5
+        },
+        "image": null
+      },
+      {
+        "name": "\u5f71\u50cf\u7d0b\u7406",
+        "type": "ShaderNodeTexImage",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "image": "Image_0"
+      },
+      {
+        "name": "\u5f71\u50cf\u7d0b\u7406.001",
+        "type": "ShaderNodeTexImage",
+        "inputs": {
+          "Vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "image": "Image_1"
+      },
+      {
+        "name": "AFN131_NATIVE_CARD_UV_U_CROSS_FIBRE_AXIS",
+        "type": "ShaderNodeTangent",
+        "inputs": {},
+        "image": null
+      },
+      {
+        "name": "AFN131_SOURCE_ALPHA_FIBRE_MICRO_NORMAL",
+        "type": "ShaderNodeBump",
+        "inputs": {
+          "Strength": 0.25,
+          "Distance": 7.500000356230885e-05,
+          "Filter Width": 0.10000000149011612,
+          "Height": 1.0,
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "image": null
+      },
+      {
+        "name": "AFN131_THIN_CARD_INTERNAL_SCATTER_APPROXIMATION",
+        "type": "ShaderNodeBsdfTranslucent",
+        "inputs": {
+          "Color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "Normal": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Weight": 0.0
+        },
+        "image": null
+      },
+      {
+        "name": "\u6df7\u5408\u8457\u8272\u5668",
+        "type": "ShaderNodeMixShader",
+        "inputs": {
+          "Fac": 0.15000000596046448
+        },
+        "image": null
+      },
+      {
+        "name": "\u900f\u660e BSDF",
+        "type": "ShaderNodeBsdfTransparent",
+        "inputs": {
+          "Color": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Weight": 0.0
+        },
+        "image": null
+      },
+      {
+        "name": "AFN131_EXACT_ORIGINAL_ALPHA_COVERAGE",
+        "type": "ShaderNodeMixShader",
+        "inputs": {
+          "Fac": 0.5
+        },
+        "image": null
+      }
+    ],
+    "links": [
+      [
+        "\u6df7\u5408",
+        "Result_Color",
+        "\u539f\u5247\u5316 BSDF",
+        "Base Color"
+      ],
+      [
+        "\u5f71\u50cf\u7d0b\u7406",
+        "Color",
+        "\u6df7\u5408",
+        "A_Color"
+      ],
+      [
+        "\u5f71\u50cf\u7d0b\u7406",
+        "Alpha",
+        "\u6578\u5b78\u516c\u5f0f",
+        "Value"
+      ],
+      [
+        "AFN131_NATIVE_CARD_UV_U_CROSS_FIBRE_AXIS",
+        "Tangent",
+        "\u539f\u5247\u5316 BSDF",
+        "Tangent"
+      ],
+      [
+        "\u5f71\u50cf\u7d0b\u7406",
+        "Alpha",
+        "AFN131_SOURCE_ALPHA_FIBRE_MICRO_NORMAL",
+        "Height"
+      ],
+      [
+        "AFN131_SOURCE_ALPHA_FIBRE_MICRO_NORMAL",
+        "Normal",
+        "\u539f\u5247\u5316 BSDF",
+        "Normal"
+      ],
+      [
+        "\u6df7\u5408",
+        "Result_Color",
+        "AFN131_THIN_CARD_INTERNAL_SCATTER_APPROXIMATION",
+        "Color"
+      ],
+      [
+        "AFN131_SOURCE_ALPHA_FIBRE_MICRO_NORMAL",
+        "Normal",
+        "AFN131_THIN_CARD_INTERNAL_SCATTER_APPROXIMATION",
+        "Normal"
+      ],
+      [
+        "\u539f\u5247\u5316 BSDF",
+        "BSDF",
+        "\u6df7\u5408\u8457\u8272\u5668",
+        "Shader"
+      ],
+      [
+        "AFN131_THIN_CARD_INTERNAL_SCATTER_APPROXIMATION",
+        "BSDF",
+        "\u6df7\u5408\u8457\u8272\u5668",
+        "Shader_001"
+      ],
+      [
+        "\u6578\u5b78\u516c\u5f0f",
+        "Value",
+        "AFN131_EXACT_ORIGINAL_ALPHA_COVERAGE",
+        "Fac"
+      ],
+      [
+        "\u900f\u660e BSDF",
+        "BSDF",
+        "AFN131_EXACT_ORIGINAL_ALPHA_COVERAGE",
+        "Shader"
+      ],
+      [
+        "\u6df7\u5408\u8457\u8272\u5668",
+        "Shader",
+        "AFN131_EXACT_ORIGINAL_ALPHA_COVERAGE",
+        "Shader_001"
+      ],
+      [
+        "AFN131_EXACT_ORIGINAL_ALPHA_COVERAGE",
+        "Shader",
+        "\u6750\u8cea\u8f38\u51fa",
+        "Surface"
+      ]
+    ]
+  }
+}

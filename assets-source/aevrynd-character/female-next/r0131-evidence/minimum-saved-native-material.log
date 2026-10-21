@@ -1,0 +1,16 @@
+00:04.531  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0126-source\aevrynd-female-next-r0126-b-source-section-neck.blend"
+00:06.766  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0131-source\aevrynd-female-next-r0131-a-native-anisotropic-hair-cards.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0131-minimum.py", line 26, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0131-minimum.py", line 15, in main
+    build=json.loads((E/(tag+'-build-summary.json')).read_text('utf-8'));src=Path(build['output']);assert a.sha(src)==build['sha256'];bpy.ops.wm.open_mainfile(filepath=str(src));assert geom()==baseline==build['actualGeometryHashes'];assert a.protected()==protected;hair=bpy.data.objects['AFN126_ORIGINAL_Hair_Hair_0'];mat=hair.data.materials[0];assert mat.name==build['newMaterial'];missing=[n for n in oldGraphs if n not in bpy.data.materials];assert all(n==oldHair.name for n in missing);assert all(c.signature(bpy.data.materials[n])==v for n,v in oldGraphs.items() if n in bpy.data.materials);coverage=mat.node_tree.nodes['AFN131_EXACT_ORIGINAL_ALPHA_COVERAGE'];assert coverage.inputs[0].links[0].from_node.name==alphaNode
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0131-minimum.py", line 15, in <genexpr>
+    build=json.loads((E/(tag+'-build-summary.json')).read_text('utf-8'));src=Path(build['output']);assert a.sha(src)==build['sha256'];bpy.ops.wm.open_mainfile(filepath=str(src));assert geom()==baseline==build['actualGeometryHashes'];assert a.protected()==protected;hair=bpy.data.objects['AFN126_ORIGINAL_Hair_Hair_0'];mat=hair.data.materials[0];assert mat.name==build['newMaterial'];missing=[n for n in oldGraphs if n not in bpy.data.materials];assert all(n==oldHair.name for n in missing);assert all(c.signature(bpy.data.materials[n])==v for n,v in oldGraphs.items() if n in bpy.data.materials);coverage=mat.node_tree.nodes['AFN131_EXACT_ORIGINAL_ALPHA_COVERAGE'];assert coverage.inputs[0].links[0].from_node.name==alphaNode
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^
+ReferenceError: StructRNA of type Material has been removed
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

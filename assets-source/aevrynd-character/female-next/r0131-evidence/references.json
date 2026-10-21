@@ -1,0 +1,14 @@
+{
+  "primarySourcesRead": [
+    "https://github.com/KhronosGroup/glTF/blob/main/extensions/2.0/Khronos/KHR_materials_anisotropy/README.md",
+    "https://raw.githubusercontent.com/blender/blender/main/intern/cycles/kernel/closure/bsdf_hair.h",
+    "https://raw.githubusercontent.com/blender/blender/main/intern/cycles/kernel/closure/bsdf_principled_hair_chiang.h",
+    "https://raw.githubusercontent.com/blender/blender/main/intern/cycles/kernel/closure/bsdf_principled_hair_huang.h"
+  ],
+  "manualFetchFailed": "Blender current Principled manual returned402; not treated as fetched evidence.",
+  "interpretation": "Khronos anisotropic broadening is perpendicular to microgrooves. A source UV U width axis broadens across V-aligned texture fibres. B uses explicit V-axis simple Hair BSDF closures; not assumed to provide exact cylindrical mesh scattering or physical calibration.",
+  "sourceCodeNotCopiedOrInstalled": true,
+  "actualLocalAPIAndSavedRenderedResultsOverrideAssumptions": true,
+  "actualOriginalAsset": "Pinned Angelica GLB and current complete r126 .blend, source colour/alpha/UV authoritative.",
+  "noNewThirdPartyAssetDownload": true
+}

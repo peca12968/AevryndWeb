@@ -1,0 +1,13 @@
+00:14.000  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0126-source\aevrynd-female-next-r0126-b-source-section-neck.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0131-native-hair-material.py:18: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  return {'nodes':[{'name':n.name,'type':n.bl_idname,'inputs':{p.identifier:value(p.default_value) for p in n.inputs if hasattr(p,'default_value')},'image':n.image.name if n.type=='TEX_IMAGE' and n.image else None} for n in m.node_tree.nodes] if m.use_nodes else [],'links':[(x.from_node.name,x.from_socket.identifier,x.to_node.name,x.to_socket.identifier) for x in m.node_tree.links] if m.use_nodes else []}
+00:26.625  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0131-native-hair-material\matched-a-native-anisotropic-hair-face.png'
+00:29.297  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0131-native-hair-material\matched-a-native-anisotropic-hair-body-face.png'
+00:37.391  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0131-native-hair-material\matched-a-native-anisotropic-hair-profile.png'
+00:45.453  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0131-native-hair-material\matched-a-native-anisotropic-hair-oblique.png'
+00:52.078  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0131-native-hair-material\matched-a-native-anisotropic-hair-back.png'
+資訊: 已儲存為「aevrynd-female-next-r0131-a-native-anisotropic-hair-cards.blend」
+R131_COMPLETE_NATIVE_HAIR_MATERIAL_PREVIEW_DONE 38.09815835952759
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,0 +1,67 @@
+{
+  "revision": "female-next-r0131",
+  "decision": "REJECT_CHROME_AND_DARK_CARD_MATERIALS_KEEP_R126_REQUIRE_VISIBLE_HAIR_CONSTRUCTION",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-b-source-section-neck.blend",
+    "sha256": "798c2496aadac717d967362c58afa88d38ceac584248c85f6d86afc618253631",
+    "bytes": 135305654,
+    "status": "ADOPT_SCOPED_STATIC_COMPLETE_FACE_APPEARANCE_GAIN",
+    "scope": "Same complete woman. Adopt only static actual complete-character face/head form and skin-source appearance across recorded matched views/second light; all controls, hair physics, finite contacts/runtime/rights/user gates open.",
+    "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualFaceControls": "No controls connected to new visible head. AFN59_FACE_CONTROLS/blink_left/right retained on hidden r117 rollback only; actual new skin motion0.",
+    "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false,
+    "originalArtist": "DarkNik / original NikZava284",
+    "assetLicense": "CC-BY4.0, attribution and modifications retained"
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0131-source\\aevrynd-female-next-r0131-a-native-anisotropic-hair-cards.blend",
+      "sha256": "872c6a6a2efb062b7b5b7f0403d5d42049653fee9e06255563ace2b059fbe214",
+      "bytes": 135307975,
+      "status": "REJECT_COMPLETE_HAIR_MATERIAL_APPEARANCE",
+      "scope": "Same complete r126 woman. A chrome-like anisotropic thin cards; B dark explicit-tangent fibre-lobe approximation. No adopted appearance or complete operation/contact/natural dynamics/runtime."
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0131-source\\aevrynd-female-next-r0131-b-native-fibre-lobes.blend",
+      "sha256": "e2322fec0dddd20071b442b39ea7edbdc1cc9aee273427b3d5e39c97811985e2",
+      "bytes": 135310640,
+      "status": "REJECT_COMPLETE_HAIR_MATERIAL_APPEARANCE",
+      "scope": "Same complete r126 woman. A chrome-like anisotropic thin cards; B dark explicit-tangent fibre-lobe approximation. No adopted appearance or complete operation/contact/natural dynamics/runtime."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECTED_A_CHROME_B_DARKNESS_NOT_REALISM",
+      "evidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0131-native-hair-material\\manual-visual-review.json"
+    },
+    "function": {
+      "status": "COMPLETE_SOURCES_RECOVERED_ONLY_NO_NEW_CHARACTER_OPERATION",
+      "evidence": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0131-native-hair-material\\minimum-saved-native-material-readback.json",
+      "acceptedCompleteOperation": false,
+      "naturalHairMotionAccepted": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_UNCHANGED_GEOMETRY_DOES_NOT_SUPPLY_FINITE_RENDER_OCCUPANCY_PROOF",
+      "globalSignedMinimumM": null,
+      "broadQueriesStoppedAfterVisibleFailure": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "runtimeAsset": null,
+      "websitePromotion": false
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 5,
+  "productionRoundsSinceLastWholeCharacterReview": 0,
+  "nextWholeReviewAfterFurtherProductionRounds": 3,
+  "femaleUserAcceptance": false,
+  "reviewUTC": "2026-10-21T18:09:32.890194+00:00",
+  "wholeCharacterScore": null,
+  "scoringReason": "Neither complete material appearance gained realism; full gates missing, no score increase."
+}

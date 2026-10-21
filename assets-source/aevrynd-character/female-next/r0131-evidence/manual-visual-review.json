@@ -1,0 +1,19 @@
+{
+  "actualViewsReviewed": [
+    "r126 matched complete five-view baseline",
+    "r131 A and B actual complete five views",
+    "three-round r129/r130/r131 head/body/profile/back review"
+  ],
+  "observations": [
+    "The actual original Hair material imports the legacy KHR_materials_pbrSpecularGlossiness source using IOR1000, coloured specular tint, roughness0.2623106, emission0.623106 and zero anisotropy. IOR1000 is an observed conversion architecture, not automatically an importer bug or proof of the visible defect cause.",
+    "A replaces the active closure by IOR1.55 dielectric anisotropy/native UV U-axis broadening, source-alpha micro-normal and thin-card scattering. Same actual complete five views show stronger blue/silver chrome-like sheet reflections, not fine believable hair. Reject, no roughness/anisotropy/IOR/strength tuning after that failure.",
+    "B is structurally different: built-in simple Hair BSDF reflection/transmission closures with an explicit source-UV V-axis and exact original colour/coverage. It is not a curve-frame-dependent Chiang/Huang Principled Hair model or a calibrated cylindrical renderer. The complete face/body/profile/oblique/back becomes much darker, loses fibre and silhouette readability against the unchanged stage, and retains the same sheet/gap construction. Its reduced plastic highlight is not adopted: darkness hides the defect.",
+    "All displayed head/body/hair world coordinates, triangles and source hair UV independently match original r126 exactly. Original diffuse and alpha subgraph nodes/images and all other material graphs remain exact; underlying skin pigment/exposure was not changed. Hair scattering changes scene radiance/framing, not anatomy or source albedo.",
+    "Both full .blend files independently reopen and recover the actual active material and complete current/hidden geometry. A does not retain its now-unreferenced original Hair datablock on reload; full original r126 remains exact rollback. B explicitly preserves that old material with a fake user. Neither material switch is a new complete character operation, root binding, natural dynamics or contact/runtime qualification.",
+    "This is the third actual round since the previous whole review. All actual r129/r130/r131 complete head/body/profile/back results and earlier A/B construction stages were considered. R129 directly authored true strands but failed shape; R130 original-domain transplant still warped; R131 material-only models fail realism. No adopted complete appearance or usable complete operation in this window."
+  ],
+  "appearanceImprovementAdopted": false,
+  "newCompleteOperationAccepted": false,
+  "secondLightingNotExpandedAfterClearFailure": true,
+  "result": "本輪未改善完整人物"
+}

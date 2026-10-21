@@ -1,0 +1,330 @@
+{
+  "UTC": "2026-10-21T17:51:26.716340+00:00",
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-b-source-section-neck.blend",
+  "object": "AFN126_ORIGINAL_Hair_Hair_0",
+  "uvLayers": [
+    "UVMap"
+  ],
+  "rawVertices": 57424,
+  "polygons": 81789,
+  "materials": [
+    {
+      "name": "Hair",
+      "surfaceRenderMethod": "BLENDED",
+      "nodes": [
+        {
+          "name": "\u539f\u5247\u5316 BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": {
+            "Base Color": {
+              "default": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "linked": true
+            },
+            "Metallic": {
+              "default": 0.0,
+              "linked": false
+            },
+            "Roughness": {
+              "default": 0.26231059432029724,
+              "linked": false
+            },
+            "IOR": {
+              "default": 1000.0,
+              "linked": false
+            },
+            "Alpha": {
+              "default": 1.0,
+              "linked": true
+            },
+            "Thin Wall": {
+              "default": false,
+              "linked": false
+            },
+            "Normal": {
+              "default": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "linked": false
+            },
+            "Weight": {
+              "default": 0.0,
+              "linked": false
+            },
+            "Diffuse Roughness": {
+              "default": 0.0,
+              "linked": false
+            },
+            "Subsurface Weight": {
+              "default": 0.0,
+              "linked": false
+            },
+            "Subsurface Radius": {
+              "default": [
+                1.0,
+                0.20000000298023224,
+                0.10000000149011612
+              ],
+              "linked": false
+            },
+            "Subsurface Scale": {
+              "default": 0.004999999888241291,
+              "linked": false
+            },
+            "Subsurface IOR": {
+              "default": 1.399999976158142,
+              "linked": false
+            },
+            "Subsurface Anisotropy": {
+              "default": 0.0,
+              "linked": false
+            },
+            "Specular IOR Level": {
+              "default": 0.5,
+              "linked": false
+            },
+            "Specular Tint": {
+              "default": [
+                0.012922662310302258,
+                0.008450028486549854,
+                0.005433922633528709,
+                1.0
+              ],
+              "linked": false
+            },
+            "Anisotropic": {
+              "default": 0.0,
+              "linked": false
+            },
+            "Anisotropic Rotation": {
+              "default": 0.0,
+              "linked": false
+            },
+            "Tangent": {
+              "default": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "linked": false
+            },
+            "Transmission Weight": {
+              "default": 0.0,
+              "linked": false
+            },
+            "Coat Weight": {
+              "default": 0.0,
+              "linked": false
+            },
+            "Coat Roughness": {
+              "default": 0.029999999329447746,
+              "linked": false
+            },
+            "Coat IOR": {
+              "default": 1.5,
+              "linked": false
+            },
+            "Coat Tint": {
+              "default": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "linked": false
+            },
+            "Coat Normal": {
+              "default": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "linked": false
+            },
+            "Sheen Weight": {
+              "default": 0.0,
+              "linked": false
+            },
+            "Sheen Roughness": {
+              "default": 0.5,
+              "linked": false
+            },
+            "Sheen Tint": {
+              "default": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "linked": false
+            },
+            "Emission Color": {
+              "default": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "linked": true
+            },
+            "Emission Strength": {
+              "default": 0.623106062412262,
+              "linked": false
+            },
+            "Thin Film Thickness": {
+              "default": 0.0,
+              "linked": false
+            },
+            "Thin Film IOR": {
+              "default": 1.3300000429153442,
+              "linked": false
+            }
+          },
+          "image": null,
+          "uvMap": null
+        },
+        {
+          "name": "\u6750\u8cea\u8f38\u51fa",
+          "type": "ShaderNodeOutputMaterial",
+          "inputs": {
+            "Displacement": {
+              "default": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "linked": false
+            },
+            "Thickness": {
+              "default": 0.0,
+              "linked": false
+            }
+          },
+          "image": null,
+          "uvMap": null
+        },
+        {
+          "name": "\u6df7\u5408",
+          "type": "ShaderNodeMix",
+          "inputs": {
+            "Factor": {
+              "default": [
+                0.5,
+                0.5,
+                0.5
+              ],
+              "linked": false
+            },
+            "A": {
+              "default": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "linked": false
+            },
+            "B": {
+              "default": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "linked": false
+            }
+          },
+          "image": null,
+          "uvMap": null
+        },
+        {
+          "name": "\u6578\u5b78\u516c\u5f0f",
+          "type": "ShaderNodeMath",
+          "inputs": {
+            "Value": {
+              "default": 0.5,
+              "linked": false
+            }
+          },
+          "image": null,
+          "uvMap": null
+        },
+        {
+          "name": "\u5f71\u50cf\u7d0b\u7406",
+          "type": "ShaderNodeTexImage",
+          "inputs": {
+            "Vector": {
+              "default": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "linked": false
+            }
+          },
+          "image": "Image_0",
+          "uvMap": null
+        },
+        {
+          "name": "\u5f71\u50cf\u7d0b\u7406.001",
+          "type": "ShaderNodeTexImage",
+          "inputs": {
+            "Vector": {
+              "default": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "linked": false
+            }
+          },
+          "image": "Image_1",
+          "uvMap": null
+        }
+      ],
+      "links": [
+        [
+          "\u539f\u5247\u5316 BSDF",
+          "BSDF",
+          "\u6750\u8cea\u8f38\u51fa",
+          "Surface"
+        ],
+        [
+          "\u6df7\u5408",
+          "Result",
+          "\u539f\u5247\u5316 BSDF",
+          "Base Color"
+        ],
+        [
+          "\u6578\u5b78\u516c\u5f0f",
+          "Value",
+          "\u539f\u5247\u5316 BSDF",
+          "Alpha"
+        ],
+        [
+          "\u5f71\u50cf\u7d0b\u7406",
+          "Color",
+          "\u6df7\u5408",
+          "A"
+        ],
+        [
+          "\u5f71\u50cf\u7d0b\u7406",
+          "Alpha",
+          "\u6578\u5b78\u516c\u5f0f",
+          "Value"
+        ],
+        [
+          "\u5f71\u50cf\u7d0b\u7406.001",
+          "Color",
+          "\u539f\u5247\u5316 BSDF",
+          "Emission Color"
+        ]
+      ]
+    }
+  ],
+  "sourceNotSaved": true
+}
