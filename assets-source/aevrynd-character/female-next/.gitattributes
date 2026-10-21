@@ -432,3 +432,8 @@ r0138-evidence/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr
 r0138-evidence/*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 aevrynd-female-next-r0138* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 r0138-source/*.blend filter=lfs diff=lfs merge=lfs -text
+r0139-evidence/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0139-evidence/*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+aevrynd-female-next-r0139* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0139-source/*.blend filter=lfs diff=lfs merge=lfs -text
+r0139-development/*.glb filter=lfs diff=lfs merge=lfs -text

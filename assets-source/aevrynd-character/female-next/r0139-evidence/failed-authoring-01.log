@@ -1,0 +1,12 @@
+00:09.859  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0138-source\aevrynd-female-next-r0138-b-native-socket-walls.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0139-native-lid-follow.py", line 116, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0139-native-lid-follow.py", line 96, in main
+    nearest=[BVH.find_nearest(Vector(V[i])) for i in ids];j=int(np.argmin([r[3] for r in nearest]));point,normal,fi,distance=nearest[j];fi=int(fi);tri=T[fi];bc=bary(np.array(point),*W[tri]);assert bc.min()>-1e-4 and bc.max()<1.0001;bc=np.clip(bc,0,1);bc/=bc.sum();ww=bc@weights[tri];ww=np.maximum(ww,0);ww/=ww.sum();aw[ids]=ww;anchors.append({'vertices':ids,'rootVertex':int(ids[j]),'skinTriangle':fi,'skinTriangleVertices':tri,'barycentric':bc,'restSkinDistanceM':float(distance),'rootWorld':V[ids[j]],'restSkinAnchorWorld':np.array(point),'nativeBoneWeights':ww})
+                                                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

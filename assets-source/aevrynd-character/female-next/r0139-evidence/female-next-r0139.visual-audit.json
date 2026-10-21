@@ -1,0 +1,115 @@
+{
+  "revision": "female-next-r0139",
+  "decision": "ADOPT_SCOPED_NATIVE_COUPLED_GAZE_FUNCTION_ONLY",
+  "completeCharacterResult": "本輪沒有採用外觀改善",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": true,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0139-source\\aevrynd-female-next-r0139-a-native-lid-follow.blend",
+    "sha256": "5128a461a011899c77b275055ea3a8a94ca278873665dd08f72a6003d4a37bb9",
+    "bytes": 136089229,
+    "status": "RETAIN_R126_STATIC_LOOK_ADOPT_R139_NATIVE_COUPLED_GAZE_OPERATION",
+    "scope": "Same complete woman retains r126 scoped neutral static face/head/skin appearance and now adopts only actual native fixed-head eye/lid/lash/wet-line gaze operation in recorded original yaw20/pitch10 action/manual scope. R138 socket reconstruction retained. Not complete avatar anatomy/eyes-layer anatomy/finite contacts/hair/clothes/actions/runtime/rights/user acceptance.",
+    "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualFaceControls": "AFN138_ACTUAL_CURRENT_GAZE_RIG / AFN138_EYE_L,R drive four AFN139 upper/lower lid bones, actual current AFN126 skin and original lashes/wet line. AFN138_NATIVE_CURRENT_GAZE_DEMO frames1..49 at24fps. No actual current blink/jaw/head tracking/body/clothes rig operation accepted.",
+    "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope. R139 adds scoped gaze function only; no new neutral appearance adoption.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false,
+    "originalArtist": "DarkNik / original NikZava284",
+    "assetLicense": "CC-BY4.0, attribution and modifications retained",
+    "acceptedCompleteScopedOperations": [
+      "Recorded fixed-head native coupled ocular/lid/lash/wet-line gaze at original yaw +/-20deg and pitch +/-10deg, independent actual operation and neutral restoration."
+    ],
+    "scopedGazeOperationAccepted": true,
+    "allCharacterOperationsComplete": false,
+    "staticAppearanceBaseline": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-b-source-section-neck.blend",
+      "sha256": "798c2496aadac717d967362c58afa88d38ceac584248c85f6d86afc618253631",
+      "bytes": 135305654,
+      "status": "ADOPT_SCOPED_STATIC_COMPLETE_FACE_APPEARANCE_GAIN",
+      "scope": "Same complete woman. Adopt only static actual complete-character face/head form and skin-source appearance across recorded matched views/second light; all controls, hair physics, finite contacts/runtime/rights/user gates open.",
+      "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "actualFaceControls": "No controls connected to new visible head. AFN59_FACE_CONTROLS/blink_left/right retained on hidden r117 rollback only; actual new skin motion0.",
+      "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope.",
+      "completeOperationAccepted": false,
+      "femaleUserAccepted": false,
+      "originalArtist": "DarkNik / original NikZava284",
+      "assetLicense": "CC-BY4.0, attribution and modifications retained"
+    }
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0139-source\\aevrynd-female-next-r0139-a-native-lid-follow.blend",
+      "sha256": "5128a461a011899c77b275055ea3a8a94ca278873665dd08f72a6003d4a37bb9",
+      "bytes": 136089229,
+      "status": "ADOPT_SCOPED_NATIVE_COUPLED_GAZE_FUNCTION_ONLY",
+      "scope": "Same complete woman retains r126 scoped neutral static face/head/skin appearance and now adopts only actual native fixed-head eye/lid/lash/wet-line gaze operation in recorded original yaw20/pitch10 action/manual scope. R138 socket reconstruction retained. Not complete avatar anatomy/eyes-layer anatomy/finite contacts/hair/clothes/actions/runtime/rights/user acceptance."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "PROTECTED_NEUTRAL_APPEARANCE_RETAINED_NO_NEW_FORM_OR_MATERIAL_ADOPTION",
+      "evidence": [
+        "r0139-complete-head-body-comparison.png",
+        "r0139-profile-oblique-comparison.png",
+        "r0139-back-comparison.png",
+        "r0139-original-failure-pose-comparison.png",
+        "r0139-oblique-and-body-operation.png",
+        "manual-visual-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "ADOPT_SCOPED_FIXED_HEAD_NATIVE_GAZE_WITH_ACTUAL_LID_LASH_WET_LINE_FOLLOW_AND_RESTORE",
+      "acceptedCompleteScopedGazeOperation": true,
+      "allCharacterOperationsComplete": false,
+      "evidence": "minimum-saved-native-lid-readback.json",
+      "nativeActionFrames": 49,
+      "naturalHairMotionBlinkJawHeadTrackingBodyClothesActionsAccepted": false
+    },
+    "contact": {
+      "status": "DISCRETE_ACTUAL_DEFORMED_OCULAR_SKIN_TRIANGLE_SURFACES_CLEAR_FINITE_GLOBAL_CONTINUOUS_UNACCEPTED",
+      "evidence": "actual-lid-ocular-surface-contact.json",
+      "actualPoseObjectCases": 132,
+      "numericPredicateEpsilonM": 1e-12,
+      "globalSignedMinimumM": null,
+      "finiteThicknessContainmentAlphaOpticalWetLayerSelfAndContinuousAccepted": false,
+      "rawAttachmentEdgeSeamEvidence": "actual-attachment-seam-check.json",
+      "biologicalLashRootContactsAccepted": false
+    },
+    "runtime": {
+      "status": "DEVELOPMENT_GLB_GEOMETRY_AND49_POSES_QUALIFIED_ACTUAL_ENGINE_UNTESTED_NOT_PROMOTED",
+      "developmentAsset": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\development\\r0139\\aevrynd-female-next-r0139-gaze-development.glb",
+      "developmentAssetSHA256": "851089d2373991f5082b5aa0d7e0f8d52072a7ee2126b8293b93dc97174a8c4e",
+      "exportDataReadback": "development-glb-readback.json",
+      "actualEngineRendererMaterialsCollisionLODPerformanceAccepted": false,
+      "formalRuntimeAsset": null,
+      "websitePromotion": false
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 13,
+  "counterMeaning": "Legacy compatibility counter tracks consecutive actual rounds WITHOUT ADOPTED COMPLETE APPEARANCE gain; this functional adoption does not reset it.",
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteAppearanceGainLowerBound": 13,
+  "productionRoundsSinceLastWholeCharacterReview": 2,
+  "nextWholeReviewAfterFurtherProductionRounds": 1,
+  "lastReviewedProductionWindow": [
+    "r135",
+    "r136",
+    "r137"
+  ],
+  "lastWholeCharacterReview": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0137-complete-studio-groom\\three-round-whole-character-review.json",
+  "femaleUserAcceptance": false,
+  "wholeCharacterStagnationReset": false,
+  "foundationChangeRequiredNextProduction": true,
+  "stoppedMethodsInheritedFrom": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0138-native-current-gaze\\continuation.json",
+  "allEarlierRetirementsRemainEffective": true,
+  "stoppedMethods": [],
+  "liveJobHandles": [],
+  "previousGoalTurnClassification": "progress: r138 actual native eye controls/socket cavity foundation produced and independently reopened; complete natural gaze rejected by visible static-lid up-gaze failure; full original source/GitHub history verified. No adopted complete appearance/operation gain.",
+  "lastGoalTurnClassification": "progress: actual native current lid/lash/wet follow authored; complete matched gaze improves, independent real control/restoration and deformed-surface checks pass, scoped function adopted. Portable development GLB all vertices/triangles/49 poses independently verified; full source/history exact. No adopted neutral form/material gain, no full goal completion.",
+  "progressKind": "ADOPT_SCOPED_CURRENT_NATIVE_COUPLED_GAZE_AND_VERIFIED_PORTABLE_DEVELOPMENT_DATA",
+  "nextAction": "Continue SAME complete working r139 woman D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0139-source\\aevrynd-female-next-r0139-a-native-lid-follow.blend SHA5128a461a011899c77b275055ea3a8a94ca278873665dd08f72a6003d4a37bb9. Preserve r126 static face/head/skin look and actual current native coupled eye/lid/lash/wet-line gaze. Full r138 B/r126/r117 sources/rights remain exact rollback. R139 directly built native current skin support/bones and original attachment influence, not retired analytic blink caps. All49 action frames+15 manual poses+original failure/neutral diagnostics have zero tested raw ocular/skin triangle contact, but finite thickness/containment/alpha/wet optical occupied volume/self/continuous/global signed contacts remain unaccepted. Native lash card components/wet strip retain source offsets; no biological root contact claim. Development GLB D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\development\\r0139\\aevrynd-female-next-r0139-gaze-development.glb has all actual surfaces/triangles and49 bone poses independently qualified, max world error0.454592um under2um numeric bound; actual engine rendering/material/LOD/physics/performance remain untested and formal runtime/website unpromoted. Appearance stagnation lower13 is NOT reset by this functional adoption; cadence2 means whole review due after1 further actual round, last135/136/137 retained. Next actual round must directly author a major VISIBLE current-head hair/face foundation defect, prioritizing scalp parting and coherent real root-to-tip3D clump construction with actual current scalp dependence, preserving the new eyelid operation. Use one concrete source/anatomical construction and complete head/body/profile/back preview early; do not spend mainline on another support-only export/audit. All retired global foreign-groom affine/front stitch, UV contour closed loops, normal-outward growth/global comb, Eve root/free-path/cache fits, sparse S-waves, closed polygon loft or shader/density/radius variants stay retired. A new source name/tool/rebind does not establish a changed premise; direct native sculpt/mesh/guide authoring must visibly solve shape/parting/root flow. No neutral skin darkening/exposure/motion reduction or deleted failing geometry. Full female anatomy/skin/hair/clothes/layers/actions, natural hair turn-stop-wind-settle, finite contacts, actual Aevrynd/LOD/performance and explicit female acceptance remain mandatory. Goal active, no male or formal promotion.",
+  "goal": "ACTIVE_NOT_COMPLETE"
+}

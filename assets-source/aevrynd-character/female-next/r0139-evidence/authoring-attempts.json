@@ -1,0 +1,47 @@
+{
+  "originalStartedUTC": "2026-10-21T22:26:00+00:00",
+  "attempts": [
+    {
+      "handle": 57363,
+      "terminalObserved": true,
+      "outputSourceCreated": false,
+      "directAuthoringStart": {
+        "UTC": "2026-10-21T22:31:22.370137+00:00",
+        "originalStartedUTC": "2026-10-21T22:26:00+00:00",
+        "action": "Direct native lid deform bones, semantic source margin/geodesic skin weights, actual lash island/wet-line skin triangle attachment weights. No generated cap/closure surface or old hidden-head control."
+      },
+      "failure": "BVH float closest point yields outside exact-triangle barycentric range while binding actual attachment. Not a visual/contact result or complete candidate.",
+      "preservedScript": "failed-authoring-01.py",
+      "preservedLog": "failed-authoring-01.log"
+    },
+    {
+      "handle": 44368,
+      "terminalObserved": true,
+      "outputSourceCreated": true,
+      "source": "aevrynd-female-next-r0139-a-native-lid-follow.blend",
+      "sha256": "5128a461a011899c77b275055ea3a8a94ca278873665dd08f72a6003d4a37bb9",
+      "status": "Complete current woman and real native action previews produced; initial binding repair only, same original round."
+    }
+  ],
+  "minimalRepair": "Use BVH face only as candidate; recompute actual closest point on that float64 source triangle with interior/edge features, retain validation bounds. No tolerance relaxation, geometry change, pose reduction or new round.",
+  "recordedUTC": "2026-10-21T22:32:46.160174+00:00",
+  "followupJobs": [
+    {
+      "handle": 79635,
+      "status": "TERMINAL actual native source geometry/control/restore, moving-skin contacts and matched baseline original failure pose complete"
+    },
+    {
+      "handle": 14507,
+      "status": "TERMINAL actual attachment seams and matched second-light/oblique/body poses complete"
+    },
+    {
+      "handle": 90989,
+      "status": "TERMINAL development GLB bake complete, authoring source unchanged"
+    },
+    {
+      "handle": null,
+      "status": "Synchronous terminal independent glTF accessor/TRS/inverse-bind skinning readback, all actual surfaces/49 source poses qualified"
+    }
+  ],
+  "updatedUTC": "2026-10-21T23:02:43.996808+00:00"
+}
