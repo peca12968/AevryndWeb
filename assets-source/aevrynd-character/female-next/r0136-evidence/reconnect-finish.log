@@ -1,0 +1,13 @@
+00:15.140  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0126-source\aevrynd-female-next-r0126-b-source-section-neck.blend"
+D:\Download\Aevrynd\scripts\character-next\finish-female-next-r0136-recovered-native-curves.py:30: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  radius=np.concatenate([.000045*np.maximum(.06,(1-np.linspace(0,1,n))**.45) for n in counts]);rr=d.attributes.get('radius') or d.attributes.new('radius','FLOAT','POINT');rr.data.foreach_set('value',radius.astype('f4'));mat=bpy.data.materials.new('AFN136_InitialBrownNativeHair');mat.use_nodes=True;nd=mat.node_tree.nodes;nd.clear();out=nd.new('ShaderNodeOutputMaterial');ha=nd.new('ShaderNodeBsdfHairPrincipled');ha.parametrization='MELANIN';ha.inputs['Melanin'].default_value=.7;ha.inputs['Melanin Redness'].default_value=.4;ha.inputs['Roughness'].default_value=.3;ha.inputs['Radial Roughness'].default_value=.3;mat.node_tree.links.new(ha.outputs[0],out.inputs['Surface']);d.materials.clear();d.materials.append(mat);bpy.data.objects['AFN126_ORIGINAL_Hair_Hair_0'].hide_render=True;bpy.data.objects['AFN126_ORIGINAL_Hair_Hair_0'].hide_set(True);scalp.hide_render=True
+01:01.500  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0136-native-curve-combing\matched-a-native-combed-bob-face.png'
+01:12.437  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0136-native-curve-combing\matched-a-native-combed-bob-body-face.png'
+01:36.859  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0136-native-curve-combing\matched-a-native-combed-bob-profile.png'
+02:00.953  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0136-native-curve-combing\matched-a-native-combed-bob-oblique.png'
+02:27.937  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0136-native-curve-combing\matched-a-native-combed-bob-back.png'
+資訊: 已儲存為「aevrynd-female-next-r0136-a-native-combed-bob.blend」
+R136_ACTUAL_ORIGINAL_RECOVERED_NATIVE_COMB_COMPLETE_CHARACTER_PREVIEW_DONE 130.83782982826233
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

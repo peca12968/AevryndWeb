@@ -1,0 +1,4 @@
+{
+  "UTC": "2026-10-21T20:19:01.021408+00:00",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Download\\Aevrynd\\scripts\\character-next\\build-female-next-r0136-native-curve-combing.py\", line 85, in run\n    try:main()\n        ~~~~^^\n  File \"D:\\Download\\Aevrynd\\scripts\\character-next\\build-female-next-r0136-native-curve-combing.py\", line 41, in main\n    area=next(x for x in bpy.context.screen.areas if x.type=='VIEW_3D');reg=next(x for x in area.regions if x.type=='WINDOW');rv=area.spaces.active.region_3d;st=bpy.context.tool_settings.curves_sculpt;st.unified_paint_settings.use_unified_size=False;st.unified_paint_settings.use_unified_strength=False;ops=[];center=Vector((0,-.015,1.50))\n                         ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'areas'\n"
+}

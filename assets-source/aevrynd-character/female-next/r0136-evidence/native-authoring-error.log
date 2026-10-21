@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0136-native-curve-combing.py", line 81, in run
+    try:main()
+        ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0136-native-curve-combing.py", line 37, in main
+    bpy.ops.object.select_all(action='DESELECT');h.select_set(True);bpy.context.view_layer.objects.active=h;bpy.ops.object.mode_set(mode='SCULPT_CURVES');area=next(x for x in bpy.context.screen.areas if x.type=='VIEW_3D');reg=next(x for x in area.regions if x.type=='WINDOW');rv=area.spaces.active.region_3d;st=bpy.context.tool_settings.curves_sculpt;st.unified_paint_settings.use_unified_size=False;st.unified_paint_settings.use_unified_strength=False;ops=[];center=Vector((0,-.015,1.50))
+                                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Operator bpy.ops.object.mode_set.poll() Context missing active object

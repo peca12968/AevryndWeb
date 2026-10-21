@@ -1,0 +1,4 @@
+{
+  "UTC": "2026-10-21T20:19:51.419667+00:00",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Download\\Aevrynd\\scripts\\character-next\\build-female-next-r0136-native-curve-combing.py\", line 85, in run\n    try:main()\n        ~~~~^^\n  File \"D:\\Download\\Aevrynd\\scripts\\character-next\\build-female-next-r0136-native-curve-combing.py\", line 62, in main\n    assert len(d.curves)>1000,'Native Add did not produce a usable full scalp authoring layer';initial=raw(d);save('native-add-geometry.json',{'curves':len(d.curves),'points':len(initial),'hash':a.hasharray(initial),'collisionProperties':collisionProperty,'surface':scalp.name,'UV':uv.name,'allCurvesCreatedByNativeAddNotScriptedPaths':True})\n           ^^^^^^^^^^^^^^^^^^\nAssertionError: Native Add did not produce a usable full scalp authoring layer\n"
+}

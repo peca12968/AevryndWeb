@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0136-native-curve-combing.py", line 91, in run
+    req=next(eventState['generator']);eventState.update(request=req,phase=-1);win.event_simulate(type='MOUSEMOVE',value='NOTHING',x=int(reg.x+req['A'][0]),y=int(reg.y+req['A'][1]));return .04
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0136-native-curve-combing.py", line 71, in main
+    final=raw(d);assert np.linalg.norm(final-initial,axis=1).max()>1e-4,'Actual native Comb did not change actual curves'
+                                       ~~~~~^~~~~~~~
+ValueError: operands could not be broadcast together with shapes (12080428,3) (12080404,3) 
