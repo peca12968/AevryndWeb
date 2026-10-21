@@ -1,0 +1,16 @@
+00:07.984  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0117-source\aevrynd-female-next-r0117-a-native-fibre-brows.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0119-anatomical-eyes.py:42: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(name);mat.use_nodes=True;nodes=mat.node_tree.nodes;p=next((n for n in nodes if n.bl_idname=='ShaderNodeBsdfPrincipled'),None) or nodes.new('ShaderNodeBsdfPrincipled');out=next((n for n in nodes if n.bl_idname=='ShaderNodeOutputMaterial'),None) or nodes.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(p.outputs['BSDF'],out.inputs['Surface']);p.inputs['Base Color'].default_value=color;p.inputs['Roughness'].default_value=.32
+00:28.703  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0119-anatomical-eye-rebuild\matched-a-anatomical-eye-assembly-face.png'
+00:35.969  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0119-anatomical-eye-rebuild\matched-a-anatomical-eye-assembly-body-face.png'
+00:50.922  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0119-anatomical-eye-rebuild\matched-a-anatomical-eye-assembly-oblique.png'
+01:07.047  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0119-anatomical-eye-rebuild\matched-a-anatomical-eye-assembly-profile.png'
+01:19.703  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0119-anatomical-eye-rebuild\matched-a-anatomical-eye-assembly-back.png'
+01:34.406  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0119-anatomical-eye-rebuild\matched-a-anatomical-eye-assembly-half-face.png'
+01:48.656  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0119-anatomical-eye-rebuild\matched-a-anatomical-eye-assembly-closed-face.png'
+02:02.906  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0119-anatomical-eye-rebuild\matched-a-anatomical-eye-assembly-restored-face.png'
+資訊: 已儲存為「aevrynd-female-next-r0119-a-anatomical-eye-assembly.blend」
+R119_COMPLETE_EXTERNAL_EYE_ASSEMBLY_PREVIEW_DONE 115.79296112060547
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

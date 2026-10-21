@@ -1,0 +1,119 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0117-source\\aevrynd-female-next-r0117-a-native-fibre-brows.blend",
+  "output": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0119-source\\aevrynd-female-next-r0119-a-anatomical-eye-assembly.blend",
+  "parts": [
+    {
+      "side": "L",
+      "centreWorld": [
+        0.029969599843867597,
+        -0.10992375769425877,
+        1.4629877102763038
+      ],
+      "gazeRoot": "AFN119_L_EYE_GAZE_CONTROL",
+      "parts": [
+        "AFN119_L_FINITE_SCLERA",
+        "AFN119_L_FINITE_ASPHERIC_CORNEA",
+        "AFN119_L_FINITE_IRIS_AND_PUPIL_APERTURE",
+        "AFN119_L_POSTERIOR_ABSORBER_APPROX",
+        "AFN119_L_CILIARY_BACKING_APPROX"
+      ],
+      "noWholeEyeScaleOrExtraFitting": true
+    },
+    {
+      "side": "R",
+      "centreWorld": [
+        -0.029969672931698256,
+        -0.1099238506240231,
+        1.4629878185558625
+      ],
+      "gazeRoot": "AFN119_R_EYE_GAZE_CONTROL",
+      "parts": [
+        "AFN119_R_FINITE_SCLERA",
+        "AFN119_R_FINITE_ASPHERIC_CORNEA",
+        "AFN119_R_FINITE_IRIS_AND_PUPIL_APERTURE",
+        "AFN119_R_POSTERIOR_ABSORBER_APPROX",
+        "AFN119_R_CILIARY_BACKING_APPROX"
+      ],
+      "noWholeEyeScaleOrExtraFitting": true
+    }
+  ],
+  "parameters": {
+    "referenceImplementation": "https://www.mathworks.com/help/images/create-human-eye-model-schematic.html",
+    "originalPaperMetadataAbstractOnly": "https://opg.optica.org/josaa/abstract.cfm?uri=josaa-2-8-1273",
+    "primaryPublicationFullTextAccessNotAvailable": true,
+    "anteriorRadiusM": 0.00772,
+    "anteriorConic": -0.26,
+    "posteriorRadiusM": 0.0065,
+    "posteriorConic": 0,
+    "centralCorneaThicknessM": 0.00055,
+    "corneaIOR": 1.376,
+    "aqueousIOR": 1.3374,
+    "limbusRadiusM": 0.006,
+    "globeRadiusM": 0.012,
+    "irisOuterRadiusM": 0.0055,
+    "pupilRadiusM": 0.0015,
+    "irisPlaneFromApexM": 0.0036,
+    "irisThicknessM": 0.00015,
+    "ownGlobeIrisScleralThicknessStagingAndBackingNotValidatedBiometry": true,
+    "noLensRetinaAccommodationOrFullOpticalSimulation": true,
+    "noMatlabOrExternalRuntimeCodeUsed": true
+  },
+  "allProtectedBodyKeysHairBrowsLashesBefore": {
+    "actualSkinWorld": "6734b93d940e8e5beba8199fef1b20cbf1fa447a6b7b7f5934fbf8cbd006b046",
+    "actualTriangles": "2e338affe6a3ad3f54ffb76350e749431d48ff94e93a95a5f9704a4b87d0cce2",
+    "rawAllShapeKeys": {
+      "Basis": "067adc1c72fda44fab41a047e05b04829e36ab954d3c9946d70a944844a1c3f2",
+      "AFN113_CLOSED_L": "8dfa61d05cef12ee8804f9a7afe344ecf4429df3d3ad607db1f7c2c1d451ae4a",
+      "AFN113_CLOSED_R": "49073f3045df2c1c2548ee452b2c9f3233d7221b641769998c62e19157e94bf6"
+    },
+    "allOriginalFibres": {
+      "AFN97_TUCKED_ARTIST_BOB_CHILDREN": {
+        "curves": 24800,
+        "world": "d3f0cbe3ff69a8e18e3db012b467d3832d5bc203caeb9e6a364ca6b694784984",
+        "radii": "bcc5f3e4a6d931224965620ec684d13c129a3850bb87882cc6e94efaf46895f6"
+      },
+      "AFN57_NATIVE_BROWS": {
+        "curves": 2140,
+        "world": "683818281aee9ed84e78c3c8f73ac48b0e4c1a7b255557f910d51f474385b0fa",
+        "radii": "340ff7385b7f34478a09463be27d7b7260891e1f057e216d930fbcbc2c50d6f3"
+      },
+      "AFN57_NATIVE_LASHES": {
+        "curves": 412,
+        "world": "c03066f126295453049b9e2dabcde0992e50b27774fe7dbd75f092b53ce4c213",
+        "radii": "8464888a54bd5564ae6c75ed0e21ab1a5c19ee66b0985597b923fe711ea4d849"
+      }
+    }
+  },
+  "allProtectedBodyKeysHairBrowsLashesAfter": {
+    "actualSkinWorld": "6734b93d940e8e5beba8199fef1b20cbf1fa447a6b7b7f5934fbf8cbd006b046",
+    "actualTriangles": "2e338affe6a3ad3f54ffb76350e749431d48ff94e93a95a5f9704a4b87d0cce2",
+    "rawAllShapeKeys": {
+      "Basis": "067adc1c72fda44fab41a047e05b04829e36ab954d3c9946d70a944844a1c3f2",
+      "AFN113_CLOSED_L": "8dfa61d05cef12ee8804f9a7afe344ecf4429df3d3ad607db1f7c2c1d451ae4a",
+      "AFN113_CLOSED_R": "49073f3045df2c1c2548ee452b2c9f3233d7221b641769998c62e19157e94bf6"
+    },
+    "allOriginalFibres": {
+      "AFN97_TUCKED_ARTIST_BOB_CHILDREN": {
+        "curves": 24800,
+        "world": "d3f0cbe3ff69a8e18e3db012b467d3832d5bc203caeb9e6a364ca6b694784984",
+        "radii": "bcc5f3e4a6d931224965620ec684d13c129a3850bb87882cc6e94efaf46895f6"
+      },
+      "AFN57_NATIVE_BROWS": {
+        "curves": 2140,
+        "world": "683818281aee9ed84e78c3c8f73ac48b0e4c1a7b255557f910d51f474385b0fa",
+        "radii": "340ff7385b7f34478a09463be27d7b7260891e1f057e216d930fbcbc2c50d6f3"
+      },
+      "AFN57_NATIVE_LASHES": {
+        "curves": 412,
+        "world": "c03066f126295453049b9e2dabcde0992e50b27774fe7dbd75f092b53ce4c213",
+        "radii": "8464888a54bd5564ae6c75ed0e21ab1a5c19ee66b0985597b923fe711ea4d849"
+      }
+    }
+  },
+  "allProtectedGeometryAndRadiiByteExact": true,
+  "oldImagePathsUnchanged": true,
+  "oldOpticsHiddenAndOriginalSourcePreserved": true,
+  "irisUVSourceApproximation": "Original1024px CC0 brown atlas, observed circle centres and115px outer radius; original PNG unchanged, not a captured subject eye.",
+  "finiteOccupancyContactGazeAndCompleteAnatomyUnaccepted": true,
+  "secondsBeforePreview": 5.289875745773315
+}

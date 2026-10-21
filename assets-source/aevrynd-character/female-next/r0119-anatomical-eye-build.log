@@ -1,0 +1,17 @@
+00:08.422  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0117-source\aevrynd-female-next-r0117-a-native-fibre-brows.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0119-anatomical-eyes.py:25: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(name);mat.use_nodes=True;p=mat.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=color;p.inputs['Roughness'].default_value=.32
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0119-anatomical-eyes.py", line 65, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0119-anatomical-eyes.py", line 34, in main
+    image.name='AFN119_NATIVE_BROWN_SOURCE';image.filepath='//../makehuman-native-eye-textures/brown_eye.png';sclera=opaque('AFN119_SOURCE_TEXTURED_SCLERA',image);iris=opaque('AFN119_SOURCE_TEXTURED_IRIS',image);front=glass('AFN119_AIR_TO_CORNEA',1.376);back=glass('AFN119_CORNEA_TO_AQUEOUS',1.376/1.3374);dark=opaque('AFN119_INTERNAL_ABSORBER_APPROX',color=(.0005,.0003,.0002,1));ciliary=opaque('AFN119_CILIARY_BACKING_APPROX',color=(.025,.012,.008,1));centres=json.loads((E.parent/'r0113-coherent-head-foundation/coherent-native-head-b.json').read_text('utf-8'))['nativeEyeCentresWorld'];rows=[];arrays={}
+                                                                                                                     ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0119-anatomical-eyes.py", line 25, in opaque
+    mat=bpy.data.materials.new(name);mat.use_nodes=True;p=mat.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=color;p.inputs['Roughness'].default_value=.32
+                                                                                                     ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'inputs'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
