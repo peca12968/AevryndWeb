@@ -1,0 +1,13 @@
+00:11.688  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0139-source\aevrynd-female-next-r0139-a-native-lid-follow.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0140-native-rooted-groom.py:57: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  hair=bpy.data.objects.new('AFN140_CURRENT_ROOTED_VOLUMETRIC_HAIR',data);scene.collection.objects.link(hair);gn(hair,skin,guides);mat=bpy.data.materials.new('AFN140_NATIVE_MELANIN_FIBRE_CLOSURE');mat.use_nodes=True;n=mat.node_tree.nodes;n.clear();L=mat.node_tree.links;shader=n.new('ShaderNodeBsdfHairPrincipled');shader.parametrization='MELANIN';shader.inputs['Melanin'].default_value=.65;shader.inputs['Melanin Redness'].default_value=.25;shader.inputs['Roughness'].default_value=.35;shader.inputs['Radial Roughness'].default_value=.45;at=n.new('ShaderNodeAttribute');at.attribute_name='AFN140_Along';mult=n.new('ShaderNodeMath');mult.operation='MULTIPLY';L.new(at.outputs['Fac'],mult.inputs[0]);mult.inputs[1].default_value=-.10;add=n.new('ShaderNodeMath');add.operation='ADD';add.inputs[1].default_value=.68;L.new(mult.outputs[0],add.inputs[0]);L.new(add.outputs[0],shader.inputs['Melanin']);out=n.new('ShaderNodeOutputMaterial');L.new(shader.outputs[0],out.inputs['Surface']);data.materials.append(mat);source.hide_render=True;source.hide_set(True);bpy.context.view_layer.update();actual=a.q.hair(hair);error=float(np.linalg.norm(actual-V,axis=1).max());assert error<4e-6,error
+01:36.297  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0138-native-current-gaze\matched-a-native-rooted-groom-face.png'
+01:43.235  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0138-native-current-gaze\matched-a-native-rooted-groom-body-face.png'
+02:07.438  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0138-native-current-gaze\matched-a-native-rooted-groom-profile.png'
+02:29.500  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0138-native-current-gaze\matched-a-native-rooted-groom-oblique.png'
+02:48.969  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0138-native-current-gaze\matched-a-native-rooted-groom-back.png'
+資訊: 已儲存為「aevrynd-female-next-r0140-a-native-rooted-groom.blend」
+R140_COMPLETE_NATIVE_ROOTED_GROOM_HEAD_BODY_PREVIEW_DONE 157.3705554008484
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
