@@ -354,3 +354,9 @@ r0121-evidence/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr
 r0121-evidence/*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
 aevrynd-female-next-r0121* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 r0121-source/*.blend filter=lfs diff=lfs merge=lfs -text
+# Exact r122 native particle/alpha-card construction research, no appearance adoption.
+r0122-evidence/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0122-evidence/*.log -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab,cr-at-eol
+r0122-source/native-bob-texture-input/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+aevrynd-female-next-r0122* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+r0122-source/*.blend filter=lfs diff=lfs merge=lfs -text

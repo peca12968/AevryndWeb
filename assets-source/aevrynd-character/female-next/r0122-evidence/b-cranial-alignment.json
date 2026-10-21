@@ -1,0 +1,162 @@
+{
+  "actualSurfacePairs": [
+    {
+      "name": "crown",
+      "originWorld": [
+        0.0,
+        0.02,
+        1.53
+      ],
+      "rayDirection": [
+        0,
+        0,
+        1
+      ],
+      "sourceTriangle": 14161,
+      "targetTriangle": 232788,
+      "sourceWorld": [
+        0.0,
+        0.019999999552965164,
+        1.5447492599487305
+      ],
+      "targetWorld": [
+        0.0,
+        0.019999999552965164,
+        1.5514757633209229
+      ]
+    },
+    {
+      "name": "rightUpperCranium",
+      "originWorld": [
+        0.0,
+        0.02,
+        1.53
+      ],
+      "rayDirection": [
+        1,
+        0,
+        0
+      ],
+      "sourceTriangle": 14193,
+      "targetTriangle": 230366,
+      "sourceWorld": [
+        0.037862442433834076,
+        0.019999999552965164,
+        1.5299999713897705
+      ],
+      "targetWorld": [
+        0.0479280911386013,
+        0.019999999552965164,
+        1.5299999713897705
+      ]
+    },
+    {
+      "name": "leftUpperCranium",
+      "originWorld": [
+        0.0,
+        0.02,
+        1.53
+      ],
+      "rayDirection": [
+        -1,
+        0,
+        0
+      ],
+      "sourceTriangle": 14259,
+      "targetTriangle": 18443,
+      "sourceWorld": [
+        -0.03786248713731766,
+        0.019999999552965164,
+        1.5299999713897705
+      ],
+      "targetWorld": [
+        -0.04792821407318115,
+        0.019999999552965164,
+        1.5299999713897705
+      ]
+    },
+    {
+      "name": "frontalCranium",
+      "originWorld": [
+        0.0,
+        0.02,
+        1.53
+      ],
+      "rayDirection": [
+        0,
+        -1,
+        0
+      ],
+      "sourceTriangle": 14025,
+      "targetTriangle": 234034,
+      "sourceWorld": [
+        0.0,
+        -0.11225560307502747,
+        1.5299999713897705
+      ],
+      "targetWorld": [
+        0.0,
+        -0.12761962413787842,
+        1.5299999713897705
+      ]
+    },
+    {
+      "name": "posteriorCranium",
+      "originWorld": [
+        0.0,
+        0.02,
+        1.53
+      ],
+      "rayDirection": [
+        0,
+        1,
+        0
+      ],
+      "sourceTriangle": 13436,
+      "targetTriangle": 233714,
+      "sourceWorld": [
+        0.0,
+        0.032756201922893524,
+        1.5299999713897705
+      ],
+      "targetWorld": [
+        0.0,
+        0.0396241620182991,
+        1.5299999713897705
+      ]
+    }
+  ],
+  "uniformScale": 1.154608510478578,
+  "translationWorldM": [
+    -1.4263911451590854e-08,
+    -0.0010962574785487022,
+    -0.2356617890413446
+  ],
+  "residualM": [
+    0.004078636784863569,
+    0.004744861685330154,
+    0.0047448996697306315,
+    0.003213394075346787,
+    0.003033107253803935
+  ],
+  "maximumPoleResidualM": 0.0047448996697306315,
+  "headAxesAlreadySharedNoRotationEstimated": true,
+  "fittingPolicy": "Single closed-form least-squares scale+translation over all five cranial correspondences. No root/face exclusions or clearance offset. Does not prove every root fits or every fibre clears target.",
+  "originalEmitterVertexAndAllAuthoredGuideCoordinatesUnchanged": true,
+  "originalNativeParticlePathsAndWidthsNotRetuned": true,
+  "nativeCacheObservation": {
+    "parents": 1044,
+    "children": 104400,
+    "pathCacheSlotsEach": 9,
+    "validSampleCount": 800148,
+    "validCountRange": [
+      6,
+      9
+    ],
+    "allNativeParentRootsMatchCoObjectGuideRootsWorldMaxM": 2.385422419592942e-07,
+    "useParentParticles": false,
+    "nativeRendererNotReconstructedCacheCurves": true,
+    "sourceDisplayAndRenderStepsEqual": true,
+    "pathSamplesNotExactFiniteRenderSweptGeometry": true
+  }
+}

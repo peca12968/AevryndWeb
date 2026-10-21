@@ -1,0 +1,13 @@
+00:06.890  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0117-source\aevrynd-female-next-r0117-a-native-fibre-brows.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0122-native-alpha-cards.py:12: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN122_ORIGINAL_NATIVE_BOB_RGBA');mat.use_nodes=True;N=mat.node_tree.nodes;N.clear();L=mat.node_tree.links;bs=N.new('ShaderNodeBsdfPrincipled');out=N.new('ShaderNodeOutputMaterial');L.new(bs.outputs['BSDF'],out.inputs['Surface']);uv=N.new('ShaderNodeUVMap');uv.uv_map='NativeBobUV';image=bpy.data.images.load(str(texture),check_existing=True);image.filepath='//native-bob-texture-input/bob01_diffuse.png';image.colorspace_settings.name='sRGB';tex=N.new('ShaderNodeTexImage');tex.image=image;L.new(uv.outputs['UV'],tex.inputs['Vector']);L.new(tex.outputs['Color'],bs.inputs['Base Color']);L.new(tex.outputs['Alpha'],bs.inputs['Alpha']);bs.inputs['IOR'].default_value=1.55;bs.inputs['Roughness'].default_value=.38;bs.inputs['Anisotropic'].default_value=.65
+00:23.406  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0122-native-swept-back-groom\matched-c-native-alpha-cards-face.png'
+00:30.406  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0122-native-swept-back-groom\matched-c-native-alpha-cards-body-face.png'
+00:40.593  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0122-native-swept-back-groom\matched-c-native-alpha-cards-profile.png'
+00:51.609  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0122-native-swept-back-groom\matched-c-native-alpha-cards-oblique.png'
+01:00.906  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0122-native-swept-back-groom\matched-c-native-alpha-cards-back.png'
+資訊: 已儲存為「aevrynd-female-next-r0122-c-native-alpha-cards.blend」
+R122_ORIGINAL_NATIVE_ALPHA_CARD_COMPLETE_PREVIEW_DONE 54.07538652420044
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

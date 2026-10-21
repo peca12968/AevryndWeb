@@ -1,0 +1,111 @@
+{
+  "revision": "female-next-r0122",
+  "decision": "RETAIN_NATIVE_GROOM_AND_ALPHA_SOURCE_RESEARCH_NO_COMPLETE_GAIN_KEEP_R117",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0117-source\\aevrynd-female-next-r0117-a-native-fibre-brows.blend",
+    "sha256": "09da2122d16f80cbcff6f535dbfc35540df27131dc323450d2a4c41293446db9",
+    "bytes": 109202829,
+    "status": "ADOPT_SCOPED_COMPLETE_STATIC_NATIVE_BROW_APPEARANCE_GAIN",
+    "scope": "Adopt only static complete-character eyebrow shape/flow appearance in documented primary/oblique/second-light views, preserving r115 neck gain. Not a whole-character anatomy/function/finite-contact/runtime/rights/user acceptance.",
+    "renderSkin": "AFN113_COMPLETE_WOMAN_COHERENT_HEAD",
+    "rawEditableSource": "AFN115_EDITABLE_CONNECTED_NATIVE_ADULT_SOURCE",
+    "actualFaceControls": "AFN59_FACE_CONTROLS / blink_left, blink_right",
+    "appearanceAdoptionScope": "R115 static continuous neck/shoulder gain retained plus r117 static brow shape/hair-flow gain; remaining head/body deficits open.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0122-source\\aevrynd-female-next-r0122-a-native-swept-back-groom.blend",
+      "sha256": "91f9b88dec5bd258326f8d720c93e579ac98cab78e19ba6365463461747fe1a9",
+      "bytes": 124561499,
+      "status": "RETAIN_UNACCEPTED_NATIVE_CONSTRUCTION_RESEARCH_NO_APPEARANCE_ADOPTION",
+      "scope": "Original Back1 native particle groom with same old canonical body matrix, unmodified native emitter/guide data/widths. Original source body instancer hidden. Current actual head occludes much of crown; rejected unmapped attachment."
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0122-source\\aevrynd-female-next-r0122-b-cranial-pole-native-groom.blend",
+      "sha256": "1f3bf419c9058cd62bdf520aa33b040814bef0a9e43e68615d2ea9d01f652af9",
+      "bytes": 124561938,
+      "status": "RETAIN_UNACCEPTED_NATIVE_CONSTRUCTION_RESEARCH_NO_APPEARANCE_ADOPTION",
+      "scope": "Same native Back1 and artist directions after one closed-form scale/translation from five actual cranial ray-pole correspondences. Full native emitter/guide/particle data unchanged, no per-root offset. Crown visible but all1044 sampled parent root nearest-surface median4.901mm/max14.213mm; local unsigned distances are not signed penetration counts. Forehead/ear fit not qualified and rear still sheet-like. Retain original shape reference only."
+    },
+    "c": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0122-source\\aevrynd-female-next-r0122-c-native-alpha-cards.blend",
+      "sha256": "678da0c79ee28be434dff08e6654fd632dcf3be80a6d52a0dc3933b9c62c283e",
+      "bytes": 109421940,
+      "status": "RETAIN_UNACCEPTED_NATIVE_CONSTRUCTION_RESEARCH_NO_APPEARANCE_ADOPTION",
+      "scope": "Actual original native MakeHuman bob01 mesh/MHCLO/UV plus recovered complete original RGBA atlas, nominal0.1mm Solidify, one own PBR approximation. No quad-to-fibre conversion, root guess or foreign-head fit. Native placement preserved, but appearance shows broad glossy bands, hard card ends and large eye occlusion. Rejected as a convincing hair reconstruction."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "NO_ADOPTED_COMPLETE_APPEARANCE_GAIN_RETAIN_NATIVE_SHAPE_AND_SOURCE_RESEARCH_ONLY",
+      "evidence": [
+        "r0122-head-and-body-comparison.png",
+        "r0122-profile-comparison.png",
+        "manual-visual-review.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "THREE_COMPLETE_SOURCES_INDEPENDENTLY_REOPENED_NATIVE_GUIDE_CARD_EDIT_DATA_RECOVERED_COMPLETE_OPERATION_UNACCEPTED",
+      "evidence": "minimum-saved-groom-readback.json",
+      "newCompleteOperationAccepted": false,
+      "naturalHairMotionDelivered": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_NATIVE_SCALP_ATTACHMENT_AND_ALPHA_OCCUPANCY_UNPROVED",
+      "AParentRootPointObservations": {
+        "quantiles": [
+          1.5061756130307913e-05,
+          0.00450275931507349,
+          0.012701132893562317,
+          0.014814271591603756
+        ],
+        "localNearestNormalProjectionQuantiles": [
+          -0.014814271591603756,
+          -0.00450275931507349,
+          0.0003699418171890991,
+          0.003976278472691774
+        ],
+        "representation": "Actual evaluated native parent path-cache root points only; all1044 included. Not all render children, finite radius, swept native interpolation, signed global distances/inside classification or continuous contact proof.",
+        "rootSurfaceAttachmentNotQualified": true
+      },
+      "BParentRootPointObservations": {
+        "quantiles": [
+          3.573312824300956e-06,
+          0.004901157924905419,
+          0.010912525886669754,
+          0.014212951064109802
+        ],
+        "localNearestNormalProjectionQuantiles": [
+          -0.00501065980643034,
+          0.004790190607309341,
+          0.010912479180842637,
+          0.014212951064109802
+        ],
+        "representation": "Actual evaluated native parent path-cache root points only; all1044 included. Not all render children, finite radius, swept native interpolation, signed global distances/inside classification or continuous contact proof.",
+        "rootSurfaceAttachmentNotQualified": true
+      },
+      "CRepresentation": "Original alpha cards plus nominal0.1mm Solidify; full card mesh envelope is not exact alpha occupied finite hair volume.",
+      "globalSignedMinimumM": null,
+      "finiteAllRenderChildrenSelfBodyClothAndContinuousContactNotProved": true
+    },
+    "runtime": {
+      "status": "NOT_INTEGRATED_NOT_TESTED_NOT_PROMOTED",
+      "LODAndPerformance": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 5,
+  "productionRoundsSinceLastWholeCharacterReview": 0,
+  "nextWholeReviewAfterFurtherProductionRounds": 3,
+  "femaleUserAcceptance": false,
+  "reviewUTC": "2026-10-21T12:50:07.591323+00:00",
+  "actualCompleteSourceFiles": 3,
+  "structurallyDifferentConstructions": 2,
+  "singleMeasuredNativeSourceAlignmentRepair": 1,
+  "wholeCharacterScore": null
+}
