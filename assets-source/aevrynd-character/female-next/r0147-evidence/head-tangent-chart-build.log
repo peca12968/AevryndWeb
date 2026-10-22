@@ -1,0 +1,12 @@
+00:35.062  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0146-source\aevrynd-female-next-r0146-a-connected-palpebral-lining.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0147-outer-lid-surface.py", line 27, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0147-outer-lid-surface.py", line 12, in main
+    save('actual-head-tangent-chart-before.json',uvReport);assert nm.space=='TANGENT' and used!=target,'No changed-premise chart mismatch: do not author a cosmetic variant'
+                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: No changed-premise chart mismatch: do not author a cosmetic variant
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

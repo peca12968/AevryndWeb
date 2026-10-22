@@ -1,0 +1,11 @@
+00:31.672  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0146-source\aevrynd-female-next-r0146-a-connected-palpebral-lining.blend"
+D:\Download\Aevrynd\scripts\character-next\diagnose-female-next-r0147-outer-lid-surface.py:19: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if mat and mat.use_nodes:graphs.append({'name':mat.name,'nodes':[{'name':n.name,'type':n.bl_idname,'image':n.image.filepath if n.type=='TEX_IMAGE' and n.image else None} for n in mat.node_tree.nodes],'links':[(l.from_node.name,l.from_socket.name,l.to_node.name,l.to_socket.name) for l in mat.node_tree.links]})
+00:56.859  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0147-outer-lid-surface\matched-diagnostic-auto-normals-closed-face.png'
+D:\Download\Aevrynd\scripts\character-next\diagnose-female-next-r0147-outer-lid-surface.py:24: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if not mat or not mat.use_nodes:continue
+01:09.812  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0147-outer-lid-surface\matched-diagnostic-basecolor-closed-face.png'
+R147_ACTUAL_CLOSED_LID_ATTRIBUTION_NORMAL_AND_BASECOLOR_DIAGNOSTIC_DONE 42.51145839691162
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

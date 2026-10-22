@@ -1,0 +1,51 @@
+{
+  "revision": "female-next-r0147",
+  "decision": "REJECT_NATIVE_CORRECTIVE_CLOSURE_COVERAGE_REGRESSION_KEEP_R139",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "actualImagesViewed": [
+    {
+      "file": "r0147-complete-head-body-comparison.png",
+      "sha256": "1974affbe81cd5539b7a578ff87d007cb4e356f906fa5f964237af32f7fbc6d6"
+    },
+    {
+      "file": "r0147-r146-closed-comparison.png",
+      "sha256": "e67d7a9478c2d3868414a9d60fa8da77875b597bb9251ee6855d12635ca2eb5e"
+    },
+    {
+      "file": "r0147-profile-back-comparison.png",
+      "sha256": "91905cd0025a3090b8a1be7f370afc99b0d78934dd96cefefeef854d7ebaaac7"
+    },
+    {
+      "file": "r0147-actual-blink-key-poses.png",
+      "sha256": "c93df9837e0a1d585ebeff4555af6db63057f2ac2a96437c5a7b806aa55cdd2d"
+    },
+    {
+      "file": "matched-a-native-tarsal-corrective-oblique.png",
+      "sha256": "5b997e757da0e9bd07941f826e2155dd0b83f78da3efe21d04ce38793d1c5492"
+    },
+    {
+      "file": "matched-closed-blink-profile.png",
+      "sha256": "41403cb9b7c172617875dc4443a9d5b0f325effee9e478c5a282c3e3cdb82a3e"
+    },
+    {
+      "file": "matched-diagnostic-auto-normals-closed-face.png",
+      "sha256": "4b29bf264e02d873bd397d6f51b63922d81d09c7b4962653e5321763d6a5d171"
+    },
+    {
+      "file": "matched-diagnostic-basecolor-closed-face.png",
+      "sha256": "e2420658b4717bbe1cfbde420f8ec2465db5dc6a42899bbc526bc24263377ef2"
+    }
+  ],
+  "protectedAppearance": "Complete neutral face/body, oblique/profile/back retain the original face/skin/body/hair. No image/UV/material/colour/exposure edit.",
+  "visibleDecision": "Actual bound rest-surface corrective moves the outer eyelid by up to1.728mm and follows original lash/wet anchors, but same-condition complete half/closed/restored head/body and r146 comparison show no sufficient perceptible quality gain. Reject this direction without factor/iteration variants or broad audits.",
+  "correctedDiagnosis": "Normal reset does not visibly cure dark band. Dark source eyelid pigment remains in base-colour-only diagnostic; this does not establish unintended baked shadow versus intentional makeup. Normal-map and texture already explicitly name AngelicaOriginalUV; the different active first chart is not a mismatch. Stop UV repair before save. Do not treat source pigment as penetration or lighten it to rescue geometry.",
+  "independentActualReadback": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0147-outer-lid-surface\\minimum-independent-tarsal-corrective-readback.json",
+  "closedSampledEyeBeforeSkinHits": 142,
+  "sampledRayScope": "Recorded front camera pixel centres, actual full Skin versus Eye meshes only; not exact rendered occupancy/global closure/signed minimum/finite self continuous contacts.",
+  "relatedClosureCoverageRegression": "Closed pose has142 eye-before-Skin hits at71 distinct sampled pixels, versus0 in r146. This actual Skin coverage regression independently rejects a complete usable blink; other occluders/shading/alpha are not inferred.",
+  "secondLightBroadContactAndRuntimeNotRunAfterVisibleFailure": true,
+  "wholeCharacterScore": null,
+  "femaleUserAcceptance": false
+}
