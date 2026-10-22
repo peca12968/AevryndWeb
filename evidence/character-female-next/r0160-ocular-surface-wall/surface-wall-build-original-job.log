@@ -1,0 +1,16 @@
+00:09.735  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0159-source\aevrynd-female-next-r0159-a-native-lid-wall.blend"
+Traceback (most recent call last):
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0160-ocular-surface-wall.py", line 59, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0160-ocular-surface-wall.py", line 46, in main
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+    skin.modifiers.clear();wall_graph(skin,source,[ob for sign,ob in sorted(helpers,reverse=True,key=lambda x:x[0])]);bpy.context.view_layer.update();NV,NT=a.geometry(skin);assert np.isfinite(NV).all() and np.array_equal(NV[:oldCount],V[:oldCount]);ev=skin.evaluated_get(bpy.context.evaluated_depsgraph_get());data=ev.to_mesh();ray=h.arr(data.attributes['AFN160_ACTUAL_RAY_HIT'].data,'value',N,dtype='bool');ev.to_mesh_clear();h.save('direct-intrinsic-wall-authoring-start.json',{'UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'originalStartedUTC':before['startedUTC'],'actualSkin':skin.name,'actualNativeWallVertices':int(wall.sum()),'actualNeutralRayHits':int(ray[wall>0].sum()),'actualNeutralRayMisses':int((~ray[wall>0]).sum()),'regions':regions,'sameNativeTopologyDensityAnd250umConstructionAllowance':True,'changedPremise':'Actual moving opening centroid/opposite pole and curved ocular-surface travel with outside-in rays against both original Eye and Reflect. Replaces stationary spherical cup plus faded boundary displacement, not a radius/density/fade change or post-hoc global Skin push.','rayHitsNotContactOrFiniteProof':True,'originalOuterPrefixGeometryProtected':True});assert ray[wall>0].all(),'Actual ocular carrier ray miss, no fallback or adoption'
+                           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0160-ocular-surface-wall.py", line 35, in wall_graph
+    ray=n.new('GeometryNodeRaycast');ray.data_type='FLOAT';ray.mapping='INTERPOLATED';L.new(geometry,ray.inputs['Target Geometry']);L.new(g.vec(n,L,'ADD',center,g.scale(n,L,travel,math('ADD',.06,0.))),ray.inputs['Source Position']);L.new(g.scale(n,L,travel,math('SUBTRACT',0.,1.)),ray.inputs['Ray Direction']);ray.inputs['Ray Length'].default_value=.06;hits.append(ray.outputs['Is Hit']);points.append(ray.outputs['Hit Position'])
+                                                           ^^^^^^^^^^^
+AttributeError: 'GeometryNodeRaycast' object has no attribute 'mapping'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

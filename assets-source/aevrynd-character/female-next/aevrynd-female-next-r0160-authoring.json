@@ -1,0 +1,73 @@
+{
+  "revision": "female-next-r0160",
+  "source": {
+    "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0160-source\\aevrynd-female-next-r0160-a-ocular-surface-wall.blend",
+    "engineAlias": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0160-source\\aevrynd-female-next-r0160-a-ocular-surface-wall.blend",
+    "sha256": "e80dff727df07db21833861be648e9da023cc9904465db5377992328e5c8bc3d",
+    "bytes": 36844808,
+    "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+    "actualPoseSource": "AFN159_PRE_WALL_NATIVE_POSE_REFERENCE",
+    "actualNativeVertices": 175719,
+    "status": "REJECTED_UPRIGHT_LASH_REGRESSION_AND754_EYE1929_REFLECT_CROSSINGS",
+    "scope": "Same complete woman, same native topology/density. New ocular-surface path controls5492 inner-wall vertices against actual Eye+Reflect with moving opening centroid. All recorded poses have ray hits but actual whole faces intersect; visible closed lash direction regresses. No adopted appearance or complete operation."
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "FAIL_VISIBLE_CLOSED_LASH_UPRIGHT_FRINGE_REGRESSION",
+      "score": null,
+      "completeHeadBodyNeutralHalfActuallyViewed": true,
+      "findings": [
+        "Closed lashes stand upright across upper lid and produce a worse fringe than159.",
+        "Neutral/full body palette and outer form visually retained.",
+        "No additional oblique/second-light audits after visible failure. Hair and whole-character realism remain incomplete."
+      ]
+    },
+    "function": {
+      "status": "RAW_NATIVE_EDIT_AND_ACTION_RESTORE_ONLY_NOT_COMPLETE_BLINK",
+      "allSevenNeutralRestorationM": 0,
+      "actualFrames": [
+        1,
+        9,
+        11,
+        24
+      ],
+      "actualRayHitsAll5492AtEachRecordedPose": true,
+      "actualNativeEditM": 0.00020000338554382324,
+      "actualNativeEditRestoreM": 0.0,
+      "completeBlinkGazeAndExportWeightsNotAccepted": true
+    },
+    "contact": {
+      "status": "FAIL754_EYE1929_REFLECT_FULL_SKIN_CLOSED11",
+      "frame": 11,
+      "allActualSkinTriangles": 349064,
+      "eyeCrossingPairs": 754,
+      "reflectCrossingPairs": 1929,
+      "allObservedCrossingsOnNewWall": true,
+      "sameScope159ClosedPairs": [
+        356,
+        355
+      ],
+      "independentFiniteEdgeFaceWitnesses": true,
+      "actualFailedFacesLocalized": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0160-ocular-surface-wall\\actual-failed-face-localization.json",
+      "sampledFailedEyeTriangleEdgeLengthsM": [
+        0.020875465284665943,
+        0.003078201086920976,
+        0.01886632012227328
+      ],
+      "interpretation": "Actual long crossing faces coexist with per-vertex ray hits/positive unsigned nearest distances. No point/normal result is substituted for whole-face contact. Exact underlying parameter correspondence fault beyond sampled faces is not claimed proven.",
+      "numericEpsilonM": 1e-12,
+      "signedMinimumM": null,
+      "finiteSelfContinuousOtherPosesNotAccepted": true
+    },
+    "runtime": {
+      "status": "NOT_EXPORTED_TESTED_OR_PROMOTED",
+      "runtimeAsset": null
+    }
+  },
+  "actualConstruction": "Moving native inner-margin centroid sets opposite pole; intrinsic directions are cast outside-in against both actual ocular meshes, sharing159 native topology and fixed250um construction allowance. Original outer prefix and native editing retained. Real fibre rest recalibrated, but deep-row frame causes visible upright lashes and actual wall faces cross.",
+  "rightsReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0160-ocular-surface-wall\\references-and-rights.json",
+  "newInstallNodeServerSubagentThirdPartyContent": false,
+  "dependencies": "One immutable152 Mesh library+16 textures; local pre-wall158 construction retained.139 working and external117 rollback separately preserved.",
+  "noAdoptionOrCompleteOperation": true
+}
