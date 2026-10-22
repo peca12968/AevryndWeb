@@ -1,0 +1,36 @@
+{
+  "originalStartedUTC": "2026-10-22T05:16:30+00:00",
+  "startedUTC": "2026-10-22T05:43:40.875691+00:00",
+  "premise": "Original guide rest paths were directly authored in world coordinates; varying source/target normal up fields rotate interpolated children away from that posed coordinate frame. Hypothesis tested, not assumed true.",
+  "singleChange": "Both native guide/point up fields replaced by the same worldZ vector; original normals and all guide/root geometry retained unchanged.",
+  "previousUpFieldLinks": [
+    {
+      "socket": "Guide Up",
+      "links": [
+        {
+          "node": "\u5177\u540d\u7684\u5c6c\u6027.004",
+          "socket": "Attribute"
+        }
+      ]
+    },
+    {
+      "socket": "Point Up",
+      "links": [
+        {
+          "node": "\u5177\u540d\u7684\u5c6c\u6027.006",
+          "socket": "Attribute"
+        }
+      ]
+    }
+  ],
+  "actualEvaluatedMaximumGeometryChangeM": 0.20793504506020113,
+  "actualRootsMaximumChangeM": 0.0,
+  "actualPoints": 1274000,
+  "geometryHash": "01f92b428677ba047ce6fff2438dc167277146d2de2f4fb59e9876c52abcfd65",
+  "allOriginalOtherRawMeshesUVExact": true,
+  "noLightingExposureMaterialRadiusDensityOrGuideShapeChange": true,
+  "sameOriginalRoundNotClockOrCounterReset": true,
+  "secondFullStateJustifiedByCoordinateRepresentationPremiseNotSweep": true,
+  "originalFirstCompletePreviewDeadlineUTC": "2026-10-22T05:46:30+00:00",
+  "appearanceOperationContactRuntimeUnaccepted": true
+}

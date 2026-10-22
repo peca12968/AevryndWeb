@@ -1,0 +1,13 @@
+00:09.750  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0139-source\aevrynd-female-next-r0139-a-native-lid-follow.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0152-layered-current-source.py:39: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  rad=n.new('GeometryNodeSetCurveRadius');rad.inputs['Radius'].default_value=.000035;parameter=n.new('GeometryNodeSplineParameter');taper=n.new('ShaderNodeMapRange');taper.inputs['From Min'].default_value=0;taper.inputs['From Max'].default_value=1;taper.inputs['To Min'].default_value=.000035;taper.inputs['To Max'].default_value=.000005;L.new(parameter.outputs['Factor'],taper.inputs['Value']);L.new(taper.outputs['Result'],rad.inputs['Radius']);L.new(inter.outputs['Curves'],rad.inputs['Curve']);mat=bpy.data.materials.new('AFN152_NATIVE_BROWN_HAIR');mat.use_nodes=True;ns=mat.node_tree.nodes;ns.clear();bs=ns.new('ShaderNodeBsdfHairPrincipled');bs.parametrization='MELANIN';bs.inputs['Melanin'].default_value=.75;bs.inputs['Melanin Redness'].default_value=.15;bs.inputs['Roughness'].default_value=.35;bs.inputs['Radial Roughness'].default_value=.45;mo=ns.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(bs.outputs[0],mo.inputs['Surface']);sm=n.new('GeometryNodeSetMaterial');sm.inputs['Material'].default_value=mat;L.new(rad.outputs['Curve'],sm.inputs['Geometry']);L.new(sm.outputs['Geometry'],out.inputs['Geometry']);old.hide_render=True;old.hide_set(True);scene.render.hair_type='STRIP';bpy.context.view_layer.update()
+00:54.313  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0152-layered-groom\matched-a-layered-native-groom-face.png'
+01:00.813  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0152-layered-groom\matched-a-layered-native-groom-body-face.png'
+01:19.485  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0152-layered-groom\matched-a-layered-native-groom-profile.png'
+01:35.547  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0152-layered-groom\matched-a-layered-native-groom-oblique.png'
+01:50.860  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0152-layered-groom\matched-a-layered-native-groom-back.png'
+資訊: 已儲存為「aevrynd-female-next-r0152-a-layered-native-groom.blend」
+R152_COMPLETE_LAYERED_CURRENT_WOMAN_HEAD_BODY_PREVIEW_DONE 101.33396077156067
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
