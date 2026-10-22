@@ -1,0 +1,87 @@
+{
+  "revision": "female-next-r0161",
+  "source": {
+    "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0161-source\\aevrynd-female-next-r0161-b-unit-corrected-membrane.blend",
+    "engineAlias": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0161-source\\aevrynd-female-next-r0161-b-unit-corrected-membrane.blend",
+    "sha256": "14368e03b80f09f7ffd22a5225e9478118fbfa29eac24b5344138970e598147b",
+    "bytes": 1075279,
+    "immutableCompleteAMeshLibrary": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0161-source\\aevrynd-female-next-r0161-a-contact-membrane-lids.blend",
+    "immutableCompleteAMeshLibrarySha256": "bc142a0b7ddb31e3d7d22fe876368c95e8aaf2bd30b3413eecc6beb1f687403d",
+    "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+    "actualPoseSource": "AFN161_ORIGINAL_NATIVE_MARGIN_POSE_REFERENCE",
+    "actualWallCorrectives": "AFN161B_ACTUAL_UNIT_CORRECTED_WALL_STATES",
+    "actualSkinVertices": 170227,
+    "actualSkinTriangles": 340446,
+    "status": "UNACCEPTED_CLOSED_OCULAR_ZERO_INNER_OUTER1392_CROSSINGS_KEEP139",
+    "scope": "Same complete woman.624 inner-wall ngons replaced by2728 fixed actual triangles,1549 wall vertices/366 shared boundary. Native contact-membrane authoring baked to24 discrete states; actual root-angle fibre direction independent of remote depth rows. B corrects verified native1mm setting clamp with scale100 and preserves A as immutable source; no appearance/blink/contact/runtime adoption."
+  },
+  "ARejectedState": {
+    "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0158-source\\aevrynd-female-next-r0158-b-preserved-material-data.blend",
+    "output": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0161-source\\aevrynd-female-next-r0161-a-contact-membrane-lids.blend",
+    "engineAlias": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0161-source\\aevrynd-female-next-r0161-a-contact-membrane-lids.blend",
+    "sha256": "bc142a0b7ddb31e3d7d22fe876368c95e8aaf2bd30b3413eecc6beb1f687403d",
+    "bytes": 34734123,
+    "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+    "actualPoseSource": "AFN161_ORIGINAL_NATIVE_MARGIN_POSE_REFERENCE",
+    "actualWallCorrectives": "AFN161_ACTUAL_WALL_CORRECTIVE_STATES",
+    "originalGazeAction": "AFN138_NATIVE_CURRENT_GAZE_DEMO",
+    "blinkAction": "AFN155_ACTUAL_MARGIN_BLINK_DEMO",
+    "unaccepted": true,
+    "secondsBeforePreview": 29.856547594070435
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "NO_ADOPTION_BROWN_CANTHUS_PROTRUSIONS_REMAIN",
+      "score": null,
+      "actualCompleteHeadBodyNeutralHalfViewed": true,
+      "AVisibleShardRegressionRejected": true,
+      "BUnitCorrectedShardsReducedNotAdoptedCompleteGain": true,
+      "secondLightBroadAuditStoppedAfterKnownFailure": true
+    },
+    "function": {
+      "status": "AUTHORED_DISCRETE_MEMBRANE_STATES_ROOT_ANGULAR_FOLLOW_ONLY",
+      "actualFrames": [
+        1,
+        9,
+        11,
+        24,
+        1
+      ],
+      "allSevenExplicitFrame1ResetRestorationM": 0,
+      "end24WallResidualM": 0.0010516427422016686,
+      "end24NotNaturalRestoration": true,
+      "nativeEditAfterInMemorySingleUserCopyM": 0.00020000338554382324,
+      "actualEditRestoreM": 0,
+      "BUsesLinkedACompleteMeshDataSingleUserNeededForNativeEditing": true,
+      "completeBlinkGazeDynamicExportWeightsNotAccepted": true
+    },
+    "contact": {
+      "status": "FAIL_INNER_OUTER_FINITE_CROSSINGS_DESPITE_CLOSED_OCULAR_ZERO",
+      "frame": 11,
+      "actualSkinTriangles": 340446,
+      "eyeProperCrossingPairs": 0,
+      "reflectProperCrossingPairs": 0,
+      "closedOcularZeroIsOnlyTriangleSurfaceAtThisPose": true,
+      "initialInnerOuterSATCandidates": 1509,
+      "finiteSegmentCorroboratedInnerOuterCrossingPairs": 1392,
+      "pointOnlyWitnessCandidates": 117,
+      "pointOnlyAndOtherUnmeasuredConditionsNotPassed": true,
+      "originalMixedClassificationPreserved": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0161-contact-membrane-lids\\actual-inner-wall-outer-skin-contact.json",
+      "correctedIndependentWitnesses": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0161-contact-membrane-lids\\inner-outer-finite-witness-correction.json",
+      "numericEpsilonM": 1e-12,
+      "signedMinimumM": null,
+      "wholeSelfFiniteContinuousOtherPosesNotAccepted": true
+    },
+    "runtime": {
+      "status": "NOT_EXPORTED_TESTED_OR_PROMOTED",
+      "runtimeAsset": null
+    }
+  },
+  "construction": "Actual fixed triangulation replaces old624 cavity ngons. True boundary targets and native contact membrane produce24 authored corrective states; root-angle lashes independent of posterior depth. B reads actual intended physical distances after lab unit conversion; no original model/rig/action shrink. Upper/lower group labels alone are not calibrated regional constitutive material.",
+  "dependencies": "B~1.075MB depends on complete immutable A~34.734MB,152 Mesh library and16textures; source size is not total project or runtime size. Working139 and external117 rollback retained separately. Linked A Meshes require Single User copy for raw editing.",
+  "rightsReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0161-contact-membrane-lids\\references-and-rights.json",
+  "noNewInstallNodeServerSubagentPaidRuntime": true,
+  "noFullCharacterAdoption": true
+}

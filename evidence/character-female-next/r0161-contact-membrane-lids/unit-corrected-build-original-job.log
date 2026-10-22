@@ -1,0 +1,13 @@
+00:08.844  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0161-source\aevrynd-female-next-r0161-a-contact-membrane-lids.blend"
+Traceback (most recent call last):
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0161-unit-corrected-membrane.py", line 48, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0161-unit-corrected-membrane.py", line 15, in main
+    with bpy.data.libraries.load(b['output'],link=True) as (src,dst):dst.meshes=names
+         ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Cannot load from the current blend file.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

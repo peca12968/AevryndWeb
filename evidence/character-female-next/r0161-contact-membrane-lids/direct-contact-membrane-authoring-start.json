@@ -1,0 +1,40 @@
+{
+  "UTC": "2026-10-22T18:58:22.286744+00:00",
+  "originalStartedUTC": "2026-10-22T18:53:17+00:00",
+  "actualWallVertices": 1549,
+  "actualFixedWallTriangles": 2728,
+  "originalNgonsReplaced": 624,
+  "upperRegionVertices": 691,
+  "lowerRegionVertices": 858,
+  "actualSolverSettings": {
+    "quality": 12,
+    "mass": 0.0010000000474974513,
+    "tension_stiffness": 30.0,
+    "compression_stiffness": 30.0,
+    "shear_stiffness": 15.0,
+    "bending_stiffness": 1.0,
+    "vertex_group_mass": "AFN161_TRUE_MARGIN_PINS",
+    "use_dynamic_mesh": false
+  },
+  "actualCollisionSettings": {
+    "use_collision": true,
+    "collision_quality": 8,
+    "distance_min": 0.0010000000474974513,
+    "use_self_collision": true,
+    "self_distance_min": 0.0010000000474974513
+  },
+  "actualColliders": [
+    {
+      "object": "AFN126_ORIGINAL_Eye_Eye_0",
+      "actualOuterThicknessM": 0.0010000000474974513,
+      "actualInnerThicknessM": 0.0010000000474974513
+    },
+    {
+      "object": "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0",
+      "actualOuterThicknessM": 0.0010000000474974513,
+      "actualInnerThicknessM": 0.0010000000474974513
+    }
+  ],
+  "approximation": "Native cloth membrane used solely to author finite numerical corrective states; not physiological tarsal tissue, natural dynamics or engine physics acceptance.",
+  "changedFailedPremise": "Fixed actual wall triangles and face contact solver replace per-vertex radial projection; true current boundary pins, no global push/cover/hiding/reduced action. Rigid fibre direction uses actual root angle independent of far depth rows."
+}

@@ -1,0 +1,120 @@
+{
+  "frame": 11,
+  "actualOuterSkinTriangles": 337718,
+  "actualInnerWallTriangles": 2728,
+  "properCrossingPairs": 1509,
+  "allSurfaceContactPairs": 3714,
+  "firstIndependentWitnesses": [
+    {
+      "retainedOuterTriangle": 2483,
+      "newInnerWallTriangle": 337729,
+      "outerPolygon": 2483,
+      "innerPolygon": 186759,
+      "sharedVertexCount": 1,
+      "finiteEdgeFaceWitnesses": [
+        {
+          "method": "skin-edge/eye-face",
+          "segment": [
+            0,
+            1
+          ],
+          "t": -0.0,
+          "u": 1.0,
+          "v": -0.0,
+          "worldPoint": [
+            0.03570421412587166,
+            -0.11723345518112183,
+            1.4575339555740356
+          ]
+        },
+        {
+          "method": "skin-edge/eye-face",
+          "segment": [
+            2,
+            0
+          ],
+          "t": 1.0,
+          "u": 1.0,
+          "v": -0.0,
+          "worldPoint": [
+            0.03570421412587166,
+            -0.11723345518112183,
+            1.4575339555740356
+          ]
+        },
+        {
+          "method": "eye-edge/skin-face",
+          "segment": [
+            0,
+            1
+          ],
+          "t": 0.9999999999999999,
+          "u": -0.0,
+          "v": -0.0,
+          "worldPoint": [
+            0.03570421412587166,
+            -0.11723345518112183,
+            1.4575339555740356
+          ]
+        },
+        {
+          "method": "eye-edge/skin-face",
+          "segment": [
+            1,
+            2
+          ],
+          "t": -0.0,
+          "u": -0.0,
+          "v": -0.0,
+          "worldPoint": [
+            0.03570421412587166,
+            -0.11723345518112183,
+            1.4575339555740356
+          ]
+        }
+      ]
+    },
+    {
+      "retainedOuterTriangle": 804,
+      "newInnerWallTriangle": 337855,
+      "outerPolygon": 804,
+      "innerPolygon": 186885,
+      "sharedVertexCount": 0,
+      "finiteEdgeFaceWitnesses": [
+        {
+          "method": "skin-edge/eye-face",
+          "segment": [
+            0,
+            1
+          ],
+          "t": 0.28723372717853257,
+          "u": 0.7232001206813606,
+          "v": 0.07290633941410958,
+          "worldPoint": [
+            0.04613176965369434,
+            -0.10930856259969472,
+            1.4630937106527147
+          ]
+        },
+        {
+          "method": "eye-edge/skin-face",
+          "segment": [
+            0,
+            1
+          ],
+          "t": 0.8029468813718128,
+          "u": 0.23057705523379565,
+          "v": 0.07658511606196783,
+          "worldPoint": [
+            0.04613001911356236,
+            -0.1093289462609002,
+            1.4631227419152562
+          ]
+        }
+      ]
+    }
+  ],
+  "sharedBoundariesNotUsedToOmitProperCrossings": true,
+  "numericEpsilonM": 1e-12,
+  "wholeSkinSelfFiniteContinuousUnaccepted": true
+}

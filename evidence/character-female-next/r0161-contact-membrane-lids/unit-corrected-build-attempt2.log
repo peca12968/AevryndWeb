@@ -1,0 +1,13 @@
+00:08.907  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0161-source\aevrynd-female-next-r0161-a-contact-membrane-lids.blend"
+Traceback (most recent call last):
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0161-unit-corrected-membrane.py", line 48, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0161-unit-corrected-membrane.py", line 19, in main
+    old=ob.data;ob.data=linked[old.name];replaced.append({'object':ob.name,'linkedImmutableMesh':old.name})
+                        ~~~~~~^^^^^^^^^^
+KeyError: 'AFN161_FIXED_CONTACT_TRIANGLES_SHARED_NATIVE_SKIN'
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

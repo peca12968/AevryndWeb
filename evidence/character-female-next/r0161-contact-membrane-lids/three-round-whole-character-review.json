@@ -1,0 +1,43 @@
+{
+  "actualRounds": [
+    "r159",
+    "r160",
+    "r161"
+  ],
+  "allCompleteHeadBodyActuallyViewed": true,
+  "actualImages": {
+    "r159": [
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0159-native-lid-wall\\matched-a-wall-closed-face.png",
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0159-native-lid-wall\\matched-a-wall-closed-body-face.png"
+    ],
+    "r160": [
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0160-ocular-surface-wall\\matched-a-surface-wall-closed-face.png",
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0160-ocular-surface-wall\\matched-a-surface-wall-closed-body-face.png"
+    ],
+    "r161": [
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0161-contact-membrane-lids\\matched-a-contact-lids-closed-face.png",
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0161-contact-membrane-lids\\matched-a-contact-lids-closed-body-face.png",
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0161-contact-membrane-lids\\matched-b-unit-contact-lids-closed-face.png",
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0161-contact-membrane-lids\\matched-b-unit-contact-lids-closed-body-face.png",
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0161-contact-membrane-lids\\matched-b-unit-contact-lids-neutral-face.png",
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0161-contact-membrane-lids\\matched-b-unit-contact-lids-half-face.png"
+    ]
+  },
+  "allFailuresAndUnregisteredTrialsIncluded": [
+    "159 original implementation/rest assertions and failed saved wall",
+    "160 Raycast schema failure, upright lashes and full-face crossings",
+    "161 A native sub-mm setting clamped to1mm, large visible shards",
+    "161 B compact library-save failures and same-round unit correction",
+    "161 initial self-contact classification mixed shared points, original preserved and independently corrected"
+  ],
+  "findings": [
+    "159 full cup plus faded displacement fails356Eye355Reflect and lashes remain spiky.",
+    "160 per-vertex actual-ray construction fails754Eye1929Reflect; upright lashes are worse despite all rays hit.",
+    "161 fixed actual wall triangles plus contact-membrane states changes construction. A shows severe shards; actual RNA settings expose1mm clamp. B uses exact scaled lab geometry and intended physical lengths, removes large shards, but brown protrusions and known inner/outer crossings remain.",
+    "B closed full Skin Eye/Reflect surface pairs0/0 are scoped evidence, not complete finite/continuous/self pass.1392 finite inner/outer intersections corroborated;117 other SAT candidates only have shared-point witnesses.",
+    "Neutral/body palette retained, hair remains coarse/glossy; full anatomy/clothes/actions/runtime remain incomplete."
+  ],
+  "adoptedCompleteAppearanceGain": false,
+  "wholeCharacterStagnationReset": false,
+  "workingWomanRetained139": true
+}

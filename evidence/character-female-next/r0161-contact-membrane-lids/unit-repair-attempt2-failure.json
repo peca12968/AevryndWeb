@@ -1,0 +1,8 @@
+{
+  "handle": 66761,
+  "terminal": "Immutable A Mesh library loads, but library loader mutates assigned names list into datablocks, breaking later string name dictionary",
+  "repair": "Pass a copied list(names) to loader, preserve original names list for exact name mapping; no geometry/solver setting change.",
+  "originalScript": "as-executed-unit-repair-attempt2.py",
+  "originalClockNotReset": true,
+  "observedUTC": "2026-10-22T19:04:04.948074+00:00"
+}

@@ -1,0 +1,170 @@
+{
+  "sourceSha256": "14368e03b80f09f7ffd22a5225e9478118fbfa29eac24b5344138970e598147b",
+  "frame": 11,
+  "actualSkinWorldHash": "21e1ee04708443e5050f9485d4a9882511c043ffc0942e79205cefd908ff51f5",
+  "originalSATProperCandidatePairsPreserved": 1509,
+  "finiteSegmentCorroboratedCrossingPairs": 1392,
+  "pointOnlyWitnessCandidates": 117,
+  "noFiniteWitnessCandidatesUnresolved": 0,
+  "firstCorroboratedFiniteCrossings": [
+    {
+      "actualOuterTriangle": 804,
+      "actualInnerTriangle": 337855,
+      "sharedVertices": 0,
+      "finiteWitnessSpanM": 3.5515802674963464e-05,
+      "witnesses": [
+        {
+          "method": "skin-edge/eye-face",
+          "segment": [
+            0,
+            1
+          ],
+          "t": 0.28723372717853257,
+          "u": 0.7232001206813606,
+          "v": 0.07290633941410958,
+          "worldPoint": [
+            0.04613176965369434,
+            -0.10930856259969472,
+            1.4630937106527147
+          ]
+        },
+        {
+          "method": "eye-edge/skin-face",
+          "segment": [
+            0,
+            1
+          ],
+          "t": 0.8029468813718128,
+          "u": 0.23057705523379565,
+          "v": 0.07658511606196783,
+          "worldPoint": [
+            0.04613001911356236,
+            -0.1093289462609002,
+            1.4631227419152562
+          ]
+        }
+      ]
+    },
+    {
+      "actualOuterTriangle": 3170,
+      "actualInnerTriangle": 337855,
+      "sharedVertices": 0,
+      "finiteWitnessSpanM": 0.0003306022396796701,
+      "witnesses": [
+        {
+          "method": "skin-edge/eye-face",
+          "segment": [
+            2,
+            0
+          ],
+          "t": 0.7127662728214674,
+          "u": 0.7232001206813606,
+          "v": 0.07290633941410958,
+          "worldPoint": [
+            0.04613176965369434,
+            -0.10930856259969472,
+            1.4630937106527147
+          ]
+        },
+        {
+          "method": "eye-edge/skin-face",
+          "segment": [
+            2,
+            0
+          ],
+          "t": 0.27059655430210566,
+          "u": 0.8131556740694444,
+          "v": 0.06557263267925345,
+          "worldPoint": [
+            0.046155453931741156,
+            -0.10913471761524612,
+            1.4628135056969471
+          ]
+        }
+      ]
+    },
+    {
+      "actualOuterTriangle": 1035,
+      "actualInnerTriangle": 337858,
+      "sharedVertices": 0,
+      "finiteWitnessSpanM": 0.00022916261054764205,
+      "witnesses": [
+        {
+          "method": "eye-edge/skin-face",
+          "segment": [
+            0,
+            1
+          ],
+          "t": 0.18135850982962165,
+          "u": 0.4886497277151496,
+          "v": 0.17022853991040926,
+          "worldPoint": [
+            0.0476005941987817,
+            -0.10669723789459835,
+            1.4606982978240122
+          ]
+        },
+        {
+          "method": "eye-edge/skin-face",
+          "segment": [
+            2,
+            0
+          ],
+          "t": 0.7820766796057147,
+          "u": 0.048697715992788125,
+          "v": 0.2585657383723039,
+          "worldPoint": [
+            0.04750081665418318,
+            -0.10690260984804949,
+            1.4607178504300422
+          ]
+        }
+      ]
+    },
+    {
+      "actualOuterTriangle": 621,
+      "actualInnerTriangle": 337859,
+      "sharedVertices": 0,
+      "finiteWitnessSpanM": 0.00024149910817949292,
+      "witnesses": [
+        {
+          "method": "skin-edge/eye-face",
+          "segment": [
+            0,
+            1
+          ],
+          "t": 0.8660558211906829,
+          "u": 0.020809746529193228,
+          "v": 0.6500253825702161,
+          "worldPoint": [
+            0.046225640209867275,
+            -0.1091809165064521,
+            1.4625239443261981
+          ]
+        },
+        {
+          "method": "skin-edge/eye-face",
+          "segment": [
+            1,
+            2
+          ],
+          "t": 0.9506395227712732,
+          "u": 0.11469685134343345,
+          "v": 0.7099652343879782,
+          "worldPoint": [
+            0.046154633686952794,
+            -0.10910546683263919,
+            1.4627420893231076
+          ]
+        }
+      ]
+    }
+  ],
+  "numericPointDistinctnessM": 1e-12,
+  "sameSATPredicateAndSourceGeometry": true,
+  "originalMixedClassificationNotOverwritten": "actual-inner-wall-outer-skin-contact.json",
+  "reason": "Original len(hits)>=2 check counted repeated reports of the SAME shared point. It is insufficient for finite segment corroboration. This report requires distinct world witness points at unchanged numerical EPS; point/unresolved cases are not silently passed.",
+  "relatedFailureStillConfirmed": true,
+  "wholeFiniteSelfContinuousNotAccepted": true,
+  "seconds": 1.0539970397949219
+}
