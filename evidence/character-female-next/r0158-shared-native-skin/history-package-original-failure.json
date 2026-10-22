@@ -1,0 +1,10 @@
+{
+  "originalJob": 37667,
+  "terminalExitCode": 1,
+  "lastStep": "git diff --cached --check exit2 after exact source/index and full LFS verification",
+  "verifiedCause": "Existing CRLF checkout .gitattributes added with autocrlf=false staged CR at line ends; actual index showed old prefix rewritten. Normalize only that attribute file to original committed LF, retaining original rules plus2 new rules.",
+  "existingCRLFCount": 58,
+  "productionFilesOrOriginalLogsAltered": false,
+  "originalScriptPreserved": "as-executed-history-package-attempt1.py",
+  "noRecloneOrModelRebuild": true
+}

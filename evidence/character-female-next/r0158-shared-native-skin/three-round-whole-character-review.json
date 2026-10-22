@@ -1,0 +1,42 @@
+{
+  "actualRounds": [
+    "r156",
+    "r157",
+    "r158"
+  ],
+  "allCompleteHeadBodyActuallyViewed": true,
+  "imagesByRound": {
+    "r156": [
+      "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0156-anatomical-blink\\matched-a-coupled-closed-face.png",
+      "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0156-anatomical-blink\\matched-a-coupled-closed-body-face.png"
+    ],
+    "r157": [
+      "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0157-outer-lid-retopology\\matched-a-outer-lid-closed-face.png",
+      "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0157-outer-lid-retopology\\matched-a-outer-lid-closed-body-face.png"
+    ],
+    "r158": [
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0158-shared-native-skin\\matched-a-shared-closed-body-face.png",
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0158-shared-native-skin\\matched-b-shared-closed-face.png",
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0158-shared-native-skin\\matched-b-shared-closed-body-face.png",
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0158-shared-native-skin\\matched-b-shared-neutral-face.png",
+      "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0158-shared-native-skin\\matched-b-shared-half-face.png"
+    ]
+  },
+  "findings": [
+    "r156 unchanged-source coupled field retains broad dark/grey closed-lid band; original local12 Eye failures remain that version only.",
+    "r157 real outer tissue reconstruction visibly removes broad dark band but canthus lashes pinch/spike; all536 seam points doubled, raw coordinate edit ignored and19 local Reflect crossings.",
+    "r158 explicit shared native Skin removes duplicate seam construction and enables actual raw edit/restoration. A saved materials/attributes regression shows body texture blocks; B restores original effective material IDs and shader attributes without geometry/UV or palette/light changes.",
+    "B preserves promising r157 closed-tissue form; no additional adopted whole-character appearance gain. Canthus lash spikes and glossy coarse hair remain. Native edit pass does not complete blink; same19 local Reflect crossings persist."
+  ],
+  "allFailedAndUnregisteredAttemptsIncluded": [
+    "workspace population failure",
+    "native build dtype error",
+    "A material-data regression",
+    "B repair state",
+    "readback stale RNA after alias reopen; minimal alias-only verifier resolved"
+  ],
+  "completeCharacterAppearanceAdopted": false,
+  "wholeCharacterStagnationReset": false,
+  "workingWomanRemains139": true,
+  "nextAction": "Rebuild actual finite inner eyelid wall/rim and affected attachment domain on the verified editable connected B Skin, preserving promising outer shape, original neutral skin and body. No overlay caps/global displacement/action shrink/tolerance changes. Hair remains a major unresolved visible defect."
+}

@@ -1,0 +1,13 @@
+00:09.734  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0157-source\aevrynd-female-next-r0157-a-outer-lid-topology.blend"
+Traceback (most recent call last):
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0158-shared-native-skin.py", line 108, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0158-shared-native-skin.py", line 18, in main
+    oldRef=a.geometry(reference)[0];z=np.load(R/'Evidence/character-female-next/r0157-outer-lid-retopology/authored-outer-lid-patch.npz');boundary=z['originalBoundaryVertices'];representative=np.arange(len(V),'i4');pairRows=[];seen=set()
+                                                                                                                                                                                                ~~~~~~~~~^^^^^^^^^^^^^
+TypeError: arange() not supported for inputs with DType <class 'numpy.dtypes.StrDType'>.
+資訊: Read library: 'D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', '//..\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
