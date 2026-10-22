@@ -1,0 +1,15 @@
+{
+  "UTC": "2026-10-22T01:00:42.852117+00:00",
+  "originalRoundStartedUTC": "2026-10-22T00:27:30+00:00",
+  "originalHandle": 47332,
+  "originalVerifierSha256": "56cb6a1d723f19e6fc5de87232c04d8c7de71f8f963f5259b91570b070b79d7d",
+  "originalFailure": "Exact derived triangle-array assertion before contact. Original log and as-executed verifier retained.",
+  "diagnostic": "gaze-topology-mismatch-diagnostic.json",
+  "observedFiveFrameScope": "Five sampled original gaze poses show identical evaluated polygon loops/counts and all actual vertex differences below the unchanged2e-6m bound; Skin6.188917e-8m, lash4.734524e-9m, wet5.734125e-9m, ocular geometry0. Skin derived triangles differ92/137 rows. This does not establish all49 poses or contact.",
+  "repair": "Compare exact underlying evaluated polygon loops/counts and every actual vertex plus native eye controls in all49 original gaze frames. Record derived triangulation differences. Require genuine baseline ocular movement. Use actual reevaluated candidate triangles for contact.",
+  "sameCandidateNoSourceModification": true,
+  "numericVertexBoundM": 2e-06,
+  "numericContactPredicateEpsilonM": 1e-12,
+  "noToleranceRelaxed": true,
+  "notAProductionMethodOrRoundRestart": true
+}

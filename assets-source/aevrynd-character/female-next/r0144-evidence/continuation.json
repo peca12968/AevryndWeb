@@ -1,0 +1,251 @@
+{
+  "revision": "female-next-r0144",
+  "decision": "REJECT_COMPLETE_CURRENT_SKIN_BLINK_RELATED_OCULAR_REFLECT_SURFACE_FAILURE_KEEP_R139",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0139-source\\aevrynd-female-next-r0139-a-native-lid-follow.blend",
+    "sha256": "5128a461a011899c77b275055ea3a8a94ca278873665dd08f72a6003d4a37bb9",
+    "bytes": 136089229,
+    "status": "RETAIN_R126_STATIC_LOOK_ADOPT_R139_NATIVE_COUPLED_GAZE_OPERATION",
+    "scope": "Same complete woman retains r126 scoped neutral static face/head/skin appearance and now adopts only actual native fixed-head eye/lid/lash/wet-line gaze operation in recorded original yaw20/pitch10 action/manual scope. R138 socket reconstruction retained. Not complete avatar anatomy/eyes-layer anatomy/finite contacts/hair/clothes/actions/runtime/rights/user acceptance.",
+    "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualFaceControls": "AFN138_ACTUAL_CURRENT_GAZE_RIG / AFN138_EYE_L,R drive four AFN139 upper/lower lid bones, actual current AFN126 skin and original lashes/wet line. AFN138_NATIVE_CURRENT_GAZE_DEMO frames1..49 at24fps. No actual current blink/jaw/head tracking/body/clothes rig operation accepted.",
+    "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope. R139 adds scoped gaze function only; no new neutral appearance adoption.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false,
+    "originalArtist": "DarkNik / original NikZava284",
+    "assetLicense": "CC-BY4.0, attribution and modifications retained",
+    "acceptedCompleteScopedOperations": [
+      "Recorded fixed-head native coupled ocular/lid/lash/wet-line gaze at original yaw +/-20deg and pitch +/-10deg, independent actual operation and neutral restoration."
+    ],
+    "scopedGazeOperationAccepted": true,
+    "allCharacterOperationsComplete": false,
+    "staticAppearanceBaseline": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-b-source-section-neck.blend",
+      "sha256": "798c2496aadac717d967362c58afa88d38ceac584248c85f6d86afc618253631",
+      "bytes": 135305654,
+      "status": "ADOPT_SCOPED_STATIC_COMPLETE_FACE_APPEARANCE_GAIN",
+      "scope": "Same complete woman. Adopt only static actual complete-character face/head form and skin-source appearance across recorded matched views/second light; all controls, hair physics, finite contacts/runtime/rights/user gates open.",
+      "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "actualFaceControls": "No controls connected to new visible head. AFN59_FACE_CONTROLS/blink_left/right retained on hidden r117 rollback only; actual new skin motion0.",
+      "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope.",
+      "completeOperationAccepted": false,
+      "femaleUserAccepted": false,
+      "originalArtist": "DarkNik / original NikZava284",
+      "assetLicense": "CC-BY4.0, attribution and modifications retained"
+    }
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0144-source\\aevrynd-female-next-r0144-a-current-skin-blink.blend",
+      "sha256": "79dd3271960b4712e542123870ad03b0e6831bcdebb80953a4642c03b8359776",
+      "bytes": 136124453,
+      "status": "REJECT_COMPLETE_BLINK_OPERATION_RELATED_RAW_OCULAR_SURFACE_FAILURE",
+      "scope": "One full same woman with native current Skin angular blink and actual original lash/wet-line following before retained r139 gaze. Actual edits/restore work, but related raw ocular surface failure prevents complete blink acceptance. No new neutral appearance, full anatomy, natural timing, finite/self/continuous or runtime adoption."
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "NEUTRAL_COMPLETE_APPEARANCE_RETAINED_NO_NEW_STATIC_GAIN_BLINK_SHAPE_PROMISING_UNACCEPTED",
+      "evidence": [
+        "r0144-complete-head-body-comparison.png",
+        "r0144-profile-back-comparison.png",
+        "r0144-oblique-comparison.png",
+        "r0144-actual-blink-key-poses.png",
+        "r0144-sampled-blink-review.gif",
+        "matched-closed-blink-profile.png",
+        "matched-first-failure-blink-f007-face.png",
+        "first-blink-failure-independent-witness.json"
+      ],
+      "wholeCharacterScore": null
+    },
+    "function": {
+      "status": "ACTUAL_CURRENT_BLINK_EDIT_RESTORE_AND_GAZE49_PRESERVED_BUT_RELATED_CONTACT_FAILURE_PREVENTS_COMPLETE_OPERATION_ADOPTION",
+      "evidence": "minimum-saved-current-skin-blink-readback.json",
+      "newCompleteUsableOperationAccepted": false,
+      "naturalBlinkTimingAccepted": false,
+      "originalGaze49PreservedWithinUnchangedEvaluationBound": true,
+      "derivedTriangleArrayEqualityNotClaimed": true
+    },
+    "contact": {
+      "status": "FAIL_RELATED_EVALUATED_SKIN_OCULAR_REFLECT_SURFACE_CROSSING_AT_FRAME7",
+      "evidence": [
+        "actual-blink-ocular-surface-contact.json",
+        "first-blink-failure-independent-witness.json"
+      ],
+      "completedDiscreteCases": 14,
+      "requestedDiscreteCases": 34,
+      "firstFailure": {
+        "pose": "native-blink-007",
+        "frame": 7,
+        "actualControls": {
+          "L": 0.84375,
+          "R": 0.84375
+        },
+        "object": "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0",
+        "actualSkinFaces": 340174,
+        "actualEyeFaces": 980,
+        "actualSkinWorldHash": "7a5f6d332e9fe7664201ba0ff39a71a00e5768d0b861a6fdad049556ef11554d",
+        "actualEyeWorldHash": "3b4d6120273a04dc58c08d631d0552d5820be31f0707c33aee62af785b43297e",
+        "aabbCandidatePairs": 15444,
+        "properTriangleSurfaceCrossingPairs": 10,
+        "allTriangleSurfaceContactPairs": 10,
+        "coplanarContactPairs": 0,
+        "degenerateCandidatePairs": 0,
+        "firstProperSkinEyeFacePairs": [
+          [
+            339019,
+            656
+          ],
+          [
+            339019,
+            956
+          ],
+          [
+            339019,
+            957
+          ],
+          [
+            339021,
+            957
+          ],
+          [
+            339021,
+            960
+          ],
+          [
+            339021,
+            961
+          ],
+          [
+            339019,
+            962
+          ],
+          [
+            339021,
+            962
+          ],
+          [
+            339021,
+            963
+          ],
+          [
+            339021,
+            966
+          ]
+        ],
+        "allActualTriangleFacesCoveredNotVertexSamples": true
+      },
+      "numericPredicateEpsilonM": 1e-12,
+      "globalSignedMinimumM": null,
+      "finiteSelfOtherLayersAlphaAndContinuousAccepted": false
+    },
+    "runtime": {
+      "status": "NOT_EXPORTED_NOT_TESTED_NOT_PROMOTED_R139_DEVELOPMENT_UNCHANGED",
+      "runtimeAsset": null,
+      "retainedPreviousDevelopmentAsset": {
+        "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\development\\r0139\\aevrynd-female-next-r0139-gaze-development.glb",
+        "sha256": "851089d2373991f5082b5aa0d7e0f8d52072a7ee2126b8293b93dc97174a8c4e",
+        "bytes": 55123412,
+        "status": "DEVELOPMENT_GLB_GEOMETRY_AND49_POSES_QUALIFIED_ACTUAL_ENGINE_UNTESTED_NOT_PROMOTED",
+        "formalPromotionApproved": false
+      },
+      "websitePromotion": false
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 18,
+  "counterMeaning": "Legacy compatibility counter tracks consecutive actual rounds WITHOUT ADOPTED COMPLETE APPEARANCE gain; this functional adoption does not reset it.",
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteAppearanceGainLowerBound": 18,
+  "productionRoundsSinceLastWholeCharacterReview": 1,
+  "nextWholeReviewAfterFurtherProductionRounds": 2,
+  "lastReviewedProductionWindow": [
+    "r141",
+    "r142",
+    "r143"
+  ],
+  "lastWholeCharacterReview": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0143-authored-section-volumes\\three-round-whole-character-review.json",
+  "femaleUserAcceptance": false,
+  "wholeCharacterStagnationReset": false,
+  "foundationChangeRequiredNextProduction": true,
+  "stoppedMethodsInheritedFrom": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0143-authored-section-volumes\\continuation.json",
+  "allEarlierRetirementsRemainEffective": true,
+  "stoppedMethods": [
+    "Do not continue the unchanged r144 angular transfer of the actual Skin field over a rigid-gaze ocular cavity: two moving cavity wall triangles cross the reflect layer. One actual round, not an invented two-round family retirement. Reuse promising outer shape/native controls only with changed moving-wall construction evidence."
+  ],
+  "liveJobHandles": [],
+  "originalTerminalJobs": [
+    {
+      "handle": 51931,
+      "job": "pre-save authoring attempt1",
+      "log": "current-skin-blink-build-attempt1.log",
+      "terminal": "TypeError, no complete source",
+      "notRestartedForTimeout": true
+    },
+    {
+      "handle": 21492,
+      "job": "pre-save authoring attempt2",
+      "log": "current-skin-blink-build-attempt2.log",
+      "terminal": "TypeError, no complete source",
+      "notRestartedForTimeout": true
+    },
+    {
+      "handle": 10813,
+      "job": "pre-save attachment attempt3",
+      "log": "current-skin-blink-build-attempt3.log",
+      "terminal": "Neutral restoration assertion, no complete source",
+      "notRestartedForTimeout": true
+    },
+    {
+      "handle": 81699,
+      "job": "one full saved candidate and matched motion",
+      "log": "current-skin-blink-build-attempt4.log",
+      "terminal": "R144_ACTUAL_CURRENT_SKIN_BLINK_COMPLETE_HEAD_BODY_MOTION_PREVIEW_DONE",
+      "notRestartedForTimeout": true
+    },
+    {
+      "handle": 47332,
+      "job": "original independent verifier",
+      "log": "independent-current-blink-readback.log",
+      "terminal": "Triangle array assertion before contact",
+      "notRestartedForTimeout": true
+    },
+    {
+      "handle": 48149,
+      "job": "original topology diagnostic",
+      "log": "gaze-topology-diagnostic.log",
+      "terminal": "R144_GAZE_TOPOLOGY_MISMATCH_DIAGNOSTIC_DONE",
+      "notRestartedForTimeout": true
+    },
+    {
+      "handle": 48648,
+      "job": "independent verifier attempt2",
+      "log": "independent-current-blink-readback-attempt2.log",
+      "terminal": "Empty original material slot serialization error before contact",
+      "notRestartedForTimeout": true
+    },
+    {
+      "handle": 17158,
+      "job": "independent verifier attempt3",
+      "log": "independent-current-blink-readback-attempt3.log",
+      "terminal": "R144_INDEPENDENT_ACTUAL_BLINK_RESTORE_GAZE49_AND_DEFORMED_SURFACE_CHECK_DONE",
+      "notRestartedForTimeout": true
+    },
+    {
+      "handle": 27421,
+      "job": "minimum first failure reproduction",
+      "log": "first-blink-failure-witness.log",
+      "terminal": "R144_FIRST_FAILURE_INDEPENDENT_FINITE_EDGES_REPRODUCED",
+      "notRestartedForTimeout": true
+    }
+  ],
+  "previousGoalTurnClassification": "Progress in prompt maintenance only: v46 project prompt/entries/pending handoff committed and remote verified343927a. No model production, judgment, counter or acceptance change during that turn.",
+  "originalProductionPreviousClassification": "Progress: original actual-root anatomical section-volume curves authored and evaluated on the full woman; complete hairstyle rejected, independent native edits restore and r139 protected data remains exact. Due whole review141/142/143, including original failed r142 component attempt, completed. Evidence retires formula-driven whole-head rest-shape envelopes and changes next construction to genuine artist root/guide/clump/head-surface pairing. No adopted appearance or new complete usable operation.",
+  "lastGoalTurnClassification": "Progress: completed original actual current-skin blink construction, full head/body/intermediate/closed/restored previews and independent operation. Exact49-pose gaze preservation and actual control restoration verified; new contact evidence rejects blink and locates two deforming right cavity-wall triangles with10 independent edge/face witnesses. Changes next direct construction to moving anatomical lid inner-wall/outer-lid topology, not another angle/fade variant. No adopted complete appearance or new complete usable operation.",
+  "progressKind": "DIRECT_ACTUAL_CURRENT_SKIN_BLINK_REJECTED_BY_CORROBORATED_MOVING_CAVITY_SURFACE_FAILURE",
+  "nextAction": "Continue SAME unique complete working r139 woman D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0139-source\\aevrynd-female-next-r0139-a-native-lid-follow.blend. Preserve adopted r126 static face/skin and r139 actual coupled ocular/lid/lash/wet-line gaze, original +/-20 yaw and +/-10 pitch, and unchanged r139 development GLB. Reconcile original r144 saved candidate and all authoring/verifier attempts without rebuilding it. R144 directly closes the actual displayed Skin; independent actual unilateral control,17 finite blink frames, neutral restore and original49 gaze preservation work, but frame7 blink0.84375 produces10 independently corroborated proper crossings between two RIGHT r138 cavity-wall triangles and original EyeScleraReflect. No complete blink adoption. Preserve promising outer closed form; next DIRECTLY REBUILD THE MOVING PALPEBRAL INNER-WALL/OUTER-LID CONNECTION AND TOPOLOGY on the current woman using actual margin, canthus, cavity and aspherical optical surfaces as explicit anatomical dependencies. The original cavity was built for rigid gaze and was not a verified deformable lid interior; nonuniform angular transfer stretches it into the ocular layer. Inspect the saved actual witness triangles and reliable multi-angle anatomy before construction; do not merely alter fade/support/angle/coefficient, add more closing plates, scale eyes, remove inner-wall faces or perform ungrounded clearance pushing. Any justified topology/thickness reconstruction invalidates affected old contact claims and requires actual full neutral/closed/intermediate head-body views plus independent operation/restore and related all-face contact. One default complete candidate, bounded support/early preview, no sweeps. Full hair artist root/guide/clump construction remains unresolved: Ellie/Eve originals did not qualify a replacement; Bystedt CC-BY-SA version is unestablished, reference only. All r140/141/142/143 hair construction retirements and earlier closing-plate retirements remain effective; no whole-groom affine/free-path/global-envelope/parameter retry. Appearance no-adopt lower18, cadence1, next whole review after2, last window141/142/143; function/support/maintenance/archive cannot reset appearance stagnation. Keep direct visible face/hair work at least2 of every3 actual rounds. Full anatomy, eye/skin/layers/body/clothes/actions, natural hair turn-stop-wind-settle, finite/self/continuous contacts, actual Aevrynd rendering/materials/LOD/performance, full rights and explicit female acceptance remain required. Goal active, no male/formal promotion.",
+  "goal": "ACTIVE_NOT_COMPLETE"
+}

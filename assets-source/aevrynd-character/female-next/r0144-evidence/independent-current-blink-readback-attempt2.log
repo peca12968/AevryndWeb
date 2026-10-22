@@ -1,0 +1,13 @@
+00:55.375  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0139-source\aevrynd-female-next-r0139-a-native-lid-follow.blend"
+01:14.844  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0144-source\aevrynd-female-next-r0144-a-current-skin-blink.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0144-current-skin-blink.py", line 71, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0144-current-skin-blink.py", line 37, in main
+    display={n:{'hideRender':bpy.data.objects[n].hide_render,'type':bpy.data.objects[n].type,'materials':[m.name for m in bpy.data.objects[n].data.materials]} for n in names};a.b.u.v.image.__globals__['m'].rig.shade.settings();bpy.context.view_layer.update();assert display=={n:{'hideRender':bpy.data.objects[n].hide_render,'type':bpy.data.objects[n].type,'materials':[m.name for m in bpy.data.objects[n].data.materials]} for n in names}
+                                                                                                          ^^^^^^
+AttributeError: 'NoneType' object has no attribute 'name'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
