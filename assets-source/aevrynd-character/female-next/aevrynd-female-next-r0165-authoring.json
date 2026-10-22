@@ -1,0 +1,93 @@
+{
+  "revision": "female-next-r0165",
+  "sources": {
+    "a": {
+      "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0152-source\\aevrynd-female-next-r0152-a-layered-native-groom.blend",
+      "output": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0165-source\\aevrynd-female-next-r0165-a-native-hair-optics.blend",
+      "engineAlias": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0165-source\\aevrynd-female-next-r0165-a-native-hair-optics.blend",
+      "sha256": "e22859b535e72502a6e9f3cd8ade671e12f20583fff64253560089cb45a39e2a",
+      "bytes": 5791618,
+      "actualHair": "AFN126_ORIGINAL_Hair_Hair_0",
+      "status": "REJECT_OPTICAL_SOURCE_IOR_ONLY"
+    },
+    "b": {
+      "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0165-source\\aevrynd-female-next-r0165-a-native-hair-optics.blend",
+      "output": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0165-source\\aevrynd-female-next-r0165-b-intrinsic-native-groom.blend",
+      "engineAlias": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0165-source\\aevrynd-female-next-r0165-b-intrinsic-native-groom.blend",
+      "sha256": "7c944b8fef9f8f2f7a6f07be06e283fc3d64a48879f4b4607a540801a33cc00a",
+      "bytes": 24492906,
+      "actualHair": "AFN165_ACTUAL_INTRINSIC_NATIVE_RENDER_GROOM",
+      "status": "REJECT_INTRINSIC_PATH_SHEET_LOOK_AND_UNPROVEN_ROOT_OWNERSHIP"
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECT_BOTH_COMPLETE_APPEARANCES",
+      "score": null,
+      "evidence": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0165-native-hair-construction\\manual-visual-review.json",
+      "actualMatchedHeadBodyProfileBackViewed": true,
+      "secondLightNotExpandedAfterClearFailure": true
+    },
+    "function": {
+      "status": "ORIGINAL49_GAZE_PRESERVED_AND_LOCAL_NATIVE_POINT_SKIN_BINDING_EDIT_RESTORE_ONLY",
+      "independentlyReopenedSources": [
+        "input152",
+        "A",
+        "B"
+      ],
+      "allSevenRawMeshesUVAnd49OriginalEvaluatedGazePosesEqual": true,
+      "nativeStrands": 14890,
+      "nativePoints": 729610,
+      "actualNativeEdits": {
+        "point1mmEditMaximumMovementM": 0.000999998301267624,
+        "allRootsMovementFromInteriorPointEditM": 0.0,
+        "pointEditRestoreMaximumM": 0.0,
+        "actualSkinVertexProbe": 147972,
+        "actualSkinEditMaximumGroomMovementM": 0.02249674103115215,
+        "actualSkinEditRestoreMaximumM": 0.0,
+        "editingLinkedSkinRequiredSingleUserCopy": true,
+        "originalLibraryMeshPointerRestored": true,
+        "notCompleteHeadMotionOrNaturalDynamics": true
+      },
+      "actualEvaluatedRadiusRangeM": [
+        6.000000212225132e-06,
+        3.9999998989515007e-05
+      ],
+      "explicitRootArithmeticMaximumErrorM": 2.1947407117038996e-07,
+      "sameRootArithmeticNotAnatomicalOwnershipProof": true,
+      "savedVsActualCaptureSettingsDifferAndAreRecordedSeparately": true,
+      "sourceFieldsNotRenderDepsgraphOrCauseProof": true,
+      "fullHeadBodyMotionNaturalHairTurnStopWindSettleUnaccepted": true
+    },
+    "contact": {
+      "status": "UNACCEPTED_CONTROL_POLYGON_BODY_WITNESSES_AND_ROOT_PATH_SEMANTICS_FAILURE",
+      "allNativeCurves": 14890,
+      "controlCurvesInspected": 29,
+      "strongAuthoringChordBodyIntersections": 8,
+      "actualBodyTriangles": 340174,
+      "firstWitnessesReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0165-native-hair-construction\\minimum-native-groom-body-witnesses.json",
+      "notExactRenderedSplineFiniteOccupancyOrGlobalCount": true,
+      "rootSourceEndpointGapQuantilesM": [
+        3.821875452558743e-06,
+        0.01773557998239994,
+        0.06035633683204651,
+        0.159521222114563
+      ],
+      "signedMinimumM": null,
+      "finiteSelfAllRenderStrandsRootsAndContinuousUnaccepted": true
+    },
+    "runtime": {
+      "status": "NOT_EXPORTED_ENGINE_TESTED_OR_PROMOTED",
+      "runtimeAsset": null
+    }
+  },
+  "currentConstructionInputOnly": {
+    "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0152-source\\aevrynd-female-next-r0152-a-layered-native-groom.blend",
+    "sha256": "6d14dcca0c0a3dc2a8be613d92377a663522dbb8d31a3f26ec894132723f1480",
+    "failed152GroomDisabledNotAdopted": true
+  },
+  "dependencies": "Immutable current152 Mesh library and16textures. Other current Meshes linked; Single User needed for native Skin editing. Native B hair curves and A object material override are local editable. Source size does not include shared libraries or imply runtime size.",
+  "rightsReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0165-native-hair-construction\\references-and-rights.json",
+  "rejectedNotAdopted": true,
+  "noInstallNewNodeServerSubagentOrPaidRuntime": true
+}
