@@ -1,0 +1,12 @@
+00:00.375  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0139-source\aevrynd-female-next-r0139-a-native-lid-follow.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\probe-female-next-r0151-native-parent-edit.py", line 22, in <module>
+    try:main()
+        ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\probe-female-next-r0151-native-parent-edit.py", line 19, in main
+    np.savez_compressed(E/'native-parent-key-edit-capability.npz',before=before,edited=after,restored=restored);assert parentMove>.001 and childMove>1e-5 and rootMove<3e-6 and restore<3e-6,'Native key writes did not update parent/child path cache or restore'
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Native key writes did not update parent/child path cache or restore
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

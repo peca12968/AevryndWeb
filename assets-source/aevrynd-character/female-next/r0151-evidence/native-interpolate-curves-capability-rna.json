@@ -1,0 +1,62 @@
+{
+  "available": true,
+  "bl_idname": "GeometryNodeInterpolateCurves",
+  "inputs": [
+    {
+      "name": "Guide Curves",
+      "identifier": "Guide Curves",
+      "type": "NodeSocketGeometry",
+      "default": "None"
+    },
+    {
+      "name": "Guide Up",
+      "identifier": "Guide Up",
+      "type": "NodeSocketVector",
+      "default": "<bpy_float[3], NodeSocketVector.default_value>"
+    },
+    {
+      "name": "Guide Group ID",
+      "identifier": "Guide Group ID",
+      "type": "NodeSocketInt",
+      "default": "0"
+    },
+    {
+      "name": "Points",
+      "identifier": "Points",
+      "type": "NodeSocketGeometry",
+      "default": "None"
+    },
+    {
+      "name": "Point Up",
+      "identifier": "Point Up",
+      "type": "NodeSocketVector",
+      "default": "<bpy_float[3], NodeSocketVector.default_value>"
+    },
+    {
+      "name": "Point Group ID",
+      "identifier": "Point Group ID",
+      "type": "NodeSocketInt",
+      "default": "0"
+    },
+    {
+      "name": "Max Neighbors",
+      "identifier": "Max Neighbors",
+      "type": "NodeSocketInt",
+      "default": "4"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "Curves",
+      "type": "NodeSocketGeometry"
+    },
+    {
+      "name": "Closest Index",
+      "type": "NodeSocketInt"
+    },
+    {
+      "name": "Closest Weight",
+      "type": "NodeSocketFloat"
+    }
+  ]
+}

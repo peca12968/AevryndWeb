@@ -1,0 +1,13 @@
+00:00.343  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0139-source\aevrynd-female-next-r0139-a-native-lid-follow.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\probe-female-next-r0151-native-parent-edit.py", line 22, in <module>
+    try:main()
+        ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\probe-female-next-r0151-native-parent-edit.py", line 15, in main
+    before=paths(ob,ps);assert np.isfinite(before).all();keys=ps.particles[0].hair_keys;key=keys[4];original=key.co_object(ob,mod,ps.particles[0]);target=original+Vector((.012,0,0));key.co_object_set(ob,mod,ps.particles[0],target);ob.update_tag();mesh.update();bpy.context.view_layer.update();after=paths(ob,ps)
+                                                                                            ~~~~^^^
+IndexError: bpy_prop_collection[index]: index 4 out of range, size 4
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+Array iterator out of range: (index 4)
+
+Blender quit

@@ -1,0 +1,4 @@
+{
+  "UTC": "2026-10-22T04:56:37.343723+00:00",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Download\\Aevrynd\\scripts\\character-next\\probe-female-next-r0151-native-parent-edit.py\", line 22, in <module>\n    try:main()\n        ~~~~^^\n  File \"D:\\Download\\Aevrynd\\scripts\\character-next\\probe-female-next-r0151-native-parent-edit.py\", line 15, in main\n    before=paths(ob,ps);assert np.isfinite(before).all();keys=ps.particles[0].hair_keys;key=keys[4];original=key.co_object(ob,mod,ps.particles[0]);target=original+Vector((.012,0,0));key.co_object_set(ob,mod,ps.particles[0],target);ob.update_tag();mesh.update();bpy.context.view_layer.update();after=paths(ob,ps)\n                                                                                            ~~~~^^^\nIndexError: bpy_prop_collection[index]: index 4 out of range, size 4\n"
+}

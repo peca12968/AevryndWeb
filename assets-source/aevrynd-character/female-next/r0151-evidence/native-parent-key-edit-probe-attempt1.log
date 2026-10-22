@@ -1,0 +1,12 @@
+00:00.359  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0139-source\aevrynd-female-next-r0139-a-native-lid-follow.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\probe-female-next-r0151-native-parent-edit.py", line 20, in <module>
+    try:main()
+        ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\probe-female-next-r0151-native-parent-edit.py", line 12, in main
+    assert len(ps.particles)==16 and 'co_object_set' in funcs,'No writable native current-root parent API'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: No writable native current-root parent API
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
