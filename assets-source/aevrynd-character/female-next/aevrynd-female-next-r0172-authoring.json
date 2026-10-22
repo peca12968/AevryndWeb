@@ -1,0 +1,95 @@
+{
+  "revision": "female-next-r0172",
+  "source": {
+    "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0172-source\\aevrynd-female-next-r0172-a-current-world-comb.blend",
+    "engineAlias": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0172-source\\aevrynd-female-next-r0172-a-current-world-comb.blend",
+    "sha256": "9904019afea209b845e82b9cceeadbe71ef4e613833d34102952fc4b4dca37a9",
+    "bytes": 7541468,
+    "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+    "actualHair": "AFN172_ACTUAL_WORLD_COMBED_FIXED_BIRTH_GROOM",
+    "actualGuides": "AFN172_DIRECT_CURRENT_WORLD_EDITABLE_GUIDES",
+    "actualRoots": "AFN171_FIXED_ACTUAL_SKIN_ROOTS",
+    "retainedSourceHair": "AFN126_ORIGINAL_Hair_Hair_0",
+    "status": "REJECT_CURRENT_WORLD_COMMON_STROKE_GROOM",
+    "scope": "Same woman; all252 actual roots preserved and current-world paths directly sculpted. Fixed10191 births with explicit four-guide point/root correspondence and native editable Curves independently restore0. Numerical editing/root construction reusable only. Crown ridges/side curtains rejected, shoulder-tip control chord failures and finite/self/continuous/natural hair/runtime open. No appearance or complete operation adoption."
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECT_RIGID_TWO_HUMP_CROWN_PLANAR_CURTAINS_AND_NAPE_CUT",
+      "score": null,
+      "actualCompleteHeadBodyAndAffectedAnglesViewed": true,
+      "evidence": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0172-current-world-comb\\manual-visual-review.json"
+    },
+    "function": {
+      "status": "SCOPED_NUMERICAL_FIXED_BIRTH_EDIT_RESTORE_CONSTRUCTION_ONLY_COMPLETE_OPERATION_UNACCEPTED",
+      "protectedSevenRawMeshesUVAnd49OriginalEvaluatedGazePosesEqual": true,
+      "current252GuideRestWorldMatchesSavedConstruction": true,
+      "unchangedReevaluationMaximumM": 0.0,
+      "actualNativeGuideEditDeltaM": [
+        0.006,
+        0,
+        0
+      ],
+      "nativeGuideEditMaximumDisplayedMovementM": 0.005957469344139099,
+      "nativeGuideEditAffectedDisplayedPoints": 88,
+      "nativeGuideEditRootMovementM": 0.0,
+      "nativeGuideEditRestoreM": 0.0,
+      "nativeSkin1mmEditMaximumDisplayedMovementM": 0.0008690357208251953,
+      "nativeSkinEditedAllRootErrorM": 2.1155845862011294e-07,
+      "nativeSkinRestoreM": 0.0,
+      "numericalEditingGates": {
+        "reevaluation": true,
+        "guideEditAffectsActualDisplayedHair": true,
+        "guideEditRootFixed": true,
+        "guideRestore": true,
+        "skinRootAttachment": true,
+        "skinRestore": true,
+        "persistentActualBirthIDs": true
+      },
+      "allNumericalEditingGatesPassed": true,
+      "fixedRawCurveTopologyAndPersistentBirthID": true,
+      "actualFrontCaptureComparison": {
+        "UTC": "2026-10-22T23:05:46.946414+00:00",
+        "captureComparisons": [
+          {
+            "first": "matched-operation-before-face.png",
+            "second": "matched-operation-guide61-comb6mm-face.png",
+            "changedPixels": 6327,
+            "maxChannelDelta": 23,
+            "absoluteChannelDeltaSum": 14630
+          },
+          {
+            "first": "matched-operation-before-face.png",
+            "second": "matched-operation-restored-face.png",
+            "changedPixels": 1030,
+            "maxChannelDelta": 2,
+            "absoluteChannelDeltaSum": 1105
+          }
+        ],
+        "actualDisplayedGeometryMovementRecordedSeparately": "independent-current-world-comb-readback.json",
+        "claimScope": "Numerical actual displayed-geometry guide edit/restoration and exact fixed birth topology only. Full front views do not clearly demonstrate a large visible hairstyle action. No complete grooming/natural-hair operation acceptance or inferred render-depsgraph cause."
+      },
+      "completeCurrentGroomOperationAccepted": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_SHOULDER_TIP_CONTROL_CHORD_FAILURES_FINITE_SELF_CONTINUOUS_UNPROVED",
+      "nativeCurves": 10191,
+      "rootPositionMaximumErrorM": 2.1155845862011294e-07,
+      "sampledNativeCurvesForBodyChords": 15,
+      "strongControlChordWitnesses": 8,
+      "notExactRenderedFiniteSplineOrGlobalContactCount": true,
+      "signedMinimumM": null,
+      "finiteSelfContinuousUnaccepted": true,
+      "evidence": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0172-current-world-comb\\actual-birth-correspondence-and-body-failures.json"
+    },
+    "runtime": {
+      "status": "NOT_EXPORTED_ENGINE_TESTED_OR_PROMOTED",
+      "runtimeAsset": null
+    }
+  },
+  "constructionReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0172-current-world-comb\\direct-current-world-rest-authoring.json",
+  "rightsReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0172-current-world-comb\\references-and-rights.json",
+  "dependencies": "Immutable152 current Mesh library plus16textures,17 hashes. Local172 raw Curves/guides/attributes/nodes plus reused171 actual birth-root geometry. Linked Skin needs Single User; working139/external117 separate.",
+  "rejectedNotAdopted": true
+}
