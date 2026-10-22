@@ -1,0 +1,379 @@
+{
+  "kind": "PROMPT_MAINTENANCE_ONLY",
+  "version": "v51",
+  "maintenanceStartedUTC": "2026-10-22T18:06:16.834744+00:00",
+  "baseCommit": "4886210bae6a68da38da32e5e6348464adca6529",
+  "priorPromptSha256": "2d66db5d834ce0bf356999bd7f58d23528ac99f34406499f67b9bd6d947b922d",
+  "priorPromptBytes": 16892,
+  "promptSha256": "f7c7ff955f92a7854bc9d26c184866e73c58a967f2cf93da909c5383a75c3ccf",
+  "promptBytes": 17665,
+  "changes": [
+    "Restructure execution into request gate, single reconciliation, direct authoring, full-character preview, visible rejection and scoped verification.",
+    "Preserve full strict quality/completion/contact/resources/rights/GitHub/delivery contract verbatim; reference verified active archive locator ahead of historical D path.",
+    "Strengthen true displayed-geometry/material/attribute reopening and distinguish authoring construction from complete operation.",
+    "Refresh minimal handoff from existing157 and pending158 A/B without review, adoption, completion, recount or deadline reset."
+  ],
+  "strictQualityThroughDeliveryContractPreservedVerbatim": true,
+  "preservedContractSha256": "b9eb47d8ed1361b625b43e684bcafe17c80d5a6371d77b610d02a12a84bcb72c",
+  "protectedProductionContentBefore": {
+    "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0158-source\\aevrynd-female-next-r0158-a-shared-native-skin.blend": {
+      "sha256": "cb188ace12eb9b636d59861f166525e576c63c97003d36ab935ad31d2fb7c2db",
+      "bytes": 17906005
+    },
+    "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0158-source\\aevrynd-female-next-r0158-b-preserved-material-data.blend": {
+      "sha256": "cf1a2f0077323fac88fb93fb1dbc63ea9eeba1a5b7e0bdfe951f848b14d7f4be",
+      "bytes": 17920566
+    },
+    "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\scripts\\character-next\\__pycache__\\build-female-next-r0158-shared-native-skin.cpython-313.pyc": {
+      "sha256": "ce9a63a3fee134a866ebf248b776cc9864a524f2d294048d3b1fb2c05105f855",
+      "bytes": 32259
+    },
+    "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\scripts\\character-next\\build-female-next-r0158-shared-native-skin.py": {
+      "sha256": "a92e61e8d73db853e4717ad45afede9fe5fc8520fafab290770aef09c9489b35",
+      "bytes": 12936
+    },
+    "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\scripts\\character-next\\inspect-female-next-r0158-material-attributes.py": {
+      "sha256": "eea9aebb5241f468aa7e73203d1f911ac30345a5cf659064353464b81f07174a",
+      "bytes": 1717
+    },
+    "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\scripts\\character-next\\inspect-female-next-r0158-uv-state.py": {
+      "sha256": "2fb4a42b49a0c42813f3869d18214f1555ff3ed2f8fd2d36625b82cee5c4f8b9",
+      "bytes": 1470
+    },
+    "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\scripts\\character-next\\repair-female-next-r0158-material-data.py": {
+      "sha256": "c53c65d1f72cf68aa09a2e60c5db7a5c4a1345fb0bbd7f55c61fcea96dc75f85",
+      "bytes": 6570
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0157-outer-lid-retopology\\continuation.json": {
+      "sha256": "bc50bd747289476e6e169ea900fc956af6c20d6aad5b17576c2caaac682e2db8",
+      "bytes": 11900
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0157-outer-lid-retopology\\female-next-r0157.visual-audit.json": {
+      "sha256": "bc50bd747289476e6e169ea900fc956af6c20d6aad5b17576c2caaac682e2db8",
+      "bytes": 11900
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\a-build-summary.json": {
+      "sha256": "ab8c170d4755d68a05bf0f878da2399c5f580e94c1d06334cda338f0fe670bb1",
+      "bytes": 1014
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\actual-effective-material-and-attribute-state.json": {
+      "sha256": "f54af5ce025e960882d75fe981bde2dbb1f7ca8c791363ced35514f46df44cf0",
+      "bytes": 7939
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\actual-shared-skin-view-controls.json": {
+      "sha256": "20c981fa7f6fa6de39bb737758aae6545dfcab1b4d686391f324726d25df2d72",
+      "bytes": 12533
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\actual-uv-role-readback.json": {
+      "sha256": "d49b6b893074b161e81530dc063daa4daef50f542ae5fd6def667881a8b3660d",
+      "bytes": 2579
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\as-executed-initial-workspace-setup.py": {
+      "sha256": "b32d9503c5d6310b1c2dc05fceef38bd08b29b60e48e6d7af229e75ddd581e55",
+      "bytes": 7030
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\as-executed-native-build-attempt1.py": {
+      "sha256": "2aab119fb8fd03a75c0ec4dbd8c8697c6ffb5bd58a3f33a442d2bc55703aacf0",
+      "bytes": 12930
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\b-actual-view-controls.json": {
+      "sha256": "37dbb9f60a01fda3e2d06c5f026ddd49b8bf034d0b8427196bbbd6c66daa00b9",
+      "bytes": 12533
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\b-build-summary.json": {
+      "sha256": "1c2b538617b044a12c19ed45359c4d48e4c3c68e97ce4095c0fbfb6fba1c92d5",
+      "bytes": 1101
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\before.json": {
+      "sha256": "57da971e3aad037dd3fa9e72d31c81259cab72e2c458169b31b3cc3afeccdef9",
+      "bytes": 861
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\direct-native-shared-skin-authoring-start.json": {
+      "sha256": "5fc55cc07ea66c11dda5b5be9b00f275ca87d6205a2f5491129a71e93f00e276",
+      "bytes": 607
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\explicit-shared-skin-lineage.npz": {
+      "sha256": "b0ab1e88319d3d4e4b90c6a496d31242d93a5a9008e279a7a30e1fc1b59eb1c2",
+      "bytes": 500536
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\immutable-checkout-cache-reuse.json": {
+      "sha256": "8bdd722727d448e0e2bd1c18f8eae8b4130fcc159bd98eb71facc1f18ee41071",
+      "bytes": 334
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\initial-workspace-failure.json": {
+      "sha256": "49c3fff51e02163bfe766145b2dd773c96a83511443d5ed27932cdb57cc3397d",
+      "bytes": 554
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\manifest-before.json": {
+      "sha256": "5480a30e879fbf13956559ae94a2cae8f36c4a38852a70d597f4a1bda0bfb644",
+      "bytes": 411192
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\matched-a-shared-closed-body-face.png": {
+      "sha256": "89481f5701cc92d3ed2d46c743befa5b5b0131000a67910287b6ed2a5812d920",
+      "bytes": 308943
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\matched-a-shared-closed-face.png": {
+      "sha256": "5230533311724d62ecd033873ab53796884699c4dd3f1cdf01767dfdb452af9a",
+      "bytes": 458447
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\matched-a-shared-half-face.png": {
+      "sha256": "fa127214b65a74a6e176c33641da001c2818419527664e8a5c6043f611ecbade",
+      "bytes": 459210
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\matched-a-shared-neutral-face.png": {
+      "sha256": "dfd3218046608ee4c39d4140f64967762808d2bc169ded6ee2450a4fd740eb85",
+      "bytes": 459600
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\matched-b-shared-closed-body-face.png": {
+      "sha256": "372af6f2be607268cb182918ba5ce20cfc29b7d8123dc88f97cfcd1364ed47ab",
+      "bytes": 306697
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\matched-b-shared-closed-face.png": {
+      "sha256": "1acbcdf9dc2f7b6c6ecc154de34e4a9ea1f2e518b1378542a8a7c03a304990e6",
+      "bytes": 458976
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\matched-b-shared-half-face.png": {
+      "sha256": "ac48fbdb1fbe2d197bd55853aadb88e69a9457bf8fe3e7a0bcc276587e933daa",
+      "bytes": 459570
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\matched-b-shared-neutral-face.png": {
+      "sha256": "f4e6980d911c2bbe73ced9b051defb7ac3196bef0dd9ffb22df9d4f48cbb6bbe",
+      "bytes": 460235
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\material-and-data-preservation-repair.json": {
+      "sha256": "47df8ffae8161a8f18b1b888843b4f7bf25550c5374f157bb3f920cf3b62f56e",
+      "bytes": 3540
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\material-attribute-readback-original-job.log": {
+      "sha256": "29543cd56cdd45bda98e5591fac0071e4b017e342d979e6a9f5f4521cbe90ba2",
+      "bytes": 7147
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\material-data-repair-original-job.log": {
+      "sha256": "0677a6f3e8a24be8d396667654a3fa0a1e4208c79da6e46a92f5fcce6d88d22d",
+      "bytes": 1521
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\shared-native-skin-attempt1.log": {
+      "sha256": "ea5b7e6b9e4934e1d08b6b7abfe302c17a34dd94cbddabbe8d40c30e64637caa",
+      "bytes": 1452
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\shared-native-skin-attempt2.log": {
+      "sha256": "e1fa18e09ad10b32a518ac26b42f96c0151d3c7f4f12d2bdc034bda5ab15b3c7",
+      "bytes": 1380
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\shared-native-skin-construction.json": {
+      "sha256": "283103595b193857ea3cbc2a0dbf51a09b189770665337509db23367c1bb2fc4",
+      "bytes": 1445
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\shared-native-skin-original-build-job.log": {
+      "sha256": "ea5b7e6b9e4934e1d08b6b7abfe302c17a34dd94cbddabbe8d40c30e64637caa",
+      "bytes": 1452
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\uv-role-readback-original-job.log": {
+      "sha256": "261b8ec213f275a3c19ed389cc48054866540d6406fcfb432d48e3654da94ab4",
+      "bytes": 2489
+    },
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\workspace-storage-provenance.json": {
+      "sha256": "a251f7a2cdd382f58e099c8091bcacfb4742cba7567d1586289e24d6d3553f6f",
+      "bytes": 8234
+    },
+    "D:\\Download\\Aevrynd\\Info\\CharacterActiveArchiveWorkspace.json": {
+      "sha256": "b25c8165b68632c58902eb705fc06df837d89eba45d4ed7819824c561b2b24b1",
+      "bytes": 506
+    },
+    "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\female-next.asset.json": {
+      "sha256": "5480a30e879fbf13956559ae94a2cae8f36c4a38852a70d597f4a1bda0bfb644",
+      "bytes": 411192
+    },
+    "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0139-source\\aevrynd-female-next-r0139-a-native-lid-follow.blend": {
+      "sha256": "5128a461a011899c77b275055ea3a8a94ca278873665dd08f72a6003d4a37bb9",
+      "bytes": 136089229
+    },
+    "D:\\Download\\Aevrynd\\sites-engine-journey\\package.json": {
+      "sha256": "85f1613c18e4c6c4624c743ea7fd18920292e944c8af69ff82d20f924f7a40de",
+      "bytes": 922
+    },
+    "D:\\Download\\Aevrynd\\sites-engine-journey\\public\\assets\\character-female-refined.glb": {
+      "sha256": "cef44b6a11b59f6820fec8d221316d8acc481b809708b0aab38e7bfd427fbafe",
+      "bytes": 7524432
+    },
+    "D:\\Download\\Aevrynd\\sites-engine-journey\\public\\character-editor.js": {
+      "sha256": "33427ba3d93c6c79342282139c08180488d42ac540756b40873ae31957368cf6",
+      "bytes": 689864
+    },
+    "D:\\Download\\Aevrynd\\sites-engine-journey\\public\\index.html": {
+      "sha256": "4916a587f690925862b30b8c14c926173ed6cde1b7a63566a663737e4281ac02",
+      "bytes": 19063
+    },
+    "D:\\Download\\Aevrynd\\sites-engine-journey\\scripts\\character-contact.py": {
+      "sha256": "ccc52e7d8640a67cf7439a7a22d0be414ca7329d1b5d9742554c715e316ecbb0",
+      "bytes": 10763
+    },
+    "D:\\Download\\Aevrynd\\sites-engine-journey\\scripts\\refine-female.py": {
+      "sha256": "25f30c6b300bcda6e1e6cab6ce6d454f59603c31a104505a6ca4ef8a0f7fe441",
+      "bytes": 16876
+    },
+    "D:\\Download\\Aevrynd\\sites-engine-journey\\src\\character-contact.js": {
+      "sha256": "da68c95736cc4a7970b3b93be9bfb23aa67596aa73a7f50c1d06b87f941516fb",
+      "bytes": 10046
+    },
+    "D:\\Download\\Aevrynd\\sites-engine-journey\\src\\character-editor.js": {
+      "sha256": "e2573f9bc95cbff140f8b81250d5a4dfa5fca44e060babe6326e62c33ca828f1",
+      "bytes": 19897
+    },
+    "D:\\Download\\Aevrynd\\sites-engine-journey\\src\\character-materials.js": {
+      "sha256": "2b389e91bbb6e33a33ff31d2d08c9fd28c4feae03ac45d543ccdd44c098bd6e8",
+      "bytes": 4729
+    }
+  },
+  "originalStagedRaw": {
+    "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158": "",
+    "D:\\Download\\Aevrynd\\sites-engine-journey": ""
+  },
+  "pendingWorkHandoff": {
+    "authority": "Read-only locators/copies of existing records; actual evidence overrides. No production resumed, judged, completed or recounted by maintenance.",
+    "latestRegisteredRevisionCopied": "female-next-r0157",
+    "latestRegisteredDecisionCopied": "HOLD_PROMISING_OUTER_LIDS_WELD_RAW_EDIT_AND19_CONTACT_FAILURES_KEEP_R139",
+    "latestContinuation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0157-outer-lid-retopology\\continuation.json",
+    "latestAudit": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0157-outer-lid-retopology\\female-next-r0157.visual-audit.json",
+    "workingCompleteWomanCopied": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0139-source\\aevrynd-female-next-r0139-a-native-lid-follow.blend",
+      "sha256": "5128a461a011899c77b275055ea3a8a94ca278873665dd08f72a6003d4a37bb9",
+      "bytes": 136089229,
+      "status": "RETAIN_R126_STATIC_LOOK_ADOPT_R139_NATIVE_COUPLED_GAZE_OPERATION",
+      "scope": "Same complete woman retains r126 scoped neutral static face/head/skin appearance and now adopts only actual native fixed-head eye/lid/lash/wet-line gaze operation in recorded original yaw20/pitch10 action/manual scope. R138 socket reconstruction retained. Not complete avatar anatomy/eyes-layer anatomy/finite contacts/hair/clothes/actions/runtime/rights/user acceptance.",
+      "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "actualFaceControls": "AFN138_ACTUAL_CURRENT_GAZE_RIG / AFN138_EYE_L,R drive four AFN139 upper/lower lid bones, actual current AFN126 skin and original lashes/wet line. AFN138_NATIVE_CURRENT_GAZE_DEMO frames1..49 at24fps. No actual current blink/jaw/head tracking/body/clothes rig operation accepted.",
+      "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope. R139 adds scoped gaze function only; no new neutral appearance adoption.",
+      "completeOperationAccepted": false,
+      "femaleUserAccepted": false,
+      "originalArtist": "DarkNik / original NikZava284",
+      "assetLicense": "CC-BY4.0, attribution and modifications retained",
+      "acceptedCompleteScopedOperations": [
+        "Recorded fixed-head native coupled ocular/lid/lash/wet-line gaze at original yaw +/-20deg and pitch +/-10deg, independent actual operation and neutral restoration."
+      ],
+      "scopedGazeOperationAccepted": true,
+      "allCharacterOperationsComplete": false,
+      "staticAppearanceBaseline": {
+        "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-b-source-section-neck.blend",
+        "sha256": "798c2496aadac717d967362c58afa88d38ceac584248c85f6d86afc618253631",
+        "bytes": 135305654,
+        "status": "ADOPT_SCOPED_STATIC_COMPLETE_FACE_APPEARANCE_GAIN",
+        "scope": "Same complete woman. Adopt only static actual complete-character face/head form and skin-source appearance across recorded matched views/second light; all controls, hair physics, finite contacts/runtime/rights/user gates open.",
+        "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+        "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+        "actualFaceControls": "No controls connected to new visible head. AFN59_FACE_CONTROLS/blink_left/right retained on hidden r117 rollback only; actual new skin motion0.",
+        "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope.",
+        "completeOperationAccepted": false,
+        "femaleUserAccepted": false,
+        "originalArtist": "DarkNik / original NikZava284",
+        "assetLicense": "CC-BY4.0, attribution and modifications retained"
+      }
+    },
+    "registeredCountersCopiedWithoutModification": {
+      "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 31,
+      "confirmedConsecutiveRoundsWithoutAdoptedCompleteAppearanceGainLowerBound": 31,
+      "productionRoundsSinceLastWholeCharacterReview": 2,
+      "nextWholeReviewAfterFurtherProductionRounds": 1,
+      "lastReviewedProductionWindow": [
+        "r153",
+        "r154",
+        "r155"
+      ],
+      "lastWholeCharacterReview": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0155-native-blink\\three-round-whole-character-review.json",
+      "femaleUserAcceptance": false,
+      "wholeCharacterStagnationReset": false,
+      "foundationChangeRequiredNextProduction": true
+    },
+    "formalRecordCopied": {
+      "currentSourceRevision": "female-next-r0001",
+      "strictOverallScore": 42,
+      "strictScoreAppliesTo": "female-next-r0001",
+      "runtimeAsset": null,
+      "runtimeStatus": "NOT_PROMOTED",
+      "enginePromotionApproved": false,
+      "websitePromotionApproved": false
+    },
+    "pendingProduction": {
+      "revision": "female-next-r0158",
+      "registeredInManifest": false,
+      "savedStates": [
+        {
+          "savedState": "a",
+          "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0158-source\\aevrynd-female-next-r0158-a-shared-native-skin.blend",
+          "engineAlias": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0158-source\\aevrynd-female-next-r0158-a-shared-native-skin.blend",
+          "sha256": "cb188ace12eb9b636d59861f166525e576c63c97003d36ab935ad31d2fb7c2db",
+          "bytes": 17906005,
+          "summary": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\a-build-summary.json",
+          "status": "SAVED_UNACCEPTED_PENDING_ORIGINAL_PRODUCTION_RECONCILIATION"
+        },
+        {
+          "savedState": "b",
+          "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0158-source\\aevrynd-female-next-r0158-b-preserved-material-data.blend",
+          "engineAlias": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0158-source\\aevrynd-female-next-r0158-b-preserved-material-data.blend",
+          "sha256": "cf1a2f0077323fac88fb93fb1dbc63ea9eeba1a5b7e0bdfe951f848b14d7f4be",
+          "bytes": 17920566,
+          "summary": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\b-build-summary.json",
+          "status": "SAVED_UNACCEPTED_PENDING_ORIGINAL_PRODUCTION_RECONCILIATION"
+        }
+      ],
+      "originalTimingAndResourcesCopied": {
+        "startedUTC": "2026-10-22T09:51:48+00:00",
+        "supportDeadlineUTC": "2026-10-22T10:01:48+00:00",
+        "firstCompletePreviewDeadlineUTC": "2026-10-22T10:21:48+00:00",
+        "resourceCheckpointUTC": "2026-10-22T10:36:48+00:00",
+        "baseCommit": "4886210bae6a68da38da32e5e6348464adca6529",
+        "sourceBudgetBytes": 50000000,
+        "evidenceBudgetBytes": 12000000,
+        "oneCandidate": true,
+        "maxThreads": 4,
+        "majorDefect": "536 duplicated eyelid boundaries and ignored ordinary Mesh edits prevent truly connected editable Skin; preserve157 outer form.",
+        "previousGoalTurnClassification": "Progress:157 direct outer-lid topology and exact independent evidence identified536 unwelded boundaries, raw edit gap and19 retained contacts. Subsequent158 workspace setup failed before index/worktree population, preserved as same pending round; no model/counter/adoption reset."
+      },
+      "evidenceDirectory": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin",
+      "actualCWorkspace": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158",
+      "workspaceProvenance": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\workspace-storage-provenance.json",
+      "originalFailure": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\initial-workspace-failure.json",
+      "materialDiagnosis": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\actual-effective-material-and-attribute-state.json",
+      "repairRecord": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0158-shared-native-skin\\material-and-data-preservation-repair.json",
+      "completePreviews": [
+        "matched-a-shared-closed-face.png",
+        "matched-a-shared-closed-body-face.png",
+        "matched-a-shared-neutral-face.png",
+        "matched-a-shared-half-face.png",
+        "matched-b-shared-closed-face.png",
+        "matched-b-shared-closed-body-face.png",
+        "matched-b-shared-neutral-face.png",
+        "matched-b-shared-half-face.png"
+      ],
+      "stillPending": "Reconcile existing previews and original terminal jobs; independent reopen/actual native edit and restoration, affected motion/contact and due whole-woman review remain pending. Maintenance makes no B appearance/function/contact conclusion and does not increment counters.",
+      "knownRelatedFailureInheritedNotRemeasured": "r157 local retained wall19 Reflect crossings; no r158 contact qualification.",
+      "originalJobsFromExistingSessionContext": [
+        {
+          "handle": 82491,
+          "status": "terminal Python dtype error before complete save; original log retained"
+        },
+        {
+          "handle": 30039,
+          "status": "terminal A complete preview marker"
+        },
+        {
+          "handle": 3374,
+          "status": "terminal B material-data repair and complete preview marker"
+        }
+      ],
+      "jobObservationScope": "No original job restarted or new production job launched during maintenance; no live handle claimed solely from missing process."
+    },
+    "nextProductionEntry": "Resume original r158 reconciliation only when production is requested/continued; inspect existing B full head/body and original records before more authoring. Do not start r159, adopt B, reset clocks/counters or complete r158 on this snapshot authority.",
+    "retiredMethodsReference": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0157-outer-lid-retopology\\continuation.json",
+    "goalStatusObserved": "active"
+  },
+  "modelProductionOrJudgmentPerformed": false,
+  "activeObjectiveRewritten": false,
+  "replacementGoalOrScheduleCreated": false,
+  "protectedProductionContentUnchanged": true,
+  "protectedProductionFileCount": 52,
+  "mirrorEqualityVerified": true,
+  "maintenanceCompletedUTC": "2026-10-22T18:07:07.577679+00:00",
+  "normalPrePushHookMatchesOriginal": true
+}
