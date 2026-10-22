@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0148-local-clump.py", line 19, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0148-local-clump.py", line 12, in main
+    p=lo+np.array([u,t])*(hi-lo);q=p-uv[:,0];s=(q[:,0]*B[:,1]-q[:,1]*B[:,0])/det;r=(A[:,0]*q[:,1]-A[:,1]*q[:,0])/det;hit=np.flatnonzero((s>=-1e-8)&(r>=-1e-8)&(s+r<=1+1e-8));assert len(hit)>0,(component,u,t,'not a covered open surface path');j=int(hit[0]);bc=np.array([1-s[j]-r[j],s[j],r[j]]);Q.append(bc@W[j]);anchors.append([int(ids[j]),*bc])
+                                                                                                                                                                                    ^^^^^^^^^^
+AssertionError: (4490, np.float64(0.03), np.float64(0.7134999999999999), 'not a covered open surface path')
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

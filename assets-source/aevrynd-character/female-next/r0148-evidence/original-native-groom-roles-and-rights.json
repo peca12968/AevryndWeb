@@ -1,0 +1,2342 @@
+{
+  "source": "D:\\Download\\Aevrynd\\Reference\\character\\blender-bystedt-hair-cc-by-sa\\hair_nodes-female_hair_styles.blend",
+  "sha256": "1ad6202095c1793678fee7d69a7e9f8b5fdb6e5c293d300eb1062d2d437e8d48",
+  "bytes": 28612482,
+  "texts": [
+    {
+      "name": "Braid hair curves",
+      "bytes": 419,
+      "sha256": "0c1c4ce31fcab9f410ffd32fc6692c6f56ad10efa6a873dc3215b71b83eac65f",
+      "rightsLines": []
+    },
+    {
+      "name": "Clump hair curves (small clumps)",
+      "bytes": 429,
+      "sha256": "d480e161404c58182a48bed8a2a4a022e5e7007ddb85a9142be1b097e17e736d",
+      "rightsLines": []
+    },
+    {
+      "name": "Curl Hair Curves",
+      "bytes": 628,
+      "sha256": "fd098964f445810f64cc39b29d1cfbb7d7cf46fe36b694af988e8cfd95ce7454",
+      "rightsLines": []
+    },
+    {
+      "name": "Displace Hair Curves",
+      "bytes": 368,
+      "sha256": "b8bb851e2fec1774d6f679560bf7be87d08880352e323f68109f334143794aee",
+      "rightsLines": []
+    },
+    {
+      "name": "Duplicate Hair Curves",
+      "bytes": 273,
+      "sha256": "453aeba9175a7f25632d0390416dde30f37e0a9f782e404d537a9930966d7440",
+      "rightsLines": []
+    },
+    {
+      "name": "Hair Curve Noise",
+      "bytes": 338,
+      "sha256": "33041f4ac1e19aa4ad89ea799c29f8fcbe43265c3c81b0547d91b89e94319ede",
+      "rightsLines": []
+    },
+    {
+      "name": "Hair demo file info",
+      "bytes": 2342,
+      "sha256": "392642ab937a4638663b0dd62ad7493222e04b9c07d002ff67430a81e8541f48",
+      "rightsLines": [
+        "Daniel Bystedt. CC BY-SA license",
+        "www.twitter.com/3dbystedt",
+        "www.artstation.com/artist/dbystedt"
+      ]
+    },
+    {
+      "name": "Interpolate hair curves",
+      "bytes": 786,
+      "sha256": "094bcefdbdf664ae1b9ae8be46b1a5392b7bb6b345402333839293569c511b65",
+      "rightsLines": []
+    },
+    {
+      "name": "Long hair clumping",
+      "bytes": 544,
+      "sha256": "3ebced2df96eebb34341d1bc59cc0eb65062f0c1a53986969435b9db14883049",
+      "rightsLines": []
+    },
+    {
+      "name": "Notes",
+      "bytes": 383,
+      "sha256": "443eccfc6c2cd80cbab8d77d7f58d98dd6990978b8baa098fe3a4cb1fb2f949e",
+      "rightsLines": []
+    },
+    {
+      "name": "Notes on fly away hair",
+      "bytes": 309,
+      "sha256": "3e5cc55ecbe4f3e05108ad26b5ae20225f6f39dcb1a0ecc28fd6dfb2ea568ec2",
+      "rightsLines": []
+    },
+    {
+      "name": "Roll hair curves info",
+      "bytes": 190,
+      "sha256": "26820f4d03c6fa38bcaac898b51c98ab9f755dd6758c6dcb581a86b5d93ec48a",
+      "rightsLines": []
+    },
+    {
+      "name": "Set hair curve profile info",
+      "bytes": 148,
+      "sha256": "671f8e03cadb4a751a9b06ef1cecefc96fa67ef816438cbf0aee0a50386f3908",
+      "rightsLines": []
+    },
+    {
+      "name": "set node color",
+      "bytes": 216,
+      "sha256": "1dc135c6ab21a450c05d525135d3725071d9c962d0a212dc30925b91fe15f284",
+      "rightsLines": []
+    },
+    {
+      "name": "Shrinkwrap Hair Curves",
+      "bytes": 284,
+      "sha256": "d7591589b3a3eb291f1909f64a3314860fcb97e3423b67cb92737f9053dc254d",
+      "rightsLines": []
+    },
+    {
+      "name": "Smooth Hair Curves",
+      "bytes": 290,
+      "sha256": "431a1ffc355090862e4a841497c1eb6231f5242285fd96f27865ccd0401cf452",
+      "rightsLines": []
+    },
+    {
+      "name": "Snap hair to parting edges",
+      "bytes": 439,
+      "sha256": "94a0c2f89a6b85dcbd06b7a9199f698d899f09f59c0cb9862e23cfc74b4fc110",
+      "rightsLines": []
+    },
+    {
+      "name": "Text",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rightsLines": []
+    },
+    {
+      "name": "Trim Hair Curves",
+      "bytes": 231,
+      "sha256": "6a82cf07ff5764d98a9a250a107cceebdfb7072ef8e59e79fd53d736eef941a1",
+      "rightsLines": []
+    }
+  ],
+  "assetMetadata": [],
+  "objects": [
+    {
+      "name": "back",
+      "type": "LIGHT",
+      "hideRender": false,
+      "collections": [
+        "Lights"
+      ],
+      "matrix": [
+        [
+          0.5678519606590271,
+          0.6863489747047424,
+          0.45438888669013977,
+          -3.4290871620178223
+        ],
+        [
+          -0.71730637550354,
+          0.14184436202049255,
+          0.6821669936180115,
+          2.3677597045898438
+        ],
+        [
+          0.40375208854675293,
+          -0.7133058905601501,
+          0.572869062423706,
+          17.957271575927734
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Braids growth mesh",
+      "type": "MESH",
+      "hideRender": true,
+      "collections": [
+        "Braids hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertices": 818,
+      "polygons": 740,
+      "uvs": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Braids hair head",
+      "type": "EMPTY",
+      "hideRender": false,
+      "collections": [
+        "Braids hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "curly growth mesh",
+      "type": "MESH",
+      "hideRender": true,
+      "collections": [
+        "Curly hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertices": 876,
+      "polygons": 796,
+      "uvs": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "curly hair",
+      "type": "CURVES",
+      "hideRender": false,
+      "collections": [
+        "Curly hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform",
+          "showRender": true
+        },
+        {
+          "name": "Curly hair",
+          "type": "NODES",
+          "nodeGroup": "curly hair",
+          "showRender": true
+        }
+      ],
+      "curves": 303,
+      "points": 3636,
+      "surface": "curly growth mesh",
+      "surfaceUV": "UVMap",
+      "attributes": [
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "surface_uv_coordinate",
+          "CURVE",
+          "FLOAT2"
+        ]
+      ]
+    },
+    {
+      "name": "braided hair",
+      "type": "CURVES",
+      "hideRender": false,
+      "collections": [
+        "Braids hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.003",
+          "showRender": true
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "Braided hair",
+          "showRender": true
+        }
+      ],
+      "curves": 137,
+      "points": 2740,
+      "surface": "Braids growth mesh",
+      "surfaceUV": "UVMap",
+      "attributes": [
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          ".selection",
+          "CURVE",
+          "FLOAT"
+        ],
+        [
+          "surface_uv_coordinate",
+          "CURVE",
+          "FLOAT2"
+        ]
+      ]
+    },
+    {
+      "name": "Curly hair head",
+      "type": "EMPTY",
+      "hideRender": false,
+      "collections": [
+        "Curly hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "cyber punk growth mesh",
+      "type": "MESH",
+      "hideRender": true,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertices": 876,
+      "polygons": 796,
+      "uvs": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "cyberpunk hair",
+      "type": "CURVES",
+      "hideRender": false,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Set Hair Curve Profile",
+          "type": "NODES",
+          "nodeGroup": "Set Hair Curve Profile",
+          "showRender": true
+        },
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform",
+          "showRender": true
+        },
+        {
+          "name": "Interpolate Hair Curves",
+          "type": "NODES",
+          "nodeGroup": "Interpolate Hair Curves",
+          "showRender": true
+        },
+        {
+          "name": "Clump Hair Curves",
+          "type": "NODES",
+          "nodeGroup": "Clump Hair Curves",
+          "showRender": true
+        },
+        {
+          "name": "Trim Hair Curves",
+          "type": "NODES",
+          "nodeGroup": "Trim Hair Curves",
+          "showRender": true
+        }
+      ],
+      "curves": 1744,
+      "points": 9656,
+      "surface": "cyber punk growth mesh",
+      "surfaceUV": "UVMap",
+      "attributes": [
+        [
+          "id",
+          "POINT",
+          "INT"
+        ],
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "clumping",
+          "CURVE",
+          "FLOAT"
+        ],
+        [
+          "density",
+          "CURVE",
+          "FLOAT"
+        ],
+        [
+          "parting",
+          "CURVE",
+          "FLOAT"
+        ],
+        [
+          ".selection",
+          "CURVE",
+          "FLOAT"
+        ],
+        [
+          "resolution",
+          "CURVE",
+          "INT"
+        ],
+        [
+          ".sculpt_face_set",
+          "CURVE",
+          "INT"
+        ],
+        [
+          "Col",
+          "CURVE",
+          "BYTE_COLOR"
+        ],
+        [
+          "rest_position",
+          "CURVE",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "surface_uv_coordinate",
+          "CURVE",
+          "FLOAT2"
+        ],
+        [
+          "UVMap",
+          "CURVE",
+          "FLOAT2"
+        ],
+        [
+          ".select_vert",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          ".select_poly",
+          "CURVE",
+          "BOOLEAN"
+        ],
+        [
+          ".select_edge",
+          "CURVE",
+          "BOOLEAN"
+        ]
+      ]
+    },
+    {
+      "name": "Cyberpunk hair head",
+      "type": "EMPTY",
+      "hideRender": false,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Eyebrows growth mesh",
+      "type": "MESH",
+      "hideRender": true,
+      "collections": [
+        "Long hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertices": 150,
+      "polygons": 112,
+      "uvs": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Eyebrows growth mesh.001",
+      "type": "MESH",
+      "hideRender": true,
+      "collections": [
+        "Curly hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertices": 150,
+      "polygons": 112,
+      "uvs": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Eyebrows growth mesh.002",
+      "type": "MESH",
+      "hideRender": true,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertices": 150,
+      "polygons": 112,
+      "uvs": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Eyebrows growth mesh.003",
+      "type": "MESH",
+      "hideRender": true,
+      "collections": [
+        "Braids hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertices": 150,
+      "polygons": 112,
+      "uvs": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "eyebrows.001",
+      "type": "CURVES",
+      "hideRender": true,
+      "collections": [
+        "Long hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "Eeybrows",
+          "type": "NODES",
+          "nodeGroup": "Eeybrows",
+          "showRender": true
+        }
+      ],
+      "curves": 88,
+      "points": 386,
+      "surface": "Eyebrows growth mesh",
+      "surfaceUV": "UVMap",
+      "attributes": [
+        [
+          "radius",
+          "POINT",
+          "FLOAT"
+        ],
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "surface_uv_coordinate",
+          "CURVE",
+          "FLOAT2"
+        ]
+      ]
+    },
+    {
+      "name": "eyebrows.002",
+      "type": "CURVES",
+      "hideRender": true,
+      "collections": [
+        "Curly hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "Eeybrows",
+          "type": "NODES",
+          "nodeGroup": "Eeybrows",
+          "showRender": true
+        }
+      ],
+      "curves": 88,
+      "points": 386,
+      "surface": "Eyebrows growth mesh",
+      "surfaceUV": "UVMap",
+      "attributes": [
+        [
+          "radius",
+          "POINT",
+          "FLOAT"
+        ],
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "surface_uv_coordinate",
+          "CURVE",
+          "FLOAT2"
+        ]
+      ]
+    },
+    {
+      "name": "eyebrows.003",
+      "type": "CURVES",
+      "hideRender": true,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "Eeybrows",
+          "type": "NODES",
+          "nodeGroup": "Eeybrows",
+          "showRender": true
+        }
+      ],
+      "curves": 88,
+      "points": 386,
+      "surface": "Eyebrows growth mesh",
+      "surfaceUV": "UVMap",
+      "attributes": [
+        [
+          "radius",
+          "POINT",
+          "FLOAT"
+        ],
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "surface_uv_coordinate",
+          "CURVE",
+          "FLOAT2"
+        ]
+      ]
+    },
+    {
+      "name": "eyebrows.004",
+      "type": "CURVES",
+      "hideRender": true,
+      "collections": [
+        "Braids hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "Eeybrows",
+          "type": "NODES",
+          "nodeGroup": "Eeybrows",
+          "showRender": true
+        }
+      ],
+      "curves": 88,
+      "points": 386,
+      "surface": "Eyebrows growth mesh",
+      "surfaceUV": "UVMap",
+      "attributes": [
+        [
+          "radius",
+          "POINT",
+          "FLOAT"
+        ],
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "surface_uv_coordinate",
+          "CURVE",
+          "FLOAT2"
+        ]
+      ]
+    },
+    {
+      "name": "eyelashes",
+      "type": "CURVES",
+      "hideRender": false,
+      "collections": [
+        "Long hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "eyelashes",
+          "showRender": true
+        }
+      ],
+      "curves": 60,
+      "points": 480,
+      "surface": "Eyelashes growth mesh",
+      "surfaceUV": "UVMap",
+      "attributes": [
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.001",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.002",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.003",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.004",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.005",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.006",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "surface_uv_coordinate",
+          "CURVE",
+          "FLOAT2"
+        ],
+        [
+          "surface_uv_coordinate.001",
+          "CURVE",
+          "FLOAT2"
+        ],
+        [
+          "surface_uv_coordinate.002",
+          "CURVE",
+          "FLOAT2"
+        ]
+      ]
+    },
+    {
+      "name": "Eyelashes growth mesh",
+      "type": "MESH",
+      "hideRender": true,
+      "collections": [
+        "Long hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertices": 96,
+      "polygons": 44,
+      "uvs": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Eyelashes growth mesh.001",
+      "type": "MESH",
+      "hideRender": true,
+      "collections": [
+        "Curly hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertices": 96,
+      "polygons": 44,
+      "uvs": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Eyelashes growth mesh.002",
+      "type": "MESH",
+      "hideRender": true,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertices": 96,
+      "polygons": 44,
+      "uvs": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Eyelashes growth mesh.003",
+      "type": "MESH",
+      "hideRender": true,
+      "collections": [
+        "Braids hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertices": 96,
+      "polygons": 44,
+      "uvs": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "eyelashes.001",
+      "type": "CURVES",
+      "hideRender": false,
+      "collections": [
+        "Curly hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "eyelashes",
+          "showRender": true
+        }
+      ],
+      "curves": 60,
+      "points": 480,
+      "surface": "Eyelashes growth mesh",
+      "surfaceUV": "UVMap",
+      "attributes": [
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.001",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.002",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.003",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.004",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.005",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.006",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "surface_uv_coordinate",
+          "CURVE",
+          "FLOAT2"
+        ],
+        [
+          "surface_uv_coordinate.001",
+          "CURVE",
+          "FLOAT2"
+        ],
+        [
+          "surface_uv_coordinate.002",
+          "CURVE",
+          "FLOAT2"
+        ]
+      ]
+    },
+    {
+      "name": "eyelashes.002",
+      "type": "CURVES",
+      "hideRender": false,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "eyelashes",
+          "showRender": true
+        }
+      ],
+      "curves": 60,
+      "points": 480,
+      "surface": "Eyelashes growth mesh",
+      "surfaceUV": "UVMap",
+      "attributes": [
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.001",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.002",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.003",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.004",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.005",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.006",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "surface_uv_coordinate",
+          "CURVE",
+          "FLOAT2"
+        ],
+        [
+          "surface_uv_coordinate.001",
+          "CURVE",
+          "FLOAT2"
+        ],
+        [
+          "surface_uv_coordinate.002",
+          "CURVE",
+          "FLOAT2"
+        ]
+      ]
+    },
+    {
+      "name": "eyelashes.003",
+      "type": "CURVES",
+      "hideRender": false,
+      "collections": [
+        "Braids hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.001",
+          "showRender": true
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "eyelashes",
+          "showRender": true
+        }
+      ],
+      "curves": 60,
+      "points": 480,
+      "surface": "Eyelashes growth mesh",
+      "surfaceUV": "UVMap",
+      "attributes": [
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.001",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.002",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.003",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.004",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.005",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "position.006",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "surface_uv_coordinate",
+          "CURVE",
+          "FLOAT2"
+        ],
+        [
+          "surface_uv_coordinate.001",
+          "CURVE",
+          "FLOAT2"
+        ],
+        [
+          "surface_uv_coordinate.002",
+          "CURVE",
+          "FLOAT2"
+        ]
+      ]
+    },
+    {
+      "name": "eyes",
+      "type": "MESH",
+      "hideRender": false,
+      "collections": [
+        "head"
+      ],
+      "matrix": [
+        [
+          0.12901143729686737,
+          0.0,
+          0.0,
+          0.305877685546875
+        ],
+        [
+          0.0,
+          0.12716221809387207,
+          0.0,
+          -1.3379756212234497
+        ],
+        [
+          0.0,
+          0.0,
+          0.12901140749454498,
+          15.30112361907959
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertices": 1028,
+      "polygons": 1088,
+      "uvs": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "hairband",
+      "type": "CURVE",
+      "hideRender": true,
+      "collections": [
+        "Braids hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          15.025150299072266
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.8196582794189453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          12.991113662719727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "head",
+      "type": "MESH",
+      "hideRender": false,
+      "collections": [
+        "head"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertices": 51257,
+      "polygons": 51152,
+      "uvs": [
+        "UVMap optimized"
+      ]
+    },
+    {
+      "name": "Info text.001",
+      "type": "FONT",
+      "hideRender": false,
+      "collections": [
+        "Long hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.2545671463012695
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -0.7584819793701172
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          12.553882598876953
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Info text.002",
+      "type": "FONT",
+      "hideRender": false,
+      "collections": [
+        "Curly hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          13.109906196594238
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          -1.0,
+          -0.7584819793701172
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          12.553882598876953
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Info text.003",
+      "type": "FONT",
+      "hideRender": false,
+      "collections": [
+        "Curly hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          8.153000831604004
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -0.7584819793701172
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          12.553882598876953
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "key",
+      "type": "LIGHT",
+      "hideRender": false,
+      "collections": [
+        "Lights"
+      ],
+      "matrix": [
+        [
+          0.8814301490783691,
+          0.2948966324329376,
+          0.36894020438194275,
+          -3.819237232208252
+        ],
+        [
+          -0.020546525716781616,
+          0.8043336868286133,
+          -0.5938224792480469,
+          -4.5838518142700195
+        ],
+        [
+          -0.47186729311943054,
+          0.5158326029777527,
+          0.7150231003761292,
+          17.953998565673828
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "long hair growth mesh",
+      "type": "MESH",
+      "hideRender": true,
+      "collections": [
+        "Long hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [],
+      "vertices": 876,
+      "polygons": 796,
+      "uvs": [
+        "UVMap"
+      ]
+    },
+    {
+      "name": "Long hair head",
+      "type": "EMPTY",
+      "hideRender": false,
+      "collections": [
+        "Long hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "long hair main",
+      "type": "CURVES",
+      "hideRender": false,
+      "collections": [
+        "Long hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.002",
+          "showRender": true
+        },
+        {
+          "name": "Long hair",
+          "type": "NODES",
+          "nodeGroup": "hair",
+          "showRender": true
+        }
+      ],
+      "curves": 346,
+      "points": 6770,
+      "surface": "long hair growth mesh",
+      "surfaceUV": "UVMap",
+      "attributes": [
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          ".selection",
+          "CURVE",
+          "FLOAT"
+        ],
+        [
+          "resolution",
+          "CURVE",
+          "INT"
+        ],
+        [
+          "surface_uv_coordinate",
+          "CURVE",
+          "FLOAT2"
+        ]
+      ]
+    },
+    {
+      "name": "long hair strands",
+      "type": "CURVES",
+      "hideRender": false,
+      "collections": [
+        "Long hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform.004",
+          "showRender": true
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "Set Hair Curve Profile",
+          "showRender": true
+        }
+      ],
+      "curves": 30,
+      "points": 360,
+      "surface": "long hair growth mesh",
+      "surfaceUV": "UVMap",
+      "attributes": [
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          "surface_uv_coordinate",
+          "CURVE",
+          "FLOAT2"
+        ]
+      ]
+    },
+    {
+      "name": "new hair",
+      "type": "CURVES",
+      "hideRender": false,
+      "collections": [],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "GeometryNodes.001",
+          "type": "NODES",
+          "nodeGroup": "curves to hair DABY",
+          "showRender": true
+        },
+        {
+          "name": "Surface Deform",
+          "type": "NODES",
+          "nodeGroup": "Surface Deform",
+          "showRender": true
+        },
+        {
+          "name": "GeometryNodes",
+          "type": "NODES",
+          "nodeGroup": "hair",
+          "showRender": true
+        },
+        {
+          "name": "Redistribute Curve Points",
+          "type": "NODES",
+          "nodeGroup": "Redistribute Curve Points",
+          "showRender": true
+        }
+      ],
+      "curves": 19,
+      "points": 285,
+      "surface": "long hair growth mesh",
+      "surfaceUV": "UVMap",
+      "attributes": [
+        [
+          "position",
+          "POINT",
+          "FLOAT_VECTOR"
+        ],
+        [
+          ".selection",
+          "CURVE",
+          "FLOAT"
+        ],
+        [
+          "surface_uv_coordinate",
+          "CURVE",
+          "FLOAT2"
+        ]
+      ]
+    },
+    {
+      "name": "Plane",
+      "type": "MESH",
+      "hideRender": false,
+      "collections": [],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": [
+        {
+          "name": "\u81ea\u52d5\u5e73\u6ed1",
+          "type": "NODES",
+          "nodeGroup": "\u81ea\u52d5\u5e73\u6ed1",
+          "showRender": true
+        }
+      ],
+      "vertices": 485,
+      "polygons": 0,
+      "uvs": []
+    },
+    {
+      "name": "rim",
+      "type": "LIGHT",
+      "hideRender": false,
+      "collections": [
+        "Lights"
+      ],
+      "matrix": [
+        [
+          0.8808832764625549,
+          -0.036250658333301544,
+          -0.47194337844848633,
+          -8.153346061706543
+        ],
+        [
+          0.4367489814758301,
+          0.44661465287208557,
+          0.7808877229690552,
+          1.0843546390533447
+        ],
+        [
+          0.18246912956237793,
+          -0.8939917683601379,
+          0.40924781560897827,
+          17.508739471435547
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "Info text",
+      "type": "FONT",
+      "hideRender": false,
+      "collections": [
+        "Cyberpunk hair"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.8891963958740234
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          -0.7584819793701172
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          12.553882598876953
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "modifiers": []
+    }
+  ],
+  "sourceOnlyNoFullWomanCandidateOrTransplant": true,
+  "seconds": 0.7584848403930664
+}

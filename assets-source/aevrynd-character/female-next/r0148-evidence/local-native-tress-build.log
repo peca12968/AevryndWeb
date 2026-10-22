@@ -1,0 +1,13 @@
+00:06.687  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0139-source\aevrynd-female-next-r0139-a-native-lid-follow.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0148-local-native-tress.py:31: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN148_LOCAL_DARK_BROWN_NATIVE_HAIR');mat.use_nodes=True;nodes=mat.node_tree.nodes;nodes.clear();bs=nodes.new('ShaderNodeBsdfHairPrincipled');bs.parametrization='MELANIN';bs.inputs['Melanin'].default_value=.75;bs.inputs['Melanin Redness'].default_value=.15;bs.inputs['Roughness'].default_value=.35;bs.inputs['Radial Roughness'].default_value=.45;out=nodes.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(bs.outputs[0],out.inputs['Surface']);data.materials.append(mat)
+00:34.953  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0148-native-groom-foundation\matched-a-local-native-tress-face.png'
+00:41.406  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0148-native-groom-foundation\matched-a-local-native-tress-body-face.png'
+00:59.453  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0148-native-groom-foundation\matched-a-local-native-tress-profile.png'
+01:18.015  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0148-native-groom-foundation\matched-a-local-native-tress-oblique.png'
+01:32.046  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0148-native-groom-foundation\matched-a-local-native-tress-back.png'
+資訊: 已儲存為「aevrynd-female-next-r0148-a-local-native-tress.blend」
+R148_COMPLETE_LOCAL_NATIVE_TRESS_HEAD_BODY_PREVIEW_DONE 85.36799836158752
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
