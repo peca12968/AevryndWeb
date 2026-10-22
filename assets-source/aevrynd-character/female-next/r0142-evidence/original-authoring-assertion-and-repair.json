@@ -1,0 +1,24 @@
+{
+  "UTC": "2026-10-22T00:03:41.847640+00:00",
+  "originalJobHandle": 75286,
+  "terminalObservation": "Original handle exit0/closed; actual log records AssertionError and Blender quit. A completed candidate/save/preview was not produced.",
+  "exception": "One shared central-part termination edge was incorrectly classified as an undeclared discontinuity.",
+  "actualEdge": [
+    702,
+    713
+  ],
+  "actualEndpointScalpUV": [
+    [
+      -6.985719450577581e-09,
+      0.12204635439821412
+    ],
+    [
+      -6.645294381915181e-09,
+      0.0713841616436568
+    ]
+  ],
+  "correction": "Declare central part edges containing at least one explicitly split root; the terminal edge connects the last split root to the next unsplit central vertex. Same1e-7 central-axis predicate and actual scalp topology; no geometry, flow, contact tolerance, root, strand or failed region removed/relaxed.",
+  "originalStartAndDirectAuthoringTimestampPreserved": true,
+  "sameOriginalRoundAndCandidateAttemptNoCounterOrDeadlineReset": true,
+  "notRestartedForTimeout": true
+}

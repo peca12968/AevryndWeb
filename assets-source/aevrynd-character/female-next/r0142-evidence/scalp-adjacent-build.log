@@ -1,0 +1,12 @@
+00:12.156  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0139-source\aevrynd-female-next-r0139-a-native-lid-follow.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0142-scalp-adjacent.py", line 95, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0142-scalp-adjacent.py", line 74, in main
+    assert not bad,('undeclared scalp neighbour discontinuity',bad[:4])
+           ^^^^^^^
+AssertionError: ('undeclared scalp neighbour discontinuity', [(702, 713)])
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
