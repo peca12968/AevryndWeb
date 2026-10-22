@@ -1,0 +1,75 @@
+{
+  "revision": "female-next-r0162",
+  "source": {
+    "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0162-source\\aevrynd-female-next-r0162-a-paired-tissue-contact.blend",
+    "engineAlias": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0162-source\\aevrynd-female-next-r0162-a-paired-tissue-contact.blend",
+    "sha256": "90fe9403483245738e436aad44f4c46cb380a402fd8b37beb6287080ea863d59",
+    "bytes": 1563661,
+    "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+    "actualPoseSource": "AFN161_ORIGINAL_NATIVE_MARGIN_POSE_REFERENCE",
+    "actualWallCorrectives": "AFN162_ACTUAL_PAIRED_TISSUE_CORRECTIVES",
+    "actualSkinVertices": 170227,
+    "actualSkinTriangles": 340446,
+    "status": "UNACCEPTED_PAIRED_CONTACT643_INNER_OUTER26_REFLECT_KEEP139",
+    "scope": "Same complete woman and same fixed inner-wall triangles. Adds all186748 actual moving retained outer polygons as inward contact partner, verified face IDs and normalized positions at all recorded poses. Inner/outer finite pairs1392->643 but Reflect0->26 atclosed11; no adopted complete appearance, blink/contact or runtime."
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "NO_COMPLETE_ADOPTION_CANTHUS_PARTIALLY_CLEANER_CONTACTS_REMAIN",
+      "score": null,
+      "actualCompleteHeadBodyNeutralHalfViewed": true,
+      "observations": [
+        "Large161B brown canthus protrusions reduced in matched162 complete head.",
+        "Dark/spiky canthus/lash areas and overall doll-like face/coarse glossy hair still remain.",
+        "Neutral/body palette visually retained; no broad angle/second-light audits after related failures."
+      ],
+      "noAdoptedCompleteNetGainAgainstWorking139": true
+    },
+    "function": {
+      "status": "PAIRED_CONTACT_AUTHORING_AND_EXPLICIT_RESET_ONLY",
+      "allSevenExplicitFrame1ResetRestorationM": 0,
+      "actualFrames": [
+        1,
+        9,
+        11,
+        24,
+        1
+      ],
+      "end24WallResidualM": 0.0009256204453527642,
+      "nativeEditAfterSingleUserCopyM": 0.00020000338554382324,
+      "nativeEditRestoreM": 0.0,
+      "linkedAMeshesNeedSingleUserForNativeEditing": true,
+      "completeBlinkGazeExportWeightsAndNaturalSettleNotAccepted": true
+    },
+    "contact": {
+      "status": "FAIL643_INNER_OUTER_AND26_REFLECT_FINITE_CROSSINGS",
+      "frame": 11,
+      "actualSkinTriangles": 340446,
+      "finiteEyeCrossingPairs": 0,
+      "finiteReflectCrossingPairs": 26,
+      "prior161ReflectPairsAtSamePose": 0,
+      "innerOuterSATCandidates": 767,
+      "finiteInnerOuterSegmentPairs": 643,
+      "pointOnlyWitnessCandidates": 124,
+      "unresolvedCandidates": 0,
+      "sameScopePrior161FiniteInnerOuterPairs": 1392,
+      "outerActualPolygonsIncluded": 186748,
+      "retainedOuterFaceIDsAndDisplayedPointCorrespondenceAllRecordedPosesConfirmed": true,
+      "maximumColliderVsDisplayedPositionErrorM": 7.646198047725332e-08,
+      "numericEpsilonM": 1e-12,
+      "signedMinimumM": null,
+      "wholeSelfFiniteContinuousOtherPosesNotAccepted": true,
+      "finiteCrossingsRemainAStatedFailureNotAverages": true
+    },
+    "runtime": {
+      "status": "NOT_EXPORTED_TESTED_OR_PROMOTED",
+      "runtimeAsset": null
+    }
+  },
+  "construction": "Native fixed inner-wall triangles, same161B unit-calibrated contact setup, adds complete actual moving outer Skin polygon domain with inward contact side and saved source IDs. Renders original full Skin; no failed face/layer omitted. Discrete corrective states remain authoring approximation, not natural tissue or engine physics.",
+  "dependencies": "Immutable complete161A Mesh library plus152 Mesh library and16 textures; linked Meshes require Single User for native editing. Working139 and external117 rollback separate. Small source size is not total project or runtime size.",
+  "rightsReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0162-paired-tissue-contact\\references-and-rights.json",
+  "newInstallNodeServerSubagentPaidRuntime": false,
+  "noFullCharacterAdoption": true
+}

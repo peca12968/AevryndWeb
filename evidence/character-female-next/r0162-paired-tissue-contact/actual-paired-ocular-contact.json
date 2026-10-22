@@ -1,0 +1,107 @@
+{
+  "sourceSha256": "90fe9403483245738e436aad44f4c46cb380a402fd8b37beb6287080ea863d59",
+  "cases": [
+    {
+      "frame": 11,
+      "object": "AFN126_ORIGINAL_Eye_Eye_0",
+      "actualAllSkinTriangles": 340446,
+      "actualEyeTriangles": 1192,
+      "SATProperCandidates": 0,
+      "finiteSegmentCorroboratedCrossings": 0,
+      "pointOnlyWitnessCandidates": 0,
+      "unresolved": 0,
+      "allSurfaceContactPairs": 0,
+      "firstFiniteWitnesses": []
+    },
+    {
+      "frame": 11,
+      "object": "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0",
+      "actualAllSkinTriangles": 340446,
+      "actualEyeTriangles": 980,
+      "SATProperCandidates": 26,
+      "finiteSegmentCorroboratedCrossings": 26,
+      "pointOnlyWitnessCandidates": 0,
+      "unresolved": 0,
+      "allSurfaceContactPairs": 26,
+      "firstFiniteWitnesses": [
+        {
+          "actualSkinTriangle": 339165,
+          "eyeTriangle": 542,
+          "finiteWitnessSpanM": 1.9804269470567932e-05,
+          "finiteEdgeFaceWitnesses": [
+            {
+              "method": "skin-edge/eye-face",
+              "segment": [
+                0,
+                1
+              ],
+              "t": 0.005242748944516309,
+              "u": 0.37145163079093785,
+              "v": 0.4607062251988721,
+              "worldPoint": [
+                -0.021215259152297373,
+                -0.11487591274895094,
+                1.4561732064482265
+              ]
+            },
+            {
+              "method": "skin-edge/eye-face",
+              "segment": [
+                2,
+                0
+              ],
+              "t": 0.9917275998195053,
+              "u": 0.36931362630159253,
+              "v": 0.4656336551883662,
+              "worldPoint": [
+                -0.02121944896904042,
+                -0.11488840354001201,
+                1.4561879927480879
+              ]
+            }
+          ]
+        },
+        {
+          "actualSkinTriangle": 339169,
+          "eyeTriangle": 542,
+          "finiteWitnessSpanM": 5.108331606818348e-06,
+          "finiteEdgeFaceWitnesses": [
+            {
+              "method": "skin-edge/eye-face",
+              "segment": [
+                1,
+                2
+              ],
+              "t": 0.9979681792870904,
+              "u": 0.37596628778780333,
+              "v": 0.458509224111987,
+              "worldPoint": [
+                -0.02120411637701776,
+                -0.1148720217802535,
+                1.4561772168171903
+              ]
+            },
+            {
+              "method": "skin-edge/eye-face",
+              "segment": [
+                2,
+                0
+              ],
+              "t": 0.0013983172308616126,
+              "u": 0.3742007099489725,
+              "v": 0.45918106168064227,
+              "worldPoint": [
+                -0.021208526456453356,
+                -0.11487303019247018,
+                1.456174844190802
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numericEpsilonM": 1e-12,
+  "actualDisplayedFullSkinAndOcularFacesIncluded": true,
+  "finiteSelfContinuousOtherPosesUnaccepted": true
+}

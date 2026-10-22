@@ -1,0 +1,35 @@
+{
+  "UTC": "2026-10-22T19:25:11.089886+00:00",
+  "originalStartedUTC": "2026-10-22T19:19:00+00:00",
+  "actualMovingOuterPolygons": 186748,
+  "allSourceOutsideFaceIDsPreserved": true,
+  "outerColliderPointsNormalizedMaximumErrorM": 7.645733395710854e-08,
+  "contactSide": "Exact retained outer polygon geometry, inward-oriented contact normals for internal membrane. Rendered Skin normals/materials unchanged.",
+  "outerCullingActual": false,
+  "actualOcularCorrespondence": [
+    {
+      "object": "AFN126_ORIGINAL_Eye_Eye_0",
+      "labObject": "AFN161B_LAB_AFN126_ORIGINAL_Eye_Eye_0",
+      "sameActualTriangleIndices": true,
+      "normalizedMaximumPositionErrorM": 7.620420520453997e-08,
+      "physicalOuterM": 9.999999776482581e-05
+    },
+    {
+      "object": "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0",
+      "labObject": "AFN161B_LAB_AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0",
+      "sameActualTriangleIndices": true,
+      "normalizedMaximumPositionErrorM": 7.639135525933245e-08,
+      "physicalOuterM": 9.999999776482581e-05
+    }
+  ],
+  "actualPhysicalContactLengths": {
+    "clothDistanceM": 0.00019999999552965163,
+    "selfDistanceM": 0.00014999999664723872,
+    "outerSkinOuterM": 9.999999776482581e-05,
+    "outerSkinInnerM": 9.999999776482581e-05
+  },
+  "allOriginalSolverMassStiffnessQualityAndActionUnchanged": true,
+  "noBadOuterFacesRemovedOrArbitraryExemptions": true,
+  "engineeringApproximationNotPhysiologicalPhysics": true,
+  "changedFailedPremise": "161B omitted actual moving outer Skin from solver partners. Add all retained outer polygons to actual Eye/Reflect+self, maintain source-face/point IDs, and independently test final displayed boundary overrides."
+}
