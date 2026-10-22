@@ -1,0 +1,21 @@
+"""Direct native sculptable rest locks, actual scalp root first. No UI input."""
+from pathlib import Path
+import bpy,numpy as np,json,datetime,hashlib
+R=Path('D:/Download/Aevrynd');E=R/'Evidence/character-female-next/r0150-authored-rooted-locks';S=R/'engine/assets/characters/female-next/source';SRC=S/'r0139-source/aevrynd-female-next-r0139-a-native-lid-follow.blend'
+def save(n,x):(E/n).write_text(json.dumps(x,indent=2,default=lambda a:a.tolist() if isinstance(a,np.ndarray) else str(a))+'\n',encoding='utf-8')
+def main():
+ bpy.ops.wm.open_mainfile(filepath=str(SRC));bpy.context.scene.frame_set(1);bpy.context.view_layer.update();skin=bpy.data.objects['AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD'];dg=bpy.context.evaluated_depsgraph_get();ob=skin.evaluated_get(dg);mesh=ob.to_mesh();P=np.array([ob.matrix_world@v.co for v in mesh.vertices]);mesh.calc_loop_triangles();T=np.array([t.vertices for t in mesh.loop_triangles]);ob.to_mesh_clear();faceIds=np.load(E.parent/'r0140-native-clump-roots/native-open-clump-guides.npz')['scalpFaces'];vertexIds=np.unique(T[faceIds]);scalp=P[vertexIds]
+ # One authored current-head front lock is a real native curve, not a capability-only sphere.
+ seed=np.array([-.008,-.045,1.572]);rootId=int(vertexIds[np.linalg.norm(scalp-seed,axis=1).argmin()]);root=P[rootId]
+ knots=np.array([root,[-.026,-.060,1.588],[-.059,-.074,1.567],[-.083,-.077,1.529],[-.086,-.079,1.486],[-.100,-.065,1.450],[-.106,-.039,1.407],[-.094,-.039,1.363],[-.105,-.025,1.330]])
+ data=bpy.data.hair_curves.new('AFN150_FIRST_HAND_AUTHORED_FRONT_LOCK_DATA');data.add_curves([len(knots)]);data.position_data.foreach_set('vector',knots.astype('f4').ravel());hair=bpy.data.objects.new('AFN150_FIRST_HAND_AUTHORED_FRONT_LOCK',data);bpy.context.scene.collection.objects.link(hair);data.surface=skin;data.surface_uv_map='AngelicaOriginalUV'
+ save('direct-actual-rooted-lock-authoring-start.json',{'UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'originalStartedUTC':'2026-10-22T04:38:15+00:00','action':'Select an actual indexed current Skin scalp vertex and directly author native3D front-lock rest control points. Demonstrated direct native geometry route; no failed UI/brush retry, no whole-head field, no source-card shape conversion, no gravity-generated hairstyle.','rootVertex':rootId,'actualRootWorld':root,'firstLockKnots':knots,'referenceOnlyNotSourceGeometry':'Previously inspected flutter-bob front/side/back photographs; no photo/texture/node/groom adopted.'})
+ values=np.empty((len(knots),3),'f4');data.position_data.foreach_get('vector',values.ravel());before=values.copy();values[3,0]+=.001;data.position_data.foreach_set('vector',values.ravel());bpy.context.view_layer.update();check=np.empty_like(values);data.position_data.foreach_get('vector',check.ravel());assert np.linalg.norm(check-before,axis=1).max()>.0009;data.position_data.foreach_set('vector',before.ravel());bpy.context.view_layer.update()
+ data.surface=None;bpy.data.libraries.write(str(E/'first-rooted-lock-component.blend'),{hair},fake_user=True);data.surface=skin
+ np.savez_compressed(E/'actual-current-scalp.npz',world=P,triangles=T,scalpFaces=faceIds,scalpVertexIds=vertexIds)
+ # Root-first indexed selections, shown to the author before additional rest strokes.
+ seeds=[[-.008,-.045,1.572],[.008,-.045,1.572],[-.012,-.005,1.584],[.012,-.005,1.584],[-.015,.035,1.577],[.015,.035,1.577],[-.055,-.035,1.551],[.055,-.035,1.551],[-.070,.005,1.530],[.070,.005,1.530],[-.055,.055,1.540],[.055,.055,1.540],[0,.075,1.530],[-.04,.065,1.480],[.04,.065,1.480]]
+ roots=[{'seed':s,'vertex':int(vertexIds[np.linalg.norm(scalp-s,axis=1).argmin()]),'world':P[int(vertexIds[np.linalg.norm(scalp-s,axis=1).argmin()])].tolist()} for s in seeds]
+ save('native-root-first-authoring-component.json',{'firstRootVertex':rootId,'firstRootWorld':root,'nativeControlPoints':len(knots),'directPointEditAndRestoreOnlyNotCompleteGroom':True,'headScalpBBox':[scalp.min(0),scalp.max(0)],'selectedIndexedRoots':roots,'componentOnlyNotCompleteCandidate':True})
+ print('R150_ACTUAL_CURRENT_SCALP_ROOT_FIRST_NATIVE_LOCK_AUTHORED',json.dumps({'root':root.tolist(),'scalpBBox':[scalp.min(0).tolist(),scalp.max(0).tolist()],'roots':roots}),flush=True)
+if __name__=='__main__':main()
