@@ -1,0 +1,22 @@
+{
+  "UTC": "2026-10-22T09:15:57.048364+00:00",
+  "originalStartedUTC": "2026-10-22T09:07:06+00:00",
+  "originalSourceBudgetBytes": 900000,
+  "effectiveSourceBudgetBytes": 1100000,
+  "originalEvidenceBudgetBytes": 1600000,
+  "effectiveEvidenceBudgetBytes": 1500000,
+  "reason": "Actual editable outer lid patch plus mask/attributes require more source data; avoid full170k Mesh duplication. New ordinary Git writes use existing C alternate, normal LFS cache/temp and working index use C. Frozen source/evidence archive hardlinks stay on D.",
+  "freeBytes": {
+    "C": 401367040,
+    "D": 2473984
+  },
+  "originalIndex": "D:\\Download\\Aevrynd\\sites-engine-journey\\.git\\index",
+  "originalIndexBytes": 2001020,
+  "originalIndexSha256": "0a3ffb874f74f2984a0e3ba8340b0feae59ccbcf5766897813cb507547f43747",
+  "originalStagedProductionEmpty": true,
+  "backupIndex": "C:\\Users\\USER\\AevryndCharacterStorage-r0157\\index-before",
+  "workingIndex": "C:\\Users\\USER\\AevryndCharacterStorage-r0157\\index-working",
+  "normalLFSStorage": "C:\\Users\\USER\\AevryndCharacterStorage-r0157\\lfs",
+  "indexPlan": "Use normal git add/commit with GIT_INDEX_FILE on C; before default-index write require original SHA unchanged and preserve backup; copy verified committed working index bytes into existing default index, then verify exact hashes/default Git state. No hook bypass/history deletion/move.",
+  "originalProductionClockAndDeadlinesUnchanged": true
+}

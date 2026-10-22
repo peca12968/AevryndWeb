@@ -1,0 +1,10 @@
+01:09.797  blend            | Read blend: "D:\Download\Aevrynd\sites-engine-journey\assets-source\aevrynd-character\female-next\r0157-source\aevrynd-female-next-r0157-a-outer-lid-topology.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0157-current-source.py", line 12, in <module>
+    counts=[len(lookup[tuple(sourceV[i])]) for i in boundary];mapped={int(i):lookup[tuple(sourceV[i])][0] for i in boundary if len(lookup[tuple(sourceV[i])])==1};assert all(x==1 for x in counts),'Shared boundary was not welded exactly once'
+                                                                                                                                                                         ~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Shared boundary was not welded exactly once
+資訊: Read library: 'D:\Download\Aevrynd\sites-engine-journey\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', '//..\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

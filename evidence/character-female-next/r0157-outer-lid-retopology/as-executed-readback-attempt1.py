@@ -1,0 +1,39 @@
+"""Independent actual source/geometry/control/weld restoration and local failure."""
+from pathlib import Path
+import bpy,numpy as np,json,importlib.util,collections,time
+R=Path('D:/Download/Aevrynd');E=R/'Evidence/character-female-next/r0157-outer-lid-retopology';M=R/'sites-engine-journey/assets-source/aevrynd-character/female-next'
+def mod(n,f):
+ s=importlib.util.spec_from_file_location(n,Path(__file__).with_name(f));m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+h=mod('r157verify','build-female-next-r0157-outer-lid-retopology.py');a=h.a;c=mod('r157contact','contact-female-next-r0138-ocular-surfaces.py');edge=mod('r157edge','build-female-next-r0138-native-sockets.py')
+def save(n,x):(E/n).write_bytes((json.dumps(x,indent=2,default=lambda v:v.tolist() if isinstance(v,np.ndarray) else str(v))+'\n').encode())
+def geometry(ob):return a.geometry(ob)
+tick=time.time();b=json.loads((E/'a-build-summary.json').read_text());p=M/'r0157-source'/Path(b['output']).name;assert a.a.sha(p)==b['sha256'];bpy.ops.wm.open_mainfile(filepath=str(p));s=bpy.context.scene;rig=bpy.data.objects[b['actualRig']];skin=bpy.data.objects[b['actualSkin']];patch=bpy.data.objects[b['actualPatch']];reference=bpy.data.objects['AFN157_PRE_RETOPOLOGY_NATIVE_BIND_REFERENCE'];s.frame_set(1);bpy.context.view_layer.update();names=a.FIXED+a.MOVING;rest={n:geometry(bpy.data.objects[n])[0] for n in names};sourceV,sourceT=geometry(reference);z=np.load(E/'authored-outer-lid-patch.npz');boundary=z['originalBoundaryVertices'];outputV,outputT=geometry(skin);lookup=collections.defaultdict(list)
+for i,x in enumerate(outputV):lookup[tuple(x)].append(i)
+counts=[len(lookup[tuple(sourceV[i])]) for i in boundary];mapped={int(i):lookup[tuple(sourceV[i])][0] for i in boundary if len(lookup[tuple(sourceV[i])])==1};assert all(x==1 for x in counts),'Shared boundary was not welded exactly once'
+ev=skin.evaluated_get(bpy.context.evaluated_depsgraph_get());d=ev.to_mesh();counter=collections.Counter(tuple(sorted((u,v))) for f in d.polygons for u,v in zip(list(f.vertices),list(f.vertices)[1:]+list(f.vertices)[:1]));ev.to_mesh_clear();loops=json.loads((E/'actual-outer-lid-boundaries.json').read_text());incidences=[]
+for row in loops['reports']:
+ for loop in row['loops']:
+  ids=loop['originalVertexIds'];incidences.extend(counter[tuple(sorted((mapped[u],mapped[v])))] for u,v in zip(ids,ids[1:]+ids[:1]))
+assert all(x==2 for x in incidences),'Authored/source boundary does not have two real incident faces'
+rows=[]
+for f in [1,9,11,24]:
+ s.frame_set(f);bpy.context.view_layer.update();V,T=geometry(skin);assert np.isfinite(V).all();rows.append({'frame':f,'blink':[float(rig[x]) for x in ['blink_L','blink_R']],'actualSkinVertices':len(V),'actualSkinTriangles':len(T),'layerMovementMaximumM':{n:float(np.linalg.norm(geometry(bpy.data.objects[n])[0]-rest[n],axis=1).max()) for n in names if n!=skin.name}})
+assert max(rows[-1]['layerMovementMaximumM'].values())==0;assert np.array_equal(geometry(skin)[0],rest[skin.name]);s.frame_set(11);bpy.context.view_layer.update();baseline={n:geometry(bpy.data.objects[n])[0] for n in [skin.name,patch.name,*h.h.h.ATTACH]};table=bpy.data.objects['AFN155_'+h.h.h.ATTACH[0]+'_BLINK_ATTACHMENT'].data;ids=np.empty((len(table.vertices),3),'i4');bc=np.empty((len(table.vertices),3));table.attributes['AFN155_BC'].data.foreach_get('vector',bc.ravel())
+for k in range(3):table.attributes['AFN155_V'+str(k)].data.foreach_get('value',ids[:,k])
+active=np.flatnonzero(np.linalg.norm(bc,axis=1)>0);row=int(active[0]);vi=int(ids[row,np.argmax(bc[row])]);co=patch.data.vertices[vi].co.copy();patch.data.vertices[vi].co.y+=.0002;patch.data.update();patch.update_tag(refresh={'DATA'});bpy.context.view_layer.update();rawMove=float(np.linalg.norm(geometry(skin)[0]-baseline[skin.name],axis=1).max());patch.data.vertices[vi].co=co;patch.data.update();patch.update_tag(refresh={'DATA'});bpy.context.view_layer.update();attr=patch.data.attributes['AFN157_CLOSED_SCULPT'];old=attr.data[vi].vector.copy();attr.data[vi].vector.y+=.0002;patch.data.update();patch.update_tag(refresh={'DATA'});bpy.context.view_layer.update();moves={n:float(np.linalg.norm(geometry(bpy.data.objects[n])[0]-baseline[n],axis=1).max()) for n in baseline};assert moves[skin.name]>.00005 and moves[h.h.h.ATTACH[0]]>1e-6;attr.data[vi].vector=old;patch.data.update();patch.update_tag(refresh={'DATA'});bpy.context.view_layer.update();restores={n:float(np.linalg.norm(geometry(bpy.data.objects[n])[0]-baseline[n],axis=1).max()) for n in baseline};assert max(restores.values())==0
+save('actual-contributing-patch-edit-readback.json',{'vertex':vi,'rawPatchPositionEditMaximumDisplayedSkinMovementM':rawMove,'rawMeshPositionIsNotYetAnEffectiveEditControl':rawMove==0,'actualPoseAttributeEdit':'AFN157_CLOSED_SCULPT','poseAttributeDeltaM':.0002,'actualDisplayedGeometryAndAttachmentMovementM':moves,'exactRestorationM':restores,'rawVertexEditGapExplicitlyUnaccepted':True,'attributeOperationNotCompleteBlinkOrEditableMeshAcceptance':True})
+# Carry the exact original ten-sided source wall through the actual joined Skin.
+RV,RT=geometry(reference);originalIds=list(reference.data.polygons[186630].vertices);sig=sorted(tuple(v) for v in RV[originalIds]);V,T=geometry(skin);ev=skin.evaluated_get(bpy.context.evaluated_depsgraph_get());d=ev.to_mesh();matches=[f.index for f in d.polygons if len(f.vertices)==10 and sorted(tuple(V[i]) for i in f.vertices)==sig];d.calc_loop_triangles();triPoly=np.empty(len(d.loop_triangles),'i4');d.loop_triangles.foreach_get('polygon_index',triPoly);ev.to_mesh_clear();assert len(matches)==1;selected=np.flatnonzero(triPoly==matches[0]);cases=[]
+for name in a.MOVING:
+ W,F=geometry(bpy.data.objects[name]);q=c.query(V[T[selected]],W[F],V[T[selected]].min(1),V[T[selected]].max(1));pairs=q['properCrossings'];witness=[]
+ for si,ei in pairs[:2]:
+  hits=edge.witness(V[T[selected[si]]],W[F[ei]]);assert len(hits)>=2;witness.append({'actualSkinTriangle':int(selected[si]),'eyeTriangle':int(ei),'finiteEdgeFaceWitnesses':hits})
+ cases.append({'object':name,'properCrossingPairs':len(pairs),'firstIndependentWitnesses':witness})
+save('retained-original-wall-only-contact.json',{'frame':11,'sourceOriginalPolygon':186630,'actualOutputPolygon':matches[0],'testedActualOutputSkinTriangles':len(selected),'cases':cases,'localScopeOnly':True,'numericEpsilonM':1e-12,'wholeNewPatchAllSkinFiniteSelfContinuousNotAccepted':True})
+libs=[];textures=[]
+for lib in bpy.data.libraries:
+ q=Path(bpy.path.abspath(lib.filepath)).resolve();assert q.is_relative_to(M.resolve());libs.append({'file':str(q),'sha256':a.a.sha(q)})
+for im in bpy.data.images:
+ if im.source=='FILE' and not im.packed_file and im.filepath:
+  q=Path(bpy.path.abspath(im.filepath,library=im.library)).resolve();assert q.is_relative_to(M.resolve()) and q.is_file();textures.append({'file':str(q),'sha256':a.a.sha(q)})
+assert len(libs)==1 and len(textures)==16;s.frame_set(1);bpy.context.view_layer.update();assert all(np.array_equal(geometry(bpy.data.objects[n])[0],rest[n]) for n in names);assert a.a.sha(p)==b['sha256'];save('independent-source-archive-readback.json',{'source':str(p),'sha256':b['sha256'],'actualCompleteDisplayedSkinVertexCount':len(outputV),'actualNewPatchVertexCount':len(patch.data.vertices),'exactSharedBoundaryVertexCount':len(counts),'allSharedBoundaryVerticesWeldedExactlyOnce':True,'allSharedBoundaryEdgesHaveTwoIncidentFaces':True,'constructionWeldDistanceM':0.,'actualBlinkPoses':rows,'allSevenNeutralRestorationM':0,'poseAttributeEditsDriveActualSkinAndAttachmentsAndRestore':True,'rawPatchMeshPositionEditGapRemains':rawMove==0,'relativeLibrariesWithinArchive':libs,'relativeTexturesWithinArchive':textures,'completeOperationAppearanceContactRuntimeNotAccepted':True});print('R157_INDEPENDENT_ACTUAL_RETOPOLOGY_BOUNDARIES_ATTRIBUTE_EDIT_RESTORE_LOCAL_WALL_DONE',time.time()-tick,flush=True)
