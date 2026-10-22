@@ -1,0 +1,11 @@
+00:04.453  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0165-source\aevrynd-female-next-r0165-a-native-hair-optics.blend"
+C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0174-root-flow-domain.py:20: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN174_DIAGNOSTIC_'+label);mat.diffuse_color=color;mat.use_nodes=True;bs=mat.node_tree.nodes.get('Principled BSDF') or next(x for x in mat.node_tree.nodes if x.bl_idname=='ShaderNodeBsdfPrincipled');bs.inputs['Base Color'].default_value=color;bs.inputs['Roughness'].default_value=.6;ico=n.new('GeometryNodeMeshIcoSphere');ico.inputs['Radius'].default_value=.00065;ico.inputs['Subdivisions'].default_value=1;setm=n.new('GeometryNodeSetMaterial');setm.inputs['Material'].default_value=mat;L.new(ico.outputs['Mesh'],setm.inputs['Geometry']);points=n.new('GeometryNodeMeshToPoints');points.mode='VERTICES';L.new(split.outputs[port],points.inputs['Mesh']);inst=n.new('GeometryNodeInstanceOnPoints');L.new(points.outputs['Points'],inst.inputs['Points']);L.new(setm.outputs['Geometry'],inst.inputs['Instance']);L.new(inst.outputs['Instances'],join.inputs['Geometry'])
+00:09.609  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0174-artist-volume-flow\matched-diagnostic-root-domain-only-face.png'
+00:13.422  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0174-artist-volume-flow\matched-diagnostic-root-domain-only-back.png'
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+資訊: 已儲存為「aevrynd-female-next-r0174-a-root-flow-domain.blend」
+R174_ACTUAL_ROOT_REFERENCE_DOMAIN_FAILED_NO_HAIRSTYLE_EMITTED_SOURCE_SAVED 9.442023992538452
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
