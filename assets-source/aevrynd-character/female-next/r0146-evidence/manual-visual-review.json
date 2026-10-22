@@ -1,0 +1,42 @@
+{
+  "revision": "female-next-r0146",
+  "decision": "REJECT_UNCONVINCING_CLOSED_LID_APPEARANCE_KEEP_R139",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "actualCompleteImagesViewed": [
+    {
+      "file": "r0146-complete-head-body-comparison.png",
+      "sha256": "b76d2ca476d4233e74ff382d7fe3adaf4abab25ff3c23ab233af53a6f32ac92d"
+    },
+    {
+      "file": "r0146-actual-blink-key-poses.png",
+      "sha256": "5d3df55580b7929d1f19abca8df97211d421e9352f767a74e20bb1fb52699f7c"
+    },
+    {
+      "file": "matched-a-connected-palpebral-lining-oblique.png",
+      "sha256": "cdd4625b571082ac1e22c6b8ebf1106edc16d36e7e7207104399aff9d1623a33"
+    },
+    {
+      "file": "matched-closed-blink-profile.png",
+      "sha256": "fec813d50af30fdd72c28b47c44ffdd15f97e4e35780963bf8abecb2c6c9329d"
+    },
+    {
+      "file": "three-round-complete-head-body.png",
+      "sha256": "6260ba818a81b53060eda2c3ac2c4a751b5dbd09ce9454b49176c089169d1228"
+    },
+    {
+      "file": "three-round-complete-profile-back.png",
+      "sha256": "b29b6b99f5409ec54dc31fb3df77853b733fc5ddd3ed4bd4ecd1948e0460f001"
+    }
+  ],
+  "protectedGains": "Matched complete neutral head/body, oblique/profile/back retain r139 face/skin/body and original hair. Independent retained168906 outer points, weights, other raw meshes and original material graphs exact; neutral/restoration errors0.",
+  "visibleRejection": "Closed pose still has conspicuous grey-blue upper-lid bands and an unconvincing eyelid fold/lash boundary. This does not establish a visible net gain over r145 B or a natural complete blink. Hair remains broad shiny coarse clumps, particularly side/back. No appearance adoption or score increase.",
+  "correctedInitialInference": "Initial image impression of a slit is not accepted as exposed globe:11990 actual face-camera pixel-centre rays per tested pose find0 eye-before-Skin hits at closed f9, versus1401 distinct pixel centres at open. This sampled Skin-vs-Eye mesh diagnosis excludes other occluders/transparency/shading and is not exact render occupancy, global closure, distance or contact proof.",
+  "technicalComponentRetained": "Explicit fully connected posterior patch replaces628 old lining polygons; no exact zero-area triangles in17 independent actual Skin poses. Native16-key-per-layer mechanism, actual manual controls and neutral restoration work. Keep as unaccepted components; no full blink/contact/gaze49/runtime acceptance.",
+  "broadAuditsStoppedAfterVisibleFailure": true,
+  "secondLightNotRenderedAfterRejectedDirection": true,
+  "globalSignedMinimumM": null,
+  "naturalBlinkTimingAccepted": false,
+  "userAcceptance": false
+}

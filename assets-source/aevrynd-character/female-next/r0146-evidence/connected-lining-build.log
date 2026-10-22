@@ -1,0 +1,14 @@
+00:31.719  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0144-source\aevrynd-female-next-r0144-a-current-skin-blink.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0146-connected-lining.py:54: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  lining=bpy.data.materials.new('AFN146_ANATOMICAL_POSTERIOR_LID_LINING');lining.use_nodes=True;bs=next(n for n in lining.node_tree.nodes if n.bl_idname=='ShaderNodeBsdfPrincipled');bs.inputs['Base Color'].default_value=(.58,.37,.33,1);bs.inputs['Roughness'].default_value=.32;lining['scope']='Engineering warm posterior lining material on explicitly rebuilt inner faces only; original outer face/body materials and exposure unchanged. Not calibrated tissue optics or material-only collision rescue.'
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0146-connected-lining.py", line 121, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0146-connected-lining.py", line 87, in main
+    assert np.array_equal(vertex_weights(skin)[:len(keepIds)],oldWeights[keepIds])
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

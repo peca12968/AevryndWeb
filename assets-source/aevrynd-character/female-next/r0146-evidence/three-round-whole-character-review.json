@@ -1,0 +1,178 @@
+{
+  "actualRounds": [
+    "r144",
+    "r145",
+    "r146"
+  ],
+  "fullSavedStates": [
+    "r144 A",
+    "r145 A failed ray fallback",
+    "r145 B native morph",
+    "r146 A connected lining"
+  ],
+  "actualHeadBodyProfileBackBoardsViewed": true,
+  "boards": [
+    "three-round-complete-head-body.png",
+    "three-round-complete-profile-back.png"
+  ],
+  "allFailedAndUnregisteredTrialsAccountedWithoutRecount": [
+    {
+      "round": "r144",
+      "effectiveContinuation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0144-current-skin-blink\\continuation.json",
+      "decision": "REJECT_COMPLETE_CURRENT_SKIN_BLINK_RELATED_OCULAR_REFLECT_SURFACE_FAILURE_KEEP_R139",
+      "originalTerminalJobsPreserved": [
+        {
+          "handle": 51931,
+          "job": "pre-save authoring attempt1",
+          "log": "current-skin-blink-build-attempt1.log",
+          "terminal": "TypeError, no complete source",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 21492,
+          "job": "pre-save authoring attempt2",
+          "log": "current-skin-blink-build-attempt2.log",
+          "terminal": "TypeError, no complete source",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 10813,
+          "job": "pre-save attachment attempt3",
+          "log": "current-skin-blink-build-attempt3.log",
+          "terminal": "Neutral restoration assertion, no complete source",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 81699,
+          "job": "one full saved candidate and matched motion",
+          "log": "current-skin-blink-build-attempt4.log",
+          "terminal": "R144_ACTUAL_CURRENT_SKIN_BLINK_COMPLETE_HEAD_BODY_MOTION_PREVIEW_DONE",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 47332,
+          "job": "original independent verifier",
+          "log": "independent-current-blink-readback.log",
+          "terminal": "Triangle array assertion before contact",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 48149,
+          "job": "original topology diagnostic",
+          "log": "gaze-topology-diagnostic.log",
+          "terminal": "R144_GAZE_TOPOLOGY_MISMATCH_DIAGNOSTIC_DONE",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 48648,
+          "job": "independent verifier attempt2",
+          "log": "independent-current-blink-readback-attempt2.log",
+          "terminal": "Empty original material slot serialization error before contact",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 17158,
+          "job": "independent verifier attempt3",
+          "log": "independent-current-blink-readback-attempt3.log",
+          "terminal": "R144_INDEPENDENT_ACTUAL_BLINK_RESTORE_GAZE49_AND_DEFORMED_SURFACE_CHECK_DONE",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 27421,
+          "job": "minimum first failure reproduction",
+          "log": "first-blink-failure-witness.log",
+          "terminal": "R144_FIRST_FAILURE_INDEPENDENT_FINITE_EDGES_REPRODUCED",
+          "notRestartedForTimeout": true
+        }
+      ],
+      "originalFailedAndUnregisteredAttemptsIncludedByReference": true
+    },
+    {
+      "round": "r145",
+      "effectiveContinuation": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0145-aspherical-lid-wall\\continuation.json",
+      "decision": "REJECT_NATIVE_RAY_FALLBACK_AND_DEGENERATE_SUBDIVIDED_LID_TOPOLOGY_KEEP_R139",
+      "originalTerminalJobsPreserved": [
+        {
+          "handle": 75524,
+          "job": "pre-save A lineage failure",
+          "log": "aspherical-lid-wall-build.log",
+          "terminal": "Original ID mapping assertion, no complete source",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 8756,
+          "job": "one full A and matched previews",
+          "log": "aspherical-lid-wall-build-attempt2.log",
+          "terminal": "R145_ACTUAL_ASPHERICAL_LID_WALL_COMPLETE_HEAD_BODY_BLINK_PREVIEW_DONE",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 55866,
+          "job": "independent A actual field readback",
+          "log": "independent-aspherical-lid-wall-readback.log",
+          "terminal": "Frame2 ray failure assertion, no contact acceptance",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 1134,
+          "job": "minimal actual object-info and unit-ray capability",
+          "log": "native-ray-space-diagnostic.log",
+          "terminal": "R145_NATIVE_OBJECT_INFO_AND_UNIT_RAY_CAPABILITY_OBSERVED",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 67964,
+          "job": "pre-save normalized field repair",
+          "log": "native-ray-direction-repair-build.log",
+          "terminal": "Normalized production fields still fail; no B source",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 60803,
+          "job": "pre-save native morph plane representation",
+          "log": "native-lamellar-morph-build.log",
+          "terminal": "Derived-plane convex residual assertion; no B source",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 30883,
+          "job": "one full native B and matched previews",
+          "log": "native-lamellar-morph-build-attempt2.log",
+          "terminal": "R145_B_ACTUAL_NATIVE_LAMELLAR_MORPH_COMPLETE_HEAD_BODY_BLINK_PREVIEW_DONE",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 19785,
+          "job": "independent B actual morph and contact readback",
+          "log": "b-independent-native-lamellar-morph-readback.log",
+          "terminal": "R145_B_INDEPENDENT_ACTUAL_NATIVE_MORPH_BLINK_RESTORE_AND_GAZE49_CONTACT_DONE",
+          "notRestartedForTimeout": true
+        },
+        {
+          "handle": 6591,
+          "job": "minimum neutral degeneracy localization",
+          "log": "first-neutral-degeneracy-diagnostic.log",
+          "terminal": "R145_FAILED_NEUTRAL_DEGENERACY_LOCALIZED",
+          "notRestartedForTimeout": true
+        }
+      ],
+      "originalFailedAndUnregisteredAttemptsIncludedByReference": true
+    },
+    {
+      "round": "r146",
+      "fullSavedCandidateCount": 1,
+      "preSaveFullBuilderFailures": 2,
+      "componentNotAFullWoman": true,
+      "minimumVerifier": 71821,
+      "originalBuilderHandles": [
+        79300,
+        22519,
+        10025
+      ],
+      "allAttemptsAndOriginalTimingPreserved": true
+    }
+  ],
+  "findings": "All four neutral full women retain the same protected face/body look. No adopted complete appearance gain. Full current hair still reads as broad shiny coarse clumps; face/skin remain artificial in close view, and eye closure remains visibly unconvincing. No new body/clothes/layers/hair dynamics/runtime completion. Rejected inner topology is genuinely rebuilt in146, but positive-area topology and native operation are components, not complete-character improvement.",
+  "appearanceStagnationReset": false,
+  "fullGoalUnchanged": true
+}
