@@ -1,0 +1,95 @@
+{
+  "actualProductionWindow": [
+    "r141",
+    "r142",
+    "r143"
+  ],
+  "actualCompleteCandidateStates": [
+    {
+      "revision": "r141",
+      "candidate": "a",
+      "source": {
+        "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0141-source\\aevrynd-female-next-r0141-a-authored-parting.blend",
+        "sha256": "d966d6cd3496f153eb7c6abc48a033274654b5914882b300e490acb44552229a",
+        "bytes": 198542412,
+        "status": "REJECT_COMPLETE_AUTHORED_PARTED_HAIR_APPEARANCE_KEEP_R139",
+        "scope": "One full same woman with60 original authored flow guides and41791 current-scalp-bound native fibres. Partial native edits restore, but matched complete hairstyle is rejected. No appearance/new complete operation/finite contact/runtime acceptance."
+      },
+      "decision": "Rejected parted-flow crown ridges/folded curtains/heavy tips."
+    },
+    {
+      "revision": "r142",
+      "candidate": "a",
+      "source": {
+        "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0142-source\\aevrynd-female-next-r0142-a-scalp-adjacent.blend",
+        "sha256": "70ac7625da86ba453f866f6102f86f68c37cd00cf9488ebf4b0b35a05eaff2a6",
+        "bytes": 201983373,
+        "status": "REJECT_COMPLETE_ROOT_FIRST_SCALP_FLOW_APPEARANCE_KEEP_R139",
+        "scope": "One full same woman with original current-scalp-rooted native guides and actual triangle-barycentric child interpolation. Native editing/root restoration passes, complete hairstyle visibly rejected. No adopted appearance/new complete usable operation/finite contact/runtime acceptance."
+      },
+      "decision": "Rejected scalp-flow face veil/helmet/collapsed volume."
+    },
+    {
+      "revision": "r143",
+      "candidate": "a",
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0143-source\\aevrynd-female-next-r0143-a-section-volumes.blend",
+      "sha256": "d9a88d3ecb6da43511a875f4df0c30fff9853648e412fa0d77cf839df73082c8",
+      "decision": "REJECT_AUTHORED_SECTION_ENVELOPE_OVERSIZED_TWIN_MASSES_PLASTIC_HELMET_AND_BLOCK_ENDS_KEEP_R139"
+    }
+  ],
+  "allThreeActualCompleteCandidateStatesViewed": true,
+  "adoptedCompleteAppearanceGainInWindow": false,
+  "adoptedCompleteScopedOperationInWindow": false,
+  "originalR142FailedPartEndAssertionAttemptIncludedAsActualAttemptNotAnotherCompleteCandidate": {
+    "record": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0142-scalp-adjacent-flow\\original-authoring-assertion-and-repair.json",
+    "originalTimingCostsAndFailurePreserved": true
+  },
+  "allKnownFailedAndUnregisteredTrialsReconciled": true,
+  "currentUniqueAdoptedWorkingWoman": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0139-source\\aevrynd-female-next-r0139-a-native-lid-follow.blend",
+    "sha256": "5128a461a011899c77b275055ea3a8a94ca278873665dd08f72a6003d4a37bb9",
+    "bytes": 136089229,
+    "status": "RETAIN_R126_STATIC_LOOK_ADOPT_R139_NATIVE_COUPLED_GAZE_OPERATION",
+    "scope": "Same complete woman retains r126 scoped neutral static face/head/skin appearance and now adopts only actual native fixed-head eye/lid/lash/wet-line gaze operation in recorded original yaw20/pitch10 action/manual scope. R138 socket reconstruction retained. Not complete avatar anatomy/eyes-layer anatomy/finite contacts/hair/clothes/actions/runtime/rights/user acceptance.",
+    "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualFaceControls": "AFN138_ACTUAL_CURRENT_GAZE_RIG / AFN138_EYE_L,R drive four AFN139 upper/lower lid bones, actual current AFN126 skin and original lashes/wet line. AFN138_NATIVE_CURRENT_GAZE_DEMO frames1..49 at24fps. No actual current blink/jaw/head tracking/body/clothes rig operation accepted.",
+    "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope. R139 adds scoped gaze function only; no new neutral appearance adoption.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false,
+    "originalArtist": "DarkNik / original NikZava284",
+    "assetLicense": "CC-BY4.0, attribution and modifications retained",
+    "acceptedCompleteScopedOperations": [
+      "Recorded fixed-head native coupled ocular/lid/lash/wet-line gaze at original yaw +/-20deg and pitch +/-10deg, independent actual operation and neutral restoration."
+    ],
+    "scopedGazeOperationAccepted": true,
+    "allCharacterOperationsComplete": false,
+    "staticAppearanceBaseline": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-b-source-section-neck.blend",
+      "sha256": "798c2496aadac717d967362c58afa88d38ceac584248c85f6d86afc618253631",
+      "bytes": 135305654,
+      "status": "ADOPT_SCOPED_STATIC_COMPLETE_FACE_APPEARANCE_GAIN",
+      "scope": "Same complete woman. Adopt only static actual complete-character face/head form and skin-source appearance across recorded matched views/second light; all controls, hair physics, finite contacts/runtime/rights/user gates open.",
+      "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "actualFaceControls": "No controls connected to new visible head. AFN59_FACE_CONTROLS/blink_left/right retained on hidden r117 rollback only; actual new skin motion0.",
+      "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope.",
+      "completeOperationAccepted": false,
+      "femaleUserAccepted": false,
+      "originalArtist": "DarkNik / original NikZava284",
+      "assetLicense": "CC-BY4.0, attribution and modifications retained"
+    }
+  },
+  "evidence": [
+    "whole-review-141-142-143-head-body.png",
+    "whole-review-141-142-143-profile-back.png"
+  ],
+  "priorReviewWindow": [
+    "r138",
+    "r139",
+    "r140"
+  ],
+  "appearanceStagnationNotReset": true,
+  "completeHairNaturalDynamicsFiniteContactsAndRuntimeAccepted": false,
+  "finding": "Three controlled full trials preserve correct native editing/roots but all have artificial broad sheet/shell/envelope shapes. Stop this formula-driven whole-style rest-shape family. An actual coherent artist root/guide/clump/scalp construction with its original dependency roles is needed, rather than another field/section coefficient set."
+}

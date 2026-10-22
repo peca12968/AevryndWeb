@@ -1,0 +1,13 @@
+00:10.750  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0139-source\aevrynd-female-next-r0139-a-native-lid-follow.blend"
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0143-section-volumes.py:93: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  hair=bpy.data.objects.new('AFN143_CURRENT_AUTHORED_SECTION_VOLUME_HAIR',data);scene.collection.objects.link(hair);three_guide_modifier(hair,skin,guideOb);mat=bpy.data.materials.new('AFN143_ORIGINAL_DARK_BROWN_NATIVE_FIBRE');mat.use_nodes=True;nodes=mat.node_tree.nodes;nodes.clear();shader=nodes.new('ShaderNodeBsdfHairPrincipled');shader.parametrization='MELANIN';shader.inputs['Melanin'].default_value=.90;shader.inputs['Melanin Redness'].default_value=.15;shader.inputs['Roughness'].default_value=.35;shader.inputs['Radial Roughness'].default_value=.45;out=nodes.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(shader.outputs[0],out.inputs['Surface']);data.materials.append(mat);old.hide_render=True;old.hide_set(True);bpy.context.view_layer.update();error=float(np.linalg.norm(a.q.hair(hair)-V.reshape(-1,3),axis=1).max());assert error<4e-6,error
+00:45.188  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0143-authored-section-volumes\matched-a-section-volumes-face.png'
+00:51.813  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0143-authored-section-volumes\matched-a-section-volumes-body-face.png'
+01:07.328  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0143-authored-section-volumes\matched-a-section-volumes-profile.png'
+01:23.938  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0143-authored-section-volumes\matched-a-section-volumes-oblique.png'
+01:38.313  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0143-authored-section-volumes\matched-a-section-volumes-back.png'
+資訊: 已儲存為「aevrynd-female-next-r0143-a-section-volumes.blend」
+R143_COMPLETE_AUTHORED_SECTION_VOLUME_HEAD_BODY_PREVIEW_DONE 87.68558740615845
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
