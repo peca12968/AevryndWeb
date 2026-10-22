@@ -1,0 +1,17 @@
+00:04.532  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0165-source\aevrynd-female-next-r0165-a-native-hair-optics.blend"
+00:15.188  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0173-artist-fibre-surface\matched-baseline-artist-surface-face.png'
+00:18.250  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0173-artist-fibre-surface\matched-baseline-artist-surface-body-face.png'
+C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0173-artist-fibre-surface.py:19: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN173_ACTUAL_PIGMENT_ALPHA_FIBRE_SURFACE');mat.use_nodes=True;n=mat.node_tree.nodes;n.clear();L=mat.node_tree.links;out=n.new('ShaderNodeOutputMaterial');bs=n.new('ShaderNodeBsdfPrincipled');bs.inputs['Weight'].default_value=1;bs.inputs['Metallic'].default_value=0;bs.inputs['IOR'].default_value=1.55;bs.inputs['Roughness'].default_value=.38;bs.inputs['Anisotropic'].default_value=.65;bs.inputs['Anisotropic Rotation'].default_value=0;bs.inputs['Specular IOR Level'].default_value=.5;bs.inputs['Specular Tint'].default_value=(1,1,1,1);bs.inputs['Emission Strength'].default_value=0;L.new(bs.outputs['BSDF'],out.inputs['Surface'])
+Traceback (most recent call last):
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0173-artist-fibre-surface.py", line 29, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0173-artist-fibre-surface.py", line 19, in main
+    mat=bpy.data.materials.new('AFN173_ACTUAL_PIGMENT_ALPHA_FIBRE_SURFACE');mat.use_nodes=True;n=mat.node_tree.nodes;n.clear();L=mat.node_tree.links;out=n.new('ShaderNodeOutputMaterial');bs=n.new('ShaderNodeBsdfPrincipled');bs.inputs['Weight'].default_value=1;bs.inputs['Metallic'].default_value=0;bs.inputs['IOR'].default_value=1.55;bs.inputs['Roughness'].default_value=.38;bs.inputs['Anisotropic'].default_value=.65;bs.inputs['Anisotropic Rotation'].default_value=0;bs.inputs['Specular IOR Level'].default_value=.5;bs.inputs['Specular Tint'].default_value=(1,1,1,1);bs.inputs['Emission Strength'].default_value=0;L.new(bs.outputs['BSDF'],out.inputs['Surface'])
+                                                                                                                                                                                                                                ~~~~~~~~~^^^^^^^^^^
+KeyError: 'bpy_prop_collection[key]: key "Weight" not found'
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

@@ -1,0 +1,133 @@
+{
+  "UTC": "2026-10-22T23:14:09.282429+00:00",
+  "originalStartedUTC": "2026-10-22T23:09:23+00:00",
+  "changedFailedPremise": "Original artist 3D volume kept. Inspection proves source Base Color replaced by gray mix, albedo duplicated into emission, IOR1000 and no fibre tangent/normal. Rebuild whole actual surface graph using exact original Image_0 pigment/coverage, no emission, UV-longitudinal anisotropy and8um shading micro-relief. This is not IOR-only165 retry or rescue of172 guides.",
+  "actualHair": "AFN126_ORIGINAL_Hair_Hair_0",
+  "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+  "actualMaterial": "AFN173_ACTUAL_PIGMENT_ALPHA_FIBRE_SURFACE",
+  "originalWorldVertexAndTriangleHashes": [
+    "e42b3a177f11486f97a597902e0272875c00366d03b20a1e9328fc0a23c6faf7",
+    "5c5e833f135810a4adee7ac5719f54326001188f95e25544af9aa1456706e67c"
+  ],
+  "sourceOriginalUVMapHash": "469fe5c99a9a94d96f6458678f5f0b4ad09edef41fb6babd6c421edbc0edd2b6",
+  "newDirectionUVSwapsOriginalUAndV": true,
+  "sourceAlphaReconnectedWithoutOriginalGlobal0747Multiplier": true,
+  "nativeSourceIOR": 1000,
+  "currentIOR": 1.55,
+  "currentRoughness": 0.38,
+  "currentAnisotropy": 0.65,
+  "emissionStrength": 0,
+  "microBumpDistanceM": 8e-06,
+  "microBumpStrength": 0.45,
+  "sourceUPhaseCycles": 1600,
+  "exactSourcePigmentAndCoveragePackedBytesUsed": true,
+  "noImage1NormalMapGuess": true,
+  "newActualGeometryDisplacement": false,
+  "surfaceBumpNotFinitePhysicalIndividualFibres": true,
+  "approximatedCardSurfaceNotFullHairScatteringOrPhysics": true,
+  "originalSourceMeshAndMaterialRetainedOnHiddenRollback": "AFN173_ORIGINAL_ARTIST_HAIR_ROLLBACK",
+  "noStyleDensityRadiusColorExposureSweep": true,
+  "newEffectiveGraph": {
+    "name": "AFN173_ACTUAL_PIGMENT_ALPHA_FIBRE_SURFACE",
+    "nodes": [
+      [
+        "\u6750\u8cea\u8f38\u51fa",
+        "ShaderNodeOutputMaterial"
+      ],
+      [
+        "\u539f\u5247\u5316 BSDF",
+        "ShaderNodeBsdfPrincipled"
+      ],
+      [
+        "AFN173_ACTUAL_ORIGINAL_HAIR_PIGMENT_AND_COVERAGE",
+        "ShaderNodeTexImage"
+      ],
+      [
+        "UV \u6620\u5c04",
+        "ShaderNodeUVMap"
+      ],
+      [
+        "\u5207\u7dda",
+        "ShaderNodeTangent"
+      ],
+      [
+        "\u5206\u96e2 XYZ",
+        "ShaderNodeSeparateXYZ"
+      ],
+      [
+        "\u6578\u5b78\u516c\u5f0f",
+        "ShaderNodeMath"
+      ],
+      [
+        "\u6578\u5b78\u516c\u5f0f.001",
+        "ShaderNodeMath"
+      ],
+      [
+        "\u51f9\u51f8",
+        "ShaderNodeBump"
+      ]
+    ],
+    "links": [
+      [
+        "\u539f\u5247\u5316 BSDF",
+        "BSDF",
+        "\u6750\u8cea\u8f38\u51fa",
+        "Surface"
+      ],
+      [
+        "UV \u6620\u5c04",
+        "UV",
+        "AFN173_ACTUAL_ORIGINAL_HAIR_PIGMENT_AND_COVERAGE",
+        "Vector"
+      ],
+      [
+        "AFN173_ACTUAL_ORIGINAL_HAIR_PIGMENT_AND_COVERAGE",
+        "Color",
+        "\u539f\u5247\u5316 BSDF",
+        "Base Color"
+      ],
+      [
+        "AFN173_ACTUAL_ORIGINAL_HAIR_PIGMENT_AND_COVERAGE",
+        "Alpha",
+        "\u539f\u5247\u5316 BSDF",
+        "Alpha"
+      ],
+      [
+        "\u5207\u7dda",
+        "Tangent",
+        "\u539f\u5247\u5316 BSDF",
+        "Tangent"
+      ],
+      [
+        "UV \u6620\u5c04",
+        "UV",
+        "\u5206\u96e2 XYZ",
+        "Vector"
+      ],
+      [
+        "\u5206\u96e2 XYZ",
+        "X",
+        "\u6578\u5b78\u516c\u5f0f",
+        "Value"
+      ],
+      [
+        "\u6578\u5b78\u516c\u5f0f",
+        "Value",
+        "\u6578\u5b78\u516c\u5f0f.001",
+        "Value"
+      ],
+      [
+        "\u6578\u5b78\u516c\u5f0f.001",
+        "Value",
+        "\u51f9\u51f8",
+        "Height"
+      ],
+      [
+        "\u51f9\u51f8",
+        "Normal",
+        "\u539f\u5247\u5316 BSDF",
+        "Normal"
+      ]
+    ]
+  }
+}

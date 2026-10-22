@@ -1,0 +1,14 @@
+00:04.516  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0165-source\aevrynd-female-next-r0165-a-native-hair-optics.blend"
+C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0173-artist-fibre-surface.py:20: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN173_ACTUAL_PIGMENT_ALPHA_FIBRE_SURFACE');mat.use_nodes=True;n=mat.node_tree.nodes;n.clear();L=mat.node_tree.links;out=n.new('ShaderNodeOutputMaterial');bs=n.new('ShaderNodeBsdfPrincipled');save('actual-new-principled-socket-layout.json',{'sockets':[q.name for q in bs.inputs],'sourceLegacyWeightSocketNotRequiredForNewNode':True});bs.inputs['Metallic'].default_value=0;bs.inputs['IOR'].default_value=1.55;bs.inputs['Roughness'].default_value=.38;bs.inputs['Anisotropic'].default_value=.65;bs.inputs['Anisotropic Rotation'].default_value=0;bs.inputs['Specular IOR Level'].default_value=.5;bs.inputs['Specular Tint'].default_value=(1,1,1,1);bs.inputs['Emission Strength'].default_value=0;L.new(bs.outputs['BSDF'],out.inputs['Surface'])
+00:13.750  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0173-artist-fibre-surface\matched-a-artist-fibre-surface-face.png'
+00:16.578  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0173-artist-fibre-surface\matched-a-artist-fibre-surface-body-face.png'
+00:23.813  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0173-artist-fibre-surface\matched-a-artist-fibre-surface-profile.png'
+00:29.984  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0173-artist-fibre-surface\matched-a-artist-fibre-surface-back.png'
+00:37.391  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0173-artist-fibre-surface\matched-a-artist-fibre-surface-oblique.png'
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+資訊: 已儲存為「aevrynd-female-next-r0173-a-artist-fibre-surface.blend」
+R173_ARTIST_VOLUME_ACTUAL_PIGMENT_ALPHA_FIBRE_SURFACE_COMPLETE_PREVIEW_DONE 32.98241209983826
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

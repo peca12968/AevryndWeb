@@ -1,0 +1,58 @@
+{
+  "revision": "female-next-r0173",
+  "source": {
+    "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0173-source\\aevrynd-female-next-r0173-a-artist-fibre-surface.blend",
+    "engineAlias": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0173-source\\aevrynd-female-next-r0173-a-artist-fibre-surface.blend",
+    "sha256": "ca025f6857a7ce0bc8b31d581f0d4090a3c4e5fda7d3b70604748b18cd781cd0",
+    "bytes": 4834998,
+    "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+    "actualHair": "AFN126_ORIGINAL_Hair_Hair_0",
+    "actualMaterial": "AFN173_ACTUAL_PIGMENT_ALPHA_FIBRE_SURFACE",
+    "originalSourceHairRollback": "AFN173_ORIGINAL_ARTIST_HAIR_ROLLBACK",
+    "newDirectionUV": "AFN173_LONGITUDINAL_FIBRE_DIRECTION",
+    "status": "REJECT_ARTIST_VOLUME_FIBRE_SURFACE_WHITE_CROWN",
+    "scope": "Same complete woman and original artist57424v81789tri hair volume/source UV retained. New longitudinal direction UV and effective albedo/alpha/nonemissive anisotropic/micro-bump surface graph independently reopened. Actual mesh native edit/restoration0 is source editing only. Full appearance white-crown/ribbon look rejected; alpha occupancy/contact/natural hair dynamics/runtime unaccepted."
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECT_WHITE_CROWN_AND_HARD_REFLECTIVE_RIBBON_LOCKS",
+      "score": null,
+      "actualMatchedCompleteHeadBodyAndAffectedAnglesViewed": true,
+      "evidence": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0173-artist-fibre-surface\\manual-visual-review.json"
+    },
+    "function": {
+      "status": "SCOPED_EFFECTIVE_SOURCE_GRAPH_UV_AND_NATIVE_MESH_EDIT_ONLY",
+      "originalHairRawPositionsTopologyAndOriginalUVEqual": true,
+      "allSevenOriginalEvaluatedMeshesAnd49GazePosesEqual": true,
+      "effectiveMaterialName": "AFN173_ACTUAL_PIGMENT_ALPHA_FIBRE_SURFACE",
+      "actualOriginalImage0DrivesBaseColorAndAlpha": true,
+      "addedDirectionUVExactlyOriginalVThenU": true,
+      "actualNativeFibreTangentUV": "AFN173_LONGITUDINAL_FIBRE_DIRECTION",
+      "effectiveMicroBumpDistanceM": 7.999999979801942e-06,
+      "nativeMesh1mmLocalEditMaximumWorldMovementM": 2.1425777123829093e-05,
+      "nativeMeshEditRestoreM": 0.0,
+      "sourceLocalVsWorldDisplacementRecordedWithoutAssumedUnitScale": true,
+      "noCompleteHairMotionActionAccepted": true
+    },
+    "contact": {
+      "status": "UNACCEPTED_RAW_MESH_EDGE_BODY_WITNESSES_CHANGED_ALPHA_OCCUPANCY",
+      "originalMeshGeometryUnchanged": true,
+      "alphaCoverageChanged": true,
+      "sampledHairMeshEdges": 524,
+      "rawMeshEdgeBodySurfaceWitnesses": 8,
+      "notExactAlphaWeightedRenderOccupancyOrGlobalFiniteContactCount": true,
+      "signedMinimumM": null,
+      "finiteSelfContinuousUnaccepted": true,
+      "evidence": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0173-artist-fibre-surface\\actual-artist-hair-body-edge-witnesses.json"
+    },
+    "runtime": {
+      "status": "NOT_EXPORTED_ENGINE_TESTED_OR_PROMOTED",
+      "runtimeAsset": null
+    }
+  },
+  "constructionReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0173-artist-fibre-surface\\direct-artist-fibre-surface-authoring.json",
+  "rightsReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0173-artist-fibre-surface\\references-and-rights.json",
+  "dependencies": "Immutable152 Mesh library plus16 external textures,17 hashes. Original Image_0/Image_1 packed inside library. Local Hair copy with new UV/material; original source Mesh/material hidden rollback. Working139/external117 separate.",
+  "rejectedNotAdopted": true
+}
