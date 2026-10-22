@@ -1,0 +1,26 @@
+{
+  "originalStagingCheck": "git diff --cached --check failed on executable script CRLF lines under exact-byte staging; no model or production failed here.",
+  "repair": "Normalize executable script copies to LF only; retain exact as-executed CRLF bytes in evidence. No changed Python statements or rerun.",
+  "changedScripts": [
+    {
+      "file": "scripts/character-next/build-female-next-r0163-local-coordinate-retopology.py",
+      "originalRawSha256": "3516027454b7d6a483ae2302e51d507a2bb3e6c2f593d0d012f15a5ba055adc6",
+      "normalizedLFSafeSha256": "b4ae4783f654882f9bea6ca95f300e65169d31abfe5319dbad586a9a22fb6aa4",
+      "originalExactScript": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0163-remeshed-inner-lids\\as-executed-build-female-next-r0163-local-coordinate-retopology.py"
+    },
+    {
+      "file": "scripts/character-next/build-female-next-r0163-native-connectivity.py",
+      "originalRawSha256": "c6f55795a3588b41b97118b39ed4ef7017b40d52827daa9a925efdc0eb50a1b9",
+      "normalizedLFSafeSha256": "e7d53464c823f5e99d5324782d3b7ea838566184f7f174ba03a4918e5decda59",
+      "originalExactScript": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0163-remeshed-inner-lids\\as-executed-build-female-next-r0163-native-connectivity.py"
+    },
+    {
+      "file": "scripts/character-next/verify-female-next-r0163-native-connectivity.py",
+      "originalRawSha256": "5819580f0b712d81356cd7722c51e1174b196dc58cacd51dbee13dc152abd402",
+      "normalizedLFSafeSha256": "048ec36cbcbd538f9759af9f21841b28a68313480c675b63761cde290a00d267",
+      "originalExactScript": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0163-remeshed-inner-lids\\as-executed-verify-female-next-r0163-native-connectivity.py"
+    }
+  ],
+  "manifestAndCountersNotRewrittenOrRecounted": true,
+  "UTC": "2026-10-22T20:02:27.927228+00:00"
+}

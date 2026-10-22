@@ -1,0 +1,100 @@
+{
+  "revision": "female-next-r0163",
+  "source": {
+    "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0163-source\\aevrynd-female-next-r0163-a-remeshed-inner-lids.blend",
+    "engineAlias": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0163-source\\aevrynd-female-next-r0163-a-remeshed-inner-lids.blend",
+    "sha256": "8eb259bc69176eed2b1997b36b04dea7265c4d2401084e14578c095999ca7b46",
+    "bytes": 20003242,
+    "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+    "actualPoseSource": "AFN161_ORIGINAL_NATIVE_MARGIN_POSE_REFERENCE",
+    "actualWallCorrectives": "AFN163_ACTUAL_RETOPOLOGY_SHARED_RIM_CORRECTIVES",
+    "actualSkinVertices": 171129,
+    "actualSkinTriangles": 339884,
+    "status": "UNACCEPTED_NATIVE_CONNECTIVITY_EYE0_REFLECT0_INNER_OUTER411_KEEP139",
+    "scope": "Same complete woman. Direct native interior connectivity rebuild collapses281 disjoint interior short edges and retriangulates/flips diagonals; all366 original rim IDs and186748 outer polygons retained.2728 old wall triangles become2166. New local native Skin171129 points includes1183 unused old interior points for index compatibility. Eye/Reflect0/0 atclosed11 but411 inner/outer crossings; no adopted appearance or complete operation."
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "NO_ADOPTED_COMPLETE_APPEARANCE_GAIN",
+      "score": null,
+      "actualCompleteHeadBodyNeutralHalfViewed": true,
+      "evidence": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0163-remeshed-inner-lids\\manual-visual-review.json",
+      "noBroadAnglesOrSecondLightAfterVisibleNoGain": true
+    },
+    "function": {
+      "status": "LOCAL_NATIVE_EDIT_AND_EXPLICIT_RESET_ONLY_NOT_COMPLETE_BLINK",
+      "actualFrames": [
+        1,
+        9,
+        11,
+        24,
+        1
+      ],
+      "nativeLocalMeshEditM": 0.00020000338554382324,
+      "nativeEditRestoreM": 0.0,
+      "allSevenExplicitFrame1ResetRestorationM": 0,
+      "end24WallResidualM": 0.001008136058675069,
+      "nativeMeshLocalEditable": true,
+      "effectiveMaterialsUVAttributesFiniteReadback": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0163-remeshed-inner-lids\\independent-effective-material-attribute-readback.json",
+      "exactOriginalUVEqualityNotIndependentlyProven": true,
+      "fullGazeBlinkJawBodyClothesAndNaturalSettleUnaccepted": true
+    },
+    "contact": {
+      "status": "FAIL411_INNER_OUTER_FINITE_CROSSINGS",
+      "frame": 11,
+      "actualSkinTriangles": 339884,
+      "actualInnerWallTriangles": 2166,
+      "finiteEyeCrossingPairs": 0,
+      "finiteReflectCrossingPairs": 0,
+      "prior162ReflectPairsAtSamePose": 26,
+      "finiteInnerOuterSegmentPairs": 411,
+      "prior162FiniteInnerOuterPairs": 643,
+      "pointOnlyWitnessCandidates": 127,
+      "unresolvedCandidates": 0,
+      "signedMinimumM": null,
+      "numericEpsilonM": 1e-12,
+      "allRetainedOuterFaceIDsAndActualDisplayedCorrespondenceVerified": true,
+      "maximumColliderVsDisplayedPositionErrorM": 7.646198047725332e-08,
+      "noSharedVertexFaceExemptions": true,
+      "finiteThicknessWholeSelfContinuousAndOtherPosesUnaccepted": true
+    },
+    "runtime": {
+      "status": "NOT_EXPORTED_ENGINE_TESTED_OR_PROMOTED",
+      "runtimeAsset": null
+    }
+  },
+  "construction": {
+    "boundary": [
+      {
+        "retopologyBoundary": 184,
+        "originalTrueSharedBoundary": 184,
+        "allOriginalPointsReinserted": true,
+        "maximumBoundaryAnchorCorrectionM": 0.0
+      },
+      {
+        "retopologyBoundary": 182,
+        "originalTrueSharedBoundary": 182,
+        "allOriginalPointsReinserted": true,
+        "maximumBoundaryAnchorCorrectionM": 0.0
+      }
+    ],
+    "sharedOriginalBoundaryIds": 366,
+    "oldWallFacesRemoved": 2728,
+    "newFixedWallTriangles": 2166,
+    "newWallVertices": 1268,
+    "newSkinVertices": 171129,
+    "originalRetainedOuterPolygons": 186748,
+    "newNativeSkinMeshLocalEditable": true,
+    "sameReferenceAndRootAngularFibreConstruction": true,
+    "originalUnusedInteriorVerticesRetainedButNotRendered": 1183,
+    "actualSolverPinMaxErrorM": 0.00024263643818750965,
+    "exactDisplayBoundaryIsAuthoredOverrideNotSolverProof": true,
+    "engineeringApproximationNotPhysiologicalPhysics": true,
+    "finiteSelfContinuousAndCompleteOperationUnaccepted": true
+  },
+  "rightsReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0163-remeshed-inner-lids\\references-and-rights.json",
+  "dependencies": "Immutable161A complete Mesh library plus152 library and16 textures. New Skin Mesh local native editable; other linked Meshes need Single User for raw edits. Working139 and external117 rollback retained separately. Source size is not total runtime/project size.",
+  "noInstallNewNodeServerSubagentOrPaidRuntime": true,
+  "noFullCharacterAdoption": true
+}
