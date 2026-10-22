@@ -1,0 +1,33 @@
+{
+  "revision": "female-next-r0154",
+  "role": "FAILED_NATIVE_COMPONENT_DIAGNOSTIC_NOT_COMPLETE_HAIRSTYLE_CANDIDATE",
+  "source": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0154-source\\aevrynd-female-next-r0154-rejected-scalp-component.blend",
+    "sha256": "c6353302cb085b8d95a3a7f9167ba31dfc7ae6ad3905623f35a07694b301a2ab",
+    "bytes": 599995,
+    "role": "FAILED_EVALUATED_COMPONENT_SNAPSHOT_WITH_RETAINED_WOMAN_NOT_COMPLETE_CANDIDATE",
+    "dependencyLibrary": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0152-source\\aevrynd-female-next-r0152-a-layered-native-groom.blend",
+      "sha256": "6d14dcca0c0a3dc2a8be613d92377a663522dbb8d31a3f26ec894132723f1480",
+      "bytes": 26450788
+    },
+    "rejectedActualGuideObject": "AFN154_REJECTED_EVALUATED_GUIDES_NOT_ACCEPTED_GROOM",
+    "failedGuideCurves": 252,
+    "failedGuidePoints": 4032,
+    "failedGeometrySha256": "c4a9321f9e8b1b0a2bbc813b3e8f5e622cf9a63ac975de47504223e863aa1675",
+    "defaultDisplay": "Retained139 woman; failed153 hairline and failed154 guide output hidden. Diagnostic source explicitly retains failed geometry without promoting it.",
+    "originalCurrentMeshesUVExact": true,
+    "originalArtistGroomFullFileUnmodified": true,
+    "actualNativeRestMappingScriptsAndInputsRetainedSeparately": true,
+    "newWholeHairstyleCandidates": 0
+  },
+  "originalArtistGroomBlendSha256": "93aedaef061dc14618a0fcfad33c3df816fa755e8093381cbdfd0fd4c34527f5",
+  "originalAssetZip": "D:\\Download\\Aevrynd\\Reference\\character\\makehuman-hair-editor-cc0\\haireditor.zip",
+  "originalAssetZipSha256": "39420056faba6aaa0726a5168c9c41f2d01e278a12e216c0385e8f13d4d98ab7",
+  "zipMember": "hair/haireditor/hair.blend",
+  "rights": "Tomáš Klecer, official MakeHuman functional hair-editor pack CC0 statement. Derived failed evaluated guide snapshot retained for research/reproduction only; no working or runtime adoption. Existing DarkNik/original NikZava284 current head/hair/textures CC-BY4.0 and MakeHuman/Vitruvian body CC0 remain attributed. No exclusive ownership claim.",
+  "nodeCodeReference": "https://raw.githubusercontent.com/blender/blender/main/source/blender/nodes/geometry/nodes/node_geo_deform_curves_on_surface.cc",
+  "nodeCodeScope": "Read to understand source/evaluated UV/rest sampling; no GPL implementation code copied into engine. Blender remains offline authoring tool.",
+  "allRelatedFailuresAndReproductionCaveat": "Attempt2 diagnostic NPZ used a fixed filename and was overwritten by attempt3 before freezing. Do not claim it contains attempt2. Attempt2 original code, logs, mapping/operation JSON and immutable original inputs are preserved for reproduction. Dedicated attempt3 NPZ now frozen; no failed root was removed.",
+  "decision": "FAIL_NATIVE_SCALP_BINDING_BEFORE_COMPLETE_CANDIDATE_KEEP_R139"
+}

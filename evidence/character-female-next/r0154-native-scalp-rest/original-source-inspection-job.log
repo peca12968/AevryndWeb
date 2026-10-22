@@ -1,0 +1,9 @@
+00:00.500  blend            | Read blend: "C:\Users\USER\AppData\Local\Temp\Aevrynd-hair-editor-reference\hair.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\inspect-female-next-r0154-native-scalp-rest.py", line 11, in <module>
+    save('actual-native-source-scalp-rest-inspection.json',{'UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'curveAttrs':[(x.name,x.data_type,x.domain,len(x.data)) for x in d.attributes],'meshAttrs':[(x.name,x.data_type,x.domain,len(x.data)) for x in skin.data.attributes],'rootWorldBounds':[roots.min(0).tolist(),roots.max(0).tolist()],'rootUVBounds':[rootUV.min(0).tolist(),rootUV.max(0).tolist()],'rootsWorld':roots.tolist(),'surfaceObject':skin.name,'surfaceTransform':np.array(skin.matrix_world).tolist(),'guideTransform':np.array(o.matrix_world).tolist(),'modifiers':[{'name':x.name,'type':x.type,'group':x.node_group.name if x.type=='NODES' else None,'inputs':{k:str(x[k]) for k in x.keys()}} for x in o.modifiers],'groups':nodes})
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ~~~~~~^^
+TypeError: bpy_struct.keys(): this type doesn't support IDProperties
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

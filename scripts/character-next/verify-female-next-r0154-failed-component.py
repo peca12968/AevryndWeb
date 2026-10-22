@@ -1,0 +1,19 @@
+from pathlib import Path
+import bpy,numpy as np,json,importlib.util
+from mathutils import Vector
+from mathutils.bvhtree import BVHTree
+R=Path('D:/Download/Aevrynd');E=R/'Evidence/character-female-next/r0154-native-scalp-rest'
+sp=importlib.util.spec_from_file_location('r154verify',Path(__file__).with_name('build-female-next-r0149-native-physical-groom.py'));h=importlib.util.module_from_spec(sp);sp.loader.exec_module(h);a=h.a
+def save(n,x):(E/n).write_bytes((json.dumps(x,indent=2,ensure_ascii=False)+'\n').encode())
+b=json.loads((E/'rejected-component-source.json').read_text());src=json.loads((E/'manifest-before.json').read_text())['sharedCurrentAuthoringConstructionR153']['source'];bpy.ops.wm.open_mainfile(filepath=src);s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();names=a.FIXED+a.MOVING;raw={n:a.rawsig(bpy.data.objects[n]) for n in names};neutral={n:[a.a.hasharray(x) for x in a.geometry(bpy.data.objects[n])] for n in names}
+assert a.a.sha(Path(b['source']))==b['sha256'];bpy.ops.wm.open_mainfile(filepath=b['source']);s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();assert raw=={n:a.rawsig(bpy.data.objects[n]) for n in names} and neutral=={n:[a.a.hasharray(x) for x in a.geometry(bpy.data.objects[n])] for n in names};ob=bpy.data.objects[b['rejectedActualGuideObject']];assert ob.hide_render and len(ob.data.curves)==252;P=a.q.hair(ob).reshape(252,16,3);saved=np.load(E/'native-scalp-mapping-attempt3-diagnostic.npz')['mappedArtist'];difference=float(np.linalg.norm(P-saved,axis=2).max());assert difference<3e-7
+skin=bpy.data.objects['AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD'];V,T=a.geometry(skin);tree=BVHTree.FromPolygons([Vector(x) for x in V],T.tolist(),all_triangles=True);nearest=[];distances=[]
+for p in P[:,0]:q,_,_,dist=tree.find_nearest(Vector(p));nearest.append(q[:]);distances.append(dist)
+distances=np.asarray(distances);worst=int(distances.argmax());assert distances.max()>.07 and np.count_nonzero(distances>=.001)>0
+eye=bpy.data.objects[a.MOVING[0]];baseEye=a.geometry(eye)[0].copy();s.frame_set(9);bpy.context.view_layer.update();move=float(np.linalg.norm(a.geometry(eye)[0]-baseEye,axis=1).max());assert move>.001;s.frame_set(1);bpy.context.view_layer.update();assert np.array_equal(a.geometry(eye)[0],baseEye)
+np.savez_compressed(E/'independent-root-failure-witness.npz',roots=P[:,0],nearestSkin=np.asarray(nearest),unsignedDistances=distances,headVertices=V[V[:,2]>1.40],guides=P)
+textures=[]
+for im in bpy.data.images:
+ if im.source=='FILE' and not im.packed_file and im.filepath:
+  path=Path(bpy.path.abspath(im.filepath,library=im.library));assert path.is_file();textures.append({'file':str(path),'sha256':a.a.sha(path)})
+save('independent-failed-component-readback.json',{'source':b['source'],'sha256':a.a.sha(Path(b['source'])),'actualFailedGuideCurves':252,'actualFailedGuidePoints':4032,'snapshotVersusOriginalFailedEvaluatedMaximumM':difference,'actualUnsignedRootToFullSkinMeshDistancesM':distances.tolist(),'maximumUnsignedRootGapM':float(distances.max()),'worstGuideIndex':worst,'guideRootsFailingUnchanged1mmConstructionBound':int(np.count_nonzero(distances>=.001)),'distanceMeaning':'Point-to-full-triangulated-Skin unsigned nearest distance. Not signed penetration depth, whole shaft contact, finite/self or continuous collision qualification.','allFailedGuidesRetained':True,'defaultFailedObjectHiddenNotPromoted':True,'rawSevenCurrentMeshesUVAndNeutralWorldExact':True,'existingGazeFrame9ActualEyeMovementM':move,'existingGazeNeutralRestored':True,'externalTextures':textures,'nativeLiveRestMapperNotContainedInSnapshotReproduceFromPreservedInputsAndAsExecutedScript':True,'newFullHairstyleCandidate':False,'completeOperationAccepted':False});print('R154_INDEPENDENT_FAILED_COMPONENT_REOPEN_ROOT_FAILURE_CONFIRMED',float(distances.max()),int(np.count_nonzero(distances>=.001)),flush=True)

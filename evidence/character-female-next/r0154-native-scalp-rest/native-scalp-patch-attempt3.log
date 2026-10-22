@@ -1,0 +1,13 @@
+00:10.281  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0153-source\aevrynd-female-next-r0153-a-current-hairline.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0154-native-scalp-patch.py", line 46, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\author-female-next-r0154-native-scalp-patch.py", line 38, in main
+    assert max(gaps)<.001,('native scalp root mapping exceeds predeclared1mm reconstruction bound',max(gaps))
+           ^^^^^^^^^^^^^^
+AssertionError: ('native scalp root mapping exceeds predeclared1mm reconstruction bound', 0.07151896506547928)
+資訊: Read library: 'D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', '//..\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
