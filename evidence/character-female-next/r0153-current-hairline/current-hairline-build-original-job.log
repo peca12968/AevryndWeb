@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0153-current-hairline.py", line 52, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0153-current-hairline.py", line 42, in main
+    d.attributes.new('surface_uv_coordinate','FLOAT2','CURVE').data.foreach_set('vector',np.asarray(rootUV,'f4').ravel());radii=np.tile(np.linspace(.00003,.000004,stations),count).astype('f4');d.attributes['radius'].data.foreach_set('value',radii)
+                                                                                                                                                                                                 ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'bpy_prop_collection[key]: key "radius" not found'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

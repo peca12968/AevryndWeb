@@ -1,0 +1,24 @@
+"""Current-head short hairline foundation; no whole-head rest template or transplant."""
+from pathlib import Path
+import bpy,numpy as np,json,datetime,hashlib,importlib.util
+R=Path('D:/Download/Aevrynd');E=R/'Evidence/character-female-next/r0153-current-hairline';SRC=R/'engine/assets/characters/female-next/source/r0152-source/aevrynd-female-next-r0152-a-layered-native-groom.blend'
+sp=importlib.util.spec_from_file_location('r153base',Path(__file__).with_name('build-female-next-r0149-native-physical-groom.py'));base=importlib.util.module_from_spec(sp);sp.loader.exec_module(base);a=base.a
+def save(n,x):(E/n).write_bytes((json.dumps(x,indent=2,ensure_ascii=False,default=lambda q:q.tolist() if isinstance(q,np.ndarray) else str(q))+'\n').encode())
+def main():
+ E.mkdir(exist_ok=False)
+ m=json.loads((R/'engine/assets/characters/female-next/female-next.asset.json').read_text('utf-8-sig'));save('manifest-before.json',m)
+ save('before.json',{'startedUTC':'2026-10-22T06:35:30+00:00','supportDeadlineUTC':'2026-10-22T06:45:30+00:00','firstCompletePreviewDeadlineUTC':'2026-10-22T07:05:30+00:00','resourceCheckpointUTC':'2026-10-22T07:20:30+00:00','baseCommit':'fca309a04f9a3e7c9f89df16f01e0bfa18858e10','sourceBudgetBytes':14000000,'evidenceBudgetBytes':9000000,'oneCandidate':True,'source':str(SRC),'sourceSha256':'6d14dcca0c0a3dc2a8be613d92377a663522dbb8d31a3f26ec894132723f1480','previousGoalTurnClassification':'Progress: actual render representation comparison falsified primitive-only rescue; new CC0 artist groom/reference roles inspected and r152 history verified. No appearance gain/new production round.','computerUseInitializationAttempt':'One initialization only; failed before execution: failed to write kernel assets, os error3. No reset/retry or OS UI inputs.','newPremise':'Local actual-head follicle and short transition hairs around the retained source hairline. Not another whole-head numerical cage, free-path/foreign fit or patch-to-long-groom conversion. Body hair silhouette remains protected and its coarse limitations stay open.','visibleRejection':'No complete gain, brush/fuzz look, unnatural boundary, facial occlusion, protected regression, or actual visible skin penetration rejects candidate.','rights':'Existing current woman/source attribution unchanged. MPFB CC0 artist groom and flutter-bob photo inspected as construction references only; no copied guide coordinates, nodes, texture or likeness.'})
+ assert a.a.sha(SRC)=='6d14dcca0c0a3dc2a8be613d92377a663522dbb8d31a3f26ec894132723f1480';bpy.ops.wm.open_mainfile(filepath=str(SRC));bpy.context.scene.frame_set(1);bpy.context.view_layer.update();skin=bpy.data.objects['AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD'];V,T=a.geometry(skin);cache=np.load(E.parent/'r0150-authored-rooted-locks/actual-current-scalp.npz');ids=cache['scalpVertexIds'];seed=np.array([-.022,-.119,1.534]);rootId=int(ids[np.linalg.norm(V[ids]-seed,axis=1).argmin()]);root=V[rootId]
+ # First deliberately SHORT root-to-tip stroke, using actual frontal scalp position.
+ knots=np.array([root,root+[-.0008,.0010,.0015],root+[-.002,.003,.0033],root+[-.004,.0055,.0048],root+[-.006,.008,.0054],root+[-.008,.010,.0050]])
+ data=bpy.data.hair_curves.new('AFN153_FIRST_CURRENT_HAIRLINE_STROKE_DATA');data.add_curves([len(knots)]);data.position_data.foreach_set('vector',knots.astype('f4').ravel());ob=bpy.data.objects.new('AFN153_FIRST_CURRENT_HAIRLINE_STROKE',data);bpy.context.scene.collection.objects.link(ob);data.surface=skin;data.surface_uv_map='AngelicaOriginalUV'
+ save('direct-current-hairline-authoring-start.json',{'UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'originalStartedUTC':'2026-10-22T06:35:30+00:00','action':'Actually authored first native short hairline stroke on selected current frontal scalp vertex; no old cage shape, source-card path, foreign style or physical-drape authoring.','actualRootVertex':rootId,'actualRootWorld':root,'nativeStroke':knots,'componentOnlyNotCompleteWomanImprovement':True})
+ rows=[]
+ for im in bpy.data.images:
+  p=Path(bpy.path.abspath(im.filepath)) if im.filepath else None;packed=im.packed_file
+  row={'name':im.name,'filepath':str(p) if p else None,'packedBytes':len(packed.data) if packed else 0,'externalExists':bool(p and p.is_file())}
+  if packed:row['packedSha256']=hashlib.sha256(packed.data).hexdigest()
+  if p and p.is_file():row['externalSha256']=a.a.sha(p)
+  row['safeRemoveDuplicatePackedCopy']=bool(packed and p and p.is_file() and row['packedSha256']==row.get('externalSha256'));rows.append(row)
+ save('packed-external-source-cost-inspection.json',rows);np.savez_compressed(E/'first-current-hairline-stroke.npz',knots=knots,rootVertex=np.array([rootId]));print('R153_ACTUAL_CURRENT_HEAD_SHORT_HAIRLINE_STROKE_AUTHORED',sum(r['packedBytes'] for r in rows if r['safeRemoveDuplicatePackedCopy']),flush=True)
+if __name__=='__main__':main()

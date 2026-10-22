@@ -1,0 +1,12 @@
+D:\Download\Aevrynd\scripts\character-next\build-female-next-r0153-current-hairline.py:44: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN153_SHORT_HAIRLINE_CHIANG');mat.use_nodes=True;n=mat.node_tree.nodes;n.clear();bs=n.new('ShaderNodeBsdfHairPrincipled');bs.parametrization='MELANIN';bs.inputs['Melanin'].default_value=.95;bs.inputs['Melanin Redness'].default_value=.15;bs.inputs['Roughness'].default_value=.35;bs.inputs['Radial Roughness'].default_value=.45;out=n.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(bs.outputs[0],out.inputs['Surface']);d.materials.append(mat);bpy.context.view_layer.update();actual=a.q.hair(hair);assert len(actual)==count*stations and np.isfinite(actual).all();rootError=float(np.linalg.norm(actual.reshape(count,stations,3)[:,0]-roots,axis=1).max());assert rootError<3e-6
+00:29.735  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0153-current-hairline\matched-a-current-hairline-face.png'
+00:36.047  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0153-current-hairline\matched-a-current-hairline-body-face.png'
+00:53.219  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0153-current-hairline\matched-a-current-hairline-profile.png'
+01:11.078  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0153-current-hairline\matched-a-current-hairline-oblique.png'
+01:24.641  render           | Saved: 'D:\Download\Aevrynd\Evidence\character-female-next\r0153-current-hairline\matched-a-current-hairline-back.png'
+Info: Saved as "aevrynd-female-next-r0153-a-current-hairline.blend"
+R153_COMPLETE_CURRENT_WOMAN_SHORT_HAIRLINE_PREVIEW_DONE 78.41268181800842
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
