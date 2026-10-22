@@ -1,0 +1,5 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Download\\Aevrynd\\scripts\\character-next\\probe-female-next-r0149-native-scalp-sculpt.py\", line 45, in add\n    save('native-brush-capability-rna.json',{'brushes':state['brushNames'],'activeAddBrush':brush.name,'curveSettings':{p.identifier:str(getattr(settings,p.identifier)) for p in settings.bl_rna.properties if p.identifier!='rna_type'},'operatorProperties':list(bpy.ops.sculpt.curves_sculpt_brush_stroke.get_rna_type().properties.keys()),'windowRegion':[state['region'].width,state['region'].height]})\n                                                                                                                                                                                                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\nKeyError: 'get_rna_type(\"SCULPT_OT_curves_sculpt_brush_stroke\") not found'\n",
+  "phase": "add",
+  "seconds": 2.42853045463562
+}

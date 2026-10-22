@@ -1,0 +1,5 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Download\\Aevrynd\\scripts\\character-next\\probe-female-next-r0149-native-scalp-sculpt.py\", line 39, in comb\n    hair=state['hair'];assert len(hair.data.curves)>0,'Native Add did not place any actual scalp curves';before=geometry();brush=activate('Comb');brush.size=80;brush.strength=1.;rv=state['area'].spaces.active.region_3d;region=state['region'];p0=location_3d_to_region_2d(region,rv,Vector((0.,-.045,1.572)));p1=location_3d_to_region_2d(region,rv,Vector((-.055,-.045,1.49)));state['combResult']=stroke(p0,p1);bpy.context.view_layer.update();after=geometry();state['combMove']=float(np.linalg.norm(after-before,axis=1).max());assert state['combMove']>1e-6,'Comb actual points did not move';state['area'].tag_redraw();bpy.app.timers.register(finish,first_interval=.5)\n                              ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Native Add did not place any actual scalp curves\n",
+  "phase": "comb",
+  "seconds": 2.8885338306427
+}

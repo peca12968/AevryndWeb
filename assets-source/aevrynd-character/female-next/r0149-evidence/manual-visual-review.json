@@ -1,0 +1,110 @@
+{
+  "revision": "female-next-r0149",
+  "decision": "REJECT_NATIVE_PHYSICAL_RADIAL_HALO_NO_AUTHORED_HAIRSTYLE_KEEP_R139",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "actualCompleteImagesViewed": [
+    {
+      "file": "r0149-complete-head-body-comparison.png",
+      "sha256": "77994bee230328d60bbdcc59774ff74dfa299d3eff9484224662206f7f179f79"
+    },
+    {
+      "file": "r0149-profile-back-comparison.png",
+      "sha256": "caa34a9274c2aa0b5d35835c2c8d00be7795517a71d95642cc970eeb6f5fc79d"
+    },
+    {
+      "file": "r0149-oblique-comparison.png",
+      "sha256": "bdb9f86c388786947429e8a9f82779ea4a818fca0af381b213f9efc1d78cab41"
+    }
+  ],
+  "protectedGains": "Exact r139 face/skin/body/eyes/UV/material/gaze and hidden rollback retained. Old full hair remains exact hidden; no opaque underlay. Working139 remains unchanged.",
+  "visibleRejection": "Front/body, profile, oblique and back show a giant outward/upward radial halo and fan with no credible shoulder-bob parting, neighbouring locks or root-to-tip silhouette. Face/body remain the same; native strands/physics are not a visible complete-character gain. Stop the automatic whole-scalp normal-grown gravity-drape-as-hairstyle direction; no stiffness/distance/count/radius/colour rescue sweep.",
+  "framingLimitation": "Head/profile/back camera crops the outward hair mass. Body view reveals the full-body failure but uppermost radial tips meet the top image border; entire-hair coverage is NOT accepted. Sufficient visible failure to reject without another render.",
+  "actualConstruction": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0139-source\\aevrynd-female-next-r0139-a-native-lid-follow.blend",
+    "actualHair": "AFN149_ACTUAL_NATIVE_PHYSICAL_GROOM",
+    "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualNativeScalp": "AFN149_CURRENT_SCALP_NATIVE_PHYSICAL_AUTHORING",
+    "originalNativeParticlePhysics": {
+      "parents": 768,
+      "children": 36864,
+      "hairLengthM": 0.20999999344348907,
+      "massNativeUnits": 0.0010000000474974513,
+      "bendingStiffnessNativeUnits": 0.0010000000474974513,
+      "quality": 8,
+      "physicsFrames": 96,
+      "nativeParametersEngineeringNotTissueCalibrated": true,
+      "collision": {
+        "requestedThicknessM": 4e-05,
+        "actualOuterM": 0.0010000000474974513,
+        "actualInnerM": 0.0010000000474974513,
+        "actualClothMinimumDistanceM": 0.014999999664723873,
+        "fullActualSkinTriangles": 340174,
+        "guideCollisionOnlyNotAllChildrenFiniteContactAcceptance": true
+      }
+    },
+    "actualNativeDrapeRecords": [
+      {
+        "frame": 1,
+        "parents": 768,
+        "children": 36864,
+        "allFinite": true
+      },
+      {
+        "frame": 24,
+        "parents": 768,
+        "children": 36864,
+        "parentMaximumMovementM": 0.18299627304077148,
+        "parentRootMaximumMovementM": 4.898863039670687e-07,
+        "allFinite": true
+      },
+      {
+        "frame": 48,
+        "parents": 768,
+        "children": 36864,
+        "parentMaximumMovementM": 0.23827801644802094,
+        "parentRootMaximumMovementM": 4.898863039670687e-07,
+        "allFinite": true
+      },
+      {
+        "frame": 72,
+        "parents": 768,
+        "children": 36864,
+        "parentMaximumMovementM": 0.23922573029994965,
+        "parentRootMaximumMovementM": 4.898863039670687e-07,
+        "allFinite": true
+      },
+      {
+        "frame": 96,
+        "parents": 768,
+        "children": 36864,
+        "parentMaximumMovementM": 0.23922573029994965,
+        "parentRootMaximumMovementM": 4.898863039670687e-07,
+        "allFinite": true
+      }
+    ],
+    "actualRootsAgainstActualScalpDistanceM": {
+      "max": 5.19006619015272e-07,
+      "mean": 5.198216695711979e-08
+    },
+    "nativeStrands": 37632,
+    "points": 639744,
+    "evaluatedRootFrameMaximumErrorM": 2.38999946897409e-07,
+    "newRootsGeneratedOnCurrentScalpNoOldCardShapeOrFreePathFit": true,
+    "actualGeometryCanBeEditedAndRootFrameFollowsCurrentSkin": true,
+    "particlePhysicsBakedToEditableCurvesForSourceReopenNotLiveRuntimeDynamics": true,
+    "nativeSourcePhysicsRebuiltByThisScriptActualPosesPreserved": true,
+    "originalFullHairPreservedExactlyHiddenNoOpaqueUnderlay": true,
+    "sourceBodyFaceSkinEyesUVOriginalMaterialsAndGazeRetained": true,
+    "noFiniteSelfAllChildrenContinuousNaturalHeadTurnWindRuntimeAcceptance": true,
+    "globalSignedMinimumM": null,
+    "secondsBeforePreview": 38.63500618934631
+  },
+  "operationScope": "Independent saved source: actual native point8 moves1mm and restores0; current Skin vertex147282 moves the first root0.518mm and restores0. Whole groom maximum36.59mm for that local vertex edit is not a rigid head-tracking or full-motion claim. NativeAdd/Comb produced0 curves; native brush capability NOT accepted. Final source is baked fixed-head physical authoring plus live local root frame, not live natural hair dynamics.",
+  "causalLimits": "Source scene gravity is enabled9.81m/s2, no fields/collision objects before authoring: inherited wind/collider contamination hypothesis falsified. Native body collision clamps1mm; native cloth minimum distance15mm remained uncalibrated. No claim this caused the halo, no relaxed contact tolerance, no corrective variant run.",
+  "naturalMotionAndBroadContactAndRuntimeNotRunAfterVisibleFailure": true,
+  "globalSignedMinimumM": null,
+  "wholeCharacterScore": null,
+  "femaleUserAcceptance": false
+}
