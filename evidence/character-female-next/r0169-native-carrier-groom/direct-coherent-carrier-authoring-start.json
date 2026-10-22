@@ -1,0 +1,58 @@
+{
+  "UTC": "2026-10-22T21:42:58.373479+00:00",
+  "originalStartedUTC": "2026-10-22T21:35:08+00:00",
+  "changedPremise": "Bake actual original SurfaceDeform output as posed guides; bake actual evaluated original carrier with identical topology/UV/weights, reset rest_position to that same posed carrier. Rebind source UV from those posed roots on the same posed source, not raw guide/source-position mixing. This is not old154 radial/raw/UV-rest mapping.",
+  "originalNativeSurfaceOnlyReadback": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0169-native-carrier-groom\\controlled-original-native-identity.json",
+  "originalCarrierRawVsPosedRestMaximumM": 0.06208488717675209,
+  "sourceCapReconstructionMaximumM": 0.0012007373152300715,
+  "nativeSourcePoseConsistentIdentityMaximumM": 1.2219861389439757e-07,
+  "nativeIdentityRequiredM": 3e-06,
+  "sourceCurves": 252,
+  "sourcePoints": 4032,
+  "sourceCarrierVertices": 13380,
+  "sourceCarrierTriangles": 26756,
+  "sourceIdentityPassed": true,
+  "sourceOriginalModifiers": [
+    {
+      "name": "Surface Deform",
+      "viewport": true,
+      "render": true
+    },
+    {
+      "name": "GeometryNodes",
+      "viewport": true,
+      "render": true
+    },
+    {
+      "name": "Set Hair Curve Profile",
+      "viewport": true,
+      "render": true
+    },
+    {
+      "name": "Curl Hair Curves",
+      "viewport": true,
+      "render": true
+    },
+    {
+      "name": "Hair Curves Noise",
+      "viewport": true,
+      "render": true
+    },
+    {
+      "name": "Frizz Hair Curves",
+      "viewport": true,
+      "render": true
+    },
+    {
+      "name": "Roll Hair Curves",
+      "viewport": true,
+      "render": true
+    },
+    {
+      "name": "Clump Hair Curves",
+      "viewport": true,
+      "render": true
+    }
+  ],
+  "sourceOriginalBlendUnchanged": true
+}

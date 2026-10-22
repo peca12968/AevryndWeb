@@ -1,0 +1,175 @@
+{
+  "UTC": "2026-10-22T21:37:00.494063+00:00",
+  "source": "C:\\Users\\USER\\AppData\\Local\\Temp\\Aevrynd-hair-editor-reference\\hair.blend",
+  "sourceSHA": "93aedaef061dc14618a0fcfad33c3df816fa755e8093381cbdfd0fd4c34527f5",
+  "actualSurface": "Human",
+  "sourceCurves": 252,
+  "actualEvaluatedCurves": 10191,
+  "actualEvaluatedPoints": 621651,
+  "actualOriginalFinalRootToEvaluatedHumanM": {
+    "max": 0.011089259758591652,
+    "median": 0.0036182778421789408,
+    "over1mm": 8702
+  },
+  "actualOriginalRootBounds": [
+    [
+      -0.07978498935699463,
+      -0.12777073681354523,
+      1.4854422807693481
+    ],
+    [
+      0.08010385185480118,
+      0.04822240397334099,
+      1.667649745941162
+    ]
+  ],
+  "sourceModifiers": [
+    {
+      "name": "Surface Deform",
+      "viewport": true,
+      "render": true,
+      "nodeGroup": "Surface Deform",
+      "inputs": {}
+    },
+    {
+      "name": "GeometryNodes",
+      "viewport": true,
+      "render": true,
+      "nodeGroup": "Geometry Nodes.003",
+      "inputs": {}
+    },
+    {
+      "name": "Set Hair Curve Profile",
+      "viewport": true,
+      "render": true,
+      "nodeGroup": "Set Hair Curve Profile",
+      "inputs": {}
+    },
+    {
+      "name": "Curl Hair Curves",
+      "viewport": true,
+      "render": true,
+      "nodeGroup": "Curl Hair Curves",
+      "inputs": {}
+    },
+    {
+      "name": "Hair Curves Noise",
+      "viewport": true,
+      "render": true,
+      "nodeGroup": "Hair Curves Noise",
+      "inputs": {}
+    },
+    {
+      "name": "Frizz Hair Curves",
+      "viewport": true,
+      "render": true,
+      "nodeGroup": "Frizz Hair Curves",
+      "inputs": {}
+    },
+    {
+      "name": "Roll Hair Curves",
+      "viewport": true,
+      "render": true,
+      "nodeGroup": "Roll Hair Curves",
+      "inputs": {}
+    },
+    {
+      "name": "Clump Hair Curves",
+      "viewport": true,
+      "render": true,
+      "nodeGroup": "Clump Hair Curves",
+      "inputs": {}
+    }
+  ],
+  "surfaceAttributes": [
+    [
+      "position",
+      "POINT",
+      "FLOAT_VECTOR"
+    ],
+    [
+      ".select_vert",
+      "POINT",
+      "BOOLEAN"
+    ],
+    [
+      ".edge_verts",
+      "EDGE",
+      "INT32_2D"
+    ],
+    [
+      ".select_edge",
+      "EDGE",
+      "BOOLEAN"
+    ],
+    [
+      ".select_poly",
+      "FACE",
+      "BOOLEAN"
+    ],
+    [
+      ".corner_vert",
+      "CORNER",
+      "INT"
+    ],
+    [
+      ".corner_edge",
+      "CORNER",
+      "INT"
+    ],
+    [
+      "UVMap",
+      "CORNER",
+      "FLOAT2"
+    ]
+  ],
+  "sourceRestPositionAttribute": null,
+  "surfaceModifiers": [
+    {
+      "name": "Hide helpers",
+      "type": "MASK",
+      "viewport": true,
+      "render": true
+    },
+    {
+      "name": "Roll Hair Curves",
+      "type": "NODES",
+      "viewport": true,
+      "render": true
+    }
+  ],
+  "sourceOriginalNativeGroupNodes": [
+    {
+      "name": "Group Input",
+      "type": "NodeGroupInput",
+      "inputs": []
+    },
+    {
+      "name": "Group Output",
+      "type": "NodeGroupOutput",
+      "inputs": [
+        {
+          "name": "Geometry",
+          "default": null,
+          "linked": true
+        },
+        {
+          "name": "",
+          "default": null,
+          "linked": false
+        }
+      ]
+    },
+    {
+      "name": "Deform Curves on Surface",
+      "type": "GeometryNodeDeformCurvesOnSurface",
+      "inputs": [
+        {
+          "name": "Curves",
+          "default": null,
+          "linked": true
+        }
+      ]
+    }
+  ]
+}
