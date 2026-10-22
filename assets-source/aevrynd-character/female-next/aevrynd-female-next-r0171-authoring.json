@@ -1,0 +1,82 @@
+{
+  "revision": "female-next-r0171",
+  "source": {
+    "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0171-source\\aevrynd-female-next-r0171-a-actual-scalp-groom.blend",
+    "engineAlias": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0171-source\\aevrynd-female-next-r0171-a-actual-scalp-groom.blend",
+    "sha256": "a55f9a4302d2cf2d71ec47470144fbe8b2a3b3b7faf1d39ed6a606e5f2b9b9a1",
+    "bytes": 3505428,
+    "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+    "actualHair": "AFN171_ACTUAL_SURFACE_ROOTED_NATIVE_GROOM",
+    "actualGuides": "AFN171_EDITABLE_ORIGINAL_POSED_GUIDES",
+    "actualCarrier": "AFN171_ACTUAL_CURRENT_SCALP_CHART_CARRIER",
+    "actualRoots": "AFN171_FIXED_ACTUAL_SKIN_ROOTS",
+    "retainedSourceHair": "AFN126_ORIGINAL_Hair_Hair_0",
+    "status": "REJECT_ACTUAL_SCALP_CHART_FULL_GROOM",
+    "scope": "Same complete woman; actual Skin carrier and source-rest charts have no near-zero triangles at1e-12m2, source posed identity0.123um and all10191 root positions0.212um. These are construction facts only. Full hair remains implausible; unchanged/mode/Skin pointwise restoration fails and stable birth identity/complete-curve equivalence is unproved. No appearance, complete operation, finite contact or runtime adoption."
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECT_LATERAL_FLOW_FACE_OCCLUSION_UPWARD_CROWN_SHEETLIKE_MASSES",
+      "score": null,
+      "actualCompleteHeadBodyAndAffectedAnglesViewed": true,
+      "evidence": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0171-actual-scalp-chart\\manual-visual-review.json"
+    },
+    "function": {
+      "status": "UNACCEPTED_UNCHANGED_REEVALUATION_MODE_AND_SKIN_RESTORATION",
+      "protectedSevenRawMeshesUVAnd49OriginalEvaluatedGazePosesEqual": true,
+      "source252GuidePositionsUnchanged": true,
+      "sourceRestIdentityAfterReopenMaximumM": 1.230051083211947e-07,
+      "allRootPositionMaximumErrorM": 2.1155845862011294e-07,
+      "actualOperationGateCapture": {
+        "sourceIdentityM": 1.230051083211947e-07,
+        "unchangedReevaluationM": 0.13738922774791718,
+        "modeRestoreM": 0.13738922774791718,
+        "guideEditMoveM": 0.11971981823444366,
+        "guideAffectedPoints": 3714,
+        "guideRestoreM": 0.0,
+        "skinRestoreM": 0.13738922774791718,
+        "skinRootErrorM": 2.1155845862011294e-07,
+        "unchangedRestoreThresholdM": 3e-06,
+        "gates": {
+          "sourceIdentity": true,
+          "unchangedReevaluation": false,
+          "sourceCurrentModeRestore": false,
+          "guideRestore": true,
+          "skinRestore": false,
+          "skinAllRootError": true,
+          "guideAffected": true
+        },
+        "allOperationGatesPassed": false,
+        "originalFailedAssertionAndMetadataErrorRetained": true
+      },
+      "outputIDsArePostInterpolationIndicesNotProvenPersistentBirthIDs": true,
+      "completeCurveEquivalenceUnproved": true,
+      "orderingVersusGeometricSetCauseUnresolved": true,
+      "guideMovementConfoundedByUnstableBaseline": true,
+      "completeCurrentGroomOperationAccepted": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_BODY_CONTROL_CHORD_WITNESSES_FINITE_SELF_CONTINUOUS_UNPROVED",
+      "nativeCurves": 10191,
+      "rootPositionMaximumErrorM": 2.1155845862011294e-07,
+      "sourceRestNearZeroTriangles": 0,
+      "targetNearZeroTriangles": 0,
+      "nearZeroDefinitionM2": 1e-12,
+      "sampledNativeCurvesForBodyChords": 23,
+      "strongControlChordWitnesses": 8,
+      "notExactRenderedFiniteSplineOrGlobalContactCount": true,
+      "signedMinimumM": null,
+      "finiteSelfContinuousUnaccepted": true,
+      "evidence": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0171-actual-scalp-chart\\actual-stable-roots-directions-and-body-witnesses.json"
+    },
+    "runtime": {
+      "status": "NOT_EXPORTED_ENGINE_TESTED_OR_PROMOTED",
+      "runtimeAsset": null
+    }
+  },
+  "constructionReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0171-actual-scalp-chart\\direct-actual-scalp-chart-authoring.json",
+  "rightsReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0171-actual-scalp-chart\\references-and-rights.json",
+  "dependencies": "Immutable152 current Mesh library plus16textures,17 hashes; local actual scalp carrier/root meshes, source guides and native nodes. Linked Skin needs Single User for editing. Working139/external117 separate.",
+  "rejectedNotAdopted": true
+}

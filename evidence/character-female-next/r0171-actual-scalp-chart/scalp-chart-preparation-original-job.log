@@ -1,0 +1,13 @@
+00:04.438  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0170-source\aevrynd-female-next-r0170-a-root-constrained-carrier.blend"
+Traceback (most recent call last):
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\prepare-female-next-r0171-scalp-charts.py", line 27, in <module>
+    chart('source',V,F,sourceFaces);chart('target',W,T,targetFaces);result={'UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'sourceScalpVertexGroup':'scalp with original complete-root incident faces','actualTargetScalpFrom':'170 unchanged original albedo connected anatomical scalp','sourceAndTargetDomainRecords':records,'noGeometryMovedOrSourceWomanResaved':True,'chartCapabilityPassed':all(x.get('negativeUVTriangles',1)==0 and x.get('nearZeroUVTriangles',1)==0 for x in records.values())};(E/'actual-scalp-chart-preparation.json').write_bytes((json.dumps(result,indent=2)+'\n').encode());np.savez_compressed(E/'actual-scalp-chart-construction.npz',**arrays);print('R171_ACTUAL_SOURCE_TARGET_SCALP_CHART_PREPARATION',json.dumps(result),flush=True)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\prepare-female-next-r0171-scalp-charts.py", line 16, in chart
+    assert choice not in path,'Non-simple scalp boundary';path.append(choice);previousID,cur=cur,choice
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: Non-simple scalp boundary
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

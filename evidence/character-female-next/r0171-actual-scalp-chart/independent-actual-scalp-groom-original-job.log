@@ -1,0 +1,25 @@
+00:04.485  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0170-source\aevrynd-female-next-r0170-a-root-constrained-carrier.blend"
+00:20.235  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0171-source\aevrynd-female-next-r0171-a-actual-scalp-groom.blend"
+Traceback (most recent call last):
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\verify-female-next-r0171-actual-scalp-groom.py", line 30, in <module>
+    save('actual-stable-roots-directions-and-body-witnesses.json',{'UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'sourceSHA256':b['sha256'],'nativeCurves':N,'allNativeRootPositionErrorMaximumM':rootError,'carrierTargetNearZeroTriangles':int((targetArea<=1e-12).sum()),'carrierSourceRestNearZeroTriangles':int((sourceArea<=1e-12).sum()),'nearZeroDefinitionM2':1e-12,'sourceGuideTipHigherThanRootCount':int((sD[:,2]>.01).sum()),'currentGuideTipHigherThanRootCount':int((cD[:,2]>.01).sum()),'sourceToCurrentGuideRootTipAngleDegreesQuantiles':np.quantile(angles,[0,.5,.9,1]).tolist(),'worstActualGuideDirections':directionRows,'sampledNativeCurvesForBodyChords':inspected,'strongControlChordBodyWitnesses':witnesses,'chordsNotExactRenderedFiniteSplineOrGlobalContactCount':True,'globalSignedMinimumM':None,'allFiniteSelfContinuousNaturalHairRuntimeUnaccepted':True})
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\verify-female-next-r0171-actual-scalp-groom.py", line 7, in save
+    def save(n,x):(E/n).write_bytes((json.dumps(x,indent=2)+'\n').encode())
+                                     ~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\__init__.py", line 242, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\encoder.py", line 202, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\encoder.py", line 263, in iterencode
+    return _iterencode(o, 0)
+  File "D:\SteamLibrary\steamapps\common\Blender\5.2\python\Lib\json\encoder.py", line 182, in default
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+                    f'is not JSON serializable')
+TypeError: Object of type int64 is not JSON serializable
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

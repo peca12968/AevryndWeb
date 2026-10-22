@@ -1,0 +1,13 @@
+00:04.516  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0170-source\aevrynd-female-next-r0170-a-root-constrained-carrier.blend"
+Traceback (most recent call last):
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0171-actual-scalp-groom.py", line 59, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0171-actual-scalp-groom.py", line 39, in main
+    vertices=np.array(vertices);current=np.array(current);UV=np.array(UV);faces=np.array(faces,'i4');mapT=np.array(mapT,'i4');mapBC=np.array(mapBC);rootVertex=np.array(rootVertex,'i4');uvArea=cross2(UV[faces[:,1]]-UV[faces[:,0]],UV[faces[:,2]]-UV[faces[:,0]]);targetArea=np.linalg.norm(np.cross(current[faces[:,1]]-current[faces[:,0]],current[faces[:,2]]-current[faces[:,0]]),axis=1)/2;sourceArea=np.linalg.norm(np.cross(vertices[faces[:,1]]-vertices[faces[:,0]],vertices[faces[:,2]]-vertices[faces[:,0]]),axis=1)/2;assert (uvArea>1e-12).all() and (targetArea>1e-12).all() and (sourceArea>1e-12).all()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
