@@ -1,0 +1,15 @@
+{
+  "candidate": "b",
+  "frame": 11,
+  "blinkControls": [
+    1.0,
+    1.0
+  ],
+  "actualSkinTriangles": 340174,
+  "actualEyeTriangles": 1192,
+  "sampledEyeTriangleCentroidRaysTested": 1192,
+  "uncoveredEyePointWitnesses": [],
+  "witnessMeaning": "Concrete perspective rays where actual eye mesh is at least1mm before first actual Skin hit, or no Skin hit. Skin coverage gap witnesses only;1mm is conservative witness selection, never contact/closure acceptance tolerance. No absence/global visibility/pass inferred from sampling; lashes/hair/wet alpha are not inferred as opaque coverage.",
+  "finiteThicknessSelfContinuousContactAccepted": false,
+  "completeBlinkAccepted": false
+}

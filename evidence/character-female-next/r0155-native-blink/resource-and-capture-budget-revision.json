@@ -1,0 +1,24 @@
+{
+  "UTC": "2026-10-22T08:12:49.066201+00:00",
+  "originalStartedUTC": "2026-10-22T07:33:30+00:00",
+  "originalSourceBudgetBytes": 1500000,
+  "originalEvidenceBudgetBytes": 5500000,
+  "effectiveSourceBudgetBytes": 1500000,
+  "effectiveEvidenceBudgetBytes": 6700000,
+  "reason": "Initial B captures inconsistent with independently reopened actual geometry/pose. Add full640px evaluated readback captures and essential eye surface crossing evidence; do not qualify from smaller image or sampled rays. Existing first-capture evidence and two original source states retained. No clocks/counters/quality tolerances reset.",
+  "measuredExistingEvidenceBytes": 5388289,
+  "estimatedAdditionalEvidenceUpperBytes": 1200000,
+  "estimatedNewGitOrdinaryObjectBytes": 6000000,
+  "newWriteObjectStore": "C:\\Users\\USER\\AevryndCharacterGitObjects-r0155\\objects",
+  "previousDObjectStorePreserved": "D:/Download/Aevrynd/.character-git-r0145/objects",
+  "existingRootAlternatesBeforeUtf8": "C:/Users/USER/AevryndCharacterGitObjects\n",
+  "existingRootAlternatesBeforeSha256": "be3b0e8a9b4f1ac5cf447a3ad4477c7c6b8e3035ade8a3410cd9471336807688",
+  "rootAlternateAddedWithoutReplacingExistingEntries": true,
+  "existingObjectsOrHistoryMovedDeletedOrPruned": false,
+  "newCStoreAdditionalPlannedBytes": 6000000,
+  "whyC": "D free space can retain source/evidence but cannot safely also duplicate normal Git object blobs. New separate C store leaves old C probe and D stores untouched; normal Git reads retain all alternates. Normal hooks/LFS/branch/auth remain unchanged.",
+  "freeBytes": {
+    "C": 209113088,
+    "D": 8716288
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "cases": [
+    {
+      "frame": 11,
+      "eye": "AFN126_ORIGINAL_Eye_Eye_0",
+      "blink": 1.0,
+      "actualSkinTriangles": 340174,
+      "actualEyeTriangles": 1192,
+      "properCrossings": 0,
+      "allContacts": 0,
+      "degeneratePairs": 0,
+      "candidatePairs": 12516,
+      "firstProperFacePairs": []
+    },
+    {
+      "frame": 11,
+      "eye": "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0",
+      "blink": 1.0,
+      "actualSkinTriangles": 340174,
+      "actualEyeTriangles": 980,
+      "properCrossings": 19,
+      "allContacts": 19,
+      "degeneratePairs": 0,
+      "candidatePairs": 15373,
+      "firstProperFacePairs": [
+        [
+          339014,
+          656
+        ],
+        [
+          339014,
+          657
+        ],
+        [
+          339019,
+          950
+        ],
+        [
+          339021,
+          950
+        ],
+        [
+          339021,
+          951
+        ],
+        [
+          339014,
+          952
+        ],
+        [
+          339019,
+          952
+        ],
+        [
+          339014,
+          953
+        ],
+        [
+          339021,
+          954
+        ],
+        [
+          339021,
+          955
+        ],
+        [
+          339021,
+          960
+        ],
+        [
+          339021,
+          961
+        ],
+        [
+          339014,
+          962
+        ],
+        [
+          339014,
+          963
+        ],
+        [
+          339019,
+          963
+        ],
+        [
+          339021,
+          963
+        ],
+        [
+          339021,
+          966
+        ],
+        [
+          339014,
+          970
+        ],
+        [
+          339019,
+          970
+        ]
+      ]
+    }
+  ],
+  "knownRelatedSurfaceFailure": true,
+  "method": "Full actual Skin/eye/reflect triangle AABB coverage then float64 SAT. Only recorded discrete poses; numerical epsilon1e-12m unchanged. No finite-thickness/self/continuous/global signed or alpha/wet occupancy qualification.",
+  "numericEpsilonM": 1e-12,
+  "finiteSelfContinuousAccepted": false,
+  "stopAfterFirstRelatedKnownFailure": true
+}

@@ -1,0 +1,104 @@
+{
+  "revision": "female-next-r0155",
+  "role": "TWO_UNACCEPTED_NATIVE_BLINK_FULL_WOMAN_STATES_ONE_ACTUAL_ROUND",
+  "sources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0155-source\\aevrynd-female-next-r0155-a-native-blink.blend",
+      "sha256": "05bec479d8319fa045b00c0cd3466be38e6915aabdd521c9edc7af68b08866f4",
+      "bytes": 555974,
+      "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+      "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "status": "REJECT_INCOMPLETE_CLOSURE",
+      "completeBlinkAccepted": false,
+      "appearanceAdopted": false
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0155-source\\aevrynd-female-next-r0155-b-margin-blink.blend",
+      "sha256": "aee4ce15189542c33f3350136e4e98d4ee2376976e93ae51c70c2d13252f3486",
+      "bytes": 814443,
+      "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+      "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "status": "HOLD_PROMISING_MARGIN_CLOSURE_KNOWN19_OCULAR_REFLECT_CROSSINGS",
+      "completeBlinkAccepted": false,
+      "appearanceAdopted": false
+    }
+  },
+  "workingCompleteWomanUnchanged": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0139-source\\aevrynd-female-next-r0139-a-native-lid-follow.blend",
+    "sha256": "5128a461a011899c77b275055ea3a8a94ca278873665dd08f72a6003d4a37bb9",
+    "bytes": 136089229,
+    "status": "RETAIN_R126_STATIC_LOOK_ADOPT_R139_NATIVE_COUPLED_GAZE_OPERATION",
+    "scope": "Same complete woman retains r126 scoped neutral static face/head/skin appearance and now adopts only actual native fixed-head eye/lid/lash/wet-line gaze operation in recorded original yaw20/pitch10 action/manual scope. R138 socket reconstruction retained. Not complete avatar anatomy/eyes-layer anatomy/finite contacts/hair/clothes/actions/runtime/rights/user acceptance.",
+    "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualFaceControls": "AFN138_ACTUAL_CURRENT_GAZE_RIG / AFN138_EYE_L,R drive four AFN139 upper/lower lid bones, actual current AFN126 skin and original lashes/wet line. AFN138_NATIVE_CURRENT_GAZE_DEMO frames1..49 at24fps. No actual current blink/jaw/head tracking/body/clothes rig operation accepted.",
+    "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope. R139 adds scoped gaze function only; no new neutral appearance adoption.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false,
+    "originalArtist": "DarkNik / original NikZava284",
+    "assetLicense": "CC-BY4.0, attribution and modifications retained",
+    "acceptedCompleteScopedOperations": [
+      "Recorded fixed-head native coupled ocular/lid/lash/wet-line gaze at original yaw +/-20deg and pitch +/-10deg, independent actual operation and neutral restoration."
+    ],
+    "scopedGazeOperationAccepted": true,
+    "allCharacterOperationsComplete": false,
+    "staticAppearanceBaseline": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-b-source-section-neck.blend",
+      "sha256": "798c2496aadac717d967362c58afa88d38ceac584248c85f6d86afc618253631",
+      "bytes": 135305654,
+      "status": "ADOPT_SCOPED_STATIC_COMPLETE_FACE_APPEARANCE_GAIN",
+      "scope": "Same complete woman. Adopt only static actual complete-character face/head form and skin-source appearance across recorded matched views/second light; all controls, hair physics, finite contacts/runtime/rights/user gates open.",
+      "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "actualFaceControls": "No controls connected to new visible head. AFN59_FACE_CONTROLS/blink_left/right retained on hidden r117 rollback only; actual new skin motion0.",
+      "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope.",
+      "completeOperationAccepted": false,
+      "femaleUserAccepted": false,
+      "originalArtist": "DarkNik / original NikZava284",
+      "assetLicense": "CC-BY4.0, attribution and modifications retained"
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "NO_ADOPTED_COMPLETE_APPEARANCE_GAIN",
+      "score": null,
+      "A": "Incomplete closure, lower-lid over-rise.",
+      "B": "Closed-eye form promising; wet seam still artificial, no adopted appearance."
+    },
+    "function": {
+      "status": "ACTUAL_GAZE_PRESERVATION_AND_BLINK_LAYER_MOTION_RESTORE_ONLY",
+      "original49GazeAndSevenRawMeshesUVExact": true,
+      "actual24BlinkFramesChecked": true,
+      "completeBlinkAccepted": false,
+      "reason": "Related19 actual ocular reflect crossings; initial capture discrepancy unresolved."
+    },
+    "contact": {
+      "status": "FAIL_CLOSED_SKIN_REFLECT_19_PROPER_TRIANGLE_CROSSINGS",
+      "frame": 11,
+      "actualEyeMeshCrossings": 0,
+      "actualReflectCrossings": 19,
+      "independentEdgeTriangleCorroborated": true,
+      "numericEpsilonM": 1e-12,
+      "globalSignedMinimumM": null,
+      "globalUnsignedTriangleSurfaceMinimumM": 0.0,
+      "finiteSelfContinuousAccepted": false,
+      "remainingPosesNotTestedAfterKnownFailure": true
+    },
+    "runtime": {
+      "status": "NOT_EXPORTED_TESTED_OR_PROMOTED",
+      "runtimeAsset": null
+    }
+  },
+  "originalSourceLibraryRequired": "r0152-source/aevrynd-female-next-r0152-a-layered-native-groom.blend",
+  "sourceLibrarySha256": "6d14dcca0c0a3dc2a8be613d92377a663522dbb8d31a3f26ec894132723f1480",
+  "externalTexturesRequired": 16,
+  "rollback117ExternalNotEmbedded": true,
+  "actualOriginalBlinkSource": "Original bone drivers inA; original native per-vertex angular GN field and triangle/barycentric lash/wet attachments inB. No handler, hidden117 controller or analytic closing plate.",
+  "independentSourceAndArchiveEvidence": [
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0155-native-blink\\independent-current-blink-readback.json",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0155-native-blink\\independent-mirror-source-readback.json",
+    "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0155-native-blink\\b-independent-crossing-location-witness.json"
+  ],
+  "originalRights": "DarkNik / original NikZava284 adult head/eyes/hair/skin/textures/lashes/wet/mouth CC-BY4.0; MakeHuman/Vitruvian body CC0; original126 credits/license/source retained. New bone/field authoring original Aevrynd; no exclusive claim over third-party content.",
+  "completeBlinkOrAppearanceOrRuntimeAdopted": false
+}

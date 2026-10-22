@@ -1,0 +1,143 @@
+{
+  "rigClosedProperties": {
+    "blink_L": 1.0,
+    "blink_R": 1.0
+  },
+  "actualAnimatedClosedSkinMovementM": 0.008972820403856217,
+  "actualManualScalarOneSkinMovementM": 0.008972820403856217,
+  "actualNativeFieldAttributes": {
+    "AFN155_ANGLE": {
+      "min": -0.1371084302663803,
+      "max": 0.5488242506980896,
+      "nonzero": 2906
+    },
+    "AFN155_ACTIVE": {
+      "min": 0.0,
+      "max": 1.0,
+      "nonzero": 2906
+    }
+  },
+  "nodeDriverState": [
+    {
+      "object": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "nodes": 31,
+      "valuesAtClosed": [
+        {
+          "name": "值",
+          "value": 1.0
+        },
+        {
+          "name": "值.001",
+          "value": 1.0
+        }
+      ],
+      "drivers": [
+        {
+          "path": "nodes[\"值\"].outputs[0].default_value",
+          "valid": true,
+          "expression": "blink",
+          "variables": [
+            [
+              "blink",
+              "<bpy_struct, Object(\"AFN138_ACTUAL_CURRENT_GAZE_RIG\") at 0x00000193CAC28120>",
+              "[\"blink_L\"]"
+            ]
+          ]
+        },
+        {
+          "path": "nodes[\"值.001\"].outputs[0].default_value",
+          "valid": true,
+          "expression": "blink",
+          "variables": [
+            [
+              "blink",
+              "<bpy_struct, Object(\"AFN138_ACTUAL_CURRENT_GAZE_RIG\") at 0x00000193CAC28120>",
+              "[\"blink_R\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "object": "AFN126_ORIGINAL_Eyelashes_Eyelashes_0",
+      "nodes": 40,
+      "valuesAtClosed": [
+        {
+          "name": "值",
+          "value": 1.0
+        },
+        {
+          "name": "值.001",
+          "value": 1.0
+        }
+      ],
+      "drivers": [
+        {
+          "path": "nodes[\"值\"].outputs[0].default_value",
+          "valid": true,
+          "expression": "blink",
+          "variables": [
+            [
+              "blink",
+              "<bpy_struct, Object(\"AFN138_ACTUAL_CURRENT_GAZE_RIG\") at 0x00000193CAC28120>",
+              "[\"blink_L\"]"
+            ]
+          ]
+        },
+        {
+          "path": "nodes[\"值.001\"].outputs[0].default_value",
+          "valid": true,
+          "expression": "blink",
+          "variables": [
+            [
+              "blink",
+              "<bpy_struct, Object(\"AFN138_ACTUAL_CURRENT_GAZE_RIG\") at 0x00000193CAC28120>",
+              "[\"blink_R\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "object": "AFN126_ORIGINAL_MeniscusEyeSpec_MeniscusEye_0",
+      "nodes": 40,
+      "valuesAtClosed": [
+        {
+          "name": "值",
+          "value": 1.0
+        },
+        {
+          "name": "值.001",
+          "value": 1.0
+        }
+      ],
+      "drivers": [
+        {
+          "path": "nodes[\"值\"].outputs[0].default_value",
+          "valid": true,
+          "expression": "blink",
+          "variables": [
+            [
+              "blink",
+              "<bpy_struct, Object(\"AFN138_ACTUAL_CURRENT_GAZE_RIG\") at 0x00000193CAC28120>",
+              "[\"blink_L\"]"
+            ]
+          ]
+        },
+        {
+          "path": "nodes[\"值.001\"].outputs[0].default_value",
+          "valid": true,
+          "expression": "blink",
+          "variables": [
+            [
+              "blink",
+              "<bpy_struct, Object(\"AFN138_ACTUAL_CURRENT_GAZE_RIG\") at 0x00000193CAC28120>",
+              "[\"blink_R\"]"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "noSourceFileSavedOrChanged": true
+}

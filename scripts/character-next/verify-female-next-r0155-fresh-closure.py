@@ -1,0 +1,16 @@
+from pathlib import Path
+import bpy,numpy as np,json,importlib.util,time
+R=Path('D:/Download/Aevrynd');E=R/'Evidence/character-female-next/r0155-native-blink'
+def module(n,f):
+ sp=importlib.util.spec_from_file_location(n,Path(__file__).with_name(f));m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);return m
+h=module('r155fresh','build-female-next-r0155-margin-blink.py');c=module('r155rawcontact','contact-female-next-r0138-ocular-surfaces.py');a=h.a;b=json.loads((E/'b-build-summary.json').read_text());tick=time.time();assert a.a.sha(Path(b['output']))==b['sha256'];bpy.ops.wm.open_mainfile(filepath=b['output']);s=bpy.context.scene;rig=bpy.data.objects[b['actualRig']];names=[b['actualSkin'],*h.h.ATTACH];rows=[]
+for view in ['face','oblique']:
+ s.frame_set(11);bpy.context.view_layer.update();a.b.u.v.m.rig.shade.settings();a.b.u.v.m.rig.k.b.camera(view);s.camera.data.lens=85;s.render.resolution_x=s.render.resolution_y=640;s.cycles.samples=16;s.render.hair_subdiv=3;bpy.context.view_layer.update();hashes={n:[a.a.hasharray(v) for v in a.geometry(bpy.data.objects[n])] for n in names};s.render.filepath=str(E/('b-independently-evaluated-closed-'+view+'.png'));control={'file':s.render.filepath,'view':view,'frame':s.frame_current,'blink_L':float(rig['blink_L']),'blink_R':float(rig['blink_R']),'actualPreCaptureGeometry':hashes,'camera':np.array(s.camera.matrix_world).tolist(),'lensMM':s.camera.data.lens,'lights':a.b.u.v.m.m.q.lights(),'exposure':s.view_settings.exposure,'look':s.view_settings.look,'resolution':640,'samples':16,'seed':s.cycles.seed,'denoise':s.cycles.use_denoising,'renderDepsgraphMeshNotCaptured':True};bpy.ops.render.render(write_still=True);assert hashes=={n:[a.a.hasharray(v) for v in a.geometry(bpy.data.objects[n])] for n in names};rows.append(control);h.save('b-fresh-evaluated-closed-view-controls.json',rows)
+cases=[];bad=False
+for frame in [11,9,24]:
+ s.frame_set(frame);bpy.context.view_layer.update();W,T=a.geometry(bpy.data.objects[b['actualSkin']]);Skin=W[T];low=Skin.min(1);high=Skin.max(1)
+ for name in a.MOVING:
+  V,F=a.geometry(bpy.data.objects[name]);r=c.query(Skin,V[F],low,high);cases.append({'frame':frame,'eye':name,'blink':float(rig['blink_L']),'actualSkinTriangles':len(T),'actualEyeTriangles':len(F),'properCrossings':len(r['properCrossings']),'allContacts':len(r['intersections']),'degeneratePairs':r['degenerateCandidatePairs'],'candidatePairs':r['candidatePairs'],'firstProperFacePairs':r['properCrossings'][:20].tolist()});bad=bad or len(r['properCrossings'])>0 or r['degenerateCandidatePairs']>0
+ h.save('b-actual-ocular-triangle-contact.json',{'cases':cases,'knownRelatedSurfaceFailure':bool(bad),'method':'Full actual Skin/eye/reflect triangle AABB coverage then float64 SAT. Only recorded discrete poses; numerical epsilon1e-12m unchanged. No finite-thickness/self/continuous/global signed or alpha/wet occupancy qualification.','numericEpsilonM':c.EPS,'finiteSelfContinuousAccepted':False,'stopAfterFirstRelatedKnownFailure':bool(bad)})
+ if bad:break
+s.frame_set(1);bpy.context.view_layer.update();assert a.a.sha(Path(b['output']))==b['sha256'];print('R155_FRESH_FULLRES_CLOSURE_AND_ACTUAL_OCULAR_TRIANGLES_DONE',bool(bad),time.time()-tick,flush=True)

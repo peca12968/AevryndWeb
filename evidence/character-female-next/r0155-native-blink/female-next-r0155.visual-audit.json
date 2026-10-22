@@ -1,0 +1,167 @@
+{
+  "revision": "female-next-r0155",
+  "decision": "REJECT_FIXED_LID_BLINK_HOLD_MARGIN_FIELD_19_RELATED_CROSSINGS_KEEP_R139",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "appearanceImprovement": false,
+  "functionalOperationGainOnCompleteWoman": false,
+  "actualProductionRoundCountedOnce": true,
+  "initialPlannedOneCandidatePreserved": true,
+  "actualSavedCompleteStates": 2,
+  "workingCompleteWomanReference": {
+    "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0139-source\\aevrynd-female-next-r0139-a-native-lid-follow.blend",
+    "sha256": "5128a461a011899c77b275055ea3a8a94ca278873665dd08f72a6003d4a37bb9",
+    "bytes": 136089229,
+    "status": "RETAIN_R126_STATIC_LOOK_ADOPT_R139_NATIVE_COUPLED_GAZE_OPERATION",
+    "scope": "Same complete woman retains r126 scoped neutral static face/head/skin appearance and now adopts only actual native fixed-head eye/lid/lash/wet-line gaze operation in recorded original yaw20/pitch10 action/manual scope. R138 socket reconstruction retained. Not complete avatar anatomy/eyes-layer anatomy/finite contacts/hair/clothes/actions/runtime/rights/user acceptance.",
+    "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualFaceControls": "AFN138_ACTUAL_CURRENT_GAZE_RIG / AFN138_EYE_L,R drive four AFN139 upper/lower lid bones, actual current AFN126 skin and original lashes/wet line. AFN138_NATIVE_CURRENT_GAZE_DEMO frames1..49 at24fps. No actual current blink/jaw/head tracking/body/clothes rig operation accepted.",
+    "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope. R139 adds scoped gaze function only; no new neutral appearance adoption.",
+    "completeOperationAccepted": false,
+    "femaleUserAccepted": false,
+    "originalArtist": "DarkNik / original NikZava284",
+    "assetLicense": "CC-BY4.0, attribution and modifications retained",
+    "acceptedCompleteScopedOperations": [
+      "Recorded fixed-head native coupled ocular/lid/lash/wet-line gaze at original yaw +/-20deg and pitch +/-10deg, independent actual operation and neutral restoration."
+    ],
+    "scopedGazeOperationAccepted": true,
+    "allCharacterOperationsComplete": false,
+    "staticAppearanceBaseline": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0126-source\\aevrynd-female-next-r0126-b-source-section-neck.blend",
+      "sha256": "798c2496aadac717d967362c58afa88d38ceac584248c85f6d86afc618253631",
+      "bytes": 135305654,
+      "status": "ADOPT_SCOPED_STATIC_COMPLETE_FACE_APPEARANCE_GAIN",
+      "scope": "Same complete woman. Adopt only static actual complete-character face/head form and skin-source appearance across recorded matched views/second light; all controls, hair physics, finite contacts/runtime/rights/user gates open.",
+      "renderSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "rawEditableSource": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "actualFaceControls": "No controls connected to new visible head. AFN59_FACE_CONTROLS/blink_left/right retained on hidden r117 rollback only; actual new skin motion0.",
+      "appearanceAdoptionScope": "Only scoped static complete-character individual face/head shape and original skin-source appearance. Existing r117 complete source preserved as rollback; not false transfer of old fibre brow/groom/neck operation scope.",
+      "completeOperationAccepted": false,
+      "femaleUserAccepted": false,
+      "originalArtist": "DarkNik / original NikZava284",
+      "assetLicense": "CC-BY4.0, attribution and modifications retained"
+    }
+  },
+  "prototypeSources": {
+    "a": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0155-source\\aevrynd-female-next-r0155-a-native-blink.blend",
+      "sha256": "05bec479d8319fa045b00c0cd3466be38e6915aabdd521c9edc7af68b08866f4",
+      "bytes": 555974,
+      "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+      "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "status": "REJECT_INCOMPLETE_CLOSURE",
+      "completeBlinkAccepted": false,
+      "appearanceAdopted": false
+    },
+    "b": {
+      "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0155-source\\aevrynd-female-next-r0155-b-margin-blink.blend",
+      "sha256": "aee4ce15189542c33f3350136e4e98d4ee2376976e93ae51c70c2d13252f3486",
+      "bytes": 814443,
+      "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+      "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+      "status": "HOLD_PROMISING_MARGIN_CLOSURE_KNOWN19_OCULAR_REFLECT_CROSSINGS",
+      "completeBlinkAccepted": false,
+      "appearanceAdopted": false
+    }
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "NO_ADOPTED_COMPLETE_APPEARANCE_GAIN",
+      "score": null,
+      "A": "Incomplete closure, lower-lid over-rise.",
+      "B": "Closed-eye form promising; wet seam still artificial, no adopted appearance."
+    },
+    "function": {
+      "status": "ACTUAL_GAZE_PRESERVATION_AND_BLINK_LAYER_MOTION_RESTORE_ONLY",
+      "original49GazeAndSevenRawMeshesUVExact": true,
+      "actual24BlinkFramesChecked": true,
+      "completeBlinkAccepted": false,
+      "reason": "Related19 actual ocular reflect crossings; initial capture discrepancy unresolved."
+    },
+    "contact": {
+      "status": "FAIL_CLOSED_SKIN_REFLECT_19_PROPER_TRIANGLE_CROSSINGS",
+      "frame": 11,
+      "actualEyeMeshCrossings": 0,
+      "actualReflectCrossings": 19,
+      "independentEdgeTriangleCorroborated": true,
+      "numericEpsilonM": 1e-12,
+      "globalSignedMinimumM": null,
+      "globalUnsignedTriangleSurfaceMinimumM": 0.0,
+      "finiteSelfContinuousAccepted": false,
+      "remainingPosesNotTestedAfterKnownFailure": true
+    },
+    "runtime": {
+      "status": "NOT_EXPORTED_TESTED_OR_PROMOTED",
+      "runtimeAsset": null
+    }
+  },
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteGainLowerBound": 29,
+  "confirmedConsecutiveRoundsWithoutAdoptedCompleteAppearanceGainLowerBound": 29,
+  "productionRoundsSinceLastWholeCharacterReview": 0,
+  "nextWholeReviewAfterFurtherProductionRounds": 3,
+  "lastReviewedProductionWindow": [
+    "r153",
+    "r154",
+    "r155"
+  ],
+  "lastWholeCharacterReview": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0155-native-blink\\three-round-whole-character-review.json",
+  "femaleUserAcceptance": false,
+  "wholeCharacterStagnationReset": false,
+  "foundationChangeRequiredNextProduction": true,
+  "stoppedMethodsInheritedFrom": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0154-native-scalp-rest\\continuation.json",
+  "stoppedMethods": [
+    "A fixed equatorial bone-endpoint blink; no angle sweep, reduced closure or cap rescue.",
+    "B present geodesic angular/radial domain cannot be adopted with19 related surface failures. Preserve promising actual closure field, but any retry must change anatomical domain/inner-wall construction based on exact failure evidence."
+  ],
+  "allEarlierRetirementsRemainEffective": true,
+  "liveJobHandles": [],
+  "originalTerminalJobs": [
+    {
+      "handle": 29897,
+      "job": "A native lid-bone blink",
+      "terminal": "R155_COMPLETE_CURRENT_WOMAN_NATIVE_BLINK_HEAD_BODY_AND_ACTION_PREVIEW_DONE"
+    },
+    {
+      "handle": 72890,
+      "job": "B angular margin field and initial inconsistent images",
+      "terminal": "R155_COMPLETE_MARGIN_BLINK_WOMAN_HEAD_BODY_ACTION_PREVIEW_DONE"
+    },
+    {
+      "handle": 93966,
+      "job": "independent field-driving inspection",
+      "terminal": "R155_ACTUAL_FIELD_DRIVING_INSPECTION_DONE"
+    },
+    {
+      "handle": 81591,
+      "job": "fresh render probe",
+      "terminal": "R155_ACTUAL_RENDER_VERSUS_VIEWPORT_EVALUATION_DONE;0 renderDG records"
+    },
+    {
+      "handle": 31744,
+      "job": "independent49gaze24blinkrestore",
+      "terminal": "R155_INDEPENDENT_AB_49_GAZE_24_BLINK_RESTORE_COVERAGE_WITNESS_DONE"
+    },
+    {
+      "handle": 28935,
+      "job": "fresh640captures/fullocularSAT",
+      "terminal": "R155_FRESH_FULLRES_CLOSURE_AND_ACTUAL_OCULAR_TRIANGLES_DONE True"
+    },
+    {
+      "handle": 82346,
+      "job": "first archive readback",
+      "terminal": "Assertion before B: gaze-only Action switched at9 without explicit eye-pose reset before blink-only Action. As-executed script/log retained."
+    },
+    {
+      "handle": 55112,
+      "job": "archive readback with explicit gaze restoration",
+      "terminal": "R155_AB_ARCHIVE_REOPEN_16_TEXTURES_GAZE_BLINK_RESTORE_19_INDEPENDENT_CROSSINGS_DONE"
+    }
+  ],
+  "previousGoalTurnClassification": "Progress on explicitly requested prompt maintenance v50 only; production untouched, no character appearance/operation gain or counter reset.",
+  "lastGoalTurnClassification": "Progress: actual155 A/B authoring and independent evidence identify incompleteA and promisingB with19 independently corroborated related ocular surface crossings; no adoption. Whole153154155 reviewed, minimum reproducibility and exact history preserved.",
+  "progressKind": "ACTUAL_BLINK_FOUNDATION_REJECT_HOLD_KNOWN_RELATED_FAILURE",
+  "nextAction": "Continue SAME unique working139 complete woman with adopted126 scoped neutral face/skin/body and139 coupled gaze unchanged. R155 A fixed lid-bone equatorial closure endpoint visibly leaves white aperture and excessive lower-lid rise: stop this endpoint method, no angle sweep or shrinking action. B is a promising UNACCEPTED actual native per-vertex angular margin closure field on original Skin with native triangle-attached lashes/wet line. Fresh independently reopened/evaluated face640/oblique640/body320 shows closure form, but19 actual Skin versus EyeScleraReflect triangle crossings at closed frame11 independently corroborated by finite edge/triangle witnesses prohibit complete blink adoption; pale/glossy wet seam also remains. No related finite/self/continuous or combined-gaze blink pass. Existing1192 sampled rays with zero uncovered witnesses never establish global closure/contact. Initial B in-memory images conflict with fresh reopen captures; exact cause unresolved, render-depsgraph handler0records gives no render-mesh equality claim. Preserve B field and all original contradictory captures; no new caps, shell hiding/deletion, global outward push, smaller closure or blind fade/angle variants. Next direct production must identify original outer-lid versus socket-wall lineage/semantic ownership of the actual failed triangles using saved evaluated coordinates/vertex IDs and source138 cavity construction, then REBUILD blocking anatomical deformation/inner-wall construction on the same complete woman, preserving original neutral shape/all49gaze and actual closed endpoint. Do not assume all high-index faces are appended socket walls without lineage evidence. Reconnect actual lash/wet attachments, show full head/body and intermediate/closed/neutral early, independently reopen and restore. Retain B only as pending research/construction, not working reference. Source153 shared wrapper is usable only with failed153 hairline disabled; sources155 require immutable152 mesh library and16textures, external117 rollback retained separately. All earlier retired hair/cap/transfer directions remain stopped. Hair coarse glossy block rest and natural turn-stop-wind-settle remain unaccepted. No-adopt appearance29; whole153154155 reviewed including incomplete154, cadence0,next3. Only adopted complete appearance resets stagnation; complete shape/skin/eyes/oral layers/body/clothes/actions, finite/self/continuous contacts, actual Aevrynd/LOD/performance/rights and explicit female acceptance remain open. Keep full goal active, no male/runtime/website promotion.",
+  "originalTimingReference": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0155-native-blink\\before.json",
+  "resourceRevisionReference": "D:\\Download\\Aevrynd\\Evidence\\character-female-next\\r0155-native-blink\\resource-and-capture-budget-revision.json",
+  "goal": "ACTIVE_NOT_COMPLETE"
+}
