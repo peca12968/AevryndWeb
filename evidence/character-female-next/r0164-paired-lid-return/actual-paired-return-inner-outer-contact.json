@@ -1,0 +1,136 @@
+{
+  "sourceSha256": "fd5b7cae325faac4443f89711f1ac3cd8a9d115f1371d25fc9c4adf5181aa4cb",
+  "frame": 11,
+  "actualOuterSkinTriangles": 337718,
+  "actualInnerWallTriangles": 4362,
+  "SATProperCandidates": 4251,
+  "finiteSegmentCorroboratedCrossingPairs": 4230,
+  "pointOnlyWitnessCandidates": 21,
+  "noFiniteWitnessCandidatesUnresolved": 0,
+  "firstFiniteCrossings": [
+    {
+      "outerTriangle": 81,
+      "innerTriangle": 337736,
+      "outerPolygon": 81,
+      "innerPolygon": 186766,
+      "sharedVertexCount": 0,
+      "finiteWitnessSpanM": 6.193702359215762e-05,
+      "finiteEdgeFaceWitnesses": [
+        {
+          "method": "skin-edge/eye-face",
+          "segment": [
+            0,
+            1
+          ],
+          "t": 0.1748796315574448,
+          "u": 0.7757982814726088,
+          "v": 0.17529485280987325,
+          "worldPoint": [
+            0.043607943231317385,
+            -0.1102597490714241,
+            1.459510949762493
+          ]
+        },
+        {
+          "method": "eye-edge/skin-face",
+          "segment": [
+            1,
+            2
+          ],
+          "t": 0.22951840781910116,
+          "u": 0.19029237663747528,
+          "v": 0.044002091656930115,
+          "worldPoint": [
+            0.043665557129229565,
+            -0.1102370694109237,
+            1.4595093792025906
+          ]
+        }
+      ]
+    },
+    {
+      "outerTriangle": 82,
+      "innerTriangle": 337736,
+      "outerPolygon": 82,
+      "innerPolygon": 186766,
+      "sharedVertexCount": 0,
+      "finiteWitnessSpanM": 0.00019198035806616712,
+      "finiteEdgeFaceWitnesses": [
+        {
+          "method": "skin-edge/eye-face",
+          "segment": [
+            2,
+            0
+          ],
+          "t": 0.8879265433314747,
+          "u": 0.634404818481156,
+          "v": 0.13764938144363975,
+          "worldPoint": [
+            0.043556833809344705,
+            -0.1103001764181188,
+            1.4594958170250818
+          ]
+        },
+        {
+          "method": "eye-edge/skin-face",
+          "segment": [
+            1,
+            2
+          ],
+          "t": 0.2954152119284889,
+          "u": 0.20370364985312883,
+          "v": 0.10280988871646833,
+          "worldPoint": [
+            0.043731022750220734,
+            -0.11021961839278947,
+            1.459500824550892
+          ]
+        }
+      ]
+    },
+    {
+      "outerTriangle": 85,
+      "innerTriangle": 337736,
+      "outerPolygon": 85,
+      "innerPolygon": 186766,
+      "sharedVertexCount": 0,
+      "finiteWitnessSpanM": 0.00046137140616474997,
+      "finiteEdgeFaceWitnesses": [
+        {
+          "method": "skin-edge/eye-face",
+          "segment": [
+            2,
+            0
+          ],
+          "t": 0.7365711928527665,
+          "u": 0.008646035078948918,
+          "v": 0.17935267179710015,
+          "worldPoint": [
+            0.04355353896536202,
+            -0.11038849140822547,
+            1.4594250950488403
+          ]
+        },
+        {
+          "method": "eye-edge/skin-face",
+          "segment": [
+            1,
+            2
+          ],
+          "t": 0.5178635957128596,
+          "u": 0.43266115123466115,
+          "v": 0.3628506419218533,
+          "worldPoint": [
+            0.043952015585605464,
+            -0.11016070884729909,
+            1.459471946542772
+          ]
+        }
+      ]
+    }
+  ],
+  "sameScopePrior161FiniteSegmentPairs": 1392,
+  "noSharedVertexFaceExemptions": true,
+  "numericEpsilonM": 1e-12,
+  "wholeSelfFiniteContinuousUnaccepted": true
+}
