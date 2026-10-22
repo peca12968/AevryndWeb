@@ -1,0 +1,14 @@
+00:04.594  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0165-source\aevrynd-female-next-r0165-a-native-hair-optics.blend"
+C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0168-source-lock-volumes.py:82: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN168_NATIVE_FIBRE_SAME_REFERENCE_COLOR');mat.use_nodes=True;n=mat.node_tree.nodes;n.clear();bs=n.new('ShaderNodeBsdfHairPrincipled');bs.parametrization='COLOR';bs.inputs['Roughness'].default_value=.35;bs.inputs['Radial Roughness'].default_value=.45;out=n.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(bs.outputs[0],out.inputs[0]);data.materials.append(mat)
+00:17.266  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0168-source-lock-volumes\matched-a-source-lock-volumes-face.png'
+00:20.391  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0168-source-lock-volumes\matched-a-source-lock-volumes-body-face.png'
+00:29.672  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0168-source-lock-volumes\matched-a-source-lock-volumes-profile.png'
+00:36.422  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0168-source-lock-volumes\matched-a-source-lock-volumes-back.png'
+00:45.531  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0168-source-lock-volumes\matched-a-source-lock-volumes-oblique.png'
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+資訊: 已儲存為「aevrynd-female-next-r0168-a-source-lock-volumes.blend」
+R168_COMPLETE_TOPOLOGICAL_SOURCE_VOLUME_HEAD_BODY_PROFILE_BACK_OBLIQUE_DONE 41.06508493423462
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

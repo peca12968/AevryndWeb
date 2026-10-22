@@ -1,0 +1,78 @@
+{
+  "revision": "female-next-r0168",
+  "source": {
+    "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0168-source\\aevrynd-female-next-r0168-a-source-lock-volumes.blend",
+    "engineAlias": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0168-source\\aevrynd-female-next-r0168-a-source-lock-volumes.blend",
+    "sha256": "c84fd14a8fb726a205e65a9384407d8ad4fe37faba15f92b01cfc060e9e4b694",
+    "bytes": 5525836,
+    "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+    "actualHair": "AFN168_ACTUAL_SOURCE_LOCK_VOLUME_FIBRES",
+    "actualEditableHairData": "AFN168_EDITABLE_FULL_SOURCE_LOCK_VOLUME_DATA",
+    "retainedSourceHair": "AFN126_ORIGINAL_Hair_Hair_0",
+    "status": "REJECT_SOURCE_FAMILY_SECTION_LOFT_AND_ROOT_FIRST_SECTION_DISCONTINUITY",
+    "scope": "Same complete woman. Exact two full current-artist lock families/nine original components replaced by704 native65-point fibres from source topological-distance convex sections, newly authored current-scalp proximal region0..24. Broad side patch/tail mismatch and8 sampled root control-chord/body crossings remain. Native actual fibre edit/root binding only; no adopted complete appearance, operation, contact or runtime."
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECT_PROFILE_PATCH_GLARE_AND_DISCONNECTED_CURL_TIPS",
+      "score": null,
+      "actualCompleteHeadBodyProfileBackViewed": true,
+      "evidence": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0168-source-lock-volumes\\manual-visual-review.json",
+      "noBroadVariantsAfterVisibleFailure": true
+    },
+    "function": {
+      "status": "PROTECTED49_GAZE_AND_ACTUAL_NATIVE_FIBRE_SKIN_EDIT_RESTORE_ONLY",
+      "protectedSixRawMeshesUVAnd49OriginalEvaluatedGazePosesEqual": true,
+      "allRetainedCoarseHairPositionsPolygonsUVExact": true,
+      "nativeRenderCurves": 704,
+      "nativeRenderPoints": 45760,
+      "actualRootArithmeticMaximumErrorM": 1.8297990766192083e-07,
+      "nativeFibre1mmEditMaximumMovementM": 0.0010000020265579224,
+      "nativeFibreEditAffectedRenderPoints": 1,
+      "nativeFibreEditRestoreM": 0.0,
+      "nativeSkin1mmEditGroomMaximumMovementM": 0.05454935601778057,
+      "nativeSkinEditedActualRootErrorM": 1.8297990766192083e-07,
+      "nativeSkinRestoreM": 0.0,
+      "linkedSkinNativeEditNeededSingleUser": true,
+      "naturalHeadTurnStopWindSettleAndCompleteHairOperationUnaccepted": true
+    },
+    "contact": {
+      "status": "UNACCEPTED8_ROOT_SEGMENT0_BODY_CHORD_WITNESSES_IN35_INSPECTED",
+      "allNativeCurves": 704,
+      "curvesInspected": 35,
+      "strongAuthoringChordBodyIntersections": 8,
+      "firstFailedControlDomain": {
+        "curve": 0,
+        "controlSegment": 0,
+        "bodyTriangle": 296699,
+        "worldPoint": [
+          0.003935159649699926,
+          -0.04793592914938927,
+          1.57102370262146
+        ],
+        "interiorDistanceM": 1.8462449588696472e-05,
+        "segmentLengthM": 0.011066514209223652
+      },
+      "allWitnessDomains": [
+        0
+      ],
+      "observedFailedRootSegmentLengthM": [
+        0.010658683319692434,
+        0.016346375993397548
+      ],
+      "notExactRenderedSplineFiniteOccupancyOrGlobalCount": true,
+      "signedMinimumM": null,
+      "finiteSelfAllLayersContinuousUnaccepted": true,
+      "evidence": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0168-source-lock-volumes\\minimum-source-volume-body-witnesses.json"
+    },
+    "runtime": {
+      "status": "NOT_EXPORTED_ENGINE_TESTED_OR_PROMOTED",
+      "runtimeAsset": null
+    }
+  },
+  "constructionReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0168-source-lock-volumes\\actual-source-lock-volume-construction.json",
+  "rightsReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0168-source-lock-volumes\\references-and-rights.json",
+  "dependencies": "Immutable152 current Mesh library plus16textures,17 unique dependency hashes. Retained Hair and actual native704 fibre data local editable; Skin linked and requires Single User. Working139/external117 rollback separate.",
+  "rejectedNotAdopted": true
+}
