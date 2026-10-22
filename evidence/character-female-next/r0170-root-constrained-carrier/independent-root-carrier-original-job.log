@@ -1,0 +1,12 @@
+00:04.469  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0169-source\aevrynd-female-next-r0169-a-coherent-native-carrier.blend"
+00:14.469  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0170-source\aevrynd-female-next-r0170-a-root-constrained-carrier.blend"
+Traceback (most recent call last):
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\verify-female-next-r0170-root-carrier.py", line 30, in <module>
+    carrier.update_tag();hair.update_tag();bpy.context.view_layer.update();modeRestore=float(np.linalg.norm(cw(hair)[0]-rest,axis=1).max());assert modeRestore<3e-6 and parentConstraintError<3e-6 and parentGap<.001
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+                                                                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

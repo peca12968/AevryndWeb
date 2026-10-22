@@ -1,0 +1,9 @@
+00:04.563  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0169-source\aevrynd-female-next-r0169-a-coherent-native-carrier.blend"
+C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\inspect-female-next-r0170-root-anatomy.py:8: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  ma=bpy.data.materials.new(name);ma.diffuse_color=(*color,1);ma.use_nodes=True;nd=next(x for x in ma.node_tree.nodes if x.bl_idname=='ShaderNodeBsdfPrincipled');nd.inputs['Base Color'].default_value=(*color,1);nd.inputs['Roughness'].default_value=.7;return ma
+00:08.063  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0170-root-constrained-carrier\diagnostic-left-head-root49-carrier-skin.png'
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+R170_ONE_ACTUAL_ROOT_CARRIER_SKIN_ANATOMY_VIEW_DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

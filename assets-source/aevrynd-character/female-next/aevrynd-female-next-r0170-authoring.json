@@ -1,0 +1,71 @@
+{
+  "revision": "female-next-r0170",
+  "source": {
+    "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0170-source\\aevrynd-female-next-r0170-a-root-constrained-carrier.blend",
+    "engineAlias": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0170-source\\aevrynd-female-next-r0170-a-root-constrained-carrier.blend",
+    "sha256": "fbc727516481098e0864573caa38612a262321d08a6742c82c9df575b96704b3",
+    "bytes": 2925905,
+    "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+    "actualHair": "AFN170_ACTUAL_ROOT_CONSTRAINED_NATIVE_GROOM",
+    "actualCarrier": "AFN170_ROOT_CONSTRAINED_ANATOMICAL_CARRIER",
+    "actualEditableHairData": "Curves.008",
+    "retainedSourceHair": "AFN126_ORIGINAL_Hair_Hair_0",
+    "status": "REJECT_ROOT_CONSTRAINED_CARRIER_FULL_NATIVE_GROOM",
+    "scope": "Same complete woman. Actual original albedo connected scalp3258triangles and252 explicit source-root carrier vertices produce qualified parent root positions; source identity retained. Full10191 native fibres explode,8856 roots over1mm, target carrier119 near-zero/69 opposed root-adjacent triangles. Full pointwise restoration gates fail with ordering-vs-geometry unresolved. Numerical source/root facts only, no adopted appearance/usable operation/finite contacts/runtime."
+  },
+  "fourGates": {
+    "appearance": {
+      "status": "REJECT_EXPLODED_NATIVE_FIELD_OPEN_CROWN_FACE_CROSSING",
+      "score": null,
+      "actualCompleteHeadBodyProfileBackViewed": true,
+      "evidence": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0170-root-constrained-carrier\\manual-visual-review.json"
+    },
+    "function": {
+      "status": "UNACCEPTED_FULL_OUTPUT_POINTWISE_RESTORATION_AND_FRAME_MAP",
+      "protectedSevenRawMeshesUVAnd49OriginalEvaluatedGazePosesEqual": true,
+      "source252GuidePositionsUnchanged": true,
+      "parentRootToActualScalpMaximumM": 2.479015677181451e-07,
+      "parentRootConstraintMaximumErrorM": 2.407356265396403e-07,
+      "sourcePoseRestIdentityAfterReopenMaximumM": 1.2310378849633707e-07,
+      "sourceParentFullModeRestoreMaximumM": 0.3577415347099304,
+      "sourceParentFullModeRestorePassed": false,
+      "singleControlledFreshReopenDeltaM": 0.3577415347099304,
+      "nativeGuide1mmEditMaximumMovementM": 0.3850937485694885,
+      "nativeGuideEditRestoreM": 0.3850937485694885,
+      "nativeGuideEditRestorePassed": false,
+      "nativeSkin1mmEditGroomMaximumMovementM": 0.3577415347099304,
+      "nativeSkinRestoreM": 0.36642393469810486,
+      "nativeSkinEditRestorePassed": false,
+      "pointwiseFailureDoesNotProveChangedGeometricSetOrRendererCause": true,
+      "orderingVsGeometryUnresolved": true,
+      "completeCurrentGroomOperationAccepted": false
+    },
+    "contact": {
+      "status": "UNACCEPTED_CHILD_ROOT_FRAME_AND_BODY_CHORD_FAILURES",
+      "parentRootsOnActualScalp": 252,
+      "actualNativeCurves": 10191,
+      "actualNativeRootsOver1mm": 8856,
+      "actualNativeRootToScalpMaximumM": 0.009996694512665272,
+      "rootAdjacentCarrierTriangles": 731,
+      "rootAdjacentTargetNearZeroAreaTriangles": 119,
+      "nearZeroAreaDefinitionM2": 1e-12,
+      "rootAdjacentTargetTrianglesOpposedToNearestScalp": 69,
+      "rootVertexNormalsOpposedToNearestScalp": 13,
+      "bodyChordCurvesInspected": 12,
+      "strongControlChordWitnesses": 8,
+      "notExactRenderedFiniteSplineOrGlobalContactCount": true,
+      "signedMinimumM": null,
+      "finiteSelfContinuousUnaccepted": true,
+      "evidence": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0170-root-constrained-carrier\\actual-root-carrier-frame-and-body-failures.json"
+    },
+    "runtime": {
+      "status": "NOT_EXPORTED_ENGINE_TESTED_OR_PROMOTED",
+      "runtimeAsset": null
+    }
+  },
+  "constructionReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0170-root-constrained-carrier\\direct-root-bearing-topology-authoring.json",
+  "rightsReference": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0170-root-constrained-carrier\\references-and-rights.json",
+  "dependencies": "Immutable152 current Mesh library plus16textures,17 hashes; local source-root carrier/native guide/node data. Skin linked/Single User. Working139/external117 rollback separate.",
+  "rejectedNotAdopted": true
+}

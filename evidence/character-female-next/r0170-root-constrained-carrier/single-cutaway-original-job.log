@@ -1,0 +1,13 @@
+00:04.516  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0169-source\aevrynd-female-next-r0169-a-coherent-native-carrier.blend"
+C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\check-female-next-r0170-root-cutaway.py:8: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  ma=bpy.data.materials.new(name);ma.diffuse_color=(*color,1);ma.use_nodes=True;nd=next(x for x in ma.node_tree.nodes if x.bl_idname=='ShaderNodeBsdfPrincipled');nd.inputs['Base Color'].default_value=(*color,1);nd.inputs['Roughness'].default_value=.7;return ma
+C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\check-female-next-r0170-root-cutaway.py:14: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  trans=bpy.data.materials.new('AFN170_DIAGNOSTIC_TRANSLUCENT_SKIN');trans.use_nodes=True;ns=trans.node_tree.nodes;ns.clear();out=ns.new('ShaderNodeOutputMaterial');tr=ns.new('ShaderNodeBsdfTransparent');di=ns.new('ShaderNodeBsdfDiffuse');di.inputs['Color'].default_value=(.5,.5,.5,1);mix=ns.new('ShaderNodeMixShader');mix.inputs[0].default_value=.12;trans.node_tree.links.new(tr.outputs[0],mix.inputs[1]);trans.node_tree.links.new(di.outputs[0],mix.inputs[2]);trans.node_tree.links.new(mix.outputs[0],out.inputs[0])
+C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\check-female-next-r0170-root-cutaway.py:18: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if ma and ma.use_nodes:materials.append({'slot':i,'name':ma.name,'images':[{'node':n.name,'image':n.image.name,'size':list(n.image.size),'filepath':n.image.filepath} for n in ma.node_tree.nodes if n.bl_idname=='ShaderNodeTexImage' and n.image]})
+00:08.344  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0170-root-constrained-carrier\diagnostic-left-root49-transparent-cutaway.png'
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+R170_SINGLE_CUTAWAY_SOURCE_MATERIAL_READ_DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
