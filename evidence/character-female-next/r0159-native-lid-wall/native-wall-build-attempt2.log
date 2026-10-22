@@ -1,0 +1,13 @@
+00:10.391  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0158-source\aevrynd-female-next-r0158-b-preserved-material-data.blend"
+Traceback (most recent call last):
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0159-native-lid-wall.py", line 83, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0159-native-lid-wall.py", line 76, in main
+    table.data.update();lash_graph(ob,table,skin);bpy.context.view_layer.update();error=float(np.linalg.norm(a.geometry(ob)[0]-W,axis=1).max());h.save('actual-attachment-neutral-'+('lashes' if 'Eyelashes' in name else 'wet')+'.json',{'maximumErrorM':error,'objectMatrix':np.array(ob.matrix_world),'scope':'actual local frame computed consistently with ObjectInfo RELATIVE'});assert error<2e-7;attachment.append({'object':name,'activeVertices':int((active>.5).sum()),'restPreservationMaximumM':error,'minimumActualDepthFrameArmM':minimum,'rigidOrthonormalFrameFromActualNewMarginAndDepth':True})
+                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^
+AssertionError
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

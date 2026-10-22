@@ -1,0 +1,42 @@
+{
+  "UTC": "2026-10-22T18:27:43.014271+00:00",
+  "originalStartedUTC": "2026-10-22T18:17:52+00:00",
+  "actualNativeSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+  "replacedOriginalWallFaces": 624,
+  "newStructuredWallFaces": 5856,
+  "oldAllSkinVertices": 170227,
+  "newAllSkinVertices": 175719,
+  "retainedOriginalPositionsExact": true,
+  "actualConstruction": [
+    {
+      "side": "R",
+      "originalFacesReplaced": 312,
+      "boundaryVertices": 182,
+      "newWallFaces": 2912,
+      "center": [
+        -0.029048610478639603,
+        -0.10332276672124863,
+        1.463231086730957
+      ],
+      "maxActualOcularRadiusPlus250umM": 0.016361764109164723,
+      "structuredDepthRings": 16,
+      "deepLiningBlinkDisplacementZeroAfterHalfDepth": true
+    },
+    {
+      "side": "L",
+      "originalFacesReplaced": 312,
+      "boundaryVertices": 184,
+      "newWallFaces": 2944,
+      "center": [
+        0.029048608615994453,
+        -0.10332278907299042,
+        1.4632312059402466
+      ],
+      "maxActualOcularRadiusPlus250umM": 0.016361794685343854,
+      "structuredDepthRings": 16,
+      "deepLiningBlinkDisplacementZeroAfterHalfDepth": true
+    }
+  ],
+  "changedFailedPremise": "Old146 posterior-only fix lacked current157 outer tissue and158 shared native boundary; this source replaces full irregular wall topology, changes its deformation domain, and derives rigid fibre frames from real new depth rows rather than old156 triangle shear.",
+  "materialsLightingPaletteUnchanged": true
+}
