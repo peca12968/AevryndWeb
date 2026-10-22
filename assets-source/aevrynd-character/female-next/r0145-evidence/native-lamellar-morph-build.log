@@ -1,0 +1,12 @@
+00:11.015  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0145-source\aevrynd-female-next-r0145-a-aspherical-lid-wall.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0145-native-lamellar-morph.py", line 53, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0145-native-lamellar-morph.py", line 22, in main
+    convexResidual=float(((V-C)@normals.T-offsets).max());assert convexResidual<2e-7,('Original cavity is not the recorded convex surface',side,convexResidual);surfaces[side]=(C,axis,normals,offsets);reports[side]={'constructionObject':'AFN138_'+side+'_ANATOMICAL_SOCKET_CONSTRUCTION','originalCavityVertices':len(V),'originalCavityTriangles':len(F),'derivedPlaneCount':len(normals),'zeroAreaConstructionTrianglesNotUsedAsPlanes':int((~valid).sum()),'convexPlaneNumericResidualM':convexResidual,'planeResidualIsConstructionNumericCheckNotContactTolerance':True,'addedPhysicalClearanceM':0.,'originalAngularFieldAndOpticalGeometryUnchanged':True}
+                                                                 ^^^^^^^^^^^^^^^^^^^
+AssertionError: ('Original cavity is not the recorded convex surface', 'L', 2.310778617252776e-05)
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

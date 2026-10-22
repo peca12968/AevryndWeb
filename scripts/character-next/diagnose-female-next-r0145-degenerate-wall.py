@@ -1,0 +1,18 @@
+"""Minimum failed-neutral degeneracy localization; never discard bad faces."""
+from pathlib import Path
+import bpy,numpy as np,json,importlib.util,time
+R=Path('D:/Download/Aevrynd');E=R/'Evidence/character-female-next/r0145-aspherical-lid-wall'
+sp=importlib.util.spec_from_file_location('r145degenerate',Path(__file__).with_name('build-female-next-r0145-aspherical-lid-wall.py'));h=importlib.util.module_from_spec(sp);sp.loader.exec_module(h);a=h.a
+def zero(W,T):return np.linalg.norm(np.cross(W[T[:,1]]-W[T[:,0]],W[T[:,2]]-W[T[:,0]]),axis=1)==0
+def main():
+    tick=time.time();b=json.loads((E/'b-build-summary.json').read_text('utf-8'));case=json.loads((E/'b-actual-aspherical-ocular-surface-contact.json').read_text('utf-8'))['firstRelatedFailure'];baseline=b['comparisonBaseline'];rows=[]
+    bpy.ops.wm.open_mainfile(filepath=baseline);bpy.context.scene.frame_set(1);bpy.context.view_layer.update();W,T=a.geometry(bpy.data.objects[b['actualSkin']]);rows.append({'source':baseline,'skinFaces':len(T),'allActualSkinZeroAreaTriangleCount':int(zero(W,T).sum()),'scope':'Whole current source Skin zero-area count, not all contact qualification.'})
+    bpy.ops.wm.open_mainfile(filepath=b['output']);bpy.context.scene.frame_set(1);bpy.context.view_layer.update();ob=bpy.data.objects[b['actualSkin']];W,T=a.geometry(ob);V,F=a.geometry(bpy.data.objects[case['object']]);assert a.a.hasharray(W)==case['actualSkinWorldHash'] and a.a.hasharray(T)==case['actualSkinTriangleHash'];skinZero=zero(W,T);eyeZero=zero(V,F);Skin=W[T];lo=Skin.min(1);hi=Skin.max(1);Eye=V[F];whole=np.flatnonzero(np.all(hi>=Eye.min((0,1)),axis=1)&np.all(lo<=Eye.max((0,1)),axis=1));pairs=[]
+    for i,tri in enumerate(Eye):
+        ids=whole[np.all(hi[whole]>=tri.min(0),axis=1)&np.all(lo[whole]<=tri.max(0),axis=1)];bad=ids[skinZero[ids]|eyeZero[i]];pairs.extend((int(j),i) for j in bad)
+    pairs=np.asarray(pairs,dtype='i4').reshape(-1,2);assert len(pairs)==case['degenerateCandidatePairs'];ids=np.unique(pairs[:,0]);eyeIds=np.unique(pairs[:,1]);ev=ob.evaluated_get(bpy.context.evaluated_depsgraph_get()).data;ev.calc_loop_triangles();details=[]
+    for i in ids[:20]:
+        tri=ev.loop_triangles[int(i)];poly=ev.polygons[tri.polygon_index];details.append({'skinTriangle':int(i),'vertices':T[i],'worldPoints':W[T[i]],'loopPolygon':tri.polygon_index,'polygonVertexCount':len(poly.vertices),'triangleZeroArea':bool(skinZero[i]),'polygonAreaReportedByBlender':float(poly.area)})
+    np.savez_compressed(E/'actual-degenerate-neutral-pairs-and-faces.npz',allSkinZeroAreaFaces=np.flatnonzero(skinZero),allEyeZeroAreaFaces=np.flatnonzero(eyeZero),degenerateCandidatePairs=pairs,uniqueCandidateSkinFaces=ids,uniqueCandidateEyeFaces=eyeIds)
+    h.save('first-neutral-degenerate-wall-readback.json',{'source':b['output'],'sha256':b['sha256'],'frame':1,'originalSourceComparison':rows,'actualSkinFaces':len(T),'allActualSkinZeroAreaTriangleCount':int(skinZero.sum()),'allActualEyeZeroAreaTriangleCount':int(eyeZero.sum()),'degenerateAABBCandidatePairs':len(pairs),'uniqueCandidateSkinFaces':len(ids),'uniqueCandidateEyeFaces':len(eyeIds),'firstActualSkinFaceDetails':details,'definition':'Float64 cross product on actual evaluated world triangles equals zero exactly; no tolerance or bad-face deletion.766 candidate pairs is not766 unique defects or penetrations.','properSurfaceCrossingsNotEstablishedByDegeneracy':True,'contactCannotBeAcceptedWithThisKnownFailure':True,'changedSourceSaved':False,'seconds':time.time()-tick});assert a.a.sha(Path(b['output']))==b['sha256'];print('R145_FAILED_NEUTRAL_DEGENERACY_LOCALIZED',len(pairs),len(ids),len(eyeIds),int(skinZero.sum()),int(eyeZero.sum()),time.time()-tick,flush=True)
+if __name__=='__main__':main()

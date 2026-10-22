@@ -1,0 +1,12 @@
+00:08.953  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0144-source\aevrynd-female-next-r0144-a-current-skin-blink.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0145-aspherical-lid-wall.py", line 92, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\build-female-next-r0145-aspherical-lid-wall.py", line 73, in main
+    bm.normal_update();bm.to_mesh(skin.data);bm.free();skin.data.update();mapping=attr_array(skin.data,'AFN145_ORIGINAL_VERTEX_ID');original=np.flatnonzero(mapping>=0);assert len(original)==len(W) and len(np.unique(mapping[original]))==len(W)
+                                                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

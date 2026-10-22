@@ -1,0 +1,112 @@
+{
+  "source": "D:\\Download\\Aevrynd\\engine\\assets\\characters\\female-next\\source\\r0144-source\\aevrynd-female-next-r0144-a-current-skin-blink.blend",
+  "actualSkin": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+  "actualRig": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+  "actualControllers": {
+    "L": "AFN144_Blink_L",
+    "R": "AFN144_Blink_R"
+  },
+  "originalSkinVertices": 170091,
+  "newSkinVertices": 182381,
+  "originalSkinTriangles": 340174,
+  "newSkinTriangles": 364754,
+  "originalCavityPointDomainCount": 1551,
+  "originalCavityFaceCount": 628,
+  "subdivisionSelectedEdgesEachIteration": [
+    2403,
+    6177,
+    3710,
+    0
+  ],
+  "fixedWallEdgeTargetM": 0.0012,
+  "targetIsConstructionResolutionNotContactTolerance": true,
+  "originalPointPositionDeviationM": 6.188917057900187e-08,
+  "oldVerticesAndAllOriginalFacesRetainedThroughConformingSubdivision": true,
+  "originalUVAndDeformWeightsInterpolatedByNativeBMesh": true,
+  "layerPath": "At each native angular position, use original aspherical cavity radial surface plus original point-to-inner-surface radial gap. Both original outer lid and posterior cavity wall share the same surface map; no new outward guard, eye scaling, face deletion or caps. Native ray failures remain recorded as actual point attributes.",
+  "reports": {
+    "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD": [
+      {
+        "side": "L",
+        "actualConstructionSurface": "AFN138_L_ANATOMICAL_SOCKET_CONSTRUCTION",
+        "originalNativeRadialInnerOuterGapPreserved": true,
+        "extraClearanceOrInflationAdded": 0.0,
+        "rayLengthLocal": 0.10000000149011612,
+        "objectSpaceOpticalCentre": [
+          0.029048608615994453,
+          -0.10332278907299042,
+          1.4632312059402466
+        ]
+      },
+      {
+        "side": "R",
+        "actualConstructionSurface": "AFN138_R_ANATOMICAL_SOCKET_CONSTRUCTION",
+        "originalNativeRadialInnerOuterGapPreserved": true,
+        "extraClearanceOrInflationAdded": 0.0,
+        "rayLengthLocal": 0.10000000149011612,
+        "objectSpaceOpticalCentre": [
+          -0.029048610478639603,
+          -0.10332276672124863,
+          1.463231086730957
+        ]
+      }
+    ],
+    "AFN126_ORIGINAL_Eyelashes_Eyelashes_0": [
+      {
+        "side": "L",
+        "actualConstructionSurface": "AFN138_L_ANATOMICAL_SOCKET_CONSTRUCTION",
+        "originalNativeRadialInnerOuterGapPreserved": true,
+        "extraClearanceOrInflationAdded": 0.0,
+        "rayLengthLocal": 0.1573670506477356,
+        "objectSpaceOpticalCentre": [
+          0.048477567833295376,
+          -0.08711345644298643,
+          2.2971419478103954
+        ]
+      },
+      {
+        "side": "R",
+        "actualConstructionSurface": "AFN138_R_ANATOMICAL_SOCKET_CONSTRUCTION",
+        "originalNativeRadialInnerOuterGapPreserved": true,
+        "extraClearanceOrInflationAdded": 0.0,
+        "rayLengthLocal": 0.1573670506477356,
+        "objectSpaceOpticalCentre": [
+          -0.042948312364283314,
+          -0.08711342126875082,
+          2.2971417602143034
+        ]
+      }
+    ],
+    "AFN126_ORIGINAL_MeniscusEyeSpec_MeniscusEye_0": [
+      {
+        "side": "L",
+        "actualConstructionSurface": "AFN138_L_ANATOMICAL_SOCKET_CONSTRUCTION",
+        "originalNativeRadialInnerOuterGapPreserved": true,
+        "extraClearanceOrInflationAdded": 0.0,
+        "rayLengthLocal": 4.1578898429870605,
+        "objectSpaceOpticalCentre": [
+          1.207809124364502,
+          -10.831157637798253,
+          28.92987037629524
+        ]
+      },
+      {
+        "side": "R",
+        "actualConstructionSurface": "AFN138_R_ANATOMICAL_SOCKET_CONSTRUCTION",
+        "originalNativeRadialInnerOuterGapPreserved": true,
+        "extraClearanceOrInflationAdded": 0.0,
+        "rayLengthLocal": 4.1578898429870605,
+        "objectSpaceOpticalCentre": [
+          -1.2078090812117495,
+          -10.831156708438407,
+          28.929865419704946
+        ]
+      }
+    ]
+  },
+  "retainedCavityIsConstructionNotCollisionProof": true,
+  "contactPredicateUnchangedM": 1e-12,
+  "allChangedSkinContactClaimsRequireRetest": true,
+  "completeAppearanceOperationContactRuntimeAccepted": false,
+  "secondsBeforePreview": 13.696797609329224
+}

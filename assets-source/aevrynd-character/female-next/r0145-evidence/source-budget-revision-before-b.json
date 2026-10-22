@@ -1,0 +1,18 @@
+{
+  "UTC": "2026-10-22T01:30:12.370851+00:00",
+  "originalStartedUTC": "2026-10-22T01:14:55+00:00",
+  "originalSourceBudgetBytes": 260000000,
+  "revisedSourceBudgetBytes": 280000000,
+  "reason": "Keep complete failed A137282700B immutable, plus one repaired full sourceB after actual normalized-ray readback. Expected total~274.6MB exceeds original estimate by~14.6MB; do not overwrite A or silently discard its failed native operation. One construction, two actual full saved candidate states if B succeeds; not another round or parameter sweep.",
+  "originalEvidenceBudgetBytes": 35000000,
+  "additionalCompletePreviewDeadlineUTC": "2026-10-22T01:44:55+00:00",
+  "originalInitialPreviewDeadlineAlreadyMetByA": true,
+  "originalAllAttemptsAndCostsPreserved": true,
+  "freeBytes": {
+    "C": 40046592,
+    "D": 1799020544
+  },
+  "maxThreads": 4,
+  "oneHeavyJobAtATime": true,
+  "noNodeServerInstallSubagentOrQualityToleranceChange": true
+}

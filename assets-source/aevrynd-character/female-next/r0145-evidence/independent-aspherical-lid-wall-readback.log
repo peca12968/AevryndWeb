@@ -1,0 +1,13 @@
+00:44.781  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0139-source\aevrynd-female-next-r0139-a-native-lid-follow.blend"
+00:55.469  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0145-source\aevrynd-female-next-r0145-a-aspherical-lid-wall.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0145-aspherical-lid-wall.py", line 77, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\verify-female-next-r0145-aspherical-lid-wall.py", line 41, in main
+    rayFailures.append({'frame':f,'activePointRayFailureCounts':bad});assert not any(bad.values()),(f,bad)
+                                                                             ^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (2, {'AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD/L': 2353, 'AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD/R': 2375, 'AFN126_ORIGINAL_Eyelashes_Eyelashes_0/L': 2755, 'AFN126_ORIGINAL_Eyelashes_Eyelashes_0/R': 2751, 'AFN126_ORIGINAL_MeniscusEyeSpec_MeniscusEye_0/L': 1408, 'AFN126_ORIGINAL_MeniscusEyeSpec_MeniscusEye_0/R': 1427})
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

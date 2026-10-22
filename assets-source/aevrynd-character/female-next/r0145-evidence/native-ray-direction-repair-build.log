@@ -1,0 +1,12 @@
+00:11.172  blend            | Read blend: "D:\Download\Aevrynd\engine\assets\characters\female-next\source\r0145-source\aevrynd-female-next-r0145-a-aspherical-lid-wall.blend"
+Traceback (most recent call last):
+  File "D:\Download\Aevrynd\scripts\character-next\repair-female-next-r0145-native-ray-directions.py", line 40, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Download\Aevrynd\scripts\character-next\repair-female-next-r0145-native-ray-directions.py", line 28, in main
+    assert not any(bad.values()),('Normalized ray capability still failed',f,bad)
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('Normalized ray capability still failed', 2, {'AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD/L': 2354, 'AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD/R': 2378, 'AFN126_ORIGINAL_Eyelashes_Eyelashes_0/L': 2755, 'AFN126_ORIGINAL_Eyelashes_Eyelashes_0/R': 2751, 'AFN126_ORIGINAL_MeniscusEyeSpec_MeniscusEye_0/L': 1408, 'AFN126_ORIGINAL_MeniscusEyeSpec_MeniscusEye_0/R': 1427})
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
