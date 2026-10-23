@@ -1,0 +1,28 @@
+{
+  "UTC": "2026-10-23T06:47:53.755026+00:00",
+  "event": "Packaging whitespace check failed after complete staging; CRLF source lines triggered trailing-whitespace diagnostics.",
+  "originalFinalizerNotRerun": true,
+  "actualIndexAll32AllowlistedFilesPresent": true,
+  "ordinaryIndexBytesVerified": true,
+  "fullSourceCacheAndPointerVerifiedByPublisherBeforeCommit": true,
+  "cause": "Verified git diff --cached --check stdout: CRLF in generated build and verification scripts.",
+  "nextAction": "Preserve exact as-executed copies; normalize only line endings, refresh exact integrity/index and rerun the whitespace check. No Blender execution or candidate change.",
+  "initialInterpretationCorrected": "The initial event was incorrectly attributed to git-add. Full index was already staged. Original finalizer tail line16 and publisher line22 are git diff --cached --check, whose CRLF trailing-whitespace diagnostics are on stdout, not stderr.",
+  "sourceLineEndingRepair": [
+    {
+      "source": "scripts/character-next/build-female-next-r0195-local-comb-field.py",
+      "originalAsExecuted": "evidence/character-female-next/r0195-local-growth-domains/build-female-next-r0195-local-comb-field.py.as-executed.txt",
+      "oldSHA256": "b34b1afae0cf426d153cf27e758c036c35f6e0b0047c2bdd55a35e9c4eb16d4a",
+      "newSHA256": "2f111310f21786c31d7fca88fbc40235492b82fc764108d5401bea05599a8d5f",
+      "semanticLinesEqual": true
+    },
+    {
+      "source": "scripts/character-next/verify-female-next-r0195-local-comb-field.py",
+      "originalAsExecuted": "evidence/character-female-next/r0195-local-growth-domains/verify-female-next-r0195-local-comb-field.py.as-executed.txt",
+      "oldSHA256": "a799a07a586eca0ad334e949ec86a06a7c6a610602ac8fc7bd44ab4c06411c90",
+      "newSHA256": "73c4d82d15f3a10b0f1bbb8f5983e7393910a11758625a9cd08b9257fef4f1aa",
+      "semanticLinesEqual": true
+    }
+  ],
+  "correctionUTC": "2026-10-23T06:49:12.267673+00:00"
+}
