@@ -1,0 +1,14 @@
+{
+  "kind": "PACKAGING_ONLY_REPAIR",
+  "UTC": "2026-10-23T00:38:54.431963+00:00",
+  "originalAttempt": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0177-anatomical-guide-paths\\finalize-package-original-attempt-1.txt",
+  "originalAttemptSHA256": "f28268d84fe8a47f91a3d5c43e9492099662b59fe8d8a564e1a0775a9cee3c74",
+  "failedCommand": "git diff --cached --check",
+  "exitCode": 2,
+  "actualCause": "Fresh generated ordinary Python/license/JSON worktree bytes used Windows CRLF; core.autocrlf=false staged CR as trailing whitespace. Actual diff-check output identifies every affected line.",
+  "originalScriptCRLFCount": 44,
+  "repair": "Normalize freshly generated ordinary metadata/source script to LF and update package hashes; original source/evidence/models/times/counters/findings preserved. No finalizer rerun.",
+  "actualProductionRoundStillCountedOnce": true,
+  "noAdopt": 51,
+  "cadence": 1
+}

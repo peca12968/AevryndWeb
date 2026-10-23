@@ -1,0 +1,14 @@
+00:04.468  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0165-source\aevrynd-female-next-r0165-a-native-hair-optics.blend"
+C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0177-anatomical-guide-paths.py:33: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  hair=bpy.data.objects.new('AFN177_ACTUAL_ANATOMICAL_ROOT_TO_TIP_GROOM',hd);s.collection.objects.link(hair);mat=bpy.data.materials.new('AFN177_FIXED_BROWN_FIBRE_IDENTICAL175_PARAMETERS');mat.use_nodes=True;ns=mat.node_tree.nodes;ns.clear();bs=ns.new('ShaderNodeBsdfHairPrincipled');bs.parametrization='MELANIN';bs.inputs['Melanin'].default_value=.75;bs.inputs['Melanin Redness'].default_value=.15;bs.inputs['Roughness'].default_value=.35;bs.inputs['Radial Roughness'].default_value=.45;out=ns.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(bs.outputs[0],out.inputs[0]);hd.materials.append(mat)
+00:11.890  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0177-anatomical-guide-paths\matched-a-anatomical-guide-paths-face.png'
+00:14.672  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0177-anatomical-guide-paths\matched-a-anatomical-guide-paths-body-face.png'
+00:20.328  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0177-anatomical-guide-paths\matched-a-anatomical-guide-paths-profile.png'
+00:25.672  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0177-anatomical-guide-paths\matched-a-anatomical-guide-paths-back.png'
+00:31.500  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0177-anatomical-guide-paths\matched-a-anatomical-guide-paths-oblique.png'
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+資訊: 已儲存為「aevrynd-female-next-r0177-a-anatomical-guide-paths.blend」
+R177_ANATOMICAL_COMPLETE_ROOT_TO_TIP_GROOM_PREVIEW_DONE 27.145768880844116
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
