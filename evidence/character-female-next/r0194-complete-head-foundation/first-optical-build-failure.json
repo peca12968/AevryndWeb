@@ -1,0 +1,14 @@
+{
+  "UTC": "2026-10-23T05:59:52.334889+00:00",
+  "originalHandle": 97762,
+  "terminal": "Original process ended exit0 with Python KeyError, no candidate save/marker.",
+  "failure": "After outer.data=mesh, vertex group AFN138_EYE_R was missing when assigning replacement vertices. Original source inspection proves both groups existed before replacement; no cache/driver fault inferred.",
+  "failedScriptSHA256": "338f1d5feaa8f0d3b28b2c78de031ce28a0a571f4061c56bcd6c80ec55a69fce",
+  "baselineImagesPreserved": [
+    "matched-baseline-original-working-eyes-body-face.png",
+    "matched-baseline-original-working-eyes-face.png",
+    "matched-baseline-original-working-eyes-oblique.png"
+  ],
+  "originalCaptureStateFilePreserved": true,
+  "repair": "Create the original inferred bone-named vertex groups on new mesh, assign their exact side domains. Reuse original completed baseline captures, no production round/counter or clock reset."
+}

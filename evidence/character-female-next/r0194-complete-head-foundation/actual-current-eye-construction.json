@@ -1,0 +1,413 @@
+{
+  "UTC": "2026-10-23T05:45:10.523277+00:00",
+  "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0184-source\\aevrynd-female-next-r0184-a-native-follicle-deformation.blend",
+  "sourceSHA256": "0e7395b4e0024bcbe1c9f6e122c89eab6b458a31736f3f8b3d876c54053e25dd",
+  "objects": [
+    {
+      "name": "AFN126_ORIGINAL_Eye_Eye_0",
+      "vertices": 640,
+      "triangles": 1192,
+      "rawWorldVsEvaluatedMaxM": 2.1306849889482185e-07,
+      "shapeKeys": [],
+      "modifiers": [
+        {
+          "name": "AFN138_NATIVE_ACTUAL_GAZE_SKINNING",
+          "type": "ARMATURE",
+          "object": "AFN138_ACTUAL_CURRENT_GAZE_RIG"
+        }
+      ],
+      "vertexGroupMembership": {
+        "AFN138_EYE_L": 320,
+        "AFN138_EYE_R": 320
+      },
+      "eyeSphereFits": [
+        {
+          "side": -1,
+          "vertices": 320,
+          "bbox": [
+            [
+              -0.04448242026136562,
+              -0.11815871419195445,
+              1.44776479705474
+            ],
+            [
+              -0.013709733024420245,
+              -0.0879054478565986,
+              1.4786720208848398
+            ]
+          ],
+          "leastSquaresSphereCentre": [
+            -0.02893391045406698,
+            -0.10260233383044959,
+            1.4632819784190154
+          ],
+          "leastSquaresSphereRadiusM": 0.01515850147712171,
+          "sphereResidualMQuantiles": [
+            0.0007754738263610287,
+            0.00211311081414078,
+            0.007317399584227528
+          ]
+        },
+        {
+          "side": 1,
+          "vertices": 320,
+          "bbox": [
+            [
+              0.013709718495013234,
+              -0.11815876267995917,
+              1.4477647970547363
+            ],
+            [
+              0.044482417853957124,
+              -0.08790547210060096,
+              1.4786720208848398
+            ]
+          ],
+          "leastSquaresSphereCentre": [
+            0.028933888309391052,
+            -0.10260235893566061,
+            1.4632820223842418
+          ],
+          "leastSquaresSphereRadiusM": 0.015158501976346654,
+          "sphereResidualMQuantiles": [
+            0.0007754665347805816,
+            0.002113084192896609,
+            0.00731739883996536
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "material",
+          "link": "DATA",
+          "library": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0152-source\\aevrynd-female-next-r0152-a-layered-native-groom.blend",
+          "nodes": [
+            {
+              "name": "原則化 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": [
+                {
+                  "name": "Base Color",
+                  "linked": true,
+                  "default": [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "Metallic",
+                  "linked": false,
+                  "default": 0.0
+                },
+                {
+                  "name": "Roughness",
+                  "linked": true,
+                  "default": 0.5
+                },
+                {
+                  "name": "IOR",
+                  "linked": false,
+                  "default": 1000.0
+                },
+                {
+                  "name": "Alpha",
+                  "linked": false,
+                  "default": 1.0
+                },
+                {
+                  "name": "Thin Wall",
+                  "linked": false,
+                  "default": false
+                },
+                {
+                  "name": "Specular IOR Level",
+                  "linked": false,
+                  "default": 0.5
+                },
+                {
+                  "name": "Specular Tint",
+                  "linked": true,
+                  "default": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "Transmission Weight",
+                  "linked": false,
+                  "default": 0.0
+                },
+                {
+                  "name": "Emission Color",
+                  "linked": false,
+                  "default": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "Emission Strength",
+                  "linked": false,
+                  "default": 0.0
+                }
+              ],
+              "image": null
+            },
+            {
+              "name": "材質輸出",
+              "type": "ShaderNodeOutputMaterial",
+              "inputs": [],
+              "image": null
+            },
+            {
+              "name": "影像紋理",
+              "type": "ShaderNodeTexImage",
+              "inputs": [],
+              "image": "Image_6"
+            },
+            {
+              "name": "混合",
+              "type": "ShaderNodeMix",
+              "inputs": [],
+              "image": null
+            },
+            {
+              "name": "影像紋理.001",
+              "type": "ShaderNodeTexImage",
+              "inputs": [],
+              "image": "Image_6"
+            },
+            {
+              "name": "影像紋理.002",
+              "type": "ShaderNodeTexImage",
+              "inputs": [],
+              "image": "Image_6.001"
+            }
+          ],
+          "links": [
+            {
+              "from": "原則化 BSDF.BSDF",
+              "to": "材質輸出.Surface"
+            },
+            {
+              "from": "影像紋理.Color",
+              "to": "原則化 BSDF.Base Color"
+            },
+            {
+              "from": "混合.Result",
+              "to": "原則化 BSDF.Specular Tint"
+            },
+            {
+              "from": "影像紋理.001.Color",
+              "to": "混合.A"
+            },
+            {
+              "from": "影像紋理.002.Alpha",
+              "to": "原則化 BSDF.Roughness"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0",
+      "vertices": 534,
+      "triangles": 980,
+      "rawWorldVsEvaluatedMaxM": 2.142235078655286e-07,
+      "shapeKeys": [],
+      "modifiers": [
+        {
+          "name": "AFN138_NATIVE_ACTUAL_GAZE_SKINNING",
+          "type": "ARMATURE",
+          "object": "AFN138_ACTUAL_CURRENT_GAZE_RIG"
+        }
+      ],
+      "vertexGroupMembership": {
+        "AFN138_EYE_L": 267,
+        "AFN138_EYE_R": 267
+      },
+      "eyeSphereFits": [
+        {
+          "side": -1,
+          "vertices": 267,
+          "bbox": [
+            [
+              -0.04474048548777443,
+              -0.11938992119224817,
+              1.4475010223034372
+            ],
+            [
+              -0.013222695368041215,
+              -0.08770031934034411,
+              1.478983701733271
+            ]
+          ],
+          "leastSquaresSphereCentre": [
+            -0.02902701236003212,
+            -0.10343921543007506,
+            1.4632456876535214
+          ],
+          "leastSquaresSphereRadiusM": 0.015758124452740274,
+          "sphereResidualMQuantiles": [
+            4.731744797824289e-05,
+            0.0002016315419691474,
+            0.00025132252785492297
+          ]
+        },
+        {
+          "side": 1,
+          "vertices": 267,
+          "bbox": [
+            [
+              0.013222668716635688,
+              -0.11938994543625053,
+              1.4475011192794467
+            ],
+            [
+              0.0447404588363689,
+              -0.08770031934034411,
+              1.478983701733267
+            ]
+          ],
+          "leastSquaresSphereCentre": [
+            0.029026993572477795,
+            -0.1034392450379884,
+            1.4632457256933802
+          ],
+          "leastSquaresSphereRadiusM": 0.01575811584452633,
+          "sphereResidualMQuantiles": [
+            4.732306562898678e-05,
+            0.0002016254903982832,
+            0.00025133987848882655
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "EyeScleraReflect",
+          "link": "DATA",
+          "library": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0152-source\\aevrynd-female-next-r0152-a-layered-native-groom.blend",
+          "nodes": [
+            {
+              "name": "原則化 BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": [
+                {
+                  "name": "Base Color",
+                  "linked": false,
+                  "default": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "Metallic",
+                  "linked": false,
+                  "default": 0.0
+                },
+                {
+                  "name": "Roughness",
+                  "linked": false,
+                  "default": 0.0
+                },
+                {
+                  "name": "IOR",
+                  "linked": false,
+                  "default": 1000.0
+                },
+                {
+                  "name": "Alpha",
+                  "linked": false,
+                  "default": 0.0
+                },
+                {
+                  "name": "Thin Wall",
+                  "linked": false,
+                  "default": false
+                },
+                {
+                  "name": "Specular IOR Level",
+                  "linked": false,
+                  "default": 0.5
+                },
+                {
+                  "name": "Specular Tint",
+                  "linked": false,
+                  "default": [
+                    0.26231059432029724,
+                    0.26231059432029724,
+                    0.26231059432029724,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "Transmission Weight",
+                  "linked": false,
+                  "default": 0.0
+                },
+                {
+                  "name": "Emission Color",
+                  "linked": false,
+                  "default": [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0
+                  ]
+                },
+                {
+                  "name": "Emission Strength",
+                  "linked": false,
+                  "default": 0.0
+                }
+              ],
+              "image": null
+            },
+            {
+              "name": "材質輸出",
+              "type": "ShaderNodeOutputMaterial",
+              "inputs": [],
+              "image": null
+            },
+            {
+              "name": "法線映射",
+              "type": "ShaderNodeNormalMap",
+              "inputs": [],
+              "image": null
+            },
+            {
+              "name": "影像紋理",
+              "type": "ShaderNodeTexImage",
+              "inputs": [],
+              "image": "Image_7"
+            }
+          ],
+          "links": [
+            {
+              "from": "原則化 BSDF.BSDF",
+              "to": "材質輸出.Surface"
+            },
+            {
+              "from": "法線映射.Normal",
+              "to": "原則化 BSDF.Normal"
+            },
+            {
+              "from": "影像紋理.Color",
+              "to": "法線映射.Color"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceNotSavedOrMutated": true,
+  "fitsAreMeasurementsNotAnatomicalOrOpticalAcceptance": true
+}
