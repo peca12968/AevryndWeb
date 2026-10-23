@@ -1,0 +1,9 @@
+{
+  "UTC": "2026-10-23T07:30:21.075845+00:00",
+  "handle": "1b7d29 terminal exec result",
+  "terminal": "Exit0 with source boundary topology AssertionError before current source open or candidate save.",
+  "actualFailure": "Original source cap selection has96 boundary edges with a degree4 pinch at geometric positionID9255; not a regular disk perimeter.",
+  "correction": "Close only the actual source-body incident face ring at that head pinch, preserve all owner faces and all strands, then require a single manifold loop. No current face/ear/body selection is expanded; no geometry pushed or source root silently corrected.",
+  "failedScriptSHA256": "0f936135379b59e0c3fcdaabb531f243abc9c2d6ba5cbdbd258f6510760b0a97",
+  "sameOriginalClocksAndMethod": true
+}

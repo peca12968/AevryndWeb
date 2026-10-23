@@ -1,0 +1,9 @@
+{
+  "UTC": "2026-10-23T07:32:17.808292+00:00",
+  "handle": "78dc05 terminal exec result",
+  "terminal": "Exit0 with source topology AssertionError before candidate save.",
+  "actualFailure": "Local source pinch closure leaves three regular boundary loops of3,87,6 vertices. Source mask fill used raw mesh vertex IDs while perimeter used welded physical-position IDs.",
+  "correction": "Use the same actual geometric-position face adjacency for source-domain fill and perimeter; preserve pre-repair mask/loop diagnostics. Do not discard extra loops or source roots. If it remains irregular, stop this construction.",
+  "failedScriptSHA256": "e35fbaf346eb8571b1687a8bab2bbc296d410c58390368b4afb7a4ebc3c9913b",
+  "sameOriginalClocksAndMethod": true
+}

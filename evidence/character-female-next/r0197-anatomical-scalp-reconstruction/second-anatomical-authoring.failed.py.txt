@@ -1,0 +1,106 @@
+"""An actual displayed Skin scalp replacement, boundary join and native groom.
+No failed foreign surface wrap, radial hair fit or covering surface is reused.
+Original full-source first-point offsets remain explicit unaccepted evidence.
+"""
+from pathlib import Path
+import bpy,numpy as np,json,datetime,hashlib,time,importlib.util
+from mathutils import Vector,Matrix
+from mathutils.bvhtree import BVHTree
+C=Path('C:/Users/USER/AevryndCharacterWorkspace-r0158');R=Path('D:/Download/Aevrynd');E=C/'evidence/character-female-next/r0197-anatomical-scalp-reconstruction';OUT=C/'assets-source/aevrynd-character/female-next/r0197-source/aevrynd-female-next-r0197-anatomical-scalp.blend';ART=Path('C:/Users/USER/AppData/Local/Temp/Aevrynd-hair-editor-reference/hair.blend')
+sp=importlib.util.spec_from_file_location('r197base',C/'scripts/character-next/build-female-next-r0169-coherent-native-carrier.py');m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);a=m.a;h=m.h
+def save(n,x):(E/n).write_bytes((json.dumps(x,ensure_ascii=False,indent=2)+'\n').encode())
+def stamp():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()
+def attr(d,name,typ,values,prop='value',domain='POINT'):
+ at=d.attributes.new(name,typ,domain);at.data.foreach_set(prop,np.asarray(values).ravel());return at
+def boundary(V,T,mask):
+ _,pid=np.unique(np.round(V,6),axis=0,return_inverse=True);F=pid[T[mask]];edges=np.sort(np.vstack([F[:,[0,1]],F[:,[1,2]],F[:,[2,0]]]),axis=1);edges,c=np.unique(edges,axis=0,return_counts=True);edges=edges[c==1];adj={}
+ for x,y in edges:adj.setdefault(int(x),[]).append(int(y));adj.setdefault(int(y),[]).append(int(x))
+ assert all(len(v)==2 for v in adj.values()),('boundary is not a simple manifold loop',len(edges),[(k,len(v)) for k,v in adj.items() if len(v)!=2][:12])
+ unseen=set(adj);loops=[]
+ while unseen:
+  start=min(unseen);loop=[start];prev=None;cur=start
+  while True:
+   nxt=next(x for x in adj[cur] if x!=prev)
+   if nxt==start:break
+   assert nxt not in loop,'boundary self cycle';loop.append(nxt);prev,cur=cur,nxt
+  unseen.difference_update(loop);loops.append(loop)
+ assert len(loops)==1,('one explicit complete scalp perimeter required',list(map(len,loops)))
+ ids=np.array(loops[0]);canonical=np.full(pid.max()+1,-1,'i4')
+ for vi in np.unique(T[mask]):
+  if canonical[pid[vi]]<0:canonical[pid[vi]]=vi
+ return canonical[ids],pid,ids
+def fill_holes(T,mask):
+ # Keep the largest connected non-cap domain (face/ears/body); fill only
+ # enclosed non-cap islands in this source anatomical scalp selection.
+ parent=np.arange(len(T));edgeOwner={}
+ def find(i):
+  while parent[i]!=i:parent[i]=parent[parent[i]];i=parent[i]
+  return i
+ for fi in np.flatnonzero(~mask):
+  for x,y in [(0,1),(1,2),(2,0)]:
+   key=tuple(sorted((int(T[fi,x]),int(T[fi,y]))))
+   if key in edgeOwner:parent[find(fi)]=find(edgeOwner[key])
+   else:edgeOwner[key]=int(fi)
+ other=np.flatnonzero(~mask);labels=np.array([find(int(i)) for i in other]);lab,n=np.unique(labels,return_counts=True);outside=lab[np.argmax(n)];result=mask.copy();result[other[labels!=outside]]=True;return result
+def arc(P):return np.r_[0,np.cumsum(np.linalg.norm(np.diff(np.vstack([P,P[0]]),axis=0),axis=1))]
+def source_boundary(V,T,mask):
+ repairs=[]
+ for attempt in range(3):
+  try:
+   result=boundary(V,T,mask);save('source-boundary-local-topology-repair.json',{'UTC':stamp(),'repairs':repairs,'allOriginalRootOwnerFacesRetained':True,'singleManifoldPerimeterNowRequired':True,'noCurrentSkinDomainExpansion':True});return mask,result
+  except AssertionError as error:
+   if 'boundary is not a simple manifold loop' not in str(error) or attempt==2:raise
+   _,pid=np.unique(np.round(V,6),axis=0,return_inverse=True);F=pid[T[mask]];ed=np.sort(np.vstack([F[:,[0,1]],F[:,[1,2]],F[:,[2,0]]]),axis=1);ed,c=np.unique(ed,axis=0,return_counts=True);ed=ed[c==1];ids,degree=np.unique(ed,return_counts=True);bad=ids[degree>2];assert 0<len(bad)<=3,'Not a local source-head pinch';vertices=np.flatnonzero(np.isin(pid,bad));assert V[vertices,2].min()>1.42,'Do not expand non-head source anatomy';extra=np.any(np.isin(pid[T],bad),axis=1)&~mask;assert int(extra.sum())<=24,'Not a local source ring';repairs.append({'geometricPositionIDs':bad.tolist(),'sourceVertexIDs':vertices.tolist(),'worldPositions':V[vertices].tolist(),'sourceBodyFacesAdded':np.flatnonzero(extra).tolist(),'reason':'Close the actual incident source anatomical skin ring at a pinched selection, without moving vertices or removing roots.'});mask=fill_holes(T,mask|extra)
+def main():
+ tick=time.time();t=json.loads((E/'before.json').read_text());assert not OUT.exists() and sha(t['source'])==t['sourceSha256'];src=np.load(E/'original-full-native-groom-data.npz');SV=src['sourceBodyWorld'].astype('f8');ST=src['sourceBodyTriangles'];P=src['worldPositions'].astype('f8');off=src['curveOffsets'];counts=np.diff(np.r_[off,len(P)]);radius=src['pointRadius'];owners=src['sourceOwnerFaces'];assert sha(ART)=='93aedaef061dc14618a0fcfad33c3df816fa755e8093381cbdfd0fd4c34527f5'
+ bpy.ops.wm.open_mainfile(filepath=str(ART));ob=bpy.data.objects['straight_hair_to_shoulder'].data.surface;bpy.context.view_layer.update();EV,ET=a.geometry(ob);assert EV.shape==SV.shape and np.linalg.norm(EV-SV,axis=1).max()<3e-6 and np.array_equal(ET,ST);ev=ob.evaluated_get(bpy.context.evaluated_depsgraph_get());gid=ob.vertex_groups['scalp'].index;scalpWeight=np.array([sum(g.weight for g in v.groups if g.group==gid) for v in ev.data.vertices]);sourceMask=np.any(scalpWeight[ST]>.5,axis=1);sourceMask[owners]=True;sourceMask=fill_holes(ST,sourceMask);sourceMask,(sourceLoop,sourcePID,sourceLoopPID)=source_boundary(SV,ST,sourceMask)
+ bpy.ops.wm.open_mainfile(filepath=t['source']);s=bpy.context.scene;s.frame_set(1);s.camera.data.type='PERSP';skin=bpy.data.objects[a.FIXED[0]];old=bpy.data.objects[a.FIXED[1]];old.material_slots[0].link='DATA';old.hide_render=False;old.hide_set(False);bpy.data.objects['AFN169_ACTUAL_COHERENT_NATIVE_ARTIST_GROOM'].hide_render=True;carrier=bpy.data.objects['AFN169_POSE_CONSISTENT_CURRENT_SCALP_CARRIER'];carrier.hide_render=True;protected={n:a.rawsig(bpy.data.objects[n]) for n in a.FIXED+a.MOVING};W,T=a.geometry(skin);sf=np.load(E.parent/'r0171-actual-scalp-chart/actual-scalp-groom-lineage.npz')['actualScalpFaces'];mask=np.zeros(len(T),'?');mask[sf]=True;targetLoop,targetPID,targetLoopPID=boundary(W,T,mask);capOld=W[np.unique(T[sf])];shift=np.array([0.,0.,float(capOld[:,2].max()-SV[:,2].max())]);sourceV=SV+shift;sourceP=P+shift
+ # Solve a cyclic seam correspondence, not a hairstyle parameter search.
+ A=W[targetLoop];B=sourceV[sourceLoop];aa=arc(A);query=np.linspace(0,1,256,endpoint=False);sampleA=np.column_stack([np.interp(query*aa[-1],aa,np.r_[A[:,j],A[0,j]]) for j in range(3)]);best=None
+ for reverse in [False,True]:
+  order=sourceLoop[::-1] if reverse else sourceLoop
+  for start in range(len(order)):
+   order2=np.roll(order,-start);Q=sourceV[order2];ab=arc(Q);sampleB=np.column_stack([np.interp(query*ab[-1],ab,np.r_[Q[:,j],Q[0,j]]) for j in range(3)]);score=float(np.mean(np.sum((sampleA-sampleB)**2,axis=1)))
+   if best is None or score<best[0]:best=(score,order2.copy())
+ sourceLoop=best[1];B=sourceV[sourceLoop];bb=arc(B);assert best[0]**.5<.035,('source/current anatomical perimeter incompatible',best[0]**.5)
+ sourceIDs=np.unique(ST[sourceMask]);local=np.full(len(SV),-1,'i4');local[sourceIDs]=np.arange(len(sourceIDs));capFaces=local[ST[sourceMask]];vertices=np.vstack([sourceV[sourceIDs],A]);ncap=len(sourceIDs);bridge=[];i=j=0;ta=aa/aa[-1];tb=bb/bb[-1]
+ while i<len(A) or j<len(B):
+  ai=ncap+(i%len(A));bj=int(local[sourceLoop[j%len(B)]]);nextA=ta[i+1] if i<len(A) else 2;nextB=tb[j+1] if j<len(B) else 2
+  if nextA<=nextB:bridge.append([ai,ncap+((i+1)%len(A)),bj]);i+=1
+  else:bridge.append([ai,int(local[sourceLoop[(j+1)%len(B)]]),bj]);j+=1
+ bodyTree=BVHTree.FromPolygons(W.tolist(),T.tolist(),all_triangles=True)
+ for f in bridge:
+  v=vertices[f];normal=bodyTree.find_nearest(Vector(v.mean(0)))[1]
+  if np.dot(np.cross(v[1]-v[0],v[2]-v[0]),normal)<0:f[1],f[2]=f[2],f[1]
+ faces=np.vstack([capFaces,np.array(bridge,'i4')]);seam=np.zeros(len(vertices),'?');seam[ncap:]=True;seam[local[sourceLoop]]=True;mesh=bpy.data.meshes.new('AFN197_REAL_ANATOMICAL_CAP_AND_CONNECTED_PERIMETER');mesh.from_pydata(vertices.tolist(),[],faces.tolist());mesh.update();attr(mesh,'AFN197_JOIN_SEAM','BOOLEAN',seam);attr(mesh,'AFN197_ORIGINAL_SKIN_VERTEX_ID','INT',np.full(len(vertices),-1,'i4'));patch=bpy.data.objects.new('AFN197_ACTUAL_EDITABLE_SCALP_RECONSTRUCTION',mesh);s.collection.objects.link(patch);patch.hide_render=True;patch.hide_set(True)
+ capmat=bpy.data.materials.new('AFN197_BARE_SCALP_CONSTRUCTION_MATERIAL');capmat.use_nodes=True;capmat.node_tree.nodes.clear();bs=capmat.node_tree.nodes.new('ShaderNodeBsdfPrincipled');out=capmat.node_tree.nodes.new('ShaderNodeOutputMaterial');capmat.node_tree.links.new(bs.outputs[0],out.inputs[0]);bs.inputs['Base Color'].default_value=(.38,.27,.22,1);bs.inputs['Roughness'].default_value=.5;mesh.materials.append(capmat)
+ actual=skin.evaluated_get(bpy.context.evaluated_depsgraph_get()).data;actual.calc_loop_triangles();poly=np.array([f.polygon_index for f in actual.loop_triangles]);delete=np.zeros(len(actual.polygons),'?');delete[np.unique(poly[sf])]=True;assert np.all(mask==delete[poly]),'Do not partially delete an original face';oldBoundary=np.isin(targetPID,targetLoopPID);N=max(len(actual.vertices),len(actual.polygons));lookupMesh=bpy.data.meshes.new('AFN197_EXPLICIT_ORIGINAL_FACE_AND_BOUNDARY_IDS');lookupMesh.from_pydata(np.zeros((N,3),'f4').tolist(),[],[]);d=np.zeros(N,'?');d[:len(delete)]=delete;jb=np.zeros(N,'?');jb[:len(oldBoundary)]=oldBoundary;attr(lookupMesh,'AFN197_DELETE_OLD_CAP','BOOLEAN',d);attr(lookupMesh,'AFN197_JOIN_SEAM','BOOLEAN',jb);lookup=bpy.data.objects.new('AFN197_TOPOLOGY_SELECTION_DATA',lookupMesh);s.collection.objects.link(lookup);lookup.hide_render=True;lookup.hide_set(True)
+ g=bpy.data.node_groups.new('AFN197_REAL_SKIN_CAP_REPLACEMENT_NOT_COVER','GeometryNodeTree');g.interface.new_socket(name='Geometry',in_out='INPUT',socket_type='NodeSocketGeometry');g.interface.new_socket(name='Geometry',in_out='OUTPUT',socket_type='NodeSocketGeometry');ns=g.nodes;ls=g.links;ni=ns.new('NodeGroupInput');no=ns.new('NodeGroupOutput');index=ns.new('GeometryNodeInputIndex');info=ns.new('GeometryNodeObjectInfo');info.transform_space='ORIGINAL';info.inputs['Object'].default_value=lookup
+ def sampled(name,typ='BOOLEAN'):
+  named=ns.new('GeometryNodeInputNamedAttribute');named.data_type=typ;named.inputs['Name'].default_value=name;sample=ns.new('GeometryNodeSampleIndex');sample.data_type=typ;sample.domain='POINT';ls.new(info.outputs['Geometry'],sample.inputs['Geometry']);ls.new(named.outputs['Attribute'],sample.inputs['Value']);ls.new(index.outputs['Index'],sample.inputs['Index']);return sample.outputs['Value']
+ store=ns.new('GeometryNodeStoreNamedAttribute');store.data_type='INT';store.domain='POINT';store.inputs['Name'].default_value='AFN197_ORIGINAL_SKIN_VERTEX_ID';ls.new(ni.outputs[0],store.inputs['Geometry']);ls.new(index.outputs['Index'],store.inputs['Value']);store2=ns.new('GeometryNodeStoreNamedAttribute');store2.data_type='BOOLEAN';store2.domain='POINT';store2.inputs['Name'].default_value='AFN197_JOIN_SEAM';ls.new(store.outputs['Geometry'],store2.inputs['Geometry']);ls.new(sampled('AFN197_JOIN_SEAM'),store2.inputs['Value']);remove=ns.new('GeometryNodeDeleteGeometry');remove.domain='FACE';remove.mode='ALL';ls.new(store2.outputs['Geometry'],remove.inputs['Geometry']);ls.new(sampled('AFN197_DELETE_OLD_CAP'),remove.inputs['Selection']);pi=ns.new('GeometryNodeObjectInfo');pi.transform_space='ORIGINAL';pi.inputs['Object'].default_value=patch;join=ns.new('GeometryNodeJoinGeometry');ls.new(remove.outputs['Geometry'],join.inputs[0]);ls.new(pi.outputs['Geometry'],join.inputs[0]);merge=ns.new('GeometryNodeMergeByDistance');merge.inputs['Distance'].default_value=1e-6;se=ns.new('GeometryNodeInputNamedAttribute');se.data_type='BOOLEAN';se.inputs['Name'].default_value='AFN197_JOIN_SEAM';ls.new(join.outputs[0],merge.inputs['Geometry']);ls.new(se.outputs['Attribute'],merge.inputs['Selection']);ls.new(merge.outputs[0],no.inputs[0]);skin.modifiers.new('AFN197_ACTUAL_ANATOMICAL_SCALP_RECONSTRUCTION','NODES').node_group=g
+ # Native original rest geometry is preserved exactly at source; own skin
+ # domain drives every displayed strand point, with explicit unaccepted
+ # source first-point offsets. No template clamp or root deletion.
+ cu=bpy.data.hair_curves.new('AFN197_FULL_NATIVE_REST_GROOM');cu.add_curves(counts.tolist());cu.position_data.foreach_set('vector',sourceP.astype('f4').ravel());attr(cu,'radius','FLOAT',radius);attr(cu,'AFN197_PERSISTENT_CURVE_ID','INT',np.arange(len(off),dtype='i4'),domain='CURVE');sourceTree=BVHTree.FromPolygons(sourceV.tolist(),ST.tolist(),all_triangles=True);rt=[];bc=[]
+ for x,owner in zip(sourceP[off],owners):
+  B0=sourceV[ST[owner]];uv=np.linalg.lstsq(np.column_stack([B0[1]-B0[0],B0[2]-B0[0]]),x-B0[0],rcond=None)[0];w=np.clip(np.array([1-uv.sum(),*uv]),0,1);w/=w.sum();rt.append(local[ST[owner]]);bc.append(w)
+ rt=np.array(rt,'i4');bc=np.array(bc);assert rt.min()>=0;root=np.einsum('ni,nij->nj',bc,vertices[rt]);offset=sourceP-np.repeat(root,counts,axis=0);attr(cu,'AFN197_REST_POINT_OFFSET','FLOAT_VECTOR',offset.astype('f4'),'vector')
+ for k in range(3):attr(cu,f'AFN197_CAP_I{k}','INT',np.repeat(rt[:,k],counts));attr(cu,f'AFN197_CAP_BC{k}','FLOAT',np.repeat(bc[:,k],counts).astype('f4'))
+ hair=bpy.data.objects.new('AFN197_ACTUAL_NATIVE_SCALP_DRIVEN_GROOM',cu);s.collection.objects.link(hair);hg=bpy.data.node_groups.new('AFN197_CAP_DOMAIN_TO_FULL_DISPLAYED_HAIR','GeometryNodeTree');hg.interface.new_socket(name='Geometry',in_out='INPUT',socket_type='NodeSocketGeometry');hg.interface.new_socket(name='Geometry',in_out='OUTPUT',socket_type='NodeSocketGeometry');nn=hg.nodes;ll=hg.links;hin=nn.new('NodeGroupInput');hout=nn.new('NodeGroupOutput');po=nn.new('GeometryNodeObjectInfo');po.transform_space='ORIGINAL';po.inputs['Object'].default_value=patch;pos=nn.new('GeometryNodeInputPosition')
+ def field(name,typ):n=nn.new('GeometryNodeInputNamedAttribute');n.data_type=typ;n.inputs['Name'].default_value=name;return n.outputs['Attribute']
+ result=field('AFN197_REST_POINT_OFFSET','FLOAT_VECTOR')
+ for k in range(3):
+  sample=nn.new('GeometryNodeSampleIndex');sample.data_type='FLOAT_VECTOR';sample.domain='POINT';ll.new(po.outputs['Geometry'],sample.inputs['Geometry']);ll.new(pos.outputs[0],sample.inputs['Value']);ll.new(field(f'AFN197_CAP_I{k}','INT'),sample.inputs['Index']);mul=nn.new('ShaderNodeVectorMath');mul.operation='SCALE';ll.new(sample.outputs[0],mul.inputs[0]);ll.new(field(f'AFN197_CAP_BC{k}','FLOAT'),mul.inputs['Scale']);add=nn.new('ShaderNodeVectorMath');add.operation='ADD';ll.new(result,add.inputs[0]);ll.new(mul.outputs[0],add.inputs[1]);result=add.outputs[0]
+ setp=nn.new('GeometryNodeSetPosition');ll.new(hin.outputs[0],setp.inputs['Geometry']);ll.new(result,setp.inputs['Position']);ll.new(setp.outputs[0],hout.inputs[0]);hair.modifiers.new('AFN197_REAL_SHARED_SCALP_DOMAIN_DRIVER','NODES').node_group=hg;mat=bpy.data.materials.new('AFN197_OWN_NATIVE_HAIR_FIXED_MELANIN');mat.use_nodes=True;mat.node_tree.nodes.clear();bs=mat.node_tree.nodes.new('ShaderNodeBsdfHairPrincipled');bs.parametrization='MELANIN';bs.inputs['Melanin'].default_value=.75;bs.inputs['Melanin Redness'].default_value=.15;bs.inputs['Roughness'].default_value=.35;bs.inputs['Radial Roughness'].default_value=.45;out=mat.node_tree.nodes.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(bs.outputs[0],out.inputs[0]);cu.materials.append(mat);bpy.context.view_layer.update();display,doff=m.curveworld(hair);nativeError=float(np.linalg.norm(display-sourceP,axis=1).max());assert nativeError<3e-6 and np.array_equal(doff,off);assert protected=={n:a.rawsig(bpy.data.objects[n]) for n in protected};hair.hide_render=True;skin.modifiers[-1].show_viewport=skin.modifiers[-1].show_render=False
+ np.savez_compressed(E/'anatomical-scalp-lineage.npz',originalSourceCapFaces=np.flatnonzero(sourceMask),sourceCapVertexIDs=sourceIDs,oldSkinCapTriangles=sf,oldSkinCapPolygonIDs=np.flatnonzero(delete),oldSkinBoundaryVertexIDs=np.flatnonzero(oldBoundary),sourceBoundaryVertexIDs=sourceLoop,currentBoundaryVertexIDs=targetLoop,translation=shift,curveRootPatchTriangles=rt,curveRootBC=bc,curveOffsets=off,rootFirstControlOffsets=sourceP[off]-root)
+ save('anatomical-construction-summary.json',{'UTC':stamp(),'actualSkin':skin.name,'actualHair':hair.name,'actualPatch':patch.name,'actualLookup':lookup.name,'nativeCurves':len(off),'nativePoints':len(P),'newCapVertices':ncap,'newCapFaces':len(capFaces),'bridgeFaces':len(bridge),'oldSkinCapFacesRemovedAtDisplay':int(delete.sum()),'sourceBoundaryVertices':len(B),'currentBoundaryVertices':len(A),'boundaryCorrespondenceRmsM':best[0]**.5,'sourceCrownAlignmentTranslation':shift.tolist(),'nativeExactSourceRestIdentityMaximumM':nativeError,'sourceFirstControlPointOffsetMQuantiles':np.quantile(np.linalg.norm(sourceP[off]-root,axis=1),[0,.5,1]).tolist(),'sourceFirstPointAndFiniteSelfContinuousContactUnaccepted':True,'allOldOriginalRawMeshUVSignaturesUnchanged':protected,'oldCapFacesReplacedNotCovered':True,'newCapAnatomySeamAppearanceAndOperationUnaccepted':True,'wholeHairRestNotForeignWarped':True,'noHairCountRadiusOrMaterialSweep':True,'secondsBeforePreview':time.time()-tick})
+ captures=[]
+ def capture(scene):captures.append({'UTC':stamp(),'loadedSource':bpy.data.filepath,'plannedCandidate':str(OUT),'output':scene.render.filepath,'frame':scene.frame_current,'cameraMatrixWorld':[list(v) for v in scene.camera.matrix_world],'lens':scene.camera.data.lens,'cameraType':scene.camera.data.type,'viewTransform':scene.view_settings.view_transform,'look':scene.view_settings.look,'exposure':scene.view_settings.exposure,'cyclesSamples':scene.cycles.samples,'seed':scene.cycles.seed,'hairType':scene.render.hair_type,'resolution':[scene.render.resolution_x,scene.render.resolution_y,scene.render.resolution_percentage],'newScalpEnabled':skin.modifiers[-1].show_render,'newGroomVisible':not hair.hide_render,'captureStateNotRenderGeometryDepsgraphProof':True});save('actual-render-pre-capture-states.json',captures)
+ bpy.app.handlers.render_pre.append(capture);a.b.u.v.E=E
+ for v in ['face','body-face']:s.camera.data.type='PERSP';a.b.u.v.image('baseline-original-working-hair',v)
+ old.hide_render=True;old.hide_set(True);hair.hide_render=False;skin.modifiers[-1].show_viewport=skin.modifiers[-1].show_render=True;bpy.context.view_layer.update()
+ for v in ['face','body-face','oblique','profile','back']:s.camera.data.type='PERSP';a.b.u.v.image('a-anatomical-scalp-native-groom',v)
+ bpy.app.handlers.render_pre.remove(capture);s.camera.matrix_world=Matrix(captures[2]['cameraMatrixWorld']);s.camera.data.lens=captures[2]['lens'];s.camera.data.type='PERSP';OUT.parent.mkdir(parents=True,exist_ok=True);bpy.ops.wm.save_as_mainfile(filepath=str(OUT),compress=True);save('a-build-summary.json',{'UTC':stamp(),'output':str(OUT),'sha256':sha(OUT),'bytes':OUT.stat().st_size,'actualHair':hair.name,'actualSkin':skin.name,'actualPatch':patch.name,'oneReconstructionOneCandidate':True,'nativeCurves':len(off),'nativePoints':len(P),'elapsedJobSeconds':time.time()-tick,'appearanceCompleteOperationContactRuntimeUnaccepted':True});print('R197_ONE_COMPLETE_ANATOMICAL_SCALP_NATIVE_GROOM_SAVED',flush=True)
+if __name__=='__main__':main()
