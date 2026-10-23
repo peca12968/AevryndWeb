@@ -1,0 +1,25 @@
+"""Minimum complete-coarse source readback after visible rejection."""
+from pathlib import Path
+import bpy,numpy as np,json,datetime,hashlib,importlib.util
+from mathutils import Vector
+from mathutils.bvhtree import BVHTree
+C=Path('C:/Users/USER/AevryndCharacterWorkspace-r0158');E=C/'evidence/character-female-next/r0190-sectional-growth-chart'
+sp=importlib.util.spec_from_file_location('r190verify',C/'scripts/character-next/build-female-next-r0169-coherent-native-carrier.py');m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);a=m.a;h=m.h
+def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()
+def main():
+ b=json.loads((E/'a-build-summary.json').read_text());p=json.loads((E/'coarse-construction-summary.json').read_text());assert sha(b['output'])==b['sha256'];bpy.ops.wm.open_mainfile(filepath=b['output']);s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();hair=bpy.data.objects[b['actualHair']];skin=bpy.data.objects[p['actualSkin']];data=np.load(E/'sectional-growth-lineage.npz');P,off=m.curveworld(hair);K=p['pointsPerCurve'];N=len(off);assert len(P)==N*K;ev=hair.evaluated_get(bpy.context.evaluated_depsgraph_get());ids=h.arr(ev.data.attributes['AFN190_PERSISTENT_ROOT_ID'].data,'value',N,dtype='i4');assert np.array_equal(ids,data['rootIDs']);assert {n:a.rawsig(bpy.data.objects[n]) for n in p['protectedRawMeshUVSignatures']}==p['protectedRawMeshUVSignatures'];W,T=a.geometry(skin);born=np.einsum('ni,nij->nj',data['rootBC'],W[data['rootTriangles']]);rootWanted=born+data['rootNormals']*.00015;err=np.linalg.norm(P[off]-rootWanted,axis=1);missing=np.array(p['missingChartRootIDs'],dtype='i4');valid=np.ones(N,dtype=bool);valid[missing]=False
+ old=hair.data.position_data[0].vector.copy();hair.data.position_data[0].vector.x+=.001;hair.data.update_tag();bpy.context.view_layer.update();edit,_=m.curveworld(hair);movement=float(np.linalg.norm(edit-P,axis=1).max());hair.data.position_data[0].vector=old;hair.data.update_tag();bpy.context.view_layer.update();restored,ro=m.curveworld(hair);restore=float(np.linalg.norm(restored-P,axis=1).max());assert movement>.00099 and restore==0 and np.array_equal(off,ro)
+ tree=BVHTree.FromPolygons(W.tolist(),T.tolist(),all_triangles=True);sample=np.unique(np.r_[missing,np.linspace(0,N-1,253,dtype='i4')]);hits=[]
+ for i in sample:
+  path=P[off[i]:off[i]+K]
+  for j,(x,y) in enumerate(zip(path[:-1],path[1:])):
+   delta=y-x;length=float(np.linalg.norm(delta))
+   if length<1e-9:continue
+   loc,no,face,dist=tree.ray_cast(Vector(x),Vector(delta/length),length)
+   if loc is not None:hits.append({'rootID':int(i),'segment':j,'actualSkinTriangle':int(face),'locationWorld':list(loc),'distanceAlongControlChordM':float(dist)})
+ failed=[]
+ for i in missing:
+  failed.append({'rootID':int(i),'currentSkinTriangleVertices':data['rootTriangles'][i].tolist(),'barycentric':data['rootBC'][i].tolist(),'actualRootWorld':born[i].tolist(),'actualDisplayedRootWorld':P[off[i]].tolist(),'sectionPlaneID':int(data['rootChartIds'][i]),'rootOffsetErrorM':float(err[i]),'failedRootKeptNotDeletedOrExcludedFromAllRootResult':True})
+ q={'UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'independentlyReopenedSource':b['output'],'sourceSHA256':b['sha256'],'sourceUnmodified':sha(b['output'])==b['sha256'],'actualSkin':skin.name,'actualHair':hair.name,'actualCurves':N,'actualPoints':len(P),'persistentActualEvaluatedRootIDsMatch':True,'allRootOffsetErrorMaximumM':float(err.max()),'missingChartRoots':failed,'validChartRootsOffsetErrorMaximumM':float(err[valid].max()),'sourceGapMax1IsMissingDomainSentinelNotMeasured1MetreGap':True,'validChartNearestGapM':{'median':float(np.median(data['chartNearestRootGap'][valid])),'max':float(np.max(data['chartNearestRootGap'][valid]))},'actualNativePoint1mmEditMaximumM':movement,'actualNativePointRestoreMaximumM':restore,'originalSevenRawMeshUVSignaturesEqual':True,'neutralControlChordSubset':{'sampledCurves':len(sample),'allMissingChartRootsIncluded':True,'chordHitCount':len(hits),'locators':hits,'scope':'Control-chord locators only; not exact rendered interpolation, finite-width/self/continuous/global contact.'},'actualEffectiveMaterial':hair.data.materials[0].name,'sourceHairExplicitHiddenRollback':bpy.data.objects['AFN126_ORIGINAL_Hair_Hair_0'].hide_render,'originalLashesVisible':not bpy.data.objects['AFN126_ORIGINAL_Eyelashes_Eyelashes_0'].hide_render,'savedCameraType':s.camera.data.type,'savedFrame':s.frame_current,'captureStateLimit':'Saved settings do not prove original per-capture state; no independent matched render or depsgraph-equivalence proof claimed.','appearanceCompleteOperationContactRuntimeUnaccepted':True,'noFurtherRenderVariantsOrBroadAuditAfterVisibleFailure':True}
+ (E/'independent-sectional-growth-readback.json').write_bytes((json.dumps(q,ensure_ascii=False,indent=2)+'\n').encode());print('R190_MINIMUM_NATIVE_SECTION_REOPEN_RESTORE_DONE',json.dumps({k:q[k] for k in ['UTC','actualCurves','allRootOffsetErrorMaximumM','validChartRootsOffsetErrorMaximumM','actualNativePoint1mmEditMaximumM','actualNativePointRestoreMaximumM']}),flush=True)
+if __name__=='__main__':main()
