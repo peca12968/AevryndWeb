@@ -1,0 +1,13 @@
+00:04.609  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0180-source\aevrynd-female-next-r0180-a-anatomical-lash-rows.blend"
+Traceback (most recent call last):
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0181-inner-lid-follicle-domain.py", line 64, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0181-inner-lid-follicle-domain.py", line 54, in main
+    at=rec['u'];metric=.00050+.00025*rec['row'];targetUV=np.array([at,metric]);ab=np.einsum('bij,bj->bi',inverse,targetUV-triUV[:,0]);BC=np.column_stack((1-ab.sum(1),ab));candidates=np.flatnonzero((BC>=-1e-6).all(1));assert len(candidates),('No actual exterior metric-band triangle',cid,targetUV.tolist())
+                                                                                                                                                                                                                                ~~~^^^^^^^^^^^^
+AssertionError: ('No actual exterior metric-band triangle', 0, [0.12, 0.0005])
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
