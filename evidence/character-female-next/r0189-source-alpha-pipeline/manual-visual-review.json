@@ -1,0 +1,53 @@
+{
+  "UTC": "2026-10-23T04:38:29.003693+00:00",
+  "actuallyInspected": {
+    "baseline": {
+      "face": {
+        "path": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0189-source-alpha-pipeline\\matched-baseline-source-original-lashes-face.png",
+        "sha256": "d7961f68101c1b905bb8dd81acd1b529c23ba2cb2547a9469f748306b9759aae"
+      },
+      "body-face": {
+        "path": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0189-source-alpha-pipeline\\matched-baseline-source-original-lashes-body-face.png",
+        "sha256": "5b0350138ea90562177523c9fd41951d0b541148696b2ef7124eecaa24b8de21"
+      },
+      "back": {
+        "path": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0189-source-alpha-pipeline\\matched-baseline-source-original-lashes-back.png",
+        "sha256": "ea512c721bbfbcb2252eaef6d573a7a1f62d1529538554b63e5a25390a5e6f9c"
+      }
+    },
+    "candidate": {
+      "face": {
+        "path": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0189-source-alpha-pipeline\\matched-a-directional-card-material-face.png",
+        "sha256": "27a686d8240f90e81ac3c00ccfc88a642ae6c902cfcfa8025c21fd96fa2c2e55"
+      },
+      "body-face": {
+        "path": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0189-source-alpha-pipeline\\matched-a-directional-card-material-body-face.png",
+        "sha256": "078c1433cf5d780a7b8b1f9db4e26af46c8b3ae68fc8d2da2cb40a2cc4261c00"
+      },
+      "back": {
+        "path": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0189-source-alpha-pipeline\\matched-a-directional-card-material-back.png",
+        "sha256": "d1b4a4fe6c1bf26787d91983a22d051552a943239dba65495efccc19c8b74915"
+      },
+      "profile": {
+        "path": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0189-source-alpha-pipeline\\matched-a-directional-card-material-profile.png",
+        "sha256": "49f44e2ec77ccda62ed4b33656bdc2082af539865699f692a7895170db67bbe5"
+      },
+      "oblique": {
+        "path": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0189-source-alpha-pipeline\\matched-a-directional-card-material-oblique.png",
+        "sha256": "3a3536465d178ed72b83853ff031b82b1a5e252dda4e4f9a8bf3be2268c50497"
+      }
+    }
+  },
+  "decision": "REJECT_DIRECTIONAL_CARD_MATERIAL_COMPLETE_APPEARANCE",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "findings": [
+    "Candidate crown/front/oblique has a new broad silver-white hard crest; complete hairstyle remains broad painted/card-like masses.",
+    "Back retains broad smooth blade/sheet highlights and discontinuous cut sections; profile retains planar sections and gaps around ear/nape.",
+    "Whole body silhouette remains baseline, but full character has no net appearance gain. Raw Skin/body/eye/UV data are unchanged; this is not a claim of pixel-identical skin shading."
+  ],
+  "matchedBaselineRestoresOriginalLashesBeforeBothCaptures": true,
+  "noOpticalColourExposureRoughnessDensityRadiusVariantsAfterFailure": true,
+  "score": null,
+  "noNewAdoption": true,
+  "captureEvidenceLimit": "Executed common matched-view helper and original job output establish these captures. Saved settings are read separately in independent readback; no independently recorded per-capture settings/depsgraph equivalence is claimed."
+}

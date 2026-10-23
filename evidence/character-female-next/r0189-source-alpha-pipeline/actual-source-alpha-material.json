@@ -1,0 +1,605 @@
+{
+  "UTC": "2026-10-23T04:17:15.398619+00:00",
+  "source": "C:\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0184-source\\aevrynd-female-next-r0184-a-native-follicle-deformation.blend",
+  "sourceSHA256": "0e7395b4e0024bcbe1c9f6e122c89eab6b458a31736f3f8b3d876c54053e25dd",
+  "actualHair": "AFN126_ORIGINAL_Hair_Hair_0",
+  "actualMeshVertices": 57424,
+  "actualUVLayers": [
+    "UVMap"
+  ],
+  "actualMaterial": "Hair",
+  "materialSlots": [
+    {
+      "link": "DATA",
+      "material": "Hair"
+    }
+  ],
+  "surfaceRenderMethod": "BLENDED",
+  "nodes": [
+    {
+      "name": "原則化 BSDF",
+      "type": "ShaderNodeBsdfPrincipled",
+      "inputs": [
+        {
+          "name": "Base Color",
+          "identifier": "Base Color",
+          "linked": true,
+          "default": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ]
+        },
+        {
+          "name": "Metallic",
+          "identifier": "Metallic",
+          "linked": false,
+          "default": 0.0
+        },
+        {
+          "name": "Roughness",
+          "identifier": "Roughness",
+          "linked": false,
+          "default": 0.26231059432029724
+        },
+        {
+          "name": "IOR",
+          "identifier": "IOR",
+          "linked": false,
+          "default": 1000.0
+        },
+        {
+          "name": "Alpha",
+          "identifier": "Alpha",
+          "linked": true,
+          "default": 1.0
+        },
+        {
+          "name": "Thin Wall",
+          "identifier": "Thin Wall",
+          "linked": false,
+          "default": false
+        },
+        {
+          "name": "Normal",
+          "identifier": "Normal",
+          "linked": false,
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Weight",
+          "identifier": "Weight",
+          "linked": false,
+          "default": 0.0
+        },
+        {
+          "name": "Diffuse Roughness",
+          "identifier": "Diffuse Roughness",
+          "linked": false,
+          "default": 0.0
+        },
+        {
+          "name": "Subsurface Weight",
+          "identifier": "Subsurface Weight",
+          "linked": false,
+          "default": 0.0
+        },
+        {
+          "name": "Subsurface Radius",
+          "identifier": "Subsurface Radius",
+          "linked": false,
+          "default": [
+            1.0,
+            0.20000000298023224,
+            0.10000000149011612
+          ]
+        },
+        {
+          "name": "Subsurface Scale",
+          "identifier": "Subsurface Scale",
+          "linked": false,
+          "default": 0.004999999888241291
+        },
+        {
+          "name": "Subsurface IOR",
+          "identifier": "Subsurface IOR",
+          "linked": false,
+          "default": 1.399999976158142
+        },
+        {
+          "name": "Subsurface Anisotropy",
+          "identifier": "Subsurface Anisotropy",
+          "linked": false,
+          "default": 0.0
+        },
+        {
+          "name": "Specular IOR Level",
+          "identifier": "Specular IOR Level",
+          "linked": false,
+          "default": 0.5
+        },
+        {
+          "name": "Specular Tint",
+          "identifier": "Specular Tint",
+          "linked": false,
+          "default": [
+            0.012922662310302258,
+            0.008450028486549854,
+            0.005433922633528709,
+            1.0
+          ]
+        },
+        {
+          "name": "Anisotropic",
+          "identifier": "Anisotropic",
+          "linked": false,
+          "default": 0.0
+        },
+        {
+          "name": "Anisotropic Rotation",
+          "identifier": "Anisotropic Rotation",
+          "linked": false,
+          "default": 0.0
+        },
+        {
+          "name": "Tangent",
+          "identifier": "Tangent",
+          "linked": false,
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Transmission Weight",
+          "identifier": "Transmission Weight",
+          "linked": false,
+          "default": 0.0
+        },
+        {
+          "name": "Coat Weight",
+          "identifier": "Coat Weight",
+          "linked": false,
+          "default": 0.0
+        },
+        {
+          "name": "Coat Roughness",
+          "identifier": "Coat Roughness",
+          "linked": false,
+          "default": 0.029999999329447746
+        },
+        {
+          "name": "Coat IOR",
+          "identifier": "Coat IOR",
+          "linked": false,
+          "default": 1.5
+        },
+        {
+          "name": "Coat Tint",
+          "identifier": "Coat Tint",
+          "linked": false,
+          "default": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "Coat Normal",
+          "identifier": "Coat Normal",
+          "linked": false,
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Sheen Weight",
+          "identifier": "Sheen Weight",
+          "linked": false,
+          "default": 0.0
+        },
+        {
+          "name": "Sheen Roughness",
+          "identifier": "Sheen Roughness",
+          "linked": false,
+          "default": 0.5
+        },
+        {
+          "name": "Sheen Tint",
+          "identifier": "Sheen Tint",
+          "linked": false,
+          "default": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "Emission Color",
+          "identifier": "Emission Color",
+          "linked": true,
+          "default": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "Emission Strength",
+          "identifier": "Emission Strength",
+          "linked": false,
+          "default": 0.623106062412262
+        },
+        {
+          "name": "Thin Film Thickness",
+          "identifier": "Thin Film Thickness",
+          "linked": false,
+          "default": 0.0
+        },
+        {
+          "name": "Thin Film IOR",
+          "identifier": "Thin Film IOR",
+          "linked": false,
+          "default": 1.3300000429153442
+        }
+      ],
+      "distribution": "MULTI_GGX"
+    },
+    {
+      "name": "材質輸出",
+      "type": "ShaderNodeOutputMaterial",
+      "inputs": [
+        {
+          "name": "Surface",
+          "identifier": "Surface",
+          "linked": true,
+          "default": null
+        },
+        {
+          "name": "Volume",
+          "identifier": "Volume",
+          "linked": false,
+          "default": null
+        },
+        {
+          "name": "Displacement",
+          "identifier": "Displacement",
+          "linked": false,
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Thickness",
+          "identifier": "Thickness",
+          "linked": false,
+          "default": 0.0
+        }
+      ]
+    },
+    {
+      "name": "混合",
+      "type": "ShaderNodeMix",
+      "inputs": [
+        {
+          "name": "Factor",
+          "identifier": "Factor_Float",
+          "linked": false,
+          "default": 1.0
+        },
+        {
+          "name": "Factor",
+          "identifier": "Factor_Vector",
+          "linked": false,
+          "default": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "A",
+          "identifier": "A_Float",
+          "linked": false,
+          "default": 0.0
+        },
+        {
+          "name": "B",
+          "identifier": "B_Float",
+          "linked": false,
+          "default": 0.0
+        },
+        {
+          "name": "A",
+          "identifier": "A_Vector",
+          "linked": false,
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "B",
+          "identifier": "B_Vector",
+          "linked": false,
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "A",
+          "identifier": "A_Color",
+          "linked": true,
+          "default": [
+            0.5,
+            0.5,
+            0.5,
+            1.0
+          ]
+        },
+        {
+          "name": "B",
+          "identifier": "B_Color",
+          "linked": false,
+          "default": [
+            0.5107954740524292,
+            0.5107954740524292,
+            0.5107954740524292,
+            1.0
+          ]
+        },
+        {
+          "name": "A",
+          "identifier": "A_Rotation",
+          "linked": false,
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "B",
+          "identifier": "B_Rotation",
+          "linked": false,
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "blend_type": "MULTIPLY",
+      "data_type": "RGBA",
+      "clamp_factor": true,
+      "clamp_result": false
+    },
+    {
+      "name": "數學公式",
+      "type": "ShaderNodeMath",
+      "inputs": [
+        {
+          "name": "Value",
+          "identifier": "Value",
+          "linked": true,
+          "default": 0.5
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_001",
+          "linked": false,
+          "default": 0.7471590638160706
+        },
+        {
+          "name": "Value",
+          "identifier": "Value_002",
+          "linked": false,
+          "default": 0.5
+        }
+      ],
+      "operation": "MULTIPLY"
+    },
+    {
+      "name": "影像紋理",
+      "type": "ShaderNodeTexImage",
+      "inputs": [
+        {
+          "name": "Vector",
+          "identifier": "Vector",
+          "linked": false,
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "影像紋理.001",
+      "type": "ShaderNodeTexImage",
+      "inputs": [
+        {
+          "name": "Vector",
+          "identifier": "Vector",
+          "linked": false,
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "fromNode": "原則化 BSDF",
+      "fromSocket": "BSDF",
+      "fromIdentifier": "BSDF",
+      "toNode": "材質輸出",
+      "toSocket": "Surface",
+      "toIdentifier": "Surface"
+    },
+    {
+      "fromNode": "混合",
+      "fromSocket": "Result",
+      "fromIdentifier": "Result_Color",
+      "toNode": "原則化 BSDF",
+      "toSocket": "Base Color",
+      "toIdentifier": "Base Color"
+    },
+    {
+      "fromNode": "數學公式",
+      "fromSocket": "Value",
+      "fromIdentifier": "Value",
+      "toNode": "原則化 BSDF",
+      "toSocket": "Alpha",
+      "toIdentifier": "Alpha"
+    },
+    {
+      "fromNode": "影像紋理",
+      "fromSocket": "Color",
+      "fromIdentifier": "Color",
+      "toNode": "混合",
+      "toSocket": "A",
+      "toIdentifier": "A_Color"
+    },
+    {
+      "fromNode": "影像紋理",
+      "fromSocket": "Alpha",
+      "fromIdentifier": "Alpha",
+      "toNode": "數學公式",
+      "toSocket": "Value",
+      "toIdentifier": "Value"
+    },
+    {
+      "fromNode": "影像紋理.001",
+      "fromSocket": "Color",
+      "fromIdentifier": "Color",
+      "toNode": "原則化 BSDF",
+      "toSocket": "Emission Color",
+      "toIdentifier": "Emission Color"
+    }
+  ],
+  "actualImages": [
+    {
+      "node": "影像紋理",
+      "image": "Image_0",
+      "size": [
+        512,
+        1024
+      ],
+      "channels": 4,
+      "alphaMode": "CHANNEL_PACKED",
+      "colorSpace": "sRGB",
+      "path": "",
+      "pathExists": false,
+      "packed": true,
+      "pixelRGBAQuantiles": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.062745101749897,
+          0.04313725605607033,
+          0.04313725605607033,
+          0.6627451181411743
+        ],
+        [
+          0.250980406999588,
+          0.2039215862751007,
+          0.18039216101169586,
+          1.0
+        ]
+      ],
+      "alphaFractionZero": 0.8190975189208984,
+      "alphaFractionBelowHalf": 0.8826065063476562,
+      "sourceFileSHA256": null
+    },
+    {
+      "node": "影像紋理.001",
+      "image": "Image_1",
+      "size": [
+        512,
+        1024
+      ],
+      "channels": 4,
+      "alphaMode": "CHANNEL_PACKED",
+      "colorSpace": "sRGB",
+      "path": "",
+      "pathExists": false,
+      "packed": true,
+      "pixelRGBAQuantiles": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.062745101749897,
+          0.04313725605607033,
+          0.04313725605607033,
+          1.0
+        ],
+        [
+          0.250980406999588,
+          0.2039215862751007,
+          0.18039216101169586,
+          1.0
+        ]
+      ],
+      "alphaFractionZero": 0.0,
+      "alphaFractionBelowHalf": 0.0,
+      "sourceFileSHA256": null
+    }
+  ],
+  "viewLayerOverride": null,
+  "sourceUnmodified": true,
+  "noCandidateOrSourceSave": true,
+  "notRenderDepsgraphOrCauseProof": true
+}
