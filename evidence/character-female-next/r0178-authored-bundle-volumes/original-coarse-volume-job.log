@@ -1,0 +1,15 @@
+00:04.890  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0165-source\aevrynd-female-next-r0165-a-native-hair-optics.blend"
+C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0178-authored-bundle-volumes.py:50: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN178_COARSE_FORM_DIAGNOSTIC_BROWN_NOT_FIBRE_SHADER');mat.diffuse_color=(.08,.028,.012,1);mat.use_nodes=True;bs=mat.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(.08,.028,.012,1);bs.inputs['Roughness'].default_value=.45;mesh.materials.append(mat)
+Traceback (most recent call last):
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0178-authored-bundle-volumes.py", line 58, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0178-authored-bundle-volumes.py", line 50, in main
+    mat=bpy.data.materials.new('AFN178_COARSE_FORM_DIAGNOSTIC_BROWN_NOT_FIBRE_SHADER');mat.diffuse_color=(.08,.028,.012,1);mat.use_nodes=True;bs=mat.node_tree.nodes.get('Principled BSDF');bs.inputs['Base Color'].default_value=(.08,.028,.012,1);bs.inputs['Roughness'].default_value=.45;mesh.materials.append(mat)
+                                                                                                                                                                                            ^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'inputs'
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

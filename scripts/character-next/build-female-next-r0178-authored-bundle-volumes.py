@@ -1,0 +1,58 @@
+"""Direct individual full current-woman bundle volumes; coarse form precedes fibres."""
+from pathlib import Path
+import bpy,numpy as np,json,importlib.util,time,datetime
+from mathutils import Vector
+C=Path('C:/Users/USER/AevryndCharacterWorkspace-r0158');R=Path('D:/Download/Aevrynd');E=C/'evidence/character-female-next/r0178-authored-bundle-volumes';OUT=C/'assets-source/aevrynd-character/female-next/r0178-source/aevrynd-female-next-r0178-a-authored-bundle-volumes.blend'
+sp=importlib.util.spec_from_file_location('r178base',C/'scripts/character-next/build-female-next-r0177-anatomical-guide-paths.py');m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);a=m.a;h=m.h
+def save(n,x):(E/n).write_bytes((json.dumps(x,indent=2)+'\n').encode())
+# Each whole stroke was authored independently in current anatomical metres.
+# Side/crown/occiput paths have distinct curvature/exit/tip, not common handles.
+LEFT=[
+ [[-.003,-.085,1.555],[-.025,-.089,1.580],[-.054,-.081,1.575],[-.079,-.065,1.546],[-.095,-.055,1.510],[-.108,-.052,1.465],[-.111,-.045,1.420],[-.102,-.047,1.373],[-.083,-.060,1.342]],
+ [[-.002,-.062,1.573],[-.028,-.063,1.589],[-.061,-.057,1.580],[-.085,-.041,1.548],[-.102,-.026,1.510],[-.116,-.009,1.468],[-.119,.005,1.418],[-.111,-.004,1.370],[-.094,-.019,1.340]],
+ [[-.003,-.037,1.579],[-.027,-.032,1.593],[-.063,-.022,1.580],[-.090,-.007,1.550],[-.110,.009,1.503],[-.119,.035,1.459],[-.114,.047,1.415],[-.098,.041,1.375],[-.087,.024,1.347]],
+ [[-.001,-.009,1.574],[-.029,.003,1.590],[-.061,.019,1.570],[-.090,.038,1.535],[-.109,.055,1.490],[-.120,.071,1.446],[-.112,.082,1.403],[-.096,.074,1.366],[-.087,.057,1.341]],
+ [[-.002,.014,1.565],[-.025,.041,1.582],[-.054,.065,1.561],[-.077,.082,1.530],[-.099,.093,1.484],[-.106,.105,1.440],[-.094,.116,1.394],[-.073,.108,1.358],[-.068,.091,1.334]],
+ [[-.002,.035,1.551],[-.019,.061,1.564],[-.043,.083,1.546],[-.062,.101,1.510],[-.075,.114,1.466],[-.073,.126,1.420],[-.056,.130,1.379],[-.039,.115,1.350],[-.032,.099,1.327]],
+ [[-.003,.054,1.529],[-.013,.077,1.537],[-.025,.103,1.515],[-.035,.119,1.480],[-.044,.131,1.439],[-.037,.136,1.399],[-.020,.125,1.368],[-.012,.108,1.345],[-.019,.102,1.329]],
+ [[0,.060,1.511],[-.003,.082,1.512],[-.010,.110,1.491],[-.015,.129,1.455],[-.012,.142,1.417],[-.001,.136,1.379],[.008,.122,1.359],[.007,.105,1.338],[0,.102,1.329]]]
+RIGHT=[
+ [[.003,-.084,1.554],[.029,-.086,1.577],[.059,-.078,1.567],[.083,-.062,1.535],[.102,-.051,1.493],[.113,-.045,1.450],[.110,-.039,1.405],[.096,-.043,1.364],[.080,-.055,1.339]],
+ [[.002,-.060,1.573],[.032,-.058,1.585],[.066,-.049,1.572],[.091,-.033,1.539],[.109,-.014,1.496],[.121,.008,1.449],[.116,.024,1.407],[.100,.017,1.368],[.086,.001,1.344]],
+ [[.003,-.034,1.578],[.031,-.025,1.589],[.067,-.012,1.572],[.095,.009,1.540],[.115,.030,1.491],[.122,.054,1.444],[.110,.066,1.402],[.092,.056,1.365],[.082,.038,1.343]],
+ [[.002,-.006,1.573],[.033,.012,1.585],[.065,.030,1.562],[.092,.050,1.525],[.111,.070,1.479],[.115,.087,1.436],[.100,.095,1.392],[.081,.081,1.358],[.074,.065,1.336]],
+ [[.002,.017,1.564],[.028,.046,1.576],[.057,.071,1.552],[.080,.092,1.519],[.099,.107,1.471],[.099,.121,1.427],[.082,.127,1.386],[.063,.109,1.351],[.057,.094,1.329]],
+ [[.002,.038,1.547],[.020,.066,1.557],[.044,.092,1.536],[.061,.111,1.500],[.071,.126,1.455],[.064,.136,1.412],[.047,.133,1.373],[.032,.115,1.345],[.027,.102,1.325]],
+ [[.003,.056,1.526],[.014,.083,1.531],[.026,.110,1.508],[.036,.127,1.470],[.038,.141,1.429],[.026,.145,1.391],[.012,.128,1.362],[.008,.110,1.340],[.016,.104,1.326]]]
+def sample(P,n=65):
+ P=np.asarray(P,float);Q=np.vstack((P[0],P,P[-1]));out=[]
+ for i in range(len(P)-1):
+  p0,p1,p2,p3=Q[i:i+4]
+  for t in np.linspace(0,1,12,endpoint=False):out.append(.5*((2*p1)+(-p0+p2)*t+(2*p0-5*p1+4*p2-p3)*t*t+(-p0+3*p1-3*p2+p3)*t**3))
+ out=np.vstack((out,P[-1]));arc=np.r_[0,np.linalg.norm(np.diff(out,axis=0),axis=1).cumsum()];return np.stack([np.interp(np.linspace(0,arc[-1],n),arc,out[:,j]) for j in range(3)],axis=1)
+def frames(path):
+ tangent=np.gradient(path,axis=0);tangent/=np.linalg.norm(tangent,axis=1,keepdims=True);axis=np.array([0.,1.,0.]);x=np.cross(tangent[0],axis);x/=np.linalg.norm(x);xx=[];yy=[]
+ for t in tangent:
+  x=x-t*np.dot(x,t);x/=np.linalg.norm(x);y=np.cross(t,x);xx.append(x.copy());yy.append(y)
+ return np.array(xx),np.array(yy)
+def main():
+ tick=time.time();timing=json.loads((E/'before.json').read_text());assert not OUT.exists();assert a.a.sha(Path(timing['source']))==timing['sourceSha256'];bpy.ops.wm.open_mainfile(filepath=timing['source']);s=bpy.context.scene;s.frame_set(1);bpy.context.view_layer.update();skin=bpy.data.objects[a.FIXED[0]];old=bpy.data.objects[a.FIXED[1]];old.material_slots[0].link='DATA';protected={n:a.rawsig(bpy.data.objects[n]) for n in a.FIXED+a.MOVING}
+ paths=np.array([sample(P) for P in LEFT+RIGHT]);width=[];depth=[];frameX=[];frameY=[];verts=[];faces=[]
+ for j,path in enumerate(paths):
+  x,y=frames(path);frameX.append(x);frameY.append(y);u=np.linspace(0,1,len(path));w=np.interp(u,[0,.08,.24,.50,.74,.90,1],[.007,.014,.018,.019,.016,.009,.0015]);d=np.interp(u,[0,.12,.35,.65,.87,1],[.001,.004,.006,.007,.005,.001]);width.append(w);depth.append(d);start=len(verts)
+  for k,p in enumerate(path):
+   for angle in np.linspace(0,2*np.pi,12,endpoint=False):verts.append(p+x[k]*w[k]*np.cos(angle)+y[k]*d[k]*np.sin(angle))
+  for k in range(len(path)-1):
+   for z in range(12):faces.append([start+k*12+z,start+k*12+(z+1)%12,start+(k+1)*12+(z+1)%12,start+(k+1)*12+z])
+  faces.append([start+z for z in reversed(range(12))]);faces.append([start+(len(path)-1)*12+z for z in range(12)])
+ mesh=bpy.data.meshes.new('AFN178_INDIVIDUALLY_AUTHORED_VOLUME_DIAGNOSTIC_DATA');mesh.from_pydata(np.array(verts).tolist(),[],faces);mesh.update();ob=bpy.data.objects.new('AFN178_ACTUAL_CURRENT_WOMAN_COARSE_BUNDLE_VOLUMES',mesh);s.collection.objects.link(ob)
+ for poly in mesh.polygons:poly.use_smooth=True
+ mat=bpy.data.materials.new('AFN178_COARSE_FORM_DIAGNOSTIC_BROWN_NOT_FIBRE_SHADER');mat.diffuse_color=(.08,.028,.012,1);mat.use_nodes=True;mat.node_tree.nodes.clear();bs=mat.node_tree.nodes.new('ShaderNodeBsdfPrincipled');out=mat.node_tree.nodes.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(bs.outputs[0],out.inputs[0]);bs.inputs['Base Color'].default_value=(.08,.028,.012,1);bs.inputs['Roughness'].default_value=.45;mesh.materials.append(mat)
+ data=bpy.data.hair_curves.new('AFN178_EDITABLE_INDIVIDUAL_CURRENT_WORLD_STROKES_DATA');data.add_curves([65]*len(paths));data.position_data.foreach_set('vector',paths.astype('f4').ravel());go=bpy.data.objects.new('AFN178_EDITABLE_COMPLETE_CURRENT_WORLD_BUNDLE_STROKES',data);s.collection.objects.link(go);go.hide_render=True;go.hide_set(True);old.hide_render=True;old.hide_set(True);bpy.context.view_layer.update();assert protected=={n:a.rawsig(bpy.data.objects[n]) for n in protected}
+ np.savez_compressed(E/'authored-current-bundle-volume-construction.npz',paths=paths.astype('f4'),width=np.array(width,'f4'),depth=np.array(depth,'f4'),frameX=np.array(frameX,'f4'),frameY=np.array(frameY,'f4'))
+ save('direct-current-volume-authoring.json',{'UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'originalStartedUTC':timing['startedUTC'],'changedFailedPremise':'15 independently authored complete current-anatomical paths with distinct part/ear/occiput/tip bends and finite elliptical cross-sections. Full volumes inspected before fibres. No source guide transfer, decorative surface inversion, regional shared control handles or arbitrary emitter mask.','leftStrokes':LEFT,'rightStrokes':RIGHT,'actualSkin':skin.name,'coarseVolume':ob.name,'actualGuides':go.name,'stage':'COARSE_FORM_DIAGNOSTIC_NOT_COMPLETE_HAIR_IMPROVEMENT','notHairContactOrPhotorealAppearanceProof':True,'bodyFaceSkinEyesAndOriginalHairRawSignaturesRetained':True})
+ bpy.context.preferences.filepaths.save_version=0;coarse=OUT.with_name(OUT.name.replace('-a-authored','-coarse-authored'));bpy.ops.wm.save_as_mainfile(filepath=str(coarse),compress=True,relative_remap=True);save('coarse-build-summary.json',{'source':timing['source'],'output':str(coarse),'sha256':a.a.sha(coarse),'bytes':coarse.stat().st_size,'actualSkin':skin.name,'actualRig':'AFN138_ACTUAL_CURRENT_GAZE_RIG','actualHair':ob.name,'actualGuides':go.name,'retainedSourceHair':old.name,'coarseBundleVolumes':len(paths),'fullFineHairCandidate':False,'savedConstructionStates':1,'secondsBeforePreview':time.time()-tick});a.b.u.v.E=E;views=[]
+ for v in ['face','body-face','profile','back','oblique']:
+  ctl=a.b.u.v.image('coarse-authored-bundle-volumes',v);ctl.update(stage='COARSE_DIAGNOSTIC_NOT_COMPLETE_HAIR',actualHair=ob.name);views.append(ctl);save('coarse-volume-preview-controls.json',views)
+ print('R178_CURRENT_WOMAN_COARSE_COMPLETE_VOLUME_PREVIEW_DONE',time.time()-tick,flush=True)
+if __name__=='__main__':main()

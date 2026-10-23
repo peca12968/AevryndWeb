@@ -1,0 +1,14 @@
+00:04.594  blend            | Read blend: "C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0165-source\aevrynd-female-next-r0165-a-native-hair-optics.blend"
+C:\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0178-authored-bundle-volumes.py:50: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('AFN178_COARSE_FORM_DIAGNOSTIC_BROWN_NOT_FIBRE_SHADER');mat.diffuse_color=(.08,.028,.012,1);mat.use_nodes=True;mat.node_tree.nodes.clear();bs=mat.node_tree.nodes.new('ShaderNodeBsdfPrincipled');out=mat.node_tree.nodes.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(bs.outputs[0],out.inputs[0]);bs.inputs['Base Color'].default_value=(.08,.028,.012,1);bs.inputs['Roughness'].default_value=.45;mesh.materials.append(mat)
+00:10.219  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0178-authored-bundle-volumes\matched-coarse-authored-bundle-volumes-face.png'
+00:12.875  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0178-authored-bundle-volumes\matched-coarse-authored-bundle-volumes-body-face.png'
+00:17.031  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0178-authored-bundle-volumes\matched-coarse-authored-bundle-volumes-profile.png'
+00:21.297  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0178-authored-bundle-volumes\matched-coarse-authored-bundle-volumes-back.png'
+00:25.656  render           | Saved: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\evidence\character-female-next\r0178-authored-bundle-volumes\matched-coarse-authored-bundle-volumes-oblique.png'
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+資訊: 已儲存為「aevrynd-female-next-r0178-coarse-authored-bundle-volumes.blend」
+R178_CURRENT_WOMAN_COARSE_COMPLETE_VOLUME_PREVIEW_DONE 21.17876100540161
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
