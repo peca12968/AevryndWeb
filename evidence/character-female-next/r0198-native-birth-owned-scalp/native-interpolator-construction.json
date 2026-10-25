@@ -1,0 +1,76 @@
+{
+  "UTC": "2026-10-23T07:55:09.999454+00:00",
+  "sourceFrame": 1,
+  "actualGuides": 252,
+  "actualGuidePoints": 4032,
+  "actualNativeGuideToResolvedUVBirthTranslationQuantilesM": [
+    2.5930639185429646e-09,
+    4.355152674141105e-08,
+    0.008167384379585963
+  ],
+  "allGuidePointsReanchoredInSameSourceSpace": true,
+  "noForeignGuideFrameOrRadialWarp": true,
+  "sourceCapFaces": 832,
+  "sourceCapBoundaryVertices": 82,
+  "actualBirthDomainNowSinglePerimeter": true,
+  "allSourceGuideBirthFacesRetained": true,
+  "firstPointNearestOwnerRuleNotUsed": true,
+  "nativeInterpolationNode": {
+    "type": "GeometryNodeInterpolateCurves",
+    "inputs": [
+      {
+        "name": "Guide Curves",
+        "identifier": "Guide Curves",
+        "type": "GEOMETRY"
+      },
+      {
+        "name": "Guide Up",
+        "identifier": "Guide Up",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Guide Group ID",
+        "identifier": "Guide Group ID",
+        "type": "INT"
+      },
+      {
+        "name": "Points",
+        "identifier": "Points",
+        "type": "GEOMETRY"
+      },
+      {
+        "name": "Point Up",
+        "identifier": "Point Up",
+        "type": "VECTOR"
+      },
+      {
+        "name": "Point Group ID",
+        "identifier": "Point Group ID",
+        "type": "INT"
+      },
+      {
+        "name": "Max Neighbors",
+        "identifier": "Max Neighbors",
+        "type": "INT"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "Curves",
+        "identifier": "Curves",
+        "type": "GEOMETRY"
+      },
+      {
+        "name": "Closest Index",
+        "identifier": "Closest Index",
+        "type": "INT"
+      },
+      {
+        "name": "Closest Weight",
+        "identifier": "Closest Weight",
+        "type": "VALUE"
+      }
+    ]
+  },
+  "notCurrentWomanAppearanceOrContactAcceptance": true
+}
