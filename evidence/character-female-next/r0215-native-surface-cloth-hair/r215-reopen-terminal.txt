@@ -1,0 +1,17 @@
+00:00.547  blend            | Read blend: "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0215-source\aevrynd-female-next-r0215-native-layered-surface-hair.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+find_node_operation: Failed for (RIGIDBODY_REBUILD, '')
+--------------------------------------------------------------------
+Failed to add relation "Animation -> Rigid Body"
+Could not find op_to: OperationKey(type: TRANSFORM, component name: '', operation code: RIGIDBODY_REBUILD)
+
+Trace:
+
+Depth    Type                     Name
+-----    ----                     ----
+1        Object                   AFN215_NATIVE_WIND_FIELD
+
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+R215_INDEPENDENT_COMPLETE_SURFACE_NEUTRAL_REOPEN_ONLY {"UTC": "2026-10-28T20:48:29.570190+00:00", "source": "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\assets-source\\aevrynd-character\\female-next\\r0215-source\\aevrynd-female-next-r0215-native-layered-surface-hair.blend", "sourceSHA256": "f60c23dde360b737733a2eb1c92af120cbe0d1770fd52ecf0bb27d0035b524e4", "sourceUnchanged": true, "actualHair": "AFN215_ACTUAL_LAYERED_SURFACE_CLOTH_HAIR", "completeNeutralMeshMaximumDifferenceM": 5.993447269752801e-08, "all57424PersistentVertexIDsVerified": true, "all81789TrianglesAndArtistPolygonLoopsUVMaterialIdentityVerified": true, "UVSHA256": {"UVMap": "469fe5c99a9a94d96f6458678f5f0b4ad09edef41fb6babd6c421edbc0edd2b6"}, "all244LooseLayerSeamEdgesPresent": true, "all470PanelsHaveStoredGraphPathToScalpOwnedPanel": true, "scalpOwnershipIsRestSurfaceSupportNotProvenFollicleAttachmentOrHeadTracking": true, "nativeClothSkinColliderAndSelfCollisionEnabled": true, "savedAtNeutralUnbakedReplayRequired": true, "scope": "Independent actual source neutral display/UV/material/IDs/edges/collider/native field action readback only. Does not prove full73frame replay, encoded motion, natural strands or finite/self/continuous contact."}
+
+Blender quit
