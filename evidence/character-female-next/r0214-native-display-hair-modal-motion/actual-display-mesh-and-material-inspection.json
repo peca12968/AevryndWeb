@@ -1,0 +1,97 @@
+{
+  "UTC": "2026-10-28T19:46:57.804621+00:00",
+  "actualHair": "AFN126_ORIGINAL_Hair_Hair_0",
+  "rawVertices": 57424,
+  "evaluatedVertices": 57424,
+  "actualTriangles": 81789,
+  "rawMeshUVSignature": {
+    "vertices": "04e5f31ae66e2e388ab6690bcdf8b9920bc56e024d3264370ed0456ef032a69c",
+    "triangles": "5c5e833f135810a4adee7ac5719f54326001188f95e25544af9aa1456706e67c",
+    "uv": {
+      "UVMap": "469fe5c99a9a94d96f6458678f5f0b4ad09edef41fb6babd6c421edbc0edd2b6"
+    }
+  },
+  "actualWorldBounds": [
+    [
+      -0.13767174757564682,
+      -0.13292834952278054,
+      1.2978850647387528
+    ],
+    [
+      0.13678410569492083,
+      0.1022164116276647,
+      1.5927363607971312
+    ]
+  ],
+  "modifiers": [],
+  "meshIslands": 470,
+  "islandVertexCountQuantiles": [
+    10.0,
+    102.0,
+    245.0,
+    699.0
+  ],
+  "meshIslandsNotFollicleOrFlowIdentity": true,
+  "materials": [
+    {
+      "material": "Hair",
+      "link": "DATA",
+      "nodes": [
+        {
+          "name": "\u539f\u5247\u5316 BSDF",
+          "type": "BSDF_PRINCIPLED",
+          "alpha": 1.0,
+          "alphaLinks": [
+            "\u6578\u5b78\u516c\u5f0f"
+          ],
+          "baseColorLinks": [
+            "\u6df7\u5408"
+          ]
+        },
+        {
+          "name": "\u6750\u8cea\u8f38\u51fa",
+          "type": "OUTPUT_MATERIAL"
+        },
+        {
+          "name": "\u5f71\u50cf\u7d0b\u7406",
+          "type": "TEX_IMAGE",
+          "image": "Image_0",
+          "file": ""
+        },
+        {
+          "name": "\u5f71\u50cf\u7d0b\u7406.001",
+          "type": "TEX_IMAGE",
+          "image": "Image_1",
+          "file": ""
+        }
+      ]
+    }
+  ],
+  "meshMatrixWorld": [
+    [
+      0.021424775943160057,
+      0.0,
+      0.0,
+      -0.003762831911444664
+    ],
+    [
+      0.0,
+      0.021424781531095505,
+      -3.4905398571538626e-09,
+      -0.07500031590461731
+    ],
+    [
+      0.0,
+      3.4905398571538626e-09,
+      0.021424781531095505,
+      1.420842170715332
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "rawToEvaluatedWorldMaximumErrorM": 7.324406941836736e-08
+}

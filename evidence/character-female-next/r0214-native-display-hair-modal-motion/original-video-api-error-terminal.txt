@@ -1,0 +1,23 @@
+00:00.438  blend            | Read blend: "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0213-source\aevrynd-female-next-r0213-b-point-up-corrected-groom.blend"
+00:19.719  render           | Saved: 'F:\AevryndEvidence\r0214-native-display-hair-modal-motion\matched-baseline-original-working-hair-face.png'
+00:23.281  render           | Saved: 'F:\AevryndEvidence\r0214-native-display-hair-modal-motion\matched-baseline-original-working-hair-body-face.png'
+00:34.344  render           | Saved: 'F:\AevryndEvidence\r0214-native-display-hair-modal-motion\matched-modal-neutral-exact-display-hair-face.png'
+00:37.875  render           | Saved: 'F:\AevryndEvidence\r0214-native-display-hair-modal-motion\matched-modal-neutral-exact-display-hair-body-face.png'
+00:48.828  render           | Saved: 'F:\AevryndEvidence\r0214-native-display-hair-modal-motion\matched-modal-wind-peak-face.png'
+00:52.235  render           | Saved: 'F:\AevryndEvidence\r0214-native-display-hair-modal-motion\matched-modal-wind-peak-body-face.png'
+01:02.328  render           | Saved: 'F:\AevryndEvidence\r0214-native-display-hair-modal-motion\matched-modal-wind-peak-profile.png'
+01:09.813  render           | Saved: 'F:\AevryndEvidence\r0214-native-display-hair-modal-motion\matched-modal-wind-peak-back.png'
+01:21.125  render           | Saved: 'F:\AevryndEvidence\r0214-native-display-hair-modal-motion\matched-modal-wind-settled-face.png'
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+資訊: 已儲存為「aevrynd-female-next-r0214-native-display-hair-modal-motion.blend」
+R214_COMPLETE_ACTUAL_DISPLAY_MESH_NATIVE_WIND_SOURCE_AND_STILLS_SAVED
+Traceback (most recent call last):
+  File "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0214-display-modal-motion.py", line 68, in <module>
+    movie=F/'r0214-actual-native-hair-wind-and-settle.mp4';enum=s.render.image_settings.bl_rna.properties['file_format'].enum_items.keys();assert 'FFMPEG' in enum and hasattr(s.render,'ffmpeg'),'NativeFFmpeg unavailable; full source/stills preserved, do not invent clip';s.render.image_settings.file_format='FFMPEG';s.render.ffmpeg.format='MPEG4';s.render.ffmpeg.codec='H264';s.render.ffmpeg.constant_rate_factor='MEDIUM';s.render.filepath=str(movie);s.render.fps=fps;s.frame_start=1;s.frame_end=frames;print('R214_NATIVE_MOTION_CLIP_RENDER_STARTED',flush=True);bpy.ops.render.render(animation=True);bpy.app.handlers.render_pre.remove(capture);assert movie.exists();shutil.copyfile(movie,E/movie.name);save('actual-motion-clip.json',{'UTC':stamp(),'source':str(out),'sourceSHA256':sha(out),'movie':str(movie),'movieSHA256':sha(movie),'bytes':movie.stat().st_size,'fps':fps,'firstFrame':1,'lastFrame':frames,'camera':'Same recorded complete head camera and fixed original lighting/exposure as neutral.','actualNativeMeshAndRetainedGazeAnimationRendered':True,'notWarpedImagesNotProxyMotion':True,'finiteSelfContinuousContactAndNaturalHairAcceptanceUnproven':True,'elapsedWholeJobSeconds':taskClock.time()-tick});print('R214_ACTUAL_NATIVE_WIND_AND_SETTLE_MP4_COMPLETE',flush=True)
+                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: bpy_struct: item.attr = val: enum "FFMPEG" not found in ('AVIF', 'JPEG', 'OPEN_EXR', 'PNG', 'WEBP', 'BMP', 'CINEON', 'DPX', 'IRIS', 'JPEG2000', 'HDR', 'TARGA', 'TARGA_RAW', 'TIFF')
+
+Error: script failed, file: '\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0214-display-modal-motion.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

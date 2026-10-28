@@ -1,0 +1,80 @@
+{
+  "revision": "female-next-r0214",
+  "representation": "Four-region reduced actual display mesh modes,12 native relative shape keys; not a physical per-strand hair simulation.",
+  "regions": [
+    "FRONT_L",
+    "FRONT_R",
+    "BACK_L",
+    "BACK_R"
+  ],
+  "vertexCount": 57424,
+  "triangleCount": 81789,
+  "regionMassKg": [
+    0.005,
+    0.005,
+    0.005,
+    0.005
+  ],
+  "materialSpringNPerM": [
+    0.75,
+    0.75,
+    0.75,
+    0.75
+  ],
+  "gravityRestoringNPerM": [
+    0.36741233776957916,
+    0.37186248472583366,
+    0.352120871140944,
+    0.35247183029254103
+  ],
+  "geometricVolumeLeverArmM": [
+    0.1335012326961145,
+    0.1319035988160073,
+    0.13929875795509628,
+    0.1391600570158755
+  ],
+  "dampingKgPerS": [
+    0.11660477402739666,
+    0.11683673529393032,
+    0.11580417419092892,
+    0.11582261105241774
+  ],
+  "dampingRatio": 0.78,
+  "regionEffectiveAreaM2": [
+    0.004,
+    0.004,
+    0.006,
+    0.006
+  ],
+  "airDensityKgPerM3": 1.225,
+  "dragCoefficient": 1.1,
+  "neighborSpringNPerM": 0.12,
+  "dtSeconds": 0.004166666666666667,
+  "fps": 24,
+  "frames": 73,
+  "controlNames": [
+    "AFN214_HAIR_VOLUME_FRONT_L",
+    "AFN214_HAIR_VOLUME_FRONT_R",
+    "AFN214_HAIR_VOLUME_BACK_L",
+    "AFN214_HAIR_VOLUME_BACK_R"
+  ],
+  "shapeKeys": [
+    "AFN214_FRONT_L_0_WORLD_METRE",
+    "AFN214_FRONT_L_1_WORLD_METRE",
+    "AFN214_FRONT_L_2_WORLD_METRE",
+    "AFN214_FRONT_R_0_WORLD_METRE",
+    "AFN214_FRONT_R_1_WORLD_METRE",
+    "AFN214_FRONT_R_2_WORLD_METRE",
+    "AFN214_BACK_L_0_WORLD_METRE",
+    "AFN214_BACK_L_1_WORLD_METRE",
+    "AFN214_BACK_L_2_WORLD_METRE",
+    "AFN214_BACK_R_0_WORLD_METRE",
+    "AFN214_BACK_R_1_WORLD_METRE",
+    "AFN214_BACK_R_2_WORLD_METRE"
+  ],
+  "windProfile": "0.3..0.5s ramp to [3,.75]m/s, hold to0.8s, ramp to0 by1s, settle to3s. Fixed before capture; no collision-driven shrinking.",
+  "calibration": "Declared reduced-model parameters, not measured human hair material/airflow calibration. Root pin is explicit geometric scalp-volume constraint, not inferred follicles. Gravity linearized about inherited artist rest.",
+  "collisionResponseImplemented": false,
+  "finiteSelfContinuousContactAccepted": false,
+  "actualAevryndRuntimeTested": false
+}
