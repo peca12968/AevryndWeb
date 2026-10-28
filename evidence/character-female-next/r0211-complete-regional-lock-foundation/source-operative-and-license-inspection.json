@@ -1,0 +1,1300 @@
+{
+  "UTC": "2026-10-28T18:45:40.858109+00:00",
+  "source": "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\D\\Download\\Aevrynd\\Reference\\character\\blender-bystedt-hair-cc-by-sa\\hair_nodes-female_hair_styles.blend",
+  "embeddedTexts": {
+    "Braid hair curves": "Braid hair curves\n\nBraids require quite a lot of points per curve in order to create the shape of a braid. Find the lowest possible subdivision in the node to create a nice shape buyt also keeping the hairstyle optimized for viewport display. \n\nShape controls if the braid should be more thin at the root or at the tip\n\nThe Hair Tie parameter points to an object (hairband) that is instanced at the end of each braid.\n\n",
+    "Clump hair curves (small clumps)": "Clump hair curves (small clumps)\n\nThis node creates smaller clumps out of the existing clumps. \n\nThe Guide Distance parameter has a smaller value than the previous Clump Hair Curves node in order to create smaller clumps.\n\nBy setting Existing Guide Map to FALSE and setting Clump Offset to another value than zero, the clumps start diverging from their original direction. This is a good way of breaking up the shape of the hair.",
+    "Curl Hair Curves": "Curl Hair Curves\n\nGuide Index ha no incoming data in order to control the size of the curls with the parameter Guide Distance. \n\nAdding some subdivision is useful since curls ususally need more hair points in order to create the curled shape.\n\nCurl Start is set to 1 so that the curl does not start directly at the root.\n\nFactor Start and End controls the radius of the curl\n\nFrequency controls the amount of curls along the hair strands.\n\nRandom Offset controls the thickness of the curl \"band\". By using a Spline Parameter node and a color ramp it is possible to control how much offset there should be along each hair curve.\n",
+    "Displace Hair Curves": "Displace Hair Curves\n\nWhen creating braids, the interpolation of the hairs can cause intersection wit the scalp, which makes the character look a bit bald. This issue is fixed by pushing out the hair closest to the root from the scalp.\n\nThis node is much faster to use compared to Shrinkwrap Hair Curves when you know exactly which part of the hair you want to deform.",
+    "Duplicate Hair Curves": "Duplicate Hair Curves\n\nThis node will duplicate the hair curves to a single strand of hair. This is useful when you want to be very specific about how the hair should be shaped. \n\nSince it only spawns a couple of hairs around each hair curve it is very cheap to compute. \n\n",
+    "Hair Curve Noise": "Hair Curve Noise\n\nThe purpose of this setup is to create some fly away hairs. By changing the value of the parameter Offset per Curve, each hair gets an unique noise shape. \n\nDistance controls how much the hairs should deform.\n\nIt is important to set a fairly low frequency of the noise for the hair in order to get bigger noise shapes.\n\n",
+    "Hair demo file info": "Hair Demo File\n\n------------------------------\nCredits:\nDaniel Bystedt. CC BY-SA license\n\nwww.twitter.com/3dbystedt\nwww.artstation.com/artist/dbystedt\n------------------------------\n\nContent:\n\nCyberpunk hair\nThis setup is intended to showcase the workflow of creating a hair setup in the modifier tab. It uses some vertex groups to control hair parameters. This can be useful for artist that are not familiar with node graphs, but gives less detailed control compared to to the geometry nodes setups.\n    \nLong hair\nThis hairstyle uses two separate hair objects in order to separate the grooming in different parts. Look at the notes in the geometry nodes tab to get more insight about the hair setup. \n\nCurly hair\nLook at the notes in the geometry nodes tab to get more insight about the hair setup.\n\nBraids hair\nLook at the notes in the geometry nodes tab to get more insight about the hair setup. \n------------------------------\n\nNotes:\n\nWhen grooming, it is best to turn off all other hair collections in order to get a responsive grooming experience. You can do that with the little checkbox to the right of the collection in the outliner.\n    \nIn order to groom a hair object, select it and then choose \"Sculpt Mode\" from the object interaction mode menu in the top left corner.\n\nWhen testing the nodes in the Geometry Nodes workspace (tab at the top of the UI), you can mute nodes witht the hotkey \"M\" to see the influence they have on the hairstyle.\n\nHairstyles like braids and curls requires addition subdivision of the curves. Default is 1, but has been changed to 3 in Properties > Render Properties > Curves.\n\nEach hairstyle is attached to a growth mesh, which is just a single sided haircap. The growth mesh is separated in two mesh island. The hairs will interpolate based on which mesh island the guide hairs belong to. It also has a vertex group called \"parting\". This is used to move hairs closer to the parting line in order to avoid a \"bald look\" at the parting line.\n\nIn Eevee, the best display mode of curves are Strip instead of Strand, which is default. This can be changed in Properties > Render Properties > Curves.\n\nThe human haid normally has 90,000-150,000 hairs. The amount of hair has been kept less than that to keep the viewport and grooming running smoothly since there are multiple hairstyles in this file.\n\n",
+    "Interpolate hair curves": "Interpolate hair curves\n\nThis node generates more hair curves that aligns to the shape of the guide curves. Surface object and Surface UV Map parameters are important in order for the node to generate the hair curves correctly. \n\nThe part by mesh island parameter is important for hairstyles that requires hair parting. The growth mesh should be separate in multiple mesh island. Each hair curve will interpolate per each mesh island. \n\nThe Guide index output is used by other nodes (such as Clump hair curves) in order to interpolate hair curves correctly.\n\nPosson Disk Distribution will generate hair with more even spacing, but will take longer time to calculate.\n\nViewport Amount is connected to the Group Input, which makes the user able to control the parameter from the modifier.",
+    "Long hair clumping": "Clump hair curves\n\nClumping is very useful for creating a natural look for the hair. \n\nThe Guide Distance parameter sets the size of each clump.\n\nShape parameter < 0 affects more of the root and values > 0 affects the tip more.\n\nTip spread parameter controls the width of the tip.\n\nThe Guide Index parameter needs data from the Interpolate Hair Curves node in order to interpolate hair to the correct guide hair. When the data is disconnected, the hairs starts intersecting with the head. This is most notably when using local view on the hair.",
+    "Notes": "Curl\n\n\nNeed to have random direction of curl per curl (i.e. clockwise or counter clockwise)\n\nWhen Guide Index is plugged into Curl Hair Curves, it seems that it is not possible to edit the size of the curls with Guide Distance\n\n------\n\nto do\n\nInterpolation is really weird when mesh island overlaps. Is the uv transfered by position somehow?\n\nClump does not seem to respect parting. ",
+    "Notes on fly away hair": "Separate geometry\n\nIn order to increase performance this nodes separates out the hair that will be deformed. This makes it faster to calculate, but changes the hair index order of the hair. \n\nBy changing the index order, nodes that requires Guide Index data (such as Clump Hair Curves) will not work properly.",
+    "Roll hair curves info": "Roll hair curves info\n\n\nRoll hair curves is useful for creating a bend at the end of the hair curve. \n\nBy placing the node before Interpolate hair curves, it becomes much faster to calculate",
+    "Set hair curve profile info": "Set hair curve profile \n\nThis node sets the radius (thickness) of each hair. The shape parameter controls if the root or the tip should be more thin",
+    "set node color": "import bpy\n\nnode_tree_name = 'hair'\n\nfor node in bpy.data.node_groups[node_tree_name].nodes:\n    if not node.select:\n        continue\n    node.use_custom_color = True\n    node.color = (0.20666, 0.154987, 0.0521326)\n\n",
+    "Shrinkwrap Hair Curves": "Shrinkwrap Hair Curves\n\nThe purpose of this node is iterate over any hair point that is intersecting with the head and push it outside of the head surface in order to avoid intersection.\n\nBy setting the parameter Above Surface to 0, only points that are below the surface is affected.",
+    "Smooth Hair Curves": "Smooth Hair Curves\n\nSince the flare ends can be a bit noisy in the shape, it is useful to take the FlareParameter output from the Braid Hair Curves and plug it into a Smooth Hair Curve node.\n\nPreserve Length takes some extra time to calculate, so only Lock Tips are activated in this setup.",
+    "Snap hair to parting edges": "Snap hair to parting edges\n\nThis is a custom node group created to minimize the scalp visibility at the hair parting\n\nThe growth mesh should contain a vertex group that defines the parting area and defined in the \"Parting Attribute\" parameter. The hair curves within the proximity will snap to the partin area.\n\nSince the hair shader has some tranaparency in the root, the effect of this node is more visible with solid viewport shading.\n\n",
+    "Text": "",
+    "Trim Hair Curves": "Trim Hair Curves\n\nThis node will shrink or grow each hair curve. By using the parameter \"Random offset\", the length of each hair curve will differ. This will give the hair a more natural look in combination with Clump hair Curves.\n"
+  },
+  "rows": [
+    {
+      "name": "curly hair",
+      "rawCurves": 303,
+      "rawPoints": 3636,
+      "rootLocalBounds": [
+        [
+          -0.7841870188713074,
+          -1.4484196901321411,
+          14.791302680969238
+        ],
+        [
+          0.7854388952255249,
+          0.2786952555179596,
+          16.399227142333984
+        ]
+      ],
+      "rawLocalBounds": [
+        [
+          -1.214888095855713,
+          -1.7421802282333374,
+          14.293956756591797
+        ],
+        [
+          1.103930115699768,
+          0.7262603640556335,
+          16.700334548950195
+        ]
+      ],
+      "surface": "curly growth mesh",
+      "mods": [
+        {
+          "name": "Surface Deform",
+          "group": "Surface Deform",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        },
+        {
+          "name": "Curly hair",
+          "group": "curly hair",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            },
+            {
+              "name": "Viewport Amount",
+              "id": "Input_2",
+              "value": 1.0,
+              "type": "VALUE",
+              "attribute": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "braided hair",
+      "rawCurves": 137,
+      "rawPoints": 2740,
+      "rootLocalBounds": [
+        [
+          -0.781609058380127,
+          -1.3382219076156616,
+          14.957852363586426
+        ],
+        [
+          0.7825676798820496,
+          0.30491262674331665,
+          16.379093170166016
+        ]
+      ],
+      "rawLocalBounds": [
+        [
+          -1.088439702987671,
+          -1.4551281929016113,
+          13.46169376373291
+        ],
+        [
+          1.0367196798324585,
+          0.9190123081207275,
+          16.395549774169922
+        ]
+      ],
+      "surface": "Braids growth mesh",
+      "mods": [
+        {
+          "name": "Surface Deform",
+          "group": "Surface Deform.003",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        },
+        {
+          "name": "GeometryNodes",
+          "group": "Braided hair",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            },
+            {
+              "name": "Viewport Amount",
+              "id": "Input_2",
+              "value": 1.0,
+              "type": "VALUE",
+              "attribute": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cyberpunk hair",
+      "rawCurves": 1744,
+      "rawPoints": 9656,
+      "rootLocalBounds": [
+        [
+          -0.7864105701446533,
+          -1.4332391023635864,
+          14.683940887451172
+        ],
+        [
+          0.7856607437133789,
+          0.2813389301300049,
+          16.399356842041016
+        ]
+      ],
+      "rawLocalBounds": [
+        [
+          -0.9799033999443054,
+          -1.5223710536956787,
+          14.655552864074707
+        ],
+        [
+          1.0023257732391357,
+          0.43567293882369995,
+          16.70558738708496
+        ]
+      ],
+      "surface": "cyber punk growth mesh",
+      "mods": [
+        {
+          "name": "Set Hair Curve Profile",
+          "group": "Set Hair Curve Profile",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            },
+            {
+              "name": "Replace Radius",
+              "id": "Input_6",
+              "value": true,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Radius",
+              "id": "Input_3",
+              "value": 0.003999999724328518,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Shape",
+              "id": "Input_2",
+              "value": 0.10000000149011612,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Factor Min",
+              "id": "Input_4",
+              "value": 0.0,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Factor Max",
+              "id": "Input_5",
+              "value": 0.30000001192092896,
+              "type": "VALUE",
+              "attribute": ""
+            }
+          ]
+        },
+        {
+          "name": "Surface Deform",
+          "group": "Surface Deform",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        },
+        {
+          "name": "Interpolate Hair Curves",
+          "group": "Interpolate Hair Curves",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            },
+            {
+              "name": "Surface",
+              "id": "Input_23",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            },
+            {
+              "name": "Surface",
+              "id": "Input_2",
+              "value": "cyber punk growth mesh",
+              "type": "VALUE",
+              "attribute": null
+            },
+            {
+              "name": "Surface UV Map",
+              "id": "Input_18",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "type": "ATTRIBUTE",
+              "attribute": "UVMap"
+            },
+            {
+              "name": "Surface Rest Position",
+              "id": "Input_12",
+              "value": false,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Follow Surface Normal",
+              "id": "Input_24",
+              "value": false,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Part by Mesh Islands",
+              "id": "Input_26",
+              "value": true,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Interpolation Guides",
+              "id": "Input_10",
+              "value": 2,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Distance to Guides",
+              "id": "Input_28",
+              "value": 0.0,
+              "type": "ATTRIBUTE",
+              "attribute": ""
+            },
+            {
+              "name": "Poisson Disk Distribution",
+              "id": "Input_13",
+              "value": false,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Density",
+              "id": "Input_15",
+              "value": 10000.0,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Density Mask",
+              "id": "Input_14",
+              "value": 1.0,
+              "type": "ATTRIBUTE",
+              "attribute": "density"
+            },
+            {
+              "name": "Mask Texture",
+              "id": "Input_19",
+              "value": null,
+              "type": "VALUE",
+              "attribute": null
+            },
+            {
+              "name": "Viewport Amount",
+              "id": "Input_17",
+              "value": 1.0,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Seed",
+              "id": "Input_16",
+              "value": 5,
+              "type": "VALUE",
+              "attribute": ""
+            }
+          ]
+        },
+        {
+          "name": "Clump Hair Curves",
+          "group": "Clump Hair Curves",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            },
+            {
+              "name": "Guide Index",
+              "id": "Input_16",
+              "value": -987654,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Guide Distance",
+              "id": "Input_9",
+              "value": 0.11409998685121536,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Guide Mask",
+              "id": "Input_19",
+              "value": 1.0,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Existing Guide Map",
+              "id": "Input_8",
+              "value": false,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Factor",
+              "id": "Input_7",
+              "value": 1.0,
+              "type": "ATTRIBUTE",
+              "attribute": "clump"
+            },
+            {
+              "name": "Shape",
+              "id": "Input_6",
+              "value": 0.30399996042251587,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Tip Spread",
+              "id": "Input_10",
+              "value": 0.014999998733401299,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Clump Offset",
+              "id": "Input_13",
+              "value": 0.0,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Distance Falloff",
+              "id": "Input_12",
+              "value": 0.0,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Distance Threshold",
+              "id": "Input_11",
+              "value": 0.0,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Seed",
+              "id": "Input_14",
+              "value": 0,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Preserve Length",
+              "id": "Input_15",
+              "value": false,
+              "type": "VALUE",
+              "attribute": ""
+            }
+          ]
+        },
+        {
+          "name": "Trim Hair Curves",
+          "group": "Trim Hair Curves",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            },
+            {
+              "name": "Scale Uniform",
+              "id": "Input_9",
+              "value": false,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Length Factor",
+              "id": "Input_5",
+              "value": 1.0,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Replace Length",
+              "id": "Input_6",
+              "value": false,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Length",
+              "id": "Input_2",
+              "value": 1.0,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Mask",
+              "id": "Input_7",
+              "value": 1.0,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Random Offset",
+              "id": "Input_4",
+              "value": 1.0,
+              "type": "ATTRIBUTE",
+              "attribute": "trim"
+            },
+            {
+              "name": "Pin at Parameter",
+              "id": "Input_3",
+              "value": 0.0,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Seed",
+              "id": "Input_8",
+              "value": 0,
+              "type": "VALUE",
+              "attribute": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "eyebrows.001",
+      "rawCurves": 88,
+      "rawPoints": 386,
+      "rootLocalBounds": [
+        [
+          -0.4920560419559479,
+          -1.572420358657837,
+          15.40597915649414
+        ],
+        [
+          0.49205613136291504,
+          -1.4079221487045288,
+          15.541844367980957
+        ]
+      ],
+      "rawLocalBounds": [
+        [
+          -0.528475821018219,
+          -1.5745923519134521,
+          15.40478229522705
+        ],
+        [
+          0.5284759402275085,
+          -1.3753117322921753,
+          15.541844367980957
+        ]
+      ],
+      "surface": "Eyebrows growth mesh",
+      "mods": [
+        {
+          "name": "Surface Deform",
+          "group": "Surface Deform.001",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        },
+        {
+          "name": "Eeybrows",
+          "group": "Eeybrows",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "eyebrows.002",
+      "rawCurves": 88,
+      "rawPoints": 386,
+      "rootLocalBounds": [
+        [
+          -0.4920560419559479,
+          -1.572420358657837,
+          15.40597915649414
+        ],
+        [
+          0.49205613136291504,
+          -1.4079221487045288,
+          15.541844367980957
+        ]
+      ],
+      "rawLocalBounds": [
+        [
+          -0.528475821018219,
+          -1.5745923519134521,
+          15.40478229522705
+        ],
+        [
+          0.5284759402275085,
+          -1.3753117322921753,
+          15.541844367980957
+        ]
+      ],
+      "surface": "Eyebrows growth mesh",
+      "mods": [
+        {
+          "name": "Surface Deform",
+          "group": "Surface Deform.001",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        },
+        {
+          "name": "Eeybrows",
+          "group": "Eeybrows",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "eyebrows.003",
+      "rawCurves": 88,
+      "rawPoints": 386,
+      "rootLocalBounds": [
+        [
+          -0.4920560419559479,
+          -1.572420358657837,
+          15.40597915649414
+        ],
+        [
+          0.49205613136291504,
+          -1.4079221487045288,
+          15.541844367980957
+        ]
+      ],
+      "rawLocalBounds": [
+        [
+          -0.528475821018219,
+          -1.5745923519134521,
+          15.40478229522705
+        ],
+        [
+          0.5284759402275085,
+          -1.3753117322921753,
+          15.541844367980957
+        ]
+      ],
+      "surface": "Eyebrows growth mesh",
+      "mods": [
+        {
+          "name": "Surface Deform",
+          "group": "Surface Deform.001",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        },
+        {
+          "name": "Eeybrows",
+          "group": "Eeybrows",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "eyebrows.004",
+      "rawCurves": 88,
+      "rawPoints": 386,
+      "rootLocalBounds": [
+        [
+          -0.4920560419559479,
+          -1.572420358657837,
+          15.40597915649414
+        ],
+        [
+          0.49205613136291504,
+          -1.4079221487045288,
+          15.541844367980957
+        ]
+      ],
+      "rawLocalBounds": [
+        [
+          -0.528475821018219,
+          -1.5745923519134521,
+          15.40478229522705
+        ],
+        [
+          0.5284759402275085,
+          -1.3753117322921753,
+          15.541844367980957
+        ]
+      ],
+      "surface": "Eyebrows growth mesh",
+      "mods": [
+        {
+          "name": "Surface Deform",
+          "group": "Surface Deform.001",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        },
+        {
+          "name": "Eeybrows",
+          "group": "Eeybrows",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "eyelashes",
+      "rawCurves": 60,
+      "rawPoints": 480,
+      "rootLocalBounds": [
+        [
+          -0.4365655481815338,
+          -1.479533076286316,
+          15.224702835083008
+        ],
+        [
+          0.43660295009613037,
+          -1.387912392616272,
+          15.361479759216309
+        ]
+      ],
+      "rawLocalBounds": [
+        [
+          -0.4685068428516388,
+          -1.5362776517868042,
+          15.196783065795898
+        ],
+        [
+          0.46784138679504395,
+          -1.387912392616272,
+          15.379842758178711
+        ]
+      ],
+      "surface": "Eyelashes growth mesh",
+      "mods": [
+        {
+          "name": "Surface Deform",
+          "group": "Surface Deform.001",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        },
+        {
+          "name": "GeometryNodes",
+          "group": "eyelashes",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "eyelashes.001",
+      "rawCurves": 60,
+      "rawPoints": 480,
+      "rootLocalBounds": [
+        [
+          -0.4365655481815338,
+          -1.479533076286316,
+          15.224702835083008
+        ],
+        [
+          0.43660295009613037,
+          -1.387912392616272,
+          15.361479759216309
+        ]
+      ],
+      "rawLocalBounds": [
+        [
+          -0.4685068428516388,
+          -1.5362776517868042,
+          15.196783065795898
+        ],
+        [
+          0.46784138679504395,
+          -1.387912392616272,
+          15.379842758178711
+        ]
+      ],
+      "surface": "Eyelashes growth mesh",
+      "mods": [
+        {
+          "name": "Surface Deform",
+          "group": "Surface Deform.001",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        },
+        {
+          "name": "GeometryNodes",
+          "group": "eyelashes",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "eyelashes.002",
+      "rawCurves": 60,
+      "rawPoints": 480,
+      "rootLocalBounds": [
+        [
+          -0.4365655481815338,
+          -1.479533076286316,
+          15.224702835083008
+        ],
+        [
+          0.43660295009613037,
+          -1.387912392616272,
+          15.361479759216309
+        ]
+      ],
+      "rawLocalBounds": [
+        [
+          -0.4685068428516388,
+          -1.5362776517868042,
+          15.196783065795898
+        ],
+        [
+          0.46784138679504395,
+          -1.387912392616272,
+          15.379842758178711
+        ]
+      ],
+      "surface": "Eyelashes growth mesh",
+      "mods": [
+        {
+          "name": "Surface Deform",
+          "group": "Surface Deform.001",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        },
+        {
+          "name": "GeometryNodes",
+          "group": "eyelashes",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "eyelashes.003",
+      "rawCurves": 60,
+      "rawPoints": 480,
+      "rootLocalBounds": [
+        [
+          -0.4365655481815338,
+          -1.479533076286316,
+          15.224702835083008
+        ],
+        [
+          0.43660295009613037,
+          -1.387912392616272,
+          15.361479759216309
+        ]
+      ],
+      "rawLocalBounds": [
+        [
+          -0.4685068428516388,
+          -1.5362776517868042,
+          15.196783065795898
+        ],
+        [
+          0.46784138679504395,
+          -1.387912392616272,
+          15.379842758178711
+        ]
+      ],
+      "surface": "Eyelashes growth mesh",
+      "mods": [
+        {
+          "name": "Surface Deform",
+          "group": "Surface Deform.001",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        },
+        {
+          "name": "GeometryNodes",
+          "group": "eyelashes",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "long hair main",
+      "rawCurves": 346,
+      "rawPoints": 6770,
+      "rootLocalBounds": [
+        [
+          -0.7807319760322571,
+          -1.4403833150863647,
+          14.678078651428223
+        ],
+        [
+          0.784132719039917,
+          0.27956622838974,
+          16.394359588623047
+        ]
+      ],
+      "rawLocalBounds": [
+        [
+          -1.0897057056427002,
+          -1.5632410049438477,
+          13.59932804107666
+        ],
+        [
+          1.2892916202545166,
+          0.9575696587562561,
+          16.538578033447266
+        ]
+      ],
+      "surface": "long hair growth mesh",
+      "mods": [
+        {
+          "name": "Surface Deform",
+          "group": "Surface Deform.002",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        },
+        {
+          "name": "Long hair",
+          "group": "hair",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            },
+            {
+              "name": "Viewport Amount",
+              "id": "Input_2",
+              "value": 1.0,
+              "type": "VALUE",
+              "attribute": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "long hair strands",
+      "rawCurves": 30,
+      "rawPoints": 360,
+      "rootLocalBounds": [
+        [
+          -0.7507944107055664,
+          -1.3818074464797974,
+          15.350940704345703
+        ],
+        [
+          -0.2677042484283447,
+          -0.1326758712530136,
+          16.293781280517578
+        ]
+      ],
+      "rawLocalBounds": [
+        [
+          -0.9966964721679688,
+          -1.580199956893921,
+          14.866643905639648
+        ],
+        [
+          0.8084146976470947,
+          0.35974034667015076,
+          16.520097732543945
+        ]
+      ],
+      "surface": "long hair growth mesh",
+      "mods": [
+        {
+          "name": "Surface Deform",
+          "group": "Surface Deform.004",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        },
+        {
+          "name": "GeometryNodes",
+          "group": "Set Hair Curve Profile",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            },
+            {
+              "name": "Replace Radius",
+              "id": "Input_6",
+              "value": true,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Radius",
+              "id": "Input_3",
+              "value": 0.009999999776482582,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Shape",
+              "id": "Input_2",
+              "value": 0.4999999403953552,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Factor Min",
+              "id": "Input_4",
+              "value": 0.0,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Factor Max",
+              "id": "Input_5",
+              "value": 0.0010000000474974513,
+              "type": "VALUE",
+              "attribute": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "new hair",
+      "rawCurves": 19,
+      "rawPoints": 285,
+      "rootLocalBounds": [
+        [
+          -0.4446459114551544,
+          -1.2784175872802734,
+          15.810417175292969
+        ],
+        [
+          0.7145459651947021,
+          0.24110345542430878,
+          16.392276763916016
+        ]
+      ],
+      "rawLocalBounds": [
+        [
+          -0.8766345977783203,
+          -1.443570852279663,
+          13.518852233886719
+        ],
+        [
+          1.1501753330230713,
+          0.7157354354858398,
+          16.491857528686523
+        ]
+      ],
+      "surface": "long hair growth mesh",
+      "mods": [
+        {
+          "name": "GeometryNodes.001",
+          "group": "curves to hair DABY",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            },
+            {
+              "name": "Curves",
+              "id": "Input_2",
+              "value": "Plane",
+              "type": "VALUE",
+              "attribute": null
+            },
+            {
+              "name": "Surface",
+              "id": "Input_3",
+              "value": "Eyebrows growth mesh",
+              "type": "VALUE",
+              "attribute": null
+            },
+            {
+              "name": "Uv to transfer",
+              "id": "Input_4",
+              "value": "UVMap",
+              "type": "VALUE",
+              "attribute": null
+            },
+            {
+              "name": "Radius",
+              "id": "Input_5",
+              "value": 0.009999999776482582,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Mirror X",
+              "id": "Input_6",
+              "value": false,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Mirror Y",
+              "id": "Input_7",
+              "value": false,
+              "type": "VALUE",
+              "attribute": ""
+            }
+          ]
+        },
+        {
+          "name": "Surface Deform",
+          "group": "Surface Deform",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            }
+          ]
+        },
+        {
+          "name": "GeometryNodes",
+          "group": "hair",
+          "inputs": [
+            {
+              "name": "Geometry",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            },
+            {
+              "name": "Viewport Amount",
+              "id": "Input_2",
+              "value": 1.0,
+              "type": "VALUE",
+              "attribute": ""
+            }
+          ]
+        },
+        {
+          "name": "Redistribute Curve Points",
+          "group": "Redistribute Curve Points",
+          "inputs": [
+            {
+              "name": "Curves",
+              "id": "Input_0",
+              "value": null,
+              "type": "FALLBACK",
+              "attribute": null
+            },
+            {
+              "name": "Factor",
+              "id": "Input_2",
+              "value": 1.0,
+              "type": "VALUE",
+              "attribute": ""
+            },
+            {
+              "name": "Feature Awareness",
+              "id": "Input_3",
+              "value": false,
+              "type": "VALUE",
+              "attribute": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
