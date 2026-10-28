@@ -1,0 +1,12 @@
+00:05.781  blend            | Read blend: "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0211-source\aevrynd-female-next-r0211-region-owned-whole-rest-groom.blend"
+Traceback (most recent call last):
+  File "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0212-artist-whole-volume.py", line 27, in <module>
+    assert max(sourceGaps)<3e-6;guideLogical,gf,gbc=target(np.array(guideParam));gn=np.cross(W[T[gf,1]]-W[T[gf,0]],W[T[gf,2]]-W[T[gf,0]]);gn/=np.linalg.norm(gn,axis=1)[:,None];guideShaft=guideLogical+gn*.000102
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+
+Error: script failed, file: '\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0212-artist-whole-volume.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

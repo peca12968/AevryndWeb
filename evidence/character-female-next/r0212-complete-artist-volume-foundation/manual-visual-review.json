@@ -1,0 +1,37 @@
+{
+  "UTC": "2026-10-28T19:09:55.503418+00:00",
+  "decision": "REJECT_VOLUME_GRID_ROOT_RESIDUAL_AND_NEGATIVE_SAMPLED_JACOBIAN",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "actualCurrentCompleteCandidateEmitted": false,
+  "sourceOnlyViewsInspected": [
+    "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0212-complete-artist-volume-foundation\\original-cc0-shoulder-source-front.png",
+    "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0212-complete-artist-volume-foundation\\original-cc0-shoulder-source-profile.png",
+    "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0212-complete-artist-volume-foundation\\original-cc0-shoulder-source-back.png"
+  ],
+  "sourceReferenceFinding": "Existing CC0 original shoulder rest has complete front/side/back coverage and coherent straight length; root crown remains stiff. Full source is a qualified reproducible reference, not adopted current-woman result.",
+  "retainedWorkingWomanViewsInspected": [
+    "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0212-complete-artist-volume-foundation\\matched-retained-working-woman-baseline-face.png",
+    "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0212-complete-artist-volume-foundation\\matched-retained-working-woman-baseline-body-face.png"
+  ],
+  "actualDiagnosticViewsInspected": [
+    "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0212-complete-artist-volume-foundation\\matched-rejected-volume-guide-diagnostic-face.png",
+    "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0212-complete-artist-volume-foundation\\matched-rejected-volume-guide-diagnostic-profile.png"
+  ],
+  "visibleDiagnosticFailures": [
+    "Top/scalp curves form unnatural arches, hooks and discontinuous bends after volume map.",
+    "Side/posterior full rest paths kink sharply; guide diagnostics are not complete rendered hair or a current appearance result."
+  ],
+  "technicalRejection": {
+    "originalGuideFirstPointVsNativeUVLogicalBirthMaximumM": 0.008167383665634013,
+    "newExplicitSourceGuideRebirthMaximumFullPathTranslationM": 0.0012007373152300715,
+    "sourceUVNeverPromotedToPhysicalBirthIdentity": true,
+    "rootResidualMaximumM": 0.006110228736617455,
+    "fixedRootResidualGuardM": 0.003,
+    "sampledJacobianMinimum": -0.5538444100621267,
+    "fixedSampledJacobianMargin": 0.05,
+    "negativeJacobianIsLocalMapInversionNotFullContactProof": true
+  },
+  "noSnappingFieldRootsPushingOrRemovingFailedGuidesAfterGuard": true,
+  "noNewCompleteHairCandidateAndNoAppearanceImprovement": true,
+  "score": null
+}
