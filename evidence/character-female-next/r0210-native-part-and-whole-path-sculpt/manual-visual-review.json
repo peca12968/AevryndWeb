@@ -1,0 +1,35 @@
+{
+  "UTC": "2026-10-28T18:41:44.957430+00:00",
+  "decision": "REJECT_NATIVE_WHOLE_PATH_SCULPT_ON_MEASURED_SHELL",
+  "completeCharacterResult": "本輪未改善完整人物",
+  "baselineViewsInspected": [
+    "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0210-native-part-and-whole-path-sculpt\\matched-baseline-original-working-hair-face.png",
+    "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0210-native-part-and-whole-path-sculpt\\matched-baseline-original-working-hair-body-face.png"
+  ],
+  "actualCandidateViewsInspected": [
+    "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0210-native-part-and-whole-path-sculpt\\matched-native-whole-path-part-groom-face.png",
+    "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0210-native-part-and-whole-path-sculpt\\matched-native-whole-path-part-groom-body-face.png",
+    "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0210-native-part-and-whole-path-sculpt\\matched-native-whole-path-part-groom-oblique.png",
+    "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0210-native-part-and-whole-path-sculpt\\matched-native-whole-path-part-groom-profile.png",
+    "\\\\?\\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\\Aevrynd\\C\\Users\\USER\\AevryndCharacterWorkspace-r0158\\evidence\\character-female-next\\r0210-native-part-and-whole-path-sculpt\\matched-native-whole-path-part-groom-back.png"
+  ],
+  "visibleChanges": "Native comb changed213 guide midpaths and212 tips, max36.399569mm; forehead opening and front paths differ from209. This is not an adopted complete appearance gain.",
+  "visibleFailures": [
+    "Whole hair remains a continuous inflated shell with weak natural large/medium lock hierarchy.",
+    "Side view exposes flat front curtain and abrupt overlapping bands near ear; front strands do not form credible separate locks.",
+    "Back view shows conspicuous sagittal seam and broad merged horizontal masses. Part-side domain cannot be called posterior-continuity improvement.",
+    "Protected original working wavy Hair has preferable complete silhouette and face framing. Reject; do not refine shader/density/radius/lighting to rescue shape."
+  ],
+  "sameConditions": "Actual same protected raw7/frame1; matched cameras, lighting, AgX exposure-0.5/samples16/seed61061. Final fixed melanin material and radius unchanged. Guide-only radius removed before capture.",
+  "nativeAuthoringEvidence": {
+    "successfulNativeDrags": 11,
+    "observedRawGeometryChangeEvents": 9,
+    "differenceNotInventedCause": "Some input drags did not produce separately observed raw changes; do not claim11 geometric edits.",
+    "rawGuideMaxChangeM": 0.03639956936240196,
+    "rawRootsMaxChangeM": 0.0,
+    "guidesWithChangedMidpaths": 213,
+    "guidesWithChangedTips": 212
+  },
+  "algorithmicCauseNotProven": true,
+  "score": null
+}
