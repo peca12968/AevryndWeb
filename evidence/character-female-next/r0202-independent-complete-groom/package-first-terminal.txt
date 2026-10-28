@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\finalize-package-female-next-r0202.py", line 38, in <module>
+    exec(tail)
+  File "<string>", line 2, in <module>
+  File "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\finalize-package-female-next-r0202.py", line 7, in sha
+    def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()
+                                          ^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'sites-engine-journey\\package.json'
