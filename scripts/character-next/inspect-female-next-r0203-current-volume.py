@@ -1,0 +1,8 @@
+from pathlib import Path
+import bpy,numpy as np,json,importlib.util,datetime
+p=json.loads(Path('F:/AevryndStorage/character-development-paths.json').read_text('utf-8'));A=Path(p['directCharacterArchiveAccess']);E=A/'evidence/character-female-next/r0203-current-space-bezier-groom';t=json.loads((E/'before.json').read_text('utf-8'));bpy.ops.wm.open_mainfile(filepath=t['source']);sp=importlib.util.spec_from_file_location('r203base',A/'scripts/character-next/build-female-next-r0169-coherent-native-carrier.py');m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);a=m.a;h=m.h;s=bpy.context.scene;s.frame_set(1);old=bpy.data.objects[a.FIXED[1]];V,T=a.geometry(old);hair=bpy.data.objects['AFN198_ACTUAL_SURFACE_BORN_NATIVE_GROOM'];roots=h.arr(hair.data.position_data,'vector',len(hair.data.position_data),3).reshape(252,16,3)[:,0]
+report={'UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'actualHair':old.name,'actualHairBounds':np.stack([V.min(0),V.max(0)]).tolist(),'actualGuideRootBounds':np.stack([roots.min(0),roots.max(0)]).tolist(),'sectionsForOriginal3DVolumeInspectionOnly':[]}
+for z in [1.58,1.55,1.50,1.45,1.40,1.35,1.30,1.25]:
+ P=V[np.abs(V[:,2]-z)<.0075]
+ if len(P):report['sectionsForOriginal3DVolumeInspectionOnly'].append({'z':z,'points':len(P),'min':P.min(0).tolist(),'max':P.max(0).tolist()})
+np.savez_compressed(E/'actual-original-hair-reference.npz',world=V,triangles=T,actualCurrentGuideRoots=roots);(E/'actual-reference-volume-inspection.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');print('R203_CURRENT_HAIR_VOLUME_INSPECTED',json.dumps(report),flush=True)

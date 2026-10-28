@@ -1,0 +1,59 @@
+{
+  "UTC": "2026-10-28T13:51:19.9138196Z",
+  "originalSession": 72159,
+  "originalPhase": "ls-remote before commit and push",
+  "specificFailureEvidence": {
+    "GUIDShellPwdSession": 99455,
+    "sameGitShellBinary": "C:\\Program Files\\Git\\bin\\sh.exe",
+    "GUIDShellPwdStillLive": true,
+    "literalFShellPwdTerminal": "7e0146 exit0 /f/AevryndStorage"
+  },
+  "reason": "Stop original publication process tree because independently reproduced shell startup/CWD incompatibility, not because observation timed out. Preserve staged blobs and resume after this proved execution-context change.",
+  "processes": [
+    {
+      "ProcessId": 46372,
+      "ParentProcessId": 23412,
+      "Name": "python.exe",
+      "CreationDate": "2026-10-28T21:33:49.78863+08:00"
+    },
+    {
+      "ProcessId": 49560,
+      "ParentProcessId": 46372,
+      "Name": "git.exe",
+      "CreationDate": "2026-10-28T21:33:53.637678+08:00"
+    },
+    {
+      "ProcessId": 27048,
+      "ParentProcessId": 49560,
+      "Name": "git.exe",
+      "CreationDate": "2026-10-28T21:33:53.643491+08:00"
+    },
+    {
+      "ProcessId": 44956,
+      "ParentProcessId": 27048,
+      "Name": "git.exe",
+      "CreationDate": "2026-10-28T21:33:53.652587+08:00"
+    },
+    {
+      "ProcessId": 20264,
+      "ParentProcessId": 44956,
+      "Name": "git-remote-https.exe",
+      "CreationDate": "2026-10-28T21:33:53.660731+08:00"
+    },
+    {
+      "ProcessId": 21292,
+      "ParentProcessId": 20264,
+      "Name": "sh.exe",
+      "CreationDate": "2026-10-28T21:33:53.989251+08:00"
+    }
+  ],
+  "testProcesses": [
+    {
+      "ProcessId": 50060,
+      "ParentProcessId": 42944,
+      "Name": "sh.exe"
+    }
+  ],
+  "originalProductionParent": "83c6a2909fb07e7bf5b2ec74ac2ae53b765469e0",
+  "noClockResetOrNewGoal": true
+}
