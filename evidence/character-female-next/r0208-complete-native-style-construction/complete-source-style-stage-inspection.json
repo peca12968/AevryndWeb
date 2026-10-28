@@ -1,0 +1,3764 @@
+{
+  "UTC": "2026-10-28T17:27:03.751680+00:00",
+  "source": "C:\\Users\\USER\\AppData\\Local\\Temp\\Aevrynd-hair-editor-reference\\hair.blend",
+  "sourceUnmodified": true,
+  "sourceOnlyNotCurrentWomanResult": true,
+  "hair": "basic_short_hair",
+  "surface": "Human",
+  "modifiers": [
+    {
+      "name": "Surface Deform",
+      "type": "NODES",
+      "viewport": true,
+      "render": true,
+      "props": {},
+      "group": "Surface Deform",
+      "sockets": [
+        {
+          "name": "Geometry",
+          "identifier": "Socket_0",
+          "socketType": "NodeSocketGeometry",
+          "inout": "OUTPUT",
+          "default": null
+        },
+        {
+          "name": "Geometry",
+          "identifier": "Socket_1",
+          "socketType": "NodeSocketGeometry",
+          "inout": "INPUT",
+          "default": null
+        }
+      ],
+      "objectRefs": [],
+      "nodes": [
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput",
+          "group": null
+        },
+        {
+          "name": "Deform Curves on Surface",
+          "type": "GeometryNodeDeformCurvesOnSurface",
+          "group": null
+        }
+      ]
+    },
+    {
+      "name": "GeometryNodes_basic_short",
+      "type": "NODES",
+      "viewport": true,
+      "render": true,
+      "props": {},
+      "group": "Geometry Nodes eyebrow",
+      "sockets": [
+        {
+          "name": "Geometry",
+          "identifier": "Socket_1",
+          "socketType": "NodeSocketGeometry",
+          "inout": "OUTPUT",
+          "default": null
+        },
+        {
+          "name": "Geometry",
+          "identifier": "Socket_0",
+          "socketType": "NodeSocketGeometry",
+          "inout": "INPUT",
+          "default": null
+        }
+      ],
+      "objectRefs": [],
+      "nodes": [
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput",
+          "group": null
+        },
+        {
+          "name": "Group",
+          "type": "GeometryNodeGroup",
+          "group": "Duplicate Hair Curves"
+        }
+      ]
+    },
+    {
+      "name": "Set Hair Curve Profile",
+      "type": "NODES",
+      "viewport": true,
+      "render": true,
+      "props": {},
+      "group": "Set Hair Curve Profile",
+      "sockets": [
+        {
+          "name": "Geometry",
+          "identifier": "Output_1",
+          "socketType": "NodeSocketGeometry",
+          "inout": "OUTPUT",
+          "default": null
+        },
+        {
+          "name": "Geometry",
+          "identifier": "Input_0",
+          "socketType": "NodeSocketGeometry",
+          "inout": "INPUT",
+          "default": null
+        },
+        {
+          "name": "Replace Radius",
+          "identifier": "Input_6",
+          "socketType": "NodeSocketBool",
+          "inout": "INPUT",
+          "default": true
+        },
+        {
+          "name": "Radius",
+          "identifier": "Input_3",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.009999999776482582
+        },
+        {
+          "name": "Shape",
+          "identifier": "Input_2",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.4999999403953552
+        },
+        {
+          "name": "Factor Min",
+          "identifier": "Input_4",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.0
+        },
+        {
+          "name": "Factor Max",
+          "identifier": "Input_5",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 1.0
+        },
+        {
+          "name": "Density",
+          "identifier": "Socket_0",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.0
+        },
+        {
+          "name": "Length",
+          "identifier": "Socket_1",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 1.0
+        }
+      ],
+      "objectRefs": [],
+      "nodes": [
+        {
+          "name": "Switch",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Radius",
+          "type": "GeometryNodeInputRadius",
+          "group": null
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Reroute.001",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Set Curve Radius",
+          "type": "GeometryNodeSetCurveRadius",
+          "group": null
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix",
+          "group": null
+        },
+        {
+          "name": "Group.002",
+          "type": "GeometryNodeGroup",
+          "group": "shape_range"
+        },
+        {
+          "name": "Group Input.001",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Math.006",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Spline Parameter.004",
+          "type": "GeometryNodeSplineParameter",
+          "group": null
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput",
+          "group": null
+        },
+        {
+          "name": "Delete Geometry",
+          "type": "GeometryNodeDeleteGeometry",
+          "group": null
+        },
+        {
+          "name": "Compare",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Random Value",
+          "type": "FunctionNodeRandomValue",
+          "group": null
+        },
+        {
+          "name": "Group Input.002",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group",
+          "type": "GeometryNodeGroup",
+          "group": "Trim Hair Curves"
+        },
+        {
+          "name": "Group Input.003",
+          "type": "NodeGroupInput",
+          "group": null
+        }
+      ]
+    },
+    {
+      "name": "Curl Hair Curves",
+      "type": "NODES",
+      "viewport": true,
+      "render": true,
+      "props": {},
+      "group": "Curl Hair Curves",
+      "sockets": [
+        {
+          "name": "Geometry",
+          "identifier": "Output_1",
+          "socketType": "NodeSocketGeometry",
+          "inout": "OUTPUT",
+          "default": null
+        },
+        {
+          "name": "Guide Index",
+          "identifier": "Output_20",
+          "socketType": "NodeSocketInt",
+          "inout": "OUTPUT",
+          "default": 0
+        },
+        {
+          "name": "Geometry",
+          "identifier": "Input_0",
+          "socketType": "NodeSocketGeometry",
+          "inout": "INPUT",
+          "default": null
+        },
+        {
+          "name": "Guide Index",
+          "identifier": "Input_19",
+          "socketType": "NodeSocketInt",
+          "inout": "INPUT",
+          "default": -987654
+        },
+        {
+          "name": "Guide Distance",
+          "identifier": "Input_4",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.10000000149011612
+        },
+        {
+          "name": "Guide Mask",
+          "identifier": "Input_18",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 1.0
+        },
+        {
+          "name": "Existing Guide Map",
+          "identifier": "Input_3",
+          "socketType": "NodeSocketBool",
+          "inout": "INPUT",
+          "default": true
+        },
+        {
+          "name": "Factor",
+          "identifier": "Input_2",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 1.0
+        },
+        {
+          "name": "Subdivision",
+          "identifier": "Input_5",
+          "socketType": "NodeSocketInt",
+          "inout": "INPUT",
+          "default": 1
+        },
+        {
+          "name": "Curl Start",
+          "identifier": "Input_6",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.10000000149011612
+        },
+        {
+          "name": "Radius",
+          "identifier": "Input_7",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.10000000149011612
+        },
+        {
+          "name": "Factor Start",
+          "identifier": "Input_9",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 1.0
+        },
+        {
+          "name": "Factor End",
+          "identifier": "Input_10",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 1.0
+        },
+        {
+          "name": "Frequency",
+          "identifier": "Input_11",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 1.0
+        },
+        {
+          "name": "Random Offset",
+          "identifier": "Input_16",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.25
+        },
+        {
+          "name": "Seed",
+          "identifier": "Input_15",
+          "socketType": "NodeSocketInt",
+          "inout": "INPUT",
+          "default": 0
+        }
+      ],
+      "objectRefs": [],
+      "nodes": [
+        {
+          "name": "Frame.011",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.004",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.007",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.006",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.009",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.001",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.005",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.010",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.002",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.008",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.003",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Reroute",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.004",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.007",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Separate Components",
+          "type": "GeometryNodeSeparateComponents",
+          "group": null
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Reroute.030",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.022",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Subdivide Curve.002",
+          "type": "GeometryNodeSubdivideCurve",
+          "group": null
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Math.004",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Group Input.005",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Reroute.008",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.002",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.001",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Reroute.006",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.011",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.009",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.010",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Join Geometry",
+          "type": "GeometryNodeJoinGeometry",
+          "group": null
+        },
+        {
+          "name": "Sample Curve",
+          "type": "GeometryNodeSampleCurve",
+          "group": null
+        },
+        {
+          "name": "Spline Parameter.002",
+          "type": "GeometryNodeSplineParameter",
+          "group": null
+        },
+        {
+          "name": "Reroute.028",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Compare.003",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Set Spline Type.001",
+          "type": "GeometryNodeCurveSplineType",
+          "group": null
+        },
+        {
+          "name": "Set Spline Resolution.001",
+          "type": "GeometryNodeSetSplineResolution",
+          "group": null
+        },
+        {
+          "name": "Switch.004",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Reroute.001",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.005",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group Input.002",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Position",
+          "type": "GeometryNodeInputPosition",
+          "group": null
+        },
+        {
+          "name": "Vector Math.008",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.010",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.009",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.006",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.005",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Reroute.012",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.025",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Vector Math.007",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.011",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.012",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Separate XYZ.001",
+          "type": "ShaderNodeSeparateXYZ",
+          "group": null
+        },
+        {
+          "name": "Reroute.016",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Set Position.001",
+          "type": "GeometryNodeSetPosition",
+          "group": null
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Map Range",
+          "type": "ShaderNodeMapRange",
+          "group": null
+        },
+        {
+          "name": "Group Input.006",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Spline Parameter.003",
+          "type": "GeometryNodeSplineParameter",
+          "group": null
+        },
+        {
+          "name": "Reroute.003",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.013",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.004",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Reroute.017",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.023",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.019",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.018",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Random Value.001",
+          "type": "FunctionNodeRandomValue",
+          "group": null
+        },
+        {
+          "name": "Sample Index.001",
+          "type": "GeometryNodeSampleIndex",
+          "group": null
+        },
+        {
+          "name": "Group.003",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Info"
+        },
+        {
+          "name": "Evaluate on Domain.001",
+          "type": "GeometryNodeFieldOnDomain",
+          "group": null
+        },
+        {
+          "name": "Math.048",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Math.049",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Math.038",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Combine XYZ.001",
+          "type": "ShaderNodeCombineXYZ",
+          "group": null
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Map Range.002",
+          "type": "ShaderNodeMapRange",
+          "group": null
+        },
+        {
+          "name": "Group Input.007",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Spline Parameter",
+          "type": "GeometryNodeSplineParameter",
+          "group": null
+        },
+        {
+          "name": "Group Input.009",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group Input.010",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Math.033",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Accumulate Field.001",
+          "type": "GeometryNodeAccumulateField",
+          "group": null
+        },
+        {
+          "name": "Math.016",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Curve of Point",
+          "type": "GeometryNodeCurveOfPoint",
+          "group": null
+        },
+        {
+          "name": "Math.015",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Group Input.015",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Math.017",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Group.001",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Segment"
+        },
+        {
+          "name": "Group Input.012",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Math.014",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Random Value",
+          "type": "FunctionNodeRandomValue",
+          "group": null
+        },
+        {
+          "name": "Evaluate on Domain",
+          "type": "GeometryNodeFieldOnDomain",
+          "group": null
+        },
+        {
+          "name": "Group.002",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Info"
+        },
+        {
+          "name": "Group Input.001",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Random Value.004",
+          "type": "FunctionNodeRandomValue",
+          "group": null
+        },
+        {
+          "name": "Math.021",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Spline Resolution",
+          "type": "GeometryNodeInputSplineResolution",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.002",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Set Spline Type",
+          "type": "GeometryNodeCurveSplineType",
+          "group": null
+        },
+        {
+          "name": "Named Attribute.001",
+          "type": "GeometryNodeInputNamedAttribute",
+          "group": null
+        },
+        {
+          "name": "Boolean Math",
+          "type": "FunctionNodeBooleanMath",
+          "group": null
+        },
+        {
+          "name": "Sample Index",
+          "type": "GeometryNodeSampleIndex",
+          "group": null
+        },
+        {
+          "name": "Accumulate Field.002",
+          "type": "GeometryNodeAccumulateField",
+          "group": null
+        },
+        {
+          "name": "Compare",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Group Input.003",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group Input.004",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group",
+          "type": "GeometryNodeGroup",
+          "group": "Create Guide Index Map"
+        },
+        {
+          "name": "Group Input.008",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Boolean Math.001",
+          "type": "FunctionNodeBooleanMath",
+          "group": null
+        },
+        {
+          "name": "Reroute.032",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Sample Index.002",
+          "type": "GeometryNodeSampleIndex",
+          "group": null
+        },
+        {
+          "name": "Accumulate Field",
+          "type": "GeometryNodeAccumulateField",
+          "group": null
+        },
+        {
+          "name": "Reroute.024",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group Input.014",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Compare.005",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Reroute.033",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Switch.001",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Switch.005",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Reroute.034",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        }
+      ]
+    },
+    {
+      "name": "Hair Curves Noise",
+      "type": "NODES",
+      "viewport": true,
+      "render": true,
+      "props": {},
+      "group": "Hair Curves Noise",
+      "sockets": [
+        {
+          "name": "Geometry",
+          "identifier": "Output_1",
+          "socketType": "NodeSocketGeometry",
+          "inout": "OUTPUT",
+          "default": null
+        },
+        {
+          "name": "Offset Vector",
+          "identifier": "Output_16",
+          "socketType": "NodeSocketVector",
+          "inout": "OUTPUT",
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Geometry",
+          "identifier": "Input_0",
+          "socketType": "NodeSocketGeometry",
+          "inout": "INPUT",
+          "default": null
+        },
+        {
+          "name": "Cumulative Offset",
+          "identifier": "Input_10",
+          "socketType": "NodeSocketBool",
+          "inout": "INPUT",
+          "default": true
+        },
+        {
+          "name": "Factor",
+          "identifier": "Input_3",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 1.0
+        },
+        {
+          "name": "Distance",
+          "identifier": "Input_14",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.009999999776482582
+        },
+        {
+          "name": "Shape",
+          "identifier": "Input_2",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.5
+        },
+        {
+          "name": "Scale",
+          "identifier": "Input_11",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 1.0
+        },
+        {
+          "name": "Scale along Curve",
+          "identifier": "Input_12",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 1.0
+        },
+        {
+          "name": "Offset per Curve",
+          "identifier": "Input_13",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.0
+        },
+        {
+          "name": "Seed",
+          "identifier": "Input_8",
+          "socketType": "NodeSocketInt",
+          "inout": "INPUT",
+          "default": 0
+        },
+        {
+          "name": "Preserve Length",
+          "identifier": "Input_6",
+          "socketType": "NodeSocketBool",
+          "inout": "INPUT",
+          "default": false
+        }
+      ],
+      "objectRefs": [],
+      "nodes": [
+        {
+          "name": "Frame.005",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.004",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.001",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.006",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.003",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.002",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.007",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Reroute.010",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.011",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.012",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.013",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Separate Components",
+          "type": "GeometryNodeSeparateComponents",
+          "group": null
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Join Geometry",
+          "type": "GeometryNodeJoinGeometry",
+          "group": null
+        },
+        {
+          "name": "Reroute.005",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.008",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.006",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.007",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.009",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput",
+          "group": null
+        },
+        {
+          "name": "Switch.001",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Boolean Math",
+          "type": "FunctionNodeBooleanMath",
+          "group": null
+        },
+        {
+          "name": "Group.005",
+          "type": "GeometryNodeGroup",
+          "group": "Restore Curve Segment Length"
+        },
+        {
+          "name": "Reroute.001",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group Input.008",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Sample Index",
+          "type": "GeometryNodeSampleIndex",
+          "group": null
+        },
+        {
+          "name": "Compare.002",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Accumulate Field.001",
+          "type": "GeometryNodeAccumulateField",
+          "group": null
+        },
+        {
+          "name": "Set Spline Resolution.001",
+          "type": "GeometryNodeSetSplineResolution",
+          "group": null
+        },
+        {
+          "name": "Set Spline Type.001",
+          "type": "GeometryNodeCurveSplineType",
+          "group": null
+        },
+        {
+          "name": "Compare.003",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Reroute.014",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Switch.004",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.003",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Position.001",
+          "type": "GeometryNodeInputPosition",
+          "group": null
+        },
+        {
+          "name": "Reroute.004",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Position.002",
+          "type": "GeometryNodeInputPosition",
+          "group": null
+        },
+        {
+          "name": "Vector Math.007",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.001",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Set Spline Type",
+          "type": "GeometryNodeCurveSplineType",
+          "group": null
+        },
+        {
+          "name": "Spline Resolution",
+          "type": "GeometryNodeInputSplineResolution",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.002",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Evaluate on Domain",
+          "type": "GeometryNodeFieldOnDomain",
+          "group": null
+        },
+        {
+          "name": "Vector Math.020",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.019",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Group Input.006",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group.001",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Root"
+        },
+        {
+          "name": "Vector Math.009",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Spline Parameter.001",
+          "type": "GeometryNodeSplineParameter",
+          "group": null
+        },
+        {
+          "name": "Group Input.007",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Noise Texture.002",
+          "type": "ShaderNodeTexNoise",
+          "group": null
+        },
+        {
+          "name": "Vector Math.006",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.005",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Curve Tangent",
+          "type": "GeometryNodeInputTangent",
+          "group": null
+        },
+        {
+          "name": "Vector Math.003",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.002",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.004",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.010",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.011",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Normal",
+          "type": "GeometryNodeInputNormal",
+          "group": null
+        },
+        {
+          "name": "Separate XYZ",
+          "type": "ShaderNodeSeparateXYZ",
+          "group": null
+        },
+        {
+          "name": "Group Input.001",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group Input.010",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Math.004",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Reroute",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Compare",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Group Input.002",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Curve of Point",
+          "type": "GeometryNodeCurveOfPoint",
+          "group": null
+        },
+        {
+          "name": "Group Input.005",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Vector Math.012",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Accumulate Field",
+          "type": "GeometryNodeAccumulateField",
+          "group": null
+        },
+        {
+          "name": "Reroute.002",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group.002",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Root"
+        },
+        {
+          "name": "Switch",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Vector Math.016",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.013",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.014",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.015",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Group",
+          "type": "GeometryNodeGroup",
+          "group": "shape_range"
+        },
+        {
+          "name": "Group Input.004",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Spline Parameter",
+          "type": "GeometryNodeSplineParameter",
+          "group": null
+        },
+        {
+          "name": "Vector Math.017",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Set Position",
+          "type": "GeometryNodeSetPosition",
+          "group": null
+        },
+        {
+          "name": "Field at Index",
+          "type": "GeometryNodeFieldAtIndex",
+          "group": null
+        },
+        {
+          "name": "Random Value.001",
+          "type": "FunctionNodeRandomValue",
+          "group": null
+        },
+        {
+          "name": "Group Input.009",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Random Value",
+          "type": "FunctionNodeRandomValue",
+          "group": null
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Group Input.003",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Random Value.004",
+          "type": "FunctionNodeRandomValue",
+          "group": null
+        },
+        {
+          "name": "Group.004",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Info"
+        },
+        {
+          "name": "Vector Math.018",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.008",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath",
+          "group": null
+        }
+      ]
+    },
+    {
+      "name": "Frizz Hair Curves",
+      "type": "NODES",
+      "viewport": true,
+      "render": true,
+      "props": {},
+      "group": "Frizz Hair Curves",
+      "sockets": [
+        {
+          "name": "Geometry",
+          "identifier": "Output_1",
+          "socketType": "NodeSocketGeometry",
+          "inout": "OUTPUT",
+          "default": null
+        },
+        {
+          "name": "Offset Vector",
+          "identifier": "Output_13",
+          "socketType": "NodeSocketVector",
+          "inout": "OUTPUT",
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Geometry",
+          "identifier": "Input_0",
+          "socketType": "NodeSocketGeometry",
+          "inout": "INPUT",
+          "default": null
+        },
+        {
+          "name": "Cumulative Offset",
+          "identifier": "Input_10",
+          "socketType": "NodeSocketBool",
+          "inout": "INPUT",
+          "default": true
+        },
+        {
+          "name": "Factor",
+          "identifier": "Input_3",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 1.0
+        },
+        {
+          "name": "Distance",
+          "identifier": "Input_11",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.009999999776482582
+        },
+        {
+          "name": "Shape",
+          "identifier": "Input_2",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.5
+        },
+        {
+          "name": "Seed",
+          "identifier": "Input_8",
+          "socketType": "NodeSocketInt",
+          "inout": "INPUT",
+          "default": 0
+        },
+        {
+          "name": "Preserve Length",
+          "identifier": "Input_6",
+          "socketType": "NodeSocketBool",
+          "inout": "INPUT",
+          "default": false
+        }
+      ],
+      "objectRefs": [],
+      "nodes": [
+        {
+          "name": "Frame",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.004",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.001",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.002",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.003",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.006",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.005",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Group Input.001",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group Input.006",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.001",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput",
+          "group": null
+        },
+        {
+          "name": "Reroute.007",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.009",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.006",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.008",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Join Geometry",
+          "type": "GeometryNodeJoinGeometry",
+          "group": null
+        },
+        {
+          "name": "Set Spline Resolution.001",
+          "type": "GeometryNodeSetSplineResolution",
+          "group": null
+        },
+        {
+          "name": "Set Spline Type.001",
+          "type": "GeometryNodeCurveSplineType",
+          "group": null
+        },
+        {
+          "name": "Reroute.002",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Switch.004",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Compare.003",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Reroute.015",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Position.002",
+          "type": "GeometryNodeInputPosition",
+          "group": null
+        },
+        {
+          "name": "Vector Math.007",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Curve of Point",
+          "type": "GeometryNodeCurveOfPoint",
+          "group": null
+        },
+        {
+          "name": "Field at Index",
+          "type": "GeometryNodeFieldAtIndex",
+          "group": null
+        },
+        {
+          "name": "Group.002",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Root"
+        },
+        {
+          "name": "Spline Parameter",
+          "type": "GeometryNodeSplineParameter",
+          "group": null
+        },
+        {
+          "name": "Group",
+          "type": "GeometryNodeGroup",
+          "group": "shape_range"
+        },
+        {
+          "name": "Group Input.007",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Vector Math.016",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.014",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.013",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.015",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Group Input.005",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Switch",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Vector Math.012",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.017",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Position.001",
+          "type": "GeometryNodeInputPosition",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.003",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Reroute.012",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.010",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.011",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.013",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Separate Components",
+          "type": "GeometryNodeSeparateComponents",
+          "group": null
+        },
+        {
+          "name": "Set Spline Type",
+          "type": "GeometryNodeCurveSplineType",
+          "group": null
+        },
+        {
+          "name": "Spline Resolution",
+          "type": "GeometryNodeInputSplineResolution",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.002",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Reroute",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Set Position",
+          "type": "GeometryNodeSetPosition",
+          "group": null
+        },
+        {
+          "name": "Group Input.002",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Compare",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Reroute.003",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Accumulate Field",
+          "type": "GeometryNodeAccumulateField",
+          "group": null
+        },
+        {
+          "name": "Separate XYZ",
+          "type": "ShaderNodeSeparateXYZ",
+          "group": null
+        },
+        {
+          "name": "Curve Tangent",
+          "type": "GeometryNodeInputTangent",
+          "group": null
+        },
+        {
+          "name": "Normal",
+          "type": "GeometryNodeInputNormal",
+          "group": null
+        },
+        {
+          "name": "Vector Math.003",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.002",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.004",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.010",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.011",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Random Value",
+          "type": "FunctionNodeRandomValue",
+          "group": null
+        },
+        {
+          "name": "Switch.001",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Reroute.004",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group.005",
+          "type": "GeometryNodeGroup",
+          "group": "Restore Curve Segment Length"
+        },
+        {
+          "name": "Sample Index",
+          "type": "GeometryNodeSampleIndex",
+          "group": null
+        },
+        {
+          "name": "Accumulate Field.001",
+          "type": "GeometryNodeAccumulateField",
+          "group": null
+        },
+        {
+          "name": "Compare.002",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Boolean Math",
+          "type": "FunctionNodeBooleanMath",
+          "group": null
+        },
+        {
+          "name": "Group Input.008",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group Input.003",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Random Value.004",
+          "type": "FunctionNodeRandomValue",
+          "group": null
+        }
+      ]
+    },
+    {
+      "name": "Roll Hair Curves",
+      "type": "NODES",
+      "viewport": true,
+      "render": true,
+      "props": {},
+      "group": "Roll Hair Curves",
+      "sockets": [
+        {
+          "name": "Geometry",
+          "identifier": "Output_1",
+          "socketType": "NodeSocketGeometry",
+          "inout": "OUTPUT",
+          "default": null
+        },
+        {
+          "name": "Geometry",
+          "identifier": "Input_0",
+          "socketType": "NodeSocketGeometry",
+          "inout": "INPUT",
+          "default": null
+        },
+        {
+          "name": "Factor",
+          "identifier": "Input_10",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 1.0
+        },
+        {
+          "name": "Subdivision",
+          "identifier": "Input_13",
+          "socketType": "NodeSocketInt",
+          "inout": "INPUT",
+          "default": 1
+        },
+        {
+          "name": "Variation Level",
+          "identifier": "Input_11",
+          "socketType": "NodeSocketInt",
+          "inout": "INPUT",
+          "default": 10
+        },
+        {
+          "name": "Roll Length",
+          "identifier": "Input_2",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.10000000149011612
+        },
+        {
+          "name": "Roll Radius",
+          "identifier": "Input_3",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.05000000074505806
+        },
+        {
+          "name": "Roll Depth",
+          "identifier": "Input_9",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.0
+        },
+        {
+          "name": "Roll Taper",
+          "identifier": "Input_4",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.0
+        },
+        {
+          "name": "Retain Overall Shape",
+          "identifier": "Input_5",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.0
+        },
+        {
+          "name": "Roll Direction",
+          "identifier": "Input_7",
+          "socketType": "NodeSocketVector",
+          "inout": "INPUT",
+          "default": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "Random Orientation",
+          "identifier": "Input_6",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.5
+        },
+        {
+          "name": "Seed",
+          "identifier": "Input_8",
+          "socketType": "NodeSocketInt",
+          "inout": "INPUT",
+          "default": 0
+        },
+        {
+          "name": "Preserve Length",
+          "identifier": "Input_12",
+          "socketType": "NodeSocketBool",
+          "inout": "INPUT",
+          "default": false
+        }
+      ],
+      "objectRefs": [],
+      "nodes": [
+        {
+          "name": "Frame.008",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.007",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.006",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.004",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.001",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.009",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.010",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.011",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.002",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.005",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.012",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.003",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Reroute.015",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.016",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.017",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.018",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Compare.005",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Reroute.019",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Switch.004",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Set Spline Type",
+          "type": "GeometryNodeCurveSplineType",
+          "group": null
+        },
+        {
+          "name": "Set Spline Resolution",
+          "type": "GeometryNodeSetSplineResolution",
+          "group": null
+        },
+        {
+          "name": "Separate Components",
+          "type": "GeometryNodeSeparateComponents",
+          "group": null
+        },
+        {
+          "name": "Group Input.022",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Reroute.006",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group.004",
+          "type": "GeometryNodeGroup",
+          "group": "Smooth Hair Curves"
+        },
+        {
+          "name": "Capture Attribute.002",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.001",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.003",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Sample Curve",
+          "type": "GeometryNodeSampleCurve",
+          "group": null
+        },
+        {
+          "name": "Group Input.023",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Set Position.002",
+          "type": "GeometryNodeSetPosition",
+          "group": null
+        },
+        {
+          "name": "Compare.004",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Join Geometry",
+          "type": "GeometryNodeJoinGeometry",
+          "group": null
+        },
+        {
+          "name": "Group Output",
+          "type": "NodeGroupOutput",
+          "group": null
+        },
+        {
+          "name": "Reroute.010",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.011",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.013",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.014",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.029",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.008",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Vector Math.027",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.029",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.026",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Combine XYZ",
+          "type": "ShaderNodeCombineXYZ",
+          "group": null
+        },
+        {
+          "name": "Reroute.012",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Curve Tangent.002",
+          "type": "GeometryNodeInputTangent",
+          "group": null
+        },
+        {
+          "name": "Normal.001",
+          "type": "GeometryNodeInputNormal",
+          "group": null
+        },
+        {
+          "name": "Reroute.023",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Vector Math.032",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Reroute.020",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Vector Math.025",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Position.005",
+          "type": "GeometryNodeInputPosition",
+          "group": null
+        },
+        {
+          "name": "Reroute.022",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group Input.007",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Reroute.028",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Math.015",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Random Value",
+          "type": "FunctionNodeRandomValue",
+          "group": null
+        },
+        {
+          "name": "Group.007",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Info"
+        },
+        {
+          "name": "Group Input.004",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Vector Math.007",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Reroute.009",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Vector Math.008",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Compare.001",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Vector Math.009",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Switch",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Vector Rotate",
+          "type": "ShaderNodeVectorRotate",
+          "group": null
+        },
+        {
+          "name": "Evaluate on Domain.004",
+          "type": "GeometryNodeFieldOnDomain",
+          "group": null
+        },
+        {
+          "name": "Group Input.009",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group.005",
+          "type": "GeometryNodeGroup",
+          "group": "Restore Curve Segment Length"
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Math.007",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Math.006",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Math.004",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Reroute",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.004",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.002",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.005",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.003",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.006",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Math.008",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Reroute.004",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Position",
+          "type": "GeometryNodeInputPosition",
+          "group": null
+        },
+        {
+          "name": "Mix.001",
+          "type": "ShaderNodeMix",
+          "group": null
+        },
+        {
+          "name": "Group Input.002",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Vector Math.001",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Reroute.005",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.008",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.001",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Math.017",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Group Input.006",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Reroute.027",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group Input.010",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Set Position",
+          "type": "GeometryNodeSetPosition",
+          "group": null
+        },
+        {
+          "name": "Compare.003",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Boolean Math",
+          "type": "FunctionNodeBooleanMath",
+          "group": null
+        },
+        {
+          "name": "Mix.006",
+          "type": "ShaderNodeMix",
+          "group": null
+        },
+        {
+          "name": "Position.006",
+          "type": "GeometryNodeInputPosition",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.007",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Position.004",
+          "type": "GeometryNodeInputPosition",
+          "group": null
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Info"
+        },
+        {
+          "name": "Math.009",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Reroute.026",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group Input.012",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group Input.011",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Math.016",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Group.001",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Info"
+        },
+        {
+          "name": "Evaluate on Domain.001",
+          "type": "GeometryNodeFieldOnDomain",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.009",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Spline Resolution",
+          "type": "GeometryNodeInputSplineResolution",
+          "group": null
+        },
+        {
+          "name": "Set Spline Type.001",
+          "type": "GeometryNodeCurveSplineType",
+          "group": null
+        },
+        {
+          "name": "Reroute.025",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.024",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group.003",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Segment"
+        },
+        {
+          "name": "Accumulate Field",
+          "type": "GeometryNodeAccumulateField",
+          "group": null
+        },
+        {
+          "name": "Group.002",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Info"
+        },
+        {
+          "name": "Math.014",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Math.013",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Switch.001",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Group Input.008",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Compare.002",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Vector Math.014",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Normal",
+          "type": "GeometryNodeInputNormal",
+          "group": null
+        },
+        {
+          "name": "Curve Tangent.001",
+          "type": "GeometryNodeInputTangent",
+          "group": null
+        },
+        {
+          "name": "Separate XYZ",
+          "type": "ShaderNodeSeparateXYZ",
+          "group": null
+        },
+        {
+          "name": "Vector Math.016",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.030",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.031",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.013",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.012",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Subdivide Curve.004",
+          "type": "GeometryNodeSubdivideCurve",
+          "group": null
+        },
+        {
+          "name": "Math.022",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Math.023",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Group Input.014",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Reroute.007",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Compare",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Reroute.031",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.021",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Spline Parameter",
+          "type": "GeometryNodeSplineParameter",
+          "group": null
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Reroute.003",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.002",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Evaluate on Domain",
+          "type": "GeometryNodeFieldOnDomain",
+          "group": null
+        },
+        {
+          "name": "Group Input.005",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Math.012",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Math.005",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix",
+          "group": null
+        },
+        {
+          "name": "Group Input.001",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Math.011",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Math.010",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Reroute.030",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group Input.003",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Random Value.004",
+          "type": "FunctionNodeRandomValue",
+          "group": null
+        }
+      ]
+    },
+    {
+      "name": "Clump Hair Curves",
+      "type": "NODES",
+      "viewport": true,
+      "render": true,
+      "props": {},
+      "group": "Clump Hair Curves",
+      "sockets": [
+        {
+          "name": "Geometry",
+          "identifier": "Output_1",
+          "socketType": "NodeSocketGeometry",
+          "inout": "OUTPUT",
+          "default": null
+        },
+        {
+          "name": "Guide Index",
+          "identifier": "Output_17",
+          "socketType": "NodeSocketInt",
+          "inout": "OUTPUT",
+          "default": 0
+        },
+        {
+          "name": "Geometry",
+          "identifier": "Input_0",
+          "socketType": "NodeSocketGeometry",
+          "inout": "INPUT",
+          "default": null
+        },
+        {
+          "name": "Guide Index",
+          "identifier": "Input_16",
+          "socketType": "NodeSocketInt",
+          "inout": "INPUT",
+          "default": -987654
+        },
+        {
+          "name": "Guide Distance",
+          "identifier": "Input_9",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.10000000149011612
+        },
+        {
+          "name": "Guide Mask",
+          "identifier": "Input_19",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 1.0
+        },
+        {
+          "name": "Existing Guide Map",
+          "identifier": "Input_8",
+          "socketType": "NodeSocketBool",
+          "inout": "INPUT",
+          "default": true
+        },
+        {
+          "name": "Factor",
+          "identifier": "Input_7",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 1.0
+        },
+        {
+          "name": "Shape",
+          "identifier": "Input_6",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.5
+        },
+        {
+          "name": "Tip Spread",
+          "identifier": "Input_10",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.0
+        },
+        {
+          "name": "Clump Offset",
+          "identifier": "Input_13",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.0
+        },
+        {
+          "name": "Distance Falloff",
+          "identifier": "Input_12",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.0
+        },
+        {
+          "name": "Distance Threshold",
+          "identifier": "Input_11",
+          "socketType": "NodeSocketFloat",
+          "inout": "INPUT",
+          "default": 0.0
+        },
+        {
+          "name": "Seed",
+          "identifier": "Input_14",
+          "socketType": "NodeSocketInt",
+          "inout": "INPUT",
+          "default": 0
+        },
+        {
+          "name": "Preserve Length",
+          "identifier": "Input_15",
+          "socketType": "NodeSocketBool",
+          "inout": "INPUT",
+          "default": false
+        }
+      ],
+      "objectRefs": [],
+      "nodes": [
+        {
+          "name": "Frame.001",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.003",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.005",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.006",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.007",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.002",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Frame.004",
+          "type": "NodeFrame",
+          "group": null
+        },
+        {
+          "name": "Group Input.003",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Reroute.014",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.015",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.013",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.012",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Separate Components",
+          "type": "GeometryNodeSeparateComponents",
+          "group": null
+        },
+        {
+          "name": "Group Output.001",
+          "type": "NodeGroupOutput",
+          "group": null
+        },
+        {
+          "name": "Join Geometry.001",
+          "type": "GeometryNodeJoinGeometry",
+          "group": null
+        },
+        {
+          "name": "Reroute.016",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.017",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.019",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.018",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Position.001",
+          "type": "GeometryNodeInputPosition",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.002",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Spline Resolution",
+          "type": "GeometryNodeInputSplineResolution",
+          "group": null
+        },
+        {
+          "name": "Set Spline Type.002",
+          "type": "GeometryNodeCurveSplineType",
+          "group": null
+        },
+        {
+          "name": "Reroute.021",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Switch.006",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Compare.004",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Set Spline Resolution.001",
+          "type": "GeometryNodeSetSplineResolution",
+          "group": null
+        },
+        {
+          "name": "Set Spline Type.001",
+          "type": "GeometryNodeCurveSplineType",
+          "group": null
+        },
+        {
+          "name": "Reroute.025",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group.005",
+          "type": "GeometryNodeGroup",
+          "group": "Restore Curve Segment Length"
+        },
+        {
+          "name": "Group Input.010",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Reroute.003",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.005",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.002",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.010",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.022",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.023",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.024",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Sample Curve",
+          "type": "GeometryNodeSampleCurve",
+          "group": null
+        },
+        {
+          "name": "Spline Parameter",
+          "type": "GeometryNodeSplineParameter",
+          "group": null
+        },
+        {
+          "name": "Vector Math.001",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.002",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Separate XYZ",
+          "type": "ShaderNodeSeparateXYZ",
+          "group": null
+        },
+        {
+          "name": "Vector Math.006",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Evaluate on Domain",
+          "type": "GeometryNodeFieldOnDomain",
+          "group": null
+        },
+        {
+          "name": "Combine XYZ",
+          "type": "ShaderNodeCombineXYZ",
+          "group": null
+        },
+        {
+          "name": "Vector Math.004",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.005",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Reroute",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Vector Math.008",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.003",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Sample Curve.001",
+          "type": "GeometryNodeSampleCurve",
+          "group": null
+        },
+        {
+          "name": "Evaluate at Index",
+          "type": "GeometryNodeFieldAtIndex",
+          "group": null
+        },
+        {
+          "name": "Group",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Root"
+        },
+        {
+          "name": "Reroute.001",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.008",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.007",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.026",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Reroute.027",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Evaluate on Domain.001",
+          "type": "GeometryNodeFieldOnDomain",
+          "group": null
+        },
+        {
+          "name": "Sample Index",
+          "type": "GeometryNodeSampleIndex",
+          "group": null
+        },
+        {
+          "name": "Accumulate Field.002",
+          "type": "GeometryNodeAccumulateField",
+          "group": null
+        },
+        {
+          "name": "Group Input.002",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Reroute.032",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Boolean Math.001",
+          "type": "FunctionNodeBooleanMath",
+          "group": null
+        },
+        {
+          "name": "Switch.001",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Named Attribute.003",
+          "type": "GeometryNodeInputNamedAttribute",
+          "group": null
+        },
+        {
+          "name": "Group Input.013",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group Input.004",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Reroute.006",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Compare.003",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Group Input.011",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Accumulate Field",
+          "type": "GeometryNodeAccumulateField",
+          "group": null
+        },
+        {
+          "name": "Switch.003",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Compare.001",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Group.003",
+          "type": "GeometryNodeGroup",
+          "group": "Create Guide Index Map"
+        },
+        {
+          "name": "Boolean Math.002",
+          "type": "FunctionNodeBooleanMath",
+          "group": null
+        },
+        {
+          "name": "Sample Index.001",
+          "type": "GeometryNodeSampleIndex",
+          "group": null
+        },
+        {
+          "name": "Reroute.029",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Capture Attribute.001",
+          "type": "GeometryNodeCaptureAttribute",
+          "group": null
+        },
+        {
+          "name": "Position",
+          "type": "GeometryNodeInputPosition",
+          "group": null
+        },
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix",
+          "group": null
+        },
+        {
+          "name": "Vector Math.009",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Math.002",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Set Position",
+          "type": "GeometryNodeSetPosition",
+          "group": null
+        },
+        {
+          "name": "Group Input.001",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.013",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.007",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.011",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Reroute.020",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Math.001",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Reroute.004",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Vector Math.025",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Switch.002",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Vector Math.020",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.021",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.022",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.015",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.016",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.018",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.019",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.014",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Switch",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        },
+        {
+          "name": "Sample Curve.002",
+          "type": "GeometryNodeSampleCurve",
+          "group": null
+        },
+        {
+          "name": "Reroute.011",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Vector Math.017",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Random Value",
+          "type": "FunctionNodeRandomValue",
+          "group": null
+        },
+        {
+          "name": "Vector Math.026",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Separate XYZ.002",
+          "type": "ShaderNodeSeparateXYZ",
+          "group": null
+        },
+        {
+          "name": "Separate XYZ.001",
+          "type": "ShaderNodeSeparateXYZ",
+          "group": null
+        },
+        {
+          "name": "Reroute.009",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Vector Math.012",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Group Input.009",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group Input.012",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group Input.008",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Random Value.001",
+          "type": "FunctionNodeRandomValue",
+          "group": null
+        },
+        {
+          "name": "Reroute.028",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Evaluate at Index.001",
+          "type": "GeometryNodeFieldAtIndex",
+          "group": null
+        },
+        {
+          "name": "Group.006",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Info"
+        },
+        {
+          "name": "Group.007",
+          "type": "GeometryNodeGroup",
+          "group": "Curve Info"
+        },
+        {
+          "name": "Random Value.004",
+          "type": "FunctionNodeRandomValue",
+          "group": null
+        },
+        {
+          "name": "Group Input.005",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Compare",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Compare.002",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Spline Parameter.001",
+          "type": "GeometryNodeSplineParameter",
+          "group": null
+        },
+        {
+          "name": "Group Input",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group.001",
+          "type": "GeometryNodeGroup",
+          "group": "shape_range"
+        },
+        {
+          "name": "Math.003",
+          "type": "ShaderNodeMath",
+          "group": null
+        },
+        {
+          "name": "Vector Math.010",
+          "type": "ShaderNodeVectorMath",
+          "group": null
+        },
+        {
+          "name": "Compare.006",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Compare.007",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Reroute.030",
+          "type": "NodeReroute",
+          "group": null
+        },
+        {
+          "name": "Group Input.007",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Group Input.006",
+          "type": "NodeGroupInput",
+          "group": null
+        },
+        {
+          "name": "Compare.005",
+          "type": "FunctionNodeCompare",
+          "group": null
+        },
+        {
+          "name": "Map Range.001",
+          "type": "ShaderNodeMapRange",
+          "group": null
+        },
+        {
+          "name": "Boolean Math",
+          "type": "FunctionNodeBooleanMath",
+          "group": null
+        },
+        {
+          "name": "Switch.004",
+          "type": "GeometryNodeSwitch",
+          "group": null
+        }
+      ]
+    }
+  ]
+}

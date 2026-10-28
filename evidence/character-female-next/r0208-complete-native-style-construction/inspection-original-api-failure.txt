@@ -1,0 +1,11 @@
+00:00.718  blend            | Read blend: "C:\Users\USER\AppData\Local\Temp\Aevrynd-hair-editor-reference\hair.blend"
+Traceback (most recent call last):
+  File "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\inspect-female-next-r0208-native-style-stages.py", line 10, in <module>
+    row={'name':md.name,'type':md.type,'viewport':md.show_viewport,'render':md.show_render,'props':{k:val(md[k]) for k in md.keys()}}
+                                                                                                                          ~~~~~~~^^
+TypeError: bpy_struct.keys(): this type doesn't support IDProperties
+
+Error: script failed, file: '\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\inspect-female-next-r0208-native-style-stages.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

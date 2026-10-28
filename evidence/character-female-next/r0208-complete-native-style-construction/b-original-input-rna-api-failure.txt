@@ -1,0 +1,11 @@
+00:00.532  blend            | Read blend: "C:\Users\USER\AppData\Local\Temp\Aevrynd-hair-editor-reference\hair.blend"
+Traceback (most recent call last):
+  File "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0208-b-effective-native-style.py", line 17, in <module>
+    v=getattr(value,prop.identifier);fields[prop.identifier]=list(v) if prop.is_array else v
+                                                                        ^^^^^^^^^^^^^
+AttributeError: 'EnumProperty' object has no attribute 'is_array'
+
+Error: script failed, file: '\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0208-b-effective-native-style.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
