@@ -1,0 +1,21 @@
+00:12.953  blend            | Read blend: "C:\Users\USER\AppData\Local\Temp\Aevrynd-hair-editor-reference\hair.blend"
+00:14.969  blend            | Read blend: "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0205-source\aevrynd-female-next-r0205-rejected-source-domain-diagnostic.blend"
+\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\prepare-female-next-r0206-operative-anatomical-map.py:41: DeprecationWarning: Arrays of 2-dimensional vectors are deprecated. Use arrays of 3-dimensional vectors instead. (deprecated in NumPy 2.0)
+  UV=np.zeros((len(xyz),2));UV[B]=np.column_stack([np.cos(angles),np.sin(angles)]);edges=np.unique(np.sort(np.vstack([faces[:,[0,1]],faces[:,[1,2]],faces[:,[2,0]]]),axis=1),axis=0);adj=np.zeros((len(xyz),len(xyz)));adj[edges[:,0],edges[:,1]]=1;adj[edges[:,1],edges[:,0]]=1;interior=np.setdiff1d(np.arange(len(xyz)),B);lap=np.diag(adj.sum(1))-adj;UV[interior]=np.linalg.solve(lap[np.ix_(interior,interior)],adj[np.ix_(interior,B)]@UV[B]);area=np.cross(UV[faces[:,1]]-UV[faces[:,0]],UV[faces[:,2]]-UV[faces[:,0]]);sign=1 if np.median(area)>0 else -1;assert np.min(area*sign)>1e-12,('Folded cap parameterization',float(np.min(area*sign)));return xyz,faces,UV,B,angles,lookup,actualIDs,[int(B[i]) for i in loc],float(np.min(area*sign))
+Traceback (most recent call last):
+  File "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\prepare-female-next-r0206-operative-anatomical-map.py", line 53, in <module>
+    mappedVertices,_,_=targetAt(suv);sourceParamRoots=np.einsum('ni,nij->nj',sourceBC,suv[slookup[T[sourceFaces]]]);targetLogical,targetFaces,targetBC=targetAt(sourceParamRoots);centre=sv.mean(0);scale=.1;X=(sv-centre)/scale;pair=np.linalg.norm(X[:,None]-X[None,:],axis=2);kernel=pair*pair*np.log(np.maximum(pair,1e-12));polynomial=np.column_stack([np.ones(len(X)),X]);system=np.block([[kernel,polynomial],[polynomial.T,np.zeros((4,4))]]);coeff=np.linalg.solve(system,np.vstack([mappedVertices,np.zeros((4,3))]))
+                       ~~~~~~~~^^^^^
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+  File "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\prepare-female-next-r0206-operative-anatomical-map.py", line 51, in targetAt
+    fi,bc=uvhit(tree,uvp,tuv[tt]);faces.append(fi);bary.append(bc)
+          ~~~~~^^^^^^^^^^^^^^^^^^
+  File "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\prepare-female-next-r0206-operative-anatomical-map.py", line 20, in uvhit
+    hit,no,face,d=tree.find_nearest(Vector((float(q[0]),float(q[1]),0)));assert d<2e-6,('UV outside triangulated cap',q,d)
+                                                                                ^^^^^^
+AssertionError: ('UV outside triangulated cap', array([-0.95528924, -0.29513729]), 2.718390078371158e-06)
+
+Error: script failed, file: '\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\prepare-female-next-r0206-operative-anatomical-map.py', exiting.
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
