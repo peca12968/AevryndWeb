@@ -1,0 +1,15 @@
+00:00.735  blend            | Read blend: "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0213-source\aevrynd-female-next-r0213-b-point-up-corrected-groom.blend"
+F:\AevryndEvidence\CharacterTemp\build-r216.py:80: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  at=cu.attributes.get('radius') or cu.attributes.new('radius','FLOAT','POINT');radii=np.tile(np.linspace(.000055,.000015,K,dtype='f4'),N);at.data.foreach_set('value',radii);mat=bpy.data.materials.new('AFN216_FIXED_BROWN_PHYSICAL_FIBRE');mat.use_nodes=True;nodes=mat.node_tree.nodes;nodes.clear();shader=nodes.new('ShaderNodeBsdfHairPrincipled');shader.parametrization='COLOR';shader.inputs['Color'].default_value=(.055,.020,.009,1);shader.inputs['Roughness'].default_value=.35;shader.inputs['Radial Roughness'].default_value=.45;output=nodes.new('ShaderNodeOutputMaterial');mat.node_tree.links.new(shader.outputs[0],output.inputs['Surface']);cu.materials.append(mat)
+00:22.531  render           | Saved: 'F:\AevryndEvidence\r0216-current-scalp-volume-paths\matched-baseline-original-working-hair-face.png'
+00:26.078  render           | Saved: 'F:\AevryndEvidence\r0216-current-scalp-volume-paths\matched-baseline-original-working-hair-body-face.png'
+00:31.750  render           | Saved: 'F:\AevryndEvidence\r0216-current-scalp-volume-paths\matched-current-space-rooted-path-groom-face.png'
+00:35.110  render           | Saved: 'F:\AevryndEvidence\r0216-current-scalp-volume-paths\matched-current-space-rooted-path-groom-body-face.png'
+00:40.656  render           | Saved: 'F:\AevryndEvidence\r0216-current-scalp-volume-paths\matched-current-space-rooted-path-groom-profile.png'
+00:46.500  render           | Saved: 'F:\AevryndEvidence\r0216-current-scalp-volume-paths\matched-current-space-rooted-path-groom-back.png'
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+資訊: 已儲存為「aevrynd-female-next-r0216-current-space-rooted-path-groom.blend」
+R216_COMPLETE_ACTUAL_SCALP_VOLUME_PATH_GROOM_AND_VIEWS_SAVED
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
