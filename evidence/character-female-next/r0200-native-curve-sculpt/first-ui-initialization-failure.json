@@ -1,0 +1,7 @@
+{
+  "UTC": "2026-10-25T13:55:36.067474+00:00",
+  "originalHandle": 61259,
+  "observed": "Original Blender GUI process remains live, startup Python context.screen was None immediately after open_mainfile. No actual stroke occurred, no isolated working file saved, input geometry unchanged.",
+  "failedScriptSHA256": "7be811672891570f495d9b23d3af860c72095d97bd7fa7c248258c56e80d0376",
+  "correction": "Continue the SAME existing GUI process after actual returned window observation; execute deferred initialization in a real editor context. No restart or clock reset."
+}
