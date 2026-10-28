@@ -1,0 +1,12 @@
+00:05.625  blend            | Read blend: "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0212-source\aevrynd-female-next-r0212-rejected-volume-field-diagnostic.blend"
+Traceback (most recent call last):
+  File "\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0213-section-cage.py", line 37, in <module>
+    assert max(birthGap)<.035;bf=np.array(bf,'i4');bbc=np.array(bbc);bl=np.array(bl);bn=np.array(bn);shaft=bl+bn*.000102;evskin=skin.evaluated_get(bpy.context.evaluated_depsgraph_get()).data;evskin.calc_loop_triangles();loops=np.array([z.loops[:] for z in evskin.loop_triangles]);uvName='AngelicaOriginalUV';uvData=h.arr(evskin.uv_layers[uvName].data,'uv',len(evskin.uv_layers[uvName].data),2)[loops];guv=np.einsum('ni,nij->nj',gbc,uvData[gf]);buv=np.einsum('ni,nij->nj',bbc,uvData[bf]);assert len(np.unique(buv.astype('f4'),axis=0))==N
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: '\\?\Volume{3287fe09-d9df-461f-84e7-46cb93df6298}\Aevrynd\C\Users\USER\AevryndCharacterWorkspace-r0158\scripts\character-next\build-female-next-r0213-section-cage.py', exiting.
+資訊: Read library: 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', 'C:\Users\USER\AevryndCharacterWorkspace-r0158\assets-source\aevrynd-character\female-next\r0152-source\aevrynd-female-next-r0152-a-layered-native-groom.blend', parent '<direct>'
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
