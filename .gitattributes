@@ -185,3 +185,8 @@ evidence/character-female-next/r0220-native-direct-lock-sculpt/** -filter -diff 
 assets-source/aevrynd-character/female-next/r0482-source/*.blend filter=lfs diff=lfs merge=lfs -text
 assets-source/aevrynd-character/female-next/r0482-source/data/*.npz filter=lfs diff=lfs merge=lfs -text
 evidence/character-female-next/r0482-global-groom-separation/** -filter -diff -merge -text
+
+# r0483 rejected graduated-cut and diagonal-crown-flow archive
+assets-source/aevrynd-character/female-next/r0483-source/*.blend filter=lfs diff=lfs merge=lfs -text
+assets-source/aevrynd-character/female-next/r0483-source/data/*.npz filter=lfs diff=lfs merge=lfs -text
+evidence/character-female-next/r0483-layered-bob-rest/** -filter -diff -merge -text
