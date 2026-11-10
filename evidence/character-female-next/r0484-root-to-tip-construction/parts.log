@@ -1,0 +1,35 @@
+def scene_parts(proof):
+    scene, objects = r466['a'].open_scene(proof)
+    wet,lashes,parts = r466['layers'](objects)
+    hair = bpy.data.objects[groom.HAIR]
+    group = hair.modifiers[0].node_group
+    assert hair.type == 'CURVES' and group is not None and not hair.hide_render
+    return scene, objects, wet, lashes, parts, hair, group
+
+def state(scene, objects, wet, lashes, frame, phase=0.):
+    scene.frame_set(int(frame),subframe=frame-int(frame))
+    r468['choose'](objects,wet,lashes,'A',phase)
+
+{
+  "world": {
+    "shape": [
+      57424,
+      3
+    ],
+    "dtype": "float64",
+    "min": -0.13767174757564682,
+    "max": 1.5927363607971312
+  },
+  "triangles": {
+    "shape": [
+      81789,
+      3
+    ],
+    "dtype": "int32",
+    "min": 0.0,
+    "max": 57423.0
+  }
+}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

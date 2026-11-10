@@ -190,3 +190,8 @@ evidence/character-female-next/r0482-global-groom-separation/** -filter -diff -m
 assets-source/aevrynd-character/female-next/r0483-source/*.blend filter=lfs diff=lfs merge=lfs -text
 assets-source/aevrynd-character/female-next/r0483-source/data/*.npz filter=lfs diff=lfs merge=lfs -text
 evidence/character-female-next/r0483-layered-bob-rest/** -filter -diff -merge -text
+
+# r0484 rejected spatial and volumetric root-to-tip reconstruction archive
+assets-source/aevrynd-character/female-next/r0484-source/*.blend filter=lfs diff=lfs merge=lfs -text
+assets-source/aevrynd-character/female-next/r0484-source/data/*.npz filter=lfs diff=lfs merge=lfs -text
+evidence/character-female-next/r0484-root-to-tip-construction/** -filter -diff -merge -text

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "F:\AevryndEvidence\r0484-root-to-tip-construction\author-volume-r0484.py", line 94, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "F:\AevryndEvidence\r0484-root-to-tip-construction\author-volume-r0484.py", line 48, in main
+    r=np.sqrt((rank+.5)/len(members));angle=np.arctan2(xy[:,1],xy[:,0])
+                                                       ~~^^^^^
+IndexError: index 1 is out of bounds for axis 1 with size 1
+
+Error: script failed, file: 'F:\AevryndEvidence\r0484-root-to-tip-construction\author-volume-r0484.py', exiting.
