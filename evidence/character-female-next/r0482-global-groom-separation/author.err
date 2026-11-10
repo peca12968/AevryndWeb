@@ -1,0 +1,12 @@
+F:\AevryndEvidence\r0482-global-groom-separation\author-r0482.py:47: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  assert hairmat.name==MATERIAL and hairmat.use_nodes
+Traceback (most recent call last):
+  File "F:\AevryndEvidence\r0482-global-groom-separation\author-r0482.py", line 107, in <module>
+    main()
+    ~~~~^^
+  File "F:\AevryndEvidence\r0482-global-groom-separation\author-r0482.py", line 86, in main
+    assert groom.arr_sha(a)==row['baryHash'] and data.surface.name==skin.name
+                                                                    ^^^^^^^^^
+ReferenceError: StructRNA of type Object has been removed
+
+Error: script failed, file: 'F:\AevryndEvidence\r0482-global-groom-separation\author-r0482.py', exiting.

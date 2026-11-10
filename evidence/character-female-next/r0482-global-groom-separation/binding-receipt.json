@@ -1,0 +1,42 @@
+{
+  "variants": {
+    "A": {
+      "file": "bound-A.npz",
+      "sha256": "df445aeb94f2b3e5dbe5c3cb6883fe678c9bf96ba92f5ae17721e801c9467c4d",
+      "positionHash": "7a1248b530eec56690937a3c328d51fa2bace8ef541aa0dad5b0f4bb97d0d1f8",
+      "changedTriangleIDs": 22267,
+      "maxReconstructedRootErrorMm": 1.8189894035458565e-09,
+      "medianRootNormalOffsetMm": 0.1200002059340477,
+      "minRootSphereScalpGapMm": 0.08480357378721237
+    },
+    "B": {
+      "file": "bound-B.npz",
+      "sha256": "d84afa144d9c2df6d5a447a95db97f1a0fc94ac84df756c18ab2448e1fa281d4",
+      "positionHash": "49af171e3e2b55742f87e25e8ff9ef3f66ba8e6cc3f3127bc8d4e39cb4e3a76c",
+      "changedTriangleIDs": 22267,
+      "maxReconstructedRootErrorMm": 1.8189894035458565e-09,
+      "medianRootNormalOffsetMm": 0.1200002059340477,
+      "minRootSphereScalpGapMm": 0.08480357378721237
+    }
+  },
+  "controlRootBinding": {
+    "file": "bound-base-roots.npz",
+    "sha256": "e9c2165642ceb8a2635575d1c4be3e234bed2f690cc5a1f0ed73288189b273ad",
+    "maxReconstructedRootErrorMm": 1.8189894035458565e-09,
+    "medianRootNormalOffsetMm": 0.1200002133846283,
+    "minRootSphereScalpGapMm": 0.0848439484834671
+  },
+  "surfaceReceiptSha256": "7e542989e2e440d536709596c6f380bae79e610056b4ef232ceaaf7f368eaaf1",
+  "skinStamp": [
+    "1e2995466778fbaaffdc436682b71b213070bc47106b02b122add29f8e1a864a",
+    "a145281ad325d8cfe5eb6658a1289e9e500847e4265b695dfbf9b22164ee73a7"
+  ],
+  "schema": {
+    "triangleAttribute": "AFN409_SKIN_TRIANGLE_ID",
+    "barycentricAttribute": "AFN409_SKIN_BARYCENTRIC",
+    "normalOffsetAttribute": "AEVRYND_ROOT_NORMAL_OFFSET",
+    "localOffsetAttribute": "AEVRYND_ROOT_OFFSET_LOCAL",
+    "offsetUnits": "metres"
+  },
+  "scope": "Every root is remapped to the actual archived skin triangle order. Reconstruction uses the triangle vertices, barycentric weights, orthonormal triangle frame and stored local vector offset. U follows vertex 0 to 1, N is the geometric outward normal, V is N cross U. Hair positions and radii are unchanged."
+}

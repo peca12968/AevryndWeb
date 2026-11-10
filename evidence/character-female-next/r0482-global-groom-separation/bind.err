@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "F:\AevryndEvidence\r0482-global-groom-separation\bind-r0482.py", line 61, in <module>
+    main()
+    ~~~~^^
+  File "F:\AevryndEvidence\r0482-global-groom-separation\bind-r0482.py", line 42, in main
+    reference=roots.copy();faces,weights,offset,metrics=bind(tree,body,tri,roots,radius[:,0])
+                                                        ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\AevryndEvidence\r0482-global-groom-separation\bind-r0482.py", line 27, in bind
+    assert error.max()<.0000006,(error.max(),int(error.argmax()))
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: (np.float64(1.808124064635508e-05), 12560)
+
+Error: script failed, file: 'F:\AevryndEvidence\r0482-global-groom-separation\bind-r0482.py', exiting.

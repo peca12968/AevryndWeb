@@ -1,0 +1,61 @@
+{
+  "parent": {
+    "path": "F:\\AevryndEvidence\\r0480-lock-clearance-projection\\female-next-r0480-lock-clearance-projection-UNACCEPTED.blend",
+    "bytes": 2682495489,
+    "sha256": "64a4255eb33e92da009d87dfe27bdffda810388d90d17195d2e9afad6e1c0ec9"
+  },
+  "globalReceiptSha256": "08c4584eb52b62fcce4c6b531ed23de79233f1b08ff9807a1efa9ba71584cec0",
+  "variants": {
+    "A": {
+      "file": "surface-A.npz",
+      "sha256": "833d32367cd79e67ec53f0e29a3b6d526d189d48a46c17c957e611a338c5d00d",
+      "positionHash": "7a1248b530eec56690937a3c328d51fa2bace8ef541aa0dad5b0f4bb97d0d1f8",
+      "fullNeutralMinimumSkinEnvelopeMm": 8.421920938417315e-07,
+      "initialUncertifiedSpans": 3,
+      "finalUncertifiedSpans": 0,
+      "changedStrands": 3,
+      "maxSurfaceCorrectionMm": 0.03642859682440758,
+      "nearAxis": 6,
+      "finite": 83942,
+      "minHairSignedMm": -0.055318286681932796,
+      "history": [
+        {
+          "passNumber": 0,
+          "uncertifiedSpans": 3,
+          "minimumEnvelopeMm": -0.011322136968374252
+        },
+        {
+          "passNumber": 1,
+          "uncertifiedSpans": 0,
+          "minimumEnvelopeMm": 8.421920938417315e-07
+        }
+      ]
+    },
+    "B": {
+      "file": "surface-B.npz",
+      "sha256": "b016164ebdfa3031ef72b6d8bd1f5140cf74e88375ecd3a516729c6833623553",
+      "positionHash": "49af171e3e2b55742f87e25e8ff9ef3f66ba8e6cc3f3127bc8d4e39cb4e3a76c",
+      "fullNeutralMinimumSkinEnvelopeMm": 3.637978807091713e-09,
+      "initialUncertifiedSpans": 3,
+      "finalUncertifiedSpans": 0,
+      "changedStrands": 3,
+      "maxSurfaceCorrectionMm": 0.03369637578725815,
+      "nearAxis": 2,
+      "finite": 111132,
+      "minHairSignedMm": -0.056294086350345184,
+      "history": [
+        {
+          "passNumber": 0,
+          "uncertifiedSpans": 3,
+          "minimumEnvelopeMm": -0.008837883360683918
+        },
+        {
+          "passNumber": 1,
+          "uncertifiedSpans": 0,
+          "minimumEnvelopeMm": 3.637978807091713e-09
+        }
+      ]
+    }
+  },
+  "scope": "All neutral skin spans certified using a distance lower bound with adaptive subdivision to 12 and a 10-micron guard. Local corrections touch the previously uncertified strands; root positions remain exact. Hair self-contact re-audited from span 0."
+}

@@ -1,0 +1,96 @@
+{
+  "spacingMm": 0.25,
+  "scope": "Neutral rear skin mesh with r480 B as the reference. Orthographic rays at 0 and 55 degrees to both sides, using nearest planar strand centre and interpolated radius. Rays sample potential line-of-sight skin coverage and do not equate to rendered pixels.",
+  "samples": {
+    "0": {
+      "gridOrigin": [
+        -0.050875,
+        1.411125
+      ],
+      "rays": 166464,
+      "baselineCovered": 132939,
+      "variants": {
+        "A": {
+          "interiorBlocksWithAtLeast87PctBaselineCoverage": 2724,
+          "newMajorOpenings": 0,
+          "newModerateOpenings": 0,
+          "covered": 133076,
+          "loss": 760,
+          "gain": 897,
+          "lossPctOfBaseline": 0.5716907754684479,
+          "gainPctOfBaseline": 0.6747455599936814
+        },
+        "B": {
+          "interiorBlocksWithAtLeast87PctBaselineCoverage": 2724,
+          "newMajorOpenings": 0,
+          "newModerateOpenings": 0,
+          "covered": 133056,
+          "loss": 669,
+          "gain": 786,
+          "lossPctOfBaseline": 0.5032383273531469,
+          "gainPctOfBaseline": 0.5912486177871054
+        }
+      }
+    },
+    "-55": {
+      "gridOrigin": [
+        -0.08118362563869269,
+        1.411125
+      ],
+      "rays": 166464,
+      "baselineCovered": 92573,
+      "variants": {
+        "A": {
+          "interiorBlocksWithAtLeast87PctBaselineCoverage": 3136,
+          "newMajorOpenings": 0,
+          "newModerateOpenings": 0,
+          "covered": 92718,
+          "loss": 497,
+          "gain": 642,
+          "lossPctOfBaseline": 0.5368736024542793,
+          "gainPctOfBaseline": 0.6935067460274594
+        },
+        "B": {
+          "interiorBlocksWithAtLeast87PctBaselineCoverage": 3136,
+          "newMajorOpenings": 0,
+          "newModerateOpenings": 0,
+          "covered": 92681,
+          "loss": 455,
+          "gain": 563,
+          "lossPctOfBaseline": 0.49150400224687546,
+          "gainPctOfBaseline": 0.6081686884944855
+        }
+      }
+    },
+    "55": {
+      "gridOrigin": [
+        -0.020566374361307302,
+        1.411125
+      ],
+      "rays": 166464,
+      "baselineCovered": 91578,
+      "variants": {
+        "A": {
+          "interiorBlocksWithAtLeast87PctBaselineCoverage": 3040,
+          "newMajorOpenings": 0,
+          "newModerateOpenings": 0,
+          "covered": 91717,
+          "loss": 510,
+          "gain": 649,
+          "lossPctOfBaseline": 0.556902312782546,
+          "gainPctOfBaseline": 0.7086854921487693
+        },
+        "B": {
+          "interiorBlocksWithAtLeast87PctBaselineCoverage": 3040,
+          "newMajorOpenings": 0,
+          "newModerateOpenings": 0,
+          "covered": 91712,
+          "loss": 453,
+          "gain": 587,
+          "lossPctOfBaseline": 0.49466028958920266,
+          "gainPctOfBaseline": 0.6409836423595187
+        }
+      }
+    }
+  }
+}

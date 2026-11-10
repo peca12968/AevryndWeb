@@ -180,3 +180,8 @@ assets-source/aevrynd-character/female-next/r0219-source/*.blend filter=lfs diff
 evidence/character-female-next/r0219-static-elastic-rod-rest/** -filter -diff -merge -text
 assets-source/aevrynd-character/female-next/r0220-source/*.blend filter=lfs diff=lfs merge=lfs -text
 evidence/character-female-next/r0220-native-direct-lock-sculpt/** -filter -diff -merge -text
+
+# r0482 rejected global rest-groom research archive
+assets-source/aevrynd-character/female-next/r0482-source/*.blend filter=lfs diff=lfs merge=lfs -text
+assets-source/aevrynd-character/female-next/r0482-source/data/*.npz filter=lfs diff=lfs merge=lfs -text
+evidence/character-female-next/r0482-global-groom-separation/** -filter -diff -merge -text

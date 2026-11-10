@@ -1,0 +1,264 @@
+{
+  "parent": {
+    "path": "F:\\AevryndEvidence\\r0480-lock-clearance-projection\\female-next-r0480-lock-clearance-projection-UNACCEPTED.blend",
+    "bytes": 2682495489,
+    "sha256": "64a4255eb33e92da009d87dfe27bdffda810388d90d17195d2e9afad6e1c0ec9"
+  },
+  "rootControl": {
+    "file": "root-separation-control.npz",
+    "sha256": "3760eda548d204cbb37cadeaf885a61017b77952b7ae40fbeedc3060adaba35f",
+    "originalRootSphereOverlaps": 110,
+    "remainingRootSphereOverlaps": 0,
+    "changedRoots": 271,
+    "maxMovementMm": 0.038874085781772115,
+    "maxSignedScalpOffsetErrorMm": 0.00011903193808393553,
+    "targetMarginMm": 0.008,
+    "passes": [
+      {
+        "passNumber": 0,
+        "actualOverlaps": 110,
+        "marginConflicts": 136
+      },
+      {
+        "passNumber": 1,
+        "actualOverlaps": 2,
+        "marginConflicts": 2
+      },
+      {
+        "passNumber": 2,
+        "actualOverlaps": 0,
+        "marginConflicts": 2
+      },
+      {
+        "passNumber": 3,
+        "actualOverlaps": 0,
+        "marginConflicts": 2
+      },
+      {
+        "passNumber": 4,
+        "actualOverlaps": 0,
+        "marginConflicts": 2
+      },
+      {
+        "passNumber": 5,
+        "actualOverlaps": 0,
+        "marginConflicts": 0
+      }
+    ],
+    "scope": "Root-placement control only. Changed roots carry new nearest skin-triangle and barycentric coordinates. Existing strand shafts, full bindings, rig and engine assets have not been regenerated from these roots."
+  },
+  "bodySource": {
+    "path": "F:\\AevryndEvidence\\r0470-independent-posterior-locks\\female-next-r0470-independent-posterior-locks-UNACCEPTED.blend",
+    "bytes": 2587543515,
+    "sha256": "0df59c7c77d860b07c07d9b8930f584422c189f8eb9ca44b9697f7dae44dc4c9"
+  },
+  "baseline": {
+    "label": "rest",
+    "pose": {
+      "label": "rest",
+      "name": "rest.f32",
+      "sha256": "c2a56e0c41114e2ef8a471ff47f5923151533252c36c62b1d552237ca036af26"
+    },
+    "segments": 1961649,
+    "BroadBoxPairs": 22275545,
+    "AdjacentSkipped": 1936873,
+    "finiteOverlapWitnesses": 512881,
+    "NearAxis": 7666,
+    "SameCurve": 3,
+    "UnresolvedRadiusBounds": 4742,
+    "MinSignedM": -6.860831764813736e-05,
+    "Deepest": {
+      "leftOrdinal": 1710,
+      "leftSegment": 1,
+      "rightOrdinal": 8573,
+      "rightSegment": 1,
+      "centerlineDistanceM": 7.280077949701802e-07,
+      "signedM": -6.860831764813736e-05,
+      "leftLocalM": [
+        -0.034659666145748745,
+        0.04502153231983335,
+        1.5053379698403255
+      ]
+    },
+    "versusRest": {
+      "retained": 512881,
+      "entered": 0,
+      "exited": 0,
+      "enteredNearAxis": 0,
+      "enteredSameCurve": 0,
+      "strandsInNewContacts": 0,
+      "firstNewNearAxisWitnesses": []
+    },
+    "elapsedSeconds": 1.0113306
+  },
+  "rootPatched": {
+    "label": "rest",
+    "pose": {
+      "label": "rest",
+      "name": "rest.f32",
+      "sha256": "861dca5bd3873ac807eb3954c39797c448afaa3625c3da289745d41180257b9f"
+    },
+    "segments": 1961649,
+    "BroadBoxPairs": 22275400,
+    "AdjacentSkipped": 1936873,
+    "finiteOverlapWitnesses": 512111,
+    "NearAxis": 7669,
+    "SameCurve": 3,
+    "UnresolvedRadiusBounds": 4750,
+    "MinSignedM": -6.85398617258624e-05,
+    "Deepest": {
+      "leftOrdinal": 19091,
+      "leftSegment": 1,
+      "rightOrdinal": 88,
+      "rightSegment": 2,
+      "centerlineDistanceM": 1.468607158824229e-07,
+      "signedM": -6.85398617258624e-05,
+      "leftLocalM": [
+        0.05580640271635101,
+        -0.07635829102301855,
+        1.541951520794376
+      ]
+    },
+    "versusRest": {
+      "retained": 512111,
+      "entered": 0,
+      "exited": 0,
+      "enteredNearAxis": 0,
+      "enteredSameCurve": 0,
+      "strandsInNewContacts": 0,
+      "firstNewNearAxisWitnesses": []
+    },
+    "elapsedSeconds": 1.084018
+  },
+  "variants": {
+    "A": {
+      "file": "global-A.npz",
+      "sha256": "57d14547b8d0bf41d21a679067580e033666b6f73fb1b0a3108496d0f5b1d482",
+      "selectedPass": 5,
+      "score": [
+        6,
+        83929
+      ],
+      "settings": {
+        "limitMm": 0.45,
+        "smoothing": 0.15,
+        "lengthStiffness": 0.23
+      },
+      "maxShiftFromSeedMm": 0.45002976059913635,
+      "arcLengthRatioP01P50P99": [
+        0.99984130859375,
+        1.00004243850708,
+        1.0005671381950378
+      ],
+      "spanLengthRatioP01P50P99": [
+        0.9993075728416443,
+        1.0,
+        1.0015334510803222
+      ],
+      "trials": [
+        {
+          "passNumber": 1,
+          "nearAxis": 607,
+          "finite": 200585,
+          "minSignedMm": -0.0675226421877094
+        },
+        {
+          "passNumber": 2,
+          "nearAxis": 19,
+          "finite": 137783,
+          "minSignedMm": -0.06147162672584343
+        },
+        {
+          "passNumber": 3,
+          "nearAxis": 13,
+          "finite": 109645,
+          "minSignedMm": -0.05732682591266195
+        },
+        {
+          "passNumber": 4,
+          "nearAxis": 12,
+          "finite": 94107,
+          "minSignedMm": -0.05806273188043917
+        },
+        {
+          "passNumber": 5,
+          "nearAxis": 6,
+          "finite": 83929,
+          "minSignedMm": -0.055318286681932796
+        },
+        {
+          "passNumber": 6,
+          "nearAxis": 7,
+          "finite": 76207,
+          "minSignedMm": -0.056990799247926806
+        }
+      ]
+    },
+    "B": {
+      "file": "global-B.npz",
+      "sha256": "1eff12e967ed79c3520dffc3366f5bc008041b752ed2ee9501940b4fbe7809dc",
+      "selectedPass": 3,
+      "score": [
+        2,
+        111119
+      ],
+      "settings": {
+        "limitMm": 0.95,
+        "smoothing": 0.045,
+        "lengthStiffness": 0.08
+      },
+      "maxShiftFromSeedMm": 0.3717358708381653,
+      "arcLengthRatioP01P50P99": [
+        0.9998561143875122,
+        1.000045657157898,
+        1.0005589842796325
+      ],
+      "spanLengthRatioP01P50P99": [
+        0.998948335647583,
+        1.0,
+        1.0020523118972777
+      ],
+      "trials": [
+        {
+          "passNumber": 1,
+          "nearAxis": 586,
+          "finite": 200414,
+          "minSignedMm": -0.06773473176514415
+        },
+        {
+          "passNumber": 2,
+          "nearAxis": 15,
+          "finite": 138246,
+          "minSignedMm": -0.05690806783582847
+        },
+        {
+          "passNumber": 3,
+          "nearAxis": 2,
+          "finite": 111119,
+          "minSignedMm": -0.056294086350345184
+        },
+        {
+          "passNumber": 4,
+          "nearAxis": 5,
+          "finite": 96033,
+          "minSignedMm": -0.056478847748097596
+        },
+        {
+          "passNumber": 5,
+          "nearAxis": 5,
+          "finite": 86160,
+          "minSignedMm": -0.05589158122949131
+        },
+        {
+          "passNumber": 6,
+          "nearAxis": 3,
+          "finite": 78501,
+          "minSignedMm": -0.05558052351972748
+        }
+      ]
+    }
+  },
+  "curves": 24831,
+  "seconds": 104.45425110001815,
+  "scope": "Global neutral rest reconstruction. Every strand is editable after its fixed scalp root. All hair capsule spans from 0 are audited. Skin planes are local collision guides, with exact mesh verification still required. Motion caps are inherited and unverified for the rebuilt routes."
+}

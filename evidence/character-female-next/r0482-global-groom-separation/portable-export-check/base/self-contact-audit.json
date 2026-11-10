@@ -1,0 +1,57 @@
+{
+  "source": {
+    "name": "female-next-r0482-global-groom-UNACCEPTED.blend",
+    "sha256": "6a086f56e014ec4fed0e1a7122fb5f92fcb9f596c4cb0ef6ff1391df174120a8"
+  },
+  "variant": "base",
+  "curves": 24831,
+  "knots": 80,
+  "firstSegment": 0,
+  "nearAxisThresholdM": 1E-06,
+  "syntheticTestsPassed": true,
+  "restRigidityControl": false,
+  "algorithm": "Morton-ordered segment AABB hierarchy. Distinct leaf pairs enumerated once. Segment distance minimizes over the four edges and optional interior of the parameter square.",
+  "interpretation": "Finite overlap witnesses use linearly interpolated endpoint radii at closest centerline points. An unsigned centerline distance minus the two maximum endpoint radii is a conservative lower bound; negative bounds without an overlap witness are unresolved. Near-axis means centerline separation \u003C=1 micron, not exact topological intersection. Same-strand spans separated by \u003C=2 segment indices are excluded.",
+  "scope": "All primary hair curve spans starting at span 0 for each supplied snapshot. Pair keys encode stable curve ordinal and span index. Complete selected hair included. No time-continuous claim, skin/garment tests, or assertion that all finite contacts are visible defects.",
+  "poses": [
+    {
+      "label": "rest",
+      "pose": {
+        "label": "rest",
+        "name": "rest.f32",
+        "sha256": "c2a56e0c41114e2ef8a471ff47f5923151533252c36c62b1d552237ca036af26"
+      },
+      "segments": 1961649,
+      "BroadBoxPairs": 22275545,
+      "AdjacentSkipped": 1936873,
+      "finiteOverlapWitnesses": 512881,
+      "NearAxis": 7666,
+      "SameCurve": 3,
+      "UnresolvedRadiusBounds": 4742,
+      "MinSignedM": -6.860831764813736E-05,
+      "Deepest": {
+        "leftOrdinal": 1710,
+        "leftSegment": 1,
+        "rightOrdinal": 8573,
+        "rightSegment": 1,
+        "centerlineDistanceM": 7.280077949701802E-07,
+        "signedM": -6.860831764813736E-05,
+        "leftLocalM": [
+          -0.034659666145748745,
+          0.04502153231983335,
+          1.5053379698403255
+        ]
+      },
+      "versusRest": {
+        "retained": 512881,
+        "entered": 0,
+        "exited": 0,
+        "enteredNearAxis": 0,
+        "enteredSameCurve": 0,
+        "strandsInNewContacts": 0,
+        "firstNewNearAxisWitnesses": []
+      },
+      "elapsedSeconds": 1.0854582
+    }
+  ]
+}
