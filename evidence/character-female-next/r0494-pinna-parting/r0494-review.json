@@ -1,0 +1,1281 @@
+{
+  "round": "r0494",
+  "decision": "REJECT_PINNA_PARTING_KEEP_ROLLBACK",
+  "scope": "Both neutral hair candidates improve pinna readability but fail complete appearance due to a new lateral slit and hard root parting.",
+  "previousCommit": "7f2be7bcce8c7a412db449a7b2f3b990b9b41c9f",
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\female-next-r0494-pinna-parting-UNACCEPTED.blend",
+    "sha256": "d9959f33d0fe2370fe6949f60a183949afcc0b6245e10093b0a6ce8801d8d133",
+    "bytes": 318134497
+  },
+  "parent": {
+    "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\female-next-r0493-ear-nape-flow-UNACCEPTED.blend",
+    "sha256": "a6065118791b1c1f4dcf4df5257347f244c955746bcb445ec47e891e563aedc9",
+    "bytes": 318079594
+  },
+  "preferredResearch": "r0493 B rollback",
+  "defaultVisibleVariant": "tuck",
+  "appearance": {
+    "cameras": [
+      "opposite-profile",
+      "mirror-profile",
+      "face",
+      "rear-oblique",
+      "posterior-detail",
+      "full-body"
+    ],
+    "gains": [
+      "Both variants reveal the ear more clearly.",
+      "The fixed posterior central band stays covered and narrows by eight pixels."
+    ],
+    "defects": [
+      "A hard triangular discontinuity opens above both ears, extending toward the upper crown.",
+      "Rear oblique reveals a long new lateral gap where the front locks pull away from the rear body.",
+      "From the front, the side locks again read as disconnected bands."
+    ],
+    "metric": {
+      "method": "Same fixed posterior image measurement as r493. ROI x348 to378 and y330 to509 inclusive. Dark means luminance under 65 percent of the same-row median across x316 to338 and x385 to405. Silhouette width uses luminance above 24 within these rows.",
+      "frames": [
+        {
+          "variant": "control",
+          "sha256": "8cd582e33d869f61001a6ead54e0479adcb98eaa01c3c8c17687a7f8f8183f41",
+          "darkPixels": 0,
+          "rowsWithDarkPixels": 0,
+          "maximumWidthPixels": 402
+        },
+        {
+          "variant": "drape",
+          "sha256": "6326b9ee1c92995206261ac213d6ef23d673497439ca965b9e84f79afeb51997",
+          "darkPixels": 0,
+          "rowsWithDarkPixels": 0,
+          "maximumWidthPixels": 394
+        },
+        {
+          "variant": "tuck",
+          "sha256": "6b0b8c053df0a592d5d4cca31441a46e78d81944ec48d1aa1e30d74840a9d111",
+          "darkPixels": 0,
+          "rowsWithDarkPixels": 0,
+          "maximumWidthPixels": 394
+        }
+      ]
+    }
+  },
+  "construction": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\female-next-r0494-pinna-parting-UNACCEPTED.blend",
+      "sha256": "d9959f33d0fe2370fe6949f60a183949afcc0b6245e10093b0a6ce8801d8d133",
+      "bytes": 318134497
+    },
+    "parent": {
+      "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\female-next-r0493-ear-nape-flow-UNACCEPTED.blend",
+      "sha256": "a6065118791b1c1f4dcf4df5257347f244c955746bcb445ec47e891e563aedc9",
+      "bytes": 318079594
+    },
+    "controlObject": "R493 complete hair | staggered",
+    "controlPositionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+    "rootHash": "460afe0c3795baa7a8bf8b845a22c9da558e4d3c474b29b51f8adacfad0de072",
+    "bindingMaximumErrorMetres": 3.6379151088428935E-12,
+    "strands": 24831,
+    "pointsPerStrand": 80,
+    "defaultVisible": "tuck",
+    "variants": {
+      "drape": {
+        "object": "R494 complete hair | drape",
+        "guideObject": "R494 pinna guide families | drape",
+        "positionHash": "9e7174a7c4845c74903fe2c3819fa77d649c0025a753bc3a7004944d637264ee",
+        "weightHash": "d1764fb73dd2a6f350e37a88ecd7ed46aa06bf88af707d93222eb823e9a8ecaa",
+        "joinHash": "8a7579a44cf74f80e6340d3afea82214650f5fde4469eea3421cd42b694d68cb",
+        "groupHash": "7ed14aecc40f363924ae5c202c655d402981532921ca014ea9405def191ce679",
+        "groupCounts": [
+          14011,
+          3545,
+          1506,
+          370,
+          3533,
+          1511,
+          355
+        ],
+        "changedStrands": 10819,
+        "locallyConstrainedControls": 0,
+        "maximumLocalCorrectionMetres": 0.0
+      },
+      "tuck": {
+        "object": "R494 complete hair | tuck",
+        "guideObject": "R494 pinna guide families | tuck",
+        "positionHash": "6eb53996a0f9d066540ed67dc871aac337c4fcffec04aa8018db244069376a20",
+        "weightHash": "d1764fb73dd2a6f350e37a88ecd7ed46aa06bf88af707d93222eb823e9a8ecaa",
+        "joinHash": "5946ab45cd37f715d51a3fb17617e0066153440b1a6cc4238aa430ac5afc49ec",
+        "groupHash": "8e18059585d30f2865223bef9a0f02d05c7d15bb63137b7d123ac9365f95ac0e",
+        "groupCounts": [
+          14011,
+          2487,
+          2814,
+          120,
+          2477,
+          2806,
+          116
+        ],
+        "changedStrands": 10819,
+        "locallyConstrainedControls": 0,
+        "maximumLocalCorrectionMetres": 0.0
+      }
+    },
+    "guideSplinesPerVariant": 24,
+    "pinnae": [
+      {
+        "outer": 0.08456408232450485,
+        "front": -0.02645467221736908,
+        "back": -0.0026612288784235716,
+        "bottom": 1.4269497394561768,
+        "top": 1.4655271768569946,
+        "vertexCount": 531
+      },
+      {
+        "outer": 0.08456408232450485,
+        "front": -0.02645467221736908,
+        "back": -0.0026612288784235716,
+        "bottom": 1.4269497394561768,
+        "top": 1.4655271768569946,
+        "vertexCount": 531
+      }
+    ],
+    "guideFamilies": [
+      "temple",
+      "over-ear",
+      "rear"
+    ],
+    "historicalBanksInParent": [
+      "R492 native posterior rails | crossfall",
+      "R492 complete hair | crossfall",
+      "R493 ear-to-nape stations | overlap",
+      "R493 complete hair | overlap"
+    ]
+  },
+  "replay": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\female-next-r0494-pinna-parting-UNACCEPTED.blend",
+      "sha256": "d9959f33d0fe2370fe6949f60a183949afcc0b6245e10093b0a6ce8801d8d133",
+      "bytes": 318134497
+    },
+    "replay": {
+      "drape": {
+        "positionHash": "9e7174a7c4845c74903fe2c3819fa77d649c0025a753bc3a7004944d637264ee",
+        "ownershipHash": "2b9c02d302c732159e3b1c95a6fee35cac0565b43335c801bf241addc6428b9b",
+        "exact": true
+      },
+      "tuck": {
+        "positionHash": "6eb53996a0f9d066540ed67dc871aac337c4fcffec04aa8018db244069376a20",
+        "ownershipHash": "2b9c02d302c732159e3b1c95a6fee35cac0565b43335c801bf241addc6428b9b",
+        "exact": true
+      }
+    },
+    "fixedAttributeHashes": {
+      "radius": "729b8d11aad6fb8a1f542a07c002276be2bc4fe2aa901f63ad6be24e6b81daeb",
+      "AFN409_CURVE_ID": "eecedbc87ad74bd5fd9c2d473746fbe43c7049b787c8895ec4c326ba1c52fd47",
+      "AFN409_POINT_ID": "3080340c723adb82f3593a18ce9f758b801d07df0325662f326ed8a273bc4de6",
+      "AFN409_SKIN_TRIANGLE_ID": "5a01eade946454781705028e01eadc6457d73447652409cd8ba59f2a37e0240d",
+      "AFN409_SKIN_BARYCENTRIC": "a2f1a271d68f05de3d52efac8cbaef52a2455349cb7d7c99f95df049960726d4",
+      "AEVRYND_ROOT_NORMAL_OFFSET": "4e582178db0dfb3148d63d979c64686b63e30f255a59438794e5a89380ee5e06",
+      "AEVRYND_ROOT_OFFSET_LOCAL": "f9a782ab8570eb487c5a88a26ea3456378097718ad0750073dff4bbf612eb283",
+      "surface_uv_coordinate": "ab2e48470da135b094d701748f63d7b3c263a6d2b7d0401f7bd04856d364343d",
+      "AEVRYND_SCALP_REGION": "d232a6b8477053c5f2e0d5ee4fa6fa7e7f04ce43f2d204745c06bcc794030c05",
+      "AEVRYND_LOCK_ID": "7c182bd84960ed10c0550b7a1319102bb40100f19103a8925b78345d565f2c7f",
+      "AEVRYND_SPATIAL_LOCK_ID": "2b9c02d302c732159e3b1c95a6fee35cac0565b43335c801bf241addc6428b9b",
+      "AEVRYND_SPATIAL_JOIN_POINT": "6c497ff399f16f6f983cd4c3a804a7217446ef4b453cfc371fdb08ad21e39097",
+      "AEVRYND_POSTERIOR_LOFT_WEIGHT": "199f7c6e577ad2d4fb607d8649743a66626c145be443701f284e7c60ff2ada3b",
+      "AEVRYND_POSTERIOR_JOIN_POINT": "57fd54edfbae647c7780fd57454e601239a48e33904c8476a10dbd4b2563002f",
+      "AEVRYND_EAR_NAPE_WEIGHT": "269807d12ffb4f594d7da1de7e223fb78c6a8f107f9f560cb1a74209a7026393",
+      "AEVRYND_EAR_NAPE_JOIN": "2e1143741fbe95282e5066d4f98d9d513ee99e6c3a6659d046561a7e1ee6ada2",
+      "AEVRYND_EAR_NAPE_GROUP": "24d0a74b61ce8703134a72c0a226774b7dd011878d74cf2a0552ffdfec3e7f18"
+    },
+    "bindingMaximumErrorMetres": 3.6379151088428935E-12,
+    "dependencies": {
+      "libraries": [],
+      "externalImages": []
+    },
+    "stats": {
+      "sceneObjects": 19,
+      "vertices": 414564,
+      "triangles": 795029,
+      "bones": 60,
+      "morphs": 110,
+      "materials": 21,
+      "images": 31,
+      "strands": 24831,
+      "points": 1986480
+    },
+    "operation": {
+      "guide": "R494 pinna guide families | tuck",
+      "routeIndex": 5,
+      "stationIndex": 2,
+      "offsetYMetres": 0.005,
+      "changedStrands": 2811,
+      "affectedOwnerSlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        15,
+        16,
+        17
+      ],
+      "evaluatedEditHash": "d7571805e3936ff223017d45346840b2c7005dd8bcccd51d92f613caeec2e90b",
+      "restoredHash": "6eb53996a0f9d066540ed67dc871aac337c4fcffec04aa8018db244069376a20",
+      "sourceWrite": false
+    }
+  },
+  "preview": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\female-next-r0494-pinna-parting-UNACCEPTED.blend",
+      "sha256": "d9959f33d0fe2370fe6949f60a183949afcc0b6245e10093b0a6ce8801d8d133",
+      "bytes": 318134497
+    },
+    "renders": {
+      "control:opposite-profile": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\control-opposite-profile.png",
+        "sha256": "e29238571da87613672769d801b1d5c50e67982ff06115557cf574d3d7d17f2c",
+        "seconds": 5.2676341000478715,
+        "evaluatedPositionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            1.3867994539396022E-06,
+            -0.9999998211860657,
+            -0.8493857383728027
+          ],
+          [
+            -0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "drape:opposite-profile": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\drape-opposite-profile.png",
+        "sha256": "2a01edfe237a0fdde4a8c8d32bd85a35b22bd781bb5dea20d7b3d8419394f771",
+        "seconds": 5.45748519996414,
+        "evaluatedPositionHash": "9e7174a7c4845c74903fe2c3819fa77d649c0025a753bc3a7004944d637264ee",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            1.3867994539396022E-06,
+            -0.9999998211860657,
+            -0.8493857383728027
+          ],
+          [
+            -0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "tuck:opposite-profile": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\tuck-opposite-profile.png",
+        "sha256": "81fcba9e95a692970a958731fc7c7781eb908e469ad5c342de7e6104d2381a74",
+        "seconds": 5.301676300005056,
+        "evaluatedPositionHash": "6eb53996a0f9d066540ed67dc871aac337c4fcffec04aa8018db244069376a20",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            1.3867994539396022E-06,
+            -0.9999998211860657,
+            -0.8493857383728027
+          ],
+          [
+            -0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "control:mirror-profile": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\control-mirror-profile.png",
+        "sha256": "4935df87c303eef8e24dcdf1fa54efaac6ab6e35afae4b03a04e3176378a9d03",
+        "seconds": 4.781034099985845,
+        "evaluatedPositionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            -1.3867994539396022E-06,
+            0.9999998211860657,
+            0.8493857383728027
+          ],
+          [
+            0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            -2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "drape:mirror-profile": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\drape-mirror-profile.png",
+        "sha256": "6852e882af650bd8a5a1feba13ce1bb89b5bed770eb7b830eac1876eb881b317",
+        "seconds": 5.124508600041736,
+        "evaluatedPositionHash": "9e7174a7c4845c74903fe2c3819fa77d649c0025a753bc3a7004944d637264ee",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            -1.3867994539396022E-06,
+            0.9999998211860657,
+            0.8493857383728027
+          ],
+          [
+            0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            -2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "tuck:mirror-profile": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\tuck-mirror-profile.png",
+        "sha256": "c6ba2416d83d4116e35348e08b99da17b8be4e1ca3f1379869814cd16dbcafc9",
+        "seconds": 5.004232799983583,
+        "evaluatedPositionHash": "6eb53996a0f9d066540ed67dc871aac337c4fcffec04aa8018db244069376a20",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            -1.3867994539396022E-06,
+            0.9999998211860657,
+            0.8493857383728027
+          ],
+          [
+            0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            -2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "control:face": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\control-face.png",
+        "sha256": "3d24c1ec36dc4c5043139fdd37eeae262b6085c1407583528e0aaffd4b298038",
+        "seconds": 4.738177199964412,
+        "evaluatedPositionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0006142705678939819
+          ],
+          [
+            0.0,
+            3.1391644483846903E-07,
+            -0.9999998807907104,
+            -0.8931920528411865
+          ],
+          [
+            0.0,
+            0.9999998807907104,
+            3.1391644483846903E-07,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "drape:face": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\drape-face.png",
+        "sha256": "1520e3f138567213edc1adf9c5beab58191ea95092f5398e923d869ee62a96c2",
+        "seconds": 4.829881399986334,
+        "evaluatedPositionHash": "9e7174a7c4845c74903fe2c3819fa77d649c0025a753bc3a7004944d637264ee",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0006142705678939819
+          ],
+          [
+            0.0,
+            3.1391644483846903E-07,
+            -0.9999998807907104,
+            -0.8931920528411865
+          ],
+          [
+            0.0,
+            0.9999998807907104,
+            3.1391644483846903E-07,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "tuck:face": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\tuck-face.png",
+        "sha256": "a02ea3752e42d74646fb0fa547018b6097db949b95c6a2582a91de2d7365f796",
+        "seconds": 4.713252799992915,
+        "evaluatedPositionHash": "6eb53996a0f9d066540ed67dc871aac337c4fcffec04aa8018db244069376a20",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0006142705678939819
+          ],
+          [
+            0.0,
+            3.1391644483846903E-07,
+            -0.9999998807907104,
+            -0.8931920528411865
+          ],
+          [
+            0.0,
+            0.9999998807907104,
+            3.1391644483846903E-07,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "control:rear-oblique": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\control-rear-oblique.png",
+        "sha256": "b7cecb51b0a2751779af66d13f4c48c0f91f9425d8e735fbbdcca555dd2734a0",
+        "seconds": 6.8020873999921605,
+        "evaluatedPositionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+        "camera": [
+          [
+            -0.8521712422370911,
+            -0.11812575906515121,
+            0.5097552537918091,
+            0.3499999940395355
+          ],
+          [
+            0.5232630372047424,
+            -0.19237636029720306,
+            0.8301728367805481,
+            0.5820000171661377
+          ],
+          [
+            7.023855630450271E-08,
+            0.9741855263710022,
+            0.2257484495639801,
+            1.6430000066757202
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "drape:rear-oblique": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\drape-rear-oblique.png",
+        "sha256": "82fc370173e61fbe8d7e5b566f9fccb1921357ae6052e5e001226f41ff4fd425",
+        "seconds": 6.931430399999954,
+        "evaluatedPositionHash": "9e7174a7c4845c74903fe2c3819fa77d649c0025a753bc3a7004944d637264ee",
+        "camera": [
+          [
+            -0.8521712422370911,
+            -0.11812575906515121,
+            0.5097552537918091,
+            0.3499999940395355
+          ],
+          [
+            0.5232630372047424,
+            -0.19237636029720306,
+            0.8301728367805481,
+            0.5820000171661377
+          ],
+          [
+            7.023855630450271E-08,
+            0.9741855263710022,
+            0.2257484495639801,
+            1.6430000066757202
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "tuck:rear-oblique": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\tuck-rear-oblique.png",
+        "sha256": "5fd455d91f67405edc45e8f872a43a5beb5720b70e1a1e9729f6781e0952fd10",
+        "seconds": 6.742632200010121,
+        "evaluatedPositionHash": "6eb53996a0f9d066540ed67dc871aac337c4fcffec04aa8018db244069376a20",
+        "camera": [
+          [
+            -0.8521712422370911,
+            -0.11812575906515121,
+            0.5097552537918091,
+            0.3499999940395355
+          ],
+          [
+            0.5232630372047424,
+            -0.19237636029720306,
+            0.8301728367805481,
+            0.5820000171661377
+          ],
+          [
+            7.023855630450271E-08,
+            0.9741855263710022,
+            0.2257484495639801,
+            1.6430000066757202
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "control:posterior-detail": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\control-posterior-detail.png",
+        "sha256": "8cd582e33d869f61001a6ead54e0479adcb98eaa01c3c8c17687a7f8f8183f41",
+        "seconds": 8.489306200004648,
+        "evaluatedPositionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+        "camera": [
+          [
+            -0.9999994039535522,
+            -8.74228689440315E-08,
+            1.5099574568466778E-07,
+            0.0006142705678939819
+          ],
+          [
+            1.5099571726295835E-07,
+            -7.549786573690653E-08,
+            0.9999997019767761,
+            0.8068079948425293
+          ],
+          [
+            -8.742283341689472E-08,
+            0.9999997019767761,
+            7.549787994776125E-08,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 88.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "drape:posterior-detail": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\drape-posterior-detail.png",
+        "sha256": "6326b9ee1c92995206261ac213d6ef23d673497439ca965b9e84f79afeb51997",
+        "seconds": 8.503933999978472,
+        "evaluatedPositionHash": "9e7174a7c4845c74903fe2c3819fa77d649c0025a753bc3a7004944d637264ee",
+        "camera": [
+          [
+            -0.9999994039535522,
+            -8.74228689440315E-08,
+            1.5099574568466778E-07,
+            0.0006142705678939819
+          ],
+          [
+            1.5099571726295835E-07,
+            -7.549786573690653E-08,
+            0.9999997019767761,
+            0.8068079948425293
+          ],
+          [
+            -8.742283341689472E-08,
+            0.9999997019767761,
+            7.549787994776125E-08,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 88.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "tuck:posterior-detail": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\tuck-posterior-detail.png",
+        "sha256": "6b0b8c053df0a592d5d4cca31441a46e78d81944ec48d1aa1e30d74840a9d111",
+        "seconds": 8.280587299959734,
+        "evaluatedPositionHash": "6eb53996a0f9d066540ed67dc871aac337c4fcffec04aa8018db244069376a20",
+        "camera": [
+          [
+            -0.9999994039535522,
+            -8.74228689440315E-08,
+            1.5099574568466778E-07,
+            0.0006142705678939819
+          ],
+          [
+            1.5099571726295835E-07,
+            -7.549786573690653E-08,
+            0.9999997019767761,
+            0.8068079948425293
+          ],
+          [
+            -8.742283341689472E-08,
+            0.9999997019767761,
+            7.549787994776125E-08,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 88.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "control:full-body": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\control-full-body.png",
+        "sha256": "4587d75b104ecfa2b033b1c714b4d6366385b96331887fb508060e951cf4a24c",
+        "seconds": 3.20836569997482,
+        "evaluatedPositionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.020705485716462135,
+            -0.9997854828834534,
+            -3.4050002098083496
+          ],
+          [
+            0.0,
+            0.9997854828834534,
+            0.020705485716462135,
+            0.9049999713897705
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "drape:full-body": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\drape-full-body.png",
+        "sha256": "d7e8f2629e970404f8d330e1a5316193fafdfda4d0938297eaeddec4394da6ce",
+        "seconds": 3.1700999999884516,
+        "evaluatedPositionHash": "9e7174a7c4845c74903fe2c3819fa77d649c0025a753bc3a7004944d637264ee",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.020705485716462135,
+            -0.9997854828834534,
+            -3.4050002098083496
+          ],
+          [
+            0.0,
+            0.9997854828834534,
+            0.020705485716462135,
+            0.9049999713897705
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      },
+      "tuck:full-body": {
+        "path": "F:\\AevryndEvidence\\r0494-pinna-parting\\tuck-full-body.png",
+        "sha256": "cf2b8901f809936282b49b7a54d8d93cd003aed6da50040404f2ff85b3faf668",
+        "seconds": 3.257439000008162,
+        "evaluatedPositionHash": "6eb53996a0f9d066540ed67dc871aac337c4fcffec04aa8018db244069376a20",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.020705485716462135,
+            -0.9997854828834534,
+            -3.4050002098083496
+          ],
+          [
+            0.0,
+            0.9997854828834534,
+            0.020705485716462135,
+            0.9049999713897705
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R494 complete hair | tuck"
+      }
+    },
+    "sameRenderCarrier": true,
+    "sourceUnchanged": true
+  },
+  "contact": {
+    "crown": {
+      "pose": "archived complete neutral woman",
+      "model": "actual neutral skin BVH",
+      "scope": "All 24,831 strands at control indices 0 through 9. Nearest oriented triangle minus stored radius. Independent rays at the minimum and curve 5535.",
+      "unverified": [
+        "swept curve segments",
+        "hair self-contact",
+        "free lengths beyond sampled controls",
+        "dynamic and clothing contact"
+      ],
+      "results": {
+        "control": {
+          "windows": {
+            "root": {
+              "samples": 24831,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 8.480613178107888E-05,
+              "worstCurveID": 9270,
+              "worstPointIndex": 0,
+              "worstPositionMetres": [
+                -0.008562459610402584,
+                0.0013908583205193281,
+                1.5673632621765137
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "firstFiveAfterRoot": {
+              "samples": 124155,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0002346337423659861,
+              "worstCurveID": 16070,
+              "worstPointIndex": 1,
+              "worstPositionMetres": [
+                -0.0017333932919427752,
+                -0.01344974059611559,
+                1.5711722373962402
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "laterUpperControls": {
+              "samples": 99324,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0019857040606439114,
+              "worstCurveID": 5535,
+              "worstPointIndex": 6,
+              "worstPositionMetres": [
+                -0.00615955563262105,
+                -0.010239189490675926,
+                1.572203516960144
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "curve5535": [
+            {
+              "pointIndex": 0,
+              "signedGapMetres": 8.485751459375024E-05,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 1,
+              "signedGapMetres": 0.0003345934965182096,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 2,
+              "signedGapMetres": 0.000576679187361151,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 3,
+              "signedGapMetres": 0.0008322662906721234,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 4,
+              "signedGapMetres": 0.0011789199197664857,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 5,
+              "signedGapMetres": 0.001498610363341868,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "drape": {
+          "windows": {
+            "root": {
+              "samples": 24831,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 8.480613178107888E-05,
+              "worstCurveID": 9270,
+              "worstPointIndex": 0,
+              "worstPositionMetres": [
+                -0.008562459610402584,
+                0.0013908583205193281,
+                1.5673632621765137
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "firstFiveAfterRoot": {
+              "samples": 124155,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0002346337423659861,
+              "worstCurveID": 16070,
+              "worstPointIndex": 1,
+              "worstPositionMetres": [
+                -0.0017333932919427752,
+                -0.01344974059611559,
+                1.5711722373962402
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "laterUpperControls": {
+              "samples": 99324,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0019857040606439114,
+              "worstCurveID": 5535,
+              "worstPointIndex": 6,
+              "worstPositionMetres": [
+                -0.00615955563262105,
+                -0.010239189490675926,
+                1.572203516960144
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "curve5535": [
+            {
+              "pointIndex": 0,
+              "signedGapMetres": 8.485751459375024E-05,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 1,
+              "signedGapMetres": 0.0003345934965182096,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 2,
+              "signedGapMetres": 0.000576679187361151,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 3,
+              "signedGapMetres": 0.0008322662906721234,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 4,
+              "signedGapMetres": 0.0011789199197664857,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 5,
+              "signedGapMetres": 0.001498610363341868,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "tuck": {
+          "windows": {
+            "root": {
+              "samples": 24831,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 8.480613178107888E-05,
+              "worstCurveID": 9270,
+              "worstPointIndex": 0,
+              "worstPositionMetres": [
+                -0.008562459610402584,
+                0.0013908583205193281,
+                1.5673632621765137
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "firstFiveAfterRoot": {
+              "samples": 124155,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0002346337423659861,
+              "worstCurveID": 16070,
+              "worstPointIndex": 1,
+              "worstPositionMetres": [
+                -0.0017333932919427752,
+                -0.01344974059611559,
+                1.5711722373962402
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "laterUpperControls": {
+              "samples": 99324,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0019857040606439114,
+              "worstCurveID": 5535,
+              "worstPointIndex": 6,
+              "worstPositionMetres": [
+                -0.00615955563262105,
+                -0.010239189490675926,
+                1.572203516960144
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "curve5535": [
+            {
+              "pointIndex": 0,
+              "signedGapMetres": 8.485751459375024E-05,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 1,
+              "signedGapMetres": 0.0003345934965182096,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 2,
+              "signedGapMetres": 0.000576679187361151,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 3,
+              "signedGapMetres": 0.0008322662906721234,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 4,
+              "signedGapMetres": 0.0011789199197664857,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 5,
+              "signedGapMetres": 0.001498610363341868,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "scopedStatus": "Only the inherited crown point probe ran. The changed ear and lower side geometry has no full contact result. The visual rejection stopped further technical expansion.",
+    "open": [
+      "Neutral ear, face and nape for both new candidates",
+      "Continuous finite-radius skin clearance",
+      "Hair self-contact and garments",
+      "Motion and engine validation"
+    ]
+  },
+  "rights": "Inherited exact source notices. The r484 aligned Angelica oblique was inspected. DarkNik and NikZava284 attribution under CC BY 4.0 remains. No reference geometry was imported.",
+  "resources": {
+    "startTaipei": "2026-11-11T12:02:40+08:00",
+    "supportDeadlineTaipei": "2026-11-11T12:12:40+08:00",
+    "firstPreviewDeadlineTaipei": "2026-11-11T12:32:40+08:00",
+    "completePreviewTaipei": "2026-11-11T12:08:08.0000000+08:00",
+    "resourceCheckpointTaipei": "2026-11-11T12:47:40+08:00",
+    "workers": 1,
+    "blenderThreads": 4,
+    "initialAuthor": "First reopen failed before writing a candidate because the copied control check named the r492 variant. Retained its logs and corrected it to the actual r493 control.",
+    "authorPeakPrivateBytes": 2064908288,
+    "previewPeakPrivateBytes": 3273342976,
+    "engineCPUSeconds": null,
+    "engineGPUSeconds": null,
+    "engineMemoryBytes": null
+  },
+  "nextAction": "Use r493 as the comparison. Replace the full-height hard temporal part with overlapping guide populations across a measured strip of scalp. Preserve contact-independent upper and rear optical overlap, separating the paths locally at pinna height. Inspect the profile and rear oblique together before another contact pass.",
+  "inheritedRetirements": "Preserve r483, r484, dense combing, r487 common ear envelope and r489 upper-only splice retirements. The r494 hard part has one verified appearance rejection and is not a working baseline. No adopted appearance and no counter reset.",
+  "scoreIncrease": false,
+  "runtimeOrWebsiteChanged": false,
+  "maleWorkStarted": false
+}
