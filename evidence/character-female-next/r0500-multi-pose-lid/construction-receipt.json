@@ -1,0 +1,89 @@
+{
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0500-multi-pose-lid\\female-next-r0500-multi-pose-lid-UNACCEPTED.blend",
+    "sha256": "d1af8ee646bacb96c5340eb2a2e7455c111d41d75cdedb7ce0a07a09e68e1b68",
+    "bytes": 325339138
+  },
+  "parent": {
+    "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\female-next-r0498-orbit-cheek-UNACCEPTED.blend",
+    "sha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+    "bytes": 321905506
+  },
+  "rejectedDesign": {
+    "path": "F:\\AevryndEvidence\\r0499-lid-fold\\female-next-r0499-lid-fold-UNACCEPTED.blend",
+    "sha256": "c61460c0c2ca7f0c303ea85920bd060670183be229e050fe3aaffa9dc9ba4894",
+    "bytes": 325339006
+  },
+  "training": {
+    "1:0.833333:relaxed": {
+      "witnessPolygonPairs": 1,
+      "trianglePairs": 17,
+      "cappedPairs": 0,
+      "degenerateFallbackPairs": 0,
+      "minimumPositiveBaselineAxisMetres": 1.53082961640294e-07
+    },
+    "1:0.875:relaxed": {
+      "witnessPolygonPairs": 2,
+      "trianglePairs": 51,
+      "cappedPairs": 6,
+      "degenerateFallbackPairs": 6,
+      "minimumPositiveBaselineAxisMetres": 5.298367031780771e-07
+    },
+    "37:0.92:relaxed": {
+      "witnessPolygonPairs": 4,
+      "trianglePairs": 16,
+      "cappedPairs": 0,
+      "degenerateFallbackPairs": 0,
+      "minimumPositiveBaselineAxisMetres": 0.00020004912893650806
+    },
+    "37:0.92:profile": {
+      "witnessPolygonPairs": 5,
+      "trianglePairs": 5,
+      "cappedPairs": 5,
+      "degenerateFallbackPairs": 0,
+      "minimumPositiveBaselineAxisMetres": 0.00016893735259293496
+    },
+    "37:1:profile": {
+      "witnessPolygonPairs": 33,
+      "trianglePairs": 33,
+      "cappedPairs": 33,
+      "degenerateFallbackPairs": 0,
+      "minimumPositiveBaselineAxisMetres": 6.163910883150159e-05,
+      "exactlyReproducedNewPolygonPairs": 33
+    }
+  },
+  "body": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+  "gaze": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+  "blinkProperty": "R448_Blink",
+  "layoutProperty": "R500_Lid_Fold_Layout",
+  "defaultVisible": "separated",
+  "variants": {
+    "anchored": {
+      "key": "R500 A | Surface anchors",
+      "coordinateHash": "0015c776ad608b583e83b4602c4645b32dec6cb71fbf40bc531b73776380e471",
+      "changedVertices": 480,
+      "untouchedTargetVertices": 371,
+      "locallyConstrainedVertices": 137,
+      "pinnedVertices": 28,
+      "maximumLocalDisplacementMetres": 0.000960521399974823,
+      "geodesicFalloffMetres": 0.003
+    },
+    "separated": {
+      "key": "R500 B | Multi-pose separation",
+      "coordinateHash": "635eeeb01d3ae6451daf194490cfdc59a0c967ce2ef97089895c462ceb52a7b1",
+      "changedVertices": 506,
+      "untouchedTargetVertices": 443,
+      "locallyConstrainedVertices": 65,
+      "pinnedVertices": 2,
+      "maximumLocalDisplacementMetres": 0.000960521399974823,
+      "geodesicFalloffMetres": 0.002
+    }
+  },
+  "basisHash": "bbeca94ffab2b5869f2890436bded196cf31ac59625bf90d6a253cc975b92902",
+  "topologyHash": "2aa622ecf7be58650dd36a47d57f0bbd2d7a88f0af984f3c68cfced788cff2c1",
+  "hair": {
+    "object": "R497 complete hair | supported",
+    "positionHash": "55964445e3de793a4a7638c3d871f920bf07544085a70666acebb06e6e0b4f9d"
+  },
+  "cheekCoordinateHash": "4a6a24c302135904fe756ae1ce5a9102bcdc7842d55a2ba106f103cab9287cb6"
+}

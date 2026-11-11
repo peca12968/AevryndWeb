@@ -1,0 +1,291 @@
+{
+  "round": "r0500",
+  "decision": "RETAIN_MULTI_POSE_LID_UNACCEPTED",
+  "preferredResearch": "r0500 B for further Blender evaluation",
+  "productionAccepted": false,
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0500-multi-pose-lid\\female-next-r0500-multi-pose-lid-UNACCEPTED.blend",
+    "sha256": "d1af8ee646bacb96c5340eb2a2e7455c111d41d75cdedb7ce0a07a09e68e1b68",
+    "bytes": 325339138
+  },
+  "parent": {
+    "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\female-next-r0498-orbit-cheek-UNACCEPTED.blend",
+    "sha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+    "bytes": 321905506
+  },
+  "rejectedPredecessor": {
+    "path": "F:\\AevryndEvidence\\r0499-lid-fold\\female-next-r0499-lid-fold-UNACCEPTED.blend",
+    "sha256": "c61460c0c2ca7f0c303ea85920bd060670183be229e050fe3aaffa9dc9ba4894",
+    "bytes": 325339006
+  },
+  "defaultVisibleVariant": "separated",
+  "reopenedAndOperated": {
+    "property": "R500_Lid_Fold_Layout",
+    "position": 1.0,
+    "editedMode": "control",
+    "restoredMode": "separated",
+    "changedVertices": 506,
+    "editedHash": "bf99165ea8d46daba3e4b63c51f1feb0b00b2196bf3c9e8da055089cc61b5649",
+    "restoredHash": "0c2ddb88cc18c5a2f0911bed635a801773a889311f6901d0f0625539654447f1",
+    "sourceWrite": false
+  },
+  "construction": {
+    "anchored": {
+      "key": "R500 A | Surface anchors",
+      "coordinateHash": "0015c776ad608b583e83b4602c4645b32dec6cb71fbf40bc531b73776380e471",
+      "changedVertices": 480,
+      "untouchedTargetVertices": 371,
+      "locallyConstrainedVertices": 137,
+      "pinnedVertices": 28,
+      "maximumLocalDisplacementMetres": 0.000960521399974823,
+      "geodesicFalloffMetres": 0.003
+    },
+    "separated": {
+      "key": "R500 B | Multi-pose separation",
+      "coordinateHash": "635eeeb01d3ae6451daf194490cfdc59a0c967ce2ef97089895c462ceb52a7b1",
+      "changedVertices": 506,
+      "untouchedTargetVertices": 443,
+      "locallyConstrainedVertices": 65,
+      "pinnedVertices": 2,
+      "maximumLocalDisplacementMetres": 0.000960521399974823,
+      "geodesicFalloffMetres": 0.002
+    }
+  },
+  "inspectedComparisonBoards": {
+    "head": {
+      "path": "F:\\AevryndEvidence\\r0500-multi-pose-lid\\r0500-head-comparison.png",
+      "bytes": 983392,
+      "sha256": "626574445218c526bb4b389b311d096fb5a59d9cd773fafdcecf722382e7a30e"
+    },
+    "macro": {
+      "path": "F:\\AevryndEvidence\\r0500-multi-pose-lid\\r0500-macro-comparison.png",
+      "bytes": 374817,
+      "sha256": "503769b2a8f6febfa6a21df6ad6d97dd2a53a129c3505e8dd2181cf0d7ad47ee"
+    },
+    "turned": {
+      "path": "F:\\AevryndEvidence\\r0500-multi-pose-lid\\r0500-turned-comparison.png",
+      "bytes": 386275,
+      "sha256": "c761d3c53ebfa56a501e5dc5d28ac5ad768b8ab7930b95265238f9fad025a002"
+    },
+    "blink-body": {
+      "path": "F:\\AevryndEvidence\\r0500-multi-pose-lid\\r0500-blink-body-comparison.png",
+      "bytes": 669878,
+      "sha256": "2ca691f772e6d1f72edb863db3c81af9c74c93000b1cf68136c6229a8f42e893"
+    }
+  },
+  "matchedRendersVerified": 30,
+  "poseCount": 41,
+  "contactScope": "25 held blink values at frame 1, ten at frame 37 and six at frames 36.5 and 36.75. Evaluated skin patch versus full skin and four ocular layer meshes. New pairs use source polygon IDs. Shared-vertex self pairs are excluded. Nearest moved vertices give unsigned point samples.",
+  "contactByVariant": {
+    "anchored": {
+      "modifiedPoseCount": 26,
+      "newSkinPairObservations": 0.0,
+      "newLayerPairObservations": 0.0,
+      "reversedTriangleObservations": 0.0,
+      "inheritedSkinPairsByPose": [
+        {
+          "pose": "36.75:0.86",
+          "baseline": 1,
+          "candidate": 1
+        },
+        {
+          "pose": "36.75:1",
+          "baseline": 1,
+          "candidate": 1
+        }
+      ],
+      "frame37FullBlink": {
+        "baselineSkinPairs": 0,
+        "candidateSkinPairs": 0,
+        "inheritedLashPairs": 29,
+        "r499RecheckedPolygonPairs": 33,
+        "minimumProjectedSeparationMetres": 6.163910883150159E-05
+      },
+      "smallestUnsignedMovedVertexSamplesByLayer": [
+        {
+          "pose": "37:0.72",
+          "layer": "AFN126_ORIGINAL_Eye_Eye_0",
+          "vertexID": 152606,
+          "unsignedMetres": 0.0008163538295775652,
+          "worldPositionMetres": [
+            0.0843667984008789,
+            -0.07568326592445374,
+            1.4597417116165161
+          ]
+        },
+        {
+          "pose": "37:0.72",
+          "layer": "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0",
+          "vertexID": 152606,
+          "unsignedMetres": 0.0006640504579991102,
+          "worldPositionMetres": [
+            0.0843667984008789,
+            -0.07568326592445374,
+            1.4597417116165161
+          ]
+        },
+        {
+          "pose": "37:0.97",
+          "layer": "R458 A | Full-gaze lower tear menisci",
+          "vertexID": 161503,
+          "unsignedMetres": 0.0010341996094211936,
+          "worldPositionMetres": [
+            0.012267829850316048,
+            -0.12069199979305267,
+            1.4587291479110718
+          ]
+        },
+        {
+          "pose": "37:1",
+          "layer": "R461 A | Shaft relief",
+          "vertexID": 161511,
+          "unsignedMetres": 0.0002476232184562832,
+          "worldPositionMetres": [
+            0.015392033383250237,
+            -0.12236043065786362,
+            1.4577844142913818
+          ]
+        }
+      ]
+    },
+    "separated": {
+      "modifiedPoseCount": 26,
+      "newSkinPairObservations": 0.0,
+      "newLayerPairObservations": 0.0,
+      "reversedTriangleObservations": 0.0,
+      "inheritedSkinPairsByPose": [
+        {
+          "pose": "1:0.791667",
+          "baseline": 2,
+          "candidate": 2
+        },
+        {
+          "pose": "36.75:0.86",
+          "baseline": 1,
+          "candidate": 1
+        },
+        {
+          "pose": "36.75:1",
+          "baseline": 1,
+          "candidate": 1
+        }
+      ],
+      "frame37FullBlink": {
+        "baselineSkinPairs": 0,
+        "candidateSkinPairs": 0,
+        "inheritedLashPairs": 29,
+        "r499RecheckedPolygonPairs": 33,
+        "minimumProjectedSeparationMetres": 9.863773139695553E-05
+      },
+      "smallestUnsignedMovedVertexSamplesByLayer": [
+        {
+          "pose": "37:0.72",
+          "layer": "AFN126_ORIGINAL_Eye_Eye_0",
+          "vertexID": 152606,
+          "unsignedMetres": 0.0008163538295775652,
+          "worldPositionMetres": [
+            0.0843667984008789,
+            -0.07568326592445374,
+            1.4597417116165161
+          ]
+        },
+        {
+          "pose": "37:0.72",
+          "layer": "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0",
+          "vertexID": 152606,
+          "unsignedMetres": 0.0006640504579991102,
+          "worldPositionMetres": [
+            0.0843667984008789,
+            -0.07568326592445374,
+            1.4597417116165161
+          ]
+        },
+        {
+          "pose": "1:0.583333",
+          "layer": "R458 A | Full-gaze lower tear menisci",
+          "vertexID": 152886,
+          "unsignedMetres": 0.0008394944597966969,
+          "worldPositionMetres": [
+            0.04193412885069847,
+            -0.11263266205787659,
+            1.4581031799316406
+          ]
+        },
+        {
+          "pose": "37:1",
+          "layer": "R461 A | Shaft relief",
+          "vertexID": 161511,
+          "unsignedMetres": 0.0002476232184562832,
+          "worldPositionMetres": [
+            0.015392033383250237,
+            -0.12236043065786362,
+            1.4577844142913818
+          ]
+        }
+      ]
+    }
+  },
+  "fixedFrontalNormalStepsDegrees": {
+    "control": [
+      87.96526759521905,
+      110.44053450883936
+    ],
+    "anchored": [
+      28.714337306511275,
+      81.71148317855382
+    ],
+    "separated": [
+      28.714337306511275,
+      76.79760963012674
+    ]
+  },
+  "stats": {
+    "vertices": 414564,
+    "triangles": 795029,
+    "bones": 60,
+    "morphs": 114,
+    "materials": 21,
+    "images": 31,
+    "strands": 24831,
+    "hairPoints": 1986480
+  },
+  "visualAssessment": "Upper-lid outer fold is modestly softer in matched closing macros. The old closing crease remains visible at head scale and there is no material overall appearance gain. Hair still has broad glossy clumps and thin exposed edges. Whole-figure panels show the same rest-form silhouette and have no bearing on clothing, motion or full anatomical acceptance.",
+  "technicalAssessment": "Both variants pass the relative discrete collision check. B preserves more local shape edits and larger projected separation at the reproduced frame-37 witness. Inherited skin and eyelash intersections remain. The projection applies to known polygon pairs at tested poses. Nearest-vertex samples are unsigned and full signed or swept clearance was not measured.",
+  "unmetChecks": [
+    "Continuous finite-mesh blink collision",
+    "Inherited eyelid skin and lash contacts",
+    "Whole-body and clothing motion collision",
+    "Natural hair rest form and motion",
+    "Aevrynd runtime CPU, GPU, memory and rendering"
+  ],
+  "categoryReview": {
+    "anatomy": "Same rest body and head shape; no new anatomical rating.",
+    "face": "Small improvement in late closure macros; the crease and stiff lid volume remain.",
+    "eyes": "Open and half-blink evaluated skin match the control; inherited overlapping lid/lash geometry remains.",
+    "skin": "Identical lights and shader; no new material or texture evidence.",
+    "hair": "Preserved r497 curve positions; broad sheets, uniform gloss and hard edges remain visually limiting.",
+    "clothing": "No clothing review in this round.",
+    "motion": "Forty-one held blink samples; continuous transition and other motions remain unverified.",
+    "collision": "No new skin/ocular-layer pairs in the evaluated patch; existing contacts preclude zero-penetration acceptance.",
+    "performance": "Local Blender timings only; engine runtime metrics unmeasured."
+  },
+  "scoreIncrease": false,
+  "engineMeasurements": {
+    "cpuSeconds": null,
+    "gpuSeconds": null,
+    "memoryBytes": null
+  },
+  "resources": {
+    "startTaipei": "2026-11-11T13:56:19+08:00",
+    "supportDeadlineTaipei": "2026-11-11T14:06:19+08:00",
+    "firstPreviewDeadlineTaipei": "2026-11-11T14:26:19+08:00",
+    "completePreviewTaipei": "2026-11-11T14:03:58+08:00",
+    "resourceCheckpointTaipei": "2026-11-11T14:41:19+08:00",
+    "workers": 1,
+    "blenderThreads": 4,
+    "authorPeakPrivateBytes": 2157469696,
+    "previewPeakPrivateBytes": 3032592384,
+    "contactPeakPrivateBytes": 2078212096
+  },
+  "nextAction": "Keep B as a local research reference and r498 as rollback. Rebuild the closure section around a shared anatomical eyelid rim and a separate inner wall with integrated lash attachment. Require a demonstrable silhouette/fold gain and a swept contact check of the inherited positive-X skin and lash witnesses."
+}
