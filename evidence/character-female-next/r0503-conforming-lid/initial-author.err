@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "F:\AevryndEvidence\r0503-conforming-lid\author-r0503.py", line 243, in <module>
+    main()
+    ~~~~^^
+  File "F:\AevryndEvidence\r0503-conforming-lid\author-r0503.py", line 176, in main
+    geometry=topo['rebuild'](body,selected)
+  File "F:\AevryndEvidence\r0503-conforming-lid\topology-r0503.py", line 127, in rebuild
+    child[owner]=fid
+    ~~~~~^^^^^^^
+ReferenceError: BMesh data of type BMFace has been removed
+
+Error: script failed, file: 'F:\AevryndEvidence\r0503-conforming-lid\author-r0503.py', exiting.
