@@ -1,0 +1,857 @@
+{
+  "round": "r0502",
+  "decision": "REJECT_FULL_RETURN_KEEP_R500",
+  "preferredResearch": "r0500 B",
+  "productionAccepted": false,
+  "defaultVisibleVariant": "arc",
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0502-lid-return\\female-next-r0502-lid-return-UNACCEPTED.blend",
+    "sha256": "28748231e3c43ecca06b7cdfa2cfde3b36f3bf487adced2253ef3443fa88263c",
+    "bytes": 343531982
+  },
+  "parent": {
+    "path": "F:\\AevryndEvidence\\r0500-multi-pose-lid\\female-next-r0500-multi-pose-lid-UNACCEPTED.blend",
+    "sha256": "d1af8ee646bacb96c5340eb2a2e7455c111d41d75cdedb7ce0a07a09e68e1b68",
+    "bytes": 325339138
+  },
+  "topology": {
+    "before": [
+      170091,
+      357049,
+      186956
+    ],
+    "after": [
+      170091,
+      358304,
+      188348
+    ],
+    "beforeNonmanifold": 12,
+    "afterNonmanifold": 12,
+    "rewiredVertices": 732,
+    "sourceUnusedIds": 137,
+    "preservedUvLayers": [
+      "MakeHumanOriginalUV",
+      "VitruvianUV.UDIM",
+      "OriginalArtist.UVMap",
+      "AFN105_ORIGINAL_NATIVE_HEAD_CHART",
+      "AngelicaOriginalUV"
+    ]
+  },
+  "sceneStatsDerivedFromR500AndMeasuredWallDelta": {
+    "vertices": 414564,
+    "triangles": 794755,
+    "bones": 60,
+    "morphs": 124,
+    "materials": 21,
+    "images": 31,
+    "strands": 24831,
+    "hairPoints": 1986480
+  },
+  "neutralWallTriangles": {
+    "baseline": 2221,
+    "arc": 1947,
+    "rolled": 1947
+  },
+  "reopenedOperation": {
+    "arc": "f116559d540f4e253e53e3aabd03e43a68173aec9a9ce86b83a1ec76cfda93cf",
+    "rolled": "20b96a786805c7d09cbd0d33595d96a684c1d7b2564a1806e1f59ce4c7d0d570"
+  },
+  "lashRootsExactInEvaluatedWorld": true,
+  "ocularLayerHashesExact": true,
+  "testedHeldPoses": {
+    "1:0": {
+      "baseline": {
+        "skin": {},
+        "cornea": {},
+        "eye": {},
+        "meniscus": {},
+        "lashes": {
+          "root": 2527,
+          "shaft": 344
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.00043513011769391596,
+          "vertex": 169938,
+          "positionMetres": [
+            -0.02876598760485649,
+            -0.11958498507738113,
+            1.4656929969787598
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1352
+        },
+        "lashRootErrorMetres": 2.318008220405572e-05
+      },
+      "arc": {
+        "skin": {
+          "return-return": 25
+        },
+        "cornea": {
+          "return": 1361
+        },
+        "eye": {
+          "return": 576
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2527,
+          "shaft": 344
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.00043513011769391596,
+          "vertex": 169938,
+          "positionMetres": [
+            -0.02876598760485649,
+            -0.11958498507738113,
+            1.4656929969787598
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.318008220405572e-05
+      },
+      "rolled": {
+        "skin": {
+          "return-return": 26
+        },
+        "cornea": {
+          "return": 1711
+        },
+        "eye": {
+          "return": 746
+        },
+        "meniscus": {},
+        "lashes": {
+          "shaft": 344,
+          "root": 2527
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.00043513011769391596,
+          "vertex": 169938,
+          "positionMetres": [
+            -0.02876598760485649,
+            -0.11958498507738113,
+            1.4656929969787598
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.318008220405572e-05
+      }
+    },
+    "1:0.5": {
+      "baseline": {
+        "skin": {
+          "return-exterior": 2
+        },
+        "cornea": {},
+        "eye": {},
+        "meniscus": {},
+        "lashes": {
+          "root": 2255,
+          "shaft": 566
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.000491393671836704,
+          "vertex": 1168,
+          "positionMetres": [
+            -0.0290266964584589,
+            -0.10228238254785538,
+            1.447104811668396
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1352
+        },
+        "lashRootErrorMetres": 2.3177163557379976e-05
+      },
+      "arc": {
+        "skin": {
+          "return-return": 187
+        },
+        "cornea": {
+          "return": 1515
+        },
+        "eye": {
+          "return": 810
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2255,
+          "shaft": 566
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.0005285789957270026,
+          "vertex": 1146,
+          "positionMetres": [
+            -0.015826687216758728,
+            -0.1022726446390152,
+            1.4538527727127075
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.3177163557379976e-05
+      },
+      "rolled": {
+        "skin": {
+          "return-return": 206
+        },
+        "cornea": {
+          "return": 1600
+        },
+        "eye": {
+          "return": 634
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2255,
+          "shaft": 566
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.0005428289296105504,
+          "vertex": 169966,
+          "positionMetres": [
+            -0.028455283492803574,
+            -0.1198476105928421,
+            1.4614688158035278
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.3177163557379976e-05
+      }
+    },
+    "1:0.75": {
+      "baseline": {
+        "skin": {
+          "return-exterior": 3
+        },
+        "cornea": {},
+        "eye": {},
+        "meniscus": {},
+        "lashes": {
+          "shaft": 707,
+          "root": 2085
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.000491393671836704,
+          "vertex": 1168,
+          "positionMetres": [
+            -0.0290266964584589,
+            -0.10228238254785538,
+            1.447104811668396
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1352
+        },
+        "lashRootErrorMetres": 2.3186051321264768e-05
+      },
+      "arc": {
+        "skin": {
+          "return-return": 237,
+          "return-exterior": 3
+        },
+        "cornea": {
+          "return": 1592
+        },
+        "eye": {
+          "return": 867
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2086,
+          "shaft": 708
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.0004506015975493938,
+          "vertex": 59,
+          "positionMetres": [
+            0.04338008537888527,
+            -0.11084500700235367,
+            1.4619882106781006
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.3186051321264768e-05
+      },
+      "rolled": {
+        "skin": {
+          "return-return": 247
+        },
+        "cornea": {
+          "return": 1577
+        },
+        "eye": {
+          "return": 770
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2090,
+          "shaft": 711
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.0005586371407844126,
+          "vertex": 1425,
+          "positionMetres": [
+            0.015801062807440758,
+            -0.10149034112691879,
+            1.4538321495056152
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.3186051321264768e-05
+      }
+    },
+    "1:0.875": {
+      "baseline": {
+        "skin": {
+          "return-exterior": 2
+        },
+        "cornea": {},
+        "eye": {},
+        "meniscus": {},
+        "lashes": {
+          "root": 2062,
+          "shaft": 750
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.000491393671836704,
+          "vertex": 1168,
+          "positionMetres": [
+            -0.0290266964584589,
+            -0.10228238254785538,
+            1.447104811668396
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1352
+        },
+        "lashRootErrorMetres": 2.3188371186844186e-05
+      },
+      "arc": {
+        "skin": {
+          "return-return": 272,
+          "return-exterior": 3
+        },
+        "cornea": {
+          "return": 1587
+        },
+        "eye": {
+          "return": 936
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2064,
+          "shaft": 752
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.00030443479772657156,
+          "vertex": 588,
+          "positionMetres": [
+            0.019564764574170113,
+            -0.11550040543079376,
+            1.4675754308700562
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.3188371186844186e-05
+      },
+      "rolled": {
+        "skin": {
+          "return-return": 285,
+          "return-exterior": 3
+        },
+        "cornea": {
+          "return": 1479
+        },
+        "eye": {
+          "return": 803
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2066,
+          "shaft": 752
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.0004920867504552007,
+          "vertex": 564,
+          "positionMetres": [
+            -0.043779026716947556,
+            -0.11006803065538406,
+            1.4622247219085693
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.3188371186844186e-05
+      }
+    },
+    "1:1": {
+      "baseline": {
+        "skin": {
+          "return-exterior": 2
+        },
+        "cornea": {},
+        "eye": {},
+        "meniscus": {},
+        "lashes": {
+          "root": 2014,
+          "shaft": 802
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.000491393671836704,
+          "vertex": 1168,
+          "positionMetres": [
+            -0.0290266964584589,
+            -0.10228238254785538,
+            1.447104811668396
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1352
+        },
+        "lashRootErrorMetres": 2.3181438649957402e-05
+      },
+      "arc": {
+        "skin": {
+          "return-return": 353,
+          "return-exterior": 3
+        },
+        "cornea": {
+          "return": 1609
+        },
+        "eye": {
+          "return": 1012
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2017,
+          "shaft": 803
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.00015659544442314655,
+          "vertex": 588,
+          "positionMetres": [
+            0.019319210201501846,
+            -0.11534787714481354,
+            1.466803789138794
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.3181438649957402e-05
+      },
+      "rolled": {
+        "skin": {
+          "return-return": 449,
+          "return-exterior": 3,
+          "exterior-exterior": 11
+        },
+        "cornea": {
+          "return": 1374
+        },
+        "eye": {
+          "return": 820
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2022,
+          "shaft": 804
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.00034247670555487275,
+          "vertex": 1211,
+          "positionMetres": [
+            0.04321325942873955,
+            -0.11100906133651733,
+            1.4624898433685303
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.3181438649957402e-05
+      }
+    },
+    "36.75:1": {
+      "baseline": {
+        "skin": {
+          "return-exterior": 1
+        },
+        "cornea": {},
+        "eye": {},
+        "meniscus": {},
+        "lashes": {
+          "root": 2094,
+          "shaft": 801
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.00045774431782774627,
+          "vertex": 880,
+          "positionMetres": [
+            0.0313897579908371,
+            -0.09662539511919022,
+            1.4677470922470093
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1352
+        },
+        "lashRootErrorMetres": 2.305312575565257e-05
+      },
+      "arc": {
+        "skin": {
+          "return-return": 358,
+          "return-exterior": 3
+        },
+        "cornea": {
+          "return": 1541
+        },
+        "eye": {
+          "return": 988
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2095,
+          "shaft": 802
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.00016608755686320364,
+          "vertex": 602,
+          "positionMetres": [
+            0.06861560046672821,
+            -0.09033778309822083,
+            1.468878984451294
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.305312575565257e-05
+      },
+      "rolled": {
+        "skin": {
+          "exterior-exterior": 28,
+          "return-return": 407,
+          "return-exterior": 3
+        },
+        "cornea": {
+          "return": 1813
+        },
+        "eye": {
+          "return": 894
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2102,
+          "shaft": 803
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.0003961963811889291,
+          "vertex": 1082,
+          "positionMetres": [
+            0.0647144541144371,
+            -0.09034454077482224,
+            1.4682713747024536
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.305312575565257e-05
+      }
+    },
+    "37:0.875": {
+      "baseline": {
+        "skin": {
+          "return-exterior": 1
+        },
+        "cornea": {},
+        "eye": {},
+        "meniscus": {},
+        "lashes": {
+          "root": 2084,
+          "shaft": 746
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.00045866190339438617,
+          "vertex": 880,
+          "positionMetres": [
+            0.0313897579908371,
+            -0.09662539511919022,
+            1.4677470922470093
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1352
+        },
+        "lashRootErrorMetres": 2.304371227063543e-05
+      },
+      "arc": {
+        "skin": {
+          "return-return": 269,
+          "return-exterior": 3
+        },
+        "cornea": {
+          "return": 1497
+        },
+        "eye": {
+          "return": 897
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2088,
+          "shaft": 748
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.0003087106451857835,
+          "vertex": 1082,
+          "positionMetres": [
+            0.06749653071165085,
+            -0.09052912145853043,
+            1.4685004949569702
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.304371227063543e-05
+      },
+      "rolled": {
+        "skin": {
+          "return-return": 282,
+          "return-exterior": 1
+        },
+        "cornea": {
+          "return": 1847
+        },
+        "eye": {
+          "return": 803
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2092,
+          "shaft": 748
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.0004134533810429275,
+          "vertex": 1211,
+          "positionMetres": [
+            0.08449126034975052,
+            -0.07469799369573593,
+            1.4635106325149536
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.304371227063543e-05
+      }
+    },
+    "37:1": {
+      "baseline": {
+        "skin": {},
+        "cornea": {},
+        "eye": {},
+        "meniscus": {},
+        "lashes": {
+          "root": 2094,
+          "shaft": 801
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.00045866190339438617,
+          "vertex": 880,
+          "positionMetres": [
+            0.0313897579908371,
+            -0.09662539511919022,
+            1.4677470922470093
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1352
+        },
+        "lashRootErrorMetres": 2.305264870389849e-05
+      },
+      "arc": {
+        "skin": {
+          "exterior-exterior": 7,
+          "return-return": 358,
+          "return-exterior": 3
+        },
+        "cornea": {
+          "return": 1538
+        },
+        "eye": {
+          "return": 991
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2097,
+          "shaft": 802
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.00016887237143237144,
+          "vertex": 602,
+          "positionMetres": [
+            0.06861484795808792,
+            -0.09033658355474472,
+            1.4688814878463745
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.305264870389849e-05
+      },
+      "rolled": {
+        "skin": {
+          "exterior-exterior": 28,
+          "return-return": 405,
+          "return-exterior": 3
+        },
+        "cornea": {
+          "return": 1807
+        },
+        "eye": {
+          "return": 900
+        },
+        "meniscus": {},
+        "lashes": {
+          "root": 2102,
+          "shaft": 803
+        },
+        "corneaVertexSigned": {
+          "signedMetres": 0.0003976728185079992,
+          "vertex": 1082,
+          "positionMetres": [
+            0.06471394002437592,
+            -0.09034372121095657,
+            1.4682729244232178
+          ],
+          "negativeBeyond8Microns": 0,
+          "sampleCount": 1215
+        },
+        "lashRootErrorMetres": 2.305264870389849e-05
+      }
+    }
+  },
+  "poseScope": "Eight native held poses including first failure at frame 1, blink 0.75, and fractional frame 36.75. Skin polygon pairs compare like roles and avoid shared-vertex pairs. Replacement face identities are new. Signed distances are point samples to the oriented mesh, not continuous or volumetric clearance.",
+  "finiteFaceWitnesses": {
+    "arc": {
+      "wallFace": 188129,
+      "corneaFace": 99,
+      "wallTriangleVertices": [
+        515,
+        531,
+        332
+      ],
+      "corneaTriangleVertices": [
+        121,
+        157,
+        122
+      ],
+      "vertexSignedMetres": [
+        0.0006533619598485529,
+        0.0007628739695064723,
+        0.0010238403920084238
+      ],
+      "faceCentreSignedMetres": -0.0007407318917103112,
+      "axisProjectionMetres": -0.0004953128857483335,
+      "positionMetres": [
+        0.02836587466299534,
+        -0.1009694163997968,
+        1.478048324584961
+      ]
+    },
+    "rolled": {
+      "wallFace": 187768,
+      "corneaFace": 19,
+      "wallTriangleVertices": [
+        1098,
+        937,
+        305
+      ],
+      "corneaTriangleVertices": [
+        40,
+        42,
+        43
+      ],
+      "vertexSignedMetres": [
+        0.0007880643825046718,
+        0.0006522246403619647,
+        0.0006639357306994498
+      ],
+      "faceCentreSignedMetres": -0.0004875563026871532,
+      "axisProjectionMetres": -0.00046412731918465955,
+      "positionMetres": [
+        0.01693060342222452,
+        -0.10591702659924825,
+        1.4721694787343342
+      ]
+    }
+  },
+  "narrowerLashScopeReprobe": {
+    "pose": "1:0",
+    "sameSpatialScopeAsR501": true,
+    "skinToLashShaftPairs": 0,
+    "lashToSkinShaftPairs": 0,
+    "orderCommonShaftPairs": 0,
+    "strictSATWitnessCount": 0,
+    "firstWitnesses": []
+  },
+  "lashAssessment": "The original r501 window reproduces zero exposed shaft pairs at frame 1 open in both BVH query directions. The expanded r502 adjacency scope contains additional inherited shaft overlap candidates. A broader clearance claim does not follow from the original local audit.",
+  "boards": {
+    "macro": {
+      "path": "F:\\AevryndEvidence\\r0502-lid-return\\r0502-macro-comparison.png",
+      "bytes": 396362,
+      "sha256": "7c4d0a8dba03d20858d210d0e8e8bfb4c43de1eebc59bdd229b6ef1f76c1e3ef"
+    },
+    "turned": {
+      "path": "F:\\AevryndEvidence\\r0502-lid-return\\r0502-turned-comparison.png",
+      "bytes": 408267,
+      "sha256": "4d1b3e10052c3c582a3e456059b77066d99a881ded6187226366e4230fc8bdb4"
+    },
+    "head": {
+      "path": "F:\\AevryndEvidence\\r0502-lid-return\\r0502-head-comparison.png",
+      "bytes": 1172032,
+      "sha256": "0c31d1589b9f03d5426fca0bfed8cb9bf750c3b938e3645e657e5717100bb23f"
+    },
+    "blink-body": {
+      "path": "F:\\AevryndEvidence\\r0502-lid-return\\r0502-blink-body-comparison.png",
+      "bytes": 770315,
+      "sha256": "7e89fc503f96183fe1a6d005ba793f983bfa2f505a03badbab76675a71cc5b34"
+    },
+    "finite-face": {
+      "path": "F:\\AevryndEvidence\\r0502-lid-return\\r0502-finite-face-comparison.png",
+      "bytes": 50288,
+      "sha256": "0d78ad1ec9e9b368269c992828f16ec1cd79dd8d423f3f7bf641839faa5e62f0"
+    }
+  },
+  "matchedViews": 10,
+  "freshCandidateRenders": 20,
+  "visualAssessment": "Both candidates retain the pronounced angular crease, the late blink silhouette and mostly the same eyelid relief. The upper margin changes subtly in the fixed macros, with insufficient improvement in complete front, oblique or profile views.",
+  "categoryReview": {
+    "anatomy": "Reconstructed eye return only. Rest body comparison is present. No body anatomy or motion improvement.",
+    "face": "The angular outer closed fold remains. No credible head-scale gain.",
+    "eyes": "Both designs intersect the cornea at open and closing poses.",
+    "skin": "Same shaders and exposure. Two eyes have new joined interior topology, with thin-face and self-intersection issues.",
+    "hair": "Verified original strand coordinates. Broad sheet-like groups remain visible, especially at the crown and temple.",
+    "clothing": "Outside this round. No layering or simulation approval.",
+    "motion": "Two native lid controls switch and restore. No swept motion certification.",
+    "collision": "The finite face tests reject both. The old 12 boundary/nonmanifold edges remain. A total of 137 preserved IDs have no face in the rebuilt wall.",
+    "performance": "Only local Blender resources and render time. Engine budget and tests remain open."
+  },
+  "scoreIncrease": false,
+  "resources": {
+    "startTaipei": "2026-11-11T14:32:09+08:00",
+    "supportDeadlineTaipei": "2026-11-11T14:42:09+08:00",
+    "firstPreviewDeadlineTaipei": "2026-11-11T15:02:09+08:00",
+    "completePreviewTaipei": "2026-11-11T14:46:36+08:00",
+    "resourceCheckpointTaipei": "2026-11-11T15:17:09+08:00",
+    "workers": 1,
+    "blenderThreads": 4,
+    "probePeakPrivateBytes": 1891196928,
+    "authorPeakPrivateBytes": 2365505536,
+    "contactPeakPrivateBytes": 2447675392,
+    "finiteWitnessPeakPrivateBytes": 2214100992,
+    "firstPreviewPeakPrivateBytes": 3359584256,
+    "resumedPreviewPeakPrivateBytes": 3791761408,
+    "previewInterruption": "System commit guard stopped the first Blender renderer before any image finished. The first retry did not start. Twenty views finished in a single resumed job after headroom returned.",
+    "engineCPUSeconds": null,
+    "engineGPUSeconds": null,
+    "engineMemoryBytes": null
+  },
+  "nextAction": "Keep r500 B. Retire wholesale spherical inner-wall strips between widely spaced support rows. Use the original contact-cleared posterior wall and replace the front margin locally with a conforming patch that follows the measured mesh and limits each triangle span. Test actual cornea/skin triangles at open, .75, and turned-closed poses before attempting a larger visible contour change. Carry the broad hair form as a major unresolved defect."
+}
