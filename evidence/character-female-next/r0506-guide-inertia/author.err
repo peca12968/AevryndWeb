@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "F:\AevryndEvidence\r0506-guide-inertia\author-r0506.py", line 362, in <module>
+    main()
+    ~~~~^^
+  File "F:\AevryndEvidence\r0506-guide-inertia\author-r0506.py", line 338, in main
+    socket=add_modifier(hair,proxies)
+  File "F:\AevryndEvidence\r0506-guide-inertia\author-r0506.py", line 277, in add_modifier
+    proxy=switch('GEOMETRY',compare(mode,1),geom(proxies['rod']),geom(proxies['spring']))
+                            ~~~~~~~^^^^^^^^
+  File "F:\AevryndEvidence\r0506-guide-inertia\author-r0506.py", line 246, in compare
+    links.new(inp,node.inputs[2])
+                  ~~~~~~~~~~~^^^
+IndexError: bpy_prop_collection[index]: index 2 out of range, size 2
+
+Error: script failed, file: 'F:\AevryndEvidence\r0506-guide-inertia\author-r0506.py', exiting.

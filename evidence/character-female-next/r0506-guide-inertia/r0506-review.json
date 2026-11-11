@@ -1,0 +1,448 @@
+{
+  "round": "r0506",
+  "decision": "REJECT_R0506_MOTION_KEEP_R0505_HAIRSTYLE",
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0506-guide-inertia\\female-next-r0506-guide-inertia-UNACCEPTED.blend",
+    "sha256": "4f8ee6d778ad464db3ac9469ad69b7ee48a453a0578d48880545e7b98fa2db6a",
+    "bytes": 440333139
+  },
+  "hairstyleResearchRollback": {
+    "path": "F:\\AevryndEvidence\\r0505-ear-nape-bridge\\female-next-r0505-ear-nape-bridge-UNACCEPTED.blend",
+    "sha256": "22c7d07d7f3173ac579c18dc93f0d626bcbc25e4bd4e10650a2c1d2b80422b65",
+    "bytes": 438534180
+  },
+  "workingWoman": {
+    "path": "F:\\AevryndEvidence\\r0500-multi-pose-lid\\female-next-r0500-multi-pose-lid-UNACCEPTED.blend",
+    "sha256": "d1af8ee646bacb96c5340eb2a2e7455c111d41d75cdedb7ce0a07a09e68e1b68",
+    "bytes": 325339138
+  },
+  "scoreIncrease": false,
+  "runtimeOrWebsiteChanged": false,
+  "maleWorkStarted": false,
+  "resources": {
+    "startTaipei": "2026-11-11T15:54:13+08:00",
+    "supportDeadlineTaipei": "2026-11-11T16:04:13+08:00",
+    "firstPreviewDeadlineTaipei": "2026-11-11T16:24:13+08:00",
+    "completeMatchedViewsTaipei": "2026-11-11T16:09:08+08:00",
+    "completeMotionRenderTaipei": "2026-11-11T16:10:54+08:00",
+    "resourceCheckpointTaipei": "2026-11-11T16:39:13+08:00",
+    "workers": 1,
+    "blenderThreads": 4,
+    "authorPeakPrivateBytes": 3459080192,
+    "authorHighestAttemptPrivateBytes": 3536793600,
+    "firstPreviewPeakPrivateBytes": 3613417472,
+    "resumedPreviewPeakPrivateBytes": 3611381760,
+    "contactPeakPrivateBytes": 4187127808,
+    "authorRecovery": "Changed obsolete Blender 5.1-style GN input assignment to the Blender 5.2 RNA input after two setup failures. Both failures occurred before source save.",
+    "previewRecovery": "The first verifier stopped at the Windows commit reserve after fourteen checks and before rendering. The resumed verifier reopened the same source and completed the check and all renders.",
+    "engineCPUSeconds": null,
+    "engineGPUSeconds": null,
+    "engineMemoryBytes": null
+  },
+  "operation": {
+    "frames": [
+      1,
+      37
+    ],
+    "fps": 24.0,
+    "controlModel": [
+      "rigid",
+      "spring",
+      "rod"
+    ],
+    "pinnedControlPointsPerCurve": 9,
+    "curves": 24831,
+    "matchedRenderCount": 54,
+    "motionSampleFrames": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      12,
+      14,
+      17,
+      22,
+      29,
+      37
+    ],
+    "independentReopen": true
+  },
+  "visualFindings": [
+    "The spring model barely changes the visible hair silhouette under the matched 32-degree test.",
+    "The projected model yields an isolated displacement outlier rather than a legible improvement in whole-groom response.",
+    "Front, oblique, profile, crown, rear and full-body shots preserve the prior hairstyle and expression. The crown still reads as broad smooth ribbons, the rear as a continuous sheet, and the temples as thin curtains."
+  ],
+  "keyframeMotionMm": {
+    "rigid:4": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "spring:4": [
+      1.0758248567581177,
+      1.4960557222366333,
+      1.6072470188140873,
+      1.6655141115188599
+    ],
+    "rod:4": [
+      2.3499081134796143,
+      2.862629532814026,
+      2.9997457027435304,
+      3.101567268371582
+    ],
+    "rigid:9": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "spring:9": [
+      1.7871792316436768,
+      2.039364218711853,
+      2.124451923370361,
+      2.1934070587158203
+    ],
+    "rod:9": [
+      2.0958385467529297,
+      2.4592047929763794,
+      3.7852588415146218,
+      66.72814178466797
+    ],
+    "rigid:10": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "spring:10": [
+      2.1821815967559814,
+      2.7135512828826904,
+      2.871068620681764,
+      2.984253168106079
+    ],
+    "rod:10": [
+      3.6467559337615967,
+      4.098931550979614,
+      4.47991776466371,
+      53.187461853027344
+    ],
+    "rigid:12": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "spring:12": [
+      1.7110873460769653,
+      2.5055572986602783,
+      2.725164771080017,
+      2.842031717300415
+    ],
+    "rod:12": [
+      4.554660320281982,
+      6.091100692749023,
+      6.568664121627808,
+      22.095064163208008
+    ],
+    "rigid:17": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "spring:17": [
+      0.04530800133943558,
+      0.11968837305903435,
+      0.13529644906520846,
+      0.14863327145576477
+    ],
+    "rod:17": [
+      0.4280383586883545,
+      0.5010292232036591,
+      0.5492492079734802,
+      0.938340961933136
+    ],
+    "rigid:37": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "spring:37": [
+      7.450580596923828e-06,
+      1.666000571276527e-05,
+      2.1073423340567388e-05,
+      2.1073423340567388e-05
+    ],
+    "rod:37": [
+      3.725290298461914e-05,
+      0.0005327425897121429,
+      0.0005890200845897198,
+      0.0006605119560845196
+    ]
+  },
+  "projectionDiagnostic": {
+    "frame": 8,
+    "guideCurveId": 8311,
+    "controlIndex": 72,
+    "projectedMm": 67.9447250366211,
+    "withoutProjectionMm": 1.9119038581848145
+  },
+  "skinContact": {
+    "9": {
+      "yawDegrees": 27.87449483856323,
+      "modes": {
+        "rigid": {
+          "curves": 3825,
+          "points": 3629925,
+          "insideCentres": 0,
+          "crossingChords": 0,
+          "unresolvedRadiusSegments": 0,
+          "failedCurves": 0,
+          "newFailedCurves": 0,
+          "seconds": 12.99053539999295,
+          "closestWitness": {
+            "curveID": 5404,
+            "positionMetres": [
+              0.05303359404206276,
+              -0.09409305453300476,
+              1.5456401109695435
+            ],
+            "radiusMetres": 3.4944274375448003e-05,
+            "signedOrBoundMetres": 7.991243910510093e-05,
+            "kind": "positive oriented sample"
+          }
+        },
+        "spring": {
+          "curves": 3825,
+          "points": 3629925,
+          "insideCentres": 0,
+          "crossingChords": 0,
+          "unresolvedRadiusSegments": 0,
+          "failedCurves": 0,
+          "newFailedCurves": 0,
+          "seconds": 13.001900700037368,
+          "closestWitness": {
+            "curveID": 5404,
+            "positionMetres": [
+              0.05303359404206276,
+              -0.09409305453300476,
+              1.5456401109695435
+            ],
+            "radiusMetres": 3.4944274375448003e-05,
+            "signedOrBoundMetres": 7.991243910510093e-05,
+            "kind": "positive oriented sample"
+          }
+        },
+        "rod": {
+          "curves": 3825,
+          "points": 3629925,
+          "insideCentres": 0,
+          "crossingChords": 0,
+          "unresolvedRadiusSegments": 0,
+          "failedCurves": 0,
+          "newFailedCurves": 0,
+          "seconds": 12.976858099980745,
+          "closestWitness": {
+            "curveID": 5404,
+            "positionMetres": [
+              0.05303359404206276,
+              -0.09409305453300476,
+              1.5456401109695435
+            ],
+            "radiusMetres": 3.4944274375448003e-05,
+            "signedOrBoundMetres": 7.991243910510093e-05,
+            "kind": "positive oriented sample"
+          }
+        }
+      }
+    },
+    "12": {
+      "yawDegrees": 32.00000136487779,
+      "modes": {
+        "rigid": {
+          "curves": 3690,
+          "points": 3501810,
+          "insideCentres": 0,
+          "crossingChords": 0,
+          "unresolvedRadiusSegments": 0,
+          "failedCurves": 0,
+          "newFailedCurves": 0,
+          "seconds": 12.542048299976159,
+          "closestWitness": {
+            "curveID": 10692,
+            "positionMetres": [
+              0.05843401700258255,
+              -0.09010756760835648,
+              1.545428991317749
+            ],
+            "radiusMetres": 3.4966262319358066e-05,
+            "signedOrBoundMetres": 7.451002602465451e-05,
+            "kind": "positive oriented sample"
+          }
+        },
+        "spring": {
+          "curves": 3690,
+          "points": 3501810,
+          "insideCentres": 0,
+          "crossingChords": 0,
+          "unresolvedRadiusSegments": 0,
+          "failedCurves": 0,
+          "newFailedCurves": 0,
+          "seconds": 12.395661199989263,
+          "closestWitness": {
+            "curveID": 10692,
+            "positionMetres": [
+              0.05843401700258255,
+              -0.09010756760835648,
+              1.545428991317749
+            ],
+            "radiusMetres": 3.4966262319358066e-05,
+            "signedOrBoundMetres": 7.451002602465451e-05,
+            "kind": "positive oriented sample"
+          }
+        },
+        "rod": {
+          "curves": 3690,
+          "points": 3501810,
+          "insideCentres": 0,
+          "crossingChords": 0,
+          "unresolvedRadiusSegments": 0,
+          "failedCurves": 0,
+          "newFailedCurves": 0,
+          "seconds": 12.987375299970154,
+          "closestWitness": {
+            "curveID": 10692,
+            "positionMetres": [
+              0.05843401700258255,
+              -0.09010756760835648,
+              1.545428991317749
+            ],
+            "radiusMetres": 3.4966262319358066e-05,
+            "signedOrBoundMetres": 7.451002602465451e-05,
+            "kind": "positive oriented sample"
+          }
+        }
+      }
+    },
+    "17": {
+      "yawDegrees": 32.00000136487779,
+      "modes": {
+        "rigid": {
+          "curves": 3940,
+          "points": 3739060,
+          "insideCentres": 0,
+          "crossingChords": 0,
+          "unresolvedRadiusSegments": 0,
+          "failedCurves": 0,
+          "newFailedCurves": 0,
+          "seconds": 13.02598759997636,
+          "closestWitness": {
+            "curveID": 10692,
+            "positionMetres": [
+              0.05843401700258255,
+              -0.09010756760835648,
+              1.545428991317749
+            ],
+            "radiusMetres": 3.4966262319358066e-05,
+            "signedOrBoundMetres": 7.451002602465451e-05,
+            "kind": "positive oriented sample"
+          }
+        },
+        "spring": {
+          "curves": 3940,
+          "points": 3739060,
+          "insideCentres": 0,
+          "crossingChords": 0,
+          "unresolvedRadiusSegments": 0,
+          "failedCurves": 0,
+          "newFailedCurves": 0,
+          "seconds": 12.92522590002045,
+          "closestWitness": {
+            "curveID": 10692,
+            "positionMetres": [
+              0.05843401700258255,
+              -0.09010756760835648,
+              1.545428991317749
+            ],
+            "radiusMetres": 3.4966262319358066e-05,
+            "signedOrBoundMetres": 7.451002602465451e-05,
+            "kind": "positive oriented sample"
+          }
+        },
+        "rod": {
+          "curves": 3940,
+          "points": 3739060,
+          "insideCentres": 0,
+          "crossingChords": 0,
+          "unresolvedRadiusSegments": 0,
+          "failedCurves": 0,
+          "newFailedCurves": 0,
+          "seconds": 13.034527500043623,
+          "closestWitness": {
+            "curveID": 10692,
+            "positionMetres": [
+              0.05843401700258255,
+              -0.09010756760835648,
+              1.545428991317749
+            ],
+            "radiusMetres": 3.4966262319358066e-05,
+            "signedOrBoundMetres": 7.451002602465451e-05,
+            "kind": "positive oriented sample"
+          }
+        }
+      }
+    }
+  },
+  "artifacts": {
+    "r0506-head-comparison.png": {
+      "path": "F:\\AevryndEvidence\\r0506-guide-inertia\\r0506-head-comparison.png",
+      "bytes": 1118287,
+      "sha256": "4bfd84185ae57f3147a8b754c9d1759676de7b2ec00368a0752af0d9903c3727"
+    },
+    "r0506-body-comparison.png": {
+      "path": "F:\\AevryndEvidence\\r0506-guide-inertia\\r0506-body-comparison.png",
+      "bytes": 697790,
+      "sha256": "177dd9b7ddb2b5c17cd40dd5730a59fe8250d92ac52c667cf3729e01fc709195"
+    },
+    "r0506-motion-comparison.png": {
+      "path": "F:\\AevryndEvidence\\r0506-guide-inertia\\r0506-motion-comparison.png",
+      "bytes": 1349497,
+      "sha256": "a4c6b1a5545660763b7adec5f3bc5ed53ded6a6f0eaed43e46a5b57acde20fe9"
+    },
+    "r0506-hair-motion.gif": {
+      "path": "F:\\AevryndEvidence\\r0506-guide-inertia\\r0506-hair-motion.gif",
+      "bytes": 992479,
+      "sha256": "02ec16435c57b81418b0a6ecc07c58512f1c0ff215a2e2ff8bede3e07c88caba"
+    },
+    "preview-receipt.json": {
+      "path": "F:\\AevryndEvidence\\r0506-guide-inertia\\preview-receipt.json",
+      "bytes": 60459,
+      "sha256": "b450d7a5eb0518fb5701ffafcb2babebb67c521f701317c415c53eb49fae5d35"
+    },
+    "reopen-verification.json": {
+      "path": "F:\\AevryndEvidence\\r0506-guide-inertia\\reopen-verification.json",
+      "bytes": 17515,
+      "sha256": "5b8e40075e7f5e90a1649607060edb2be0401b34a93a779b1dc0f2aa7ef10ce0"
+    },
+    "projection-diagnostic.json": {
+      "path": "F:\\AevryndEvidence\\r0506-guide-inertia\\projection-diagnostic.json",
+      "bytes": 8641,
+      "sha256": "7109a10fd7a13d5a768a3302228b0cd6350598d3980229d3f0c9c03c7b00faf2"
+    },
+    "skin-contact.json": {
+      "path": "F:\\AevryndEvidence\\r0506-guide-inertia\\skin-contact.json",
+      "bytes": 186656,
+      "sha256": "b476a865f217a7920d1446909401855d62355293740cc4da49582900b338fc61"
+    }
+  },
+  "limits": [
+    "Tested discrete posed skin against evaluated chords and interpolated radii of a selected strand population.",
+    "Garment contact, inter-strand contact, continuous-time clearance, and engine playback were not verified."
+  ],
+  "nextAction": "Keep r0505 B as hairstyle research and r0500 B as the complete working woman. Change the broad crown and rear lock construction before another motion refinement. Retain the reproducible guide fixture and add a continuous, conservative skin-contact premise before approving live motion.",
+  "recordedAt": "2026-11-11T16:13:58.512936+08:00"
+}
