@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "F:\AevryndEvidence\r0496-overlapping-rear-locks\author-r0496.py", line 207, in <module>
+    main()
+    ~~~~^^
+  File "F:\AevryndEvidence\r0496-overlapping-rear-locks\author-r0496.py", line 170, in main
+    bank, weights, joins, groups, local = generate(base, ids, owner, guide)
+                                          ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\AevryndEvidence\r0496-overlapping-rear-locks\author-r0496.py", line 139, in generate
+    assert np.isfinite(result).all() and np.array_equal(result[:, 0], base[:, 0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'F:\AevryndEvidence\r0496-overlapping-rear-locks\author-r0496.py', exiting.

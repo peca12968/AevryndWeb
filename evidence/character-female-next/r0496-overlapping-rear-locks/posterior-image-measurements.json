@@ -1,0 +1,53 @@
+{
+  "method": "Fixed 640x640 images. Dark means luminance less than 65 percent of the median in same-row flanking bands. Rear ROI x348-378 and y330-509 with x316-338 and x385-405 flanks. Rear width uses luminance above 24 in that band. Oblique ROI x307-340 and y335-474 with x280-302 and x346-366 flanks. The strips measure rendered contrast.",
+  "frames": [
+    {
+      "variant": "control",
+      "rearSha256": "a1ba4f738ac28bb87f2dfbf3971fc793f36410734acc239f9a4c4372b13a7d31",
+      "obliqueSha256": "dc17e0e777a821ccf87197c237ce4581d655675572e7b6d940b460e8eea525a9",
+      "rearMaximumWidthPixels": 402,
+      "rearStripe": {
+        "darkPixels": 0,
+        "rowsWithDarkPixels": 0,
+        "longestConsecutiveRows": 0
+      },
+      "obliqueStripe": {
+        "darkPixels": 2,
+        "rowsWithDarkPixels": 1,
+        "longestConsecutiveRows": 1
+      }
+    },
+    {
+      "variant": "separate",
+      "rearSha256": "d2698eae69421eea55ff431a17add3e6c488e49de8e8afcc5d0a7af28cef4700",
+      "obliqueSha256": "fb5f5e254478c45a7b17dcc3fd34b036c04b42c97385893651084d46dd396fcb",
+      "rearMaximumWidthPixels": 402,
+      "rearStripe": {
+        "darkPixels": 0,
+        "rowsWithDarkPixels": 0,
+        "longestConsecutiveRows": 0
+      },
+      "obliqueStripe": {
+        "darkPixels": 772,
+        "rowsWithDarkPixels": 117,
+        "longestConsecutiveRows": 114
+      }
+    },
+    {
+      "variant": "woven",
+      "rearSha256": "b06a5f7874117d4eb099b2021040fadde6e6b1180976d299cdfdfcfb3a6c31d0",
+      "obliqueSha256": "adfd692c53d559db1ea50991cd3796f839877cb36bf9324b6fb52db154d80a0d",
+      "rearMaximumWidthPixels": 402,
+      "rearStripe": {
+        "darkPixels": 1,
+        "rowsWithDarkPixels": 1,
+        "longestConsecutiveRows": 1
+      },
+      "obliqueStripe": {
+        "darkPixels": 900,
+        "rowsWithDarkPixels": 105,
+        "longestConsecutiveRows": 99
+      }
+    }
+  ]
+}
