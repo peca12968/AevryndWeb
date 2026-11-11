@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "F:\AevryndEvidence\r0498-orbit-cheek\inspect-r0498.py", line 50, in <module>
+    main()
+    ~~~~^^
+  File "F:\AevryndEvidence\r0498-orbit-cheek\inspect-r0498.py", line 31, in main
+    row['materials'] = [mat.name for mat in obj.data.materials]
+                        ^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'name'
+
+Error: script failed, file: 'F:\AevryndEvidence\r0498-orbit-cheek\inspect-r0498.py', exiting.

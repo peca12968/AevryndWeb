@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "F:\AevryndEvidence\r0498-orbit-cheek\author-r0498.py", line 200, in <module>
+    main()
+    ~~~~^^
+  File "F:\AevryndEvidence\r0498-orbit-cheek\author-r0498.py", line 172, in main
+    candidate, strain = topology_safe_sculpt(basis, guarded, label, triangles)
+                        ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\AevryndEvidence\r0498-orbit-cheek\author-r0498.py", line 153, in topology_safe_sculpt
+    assert not len(remaining), (label, final, basis[np.unique(remaining)].mean(0).tolist() if len(remaining) else None)
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: ('malar', {'editedTriangles': 3841, 'nondegenerateTriangles': 3838, 'minimumAreaRatio': 0.3984343400134868, 'maximumAreaRatio': 1.423327542947609, 'reversedTriangles': 0}, [-0.007139566820114851, -0.09964308887720108, 1.456250786781311])
+
+Error: script failed, file: 'F:\AevryndEvidence\r0498-orbit-cheek\author-r0498.py', exiting.

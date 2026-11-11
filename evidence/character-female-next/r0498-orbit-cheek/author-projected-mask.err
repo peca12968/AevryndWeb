@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "F:\AevryndEvidence\r0498-orbit-cheek\author-r0498.py", line 199, in <module>
+    main()
+    ~~~~^^
+  File "F:\AevryndEvidence\r0498-orbit-cheek\author-r0498.py", line 171, in main
+    candidate, strain = exterior_sculpt(basis, guarded, label, triangles, surface)
+                        ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\AevryndEvidence\r0498-orbit-cheek\author-r0498.py", line 151, in exterior_sculpt
+    assert stats['reversedTriangles'] == 0, (label, stats)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('malar', {'editedTriangles': 2669, 'nondegenerateTriangles': 2669, 'minimumAreaRatio': 0.3303686001196064, 'maximumAreaRatio': 8.100388705803446, 'reversedTriangles': 2, 'trianglesBelowHalfArea': 3})
+
+Error: script failed, file: 'F:\AevryndEvidence\r0498-orbit-cheek\author-r0498.py', exiting.

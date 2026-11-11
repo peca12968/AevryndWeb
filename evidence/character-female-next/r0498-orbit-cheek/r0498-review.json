@@ -1,0 +1,1843 @@
+{
+  "round": "r0498",
+  "decision": "RETAIN_ORBIT_CHEEK_UNACCEPTED",
+  "scope": "B makes the lateral orbit-to-cheek transition slightly more defined and less round than A. The whole character remains unaccepted.",
+  "previousCommit": "6caf9aef2af4207d9f8e18b1855fbc38078c9047",
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\female-next-r0498-orbit-cheek-UNACCEPTED.blend",
+    "sha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+    "bytes": 321905506
+  },
+  "parent": {
+    "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\female-next-r0497-feathered-rear-locks-UNACCEPTED.blend",
+    "sha256": "59b970db173b739ea5703d747821de302532b5cf7710dc8dbf3369a5e2386f9f",
+    "bytes": 318467160
+  },
+  "preferredResearch": "orbital",
+  "defaultVisibleVariant": "orbital",
+  "appearance": {
+    "cameras": [
+      "portrait-front",
+      "portrait-oblique",
+      "portrait-profile",
+      "half-blink",
+      "closed-blink",
+      "rear-oblique",
+      "full-body"
+    ],
+    "gains": [
+      "B defines a more gradual diagonal cheek rise under the outer lower lid at fixed light and exposure.",
+      "Hair silhouette and facial identity are preserved.",
+      "The local gain remains visible at partial and full blink."
+    ],
+    "defects": [
+      "A has a puffier highlight in the oblique view.",
+      "B is a subtle change and the inherited closed-eyelid fold remains conspicuous.",
+      "Skin optics and hair surface sheen need separate work."
+    ]
+  },
+  "construction": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\female-next-r0498-orbit-cheek-UNACCEPTED.blend",
+      "sha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+      "bytes": 321905506
+    },
+    "parent": {
+      "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\female-next-r0497-feathered-rear-locks-UNACCEPTED.blend",
+      "sha256": "59b970db173b739ea5703d747821de302532b5cf7710dc8dbf3369a5e2386f9f",
+      "bytes": 318467160
+    },
+    "body": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+    "gaze": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+    "blinkProperty": "R448_Blink",
+    "defaultVisible": "orbital",
+    "variants": {
+      "malar": {
+        "key": "R498 A | Malar support",
+        "coordinateHash": "f0d9ff54c76ac87bd8f11caa055eb911c14cc86be034fc0cb35ba21d5cc8f75a",
+        "changedVertices": 1087,
+        "maximumLocalDisplacementMetres": 0.003177894977852702,
+        "orientationLimitScale": 1.0,
+        "editedTriangles": 2404,
+        "nondegenerateTriangles": 2404,
+        "minimumAreaRatio": 0.8454517293502917,
+        "maximumAreaRatio": 1.1760755434921573,
+        "reversedTriangles": 0,
+        "trianglesBelowHalfArea": 0,
+        "belowHalfAreaOriginalAreaMaxMm2": 0.0
+      },
+      "orbital": {
+        "key": "R498 B | Orbit and cheek transition",
+        "coordinateHash": "4a6a24c302135904fe756ae1ce5a9102bcdc7842d55a2ba106f103cab9287cb6",
+        "changedVertices": 1320,
+        "maximumLocalDisplacementMetres": 0.0022820215672254562,
+        "orientationLimitScale": 1.0,
+        "editedTriangles": 2934,
+        "nondegenerateTriangles": 2934,
+        "minimumAreaRatio": 0.8131675406367964,
+        "maximumAreaRatio": 1.179976164224805,
+        "reversedTriangles": 0,
+        "trianglesBelowHalfArea": 0,
+        "belowHalfAreaOriginalAreaMaxMm2": 0.0
+      }
+    },
+    "frame": 1,
+    "savedBlink": 0.0,
+    "basisHash": "bbeca94ffab2b5869f2890436bded196cf31ac59625bf90d6a253cc975b92902",
+    "topologyHash": "2aa622ecf7be58650dd36a47d57f0bbd2d7a88f0af984f3c68cfced788cff2c1",
+    "guardedVertices": 4546,
+    "protectedLidVertices": 2216,
+    "protectedScalpVertices": 1313,
+    "proxyToDisplayedScalpMaximumMetres": 0.0,
+    "protectedIndexHash": "abb69665c4d1f6bfcad983ec3488ef3d624e6b5e5d5d86307e79e337fff1e112",
+    "hair": {
+      "object": "R497 complete hair | supported",
+      "positionHash": "55964445e3de793a4a7638c3d871f920bf07544085a70666acebb06e6e0b4f9d"
+    }
+  },
+  "replay": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\female-next-r0498-orbit-cheek-UNACCEPTED.blend",
+      "sha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+      "bytes": 321905506
+    },
+    "evaluated": {
+      "0.0": {
+        "control": {
+          "skinHash": "1e2995466778fbaaffdc436682b71b213070bc47106b02b122add29f8e1a864a",
+          "layerHashes": {
+            "AFN126_ORIGINAL_Eye_Eye_0": "62ac4c5fe0aed267c5bb6fbc688e4e728275349a8d6b2be1a0528534b5475384",
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": "f41292310a7632f0fc05a681f07c476ba2a8aef5736b4f9e077da10d213f2b01",
+            "R458 A | Full-gaze lower tear menisci": "f0d5f985d141ba2b2ab49a73984ea6bd567db1e39cd935a5cf71ce23bf8aaa78",
+            "R461 A | Shaft relief": "b31a028c2093be09898c1b1935296e48f025eb8c27ea827a08d4d8d875f58818"
+          }
+        },
+        "malar": {
+          "skinHash": "7fad922d4b0a7ac9e8ccd21d1aa1044e9f57cf6596f3378aa348a25e37bbd499",
+          "maximumDeltaMetres": 0.003177894977852702,
+          "editedVertices": 1087,
+          "maximumGuardedChangeMetres": 0.0,
+          "maximumLidChangeMetres": 0.0,
+          "maximumScalpChangeMetres": 0.0,
+          "layers": {
+            "AFN126_ORIGINAL_Eye_Eye_0": {
+              "hash": "62ac4c5fe0aed267c5bb6fbc688e4e728275349a8d6b2be1a0528534b5475384",
+              "maxChangeMetres": 0.0
+            },
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": {
+              "hash": "f41292310a7632f0fc05a681f07c476ba2a8aef5736b4f9e077da10d213f2b01",
+              "maxChangeMetres": 0.0
+            },
+            "R458 A | Full-gaze lower tear menisci": {
+              "hash": "f0d5f985d141ba2b2ab49a73984ea6bd567db1e39cd935a5cf71ce23bf8aaa78",
+              "maxChangeMetres": 0.0
+            },
+            "R461 A | Shaft relief": {
+              "hash": "b31a028c2093be09898c1b1935296e48f025eb8c27ea827a08d4d8d875f58818",
+              "maxChangeMetres": 0.0
+            }
+          }
+        },
+        "orbital": {
+          "skinHash": "f85877131b8f1e3bce2210178d834893b9e5ef2d52e0a8e46969826e5117a674",
+          "maximumDeltaMetres": 0.0022820215672254562,
+          "editedVertices": 1320,
+          "maximumGuardedChangeMetres": 0.0,
+          "maximumLidChangeMetres": 0.0,
+          "maximumScalpChangeMetres": 0.0,
+          "layers": {
+            "AFN126_ORIGINAL_Eye_Eye_0": {
+              "hash": "62ac4c5fe0aed267c5bb6fbc688e4e728275349a8d6b2be1a0528534b5475384",
+              "maxChangeMetres": 0.0
+            },
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": {
+              "hash": "f41292310a7632f0fc05a681f07c476ba2a8aef5736b4f9e077da10d213f2b01",
+              "maxChangeMetres": 0.0
+            },
+            "R458 A | Full-gaze lower tear menisci": {
+              "hash": "f0d5f985d141ba2b2ab49a73984ea6bd567db1e39cd935a5cf71ce23bf8aaa78",
+              "maxChangeMetres": 0.0
+            },
+            "R461 A | Shaft relief": {
+              "hash": "b31a028c2093be09898c1b1935296e48f025eb8c27ea827a08d4d8d875f58818",
+              "maxChangeMetres": 0.0
+            }
+          }
+        }
+      },
+      "0.5": {
+        "control": {
+          "skinHash": "862a8309df47660cc020d5904331383dc7dc14fca6e5e7f926af23a22ec5a9c8",
+          "layerHashes": {
+            "AFN126_ORIGINAL_Eye_Eye_0": "62ac4c5fe0aed267c5bb6fbc688e4e728275349a8d6b2be1a0528534b5475384",
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": "f41292310a7632f0fc05a681f07c476ba2a8aef5736b4f9e077da10d213f2b01",
+            "R458 A | Full-gaze lower tear menisci": "7c6fbb165a83be54d4165735f795818501eab35c8a393922b6002658a01a3210",
+            "R461 A | Shaft relief": "2f4d5e3c22df57e1f9e8804b6a804e690a411a3c680156522c125800b99fb25e"
+          }
+        },
+        "malar": {
+          "skinHash": "bb51a5a3c9b108e624babf9c2aaba59d0312ab533f26b05d7761225c0e6e9741",
+          "maximumDeltaMetres": 0.003177894977852702,
+          "editedVertices": 1087,
+          "maximumGuardedChangeMetres": 0.0,
+          "maximumLidChangeMetres": 0.0,
+          "maximumScalpChangeMetres": 0.0,
+          "layers": {
+            "AFN126_ORIGINAL_Eye_Eye_0": {
+              "hash": "62ac4c5fe0aed267c5bb6fbc688e4e728275349a8d6b2be1a0528534b5475384",
+              "maxChangeMetres": 0.0
+            },
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": {
+              "hash": "f41292310a7632f0fc05a681f07c476ba2a8aef5736b4f9e077da10d213f2b01",
+              "maxChangeMetres": 0.0
+            },
+            "R458 A | Full-gaze lower tear menisci": {
+              "hash": "7c6fbb165a83be54d4165735f795818501eab35c8a393922b6002658a01a3210",
+              "maxChangeMetres": 0.0
+            },
+            "R461 A | Shaft relief": {
+              "hash": "2f4d5e3c22df57e1f9e8804b6a804e690a411a3c680156522c125800b99fb25e",
+              "maxChangeMetres": 0.0
+            }
+          }
+        },
+        "orbital": {
+          "skinHash": "6631e7e5eb7e9a7b87f378dac216d6e4be1ae3950cad833b421778ef7c98f85e",
+          "maximumDeltaMetres": 0.0022820215672254562,
+          "editedVertices": 1320,
+          "maximumGuardedChangeMetres": 0.0,
+          "maximumLidChangeMetres": 0.0,
+          "maximumScalpChangeMetres": 0.0,
+          "layers": {
+            "AFN126_ORIGINAL_Eye_Eye_0": {
+              "hash": "62ac4c5fe0aed267c5bb6fbc688e4e728275349a8d6b2be1a0528534b5475384",
+              "maxChangeMetres": 0.0
+            },
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": {
+              "hash": "f41292310a7632f0fc05a681f07c476ba2a8aef5736b4f9e077da10d213f2b01",
+              "maxChangeMetres": 0.0
+            },
+            "R458 A | Full-gaze lower tear menisci": {
+              "hash": "7c6fbb165a83be54d4165735f795818501eab35c8a393922b6002658a01a3210",
+              "maxChangeMetres": 0.0
+            },
+            "R461 A | Shaft relief": {
+              "hash": "2f4d5e3c22df57e1f9e8804b6a804e690a411a3c680156522c125800b99fb25e",
+              "maxChangeMetres": 0.0
+            }
+          }
+        }
+      },
+      "1.0": {
+        "control": {
+          "skinHash": "cb6e10334b90fc7e0d6b3846403945062e41a0e1b803988fa5e2c2ecdd137e14",
+          "layerHashes": {
+            "AFN126_ORIGINAL_Eye_Eye_0": "62ac4c5fe0aed267c5bb6fbc688e4e728275349a8d6b2be1a0528534b5475384",
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": "f41292310a7632f0fc05a681f07c476ba2a8aef5736b4f9e077da10d213f2b01",
+            "R458 A | Full-gaze lower tear menisci": "ee2d5a9292a9c402fe7c1446a6a95c1b25ccd6b204b0638f8de4fb0d62773073",
+            "R461 A | Shaft relief": "09cf6e396a7cc8d0066213267f9d8fb959765bdedced01ed1b3b85eefc14bac5"
+          }
+        },
+        "malar": {
+          "skinHash": "e5fac22ca5925df12a0dd1770ca6cc545593cb150df54b54f451663e405408f1",
+          "maximumDeltaMetres": 0.003177894977852702,
+          "editedVertices": 1087,
+          "maximumGuardedChangeMetres": 0.0,
+          "maximumLidChangeMetres": 0.0,
+          "maximumScalpChangeMetres": 0.0,
+          "layers": {
+            "AFN126_ORIGINAL_Eye_Eye_0": {
+              "hash": "62ac4c5fe0aed267c5bb6fbc688e4e728275349a8d6b2be1a0528534b5475384",
+              "maxChangeMetres": 0.0
+            },
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": {
+              "hash": "f41292310a7632f0fc05a681f07c476ba2a8aef5736b4f9e077da10d213f2b01",
+              "maxChangeMetres": 0.0
+            },
+            "R458 A | Full-gaze lower tear menisci": {
+              "hash": "ee2d5a9292a9c402fe7c1446a6a95c1b25ccd6b204b0638f8de4fb0d62773073",
+              "maxChangeMetres": 0.0
+            },
+            "R461 A | Shaft relief": {
+              "hash": "09cf6e396a7cc8d0066213267f9d8fb959765bdedced01ed1b3b85eefc14bac5",
+              "maxChangeMetres": 0.0
+            }
+          }
+        },
+        "orbital": {
+          "skinHash": "bf99165ea8d46daba3e4b63c51f1feb0b00b2196bf3c9e8da055089cc61b5649",
+          "maximumDeltaMetres": 0.0022820215672254562,
+          "editedVertices": 1320,
+          "maximumGuardedChangeMetres": 0.0,
+          "maximumLidChangeMetres": 0.0,
+          "maximumScalpChangeMetres": 0.0,
+          "layers": {
+            "AFN126_ORIGINAL_Eye_Eye_0": {
+              "hash": "62ac4c5fe0aed267c5bb6fbc688e4e728275349a8d6b2be1a0528534b5475384",
+              "maxChangeMetres": 0.0
+            },
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": {
+              "hash": "f41292310a7632f0fc05a681f07c476ba2a8aef5736b4f9e077da10d213f2b01",
+              "maxChangeMetres": 0.0
+            },
+            "R458 A | Full-gaze lower tear menisci": {
+              "hash": "ee2d5a9292a9c402fe7c1446a6a95c1b25ccd6b204b0638f8de4fb0d62773073",
+              "maxChangeMetres": 0.0
+            },
+            "R461 A | Shaft relief": {
+              "hash": "09cf6e396a7cc8d0066213267f9d8fb959765bdedced01ed1b3b85eefc14bac5",
+              "maxChangeMetres": 0.0
+            }
+          }
+        }
+      }
+    },
+    "dependencies": {
+      "libraries": [],
+      "externalImages": []
+    },
+    "stats": {
+      "vertices": 414564,
+      "triangles": 795029,
+      "bones": 60,
+      "morphs": 112,
+      "materials": 21,
+      "images": 31,
+      "strands": 24831,
+      "hairPoints": 1986480
+    },
+    "activeHairPositionHash": "55964445e3de793a4a7638c3d871f920bf07544085a70666acebb06e6e0b4f9d",
+    "operation": {
+      "key": "R498 B | Orbit and cheek transition",
+      "temporaryWeight": 0.55,
+      "changedVertices": 1313,
+      "editedHash": "3035f2a9c3da392327ec95cc0143077ffb129b353dfdb8b81ac6d953d5825fe0",
+      "restoredHash": "f85877131b8f1e3bce2210178d834893b9e5ef2d52e0a8e46969826e5117a674",
+      "sourceWrite": false
+    }
+  },
+  "preview": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\female-next-r0498-orbit-cheek-UNACCEPTED.blend",
+      "sha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+      "bytes": 321905506
+    },
+    "renders": {
+      "control:portrait-front": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\control-portrait-front.png",
+        "sha256": "49d4217214bd7e4681387fab855316ab3355dfe50d35fd7cecdf353faf74cd58",
+        "view": "portrait-front",
+        "blink": 0.0,
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.040392689406871796,
+            -0.9991838932037354,
+            -0.5519999861717224
+          ],
+          [
+            0.0,
+            0.9991838932037354,
+            0.040392689406871796,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "1e2995466778fbaaffdc436682b71b213070bc47106b02b122add29f8e1a864a",
+        "seconds": 9.426153799984604
+      },
+      "malar:portrait-front": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\malar-portrait-front.png",
+        "sha256": "1fdad9b52d1bc8e2822d99f7e2f784cef7ad4801b6de58ad357bcffd670fb0f6",
+        "view": "portrait-front",
+        "blink": 0.0,
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.040392689406871796,
+            -0.9991838932037354,
+            -0.5519999861717224
+          ],
+          [
+            0.0,
+            0.9991838932037354,
+            0.040392689406871796,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "7fad922d4b0a7ac9e8ccd21d1aa1044e9f57cf6596f3378aa348a25e37bbd499",
+        "seconds": 8.165061100036837
+      },
+      "orbital:portrait-front": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\orbital-portrait-front.png",
+        "sha256": "85d3d8b05d386a8b113282fc606f2661a85cf9baacae567d4df5203eb0a779c9",
+        "view": "portrait-front",
+        "blink": 0.0,
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.040392689406871796,
+            -0.9991838932037354,
+            -0.5519999861717224
+          ],
+          [
+            0.0,
+            0.9991838932037354,
+            0.040392689406871796,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "f85877131b8f1e3bce2210178d834893b9e5ef2d52e0a8e46969826e5117a674",
+        "seconds": 8.11759969999548
+      },
+      "control:portrait-oblique": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\control-portrait-oblique.png",
+        "sha256": "3e17756a47c4b298ab75a21ead1778e152b3d64421f35435fd7873e781959306",
+        "view": "portrait-oblique",
+        "blink": 0.0,
+        "camera": [
+          [
+            0.8480480313301086,
+            -0.021404851227998734,
+            0.5294869542121887,
+            0.24906206130981445
+          ],
+          [
+            0.5299193859100342,
+            0.034254807978868484,
+            -0.8473560810089111,
+            -0.480582594871521
+          ],
+          [
+            5.4679915706401516E-08,
+            0.9991838932037354,
+            0.04039257392287254,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "1e2995466778fbaaffdc436682b71b213070bc47106b02b122add29f8e1a864a",
+        "seconds": 9.94360910000978
+      },
+      "malar:portrait-oblique": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\malar-portrait-oblique.png",
+        "sha256": "3db57295b659413f97d55680e8771542b295a48e96dd492876efc3e1c30cdbd1",
+        "view": "portrait-oblique",
+        "blink": 0.0,
+        "camera": [
+          [
+            0.8480480313301086,
+            -0.021404851227998734,
+            0.5294869542121887,
+            0.24906206130981445
+          ],
+          [
+            0.5299193859100342,
+            0.034254807978868484,
+            -0.8473560810089111,
+            -0.480582594871521
+          ],
+          [
+            5.4679915706401516E-08,
+            0.9991838932037354,
+            0.04039257392287254,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "7fad922d4b0a7ac9e8ccd21d1aa1044e9f57cf6596f3378aa348a25e37bbd499",
+        "seconds": 12.083107700047549
+      },
+      "orbital:portrait-oblique": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\orbital-portrait-oblique.png",
+        "sha256": "9b52d91f9cd4918900e62f6bbfc78398cb0743ab13fec5c1f0859a829e522437",
+        "view": "portrait-oblique",
+        "blink": 0.0,
+        "camera": [
+          [
+            0.8480480313301086,
+            -0.021404851227998734,
+            0.5294869542121887,
+            0.24906206130981445
+          ],
+          [
+            0.5299193859100342,
+            0.034254807978868484,
+            -0.8473560810089111,
+            -0.480582594871521
+          ],
+          [
+            5.4679915706401516E-08,
+            0.9991838932037354,
+            0.04039257392287254,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "f85877131b8f1e3bce2210178d834893b9e5ef2d52e0a8e46969826e5117a674",
+        "seconds": 13.902017600019462
+      },
+      "control:portrait-profile": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\control-portrait-profile.png",
+        "sha256": "d626d762682ce1ef89aa2b352c2258188a4473ad2c6c11e0c7c66a748b027d78",
+        "view": "portrait-profile",
+        "blink": 0.0,
+        "camera": [
+          [
+            0.13917285203933716,
+            0.03999946638941765,
+            -0.9894598722457886,
+            -0.4654259979724884
+          ],
+          [
+            -0.9902680516242981,
+            0.005621583666652441,
+            -0.13905926048755646,
+            -0.14741136133670807
+          ],
+          [
+            3.4451915098543395E-08,
+            0.9991838932037354,
+            0.040392566472291946,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "1e2995466778fbaaffdc436682b71b213070bc47106b02b122add29f8e1a864a",
+        "seconds": 19.707502599980216
+      },
+      "malar:portrait-profile": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\malar-portrait-profile.png",
+        "sha256": "7f615e112ac322e13f47cac64daf329ebf75861effdf48ef253d95dc95499e9f",
+        "view": "portrait-profile",
+        "blink": 0.0,
+        "camera": [
+          [
+            0.13917285203933716,
+            0.03999946638941765,
+            -0.9894598722457886,
+            -0.4654259979724884
+          ],
+          [
+            -0.9902680516242981,
+            0.005621583666652441,
+            -0.13905926048755646,
+            -0.14741136133670807
+          ],
+          [
+            3.4451915098543395E-08,
+            0.9991838932037354,
+            0.040392566472291946,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "7fad922d4b0a7ac9e8ccd21d1aa1044e9f57cf6596f3378aa348a25e37bbd499",
+        "seconds": 16.557895200036
+      },
+      "orbital:portrait-profile": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\orbital-portrait-profile.png",
+        "sha256": "00940ff004067b52b08e6836f368b496796ba8109773eb41abc0b726fd1738ce",
+        "view": "portrait-profile",
+        "blink": 0.0,
+        "camera": [
+          [
+            0.13917285203933716,
+            0.03999946638941765,
+            -0.9894598722457886,
+            -0.4654259979724884
+          ],
+          [
+            -0.9902680516242981,
+            0.005621583666652441,
+            -0.13905926048755646,
+            -0.14741136133670807
+          ],
+          [
+            3.4451915098543395E-08,
+            0.9991838932037354,
+            0.040392566472291946,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "f85877131b8f1e3bce2210178d834893b9e5ef2d52e0a8e46969826e5117a674",
+        "seconds": 15.966148699983023
+      },
+      "control:half-blink": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\control-half-blink.png",
+        "sha256": "0017a8d624639725a7c2e71448de4a56f252d3986be21f8157789c20ef41cab9",
+        "view": "half-blink",
+        "blink": 0.5,
+        "camera": [
+          [
+            0.8480480313301086,
+            -0.021404851227998734,
+            0.5294869542121887,
+            0.24906206130981445
+          ],
+          [
+            0.5299193859100342,
+            0.034254807978868484,
+            -0.8473560810089111,
+            -0.480582594871521
+          ],
+          [
+            5.4679915706401516E-08,
+            0.9991838932037354,
+            0.04039257392287254,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "862a8309df47660cc020d5904331383dc7dc14fca6e5e7f926af23a22ec5a9c8",
+        "seconds": 11.934014500002377
+      },
+      "malar:half-blink": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\malar-half-blink.png",
+        "sha256": "cef08b19df2f4188ec3d22fabb41496bc457a053f77acbd9e60101ed2e5212de",
+        "view": "half-blink",
+        "blink": 0.5,
+        "camera": [
+          [
+            0.8480480313301086,
+            -0.021404851227998734,
+            0.5294869542121887,
+            0.24906206130981445
+          ],
+          [
+            0.5299193859100342,
+            0.034254807978868484,
+            -0.8473560810089111,
+            -0.480582594871521
+          ],
+          [
+            5.4679915706401516E-08,
+            0.9991838932037354,
+            0.04039257392287254,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "bb51a5a3c9b108e624babf9c2aaba59d0312ab533f26b05d7761225c0e6e9741",
+        "seconds": 9.395252400019672
+      },
+      "orbital:half-blink": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\orbital-half-blink.png",
+        "sha256": "33c3731d47bd2dd59dab766dee0cb48cbaa232d30a64f9dba2e2a9adccc72410",
+        "view": "half-blink",
+        "blink": 0.5,
+        "camera": [
+          [
+            0.8480480313301086,
+            -0.021404851227998734,
+            0.5294869542121887,
+            0.24906206130981445
+          ],
+          [
+            0.5299193859100342,
+            0.034254807978868484,
+            -0.8473560810089111,
+            -0.480582594871521
+          ],
+          [
+            5.4679915706401516E-08,
+            0.9991838932037354,
+            0.04039257392287254,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "6631e7e5eb7e9a7b87f378dac216d6e4be1ae3950cad833b421778ef7c98f85e",
+        "seconds": 9.616967100009788
+      },
+      "control:closed-blink": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\control-closed-blink.png",
+        "sha256": "37d7fa4b5a15bfc5779ecd046cbfc05cd091b4e6a928055be2512addc7f4bcd0",
+        "view": "closed-blink",
+        "blink": 1.0,
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.040392689406871796,
+            -0.9991838932037354,
+            -0.5519999861717224
+          ],
+          [
+            0.0,
+            0.9991838932037354,
+            0.040392689406871796,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "cb6e10334b90fc7e0d6b3846403945062e41a0e1b803988fa5e2c2ecdd137e14",
+        "seconds": 8.798037100001238
+      },
+      "malar:closed-blink": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\malar-closed-blink.png",
+        "sha256": "eff41fa76c2ff4981db8cc26ac9818c06ee241dd14fc1a5536b437f2af75359e",
+        "view": "closed-blink",
+        "blink": 1.0,
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.040392689406871796,
+            -0.9991838932037354,
+            -0.5519999861717224
+          ],
+          [
+            0.0,
+            0.9991838932037354,
+            0.040392689406871796,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "e5fac22ca5925df12a0dd1770ca6cc545593cb150df54b54f451663e405408f1",
+        "seconds": 8.70196020003641
+      },
+      "orbital:closed-blink": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\orbital-closed-blink.png",
+        "sha256": "264059a562ded84b1da27567e3022e5a3e68cd59816d8d5d3fc822a26cdeb4a9",
+        "view": "closed-blink",
+        "blink": 1.0,
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.040392689406871796,
+            -0.9991838932037354,
+            -0.5519999861717224
+          ],
+          [
+            0.0,
+            0.9991838932037354,
+            0.040392689406871796,
+            1.4900000095367432
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 65.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 20,
+        "skinHash": "bf99165ea8d46daba3e4b63c51f1feb0b00b2196bf3c9e8da055089cc61b5649",
+        "seconds": 8.965016799978912
+      },
+      "control:rear-oblique": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\control-rear-oblique.png",
+        "sha256": "cfd76a1d7000b41b68a2bb2f9322c2bd706c54761673d37a2626305c47181c9d",
+        "view": "rear-oblique",
+        "blink": 0.0,
+        "camera": [
+          [
+            -0.8521712422370911,
+            -0.11812568455934525,
+            0.5097552537918091,
+            0.3499999940395355
+          ],
+          [
+            0.5232630372047424,
+            -0.1923762708902359,
+            0.8301728367805481,
+            0.5820000171661377
+          ],
+          [
+            8.284223440568894E-08,
+            0.9741855263710022,
+            0.22574831545352936,
+            1.6430000066757202
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 16,
+        "skinHash": "1e2995466778fbaaffdc436682b71b213070bc47106b02b122add29f8e1a864a",
+        "seconds": 6.939315200026613
+      },
+      "malar:rear-oblique": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\malar-rear-oblique.png",
+        "sha256": "65dbe165a81fc7abb67f0277bbb785deb1548941149c6bd9223b55ef76f839de",
+        "view": "rear-oblique",
+        "blink": 0.0,
+        "camera": [
+          [
+            -0.8521712422370911,
+            -0.11812568455934525,
+            0.5097552537918091,
+            0.3499999940395355
+          ],
+          [
+            0.5232630372047424,
+            -0.1923762708902359,
+            0.8301728367805481,
+            0.5820000171661377
+          ],
+          [
+            8.284223440568894E-08,
+            0.9741855263710022,
+            0.22574831545352936,
+            1.6430000066757202
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 16,
+        "skinHash": "7fad922d4b0a7ac9e8ccd21d1aa1044e9f57cf6596f3378aa348a25e37bbd499",
+        "seconds": 6.685544000007212
+      },
+      "orbital:rear-oblique": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\orbital-rear-oblique.png",
+        "sha256": "aff166ad8468ef8f1a7aaa53d3a5790b8b1e763e09de91ff035ff54cfd3862ea",
+        "view": "rear-oblique",
+        "blink": 0.0,
+        "camera": [
+          [
+            -0.8521712422370911,
+            -0.11812568455934525,
+            0.5097552537918091,
+            0.3499999940395355
+          ],
+          [
+            0.5232630372047424,
+            -0.1923762708902359,
+            0.8301728367805481,
+            0.5820000171661377
+          ],
+          [
+            8.284223440568894E-08,
+            0.9741855263710022,
+            0.22574831545352936,
+            1.6430000066757202
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 16,
+        "skinHash": "f85877131b8f1e3bce2210178d834893b9e5ef2d52e0a8e46969826e5117a674",
+        "seconds": 6.9143099000211805
+      },
+      "control:full-body": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\control-full-body.png",
+        "sha256": "93d245eec73a7225d60c1b073219cb702a3e457f04e86b30d3b9c1da53f167ff",
+        "view": "full-body",
+        "blink": 0.0,
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.020705485716462135,
+            -0.9997854828834534,
+            -3.4050002098083496
+          ],
+          [
+            0.0,
+            0.9997854828834534,
+            0.020705485716462135,
+            0.9049999713897705
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 16,
+        "skinHash": "1e2995466778fbaaffdc436682b71b213070bc47106b02b122add29f8e1a864a",
+        "seconds": 3.1190851000137627
+      },
+      "malar:full-body": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\malar-full-body.png",
+        "sha256": "44d822ace69a1f84a847c25536a541e01d422ea4100d7d812fe634f1368bc807",
+        "view": "full-body",
+        "blink": 0.0,
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.020705485716462135,
+            -0.9997854828834534,
+            -3.4050002098083496
+          ],
+          [
+            0.0,
+            0.9997854828834534,
+            0.020705485716462135,
+            0.9049999713897705
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 16,
+        "skinHash": "7fad922d4b0a7ac9e8ccd21d1aa1044e9f57cf6596f3378aa348a25e37bbd499",
+        "seconds": 3.2418213000055403
+      },
+      "orbital:full-body": {
+        "sourceSha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+        "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\orbital-full-body.png",
+        "sha256": "5c16d9daa8ff23d90c66cbd337e538d865f8ae3e09bd5c4e7eec0e089581908d",
+        "view": "full-body",
+        "blink": 0.0,
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.020705485716462135,
+            -0.9997854828834534,
+            -3.4050002098083496
+          ],
+          [
+            0.0,
+            0.9997854828834534,
+            0.020705485716462135,
+            0.9049999713897705
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "cameraType": "PERSP",
+        "exposure": -0.5,
+        "samples": 16,
+        "skinHash": "f85877131b8f1e3bce2210178d834893b9e5ef2d52e0a8e46969826e5117a674",
+        "seconds": 3.2112094999756664
+      }
+    },
+    "sourceUnchanged": true
+  },
+  "contact": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0498-orbit-cheek\\female-next-r0498-orbit-cheek-UNACCEPTED.blend",
+      "sha256": "768acd9a882c296b92728742aeecaaf4adc76b7e554f5cac27002c8a05c20210",
+      "bytes": 321905506
+    },
+    "poseFrame": 1,
+    "scope": "Evaluated moved skin patch at three discrete blink settings. BVH triangle overlaps compared at source polygon IDs. Shared-vertex self pairs excluded. Closest moved vertices give unsigned samples.",
+    "states": {
+      "0.0": {
+        "malar": {
+          "editedVertices": 1087,
+          "baselineSkinSelfPairs": 0,
+          "candidateSkinSelfPairs": 0,
+          "newSkinSelfPairs": [],
+          "layers": {
+            "AFN126_ORIGINAL_Eye_Eye_0": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.0036168855149298906,
+                "positionMetres": [
+                  -0.04658826068043709,
+                  -0.10668421536684036,
+                  1.456555962562561
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003616795176640153,
+                "positionMetres": [
+                  -0.04658820107579231,
+                  -0.10668396949768066,
+                  1.456555962562561
+                ]
+              }
+            },
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003395883599296212,
+                "positionMetres": [
+                  -0.04658826068043709,
+                  -0.10668421536684036,
+                  1.456555962562561
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003395788138732314,
+                "positionMetres": [
+                  -0.04658820107579231,
+                  -0.10668396949768066,
+                  1.456555962562561
+                ]
+              }
+            },
+            "R458 A | Full-gaze lower tear menisci": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 152052,
+                "unsignedMetres": 0.007022101432085037,
+                "positionMetres": [
+                  0.046074029058218,
+                  -0.1072208359837532,
+                  1.4554393291473389
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 152052,
+                "unsignedMetres": 0.007022120524197817,
+                "positionMetres": [
+                  0.046074021607637405,
+                  -0.10722079873085022,
+                  1.4554393291473389
+                ]
+              }
+            },
+            "R461 A | Shaft relief": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160681,
+                "unsignedMetres": 0.007636933121830225,
+                "positionMetres": [
+                  -0.046074029058218,
+                  -0.1072208359837532,
+                  1.4554393291473389
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160681,
+                "unsignedMetres": 0.007636955473572016,
+                "positionMetres": [
+                  -0.046074021607637405,
+                  -0.10722079873085022,
+                  1.4554393291473389
+                ]
+              }
+            }
+          },
+          "evaluatedPatchWinding": {
+            "editedTriangles": 2404,
+            "nondegenerateTriangles": 2404,
+            "minimumAreaRatio": 0.8454517293502917,
+            "maximumAreaRatio": 1.1760755434921573,
+            "reversedTriangles": 0,
+            "trianglesBelowHalfArea": 0,
+            "belowHalfAreaOriginalAreaMaxMm2": 0.0
+          }
+        },
+        "orbital": {
+          "editedVertices": 1320,
+          "baselineSkinSelfPairs": 0,
+          "candidateSkinSelfPairs": 0,
+          "newSkinSelfPairs": [],
+          "layers": {
+            "AFN126_ORIGINAL_Eye_Eye_0": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.0036168608348816633,
+                "positionMetres": [
+                  -0.04658827558159828,
+                  -0.10668426007032394,
+                  1.4565560817718506
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003616795176640153,
+                "positionMetres": [
+                  -0.04658820107579231,
+                  -0.10668396949768066,
+                  1.456555962562561
+                ]
+              }
+            },
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003395854029804468,
+                "positionMetres": [
+                  -0.04658827558159828,
+                  -0.10668426007032394,
+                  1.4565560817718506
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003395788138732314,
+                "positionMetres": [
+                  -0.04658820107579231,
+                  -0.10668396949768066,
+                  1.456555962562561
+                ]
+              }
+            },
+            "R458 A | Full-gaze lower tear menisci": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 152052,
+                "unsignedMetres": 0.007022099103778601,
+                "positionMetres": [
+                  0.0460740327835083,
+                  -0.1072208434343338,
+                  1.4554393291473389
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 152052,
+                "unsignedMetres": 0.007022120524197817,
+                "positionMetres": [
+                  0.046074021607637405,
+                  -0.10722079873085022,
+                  1.4554393291473389
+                ]
+              }
+            },
+            "R461 A | Shaft relief": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 157074,
+                "unsignedMetres": 0.007240774109959602,
+                "positionMetres": [
+                  -0.01961353048682213,
+                  -0.12627115845680237,
+                  1.4728984832763672
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 157074,
+                "unsignedMetres": 0.00724077969789505,
+                "positionMetres": [
+                  -0.01961353048682213,
+                  -0.12627118825912476,
+                  1.4728984832763672
+                ]
+              }
+            }
+          },
+          "evaluatedPatchWinding": {
+            "editedTriangles": 2934,
+            "nondegenerateTriangles": 2934,
+            "minimumAreaRatio": 0.8131675406367964,
+            "maximumAreaRatio": 1.179976164224805,
+            "reversedTriangles": 0,
+            "trianglesBelowHalfArea": 0,
+            "belowHalfAreaOriginalAreaMaxMm2": 0.0
+          }
+        }
+      },
+      "0.5": {
+        "malar": {
+          "editedVertices": 1087,
+          "baselineSkinSelfPairs": 0,
+          "candidateSkinSelfPairs": 0,
+          "newSkinSelfPairs": [],
+          "layers": {
+            "AFN126_ORIGINAL_Eye_Eye_0": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.0036168855149298906,
+                "positionMetres": [
+                  -0.04658826068043709,
+                  -0.10668421536684036,
+                  1.456555962562561
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003616795176640153,
+                "positionMetres": [
+                  -0.04658820107579231,
+                  -0.10668396949768066,
+                  1.456555962562561
+                ]
+              }
+            },
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003395883599296212,
+                "positionMetres": [
+                  -0.04658826068043709,
+                  -0.10668421536684036,
+                  1.456555962562561
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003395788138732314,
+                "positionMetres": [
+                  -0.04658820107579231,
+                  -0.10668396949768066,
+                  1.456555962562561
+                ]
+              }
+            },
+            "R458 A | Full-gaze lower tear menisci": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 152052,
+                "unsignedMetres": 0.007308408617973328,
+                "positionMetres": [
+                  0.046074029058218,
+                  -0.1072208359837532,
+                  1.4554393291473389
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 152052,
+                "unsignedMetres": 0.0073084281757473946,
+                "positionMetres": [
+                  0.046074021607637405,
+                  -0.10722079873085022,
+                  1.4554393291473389
+                ]
+              }
+            },
+            "R461 A | Shaft relief": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160681,
+                "unsignedMetres": 0.007997247390449047,
+                "positionMetres": [
+                  -0.046074029058218,
+                  -0.1072208359837532,
+                  1.4554393291473389
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160681,
+                "unsignedMetres": 0.007997270673513412,
+                "positionMetres": [
+                  -0.046074021607637405,
+                  -0.10722079873085022,
+                  1.4554393291473389
+                ]
+              }
+            }
+          },
+          "evaluatedPatchWinding": {
+            "editedTriangles": 2404,
+            "nondegenerateTriangles": 2404,
+            "minimumAreaRatio": 0.8454517293502917,
+            "maximumAreaRatio": 1.1760755434921573,
+            "reversedTriangles": 0,
+            "trianglesBelowHalfArea": 0,
+            "belowHalfAreaOriginalAreaMaxMm2": 0.0
+          }
+        },
+        "orbital": {
+          "editedVertices": 1320,
+          "baselineSkinSelfPairs": 0,
+          "candidateSkinSelfPairs": 0,
+          "newSkinSelfPairs": [],
+          "layers": {
+            "AFN126_ORIGINAL_Eye_Eye_0": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.0036168608348816633,
+                "positionMetres": [
+                  -0.04658827558159828,
+                  -0.10668426007032394,
+                  1.4565560817718506
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003616795176640153,
+                "positionMetres": [
+                  -0.04658820107579231,
+                  -0.10668396949768066,
+                  1.456555962562561
+                ]
+              }
+            },
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003395854029804468,
+                "positionMetres": [
+                  -0.04658827558159828,
+                  -0.10668426007032394,
+                  1.4565560817718506
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003395788138732314,
+                "positionMetres": [
+                  -0.04658820107579231,
+                  -0.10668396949768066,
+                  1.456555962562561
+                ]
+              }
+            },
+            "R458 A | Full-gaze lower tear menisci": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 152052,
+                "unsignedMetres": 0.007308405824005604,
+                "positionMetres": [
+                  0.0460740327835083,
+                  -0.1072208434343338,
+                  1.4554393291473389
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 152052,
+                "unsignedMetres": 0.0073084281757473946,
+                "positionMetres": [
+                  0.046074021607637405,
+                  -0.10722079873085022,
+                  1.4554393291473389
+                ]
+              }
+            },
+            "R461 A | Shaft relief": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160681,
+                "unsignedMetres": 0.007997250184416771,
+                "positionMetres": [
+                  -0.0460740327835083,
+                  -0.1072208359837532,
+                  1.4554393291473389
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160681,
+                "unsignedMetres": 0.007997270673513412,
+                "positionMetres": [
+                  -0.046074021607637405,
+                  -0.10722079873085022,
+                  1.4554393291473389
+                ]
+              }
+            }
+          },
+          "evaluatedPatchWinding": {
+            "editedTriangles": 2934,
+            "nondegenerateTriangles": 2934,
+            "minimumAreaRatio": 0.8131675406367964,
+            "maximumAreaRatio": 1.179976164224805,
+            "reversedTriangles": 0,
+            "trianglesBelowHalfArea": 0,
+            "belowHalfAreaOriginalAreaMaxMm2": 0.0
+          }
+        }
+      },
+      "1.0": {
+        "malar": {
+          "editedVertices": 1087,
+          "baselineSkinSelfPairs": 0,
+          "candidateSkinSelfPairs": 0,
+          "newSkinSelfPairs": [],
+          "layers": {
+            "AFN126_ORIGINAL_Eye_Eye_0": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.0036168855149298906,
+                "positionMetres": [
+                  -0.04658826068043709,
+                  -0.10668421536684036,
+                  1.456555962562561
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003616795176640153,
+                "positionMetres": [
+                  -0.04658820107579231,
+                  -0.10668396949768066,
+                  1.456555962562561
+                ]
+              }
+            },
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003395883599296212,
+                "positionMetres": [
+                  -0.04658826068043709,
+                  -0.10668421536684036,
+                  1.456555962562561
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003395788138732314,
+                "positionMetres": [
+                  -0.04658820107579231,
+                  -0.10668396949768066,
+                  1.456555962562561
+                ]
+              }
+            },
+            "R458 A | Full-gaze lower tear menisci": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160681,
+                "unsignedMetres": 0.007524519693106413,
+                "positionMetres": [
+                  -0.046074029058218,
+                  -0.1072208359837532,
+                  1.4554393291473389
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160681,
+                "unsignedMetres": 0.0075245387852191925,
+                "positionMetres": [
+                  -0.046074021607637405,
+                  -0.10722079873085022,
+                  1.4554393291473389
+                ]
+              }
+            },
+            "R461 A | Shaft relief": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 152052,
+                "unsignedMetres": 0.0077322497963905334,
+                "positionMetres": [
+                  0.046074029058218,
+                  -0.1072208359837532,
+                  1.4554393291473389
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 152052,
+                "unsignedMetres": 0.0077322740107774734,
+                "positionMetres": [
+                  0.046074021607637405,
+                  -0.10722079873085022,
+                  1.4554393291473389
+                ]
+              }
+            }
+          },
+          "evaluatedPatchWinding": {
+            "editedTriangles": 2404,
+            "nondegenerateTriangles": 2404,
+            "minimumAreaRatio": 0.8454517293502917,
+            "maximumAreaRatio": 1.1760755434921573,
+            "reversedTriangles": 0,
+            "trianglesBelowHalfArea": 0,
+            "belowHalfAreaOriginalAreaMaxMm2": 0.0
+          }
+        },
+        "orbital": {
+          "editedVertices": 1320,
+          "baselineSkinSelfPairs": 0,
+          "candidateSkinSelfPairs": 0,
+          "newSkinSelfPairs": [],
+          "layers": {
+            "AFN126_ORIGINAL_Eye_Eye_0": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.0036168608348816633,
+                "positionMetres": [
+                  -0.04658827558159828,
+                  -0.10668426007032394,
+                  1.4565560817718506
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003616795176640153,
+                "positionMetres": [
+                  -0.04658820107579231,
+                  -0.10668396949768066,
+                  1.456555962562561
+                ]
+              }
+            },
+            "AFN126_ORIGINAL_EyeScleraReflect_EyeScleraReflect_0": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003395854029804468,
+                "positionMetres": [
+                  -0.04658827558159828,
+                  -0.10668426007032394,
+                  1.4565560817718506
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160665,
+                "unsignedMetres": 0.003395788138732314,
+                "positionMetres": [
+                  -0.04658820107579231,
+                  -0.10668396949768066,
+                  1.456555962562561
+                ]
+              }
+            },
+            "R458 A | Full-gaze lower tear menisci": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 160681,
+                "unsignedMetres": 0.007524521555751562,
+                "positionMetres": [
+                  -0.0460740327835083,
+                  -0.1072208359837532,
+                  1.4554393291473389
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 160681,
+                "unsignedMetres": 0.0075245387852191925,
+                "positionMetres": [
+                  -0.046074021607637405,
+                  -0.10722079873085022,
+                  1.4554393291473389
+                ]
+              }
+            },
+            "R461 A | Shaft relief": {
+              "baselinePairs": 0,
+              "candidatePairs": 0,
+              "newPairs": [],
+              "closestMovedVertex": {
+                "vertexID": 152052,
+                "unsignedMetres": 0.007732246071100235,
+                "positionMetres": [
+                  0.0460740327835083,
+                  -0.1072208434343338,
+                  1.4554393291473389
+                ]
+              },
+              "baselineClosestMovedVertex": {
+                "vertexID": 152052,
+                "unsignedMetres": 0.0077322740107774734,
+                "positionMetres": [
+                  0.046074021607637405,
+                  -0.10722079873085022,
+                  1.4554393291473389
+                ]
+              }
+            }
+          },
+          "evaluatedPatchWinding": {
+            "editedTriangles": 2934,
+            "nondegenerateTriangles": 2934,
+            "minimumAreaRatio": 0.8131675406367964,
+            "maximumAreaRatio": 1.179976164224805,
+            "reversedTriangles": 0,
+            "trianglesBelowHalfArea": 0,
+            "belowHalfAreaOriginalAreaMaxMm2": 0.0
+          }
+        }
+      }
+    }
+  },
+  "rights": "Inherited exact source notices. The aligned Angelica oblique was inspected for correspondence. DarkNik and NikZava284 attribution under CC BY 4.0 remains. No reference geometry was imported.",
+  "resources": {
+    "startTaipei": "2026-11-11T13:09:16+08:00",
+    "supportDeadlineTaipei": "2026-11-11T13:19:16+08:00",
+    "firstPreviewDeadlineTaipei": "2026-11-11T13:39:16+08:00",
+    "completePreviewTaipei": "2026-11-11T13:24:56.0000000+08:00",
+    "resourceCheckpointTaipei": "2026-11-11T13:54:16+08:00",
+    "workers": 1,
+    "blenderThreads": 4,
+    "authorPeakPrivateBytes": 1946861568,
+    "authorDiagnostics": "Early masks compressed or reversed triangles on the combined mesh before save. The final edit protects non-skin material domains and uses a wider exclusion falloff. The final analytic orientation scale is 1 for both candidates, with no reversed or half-area triangles.",
+    "previewInitial": "One admission check refused on system headroom. The initial admitted render stopped at 61.2483 seconds after five verified frames. A resumed process verified these hashes, removed unused hidden hair data in memory and completed all 21 frames.",
+    "initialPreviewPeakPrivateBytes": 3703767040,
+    "resumedPreviewPeakPrivateBytes": 3024486400,
+    "faceContactPeakPrivateBytes": 2015780864,
+    "engineCPUSeconds": null,
+    "engineGPUSeconds": null,
+    "engineMemoryBytes": null
+  },
+  "nextAction": "Keep B as a reversible facial volume candidate and retain the exact r497 hair. Inspect the inherited closed-eyelid creases and compare the full blink against the earlier canthus evidence. Rebuild only the underlying lid deformation if the inspected geometry explains the visible fold, preserving the tested cheek shape and separate ocular layers.",
+  "inheritedRetirements": "Preserve all hair retirements through r497. The broad 3D orbital-to-cheek shape is a new local method. Early combined-material sculpt masks were discarded before source save. No adopted complete appearance and no counter reset.",
+  "scoreIncrease": false,
+  "runtimeOrWebsiteChanged": false,
+  "maleWorkStarted": false
+}

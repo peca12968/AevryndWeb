@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "F:\AevryndEvidence\r0498-orbit-cheek\author-r0498.py", line 179, in <module>
+    main()
+    ~~~~^^
+  File "F:\AevryndEvidence\r0498-orbit-cheek\author-r0498.py", line 160, in main
+    maximumLocalDisplacementMetres=float(delta.max()), **topology_check(basis, candidate, triangles))
+                                                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\AevryndEvidence\r0498-orbit-cheek\author-r0498.py", line 130, in topology_check
+    assert np.all(dot > 0) and ratios.min() > .55 and ratios.max() < 1.65
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'F:\AevryndEvidence\r0498-orbit-cheek\author-r0498.py', exiting.
