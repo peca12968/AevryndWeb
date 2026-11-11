@@ -1,0 +1,480 @@
+{
+  "round": "r0507",
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0507-crown-overlap\\female-next-r0507-crown-overlap-UNACCEPTED.blend",
+    "sha256": "34d6de5d09d3b72ab5dc34a4f53945985950e0dd7857de72c127cf97bb685a6c",
+    "bytes": 495219905
+  },
+  "parent": {
+    "path": "F:\\AevryndEvidence\\r0505-ear-nape-bridge\\female-next-r0505-ear-nape-bridge-UNACCEPTED.blend",
+    "sha256": "22c7d07d7f3173ac579c18dc93f0d626bcbc25e4bd4e10650a2c1d2b80422b65",
+    "bytes": 438534180
+  },
+  "workingWoman": {
+    "path": "F:\\AevryndEvidence\\r0500-multi-pose-lid\\female-next-r0500-multi-pose-lid-UNACCEPTED.blend",
+    "sha256": "d1af8ee646bacb96c5340eb2a2e7455c111d41d75cdedb7ce0a07a09e68e1b68",
+    "bytes": 325339138
+  },
+  "decision": "RETAIN_R0507_B_LOCAL_RESEARCH",
+  "preferredResearch": "r0507 B",
+  "productionAccepted": false,
+  "scoreIncrease": false,
+  "runtimeOrWebsiteChanged": false,
+  "maleWorkStarted": false,
+  "visualAssessment": [
+    "The frontal hairline, ear-side lengths, and two side silhouettes retain the r0505 appearance. The complete figure comparison shows a local hair change.",
+    "A makes the posterior sweep visible but creates a dark central opening and obvious raised ribs under the direct rear and turned cameras. Reject the separate-lock arrangement.",
+    "B closes the central rear opening and introduces a diagonal central sweep with staggered tips. A narrow dark join remains at the outer posterior edge and is conspicuous at the held turn.",
+    "The upper crown and frontal temples retain a continuous ribbon-like appearance. The B improvement is limited to posterior release, and the full hairstyle remains unaccepted."
+  ],
+  "categoryReview": {
+    "anatomy": "The actual full-body figure remains a stylized source. The same pose and body shape are used for all three captures.",
+    "face": "Matched front and oblique views retain the inherited cheek and lid surface. The portrait remains mannequin-like.",
+    "eyes": "Existing gaze, eye reflections and lid shape are visible. Ocular contact and optics require their own evidence.",
+    "skin": "The same fixed lighting and skin shading are visible in matched captures. The evaluated skin is the collider.",
+    "hair": "B has locally clearer diagonal posterior paths and staggered tips. The crown reads as broad sheets and an outside join remains visible.",
+    "clothing": "The complete form view records anatomy and hair. Clothing layers and garment clearances remain to verify.",
+    "motion": "The held 32-degree turn verifies native head binding only. Hair inertia requires a new physical solver after the rejected r0506 projection.",
+    "collision": "Measured the 10416 rebuilt strands against posed display skin with consecutive native chords and strand radii. Continuous, self and garment contact remain to verify. B has no detected skin intersections in the tested strand population and frames.",
+    "performance": "The source size, geometry inventory and Blender execution memory are recorded. Aevrynd runtime performance and export remain to verify."
+  },
+  "views": [
+    "rear",
+    "rear-oblique",
+    "rear-crown",
+    "profile",
+    "opposite",
+    "front",
+    "oblique",
+    "crown",
+    "full",
+    "turn"
+  ],
+  "renderCount": 30,
+  "boards": {
+    "r0507-rear-comparison.png": {
+      "path": "F:\\AevryndEvidence\\r0507-crown-overlap\\r0507-rear-comparison.png",
+      "sha256": "67c0cc48dea56c91a945e0d8d25fd7cbca9402f449a552f9f5417142fc4560ed",
+      "bytes": 1506150
+    },
+    "r0507-head-comparison.png": {
+      "path": "F:\\AevryndEvidence\\r0507-crown-overlap\\r0507-head-comparison.png",
+      "sha256": "4b988cc6ba7249cbcf110e49e27fca1dff8bd6fb070a6e31f4da31837ae850b2",
+      "bytes": 1320614
+    },
+    "r0507-body-comparison.png": {
+      "path": "F:\\AevryndEvidence\\r0507-crown-overlap\\r0507-body-comparison.png",
+      "sha256": "69e7268c036f7f2f2e0dad30b67219300f29f82688981a5aaf8f5c5500a28ace",
+      "bytes": 439509
+    }
+  },
+  "geometry": {
+    "variants": {
+      "separated": {
+        "object": "R507 complete hair | separated",
+        "guide": "R507 centres | separated",
+        "positionHash": "7eaba474bb2a23f1de4c7af7064299152a6f4b9e2204ceb68195c003098f46d7",
+        "layerHash": "2858055ff12f40c6985f06bc73d0af977d5a6750c1b2d094195d66216e263a42",
+        "lockHash": "a2070b3f47aafdac629cc1ca7163a679dd1d8f31eda375e1a3963e39bb19468e",
+        "neighborHash": "34a2080bd7b77e7338214c570fe686b4b541c8974033fa4b856f67ef57142b52",
+        "overlapHash": "0f3ba582508ad33bbf807a51e7dc0487397f129f22c2f0b09aa33e3612f76dbe",
+        "changedStrands": 10416,
+        "protectedBridgeStrands": 5721,
+        "medianTipShiftMm": 15.013806343078613,
+        "maximumPointShiftMm": 35.868125915527344,
+        "lengthChangeMm": [
+          -24.5615234375,
+          -16.204968452453613,
+          -0.3011077642440796,
+          16.157702445983887,
+          24.0640869140625
+        ],
+        "blendedStrands": 0,
+        "guideCount": 13,
+        "laneCounts": {
+          "0:0": 1345,
+          "0:1": 811,
+          "0:2": 372,
+          "0:3": 519,
+          "0:4": 983,
+          "0:5": 808,
+          "0:6": 944,
+          "1:0": 923,
+          "1:1": 696,
+          "1:2": 794,
+          "1:3": 779,
+          "1:4": 886,
+          "1:5": 556
+        }
+      },
+      "overlapping": {
+        "object": "R507 complete hair | overlapping",
+        "guide": "R507 centres | overlapping",
+        "positionHash": "799ed0551b3313f1d0db1e739de4193eb4aeb360a195ca1e0122882b68f4a223",
+        "layerHash": "2858055ff12f40c6985f06bc73d0af977d5a6750c1b2d094195d66216e263a42",
+        "lockHash": "a2070b3f47aafdac629cc1ca7163a679dd1d8f31eda375e1a3963e39bb19468e",
+        "neighborHash": "49a0ffc40b06ba21aaa555539b0c816f18b31eb4c497474d84665ce789a78362",
+        "overlapHash": "e117b291bc7b464491fa16cecb849209a77f490b64a79d4e34ec72a5a8bf42ca",
+        "changedStrands": 10416,
+        "protectedBridgeStrands": 5721,
+        "medianTipShiftMm": 16.40066909790039,
+        "maximumPointShiftMm": 33.17166519165039,
+        "lengthChangeMm": [
+          -25.727479934692383,
+          -18.78368091583252,
+          4.641205072402954,
+          16.585092544555664,
+          27.53689956665039
+        ],
+        "blendedStrands": 5313,
+        "guideCount": 13,
+        "laneCounts": {
+          "0:0": 1345,
+          "0:1": 811,
+          "0:2": 372,
+          "0:3": 519,
+          "0:4": 983,
+          "0:5": 808,
+          "0:6": 944,
+          "1:0": 923,
+          "1:1": 696,
+          "1:2": 794,
+          "1:3": 779,
+          "1:4": 886,
+          "1:5": 556
+        }
+      }
+    },
+    "pinnedControls": 8,
+    "stats": {
+      "vertices": 414564,
+      "triangles": 795029,
+      "bones": 60,
+      "morphs": 114,
+      "materials": 21,
+      "images": 31,
+      "curves": 24831,
+      "points": 1986480
+    },
+    "editAndRestore": {
+      "object": "R507 complete hair | overlapping",
+      "curveIds": [
+        31,
+        884,
+        1426,
+        2310,
+        3025,
+        3664,
+        4811,
+        5671,
+        6606,
+        7542,
+        8042,
+        8892,
+        9564,
+        10465,
+        11795,
+        12562,
+        13461,
+        14292,
+        15299,
+        16116,
+        16999,
+        17583,
+        18325,
+        19110
+      ],
+      "maximumEditMetres": 0.004,
+      "editedHash": "5c51e8df0dba50f32da46ae6e89ba69e54c315f099d3d70b2201efd44c0ff23d",
+      "restoredHash": "799ed0551b3313f1d0db1e739de4193eb4aeb360a195ca1e0122882b68f4a223",
+      "sourceWritten": false
+    },
+    "headOperation": {
+      "frame": 37,
+      "boneParentMatrixErrorMetres": 4.057277180891106e-08
+    }
+  },
+  "scope": "Every native evaluated spline sample and adjacent chord of each changed curve, finite radii, and matched posed display skin for the listed frames. No continuous-time, inter-strand, or garment contact certification.",
+  "skinContact": {
+    "1": {
+      "frame": 1,
+      "blink": 0,
+      "yawDegrees": -1.6284439969093206e-11,
+      "root": {
+        "absolute": {
+          "maximumMetres": 1.1921289910812413e-07,
+          "p95Metres": 1.1921154753704882e-07,
+          "worstCurveID": 8707,
+          "worstDeltaMetres": [
+            -9.843211315474498e-14,
+            2.2085111517355926e-13,
+            -1.192128991078789e-07
+          ]
+        },
+        "beyondNeutral": {
+          "maximumMetres": 0.0,
+          "p95Metres": 0.0,
+          "worstCurveID": 0,
+          "worstDeltaMetres": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "modes": {
+        "control": {
+          "curves": 10416,
+          "samples": 9884784,
+          "inside": 0,
+          "finiteRadiusOverlapPoints": 0,
+          "crossingChords": 0,
+          "unresolvedChords": 0,
+          "failedCurves": 0,
+          "ambiguousCurves": 0,
+          "newFailedCurves": 0,
+          "minimumSample": {
+            "curveID": 3070,
+            "positionMetres": [
+              0.009467460215091705,
+              -0.019278040155768394,
+              1.5709022283554077
+            ],
+            "radiusMetres": 3.5000000934815034e-05,
+            "signedOrBoundMetres": 8.470348257105798e-05,
+            "kind": "positive oriented sample"
+          },
+          "minimumChordBoundMetres": -5.275974763208069e-05,
+          "elapsedSeconds": 32.728362899972126
+        },
+        "separated": {
+          "curves": 10416,
+          "samples": 9884784,
+          "inside": 0,
+          "finiteRadiusOverlapPoints": 0,
+          "crossingChords": 0,
+          "unresolvedChords": 0,
+          "failedCurves": 0,
+          "ambiguousCurves": 0,
+          "newFailedCurves": 0,
+          "minimumSample": {
+            "curveID": 3070,
+            "positionMetres": [
+              0.009467460215091705,
+              -0.019278040155768394,
+              1.5709022283554077
+            ],
+            "radiusMetres": 3.5000000934815034e-05,
+            "signedOrBoundMetres": 8.470348257105798e-05,
+            "kind": "positive oriented sample"
+          },
+          "minimumChordBoundMetres": -5.275974763208069e-05,
+          "elapsedSeconds": 32.61304670001846
+        },
+        "overlapping": {
+          "curves": 10416,
+          "samples": 9884784,
+          "inside": 0,
+          "finiteRadiusOverlapPoints": 0,
+          "crossingChords": 0,
+          "unresolvedChords": 0,
+          "failedCurves": 0,
+          "ambiguousCurves": 0,
+          "newFailedCurves": 0,
+          "minimumSample": {
+            "curveID": 3070,
+            "positionMetres": [
+              0.009467460215091705,
+              -0.019278040155768394,
+              1.5709022283554077
+            ],
+            "radiusMetres": 3.5000000934815034e-05,
+            "signedOrBoundMetres": 8.470348257105798e-05,
+            "kind": "positive oriented sample"
+          },
+          "minimumChordBoundMetres": -5.275974763208069e-05,
+          "elapsedSeconds": 42.20490670000436
+        }
+      }
+    },
+    "7": {
+      "frame": 7,
+      "blink": 0.48,
+      "yawDegrees": 18.712291824436676,
+      "root": {
+        "absolute": {
+          "maximumMetres": 2.3995986407392546e-07,
+          "p95Metres": 2.3881531610222017e-07,
+          "worstCurveID": 23886,
+          "worstDeltaMetres": [
+            -1.205950841270953e-08,
+            -2.2021787657311442e-08,
+            2.386427151446213e-07
+          ]
+        },
+        "beyondNeutral": {
+          "maximumMetres": 3.587318334365967e-07,
+          "p95Metres": 3.579170583516179e-07,
+          "worstCurveID": 23886,
+          "worstDeltaMetres": [
+            -1.2059693551621996e-08,
+            -2.2021908339498906e-08,
+            3.578521030611806e-07
+          ]
+        }
+      },
+      "modes": {
+        "control": {
+          "curves": 10416,
+          "samples": 9884784,
+          "inside": 0,
+          "finiteRadiusOverlapPoints": 0,
+          "crossingChords": 0,
+          "unresolvedChords": 0,
+          "failedCurves": 0,
+          "ambiguousCurves": 0,
+          "newFailedCurves": 0,
+          "minimumSample": {
+            "curveID": 6157,
+            "positionMetres": [
+              0.016067467629909515,
+              0.041599031537771225,
+              1.456982970237732
+            ],
+            "radiusMetres": 3.5000000934815034e-05,
+            "signedOrBoundMetres": 8.485726721119136e-05,
+            "kind": "positive oriented sample"
+          },
+          "minimumChordBoundMetres": -5.240277459961362e-05,
+          "elapsedSeconds": 34.83512010000413
+        },
+        "overlapping": {
+          "curves": 10416,
+          "samples": 9884784,
+          "inside": 0,
+          "finiteRadiusOverlapPoints": 0,
+          "crossingChords": 0,
+          "unresolvedChords": 0,
+          "failedCurves": 0,
+          "ambiguousCurves": 0,
+          "newFailedCurves": 0,
+          "minimumSample": {
+            "curveID": 6157,
+            "positionMetres": [
+              0.016067467629909515,
+              0.041599031537771225,
+              1.456982970237732
+            ],
+            "radiusMetres": 3.5000000934815034e-05,
+            "signedOrBoundMetres": 8.485726721119136e-05,
+            "kind": "positive oriented sample"
+          },
+          "minimumChordBoundMetres": -5.240277459961362e-05,
+          "elapsedSeconds": 32.015056399977766
+        }
+      }
+    },
+    "37": {
+      "frame": 37,
+      "blink": 0.75,
+      "yawDegrees": 32.00000136487779,
+      "root": {
+        "absolute": {
+          "maximumMetres": 1.23933415576042e-07,
+          "p95Metres": 1.21359317667348e-07,
+          "worstCurveID": 3911,
+          "worstDeltaMetres": [
+            -3.192137135871187e-08,
+            -1.1033355215572804e-08,
+            -1.192425369556105e-07
+          ]
+        },
+        "beyondNeutral": {
+          "maximumMetres": 3.377302900703994e-08,
+          "p95Metres": 2.2737918855199822e-08,
+          "worstCurveID": 3911,
+          "worstDeltaMetres": [
+            -3.192026414111358e-08,
+            -1.1032366436461567e-08,
+            -3.341082962789194e-11
+          ]
+        }
+      },
+      "modes": {
+        "control": {
+          "curves": 10416,
+          "samples": 9884784,
+          "inside": 0,
+          "finiteRadiusOverlapPoints": 0,
+          "crossingChords": 0,
+          "unresolvedChords": 0,
+          "failedCurves": 0,
+          "ambiguousCurves": 0,
+          "newFailedCurves": 0,
+          "minimumSample": {
+            "curveID": 3070,
+            "positionMetres": [
+              0.007145849987864494,
+              -0.0145217040553689,
+              1.5709022283554077
+            ],
+            "radiusMetres": 3.5000000934815034e-05,
+            "signedOrBoundMetres": 8.470348257105798e-05,
+            "kind": "positive oriented sample"
+          },
+          "minimumChordBoundMetres": -5.275960938888602e-05,
+          "elapsedSeconds": 31.11423740000464
+        },
+        "overlapping": {
+          "curves": 10416,
+          "samples": 9884784,
+          "inside": 0,
+          "finiteRadiusOverlapPoints": 0,
+          "crossingChords": 0,
+          "unresolvedChords": 0,
+          "failedCurves": 0,
+          "ambiguousCurves": 0,
+          "newFailedCurves": 0,
+          "minimumSample": {
+            "curveID": 3070,
+            "positionMetres": [
+              0.007145849987864494,
+              -0.0145217040553689,
+              1.5709022283554077
+            ],
+            "radiusMetres": 3.5000000934815034e-05,
+            "signedOrBoundMetres": 8.470348257105798e-05,
+            "kind": "positive oriented sample"
+          },
+          "minimumChordBoundMetres": -5.275960938888602e-05,
+          "elapsedSeconds": 32.19408799998928
+        }
+      }
+    }
+  },
+  "resources": {
+    "startTaipei": "2026-11-11T16:18:54+08:00",
+    "supportDeadlineTaipei": "2026-11-11T16:28:54+08:00",
+    "firstPreviewDeadlineTaipei": "2026-11-11T16:48:54+08:00",
+    "firstCompleteMatchedViewsTaipei": "2026-11-11T16:35:48+08:00",
+    "resourceCheckpointTaipei": "2026-11-11T17:03:54+08:00",
+    "workers": 1,
+    "blenderThreads": 4,
+    "probePeakPrivateBytes": 3546890240,
+    "authorPeakPrivateBytes": 4072005632,
+    "firstPreviewPeakPrivateBytes": 4268716032,
+    "resumedPreviewPeakPrivateBytes": 4278198272,
+    "thirdPreviewPeakPrivateBytes": 4275826688,
+    "completedPreviewPeakPrivateBytes": 4027977728,
+    "firstContactPeakPrivateBytes": 1904254976,
+    "completedContactPeakPrivateBytes": 1944014848,
+    "previewRecovery": "Windows commit reserve stopped three attempts. The final worker preserved sixteen verified frames and rendered fourteen missing views from a single carrier with an exact position bank.",
+    "contactRecovery": "Windows commit reserve stopped the first contact worker after two completed comparisons. The second worker reloaded the compact carrier and finished the five remaining comparisons.",
+    "engineCPUSeconds": null,
+    "engineGPUSeconds": null,
+    "engineMemoryBytes": null
+  },
+  "rights": "Original Aevrynd guide construction on inherited r0505 native curves. Blender manual describes the general guide/child workflow. Inherited r0505 licenses and reference attribution apply.",
+  "nextAction": "Keep the verified r0500 B whole woman. The next hairstyle change should rebuild the frontal crown and temple outline with graded upper, ear-side and posterior trajectories. Use r0507 B's posterior depth and tier overlap as a reference if the held skin audit clears, and retain r0505 B for rollback. Preserve the r0506 collision failure before returning to physics.",
+  "recordedAt": "2026-11-11T16:42:51.897203+08:00"
+}
