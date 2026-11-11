@@ -1,0 +1,308 @@
+{
+  "round": "r0487",
+  "decision": "REJECT_BOTH_FOR_CHARACTER_ADOPTION",
+  "goalStatus": "active",
+  "previousTurnClassification": "Progress. r486 produced and archived a new editable guide foundation. The visible midline split and ear overlap supplied the next test.",
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0487-continuous-posterior-groom\\female-next-r0487-posterior-and-ear-routes-UNACCEPTED.blend",
+    "sha256": "43ea2eeffdfadf1e870552d189ab9d7a06269331f49d9f0ec0d70b3ecc1ff87a",
+    "bytes": 485410686
+  },
+  "parent": {
+    "path": "F:\\AevryndEvidence\\r0486-primary-guide-foundation\\female-next-r0486-primary-guides-UNACCEPTED.blend",
+    "sha256": "ef2d5e24456e6c43e80b6168c88f7ed2d45e97ac434a3e9f488fa7d9f69e8c39",
+    "bytes": 429234162
+  },
+  "defaultVisibleVariant": "sweep",
+  "hypothesis": "Shared posterior ownership with primary paths around the measured ears can close the rear gap without breaking the head silhouette.",
+  "variants": {
+    "drape": "Paths pass outside the pinna and fall near the side of the neck.",
+    "sweep": "Paths bend toward the posterior pinna and flow behind the ear."
+  },
+  "views": {
+    "count": 15,
+    "cameraNames": [
+      "face",
+      "rear-oblique",
+      "opposite-profile",
+      "posterior-detail",
+      "full-body"
+    ],
+    "guideDiagnosticCount": 4,
+    "pose": "neutral",
+    "fixedConditions": "Same scene, evaluated curve carrier, radii, shader, pose, camera, lights, seed and exposure.",
+    "positives": [
+      "Both candidates visibly close the open r486 posterior center line.",
+      "Sweep exposes the ear and shows less visible ear overlap than the r486 profile."
+    ],
+    "failures": [
+      "Both candidates have a horizontal ridge and marked outward bulge at ear height.",
+      "The crown notch is more conspicuous. The rear remains a rigid continuous shell with low variation between locks.",
+      "The same unnatural outline remains visible on the full character. The drape also veils the ear and side of the face."
+    ]
+  },
+  "construction": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0487-continuous-posterior-groom\\female-next-r0487-posterior-and-ear-routes-UNACCEPTED.blend",
+      "sha256": "43ea2eeffdfadf1e870552d189ab9d7a06269331f49d9f0ec0d70b3ecc1ff87a",
+      "bytes": 485410686
+    },
+    "parent": {
+      "path": "F:\\AevryndEvidence\\r0486-primary-guide-foundation\\female-next-r0486-primary-guides-UNACCEPTED.blend",
+      "sha256": "ef2d5e24456e6c43e80b6168c88f7ed2d45e97ac434a3e9f488fa7d9f69e8c39",
+      "bytes": 429234162
+    },
+    "variants": {
+      "drape": {
+        "object": "R487 complete hair | drape",
+        "guideObject": "R487 editable primary paths | drape",
+        "positionHash": "6609f8f87f7343b67f46eff4aa3b52caa4ba59eb3cf21332e7a015086401c173",
+        "guideHash": "27e3f9a5411cdd075aa881745ef2750ad3fa87efaa44b42983d3afe698e94151"
+      },
+      "sweep": {
+        "object": "R487 complete hair | sweep",
+        "guideObject": "R487 editable primary paths | sweep",
+        "positionHash": "cc442ed13f7d2a5874e975bed1e0b2f8d77c0db0ab5d5def72e298eeb4c95a2b",
+        "guideHash": "086c68cbff6f03a6b099f9f479fef67492cc09af510532acc96d0f7b600ab428"
+      }
+    },
+    "controlObject": "R486 complete hair | primary guide foundation",
+    "rootsBitIdentical": true,
+    "rootHash": "460afe0c3795baa7a8bf8b845a22c9da558e4d3c474b29b51f8adacfad0de072",
+    "guideCount": 140,
+    "childCount": 24831,
+    "ownerCount": 8,
+    "rearMidlineRoots": 1879,
+    "rearMidlineRootsWithTwoSidedOwners": 1879,
+    "guidePathSHA256": "018e9ff79248a7f7c46e91996021972ae0ea77249755a28994800253e4224e8a",
+    "ownerSHA256": "f533f6a4b62fba94be696b8a6bfcd9c2aa370c75c7d7373a72f1796683003fe8"
+  },
+  "independentReopen": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0487-continuous-posterior-groom\\female-next-r0487-posterior-and-ear-routes-UNACCEPTED.blend",
+      "sha256": "43ea2eeffdfadf1e870552d189ab9d7a06269331f49d9f0ec0d70b3ecc1ff87a",
+      "bytes": 485410686
+    },
+    "rootsBitIdentical": true,
+    "preservedAttributeHashes": {
+      "radius": "729b8d11aad6fb8a1f542a07c002276be2bc4fe2aa901f63ad6be24e6b81daeb",
+      "AFN409_CURVE_ID": "eecedbc87ad74bd5fd9c2d473746fbe43c7049b787c8895ec4c326ba1c52fd47",
+      "AFN409_POINT_ID": "3080340c723adb82f3593a18ce9f758b801d07df0325662f326ed8a273bc4de6",
+      "AFN409_SKIN_TRIANGLE_ID": "5a01eade946454781705028e01eadc6457d73447652409cd8ba59f2a37e0240d",
+      "AFN409_SKIN_BARYCENTRIC": "a2f1a271d68f05de3d52efac8cbaef52a2455349cb7d7c99f95df049960726d4",
+      "AEVRYND_ROOT_NORMAL_OFFSET": "4e582178db0dfb3148d63d979c64686b63e30f255a59438794e5a89380ee5e06",
+      "AEVRYND_ROOT_OFFSET_LOCAL": "f9a782ab8570eb487c5a88a26ea3456378097718ad0750073dff4bbf612eb283",
+      "surface_uv_coordinate": "ab2e48470da135b094d701748f63d7b3c263a6d2b7d0401f7bd04856d364343d"
+    },
+    "replay": {
+      "drape": {
+        "positionHash": "6609f8f87f7343b67f46eff4aa3b52caa4ba59eb3cf21332e7a015086401c173",
+        "guideHash": "27e3f9a5411cdd075aa881745ef2750ad3fa87efaa44b42983d3afe698e94151",
+        "replayBitIdentical": true,
+        "shaderNames": [
+          "AFN350_OWNED_KERATIN_SHORT_CURL_CONSTRUCTION"
+        ]
+      },
+      "sweep": {
+        "positionHash": "cc442ed13f7d2a5874e975bed1e0b2f8d77c0db0ab5d5def72e298eeb4c95a2b",
+        "guideHash": "086c68cbff6f03a6b099f9f479fef67492cc09af510532acc96d0f7b600ab428",
+        "replayBitIdentical": true,
+        "shaderNames": [
+          "AFN350_OWNED_KERATIN_SHORT_CURL_CONSTRUCTION"
+        ]
+      }
+    },
+    "evaluatedOperation": {
+      "guideIndex": 103,
+      "maxGuideDisplacementMetres": 0.003,
+      "changedChildCurves": 2262,
+      "evaluatedEditHash": "91fae0885cb691a2890f4158b3549b2ce875feb47843535f222d99dcc8f2e1cc",
+      "restoredEvaluatedHash": "cc442ed13f7d2a5874e975bed1e0b2f8d77c0db0ab5d5def72e298eeb4c95a2b",
+      "persisted": false
+    },
+    "dependencies": {
+      "libraries": [],
+      "images": []
+    },
+    "stats": {
+      "sceneObjects": 25,
+      "meshVertices": 414564,
+      "meshTriangles": 795029,
+      "armatureBones": 60,
+      "shapeKeys": 110,
+      "materials": 21,
+      "images": 31,
+      "hairCurves": 24831,
+      "hairPoints": 1986480,
+      "guidesPerVariant": 140
+    },
+    "finiteCollisionStatus": "UNVERIFIED",
+    "sampledContact": "neutral-contact-probe.json",
+    "animation": "UNVERIFIED",
+    "engineCPUSeconds": null,
+    "engineGPUSeconds": null,
+    "engineMemoryBytes": null
+  },
+  "neutralContactProbe": {
+    "reference": "R482 archived complete neutral skin",
+    "pose": "archived neutral",
+    "contactCoverage": "Selected points, nearest oriented triangle, signed center distance less radius. The same candidate-union point indices are compared in each region.",
+    "skinSegments": "unverified",
+    "hairSelfContact": "unverified",
+    "dynamicContinuousContact": "unverified",
+    "results": {
+      "ear": {
+        "control": {
+          "samples": 26628,
+          "negativeGapSamples": 642,
+          "negativeCenterSamples": 633,
+          "minimumSignedGapMetres": -0.006733225320203928,
+          "worstCurveID": 17063,
+          "worstPoint": 42,
+          "worstXYZMetres": [
+            0.0656665489077568,
+            -0.008113954216241837,
+            1.4829330444335938
+          ]
+        },
+        "drape": {
+          "samples": 26628,
+          "negativeGapSamples": 58,
+          "negativeCenterSamples": 58,
+          "minimumSignedGapMetres": -0.022326946374960244,
+          "worstCurveID": 14882,
+          "worstPoint": 39,
+          "worstXYZMetres": [
+            -0.051569029688835144,
+            -0.03229670226573944,
+            1.4819176197052002
+          ]
+        },
+        "sweep": {
+          "samples": 26628,
+          "negativeGapSamples": 112,
+          "negativeCenterSamples": 112,
+          "minimumSignedGapMetres": -0.03874294751949492,
+          "worstCurveID": 2303,
+          "worstPoint": 42,
+          "worstXYZMetres": [
+            0.024213004857301712,
+            -0.003754586912691593,
+            1.4771710634231567
+          ]
+        }
+      },
+      "posterior": {
+        "control": {
+          "samples": 20393,
+          "negativeGapSamples": 1825,
+          "negativeCenterSamples": 1823,
+          "minimumSignedGapMetres": -0.032951968987617875,
+          "worstCurveID": 7661,
+          "worstPoint": 78,
+          "worstXYZMetres": [
+            -0.035427503287792206,
+            0.0251524206250906,
+            1.262197732925415
+          ]
+        },
+        "drape": {
+          "samples": 20393,
+          "negativeGapSamples": 23,
+          "negativeCenterSamples": 23,
+          "minimumSignedGapMetres": -0.029889681619351904,
+          "worstCurveID": 23889,
+          "worstPoint": 72,
+          "worstXYZMetres": [
+            -0.015075978823006153,
+            0.0695270299911499,
+            1.3610748052597046
+          ]
+        },
+        "sweep": {
+          "samples": 20393,
+          "negativeGapSamples": 9,
+          "negativeCenterSamples": 9,
+          "minimumSignedGapMetres": -0.014513635227558552,
+          "worstCurveID": 5432,
+          "worstPoint": 48,
+          "worstXYZMetres": [
+            -0.02552204765379429,
+            0.026177633553743362,
+            1.4666203260421753
+          ]
+        }
+      }
+    }
+  },
+  "scoreDecision": {
+    "numericalScoreUpdated": false,
+    "anatomy": "Preserved source body. No new pose evidence.",
+    "face": "Preserved face. Drape adds unwanted side coverage.",
+    "eyes": "Preserved source eyes.",
+    "skin": "Preserved source shader and exposure.",
+    "hair": "Both fail silhouette and middle-scale lock formation. The posterior visual gap is closed.",
+    "clothing": "Unverified",
+    "collision": "Negative sample gaps in both alternatives. Full finite contact is unverified.",
+    "dynamics": "Unverified",
+    "performance": "Aevrynd CPU, GPU and memory unverified."
+  },
+  "gates": {
+    "sourceReopen": "PASS",
+    "exactGuideReplay": "PASS",
+    "evaluatedEditAndRestore": "PASS",
+    "visual": "FAIL",
+    "neutralContactSamples": "FAIL",
+    "finiteCollision": "UNVERIFIED",
+    "selfContact": "UNVERIFIED",
+    "clothing": "UNVERIFIED",
+    "animation": "UNVERIFIED",
+    "export": "UNVERIFIED",
+    "engine": "UNVERIFIED",
+    "femaleAcceptance": false
+  },
+  "resources": {
+    "startTaipei": "2026-11-11T09:15:12+08:00",
+    "supportDeadlineTaipei": "2026-11-11T09:25:12+08:00",
+    "firstPreviewDeadlineTaipei": "2026-11-11T09:45:12+08:00",
+    "resourceCheckpointTaipei": "2026-11-11T10:00:12+08:00",
+    "completePreviewTaipei": "2026-11-11T09:25:52+08:00",
+    "workers": 1,
+    "blenderThreads": 4,
+    "inspectionPeakPrivateBytes": 788029440,
+    "guidePreviewPeakPrivateBytes": 4722229248,
+    "authorPeakPrivateBytes": 3948269568,
+    "previewPeakPrivateBytes": 5937971200,
+    "blenderElapsedRenderSeconds": {
+      "control:face": 8.670853799965698,
+      "drape:face": 8.330111999996006,
+      "sweep:face": 8.069955299957655,
+      "control:rear-oblique": 11.71743110002717,
+      "drape:rear-oblique": 12.550005300028715,
+      "sweep:rear-oblique": 11.761983199976385,
+      "control:opposite-profile": 9.06979430001229,
+      "drape:opposite-profile": 9.274111600010656,
+      "sweep:opposite-profile": 8.707301400019787,
+      "control:posterior-detail": 13.215363199997228,
+      "drape:posterior-detail": 15.607234299997799,
+      "sweep:posterior-detail": 15.219940699986182,
+      "control:full-body": 6.159933199989609,
+      "drape:full-body": 6.210199199966155,
+      "sweep:full-body": 6.299888600013219
+    },
+    "engineCPUSeconds": null,
+    "engineGPUSeconds": null,
+    "engineMemoryBytes": null
+  },
+  "rights": "Same complete woman and source licenses from r486. Guide geometry and generation code are new. Third-party source attribution and historic limitations retained.",
+  "nextAction": "Author discrete three-dimensional crown, temple and nape paths with intentional overlapping locks. Preserve shared posterior coverage. Verify actual exterior paths around the skin before interpolation. Replace the common procedural clearance envelope and straight-fall construction.",
+  "retirements": "Keep r483 and r484 methods and repeated dense-groom combing retired. The shared procedural ear-clearance envelope fails both variants. No reset of prior appearance counters.",
+  "runtimeChanged": false,
+  "websiteChanged": false,
+  "maleStarted": false,
+  "evidenceHashes": {
+    "r0487-head-comparison.png": "bf7618c9a4be0dfbb9ac524fdda62a8e536d88555d284b3f6862912a675a715e",
+    "r0487-posterior-body-comparison.png": "df3907046540faa9a5a9616cc4265d68b20ca49b14a77977f4cead2955cd3b96",
+    "preview-receipt.json": "fc7692e3af7a66cdcc12cec4f1ed28a02f4ba7d65c41a76f80b8f4ff2243e8b8"
+  }
+}
