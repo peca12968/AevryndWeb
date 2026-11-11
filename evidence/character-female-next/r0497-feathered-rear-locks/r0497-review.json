@@ -1,0 +1,1503 @@
+{
+  "round": "r0497",
+  "decision": "RETAIN_FEATHERED_REAR_LOCKS_UNACCEPTED",
+  "scope": "Both edge layouts close the long r496 slits. B gives the strongest readable rear lock breakup and retains a smaller dark groove and broad sheen.",
+  "previousCommit": "19c55244ca47f8f5a737c326c611b95bc192f0f2",
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\female-next-r0497-feathered-rear-locks-UNACCEPTED.blend",
+    "sha256": "59b970db173b739ea5703d747821de302532b5cf7710dc8dbf3369a5e2386f9f",
+    "bytes": 318467160
+  },
+  "parent": {
+    "path": "F:\\AevryndEvidence\\r0495-local-ear-tuck\\female-next-r0495-local-ear-tuck-UNACCEPTED.blend",
+    "sha256": "a626840418d138d38558b703b08a1fc629419be17fee538c083bb4090d1bd0e4",
+    "bytes": 318230503
+  },
+  "preferredResearch": "supported",
+  "defaultVisibleVariant": "supported",
+  "appearance": {
+    "cameras": [
+      "rear-oblique",
+      "posterior-detail",
+      "opposite-profile",
+      "mirror-profile",
+      "face",
+      "full-body"
+    ],
+    "gains": [
+      "Both variants remove the long continuous r496 rear and oblique openings.",
+      "B preserves more visible separation of rear locks and nape ends than A.",
+      "The measured rear width stays at 402 pixels and the exact r495 ear-tuck geometry is preserved."
+    ],
+    "defects": [
+      "A smooths most of the distinct lock bodies.",
+      "B retains a shorter dark groove and several tapered gaps at the nape.",
+      "The hair still has broad sheet-like sheen and regular side ridges. Facial form, skin and other body features were outside this round."
+    ],
+    "metric": {
+      "method": "Fixed 640x640 images. Dark means luminance less than 65 percent of the median in same-row flanking bands. Rear ROI x348-378 and y330-509 with x316-338 and x385-405 flanks. Rear width uses luminance above 24 in that band. Oblique ROI x307-340 and y335-474 with x280-302 and x346-366 flanks. The strips measure rendered contrast.",
+      "frames": [
+        {
+          "variant": "control",
+          "rearSha256": "7ac2172308253ca007dd6a76588271b87e536477b1cf6e6568f31563f8e32fec",
+          "obliqueSha256": "600678adad6d7bc06f3354b67fd8b6300c5911b3393401dc79b816c0f1dcb63f",
+          "rearMaximumWidthPixels": 402,
+          "rearStripe": {
+            "darkPixels": 0,
+            "rowsWithDarkPixels": 0,
+            "longestConsecutiveRows": 0
+          },
+          "obliqueStripe": {
+            "darkPixels": 2,
+            "rowsWithDarkPixels": 1,
+            "longestConsecutiveRows": 1
+          }
+        },
+        {
+          "variant": "feathered",
+          "rearSha256": "251f1079e8e1f0136b7442b4c945db40952106eded0ad758f809ae3a5cdf5602",
+          "obliqueSha256": "30e5492e0fb05ebb4dcd8ca9304e7f211a7c310ff71bbfdbca5613106acea3f3",
+          "rearMaximumWidthPixels": 402,
+          "rearStripe": {
+            "darkPixels": 0,
+            "rowsWithDarkPixels": 0,
+            "longestConsecutiveRows": 0
+          },
+          "obliqueStripe": {
+            "darkPixels": 27,
+            "rowsWithDarkPixels": 4,
+            "longestConsecutiveRows": 4
+          }
+        },
+        {
+          "variant": "supported",
+          "rearSha256": "7e0a39f8754303754b8c7c19ee9a6301edc370ea34e5e85a43f8aa219ab675f2",
+          "obliqueSha256": "cf830c14e406171cdbf4e7f0b9a605650ad60b33970f94e124d1e92581e0c532",
+          "rearMaximumWidthPixels": 402,
+          "rearStripe": {
+            "darkPixels": 0,
+            "rowsWithDarkPixels": 0,
+            "longestConsecutiveRows": 0
+          },
+          "obliqueStripe": {
+            "darkPixels": 86,
+            "rowsWithDarkPixels": 21,
+            "longestConsecutiveRows": 21
+          }
+        }
+      ],
+      "r0496PairedFrames": [
+        {
+          "variant": "control",
+          "rearSha256": "a1ba4f738ac28bb87f2dfbf3971fc793f36410734acc239f9a4c4372b13a7d31",
+          "obliqueSha256": "dc17e0e777a821ccf87197c237ce4581d655675572e7b6d940b460e8eea525a9",
+          "rearMaximumWidthPixels": 402,
+          "rearStripe": {
+            "darkPixels": 0,
+            "rowsWithDarkPixels": 0,
+            "longestConsecutiveRows": 0
+          },
+          "obliqueStripe": {
+            "darkPixels": 2,
+            "rowsWithDarkPixels": 1,
+            "longestConsecutiveRows": 1
+          }
+        },
+        {
+          "variant": "separate",
+          "rearSha256": "d2698eae69421eea55ff431a17add3e6c488e49de8e8afcc5d0a7af28cef4700",
+          "obliqueSha256": "fb5f5e254478c45a7b17dcc3fd34b036c04b42c97385893651084d46dd396fcb",
+          "rearMaximumWidthPixels": 402,
+          "rearStripe": {
+            "darkPixels": 0,
+            "rowsWithDarkPixels": 0,
+            "longestConsecutiveRows": 0
+          },
+          "obliqueStripe": {
+            "darkPixels": 772,
+            "rowsWithDarkPixels": 117,
+            "longestConsecutiveRows": 114
+          }
+        },
+        {
+          "variant": "woven",
+          "rearSha256": "b06a5f7874117d4eb099b2021040fadde6e6b1180976d299cdfdfcfb3a6c31d0",
+          "obliqueSha256": "adfd692c53d559db1ea50991cd3796f839877cb36bf9324b6fb52db154d80a0d",
+          "rearMaximumWidthPixels": 402,
+          "rearStripe": {
+            "darkPixels": 1,
+            "rowsWithDarkPixels": 1,
+            "longestConsecutiveRows": 1
+          },
+          "obliqueStripe": {
+            "darkPixels": 900,
+            "rowsWithDarkPixels": 105,
+            "longestConsecutiveRows": 99
+          }
+        }
+      ]
+    }
+  },
+  "construction": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\female-next-r0497-feathered-rear-locks-UNACCEPTED.blend",
+      "sha256": "59b970db173b739ea5703d747821de302532b5cf7710dc8dbf3369a5e2386f9f",
+      "bytes": 318467160
+    },
+    "parent": {
+      "path": "F:\\AevryndEvidence\\r0495-local-ear-tuck\\female-next-r0495-local-ear-tuck-UNACCEPTED.blend",
+      "sha256": "a626840418d138d38558b703b08a1fc629419be17fee538c083bb4090d1bd0e4",
+      "bytes": 318230503
+    },
+    "controlObject": "R495 complete hair | tucked",
+    "controlPositionHash": "fbb04a1bdbd8087682f8be7653b19e9af5e459e1258b4723acc26d9dc7efe946",
+    "rootHash": "460afe0c3795baa7a8bf8b845a22c9da558e4d3c474b29b51f8adacfad0de072",
+    "bindingMaximumErrorMetres": 3.6379151088428935E-12,
+    "strands": 24831,
+    "pointsPerStrand": 80,
+    "defaultVisible": "supported",
+    "variants": {
+      "feathered": {
+        "object": "R497 complete hair | feathered",
+        "guideObject": "R497 rear lock axes | feathered",
+        "guideSplines": 9,
+        "positionHash": "3a91a9babf77f4e1cdaa8c11bf23fd136fd17304e7c412a947e2c74581309f44",
+        "weightHash": "592d956a31b066dadb7a1b40e4c85bd31404cb0820465c585ce95bceba449670",
+        "joinHash": "e988e81ed9921c82c0d3afa5406bb6f07f627a26596393fa1a84c03d0a56f28d",
+        "groupHash": "ac7d64dc3c0196df379aa24022d74d24b4efb383d93909cc83d472126281ce09",
+        "neighborHash": "e94353f19f90571c5538b161bf1a85800c0a62616484fcd2bc05f0fdc94c47bf",
+        "neighborWeightHash": "2eeac5128e85a720c099effb8acc6bf680e6d9bffa9d2523d1b54978355e4ed7",
+        "groupCounts": [
+          19049,
+          1143,
+          761,
+          435,
+          232,
+          388,
+          574,
+          663,
+          609,
+          977
+        ],
+        "changedStrands": 5779,
+        "protectedUpperControls": 327368,
+        "blendedStrands": 2962,
+        "interiorStrands": 2820,
+        "maximumNeighborWeight": 0.4999999701976776
+      },
+      "supported": {
+        "object": "R497 complete hair | supported",
+        "guideObject": "R497 rear lock axes | supported",
+        "guideSplines": 18,
+        "positionHash": "55964445e3de793a4a7638c3d871f920bf07544085a70666acebb06e6e0b4f9d",
+        "weightHash": "ca8494dc778763a66063403abba22572c66830e7cbb65f21de5b6a44be1b081f",
+        "joinHash": "5ccf6438f39a6adca989af495463aabd79e0687138b4fb2659886d01c4ff6871",
+        "groupHash": "d74cd7fe488ecf06eb021984f3688b2c82d7852d96e4304231c219247e094a7c",
+        "neighborHash": "63ec9b8dde51ba4c5c6de3fcc7f30a5986e31a40601323a2d16bcbf9c3e4e7b1",
+        "neighborWeightHash": "d9c754d24e691f48ff76aa9018bdfd9736995e367881de25b831d60ba20d7d7a",
+        "groupCounts": [
+          14415,
+          1143,
+          761,
+          435,
+          232,
+          388,
+          574,
+          663,
+          609,
+          977,
+          623,
+          578,
+          424,
+          431,
+          502,
+          617,
+          600,
+          562,
+          297
+        ],
+        "changedStrands": 10414,
+        "protectedUpperControls": 327368,
+        "blendedStrands": 7841,
+        "interiorStrands": 2575,
+        "maximumNeighborWeight": 0.5
+      }
+    },
+    "pinnae": [
+      {
+        "outer": 0.08456408232450485,
+        "front": -0.02645467221736908,
+        "back": -0.0026612288784235716,
+        "bottom": 1.4269497394561768,
+        "top": 1.4655271768569946,
+        "vertexCount": 531
+      },
+      {
+        "outer": 0.08456408232450485,
+        "front": -0.02645467221736908,
+        "back": -0.0026612288784235716,
+        "bottom": 1.4269497394561768,
+        "top": 1.4655271768569946,
+        "vertexCount": 531
+      }
+    ],
+    "historicalBanksInParent": [
+      "R493 ear-to-nape stations | staggered",
+      "R493 complete hair | staggered",
+      "R495 local ear arcs | divided",
+      "R495 complete hair | divided"
+    ]
+  },
+  "replay": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\female-next-r0497-feathered-rear-locks-UNACCEPTED.blend",
+      "sha256": "59b970db173b739ea5703d747821de302532b5cf7710dc8dbf3369a5e2386f9f",
+      "bytes": 318467160
+    },
+    "replay": {
+      "feathered": {
+        "positionHash": "3a91a9babf77f4e1cdaa8c11bf23fd136fd17304e7c412a947e2c74581309f44",
+        "ownershipHash": "2b9c02d302c732159e3b1c95a6fee35cac0565b43335c801bf241addc6428b9b",
+        "unblendedConstructionHash": "ae221afdad4ed822712e1f20d7edc2551a8ed5b0de1b69c1fce05c535689e9e4",
+        "interiorsMatchUnblended": true,
+        "exact": true
+      },
+      "supported": {
+        "positionHash": "55964445e3de793a4a7638c3d871f920bf07544085a70666acebb06e6e0b4f9d",
+        "ownershipHash": "2b9c02d302c732159e3b1c95a6fee35cac0565b43335c801bf241addc6428b9b",
+        "unblendedConstructionHash": "4359ac00b665c2a308a4cb545530fe31f8ccf478023bc281e476cdf02ca099b9",
+        "interiorsMatchUnblended": true,
+        "exact": true
+      }
+    },
+    "protectedEarTuckStrands": 5471,
+    "fixedAttributeHashes": {
+      "radius": "729b8d11aad6fb8a1f542a07c002276be2bc4fe2aa901f63ad6be24e6b81daeb",
+      "AFN409_CURVE_ID": "eecedbc87ad74bd5fd9c2d473746fbe43c7049b787c8895ec4c326ba1c52fd47",
+      "AFN409_POINT_ID": "3080340c723adb82f3593a18ce9f758b801d07df0325662f326ed8a273bc4de6",
+      "AFN409_SKIN_TRIANGLE_ID": "5a01eade946454781705028e01eadc6457d73447652409cd8ba59f2a37e0240d",
+      "AFN409_SKIN_BARYCENTRIC": "a2f1a271d68f05de3d52efac8cbaef52a2455349cb7d7c99f95df049960726d4",
+      "AEVRYND_ROOT_NORMAL_OFFSET": "4e582178db0dfb3148d63d979c64686b63e30f255a59438794e5a89380ee5e06",
+      "AEVRYND_ROOT_OFFSET_LOCAL": "f9a782ab8570eb487c5a88a26ea3456378097718ad0750073dff4bbf612eb283",
+      "surface_uv_coordinate": "ab2e48470da135b094d701748f63d7b3c263a6d2b7d0401f7bd04856d364343d",
+      "AEVRYND_SCALP_REGION": "d232a6b8477053c5f2e0d5ee4fa6fa7e7f04ce43f2d204745c06bcc794030c05",
+      "AEVRYND_LOCK_ID": "7c182bd84960ed10c0550b7a1319102bb40100f19103a8925b78345d565f2c7f",
+      "AEVRYND_SPATIAL_LOCK_ID": "2b9c02d302c732159e3b1c95a6fee35cac0565b43335c801bf241addc6428b9b",
+      "AEVRYND_SPATIAL_JOIN_POINT": "6c497ff399f16f6f983cd4c3a804a7217446ef4b453cfc371fdb08ad21e39097",
+      "AEVRYND_POSTERIOR_LOFT_WEIGHT": "199f7c6e577ad2d4fb607d8649743a66626c145be443701f284e7c60ff2ada3b",
+      "AEVRYND_POSTERIOR_JOIN_POINT": "57fd54edfbae647c7780fd57454e601239a48e33904c8476a10dbd4b2563002f",
+      "AEVRYND_EAR_NAPE_WEIGHT": "269807d12ffb4f594d7da1de7e223fb78c6a8f107f9f560cb1a74209a7026393",
+      "AEVRYND_EAR_NAPE_JOIN": "2e1143741fbe95282e5066d4f98d9d513ee99e6c3a6659d046561a7e1ee6ada2",
+      "AEVRYND_EAR_NAPE_GROUP": "24d0a74b61ce8703134a72c0a226774b7dd011878d74cf2a0552ffdfec3e7f18",
+      "AEVRYND_EAR_TUCK_WEIGHT": "f28195f1785cf1954b5d7b226fa4b906fe895e5cde0fbf3da62b3ac4aff0be38",
+      "AEVRYND_EAR_TUCK_JOIN": "c096797f88ced4ef0024276dadd280537befa8cccdbff5c2247d2171ed5dd07d",
+      "AEVRYND_EAR_TUCK_GROUP": "908177cd8c2e5c935755ccde9267379cd000cd615db0d91a5c6a3ce693d1078e"
+    },
+    "bindingMaximumErrorMetres": 3.6379151088428935E-12,
+    "dependencies": {
+      "libraries": [],
+      "externalImages": []
+    },
+    "stats": {
+      "sceneObjects": 19,
+      "vertices": 414564,
+      "triangles": 795029,
+      "bones": 60,
+      "morphs": 110,
+      "materials": 21,
+      "images": 31,
+      "strands": 24831,
+      "points": 1986480
+    },
+    "operation": {
+      "guide": "R497 rear lock axes | supported",
+      "routeIndex": 4,
+      "stationIndex": 2,
+      "offsetYMetres": 0.005,
+      "changedStrands": 773,
+      "changedNeighborStrands": 385,
+      "affectedOwnerSlots": [
+        7
+      ],
+      "evaluatedEditHash": "6a912f075c0ca370a42d7344146e88c60325a4d770ae62b9d7ffb6d36c578668",
+      "restoredHash": "55964445e3de793a4a7638c3d871f920bf07544085a70666acebb06e6e0b4f9d",
+      "sourceWrite": false
+    }
+  },
+  "preview": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\female-next-r0497-feathered-rear-locks-UNACCEPTED.blend",
+      "sha256": "59b970db173b739ea5703d747821de302532b5cf7710dc8dbf3369a5e2386f9f",
+      "bytes": 318467160
+    },
+    "renders": {
+      "control:rear-oblique": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\control-rear-oblique.png",
+        "sha256": "600678adad6d7bc06f3354b67fd8b6300c5911b3393401dc79b816c0f1dcb63f",
+        "seconds": 6.834549200022593,
+        "evaluatedPositionHash": "fbb04a1bdbd8087682f8be7653b19e9af5e459e1258b4723acc26d9dc7efe946",
+        "camera": [
+          [
+            -0.8521712422370911,
+            -0.11812575906515121,
+            0.5097552537918091,
+            0.3499999940395355
+          ],
+          [
+            0.5232630372047424,
+            -0.19237636029720306,
+            0.8301728367805481,
+            0.5820000171661377
+          ],
+          [
+            7.023855630450271E-08,
+            0.9741855263710022,
+            0.2257484495639801,
+            1.6430000066757202
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "feathered:rear-oblique": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\feathered-rear-oblique.png",
+        "sha256": "30e5492e0fb05ebb4dcd8ca9304e7f211a7c310ff71bbfdbca5613106acea3f3",
+        "seconds": 6.8241350000025705,
+        "evaluatedPositionHash": "3a91a9babf77f4e1cdaa8c11bf23fd136fd17304e7c412a947e2c74581309f44",
+        "camera": [
+          [
+            -0.8521712422370911,
+            -0.11812575906515121,
+            0.5097552537918091,
+            0.3499999940395355
+          ],
+          [
+            0.5232630372047424,
+            -0.19237636029720306,
+            0.8301728367805481,
+            0.5820000171661377
+          ],
+          [
+            7.023855630450271E-08,
+            0.9741855263710022,
+            0.2257484495639801,
+            1.6430000066757202
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "supported:rear-oblique": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\supported-rear-oblique.png",
+        "sha256": "cf830c14e406171cdbf4e7f0b9a605650ad60b33970f94e124d1e92581e0c532",
+        "seconds": 7.0769719000090845,
+        "evaluatedPositionHash": "55964445e3de793a4a7638c3d871f920bf07544085a70666acebb06e6e0b4f9d",
+        "camera": [
+          [
+            -0.8521712422370911,
+            -0.11812575906515121,
+            0.5097552537918091,
+            0.3499999940395355
+          ],
+          [
+            0.5232630372047424,
+            -0.19237636029720306,
+            0.8301728367805481,
+            0.5820000171661377
+          ],
+          [
+            7.023855630450271E-08,
+            0.9741855263710022,
+            0.2257484495639801,
+            1.6430000066757202
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "control:posterior-detail": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\control-posterior-detail.png",
+        "sha256": "7ac2172308253ca007dd6a76588271b87e536477b1cf6e6568f31563f8e32fec",
+        "seconds": 8.786500099988189,
+        "evaluatedPositionHash": "fbb04a1bdbd8087682f8be7653b19e9af5e459e1258b4723acc26d9dc7efe946",
+        "camera": [
+          [
+            -0.9999994039535522,
+            -8.74228689440315E-08,
+            1.5099574568466778E-07,
+            0.0006142705678939819
+          ],
+          [
+            1.5099571726295835E-07,
+            -7.549786573690653E-08,
+            0.9999997019767761,
+            0.8068079948425293
+          ],
+          [
+            -8.742283341689472E-08,
+            0.9999997019767761,
+            7.549787994776125E-08,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 88.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "feathered:posterior-detail": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\feathered-posterior-detail.png",
+        "sha256": "251f1079e8e1f0136b7442b4c945db40952106eded0ad758f809ae3a5cdf5602",
+        "seconds": 10.413870199990924,
+        "evaluatedPositionHash": "3a91a9babf77f4e1cdaa8c11bf23fd136fd17304e7c412a947e2c74581309f44",
+        "camera": [
+          [
+            -0.9999994039535522,
+            -8.74228689440315E-08,
+            1.5099574568466778E-07,
+            0.0006142705678939819
+          ],
+          [
+            1.5099571726295835E-07,
+            -7.549786573690653E-08,
+            0.9999997019767761,
+            0.8068079948425293
+          ],
+          [
+            -8.742283341689472E-08,
+            0.9999997019767761,
+            7.549787994776125E-08,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 88.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "supported:posterior-detail": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\supported-posterior-detail.png",
+        "sha256": "7e0a39f8754303754b8c7c19ee9a6301edc370ea34e5e85a43f8aa219ab675f2",
+        "seconds": 10.79719789995579,
+        "evaluatedPositionHash": "55964445e3de793a4a7638c3d871f920bf07544085a70666acebb06e6e0b4f9d",
+        "camera": [
+          [
+            -0.9999994039535522,
+            -8.74228689440315E-08,
+            1.5099574568466778E-07,
+            0.0006142705678939819
+          ],
+          [
+            1.5099571726295835E-07,
+            -7.549786573690653E-08,
+            0.9999997019767761,
+            0.8068079948425293
+          ],
+          [
+            -8.742283341689472E-08,
+            0.9999997019767761,
+            7.549787994776125E-08,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 88.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "control:opposite-profile": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\control-opposite-profile.png",
+        "sha256": "a69636f21b972178366d4d63c500a4820ff052889b18cd0c939796dc27fcc2ce",
+        "seconds": 6.167478699993808,
+        "evaluatedPositionHash": "fbb04a1bdbd8087682f8be7653b19e9af5e459e1258b4723acc26d9dc7efe946",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            1.3867994539396022E-06,
+            -0.9999998211860657,
+            -0.8493857383728027
+          ],
+          [
+            -0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "feathered:opposite-profile": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\feathered-opposite-profile.png",
+        "sha256": "9d04feddee9c437bb637e053752f96bb3ca67d3f5ef0f27e937393e4a09e06bc",
+        "seconds": 5.535731700016186,
+        "evaluatedPositionHash": "3a91a9babf77f4e1cdaa8c11bf23fd136fd17304e7c412a947e2c74581309f44",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            1.3867994539396022E-06,
+            -0.9999998211860657,
+            -0.8493857383728027
+          ],
+          [
+            -0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "supported:opposite-profile": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\supported-opposite-profile.png",
+        "sha256": "03587f7698625a23dc7e9b9f18ba85569fdf0dcab579468e833e475bcdade019",
+        "seconds": 8.741626600036398,
+        "evaluatedPositionHash": "55964445e3de793a4a7638c3d871f920bf07544085a70666acebb06e6e0b4f9d",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            1.3867994539396022E-06,
+            -0.9999998211860657,
+            -0.8493857383728027
+          ],
+          [
+            -0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "control:mirror-profile": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\control-mirror-profile.png",
+        "sha256": "1e20b4012864397ccd23ae1cefd9a1224042bc07d6d76abbe00b0b13f7e980e6",
+        "seconds": 11.056751700001769,
+        "evaluatedPositionHash": "fbb04a1bdbd8087682f8be7653b19e9af5e459e1258b4723acc26d9dc7efe946",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            -1.3867994539396022E-06,
+            0.9999998211860657,
+            0.8493857383728027
+          ],
+          [
+            0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            -2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "feathered:mirror-profile": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\feathered-mirror-profile.png",
+        "sha256": "10eff10b995a944178d1e7758e41b14527143117b37b002cfda2dcfa8fcb67d9",
+        "seconds": 6.090399899985641,
+        "evaluatedPositionHash": "3a91a9babf77f4e1cdaa8c11bf23fd136fd17304e7c412a947e2c74581309f44",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            -1.3867994539396022E-06,
+            0.9999998211860657,
+            0.8493857383728027
+          ],
+          [
+            0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            -2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "supported:mirror-profile": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\supported-mirror-profile.png",
+        "sha256": "a80203aeebe51e931948040bdf68602bb89cdaf30e23bd36c2353b156fdaebab",
+        "seconds": 5.288141799974255,
+        "evaluatedPositionHash": "55964445e3de793a4a7638c3d871f920bf07544085a70666acebb06e6e0b4f9d",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            -1.3867994539396022E-06,
+            0.9999998211860657,
+            0.8493857383728027
+          ],
+          [
+            0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            -2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "control:face": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\control-face.png",
+        "sha256": "04f7f05ebc0e4734d5ad39fd57fd608ab17246be7823d20de7d6dcc5488b9046",
+        "seconds": 4.551149100007024,
+        "evaluatedPositionHash": "fbb04a1bdbd8087682f8be7653b19e9af5e459e1258b4723acc26d9dc7efe946",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0006142705678939819
+          ],
+          [
+            0.0,
+            3.1391644483846903E-07,
+            -0.9999998807907104,
+            -0.8931920528411865
+          ],
+          [
+            0.0,
+            0.9999998807907104,
+            3.1391644483846903E-07,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "feathered:face": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\feathered-face.png",
+        "sha256": "1c0a0349c746a7a699a4afaf7449ddfeb04a78708b3669ac75b59589ed348ff8",
+        "seconds": 4.40590950002661,
+        "evaluatedPositionHash": "3a91a9babf77f4e1cdaa8c11bf23fd136fd17304e7c412a947e2c74581309f44",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0006142705678939819
+          ],
+          [
+            0.0,
+            3.1391644483846903E-07,
+            -0.9999998807907104,
+            -0.8931920528411865
+          ],
+          [
+            0.0,
+            0.9999998807907104,
+            3.1391644483846903E-07,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "supported:face": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\supported-face.png",
+        "sha256": "de8a93660911f694fb40c4e3a2eb60007e1cb912e182680fc68162e827b887b2",
+        "seconds": 4.426019900012761,
+        "evaluatedPositionHash": "55964445e3de793a4a7638c3d871f920bf07544085a70666acebb06e6e0b4f9d",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0006142705678939819
+          ],
+          [
+            0.0,
+            3.1391644483846903E-07,
+            -0.9999998807907104,
+            -0.8931920528411865
+          ],
+          [
+            0.0,
+            0.9999998807907104,
+            3.1391644483846903E-07,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "control:full-body": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\control-full-body.png",
+        "sha256": "5e1579e84a70abcdde420a36f8b3df8a900b454b31cf17d3620010abe07e355f",
+        "seconds": 3.1920414000051096,
+        "evaluatedPositionHash": "fbb04a1bdbd8087682f8be7653b19e9af5e459e1258b4723acc26d9dc7efe946",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.020705485716462135,
+            -0.9997854828834534,
+            -3.4050002098083496
+          ],
+          [
+            0.0,
+            0.9997854828834534,
+            0.020705485716462135,
+            0.9049999713897705
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "feathered:full-body": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\feathered-full-body.png",
+        "sha256": "f68edda9443c5a19b7be056dc80491735dd0dd234dfd3033150a42ebc1b95825",
+        "seconds": 3.087515299965162,
+        "evaluatedPositionHash": "3a91a9babf77f4e1cdaa8c11bf23fd136fd17304e7c412a947e2c74581309f44",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.020705485716462135,
+            -0.9997854828834534,
+            -3.4050002098083496
+          ],
+          [
+            0.0,
+            0.9997854828834534,
+            0.020705485716462135,
+            0.9049999713897705
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      },
+      "supported:full-body": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\supported-full-body.png",
+        "sha256": "b857c527854ade32dce25d9eb7dcc8a1e7e584f0d476af7d7c5c3dec8264c56e",
+        "seconds": 3.178181900002528,
+        "evaluatedPositionHash": "55964445e3de793a4a7638c3d871f920bf07544085a70666acebb06e6e0b4f9d",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.020705485716462135,
+            -0.9997854828834534,
+            -3.4050002098083496
+          ],
+          [
+            0.0,
+            0.9997854828834534,
+            0.020705485716462135,
+            0.9049999713897705
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R497 complete hair | supported"
+      }
+    },
+    "sameRenderCarrier": true,
+    "sourceUnchanged": true,
+    "recoveredCompletedFrames": 10
+  },
+  "contact": {
+    "crown": {
+      "pose": "archived complete neutral woman",
+      "model": "actual neutral skin BVH",
+      "scope": "All 24,831 strands at control indices 0 through 9. Nearest oriented triangle minus stored radius. Independent rays at the minimum and curve 5535.",
+      "unverified": [
+        "swept curve segments",
+        "hair self-contact",
+        "free lengths beyond sampled controls",
+        "dynamic and clothing contact"
+      ],
+      "results": {
+        "control": {
+          "windows": {
+            "root": {
+              "samples": 24831,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 8.480613178107888E-05,
+              "worstCurveID": 9270,
+              "worstPointIndex": 0,
+              "worstPositionMetres": [
+                -0.008562459610402584,
+                0.0013908583205193281,
+                1.5673632621765137
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "firstFiveAfterRoot": {
+              "samples": 124155,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0002346337423659861,
+              "worstCurveID": 16070,
+              "worstPointIndex": 1,
+              "worstPositionMetres": [
+                -0.0017333932919427752,
+                -0.01344974059611559,
+                1.5711722373962402
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "laterUpperControls": {
+              "samples": 99324,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0019857040606439114,
+              "worstCurveID": 5535,
+              "worstPointIndex": 6,
+              "worstPositionMetres": [
+                -0.00615955563262105,
+                -0.010239189490675926,
+                1.572203516960144
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "curve5535": [
+            {
+              "pointIndex": 0,
+              "signedGapMetres": 8.485751459375024E-05,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 1,
+              "signedGapMetres": 0.0003345934965182096,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 2,
+              "signedGapMetres": 0.000576679187361151,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 3,
+              "signedGapMetres": 0.0008322662906721234,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 4,
+              "signedGapMetres": 0.0011789199197664857,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 5,
+              "signedGapMetres": 0.001498610363341868,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "feathered": {
+          "windows": {
+            "root": {
+              "samples": 24831,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 8.480613178107888E-05,
+              "worstCurveID": 9270,
+              "worstPointIndex": 0,
+              "worstPositionMetres": [
+                -0.008562459610402584,
+                0.0013908583205193281,
+                1.5673632621765137
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "firstFiveAfterRoot": {
+              "samples": 124155,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0002346337423659861,
+              "worstCurveID": 16070,
+              "worstPointIndex": 1,
+              "worstPositionMetres": [
+                -0.0017333932919427752,
+                -0.01344974059611559,
+                1.5711722373962402
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "laterUpperControls": {
+              "samples": 99324,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0019857040606439114,
+              "worstCurveID": 5535,
+              "worstPointIndex": 6,
+              "worstPositionMetres": [
+                -0.00615955563262105,
+                -0.010239189490675926,
+                1.572203516960144
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "curve5535": [
+            {
+              "pointIndex": 0,
+              "signedGapMetres": 8.485751459375024E-05,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 1,
+              "signedGapMetres": 0.0003345934965182096,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 2,
+              "signedGapMetres": 0.000576679187361151,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 3,
+              "signedGapMetres": 0.0008322662906721234,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 4,
+              "signedGapMetres": 0.0011789199197664857,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 5,
+              "signedGapMetres": 0.001498610363341868,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "supported": {
+          "windows": {
+            "root": {
+              "samples": 24831,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 8.480613178107888E-05,
+              "worstCurveID": 9270,
+              "worstPointIndex": 0,
+              "worstPositionMetres": [
+                -0.008562459610402584,
+                0.0013908583205193281,
+                1.5673632621765137
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "firstFiveAfterRoot": {
+              "samples": 124155,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0002346337423659861,
+              "worstCurveID": 16070,
+              "worstPointIndex": 1,
+              "worstPositionMetres": [
+                -0.0017333932919427752,
+                -0.01344974059611559,
+                1.5711722373962402
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "laterUpperControls": {
+              "samples": 99324,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0019857040606439114,
+              "worstCurveID": 5535,
+              "worstPointIndex": 6,
+              "worstPositionMetres": [
+                -0.00615955563262105,
+                -0.010239189490675926,
+                1.572203516960144
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "curve5535": [
+            {
+              "pointIndex": 0,
+              "signedGapMetres": 8.485751459375024E-05,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 1,
+              "signedGapMetres": 0.0003345934965182096,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 2,
+              "signedGapMetres": 0.000576679187361151,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 3,
+              "signedGapMetres": 0.0008322662906721234,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 4,
+              "signedGapMetres": 0.0011789199197664857,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 5,
+              "signedGapMetres": 0.001498610363341868,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "neutral": {
+      "source": {
+        "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\female-next-r0497-feathered-rear-locks-UNACCEPTED.blend",
+        "sha256": "59b970db173b739ea5703d747821de302532b5cf7710dc8dbf3369a5e2386f9f",
+        "bytes": 318467160
+      },
+      "pose": "complete neutral woman",
+      "skin": "R482 archived complete neutral skin",
+      "controlPointResults": {
+        "feathered": {
+          "controls": 1986480,
+          "negativeOrientedGap": 4,
+          "orientedMinimum": {
+            "curveID": 25206,
+            "pointIndex": 70,
+            "signedGapMetres": -0.05207797512412071,
+            "positionMetres": [
+              0.06231359392404556,
+              0.059187714010477066,
+              1.3804570436477661
+            ]
+          },
+          "warningRecheck": {
+            "insideCenters": 0,
+            "outsideRadiusOverlap": 0,
+            "outsideAndClear": 4,
+            "mixedParity": 0
+          },
+          "worstRayCorroboratedContact": null,
+          "minimumAfterWarningRecheck": {
+            "curveID": 9270,
+            "pointIndex": 0,
+            "signedGapMetres": 8.480613178107888E-05,
+            "positionMetres": [
+              -0.008562459610402584,
+              0.0013908583205193281,
+              1.5673632621765137
+            ]
+          }
+        },
+        "supported": {
+          "controls": 1986480,
+          "negativeOrientedGap": 7,
+          "orientedMinimum": {
+            "curveID": 20086,
+            "pointIndex": 72,
+            "signedGapMetres": -0.03267180919647217,
+            "positionMetres": [
+              -0.018085550516843796,
+              0.07013169676065445,
+              1.364604115486145
+            ]
+          },
+          "warningRecheck": {
+            "insideCenters": 0,
+            "outsideRadiusOverlap": 0,
+            "outsideAndClear": 7,
+            "mixedParity": 0
+          },
+          "worstRayCorroboratedContact": null,
+          "minimumAfterWarningRecheck": {
+            "curveID": 9270,
+            "pointIndex": 0,
+            "signedGapMetres": 8.480613178107888E-05,
+            "positionMetres": [
+              -0.008562459610402584,
+              0.0013908583205193281,
+              1.5673632621765137
+            ]
+          }
+        }
+      },
+      "limitations": [
+        "Finite sample spacing between evaluated points",
+        "No hair self-contact, clothes or continuous motion"
+      ],
+      "resumedFromVerifiedCurves": 0,
+      "nativeEvaluatedSampleResult": {
+        "variant": "supported",
+        "method": "Blender Curve to Points in EVALUATED mode, preserving sampled radius and curve ownership",
+        "evaluatedSamples": 23564619,
+        "verifiedCurves": 24831,
+        "samplesPerCurveMinimum": 949,
+        "samplesPerCurveMaximum": 949,
+        "negativeOrientedWarnings": 38,
+        "rayInsideCenters": 0,
+        "rayOutsideOverlap": 0,
+        "rayOutsideAndClear": 38,
+        "mixedParity": 0,
+        "minimumAfterWarningRecheck": {
+          "curveID": 9270,
+          "positionMetres": [
+            -0.008562459610402584,
+            0.0013908583205193281,
+            1.5673632621765137
+          ],
+          "gapMetres": 8.480613178107888E-05,
+          "warningRayCrossings": null
+        },
+        "posteriorZoneRule": "Absolute X <= 77 mm, Y >= 39 mm, Z in [1.325, 1.516] m in the neutral source frame",
+        "posteriorZone": {
+          "samples": 9960917,
+          "negativeAfterWarningRecheck": 0,
+          "minimumAfterWarningRecheck": {
+            "curveID": 21234,
+            "positionMetres": [
+              -0.00661094905808568,
+              0.04095851257443428,
+              1.4491825103759766
+            ],
+            "gapMetres": 8.49246425786987E-05,
+            "warningRayCrossings": null
+          }
+        },
+        "finalProcessElapsedSeconds": 67.65137619996676
+      }
+    },
+    "inheritedFixture": [
+      "12 boundary edges",
+      "2 adjacent orientation disagreements"
+    ],
+    "open": [
+      "Continuous finite-radius hair-to-skin clearance",
+      "Hair self-contact and garments",
+      "Turning, wind and other motion",
+      "Engine integration and benchmark"
+    ]
+  },
+  "rights": "Inherited exact source notices. The r484 aligned Angelica profile was inspected. DarkNik and NikZava284 attribution under CC BY 4.0 remains. No reference geometry was imported.",
+  "resources": {
+    "startTaipei": "2026-11-11T12:50:23+08:00",
+    "supportDeadlineTaipei": "2026-11-11T13:00:23+08:00",
+    "firstPreviewDeadlineTaipei": "2026-11-11T13:20:23+08:00",
+    "completePreviewTaipei": "2026-11-11T12:57:52.0000000+08:00",
+    "resourceCheckpointTaipei": "2026-11-11T13:35:23+08:00",
+    "workers": 1,
+    "blenderThreads": 4,
+    "authorPeakPrivateBytes": 2092081152,
+    "initialPreviewPeakPrivateBytes": 3385864192,
+    "initialPreview": "First 6,000 MiB admission test refused before Blender started. Admitted at 5,500 MiB. System commit reserve stopped the renderer at 96.1896 seconds after ten verified frames.",
+    "resumedPreviewPeakPrivateBytes": 3056881664,
+    "nativeContactPeakPrivateBytes": 2312634368,
+    "engineCPUSeconds": null,
+    "engineGPUSeconds": null,
+    "engineMemoryBytes": null
+  },
+  "nextAction": "Keep r497 B as a reversible posterior construction and r495 A as rollback. Inspect the frontal and three-quarter face at fixed exposure. Rebuild the broad orbital-to-cheek transition in the actual face geometry as the next distinct defect, preserving the inherited lid margin and this verified hair. Compare neutral and blinking geometry before adoption.",
+  "inheritedRetirements": "Preserve r483, r484, dense combing, r487 common ear envelope, r489 upper-only splice, r494 hard temporal part, r495 B and r496 uncompensated hard posterior boundary rejections. The edge interpolation is a changed construction and remains research. No adopted complete appearance and no counter reset.",
+  "scoreIncrease": false,
+  "runtimeOrWebsiteChanged": false,
+  "maleWorkStarted": false
+}

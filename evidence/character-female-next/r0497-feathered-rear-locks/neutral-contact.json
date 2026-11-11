@@ -1,0 +1,117 @@
+{
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0497-feathered-rear-locks\\female-next-r0497-feathered-rear-locks-UNACCEPTED.blend",
+    "sha256": "59b970db173b739ea5703d747821de302532b5cf7710dc8dbf3369a5e2386f9f",
+    "bytes": 318467160
+  },
+  "pose": "complete neutral woman",
+  "skin": "R482 archived complete neutral skin",
+  "controlPointResults": {
+    "feathered": {
+      "controls": 1986480,
+      "negativeOrientedGap": 4,
+      "orientedMinimum": {
+        "curveID": 25206,
+        "pointIndex": 70,
+        "signedGapMetres": -0.05207797512412071,
+        "positionMetres": [
+          0.06231359392404556,
+          0.059187714010477066,
+          1.3804570436477661
+        ]
+      },
+      "warningRecheck": {
+        "insideCenters": 0,
+        "outsideRadiusOverlap": 0,
+        "outsideAndClear": 4,
+        "mixedParity": 0
+      },
+      "worstRayCorroboratedContact": null,
+      "minimumAfterWarningRecheck": {
+        "curveID": 9270,
+        "pointIndex": 0,
+        "signedGapMetres": 8.480613178107888e-05,
+        "positionMetres": [
+          -0.008562459610402584,
+          0.0013908583205193281,
+          1.5673632621765137
+        ]
+      }
+    },
+    "supported": {
+      "controls": 1986480,
+      "negativeOrientedGap": 7,
+      "orientedMinimum": {
+        "curveID": 20086,
+        "pointIndex": 72,
+        "signedGapMetres": -0.03267180919647217,
+        "positionMetres": [
+          -0.018085550516843796,
+          0.07013169676065445,
+          1.364604115486145
+        ]
+      },
+      "warningRecheck": {
+        "insideCenters": 0,
+        "outsideRadiusOverlap": 0,
+        "outsideAndClear": 7,
+        "mixedParity": 0
+      },
+      "worstRayCorroboratedContact": null,
+      "minimumAfterWarningRecheck": {
+        "curveID": 9270,
+        "pointIndex": 0,
+        "signedGapMetres": 8.480613178107888e-05,
+        "positionMetres": [
+          -0.008562459610402584,
+          0.0013908583205193281,
+          1.5673632621765137
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "Finite sample spacing between evaluated points",
+    "No hair self-contact, clothes or continuous motion"
+  ],
+  "resumedFromVerifiedCurves": 0,
+  "nativeEvaluatedSampleResult": {
+    "variant": "supported",
+    "method": "Blender Curve to Points in EVALUATED mode, preserving sampled radius and curve ownership",
+    "evaluatedSamples": 23564619,
+    "verifiedCurves": 24831,
+    "samplesPerCurveMinimum": 949,
+    "samplesPerCurveMaximum": 949,
+    "negativeOrientedWarnings": 38,
+    "rayInsideCenters": 0,
+    "rayOutsideOverlap": 0,
+    "rayOutsideAndClear": 38,
+    "mixedParity": 0,
+    "minimumAfterWarningRecheck": {
+      "curveID": 9270,
+      "positionMetres": [
+        -0.008562459610402584,
+        0.0013908583205193281,
+        1.5673632621765137
+      ],
+      "gapMetres": 8.480613178107888e-05,
+      "warningRayCrossings": null
+    },
+    "posteriorZoneRule": "Absolute X <= 77 mm, Y >= 39 mm, Z in [1.325, 1.516] m in the neutral source frame",
+    "posteriorZone": {
+      "samples": 9960917,
+      "negativeAfterWarningRecheck": 0,
+      "minimumAfterWarningRecheck": {
+        "curveID": 21234,
+        "positionMetres": [
+          -0.00661094905808568,
+          0.04095851257443428,
+          1.4491825103759766
+        ],
+        "gapMetres": 8.49246425786987e-05,
+        "warningRayCrossings": null
+      }
+    },
+    "finalProcessElapsedSeconds": 67.65137619996676
+  }
+}
