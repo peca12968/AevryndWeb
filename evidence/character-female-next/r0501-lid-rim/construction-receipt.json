@@ -1,0 +1,173 @@
+{
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0501-lid-rim\\female-next-r0501-lid-rim-UNACCEPTED.blend",
+    "bytes": 335640074,
+    "sha256": "f7fe5670ba2f939c9764c5e57813636f2e66446edc0a814926e68ee3d048cdee"
+  },
+  "parent": {
+    "path": "F:\\AevryndEvidence\\r0500-multi-pose-lid\\female-next-r0500-multi-pose-lid-UNACCEPTED.blend",
+    "sha256": "d1af8ee646bacb96c5340eb2a2e7455c111d41d75cdedb7ce0a07a09e68e1b68",
+    "bytes": 325339138
+  },
+  "body": "AFN126_COMPLETE_WOMAN_BODY_AND_ARTIST_HEAD",
+  "gaze": "AFN138_ACTUAL_CURRENT_GAZE_RIG",
+  "layoutProperty": "R501_Lid_Rim",
+  "default": "hermite",
+  "blinkProperty": "R448_Blink",
+  "basisHash": "bbeca94ffab2b5869f2890436bded196cf31ac59625bf90d6a253cc975b92902",
+  "topologyHash": "2aa622ecf7be58650dd36a47d57f0bbd2d7a88f0af984f3c68cfced788cff2c1",
+  "hair": {
+    "object": "R497 complete hair | supported",
+    "positionHash": "55964445e3de793a4a7638c3d871f920bf07544085a70666acebb06e6e0b4f9d"
+  },
+  "cheekCoordinateHash": "4a6a24c302135904fe756ae1ce5a9102bcdc7842d55a2ba106f103cab9287cb6",
+  "originalLashRimVertices": 197,
+  "canthusTransportVertices": 258,
+  "profiles": {
+    "0.75": {
+      "-1": {
+        "samples": 31,
+        "depthRibs": 25,
+        "xLimitsMm": [
+          34.0,
+          49.0
+        ],
+        "rimOffsetMm": 1.45,
+        "hermite": {
+          "peakRibDeltaMm": 1.1605010518384518
+        },
+        "membrane": {
+          "peakRibDeltaMm": 0.4470451388065042
+        }
+      },
+      "1": {
+        "samples": 31,
+        "depthRibs": 25,
+        "xLimitsMm": [
+          34.0,
+          49.0
+        ],
+        "rimOffsetMm": 1.45,
+        "hermite": {
+          "peakRibDeltaMm": 1.4131871120144042
+        },
+        "membrane": {
+          "peakRibDeltaMm": 0.5706674062370893
+        }
+      }
+    },
+    "0.875": {
+      "-1": {
+        "samples": 31,
+        "depthRibs": 25,
+        "xLimitsMm": [
+          34.0,
+          49.0
+        ],
+        "rimOffsetMm": 1.45,
+        "hermite": {
+          "peakRibDeltaMm": 0.9806168386212757
+        },
+        "membrane": {
+          "peakRibDeltaMm": 0.3408621265743818
+        }
+      },
+      "1": {
+        "samples": 31,
+        "depthRibs": 25,
+        "xLimitsMm": [
+          34.0,
+          49.0
+        ],
+        "rimOffsetMm": 1.45,
+        "hermite": {
+          "peakRibDeltaMm": 1.245826415485709
+        },
+        "membrane": {
+          "peakRibDeltaMm": 0.6443642901896993
+        }
+      }
+    },
+    "1.0": {
+      "-1": {
+        "samples": 31,
+        "depthRibs": 25,
+        "xLimitsMm": [
+          34.0,
+          49.0
+        ],
+        "rimOffsetMm": 1.45,
+        "hermite": {
+          "peakRibDeltaMm": 0.9004729801619644
+        },
+        "membrane": {
+          "peakRibDeltaMm": 0.2641031182298718
+        }
+      },
+      "1": {
+        "samples": 31,
+        "depthRibs": 25,
+        "xLimitsMm": [
+          34.0,
+          49.0
+        ],
+        "rimOffsetMm": 1.45,
+        "hermite": {
+          "peakRibDeltaMm": 1.2561928251532322
+        },
+        "membrane": {
+          "peakRibDeltaMm": 0.6318384215746278
+        }
+      }
+    }
+  },
+  "variants": {
+    "hermite": [
+      {
+        "phase": 0.75,
+        "name": "R501 hermite | Closure 0.75",
+        "hash": "6b488750a7198f7b28a76968087de6eaef900bf26d2c6651f23a46f1faea0c3a",
+        "changedVertices": 246,
+        "maximumLocalDeltaMetres": 0.00125
+      },
+      {
+        "phase": 0.875,
+        "name": "R501 hermite | Closure 0.875",
+        "hash": "77a01535d306e977145513cca2189fcbf4ebabc244544e6b2d228abd656b36d7",
+        "changedVertices": 246,
+        "maximumLocalDeltaMetres": 0.0011863704026694561
+      },
+      {
+        "phase": 1.0,
+        "name": "R501 hermite | Closure 1",
+        "hash": "88e1b2eb1004d8de627fd521ebe91f43b6a92b6ecfce348a0142de0a7bc843f0",
+        "changedVertices": 252,
+        "maximumLocalDeltaMetres": 0.001219346592814346
+      }
+    ],
+    "membrane": [
+      {
+        "phase": 0.75,
+        "name": "R501 membrane | Closure 0.75",
+        "hash": "bb11bddce48185afc8b680d41f9cb264bec133413b8ec2ac1263aa330d4bd98d",
+        "changedVertices": 246,
+        "maximumLocalDeltaMetres": 0.0005608097168877484
+      },
+      {
+        "phase": 0.875,
+        "name": "R501 membrane | Closure 0.875",
+        "hash": "f656b55eab6cbab59bf6a55f6a5475e59c138e0152aa0dfec028bd332861f737",
+        "changedVertices": 246,
+        "maximumLocalDeltaMetres": 0.0005633190925399667
+      },
+      {
+        "phase": 1.0,
+        "name": "R501 membrane | Closure 1",
+        "hash": "ffa919153e47acbeb20eecb204131241e4d71551f80300d4e16121288bf1bb38",
+        "changedVertices": 252,
+        "maximumLocalDeltaMetres": 0.0005860978349122355
+      }
+    ]
+  },
+  "inputWitnessSha256": "74776c566f95f66d348e32f9c7426f67b3524ba9292c2f89313e80ee9b512bd4"
+}

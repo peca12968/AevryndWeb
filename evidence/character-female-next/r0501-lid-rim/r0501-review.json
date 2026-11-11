@@ -1,0 +1,322 @@
+{
+  "round": "r0501",
+  "decision": "REJECT_LID_RIM_KEEP_R500",
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0501-lid-rim\\female-next-r0501-lid-rim-UNACCEPTED.blend",
+    "bytes": 335640074,
+    "sha256": "f7fe5670ba2f939c9764c5e57813636f2e66446edc0a814926e68ee3d048cdee"
+  },
+  "parent": {
+    "path": "F:\\AevryndEvidence\\r0500-multi-pose-lid\\female-next-r0500-multi-pose-lid-UNACCEPTED.blend",
+    "sha256": "d1af8ee646bacb96c5340eb2a2e7455c111d41d75cdedb7ce0a07a09e68e1b68",
+    "bytes": 325339138
+  },
+  "preferredResearch": "r0500 B",
+  "defaultVisibleVariant": "hermite",
+  "productionAccepted": false,
+  "inspectedComparisonBoards": {
+    "head": {
+      "path": "F:\\AevryndEvidence\\r0501-lid-rim\\r0501-head-comparison.png",
+      "bytes": 967133,
+      "sha256": "90d48021ed20b715a5e63ad2facc6d12026507800ea6bcd6b96e9089aed2135d"
+    },
+    "macro": {
+      "path": "F:\\AevryndEvidence\\r0501-lid-rim\\r0501-macro-comparison.png",
+      "bytes": 359073,
+      "sha256": "314e1a717be11925350e278b2bc008af46842df144c1bf58f9e906a7f9c9beee"
+    },
+    "turned": {
+      "path": "F:\\AevryndEvidence\\r0501-lid-rim\\r0501-turned-comparison.png",
+      "bytes": 367571,
+      "sha256": "168da46e56a09a085e69d85dd490bde36dc8a13c6545321e22b797cdb2ad6d83"
+    },
+    "blink-body": {
+      "path": "F:\\AevryndEvidence\\r0501-lid-rim\\r0501-blink-body-comparison.png",
+      "bytes": 668555,
+      "sha256": "df9984e2a8870f9f6b76ef897faf48f7b1cc5f7f27f87edb07f5b6d7d13fbb85"
+    },
+    "failure": {
+      "path": "F:\\AevryndEvidence\\r0501-lid-rim\\r0501-failure-comparison.png",
+      "bytes": 189152,
+      "sha256": "7ec3e59027b141b90790ff31c73bbac60a2099cacc53daec7e6d39e47f37b335"
+    }
+  },
+  "matchedRenderedViews": 10,
+  "freshCandidateRenders": 20,
+  "failurePoseRenders": 3,
+  "visualAssessment": "A slightly softens parts of the outer fold in close views but the hard closure line remains at head scale. B has even less visible improvement and part of the edge darkens. Neither provides a complete appearance gain.",
+  "methods": "A fits anchored monotonic Hermite profiles. B minimizes second differences over the measured skin ribs. Both depth fields transport the outer envelope and adjoining return over the original skin topology, blend into tissue depth, and leave the planted rim vertices and live lash binding fixed.",
+  "construction": {
+    "hermite": [
+      {
+        "phase": 0.75,
+        "name": "R501 hermite | Closure 0.75",
+        "hash": "6b488750a7198f7b28a76968087de6eaef900bf26d2c6651f23a46f1faea0c3a",
+        "changedVertices": 246,
+        "maximumLocalDeltaMetres": 0.00125
+      },
+      {
+        "phase": 0.875,
+        "name": "R501 hermite | Closure 0.875",
+        "hash": "77a01535d306e977145513cca2189fcbf4ebabc244544e6b2d228abd656b36d7",
+        "changedVertices": 246,
+        "maximumLocalDeltaMetres": 0.0011863704026694561
+      },
+      {
+        "phase": 1.0,
+        "name": "R501 hermite | Closure 1",
+        "hash": "88e1b2eb1004d8de627fd521ebe91f43b6a92b6ecfce348a0142de0a7bc843f0",
+        "changedVertices": 252,
+        "maximumLocalDeltaMetres": 0.001219346592814346
+      }
+    ],
+    "membrane": [
+      {
+        "phase": 0.75,
+        "name": "R501 membrane | Closure 0.75",
+        "hash": "bb11bddce48185afc8b680d41f9cb264bec133413b8ec2ac1263aa330d4bd98d",
+        "changedVertices": 246,
+        "maximumLocalDeltaMetres": 0.0005608097168877484
+      },
+      {
+        "phase": 0.875,
+        "name": "R501 membrane | Closure 0.875",
+        "hash": "f656b55eab6cbab59bf6a55f6a5475e59c138e0152aa0dfec028bd332861f737",
+        "changedVertices": 246,
+        "maximumLocalDeltaMetres": 0.0005633190925399667
+      },
+      {
+        "phase": 1.0,
+        "name": "R501 membrane | Closure 1",
+        "hash": "ffa919153e47acbeb20eecb204131241e4d71551f80300d4e16121288bf1bb38",
+        "changedVertices": 252,
+        "maximumLocalDeltaMetres": 0.0005860978349122355
+      }
+    ]
+  },
+  "fixedLashAnchorVertices": 197,
+  "reopenedOperation": {
+    "hermite": {
+      "control": "7829c5e092516493d76996ad5c7cf35680ac3b687a39cbc76a77b5be248d5f25",
+      "restored": "7c861fe15860e3fa81d9494f287f489a65e650ef1ff2fdde254920afd0dda215",
+      "changedVertices": 252
+    },
+    "membrane": {
+      "control": "7829c5e092516493d76996ad5c7cf35680ac3b687a39cbc76a77b5be248d5f25",
+      "restored": "e1dd471998b4b41bf58e98a2580e301d18aecfc04e989f9ae1d48c49757ada87",
+      "changedVertices": 252
+    }
+  },
+  "inspectedBaselineAnchorPoses": 7,
+  "previousFrame37LashClassification": {
+    "rootPolygonPairs": 29,
+    "shaftPolygonPairs": 0,
+    "sites": [
+      70,
+      75,
+      76,
+      177,
+      178,
+      182,
+      185
+    ]
+  },
+  "contactScope": "Evaluated skin and visible lash surface triangles at 10 held settings, including fractional frames. Self pairs exclude polygons sharing a vertex. Segment zero is the planted base. Signed nearest point samples use local surface normals and are not whole-volume or swept clearance.",
+  "contactByVariant": {
+    "hermite": {
+      "newSkinPairObservations": 68.0,
+      "newOcularPairObservations": 40.0,
+      "newExposedLashPairObservations": 0.0,
+      "newPlantedLashPairObservations": 0.0,
+      "reversedTriangleObservations": 15.0,
+      "firstWitness": {
+        "polygons": [
+          147068,
+          186477
+        ],
+        "locationMetres": [
+          0.037922317783037826,
+          -0.11688769608736038,
+          1.4623549580574036
+        ]
+      },
+      "frame1Blink075": {
+        "before": 0,
+        "after": 35
+      },
+      "frame37Blink1": {
+        "before": 0,
+        "after": 3
+      },
+      "minimumSignedVertexSamples": {
+        "eye": {
+          "pose": "1:0.75",
+          "sample": {
+            "signedNearestMetres": 0.0004899260238744318,
+            "vertex": 149920,
+            "positionMetres": [
+              0.03861074149608612,
+              -0.11614469438791275,
+              1.4631569385528564
+            ],
+            "negativeBeyond8Microns": 0,
+            "count": 246
+          }
+        },
+        "cornea": {
+          "pose": "1:0.75",
+          "sample": {
+            "signedNearestMetres": 0.0003601438656914979,
+            "vertex": 149920,
+            "positionMetres": [
+              0.03861074149608612,
+              -0.11614469438791275,
+              1.4631569385528564
+            ],
+            "negativeBeyond8Microns": 0,
+            "count": 246
+          }
+        },
+        "meniscus": {
+          "pose": "1:0.75",
+          "sample": {
+            "signedNearestMetres": -0.010623736307024956,
+            "vertex": 163654,
+            "positionMetres": [
+              -0.04844443127512932,
+              -0.10846095532178879,
+              1.4657622575759888
+            ],
+            "negativeBeyond8Microns": 29,
+            "count": 246
+          }
+        }
+      }
+    },
+    "membrane": {
+      "newSkinPairObservations": 13.0,
+      "newOcularPairObservations": 0.0,
+      "newExposedLashPairObservations": 0.0,
+      "newPlantedLashPairObservations": 0.0,
+      "reversedTriangleObservations": 2.0,
+      "firstWitness": {
+        "polygons": [
+          158397,
+          186477
+        ],
+        "locationMetres": [
+          0.03924536518752575,
+          -0.11615662773450217,
+          1.461949348449707
+        ]
+      },
+      "frame1Blink075": {
+        "before": 0,
+        "after": 2
+      },
+      "frame37Blink1": {
+        "before": 0,
+        "after": 3
+      },
+      "minimumSignedVertexSamples": {
+        "eye": {
+          "pose": "1:1",
+          "sample": {
+            "signedNearestMetres": 0.0007755246479064226,
+            "vertex": 539,
+            "positionMetres": [
+              -0.0431581474840641,
+              -0.11101917922496796,
+              1.4665170907974243
+            ],
+            "negativeBeyond8Microns": 0,
+            "count": 252
+          }
+        },
+        "cornea": {
+          "pose": "1:1",
+          "sample": {
+            "signedNearestMetres": 0.0006139435572549701,
+            "vertex": 539,
+            "positionMetres": [
+              -0.0431581474840641,
+              -0.11101917922496796,
+              1.4665170907974243
+            ],
+            "negativeBeyond8Microns": 0,
+            "count": 252
+          }
+        },
+        "meniscus": {
+          "pose": "1:0.75",
+          "sample": {
+            "signedNearestMetres": -0.01062315795570612,
+            "vertex": 163654,
+            "positionMetres": [
+              -0.04844443127512932,
+              -0.10846266150474548,
+              1.4657622575759888
+            ],
+            "negativeBeyond8Microns": 31,
+            "count": 246
+          }
+        }
+      }
+    }
+  },
+  "fixedFrontalNormalStepsDegrees": {
+    "control": [
+      28.714337306511275,
+      76.79760963012674
+    ],
+    "hermite": [
+      21.75174619925371,
+      47.42456696639832
+    ],
+    "membrane": [
+      24.647580981129256,
+      71.88499622186092
+    ]
+  },
+  "stats": {
+    "vertices": 414564,
+    "triangles": 795029,
+    "bones": 60,
+    "morphs": 120,
+    "materials": 21,
+    "images": 31,
+    "strands": 24831,
+    "hairPoints": 1986480
+  },
+  "categoryReview": {
+    "anatomy": "Whole body rest silhouette shown. No anatomical change evaluated.",
+    "face": "Exterior change in the outer canthus visible in close crops, insufficient at normal head scale.",
+    "eyes": "A introduces 40 cornea/sclera-layer polygon-pair observations. Both introduce skin self-contact at the rim band.",
+    "skin": "Material and exposure controlled. Surface failure at closure.",
+    "hair": "Same hair positions and apparent sheet-like clumps and gloss. Motion not evaluated.",
+    "clothing": "Not evaluated.",
+    "motion": "Ten held blink and head turn states. Continuous trajectory and body motion not evaluated.",
+    "collision": "The original 29 r500 lash polygon pairs occur at the planted base. No added exposed lash pairs in this diagnostic. Both r501 skin candidates regress.",
+    "performance": "Blender source reopened and operated. No engine measurements."
+  },
+  "scoreIncrease": false,
+  "resources": {
+    "startTaipei": "2026-11-11T14:14:17+08:00",
+    "supportDeadlineTaipei": "2026-11-11T14:24:17+08:00",
+    "firstPreviewDeadlineTaipei": "2026-11-11T14:44:17+08:00",
+    "completePreviewTaipei": "2026-11-11T14:22:52+08:00",
+    "resourceCheckpointTaipei": "2026-11-11T14:59:17+08:00",
+    "workers": 1,
+    "blenderThreads": 4,
+    "initialAuthorStatus": "Failed before save because the evaluated Blender quad diagonals vary by pose. Probe now saves each pose tessellation and reuses only its corresponding frame.",
+    "probePeakPrivateBytes": 1947914240,
+    "authorPeakPrivateBytes": 2192769024,
+    "previewPeakPrivateBytes": 3738603520,
+    "contactPeakPrivateBytes": 2110328832,
+    "engineCPUSeconds": null,
+    "engineGPUSeconds": null,
+    "engineMemoryBytes": null,
+    "failureCapturePeakPrivateBytes": 3414331392
+  },
+  "nextAction": "Use r500 B as the working woman. Retire projected single-axis canthus depth fitting. For the next closure construction, lay explicit upper and lower margin loops in eye-relative coordinates with their own inner return, retain the lash roots by remapping barycentric attachment, and verify finite skin and ocular intersections before rendering the full sweep. Keep the unresolved hair form as a separate visible defect."
+}
