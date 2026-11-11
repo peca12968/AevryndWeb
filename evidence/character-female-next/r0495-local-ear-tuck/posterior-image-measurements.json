@@ -1,0 +1,31 @@
+{
+  "method": "Same fixed posterior image measurement as r493. ROI x348 to378 and y330 to509 inclusive. Dark means luminance under 65 percent of the same-row median across x316 to338 and x385 to405. Silhouette width uses luminance above 24 within these rows.",
+  "frames": [
+    {
+      "variant": "control",
+      "sha256": "3d69908d3f75fa94c6db6f703f4ac898aebb893fc773761337716fb8200f3468",
+      "darkPixels": 0,
+      "rowsWithDarkPixels": 0,
+      "maximumWidthPixels": 402
+    },
+    {
+      "variant": "tucked",
+      "sha256": "455a10f98e15b2f2a3c1695d8d3ecbef986e937e52f821eda4f4742726090c58",
+      "darkPixels": 0,
+      "rowsWithDarkPixels": 0,
+      "maximumWidthPixels": 402
+    },
+    {
+      "variant": "divided",
+      "sha256": "ffd372130eb15dc3376dfdc1a73117abf59214bb10013ae086fe08a9fb590fd5",
+      "darkPixels": 0,
+      "rowsWithDarkPixels": 0,
+      "maximumWidthPixels": 400
+    }
+  ],
+  "defaultCarrierRearObliqueCheck": {
+    "pixels": 409600,
+    "meanAbsoluteRgbDifference": 0.002081705729166667,
+    "pixelsAnyRgbChannelDifferenceAbove5": 0
+  }
+}

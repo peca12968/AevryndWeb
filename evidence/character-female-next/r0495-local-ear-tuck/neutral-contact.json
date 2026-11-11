@@ -1,0 +1,135 @@
+{
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0495-local-ear-tuck\\female-next-r0495-local-ear-tuck-UNACCEPTED.blend",
+    "sha256": "a626840418d138d38558b703b08a1fc629419be17fee538c083bb4090d1bd0e4",
+    "bytes": 318230503
+  },
+  "pose": "complete neutral woman",
+  "skin": "R482 archived complete neutral skin",
+  "controlPointResults": {
+    "divided": {
+      "controls": 1986480,
+      "negativeOrientedGap": 8,
+      "orientedMinimum": {
+        "curveID": 10621,
+        "pointIndex": 67,
+        "signedGapMetres": -0.043055057525634766,
+        "positionMetres": [
+          0.041502129286527634,
+          0.06632055342197418,
+          1.3745779991149902
+        ]
+      },
+      "warningRecheck": {
+        "insideCenters": 0,
+        "outsideRadiusOverlap": 0,
+        "outsideAndClear": 8,
+        "mixedParity": 0
+      },
+      "worstRayCorroboratedContact": null,
+      "minimumAfterWarningRecheck": {
+        "curveID": 9270,
+        "pointIndex": 0,
+        "signedGapMetres": 8.480613178107888e-05,
+        "positionMetres": [
+          -0.008562459610402584,
+          0.0013908583205193281,
+          1.5673632621765137
+        ]
+      }
+    },
+    "tucked": {
+      "controls": 1986480,
+      "negativeOrientedGap": 8,
+      "orientedMinimum": {
+        "curveID": 10621,
+        "pointIndex": 67,
+        "signedGapMetres": -0.043055057525634766,
+        "positionMetres": [
+          0.041502129286527634,
+          0.06632055342197418,
+          1.3745779991149902
+        ]
+      },
+      "warningRecheck": {
+        "insideCenters": 0,
+        "outsideRadiusOverlap": 0,
+        "outsideAndClear": 8,
+        "mixedParity": 0
+      },
+      "worstRayCorroboratedContact": null,
+      "minimumAfterWarningRecheck": {
+        "curveID": 9270,
+        "pointIndex": 0,
+        "signedGapMetres": 8.480613178107888e-05,
+        "positionMetres": [
+          -0.008562459610402584,
+          0.0013908583205193281,
+          1.5673632621765137
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "Finite sample spacing between evaluated points",
+    "No hair self-contact, clothes or continuous motion"
+  ],
+  "resumedFromVerifiedCurves": 0,
+  "nativeEvaluatedSampleResult": {
+    "variant": "tucked",
+    "method": "Blender Curve to Points in EVALUATED mode, preserving sampled radius and curve ownership",
+    "evaluatedSamples": 23564619,
+    "verifiedCurves": 24831,
+    "samplesPerCurveMinimum": 949,
+    "samplesPerCurveMaximum": 949,
+    "negativeOrientedWarnings": 53,
+    "rayInsideCenters": 0,
+    "rayOutsideOverlap": 0,
+    "rayOutsideAndClear": 53,
+    "mixedParity": 0,
+    "minimumAfterWarningRecheck": {
+      "curveID": 9270,
+      "positionMetres": [
+        -0.008562459610402584,
+        0.0013908583205193281,
+        1.5673632621765137
+      ],
+      "gapMetres": 8.480613178107888e-05,
+      "warningRayCrossings": null
+    },
+    "pinnaZoneRule": "Per-side lateral X at least outer minus 17 mm, Y within front and back with 12 mm padding, Z within ear height with 8 mm padding",
+    "pinnaZones": [
+      {
+        "side": 0,
+        "samples": 370047,
+        "negativeAfterWarningRecheck": 0,
+        "minimumAfterWarningRecheck": {
+          "curveID": 2453,
+          "positionMetres": [
+            -0.08999805152416229,
+            0.006681845057755709,
+            1.454516053199768
+          ],
+          "gapMetres": 0.012755675241351128,
+          "warningRayCrossings": null
+        }
+      },
+      {
+        "side": 1,
+        "samples": 847948,
+        "negativeAfterWarningRecheck": 0,
+        "minimumAfterWarningRecheck": {
+          "curveID": 24138,
+          "positionMetres": [
+            0.0884595587849617,
+            0.005193230230361223,
+            1.4542886018753052
+          ],
+          "gapMetres": 0.01064757164567709,
+          "warningRayCrossings": null
+        }
+      }
+    ],
+    "finalProcessElapsedSeconds": 67.69646060001105
+  }
+}
