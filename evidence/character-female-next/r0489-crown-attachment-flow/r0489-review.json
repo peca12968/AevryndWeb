@@ -1,0 +1,629 @@
+{
+  "round": "r0489",
+  "decision": "REJECT_BOTH_FOR_VISUAL_ADOPTION",
+  "goalStatus": "active",
+  "priorTurn": "Progress. r488 reduced the ear-height ridge and localized confirmed inside points at crown departures.",
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0489-crown-attachment-flow\\female-next-r0489-crown-attachment-flow-UNACCEPTED.blend",
+    "sha256": "e17a4900e399b0861c13961a1aad07f53bc6aba12ed2922d393c35e16efa1a98",
+    "bytes": 317642687
+  },
+  "parent": {
+    "path": "F:\\AevryndEvidence\\r0488-section-shaped-locks\\female-next-r0488-shaped-lock-layouts-UNACCEPTED.blend",
+    "sha256": "c54920c0e97ed719351f2d6ea6460dea915c1852238d9c250a404cfea12ceab4",
+    "bytes": 541243349
+  },
+  "defaultVisibleVariant": "sweep",
+  "hypothesis": "Attached tangent arcs through the upper locks will remove inward departure and improve the flat crown while meeting the lower lock direction.",
+  "review": {
+    "views": [
+      "face",
+      "rear-oblique",
+      "opposite-profile",
+      "posterior-detail",
+      "full-body"
+    ],
+    "pose": "neutral",
+    "renders": 15,
+    "result": [
+      "A gives a smoother directional transition near the temple in profile. The frontal cap and flat lock masses remain.",
+      "B adds upper crown volume and directional texture, with a more visible upper-to-lower rear transition.",
+      "The full-body render offers no meaningful change at character scale. The lower rear continuity remains visible."
+    ],
+    "decision": "Both layouts fail the appearance gate. Keep the attachment construction and its localized proof as research."
+  },
+  "construction": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0489-crown-attachment-flow\\female-next-r0489-crown-attachment-flow-UNACCEPTED.blend",
+      "sha256": "e17a4900e399b0861c13961a1aad07f53bc6aba12ed2922d393c35e16efa1a98",
+      "bytes": 317642687
+    },
+    "parent": {
+      "path": "F:\\AevryndEvidence\\r0488-section-shaped-locks\\female-next-r0488-shaped-lock-layouts-UNACCEPTED.blend",
+      "sha256": "c54920c0e97ed719351f2d6ea6460dea915c1852238d9c250a404cfea12ceab4",
+      "bytes": 541243349
+    },
+    "controlObject": "R488 complete hair | bob",
+    "controlPositionHash": "e4365ef56be3533c1db3eff2200e97b67125973c3dba079f43e60ef8ebfe330c",
+    "rootHash": "460afe0c3795baa7a8bf8b845a22c9da558e4d3c474b29b51f8adacfad0de072",
+    "bindingMaximumErrorMetres": 3.6379151088428935e-12,
+    "strands": 24831,
+    "pointsPerStrand": 80,
+    "variants": {
+      "sweep": {
+        "object": "R489 complete hair | sweep",
+        "positionHash": "f1d613809f4f871d25d52110edc839c09e72fb866bb05b6daf61468cd02d41e6",
+        "joinHash": "4833e270e4033b582e3132357be716937d1bd22dd1cd42fd87f077b9480d4339",
+        "curve5535": [
+          [
+            -0.00019235126092098653,
+            -0.032058652490377426,
+            1.57184898853302
+          ],
+          [
+            -0.0019485927186906338,
+            -0.028291262686252594,
+            1.572117805480957
+          ],
+          [
+            -0.0033446471206843853,
+            -0.02417505346238613,
+            1.5722957849502563
+          ],
+          [
+            -0.004435108043253422,
+            -0.019769033417105675,
+            1.5723681449890137
+          ],
+          [
+            -0.005284928251057863,
+            -0.015137849375605583,
+            1.5723103284835815
+          ],
+          [
+            -0.005963924806565046,
+            -0.010348796844482422,
+            1.5720903873443604
+          ]
+        ],
+        "joinRange": [
+          12,
+          22
+        ],
+        "locallyConstrainedControls": 0,
+        "maximumLocalCorrectionMetres": 0.0
+      },
+      "lift": {
+        "object": "R489 complete hair | lift",
+        "positionHash": "20bfb0ad87dad73604eaac3453c92899465598ad9fcf010774ecbf2697efe4bd",
+        "joinHash": "aef6bfed4e326cb1e943c186bb32c8c52223b1e547b6c7c053cd32d42cc4e41f",
+        "curve5535": [
+          [
+            -0.00019235126092098653,
+            -0.032058652490377426,
+            1.57184898853302
+          ],
+          [
+            -0.0023730068933218718,
+            -0.02793831191956997,
+            1.572109341621399
+          ],
+          [
+            -0.004035892430692911,
+            -0.02350323460996151,
+            1.5723376274108887
+          ],
+          [
+            -0.005247571039944887,
+            -0.018811166286468506,
+            1.5725198984146118
+          ],
+          [
+            -0.006087481044232845,
+            -0.013927853666245937,
+            1.5726323127746582
+          ],
+          [
+            -0.006642699241638184,
+            -0.008923799730837345,
+            1.572642207145691
+          ]
+        ],
+        "joinRange": [
+          13,
+          25
+        ],
+        "locallyConstrainedControls": 1,
+        "maximumLocalCorrectionMetres": 3.088043839652836e-05
+      }
+    },
+    "defaultVisible": "sweep",
+    "historicalCurvesInParent": [
+      "R484 complete hair | control",
+      "R484 complete hair | A",
+      "R484 complete hair | B",
+      "R485 complete hair | B",
+      "R485 complete hair | control",
+      "R485 complete hair | A",
+      "R486 complete hair | primary guide foundation",
+      "R486 Editable primary guides | NOT render fibres",
+      "R487 complete hair | drape",
+      "R487 editable primary paths | drape",
+      "R487 complete hair | sweep",
+      "R487 editable primary paths | sweep",
+      "R488 lock representatives | bob",
+      "R488 complete hair | layers",
+      "R488 lock representatives | layers"
+    ]
+  },
+  "replay": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0489-crown-attachment-flow\\female-next-r0489-crown-attachment-flow-UNACCEPTED.blend",
+      "sha256": "e17a4900e399b0861c13961a1aad07f53bc6aba12ed2922d393c35e16efa1a98",
+      "bytes": 317642687
+    },
+    "replay": {
+      "sweep": {
+        "positionHash": "f1d613809f4f871d25d52110edc839c09e72fb866bb05b6daf61468cd02d41e6",
+        "joinHash": "4833e270e4033b582e3132357be716937d1bd22dd1cd42fd87f077b9480d4339",
+        "exact": true
+      },
+      "lift": {
+        "positionHash": "20bfb0ad87dad73604eaac3453c92899465598ad9fcf010774ecbf2697efe4bd",
+        "joinHash": "aef6bfed4e326cb1e943c186bb32c8c52223b1e547b6c7c053cd32d42cc4e41f",
+        "exact": true
+      }
+    },
+    "fixedAttributeHashes": {
+      "radius": "729b8d11aad6fb8a1f542a07c002276be2bc4fe2aa901f63ad6be24e6b81daeb",
+      "AFN409_CURVE_ID": "eecedbc87ad74bd5fd9c2d473746fbe43c7049b787c8895ec4c326ba1c52fd47",
+      "AFN409_POINT_ID": "3080340c723adb82f3593a18ce9f758b801d07df0325662f326ed8a273bc4de6",
+      "AFN409_SKIN_TRIANGLE_ID": "5a01eade946454781705028e01eadc6457d73447652409cd8ba59f2a37e0240d",
+      "AFN409_SKIN_BARYCENTRIC": "a2f1a271d68f05de3d52efac8cbaef52a2455349cb7d7c99f95df049960726d4",
+      "AEVRYND_ROOT_NORMAL_OFFSET": "4e582178db0dfb3148d63d979c64686b63e30f255a59438794e5a89380ee5e06",
+      "AEVRYND_ROOT_OFFSET_LOCAL": "f9a782ab8570eb487c5a88a26ea3456378097718ad0750073dff4bbf612eb283",
+      "surface_uv_coordinate": "ab2e48470da135b094d701748f63d7b3c263a6d2b7d0401f7bd04856d364343d",
+      "AEVRYND_SCALP_REGION": "d232a6b8477053c5f2e0d5ee4fa6fa7e7f04ce43f2d204745c06bcc794030c05",
+      "AEVRYND_LOCK_ID": "7c182bd84960ed10c0550b7a1319102bb40100f19103a8925b78345d565f2c7f"
+    },
+    "bindingMaximumErrorMetres": 3.6379151088428935e-12,
+    "dependencies": {
+      "libraries": [],
+      "externalImages": []
+    },
+    "stats": {
+      "sceneObjects": 16,
+      "vertices": 414564,
+      "triangles": 795029,
+      "bones": 60,
+      "morphs": 110,
+      "materials": 21,
+      "images": 31,
+      "strands": 24831,
+      "points": 1986480
+    },
+    "operation": {
+      "crestDeltaMetres": 0.002,
+      "evaluatedEditHash": "5fbe2056ec4d8e68129982c21bc396fdb3f3be04cf5e8b39111d2b82f6d85557",
+      "restoredHash": "f1d613809f4f871d25d52110edc839c09e72fb866bb05b6daf61468cd02d41e6",
+      "changedStrands": 24831,
+      "sourceWrite": false
+    }
+  },
+  "crownContact": {
+    "pose": "archived complete neutral woman",
+    "model": "actual neutral skin BVH",
+    "scope": "All 24,831 strands at control indices 0 through 25. Nearest oriented triangle minus stored radius. Independent rays at the minimum and curve 5535.",
+    "unverified": [
+      "swept curve segments",
+      "hair self-contact",
+      "free lengths beyond sampled controls",
+      "dynamic and clothing contact"
+    ],
+    "results": {
+      "control": {
+        "windows": {
+          "root": {
+            "samples": 24831,
+            "negativeRadiusAdjustedGap": 0,
+            "minimumSignedGapMetres": 8.480613178107888e-05,
+            "worstCurveID": 9270,
+            "worstPointIndex": 0,
+            "worstPositionMetres": [
+              -0.008562459610402584,
+              0.0013908583205193281,
+              1.5673632621765137
+            ],
+            "worstCenterRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          "firstFiveAfterRoot": {
+            "samples": 124155,
+            "negativeRadiusAdjustedGap": 3697,
+            "minimumSignedGapMetres": -0.0005940074333921075,
+            "worstCurveID": 5535,
+            "worstPointIndex": 1,
+            "worstPositionMetres": [
+              -0.004445268306881189,
+              -0.011245312169194221,
+              1.5698838233947754
+            ],
+            "worstCenterRayCrossings": [
+              1,
+              1,
+              1
+            ]
+          },
+          "laterUpperControls": {
+            "samples": 496620,
+            "negativeRadiusAdjustedGap": 0,
+            "minimumSignedGapMetres": 0.0003073575790040195,
+            "worstCurveID": 6205,
+            "worstPointIndex": 6,
+            "worstPositionMetres": [
+              0.011627592146396637,
+              0.05045875161886215,
+              1.5037277936935425
+            ],
+            "worstCenterRayCrossings": [
+              0,
+              0,
+              2
+            ]
+          }
+        },
+        "curve5535": [
+          {
+            "pointIndex": 0,
+            "signedGapMetres": 8.485751459375024e-05,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "pointIndex": 1,
+            "signedGapMetres": -0.0005940074333921075,
+            "centerRayCrossings": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "pointIndex": 2,
+            "signedGapMetres": -0.0005688550882041454,
+            "centerRayCrossings": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "pointIndex": 3,
+            "signedGapMetres": -4.939533391734585e-05,
+            "centerRayCrossings": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "pointIndex": 4,
+            "signedGapMetres": 0.0008052432094700634,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "pointIndex": 5,
+            "signedGapMetres": 0.0020587423350661993,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "sweep": {
+        "windows": {
+          "root": {
+            "samples": 24831,
+            "negativeRadiusAdjustedGap": 0,
+            "minimumSignedGapMetres": 8.480613178107888e-05,
+            "worstCurveID": 9270,
+            "worstPointIndex": 0,
+            "worstPositionMetres": [
+              -0.008562459610402584,
+              0.0013908583205193281,
+              1.5673632621765137
+            ],
+            "worstCenterRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          "firstFiveAfterRoot": {
+            "samples": 124155,
+            "negativeRadiusAdjustedGap": 0,
+            "minimumSignedGapMetres": 0.0002999992575496435,
+            "worstCurveID": 6672,
+            "worstPointIndex": 1,
+            "worstPositionMetres": [
+              -0.004328030627220869,
+              -0.004250658210366964,
+              1.569631576538086
+            ],
+            "worstCenterRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          "laterUpperControls": {
+            "samples": 496620,
+            "negativeRadiusAdjustedGap": 0,
+            "minimumSignedGapMetres": 0.0016803109319880605,
+            "worstCurveID": 5403,
+            "worstPointIndex": 15,
+            "worstPositionMetres": [
+              -0.0511229932308197,
+              -0.09640028327703476,
+              1.5309597253799438
+            ],
+            "worstCenterRayCrossings": [
+              2,
+              0,
+              0
+            ]
+          }
+        },
+        "curve5535": [
+          {
+            "pointIndex": 0,
+            "signedGapMetres": 8.485751459375024e-05,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "pointIndex": 1,
+            "signedGapMetres": 0.00043870555236935616,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "pointIndex": 2,
+            "signedGapMetres": 0.0007324556354433298,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "pointIndex": 3,
+            "signedGapMetres": 0.0010507876286283135,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "pointIndex": 4,
+            "signedGapMetres": 0.0014075934886932373,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "pointIndex": 5,
+            "signedGapMetres": 0.0018407583702355623,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "lift": {
+        "windows": {
+          "root": {
+            "samples": 24831,
+            "negativeRadiusAdjustedGap": 0,
+            "minimumSignedGapMetres": 8.480613178107888e-05,
+            "worstCurveID": 9270,
+            "worstPointIndex": 0,
+            "worstPositionMetres": [
+              -0.008562459610402584,
+              0.0013908583205193281,
+              1.5673632621765137
+            ],
+            "worstCenterRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          "firstFiveAfterRoot": {
+            "samples": 124155,
+            "negativeRadiusAdjustedGap": 0,
+            "minimumSignedGapMetres": 0.0003018188872374594,
+            "worstCurveID": 18826,
+            "worstPointIndex": 1,
+            "worstPositionMetres": [
+              -0.008527453988790512,
+              -0.004964188206940889,
+              1.5694262981414795
+            ],
+            "worstCenterRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          "laterUpperControls": {
+            "samples": 496620,
+            "negativeRadiusAdjustedGap": 0,
+            "minimumSignedGapMetres": 0.00014002829266246408,
+            "worstCurveID": 22145,
+            "worstPointIndex": 17,
+            "worstPositionMetres": [
+              -0.05537956580519676,
+              -0.08155758678913116,
+              1.5345613956451416
+            ],
+            "worstCenterRayCrossings": [
+              2,
+              0,
+              2
+            ]
+          }
+        },
+        "curve5535": [
+          {
+            "pointIndex": 0,
+            "signedGapMetres": 8.485751459375024e-05,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "pointIndex": 1,
+            "signedGapMetres": 0.00044812829582951963,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "pointIndex": 2,
+            "signedGapMetres": 0.0008055425714701414,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "pointIndex": 3,
+            "signedGapMetres": 0.0013421329203993082,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "pointIndex": 4,
+            "signedGapMetres": 0.0018857248360291123,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "pointIndex": 5,
+            "signedGapMetres": 0.0026697933208197355,
+            "centerRayCrossings": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "scoreDecision": {
+    "numericalScoreUpdated": false,
+    "anatomy": "Same neutral body. Deformation unverified.",
+    "face": "Same face. Crown still reads as a broad cap.",
+    "eyes": "Existing components.",
+    "skin": "Same source shader.",
+    "hair": "Rejected appearance despite resolved sampled crown departure points.",
+    "clothing": "Unverified",
+    "collision": "Upper neutral control-point probe passed. Full finite, self and dynamic collision are unverified.",
+    "dynamics": "Unverified",
+    "performance": "Aevrynd engine CPU, GPU and memory unverified."
+  },
+  "gates": {
+    "reopen": "PASS",
+    "exactReplay": "PASS",
+    "evaluatedOperation": "PASS",
+    "visual": "FAIL",
+    "upperNeutralPoints": "PASS",
+    "fullFiniteContact": "UNVERIFIED",
+    "hairSelfContact": "UNVERIFIED",
+    "dynamic": "UNVERIFIED",
+    "clothes": "UNVERIFIED",
+    "export": "UNVERIFIED",
+    "engine": "UNVERIFIED",
+    "femaleAcceptance": false
+  },
+  "resources": {
+    "startTaipei": "2026-11-11T10:15:54+08:00",
+    "supportDeadlineTaipei": "2026-11-11T10:25:54+08:00",
+    "firstPreviewDeadlineTaipei": "2026-11-11T10:45:54+08:00",
+    "completePreviewTaipei": "2026-11-11T10:24:58+08:00",
+    "resourceCheckpointTaipei": "2026-11-11T11:00:54+08:00",
+    "workers": 1,
+    "blenderThreads": 4,
+    "authorPeakPrivateBytes": 4816240640,
+    "previewPeakPrivateBytes": 3945762816,
+    "initialMemoryState": "Low system commit. A security prompt occluded the older Blender GUI. No app inputs were sent to the prompt. System headroom recovered before authoring.",
+    "blenderRenderSeconds": {
+      "control:face": 4.789541399979498,
+      "sweep:face": 4.283132799959276,
+      "lift:face": 4.198583500052337,
+      "control:rear-oblique": 6.178373500006273,
+      "sweep:rear-oblique": 5.906226199993398,
+      "lift:rear-oblique": 6.111152999976184,
+      "control:opposite-profile": 4.656212100002449,
+      "sweep:opposite-profile": 4.508852800005116,
+      "lift:opposite-profile": 4.707754600036424,
+      "control:posterior-detail": 7.750356700038537,
+      "sweep:posterior-detail": 7.588159400038421,
+      "lift:posterior-detail": 7.967051499988884,
+      "control:full-body": 3.228053600003477,
+      "sweep:full-body": 3.0971263999817893,
+      "lift:full-body": 3.0861034999834374
+    },
+    "engineCPUSeconds": null,
+    "engineGPUSeconds": null,
+    "engineMemoryBytes": null
+  },
+  "rights": "Keep the r488 notices. The matched r484 aligned Angelica oblique and previously inspected profile informed shape comparison. No artwork imported this round.",
+  "nextAction": "Construct new complete three-dimensional locks from part through mid-length and tip, with deliberately overlapping sections. Apply the measured root frame from r489 to the new paths. Compare the silhouette against r488 A. Do not preserve the r489 splice or tune crest amplitude as the appearance method.",
+  "retirements": "Keep the earlier r483, r484, dense-combing and r487 common ear envelope retirements. Retire the upper-only r489 splice as a shape solution. Keep the bound-frame construction as a tested component. No adoption counter reset.",
+  "runtimeChanged": false,
+  "websiteChanged": false,
+  "maleStarted": false,
+  "evidenceHashes": {
+    "r0489-head-comparison.png": "5f3342069d92c702e196fe716716de6789a51af0f78f14a2d879ffa8fb473861",
+    "r0489-posterior-body-comparison.png": "6440d1ae917db5037ae02f2c8c7212479566a5e7d9090874bf49674b8dad3361",
+    "preview-receipt.json": "4ef04ea3f8971c69405ff084b8646a2cb51edf5fd5f0c4357d40c2b85de28123",
+    "crown-contact.json": "8c807d232ddf8f608b21beb9b16339217ad339fb77820aa857252470965de6d1"
+  }
+}
