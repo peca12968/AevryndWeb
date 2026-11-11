@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "F:\AevryndEvidence\r0491-graduated-locks\native-contact-r0491.py", line 172, in <module>
+    main()
+    ~~~~^^
+  File "F:\AevryndEvidence\r0491-graduated-locks\native-contact-r0491.py", line 154, in main
+    points, indices, sampled_radii = evaluate_chunk(obj,group,lower,upper,first,end)
+                                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\AevryndEvidence\r0491-graduated-locks\native-contact-r0491.py", line 71, in evaluate_chunk
+    mesh = evaluated.to_mesh(preserve_all_data_layers=True, depsgraph=depsgraph)
+RuntimeError: Error: Object does not have geometry data
+
+
+Error: script failed, file: 'F:\AevryndEvidence\r0491-graduated-locks\native-contact-r0491.py', exiting.
