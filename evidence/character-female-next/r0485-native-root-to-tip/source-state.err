@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "F:\AevryndEvidence\r0485-native-root-to-tip\source-state-r0485.py", line 63, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "F:\AevryndEvidence\r0485-native-root-to-tip\source-state-r0485.py", line 43, in main
+    unified[label+'.'+prop.identifier]=scalars(value) if hasattr(value,'bl_rna') else str(value)
+                                       ~~~~~~~^^^^^^^
+  File "F:\AevryndEvidence\r0485-native-root-to-tip\source-state-r0485.py", line 16, in scalars
+    return {p.identifier:getattr(value,p.identifier) for p in value.bl_rna.properties if p.type in ('BOOLEAN','INT','FLOAT','STRING','ENUM') and not p.is_array}
+                                                                                                                                                     ^^^^^^^^^^
+AttributeError: 'EnumProperty' object has no attribute 'is_array'
+
+Error: script failed, file: 'F:\AevryndEvidence\r0485-native-root-to-tip\source-state-r0485.py', exiting.

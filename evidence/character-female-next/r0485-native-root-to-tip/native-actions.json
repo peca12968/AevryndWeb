@@ -1,0 +1,27 @@
+{
+  "application": "D:/SteamLibrary/steamapps/common/Blender/blender.exe",
+  "tool": "computer-use sky.drag in native Curve Sculpt mode",
+  "object": "R485 Native complete root-to-tip hair",
+  "beforeCoordinates": "before-native.npz",
+  "screenSize": [3413,1392],
+  "authoringScope": "Direct sculpting of the complete dense curves. No new primary guide hierarchy or child-fibre interpolation system was created in this round.",
+  "collisionUI": {"enabled":true,"label":"Use Sculpt Collision","distanceM":0.005,"independentClearanceCertification":false},
+  "A": {
+    "view":"front user perspective framed on the complete hair object",
+    "brush":"Comb","uiBrushSizePx":230,"strength":1.0,"falloff":"spherical","symmetry":false,
+    "strokes":[[[1120,438],[1065,670]],[[1680,438],[1735,670]],[[1065,670],[1105,870]],[[1735,670],[1695,870]]],
+    "savedCheckpoint":"female-next-r0485-native-A-UNACCEPTED.blend"
+  },
+  "B": {
+    "continuesFrom":"A",
+    "brush":"Comb","uiBrushSizePx":460,"strength":1.0,"falloff":"projected","symmetry":false,
+    "frontStrokes":[[[1155,400],[1070,700]],[[1650,400],[1730,700]],[[1070,650],[1120,900]],[[1730,650],[1680,900]]],
+    "backViewAction":"Control_L+KP_1; back orthographic state observed before drawing",
+    "backStrokes":[[[1200,430],[1200,790]],[[1590,430],[1590,790]],[[1200,780],[1250,1020]],[[1590,780],[1540,1020]]],
+    "savedCheckpoint":"female-next-r0485-native-B-UNACCEPTED.blend"
+  },
+  "saveBehavior":"The initial Control+Shift+S action performed ordinary save to the prepared working copy. The r484 parent and before-native positions remained unchanged. Exact saved A and B files were then copied as separate F-side checkpoints. The original prepared .blend bytes were superseded; its preparation script, source hash receipt and complete initial positions remain retained.",
+  "geometryChangedByBackgroundScript":false,
+  "shapeAccepted":false,
+  "nativeInputResult":"Both operation sequences completed and saved. Independent coordinate captures determine the actual changed geometry."
+}

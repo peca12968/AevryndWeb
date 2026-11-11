@@ -195,3 +195,8 @@ evidence/character-female-next/r0483-layered-bob-rest/** -filter -diff -merge -t
 assets-source/aevrynd-character/female-next/r0484-source/*.blend filter=lfs diff=lfs merge=lfs -text
 assets-source/aevrynd-character/female-next/r0484-source/data/*.npz filter=lfs diff=lfs merge=lfs -text
 evidence/character-female-next/r0484-root-to-tip-construction/** -filter -diff -merge -text
+
+# r0485 rejected native curve sculpt archive
+assets-source/aevrynd-character/female-next/r0485-source/*.blend filter=lfs diff=lfs merge=lfs -text
+assets-source/aevrynd-character/female-next/r0485-source/data/*.npz filter=lfs diff=lfs merge=lfs -text
+evidence/character-female-next/r0485-native-root-to-tip/** -filter -diff -merge -text
