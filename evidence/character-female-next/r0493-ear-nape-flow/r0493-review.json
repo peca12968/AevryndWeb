@@ -1,0 +1,1355 @@
+{
+  "round": "r0493",
+  "decision": "RETAIN_EAR_NAPE_UNACCEPTED",
+  "scope": "Localized improvement in side flow and rear coverage. Complete appearance and production contact remain below acceptance.",
+  "previousCommit": "bd0fca0a3367bffe55729dcb3f8e2fa9a555540a",
+  "source": {
+    "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\female-next-r0493-ear-nape-flow-UNACCEPTED.blend",
+    "sha256": "a6065118791b1c1f4dcf4df5257347f244c955746bcb445ec47e891e563aedc9",
+    "bytes": 318079594
+  },
+  "parent": {
+    "path": "F:\\AevryndEvidence\\r0492-posterior-loft\\female-next-r0492-posterior-loft-UNACCEPTED.blend",
+    "sha256": "f5553e6adf3b7f4f6bacf72482b331e832dd8b2f9c4a6ea2ea9feaca4263afbe",
+    "bytes": 317873062
+  },
+  "preferredResearch": "staggered",
+  "defaultVisibleVariant": "staggered",
+  "appearance": {
+    "cameras": [
+      "opposite-profile",
+      "mirror-profile",
+      "face",
+      "rear-oblique",
+      "posterior-detail",
+      "full-body"
+    ],
+    "gains": [
+      "The long side slit and disconnected wide ribbons resolve to more continuous side-to-nape flow.",
+      "The central posterior coverage persists and both silhouettes are narrower within the inherited comparison band.",
+      "The frontal sweep remains readable."
+    ],
+    "defects": [
+      "The recurring ridges above and behind the pinna still look mechanically spaced.",
+      "The new overlap reduces separation between the ear and hair in profile.",
+      "The rear still has a sheet-like sheen. Facial and skin detail were outside this round."
+    ],
+    "metric": {
+      "method": "Same fixed posterior image measurement as r492. ROI x348 to378 and y330 to509 inclusive. Dark means luminance under 65 percent of the same-row median across x316 to338 and x385 to405. Silhouette width uses luminance above 24 within these rows.",
+      "frames": [
+        {
+          "variant": "control",
+          "sha256": "3121055cf936708761d3726d05581eccd8530d87f11a5860d0a1753d47d2e9fc",
+          "darkPixels": 0,
+          "rowsWithDarkPixels": 0,
+          "maximumWidthPixels": 428
+        },
+        {
+          "variant": "overlap",
+          "sha256": "30c4ef85a89a7f5374b0da8bba280c789a914ddbe0b19191c09ccf5f9f527741",
+          "darkPixels": 0,
+          "rowsWithDarkPixels": 0,
+          "maximumWidthPixels": 400
+        },
+        {
+          "variant": "staggered",
+          "sha256": "536d376ab58a051820cd348a5794cc2ae060c8773fc6f2d4e1f322df22e6324d",
+          "darkPixels": 0,
+          "rowsWithDarkPixels": 0,
+          "maximumWidthPixels": 402
+        }
+      ]
+    }
+  },
+  "construction": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\female-next-r0493-ear-nape-flow-UNACCEPTED.blend",
+      "sha256": "a6065118791b1c1f4dcf4df5257347f244c955746bcb445ec47e891e563aedc9",
+      "bytes": 318079594
+    },
+    "parent": {
+      "path": "F:\\AevryndEvidence\\r0492-posterior-loft\\female-next-r0492-posterior-loft-UNACCEPTED.blend",
+      "sha256": "f5553e6adf3b7f4f6bacf72482b331e832dd8b2f9c4a6ea2ea9feaca4263afbe",
+      "bytes": 317873062
+    },
+    "controlObject": "R492 complete hair | crossfall",
+    "controlPositionHash": "4d36ffa068ace229af0c370b45119c80c7f0fb93f2f4b59382ae3586fddd70c1",
+    "rootHash": "460afe0c3795baa7a8bf8b845a22c9da558e4d3c474b29b51f8adacfad0de072",
+    "bindingMaximumErrorMetres": 3.6379151088428935E-12,
+    "strands": 24831,
+    "pointsPerStrand": 80,
+    "defaultVisible": "staggered",
+    "variants": {
+      "overlap": {
+        "object": "R493 complete hair | overlap",
+        "guideObject": "R493 ear-to-nape stations | overlap",
+        "positionHash": "a06019d6dd3f2ba000dc2ef4779f25095f17c8c584d0df19bd0bb50607f3a6f1",
+        "weightHash": "269807d12ffb4f594d7da1de7e223fb78c6a8f107f9f560cb1a74209a7026393",
+        "joinHash": "2047f0b9e67a741dd117a0b5146c9d43749e2ed8aa06feefe80e4bac68b58c8d",
+        "groupHash": "24d0a74b61ce8703134a72c0a226774b7dd011878d74cf2a0552ffdfec3e7f18",
+        "groupCounts": [
+          13622,
+          5180,
+          435,
+          5146,
+          448
+        ],
+        "changedStrands": 11206,
+        "locallyConstrainedControls": 0,
+        "maximumLocalCorrectionMetres": 0.0
+      },
+      "staggered": {
+        "object": "R493 complete hair | staggered",
+        "guideObject": "R493 ear-to-nape stations | staggered",
+        "positionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+        "weightHash": "269807d12ffb4f594d7da1de7e223fb78c6a8f107f9f560cb1a74209a7026393",
+        "joinHash": "2e1143741fbe95282e5066d4f98d9d513ee99e6c3a6659d046561a7e1ee6ada2",
+        "groupHash": "24d0a74b61ce8703134a72c0a226774b7dd011878d74cf2a0552ffdfec3e7f18",
+        "groupCounts": [
+          13622,
+          5180,
+          435,
+          5146,
+          448
+        ],
+        "changedStrands": 11206,
+        "locallyConstrainedControls": 0,
+        "maximumLocalCorrectionMetres": 0.0
+      }
+    },
+    "guideSplinesPerVariant": 36,
+    "historicalBanksInParent": [
+      "R491 native layer guides | diagonal",
+      "R491 complete hair | diagonal",
+      "R492 native posterior rails | shared",
+      "R492 complete hair | shared"
+    ]
+  },
+  "replay": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\female-next-r0493-ear-nape-flow-UNACCEPTED.blend",
+      "sha256": "a6065118791b1c1f4dcf4df5257347f244c955746bcb445ec47e891e563aedc9",
+      "bytes": 318079594
+    },
+    "replay": {
+      "overlap": {
+        "positionHash": "a06019d6dd3f2ba000dc2ef4779f25095f17c8c584d0df19bd0bb50607f3a6f1",
+        "ownershipHash": "2b9c02d302c732159e3b1c95a6fee35cac0565b43335c801bf241addc6428b9b",
+        "exact": true
+      },
+      "staggered": {
+        "positionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+        "ownershipHash": "2b9c02d302c732159e3b1c95a6fee35cac0565b43335c801bf241addc6428b9b",
+        "exact": true
+      }
+    },
+    "fixedAttributeHashes": {
+      "radius": "729b8d11aad6fb8a1f542a07c002276be2bc4fe2aa901f63ad6be24e6b81daeb",
+      "AFN409_CURVE_ID": "eecedbc87ad74bd5fd9c2d473746fbe43c7049b787c8895ec4c326ba1c52fd47",
+      "AFN409_POINT_ID": "3080340c723adb82f3593a18ce9f758b801d07df0325662f326ed8a273bc4de6",
+      "AFN409_SKIN_TRIANGLE_ID": "5a01eade946454781705028e01eadc6457d73447652409cd8ba59f2a37e0240d",
+      "AFN409_SKIN_BARYCENTRIC": "a2f1a271d68f05de3d52efac8cbaef52a2455349cb7d7c99f95df049960726d4",
+      "AEVRYND_ROOT_NORMAL_OFFSET": "4e582178db0dfb3148d63d979c64686b63e30f255a59438794e5a89380ee5e06",
+      "AEVRYND_ROOT_OFFSET_LOCAL": "f9a782ab8570eb487c5a88a26ea3456378097718ad0750073dff4bbf612eb283",
+      "surface_uv_coordinate": "ab2e48470da135b094d701748f63d7b3c263a6d2b7d0401f7bd04856d364343d",
+      "AEVRYND_SCALP_REGION": "d232a6b8477053c5f2e0d5ee4fa6fa7e7f04ce43f2d204745c06bcc794030c05",
+      "AEVRYND_LOCK_ID": "7c182bd84960ed10c0550b7a1319102bb40100f19103a8925b78345d565f2c7f",
+      "AEVRYND_SPATIAL_LOCK_ID": "2b9c02d302c732159e3b1c95a6fee35cac0565b43335c801bf241addc6428b9b",
+      "AEVRYND_SPATIAL_JOIN_POINT": "6c497ff399f16f6f983cd4c3a804a7217446ef4b453cfc371fdb08ad21e39097",
+      "AEVRYND_POSTERIOR_LOFT_WEIGHT": "199f7c6e577ad2d4fb607d8649743a66626c145be443701f284e7c60ff2ada3b",
+      "AEVRYND_POSTERIOR_JOIN_POINT": "57fd54edfbae647c7780fd57454e601239a48e33904c8476a10dbd4b2563002f"
+    },
+    "bindingMaximumErrorMetres": 3.6379151088428935E-12,
+    "dependencies": {
+      "libraries": [],
+      "externalImages": []
+    },
+    "stats": {
+      "sceneObjects": 19,
+      "vertices": 414564,
+      "triangles": 795029,
+      "bones": 60,
+      "morphs": 110,
+      "materials": 21,
+      "images": 31,
+      "strands": 24831,
+      "points": 1986480
+    },
+    "operation": {
+      "guide": "R493 ear-to-nape stations | staggered",
+      "routeIndex": 5,
+      "stationIndex": 2,
+      "offsetYMetres": 0.005,
+      "changedStrands": 2694,
+      "affectedOwnerSlots": [
+        1,
+        2,
+        3
+      ],
+      "evaluatedEditHash": "f69d4c4c2bc15904c4dae3bbdfa5383de949afe65372c98fabf292e7c0f5c529",
+      "restoredHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+      "sourceWrite": false
+    }
+  },
+  "preview": {
+    "source": {
+      "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\female-next-r0493-ear-nape-flow-UNACCEPTED.blend",
+      "sha256": "a6065118791b1c1f4dcf4df5257347f244c955746bcb445ec47e891e563aedc9",
+      "bytes": 318079594
+    },
+    "renders": {
+      "control:opposite-profile": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\control-opposite-profile.png",
+        "sha256": "efe370d43d8880b37c0ca8d5fc6b6811a95a57424bf0ca63796f272cbd3d3b2c",
+        "seconds": 7.512062900001183,
+        "evaluatedPositionHash": "4d36ffa068ace229af0c370b45119c80c7f0fb93f2f4b59382ae3586fddd70c1",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            1.3867994539396022E-06,
+            -0.9999998211860657,
+            -0.8493857383728027
+          ],
+          [
+            -0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "overlap:opposite-profile": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\overlap-opposite-profile.png",
+        "sha256": "fbf0bdd67d8d1cd835b880585e8bb005aa328bf0e0a49c4a58d5e2f87ed11505",
+        "seconds": 8.666180500003975,
+        "evaluatedPositionHash": "a06019d6dd3f2ba000dc2ef4779f25095f17c8c584d0df19bd0bb50607f3a6f1",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            1.3867994539396022E-06,
+            -0.9999998211860657,
+            -0.8493857383728027
+          ],
+          [
+            -0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "staggered:opposite-profile": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\staggered-opposite-profile.png",
+        "sha256": "07581a9e6918437c1a4b934b117a96ebc2a5ce1b9dadbe681ffe632b3e3a17e5",
+        "seconds": 8.708996400004253,
+        "evaluatedPositionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            1.3867994539396022E-06,
+            -0.9999998211860657,
+            -0.8493857383728027
+          ],
+          [
+            -0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "control:mirror-profile": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\control-mirror-profile.png",
+        "sha256": "3d5642e265f13b68d029becd351c63e6d6ff2068058549e5c8f5754c177802b1",
+        "seconds": 7.387247900012881,
+        "evaluatedPositionHash": "4d36ffa068ace229af0c370b45119c80c7f0fb93f2f4b59382ae3586fddd70c1",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            -1.3867994539396022E-06,
+            0.9999998211860657,
+            0.8493857383728027
+          ],
+          [
+            0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            -2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "overlap:mirror-profile": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\overlap-mirror-profile.png",
+        "sha256": "bc77c7a0c69d40290883174685ea4631cd67f283cb0c1360d240bbd039ef2dfb",
+        "seconds": 6.768374299979769,
+        "evaluatedPositionHash": "a06019d6dd3f2ba000dc2ef4779f25095f17c8c584d0df19bd0bb50607f3a6f1",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            -1.3867994539396022E-06,
+            0.9999998211860657,
+            0.8493857383728027
+          ],
+          [
+            0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            -2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "staggered:mirror-profile": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\staggered-mirror-profile.png",
+        "sha256": "edc6575d14cd99cecee290e043075757e068ccfdb059ce8fee170302776210db",
+        "seconds": 7.445189799997024,
+        "evaluatedPositionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+        "camera": [
+          [
+            1.5060091982377344E-06,
+            -1.3867994539396022E-06,
+            0.9999998211860657,
+            0.8493857383728027
+          ],
+          [
+            0.9999998211860657,
+            2.980242470584926E-07,
+            -1.5060087434903835E-06,
+            -0.04319202899932861
+          ],
+          [
+            -2.980221722737042E-07,
+            0.9999998211860657,
+            1.3867999086869531E-06,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "control:face": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\control-face.png",
+        "sha256": "ac34c47c8188bee8b808659a37d6041a8916d4af2816e4004672bbe014a9645d",
+        "seconds": 6.600163299997803,
+        "evaluatedPositionHash": "4d36ffa068ace229af0c370b45119c80c7f0fb93f2f4b59382ae3586fddd70c1",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0006142705678939819
+          ],
+          [
+            0.0,
+            3.1391644483846903E-07,
+            -0.9999998807907104,
+            -0.8931920528411865
+          ],
+          [
+            0.0,
+            0.9999998807907104,
+            3.1391644483846903E-07,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "overlap:face": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\overlap-face.png",
+        "sha256": "94dffe4947594f7597cd8cdf833f25a15b70818ba5dfd24099832c9e0947c4f1",
+        "seconds": 7.1034283000044525,
+        "evaluatedPositionHash": "a06019d6dd3f2ba000dc2ef4779f25095f17c8c584d0df19bd0bb50607f3a6f1",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0006142705678939819
+          ],
+          [
+            0.0,
+            3.1391644483846903E-07,
+            -0.9999998807907104,
+            -0.8931920528411865
+          ],
+          [
+            0.0,
+            0.9999998807907104,
+            3.1391644483846903E-07,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "staggered:face": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\staggered-face.png",
+        "sha256": "48c434f1a59a30c7c486bd1aba82dd271ffac69fe15900b576f81b11cfb75134",
+        "seconds": 6.690867600031197,
+        "evaluatedPositionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0006142705678939819
+          ],
+          [
+            0.0,
+            3.1391644483846903E-07,
+            -0.9999998807907104,
+            -0.8931920528411865
+          ],
+          [
+            0.0,
+            0.9999998807907104,
+            3.1391644483846903E-07,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "control:rear-oblique": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\control-rear-oblique.png",
+        "sha256": "a9cb837889cd2ded4a440e697799714e0a069e579b49cb6b36f6423768fbc0af",
+        "seconds": 7.595506900048349,
+        "evaluatedPositionHash": "4d36ffa068ace229af0c370b45119c80c7f0fb93f2f4b59382ae3586fddd70c1",
+        "camera": [
+          [
+            -0.8521712422370911,
+            -0.11812575906515121,
+            0.5097552537918091,
+            0.3499999940395355
+          ],
+          [
+            0.5232630372047424,
+            -0.19237636029720306,
+            0.8301728367805481,
+            0.5820000171661377
+          ],
+          [
+            7.023855630450271E-08,
+            0.9741855263710022,
+            0.2257484495639801,
+            1.6430000066757202
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "overlap:rear-oblique": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\overlap-rear-oblique.png",
+        "sha256": "3ddbc1ffccad7686bc8ecdae96122ef693e4f55f216319012a368bb543d2bded",
+        "seconds": 6.520352000021376,
+        "evaluatedPositionHash": "a06019d6dd3f2ba000dc2ef4779f25095f17c8c584d0df19bd0bb50607f3a6f1",
+        "camera": [
+          [
+            -0.8521712422370911,
+            -0.11812575906515121,
+            0.5097552537918091,
+            0.3499999940395355
+          ],
+          [
+            0.5232630372047424,
+            -0.19237636029720306,
+            0.8301728367805481,
+            0.5820000171661377
+          ],
+          [
+            7.023855630450271E-08,
+            0.9741855263710022,
+            0.2257484495639801,
+            1.6430000066757202
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "staggered:rear-oblique": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\staggered-rear-oblique.png",
+        "sha256": "62196f2ab4da116277cc1fefac66213c643dd6653421f6400ac7f9d1b21ece7f",
+        "seconds": 6.67294459999539,
+        "evaluatedPositionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+        "camera": [
+          [
+            -0.8521712422370911,
+            -0.11812575906515121,
+            0.5097552537918091,
+            0.3499999940395355
+          ],
+          [
+            0.5232630372047424,
+            -0.19237636029720306,
+            0.8301728367805481,
+            0.5820000171661377
+          ],
+          [
+            7.023855630450271E-08,
+            0.9741855263710022,
+            0.2257484495639801,
+            1.6430000066757202
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "control:posterior-detail": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\control-posterior-detail.png",
+        "sha256": "3121055cf936708761d3726d05581eccd8530d87f11a5860d0a1753d47d2e9fc",
+        "seconds": 9.080926499969792,
+        "evaluatedPositionHash": "4d36ffa068ace229af0c370b45119c80c7f0fb93f2f4b59382ae3586fddd70c1",
+        "camera": [
+          [
+            -0.9999994039535522,
+            -8.74228689440315E-08,
+            1.5099574568466778E-07,
+            0.0006142705678939819
+          ],
+          [
+            1.5099571726295835E-07,
+            -7.549786573690653E-08,
+            0.9999997019767761,
+            0.8068079948425293
+          ],
+          [
+            -8.742283341689472E-08,
+            0.9999997019767761,
+            7.549787994776125E-08,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 88.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "overlap:posterior-detail": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\overlap-posterior-detail.png",
+        "sha256": "30c4ef85a89a7f5374b0da8bba280c789a914ddbe0b19191c09ccf5f9f527741",
+        "seconds": 8.34065389999887,
+        "evaluatedPositionHash": "a06019d6dd3f2ba000dc2ef4779f25095f17c8c584d0df19bd0bb50607f3a6f1",
+        "camera": [
+          [
+            -0.9999994039535522,
+            -8.74228689440315E-08,
+            1.5099574568466778E-07,
+            0.0006142705678939819
+          ],
+          [
+            1.5099571726295835E-07,
+            -7.549786573690653E-08,
+            0.9999997019767761,
+            0.8068079948425293
+          ],
+          [
+            -8.742283341689472E-08,
+            0.9999997019767761,
+            7.549787994776125E-08,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 88.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "staggered:posterior-detail": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\staggered-posterior-detail.png",
+        "sha256": "536d376ab58a051820cd348a5794cc2ae060c8773fc6f2d4e1f322df22e6324d",
+        "seconds": 8.292161599965766,
+        "evaluatedPositionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+        "camera": [
+          [
+            -0.9999994039535522,
+            -8.74228689440315E-08,
+            1.5099574568466778E-07,
+            0.0006142705678939819
+          ],
+          [
+            1.5099571726295835E-07,
+            -7.549786573690653E-08,
+            0.9999997019767761,
+            0.8068079948425293
+          ],
+          [
+            -8.742283341689472E-08,
+            0.9999997019767761,
+            7.549787994776125E-08,
+            1.5146079063415527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 88.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "control:full-body": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\control-full-body.png",
+        "sha256": "00a5bcfcfc34d4a13d59fa346c7024fb1776f388adc78f4c5ad2a4a191b760b6",
+        "seconds": 3.1023895000107586,
+        "evaluatedPositionHash": "4d36ffa068ace229af0c370b45119c80c7f0fb93f2f4b59382ae3586fddd70c1",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.020705485716462135,
+            -0.9997854828834534,
+            -3.4050002098083496
+          ],
+          [
+            0.0,
+            0.9997854828834534,
+            0.020705485716462135,
+            0.9049999713897705
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "overlap:full-body": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\overlap-full-body.png",
+        "sha256": "8149f46418fe18073d3164776e4a4981e138dc6f896817ed5b6ae2f242faa650",
+        "seconds": 3.2634397000074387,
+        "evaluatedPositionHash": "a06019d6dd3f2ba000dc2ef4779f25095f17c8c584d0df19bd0bb50607f3a6f1",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.020705485716462135,
+            -0.9997854828834534,
+            -3.4050002098083496
+          ],
+          [
+            0.0,
+            0.9997854828834534,
+            0.020705485716462135,
+            0.9049999713897705
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      },
+      "staggered:full-body": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\staggered-full-body.png",
+        "sha256": "b4077f34d0ff6630217a9cfe8a95964f348e5cc7af6559f5396286a98f4394df",
+        "seconds": 3.032198900007643,
+        "evaluatedPositionHash": "6fc4d993632c7cb23f3d6487b29afa31496e176e0d1924437afbd7db508ef977",
+        "camera": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.020705485716462135,
+            -0.9997854828834534,
+            -3.4050002098083496
+          ],
+          [
+            0.0,
+            0.9997854828834534,
+            0.020705485716462135,
+            0.9049999713897705
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens": 55.0,
+        "exposure": -0.5,
+        "seed": 448,
+        "samples": 16,
+        "carrier": "R493 complete hair | staggered"
+      }
+    },
+    "sameRenderCarrier": true,
+    "sourceUnchanged": true,
+    "recoveredCompletedFrames": 2
+  },
+  "contact": {
+    "crown": {
+      "pose": "archived complete neutral woman",
+      "model": "actual neutral skin BVH",
+      "scope": "All 24,831 strands at control indices 0 through 9. Nearest oriented triangle minus stored radius. Independent rays at the minimum and curve 5535.",
+      "unverified": [
+        "swept curve segments",
+        "hair self-contact",
+        "free lengths beyond sampled controls",
+        "dynamic and clothing contact"
+      ],
+      "results": {
+        "control": {
+          "windows": {
+            "root": {
+              "samples": 24831,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 8.480613178107888E-05,
+              "worstCurveID": 9270,
+              "worstPointIndex": 0,
+              "worstPositionMetres": [
+                -0.008562459610402584,
+                0.0013908583205193281,
+                1.5673632621765137
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "firstFiveAfterRoot": {
+              "samples": 124155,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0002346337423659861,
+              "worstCurveID": 16070,
+              "worstPointIndex": 1,
+              "worstPositionMetres": [
+                -0.0017333932919427752,
+                -0.01344974059611559,
+                1.5711722373962402
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "laterUpperControls": {
+              "samples": 99324,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0014558264520019293,
+              "worstCurveID": 2388,
+              "worstPointIndex": 6,
+              "worstPositionMetres": [
+                0.027395788580179214,
+                -0.02873273566365242,
+                1.569156289100647
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "curve5535": [
+            {
+              "pointIndex": 0,
+              "signedGapMetres": 8.485751459375024E-05,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 1,
+              "signedGapMetres": 0.0003345934965182096,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 2,
+              "signedGapMetres": 0.000576679187361151,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 3,
+              "signedGapMetres": 0.0008322662906721234,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 4,
+              "signedGapMetres": 0.0011789199197664857,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 5,
+              "signedGapMetres": 0.001498610363341868,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "overlap": {
+          "windows": {
+            "root": {
+              "samples": 24831,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 8.480613178107888E-05,
+              "worstCurveID": 9270,
+              "worstPointIndex": 0,
+              "worstPositionMetres": [
+                -0.008562459610402584,
+                0.0013908583205193281,
+                1.5673632621765137
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "firstFiveAfterRoot": {
+              "samples": 124155,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0002346337423659861,
+              "worstCurveID": 16070,
+              "worstPointIndex": 1,
+              "worstPositionMetres": [
+                -0.0017333932919427752,
+                -0.01344974059611559,
+                1.5711722373962402
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "laterUpperControls": {
+              "samples": 99324,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0019857040606439114,
+              "worstCurveID": 5535,
+              "worstPointIndex": 6,
+              "worstPositionMetres": [
+                -0.00615955563262105,
+                -0.010239189490675926,
+                1.572203516960144
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "curve5535": [
+            {
+              "pointIndex": 0,
+              "signedGapMetres": 8.485751459375024E-05,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 1,
+              "signedGapMetres": 0.0003345934965182096,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 2,
+              "signedGapMetres": 0.000576679187361151,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 3,
+              "signedGapMetres": 0.0008322662906721234,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 4,
+              "signedGapMetres": 0.0011789199197664857,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 5,
+              "signedGapMetres": 0.001498610363341868,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "staggered": {
+          "windows": {
+            "root": {
+              "samples": 24831,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 8.480613178107888E-05,
+              "worstCurveID": 9270,
+              "worstPointIndex": 0,
+              "worstPositionMetres": [
+                -0.008562459610402584,
+                0.0013908583205193281,
+                1.5673632621765137
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "firstFiveAfterRoot": {
+              "samples": 124155,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0002346337423659861,
+              "worstCurveID": 16070,
+              "worstPointIndex": 1,
+              "worstPositionMetres": [
+                -0.0017333932919427752,
+                -0.01344974059611559,
+                1.5711722373962402
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            "laterUpperControls": {
+              "samples": 99324,
+              "negativeRadiusAdjustedGap": 0,
+              "minimumSignedGapMetres": 0.0019857040606439114,
+              "worstCurveID": 5535,
+              "worstPointIndex": 6,
+              "worstPositionMetres": [
+                -0.00615955563262105,
+                -0.010239189490675926,
+                1.572203516960144
+              ],
+              "worstCenterRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          },
+          "curve5535": [
+            {
+              "pointIndex": 0,
+              "signedGapMetres": 8.485751459375024E-05,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 1,
+              "signedGapMetres": 0.0003345934965182096,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 2,
+              "signedGapMetres": 0.000576679187361151,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 3,
+              "signedGapMetres": 0.0008322662906721234,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 4,
+              "signedGapMetres": 0.0011789199197664857,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "pointIndex": 5,
+              "signedGapMetres": 0.001498610363341868,
+              "centerRayCrossings": [
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "neutral": {
+      "source": {
+        "path": "F:\\AevryndEvidence\\r0493-ear-nape-flow\\female-next-r0493-ear-nape-flow-UNACCEPTED.blend",
+        "sha256": "a6065118791b1c1f4dcf4df5257347f244c955746bcb445ec47e891e563aedc9",
+        "bytes": 318079594
+      },
+      "pose": "complete neutral woman",
+      "skin": "R482 archived complete neutral skin",
+      "controlPointResults": {
+        "overlap": {
+          "controls": 1986480,
+          "negativeOrientedGap": 8,
+          "orientedMinimum": {
+            "curveID": 10621,
+            "pointIndex": 67,
+            "signedGapMetres": -0.043055057525634766,
+            "positionMetres": [
+              0.041502129286527634,
+              0.06632055342197418,
+              1.3745779991149902
+            ]
+          },
+          "warningRecheck": {
+            "insideCenters": 0,
+            "outsideRadiusOverlap": 0,
+            "outsideAndClear": 8,
+            "mixedParity": 0
+          },
+          "worstRayCorroboratedContact": null,
+          "minimumAfterWarningRecheck": {
+            "curveID": 9270,
+            "pointIndex": 0,
+            "signedGapMetres": 8.480613178107888E-05,
+            "positionMetres": [
+              -0.008562459610402584,
+              0.0013908583205193281,
+              1.5673632621765137
+            ]
+          }
+        },
+        "staggered": {
+          "controls": 1986480,
+          "negativeOrientedGap": 8,
+          "orientedMinimum": {
+            "curveID": 10621,
+            "pointIndex": 67,
+            "signedGapMetres": -0.043055057525634766,
+            "positionMetres": [
+              0.041502129286527634,
+              0.06632055342197418,
+              1.3745779991149902
+            ]
+          },
+          "warningRecheck": {
+            "insideCenters": 0,
+            "outsideRadiusOverlap": 0,
+            "outsideAndClear": 8,
+            "mixedParity": 0
+          },
+          "worstRayCorroboratedContact": null,
+          "minimumAfterWarningRecheck": {
+            "curveID": 9270,
+            "pointIndex": 0,
+            "signedGapMetres": 8.480613178107888E-05,
+            "positionMetres": [
+              -0.008562459610402584,
+              0.0013908583205193281,
+              1.5673632621765137
+            ]
+          }
+        }
+      },
+      "limitations": [
+        "Finite sample spacing between evaluated points",
+        "No hair self-contact, clothes or continuous motion"
+      ],
+      "resumedFromVerifiedCurves": 0,
+      "nativeEvaluatedSampleResult": {
+        "variant": "staggered",
+        "method": "Blender Curve to Points in EVALUATED mode, preserving sampled radius and curve ownership",
+        "evaluatedSamples": 23564619,
+        "verifiedCurves": 24831,
+        "samplesPerCurveMinimum": 949,
+        "samplesPerCurveMaximum": 949,
+        "negativeOrientedWarnings": 53,
+        "rayInsideCenters": 0,
+        "rayOutsideOverlap": 0,
+        "rayOutsideAndClear": 53,
+        "mixedParity": 0,
+        "minimumAfterWarningRecheck": {
+          "curveID": 9270,
+          "positionMetres": [
+            -0.008562459610402584,
+            0.0013908583205193281,
+            1.5673632621765137
+          ],
+          "gapMetres": 8.480613178107888E-05,
+          "warningRayCrossings": null
+        },
+        "finalProcessElapsedSeconds": 67.09211089997552
+      }
+    },
+    "inheritedFixture": [
+      "12 boundary edges",
+      "2 adjacent orientation disagreements"
+    ],
+    "open": [
+      "Continuous finite-radius evaluated hair-to-skin clearance",
+      "Self-contact and garments",
+      "Turning, wind and other animated poses",
+      "Engine integration and benchmark"
+    ]
+  },
+  "rights": "Inherited exact source notices. Aligned Angelica profile inspected from the r484 licensed evidence. DarkNik and NikZava284 attribution under CC BY 4.0 retained. Reference geometry was not imported.",
+  "resources": {
+    "startTaipei": "2026-11-11T11:46:03+08:00",
+    "supportDeadlineTaipei": "2026-11-11T11:56:03+08:00",
+    "firstPreviewDeadlineTaipei": "2026-11-11T12:16:03+08:00",
+    "completePreviewTaipei": "2026-11-11T11:54:08.0000000+08:00",
+    "resourceCheckpointTaipei": "2026-11-11T12:31:03+08:00",
+    "workers": 1,
+    "blenderThreads": 4,
+    "authorPeakPrivateBytes": 2057158656,
+    "initialPreviewPeakPrivateBytes": 3128336384,
+    "initialPreview": "System commit reserve ended preview at 31.6136 seconds after two verified frames. One transient admission check then refused before starting Blender. A later check admitted the resume when system headroom recovered.",
+    "resumedPreviewPeakPrivateBytes": 3055890432,
+    "nativeContactPeakPrivateBytes": 2255503360,
+    "engineCPUSeconds": null,
+    "engineGPUSeconds": null,
+    "engineMemoryBytes": null
+  },
+  "nextAction": "Reconstruct explicit narrow, disjoint flow routes in front of and behind the pinna based on scalp attachment zones and the actual neutral ear mesh. Interleave different bundle widths and endpoints below the pinna while preserving the compact posterior coverage. Use r492 and r493 as rollbacks and matched visual comparators. Avoid another continuous common side envelope.",
+  "inheritedRetirements": "Preserve r483, r484, dense combing, r487 common ear envelope, and r489 upper-only splice retirements. This round uses separated editable side and depth paths. No adopted appearance and no counter reset.",
+  "scoreIncrease": false,
+  "runtimeOrWebsiteChanged": false,
+  "maleWorkStarted": false
+}
